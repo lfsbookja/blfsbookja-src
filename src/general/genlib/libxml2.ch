@@ -146,13 +146,15 @@
 @z
 
 @x
-      To test the results, issue: <command>make check &gt;
-      ../check.log</command>. A summary of the results can be obtained with
-      <command>grep -E '^Total|expected' ../check.log</command>.
+      To test the results, issue: <command>make check &gt; check.log</command>.
+      A summary of the results can be obtained with <command>grep -E
+      '^Total|expected' check.log</command>. If <xref linkend="valgrind"/> is
+      installed and you want to check memory leaks, replace
+      <command>check</command> with <command>check-valgrind</command>.
 @y
-      ビルド結果をテストする場合は <command>make check &gt;
-      ../check.log</command> を実行します。
-      <command>grep -E '^Total|expected' ../check.log</command> を実行して結果を確認することができます。
+      ビルド結果をテストする場合は <command>make check &gt; check.log</command> を実行します。
+      <command>grep -E '^Total|expected' check.log</command> を実行して結果を確認することができます。
+      <xref linkend="valgrind"/> をインストールしていてメモリリークをチェックしたい場合は <command>check</command> ではなく <command>check-valgrind</command> に置き換えて実行します。
 @z
 
 @x
@@ -202,13 +204,14 @@
         </seg>
         <seg>
           /usr/include/libxml2,
+          /usr/lib/cmake/libxml2,
           /usr/share/doc/libxml2-&libxml2-version;,
-          /usr/share/doc/libxml2-python-&libxml2-version; and
+          /usr/share/doc/libxml2-python-&libxml2-version;, and
           /usr/share/gtk-doc/html/libxml2
         </seg>
 @y
         <seg>
-          xml2-config, xmlcatalog and xmllint
+          xml2-config, xmlcatalog, xmllint
         </seg>
         <seg>
           libxml2.so, また任意のビルドとして libxml2mod.so
@@ -216,6 +219,7 @@
         </seg>
         <seg>
           /usr/include/libxml2,
+          /usr/lib/cmake/libxml2,
           /usr/share/doc/libxml2-&libxml2-version;,
           /usr/share/doc/libxml2-python-&libxml2-version;,
           /usr/share/gtk-doc/html/libxml2

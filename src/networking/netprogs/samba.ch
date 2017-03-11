@@ -88,50 +88,68 @@
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="cups"/>,
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="gdb"/>,
+      <xref linkend="git"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
-      <xref linkend="libgpg-error"/>,
+      <xref linkend="libgcrypt"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
+      <xref linkend="nss"/>,
       <xref linkend="popt"/>,
-      <xref linkend="talloc"/>,
+      <xref linkend="python3"/>,
+      <xref linkend="talloc"/> (included),
+      <xref linkend="vala"/>,
       <xref linkend="valgrind"/> (optionally used by the test suite),
       <xref linkend="xfsprogs"/>,
-      <ulink url="https://ctdb.samba.org/">ctdb</ulink>,
+      <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
-      <ulink url="http://www.h5l.org/">Heimdal</ulink>,
+      <ulink url="http://www.h5l.org/">Heimdal</ulink> (currently not working),
       <ulink url="http://ftp.de.debian.org/debian/pool/main/liba/libaio/">libaio</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-      <ulink url="https://www.samba.org/ftp/ldb/">ldb</ulink>,
+      <ulink url="https://www.samba.org/ftp/ldb/">ldb</ulink> (included),
+      <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
-      <ulink url="https://tevent.samba.org/">tevent</ulink>, and
-      <ulink url="https://tdb.samba.org/">tdb</ulink>
+      <ulink url="&pypi;/pycrypto/">PyCrypto</ulink> (required for ADS),
+      <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
+      <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
+      <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="cups"/>,
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="gdb"/>,
+      <xref linkend="git"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
-      <xref linkend="libgpg-error"/>,
+      <xref linkend="libgcrypt"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
+      <xref linkend="nss"/>,
       <xref linkend="popt"/>,
-      <xref linkend="talloc"/>,
+      <xref linkend="python3"/>,
+      <xref linkend="talloc"/> (included),
+      <xref linkend="vala"/>,
       <xref linkend="valgrind"/> (optionally used by the test suite),
       <xref linkend="xfsprogs"/>,
-      <ulink url="https://ctdb.samba.org/">ctdb</ulink>,
+      <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
-      <ulink url="http://www.h5l.org/">Heimdal</ulink>,
+      <ulink url="http://www.h5l.org/">Heimdal</ulink> (currently not working),
       <ulink url="http://ftp.de.debian.org/debian/pool/main/liba/libaio/">libaio</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-      <ulink url="https://www.samba.org/ftp/ldb/">ldb</ulink>,
+      <ulink url="https://www.samba.org/ftp/ldb/">ldb</ulink> (included),
+      <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
-      <ulink url="https://tevent.samba.org/">tevent</ulink>,
-      <ulink url="https://tdb.samba.org/">tdb</ulink>
+      <ulink url="&pypi;/pycrypto/">PyCrypto</ulink> (required for ADS),
+      <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
+      <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
+      <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
     </para>
 @z
 
@@ -148,21 +166,6 @@
 @z
 
 @x
-      <para>If you wish to run the test suite after the binaries are built, you
-      must add the <option>--enable-selftest</option> parameter to the
-      <command>configure</command> script below. You may want to run
-      <command>configure</command> with the <option>--help</option> parameter
-      first. There may be other parameters needed to take advantage of optional
-      dependencies.</para>
-@y
-      <para>
-      実行モジュール類をビルドしテストスイートを実行するなら、以下の <command>configure</command> スクリプトに対して <option>--enable-selftest</option> パラメーターを指定する必要があります。
-      まずは <command>configure</command> スクリプトに <option>--help</option> パラメーターをつけて実行してみてください。
-      さまざまな機能を利用するために必要となる他のパラメーターの情報が得られます。
-      </para>
-@z
-
-@x
     <para>Install <application>Samba</application> by running the following
     commands:</para>
 @y
@@ -174,19 +177,29 @@
 @x
     <para>To test the results, as the
     <systemitem class="username">root</systemitem> user, issue:
-    <command>make quicktest 2>&amp;1 | tee quicktest.log</command>.  Summary of
-    the test results and some other information may be obtained with
-    <command>grep -A5 testsuites quicktest.log</command>.  There are other
-    targets (test, subunit-test) available, but take a very long time
-    (over 100 SBU).</para>
+    <command>make quicktest</command>. The test suite will produce lines that
+    look like failures, but these are innocuous. The summary should report
+    <emphasis>"ALL OK"</emphasis> for a good test run.</para>
 @y
     <para>To test the results, as the
     <systemitem class="username">root</systemitem> user, issue:
-    <command>make quicktest 2>&amp;1 | tee quicktest.log</command>.  Summary of
-    the test results and some other information may be obtained with
-    <command>grep -A5 testsuites quicktest.log</command>.  There are other
-    targets (test, subunit-test) available, but take a very long time
-    (over 100 SBU).</para>
+    <command>make quicktest</command>. The test suite will produce lines that
+    look like failures, but these are innocuous. The summary should report
+    <emphasis>"ALL OK"</emphasis> for a good test run.</para>
+@z
+
+@x
+      <para>Additionally, developer test suites are available. If you've
+      installed the optional python modules above, you can run these tests with
+      <command>make test</command>. It is not recommended for the average
+      builder at nearly 100 SBU, and you should expect ~80 errors and ~30
+      failures from the 3000+ tests.</para>
+@y
+      <para>Additionally, developer test suites are available. If you've
+      installed the optional python modules above, you can run these tests with
+      <command>make test</command>. It is not recommended for the average
+      builder at nearly 100 SBU, and you should expect ~80 errors and ~30
+      failures from the 3000+ tests.</para>
 @z
 
 @x

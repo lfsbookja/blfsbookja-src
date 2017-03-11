@@ -3,15 +3,15 @@
 #
 # This is part of BLFSbookja package.
 #
-# $Author: matsuand $
-# $Rev: 821 $
-# $Date:: 2013-11-01 17:19:18 +0900#$
+# $Author$
+# $Rev$
+# $Date::                           $
 #
 
 m4_include([version.ac])[] dnl define blfs_version
 
 AC_PREREQ([2.63])
-AC_INIT([BLFSbookja], [svn], [matsuand AT users DOT sourceforge DOT jp])
+AC_INIT([BLFSbookja], [svn], [matsuand AT users DOT osdn DOT me])
 AM_INIT_AUTOMAKE
 
 m4_include([m4/progs.m4])
@@ -19,6 +19,7 @@ m4_include([m4/ax_compare_version.m4])
 m4_include([m4/ac_check_docbook_xslt.m4])
 m4_include([m4/ac_check_docbook_dtd.m4])
 m4_include([m4/ac_check_ipafontdir.m4])
+m4_include([m4/ac_check_rev.m4])
 
 # Checks for programs.
 AC_PROG_CC
@@ -77,12 +78,15 @@ AC_CONFIG_FILES([Makefile
 		 src/introduction/important/Makefile
 		 src/introduction/welcome/Makefile
 		 src/kde/Makefile
-		 src/kde/add/Makefile
-		 src/kde/core/Makefile
-		 src/kde/intro/Makefile
+		 src/kde/kf5/Makefile
+		 src/kde/kf5-apps/Makefile
+		 src/kde/plasma5/Makefile
 		 src/lxde/Makefile
 		 src/lxde/apps/Makefile
 		 src/lxde/desktop/Makefile
+		 src/lxqt/Makefile
+		 src/lxqt/apps/Makefile
+		 src/lxqt/desktop/Makefile
 		 src/multimedia/Makefile
 		 src/multimedia/audioutils/Makefile
 		 src/multimedia/cdwriteutils/Makefile
@@ -128,6 +132,8 @@ AC_CONFIG_FILES([Makefile
 		 src/stylesheets/lfs-xsl/xhtml/Makefile
 		 src/template/Makefile
 		 src/x/Makefile
+		 src/x/dm/Makefile
+		 src/x/icons/Makefile
 		 src/x/installing/Makefile
 		 src/x/lib/Makefile
 		 src/x/wm/Makefile

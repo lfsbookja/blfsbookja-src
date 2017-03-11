@@ -92,14 +92,40 @@
 
 @x
       To test the results, issue: <command>make check</command>.
+      Note that the tests will fail if the --disable-static
+      option is used and tests are executed before
+      <command>make install</command>. You have three options:
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      Note that the tests will fail if the --disable-static
+      option is used and tests are executed before
+      <command>make install</command>. You have three options:
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+     (a) configure without --disable-static, run the tests, but do not
+     install, then start a fresh build using --disable-static just for
+     installing the package.
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+     (a) configure without --disable-static, run the tests, but do not
+     install, then start a fresh build using --disable-static just for
+     installing the package.
+@z
+
+@x
+     (b) configure with --disable-static, but only run the tests after the
+     package is installed.
+@y
+     (b) configure with --disable-static, but only run the tests after the
+     package is installed.
+@z
+
+@x
+     (c) configure with --disable-static, but only run the tests after a
+     DESTDIR install.
+@y
+     (c) configure with --disable-static, but only run the tests after a
+     DESTDIR install.
 @z
 
 @x

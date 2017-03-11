@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY ruby-buildsize     "585 MB, with checks (additional 466 MB for C API docs)">
-  <!ENTITY ruby-time          "2.4 SBU (additional 3 SBU for checks and 0.4 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "335 MB, with checks (add 247 MB for C API docs)">
+  <!ENTITY ruby-time          "2.4 SBU, with checks (add 0.5 SBU for C API docs)">
 @y
-  <!ENTITY ruby-buildsize     "585 MB, with checks (additional 466 MB for C API docs)">
-  <!ENTITY ruby-time          "2.4 SBU (additional 3 SBU for checks and 0.4 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "335 MB, with checks (add 247 MB for C API docs)">
+  <!ENTITY ruby-time          "2.4 SBU, with checks (add 0.5 SBU for C API docs)">
 @z
 
 @x
@@ -90,10 +90,11 @@
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
+      <xref linkend="libffi"/>,
       <xref linkend="openssl"/>,
       <xref linkend="tk"/>,
       <xref linkend="valgrind"/>, and
-      <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>
+      <xref linkend="yaml"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -101,10 +102,11 @@
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
+      <xref linkend="libffi"/>,
       <xref linkend="openssl"/>,
       <xref linkend="tk"/>,
       <xref linkend="valgrind"/>,
-      <ulink url="http://pyyaml.org/wiki/LibYAML">libyaml</ulink>
+      <xref linkend="yaml"/>
     </para>
 @z
 
@@ -136,11 +138,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>. One out of
-      16059 tests fails.
+      To test the results, issue: <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-      16059個のテストのうち、１つは失敗します。
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -211,7 +211,7 @@
           libruby.so and libruby-static.a
         </seg>
         <seg>
-          /usr/include/ruby-2.2.0
+          /usr/include/ruby-&ruby-minor-version;.0
           /usr/lib/ruby,
           /usr/share/doc/ruby-&ruby-version; and
           /usr/share/ri
@@ -224,9 +224,9 @@
           libruby.so, libruby-static.a
         </seg>
         <seg>
-          /usr/include/ruby-2.2.0
+          /usr/include/ruby-&ruby-minor-version;.0
           /usr/lib/ruby,
-          /usr/share/doc/ruby-&ruby-version;
+          /usr/share/doc/ruby-&ruby-version;,
           /usr/share/ri
         </seg>
 @z
@@ -237,11 +237,20 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x ruby
-            is an interpreted scripting language for quick
-            and easy object-oriented programming.
+@x erb
+            is Tiny eRuby. It interprets a
+            <application>Ruby</application> code embedded text file.
 @y
-            オブジェクト指向プログラミングを素早く容易に実現する、インタープリタースクリプト言語です。
+            Tiny eRuby です。
+            これはテキストファイルに埋め込まれた <application>Ruby</application> コードを実行します。
+@z
+
+@x gem
+            command for RubyGems - a sophisticated package manager for
+            <application>Ruby</application>.
+@y
+            command for RubyGems - a sophisticated package manager for
+            <application>Ruby</application>.
 @z
 
 @x irb
@@ -251,19 +260,18 @@
             <application>Ruby</application> に対するインタラクティブなインターフェースを提供します。
 @z
 
-@x erb
-            is Tiny eRuby. It interprets a
-            <application>Ruby</application> code embedded text file.
-@y
-            Tiny eRuby です。
-            これはテキストファイルに埋め込まれた <application>Ruby</application> コードを実行します。
-@z
-
 @x ri
             displays documentation from a database on
             <application>Ruby</application> classes, modules, and methods.
 @y
             <application>Ruby</application> のクラス、モジュール、メソッドに対するドキュメントを、データベースより表示します。
+@z
+
+@x ruby
+            is an interpreted scripting language for quick
+            and easy object-oriented programming.
+@y
+            オブジェクト指向プログラミングを素早く容易に実現する、インタープリタースクリプト言語です。
 @z
 
 @x libruby.so

@@ -77,13 +77,31 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="xorg7-lib"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="xorg7-lib"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Required (runtime only)</bridgehead>
-    <para role="required"><xref linkend="twm"/>, <xref linkend="xclock"/>, and
-    <xref linkend="xterm2"/></para>
+    <para role="required">
+      <xref linkend="twm"/>, 
+      <xref linkend="xclock"/>, and
+      <xref linkend="xterm2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required; (実行時のみ)</bridgehead>
-    <para role="required"><xref linkend="twm"/>, <xref linkend="xclock"/>,
-    <xref linkend="xterm2"/></para>
+    <para role="required">
+      <xref linkend="twm"/>, 
+      <xref linkend="xclock"/>,
+      <xref linkend="xterm2"/>
+    </para>
 @z
 
 @x

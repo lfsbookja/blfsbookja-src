@@ -14,21 +14,21 @@
 @z
 
 @x
-    <title>Introduction to libcap</title>
+  <title>libcap-&libcap-version; with PAM</title>
 @y
-    <title>&IntroductionTo1;libcap&IntroductionTo2;</title>
+    <title>&IntroductionTo1;libcap-&libcap-version; with PAM&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>libcap</application> package implements the
-    user-space interfaces to the POSIX 1003.1e capabilities available in Linux
-    kernels. These capabilities are a partitioning of the all powerful root
-    privilege into a set of distinct privileges.  </para>
+    <para>The <application>libcap</application> package was installed in 
+    LFS, but if <application>Linux-PAM</application> support is desired,
+    the PAM module must be built (after installation of
+    <application>Linux-PAM</application>).</para>
 @y
-    <para>
-    <application>libcap2</application> パッケージは、Linux カーネルにて利用される POSIX 1003.1e 機能へのユーザー空間からのインターフェースを実装します。
-    この機能は、強力な root 権限機能を他の権限へと分散します。
-    </para>
+    <para>The <application>libcap</application> package was installed in 
+    LFS, but if <application>Linux-PAM</application> support is desired,
+    the PAM module must be built (after installation of
+    <application>Linux-PAM</application>).</para>
 @z
 
 @x
@@ -81,18 +81,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="attr"/></para>
+    <para role="required">
+      <xref linkend="linux-pam"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="attr"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/></para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/></para>
+    <para role="required">
+      <xref linkend="linux-pam"/>
+    </para>
 @z
 
 @x
@@ -123,33 +119,10 @@
 @z
 
 @x
-      If you want to disable installing the static library, use this sed:
-@y
-      スタティックライブラリをインストールしない場合は、以下の sed コマンドを実行します。
-@z
-
-@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>RAISE_SETFCAP=no</parameter>: This parameter skips trying
-    to use <application>setcap</application> on itself.  This avoids an installation
-    error if the kernel or file system do not support extended capabilities.</para>
-@y
-    <para><parameter>RAISE_SETFCAP=no</parameter>:
-    このパラメーターは <application>setcap</application> を自身へは適用しないことを指示します。
-    これはカーネルあるいはファイルシステムが拡張属性をサポートしていない場合のインストールエラーを回避させるためです。
     </para>
 @z
 
@@ -170,54 +143,11 @@
 @z
 
 @x
-        <seg>capsh, getcap, getpcaps, and setcap</seg>
-        <seg>libcap.{so,a}</seg>
+        <seg>None</seg>
+        <seg>pam_cap.so</seg>
         <seg>None</seg>
 @y
-        <seg>capsh, getcap, getpcaps, setcap</seg>
-        <seg>libcap.{so,a}</seg>
         <seg>&None;</seg>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x capsh
-          <para>is a shell wrapper to explore and constrain capability support.</para>
-@y
-          <para>
-          
-          is a shell wrapper to explore and constrain capability support.
-          </para>
-@z
-
-@x getcap
-          <para>examines file capabilities.</para>
-@y
-          <para>
-          ファイルの拡張属性を検査します。
-          </para>
-@z
-
-@x getpcaps
-          <para>displays the capabilities on the queried process(es).</para>
-@y
-          <para>displays the capabilities on the queried process(es).</para>
-@z
-
-@x setcap
-          <para>sets file file capabilities.</para>
-@y
-          <para>sets file file capabilities.</para>
-@z
-
-@x libcap.{so,a}
-          <para>contains the <application>libcap</application> API functions.</para>
-@y
-          <para>
-          <application>libcap</application> API 関数を提供します。
-          </para>
+        <seg>pam_cap.so</seg>
+        <seg>&None;</seg>
 @z

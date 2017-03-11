@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY mdadm-time          "less than 0.1 SBU">
+  <!ENTITY mdadm-buildsize     "6.7 MB (10 MB with tests)">
+  <!ENTITY mdadm-time          "less than 0.1 SBU (tests take about an hour, only partially processor dependent)">
 @y
-  <!ENTITY mdadm-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY mdadm-buildsize     "6.7 MB (テスト込みで 10 MB)">
+  <!ENTITY mdadm-time          "&LessThan1;0.1 SBU&LessThan2; (tests take about an hour, only partially processor dependent)">
 @z
 
 @x
@@ -91,7 +93,7 @@
 @x
     <para>Enable the following options in the kernel configuration
     and recompile the kernel, if necessary.  Only the RAID types desired
-    are required.  </para>
+    are required.</para>
 @y
     <!--
     日本語訳註：
@@ -101,30 +103,6 @@
     カーネルに対する設定として以下のオプションを有効にする必要があります。
     必要ならカーネルを再コンパイルしてください。
     </para>
-@z
-
-@x
-<screen><literal>File Systems:
-  Device Drivers: 
-    Multiple devices driver support (RAID and LVM): Y
-      RAID support: Y or M
-        Autodetect RAID arrays during kernel boot: Y
-        Linear (append) mode: Y or M
-        RAID-0 (striping) mode : Y or M
-        RAID-1 (mirroring) mode : Y or M
-        RAID-10 (mirrored striping) mode: Y or M
-        RAID-4/RAID-5/RAID-6 mode : Y or M</literal></screen>
-@y
-<screen><literal>File Systems:
-  Device Drivers: 
-    Multiple devices driver support (RAID and LVM): Y
-      RAID support: Y または M
-        Autodetect RAID arrays during kernel boot: Y
-        Linear (append) mode: Y または M
-        RAID-0 (striping) mode : Y または M
-        RAID-1 (mirroring) mode : Y または M
-        RAID-10 (mirrored striping) mode: Y または M
-        RAID-4/RAID-5/RAID-6 mode : Y または M</literal></screen>
 @z
 
 @x
@@ -144,14 +122,12 @@
 
 @x
     <para>If you wish to run the tests, ensure that your kernel supports
-    RAID and that a version of mdadm is not already running, and issue:
-    <command>make test</command> and then, as the
-    <systemitem class="username">root</systemitem> user: ./test</para>
+    RAID and that a version of mdadm is not already running.  As many as 9 out
+    of 124 tests may fail.</para>
 @y
     <para>
     テストを実行したい場合、カーネルが RAID に対応していて、かつ mdadm はまだ稼動していないことを確認してください。
-    そして <command>make test</command> を実行した上で <systemitem
-    class="username">root</systemitem> ユーザーになり ./test を実行します。
+    124 個のテストのうち 9 個は失敗します。
     </para>
 @z
 
@@ -170,16 +146,14 @@
 @z
 
 @x
-    <para><option>--make everything</option>: This switch creates extra programs,
-    particularly a statically-linked version of <command>mdadm</command> and
-    also versions of <command>mdassemble</command>. These all need to be manually
-    installed.
-    </para>
+      <command>make everything</command>: This optional target creates extra
+      programs, particularly a statically-linked version of
+      <command>mdadm</command> and also versions of
+      <command>mdassemble</command>. These all need to be manually installed.
 @y
-    <para><option>--make everything</option>:
-    このスイッチは追加のプログラムを生成するもので、スタティックリンク版の <command>mdadm</command> や <command>mdassemble</command> を作り出します。
-    これらのプログラムは手動でインストールする必要があります。
-    </para>
+      <command>--make everything</command>:
+      このターゲットは追加のプログラムを生成するもので、スタティックリンク版の <command>mdadm</command> や <command>mdassemble</command> を作り出します。
+      これらのプログラムは手動でインストールする必要があります。
 @z
 
 @x

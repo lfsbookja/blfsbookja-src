@@ -83,15 +83,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>.
-      If both are installed, <command>configure</command> defaults to using
-      <application>GTK+ 3</application>.
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>
+      (If both are installed, <command>configure</command> defaults to using
+      <application>GTK+ 3</application>)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk2"/> または <xref linkend="gtk3"/>
-      両方がインストールされている場合、<command>configure</command> はデフォルトで <application>Gtk+ 3</application> を利用します。
+      (両方がインストールされている場合、<command>configure</command> はデフォルトで <application>GTK+ 3</application> を利用します。)
     </para>
 @z
 
@@ -100,16 +100,16 @@
     <para role="optional">
       <xref linkend="enchant"/> (for spell checking),
       <xref linkend="gucharmap"/>,
-      <ulink url="http://code.google.com/p/jing-trang/">Jing</ulink> and
-      <xref linkend="pcre"/>
+      <xref linkend="pcre"/> and
+      <ulink url="https://github.com/relaxng/jing-trang">Jing</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="enchant"/> (スペルチェックのため),
       <xref linkend="gucharmap"/>,
-      <ulink url="http://code.google.com/p/jing-trang/">Jing</ulink>,
-      <xref linkend="pcre"/>
+      <xref linkend="pcre"/>,
+      <ulink url="https://github.com/relaxng/jing-trang">Jing</ulink>
     </para>
 @z
 
@@ -171,7 +171,7 @@
         <seg>
           /usr/lib/bluefish,
           /usr/share/bluefish,
-          /usr/share/doc/bluefish and
+          /usr/share/doc/bluefish-&bluefish-version;, and
           /usr/share/xml/bluefish
         </seg>
 @y
@@ -184,7 +184,7 @@
         <seg>
           /usr/lib/bluefish,
           /usr/share/bluefish,
-          /usr/share/doc/bluefish,
+          /usr/share/doc/bluefish-&bluefish-version;,
           /usr/share/xml/bluefish
         </seg>
 @z

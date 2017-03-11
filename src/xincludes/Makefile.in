@@ -93,7 +93,7 @@ am__aclocal_m4_deps = $(top_srcdir)/version.ac \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
 	$(top_srcdir)/m4/ac_check_ipafontdir.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/ac_check_rev.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
@@ -129,6 +129,10 @@ AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+BASEDIR = @BASEDIR@
+BLFSFULL = @BLFSFULL@
+BLFSHTML = @BLFSHTML@
+BLFSHTML2 = @BLFSHTML2@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
@@ -137,6 +141,7 @@ CTIE = @CTIE@
 CYGPATH_W = @CYGPATH_W@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
+DUMPDIR = @DUMPDIR@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -158,6 +163,8 @@ LTLIBOBJS = @LTLIBOBJS@
 LYNX = @LYNX@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
+NOCHUNKS_NAME = @NOCHUNKS_NAME@
+NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 OBJEXT = @OBJEXT@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
@@ -168,6 +175,7 @@ PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PDF = @PDF@
+PDF_OUTPUT = @PDF_OUTPUT@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -213,6 +221,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+revspec = @revspec@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@
@@ -235,6 +244,15 @@ CHANGE_FILES = \
 	lib-config.ch               \
 	scrollkeeper-dir.ch         \
 	static-libraries.ch         \
+	texrecommendlibs.ch         \
+	texoptional.ch              \
+	texruntime.ch               \
+	tex-prefix.ch               \
+	tex-lib.ch                  \
+	tex-shared.ch               \
+	tex-system.ch               \
+	tex-xpdf.ch                 \
+	texprogs.ch                 \
 	update-desktop-database.ch  \
 	update-icons-and-desktop.ch \
 	use-unzip.ch                \
@@ -437,25 +455,6 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-gnome-mandir.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-mandir.ch
-gnome-old-sysconfdir.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-old-sysconfdir.ch
-gnome-old-prefix.xml:         $(BOOKdir)/$@ $(srcdir)/gnome-old-prefix.ch
-gnome-prefix.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-prefix.ch
-gnome-sysconfdir.xml:         $(BOOKdir)/$@ $(srcdir)/gnome-sysconfdir.ch
-gnome2.xml:                   $(BOOKdir)/$@ $(srcdir)/gnome2.ch
-gsettings-destdir.xml:        $(BOOKdir)/$@ $(srcdir)/gsettings-destdir.ch
-gtk-doc-rebuild.xml:          $(BOOKdir)/$@ $(srcdir)/gtk-doc-rebuild.ch
-gtk-update-icon-cache.xml:    $(BOOKdir)/$@ $(srcdir)/gtk-update-icon-cache.ch
-lib-config.xml:               $(BOOKdir)/$@ $(srcdir)/lib-config.ch
-scrollkeeper-dir.xml:         $(BOOKdir)/$@ $(srcdir)/scrollkeeper-dir.ch
-static-libraries.xml:         $(BOOKdir)/$@ $(srcdir)/static-libraries.ch
-update-desktop-database.xml:  $(BOOKdir)/$@ $(srcdir)/update-desktop-database.ch
-update-icons-and-desktop.xml: $(BOOKdir)/$@ $(srcdir)/update-icons-and-desktop.ch
-use-unzip.xml:                $(BOOKdir)/$@ $(srcdir)/use-unzip.ch
-without-gnome.xml:            $(BOOKdir)/$@ $(srcdir)/without-gnome.ch
-without-scrollkeeper.xml:     $(BOOKdir)/$@ $(srcdir)/without-scrollkeeper.ch
-X11R6_symlink.xml:            $(BOOKdir)/$@ $(srcdir)/X11R6_symlink.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -14,11 +14,9 @@
 @z
 
 @x
-<sect1 id="postlfs-config-netfs"  xreflabel="Configuring for Network Filesystems">
-  <?dbhtml filename="netfs.html"?>
+<sect1 id="postlfs-config-netfs"  xreflabel="Configuring for Network Filesystems" revision="sysv">
 @y
-<sect1 id="postlfs-config-netfs"  xreflabel="ネットワークファイルシステムの設定">
-  <?dbhtml filename="netfs.html"?>
+<sect1 id="postlfs-config-netfs"  xreflabel="ネットワークファイルシステムの設定" revision="sysv">
 @z
 
 @x

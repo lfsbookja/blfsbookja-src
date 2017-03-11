@@ -121,15 +121,6 @@
 @z
 
 @x
-    <para><command>sed -i -e 's|\$\*|#&amp;|' -e 's|fR/g|&amp;m|' tcsh.man2html</command>:
-    This updates some deprecated Perl code.</para>
-@y
-    <para><command>sed -i -e 's|\$\*|#&amp;|' -e 's|fR/g|&amp;m|' tcsh.man2html</command>:
-    このコマンドは、古くなった Perl コードを更新します。
-    </para>
-@z
-
-@x
     <para><parameter>--bindir=/bin</parameter>: This installs the
     <command>tcsh</command> program in <filename
     class='directory'>/bin</filename> instead of <filename

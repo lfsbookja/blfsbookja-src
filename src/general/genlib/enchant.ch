@@ -166,10 +166,10 @@
 @z
 
 @x
-        If you whish to use the <xref linkend="aspell"/> backend, create a
+        If you wish to use the <xref linkend="aspell"/> backend, create a
         symlink, as the <systemitem class="username">root</systemitem> user:
 @y
-        If you whish to use the <xref linkend="aspell"/> backend, create a
+        If you wish to use the <xref linkend="aspell"/> backend, create a
         symlink, as the <systemitem class="username">root</systemitem> user:
 @z
 

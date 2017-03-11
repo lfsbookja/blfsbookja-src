@@ -110,11 +110,11 @@
     <para role="optional">
       <xref linkend="graphviz"/>,
       <xref linkend="gs"/>,
-      <xref linkend="libxml2"/>,
+      <xref linkend="libxml2"/> (required for the tests),
       <xref linkend="llvm"/> (with clang),
       <xref linkend="python2"/> or <xref linkend="python3"/>,
-      <xref linkend="qt4"/> (for doxywizard),
-      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>) and
+      <xref linkend="qt5"/> (for doxywizard),
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
       <xref linkend="xapian"/> (for doxyindexer)
     </para>
 @y
@@ -122,12 +122,12 @@
     <para role="optional">
       <xref linkend="graphviz"/>,
       <xref linkend="gs"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="llvm"/> (clang 込み),
-      <xref linkend="python2"/> または <xref linkend="python3"/>,
-      <xref linkend="qt4"/> (doxywizard のため),
-      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <xref linkend="xapian"/> (doxyindexer のため)
+      <xref linkend="libxml2"/> (required for the tests),
+      <xref linkend="llvm"/> (with clang),
+      <xref linkend="python2"/> or <xref linkend="python3"/>,
+      <xref linkend="qt5"/> (for doxywizard),
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
+      <xref linkend="xapian"/> (for doxyindexer)
     </para>
 @z
 
@@ -181,20 +181,12 @@
 @z
 
 @x
-      <command>sed -i ... CMakeLists.txt</command>: Fixes the directory where
-      the man pages are installed.
-@y
-      <command>sed -i ... CMakeLists.txt</command>: Fixes the directory where
-      the man pages are installed.
-@z
-
-@x
       <option>-Dbuild_wizard=ON</option>: Use this switch if
-      <application>Qt4</application> is installed and you wish to build the GUI
+      <application>Qt5</application> is installed and you wish to build the GUI
       front-end.
 @y
       <option>-Dbuild_wizard=ON</option>: Use this switch if
-      <application>Qt4</application> is installed and you wish to build the GUI
+      <application>Qt5</application> is installed and you wish to build the GUI
       front-end.
 @z
 

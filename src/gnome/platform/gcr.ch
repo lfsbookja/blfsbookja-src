@@ -152,10 +152,12 @@
 
 @x
       To test the results, issue: <command>make -k check</command>.
-      Some tests fail for unknown reasons.
+      The tests must be run from an X Terminal or similar, but two
+      still fail.
 @y
       To test the results, issue: <command>make -k check</command>.
-      Some tests fail for unknown reasons.
+      The tests must be run from an X Terminal or similar, but two
+      still fail.
 @z
 
 @x
@@ -195,10 +197,8 @@
         </seg>
         <seg>
           /usr/include/gck-1,
-          /usr/include/gcr-3,
-          /usr/share/gcr-3,
-          /usr/share/gtk-doc/html/gck, and
-          /usr/share/gtk-doc/html/gcr-3
+          /usr/{include,share,share/gtk-doc/html}/gcr-3, and
+          /usr/share/gtk-doc/html/gck
         </seg>
 @y
         <seg>
@@ -209,10 +209,8 @@
         </seg>
         <seg>
           /usr/include/gck-1,
-          /usr/include/gcr-3,
-          /usr/share/gcr-3,
-          /usr/share/gtk-doc/html/gck,
-          /usr/share/gtk-doc/html/gcr-3
+          /usr/{include,share,share/gtk-doc/html}/gcr-3,
+          /usr/share/gtk-doc/html/gck
         </seg>
 @z
 

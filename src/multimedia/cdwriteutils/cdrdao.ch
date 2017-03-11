@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY cdrdao-time          "1.3 SBU (includes building <command>gcdmaster</command>)">
-@y
-  <!ENTITY cdrdao-time          "1.3 SBU (<command>gcdmaster</command> のビルドを含む)">
-@z
-
-@x
     <title>Introduction to Cdrdao</title>
 @y
     <title>&IntroductionTo1;Cdrdao&IntroductionTo2;</title>
@@ -97,67 +91,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (Required to Build the
-    <command>gcdmaster</command> Program)</bridgehead>
-@y
-    <bridgehead renderas="sect4">&Optional; (<command>gcdmaster</command> プログラムのビルドに必要)</bridgehead>
-@z
-
-@x
-    <para>Note that the following packages must be built in
-    the order listed. Use the current <quote>stable</quote> version of
-    each package.</para>
-@y
-    <para>
-    以下に示すパッケージはその表示順でビルドする必要があります。
-    各パッケージは<quote>安定</quote>バージョンを用いてください。
-    </para>
-@z
-
-@x
-    <para role="optional">
-      <xref linkend="libsigc"/>,
-      <xref linkend="glibmm"/>,
-      <xref linkend="gtkmm2"/>,
-      <ulink url="http://www.gtkmm.org/">libglademm</ulink>,
-      <ulink url="http://www.gtkmm.org/">libgnomecanvasmm</ulink>,
-      <ulink url="http://www.gtkmm.org/">gconfmm</ulink>,
-      <ulink url="http://www.gtkmm.org/">gnome-vfsmm</ulink>,
-      <ulink url="http://www.gtkmm.org/">libgnomemm</ulink>, and
-      <ulink url="http://www.gtkmm.org/">libgnomeuimm</ulink>
-    </para>
-@y
-    <para role="optional">
-      <xref linkend="libsigc"/>,
-      <xref linkend="glibmm"/>,
-      <xref linkend="gtkmm2"/>,
-      <ulink url="http://www.gtkmm.org/">libglademm</ulink>,
-      <ulink url="http://www.gtkmm.org/">libgnomecanvasmm</ulink>,
-      <ulink url="http://www.gtkmm.org/">gconfmm</ulink>,
-      <ulink url="http://www.gtkmm.org/">gnome-vfsmm</ulink>,
-      <ulink url="http://www.gtkmm.org/">libgnomemm</ulink>,
-      <ulink url="http://www.gtkmm.org/">libgnomeuimm</ulink>
-    </para>
-@z
-
-@x
-    <para>There are two additional optional dependencies that can be used by
-    the <application>Cdrdao</application> build:
-    <ulink url="http://cdrecord.berlios.de/private/cdrecord.html">Cdrtools</ulink>
-    and <ulink url="http://www.polhode.com/pccts133mr.html">PCCTS</ulink>.
-    The pieces of these two packages required to build
-    <application>Cdrdao</application> are also included in the source tree
-    and are used by default.</para>
-@y
-    <para>
-    <application>Cdrdao</application> のビルドにあたっては、あと２つの任意依存パッケージがあります。
-    <ulink url="http://cdrecord.berlios.de/private/cdrecord.html">Cdrtools</ulink> と <ulink
-    url="http://www.polhode.com/pccts133mr.html">PCCTS</ulink> です。
-    これらのパッケージはソースツリー内に含まれており、<application>Cdrdao</application> ビルドにあたってはデフォルトで利用されます。
-    </para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -202,7 +135,7 @@
 
 @x
       <command>sed -i '/ioctl/a #include &lt;sys/stat.h&gt;' ...</command>: This
-      sed adds missing <filename>sys/stat.h</filename> include.
+      sed adds a missing <filename>sys/stat.h</filename> include.
 @y
       <command>sed -i '/ioctl/a #include &lt;sys/stat.h&gt;' ...</command>:
       この sed コマンドは、不足している <filename>sys/stat.h</filename> のインクルード指定を追加します。
@@ -233,17 +166,15 @@
 @z
 
 @x
-        <seg>cdrdao, cue2toc, toc2cddb, toc2cue and optionally, gcdmaster and
+        <seg>cdrdao, cue2toc, toc2cddb, toc2cue and optionally
         toc2mp3</seg>
         <seg>None</seg>
-        <seg>/usr/share/cdrdao, /usr/share/doc/cdrdao-&cdrdao-version;
-        and /usr/share/gcdmaster</seg>
+        <seg>/usr/share/cdrdao, /usr/share/doc/cdrdao-&cdrdao-version;</seg>
 @y
-        <seg>cdrdao, cue2toc, toc2cddb, toc2cue, 任意ビルドにて gcdmaster,
+        <seg>cdrdao, cue2toc, toc2cddb, toc2cue and optionally
         toc2mp3</seg>
-        <seg>&None;</seg>
-        <seg>/usr/share/cdrdao, /usr/share/doc/cdrdao-&cdrdao-version;,
-        /usr/share/gcdmaster</seg>
+        <seg>None</seg>
+        <seg>/usr/share/cdrdao, /usr/share/doc/cdrdao-&cdrdao-version;</seg>
 @z
 
 @x
@@ -264,14 +195,6 @@
           <para>converts CUE to TOC format for audio CDs.</para>
 @y
           <para>converts CUE to TOC format for audio CDs.</para>
-@z
-
-@x gcdmaster
-          <para>is a graphical front end to <command>cdrdao</command> for
-          composing audio CDs.</para>
-@y
-          <para>is a graphical front end to <command>cdrdao</command> for
-          composing audio CDs.</para>
 @z
 
 @x toc2cddb

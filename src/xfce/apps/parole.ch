@@ -78,14 +78,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gst-plugins-base"/> or
       <xref linkend="gst10-plugins-base"/> and
       <xref linkend="libxfce4ui"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gst-plugins-base"/> または
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="libxfce4ui"/>
     </para>
@@ -143,13 +141,11 @@
 @z
 
 @x
-      <parameter>--with-gstreamer=1.0</parameter>: Use this switch if
-      you want to use <xref linkend="gst10-plugins-base"/> instead of
-      <xref linkend="gst-plugins-base"/>.
+      <option>--with-gstreamer=1.0</option>: Use this switch if
+      the deprecated gstreamer-0.x is installed.
 @y
-      <parameter>--with-gstreamer=1.0</parameter>:
-      <xref linkend="gst-plugins-base"/> ではなく <xref
-      linkend="gst10-plugins-base"/> を利用する場合に本スイッチを指定します。
+      <option>--with-gstreamer=1.0</option>:
+      かつての gstreamer-0.x をインストールしている場合は本スイッチを指定します。
 @z
 
 @x

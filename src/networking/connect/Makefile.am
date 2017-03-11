@@ -7,8 +7,9 @@
 ##
 BOOKdir = @abs_bookdir@/networking/connect
 CHANGE_FILES = \
-	connect.ch       \
-	dhcp.ch          \
+	advanced-network.ch \
+	connect.ch          \
+	dhcp.ch             \
 	dhcpcd.ch 
 
 EXTRA_DIST = $(CHANGE_FILES)
@@ -23,7 +24,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-connect.xml:     $(BOOKdir)/$@ $(srcdir)/connect.ch
-dhcp.xml:        $(BOOKdir)/$@ $(srcdir)/dhcp.ch
-dhcpcd.xml:      $(BOOKdir)/$@ $(srcdir)/dhcpcd.ch

@@ -257,7 +257,7 @@
 @x
     <para><command>mv -v /usr/lib/libcrack.so.2* /lib</command> and
     <command>ln -v -sf ../../lib/libcrack.so.2.8.1 ...</command>: These two
-    commands move the <filename class="libraryfile">libcrack.so.2.8.1</filename>
+    commands move the <filename class="libraryfile">libcrack.so.2.9.0</filename>
     library and associated symlink from
     <filename class="directory">/usr/lib</filename> to
     <filename class="directory">/lib</filename>, then recreates the
@@ -268,7 +268,7 @@
     <command>mv -v /usr/lib/libcrack.so.2* /lib</command> と
     <command>ln -v -sf ../../lib/libcrack.so.2.8.1 ...</command>:
     この２つのコマンドは、<filename
-    class="libraryfile">libcrack.so.2.8.1</filename> ライブラリとこれに関するシンボリックリンクを <filename
+    class="libraryfile">libcrack.so.2.9.0</filename> ライブラリとこれに関するシンボリックリンクを <filename
     class="directory">/usr/lib</filename> ディレクトリから <filename class="directory">/lib</filename> ディレクトリに移動します。
     そして移動したファイルを指し示すシンボリックリンク <filename class="symlink">/usr/lib/libcrack.so</filename> を生成します。
     </para>
@@ -305,7 +305,7 @@
     <command>hostname</command> is echoed to a file called
     <filename>cracklib-extra-words</filename>. This extra file is intended to be
     a site specific list which includes easy to guess passwords such as company
-    or department names, user's names, product names, computer names, domain
+    or department names, user names, product names, computer names, domain
     names, etc.</para>
 @y
     <para><command>echo $(hostname) >>...</command>: The value of

@@ -115,13 +115,20 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="fop"/>, <xref linkend="xmlto"/> and
-    <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> (to build
-    additional documentation)</para>
+    <para role="optional">
+      <xref linkend="fop"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="xmlto"/> and
+      <xref linkend="asciidoc"/> (to build additional documentation)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="fop"/>, <xref linkend="xmlto"/>,
-    <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> (追加ドキュメントの生成時に必要)</para>
+    <para role="optional">
+      <xref linkend="fop"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="xmlto"/>,
+      <xref linkend="asciidoc"/> (追加ドキュメントの生成時に必要)
+    </para>
 @z
 
 @x

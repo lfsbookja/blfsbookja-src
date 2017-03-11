@@ -146,17 +146,27 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
-      <para>Install the <filename>/etc/rc.d/init.d/rpcbind</filename> init script
-      included in the <xref linkend="bootscripts"/> package.</para>
+      <para>Install the
+      <phrase revision="sysv"><filename>/etc/rc.d/init.d/rpcbind</filename>
+      init script</phrase>
+      <phrase revision="systemd"><filename>rpcbind.service</filename>
+      unit</phrase> included in the
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> package.</para>
 @y
       <para>
-      <xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/rpcbind</filename> をインストールします。
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる
+      <phrase revision="sysv">初期化スクリプト <filename>/etc/rc.d/init.d/rpcbind</filename></phrase>
+      <phrase revision="systemd"><filename>rpcbind.service</filename>ユニット</phrase> をインストールします。
       </para>
 @z
 

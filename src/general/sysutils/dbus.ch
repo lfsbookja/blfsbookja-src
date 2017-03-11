@@ -119,8 +119,8 @@
       For the tests:
       <xref linkend="dbus-glib"/>,
       <xref linkend="dbus-python"/>,
-      <xref linkend="pygobject2"/>, and
-      <xref linkend="valgrind"/>;
+      <xref linkend="pygobject2"/> (built with gobject-introspecion support),
+      and <xref linkend="valgrind"/>;
 
       for documentation:
       <xref linkend="doxygen"/>,
@@ -135,13 +135,14 @@
       テストのために:
       <xref linkend="dbus-glib"/>,
       <xref linkend="dbus-python"/>,
-      <xref linkend="pygobject2"/>,
-      <xref linkend="valgrind"/>;
+      <xref linkend="pygobject2"/> (built with gobject-introspecion support),
+      and <xref linkend="valgrind"/>;
 
       ドキュメント生成のために:
       <xref linkend="doxygen"/>,
       <xref linkend="xmlto"/>,
       <ulink url="https://pypi.python.org/pypi/mallard-ducktype">Ducktype</ulink>,
+      and
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/yelp-tools/">Yelp Tools</ulink>
     </para>
 @z
@@ -310,9 +311,9 @@
 @z
 
 @x
-    <title>Configuring dbus</title>
+    <title>Configuring D-Bus</title>
 @y
-    <title>&Configuring1;dbus&Configuring2;</title>
+    <title>&Configuring1;D-Bus&Configuring2;</title>
 @z
 
 @x
@@ -371,9 +372,9 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title>D-Bus Session Daemon</title>
 @y
-      <title>&BootScript;</title>
+      <title>D-Bus Session Daemon</title>
 @z
 
 @x
@@ -493,29 +494,31 @@
         <seg>
           dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
           dbus-run-session, dbus-send, dbus-test-tool,
-          dbus-update-activation-environment, and dbus-uuidgenn
+          dbus-update-activation-environment, and dbus-uuidgen
         </seg>
         <seg>
            libdbus-1.so
         </seg>
         <seg>
-          /{etc,/usr/share}/dbus-1,
+          /etc/dbus-1,
           /usr/{include,lib}/dbus-1.0,
-          /usr/share/doc/dbus-&dbus-version; and
+          /usr/share/dbus-1,
+          /usr/share/doc/dbus-&dbus-version;, and
           /var/{lib,run}/dbus
         </seg>
 @y
         <seg>
           dbus-cleanup-sockets, dbus-daemon, dbus-launch, dbus-monitor,
           dbus-run-session, dbus-send, dbus-test-tool,
-          dbus-update-activation-environment, dbus-uuidgenn
+          dbus-update-activation-environment, dbus-uuidgen
         </seg>
         <seg>
            libdbus-1.so
         </seg>
         <seg>
-          /{etc,/usr/share}/dbus-1,
+          /etc/dbus-1,
           /usr/{include,lib}/dbus-1.0,
+          /usr/share/dbus-1,
           /usr/share/doc/dbus-&dbus-version;,
           /var/{lib,run}/dbus
         </seg>

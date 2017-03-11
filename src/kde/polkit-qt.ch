@@ -20,11 +20,11 @@
 @z
 
 @x
-    <para><application>Polkit-Qt</application> provides an API to 
-    <application>polkit</application> in the Qt environment.</para>
+    <para><application>Polkit-Qt</application> provides an API to PolicyKit in
+    the Qt environment. </para>
 @y
     <para>
-    <application>Polkit-Qt</application> は Qt 環境での <application>polkit</application> に対する API を提供します。
+    <application>Polkit-Qt</application> は Qt 環境での PolicyKit に対する API を提供します。
     </para>
 @z
 
@@ -79,14 +79,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/> and 
-    <xref linkend="polkit"/>
+      <xref linkend="cmake"/>,
+      <xref linkend="polkit"/>, and
+      <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="automoc4"/>,
-    <xref linkend="polkit"/>
+      <xref linkend="cmake"/>,
+      <xref linkend="polkit"/>,
+      <xref linkend="qt5"/>
     </para>
 @z
 
@@ -103,8 +105,8 @@
 @z
 
 @x
-    <para>Install <application>Polkit-Qt</application> by running the following
-    commands:</para>
+    <para>Install <application>Polkit-Qt</application>
+    by running the following commands:</para>
 @y
     <para>
     以下のコマンドを実行して <application>Polkit-Qt</application> をビルドします。
@@ -132,12 +134,23 @@
 @z
 
 @x
-    <para><option>CMAKE_PREFIX_PATH=&qt4-dir;</option>: This option is set to
-    find <command>automoc4</command>.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply higher level of the compiler optimizations.
 @y
-    <para><option>CMAKE_PREFIX_PATH=&qt4-dir;</option>:
-    このオプションは <command>automoc4</command> を見つけられるように設定します。
-    </para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply higher level of the compiler optimizations.
+@z
+
+@x
+      <parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is
+      used to get libraries to install to <filename
+      class="directory">$KF5_PREFIX/lib</filename> instead of <filename
+      class="directory">$KF5_PREFIX/lib64</filename> on a 64 bit system.
+@y
+      <parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is
+      used to get libraries to install to <filename
+      class="directory">$KF5_PREFIX/lib</filename> instead of <filename
+      class="directory">$KF5_PREFIX/lib64</filename> on a 64 bit system.
 @z
 
 @x
@@ -158,10 +171,22 @@
 
 @x
         <seg>none</seg>
-        <seg>libpolkit-qt-agent-1.so, libpolkit-qt-core-1.so and libpolkit-qt-gui-1.so</seg>
-        <seg>&kde-dir;/include/polkit-qt-1</seg>
+        <seg>
+             libpolkit-qt5-agent-1.so,
+             libpolkit-qt5-core-1.so, and
+             libpolkit-qt5-gui-1.so</seg>
+        <seg>
+             /usr/include/polkit-qt5-1 and
+             /usr/lib/cmake/PolkitQt5-1
+        </seg>
 @y
         <seg>&None;</seg>
-        <seg>libpolkit-qt-agent-1.so, libpolkit-qt-core-1.so, libpolkit-qt-gui-1.so</seg>
-        <seg>&kde-dir;/include/polkit-qt-1</seg>
+        <seg>
+             libpolkit-qt5-agent-1.so,
+             libpolkit-qt5-core-1.so,
+             libpolkit-qt5-gui-1.so</seg>
+        <seg>
+             /usr/include/polkit-qt5-1,
+             /usr/lib/cmake/PolkitQt5-1
+        </seg>
 @z

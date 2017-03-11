@@ -119,10 +119,15 @@
     <para role="optional">
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
-      <xref linkend="lynx"/>,
-      <xref linkend="openldap"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="lynx"/> or
+      <xref linkend="Links"/> or
+      <ulink url="http://elinks.or.cz/">ELinks</ulink>,
+      <xref linkend="nghttp2"/>,
+      <xref linkend="openldap"/> (<xref linkend="apr-util"/> needs to be
+      installed with ldap suport),
       <xref linkend="rsync"/>,
-      <ulink url="http://www.distcache.org/">Distcache</ulink>, and
+      <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>, and
       <xref linkend="lua"/>
     </para>
 @y
@@ -130,10 +135,15 @@
     <para role="optional">
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
-      <xref linkend="lynx"/>,
-      <xref linkend="openldap"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="lynx"/> or
+      <xref linkend="Links"/> or
+      <ulink url="http://elinks.or.cz/">ELinks</ulink>,
+      <xref linkend="nghttp2"/>,
+      <xref linkend="openldap"/> (<xref linkend="apr-util"/> needs to be
+      installed with ldap suport),
       <xref linkend="rsync"/>,
-      <ulink url="http://www.distcache.org/">Distcache</ulink>,
+      <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>,
       <xref linkend="lua"/>
     </para>
 @z
@@ -195,9 +205,9 @@
 @z
 
 @x
-      <parameter>--enable-mpm-shared=all</parameter>: This switch ensures that all
-      MPM (Multi Processing Modules) are built as Dynamic Shared Objects (DSOs),
-      so the user can choose which one to use at runtime.
+      <parameter>--enable-mpms-shared=all</parameter>: This switch ensures that
+      all MPM (Multi Processing Modules) are built as Dynamic Shared Objects
+      (DSOs), so the user can choose which one to use at runtime.
 @y
       <parameter>--enable-mpm-shared=all</parameter>:
       本スイッチは MPM (マルチプロセスモジュール; Multi Processing Modules) を動的共有オブジェクト (Dynamic Shared Objects; DSO) としてビルドすることを指示します。
@@ -279,28 +289,37 @@
 @z
 
 @x
-        See <ulink url="/usr/share/httpd/manual/configuring.html"/>
+        See <ulink url="file:///usr/share/httpd/manual/configuring.html"/>
         for detailed instructions on customising your
         <application>Apache</application> HTTP server configuration file.
 @y
         <application>Apache</application> HTTP サーバーの設定ファイルに関する設定方法の詳細は <ulink
-        url="/usr/share/httpd/manual/configuring.html"/> を参照してください。
+        url="file:///usr/share/httpd/manual/configuring.html"/> を参照してください。
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
         If you want the <application>Apache</application> server to
         start automatically when the system is booted, install the
-        <filename>/etc/rc.d/init.d/httpd</filename> init script included
-        in the <xref linkend="bootscripts"/> package.
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/httpd</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>httpd.service</filename>
+        unit</phrase> included in the
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> package.
 @y
-        システム起動時に <application>Apache</application> サーバーを自動で起動する場合は、<xref
-        linkend="bootscripts"/> パッケージに含まれる、初期起動スクリプト <filename>/etc/rc.d/init.d/httpd</filename> をインストールします。
+        システム起動時に <application>Apache</application> サーバーを自動で起動する場合は <xref
+        linkend="bootscripts" revision="sysv"/><xref linkend="systemd-units"
+        revision="systemd"/> パッケージに含まれる<phrase
+        revision="sysv"><filename>/etc/rc.d/init.d/httpd</filename>初期起動スクリプト</phrase><phrase
+        revision="systemd"><filename>httpd.service</filename> ユニット</phrase>をインストールします。
 @z
 
 @x
@@ -323,17 +342,17 @@
         <seg>
           ab,           apachectl, apxs,     checkgid, dbmmanage, fcgistarter,
           htcacheclean, htdbm,     htdigest, htpasswd, httpd,
-          httxt2dbm,    logresolve,      and rotatelogs
+          httxt2dbm,    logresolve,      rotatelogs, and suexec
         </seg>
         <seg>
-          None
+          Several libraries under /usr/lib/httpd/modules/
         </seg>
         <seg>
           /etc/httpd,
           /srv/www,
           /usr/include/httpd,
           /usr/lib/httpd,
-          /usr/share/httpd
+          /usr/share/httpd,
           /var/log/httpd, and
           /var/run/httpd
         </seg>
@@ -341,17 +360,17 @@
         <seg>
           ab,           apachectl, apxs,     checkgid, dbmmanage, fcgistarter,
           htcacheclean, htdbm,     htdigest, htpasswd, httpd,
-          httxt2dbm,    logresolve,          rotatelogs
+          httxt2dbm,    logresolve,      rotatelogs, suexec
         </seg>
         <seg>
-          &None;
+          Several libraries under /usr/lib/httpd/modules/
         </seg>
         <seg>
           /etc/httpd,
           /srv/www,
           /usr/include/httpd,
           /usr/lib/httpd,
-          /usr/share/httpd
+          /usr/share/httpd,
           /var/log/httpd,
           /var/run/httpd
         </seg>

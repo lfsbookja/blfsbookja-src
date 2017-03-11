@@ -136,17 +136,15 @@
 @z
 
 @x
-	<seg>
-	  None
-	</seg>
+        <seg>
+          None
+        </seg>
         <seg>
           libatkmm-1.6.so
         </seg>
         <seg>
-          /usr/include/atkmm-1.6,
-          /usr/lib/atkmm-1.6,
-          /usr/share/devhelp/books/atkmm-1.6 and
-          /usr/share/doc/atkmm-1.6
+          /usr/{include,lib}/atkmm-1.6 and
+          /usr/share/{devhelp/books/atkmm-1.6,doc/atkmm-&atkmm-version;}
         </seg>
 @y
 	<seg>
@@ -156,10 +154,8 @@
           libatkmm-1.6.so
         </seg>
         <seg>
-          /usr/include/atkmm-1.6,
-          /usr/lib/atkmm-1.6,
-          /usr/share/devhelp/books/atkmm-1.6,
-          /usr/share/doc/atkmm-1.6
+          /usr/{include,lib}/atkmm-1.6,
+          /usr/share/{devhelp/books/atkmm-1.6,doc/atkmm-&atkmm-version;}
         </seg>
 @z
 

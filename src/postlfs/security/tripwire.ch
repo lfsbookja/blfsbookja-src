@@ -78,11 +78,11 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="openssl"/></para>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended"><xref linkend="openssl"/></para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="openssl"/></para>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended"><xref linkend="openssl"/></para>
 @z
 
 @x
@@ -95,10 +95,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/tripwire"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/tripwire"/></para>
 @z
 
 @x
@@ -154,42 +152,47 @@
 @z
 
 @x
-    <para><command>sed -i -e 's@TWDB="${prefix}@TWDB="/var@'
-    install/install.cfg</command>: This command tells the package to install
-    the program database and reports in
-    <filename class="directory">/var/lib/tripwire</filename>.</para>
+      <command>sed ... installer/install.cfg</command>: This command tells
+      the package to install the program database and reports in
+      <filename class="directory">/var/lib/tripwire</filename> and sets the
+      proper location for man pages and documentation.
 @y
-    <para>
-    <command>sed -i -e 's@TWDB="${prefix}@TWDB="/var@'
-    install/install.cfg</command>:
-    このコマンドは、本プログラムのデータベースと報告ファイル類を <filename
-    class="directory">/var/lib/tripwire</filename> ディレクトリにインストールするようにします。
-    </para>
+      <command>sed ... installer/install.cfg</command>: This command tells
+      the package to install the program database and reports in
+      <filename class="directory">/var/lib/tripwire</filename> and sets the
+      proper location for man pages and documentation.
 @z
 
 @x
-    <para><command>make install</command>: This command creates the
-    <application>Tripwire</application> security keys as well as installing
-    the binaries. There are two keys: a site key and a local key which are
-    stored in <filename class="directory">/etc/tripwire/</filename>.</para>
+      <command>find ...</command>, <command>sed ...</command>, and
+      <command>autoreconf -fi</command>: The build system is unusable as is, and
+      has to be modified for the build to succeed.
 @y
-    <para>
-    <command>make install</command>:
-    このコマンドを実行すると、実行バイナリ類のインストールとともに、セキュリティ鍵 (security keys) の生成も行います。
-    サイト鍵 (site key) とローカル鍵 (local key) の２つです。
-    これらは <filename class="directory">/etc/tripwire/</filename> ディレクトリに保存されます。
-    </para>
+      <command>find ...</command>, <command>sed ...</command>, and
+      <command>autoreconf -fi</command>: The build system is unusable as is, and
+      has to be modified for the build to succeed.
 @z
 
 @x
-    <para><command>cp -v policy/*.txt /usr/doc/tripwire</command>: This command
-    installs the <application>tripwire</application> sample policy files with
-    the other <application>tripwire</application> documentation.</para>
+      <command>make install</command>: This command creates the
+      <application>Tripwire</application> security keys as well as installing
+      the binaries. There are two keys: a site key and a local key which are
+      stored in <filename class="directory">/etc/tripwire/</filename>.
 @y
-    <para>
-    <command>cp -v policy/*.txt /usr/doc/tripwire</command>:
-    このコマンドは <application>tripwire</application> のサンプルポリシーファイルやドキュメントをインストールします。
-    </para>
+      <command>make install</command>:
+      このコマンドを実行すると、実行バイナリ類のインストールとともに、セキュリティ鍵 (security keys) の生成も行います。
+      サイト鍵 (site key) とローカル鍵 (local key) の２つです。
+      これらは <filename class="directory">/etc/tripwire/</filename> ディレクトリに保存されます。
+@z
+
+@x
+      <command>cp -v policy/*.txt /usr/doc/tripwire-&tripwire-version;</command>:
+      This command installs the <application>tripwire</application> sample
+      policy files with the other <application>tripwire</application>
+      documentation.i
+@y
+      <command>cp -v policy/*.txt /usr/doc/tripwire-&tripwire-version;</command>:
+      このコマンドは <application>tripwire</application> のサンプルポリシーファイルやドキュメントをインストールします。
 @z
 
 @x
@@ -227,15 +230,11 @@
 @x
       <para>Policy files should be tailored to each individual distribution
       and/or installation. Some example policy files can be found in <filename
-      class="directory">/usr/doc/tripwire/</filename> (Note that <filename
-      class="directory">/usr/doc/</filename> is a symbolic link on LFS systems
-      to <filename class="directory">/usr/share/doc/</filename>).</para>
+      class="directory">/usr/share/doc/tripwire/</filename>.</para>
 @y
       <para>
       ポリシーファイルは、個々のディストリビューションやインストール状況に応じて設定する必要があります。
-      <filename class="directory">/usr/doc/tripwire/</filename> にはポリシーファイルの例がいくつかあります。
-      (ちなみに <filename class="directory">/usr/doc/</filename> ディレクトリは、LFS システムにおいては <filename
-      class="directory">/usr/share/doc/</filename> へのシンボリックリンクです。)
+      <filename class="directory">/usr/sharedoc/tripwire/</filename> にはポリシーファイルの例がいくつかあります。
       </para>
 @z
 
@@ -244,23 +243,32 @@
       class="directory">/etc/tripwire/</filename> instead of using the default
       policy file, <filename>twpol.txt</filename>.  It is, however, recommended
       that you edit your policy file. Get ideas from the examples above and
-      read <filename>/usr/doc/tripwire/policyguide.txt</filename> for
+      read <filename>/usr/share/doc/tripwire/policyguide.txt</filename> for
       additional information. <filename>twpol.txt</filename> is a good policy
-      file for learning about  <application>Tripwire</application> as it will
+      file for learning about <application>Tripwire</application> as it will
       note any changes to the file system and can even be used as an annoying
       way of keeping track of changes for uninstallation of software.</para>
 @y
-      <para>
-      必要に応じて、デフォルトのポリシーファイル <filename>twpol.txt</filename> は用いずに、ポリシーファイルを <filename
-      class="directory">/etc/tripwire/</filename> にコピーします。さらにそのポリシーファイルは適当に書き換えることが求められます。
-      その方法の詳細については、上に示したサンプルファイルや <filename>/usr/doc/tripwire/policyguide.txt</filename> を参照してください。
-      <filename>twpol.txt</filename> も、<application>Tripwire</application> を学ぶ上でのちょうど良いサンプルとなっており、
-      
-      as it will
+      <para>If desired, copy the policy file you'd like to try into <filename
+      class="directory">/etc/tripwire/</filename> instead of using the default
+      policy file, <filename>twpol.txt</filename>.  It is, however, recommended
+      that you edit your policy file. Get ideas from the examples above and
+      read <filename>/usr/share/doc/tripwire/policyguide.txt</filename> for
+      additional information. <filename>twpol.txt</filename> is a good policy
+      file for learning about <application>Tripwire</application> as it will
       note any changes to the file system and can even be used as an annoying
-      way of keeping track of changes for uninstallation of software.
-      </para>
+      way of keeping track of changes for uninstallation of software.</para>
 @z
+%      <para>
+%      必要に応じて、デフォルトのポリシーファイル <filename>twpol.txt</filename> は用いずに、ポリシーファイルを <filename
+%      class="directory">/etc/tripwire/</filename> にコピーします。さらにそのポリシーファイルは適当に書き換えることが求められます。
+%      その方法の詳細については、上に示したサンプルファイルや <filename>/usr/doc/tripwire/policyguide.txt</filename> を参照してください。
+%      <filename>twpol.txt</filename> も、<application>Tripwire</application> を学ぶ上でのちょうど良いサンプルとなっており、
+%      
+%      as it will
+%      note any changes to the file system and can even be used as an annoying
+%      way of keeping track of changes for uninstallation of software.
+%      </para>
 
 @x
       <para>After your policy file has been edited to your satisfaction you may
@@ -439,11 +447,13 @@
 @x
         <seg>siggen, tripwire, twadmin, and twprint</seg>
         <seg>None</seg>
-        <seg>/etc/tripwire, /var/lib/tripwire, and /usr/share/doc/tripwire</seg>
+	<seg>/etc/tripwire, /var/lib/tripwire,
+        and /usr/share/doc/tripwire-&tripwire-version;</seg>
 @y
-        <seg>siggen, tripwire, twadmin, twprint</seg>
+        <seg>siggen, tripwire, twadmin, and twprint</seg>
         <seg>&None;</seg>
-        <seg>/etc/tripwire, /var/lib/tripwire, /usr/share/doc/tripwire</seg>
+	<seg>/etc/tripwire, /var/lib/tripwire,
+        and /usr/share/doc/tripwire-&tripwire-version;</seg>
 @z
 
 @x

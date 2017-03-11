@@ -70,14 +70,16 @@ In Linux, just
 @x
   <para>The first task is making a recovery boot device in
   <xref linkend="postlfs-config-bootdisk"/> because it's the most critical need.
-  Then the system is configured to ease addition of new users, because this
+  Hardware issues relevant to firmware and other devices is addressed next.
+  The system is then configured to ease addition of new users, because this
   can affect the choices you make in the two subsequent
   topics&mdash;<xref linkend="postlfs-config-profile"/> and
   <xref linkend="postlfs-config-vimrc"/>.</para>
 @y
   <para>The first task is making a recovery boot device in
   <xref linkend="postlfs-config-bootdisk"/> because it's the most critical need.
-  Then the system is configured to ease addition of new users, because this
+  Hardware issues relevant to firmware and other devices is addressed next.
+  The system is then configured to ease addition of new users, because this
   can affect the choices you make in the two subsequent
   topics&mdash;<xref linkend="postlfs-config-profile"/> and
   <xref linkend="postlfs-config-vimrc"/>.</para>
@@ -85,14 +87,14 @@ In Linux, just
 
 @x
   <para> The remaining topics, <xref linkend="postlfs-config-logon"/>,
-  <xref linkend="postlfs-config-shells"/>, <xref linkend="postlfs-config-random"/>,
-  <xref linkend="autofs"/>, and
-  <xref linkend="postlfs-config-netfs"/> are then addressed, in that order. They
+  <phrase revision="sysv"><xref linkend="postlfs-config-random"/>,</phrase>
+  and <xref linkend="autofs"/> are then addressed, in that order. They
   don't have much interaction with the other topics in this chapter.</para>
 @y
-  <para> この他のトピックとして <xref linkend="postlfs-config-logon"/>、<xref
-  linkend="postlfs-config-shells"/>、<xref linkend="postlfs-config-random"/>、<xref
-  linkend="autofs"/>、<xref linkend="postlfs-config-netfs"/> について順に説明します。
+  <para>
+  この他のトピックとして <xref linkend="postlfs-config-logon"/>,
+  <phrase revision="sysv"><xref linkend="postlfs-config-random"/>,</phrase>
+  and <xref linkend="autofs"/> について順に説明します。
   これらについては互いに関連はありません。
   </para>
 @z

@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libcroco-buildsize     "13 MB (with tests)">
+  <!ENTITY libcroco-time          "0.1 SBU (with tests)">
+@y
+  <!ENTITY libcroco-buildsize     "13 MB (テスト込み)">
+  <!ENTITY libcroco-time          "0.1 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to libcroco</title>
 @y
     <title>&IntroductionTo1;libcroco&IntroductionTo2;</title>
@@ -120,10 +128,17 @@
 @z
 
 @x
-      To run the test suite, run 
-      <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command>.
+      To execute the test suite, run <command>make -k test</command>.  Some
+      tests fail: searching files in wrong location, locale problems
+      (character codes compared to characters), float point numbers not
+      properly rounded to the same number of places are some of the
+      reasons.
 @y
-      テストスイートを実行する場合は <command>LD_LIBRARY_PATH=$(pwd)/src/.libs make test</command> を実行します。
+      To execute the test suite, run <command>make -k test</command>.  Some
+      tests fail: searching files in wrong location, locale problems
+      (character codes compared to characters), float point numbers not
+      properly rounded to the same number of places are some of the
+      reasons.
 @z
 
 @x

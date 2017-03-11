@@ -128,18 +128,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>sed -i...</command>: This command fixes a build error with GCC 5.
-@y
-      <command>sed -i...</command>: This command fixes a build error with GCC 5.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

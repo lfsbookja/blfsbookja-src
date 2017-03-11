@@ -79,12 +79,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libxfce4util"/>
+      <xref linkend="libxfce4ui"/> built with both <xref linkend="gtk2"/> and
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libxfce4util"/>
+      <xref linkend="libxfce4ui"/> built with both <xref linkend="gtk2"/> and
+      <xref linkend="gtk3"/>
     </para>
 @z
 
@@ -158,9 +160,12 @@
           None
         </seg>
         <seg>
-          libgarcon-1.so
+          libgarcon-1.so and
+          libgarcon-gtk2-1.so
         </seg>
         <seg>
+          /usr/include/garcon-1,
+          /usr/include/garcon-gtk2-1 and
           /usr/share/gtk-doc/html/garcon
         </seg>
 @y
@@ -168,9 +173,12 @@
           &None;
         </seg>
         <seg>
-          libgarcon-1.so
+          libgarcon-1.so,
+          libgarcon-gtk2-1.so
         </seg>
         <seg>
+          /usr/include/garcon-1,
+          /usr/include/garcon-gtk2-1,
           /usr/share/gtk-doc/html/garcon
         </seg>
 @z

@@ -105,11 +105,11 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. Test suite
-    results are kept in <filename>test.sh.log</filename>.</para>
+    <para>To test the results, issue: <command>make check-TESTS</command>. Test
+    suite results are kept in <filename>test.sh.log</filename>.</para>
 @y
     <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    ビルド結果をテストする場合は <command>make check-TESTS</command> を実行します。
     テスト結果は <filename>test.sh.log</filename> に出力されます。
     </para>
 @z

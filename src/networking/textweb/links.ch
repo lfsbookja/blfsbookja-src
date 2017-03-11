@@ -81,36 +81,25 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="gpm"/> (if mouse support is
-    desired) and
-    <xref linkend="openssl"/></para>
+    <para role="recommended"><xref linkend="openssl"/></para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="gpm"/>
-    (マウスサポートが必要な場合),
-    <xref linkend="openssl"/></para>
+    <para role="recommended"><xref linkend="openssl"/></para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">Support for graphical mode requires at least one of
-    <xref linkend="gpm"/> (to be used with a framebuffer-based console),
+    <para role="optional">Graphics mode requires at least one of
+    <xref linkend="gpm"/> (mouse support to be used with a framebuffer-based console),
     <ulink url="http://www.svgalib.org/">SVGAlib</ulink>,
-    <!-- SDL support is removed upstream until someone fixes it
-    <xref linkend="sdl"/>,
-    -->
-    <ulink url="http://www.directfb.org/">DirectFB</ulink>, and
+    <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>, and
     <xref linkend="x-window-system"/></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-    グラフィックモードのサポートを有効にするには、最低でも以下のいずれか一つが必要です。
-    <xref linkend="gpm"/> (フレームバッファベースのコンソールにて利用されます),
+    <para role="optional">Graphics mode requires at least one of
+    <xref linkend="gpm"/> (mouse support to be used with a framebuffer-based console),
     <ulink url="http://www.svgalib.org/">SVGAlib</ulink>,
-    <!-- SDL support is removed upstream until someone fixes it
-    <xref linkend="sdl"/>,
-    -->
-    <ulink url="http://www.directfb.org/">DirectFB</ulink>,
+    <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>, and
     <xref linkend="x-window-system"/></para>
 @z
 
@@ -118,12 +107,13 @@
     <para>For decoding various image formats <application>Links</application>
     can utilize
     <xref linkend="libpng"/>,
-    <xref linkend="libjpeg"/>, and
+    <xref linkend="libjpeg"/>,
+    <xref linkend="librsvg"/>, and
     <xref linkend="libtiff"/></para>
 @y
     <para>
     さまざまなイメージフォーマットのデコーディングを行うために <application>Links</application> では以下を利用します。
-    <xref linkend="libpng"/>, <xref linkend="libjpeg"/>, <xref linkend="libtiff"/>
+    <xref linkend="libpng"/>, <xref linkend="libjpeg"/>, <xref linkend="librsvg"/>, <xref linkend="libtiff"/>
     </para>
 @z
 
@@ -230,11 +220,11 @@
 @x
         <seg>links</seg>
         <seg>None</seg>
-        <seg>/usr/share/doc/links-&Links-version;</seg>
+        <seg>/usr/share/doc/links-&links-version;</seg>
 @y
         <seg>links</seg>
         <seg>&None;</seg>
-        <seg>/usr/share/doc/links-&Links-version;</seg>
+        <seg>/usr/share/doc/links-&links-version;</seg>
 @z
 
 @x

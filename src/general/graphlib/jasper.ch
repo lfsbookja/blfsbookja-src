@@ -14,14 +14,6 @@
 @z
 
 @x
-  <!ENTITY jasper-buildsize     "11.1 MB (without the static library)">
-  <!ENTITY jasper-time          "0.3 SBU">
-@y
-  <!ENTITY jasper-buildsize     "11.1 MB (スタティックライブラリを除く)">
-  <!ENTITY jasper-time          "0.3 SBU">
-@z
-
-@x
     <title>Introduction to JasPer</title>
 @y
     <title>&IntroductionTo1;JasPer&IntroductionTo2;</title>
@@ -80,29 +72,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink
-@y
-        <para>必須のパッチ: <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">JasPer Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;JasPer&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="unzip"/></para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="unzip"/></para>
 @z
 
 @x
@@ -120,12 +92,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="freeglut"/> (required for <command>jiv</command>)
+      <xref linkend="freeglut"/> (required for <command>jiv</command>), 
+      <xref linkend="doxygen"/> (needed for generating html documentation), and
+      <xref linkend="texlive"/> (needed to regnerate the pdf documention)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="freeglut"/> (<command>jiv</command> に必要)
+      <xref linkend="freeglut"/> (<command>jiv</command> に必要), 
+      <xref linkend="doxygen"/> (needed for generating html documentation),
+      <xref linkend="texlive"/> (needed to regnerate the pdf documention)
     </para>
 @z
 
@@ -144,19 +120,11 @@
 @z
 
 @x
-  <para>The package source is distributed in <filename class="extension">.zip</filename>
-  format and requires <command>unzip</command>, but it has been correctly packaged
-  and will create the jasper-&jasper-version; directory when you unzip it.</para>
+    <para>To test the results, issue:  <command>make test</command>.</para>
 @y
-  <para>The package source is distributed in <filename class="extension">.zip</filename>
-  format and requires <command>unzip</command>, but it has been correctly packaged
-  and will create the jasper-&jasper-version; directory when you unzip it.</para>
-@z
-
-@x
-    <para>This package does not come with a testsuite.</para>
-@y
-    <para>&notTestSuite;</para>
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    </para>
 @z
 
 @x
@@ -169,43 +137,17 @@
 @z
 
 @x
-    <para>If you wish to install the PDF files for the Reference Manual and a
-    tutorial on the JPEG-2000 standard, run the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>If you wish to install the PDF files for the Reference Manual and a
-    tutorial on the JPEG-2000 standard, run the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
 @z
 
 @x
-    <para><parameter>--enable-shared</parameter>: This command
-    causes the shared library to be built.</para>
+    <para><option>-DCMAKE_SKIP_INSTALL_RPATH=YES</option>: This option removes
+    embedded library search paths.</para>
 @y
-    <para><parameter>--enable-shared</parameter>: This command
-    causes the shared library to be built.</para>
-@z
-
-@x
-    <para><option>--x-includes=DIR --x-libraries=DIR</option>: These tell the
-    <command>configure</command> script where to find <application>Xorg</application>
-    if it is not in
-    <filename class='directory'>/usr/X11</filename>,
-    <filename class='directory'>/usr/X11R6</filename>, or
-    <filename class='directory'>/usr</filename>.</para>
-@y
-    <para><option>--x-includes=DIR --x-libraries=DIR</option>: These tell the
-    <command>configure</command> script where to find <application>Xorg</application>
-    if it is not in
-    <filename class='directory'>/usr/X11</filename>,
-    <filename class='directory'>/usr/X11R6</filename>, or
-    <filename class='directory'>/usr</filename>.</para>
+    <para><option>-DCMAKE_SKIP_INSTALL_RPATH=YES</option>: This option removes
+    embedded library search paths.</para>
 @z
 
 @x
@@ -225,13 +167,13 @@
 @z
 
 @x
-        <seg>imgcmp, imginfo, jasper, jiv, and tmrdemo</seg>
+        <seg>imgcmp, imginfo, jasper, and jiv</seg>
         <seg>libjasper.so</seg>
         <seg>/usr/include/jasper and /usr/share/doc/jasper-&jasper-version;</seg>
 @y
-        <seg>imgcmp, imginfo, jasper, jiv, tmrdemo</seg>
+        <seg>imgcmp, imginfo, jasper, jiv</seg>
         <seg>libjasper.so</seg>
-        <seg>/usr/include/jasper and /usr/share/doc/jasper-&jasper-version;</seg>
+        <seg>/usr/include/jasper, /usr/share/doc/jasper-&jasper-version;</seg>
 @z
 
 @x
@@ -266,16 +208,10 @@
           <para>displays images.</para>
 @z
 
-@x tmrdemo
-          <para>is a timer demonstration program.</para>
-@y
-          <para>is a timer demonstration program.</para>
-@z
-
-@x libjasper.{so,a}
-          <para>a library used by programs for reading and writing
+@x libjasper.so
+          <para>is a library used by programs for reading and writing
           JPEG2000 format files.</para>
 @y
-          <para>a library used by programs for reading and writing
+          <para>is a library used by programs for reading and writing
           JPEG2000 format files.</para>
 @z

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "1.2 GB (with Clang), and 300 MB for tests">
-  <!ENTITY llvm-time          "47 SBU (with Clang)">
+  <!ENTITY llvm-buildsize     "2.2 GB (with Clang, add 7.3 GB for tests)">
+  <!ENTITY llvm-time          "20 SBU (with Clang and parallelism=4, add 5 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "1.2 GB (with Clang), and 300 MB for tests">
-  <!ENTITY llvm-time          "47 SBU (with Clang)">
+  <!ENTITY llvm-buildsize     "2.2 GB (with Clang, add 7.3 GB for tests)">
+  <!ENTITY llvm-time          "20 SBU (with Clang and parallelism=4, add 5 SBU for tests)">
 @z
 
 @x
@@ -47,12 +47,12 @@
 
 @x
       The optional <application>Clang</application> and <application>Compiler
-      RT</application> packages provide a new C, C++, Objective C and Objective
+      RT</application> packages provide new C, C++, Objective C and Objective
       C++ front-ends and runtime libraries for the
       <application>LLVM</application>.
 @y
       The optional <application>Clang</application> and <application>Compiler
-      RT</application> packages provide a new C, C++, Objective C and Objective
+      RT</application> packages provide new C, C++, Objective C and Objective
       C++ front-ends and runtime libraries for the
       <application>LLVM</application>.
 @z
@@ -164,7 +164,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cmake"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
@@ -177,7 +176,6 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cmake"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
@@ -218,18 +216,32 @@
 
 @x
       If you have installed <application>Sphinx</application> and wish
-      to generate manual pages, issue the following command:
+      to generate the html documentation and manual pages, issue the
+      following commands:
 @y
       If you have installed <application>Sphinx</application> and wish
-      to generate manual pages, issue the following command:
+      to generate the html documentation and manual pages, issue the
+      following commands:
 @z
 
 @x
-      To test the results, issue: <command>make -k check-all</command>.
-      Some tests may fail for unknown reasons.
+      If you have downloaded the optional packages, the clang documentation
+      can be built too:
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストの中には失敗するものがありますが原因不明です。
+      If you have downloaded the optional packages, the clang documentation
+      can be built too:
+@z
+
+@x
+      To test the results, issue: <command>make check-all</command>. Tests are
+      run using the maximum number of processors/threads available.
+      Note that the Address Sanitizer tests are known to fail currently.
+<!--  Still true for v 3.9.1 -->
+@y
+      To test the results, issue: <command>make check-all</command>. Tests are
+      run using the maximum number of processors/threads available.
+      Note that the Address Sanitizer tests are known to fail currently.
+<!--  Still true for v 3.9.1 -->
 @z
 
 @x
@@ -239,13 +251,13 @@
 @z
 
 @x
-      If you have built manual pages, install them by running the
-      following command as the
-      <systemitem class="username">root</systemitem> user:
+      If you have built  the documentation, install it by running the
+      following command as the <systemitem class="username">root</systemitem>
+      user:
 @y
-      If you have built manual pages, install them by running the
-      following command as the
-      <systemitem class="username">root</systemitem> user:
+      If you have built  the documentation, install it by running the
+      following command as the <systemitem class="username">root</systemitem>
+      user:
 @z
 
 @x
@@ -266,47 +278,49 @@
 
 @x
         <seg>
-          bugpoint, c-index-test, clang, clang++ (symlink), count, FileCheck,
-          clang-check, clang-format, clang-tblgen, llc, lli, lli-child-target,
-          llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov,
-          llvm-cxxdump, llvm-diff, llvm-dis, llvm-dsymutil, llvm-dwarfdump,
-          llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup, llvm-nm,
-          llvm-objdump, llvm-pdbdump, llvm-profdata, llvm-ranlib (symlink),
-          llvm-readobj, llvm-rtdyld, llvm-size, llvm-stress, llvm-symbolizer,
-          llvm-tblgen, macho-dump, not, obj2yaml, opt, scan-build (symlink),
-          scan-view (symlink), verify-uselistorder, and yaml2obj
+          bugpoint, c-index-test, clang, clang++ (symlinks to
+          clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
+          clang-format, git-clang-format,
+          llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov,
+          llvm-c-test, llvm-cxxdump, llvm-diff, llvm-dis, llvm-dsymutil,
+          llvm-dwarfdump, llvm-dwp, llvm-extract, llvm-lib (symlink to
+          llvm-ar), llvm-link, llvm-lto, llvm-mc, llvm-mcmarkup, llvm-nm,
+          llvm-objdump, llvm-pdbdump, llvm-profdata, llvm-ranlib (symlink to
+          llvm-ar), llvm-readobj, llvm-rtdyld, llvm-size, llvm-split,
+          llvm-stress, llvm-symbolizer, llvm-tblgen, obj2yaml, opt, sancov,
+          sanstats, scan-build, scan-view, verify-uselistorder, and yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so,
-          libLTO.so,<!-- libprofile_rt.so,--> LLVMHello.so and numerous
-          static libraries in /usr/lib
+          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (57
+          libraries), libLTO.so, libclang.so and libclang*.a (24 libraries)
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
-          /usr/lib/{clang,clang-analyzer}, and
-          /usr/share/{doc/llvm-&llvm-version;,llvm}
+          /usr/lib/{clang,cmake/{clang,llvm}} and
+          /usr/share/{clang,scan-build,scan-view,doc/llvm-&llvm-version;}
         </seg>
 @y
         <seg>
-          bugpoint, c-index-test, clang, clang++ (symlink), count, FileCheck,
-          clang-check, clang-format, clang-tblgen, llc, lli, lli-child-target,
-          llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov,
-          llvm-cxxdump, llvm-diff, llvm-dis, llvm-dsymutil, llvm-dwarfdump,
-          llvm-extract, llvm-link, llvm-mc, llvm-mcmarkup, llvm-nm,
-          llvm-objdump, llvm-pdbdump, llvm-profdata, llvm-ranlib (symlink),
-          llvm-readobj, llvm-rtdyld, llvm-size, llvm-stress, llvm-symbolizer,
-          llvm-tblgen, macho-dump, not, obj2yaml, opt, scan-build (symlink),
-          scan-view (symlink), verify-uselistorder, yaml2obj
+          bugpoint, c-index-test, clang, clang++ (symlinks to
+          clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
+          clang-format, git-clang-format,
+          llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov,
+          llvm-c-test, llvm-cxxdump, llvm-diff, llvm-dis, llvm-dsymutil,
+          llvm-dwarfdump, llvm-dwp, llvm-extract, llvm-lib (symlink to
+          llvm-ar), llvm-link, llvm-lto, llvm-mc, llvm-mcmarkup, llvm-nm,
+          llvm-objdump, llvm-pdbdump, llvm-profdata, llvm-ranlib (symlink to
+          llvm-ar), llvm-readobj, llvm-rtdyld, llvm-size, llvm-split,
+          llvm-stress, llvm-symbolizer, llvm-tblgen, obj2yaml, opt, sancov,
+          sanstats, scan-build, scan-view, verify-uselistorder, yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so, libclang.so, libLLVM-&llvm-version;.so,
-          libLTO.so,<!-- libprofile_rt.so,--> LLVMHello.so and numerous
-          static libraries in /usr/lib
+          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (57
+          libraries), libLTO.so, libclang.so, libclang*.a (24 libraries)
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
-          /usr/lib/{clang,clang-analyzer},
-          /usr/share/{doc/llvm-&llvm-version;,llvm}
+          /usr/lib/{clang,cmake/{clang,llvm}},
+          /usr/share/{clang,scan-build,scan-view,doc/llvm-&llvm-version;}
         </seg>
 @z
 
@@ -410,20 +424,54 @@
             and object file's symbol table.
 @z
 
-@x llvm-prof
-            is used to print execution profile of
-            <application>LLVM</application> program.
+@x llvm-objdump
+            is an <application>LLVM</application> object file dumper.
 @y
-            is used to print execution profile of
-            <application>LLVM</application> program.
+            is an <application>LLVM</application> object file dumper.
+@z
+
+@x llvm-pdbdump
+            is used as PDB Dumper.
+@y
+            is used as PDB Dumper.
+@z
+
+@x llvm-profdata
+            is a small tool to manipulate and print profile data files.
+@y
+            is a small tool to manipulate and print profile data files.
 @z
 
 @x llvm-ranlib
-            is used to generate index for <application>LLVM</application>
+            is used to generate an index for a <application>LLVM</application>
             archive.
 @y
-            is used to generate index for <application>LLVM</application>
+            is used to generate an index for a <application>LLVM</application>
             archive.
+@z
+
+@x llvm-readobj
+            displays low-level format-specific information about object files.
+@y
+            displays low-level format-specific information about object files.
+@z
+
+@x llvm-rtdyld
+            is the <application>LLVM</application> MC-JIT tool.
+@y
+            is the <application>LLVM</application> MC-JIT tool.
+@z
+
+@x llvm-size
+            is the <application>LLVM</application> object size dumper.
+@y
+            is the <application>LLVM</application> object size dumper.
+@z
+
+@x llvm-split
+            is the <application>LLVM</application> module splitter.
+@y
+            is the <application>LLVM</application> module splitter.
 @z
 
 @x llvm-stress
@@ -434,12 +482,26 @@
             <filename class="extension">.ll</filename> files.
 @z
 
+@x llvm-symbolizer
+            converts adresses into source code locations.
+@y
+            converts adresses into source code locations.
+@z
+
 @x llvm-tblgen
             is the <application>LLVM</application> Target Description
             To C++ Code Generator.
 @y
             is the <application>LLVM</application> Target Description
             To C++ Code Generator.
+@z
+
+@x obj2yaml
+            takes an object file,and produces a YAML representation of the
+            file.
+@y
+            takes an object file,and produces a YAML representation of the
+            file.
 @z
 
 @x opt

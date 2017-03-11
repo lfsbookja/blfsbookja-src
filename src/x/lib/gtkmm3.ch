@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gtkmm3-buildsize     "376 MB (Additional 15 MB for tests)">
-  <!ENTITY gtkmm3-time          "2.3 SBU (Additional 0.6 SBU for tests)">
+  <!ENTITY gtkmm3-buildsize     "563 MB (with tests)">
+  <!ENTITY gtkmm3-time          "4.4 SBU (with tests)">
 @y
-  <!ENTITY gtkmm3-buildsize     "376 MB (テスト実行時はさらに 15 MB)">
-  <!ENTITY gtkmm3-time          "2.3 SBU (テスト実行時はさらに 0.6 SBU)">
+  <!ENTITY gtkmm3-buildsize     "563 MB (テスト込み)">
+  <!ENTITY gtkmm3-time          "4.4 SBU (テスト込み)">
 @z
 
 @x
@@ -118,9 +118,14 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. Note that you
+      must be in a graphical environment, as the tests try to open some
+      windows.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      Note that you
+      must be in a graphical environment, as the tests try to open some
+      windows.
 @z
 
 @x
@@ -147,24 +152,23 @@
 
 @x
         <seg>
-	  None
-	</seg>
-	<seg>
+          None
+        </seg>
+        <seg>
           libgdkmm-3.0.so and libgtkmm-3.0.so
         </seg>
         <seg>
           /usr/include/gdkmm-3.0,
           /usr/include/gtkmm-3.0,
           /usr/lib/gdkmm-3.0,
-          /usr/lib/gtkmm-3.0,
-          /usr/share/devhelp/books/gtkmm-3.0, and
-          /usr/share/doc/gtkmm-3.0
+          /usr/lib/gtkmm-3.0, and
+          /usr/share/{devhelp/books/gtkmm-3.0,doc/gtkmm-&gtkmm3-version;}
         </seg>
 @y
         <seg>
 	  &None;
 	</seg>
-	<seg>
+        <seg>
           libgdkmm-3.0.so, libgtkmm-3.0.so
         </seg>
         <seg>
@@ -172,8 +176,7 @@
           /usr/include/gtkmm-3.0,
           /usr/lib/gdkmm-3.0,
           /usr/lib/gtkmm-3.0,
-          /usr/share/devhelp/books/gtkmm-3.0,
-          /usr/share/doc/gtkmm-3.0
+          /usr/share/{devhelp/books/gtkmm-3.0,doc/gtkmm-&gtkmm3-version;}
         </seg>
 @z
 

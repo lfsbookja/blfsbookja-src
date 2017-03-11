@@ -72,12 +72,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="python2"/>
     </para>
 @z
 
@@ -86,14 +88,16 @@
     <para role="optional">
       <xref linkend="cairo"/> (required for the tests),
       <xref linkend="gtk-doc"/> and
-      <ulink url="http://www.makotemplates.org/">Mako</ulink>
+      <phrase revision="sysv"><ulink url="http://www.makotemplates.org/">Mako</ulink></phrase>
+      <phrase revision="systemd"><xref linkend="Mako"/></phrase>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (テスト実施時に必要),
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://www.makotemplates.org/">Mako</ulink>
+      <phrase revision="sysv"><ulink url="http://www.makotemplates.org/">Mako</ulink></phrase>
+      <phrase revision="systemd"><xref linkend="Mako"/></phrase>
     </para>
 @z
 
@@ -153,7 +157,7 @@
 @x
         <seg>
           g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool,
-          g-ir-generate, and g-ir-scanner
+          g-ir-inspect, g-ir-generate, and g-ir-scanner
         </seg>
         <seg>
           libgirepository-1.0.so and
@@ -169,7 +173,7 @@
 @y
         <seg>
           g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool,
-          g-ir-generate, g-ir-scanner
+          g-ir-inspect, g-ir-generate, g-ir-scanner
         </seg>
         <seg>
           libgirepository-1.0.so,
@@ -204,13 +208,13 @@
 @z
 
 @x g-ir-generate
-            is a GIR generator using the repository API.
+            is a GIR generator that uses the repository API.
 @y
             GIR 生成ツールです。リポジトリ API が利用されます。
 @z
 
 @x libgirepository-1.0.so
-            provides an API to access to the typelib metadata.
+            provides an API to access the typelib metadata.
 @y
             typelib メタデータにアクセスするための API 関数を提供します。
 @z

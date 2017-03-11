@@ -14,25 +14,34 @@
 @z
 
 @x
-    <title>Introduction to TeX Live</title>
+    <title>Introduction to TeX Live from source</title>
 @y
-    <title>&IntroductionTo1;TeX Live&IntroductionTo2;</title>
+    <title>Introduction to TeX Live from source</title>
 @z
 
 @x
-    <para>The <application>TeX Live</application> package is a comprehensive
-    TeX document production system.  It includes TEX, LaTeX2e, ConTEXt,
-    Metafont, MetaPost, BibTeX and many other programs; an extensive collection
-    of macros, fonts and documentation; and support for typesetting in many
-    different scripts from around the world.</para>
+    <para>Most of TeX Live can be built from source without a pre-existing
+    installation, but <application>xindy</application> (for indexing) needs
+    working versions of <command>latex</command> and <command>pdflatex</command>
+    when configure is run, and the testsuite and install for
+    <command>asy</command> (for vector graphics) will fail if TeX has not
+    already been installed. Additionally, <application>biber</application> is
+    not provided within the <application>texlive</application> source.</para>
 @y
-    <para>
-    <application>TeX Live</application> パッケージは、統合的な TeX 文書生成システムです。
-    この中には TEX, LaTeX2e, ConTEXt, Metafont, MetaPost, BibTeX など、数多くのプログラムが含まれます。
-    さらに膨大なマクロやフォントや文書ファイルも提供されます。
-    これらは、世界中のさまざまな形式により組版処理を行うものです。
-    </para>
+    <para>Most of TeX Live can be built from source without a pre-existing
+    installation, but <application>xindy</application> (for indexing) needs
+    working versions of <command>latex</command> and <command>pdflatex</command>
+    when configure is run, and the testsuite and install for
+    <command>asy</command> (for vector graphics) will fail if TeX has not
+    already been installed. Additionally, <application>biber</application> is
+    not provided within the <application>texlive</application> source.</para>
 @z
+%    <para>
+%    <application>TeX Live</application> パッケージは、統合的な TeX 文書生成システムです。
+%    この中には TEX, LaTeX2e, ConTEXt, Metafont, MetaPost, BibTeX など、数多くのプログラムが含まれます。
+%    さらに膨大なマクロやフォントや文書ファイルも提供されます。
+%    これらは、世界中のさまざまな形式により組版処理を行うものです。
+%    </para>
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
@@ -41,27 +50,27 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&texlive-source-download-http;"/></para>
+        <para>Download (HTTP): <ulink url="&texlive-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&texlive-source-download-http;"/></para>
+        <para>&Download; (HTTP): <ulink url="&texlive-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&texlive-source-download-ftp;"/></para>
+        <para>Download (FTP): <ulink url="&texlive-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&texlive-source-download-ftp;"/></para>
+        <para>&Download; (FTP): <ulink url="&texlive-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &texlive-source-md5sum;</para>
+        <para>Download MD5 sum: &texlive-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &texlive-source-md5sum;</para>
+        <para>&Download; MD5 sum: &texlive-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &texlive-source-size;</para>
+        <para>Download size: &texlive-size;</para>
 @y
-        <para>&DownloadSize;: &texlive-source-size;</para>
+        <para>&DownloadSize;: &texlive-size;</para>
 @z
 
 @x
@@ -77,68 +86,90 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">Required Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+    <bridgehead renderas="sect3">Required Additional Downloads</bridgehead>
 @z
 
 @x
-        <para>The TeX Live installer: <ulink url="&texlive-installer;"/></para>
+      <para>Much of the texlive environment (including scripts, documentation,
+      fonts and various other files) is not part of the source tarball. You must
+      download it separately. This will give you all of the additional files
+      which are provided by a full install of the binary version, there is no
+      realistic way to restrict which parts get installed.</para>
 @y
-        <para>TeX Live インストーラー: <ulink url="&texlive-installer;"/></para>
+      <para>Much of the texlive environment (including scripts, documentation,
+      fonts and various other files) is not part of the source tarball. You must
+      download it separately. This will give you all of the additional files
+      which are provided by a full install of the binary version, there is no
+      realistic way to restrict which parts get installed.</para>
 @z
 
 @x
-    <bridgehead renderas="sect3">TeX Live Dependencies</bridgehead>
+        Because of the size of this package, it is unlikely to be mirrored by
+        BLFS mirrors.  In case of difficulty, go to http://www.ctan.org/mirrors/
+        to find a more-accessible mirror.
 @y
-    <bridgehead renderas="sect3">&Dependencies1;TeX Live&Dependencies2;</bridgehead>
+        Because of the size of this package, it is unlikely to be mirrored by
+        BLFS mirrors.  In case of difficulty, go to http://www.ctan.org/mirrors/
+        to find a more-accessible mirror.
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (to build from source)</bridgehead>
-    <para role="optional">
-      The source ships with its own versions of <emphasis>many</emphasis> of
-      these libraries, and will use them unless it is forced to use the system
-      versions.  Work is in progress to deal with this, in the meantime please
-      see<ulink url="http://wiki.linuxfromscratch.org/blfs/ticket/4647"> ticket
-      #4647</ulink>.
-      <xref linkend="gs"/>,
-      <xref linkend="poppler"/>,
-      <xref linkend="freetype2"/>,
-      <xref linkend="fontconfig"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="x-window-system"/>,
-      <xref linkend="icu"/>,
-      <ulink url="http://libgd.bitbucket.org">GD</ulink>,
-      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>,
-      <ulink url="http://sourceforge.net/projects/zziplib/">ZZIPlib</ulink>,
-      <ulink url="http://www.gnu.org/software/clisp/">CLISP</ulink>,
-      <xref linkend="lua"/>,
-      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=TECkitDownloads">TECkit</ulink>, and
-      <xref linkend="graphite2"/>
+        <para>Download (HTTP): <ulink url="&texlive-texmf-download-http;"/></para>
+@y
+        <para>Download (HTTP): <ulink url="&texlive-texmf-download-http;"/></para>
+@z
+
+@x
+        <para>Download (FTP): <ulink url="&texlive-texmf-download-ftp;"/></para>
+@y
+        <para>Download (FTP): <ulink url="&texlive-texmf-download-ftp;"/></para>
+@z
+
+@x
+        <para>Download MD5 sum: &texlive-texmf-md5sum;</para>
+@y
+        <para>Download MD5 sum: &texlive-texmf-md5sum;</para>
+@z
+
+@x
+        <para>Download size: &texlive-texmf-size;</para>
+@y
+        <para>Download size: &texlive-texmf-size;</para>
+@z
+
+@x
+        <para>Required patch: <ulink
+@y
+        <para>Required patch: <ulink
+@z
+
+@x
+        <para>Required patch: <ulink
+@y
+        <para>Required patch: <ulink
+@z
+
+@x
+    <bridgehead renderas="sect3">TeX Live from source Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">TeX Live from source Dependencies</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gs"/> (for dvisvgm - used by asymptote which provides a
+      mathematical coordinate-based framework for technical drawing),
+      <xref linkend="x-window-system"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional; (to build from source)</bridgehead>
-    <para role="optional">
-      The source ships with its own versions of <emphasis>many</emphasis> of
-      these libraries, and will use them unless it is forced to use the system
-      versions.  Work is in progress to deal with this, in the meantime please
-      see<ulink url="http://wiki.linuxfromscratch.org/blfs/ticket/4647"> ticket
-      #4647</ulink>.
-      <xref linkend="gs"/>,
-      <xref linkend="poppler"/>,
-      <xref linkend="freetype2"/>,
-      <xref linkend="fontconfig"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="x-window-system"/>,
-      <xref linkend="icu"/>,
-      <ulink url="http://libgd.bitbucket.org">GD</ulink>,
-      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>,
-      <ulink url="http://sourceforge.net/projects/zziplib/">ZZIPlib</ulink>,
-      <ulink url="http://www.gnu.org/software/clisp/">CLISP</ulink>,
-      <xref linkend="lua"/>,
-      <ulink url="http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&amp;id=TECkitDownloads">TECkit</ulink>, and
-      <xref linkend="graphite2"/>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gs"/> (for dvisvgm - used by asymptote which provides a
+      mathematical coordinate-based framework for technical drawing),
+      <xref linkend="x-window-system"/>
     </para>
 @z
 
@@ -154,45 +185,87 @@
     <title>&InstallationOf1;TeX Live&InstallationOf2;</title>
 @z
 
+%@x
+%    <para>The <application>TeX Live</application> set of programs with its
+%    supporting documents, fonts, and utilities is very large.  The upstream
+%    maintainers recommend placing all files in a single directory structure.
+%    BLFS recommends <filename class='directory'>/opt/texlive</filename>.</para>
+%@y
+%    <para>
+%    <application>TeX Live</application> には一連のプログラムに加えて、これをサポートするドキュメント、フォント、ユーティリティーツールが含まれ、実に膨大なものとなっています。
+%    アップストリームの管理者は、すべてのファイルを単一のディレクトリ構造配下に収容することを推奨しています。
+%    BLFS では <filename class='directory'>/opt/texlive</filename> を推奨します。
+%    </para>
+%@z
+%
+%@x
+%    <para>First, unpack the installer and change into the installer's
+%    directory, <filename class='directory'>install-tl-20130730</filename>.
+%    This directory name may change if the installer package is updated
+%    by the upstream maintainers.</para>
+%@y
+%    <para>
+%    まずはインストーラーを伸張 (解凍) してそのディレクトリ <filename class='directory'>install-tl-20130730</filename> に入ります。
+%    このディレクトリ名は、アップストリームによりインストーラーパッケージが更新されると、名称変更されます。
+%    </para>
+%@z
+%
+%@x
+%    <note><para>The distribution binaries installed below use static linking
+%    for internal <application>TeX Live</application> libraries.  Additional
+%    libraries as specified in the dependencies section do not need to be
+%    present during the install, but the programs that need them will not run
+%    until their specific dependencies are installed.</para></note>
+%@y
+%    <note><para>
+%    以降においてインストールされる配布バイナリでは、<application>TeX Live</application> 内部ライブラリに対してのスタティックリンクが利用されています。
+%    
+%Additional
+%    libraries as specified in the dependencies section do not need to be
+%    present during the install, but the programs that need them will not run
+%    until their specific dependencies are installed.</para></note>
+%@z
+
 @x
-    <para>The <application>TeX Live</application> set of programs with its
-    supporting documents, fonts, and utilities is very large.  The upstream
-    maintainers recommend placing all files in a single directory structure.
-    BLFS recommends <filename class='directory'>/opt/texlive</filename>.</para>
+      Install TeX Live by running the following commands:
 @y
-    <para>
-    <application>TeX Live</application> には一連のプログラムに加えて、これをサポートするドキュメント、フォント、ユーティリティーツールが含まれ、実に膨大なものとなっています。
-    アップストリームの管理者は、すべてのファイルを単一のディレクトリ構造配下に収容することを推奨しています。
-    BLFS では <filename class='directory'>/opt/texlive</filename> を推奨します。
-    </para>
+      Install TeX Live by running the following commands:
 @z
 
 @x
-    <para>First, unpack the installer and change into the installer's
-    directory, <filename class='directory'>install-tl-20130730</filename>.
-    This directory name may change if the installer package is updated
-    by the upstream maintainers.</para>
+    <para>The shared libraries will be installed into a texlive directory.
+    As the <systemitem class="username">root</systemitem> user, add it to
+    your <filename>/etc/ld.so.conf</filename>:</para>
 @y
-    <para>
-    まずはインストーラーを伸張 (解凍) してそのディレクトリ <filename class='directory'>install-tl-20130730</filename> に入ります。
-    このディレクトリ名は、アップストリームによりインストーラーパッケージが更新されると、名称変更されます。
-    </para>
+    <para>The shared libraries will be installed into a texlive directory.
+    As the <systemitem class="username">root</systemitem> user, add it to
+    your <filename>/etc/ld.so.conf</filename>:</para>
 @z
 
 @x
-    <note><para>The distribution binaries installed below use static linking
-    for internal <application>TeX Live</application> libraries.  Additional
-    libraries as specified in the dependencies section do not need to be
-    present during the install, but the programs that need them will not run
-    until their specific dependencies are installed.</para></note>
+        From 2015 onwards, a successful install requires some texlive
+        commands to be run as the root user, so we will export the TEXARCH
+        variable to let <systemitem class="username">root</systemitem> use it.
 @y
-    <note><para>
-    以降においてインストールされる配布バイナリでは、<application>TeX Live</application> 内部ライブラリに対してのスタティックリンクが利用されています。
-    
-Additional
-    libraries as specified in the dependencies section do not need to be
-    present during the install, but the programs that need them will not run
-    until their specific dependencies are installed.</para></note>
+        From 2015 onwards, a successful install requires some texlive
+        commands to be run as the root user, so we will export the TEXARCH
+        variable to let <systemitem class="username">root</systemitem> use it.
+@z
+
+@x
+      Now, as a normal user:
+@y
+      Now, as a normal user:
+@z
+
+@x
+    <para>To test the results, issue: <command>make check</command>
+    A few tests may SKIP because kpathsea
+    has not yet been installed.</para>
+@y
+    <para>To test the results, issue: <command>make check</command>
+    A few tests may SKIP because kpathsea
+    has not yet been installed.</para>
 @z
 
 @x
@@ -204,27 +277,27 @@ Additional
     </para>
 @z
 
-@x
-    <para>This command is interactive and allows selection or modification of
-    platform, packages, directories, and other options.  The full installation
-    scheme will require about 3.5 gigabytes of disk space.  The time to complete
-    the download will depend on your internet connection speed and the
-    number of packages selected.</para>
-@y
-    <para>
-    このコマンドは対話実行を行うものであり、プラットフォーム、パッケージ、ディレクトリなどのオプション指定を行うことができます。
-    すべてのものをインストールするには 3.5 GB のディスク容量を必要とします。
-    ダウンロードに要する時間は、ご利用のインターネット接続の速度や、選択パッケージの量に依存します。
-    </para>
-@z
+%@x
+%    <para>This command is interactive and allows selection or modification of
+%    platform, packages, directories, and other options.  The full installation
+%    scheme will require about 3.5 gigabytes of disk space.  The time to complete
+%    the download will depend on your internet connection speed and the
+%    number of packages selected.</para>
+%@y
+%    <para>
+%    このコマンドは対話実行を行うものであり、プラットフォーム、パッケージ、ディレクトリなどのオプション指定を行うことができます。
+%    すべてのものをインストールするには 3.5 GB のディスク容量を必要とします。
+%    ダウンロードに要する時間は、ご利用のインターネット接続の速度や、選択パッケージの量に依存します。
+%    </para>
+%@z
 
-@x
-    <para>To test the results, issue: <command>make -k check</command>.</para>
-@y
-    <para>
-    ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-    </para>
-@z
+%@x
+%    <para>To test the results, issue: <command>make -k check</command>.</para>
+%@y
+%    <para>
+%    ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+%    </para>
+%@z
 
 % @x
 %     <title>Command Explanations</title>
@@ -396,12 +469,16 @@ Additional
 
 @x
         <seg>Over 300 binaries and symlinks to scripts</seg>
-        <seg>None</seg>
-        <seg>/opt/texlive</seg>
+        <seg>libkpathsea.so, libptexenc.so, libsynctex.so, libtexlua52.so,
+        libtexluajit.so</seg>
+        <seg>/opt/texlive/&texlive-year;/bin, /opt/texlive/&texlive-year;/include,
+        /opt/texlive/&texlive-year;/lib, /opt/texlive/&texlive-year;/texmf-dist</seg>
 @y
         <seg>300 を超えるバイナリと、スクリプトに対するシンボリックリンク</seg>
-        <seg>なし</seg>
-        <seg>/opt/texlive</seg>
+        <seg>libkpathsea.so, libptexenc.so, libsynctex.so, libtexlua52.so,
+        libtexluajit.so</seg>
+        <seg>/opt/texlive/&texlive-year;/bin, /opt/texlive/&texlive-year;/include,
+        /opt/texlive/&texlive-year;/lib, /opt/texlive/&texlive-year;/texmf-dist</seg>
 @z
 
 @x
@@ -414,15 +491,4 @@ Additional
         <term><command>TeX&nbsp;programs</command></term>
 @y
         <term><command>TeX&nbsp;関連プログラム</command></term>
-@z
-@x
-          <para>included in the <application>TeX Live</application> package are
-          too numerous to individually list. Please refer to the individual
-          program man and html pages in the installation directory's 2011/index.html
-          directory.</para>
-@y
-          <para>
-          <application>TeX Live</application> パッケージには、あまりにも数多くのプログラムが含まれるため、一覧列記することができません。
-          詳しくは、各プログラムの man ページを参照するか、あるいはインストールディレクトリの 2011/index.html にある html ページを参照してください。
-          </para>
 @z

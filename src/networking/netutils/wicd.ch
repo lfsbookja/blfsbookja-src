@@ -31,8 +31,9 @@
     connecting to wireless and wired networks. Wicd includes support for WPA
     authentication and DHCP configuration. It provides Curses- and GTK-based
     graphical frontends for user-friendly control. An excellent KDE-based
-    frontend is also available <ulink
-    url="http://projects.kde.org/projects/extragear/network/wicd-kde">here</ulink>.
+    frontend is also available
+    <ulink url="http://projects.kde.org/projects/extragear/network/wicd-kde">
+    http://projects.kde.org/projects/extragear/network/wicd-kde</ulink>.
     </para>
 @y
     <para>
@@ -40,8 +41,8 @@
     有線や無線のネットワークの検出と接続を自動的に設定します。
     Wicd には WPA 認証や DHCP 設定のサポート機能もあります。
     画面操作は Curses ベースと GTK ベースによるグラフィカルなフロントエンドを提供します。
-    KDE ベースの、より優れたフロントエンドは <ulink
-    url="http://projects.kde.org/projects/extragear/network/wicd-kde">ここ</ulink> から入手することもできます。
+    KDE ベースの、より優れたフロントエンドは <ulink url="http://projects.kde.org/projects/extragear/network/wicd-kde">
+    http://projects.kde.org/projects/extragear/network/wicd-kde</ulink> から入手することもできます。
     </para>
 @z
 
@@ -94,40 +95,22 @@
 @z
 
 @x
-    <note><para>Wicd uses <command>ifconfig</command> to activate network 
-    connections. <command>ifconfig</command> is provided by both the Inetutils 
-    and Net-tools packages. The Inetutils package is part of LFS, but the 
-    <command>ifconfig</command> command is not installed by the LFS instructions. 
-    If you choose to install the Inetutils version of <option>ifconfig</option>, 
-    you need to reinstall the package and configure it without the 
-    <option>--disable-ifconfig</option> switch.
-    </para></note>
-@y
-    <note><para>
-    Wicd では、ネットワーク接続を有効にするために <command>ifconfig</command> コマンドを利用します。
-    この <command>ifconfig</command> コマンドは、Inetutils パッケージか Net-tools パッケージにより提供されます。
-    Inetutils パッケージは LFS にて導入するものではありますが、ただし LFS の手順において <command>ifconfig</command> はインストールしません。
-    Inetutils 版の <option>ifconfig</option> をインストールする場合は、Inetutils を再インストールしてください。
-    その再には configure のスイッチ <option>--disable-ifconfig</option> を取り除いてください。
-    </para></note>
-@z
-
-@x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
     <xref linkend="python2"/>,
     <xref linkend="dbus-python"/>,
     <xref linkend="wireless_tools"/>, and
-    <xref linkend="net-tools"/> (Wicd needs <command>ifconfig</command> and
-    <command>mii-tool</command> from this package)
+    <xref linkend="net-tools"/>
+    (Wicd needs <command>mii-tool</command> from this package)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="python2"/>,
     <xref linkend="dbus-python"/>,
-    <xref linkend="wireless_tools"/>,
-    <xref linkend="net-tools"/> (Wicd にはこのパッケージが提供する <command>ifconfig</command> と <command>mii-tool</command> が必要です。)
+    <xref linkend="wireless_tools"/>, and
+    <xref linkend="net-tools"/>
+    (Wicd needs <command>mii-tool</command> from this package)
     </para>
 @z
 
@@ -141,9 +124,9 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="pygtk"/> (GTK フロントエンドのため),
-    <xref linkend="wpa_supplicant"/> (WPA サポートのため),
-    <xref linkend="dhcpcd"/> or <xref linkend="dhcp"/> (DHCP サポートのため)
+    <xref linkend="pygtk"/> (for the GTK frontend),
+    <xref linkend="wpa_supplicant"/> (for WPA support), and
+    <xref linkend="dhcpcd"/> or <xref linkend="dhcp"/> (for DHCP support)
     </para>
 @z
 
@@ -151,15 +134,19 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
     <xref linkend="pm-utils"/> (for suspend/resume integration),
-    <ulink url="http://excess.org/urwid/">Urwid</ulink> (for the Curses-based frontend), and
-    <ulink url="http://babel.edgewall.org/">Babel</ulink> (for internationalization)
+    <ulink url="http://urwid.org/">Urwid</ulink>
+    (for the Curses-based frontend), and
+    <ulink url="http://babel.edgewall.org/">Babel</ulink>
+    (for internationalization)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="pm-utils"/> (for suspend/resume integration),
-    <ulink url="http://excess.org/urwid/">Urwid</ulink> (Curses ベースのフロントエンドのため),
-    <ulink url="http://babel.edgewall.org/">Babel</ulink> (国際化のため)
+    <ulink url="http://urwid.org/">Urwid</ulink>
+    (for the Curses-based frontend), and
+    <ulink url="http://babel.edgewall.org/">Babel</ulink>
+    (for internationalization)
     </para>
 @z
 
@@ -191,7 +178,8 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user, install the package:</para>
+    <para>Now, as the <systemitem class="username">root</systemitem> user,
+    install the package:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -205,21 +193,42 @@
 @z
 
 @x
-    <para><command>sed -i '/wpath...</command>: This <command>sed</command>
-    prevents installation of <command>logrotate</command> and systemd
-    configuration files. You may omit it if you use these utilities.</para>
+    <para revision="sysv"><command>sed -e ... -i setup.py</command>: The first
+    expression in this <command>sed</command> command prevents installation of
+    logrotate and systemd configuration files. You may omit it if you use these
+    utilities. The second one fixes building with BLFS.</para>
 @y
-    <para><command>sed -i '/wpath...</command>:
-    本 <command>sed</command> コマンドは <command>logrotate</command> コマンドと systemd 設定ファイルをインストールしないようにするものです。
-    これらを利用しようとする場合には、本コマンドを取り除いてください。
-    </para>
+    <para revision="sysv"><command>sed -e ... -i setup.py</command>: The first
+    expression in this <command>sed</command> command prevents installation of
+    logrotate and systemd configuration files. You may omit it if you use these
+    utilities. The second one fixes building with BLFS.</para>
+@z
+@x
+    <para revision="systemd"><command>sed -e ... -i setup.py</command>: Fix
+    and issue while building with BLFS.</para>
+@y
+    <para revision="systemd"><command>sed -e ... -i setup.py</command>: Fix
+    and issue while building with BLFS.</para>
 @z
 
 @x
-    <para><option>--no-install-kde</option>: Prevent installation of an 
-    autostart desktop file for KDE. If you use KDE, you should instead install the 
-    <ulink url="http://projects.kde.org/projects/extragear/network/wicd-kde">Wicd KDE Client</ulink>.
-    </para>
+    <para><command>rm po/*.po</command>: This command removes the international
+    messages associated with this package.  The command is required unless Babel
+    is installed.  If it is installed, po/ast.po still needs to be removed in
+    order for the build to complete.</para>
+@y
+    <para><command>rm po/*.po</command>: This command removes the international
+    messages associated with this package.  The command is required unless Babel
+    is installed.  If it is installed, po/ast.po still needs to be removed in
+    order for the build to complete.</para>
+@z
+
+@x
+    <para><option>--no-install-kde</option>: Prevent installation of an
+    autostart desktop file for KDE. If you use KDE, you should instead install
+    the
+    <ulink url="http://projects.kde.org/projects/extragear/network/wicd-kde">Wicd
+    KDE Client</ulink>.</para>
 @y
     <para><option>--no-install-kde</option>:
     KDE の自動起動デスクトップファイルをインストールしないようにします。
@@ -239,8 +248,8 @@
 @z
 
 @x
-    <para><option>--no-install-pmutils</option>: Prevent installation of hooks for 
-    pm-utils. Omit this option if you use pm-utils.</para>
+    <para><option>--no-install-pmutils</option>: Prevent installation of hooks
+    for pm-utils. Omit this option if you use pm-utils.</para>
 @y
     <para><option>--no-install-pmutils</option>:
     pm-utils に対するフックをインストールしないようにします。
@@ -249,8 +258,8 @@
 @z
 
 @x
-    <para><option>--no-install-init</option>: Prevent installation of any init scripts, 
-    as a bootscript is installed later in the instructions.</para>
+    <para><option>--no-install-init</option>: Prevent installation of any init
+    scripts, as a bootscript is installed later in the instructions.</para>
 @y
     <para><option>--no-install-init</option>:
     初期化のスクリプトをインストールしないようにします。
@@ -297,16 +306,30 @@
       <title>&ConfigInfo;</title>
 @z
 
+@x revision="systemd"
+          Make sure that you disable the <command>systemd-networkd</command>
+          service or configure it not to manage the interfaces you want to
+          manage with <application>Wicd</application>.
+@y
+          Make sure that you disable the <command>systemd-networkd</command>
+          service or configure it not to manage the interfaces you want to
+          manage with <application>Wicd</application>.
+@z
+
 @x
       <para>To automatically start Wicd at boot time, you need to first install
-      the Wicd bootscript,
-      <filename>/etc/rc.d/init.d/wicd</filename>,
-      included in the <xref linkend="bootscripts"/> package
+      the Wicd bootscript,<phrase revision="sysv">
+      <filename>/etc/rc.d/init.d/wicd</filename></phrase>
+      <phrase revision="systemd"><filename>wicd.service</filename></phrase>,
+      included in the <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> package
       (as user <systemitem class="username">root</systemitem>):</para>
 @y
-      <para>
-      ブート時に Wicd を自動起動させるには Wicd ブートスクリプト <filename>/etc/rc.d/init.d/wicd</filename> をまずインストールします。
-      このスクリプトは <xref linkend="bootscripts"/> パッケージにて提供されます。
+      <para>ブート時に Wicd を自動起動させるには Wicd ブートスクリプト <phrase revision="sysv">
+      <filename>/etc/rc.d/init.d/wicd</filename></phrase>
+      <phrase revision="systemd"><filename>wicd.service</filename></phrase> をまずインストールします。
+      これは <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> パッケージにて提供されます。
       (インストールは <systemitem class="username">root</systemitem> ユーザーにて行います。)
       </para>
 @z
@@ -318,28 +341,30 @@
 @z
 
 @x
-      <para>Since Wicd will now handle all configuration of network devices, 
-      the network bootscript installed by LFS should be disabled. This can be 
-      achieved by either removing any <filename>S*network</filename> and 
-      <filename>K*network</filename> symlinks in the <filename>/etc/rc*.d</filename> 
-      directories or by setting <literal>ONBOOT=no</literal> in any 
+      <para revision="sysv">Since Wicd will now handle all configuration of
+      network devices, the network bootscript installed by LFS should be
+      disabled. This can be achieved by either removing any
+      <filename>S*network</filename> and <filename>K*network</filename>
+      symlinks in the <filename>/etc/rc*.d</filename> directories or by setting
+      <literal>ONBOOT=no</literal> in any
       <filename>/etc/sysconfig/ifconfig.*</filename> files.</para>
 @y
-      <para>
+      <para revision="sysv">
       Wicd はネットワークデバイスのすべての設定を行えるものではありません。
       したがって LFS によりインストールしたネットワークブートスクリプトは無効化しておきます。
       これを実現する方法は以下のいずれかです。
       一つは <filename>/etc/rc*.d</filename> ディレクトリにある <filename>S*network</filename> と <filename>K*network</filename> のシンボリックリンクを削除します。
-      別の方法としては <filename>/etc/sysconfig/ifconfig.*</filename> ファイルにて <literal>ONBOOT=no</literal> を設定します。
+      もう一つの方法としては <filename>/etc/sysconfig/ifconfig.*</filename> ファイルにて <literal>ONBOOT=no</literal> を設定します。
       </para>
 @z
 
 @x
       <para>No manual configuration of Wicd is needed if you use the graphical
-      frontends. If you are only going to use Wicd from command-line, you can configure
-      it using the configuration files in <filename>/etc/wicd</filename>. For a list of 
-      available options, look at the man-pages for: wicd-manager-settings.conf, 
-      wicd-wired-settings.conf and wicd-wireless-settings.conf.</para>
+      frontends. If you are only going to use Wicd from command-line, you can
+      configure it using the configuration files in
+      <filename>/etc/wicd</filename>. For a list of available options, look at
+      the man-pages for: wicd-manager-settings.conf, wicd-wired-settings.conf
+      and wicd-wireless-settings.conf.</para>
 @y
       <para>
       Wicd による設定は、グラフィカルフロントエンドを使えば操作不要となります。
@@ -349,9 +374,10 @@
 @z
 
 @x
-      <para>Be sure to add all users who are to have rights to open and close network 
-      connections with Wicd to the <systemitem class="groupname">users</systemitem> 
-      group (or the group specified with the <option>--wicdgroup</option> configuration 
+      <para>Be sure to add all users who are to have rights to open and close
+      network connections with Wicd to the
+      <systemitem class="groupname">users</systemitem> group (or the group
+      specified with the <option>--wicdgroup</option> configuration
       option).</para>
 @y
       <para>
@@ -377,15 +403,21 @@
 @z
 
 @x
-        <seg>wicd, wicd-cli, wicd-client, wicd-curses, and wicd-gtk</seg>
-        <seg>none</seg>
-        <seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd,
-        /usr/share/pixmaps/wicd, /usr/share/wicd, /var/lib/wicd, and /var/log/wicd</seg>
+        <seg>wicd, wicd-cli, wicd-client, wicd-curses (not functional if <ulink
+        url="http://urwid.org/">Urwid</ulink> is not installed), and
+        wicd-gtk</seg>
+        <seg>None</seg>
+        <seg>/{etc,usr/share,var/lib,var/log,var/run}/wicd,
+        /usr/lib/python2.7/site-packages/wicd and
+        /usr/share/doc/wicd-&wicd-version;</seg>
 @y
-        <seg>wicd, wicd-cli, wicd-client, wicd-curses, wicd-gtk</seg>
-        <seg>&None;</seg>
-        <seg>/etc/wicd, /usr/lib/python2.7/site-packages/wicd, /usr/share/doc/wicd,
-        /usr/share/pixmaps/wicd, /usr/share/wicd, /var/lib/wicd, /var/log/wicd</seg>
+        <seg>wicd, wicd-cli, wicd-client, wicd-curses (not functional if <ulink
+        url="http://urwid.org/">Urwid</ulink> is not installed), and
+        wicd-gtk</seg>
+        <seg>None</seg>
+        <seg>/{etc,usr/share,var/lib,var/log,var/run}/wicd,
+        /usr/lib/python2.7/site-packages/wicd and
+        /usr/share/doc/wicd-&wicd-version;</seg>
 @z
 
 @x

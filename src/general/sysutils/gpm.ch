@@ -152,17 +152,35 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
-      <para>Install the <filename>/etc/rc.d/init.d/gpm</filename> init script
-      included in the <xref linkend="bootscripts"/> package.</para>
+      <para revision="sysv">Install the
+      <filename>/etc/rc.d/init.d/gpm</filename> init script included in the
+      <xref linkend="bootscripts"/> package.</para>
 @y
-      <para>
+      <para revision="sysv">
       <xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/gpm</filename> をインストールします。
+      </para>
+@z
+@x
+      <para revision="systemd">
+        To start the <command>gpm</command> daemon at boot,
+        install the systemd unit from the <xref linkend="systemd-units"/>
+        package by running the following command as the
+        <systemitem class="username">root</systemitem> user:
+      </para>
+@y
+      <para revision="systemd">
+        To start the <command>gpm</command> daemon at boot,
+        install the systemd unit from the <xref linkend="systemd-units"/>
+        package by running the following command as the
+        <systemitem class="username">root</systemitem> user:
       </para>
 @z
 
@@ -184,12 +202,13 @@
 @z
 
 @x
-      <para><filename>/etc/sysconfig/mouse</filename>:
+      <para revision="sysv"><filename>/etc/sysconfig/mouse</filename>:
       This file contains the name of your mouse device and the protocol
       it uses.  To create this file, run the following as the
       <systemitem class="username">root</systemitem> user:</para>
 @y
-      <para><filename>/etc/sysconfig/mouse</filename>:
+      <para revision="sysv">
+      <filename>/etc/sysconfig/mouse</filename>:
       このファイルは、利用するマウスデバイスの名称とプロトコルを定めます。
       このファイルを生成するために、<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
       </para>
@@ -202,16 +221,17 @@
 @z
 
 @x
-      <para>Examples of values to set <envar>MDEVICE</envar>,
+      <para revision="sysv">Examples of values to set <envar>MDEVICE</envar>,
       <envar>PROTOCOL</envar>, and <envar>GPMOPTS</envar> to are:</para>
 @y
-      <para>
+      <para revision="sysv">
       <envar>MDEVICE</envar>, <envar>PROTOCOL</envar>, <envar>GPMOPTS</envar> の設定例は以下のとおりです。
       </para>
 @z
 
 @x
-      <para>A list of which protocol values are known can be found by running
+      <para revision="sysv">A list of which protocol values are known can be
+      found by running
       <command>gpm -m <replaceable>[device]</replaceable> -t -help</command>.
       The <envar>MDEVICE</envar> setting depends on which type of mouse you
       have.  For example, <filename>/dev/ttyS0</filename> for a serial mouse
@@ -220,12 +240,31 @@
       <envar>GPMOPTS</envar> is the 'catch all' for any additional options that
       are needed for your hardware.</para>
 @y
-      <para>
+      <para revision="sysv">
       どのようなプロトコルがあるかは、<command>gpm -m <replaceable>[device]</replaceable> -t -help</command> を実行することで一覧表示されます。
       <envar>MDEVICE</envar> の設定は、利用しているマウスがどのようなタイプであるかにより決定します。
       例えばシリアルマウスなら <filename>/dev/ttyS0</filename> (Windows では COM1 になります)、USB マウスならよく <filename>/dev/ttyS0</filename> となります。
       また PS2 マウスなら <filename>/dev/psaux</filename> です。
       <envar>GPMOPTS</envar> は、利用しているハードウェアに応じて、'すべての機能' を実現する設定を行います。
+      </para>
+@z
+@x
+      <para revision="systemd">
+        <application>GPM</application> is by default started with
+        the following parameters:
+        <parameter>-m /dev/input/mice -t imps2</parameter>. If the
+        mentioned parameters don't suit your needs, you can override
+        them by running the following commands as
+        the <systemitem class="username">root</systemitem> user:
+      </para>
+@y
+      <para revision="systemd">
+        <application>GPM</application> is by default started with
+        the following parameters:
+        <parameter>-m /dev/input/mice -t imps2</parameter>. If the
+        mentioned parameters don't suit your needs, you can override
+        them by running the following commands as
+        the <systemitem class="username">root</systemitem> user:
       </para>
 @z
 

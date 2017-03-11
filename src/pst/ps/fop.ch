@@ -20,20 +20,20 @@
 @z
 
 @x
-    <para>The <application>FOP</application> (Formatting Objects Processor)
-    package contains a print formatter driven by XSL formatting objects
-    (XSL-FO). It is a <application>Java</application> application that reads
-    a formatting object tree and renders the resulting pages to a specified
-    output. Output formats currently supported include PDF, PCL, PostScript,
-    SVG, XML (area tree representation), print, AWT, MIF and ASCII text. The
-    primary output target is PDF.</para>
+      The <application>FOP</application> (Formatting Objects Processor)
+      package contains a print formatter driven by XSL formatting objects
+      (XSL-FO). It is a <application>Java</application> application that reads
+      a formatting object tree and renders the resulting pages to a specified
+      output. Output formats currently supported include PDF, PCL, PostScript,
+      SVG, XML (area tree representation), print, AWT, MIF and ASCII text. The
+      primary output target is PDF.
 @y
-    <para><application>FOP</application> (Formatting Objects Processor) は XSL フォーマットオブジェクト (XSL
-    formatting objects; XSL-FO) に基づいた、印刷フォーマッターを提供します。
-    a formatting object tree and renders the resulting pages to a specified
-    output. Output formats currently supported include PDF, PCL, PostScript,
-    SVG, XML (area tree representation), print, AWT, MIF and ASCII text. The
-    primary output target is PDF.</para>
+      <application>FOP</application> (Formatting Objects Processor) は XSL フォーマットオブジェクト (XSL
+      formatting objects; XSL-FO) に基づいた、印刷フォーマッターを提供します。
+      a formatting object tree and renders the resulting pages to a specified
+      output. Output formats currently supported include PDF, PCL, PostScript,
+      SVG, XML (area tree representation), print, AWT, MIF and ASCII text. The
+      primary output target is PDF.
 @z
 
 @x
@@ -85,9 +85,9 @@
 @z
 
 @x
-      <title>Required packages</title>
+      <title>Recommended packages</title>
 @y
-      <title>&Required;</title>
+      <title>&Recommended;</title>
 @z
 @x
         <para>Objects for Formatting Objects (OFFO) hyphenation patterns:
@@ -123,12 +123,12 @@
     <para role="optional">
       <xref linkend="junit"/> (to run tests),
       <xref linkend="x-window-system"/> (to run tests),
-      <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
-      <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
+      <ulink url="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-client-419417.html">JIMI SDK</ulink>,
+      <ulink url="http://www.xmlunit.org/">XMLUnit</ulink>,
       <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>,
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
-      <ulink url="http://pmd.sourceforge.net">PMD</ulink>
-          (requires <ulink url="http://jaxen.codehaus.org/">Jaxen</ulink>), and
+      <ulink url="https://pmd.github.io/">PMD</ulink>
+          (requires <ulink url="http://jaxen.org/">Jaxen</ulink>), and
       <ulink url="http://forrest.apache.org/">Forrest</ulink> (Forrest used only
       to build the documentation)
     </para>
@@ -137,12 +137,12 @@
     <para role="optional">
       <xref linkend="junit"/> (テスト実行のため),
       <xref linkend="x-window-system"/> (テスト実行のため),
-      <ulink url="http://java.sun.com/products/jimi/">JIMI SDK</ulink>,
-      <ulink url="http://xmlunit.sourceforge.net/">XMLUnit</ulink>,
+      <ulink url="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-client-419417.html">JIMI SDK</ulink>,
+      <ulink url="http://www.xmlunit.org/">XMLUnit</ulink>,
       <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>,
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
-      <ulink url="http://pmd.sourceforge.net">PMD</ulink>
-          (<ulink url="http://jaxen.codehaus.org/">Jaxen</ulink> が必要),
+      <ulink url="https://pmd.github.io/">PMD</ulink>
+          (<ulink url="http://jaxen.org/">Jaxen</ulink> が必要),
       <ulink url="http://forrest.apache.org/">Forrest</ulink> (Forrest はドキュメントの再構築時のみ必要)
     </para>
 @z
@@ -159,29 +159,16 @@
     <title>&InstallationOf1;fop&InstallationOf2;</title>
 @z
 
-% @x
-%       <para>You must run this installation from an X-window using a GL-aware
-%       <application>Xorg</application> server or some of the
-%       <application>JUnit</application> tests will hang.</para>
-% @y
-%       <para>
-%       ここに示すインストール手順は、GL 機能を実装した <application>Xorg</application> サーバーのもとで X ウィンドウシステムから実施する必要があります。
-%       そうしないと <application>JUnit</application> のテストが失敗します。
-%       </para>
-% @z
-
 @x
-    <para>Ensure <envar>$JAVA_HOME</envar> is set correctly before beginning
-    the build. To build the <application>JIMI SDK</application> and/or
-    <application>XMLUnit</application> extension classes, ensure the
-    corresponding <filename class='extension'>.jar</filename> files can be
-    found via the <envar>CLASSPATH</envar> environment variable.</para>
+      Ensure <envar>$JAVA_HOME</envar> is set correctly before beginning
+      the build. To build the <application>JIMI SDK</application> and/or
+      <application>XMLUnit</application> extension classes, ensure the
+      corresponding <filename class='extension'>.jar</filename> files can be
+      found via the <envar>CLASSPATH</envar> environment variable.
 @y
-    <para>
-    ビルド前には環境変数 <envar>$JAVA_HOME</envar> が適切に設定されていることを確認してください。
-    また <application>JIMI SDK</application> や <application>XMLUnit</application> といった拡張クラスをビルドする場合は、環境変数 <envar>CLASSPATH</envar> にて対応する <filename
-    class='extension'>.jar</filename> が設定されていることを確認してください。
-    </para>
+      ビルド前には環境変数 <envar>$JAVA_HOME</envar> が適切に設定されていることを確認してください。
+      また <application>JIMI SDK</application> や <application>XMLUnit</application> といった拡張クラスをビルドする場合は、環境変数 <envar>CLASSPATH</envar> にて対応する <filename
+      class='extension'>.jar</filename> が設定されていることを確認してください。
 @z
 
 @x
@@ -191,31 +178,17 @@
 @z
 
 @x
-      <para>First, unpack the <application>fop</application> source tarball and
-      the hyphenation zipfile from the same directory, then change directories
-      into the root of the <application>fop</application> source tree. Copy the
-      XML hyphenation patterns into the <application>fop</application> source
-      tree by running the following commands:</para>
-@y
-      <para>First, unpack the <application>fop</application> source tarball and
-      the hyphenation zipfile from the same directory, then change directories
-      into the root of the <application>fop</application> source tree. Copy the
-      XML hyphenation patterns into the <application>fop</application> source
-      tree by running the following commands:</para>
-@z
-
-@x
       <title>Installing Java Advanced Imaging (JAI) API components</title>
 @y
       <title>&InstallationOf1;Java Advanced Imaging (JAI) API コンポーネント&InstallationOf2;</title>
 @z
 
 @x
-      <para>Next install the JAI API components. As the <systemitem
-      class="username">root</systemitem> user:</para>
+        Install the JAI API components. As the <systemitem
+        class="username">root</systemitem> user:
 @y
-      <para>Next install the JAI API components. As the <systemitem
-      class="username">root</systemitem> user:</para>
+        Install the JAI API components. As the <systemitem
+        class="username">root</systemitem> user:
 @z
 
 @x
@@ -225,21 +198,44 @@
 @z
 
 @x
-      <para>Compile <application>fop</application> by running the
-      following commands:</para>
+        The <command>javadoc</command> command coming with OpenJDK 8 has
+        become much stricter than before regarding the conformance of the
+        Javadoc comments in source code to HTML. The FOP documentation does
+        not meet those standard, so the conformance checks have to be
+        disabled. This can be done with the following command:
 @y
-      <para>
-      以下のコマンドを実行して <application>fop</application> をビルドします。
-      </para>
+        The <command>javadoc</command> command coming with OpenJDK 8 has
+        become much stricter than before regarding the conformance of the
+        Javadoc comments in source code to HTML. The FOP documentation does
+        not meet those standard, so the conformance checks have to be
+        disabled. This can be done with the following command:
 @z
 
 @x
-      <para>Now, as the <systemitem class="username">root</systemitem>
-      user:</para>
+        Then, compile <application>fop</application> by running the
+        following commands:
 @y
-      <para>
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
+        以下のコマンドを実行して <application>fop</application> をビルドします。
+@z
+
+@x
+        To test the application, run <command>ant junit-all</command>. The
+        hyphenation tests will fail.  To see a list of other test targets, use
+        <command>ant -p</command>. You must run the tests from an X-window using
+        a GL-aware <application>Xorg</application> server or some of the
+        <application>JUnit</application> tests will hang.
+@y
+        To test the application, run <command>ant junit-all</command>. The
+        hyphenation tests will fail.  To see a list of other test targets, use
+        <command>ant -p</command>. You must run the tests from an X-window using
+        a GL-aware <application>Xorg</application> server or some of the
+        <application>JUnit</application> tests will hang.
+@z
+
+@x
+        Now, as the <systemitem class="username">root</systemitem> user:
+@y
+        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -249,21 +245,45 @@
 @z
 
 @x
-    <para><command>ant <option>target</option></command>: This reads the file
-    <filename>build.xml</filename> and builds the target files.</para>
+      <command>sed -i ... build.xml</command>: This adds two switches to the
+      <command>javadoc</command> command, preventing some errors to occur when
+      building the documentation.
 @y
-    <para><command>ant <option>target</option></command>: This reads the file
-    <filename>build.xml</filename> and builds the target files.</para>
+      <command>sed -i ... build.xml</command>: This adds two switches to the
+      <command>javadoc</command> command, preventing some errors to occur when
+      building the documentation.
 @z
 
 @x
-    <para><command>ln -v -sf fop-&fop-version; /opt/fop</command>: This is
-    optional and creates a convenience symlink so that <envar>$FOP_HOME</envar>
-    doesn't have to be changed each time there's a package version change.</para>
+      <command>patch -Np1 -i ../fop-2.1-listNPE-1.patch</command>: This patch
+      fixes a bug leading to segmentation faults when processing some inputs.
 @y
-    <para><command>ln -v -sf fop-&fop-version; /opt/fop</command>: This is
-    optional and creates a convenience symlink so that <envar>$FOP_HOME</envar>
-    doesn't have to be changed each time there's a package version change.</para>
+      <command>patch -Np1 -i ../fop-2.1-listNPE-1.patch</command>: This patch
+      fixes a bug leading to segmentation faults when processing some inputs.
+@z
+
+@x
+      <command>ant <option>target</option></command>: This reads the file
+      <filename>build.xml</filename> and builds the target: <option>compile
+      </option> compiles the java sources, <option>jar-main</option> generates
+      jar archives, and <option>javadocs</option> builds the documentation.
+@y
+      <command>ant <option>target</option></command>: This reads the file
+      <filename>build.xml</filename> and builds the target: <option>compile
+      </option> compiles the java sources, <option>jar-main</option> generates
+      jar archives, and <option>javadocs</option> builds the documentation.
+@z
+
+@x
+      <command>ln -v -sf fop-&fop-version; /opt/fop</command>: This is
+      optional and creates a convenience symlink so that
+      <envar>$FOP_HOME</envar> doesn't have to be changed each time there's a
+      package version change.
+@y
+      <command>ln -v -sf fop-&fop-version; /opt/fop</command>: This is
+      optional and creates a convenience symlink so that
+      <envar>$FOP_HOME</envar> doesn't have to be changed each time there's a
+      package version change.
 @z
 
 @x
@@ -285,87 +305,105 @@
 @z
 
 @x
-      <para>Using <application>fop</application> to process some large FO's
-      (including the FO derived from the BLFS XML sources), can lead to memory
-      errors. Unless you add a parameter to the <command>java</command> command
-      used in the <command>fop</command> script you may receive messages
-      similar to the one shown below:</para>
+        Using <application>fop</application> to process some large FO's
+        (including the FO derived from the BLFS XML sources), can lead to
+        memory errors. Unless you add a parameter to the
+        <command>java</command> command used in the <command>fop</command>
+        script you may receive messages similar to the one shown below:
 @y
-      <para>Using <application>fop</application> to process some large FO's
-      (including the FO derived from the BLFS XML sources), can lead to memory
-      errors. Unless you add a parameter to the <command>java</command> command
-      used in the <command>fop</command> script you may receive messages
-      similar to the one shown below:</para>
+        Using <application>fop</application> to process some large FO's
+        (including the FO derived from the BLFS XML sources), can lead to
+        memory errors. Unless you add a parameter to the
+        <command>java</command> command used in the <command>fop</command>
+        script you may receive messages similar to the one shown below:
 @z
 
 @x
-      <para><computeroutput>Exception in thread "main" java.lang.OutOfMemoryError:
-      Java heap space</computeroutput></para>
+          Exception in thread "main" java.lang.OutOfMemoryError: Java heap
+          space
 @y
-      <para><computeroutput>Exception in thread "main" java.lang.OutOfMemoryError:
-      Java heap space</computeroutput></para>
+          Exception in thread "main" java.lang.OutOfMemoryError: Java heap
+          space
 @z
 
 @x
-      <para>To avoid errors like this, you need to pass an extra parameter to
-      the <command>java</command> command used in the <command>fop</command>
-      script. This can be accomplished by creating a
-      <filename>~/.foprc</filename> (which is sourced by the
-      <command>fop</command> script) and adding the parameter to the
-      <envar>FOP_OPTS</envar> environment variable.</para>
+        To avoid errors like this, you need to pass an extra parameter to
+        the <command>java</command> command used in the <command>fop</command>
+        script. This can be accomplished by creating a
+        <filename>~/.foprc</filename> (which is sourced by the
+        <command>fop</command> script) and adding the parameter to the
+        <envar>FOP_OPTS</envar> environment variable.
 @y
-      <para>To avoid errors like this, you need to pass an extra parameter to
-      the <command>java</command> command used in the <command>fop</command>
-      script. This can be accomplished by creating a
-      <filename>~/.foprc</filename> (which is sourced by the
-      <command>fop</command> script) and adding the parameter to the
-      <envar>FOP_OPTS</envar> environment variable.</para>
+        To avoid errors like this, you need to pass an extra parameter to
+        the <command>java</command> command used in the <command>fop</command>
+        script. This can be accomplished by creating a
+        <filename>~/.foprc</filename> (which is sourced by the
+        <command>fop</command> script) and adding the parameter to the
+        <envar>FOP_OPTS</envar> environment variable.
 @z
 
 @x
-      <para>The <command>fop</command> script looks for a
-      <envar>FOP_HOME</envar> environment variable to locate the
-      <application>fop</application> class libraries. You can create this
-      variable using the <filename>~/.foprc</filename> file as well. Create
-      a <filename>~/.foprc</filename> file using the following commands:</para>
+        The <command>fop</command> script looks for a
+        <envar>FOP_HOME</envar> environment variable to locate the
+        <application>fop</application> class libraries. You can create this
+        variable using the <filename>~/.foprc</filename> file as well. Create
+        a <filename>~/.foprc</filename> file using the following commands:
 @y
-      <para>The <command>fop</command> script looks for a
-      <envar>FOP_HOME</envar> environment variable to locate the
-      <application>fop</application> class libraries. You can create this
-      variable using the <filename>~/.foprc</filename> file as well. Create
-      a <filename>~/.foprc</filename> file using the following commands:</para>
+        The <command>fop</command> script looks for a
+        <envar>FOP_HOME</envar> environment variable to locate the
+        <application>fop</application> class libraries. You can create this
+        variable using the <filename>~/.foprc</filename> file as well. Create
+        a <filename>~/.foprc</filename> file using the following commands:
 @z
 
 @x
-      <para>Replace <replaceable>&lt;RAM_Installed&gt;</replaceable> with a
-      number representing the amount of RAM installed in your computer (in
-      megabytes). An example would be
-      <userinput>FOP_OPTS="-Xmx768m"</userinput>.
-      <!--  the URL is broken 
-      For more information about
-      memory issues running <application>fop</application>, see
-      <ulink url="http://xml.apache.org/fop/running.html#memory"/>.
-      -->
-      </para>
+        Replace <replaceable>&lt;RAM_Installed&gt;</replaceable> with a
+        number representing the amount of RAM installed in your computer (in
+        megabytes). An example would be
+        <userinput>FOP_OPTS="-Xmx768m"</userinput>.
+        <!--  the URL is broken
+        For more information about
+        memory issues running <application>fop</application>, see
+        <ulink url="http://xml.apache.org/fop/running.html#memory"/>.
+        -->
 @y
-      <para>Replace <replaceable>&lt;RAM_Installed&gt;</replaceable> with a
-      number representing the amount of RAM installed in your computer (in
-      megabytes). An example would be
-      <userinput>FOP_OPTS="-Xmx768m"</userinput>.
-      <!--  the URL is broken 
-      For more information about
-      memory issues running <application>fop</application>, see
-      <ulink url="http://xml.apache.org/fop/running.html#memory"/>.
-      -->
-      </para>
+        Replace <replaceable>&lt;RAM_Installed&gt;</replaceable> with a
+        number representing the amount of RAM installed in your computer (in
+        megabytes). An example would be
+        <userinput>FOP_OPTS="-Xmx768m"</userinput>.
+        <!--  the URL is broken
+        For more information about
+        memory issues running <application>fop</application>, see
+        <ulink url="http://xml.apache.org/fop/running.html#memory"/>.
+        -->
 @z
 
 @x
-      <para>To include the <command>fop</command> script in your path,
-      update your personal or system-wide profile with the following:</para>
+        To include the <command>fop</command> script in your path,
+        update your personal or system-wide profile with the following:
 @y
-      <para>To include the <command>fop</command> script in your path,
-      update your personal or system-wide profile with the following:</para>
+        To include the <command>fop</command> script in your path,
+        update your personal or system-wide profile with the following:
+@z
+
+@x
+          Running <command>fop</command> can be somewhat verbose.
+          The default logging level can be changed from INFO to any of
+          FINEST, FINER, FINE, CONFIG, INFO, WARNING, SEVERE, ALL, or OFF.
+          To do this, edit
+          <filename>$JAVA_HOME/jre/lib/logging.properties</filename> and change
+          the entries for <option>.level</option> and
+          <option>java.util.logging.ConsoleHandler.level</option> to
+          the desired value.
+@y
+          Running <command>fop</command> can be somewhat verbose.
+          The default logging level can be changed from INFO to any of
+          FINEST, FINER, FINE, CONFIG, INFO, WARNING, SEVERE, ALL, or OFF.
+          To do this, edit
+          <filename>$JAVA_HOME/jre/lib/logging.properties</filename> and change
+          the entries for <option>.level</option> and
+          <option>java.util.logging.ConsoleHandler.level</option> to
+          the desired value.
 @z
 
 @x

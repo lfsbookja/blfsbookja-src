@@ -158,11 +158,11 @@
 @z
 
 @x
-      <option>--disable-orbit</option>: This switch is required if
+      <parameter>--disable-orbit</parameter>: This switch is required if
       <application>ORBit2</application> is not installed.
       <application>ORBit2</application> is a deprecated package.
 @y
-      <option>--disable-orbit</option>: This switch is required if
+      <parameter>--disable-orbit</parameter>: This switch is required if
       <application>ORBit2</application> is not installed.
       <application>ORBit2</application> is a deprecated package.
 @z
@@ -189,7 +189,8 @@
           gsettings-schema-convert
         </seg>
         <seg>
-          libgconf-2.so
+          libgconf-2.so and libgsettingsgconfbackend.so (GIO Module installed
+          in <filename class="directory">/usr/lib/gio/modules</filename>)
         </seg>
         <seg>
           /etc/gconf,
@@ -204,7 +205,8 @@
           gsettings-schema-convert
         </seg>
         <seg>
-          libgconf-2.so
+          libgconf-2.so and libgsettingsgconfbackend.so (GIO Module installed
+          in <filename class="directory">/usr/lib/gio/modules</filename>)
         </seg>
         <seg>
           /etc/gconf,

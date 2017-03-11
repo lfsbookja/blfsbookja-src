@@ -20,12 +20,12 @@
 @z
 
 @x
-      <application>Xfce4 Terminal</application> is a <application>GTK+ 2</application>
+      <application>Xfce4 Terminal</application> is a <application>GTK+3</application>
       terminal emulator. This is useful for running commands or programs in the
       comfort of an Xorg window; you can drag and drop files into the
       <application>Xfce4 Terminal</application> or copy and paste text with your mouse.
 @y
-      <application>Xfce4 Terminal</application> is a <application>GTK+ 2</application>
+      <application>Xfce4 Terminal</application> is a <application>GTK+3</application>
       terminal emulator. This is useful for running commands or programs in the
       comfort of an Xorg window; you can drag and drop files into the
       <application>Xfce4 Terminal</application> or copy and paste text with your mouse.
@@ -83,13 +83,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libxfce4ui"/> and
-      <xref linkend="vte2"/>
+      <xref linkend="vte"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libxfce4ui"/>,
-      <xref linkend="vte2"/>
+      <xref linkend="vte"/>
     </para>
 @z
 

@@ -44,15 +44,21 @@
 @z
 
 @x
-  <para>To overcome this problem, the BLFS Team, with the assistance of <ulink
-  url='http://www.serverbeach.com'>Server Beach</ulink>, has made an HTTP/FTP
-  site available at <emphasis>anduin.&lfs-domainname;</emphasis>.  This site
-  has all the sources of the exact versions of the packages used in BLFS.  If
-  you can't find the BLFS package you need, get it there.</para>
+  <para>To overcome this problem, the BLFS Team, with the assistance of Oregon
+  State University Open Source Lab, has made an HTTP/FTP site available through
+  world wide mirrors.  See <ulink
+  url="http://www.linuxfromscratch.org/blfs/download.html#sources">
+  http://www.linuxfromscratch.org/blfs/download.html#sources</ulink> for a
+  list.  These sites have all the sources of the exact versions of the packages
+  used in BLFS.  If you can't find the BLFS package you need at the listed
+  addresses, get it from these sites.</para>
 @y
   <para>
-  このような状況を避けるために BLFS チームは、<ulink
-  url='http://www.serverbeach.com'>Server Beach</ulink> の協力のもと、HTTP/FTP によりアクセス可能なサイト <emphasis>anduin.&lfs-domainname;</emphasis> を用意しています。
+  このような状況を避けるために BLFS チームはオレゴン州立大学のオープンソースラボ (Oregon
+  State University Open Source Lab) の協力のもと、HTTP/FTP によりアクセス可能なサイトを用意しています。
+  詳しくは <ulink
+  url="http://www.linuxfromscratch.org/blfs/download.html#sources">
+  http://www.linuxfromscratch.org/blfs/download.html#sources</ulink> を参照してください。
   このサイトでは BLFS が利用するすべてのパッケージの正しいバージョンによるソースを提供しています。
   BLFS のパッケージが入手できなかった時には、このサイトを利用してください。
   </para>

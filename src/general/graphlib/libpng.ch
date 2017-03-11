@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libpng-buildsize     "14 MB (additional 1 MB for the tests)">
-  <!ENTITY libpng-time          "0.3 SBU (including tests)">
+  <!ENTITY libpng-buildsize     "13 MB (with tests)">
+  <!ENTITY libpng-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY libpng-buildsize     "14 MB (テスト実行時はさらに 1 MB)">
-  <!ENTITY libpng-time          "0.3 SBU (テスト込み)">
+  <!ENTITY libpng-buildsize     "13 MB (テスト込み)">
+  <!ENTITY libpng-time          "0.8 SBU (テスト込み)">
 @z
 
 @x
@@ -87,13 +87,19 @@
 @z
 
 @x
-          Optional patch to include animated png functionality in
+          Recommended patch to include animated png functionality in
           <application>libpng</application> (required to use the system
           <application>libpng</application> in
-          <application>Firefox</application>): <ulink url="&apng-patch;"/>
+          <application>Firefox</application>,
+          <application>Seamonkey</application>, and
+          <application>Thunderbird</application>): <ulink url="&apng-patch;"/>
 @y
           <application>libpng</application> にアニメーション png の機能を含めるための任意のパッチ
-          (<application>Firefox</application> にてシステムにインストールされた <application>libpng</application> として利用する場合に必要): <ulink url="&apng-patch;"/>
+          (required to use the system
+          <application>libpng</application> in
+          <application>Firefox</application>,
+          <application>Seamonkey</application>, and
+          <application>Thunderbird</application>): <ulink url="&apng-patch;"/>
 @z
 
 @x
@@ -109,7 +115,7 @@
 @z
 
 @x
-      If you want to patch libpng to support apng files, apply the patch:
+      If you want to patch libpng to support apng files, apply it here:
 @y
       apng ファイルのサポートを組み入れたい場合は、以下のパッチを適用します。
 @z
@@ -160,7 +166,7 @@
           libpng-config (symlink), libpng16-config, pngfix and png-fix-itxt
         </seg>
         <seg>
-          libpng.so and libpng16.so
+          libpng.so
         </seg>
         <seg>
           /usr/include/libpng16 and
@@ -168,10 +174,10 @@
         </seg>
 @y
         <seg>
-          libpng-config (symlink), libpng16-config, pngfix, png-fix-itxt
+          libpng-config (シンボリックリンク), libpng16-config, pngfix, png-fix-itxt
         </seg>
         <seg>
-          libpng.so, libpng16.so
+          libpng.so
         </seg>
         <seg>
           /usr/include/libpng16,

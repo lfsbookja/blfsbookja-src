@@ -5,12 +5,18 @@
 ## $Rev$
 ## $Date::                           $
 ##
-SUBDIRS=add core
+SUBDIRS=kf5 kf5-apps plasma5
 BOOKdir = @abs_bookdir@/kde
 CHANGE_FILES = \
-	introduction.ch  \
-	kde.ch           \
-	libdbusmenuqt.ch
+	introduction.ch        \
+	extra-cmake-modules.ch \
+	kde.ch                 \
+	kde-intro.ch           \
+	libdbusmenuqt.ch       \
+	phonon.ch              \
+	phonon-backend-gstreamer.ch \
+	phonon-backend-vlc.ch  \
+	polkit-qt.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -24,7 +30,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-introduction.xml:  $(BOOKdir)/$@ $(srcdir)/introduction.ch
-kde.xml:           $(BOOKdir)/$@ $(srcdir)/kde.ch
-libdbusmenuqt.xml: $(BOOKdir)/$@ $(srcdir)/libdbusmenuqt.ch

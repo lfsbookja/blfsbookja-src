@@ -190,7 +190,7 @@
         </seg>
         <seg>
           /usr/include/eog-3.0 and
-          /usr/{lib,share{,/gtk-doc/html,/help/*}}/eog
+          /usr/{lib,share,share/gtk-doc/html,share/help/*}/eog
         </seg>
 @y
         <seg>
@@ -201,7 +201,7 @@
         </seg>
         <seg>
           /usr/include/eog-3.0,
-          /usr/{lib,share{,/gtk-doc/html,/help/*}}/eog
+          /usr/{lib,share,share/gtk-doc/html,share/help/*}/eog
         </seg>
 @z
 

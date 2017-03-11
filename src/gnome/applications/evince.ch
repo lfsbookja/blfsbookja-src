@@ -84,8 +84,9 @@
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gtk3"/>, and
-      <xref linkend="itstool"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="itstool"/>, and
+      <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -93,24 +94,27 @@
       <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="itstool"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libxml2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="gnome-keyring"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="nautilus"/>, and
+      <xref linkend="nautilus"/> (to build the plugin), and
       <xref linkend="poppler"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="gnome-keyring"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="nautilus"/>,
+      <xref linkend="nautilus"/> (to build the plugin),
       <xref linkend="poppler"/>
     </para>
 @z
@@ -118,22 +122,32 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="cups"/> (to enable printing if support is built into
+      <application>GTK+ 3</application>),
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libtiff"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,
       <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>, and
-      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>
+      <ulink url="http://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz">t1lib</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="cups"/> (to enable printing if support is built into
+      <application>GTK+ 3</application>),
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libtiff"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
-      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>
+      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>, and
+      <ulink url="http://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz">t1lib</ulink>
     </para>
 @z
 
@@ -175,33 +189,43 @@
 @z
 
 @x
-      <option>--enable-introspection</option>: By default, the
-      <application>Gobject Introspection</application> support is 
+      <parameter>--enable-compile-warnings=minimum</parameter>: This
+      switch prevents a warning about a date format being treated as an error by
+      <application>gcc-6.1</application>.
+@y
+      <parameter>--enable-compile-warnings=minimum</parameter>: This
+      switch prevents a warning about a date format being treated as an error by
+      <application>gcc-6.1</application>.
+@z
+
+@x
+      <parameter>--enable-introspection</parameter>: By default, the
+      <application>Gobject Introspection</application> support is
       turned off, even though that package is an expected component
       of the <application>GNOME</application> Desktop.
 @y
-      <option>--enable-introspection</option>:
+      <parameter>--enable-introspection</parameter>:
       <application>Gobject Introspection</application> は <application>GNOME</application> デスクトップにおいて必要なパッケージであるにもかかわらず、本パッケージのデフォルトにおいては、その <application>Gobject Introspection</application> サポートは無効になっています。
 @z
 
 @x
-      <option>--without-keyring</option>: This switch disables use of
-      the <application>libsecret</application>. Use this switch
-      if <application>libsecret</application> is not installed.
-@y
-      <option>--without-keyring</option>:
-      本スイッチは <application>libsecret</application> を利用しないようにします。
-      <application>libsecret</application> をインストールしていない場合に本スイッチを指定してください。
-@z
-
-@x
       <option>--disable-nautilus</option>: This switch disables building
-      of the <application>Nautilus</application> Plugin. Use this switch
+      the <application>Nautilus</application> Plugin. Use this switch
       if <application>Nautilus</application> is not installed.
 @y
       <option>--disable-nautilus</option>:
       本スイッチは <application>Nautilus</application> プラグインをビルドしないようにします。
       <application>Nautilus</application> をインストールしていない場合に本スイッチを指定してください。
+@z
+
+@x
+      <option>--without-keyring</option>: This switch disables the use of
+      <application>libsecret</application>. Use this switch
+      if <application>libsecret</application> is not installed.
+@y
+      <option>--without-keyring</option>:
+      本スイッチは <application>libsecret</application> を利用しないようにします。
+      <application>libsecret</application> をインストールしていない場合に本スイッチを指定してください。
 @z
 
 @x
@@ -227,7 +251,8 @@
         <seg>
           libevdocument3.so,
           libevview3.so,
-          /usr/lib/mozilla/plugins/libevbrowserplugin.so, and
+          /usr/lib/mozilla/plugins/libevbrowserplugin.so (browser plugin,
+          but unusable in firefox), and
           /usr/lib/nautilus/extensions-3.0/libevince-properties-page.so
         </seg>
         <seg>
@@ -242,7 +267,8 @@
         <seg>
           libevdocument3.so,
           libevview3.so,
-          /usr/lib/mozilla/plugins/libevbrowserplugin.so,
+          /usr/lib/mozilla/plugins/libevbrowserplugin.so (browser plugin,
+          but unusable in firefox),
           /usr/lib/nautilus/extensions-3.0/libevince-properties-page.so
         </seg>
         <seg>
@@ -265,7 +291,7 @@
 @z
 
 @x evince-previewer
-            is an applicaton that implements the printing preview.
+            is an applicaton that implements the printing previewer.
 @y
             印刷プレビューを実装したアプリケーション。
 @z

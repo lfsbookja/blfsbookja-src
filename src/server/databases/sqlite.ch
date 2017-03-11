@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY sqlite-buildsize     "41 MB (includes optional documentation)">
+  <!ENTITY sqlite-buildsize     "70 MB (with docs)">
 @y
-  <!ENTITY sqlite-buildsize     "41 MB (任意のドキュメントを含む)">
+  <!ENTITY sqlite-buildsize     "70 MB (ドキュメント込み)">
 @z
 
 @x
@@ -115,11 +115,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="unzip"/> (required to unzip the documentation).
+      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink> and
+      <xref linkend="unzip"/> (required to unzip the documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
       <xref linkend="unzip"/> (ドキュメントを伸張するために必要)
     </para>
 @z
@@ -178,26 +180,42 @@
 
 @x
       <parameter>CFLAGS="-g -O2 -DSQLITE_ENABLE_FTS3=1
-      -DSQLITE_ENABLE_COLUMN_METADATA=1 -DSQLITE_SECURE_DELETE
-      -DSQLITE_ENABLE_UNLOCK_NOTIFY=1"</parameter>: Applications such as
-      <application>Firefox</application> require secure delete and enable unlock
-      notify to be turned on. The only way to do this is to include them in the
+      <!-- insecure, see below: -DSQLITE_ENABLE_FTS3_TOKENIZER=1 -->
+      -DSQLITE_ENABLE_COLUMN_METADATA=1
+      -DSQLITE_SECURE_DELETE -DSQLITE_ENABLE_UNLOCK_NOTIFY=1
+      -DSQLITE_ENABLE_DBSTAT_VTAB=1"</parameter>: Applications such as
+      <application>Firefox</application> require secure delete and enable
+      unlock notify to be turned on.
+      <!-- Thunderbird requires the
+      fts3_tokenizer option: this option is insecure if set for any
+      application using sqlite on the host. So it is disabled for now, and the
+      thunderbird static sqlite library is used instead.-->
+      Since <application>firefox-41</application> the dbstat virtual
+      table is also required. The only way to do this is to include them in the
       CFLAGS. By default, these are set to <literal>"-g -O2"</literal> so we
       specify that to preserve those settings. You may, of course, wish to omit
       the <literal>'-g'</literal> if you do not wish to create debugging
-      information. For further information on what can be specified see
-      <ulink url="http://www.sqlite.org/compile.html"/>.
+      information. For further information on what can be specified see <ulink
+      url="http://www.sqlite.org/compile.html"/>.
 @y
       <parameter>CFLAGS="-g -O2 -DSQLITE_ENABLE_FTS3=1
-      -DSQLITE_ENABLE_COLUMN_METADATA=1 -DSQLITE_SECURE_DELETE
-      -DSQLITE_ENABLE_UNLOCK_NOTIFY=1"</parameter>: Applications such as
-      <application>Firefox</application> require secure delete and enable unlock
-      notify to be turned on. The only way to do this is to include them in the
+      <!-- insecure, see below: -DSQLITE_ENABLE_FTS3_TOKENIZER=1 -->
+      -DSQLITE_ENABLE_COLUMN_METADATA=1
+      -DSQLITE_SECURE_DELETE -DSQLITE_ENABLE_UNLOCK_NOTIFY=1
+      -DSQLITE_ENABLE_DBSTAT_VTAB=1"</parameter>: Applications such as
+      <application>Firefox</application> require secure delete and enable
+      unlock notify to be turned on.
+      <!-- Thunderbird requires the
+      fts3_tokenizer option: this option is insecure if set for any
+      application using sqlite on the host. So it is disabled for now, and the
+      thunderbird static sqlite library is used instead.-->
+      Since <application>firefox-41</application> the dbstat virtual
+      table is also required. The only way to do this is to include them in the
       CFLAGS. By default, these are set to <literal>"-g -O2"</literal> so we
       specify that to preserve those settings. You may, of course, wish to omit
       the <literal>'-g'</literal> if you do not wish to create debugging
-      information. For further information on what can be specified see
-      <ulink url="http://www.sqlite.org/compile.html"/>.
+      information. For further information on what can be specified see <ulink
+      url="http://www.sqlite.org/compile.html"/>.
 @z
 
 @x

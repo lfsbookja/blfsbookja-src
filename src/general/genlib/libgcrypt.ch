@@ -14,12 +14,11 @@
 @z
 
 @x
-  <!ENTITY libgcrypt-buildsize     "38 MB (additional 7 MB for docs)">
-  <!ENTITY libgcrypt-time          "0.3 SBU (additional 0.1 SBU for docs and
-                                    0.3 SBU for tests)">
+  <!ENTITY libgcrypt-buildsize     "42 MB (with tests and building docs)">
+  <!ENTITY libgcrypt-time          "0.7 SBU (with tests and building docs)">
 @y
-  <!ENTITY libgcrypt-buildsize     "38 MB (ドキュメント生成にはさらに 7 MB)">
-  <!ENTITY libgcrypt-time          "0.3 SBU (ドキュメント生成にはさらに 0.1 SBU、テストにはさらに 0.3 SBU)">
+  <!ENTITY libgcrypt-buildsize     "42 MB (テストとドキュメント生成込み)">
+  <!ENTITY libgcrypt-time          "0.7 SBU (テストとドキュメント生成込み)">
 @z
 
 @x
@@ -102,14 +101,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libcap-pam"/> and
-      <xref linkend="pth"/>,
+      <!-- <xref linkend="libcap-pam"/> -->
+      <xref linkend="pth"/> and
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libcap-pam"/>,
+      <!-- <xref linkend="libcap-pam"/> -->
       <xref linkend="pth"/>,
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
     </para>

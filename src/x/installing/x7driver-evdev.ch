@@ -20,15 +20,13 @@
 @z
 
 @x
-        The <application>Xorg Evdev Driver</application> package contains Generic
+        The <application>Xorg Evdev Driver</application> package contains a Generic
         Linux input driver for the Xorg X server. It handles keyboard, mouse, touchpads
         and wacom devices, though for touchpad and wacom advanced handling,
         additional drivers are required.
 @y
-        <application>Xorg Evdev Driver</application> パッケージは、Xorg X サーバーに対する汎用 Linux 入力ドライバー (Generic
-        Linux input driver) を提供します。 
-        
-It handles keyboard, mouse, touchpads
+        The <application>Xorg Evdev Driver</application> package contains a Generic
+        Linux input driver for the Xorg X server. It handles keyboard, mouse, touchpads
         and wacom devices, though for touchpad and wacom advanced handling,
         additional drivers are required.
 @z
@@ -84,24 +82,16 @@ It handles keyboard, mouse, touchpads
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
+        <xref linkend="libevdev"/>,
+        <xref linkend="mtdev"/>, and
         <xref linkend="xorg-server"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
+        <xref linkend="libevdev"/>,
+        <xref linkend="mtdev"/>,
         <xref linkend="xorg-server"/>
-      </para>
-@z
-
-@x
-      <bridgehead renderas="sect5">Recommended</bridgehead>
-      <para role="recommended">
-        <xref linkend="mtdev"/>
-      </para>
-@y
-      <bridgehead renderas="sect5">&Recommended;</bridgehead>
-      <para role="recommended">
-        <xref linkend="mtdev"/>
       </para>
 @z
 

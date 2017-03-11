@@ -105,6 +105,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
       <xref linkend="gnupg2"/>,
       <xref linkend="openssh"/> and
@@ -113,6 +114,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
       <xref linkend="gnupg2"/>,
       <xref linkend="openssh"/>,
@@ -188,7 +190,8 @@
           gnome-keyring (symlink), gnome-keyring-3, and gnome-keyring-daemon
         </seg>
         <seg>
-          gnome-keyring-pkcs11.so and pam_gnome_keyring.so
+          gnome-keyring-pkcs11.so (PKCS#11 module) and 
+          pam_gnome_keyring.so (PAM module)
         </seg>
         <seg>
           /usr/lib/gnome-keyring
@@ -198,7 +201,8 @@
           gnome-keyring (シンボリックリンク), gnome-keyring-3, gnome-keyring-daemon
         </seg>
         <seg>
-          gnome-keyring-pkcs11.so, pam_gnome_keyring.so
+          gnome-keyring-pkcs11.so (PKCS#11 module) and 
+          pam_gnome_keyring.so (PAM module)
         </seg>
         <seg>
           /usr/lib/gnome-keyring

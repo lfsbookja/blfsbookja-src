@@ -210,9 +210,9 @@
 @z
 
 @x sg_format
-            format or resize a SCSI disk (perhaps change its block size).
+            formats or resizes a SCSI disk (perhaps changes its block size).
 @y
-            format or resize a SCSI disk (perhaps change its block size).
+            formats or resizes a SCSI disk (perhaps changes its block size).
 @z
 
 @x sg_get_config
@@ -330,15 +330,15 @@
 @z
 
 @x sg_rdac
-            Display or Modify RDAC Redundant Controller Page.
+            displays or modifies RDAC Redundant Controller Page.
 @y
-            Display or Modify RDAC Redundant Controller Page.
+            displays or modifies RDAC Redundant Controller Page.
 @z
 
 @x sg_read
-            read blocks of data continually from same offset.
+            reads blocks of data continually from the same offset.
 @y
-            read blocks of data continually from same offset.
+            reads blocks of data continually from the same offset.
 @z
 
 @x sg_read_block_limits

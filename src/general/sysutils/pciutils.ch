@@ -109,7 +109,7 @@
 
 @x
       <parameter>SHARED=yes</parameter>: This parameter enables building of
-      shared library instead of static one.
+      the shared library instead of the static one.
 @y
       <parameter>SHARED=yes</parameter>:
       このパラメーターはスタティックライブラリではなく共有ライブラリをビルドすることを指示します。
@@ -137,24 +137,24 @@
       <xref linkend="which"/> script or program to find <xref linkend="curl"/>,
       <xref linkend="lynx"/> or <xref linkend="wget"/> which are used to
       download the most current file, and then replace the existing file in
-      <filename class="directory">/usr/share/misc</filename>.
+      <filename class="directory">/usr/share/hwdata</filename>.
 @y
       <filename>pci.ids</filename> データファイルは、常に更新が行われています。
       最新版を入手する場合は <systemitem class="username">root</systemitem> ユーザーになって <command>update-pciids</command> コマンドを実行します。
       このプログラムは <xref linkend="curl"/>、<xref linkend="wget"/>、<xref linkend="lynx"/> が存在しているかどうかを調べるために <xref linkend="which"/> を用いています。
       三つのプログラムのいずれかを使って、最新のデータファイルをダウンロードするものです。
-      ダウンロードが出来たら <filename class='directory'>/usr/share</filename> ディレクトリ配下にあるファイルが上書きされます。
+      ダウンロードが出来たら <filename class='directory'>/usr/share/hwdata</filename> ディレクトリ配下にあるファイルが上書きされます。
 @z
 
 @x
       You may wish to add an entry to
       <systemitem class="username">root</systemitem>'s (or any other user who has
-      write privilege to <filename class="directory">/usr/share/misc</filename>)
+      write privilege to <filename class="directory">/usr/share/hwdata</filename>)
       crontab to automatically update the <filename>pci.ids</filename> file
       periodically.
 @y
       crontab に対して <systemitem class="username">root</systemitem> ユーザー (または <filename
-      class='directory'>/usr/share</filename> ディレクトリに対して書き込み権限を有する他のユーザー) の設定を行って、<filename>pci.ids</filename> ファイルの定期的な自動更新を実現することもできます。
+      class='directory'>/usr/share/hwdata</filename> ディレクトリに対して書き込み権限を有する他のユーザー) の設定を行って、<filename>pci.ids</filename> ファイルの定期的な自動更新を実現することもできます。
 @z
 
 @x

@@ -160,9 +160,7 @@
           libmenu-cache.so
         </seg>
         <seg>
-          /usr/include/menu-cache,
-          /usr/libexec/menu-cache and
-          /usr/share/gtk-doc/html/libmenu-cache
+          /usr/{include,libexec,share/gtk-doc/html}/menu-cache
         </seg>
 @y
         <seg>
@@ -172,9 +170,7 @@
           libmenu-cache.so
         </seg>
         <seg>
-          /usr/include/menu-cache,
-          /usr/libexec/menu-cache,
-          /usr/share/gtk-doc/html/libmenu-cache
+          /usr/{include,libexec,share/gtk-doc/html}/menu-cache
         </seg>
 @z
 

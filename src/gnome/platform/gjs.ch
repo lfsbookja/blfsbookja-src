@@ -20,7 +20,7 @@
 @z
 
 @x
-      <application>Gjs</application> is a Javascript binding for
+      <application>Gjs</application> is a set of Javascript bindings for
       <application>GNOME</application>.
 @y
       <application>Gjs</application> は <application>GNOME</application> における Javascript バインディングです。
@@ -145,9 +145,8 @@
           libgjs.so
         </seg>
         <seg>
-          /usr/include/gjs-1.0,
-          /usr/lib/gjs, and
-          /usr/libexec/gjs
+          /usr/include/gjs-1.0 and
+          /usr/lib{,exec}/gjs
         </seg>
 @y
         <seg>
@@ -157,9 +156,8 @@
           libgjs.so
         </seg>
         <seg>
-          /usr/include/gjs-1.0,
-          /usr/lib/gjs,
-          /usr/libexec/gjs
+          /usr/include/gjs-1.0 and
+          /usr/lib{,exec}/gjs
         </seg>
 @z
 

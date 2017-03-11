@@ -113,12 +113,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -160,15 +162,6 @@
 @z
 
 @x
-      <parameter>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</parameter>:
-      Use this swithc if the $XORG_PREFIX is anything other than
-      <filename class="directory">/usr</filename>.
-@y
-      <parameter>--with-xkb-base=$XORG_PREFIX/share/X11/xkb</parameter>:
-      $XORG_PREFIX が <filename class='directory'>/usr</filename> 以外である場合に、このスイッチを指定します。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -185,9 +178,9 @@
 @z
 
 @x
-	<seg>
-	  None
-	</seg>
+        <seg>
+          None
+        </seg>
         <seg>
           libxklavier.so
         </seg>

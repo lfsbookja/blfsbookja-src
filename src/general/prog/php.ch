@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "505 MB (with the tests)">
-  <!ENTITY php-time          "6 SBU (with the tests)">
+  <!ENTITY php-buildsize     "450 MB (add 2 MB for tests, add 106 MB for docs)">
+  <!ENTITY php-time          "4.4 SBU (add 3.9 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "505 MB (テスト込み)">
-  <!ENTITY php-time          "6 SBU (テスト込み)">
+  <!ENTITY php-buildsize     "450 MB (テスト時はさらに 2 MB, ドキュメント生成時はさらに 106 MB)">
+  <!ENTITY php-time          "4.4 SBU (テスト時はさらに 3.9 SBU)">
 @z
 
 @x
@@ -157,10 +157,10 @@
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="x-window-system"/>,
-      <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
+      <!--<ulink url="http://www.fastio.com/">ClibPDF</ulink>, - site asks for username/password-->
       <ulink url="http://www.adobe.com/devnet/acrobat/fdftoolkit.html">FDF Toolkit</ulink>,
       <ulink url="https://bitbucket.org/libgd/gd-libgd/downloads">GD</ulink>, and
-      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>
+      <ulink url="http://fossies.org/linux/misc/old/t1lib-5.1.2.tar.gz/">t1lib</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">任意のグラフィックユーティリティーおよびライブラリ</bridgehead>
@@ -171,10 +171,10 @@
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="x-window-system"/>,
-      <ulink url="http://www.fastio.com/">ClibPDF</ulink>,
+      <!--<ulink url="http://www.fastio.com/">ClibPDF</ulink>, - site asks for username/password-->
       <ulink url="http://www.adobe.com/devnet/acrobat/fdftoolkit.html">FDF Toolkit</ulink>,
       <ulink url="https://bitbucket.org/libgd/gd-libgd/downloads">GD</ulink>, and
-      <ulink url="http://fossies.org/linux/misc/t1lib-5.1.2.tar.gz/">t1lib</ulink>
+      <ulink url="http://fossies.org/linux/misc/old/t1lib-5.1.2.tar.gz/">t1lib</ulink>
     </para>
 @z
 
@@ -182,9 +182,9 @@
     <bridgehead renderas="sect4">Optional Web Utilities</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
-      <xref linkend="html-tidy"/>,
+      <xref linkend="tidy-html5"/>,
       <ulink url="http://sourceforge.net/projects/caudium/">Caudium</ulink>,
-      <ulink url="http://www.hyperwave.com/">Hyperwave</ulink>,
+      <ulink url="https://www.hyperwave.com/en/">Hyperwave</ulink>,
       <ulink url="http://www.mnogosearch.org/">mnoGoSearch</ulink>,
       <ulink url="http://www.roxen.com/products/webserver/">Roxen WebServer</ulink>, and
       <ulink url="https://wddxnet.codeplex.com/">WDDX</ulink>
@@ -193,9 +193,9 @@
     <bridgehead renderas="sect4">任意のウェブユーティリティー</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
-      <xref linkend="html-tidy"/>,
+      <xref linkend="tidy-html5"/>,
       <ulink url="http://sourceforge.net/projects/caudium/">Caudium</ulink>,
-      <ulink url="http://www.hyperwave.com/">Hyperwave</ulink>,
+      <ulink url="https://www.hyperwave.com/en/">Hyperwave</ulink>,
       <ulink url="http://www.mnogosearch.org/">mnoGoSearch</ulink>,
       <ulink url="http://www.roxen.com/products/webserver/">Roxen WebServer</ulink>, and
       <ulink url="https://wddxnet.codeplex.com/">WDDX</ulink>
@@ -205,7 +205,8 @@
 @x
     <bridgehead renderas="sect4">Optional Data Management Utilities and Libraries</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
+      <xref linkend="db"/> (Note that PHP does not officially support versions
+ above 5.3),
       <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
@@ -216,7 +217,7 @@
       <ulink url="http://cr.yp.to/cdb.html">cdb</ulink>,
       <ulink url="http://www.dbmaker.com/">DBMaker</ulink>,
       <ulink url="http://www.empress.com/">Empress</ulink>,
-      <ulink url="http://www.frontbase.com/">FrontBase</ulink>,
+      <ulink url="http://www.frontbase.com/cgi-bin/WebObjects/FBWebSite">FrontBase</ulink>,
       <ulink url="http://www.hughes.com.au/products/msql/">Mini SQL</ulink>,
       <ulink url="http://www.monetra.com/">Monetra</ulink>, and
       <ulink url="http://sourceforge.net/projects/qdbm">QDBM</ulink>
@@ -224,7 +225,8 @@
 @y
     <bridgehead renderas="sect4">任意のデータ管理ユーティリティーおよびライブラリ</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
+      <xref linkend="db"/> (Note that PHP does not officially support versions
+ above 5.3),
       <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
@@ -235,7 +237,7 @@
       <ulink url="http://cr.yp.to/cdb.html">cdb</ulink>,
       <ulink url="http://www.dbmaker.com/">DBMaker</ulink>,
       <ulink url="http://www.empress.com/">Empress</ulink>,
-      <ulink url="http://www.frontbase.com/">FrontBase</ulink>,
+      <ulink url="http://www.frontbase.com/cgi-bin/WebObjects/FBWebSite">FrontBase</ulink>,
       <ulink url="http://www.hughes.com.au/products/msql/">Mini SQL</ulink>,
       <ulink url="http://www.monetra.com/">Monetra</ulink>, and
       <ulink url="http://sourceforge.net/projects/qdbm">QDBM</ulink>
@@ -305,14 +307,14 @@
         is highly recommended, as their online docs are very good. An example
         of a <command>configure</command> command that utilizes many of the
         most common dependencies can be found at <ulink
-        url="&files-anduin;/php_configure.txt"/>.
+        url="&sources-anduin-http;/files/php_configure.txt"/>.
 @y
         <application>PHP</application> の <command>configure</command> には、各種サポートを実現するためのオプションが数多くあります。
         <command>./configure --help</command> の実行により、利用可能なオプションをすべて確認することができます。
         また <ulink url="http://www.php.net/">PHP ウェブサイト</ulink> を参照することもお勧めします。
         このサイトが提供するオンラインドキュメントは、よく仕上がっています。
         一般的な依存関係を実現するような  <command>configure</command> コマンドの実行例が <ulink
-        url="&files-anduin;/php_configure.txt"/> に示されているので参照してください。
+        url="&sources-anduin-http;/files/php_configure.txt"/> に示されているので参照してください。
 @z
 
 @x
@@ -335,12 +337,12 @@
 @x
       To test the results, issue: <command>make test</command>. A few
       tests may fail, in which case you are asked whether you want to send
-      the report to the PHP developpers. If you want to automate the test,
+      the report to the PHP developers. If you want to automate the test,
       you may prefix the command with <command>yes "n" | </command>.
 @y
       To test the results, issue: <command>make test</command>. A few
       tests may fail, in which case you are asked whether you want to send
-      the report to the PHP developpers. If you want to automate the test,
+      the report to the PHP developers. If you want to automate the test,
       you may prefix the command with <command>yes "n" | </command>.
 @z
 
@@ -495,12 +497,14 @@
 
 @x
         <filename>/etc/php.ini</filename>,
-        <filename>/etc/pear.conf</filename>, and
-        <filename>/etc/php-fpm.conf</filename>
+        <filename>/etc/pear.conf</filename>,
+        <filename>/etc/php-fpm.conf</filename>, and
+        <filename>/etc/php-fpm.d/www.conf</filename>
 @y
         <filename>/etc/php.ini</filename>,
         <filename>/etc/pear.conf</filename>,
-        <filename>/etc/php-fpm.conf</filename>
+        <filename>/etc/php-fpm.conf</filename>,
+        <filename>/etc/php-fpm.d/www.conf</filename>
 @z
 
 @x
@@ -610,18 +614,22 @@
 @z
 
 @x
-        <seg>pear, peardev, pecl, phar (symlink), phar.phar,
-        php, php-cgi, php-config, php-fpm, and phpize</seg>
-        <seg>dba.{so,a} and opcache.{so,a} at
-       /usr/lib/php/extensions/no-debug-non-zts-20131226/</seg>
-        <seg>/usr/{include,lib,share}/php and
+        <seg>pear, peardev, pecl, phar (symlink), phar.phar, php,
+        php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
+
+        <seg>dba.{so,a} and opcache.{so,a} in
+       /usr/lib/php/extensions/no-debug-non-zts-20151012</seg>
+
+        <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php and
         /usr/share/doc/php-&php-version;</seg>
 @y
-        <seg>pear, peardev, pecl, phar (シンボリックリンク), phar.phar,
-        php, php-cgi, php-config, php-fpm, phpize</seg>
-        <seg>dba.{so,a} and opcache.{so,a} at
-       /usr/lib/php/extensions/no-debug-non-zts-20131226/</seg>
-        <seg>/usr/{include,lib,share}/php,
+        <seg>pear, peardev, pecl, phar (シンボリックリンク), phar.phar, php,
+        php-cgi, php-config, php-fpm, phpdbg, phpize</seg>
+
+        <seg>dba.{so,a} and opcache.{so,a} in
+       /usr/lib/php/extensions/no-debug-non-zts-20151012</seg>
+
+        <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php,
         /usr/share/doc/php-&php-version;</seg>
 @z
 

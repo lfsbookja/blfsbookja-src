@@ -14,12 +14,12 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "32 MB (additional 2 MB if running the tests)">
-  <!ENTITY openssh-time          "0.5 SBU (running the tests takes at least 10
-                                  minutes, irrespective of processor speed)">
+  <!ENTITY openssh-buildsize     "47 MB (with tests)">
+  <!ENTITY openssh-time          "0.4 SBU (running the tests takes 10+ minutes,
+                                  irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "32 MB (テスト実施時は 2MB 追加)">
-  <!ENTITY openssh-time          "0.5 SBU (テスト実施はプロセッサーの処理スピードとは無関係に、最低でも 10分)">
+  <!ENTITY openssh-buildsize     "47 MB (テスト込み)">
+  <!ENTITY openssh-time          "0.4 SBU (テスト実施はプロセッサーの処理スピードとは無関係に最低でも 10分)">
 @z
 
 @x
@@ -29,16 +29,16 @@
 @z
 
 @x
-    The <application>OpenSSH</application> package contains
-    <command>ssh</command> clients and the <command>sshd</command> daemon. This
-    is useful for encrypting authentication and subsequent traffic over a
-    network. The <command>ssh</command> and <command>scp</command> commands are
-    secure implementions of <command>telnet</command> and <command>rcp</command>
-    respectively.
+      The <application>OpenSSH</application> package contains
+      <command>ssh</command> clients and the <command>sshd</command> daemon.
+      This is useful for encrypting authentication and subsequent traffic over
+      a network. The <command>ssh</command> and <command>scp</command> commands
+      are secure implementations of <command>telnet</command> and
+      <command>rcp</command> respectively.
 @y
-    <application>OpenSSH</application> パッケージは <command>ssh</command> クライアントと <command>sshd</command> デーモンを提供します。
-    これはネットワーク越しの通信にあたり、権限情報をはじめとする情報を暗号化します。
-    <command>ssh</command> コマンドと <command>scp</command> コマンドは、それぞれ <command>telnet</command> と <command>rcp</command> に対するセキュアな実装です。
+      <application>OpenSSH</application> パッケージは <command>ssh</command> クライアントと <command>sshd</command> デーモンを提供します。
+      これはネットワーク越しの通信にあたり、権限情報をはじめとする情報を暗号化します。
+      <command>ssh</command> コマンドと <command>scp</command> コマンドは、それぞれ <command>telnet</command> と <command>rcp</command> に対するセキュアな実装です。
 @z
 
 @x
@@ -91,10 +91,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="openssl"/></para>
+    <para role="required">
+      <xref linkend="openssl"/> or
+      <ulink url="http://www.libressl.org/">LibreSSL Portable</ulink></para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="openssl"/></para>
+    <para role="required">
+      <xref linkend="openssl"/> または
+      <ulink url="http://www.libressl.org/">LibreSSL Portable</ulink></para>
 @z
 
 @x
@@ -104,7 +108,7 @@
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
-      <ulink url="http://www.opensc-project.org/">OpenSC</ulink>, and
+      <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
 @y
@@ -114,7 +118,7 @@
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
-      <ulink url="http://www.opensc-project.org/">OpenSC</ulink>,
+      <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
 @z
@@ -124,21 +128,21 @@
     <para role="optional">
       <xref linkend="openjdk"/>,
       <xref linkend="net-tools"/>, and
-      <xref linkend="sysstat"/>.
+      <xref linkend="sysstat"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;, 実行時 (エントロピー収集のためにのみ利用される)</bridgehead>
     <para role="optional">
       <xref linkend="openjdk"/>,
       <xref linkend="net-tools"/>,
-      <xref linkend="sysstat"/>.
+      <xref linkend="sysstat"/>
     </para>
 @z
 
 @x
-        User Notes: <ulink url='&blfs-wiki;/OpenSSH'/>
+        User Notes: <ulink url="&blfs-wiki;/OpenSSH"/>
 @y
-        &UserNotes;: <ulink url='&blfs-wiki;/OpenSSH'/>
+        &UserNotes;: <ulink url="&blfs-wiki;/OpenSSH"/>
 @z
 
 @x
@@ -174,7 +178,7 @@
       complete the multiplexing tests. To run the test suite, first copy the
       <command>scp</command> program to
       <filename class="directory">/usr/bin</filename>, making sure that you
-      back up any existing copy first.
+      backup any existing copy first.
 @y
       テストスイートの実行には、インストール済の <command>scp</command> が必要であり、これがないとマルチプレックステストが失敗します。
       テスト実施前にはまず <command>scp</command> プログラムを <filename class="directory">/usr/bin</filename> にコピーしてください。
@@ -210,16 +214,6 @@
 @z
 
 @x
-      <parameter>--datadir=/usr/share/sshd</parameter>: This switch puts the
-      Ssh.bin file (used for SmartCard authentication) in
-      <filename class="directory">/usr/share/sshd</filename>.
-@y
-      <parameter>--datadir=/usr/share/sshd</parameter>:
-      このパラメーターの指定により、(スマートカード認証に用いられる) Ssh.bin ファイルを <filename
-      class="directory">/usr/share/sshd</filename> へインストールします。
-@z
-
-@x
       <parameter>--with-md5-passwords</parameter>: This enables the use of MD5
       passwords.
 @y
@@ -228,22 +222,22 @@
 @z
 
 @x
-      <parameter>--with-pam</parameter>: This parameter enables
+      <option>--with-pam</option>: This parameter enables
       <application>Linux-PAM</application> support in the build.
 @y
-      <parameter>--with-pam</parameter>:
+      <option>--with-pam</option>:
       このパラメーターは <application>Linux-PAM</application> サポートを有効にします。
 @z
 
 @x
-      <parameter>--with-xauth=/usr/bin/xauth</parameter>: Set the default
+      <option>--with-xauth=/usr/bin/xauth</option>: Set the default
       location for the <command>xauth</command> binary for X authentication.
       Change the location if <command>xauth</command> will be installed to a
       different path. This can also be controlled from
       <filename>sshd_config</filename> with the XAuthLocation keyword. You can
       omit this switch if <application>Xorg</application> is already installed.
 @y
-      <parameter>--with-xauth=/usr/bin/xauth</parameter>:
+      <option>--with-xauth=/usr/bin/xauth</option>:
       X における認証を行う <command>xauth</command> 実行モジュールのデフォルトインストール先を指定します。
       <command>xauth</command> のインストール先に合わせて適宜修正してください。
       このディレクトリは <filename>sshd_config</filename> ファイルの XAuthLocation キーワードにおいても設定することができます。
@@ -251,10 +245,10 @@
 @z
 
 @x
-      <parameter>--with-kerberos5=/usr</parameter>: This option is used to
+      <option>--with-kerberos5=/usr</option>: This option is used to
       include Kerberos 5 support in the build.
 @y
-      <parameter>--with-kerberos5=/usr</parameter>:
+      <option>--with-kerberos5=/usr</option>:
       このオプションは Kerberos 5 サポートを有効にします。
 @z
 
@@ -309,16 +303,16 @@
         create ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub with
         <command>ssh-keygen</command> and then copy ~/.ssh/id_rsa.pub to
         ~/.ssh/authorized_keys on the remote computer that you want to log into.
-        You'll need to change REMOTE_HOSTNAME for the hostname of the remote
-        computer and you'll also need to enter you password for the ssh command
+        You'll need to change REMOTE_USERNAME and REMOTE_HOSTNAME for the username and hostname of the remote
+        computer and you'll also need to enter your password for the ssh-copy-id command
         to succeed:
 @y
         If you want to be able to log in without typing in your password, first
         create ~/.ssh/id_rsa and ~/.ssh/id_rsa.pub with
         <command>ssh-keygen</command> and then copy ~/.ssh/id_rsa.pub to
         ~/.ssh/authorized_keys on the remote computer that you want to log into.
-        You'll need to change REMOTE_HOSTNAME for the hostname of the remote
-        computer and you'll also need to enter you password for the ssh command
+        You'll need to change REMOTE_USERNAME and REMOTE_HOSTNAME for the username and hostname of the remote
+        computer and you'll also need to enter your password for the ssh-copy-id command
         to succeed:
 @z
 
@@ -335,20 +329,20 @@
 @z
 
 @x
-        If you added <application>LinuxPAM</application> support and you want
+        If you added <application>Linux-PAM</application> support and you want
         ssh to use it then you will need to add a configuration file for
         <application>sshd</application> and enable use of
         <application>LinuxPAM</application>. Note, ssh only uses PAM to check
         passwords, if you've disabled password logins these commands are not
-        needed. If you want to use PAM issue the following commands as the
+        needed. If you want to use PAM, issue the following commands as the
         <systemitem class='username'>root</systemitem> user:
 @y
-        If you added <application>LinuxPAM</application> support and you want
+        If you added <application>Linux-PAM</application> support and you want
         ssh to use it then you will need to add a configuration file for
         <application>sshd</application> and enable use of
         <application>LinuxPAM</application>. Note, ssh only uses PAM to check
         passwords, if you've disabled password logins these commands are not
-        needed. If you want to use PAM issue the following commands as the
+        needed. If you want to use PAM, issue the following commands as the
         <systemitem class='username'>root</systemitem> user:
 @z
 
@@ -363,18 +357,29 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
-@x
+@x revision="sysv"
         To start the SSH server at system boot, install the
-      <filename>/etc/rc.d/init.d/sshd</filename> init script included
-      in the <xref linkend="bootscripts"/> package.
+        <filename>/etc/rc.d/init.d/sshd</filename> init script included
+        in the <xref linkend="bootscripts"/> package.
 @y
       システム起動時に SSH サーバーを起動する場合は、<xref
       linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/sshd</filename> をインストールします。
+@z
+@x revision="systemd"
+        To start the SSH server at system boot, install the
+        <filename>sshd.service</filename> unit included in the
+        <xref linkend="systemd-units"/> package.
+@y
+        To start the SSH server at system boot, install the
+        <filename>sshd.service</filename> unit included in the
+        <xref linkend="systemd-units"/> package.
 @z
 
 @x
@@ -395,31 +400,27 @@
 
 @x
         <seg>
-          scp, sftp, sftp-server, slogin (symlink to ssh), ssh, sshd, ssh-add,
-          ssh-agent, ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign,
-          and ssh-pkcs11-helper
+          scp, sftp, slogin (symlink to ssh), ssh, ssh-add, ssh-agent,
+          ssh-copy-id, ssh-keygen, ssh-keyscan, and sshd
         </seg>
         <seg>
           None
         </seg>
         <seg>
           /etc/ssh,
-          /usr/lib/openssh,
           /usr/share/doc/openssh-&openssh-version;, and
           /var/lib/sshd
         </seg>
 @y
         <seg>
-          scp, sftp, sftp-server, slogin (ssh へのシンボリックリンク), ssh, sshd, ssh-add,
-          ssh-agent, ssh-copy-id, ssh-keygen, ssh-keyscan, ssh-keysign,
-          ssh-pkcs11-helper
+          scp, sftp, slogin (ssh へのシンボリックリンク), ssh, ssh-add, ssh-agent,
+          ssh-copy-id, ssh-keygen, ssh-keyscan, sshd
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
           /etc/ssh,
-          /usr/lib/openssh,
           /usr/share/doc/openssh-&openssh-version;,
           /var/lib/sshd
         </seg>
@@ -443,14 +444,6 @@
             is an FTP-like program that works over the SSH1 and SSH2 protocols.
 @y
             SSH1 および SSH2 プロトコルを用いて動作する FTP ライクなプログラム。
-@z
-
-@x sftp-server
-            is an SFTP server subsystem. This program is not normally called
-            directly by the user.
-@y
-            is an SFTP server subsystem. This program is not normally called
-            directly by the user.
 @z
 
 @x slogin
@@ -495,16 +488,4 @@
             is a utility for gathering public host keys from a number of hosts.
 @y
             is a utility for gathering public host keys from a number of hosts.
-@z
-
-@x ssh-keysign
-            is used by <command>ssh</command> to access the local host keys and
-            generate the digital signature required during hostbased
-            authentication with SSH protocol version 2. This program is not
-            normally called directly by the user.
-@y
-            is used by <command>ssh</command> to access the local host keys and
-            generate the digital signature required during hostbased
-            authentication with SSH protocol version 2. This program is not
-            normally called directly by the user.
 @z

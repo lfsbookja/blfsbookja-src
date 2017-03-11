@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "34 MB (with tests)">
-  <!ENTITY harfbuzz-time          "0.3 SBU (with tests)">
+  <!ENTITY harfbuzz-buildsize     "30 MB (with tests)">
+  <!ENTITY harfbuzz-time          "0.3 SBU (with tests)"> 
 @y
-  <!ENTITY harfbuzz-buildsize     "34 MB (テスト込み)">
-  <!ENTITY harfbuzz-time          "0.3 SBU (テスト込み)">
+  <!ENTITY harfbuzz-buildsize     "30 MB (テスト込み)">
+  <!ENTITY harfbuzz-time          "0.3 SBU (テスト込み)"> 
 @z
 
 @x
@@ -28,7 +28,7 @@
 @z
 
 @x
-      The <application>Harfbuzz</application> package contains an OpenType text
+      The <application>HarfBuzz</application> package contains an OpenType text
       shaping engine.
 @y
       <application>Harfbuzz</application> パッケージは OpenType テキストシェーピングエンジンを提供します。
@@ -77,9 +77,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Harfbuzz Dependencies</bridgehead>
+    <bridgehead renderas="sect3">HarfBuzz Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Harfbuzz&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;HarfBuzz&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -138,16 +138,16 @@
 @z
 
 @x
-    <title>Installation of Harfbuzz</title>
+    <title>Installation of HarfBuzz</title>
 @y
-    <title>&InstallationOf1;Harfbuzz&InstallationOf2;</title>
+    <title>&InstallationOf1;HarfBuzz&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Harfbuzz</application> by running the following
+      Install <application>HarfBuzz</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Harfbuzz</application> をビルドします。
+      以下のコマンドを実行して <application>HarfBuzz</application> をビルドします。
 @z
 
 @x
@@ -170,11 +170,11 @@
 
 @x
       <parameter>--with-gobject</parameter>: This switch enables building
-      of the <application>Harfbuzz</application> GObject wrapper. Remove
+      of the <application>HarfBuzz</application> GObject wrapper. Remove
       it if you did not install <application>GLib</application>.
 @y
       <parameter>--with-gobject</parameter>:
-      本スイッチは <application>Harfbuzz</application> GObject ラッパーのビルドを指示します。
+      本スイッチは <application>HarfBuzz</application> GObject ラッパーのビルドを指示します。
       <application>GLib</application> をインストールしていない場合はこれを取り除いてください。
 @z
 
@@ -232,8 +232,3 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libharfbuzz.so
-            contains functions for complex text shaping.
-@y
-            高度なテキストシェーピング関数を提供します。
-@z

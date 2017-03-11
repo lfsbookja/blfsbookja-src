@@ -87,6 +87,7 @@
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
       <xref linkend="bluez"/>,
       <xref linkend="libnl"/>,
       <xref linkend="libusb"/>,

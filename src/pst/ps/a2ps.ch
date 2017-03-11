@@ -111,18 +111,10 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="gperf"/></para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="gperf"/></para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="psutils"/>, and
-      <xref linkend="cups"/> 
+      <xref linkend="cups"/>
       (otherwise, <application>a2ps</application> will use the
       <command>cat &gt;/dev/lp0</command> command instead of <command>lpr</command>
       for sending its output to the printer)
@@ -131,7 +123,7 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="psutils"/>, and
-      <xref linkend="cups"/> 
+      <xref linkend="cups"/>
       (otherwise, <application>a2ps</application> will use the
       <command>cat &gt;/dev/lp0</command> command instead of <command>lpr</command>
       for sending its output to the printer)
@@ -141,20 +133,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="texlive"/>,
       <xref linkend="gs"/>,
-      <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>,
+      <xref linkend="libpaper"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      <xref linkend="x-window-system"/>,
       <ulink url="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Reader</ulink>, and
       <ulink url="http://www.gnu.org/software/ghostview/ghostview.html">Ghostview</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="texlive"/>,
       <xref linkend="gs"/>,
-      <ulink url="http://packages.debian.org/unstable/source/libpaper">libpaper</ulink>,
+      <xref linkend="libpaper"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      <xref linkend="x-window-system"/>,
       <ulink url="http://www.adobe.com/products/acrobat/readstep2.html">Adobe Reader</ulink>, and
       <ulink url="http://www.gnu.org/software/ghostview/ghostview.html">Ghostview</ulink>
     </para>

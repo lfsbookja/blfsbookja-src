@@ -20,11 +20,15 @@
 @z
 
 @x
-      The <application>WebKitGTK+</application> is the port of the portable
-      web rendering engine <application>WebKit</application> to the
-      <application>GTK+ 2</application> platform.
+      The <application>WebKitGTK+</application> package is a port of the 
+      portable web rendering engine <application>WebKit</application> to the
+      <application>GTK+ 3</application> and <application>GTK+ 2</application>
+      platforms.
 @y
-      <application>WebKitGTK+</application> は、可搬性に優れたウェブレンダリングエンジン <application>WebKit</application> の <application>GTK+</application> プラットフォームでのポートです。
+      The <application>WebKitGTK+</application> package is a port of the 
+      portable web rendering engine <application>WebKit</application> to the
+      <application>GTK+ 3</application> and <application>GTK+ 2</application>
+      platforms.
 @z
 
 @x
@@ -70,18 +74,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">WebKitGTK+ Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;WebKitGTK+&Dependencies2;</bridgehead>
@@ -90,12 +82,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gperf"/>,
-      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="cairo"/>,
+      <xref linkend="cmake"/>,
+      <xref linkend="enchant"/>,
+      <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
+      <xref linkend="libgudev"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="mesalib"/>,
+      <xref linkend="libwebp"/>,
+      <xref linkend="mesa"/>,
       <xref linkend="ruby"/>,
       <xref linkend="sqlite"/> and
       <xref linkend="which"/>
@@ -103,12 +101,18 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gperf"/>,
-      <xref linkend="gst-plugins-base"/>,
+      <xref linkend="cairo"/>,
+      <xref linkend="cmake"/>,
+      <xref linkend="enchant"/>,
+      <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
+      <xref linkend="libgudev"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="mesalib"/>,
+      <xref linkend="libwebp"/>,
+      <xref linkend="mesa"/>,
       <xref linkend="ruby"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="which"/>
@@ -117,32 +121,72 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="enchant"/> and
-      <xref linkend="geoclue"/>
+    <para role="recommended" revision="sysv">
+      <xref linkend="geoclue"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="hicolor-icon-theme"/>
+    </para>
+    <para role="recommended" revision="systemd">
+      <xref linkend="geoclue2"/> or
+      <xref linkend="geoclue"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="hicolor-icon-theme"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="enchant"/>,
-      <xref linkend="geoclue"/>
+    <para role="recommended" revision="sysv">
+      <xref linkend="geoclue"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="hicolor-icon-theme"/>
+    </para>
+    <para role="recommended" revision="systemd">
+      <xref linkend="geoclue2"/> or
+      <xref linkend="geoclue"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="hicolor-icon-theme"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="curl"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk-doc"/> and
+    <para role="optional" revision="sysv">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="harfbuzz"/>,
+      <xref linkend="libnotify"/>,
+      <xref linkend="llvm"/>,
+      <xref linkend="wayland"/>,
+      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
+      <ulink url="http://freedesktop.org/wiki/Software/GeoClue/">GeoClue2</ulink>, and
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
+    </para>
+    <para role="optional" revision="systemd">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="harfbuzz"/>,
+      <xref linkend="libnotify"/>,
+      <xref linkend="llvm"/>,
+      <xref linkend="wayland"/>,
+      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/"> Hyphen</ulink>, and
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="curl"/>,
-      <xref linkend="gobject-introspection"/>,
+    <para role="optional" revision="sysv">
       <xref linkend="gtk-doc"/>,
+      <xref linkend="harfbuzz"/>,
+      <xref linkend="libnotify"/>,
+      <xref linkend="llvm"/>,
+      <xref linkend="wayland"/>,
+      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
+      <ulink url="http://freedesktop.org/wiki/Software/GeoClue/">GeoClue2</ulink>, and
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
+    </para>
+    <para role="optional" revision="systemd">
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="harfbuzz"/>,
+      <xref linkend="libnotify"/>,
+      <xref linkend="llvm"/>,
+      <xref linkend="wayland"/>,
+      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/"> Hyphen</ulink>, and
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
     </para>
 @z
@@ -160,26 +204,6 @@
 @z
 
 @x
-        If you are building <application>WebKitGTK+</application>
-        with <command>make</command> 3.82, make sure that you have built
-        it with the following
-        <ulink url="&patch-downloads;/make/make-3.82-upstream_fixes-3.patch">
-        patch</ulink> applied or <application>WebKitGTK+</application>
-        build will fail.
-@y
-        <command>make</command> 3.82 を用いて <application>WebKitGTK+</application> をビルドする場合は、<command>make</command> を <ulink
-        url="&patch-downloads;/make/make-3.82-upstream_fixes-3.patch">このパッチ</ulink> を適用してビルドしておく必要があります。
-        これを行っておかないと <application>WebKitGTK+</application> のビルドに失敗します。
-@z
-
-@x
-      If you have not installed <xref linkend="gtk-doc"/>, fix a bug that will
-      cause <command>make install</command> to fail:
-@y
-      <xref linkend="gtk-doc"/> をインストールしていない場合は、<command>make install</command> が失敗するバグを以下により修正します。
-@z
-
-@x
       Install <application>WebKitGTK+</application> by running the
       following commands:
 @y
@@ -188,9 +212,9 @@
 
 @x
       This package does not have a working testsuite. However, there is a
-      useable basic graphical web browser in the source directory,
-      <application>Programs/GtkLauncher</application>. If it fails, there is a
-      problem with the build.
+      useable basic graphical web browser in the build directory,
+      <application>build/bin/MiniBrowser</application>. If launching it fails,
+      there is a problem with the build.
 @y
       このパッケージには有効なテストスイートがありません。
       しかしソースディレクトリ内には、単純なウェブブラウザー <application>Programs/GtkLauncher</application> が含まれています。
@@ -209,34 +233,7 @@
     <title>&CommandExplanations;</title>
 @z
 
-@x
-      <command>sed ... Source/ThirdParty/ANGLE/src/compiler/glslang.y</command>:
-      This command corrects a problem caused by the most recent version of
-      Bison.
-@y
-      <command>sed ... Source/ThirdParty/ANGLE/src/compiler/glslang.y</command>:
-      このコマンドは、ほぼ最新版の Bison にて発生する問題を修正するものです。
-@z
 
-@x
-      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>: These parameters
-      force <application>WebKitGTK+</application> to compile against
-      <application>GTK+ 2</application>, even if
-      <application>GTK+ 3</application> is also installed.
-@y
-      <parameter>--with-gtk=2.0 --disable-webkit2</parameter>:
-      このパラメーターは、たとえ <application>GTK+ 3</application> がインストールされていても <application>GTK+ 2</application> により <application>WebKitGTK+</application> をビルドすることを指示します。
-@z
-
-@x
-      <option>--disable-geolocation</option>: Use this option if you did not
-      install <xref linkend="geoclue"/> or <command>configure</command> will
-      fail.
-@y
-      <option>--disable-geolocation</option>:
-      <xref linkend="geoclue"/> をインストールしていない場合にはこのオプションを指定します。
-      こうしておかないと <command>configure</command> の実行が失敗します。
-@z
 
 @x
     <title>Contents</title>
@@ -256,25 +253,29 @@
 
 @x
         <seg>
-          jsc-1
+          jsc and MiniBrowser
         </seg>
         <seg>
-          libjavascriptcoregtk-1.0.so and libwebkit-1.0.so
+          libjavascriptcoregtk-4.0.so and
+          libwebkit2gtk-4.0.so
         </seg>
         <seg>
-          /usr/include/webkit-1.0, /usr/share/webkit-1.0 and
-          /usr/lib/webkitgtk2
+          /usr/include/webkitgtk-4.0,
+          /usr/lib{,exec}/webkit2gtk-4.0 and
+          /usr/share/gtk-doc/html/webkit{2,dom}gtk-4.0
         </seg>
 @y
         <seg>
-          jsc-1
+          jsc, MiniBrowser
         </seg>
         <seg>
-          libjavascriptcoregtk-1.0.so, libwebkit-1.0.so
+          libjavascriptcoregtk-4.0.so,
+          libwebkit2gtk-4.0.so
         </seg>
         <seg>
-          /usr/include/webkit-1.0, /usr/share/webkit-1.0,
-          /usr/lib/webkitgtk2
+          /usr/include/webkitgtk-4.0,
+          /usr/lib{,exec}/webkit2gtk-4.0,
+          /usr/share/gtk-doc/html/webkit{2,dom}gtk-4.0
         </seg>
 @z
 
@@ -284,7 +285,7 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x jsc-1
+@x jsc
             is a command-line utility that allows you to run JavaScript programs
             outside of the context of a web browser.
 @y
@@ -292,17 +293,23 @@
             ウェブブラウザーのコンテキスト外にて JavaScript を実行します。
 @z
 
-@x libjavascriptcoregtk-1.0.so
-            contains core JavaScript API functions used by <command>jsc-1</command>
-            and <filename class="libraryfile">libwebkitgtk-1.0.so</filename>.
+@x MiniBrowser
+            is a very simple graphical browser.
 @y
-            <command>jsc-1</command> と <filename
-            class="libraryfile">libwebkitgtk-1.0.so</filename> により利用されるコアな JavaScript API 関数を提供します。
+            is a very simple graphical browser.
 @z
 
-@x libwebkit-1.0.so
-            contains the <application>WebKitGTK+</application> API functions for
-            <application>GTK+ 2</application>.
+@x libjavascriptcoregtk-4.0.so
+            contains core JavaScript API functions used by
+            <command>jsc</command> and <filename
+            class="libraryfile">libwebkit2gtk-4.0</filename>.
 @y
-            <application>GTK+ 2</application> に対応する <application>WebKitGTK+</application> API 関数を提供します。
+            <command>jsc</command> と <filename
+            class="libraryfile">libwebkit2gtk-4.0.so</filename> により利用されるコアな JavaScript API 関数を提供します。
+@z
+
+@x libwebkit2gtk-4.0.so
+            contains the <application>WebKit2</application> API functions.
+@y
+            <application>WebKit2</application> API 関数を提供します。
 @z

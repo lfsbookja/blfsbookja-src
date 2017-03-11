@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glibmm-buildsize     "126 MB (additional 25 MB to run the test suite)">
-  <!ENTITY glibmm-time          "1.1 SBU (additional 0.3 SBU to run the test suite)">
+  <!ENTITY glibmm-buildsize     "228 MB (with tests)">
+  <!ENTITY glibmm-time          "2.4 SBU (with tests)">
 @y
-  <!ENTITY glibmm-buildsize     "126 MB (テストスイート実行時はさらに 25 MB)">
-  <!ENTITY glibmm-time          "1.1 SBU (テストスイート実行時はさらに 0.3 SBU)">
+  <!ENTITY glibmm-buildsize     "228 MB (テストスイート込み)">
+  <!ENTITY glibmm-time          "2.4 SBU (テストスイート込み)">
 @z
 
 @x
@@ -85,15 +85,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="gnutls"/> (for the tests), and
+      <xref linkend="glib2"/> and
       <xref linkend="libsigc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="gnutls"/> (テストに必要),
       <xref linkend="libsigc"/>
     </para>
 @z
@@ -154,12 +152,8 @@
           libglibmm_generate_extra_defs-2.4.so
         </seg>
         <seg>
-          /usr/include/giomm-2.4,
-          /usr/include/glibmm-2.4,
-          /usr/lib/giomm-2.4,
-          /usr/lib/glibmm-2.4,
-          /usr/share/devhelp/books/glibmm-2.4 and
-          /usr/share/doc/glibmm-2.4
+          /usr/{include,lib}/g{io,lib}mm-2.4 and
+          /usr/share/{devhelp/books/glibmm-2.4,doc/glibmm-&glibmm-version;}
         </seg>
 @y
         <seg>
@@ -170,12 +164,8 @@
           libglibmm_generate_extra_defs-2.4.so
         </seg>
         <seg>
-          /usr/include/giomm-2.4,
-          /usr/include/glibmm-2.4,
-          /usr/lib/giomm-2.4,
-          /usr/lib/glibmm-2.4,
-          /usr/share/devhelp/books/glibmm-2.4,
-          /usr/share/doc/glibmm-2.4
+          /usr/{include,lib}/g{io,lib}mm-2.4,
+          /usr/share/{devhelp/books/glibmm-2.4,doc/glibmm-&glibmm-version;}
         </seg>
 @z
 

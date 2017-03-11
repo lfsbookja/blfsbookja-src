@@ -182,17 +182,35 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
-      <para>Install the <filename>/etc/init.d/atd</filename> init script from
-      the <xref linkend="bootscripts"/> package.</para>
+      <para revision="sysv">Install the <filename>/etc/init.d/atd</filename>
+      init script from the <xref linkend="bootscripts"/> package.</para>
 @y
-      <para>
+      <para revision="sysv">
       <xref linkend="bootscripts"/> パッケージにある初期化スクリプト <filename>/etc/init.d/atd</filename> をインストールします。
+      </para>
+@z
+
+@x
+      <para revision="systemd">
+        To start the <command>atd</command> daemon at boot,
+        enable the previously installed systemd unit by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
+      </para>
+@y
+      <para revision="systemd">
+        To start the <command>atd</command> daemon at boot,
+        enable the previously installed systemd unit by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
       </para>
 @z
 
@@ -213,17 +231,25 @@
 @z
 
 @x
-        <seg>at, atd, atq (symlink), atrm (symlink), atrun, and batch</seg>
-        <seg>None</seg>
         <seg>
-          /var/spool/{atjobs,atspool} and
+          at, atd, atq (symlink), atrm (symlink), atrun, and batch
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          /var/spool/cron/at{jobs,spool} and
           /usr/share/doc/at-&at-version;
         </seg>
 @y
-        <seg>at, atd, atq (シンボリックリンク), atrm (シンボリックリンク), atrun, batch</seg>
-        <seg>&None;</seg>
         <seg>
-          /var/spool/{atjobs,atspool},
+          at, atd, atq (シンボリックリンク), atrm (シンボリックリンク), atrun, batch
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          /var/spool/cron/at{jobs,spool},
           /usr/share/doc/at-&at-version;
         </seg>
 @z

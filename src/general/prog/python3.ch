@@ -172,12 +172,10 @@
 
 @x
       In order for <command>python3</command> to find the installed
-      documentation, you must add the following environment variable to
-      individual user's or the system's profile:
+      documentation, create the following version independent symlink:
 @y
       In order for <command>python3</command> to find the installed
-      documentation, you must add the following environment variable to
-      individual user's or the system's profile:
+      documentation, create the following version independent symlink:
 @z
 
 @x
@@ -212,7 +210,7 @@
           python&python3-majorver;m-config,
 
           pyvenv (symlink),
-          pyvenv&python3-majorver;,
+          pyvenv-&python3-majorver;,
 
           idle3 (symlink), and
           idle&python3-majorver;
@@ -227,31 +225,31 @@
         </seg>
 @y
         <seg>
-          2to3 (シンボリックリンク),
+          2to3 (symlink),
           2to3-&python3-majorver;,
 
-          pydoc3 (シンボリックリンク),
+          pydoc3 (symlink),
           pydoc&python3-majorver;,
 
-          python3 (シンボリックリンク);
-          python&python3-majorver; and python&python3-majorver;m (ハードリンク);
+          python3 (symlink);
+          python&python3-majorver; and python&python3-majorver;m (hardlinked);
 
-          python3-config (シンボリックリンク),
-          python&python3-majorver;-config (シンボリックリンク),
+          python3-config (symlink),
+          python&python3-majorver;-config (symlink),
           python&python3-majorver;m-config,
 
-          pyvenv (シンボリックリンク),
-          pyvenv&python3-majorver;,
+          pyvenv (symlink),
+          pyvenv-&python3-majorver;,
 
-          idle3 (シンボリックリンク),
+          idle3 (symlink), and
           idle&python3-majorver;
         </seg>
         <seg>
-          libpython&python3-majorver;m.so, libpython3.so
+          libpython&python3-majorver;m.so and libpython3.so
         </seg>
         <seg>
           /usr/include/python&python3-majorver;m,
-          /usr/lib/python&python3-majorver;,
+          /usr/lib/python&python3-majorver;, and
           /usr/share/doc/python-&python3-version;
         </seg>
 @z

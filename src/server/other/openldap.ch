@@ -78,33 +78,11 @@
 @y
           必須のパッチ:
 @z
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-@x
-          Optional patch:
-@y
-          任意のパッチ:
-@z
 
 @x
     <bridgehead renderas="sect3">OpenLDAP Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;OpenLDAP&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="db"/> (only if building server)
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="db"/> (サーバー構築時のみ)
-    </para>
 @z
 
 @x
@@ -125,21 +103,25 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
-      <xref linkend="mariadb"/> or <xref linkend="mysql"/> or
-      <xref linkend="postgresql"/>,
-      <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-      <xref linkend="pth"/> and
-      <xref linkend="unixodbc"/>
+      <xref linkend="pth"/>,
+      <xref linkend="unixodbc"/>,
+        <xref linkend="mariadb"/> or
+        <xref linkend="postgresql"/> or
+        <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <ulink url="http://www.openslp.org/">OpenSLP</ulink>, and
+      <xref linkend="db"/> (not recommended by the developers)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
-      <xref linkend="mariadb"/> または <xref linkend="mysql"/> または
-      <xref linkend="postgresql"/>,
-      <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
       <xref linkend="pth"/>,
-      <xref linkend="unixodbc"/>
+      <xref linkend="unixodbc"/>,
+        <xref linkend="mariadb"/> または
+        <xref linkend="postgresql"/> または
+        <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+      <xref linkend="db"/> (not recommended by the developers)
     </para>
 @z
 
@@ -163,11 +145,15 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>. Tests may fail
-      after a long time (~ 5 SBU).
+      The tests appear to be fragile.  Errors may cause the tests to abort
+      prior to finishing, apparently due to timing issues.  The tests
+      take about 65 minutes and are processor independent.
+      To test the results, issue: <command>make test</command>.
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
-      このテストは相当時間 (5SBU 以内) の後に失敗することがあります。
+      The tests appear to be fragile.  Errors may cause the tests to abort
+      prior to finishing, apparently due to timing issues.  The tests
+      take about 65 minutes and are processor independent.
+      To test the results, issue: <command>make test</command>.
 @z
 
 @x
@@ -349,14 +335,14 @@
 @z
 
 @x
-            The <ulink url="http://www.openldap.org/doc/admin24/">
-            OpenLDAP 2.4 Administrator's Guide</ulink> 
-            (also installed locally in <filename class='directory'>
+            The <ulink url="http://www.openldap.org/doc/admin24/"> OpenLDAP 2.4
+            Administrator's Guide</ulink> (also installed locally in
+            <filename class='directory'>
             /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).
 @y
-            The <ulink url="http://www.openldap.org/doc/admin24/">
-            OpenLDAP 2.4 Administrator's Guide</ulink> 
-            (also installed locally in <filename class='directory'>
+            The <ulink url="http://www.openldap.org/doc/admin24/"> OpenLDAP 2.4
+            Administrator's Guide</ulink> (also installed locally in
+            <filename class='directory'>
             /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).
 @z
 
@@ -389,34 +375,44 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
         To automate the startup of the LDAP server at system bootup,
-        install the <filename>/etc/rc.d/init.d/slapd</filename> init script
-        included in the <xref linkend="bootscripts"/> package
-        using the following command:
+        install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/slapd</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>slapd.service</filename>
+        unit</phrase> included in the
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/>
+        package using the following command:
 @y
-        LDAP サーバーをシステムブート時に自動起動するには <xref
-        linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/slapd</filename> を用います。
-        これは以下のコマンドによりインストールします。
+        LDAP サーバーをシステムブート時に自動起動するには <xref linkend="bootscripts"
+        revision="sysv"/><xref linkend="systemd-units"
+        revision="systemd"/> パッケージに含まれる<phrase
+        revision="sysv">初期起動スクリプト <filename>/etc/rc.d/init.d/slapd</filename> </phrase><phrase
+        revision="systemd"><filename>slapd.service</filename> ユニット</phrase>を用います。
+        これを以下のコマンドによりインストールします。
 @z
 
 @x
-          The init script starts the daemon without any parameters.
-          You'll need to modify the 
-          <filename>/etc/sysconfig/slapd</filename> to include the 
-          parameters needed for your specific configuration. See the 
-          <command>slapd</command> man page for parameter information.
+          You'll need to modify the
+          <phrase revision="sysv"><filename>/etc/sysconfig/slapd</filename></phrase>
+          <phrase revision="systemd"><filename>/etc/default/slapd</filename></phrase>
+          to include the parameters needed for your specific configuration. See
+          the <command>slapd</command> man page for parameter information.
 @y
-          The init script starts the daemon without any parameters.
-          You'll need to modify the 
-          <filename>/etc/sysconfig/slapd</filename> to include the 
-          parameters needed for your specific configuration. See the 
-          <command>slapd</command> man page for parameter information.
+          You'll need to modify the
+          <phrase revision="sysv"><filename>/etc/sysconfig/slapd</filename></phrase>
+          <phrase revision="systemd"><filename>/etc/default/slapd</filename></phrase>
+          to include the parameters needed for your specific configuration. See
+          the <command>slapd</command> man page for parameter information.
 @z
 
 @x
@@ -426,9 +422,12 @@
 @z
 
 @x
-        Start the LDAP server using the init script:
+        Start the LDAP server using
+        <phrase revision="sysv">the init script:</phrase>
+        <phrase revision="systemd">systemctl:</phrase>
 @y
-        初期化スクリプトを使って LDAP サーバーを起動します。
+        <phrase revision="sysv">初期化スクリプト</phrase><phrase
+        revision="systemd">systemctl </phrase>を使って LDAP サーバーを起動します。
 @z
 
 @x
@@ -472,9 +471,8 @@
         </seg>
         <seg>
           /etc/openldap,
-          /usr/lib/openldap,
-          /usr/share/doc/openldap-&openldap-version;, and
-          /var/lib/openldap
+          /{usr,var}/lib/openldap, and
+          /usr/share/doc/openldap-&openldap-version;
         </seg>
 @y
         <seg>
@@ -489,9 +487,8 @@
         </seg>
         <seg>
           /etc/openldap,
-          /usr/lib/openldap,
-          /usr/share/doc/openldap-&openldap-version;,
-          /var/lib/openldap
+          /{usr,var}/lib/openldap,
+          /usr/share/doc/openldap-&openldap-version;
         </seg>
 @z
 

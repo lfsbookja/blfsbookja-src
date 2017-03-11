@@ -92,27 +92,47 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
+    <para role="recommended" revision="sysv">
+      <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>, and
       <xref linkend="udisks2"/>
     </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
+    <para role="recommended" revision="systemd">
+      <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="systemd"/>, and
+      <xref linkend="udisks2"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended" revision="sysv">
+      <xref linkend="gcr"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libgudev"/>,
+      <xref linkend="libsecret"/>,
+      <xref linkend="libsoup"/>, and
+      <xref linkend="udisks2"/>
+    </para>
+    <para role="recommended" revision="systemd">
+      <xref linkend="gcr"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libgudev"/>,
+      <xref linkend="libsecret"/>,
+      <xref linkend="libsoup"/>,
+      <xref linkend="systemd"/>, and
       <xref linkend="udisks2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
+    <para role="optional" revision="sysv">
       <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
@@ -133,9 +153,30 @@
       <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, and
       <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>,
     </para>
+    <para role="optional" revision="systemd">
+      <xref linkend="apache"/>,
+      <xref linkend="avahi"/>,
+      <xref linkend="bluez"/>,
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="fuse"/>,
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libarchive"/>,
+      <xref linkend="libcdio"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="openssh"/>,
+      <xref linkend="samba"/>,
+      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
+      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
+      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
+      <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>, and
+      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
+    <para role="optional" revision="sysv">
       <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
@@ -155,6 +196,27 @@
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
       <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, and
       <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>,
+    </para>
+    <para role="optional" revision="systemd">
+      <xref linkend="apache"/>,
+      <xref linkend="avahi"/>,
+      <xref linkend="bluez"/>,
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="fuse"/>,
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libarchive"/>,
+      <xref linkend="libcdio"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="openssh"/>,
+      <xref linkend="samba"/>,
+      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
+      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
+      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
+      <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>, and
+      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
     </para>
 @z
 
@@ -190,12 +252,13 @@
 @z
 
 @x
-      <!--To test the results, issue: <command>make -k check</command>.
+      To test the results, issue: <command>make -k check</command>.
       Some tests (potentially half) may fail, normally due to a missing
-      optional dependency.-->This package does not come with a working
-      test suite.
+      optional dependency (Twisted).
 @y
-      &notTestSuite;
+      To test the results, issue: <command>make -k check</command>.
+      Some tests (potentially half) may fail, normally due to a missing
+      optional dependency (Twisted).
 @z
 
 @x
@@ -250,9 +313,8 @@
           some under /usr/lib/gio/modules/
         </seg>
         <seg>
-          /usr/include/gvfs-client,
-          /usr/lib/gvfs, and
-          /usr/share/gvfs
+          /usr/include/gvfs-client and
+          /usr/{lib,share}/gvfs
         </seg>
 @y
         <seg>
@@ -268,8 +330,7 @@
         </seg>
         <seg>
           /usr/include/gvfs-client,
-          /usr/lib/gvfs,
-          /usr/share/gvfs
+          /usr/{lib,share}/gvfs
         </seg>
 @z
 
@@ -299,12 +360,12 @@
 @z
 
 @x gvfs-less
-            executes <command>less</command> using the VFS as 
-            input preprocesor, so less can access any resource accessible 
+            executes <command>less</command> using the VFS as the
+            input preprocesor, so less can access any resource accessible
             by any of the <application>Gvfs</application> backends.
 @y
-            executes <command>less</command> using the VFS as 
-            input preprocesor, so less can access any resource accessible 
+            executes <command>less</command> using the VFS as the
+            input preprocesor, so less can access any resource accessible
             by any of the <application>Gvfs</application> backends.
 @z
 

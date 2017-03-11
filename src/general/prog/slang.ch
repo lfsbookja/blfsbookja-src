@@ -14,19 +14,19 @@
 @z
 
 @x
-    <title>Introduction to S-Lang</title>
+    <title>Introduction to slang</title>
 @y
-    <title>&IntroductionTo1;S-Lang&IntroductionTo2;</title>
+    <title>&IntroductionTo1;slang&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>S-Lang</application> is an interpreted language that
-    may be embedded into an application to make the application extensible.
-    It provides facilities required by interactive applications such as
-    display/screen management, keyboard input and keymaps.</para>
+    <para><application>S-Lang</application> (slang) is an interpreted language
+    that may be embedded into an application to make the application
+    extensible.  It provides facilities required by interactive applications
+    such as display/screen management, keyboard input and keymaps.</para>
 @y
     <para>
-    <application>S-Lang</application> はインタープリター言語であり、アプリケーション内に埋め込んで、そのアプリケーションを拡張することが可能です。
+    <application>S-Lang</application> (slang) はインタープリター言語であり、アプリケーション内に埋め込んで、そのアプリケーションを拡張することが可能です。
     これは、ディスプレイ画面、キーボード入力、キーマップなどのように、対話的インターフェースにおいて必要となる機能を提供します。
     </para>
 @z
@@ -74,9 +74,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">S-Lang Dependencies</bridgehead>
+    <bridgehead renderas="sect3">Slang Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;S-Lang&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Slang&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -84,14 +84,14 @@
     <para role="optional">
       <xref linkend="libpng"/>,
       <xref linkend="pcre"/>, and
-      <ulink url="http://www.geocities.jp/kosako3/oniguruma/">Oniguruma</ulink>
+      <ulink url="https://github.com/kkos/oniguruma">Oniguruma</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libpng"/>,
       <xref linkend="pcre"/>,
-      <ulink url="http://www.geocities.jp/kosako3/oniguruma/">Oniguruma</ulink>
+      <ulink url="https://github.com/kkos/oniguruma">Oniguruma</ulink>
     </para>
 @z
 
@@ -104,9 +104,9 @@
 @z
 
 @x
-    <title>Installation of S-Lang</title>
+    <title>Installation of Slang</title>
 @y
-    <title>&InstallationOf1;S-Lang&InstallationOf2;</title>
+    <title>&InstallationOf1;Slang&InstallationOf2;</title>
 @z
 
 @x
@@ -116,11 +116,11 @@
 @z
 
 @x
-    <para>Install <application>S-Lang</application> by running the following
+    <para>Install <application>slang</application> by running the following
     commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>S-Lang</application> をビルドします。
+    以下のコマンドを実行して <application>slang</application> をビルドします。
     </para>
 @z
 
@@ -152,10 +152,10 @@
 @x
       <parameter>--with-readline=gnu</parameter>: This parameter sets GNU
       <application>Readline</application> to be used by the parser interface
-      instead of the <application>S-Lang</application> internal version.
+      instead of the <application>slang</application> internal version.
 @y
       <parameter>--with-readline=gnu</parameter>:
-      このパラメーターは <application>S-Lang</application> が内部に持っている <application>Readline</application> モジュールではなく Gnu <application>Readline</application> モジュールを利用することを指示します。
+      このパラメーターは <application>slang</application> が内部に持っている <application>Readline</application> モジュールではなく Gnu <application>Readline</application> モジュールを利用することを指示します。
 @z
 
 @x
@@ -174,9 +174,9 @@
 @z
 
 @x
-    <title>Configuring S-Lang</title>
+    <title>Configuring slang</title>
 @y
-    <title>S-Lang の設定</title>
+    <title>slang の設定</title>
 @z
 
 @x
@@ -225,13 +225,13 @@
 
 @x slsh
           <para>is a simple program for interpreting
-          <application>S-Lang</application> scripts. It supports dynamic loading
-          of <application>S-Lang</application> modules and includes a
+          <application>slang</application> scripts. It supports dynamic loading
+          of <application>slang</application> modules and includes a
           <application>Readline</application> interface for interactive
           use.</para>
 @y
           <para>
           <application>S-Lang</application> スクリプトを解釈する単純なプログラムです。
-          これは <application>S-Lang</application> モジュールの動的ローディングをサポートし、対話的な操作時には <application>Readline</application> インターフェースも提供します。
+          これは <application>slang</application> モジュールの動的ローディングをサポートし、対話的な操作時には <application>Readline</application> インターフェースも提供します。
           </para>
 @z

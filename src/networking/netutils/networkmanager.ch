@@ -21,16 +21,18 @@
 
 @x
       <application>NetworkManager</application> is a set of co-operative
-      tools that make networking simple and straightforward. Whether WiFi, wired,
-      3G, or Bluetooth, NetworkManager allows you to quickly move from one network
-      to another: Once a network has been configured and joined once, it can be
-      detected and re-joined automatically the next time it's available.
+      tools that make networking simple and straightforward. Whether WiFi,
+      wired, 3G, or Bluetooth, NetworkManager allows you to quickly move from
+      one network to another: Once a network has been configured and joined
+      once, it can be detected and re-joined automatically the next time it's
+      available.
 @y
       <application>NetworkManager</application> is a set of co-operative
-      tools that make networking simple and straightforward. Whether WiFi, wired,
-      3G, or Bluetooth, NetworkManager allows you to quickly move from one network
-      to another: Once a network has been configured and joined once, it can be
-      detected and re-joined automatically the next time it's available.
+      tools that make networking simple and straightforward. Whether WiFi,
+      wired, 3G, or Bluetooth, NetworkManager allows you to quickly move from
+      one network to another: Once a network has been configured and joined
+      once, it can be detected and re-joined automatically the next time it's
+      available.
 @z
 
 @x
@@ -85,65 +87,85 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="intltool"/>,
-      <xref linkend="libnl"/>,
-      <xref linkend="nss"/>, and
-      <xref linkend="udev-extras"/> (for GUdev)
+      <xref linkend="libgudev"/>,
+      <xref linkend="libndp"/>,
+      <xref linkend="libnl"/>, and
+      <xref linkend="nss"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="intltool"/>,
+      <xref linkend="libgudev"/>,
+      <xref linkend="libndp"/>,
       <xref linkend="libnl"/>,
-      <xref linkend="nss"/>,
-      <xref linkend="udev-extras"/> (GUdev 用)
+      <xref linkend="nss"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="consolekit"/>,
+      <phrase revision="sysv"><xref linkend="consolekit"/>,</phrase>
       <xref linkend="dhcpcd"/> or
       <xref linkend="dhcp"/> (client only),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="newt"/> (for <command>nmtui</command>),
       <xref linkend="polkit"/>,
-      <xref linkend="upower"/>, and
-      <xref linkend="vala"/>
+      <xref linkend="pygobject3"/>,
+      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
+      <xref linkend="upower"/>,
+      <xref linkend="vala"/>, and
+      <xref linkend="wpa_supplicant"/> (built with D-Bus support),
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="consolekit"/>,
-      <xref linkend="dhcpcd"/> または
+      <phrase revision="sysv"><xref linkend="consolekit"/>,</phrase>
+      <xref linkend="dhcpcd"/> or
       <xref linkend="dhcp"/> (クライアントのみ),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="newt"/> (for <command>nmtui</command>),
       <xref linkend="polkit"/>,
+      <xref linkend="pygobject3"/>,
+      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
       <xref linkend="upower"/>,
-      <xref linkend="vala"/>
+      <xref linkend="vala"/>, and
+      <xref linkend="wpa_supplicant"/> (built with D-Bus support),
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="bluez"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://www.freedesktop.org/software/ModemManager/">
-      ModemManager</ulink> and
-      <xref linkend="wpa_supplicant"/> (built with D-Bus support)
+      <xref linkend="qt5"/> (for examples),
+      <xref linkend="ModemManager"/>,
+      <xref linkend="valgrind"/>,
+      <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
+      <ulink url="http://www.digip.org/jansson/">Jansson</ulink>,
+      <ulink url="http://libteam.org/">libteam</ulink>,
+      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
+      <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="bluez"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://www.freedesktop.org/software/ModemManager/">
-      ModemManager</ulink>,
-      <xref linkend="wpa_supplicant"/> (D-Bus サポートがビルドされたもの)
+      <xref linkend="qt5"/> (for examples),
+      <xref linkend="ModemManager"/>,
+      <xref linkend="valgrind"/>,
+      <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
+      <ulink url="http://www.digip.org/jansson/">Jansson</ulink>,
+      <ulink url="http://libteam.org/">libteam</ulink>,
+      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
+      <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
     </para>
 @z
 
@@ -160,16 +182,26 @@
 @z
 
 @x
-      Install <application>NetworkManager</application> by running the following
-      commands:
+    <para>If <xref linkend="qt5"/> is installed and the Qt based 
+    examples are desired, fix the configure script:</para>
+@y
+    <para>If <xref linkend="qt5"/> is installed and the Qt based 
+    examples are desired, fix the configure script:</para>
+@z
+
+@x
+      Install <application>NetworkManager</application> by running the
+      following commands:
 @y
       以下のコマンドを実行して <application>NetworkManager</application> をビルドします。
 @z
 
 @x
-      This package does not come with a testsuite.
+      An already active graphical session with bus address is necessary to run
+      the tests. To test the results, issue: <command>make check</command>.
 @y
-      &notTestSuite;
+      An already active graphical session with bus address is necessary to run
+      the tests. To test the results, issue: <command>make check</command>.
 @z
 
 @x
@@ -185,13 +217,85 @@
 @z
 
 @x
-      <option>--disable-ppp</option>: This parameter disables optional
+      <envar>CXXFLAGS="-O2 -fPIC"</envar>: These compiler options are 
+      necessary to build the Qt5 based examples.
+@y
+      <envar>CXXFLAGS="-O2 -fPIC"</envar>: These compiler options are 
+      necessary to build the Qt5 based examples.
+@z
+
+@x
+      <parameter>--with-nmtui</parameter>: This parameter enables build of
+      <command>nmtui</command>.
+@y
+      <parameter>--with-nmtui</parameter>: This parameter enables build of
+      <command>nmtui</command>.
+@z
+
+@x revision="systemd"
+      <parameter>--with-session-tracking=systemd</parameter>: This switch
+      is used to set <command>systemd-logind</command> as the default
+      program for session tracking.
+@y
+      <parameter>--with-session-tracking=systemd</parameter>: This switch
+      is used to set <command>systemd-logind</command> as the default
+      program for session tracking.
+@z
+
+@x revision="sysv"
+      <parameter>--with-systemdsystemunitdir=no</parameter>: systemd is not
+      used for sysv init systems.
+@y
+      <parameter>--with-systemdsystemunitdir=no</parameter>: systemd is not
+      used for sysv init systems.
+@z
+
+@x revision="systemd"
+      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
+      This switch is used to set the correct installation directory for
+      systemd units.
+@y
+      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
+      This switch is used to set the correct installation directory for
+      systemd units.
+@z
+
+@x
+      <parameter>--disable-ppp</parameter>: This parameter disables
       <application>PPP</application> support in
       <application>NetworkManager</application>.
 @y
-      <option>--disable-ppp</option>: This parameter disables optional
+      <parameter>--disable-ppp</parameter>: This parameter disables
       <application>PPP</application> support in
       <application>NetworkManager</application>.
+@z
+
+@x
+      <parameter>--disable-json-validation</parameter>: This parameter allows
+      building without <application>Jansson</application>, which is needed
+      for <quote>team</quote> configuration validation (team is one way
+      of bonding network interfaces for increased throughput).
+@y
+      <parameter>--disable-json-validation</parameter>: This parameter allows
+      building without <application>Jansson</application>, which is needed
+      for <quote>team</quote> configuration validation (team is one way
+      of bonding network interfaces for increased throughput).
+@z
+
+@x
+      <option>--enable-gtk-doc</option>: Use this switch if you have installed
+      <xref linkend="gtk-doc"/> and wish to build the API manuals.
+@y
+      <option>--enable-gtk-doc</option>: Use this switch if you have installed
+      <xref linkend="gtk-doc"/> and wish to build the API manuals.
+@z
+
+@x
+      <option>--without-iptables</option>: Use this switch if you don't have
+      <application>Iptables</application> installed.
+@y
+      <option>--without-iptables</option>: Use this switch if you don't have
+      <application>Iptables</application> installed.
 @z
 
 @x
@@ -214,42 +318,74 @@
 
 @x
         For <application>NetworkManager</application> to work, at least
-        minimal configuration file must be present. Such file is not
-        installed with <command>make install</command>. Issue following
-        command as the
-        <systemitem class="username">root</systemitem> user to create
-        minimal <filename>NetworkManager.conf</filename> file:
+        a minimal configuration file must be present. Such file is not
+        installed with <command>make install</command>. Issue the following
+        command as the <systemitem class="username">root</systemitem> user to
+        create minimal <filename>NetworkManager.conf</filename> file:
 @y
         For <application>NetworkManager</application> to work, at least
-        minimal configuration file must be present. Such file is not
-        installed with <command>make install</command>. Issue following
-        command as the
-        <systemitem class="username">root</systemitem> user to create
-        minimal <filename>NetworkManager.conf</filename> file:
+        a minimal configuration file must be present. Such file is not
+        installed with <command>make install</command>. Issue the following
+        command as the <systemitem class="username">root</systemitem> user to
+        create minimal <filename>NetworkManager.conf</filename> file:
 @z
 
 @x
-        See <command>man 5 NetworkManager.conf</command> for any additional options.
+        You can add <option>dns=none</option> to suppress changes to
+         <filename>/etc/resolv.conf</filename>. See
+         <command>man 5 NetworkManager.conf</command>
+         for any additional options.
 @y
-        See <command>man 5 NetworkManager.conf</command> for any additional options.
+        You can add <option>dns=none</option> to suppress changes to
+         <filename>/etc/resolv.conf</filename>. See
+         <command>man 5 NetworkManager.conf</command>
+         for any additional options.
 @z
 
 @x
-      <title>Boot Script</title>
+        To allow regular users permission to configure network connections,
+        you should add them to the
+        <systemitem class="groupname">netdev</systemitem>
+        group, and create a <application>polkit</application> rule that grants
+        access. Run the following commands as the
+        <systemitem class="username">root</systemitem> user:
 @y
-      <title>&BootScript;</title>
+        To allow regular users permission to configure network connections,
+        you should add them to the
+        <systemitem class="groupname">netdev</systemitem>
+        group, and create a <application>polkit</application> rule that grants
+        access. Run the following commands as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-        To automatically start the <command>NetworkManager</command> daemon when the
-        system is rebooted, install the
-        <filename>/etc/rc.d/init.d/networkmanager</filename> bootscript from the
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
+@y
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
+@z
+
+@x revision="sysv"
+        To automatically start the <command>NetworkManager</command> daemon
+        when the system is rebooted, install the
+        <filename>/etc/rc.d/init.d/networkmanager</filename>bootscript from the 
         <xref linkend="bootscripts"/> package.
 @y
-        To automatically start the <command>NetworkManager</command> daemon when the
-        system is rebooted, install the
-        <filename>/etc/rc.d/init.d/networkmanager</filename> bootscript from the
+        To automatically start the <command>NetworkManager</command> daemon
+        when the system is rebooted, install the
+        <filename>/etc/rc.d/init.d/networkmanager</filename>bootscript from the 
         <xref linkend="bootscripts"/> package.
+@z
+
+@x revision="systemd"
+        To start the <command>NetworkManager</command> daemon at boot, enable
+        the previously installed systemd unit by running the following command
+        as the <systemitem class="username">root</systemitem> user:
+@y
+        To start the <command>NetworkManager</command> daemon at boot, enable
+        the previously installed systemd unit by running the following command
+        as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -270,39 +406,41 @@
 
 @x
         <seg>
-          nmcli, nm-online, nm-tool, and NetworkManager
+          NetworkManager, nmcli, nm-online, nmtui, and, symlinked to nmtui:
+          nmtui-connect, nmtui-edit, and nmtui-hostname
         </seg>
         <seg>
-          libnm-glib.so, libnm-glib-vpn.so, and libnm-util.so
+          libnm-glib.so, libnm-glib-vpn.so, libnm.so, libnm-util.so, and
+          modules under /usr/lib/NetworkManager
         </seg>
         <seg>
           /etc/NetworkManager,
-          /usr/include/libnm-glib,
-          /usr/include/NetworkManager,
+          /usr/include/{libnm,libnm-glib,NetworkManager},
           /usr/lib/NetworkManager,
-          /usr/share/gtk-doc/html/libnm-glib,
-          /usr/share/gtk-doc/html/libnm-util,
-          /usr/share/gtk-doc/html/NetworkManager,
-          /var/lib/NetworkManager, and
-          /var/run/NetworkManager
+          /usr/share/doc/NetworkManager-&NetworkManager-version;,
+	  /usr/share/gtk-doc/html/{libnm,libnm-glib,libnm-util,NetworkManager}
+	  (if the documentation is built),
+          and
+          /var/{lib,run}/NetworkManager
         </seg>
 @y
         <seg>
-          nmcli, nm-online, nm-tool, NetworkManager
+          NetworkManager, nmcli, nm-online, nmtui, and, symlinked to nmtui:
+          nmtui-connect, nmtui-edit, and nmtui-hostname
         </seg>
         <seg>
-          libnm-glib.so, libnm-glib-vpn.so, libnm-util.so
+          libnm-glib.so, libnm-glib-vpn.so, libnm.so, libnm-util.so, and
+          modules under /usr/lib/NetworkManager
         </seg>
         <seg>
           /etc/NetworkManager,
-          /usr/include/libnm-glib,
-          /usr/include/NetworkManager,
+          /usr/include/{libnm,libnm-glib,NetworkManager},
           /usr/lib/NetworkManager,
-          /usr/share/gtk-doc/html/libnm-glib,
-          /usr/share/gtk-doc/html/libnm-util,
-          /usr/share/gtk-doc/html/NetworkManager,
-          /var/lib/NetworkManager,
-          /var/run/NetworkManager
+          /usr/share/doc/NetworkManager-&NetworkManager-version;,
+	  /usr/share/gtk-doc/html/{libnm,libnm-glib,libnm-util,NetworkManager}
+	  (if the documentation is built),
+          and
+          /var/{lib,run}/NetworkManager
         </seg>
 @z
 
@@ -326,16 +464,6 @@
             is a utility to find out whether you are online.
 @y
             is a utility to find out whether you are online.
-@z
-
-@x nm-tool
-            is used to provide information about
-            <application>NetworkManager</application>, 
-            device, and wireless networks.
-@y
-            is used to provide information about
-            <application>NetworkManager</application>, 
-            device, and wireless networks.
 @z
 
 @x NetworkManager

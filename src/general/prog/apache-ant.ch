@@ -177,8 +177,8 @@
 
 @x
     <para><command>cp -v ... lib/optional</command>:
-    This command copies the JUnit and hamcrest jar files into the directory where
-    Apache Ant will look for them.</para>
+    This command copies the JUnit and hamcrest jar files into the directory
+    where Apache Ant will look for them.</para>
 @y
     <para><command>cp -v
     /usr/share/java/junit-&junit-version;.jar ...</command>:

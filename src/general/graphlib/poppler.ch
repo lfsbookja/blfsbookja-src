@@ -135,7 +135,8 @@
     <para role="recommended">
       <xref linkend="cairo"/>,
       <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>, and
+      <xref linkend="libpng"/>,
+      <xref linkend="nss"/>, and
       <xref linkend="openjpeg"/>
     </para>
 @y
@@ -144,6 +145,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
+      <xref linkend="nss"/>,
       <xref linkend="openjpeg"/>
     </para>
 @z
@@ -158,9 +160,7 @@
       <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="openjpeg2"/>
-      (preference is for OpenJPEG1, due to regressions with OpenJPEG2),
-      <xref linkend="qt4"/> (the <filename>libpoppler-qt4.so</filename> library
-      is needed for PDF support in <application>Okular</application>), and
+      (preference is for OpenJPEG1, due to regressions with OpenJPEG2), and
       <xref linkend="qt5"/>
     </para>
 @y
@@ -173,8 +173,7 @@
       <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="openjpeg2"/>
-      (preference is for OpenJPEG1, due to regressions with OpenJPEG2),
-      <xref linkend="qt4"/> (<filename>libpoppler-qt4.so</filename> ライブラリは <application>Okular</application>) の PDF サポートにおいて必要),
+      (preference is for OpenJPEG1, due to regressions with OpenJPEG2), and
       <xref linkend="qt5"/>
     </para>
 @z
@@ -199,9 +198,19 @@
 @z
 
 @x
-      To test the results, issue: <command>LC_ALL=en_US.UTF-8 make check</command>.
+      In order to run the test suite, some testcases are needed and can
+      be obtained only from a git repository. The command to download
+      them is:
+<command>git clone git://git.freedesktop.org/git/poppler/test testfiles</command>.
+      Then issue: <command>LC_ALL=en_US.UTF-8 make check</command>. It seems
+      that only the Qt4/5 libraries are tested.
 @y
-      ビルド結果をテストする場合は <command>LC_ALL=en_US.UTF-8 make check</command> を実行します。
+      In order to run the test suite, some testcases are needed and can
+      be obtained only from a git repository. The command to download
+      them is:
+<command>git clone git://git.freedesktop.org/git/poppler/test testfiles</command>.
+      Then issue: <command>LC_ALL=en_US.UTF-8 make check</command>. It seems
+      that only the Qt4/5 libraries are tested.
 @z
 
 @x
@@ -219,11 +228,9 @@
 
 @x
       If you downloaded the additional encoding data package, install it by
-      issuing the following commands as the
-      <systemitem class="username">root</systemitem> user:
+      issuing the following commands:
 @y
-      追加のエンコーディングデータをダウンロードしている場合は、<systemitem
-      class="username">root</systemitem> となって以下のコマンドを実行してインストールします。
+      追加のエンコーディングデータをダウンロードしている場合は以下のコマンドを実行してインストールします。
 @z
 
 @x
@@ -239,13 +246,69 @@
 @z
 
 @x
-      <option>--enable-xpdf-headers</option>: Install some old
+      <parameter>--enable-build-type=release</parameter>: This switch is used
+      to apply a higher level of compiler optimizations. Other options are:
+      [<option>relwithdebinfo/debug/debugfull/profile</option>]
+@y
+      <parameter>--enable-build-type=release</parameter>: This switch is used
+      to apply a higher level of compiler optimizations. Other options are:
+      [<option>relwithdebinfo/debug/debugfull/profile</option>]
+@z
+
+@x
+      <parameter>--enable-cmyk</parameter>:
+      Include support for CMYK rasterization.
+@y
+      <parameter>--enable-cmyk</parameter>:
+      Include support for CMYK rasterization.
+@z
+
+@x
+      <parameter>--enable-xpdf-headers</parameter>: Install some old
       <application>Xpdf</application> headers required by certain programs (e.g.
       <application>Okular</application>, <application>LibreOffice</application>
       and <application>Inkscape</application>).
 @y
-      <option>--enable-xpdf-headers</option>:
-      <application>Okular</application>, <application>LibreOffice</application>, <application>Inkscape</application> などにおいて必要とされる <application>Xpdf</application> ヘッダーファイルをインストールします。
+      <parameter>--enable-xpdf-headers</parameter>: Install some old
+      <application>Xpdf</application> headers required by certain programs (e.g.
+      <application>Okular</application>, <application>LibreOffice</application>
+      and <application>Inkscape</application>).
+@z
+
+@x
+      <parameter>--with-testdatadir=$PWD/testfiles</parameter>: Tell the test
+      programs where the auxiliary files are located.
+@y
+      <parameter>--with-testdatadir=$PWD/testfiles</parameter>: Tell the test
+      programs where the auxiliary files are located.
+@z
+
+@x
+      <option>--enable-libcurl</option>: Use libcurl for HTTP support.
+@y
+      <option>--enable-libcurl</option>: Use libcurl for HTTP support.
+@z
+
+@x
+      <option>--disable-poppler-qt4</option>: Don't compile poppler Qt4 wrapper.
+@y
+      <option>--disable-poppler-qt4</option>: Don't compile poppler Qt4 wrapper.
+@z
+
+@x
+      <option>--disable-poppler-qt5</option>: Don't compile poppler Qt5 wrapper.
+@y
+      <option>--disable-poppler-qt5</option>: Don't compile poppler Qt5 wrapper.
+@z
+
+@x
+      <command>LC_ALL=en_US.UTF-8 make check</command>: Run the test suite.
+      The environment variable LC_ALL=en_US.UTF-8 is only needed if the
+      default locale does not include UTF-8.
+@y
+      <command>LC_ALL=en_US.UTF-8 make check</command>: Run the test suite.
+      The environment variable LC_ALL=en_US.UTF-8 is only needed if the
+      default locale does not include UTF-8.
 @z
 
 @x
@@ -266,34 +329,34 @@
 
 @x
         <seg>
-          pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate,
+          pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdfsig,
           pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
           pdfunite, and poppler-glib-demo
         </seg>
         <seg>
-          libpoppler.so, libpoppler-cpp.so,
-          libpoppler-glib.so,
-          libpoppler-qt4.so, and
+          libpoppler.so,
+          libpoppler-cpp.so,
+          libpoppler-glib.so, and
           libpoppler-qt5.so
         </seg>
         <seg>
-          /usr/{include,share/{gtk-doc/html,}}/poppler and
+          /usr/{include,share,share/gtk-doc/html}/poppler and
           /usr/share/doc/poppler-&poppler-version;
         </seg>
 @y
         <seg>
-          pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate,
+          pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdfsig,
           pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
           pdfunite, poppler-glib-demo
         </seg>
         <seg>
-          libpoppler.so, libpoppler-cpp.so,
+          libpoppler.so,
+          libpoppler-cpp.so,
           libpoppler-glib.so,
-          libpoppler-qt4.so,
           libpoppler-qt5.so
         </seg>
         <seg>
-          /usr/{include,share/{gtk-doc/html,}}/poppler,
+          /usr/{include,share,share/gtk-doc/html}/poppler,
           /usr/share/doc/poppler-&poppler-version;
         </seg>
 @z

@@ -178,11 +178,11 @@
 @z
 
 @x
-      <option>--disable-docs</option>: This switch avoids building the
+      <parameter>--disable-docs</parameter>: This switch avoids building the
       documentation (the release tarball includes pre-generated
       documentation).
 @y
-      <option>--disable-docs</option>: 
+      <parameter>--disable-docs</parameter>: 
       本スイッチはドキュメントの再生成を行わないようにします。
       (リリース tarball には事前生成済みのドキュメントが含まれています。)
 @z

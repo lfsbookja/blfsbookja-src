@@ -14,15 +14,15 @@
 @z
 
 @x
-  <!ENTITY traceroute-time          "Less than 0.1 SBU">
+  <!ENTITY traceroute-time          "less than 0.1 SBU">
 @y
-  <!ENTITY traceroute-time          "0.1 SBU 以下">
+  <!ENTITY traceroute-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Traceroute</title>
 @y
-    <title>Traceroute の概要</title>
+    <title>&IntroductionTo1;Traceroute&IntroductionTo2;</title>
 @z
 
 @x
@@ -135,13 +135,13 @@
 @z
 
 @x
-        <seg>traceroute</seg>
+        <seg>traceroute and traceroute6 (symlink)</seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>traceroute</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>traceroute, traceroute6 (シンボリックリンク)</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -152,14 +152,16 @@
 
 @x traceroute
           <para>does basically what it says: it traces the route your packets
-          take from the host you are working on to another host on a network, showing
-          all the intermediate hops (gateways) along the way.</para>
+          take from the host you are working on to another host on a network,
+          showing all the intermediate hops (gateways) along the way.</para>
 @y
-          <para>
-          基本的に以下を実行します。
-          
-          does basically what it says: it traces the route your packets
-          take from the host you are working on to another host on a network, showing
-          all the intermediate hops (gateways) along the way.
-          </para>
+          <para>does basically what it says: it traces the route your packets
+          take from the host you are working on to another host on a network,
+          showing all the intermediate hops (gateways) along the way.</para>
+@z
+
+@x traceroute6
+          <para>is equivalent to <command>traceroute -6</command>.</para>
+@y
+          <para>is equivalent to <command>traceroute -6</command>.</para>
 @z

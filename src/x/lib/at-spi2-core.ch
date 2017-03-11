@@ -20,15 +20,17 @@
 @z
 
 @x
-      The <application>At-Spi2 Core</application> package is a part of the GNOME
-      Accessibility Project. It provides a Service Provider Interface for the Assistive
-      Technologies available on the <application>GNOME</application> platform and a
-      library against which applications can be linked.
+      The <application>At-Spi2 Core</application> package is a part of the
+      GNOME Accessibility Project. It provides a Service Provider Interface
+      for the Assistive Technologies available on the
+      <application>GNOME</application> platform and a library against which
+      applications can be linked.
 @y
-      The <application>At-Spi2 Core</application> package is a part of the GNOME
-      Accessibility Project. It provides a Service Provider Interface for the Assistive
-      Technologies available on the <application>GNOME</application> platform and a
-      library against which applications can be linked.
+      The <application>At-Spi2 Core</application> package is a part of the
+      GNOME Accessibility Project. It provides a Service Provider Interface
+      for the Assistive Technologies available on the
+      <application>GNOME</application> platform and a library against which
+      applications can be linked.
 @z
 
 @x
@@ -83,8 +85,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/>,
-      <xref linkend="intltool"/> and
+      <xref linkend="glib2"/>, and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
@@ -92,7 +93,6 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="xorg7-lib"/>
     </para>
 @z
@@ -141,10 +141,12 @@
 @z
 
 @x
-      A session bus address is necessary to run the tests. To test the results,
+      A session bus address, normally available in an Xorg terminal,
+      is necessary to run the tests. To test the results,
       issue: <command>make check</command>.
 @y
-      A session bus address is necessary to run the tests. To test the results,
+      A session bus address, normally available in an Xorg terminal,
+      is necessary to run the tests. To test the results,
       issue: <command>make check</command>.
 @z
 
@@ -180,32 +182,28 @@
         <!-- <seg> Not user executable programs
           at-spi-bus-launcher and at-spi2-registryd
         </seg> -->
-	<seg>
-	  None
-	</seg>
+        <seg>
+          None
+        </seg>
         <seg>
           libatspi.so
         </seg>
         <seg>
-          /etc/at-spi2,
-          /usr/include/at-spi-2.0,
-          /usr/lib/at-spi2-core, and
+          /usr/include/at-spi-2.0 and
           /usr/share/gtk-doc/html/libatspi
         </seg>
 @y
         <!-- <seg> Not user executable programs
           at-spi-bus-launcher and at-spi2-registryd
         </seg> -->
-	<seg>
-	  &None;
-	</seg>
+        <seg>
+          None
+        </seg>
         <seg>
           libatspi.so
         </seg>
         <seg>
-          /etc/at-spi2,
-          /usr/include/at-spi-2.0,
-          /usr/lib/at-spi2-core,
+          /usr/include/at-spi-2.0 and
           /usr/share/gtk-doc/html/libatspi
         </seg>
 @z

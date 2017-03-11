@@ -20,17 +20,15 @@
 @z
 
 @x
-      <application>Rasqal</application> is a C library that handles Resource 
-      Description Framework (RDF) query language syntaxes, query construction and 
-      execution of queries returning results as bindings, boolean, RDF graphs/triples 
-      or syntaxes. It is required by <application>Soprano</application> to build 
-      <application>Nepomuk</application>.
+      <application>Rasqal</application> is a C library that handles Resource
+      Description Framework (RDF) query language syntaxes, query construction, and
+      execution of queries returning results as bindings, boolean, RDF graphs/triples
+      or syntaxes.
 @y
-      <application>Rasqal</application> is a C library that handles Resource 
-      Description Framework (RDF) query language syntaxes, query construction and 
-      execution of queries returning results as bindings, boolean, RDF graphs/triples 
-      or syntaxes. It is required by <application>Soprano</application> to build 
-      <application>Nepomuk</application>.
+      <application>Rasqal</application> is a C library that handles Resource
+      Description Framework (RDF) query language syntaxes, query construction, and
+      execution of queries returning results as bindings, boolean, RDF graphs/triples
+      or syntaxes.
 @z
 
 @x
@@ -171,10 +169,10 @@
 @z
 
 @x rasqal-config
-            is a utility for retrieving the installation options
+            is an utility for retrieving the installation options
             of <application>Rasqal</application>.
 @y
-            is a utility for retrieving the installation options
+            is an utility for retrieving the installation options
             of <application>Rasqal</application>.
 @z
 

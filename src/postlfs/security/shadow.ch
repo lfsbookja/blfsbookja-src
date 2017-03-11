@@ -180,16 +180,6 @@
       LFS 構築時に <application>Coreutils</application> パッケージによってインストールされた man ページを置き換えないようにするものです。
 @z
 
-% @x
-%       <command>sed -i -e '...' -e '...' man/Makefile.in</command>: This command
-%       disables the installation of Chinese and Korean manual pages, since
-%       <application>Man-DB</application> cannot format them properly.
-% @y
-%       <command>sed -i -e '...' -e '...' man/Makefile.in</command>:
-%       このコマンドは中国語および韓国語による man ページをインストールしないようにします。
-%       これらのページは <application>Man-DB</application> が適切に取り扱うことができないためです。
-% @z
-
 @x
       <command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' -e
       's@/var/spool/mail@/var/mail@' etc/login.defs</command>: Instead of using
@@ -210,23 +200,47 @@
 @z
 
 @x
-      <command>sed -i -e 
-      's@PATH=/sbin:/bin:/usr/sbin:/usr/bin@&amp;:/usr/local/sbin:/usr/local/bin@' 
-      -e 's@PATH=/bin:/usr/bin@&amp;:/usr/local/bin@' etc/login.defs</command>:
-      This sed expands PATH to
-      <filename class="directory">/usr/local/bin</filename> for normal and
-      <systemitem class="username">root</systemitem> user and to 
-      <filename class="directory">/usr/local/sbin</filename> for 
-      <systemitem class="username">root</systemitem> user only.
+      <command>sed -i 's/1000/999/' etc/useradd</command>: Make a minor change
+      to make the default useradd consistent with the LFS groups file.
 @y
-      <command>sed -i -e 
-      's@PATH=/sbin:/bin:/usr/sbin:/usr/bin@&amp;:/usr/local/sbin:/usr/local/bin@' 
-      -e 's@PATH=/bin:/usr/bin@&amp;:/usr/local/bin@' etc/login.defs</command>:
-      この sed コマンドは実行パスに対して、通常ユーザーと <systemitem
-      class="username">root</systemitem> ユーザーに <filename
-      class="directory">/usr/local/bin</filename> を追加し、<systemitem
-      class="username">root</systemitem> ユーザーにはさらに <filename
-      class="directory">/usr/local/sbin</filename> を追加します。
+      <command>sed -i 's/1000/999/' etc/useradd</command>: Make a minor change
+      to make the default useradd consistent with the LFS groups file.
+@z
+
+@x
+      <command>sed -i -e '/snprintf/s@_msg,@_msg, 256,@' src/su.c</command>: Fix
+      a build error that only occurs if <xref linkend="linux-pam"/> is detected
+      by <command>configure</command>.
+@y
+      <command>sed -i -e '/snprintf/s@_msg,@_msg, 256,@' src/su.c</command>: Fix
+      a build error that only occurs if <xref linkend="linux-pam"/> is detected
+      by <command>configure</command>.
+@z
+
+@x
+      <command>sed -i '47 d' -e '60,65 d' libmisc/myname.c</command>: Apply
+      a security fix from upstream.
+@y
+      <command>sed -i '47 d' -e '60,65 d' libmisc/myname.c</command>: Apply
+      a security fix from upstream.
+@z
+
+@x
+      <command>echo '--- ...</command>: This command illustrates another
+      way to apply patches. Without the patch, <command>useradd</command>
+      does not use the defaults in <filename>/etc/default/useradd</filename>.
+@y
+      <command>echo '--- ...</command>: This command illustrates another
+      way to apply patches. Without the patch, <command>useradd</command>
+      does not use the defaults in <filename>/etc/default/useradd</filename>.
+@z
+
+@x
+      <parameter>--with-group-name-max-length=32</parameter>: The maximum
+      user name is 32 characters. Make the maximum group name the same.
+@y
+      <parameter>--with-group-name-max-length=32</parameter>: The maximum
+      user name is 32 characters. Make the maximum group name the same.
 @z
 
 @x
@@ -382,49 +396,17 @@
           <systemitem class="username">root</systemitem> ユーザーになって、以下のコマンドを実行してください。
 @z
 
-@x
-        <title>'system-account'</title>
-@y
-        <title>'system-account'</title>
-@z
+%@x
+%        <title>'system-passwd' (with cracklib)</title>
+%@y
+%        <title>'system-passwd' (cracklib がある場合)</title>
+%@z
 
-@x
-        <title>'system-auth'</title>
-@y
-        <title>'system-auth'</title>
-@z
-
-@x
-        <title>'system-passwd' (with cracklib)</title>
-@y
-        <title>'system-passwd' (cracklib がある場合)</title>
-@z
-
-@x
-            In its default configuration, owing to credits, pam_cracklib will
-            allow multiple case passwords as short as 6 characters, even with
-            the <parameter>minlen</parameter> value set to 11. You should review
-            the pam_cracklib(8) man page and determine if these default values
-            are acceptable for the security of your system.
-@y
-            In its default configuration, owing to credits, pam_cracklib will
-            allow multiple case passwords as short as 6 characters, even with
-            the <parameter>minlen</parameter> value set to 11. You should review
-            the pam_cracklib(8) man page and determine if these default values
-            are acceptable for the security of your system.
-@z
-
-@x
-        <title>'system-passwd' (without cracklib)</title>
-@y
-        <title>'system-passwd' (cracklib がない場合)</title>
-@z
-
-@x
-        <title>'system-session'</title>
-@y
-        <title>'system-session'</title>
-@z
+%@x
+%        <title>'system-passwd' (without cracklib)</title>
+%@y
+%        <title>'system-passwd' (cracklib がない場合)</title>
+%@z
 
 @x
         <title>'login'</title>
@@ -451,13 +433,15 @@
 @z
 
 @x
-        <title>'chfn', 'chgpasswd', 'chgpasswd', 'chsh', 'groupadd', 'groupdel',
+        <title>Other common programs</title>
+        <!--<title>'chfn', 'chgpasswd', 'chgpasswd', 'chsh', 'groupadd', 'groupdel',
         'groupmems', 'groupmod', 'newusers', 'useradd', 'userdel' and
-        'usermod'</title>
+        'usermod'</title>-->
 @y
-        <title>'chfn', 'chgpasswd', 'chgpasswd', 'chsh', 'groupadd', 'groupdel',
-        'groupmems', 'groupmod', 'newusers', 'useradd', 'userdel',
-        'usermod'</title>
+        <title>その他の一般的なプログラム</title>
+        <!--<title>'chfn', 'chgpasswd', 'chgpasswd', 'chsh', 'groupadd', 'groupdel',
+        'groupmems', 'groupmod', 'newusers', 'useradd', 'userdel' and
+        'usermod'</title>-->
 @z
 
 @x
@@ -494,27 +478,11 @@
             the errors remain, you will be unable to log into your system.
 @z
 
-@x
-        <title>Other</title>
-@y
-        <title>その他</title>
-@z
-
-@x
-          Currently, <filename>/etc/pam.d/other</filename> is configured to
-          allow anyone with an account on the machine to use PAM-aware programs
-          without a configuration file for that program. After testing
-          <application>Linux-PAM</application> for proper configuration, install
-          a more restrictive <filename>other</filename> file so that
-          program-specific configuration files are required:
-@y
-          Currently, <filename>/etc/pam.d/other</filename> is configured to
-          allow anyone with an account on the machine to use PAM-aware programs
-          without a configuration file for that program. After testing
-          <application>Linux-PAM</application> for proper configuration, install
-          a more restrictive <filename>other</filename> file so that
-          program-specific configuration files are required:
-@z
+%@x
+%        <title>Other</title>
+%@y
+%        <title>その他</title>
+%@z
 
 @x
         <title>Configuring Login Access</title>
@@ -568,9 +536,17 @@
 
 @x
       A list of the installed files, along with their short descriptions can be
-      found at <ulink url="&lfs-root;/chapter06/shadow.html#contents-shadow"/>.
+      found at
+      <phrase revision="sysv">
+      <ulink url="&lfs-root;/chapter06/shadow.html#contents-shadow"/></phrase>
+      <phrase revision="systemd">
+      <ulink url="&lfs-rootd;/chapter06/shadow.html#contents-shadow"/></phrase>.
 @y
-      インストールされるファイルの一覧および概略説明については <ulink
-      url="&lfs-root;/chapter06/shadow.html#contents-shadow">LFSブック内、Shadow の概略説明</ulink> (日本語訳は <ulink
-      url="&lfsja-dev;/chapter06/shadow.html#contents-shadow">ここ</ulink>) を参照してください。
+      インストールされるファイルの一覧および概略説明については <phrase revision="sysv">
+      <ulink url="&lfs-root;/chapter06/shadow.html#contents-shadow"/></phrase>
+      <phrase revision="systemd">
+      <ulink url="&lfs-rootd;/chapter06/shadow.html#contents-shadow"/></phrase> (日本語訳は <phrase revision="sysv">
+      <ulink url="&lfsja-dev;/chapter06/shadow.html#contents-shadow"/></phrase>
+      <phrase revision="systemd">
+      <ulink url="&lfssysdja-dev;/chapter06/shadow.html#contents-shadow"/></phrase>) を参照してください。
 @z

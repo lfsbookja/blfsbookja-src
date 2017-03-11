@@ -108,19 +108,21 @@
 @z
 
 @x
-      Running the tests is not recommended. Failures will occur in the tests,
-      depending on the screen resolution/capabilities, fonts installed and
-      other X related parameters. Some tests may crash your X Server. To test
+      Running the tests is not recommended. Failures will be reported during the
+      tests, depending on the screen resolution/capabilities, fonts installed
+      and other X related parameters, but the end report can show 0 failures.
+      Some tests will steal focus and some might crash your X Server. To test
       the results anyway, issue: <command>make test</command>. Ensure you run
       it from an X Window display device with the GLX extensions loaded, but
-      even so, tests may hang.
+      even so, tests might hang.
 @y
-      Running the tests is not recommended. Failures will occur in the tests,
-      depending on the screen resolution/capabilities, fonts installed and
-      other X related parameters. Some tests may crash your X Server. To test
+      Running the tests is not recommended. Failures will be reported during the
+      tests, depending on the screen resolution/capabilities, fonts installed
+      and other X related parameters, but the end report can show 0 failures.
+      Some tests will steal focus and some might crash your X Server. To test
       the results anyway, issue: <command>make test</command>. Ensure you run
       it from an X Window display device with the GLX extensions loaded, but
-      even so, tests may hang.
+      even so, tests might hang.
 @z
 
 @x

@@ -104,14 +104,14 @@
     <para role="optional">
       <xref linkend="dbus"/>,
       <xref linkend="libxml2"/>, and
-      <xref linkend="qt4"/>
+      <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="qt4"/>
+      <xref linkend="qt5"/>
     </para>
 @z
 
@@ -138,12 +138,12 @@
 @z
 
 @x
-      Select the options that support your hardware:
-      <command>lspci</command> from <xref linkend="pciutils"/> can be used to 
+      Open the submenu and select the options that support your hardware:
+      <command>lspci</command> from <xref linkend="pciutils"/> can be used to
       view your hardware configuration.
 @y
-      Select the options that support your hardware:
-      <command>lspci</command> from <xref linkend="pciutils"/> can be used to 
+      Open the submenu and select the options that support your hardware:
+      <command>lspci</command> from <xref linkend="pciutils"/> can be used to
       view your hardware configuration.
 @z
 
@@ -247,41 +247,51 @@
 
 @x
         To connect to an access point that uses a password, you need to put
-        the pre-shared key in <filename>
-        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.
+        the pre-shared key in
+        <phrase revision="sysv"><filename>
+        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.</phrase>
+        <phrase revision="systemd"><filename>
+        /etc/wpa_supplicant/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.</phrase>
         SSID is the string that the access point/router transmits to
         identify itself. Run the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
         To connect to an access point that uses a password, you need to put
-        the pre-shared key in <filename>
-        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.
+        the pre-shared key in
+        <phrase revision="sysv"><filename>
+        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.</phrase>
+        <phrase revision="systemd"><filename>
+        /etc/wpa_supplicant/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.</phrase>
         SSID is the string that the access point/router transmits to
         identify itself. Run the following command as the
         <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-        <filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf
-        </filename> can hold the details of several access points. When
+        <phrase revision="sysv"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf </filename></phrase>
+        <phrase revision="systemd"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase> 
+        can hold the details of several access points. When
         <command>wpa_supplicant</command> is started, it will scan for the
         SSIDs it can see and choose the appropriate password to connect.
 @y
-        <filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf
-        </filename> can hold the details of several access points. When
+        <phrase revision="sysv"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf </filename></phrase>
+        <phrase revision="systemd"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase> 
+        can hold the details of several access points. When
         <command>wpa_supplicant</command> is started, it will scan for the
         SSIDs it can see and choose the appropriate password to connect.
 @z
 
 @x
         If you want to connect to an access point that isn't password
-        protected, put an entry like this in <filename>
-        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.
+        protected, put an entry like this in
+        <phrase revision="sysv"   ><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase>
+        <phrase revision="systemd"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase>.
         Replace "Some-SSID" with the SSID of the access point/router.
 @y
         If you want to connect to an access point that isn't password
-        protected, put an entry like this in <filename>
-        /etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename>.
+        protected, put an entry like this in
+        <phrase revision="sysv"   ><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase>
+        <phrase revision="systemd"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase>.
         Replace "Some-SSID" with the SSID of the access point/router.
 @z
 

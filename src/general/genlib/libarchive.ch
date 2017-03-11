@@ -163,7 +163,7 @@
 
 @x
         <seg>
-          bsdcpio and bsdtar
+          bsdcat, bsdcpio, and bsdtar
         </seg>
         <seg>
           libarchive.so
@@ -173,7 +173,7 @@
         </seg>
 @y
         <seg>
-          bsdcpio, bsdtar
+          bsdcat, bsdcpio, bsdtar
         </seg>
         <seg>
           libarchive.so

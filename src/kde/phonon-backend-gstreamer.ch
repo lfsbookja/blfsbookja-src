@@ -20,8 +20,9 @@
 @z
 
 @x
-    <para>This package provides a <application>Phonon</application> backend which
-    utilizes the <application>GStreamer</application> media framework.</para>
+    <para>This package provides a <application>Phonon</application> backend
+    which utilizes the <application>GStreamer</application> media framework.
+    </para>
 @y
     <para>
     このパッケージは <application>GStreamer</application> メディアフレームワークを利用する、<application>Phonon</application> のバックエンドライブラリを提供します。
@@ -79,41 +80,41 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="phonon"/> and
-    <xref linkend="gstreamer"/> 
+    <xref linkend="gstreamer10"/>,
+    <xref linkend="libxml2"/>, and
+    <xref linkend="phonon"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="phonon"/>,
-    <xref linkend="gstreamer"/> 
+    <xref linkend="gstreamer10"/>,
+    <xref linkend="libxml2"/>,
+    <xref linkend="phonon"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="gst-plugins-base"/> (needed for output to ALSA),
-    <xref linkend="gst-plugins-good"/> (needed for output to PulseAudio),
-    <xref linkend="gst-plugins-bad"/> (needed for AAC/M4A support) and
-    <xref linkend="gst-plugins-ugly"/> (needed for MP3 support)
+    <xref linkend="gst10-plugins-base"/> (needed for output to ALSA),
+    <xref linkend="gst10-plugins-good"/> (needed for output to PulseAudio),
+    <xref linkend="gst10-plugins-bad"/>  (needed for AAC/M4A support), and
+    <xref linkend="gst10-plugins-ugly"/> (needed for MP3 support)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="gst-plugins-base"/> (ALSA への出力に必要),
-    <xref linkend="gst-plugins-good"/> (PulseAudio への出力に必要),
-    <xref linkend="gst-plugins-bad"/> (AAC/M4A サポートに必要),
-    <xref linkend="gst-plugins-ugly"/> (MP3 サポートに必要)
+    <xref linkend="gst10-plugins-base"/> (ALSA への出力に必要),
+    <xref linkend="gst10-plugins-good"/> (PulseAudio への出力に必要),
+    <xref linkend="gst10-plugins-bad"/>  (AAC/M4A サポートに必要),
+    <xref linkend="gst10-plugins-ugly"/> (MP3 サポートに必要)
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/phonon-backend-gstreamer"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/phonon-backend-gstreamer"/></para>
 @z
 
 @x
@@ -123,8 +124,18 @@
 @z
 
 @x
-    <para>Install <application>Phonon-backend-gstreamer</application> by running the following
-    commands:</para>
+    <note><para>This package unpacks to the directory 
+      phonon-gstreamer-&phonon-backend-gstreamer-version;.
+    </para></note>
+@y
+    <note><para>This package unpacks to the directory 
+      phonon-gstreamer-&phonon-backend-gstreamer-version;.
+    </para></note>
+@z
+
+@x
+    <para>Install <application>Phonon-backend-gstreamer</application> by
+    running the following commands:</para>
 @y
     <para>
     以下のコマンドを実行して <application>Phonon-backend-gstreamer</application> をビルドします。
@@ -146,10 +157,11 @@
 @z
 
 @x
-    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to apply
-    higher level of compiler optimizations.</para>
+    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+    used to apply higher level of compiler optimizations.</para>
 @y
-    <para><option>-DCMAKE_BUILD_TYPE=Release</option>:
+    <para>
+    <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
     このスイッチは、コンパイラーの最適化オプションを最高レベルにて適用することを指示します。
     </para>
 @z
@@ -173,11 +185,9 @@
 @x
         <seg>none</seg>
         <seg>phonon_gstreamer.so</seg>
-        <seg>&kde-dir;/lib/kde4/plugins/phonon_backend and 
-        &kde-dir;/share/kde4/services/phononbackends</seg>
+        <seg>/usr/lib/qt5/plugins/phonon4qt5_backend</seg>
 @y
         <seg>&None;</seg>
         <seg>phonon_gstreamer.so</seg>
-        <seg>&kde-dir;/lib/kde4/plugins/phonon_backend,
-        &kde-dir;/share/kde4/services/phononbackends</seg>
+        <seg>/usr/lib/qt5/plugins/phonon4qt5_backend</seg>
 @z

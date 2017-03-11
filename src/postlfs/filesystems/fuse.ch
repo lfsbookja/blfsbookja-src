@@ -186,7 +186,7 @@
           libfuse.so and libulockmgr.so
         </seg>
         <seg>
-          /usr/include/fuse
+          /usr/include/fuse and /usr/share/doc/fuse-&fuse-version;
         </seg>
 @y
         <seg>
@@ -196,7 +196,7 @@
           libfuse.so, libulockmgr.so
         </seg>
         <seg>
-          /usr/include/fuse
+          /usr/include/fuse, /usr/share/doc/fuse-&fuse-version;
         </seg>
 @z
 

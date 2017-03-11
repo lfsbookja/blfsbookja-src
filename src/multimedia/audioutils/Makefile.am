@@ -7,7 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/multimedia/audioutils
 CHANGE_FILES = \
-	amarok.ch      \
 	audacious.ch   \
 	audioutils.ch  \
 	cdparanoia.ch  \
@@ -29,13 +28,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-amarok.xml:      $(BOOKdir)/$@ $(srcdir)/amarok.ch
-audacious.xml:   $(BOOKdir)/$@ $(srcdir)/audacious.ch
-audioutils.xml:  $(BOOKdir)/$@ $(srcdir)/audioutils.ch
-cdparanoia.xml:  $(BOOKdir)/$@ $(srcdir)/cdparanoia.ch
-freetts.xml:     $(BOOKdir)/$@ $(srcdir)/freetts.ch
-lame.xml:        $(BOOKdir)/$@ $(srcdir)/lame.ch
-mpg123.xml:      $(BOOKdir)/$@ $(srcdir)/mpg123.ch
-pnmixer.xml:     $(BOOKdir)/$@ $(srcdir)/pnmixer.ch
-vorbistools.xml: $(BOOKdir)/$@ $(srcdir)/vorbistools.ch

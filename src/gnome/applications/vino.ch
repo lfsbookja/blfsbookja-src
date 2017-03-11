@@ -1,0 +1,203 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
+@x
+<?xml version="1.0" encoding="ISO-8859-1"?>
+@y
+<?xml version="1.0" encoding="UTF-8"?>
+@z
+
+@x
+    <title>Introduction to Vino</title>
+@y
+    <title>&IntroductionTo1;Vino&IntroductionTo2;</title>
+@z
+
+@x
+      The <application>Vino</application> package is a VNC server for
+      <application>GNOME</application>. VNC is a protocol that allows remote
+      display of a user's desktop.
+@y
+      The <application>Vino</application> package is a VNC server for
+      <application>GNOME</application>. VNC is a protocol that allows remote
+      display of a user's desktop.
+@z
+
+@x
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+@y
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
+@z
+
+@x
+          Download (HTTP): <ulink url="&vino-download-http;"/>
+@y
+          &Download; (HTTP): <ulink url="&vino-download-http;"/>
+@z
+
+@x
+          Download (FTP): <ulink url="&vino-download-ftp;"/>
+@y
+          &Download; (FTP): <ulink url="&vino-download-ftp;"/>
+@z
+
+@x
+          Download MD5 sum: &vino-md5sum;
+@y
+          &Download; MD5 sum: &vino-md5sum;
+@z
+
+@x
+          Download size: &vino-size;
+@y
+          &DownloadSize;: &vino-size;
+@z
+
+@x
+          Estimated disk space required: &vino-buildsize;
+@y
+          &Estimateddiskspacerequired;: &vino-buildsize;
+@z
+
+@x
+          Estimated build time: &vino-time;
+@y
+          &Estimatedbuildtime;: &vino-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Vino Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Vino&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="libnotify"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="libnotify"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gnutls"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="libsecret"/>,
+      <xref linkend="NetworkManager"/>, and
+      <xref linkend="telepathy-glib"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gnutls"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="libsecret"/>,
+      <xref linkend="NetworkManager"/>, and
+      <xref linkend="telepathy-glib"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="avahi"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="avahi"/>
+    </para>
+@z
+
+@x
+    <para condition="html" role="usernotes">User Notes:
+@y
+    <para condition="html" role="usernotes">&UserNotes;:
+@z
+
+@x
+    <title>Installation of Vino</title>
+@y
+    <title>&InstallationOf1;Vino&InstallationOf2;</title>
+@z
+
+@x
+      Install <application>Vino</application> by running the following
+      commands:
+@y
+      以下のコマンドを実行して <application>Vino</application> をビルドします。
+@z
+
+@x
+      This package does not come with a test suite.
+@y
+      &notTestSuite;
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Contents</title>
+@y
+    <title>&Contents;</title>
+@z
+
+@x
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
+@y
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
+@z
+
+@x
+        <seg>
+          vino-server
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
+@y
+        <seg>
+          vino-server
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
+        </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x vino-server
+            is the <application>Vino</application> VNC server.
+@y
+            <application>Vino</application> VNC サーバー
+@z

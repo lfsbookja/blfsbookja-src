@@ -20,8 +20,9 @@
 @z
 
 @x
-    <para>This package provides a <application>Phonon</application> backend which
-    utilizes the <application>VLC</application> media framework.</para>
+    <para>This package provides a <application>Phonon</application> backend
+    which utilizes the <application>VLC</application> media framework.
+    </para>
 @y
     <para>
     本パッケージは <application>VLC</application> メディアフレームワークにて用いられている <application>Phonon</application> バックエンドを提供します。
@@ -103,7 +104,18 @@
 @z
 
 @x
-    <para>Install <application>Phonon-backend-vlc</application> by running the following
+    <note><para>This package unpacks to the directory 
+      phonon-vlc-&phonon-backend-vlc-version;.
+    </para></note>
+@y
+    <note><para>This package unpacks to the directory 
+      phonon-vlc-&phonon-backend-vlc-version;.
+    </para></note>
+@z
+
+@x
+    <para>Install 
+    <application>Phonon-backend-vlc</application> by running the following
     commands:</para>
 @y
     <para>
@@ -126,12 +138,33 @@
 @z
 
 @x
-    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to apply
-    higher level of compiler optimizations.</para>
+    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+    used to apply higher level of compiler optimizations.</para>
 @y
-    <para><option>-DCMAKE_BUILD_TYPE=Release</option>:
+    <para>
+    <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
     このスイッチは、コンパイラーの最適化オプションを最高レベルにて適用することを指示します。
     </para>
+@z
+
+@x
+    <para><parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is
+    used to get libraries to install to /usr/lib instead of /usr/lib64 on a
+    64 bit system.</para>
+@y
+    <para><parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is
+    used to get libraries to install to /usr/lib instead of /usr/lib64 on a
+    64 bit system.</para>
+@z
+
+@x
+    <para><parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is
+    used to ensure that Qt5 version of the backend is built even if Qt4 is
+    present.</para>
+@y
+    <para><parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is
+    used to ensure that Qt5 version of the backend is built even if Qt4 is
+    present.</para>
 @z
 
 @x
@@ -153,11 +186,9 @@
 @x
         <seg>none</seg>
         <seg>phonon_vlc.so</seg>
-        <seg>&kde-dir;/lib/kde4/plugins/phonon_backend and 
-        &kde-dir;/share/kde4/services/phononbackends</seg>
+        <seg>/usr/lib/qt5/plugins/phonon4qt5_backend</seg>
 @y
         <seg>&None;</seg>
         <seg>phonon_vlc.so</seg>
-        <seg>&kde-dir;/lib/kde4/plugins/phonon_backend,
-        &kde-dir;/share/kde4/services/phononbackends</seg>
+        <seg>/usr/lib/qt5/plugins/phonon4qt5_backend</seg>
 @z

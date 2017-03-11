@@ -108,13 +108,13 @@
 @z
 
 @x
-      <command>sed "s@AM_CONFIG_HEADER@AC_CONFIG_HEADERS@g"
-      -i configure.ac</command>: This sed fixes some issues with
-      <application>Automake</application> 1.13 and later.
+      <option>--enable-openmp</option>: This switch adds support for running
+      the algorithms parallel in several CPU cores, in systems with multicore
+      processors.
 @y
-      <command>sed "s@AM_CONFIG_HEADER@AC_CONFIG_HEADERS@g"
-      -i configure.ac</command>:
-      この sed コマンドにより、<application>Automake</application> 1.13 以降にて発生する問題を修正します。
+      <option>--enable-openmp</option>: This switch adds support for running
+      the algorithms parallel in several CPU cores, in systems with multicore
+      processors.
 @z
 
 @x
@@ -135,7 +135,7 @@
 
 @x
         <seg>
-          soundstrech
+          soundstretch
         </seg>
         <seg>
           libSoundTouch.so
@@ -146,7 +146,7 @@
         </seg>
 @y
         <seg>
-          soundstrech
+          soundstretch
         </seg>
         <seg>
           libSoundTouch.so

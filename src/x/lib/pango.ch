@@ -97,16 +97,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cairo"/>,
-      <xref linkend="harfbuzz"/> and
-      <xref linkend="xorg7-lib"/>
+      <xref linkend="fontconfig"/> (must be built with
+       <xref linkend="freetype2"/> using <xref linkend="harfbuzz"/>) and
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="cairo"/>,
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="xorg7-lib"/>
+      <xref linkend="fontconfig"/> (must be built with
+       <xref linkend="freetype2"/> using <xref linkend="harfbuzz"/>),
+      <xref linkend="glib2"/>
     </para>
 @z
 
@@ -125,12 +125,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="cantarell-fonts"/> (for tests),
+      <xref linkend="gtk-doc"/>, and
+      <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="cantarell-fonts"/> (テストのため),
+      <xref linkend="gtk-doc"/>,
+      <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @z
 
@@ -154,9 +158,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. The
+      test-layout test is known to fail.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      test-layout テストは失敗します。
 @z
 
 @x
@@ -226,32 +232,26 @@
 
 @x
         <seg>
-          pango-querymodules and pango-view
+          pango-view
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
-          libpangox-1.0.so and libpangoxft-1.0.so;
-          several modules under /usr/lib/pango/1.8.0/modules/
+          and libpangoxft-1.0.so
         </seg>
         <seg>
-          /etc/pango,
-          /usr/include/pango-1.0,
-          /usr/lib/pango, and
+          /usr/include/pango-1.0 and
           /usr/share/gtk-doc/html/pango
         </seg>
 @y
         <seg>
-          pango-querymodules, pango-view
+          pango-view
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
-          libpangox-1.0.so, libpangoxft-1.0.so,
-          /usr/lib/pango/1.8.0/modules/ 配下に数種のライブラリ
+          libpangoxft-1.0.so
         </seg>
         <seg>
-          /etc/pango,
           /usr/include/pango-1.0,
-          /usr/lib/pango,
           /usr/share/gtk-doc/html/pango
         </seg>
 @z
@@ -262,10 +262,20 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x pango-querymodules
-            is a module registration utility that collects information about
-            <application>Pango</application> loadable modules.
+@x pango-view
+            renders a given file through <application>Pango</application> for
+            viewing purposes.
 @y
-            is a module registration utility that collects information about
-            <application>Pango</application> loadable modules.
+            renders a given file through <application>Pango</application> for
+            viewing purposes.
+@z
+
+@x libpango-1.0.so
+            contains low level layout rendering routines, a high level driver for
+            laying out entire blocks of text, and routines to assist in editing
+            internationalized text.
+@y
+            contains low level layout rendering routines, a high level driver for
+            laying out entire blocks of text, and routines to assist in editing
+            internationalized text.
 @z

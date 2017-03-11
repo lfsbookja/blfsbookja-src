@@ -93,7 +93,7 @@ am__aclocal_m4_deps = $(top_srcdir)/version.ac \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
 	$(top_srcdir)/m4/ac_check_ipafontdir.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/ac_check_rev.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
@@ -129,6 +129,10 @@ AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+BASEDIR = @BASEDIR@
+BLFSFULL = @BLFSFULL@
+BLFSHTML = @BLFSHTML@
+BLFSHTML2 = @BLFSHTML2@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
@@ -137,6 +141,7 @@ CTIE = @CTIE@
 CYGPATH_W = @CYGPATH_W@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
+DUMPDIR = @DUMPDIR@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -158,6 +163,8 @@ LTLIBOBJS = @LTLIBOBJS@
 LYNX = @LYNX@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
+NOCHUNKS_NAME = @NOCHUNKS_NAME@
+NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 OBJEXT = @OBJEXT@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
@@ -168,6 +175,7 @@ PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PDF = @PDF@
+PDF_OUTPUT = @PDF_OUTPUT@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -213,6 +221,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+revspec = @revspec@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@
@@ -223,6 +232,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/general/genlib
 CHANGE_FILES = \
+	appstream-glib.ch \
 	apr.ch \
 	apr-util.ch \
 	aspell.ch \
@@ -231,6 +241,7 @@ CHANGE_FILES = \
 	dbus-glib.ch \
 	enchant.ch \
 	exempi.ch \
+	gcab.ch \
 	genlib.ch \
 	glib2.ch \
 	glibmm.ch \
@@ -240,6 +251,7 @@ CHANGE_FILES = \
 	gsl.ch \
 	icu.ch \
 	js.ch \
+	js2.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \
@@ -254,31 +266,47 @@ CHANGE_FILES = \
 	libgcrypt.ch \
 	libgpg-error.ch \
 	libgsf.ch \
+	libgudev.ch \
 	libgusb.ch \
 	libical.ch \
 	libidn.ch \
 	libiodbc.ch \
 	libksba.ch \
 	liblinear.ch \
+	libmbim.ch \
+	libnfsidmap.ch \
+	libpaper.ch \
+	libqmi.ch \
 	libsigc++.ch \
+	libsigsegv.ch \
+	libstatgrab.ch \
 	libtasn1.ch \
+	libunique.ch \
 	libunistring.ch \
 	libusb.ch \
 	libusb-compat.ch \
+	libwacom.ch \
+	libxkbcommon.ch \
 	libxml2.ch \
 	libxslt.ch \
+	libzeitgeist.ch \
 	lzo.ch \
 	mtdev.ch \
+	npth.ch \
 	nspr.ch \
 	openobex.ch \
 	pcre.ch \
+	pcre2.ch \
 	popt.ch \
 	pth.ch \
 	ptlib.ch \
 	qca.ch \
-	qjson.ch \
 	talloc.ch \
-	wv.ch
+	wayland.ch \
+	wayland-protocols.ch \
+	wv.ch \
+	xapian.ch \
+	yaml.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -475,63 +503,6 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-apr.xml:                   $(BOOKdir)/$@ $(srcdir)/apr.ch
-apr-util.xml:              $(BOOKdir)/$@ $(srcdir)/apr-util.ch
-aspell.xml:                $(BOOKdir)/$@ $(srcdir)/aspell.ch
-boost.xml:                 $(BOOKdir)/$@ $(srcdir)/boost.ch
-clucene.xml:               $(BOOKdir)/$@ $(srcdir)/clucene.ch
-dbus-glib.xml:             $(BOOKdir)/$@ $(srcdir)/dbus-glib.ch
-enchant.xml:               $(BOOKdir)/$@ $(srcdir)/enchant.ch
-exempi.xml:                $(BOOKdir)/$@ $(srcdir)/exempi.ch
-genlib.xml:                $(BOOKdir)/$@ $(srcdir)/genlib.ch
-glib2.xml:                 $(BOOKdir)/$@ $(srcdir)/glib2.ch
-glibmm.xml:                $(BOOKdir)/$@ $(srcdir)/glibmm.ch
-gmime.xml:                 $(BOOKdir)/$@ $(srcdir)/gmime.ch
-gobject-introspection.xml: $(BOOKdir)/$@ $(srcdir)/gobject-introspection.ch
-grantlee.xml:              $(BOOKdir)/$@ $(srcdir)/grantlee.ch
-gsl.xml:                   $(BOOKdir)/$@ $(srcdir)/gsl.ch
-icu.xml:                   $(BOOKdir)/$@ $(srcdir)/icu.ch
-js.xml:                    $(BOOKdir)/$@ $(srcdir)/js.ch
-json-c.xml:                $(BOOKdir)/$@ $(srcdir)/json-c.ch
-json-glib.xml:             $(BOOKdir)/$@ $(srcdir)/json-glib.ch
-keyutils.xml:              $(BOOKdir)/$@ $(srcdir)/keyutils.ch
-libarchive.xml:            $(BOOKdir)/$@ $(srcdir)/libarchive.ch
-libassuan.xml:             $(BOOKdir)/$@ $(srcdir)/libassuan.ch
-libatasmart.xml:           $(BOOKdir)/$@ $(srcdir)/libatasmart.ch
-libatomic_ops.xml:         $(BOOKdir)/$@ $(srcdir)/libatomic_ops.ch
-libcroco.xml:              $(BOOKdir)/$@ $(srcdir)/libcroco.ch
-libdaemon.xml:             $(BOOKdir)/$@ $(srcdir)/libdaemon.ch
-libesmtp.xml:              $(BOOKdir)/$@ $(srcdir)/libesmtp.ch
-libffi.xml:                $(BOOKdir)/$@ $(srcdir)/libffi.ch
-libgcrypt.xml:             $(BOOKdir)/$@ $(srcdir)/libgcrypt.ch
-libgpg-error.xml:          $(BOOKdir)/$@ $(srcdir)/libgpg-error.ch
-libgsf.xml:                $(BOOKdir)/$@ $(srcdir)/libgsf.ch
-libgusb.xml:               $(BOOKdir)/$@ $(srcdir)/libgusb.ch
-libical.xml:               $(BOOKdir)/$@ $(srcdir)/libical.ch
-libidn.xml:                $(BOOKdir)/$@ $(srcdir)/libidn.ch
-libiodbc.xml:              $(BOOKdir)/$@ $(srcdir)/libiodbc.ch
-libksba.xml:               $(BOOKdir)/$@ $(srcdir)/libksba.ch
-liblinear.xml:             $(BOOKdir)/$@ $(srcdir)/liblinear.ch
-libsigc++.xml:             $(BOOKdir)/$@ $(srcdir)/libsigc++.ch
-libtasn1.xml:              $(BOOKdir)/$@ $(srcdir)/libtasn1.ch
-libunistring.xml:          $(BOOKdir)/$@ $(srcdir)/libunistring.ch
-libusb.xml:                $(BOOKdir)/$@ $(srcdir)/libusb.ch
-libusb-compat.xml:         $(BOOKdir)/$@ $(srcdir)/libusb-compat.ch
-libxml2.xml:               $(BOOKdir)/$@ $(srcdir)/libxml2.ch
-libxslt.xml:               $(BOOKdir)/$@ $(srcdir)/libxslt.ch
-lzo.xml:                   $(BOOKdir)/$@ $(srcdir)/lzo.ch
-mtdev.xml:                 $(BOOKdir)/$@ $(srcdir)/mtdev.ch
-nspr.xml:                  $(BOOKdir)/$@ $(srcdir)/nspr.ch
-openobex.xml:              $(BOOKdir)/$@ $(srcdir)/openobex.ch
-pcre.xml:                  $(BOOKdir)/$@ $(srcdir)/pcre.ch
-popt.xml:                  $(BOOKdir)/$@ $(srcdir)/popt.ch
-pth.xml:                   $(BOOKdir)/$@ $(srcdir)/pth.ch
-ptlib.xml:                 $(BOOKdir)/$@ $(srcdir)/ptlib.ch
-qca.xml:                   $(BOOKdir)/$@ $(srcdir)/qca.ch
-qjson.xml:                 $(BOOKdir)/$@ $(srcdir)/qjson.ch
-talloc.xml:                $(BOOKdir)/$@ $(srcdir)/talloc.ch
-wv.xml:                    $(BOOKdir)/$@ $(srcdir)/wv.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -114,12 +114,6 @@
 @z
 
 @x
-      If you want to disable installing the static library, use this sed:
-@y
-      スタティックライブラリをインストールしない場合は、以下の sed コマンドを実行します。
-@z
-
-@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -143,23 +137,25 @@
 
 @x
         <seg>
-          nettle-hash, nettle-lfib-stream, pkcs1-conv and sexp-conv
+          nettle-hash, nettle-lfib-stream, nettle-pbkdf2,
+          pkcs1-conv and sexp-conv
         </seg>
         <seg>
-          libhogweed.{so,a} and libnettle.{so,a}
+          libhogweed.so and libnettle.so
         </seg>
         <seg>
-          /usr/include/nettle
+          /usr/include/nettle and /usr/share/doc/nettle-&nettle-version;
         </seg>
 @y
         <seg>
-          nettle-hash, nettle-lfib-stream, pkcs1-conv, sexp-conv
+          nettle-hash, nettle-lfib-stream, nettle-pbkdf2,
+          pkcs1-conv, sexp-conv
         </seg>
         <seg>
-          libhogweed.{so,a}, libnettle.{so,a}
+          libhogweed.so, libnettle.so
         </seg>
         <seg>
-          /usr/include/nettle
+          /usr/include/nettle, /usr/share/doc/nettle-&nettle-version;
         </seg>
 @z
 
@@ -170,16 +166,16 @@
 @z
 
 @x nettle-hash
-            calulates a hash value using a specified algorithm.
+            calculates a hash value using a specified algorithm.
 @y
             指定されたアルゴリズムを用いてハッシュ値を計算します。
 @z
 
 @x nettle-lfib-stream
-            outputs a sequence of pseudorandom (non-cryptographic)  bytes, using
-            Knuth's lagged fibonacci generator. The stream is useful for testing,
-            but should not be used to generate cryptographic keys or anything  
-            else that needs real randomness.
+            outputs a sequence of pseudorandom (non-cryptographic)  bytes,
+            using Knuth's lagged fibonacci generator. The stream is useful for
+            testing, but should not be used to generate cryptographic keys or
+            anything else that needs real randomness.
 @y
             (暗号化されていない) 擬似乱数によるバイト列を出力します。
             これは Knuth のラグ付きフィボナッチ法 (lagged fibonacchi generator) に基づきます。

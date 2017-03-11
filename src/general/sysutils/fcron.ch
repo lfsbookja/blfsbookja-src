@@ -121,15 +121,15 @@
 @z
 
 @x
-    <para id="fcron-syslog"><application>Fcron</application> uses the cron facility
-    of <command>syslog</command> to log all messages. Since LFS
-    does not set up this facility in <filename>/etc/syslog.conf</filename>, it
-    needs to be done prior to installing <application>Fcron</application>. This
-    command will append the necessary line to the current
-    <filename>/etc/syslog.conf</filename> (perform as the
-    <systemitem class='username'>root</systemitem> user):</para>
+    <para id="fcron-syslog" revision="sysv"><application>Fcron</application>
+    uses the cron facility of <command>syslog</command> to log all messages.
+    Since LFS does not set up this facility in
+    <filename>/etc/syslog.conf</filename>, it needs to be done prior to
+    installing <application>Fcron</application>. This command will append the
+    necessary line to the current <filename>/etc/syslog.conf</filename>
+    (perform as the <systemitem class='username'>root</systemitem> user):</para>
 @y
-    <para id="fcron-syslog">
+    <para id="fcron-syslog" revision="sysv">
     <application>Fcron</application> は <command>syslog</command> の cron 機能を利用して各種メッセージをログ出力します。
     LFS ではその設定を <filename>/etc/syslog.conf</filename> にて行っていないため、<application>Fcron</application> のインストール前に行う必要があります。
     以下のコマンドにより <filename>/etc/syslog.conf</filename> に必要となる設定行を追記します。
@@ -138,11 +138,11 @@
 @z
 
 @x
-    <para>The configuration file has been modified, so reloading the
-    <command>sysklogd</command> daemon will activate the changes (again as the
-    <systemitem class='username'>root</systemitem> user).</para>
+    <para revision="sysv">The configuration file has been modified, so reloading
+    the <command>sysklogd</command> daemon will activate the changes (again as
+    the <systemitem class='username'>root</systemitem> user).</para>
 @y
-    <para>
+    <para revision="sysv">
     設定ファイルを更新したので <command>sysklogd</command> デーモンをリロードし、その変更を適用します。
     (これも <systemitem class='username'>root</systemitem> ユーザーで実行します。)
     </para>
@@ -299,10 +299,9 @@
       <para id="fcron-pam">If <application>Linux-PAM</application>
       is installed, two PAM configuration files are installed in
       <filename class='directory'>/etc/pam.d</filename>. Alternatively if
-      <filename class='directory'>/etc/pam.d</filename> is not used, the installation
-      will append two configuration sections to the existing
-      <filename>/etc/pam.conf</filename> file. You should ensure the files match your
-      preferences. Modify them as required to suit your needs.</para>
+      <filename class='directory'>/etc/pam.d</filename> is not used, the
+      installation will append two configuration sections to the existing
+      <filename>/etc/pam.conf</filename> file. You should ensure the files match      your preferences. Modify them as required to suit your needs.</para>
 @y
       <para id="fcron-pam">
       <application>Linux-PAM</application> をインストールしている場合、<filename
@@ -314,19 +313,28 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
-      <para>Install the <filename>/etc/rc.d/init.d/fcron</filename>
-      init script from the <xref linkend="bootscripts"/>
-      package.</para>
+      <para revision="sysv">Install the
+      <filename>/etc/rc.d/init.d/fcron</filename> init script from the
+      <xref linkend="bootscripts"/> package.</para>
 @y
-      <para>
+      <para revision="sysv">
       <xref linkend="bootscripts"/> パッケージが提供する初期化スクリプト <filename>/etc/rc.d/init.d/fcron</filename> をインストールします。
       </para>
+@z
+@x
+      <para revision="systemd">Enable <application>fcron</application> to start
+      at boot using the previously installed systemd unit.</para>
+@y
+      <para revision="systemd">Enable <application>fcron</application> to start
+      at boot using the previously installed systemd unit.</para>
 @z
 
 @x

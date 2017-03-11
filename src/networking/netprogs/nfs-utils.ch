@@ -94,23 +94,33 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libevent"/>,
       <xref linkend="sqlite"/> and
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink> (for NFSv4 support),
+
+      <phrase revision="sysv"><ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink></phrase>
+      
+      <phrase revision="systemd"><xref linkend="libnfsidmap"/></phrase>
+      
+      (for NFSv4 support),
       <xref linkend="mitkrb"/> or
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink> (for GSS and RPC security support) and
+      
       <xref linkend="libcap-pam"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libevent"/>,
       <xref linkend="sqlite"/> and
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink> (for NFSv4 support),
+
+      <phrase revision="sysv"><ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink></phrase>
+      
+      <phrase revision="systemd"><xref linkend="libnfsidmap"/></phrase>
+      
+      (for NFSv4 support),
       <xref linkend="mitkrb"/> or
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink> (for GSS and RPC security support) and
+      
       <xref linkend="libcap-pam"/>
     </para>
 @z
@@ -141,10 +151,11 @@
 
 @x
     <para>Enable the following options in the kernel configuration
-    and recompile the kernel if necessary:</para>
+    (choose client and/or server support as appropriate) and recompile the
+    kernel if necessary:</para>
 @y
     <para>
-    カーネル設定として以下のオプションを有効にしておくことが必要です。
+    カーネル設定として以下のオプションを (クライアント、サーバーのサポートを適宜選択し) 有効にしておくことが必要です。
     もしこれを行っていない場合はカーネルを再コンパイルします。
     </para>
 @z
@@ -234,18 +245,30 @@ The classic uid and gid values are 65534 which is also -2 when
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
-@y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
-@z
-
-@x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <para>The tests for this package require that the package be installed and
+    configured as specified below.  In addition, the the daemon from <xref
+    linkend="rpcbind"/> needs to be running and the tests need to be run as the
+    <systemitem class="username">root</systemitem> user.</para>
+@y
+    <para>The tests for this package require that the package be installed and
+    configured as specified below.  In addition, the the daemon from <xref
+    linkend="rpcbind"/> needs to be running and the tests need to be run as the
+    <systemitem class="username">root</systemitem> user.</para>
+@z
+
+@x
+    <para>To test the results, issue, as root: <command>make check</command>.</para>
+@y
+    <para>
+    ビルド結果をテストする場合は root ユーザーになって <command>make check</command> を実行します。
     </para>
 @z
 

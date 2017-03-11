@@ -20,23 +20,15 @@
 @z
 
 @x
-    <para>The <application>Wireshark</application> package contains a network
-    protocol analyzer, also known as a <quote>sniffer</quote>. This is useful
-    for analyzing data captured <quote>off the wire</quote> from a live network
-    connection, or data read from a capture file.
-    <application>Wireshark</application> provides both a graphical and a TTY-mode
-    front-end for examining captured network packets from over 500 protocols,
-    as well as the capability to read capture files from many other popular
-    network analyzers.</para>
+      The <application>Wireshark</application> package contains a network
+      protocol analyzer, also known as a <quote>sniffer</quote>. This is useful
+      for analyzing data captured <quote>off the wire</quote> from a live
+      network connection, or data read from a capture file.
 @y
-    <para>The <application>Wireshark</application> package contains a network
-    protocol analyzer, also known as a <quote>sniffer</quote>. This is useful
-    for analyzing data captured <quote>off the wire</quote> from a live network
-    connection, or data read from a capture file.
-    <application>Wireshark</application> provides both a graphical and a TTY-mode
-    front-end for examining captured network packets from over 500 protocols,
-    as well as the capability to read capture files from many other popular
-    network analyzers.</para>
+      The <application>Wireshark</application> package contains a network
+      protocol analyzer, also known as a <quote>sniffer</quote>. This is useful
+      for analyzing data captured <quote>off the wire</quote> from a live
+      network connection, or data read from a capture file.
 @z
 
 @x
@@ -88,17 +80,13 @@
 @z
 
 @x
-        <para>Additional Documentation: 
+          Additional Documentation:
+          <ulink url="https://www.wireshark.org/download/docs/"/>
+          (contains links to several different docs in a variety of formats)
 @y
-        <para>Additional Documentation: 
-@z
-
-@x
-    <para>From this page you can download many different docs in a variety
-    of formats.</para>
-@y
-    <para>From this page you can download many different docs in a variety
-    of formats.</para>
+          Additional Documentation:
+          <ulink url="https://www.wireshark.org/download/docs/"/>
+          (contains links to several different docs in a variety of formats)
 @z
 
 @x
@@ -110,69 +98,71 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> (to build the TTY-mode front-end only)
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> (to build the TTY-mode front-end only)
+      <xref linkend="glib2"/>
     </para>
-@z
-
-@x
-    <para>Note that you need <application>Gtk+</application> or
-    <application>Qt4</application> installed, otherwise, you will need to pass
-    <option>--disable-wireshark</option> to the
-    <command>configure</command> command.</para>
-@y
-    <para>Note that you need <application>Gtk+</application> or
-    <application>Qt4</application> installed, otherwise, you will need to pass
-    <option>--disable-wireshark</option> to the
-    <command>configure</command> command.</para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libpcap"/> (required to capture data)
+      <xref linkend="gtk3"/> (for the <application>Gtk+3</application> GUI),
+      <xref linkend="libpcap"/> (required to capture data), and
+      <xref linkend="qt5"/> (for the <application>Qt5</application> GUI)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libpcap"/> (required to capture data)
+      <xref linkend="gtk3"/> (for the <application>Gtk+3</application> GUI),
+      <xref linkend="libpcap"/> (required to capture data), and
+      <xref linkend="qt5"/> (for the <application>Qt5</application> GUI)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
-      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
       <xref linkend="gnutls"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libnl"/>,
       <xref linkend="lua"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="openssl"/>, and
-      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>
+      <xref linkend="openssl"/>,
+      <xref linkend="sbc"/>,
+      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
+      <ulink url="http://c-ares.haxx.se/">c-ares</ulink>,
+      <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
+      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>, and
+      <ulink url="http://www.portaudio.com/">PortAudio</ulink>
+      (for GTK+ RTP player)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
-      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
       <xref linkend="gnutls"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libnl"/>,
       <xref linkend="lua"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openssl"/>,
-      <ulink url="http://www.portaudio.com/download.html">PortAudio</ulink>
+      <xref linkend="sbc"/>,
+      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
+      <ulink url="http://c-ares.haxx.se/">c-ares</ulink>,
+      <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
+      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>, and
+      <ulink url="http://www.portaudio.com/">PortAudio</ulink>
+      (for GTK+ RTP player)
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+      User Notes: <ulink url="&blfs-wiki;/wireshark"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+      &UserNotes;: <ulink url="&blfs-wiki;/wireshark"/>
 @z
 
 @x
@@ -182,33 +172,23 @@
 @z
 
 @x
-      <para>The kernel must have the Packet protocol enabled for
-      <application>Wireshark</application> to capture live packets from the
-      network.</para>
+      The kernel must have the Packet protocol enabled for <application>
+      Wireshark</application> to capture live packets from the network:
 @y
-      <para>The kernel must have the Packet protocol enabled for
-      <application>Wireshark</application> to capture live packets from the
-      network.</para>
+      The kernel must have the Packet protocol enabled for <application>
+      Wireshark</application> to capture live packets from the network:
 @z
 
 @x
-      <para>If built as a module, the name is
-      <filename>af_packet.ko</filename>.</para>
+      If built as a module, the name is <filename>af_packet.ko</filename>.
 @y
-      <para>If built as a module, the name is
-      <filename>af_packet.ko</filename>.</para>
+      If built as a module, the name is <filename>af_packet.ko</filename>.
 @z
 
-@x
-      <indexterm zone="wireshark wireshark-kernel">
-        <primary sortas="d-Capturing-network-packets">Capturing network
-        packets</primary>
-      </indexterm>
+@x <indexterm zone="wireshark wireshark-kernel">
+        Capturing network packets
 @y
-      <indexterm zone="wireshark wireshark-kernel">
-        <primary sortas="d-Capturing-network-packets">Capturing network
-        packets</primary>
-      </indexterm>
+        Capturing network packets
 @z
 
 @x
@@ -218,59 +198,77 @@
 @z
 
 @x
-    <para>Optionally, fix the description of the program in the title. 
-    The first change overwrites the default "SVN Unknown" in the title
-    and the secong overwrites a utility script that resets the version
-    to "unknown".</para>
+      <application>Wireshark</application> is a very large and complex
+      application. These instructions provide additional security measures to
+      ensure that only trusted users are allowed to view network traffic. First,
+      set up a system group for wireshark.  As the <systemitem
+      class="username">root</systemitem> user:
 @y
-    <para>Optionally, fix the description of the program in the title. 
-    The first change overwrites the default "SVN Unknown" in the title
-    and the secong overwrites a utility script that resets the version
-    to "unknown".</para>
+      <application>Wireshark</application> is a very large and complex
+      application. These instructions provide additional security measures to
+      ensure that only trusted users are allowed to view network traffic. First,
+      set up a system group for wireshark.  As the <systemitem
+      class="username">root</systemitem> user:
 @z
 
 @x
-    <para><application>Wireshark</application> is a very large and complex
-    application.  These instructions provide additional security measures to
-    ensure that only trusted users are allowed to view network traffic.  First,
-    set up a system group for wireshark.  As the <systemitem
-    class="username">root</systemitem> user:</para>
+      Continue to install <application>Wireshark</application> by running
+      the following commands:
 @y
-    <para><application>Wireshark</application> is a very large and complex
-    application.  These instructions provide additional security measures to
-    ensure that only trusted users are allowed to view network traffic.  First,
-    set up a system group for wireshark.  As the <systemitem
-    class="username">root</systemitem> user:</para>
+      Continue to install <application>Wireshark</application> by running
+      the following commands:
 @z
 
 @x
-    <para>Continue to install <application>Wireshark</application> by running
-    the following commands:</para>
+      This package does not come with a test suite.
 @y
-    <para>Continue to install <application>Wireshark</application> by running
-    the following commands:</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>&notTestSuite;</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      If you downloaded any of the documentation files from the page
+      listed in the 'Additional Downloads', install them by issuing the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      If you downloaded any of the documentation files from the page
+      listed in the 'Additional Downloads', install them by issuing the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:
 @z
 
 @x
-    <para>If you downloaded any of the documentation files from the page
-    listed in the 'Additional Downloads', install them by issuing the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      Now, set ownership and permissions of sensitive applications to only
+      allow authorized users.  As the <systemitem class="username">root
+      </systemitem> user:
 @y
-    <para>If you downloaded any of the documentation files from the page
-    listed in the 'Additional Downloads', install them by issuing the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      Now, set ownership and permissions of sensitive applications to only
+      allow authorized users.  As the <systemitem class="username">root
+      </systemitem> user:
+@z
+
+@x
+      Finally, add any users to the wireshark group (as <systemitem class=
+      "username">root</systemitem> user):
+@y
+      Finally, add any users to the wireshark group (as <systemitem class=
+      "username">root</systemitem> user):
+@z
+
+@x
+      If you are installing wireshark for the first time, it will be necessary
+      to leave the session and login again, thus you will now have wireshark
+      between your groups, otherwise, it will not run properly.
+@y
+      If you are installing wireshark for the first time, it will be necessary
+      to leave the session and login again, thus you will now have wireshark
+      between your groups, otherwise, it will not run properly.
 @z
 
 @x
@@ -280,23 +278,37 @@
 @z
 
 @x
-    <para><parameter>--enable-threads</parameter>: This parameter enables the
-    use of threads in <command>wireshark</command>.</para>
+      <option>--with-gtk2=[yes/no]</option>: For the Gtk+2 GUI. If both Gtk+2
+      and 3 are installed, default is no. Notice that the GUI for only one Gtk+
+      version (either 2 or 3) can be built.
 @y
-    <para><parameter>--enable-threads</parameter>: This parameter enables the
-    use of threads in <command>wireshark</command>.</para>
+      <option>--with-gtk2=[yes/no]</option>: For the Gtk+2 GUI. If both Gtk+2
+      and 3 are installed, default is no. Notice that the GUI for only one Gtk+
+      version (either 2 or 3) can be built.
 @z
 
 @x
-    <para><option>--with-ssl</option>: This option is required if you
-    are linking Kerberos libraries into the build so that the
-    <application>OpenSSL</application>
-    <filename class='libraryfile'>libcrypto</filename> library is found.</para>
+      <option>--with-gtk3=[yes/no]</option>: For the Gtk+3 GUI. If both Gtk+2
+      and 3 are installed, default is yes.
 @y
-    <para><option>--with-ssl</option>: This option is required if you
-    are linking Kerberos libraries into the build so that the
-    <application>OpenSSL</application>
-    <filename class='libraryfile'>libcrypto</filename> library is found.</para>
+      <option>--with-gtk3=[yes/no]</option>: For the Gtk+3 GUI. If both Gtk+2
+      and 3 are installed, default is yes.
+@z
+
+@x
+      <option>--with-qt=[yes/no/4/5]</option>: For the Qt GUI. Default is yes.
+@y
+      <option>--with-qt=[yes/no/4/5]</option>: For the Qt GUI. Default is yes.
+@z
+
+@x
+      <option>--disable-wireshark</option>: Use this switch if you
+      have <application>GTK+</application> installed but do not want to build
+      any of the GUIs.
+@y
+      <option>--disable-wireshark</option>: Use this switch if you
+      have <application>GTK+</application> installed but do not want to build
+      any of the GUIs.
 @z
 
 @x
@@ -313,10 +325,12 @@
 
 @x
       <para><filename>/etc/wireshark.conf</filename> and
-      <filename>~/.wireshark/*</filename></para>
+      <filename>~/.config/wireshark/*</filename> (unless there is already
+      <filename>~/.wireshark/*</filename> in the system)</para>
 @y
       <para><filename>/etc/wireshark.conf</filename> and
-      <filename>~/.wireshark/*</filename></para>
+      <filename>~/.config/wireshark/*</filename> (unless there is already
+      <filename>~/.wireshark/*</filename> in the system)</para>
 @z
 
 @x
@@ -326,33 +340,33 @@
 @z
 
 @x
-      <para>Though the default configuration parameters are very sane,
-      reference the configuration section of the
-      <ulink url="http://www.wireshark.org/docs/wsug_html/">Wireshark User's
+      <para>Though the default configuration parameters are very sane, reference
+      the configuration section of the <ulink
+      url="http://www.wireshark.org/docs/wsug_html/">Wireshark User's
       Guide</ulink> for configuration information. Most of
       <application>Wireshark</application>'s configuration can be accomplished
-      using the menu options of the <command>wireshark</command>
-      graphical interface.</para>
+      using the menu options of the <command>wireshark</command> graphical
+      interfaces.</para>
 @y
-      <para>Though the default configuration parameters are very sane,
-      reference the configuration section of the
-      <ulink url="http://www.wireshark.org/docs/wsug_html/">Wireshark User's
+      <para>Though the default configuration parameters are very sane, reference
+      the configuration section of the <ulink
+      url="http://www.wireshark.org/docs/wsug_html/">Wireshark User's
       Guide</ulink> for configuration information. Most of
       <application>Wireshark</application>'s configuration can be accomplished
-      using the menu options of the <command>wireshark</command>
-      graphical interface.</para>
+      using the menu options of the <command>wireshark</command> graphical
+      interfaces.</para>
 @z
 
 @x
-        <para>If you want to look at packets, make sure you don't filter
-        them out with <xref linkend="iptables"/>. If you want to exclude
-        certain classes of packets, it is more efficient to do it with
+        <para>If you want to look at packets, make sure you don't filter them
+        out with <xref linkend="iptables"/>. If you want to exclude certain
+        classes of packets, it is more efficient to do it with
         <application>iptables</application> than it is with
         <application>Wireshark</application>.</para>
 @y
-        <para>If you want to look at packets, make sure you don't filter
-        them out with <xref linkend="iptables"/>. If you want to exclude
-        certain classes of packets, it is more efficient to do it with
+        <para>If you want to look at packets, make sure you don't filter them
+        out with <xref linkend="iptables"/>. If you want to exclude certain
+        classes of packets, it is more efficient to do it with
         <application>iptables</application> than it is with
         <application>Wireshark</application>.</para>
 @z
@@ -374,19 +388,33 @@
 @z
 
 @x
-        <seg>capinfos, dftest, dumpcap, editcap, mergecap, randpkt, rawshark,
-        reordercap, text2pcap, tshark, and wireshark</seg>
-        <seg>libwireshark.so, libwiretap.so, libwsutil.so, and
-        numerous plugin modules under /usr/lib/wireshark/plugins</seg>
-        <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
-        /usr/share/pixmaps/wireshark, and /usr/share/wireshark</seg>
+        <seg>
+          androiddump, capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
+          mergecap, randpkt, rawshark, reordercap, text2pcap, tshark, wireshark,
+          and wireshark-gtk
+        </seg>
+        <seg>
+          libwireshark.so, libwiretap.so, libwsutil.so, and numerous modules
+          under /usr/lib/wireshark/plugins
+        </seg>
+        <seg>
+          /usr/{lib,share}/wireshark and
+          /usr/share/doc/wireshark-&wireshark-version;
+         </seg>
 @y
-        <seg>capinfos, dftest, dumpcap, editcap, mergecap, randpkt, rawshark,
-        reordercap, text2pcap, tshark, wireshark</seg>
-        <seg>libwireshark.so, libwiretap.so, libwsutil.so,
-        /usr/lib/wireshark/plugins ディレクトリ配下に多くのプラグインモジュール</seg>
-        <seg>/usr/lib/wireshark, /usr/share/doc/wireshark-&wireshark-version;,
-        /usr/share/pixmaps/wireshark, /usr/share/wireshark</seg>
+        <seg>
+          androiddump, capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
+          mergecap, randpkt, rawshark, reordercap, text2pcap, tshark, wireshark,
+          and wireshark-gtk
+        </seg>
+        <seg>
+          libwireshark.so, libwiretap.so, libwsutil.so, and numerous modules
+          under /usr/lib/wireshark/plugins
+        </seg>
+        <seg>
+          /usr/{lib,share}/wireshark and
+          /usr/share/doc/wireshark-&wireshark-version;
+         </seg>
 @z
 
 @x
@@ -468,13 +496,13 @@
 @z
 
 @x wireshark
-          <para>is a GUI network protocol analyzer. It lets you interactively
-          browse packet data from a live network or from a previously
-          saved capture file.</para>
+            is the Qt GUI network protocol analyzer. It lets you interactively
+            browse packet data from a live network or from a previously saved
+            capture file.
 @y
-          <para>is a GUI network protocol analyzer. It lets you interactively
-          browse packet data from a live network or from a previously
-          saved capture file.</para>
+            is the Qt GUI network protocol analyzer. It lets you interactively
+            browse packet data from a live network or from a previously saved
+            capture file.
 @z
 
 @x libwireshark.so

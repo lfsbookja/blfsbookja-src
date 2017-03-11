@@ -7,32 +7,61 @@
 ##
 BOOKdir = @abs_bookdir@/gnome/platform
 CHANGE_FILES = \
+	accountsservice.ch           \
+	caribou.ch                   \
 	dconf.ch                     \
+	dummy-desktop.ch             \
 	dummy-platform.ch            \
 	dummy-runtime.ch             \
+	dummy-tel.ch                 \
+	evolution-data-server.ch     \
+	folks.ch                     \
 	gconf.ch                     \
 	gcr.ch                       \
+	gdm.ch                       \
+	geocode-glib.ch              \
+	gfbgraph.ch                  \
 	gjs.ch                       \
+	gnome-autoar.ch              \
+	gnome-backgrounds.ch         \
+	gnome-bluetooth.ch           \
+	gnome-control-center.ch      \
 	gnome-desktop.ch             \
-	gnome-icon-theme.ch          \
-	gnome-icon-theme-symbolic.ch \
-	gnome-icon-theme-extras.ch   \
 	gnome-keyring.ch             \
-	gnome-themes-standard.ch     \
+	gnome-menus.ch               \
+	gnome-online-accounts.ch     \
+	gnome-settings-daemon.ch     \
+	gnome-shell.ch               \
+	gnome-shell-extensions.ch    \
+	gnome-session.ch             \
+	gnome-user-docs.ch           \
 	gnome-video-effects.ch       \
+	grilo.ch                     \
 	gsettings-desktop-schemas.ch \
+	gtkhtml.ch                   \
 	gvfs.ch                      \
+	libchamplain.ch              \
+	libgee.ch                    \
+	libgdata.ch                  \
 	libgtop.ch                   \
+	libgweather.ch               \
 	libpeas.ch                   \
 	libsecret.ch                 \
 	libwnck.ch                   \
+	mutter.ch                    \
+	nautilus.ch                  \
 	notification-daemon.ch       \
 	platform.ch                  \
 	polkit-gnome.ch              \
+	rest.ch                      \
+	telepathy-glib.ch            \
+	telepathy-logger.ch          \
+	telepathy-mission-control.ch \
 	totem-pl-parser.ch           \
 	vte.ch                       \
 	yelp.ch                      \
-	yelp-xsl.ch
+	yelp-xsl.ch                  \
+	zenity.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -46,29 +75,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-dconf.xml:                 $(BOOKdir)/$@ $(srcdir)/dconf.ch
-dummy-platform.xml:        $(BOOKdir)/$@ $(srcdir)/dummy-platform.ch
-dummy-runtime.xml:         $(BOOKdir)/$@ $(srcdir)/dummy-runtime.ch
-gconf.xml:                 $(BOOKdir)/$@ $(srcdir)/gconf.ch
-gcr.xml:                   $(BOOKdir)/$@ $(srcdir)/gcr.ch
-gjs.xml:                   $(BOOKdir)/$@ $(srcdir)/gjs.ch
-gnome-desktop.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-desktop.ch
-gnome-icon-theme.xml:          $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme.ch
-gnome-icon-theme-symbolic.xml: $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-symbolic.ch
-gnome-icon-theme-extras.xml:   $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-extras.ch
-gnome-keyring.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-keyring.ch
-gnome-video-effects.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-video-effects.ch
-gsettings-desktop-schemas.xml: $(BOOKdir)/$@ $(srcdir)/gsettings-desktop-schemas.ch
-gvfs.xml:                      $(BOOKdir)/$@ $(srcdir)/gvfs.ch
-libgtop.xml:                   $(BOOKdir)/$@ $(srcdir)/libgtop.ch
-libpeas.xml:                   $(BOOKdir)/$@ $(srcdir)/libpeas.ch
-libsecret.xml:                 $(BOOKdir)/$@ $(srcdir)/libsecret.ch
-libwnck.xml:                   $(BOOKdir)/$@ $(srcdir)/libwnck.ch
-notification-daemon.xml:       $(BOOKdir)/$@ $(srcdir)/notification-daemon.ch
-platform.xml:                  $(BOOKdir)/$@ $(srcdir)/platform.ch
-polkit-gnome.xml:              $(BOOKdir)/$@ $(srcdir)/polkit-gnome.ch
-totem-pl-parser.xml:           $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
-vte.xml:                       $(BOOKdir)/$@ $(srcdir)/vte.ch
-yelp.xml:                      $(BOOKdir)/$@ $(srcdir)/yelp.ch
-yelp-xsl.xml:                  $(BOOKdir)/$@ $(srcdir)/yelp-xsl.ch

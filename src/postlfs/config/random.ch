@@ -14,11 +14,9 @@
 @z
 
 @x
-<sect1 id="postlfs-config-random" xreflabel="Random number generation">
-  <?dbhtml filename="random.html"?>
+<sect1 id="postlfs-config-random" xreflabel="Random number generation" revision="sysv">
 @y
-<sect1 id="postlfs-config-random" xreflabel="乱数生成">
-  <?dbhtml filename="random.html"?>
+<sect1 id="postlfs-config-random" xreflabel="乱数生成" revision="sysv">
 @z
 
 

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "669 MB (with test suite and Qt5 <command>cmake-gui</command>)">
-  <!ENTITY cmake-time          "3.8 SBU, using parallelism=4 (with test suite and Qt5 <command>cmake-gui</command>)">
+  <!ENTITY cmake-buildsize     "293 MB (add 341 MB for tests)">
+  <!ENTITY cmake-time          "2.6 SBU (add 8.2 SBU for tests)">
 @y
-  <!ENTITY cmake-buildsize     "669 MB (テスト実行と Qt5 <command>cmake-gui</command> コマンドのビルドを含む)">
-  <!ENTITY cmake-time          "3.8 SBU, parallelism=4 指定時 (テスト実行と Qt5 <command>cmake-gui</command> コマンドのビルドを含む)">
+  <!ENTITY cmake-buildsize     "293 MB (テスト実行時はさらに 341 MB)">
+  <!ENTITY cmake-time          "2.6 SBU (テスト実行時はさらに 8.2 SBU)">
 @z
 
 @x
@@ -106,18 +106,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="qt4"/> or <xref linkend="qt5"/> (for the Qt-based GUI),
-      <xref linkend="subversion"/> (for testing), and
+      <xref linkend="qt5"/> (for the Qt-based GUI),
+      <xref linkend="subversion"/> (for testing),
+      <ulink url="https://github.com/libuv/libuv/releases">libuv</ulink>, and 
       <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
       (for building documents)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="qt4"/> or <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
+      <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
       <xref linkend="subversion"/> (テスト時),
+      <ulink url="https://github.com/libuv/libuv/releases">libuv</ulink>,
       <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
-      (ドキュメント構築に必要)
+      (ドキュメント構築時)
     </para>
 @z
 
@@ -143,16 +145,36 @@
 @x
       To test the results, issue: <command>bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
-      ../cmake-&cmake-version;-test.log</command>, where
+      cmake-&cmake-version;-test.log</command>, where
       <replaceable>&lt;N&gt;</replaceable> is an integer between 1 and the
-      number of threads of your processor, inclusive. Current results: 99% tests
-      passed, 1 test failed out of 433.
+      number of system cores.  
 @y
-      ビルド結果をテストする場合は <command>bin/ctest
+      To test the results, issue: <command>bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
-      ../cmake-&cmake-version;-test.log</command> を実行します。
-      <replaceable>&lt;N&gt;</replaceable> は 1以上、プロセッサのスレッド数までの整数値を指定します。
-      現状においてテストの433個、99% は成功します。そして 1つのテストが失敗します。
+      cmake-&cmake-version;-test.log</command>, where
+      <replaceable>&lt;N&gt;</replaceable> is an integer between 1 and the
+      number of system cores.  
+@z
+@x
+     <!-- Please, don't remove this comment, needed if tests start to fail
+      again. If you want to investigate a problem with a given "problem1-test",
+      use <command>bin/ctest -R "problem1-test"</command> and, to omit it, use
+      <command>bin/ctest -E "problem1-test"</command>. These options can be
+      used together: <command>bin/ctest -R "problem1-test" -E
+      "problem2-test"</command>.  Option -N can be used to display all
+      available tests, and you can run <command>bin/ctest</command> for a
+      sub-set of tests by using separated by spaces names or numbers as
+      options. Option -/-help can be used to show all options.-->
+@y
+     <!-- Please, don't remove this comment, needed if tests start to fail
+      again. If you want to investigate a problem with a given "problem1-test",
+      use <command>bin/ctest -R "problem1-test"</command> and, to omit it, use
+      <command>bin/ctest -E "problem1-test"</command>. These options can be
+      used together: <command>bin/ctest -R "problem1-test" -E
+      "problem2-test"</command>.  Option -N can be used to display all
+      available tests, and you can run <command>bin/ctest</command> for a
+      sub-set of tests by using separated by spaces names or numbers as
+      options. Option -/-help can be used to show all options.-->
 @z
 
 @x

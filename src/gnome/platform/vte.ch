@@ -80,14 +80,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> and
-      <xref linkend="libxml2"/>
+      <xref linkend="gtk3"/>,  
+      <xref linkend="libxml2"/>, and
+      <xref linkend="pcre2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="libxml2"/>
+      <xref linkend="gtk3"/>,  
+      <xref linkend="libxml2"/>,
+      <xref linkend="pcre2"/>
     </para>
 @z
 
@@ -159,12 +161,20 @@
 @z
 
 @x
-      <option>--enable-introspection</option>: This switch enables
+      <command>sed ... configure.ac</command>: This command
+      removes -Werror options that prevent the build from completing.
+@y
+      <command>sed ... configure.ac</command>: This command
+      removes -Werror options that prevent the build from completing.
+@z
+
+@x
+      <parameter>--enable-introspection</parameter>: This switch enables
       <application>Gobject Introspection</application> bindings.
       Remove if you don't have <xref linkend="gobject-introspection"/>
       installed.
 @y
-      <option>--enable-introspection</option>: This switch enables
+      <parameter>--enable-introspection</parameter>: This switch enables
       <application>Gobject Introspection</application> bindings.
       Remove if you don't have <xref linkend="gobject-introspection"/>
       installed.

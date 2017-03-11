@@ -105,7 +105,7 @@
       <xref linkend="docbook-utils"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="gtk-doc"/> and
-      <ulink url="http://download.mono-project.com/sources/">Gtk#</ulink> (requires
+      <ulink url="http://download.mono-project.com/sources/gtk-sharp/">Gtk#</ulink> (requires
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>)
     </para>
 @y
@@ -114,8 +114,8 @@
       <xref linkend="docbook-utils"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://download.mono-project.com/sources/">Gtk#</ulink>
-      (<ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> が必要)
+      <ulink url="http://download.mono-project.com/sources/gtk-sharp/">Gtk#</ulink>
+      (requires <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> が必要)
     </para>
 @z
 

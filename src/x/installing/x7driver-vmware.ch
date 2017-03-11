@@ -107,18 +107,6 @@
 @z
 
 @x
-<screen><literal>Device Drivers  ---&gt;
-  Graphics support ---&gt;
-    DRM driver for VMware Virtual GPU: Y or M
-      Enable framebuffer console under vmwgfx by default: Y</literal></screen>
-@y
-<screen><literal>Device Drivers  ---&gt;
-  Graphics support ---&gt;
-    DRM driver for VMware Virtual GPU: Y または M
-      Enable framebuffer console under vmwgfx by default: Y</literal></screen>
-@z
-
-@x
       <title>Installation of Xorg VMware Driver</title>
 @y
       <title>&InstallationOf1;Xorg VMware Driver&InstallationOf2;</title>

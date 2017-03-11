@@ -14,19 +14,25 @@
 @z
 
 @x
+  <title>Phonon-&phonon-version;</title>
+@y
+  <title>Phonon-&phonon-version;</title>
+@z
+
+@x
     <title>Introduction to Phonon</title>
 @y
     <title>&IntroductionTo1;Phonon&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Phonon</application> is the multimedia API for KDE4.
-    It replaces the old <application>aRts</application>, that is no longer
-    supported by KDE. Phonon needs either the GStreamer or VLC backend.</para>
+    <para><application>Phonon</application> is the multimedia API for KDE.
+    It replaces the old <application>aRts</application> package.
+    Phonon needs either the GStreamer or VLC backend.</para>
 @y
     <para>
-    <application>Phonon</application> は KDE4 に対するマルチメディア API です。
-    <application>aRts</application> は KDE によりサポートされなくなり、本パッケージはそれに置き換わるものです。
+    <application>Phonon</application> は KDE に対するマルチメディア API です。
+    かつての <application>aRts</application> パッケージに置き換わるものです。
     本パッケージは GStreamer や VLC のバックエンドとなります。
     </para>
 @z
@@ -82,39 +88,37 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="automoc4"/> and
-      <xref linkend="glib2"/>
+      <xref linkend="cmake"/>,
+      <xref linkend="extra-cmake-modules"/>,
+      <xref linkend="glib2"/>, and
+      <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="automoc4"/>,
-      <xref linkend="glib2"/>
+      <xref linkend="cmake"/>,
+      <xref linkend="extra-cmake-modules"/>,
+      <xref linkend="glib2"/>,
+      <xref linkend="qt5"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="qt5"/> and
-      <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
+      <xref linkend="pulseaudio"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="qt5"/>,
-      <ulink url="http://projects.kde.org/projects/kdesupport/libqzeitgeist/">QZeitgeist</ulink>
+      <xref linkend="pulseaudio"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/phonon"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/phonon"/></para>
 @z
 
 @x
@@ -124,19 +128,8 @@
 @z
 
 @x
-    <para>Make sure that <xref linkend="qt4"/> is compiled without the bundled
-    <application>Phonon</application> library. This package provides
-    a better implementation.</para>
-@y
-    <para>
-    <xref linkend="qt4"/> は、バンドルされている <application>Phonon</application> ライブラリによりビルドしないでください。
-    本パッケージの方がより適切な実装です。
-    </para>
-@z
-
-@x
-    <para>Install <application>Phonon</application> by running the following
-    commands:</para>
+    <para>Install <application>Phonon</application> by
+    running the following commands:</para>
 @y
     <para>
     以下のコマンドを実行して <application>Phonon</application> をビルドします。
@@ -166,33 +159,20 @@
 @z
 
 @x
-      <parameter>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</parameter>:
+      <parameter>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=FALSE</parameter>:
       This switch ensures that the plugins and mkspecs files get installed in
       the correct location.
 @y
-      <parameter>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=TRUE</parameter>:
+      <parameter>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=FALSE</parameter>:
       本スイッチは、プラグインと mkspecs ファイルを適切なディレクトリにインストールします。
 @z
 
 @x
-     <parameter>-DDBUS_INTERFACES_INSTALL_DIR=/usr/share/dbus-1/interfaces</parameter>:
-      This switch sets the correct installation path for the 
-      <application>D-Bus</application> interfaces file.
+     <parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is used to
+     ensure that Qt5 version of the library is built even if Qt4 is present.
 @y
-      <parameter>-DDBUS_INTERFACES_INSTALL_DIR=/usr/share/dbus-1/interfaces</parameter>:
-      このオプションは <application>D-Bus</application> インターフェースファイルを、適切なパスにインストールします。
-@z
-
-@x
-      <option>-DPHONON_BUILD_PHONON4QT5=ON</option>: Use this switch if you want to
-      build <application>Phonon</application> against <application>Qt5</application>.
-      Note that both <application>Qt4</application> and <application>Qt5</application>
-      versions can be installed at the same time without any conflicts.
-@y
-      <option>-DPHONON_BUILD_PHONON4QT5=ON</option>: Use this switch if you want to
-      build <application>Phonon</application> against <application>Qt5</application>.
-      Note that both <application>Qt4</application> and <application>Qt5</application>
-      versions can be installed at the same time without any conflicts.
+     <parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is used to
+     ensure that Qt5 version of the library is built even if Qt4 is present.
 @z
 
 @x
@@ -216,25 +196,25 @@
           None
         </seg>
         <seg>
-          libphonon.so and
-          libphononexperimental.so
+          libphonon4qt5.so
+          libphonon4qt5experimental.so
         </seg>
         <seg>
-          &qt4-dir;/include/KDE/Phonon,
-          &qt4-dir;/include/phonon, and
-          &qt4-dir;/share/phonon
+          /usr/include/phonon4qt5,
+          /usr/lib/cmake/phonon4qt5, and 
+          /usr/share/phonon4qt5
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libphonon.so,
-          libphononexperimental.so
+          libphonon4qt5.so,
+          libphonon4qt5experimental.so
         </seg>
         <seg>
-          &qt4-dir;/include/KDE/Phonon,
-          &qt4-dir;/include/phonon,
-          &qt4-dir;/share/phonon
+          /usr/include/phonon4qt5,
+          /usr/lib/cmake/phonon4qt5,
+          /usr/share/phonon4qt5
         </seg>
 @z

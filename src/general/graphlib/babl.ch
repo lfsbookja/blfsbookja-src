@@ -163,18 +163,16 @@
 
 @x
         <seg>None</seg>
-        <seg>libbabl.so and libraries in /usr/lib/babl-0.1</seg>
+        <seg>libbabl-0.1.so and libraries in /usr/lib/babl-0.1</seg>
         <seg>
-          /usr/include/babl-0.1,
-          /usr/lib/babl-0.1 and
+          /usr/{include,lib}/babl-0.1 and
           /usr/share/gtk-doc/html/babl
         </seg>
 @y
         <seg>&None;</seg>
-        <seg>libbabl.so, /usr/lib/babl-0.1 配下に数種のライブラリ</seg>
+        <seg>libbabl-0.1.so, /usr/lib/babl-0.1 配下に数種のライブラリ</seg>
         <seg>
-          /usr/include/babl-0.1,
-          /usr/lib/babl-0.1,
+          /usr/{include,lib}/babl-0.1,
           /usr/share/gtk-doc/html/babl
         </seg>
 @z

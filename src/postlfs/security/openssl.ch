@@ -22,7 +22,7 @@
 @x
       The <application>OpenSSL</application> package contains management tools
       and libraries relating to cryptography.  These are useful for providing
-      cryptography functions to other packages, such as
+      cryptographic functions to other packages, such as
       <application>OpenSSH</application>, email applications and web browsers
       (for accessing HTTPS sites).
 @y
@@ -79,18 +79,6 @@
 @z
 
 @x
-          Required patch:
-@y
-          必要なパッチ:
-@z
-
-@x
-          Required patch:
-@y
-          必要なパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">OpenSSL Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;OpenSSL&Dependencies2;</bridgehead>
@@ -127,9 +115,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      To test the results, issue: <command>make -j1 test</command>.  The
+      test suite does not support parallel jobs.
 @y
       ビルド結果をテストする場合は <command>make test</command> を実行します。
+      テストスイートは並行処理をサポートしていません。
 @z
 
 @x
@@ -228,7 +218,7 @@
         Users who just want to use <application>OpenSSL</application> for
         providing functions to other programs such as
         <application>OpenSSH</application> and web browsers do not need to worry
-        about additional configuration. This is an advanced topic and so those
+        about additional configuration. This is an advanced topic and those
         who do need it would normally be expected to either know how to properly
         update <filename>/etc/ssl/openssl.cnf</filename> or be able to find out
         how to do it.
@@ -324,11 +314,11 @@
 @z
 
 @x libssl
-            implements the Secure Sockets Layer (SSL v2/v3) and Transport Layer
-            Security (TLS v1) protocols. It provides a rich API, documentation
+            implements the Transport Layer Security (TLS v1) protocol.
+            It provides a rich API, documentation
             on which can be found by running <command>man 3 ssl</command>.
 @y
-            implements the Secure Sockets Layer (SSL v2/v3) and Transport Layer
-            Security (TLS v1) protocols. It provides a rich API, documentation
+            implements the Transport Layer Security (TLS v1) protocol.
+            It provides a rich API, documentation
             on which can be found by running <command>man 3 ssl</command>.
 @z

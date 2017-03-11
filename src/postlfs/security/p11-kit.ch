@@ -20,7 +20,7 @@
 @z
 
 @x
-      The <application>p11-kit</application> package Provides a way to load and
+      The <application>p11-kit</application> package provides a way to load and
       enumerate PKCS #11 (a Cryptographic Token Interface Standard) modules.
 @y
       <application>p11-kit</application> パッケージは、PKCS #11 (暗号トークンインターフェース標準; Cryptographic Token Interface Standard) モジュールをロードし繰返し処理を実現するための機能を提供します。
@@ -144,9 +144,17 @@
 @z
 
 @x
+      <parameter>--with-trust-paths=/etc/pki/anchors</parameter>: this switch
+      sets the location of trusted certificates used by libp11-kit.so.
+@y
+      <parameter>--with-trust-paths=/etc/pki/anchors</parameter>: this switch
+      sets the location of trusted certificates used by libp11-kit.so.
+@z
+
+@x
       <option>--with-hash-impl=freebl</option>: Use this switch if you want to
-      use Freebl library from <application>NSS</application> for SHA1 and MD5
-      hashing.
+      use the Freebl library from <application>NSS</application> for SHA1 and
+      MD5 hashing.
 @y
       <option>--with-hash-impl=freebl</option>:
       SHA1 や MD5 のハッシングに <application>NSS</application> の Freebl ライブラリを利用したい場合に指定します。
@@ -182,13 +190,12 @@
           p11-kit and trust
         </seg>
         <seg>
-          libp11-kit.so, p11-kit-proxy.so and /usr/lib/pkcs11/p11-kit-trust.so
+          libp11-kit.so and p11-kit-proxy.so
         </seg>
         <seg>
           /etc/pkcs11,
           /usr/include/p11-kit-1,
-          /usr/lib/p11-kit,
-          /usr/lib/pkcs11,
+          /usr/lib/{p11-kit,pkcs11},
           /usr/share/gtk-doc/html/p11-kit, and
           /usr/share/p11-kit
         </seg>
@@ -197,13 +204,12 @@
           p11-kit, trust
         </seg>
         <seg>
-          libp11-kit.so, p11-kit-proxy.so, /usr/lib/pkcs11/p11-kit-trust.so
+          libp11-kit.so, p11-kit-proxy.so
         </seg>
         <seg>
           /etc/pkcs11,
           /usr/include/p11-kit-1,
-          /usr/lib/p11-kit,
-          /usr/lib/pkcs11,
+          /usr/lib/{p11-kit,pkcs11},
           /usr/share/gtk-doc/html/p11-kit,
           /usr/share/p11-kit
         </seg>

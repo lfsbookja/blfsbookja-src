@@ -94,13 +94,17 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
+      which is also required for the tests), and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
+      which is also required for the tests),
       <xref linkend="vala"/>
     </para>
 @z

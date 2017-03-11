@@ -93,7 +93,7 @@ am__aclocal_m4_deps = $(top_srcdir)/version.ac \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
 	$(top_srcdir)/m4/ac_check_ipafontdir.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/ac_check_rev.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
@@ -129,6 +129,10 @@ AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+BASEDIR = @BASEDIR@
+BLFSFULL = @BLFSFULL@
+BLFSHTML = @BLFSHTML@
+BLFSHTML2 = @BLFSHTML2@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
@@ -137,6 +141,7 @@ CTIE = @CTIE@
 CYGPATH_W = @CYGPATH_W@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
+DUMPDIR = @DUMPDIR@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -158,6 +163,8 @@ LTLIBOBJS = @LTLIBOBJS@
 LYNX = @LYNX@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
+NOCHUNKS_NAME = @NOCHUNKS_NAME@
+NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 OBJEXT = @OBJEXT@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
@@ -168,6 +175,7 @@ PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PDF = @PDF@
+PDF_OUTPUT = @PDF_OUTPUT@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -213,6 +221,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+revspec = @revspec@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@
@@ -223,8 +232,6 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/postlfs/security
 CHANGE_FILES = \
-	acl.ch             \
-	attr.ch            \
 	cacerts.ch         \
 	consolekit.ch      \
 	cracklib.ch        \
@@ -233,8 +240,11 @@ CHANGE_FILES = \
 	gnupg2.ch          \
 	gnutls.ch          \
 	gpgme.ch           \
+	haveged.ch         \
 	iptables.ch        \
 	libcap.ch          \
+	liboauth.ch        \
+	libpwquality.ch    \
 	linux-pam.ch       \
 	mitkrb.ch          \
 	nessus.ch          \
@@ -448,39 +458,6 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-acl.xml:              $(BOOKdir)/$@ $(srcdir)/acl.ch
-attr.xml:             $(BOOKdir)/$@ $(srcdir)/attr.ch
-cacerts.xml:          $(BOOKdir)/$@ $(srcdir)/cacerts.ch
-consolekit.xml:       $(BOOKdir)/$@ $(srcdir)/consolekit.ch
-cracklib.xml:         $(BOOKdir)/$@ $(srcdir)/cracklib.ch
-cyrus-sasl.xml:       $(BOOKdir)/$@ $(srcdir)/cyrus-sasl.ch
-firewalling.xml:      $(BOOKdir)/$@ $(srcdir)/firewalling.ch $(srcdir)/firewalling.sed
-	sed -f $(srcdir)/firewalling.sed < $(BOOKdir)/$@ > $@.tmp
-	$(top_builddir)/$(CTIE) -m $@ $@.tmp $(srcdir)/$*.ch
-	rm -f $@.tmp
-gnupg2.xml:           $(BOOKdir)/$@ $(srcdir)/gnupg2.ch
-gnutls.xml:           $(BOOKdir)/$@ $(srcdir)/gnutls.ch
-gpgme.xml:            $(BOOKdir)/$@ $(srcdir)/gpgme.ch
-iptables.xml:         $(BOOKdir)/$@ $(srcdir)/iptables.ch
-libcap.xml:           $(BOOKdir)/$@ $(srcdir)/libcap.ch
-linux-pam.xml:        $(BOOKdir)/$@ $(srcdir)/linux-pam.ch
-mitkrb.xml:           $(BOOKdir)/$@ $(srcdir)/mitkrb.ch
-nessus.xml:           $(BOOKdir)/$@ $(srcdir)/nessus.ch
-nettle.xml:           $(BOOKdir)/$@ $(srcdir)/nettle.ch
-nss.xml:              $(BOOKdir)/$@ $(srcdir)/nss.ch
-openssh.xml:          $(BOOKdir)/$@ $(srcdir)/openssh.ch
-openssl.xml:          $(BOOKdir)/$@ $(srcdir)/openssl.ch
-p11-kit.xml:          $(BOOKdir)/$@ $(srcdir)/p11-kit.ch
-polkit.xml:           $(BOOKdir)/$@ $(srcdir)/polkit.ch
-security.xml:         $(BOOKdir)/$@ $(srcdir)/security.ch
-shadow.xml:           $(BOOKdir)/$@ $(srcdir)/shadow.ch
-ssh-askpass.xml:      $(BOOKdir)/$@ $(srcdir)/ssh-askpass.ch
-stunnel.xml:          $(BOOKdir)/$@ $(srcdir)/stunnel.ch
-sudo.xml:             $(BOOKdir)/$@ $(srcdir)/sudo.ch
-syslog.xml:           $(BOOKdir)/$@ $(srcdir)/syslog.ch
-tripwire.xml:         $(BOOKdir)/$@ $(srcdir)/tripwire.ch
-vulnerabilities.xml:  $(BOOKdir)/$@ $(srcdir)/vulnerabilities.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -107,12 +107,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gobject-introspection"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
     </para>
@@ -121,13 +123,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV </ulink>, and
       <ulink url="&gnome-download-http;/nautilus-sendto/">Nautilus SendTo</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV </ulink>,
       <ulink url="&gnome-download-http;/nautilus-sendto/">Nautilus SendTo</ulink>
     </para>
 @z
@@ -193,9 +197,7 @@
           libcheese.so and libcheese-gtk.so
         </seg>
         <seg>
-          /usr/include/cheese,
-          /usr/share/gtk-doc/html/cheese, and
-          /usr/share/help/*/cheese
+          /usr/{include,share/gtk-doc/html,share/help/*}/cheese
         </seg>
 @y
         <seg>
@@ -205,9 +207,7 @@
           libcheese.so, libcheese-gtk.so
         </seg>
         <seg>
-          /usr/include/cheese,
-          /usr/share/gtk-doc/html/cheese,
-          /usr/share/help/*/cheese
+          /usr/{include,share/gtk-doc/html,share/help/*}/cheese
         </seg>
 @z
 
@@ -218,7 +218,7 @@
 @z
 
 @x cheese
-            is the webcam tool with graphical effects.
+            is a webcam tool with graphical effects.
 @y
             グラフィック効果を伴うウェブカメラツールです。
 @z

@@ -46,15 +46,15 @@
 @z
 
 @x
-      <application>GnuTLS</application> provides support for TLS 1.1, TLS
-      1.0 and SSL 3.0 protocols, TLS extensions, including server name and max
+      <application>GnuTLS</application> provides support for TLS 1.2, TLS 1.1,
+      TLS 1.0, and SSL 3.0 protocols, TLS extensions, including server name and max
       record size. Additionally, the library supports authentication using the
       SRP protocol, X.509 certificates and OpenPGP keys, along with support for
       the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
       extension and X.509 and OpenPGP certificate handling.
 @y
-      <application>GnuTLS</application> provides support for TLS 1.1, TLS
-      1.0 and SSL 3.0 protocols, TLS extensions, including server name and max
+      <application>GnuTLS</application> provides support for TLS 1.2, TLS 1.1,
+      TLS 1.0, and SSL 3.0 protocols, TLS extensions, including server name and max
       record size. Additionally, the library supports authentication using the
       SRP protocol, X.509 certificates and OpenPGP keys, along with support for
       the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
@@ -124,26 +124,34 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://ftp.gnu.org/gnu/autogen/">autogen</ulink>,
+      <xref linkend="doxygen"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
-      <xref linkend="p11-kit"/>,
-      <ulink url="http://sourceforge.net/projects/trousers/files/trousers/">Trousers</ulink> (Trusted Platform Module support),
-      <xref linkend="unbound"/> (to build the DANE library), and 
-      <ulink url="http://valgrind.org/">Valgrind</ulink> (used during the test suite)
+      <xref linkend="net-tools"/> (used during the test suite),
+      <xref linkend="texlive"/> or <xref linkend="tl-installer"/>,
+      <xref linkend="unbound"/> (to build the DANE library),
+      <xref linkend="valgrind"/> (used during the test suite),
+      <ulink url="http://ftp.gnu.org/gnu/autogen/">autogen</ulink>,
+      <ulink url="https://cmocka.org/">cmocka</ulink>,
+      <ulink url="http://ftp.debian.org/debian/pool/main/d/datefudge/">datefudge</ulink> (used during the test suite), and
+      <ulink url="http://sourceforge.net/projects/trousers/files/trousers/">Trousers</ulink> (Trusted Platform Module support)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://ftp.gnu.org/gnu/autogen/">autogen</ulink>,
+      <xref linkend="doxygen"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
       <xref linkend="libidn"/>,
-      <xref linkend="p11-kit"/>,
-      <ulink url="http://sourceforge.net/projects/trousers/files/trousers/">Trousers</ulink> (Trusted Platform モジュールサポート),
-      <xref linkend="unbound"/> (DANE ライブラリ生成のため),
-      <ulink url="http://valgrind.org/">Valgrind</ulink> (テストスイートにて利用)
+      <xref linkend="net-tools"/> (used during the test suite),
+      <xref linkend="texlive"/> or <xref linkend="tl-installer"/>,
+      <xref linkend="unbound"/> (to build the DANE library),
+      <xref linkend="valgrind"/> (used during the test suite),
+      <ulink url="http://ftp.gnu.org/gnu/autogen/">autogen</ulink>,
+      <ulink url="https://cmocka.org/">cmocka</ulink>,
+      <ulink url="http://ftp.debian.org/debian/pool/main/d/datefudge/">datefudge</ulink> (used during the test suite), and
+      <ulink url="http://sourceforge.net/projects/trousers/files/trousers/">Trousers</ulink> (Trusted Platform Module support)
     </para>
 @z
 
@@ -175,9 +183,22 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>.  If a prior
+      version of <application>GnuTLS</application> (or the same version but
+      without all of the recommended dependencies) has been installed, some
+      tests may fail. If <filename>/usr/lib/libgnutls.so</filename> and the
+      target of that symlink are moved or renamed so that they cannot be found,
+      all tests should pass and the install procedure will restore
+      <filename>libgnutls.so</filename> and the versioned library it points to.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      If a prior
+      version of <application>GnuTLS</application> (or the same version but
+      without all of the recommended dependencies) has been installed, some
+      tests may fail. If <filename>/usr/lib/libgnutls.so</filename> and the
+      target of that symlink are moved or renamed so that they cannot be found,
+      all tests should pass and the install procedure will restore
+      <filename>libgnutls.so</filename> and the versioned library it points to.
 @z
 
 @x
@@ -188,16 +209,19 @@
 @z
 
 @x
-      If you did not pass the <option>--enable-gtk-doc</option> parameter
-      to the <command>configure</command> script, you can install the API documentation
-      to the <filename class="directory">/usr/share/gtk-doc/html/gnutls</filename>
-      directory using the following command as the
-      <systemitem class="username">root</systemitem> user:
+      If you passed <option>--enable-gtk-doc</option> to the
+      <command>configure</command> script, the API will automatically be
+      installed.  Otherwise, if desired, you can still install the API
+      documentation to the <filename
+      class="directory">/usr/share/gtk-doc/html/gnutls</filename> directory
+      using the following command as the <systemitem
+      class="username">root</systemitem> user:
 @y
-      <command>configure</command> スクリプトにて <option>--enable-gtk-doc</option> オプションを指定しなかった場合は、<systemitem
-      class="username">root</systemitem> ユーザーになって以下のコマンドを実行して API ドキュメントをインストールすることができます。
+      <command>configure</command> スクリプトにて <option>--enable-gtk-doc</option> オプションを指定した場合は API ドキュメントが自動的にインストールされます。
+      これを指定しない場合であってもドキュメントをインストールしたければ <systemitem
+      class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
       ドキュメントは <filename
-      class='directory'>/usr/share/gtk-doc/html/gnutls</filename> ディレクトリにインストールされます。
+      class="directory">/usr/share/gtk-doc/html/gnutls</filename> にインストールされます。
 @z
 
 @x
@@ -224,31 +248,29 @@
 
 @x
         <seg>
-          certtool, crywrap, danetool, gnutls-cli, gnutls-cli-debug,
-          gnutls-serv, ocsptool, p11tool, psktool and srptool
+          certtool, danetool, gnutls-cli, gnutls-cli-debug,
+          gnutls-serv, ocsptool, p11tool, psktool, and srptool
         </seg>
         <seg>
-          libgnutls.so, libgnutls-openssl.so, libgnutls-xssl.so, libgnutlsxx.so
-          and /usr/lib/guile/2.0/guile-gnutls-v-2.so
-        </seg>
-        <seg>
-          /usr/include/gnutls,
-          /usr/share/gtk-doc/html/gnutls and
-          /usr/share/guile/site/gnutls
-        </seg>
-@y
-        <seg>
-          certtool, crywrap, danetool, gnutls-cli, gnutls-cli-debug,
-          gnutls-serv, ocsptool, p11tool, psktool, srptool
-        </seg>
-        <seg>
-          libgnutls.so, libgnutls-openssl.so, libgnutls-xssl.so, libgnutlsxx.so,
+          libgnutls.so, libgnutls-dane.so, libgnutlsxx.so,
+          libgnutls-openssl.so, and
           /usr/lib/guile/2.0/guile-gnutls-v-2.so
         </seg>
         <seg>
-          /usr/include/gnutls,
-          /usr/share/gtk-doc/html/gnutls,
-          /usr/share/guile/site/gnutls
+          /usr/{include,share/gtk-doc/html,share/guile/site/2.0}/gnutls
+        </seg>
+@y
+        <seg>
+          certtool, danetool, gnutls-cli, gnutls-cli-debug,
+          gnutls-serv, ocsptool, p11tool, psktool, srptool
+        </seg>
+        <seg>
+          libgnutls.so, libgnutls-dane.so, libgnutlsxx.so,
+          libgnutls-openssl.so,
+          /usr/lib/guile/2.0/guile-gnutls-v-2.so
+        </seg>
+        <seg>
+          /usr/{include,share/gtk-doc/html,share/guile/site/2.0}/gnutls
         </seg>
 @z
 

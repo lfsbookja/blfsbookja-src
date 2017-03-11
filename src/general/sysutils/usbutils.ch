@@ -140,12 +140,13 @@
 
 @x
       The <filename>usb.ids</filename> data file is constantly being updated.
-      To get a current version of this file, using <xref linkend="wget"/>, run,
-      as the <systemitem class="username">root</systemitem> user:</para>
+      To get a current version of this file, using <xref linkend="wget"/>,
+      periodically run again, as the
+      <systemitem class="username">root</systemitem> user:
 @y
       <filename>usb.ids</filename> というデータファイルは常に更新されています。
       最新版を入手するには <systemitem
-      class="username">root</systemitem> ユーザーになり <xref linkend="wget"/> コマンドを使って以下を実行します。
+      class="username">root</systemitem> ユーザーになり <xref linkend="wget"/> コマンドを使って定期的に以下を実行します。
 @z
 
 @x

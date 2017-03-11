@@ -78,15 +78,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="tcl"/>,
-      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/> -->, and
-      <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
+      <xref linkend="openjdk"/> or <xref linkend="java"/>, and
+      <xref linkend="sharutils"/> (for the <command>uudecode</command> command
+      - Java bindings are required)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="tcl"/>,
-      <xref linkend="openjdk"/><!-- or <xref linkend="jdk"/> -->,
-      <xref linkend="sharutils"/> (<command>uudecode</command> command コマンドのため)
+      <xref linkend="openjdk"/> または <xref linkend="java"/>,
+      <xref linkend="sharutils"/> (for the <command>uudecode</command> command
+      - Java bindings are required)
     </para>
 @z
 
@@ -286,8 +288,8 @@
 @z
 
 @x
-      <option>--enable-java</option>: Enables
-      <application>Java</application> support in DB and creates the
+      <option>--enable-java</option>: Enables <application>Java</application>
+      support in DB and creates the
       <filename class="libraryfile">libdb_java</filename> libraries.
 @y
       <option>--enable-java</option>:
@@ -326,11 +328,13 @@
           db_stat,
           db_tuner,
           db_upgrade, and
-          db_verify.
+          db_verify
         </seg>
         <seg>
-          libdb.so and
-          libdb_cxx.so
+          libdb.so,
+          libdb_cxx.so,
+          libdb_java.so, and
+          libdb_tcl.so
         </seg>
         <seg>/usr/share/doc/db-&db-version;</seg>
 @y
@@ -348,11 +352,13 @@
           db_stat,
           db_tuner,
           db_upgrade,
-          db_verify.
+          db_verify
         </seg>
         <seg>
           libdb.so,
-          libdb_cxx.so
+          libdb_cxx.so,
+          libdb_java.so,
+          libdb_tcl.so
         </seg>
         <seg>/usr/share/doc/db-&db-version;</seg>
 @z

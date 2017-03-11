@@ -128,19 +128,19 @@
 @z
 
 @x
-      <option>--enable-utf8</option>: This switch enables unicode support
+      <parameter>--enable-utf8</parameter>: This switch enables unicode support
       in <application>Nano</application>.
 @y
-      <option>--enable-utf8</option>:
+      <parameter>--enable-utf8</parameter>:
       <application>Nano</application> にて unicode サポートを有効にします。
 @z
 
 @x
-      <parameter>--with-slang=/usr</parameter>: This forces
-      <application>Nano</application> to use <application>S-Lang</application>.
+      <option>--with-slang</option>: This forces <application>Nano</application>
+      to use <application>S-Lang</application>.
       Use this if installed.
 @y
-      <parameter>--with-slang=/usr/lib</parameter>:
+      <option>--with-slang=/usr/lib</option>:
       <application>Nano</application> において <application>S-Lang</application> を利用するようにします。
       <application>S-Lang</application> をインストールしている場合にこれを指定します。
 @z
@@ -209,7 +209,7 @@
 
 @x
         <seg>
-          nano and rnano
+          nano and rnano (symlink)
         </seg>
         <seg>
           None
@@ -220,7 +220,7 @@
         </seg>
 @y
         <seg>
-          nano, rnano
+          nano, rnano (シンボリックリンク)
         </seg>
         <seg>
           &None;

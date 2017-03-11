@@ -101,24 +101,28 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="sdl"/> and
-    <xref linkend="libpng"/> (both to build the example players),
-    <xref linkend="doxygen"/>,
-    <xref linkend="texlive"/>,
-    <ulink url="http://bibtexml.sourceforge.net">BibTex</ulink>, and
-    <ulink url="http://www.xfig.org/">Transfig</ulink>
-    (all four to build the API documentation),
-    <ulink url="http://www.valgrind.org">Valgrind</ulink></para>
+    <para role="optional">
+      <xref linkend="sdl"/> and
+      <xref linkend="libpng"/> (both to build the example players),
+      <xref linkend="doxygen"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
+      <ulink url="http://bibtexml.sourceforge.net">BibTex</ulink>, and
+      <ulink url="http://www.xfig.org/">Transfig</ulink>
+      (all four to build the API documentation), and
+      <xref linkend="valgrind"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="sdl"/>,
-    <xref linkend="libpng"/> (both to build the example players),
-    <xref linkend="doxygen"/>,
-    <xref linkend="texlive"/>,
-    <ulink url="http://bibtexml.sourceforge.net">BibTex</ulink>,
-    <ulink url="http://www.xfig.org/">Transfig</ulink>
-    (all four to build the API documentation),
-    <ulink url="http://www.valgrind.org">Valgrind</ulink></para>
+    <para role="optional">
+      <xref linkend="sdl"/> and
+      <xref linkend="libpng"/> (both to build the example players),
+      <xref linkend="doxygen"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
+      <ulink url="http://bibtexml.sourceforge.net">BibTex</ulink>, and
+      <ulink url="http://www.xfig.org/">Transfig</ulink>
+      (all four to build the API documentation), and
+      <xref linkend="valgrind"/>
+    </para>
 @z
 
 @x

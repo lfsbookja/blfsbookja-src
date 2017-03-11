@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY cacerts-time          "less than 0.1 SBU">
+  <!ENTITY cacerts-buildsize     "4.7 MB (with all runtime deps)">
+  <!ENTITY cacerts-time          "0.2 SBU (with all runtime deps)">
 @y
-  <!ENTITY cacerts-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY cacerts-buildsize     "4.7 MB (with all runtime deps)">
+  <!ENTITY cacerts-time          "0.2 SBU (with all runtime deps)">
 @z
 
 @x
@@ -32,24 +34,21 @@
 @z
 
 @x
-  <para>The Public Key Inrastructure is used for many security issues in a
-  Linux system.  In order for a certificate to be trusted, it must be signed by
-  a trusted agent called a Certificate Authority (CA).  The certificates loaded
-  by this section are from the list on the Mozilla version control system and
-  formats it into a form used by <xref linkend='openssl'/>.  The certificates
-  can also be used by other applications either directly of indirectly through
-  <application>openssl</application>.</para>
+  <para>Public Key Infrastructure (PKI) is a method to validate the
+  authenticity of an otherwise unknown entity across untrusted networks. PKI
+  works by establishing a chain of trust, rather than trusting each individual
+  host or entity explicitly. In order for a certificate presented by a remote
+  entity to be trusted, that certificate must present a complete chain of
+  certificates that can be validated using the root certificate of a
+  Certificate Authority (CA) that is trusted by the local machine.</para>
 @y
-  <para>
-  公開鍵暗号方式は Linux システムの随所にてセキュリティ確保のために利用されます。
-  電子証明書 (certificate) が信頼できるものとするためには、電子認証局 (Certificate Authority; CA) と呼ばれる機関によりサインされていることが必要です。
-  
-
-The certificates loaded
-  by this section are from the list on the Mozilla version control system and
-  formats it into a form used by <xref linkend='openssl'/>.  The certificates
-  can also be used by other applications either directly of indirectly through
-  <application>openssl</application>.</para>
+  <para>Public Key Infrastructure (PKI) is a method to validate the
+  authenticity of an otherwise unknown entity across untrusted networks. PKI
+  works by establishing a chain of trust, rather than trusting each individual
+  host or entity explicitly. In order for a certificate presented by a remote
+  entity to be trusted, that certificate must present a complete chain of
+  certificates that can be validated using the root certificate of a
+  Certificate Authority (CA) that is trusted by the local machine.</para>
 @z
 
 @x
@@ -71,8 +70,44 @@ The certificates loaded
 @z
 
 @x
-        <para>CA Certificate Download: <ulink url="&ca-bundle-download;"/></para>
+        <para>Download (HTTP): <ulink url="&make-ca-download;"/></para>
 @y
-        <para>CA Certificate Download: <ulink url="&ca-bundle-download;"/></para>
+        <para>&Download; (HTTP): <ulink url="&make-ca-download;"/></para>
+@z
+
+@x
+        <para>Download size: &make-ca-size;</para>
+@y
+        <para>Download size: &make-ca-size;</para>
+@z
+
+@x
+        <para>Download MD5 Sum: &make-ca-md5sum;</para>
+@y
+        <para>Download MD5 Sum: &make-ca-md5sum;</para>
+@z
+
+@x
+        <para>Estimated disk space required: &cacerts-buildsize;</para>
+@y
+        <para>Estimated disk space required: &cacerts-buildsize;</para>
+@z
+
+@x
+        <para>Estimated build time: &cacerts-time;</para>
+@y
+        <para>Estimated build time: &cacerts-time;</para>
+@z
+
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect3">Certificate Authority Certificates Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">Certificate Authority Certificates Dependencies</bridgehead>
 @z
 

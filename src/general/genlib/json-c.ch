@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY json-c-time          "less than 0.1 SBU (add 1.0 SBU for tests)">
+  <!ENTITY json-c-buildsize     "4.2 MB (add 3.0 MB for tests)">
+  <!ENTITY json-c-time          "less than 0.1 SBU (add 0.9 SBU for tests)">
 @y
-  <!ENTITY json-c-time          "&LessThan1;0.1 SBU&LessThan2; (テストにさらに 1.0 SBU)">
+  <!ENTITY json-c-buildsize     "4.2 MB (テストにさらに 3.0 MB)">
+  <!ENTITY json-c-time          "&LessThan1;0.1 SBU&LessThan2; (テストにさらに 0.9 SBU)">
 @z
 
 @x

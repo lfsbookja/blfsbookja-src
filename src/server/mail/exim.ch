@@ -110,31 +110,38 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="db"/> or
-      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink> (as an
-      alternative to GDBM, built in LFS),
-      <xref linkend="x-window-system"/>,
-      <xref linkend="openldap"/>,
-      <xref linkend="openssl"/> or <xref linkend="gnutls"/>,
+      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
+      (alternatives to GDBM, built in LFS),
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="mariadb"/> or <xref linkend="mysql"/>,
+      <xref linkend="libidn"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mariadb"/> or
+      <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="openldap"/>,
+      <xref linkend="gnutls"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <xref linkend="linux-pam"/>, and
+      <xref linkend="x-window-system"/>,
+      <ulink url="http://www.hl5.org">Heimdal GSSAPI</ulink>, and
       <ulink url="http://www.trusteddomain.org/opendmarc/">OpenDMARC</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="db"/> または
-      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink> (LFS でビルドしている GDBM の代用),
-      <xref linkend="x-window-system"/>,
-      <xref linkend="openldap"/>,
-      <xref linkend="openssl"/> または <xref linkend="gnutls"/>,
+      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
+      (LFS でビルドしている GDBM の代用),
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="mariadb"/> または <xref linkend="mysql"/>,
+      <xref linkend="libidn"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mariadb"/> または
+      <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="openldap"/>,
+      <xref linkend="gnutls"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <xref linkend="linux-pam"/>,
+      <xref linkend="x-window-system"/>,
+      <ulink url="http://www.hl5.org">Heimdal GSSAPI</ulink>,
       <ulink url="http://www.trusteddomain.org/opendmarc/">OpenDMARC</ulink>
     </para>
 @z
@@ -196,19 +203,29 @@
 
 @x
     <para><command>sed -e ... > Local/Makefile</command>: Most of
-    <application>Exim</application>'s configuration options are compiled in using
-    the directives in <filename>Local/Makefile</filename> which is created from
+    <application>Exim</application>'s configuration options are defined
+    in <filename>Local/Makefile</filename>, which is created from
     the <filename>src/EDITME</filename> file. This command specifies the minimum
     set of options. Descriptions for the options are listed below.</para>
 @y
     <para><command>sed -e ... > Local/Makefile</command>: Most of
-    <application>Exim</application>'s configuration options are compiled in using
-    the directives in <filename>Local/Makefile</filename> which is created from
+    <application>Exim</application>'s configuration options are defined
+    in <filename>Local/Makefile</filename>, which is created from
     the <filename>src/EDITME</filename> file. This command specifies the minimum
     set of options. Descriptions for the options are listed below.</para>
 @z
 
 @x
+    <para><command>printf ... > Local/Makefile</command>: Setting those
+    variables allows to use GDBM instead of the default Berkeley DB. Remove
+    this command if you have installed <xref linkend="db"/>.</para>
+@y
+    <para><command>printf ... > Local/Makefile</command>: Setting those
+    variables allows to use GDBM instead of the default Berkeley DB. Remove
+    this command if you have installed <xref linkend="db"/>.</para>
+@z
+
+@x
     <para><parameter>BIN_DIRECTORY=/usr/sbin</parameter>: This installs all of
     <application>Exim</application>'s binaries and scripts in
     <filename class='directory'>/usr/sbin</filename>.</para>
@@ -243,6 +260,32 @@
 @z
 
 @x
+    <para><parameter>SUPPORT_TLS=yes</parameter>: This allows to support
+    STARTTLS connexions. If you use this option, you need to select
+    whether <application>OpenSSL</application> or
+    <application>GnuTLS</application> is used (see
+    <filename>src/EDITME</filename>).</para>
+@y
+    <para><parameter>SUPPORT_TLS=yes</parameter>: This allows to support
+    STARTTLS connexions. If you use this option, you need to select
+    whether <application>OpenSSL</application> or
+    <application>GnuTLS</application> is used (see
+    <filename>src/EDITME</filename>).</para>
+@z
+
+@x
+    <para><parameter>USE_OPENSSL_PC=openssl</parameter>: This tells the
+    build system to use <application>OpenSSL</application>, and to
+    find the needed libraries with <application>pkg-config</application>.
+    </para>
+@y
+    <para><parameter>USE_OPENSSL_PC=openssl</parameter>: This tells the
+    build system to use <application>OpenSSL</application>, and to
+    find the needed libraries with <application>pkg-config</application>.
+    </para>
+@z
+
+@x
     <para><parameter>#EXIM_MONITOR</parameter>: This defers building the
     <application>Exim</application> monitor program, as it requires
     <application>X Window System</application> support, by commenting out the
@@ -272,6 +315,22 @@
     <command>sendmail</command> for applications which need it.
     <application>Exim</application> will accept most
     <application>Sendmail</application> command-line options.</para>
+@z
+
+@x
+    <para><command>install -v -m750 -o exim -g exim /var/spool/exim</command>:
+    Since /var/spool is owned by root and this version of <command>exim</command>
+    drops <systemitem class="username">root</systemitem> privileges early, to
+    run as user <systemitem class="username">exim</systemitem>, it cannot create
+    the <filename class="directory">/var/spool/exim</filename> directory. As a
+    work around, it is created manually.</para>
+@y
+    <para><command>install -v -m750 -o exim -g exim /var/spool/exim</command>:
+    Since /var/spool is owned by root and this version of <command>exim</command>
+    drops <systemitem class="username">root</systemitem> privileges early, to
+    run as user <systemitem class="username">exim</systemitem>, it cannot create
+    the <filename class="directory">/var/spool/exim</filename> directory. As a
+    work around, it is created manually.</para>
 @z
 
 @x
@@ -313,13 +372,13 @@
     scanning software directly from access control lists, uncomment the
     <option>WITH_CONTENT_SCAN=yes</option> parameter and review the information
     found at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch41.html"/>.</para>
+    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.</para>
 @y
     <para>If you wish to build in Exim's interfaces for calling virus and spam
     scanning software directly from access control lists, uncomment the
     <option>WITH_CONTENT_SCAN=yes</option> parameter and review the information
     found at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch41.html"/>.</para>
+    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.</para>
 @z
 
 @x
@@ -336,12 +395,12 @@
     <para>For SSL functionality, see the instructions at <ulink
     url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
     and <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch39.html"/>.</para>
+    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.</para>
 @y
     <para>For SSL functionality, see the instructions at <ulink
     url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
     and <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch39.html"/>.</para>
+    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.</para>
 @z
 
 @x
@@ -356,11 +415,11 @@
 
 @x
     <para>For information about adding authentication mechanisms to the
-    build, see chapters 33-37 of <ulink
+    build, see chapters 33&mdash;41 of <ulink
     url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.</para>
 @y
     <para>For information about adding authentication mechanisms to the
-    build, see chapters 33-37 of <ulink
+    build, see chapters 33&mdash;41 of <ulink
     url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.</para>
 @z
 
@@ -403,13 +462,13 @@
     syslog instead of the default
     <filename class='directory'>/var/spool/exim/log</filename> directory. See the
     information at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch49.html"/>.</para>
+    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch52.html"/>.</para>
 @y
     <para>You may wish to modify the default configuration and send log files to
     syslog instead of the default
     <filename class='directory'>/var/spool/exim/log</filename> directory. See the
     information at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch49.html"/>.</para>
+    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch52.html"/>.</para>
 @z
 
 @x
@@ -439,15 +498,31 @@
 @z
 
 @x
-      <para>A default (nothing but comments) <filename>/etc/aliases</filename>
-      file is installed during the package installation if this file did not
-      exist on your system. Create the necessary aliases and start the
-      <application>Exim</application> daemon using the following commands:</para>
+        Review the file <filename>/etc/exim.conf</filename>, and modify any
+        settings to suit your needs. Note that the default configuration
+        assumes that the <filename class="directory">/var/mail</filename>
+        directory is world writable, but has the stiky bit set. If you want
+        to use the default configuration, issue as the <systemitem
+        class="username">root</systemitem> user:
 @y
-      <para>A default (nothing but comments) <filename>/etc/aliases</filename>
-      file is installed during the package installation if this file did not
-      exist on your system. Create the necessary aliases and start the
-      <application>Exim</application> daemon using the following commands:</para>
+        Review the file <filename>/etc/exim.conf</filename>, and modify any
+        settings to suit your needs. Note that the default configuration
+        assumes that the <filename class="directory">/var/mail</filename>
+        directory is world writable, but has the stiky bit set. If you want
+        to use the default configuration, issue as the <systemitem
+        class="username">root</systemitem> user:
+@z
+
+@x
+        A default (nothing but comments) <filename>/etc/aliases</filename>
+        file is installed during the package installation if this file did not
+        exist on your system. Create the necessary aliases and start the
+        <application>Exim</application> daemon using the following commands:
+@y
+        A default (nothing but comments) <filename>/etc/aliases</filename>
+        file is installed during the package installation if this file did not
+        exist on your system. Create the necessary aliases and start the
+        <application>Exim</application> daemon using the following commands:
 @z
 
 @x
@@ -473,33 +548,43 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
-      <para>To automate the running of <command>exim</command> at startup,
-      install the <filename>/etc/rc.d/init.d/exim</filename> init script
-      included in the <xref linkend="bootscripts"/>
-      package.</para>
+      <para>To automatically start <command>exim</command> at boot,
+      install the
+      <phrase revision="sysv"><filename>/etc/rc.d/init.d/exim</filename>
+      init script</phrase>
+      <phrase revision="systemd"><filename>exim.service</filename> unit</phrase>
+      included in the <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> package.</para>
 @y
-      <para>To automate the running of <command>exim</command> at startup,
-      install the <filename>/etc/rc.d/init.d/exim</filename> init script
-      included in the <xref linkend="bootscripts"/>
-      package.</para>
+      <para>To automatically start <command>exim</command> at boot,
+      install the
+      <phrase revision="sysv"><filename>/etc/rc.d/init.d/exim</filename>
+      init script</phrase>
+      <phrase revision="systemd"><filename>exim.service</filename> unit</phrase>
+      included in the <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> package.</para>
 @z
 
 @x
-      <para>The bootscript also starts the <application>Exim</application>
-      daemon and dispatches a queue runner process every 15 minutes. Modify
-      the <option>-q<replaceable>&lt;time interval&gt;</replaceable></option>
+      <para revision="sysv">The bootscript also starts the
+      <application>Exim</application> daemon and dispatches a queue runner
+      process every 15 minutes. Modify the
+      <option>-q<replaceable>&lt;time interval&gt;</replaceable></option>
       parameter in <filename>/etc/rc.d/init.d/exim</filename>, if necessary
       for your installation.</para>
 @y
-      <para>The bootscript also starts the <application>Exim</application>
-      daemon and dispatches a queue runner process every 15 minutes. Modify
-      the <option>-q<replaceable>&lt;time interval&gt;</replaceable></option>
+      <para revision="sysv">The bootscript also starts the
+      <application>Exim</application> daemon and dispatches a queue runner
+      process every 15 minutes. Modify the
+      <option>-q<replaceable>&lt;time interval&gt;</replaceable></option>
       parameter in <filename>/etc/rc.d/init.d/exim</filename>, if necessary
       for your installation.</para>
 @z
@@ -521,17 +606,17 @@
 @z
 
 @x
-        <seg>exicyclog, exigrep, exim, exim-4.82-3, exim_checkaccess,
+        <seg>exicyclog, exigrep, exim, exim-&exim-daemon-version;, exim_checkaccess,
         exim_dbmbuild, exim_dumpdb, exim_fixdb, exim_lock, exim_tidydb,
         eximstats, exinext, exipick, exiqgrep, exiqsumm, exiwhat, and
-        optionally, eximon and eximon.bin</seg>
+        optionally, eximon, eximon.bin, and sendmail (symlink)</seg>
         <seg>None</seg>
         <seg>/usr/share/doc/exim-&exim-version; and /var/spool/exim</seg>
 @y
-        <seg>exicyclog, exigrep, exim, exim-4.82-3, exim_checkaccess,
+        <seg>exicyclog, exigrep, exim, exim-&exim-daemon-version;, exim_checkaccess,
         exim_dbmbuild, exim_dumpdb, exim_fixdb, exim_lock, exim_tidydb,
         eximstats, exinext, exipick, exiqgrep, exiqsumm, exiwhat,
-        任意ビルドとして eximon, eximon.bin</seg>
+        任意ビルドとして eximon, eximon.bin, and sendmail (シンボリックリンク)</seg>
         <seg>&None;</seg>
         <seg>/usr/share/doc/exim-&exim-version;, /var/spool/exim</seg>
 @z

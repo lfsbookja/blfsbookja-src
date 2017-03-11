@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "192 MB, with typical dependencies (227 MB with the test suite, reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "2.2 SBU - typical build (additional 3.4 SBU to run the test suite and 3.3 SBU to run the validation suite)">
+  <!ENTITY imagemagick-buildsize     "184 MB, with typical dependencies">
+  <!ENTITY imagemagick-time          "2.6 SBU - typical build (add 3.2 SBU for the the validation suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "192 MB, with typical dependencies (227 MB with the test suite, reputedly 450 MB with all dependencies)">
-  <!ENTITY imagemagick-time          "2.2 SBU - typical build (additional 3.4 SBU to run the test suite and 3.3 SBU to run the validation suite)">
+  <!ENTITY imagemagick-buildsize     "184 MB, with typical dependencies">
+  <!ENTITY imagemagick-time          "2.6 SBU - typical build (add 3.2 SBU for the the validation suite)">
 @z
 
 @x
@@ -29,14 +29,14 @@
 
 @x
       <application>ImageMagick</application> is a collection of tools and
-      libraries to read, write, and manipulate an image in various image formats.
-      Image processing operations are available from the command line. Bindings
-      for Perl and C++ are also available.
+      libraries to read, write, and manipulate an image in various image
+      formats.  Image processing operations are available from the command line.
+      Bindings for Perl and C++ are also available.
 @y
       <application>ImageMagick</application> is a collection of tools and
-      libraries to read, write, and manipulate an image in various image formats.
-      Image processing operations are available from the command line. Bindings
-      for Perl and C++ are also available.
+      libraries to read, write, and manipulate an image in various image
+      formats.  Image processing operations are available from the command line.
+      Bindings for Perl and C++ are also available.
 @z
 
 @x
@@ -82,27 +82,27 @@
 @z
 
 @x
-        The <application>ImageMagick</application> source releases are
-        updated frequently and the version shown above may no longer be available
-        from the download locations. You can download a more recent version and use
+        The <application>ImageMagick</application> source releases are updated
+        frequently and the version shown above may no longer be available from
+        the download locations. You can download a more recent version and use
         the existing BLFS instructions to install it. Chances are that it will
         work just fine, but this has not been tested by the BLFS team. If the
         package version shown above is not available from the locations shown
-        above, or from the <filename class='directory'>legacy/</filename> directory
-        at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you can download it
-        from the BLFS package server at <ulink
-        url="&sources-anduin-http;/i/ImageMagick-&imagemagick-version;-&imagemagick-patch-version;.tar.xz"/>.
+        above, or from the <filename class='directory'>legacy/</filename>
+        directory at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you
+        can download it from the BLFS package server at Oregon State University: 
+        <ulink url="ftp://ftp.osuosl.org/pub/blfs/conglomeration/ImageMagick/"/>.
 @y
-        The <application>ImageMagick</application> source releases are
-        updated frequently and the version shown above may no longer be available
-        from the download locations. You can download a more recent version and use
+        The <application>ImageMagick</application> source releases are updated
+        frequently and the version shown above may no longer be available from
+        the download locations. You can download a more recent version and use
         the existing BLFS instructions to install it. Chances are that it will
         work just fine, but this has not been tested by the BLFS team. If the
         package version shown above is not available from the locations shown
-        above, or from the <filename class='directory'>legacy/</filename> directory
-        at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you can download it
-        from the BLFS package server at <ulink
-        url="&sources-anduin-http;/i/ImageMagick-&imagemagick-version;-&imagemagick-patch-version;.tar.xz"/>.
+        above, or from the <filename class='directory'>legacy/</filename>
+        directory at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you
+        can download it from the BLFS package server at Oregon State University: 
+        <ulink url="ftp://ftp.osuosl.org/pub/blfs/conglomeration/ImageMagick/"/>.
 @z
 
 @x
@@ -124,28 +124,28 @@
 @z
 
 @x
-      The optional dependencies listed below should be installed if you
-      need support for the specific format or the conversion tool the dependency
+      The optional dependencies listed below should be installed if you need
+      support for the specific format or the conversion tool the dependency
       provides. Many of the dependencies' capabilities and uses are described in
       the <quote>MAGICK DELEGATES</quote> section of the
-      <filename>README.txt</filename> file located in the source tree. Additional
-      information about the dependencies can be found in the
+      <filename>README.txt</filename> file located in the source tree.
+      Additional information about the dependencies can be found in the
       <filename>Install-unix.txt</filename> file located in the source tree as
       well as issuing the <command>./configure --help</command> command. A
-      summary of this information, as well as some additional notes can be viewed
-      on-line at <ulink
+      summary of this information, as well as some additional notes can be
+      viewed on-line at <ulink
       url="http://www.imagemagick.org/script/advanced-unix-installation.php"/>.
 @y
-      The optional dependencies listed below should be installed if you
-      need support for the specific format or the conversion tool the dependency
+      The optional dependencies listed below should be installed if you need
+      support for the specific format or the conversion tool the dependency
       provides. Many of the dependencies' capabilities and uses are described in
       the <quote>MAGICK DELEGATES</quote> section of the
-      <filename>README.txt</filename> file located in the source tree. Additional
-      information about the dependencies can be found in the
+      <filename>README.txt</filename> file located in the source tree.
+      Additional information about the dependencies can be found in the
       <filename>Install-unix.txt</filename> file located in the source tree as
       well as issuing the <command>./configure --help</command> command. A
-      summary of this information, as well as some additional notes can be viewed
-      on-line at <ulink
+      summary of this information, as well as some additional notes can be
+      viewed on-line at <ulink
       url="http://www.imagemagick.org/script/advanced-unix-installation.php"/>.
 @z
 
@@ -163,12 +163,15 @@
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <ulink url="http://www.fftw.org/">FFTW</ulink>,
-      <ulink url="http://www.openpgp.org/resources/downloads">PGP</ulink> or
+      <ulink url="http://www.openpgp.org/about/">PGP</ulink> or
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/profiles.zip">Profiles</ulink>, and
-      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
-      <filename>www/formats.html</filename>)
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates">Profiles</ulink>,
+      and
+      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats
+      listed in
+      <ulink url="http://imagemagick.org/script/formats.php">
+      http://www.imagemagick.org/www/formats.html</ulink>)
     </para>
 @y
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
@@ -184,12 +187,15 @@
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <ulink url="http://www.fftw.org/">FFTW</ulink>,
-      <ulink url="http://www.openpgp.org/resources/downloads">PGP</ulink> または
+      <ulink url="http://www.openpgp.org/about/">PGP</ulink> or
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/profiles.zip">Profiles</ulink>, and
-      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats listed in
-      <filename>www/formats.html</filename>)
+      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates">Profiles</ulink>,
+      and
+      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats
+      listed in
+      <ulink url="http://imagemagick.org/script/formats.php">
+      http://www.imagemagick.org/www/formats.html</ulink>)
     </para>
 @z
 
@@ -210,8 +216,10 @@
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
       FlashPIX (libfpx)</ulink>,
+      <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
       <ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,
+      <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
       <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
@@ -234,8 +242,10 @@
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
       FlashPIX (libfpx)</ulink>,
+      <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
       <ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,
+      <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
       <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
@@ -246,13 +256,13 @@
 @x
     <bridgehead renderas="sect4">Optional Graphics Utilities</bridgehead>
     <para role="optional">
+      <xref linkend="dejavu-fonts"/>,
       <xref linkend="gs"/>,
       <xref linkend="gimp"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="inkscape"/>,
       <ulink url="http://www.blender.org/">Blender</ulink>,
       <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
-      <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
       <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink>,
       <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
       <ulink url="http://www.povray.org/">POV-Ray</ulink>, and
@@ -261,16 +271,16 @@
 @y
     <bridgehead renderas="sect4">Optional Graphics Utilities</bridgehead>
     <para role="optional">
+      <xref linkend="dejavu-fonts"/>,
       <xref linkend="gs"/>,
       <xref linkend="gimp"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="inkscape"/>,
       <ulink url="http://www.blender.org/">Blender</ulink>,
       <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
-      <ulink url="http://dejavu.sourceforge.net/">DejaVu fonts</ulink>,
       <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink>,
       <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
-      <ulink url="http://www.povray.org/">POV-Ray</ulink>, and
+      <ulink url="http://www.povray.org/">POV-Ray</ulink>,
       <ulink url="http://www.radiance-online.org/">Radiance</ulink>
     </para>
 @z
@@ -322,7 +332,8 @@
 @z
 
 @x
-      Install <application>ImageMagick</application> by running the following commands:
+      Install <application>ImageMagick</application> by running the following
+      commands:
 @y
       以下のコマンドを実行して <application>ImageMagick</application> をビルドします。
 @z
@@ -342,8 +353,10 @@
       validation suite. The result summary may be obtained with <command>grep
       "validation suite" validate.log</command>. Note that the EPS, PS, and PDF
       tests require a working <application>Ghostscript</application>. One test
-      needs <quote>Helvetica</quote> from <quote>Ghostscript Standard
-      Fonts</quote>, which are optionally installed in <xref linkend="gs"/>.
+      in 'make check' needs <quote>Helvetica</quote> from <quote>Ghostscript
+      Standard Fonts</quote>, which are optionally installed in
+      <xref linkend="gs"/> - that test, and one other, might fail, but all the
+      validation can still pass.
 @y
       To test the installation, issue: <command>make check</command>. A more
       comprehensive test is the <application>ImageMagick</application>
@@ -353,8 +366,10 @@
       validation suite. The result summary may be obtained with <command>grep
       "validation suite" validate.log</command>. Note that the EPS, PS, and PDF
       tests require a working <application>Ghostscript</application>. One test
-      needs <quote>Helvetica</quote> from <quote>Ghostscript Standard
-      Fonts</quote>, which are optionally installed in <xref linkend="gs"/>.
+      in 'make check' needs <quote>Helvetica</quote> from <quote>Ghostscript
+      Standard Fonts</quote>, which are optionally installed in
+      <xref linkend="gs"/> - that test, and one other, might fail, but all the
+      validation can still pass.
 @z
 
 @x
@@ -473,41 +488,43 @@
 
 @x
         <seg>
-          animate, compare, composite, conjure, convert, display,
-          identify, import, Magick-config, Magick++-config, MagickCore-config,
-          MagickWand-config, mogrify, montage, stream, and Wand-config
+          magick, Magick++-config, MagickCore-config, and MagickWand-config.
+          (animate, compare, composite, conjure, convert, display,
+          identify, import, magick-script, mogrify, montage, and stream
+          are all symbolic links to magick)
         </seg>
         <seg>
-          libMagickCore-6.Q16HDRI.so,
-          libMagickWand-6.Q16HDRI.so and
-          libMagick++-6.Q16HDRI.so
+          libMagickCore-7.Q16HDRI.so,
+          libMagickWand-7.Q16HDRI.so and
+          libMagick++-7.Q16HDRI.so
         </seg>
         <seg>
-          /etc/ImageMagick-6,
-          /usr/include/ImageMagick-6,
+          /etc/ImageMagick-7,
+          /usr/include/ImageMagick-7,
           /usr/lib/ImageMagick-&imagemagick-version;,
           /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto}/Image/Magick,
           /usr/share/doc/ImageMagick-&imagemagick-version;, and
-          /usr/share/ImageMagick-6
+          /usr/share/ImageMagick-7
         </seg>
 @y
         <seg>
-          animate, compare, composite, conjure, convert, display,
-          identify, import, Magick-config, Magick++-config, MagickCore-config,
-          MagickWand-config, mogrify, montage, stream, and Wand-config
+          magick, Magick++-config, MagickCore-config, and MagickWand-config.
+          (animate, compare, composite, conjure, convert, display,
+          identify, import, magick-script, mogrify, montage, and stream
+          are all symbolic links to magick)
         </seg>
         <seg>
-          libMagickCore-6.Q16HDRI.so,
-          libMagickWand-6.Q16HDRI.so and
-          libMagick++-6.Q16HDRI.so
+          libMagickCore-7.Q16HDRI.so,
+          libMagickWand-7.Q16HDRI.so,
+          libMagick++-7.Q16HDRI.so
         </seg>
         <seg>
-          /etc/ImageMagick-6,
-          /usr/include/ImageMagick-6,
+          /etc/ImageMagick-7,
+          /usr/include/ImageMagick-7,
           /usr/lib/ImageMagick-&imagemagick-version;,
           /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto}/Image/Magick,
-          /usr/share/doc/ImageMagick-&imagemagick-version;, and
-          /usr/share/ImageMagick-6
+          /usr/share/doc/ImageMagick-&imagemagick-version;,
+          /usr/share/ImageMagick-7
         </seg>
 @z
 
@@ -599,24 +616,3 @@
          portion of the image to your choice of storage formats.</para>
 @z
 
-@x Wand-config
-        <para>shows the options required to use the Wand library.</para>
-@y
-        <para>shows the options required to use the Wand library.</para>
-@z
-
-@x Image::Magick
-        <para>allows the reading, manipulation and writing of a large number of
-        image file formats using the <application>ImageMagick</application>
-        library. Run <command>make</command> in the
-        <filename class='directory'>PerlMagick/demo</filename> directory of
-        the package source tree after the package is installed to see a nice
-        demo of the module's capabilities.</para>
-@y
-        <para>allows the reading, manipulation and writing of a large number of
-        image file formats using the <application>ImageMagick</application>
-        library. Run <command>make</command> in the
-        <filename class='directory'>PerlMagick/demo</filename> directory of
-        the package source tree after the package is installed to see a nice
-        demo of the module's capabilities.</para>
-@z

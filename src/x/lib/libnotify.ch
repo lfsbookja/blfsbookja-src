@@ -104,27 +104,15 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="gtk-doc"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="gtk-doc"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Required (runtime)</bridgehead>
-    <para role="required">
+    <para role="required runtime">
       <xref linkend="notification-daemon"/> or
       <xref linkend="xfce4-notifyd"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
-    <para role="required">
-      <xref linkend="notification-daemon"/> または
+    <para role="required runtime">
+      <xref linkend="notification-daemon"/> or
       <xref linkend="xfce4-notifyd"/>
     </para>
 @z

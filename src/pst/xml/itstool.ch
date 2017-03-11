@@ -20,9 +20,9 @@
 @z
 
 @x
-    <title>Introduction to Itstool</title>
+    <title>Introduction to itstool</title>
 @y
-    <title>&IntroductionTo1;Itstool&IntroductionTo2;</title>
+    <title>&IntroductionTo1;itstool&IntroductionTo2;</title>
 @z
 
 @x
@@ -88,15 +88,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/> and
+      <xref linkend="DocBook"/><!--,
+      <xref linkend="docbook-xsl"/>--> and
       <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>,
+      <xref linkend="DocBook"/><!--,
+      <xref linkend="docbook-xsl"/>-->,
       <xref linkend="python2"/>
     </para>
 @z
@@ -108,16 +108,16 @@
 @z
 
 @x
-    <title>Installation of Itstool</title>
+    <title>Installation of itstool</title>
 @y
-    <title>&InstallationOf1;Itstool&InstallationOf2;</title>
+    <title>&InstallationOf1;itstool&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>Itstool</application> by running the following
+      Install <application>itstool</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Itstool</application> をビルドします。
+      以下のコマンドを実行して <application>itstool</application> をビルドします。
 @z
 
 @x

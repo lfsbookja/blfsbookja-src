@@ -125,9 +125,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -168,12 +168,8 @@
         </seg>
         <seg>
           /etc/xdg/xfce4,
-          /usr/include/exo-1,
-          /usr/lib/xfce4/exo-1,
-          /usr/share/doc/exo-&exo-version;,
-          /usr/share/gtk-doc/html/exo-1,
-          /usr/share/pixmaps/exo-1 and
-          /usr/share/xfce4
+          /usr/{include,lib/xfce4}/exo-1, and
+          /usr/share/{{gtk-doc/html,pixmaps}/exo-1,xfce4}
         </seg>
 @y
         <seg>
@@ -185,12 +181,8 @@
         </seg>
         <seg>
           /etc/xdg/xfce4,
-          /usr/include/exo-1,
-          /usr/lib/xfce4/exo-1,
-          /usr/share/doc/exo-&exo-version;,
-          /usr/share/gtk-doc/html/exo-1,
-          /usr/share/pixmaps/exo-1,
-          /usr/share/xfce4
+          /usr/{include,lib/xfce4}/exo-1,
+          /usr/share/{{gtk-doc/html,pixmaps}/exo-1,xfce4}
         </seg>
 @z
 

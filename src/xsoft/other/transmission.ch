@@ -81,7 +81,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="libevent"/>, and
       <xref linkend="openssl"/>
     </para>
@@ -89,7 +88,6 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="libevent"/>,
       <xref linkend="openssl"/>
     </para>
@@ -98,15 +96,13 @@
 @x
     <bridgehead renderas="sect4">Recommended (to build a GUI)</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/> and either
-      <xref linkend="qt4"/> or
+      <xref linkend="gtk3"/> and 
       <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (GUI ビルド時)</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/>,
-      <xref linkend="qt4"/> または
       <xref linkend="qt5"/>
     </para>
 @z
@@ -138,17 +134,16 @@
 @z
 
 @x
-      Install <application>Transmission</application> by running the following
-      commands:
+      Install <application>Transmission</application> by running the
+      following commands:
 @y
       以下のコマンドを実行して <application>Transmission</application> をビルドします。
 @z
 
 @x
-      If you have installed Qt and would like to compile the
-      Qt GUI, run the following commands:
+      Compile the Qt GUI with the following commands:
 @y
-      Qt をインストールしていて Qt GUI をビルドする場合は以下を実行します。
+      Compile the Qt GUI with the following commands:
 @z
 
 @x

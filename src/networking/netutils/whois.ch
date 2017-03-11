@@ -28,14 +28,14 @@
 @x
     <para><application>Whois</application> is a client-side application which
     queries the whois directory service for information pertaining to a
-    particular domain name. This package by default will install two programs:
+    particular domain name. This package will install two programs by default:
     <command>whois</command> and <command>mkpasswd</command>. The
     <command>mkpasswd</command> command is also installed by the
     <xref linkend="expect"/> package.</para>
 @y
     <para>
     <application>Whois</application> はクライアント側のアプリケーションで、指定されたドメイン名に対する情報を提供する whois ディレクトリサービスを検索します。
-    このパッケージはデフォルトでは二つのプログラムをインストールします。
+    このパッケージは二つのプログラムをインストールします。
     <command>whois</command> と <command>mkpasswd</command> です。
     <command>mkpasswd</command> コマンドは <xref linkend="expect"/> でもインストールされます。
     </para>

@@ -191,27 +191,27 @@
 @z
 
 @x
-    <para>The <application>rxvt-unicode</application> terminal emulator
-    uses the resource class <classname>URxvt</classname> and the resource name
-    <classname>urxvt</classname>. You can add X resource definitions to a
-    user's <filename>~/.Xresources</filename> file or to the system-wide
-    <filename>/etc/X11/app-defaults/URxvt</filename> file. The following
-    example will load the <classname>matcher</classname>
+    <para>The <application>rxvt-unicode</application> terminal emulator uses the
+    resource class <classname>URxvt</classname> and the resource name
+    <classname>urxvt</classname>. You can add X resource definitions to a user's
+    <filename>~/.Xresources</filename> or <filename>~/.Xdefaults</filename>
+    files or to the system-wide <filename>/etc/X11/app-defaults/URxvt</filename>
+    file. The following example will load the <classname>matcher</classname>
     <application>Perl</application> extension (assuming
     <application>Perl</application> support wasn't disabled), which enables a
-    middle button click to open an underlined URL in the specified browser,
-    sets a background and foreground color and loads an Xft font:</para>
+    left button click to open an underlined URL in the specified browser, sets a
+    background and foreground color and loads an Xft font:</para>
 @y
-    <para>The <application>rxvt-unicode</application> terminal emulator
-    uses the resource class <classname>URxvt</classname> and the resource name
-    <classname>urxvt</classname>. You can add X resource definitions to a
-    user's <filename>~/.Xresources</filename> file or to the system-wide
-    <filename>/etc/X11/app-defaults/URxvt</filename> file. The following
-    example will load the <classname>matcher</classname>
+    <para>The <application>rxvt-unicode</application> terminal emulator uses the
+    resource class <classname>URxvt</classname> and the resource name
+    <classname>urxvt</classname>. You can add X resource definitions to a user's
+    <filename>~/.Xresources</filename> or <filename>~/.Xdefaults</filename>
+    files or to the system-wide <filename>/etc/X11/app-defaults/URxvt</filename>
+    file. The following example will load the <classname>matcher</classname>
     <application>Perl</application> extension (assuming
     <application>Perl</application> support wasn't disabled), which enables a
-    middle button click to open an underlined URL in the specified browser,
-    sets a background and foreground color and loads an Xft font:</para>
+    left button click to open an underlined URL in the specified browser, sets a
+    background and foreground color and loads an Xft font:</para>
 @z
 
 @x

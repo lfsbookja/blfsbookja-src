@@ -21,17 +21,11 @@
 
 @x
     <para>This library provides a <application>Qt</application> implementation
-    of the DBusMenu specification that exposes menus via DBus.  Its
-    libraries are used by both KDE4 and KF5, but they must be linked to <xref
-    linkend='qt4'/> and <xref linkend='qt5'/> respectively. The two versions do
-    not conflict with each other. </para>
+    of the DBusMenu specification that exposes menus via DBus.</para>
 @y
     <para>
     このライブラリは DBusMenu 仕様の <application>Qt</application> による実装です。
     DBus 上にてメニュー表示を行うことを目的としています。
-    Its libraries are used by both KDE4 and KF5, but they must be linked to <xref
-    linkend='qt4'/> and <xref linkend='qt5'/> respectively. The two versions do
-    not conflict with each other. 
     </para>
 @z
 
@@ -86,26 +80,24 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/> or <xref linkend="qt5"/>
+      <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="qt4"/> または <xref linkend="qt5"/>
+      <xref linkend="qt5"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-    <xref linkend="qjson"/> (for building the test suite) and
-    <xref linkend="doxygen"/> (for building the API documentation)
+      <xref linkend="doxygen"/> (for building the API documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-    <xref linkend="qjson"/> (テストスイート実行のために),
-    <xref linkend="doxygen"/> (API ドキュメント生成時)
+      <xref linkend="doxygen"/> (for building the API documentation)
     </para>
 @z
 
@@ -122,23 +114,19 @@
 @z
 
 @x
-    <para>Install the qt4 based version of
-    <application>libdbusmenu-qt</application> by running the following
-    commands:</para>
+    <para>Install <application>libdbusmenu-qt</application> by running the
+    following commands:</para>
 @y
     <para>
-    以下のコマンドを実行して qt4 ベースの <application>libdbusmenu-qt</application> をビルドします。
+    以下のコマンドを実行して <application>libdbusmenu-qt</application> をビルドします。
     </para>
 @z
 
 @x
-    <para>To test the results
-    (<xref linkend="qjson"/> must be installed),
-    issue: <command>make -k check</command>. One test is known to fail.</para>
+    <para>This packages doe not come with a working test suite.</para>
 @y
     <para>
-    ビルド結果をテストする場合 (その場合は <xref
-    linkend="qjson"/> のインストールが必要であり)、<command>make -k check</command> を実行します。
+    本パッケージには有効なテストスイートがありません。
     </para>
 @z
 
@@ -155,21 +143,22 @@
 @z
 
 @x
-    <para><option>-DCMAKE_BUILD_TYPE=Release</option>: This switch is used to
-    build without debugging symbols and apply a higher level of compiler 
-    optimizations.</para>
+    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+    used to build without debugging symbols and apply a higher level of
+    compiler optimizations.</para>
 @y
-    <para><option>-DCMAKE_BUILD_TYPE=Release</option>:
+    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
     本スイッチによりデバッグシンボルを取り除き、コンパイラーの最適化レベルを上げて処理します。
     </para>
 @z
 
 @x
-    <para><option>-DWITH_DOC=OFF</option>: This option is set to avoid building
-    the API documentation. Omit it if you have <application>doxygen</application>
-    installed and want the documentation.</para>
+    <para><parameter>-DWITH_DOC=OFF</parameter>: This option is set to avoid
+    building the API documentation. Omit it if you have
+    <application>doxygen</application> installed and want the
+    documentation.</para>
 @y
-    <para><option>-DWITH_DOC=OFF</option>:
+    <para><parameter>-DWITH_DOC=OFF</parameter>:
     このオプションは API ドキュメントのビルドを行わないようにします。
     <application>doxygen</application> をインストールしていて、ドキュメントを必要とする場合は、このオプションを取り除いてください。
     </para>
@@ -193,12 +182,12 @@
 
 @x
         <seg>None</seg>
-        <seg>libdbusmenu-qt.so and libdbusmenu-qt5.so</seg>
-        <seg>/usr/include/dbusmenu-qt and
+        <seg>libdbusmenu-qt5.so</seg>
+        <seg>/usr/lib/cmake/dbusmenu-qt5 and
              /usr/include/dbusmenu-qt5</seg>
 @y
         <seg>&None;</seg>
-        <seg>libdbusmenu-qt.so, libdbusmenu-qt5.so</seg>
-        <seg>/usr/include/dbusmenu-qt,
+        <seg>libdbusmenu-qt5.so</seg>
+        <seg>/usr/lib/cmake/dbusmenu-qt5 and
              /usr/include/dbusmenu-qt5</seg>
 @z

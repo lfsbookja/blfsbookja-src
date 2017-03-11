@@ -20,16 +20,15 @@
 @z
 
 @x
-      The <application>GPGME</application> package is a C language
-      library that allows to add support for cryptography to a
+      The <application>GPGME</application> package is a C library
+      that allows cryptography support to be added to a
       program. It is designed to make access to public key crypto
       engines like <application>GnuPG</application> or GpgSM easier
       for applications. <application>GPGME</application> provides
       a high-level crypto API for encryption, decryption, signing,
       signature verification and key management.
 @y
-      <application>GPGME</application>
-      パッケージは C 言語により構築されたライブラリであり、暗号化機能をプログラムに付与することができます。
+      <application>GPGME</application> パッケージは C 言語により構築されたライブラリであり、暗号化機能をプログラムに付与することができます。
       これは <application>GnuPG</application> や GpgSM などと同じように公開鍵暗号エンジンへのアクセスを可能とするものであり、それらよりも容易に実現できます。
       <application>GPGME</application> では、高レベル API として、暗号化、復号化、認証、シグニチャー認証、キー管理などを提供します。
 @z
@@ -97,12 +96,24 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gnupg2"/> (used during the testsuite)
+      <xref linkend="doxygen"/> (for API documentation),
+      <xref linkend="gnupg2"/> (used during the testsuite), and 
+      <xref linkend="clisp"/>, 
+      <xref linkend="python2"/>, 
+      <xref linkend="python3"/>,
+      <xref linkend="qt5"/>, and/or
+      <xref linkend="swig"/> (for language bindings)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gnupg2"/> (テストスイートにて利用)
+      <xref linkend="doxygen"/> (for API documentation),
+      <xref linkend="gnupg2"/> (used during the testsuite), and 
+      <xref linkend="clisp"/>, 
+      <xref linkend="python2"/>, 
+      <xref linkend="python3"/>,
+      <xref linkend="qt5"/>, and/or
+      <xref linkend="swig"/> (for language bindings)
     </para>
 @z
 
@@ -138,21 +149,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><option>--disable-fd-passing</option>: This option disables
-    a problem causing a hang for some operations on some systems.</para>
-@y
-    <para><option>--disable-fd-passing</option>:
-    このオプションは、特定のシステムにて特定操作によりハングする問題を回避します。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -170,7 +166,7 @@
 
 @x
         <seg>
-          gpgme-config
+          gpgme-config and gpgme-tool
         </seg>
         <seg>
           libgpgme-pthread.so and libgpgme.so
@@ -180,7 +176,7 @@
         </seg>
 @y
         <seg>
-          gpgme-config
+          gpgme-config, gpgme-tool
         </seg>
         <seg>
           libgpgme-pthread.so, libgpgme.so

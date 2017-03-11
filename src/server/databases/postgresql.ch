@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "168 MB (additional 170 MB to run the testsuite)">
-  <!ENTITY postgresql-time          "1.4 SBU (additional 0.2 SBU to run the testsuite)">
+  <!ENTITY postgresql-buildsize     "249 MB (with tests)">
+  <!ENTITY postgresql-time          "1.8 SBU (with tests)">
 @y
-  <!ENTITY postgresql-buildsize     "168 MB (テストスイート実行時はさらに 170 MB)">
-  <!ENTITY postgresql-time          "1.4 SBU (テストスイート実行時はさらに 0.2 SBU)">
+  <!ENTITY postgresql-buildsize     "249 MB (テスト込み)">
+  <!ENTITY postgresql-time          "1.8 SBU (テスト込み)">
 @z
 
 @x
@@ -88,40 +88,48 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python2"/>,
-    <xref linkend="tcl"/>,
-    <xref linkend="openssl"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="mitkrb"/> and
-    <ulink url="http://developer.apple.com/networking/bonjour/">Bonjour</ulink></para>
+    <para role="optional">
+      <xref linkend="python2"/>,
+      <xref linkend="tcl"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mitkrb"/> and
+      <ulink url="http://developer.apple.com/networking/bonjour/">Bonjour</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="python2"/>,
-    <xref linkend="tcl"/>,
-    <xref linkend="openssl"/>,
-    <xref linkend="libxml2"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="openldap"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="mitkrb"/>,
-    <ulink url="http://developer.apple.com/networking/bonjour/">Bonjour</ulink></para>
+    <para role="optional">
+      <xref linkend="python2"/>,
+      <xref linkend="tcl"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mitkrb"/>,
+      <ulink url="http://developer.apple.com/networking/bonjour/">Bonjour</ulink>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (To Regenerate Documentation)</bridgehead>
-    <para role="optional"><xref linkend="sgml-dtd"/>,
-    <xref linkend="docbook-dsssl"/>,
-    <xref linkend="openjade"/>, and
-    <xref linkend="perl-sgmlspm"/></para>
+    <para role="optional">
+      <xref linkend="sgml-dtd"/>,
+      <xref linkend="docbook-dsssl"/>,
+      <xref linkend="openjade"/>, and
+      <xref linkend="perl-sgmlspm"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional; (ドキュメント再生成時)</bridgehead>
-    <para role="optional"><xref linkend="sgml-dtd"/>,
-    <xref linkend="docbook-dsssl"/>,
-    <xref linkend="openjade"/>,
-    <xref linkend="perl-sgmlspm"/></para>
+    <para role="optional">
+      <xref linkend="sgml-dtd"/>,
+      <xref linkend="docbook-dsssl"/>,
+      <xref linkend="openjade"/>,
+      <xref linkend="perl-sgmlspm"/>
+    </para>
 @z
 
 @x
@@ -146,11 +154,39 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
-@y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    <para>There are a number of programs in the
+    <filename class="directory">contrib/</filename> directory. If you are going
+    to run this installation as a server and wish to build some of them, enter
+    <command>make -C contrib</command> or
+    <command>make -C contrib/<replaceable>&lt;SUBDIR-NAME&gt;</replaceable></command> for each subdirectory.
     </para>
+@y
+    <para>There are a number of programs in the
+    <filename class="directory">contrib/</filename> directory. If you are going
+    to run this installation as a server and wish to build some of them, enter
+    <command>make -C contrib</command> or
+    <command>make -C contrib/<replaceable>&lt;SUBDIR-NAME&gt;</replaceable></command> for each subdirectory.
+    </para>
+@z
+
+@x
+    <para>Tests must be run as an unprivileged user because they need to start a
+    temporary server and this is prevented as the root user. For the same reason,
+    you need to stop all PostgreSQL servers if any are running. If a previous
+    version of PostgreSQL is installed, it may be necessary to use
+    <emphasis>--disable-rpath</emphasis> with <emphasis>configure</emphasis> to
+    avoid failures, but <command>installing the binaries created using this
+    switch is not recommended</command>. To test the results, issue:
+    <command>make check</command>.</para>
+@y
+    <para>Tests must be run as an unprivileged user because they need to start a
+    temporary server and this is prevented as the root user. For the same reason,
+    you need to stop all PostgreSQL servers if any are running. If a previous
+    version of PostgreSQL is installed, it may be necessary to use
+    <emphasis>--disable-rpath</emphasis> with <emphasis>configure</emphasis> to
+    avoid failures, but <command>installing the binaries created using this
+    switch is not recommended</command>. To test the results, issue:
+    <command>make check</command>.</para>
 @z
 
 @x
@@ -186,11 +222,19 @@
 @z
 
 @x
-    <para>As the <systemitem class="username">root</systemitem> user, start the
-    database server with the following command:</para>
+    <para>Now, initialize the database at the <systemitem
+    class="username">root</systemitem> user:</para>
+@y
+    <para>Now, initialize the database at the <systemitem
+    class="username">root</systemitem> user:</para>
+@z
+
+@x
+    <para>Again as the <systemitem class="username">root</systemitem> user,
+    start the database server with the following command:</para>
 @y
     <para>
-    <systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してデータベースサーバーを起動します。
+    再度 <systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してデータベースサーバーを起動します。
     </para>
 @z
 
@@ -221,45 +265,43 @@
 @x
     <para><parameter>--enable-thread-safety</parameter>: This switch makes the
     client libraries thread-safe by allowing concurrent threads in
-    <filename class='libraryfile'>libpq</filename> and ECPG programs to safely
+    <filename class="libraryfile">libpq</filename> and ECPG programs to safely
     control their private connection handles.</para>
 @y
-    <para><parameter>--enable-thread-safety</parameter>:
-    This switch makes the
+    <para><parameter>--enable-thread-safety</parameter>: This switch makes the
     client libraries thread-safe by allowing concurrent threads in
-    <filename class='libraryfile'>libpq</filename> and ECPG programs to safely
-    control their private connection handles.
-    </para>
+    <filename class="libraryfile">libpq</filename> and ECPG programs to safely
+    control their private connection handles.</para>
 @z
 
 @x
-    <para><option>--with-openssl</option>: build with support for
+    <para><option>--with-openssl</option>: builds the package  with support for
     <application>OpenSSL</application> encrypted connections.</para>
 @y
-    <para><option>--with-openssl</option>: build with support for
+    <para><option>--with-openssl</option>: builds the package  with support for
     <application>OpenSSL</application> encrypted connections.</para>
 @z
 
 @x
-    <para><option>--with-perl</option>: build the PL/Perl server-side language.
+    <para><option>--with-perl</option>: builds the PL/Perl server-side language.
     </para>
 @y
-    <para><option>--with-perl</option>: build the PL/Perl server-side language.
+    <para><option>--with-perl</option>: builds the PL/Perl server-side language.
     </para>
 @z
 
 @x
-    <para><option>--with-python</option>: build the PL/Python server-side
+    <para><option>--with-python</option>: builds the PL/Python server-side
     language.</para>
 @y
-    <para><option>--with-python</option>: build the PL/Python server-side
+    <para><option>--with-python</option>: builds the PL/Python server-side
     language.</para>
 @z
 
 @x
-    <para><option>--with-tcl</option>: build the PL/Tcl server-side language.</para>
+    <para><option>--with-tcl</option>: builds the PL/Tcl server-side language.</para>
 @y
-    <para><option>--with-tcl</option>: build the PL/Tcl server-side language.</para>
+    <para><option>--with-tcl</option>: builds the PL/Tcl server-side language.</para>
 @z
 
 @x
@@ -327,18 +369,28 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
-      <para>Install the <filename>/etc/rc.d/init.d/postgresql</filename>
-      init script included in the
-      <xref linkend="bootscripts"/> package.</para>
+      <para>Install the
+      <phrase revision="sysv"><filename>/etc/rc.d/init.d/postgresql</filename>
+      init script</phrase>
+      <phrase revision="systemd"><filename>postgresql.service</filename>
+      unit</phrase> included in the
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> package.</para>
 @y
       <para>
-      <xref linkend="bootscripts"/> パッケージに含まれる初期スクリプト <filename>/etc/rc.d/init.d/postgresql</filename> をインストールします。
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる
+      <phrase revision="sysv">初期化スクリプト <filename>/etc/rc.d/init.d/postgresql</filename></phrase>
+      <phrase revision="systemd">ユニット <filename>postgresql.service</filename></phrase>
+      をインストールします。
       </para>
 @z
 
@@ -359,33 +411,49 @@
 @z
 
 @x
-        <seg>clusterdb, createdb, createlang, createuser, dropdb, droplang,
-        dropuser, ecpg, initdb, pg_basebackup, pg_config, pg_controldata, pg_ctl,
-        pg_dump, pg_dumpall, pg_isready, pg_receivexlog, pg_resetxlog, pg_restore, pltcl_delmod,
-        pltcl_listmod, pltcl_loadmod, postgres, postmaster, psql,
-        reindexdb, vacuumdb, and optionally (in contrib/) oid2name, pg_archivecleanup,
-        pgbench, pg_standby, pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump,
-        vacuumlo,</seg>
-        <seg>libecpg.{so,a}, libecpg_compat.{so,a}, libpgport.a, libpgtypes.{so,a},
-        libpq.{so,a}, various charset modules, and optionally programming language
-        modules.</seg>
-        <seg>/srv/pgsql, /usr/include/libpq, /usr/include/postgresql,
-        /usr/lib/postgresql, /usr/share/doc/postgresql-&postgresql-version;, and
-        /usr/share/postgresql</seg>
+        <seg>
+          clusterdb, createdb, createlang, createuser, dropdb, droplang,
+          dropuser, ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_config,
+          pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
+          pg_receivexlog, pg_recvlogical, pg_resetxlog, pg_restore, pg_rewind,
+          pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump, pgbench,
+          pltcl_delmod, pltcl_listmod, pltcl_loadmod, postgres, postmaster
+          (deprecated), psql, reindexdb, vacuumdb, and optionally (in contrib/)
+          oid2name, pg_standby, vacuumlo, and many others
+        </seg>
+        <seg>
+          libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a, libpgport.a,
+          libpgtypes.{so,a}, libpq.{so,a}, various charset modules, and
+          optionally programming language modules under /usr/lib/postgresql
+        </seg>
+        <seg>
+          /usr/include/{libpq,postgresql},
+          /usr/lib/postgresql,
+          /usr/share/{doc/postgresql-&postgresql-version;,postgresql}, and
+          /srv/pgsql
+        </seg>
 @y
-        <seg>clusterdb, createdb, createlang, createuser, dropdb, droplang,
-        dropuser, ecpg, initdb, pg_basebackup, pg_config, pg_controldata, pg_ctl,
-        pg_dump, pg_dumpall, pg_isready, pg_receivexlog, pg_resetxlog, pg_restore, pltcl_delmod,
-        pltcl_listmod, pltcl_loadmod, postgres, postmaster, psql,
-        reindexdb, vacuumdb, and optionally (in contrib/) oid2name, pg_archivecleanup,
-        pgbench, pg_standby, pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump,
-        vacuumlo,</seg>
-        <seg>libecpg.{so,a}, libecpg_compat.{so,a}, libpgport.a, libpgtypes.{so,a},
-        libpq.{so,a}, various charset modules, and optionally programming language
-        modules.</seg>
-        <seg>/srv/pgsql, /usr/include/libpq, /usr/include/postgresql,
-        /usr/lib/postgresql, /usr/share/doc/postgresql-&postgresql-version;,
-        /usr/share/postgresql</seg>
+        <seg>
+          clusterdb, createdb, createlang, createuser, dropdb, droplang,
+          dropuser, ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_config,
+          pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
+          pg_receivexlog, pg_recvlogical, pg_resetxlog, pg_restore, pg_rewind,
+          pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump, pgbench,
+          pltcl_delmod, pltcl_listmod, pltcl_loadmod, postgres, postmaster
+          (deprecated), psql, reindexdb, vacuumdb, and optionally (in contrib/)
+          oid2name, pg_standby, vacuumlo, and many others
+        </seg>
+        <seg>
+          libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a, libpgport.a,
+          libpgtypes.{so,a}, libpq.{so,a}, various charset modules, and
+          optionally programming language modules under /usr/lib/postgresql
+        </seg>
+        <seg>
+          /usr/include/{libpq,postgresql},
+          /usr/lib/postgresql,
+          /usr/share/{doc/postgresql-&postgresql-version;,postgresql},
+          /srv/pgsql
+        </seg>
 @z
 
 @x
@@ -567,19 +635,17 @@
 @z
 
 @x postgres
-          <para>is a single user database server, generally used for
-          debugging.</para>
+          <para>is the PostgreSQL database server.</para>
 @y
-          <para>is a single user database server, generally used for
-          debugging.</para>
+          <para>is the PostgreSQL database server.</para>
 @z
 
 @x postmaster
-          <para>(a symlink to <command>postgres</command>) is a multi-user
-          database daemon.</para>
+          <para>(deprecated, a symlink to <command>postgres</command>) is a
+          multi-user database daemon.</para>
 @y
-          <para>(a symlink to <command>postgres</command>) is a multi-user
-          database daemon.</para>
+          <para>(deprecated, a symlink to <command>postgres</command>) is a
+          multi-user database daemon.</para>
 @z
 
 @x psql

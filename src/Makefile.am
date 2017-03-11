@@ -6,16 +6,23 @@
 ## $Date::                           $
 ##
 SUBDIRS=appendices book general gnome introduction kde lxde \
-	networking \
+	lxqt networking \
 	multimedia postlfs pst server stylesheets template x \
 	xfce xincludes xsoft
-EXTRA_DIST = general.ch index.ch tidy.ch tidy.sed ipam.xml ipag.xml
+EXTRA_DIST = \
+	general.ch  \
+	packages.ch \
+	gnome.ch    \
+	index.ch    \
+	tidy.ch     \
+	tidy.sed    \
+	ipam.xml    \
+	ipag.xml
 BOOKdir = @abs_bookdir@
 srcdir = @srcdir@
-srcs = general.ent index.xml tidy.conf
+srcs = general.ent packages.ent gnome.ent index.xml tidy.conf
 EXTRACLEANFILES = $(srcs)
 
-BASEDIR = ../svn.ja
 ROOT_ID =
 PDF_OUTPUT = ../blfsbookja-svn.pdf
 RENDERTMP = ./tmp
@@ -26,12 +33,18 @@ ALLXML := $(filter-out $(RENDERTMP)/%, \
 ALLXSL := $(filter-out $(RENDERTMP)/%, \
 	$(wildcard ./*.xsl ./*/*.xsl ./*/*/*.xsl ./*/*/*/*.xsl ./*/*/*/*/*.xsl))
 
+REV=@revspec@
+
 all: ctie $(srcs) blfs # stylesheets bootscripts udev-config blfs
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
 general.ent: $(BOOKdir)/general.ent $(srcdir)/general.ch
+	$(top_builddir)/$(CTIE) -m $@ $^
+packages.ent: $(BOOKdir)/packages.ent $(srcdir)/packages.ch
+	$(top_builddir)/$(CTIE) -m $@ $^
+gnome.ent: $(BOOKdir)/gnome.ent $(srcdir)/gnome.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
 index.xml: $(BOOKdir)/index.xml $(srcdir)/index.ch
 	$(top_builddir)/$(CTIE) -m $@ $^
@@ -55,11 +68,14 @@ udev-config:
 blfs: html wget-list
 
 html: $(BASEDIR)/index.html jchangelog
-$(BASEDIR)/index.html: $(RENDERTMP)/blfs-html.xml
+$(BASEDIR)/index.html: $(RENDERTMP)/$(BLFSHTML)
 	@echo "Generating chunked XHTML files..."
-	$(XSLTPROC) --nonet -stringparam chunk.quietly $(CHUNK_QUIET) \
-	  -stringparam rootid "$(ROOT_ID)" -stringparam base.dir $(BASEDIR)/ \
-	  stylesheets/blfs-chunked.xsl $(RENDERTMP)/blfs-html.xml
+	$(XSLTPROC) --nonet                                \
+                --stringparam chunk.quietly $(CHUNK_QUIET) \
+                --stringparam rootid "$(ROOT_ID)"          \
+                --stringparam base.dir $(BASEDIR)/         \
+                stylesheets/blfs-chunked.xsl               \
+                $(RENDERTMP)/$(BLFSHTML)
 
 	@echo "Copying CSS code and images..."
 	$(Q)if [ ! -e $(BASEDIR)/stylesheets ]; then \
@@ -86,20 +102,48 @@ jchangelog:
 		jchangelog-2010.txt jchangelog-2011.txt
 	$(Q)cp -pv introduction/welcome/jchangelog-*.txt $(BASEDIR)/introduction
 
-$(RENDERTMP)/blfs-html.xml: $(RENDERTMP)/blfs-full.xml
-	@echo "Generating profiled XML for XHTML..."
-	$(XSLTPROC) --nonet --stringparam profile.condition html \
-	  --output $(RENDERTMP)/blfs-html.xml stylesheets/lfs-xsl/profile.xsl \
-	  $(RENDERTMP)/blfs-full.xml
-
-$(RENDERTMP)/blfs-full.xml: general.ent $(ALLXML) $(ALLXSL)
-	@echo "Validating the book..."
+validate: $(RENDERTMP)/$(BLFSFULL)
+$(RENDERTMP)/$(BLFSFULL): general.ent $(ALLXML) $(ALLXSL)
 	$(Q)[ -d $(RENDERTMP) ] || mkdir -p $(RENDERTMP)
-	$(XMLLINT) --nonet --noent --xinclude --postvalid \
-	  -o $(RENDERTMP)/blfs-full.xml index.xml
+
+	@echo "Adjusting for revision $(REV)..."
+	$(Q)xsltproc --nonet                          \
+                --xinclude                            \
+                --output $(RENDERTMP)/$(BLFSHTML2)    \
+                --stringparam profile.revision $(REV) \
+                stylesheets/lfs-xsl/profile.xsl       \
+                index.xml
+
+	@echo "Validating the book..."
+	$(XMLLINT) --nonet                         \
+               --noent                             \
+               --postvalid                         \
+               --output $(RENDERTMP)/$(BLFSFULL) \
+               $(RENDERTMP)/$(BLFSHTML2)
+
+profile-html: $(RENDERTMP)/$(BLFSHTML)
+$(RENDERTMP)/$(BLFSHTML): $(RENDERTMP)/$(BLFSFULL)
+	@echo "Generating profiled XML for XHTML..."
+	$(XSLTPROC) --nonet                          \
+                --stringparam profile.condition html \
+                --output $(RENDERTMP)/$(BLFSHTML)    \
+                stylesheets/lfs-xsl/profile.xsl      \
+                $(RENDERTMP)/$(BLFSFULL)
+
+#$(RENDERTMP)/blfs-html.xml: $(RENDERTMP)/blfs-full.xml
+#	@echo "Generating profiled XML for XHTML..."
+#	$(XSLTPROC) --nonet --stringparam profile.condition html \
+#	  --output $(RENDERTMP)/blfs-html.xml stylesheets/lfs-xsl/profile.xsl \
+#	  $(RENDERTMP)/blfs-full.xml
+
+#$(RENDERTMP)/blfs-full.xml: general.ent $(ALLXML) $(ALLXSL)
+#	@echo "Validating the book..."
+#	$(Q)[ -d $(RENDERTMP) ] || mkdir -p $(RENDERTMP)
+#	$(XMLLINT) --nonet --noent --xinclude --postvalid \
+#	  -o $(RENDERTMP)/blfs-full.xml index.xml
 
 @PDF@@IPA@pdf: $(BASEDIR)/$(PDF_OUTPUT) blfs
-@PDF@@IPA@$(RENDERTMP)/blfs-pdf.xml: $(RENDERTMP)/blfs-full.xml
+@PDF@@IPA@$(RENDERTMP)/blfs-pdf.xml: $(RENDERTMP)/$(BLFSFULL)
 @PDF@@IPA@	@echo "Generating profiled XML for PDF..."
 @PDF@@IPA@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
 @PDF@@IPA@	  --output $(RENDERTMP)/blfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
@@ -123,9 +167,10 @@ $(RENDERTMP)/blfs-full.xml: general.ent $(ALLXML) $(ALLXSL)
 @PDF@@IPA@userconfig.xml: $(srcdir)/userconfig.xml.in
 
 wget-list: $(BASEDIR)/wget-list
-$(BASEDIR)/wget-list: $(RENDERTMP)/blfs-full.xml
-	@echo "Generating wget list..."
-	$(MKDIR_P) -p $(BASEDIR)
-	$(XSLTPROC) --nonet --output $(BASEDIR)/wget-list \
-	  stylesheets/wget-list.xsl $(RENDERTMP)/blfs-full.xml
-	cp -p $(BASEDIR)/wget-list{,.txt}
+$(BASEDIR)/wget-list: $(RENDERTMP)/$(BLFSFULL)
+	@echo "Generating wget list for $(REV) at $(BASEDIR)/wget-list ..."
+	$(MKDIR_P) $(BASEDIR)
+	$(XSLTPROC) --nonet                   \
+                --output $(BASEDIR)/wget-list \
+                stylesheets/wget-list.xsl     \
+                $(RENDERTMP)/$(BLFSFULL)

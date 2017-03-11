@@ -82,48 +82,66 @@
 @x
     <bridgehead renderas="sect3">GnuPG 2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">GnuPG 2 の依存関係</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;GnuPG 2&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pth"/>, 
-    <xref linkend="libassuan"/>, 
-    <xref linkend="libgcrypt"/>, and 
-    <xref linkend="libksba"/></para>
+    <para role="required">
+      <xref linkend="libassuan"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="libgpg-error"/>,
+      <xref linkend="libksba"/>, and
+      <xref linkend="npth"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pth"/>, 
-    <xref linkend="libassuan"/>, 
-    <xref linkend="libgcrypt"/>,
-    <xref linkend="libksba"/></para>
+    <para role="required">
+      <xref linkend="libassuan"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="libgpg-error"/>,
+      <xref linkend="libksba"/>,
+      <xref linkend="npth"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="pinentry"/> (Run-time requirement for most of
-    the package's functionality)</para>
+    <para role="recommended">
+      <xref linkend="pinentry"/> (Run-time requirement for most of
+      the package's functionality)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="pinentry"/>
-    (本パッケージのほとんどの機能に対して実行時に必要)</para>
+    <para role="recommended">
+      <xref linkend="pinentry"/> (本パッケージのほとんどの機能に対して実行時に必要)
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="openldap"/>, 
-    <xref linkend="libusb-compat"/>, 
-    <xref linkend="curl"/>,
-    <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
-    adns</ulink>, and an 
-    <xref linkend="server-mail"/></para>
+    <para role="optional">
+      <xref linkend="curl"/>,
+      <xref linkend="libusb-compat"/>,
+      an <xref linkend="server-mail"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
+      <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
+      adns</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="openldap"/>, 
-    <xref linkend="libusb-compat"/>, 
-    <xref linkend="curl"/>,
-    <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
-    adns</ulink>, また <xref linkend="server-mail"/> のいずれか</para>
+    <para role="optional">
+      <xref linkend="curl"/>,
+      <xref linkend="libusb-compat"/>,
+      an <xref linkend="server-mail"/>,
+      <xref linkend="openldap"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
+      <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
+      adns</ulink>
+    </para>
 @z
 
 @x
@@ -195,23 +213,19 @@
 @z
 
 @x
-    <para><parameter>--libexecdir=/usr/lib/gnupg2</parameter>: This switch
-    creates a <filename class="directory">gnupg</filename> directory in
-    <filename class="directory">/usr/lib</filename> instead of
-    <filename class="directory">/usr/libexec</filename>.</para>
+    <para><command>sed ... tools/Makefile.in</command>:
+    This command is needed to build the gpg-zip program.</para>
 @y
-    <para><parameter>--libexecdir=/usr/lib/gnupg2</parameter>: This switch
-    creates a <filename class="directory">gnupg</filename> directory in
-    <filename class="directory">/usr/lib</filename> instead of
-    <filename class="directory">/usr/libexec</filename>.</para>
+    <para><command>sed ... tools/Makefile.in</command>:
+    This command is needed to build the gpg-zip program.</para>
 @z
 
 @x
-    <para><parameter>--docdir=/usr/share/doc/gnupg-&gnupg2-version;</parameter>: 
+    <para><parameter>--docdir=/usr/share/doc/gnupg-&gnupg2-version;</parameter>:
     This switch changes the default docdir to <filename
     class="directory">/usr/share/doc/gnupg-&gnupg2-version;</filename>.</para>
 @y
-    <para><parameter>--docdir=/usr/share/doc/gnupg-&gnupg2-version;</parameter>: 
+    <para><parameter>--docdir=/usr/share/doc/gnupg-&gnupg2-version;</parameter>:
     This switch changes the default docdir to <filename
     class="directory">/usr/share/doc/gnupg-&gnupg2-version;</filename>.</para>
 @z
@@ -222,6 +236,22 @@
 @y
     <para><parameter>--enable-symcryptrun</parameter>: This switch enables 
     building the symcryptrun program.</para>
+@z
+
+@x
+    <para><parameter>--enable-maintainer-mode</parameter>: This switch is
+    needed for proper completion of the tests.</para>
+@y
+    <para><parameter>--enable-maintainer-mode</parameter>: This switch is
+    needed for proper completion of the tests.</para>
+@z
+
+@x
+    <para><option>--enable-g13</option>: This switch enables building the
+    g13 program.</para>
+@y
+    <para><option>--enable-g13</option>: This switch enables building the
+    g13 program.</para>
 @z
 
 @x
@@ -241,19 +271,21 @@
 @z
 
 @x
-        <seg>addgnupghome, applygnupgdefaults, gpg-agent, gpg-connect-agent,
-        gpg2, gpgconf, gpgkey2ssh, gpgparsemail, gpgsm, gpgsm-gencert.sh,
-        gpgv2, kbxutil, scdaemon, symcryptrun, and watchgnupg</seg>
+        <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13,
+        gpg-agent, gpg-connect-agent, gpg, gpg2, gpgconf, gpgparsemail, 
+        gpgscm, gpgsm, gpgtar, gpgv, gpgv2, igpg-zip, kbxutil, symcryptrun, 
+        and watchgnupg</seg>
         <seg>None</seg>
-        <seg>/usr/lib/gnupg2, /usr/share/gnupg and
-        /usr/share/doc/gnupg-&gnupg2-version;</seg>
+        <seg>/usr/share/doc/gnupg-&gnupg2-version; and
+        /usr/share/gnupg</seg>
 @y
-        <seg>addgnupghome, applygnupgdefaults, gpg-agent, gpg-connect-agent,
-        gpg2, gpgconf, gpgkey2ssh, gpgparsemail, gpgsm, gpgsm-gencert.sh,
-        gpgv2, kbxutil, scdaemon, symcryptrun, and watchgnupg</seg>
-        <seg>None</seg>
-        <seg>/usr/lib/gnupg2, /usr/share/gnupg and
-        /usr/share/doc/gnupg-&gnupg2-version;</seg>
+        <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13,
+        gpg-agent, gpg-connect-agent, gpg, gpg2, gpgconf, gpgparsemail, 
+        gpgscm, gpgsm, gpgtar, gpgv, gpgv2, igpg-zip, kbxutil, symcryptrun, 
+        watchgnupg</seg>
+        <seg>&None;</seg>
+        <seg>/usr/share/doc/gnupg-&gnupg2-version;,
+        /usr/share/gnupg</seg>
 @z
 
 @x
@@ -280,14 +312,36 @@
           user's GnuPG home directories.</para>
 @z
 
+@x dirmngr
+          <para> is a tool that takes care of accessing the OpenPGP keyservers.
+@y
+          <para> is a tool that takes care of accessing the OpenPGP keyservers.
+@z
+
+@x dirmngr-client
+          <para> is a tool to contact a running dirmngr and test whether a
+          certificate has been revoked. </para>
+@y
+          <para> is a tool to contact a running dirmngr and test whether a
+          certificate has been revoked. </para>
+@z
+
+@x g13
+          <para>is a tool to create, mount or unmount an encrypted file system
+          container (optional).</para>
+@y
+          <para>is a tool to create, mount or unmount an encrypted file system
+          container (optional).</para>
+@z
+
 @x gpg-agent
           <para>is a daemon used to manage secret (private) keys independently
-          from any protocol. It is used as a backend for <command>gpg</command>
+          from any protocol. It is used as a backend for <command>gpg2</command>
           and <command>gpgsm</command> as well as for a couple of other
           utilities.</para>
 @y
           <para>is a daemon used to manage secret (private) keys independently
-          from any protocol. It is used as a backend for <command>gpg</command>
+          from any protocol. It is used as a backend for <command>gpg2</command>
           and <command>gpgsm</command> as well as for a couple of other
           utilities.</para>
 @z
@@ -311,13 +365,13 @@
 @z
 
 @x gpgconf
-          <para>is a utility used to automatically and reasonable safely
+          <para>is a utility used to automatically and reasonably safely
           query and modify configuration files in the
           <filename class='directory'>~/.gnupg</filename> home directory. It is
           designed not to be invoked manually by the user, but automatically by
           graphical user interfaces.</para>
 @y
-          <para>is a utility used to automatically and reasonable safely
+          <para>is a utility used to automatically and reasonably safely
           query and modify configuration files in the
           <filename class='directory'>~/.gnupg</filename> home directory. It is
           designed not to be invoked manually by the user, but automatically by
@@ -332,24 +386,38 @@
           <parameter>--help</parameter> for usage information.</para>
 @z
 
+@x gpgscm
+          <para>executes the given scheme program or spawns an interactive
+          shell.</para>
+@y
+          <para>executes the given scheme program or spawns an interactive
+          shell.</para>
+@z
+
 @x gpgsm
-          <para>is a tool similar to <command>gpg</command> used to provide
+          <para>is a tool similar to <command>gpg2</command> used to provide
           digital encryption and signing services on X.509 certificates and the
           CMS protocol. It is mainly used as a backend for S/MIME mail
           processing.</para>
 @y
-          <para>is a tool similar to <command>gpg</command> used to provide
+          <para>is a tool similar to <command>gpg2</command> used to provide
           digital encryption and signing services on X.509 certificates and the
           CMS protocol. It is mainly used as a backend for S/MIME mail
           processing.</para>
 @z
 
-@x gpgsm-gencert.sh
-          <para>is a simple tool used to interactively generate a certificate
-          request which will be printed to stdout.</para>
+@x gpgtar
+          <para> is a tool to encrypt or sign files into an archive.</para>
 @y
-          <para>is a simple tool used to interactively generate a certificate
-          request which will be printed to stdout.</para>
+          <para> is a tool to encrypt or sign files into an archive.</para>
+@z
+
+@x gpgv
+          <para>(optional) is a symlink to <command>gpgv2</command> for
+          compatibility with the first version of GnuPG.</para>
+@y
+          <para>(optional) is a symlink to <command>gpgv2</command> for
+          compatibility with the first version of GnuPG.</para>
 @z
 
 @x gpgv2
@@ -358,18 +426,16 @@
           <para>is a verify only version of <command>gpg2</command>.</para>
 @z
 
+@x gpg-zip
+          <para> encrypts or signs files into an archive.</para>
+@y
+          <para> encrypts or signs files into an archive.</para>
+@z
+
 @x kbxutil
           <para>is used to list, export and import Keybox data.</para>
 @y
           <para>is used to list, export and import Keybox data.</para>
-@z
-
-@x scdaemon
-          <para>is a daemon used to manage smartcards. It is usually invoked by
-          <command>gpg-agent</command> and in general not used directly.</para>
-@y
-          <para>is a daemon used to manage smartcards. It is usually invoked by
-          <command>gpg-agent</command> and in general not used directly.</para>
 @z
 
 @x symcryptrun

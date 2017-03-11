@@ -81,12 +81,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="llvm"/> (with Clang)
+      <xref linkend="llvm"/> (with Clang), and
+      <xref linkend="doxygen"/> (for documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="llvm"/> (Clang がビルドされたもの)
+      <xref linkend="llvm"/> (Clang がビルドされたもの),
+      <xref linkend="doxygen"/> (ドキュメント生成時)
     </para>
 @z
 
@@ -157,17 +159,17 @@
 @x
         <seg>
           derb, genbrk, genccode, gencfu, gencmn, gencnval, gendict, gennorm2,
-          genrb, gensprep, icu-config, icuinfo, icupkg, makeconv, pkgdata and
+          genrb, gensprep, icu-config, icuinfo, icupkg, makeconv, pkgdata, and
           uconv
         </seg>
         <seg>
           libicudata.so, libicui18n.so, libicuio.so, libicule.so, libiculx.so,
-          libicutest.so, libicutu.so and libicuuc.so
+          libicutest.so, libicutu.so, and libicuuc.so
         </seg>
         <seg>
           /usr/include/layout,
           /usr/include/unicode,
-          /usr/lib/icu and
+          /usr/lib/icu, and
           /usr/share/icu
         </seg>
 @y
@@ -234,7 +236,7 @@
 @z
 
 @x gendict
-            compiles word list into ICU string trie dictionary.
+            compiles word lists into ICU string trie dictionaries.
 @y
             ワードリスト (word list) を ICU の compact trie 辞書 へコンパイルします。
 @z

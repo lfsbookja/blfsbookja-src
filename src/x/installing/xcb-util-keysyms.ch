@@ -112,11 +112,9 @@
 @z
 
 @x
-      To test the results, issue: 
-      <command>LD_LIBRARY_PATH=$XORG_PREFIX/lib make check</command>.
+      This package does not come with a test suite.
 @y
-      ビルド結果をテストする場合は 
-      <command>LD_LIBRARY_PATH=$XORG_PREFIX/lib make check</command> を実行します。
+      &notTestSuite;
 @z
 
 @x

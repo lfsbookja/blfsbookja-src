@@ -104,14 +104,25 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://glade.gnome.org/">Glade</ulink> and
-      <xref linkend="gtk-doc"/>
+      <xref linkend="vala"/>,
+      <xref linkend="valgrind"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="fop"/> (or
+      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink>),
+      and
+      <ulink url="http://glade.gnome.org/">Glade</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://glade.gnome.org/">Glade</ulink>,
-      <xref linkend="gtk-doc"/>
+      <xref linkend="vala"/>,
+      <xref linkend="valgrind"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="fop"/> (or
+      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink>),
+      <ulink url="http://glade.gnome.org/">Glade</ulink>
     </para>
 @z
 
@@ -135,10 +146,11 @@
 @z
 
 @x
-      If the test suite is run before this package is installed, one test
-      may fail.
+      To test the results, issue <command>make check</command>. The tests need
+      to be run in a graphical environment.
 @y
-      本パッケージのインストールよりも前にテストスイートを実行すると、失敗するテストが１つあります。
+      To test the results, issue <command>make check</command>. The tests need
+      to be run in a graphical environment.
 @z
 
 @x
@@ -177,9 +189,7 @@
           libgtksourceview-3.0.so
         </seg>
         <seg>
-          /usr/include/gtksourceview-3.0,
-          /usr/share/gtk-doc/html/gtksourceview-3.0, and
-          /usr/share/gtksourceview-3.0
+          /usr/{include,share,share/gtk-doc/html}/gtksourceview-3.0
         </seg>
 @y
         <seg>
@@ -189,9 +199,7 @@
           libgtksourceview-3.0.so
         </seg>
         <seg>
-          /usr/include/gtksourceview-3.0,
-          /usr/share/gtk-doc/html/gtksourceview-3.0,
-          /usr/share/gtksourceview-3.0
+          /usr/{include,share,share/gtk-doc/html}/gtksourceview-3.0
         </seg>
 @z
 

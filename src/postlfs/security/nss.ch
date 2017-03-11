@@ -112,12 +112,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="sqlite"/>
+      <xref linkend="sqlite"/> and <xref linkend="p11-kit"/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="sqlite"/>
+      <xref linkend="sqlite"/>, <xref linkend="p11-kit"/> (実行時)
     </para>
 @z
 
@@ -220,9 +220,9 @@
           certutil, nss-config, and pk12util
         </seg>
         <seg>
-          libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so,
-          libnssdbm3.so, libnsssysinit.so, libnssutil3.so,
-          libsmime3.so, libsoftokn3.so, and libssl3.so
+          libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, libnss3.so,
+          libnssckbi.so, libnssdbm3.so, libnsssysinit.so,
+          libnssutil3.so, libsmime3.so, libsoftokn3.so, and libssl3.so
         </seg>
         <seg>
           /usr/include/nss
@@ -232,9 +232,9 @@
           certutil, nss-config, pk12util
         </seg>
         <seg>
-          libcrmf.a, libfreebl3.so, libnss3.so, libnssckbi.so,
-          libnssdbm3.so, libnsssysinit.so, libnssutil3.so,
-          libsmime3.so, libsoftokn3.so, libssl3.so
+          libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, libnss3.so,
+          libnssckbi.so, libnssdbm3.so, libnsssysinit.so,
+          libnssutil3.so, libsmime3.so, libsoftokn3.so, libssl3.so
         </seg>
         <seg>
           /usr/include/nss

@@ -114,28 +114,28 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="libglade"/>,
+      <xref linkend="gs"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="qt5"/>,
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
       <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
-      <xref linkend="libglade"/>,
       <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
-      <ulink url="http://www.libgd.org/">GD Library</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
-      <xref linkend="gs"/>,
-      <xref linkend="gtk2"/> and
-      <xref linkend="qt4"/>
+      <ulink url="http://www.libgd.org/">GD Library</ulink>, and
+      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
-      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <xref linkend="libglade"/>,
-      <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
-      <ulink url="http://www.libgd.org/">GD Library</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
       <xref linkend="gs"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="qt4"/>
+      <xref linkend="qt5"/>,
+      <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
+      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
+      <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
+      <ulink url="http://www.libgd.org/">GD Library</ulink>,
+      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>
     </para>
 @z
 
@@ -146,16 +146,16 @@
       installed or no bindings will be built),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
-      <ulink url="http://iolanguage.org/">Io</ulink>,
       <xref linkend="lua"/>,
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
-      <ulink url="http://ocaml.org/">OCaml</ulink>,
       <xref linkend="php"/>,
       <xref linkend="python2"/>,
-      <ulink url="http://www.r-project.org/">R</ulink>,
       <xref linkend="ruby"/>,
-      <xref linkend="tcl"/> and
-      <xref linkend="tk"/>
+      <xref linkend="tcl"/>,
+      <xref linkend="tk"/>,
+      <ulink url="http://iolanguage.org/">Io</ulink>,
+      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
+      <ulink url="http://ocaml.org/">OCaml</ulink>, and
+      <ulink url="http://www.r-project.org/">R</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (言語バインディング構築に必要)</bridgehead>
@@ -164,16 +164,16 @@
       installed or no bindings will be built),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
-      <ulink url="http://iolanguage.org/">Io</ulink>,
       <xref linkend="lua"/>,
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
-      <ulink url="http://ocaml.org/">OCaml</ulink>,
       <xref linkend="php"/>,
       <xref linkend="python2"/>,
-      <ulink url="http://www.r-project.org/">R</ulink>,
       <xref linkend="ruby"/>,
       <xref linkend="tcl"/>,
-      <xref linkend="tk"/>
+      <xref linkend="tk"/>,
+      <ulink url="http://iolanguage.org/">Io</ulink>,
+      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
+      <ulink url="http://ocaml.org/">OCaml</ulink>,
+      <ulink url="http://www.r-project.org/">R</ulink>
     </para>
 @z
 

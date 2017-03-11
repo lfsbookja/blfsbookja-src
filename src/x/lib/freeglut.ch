@@ -82,12 +82,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glu"/>
+      <xref linkend="cmake"/> and
+      <xref linkend="mesa"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glu"/>
+      <xref linkend="cmake"/>,
+      <xref linkend="mesa"/>
     </para>
 @z
 

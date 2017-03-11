@@ -79,26 +79,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="aspell"/>,
       <xref linkend="enchant"/>,
       <xref linkend="gmime"/>,
-      <xref linkend="libesmtp"/>,
-      <xref linkend="rarian"/>, and
-      <xref linkend="aspell"/> or
-      <ulink url="http://gtkspell.sourceforge.net/">GtkSpell</ulink>
-      (<application>GtkSpell</application> provides on-the-fly as you type
-      spell checking)
+      <xref linkend="libesmtp"/>, and
+      <xref linkend="rarian"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="aspell"/>,
       <xref linkend="enchant"/>,
       <xref linkend="gmime"/>,
       <xref linkend="libesmtp"/>,
-      <xref linkend="rarian"/>,
-      <xref linkend="aspell"/> または
-      <ulink url="http://gtkspell.sourceforge.net/">GtkSpell</ulink>
-      (<application>GtkSpell</application> provides on-the-fly as you type
-      spell checking)
+      <xref linkend="rarian"/>
     </para>
 @z
 
@@ -117,34 +111,38 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="&gnome-download-http;/gtkhtml/">GtkHTML</ulink>,
-      <xref linkend="gtksourceview"/>,
-      <xref linkend="openssl"/>,
-      <xref linkend="openldap"/>,
       <xref linkend="compface"/>,
-      <xref linkend="mitkrb"/>,
+      <xref linkend="gtksourceview"/>,
       <xref linkend="libnotify"/>,
-      <xref linkend="sqlite"/>, and 
+      <xref linkend="mitkrb"/>,
       <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command, note that it is only used if you
-      didn't install the recommended <application>libESMTP</application>
-      package)
+      didn't install the required <application>libESMTP</application>
+      package),
+      <xref linkend="openldap"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="webkitgtk"/>,
+      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>, and
+      <ulink url="https://pypi.python.org/pypi/html2text/">python-html2text</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="&gnome-download-http;/gtkhtml/">GtkHTML</ulink>,
-      <xref linkend="gtksourceview"/>,
-      <xref linkend="openssl"/>,
-      <xref linkend="openldap"/>,
       <xref linkend="compface"/>,
-      <xref linkend="mitkrb"/>,
+      <xref linkend="gtksourceview"/>,
       <xref linkend="libnotify"/>,
-      <xref linkend="sqlite"/>,
+      <xref linkend="mitkrb"/>,
       <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command, note that it is only used if you
-      didn't install the recommended <application>libESMTP</application>
-      package)
+      didn't install the required <application>libESMTP</application>
+      package),
+      <xref linkend="openldap"/>,
+      <xref linkend="openssl"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="webkitgtk"/>,
+      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>, and
+      <ulink url="https://pypi.python.org/pypi/html2text/">python-html2text</ulink>
     </para>
 @z
 
@@ -203,14 +201,14 @@
     <title>&CommandExplanations;</title>
 @z
 
-@x
-    <para><parameter>--with-rubrica</parameter>: This parameter is used
-    to provide Rubrica2 address book support.</para>
-@y
-    <para><parameter>--with-rubrica</parameter>:
-    本パラメーターは Rubrica2 アドレスブックサポートを実現します。
-    </para>
-@z
+%@x
+%    <para><parameter>--with-rubrica</parameter>: This parameter is used
+%    to provide Rubrica2 address book support.</para>
+%@y
+%    <para><parameter>--with-rubrica</parameter>:
+%    本パラメーターは Rubrica2 アドレスブックサポートを実現します。
+%    </para>
+%@z
 
 @x
     <para><option>--with-ssl</option>: Use this option to enable SSL support if
@@ -315,11 +313,15 @@
 @x
         <seg>balsa and balsa-ab</seg>
         <seg>None</seg>
-        <seg>/usr/share/balsa and /usr/share/sounds/balsa</seg>
+        <seg>/etc/sounds/events,
+             /usr/share/balsa, 
+             and /usr/share/sounds/balsa</seg>
 @y
-        <seg>balsa, balsa-ab</seg>
+        <seg>balsa and balsa-ab</seg>
         <seg>&None;</seg>
-        <seg>/usr/share/balsa, /usr/share/sounds/balsa</seg>
+        <seg>/etc/sounds/events,
+             /usr/share/balsa, 
+             and /usr/share/sounds/balsa</seg>
 @z
 
 @x
@@ -329,7 +331,13 @@
 @z
 
 @x balsa
-          <para>is a glib based mail client.</para>
+            is a glib based mail client.
 @y
-          <para>glib ベースのメールクライアント。</para>
+            glib ベースのメールクライアント。
+@z
+
+@x balsa-ab
+            is the address-book application used by <command>balsa</command>.
+@y
+            is the address-book application used by <command>balsa</command>.
 @z

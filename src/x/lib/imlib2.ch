@@ -150,16 +150,6 @@
 @z
 
 @x
-      <command>sed -i ...</command>: First command fixes building with recent
-      versions of <application>Giflib</application> and the second one corrects
-      linker flags for libImlib2 usage.
-@y
-      <command>sed -i ...</command>:
-      １つめのコマンドは、最新の <application>Giflib</application> によりビルドできるようにします。
-      また２つめのコマンドは libImlib2 利用のためのリンカーフラグを正しくします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

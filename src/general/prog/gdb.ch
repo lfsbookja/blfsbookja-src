@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "421 MB (additional 170 MB for tests)">
-  <!ENTITY gdb-time          "2.4 SBU (add up to 7.0 SBU for tests)">
+  <!ENTITY gdb-buildsize     "413 MB (add 158 MB for tests, add 665 MB for docs)">
+  <!ENTITY gdb-time          "2.7 SBU (add 22 SBU for tests, add 0.7 for docs)">
 @y
-  <!ENTITY gdb-buildsize     "421 MB (テスト実施時はさらに 170 MB)">
-  <!ENTITY gdb-time          "2.4 SBU (テスト実施時は 7.0 SBU 以上)">
+  <!ENTITY gdb-buildsize     "413 MB (テスト実施時はさらに 158 MB, ドキュメント生成時はさらに 665MB)">
+  <!ENTITY gdb-time          "2.7 SBU (テスト実施時はさらに 22 SBU, ドキュメント生成時はさらに 0.7)">
 @z
 
 @x

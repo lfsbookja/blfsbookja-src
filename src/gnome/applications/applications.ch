@@ -14,9 +14,9 @@
 @z
 
 @x
-  <title>GNOME Applications</title>
+  <title><phrase>GNOME Applications</phrase></title>
 @y
-  <title>GNOME アプリケーション</title>
+  <title><phrase>GNOME アプリケーション</phrase></title>
 @z
 
 @x

@@ -85,7 +85,7 @@
     <para role="required">
     <xref linkend="cacerts"/>,
     <xref linkend="cmake"/>,
-    <xref linkend="qt4"/> and
+    <xref linkend="qt5"/>, and
     <xref linkend="which"/>
     </para>
 @y
@@ -93,7 +93,7 @@
     <para role="required">
     <xref linkend="cacerts"/>,
     <xref linkend="cmake"/>,
-    <xref linkend="qt4"/>,
+    <xref linkend="qt5"/>,
     <xref linkend="which"/>
     </para>
 @z
@@ -150,14 +150,6 @@
 @z
 
 @x
-    <para><parameter>-DQT4_BUILD=ON</parameter>: This switch is used to force
-    building with Qt4 even if Qt5 is found.</para>
-@y
-    <para><parameter>-DQT4_BUILD=ON</parameter>: This switch is used to force
-    building with Qt4 even if Qt5 is found.</para>
-@z
-
-@x
     <para><parameter>-DQCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>: 
     Install the qca man page in the normal location.</para>
 @y
@@ -182,20 +174,20 @@
 @z
 
 @x
-        <seg>mozcerts and qcatool</seg>
-        <seg>libqca.so and plugins at &qt4-dir;/lib/qca/crypto</seg>
+        <seg>mozcerts-qt5 and qcatool-qt5</seg>
+        <seg>libqca-qt5.so</seg>
         <seg>
-          &qt4-dir;/include/QtCrypto,
-          &qt4-dir;/lib/cmake/Qca and
-          &qt4-dir;/lib/qca
+          &qt5-dir;/include/Qca-qt5,
+          &qt5-dir;/lib/cmake/Qca-qt5, and
+          &qt5-dir;/lib/qca-qt5
         </seg>
 @y
-        <seg>mozcerts, qcatool</seg>
-        <seg>libqca.so と &qt4-dir;/lib/qca/crypto にプラグイン</seg>
+        <seg>mozcerts-qt5, qcatool-qt5</seg>
+        <seg>libqca-qt5.so</seg>
         <seg>
-          &qt4-dir;/include/QtCrypto,
-          &qt4-dir;/lib/cmake/Qca,
-          &qt4-dir;/lib/qca
+          &qt5-dir;/include/Qca-qt5,
+          &qt5-dir;/lib/cmake/Qca-qt5,
+          &qt5-dir;/lib/qca-qt5
         </seg>
 @z
 

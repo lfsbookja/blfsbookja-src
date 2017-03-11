@@ -159,20 +159,22 @@
 
 @x
         <seg>
-          cwebp and dwebp
+          cwebp, dwebp, gif2webp, vwebp, and webpmux
         </seg>
         <seg>
-          libwebp.so
+          libwebpdecoder.so, libwebpdemux.so, libwebpextras.so,
+          libwebpmux.so, and libwebp.so
         </seg>
         <seg>
           /usr/include/webp
         </seg>
 @y
         <seg>
-          cwebp, dwebp
+          cwebp, dwebp, gif2webp, vwebp, webpmux
         </seg>
         <seg>
-          libwebp.so
+          libwebpdecoder.so, libwebpdemux.so, libwebpextras.so,
+          libwebpmux.so, libwebp.so
         </seg>
         <seg>
           /usr/include/webp

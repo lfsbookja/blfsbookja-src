@@ -9,10 +9,7 @@ BOOKdir = @abs_bookdir@/server/other
 CHANGE_FILES = \
 	openldap.ch \
 	other.ch    \
-	soprano.ch  \
-	unbound.ch  \
-	virtuoso.ch \
-	xinetd.ch
+	unbound.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -26,10 +23,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-openldap.xml: $(BOOKdir)/$@ $(srcdir)/openldap.ch
-other.xml:    $(BOOKdir)/$@ $(srcdir)/other.ch
-soprano.xml:  $(BOOKdir)/$@ $(srcdir)/soprano.ch
-unbound.xml:  $(BOOKdir)/$@ $(srcdir)/unbound.ch
-virtuoso.xml: $(BOOKdir)/$@ $(srcdir)/virtuoso.ch
-xinetd.xml:   $(BOOKdir)/$@ $(srcdir)/xinetd.ch

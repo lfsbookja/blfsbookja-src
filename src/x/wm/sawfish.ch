@@ -171,13 +171,35 @@
 @z
 
 @x
-        <seg>sawfish, sawfish-about, sawfish-client, and sawfish-config</seg>
-        <seg>None</seg>
-        <seg>/usr/share/sawfish</seg>
+        <seg>
+          sawfish, sawfish-about, sawfish-client, sawfish-config,
+          sawfish-kde4-session, sawfish-kde5-session, sawfish-lumina-session, 
+          sawfish-mate-session, and sawfish-xfce-session
+        </seg>
+        <seg>
+          Several internal modules under /usr/lib/sawfish tree
+        </seg>
+        <seg>
+          /usr/include/sawfish,
+          /usr/lib/sawfish,
+          /usr/lib/rep/sawfish, and
+          /usr/share/sawfish
+        </seg>
 @y
-        <seg>sawfish, sawfish-about, sawfish-client, sawfish-config</seg>
-        <seg>&None;</seg>
-        <seg>/usr/share/sawfish</seg>
+        <seg>
+          sawfish, sawfish-about, sawfish-client, sawfish-config,
+          sawfish-kde4-session, sawfish-kde5-session, sawfish-lumina-session, 
+          sawfish-mate-session, sawfish-xfce-session
+        </seg>
+        <seg>
+          Several internal modules under /usr/lib/sawfish tree
+        </seg>
+        <seg>
+          /usr/include/sawfish,
+          /usr/lib/sawfish,
+          /usr/lib/rep/sawfish,
+          /usr/share/sawfish
+        </seg>
 @z
 
 @x

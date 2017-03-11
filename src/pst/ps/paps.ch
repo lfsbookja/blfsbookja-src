@@ -128,20 +128,18 @@
     test.ps</command>.  View the output file in any available PostScript viewer
     and visually compare it to
     <filename>doxygen-doc/html/example-output.png</filename> in the source tree.
-    The results of the output will be more robust with DejaVu, Arphic, and
-    Kochi fonts installed as explained in the <xref
-    linkend="xft-font-protocol"/> Section of the X Window System
-    configuration.</para>
+    The results of the output will be more robust with <xref linkend="dejavu-fonts"/>
+    and some of the <xref linkend="Chinese-fonts"/> and <xref
+    linkend="Japanese-fonts"/>.</para>
 @y
     <para>
     ビルド結果をテストする場合は <command>src/test_libpaps &gt; test.ps</command> を実行します。
     出力された PostScript ファイルを PostScript ビューアーで開きます。
     そしてソースツリー内にある <filename>doxygen-doc/html/example-output.png</filename> と比較してください。
     
-    The results of the output will be more robust with DejaVu, Arphic, and
-    Kochi fonts installed as explained in the <xref
-    linkend="xft-font-protocol"/> Section of the X Window System
-    configuration.</para>
+    The results of the output will be more robust with <xref linkend="dejavu-fonts"/>
+    and some of the <xref linkend="Chinese-fonts"/> and <xref
+    linkend="Japanese-fonts"/>.</para>
 @z
 
 @x

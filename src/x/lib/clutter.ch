@@ -93,39 +93,61 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
+    <para role="recommended" revision="sysv">
       <xref linkend="gobject-introspection"/> and
       <xref linkend="gtk3"/>
     </para>
+    <para role="recommended" revision="systemd">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libgudev"/>,
+      <xref linkend="libinput"/>,
+      <xref linkend="libxkbcommon"/>, and
+      <xref linkend="wayland"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
+    <para role="recommended" revision="sysv">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>
+    </para>
+    <para role="recommended" revision="systemd">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libgudev"/>,
+      <xref linkend="libinput"/>,
+      <xref linkend="libxkbcommon"/>,
+      <xref linkend="wayland"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
+    <para role="optional" revision="sysv">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libevdev/">
-      libevdev</ulink>,
-      <ulink url="http://xkbcommon.org/">libxkbcommon</ulink>,
-      <ulink url="http://tslib.berlios.de/">Tslib</ulink>,
-      <xref linkend="udev-extras"/> (for GUdev), and
-      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
+      <xref linkend="libgudev"/>,
+      <xref linkend="libinput"/>,
+      <xref linkend="libxkbcommon"/>,
+      <ulink url="https://github.com/kergoth/tslib">Tslib</ulink>, and
+      <xref linkend="wayland"/>
+    </para>
+    <para role="optional" revision="systemd">
+      <xref linkend="gtk-doc"/> and
+      <ulink url="https://github.com/kergoth/tslib">Tslib</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
+    <para role="optional" revision="sysv">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libevdev/">
-      libevdev</ulink>,
-      <ulink url="http://xkbcommon.org/">libxkbcommon</ulink>,
-      <ulink url="http://tslib.berlios.de/">Tslib</ulink>,
-      <xref linkend="udev-extras"/> (for GUdev), and
-      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
+      <xref linkend="libgudev"/>,
+      <xref linkend="libinput"/>,
+      <xref linkend="libxkbcommon"/>,
+      <ulink url="https://github.com/kergoth/tslib">Tslib</ulink>,
+      <xref linkend="wayland"/>
+    </para>
+    <para role="optional" revision="systemd">
+      <xref linkend="gtk-doc"/>,
+      <ulink url="https://github.com/kergoth/tslib">Tslib</ulink>
     </para>
 @z
 
@@ -150,15 +172,10 @@
 
 @x
       To test the results, issue: <command>make -k check</command> (you must be
-      in an xterm or similar to do this, because it launches some windows). The
-      abicheck.sh test fails, if experimental backends have been enabled by the
-      use of the parameter <parameter>--enable-egl-backend</parameter>. Without
-      that switch, the tests pass.
+      in an xterm or similar to do this, because it launches some windows).
 @y
       ビルド結果をテストする場合は <command>make -k check</command> を実行します。
       (この際にはウィンドウ起動が行われるため、xterm などから実行することが必要です。)
-      また abicheck.sh テストは、パラメーター <parameter>--enable-egl-backend</parameter> により実験的なバックエンドが有効にされている場合に失敗します。
-      このパラメーターを取り除けば、テストは成功します。
 @z
 
 @x

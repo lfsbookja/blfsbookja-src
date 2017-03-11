@@ -14,15 +14,18 @@
 @z
 
 @x
-  <title>GNOME Libraries and Utilities</title>
+  <title><phrase revision="sysv">GNOME Libraries and Utilities</phrase>
+         <phrase revision="systemd">GNOME Libraries and Desktop</phrase></title>
 @y
-  <title>GNOME のライブラリとユーティリティー</title>
+  <title><phrase revision="sysv">GNOME のライブラリとユーティリティー</phrase>
+         <phrase revision="systemd">GNOME のライブラリとデスクトップ</phrase></title>
 @z
 
 @x
+  <para revision="sysv">
     The objective of this section is not to build a
     <application>GNOME</application> desktop, because it depends on
-    <application>Systemd</application>, which BLFS doesn't support. Rather, it
+    <application>systemd</application>, which BLFS doesn't support. Rather, it
     provides packages required for some platform independent
     <application>GNOME</application> applications to build and run properly
     under any Window Manager (e.g.
@@ -33,10 +36,12 @@
     <application>KDE</application>,
     <application>XFCE</application>,
     <application>LXDE</application>).
+  </para>
 @y
+  <para revision="sysv">
     The objective of this section is not to build a
     <application>GNOME</application> desktop, because it depends on
-    <application>Systemd</application>, which BLFS doesn't support. Rather, it
+    <application>systemd</application>, which BLFS doesn't support. Rather, it
     provides packages required for some platform independent
     <application>GNOME</application> applications to build and run properly
     under any Window Manager (e.g.
@@ -47,4 +52,19 @@
     <application>KDE</application>,
     <application>XFCE</application>,
     <application>LXDE</application>).
+  </para>
+@z
+
+@x
+  <para revision="systemd">
+    The objective of this section is to build a
+    <application>GNOME</application> desktop, since we have
+    <application>systemd</application>.
+  </para>
+@y
+  <para revision="systemd">
+    The objective of this section is to build a
+    <application>GNOME</application> desktop, since we have
+    <application>systemd</application>.
+  </para>
 @z

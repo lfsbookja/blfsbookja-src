@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "343 MB (357 MB, with tests and downloaded documents)">
-  <!ENTITY git-time          "0.7 SBU (4.8 SBU, using -j8, with tests and downloaded documents)">
+  <!ENTITY git-buildsize     "365 MB (with optional dependencies and documentation)">
+  <!ENTITY git-time          "0.8 SBU (add 2.2 SBU for building documentation, add 4.7 SBU for tests)">
 @y
-  <!ENTITY git-buildsize     "343 MB (テスト込みドキュメント込みで 357 MB)">
-  <!ENTITY git-time          "0.7 SBU (テスト込みドキュメント込みで、-j8 利用時は 4.8 SBU)">
+  <!ENTITY git-buildsize     "365 MB (任意依存パッケージとドキュメント込み)">
+  <!ENTITY git-time          "0.8 SBU (ドキュメント込みでさらに 2.2 SBU, テスト込みでさらに 4.7 SBU)">
 @z
 
 @x
@@ -106,25 +106,25 @@
 @x
           <ulink url="&git-root;/git-manpages-&git-version;.tar.xz">
           &git-root;/git-manpages-&git-version;.tar.xz</ulink>
-          (if you prefer the original, not needed if you've installed asciidoc
-          and xmlto and prefer to build them).
+          (not needed if you've installed <xref linkend="asciidoc"/>,
+          <xref linkend="xmlto"/>, and prefer to rebuild them)
 @y
           <ulink url="&git-root;/git-manpages-&git-version;.tar.xz">
           &git-root;/git-manpages-&git-version;.tar.xz</ulink>
-          (if you prefer the original, not needed if you've installed asciidoc
-          and xmlto and prefer to build them).
+          (not needed if you've installed <xref linkend="asciidoc"/>,
+          <xref linkend="xmlto"/>, and prefer to rebuild them)
 @z
 
 @x
           <ulink url="&git-root;/git-htmldocs-&git-version;.tar.xz">
           &git-root;/git-htmldocs-&git-version;.tar.xz</ulink>
-          and other docs (if you prefer the original, not needed if you've
-          installed asciidoc and prefer to build them).
+          and other docs (not needed if you've installed
+          <xref linkend="asciidoc"/> and want to rebuild the documentation).
 @y
           <ulink url="&git-root;/git-htmldocs-&git-version;.tar.xz">
           &git-root;/git-htmldocs-&git-version;.tar.xz</ulink>
-          and other docs (if you prefer the original, not needed if you've
-          installed asciidoc and prefer to build them).
+          and other docs (not needed if you've installed
+          <xref linkend="asciidoc"/> and want to rebuild the documentation).
 @z
 
 @x
@@ -170,18 +170,27 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (to create the man pages and html docs)</bridgehead>
-    <para>
+    <bridgehead renderas="sect4">Optional (to create the man pages, html docs
+    and other docs)</bridgehead>
+    <para role="optional">
       <xref linkend="xmlto"/> and
-      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> or
-      <ulink url="http://asciidoctor.org/">AsciiDoctor</ulink>
+      <xref linkend="asciidoc"/> or
+      <ulink url="http://asciidoctor.org/">AsciiDoctor</ulink>, and also
+      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>
+      (for the PDF version of the user manual), and
+      <ulink url="http://docbook2x.sourceforge.net/">docbook2x</ulink> to
+      create info pages
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional; (man ページと html ドキュメントを生成する場合)</bridgehead>
-    <para>
+    <bridgehead renderas="sect4">&Optional; (man ページと html ドキュメントなどを生成する場合)</bridgehead>
+    <para role="optional">
       <xref linkend="xmlto"/>,
-      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> または
-      <ulink url="http://asciidoctor.org/">AsciiDoctor</ulink>
+      <xref linkend="asciidoc"/> または
+      <ulink url="http://asciidoctor.org/">AsciiDoctor</ulink>, さらに
+      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>
+      (for the PDF version of the user manual),
+      <ulink url="http://docbook2x.sourceforge.net/">docbook2x</ulink> to
+      create info pages
     </para>
 @z
 
@@ -205,30 +214,39 @@
 @z
 
 @x
-      If you have installed <ulink
-      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> you can
-      create the html version of the man pages and other docs:
+      You can build the man pages and/or html docs, or
+      use downloaded ones. If you choose to build them, use next two following
+      instructions.
 @y
-      <ulink
-      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> をインストールしていて man ページを生成したい場合は、以下を実行します。
+      You can build the man pages and/or html docs, or
+      use downloaded ones. If you choose to build them, use next two following
+      instructions.
 @z
 
 @x
-      If you have installed <ulink
-      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> and
+      If you have installed <xref linkend="asciidoc"/> you can
+      create the html version of the man pages and other docs:
+@y
+      <xref linkend="asciidoc"/> をインストールしていて htmlなどのドキュメントを生成したい場合は以下を実行します。
+@z
+
+@x
+      If you have installed <xref linkend="asciidoc"/>  and
       <xref linkend="xmlto"/> you can create the man pages:
 @y
-      <ulink
-      url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink> と <xref
-      linkend="xmlto"/> をインストールしている場合、以下のコマンドを実行すれば、man ページを生成することができます。
+      <xref linkend="asciidoc"/> と <xref
+      linkend="xmlto"/> をインストールしている場合、以下のコマンドを実行すれば man ページを生成することができます。
 @z
 
 @x
       The test suite can be run in parallel mode. To run the test suite, issue:
-      <command>make test</command>.
+      <command>make test</command>. If run as a normal user, 0 tests should be
+      reported as failed in the final summary.
 @y
       テストスイートは並行モードでの実行も可能です。
       ビルド結果をテストする場合は <command>make test</command> を実行します。
+      If run as a normal user, 0 tests should be
+      reported as failed in the final summary.
 @z
 
 @x
@@ -360,27 +378,27 @@
 
 @x
         <seg>
-          git, git-receive-pack and git-upload-archive (hardlinked to each other),
-          git-cvsserver, git-shell, git-upload-pack, and gitk
+          git, git-receive-pack and git-upload-archive (hardlinked to each
+          other), git-cvsserver, git-shell, git-upload-pack, and gitk
         </seg>
         <seg>
           None
         </seg>
         <seg>
-          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;{,&lt;arch-linux&gt;/auto}/Git,
+          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;{,&lt;arch&gt;-linux/auto}/Git,
           /usr/libexec/git-core and
           /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>
 @y
         <seg>
-          git, git-receive-pack と git-upload-archive (互いにハードリンクされている),
-          git-cvsserver, git-shell, git-upload-pack, gitk
+          git, git-receive-pack and git-upload-archive (hardlinked to each
+          other), git-cvsserver, git-shell, git-upload-pack, gitk
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
-          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;{,&lt;arch-linux&gt;/auto}/Git,
+          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;{,&lt;arch&gt;-linux/auto}/Git,
           /usr/libexec/git-core,
           /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>

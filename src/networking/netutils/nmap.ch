@@ -80,35 +80,31 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <note>
-      <para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+@z
+@x
         These packages are recommended because if they're not installed, the
         build process will compile and link against its own (often older)
         version.
-      </para>
-    </note>
-
+@y
+        以下のパッケージを推奨するのは以下の理由によります。
+        これらのパッケージがインストールされていない場合は、本パッケージに含まれるものを用いてコンパイルおよびリンクが行われますが、それらはしばしば古いものであるためです。
+@z
+@x
     <para role="recommended">
       <xref linkend="libpcap"/>,
-      <xref linkend="lua"/>,
-      <xref linkend="pcre"/>, and
+<!--  <xref linkend="lua"/>, broken with lua-5.3.0-->
+      <xref linkend="pcre"/> and
       <xref linkend="liblinear"/>
 <!-- This is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
       <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
 -->
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <note>
-      <para>
-        以下のパッケージを推奨するのは以下の理由によります。
-        これらのパッケージがインストールされていない場合は、本パッケージに含まれるものを用いてコンパイルおよびリンクが行われますが、それらはしばしば古いものであるためです。
-      </para>
-    </note>
-
     <para role="recommended">
       <xref linkend="libpcap"/>,
-      <xref linkend="lua"/>,
+<!--  <xref linkend="lua"/>, broken with lua-5.3.0-->
       <xref linkend="pcre"/>,
       <xref linkend="liblinear"/>
 <!-- This is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
@@ -150,24 +146,19 @@
 @z
 
 @x
-        This package does not support parallel build.
+    <para>If you wish to run the test suite, run the following command:</para>
 @y
-        &notParallelBuild;
+    <para>If you wish to run the test suite, run the following command:</para>
 @z
 
 @x
-    <para>Install <application>Nmap</application> by running the following
-    commands:</para>
+    <para>To test the results, issue: <command>make check</command> as the
+    <systemitem class="username">root</systemitem> user. Tests need a
+    graphical session.</para>
 @y
-    <para>
-    以下のコマンドを実行して <application>Nmap</application> をビルドします。
-    </para>
-@z
-
-@x
-    <para>This package does not come with a test suite.</para>
-@y
-    <para>&notTestSuite;</para>
+    <para>To test the results, issue: <command>make check</command> as the
+    <systemitem class="username">root</systemitem> user. Tests need a
+    graphical session.</para>
 @z
 
 @x
@@ -195,15 +186,31 @@
 @z
 
 @x
-        <seg>ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_zenmap,
-        xnmap and zenmap</seg>
-        <seg>/usr/lib/python&python2-version;/site-packages/</seg>
-        <seg>/usr/share/ncat, /usr/share/nmap and /usr/share/zenmap</seg>
+        <seg>
+          ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_ndiff,
+          uninstall_zenmap, xnmap and zenmap
+        </seg>
+<!--    <seg>/usr/lib/python&python2-version;/site-packages/</seg>-->
+        <seg>
+          None
+        </seg>
+        <seg>
+          /usr/lib/python&python2-majorver;/site-packages/{radialnet,zenmapCore,zenmapGUI},
+          and /usr/share/{ncat,nmap,zenmap}
+        </seg>
 @y
-        <seg>ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_zenmap,
-        xnmap, zenmap</seg>
-        <seg>/usr/lib/python&python2-version;/site-packages/</seg>
-        <seg>/usr/share/ncat, /usr/share/nmap, /usr/share/zenmap</seg>
+        <seg>
+          ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_ndiff,
+          uninstall_zenmap, xnmap and zenmap
+        </seg>
+<!--    <seg>/usr/lib/python&python2-version;/site-packages/</seg>-->
+        <seg>
+          None
+        </seg>
+        <seg>
+          /usr/lib/python&python2-majorver;/site-packages/{radialnet,zenmapCore,zenmapGUI},
+          and /usr/share/{ncat,nmap,zenmap}
+        </seg>
 @z
 
 @x

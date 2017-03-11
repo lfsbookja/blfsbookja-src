@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libsigc-buildsize     "35 MB (additional 17 MB for the tests)">
-  <!ENTITY libsigc-time          "less than 0.1 SBU (additional 0.1 SBU for the tests)">
+  <!ENTITY libsigc-buildsize     "58 MB (with tests)">
+  <!ENTITY libsigc-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY libsigc-buildsize     "35 MB (テスト実行時はさらに 17 MB)">
-  <!ENTITY libsigc-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実行時はさらに 0.1 SBU)">
+  <!ENTITY libsigc-buildsize     "58 MB (テスト込み)">
+  <!ENTITY libsigc-time          "0.3 SBU (テスト込み)">
 @z
 
 @x
@@ -131,10 +131,8 @@
           libsigc-2.0.so
         </seg>
         <seg>
-          /usr/include/sigc++-2.0,
-          /usr/lib/sigc++-2.0,
-          /usr/share/devhelp/books/libsigc++-2.0 and
-          /usr/share/doc/libsigc++-2.0
+          /usr/{include,lib}/sigc++-2.0 and
+          /usr/share/{devhelp/books,doc}/libsigc++-2.0
         </seg>
 @y
         <seg>
@@ -144,10 +142,8 @@
           libsigc-2.0.so
         </seg>
         <seg>
-          /usr/include/sigc++-2.0,
-          /usr/lib/sigc++-2.0,
-          /usr/share/devhelp/books/libsigc++-2.0,
-          /usr/share/doc/libsigc++-2.0
+          /usr/{include,lib}/sigc++-2.0,
+          /usr/share/{devhelp/books,doc}/libsigc++-2.0
         </seg>
 @z
 

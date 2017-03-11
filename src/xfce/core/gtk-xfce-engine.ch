@@ -145,8 +145,9 @@
           None
         </seg>
         <seg>
-          libxfce.so (in /usr/lib/gtk-&gtk2-libdir;/engines and
-          /usr/lib/gtk-3.0/3.0.0/theming-engines)
+          libxfce.so (in /usr/lib/gtk-&gtk2-libdir;/engines,
+          /usr/lib/gtk-3.0/3.0.0/theming-engines), and
+          /usr/share/themes/Xfce* (21 variations)
         </seg>
         <seg>
           Xfce, Xfce-4.0, Xfce-4.2, Xfce-4.4, Xfce-4.6, Xfce-b5, Xfce-basic,
@@ -160,7 +161,8 @@
         </seg>
         <seg>
           libxfce.so (in /usr/lib/gtk-&gtk2-libdir;/engines,
-          /usr/lib/gtk-3.0/3.0.0/theming-engines)
+          /usr/lib/gtk-3.0/3.0.0/theming-engines), and
+          /usr/share/themes/Xfce* (21 variations)
         </seg>
         <seg>
           Xfce, Xfce-4.0, Xfce-4.2, Xfce-4.4, Xfce-4.6, Xfce-b5, Xfce-basic,

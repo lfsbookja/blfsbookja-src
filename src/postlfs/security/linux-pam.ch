@@ -131,8 +131,10 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="fop"/>,
-      <xref linkend="libxslt"/> and
-      <xref linkend="w3m"/>
+      <xref linkend="libxslt"/> and either
+      <xref linkend="w3m"/> or
+      <ulink url="http://elinks.or.cz/">elinks</ulink> (but with a link calling it
+      '<application>links</application>') and remove the documentation switch.
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (ドキュメント再生成時)</bridgehead>
@@ -140,8 +142,10 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="fop"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="w3m"/>
+      <xref linkend="libxslt"/> and either
+      <xref linkend="w3m"/> or
+      <ulink url="http://elinks.or.cz/">elinks</ulink> (but with a link calling it
+      '<application>links</application>') and remove the documentation switch.
     </para>
 @z
 
@@ -198,14 +202,29 @@
 @z
 
 @x
-      <option>--disable-nis</option>: This switch disables building
-      of the Network Information Service/Yellow Pages support in
-      pam_unix and pam_access modules. Remove it if you have installed
-      <xref linkend="libtirpc"/>.
+      <parameter>--enable-securedir=/lib/security</parameter>:
+      This switch sets install location for the
+      <application>PAM</application> modules.
 @y
-      <parameter>--disable-nis</parameter>:
-      このスイッチは pam_unix と pam_access において、NIS/YP (Network Information Service/Yellow Pages) サポートを無効にします。
-      <xref linkend="libtirpc"/> をインストールしている場合は、このスイッチを除いてください。
+      <parameter>--enable-securedir=/lib/security</parameter>:
+      This switch sets install location for the
+      <application>PAM</application> modules.
+@z
+
+@x
+      <parameter>--disable-regenerate-docu</parameter> : This switch prevents
+     this version of the package trying to build its documentation, and failing,
+     if the required dependencies <emphasis>except</emphasis>
+     <xref linkend="w3m"/> are present, but <xref linkend="Links"/> is present.
+     Remove this switch if you have installed w3m (or elinks, with a link so it
+     can be invoked as 'links').
+@y
+      <parameter>--disable-regenerate-docu</parameter> : This switch prevents
+     this version of the package trying to build its documentation, and failing,
+     if the required dependencies <emphasis>except</emphasis>
+     <xref linkend="w3m"/> are present, but <xref linkend="Links"/> is present.
+     Remove this switch if you have installed w3m (or elinks, with a link so it
+     can be invoked as 'links').
 @z
 
 @x
@@ -276,9 +295,12 @@
 
 @x
           You should now reinstall the <xref linkend="shadow"/>
-          package.
+          <phrase revision="sysv">package.</phrase>
+          <phrase revision="systemd"> and <xref linkend="systemd"/>
+          packages.</phrase>
 @y
-          <xref linkend="shadow"/> パッケージをここで再インストールしてください。
+          <xref linkend="shadow"/>
+          <phrase revision="systemd"> と <xref linkend="systemd"/></phrase> をここで再インストールしてください。
 @z
 
 @x

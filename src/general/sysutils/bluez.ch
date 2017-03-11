@@ -156,11 +156,11 @@
 @z
 
 @x
-      <parameter>--enable-library</parameter>: This switch enables building of the
+      <parameter>--enable-library</parameter>: This switch enables building the
       <application>BlueZ</application> 4 compatibility library which is required by
       some applications.
 @y
-      <parameter>--enable-library</parameter>: This switch enables building of the
+      <parameter>--enable-library</parameter>: This switch enables building the
       <application>BlueZ</application> 4 compatibility library which is required by
       some applications.
 @z
@@ -210,9 +210,11 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Socket</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Socket</phrase></title>
 @z
 
 @x
@@ -253,7 +255,7 @@
           libbluetooth.so
         </seg>
         <seg>
-          /{etc,usr/{include,libexec}}/bluetooth and
+          /etc/bluetooth, /usr/{include,libexec}/bluetooth, and
           /usr/share/doc/bluez-&bluez-version;
         </seg>
 @y
@@ -266,7 +268,7 @@
           libbluetooth.so
         </seg>
         <seg>
-          /{etc,usr/{include,libexec}}/bluetooth,
+          /etc/bluetooth, /usr/{include,libexec}/bluetooth,
           /usr/share/doc/bluez-&bluez-version;
         </seg>
 @z

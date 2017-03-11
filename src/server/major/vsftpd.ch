@@ -87,16 +87,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="linux-pam"/>,
-      <xref linkend="openssl"/>, and
-      <xref linkend="libcap"/>
+      <xref linkend="libcap-pam"/>,
+      <xref linkend="linux-pam"/>, and
+      <xref linkend="openssl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="libcap-pam"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="openssl"/>,
-      <xref linkend="libcap"/>
+      <xref linkend="openssl"/>
     </para>
 @z
 
@@ -171,12 +171,12 @@
     directory that anonymous users will use (<filename
     class='directory'>/home/ftp</filename>)
     and the directory the daemon will chroot into
-    (<filename class='directory'>/var/ftp/empty</filename>).</para>
+    (<filename class='directory'>&vsftpd-empty;</filename>).</para>
 @y
     <para><command>install -v -d ...</command>:
     これは匿名ユーザーが利用するディレクトリ (<filename
     class='directory'>/home/ftp</filename>) と、デーモンが chroot する先のディレクトリ (<filename
-    class='directory'>/var/ftp/empty</filename>) のそれぞれを生成します。
+    class='directory'>&vsftpd-empty;</filename>) のそれぞれを生成します。
     </para>
 @z
 
@@ -265,19 +265,29 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
-      <para>Install the <filename>/etc/rc.d/init.d/vsftpd</filename>
-      init script included in the
-      <xref linkend="bootscripts"/> package.</para>
+      <para>Install the
+      <phrase revision="sysv"><filename>/etc/rc.d/init.d/vsftpd</filename> init
+      script</phrase>
+      <phrase revision="systemd"><filename>vsftpd.service</filename>
+      unit</phrase> included in the
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> package.</para>
 @y
-      <para>Install the <filename>/etc/rc.d/init.d/vsftpd</filename>
-      init script included in the
-      <xref linkend="bootscripts"/> package.</para>
+      <para>Install the
+      <phrase revision="sysv"><filename>/etc/rc.d/init.d/vsftpd</filename> init
+      script</phrase>
+      <phrase revision="systemd"><filename>vsftpd.service</filename>
+      unit</phrase> included in the
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> package.</para>
 @z
 
 @x
@@ -299,11 +309,11 @@
 @x
         <seg>vsftpd</seg>
         <seg>None</seg>
-        <seg>/var/ftp, /var/ftp/empty, /home/ftp</seg>
+        <seg>/usr/share/vsftpd, /home/ftp</seg>
 @y
         <seg>vsftpd</seg>
-        <seg>None</seg>
-        <seg>/var/ftp, /var/ftp/empty, /home/ftp</seg>
+        <seg>&None;</seg>
+        <seg>/usr/share/vsftpd, /home/ftp</seg>
 @z
 
 @x

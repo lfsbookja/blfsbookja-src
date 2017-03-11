@@ -88,14 +88,11 @@
       A firewall in Linux is accomplished through a portion of the
       kernel called netfilter. The interface to netfilter is
       <application>Iptables</application>. To use it, the appropriate
-      kernel configuration parameters are found in Networking Support &rArr;
-      Networking Options &rArr; Network Packet Filtering Framework.
+      kernel configuration parameters are found in:
 @y
       Linux におけるファイアウォールは、カーネルの機能の一部である netfilter を通じて実現されます。
       その netfilter へのインターフェースが <application>Iptables</application> です。
-      これを使うには、カーネルのパラメーター Networking Support &rArr;
-      Networking Options &rArr; Network Packet Filtering Framework
-      を設定します。
+      これを使うには、以下のカーネルのパラメーターを設定します。
 @z
 
 @x
@@ -160,6 +157,16 @@
 @z
 
 @x
+      <parameter>--enable-libipq</parameter>: This switch enables building
+      of <filename class="libraryfile">libipq.so</filename> which
+      can be used by some packages outside of BLFS.
+@y
+      <parameter>--enable-libipq</parameter>:
+      本スイッチは <filename class="libraryfile">libipq.so</filename> をビルドするようにします。
+      これは BLFS には含めていない他のパッケージにて利用されています。
+@z
+
+@x
       <parameter>--with-xtlibdir=/lib/xtables</parameter>: Ensure all 
       <application>Iptables</application> modules are installed in the 
       <filename class="directory">/lib/xtables</filename> directory.
@@ -167,16 +174,6 @@
       <parameter>--with-xtlibdir=/lib/xtables</parameter>:
       <application>Iptables</application> モジュールをすべて <filename
       class="directory">/lib/xtables</filename> ディレクトリにインストールするようにします。
-@z
-
-@x
-      <option>--enable-libipq</option>: This switch enables building
-      of <filename class="libraryfile">libipq.so</filename> which
-      can be used by some packages outside of BLFS.
-@y
-      <option>--enable-libipq</option>:
-      本スイッチは <filename class="libraryfile">libipq.so</filename> をビルドするようにします。
-      これは BLFS には含めていない他のパッケージにて利用されています。
 @z
 
 @x
@@ -209,9 +206,11 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
@@ -242,7 +241,7 @@
 @x
         <seg>
           ip6tables, ip6tables-restore, ip6tables-save, iptables, iptables-restore,
-          iptables-save, iptables-xml, and xtables-multi
+          iptables-save, iptables-xml, nfsynproxy (optional) and xtables-multi
         </seg>
         <seg>
           libip4tc.so, libip6tc.so, libipq.so, libiptc.so, and libxtables.so
@@ -253,7 +252,7 @@
 @y
         <seg>
           ip6tables, ip6tables-restore, ip6tables-save, iptables, iptables-restore,
-          iptables-save, iptables-xml, xtables-multi
+          iptables-save, iptables-xml, nfsynproxy (任意ビルド), xtables-multi
         </seg>
         <seg>
           libip4tc.so, libip6tc.so, libipq.so, libiptc.so, libxtables.so

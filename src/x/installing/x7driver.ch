@@ -34,8 +34,8 @@
 @x
       The <application>Xorg Drivers</application> page contains the
       instructions for building Xorg drivers that are necessary in order
-      for Xorg Server to take the advantage of the hardware that it is
-      running on. At least one input and one video driver is required
+      for Xorg Server to take advantage of the hardware that it is
+      running on. At least one input and one video driver are required
       for Xorg Server to start.
 @y
       この <application>Xorg ドライバー</application> の節では、稼働中のハードウェアを Xorg サーバーが活用するための Xorg ドライバーの構築手順を示すものです。
@@ -53,12 +53,6 @@
         linkend="pciutils"/> パッケージの <command>lspci</command> コマンドを利用するとよいでしょう。
         これを使えば、どのビデオハードウェアを利用しているかが分かります。
         その後には各種パッケージの情報から、どのドライバーを必要としているかを調べてください。
-@z
-
-@x
-      <title>Xorg Modules</title>
-@y
-      <title>Xorg &Module;</title>
 @z
 
 @x

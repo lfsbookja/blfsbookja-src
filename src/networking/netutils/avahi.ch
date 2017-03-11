@@ -77,21 +77,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
-      <xref linkend="intltool"/>
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>
+      <xref linkend="glib2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="optional">
-      <xref linkend="dbus-python"/>,
+    <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
@@ -100,12 +97,11 @@
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="optional">
-      <xref linkend="dbus-python"/>,
+    <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libdaemon"/>,
+      <xref linkend="libdaemon"/> and
       <xref linkend="libglade"/>
     </para>
 @z
@@ -113,12 +109,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="qt4"/>
+      <xref linkend="dbus-python"/> and
+      <xref linkend="pygtk"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="qt4"/>
+      <xref linkend="dbus-python"/> and
+      <xref linkend="pygtk"/> 
     </para>
 @z
 
@@ -183,54 +181,56 @@
 @z
 
 @x
-      <option>--disable-mono</option>: This parameter disables the
+      <parameter>--disable-mono</parameter>: This parameter disables the
       <application>Mono</application> bindings.
 @y
-      <option>--disable-mono</option>: This parameter disables the
+      <parameter>--disable-mono</parameter>: This parameter disables the
       <application>Mono</application> bindings.
 @z
 
 @x
-      <option>--disable-monodoc</option>: This parameter disables
+      <parameter>--disable-monodoc</parameter>: This parameter disables
       documentation for the <application>Mono</application> bindings.
 @y
-      <option>--disable-monodoc</option>: This parameter disables
+      <parameter>--disable-monodoc</parameter>: This parameter disables
       documentation for the <application>Mono</application> bindings.
 @z
 
 @x
-      <option>--disable-python</option>: This parameter disables the
+      <parameter>--disable-python</parameter>: This parameter disables the
       scripts that depend on <application>Python</application>. It also
       allows a regular install to complete successfully.
 @y
-      <option>--disable-python</option>: This parameter disables the
+      <parameter>--disable-python</parameter>: This parameter disables the
       scripts that depend on <application>Python</application>. It also
       allows a regular install to complete successfully.
 @z
 
 @x
-      <option>--disable-qt3</option>: This parameter disables the
-      building of <application>Qt3</application> mainloop integration.
+      <parameter>--disable-qt3</parameter>: This parameter disables the
+      attempt to build the obsolete <application>Qt3</application> 
+      portions of the package.
 @y
-      <option>--disable-qt3</option>: This parameter disables the
-      building of <application>Qt3</application> mainloop integration.
+      <parameter>--disable-qt3</parameter>: This parameter disables the
+      attempt to build the obsolete <application>Qt3</application> 
+      portions of the package.
 @z
 
 @x
-      <option>--disable-qt4</option>: This parameter disables the building
-      of <application>Qt4Core</application> mainloop integration. Omit
-      this if you have installed <application>Qt4</application>.
+      <parameter>--disable-qt4</parameter>: This parameter disables the
+      attempt to build the obsolete <application>Qt4Core</application> 
+      portions of the package.
 @y
-      <option>--disable-qt4</option>: This parameter disables the building
-      of <application>Qt4Core</application> mainloop integration. Omit
-      this if you have installed <application>Qt4</application>.
+      <parameter>--disable-qt4</parameter>: This parameter disables the
+      attempt to build the obsolete <application>Qt4Core</application> 
+      portions of the package.
 @z
 
 @x
-      <option>--enable-core-docs</option>: This parameter enables the
+      <parameter>--enable-core-docs</parameter>: This parameter enables the
       building of documentation.
 @y
-      <option>--enable-core-docs</option>: This parameter enables the
+      <parameter>--enable-core-docs</parameter>: This parameter enables the
       building of documentation.
 @z
 
@@ -240,6 +240,26 @@
 @y
       <parameter>--with-distro=none</parameter>: There is an obsolete
       boot script in the distribution for LFS. This option disables it.
+@z
+
+@x
+      <parameter>--with-systemdsystemunitdir=no</parameter>: Without it, the
+      daemon fails to start in BLFS, which does not support
+      <application>systemd</application>.
+@y
+      <parameter>--with-systemdsystemunitdir=no</parameter>: Without it, the
+      daemon fails to start in BLFS, which does not support
+      <application>systemd</application>.
+@z
+
+@x
+      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
+      This parameter is used to set the correct installation directory for
+      systemd units.
+@y
+      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
+      This parameter is used to set the correct installation directory for
+      systemd units.
 @z
 
 @x
@@ -268,11 +288,11 @@
 
 @x
       <option>--disable-libdaemon</option>: This parameter disables the use
-      of <application>libdaemon</application>. If you remove this option,
+      of <application>libdaemon</application>. If you use this option,
       <command>avahi-daemon</command> won't be built.
 @y
       <option>--disable-libdaemon</option>: This parameter disables the use
-      of <application>libdaemon</application>. If you remove this option,
+      of <application>libdaemon</application>. If you use this option,
       <command>avahi-daemon</command> won't be built.
 @z
 

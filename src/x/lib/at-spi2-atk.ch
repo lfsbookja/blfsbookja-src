@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY at-spi2-atk-time          "less than 0.1 SBU">
+  <!ENTITY at-spi2-atk-buildsize     "8.1 MB (with tests)">
+  <!ENTITY at-spi2-atk-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY at-spi2-atk-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY at-spi2-atk-buildsize     "8.1 MB (テスト込み)">
+  <!ENTITY at-spi2-atk-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -144,21 +146,21 @@
 @z
 
 @x
-	<seg>
-	  None
-	</seg>
         <seg>
-          libatk-bridge.so and libatk-bridge-2.0.so
+          None
+        </seg>
+        <seg>
+           libatk-bridge-2.0.so and /usr/lib/gtk-2.0/modules/libatk-bridge.so
         </seg>
         <seg>
           /usr/include/at-spi2-atk
         </seg>
 @y
-	<seg>
-	  &None;
-	</seg>
         <seg>
-          libatk-bridge.so, libatk-bridge-2.0.so
+          &None;
+        </seg>
+        <seg>
+           libatk-bridge-2.0.so, /usr/lib/gtk-2.0/modules/libatk-bridge.so
         </seg>
         <seg>
           /usr/include/at-spi2-atk

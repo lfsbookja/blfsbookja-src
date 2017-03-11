@@ -77,17 +77,23 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="dconf"/>,
+      <phrase revision="systemd"><xref linkend="gnome-shell"/>,</phrase>
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="itstool"/>, and
+      <xref linkend="itstool"/>,
+      <xref linkend="pcre2"/>, and
       <xref linkend="vte"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="dconf"/>,
+      <phrase revision="systemd"><xref linkend="gnome-shell"/>,</phrase>
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="pcre2"/>,
       <xref linkend="vte"/>
     </para>
 @z
@@ -131,23 +137,25 @@
 
 @x
       <parameter>--disable-search-provider</parameter>: This switch disables
-      <quote>search <application>gnome-shell</application></quote> provider.
-      Necessary, because <application>gnome-shell</application> is not in BLFS.
-      Remove it, if you have <application>gnome-shell</application> installed.
+      the <quote>search <application>gnome-shell</application></quote>
+      provider. This is necessary because 
+      <application>gnome-shell</application> is not in BLFS. Remove this if
+      you have <application>gnome-shell</application> installed.
 @y
       <parameter>--disable-search-provider</parameter>: This switch disables
-      <quote>search <application>gnome-shell</application></quote> provider.
-      Necessary, because <application>gnome-shell</application> is not in BLFS.
-      Remove it, if you have <application>gnome-shell</application> installed.
+      the <quote>search <application>gnome-shell</application></quote>
+      provider. This is necessary because 
+      <application>gnome-shell</application> is not in BLFS. Remove this if
+      you have <application>gnome-shell</application> installed.
 @z
 
 @x
-      <option>--disable-migration</option>: This switch disables
-      building of the <application>GNOME Terminal</application>
+      <parameter>--disable-migration</parameter>: This switch disables
+      building the <application>GNOME Terminal</application>
       <application>GConf</application> migration tool which is
       not necessary for BLFS.
 @y
-      <option>--disable-migration</option>:
+      <parameter>--disable-migration</parameter>:
       本スイッチは <application>GNOME Terminal</application> の <application>GConf</application> 互換ツールをビルドしないことを指示します。
       これは BLFS においては不要なものです。
 @z
@@ -174,6 +182,7 @@
         </seg>
        <seg>
           /usr/lib/nautilus/extensions-3.0/libterminal-nautilus.so
+          (Nautilus Extension)
         </seg>
         <seg>
           /usr/share/help/*/gnome-terminal
@@ -184,6 +193,7 @@
         </seg>
        <seg>
           /usr/lib/nautilus/extensions-3.0/libterminal-nautilus.so
+          (Nautilus Extension)
         </seg>
         <seg>
           /usr/share/help/*/gnome-terminal

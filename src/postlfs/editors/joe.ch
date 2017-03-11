@@ -149,27 +149,43 @@
 @z
 
 @x
-        <seg>jmacs, 
-             joe, 
-             jpico, 
-             jstar, 
-             rjoe, and 
-             termidx</seg>
-        <seg>None</seg>
-        <seg>/etc/joe, 
-             /usr/share/joe, and 
-             /usr/share/doc/joe</seg>
+        <seg>
+          jmacs,
+          joe,
+          jpico,
+          jstar,
+          rjoe,
+          stringify,
+          termidx, and
+          uniproc
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          /etc/joe, 
+          /usr/share/joe, and
+          /usr/share/doc/joe-&joe-version;
+        </seg>
 @y
-        <seg>jmacs, 
-             joe, 
-             jpico, 
-             jstar, 
-             rjoe,
-             termidx</seg>
-        <seg>&None;</seg>
-        <seg>/etc/joe, 
-             /usr/share/joe,
-             /usr/share/doc/joe</seg>
+        <seg>
+          jmacs,
+          joe,
+          jpico,
+          jstar,
+          rjoe,
+          stringify,
+          termidx,
+          uniproc
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          /etc/joe, 
+          /usr/share/joe,
+          /usr/share/doc/joe-&joe-version;
+        </seg>
 @z
 
 @x
@@ -227,9 +243,10 @@
 
 @x termidx
           <para>is a program used by <command>joe</command> to generate the
-          termcap index file.</para>
+          termcap index file (see /usr/share/joe/util/README).</para>
 @y
           <para>
           <command>joe</command> を利用して termcap インデックスファイルを生成します。
+          (/usr/share/joe/util/README 参照)
           </para>
 @z

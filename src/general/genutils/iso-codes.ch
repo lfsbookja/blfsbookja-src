@@ -143,7 +143,7 @@
           None
         </seg>
         <seg>
-          /usr/share/xml/iso-codes
+          /usr/share/iso-codes, /usr/share/xml/iso-codes
         </seg>
 @y
         <seg>
@@ -153,6 +153,6 @@
           &None;
         </seg>
         <seg>
-          /usr/share/xml/iso-codes
+          /usr/share/iso-codes, /usr/share/xml/iso-codes
         </seg>
 @z

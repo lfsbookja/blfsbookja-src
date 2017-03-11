@@ -11,7 +11,10 @@ CHANGE_FILES = \
 	ed.ch       \
 	editors.ch  \
 	emacs.ch    \
+	gedit.ch    \
 	joe.ch      \
+	juffed.ch   \
+	kate5.ch    \
 	nano.ch     \
 	others.ch   \
 	vim.ch
@@ -28,12 +31,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-bluefish.xml: $(BOOKdir)/$@ $(srcdir)/bluefish.ch
-ed.xml:       $(BOOKdir)/$@ $(srcdir)/ed.ch
-editors.xml:  $(BOOKdir)/$@ $(srcdir)/editors.ch
-emacs.xml:    $(BOOKdir)/$@ $(srcdir)/emacs.ch
-joe.xml:      $(BOOKdir)/$@ $(srcdir)/joe.ch
-nano.xml:     $(BOOKdir)/$@ $(srcdir)/nano.ch
-others.xml:   $(BOOKdir)/$@ $(srcdir)/others.ch
-vim.xml:      $(BOOKdir)/$@ $(srcdir)/vim.ch

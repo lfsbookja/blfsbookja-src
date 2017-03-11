@@ -149,47 +149,38 @@
 @z
 
 @x
-      <para>With subversion-1.1.0 and greater, a new type of repository
-      data-store is available, FSFS. There is a tradeoff for speed with
-      the new backend, however, the repository can now be placed on a
-      network mount, and any corruption does not require an admin to
-      recover the repository.  For more information and comparison between
-      FSFS and BDB, see <ulink
-      url="http://svnbook.red-bean.com/svnbook-1.1/ch05.html#svn-ch-5-sect-1.2.A"/>.
-      </para>
+        There are several ways to set up a subversion repository. It is
+        recommended to have a look at the <ulink
+        url="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">SVN
+        Book</ulink> corresponding chapter. A basic repository can be set up
+        with the instructions below.
 @y
-      <para>
-      subversion-1.1.0 以降では、新たなタイプのリポジトリデータベース FSFS が導入されました。
-      この新たなバックエンドには処理性能の面でのトレードオフがあります。
-      
-however, the repository can now be placed on a
-      network mount, and any corruption does not require an admin to
-      recover the repository.  For more information and comparison between
-      FSFS and BDB, see <ulink
-      url="http://svnbook.red-bean.com/svnbook-1.1/ch05.html#svn-ch-5-sect-1.2.A"/>.
-      </para>
+        There are several ways to set up a subversion repository. It is
+        recommended to have a look at the <ulink
+        url="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">SVN
+        Book</ulink> corresponding chapter. A basic repository can be set up
+        with the instructions below.
 @z
 
 @x
-      <para>Create a new <application>Subversion</application> repository with
-      the following commands:</para>
+        Create a new <application>Subversion</application> repository with
+        the following commands (as the <systemitem class="username">root
+        </systemitem> user):
 @y
-      <para>
-      <application>Subversion</application> の新たなリポジトリは、以下のコマンドにより生成します。
-      </para>
+        <application>Subversion</application> の新たなリポジトリは (<systemitem
+        class="username">root</systemitem> となって) 以下のコマンドにより生成します。
 @z
 
 @x
       <para>Now that the repository is created, it should be populated with
-      with something useful. You'll need to have a predefined directory
+      something useful. You'll need to have a predefined directory
       layout set up exactly as you want your repository to look. For
       example, here is a sample BLFS layout setup with a root of
       <filename>svntest/</filename>. You'll need to setup a directory
       tree similar to the following:</para>
 @y
-      <para>
-      リポジトリが生成できたので、これを利用可能とする設定を行います。
-      with something useful. You'll need to have a predefined directory
+      <para>Now that the repository is created, it should be populated with
+      something useful. You'll need to have a predefined directory
       layout set up exactly as you want your repository to look. For
       example, here is a sample BLFS layout setup with a root of
       <filename>svntest/</filename>. You'll need to setup a directory
@@ -335,46 +326,41 @@ As mentioned earlier, this eases
 @z
 
 @x
-      <para>There are a couple of ways to start <command>svnserve</command>.
-      The most common way is to start it as an <command>inetd</command> or
-      <command>xinetd</command> process. Alternately, you can use a
-      bootscript to start the service at startup.</para>
+      <para revision="sysv">To start the server at boot time, install the svn
+      bootscript included in the <xref linkend="bootscripts"/> package.</para>
 @y
-      <para>There are a couple of ways to start <command>svnserve</command>.
-      The most common way is to start it as an <command>inetd</command> or
-      <command>xinetd</command> process. Alternately, you can use a
-      bootscript to start the service at startup.</para>
+      <para revision="sysv">To start the server at boot time, install the svn
+      bootscript included in the <xref linkend="bootscripts"/> package.</para>
 @z
 
 @x
-        <para>If you do not wish to provide anonymous access to your svn
-        repositories or use <command>svnserve</command>'s built-in
-        authentication, you do not need to run
-        <command>svnserve</command>.</para>
+      <para revision="systemd">To start the server at boot time, install the
+      <filename>svnserve.service</filename> unit from the 
+      <xref linkend="systemd-units"/> package.</para>
 @y
-        <para>If you do not wish to provide anonymous access to your svn
-        repositories or use <command>svnserve</command>'s built-in
-        authentication, you do not need to run
-        <command>svnserve</command>.</para>
+      <para revision="systemd">To start the server at boot time, install the
+      <filename>svnserve.service</filename> unit from the 
+      <xref linkend="systemd-units"/> package.</para>
 @z
 
 @x
-      <para>If you use <command>inetd</command>, add a line to
-      <filename>/etc/inetd.conf</filename> using the following
-      commands:</para>
+      <para revision="systemd">Additionally, the instructions above require
+      that svn server uses <command>umask 002</command> so that all new files
+      will be writable by owner and group. This can be achieved by creating
+      a systemd unit override file by running the following command:</para>
 @y
-      <para>If you use <command>inetd</command>, add a line to
-      <filename>/etc/inetd.conf</filename> using the following
-      commands:</para>
+      <para revision="systemd">Additionally, the instructions above require
+      that svn server uses <command>umask 002</command> so that all new files
+      will be writable by owner and group. This can be achieved by creating
+      a systemd unit override file by running the following command:</para>
 @z
 
 @x
-      <para>If you use <command>xinetd</command>, the following command will
-      create the <application>Subversion</application> server file as
-      <filename>/etc/xinetd.d/svn</filename>:</para>
+      <para revision="systemd">Options which are passed to
+      <command>svnserve</command> daemon can be changed in
+      <filename>/etc/default/svnserve</filename>.</para>
 @y
-      <para>If you use <command>xinetd</command>, the following command will
-      create the <application>Subversion</application> server file as
-      <filename>/etc/xinetd.d/svn</filename>:</para>
+      <para revision="systemd">Options which are passed to
+      <command>svnserve</command> daemon can be changed in
+      <filename>/etc/default/svnserve</filename>.</para>
 @z
-

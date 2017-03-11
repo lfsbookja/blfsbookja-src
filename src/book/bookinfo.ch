@@ -20,12 +20,20 @@
 @z
 
 @x
+  <title>Beyond Linux<superscript>&reg;</superscript> From Scratch<phrase revision="systemd"> (systemd edition)</phrase></title>
+  <subtitle>Version &version;</subtitle>
+@y
+  <title>Beyond Linux<superscript>&reg;</superscript> From Scratch<phrase revision="systemd"> (systemd版)</phrase></title>
+  <subtitle>Version &version;</subtitle>
+@z
+
+@x
     <corpauthor>
       &copyholder;
     </corpauthor>
 @y
     <corpauthor>
-      &copyholder; (日本語訳： 松山道夫)
+      &copyholder; (日本語訳： 松山 道夫)
     </corpauthor>
 @z
 
@@ -53,6 +61,48 @@
       <revremark>Ongoing Release</revremark>
 @y
       <revremark>進行中リリース</revremark>
+@z
+
+@x
+      <revremark>Fifteenth release</revremark>
+@y
+      <revremark>第15次リリース</revremark>
+@z
+
+@x
+      <revremark>Fourteenth release</revremark>
+@y
+      <revremark>第14次リリース</revremark>
+@z
+
+@x
+      <revremark>Thirteenth release</revremark>
+@y
+      <revremark>第13次リリース</revremark>
+@z
+
+@x
+      <revremark>Twelfth release</revremark>
+@y
+      <revremark>第12次リリース</revremark>
+@z
+
+@x
+      <revremark>Eleventh release</revremark>
+@y
+      <revremark>第11次リリース</revremark>
+@z
+
+@x
+      <revremark>Tenth release</revremark>
+@y
+      <revremark>第10次リリース</revremark>
+@z
+
+@x
+      <revremark>Ninth release</revremark>
+@y
+      <revremark>第9次リリース</revremark>
 @z
 
 @x
@@ -119,9 +169,9 @@
   </abstract>
   
   <abstract>
-  <title>日本語訳情報 (訳出率: &jratio;)</title>
+  <title>日本語訳情報</title>
   <para>
-  現時点この日本語訳は散発的に訳出を進めている状態であり、完成とは程遠いものです。
+  この日本語訳は散発的に訳出を進めている状態であり、完成とは程遠いものです。
   ご了承ください。
   </para>
   </abstract>

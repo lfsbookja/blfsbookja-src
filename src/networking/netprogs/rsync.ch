@@ -211,36 +211,45 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
       <para>Note that you only want to start the
       <application>rsync</application> server if you want to provide an
       <application>rsync</application> archive on your local machine.
-      You don't need this script to run the
+      You don't need this <phrase revision="sysv">script</phrase>
+      <phrase revision="systemd">unit</phrase> to run the
       <application>rsync</application> client.</para>
 @y
-      <para>
-      
-Note that you only want to start the
+      <para>Note that you only want to start the
       <application>rsync</application> server if you want to provide an
       <application>rsync</application> archive on your local machine.
-      You don't need this script to run the
-      <application>rsync</application> client.
-      </para>
+      You don't need this <phrase revision="sysv">script</phrase>
+      <phrase revision="systemd">unit</phrase> to run the
+      <application>rsync</application> client.</para>
 @z
 
 @x
-      <para>Install the <filename>/etc/rc.d/init.d/rsyncd</filename> init
-      script included in the
-      <xref linkend="bootscripts"/> package.</para>
+      <para>Install the
+      <phrase revision="sysv"><filename>/etc/rc.d/init.d/rsyncd</filename> init
+      script</phrase>
+      <phrase revision="systemd"><filename>rsyncd.service</filename>
+      unit</phrase> included in the
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> package.</para>
 @y
-      <para>Install the <filename>/etc/rc.d/init.d/rsyncd</filename> init
-      script included in the
-      <xref linkend="bootscripts"/> package.</para>
+      <para>Install the
+      <phrase revision="sysv"><filename>/etc/rc.d/init.d/rsyncd</filename> init
+      script</phrase>
+      <phrase revision="systemd"><filename>rsyncd.service</filename>
+      unit</phrase> included in the
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> package.</para>
 @z
 
 @x

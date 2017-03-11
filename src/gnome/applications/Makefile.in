@@ -93,7 +93,7 @@ am__aclocal_m4_deps = $(top_srcdir)/version.ac \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
 	$(top_srcdir)/m4/ac_check_ipafontdir.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/ac_check_rev.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
@@ -129,6 +129,10 @@ AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+BASEDIR = @BASEDIR@
+BLFSFULL = @BLFSFULL@
+BLFSHTML = @BLFSHTML@
+BLFSHTML2 = @BLFSHTML2@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
@@ -137,6 +141,7 @@ CTIE = @CTIE@
 CYGPATH_W = @CYGPATH_W@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
+DUMPDIR = @DUMPDIR@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -158,6 +163,8 @@ LTLIBOBJS = @LTLIBOBJS@
 LYNX = @LYNX@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
+NOCHUNKS_NAME = @NOCHUNKS_NAME@
+NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 OBJEXT = @OBJEXT@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
@@ -168,6 +175,7 @@ PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PDF = @PDF@
+PDF_OUTPUT = @PDF_OUTPUT@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -213,6 +221,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+revspec = @revspec@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@
@@ -223,24 +232,31 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/gnome/applications
 CHANGE_FILES = \
-	applications.ch         \
-	baobab.ch               \
-	brasero.ch              \
-	cheese.ch               \
-	eog.ch                  \
-	epiphany.ch             \
-        evince.ch               \
-	file-roller.ch          \
-	gedit.ch                \
-	gnome-calculator.ch     \
-	gnome-nettool.ch        \
-	gnome-screenshot.ch     \
-	gnome-system-monitor.ch \
-	gnome-terminal.ch       \
-	gucharmap.ch            \
-	nautilus.ch             \
+	applications.ch           \
+	baobab.ch                 \
+	brasero.ch                \
+	cheese.ch                 \
+	eog.ch                    \
+        evince.ch                 \
+	evolution.ch              \
+	file-roller.ch            \
+	gnome-calculator.ch       \
+	gnome-color-manager.ch    \
+	gnome-disk-utility.ch     \
+	gnome-logs.ch             \
+	gnome-maps.ch             \
+	gnome-nettool.ch          \
+	gnome-power-manager.ch    \
+	gnome-screenshot.ch       \
+	gnome-system-monitor.ch   \
+	gnome-terminal.ch         \
+	gnome-tweak-tool.ch       \
+	gnome-weather.ch          \
+	gucharmap.ch              \
 	network-manager-applet.ch \
-	seahorse.ch
+	seahorse.ch               \
+	vinagre.ch                \
+	vino.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -438,29 +454,11 @@ all: ctie $(srcs)
 ctie:
 	cd $(top_builddir)/ctie && make ctie
 
-applications.xml:         $(BOOKdir)/$@ $(srcdir)/applications.ch
-baobab.xml:               $(BOOKdir)/$@ $(srcdir)/baobab.ch
-brasero.xml:              $(BOOKdir)/$@ $(srcdir)/brasero.ch
-cheese.xml:               $(BOOKdir)/$@ $(srcdir)/cheese.ch
-eog.xml:                  $(BOOKdir)/$@ $(srcdir)/eog.ch
-epiphany.xml:             $(BOOKdir)/$@ $(srcdir)/epiphany.ch
-evince.xml:               $(BOOKdir)/$@ $(srcdir)/evince.ch
-file-roller.xml:          $(BOOKdir)/$@ $(srcdir)/file-roller.ch
-gedit.xml:                $(BOOKdir)/$@ $(srcdir)/gedit.ch
 #gnome-devel-docs.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-devel-docs.ch \
 #	$(srcdir)/gnome-devel-docs.sed
 #	sed -f $(srcdir)/gnome-devel-docs.sed < $(BOOKdir)/$@ > $@.tmp
 #	$(top_builddir)/$(CTIE) -m $@ $@.tmp $(srcdir)/$*.ch
 #	rm -f $@.tmp
-gnome-calculator.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-calculator.ch
-gnome-nettool.xml:        $(BOOKdir)/$@ $(srcdir)/gnome-nettool.ch
-gnome-screenshot.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-screenshot.ch
-gnome-system-monitor.xml: $(BOOKdir)/$@ $(srcdir)/gnome-system-monitor.ch
-gnome-terminal.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-terminal.ch
-gucharmap.xml:            $(BOOKdir)/$@ $(srcdir)/gucharmap.ch
-nautilus.xml:             $(BOOKdir)/$@ $(srcdir)/nautilus.ch
-network-manager-applet.xml: $(BOOKdir)/$@ $(srcdir)/network-manager-applet.ch
-seahorse.xml:             $(BOOKdir)/$@ $(srcdir)/seahorse.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

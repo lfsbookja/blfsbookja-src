@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY pixman-time          "0.4 SBU (additional 0.8 SBU for tests)">
+  <!ENTITY pixman-buildsize     "47 MB (with tests)">
+  <!ENTITY pixman-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY pixman-time          "0.4 SBU (テスト時はさらに 0.8 SBU)">
+  <!ENTITY pixman-buildsize     "47 MB (テスト込み)">
+  <!ENTITY pixman-time          "0.8 SBU (テスト込み)">
 @z
 
 @x

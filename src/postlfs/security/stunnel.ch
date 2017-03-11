@@ -25,18 +25,20 @@
     Sockets Layer) so you can easily communicate with clients over secure
     channels. <application>stunnel</application> can be used to add SSL
     functionality to commonly used <application>Inetd</application> daemons
-    like POP-2, POP-3, and IMAP servers, to standalone daemons like NNTP,
-    SMTP and HTTP, and in tunneling PPP over network sockets without changes
-    to the server package source code.</para>
+    such as POP-2, POP-3, and IMAP servers, along with standalone daemons such
+    as NNTP, SMTP, and HTTP. <application>stunnel</application> can also be
+    used to tunnel PPP over network sockets without changes to the server
+    package source code.</para>
 @y
     <para>The <application>stunnel</application> package contains a program
     that allows you to encrypt arbitrary TCP connections inside SSL (Secure
     Sockets Layer) so you can easily communicate with clients over secure
     channels. <application>stunnel</application> can be used to add SSL
     functionality to commonly used <application>Inetd</application> daemons
-    like POP-2, POP-3, and IMAP servers, to standalone daemons like NNTP,
-    SMTP and HTTP, and in tunneling PPP over network sockets without changes
-    to the server package source code.</para>
+    such as POP-2, POP-3, and IMAP servers, along with standalone daemons such
+    as NNTP, SMTP, and HTTP. <application>stunnel</application> can also be
+    used to tunnel PPP over network sockets without changes to the server
+    package source code.</para>
 @z
 
 @x
@@ -89,10 +91,28 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="openssl"/></para>
+    <para role="required">
+      <xref linkend="openssl"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="openssl"/></para>
+    <para role="required">
+      <xref linkend="openssl"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink> and
+      <ulink url="https://dist.torproject.org/">TOR</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink>,
+      <ulink url="https://dist.torproject.org/">TOR</ulink>
+    </para>
 @z
 
 @x
@@ -122,25 +142,23 @@
 @z
 
 @x
-      <para>A signed SSL Certificate and a Private Key is necessary to run
-      the <command>stunnel</command> daemon. If you own, or have already
+      <para>A signed SSL Certificate and a Private Key is necessary to run the
+      <command>stunnel</command> daemon. After the package is installed, there
+      are instructions to generate them. However, if you own or have already
       created a signed SSL Certificate you wish to use, copy it to
       <filename>/etc/stunnel/stunnel.pem</filename> before starting the build
-      (ensure only <systemitem class='username'>root</systemitem> has read and
-      write access), otherwise you will be
-      prompted to create one during the installation process. The
-      <filename class='extension'>.pem</filename> file must be formatted as
-      shown below:</para>
+      (ensure only <systemitem class="username">root</systemitem> has read and
+      write access).  The <filename class="extension">.pem</filename> file must
+      be formatted as shown below:</para>
 @y
-      <para>A signed SSL Certificate and a Private Key is necessary to run
-      the <command>stunnel</command> daemon. If you own, or have already
+      <para>A signed SSL Certificate and a Private Key is necessary to run the
+      <command>stunnel</command> daemon. After the package is installed, there
+      are instructions to generate them. However, if you own or have already
       created a signed SSL Certificate you wish to use, copy it to
       <filename>/etc/stunnel/stunnel.pem</filename> before starting the build
-      (ensure only <systemitem class='username'>root</systemitem> has read and
-      write access), otherwise you will be
-      prompted to create one during the installation process. The
-      <filename class='extension'>.pem</filename> file must be formatted as
-      shown below:</para>
+      (ensure only <systemitem class="username">root</systemitem> has read and
+      write access).  The <filename class="extension">.pem</filename> file must
+      be formatted as shown below:</para>
 @z
 
 @x
@@ -173,63 +191,23 @@
 @z
 
 @x
-    <para><parameter>--sysconfdir=/etc</parameter>: This parameter forces
-    the configuration directory to <filename class='directory'>/etc</filename>
-    instead of <filename class='directory'>/usr/etc</filename>.</para>
+    <para revision="sysv"><parameter>--disable-systemd</parameter>: This switch
+    disables systemd socket activation support which is not available in
+    BLFS.</para>
 @y
-    <para><parameter>--sysconfdir=/etc</parameter>: This parameter forces
-    the configuration directory to <filename class='directory'>/etc</filename>
-    instead of <filename class='directory'>/usr/etc</filename>.</para>
-@z
-
-@x
-    <para><parameter>--localstatedir=/var</parameter>: This parameter
-    sets the installation to use
-    <filename class='directory'>/var/lib/stunnel</filename> instead of
-    creating and using
-    <filename class='directory'>/usr/var/stunnel</filename>.</para>
-@y
-    <para><parameter>--localstatedir=/var</parameter>: This parameter
-    sets the installation to use
-    <filename class='directory'>/var/lib/stunnel</filename> instead of
-    creating and using
-    <filename class='directory'>/usr/var/stunnel</filename>.</para>
-@z
-
-@x
-    <para><parameter>--disable-libwrap</parameter>: This parameter is required
-    if you don't have <application>tcpwrappers</application> installed. Remove
-    the parameter if <application>tcpwrappers</application> is installed.</para>
-@y
-    <para><parameter>--disable-libwrap</parameter>: This parameter is required
-    if you don't have <application>tcpwrappers</application> installed. Remove
-    the parameter if <application>tcpwrappers</application> is installed.</para>
+    <para revision="sysv"><parameter>--disable-systemd</parameter>: This switch
+    disables systemd socket activation support which is not available in
+    BLFS.</para>
 @z
 
 @x
     <para><command>make docdir=... install</command>: This command installs the
-    package, changes the documentation installation directory to standard
-    naming conventions and, if you did not copy an
-    <filename>stunnel.pem</filename> file to the
-    <filename class='directory'>/etc/stunnel</filename> directory, prompts you
-    for the necessary information to create one. Ensure you reply to the</para>
+    package and changes the documentation installation directory to standard
+    naming conventions.</para>
 @y
     <para><command>make docdir=... install</command>: This command installs the
-    package, changes the documentation installation directory to standard
-    naming conventions and, if you did not copy an
-    <filename>stunnel.pem</filename> file to the
-    <filename class='directory'>/etc/stunnel</filename> directory, prompts you
-    for the necessary information to create one. Ensure you reply to the</para>
-@z
-
-@x
-    <para>prompt with the name or IP address you will be using
-    to access the service(s).</para>
-@y
-    <para>
-    prompt with the name or IP address you will be using
-    to access the service(s).
-    </para>
+    package and changes the documentation installation directory to standard
+    naming conventions.</para>
 @z
 
 @x
@@ -259,12 +237,12 @@
 @x
       <para>As the <systemitem class="username">root</systemitem> user,
       create the directory used for the
-      <filename class='extension'>.pid</filename> file that is created
+      <filename class="extension">.pid</filename> file created
       when the <application>stunnel</application> daemon starts:</para>
 @y
       <para>As the <systemitem class="username">root</systemitem> user,
       create the directory used for the
-      <filename class='extension'>.pid</filename> file that is created
+      <filename class="extension">.pid</filename> file created
       when the <application>stunnel</application> daemon starts:</para>
 @z
 
@@ -279,10 +257,10 @@
 @z
 
 @x
-      <para>Finally, you need to add the service(s) you wish to encrypt to the
+      <para>Finally, add the service(s) you wish to encrypt to the
       configuration file. The format is as follows:</para>
 @y
-      <para>Finally, you need to add the service(s) you wish to encrypt to the
+      <para>Finally, add the service(s) you wish to encrypt to the
       configuration file. The format is as follows:</para>
 @z
 
@@ -304,28 +282,41 @@
 
 @x
       <para>For a full explanation of the commands and syntax used in the
-      configuration file, run <command>man stunnel</command>.</para>
+      configuration file, issue <command>man stunnel</command>.</para>
 @y
       <para>For a full explanation of the commands and syntax used in the
-      configuration file, run <command>man stunnel</command>.</para>
+      configuration file, issue <command>man stunnel</command>.</para>
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
-      <para>To automatically start the <command>stunnel</command> daemon
-      when the system is rebooted, install the
+      <para revision="sysv">To automatically start the
+      <command>stunnel</command> daemon when the system is booted, install the
       <filename>/etc/rc.d/init.d/stunnel</filename> bootscript from the
       <xref linkend="bootscripts"/> package.</para>
 @y
-      <para>To automatically start the <command>stunnel</command> daemon
-      when the system is rebooted, install the
+      <para revision="sysv">To automatically start the
+      <command>stunnel</command> daemon when the system is booted, install the
       <filename>/etc/rc.d/init.d/stunnel</filename> bootscript from the
       <xref linkend="bootscripts"/> package.</para>
+@z
+@x
+      <para revision="systemd">To start the <command>stunnel</command>
+      daemon at boot, enable the previously installed
+      <application>systemd</application> unit by running the following command
+     as the <systemitem class="username">root</systemitem> user:</para>
+@y
+      <para revision="systemd">To start the <command>stunnel</command>
+      daemon at boot, enable the previously installed
+      <application>systemd</application> unit by running the following command
+     as the <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
@@ -345,17 +336,27 @@
 @z
 
 @x
-        <seg>stunnel and stunnel3</seg>
-        <seg>libstunnel.so</seg>
-        <seg>/etc/stunnel, /usr/lib/stunnel,
-        /usr/share/doc/stunnel-&stunnel-version;, and
-        /var/lib/stunnel</seg>
+        <seg>
+          stunnel and stunnel3
+        </seg>
+        <seg>
+          libstunnel.so
+        </seg>
+        <seg>
+          /{etc,usr/lib,var/lib}/stunnel and
+          /usr/share/doc/stunnel-&stunnel-version;
+        </seg>
 @y
-        <seg>stunnel, stunnel3</seg>
-        <seg>libstunnel.so</seg>
-        <seg>/etc/stunnel, /usr/lib/stunnel,
-        /usr/share/doc/stunnel-&stunnel-version;,
-        /var/lib/stunnel</seg>
+        <seg>
+          stunnel and stunnel3
+        </seg>
+        <seg>
+          libstunnel.so
+        </seg>
+        <seg>
+          /{etc,usr/lib,var/lib}/stunnel and
+          /usr/share/doc/stunnel-&stunnel-version;
+        </seg>
 @z
 
 @x

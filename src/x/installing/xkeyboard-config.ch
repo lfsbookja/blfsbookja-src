@@ -77,13 +77,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="intltool"/> and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="intltool"/>,
       <xref linkend="xorg7-lib"/>
     </para>
 @z

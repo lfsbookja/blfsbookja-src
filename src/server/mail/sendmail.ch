@@ -91,20 +91,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="procmail"/>,
-      <ulink url="http://www.feep.net/nph/">nph</ulink>, and
-      <xref linkend="gs"/> (for creating PDF documentation)
+      <xref linkend="gs"/> (for creating PDF documentation),
+      <xref linkend="procmail"/> (the configuration proposed below requires
+      that <command>procmail</command> be present at run-time), and
+      <ulink url="https://github.com/chaos/nph">nph</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="procmail"/>,
-      <ulink url="http://www.feep.net/nph/">nph</ulink>,
-      <xref linkend="gs"/> (PDF ドキュメント生成のため)
+      <xref linkend="gs"/> (PDF ドキュメント生成のため),
+      <xref linkend="procmail"/> (the configuration proposed below requires
+      that <command>procmail</command> be present at run-time), and
+      <ulink url="https://github.com/chaos/nph">nph</ulink>
     </para>
 @z
 

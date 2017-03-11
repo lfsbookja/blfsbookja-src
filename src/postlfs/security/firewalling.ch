@@ -273,39 +273,48 @@ secure.
 @z
 
 @x
-    <para>The firewall configuration script installed in the iptables section
-    differs from the standard configuration script. It only has two of
-    the standard targets: start and status. The other targets are clear
-    and lock. For instance if you issue:</para>
+    <para revision="sysv">The firewall configuration script installed in the
+    iptables section differs from the standard configuration script. It only
+    has two of the standard targets: start and status. The other targets are
+    clear and lock. For instance if you issue:</para>
 @y
-    <para>The firewall configuration script installed in the iptables section
-    differs from the standard configuration script. It only has two of
-    the standard targets: start and status. The other targets are clear
-    and lock. For instance if you issue:</para>
+    <para revision="sysv">The firewall configuration script installed in the
+    iptables section differs from the standard configuration script. It only
+    has two of the standard targets: start and status. The other targets are
+    clear and lock. For instance if you issue:</para>
 @z
 
 @x
-    <para>the firewall will be restarted just as it is upon system startup.
-    The status target will present a list of all currently implemented
-    rules. The clear target turns off all firewall rules and the lock
-    target will block all packets in and out of the computer with the
+    <para revision="sysv">the firewall will be restarted just as it is upon
+    system startup. The status target will present a list of all currently
+    implemented rules. The clear target turns off all firewall rules and the
+    lock target will block all packets in and out of the computer with the
     exception of the loopback interface.</para>
 @y
-    <para>the firewall will be restarted just as it is upon system startup.
-    The status target will present a list of all currently implemented
-    rules. The clear target turns off all firewall rules and the lock
-    target will block all packets in and out of the computer with the
+    <para revision="sysv">the firewall will be restarted just as it is upon
+    system startup. The status target will present a list of all currently
+    implemented rules. The clear target turns off all firewall rules and the
+    lock target will block all packets in and out of the computer with the
     exception of the loopback interface.</para>
 @z
 
 @x
-    <para>The main startup firewall is located in the file
+    <para revision="sysv">The main startup firewall is located in the file
     <filename>/etc/rc.d/rc.iptables</filename>. The sections below provide
     three different approaches that can be used for a system.</para>
 @y
-    <para>The main startup firewall is located in the file
+    <para revision="sysv">The main startup firewall is located in the file
     <filename>/etc/rc.d/rc.iptables</filename>. The sections below provide
     three different approaches that can be used for a system.</para>
+@z
+@x
+    <para revision="systemd">The main startup firewall is located in the file
+    <filename>/etc/systemd/scripts/iptables</filename>. The sections below
+    provide three different approaches that can be used for a system.</para>
+@y
+    <para revision="systemd">The main startup firewall is located in the file
+    <filename>/etc/systemd/scripts/iptables</filename>. The sections below
+    provide three different approaches that can be used for a system.</para>
 @z
 
 @x

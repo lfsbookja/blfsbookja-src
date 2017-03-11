@@ -80,14 +80,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="acl"/>,
       <xref linkend="dbus-glib"/> and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="acl"/>,
       <xref linkend="dbus-glib"/>,
       <xref linkend="xorg7-lib"/>
     </para>
@@ -96,14 +94,20 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="linux-pam"/> and 
-      <xref linkend="polkit"/>
+      <xref linkend="linux-pam"/>,
+      <xref linkend="polkit"/>, and
+      <xref linkend="pm-utils"/> (run-time dependency to allow ConsoleKit2 to
+      put the system in <quote>Suspend</quote> or <quote>Hibernation</quote>
+      mode)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="linux-pam"/>,
-      <xref linkend="polkit"/>
+      <xref linkend="polkit"/>,
+      <xref linkend="pm-utils"/> (run-time dependency to allow ConsoleKit2 to
+      put the system in <quote>Suspend</quote> or <quote>Hibernation</quote>
+      mode)
     </para>
 @z
 
@@ -167,25 +171,26 @@
 @z
 
 @x
-      <option>--enable-udev-acl</option>: This switch enables building of the
-      <command>udev-acl</command> tool, which is used to allow normal users
+      <parameter>--enable-udev-acl</parameter>: This switch enables building of
+      the <command>udev-acl</command> tool, which is used to allow normal users
       to access device nodes normally only accessible to
       <systemitem class="username">root</systemitem>.
 @y
-      <option>--enable-udev-acl</option>:
+      <parameter>--enable-udev-acl</parameter>:
       このスイッチは <command>udev-acl</command> ツールをビルドすることを指示します。
       デバイスノードへは通常、<systemitem class="username">root</systemitem> ユーザーのみがアクセスできるものですが、このツールにより一般ユーザーでもアクセスできるようになります。
 @z
 
 @x
-      <option>--enable-pam-module</option>: This switch enables building of the
-      <application>ConsoleKit</application> <application>PAM</application>
-      module which is needed for <application>ConsoleKit</application> to
-      work correctly with <application>PAM</application>. Remove if 
-      <application>Linux PAM</application> is 
+      <parameter>--enable-pam-module</parameter>: This switch enables building
+      of the <application>ConsoleKit</application>
+      <application>PAM</application> module which is needed for
+      <application>ConsoleKit</application> to work correctly with
+      <application>PAM</application>. Remove if
+      <application>Linux PAM</application> is
       <emphasis role="strong">NOT</emphasis> installed.
 @y
-      <option>--enable-pam-module</option>:
+      <parameter>--enable-pam-module</parameter>:
       このスイッチは <application>ConsoleKit</application> <application>PAM</application> モジュールをビルドすることを指定します。
       <application>PAM</application> とともに <application>ConsoleKit</application> を動作させるためにはこの指定が必要です。
       逆に <application>Linux-PAM</application> をインストールして <emphasis
@@ -193,12 +198,39 @@
 @z
 
 @x
+      <parameter>--enable-polkit</parameter>: Enable PolicyKit support.
+@y
+      <parameter>--enable-polkit</parameter>: Enable PolicyKit support.
+@z
+
+@x
+      <parameter>--with-xinitrc-dir=/etc/X11/app-defaults/xinitrc.d</parameter>:
+      Fix the location of the 90-consolekit.sh script. Notice that the script
+      has been renamed after installation, because xinitrc only sources script
+      names ending with extension <emphasis>.sh</emphasis>.
+@y
+      <parameter>--with-xinitrc-dir=/etc/X11/app-defaults/xinitrc.d</parameter>:
+      Fix the location of the 90-consolekit.sh script. Notice that the script
+      has been renamed after installation, because xinitrc only sources script
+      names ending with extension <emphasis>.sh</emphasis>.
+@z
+
+@x
+      <parameter>--with-systemdsystemunitdir=no</parameter>: Disable
+      attempting to build with systemd libraries.
+@y
+      <parameter>--with-systemdsystemunitdir=no</parameter>: Disable
+      attempting to build with systemd libraries.
+@z
+
+@x
       <option>--enable-docbook-docs</option>: Use this switch if
       <application>xmlto</application> is installed and you wish to
-      build the API documentation.
+      build the user and API documentation.
 @y
-      <option>--enable-docbook-docs</option>: 
-      <application>xmlto</application> をインストールしていて、API ドキュメントをインストールする場合にこのスイッチを指定します。
+      <option>--enable-docbook-docs</option>: Use this switch if
+      <application>xmlto</application> is installed and you wish to
+      build the user and API documentation.
 @z
 
 @x
@@ -214,12 +246,11 @@
 @z
 
 @x
-        If you use <application>Linux PAM</application> you need to
-        configure <application>Linux PAM</application> to activate
-        <application>ConsoleKit</application> upon user login.
-        This can be achieved by editing the 
-        <filename>/etc/pam.d/system-session</filename> file as the 
-        <systemitem class="username">root</systemitem> user:
+        If you use <application>Linux PAM</application>, it needs to be
+        configured to activate <application>ConsoleKit</application> upon user
+        login.  This can be achieved by editing the
+        <filename>/etc/pam.d/system-session</filename> file as the <systemitem
+        class="username">root</systemitem> user:
 @y
         <application>PAM</application> を導入している場合は、<application>PAM</application> において、ユーザーログイン時に <application>ConsoleKit</application> を有効とする設定を行う必要があります。
         これを実現するには <systemitem class="username">root</systemitem> ユーザーになり、以下のように <filename>/etc/pam.d/system-session</filename> ファイルを編集します。
@@ -275,10 +306,9 @@
         </seg>
         <seg>
           /etc/ConsoleKit,
-          /usr/include/ConsoleKit,
-          /usr/lib/ConsoleKit,
-          /usr/share/doc/ConsoleKit and
-          /var/log/ConsoleKit
+          /usr/{include,lib}/ConsoleKit,
+          /usr/share/doc/ConsoleKit-&consolekit-version;, and
+          /var/{log,run}/ConsoleKit
         </seg>
 @y
         <seg>
@@ -291,9 +321,8 @@
         </seg>
         <seg>
           /etc/ConsoleKit,
-          /usr/include/ConsoleKit,
-          /usr/lib/ConsoleKit,
-          /usr/share/doc/ConsoleKit,
-          /var/log/ConsoleKit
+          /usr/{include,lib}/ConsoleKit,
+          /usr/share/doc/ConsoleKit-&consolekit-version;,
+          /var/{log,run}/ConsoleKit
         </seg>
 @z

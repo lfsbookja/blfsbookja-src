@@ -12,24 +12,29 @@ CHANGE_FILES = \
 	autofs.ch        \
 	bluez.ch         \
 	colord.ch        \
+	colord1.ch       \
 	cpio.ch          \
+	cups-pk-helper.ch \
 	dbus.ch          \
 	fcron.ch         \
 	gpm.ch           \
 	hdparm.ch        \
 	initdtools.ch    \
 	lm_sensors.ch    \
+	logrotate.ch     \
 	mc.ch            \
+	modemmanager.ch  \
 	obex-data-server.ch \
 	p7zip.ch         \
+	pax.ch           \
 	pciutils.ch      \
 	pm-utils.ch      \
 	raptor.ch        \
 	rasqal.ch        \
 	redland.ch       \
 	sg3_utils.ch     \
-	strigi.ch        \
 	sysstat.ch       \
+	systemd.ch       \
 	sysutils.ch      \
 	udisks.ch        \
 	udisks2.ch       \
@@ -37,6 +42,7 @@ CHANGE_FILES = \
 	unzip.ch         \
 	upower.ch        \
 	usbutils.ch      \
+	weston.ch        \
 	which.ch         \
 	zip.ch
 
@@ -52,36 +58,3 @@ all: $(top_builddir)/$(CTIE) $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-acpid.xml:         $(BOOKdir)/$@ $(srcdir)/acpid.ch
-at.xml:            $(BOOKdir)/$@ $(srcdir)/at.ch
-autofs.xml:        $(BOOKdir)/$@ $(srcdir)/autofs.ch
-bluez.xml:         $(BOOKdir)/$@ $(srcdir)/bluez.ch
-colord.xml:        $(BOOKdir)/$@ $(srcdir)/colord.ch
-cpio.xml:          $(BOOKdir)/$@ $(srcdir)/cpio.ch
-dbus.xml:          $(BOOKdir)/$@ $(srcdir)/dbus.ch
-fcron.xml:         $(BOOKdir)/$@ $(srcdir)/fcron.ch
-gpm.xml:           $(BOOKdir)/$@ $(srcdir)/gpm.ch
-hdparm.xml:        $(BOOKdir)/$@ $(srcdir)/hdparm.ch
-initdtools.xml:    $(BOOKdir)/$@ $(srcdir)/initdtools.ch
-lm_sensors.xml:    $(BOOKdir)/$@ $(srcdir)/lm_sensors.ch
-mc.xml:            $(BOOKdir)/$@ $(srcdir)/mc.ch
-obex-data-server.xml: $(BOOKdir)/$@ $(srcdir)/obex-data-server.ch
-p7zip.xml:         $(BOOKdir)/$@ $(srcdir)/p7zip.ch
-pciutils.xml:      $(BOOKdir)/$@ $(srcdir)/pciutils.ch
-pm-utils.xml:      $(BOOKdir)/$@ $(srcdir)/pm-utils.ch
-raptor.xml:        $(BOOKdir)/$@ $(srcdir)/raptor.ch
-rasqal.xml:        $(BOOKdir)/$@ $(srcdir)/rasqal.ch
-redland.xml:       $(BOOKdir)/$@ $(srcdir)/redland.ch
-sg3_utils.xml:     $(BOOKdir)/$@ $(srcdir)/sg3_utils.ch
-strigi.xml:        $(BOOKdir)/$@ $(srcdir)/strigi.ch
-sysstat.xml:       $(BOOKdir)/$@ $(srcdir)/sysstat.ch
-sysutils.xml:      $(BOOKdir)/$@ $(srcdir)/sysutils.ch
-udisks.xml:        $(BOOKdir)/$@ $(srcdir)/udisks.ch
-udisks2.xml:       $(BOOKdir)/$@ $(srcdir)/udisks2.ch
-unrar.xml:         $(BOOKdir)/$@ $(srcdir)/unrar.ch
-unzip.xml:         $(BOOKdir)/$@ $(srcdir)/unzip.ch
-upower.xml:        $(BOOKdir)/$@ $(srcdir)/upower.ch
-usbutils.xml:      $(BOOKdir)/$@ $(srcdir)/usbutils.ch
-which.xml:         $(BOOKdir)/$@ $(srcdir)/which.ch
-zip.xml:           $(BOOKdir)/$@ $(srcdir)/zip.ch

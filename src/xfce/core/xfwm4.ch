@@ -160,10 +160,8 @@
           None
         </seg>
         <seg>
-          /usr/share/themes/Daloa,
-          /usr/share/themes/Default,
-          /usr/share/themes/Kokodi,
-          /usr/share/themes/Moheli and
+          /usr/lib/xfce4/xfwm4,
+          /usr/share/themes/{Daloa,Default{,-hdpi,-xhdpi},Kokodi,Moheli}, and
           /usr/share/xfwm4
         </seg>
 @y
@@ -177,10 +175,8 @@
           &None;
         </seg>
         <seg>
-          /usr/share/themes/Daloa,
-          /usr/share/themes/Default,
-          /usr/share/themes/Kokodi,
-          /usr/share/themes/Moheli,
+          /usr/lib/xfce4/xfwm4,
+          /usr/share/themes/{Daloa,Default{,-hdpi,-xhdpi},Kokodi,Moheli},
           /usr/share/xfwm4
         </seg>
 @z

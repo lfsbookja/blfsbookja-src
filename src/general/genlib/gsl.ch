@@ -118,23 +118,23 @@
 
 @x
         <seg>
-          gsl-config, gsl-histogram, and gsl-randist.
+          gsl-config, gsl-histogram, and gsl-randist
         </seg>
         <seg>
-          libgslcblas.so and libgsl.so.
+          libgslcblas.so and libgsl.so
         </seg>
         <seg>
-          /usr/include/gsl
+          /usr/include/gsl and /usr/share/doc/gsl-&gsl-version;
         </seg>
 @y
         <seg>
           gsl-config, gsl-histogram, gsl-randist
         </seg>
         <seg>
-          libgslcblas.so, libgsl.so.
+          libgslcblas.so, libgsl.so
         </seg>
         <seg>
-          /usr/include/gsl
+          /usr/include/gsl, /usr/share/doc/gsl-&gsl-version;
         </seg>
 @z
 

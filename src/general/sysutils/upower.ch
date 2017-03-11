@@ -172,13 +172,13 @@
 
 @x
       To use the command <command>upower -w</command> for information about
-      processor wakeups (this command is used by <ulink url="http://ftp.gnome.org/pub/gnome/sources/gnome-power-manager/">gnome-power-manager</ulink>)
+      processor wakeups (this command is used by <phrase revision="sysv"><ulink url="http://ftp.gnome.org/pub/gnome/sources/gnome-power-manager/">gnome-power-manager</ulink></phrase><phrase revision="systemd"><xref linkend="gnome-power-manager"/></phrase>)
       you need to enable CONFIG_TIMER_STATS.  This is achieved in
       <command>make menuconfig</command> by going to the &apos;kernel-hacking&apos;
       menu and selecting &apos;Collect kernel timers statistics&apos;.
 @y
       To use the command <command>upower -w</command> for information about
-      processor wakeups (this command is used by <ulink url="http://ftp.gnome.org/pub/gnome/sources/gnome-power-manager/">gnome-power-manager</ulink>)
+      processor wakeups (this command is used by <phrase revision="sysv"><ulink url="http://ftp.gnome.org/pub/gnome/sources/gnome-power-manager/">gnome-power-manager</ulink></phrase><phrase revision="systemd"><xref linkend="gnome-power-manager"/></phrase>)
       you need to enable CONFIG_TIMER_STATS.  This is achieved in
       <command>make menuconfig</command> by going to the &apos;kernel-hacking&apos;
       menu and selecting &apos;Collect kernel timers statistics&apos;.
@@ -191,7 +191,7 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Program<phrase revision="systemd">s</phrase></segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
@@ -202,7 +202,7 @@
 
 @x
         <seg>
-          upower
+          upower<phrase revision="systemd"> and upowerd</phrase>
         </seg>
         <seg>
           libupower-glib.so
@@ -214,7 +214,7 @@
         </seg>
 @y
         <seg>
-          upower
+          upower<phrase revision="systemd">, upowerd</phrase>
         </seg>
         <seg>
           libupower-glib.so

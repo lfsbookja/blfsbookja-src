@@ -139,29 +139,27 @@
 
 @x
         <seg>
-	  None
-	</seg>
-	<seg>
+          None
+        </seg>
+        <seg>
           libpangomm-1.4.so
         </seg>
         <seg>
           /usr/include/pangomm-1.4,
-          /usr/lib/pangomm-1.4,
-          /usr/share/devhelp/books/pangomm-1.4, and
-          /usr/share/doc/pangomm-1.4
+          /usr/lib/pangomm-1.4, and
+          /usr/share/{devhelp/books/pangomm-1.4,doc/pangomm-&pangomm-version;}
         </seg>
 @y
         <seg>
 	  &None;
 	</seg>
-	<seg>
+        <seg>
           libpangomm-1.4.so
         </seg>
         <seg>
           /usr/include/pangomm-1.4,
           /usr/lib/pangomm-1.4,
-          /usr/share/devhelp/books/pangomm-1.4,
-          /usr/share/doc/pangomm-1.4
+          /usr/share/{devhelp/books/pangomm-1.4,doc/pangomm-&pangomm-version;}
         </seg>
 @z
 

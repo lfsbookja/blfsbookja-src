@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "August 28th &year;">
+<!ENTITY releasedate  "March 10th &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20160829">
+<!ENTITY jversion     "20170310">
 <!ENTITY jratio       "55.9 &percnt;">
 @z
 
@@ -89,21 +89,24 @@
 
 @x
 <!ENTITY lfs-root             "../../../../lfs/view/&lfs-version;">
+<!ENTITY lfs-rootd            "../../../../lfs/view/&lfs-versiond;">
 <!ENTITY lfs-dev              "../../../../lfs/view/development">
 @y
 <!ENTITY lfs-root             "http://www.&lfs-domainname;/lfs/view/&lfs-version;">
+<!ENTITY lfs-rootd            "../../../../lfs/view/&lfs-versiond;">
 <!ENTITY lfs-dev              "../../../../lfs/view/development">
-<!ENTITY lfsja-dev            "http://lfsbookja.sourceforge.jp/svn.ja">
+<!ENTITY lfsja-dev            "http://lfsbookja.osdn.jp/svn-ja">
+<!ENTITY lfssysdja-dev        "http://lfsbookja.osdn.jp/svn-sysdja">
 @z
 
 @x
-<!ENTITY lfs74_checked        "<para>This package is known to build and work
-                              properly using an LFS-7.4 platform.</para>">
-<!ENTITY lfs74_built          "<para>This package is known to build using an LFS
-                              7.4 platform but has not been tested.</para>">
+<!ENTITY lfs80_checked        "<para>This package is known to build and work
+                              properly using an LFS-8.0 platform.</para>">
+<!ENTITY lfs80_built          "<para>This package is known to build using an LFS
+                              8.0 platform but has not been tested.</para>">
 @y
-<!ENTITY lfs74_checked        "<para>本パッケージは LFS-7.4 において正しくビルドでき動作することが確認されています。</para>">
-<!ENTITY lfs74_built          "<para>本パッケージは LFS-7.4 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+<!ENTITY lfs80_checked        "<para>本パッケージは LFS-8.0 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs80_built          "<para>本パッケージは LFS-8.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 @x

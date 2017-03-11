@@ -144,16 +144,6 @@
 @z
 
 @x
-     If you have <application>Doxygen</application> installed and you wish to
-     build the library API documentation, run the following
-     commands from the top-level directory of the source tree:
-@y
-     If you have <application>Doxygen</application> installed and you wish to
-     build the library API documentation, run the following
-     commands from the top-level directory of the source tree:
-@z
-
-@x
       To install the API documentation, run the following command as
       the <systemitem class="username">root</systemitem> user:
 @y
@@ -222,7 +212,7 @@
           aserver
         </seg>
         <seg>
-          libasound.so
+          libasound.so and four others under /usr/lib/alsa-lib/smixer
         </seg>
         <seg>
           /usr/include/alsa,
@@ -235,12 +225,12 @@
           aserver
         </seg>
         <seg>
-          libasound.so
+          libasound.so and four others under /usr/lib/alsa-lib/smixer
         </seg>
         <seg>
           /usr/include/alsa,
           /usr/lib/alsa-lib,
-          /usr/share/alsa,
+          /usr/share/alsa and
           /usr/share/doc/alsa-lib-&alsa-lib-version;
         </seg>
 @z

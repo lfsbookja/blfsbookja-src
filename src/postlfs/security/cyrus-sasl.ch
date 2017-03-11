@@ -127,7 +127,7 @@
     <para role="optional">
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="mariadb"/> or <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openjdk"/>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
@@ -140,7 +140,7 @@
     <para role="optional">
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="mariadb"/> または <xref linkend="mysql"/>,
+      <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openjdk"/>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
@@ -223,11 +223,19 @@
 @z
 
 @x
-      <parameter>--with-dblib=gdbm</parameter>: This switch forces
+      <parameter>--enable-auth-sasldb</parameter>: This switch enables
+      SASLDB authentication backend.
+@y
+      <parameter>--enable-auth-sasldb</parameter>: This switch enables
+      SASLDB authentication backend.
+@z
+
+@x
+      <option>--with-dblib=gdbm</option>: This switch forces
       <application>GDBM</application> to be used instead of
       <application>Berkeley DB</application>.
 @y
-      <parameter>--with-dblib=gdbm</parameter>: This switch forces
+      <option>--with-dblib=gdbm</option>: This switch forces
       <application>GDBM</application> to be used instead of
       <application>Berkeley DB</application>.
 @z
@@ -361,31 +369,52 @@
 @z
 
 @x
-      <title>Init Script</title>
+      <title><phrase revision="sysv">Init Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&InitScript;</title>
+      <title><phrase revision="sysv">&InitScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
+@z
+
+@x revision="sysv"
+        If you need to run the <command>saslauthd</command> daemon at system
+        startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
+        init script included in the
+        <xref linkend="bootscripts"/> package using the following command:
+@y
+        If you need to run the <command>saslauthd</command> daemon at system
+        startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
+        init script included in the
+        <xref linkend="bootscripts"/> package using the following command:
+@z
+@x revision="systemd"
+        If you need to run the <command>saslauthd</command> daemon at system
+        startup, install the <filename>saslauthd.service</filename> unit
+        included in the <xref linkend="systemd-units"/> package using the
+        following command:
+@y
+        If you need to run the <command>saslauthd</command> daemon at system
+        startup, install the <filename>saslauthd.service</filename> unit
+        included in the <xref linkend="systemd-units"/> package using the
+        following command:
 @z
 
 @x
-        If you need to run the <command>saslauthd</command> daemon at system
-        startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
-        init script included in the <xref linkend="bootscripts"/>
-        package using the following command:
+          You'll need to modify
+          <filename revision="sysv">/etc/sysconfig/saslauthd</filename>
+          <filename revision="systemd">/etc/default/saslauthd</filename>
+          and modify the
+          <option revision="sysv">AUTHMECH</option>
+          <option revision="systemd">MECHANISM</option>
+          parameter with your desired authentication mechanism.
 @y
-        If you need to run the <command>saslauthd</command> daemon at system
-        startup, install the <filename>/etc/rc.d/init.d/saslauthd</filename>
-        init script included in the <xref linkend="bootscripts"/>
-        package using the following command:
-@z
-
-@x
-          You'll need to modify /etc/sysconfig/saslauthd and replace the
-          <option><replaceable>AUTHMECH</replaceable></option> parameter
-          with your desired authentication mechanism.
-@y
-          You'll need to modify /etc/sysconfig/saslauthd and replace the
-          <option><replaceable>AUTHMECH</replaceable></option> parameter
-          with your desired authentication mechanism.
+          You'll need to modify
+          <filename revision="sysv">/etc/sysconfig/saslauthd</filename>
+          <filename revision="systemd">/etc/default/saslauthd</filename>
+          and modify the
+          <option revision="sysv">AUTHMECH</option>
+          <option revision="systemd">MECHANISM</option>
+          parameter with your desired authentication mechanism.
 @z
 
 @x

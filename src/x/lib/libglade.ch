@@ -195,18 +195,18 @@
           <para>is used to convert old Glade interface files to
           Glade-2.0 standards.</para>
 @y
-<para>
-これは旧版の Glade インターフェースファイルを Glade-2.0
-の標準に合ったものに変換します。
-</para>
+          <para>
+          これは旧版の Glade インターフェースファイルを Glade-2.0
+          の標準に合ったものに変換します。
+          </para>
 @z
 
 @x libglade-2.0.{so,a}
-          <para>contain the functions necessary to load Glade interface
+          <para>contains the functions necessary to load Glade interface
           files.</para>
 @y
-<para>
-Glade インターフェースファイルを読み込むために必要な関数を提供します。
-</para>
+          <para>
+          Glade インターフェースファイルを読み込むために必要な関数を提供します。
+          </para>
 @z
 

@@ -6,9 +6,19 @@
 ## $Date::                           $
 ##
 BOOKdir = @abs_bookdir@/xsoft/graphweb
-EXTRA_DIST = firefox.ch graphweb.ch seamonkey.ch
+CHANGE_FILES = \
+	chromium.ch  \
+	epiphany.ch  \
+	firefox.ch   \
+	graphweb.ch  \
+	midori.ch    \
+	seamonkey.ch \
+	qupzilla.ch
+
+EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
-srcs = firefox.xml graphweb.xml seamonkey.xml
+srcs = $(CHANGE_FILES:.ch=.xml)
+
 SUFFIXES = .ch .xml
 .ch.xml:
 	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
@@ -17,7 +27,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-firefox.xml: $(BOOKdir)/$@ $(srcdir)/firefox.ch
-graphweb.xml: $(BOOKdir)/$@ $(srcdir)/graphweb.ch
-seamonkey.xml: $(BOOKdir)/$@ $(srcdir)/seamonkey.ch

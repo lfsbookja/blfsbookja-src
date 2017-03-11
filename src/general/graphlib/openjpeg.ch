@@ -130,15 +130,6 @@
 @z
 
 @x
-    <para><option>--disable-static</option>: This prevents the
-    static library from being built.</para>
-@y
-    <para><option>--disable-static</option>:
-    スタティックライブラリをビルドしないようにします。
-    </para>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

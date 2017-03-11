@@ -81,16 +81,22 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="linux-pam"/> and to run tests
-      <xref linkend="check"/> and
-      <ulink url='http://search.cpan.org/~clemburg/Test-Unit-0.14/'>Test::Unit-0.14</ulink>
+      <xref linkend="libcap-pam"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="openssl"/>,
+      <xref linkend="pcre"/>, and
+      <xref linkend="postgresql"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="linux-pam"/>, テスト実行のために
-      <xref linkend="check"/>,
-      <ulink url='http://search.cpan.org/~clemburg/Test-Unit-0.14/'>Test::Unit-0.14</ulink>
+      <xref linkend="libcap-pam"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="openssl"/>,
+      <xref linkend="pcre"/>,
+      <xref linkend="postgresql"/> 
     </para>
 @z
 
@@ -127,19 +133,9 @@
 @z
 
 @x
-    <para>The tests for this package require a very old (2001) version of the
-    Perl Module Test::Unit.  Using the lastest version of this Test::Unit
-    results in many failures (34/1089) although the program appears to run
-    well.  The tests take a long time (38 minutes, not CPU dependent) and are
-    not recommended.  To test the results anyway, issue: <command>make
-    check</command>.</para>
+    <para>This packages does not come with a usable test suite.</para>
 @y
-    <para>
-    本パッケージのテストにおいては、Perl モジュール Test::Unit の相当古いバージョン (2001) が用いられています。
-    Test::Unit を最新のバージョンにしたとすると、テストの多く (1089個のうちの 34個) が失敗してしまいますが、一方でプログラムは正常に動作しています。
-    テスト時間が相当にかかるため (38分, CPU 非依存)、実施を推奨しません。
-    それでもテストを実施するなら <command>make check</command> を実行します。
-    </para>
+    <para>This packages does not come with a usable test suite.</para>
 @z
 
 @x
@@ -209,26 +205,38 @@
 @z
 
 @x
-    <para><parameter>--sysconfdir=/etc</parameter>: This prevents the
-    configuration files from going to
-    <filename class="directory">/usr/etc</filename>.</para>
+        Support for most of the dependency packages requires using options
+        passed to the <command>configure</command> script. View the output
+        from <command>./configure --help</command> for complete information
+        about enabling dependency packages.
 @y
-    <para><parameter>--sysconfdir=/etc</parameter>:
-    これは設定ファイルのインストール先が <filename class="directory">/usr/etc</filename> とならないようにするものです。
-    </para>
+        Support for most of the dependency packages requires using options
+        passed to the <command>configure</command> script. View the output
+        from <command>./configure --help</command> for complete information
+        about enabling dependency packages.
 @z
 
-@x
-    <para><parameter>--localstatedir=/var/run</parameter>:
-    This uses <filename class="directory">/var/run</filename> instead of
-    <filename class="directory">/usr/var</filename> for lock files.</para>
-@y
-    <para><parameter>--localstatedir=/var/run</parameter>:
-    これはロックファイル (lock file) のインストール先を <filename
-    class="directory">/usr/var</filename> ではなく <filename
-    class="directory">/var/run</filename> とするものです。
-    </para>
-@z
+%@x
+%    <para><parameter>--sysconfdir=/etc</parameter>: This prevents the
+%    configuration files from going to
+%    <filename class="directory">/usr/etc</filename>.</para>
+%@y
+%    <para><parameter>--sysconfdir=/etc</parameter>:
+%    これは設定ファイルのインストール先が <filename class="directory">/usr/etc</filename> とならないようにするものです。
+%    </para>
+%@z
+%
+%@x
+%    <para><parameter>--localstatedir=/var/run</parameter>:
+%    This uses <filename class="directory">/var/run</filename> instead of
+%    <filename class="directory">/usr/var</filename> for lock files.</para>
+%@y
+%    <para><parameter>--localstatedir=/var/run</parameter>:
+%    これはロックファイル (lock file) のインストール先を <filename
+%    class="directory">/usr/var</filename> ではなく <filename
+%    class="directory">/var/run</filename> とするものです。
+%    </para>
+%@z
 
 @x
     <title>Configuring ProFTPD</title>
@@ -263,18 +271,28 @@
 @z
 
 @x
-      <title>Boot Script</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
 @x
-      <para>Install the <filename>/etc/rc.d/init.d/proftpd</filename> init
-      script included in the <xref linkend="bootscripts"/>
+      <para>Install the 
+      <phrase revision="sysv"><filename>/etc/rc.d/init.d/proftpd</filename>
+      init script</phrase>
+      <phrase revision="systemd"><filename>proftpd.service</filename>
+      unit</phrase> included in the
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/>
       package.</para>
 @y
       <para>
-      <xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/proftpd</filename> をインストールします。
+      <xref linkend="bootscripts" revision="sysv"/>
+      <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる <phrase
+      revision="sysv"><filename>/etc/rc.d/init.d/proftpd</filename>初期起動スクリプト</phrase><phrase
+      revision="systemd"><filename>proftpd.service</filename>ユニット</phrase>をインストールします。
       </para>
 @z
 
@@ -295,15 +313,27 @@
 @z
 
 @x
-        <seg>ftpcount, ftpdctl, ftpasswd, ftpmail, ftpquota, ftpscrub,
-             ftptop, ftpshut, ftpcount, ftpwho, and proftpd</seg>
-        <seg>None</seg>
-        <seg>/var/run/proftpd</seg>
+        <seg>
+          ftpasswd, ftpcount, ftpdctl, ftpmail, ftpquota, ftpscrub, ftpshut,
+          ftptop, ftpwho, in.proftpd (symlink to proftpd), proftpd, and prxs
+        </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          /usr/{include,lib}/proftpd
+        </seg>
 @y
-        <seg>ftpcount, ftpdctl, ftpasswd, ftpmail, ftpquota, ftpscrub,
-             ftptop, ftpshut, ftpcount, ftpwho, proftpd</seg>
-        <seg>&None;</seg>
-        <seg>/var/run/proftpd</seg>
+        <seg>
+          ftpasswd, ftpcount, ftpdctl, ftpmail, ftpquota, ftpscrub, ftpshut,
+          ftptop, ftpwho, in.proftpd (symlink to proftpd), proftpd, prxs
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          /usr/{include,lib}/proftpd
+        </seg>
 @z
 
 @x

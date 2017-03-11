@@ -14,7 +14,7 @@
 @z
 
 @x
-  <!ENTITY unzip-time          "Less than 0.1 SBU">
+  <!ENTITY unzip-time          "less than 0.1 SBU">
 @y
   <!ENTITY unzip-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
@@ -44,7 +44,7 @@
 @x
       <para>The previous version of the <application>UnZip</application>
       package had some locale related issues. Currently there are no BLFS
-      editors capable of testing these local issues. Therefore, the
+      editors capable of testing these locale issues. Therefore, the
       locale related information is left on this page, but has not been
       tested. <!--Note that the patch recommended for the locale issues will not
       apply to this version of <application>UnZip</application>. See the
@@ -55,7 +55,7 @@
 @y
       <para>The previous version of the <application>UnZip</application>
       package had some locale related issues. Currently there are no BLFS
-      editors capable of testing these local issues. Therefore, the
+      editors capable of testing these locale issues. Therefore, the
       locale related information is left on this page, but has not been
       tested. <!--Note that the patch recommended for the locale issues will not
       apply to this version of <application>UnZip</application>. See the
@@ -328,13 +328,13 @@
 @z
 
 @x
-    <para><parameter>make -f unix/Makefile generic</parameter>:
+    <para><command>make -f unix/Makefile generic</command>:
     This target begins by running a configure script (unlike the older targets
     such as linux and linux_noasm) which creates a flags file that is then used
     in the build. This ensures that the 32-bit x86 build receives the right
     flags to unzip files which which are larger than 2GB when extracted.</para>
 @y
-    <para><parameter>make -f unix/Makefile generic</parameter>:
+    <para><command>make -f unix/Makefile generic</command>:
     This target begins by running a configure script (unlike the older targets
     such as linux and linux_noasm) which creates a flags file that is then used
     in the build. This ensures that the 32-bit x86 build receives the right

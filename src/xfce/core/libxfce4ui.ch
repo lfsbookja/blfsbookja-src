@@ -94,11 +94,15 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+<!-- gtk3 is required later by garcon -->
+      <xref linkend="gtk3"/> and
       <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+<!-- gtk3 is required later by garcon -->
+      <xref linkend="gtk3"/>,
       <xref linkend="startup-notification"/>
     </para>
 @z
@@ -106,12 +110,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="perl-html-parser"/>, and
+      <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="perl-html-parser"/>,
+      <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
 @z
 
@@ -173,12 +181,13 @@
           None
         </seg>
         <seg>
-          libxfce4kbd-private-2.so and libxfce4ui-1.so
+          libxfce4kbd-private-{2,3}.so and
+          libxfce4ui-{1,2}.so
         </seg>
         <seg>
           /etc/xdg/xfce4,
           /usr/include/xfce4/libxfce4kbd-private-2,
-          /usr/include/xfce4/libxfce4ui-1 and
+          /usr/include/xfce4/libxfce4ui-{1,2}, and
           /usr/share/gtk-doc/html/libxfce4ui
         </seg>
 @y
@@ -186,12 +195,13 @@
           &None;
         </seg>
         <seg>
-          libxfce4kbd-private-2.so, libxfce4ui-1.so
+          libxfce4kbd-private-{2,3}.so,
+          libxfce4ui-{1,2}.so
         </seg>
         <seg>
           /etc/xdg/xfce4,
           /usr/include/xfce4/libxfce4kbd-private-2,
-          /usr/include/xfce4/libxfce4ui-1,
+          /usr/include/xfce4/libxfce4ui-{1,2},
           /usr/share/gtk-doc/html/libxfce4ui
         </seg>
 @z

@@ -205,13 +205,21 @@
 @z
 
 @x
-      <option>--with-system-ffi</option>: This switch enables linking against
-      system version of <application>libffi</application>. Remove if you have
-      not installed <xref linkend="libffi"/>.
+      <parameter>--with-system-expat</parameter>: This switch enables linking
+      against system version of <application>Expat</application>.
 @y
-      <option>--with-system-ffi</option>: This switch enables linking against
-      system version of <application>libffi</application>. Remove if you have
-      not installed <xref linkend="libffi"/>.
+      <parameter>--with-system-expat</parameter>: This switch enables linking
+      against system version of <application>Expat</application>.
+@z
+
+@x
+      <parameter>--with-system-ffi</parameter>: This switch enables linking
+      against system version of <application>libffi</application>. Remove if
+      you have not installed <xref linkend="libffi"/>.
+@y
+      <parameter>--with-system-ffi</parameter>: This switch enables linking
+      against system version of <application>libffi</application>. Remove if
+      you have not installed <xref linkend="libffi"/>.
 @z
 
 @x
@@ -265,23 +273,23 @@
           libpython&python2-majorver;.so
         </seg>
         <seg>
-          /usr/include/python&python2-majorver;,
-          /usr/lib/python&python2-majorver;, and
-          /usr/share/doc/python-&python2-version;</seg>
+          /usr/{include,lib}/python&python2-majorver; and
+          /usr/share/doc/python-&python2-version;
+        </seg>
 @y
         <seg>
-          2to3, pydoc, python (シンボリックリンク), python-config (シンボリックリンク),
-          python2 (シンボリックリンク), python2-config (シンボリックリンク),
+          2to3, pydoc, python (symlink), python-config (symlink),
+          python2 (symlink), python2-config (symlink),
           python&python2-majorver;, python&python2-majorver;-config,
-          smtpd.py, idle
+          smtpd.py, and idle
         </seg>
         <seg>
           libpython&python2-majorver;.so
         </seg>
         <seg>
-          /usr/include/python&python2-majorver;,
-          /usr/lib/python&python2-majorver;,
-          /usr/share/doc/python-&python2-version;</seg>
+          /usr/{include,lib}/python&python2-majorver; and
+          /usr/share/doc/python-&python2-version;
+        </seg>
 @z
 
 @x
@@ -292,14 +300,14 @@
 
 @x 2to3
             is a <application>Python</application> program that reads
-            <application>Python 2.x</application> source code and applies a series of
-            fixers to transform it into valid <application>Python 3.x</application>
-            code.
+            <application>Python 2.x</application> source code and applies a
+            series of fixes to transform it into valid
+            <application>Python 3.x</application> code.
 @y
             is a <application>Python</application> program that reads
-            <application>Python 2.x</application> source code and applies a series of
-            fixers to transform it into valid <application>Python 3.x</application>
-            code.
+            <application>Python 2.x</application> source code and applies a
+            series of fixes to transform it into valid
+            <application>Python 3.x</application> code.
 @z
 
 @x idle

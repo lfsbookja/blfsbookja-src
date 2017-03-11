@@ -78,14 +78,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/> and
-      <xref linkend="intltool"/>
+      <xref linkend="gtk2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/>,
-      <xref linkend="intltool"/>
+      <xref linkend="gtk2"/>
     </para>
 @z
 
@@ -170,9 +168,9 @@
 @z
 
 @x
-	<seg>
-	  None
-	</seg>
+        <seg>
+          None
+        </seg>
         <seg>
           libclearlooks.so,
           libcrux-engine.so,
@@ -212,8 +210,8 @@
           libhcengine.so,
           libindustrial.so,
           libmist.so,
-          libredmond95.so,
-          libthinice.so (GTK-2 engines ライブラリ)
+          libredmond95.so and
+          libthinice.so (GTK-2 engines libraries)
         </seg>
         <seg>
           /usr/lib/gtk-&gtk2-libdir;/engines,
@@ -222,7 +220,7 @@
           /usr/share/themes/Crux,
           /usr/share/themes/Industrial,
           /usr/share/themes/Mist,
-          /usr/share/themes/Redmond,
+          /usr/share/themes/Redmond and
           /usr/share/themes/ThinIce
         </seg>
         <seg>
@@ -230,7 +228,7 @@
           Crux,
           Industrial,
           Mist,
-          Redmond,
+          Redmond and
           ThinIce
         </seg>
 @z

@@ -83,18 +83,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">Xorg Libraries Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Xorg ライブラリ&Dependencies2;</bridgehead>
@@ -203,17 +191,24 @@
 @z
 
 @x
-    <para><parameter>--with-fop</parameter>: Use <xref linkend="fop"/> to
-    generate PDF documentation (only for the libXfont package).</para>
+    <para><command>./configure $XORG_CONFIG ICE_LIBS=-lpthread</command>:
+    This fixes a change in glibc which breaks pulseaudio at runtime.</para>
 @y
-    <para><parameter>--with-fop</parameter>:
-    PDF ドキュメントを生成するのに <xref linkend="fop"/> を利用します。(libXfont パッケージにおいてのみ必要)
-    </para>
+    <para><command>./configure $XORG_CONFIG ICE_LIBS=-lpthread</command>:
+    This fixes a change in glibc which breaks pulseaudio at runtime.</para>
+@z
+
+@x
+    <para><command>sed ... src/xftfreetype.c include/X11/Xft/XftCompat.h</command>:
+    Add fixes for changes in recent glibc headers.</para>
+@y
+    <para><command>sed ... src/xftfreetype.c include/X11/Xft/XftCompat.h</command>:
+    Add fixes for changes in recent glibc headers.</para>
 @z
 
 @x
     <para><parameter>--disable-devel-docs</parameter>: Disable generation of
-    text documentation in the libXfont package if
+    text documentation in the libXfont2 package if
     <xref linkend="xmlto"/> is installed without a text browser. Omit
     this parameter (or the entire <command>case</command> statement) if a text
     browser is installed.</para>
@@ -271,7 +266,7 @@
           libpciaccess.so, libSM.so, libX11.so, libXaw6.so,
           libXaw7.so, libXaw.so, libXcomposite.so,
           libXcursor.so, libXdamage.so, libXext.so,
-          libXfixes.so, libXfont.so, libXft.so, libXinerama.so,
+          libXfixes.so, libXfont2.so, libXft.so, libXinerama.so,
           libXi.so, libxkbfile.so, libXmu.so, libXmuu.so,
           libXpm.so, libXrandr.so, libXrender.so, libXRes.so,
           libxshmfence.so, libXss.so, libXt.so, libXtst.so, libXvMC.so,
@@ -279,6 +274,8 @@
           libXxf86vm.so
         </seg>
         <seg>
+          <envar>$XORG_PREFIX</envar>/include/X11/fonts,
+          <envar>$XORG_PREFIX</envar>/include/X11/Xtrans,
           <envar>$XORG_PREFIX</envar>/share/doc/libFS,
           <envar>$XORG_PREFIX</envar>/share/doc/libICE,
           <envar>$XORG_PREFIX</envar>/share/doc/libSM,
@@ -303,7 +300,7 @@
           libpciaccess.so, libSM.so, libX11.so, libXaw6.so,
           libXaw7.so, libXaw.so, libXcomposite.so,
           libXcursor.so, libXdamage.so, libXext.so,
-          libXfixes.so, libXfont.so, libXft.so, libXinerama.so,
+          libXfixes.so, libXfont2.so, libXft.so, libXinerama.so,
           libXi.so, libxkbfile.so, libXmu.so, libXmuu.so,
           libXpm.so, libXrandr.so, libXrender.so, libXRes.so,
           libxshmfence.so, libXss.so, libXt.so, libXtst.so, libXvMC.so,
@@ -311,6 +308,8 @@
           libXxf86vm.so
         </seg>
         <seg>
+          <envar>$XORG_PREFIX</envar>/include/X11/fonts,
+          <envar>$XORG_PREFIX</envar>/include/X11/Xtrans,
           <envar>$XORG_PREFIX</envar>/share/doc/libFS,
           <envar>$XORG_PREFIX</envar>/share/doc/libICE,
           <envar>$XORG_PREFIX</envar>/share/doc/libSM,

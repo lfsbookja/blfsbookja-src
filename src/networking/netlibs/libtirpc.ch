@@ -72,18 +72,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch (Remove nis dependencies):
-@y
-          必須のパッチ (nis への依存を削除):
-@z
-
-@x
     <bridgehead renderas="sect3">libtirpc Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;libtirpc&Dependencies2;</bridgehead>

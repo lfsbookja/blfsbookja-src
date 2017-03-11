@@ -79,6 +79,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
+      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gtkmm3"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libgtop"/>, and
@@ -88,6 +89,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
+      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gtkmm3"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libgtop"/>,
@@ -150,8 +152,7 @@
           None
         </seg>
         <seg>
-          /usr/libexec/gnome-system-monitor and
-          /usr/share/help/*/gnome-system-monitor
+          /usr/{libexec,share/help/*}/gnome-system-monitor
         </seg>
 @y
         <seg>
@@ -161,8 +162,7 @@
           &None;
         </seg>
         <seg>
-          /usr/libexec/gnome-system-monitor,
-          /usr/share/help/*/gnome-system-monitor
+          /usr/{libexec,share/help/*}/gnome-system-monitor
         </seg>
 @z
 

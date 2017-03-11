@@ -7,8 +7,13 @@
 ##
 BOOKdir = @abs_bookdir@/pst/typesetting
 CHANGE_FILES = \
-	typesetting.ch \
-	texlive.ch
+	asymptote.ch    \
+	biber.ch        \
+	typesetting.ch  \
+	tex-path.ch     \
+	texlive.ch      \
+	tl-installer.ch \
+	xindy.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -22,6 +27,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-typesetting.xml: $(BOOKdir)/$@ $(srcdir)/typesetting.ch
-texlive.xml:     $(BOOKdir)/$@ $(srcdir)/texlive.ch

@@ -16,13 +16,13 @@
 @x
     <title>Introduction to xmlto</title>
 @y
-    <title>xmlto の概要</title>
+    <title>&IntroductionTo1;xmlto&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>xmlto</application> is a front-end to an XSL
+    <para>The <application>xmlto</application> package is a front-end to a XSL
     toolchain. It chooses an appropriate stylesheet for the conversion you want
-    and applies it using an external XSL-T processor. It also performs any
+    and applies it using an external XSLT processor. It also performs any
     necessary post-processing.</para>
 @y
     <para>

@@ -20,7 +20,7 @@
 @z
 
 @x
-      The <application>libsoup</application> is HTTP client/server library for
+      The <application>libsoup</application> is a HTTP client/server library for
       <application>GNOME</application>. It uses GObject and the GLib main loop
       to integrate with <application>GNOME</application> applications and
       it also has an asynchronous API for use in threaded applications.
@@ -97,12 +97,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -111,6 +113,7 @@
     <para role="optional">
       <xref linkend="apache"/> (required to run the test suite),
       <xref linkend="curl"/> (required to run the test suite),
+      <xref linkend="mitkrb"/> (required to run the test suite),
       <xref linkend="gtk-doc"/>,
       <xref linkend="php"/> compiled with XMLRPC-EPI <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
       support (only used for the XMLRPC regression tests) and
@@ -121,6 +124,7 @@
     <para role="optional">
       <xref linkend="apache"/> (テストスイート実行時に必要),
       <xref linkend="curl"/> (テストスイート実行時に必要),
+      <xref linkend="mitkrb"/> (テストスイート実行時に必要),
       <xref linkend="gtk-doc"/>,
       XMLRPC-EPI サポートがビルドされている <xref linkend="php"/> <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
       (XMLRPC の縮退テストにおいてのみ利用される),

@@ -78,13 +78,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="exo"/> and
+      <xref linkend="exo"/>,
+      <xref linkend="garcon"/> and
       <xref linkend="libxfce4ui"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="exo"/>,
+      <xref linkend="garcon"/>,
       <xref linkend="libxfce4ui"/>
     </para>
 @z

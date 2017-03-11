@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY libassuan-time          "less than 0.1 SBU">
+  <!ENTITY libassuan-buildsize     "6.7 MB (with tests)">
+  <!ENTITY libassuan-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libassuan-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY libassuan-buildsize     "6.7 MB (テスト込み)">
+  <!ENTITY libassuan-time          "0.1 SBU (テスト込み)">
 @z
 
 @x

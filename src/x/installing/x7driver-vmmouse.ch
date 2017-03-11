@@ -26,13 +26,15 @@
 @z
 
 @x
-        The <application>Xorg VMMouse Driver</application> package contains the VMMouse input
-        driver for the Xorg X server. The VMMouse driver enables support for the special
-        VMMouse protocol that is provided by VMware virtual machines to give absolute
-        pointer positioning.
+        The <application>Xorg VMMouse Driver</application> package contains the
+        VMMouse input driver for the Xorg X server. The VMMouse driver enables
+        support for the special VMMouse protocol that is provided by VMware
+        virtual machines to give absolute pointer positioning. It can be used
+        with <application>Qemu</application>, too.
 @y
         <application>Xorg VMMouse Driver</application> パッケージは Xorg X サーバーにおける VMMouse 入力ドライバーを提供します。
         VMMouse ドライバーは VMware 仮想マシンにて用いられる VMMouse プロトコルをサポートするものであり、マウスポインターの完全なポジショニングを実現します。
+        これは <application>Qemu</application> においても利用可能です。
 @z
 
 @x
@@ -108,8 +110,8 @@
 @z
 
 @x
-        Install <application>Xorg VMMouse Driver</application> by running the following
-        commands:
+        Install <application>Xorg VMMouse Driver</application> by running the
+        following commands:
 @y
         以下のコマンドを実行して <application>Xorg VMMouse Driver</application> をビルドします。
 @z
@@ -141,11 +143,11 @@
 @z
 
 @x
-        <option>--without-hal-*-dir</option>: These switches disable
+        <parameter>--without-hal-*-dir</parameter>: These switches disable
         installation of the <application>HAL</application> components
         which are not needed on Linux.
 @y
-        <option>--without-hal-*-dir</option>:
+        <parameter>--without-hal-*-dir</parameter>:
         これらのスイッチは Linux においては不要な <application>HAL</application> コンポーネントをインストールしないようにします。
 @z
 

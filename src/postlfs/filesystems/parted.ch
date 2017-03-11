@@ -116,11 +116,22 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>If you wish to run the test suite, first remove a test that normally
+    fails in BLFS, because it needs a locale C.UTF-8:</para>
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+    <para>If you wish to run the test suite, first remove a test that normally
+    fails in BLFS, because it needs a locale C.UTF-8:</para>
+@z
+
+@x
+      To test the results, issue: <command>make check</command>.  Note that
+      many tests are skipped if not run as the <systemitem
+      class="username">root</systemitem> user.
+@y
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      Note that
+      many tests are skipped if not run as the <systemitem
+      class="username">root</systemitem> user.
 @z
 
 @x
@@ -164,8 +175,8 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -177,15 +188,23 @@
           parted and
           partprobe
         </seg>
-        <seg>libparted.so</seg>
-        <seg>/usr/include/parted</seg>
+        <seg>
+          libparted.so and
+          libparted-fs-resize.so</seg>
+        <seg>
+          /usr/include/parted and
+          /usr/share/doc/parted-&parted-version;</seg>
 @y
         <seg>
           parted,
           partprobe
         </seg>
-        <seg>libparted.so</seg>
-        <seg>/usr/include/parted</seg>
+        <seg>
+          libparted.so,
+          libparted-fs-resize.so</seg>
+        <seg>
+          /usr/include/parted,
+          /usr/share/doc/parted-&parted-version;</seg>
 @z
 
 @x

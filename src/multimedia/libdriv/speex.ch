@@ -81,18 +81,26 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libogg"/></para>
+    <para role="required">
+      <xref linkend="libogg"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libogg"/></para>
+    <para role="required">
+      <xref linkend="libogg"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><ulink url="http://valgrind.org/">Valgrind</ulink></para>
+    <para role="optional">
+      <xref linkend="valgrind"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><ulink url="http://valgrind.org/">Valgrind</ulink></para>
+    <para role="optional">
+      <xref linkend="valgrind"/>
+    </para>
 @z
 
 @x
@@ -125,7 +133,21 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+    <para>As the <systemitem class="username">root</systemitem> user:</para>
+@y
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <para>Now extract and install the speexdsp package:</para>
+@y
+    <para>Now extract and install the speexdsp package:</para>
+@z
+
+@x
+    <para>Again, as the <systemitem class="username">root</systemitem> user:</para>
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
@@ -151,11 +173,17 @@
 @x
         <seg>speexdec and speexenc</seg>
         <seg>libspeex.so and libspeexdsp.so</seg>
-        <seg>/usr/share/doc/speex</seg>
+        <seg>
+          /usr/share/doc/speex-&speex-version; and
+          /usr/share/doc/speexdsp-&speexdsp-version;
+        </seg>
 @y
         <seg>speexdec, speexenc</seg>
         <seg>libspeex.so, libspeexdsp.so</seg>
-        <seg>/usr/share/doc/speex</seg>
+        <seg>
+          /usr/share/doc/speex-&speex-version;,
+          /usr/share/doc/speexdsp-&speexdsp-version;
+        </seg>
 @z
 
 @x

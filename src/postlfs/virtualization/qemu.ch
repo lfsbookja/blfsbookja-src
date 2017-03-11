@@ -82,8 +82,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="python2"/>,
-      <xref linkend="sdl"/>, and
+      <xref linkend="python2"/>, and
       <xref linkend="x-window-system"/>
     </para>
 @y
@@ -91,30 +90,67 @@
     <para role="required">
       <xref linkend="glib2"/>,
       <xref linkend="python2"/>,
-      <xref linkend="sdl"/>,
       <xref linkend="x-window-system"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="alsa-lib"/> and
+      <xref linkend="sdl2"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="alsa-lib"/> and
+      <xref linkend="sdl2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="alsa"/>,
-      <xref linkend="attr"/>,
+      Depending on the sound system, various packages in <xref linkend="alsa"/>,
+      <xref linkend="bluez"/>,
       <xref linkend="check"/>,
       <xref linkend="curl"/>,
-      <xref linkend="mesalib"/>, and
-      <xref linkend="cyrus-sasl"/>
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libusb"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="lzo"/>,
+      <xref linkend="nettle"/>,
+      <xref linkend="mesa"/>,
+      <xref linkend="sdl"/>,
+      <xref linkend="vte"/> or <xref linkend="vte2"/>,
+<!-- libcacard has been a standalone project since qemu-2.5.-->
+      <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>,
+      and <ulink url="http://www.libssh2.org">libssh2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="alsa"/>,
-      <xref linkend="attr"/>,
+      Depending on the sound system, various packages in <xref linkend="alsa"/>,
+      <xref linkend="bluez"/>,
       <xref linkend="check"/>,
       <xref linkend="curl"/>,
-      <xref linkend="mesalib"/>,
-      <xref linkend="cyrus-sasl"/>
+      <xref linkend="cyrus-sasl"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>,
+      <xref linkend="libusb"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="lzo"/>,
+      <xref linkend="nettle"/>,
+      <xref linkend="mesa"/>,
+      <xref linkend="sdl"/>,
+      <xref linkend="vte"/> or <xref linkend="vte2"/>,
+<!-- libcacard has been a standalone project since qemu-2.5.-->
+      <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>,
+      <ulink url="http://www.libssh2.org">libssh2</ulink>
     </para>
 @z
 
@@ -159,25 +195,13 @@
 @z
 
 @x
-    <para>Enable the following options in the kernel configuration
-    and recompile the kernel if necessary:</para>
+    <para>Enable the following options in the kernel configuration and
+    recompile the kernel if necessary:</para>
 @y
     <para>
     カーネル設定における以下のオプションを有効にしてください。
     もし有効でなければカーネルを再コンパイルしてください。
     </para>
-@z
-
-@x
-<screen><literal>Virtualization:  ---&gt;
-  Kernel-based Virtual Machine (KVM) support: Y or M
-    KVM for Intel processors support: Y or M
-    KVM for AMD processors support: Y or M</literal></screen>
-@y
-<screen><literal>Virtualization:  ---&gt;
-  Kernel-based Virtual Machine (KVM) support: Y または M
-    KVM for Intel processors support: Y または M
-    KVM for AMD processors support: Y または M</literal></screen>
 @z
 
 @x
@@ -191,13 +215,13 @@
 @z
 
 @x
-    <para>For networking, check that <xref linkend='bridgeutils'/> is installed
-    and the following options in the kernel configuration are enabled:</para>
+      To use the <quote>bridge</quote> network device, as explained below,
+      check that <xref linkend='bridgeutils'/> is installed
+      and the following options in the kernel configuration are enabled:
 @y
-    <para>
-    ネットワーク接続のために、<xref linkend='bridgeutils'/> がインストールされていることを確認してください。
-    またカーネルオプションとして以下が有効であることを確認してください。
-    </para>
+      <quote>bridge</quote>ネットワークデバイスを利用する場合は <xref
+      linkend='bridgeutils'/> がインストールされていることを確認してください。
+      またカーネルオプションとして以下が有効であることを確認してください。
 @z
 
 @x
@@ -207,15 +231,21 @@
 @z
 
 @x
-    <para>If <application>xorg</application> is not installed in
-    <filename class='directory'>/usr</filename>, then the linker needs to
-    be told where it is.  For example:</para>
+      You will need a dedicated group that will contain users (other than root)
+      allowed to access the KVM device.  Create this group by running the
+      following command as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <application>xorg</application> を <filename
-    class='directory'>/usr</filename> 以外のディレクトリにインストールしている場合は、リンカーに対してそれがどこにあるかを指示しなければなりません。
-    例えば以下のようにします。
-    </para>
+      You will need a dedicated group that will contain users (other than root)
+      allowed to access the KVM device.  Create this group by running the
+      following command as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      Add any users that might use the KVM device to that group:
+@y
+      Add any users that might use the KVM device to that group:
 @z
 
 @x
@@ -228,28 +258,53 @@
 @z
 
 @x
-    <para>To run the built in tests, run <command>make V=1 check</command>.</para>
+    <note><para>Qemu is capable of running many targets.  The build process
+    is also capable of building multiple targets at one time in a
+    comma delimited list assigned to <option>--target-list</option>. Run
+    <command>./configure --help</command> to get a complete list of
+    available targets.</para></note>
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make V=1 check</command> を実行します。
-    </para>
+    <note><para>Qemu is capable of running many targets.  The build process
+    is also capable of building multiple targets at one time in a
+    comma delimited list assigned to <option>--target-list</option>. Run
+    <command>./configure --help</command> to get a complete list of
+    available targets.</para></note>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      To run the built in tests, run <command>make V=1 -k check</command>.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make V=1 check</command> を実行します。
 @z
 
 @x
-    <para>For convenience you may want to create a symbolic link to run
-    <command>qemu-system-x86_64</command>:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    以下のように <command>qemu-system-x86_64</command> に対するシンボリックリンクを作成しておけば、作業がやりやすくなるでしょう。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      You will also need to add an Udev rule so that the KVM device gets correct
+      permissions:
+@y
+      You will also need to add an Udev rule so that the KVM device gets correct
+      permissions:
+@z
+
+@x
+      Change the permissions and ownership of a helper script, which is needed
+      when using the <quote>bridge</quote> network device (see below):
+@y
+      Change the permissions and ownership of a helper script, which is needed
+      when using the <quote>bridge</quote> network device (see below):
+@z
+
+@x
+      <para>For convenience you may want to create a symbolic link to run
+      the installed program. For instance:</para>
+@y
+      <para>For convenience you may want to create a symbolic link to run
+      the installed program. For instance:</para>
 @z
 
 @x
@@ -259,209 +314,37 @@
 @z
 
 @x
-    <para><parameter>--target-list=x86_64-softmmu</parameter>: This switch
-    limits the build target to the x86_64 architecture.  For other 
-    hardware emulation see the --target-list list in <command>configure</command>'s
-    help output.  Omitting this option will build all architectures.</para>
-@y
-    <para><parameter>--target-list=x86_64-softmmu</parameter>: This switch
-    limits the build target to the x86_64 architecture.  For other 
-    hardware emulation see the --target-list list in <command>configure</command>'s
-    help output.  Omitting this option will build all architectures.</para>
-@z
-
-@x
-      <option>--audio-drv-list=alsa</option>: This switch sets the audio driver
-      to ALSA. For other drivers see the --audio-drv-list list in
+      <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
+      driver to ALSA. For other drivers see the --audio-drv-list list in
       <command>configure</command>'s help output. The default audio driver is
       OSS.
 @y
-      <option>--audio-drv-list=alsa</option>: This switch sets the audio driver
-      to ALSA. For other drivers see the --audio-drv-list list in
+      <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
+      driver to ALSA. For other drivers see the --audio-drv-list list in
       <command>configure</command>'s help output. The default audio driver is
       OSS.
 @z
 
 @x
-    <title>Configuring qemu</title>
+      <parameter>--with-sdlabi=2.0</parameter>: Chooses to build with SDL-2 if
+      both SDL and SDL-2 are installed.
 @y
-    <title>&Configuring1;qemu&Configuring2;</title>
+      <parameter>--with-sdlabi=2.0</parameter>: Chooses to build with SDL-2 if
+      both SDL and SDL-2 are installed.
 @z
 
 @x
-    <para>To generate an image, run:</para>
+      <option>--with-gtkabi=3.0</option>: builds with GTK+-3 if both GTK+-2
+      and GTK+-3 are installed.
 @y
-    <para>イメージを生成するためには以下を実行します。</para>
+      <option>--with-gtkabi=3.0</option>: builds with GTK+-3 if both GTK+-2
+      and GTK+-3 are installed.
 @z
 
 @x
-    <para>Adjust the virtual disk size and image filename as desired.  The
-    actual size of the file will be less than specified, but will expand as it
-    is used.</para>
+    <title>Using Qemu</title>
 @y
-    <para>
-    必要なら仮想ディスク容量やイメージファイル名を書き換えてください。
-    実際に生成されるファイルは、指定サイズより小さくなりますが、使うにつれて増えていきます。
-    </para>
-@z
-
-@x
-    <note><para>The following instructions assume you have created the optional
-    symbolic link, <userinput>qemu</userinput>.  Additionally, you must run
-    <userinput>qemu</userinput> from an X Window System based terminal.</para></note>
-@y
-    <note><para>
-    これ以降の手順においては、以下を前提として説明を進めます。
-    まずシンボリックリンク <userinput>qemu</userinput> を生成しているものとします。
-    また <userinput>qemu</userinput> は X ウィンドウシステムベースの端末から実行するものとします。
-    </para></note>
-@z
-
-@x
-    <para>To install an operating system, download an iso of your choice or use
-    a pre-intalled cdrom device.  For the purposes of this example, use
-    Fedora 16 that is downloaded as
-    <filename>Fedora-16-x86_64-Live-LXDE.iso</filename> in the current
-    directory.  Run the following:</para>
-@y
-    <para>
-    オペレーティングシステムをインストールするには、その iso ファイルをダウンロードするか、インストール済の CDROM を準備します。
-    ここでは例として Fedora 16 を用いるものとします。
-    <filename>Fedora-16-x86_64-Live-LXDE.iso</filename> をダウンロードし、カレントディレクトリにコピーします。
-    そして以下を実行します。
-    </para>
-@z
-
-% @x
-%     <para>Follow the normal installation procedures for the chosen
-%     distribution.  The -boot option specifies the boot order of drives as a string
-%     of drive letters. Valid drive letters are: a, b (floppy 1 and 2), c (first
-%     hard disk), d (first CD-ROM).  The -m option is the amount of memory to use
-%     for the virtual machine.  If you have sufficient memory (2G or more), 1G is
-%     a reasonable value.  For computers with 512MB of RAM it's safe to use -m
-%     192, or even -m 128 (the default).</para>
-% @y
-%     <para>
-%     目的のディストリビューションを、以下のような標準的な手順によりインストールします。
-%     オプションの -boot は、ブートするドライブの順を定めるもので、ドライブ文字を指定します。
-%     許容されるドライブ文字は、a, b (フロッピー1 と 2)、c (1つめのハードディスク)、d (1つめの CD-ROM) です。
-%     オプション -m は、仮想マシンにて利用するメモリ容量を指定します。
-%     十分なメモリ容量 (2G 以上) を有しているのであれば、1G としたらよいでしょう。
-%     メモリ容量が 512MB しかなかったなら、-m 192 や -m 128 (これがデフォルト) とするのが安全です。
-%     </para>
-% @z
-
-@x
-    <para>Follow the normal installation procedures for the chosen
-    distribution.  The -boot option specifies the boot order of drives as a
-    string of drive letters. Valid drive letters are: a, b (floppy 1 and 2), c
-    (first hard disk), d (first CD-ROM).  The -m option is the amount of memory
-    to use for the virtual machine.  If you have sufficient memory (2G or
-    more), 1G is a reasonable value.  For computers with 512MB of RAM it's safe
-    to use -m 192, or even -m 128 (the default).  The -enable-kvm option allows
-    for hardware acceleeration.  Without this switch, the emulation is
-    relatively slow.</para>
-@y
-    <para>Follow the normal installation procedures for the chosen
-    distribution.  The -boot option specifies the boot order of drives as a
-    string of drive letters. Valid drive letters are: a, b (floppy 1 and 2), c
-    (first hard disk), d (first CD-ROM).  The -m option is the amount of memory
-    to use for the virtual machine.  If you have sufficient memory (2G or
-    more), 1G is a reasonable value.  For computers with 512MB of RAM it's safe
-    to use -m 192, or even -m 128 (the default).  The -enable-kvm option allows
-    for hardware acceleeration.  Without this switch, the emulation is
-    relatively slow.</para>
-@z
-
-@x
-    <para>To run the newly installed operating system, run:</para>
-@y
-    <para>
-    出来上がったオペレーティングシステムを起動するために、以下を実行します。
-    </para>
-@z
-
-@x
-    <para>To add networking to the instance add "-net nic -net user" to the
-    command above.  qemu provides a DHCP server for the VM and, depending on
-    the client system, sets up networking though the host.</para>
-@y
-    <para>
-    上のコマンドでは、仮想インスタンスにネットワーク機能を付与するために "-net nic -net user" を指示しています。
-    
-qemu provides a DHCP server for the VM and, depending on
-    the client system, sets up networking though the host.
-    </para>
-@z
-
-@x
-    <para>One problem with the above networking solution is that it does not
-    provide the ability to connect with the local network.  To do that, there are 
-    several additional steps that need to be done, all as the <systemitem
-    class="username">root</systemitem> user:</para>
-@y
-    <para>
-    One problem with the above networking solution is that it does not
-    provide the ability to connect with the local network.  To do that, there are 
-    several additional steps that need to be done, all as the <systemitem
-    class="username">root</systemitem> user:
-    </para>
-@z
-
-@x
-        <para>Set up bridging with <xref linkend='bridgeutils'/>.</para>
-@y
-        <para>
-        <xref linkend='bridgeutils'/> を適切に設定します。
-        </para>
-@z
-
-@x
-        <para>Allow the host system to forward IP packets.</para>
-@y
-        <para>
-        IP パケットのフォワーディングが行われるようにホストシステムを設定します。
-        </para>
-@z
-
-@x
-        <para>To make this permanent, add the command to 
-        <filename>/etc/syssysctl.conf:</filename></para>
-@y
-        <para>
-        上のことを恒常的に設定するために <filename>/etc/syssysctl.conf</filename> に以下のコマンドを追記します。
-        </para>
-@z
-
-@x
-        <para>Create scripts for qemu to attach the client network 
-        device, usually visible as tap0, to the host bridge.</para>
-@y
-        <para>
-        以下のスクリプトを生成することで、クライアントのネットワークデバイスへ接続するようにします。
-        通常は tap0 として見えるものであり、ホストのブリッジインターフェースに接続されます。
-        </para>
-@z
-
-@x
-        <para>Start qemu with "-net nic -net tap" options.  </para>
-@y
-        <para>
-        オプション "-net nic -net tap" をつけて qemu を実行します。
-        </para>
-@z
-
-@x
-        <para>If a connection, such as ssh, from the local network to the 
-        client VM is desired, the client should probably be configured
-        with a static IP address.</para>
-@y
-        <para>
-        
-If a connection, such as ssh, from the local network to the 
-        client VM is desired, the client should probably be configured
-        with a static IP address.
-        </para>
+    <title>Using Qemu</title>
 @z
 
 @x
@@ -482,37 +365,35 @@ If a connection, such as ssh, from the local network to the
 
 @x
         <seg>
+          ivshmem-client,
+          ivshmem-server,
+          qemu (symlink),
           qemu-ga,
           qemu-img,
           qemu-io,
           qemu-nbd,
-          qemu-system-x86_64,
-          virtfs-proxy-helper, and
-          vscclient
+          qemu-system-&lt;arch&gt;, and
+          virtfs-proxy-helper
         </seg>
-        <seg>libcacard.so</seg>
+        <seg>None</seg>
         <seg>
-          /etc/qemu,
-          /usr/include/cacard,
-          /usr/lib/qemu,
-          /usr/share/qemu, and
+          /usr/share/qemu and
           /usr/share/doc/qemu-&qemu-version;
         </seg>
 @y
         <seg>
+          ivshmem-client,
+          ivshmem-server,
+          qemu (シンボリックリンク),
           qemu-ga,
           qemu-img,
           qemu-io,
           qemu-nbd,
-          qemu-system-x86_64,
-          virtfs-proxy-helper,
-          vscclient
+          qemu-system-&lt;arch&gt;,
+          virtfs-proxy-helper
         </seg>
-        <seg>libcacard.so</seg>
+        <seg>&None;</seg>
         <seg>
-          /etc/qemu,
-          /usr/include/cacard,
-          /usr/lib/qemu,
           /usr/share/qemu,
           /usr/share/doc/qemu-&qemu-version;
         </seg>

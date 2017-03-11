@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY lzo-time          "0.2 SBU (additional 0.2 SBU to run the tests)">
+  <!ENTITY lzo-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY LZO-time          "0.2 SBU (テスト実行時はさらに 0.2 SBU)">
+  <!ENTITY lzo-time          "0.3 SBU (テスト込み)">
 @z
 
 @x

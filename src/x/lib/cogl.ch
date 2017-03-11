@@ -82,15 +82,19 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="cairo"/>,
       <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="mesalib"/>, and
+      <xref linkend="glu"/>,
+      <xref linkend="mesa"/>, and
       <xref linkend="pango"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="cairo"/>,
       <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="mesalib"/>,
+      <xref linkend="glu"/>,
+      <xref linkend="mesa"/>,
       <xref linkend="pango"/>
     </para>
 @z
@@ -113,8 +117,8 @@
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="sdl"/>,
-      <ulink url="http://www.libsdl.org/tmp/release/">SDL2</ulink>, and
-      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
+      <xref linkend="sdl2"/>, and
+      <xref linkend="wayland"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -122,8 +126,8 @@
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="sdl"/>,
-      <ulink url="http://www.libsdl.org/tmp/release/">SDL2</ulink>,
-      <ulink url="http://wayland.freedesktop.org/">Wayland</ulink>
+      <xref linkend="sdl2"/>,
+      <xref linkend="wayland"/>
     </para>
 @z
 
@@ -189,8 +193,9 @@
           None
         </seg>
         <seg>
-          libcogl-gles2.so, 
-          libcogl-pango.so and 
+          libcogl-gles2.so,
+          libcogl-pango.so,
+          libcogl-path.so, and
           libcogl.so, and optional libraries
           libcogl-gst.so and /usr/lib/gstreamer-1.0/libgstcogl.so
        </seg>
@@ -203,10 +208,10 @@
           &None;
         </seg>
         <seg>
-          libcogl-gles2.so, 
+          libcogl-gles2.so,
           libcogl-pango.so,
-          libcogl.so, 任意ビルドとして
-          libcogl-gst.so, /usr/lib/gstreamer-1.0/libgstcogl.so
+          libcogl-path.so, and
+          libcogl.so, 任意ビルドとして libcogl-gst.so, /usr/lib/gstreamer-1.0/libgstcogl.so
        </seg>
         <seg>
          /usr/include/cogl,

@@ -67,26 +67,6 @@
 
 
 
-% ----------
-% XML::Parser
-% ----------
-@x
-    <para>The XML::Parser module is a <application>Perl</application> extension
-    interface to James Clark's XML parser,
-    <application>expat</application>. The module uses the standard
-    <xref linkend="perl-standard-install"/>.</para>
-@y
-    <para>
-    XML::Parser モジュールは James Clark 氏による XML パーサー <application>expat</application> への <application>Perl</application> 拡張インターフェースです。
-    このモジュールは標準的な<xref linkend="perl-standard-install"/>に従います。
-    </para>
-@z
-
-@x
-              <xref linkend="perl-lwp"/> (optionally used in the test suite)
-@y
-              <xref linkend="perl-lwp"/> (任意; テスト時に利用される)
-@z
 
 
 

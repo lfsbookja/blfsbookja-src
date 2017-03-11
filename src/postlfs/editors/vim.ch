@@ -90,18 +90,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Translated Vim messages: <ulink
-@y
-        <para>翻訳された Vim メッセージ: <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">Vim Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Vim&Dependencies2;</bridgehead>
@@ -109,31 +97,37 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="x-window-system"/></para>
+    <para role="recommended">
+      <xref linkend="x-window-system"/> and
+      <xref linkend="gtk2"/>
+    </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="recommended"><xref linkend="x-window-system"/></para>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="x-window-system"/> and
+      <xref linkend="gtk2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk2"/> or
-      <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>,
+      <xref linkend="gpm"/>,
+      <xref linkend="lua"/>,
       <xref linkend="python2"/>,
-      <xref linkend="tcl"/>,
-      <xref linkend="ruby"/>, and
-      <xref linkend="gpm"/>
+      <xref linkend="ruby"/>,
+      <xref linkend="tcl"/>, and
+      <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk2"/> または
-      <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>,
+      <xref linkend="gpm"/>,
+      <xref linkend="lua"/>,
       <xref linkend="python2"/>,
-      <xref linkend="tcl"/>,
       <xref linkend="ruby"/>,
-      <xref linkend="gpm"/>
+      <xref linkend="tcl"/>,
+      <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>
     </para>
 @z
 
@@ -154,9 +148,9 @@
 @x
       <para>If you recompile <application>Vim</application> to link against
       <application>X</application> and your <application>X</application>
-      libraries are not on the root partition, you will no longer have an editor
-      for use in emergencies. You may choose to install an additional editor,
-      not link <application>Vim</application> against
+      libraries are not on the root partition, you will no longer have an
+      editor for use in emergencies. You may choose to install an additional
+      editor, not link <application>Vim</application> against
       <application>X</application>, or move the current <command>vim</command>
       executable to the <filename class="directory">/bin</filename> directory
       under a different name such as <filename>vi</filename>.</para>
@@ -166,12 +160,6 @@
       このことに対処するには、他のエディターをインストールするか、<application>Vim</application> を <application>X</application> にリンクさせないようにするか、あるいは現在ある <command>vim</command> を <filename
       class="directory">/bin</filename> に移動させて <filename>vi</filename> などの別名にして利用するなどの方法を取る必要があります。
       </para>
-@z
-
-@x
-    <para>If desired, unpack the translated messages archive:</para>
-@y
-    <para>必要であれば翻訳メッセージのアーカイブを解凍します。</para>
 @z
 
 @x
@@ -261,11 +249,13 @@
 
 @x
     <para><parameter>--with-features=huge</parameter>: This switch enables all
-    the additional features available in <application>Vim</application>.</para>
+    the additional features available in <application>Vim</application>,
+    including support for multibyte characters.</para>
 @y
     <para>
     <parameter>--with-features=huge</parameter>:
     このスイッチは <application>Vim</application> における追加機能を実現します。
+    マルチバイトサポートが含まれます。
     </para>
 @z
 
@@ -374,14 +364,14 @@
       <para>Alternatively you can manually download the *.spl and *.sug files
       from: <ulink url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> and save
       them to <filename class="directory"> ~/.vim/spell </filename> or in
-      <filename class="directory">/usr/share/vim/vim74/spell/</filename>.</para>
+      <filename class="directory">/usr/share/vim/vim80/spell/</filename>.</para>
 @y
       <para>
       *.spl や *.sug というファイルは <ulink
       url="ftp://ftp.vim.org/pub/vim/runtime/spell/"/> から手動でダウンロードすることもできます。
       これらのファイルは <filename
       class="directory"> ~/.vim/spell </filename> に書き加えるか、<filename
-      class="directory">/usr/share/vim/vim74/spell/</filename> ディレクトリに保存して利用します。
+      class="directory">/usr/share/vim/vim80/spell/</filename> ディレクトリに保存して利用します。
       </para>
 @z
 

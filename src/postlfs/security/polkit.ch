@@ -79,15 +79,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="intltool"/> and
+      <xref linkend="glib2"/>, and
       <xref linkend="JS"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="intltool"/>,
       <xref linkend="JS"/>
     </para>
 @z
@@ -107,29 +105,36 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="DocBook"/>, 
-      <xref linkend="docbook-xsl"/>, 
-      <xref linkend="gtk-doc"/>, 
-      <xref linkend="libxslt"/> and 
-      <xref linkend="linux-pam"/>
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="gtk-doc"/>, <phrase revision="systemd">and </phrase>
+      <xref linkend="libxslt"/><phrase revision="sysv">, and
+      <xref linkend="linux-pam"/></phrase>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="DocBook"/>, 
-      <xref linkend="docbook-xsl"/>, 
-      <xref linkend="gtk-doc"/>, 
-      <xref linkend="libxslt"/>,
-      <xref linkend="linux-pam"/>
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/><phrase revision="sysv">,
+      <xref linkend="linux-pam"/></phrase>
     </para>
 @z
 
 @x
-        If <xref linkend="libxslt"/> is installed, then <xref linkend="DocBook"/>
-        and <xref linkend="docbook-xsl"/> are required. If you have installed
-        <xref linkend="libxslt"/>, but you do not want to install any of the
-        DocBook packages mentioned, you will need to use
-        <option>--disable-man-pages</option> in the instructions below.
+    <bridgehead renderas="sect4" revision="systemd">Required Runtime Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect4" revision="systemd">Required Runtime Dependencies</bridgehead>
+@z
+
+@x
+        If <xref linkend="libxslt"/> is installed,
+        then <xref linkend="DocBook"/> and <xref linkend="docbook-xsl"/> are
+        required. If you have installed <xref linkend="libxslt"/>, but you do
+        not want to install any of the DocBook packages mentioned, you will
+        need to use <option>--disable-man-pages</option> in the instructions
+        below.
 @y
         <xref linkend="libxslt"/> をインストールしている場合は <xref
         linkend="DocBook"/> と <xref linkend="docbook-xsl"/> が必要です。
@@ -189,11 +194,23 @@
     <title>&CommandExplanations;</title>
 @z
 
-@x
+@x revision="sysv"
+      <parameter>--enable-libsystemd-login=no</parameter>: This parameter fixes
+      building without <application>systemd</application>, which is not part
+      of LFS/BLFS. If you use <application>systemd</application>,
+      replace "no" by "yes".
+@y
+      <parameter>--enable-libsystemd-login=no</parameter>: This parameter fixes
+      building without <application>systemd</application>, which is not part
+      of LFS/BLFS. If you use <application>systemd</application>,
+      replace "no" by "yes".
+@z
+
+@x revision="sysv"
       <parameter>--with-authfw=shadow</parameter>: This parameter configures the
       package to use the <application>Shadow</application> rather than the
-      <application>Linux PAM</application> Authentication framework. Remove it if
-      you would like to use <application>Linux PAM</application>.
+      <application>Linux-PAM</application> Authentication framework. Remove it
+      if you would like to use <application>Linux-PAM</application>.
 @y
       <parameter>--with-authfw=shadow</parameter>:
       本パラメーターは認証フレームワークとして <application>Linux-PAM</application> ではなく <application>Shadow</application> を使うことを指定します。

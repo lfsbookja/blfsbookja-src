@@ -98,25 +98,27 @@
     <para role="optional">
     <xref linkend="git"/>,
     <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
+    <xref linkend="openssh"/> (runtime, to access ssh://... repositories),
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
     <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
     <ulink url="http://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
     <ulink url="http://pygments.org/">pygments</ulink>, and
-    <ulink url="https://launchpad.net/pyopenssl">pyOpenSSL</ulink>
+    <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="git"/>,
     <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
+    <xref linkend="openssh"/> (runtime, to access ssh://... repositories),
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
     <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
     <ulink url="http://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
     <ulink url="http://pygments.org/">pygments</ulink>, and
-    <ulink url="https://launchpad.net/pyopenssl">pyOpenSSL</ulink>
+    <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
 @z
 
 @x
@@ -141,23 +143,11 @@
 @z
 
 @x
-    <para>To build the documentation (requires 
+    <para>To build the documentation (requires
     <application>Docutils</application>), issue:</para>
 @y
     <para>
     ドキュメントをビルドする場合 (<application>Docutils</application> が必要)、以下を実行します。</para>
-@z
-
-@x
-    <para>Running the test suite is optional. If there are failures, e.g.
-    test-parse-date.t, those tests can be disabled. To test the results in the
-    subdiretory <filename class="directory">tests/tmp</filename>, skipping
-    failing tests, issue:</para>
-@y
-    <para>Running the test suite is optional. If there are failures, e.g.
-    test-parse-date.t, those tests can be disabled. To test the results in the
-    subdiretory <filename class="directory">tests/tmp</filename>, skipping
-    failing tests, issue:</para>
 @z
 
 @x
@@ -203,18 +193,19 @@
         </seg>
         <seg>
           /etc/mercurial and
-          /usr/lib/python&python2-majorver;/site-packages/{hgext,mercurial}
+          /usr/lib/python&python2-majorver;/site-packages/{hgext,hgext3rd,mercurial}
         </seg>
 @y
         <seg>
           hg
         </seg>
         <seg>
-          /usr/lib/python&python2-majorver;/site-packages/mercurial 配下に数種のライブラリ
+          several internal modules under
+          /usr/lib/python&python2-majorver;/site-packages/mercurial
         </seg>
         <seg>
-          /etc/mercurial,
-          /usr/lib/python&python2-majorver;/site-packages/{hgext,mercurial}
+          /etc/mercurial and
+          /usr/lib/python&python2-majorver;/site-packages/{hgext,hgext3rd,mercurial}
         </seg>
 @z
 

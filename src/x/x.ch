@@ -14,13 +14,13 @@
 @z
 
 @x
-<part id="x" xreflabel="X and Window Managers">
+<part id="x" xreflabel="X plus Window and Display Managers">
 @y
-<part id="x" xreflabel="X とウィンドウマネージャー">
+<part id="x" xreflabel="X + ウィンドウとディスプレイマネージャー">
 @z
 
 @x
-  <title>X + Window Managers</title>
+  <title>X + Window and Display Managers</title>
 @y
-  <title>X とウィンドウマネージャー</title>
+  <title>X + ウィンドウとディスプレイマネージャー</title>
 @z

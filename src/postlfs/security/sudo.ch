@@ -81,27 +81,27 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.openafs.org/">AFS</ulink>,
-      <ulink url="http://www.fwtk.org/">FWTK</ulink>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      an <xref linkend="server-mail"/> (that provides a
-      <command>sendmail</command> command),
       <xref linkend="openldap"/>,
-      <ulink url="http://sourceforge.net/projects/opie/files/">Opie</ulink> and
-      <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>
+      <xref linkend="server-mail"/> (that provides a
+      <command>sendmail</command> command),
+      <ulink url="http://www.openafs.org/">AFS</ulink>,
+      <ulink url="http://www.fwtk.org/">FWTK</ulink>, and
+      <ulink url="http://sourceforge.net/projects/opie/files/">Opie</ulink>
+<!--  <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.openafs.org/">AFS</ulink>,
-      <ulink url="http://www.fwtk.org/">FWTK</ulink>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      an <xref linkend="server-mail"/> (これは <command>sendmail</command> コマンドを提供するものです),
       <xref linkend="openldap"/>,
-      <ulink url="http://sourceforge.net/projects/opie/files/">Opie</ulink>,
-      <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>
+      <xref linkend="server-mail"/> (<command>sendmail</command> コマンドを提供するもの),
+      <ulink url="http://www.openafs.org/">AFS</ulink>,
+      <ulink url="http://www.fwtk.org/">FWTK</ulink>,
+      <ulink url="http://sourceforge.net/projects/opie/files/">Opie</ulink>
+<!--  <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>-->
     </para>
 @z
 
@@ -124,9 +124,14 @@
 @z
 
 @x
-      To test the results, issue: <command>env LC_ALL=C make check</command>.
+      To test the results, issue: <command>env LC_ALL=C make check 2&gt;&amp;1
+      | tee ../make-check.log</command>. Check the results with <command>grep
+      failed ../make-check.log</command>.
 @y
-      ビルド結果をテストする場合は <command>env LC_ALL=C make check</command> を実行します。
+      ビルド結果をテストする場合は <command>env LC_ALL=C make check 2&gt;&amp;1
+      | tee ../make-check.log</command> を実行します。
+      確認は <command>grep
+      failed ../make-check.log</command> により行います。
 @z
 
 @x
@@ -142,11 +147,27 @@
 @z
 
 @x
-      <parameter>--with-timedir=/var/lib/sudo</parameter>: This switch places
-      the variable time stamp files in a FHS compatible location.
+     <parameter>--libexecdir=/usr/lib</parameter>: This switch controls where
+     private programs are installed.  Everything in that directory is a library, so
+     they belong under <filename class="directory">/usr/lib</filename> instead of
+     <filename class="directory">/usr/libexec</filename>.
 @y
-      <parameter>--with-timedir=/var/lib/sudo</parameter>:
-      本スイッチはタイムスタンプファイルを FHS 互換のディレクトリに配置することを指示します。
+     <parameter>--libexecdir=/usr/lib</parameter>: This switch controls where
+     private programs are installed.  Everything in that directory is a library, so
+     they belong under <filename class="directory">/usr/lib</filename> instead of
+     <filename class="directory">/usr/libexec</filename>.
+@z
+
+@x
+      <parameter>--with-secure-path</parameter>: This switch transparently adds
+      <filename class="directory">/sbin</filename> and <filename
+      class="directory">/usr/sbin</filename> directories to the
+      <envar>PATH</envar> environment variable.
+@y
+      <parameter>--with-secure-path</parameter>: This switch transparently adds
+      <filename class="directory">/sbin</filename> and <filename
+      class="directory">/usr/sbin</filename> directories to the
+      <envar>PATH</envar> environment variable.
 @z
 
 @x
@@ -163,6 +184,16 @@
 @y
       <parameter>--with-env-editor</parameter>:
       このスイッチは <command>visudo</command> において環境変数 EDITOR の利用を有効にします。
+@z
+
+@x
+      <option>--without-pam</option>: This switch avoids building
+      <application>Linux-PAM</application> support when
+      <application>Linux-PAM</application> is installed on the system.
+@y
+      <option>--without-pam</option>: This switch avoids building
+      <application>Linux-PAM</application> support when
+      <application>Linux-PAM</application> is installed on the system.
 @z
 
 @x
@@ -197,8 +228,8 @@
         The <filename>sudoers</filename> file can be quite complicated.  It
         is composed of two types of entries: aliases (basically variables) and
         user specifications (which specify who may run what).  The installation
-        installs a default configuration that has no privileges installed for any
-        user.
+        installs a default configuration that has no privileges installed for
+        any user.
 @y
         <filename>sudoers</filename> ファイルは少々込み入っています。
         このファイル内では２つの記述項目があります。
@@ -226,22 +257,25 @@
           The <application>Sudo</application> developers highly recommend
           using the <command>visudo</command> program to edit the
           <filename>sudoers</filename> file. This will provide basic sanity
-          checking like syntax parsing and file permission to avoid some possible
-          mistakes that could lead to a vulnerable configuration.
+          checking like syntax parsing and file permission to avoid some
+          possible mistakes that could lead to a vulnerable configuration.
 @y
           <application>Sudo</application> 開発者は <filename>sudoers</filename> ファイルを編集する際には <command>visudo</command> コマンドを利用することを強く推奨しています。
           文法チェックやファイルパーミッションなどの基本的な整合性を確保するものであり、ちょっとしたミスによって脆弱な設定とならないようにするものです。
 @z
 
 @x
-        If you've built <application>Sudo</application> with
-        <application>PAM</application> support, issue the following
-        command as the <systemitem class="username">root</systemitem> user
-        to create the <application>PAM</application> configuration file:
+        If <application>PAM</application> is installed on the system,
+        <application>Sudo</application> is built with
+        <application>PAM</application> support. In that case, issue the
+        following command as the <systemitem class="username">root</systemitem>
+        user to create the <application>PAM</application> configuration file:
 @y
-        <application>Sudo</application> のビルドにあたって <application>PAM</application> サポートを有効にした場合は、<systemitem
-        class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-        これにより <application>PAM</application> 設定ファイルが生成されます。
+        If <application>PAM</application> is installed on the system,
+        <application>Sudo</application> is built with
+        <application>PAM</application> support. In that case, issue the
+        following command as the <systemitem class="username">root</systemitem>
+        user to create the <application>PAM</application> configuration file:
 @z
 
 @x
@@ -265,26 +299,28 @@
           sudo, sudoedit (symlink), sudoreplay, and visudo
         </seg>
         <seg>
-          group_file.so, sudoers.so, sudo_noexec.so, and system_group.so
+          group_file.so, libsudo_util.so,
+          sudoers.so, sudo_noexec.so, and system_group.so
         </seg>
         <seg>
           /etc/sudoers.d,
           /usr/lib/sudo,
           /usr/share/doc/sudo-&sudo-version;, and
-          /var/lib/sudo
+          /var/{lib,run}/sudo
         </seg>
 @y
         <seg>
           sudo, sudoedit (シンボリックリンク), sudoreplay, visudo
         </seg>
         <seg>
-          group_file.so, sudoers.so, sudo_noexec.so, system_group.so
+          group_file.so, libsudo_util.so,
+          sudoers.so, sudo_noexec.so, system_group.so
         </seg>
         <seg>
           /etc/sudoers.d,
           /usr/lib/sudo,
           /usr/share/doc/sudo-&sudo-version;,
-          /var/lib/sudo
+          /var/{lib,run}/sudo
         </seg>
 @z
 
@@ -313,11 +349,4 @@
             file.
 @y
             <filename>sudoers</filename> ファイルを安全な形で編集します。
-@z
-
-@x sudoreplay
-            is used to play back or list the output 
-            logs created by <command>sudo</command>.
-@y
-            <command>sudo</command> によって生成されたログを一覧表示したり再実行したりします。
 @z

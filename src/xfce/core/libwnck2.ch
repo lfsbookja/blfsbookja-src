@@ -77,14 +77,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/> and
-      <xref linkend="intltool"/>
+      <xref linkend="gtk2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/>,
-      <xref linkend="intltool"/>
+      <xref linkend="gtk2"/>
     </para>
 @z
 
@@ -152,13 +150,13 @@
 @z
 
 @x
-      <option>--program-suffix=-1</option>: This option adds -1 to the end of
-      the names of the installed programs to avoid overwriting the programs
-      installed by <xref linkend="libwnck"/>.
+      <parameter>--program-suffix=-1</parameter>: This option adds -1 to the
+      end of the names of the installed programs to avoid overwriting the
+      programs installed by <xref linkend="libwnck"/>.
 @y
-      <option>--program-suffix=-1</option>: This option adds -1 to the end of
-      the names of the installed programs to avoid overwriting the programs
-      installed by <xref linkend="libwnck"/>.
+      <parameter>--program-suffix=-1</parameter>: This option adds -1 to the
+      end of the names of the installed programs to avoid overwriting the
+      programs installed by <xref linkend="libwnck"/>.
 @z
 
 @x
@@ -218,11 +216,11 @@
 @z
 
 @x wnckprop-1
-            Print or modify the properties of a screen/workspace/window, or
-            interact with it.
+            Prints, modifies, or interacts with  the properties of a 
+            screen/workspace/window.
 @y
-            Print or modify the properties of a screen/workspace/window, or
-            interact with it.
+            Prints, modifies, or interacts with  the properties of a 
+            screen/workspace/window.
 @z
 
 @x libwnck-1.so

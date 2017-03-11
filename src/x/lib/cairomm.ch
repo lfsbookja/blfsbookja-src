@@ -151,29 +151,25 @@
 
 @x
         <seg>
-	  None
-	</seg>
-	<seg>
+          None
+        </seg>
+        <seg>
           libcairomm-1.0.so
         </seg>
         <seg>
-          /usr/include/cairomm-1.0,
-          /usr/lib/cairomm-1.0,
-          /usr/share/devhelp/books/cairomm-1.0 and
-          /usr/share/doc/cairomm-1.0
+          /usr/{include,lib}/cairomm-1.0 and
+          /usr/share/{devhelp/books/cairomm-1.0,doc/cairomm-&cairomm-version;}
         </seg>
 @y
         <seg>
 	  &None;
 	</seg>
-	<seg>
+        <seg>
           libcairomm-1.0.so
         </seg>
         <seg>
-          /usr/include/cairomm-1.0,
-          /usr/lib/cairomm-1.0,
-          /usr/share/devhelp/books/cairomm-1.0,
-          /usr/share/doc/cairomm-1.0
+          /usr/{include,lib}/cairomm-1.0,
+          /usr/share/{devhelp/books/cairomm-1.0,doc/cairomm-&cairomm-version;}
         </seg>
 @z
 

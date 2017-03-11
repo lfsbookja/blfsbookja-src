@@ -111,7 +111,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> lcov</ulink>, and
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
       <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9) and libquvi-scripts</ulink>
       - if they are installed, then
       <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>
@@ -121,7 +121,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> lcov</ulink>, and
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
       <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9) and libquvi-scripts</ulink>
       - if they are installed, then
       <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>

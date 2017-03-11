@@ -118,7 +118,7 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
-      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support),
+<!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
       <xref linkend="python2"/> (with sqlite support for the tests),
       <xref linkend="ruby"/>, and
       <xref linkend="swig"/> (for building Perl, Python and Ruby bindings)
@@ -132,7 +132,7 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
-      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support),
+<!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
       <xref linkend="python2"/> (with sqlite support for the tests),
       <xref linkend="ruby"/>, and
       <xref linkend="swig"/> (for building Perl, Python and Ruby bindings)
@@ -284,14 +284,11 @@
           /usr/lib/ruby/site_ruby/&lt;x.y.z&gt;/{,&lt;arch-linux&gt;-linux/}svn,
           /usr/lib/svn-javahl, and
           /usr/share/doc/subversion-&subversion-version;
-<!--      /usr/lib/svn-python/libsvn (optional),
-          /usr/lib/svn-python/svn (optional),
--->
         </seg>
 @y
         <seg>
           svn, svnadmin, svnbench, svndumpfilter, svnfsfs, svnlook, svnmucc,
-          svnrdump, svnserve, svnsync, and svnversion
+          svnrdump, svnserve, svnsync, svnversion
         </seg>
         <seg>
           libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
@@ -305,11 +302,8 @@
           /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto/}SVN,
           /usr/lib/python2.7/site-packages/{libsvn,svn},
           /usr/lib/ruby/site_ruby/&lt;x.y.z&gt;/{,&lt;arch-linux&gt;-linux/}svn,
-          /usr/lib/svn-javahl, and
+          /usr/lib/svn-javahl,
           /usr/share/doc/subversion-&subversion-version;
-<!--      /usr/lib/svn-python/libsvn (optional),
-          /usr/lib/svn-python/svn (optional),
--->
         </seg>
 @z
 

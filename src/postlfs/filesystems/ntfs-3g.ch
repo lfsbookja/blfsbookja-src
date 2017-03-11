@@ -20,13 +20,16 @@
 @z
 
 @x
-      The <application>Ntfs-3g</application> package contains an open source,
-      driver for Windows NTFS file system. This can mount Windows partitions
-      so that they are writeable and allows you edit or delete Windows files
-      from Linux.
+      The <application>Ntfs-3g</application> package contains a stable,
+      read-write open source driver for NTFS partitions. NTFS partitions are
+      used by most Microsoft operating systems. Ntfs-3g allows you to mount
+      NTFS partitions in read-write mode from your Linux system. It uses the
+      FUSE kernel module to be able to implement NTFS support in user space.
 @y
-      <application>Ntfs-3g</application> パッケージは、オープンソースとして実装される、Windows NTFS ファイルシステムに対するドライバーを提供します。
-      これを利用して Windows パーティションをマウントすれば、Windows 側のファイルを Linux から書き込んだり削除したりできるようになります。
+      <application>Ntfs-3g</application> パッケージは、NTFS ファイルシステムに対するオープンソースドライバーを提供します。
+      NTFS パーティションは主に Microsoft オペレーティングシステムにおいて利用されているものです。
+      Ntfs-3g は Linux システム上から NTFS パーティションをマウントし読み書きを可能とします。
+      これは FUSE カーネルモジュールを利用して、ユーザー空間における NTFS サポートの実装を可能とします。
 @z
 
 @x
@@ -78,13 +81,13 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="fuse"/>.
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="fuse"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
       <xref linkend="fuse"/>
     </para>
 @z
@@ -154,16 +157,92 @@
 @z
 
 @x
-      <option>--with-fuse=external</option>: Ntfs-3g comes with a version of
-      Fuse which it statically compiles into <command>lowntfs-3g</command> and
-      <command>ntfs-3g</command>. If you have installed <xref linkend="fuse"/>
-      use this <option>--with-fuse=external</option> option to dynamically link
-      <command>lowntfs-3g</command> and <command>ntfs-3g</command> to libfuse.
+      <command>patch -Np1 -i ...</command>: This command applies a security
+      patch from upstream to fix ntfs-3g on systems that use setuid for the
+      executable.
 @y
-      <option>--with-fuse=external</option>: Ntfs-3g comes with a version of
-      Fuse which it statically compiles into <command>lowntfs-3g</command> and
-      <command>ntfs-3g</command>. If you have installed <xref linkend="fuse"/>
-      use this <option>--with-fuse=external</option> option to dynamically link
-      <command>lowntfs-3g</command> and <command>ntfs-3g</command> to libfuse.
+      <command>patch -Np1 -i ...</command>: This command applies a security
+      patch from upstream to fix ntfs-3g on systems that use setuid for the
+      executable.
+@z
+
+@x
+      <parameter>--with-fuse=external</parameter>: This switch dynamically
+      links <command>lowntfs-3g</command> and <command>ntfs-3g</command> to
+      external libfuse. Omit it if you have not installed <xref
+      linkend="fuse"/> or if you want to use internal statically compiled
+      libfuse.
+@y
+      <parameter>--with-fuse=external</parameter>: This switch dynamically
+      links <command>lowntfs-3g</command> and <command>ntfs-3g</command> to
+      external libfuse. Omit it if you have not installed <xref
+      linkend="fuse"/> or if you want to use internal statically compiled
+      libfuse.
+@z
+
+@x
+      <option>--disable-ntfsprogs</option>: Disables installation of various
+      utilities used to manipulate NTFS partitions.
+@y
+      <option>--disable-ntfsprogs</option>: Disables installation of various
+      utilities used to manipulate NTFS partitions.
+@z
+
+@x
+      <command>ln -sv ../bin/ntfs-3g /sbin/mount.ntfs</command>: Creating
+      /sbin/mount.ntfs makes <command>mount</command> default to using Ntfs-3g
+      to mount NTFS partitions.
+@y
+      <command>ln -sv ../bin/ntfs-3g /sbin/mount.ntfs</command>: Creating
+      /sbin/mount.ntfs makes <command>mount</command> default to using Ntfs-3g
+      to mount NTFS partitions.
+@z
+
+@x
+      <command>chmod -v 4755 /sbin/mount.ntfs</command>: Making mount.ntfs setuid
+      root allows non root users to mount NTFS partitions.
+@y
+      <command>chmod -v 4755 /sbin/mount.ntfs</command>: Making mount.ntfs setuid
+      root allows non root users to mount NTFS partitions.
+@z
+
+@x
+    <title>Using Ntfs-3g</title>
+@y
+    <title>Using Ntfs-3g</title>
+@z
+
+@x
+      To mount a Windows partition at boot time, put a line like this in
+      /etc/fstab:
+@y
+      To mount a Windows partition at boot time, put a line like this in
+      /etc/fstab:
+@z
+
+@x
+      To allow users to mount a usb stick with an NTFS filesystem on it, put a
+      line similar to this (change sdc1 to whatever a usb stick would be on your
+      system) in /etc/fstab:
+@y
+      To allow users to mount a usb stick with an NTFS filesystem on it, put a
+      line similar to this (change sdc1 to whatever a usb stick would be on your
+      system) in /etc/fstab:
+@z
+
+@x
+      In order for a user to be able to mount the usb stick, they will need
+      to be able to write to <filename class="directory">/mnt/usb</filename>,
+      so as the <systemitem class="username">root</systemitem> user:
+@y
+      In order for a user to be able to mount the usb stick, they will need
+      to be able to write to <filename class="directory">/mnt/usb</filename>,
+      so as the <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+    <title>Contents</title>
+@y
+    <title>&Contents;</title>
 @z
 

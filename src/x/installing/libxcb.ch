@@ -14,13 +14,11 @@
 @z
 
 @x
-  <!ENTITY libxcb-buildsize     "42 MB (124 MB with doxygen
-                                 generated documentation)">
-  <!ENTITY libxcb-time          "0.3 SBU (additional 0.1 to generate
-                                 API documentation)">
+  <!ENTITY libxcb-buildsize     "28 MB (with tests, add 62 MB for doxygen docs)">
+  <!ENTITY libxcb-time          "0.3 SBU (with tests, add 1.4 SBU for doxygen docs)">
 @y
-  <!ENTITY libxcb-buildsize     "42 MB (doxygen によるドキュメント生成時は 124 MB)">
-  <!ENTITY libxcb-time          "0.3 SBU (API ドキュメント生成時はさらに 0.1)">
+  <!ENTITY libxcb-buildsize     "28 MB (with tests, add 62 MB for doxygen docs)">
+  <!ENTITY libxcb-time          "0.3 SBU (with tests, add 1.4 SBU for doxygen docs)">
 @z
 
 @x
@@ -177,11 +175,11 @@
 @z
 
 @x
-    <para><command>sed -e "s/pthread-stubs//" -i configure.ac</command>: This
+    <para><command>sed "s/pthread-stubs//" -i configure</command>: This
     sed removes dependency on libpthread-stubs package which is useless on
     Linux.</para>
 @y
-    <para><command>sed -e "s/pthread-stubs//" -i configure.ac</command>:
+    <para><command>sed "s/pthread-stubs//" -i configure</command>:
     この sed コマンドは libpthread-stubs パッケージへの依存を除きます。
     これは Linux では不要なものです。
     </para>
@@ -196,24 +194,16 @@
     </para>
 @z
 
-% @x
-%     <para><parameter>--enable-xkb</parameter>: This switch enables XCB XKB
-%     extension.</para>
-% @y
-%     <para><parameter>--enable-xkb</parameter>:
-%     本スイッチは XCB の XKB 拡張を有効にします。
-%     </para>
-% @z
-
 @x
-    <para><option>--without-doxygen</option>: This switch can be used
-    to disable the API documentation if <xref linkend="doxygen"/> is
-    installed.</para>
+    <para><parameter>--without-doxygen</parameter>: Do not use doxygen to
+    generate API documentation (default: auto). Without it, if
+    <xref linkend="doxygen"/> is installed, the API documentation will be
+    generated and installed.</para>
 @y
-    <para>
-    <option>--without-doxygen</option>:
-    このスイッチは <xref linkend="doxygen"/> がインストールされていて、かつ API ドキュメントを必要としない時に指定します。
-    </para>
+    <para><parameter>--without-doxygen</parameter>: Do not use doxygen to
+    generate API documentation (default: auto). Without it, if
+    <xref linkend="doxygen"/> is installed, the API documentation will be
+    generated and installed.</para>
 @z
 
 @x
@@ -233,15 +223,39 @@
 @z
 
 @x
-        <seg>None</seg>
-        <seg>libxcb.so and libxcb-*.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/xcb and
-        <envar>$XORG_PREFIX</envar>/share/doc/libxcb-&libxcb-version;</seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          libxcb.so, libxcb-composite.so, libxcb-damage.so, libxcb-dpms.so,
+          libxcb-dri2.so, libxcb-dri3.so, libxcb-glx.so, libxcb-present.so,
+          libxcb-randr.so, libxcb-record.so, libxcb-render.so, libxcb-res.so,
+          libxcb-screensaver.so, libxcb-shape.so, libxcb-shm.so, libxcb-sync.so,
+          libxcb-xevie.so, libxcb-xf86dri.so, libxcb-xfixes.so,
+          libxcb-xinerama.so, libxcb-xinput.so, libxcb-xkb.so,
+          libxcb-xprint.so, libxcb-xtest.so, libxcb-xvmc.so, and libxcb-xv.so
+        </seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/include/xcb and
+          <envar>$XORG_PREFIX</envar>/share/doc/libxcb-&libxcb-version;
+        </seg>
 @y
-        <seg>&None;</seg>
-        <seg>libxcb.so, libxcb-*.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/include/xcb,
-        <envar>$XORG_PREFIX</envar>/share/doc/libxcb-&libxcb-version;</seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          libxcb.so, libxcb-composite.so, libxcb-damage.so, libxcb-dpms.so,
+          libxcb-dri2.so, libxcb-dri3.so, libxcb-glx.so, libxcb-present.so,
+          libxcb-randr.so, libxcb-record.so, libxcb-render.so, libxcb-res.so,
+          libxcb-screensaver.so, libxcb-shape.so, libxcb-shm.so, libxcb-sync.so,
+          libxcb-xevie.so, libxcb-xf86dri.so, libxcb-xfixes.so,
+          libxcb-xinerama.so, libxcb-xinput.so, libxcb-xkb.so,
+          libxcb-xprint.so, libxcb-xtest.so, libxcb-xvmc.so, libxcb-xv.so
+        </seg>
+        <seg>
+          <envar>$XORG_PREFIX</envar>/include/xcb,
+          <envar>$XORG_PREFIX</envar>/share/doc/libxcb-&libxcb-version;
+        </seg>
 @z
 
 @x

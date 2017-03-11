@@ -90,13 +90,13 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">Recommended (Required if building GNOME)</bridgehead>
+    <para role="recommended">
       <xref linkend="gobject-introspection"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
-    <para role="optional">
+    <bridgehead renderas="sect4">&Recommended; (GNOME のビルド時に必要)</bridgehead>
+    <para role="recommended">
       <xref linkend="gobject-introspection"/>
     </para>
 @z
@@ -167,9 +167,9 @@
 @z
 
 @x
-	<seg>
-	  None
-	</seg>
+        <seg>
+          None
+        </seg>
         <seg>
           libatk-1.0.so
         </seg>
@@ -178,9 +178,9 @@
           /usr/share/gtk-doc/html/atk
         </seg>
 @y
-	<seg>
-	  &None;
-	</seg>
+        <seg>
+          &None;
+        </seg>
         <seg>
           libatk-1.0.so
         </seg>

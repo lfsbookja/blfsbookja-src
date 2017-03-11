@@ -80,13 +80,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> and
+      <xref linkend="gtk3"/>,
+      <xref linkend="gtksourceview"/>, and
       <xref linkend="itstool"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
+      <xref linkend="gtksourceview"/>,
       <xref linkend="itstool"/>
     </para>
 @z
@@ -125,11 +127,11 @@
 @x
       To test the results, issue: <command>make check</command>. In 32bit
       systems, Number.float and Number.double tests might fail due to floating
-      point round off errors.
+      point round off errors, most probably in 32 bit systems.
 @y
       To test the results, issue: <command>make check</command>. In 32bit
       systems, Number.float and Number.double tests might fail due to floating
-      point round off errors.
+      point round off errors, most probably in 32 bit systems.
 @z
 
 @x
@@ -146,7 +148,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -159,20 +161,20 @@
           gcalccmd and gnome-calculator
         </seg>
         <seg>
-          None
+          libcalculator.so
         </seg>
         <seg>
-          /usr/share/help/*/gnome-calculator
+          /usr/{lib,share/help/*}/gnome-calculator
         </seg>
 @y
         <seg>
           gcalccmd, gnome-calculator
         </seg>
         <seg>
-          &None;
+          libcalculator.so
         </seg>
         <seg>
-          /usr/share/help/*/gnome-calculator
+          /usr/{lib,share/help/*}/gnome-calculator
         </seg>
 @z
 

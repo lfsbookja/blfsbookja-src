@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "187 MB (additional 72 MB to run the test suite)">
-  <!ENTITY glib2-time          "0.8 SBU (additional 3.1 SBU to run the test suite)">
+  <!ENTITY glib2-buildsize     "188 MB (additional 73 MB for tests)">
+  <!ENTITY glib2-time          "1.1 SBU (additional 3.2 SBU for tests)">
 @y
-  <!ENTITY glib2-buildsize     "157 MB (テストスイート実行時はさらに 72 MB)">
-  <!ENTITY glib2-time          "0.8 SBU (テストスイート実行時はさらに 3.1 SBU)">
+  <!ENTITY glib2-buildsize     "188 MB (テストスイート実行時はさらに 73 MB)">
+  <!ENTITY glib2-time          "1.1 SBU (テストスイート実行時はさらに 3.2 SBU)">
 @z
 
 @x
@@ -118,8 +118,9 @@
     <para role="optional">
       <xref linkend="dbus"/> (required for some tests),
       <xref linkend="elfutils"/>,
-      <xref linkend="gtk-doc"/>, and
-      <ulink url="ftp://oss.sgi.com/projects/fam/download/stable/">FAM library</ulink>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="ftp://oss.sgi.com/projects/fam/download/stable/">FAM library</ulink>, and
+      <ulink url="https://www.gnu.org/software/indent/">GNU Indent</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -127,13 +128,24 @@
       <xref linkend="dbus"/> (いくつかのテストにて必要),
       <xref linkend="elfutils"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="ftp://oss.sgi.com/projects/fam/download/stable/">FAM library</ulink>
+      <ulink url="ftp://oss.sgi.com/projects/fam/download/stable/">FAM library</ulink>,
+      <ulink url="https://www.gnu.org/software/indent/">GNU Indent</ulink>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Additional Runtime Dependencies</bridgehead>
-    <para role="optional">
+@y
+    <bridgehead renderas="sect4">実行時のその他の依存パッケージ</bridgehead>
+@z
+@x
+      <xref linkend="gobject-introspection"/> (should be installed before
+      gtk+, atk, etc.)
+@y
+      <xref linkend="gobject-introspection"/> (should be installed before
+      gtk+, atk, etc.)
+@z
+@x
       Quoted directly from the <filename>INSTALL</filename> file:
       <quote>Some of the mimetype-related functionality in GIO requires the
       <command>update-mime-database</command> and
@@ -141,18 +153,14 @@
       which are part of
       <xref linkend="shared-mime-info"/> and
       <xref linkend="desktop-file-utils"/>, respectively.
-    </para>
 @y
-    <bridgehead renderas="sect4">実行時のその他の依存パッケージ</bridgehead>
-    <para role="optional">
       Quoted directly from the <filename>INSTALL</filename> file:
       <quote>Some of the mimetype-related functionality in GIO requires the
       <command>update-mime-database</command> and
       <command>update-desktop-database</command> utilities</quote>,
       which are part of
-      <xref linkend="shared-mime-info"/>,
+      <xref linkend="shared-mime-info"/> and
       <xref linkend="desktop-file-utils"/>, respectively.
-    </para>
 @z
 
 @x
@@ -241,7 +249,7 @@
 
 @x
         <seg>
-          gapplication, gdbus, gdbus-codegen, gio-querymodules,
+          gapplication, gdbus, gdbus-codegen, gio, gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal, glib-gettextize, glib-mkenums,
           gobject-query, gresource, gsettings, gtester,
@@ -253,17 +261,13 @@
         </seg>
         <seg>
           /usr/include/gio-unix-2.0,
-          /usr/include/glib-2.0,
-          /usr/lib/gio,
-          /usr/lib/glib-2.0,
-          /usr/share/glib-2.0,
-          /usr/share/gtk-doc/html/gio,
-          /usr/share/gtk-doc/html/glib, and
-          /usr/share/gtk-doc/html/gobject
+          /usr/{include,lib,share}/glib-2.0,
+          /usr/lib/gio, and
+          /usr/share/gtk-doc/html/g{io,lib,object}
         </seg>
 @y
         <seg>
-          gapplication, gdbus, gdbus-codegen, gio-querymodules,
+          gapplication, gdbus, gdbus-codegen, gio, gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal, glib-gettextize, glib-mkenums,
           gobject-query, gresource, gsettings, gtester,
@@ -275,13 +279,9 @@
         </seg>
         <seg>
           /usr/include/gio-unix-2.0,
-          /usr/include/glib-2.0,
+          /usr/{include,lib,share}/glib-2.0,
           /usr/lib/gio,
-          /usr/lib/glib-2.0,
-          /usr/share/glib-2.0,
-          /usr/share/gtk-doc/html/gio,
-          /usr/share/gtk-doc/html/glib,
-          /usr/share/gtk-doc/html/gobject
+          /usr/share/gtk-doc/html/g{io,lib,object}
         </seg>
 @z
 
@@ -308,33 +308,33 @@
 @z
 
 @x gio-querymodules
-            is used to create a giomodule.cache file in the listed directories. 
-            This file lists the implemented extension points for each module
-            that has been found.
+            is used to create a <filename>giomodule.cache</filename> file in 
+            the listed directories. This file lists the implemented extension 
+            points for each module that has been found.
 @y
-            is used to create a giomodule.cache file in the listed directories. 
-            This file lists the implemented extension points for each module
-            that has been found.
+            is used to create a <filename>giomodule.cache</filename> file in 
+            the listed directories. This file lists the implemented extension 
+            points for each module that has been found.
 @z
 
 @x glib-compile-resources
-            is used to read the resource description from file and 
-            the files that it references to create a binary resource 
+            is used to read the resource description from a file and
+            the files that it references to create a binary resource
             bundle that is suitable for use with the GResource API.
 @y
-            is used to read the resource description from file and 
-            the files that it references to create a binary resource 
+            is used to read the resource description from a file and
+            the files that it references to create a binary resource
             bundle that is suitable for use with the GResource API.
 @z
 
 @x glib-compile-schemas
-            is used to compile all the GSettings XML schema files 
-            in directory into a binary file with the name gschemas.compiled 
-            that can be used by GSettings.
+            is used to compile all the GSettings XML schema files
+            in directory into a binary file with the name 
+            <filename>gschemas.compiled</filename> that can be used by GSettings.
 @y
-            is used to compile all the GSettings XML schema files 
-            in directory into a binary file with the name gschemas.compiled 
-            that can be used by GSettings.
+            is used to compile all the GSettings XML schema files
+            in directory into a binary file with the name 
+            <filename>gschemas.compiled</filename> that can be used by GSettings.
 @z
 
 @x glib-genmarshal
@@ -364,15 +364,15 @@
 @z
 
 @x gresource
-            offers a simple commandline interface to GResource.
+            offers a simple command line interface to GResource.
 @y
-            offers a simple commandline interface to GResource.
+            offers a simple command line interface to GResource.
 @z
 
 @x gsettings
-            offers a simple commandline interface to GSettings.
+            offers a simple command line interface to GSettings.
 @y
-            offers a simple commandline interface to GSettings.
+            offers a simple command line interface to GSettings.
 @z
 
 @x gtester

@@ -20,14 +20,14 @@
 @z
 
 @x
-      The <application>cURL</application> package contains a utility
+      The <application>cURL</application> package contains an utility
       and a library used for transferring files with URL syntax to any of
       the following protocols: FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP,
       TELNET, DICT, LDAP, LDAPS and FILE. Its ability to both download
       and upload files can be incorporated into other programs to support
       functions like streaming media.
 @y
-      The <application>cURL</application> package contains a utility
+      The <application>cURL</application> package contains an utility
       and a library used for transferring files with URL syntax to any of
       the following protocols: FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP,
       TELNET, DICT, LDAP, LDAPS and FILE. Its ability to both download
@@ -86,13 +86,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cacerts"/> and
+      <xref linkend="cacerts"/> (runtime) and
       <xref linkend="openssl"/> or <xref linkend="gnutls"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="cacerts"/>,
+      <xref linkend="cacerts"/> (実行時),
       <xref linkend="openssl"/> または <xref linkend="gnutls"/>
     </para>
 @z
@@ -100,26 +100,36 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libidn"/>,
       <xref linkend="mitkrb"/>,
+      <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
       <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
+      <ulink url="https://www.gnu.org/software/libidn/#libidn2/">libidn2</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="http://www.libssh2.org">libssh2</ulink>, and
+      <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
+      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
+      <ulink url="http://www.libssh2.org">libssh2</ulink>,
+      <ulink url="https://tls.mbed.org/">mbed TLS (formerly known as
+      PolarSSL)</ulink>, and
       <ulink url="http://spnego.sourceforge.net/">
       SPNEGO</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libidn"/>,
       <xref linkend="mitkrb"/>,
+      <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
       <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
+      <ulink url="https://www.gnu.org/software/libidn/#libidn2/">libidn2</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
+      <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
+      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
       <ulink url="http://www.libssh2.org">libssh2</ulink>,
+      <ulink url="https://tls.mbed.org/">mbed TLS (formerly known as
+      PolarSSL)</ulink>, and
       <ulink url="http://spnego.sourceforge.net/">
       SPNEGO</ulink>
     </para>
@@ -159,7 +169,10 @@
 @z
 
 @x
-      To run the test suite, issue: <command>make test</command>.
+      To run the test suite, issue: <command>make test</command>. <!-- Two tests,
+      1139 and 1140, may fail. Works fine for me. Douglas 20160720 --><!--  Some
+      tests (up to 2%) may fail due to timing issues, kernel configuration,
+      or other issues.-->
 @y
       ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
@@ -223,7 +236,7 @@
 
 @x
         <seg>
-           curl and curl-config
+           curl, and curl-config
         </seg>
         <seg>
            libcurl.so

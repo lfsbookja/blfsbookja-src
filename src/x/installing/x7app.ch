@@ -97,7 +97,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libpng"/>,
-      <xref linkend="mesalib"/>,
+      <xref linkend="mesa"/>,
       <xref linkend="xbitmaps"/>, and
       <xref linkend="xcb-util"/>
     </para>
@@ -105,7 +105,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libpng"/>,
-      <xref linkend="mesalib"/>,
+      <xref linkend="mesa"/>,
       <xref linkend="xbitmaps"/>,
       <xref linkend="xcb-util"/>
     </para>
@@ -113,10 +113,20 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/> and
+      both <ulink url="http://cairographics.org/releases/">cairo-5c</ulink> and
+      <ulink url="http://nickle.org/">Nickle</ulink> (only if you wish to try to
+      run the undocumented <command>xkeyhost</command> script).
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/> and
+      both <ulink url="http://cairographics.org/releases/">cairo-5c</ulink> and
+      <ulink url="http://nickle.org/">Nickle</ulink> (only if you wish to try to
+      run the undocumented <command>xkeyhost</command> script).
+    </para>
 @z
 
 @x
@@ -201,19 +211,19 @@
 @z
 
 @x
-        <seg>bdftopcf, iceauth, luit, mkfontdir, mkfontscale, sessreg,
-        setxkbmap, smproxy, test_xauth, x11perf, x11perfcomp, xauth, xbacklight,
+        <seg>iceauth, luit, mkfontdir, mkfontscale, sessreg,
+        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
-        xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkeystone, xkill,
+        xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill,
         xlsatoms, xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb,
         xrefresh, xset, xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>bdftopcf, iceauth, luit, mkfontdir, mkfontscale, sessreg,
-        setxkbmap, smproxy, test_xauth, x11perf, x11perfcomp, xauth, xbacklight,
+        <seg>iceauth, luit, mkfontdir, mkfontscale, sessreg,
+        setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
-        xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkeystone, xkill,
+        xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill,
         xlsatoms, xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb,
         xrefresh, xset, xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
         <seg>&None;</seg>
@@ -224,13 +234,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x bdftopcf
-          <para>converts an X font from Bitmap Distribution Format to Portable
-          Compiled Format.</para>
-@y
-          <para>BDF (Bitmap Distribution Format) を PCF (Portable Compiled Format) に変換します。</para>
 @z
 
 @x iceauth

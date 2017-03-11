@@ -152,10 +152,11 @@
           None
         </seg>
         <seg>
-          libical.so, libicalss.so and libicalvcal.so
+          libical_cxx.so, libical.so, libicalss_cxx.so, libicalss.so,
+          and libicalvcal.so
         </seg>
         <seg>
-          /usr/include/libical and
+          /usr/include/libical, /usr/lib/cmake/LibIcal and
           /usr/share/doc/libical-&libical-version;/html
         </seg>
 @y
@@ -163,10 +164,11 @@
           &None;
         </seg>
         <seg>
-          libical.so, libicalss.so, libicalvcal.so
+          libical_cxx.so, libical.so, libicalss_cxx.so, libicalss.so,
+          libicalvcal.so
         </seg>
         <seg>
-          /usr/include/libical,
+          /usr/include/libical, /usr/lib/cmake/LibIcal,
           /usr/share/doc/libical-&libical-version;/html
         </seg>
 @z

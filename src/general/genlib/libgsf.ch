@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libgsf-buildsize     "16 MB (with tests)">
+  <!ENTITY libgsf-buildsize     "17 MB (with tests)">
   <!ENTITY libgsf-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY libgsf-buildsize     "16 MB (テスト込み)">
+  <!ENTITY libgsf-buildsize     "17 MB (テスト込み)">
   <!ENTITY libgsf-time          "0.3 SBU (テスト込み)">
 @z
 
@@ -145,11 +145,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>. Some tests
-      may fail for unknown reasons.
+      To test the results, issue: <command>make check</command>. <!-- Two
+      tests fail for unknown reasons. -->
 @y
       ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-      テストの中には理由不明で失敗するものがあります。
 @z
 
 @x

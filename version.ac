@@ -1,9 +1,9 @@
 dnl 
 dnl  This is part of BLFSbookja package.
 dnl 
-dnl  $Author: matsuand $
-dnl  $Rev: 1018 $
-dnl  $Date:: 2015-09-26 19:53:02 +0900#$
+dnl  $Author$
+dnl  $Rev$
+dnl  $Date::                           $
 dnl
 dnl m4-include this file to define the current BLFS version
-m4_define([blfs_version], [20160828])
+m4_define([blfs_version], [20170310])

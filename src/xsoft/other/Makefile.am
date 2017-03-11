@@ -9,19 +9,24 @@ BOOKdir = @abs_bookdir@/xsoft/other
 CHANGE_FILES = \
 	balsa.ch        \
 	ekiga.ch        \
+	feh.ch          \
+	fontforge.ch    \
 	gimp.ch         \
-	gnash.ch        \
 	gparted.ch      \
+	hexchat.ch      \
 	icedtea-web.ch  \
 	inkscape.ch     \
 	other.ch        \
 	pidgin.ch       \
 	rox-filer.ch    \
         rxvt-unicode.ch \
+	tigervnc.ch     \
 	transmission.ch \
 	thunderbird.ch  \
-	xchat.ch        \
-	xdg-utils.ch
+	xdg-utils.ch    \
+	xarchiver.ch    \
+	xscreensaver.ch
+
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -34,19 +39,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-balsa.xml:        $(BOOKdir)/$@ $(srcdir)/balsa.ch
-ekiga.xml:        $(BOOKdir)/$@ $(srcdir)/ekiga.ch
-gimp.xml:         $(BOOKdir)/$@ $(srcdir)/gimp.ch
-gnash.xml:        $(BOOKdir)/$@ $(srcdir)/gnash.ch
-gparted.xml:      $(BOOKdir)/$@ $(srcdir)/gparted.ch
-icedtea-web.xml:  $(BOOKdir)/$@ $(srcdir)/icedtea-web.ch
-inkscape.xml:     $(BOOKdir)/$@ $(srcdir)/inkscape.ch
-other.xml:        $(BOOKdir)/$@ $(srcdir)/other.ch
-pidgin.xml:       $(BOOKdir)/$@ $(srcdir)/pidgin.ch
-rox-filer.xml:    $(BOOKdir)/$@ $(srcdir)/rox-filer.ch
-rxvt-unicode.xml: $(BOOKdir)/$@ $(srcdir)/rxvt-unicode.ch
-thunderbird.xml:  $(BOOKdir)/$@ $(srcdir)/thunderbird.ch
-transmission.xml: $(BOOKdir)/$@ $(srcdir)/transmission.ch
-xchat.xml:        $(BOOKdir)/$@ $(srcdir)/xchat.ch
-xdg-utils.xml:    $(BOOKdir)/$@ $(srcdir)/xdg-utils.ch

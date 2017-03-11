@@ -93,7 +93,7 @@ am__aclocal_m4_deps = $(top_srcdir)/version.ac \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
 	$(top_srcdir)/m4/ac_check_ipafontdir.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/ac_check_rev.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
@@ -129,6 +129,10 @@ AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+BASEDIR = @BASEDIR@
+BLFSFULL = @BLFSFULL@
+BLFSHTML = @BLFSHTML@
+BLFSHTML2 = @BLFSHTML2@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
@@ -137,6 +141,7 @@ CTIE = @CTIE@
 CYGPATH_W = @CYGPATH_W@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
+DUMPDIR = @DUMPDIR@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -158,6 +163,8 @@ LTLIBOBJS = @LTLIBOBJS@
 LYNX = @LYNX@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
+NOCHUNKS_NAME = @NOCHUNKS_NAME@
+NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 OBJEXT = @OBJEXT@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
@@ -168,6 +175,7 @@ PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PDF = @PDF@
+PDF_OUTPUT = @PDF_OUTPUT@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -213,6 +221,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+revspec = @revspec@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@
@@ -225,35 +234,49 @@ BOOKdir = @abs_bookdir@/general/prog
 CHANGE_FILES_pythonmodules = \
 	dbus-python.ch   \
 	py2cairo.ch      \
+	pyatspi2.ch      \
 	pycairo.ch       \
 	pygobject2.ch    \
 	pygobject3.ch    \
 	pygtk.ch         \
-	pyxdg.ch
+	pyxdg.ch         \
+	pyyaml.ch
 
 CHANGE_FILES = \
 	${CHANGE_FILES_pythonmodules} \
 	apache-ant.ch     \
+	autoconf213.ch    \
+	beaker.ch         \
 	check.ch          \
+	clisp.ch          \
 	cmake.ch          \
 	dejagnu.ch        \
 	doxygen.ch        \
 	dummy-java.ch     \
 	elfutils.ch       \
 	expect.ch         \
+	funcsigs.ch       \
 	gc.ch             \
 	gcc.ch            \
+	gcc-ada.ch        \
+	gcc-java.ch       \
 	gdb.ch            \
 	git.ch            \
 	guile.ch          \
 	java.ch           \
+	jinja2.ch         \
 	junit.ch          \
 	librep.ch         \
 	llvm.ch           \
 	lua.ch            \
+	lxml.ch           \
+	markupsafe.ch     \
+	mako.ch           \
 	mercurial.ch      \
 	nasm.ch           \
+	ninja.ch          \
 	npapi-sdk.ch      \
+	ojdk-conf.ch      \
 	openjdk.ch        \
 	other-tools.ch    \
 	perl-modules.ch   \
@@ -271,6 +294,7 @@ CHANGE_FILES = \
 	tcl.ch            \
 	tk.ch             \
 	vala.ch           \
+	valgrind.ch       \
 	yasm.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
@@ -468,54 +492,6 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-dbus-python.xml:   $(BOOKdir)/$@ $(srcdir)/dbus-python.ch
-py2cairo.xml:      $(BOOKdir)/$@ $(srcdir)/py2cairo.ch
-pycairo.xml:       $(BOOKdir)/$@ $(srcdir)/pycairo.ch
-pygobject2.xml:    $(BOOKdir)/$@ $(srcdir)/pygobject2.ch
-pygobject3.xml:    $(BOOKdir)/$@ $(srcdir)/pygobject3.ch
-pygtk.xml:         $(BOOKdir)/$@ $(srcdir)/pygtk.ch
-pyxdg.xml:         $(BOOKdir)/$@ $(srcdir)/pyxdg.ch
-
-apache-ant.xml:     $(BOOKdir)/$@ $(srcdir)/apache-ant.ch
-check.xml:          $(BOOKdir)/$@ $(srcdir)/check.ch
-cmake.xml:          $(BOOKdir)/$@ $(srcdir)/cmake.ch
-dejagnu.xml:        $(BOOKdir)/$@ $(srcdir)/dejagnu.ch
-doxygen.xml:        $(BOOKdir)/$@ $(srcdir)/doxygen.ch
-dummy-java.xml:     $(BOOKdir)/$@ $(srcdir)/dummy-java.ch
-elfutils.xml:       $(BOOKdir)/$@ $(srcdir)/elfutils.ch
-expect.xml:         $(BOOKdir)/$@ $(srcdir)/expect.ch
-gc.xml:             $(BOOKdir)/$@ $(srcdir)/gc.ch
-gcc.xml:            $(BOOKdir)/$@ $(srcdir)/gcc.ch
-gdb.xml:            $(BOOKdir)/$@ $(srcdir)/gdb.ch
-git.xml:            $(BOOKdir)/$@ $(srcdir)/git.ch
-guile.xml:          $(BOOKdir)/$@ $(srcdir)/guile.ch
-java.xml:           $(BOOKdir)/$@ $(srcdir)/java.ch
-junit.xml:          $(BOOKdir)/$@ $(srcdir)/junit.ch
-librep.xml:         $(BOOKdir)/$@ $(srcdir)/librep.ch
-llvm.xml:           $(BOOKdir)/$@ $(srcdir)/llvm.ch
-lua.xml:            $(BOOKdir)/$@ $(srcdir)/lua.ch
-mercurial.xml:      $(BOOKdir)/$@ $(srcdir)/mercurial.ch
-nasm.xml:           $(BOOKdir)/$@ $(srcdir)/nasm.ch
-npapi-sdk.xml:      $(BOOKdir)/$@ $(srcdir)/npapi-sdk.ch
-openjdk.xml:        $(BOOKdir)/$@ $(srcdir)/openjdk.ch
-other-tools.xml:    $(BOOKdir)/$@ $(srcdir)/other-tools.ch
-perl-modules.xml:   $(BOOKdir)/$@ $(srcdir)/perl-modules.ch
-php.xml:            $(BOOKdir)/$@ $(srcdir)/php.ch
-prog.xml:           $(BOOKdir)/$@ $(srcdir)/prog.ch
-python-modules.xml: $(BOOKdir)/$@ $(srcdir)/python-modules.ch
-python2.xml:        $(BOOKdir)/$@ $(srcdir)/python2.ch
-python3.xml:        $(BOOKdir)/$@ $(srcdir)/python3.ch
-ruby.xml:           $(BOOKdir)/$@ $(srcdir)/ruby.ch
-scons.xml:          $(BOOKdir)/$@ $(srcdir)/scons.ch
-slang.xml:          $(BOOKdir)/$@ $(srcdir)/slang.ch
-subversion.xml:     $(BOOKdir)/$@ $(srcdir)/subversion.ch
-svnserver.xml:      $(BOOKdir)/$@ $(srcdir)/svnserver.ch
-swig.xml:           $(BOOKdir)/$@ $(srcdir)/swig.ch
-tcl.xml:            $(BOOKdir)/$@ $(srcdir)/tcl.ch
-tk.xml:             $(BOOKdir)/$@ $(srcdir)/tk.ch
-vala.xml:           $(BOOKdir)/$@ $(srcdir)/vala.ch
-yasm.xml:           $(BOOKdir)/$@ $(srcdir)/yasm.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

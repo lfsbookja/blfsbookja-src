@@ -130,25 +130,25 @@
 
 @x
     <para><command>sed -i ... termcap</command>,
-    <command>echo ... >> terminfo</command>: These commands modify the terminal
-    description, so that the Backspace key is expected to send the character
-    with ASCII code 127, for consistency with the Linux console.</para>
+    <command>printf ... >> terminfo</command>: These commands modify the terminal
+    description so that the Backspace key is expected to send the character
+    with ASCII code 127. This is done for consistency with the Linux console.</para>
 @y
     <para>
     <command>sed -i ... termcap</command>,
-    <command>echo ... >> terminfo</command>:
+    <command>printf ... >> terminfo</command>:
     このコマンドは端末記述 (terminal description) を修正します。
     これはバックスペースキーが ASCII コードの 127 を送信するようにするもので Linux コンソールとして一貫したものとします。
     </para>
 @z
 
 @x
-    <para><parameter>TERMINFO=/usr/share/terminfo</parameter>: This ensures
+    <para><envar>TERMINFO=/usr/share/terminfo</envar>: This ensures
     that the <command>xterm</command> terminfo files are installed to the
     system terminfo database.</para>
 @y
     <para>
-    <parameter>TERMINFO=/usr/share/terminfo</parameter>:
+    <envar>TERMINFO=/usr/share/terminfo</envar>:
     <command>xterm</command> の terminfo ファイルをシステム terminfo データベースにインストールするようにします。
     </para>
 @z
@@ -182,7 +182,7 @@
 @z
 
 @x
-    <para>There are two ways to configure xterm.  You can add X resource
+    <para>There are two ways to configure xterm.  You can add the X resource
     definitions to the user's <filename>~/.Xresources</filename> file, or
     add them to the system-wide
     <filename>$XORG_PREFIX/share/X11/app-defaults/Xterm</filename> file.</para>
@@ -258,8 +258,8 @@
 @z
 
 @x uxterm
-          <para>is a wrapper script that modifies the current locale to use UTF-8
-          and starts xterm with the proper settings.</para>
+          <para>is a wrapper script that modifies the current locale to use
+          UTF-8 and starts xterm with the proper settings.</para>
 @y
           <para>
           ロケールを UTF-8 に変更して xterm を起動するためのラッパースクリプト。

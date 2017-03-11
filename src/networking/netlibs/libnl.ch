@@ -131,9 +131,20 @@
 
 @x
         <seg>
-          genl-ctrl-list, nl-class-add, nl-class-delete, nl-classid-lookup,
-          nl-class-list, nl-cls-add, nl-cls-delete, nl-cls-list, nl-link-list,
-          nl-pktloc-lookup, nl-qdisc-add, nl-qdisc-delete, and nl-qdisc-list
+          genl-ctrl-list,
+          idiag-socket-details,
+          nl-class-add,
+          nl-class-delete,
+          nl-classid-lookup,
+          nl-class-list,
+          nl-cls-add,
+          nl-cls-delete,
+          nl-cls-list,
+          nl-link-list,
+          nl-pktloc-lookup,
+          nl-qdisc-add,
+          nl-qdisc-delete,
+          nl-qdisc-list, and 32 other helper programs with nl- and nf- prefixes
         </seg>
         <seg>
           libnl-3.so,
@@ -141,7 +152,8 @@
           libnl-genl-3.so,
           libnl-idiag-3.so,
           libnl-nf-3.so,
-          libnl-route-3.so, and
+          libnl-route-3.so,
+          libnl-xfrm-3.so, and
           cli modules under /usr/lib/libnl/cli tree
         </seg>
         <seg>
@@ -152,9 +164,20 @@
         </seg>
 @y
         <seg>
-          genl-ctrl-list, nl-class-add, nl-class-delete, nl-classid-lookup,
-          nl-class-list, nl-cls-add, nl-cls-delete, nl-cls-list, nl-link-list,
-          nl-pktloc-lookup, nl-qdisc-add, nl-qdisc-delete, nl-qdisc-list
+          genl-ctrl-list,
+          idiag-socket-details,
+          nl-class-add,
+          nl-class-delete,
+          nl-classid-lookup,
+          nl-class-list,
+          nl-cls-add,
+          nl-cls-delete,
+          nl-cls-list,
+          nl-link-list,
+          nl-pktloc-lookup,
+          nl-qdisc-add,
+          nl-qdisc-delete,
+          nl-qdisc-list, and 32 other helper programs with nl- and nf- prefixes
         </seg>
         <seg>
           libnl-3.so,
@@ -163,12 +186,13 @@
           libnl-idiag-3.so,
           libnl-nf-3.so,
           libnl-route-3.so,
-          /usr/lib/libnl/cli 配下に cli モジュール
+          libnl-xfrm-3.so, and
+          cli modules under /usr/lib/libnl/cli tree
         </seg>
         <seg>
           /etc/libnl,
           /usr/include/libnl3,
-          /usr/lib/libnl,
+          /usr/lib/libnl, and
           /usr/share/doc/libnl-&libnl-version;
         </seg>
 @z

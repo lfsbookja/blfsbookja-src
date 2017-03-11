@@ -89,20 +89,24 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libxml2"/> and
-    <xref linkend="unzip"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/>,
+      <xref linkend="sgml-common"/>, and
+      <xref linkend="unzip"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libxml2"/>,
-    <xref linkend="unzip"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/>,
+      <xref linkend="sgml-common"/>,
+      <xref linkend="unzip"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/docbook"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/docbook"/></para>
 @z
 
 @x

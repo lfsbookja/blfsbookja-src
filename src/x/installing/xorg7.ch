@@ -136,16 +136,16 @@
   user that will be building the xorg packages.</para>
 @z
 
-@x
-  <para>The above shell will exit immediately on error.  If it runs to
-  completion, you should manually exit the shell before continuing on to
-  the next set of instructions.</para>
-@y
-  <para>
-  上のシェルスクリプトはエラーがあれば直ちに終了します。
-  処理を成功させるには、手動でシェルスクリプトを停止させ、後続の実行コマンドを実行させる必要があります。
-  </para>
-@z
+%@x
+%  <para>The above shell will exit immediately on error.  If it runs to
+%  completion, you should manually exit the shell before continuing on to
+%  the next set of instructions.</para>
+%@y
+%  <para>
+%  上のシェルスクリプトはエラーがあれば直ちに終了します。
+%  処理を成功させるには、手動でシェルスクリプトを停止させ、後続の実行コマンドを実行させる必要があります。
+%  </para>
+%@z
 
 @x
     <title>Setting up the Xorg Build Environment</title>
@@ -246,9 +246,18 @@
 % @z
 
 @x
-    <para>If you've decided to use the standard <filename
+    <note><para>If you've decided to use the standard <filename
     class="directory">/usr</filename> prefix, you can omit the remainder of
-    this page. Otherwise, be sure to add <filename
+    this page and continue at <xref linkend='util-macros'/>.</para></note>
+@y
+    <note><para>If you've decided to use the standard <filename
+    class="directory">/usr</filename> prefix, you can omit the remainder of
+    this page and continue at <xref linkend='util-macros'/>.</para></note>
+@z
+
+@x
+    <para>If you've decided to <emphasis>not</emphasis> use the standard
+    prefix, be sure to add <filename
     class="directory">$XORG_PREFIX/bin</filename> to your <envar>PATH</envar>
     environment variable, and <filename class="directory">
     $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">
@@ -258,9 +267,8 @@
     for the <command>aclocal</command> program.  Issue the following commands
     as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>If you've decided to use the standard <filename
-    class="directory">/usr</filename> prefix, you can omit the remainder of
-    this page. Otherwise, be sure to add <filename
+    <para>If you've decided to <emphasis>not</emphasis> use the standard
+    prefix, be sure to add <filename
     class="directory">$XORG_PREFIX/bin</filename> to your <envar>PATH</envar>
     environment variable, and <filename class="directory">
     $XORG_PREFIX/lib/pkgconfig</filename> and <filename class="directory">

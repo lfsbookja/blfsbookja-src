@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY libgpg-error-time          "less than 0.1 SBU">
+  <!ENTITY libgpg-error-buildsize     "7.8 MB (with tests)">
+  <!ENTITY libgpg-error-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libgpg-error-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY libgpg-error-buildsize     "7.8 MB (テスト込み)">
+  <!ENTITY libgpg-error-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x
@@ -107,12 +109,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -136,7 +132,8 @@
           libgpg-error.so
         </seg>
         <seg>
-          /usr/share/common-lisp/source/gpg-error and
+          /usr/share/common-lisp/source/gpg-error,
+          /usr/share/libgpg-error, and
           /usr/share/doc/libgpg-error-&libgpg-error-version;
         </seg>
 @y
@@ -148,6 +145,7 @@
         </seg>
         <seg>
           /usr/share/common-lisp/source/gpg-error,
+          /usr/share/libgpg-error,
           /usr/share/doc/libgpg-error-&libgpg-error-version;
         </seg>
 @z

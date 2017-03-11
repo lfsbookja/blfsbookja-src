@@ -20,8 +20,8 @@
 @z
 
 @x
-      The <application>Guile</application> package contains the Project
-      GNU's extension language library. <application>Guile</application> also
+      The <application>Guile</application> package contains the GNU Project's
+      extension language library. <application>Guile</application> also
       contains a stand alone <application>Scheme</application> interpreter.
 @y
       <application>Guile</application> パッケージは GNU プロジェクトの拡張言語ライブラリ (extension language library) です。
@@ -126,9 +126,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      <!--To test the results, issue: <command>make check</command>.-->
+      This package does not come with a test suite.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      &notTestSuite;
 @z
 
 @x

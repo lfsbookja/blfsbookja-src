@@ -7,16 +7,17 @@
 ##
 BOOKdir = @abs_bookdir@/postlfs/config
 CHANGE_FILES = \
-	bootdisk.ch    \
-	config.ch      \
-	devices.ch     \
-	etcshells.ch   \
-	logon.ch       \
-	lsb-release.ch \
-	profile.ch     \
-	random.ch      \
-	skel.ch        \
-	users.ch       \
+	bootdisk.ch      \
+	config.ch        \
+        console-fonts.ch \
+	devices.ch       \
+	firmware.ch      \
+	logon.ch         \
+	lsb-release.ch   \
+	profile.ch       \
+	random.ch        \
+	skel.ch          \
+	users.ch         \
 	vimrc.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
@@ -31,15 +32,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-bootdisk.xml:    $(BOOKdir)/$@ $(srcdir)/bootdisk.ch
-config.xml:      $(BOOKdir)/$@ $(srcdir)/config.ch
-devices.xml:     $(BOOKdir)/$@ $(srcdir)/devices.ch
-etcshells.xml:   $(BOOKdir)/$@ $(srcdir)/etcshells.ch
-logon.xml:       $(BOOKdir)/$@ $(srcdir)/logon.ch
-lsb-release.xml: $(BOOKdir)/$@ $(srcdir)/lsb-release.ch
-profile.xml:     $(BOOKdir)/$@ $(srcdir)/profile.ch
-random.xml:      $(BOOKdir)/$@ $(srcdir)/random.ch
-skel.xml:        $(BOOKdir)/$@ $(srcdir)/skel.ch
-users.xml:       $(BOOKdir)/$@ $(srcdir)/users.ch
-vimrc.xml:       $(BOOKdir)/$@ $(srcdir)/vimrc.ch

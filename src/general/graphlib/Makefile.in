@@ -93,7 +93,7 @@ am__aclocal_m4_deps = $(top_srcdir)/version.ac \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
 	$(top_srcdir)/m4/ac_check_ipafontdir.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/ac_check_rev.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
@@ -129,6 +129,10 @@ AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+BASEDIR = @BASEDIR@
+BLFSFULL = @BLFSFULL@
+BLFSHTML = @BLFSHTML@
+BLFSHTML2 = @BLFSHTML2@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
@@ -137,6 +141,7 @@ CTIE = @CTIE@
 CYGPATH_W = @CYGPATH_W@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
+DUMPDIR = @DUMPDIR@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -158,6 +163,8 @@ LTLIBOBJS = @LTLIBOBJS@
 LYNX = @LYNX@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
+NOCHUNKS_NAME = @NOCHUNKS_NAME@
+NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 OBJEXT = @OBJEXT@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
@@ -168,6 +175,7 @@ PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PDF = @PDF@
+PDF_OUTPUT = @PDF_OUTPUT@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -213,6 +221,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+revspec = @revspec@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@
@@ -242,10 +251,14 @@ CHANGE_FILES = \
 	libjpeg-turbo.ch \
 	libmng.ch        \
 	libpng.ch        \
+	libraw.ch        \
 	librsvg.ch       \
 	libtiff.ch       \
 	libwebp.ch       \
+	newt.ch          \
+	opencv.ch        \
 	openjpeg.ch      \
+	openjpeg2.ch     \
 	pixman.ch        \
 	poppler.ch       \
 	qpdf.ch
@@ -445,33 +458,6 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-aalib.xml:         $(BOOKdir)/$@ $(srcdir)/aalib.ch
-babl.xml:          $(BOOKdir)/$@ $(srcdir)/babl.ch
-exiv2.xml:         $(BOOKdir)/$@ $(srcdir)/exiv2.ch
-fontconfig.xml:    $(BOOKdir)/$@ $(srcdir)/fontconfig.ch
-freetype2.xml:     $(BOOKdir)/$@ $(srcdir)/freetype2.ch
-fribidi.xml:       $(BOOKdir)/$@ $(srcdir)/fribidi.ch
-harfbuzz.xml:      $(BOOKdir)/$@ $(srcdir)/harfbuzz.ch
-gegl.xml:          $(BOOKdir)/$@ $(srcdir)/gegl.ch
-giflib.xml:        $(BOOKdir)/$@ $(srcdir)/giflib.ch
-graphite2.xml:     $(BOOKdir)/$@ $(srcdir)/graphite2.ch
-graphlib.xml:      $(BOOKdir)/$@ $(srcdir)/graphlib.ch
-ijs.xml:           $(BOOKdir)/$@ $(srcdir)/ijs.ch
-jasper.xml:        $(BOOKdir)/$@ $(srcdir)/jasper.ch
-lcms.xml:          $(BOOKdir)/$@ $(srcdir)/lcms.ch
-lcms2.xml:         $(BOOKdir)/$@ $(srcdir)/lcms2.ch
-libexif.xml:       $(BOOKdir)/$@ $(srcdir)/libexif.ch
-libjpeg-turbo.xml: $(BOOKdir)/$@ $(srcdir)/libjpeg-turbo.ch
-libmng.xml:        $(BOOKdir)/$@ $(srcdir)/libmng.ch
-libpng.xml:        $(BOOKdir)/$@ $(srcdir)/libpng.ch
-librsvg.xml:       $(BOOKdir)/$@ $(srcdir)/librsvg.ch
-libtiff.xml:       $(BOOKdir)/$@ $(srcdir)/libtiff.ch
-libwebp.xml:       $(BOOKdir)/$@ $(srcdir)/libwebp.ch
-openjpeg.xml:      $(BOOKdir)/$@ $(srcdir)/openjpeg.ch
-pixman.xml:        $(BOOKdir)/$@ $(srcdir)/pixman.ch
-poppler.xml:       $(BOOKdir)/$@ $(srcdir)/poppler.ch
-qpdf.xml:          $(BOOKdir)/$@ $(srcdir)/qpdf.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

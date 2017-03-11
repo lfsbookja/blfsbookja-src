@@ -93,14 +93,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/> and
-      <xref linkend="texlive"/>
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
       (specifically, pdflatex and htlatex) to build the PDF documentation
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      <xref linkend="texlive"/>
+      <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
       (特に pdflatex と htlatexにより) PDF ドキュメント生成のために必要
     </para>
 @z

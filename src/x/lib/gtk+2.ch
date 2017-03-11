@@ -145,7 +145,7 @@
       must run the tests from a session with X Window Display capability (i.e.,
       not a text-based terminal/console) as the tests attempt to open an X
       window, and the tests can take an excessively long time. Using an X
-      Window, the tests should take less than 0.3 SBUs
+      Window, the tests should take less than 0.3 SBU.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       テストを実施する場合は X ウィンドウシステム内にて行う必要があります。
@@ -194,19 +194,6 @@
 @z
 
 @x
-      <command>sed -i 's#.*@man_#man_#' docs/reference/gtk/Makefile.in</command>:
-      This <command>sed</command> fixes one of the <filename>Makefile</filename>s
-      so it installs the man pages for <command>gtk-builder-convert</command>,
-      <command>gtk-query-immodules-2.0</command>, and
-      <command>gtk-update-icon-cache</command>.
-@y
-      <command>sed -i 's#.*@man_#man_#' docs/reference/gtk/Makefile.in</command>:
-      この <command>sed</command> 処理は <command>gtk-builder-convert</command>, 
-      <command>gtk-query-immodules-2.0</command>, 
-      <command>gtk-update-icon-cache</command> の各 man ページを正しくインストールするように <filename>Makefile</filename> を修正するものです。
-@z
-
-@x
     <title>Configuring GTK+ 2</title>
 @y
     <title>&Configuring1;GTK+ 2&Configuring2;</title>
@@ -240,10 +227,10 @@
         <application>GTK+ 2</application> icon theme can be used to change the
         icons that appear on the application's toolbar. If you have installed a
         <application>GTK+ 2</application> theme (such as <ulink
-        url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink>
-        (requires <xref linkend="gtk-engines"/>)) or a
-        <application>GTK+ 2</application> icon theme (such as
-        <xref linkend="gnome-icon-theme"/>) you can set your preferences in
+        url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink> or
+        <xref linkend="gtk-engines"/>), a
+        <application>GTK+</application> icon theme (such as <xref
+        linkend="adwaita-icon-theme"/>) you can set your preferences in
         <filename>~/.gtkrc-2.0</filename>:
 @y
         <application>GTK+ 2</application> themes change the way a
@@ -251,10 +238,10 @@
         <application>GTK+ 2</application> icon theme can be used to change the
         icons that appear on the application's toolbar. If you have installed a
         <application>GTK+ 2</application> theme (such as <ulink
-        url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink>
-        (requires <xref linkend="gtk-engines"/>)) or a
-        <application>GTK+ 2</application> icon theme (such as
-        <xref linkend="gnome-icon-theme"/>) you can set your preferences in
+        url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink> or
+        <xref linkend="gtk-engines"/>), a
+        <application>GTK+</application> icon theme (such as <xref
+        linkend="adwaita-icon-theme"/>) you can set your preferences in
         <filename>~/.gtkrc-2.0</filename>:
 @z
 
@@ -306,14 +293,14 @@
           gtk-update-icon-cache
         </seg>
         <seg>
-          libgailutil.so, libgdk-x11-2.0.so, and
-          libgtk-x11-2.0.so
+          libgailutil.so, libgdk-x11-2.0.so, and libgtk-x11-2.0.so
         </seg>
         <seg>
           /etc/gtk-2.0,
           /usr/include/{gail-1.0,gtk-2.0,gtk-unix-print-2.0},
           /usr/lib/gtk-2.0,
           /usr/share/doc/gtk+-&gtk2-version;,
+          /usr/share/gtk-2.0,
           /usr/share/gtk-doc/html/{gail-libgail-util,gdk2,gtk2}, and
           /usr/share/themes/{Default,Emacs,Raleigh}
         </seg>
@@ -323,14 +310,14 @@
           gtk-update-icon-cache
         </seg>
         <seg>
-          libgailutil.so, libgdk-x11-2.0.so,
-          libgtk-x11-2.0.so
+          libgailutil.so, libgdk-x11-2.0.so, libgtk-x11-2.0.so
         </seg>
         <seg>
           /etc/gtk-2.0,
           /usr/include/{gail-1.0,gtk-2.0,gtk-unix-print-2.0},
           /usr/lib/gtk-2.0,
           /usr/share/doc/gtk+-&gtk2-version;,
+          /usr/share/gtk-2.0,
           /usr/share/gtk-doc/html/{gail-libgail-util,gdk2,gtk2},
           /usr/share/themes/{Default,Emacs,Raleigh}
         </seg>
@@ -367,9 +354,15 @@
 @z
 
 @x gtk-update-icon-cache
-            creates mmap()able cache files for icon themes.
+            creates mmap()able cache files for icon themes. Starting with
+            <application>gtk+-2.24.24</application>, add the flag
+            <quote>--include-image-data</quote> to this command, if you wish
+            previous behavior, with image data in the cache.
 @y
-            creates mmap()able cache files for icon themes.
+            creates mmap()able cache files for icon themes. Starting with
+            <application>gtk+-2.24.24</application>, add the flag
+            <quote>--include-image-data</quote> to this command, if you wish
+            previous behavior, with image data in the cache.
 @z
 
 @x libgdk-x11-2.0.so

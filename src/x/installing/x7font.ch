@@ -42,12 +42,17 @@
 @z
 
 @x
-    <para>The <application>Xorg</application> font packages provide
-    needed fonts to the <application>Xorg</application> applications.</para>
+    <para>The <application>Xorg</application> font packages provide some
+    scalable fonts and supporting packages for <application>Xorg</application>
+    applications. Many people will want to install other TTF or OTF fonts in
+    addition to, or instead of, these. Some are listed at <xref
+    linkend="TTF-and-OTF-fonts"/>.</para>
 @y
-    <para>
-    <application>Xorg</application> フォントパッケージは <application>Xorg</application> アプリケーションにて必要となるフォントを提供します。
-    </para>
+    <para>The <application>Xorg</application> font packages provide some
+    scalable fonts and supporting packages for <application>Xorg</application>
+    applications. Many people will want to install other TTF or OTF fonts in
+    addition to, or instead of, these. Some are listed at <xref
+    linkend="TTF-and-OTF-fonts"/>.</para>
 @z
 
 @x

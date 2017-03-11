@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libdrm-buildsize     "11 MB (additional 1 MB for the tests)">
-  <!ENTITY libdrm-time          "0.3 SBU (additional 0.1 SBU for the tests)">
+  <!ENTITY libdrm-buildsize     "15 MB (add 0.5 MB for the tests)">
+  <!ENTITY libdrm-time          "0.3 SBU (add 0.8 SBU for the tests)">
 @y
-  <!ENTITY libdrm-buildsize     "11 MB (テスト実行時はさらに 1 MB)">
-  <!ENTITY libdrm-time          "0.3 SBU (テスト実行時はさらに 0.1 SBU)">
+  <!ENTITY libdrm-buildsize     "15 MB (テスト実行時はさらに 0.5 MB)">
+  <!ENTITY libdrm-time          "0.3 SBU (テスト実行時はさらに 0.8 SBU)">
 @z
 
 @x
@@ -113,18 +113,22 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="cairo"/> (for tests),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/> and
-      <xref linkend="libxslt"/> (to build manual pages) and
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+      <xref linkend="libxslt"/> (to build manual pages),
+      <xref linkend="valgrind"/>, and
+      <ulink url="http://cunit.sourceforge.net/">CUNIT</ulink> (for AMDGPU tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="cairo"/> (テストのため),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="libxslt"/> (man ページ生成のため),
-      <ulink url="http://www.valgrind.org/">Valgrind</ulink>
+      <xref linkend="valgrind"/>,
+      <ulink url="http://cunit.sourceforge.net/">CUNIT</ulink> (for AMDGPU tests)
     </para>
 @z
 
@@ -148,9 +152,16 @@
 @z
 
 @x
-      To check the results, issue <command>make check</command>.
+      To check the results, issue <command>make check</command>. Tests may hang
+      for unknown reasons. If nouveau threaded test hangs, you can disable it
+      with
+      <command>sed -i 's/^TESTS/#&amp;/' tests/nouveau/Makefile.in</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      Tests may hang
+      for unknown reasons. If nouveau threaded test hangs, you can disable it
+      with
+      <command>sed -i 's/^TESTS/#&amp;/' tests/nouveau/Makefile.in</command>.
 @z
 
 @x
@@ -163,16 +174,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>sed -e "/pthread-stubs/d" -i configure.ac</command>:
-      This sed removes dependency on libpthread-stubs package
-      which is useless on Linux.
-@y
-      <command>sed -e "/pthread-stubs/d" -i configure.ac</command>:
-      この sed コマンドは libpthread-stubs パッケージへの依存箇所を取り除くものです。
-      libpthread-stubs は Linux においては無用なものです。
 @z
 
 @x
@@ -204,24 +205,22 @@
           None
         </seg>
         <seg>
-          libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
-          libdrm_radeon.so and libkms.so
+          libdrm_amdgpu.so, libdrm_intel.so, libdrm_nouveau.so,
+          libdrm_radeon.so, libdrm.so, and libkms.so
         </seg>
         <seg>
-          /usr/include/libdrm and
-          /usr/include/libkms
+          /usr/include/lib{drm,kms}
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libdrm.so, libdrm_intel.so, libdrm_nouveau.so,
-          libdrm_radeon.so, libkms.so
+          libdrm_amdgpu.so, libdrm_intel.so, libdrm_nouveau.so,
+          libdrm_radeon.so, libdrm.so, and libkms.so
         </seg>
         <seg>
-          /usr/include/libdrm,
-          /usr/include/libkms
+          /usr/include/lib{drm,kms}
         </seg>
 @z
 
@@ -235,27 +234,6 @@
             contains the Direct Rendering Manager API functions.
 @y
             ダイレクトレンダリングモジュール (Direct Rendering Module) の API 関数を提供します。
-@z
-
-@x libdrm_intel.so
-            contains the Intel specific Direct Rendering Manager
-            functions.
-@y
-            Intel に固有のダイレクトレンダリングモジュールを提供します。
-@z
-
-@x libdrm_nouveau.so
-            contains the open source nVidia (Nouveau) specific Direct
-            Rendering Manager functions.
-@y
-            nVidia (Nouveau) に固有のダイレクトレンダリングモジュールを提供します。
-@z
-
-@x libdrm_radeon.so
-            contains the AMD Radeon specific Direct Rendering Manager
-            functions.
-@y
-            AMD Radeon に固有のダイレクトレンダリングモジュールを提供します。
 @z
 
 @x libkms.so

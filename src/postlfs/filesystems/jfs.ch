@@ -94,14 +94,6 @@
 @z
 
 @x
-<screen><literal>File Systems:
-  JFS filesystem support: M or Y</literal></screen>
-@y
-<screen><literal>File Systems:
-  JFS filesystem support: M または Y</literal></screen>
-@z
-
-@x
     <indexterm zone="jfsutils jfsutils-kernel">
       <primary sortas="d-jfsutils">JFS Utilities</primary>
     </indexterm>

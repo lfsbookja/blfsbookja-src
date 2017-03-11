@@ -150,11 +150,11 @@
 @x
       If you have followed the instructions in <xref linkend="ojdk-conf"/>,
       there is nothing more to do: the <envar>CLASSPATH</envar> variable
-      whould be automatically updated.
+      would be automatically updated.
 @y
       If you have followed the instructions in <xref linkend="ojdk-conf"/>,
       there is nothing more to do: the <envar>CLASSPATH</envar> variable
-      whould be automatically updated.
+      would be automatically updated.
 @z
 
 @x

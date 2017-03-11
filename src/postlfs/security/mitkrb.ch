@@ -86,20 +86,24 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (required to run the testsuite),
+      <xref linkend="dejagnu"/> (for full test coverage),
+      <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="python2"/> (used during the testsuite) and
-      <xref linkend="rpcbind"/> (used during the testsuite)
+      <xref linkend="python2"/> (used during the testsuite),
+      <xref linkend="rpcbind"/> (used during the testsuite), and
+      <xref linkend="valgrind"/> (used during the test suite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (テストスイート実行時に必要),
+      <xref linkend="dejagnu"/> (全テストの実行に必要),
+      <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,
       <xref linkend="python2"/> (テストスイート実行時に必要),
-      <xref linkend="rpcbind"/> (テストスイート実行時に必要)
+      <xref linkend="rpcbind"/> (テストスイート実行時に必要),
+      <xref linkend="valgrind"/> (テストスイート実行時に必要)
     </para>
 @z
 
@@ -128,32 +132,6 @@
 @z
 
 @x
-      <application>MIT Kerberos V5</application> is distributed in a
-      TAR file containing a compressed TAR package and a detached PGP
-      <filename class="extension">ASC</filename> file. You'll need to unpack
-      the distribution tar file, then unpack the compressed tar file before
-      starting the build.
-@y
-      <application>MIT Kerberos V5</application> is distributed in a
-      TAR file containing a compressed TAR package and a detached PGP
-      <filename class="extension">ASC</filename> file. You'll need to unpack
-      the distribution tar file, then unpack the compressed tar file before
-      starting the build.
-@z
-
-@x
-      After unpacking the distribution tarball and if you have
-      <xref linkend="gnupg2"/> installed, you can
-      authenticate the package.  First, check the contents of the file
-      <filename>krb5-&mitkrb-version;.tar.gz.asc</filename>.
-@y
-      After unpacking the distribution tarball and if you have
-      <xref linkend="gnupg2"/> installed, you can
-      authenticate the package.  First, check the contents of the file
-      <filename>krb5-&mitkrb-version;.tar.gz.asc</filename>.
-@z
-
-@x
       Build <application>MIT Kerberos V5</application> by running the
       following commands:
 @y
@@ -161,10 +139,23 @@
 @z
 
 @x
-      The regression test suite is designed to be run after the
-      installation has been completed.
+      To test the build, issue as the <systemitem
+      class="username">root</systemitem> user: <command>make check</command>.
+      You need at least <xref linkend="tcl"/>, which is used to drive the
+      testsuite.  Furthermore, <xref linkend="dejagnu"/> must be available for
+      some of the tests to run. If you have a former version of MIT Kerberos V5
+      installed, it may happen that the test suite pick up the installed
+      versions of the libraries, rather than the newly built ones. If so, it is
+      better to run the tests after the installation.
 @y
-      縮退テスト (regression test suite) は、インストール後に実行するものとなります。
+      To test the build, issue as the <systemitem
+      class="username">root</systemitem> user: <command>make check</command>.
+      You need at least <xref linkend="tcl"/>, which is used to drive the
+      testsuite.  Furthermore, <xref linkend="dejagnu"/> must be available for
+      some of the tests to run. If you have a former version of MIT Kerberos V5
+      installed, it may happen that the test suite pick up the installed
+      versions of the libraries, rather than the newly built ones. If so, it is
+      better to run the tests after the installation.
 @z
 
 @x
@@ -174,26 +165,32 @@
 @z
 
 @x
-      To test the installation, you must have <xref linkend="dejagnu"/>
-      installed and issue: <command>make check</command>.
-@y
-      To test the installation, you must have <xref linkend="dejagnu"/>
-      installed and issue: <command>make check</command>.
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
 @z
 
 @x
-      <parameter>--localstatedir=/var/lib</parameter>: This parameter is
+      <command>sed -e ...</command>: The first <command>sed</command> fixes
+      <application>Python</application> detection. The second one increases
+      the width of the virtual terminal used for some tests to prevent
+      some spurious text in the output which is taken as a failure. The
+      third <command>sed</command> removes a test that is known to fail.
+@y
+      <command>sed -e ...</command>: The first <command>sed</command> fixes
+      <application>Python</application> detection. The second one increases
+      the width of the virtual terminal used for some tests to prevent
+      some spurious text in the output which is taken as a failure. The
+      third <command>sed</command> removes a test that is known to fail.
+@z
+
+@x
+      <parameter>--localstatedir=/var/lib</parameter>: This option is
       used so that the Kerberos variable run-time data is located in
       <filename class="directory">/var/lib</filename> instead of
       <filename class="directory">/usr/var</filename>.
 @y
-      <parameter>--localstatedir=/var/lib</parameter>: This parameter is
+      <parameter>--localstatedir=/var/lib</parameter>: This option is
       used so that the Kerberos variable run-time data is located in
       <filename class="directory">/var/lib</filename> instead of
       <filename class="directory">/usr/var</filename>.
@@ -228,25 +225,49 @@
 @z
 
 @x
-      <command>mv -v /usr/bin/ksu /bin</command>: Moves the
-      <command>ksu</command> program to the
-      <filename class="directory">/bin</filename> directory so that it is
+      <option>--with-ldap</option>: Use this switch if you want to compile the
+      <application>OpenLDAP</application> database backend module.
+@y
+      <option>--with-ldap</option>: Use this switch if you want to compile the
+      <application>OpenLDAP</application> database backend module.
+@z
+
+@x
+      <command>mv -v /usr/lib/libk... /lib </command> and 
+      <command>ln -v -sf ../../lib/libk... /usr/lib/libk...</command>: 
+      Move critical libraries to the
+      <filename class="directory">/lib</filename> directory so that they are
       available when the <filename class="directory">/usr</filename>
       filesystem is not mounted.
 @y
-      <command>mv -v /usr/bin/ksu /bin</command>: Moves the
-      <command>ksu</command> program to the
-      <filename class="directory">/bin</filename> directory so that it is
+      <command>mv -v /usr/lib/libk... /lib </command> and 
+      <command>ln -v -sf ../../lib/libk... /usr/lib/libk...</command>: 
+      Move critical libraries to the
+      <filename class="directory">/lib</filename> directory so that they are
       available when the <filename class="directory">/usr</filename>
       filesystem is not mounted.
 @z
 
 @x
-      <option>--with-ldap</option>: Use this switch if you want to compile
-      <application>OpenLDAP</application> database backend module.
+      <command>find /usr/lib -type f -name "lib$f*.so*" -exec chmod -v 755 {} \;</command>: 
+      This command changes the permisison of installed libraries.  
 @y
-      <option>--with-ldap</option>: Use this switch if you want to compile
-      <application>OpenLDAP</application> database backend module.
+      <command>find /usr/lib -type f -name "lib$f*.so*" -exec chmod -v 755 {} \;</command>: 
+      This command changes the permisison of installed libraries.  
+@z
+
+@x
+      <command>mv -v /usr/bin/ksu /bin</command>: Moves the
+      <command>ksu</command> program to the
+      <filename class="directory">/bin</filename> directory so that it is
+      available when the <filename class="directory">/usr</filename>
+      filesystem is not mounted.
+@y
+      <command>mv -v /usr/bin/ksu /bin</command>: Moves the
+      <command>ksu</command> program to the
+      <filename class="directory">/bin</filename> directory so that it is
+      available when the <filename class="directory">/usr</filename>
+      filesystem is not mounted.
 @z
 
 @x
@@ -472,15 +493,44 @@
 @z
 
 @x
-          For additional information consult <ulink
-          url="http://web.mit.edu/kerberos/www/krb5-1.11/#documentation">
-          Documentation for krb5-&mitkrb-version;</ulink> on which the above
+          For additional information consult the <ulink
+          url="http://web.mit.edu/kerberos/www/krb5-&mitkrb-major-version;/#documentation">
+          documentation for krb5-&mitkrb-version;</ulink> on which the above
           instructions are based.
 @y
-          For additional information consult <ulink
-          url="http://web.mit.edu/kerberos/www/krb5-1.11/#documentation">
-          Documentation for krb5-&mitkrb-version;</ulink> on which the above
+          For additional information consult the <ulink
+          url="http://web.mit.edu/kerberos/www/krb5-&mitkrb-major-version;/#documentation">
+          documentation for krb5-&mitkrb-version;</ulink> on which the above
           instructions are based.
+@z
+
+@x
+      <title><phrase revision="sysv">Init Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
+@y
+      <title><phrase revision="sysv">&InitScript;</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
+@z
+
+@x revision="sysv"
+        If you want to start <application>Kerberos</application> services
+        at boot, install the <filename>/etc/rc.d/init.d/krb5</filename> init
+        script included in the <xref linkend="bootscripts"/> package using
+        the following command:
+@y
+        If you want to start <application>Kerberos</application> services
+        at boot, install the <filename>/etc/rc.d/init.d/krb5</filename> init
+        script included in the <xref linkend="bootscripts"/> package using
+        the following command:
+@z
+@x revision="systemd"
+        If you want to start <application>Kerberos</application> services
+        at boot, install the <filename>krb5.service</filename> unit included in
+        the <xref linkend="systemd-units"/> package using the following command:
+@y
+        If you want to start <application>Kerberos</application> services
+        at boot, install the <filename>krb5.service</filename> unit included in
+        the <xref linkend="systemd-units"/> package using the following command:
 @z
 
 @x
@@ -502,48 +552,44 @@
 @x
         <seg>
           gss-client, gss-server, k5srvutil, kadmin, kadmin.local,
-          kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist,
+          kadmind, kdb5_ldap_util (optional), kdb5_util, kdestroy, kinit, klist,
           kpasswd, kprop, kpropd, kproplog, krb5-config, krb5kdc, krb5-send-pr,
           ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server,
           sserver, uuclient and uuserver
         </seg>
         <seg>
-          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so,
-          libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so,
-          libkrb5.so, libkrb5support.so, and libverto.so
+          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, libkadm5clnt_mit.so,
+          libkadm5clnt.so, libkadm5srv_mit.so, libkadm5srv.so, libkdb_ldap.so
+          (optional), libkdb5.so, libkrad.so, libkrb5.so, libkrb5support.so,
+          libverto.so, and some plugins under the /usr/lib/krb5 tree
         </seg>
         <seg>
-          /usr/include/gssapi,
-          /usr/include/gssrpc,
-          /usr/include/kadm5,
-          /usr/include/krb5,
+          /usr/include/{gssapi,gssrpc,kadm5,krb5},
           /usr/lib/krb5,
-          /usr/share/doc/krb5-&mitkrb-version;,
-          /usr/share/examples/krb5 and
-          /var/lib/krb5kdc
+          /usr/share/{doc/krb5-&mitkrb-version;,examples/krb5},
+          /var/lib/krb5kdc, and 
+          /var/lib/run/krb5kdc 
         </seg>
 @y
         <seg>
           gss-client, gss-server, k5srvutil, kadmin, kadmin.local,
-          kadmind, kdb5_ldap_util, kdb5_util, kdestroy, kinit, klist,
+          kadmind, kdb5_ldap_util (optional), kdb5_util, kdestroy, kinit, klist,
           kpasswd, kprop, kpropd, kproplog, krb5-config, krb5kdc, krb5-send-pr,
           ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server,
           sserver, uuclient, uuserver
         </seg>
         <seg>
-          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so,
-          libkadm5clnt.so, libkadm5srv.so, libkdb5.so, libkdb_ldap.so,
-          libkrb5.so, libkrb5support.so, libverto.so
+          libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, libkadm5clnt_mit.so,
+          libkadm5clnt.so, libkadm5srv_mit.so, libkadm5srv.so, libkdb_ldap.so
+          (optional), libkdb5.so, libkrad.so, libkrb5.so, libkrb5support.so,
+          libverto.so, and some plugins under the /usr/lib/krb5 tree
         </seg>
         <seg>
-          /usr/include/gssapi,
-          /usr/include/gssrpc,
-          /usr/include/kadm5,
-          /usr/include/krb5,
+          /usr/include/{gssapi,gssrpc,kadm5,krb5},
           /usr/lib/krb5,
-          /usr/share/doc/krb5-&mitkrb-version;,
-          /usr/share/examples/krb5,
-          /var/lib/krb5kdc
+          /usr/share/{doc/krb5-&mitkrb-version;,examples/krb5},
+          /var/lib/krb5kdc,
+          /var/lib/run/krb5kdc 
         </seg>
 @z
 

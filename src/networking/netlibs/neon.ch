@@ -152,7 +152,8 @@
       <application>GnuTLS</application> respectively. Remove it if
       you don't have any of these installed. To force
       <application>GnuTLS</application> usage when both are present,
-      simply pass <option>--with-ssl=gnutls</option> to the
+      simply pass <option>--with-ssl=gnutls</option> and 
+      <option>--with-ca-bundle=/etc/ssl/ca-bundle.crt</option> to the
       <command>configure</command> script.
 @y
       <parameter>--with-ssl</parameter>: This switch enables SSL support
@@ -160,7 +161,8 @@
       <application>GnuTLS</application> respectively. Remove it if
       you don't have any of these installed. To force
       <application>GnuTLS</application> usage when both are present,
-      simply pass <option>--with-ssl=gnutls</option> to the
+      simply pass <option>--with-ssl=gnutls</option> and 
+      <option>--with-ca-bundle=/etc/ssl/ca-bundle.crt</option> to the
       <command>configure</command> script.
 @z
 

@@ -5,7 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
-SUBDIRS=installing lib wm
+SUBDIRS=dm icons installing lib wm
 BOOKdir = @abs_bookdir@/x
 CHANGE_FILES = x.ch
 EXTRA_DIST = $(CHANGE_FILES)

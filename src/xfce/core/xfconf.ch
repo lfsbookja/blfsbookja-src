@@ -173,7 +173,8 @@
           libxfconf.so
         </seg>
         <seg>
-          /usr/include/xfconf-0, /usr/lib/xfce4 and
+          /usr/include/xfconf-0,
+          /usr/lib/xfce4/xfconf, and
           /usr/share/gtk-doc/html/xfconf
         </seg>
 @y
@@ -184,7 +185,8 @@
           libxfconf.so
         </seg>
         <seg>
-          /usr/include/xfconf-0, /usr/lib/xfce4,
+          /usr/include/xfconf-0,
+          /usr/lib/xfce4/xfconf,
           /usr/share/gtk-doc/html/xfconf
         </seg>
 @z

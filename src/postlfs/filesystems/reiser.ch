@@ -94,14 +94,6 @@
 @z
 
 @x
-<screen><literal>File Systems:
-  Reiserfs support: M or Y</literal></screen>
-@y
-<screen><literal>File Systems:
-  Reiserfs support: M または Y</literal></screen>
-@z
-
-@x
     <title>Installation of reiserfsprogs</title>
 @y
     <title>&InstallationOf1;reiserfsprogs&InstallationOf2;</title>
@@ -137,15 +129,21 @@
 @z
 
 @x
-    <para><parameter>--sbindir=/sbin</parameter>: This ensures that the
-    <application>reiserfsprogs</application> utilities are installed in
-    <filename class="directory">/sbin</filename>.</para>
+      <envar>CFLAGS="$CFLAGS -std=gnu89"</envar>: This environment variable
+      fixes a build error with GCC 5.
 @y
-    <para>
-    <parameter>--sbindir=/sbin</parameter>:
-    このオプションは <application>reiserfsprogs</application> のユーティリティプログラムを <filename
-    class="directory">/sbin</filename> ディレクトリにインストールします。
-    </para>
+      <envar>CFLAGS="$CFLAGS -std=gnu89"</envar>: This environment variable
+      fixes a build error with GCC 5.
+@z
+
+@x
+      <parameter>--sbindir=/sbin</parameter>: This switch ensures that the
+      <application>reiserfsprogs</application> utilities are installed in
+      <filename class="directory">/sbin</filename>.
+@y
+      <parameter>--sbindir=/sbin</parameter>:
+      このオプションは <application>reiserfsprogs</application> のユーティリティプログラムを <filename
+      class="directory">/sbin</filename> ディレクトリにインストールします。
 @z
 
 @x
@@ -167,12 +165,12 @@
 @x
         <seg>debugreiserfs, mkreiserfs, reiserfsck, reiserfstune, and
         resize_reiserfs</seg>
-        <seg>None</seg>
+        <seg>libreiserfscore.so</seg>
         <seg>None</seg>
 @y
         <seg>debugreiserfs, mkreiserfs, reiserfsck, reiserfstune,
         resize_reiserfs</seg>
-        <seg>&None;</seg>
+        <seg>libreiserfscore.so</seg>
         <seg>&None;</seg>
 @z
 

@@ -143,37 +143,45 @@
 @z
 
 @x
-      <option>--enable-threadsafe</option>: This switch enables
+      <command>sed ... config/milestone.pl</command>: Fix an
+      issue caused by perl-5.22.0 and later.
+@y
+      <command>sed ... config/milestone.pl</command>: Fix an
+      issue caused by perl-5.22.0 and later.
+@z
+
+@x
+      <parameter>--enable-threadsafe</parameter>: This switch enables
       support for multiple threads.
 @y
-      <option>--enable-threadsafe</option>:
+      <parameter>--enable-threadsafe</parameter>:
       本スイッチはマルチスレッドサポートを有効にします。
 @z
 
 @x
-      <option>--enable-readline</option>: This switch enables
+      <parameter>--enable-readline</parameter>: This switch enables
       <application>Readline</application> support in JS shell.
 @y
-      <option>--enable-readline</option>:
+      <parameter>--enable-readline</parameter>:
       本スイッチは JS シェルにおける <application>Readline</application> サポートを有効にします。
 @z
 
 @x
-      <option>--with-system-ffi</option>: This switch forces the
+      <parameter>--with-system-ffi</parameter>: This switch forces the
       package to link to the system version of <application>libffi</application>
       instead of using its included, and now old, version.
 @y
-      <option>--with-system-ffi</option>:
+      <parameter>--with-system-ffi</parameter>:
       本スイッチはシステムにインストール済の <application>libffi</application> をリンクすることを指示します。
       こうしない場合にはソースコードに含まれるものが利用されますが、それは古いバージョンとなっています。
 @z
 
 @x
-      <option>--with-system-nspr</option>: This switch forces the
+      <parameter>--with-system-nspr</parameter>: This switch forces the
       package to link to the system version of <application>NSPR</application>
       instead of using its included, and now old, version.
 @y
-      <option>--with-system-nspr</option>:
+      <parameter>--with-system-nspr</parameter>:
       本スイッチはシステムにインストール済の <application>NSPR</application> をリンクすることを指示します。
       こうしない場合にはソースコードに含まれるものが利用されますが、それは古いバージョンとなっています。
 @z

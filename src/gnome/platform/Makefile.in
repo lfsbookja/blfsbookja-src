@@ -93,7 +93,7 @@ am__aclocal_m4_deps = $(top_srcdir)/version.ac \
 	$(top_srcdir)/m4/ac_check_docbook_xslt.m4 \
 	$(top_srcdir)/m4/ac_check_docbook_dtd.m4 \
 	$(top_srcdir)/m4/ac_check_ipafontdir.m4 \
-	$(top_srcdir)/configure.ac
+	$(top_srcdir)/m4/ac_check_rev.m4 $(top_srcdir)/configure.ac
 am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
@@ -129,6 +129,10 @@ AUTOCONF = @AUTOCONF@
 AUTOHEADER = @AUTOHEADER@
 AUTOMAKE = @AUTOMAKE@
 AWK = @AWK@
+BASEDIR = @BASEDIR@
+BLFSFULL = @BLFSFULL@
+BLFSHTML = @BLFSHTML@
+BLFSHTML2 = @BLFSHTML2@
 CC = @CC@
 CCDEPMODE = @CCDEPMODE@
 CFLAGS = @CFLAGS@
@@ -137,6 +141,7 @@ CTIE = @CTIE@
 CYGPATH_W = @CYGPATH_W@
 DEFS = @DEFS@
 DEPDIR = @DEPDIR@
+DUMPDIR = @DUMPDIR@
 ECHO_C = @ECHO_C@
 ECHO_N = @ECHO_N@
 ECHO_T = @ECHO_T@
@@ -158,6 +163,8 @@ LTLIBOBJS = @LTLIBOBJS@
 LYNX = @LYNX@
 MAKEINFO = @MAKEINFO@
 MKDIR_P = @MKDIR_P@
+NOCHUNKS_NAME = @NOCHUNKS_NAME@
+NOCHUNKS_OUTPUT = @NOCHUNKS_OUTPUT@
 OBJEXT = @OBJEXT@
 PACKAGE = @PACKAGE@
 PACKAGE_BUGREPORT = @PACKAGE_BUGREPORT@
@@ -168,6 +175,7 @@ PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PDF = @PDF@
+PDF_OUTPUT = @PDF_OUTPUT@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -213,6 +221,7 @@ pdfdir = @pdfdir@
 prefix = @prefix@
 program_transform_name = @program_transform_name@
 psdir = @psdir@
+revspec = @revspec@
 sbindir = @sbindir@
 sharedstatedir = @sharedstatedir@
 srcdir = @srcdir@
@@ -223,32 +232,61 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/gnome/platform
 CHANGE_FILES = \
+	accountsservice.ch           \
+	caribou.ch                   \
 	dconf.ch                     \
+	dummy-desktop.ch             \
 	dummy-platform.ch            \
 	dummy-runtime.ch             \
+	dummy-tel.ch                 \
+	evolution-data-server.ch     \
+	folks.ch                     \
 	gconf.ch                     \
 	gcr.ch                       \
+	gdm.ch                       \
+	geocode-glib.ch              \
+	gfbgraph.ch                  \
 	gjs.ch                       \
+	gnome-autoar.ch              \
+	gnome-backgrounds.ch         \
+	gnome-bluetooth.ch           \
+	gnome-control-center.ch      \
 	gnome-desktop.ch             \
-	gnome-icon-theme.ch          \
-	gnome-icon-theme-symbolic.ch \
-	gnome-icon-theme-extras.ch   \
 	gnome-keyring.ch             \
-	gnome-themes-standard.ch     \
+	gnome-menus.ch               \
+	gnome-online-accounts.ch     \
+	gnome-settings-daemon.ch     \
+	gnome-shell.ch               \
+	gnome-shell-extensions.ch    \
+	gnome-session.ch             \
+	gnome-user-docs.ch           \
 	gnome-video-effects.ch       \
+	grilo.ch                     \
 	gsettings-desktop-schemas.ch \
+	gtkhtml.ch                   \
 	gvfs.ch                      \
+	libchamplain.ch              \
+	libgee.ch                    \
+	libgdata.ch                  \
 	libgtop.ch                   \
+	libgweather.ch               \
 	libpeas.ch                   \
 	libsecret.ch                 \
 	libwnck.ch                   \
+	mutter.ch                    \
+	nautilus.ch                  \
 	notification-daemon.ch       \
 	platform.ch                  \
 	polkit-gnome.ch              \
+	rest.ch                      \
+	telepathy-glib.ch            \
+	telepathy-logger.ch          \
+	telepathy-mission-control.ch \
 	totem-pl-parser.ch           \
 	vte.ch                       \
 	yelp.ch                      \
-	yelp-xsl.ch
+	yelp-xsl.ch                  \
+	zenity.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -445,32 +483,6 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-dconf.xml:                 $(BOOKdir)/$@ $(srcdir)/dconf.ch
-dummy-platform.xml:        $(BOOKdir)/$@ $(srcdir)/dummy-platform.ch
-dummy-runtime.xml:         $(BOOKdir)/$@ $(srcdir)/dummy-runtime.ch
-gconf.xml:                 $(BOOKdir)/$@ $(srcdir)/gconf.ch
-gcr.xml:                   $(BOOKdir)/$@ $(srcdir)/gcr.ch
-gjs.xml:                   $(BOOKdir)/$@ $(srcdir)/gjs.ch
-gnome-desktop.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-desktop.ch
-gnome-icon-theme.xml:          $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme.ch
-gnome-icon-theme-symbolic.xml: $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-symbolic.ch
-gnome-icon-theme-extras.xml:   $(BOOKdir)/$@ $(srcdir)/gnome-icon-theme-extras.ch
-gnome-keyring.xml:             $(BOOKdir)/$@ $(srcdir)/gnome-keyring.ch
-gnome-video-effects.xml:       $(BOOKdir)/$@ $(srcdir)/gnome-video-effects.ch
-gsettings-desktop-schemas.xml: $(BOOKdir)/$@ $(srcdir)/gsettings-desktop-schemas.ch
-gvfs.xml:                      $(BOOKdir)/$@ $(srcdir)/gvfs.ch
-libgtop.xml:                   $(BOOKdir)/$@ $(srcdir)/libgtop.ch
-libpeas.xml:                   $(BOOKdir)/$@ $(srcdir)/libpeas.ch
-libsecret.xml:                 $(BOOKdir)/$@ $(srcdir)/libsecret.ch
-libwnck.xml:                   $(BOOKdir)/$@ $(srcdir)/libwnck.ch
-notification-daemon.xml:       $(BOOKdir)/$@ $(srcdir)/notification-daemon.ch
-platform.xml:                  $(BOOKdir)/$@ $(srcdir)/platform.ch
-polkit-gnome.xml:              $(BOOKdir)/$@ $(srcdir)/polkit-gnome.ch
-totem-pl-parser.xml:           $(BOOKdir)/$@ $(srcdir)/totem-pl-parser.ch
-vte.xml:                       $(BOOKdir)/$@ $(srcdir)/vte.ch
-yelp.xml:                      $(BOOKdir)/$@ $(srcdir)/yelp.ch
-yelp-xsl.xml:                  $(BOOKdir)/$@ $(srcdir)/yelp-xsl.ch
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

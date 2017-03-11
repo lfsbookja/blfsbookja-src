@@ -7,8 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/postlfs/security
 CHANGE_FILES = \
-	acl.ch             \
-	attr.ch            \
 	cacerts.ch         \
 	consolekit.ch      \
 	cracklib.ch        \
@@ -17,8 +15,11 @@ CHANGE_FILES = \
 	gnupg2.ch          \
 	gnutls.ch          \
 	gpgme.ch           \
+	haveged.ch         \
 	iptables.ch        \
 	libcap.ch          \
+	liboauth.ch        \
+	libpwquality.ch    \
 	linux-pam.ch       \
 	mitkrb.ch          \
 	nessus.ch          \
@@ -49,36 +50,3 @@ all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-acl.xml:              $(BOOKdir)/$@ $(srcdir)/acl.ch
-attr.xml:             $(BOOKdir)/$@ $(srcdir)/attr.ch
-cacerts.xml:          $(BOOKdir)/$@ $(srcdir)/cacerts.ch
-consolekit.xml:       $(BOOKdir)/$@ $(srcdir)/consolekit.ch
-cracklib.xml:         $(BOOKdir)/$@ $(srcdir)/cracklib.ch
-cyrus-sasl.xml:       $(BOOKdir)/$@ $(srcdir)/cyrus-sasl.ch
-firewalling.xml:      $(BOOKdir)/$@ $(srcdir)/firewalling.ch $(srcdir)/firewalling.sed
-	sed -f $(srcdir)/firewalling.sed < $(BOOKdir)/$@ > $@.tmp
-	$(top_builddir)/$(CTIE) -m $@ $@.tmp $(srcdir)/$*.ch
-	rm -f $@.tmp
-gnupg2.xml:           $(BOOKdir)/$@ $(srcdir)/gnupg2.ch
-gnutls.xml:           $(BOOKdir)/$@ $(srcdir)/gnutls.ch
-gpgme.xml:            $(BOOKdir)/$@ $(srcdir)/gpgme.ch
-iptables.xml:         $(BOOKdir)/$@ $(srcdir)/iptables.ch
-libcap.xml:           $(BOOKdir)/$@ $(srcdir)/libcap.ch
-linux-pam.xml:        $(BOOKdir)/$@ $(srcdir)/linux-pam.ch
-mitkrb.xml:           $(BOOKdir)/$@ $(srcdir)/mitkrb.ch
-nessus.xml:           $(BOOKdir)/$@ $(srcdir)/nessus.ch
-nettle.xml:           $(BOOKdir)/$@ $(srcdir)/nettle.ch
-nss.xml:              $(BOOKdir)/$@ $(srcdir)/nss.ch
-openssh.xml:          $(BOOKdir)/$@ $(srcdir)/openssh.ch
-openssl.xml:          $(BOOKdir)/$@ $(srcdir)/openssl.ch
-p11-kit.xml:          $(BOOKdir)/$@ $(srcdir)/p11-kit.ch
-polkit.xml:           $(BOOKdir)/$@ $(srcdir)/polkit.ch
-security.xml:         $(BOOKdir)/$@ $(srcdir)/security.ch
-shadow.xml:           $(BOOKdir)/$@ $(srcdir)/shadow.ch
-ssh-askpass.xml:      $(BOOKdir)/$@ $(srcdir)/ssh-askpass.ch
-stunnel.xml:          $(BOOKdir)/$@ $(srcdir)/stunnel.ch
-sudo.xml:             $(BOOKdir)/$@ $(srcdir)/sudo.ch
-syslog.xml:           $(BOOKdir)/$@ $(srcdir)/syslog.ch
-tripwire.xml:         $(BOOKdir)/$@ $(srcdir)/tripwire.ch
-vulnerabilities.xml:  $(BOOKdir)/$@ $(srcdir)/vulnerabilities.ch

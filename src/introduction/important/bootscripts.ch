@@ -61,9 +61,11 @@
 @z
 
 @x
-      <para>Download: <ulink url="&blfs-bootscripts-download;"/></para>
+      <para>Download: <ulink
+        url="&sources-anduin-http;/blfs-bootscripts/blfs-bootscripts-&blfs-bootscripts-version;.tar.xz"/></para>
 @y
-      <para>&Download;: <ulink url="&blfs-bootscripts-download;"/></para>
+      <para>&Download;: <ulink
+        url="&sources-anduin-http;/blfs-bootscripts/blfs-bootscripts-&blfs-bootscripts-version;.tar.xz"/></para>
 @z
 
 @x
@@ -100,15 +102,14 @@
 @z
 
 @x
-    <para>From time to time the bootscripts are updated to accomodate
-    new packages or to make minor corrections.  All versions of the 
-    bootscripts are located at <ulink 
-    url="http://anduin.linuxfromscratch.org/sources/BLFS/conglomeration/blfs-bootscripts/"/>.</para>
+    <para>From time to time the bootscripts are updated to accommodate
+    new packages or to make minor corrections.  All versions of the
+    bootscripts are located at <ulink
+    url="&sources-anduin-http;/blfs-bootscripts/"/>.</para>
 @y
     <para>
     ブートスクリプトは新パッケージへの対応や機能修正などのために日々更新されます。
     ブートスクリプトの全バージョンは <ulink 
-    url="http://anduin.linuxfromscratch.org/sources/BLFS/conglomeration/blfs-bootscripts/"/>
-    から入手することができます。
+    url="&sources-anduin-http;/blfs-bootscripts/"/> から入手することができます。
     </para>
 @z

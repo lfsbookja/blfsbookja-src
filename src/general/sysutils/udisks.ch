@@ -192,7 +192,7 @@
           umount.udisks
         </seg>
         <seg>
-          &None:
+          &None;
         </seg>
         <seg>
           /usr/share/gtk-doc/html/udisks,

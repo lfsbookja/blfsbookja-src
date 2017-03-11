@@ -151,11 +151,19 @@
 @z
 
 @x
-      <option>--disable-lynx</option>: This parameter turns off
+      <command>sed ... src/mod_dnssd.c</command>: Fix an external function
+      call that has been updated since this package was released.
+@y
+      <command>sed ... src/mod_dnssd.c</command>: Fix an external function
+      call that has been updated since this package was released.
+@z
+
+@x
+      <parameter>--disable-lynx</parameter>: This parameter turns off
       <application>Lynx</application> usage for documentation generation.
       Remove it if you have <application>Lynx</application> installed.
 @y
-      <option>--disable-lynx</option>:
+      <parameter>--disable-lynx</parameter>:
       このパラメーターは、ドキュメント生成にあたり <application>Lynx</application> を用いないようにします。
       <application>Lynx</application> をインストールしている場合は、このパラメーターを取り除いてください。
 @z

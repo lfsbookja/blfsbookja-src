@@ -77,37 +77,43 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gnutls"/>
+      <xref linkend="cacerts"/> (runtime),
+      <xref linkend="openssl"/>, and 
+      <xref linkend="python3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gnutls"/>
+      <xref linkend="cacerts"/> (実行時),
+      <xref linkend="openssl"/>,
+      <xref linkend="python3"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gnutls"/>,
+      <xref linkend="gpgme"/>,
       <xref linkend="libidn"/>,
-      <xref linkend="openssl"/>,
-      <xref linkend="pcre"/>;
-      <xref linkend="perl-lwp"/> with
-      <ulink url="http://search.cpan.org/~behroozi/IO-Socket-SSL/">IO::Socket::SSL</ulink>
-      (required for the test suite);
-      <xref linkend="valgrind"/> (optional for the test suite), and
+      <xref linkend="pcre"/>,
+      <xref linkend="valgrind"/> (optional for the test suite),
+      <ulink url="http://search.cpan.org/~behroozi/IO-Socket-SSL/">IO::Socket::SSL</ulink>,
+      <ulink url="http://search.cpan.org/~gaas/HTTP-Daemon/">HTTP::Daemon</ulink>
+      (both required for the test suite), and
       <ulink url="https://github.com/rockdaboot/libpsl/">libpsl</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gnutls"/>,
+      <xref linkend="gpgme"/>,
       <xref linkend="libidn"/>,
-      <xref linkend="openssl"/>,
-      <xref linkend="pcre"/>;
-      <xref linkend="perl-lwp"/> with
-      <ulink url="http://search.cpan.org/~behroozi/IO-Socket-SSL/">IO::Socket::SSL</ulink>
-      (required for the test suite);
-      <xref linkend="valgrind"/> (optional for the test suite), and
+      <xref linkend="pcre"/>,
+      <xref linkend="valgrind"/> (optional for the test suite),
+      <ulink url="http://search.cpan.org/~behroozi/IO-Socket-SSL/">IO::Socket::SSL</ulink>,
+      <ulink url="http://search.cpan.org/~gaas/HTTP-Daemon/">HTTP::Daemon</ulink>
+      (both required for the test suite), and
       <ulink url="https://github.com/rockdaboot/libpsl/">libpsl</ulink>
     </para>
 @z
@@ -132,11 +138,10 @@
 
 @x
       To test the results, issue: <command>make check</command>. The HTTPS
-      tests fail if <application>openssl</application> is used and
-      <application>valgrind</application> is enabled.
+      tests fail if <application>valgrind</application> is enabled.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      <application>openssl</application> が用いられ <application>valgrind</application> が利用可能である場合 HTTPS テストは失敗します。
+      <application>valgrind</application> が利用可能である場合 HTTPS テストは失敗します。
 @z
 
 @x
@@ -163,13 +168,11 @@
 @z
 
 @x
-      <option>--with-ssl=openssl</option>: This allows the program to use
-      <xref linkend="openssl"/> instead of <xref linkend="gnutls"/>. The
-      combination wget-1.6.3&mdash;openssl-1.0.2a is known to be broken.
+      <parameter>--with-ssl=openssl</parameter>: This allows the program to use
+      <xref linkend="openssl"/> instead of <xref linkend="gnutls"/>.
 @y
-      <option>--with-ssl=openssl</option>:
-      このオプションにより <xref linkend="gnutls"/> を用いず、<xref linkend="openssl"/> を用いたプログラムとします。
-      wget-1.6.3&mdash;openssl-1.0.2a の組み合わせではビルドに失敗します。
+      <parameter>--with-ssl=openssl</parameter>:
+      このオプションにより <xref linkend="gnutls"/> を用いず <xref linkend="openssl"/> を用いたプログラムとします。
 @z
 
 @x

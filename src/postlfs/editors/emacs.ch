@@ -82,19 +82,73 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="giflib"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="giflib"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="libpng"/>,
-    <xref linkend="libtiff"/>, and
-    <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink></para>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="dbus"/>,
+      <xref linkend="GConf"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="gpm"/>,
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>,
+      <xref linkend="imagemagick6"/> (see command explanations),
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="librsvg"/>,
+      <xref linkend="libtiff"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="valgrind"/>,
+      <ulink url="https://ftp.gnu.org/gnu/intlfonts/">intlfonts</ulink>,
+      <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>,
+      <ulink url="http://www.nongnu.org/m17n/">libotf</ulink> and
+      <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
+      display such complex scripts as Indic and Khmer, and also for scripts
+      that require Arabic shaping support (Arabic and Farsi), and
+      <ulink url="http://ftp.x.org/pub/individual/lib/">libXaw3d</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="libpng"/>,
-    <xref linkend="libtiff"/>,
-    <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink></para>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="dbus"/>,
+      <xref linkend="GConf"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="gpm"/>,
+      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>,
+      <xref linkend="imagemagick6"/> (see command explanations),
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="librsvg"/>,
+      <xref linkend="libtiff"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="valgrind"/>,
+      <ulink url="https://ftp.gnu.org/gnu/intlfonts/">intlfonts</ulink>,
+      <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>,
+      <ulink url="http://www.nongnu.org/m17n/">libotf</ulink> and
+      <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
+      display such complex scripts as Indic and Khmer, and also for scripts
+      that require Arabic shaping support (Arabic and Farsi), and
+      <ulink url="http://ftp.x.org/pub/individual/lib/">libXaw3d</ulink>
+    </para>
 @z
 
 @x
@@ -121,9 +175,16 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite. If make succeeds, you can
+      test the result by running <command>src/emacs -Q</command>, which is the
+      program that will be installed, with its auxiliary files. This should
+      start and display the application opening screen.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
+      If make succeeds, you can
+      test the result by running <command>src/emacs -Q</command>, which is the
+      program that will be installed, with its auxiliary files. This should
+      start and display the application opening screen.
 @z
 
 @x
@@ -141,36 +202,26 @@
 @z
 
 @x
-    <para><option>--with-gif=no</option>: This option is required if 
-    <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>
-    is not installed.</para>
-@y
-    <para><option>--with-gif=no</option>:
-    このオプションは <ulink
-    url="http://directory.fsf.org/wiki/Libungif">libungif</ulink> をインストールしていない場合に指定します。
-    </para>
-@z
-
-@x
-    <para><option>--libexecdir=/usr/lib</option>: Place library
-    executables in a Filesystem Hierarchy Standard (FHS) location.</para>
-@y
-    <para>
-    <option>--libexecdir=/usr/lib</option>:
-    ファイルシステム階層標準 (Filesystem Hierarchy Standard; FHS) に従ってライブラリを配置するように指示します。
-    </para>
-@z
-
-@x
-    <para><option>--localstatedir=/var</option>: Create game score files
+    <para><parameter>--localstatedir=/var</parameter>: Create game score files
     in <filename class='directory'>/var/games/emacs</filename> instead
     of <filename class='directory'>/usr/var/games/emacs</filename>.</para>
 @y
     <para>
-    <option>--localstatedir=/var</option>:
+    <parameter>--localstatedir=/var</parameter>:
     ゲームスコアのファイルを <filename
     class='directory'>/usr/var/games/emacs</filename> ではなく<filename
     class='directory'>/var/games/emacs</filename> に生成します。
+    </para>
+@z
+
+@x
+    <para><option>--with-giflib=no</option>: Use this if you have not installed
+    <xref linkend="giflib"/> or 
+    <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>.</para>
+@y
+    <para><option>--with-gif=no</option>:
+    このオプションは <xref linkend="giflib"/> または <ulink
+    url="http://directory.fsf.org/wiki/Libungif">libungif</ulink> をインストールしていない場合に指定します。
     </para>
 @z
 
@@ -191,27 +242,27 @@
 @z
 
 @x
-        <seg>ctags, 
-             ebrowse, 
-             emacs, 
-             emacsclient, 
-             etags, 
-             grep-changelog, and 
-             rcs-checkin</seg>
+        <seg>ctags,
+             ebrowse,
+             emacs (symlink),
+             emacs-&emacs-version;,
+             emacsclient,
+             etags, and
+             grep-changelog</seg>
         <seg>None</seg>
-        <seg>/usr/lib/emacs, 
-             /usr/share/emacs, and 
+        <seg>/usr/libexec/emacs,
+             /usr/share/emacs, and
              /var/games/emacs</seg>
 @y
-        <seg>ctags, 
-             ebrowse, 
-             emacs, 
-             emacsclient, 
-             etags, 
-             grep-changelog,
-             rcs-checkin</seg>
+        <seg>ctags,
+             ebrowse,
+             emacs (シンボリックリンク),
+             emacs-&emacs-version;,
+             emacsclient,
+             etags,
+             grep-changelog</seg>
         <seg>&None;</seg>
-        <seg>/usr/lib/emacs, 
+        <seg>/usr/libexec/emacs,
              /usr/share/emacs,
              /var/games/emacs</seg>
 @z

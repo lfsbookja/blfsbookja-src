@@ -92,14 +92,6 @@
 @z
 
 @x
-<screen><literal>File Systems:
-  XFS filesystem support: M or Y</literal></screen>
-@y
-<screen><literal>File Systems:
-  XFS filesystem support: M または Y</literal></screen>
-@z
-
-@x
     <title>Installation of xfsprogs</title>
 @y
     <title>&InstallationOf1;xfsprogs&InstallationOf2;</title>
@@ -170,15 +162,13 @@
 @z
 
 @x
-    <para><parameter>OPTIMIZER="..."</parameter>: Adding this parameter to
+    <para><option>OPTIMIZER="..."</option>: Adding this parameter to
     the end of the <command>make</command> command overrides the
     default optimization settings.</para>
 @y
-    <para>
-    <parameter>OPTIMIZER="..."</parameter>: Adding this parameter to
+    <para><option>OPTIMIZER="..."</option>: Adding this parameter to
     the end of the <command>make</command> command overrides the
-    default optimization settings.
-    </para>
+    default optimization settings.</para>
 @z
 
 @x
@@ -198,19 +188,19 @@
 @z
 
 @x
-        <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_check, xfs_copy,
-        xfs_db, xfs_freeze, xfs_growfs, xfs_info, xfs_io, xfs_logprint,
-        xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck, xfs_quota,
-        xfs_repair, and xfs_rtcp</seg>
-        <seg>libhandle.{so,a}</seg>
-        <seg>/usr/include/xfs and /usr/share/doc/xfsprogs</seg>
+        <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_copy, xfs_db,
+        xfs_estimate, xfs_freeze, xfs_fsr, xfs_growfs, xfs_info, xfs_io,
+        xfs_logprint, xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck,
+        xfs_quota, xfs_repair, and xfs_rtcp</seg>
+        <seg>libhandle.so</seg>
+        <seg>/usr/include/xfs and /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
 @y
-        <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_check, xfs_copy,
-        xfs_db, xfs_freeze, xfs_growfs, xfs_info, xfs_io, xfs_logprint,
-        xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck, xfs_quota,
-        xfs_repair, xfs_rtcp</seg>
-        <seg>libhandle.{so,a}</seg>
-        <seg>/usr/include/xfs and /usr/share/doc/xfsprogs</seg>
+        <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_copy, xfs_db,
+        xfs_estimate, xfs_freeze, xfs_fsr, xfs_growfs, xfs_info, xfs_io,
+        xfs_logprint, xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck,
+        xfs_quota, xfs_repair, and xfs_rtcp</seg>
+        <seg>libhandle.so</seg>
+        <seg>/usr/include/xfs and /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
 @z
 
 @x
@@ -243,12 +233,6 @@
           <para>prints block mapping for an XFS file.</para>
 @y
           <para>prints block mapping for an XFS file.</para>
-@z
-
-@x xfs_check
-          <para>checks XFS file system consistency.</para>
-@y
-          <para>checks XFS file system consistency.</para>
 @z
 
 @x xfs_copy

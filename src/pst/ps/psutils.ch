@@ -220,10 +220,8 @@
           <para>performs general page rearrangements and selection.</para>
 @z
 
-@x scripts
-          <para>the remaining commands are scripts that perform specific
-          functions described in their respective man pages.</para>
+@x showchar
+            outputs PostScript to draw a character with metric info.
 @y
-          <para>the remaining commands are scripts that perform specific
-          functions described in their respective man pages.</para>
+            outputs PostScript to draw a character with metric info.
 @z

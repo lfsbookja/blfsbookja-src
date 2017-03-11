@@ -154,7 +154,7 @@
         rarian-sk-get-extended-content-list, rarian-sk-get-scripts,
         rarian-sk-install, rarian-sk-migrate, rarian-sk-preinstall,
         rarian-sk-rebuild, and rarian-sk-update</seg>
-        <seg>librarian.{so,a}</seg>
+        <seg>librarian.so</seg>
         <seg>/usr/include/rarian, /usr/share/help, /usr/share/librarian/manual,
         /usr/share/librarian/Templates/C, and /var/lib/rarian</seg>
 @y
@@ -163,7 +163,7 @@
         rarian-sk-get-extended-content-list, rarian-sk-get-scripts,
         rarian-sk-install, rarian-sk-migrate, rarian-sk-preinstall,
         rarian-sk-rebuild, rarian-sk-update</seg>
-        <seg>librarian.{so,a}</seg>
+        <seg>librarian.so</seg>
         <seg>/usr/include/rarian, /usr/share/help, /usr/share/librarian/manual,
         /usr/share/librarian/Templates/C, /var/lib/rarian</seg>
 @z

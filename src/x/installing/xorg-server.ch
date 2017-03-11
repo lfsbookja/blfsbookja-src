@@ -92,8 +92,8 @@
       <xref linkend="openssl"/> or
       <xref linkend="nettle"/> or
       <xref linkend="libgcrypt"/>,
-      <xref linkend="pixman"/>,
-      <xref linkend="xorg7-font"/>, and
+      <xref linkend="pixman"/>, and at runtime:
+      <xref linkend="xorg7-font"/> and
       <xref linkend="xkeyboard-config"/>
     </para>
 @y
@@ -102,29 +102,69 @@
       <xref linkend="openssl"/> または
       <xref linkend="nettle"/> または
       <xref linkend="libgcrypt"/>,
-      <xref linkend="pixman"/>,
+      <xref linkend="pixman"/>, and at runtime:
       <xref linkend="xorg7-font"/>,
       <xref linkend="xkeyboard-config"/>
     </para>
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended" revision="sysv">
+      <xref linkend="libepoxy"/> (required for glamor, see command
+      explanations below)
+    </para>
+    <para role="recommended" revision="systemd">
+      <xref linkend="libepoxy"/> (needed for glamor and Xwayland),
+      <xref linkend="wayland"/> (needed for Xwayland),
+      <xref linkend="wayland-protocols"/>, and
+      <xref linkend="systemd"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended" revision="sysv">
+      <xref linkend="libepoxy"/> (required for glamor, see command
+      explanations below)
+    </para>
+    <para role="recommended" revision="systemd">
+      <xref linkend="libepoxy"/> (needed for glamor and Xwayland),
+      <xref linkend="wayland"/> (needed for Xwayland),
+      <xref linkend="wayland-protocols"/>, and
+      <xref linkend="systemd"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para>
+    <para role="optional">
       <xref linkend="acpid"/> (runtime),
       <xref linkend="doxygen"/> (to build API documentation),
-      <xref linkend="fop"/>, (to build documentation),
-      <xref linkend="gs"/> (to build documentation), and
-      <xref linkend="xmlto"/>, (to build documentation)
+      <xref linkend="fop"/> (to build documentation),
+      <xref linkend="xcb-util-keysyms"/>,
+      <xref linkend="xcb-util-image"/>,
+      <xref linkend="xcb-util-renderutil"/>,
+      <xref linkend="xcb-util-wm"/> (all three to build Xephyr),
+      <xref linkend="xmlto"/> (to build documentation),
+      <phrase revision="sysv"><xref linkend="wayland"/> (needed for Xwayland),
+      <xref linkend="wayland-protocols"/>,</phrase>
+      <ulink url="http://download.savannah.gnu.org/releases/libunwind">libunwind</ulink>, and
+      <ulink url="https://www.x.org/archive/individual/doc/">xorg-sgml-doctools</ulink> (to build documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para>
+    <para role="optional">
       <xref linkend="acpid"/> (実行時),
       <xref linkend="doxygen"/> (API ドキュメント生成のため),
-      <xref linkend="fop"/>, (ドキュメント生成のため),
-      <xref linkend="gs"/> (ドキュメント生成のため),
-      <xref linkend="xmlto"/>, (ドキュメント生成のため)
+      <xref linkend="fop"/> (ドキュメント生成のため),
+      <xref linkend="xcb-util-keysyms"/>,
+      <xref linkend="xcb-util-image"/>,
+      <xref linkend="xcb-util-renderutil"/>,
+      <xref linkend="xcb-util-wm"/> (all three to build Xephyr),
+      <xref linkend="xmlto"/> (to build documentation),
+      <phrase revision="sysv"><xref linkend="wayland"/> (needed for Xwayland),
+      <xref linkend="wayland-protocols"/>,</phrase>
+      <ulink url="http://download.savannah.gnu.org/releases/libunwind">libunwind</ulink>,
+      <ulink url="https://www.x.org/archive/individual/doc/">xorg-sgml-doctools</ulink> (to build documentation)
     </para>
 @z
 
@@ -141,8 +181,8 @@
 @z
 
 @x
-      If you have downloaded the optional patch, apply it by running
-      the following command:
+      If you have downloaded the optional patch, apply it by running the
+      following command:
 @y
       任意のパッチをダウンロードしている場合は、以下のコマンドを実行して適用します。
 @z
@@ -154,9 +194,14 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. You
+      will need to run <command>ldconfig</command> as the <systemitem
+      class="username">root</systemitem> user first or some tests may fail.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      You
+      will need to run <command>ldconfig</command> as the <systemitem
+      class="username">root</systemitem> user first or some tests may fail.
 @z
 
 @x
@@ -173,8 +218,24 @@
 @z
 
 @x
-      <parameter>--enable-install-setuid</parameter>: The Xorg binary must run as
-      the root user. This switch ensures that the binary is installed
+      <parameter>--enable-glamor</parameter>: Build the Glamor DIX (Device
+      Independent X) module which is currently required for Southern Islands and
+      Sea Islands radeon video chipsets, optional for some other radeons, and
+      also optional for the intel driver. It is also used by the modesetting
+      driver (which is part of this package) for hardware using KMS which
+      offers acceleration.
+@y
+      <parameter>--enable-glamor</parameter>: Build the Glamor DIX (Device
+      Independent X) module which is currently required for Southern Islands and
+      Sea Islands radeon video chipsets, optional for some other radeons, and
+      also optional for the intel driver. It is also used by the modesetting
+      driver (which is part of this package) for hardware using KMS which
+      offers acceleration.
+@z
+
+@x
+      <parameter>--enable-install-setuid</parameter>: The Xorg binary must run
+      as the root user. This switch ensures that the binary is installed
       setuid when <command>make</command> is run by an unprivileged user.
 @y
       <parameter>--enable-install-setuid</parameter>:
@@ -213,32 +274,32 @@
 
 @x
         <seg>
-          cvt, dmxaddinput, dmxaddscreen, dmxinfo, dmxreconfig, dmxresize,
-          dmxrminput, dmxrmscreen, dmxtodmx, dmxwininfo, gtf, vdltodmx, X,
-          Xdmx, xdmxconfig, Xnest, Xorg, and Xvfb
+          cvt, gtf, X, Xnest, Xorg, and Xvfb; optional: dmxaddinput,
+          dmxaddscreen, dmxinfo, dmxreconfig, dmxresize, dmxrminput,
+          dmxrmscreen, dmxtodmx, dmxwininfo, vdltodmx, Xdmx, xdmxconfig, Xephyr,
+          and Xfbdev
         </seg>
         <seg>
-          None
+          several under $XORG_PREFIX/lib/xorg/modules/{,drivers,extensions}
+          including modesetting_drv.so
         </seg>
         <seg>
-          $XORG_PREFIX/include/xorg,
-          $XORG_PREFIX/lib/xorg,
-          $XORG_PREFIX/share/X11/xorg.conf.d, and
+          $XORG_PREFIX/{include/xorg,lib/xorg,share/X11/xorg.conf.d} and
           /var/lib/xkb
         </seg>
 @y
         <seg>
-          cvt, dmxaddinput, dmxaddscreen, dmxinfo, dmxreconfig, dmxresize,
-          dmxrminput, dmxrmscreen, dmxtodmx, dmxwininfo, gtf, vdltodmx, X,
-          Xdmx, xdmxconfig, Xnest, Xorg, Xvfb
+          cvt, gtf, X, Xnest, Xorg, and Xvfb; optional: dmxaddinput,
+          dmxaddscreen, dmxinfo, dmxreconfig, dmxresize, dmxrminput,
+          dmxrmscreen, dmxtodmx, dmxwininfo, vdltodmx, Xdmx, xdmxconfig, Xephyr,
+          Xfbdev
         </seg>
         <seg>
-          &None;
+          several under $XORG_PREFIX/lib/xorg/modules/{,drivers,extensions}
+          including modesetting_drv.so
         </seg>
         <seg>
-          $XORG_PREFIX/include/xorg,
-          $XORG_PREFIX/lib/xorg,
-          $XORG_PREFIX/share/X11/xorg.conf.d,
+          $XORG_PREFIX/{include/xorg,lib/xorg,share/X11/xorg.conf.d},
           /var/lib/xkb
         </seg>
 @z

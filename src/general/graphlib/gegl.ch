@@ -69,18 +69,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">gegl Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;gegl&Dependencies2;</bridgehead>
@@ -89,18 +77,21 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="babl"/>
+      <xref linkend="babl"/> and
+      <xref linkend="json-glib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="babl"/>
+      <xref linkend="babl"/>,
+      <xref linkend="json-glib"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="asciidoc"/>,
       <xref linkend="cairo"/>,
       <xref linkend="enscript"/>,
       <xref linkend="exiv2"/>,
@@ -110,6 +101,7 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
+      <xref linkend="libwebp"/>,
       <xref linkend="lua"/>,
       <xref linkend="pango"/>,
       <xref linkend="python2"/>,
@@ -118,16 +110,19 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>,
       <xref linkend="w3m"/>,
-      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
-      <ulink url="http://lensfun.berlios.de/">lensfun</ulink>,
+      <ulink url="https://wiki.gnome.org/Projects/gexiv2">gexiv2</ulink>,
+      <ulink url="http://lensfun.sourceforge.net/">lensfun</ulink>,
       <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
       <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
-      <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>, and
+      <ulink url="http://faculty.cse.tamu.edu/davis/suitesparse.html">libumfpack</ulink>,
+      <ulink url="https://github.com/hodefoting/mrg/releases">MRG</ulink>,
+      <ulink url="https://www.khronos.org/opencl/">OpenCL</ulink> (for tests), and
       <ulink url="http://www.openexr.org">OpenEXR</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="asciidoc"/>,
       <xref linkend="cairo"/>,
       <xref linkend="enscript"/>,
       <xref linkend="exiv2"/>,
@@ -137,6 +132,7 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
+      <xref linkend="libwebp"/>,
       <xref linkend="lua"/>,
       <xref linkend="pango"/>,
       <xref linkend="python2"/>,
@@ -145,11 +141,13 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>,
       <xref linkend="w3m"/>,
-      <ulink url="http://www.methods.co.nz/asciidoc/">AsciiDoc</ulink>,
-      <ulink url="http://lensfun.berlios.de/">lensfun</ulink>,
+      <ulink url="https://wiki.gnome.org/Projects/gexiv2">gexiv2</ulink>,
+      <ulink url="http://lensfun.sourceforge.net/">lensfun</ulink>,
       <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
       <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
-      <ulink url="http://www.cise.ufl.edu/research/sparse/umfpack/">libumfpack</ulink>,
+      <ulink url="http://faculty.cse.tamu.edu/davis/suitesparse.html">libumfpack</ulink>,
+      <ulink url="https://github.com/hodefoting/mrg/releases">MRG</ulink>,
+      <ulink url="https://www.khronos.org/opencl/">OpenCL</ulink> (for tests), and
       <ulink url="http://www.openexr.org">OpenEXR</ulink>
     </para>
 @z
@@ -173,9 +171,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command>. One
+      test is known to fail.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テストのうち一つは失敗します。
 @z
 
 @x
@@ -191,12 +191,12 @@
 @z
 
 @x
-      <parameter>install -v -m644/docs/*/{css,html} ...</parameter>:
+      <command>install -v -m644/docs/*/{css,html} ...</command>:
       This and the subsequent commands install all the provided documentation
       instead of only <filename>operations.html</filename> and the stylesheet
       <filename>gegl.css</filename>.
 @y
-      <parameter>install -v -m644/docs/*/{css,html} ...</parameter>:
+      <command>install -v -m644/docs/*/{css,html} ...</command>:
       本コマンドおよび次のコマンドにより、提供されるドキュメントをすべてインストールするようにします。
       これを行わない場合は、単に <filename>operations.html</filename> とスタイルシート <filename>gegl.css</filename> しかインストールされません。
 @z

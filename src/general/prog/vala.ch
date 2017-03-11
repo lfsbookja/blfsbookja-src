@@ -172,7 +172,7 @@
           /usr/include/vala-&vala-major-version;,
           /usr/lib/vala-&vala-major-version;,
           /usr/share/devhelp/books/vala-&vala-major-version;,
-          /usr/share/vala and
+          /usr/share/vala, and
           /usr/share/vala-&vala-major-version;
         </seg>
 @y
@@ -218,17 +218,11 @@
             <application>GLib</application> based packages.
 @z
 
-@x vapicheck
-            verifies the generated bindings.
-@y
-            生成されたバインディングを検証します。
-@z
-
 @x vapigen
-            is a utility which generates <application>Vala</application> API
+            is an utility which generates <application>Vala</application> API
             (VAPI) files from GI files.
 @y
-            is a utility which generates <application>Vala</application> API
+            is an utility which generates <application>Vala</application> API
             (VAPI) files from GI files.
 @z
 

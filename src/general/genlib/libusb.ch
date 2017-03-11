@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libusb-buildsize     "7.3 MB (additional 2.8 MB for API documentation)">
+  <!ENTITY libusb-buildsize     "5.7 MB (add 1.5 MB for API documentation)">
   <!ENTITY libusb-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libusb-buildsize     "7.3 MB (API ドキュメント生成時はさらに 2.8 MB)">
+  <!ENTITY libusb-buildsize     "5.7 MB (API ドキュメント生成時はさらに 1.5 MB)">
   <!ENTITY libusb-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 

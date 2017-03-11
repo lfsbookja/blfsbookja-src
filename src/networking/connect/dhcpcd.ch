@@ -273,11 +273,11 @@
 @x
         <seg>dhcpcd</seg>
         <seg>/lib/dhcpcd/dev/udev.so</seg>
-        <seg>/lib/dhcpcd</seg>
+        <seg>/{,var/}lib/dhcpcd and /usr/share/dhcpcd</seg>
 @y
         <seg>dhcpcd</seg>
         <seg>/lib/dhcpcd/dev/udev.so</seg>
-        <seg>/lib/dhcpcd</seg>
+        <seg>/{,var/}lib/dhcpcd, /usr/share/dhcpcd</seg>
 @z
 
 @x

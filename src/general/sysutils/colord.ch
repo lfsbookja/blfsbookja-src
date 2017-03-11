@@ -103,7 +103,8 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
-      <xref linkend="polkit"/>, and
+      <xref linkend="polkit"/>,<phrase revision="sysv"> and</phrase>
+      <phrase revision="systemd"><xref linkend="systemd"/>, and</phrase>
       <xref linkend="vala"/>
     </para>
 @y
@@ -112,7 +113,8 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
-      <xref linkend="polkit"/>,
+      <xref linkend="polkit"/>,<phrase revision="sysv"> and</phrase>
+      <phrase revision="systemd"><xref linkend="systemd"/>, and</phrase>
       <xref linkend="vala"/>
     </para>
 @z
@@ -122,8 +124,7 @@
     <para role="optional">
       <xref linkend="docbook-utils"/>,
       <xref linkend="gnome-desktop"/> and
-      <ulink url="http://www.freedesktop.org/software/colord/releases/">
-      colord-gtk</ulink> (to build the example tools),
+      <xref linkend="colord-gtk"/> (to build the example tools),
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="sane"/>,
@@ -135,8 +136,7 @@
     <para role="optional">
       <xref linkend="docbook-utils"/>,
       <xref linkend="gnome-desktop"/> and
-      <ulink url="http://www.freedesktop.org/software/colord/releases/">
-      colord-gtk</ulink> (to build the example tools),
+      <xref linkend="colord-gtk"/> (to build the example tools),
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="sane"/>,

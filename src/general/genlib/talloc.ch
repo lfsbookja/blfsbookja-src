@@ -153,11 +153,11 @@
           None
         </seg>
         <seg>
-          libpytalloc-util.cpython-34m.so,
+          libpytalloc-util.cpython-35m-x86-64-linux-gnu.so,
           libpytalloc-util.so,
           libtalloc.so,
           talloc.so (Python-2 Module) and
-          talloc.cpython-34m.so (Python-3 Module)
+          talloc.cpython-35m-x86_64-linux-gnu.so (Python-3 Module)
         </seg>
         <seg>
           None
@@ -167,11 +167,11 @@
           &None;
         </seg>
         <seg>
-          libpytalloc-util.cpython-34m.so,
+          libpytalloc-util.cpython-35m-x86-64-linux-gnu.so,
           libpytalloc-util.so,
           libtalloc.so,
           talloc.so (Python-2 モジュール),
-          talloc.cpython-34m.so (Python-3 モジュール)
+          talloc.cpython-35m-x86_64-linux-gnu.so (Python-3 モジュール)
         </seg>
         <seg>
           &None;
@@ -185,7 +185,7 @@
 @z
 
 @x libtalloc.so
-            contains a replacemnt for the <application>Glibc</application>
+            contains a replacement for the <application>Glibc</application>
             malloc function.
 @y
             <application>Glibc</application> の malloc に対応する代替関数を提供します。

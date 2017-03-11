@@ -141,9 +141,9 @@
 @z
 
 @x
-	<seg>
-	  None
-	</seg>
+        <seg>
+          None
+        </seg>
         <seg>
           libgdkmm-2.4.so and libgtkmm-2.4.so
         </seg>
@@ -151,9 +151,8 @@
           /usr/include/gdkmm-2.4,
           /usr/include/gtkmm-2.4,
           /usr/lib/gdkmm-2.4,
-          /usr/lib/gtkmm-2.4,
-          /usr/share/devhelp/books/gtkmm-2.4, and
-          /usr/share/doc/gtkmm-2.4
+          /usr/lib/gtkmm-2.4, and
+          /usr/share/{devhelp/books/gtkmm-2.4,doc/gtkmm-&gtkmm2-version;}
         </seg>
 @y
 	<seg>
@@ -167,8 +166,7 @@
           /usr/include/gtkmm-2.4,
           /usr/lib/gdkmm-2.4,
           /usr/lib/gtkmm-2.4,
-          /usr/share/devhelp/books/gtkmm-2.4,
-          /usr/share/doc/gtkmm-2.4
+          /usr/share/{devhelp/books/gtkmm-2.4,doc/gtkmm-&gtkmm2-version;}
         </seg>
 @z
 

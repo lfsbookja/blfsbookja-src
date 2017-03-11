@@ -20,19 +20,39 @@
 @z
 
 @x
-  <para><command>pico</command> is a text editor installed as a part
-  of <xref linkend="re-alpine"/>.</para>
+        <ulink url="http://www.geany.org/">Geany</ulink> is a text editor using
+        the <application>GTK+2</application> toolkit with basic features of an
+        integrated development environment. It was developed to provide a small
+        and fast IDE, which has only a few dependencies from other packages. It
+        supports many filetypes and has some nice features.
 @y
-  <para>
-  <command>pico</command> は <xref linkend="re-alpine"/> の一部としてインストールされるテキストエディターです。
-  </para>
+        <ulink url="http://www.geany.org/">Geany</ulink> is a text editor using
+        the <application>GTK+2</application> toolkit with basic features of an
+        integrated development environment. It was developed to provide a small
+        and fast IDE, which has only a few dependencies from other packages. It
+        supports many filetypes and has some nice features.
 @z
 
 @x
-  <para><command>mcedit</command> is a text editor installed as part
-  of <xref linkend="mc"/>.</para>
+        <ulink url="http://tarot.freeshell.org/leafpad/">Leafpad</ulink> is a
+        very simple text editor using the <application>GTK+2</application>
+        toolkit.
 @y
-  <para>
-  <command>mcedit</command> は <xref linkend="mc"/> の一部としてインストールされるテキストエディターです。
-  </para>
+        <ulink url="http://tarot.freeshell.org/leafpad/">Leafpad</ulink> is a
+        very simple text editor using the <application>GTK+2</application>
+        toolkit.
+@z
+
+@x
+        <command>mcedit</command> is a text editor installed as part of <xref
+        linkend="mc"/>.
+@y
+        <command>mcedit</command> は <xref linkend="mc"/> の一部としてインストールされるテキストエディターです。
+@z
+
+@x
+        <command>pico</command> is a text editor installed as a part of <xref
+        linkend="re-alpine"/>.
+@y
+        <command>pico</command> は <xref linkend="re-alpine"/> の一部としてインストールされるテキストエディターです。
 @z
