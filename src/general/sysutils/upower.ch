@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY upower-buildsize     "13 MB (add 2 MB for tests)">
+@y
+  <!ENTITY upower-buildsize     "13 MB (テスト実施時はさらに 2 MB)">
+@z
+
+@x
     <title>Introduction to UPower</title>
 @y
     <title>&IntroductionTo1;UPower&IntroductionTo2;</title>
@@ -165,9 +171,19 @@
 @z
 
 @x
+      <parameter>--enable-deprecated</parameter>: This switch enables
+      deprecated functionality which is still needed by some
+      applications.
+@y
+      <parameter>--enable-deprecated</parameter>:
+      このスイッチは古くなった機能を有効にします。
+      この機能を利用するアプリケーションがまだあるためです。
+@z
+
+@x
     <title>Configuring your kernel for UPower</title>
 @y
-    <title>Configuring your kernel for UPower</title>
+    <title>UPower に対するカーネル設定</title>
 @z
 
 @x
@@ -182,6 +198,24 @@
       you need to enable CONFIG_TIMER_STATS.  This is achieved in
       <command>make menuconfig</command> by going to the &apos;kernel-hacking&apos;
       menu and selecting &apos;Collect kernel timers statistics&apos;.
+@z
+
+@x
+      <title>Systemd Unit</title>
+@y
+      <title>&SystemdUnit;</title>
+@z
+
+@x
+        To start the <command>upowerd</command> daemon at boot,
+        enable the previously installed systemd unit by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@y
+        To start the <command>upowerd</command> daemon at boot,
+        enable the previously installed systemd unit by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x

@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY vala-buildsize     "114 MB (including tests)">
+  <!ENTITY vala-time          "0.9 SBU (including tests)">
+@y
+  <!ENTITY vala-buildsize     "114 MB (テスト込み)">
+  <!ENTITY vala-time          "0.9 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to Vala</title>
 @y
     <title>&IntroductionTo1;Vala&IntroductionTo2;</title>

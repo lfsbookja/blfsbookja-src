@@ -158,6 +158,12 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
+@x mtdev-test
+            is a tool to test <filename class="libraryfile">libmtdev</filename>.
+@y
+            <filename class="libraryfile">libmtdev</filename> をテストするツール。
+@z
+
 @x libmtdev.so
             contains Multitouch Protocol Translation API functions.
 @y

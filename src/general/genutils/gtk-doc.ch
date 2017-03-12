@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY gtk-doc-buildsize     "12.2 MB (with tests)">
+  <!ENTITY gtk-doc-time          "0.3 SBU (with tests)">
+@y
+  <!ENTITY gtk-doc-buildsize     "12.2 MB (テスト込み)">
+  <!ENTITY gtk-doc-time          "0.3 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to GTK-Doc</title>
 @y
     <title>&IntroductionTo1;GTK-Doc&IntroductionTo2;</title>
@@ -133,17 +141,15 @@
       <xref linkend="sgml-dtd"/> and
       <xref linkend="docbook-dsssl"/>
       (SGML support, not actively maintained any more),
-      <xref linkend="python2"/> (builds gtkdoc-depscan), and
+      <xref linkend="python2"/> (builds gtkdoc-depscan),
       <xref linkend="rarian"/>
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gtk-doc"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gtk-doc"/></para>
 @z
 
 @x

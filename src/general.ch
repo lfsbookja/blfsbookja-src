@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "March 10th &year;">
+<!ENTITY releasedate  "March 11th &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20170310">
+<!ENTITY jversion     "20170312">
 <!ENTITY jratio       "55.9 &percnt;">
 @z
 
@@ -82,6 +82,7 @@
 <!ENTITY Script       "スクリプト">
 <!ENTITY BootScript   "ブートスクリプト">
 <!ENTITY InitScript   "初期化スクリプト">
+<!ENTITY SystemdUnit  "Systemd ユニット">
 
 <!-- 章立て -->
 <!ENTITY SystemUtilities "システムユーティリティー">

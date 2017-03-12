@@ -85,7 +85,7 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-subdir = src
+subdir = src/lxqt
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/version.ac \
 	$(top_srcdir)/m4/progs.m4 \
@@ -98,7 +98,7 @@ am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \
 	$(ACLOCAL_M4)
 DIST_COMMON = $(srcdir)/Makefile.am $(am__DIST_COMMON)
 mkinstalldirs = $(install_sh) -d
-CONFIG_CLEAN_FILES = userconfig.xml
+CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 AM_V_P = $(am__v_P_@AM_V@)
 am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
@@ -155,7 +155,7 @@ am__define_uniq_tagged_files = \
 ETAGS = etags
 CTAGS = ctags
 DIST_SUBDIRS = $(SUBDIRS)
-am__DIST_COMMON = $(srcdir)/Makefile.in $(srcdir)/userconfig.xml.in
+am__DIST_COMMON = $(srcdir)/Makefile.in
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
 am__relativize = \
   dir0=`pwd`; \
@@ -235,7 +235,7 @@ PACKAGE_URL = @PACKAGE_URL@
 PACKAGE_VERSION = @PACKAGE_VERSION@
 PATH_SEPARATOR = @PATH_SEPARATOR@
 PDF = @PDF@
-PDF_OUTPUT = ../blfsbookja-svn.pdf
+PDF_OUTPUT = @PDF_OUTPUT@
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
@@ -290,37 +290,18 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = appendices book general gnome introduction kde lxde \
-	lxqt networking \
-	multimedia postlfs pst server stylesheets template x \
-	xfce xincludes xsoft
+SUBDIRS = apps desktop
+BOOKdir = @abs_bookdir@/lxqt
+CHANGE_FILES = \
+	lxqt.ch
 
-EXTRA_DIST = \
-	general.ch  \
-	packages.ch \
-	gnome.ch    \
-	index.ch    \
-	tidy.ch     \
-	tidy.sed    \
-	ipam.xml    \
-	ipag.xml
-
-BOOKdir = @abs_bookdir@
-srcs = general.ent packages.ent gnome.ent index.xml tidy.conf
-EXTRACLEANFILES = $(srcs)
-ROOT_ID = 
-RENDERTMP = ./tmp
-CHUNK_QUIET = 1
-ALLXML := $(filter-out $(RENDERTMP)/%, \
-	$(wildcard ./*.xml ./*/*.xml ./*/*/*.xml ./*/*/*/*.xml ./*/*/*/*/*.xml))
-
-ALLXSL := $(filter-out $(RENDERTMP)/%, \
-	$(wildcard ./*.xsl ./*/*.xsl ./*/*/*.xsl ./*/*/*/*.xsl ./*/*/*/*/*.xsl))
-
-REV = @revspec@
+EXTRA_DIST = $(CHANGE_FILES)
+srcs = $(CHANGE_FILES:.ch=.xml)
+SUFFIXES = .ch .xml
 all: all-recursive
 
 .SUFFIXES:
+.SUFFIXES: .ch .xml
 $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	@for dep in $?; do \
 	  case '$(am__configure_deps)' in \
@@ -330,9 +311,9 @@ $(srcdir)/Makefile.in:  $(srcdir)/Makefile.am  $(am__configure_deps)
 	      exit 1;; \
 	  esac; \
 	done; \
-	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/Makefile'; \
+	echo ' cd $(top_srcdir) && $(AUTOMAKE) --gnu src/lxqt/Makefile'; \
 	$(am__cd) $(top_srcdir) && \
-	  $(AUTOMAKE) --gnu src/Makefile
+	  $(AUTOMAKE) --gnu src/lxqt/Makefile
 Makefile: $(srcdir)/Makefile.in $(top_builddir)/config.status
 	@case '$?' in \
 	  *config.status*) \
@@ -350,8 +331,6 @@ $(top_srcdir)/configure:  $(am__configure_deps)
 $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
 	cd $(top_builddir) && $(MAKE) $(AM_MAKEFLAGS) am--refresh
 $(am__aclocal_m4_deps):
-userconfig.xml: $(top_builddir)/config.status $(srcdir)/userconfig.xml.in
-	cd $(top_builddir) && $(SHELL) ./config.status $(subdir)/$@
 
 # This directory's subdirectories are mostly independent; you can cd
 # into them and run 'make' without going through this Makefile.
@@ -554,6 +533,8 @@ dvi: dvi-recursive
 
 dvi-am:
 
+html: html-recursive
+
 html-am:
 
 info: info-recursive
@@ -622,146 +603,13 @@ uninstall-am:
 
 .PRECIOUS: Makefile
 
+.ch.xml:
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
 
-all: ctie $(srcs) blfs # stylesheets bootscripts udev-config blfs
+all: ctie $(srcs)
 
 ctie:
 	cd $(top_builddir)/ctie && make ctie
-
-general.ent: $(BOOKdir)/general.ent $(srcdir)/general.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
-packages.ent: $(BOOKdir)/packages.ent $(srcdir)/packages.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
-gnome.ent: $(BOOKdir)/gnome.ent $(srcdir)/gnome.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
-index.xml: $(BOOKdir)/index.xml $(srcdir)/index.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
-tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch $(srcdir)/tidy.sed
-	sed -f $(srcdir)/tidy.sed < $(BOOKdir)/tidy.conf > tidy.conf.tmp
-	$(top_builddir)/$(CTIE) -m $@ tidy.conf.tmp $(srcdir)/tidy.ch
-	rm -f tidy.conf.tmp
-
-stylesheets:
-	$(MKDIR_P) stylesheets
-	cp -R $(BOOKdir)/stylesheets/* stylesheets
-
-bootscripts:
-	$(MKDIR_P) bootscripts
-	cp -R $(BOOKdir)/bootscripts/* bootscripts
-
-udev-config:
-	$(MKDIR_P) udev-config
-	cp -R $(BOOKdir)/udev-config/* udev-config
-
-blfs: html wget-list
-
-html: $(BASEDIR)/index.html jchangelog
-$(BASEDIR)/index.html: $(RENDERTMP)/$(BLFSHTML)
-	@echo "Generating chunked XHTML files..."
-	$(XSLTPROC) --nonet                                \
-                --stringparam chunk.quietly $(CHUNK_QUIET) \
-                --stringparam rootid "$(ROOT_ID)"          \
-                --stringparam base.dir $(BASEDIR)/         \
-                stylesheets/blfs-chunked.xsl               \
-                $(RENDERTMP)/$(BLFSHTML)
-
-	@echo "Copying CSS code and images..."
-	$(Q)if [ ! -e $(BASEDIR)/stylesheets ]; then \
-	  $(MKDIR_P) $(BASEDIR)/stylesheets; \
-	fi;
-	cp -pv ./stylesheets/lfs-xsl/*.css $(BASEDIR)/stylesheets
-	$(Q)if [ ! -e $(BASEDIR)/images ]; then \
-	  $(MKDIR_P) $(BASEDIR)/images; \
-	fi;
-	$(Q)cp $(BOOKdir)/images/*.png $(BASEDIR)/images
-	$(Q)cd $(BASEDIR)/; sed -i -e "s@../stylesheets@stylesheets@g" *.html
-	$(Q)cd $(BASEDIR)/; sed -i -e "s@../images@images@g" *.html
-
-	@echo "Running Tidy and obfuscate.sh on chunked XHTML..."
-	$(Q)for filename in `find $(BASEDIR) -name "*.html"`; do \
-	  $(TIDY) -config tidy.conf $$filename; \
-	  true; \
-	  bash $(BOOKdir)/obfuscate.sh $$filename; \
-	  sed -i -e "s@text/html@application/xhtml+xml@g" $$filename; \
-	done;
-
-jchangelog:
-	cd introduction/welcome && make jchangelog-2008.txt jchangelog-2009.txt\
-		jchangelog-2010.txt jchangelog-2011.txt
-	$(Q)cp -p introduction/welcome/jchangelog-*.txt $(BASEDIR)/introduction
-
-validate: $(RENDERTMP)/$(BLFSFULL)
-$(RENDERTMP)/$(BLFSFULL): general.ent $(ALLXML) $(ALLXSL)
-	$(Q)[ -d $(RENDERTMP) ] || mkdir -p $(RENDERTMP)
-
-	@echo "Adjusting for revision $(REV)..."
-	$(Q)xsltproc --nonet                          \
-                --xinclude                            \
-                --output $(RENDERTMP)/$(BLFSHTML2)    \
-                --stringparam profile.revision $(REV) \
-                stylesheets/lfs-xsl/profile.xsl       \
-                index.xml
-
-	@echo "Validating the book..."
-	$(XMLLINT) --nonet                         \
-               --noent                             \
-               --postvalid                         \
-               --output $(RENDERTMP)/$(BLFSFULL) \
-               $(RENDERTMP)/$(BLFSHTML2)
-
-profile-html: $(RENDERTMP)/$(BLFSHTML)
-$(RENDERTMP)/$(BLFSHTML): $(RENDERTMP)/$(BLFSFULL)
-	@echo "Generating profiled XML for XHTML..."
-	$(XSLTPROC) --nonet                          \
-                --stringparam profile.condition html \
-                --output $(RENDERTMP)/$(BLFSHTML)    \
-                stylesheets/lfs-xsl/profile.xsl      \
-                $(RENDERTMP)/$(BLFSFULL)
-
-#$(RENDERTMP)/blfs-html.xml: $(RENDERTMP)/blfs-full.xml
-#	@echo "Generating profiled XML for XHTML..."
-#	$(XSLTPROC) --nonet --stringparam profile.condition html \
-#	  --output $(RENDERTMP)/blfs-html.xml stylesheets/lfs-xsl/profile.xsl \
-#	  $(RENDERTMP)/blfs-full.xml
-
-#$(RENDERTMP)/blfs-full.xml: general.ent $(ALLXML) $(ALLXSL)
-#	@echo "Validating the book..."
-#	$(Q)[ -d $(RENDERTMP) ] || mkdir -p $(RENDERTMP)
-#	$(XMLLINT) --nonet --noent --xinclude --postvalid \
-#	  -o $(RENDERTMP)/blfs-full.xml index.xml
-
-@PDF@@IPA@pdf: $(BASEDIR)/$(PDF_OUTPUT) blfs
-@PDF@@IPA@$(RENDERTMP)/blfs-pdf.xml: $(RENDERTMP)/$(BLFSFULL)
-@PDF@@IPA@	@echo "Generating profiled XML for PDF..."
-@PDF@@IPA@	$(XSLTPROC) --nonet --stringparam profile.condition pdf \
-@PDF@@IPA@	  --output $(RENDERTMP)/blfs-pdf.xml stylesheets/lfs-xsl/profile.xsl \
-@PDF@@IPA@	  $(RENDERTMP)/blfs-full.xml
-
-@PDF@@IPA@$(RENDERTMP)/blfs-pdf.fo: $(RENDERTMP)/blfs-pdf.xml
-@PDF@@IPA@	@echo "Generating FO file..."
-@PDF@@IPA@	$(Q)xsltproc --nonet -stringparam rootid "$(ROOT_ID)" \
-@PDF@@IPA@	  --output $(RENDERTMP)/blfs-pdf.fo stylesheets/blfs-pdf.xsl \
-@PDF@@IPA@	  $(RENDERTMP)/blfs-pdf.xml
-@PDF@@IPA@	$(Q)sed -i -e 's/span="inherit"/span="all"/' $(RENDERTMP)/blfs-pdf.fo
-
-@PDF@@IPA@$(BASEDIR)/$(PDF_OUTPUT): $(RENDERTMP)/blfs-pdf.fo
-@PDF@@IPA@	@echo "Generating PDF file..."
-@PDF@@IPA@	$(Q)if [ ! -e $(BASEDIR) ]; then \
-@PDF@@IPA@	  mkdir -p $(BASEDIR); \
-@PDF@@IPA@	fi;
-@PDF@@IPA@	cp -R $(BASEDIR)/images .
-@PDF@@IPA@	$(Q)fop -c userconfig.xml $(RENDERTMP)/blfs-pdf.fo $(BASEDIR)/$(PDF_OUTPUT)
-
-@PDF@@IPA@userconfig.xml: $(srcdir)/userconfig.xml.in
-
-wget-list: $(BASEDIR)/wget-list
-$(BASEDIR)/wget-list: $(RENDERTMP)/$(BLFSFULL)
-	@echo "Generating wget list for $(REV) at $(BASEDIR)/wget-list ..."
-	$(MKDIR_P) $(BASEDIR)
-	$(XSLTPROC) --nonet                   \
-                --output $(BASEDIR)/wget-list \
-                stylesheets/wget-list.xsl     \
-                $(RENDERTMP)/$(BLFSFULL)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

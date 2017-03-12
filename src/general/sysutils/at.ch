@@ -137,6 +137,19 @@
 @z
 
 @x
+      Fix <filename>Makefile.in</filename> so that the documentation directory
+      is installed in the specified docdir:
+@y
+      docdir に指定されたディレクトリにドキュメントをインストールするように <filename>Makefile.in</filename> を修正します。
+@z
+
+@x
+      Regenerate the build files to be consistent with this package version:
+@y
+      ビルド関連のファイルを再生成します。
+@z
+
+@x
     <para>Install <application>at</application> with the following
     commands:</para>
 @y
@@ -186,7 +199,7 @@
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
       <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x
@@ -207,10 +220,8 @@
       </para>
 @y
       <para revision="systemd">
-        To start the <command>atd</command> daemon at boot,
-        enable the previously installed systemd unit by
-        running the following command as the
-        <systemitem class="username">root</systemitem> user:
+        既にインストールされた systemd ユニットによりシステム起動時に <command>atd</command> デーモンが起動するようにします。
+        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
       </para>
 @z
 

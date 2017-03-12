@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY cpio-buildsize     "18 MB (with tests and docs)">
+  <!ENTITY cpio-time          "0.3 SBU (with tests and docs)">
+@y
+  <!ENTITY cpio-buildsize     "18 MB (テストとドキュメント込み)">
+  <!ENTITY cpio-time          "0.3 SBU (テストとドキュメント込み)">
+@z
+
+@x
     <title>Introduction to cpio</title>
 @y
     <title>&IntroductionTo1;cpio&IntroductionTo2;</title>
@@ -68,6 +76,24 @@
         <para>Estimated build time: &cpio-time;</para>
 @y
         <para>&Estimatedbuildtime;: &cpio-time;</para>
+@z
+
+@x
+    <bridgehead renderas="sect3">CPIO Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;CPIO&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
+    </para>
 @z
 
 @x

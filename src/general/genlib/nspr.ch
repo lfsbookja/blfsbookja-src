@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY nspr-time          "less than 0.1 SBU">
+@y
+  <!ENTITY nspr-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to NSPR</title>
 @y
     <title>&IntroductionTo1;NSPR&IntroductionTo2;</title>

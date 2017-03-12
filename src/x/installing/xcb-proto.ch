@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY xcb-proto-time          "less than 0.1 SBU">
+@y
+  <!ENTITY xcb-proto-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to xcb-proto</title>
 @y
     <title>&IntroductionTo1;xcb-proto&IntroductionTo2;</title>
@@ -72,6 +78,23 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch (for Python 3): <ulink
+@y
+          必須のパッチ (Python 3 向け): <ulink
+@z
+@x
+          Recommended patch:
+@y
+          推奨パッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">xcb-proto Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;xcb-proto&Dependencies2;</bridgehead>
@@ -106,10 +129,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/xcb-proto"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/xcb-proto"/></para>
 @z
 
 @x
@@ -118,14 +139,19 @@
     <title>&InstallationOf1;xcb-proto&InstallationOf2;</title>
 @z
 
-% @x
-%     <para>If you are compiling against <xref linkend="python3"/>, use the
-%     following commands:</para>
-% @y
-%     <para>
-%     <xref linkend="python3"/> を用いてビルドを行う場合は、以下のコマンドを実行します。
-%     </para>
-% @z
+@x
+    <para>First, fix a file that allows the checks to run properly:</para>
+@y
+    <para>
+    チェック実行を適正にするようにファイル修正を行います。
+    </para>
+@z
+
+@x
+      If building with Python 3, issue the following command:
+@y
+      Python 3 とともにビルドする場合は以下のコマンドを実行します。
+@z
 
 @x
     <para>Install <application>xcb-proto</application> by running the following

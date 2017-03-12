@@ -89,6 +89,12 @@
 @z
 
 @x
+      First, fix the documentation directory name:
+@y
+      まずドキュメントディレクトリ名を変更します。
+@z
+
+@x
       Install <application>libsigc++</application> by running the following
       commands:
 @y

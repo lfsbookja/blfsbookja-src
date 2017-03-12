@@ -107,6 +107,12 @@
 @z
 
 @x
+        This package does not support parallel build.
+@y
+        &notParallelBuild;
+@z
+
+@x
       Install <application>libusb</application> by running the following
       commands:
 @y
@@ -137,6 +143,20 @@
       commands as the <systemitem class="username">root</systemitem> user:
 @y
       API ドキュメントをビルドした場合、<systemitem class="username">root</systemitem> ユーザーのまま、以下を実行してドキュメントをインストールします。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>sed -i ...</command>: This sed prevents a warning when 
+      building the documentation.
+@y
+      <command>sed -i ...</command>:
+      この sed コマンドはドキュメント生成時の警告メッセージを無効にします。
 @z
 
 @x

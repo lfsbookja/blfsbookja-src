@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY yasm-buildsize     "27 MB (additional 12 MB for the tests)">
+  <!ENTITY yasm-time          "0.1 SBU (additional 0.1 SBU for the tests)">
+@y
+  <!ENTITY yasm-buildsize     "27 MB (テスト実施時はさらに 12 MB)">
+  <!ENTITY yasm-time          "0.1 SBU (テスト実施時はさらに 0.1 SBU)">
+@z
+
+@x
     <title>Introduction to yasm</title>
 @y
     <title>&IntroductionTo1;yasm&IntroductionTo2;</title>

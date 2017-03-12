@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY check-buildsize     "9.5 MB (add 1.2 MB for the tests)">
+  <!ENTITY check-time          "0.1 SBU (add 3.4 SBU for the tests)">
+@y
+  <!ENTITY check-buildsize     "9.5 MB (テスト実施時はさらに 1.2 MB)">
+  <!ENTITY check-time          "0.1 SBU (テスト実施時はさらに 3.4 SBU)">
+@z
+
+@x
     <title>Introduction to Check</title>
 @y
     <title>&IntroductionTo1;Check&IntroductionTo2;</title>

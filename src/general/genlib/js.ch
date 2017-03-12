@@ -146,8 +146,8 @@
       <command>sed ... config/milestone.pl</command>: Fix an
       issue caused by perl-5.22.0 and later.
 @y
-      <command>sed ... config/milestone.pl</command>: Fix an
-      issue caused by perl-5.22.0 and later.
+      <command>sed ... config/milestone.pl</command>:
+      perl-5.22.0 以降に対して発生する不具合を修正します。
 @z
 
 @x

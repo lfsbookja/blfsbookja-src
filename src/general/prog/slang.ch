@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY slang-buildsize     "41 MB (with tests)">
+  <!ENTITY slang-time          "0.6 SBU (with tests)">
+@y
+  <!ENTITY slang-buildsize     "41 MB (テスト込み)">
+  <!ENTITY slang-time          "0.6 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to slang</title>
 @y
     <title>&IntroductionTo1;slang&IntroductionTo2;</title>

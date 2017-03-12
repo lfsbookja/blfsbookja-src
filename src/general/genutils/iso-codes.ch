@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY iso-codes-time          "0.2 SBU (with tests)">
+@y
+  <!ENTITY iso-codes-time          "0.2 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to ISO Codes</title>
 @y
     <title>&IntroductionTo1;ISO Codes&IntroductionTo2;</title>
@@ -70,23 +76,23 @@
           &Estimatedbuildtime;: &iso-codes-time;
 @z
 
-% @x
-%     <bridgehead renderas="sect3">ISO Codes Dependencies</bridgehead>
-% @y
-%     <bridgehead renderas="sect3">&Dependencies1;ISO Codes&Dependencies2;</bridgehead>
-% @z
-% 
-% @x
-%     <bridgehead renderas="sect4">Required</bridgehead>
-%     <para role="required">
-%       <xref linkend="python2"/>
-%     </para>
-% @y
-%     <bridgehead renderas="sect4">&Required;</bridgehead>
-%     <para role="required">
-%       <xref linkend="python2"/>
-%     </para>
-% @z
+@x
+    <bridgehead renderas="sect3">ISO Codes Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;ISO Codes&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="python3"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="python3"/>
+    </para>
+@z
 
 @x
     <para condition="html" role="usernotes">User Notes:
@@ -111,6 +117,15 @@
       To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+@z
+
+@x
+        If you install <application>ISO codes</application> over a previous
+        installed version, the install step will fail when creating some 
+        symlinks. In order to properly update them, run:
+@y
+        <application>ISO codes</application> の以前のバージョンをインストールしていて上書きインストールする場合は、シンボリックリンクの生成に失敗します。
+        そのときは以下を実行します。
 @z
 
 @x

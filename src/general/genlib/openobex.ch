@@ -138,6 +138,17 @@
 @z
 
 @x
+    <para><application>OpenOBEX</application> installs a udev rule that
+    requires a group named plugdev.  Create that group as the
+    <systemitem class="username">root</systemitem> user:</para>
+@y
+    <para>
+    <application>OpenOBEX</application> は plugdev というグループ名を用いた udev ルールをインストールします。
+    <systemitem class="username">root</systemitem> ユーザーになってそのグループを生成します。
+    </para>
+@z
+
+@x
       Install <application>OpenOBEX</application> by running the following
       commands:
 @y

@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libxslt-buildsize     "40 MB (with tests)">
+  <!ENTITY libxslt-time          "0.3 SBU (with tests)">
+@y
+  <!ENTITY libxslt-buildsize     "40 MB (テスト込み)">
+  <!ENTITY libxslt-time          "0.3 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to libxslt</title>
 @y
     <title>&IntroductionTo1;libxslt&IntroductionTo2;</title>

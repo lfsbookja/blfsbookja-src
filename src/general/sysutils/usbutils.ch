@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY usbutils-time          "less than 0.1 SBU">
+@y
+  <!ENTITY usbutils-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to USB Utils</title>
 @y
     <title>&IntroductionTo1;USB Utils&IntroductionTo2;</title>
@@ -88,6 +94,16 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required Runtime</bridgehead>
+    <para role="required runtime">
+      <xref linkend="python2"/>    </para>
+@y
+    <bridgehead renderas="sect4">実行時に&Required;</bridgehead>
+    <para role="required runtime">
+      <xref linkend="python2"/>    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -116,6 +132,27 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      To install the <filename>usb.ids</filename> data file, using
+      <xref linkend="wget"/>, run, as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      データファイル <filename>usb.ids</filename> をインストールするには <xref
+      linkend="wget"/> を利用し <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      The script <command>lsusb.py</command> displays information in a more
+      easily readable form than <command>lsusb</command>. To find the options,
+      use <command>lsusb.py -h</command>. One form of use recommended by the
+      developer is <command>lsusb.py -ciu</command>.
+@y
+      The script <command>lsusb.py</command> displays information in a more
+      easily readable form than <command>lsusb</command>. To find the options,
+      use <command>lsusb.py -h</command>. One form of use recommended by the
+      developer is <command>lsusb.py -ciu</command>.
 @z
 
 @x

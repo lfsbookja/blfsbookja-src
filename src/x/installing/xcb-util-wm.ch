@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY xcb-util-wm-time          "less than 0.1 SBU">
+@y
+  <!ENTITY xcb-util-wm-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to xcb-util-wm</title>
 @y
     <title>&IntroductionTo1;xcb-util-wm&IntroductionTo2;</title>
@@ -83,6 +89,18 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libxcb"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>
     </para>
 @z
 

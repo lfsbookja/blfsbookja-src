@@ -82,11 +82,27 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">dhcpcd Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;dhcpcd&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="llvm"/> (with Clang)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="llvm"/> (Clang 込み)
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/dhcpcd"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/dhcpcd"/></para>
 @z
 
 @x
@@ -119,15 +135,43 @@
 @z
 
 @x
-    <para>By default, a plain text lease info file isn't created but the
-    <application>dhcpcd</application> provides a hook which can be used for creating
-    such a file. Install the hook by running the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+    <title>Command Explanations</title>
 @y
-    <para>By default, a plain text lease info file isn't created but the
-    <application>dhcpcd</application> provides a hook which can be used for creating
-    such a file. Install the hook by running the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>--libexecdir=/lib/dhcpcd</parameter>: The default
+      <filename class="directory">/libexec</filename> is not FHS-compliant.
+      Since this directory may need to be available early in the boot,
+      <filename class="directory">/usr/libexec</filename> cannot be used either.
+@y
+      <parameter>--libexecdir=/lib/dhcpcd</parameter>: The default
+      <filename class="directory">/libexec</filename> is not FHS-compliant.
+      Since this directory may need to be available early in the boot,
+      <filename class="directory">/usr/libexec</filename> cannot be used either.
+@z
+
+@x
+      <parameter>--dbdir=/var/lib/dhcpcd</parameter>: The default
+      <filename class="directory">/var/db</filename> is not FHS-compliant
+@y
+      <parameter>--dbdir=/var/lib/dhcpcd</parameter>: The default
+      <filename class="directory">/var/db</filename> is not FHS-compliant
+@z
+
+@x
+      <option>--with-hook=...</option>: You can optionally install more hooks,
+      for example to install some configuration files such as
+      <filename>ntp.conf</filename>. The set of hooks is in the
+      <filename class="directory">dhcpcd-hooks</filename> directory in the
+      build tree.
+@y
+      <option>--with-hook=...</option>: You can optionally install more hooks,
+      for example to install some configuration files such as
+      <filename>ntp.conf</filename>. The set of hooks is in the
+      <filename class="directory">dhcpcd-hooks</filename> directory in the
+      build tree.
 @z
 
 @x
@@ -142,7 +186,7 @@
       <title>&ConfigFiles;</title>
 @z
 
-@x
+@x revision="sysv"
       <title>General Configuration Information</title>
 @y
       <title>全般的な&ConfigInfo;</title>
@@ -252,6 +296,120 @@
 @y
         <para>Review the <command>dhcpcd</command> man page for switches to add
         to the <envar>DHCP_START</envar> value.</para> 
+@z
+
+@x revision="sysv"
+      <title>Configuration Information: fixed ip</title>
+@y
+      <title>&ConfigInfo;: 固定IP</title>
+@z
+
+
+
+@x revision="systemd"
+      <title>General Configuration Information</title>
+@y
+      <title>全般的な&ConfigInfo;</title>
+@z
+
+@x
+        If you want to configure network interfaces at boot using
+        <command>dhcpcd</command>, you need to install the
+        systemd unit included in <xref linkend="systemd-units"/>
+        package by running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@y
+        If you want to configure network interfaces at boot using
+        <command>dhcpcd</command>, you need to install the
+        systemd unit included in <xref linkend="systemd-units"/>
+        package by running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        Whenever <command>dhcpcd</command> configures or shuts down
+        a network interface, it executes hook scripts. For more details
+        about those scripts, see the <command>dhcpcd-run-hooks</command> and
+        <command>dhcpcd</command> man pages.
+@y
+        Whenever <command>dhcpcd</command> configures or shuts down
+        a network interface, it executes hook scripts. For more details
+        about those scripts, see the <command>dhcpcd-run-hooks</command> and
+        <command>dhcpcd</command> man pages.
+@z
+
+@x
+        <para id="dhcpcd-config5">The default behavior of
+        <command>dhcpcd</command> sets the hostname and mtu settings. It also
+        overwrites <filename>/etc/resolv.conf</filename> and
+        <filename>/etc/ntp.conf</filename>.
+@y
+        <para id="dhcpcd-config5">The default behavior of
+        <command>dhcpcd</command> sets the hostname and mtu settings. It also
+        overwrites <filename>/etc/resolv.conf</filename> and
+        <filename>/etc/ntp.conf</filename>.
+@z
+
+@x
+        These modifications to system files and settings on system
+        configuration files are done by hooks which are stored in <filename
+        class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+@y
+        These modifications to system files and settings on system
+        configuration files are done by hooks which are stored in <filename
+        class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+@z
+
+@x
+        Setup <command>dhcpcd</command> by removing or adding hooks from/to
+        that directory.  The execution of hooks can be disabled by using the
+        <option>--nohook</option> (<option>-C</option>) command line option or
+        by the <option>nohook</option> option in the
+        <filename>/etc/dhcpcd.conf</filename> file.</para>
+@y
+        Setup <command>dhcpcd</command> by removing or adding hooks from/to
+        that directory.  The execution of hooks can be disabled by using the
+        <option>--nohook</option> (<option>-C</option>) command line option or
+        by the <option>nohook</option> option in the
+        <filename>/etc/dhcpcd.conf</filename> file.</para>
+@z
+
+@x
+        Make sure that you disable the <command>systemd-networkd</command>
+        service or configure it not to manage the interfaces you want to manage
+        with <application>dhcpcd</application>.
+@y
+        Make sure that you disable the <command>systemd-networkd</command>
+        service or configure it not to manage the interfaces you want to manage
+        with <application>dhcpcd</application>.
+@z
+
+@x
+        At this point you can test if <command>dhcpcd</command> is
+        behaving as expected by running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@y
+        At this point you can test if <command>dhcpcd</command> is
+        behaving as expected by running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        To start <command>dhcpcd</command> on a specific interface
+        at boot, enable the previously installed systemd unit by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@y
+        To start <command>dhcpcd</command> on a specific interface
+        at boot, enable the previously installed systemd unit by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        Replace <replaceable>eth0</replaceable> with the actual interface name.
+@y
+        Replace <replaceable>eth0</replaceable> with the actual interface name.
 @z
 
 @x

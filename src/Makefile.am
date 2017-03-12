@@ -100,7 +100,7 @@ $(BASEDIR)/index.html: $(RENDERTMP)/$(BLFSHTML)
 jchangelog:
 	cd introduction/welcome && make jchangelog-2008.txt jchangelog-2009.txt\
 		jchangelog-2010.txt jchangelog-2011.txt
-	$(Q)cp -pv introduction/welcome/jchangelog-*.txt $(BASEDIR)/introduction
+	$(Q)cp -p introduction/welcome/jchangelog-*.txt $(BASEDIR)/introduction
 
 validate: $(RENDERTMP)/$(BLFSFULL)
 $(RENDERTMP)/$(BLFSFULL): general.ent $(ALLXML) $(ALLXSL)

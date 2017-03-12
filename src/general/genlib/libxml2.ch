@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libxml2-buildsize     "95 MB (additional 20 MB for tests)">
+  <!ENTITY libxml2-time          "0.6 SBU (additional 0.2 SBU for tests)">
+@y
+  <!ENTITY libxml2-buildsize     "95 MB (テスト実施時はさらに 20 MB)">
+  <!ENTITY libxml2-time          "0.6 SBU (テスト実施時はさらに 0.2 SBU)">
+@z
+
+@x
     <title>Introduction to libxml2</title>
 @y
     <title>&IntroductionTo1;libxml2&IntroductionTo2;</title>
@@ -119,6 +127,12 @@
 @z
 
 @x
+      <xref linkend="valgrind"/> (may be used in the tests)
+@y
+      <xref linkend="valgrind"/> (テスト実施時に利用)
+@z
+
+@x
       User Notes: <ulink url="&blfs-wiki;/libxml2"/>
 @y
       &UserNotes;: <ulink url="&blfs-wiki;/libxml2"/>
@@ -176,6 +190,14 @@
 @y
       <parameter>--with-history</parameter>:
       このスイッチは <command>xmlcatalog</command> や <command>xmllint</command> をシェルモードで実行する際に <application>Readline</application> サポートを有効にします。
+@z
+
+@x
+      <option>--with-python=/usr/bin/python3</option>: Add this switch if you
+      want libxml2 to use Python3 instead of Python2.
+@y
+      <option>--with-python=/usr/bin/python3</option>:
+      libxml2 が Python2 でなく Python3 を利用するようにしたいときに指定します。
 @z
 
 @x

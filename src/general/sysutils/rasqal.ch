@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY rasqal-buildsize     "22 MB (additional 4 MB for the tests)">
+  <!ENTITY rasqal-time          "0.3 SBU (additional 0.7 SBU for the tests)">
+@y
+  <!ENTITY rasqal-buildsize     "22 MB (テスト実施時はさらに 4 MB)">
+  <!ENTITY rasqal-time          "0.3 SBU (テスト実施時はさらに 0.7 SBU)">
+@z
+
+@x
     <title>Introduction to Rasqal</title>
 @y
     <title>&IntroductionTo1;Rasqal&IntroductionTo2;</title>
@@ -92,6 +100,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="pcre"/> and
+      <xref linkend="libgcrypt"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="pcre"/>,
+      <xref linkend="libgcrypt"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -108,6 +130,12 @@
       commands:
 @y
       以下のコマンドを実行して <application>Rasqal</application> をビルドします。
+@z
+
+@x
+      To test the results, issue: <command>make check</command>.
+@y
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -179,5 +207,5 @@
 @x roqet
             is an RDF query utility.
 @y
-            is an RDF query utility.
+            RDF クエリーユーティリティー。
 @z

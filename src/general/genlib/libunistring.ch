@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libunistring-buildsize     "43 MB (add 42 MB for tests)">
+  <!ENTITY libunistring-time          "0.7 SBU (add 1.4 SBU for tests)">
+@y
+  <!ENTITY libunistring-buildsize     "43 MB (テスト実施時はさらに 42 MB)">
+  <!ENTITY libunistring-time          "0.7 SBU (テスト実施時はさらに 1.4 SBU)">
+@z
+
+@x
     <title>Introduction to libunistring</title>
 @y
     <title>&IntroductionTo1;libunistring&IntroductionTo2;</title>
@@ -124,6 +132,12 @@
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
 @z
 
 @x

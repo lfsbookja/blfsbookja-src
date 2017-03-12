@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libarchive-buildsize     "41 MB (add 23 MB for tests)">
+  <!ENTITY libarchive-time          "0.4 SBU (add 0.9 SBU for tests)">
+@y
+  <!ENTITY libarchive-buildsize     "41 MB (テスト実施時はさらに 23 MB)">
+  <!ENTITY libarchive-time          "0.4 SBU (テスト実施時はさらに 0.9 SBU)">
+@z
+
+@x
     <title>Introduction to libarchive</title>
 @y
     <title>&IntroductionTo1;libarchive&IntroductionTo2;</title>
@@ -187,6 +195,12 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x bsdcat
+            expands files to standard output.
+@y
+            ファイルを拡張し標準出力に出力します。
 @z
 
 @x bsdcpio

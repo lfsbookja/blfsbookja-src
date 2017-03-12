@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY gsl-buildsize     "188 MB (with tests)">
+  <!ENTITY gsl-time          "1.9 SBU (with tests)">
+@y
+  <!ENTITY gsl-buildsize     "188 MB (テスト込み)">
+  <!ENTITY gsl-time          "1.9 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to Gsl</title>
 @y
     <title>&IntroductionTo1;Gsl&IntroductionTo2;</title>
@@ -68,6 +76,30 @@
           Estimated build time: &gsl-time;
 @y
           &Estimatedbuildtime;: &gsl-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Gsl Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Gsl&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="texlive"/> or <xref linkend="tl-installer"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="texlive"/> または <xref linkend="tl-installer"/>
+    </para>
+@z
+
+@x
+      User Notes: <ulink url="&blfs-wiki;/gsl"/>
+@y
+      &UserNotes;: <ulink url="&blfs-wiki;/gsl"/>
 @z
 
 @x

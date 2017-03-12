@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY elfutils-buildsize     "74 MB (with tests)">
+  <!ENTITY elfutils-time          "0.9 SBU (with tests)">
+@y
+  <!ENTITY elfutils-buildsize     "74 MB (テスト込み)">
+  <!ENTITY elfutils-time          "0.9 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to elfutils</title>
 @y
     <title>&IntroductionTo1;elfutils&IntroductionTo2;</title>
@@ -70,6 +78,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">elfutils Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;elfutils&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="valgrind"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="valgrind"/>
+    </para>
+@z
+
+@x
       User Notes: <ulink url="&blfs-wiki;/elfutils"/>
 @y
       &UserNotes;: <ulink url="&blfs-wiki;/elfutils"/>
@@ -113,6 +139,13 @@
 @y
       <parameter>--program-prefix="eu-"</parameter>:
       このスイッチは、インストールするプログラムの名称が、LFS にてインストールした <application>Binutils</application> のプログラムと重なるため、名称変更を行うものです。
+@z
+
+@x
+      <option>--enable-valgrind</option>: Run all tests under valgrind.
+@y
+      <option>--enable-valgrind</option>:
+      すべてのテストを valgrind のもとで実行します。
 @z
 
 @x
@@ -162,3 +195,10 @@
           /usr/lib/elfutils
         </seg>
 @z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+

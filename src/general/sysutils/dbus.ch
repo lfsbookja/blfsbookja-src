@@ -119,7 +119,7 @@
       For the tests:
       <xref linkend="dbus-glib"/>,
       <xref linkend="dbus-python"/>,
-      <xref linkend="pygobject2"/> (built with gobject-introspecion support),
+      <xref linkend="pygobject2"/> (built with gobject-introspection support),
       and <xref linkend="valgrind"/>;
 
       for documentation:
@@ -135,14 +135,13 @@
       テストのために:
       <xref linkend="dbus-glib"/>,
       <xref linkend="dbus-python"/>,
-      <xref linkend="pygobject2"/> (built with gobject-introspecion support),
-      and <xref linkend="valgrind"/>;
+      <xref linkend="pygobject2"/> (gobject-introspection サポートがビルドされたもの),
+      <xref linkend="valgrind"/>;
 
       ドキュメント生成のために:
       <xref linkend="doxygen"/>,
       <xref linkend="xmlto"/>,
       <ulink url="https://pypi.python.org/pypi/mallard-ducktype">Ducktype</ulink>,
-      and
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/yelp-tools/">Yelp Tools</ulink>
     </para>
 @z

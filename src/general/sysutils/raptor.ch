@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY raptor-buildsize     "28 MB (additional 1 MB for the tests)">
+  <!ENTITY raptor-time          "0.2 SBU (additional 0.5 SBU for the tests)">
+@y
+  <!ENTITY raptor-buildsize     "28 MB (テスト実施時はさらに 1 MB)">
+  <!ENTITY raptor-time          "0.2 SBU (テスト実施時はさらに 0.5 SBU)">
+@z
+
+@x
     <title>Introduction to Raptor</title>
 @y
     <title>&IntroductionTo1;Raptor&IntroductionTo2;</title>

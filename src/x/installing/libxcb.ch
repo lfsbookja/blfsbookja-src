@@ -17,8 +17,8 @@
   <!ENTITY libxcb-buildsize     "28 MB (with tests, add 62 MB for doxygen docs)">
   <!ENTITY libxcb-time          "0.3 SBU (with tests, add 1.4 SBU for doxygen docs)">
 @y
-  <!ENTITY libxcb-buildsize     "28 MB (with tests, add 62 MB for doxygen docs)">
-  <!ENTITY libxcb-time          "0.3 SBU (with tests, add 1.4 SBU for doxygen docs)">
+  <!ENTITY libxcb-buildsize     "28 MB (テスト込み、doxygenドキュメント生成時はさらに 62 MB)">
+  <!ENTITY libxcb-time          "0.3 SBU (テスト込み、doxygenドキュメント生成時はさらに 1.4 SBU)">
 @z
 
 @x
@@ -84,6 +84,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch (for Python 3): <ulink
+@y
+          必須のパッチ (Python 3 向け): <ulink
+@z
+
+@x
     <bridgehead renderas="sect3">libxcb Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;libxcb&Dependencies2;</bridgehead>
@@ -144,6 +156,12 @@
 @z
 
 @x
+      If building with Python 3, issue the following command:
+@y
+      Python 3 とともにビルドする場合は以下のコマンドを実行します。
+@z
+
+@x
     <para>Install <application>libxcb</application> by running the following
     commands:</para>
 @y
@@ -200,10 +218,10 @@
     <xref linkend="doxygen"/> is installed, the API documentation will be
     generated and installed.</para>
 @y
-    <para><parameter>--without-doxygen</parameter>: Do not use doxygen to
-    generate API documentation (default: auto). Without it, if
-    <xref linkend="doxygen"/> is installed, the API documentation will be
-    generated and installed.</para>
+    <para><parameter>--without-doxygen</parameter>:
+    doxygen を用いた API ドキュメント生成をしないようにします (デフォルトは auto)。
+    これを指定せずに <xref linkend="doxygen"/> がインストールされていた場合は API ドキュメントが生成されインストールされます。
+    </para>
 @z
 
 @x

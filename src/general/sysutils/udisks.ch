@@ -102,6 +102,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4" revision="systemd">Recommended</bridgehead>
+    <para role="recommended" revision="systemd">
+      <xref linkend="systemd"/>
+    </para>
+@y
+    <bridgehead renderas="sect4" revision="systemd">&Recommended;</bridgehead>
+    <para role="recommended" revision="systemd">
+      <xref linkend="systemd"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
@@ -127,6 +139,12 @@
     <title>Installation of UDisks</title>
 @y
     <title>&InstallationOf1;UDisks&InstallationOf2;</title>
+@z
+
+@x
+      Fix a build issue with glibc-2.24:
+@y
+      glibc-2.24 に対する不具合を修正します。
 @z
 
 @x
@@ -210,8 +228,7 @@
             is a simple command line interface for the 
             <application>UDisks</application> Daemon.
 @y
-            is a simple command line interface for the 
-            <application>UDisks</application> Daemon.
+            <application>UDisks</application> デーモンに対する簡便なコマンドラインユーティリティー。
 @z
 
 @x udisks-tcp-bridge

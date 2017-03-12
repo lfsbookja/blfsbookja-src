@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY pciutils-time          "less than 0.1 SBU">
+@y
+  <!ENTITY pciutils-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to PCI Utils</title>
 @y
     <title>&IntroductionTo1;PCI Utils&IntroductionTo2;</title>

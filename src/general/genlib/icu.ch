@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY icu-buildsize     "292 MB (add 32 MB for tests)">
+  <!ENTITY icu-time          "2.1 SBU (add 1.8 SBU for tests)">
+@y
+  <!ENTITY icu-buildsize     "292 MB (テスト実施時はさらに 32 MB)">
+  <!ENTITY icu-time          "2.1 SBU (テスト実施時はさらに 1.8 SBU)">
+@z
+
+@x
     <title>Introduction to ICU</title>
 @y
     <title>&IntroductionTo1;ICU&IntroductionTo2;</title>
@@ -73,6 +81,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">ICU Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;ICU&Dependencies2;</bridgehead>
@@ -102,6 +122,12 @@
     <title>Installation of ICU</title>
 @y
     <title>&InstallationOf1;ICU&InstallationOf2;</title>
+@z
+
+@x
+      First, fix a regression in version 58.1:
+@y
+      バージョン 58.1 における不具合を修正します。
 @z
 
 @x
@@ -239,6 +265,12 @@
             compiles word lists into ICU string trie dictionaries.
 @y
             ワードリスト (word list) を ICU の compact trie 辞書 へコンパイルします。
+@z
+
+@x gennorm2
+            builds binary data files with Unicode normalization data.
+@y
+            Unicode 標準データによりバイナリデータファイルを生成します。
 @z
 
 @x genrb
