@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY talloc-buildsize     "7.1 MB (with tests)">
+  <!ENTITY talloc-time          "0.3 SBU (with tests)">
+@y
+  <!ENTITY talloc-buildsize     "7.1 MB (テスト込み)">
+  <!ENTITY talloc-time          "0.3 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to Talloc</title>
 @y
     <title>&IntroductionTo1;Talloc&IntroductionTo2;</title>
@@ -122,14 +130,32 @@
 
 @x
       To check the results, issue <command>make check</command>.
+      The python tests fail due to missing files.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      python のテストはファイルがないため失敗します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--extra-python=PYTHON</option>: This switch enables building
+      selected libraries for the specified additional version of Python
+      (example: <option>--extra-python=/usr/bin/python3</option>).
+@y
+      <option>--extra-python=PYTHON</option>:
+      このスイッチは指定された Python のバージョンに対応したライブラリを生成します。
+      (例: <option>--extra-python=/usr/bin/python3</option>)
 @z
 
 @x

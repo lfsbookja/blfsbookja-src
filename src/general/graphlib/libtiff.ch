@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libtiff-buildsize     "24 MB (with tests)">
+  <!ENTITY libtiff-time          "0.3 SBU (with tests)">
+@y
+  <!ENTITY libtiff-buildsize     "24 MB (テスト込み)">
+  <!ENTITY libtiff-time          "0.3 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to LibTIFF</title>
 @y
     <title>&IntroductionTo1;LibTIFF&IntroductionTo2;</title>

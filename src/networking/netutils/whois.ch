@@ -84,6 +84,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Whois Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Whois&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="libidn"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="libidn"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/whois"/></para>
 @y
@@ -126,6 +144,20 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>HAVE_LIBIDN=1</option>: This make variable adds internationalized
+      string handling support to <command>whois</command>.
+@y
+      <option>HAVE_LIBIDN=1</option>:
+      <command>whois</command> において文字列処理に対する国際化サポートを有効にします。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -165,4 +197,10 @@
           クライアント側のアプリケーションであり、指定されたドメイン名に対する情報を提供する
           whois ディレクトリサービスを検索します。
           </para>
+@z
+
+@x mkpasswd
+            generate new password, optionally apply it to a user.
+@y
+            generate new password, optionally apply it to a user.
 @z

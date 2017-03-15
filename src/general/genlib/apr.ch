@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY apr-buildsize     "13 MB (additional 3 MB for the tests)">
+  <!ENTITY apr-time          "0.2 SBU (1.1 with tests)">
+@y
+  <!ENTITY apr-buildsize     "13 MB (テスト実施時はさらに 3 MB)">
+  <!ENTITY apr-time          "0.2 SBU (テスト実施時は 1.1 SBU)">
+@z
+
+@x
     <title>Introduction to Apr</title>
 @y
     <title>&IntroductionTo1;Apr&IntroductionTo2;</title>

@@ -161,6 +161,21 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>ln -svfn aspell-0.60 /usr/lib/aspell</command>: This command is
+      useful for configuration of other applications, such as
+      <xref linkend="enchant"/>.
+@y
+      <command>ln -svfn aspell-0.60 /usr/lib/aspell</command>:
+      このコマンドは <xref linkend="enchant"/> など他のアプリケーションに対する設定として必要なものです。
+@z
+
+@x
     <title>Configuring Aspell</title>
 @y
     <title>&Configuring1;Aspell&Configuring2;</title>
@@ -214,7 +229,7 @@
 @y
         <seg>
           aspell, aspell-import, precat, preunzip, prezip, prezip-bin,
-          pspell-config, run-with-aspell, word-list-compress また任意インストールとして 
+          pspell-config, run-with-aspell, word-list-compress また任意ビルドとして 
           ispell, spell.
         </seg>
         <seg>libaspell.so, libpspell.so</seg>

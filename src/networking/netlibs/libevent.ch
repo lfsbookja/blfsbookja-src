@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libevent-buildsize     "18 MB (add 1 MB for the tests and 6 MB for the API docs)">
+  <!ENTITY libevent-time          "0.3 SBU (add 10 SBU for the tests)">
+@y
+  <!ENTITY libevent-buildsize     "18 MB (テスト実施時さらには 1 MB、APIドキュメント生成時はさらに 6 MB)">
+  <!ENTITY libevent-time          "0.3 SBU (テスト実施時はさらに 10 SBU)">
+@z
+
+@x
     <title>Introduction to libevent</title>
 @y
     <title>&IntroductionTo1;libevent&IntroductionTo2;</title>

@@ -11,6 +11,7 @@ CHANGE_FILES_pythonmodules = \
 	py2cairo.ch      \
 	pyatspi2.ch      \
 	pycairo.ch       \
+	pycrypto.ch      \
 	pygobject2.ch    \
 	pygobject3.ch    \
 	pygtk.ch         \

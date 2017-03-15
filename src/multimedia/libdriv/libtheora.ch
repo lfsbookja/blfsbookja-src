@@ -107,7 +107,7 @@
       <xref linkend="doxygen"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <ulink url="http://bibtexml.sourceforge.net">BibTex</ulink>, and
-      <ulink url="http://www.xfig.org/">Transfig</ulink>
+      <ulink url="http://mcj.sourceforge.net/">Transfig</ulink>
       (all four to build the API documentation), and
       <xref linkend="valgrind"/>
     </para>
@@ -118,9 +118,9 @@
       <xref linkend="libpng"/> (both to build the example players),
       <xref linkend="doxygen"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <ulink url="http://bibtexml.sourceforge.net">BibTex</ulink>, and
-      <ulink url="http://www.xfig.org/">Transfig</ulink>
-      (all four to build the API documentation), and
+      <ulink url="http://bibtexml.sourceforge.net">BibTex</ulink>,
+      <ulink url="http://mcj.sourceforge.net/">Transfig</ulink>
+      (all four to build the API documentation),
       <xref linkend="valgrind"/>
     </para>
 @z

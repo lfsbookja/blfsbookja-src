@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY json-glib-buildsize     "16 MB (with tests)">
+  <!ENTITY json-glib-time          "0.1 SBU (with tests)">
+@y
+  <!ENTITY json-glib-buildsize     "16 MB (テスト込み)">
+  <!ENTITY json-glib-time          "0.1 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to JSON GLib</title>
 @y
     <title>&IntroductionTo1;JSON GLib&IntroductionTo2;</title>
@@ -192,6 +200,18 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x json-glib-format
+            is a simple command line interface to format JSON data.
+@y
+            JSON データを生成するコマンドラインインターフェース。
+@z
+
+@x json-glib-validate
+            is a simple command line interface to validate JSON data.
+@y
+            JSON データを検証 (validate) するコマンドラインインターフェース。
 @z
 
 @x libjson-glib-1.0.so

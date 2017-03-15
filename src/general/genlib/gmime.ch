@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY gmime-buildsize     "28 MB (with tests)">
+  <!ENTITY gmime-time          "0.5 SBU (with tests)">
+@y
+  <!ENTITY gmime-buildsize     "28 MB (テスト込み)">
+  <!ENTITY gmime-time          "0.5 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to GMime</title>
 @y
     <title>&IntroductionTo1;GMime&IntroductionTo2;</title>
@@ -100,6 +108,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="vala"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="vala"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
@@ -115,7 +137,7 @@
       <xref linkend="gpgme"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="http://download.mono-project.com/sources/gtk-sharp/">Gtk#</ulink>
-      (requires <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> が必要)
+      (<ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> が必要)
     </para>
 @z
 
@@ -154,6 +176,15 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--enable-smime</option>: Use this switch if you have
+      installed <xref linkend="gpgme"/> and wish to enable
+      S/MIME support in <application>GMime</application>.
+@y
+      <option>--enable-smime</option>:
+      <xref linkend="gpgme"/> をインストールしていて <application>GMime</application> の S/MIME サポートを有効にする場合に本スイッチを指定します。
 @z
 
 @x

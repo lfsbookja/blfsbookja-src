@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY gobject-introspection-buildsize     "51 MB (add 6 MB for tests)">
+  <!ENTITY gobject-introspection-time          "0.3 SBU (additional 0.4 SBU for the tests)">
+@y
+  <!ENTITY gobject-introspection-buildsize     "51 MB (テスト実施時はさらに 6 MB)">
+  <!ENTITY gobject-introspection-time          "0.3 SBU (テスト実施時はさらに 0.4 SBU)">
+@z
+
+@x
     <title>Introduction to GObject Introspection</title>
 @y
     <title>&IntroductionTo1;GObject Introspection&IntroductionTo2;</title>
@@ -198,6 +206,24 @@
             converts one or more GIR files into one or more typelib.
 @y
             複数の GIR ファイルを複数の typelib に変換します。
+@z
+
+@x g-ir-doc-tool
+            generates Mallard files that can be viewed with
+            <command>yelp</command> or rendered to HTML with
+            <command>yelp-build</command> from <ulink
+            url="http://ftp.acc.umu.se/pub/gnome/sources/yelp-tools">yelp-tools</ulink>.
+@y
+            generates Mallard files that can be viewed with
+            <command>yelp</command> or rendered to HTML with
+            <command>yelp-build</command> from <ulink
+            url="http://ftp.acc.umu.se/pub/gnome/sources/yelp-tools">yelp-tools</ulink>.
+@z
+
+@x g-ir-inspect
+            is a utility that gives information about a GI typelib.
+@y
+            GI typelib についての情報を提供するユーティリティーです。
 @z
 
 @x g-ir-scanner

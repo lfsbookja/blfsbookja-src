@@ -33,7 +33,7 @@
   among others, the main development and support lists.</para>
 @y
   <para>
-  The &lfs-domainname; サーバーでは BLFS 開発プロジェクトのために多くのメーリングリストを立ち上げています。
+  &lfs-domainname; サーバーでは BLFS 開発プロジェクトのために多くのメーリングリストを立ち上げています。
   このメーリングリストは主となる開発用とは別に、サポート用のものもあります。
   </para>
 @z

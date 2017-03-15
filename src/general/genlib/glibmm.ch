@@ -97,6 +97,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="glib-networking"/> (for tests), 
+      <xref linkend="gnutls"/> (for tests), and
+      <xref linkend="libxslt"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="glib-networking"/> (テストのため), 
+      <xref linkend="gnutls"/> (テストのため),
+      <xref linkend="libxslt"/>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -106,6 +124,12 @@
     <title>Installation of GLibmm</title>
 @y
     <title>&InstallationOf1;GLibmm&InstallationOf2;</title>
+@z
+
+@x
+      First, fix the documents directory name:
+@y
+      はじめにドキュメントディレクトリ名を修正します。
 @z
 
 @x

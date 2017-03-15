@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY wget-buildsize     "32 MB (with tests)">
+  <!ENTITY wget-time          "0.4 SBU (with tests)">
+@y
+  <!ENTITY wget-buildsize     "32 MB (テスト込み)">
+  <!ENTITY wget-time          "0.4 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to Wget</title>
 @y
     <title>&IntroductionTo1;Wget&IntroductionTo2;</title>
@@ -110,10 +118,10 @@
       <xref linkend="gpgme"/>,
       <xref linkend="libidn"/>,
       <xref linkend="pcre"/>,
-      <xref linkend="valgrind"/> (optional for the test suite),
+      <xref linkend="valgrind"/> (テストスイート向けに任意),
       <ulink url="http://search.cpan.org/~behroozi/IO-Socket-SSL/">IO::Socket::SSL</ulink>,
       <ulink url="http://search.cpan.org/~gaas/HTTP-Daemon/">HTTP::Daemon</ulink>
-      (both required for the test suite), and
+      (以上2つはテストスイートに必要),
       <ulink url="https://github.com/rockdaboot/libpsl/">libpsl</ulink>
     </para>
 @z
@@ -173,6 +181,14 @@
 @y
       <parameter>--with-ssl=openssl</parameter>:
       このオプションにより <xref linkend="gnutls"/> を用いず <xref linkend="openssl"/> を用いたプログラムとします。
+@z
+
+@x
+      <option>--enable-valgrind-tests</option>: This allows the tests to be
+      run under valgrind.
+@y
+      <option>--enable-valgrind-tests</option>:
+      valgrind のもとでテスト実行します。
 @z
 
 @x

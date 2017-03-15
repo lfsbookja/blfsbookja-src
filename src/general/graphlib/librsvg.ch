@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY librsvg-buildsize     "12.2 MB (with tests)">
+  <!ENTITY librsvg-time          "0.2 SBU (with tests)">
+@y
+  <!ENTITY librsvg-buildsize     "12.2 MB (テスト込み)">
+  <!ENTITY librsvg-time          "0.2 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to librsvg</title>
 @y
     <title>&IntroductionTo1;librsvg&IntroductionTo2;</title>
@@ -154,6 +162,16 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>--enable-vala</parameter>: This switch enables
+      building of the Vala bindings. Remove this switch if you don't have
+      <xref linkend="vala"/> installed.
+@y
+      <parameter>--enable-vala</parameter>:
+      このスイッチは Vala バインディングのビルドを行います。
+      <xref linkend="vala"/> をインストールしていない場合はこのスイッチを取り除いてください。
 @z
 
 @x

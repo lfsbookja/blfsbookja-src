@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY sharutils-buildsize     "22 MB (with the test suite)">
+  <!ENTITY sharutils-time          "0.4 SBU (with the test suite)">
+@y
+  <!ENTITY sharutils-buildsize     "22 MB (テストスィート込み)">
+  <!ENTITY sharutils-time          "0.4 SBU (テストスィート込み)">
+@z
+
+@x
     <title>Introduction to Sharutils</title>
 @y
     <title>&IntroductionTo1;Sharutils&IntroductionTo2;</title>

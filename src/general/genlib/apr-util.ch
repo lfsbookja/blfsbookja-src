@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY apr-util-buildsize     "8.7 MB (additional 1 MB for the tests)">
+@y
+  <!ENTITY apr-util-buildsize     "8.7 MB (テスト実施時はさらに 1 MB)">
+@z
+
+@x
     <title>Introduction to Apr Util</title>
 @y
     <title>&IntroductionTo1;Apr Util&IntroductionTo2;</title>
@@ -122,7 +128,7 @@
       <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/> and
+      <xref linkend="sqlite"/>,
       <xref linkend="unixodbc"/>
     </para>
 @z
@@ -192,6 +198,16 @@
       <option>--with-berkeley-db=/usr</option>:
       <xref linkend="db"/> をインストールしている場合、このスイッチによりプラグイン <filename
       class="libraryfile">apr_dbm_db-1.so</filename> をビルドすることを指示します。
+@z
+
+@x
+      <option>--with-ldap</option>: If you have installed
+      <xref linkend="openldap"/>, use this switch to compile the
+      <filename class="libraryfile">apr_ldap.so</filename> plugin.
+@y
+      <option>--with-ldap</option>:
+      <xref linkend="openldap"/> をインストールしている場合、このスイッチによりプラグイン <filename
+      class="libraryfile">apr_ldap.so</filename> をビルドすることを指示します。
 @z
 
 @x

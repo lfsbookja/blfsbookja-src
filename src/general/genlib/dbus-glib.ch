@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY dbus-glib-buildsize     "9.5 MB (with tests)">
+  <!ENTITY dbus-glib-time          "0.1 SBU (with tests)">
+@y
+  <!ENTITY dbus-glib-buildsize     "9.5 MB (テスト込み)">
+  <!ENTITY dbus-glib-time          "0.1 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to D-Bus GLib</title>
 @y
     <title>&IntroductionTo1;D-Bus GLib&IntroductionTo2;</title>

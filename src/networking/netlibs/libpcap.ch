@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY libpcap-time          "less than 0.1 SBU">
+@y
+  <!ENTITY libpcap-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to libpcap</title>
 @y
     <title>&IntroductionTo1;libpcap&IntroductionTo2;</title>
@@ -66,6 +72,12 @@
           Estimated build time: &libpcap-time;
 @y
           &Estimatedbuildtime;: &libpcap-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -132,6 +144,26 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><option>--enable-bluetooth=no</option>: Necessary, if the
+    recommended patch is not applied, because since 1.6.1 this application
+    needs a fix, in order to build with
+    <application>bluez-5.21</application>.</para>
+@y
+    <para><option>--enable-bluetooth=no</option>:
+    
+Necessary, if the
+    recommended patch is not applied, because since 1.6.1 this application
+    needs a fix, in order to build with
+    <application>bluez-5.21</application>.</para>
 @z
 
 @x

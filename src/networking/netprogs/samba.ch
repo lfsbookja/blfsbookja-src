@@ -84,6 +84,42 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="python2"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="python2"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gpgme"/>,
+      <xref linkend="libtirpc"/>,
+      <xref linkend="libxslt"/> (for documentation),
+      <xref linkend="perl-parse-yapp"/>,
+      <xref linkend="pycrypto"/>,
+      <xref linkend="python3"/>, and
+      <xref linkend="openldap"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gpgme"/>,
+      <xref linkend="libtirpc"/>,
+      <xref linkend="libxslt"/> (ドキュメント生成のため),
+      <xref linkend="perl-parse-yapp"/>,
+      <xref linkend="pycrypto"/>,
+      <xref linkend="python3"/>,
+      <xref linkend="openldap"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
@@ -99,7 +135,6 @@
       <xref linkend="mitkrb"/>,
       <xref linkend="nss"/>,
       <xref linkend="popt"/>,
-      <xref linkend="python3"/>,
       <xref linkend="talloc"/> (included),
       <xref linkend="vala"/>,
       <xref linkend="valgrind"/> (optionally used by the test suite),
@@ -112,7 +147,6 @@
       <ulink url="https://www.samba.org/ftp/ldb/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
-      <ulink url="&pypi;/pycrypto/">PyCrypto</ulink> (required for ADS),
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
       <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
       <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
@@ -133,7 +167,6 @@
       <xref linkend="mitkrb"/>,
       <xref linkend="nss"/>,
       <xref linkend="popt"/>,
-      <xref linkend="python3"/>,
       <xref linkend="talloc"/> (included),
       <xref linkend="vala"/>,
       <xref linkend="valgrind"/> (optionally used by the test suite),
@@ -146,7 +179,6 @@
       <ulink url="https://www.samba.org/ftp/ldb/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
-      <ulink url="&pypi;/pycrypto/">PyCrypto</ulink> (required for ADS),
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
       <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
       <ulink url="https://tdb.samba.org/">tdb</ulink> (included)

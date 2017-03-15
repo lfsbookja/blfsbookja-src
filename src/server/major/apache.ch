@@ -136,12 +136,11 @@
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="lynx"/> or
-      <xref linkend="Links"/> or
+      <xref linkend="lynx"/> または
+      <xref linkend="Links"/> または
       <ulink url="http://elinks.or.cz/">ELinks</ulink>,
       <xref linkend="nghttp2"/>,
-      <xref linkend="openldap"/> (<xref linkend="apr-util"/> needs to be
-      installed with ldap suport),
+      <xref linkend="openldap"/> (<xref linkend="apr-util"/> が ldap サポートつきでインストールされていること),
       <xref linkend="rsync"/>,
       <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>,
       <xref linkend="lua"/>
@@ -302,7 +301,7 @@
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
       <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x
@@ -319,7 +318,7 @@
         linkend="bootscripts" revision="sysv"/><xref linkend="systemd-units"
         revision="systemd"/> パッケージに含まれる<phrase
         revision="sysv"><filename>/etc/rc.d/init.d/httpd</filename>初期起動スクリプト</phrase><phrase
-        revision="systemd"><filename>httpd.service</filename> ユニット</phrase>をインストールします。
+        revision="systemd"> <filename>httpd.service</filename> ユニット</phrase>をインストールします。
 @z
 
 @x

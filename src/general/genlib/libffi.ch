@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libffi-buildsize     "6.1 MB (additional 1.7 MB for the tests)">
+  <!ENTITY libffi-time          "less than 0.1 SBU (additional 0.4 SBU for the tests)">
+@y
+  <!ENTITY libffi-buildsize     "6.1 MB (テスト実施時はさらに 1.7 MB)">
+  <!ENTITY libffi-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実施はさらに 0.4 SBU)">
+@z
+
+@x
     <title>Introduction to libffi</title>
 @y
     <title>&IntroductionTo1;libffi&IntroductionTo2;</title>
@@ -124,6 +132,21 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><command>sed ... include/Makefile.in</command> and
+    <command>sed ... libffi.pc.in</command>: Makes the package install headers 
+    into the standardized <filename class="directory">/usr/include</filename> 
+    instead of 
+    <filename class="directory">/usr/lib/libffi-&libffi-version;/include.</filename>.</para>
+@y
+    <para><command>sed ... include/Makefile.in</command>,
+    <command>sed ... libffi.pc.in</command>:
+    パッケージのヘッダーファイルを <filename
+    class="directory">/usr/lib/libffi-&libffi-version;/include</filename> でなく標準的な <filename
+    class="directory">/usr/include</filename> にインストールします。
+    </para>
 @z
 
 @x

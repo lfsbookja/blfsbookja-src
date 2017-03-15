@@ -144,6 +144,12 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
     <title>Configuring enchant</title>
 @y
     <title>&Configuring1;enchant&Configuring2;</title>
@@ -169,8 +175,8 @@
         If you wish to use the <xref linkend="aspell"/> backend, create a
         symlink, as the <systemitem class="username">root</systemitem> user:
 @y
-        If you wish to use the <xref linkend="aspell"/> backend, create a
-        symlink, as the <systemitem class="username">root</systemitem> user:
+        バックエンドとして <xref linkend="aspell"/> を用いたい場合は <systemitem
+        class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -179,10 +185,8 @@
         en_GB dictionary by any other downloaded when installing <xref
         linkend="aspell"/>):
 @y
-        You can test your installation and configuration by creating a test
-        file and running the commands in the following (you can replace the
-        en_GB dictionary by any other downloaded when installing <xref
-        linkend="aspell"/>):
+        以下のテストファイルを生成し実行することで、インストールおよび設定の結果をテストするこができます。
+        (<xref linkend="aspell"/> をインストールしている場合は en_GB の部分をダウンロードした他の辞書に置き換えることができます。)
 @z
 
 @x
@@ -220,7 +224,7 @@
         <seg>libenchant.so and various backend libraries</seg>
         <seg>/usr/{include,lib,share}/enchant</seg>
 @y
-        <seg>enchant and enchant-lsmod</seg>
+        <seg>enchant, enchant-lsmod</seg>
         <seg>libenchant.so とさまざまなバックエンドライブラリ</seg>
         <seg>/usr/{include,lib,share}/enchant</seg>
 @z
