@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "47 MB (with tests)">
+  <!ENTITY openssh-buildsize     "37 MB (add 11 MB for tests)">
   <!ENTITY openssh-time          "0.4 SBU (running the tests takes 10+ minutes,
                                   irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "47 MB (テスト込み)">
+  <!ENTITY openssh-buildsize     "37 MB (テスト実施時はさらに 11 MB)">
   <!ENTITY openssh-time          "0.4 SBU (テスト実施はプロセッサーの処理スピードとは無関係に最低でも 10分)">
 @z
 

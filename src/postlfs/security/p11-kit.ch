@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY p11-kit-buildsize     "73 MB (with for tests)">
+  <!ENTITY p11-kit-time          "0.4 SBU (with for tests)">
+@y
+  <!ENTITY p11-kit-buildsize     "73 MB (テスト込み)">
+  <!ENTITY p11-kit-time          "0.4 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to p11-kit</title>
 @y
     <title>&IntroductionTo1;p11-kit&IntroductionTo2;</title>
@@ -147,8 +155,8 @@
       <parameter>--with-trust-paths=/etc/pki/anchors</parameter>: this switch
       sets the location of trusted certificates used by libp11-kit.so.
 @y
-      <parameter>--with-trust-paths=/etc/pki/anchors</parameter>: this switch
-      sets the location of trusted certificates used by libp11-kit.so.
+      <parameter>--with-trust-paths=/etc/pki/anchors</parameter>:
+      このスイッチは libp11-kit.so が利用する認証済み証明書のディレクトリを指定します。
 @z
 
 @x
@@ -167,6 +175,32 @@
 @y
       <option>--enable-doc</option>: 
       <xref linkend="gtk-doc"/> と <xref linkend="libxslt"/> をインストールしていて、ドキュメントを再生成したり man ページを生成したいときに、本スイッチを指定します。
+@z
+
+@x
+    <title>Configuring p11-kit</title>
+@y
+    <title>&Configuring1;p11-kit&Configuring2;</title>
+@z
+
+@x
+    <para>If <xref linkend="nss"/> is installed,
+    <filename>/usr/lib/libp11-kit.so</filename> can be used as a drop-in
+    replacement for <filename>/usr/lib/libnssckbi.so</filename> to
+    transparently make the system CAs available to
+    <application>NSS</application> aware applications, rather than the static
+    list provided by <filename>/usr/lib/libnssckbi.so</filename>. As the
+    <systemitem class="username">root</systemitem> user, execute the following
+    commands:</para>
+@y
+    <para>If <xref linkend="nss"/> is installed,
+    <filename>/usr/lib/libp11-kit.so</filename> can be used as a drop-in
+    replacement for <filename>/usr/lib/libnssckbi.so</filename> to
+    transparently make the system CAs available to
+    <application>NSS</application> aware applications, rather than the static
+    list provided by <filename>/usr/lib/libnssckbi.so</filename>. As the
+    <systemitem class="username">root</systemitem> user, execute the following
+    commands:</para>
 @z
 
 @x

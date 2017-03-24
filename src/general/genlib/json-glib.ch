@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY json-glib-buildsize     "16 MB (with tests)">
+  <!ENTITY json-glib-buildsize     "13 MB (with tests)">
   <!ENTITY json-glib-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY json-glib-buildsize     "16 MB (テスト込み)">
+  <!ENTITY json-glib-buildsize     "13 MB (テスト込み)">
   <!ENTITY json-glib-time          "0.1 SBU (テスト込み)">
 @z
 

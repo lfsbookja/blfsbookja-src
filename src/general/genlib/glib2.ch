@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "188 MB (additional 73 MB for tests)">
-  <!ENTITY glib2-time          "1.1 SBU (additional 3.2 SBU for tests)">
+  <!ENTITY glib2-buildsize     "188 MB (additional 74 MB for tests)">
+  <!ENTITY glib2-time          "1.1 SBU (additional 3.7 SBU for tests)">
 @y
-  <!ENTITY glib2-buildsize     "188 MB (テストスイート実行時はさらに 73 MB)">
-  <!ENTITY glib2-time          "1.1 SBU (テストスイート実行時はさらに 3.2 SBU)">
+  <!ENTITY glib2-buildsize     "188 MB (テスト実施時はさらに 74 MB)">
+  <!ENTITY glib2-time          "1.1 SBU (テスト実施時はさらに 3.7 SBU)">
 @z
 
 @x

@@ -132,8 +132,8 @@
       <envar>CFLAGS="$CFLAGS -std=gnu89"</envar>: This environment variable
       fixes a build error with GCC 5.
 @y
-      <envar>CFLAGS="$CFLAGS -std=gnu89"</envar>: This environment variable
-      fixes a build error with GCC 5.
+      <envar>CFLAGS="$CFLAGS -std=gnu89"</envar>:
+      この環境変数は GCC 5 でのビルドエラーを回避します。
 @z
 
 @x

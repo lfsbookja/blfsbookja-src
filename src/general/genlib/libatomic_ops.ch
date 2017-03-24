@@ -138,6 +138,14 @@
 @z
 
 @x
+      <parameter>--enable-shared</parameter>: This switch enables building of the
+      <filename class="libraryfile">libatomic_ops</filename> shared libraries.
+@y
+      <parameter>--enable-shared</parameter>:
+      このスイッチは共有ライブラリ <filename class="libraryfile">libatomic_ops</filename> をビルドすることを指示します。
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

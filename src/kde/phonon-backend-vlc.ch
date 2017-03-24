@@ -148,16 +148,6 @@
 @z
 
 @x
-    <para><parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is
-    used to get libraries to install to /usr/lib instead of /usr/lib64 on a
-    64 bit system.</para>
-@y
-    <para><parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is
-    used to get libraries to install to /usr/lib instead of /usr/lib64 on a
-    64 bit system.</para>
-@z
-
-@x
     <para><parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is
     used to ensure that Qt5 version of the backend is built even if Qt4 is
     present.</para>

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gs-buildsize     "240 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "2.2 SBU (with libgs.so)">
+  <!ENTITY gs-buildsize     "159 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "2.3 SBU (with libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "240 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "2.2 SBU (with libgs.so)">
+  <!ENTITY gs-buildsize     "159 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "2.3 SBU (libgs.so 込み)">
 @z
 
 @x
@@ -363,17 +363,17 @@
           gsdj500, gslj, gslp, gsnd, gsx (from soinstall), lprsetup.sh,
           pdf2dsc, pdf2ps, pf2afm, pfbtopfa, pphs, printafm, ps2ascii,
           ps2epsi, ps2pdf, ps2pdf12, ps2pdf13, ps2pdf14, ps2pdfwr,
-          ps2ps, ps2ps2, unix-lpr.sh, and wftopfa
+          ps2ps, ps2ps2, unix-lpr.sh, wftopfa
           <!-- I don't see bdftops,fixmswrd.pl or pv.sh on my builds [ I don't
           have any bdf tools from xorg ] but they are still referenced in
           base/unixinst.mak -->
         </seg>
-        <seg>libgs.so and
+        <seg>libgs.so,
              /usr/lib/ghostscript/&gs-version;/X11.so</seg>
         <seg>
           /usr/include/ghostscript,
           /usr/lib/ghostscript,
-          /usr/share/ghostscript, and
+          /usr/share/ghostscript,
           /usr/share/doc/ghostscript-&gs-version;
         </seg>
 @z

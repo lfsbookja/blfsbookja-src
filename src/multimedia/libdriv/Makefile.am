@@ -19,6 +19,7 @@ CHANGE_FILES = \
 	faad2.ch              \
 	fdk-aac.ch            \
 	flac.ch               \
+	flashplayer.ch        \
 	frei0r.ch             \
 	gavl.ch               \
 	gst10-libav.ch        \

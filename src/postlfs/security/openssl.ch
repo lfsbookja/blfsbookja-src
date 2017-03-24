@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY openssl-buildsize     "50 MB (with tests)">
+  <!ENTITY openssl-time          "1.4 SBU (with tests)">
+@y
+  <!ENTITY openssl-buildsize     "50 MB (テスト込み)">
+  <!ENTITY openssl-time          "1.4 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to OpenSSL</title>
 @y
     <title>&IntroductionTo1;OpenSSL&IntroductionTo2;</title>
@@ -109,6 +117,12 @@
 @z
 
 @x
+        This package does not support parallel build.
+@y
+        &notParallelBuild;
+@z
+
+@x
       Install <application>OpenSSL</application> with the following commands:
 @y
       以下のコマンドを実行して <application>OpenSSL</application> をビルドします。
@@ -176,11 +190,11 @@
       manual pages installed by other packages.
 @y
       <command>make MANDIR=/usr/share/man MANSUFFIX=ssl install</command>:
-      This command installs <application>OpenSSL</application> with the man
-      pages in <filename class="directory">/usr/share/man</filename>
-      instead of <filename class="directory">/etc/ssl/man</filename> and
-      appends "ssl" suffix to the manual page names to avoid conflicts with
-      manual pages installed by other packages.
+      このコマンドは <application>OpenSSL</application> の man ページを <filename
+      class="directory">/etc/ssl/man</filename> でなく <filename
+      class="directory">/usr/share/man</filename> にインストールすることを指示します。
+      またインストールする man ページ名にはサフィックス "ssl" をつけます。
+      これは他のパッケージがインストールする man ページとの衝突を避けるためです。
 @z
 
 @x

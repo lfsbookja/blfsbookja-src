@@ -85,6 +85,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Ed Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Ed&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required to uncompress the tarball</bridgehead>
+    <para role="required">
+      <xref linkend="libarchive"/> (for bsdtar)
+    </para>
+@y
+    <bridgehead renderas="sect4">必須 (tarball 伸張のため)</bridgehead>
+    <para role="required">
+      <xref linkend="libarchive"/> (bsdtar が必要)
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
     <ulink url="&blfs-wiki;/ed"/></para>
 @y

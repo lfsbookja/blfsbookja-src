@@ -180,7 +180,7 @@
         </seg>
         <seg>
           various static libraries in
-          <filename class="directory">/usr/lib/clisp-$clisp-version;/base/</filename>
+          <filename class="directory">/usr/lib/clisp-&clisp-version;/base/</filename>
         </seg>
         <seg>
           /usr/lib/clisp-&clisp-version;
@@ -192,11 +192,11 @@
           clisp, clisp-link
         </seg>
         <seg>
-          <filename class="directory">/usr/lib/clisp-$clisp-version;/base/</filename> 配下にさまざまなスタティックライブラリ
+          <filename class="directory">/usr/lib/clisp-&clisp-version;/base/</filename> 配下にさまざまなスタティックライブラリ
         </seg>
         <seg>
-          /usr/lib/clisp-&clisp-version;,
-          /usr/share/doc/clisp-&clisp-version;,
+          /usr/lib/clisp-&clisp-version;
+          /usr/share/doc/clisp-&clisp-version;
           /usr/share/emacs/site-lisp;
         </seg>
 @z

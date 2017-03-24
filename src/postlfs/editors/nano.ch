@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY nano-time          "less than 0.1 SBU">
+@y
+  <!ENTITY nano-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to Nano</title>
 @y
     <title>&IntroductionTo1;Nano&IntroductionTo2;</title>
@@ -189,6 +195,21 @@
         設定のサンプルとして <filename
         class="directory">/etc</filename> ディレクトリに <filename>nanorc.sample</filename> というファイルもあります。
         このファイルには色の設定例や、多くの説明がコメント内にて示されています。
+@z
+
+@x
+        Syntax highlighting is provided for several file types, in
+        <filename class="directory">/usr/share/nano/</filename> directory.
+        E.g., for shell scripts, you can insert
+        <option>include /usr/share/nano/sh.nanorc</option> in the personal or
+        global configuration file. If you wish highlighting for all supported
+        files, use <option>include /usr/share/nano/*.nanorc</option>.
+@y
+        特定のファイルタイプに対しての文法ハイライト機能を実現する設定ファイルが <filename
+        class="directory">/usr/share/nano/</filename> ディレクトリに用意されています。
+        例えばシェルスクリプトに対するものなどです。
+        個人設定やグローバル設定において <option>include /usr/share/nano/sh.nanorc</option> を記述することで利用します。
+        提供されているすべての設定ファイルを指定するには <option>include /usr/share/nano/*.nanorc</option> と記述します。
 @z
 
 @x

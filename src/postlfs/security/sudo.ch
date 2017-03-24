@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY sudo-buildsize     "28 MB (with tests)">
+  <!ENTITY sudo-time          "0.3 SBU (with tests)">
+@y
+  <!ENTITY sudo-buildsize     "28 MB (テスト込み)">
+  <!ENTITY sudo-time          "0.3 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to Sudo</title>
 @y
     <title>&IntroductionTo1;Sudo&IntroductionTo2;</title>
@@ -271,11 +279,8 @@
         following command as the <systemitem class="username">root</systemitem>
         user to create the <application>PAM</application> configuration file:
 @y
-        If <application>PAM</application> is installed on the system,
-        <application>Sudo</application> is built with
-        <application>PAM</application> support. In that case, issue the
-        following command as the <systemitem class="username">root</systemitem>
-        user to create the <application>PAM</application> configuration file:
+        <application>PAM</application> をインストールしている場合、<application>Sudo</application> は <application>PAM</application> サポートを含めてビルドされます。
+        この場合は <systemitem class="username">root</systemitem> ユーザーになり以下のコマンドを実行して <application>PAM</application> 設定ファイルを生成します。
 @z
 
 @x

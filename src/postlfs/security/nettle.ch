@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY nettle-buildsize     "75 MB (with tests)">
+  <!ENTITY nettle-time          "0.3 SBU (with tests)">
+@y
+  <!ENTITY nettle-buildsize     "75 MB (テスト込み)">
+  <!ENTITY nettle-time          "0.3 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to Nettle</title>
 @y
     <title>&IntroductionTo1;Nettle&IntroductionTo2;</title>
@@ -117,6 +125,12 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
 @z
 
 @x

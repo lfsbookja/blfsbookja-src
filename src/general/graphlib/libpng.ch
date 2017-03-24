@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libpng-buildsize     "13 MB (with tests)">
+  <!ENTITY libpng-buildsize     "14 MB (with tests)">
   <!ENTITY libpng-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY libpng-buildsize     "13 MB (テスト込み)">
+  <!ENTITY libpng-buildsize     "14 MB (テスト込み)">
   <!ENTITY libpng-time          "0.8 SBU (テスト込み)">
 @z
 

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY vala-buildsize     "114 MB (including tests)">
-  <!ENTITY vala-time          "0.9 SBU (including tests)">
+  <!ENTITY vala-buildsize     "112 MB (including tests)">
+  <!ENTITY vala-time          "1.0 SBU (including tests)">
 @y
-  <!ENTITY vala-buildsize     "114 MB (テスト込み)">
-  <!ENTITY vala-time          "0.9 SBU (テスト込み)">
+  <!ENTITY vala-buildsize     "112 MB (テスト込み)">
+  <!ENTITY vala-time          "1.0 SBU (テスト込み)">
 @z
 
 @x

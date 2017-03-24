@@ -87,19 +87,20 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="cacerts"/> (runtime) and
-      <xref linkend="openssl"/> or <xref linkend="gnutls"/>
+      <xref linkend="openssl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="cacerts"/> (実行時),
-      <xref linkend="openssl"/> または <xref linkend="gnutls"/>
+      <xref linkend="openssl"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gnutls"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
@@ -118,6 +119,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gnutls"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
@@ -129,7 +131,7 @@
       <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
       <ulink url="http://www.libssh2.org">libssh2</ulink>,
       <ulink url="https://tls.mbed.org/">mbed TLS (formerly known as
-      PolarSSL)</ulink>, and
+      PolarSSL)</ulink>,
       <ulink url="http://spnego.sourceforge.net/">
       SPNEGO</ulink>
     </para>

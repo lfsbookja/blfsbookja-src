@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY ruby-buildsize     "335 MB, with checks (add 247 MB for C API docs)">
+  <!ENTITY ruby-buildsize     "338 MB, with checks (add 247 MB for C API docs)">
   <!ENTITY ruby-time          "2.4 SBU, with checks (add 0.5 SBU for C API docs)">
 @y
-  <!ENTITY ruby-buildsize     "335 MB, with checks (add 247 MB for C API docs)">
+  <!ENTITY ruby-buildsize     "338 MB, with checks (add 247 MB for C API docs)">
   <!ENTITY ruby-time          "2.4 SBU, with checks (add 0.5 SBU for C API docs)">
 @z
 

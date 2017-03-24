@@ -142,18 +142,6 @@
 @z
 
 @x
-      <parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is
-      used to get libraries to install to <filename
-      class="directory">$KF5_PREFIX/lib</filename> instead of <filename
-      class="directory">$KF5_PREFIX/lib64</filename> on a 64 bit system.
-@y
-      <parameter>-DCMAKE_INSTALL_LIBDIR=lib</parameter>: This switch is
-      used to get libraries to install to <filename
-      class="directory">$KF5_PREFIX/lib</filename> instead of <filename
-      class="directory">$KF5_PREFIX/lib64</filename> on a 64 bit system.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

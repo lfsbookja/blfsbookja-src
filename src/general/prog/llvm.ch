@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "2.2 GB (with Clang, add 7.3 GB for tests)">
-  <!ENTITY llvm-time          "20 SBU (with Clang and parallelism=4, add 5 SBU for tests)">
+  <!ENTITY llvm-buildsize     "1.8 GB (with Clang, add 8.2 GB for tests)">
+  <!ENTITY llvm-time          "22 SBU (with Clang and parallelism=4, add 14 SBU for tests using 12 cores)">
 @y
-  <!ENTITY llvm-buildsize     "2.2 GB (with Clang, add 7.3 GB for tests)">
-  <!ENTITY llvm-time          "20 SBU (with Clang and parallelism=4, add 5 SBU for tests)">
+  <!ENTITY llvm-buildsize     "1.8 GB (with Clang, add 8.2 GB for tests)">
+  <!ENTITY llvm-time          "22 SBU (with Clang and parallelism=4, add 14 SBU for tests using 12 cores)">
 @z
 
 @x
@@ -235,12 +235,12 @@
 @x
       To test the results, issue: <command>make check-all</command>. Tests are
       run using the maximum number of processors/threads available.
-      Note that the Address Sanitizer tests are known to fail currently.
+      Note that the Address Sanitizer tests are known to fail.
 <!--  Still true for v 3.9.1 -->
 @y
       To test the results, issue: <command>make check-all</command>. Tests are
       run using the maximum number of processors/threads available.
-      Note that the Address Sanitizer tests are known to fail currently.
+      Note that the Address Sanitizer tests are known to fail.
 <!--  Still true for v 3.9.1 -->
 @z
 
