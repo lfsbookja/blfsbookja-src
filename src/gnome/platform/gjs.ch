@@ -79,14 +79,14 @@
     <para role="required">
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>, and
-      <xref linkend="JS2"/>
+      <xref linkend="js38"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cairo"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="JS2"/>
+      <xref linkend="gobject-introspection"/>, and
+      <xref linkend="js38"/>
     </para>
 @z
 
@@ -146,7 +146,7 @@
         </seg>
         <seg>
           /usr/include/gjs-1.0 and
-          /usr/lib{,exec}/gjs
+          /usr/lib/gjs
         </seg>
 @y
         <seg>
@@ -156,8 +156,8 @@
           libgjs.so
         </seg>
         <seg>
-          /usr/include/gjs-1.0 and
-          /usr/lib{,exec}/gjs
+          /usr/include/gjs-1.0,
+          /usr/lib/gjs
         </seg>
 @z
 

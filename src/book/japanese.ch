@@ -34,7 +34,7 @@
     <title>はじめに</title>
 
     <para>
-    本書は BLFS ブック &version; の日本語版-&jversion; です。
+    本書は BLFS ブック Version &version; の日本語版 (&jversion;) です。
     オリジナルの BLFS ブックと同様に DocBook を用いて構築しています。
     </para>
 

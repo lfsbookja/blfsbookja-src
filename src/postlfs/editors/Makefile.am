@@ -15,6 +15,7 @@ CHANGE_FILES = \
 	joe.ch      \
 	juffed.ch   \
 	kate5.ch    \
+	mousepad.ch \
 	nano.ch     \
 	others.ch   \
 	vim.ch

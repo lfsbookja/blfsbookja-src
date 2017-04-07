@@ -80,13 +80,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>, and
-      <xref linkend="JS"/>
+      <xref linkend="js38"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="JS"/>
+      <xref linkend="js38"/>
     </para>
 @z
 

@@ -8,7 +8,6 @@
 BOOKdir = @abs_bookdir@/networking/netlibs
 CHANGE_FILES = \
 	curl.ch            \
-	geoclue.ch         \
 	geoclue2.ch        \
 	glib-networking.ch \
 	ldns.ch            \

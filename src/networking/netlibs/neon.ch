@@ -93,7 +93,7 @@
     <para role="optional">
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
-      <ulink url="http://code.google.com/p/libproxy/">libproxy</ulink>, and
+      <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>, and
       <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>,
     </para>
 @y
@@ -101,7 +101,7 @@
     <para role="optional">
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
-      <ulink url="http://code.google.com/p/libproxy/">libproxy</ulink>,
+      <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>,
       <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>,
     </para>
 @z

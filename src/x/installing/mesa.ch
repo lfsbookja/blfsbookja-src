@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY mesa-buildsize     "304 MB (with demos and docs, add 50 MB for tests)">
-  <!ENTITY mesa-time          "2.6 SBU (with demos and docs, add 0.6 SBU for tests)">
+  <!ENTITY mesa-time          "3.5 SBU (using parallelism=4 with demos and docs, add 0.6 SBU for tests)">
 @y
   <!ENTITY mesa-buildsize     "304 MB (with demos and docs, add 50 MB for tests)">
-  <!ENTITY mesa-time          "2.6 SBU (with demos and docs, add 0.6 SBU for tests)">
+  <!ENTITY mesa-time          "3.5 SBU (using parallelism=4 with demos and docs, add 0.6 SBU for tests)">
 @z
 
 @x

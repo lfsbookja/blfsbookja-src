@@ -199,10 +199,10 @@
 @z
 
 @x
-      <command>chmod -v 4755 /sbin/mount.ntfs</command>: Making mount.ntfs setuid
+      <command>chmod -v 4755 /bin/ntfs-3g</command>: Making mount.ntfs setuid
       root allows non root users to mount NTFS partitions.
 @y
-      <command>chmod -v 4755 /sbin/mount.ntfs</command>: Making mount.ntfs setuid
+      <command>chmod -v 4755 /bin/ntfs-3g</command>: Making mount.ntfs setuid
       root allows non root users to mount NTFS partitions.
 @z
 

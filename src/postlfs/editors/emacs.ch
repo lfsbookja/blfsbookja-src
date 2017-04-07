@@ -119,7 +119,7 @@
       <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
       display such complex scripts as Indic and Khmer, and also for scripts
       that require Arabic shaping support (Arabic and Farsi), and
-      <ulink url="http://ftp.x.org/pub/individual/lib/">libXaw3d</ulink>
+      <ulink url="&xorg-download-http;/lib/">libXaw3d</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -147,7 +147,7 @@
       <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
       display such complex scripts as Indic and Khmer, and also for scripts
       that require Arabic shaping support (Arabic and Farsi), and
-      <ulink url="http://ftp.x.org/pub/individual/lib/">libXaw3d</ulink>
+      <ulink url="&xorg-download-http;/lib/">libXaw3d</ulink>
     </para>
 @z
 

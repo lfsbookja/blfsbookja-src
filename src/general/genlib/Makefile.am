@@ -25,8 +25,7 @@ CHANGE_FILES = \
         grantlee.ch \
 	gsl.ch \
 	icu.ch \
-	js.ch \
-	js2.ch \
+	js38.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \

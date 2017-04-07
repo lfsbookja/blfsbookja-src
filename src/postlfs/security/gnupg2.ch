@@ -122,24 +122,34 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="imagemagick"/> (for the <command>convert</command> utility,
+      used for generating the documentation),
       <xref linkend="libusb-compat"/>,
       an <xref linkend="server-mail"/>,
       <xref linkend="openldap"/>,
       <xref linkend="sqlite"/>,
-      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
-      <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
+      <ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> (for
+      generating documentation),
+      and <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
       adns</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="imagemagick"/> (for the <command>convert</command> utility,
+      used for generating the documentation),
       <xref linkend="libusb-compat"/>,
       an <xref linkend="server-mail"/>,
       <xref linkend="openldap"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
+      <ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> (for
+      generating documentation),
+      and <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
       adns</ulink>
     </para>
 @z

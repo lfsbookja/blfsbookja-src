@@ -8,7 +8,6 @@
 BOOKdir = @abs_bookdir@/xfce/apps
 CHANGE_FILES = \
 	apps.ch           \
-	mousepad.ch       \
 	parole.ch         \
 	ristretto.ch      \
 	vte2.ch           \
