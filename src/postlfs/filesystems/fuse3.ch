@@ -37,39 +37,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&fuse-download-http;"/>
+          Download (HTTP): <ulink url="&fuse3-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&fuse-download-http;"/>
+          &Download; (HTTP): <ulink url="&fuse3-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&fuse-download-ftp;"/>
+          Download (FTP): <ulink url="&fuse3-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&fuse-download-ftp;"/>
+          &Download; (FTP): <ulink url="&fuse3-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &fuse-md5sum;
+          Download MD5 sum: &fuse3-md5sum;
 @y
-          &Download; MD5 sum: &fuse-md5sum;
+          &Download; MD5 sum: &fuse3-md5sum;
 @z
 
 @x
-          Download size: &fuse-size;
+          Download size: &fuse3-size;
 @y
-          &DownloadSize;: &fuse-size;
+          &DownloadSize;: &fuse3-size;
 @z
 
 @x
-          Estimated disk space required: &fuse-buildsize;
+          Estimated disk space required: &fuse3-buildsize;
 @y
-          &Estimateddiskspacerequired;: &fuse-buildsize;
+          &Estimateddiskspacerequired;: &fuse3-buildsize;
 @z
 
 @x
-          Estimated build time: &fuse-time;
+          Estimated build time: &fuse3-time;
 @y
-          &Estimatedbuildtime;: &fuse-time;
+          &Estimatedbuildtime;: &fuse3-time;
 @z
 
 @x
@@ -180,23 +180,23 @@
 
 @x
         <seg>
-          fusermount, mount.fuse, and ulockmgr_server
+          fusermount3, mount.fuse3
         </seg>
         <seg>
-          libfuse.so and libulockmgr.so
+          libfuse3.so
         </seg>
         <seg>
-          /usr/include/fuse and /usr/share/doc/fuse-&fuse-version;
+          /usr/include/fuse3 and /usr/share/doc/fuse-&fuse3-version;
         </seg>
 @y
         <seg>
-          fusermount, mount.fuse, ulockmgr_server
+          fusermount3, mount.fuse3
         </seg>
         <seg>
-          libfuse.so, libulockmgr.so
+          libfuse3.so
         </seg>
         <seg>
-          /usr/include/fuse, /usr/share/doc/fuse-&fuse-version;
+          /usr/include/fuse3 and /usr/share/doc/fuse-&fuse3-version;
         </seg>
 @z
 
@@ -222,20 +222,8 @@
             filesystem.
 @z
 
-@x ulockmgr_server
-            is the Userspace Lock Manager Server for Fuse filesystems.
-@y
-            is the Userspace Lock Manager Server for Fuse filesystems.
-@z
-
-@x libfuse.so
+@x libfuse3.so
             contains the <application>FUSE</application> API functions.
 @y
             <application>FUSE</application> API 関数を提供します。
-@z
-
-@x libulockmgr.so
-            contains the Userspace Lock Manager API functions.
-@y
-            contains the Userspace Lock Manager API functions.
 @z

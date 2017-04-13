@@ -133,8 +133,11 @@
       <xref linkend="libvdpau"/> (to build VDPAU drivers),
       
       <xref linkend="llvm"/> (required for Gallium3D, r300, and radeonsi
-      drivers and for the llvmpipe software rasterizer. See
-      <ulink url="http://www.mesa3d.org/systems.html"/> for more information.)
+      drivers and for the llvmpipe software rasterizer. See <ulink
+      url="http://www.mesa3d.org/systems.html"/> for more information)<phrase
+      revision="systemd">, and
+      <xref linkend="wayland"/> (required for <xref linkend='plasma5-build'/>,
+      <xref linkend='lxqt'/>, and GNOME)</phrase>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -146,11 +149,14 @@
       build <application>libva</application> first without EGL and GLX support,
       install this package, and rebuild <application>libva</application>.),</phrase>
       
-      <xref linkend="libvdpau"/> (VDPAUドライバービルド時),
+      <xref linkend="libvdpau"/> (VDPAU ドライバービルド時),
       
       <xref linkend="llvm"/> (required for Gallium3D, r300, and radeonsi
-      drivers and for the llvmpipe software rasterizer. See
-      <ulink url="http://www.mesa3d.org/systems.html"/> for more information.)
+      drivers and for the llvmpipe software rasterizer. See <ulink
+      url="http://www.mesa3d.org/systems.html"/> for more information)<phrase
+      revision="systemd">, and
+      <xref linkend="wayland"/> (required for <xref linkend='plasma5-build'/>,
+      <xref linkend='lxqt'/>, and GNOME)</phrase>
     </para>
 @z
 
@@ -215,15 +221,11 @@
 @x
         Add wayland to the <parameter>--with-egl-platforms</parameter> switch
         below if you plan on building
-        <xref linkend='plasma5-build'/><phrase revision="systemd">,</phrase>
-        <phrase revision="sysv">or</phrase>
-        <xref linkend='lxqt'/><phrase revision="systemd">, or GNOME</phrase>.
+        <xref linkend='plasma5-build'/> or <xref linkend='lxqt'/>.
 @y
         Add wayland to the <parameter>--with-egl-platforms</parameter> switch
         below if you plan on building
-        <xref linkend='plasma5-build'/><phrase revision="systemd">,</phrase>
-        <phrase revision="sysv">or</phrase>
-        <xref linkend='lxqt'/><phrase revision="systemd">, or GNOME</phrase>.
+        <xref linkend='plasma5-build'/> or <xref linkend='lxqt'/>.
 @z
 
 @x

@@ -81,14 +81,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="fuse"/>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="fuse2"/> (this disables user mounts)
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="fuse"/>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="fuse2"/> (this disables user mounts)
     </para>
 @z
 
@@ -167,17 +167,15 @@
 @z
 
 @x
-      <parameter>--with-fuse=external</parameter>: This switch dynamically
-      links <command>lowntfs-3g</command> and <command>ntfs-3g</command> to
-      external libfuse. Omit it if you have not installed <xref
-      linkend="fuse"/> or if you want to use internal statically compiled
-      libfuse.
+      <parameter>--with-fuse=internal</parameter>: This switch dynamically
+      forces <application>ntfs-3g</application> to use an internal copy of the
+      <application>fuse-2.x</application> library. This is required if you wish
+      to allow users to mount NTFS partitions.
 @y
-      <parameter>--with-fuse=external</parameter>: This switch dynamically
-      links <command>lowntfs-3g</command> and <command>ntfs-3g</command> to
-      external libfuse. Omit it if you have not installed <xref
-      linkend="fuse"/> or if you want to use internal statically compiled
-      libfuse.
+      <parameter>--with-fuse=internal</parameter>: This switch dynamically
+      forces <application>ntfs-3g</application> to use an internal copy of the
+      <application>fuse-2.x</application> library. This is required if you wish
+      to allow users to mount NTFS partitions.
 @z
 
 @x

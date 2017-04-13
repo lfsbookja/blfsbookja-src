@@ -141,11 +141,12 @@
 @z
 
 @x
-      <option>--with-gstreamer=1.0</option>: Use this switch if
-      the deprecated gstreamer-0.x is installed.
+      <option>--with-gstreamer=1.0</option>: Use this switch if both
+      the <xref linkend='gstreamer10'/> and the deprecated gstreamer-0.x  
+      packages are installed.
 @y
       <option>--with-gstreamer=1.0</option>:
-      かつての gstreamer-0.x をインストールしている場合は本スイッチを指定します。
+      <xref linkend='gstreamer10'/> とかつての gstreamer-0.x を共にインストールしている場合は本スイッチを指定します。
 @z
 
 @x

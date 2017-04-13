@@ -7,6 +7,7 @@
 ##
 BOOKdir = @abs_bookdir@/x/installing
 CHANGE_FILES_x7drivers = \
+	x7driver-amdgpu.ch      \
 	x7driver-evdev.ch       \
 	x7driver-synaptics.ch   \
 	x7driver-vmmouse.ch     \

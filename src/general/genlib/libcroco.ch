@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libcroco-buildsize     "13 MB (with tests)">
+  <!ENTITY libcroco-buildsize     "12 MB (with tests)">
   <!ENTITY libcroco-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libcroco-buildsize     "13 MB (テスト込み)">
+  <!ENTITY libcroco-buildsize     "12 MB (テスト込み)">
   <!ENTITY libcroco-time          "0.1 SBU (テスト込み)">
 @z
 

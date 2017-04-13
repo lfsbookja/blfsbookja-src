@@ -333,11 +333,11 @@
 @x
           You will need to substitute your domain and proper hostname for the
           occurrences of the <replaceable>&lt;belgarath&gt;</replaceable> and
-          <replaceable>&lt;lfs.org&gt;</replaceable> names.
+          <replaceable>&lt;example.org&gt;</replaceable> names.
 @y
           You will need to substitute your domain and proper hostname for the
           occurrences of the <replaceable>&lt;belgarath&gt;</replaceable> and
-          <replaceable>&lt;lfs.org&gt;</replaceable> names.
+          <replaceable>&lt;example.org&gt;</replaceable> names.
 @z
 
 @x

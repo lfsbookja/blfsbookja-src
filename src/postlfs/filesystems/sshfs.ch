@@ -84,16 +84,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="fuse"/>,
+      <xref linkend="fuse2"/>,
       <xref linkend="glib2"/>, and
       <xref linkend="openssh"/>.
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="fuse"/>,
-      <xref linkend="glib2"/>, and
-      <xref linkend="openssh"/>.
+      <xref linkend="fuse2"/>,
+      <xref linkend="glib2"/>,
+      <xref linkend="openssh"/>
     </para>
 @z
 

@@ -127,6 +127,7 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="gdb"/>,
       <xref linkend="git"/>,
+      <xref linkend="gnupg2"/> (required for ADS and testsuite),
       <xref linkend="gnutls"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
@@ -144,7 +145,7 @@
       <ulink url="http://www.h5l.org/">Heimdal</ulink> (currently not working),
       <ulink url="http://ftp.de.debian.org/debian/pool/main/liba/libaio/">libaio</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-      <ulink url="https://www.samba.org/ftp/ldb/">ldb</ulink> (included),
+      <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
@@ -159,6 +160,7 @@
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="gdb"/>,
       <xref linkend="git"/>,
+      <xref linkend="gnupg2"/> (required for ADS and testsuite),
       <xref linkend="gnutls"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
@@ -176,11 +178,11 @@
       <ulink url="http://www.h5l.org/">Heimdal</ulink> (currently not working),
       <ulink url="http://ftp.de.debian.org/debian/pool/main/liba/libaio/">libaio</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-      <ulink url="https://www.samba.org/ftp/ldb/">ldb</ulink> (included),
+      <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
-      <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
+      <ulink url="https://tevent.samba.org/">tevent</ulink> (included),
       <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
     </para>
 @z
@@ -210,14 +212,18 @@
     <para>To test the results, as the
     <systemitem class="username">root</systemitem> user, issue:
     <command>make quicktest</command>. The test suite will produce lines that
-    look like failures, but these are innocuous. The summary should report
-    <emphasis>"ALL OK"</emphasis> for a good test run.</para>
+    look like failures, but these are innocuous. The last few lines of output
+    should report <emphasis>"ALL OK"</emphasis> for a good test run. A summary
+    of any failures can be found in
+    <filename class="directory">./st/summary</filename>.</para>
 @y
     <para>To test the results, as the
     <systemitem class="username">root</systemitem> user, issue:
     <command>make quicktest</command>. The test suite will produce lines that
-    look like failures, but these are innocuous. The summary should report
-    <emphasis>"ALL OK"</emphasis> for a good test run.</para>
+    look like failures, but these are innocuous. The last few lines of output
+    should report <emphasis>"ALL OK"</emphasis> for a good test run. A summary
+    of any failures can be found in
+    <filename class="directory">./st/summary</filename>.</para>
 @z
 
 @x

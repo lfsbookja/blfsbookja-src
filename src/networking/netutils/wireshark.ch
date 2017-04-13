@@ -389,13 +389,13 @@
 
 @x
         <seg>
-          androiddump, capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
+          capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
           mergecap, randpkt, rawshark, reordercap, text2pcap, tshark, wireshark,
           and wireshark-gtk
         </seg>
         <seg>
-          libwireshark.so, libwiretap.so, libwsutil.so, and numerous modules
-          under /usr/lib/wireshark/plugins
+          libwireshark.so, libwiretap.so, libwscodecs.so (optional),
+          libwsutil.so, and numerous modules under /usr/lib/wireshark/plugins
         </seg>
         <seg>
           /usr/{lib,share}/wireshark and
@@ -403,16 +403,16 @@
          </seg>
 @y
         <seg>
-          androiddump, capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
+          capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
           mergecap, randpkt, rawshark, reordercap, text2pcap, tshark, wireshark,
-          and wireshark-gtk
+          wireshark-gtk
         </seg>
         <seg>
-          libwireshark.so, libwiretap.so, libwsutil.so, and numerous modules
-          under /usr/lib/wireshark/plugins
+          libwireshark.so, libwiretap.so, libwscodecs.so (optional),
+          libwsutil.so, and numerous modules under /usr/lib/wireshark/plugins
         </seg>
         <seg>
-          /usr/{lib,share}/wireshark and
+          /usr/{lib,share}/wireshark,
           /usr/share/doc/wireshark-&wireshark-version;
          </seg>
 @z

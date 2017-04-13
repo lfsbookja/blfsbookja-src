@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY glibmm-buildsize     "228 MB (with tests)">
-  <!ENTITY glibmm-time          "2.4 SBU (with tests)">
+  <!ENTITY glibmm-time          "2.6 SBU (with tests)">
 @y
   <!ENTITY glibmm-buildsize     "228 MB (テストスイート込み)">
-  <!ENTITY glibmm-time          "2.4 SBU (テストスイート込み)">
+  <!ENTITY glibmm-time          "2.6 SBU (テストスイート込み)">
 @z
 
 @x
@@ -200,9 +200,9 @@
 @z
 
 @x libgiomm-2.4.so
-            contains the Gio API classes.
+            contains the GIO API classes.
 @y
-            Gio API クラスを提供します。
+            GIO API クラスを提供します。
 @z
 
 @x libglibmm-2.4.so

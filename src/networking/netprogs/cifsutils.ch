@@ -78,7 +78,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="keyutils"/>,
+      <xref linkend="keyutils"/> (required to build PAM module),
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="talloc"/>,
@@ -89,7 +89,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="keyutils"/>,
+      <xref linkend="keyutils"/> (PAM モジュールビルドに必要),
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="talloc"/>,

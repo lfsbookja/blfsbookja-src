@@ -20,6 +20,12 @@
 @z
 
 @x
+  <title>Typographical Conventions</title>
+@y
+  <title>表記規則</title>
+@z
+
+@x
   <para>To make things easy to follow, there are a number of conventions used
   throughout the book.  Following are some examples:</para>
 @y

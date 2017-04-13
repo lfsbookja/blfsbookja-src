@@ -237,7 +237,8 @@ CHANGE_FILES = \
 	btrfs-progs.ch   \
 	ext3.ch          \
 	filesystems.ch   \
-	fuse.ch          \
+	fuse2.ch         \
+	fuse3.ch         \
 	gptfdisk.ch      \
 	initramfs.ch     \
 	jfs.ch           \
