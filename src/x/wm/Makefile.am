@@ -20,19 +20,14 @@ srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-fluxbox.xml: $(BOOKdir)/$@ $(srcdir)/fluxbox.ch
-icewm.xml:   $(BOOKdir)/$@ $(srcdir)/icewm.ch
 other-wms.xml.tmp: $(BOOKdir)/other-wms.xml
 	sed -e "s/Motif\xAE/Motif\&reg;/" $^ > $@
 other-wms.xml: ./other-wms.xml.tmp $(srcdir)/other-wms.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
-openbox.xml: $(BOOKdir)/$@ $(srcdir)/openbox.ch
-sawfish.xml: $(BOOKdir)/$@ $(srcdir)/sawfish.ch
-wm.xml:      $(BOOKdir)/$@ $(srcdir)/wm.ch
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null

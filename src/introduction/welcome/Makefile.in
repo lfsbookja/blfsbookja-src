@@ -448,38 +448,23 @@ uninstall-am:
 .PRECIOUS: Makefile
 
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs) $(dist_changes)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-acknowledgments.xml: $(BOOKdir)/$@ $(srcdir)/acknowledgments.ch
-askhelp.xml:         $(BOOKdir)/$@ $(srcdir)/askhelp.ch
-changelog.xml:       $(BOOKdir)/$@ $(srcdir)/changelog.ch
-contact.xml:         $(BOOKdir)/$@ $(srcdir)/contact.ch
-conventions.xml:     $(BOOKdir)/$@ $(srcdir)/conventions.ch
-credits.xml:         $(BOOKdir)/$@ $(srcdir)/credits.ch
-maillists.xml:       $(BOOKdir)/$@ $(srcdir)/maillists.ch
-mirrors.xml:         $(BOOKdir)/$@ $(srcdir)/mirrors.ch
-newsserver.xml:      $(BOOKdir)/$@ $(srcdir)/newsserver.ch
-packages.xml:        $(BOOKdir)/$@ $(srcdir)/packages.ch
-version.xml:         $(BOOKdir)/$@ $(srcdir)/version.ch
-welcome.xml:         $(BOOKdir)/$@ $(srcdir)/welcome.ch
-which.xml:           $(BOOKdir)/$@ $(srcdir)/which.ch
-wiki.xml:            $(BOOKdir)/$@ $(srcdir)/wiki.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 jchangelog-2008.txt: $(BOOKdir)/changelog-2008.txt $(srcdir)/changelog-2008.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 jchangelog-2009.txt: $(BOOKdir)/changelog-2009.txt $(srcdir)/changelog-2009.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 jchangelog-2010.txt: $(BOOKdir)/changelog-2010.txt $(srcdir)/changelog-2010.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 jchangelog-2011.txt: $(BOOKdir)/changelog-2011.txt $(srcdir)/changelog-2011.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 jchangelog-2012.txt: $(BOOKdir)/changelog-2012.txt $(srcdir)/changelog-2012.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -9,4 +9,4 @@ SUBDIRS = ctie src
 EXTRA_DIST = version.ac
 
 jchangelog:
-	cd src && make jchangelog
+	$(MAKE) -C src jchangelog

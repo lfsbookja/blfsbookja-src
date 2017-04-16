@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY icu-buildsize     "292 MB (add 32 MB for tests)">
-  <!ENTITY icu-time          "2.1 SBU (add 1.8 SBU for tests)">
+  <!ENTITY icu-buildsize     "285 MB (add 32 MB for tests)">
+  <!ENTITY icu-time          "1.3 SBU (add 1.3 SBU for tests)">
 @y
-  <!ENTITY icu-buildsize     "292 MB (テスト実施時はさらに 32 MB)">
-  <!ENTITY icu-time          "2.1 SBU (テスト実施時はさらに 1.8 SBU)">
+  <!ENTITY icu-buildsize     "285 MB (テスト実施時はさらに 32 MB)">
+  <!ENTITY icu-time          "1.3 SBU (テスト実施時はさらに 1.3 SBU)">
 @z
 
 @x

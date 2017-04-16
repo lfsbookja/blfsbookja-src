@@ -21,17 +21,9 @@ srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-arts.xml:               $(BOOKdir)/$@ $(srcdir)/arts.ch
-config.xml:             $(BOOKdir)/$@ $(srcdir)/config.ch
-core.xml:               $(BOOKdir)/$@ $(srcdir)/core.ch
-kdebase.xml:            $(BOOKdir)/$@ $(srcdir)/kdebase.ch
-kdelibs.xml:            $(BOOKdir)/$@ $(srcdir)/kdelibs.ch
-pre-install-config.xml: $(BOOKdir)/$@ $(srcdir)/pre-install-config.ch
-tqtinterface.xml:       $(BOOKdir)/$@ $(srcdir)/tqtinterface.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

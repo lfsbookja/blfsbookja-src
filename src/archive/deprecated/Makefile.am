@@ -24,20 +24,9 @@ srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-deprecated.xml:       $(BOOKdir)/$@ $(srcdir)/deprecated.ch
-dummy-deprecated.xml: $(BOOKdir)/$@ $(srcdir)/dummy-deprecated.ch
-gnome-mime-data.xml:  $(BOOKdir)/$@ $(srcdir)/gnome-mime-data.ch
-gnome-vfs.xml:        $(BOOKdir)/$@ $(srcdir)/gnome-vfs.ch
-libbonobo.xml:        $(BOOKdir)/$@ $(srcdir)/libbonobo.ch
-libbonoboui.xml:      $(BOOKdir)/$@ $(srcdir)/libbonoboui.ch
-libgnome.xml:         $(BOOKdir)/$@ $(srcdir)/libgnome.ch
-libgnomecanvas.xml:   $(BOOKdir)/$@ $(srcdir)/libgnomecanvas.ch
-libgnomeui.xml:       $(BOOKdir)/$@ $(srcdir)/libgnomeui.ch
-orbit2.xml:           $(BOOKdir)/$@ $(srcdir)/orbit2.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

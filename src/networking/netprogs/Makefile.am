@@ -29,25 +29,9 @@ srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-bridgeutils.xml:      $(BOOKdir)/$@ $(srcdir)/bridgeutils.ch
-cifsutils.xml:        $(BOOKdir)/$@ $(srcdir)/cifsutils.ch
-ncftp.xml:            $(BOOKdir)/$@ $(srcdir)/ncftp.ch
-net-tools.xml:        $(BOOKdir)/$@ $(srcdir)/net-tools.ch
-netfs.xml:            $(BOOKdir)/$@ $(srcdir)/netfs.ch
-netprogs.xml:         $(BOOKdir)/$@ $(srcdir)/netprogs.ch
-nfs-utils.xml:        $(BOOKdir)/$@ $(srcdir)/nfs-utils.ch
-ntp.xml:              $(BOOKdir)/$@ $(srcdir)/ntp.ch
-othernetprogs.xml:    $(BOOKdir)/$@ $(srcdir)/othernetprogs.ch
-rpcbind.xml:          $(BOOKdir)/$@ $(srcdir)/rpcbind.ch
-rsync.xml:            $(BOOKdir)/$@ $(srcdir)/rsync.ch
-samba.xml:            $(BOOKdir)/$@ $(srcdir)/samba.ch
-wget.xml:             $(BOOKdir)/$@ $(srcdir)/wget.ch
-wireless-tools.xml:   $(BOOKdir)/$@ $(srcdir)/wireless-tools.ch
-wpa_supplicant.xml:   $(BOOKdir)/$@ $(srcdir)/wpa_supplicant.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

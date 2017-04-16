@@ -53,7 +53,7 @@
   <command>emacs</command>, or any other editor.</para>
 @y
   <para>
-  Unix 的ではない環境から Linux に移ってきた人の多くは、テキストのみにより設定ファイルを通じてシステム設定を行うことを奇異に感じるようです。 
+  Unix 的ではない環境から Linux に移ってきた方の中には、テキストの設定ファイルを通じてシステム設定を行うことを奇異に感じる方が多いようです。
   Linux では
 In Linux, just
   about all configuration is done via the manipulation of text files. The

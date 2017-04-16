@@ -16,20 +16,12 @@ srcs = lfs-index.xsl lfs-toc.xsl lfs-mixed.xsl lfs-sections.xsl \
 
 SUFFIXES = .ch .xsl
 .ch.xsl:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 lfs-index.xsl: $(BOOKdir)/$@
 	cp -p $(BOOKdir)/$@ $@
-lfs-toc.xsl: $(BOOKdir)/$@ $(srcdir)/lfs-toc.ch
-lfs-mixed.xsl: $(BOOKdir)/$@ $(srcdir)/lfs-mixed.ch
-lfs-sections.xsl: $(BOOKdir)/$@ $(srcdir)/lfs-sections.ch
-lfs-navigational.xsl: $(BOOKdir)/$@ $(srcdir)/lfs-navigational.ch
-lfs-titles.xsl: $(BOOKdir)/$@ $(srcdir)/lfs-titles.ch
-lfs-legalnotice.xsl: $(BOOKdir)/$@ $(srcdir)/lfs-legalnotice.ch
-lfs-admon.xsl: $(BOOKdir)/$@ $(srcdir)/lfs-admon.ch
-lfs-xref.xsl: $(BOOKdir)/$@ $(srcdir)/lfs-xref.ch

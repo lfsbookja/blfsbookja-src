@@ -19,15 +19,9 @@ srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-devel.xml:       $(BOOKdir)/$@ $(srcdir)/devel.ch
-kdebindings.xml: $(BOOKdir)/$@ $(srcdir)/kdebindings.ch
-kdesdk.xml:      $(BOOKdir)/$@ $(srcdir)/kdesdk.ch
-kdevelop.xml:    $(BOOKdir)/$@ $(srcdir)/kdevelop.ch
-kdewebdev.xml:   $(BOOKdir)/$@ $(srcdir)/kdewebdev.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

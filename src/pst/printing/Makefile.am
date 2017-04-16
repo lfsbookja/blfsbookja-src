@@ -19,15 +19,9 @@ srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-cups.xml:         $(BOOKdir)/$@ $(srcdir)/cups.ch
-cups-filters.xml: $(BOOKdir)/$@ $(srcdir)/cups-filters.ch
-gs.xml:           $(BOOKdir)/$@ $(srcdir)/gs.ch
-gutenprint.xml:   $(BOOKdir)/$@ $(srcdir)/gutenprint.ch
-printing.xml:     $(BOOKdir)/$@ $(srcdir)/printing.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

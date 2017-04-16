@@ -13,11 +13,9 @@ srcs = xsoft.xml
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-xsoft.xml: $(BOOKdir)/$@ $(srcdir)/xsoft.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

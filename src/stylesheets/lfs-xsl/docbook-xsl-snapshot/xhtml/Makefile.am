@@ -34,12 +34,12 @@ srcs = admon.xsl annotations.xsl autoidx-kimber.xsl autoidx-kosek.xsl \
 
 SUFFIXES = .ch .xsl
 .ch.xsl:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 admon.xsl: $(BOOKdir)/$@ $(srcdir)/admon.ch
 annotations.xsl: $(BOOKdir)/$@ $(srcdir)/annotations.ch

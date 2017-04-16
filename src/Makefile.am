@@ -38,20 +38,20 @@ REV=@revspec@
 all: ctie $(srcs) blfs # stylesheets bootscripts udev-config blfs
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 general.ent: $(BOOKdir)/general.ent $(srcdir)/general.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 packages.ent: $(BOOKdir)/packages.ent $(srcdir)/packages.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 gnome.ent: $(BOOKdir)/gnome.ent $(srcdir)/gnome.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 index.xml: $(BOOKdir)/index.xml $(srcdir)/index.ch
-	$(top_builddir)/$(CTIE) -m $@ $^
+	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch $(srcdir)/tidy.sed
-	sed -f $(srcdir)/tidy.sed < $(BOOKdir)/tidy.conf > tidy.conf.tmp
-	$(top_builddir)/$(CTIE) -m $@ tidy.conf.tmp $(srcdir)/tidy.ch
-	rm -f tidy.conf.tmp
+	@sed -f $(srcdir)/tidy.sed < $(BOOKdir)/tidy.conf > tidy.conf.tmp
+	$(top_builddir)/$(CTIE) -m $@ tidy.conf.tmp $(srcdir)/tidy.ch >/dev/null
+	@rm -f tidy.conf.tmp
 
 stylesheets:
 	$(MKDIR_P) stylesheets
@@ -98,7 +98,8 @@ $(BASEDIR)/index.html: $(RENDERTMP)/$(BLFSHTML)
 	done;
 
 jchangelog:
-	cd introduction/welcome && make jchangelog-2008.txt jchangelog-2009.txt\
+	@$(MAKE) -C introduction/welcome \
+		jchangelog-2008.txt jchangelog-2009.txt\
 		jchangelog-2010.txt jchangelog-2011.txt
 	$(Q)cp -p introduction/welcome/jchangelog-*.txt $(BASEDIR)/introduction
 

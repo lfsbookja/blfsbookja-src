@@ -19,15 +19,9 @@ srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-docbook-xsl.xml: $(BOOKdir)/$@ $(srcdir)/docbook-xsl.ch
-docbook.xml:     $(BOOKdir)/$@ $(srcdir)/docbook.ch
-itstool.xml:     $(BOOKdir)/$@ $(srcdir)/itstool.ch
-xml.xml:         $(BOOKdir)/$@ $(srcdir)/xml.ch
-xmlto.xml:       $(BOOKdir)/$@ $(srcdir)/xmlto.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

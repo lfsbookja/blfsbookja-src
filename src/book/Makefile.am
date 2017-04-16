@@ -22,19 +22,12 @@ srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-bookinfo.xml:     $(BOOKdir)/$@ $(srcdir)/bookinfo.ch
-dedication.xml:   $(BOOKdir)/$@ $(srcdir)/dedication.ch
-errata.xml:       $(BOOKdir)/$@ $(srcdir)/errata.ch
-foreword.xml:     $(BOOKdir)/$@ $(srcdir)/foreword.ch
-japanese.xml:     $(srcdir)/japanese.ch
-	cp -p $(srcdir)/japanese.ch $@
-organization.xml: $(BOOKdir)/$@ $(srcdir)/organization.ch
-preface.xml:      $(BOOKdir)/$@ $(srcdir)/preface.ch
-whoread.xml:      $(BOOKdir)/$@ $(srcdir)/whoread.ch
+japanese.xml: $(srcdir)/japanese.ch
+	@cp -p $(srcdir)/japanese.ch $@

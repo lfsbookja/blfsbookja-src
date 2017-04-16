@@ -27,23 +27,9 @@ srcs = $(CHANGE_FILES:.ch=.xml)
 
 SUFFIXES = .ch .xml
 .ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
-
-add.xml:               $(BOOKdir)/$@ $(srcdir)/add.ch
-add-pkgs.xml:          $(BOOKdir)/$@ $(srcdir)/add-pkgs.ch
-ark.xml:               $(BOOKdir)/$@ $(srcdir)/ark.ch
-gwenview.xml:          $(BOOKdir)/$@ $(srcdir)/gwenview.ch
-kate.xml:              $(BOOKdir)/$@ $(srcdir)/kate.ch
-kmix.xml:              $(BOOKdir)/$@ $(srcdir)/kmix.ch
-kdepim.xml:            $(BOOKdir)/$@ $(srcdir)/kdepim.ch
-kdepim-runtime.xml:    $(BOOKdir)/$@ $(srcdir)/kdepim-runtime.ch
-kdeplasma-addons.xml:  $(BOOKdir)/$@ $(srcdir)/kdeplasma-addons.ch
-konsole.xml:           $(BOOKdir)/$@ $(srcdir)/konsole.ch
-libkcddb.xml:          $(BOOKdir)/$@ $(srcdir)/libkcddb.ch
-libkexiv2.xml:         $(BOOKdir)/$@ $(srcdir)/libkexiv2.ch
-okular.xml:            $(BOOKdir)/$@ $(srcdir)/okular.ch
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null

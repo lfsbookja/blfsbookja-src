@@ -21,12 +21,12 @@ srcs = common.xsl de.xml en.xml entities.ent es.xml fr.xml gentext.xsl \
 
 SUFFIXES = .ch .xsl
 .ch.xsl:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
 
 all: ctie $(srcs)
 
 ctie:
-	cd $(top_builddir)/ctie && make ctie
+	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 common.xsl: $(BOOKdir)/$@ $(srcdir)/common.ch
 entities.ent: $(BOOKdir)/$@ 
@@ -35,11 +35,11 @@ entities.ent: $(BOOKdir)/$@
 gentext.xsl: $(BOOKdir)/$@ $(srcdir)/gentext.ch
 insertfile.xsl: $(BOOKdir)/$@ $(srcdir)/insertfile.ch
 l10n.dtd: $(BOOKdir)/$@ $(srcdir)/l10n_dtd.ch
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_dtd.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_dtd.ch >/dev/null
 l10n.xml: $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_xml.ch >/dev/null
 l10n.xsl: $(BOOKdir)/$@ $(srcdir)/l10n_xsl.ch
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_xsl.ch
+	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/l10n_xsl.ch >/dev/null
 labels.xsl: $(BOOKdir)/$@ $(srcdir)/labels.ch
 olink.xsl: $(BOOKdir)/$@ $(srcdir)/olink.ch
 pi.xsl: $(BOOKdir)/$@ $(srcdir)/pi.ch
