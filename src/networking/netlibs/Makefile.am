@@ -7,6 +7,7 @@
 ##
 BOOKdir = @abs_bookdir@/networking/netlibs
 CHANGE_FILES = \
+	c-ares.ch          \
 	curl.ch            \
 	geoclue2.ch        \
 	glib-networking.ch \
@@ -35,3 +36,5 @@ all: ctie $(srcs)
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
+
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)

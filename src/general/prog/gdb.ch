@@ -93,8 +93,10 @@
     <para role="optional">
       <xref linkend="dejagnu"/> (for tests),
       <xref linkend="doxygen"/>,
-      <xref linkend="guile"/>,
+      <xref linkend="gcc"/> (gfortran, for some tests),
+      <xref linkend="guile"/> (currently broken),
       <xref linkend="python2"/>,
+      <xref linkend="rust"/> (for some tests),
       <xref linkend="valgrind"/>, and
       <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
       (run-time dependency, also used in a few tests)
@@ -104,9 +106,11 @@
     <para role="optional">
       <xref linkend="dejagnu"/> (テスト時),
       <xref linkend="doxygen"/>,
-      <xref linkend="guile"/>,
+      <xref linkend="gcc"/> (gfortran, for some tests),
+      <xref linkend="guile"/> (currently broken),
       <xref linkend="python2"/>,
-      <xref linkend="valgrind"/>,
+      <xref linkend="rust"/> (for some tests),
+      <xref linkend="valgrind"/>, and
       <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
       (ランタイム時での依存、テスト内にて利用するものもあり)
     </para>

@@ -58,3 +58,5 @@ all: $(top_builddir)/$(CTIE) $(srcs)
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
+
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)

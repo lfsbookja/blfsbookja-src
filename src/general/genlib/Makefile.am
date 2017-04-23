@@ -66,6 +66,7 @@ CHANGE_FILES = \
 	libzeitgeist.ch \
 	lzo.ch \
 	mtdev.ch \
+	nodejs.ch \
 	npth.ch \
 	nspr.ch \
 	openobex.ch \
@@ -94,3 +95,5 @@ all: ctie $(srcs)
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
+
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)

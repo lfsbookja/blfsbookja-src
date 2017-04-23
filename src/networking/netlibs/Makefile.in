@@ -232,6 +232,7 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/networking/netlibs
 CHANGE_FILES = \
+	c-ares.ch          \
 	curl.ch            \
 	geoclue2.ch        \
 	glib-networking.ch \
@@ -443,6 +444,8 @@ all: ctie $(srcs)
 
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
+
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

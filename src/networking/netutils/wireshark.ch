@@ -126,6 +126,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libnl"/>,
@@ -134,7 +135,6 @@
       <xref linkend="openssl"/>,
       <xref linkend="sbc"/>,
       <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
-      <ulink url="http://c-ares.haxx.se/">c-ares</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
       <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>, and
       <ulink url="http://www.portaudio.com/">PortAudio</ulink>
@@ -143,6 +143,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libnl"/>,
@@ -151,7 +152,6 @@
       <xref linkend="openssl"/>,
       <xref linkend="sbc"/>,
       <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
-      <ulink url="http://c-ares.haxx.se/">c-ares</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
       <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>, and
       <ulink url="http://www.portaudio.com/">PortAudio</ulink>

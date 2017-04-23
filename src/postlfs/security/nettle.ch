@@ -28,10 +28,10 @@
 @z
 
 @x
-      The <application>Nettle</application> package contains the low-level
+      The <application>Nettle</application> package contains a low-level
       cryptographic library that is designed to fit easily in many contexts.
 @y
-    <application>Nettle</application> は低レベルの暗号化ライブラリであり、さまざまな場面に容易に適用できるように設計されています。
+      <application>Nettle</application> は低レベルの暗号化ライブラリであり、さまざまな場面に容易に適用できるように設計されています。
 @z
 
 @x

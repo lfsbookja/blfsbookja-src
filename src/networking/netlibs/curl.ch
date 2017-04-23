@@ -100,12 +100,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
-      <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
       <ulink url="https://www.gnu.org/software/libidn/#libidn2/">libidn2</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
@@ -119,19 +119,19 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
-      <ulink url="http://daniel.haxx.se/projects/c-ares/">c-ares</ulink>,
       <ulink url="https://www.gnu.org/software/libidn/#libidn2/">libidn2</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
       <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
       <ulink url="http://www.libssh2.org">libssh2</ulink>,
       <ulink url="https://tls.mbed.org/">mbed TLS (formerly known as
-      PolarSSL)</ulink>,
+      PolarSSL)</ulink>, and
       <ulink url="http://spnego.sourceforge.net/">
       SPNEGO</ulink>
     </para>
@@ -171,12 +171,21 @@
 @z
 
 @x
-      To run the test suite, issue: <command>make test</command>. <!-- Two tests,
-      1139 and 1140, may fail. Works fine for me. Douglas 20160720 --><!--  Some
-      tests (up to 2%) may fail due to timing issues, kernel configuration,
-      or other issues.-->
+      To run the tests for this package, valgrind requires a version of the
+      /lib/ld-2.23.so (or later) library with debugging symbols present.
+      Normally in LFS these debugging symbols are stripped at the end of
+      Chapter 6. To get this library, glibc must be rebuilt with the current
+      glibc version using the same compiler that was used to build LFS. The
+      ld-2.23.so can then be renamed to ld-2.23.so.dbg and copied to /lib. Then
+      a symlink needs to be changed: 
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      To run the tests for this package, valgrind requires a version of the
+      /lib/ld-2.23.so (or later) library with debugging symbols present.
+      Normally in LFS these debugging symbols are stripped at the end of
+      Chapter 6. To get this library, glibc must be rebuilt with the current
+      glibc version using the same compiler that was used to build LFS. The
+      ld-2.23.so can then be renamed to ld-2.23.so.dbg and copied to /lib. Then
+      a symlink needs to be changed: 
 @z
 
 @x

@@ -454,6 +454,8 @@ all: ctie $(srcs)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
 #gnome-devel-docs.xml:     $(BOOKdir)/$@ $(srcdir)/gnome-devel-docs.ch \
 #	$(srcdir)/gnome-devel-docs.sed
 #	sed -f $(srcdir)/gnome-devel-docs.sed < $(BOOKdir)/$@ > $@.tmp

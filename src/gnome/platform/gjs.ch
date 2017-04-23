@@ -110,9 +110,12 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. The
+      <application>GTK</application> and <application>Cairo</application>
+      tests will fail if not running in an Xorg session.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      Xorg セッション内でテスト実行しないと <application>GTK</application> と <application>Cairo</application> のテストは失敗します。
 @z
 
 @x
