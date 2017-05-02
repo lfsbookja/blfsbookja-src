@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY gpicview-time          "less than 0.1 SBU">
+@y
+  <!ENTITY gpicview-time          "&LessThan1;0.1 &LessThan2;">
+@z
+
+@x
     <title>Introduction to GPicView</title>
 @y
     <title>&IntroductionTo1;GPicView&IntroductionTo2;</title>
@@ -126,6 +132,20 @@
       <xref linkend="xdg-utils"/> をインストールしている場合は、<systemitem
       class="username">root</systemitem> ユーザーになって <command>xdg-icon-resource forceupdate --theme hicolor</command> を実行してください。
       これによりインストールされたアイコンがメニュー内に表示されるようになります。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>sed -i ...</command>: Fixes submenu for
+      <application>GPicView</application>.
+@y
+      <command>sed -i ...</command>:
+      <application>GPicView</application> のサブメニューを修正します。
 @z
 
 @x

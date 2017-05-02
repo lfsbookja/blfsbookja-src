@@ -96,14 +96,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
     <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
-    <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>, and
-    <ulink url="http://voikko.sourceforge.net/">Voikko</ulink></para>
+    <ulink url="http://hunspell.github.io/">Hunspell</ulink>, and
+    <ulink url="http://hunspell.github.io/">Voikko</ulink></para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
     <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
-    <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>,
-    <ulink url="http://voikko.sourceforge.net/">Voikko</ulink></para>
+    <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
+    <ulink url="http://hunspell.github.io/">Voikko</ulink></para>
 @z
 
 @x

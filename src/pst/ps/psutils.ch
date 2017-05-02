@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY psutils-time          "less than 0.1 SBU">
+@y
+  <!ENTITY psutils-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to PSUtils</title>
 @y
     <title>&IntroductionTo1;PSUtils&IntroductionTo2;</title>

@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY fop-buildsize     "493 MB (add 39 MB for tests)">
+  <!ENTITY fop-time          "0.7 SBU (add 0.7 SBU for tests)">
+@y
+  <!ENTITY fop-buildsize     "493 MB (add 39 MB for tests)">
+  <!ENTITY fop-time          "0.7 SBU (add 0.7 SBU for tests)">
+@z
+
+@x
     <title>Introduction to fop</title>
 @y
     <title>&IntroductionTo1;fop&IntroductionTo2;</title>
@@ -123,27 +131,26 @@
     <para role="optional">
       <xref linkend="junit"/> (to run tests),
       <xref linkend="x-window-system"/> (to run tests),
-      <ulink url="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-client-419417.html">JIMI SDK</ulink>,
-      <ulink url="http://www.xmlunit.org/">XMLUnit</ulink>,
-      <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>,
-      <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
-      <ulink url="https://pmd.github.io/">PMD</ulink>
-          (requires <ulink url="http://jaxen.org/">Jaxen</ulink>), and
-      <ulink url="http://forrest.apache.org/">Forrest</ulink> (Forrest used only
-      to build the documentation)
+      <ulink url="https://maven.apache.org/">Maven</ulink>,
+      <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>, and
+      <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
+<!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
+     Some were listed here, but not all. I am not sure it is possible to
+     use system ones. So, I have removed them, an kept only those which
+     are not bundled. -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="junit"/> (テスト実行のため),
       <xref linkend="x-window-system"/> (テスト実行のため),
-      <ulink url="http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-java-client-419417.html">JIMI SDK</ulink>,
-      <ulink url="http://www.xmlunit.org/">XMLUnit</ulink>,
+      <ulink url="https://maven.apache.org/">Maven</ulink>,
       <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>,
-      <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>,
-      <ulink url="https://pmd.github.io/">PMD</ulink>
-          (<ulink url="http://jaxen.org/">Jaxen</ulink> が必要),
-      <ulink url="http://forrest.apache.org/">Forrest</ulink> (Forrest はドキュメントの再構築時のみ必要)
+      <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
+<!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
+     Some were listed here, but not all. I am not sure it is possible to
+     use system ones. So, I have removed them, an kept only those which
+     are not bundled. -->
     </para>
 @z
 
@@ -219,17 +226,25 @@
 @z
 
 @x
-        To test the application, run <command>ant junit-all</command>. The
-        hyphenation tests will fail.  To see a list of other test targets, use
-        <command>ant -p</command>. You must run the tests from an X-window using
-        a GL-aware <application>Xorg</application> server or some of the
-        <application>JUnit</application> tests will hang.
+        To test the application, first modify <filename>build.xml</filename>
+        so that tests do not stop when an error is encountered:
 @y
-        To test the application, run <command>ant junit-all</command>. The
-        hyphenation tests will fail.  To see a list of other test targets, use
-        <command>ant -p</command>. You must run the tests from an X-window using
-        a GL-aware <application>Xorg</application> server or some of the
-        <application>JUnit</application> tests will hang.
+        To test the application, first modify <filename>build.xml</filename>
+        so that tests do not stop when an error is encountered:
+@z
+
+@x
+        Then, run <command>ant junit</command>. The hyphenation tests will
+        fail if OFFO hyphenation has not been compiled. To see a list of other
+        test targets, use <command>ant -p</command>. You must run the tests
+        from an X-window using a GL-aware <application>Xorg</application>
+        server or some of the <application>JUnit</application> tests will hang.
+@y
+        Then, run <command>ant junit</command>. The hyphenation tests will
+        fail if OFFO hyphenation has not been compiled. To see a list of other
+        test targets, use <command>ant -p</command>. You must run the tests
+        from an X-window using a GL-aware <application>Xorg</application>
+        server or some of the <application>JUnit</application> tests will hang.
 @z
 
 @x
@@ -255,23 +270,25 @@
 @z
 
 @x
-      <command>patch -Np1 -i ../fop-2.1-listNPE-1.patch</command>: This patch
-      fixes a bug leading to segmentation faults when processing some inputs.
+      <command>export LC_ALL=en_US.UTF-8</command>: the compiler fails if using
+      an ASCII locale.
 @y
-      <command>patch -Np1 -i ../fop-2.1-listNPE-1.patch</command>: This patch
-      fixes a bug leading to segmentation faults when processing some inputs.
+      <command>export LC_ALL=en_US.UTF-8</command>: the compiler fails if using
+      an ASCII locale.
 @z
 
 @x
       <command>ant <option>target</option></command>: This reads the file
       <filename>build.xml</filename> and builds the target: <option>compile
       </option> compiles the java sources, <option>jar-main</option> generates
-      jar archives, and <option>javadocs</option> builds the documentation.
+      jar archives, <option>jar-hyphenation</option> generates the hyphenation
+      patterns for FOP, and <option>javadocs</option> builds the documentation.
 @y
       <command>ant <option>target</option></command>: This reads the file
       <filename>build.xml</filename> and builds the target: <option>compile
       </option> compiles the java sources, <option>jar-main</option> generates
-      jar archives, and <option>javadocs</option> builds the documentation.
+      jar archives, <option>jar-hyphenation</option> generates the hyphenation
+      patterns for FOP, and <option>javadocs</option> builds the documentation.
 @z
 
 @x

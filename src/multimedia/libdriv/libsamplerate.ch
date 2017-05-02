@@ -79,14 +79,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-       <xref linkend='libsndfile'/>, and 
-       <ulink url="http://www.fftw.org/">libfftw3</ulink> (for tests)
+       <xref linkend='libsndfile'/> and
+       <xref linkend="fftw"/> (for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
        <xref linkend='libsndfile'/>,
-       <ulink url="http://www.fftw.org/">libfftw3</ulink> (テスト実行時)
+       <xref linkend="fftw"/> (テスト実行時)
     </para>
 @z
 

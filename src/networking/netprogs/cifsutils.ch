@@ -16,7 +16,7 @@
 @x
    <title>Introduction to cifs-utils</title>
 @y
-   <title>cifs-utils の概要</title>
+   <title>&IntroductionTo1;cifs-utils&IntroductionTo2;</title>
 @z
 
 @x
@@ -72,7 +72,7 @@
 @x
     <bridgehead renderas="sect3">cifs-utils Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">cifs-utils の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;cifs-utils&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -81,7 +81,6 @@
       <xref linkend="keyutils"/> (required to build PAM module),
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="talloc"/>,
       <xref linkend="samba"/>, and
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> or
       <xref linkend="libcap-pam"/>
@@ -92,7 +91,6 @@
       <xref linkend="keyutils"/> (PAM モジュールビルドに必要),
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="talloc"/>,
       <xref linkend="samba"/>,
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> または
       <xref linkend="libcap-pam"/>
@@ -101,16 +99,14 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/cifsutils"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/cifsutils"/></para>
 @z
 
 @x
     <title>Installation of cifs-utils</title>
 @y
-    <title>cifs-utils のインストール</title>
+    <title>&InstallationOf1;cifs-utils&InstallationOf2;</title>
 @z
 
 @x

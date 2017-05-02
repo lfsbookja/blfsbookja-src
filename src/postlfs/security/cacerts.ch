@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY cacerts-buildsize     "4.7 MB (with all runtime deps)">
+  <!ENTITY cacerts-buildsize     "6.5 MB (with all runtime deps)">
   <!ENTITY cacerts-time          "0.2 SBU (with all runtime deps)">
 @y
-  <!ENTITY cacerts-buildsize     "4.7 MB (with all runtime deps)">
+  <!ENTITY cacerts-buildsize     "6.5 MB (with all runtime deps)">
   <!ENTITY cacerts-time          "0.2 SBU (with all runtime deps)">
 @z
 

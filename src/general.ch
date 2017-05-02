@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "April 23rd &year;">
+<!ENTITY releasedate  "May 1st &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20170423">
+<!ENTITY jversion     "20170502">
 <!ENTITY jratio       "55.9 &percnt;">
 @z
 
@@ -196,5 +196,5 @@ export -f as_root</userinput></screen>
                               installation.</para>">
 @y
 <!ENTITY not-katamari         "<para>本パッケージは Xorg の一連の提供物 (Xorg katamari) ではありません。
-                              他のパッケージが必要としていたり、Xorg のテストを完了させたりするために必要となるものです。</para>">
+                              他のパッケージが必要としていたり Xorg のテストを完了させたりするために必要となるものです。</para>">
 @z

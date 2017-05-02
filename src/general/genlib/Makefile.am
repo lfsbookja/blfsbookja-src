@@ -16,6 +16,7 @@ CHANGE_FILES = \
 	dbus-glib.ch \
 	enchant.ch \
 	exempi.ch \
+	fftw.ch \
 	gcab.ch \
 	genlib.ch \
 	glib2.ch \

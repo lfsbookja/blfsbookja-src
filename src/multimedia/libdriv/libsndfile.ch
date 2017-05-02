@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libsndfile-buildsize     "34 MB (with tests)">
+  <!ENTITY libsndfile-time          "0.6 SBU (with tests)">
+@y
+  <!ENTITY libsndfile-buildsize     "34 MB (テスト込み)">
+  <!ENTITY libsndfile-time          "0.6 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to libsndfile</title>
 @y
     <title>&IntroductionTo1;libsndfile&IntroductionTo2;</title>

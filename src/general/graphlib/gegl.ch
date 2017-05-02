@@ -202,11 +202,11 @@
 @z
 
 @x
-      <option>--without-vala</option>: Do not create a
+      <parameter>--without-vala</parameter>: Do not create a
       <application>vala</application> API - use this if
       <command>vapigen</command> breaks the build.
 @y
-      <option>--without-vala</option>:
+      <parameter>--without-vala</parameter>:
       <application>vala</application> API を生成しないようにします。
       <command>vapigen</command> によりビルドが失敗する場合に指定します。
 @z

@@ -182,7 +182,7 @@
     be executed. If all goes well,the final message in the log file will be
     <literal>ALL DONE</literal>. <emphasis>Note</emphasis>: Some color tests
     expect to be executed under the <command>xterm</command> terminal
-    emulator.</para>
+    emulator. Three tests are known to fail occasionally and can be ignored.</para>
 @y
     <para>
     ビルド結果をテストする場合は <command>make test</command> を実行します。
@@ -194,6 +194,7 @@
     テストが成功すれば、最後に <literal>ALL DONE</literal> と出力されます。
     <emphasis>メモ</emphasis>: 
     色に関するテストは、端末エミュレーター <command>xterm</command> 上にて実行することが必要です。
+    状況により失敗するテストが三つありますが無視して構いません。
     </para>
 @z
 

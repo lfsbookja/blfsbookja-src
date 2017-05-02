@@ -24,7 +24,7 @@
       for <application>LXAppearance</application> to configure
       <application>OpenBox</application>.
 @y
-      <application>LXAppearance OBconf</application> パッケージは <application>OpenBox</application> を設定を行う<application>LXAppearance</application> プラグインを提供します。
+      <application>LXAppearance OBconf</application> パッケージは <application>OpenBox</application> を設定を行う <application>LXAppearance</application> プラグインを提供します。
 @z
 
 @x
@@ -118,6 +118,12 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
 @z
 
 @x

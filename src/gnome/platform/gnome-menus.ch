@@ -25,16 +25,14 @@
       <ulink url="http://www.freedesktop.org/Standards/menu-spec">
       Desktop Menu Specification</ulink> from freedesktop.org. It also
       contains the <application>GNOME</application> menu layout configuration
-      files, <filename>.directory</filename> files and a menu related utility
-      program.
+      files and <filename>.directory</filename> files.
 @y
       The <application>GNOME Menus</application> package contains an
       implementation of the draft
       <ulink url="http://www.freedesktop.org/Standards/menu-spec">
       Desktop Menu Specification</ulink> from freedesktop.org. It also
       contains the <application>GNOME</application> menu layout configuration
-      files, <filename>.directory</filename> files and a menu related utility
-      program.
+      files and <filename>.directory</filename> files.
 @z
 
 @x

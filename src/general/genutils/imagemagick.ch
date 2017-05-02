@@ -155,6 +155,7 @@
       <xref linkend="cups"/>,
       <xref linkend="curl"/>,
       <xref linkend="ffmpeg"/>,
+      <xref linkend="fftw"/>,
       <xref linkend="p7zip"/> (LZMA),
       <xref linkend="sane"/>,
       <xref linkend="wget"/>,
@@ -162,7 +163,6 @@
       <xref linkend="xterm2"/>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
-      <ulink url="http://www.fftw.org/">FFTW</ulink>,
       <ulink url="http://www.openpgp.org/about/">PGP</ulink> or
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
@@ -179,6 +179,7 @@
       <xref linkend="cups"/>,
       <xref linkend="curl"/>,
       <xref linkend="ffmpeg"/>,
+      <xref linkend="fftw"/>,
       <xref linkend="p7zip"/> (LZMA),
       <xref linkend="sane"/>,
       <xref linkend="wget"/>,
@@ -186,7 +187,6 @@
       <xref linkend="xterm2"/>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
-      <ulink url="http://www.fftw.org/">FFTW</ulink>,
       <ulink url="http://www.openpgp.org/about/">PGP</ulink> or
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),

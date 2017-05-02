@@ -117,12 +117,12 @@
 @x
     <para>There are several sources that can be used for a rescue CD-ROM.
     Just about any commercial distribution's installation CD-ROMs or
-    DVDs will work.  These include RedHat, Mandrake, and SuSE.  One
+    DVDs will work.  These include RedHat, Ubuntu, and SuSE.  One
     very popular option is Knoppix.</para>
 @y
     <para>There are several sources that can be used for a rescue CD-ROM.
     Just about any commercial distribution's installation CD-ROMs or
-    DVDs will work.  These include RedHat, Mandrake, and SuSE.  One
+    DVDs will work.  These include RedHat, Ubuntu, and SuSE.  One
     very popular option is Knoppix.</para>
 @z
 

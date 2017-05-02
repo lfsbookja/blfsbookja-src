@@ -189,6 +189,20 @@
 @z
 
 @x
+      Adjust the above instruction as needed for a 32-bit system
+      or for a different version of glibc.
+@y
+      Adjust the above instruction as needed for a 32-bit system
+      or for a different version of glibc.
+@z
+
+@x
+      To run the test suite, issue: <command>make test</command>. 
+@y
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
+@z
+
+@x
       Now, as the <systemitem class="username">root</systemitem>
       user:
 @y

@@ -165,7 +165,7 @@
 
 @x
       <para>The above installation creates the files and updates the catalogs.
-      In order to install <application>ScrollKeeper</application> or to
+      In order to 
       utilize <application>DocBook XML DTD</application> V&DocBook-version;
       when any version 4.x is requested in the System Identifier, you need to
       add additional statements to the catalog files. If you have any of the
@@ -175,7 +175,7 @@
       <systemitem class="username">root</systemitem> user):</para>
 @y
       <para>The above installation creates the files and updates the catalogs.
-      In order to install <application>ScrollKeeper</application> or to
+      In order to 
       utilize <application>DocBook XML DTD</application> V&DocBook-version;
       when any version 4.x is requested in the System Identifier, you need to
       add additional statements to the catalog files. If you have any of the

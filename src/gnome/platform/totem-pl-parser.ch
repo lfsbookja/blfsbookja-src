@@ -21,12 +21,10 @@
 
 @x
       The <application>Totem PL Parser</application> package contains a simple
-      GObject-based library used to parse a host of playlist formats, as well
-      as save those.
+      GObject-based library used to parse multiple playlist formats.
 @y
       The <application>Totem PL Parser</application> package contains a simple
-      GObject-based library used to parse a host of playlist formats, as well
-      as save those.
+      GObject-based library used to parse multiple playlist formats.
 @z
 
 @x

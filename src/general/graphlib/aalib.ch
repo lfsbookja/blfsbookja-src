@@ -164,13 +164,11 @@
 @z
 
 @x aafire
-          <para>is little toy of <application>AAlib</application>, rendering
+          <para>is a demo of <application>AAlib</application>, rendering
           an animated fire in ASCII Art.</para>
 @y
-          <para>
-          is little toy of <application>AAlib</application>, rendering
-          an animated fire in ASCII Art.
-          </para>
+          <para>is a demo of <application>AAlib</application>, rendering
+          an animated fire in ASCII Art.</para>
 @z
 
 @x aalib-config

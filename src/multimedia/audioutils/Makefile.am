@@ -11,6 +11,7 @@ CHANGE_FILES = \
 	audioutils.ch  \
 	cdparanoia.ch  \
 	freetts.ch     \
+	kwave.ch       \
 	lame.ch        \
 	mpg123.ch      \
 	pnmixer.ch     \
