@@ -251,13 +251,13 @@
 @z
 
 @x
-        The shared library depends on <xref linkend="gtk2"/>. It is only used in
-        external programs like <xref linkend="asymptote"/> and
-        <xref linkend="imagemagick"/>.
+        The shared library depends on <xref linkend="gtk2"/>. It is only used by
+        external programs like <xref linkend="asymptote"/>, <xref
+        linkend="imagemagick"/>, and <xref linkend="texlive"/>.
 @y
-        The shared library depends on <xref linkend="gtk2"/>. It is only used in
-        external programs like <xref linkend="asymptote"/> and
-        <xref linkend="imagemagick"/>.
+        The shared library depends on <xref linkend="gtk2"/>. It is only used by
+        external programs like <xref linkend="asymptote"/>, <xref
+        linkend="imagemagick"/>, and <xref linkend="texlive"/>.
 @z
 
 @x

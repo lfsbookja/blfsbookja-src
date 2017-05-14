@@ -167,14 +167,14 @@
       may hang forever if <xref linkend="gdb"/> is not installed. Some tests
       are known to hang also, depending on the version of glibc. Problematic
       tests can be disabled by changing the <userinput>prereq:</userinput> line
-      in the correponding <filename>.vgtest</filename> file to
+      in the corresponding <filename>.vgtest</filename> file to
       <userinput>prereq: false</userinput>. For example:
 @y
       To test the results, issue: <command>make regtest</command>. The tests
       may hang forever if <xref linkend="gdb"/> is not installed. Some tests
       are known to hang also, depending on the version of glibc. Problematic
       tests can be disabled by changing the <userinput>prereq:</userinput> line
-      in the correponding <filename>.vgtest</filename> file to
+      in the corresponding <filename>.vgtest</filename> file to
       <userinput>prereq: false</userinput>. For example:
 @z
 

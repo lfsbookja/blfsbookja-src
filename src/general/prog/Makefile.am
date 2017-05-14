@@ -38,7 +38,6 @@ CHANGE_FILES = \
 	gc.ch             \
 	gcc.ch            \
 	gcc-ada.ch        \
-	gcc-java.ch       \
 	gdb.ch            \
 	git.ch            \
 	guile.ch          \

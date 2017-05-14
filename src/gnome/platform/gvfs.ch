@@ -103,6 +103,7 @@
     <para role="recommended" revision="systemd">
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="libgdata"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
@@ -116,16 +117,17 @@
       <xref linkend="gtk3"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>, and
+      <xref linkend="libsoup"/>,
       <xref linkend="udisks2"/>
     </para>
     <para role="recommended" revision="systemd">
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="libgdata"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
-      <xref linkend="systemd"/>, and
+      <xref linkend="systemd"/>,
       <xref linkend="udisks2"/>
     </para>
 @z

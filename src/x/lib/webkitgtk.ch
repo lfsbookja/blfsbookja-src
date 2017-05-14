@@ -129,7 +129,8 @@
     <para role="recommended" revision="systemd">
       <xref linkend="geoclue2"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="hicolor-icon-theme"/>
+      <xref linkend="hicolor-icon-theme"/>, and
+      <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -141,7 +142,8 @@
     <para role="recommended" revision="systemd">
       <xref linkend="geoclue2"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="hicolor-icon-theme"/>
+      <xref linkend="hicolor-icon-theme"/>,
+      <xref linkend="libnotify"/>
     </para>
 @z
 
@@ -150,7 +152,6 @@
     <para role="optional" revision="sysv">
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
-      <xref linkend="libnotify"/>,
       <xref linkend="llvm"/>,
       <xref linkend="wayland"/>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>, and
@@ -170,7 +171,6 @@
     <para role="optional" revision="sysv">
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
-      <xref linkend="libnotify"/>,
       <xref linkend="llvm"/>,
       <xref linkend="wayland"/>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,

@@ -160,15 +160,17 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gs"/> (for dvisvgm - used by asymptote which provides a
-      mathematical coordinate-based framework for technical drawing),
+      <xref linkend="gs"/> <emphasis>including
+      <filename>libgs.so</filename></emphasis> (for dvisvgm, which is used by e.g.
+      <xref linkend="asymptote"/>),
       <xref linkend="x-window-system"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gs"/> (for dvisvgm - used by asymptote which provides a
-      mathematical coordinate-based framework for technical drawing),
+      <xref linkend="gs"/> <emphasis>including
+      <filename>libgs.so</filename></emphasis> (for dvisvgm, which is used by e.g.
+      <xref linkend="asymptote"/>),
       <xref linkend="x-window-system"/>
     </para>
 @z

@@ -25,13 +25,16 @@ EXTRACLEANFILES = $(srcs)
 
 ROOT_ID =
 PDF_OUTPUT = ../blfsbookja-svn.pdf
-RENDERTMP = ./tmp
+RENDERTMP = tmp
 CHUNK_QUIET = 1
 
-ALLXML := $(filter-out $(RENDERTMP)/%, \
-	$(wildcard ./*.xml ./*/*.xml ./*/*/*.xml ./*/*/*/*.xml ./*/*/*/*/*.xml))
-ALLXSL := $(filter-out $(RENDERTMP)/%, \
-	$(wildcard ./*.xsl ./*/*.xsl ./*/*/*.xsl ./*/*/*/*.xsl ./*/*/*/*/*.xsl))
+#ALLXML = $(filter-out $(RENDERTMP)/%, \
+#	$(wildcard ./*.xml ./*/*.xml ./*/*/*.xml ./*/*/*/*.xml ./*/*/*/*/*.xml))
+#ALLXSL = $(filter-out $(RENDERTMP)/%, \
+#	$(wildcard ./*.xsl ./*/*.xsl ./*/*/*.xsl ./*/*/*/*.xsl ./*/*/*/*/*.xsl))
+
+ALLXML = $(shell find . -type d -name $(RENDERTMP) -prune -o -type f -name '*.xml' -print)
+ALLXSL = $(shell find . -type d -name $(RENDERTMP) -prune -o -type f -name '*.xsl' -print)
 
 REV=@revspec@
 
@@ -137,7 +140,7 @@ $(RENDERTMP)/$(BLFSHTML): $(RENDERTMP)/$(BLFSFULL)
 #	  --output $(RENDERTMP)/blfs-html.xml stylesheets/lfs-xsl/profile.xsl \
 #	  $(RENDERTMP)/blfs-full.xml
 
-#$(RENDERTMP)/blfs-full.xml: general.ent $(ALLXML) $(ALLXSL)
+#$(RENDERTMP)/blfs-full.xml: general.ent #$(ALLXML) $(ALLXSL)
 #	@echo "Validating the book..."
 #	$(Q)[ -d $(RENDERTMP) ] || mkdir -p $(RENDERTMP)
 #	$(XMLLINT) --nonet --noent --xinclude --postvalid \

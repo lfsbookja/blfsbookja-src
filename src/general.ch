@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "May 1st &year;">
+<!ENTITY releasedate  "May 14th &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20170502">
+<!ENTITY jversion     "20170514">
 <!ENTITY jratio       "55.9 &percnt;">
 @z
 
@@ -110,17 +110,24 @@
 <!ENTITY lfs80_built          "<para>本パッケージは LFS-8.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
+%@x
+%<!ENTITY lfssvn_checked       "This package is known to build and work properly
+%                               using an LFS-SVN-">
+%<!ENTITY lfssvn_checked2      " platform.">
+%<!ENTITY lfssvn_built         "This package is known to build using an LFS-SVN-">
+%<!ENTITY lfssvn_built2        " platform but has not been tested.">
+%@y
+%<!ENTITY lfssvn_checked       "本パッケージは LFS-SVN-">
+%<!ENTITY lfssvn_checked2      " においてビルドでき動作することが確認されています。">
+%<!ENTITY lfssvn_built         "本パッケージは LFS-SVN-">
+%<!ENTITY lfssvn_built2        "においてビルドできることが確認されていますが、まだ動作テストは行われていません。">
+%@z
+
 @x
-<!ENTITY lfssvn_checked       "This package is known to build and work properly
-                               using an LFS-SVN-">
-<!ENTITY lfssvn_checked2      " platform.">
-<!ENTITY lfssvn_built         "This package is known to build using an LFS-SVN-">
-<!ENTITY lfssvn_built2        " platform but has not been tested.">
+<!ENTITY gcc7_checked         "<para>This package is known to build and work 
+                              properly when built with gcc-7.1.</para>">
 @y
-<!ENTITY lfssvn_checked       "本パッケージは LFS-SVN-">
-<!ENTITY lfssvn_checked2      " においてビルドでき動作することが確認されています。">
-<!ENTITY lfssvn_built         "本パッケージは LFS-SVN-">
-<!ENTITY lfssvn_built2        "においてビルドできることが確認されていますが、まだ動作テストは行われていません。">
+<!ENTITY gcc7_checked         "<para>本パッケージは gcc-7.1 を用いて正しくビルドでき動作することが確認されています。</para>">
 @z
 
 @x

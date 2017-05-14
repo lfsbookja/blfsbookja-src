@@ -98,12 +98,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libnotify"/>
+      <xref linkend="libnotify"/> and
+      <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libnotify"/>
+      <xref linkend="libnotify"/>,
+      <xref linkend="libxslt"/>
     </para>
 @z
 

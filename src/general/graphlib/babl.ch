@@ -69,24 +69,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Babl Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;Babl&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
-    </para>
-@z
-
-@x
       User Notes: <ulink url='&blfs-wiki;/babl'/>
 @y
       &UserNotes;: <ulink url='&blfs-wiki;/babl'/>

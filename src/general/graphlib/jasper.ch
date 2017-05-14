@@ -94,14 +94,14 @@
     <para role="optional">
       <xref linkend="freeglut"/> (required for <command>jiv</command>), 
       <xref linkend="doxygen"/> (needed for generating html documentation), and
-      <xref linkend="texlive"/> (needed to regnerate the pdf documention)
+      <xref linkend="texlive"/> (needed to regnerate the pdf documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="freeglut"/> (<command>jiv</command> に必要), 
-      <xref linkend="doxygen"/> (needed for generating html documentation),
-      <xref linkend="texlive"/> (needed to regnerate the pdf documention)
+      <xref linkend="doxygen"/> (needed for generating html documentation), and
+      <xref linkend="texlive"/> (needed to regnerate the pdf documentation)
     </para>
 @z
 

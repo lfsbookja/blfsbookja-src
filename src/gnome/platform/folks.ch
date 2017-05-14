@@ -102,12 +102,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="python3"/> and
+      <xref linkend="bluez"/>,
+      <xref linkend="python3"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="bluez"/>,
       <xref linkend="python3"/>,
       <xref linkend="vala"/>
     </para>
@@ -118,14 +120,14 @@
     <para role="optional">
       <ulink url="&gnome-download-http;/tracker/">Tracker</ulink>,
       <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>, and
-      <ulink url="http://zeitgeist-project.com/">Zeitgeist</ulink>
+      <ulink url="https://packages.debian.org/jessie/zeitgeist">Zeitgeist</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="&gnome-download-http;/tracker/">Tracker</ulink>,
-      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>, and
-      <ulink url="http://zeitgeist-project.com/">Zeitgeist</ulink>
+      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>,
+      <ulink url="https://packages.debian.org/jessie/zeitgeist">Zeitgeist</ulink>
     </para>
 @z
 

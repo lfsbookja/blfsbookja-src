@@ -185,9 +185,9 @@
 @z
 
 @x gnome-disks
-            is used to to inspect, format, partition and configure disks
+            is used to inspect, format, partition and configure disks
             and block devices.
 @y
-            is used to to inspect, format, partition and configure disks
+            is used to inspect, format, partition and configure disks
             and block devices.
 @z

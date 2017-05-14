@@ -127,11 +127,11 @@
 @x
       To test the results, issue: <command>make check</command>. In 32bit
       systems, Number.float and Number.double tests might fail due to floating
-      point round off errors, most probably in 32 bit systems.
+      point round off errors, most likely in 32 bit systems.
 @y
       To test the results, issue: <command>make check</command>. In 32bit
       systems, Number.float and Number.double tests might fail due to floating
-      point round off errors, most probably in 32 bit systems.
+      point round off errors, most likely in 32 bit systems.
 @z
 
 @x

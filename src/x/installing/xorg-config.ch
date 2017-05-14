@@ -20,41 +20,65 @@
 @z
 
 @x
-    <sect2 id='X11-testing' xreflabel="Testing Xorg">
+    <primary sortas="g-configuring-xorg">Configuring Xorg</primary>
+@y
+    <primary sortas="g-configuring-xorg">Xorg の設定</primary>
+@z
+
+@x
+  <sect2 id='X11-testing' xreflabel="Testing Xorg">
     <title>Testing Xorg</title>
 @y
-    <sect2 id='X11-testing' xreflabel="Xorg のテスト">
+  <sect2 id='X11-testing' xreflabel="Xorg のテスト">
     <title>Xorg のテスト</title>
 @z
 
 @x
-    <para>To test the <application>Xorg</application> installation, issue
-    <userinput>startx</userinput>.  This command brings up a rudimentary window
-    manager called <emphasis>twm</emphasis> with three xterm windows and one
-    xclock window.  The xterm window in the upper left is a login terminal and
-    running <emphasis>exit</emphasis> from this terminal will exit the
-    <application>X Window</application> session.  The third xterm window may be
-    obscured on your system by the other two xterms.</para>
+      To test the <application>Xorg</application> installation, issue
+      <command>startx</command>. This command brings up a rudimentary window
+      manager called <emphasis>twm</emphasis> with three xterm windows and one
+      xclock window.  The xterm window in the upper left is a login terminal and
+      running <emphasis>exit</emphasis> from this terminal will exit the
+      <application>X Window</application> session.  The third xterm window may
+      be obscured on your system by the other two xterms.
 @y
-    <para>
-    インストールした <application>Xorg</application> をテストするために <userinput>startx</userinput> を実行します。
-    この実行によって最も単純なウィンドウマネージャー <emphasis>twm</emphasis> が立ち上がり、X ターミナルウィンドウ3つと xclock ウィンドウ1つが表示されます。
-    左上に位置する xterm ウィンドウはログインターミナルです。
-    このターミナルにて <emphasis>exit</emphasis> を入力すると <application>X Window</application> セッションが終了します。
-    3つめの xterm ウィンドウは不要なものかもしれません。
-    </para>
+      インストールした <application>Xorg</application> をテストするために <userinput>startx</userinput> を実行します。
+      この実行によって最も単純なウィンドウマネージャー <emphasis>twm</emphasis> が立ち上がり、X ターミナルウィンドウ3つと xclock ウィンドウ1つが表示されます。
+      左上に位置する xterm ウィンドウはログインターミナルです。
+      このターミナルにて <emphasis>exit</emphasis> を入力すると <application>X Window</application> セッションが終了します。
+      3つめの xterm ウィンドウは不要なものかもしれません。
 @z
 
 @x
-    <para>Generally, there is no specific configuration required for
-    <application>Xorg</application>, but customization is possible.  For details 
-    see <xref linkend='xconfig'/> below.</para>
+        When testing <application>Xorg</application> with the
+        <application>twm</application> window manager, there will be several
+        warnings in the Xorg log file, <filename revision="sysv">
+        /var/log/Xorg.0.log</filename><filename revision="systemd">
+        $HOME/.local/share/xorg/Xorg.0.log</filename>, about missing font
+        files. In addition, there will be several warnings on the text mode
+        terminal (usually tty1) about missing fonts. These warnings do not
+        affect functionality, but can be removed if desired by installing
+        the <xref linkend="xorg7-legacy"/>.
 @y
-    <para>
-    基本的には <application>Xorg</application> に対しての特別な設定は必要ありません。
-    ただしカスタマイズは可能です。
-    詳しくは後述する <xref linkend='xconfig'/> を参照してください。
-    </para>
+        When testing <application>Xorg</application> with the
+        <application>twm</application> window manager, there will be several
+        warnings in the Xorg log file, <filename revision="sysv">
+        /var/log/Xorg.0.log</filename><filename revision="systemd">
+        $HOME/.local/share/xorg/Xorg.0.log</filename>, about missing font
+        files. In addition, there will be several warnings on the text mode
+        terminal (usually tty1) about missing fonts. These warnings do not
+        affect functionality, but can be removed if desired by installing
+        the <xref linkend="xorg7-legacy"/>.
+@z
+
+@x
+      Generally, there is no specific configuration required for
+      <application>Xorg</application>, but customization is possible. For
+      details, see <xref linkend='xconfig'/> below.
+@y
+      基本的には <application>Xorg</application> に対しての特別な設定は必要ありません。
+      ただしカスタマイズは可能です。
+      詳しくは後述する <xref linkend='xconfig'/> を参照してください。
 @z
 
 % @x
@@ -128,30 +152,28 @@
 
 
 @x
-  <title>Fine Tuning Display Settings</title>
+      <title>Fine Tuning Display Settings</title>
 @y
-  <title>画面設定のチューニング</title>
+      <title>画面設定のチューニング</title>
 @z
 
 @x
-  <para>Again, with modern Xorg, little or no additional configuration is
-  necessary. If you should need extra options passed to your video driver,
-  for instance, you could use something like the following (again, executed as
-  the <systemitem class="username">root</systemitem> user):</para>
+        Again, with modern Xorg, little or no additional configuration is
+        necessary. If you should need extra options passed to your video driver,
+        for instance, you could use something like the following (again,
+        executed as the <systemitem class="username">root</systemitem> user):
 @y
-  <para>
-  再度述べますが、最近の Xorg では追加の設定を行う必要はほとんどありません。
-  例えばお手元のビデオドライバーに特別なオプションを与えなければならないのであれば、以下のような設定とすることも考えられます。
-  (再度 <systemitem class="username">root</systemitem> になって実行します。)
-  </para>
+        再度述べますが、最近の Xorg では追加の設定を行う必要はほとんどありません。
+        例えばお手元のビデオドライバーに特別なオプションを与えなければならないのであれば、以下のような設定とすることも考えられます。
+        (再度 <systemitem class="username">root</systemitem> になって実行します。)
 @z
 
 @x
-  <para>Another common setup is having multiple server layouts for use in
-  different environments. Though the server will automatically detect the
-  presence of another monitor, it may get the order incorrect:</para>
+        Another common setup is having multiple server layouts for use in
+        different environments. Though the server will automatically detect the
+        presence of another monitor, it may get the order incorrect:
 @y
-  <para>Another common setup is having multiple server layouts for use in
-  different environments. Though the server will automatically detect the
-  presence of another monitor, it may get the order incorrect:</para>
+        Another common setup is having multiple server layouts for use in
+        different environments. Though the server will automatically detect the
+        presence of another monitor, it may get the order incorrect:
 @z

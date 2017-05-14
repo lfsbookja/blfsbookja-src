@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "365 MB (with optional dependencies and documentation)">
-  <!ENTITY git-time          "0.8 SBU (add 2.2 SBU for building documentation, add 4.7 SBU for tests)">
+  <!ENTITY git-buildsize     "544 MB (with optional dependencies and documentation)">
+  <!ENTITY git-time          "0.8 SBU (add 2.2 SBU for building documentation, add 3.8 SBU for tests)">
 @y
-  <!ENTITY git-buildsize     "365 MB (任意依存パッケージとドキュメント込み)">
-  <!ENTITY git-time          "0.8 SBU (ドキュメント込みでさらに 2.2 SBU, テスト込みでさらに 4.7 SBU)">
+  <!ENTITY git-buildsize     "544 MB (任意依存パッケージとドキュメント込み)">
+  <!ENTITY git-time          "0.8 SBU (ドキュメント込みでさらに 2.2 SBU, テスト込みでさらに 3.8 SBU)">
 @z
 
 @x

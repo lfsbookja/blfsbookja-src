@@ -227,12 +227,12 @@
 
 @x
       <command>--llvm-root=/opt/llvm3 --enable-llvm-link-shared</command>:
-      This tells rust to use the system verison of llvm3 installed in
+      This tells rust to use the system version of llvm3 installed in
       <filename class="directory">/opt/llvm3</filename>, linking to the
       shared libraries.
 @y
       <command>--llvm-root=/opt/llvm3 --enable-llvm-link-shared</command>:
-      This tells rust to use the system verison of llvm3 installed in
+      This tells rust to use the system version of llvm3 installed in
       <filename class="directory">/opt/llvm3</filename>, linking to the
       shared libraries.
 @z
@@ -296,9 +296,9 @@
 @z
 
 @x
-      <segtitle>Installed Program(s)</segtitle>
-      <segtitle>Installed Librar(y,ies)</segtitle>
-      <segtitle>Installed Director(y,ies)</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -317,7 +317,7 @@
         </seg>
         <seg>
           ~/.cargo,
-          /usr/lib/rustlib,
+          /usr/lib/rustlib, and
           /usr/share/doc/rustc-&rust-version;.
         </seg>
 @y
@@ -325,14 +325,14 @@
           rust-gdb, rust-lldb, rustc, rustdoc.
         </seg>
         <seg>
-          多くのライブラリ (libarena, libflate, libfmt_macros, libgetopts,
+          Many libraries (libarena, libflate, libfmt_macros, libgetopts,
           libgraphviz, liblog, libproc_macro, librustc*, libserialize,
           libstd, libsyntax, libterm, libtest), all containing a hash in
           their names.
         </seg>
         <seg>
           ~/.cargo,
-          /usr/lib/rustlib,
+          /usr/lib/rustlib, and
           /usr/share/doc/rustc-&rust-version;.
         </seg>
 @z

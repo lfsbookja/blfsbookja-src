@@ -31,7 +31,7 @@
   <para>Current release: &version; &ndash; &releasedate;</para>
 @y
   <para>
-  最新リリース: &version;
+  最新リリース: &version; &ndash; &releasedate;
   </para>
 @z
 
@@ -39,5 +39,11 @@
     <title>Changelog Entries:</title>
 @y
     <title>変更履歴</title>
-@z
 
+    <note>
+    <title>日本語訳情報</title>
+    <para>
+    以下の変更履歴は訳出せずに表記します。
+    </para>
+    </note>
+@z

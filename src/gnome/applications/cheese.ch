@@ -124,6 +124,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV </ulink>, and
       <ulink url="&gnome-download-http;/nautilus-sendto/">Nautilus SendTo</ulink>
     </para>
@@ -131,6 +132,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV </ulink>,
       <ulink url="&gnome-download-http;/nautilus-sendto/">Nautilus SendTo</ulink>
     </para>

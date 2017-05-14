@@ -42,7 +42,6 @@ CHANGE_FILES = \
 	unzip.ch         \
 	upower.ch        \
 	usbutils.ch      \
-	weston.ch        \
 	which.ch         \
 	zip.ch
 
