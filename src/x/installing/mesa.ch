@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "326 MB (with demos and docs, add 50 MB for tests)">
-  <!ENTITY mesa-time          "2.7 SBU (using parallelism=4 with demos and docs, add 0.6 SBU for tests)">
+  <!ENTITY mesa-buildsize     "342 MB (with demos and docs, add 52 MB for tests)">
+  <!ENTITY mesa-time          "2.8 SBU (using parallelism=4 with demos and docs, add 0.6 SBU for tests)">
 @y
-  <!ENTITY mesa-buildsize     "326 MB (with demos and docs, add 50 MB for tests)">
-  <!ENTITY mesa-time          "2.7 SBU (using parallelism=4 with demos and docs, add 0.6 SBU for tests)">
+  <!ENTITY mesa-buildsize     "342 MB (with demos and docs, add 52 MB for tests)">
+  <!ENTITY mesa-time          "2.8 SBU (using parallelism=4 with demos and docs, add 0.6 SBU for tests)">
 @z
 
 @x
@@ -108,14 +108,16 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="xorg7-lib"/>,
-      <xref linkend="libdrm"/>, and
+      <xref linkend="libdrm"/>, 
+      <xref linkend="Mako"/>, and
       <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="xorg7-lib"/>,
-      <xref linkend="libdrm"/>,
+      <xref linkend="libdrm"/>, 
+      <xref linkend="Mako"/>,
       <xref linkend="python2"/>
     </para>
 @z

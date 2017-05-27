@@ -121,35 +121,25 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended" revision="sysv">
+    <para role="recommended">
       <xref linkend="geoclue2"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="hicolor-icon-theme"/>
-    </para>
-    <para role="recommended" revision="systemd">
-      <xref linkend="geoclue2"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="hicolor-icon-theme"/>, and
       <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended" revision="sysv">
+    <para role="recommended">
       <xref linkend="geoclue2"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="hicolor-icon-theme"/>
-    </para>
-    <para role="recommended" revision="systemd">
-      <xref linkend="geoclue2"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="hicolor-icon-theme"/>,
       <xref linkend="libnotify"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional" revision="sysv">
+    <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="llvm"/>,
@@ -157,32 +147,14 @@
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>, and
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
     </para>
-    <para role="optional" revision="systemd">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="libnotify"/>,
-      <xref linkend="llvm"/>,
-      <xref linkend="wayland"/>,
-      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/"> Hyphen</ulink>, and
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional" revision="sysv">
+    <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="llvm"/>,
       <xref linkend="wayland"/>,
-      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
-    </para>
-    <para role="optional" revision="systemd">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="libnotify"/>,
-      <xref linkend="llvm"/>,
-      <xref linkend="wayland"/>,
-      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/"> Hyphen</ulink>,
+      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>, and
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
     </para>
 @z

@@ -247,7 +247,7 @@
 
 @x
         <seg>
-          bccmd, bluemoon, bluetoothctl, bluetoothd (symlink), btmon, ciptool,
+          bccmd, bluemoon, bluetoothctl, bluetoothd (symlink), btattach, btmon, ciptool,
           hciattach, hciconfig, hcidump, hcitool, hex2hcd, l2ping, l2test,
           mpris-proxy, rctest, rfcomm, and sdptool
         </seg>
@@ -260,7 +260,7 @@
         </seg>
 @y
         <seg>
-          bccmd, bluemoon, bluetoothctl, bluetoothd (symlink), btmon, ciptool,
+          bccmd, bluemoon, bluetoothctl, bluetoothd (シンボリックリンク), btattach, btmon, ciptool,
           hciattach, hciconfig, hcidump, hcitool, hex2hcd, l2ping, l2test,
           mpris-proxy, rctest, rfcomm, sdptool
         </seg>

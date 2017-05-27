@@ -208,34 +208,6 @@
 @z
 
 @x
-      <command>sed -i -e '/snprintf/s@_msg,@_msg, 256,@' src/su.c</command>: Fix
-      a build error that only occurs if <xref linkend="linux-pam"/> is detected
-      by <command>configure</command>.
-@y
-      <command>sed -i -e '/snprintf/s@_msg,@_msg, 256,@' src/su.c</command>: Fix
-      a build error that only occurs if <xref linkend="linux-pam"/> is detected
-      by <command>configure</command>.
-@z
-
-@x
-      <command>sed -i '47 d' -e '60,65 d' libmisc/myname.c</command>: Apply
-      a security fix from upstream.
-@y
-      <command>sed -i '47 d' -e '60,65 d' libmisc/myname.c</command>: Apply
-      a security fix from upstream.
-@z
-
-@x
-      <command>echo '--- ...</command>: This command illustrates another
-      way to apply patches. Without the patch, <command>useradd</command>
-      does not use the defaults in <filename>/etc/default/useradd</filename>.
-@y
-      <command>echo '--- ...</command>: This command illustrates another
-      way to apply patches. Without the patch, <command>useradd</command>
-      does not use the defaults in <filename>/etc/default/useradd</filename>.
-@z
-
-@x
       <parameter>--with-group-name-max-length=32</parameter>: The maximum
       user name is 32 characters. Make the maximum group name the same.
 @y

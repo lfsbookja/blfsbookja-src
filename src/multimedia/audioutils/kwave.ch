@@ -23,8 +23,7 @@
       The <application>KWave</application> package contains a KF5 based Sound
       Editor application.
 @y
-      The <application>KWave</application> package contains a KF5 based Sound
-      Editor application.
+      <application>KWave</application> パッケージは KF5 ベースのサウンドエディターアプリケーションを提供します。
 @z
 
 @x
@@ -78,12 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="fftw"/> and
+      <xref linkend="audiofile"/>,
+      <xref linkend="fftw"/>, and
       <xref linkend="kf5-frameworks"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="audiofile"/>,
       <xref linkend="fftw"/>,
       <xref linkend="kf5-frameworks"/>
     </para>
@@ -203,5 +204,5 @@
 @x kwave
             is a sound editor built on the KDE Frameworks 5.
 @y
-            is a sound editor built on the KDE Frameworks 5.
+            KDE フレームワーク 5 上にて構築されているサウンドエディター。
 @z

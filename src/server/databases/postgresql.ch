@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "249 MB (with tests)">
+  <!ENTITY postgresql-buildsize     "199 MB (with tests)">
   <!ENTITY postgresql-time          "1.8 SBU (with tests)">
 @y
-  <!ENTITY postgresql-buildsize     "249 MB (テスト込み)">
+  <!ENTITY postgresql-buildsize     "199 MB (テスト込み)">
   <!ENTITY postgresql-time          "1.8 SBU (テスト込み)">
 @z
 

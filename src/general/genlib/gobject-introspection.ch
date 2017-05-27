@@ -96,16 +96,14 @@
     <para role="optional">
       <xref linkend="cairo"/> (required for the tests),
       <xref linkend="gtk-doc"/> and
-      <phrase revision="sysv"><ulink url="http://www.makotemplates.org/">Mako</ulink></phrase>
-      <phrase revision="systemd"><xref linkend="Mako"/></phrase>
+      <xref linkend="Mako"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (テスト実施時に必要),
       <xref linkend="gtk-doc"/>,
-      <phrase revision="sysv"><ulink url="http://www.makotemplates.org/">Mako</ulink></phrase>
-      <phrase revision="systemd"><xref linkend="Mako"/></phrase>
+      <xref linkend="Mako"/>
     </para>
 @z
 

@@ -87,7 +87,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="libgudev"/>,
       <xref linkend="libndp"/>,
       <xref linkend="libnl"/>, and
       <xref linkend="nss"/>
@@ -96,7 +95,6 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="libgudev"/>,
       <xref linkend="libndp"/>,
       <xref linkend="libnl"/>,
       <xref linkend="nss"/>
@@ -107,11 +105,11 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <phrase revision="sysv"><xref linkend="consolekit"/>,</phrase>
+      <xref linkend="curl"/>,
       <xref linkend="dhcpcd"/> or
       <xref linkend="dhcp"/> (client only),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
-      <xref linkend="libsoup"/>,
       <xref linkend="newt"/> (for <command>nmtui</command>),
       <xref linkend="polkit"/>,
       <xref linkend="pygobject3"/>,
@@ -124,18 +122,18 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <phrase revision="sysv"><xref linkend="consolekit"/>,</phrase>
-      <xref linkend="dhcpcd"/> or
+      <xref linkend="curl"/>,
+      <xref linkend="dhcpcd"/> または
       <xref linkend="dhcp"/> (クライアントのみ),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
-      <xref linkend="libsoup"/>,
-      <xref linkend="newt"/> (for <command>nmtui</command>),
+      <xref linkend="newt"/> (<command>nmtui</command> のため),
       <xref linkend="polkit"/>,
       <xref linkend="pygobject3"/>,
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
       <xref linkend="upower"/>,
-      <xref linkend="vala"/>, and
-      <xref linkend="wpa_supplicant"/> (built with D-Bus support),
+      <xref linkend="vala"/>,
+      <xref linkend="wpa_supplicant"/> (D-Bus サポートのビルド済み),
     </para>
 @z
 

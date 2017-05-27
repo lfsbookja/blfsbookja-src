@@ -10,7 +10,6 @@ CHANGE_FILES_pythonmodules = \
 	cargo.ch         \
 	dbus-python.ch   \
 	llvm3.ch         \
-	py2cairo.ch      \
 	pyatspi2.ch      \
 	pycairo.ch       \
 	pycrypto.ch      \

@@ -101,16 +101,18 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="python2"/> or <xref linkend="python3"/> (to build and install a
+      <xref linkend="python2"/> and <xref linkend="python3"/> (to build and install a
       <application>Python</application> library module, additionally it is
       required to run the full suite of tests)
+      <!-- As discovered by Bruce, itstool needs this module. -->
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="python2"/> または <xref linkend="python3"/>
-      (<application>Python</application> ライブラリモジュールビルドしインストールする場合には必要です。
+      <xref linkend="python2"/>, <xref linkend="python3"/>
+      (<application>Python</application> ライブラリモジュールをビルドしインストールする場合には必要です。
       またテストスイートをすべて実施する際にも必要です。)
+      <!-- As discovered by Bruce, itstool needs this module. -->
     </para>
 @z
 
