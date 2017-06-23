@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY plasma5-buildsize     "971 MB (307 MB installed)">
+  <!ENTITY plasma5-buildsize     "917 MB (290 MB installed)">
 @y
-  <!ENTITY plasma5-buildsize     "971 MB (307 MB installed)">
+  <!ENTITY plasma5-buildsize     "917 MB (290 MB installed)">
 @z
 
 @x
@@ -224,15 +224,15 @@
 @z
 
 @x
-    <note><para>The breeze-grub and breeze-plymouth packages above are both for
-    customized support of <ulink
+    <note><para>The breeze-grub, breeze-plymouth, and plymouth-kcm packages 
+    above are all for customized support of <ulink
     url="https://www.freedesktop.org/wiki/Software/Plymouth/">Plymouth</ulink>
     which is designed to be run within an initial ram disk during boot (see
     <xref linkend="initramfs"/>).  The plasma-sdk package is optional and used
     for software development.</para></note>
 @y
-    <note><para>The breeze-grub and breeze-plymouth packages above are both for
-    customized support of <ulink
+    <note><para>The breeze-grub, breeze-plymouth, and plymouth-kcm packages 
+    above are all for customized support of <ulink
     url="https://www.freedesktop.org/wiki/Software/Plymouth/">Plymouth</ulink>
     which is designed to be run within an initial ram disk during boot (see
     <xref linkend="initramfs"/>).  The plasma-sdk package is optional and used

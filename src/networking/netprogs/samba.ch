@@ -103,8 +103,9 @@
       <xref linkend="libxslt"/> (for documentation),
       <xref linkend="perl-parse-yapp"/>,
       <xref linkend="pycrypto"/>,
-      <xref linkend="python3"/>, and
-      <xref linkend="openldap"/>
+      <xref linkend="python3"/>,
+      <xref linkend="openldap"/>, and
+      <xref linkend="openssl"/> <!-- This can be removed at openldap-2.4.45.-->
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -115,7 +116,8 @@
       <xref linkend="perl-parse-yapp"/>,
       <xref linkend="pycrypto"/>,
       <xref linkend="python3"/>,
-      <xref linkend="openldap"/>
+      <xref linkend="openldap"/>,
+      <xref linkend="openssl"/> <!-- This can be removed at openldap-2.4.45.-->
     </para>
 @z
 
@@ -217,13 +219,13 @@
     of any failures can be found in
     <filename class="directory">./st/summary</filename>.</para>
 @y
-    <para>To test the results, as the
-    <systemitem class="username">root</systemitem> user, issue:
-    <command>make quicktest</command>. The test suite will produce lines that
-    look like failures, but these are innocuous. The last few lines of output
-    should report <emphasis>"ALL OK"</emphasis> for a good test run. A summary
-    of any failures can be found in
-    <filename class="directory">./st/summary</filename>.</para>
+    <para>
+    ビルド結果をテストする場合は <systemitem
+    class="username">root</systemitem> ユーザーになって <command>make quicktest</command> を実行します。
+    テストスイートの実行により複数行が出力され、あたかもエラーのように見えますが、これは問題ありません。
+    出力の最後に <emphasis>"ALL OK"</emphasis> と表示されるのでテスト実行が成功したことが分かります。
+    テストに失敗した場合は <filename class="directory">./st/summary</filename> を見て確認できます。
+    </para>
 @z
 
 @x
@@ -233,11 +235,14 @@
       builder at nearly 100 SBU, and you should expect ~80 errors and ~30
       failures from the 3000+ tests.</para>
 @y
-      <para>Additionally, developer test suites are available. If you've
+      <para>
+      
+      Additionally, developer test suites are available. If you've
       installed the optional python modules above, you can run these tests with
       <command>make test</command>. It is not recommended for the average
       builder at nearly 100 SBU, and you should expect ~80 errors and ~30
-      failures from the 3000+ tests.</para>
+      failures from the 3000+ tests
+      </para>
 @z
 
 @x

@@ -145,10 +145,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. <!-- Two
-      tests fail for unknown reasons. -->
+      To test the results, issue: <command>make check</command>. Two
+      tests fail for unknown reasons. 
 @y
       ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+      テストが二つ、原因不明で失敗します。
 @z
 
 @x

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mariadb-buildsize     "1.2 GB (with tests)">
-  <!ENTITY mariadb-time          "6.4 SBU, (with parallelism=4 and tests)">
+  <!ENTITY mariadb-buildsize     "1.3 GB">
+  <!ENTITY mariadb-time          "8.0 SBU (with parallelism=4, add 0.5 SBU for tests)">
 @y
-  <!ENTITY mariadb-buildsize     "1.2 GB (テスト込み)">
-  <!ENTITY mariadb-time          "6.4 SBU, (with parallelism=4 and tests)">
+  <!ENTITY mariadb-buildsize     "1.3 GB (テスト込み)">
+  <!ENTITY mariadb-time          "8.0 SBU (with parallelism=4, add 0.5 SBU for tests)">
 @z
 
 @x
@@ -78,13 +78,13 @@
 @z
 
 @x
-    <note><para>The installed size of MariaDB is 422 MB, but this can be
-    reduced by about 177 MB, if desired, by removing the /usr/share/mysql/test
+    <note><para>The installed size of MariaDB is 473 MB, but this can be
+    reduced by about 200 MB, if desired, by removing the /usr/share/mysql/test
     directory after installation.</para></note>
 @y
     <note><para>
-    MariaDB のインストールサイズは 422MB です。
-    サイズを縮小する必要がある場合は、インストール後に /usr/share/mysql/test ディレクトリを削除すれば 177MB になります。
+    MariaDB のインストールサイズは 473MB です。
+    サイズを縮小する必要がある場合は、インストール後に /usr/share/mysql/test ディレクトリを削除すれば 200MB になります。
     </para></note>
 @z
 
@@ -253,12 +253,22 @@
 @z
 
 @x
-      <option>-DWITHOUT_SERVER=ON -DWITH_UNIT_TESTS=OFF</option>: Use these
-      switches if you don't want the server and would like to build the client
+      <parameter>-DSKIP_TESTS=ON</parameter>: This switch disables
+      tests for MariaDB Connector/C which are not supported without 
+      additional setup.
+@y
+      <parameter>-DSKIP_TESTS=ON</parameter>: This switch disables
+      tests for MariaDB Connector/C which are not supported without 
+      additional setup.
+@z
+
+@x
+      <option>-DWITHOUT_SERVER=ON</option>: Use this
+      switch if you don't want the server and would like to build the client
       only.
 @y
-      <option>-DWITHOUT_SERVER=ON -DWITH_UNIT_TESTS=OFF</option>: Use these
-      switches if you don't want the server and would like to build the client
+      <option>-DWITHOUT_SERVER=ON</option>: Use this
+      switch if you don't want the server and would like to build the client
       only.
 @z
 

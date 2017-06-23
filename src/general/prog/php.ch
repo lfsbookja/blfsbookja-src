@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY php-buildsize     "452 MB (add 2 MB for tests)">
-  <!ENTITY php-time          "3.9 SBU (add 5.6 SBU for tests)">
+  <!ENTITY php-time          "4.3 SBU (add 4.6 SBU for tests)">
 @y
   <!ENTITY php-buildsize     "452 MB (テスト実施時はさらに 2 MB)">
-  <!ENTITY php-time          "3.9 SBU (テスト実施時はさらに 5.6 SBU)">
+  <!ENTITY php-time          "4.3 SBU (テスト実施時はさらに 4.6 SBU)">
 @z
 
 @x

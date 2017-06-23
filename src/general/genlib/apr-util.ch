@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY apr-util-buildsize     "8.7 MB (additional 1 MB for the tests)">
+  <!ENTITY apr-util-buildsize     "8 MB (additional 1.4 MB for tests)">
+  <!ENTITY apr-util-time          "0.1 SBU (additional 0.3 SBU for tests)">
 @y
-  <!ENTITY apr-util-buildsize     "8.7 MB (テスト実施時はさらに 1 MB)">
+  <!ENTITY apr-util-buildsize     "8 MB (テスト実施時はさらに 1.4 MB)">
+  <!ENTITY apr-util-time          "0.1 SBU (テスト実施時はさらに 0.3 SBU)">
 @z
 
 @x

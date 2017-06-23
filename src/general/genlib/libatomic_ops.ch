@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libatomic_ops-buildsize     "5.9 MB (with tests)">
-  <!ENTITY libatomic_ops-time          "0.2 SBU (with tests)">
+  <!ENTITY libatomic_ops-buildsize     "4.9 MB (with tests)">
+  <!ENTITY libatomic_ops-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libatomic_ops-buildsize     "5.9 MB (テスト込み)">
-  <!ENTITY libatomic_ops-time          "0.2 SBU (テスト込み)">
+  <!ENTITY libatomic_ops-buildsize     "4.9 MB (テスト込み)">
+  <!ENTITY libatomic_ops-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -102,10 +102,9 @@
 @z
 
 @x
-      To check the results, issue 
-      <command>LD_LIBRARY_PATH=../src/.libs make check</command>.
+      To check the results, issue <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <command>LD_LIBRARY_PATH=../src/.libs make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -118,23 +117,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>sed -i ...</command>: This <command>sed</command> makes the docs
-      to be installed in an appropriate directory.
-@y
-      <command>sed -i ...</command>:
-      この sed コマンドはドキュメントを適正なディレクトリにインストールするためのものです。
-@z
-
-@x
-      <command>autoreconf -fi</command>: This regenerates the
-      <command>configure</command> script and the
-      <filename>Makefile.in</filename>.
-@y
-      <command>autoreconf -fi</command>:
-      このコマンドにより <command>configure</command> スクリプトや <filename>Makefile.in</filename> を再生成します。
 @z
 
 @x

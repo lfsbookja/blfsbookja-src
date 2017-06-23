@@ -211,11 +211,11 @@
 %@z
 
 @x
-    <para><option>--with-ssl</option>: Use this option to enable SSL support if
-    <application>OpenSSL</application> is installed.</para>
+    <para><option>--enable-smime</option>: Use this option to enable S/MIME
+    support if <application>GnuPG-2.x.x</application> is installed.</para>
 @y
-    <para><option>--with-ssl</option>: Use this option to enable SSL support if
-    <application>OpenSSL</application> is installed.</para>
+    <para><option>--enable-smime</option>: Use this option to enable S/MIME
+    support if <application>GnuPG-2.x.x</application> is installed.</para>
 @z
 
 @x
@@ -224,16 +224,6 @@
 @y
     <para><option>--with-ldap</option>: Use this option to enable LDAP address
     book support if <application>OpenLDAP</application> is installed.</para>
-@z
-
-@x
-    <para><option>--with-sqlite</option>: Use this option to enable SQLite
-    address book support if <application>SQLite</application> is
-    installed.</para>
-@y
-    <para><option>--with-sqlite</option>: Use this option to enable SQLite
-    address book support if <application>SQLite</application> is
-    installed.</para>
 @z
 
 @x
@@ -247,11 +237,13 @@
 @z
 
 @x
-    <para><option>--enable-smime</option>: Use this option to enable S/MIME
-    support if <application>GnuPG-2.x.x</application> is installed.</para>
+    <para><option>--with-sqlite</option>: Use this option to enable SQLite
+    address book support if <application>SQLite</application> is
+    installed.</para>
 @y
-    <para><option>--enable-smime</option>: Use this option to enable S/MIME
-    support if <application>GnuPG-2.x.x</application> is installed.</para>
+    <para><option>--with-sqlite</option>: Use this option to enable SQLite
+    address book support if <application>SQLite</application> is
+    installed.</para>
 @z
 
 @x

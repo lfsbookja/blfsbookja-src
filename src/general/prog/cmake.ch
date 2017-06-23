@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "316 MB (add 334 MB for tests)">
-  <!ENTITY cmake-time          "3.6 SBU (add 8.6 SBU for tests)">
+  <!ENTITY cmake-buildsize     "333 MB (add 351 MB for tests)">
+  <!ENTITY cmake-time          "2.2 SBU (add 2.5 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "316 MB (テスト実行時はさらに 334 MB)">
-  <!ENTITY cmake-time          "3.6 SBU (テスト実行時はさらに 8.6 SBU)">
+  <!ENTITY cmake-buildsize     "333 MB (テスト実行時はさらに 351 MB)">
+  <!ENTITY cmake-time          "2.2 SBU (テスト実行時はさらに 2.5 SBU, いずれも parallelism=4 利用時)">
 @z
 
 @x

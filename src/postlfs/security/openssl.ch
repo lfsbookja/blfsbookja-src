@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY openssl-buildsize     "50 MB (with tests)">
-  <!ENTITY openssl-time          "1.4 SBU (with tests)">
+  <!ENTITY openssl-buildsize     "70 MB (with tests)">
+  <!ENTITY openssl-time          "1.5 SBU (with tests)">
 @y
-  <!ENTITY openssl-buildsize     "50 MB (テスト込み)">
-  <!ENTITY openssl-time          "1.4 SBU (テスト込み)">
+  <!ENTITY openssl-buildsize     "70 MB (テスト込み)">
+  <!ENTITY openssl-time          "1.5 SBU (テスト込み)">
 @z
 
 @x
@@ -81,30 +81,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect3">OpenSSL Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;OpenSSL&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="mitkrb"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="mitkrb"/>
-    </para>
-@z
-
-@x
       User Notes: <ulink url='&blfs-wiki;/OpenSSL'/>
 @y
       &UserNotes;: <ulink url='&blfs-wiki;/OpenSSL'/>
@@ -117,23 +93,15 @@
 @z
 
 @x
-        This package does not support parallel build.
-@y
-        &notParallelBuild;
-@z
-
-@x
       Install <application>OpenSSL</application> with the following commands:
 @y
       以下のコマンドを実行して <application>OpenSSL</application> をビルドします。
 @z
 
 @x
-      To test the results, issue: <command>make -j1 test</command>.  The
-      test suite does not support parallel jobs.
+      To test the results, issue: <command>make test</command>.
 @y
       ビルド結果をテストする場合は <command>make test</command> を実行します。
-      テストスイートは並行処理をサポートしていません。
 @z
 
 @x
@@ -182,18 +150,12 @@
 @z
 
 @x
-      <command>make MANDIR=/usr/share/man MANSUFFIX=ssl install</command>:
-      This command installs <application>OpenSSL</application> with the man
-      pages in <filename class="directory">/usr/share/man</filename>
-      instead of <filename class="directory">/etc/ssl/man</filename> and
-      appends "ssl" suffix to the manual page names to avoid conflicts with
-      manual pages installed by other packages.
+      <command>make MANSUFFIX=ssl install</command>:
+      This command appends an "ssl" suffix to the manual page names to avoid
+      conflicts with manual pages installed by other packages.
 @y
-      <command>make MANDIR=/usr/share/man MANSUFFIX=ssl install</command>:
-      このコマンドは <application>OpenSSL</application> の man ページを <filename
-      class="directory">/etc/ssl/man</filename> でなく <filename
-      class="directory">/usr/share/man</filename> にインストールすることを指示します。
-      またインストールする man ページ名にはサフィックス "ssl" をつけます。
+      <command>make MANSUFFIX=ssl install</command>:
+      インストールする man ページ名にはサフィックス "ssl" をつけます。
       これは他のパッケージがインストールする man ページとの衝突を避けるためです。
 @z
 

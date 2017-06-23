@@ -34,6 +34,8 @@ CHANGE_FILES = \
 	libassuan.ch \
 	libatasmart.ch \
 	libatomic_ops.ch \
+	libblockdev.ch \
+	libbytesize.ch \
 	libdaemon.ch \
 	libcroco.ch \
 	libesmtp.ch \

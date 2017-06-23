@@ -115,9 +115,8 @@
       <xref linkend="gpm"/>,
       <xref linkend="lua"/>,
       <xref linkend="python2"/>,
-      <xref linkend="ruby"/>,
-      <xref linkend="tcl"/>, and
-      <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>
+      <xref linkend="ruby"/>, and
+      <xref linkend="tcl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -126,8 +125,7 @@
       <xref linkend="lua"/>,
       <xref linkend="python2"/>,
       <xref linkend="ruby"/>,
-      <xref linkend="tcl"/>,
-      <ulink url="http://sourceforge.net/projects/lesstif/">LessTif</ulink>
+      <xref linkend="tcl"/>
     </para>
 @z
 

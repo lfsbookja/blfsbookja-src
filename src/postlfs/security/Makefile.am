@@ -10,6 +10,7 @@ CHANGE_FILES = \
 	cacerts.ch         \
 	consolekit.ch      \
 	cracklib.ch        \
+	cryptsetup.ch      \
 	cyrus-sasl.ch      \
 	firewalling.ch     \
 	gnupg2.ch          \
@@ -27,6 +28,7 @@ CHANGE_FILES = \
 	nss.ch             \
 	openssh.ch         \
 	openssl.ch         \
+	openssl10.ch       \
 	p11-kit.ch         \
 	polkit.ch          \
 	security.ch        \
@@ -36,6 +38,7 @@ CHANGE_FILES = \
 	sudo.ch            \
 	syslog.ch          \
 	tripwire.ch        \
+	volume_key.ch      \
 	vulnerabilities.ch
 
 EXTRA_DIST = $(CHANGE_FILES) firewalling.sed

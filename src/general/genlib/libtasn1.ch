@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY libtasn1-buildsize     "11 MB (with tests)">
-  <!ENTITY libtasn1-time          "0.2 SBU (with tests)">
+  <!ENTITY libtasn1-time          "0.3 SBU (with tests)">
 @y
   <!ENTITY libtasn1-buildsize     "11 MB (テスト込み)">
-  <!ENTITY libtasn1-time          "0.2 SBU (テスト込み)">
+  <!ENTITY libtasn1-time          "0.3 SBU (テスト込み)">
 @z
 
 @x

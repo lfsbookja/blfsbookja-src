@@ -81,15 +81,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="gtksourceview"/>, and
-      <xref linkend="itstool"/>
+      <xref linkend="gtksourceview"/>, 
+      <xref linkend="itstool"/>, and 
+      <xref linkend="libsoup"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="gtksourceview"/>,
-      <xref linkend="itstool"/>
+      <xref linkend="gtksourceview"/>, 
+      <xref linkend="itstool"/>,
+      <xref linkend="libsoup"/>
     </para>
 @z
 

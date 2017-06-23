@@ -103,6 +103,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
+      <xref linkend="gnutls"/>,
       <xref linkend="pth"/>,
       <xref linkend="unixodbc"/>,
         <xref linkend="mariadb"/> or
@@ -115,6 +116,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
+      <xref linkend="gnutls"/>,
       <xref linkend="pth"/>,
       <xref linkend="unixodbc"/>,
         <xref linkend="mariadb"/> または

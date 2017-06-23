@@ -7,13 +7,13 @@
 ##
 BOOKdir = @abs_bookdir@/networking/mailnews
 CHANGE_FILES = \
+	alpine.ch    \
 	fetchmail.ch \
 	mailnews.ch  \
 	mailx.ch     \
 	mutt.ch      \
 	other.ch     \
-	procmail.ch  \
-	re-alpine.ch
+	procmail.ch
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)

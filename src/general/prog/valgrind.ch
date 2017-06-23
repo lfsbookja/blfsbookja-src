@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY valgrind-buildsize     "344 MB (additional 228 MB for tests)">
-  <!ENTITY valgrind-time          "1.2 SBU (additional 5.1 SBU for tests)">
+  <!ENTITY valgrind-buildsize     "347 MB (additional 228 MB for tests)">
+  <!ENTITY valgrind-time          "1.1 SBU (additional 5.1 SBU for tests)">
 @y
-  <!ENTITY valgrind-buildsize     "344 MB (テスト実施時はさらに 228 MB)">
-  <!ENTITY valgrind-time          "1.2 SBU (テスト実施時はさらに 5.1 SBU)">
+  <!ENTITY valgrind-buildsize     "347 MB (テスト実施時はさらに 228 MB)">
+  <!ENTITY valgrind-time          "1.1 SBU (テスト実施時はさらに 5.1 SBU)">
 @z
 
 @x

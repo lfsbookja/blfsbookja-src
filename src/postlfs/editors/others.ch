@@ -52,7 +52,7 @@
 
 @x
         <command>pico</command> is a text editor installed as a part of <xref
-        linkend="re-alpine"/>.
+        linkend="alpine"/>.
 @y
-        <command>pico</command> は <xref linkend="re-alpine"/> の一部としてインストールされるテキストエディターです。
+        <command>pico</command> は <xref linkend="alpine"/> の一部としてインストールされるテキストエディターです。
 @z

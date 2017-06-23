@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY sqlite-buildsize     "47 MB (with docs)">
+  <!ENTITY sqlite-buildsize     "48 MB (with docs)">
 @y
-  <!ENTITY sqlite-buildsize     "47 MB (ドキュメント込み)">
+  <!ENTITY sqlite-buildsize     "48 MB (ドキュメント込み)">
 @z
 
 @x

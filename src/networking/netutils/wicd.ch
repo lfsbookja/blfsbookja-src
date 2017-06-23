@@ -204,10 +204,10 @@
     utilities. The second one fixes building with BLFS.</para>
 @z
 @x
-    <para revision="systemd"><command>sed -e ... -i setup.py</command>: Fix
+    <para revision="systemd"><command>sed ... -i.orig setup.py</command>: Fix
     and issue while building with BLFS.</para>
 @y
-    <para revision="systemd"><command>sed -e ... -i setup.py</command>: Fix
+    <para revision="systemd"><command>sed ... -i.orig setup.py</command>: Fix
     and issue while building with BLFS.</para>
 @z
 
@@ -258,10 +258,11 @@
 @z
 
 @x
-    <para><option>--no-install-init</option>: Prevent installation of any init
-    scripts, as a bootscript is installed later in the instructions.</para>
+    <para revision="sysv"><option>--no-install-init</option>: Prevent
+    installation of any init scripts, as a bootscript is installed later in the
+    instructions.</para>
 @y
-    <para><option>--no-install-init</option>:
+    <para revision="sysv"><option>--no-install-init</option>:
     初期化のスクリプトをインストールしないようにします。
     ブートスクリプトは後の手順にてインストールされます。
     </para>
@@ -317,21 +318,16 @@
 @z
 
 @x
-      <para>To automatically start Wicd at boot time, you need to first install
-      the Wicd bootscript,<phrase revision="sysv">
-      <filename>/etc/rc.d/init.d/wicd</filename></phrase>
-      <phrase revision="systemd"><filename>wicd.service</filename></phrase>,
-      included in the <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> package
-      (as user <systemitem class="username">root</systemitem>):</para>
+      <para revision="sysv">To automatically start Wicd at boot time, you need
+      to first install the Wicd bootscript,
+      <filename>/etc/rc.d/init.d/wicd</filename> included in the <xref
+      linkend="bootscripts"/> package (as user <systemitem
+      class="username">root</systemitem>):</para>
 @y
-      <para>ブート時に Wicd を自動起動させるには Wicd ブートスクリプト <phrase revision="sysv">
-      <filename>/etc/rc.d/init.d/wicd</filename></phrase>
-      <phrase revision="systemd"><filename>wicd.service</filename></phrase> をまずインストールします。
-      これは <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> パッケージにて提供されます。
-      (インストールは <systemitem class="username">root</systemitem> ユーザーにて行います。)
-      </para>
+      <para revision="sysv">
+      ブート時に Wicd を自動起動させるには <xref
+      linkend="bootscripts"/> により提供される Wicd ブートスクリプト <filename>/etc/rc.d/init.d/wicd</filename> をインストールします。
+      (<systemitem class="username">root</systemitem> ユーザーにより実行します。)</para>
 @z
 
 @x

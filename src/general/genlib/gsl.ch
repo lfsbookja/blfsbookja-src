@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gsl-buildsize     "188 MB (with tests)">
-  <!ENTITY gsl-time          "1.9 SBU (with tests)">
+  <!ENTITY gsl-buildsize     "181 MB (with tests, without docs)">
+  <!ENTITY gsl-time          "1.3 SBU (with tests using parallelism=4, without docs)">
 @y
-  <!ENTITY gsl-buildsize     "188 MB (テスト込み)">
-  <!ENTITY gsl-time          "1.9 SBU (テスト込み)">
+  <!ENTITY gsl-buildsize     "188 MB (テスト込み、ドキュメントなし)">
+  <!ENTITY gsl-time          "1.9 SBU (parallelism=4 利用でテスト込み、ドキュメントなし)">
 @z
 
 @x
@@ -87,12 +87,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="texlive"/> or <xref linkend="tl-installer"/>
+      <ulink url="http://www.sphinx-doc.org/en/stable/man/sphinx-build.html>Sphinx">Sphinx</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="texlive"/> または <xref linkend="tl-installer"/>
+      <ulink url="http://www.sphinx-doc.org/en/stable/man/sphinx-build.html>Sphinx">Sphinx</ulink>
     </para>
 @z
 
