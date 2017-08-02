@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "404 MB (with optional dependencies and documentation)">
-  <!ENTITY git-time          "0.9 SBU (add 2.2 SBU for building documentation, add 4.1 SBU for tests)">
+  <!ENTITY git-buildsize     "405 MB (with optional dependencies and documentation)">
+  <!ENTITY git-time          "0.9 SBU (add 2.1 SBU for building documentation, add 4.2 SBU for tests)">
 @y
-  <!ENTITY git-buildsize     "404 MB (任意依存パッケージとドキュメント込み)">
-  <!ENTITY git-time          "0.9 SBU (ドキュメント込みでさらに 2.2 SBU, テスト込みでさらに 4.1 SBU)">
+  <!ENTITY git-buildsize     "405 MB (任意依存パッケージとドキュメント込み)">
+  <!ENTITY git-time          "0.9 SBU (ドキュメント込みでさらに 2.1 SBU, テスト込みでさらに 4.2 SBU)">
 @z
 
 @x
@@ -138,7 +138,8 @@
     <para role="recommended">
       <xref linkend="curl"/> (needed to use <application>Git</application> over http,
       https, ftp or ftps),
-      <xref linkend="openssl"/>, and
+      <xref linkend="openssl"/>,
+      <xref linkend="perl-error"/>, and
       <xref linkend="python2"/>
     </para>
 @y
@@ -146,6 +147,7 @@
     <para role="recommended">
       <xref linkend="curl"/> (http, https, ftp, ftps 経由で <application>Git</application> を用いる場合に必要),
       <xref linkend="openssl"/>,
+      <xref linkend="perl-error"/>,
       <xref linkend="python2"/>
     </para>
 @z

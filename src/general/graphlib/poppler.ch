@@ -162,6 +162,7 @@
       <xref linkend="openjpeg2"/>
       (preference is for OpenJPEG1, due to regressions with OpenJPEG2), and
       <xref linkend="qt5"/>
+      (required for PDF support in <xref linkend="okular5"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -170,11 +171,12 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
+      <xref linkend="lcms"/> または <xref linkend="lcms2"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="openjpeg2"/>
-      (preference is for OpenJPEG1, due to regressions with OpenJPEG2), and
+      (preference is for OpenJPEG1, due to regressions with OpenJPEG2),
       <xref linkend="qt5"/>
+      (required for PDF support in <xref linkend="okular5"/>)
     </para>
 @z
 
@@ -290,15 +292,13 @@
 @z
 
 @x
-      <option>--disable-poppler-qt4</option>: Don't compile poppler Qt4 wrapper.
+      <option>--disable-poppler-qt5</option>: Don't compile poppler Qt5 wrapper,
+      when Qt5 is installed. Note that Qt5 support is required for PDF support
+      in <xref linkend="okular5"/>.
 @y
-      <option>--disable-poppler-qt4</option>: Don't compile poppler Qt4 wrapper.
-@z
-
-@x
-      <option>--disable-poppler-qt5</option>: Don't compile poppler Qt5 wrapper.
-@y
-      <option>--disable-poppler-qt5</option>: Don't compile poppler Qt5 wrapper.
+      <option>--disable-poppler-qt5</option>: Don't compile poppler Qt5 wrapper,
+      when Qt5 is installed. Note that Qt5 support is required for PDF support
+      in <xref linkend="okular5"/>.
 @z
 
 @x

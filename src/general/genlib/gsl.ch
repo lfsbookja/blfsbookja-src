@@ -87,12 +87,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.sphinx-doc.org/en/stable/man/sphinx-build.html>Sphinx">Sphinx</ulink>
+      <ulink url="http://www.sphinx-doc.org/en/stable/man/sphinx-build.html">Sphinx</ulink>
+      with <ulink url="https://pypi.python.org/pypi/sphinx_rtd_theme">sphinx_rtd_theme</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.sphinx-doc.org/en/stable/man/sphinx-build.html>Sphinx">Sphinx</ulink>
+      <ulink url="http://www.sphinx-doc.org/en/stable/man/sphinx-build.html">Sphinx</ulink>
+      with <ulink url="https://pypi.python.org/pypi/sphinx_rtd_theme">sphinx_rtd_theme</ulink>
     </para>
 @z
 

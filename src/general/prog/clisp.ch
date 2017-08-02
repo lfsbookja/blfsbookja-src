@@ -150,10 +150,10 @@
 @z
 
 @x
-      <command>uimit -s 16384</command>: this increases the maximum stack
+      <command>ulimit -s 16384</command>: this increases the maximum stack
       size, as recommended by the <command>configure</command>.
 @y
-      <command>uimit -s 16384</command>:
+      <command>ulimit -s 16384</command>:
       スタックサイズの最大値を増やします。
       <command>configure</command> 実行において推奨されているものです。
 @z

@@ -8,6 +8,7 @@
 BOOKdir = @abs_bookdir@/multimedia/cdwriteutils
 CHANGE_FILES = \
 	cdrdao.ch       \
+	cdrtools.ch     \
 	cdwriteutils.ch \
 	dvd+rw-tools.ch \
 	libburn.ch      \

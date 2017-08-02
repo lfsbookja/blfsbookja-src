@@ -139,7 +139,7 @@
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
-      <xref linkend="fuse3"/>,
+      <xref linkend="fuse2"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcdio"/>,
@@ -183,7 +183,7 @@
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
-      <xref linkend="fuse3"/>,
+      <xref linkend="fuse2"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcdio"/>,
@@ -196,7 +196,7 @@
       <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, and
+      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>,
       <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>,
     </para>
     <para role="optional" revision="systemd">
@@ -217,7 +217,7 @@
       <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>, and
+      <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>,
       <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
     </para>
 @z

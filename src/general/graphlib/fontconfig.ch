@@ -280,7 +280,7 @@
 @x
         <seg>
           fc-cache, fc-cat, fc-list, fc-match, fc-pattern, fc-query,
-          fc-scan and fc-validate
+          fc-scan, and fc-validate
         </seg>
         <seg>
           libfontconfig.so
@@ -290,7 +290,7 @@
           /usr/include/fontconfig,
           /usr/share/doc/fontconfig-&fontconfig-version;,
           /usr/share/fontconfig,
-          /usr/share/xml/fontconfig and
+          /usr/share/xml/fontconfig, and
           /var/cache/fontconfig
         </seg>
 @y

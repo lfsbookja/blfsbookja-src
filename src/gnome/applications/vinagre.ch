@@ -93,7 +93,6 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="appstream-glib"/>,
       <xref linkend="telepathy-glib"/>,
       <xref linkend="vala"/>, and
       <xref linkend="vte"/>
@@ -101,7 +100,6 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="appstream-glib"/>,
       <xref linkend="telepathy-glib"/>,
       <xref linkend="vala"/>,
       <xref linkend="vte"/>
@@ -111,6 +109,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="appstream-glib"/>,
       <xref linkend="avahi"/>,
       <ulink url="http://www.freerdp.com/">FreeRDP</ulink> (For connecting to Windows desktops), and
       <ulink url="http://www.spice-space.org/">Spice-GTK</ulink>
@@ -118,8 +117,9 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="appstream-glib"/>,
       <xref linkend="avahi"/>,
-      <ulink url="http://www.freerdp.com/">FreeRDP</ulink> (For connecting to Windows desktops), and
+      <ulink url="http://www.freerdp.com/">FreeRDP</ulink> (For connecting to Windows desktops),
       <ulink url="http://www.spice-space.org/">Spice-GTK</ulink>
     </para>
 @z

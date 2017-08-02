@@ -83,12 +83,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="fuse2"/> (this disables user mounts)
+      <ulink url="https://github.com/libfuse/libfuse">fuse 2.x</ulink> 
+         (this disables user mounts)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="fuse2"/> (this disables user mounts)
+      <ulink url="https://github.com/libfuse/libfuse">fuse 2.x</ulink> 
+         (this disables user mounts)
     </para>
 @z
 

@@ -208,9 +208,19 @@
 @z
 
 @x
+      If not in chroot, at this point, you should reload the systemd daemon,
+      and reenter multi-user mode with the following commands (as the
+      <systemitem class="username">root</systemitem> user):
+@y
+      If not in chroot, at this point, you should reload the systemd daemon,
+      and reenter multi-user mode with the following commands (as the
+      <systemitem class="username">root</systemitem> user):
+@z
+
+@x
       The dbus tests cannot be run until after <xref linkend="dbus-glib"/> has
       been installed.  They must be run as an unprivileged user from a local
-      session with bus address. Tests fail through ssh. If you want to run only
+      session with bus address. If you want to run only
       the unit tests, replace, below, <parameter>--enable-tests</parameter> by
       <parameter>--enable-embedded-tests</parameter>, otherwise, <xref
       linkend="dbus-python"/> has to be installed, before.  The tests require
@@ -223,7 +233,7 @@
 @y
       The dbus tests cannot be run until after <xref linkend="dbus-glib"/> has
       been installed.  They must be run as an unprivileged user from a local
-      session with bus address. Tests fail through ssh. If you want to run only
+      session with bus address. If you want to run only
       the unit tests, replace, below, <parameter>--enable-tests</parameter> by
       <parameter>--enable-embedded-tests</parameter>, otherwise, <xref
       linkend="dbus-python"/> has to be installed, before.  The tests require

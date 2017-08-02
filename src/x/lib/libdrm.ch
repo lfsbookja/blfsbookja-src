@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY libdrm-time          "0.2 SBU (add 0.8 SBU for the tests)">
+  <!ENTITY libdrm-time          "0.2 SBU (add 0.5 SBU for the tests)">
 @y
-  <!ENTITY libdrm-time          "0.2 SBU (テスト実行時はさらに 0.8 SBU)">
+  <!ENTITY libdrm-time          "0.2 SBU (テスト実行時はさらに 0.5 SBU)">
 @z
 
 @x

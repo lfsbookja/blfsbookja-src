@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY llvm-buildsize     "1.8 GB (with Clang, add 8.2 GB for tests)">
-  <!ENTITY llvm-time          "22 SBU (with Clang and parallelism=4, add 14 SBU for tests using 12 cores)">
+  <!ENTITY llvm-time          "19 SBU (with Clang and parallelism=4, add 14 SBU for tests using 12 cores)">
 @y
   <!ENTITY llvm-buildsize     "1.8 GB (with Clang, add 8.2 GB for tests)">
-  <!ENTITY llvm-time          "22 SBU (with Clang and parallelism=4, add 14 SBU for tests using 12 cores)">
+  <!ENTITY llvm-time          "19 SBU (with Clang and parallelism=4, add 14 SBU for tests using 12 cores)">
 @z
 
 @x

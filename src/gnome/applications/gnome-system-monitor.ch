@@ -79,7 +79,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
-      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gtkmm3"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libgtop"/>, and
@@ -89,7 +88,6 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
-      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gtkmm3"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libgtop"/>,

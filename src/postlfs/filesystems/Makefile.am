@@ -10,6 +10,7 @@ CHANGE_FILES = \
 	aboutlvm.ch      \
 	aboutraid.ch     \
 	btrfs-progs.ch   \
+	dosfstools.ch    \
 	ext3.ch          \
 	filesystems.ch   \
 	fuse2.ch         \

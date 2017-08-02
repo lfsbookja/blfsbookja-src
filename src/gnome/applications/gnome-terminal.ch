@@ -77,7 +77,6 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="dconf"/>,
       <phrase revision="systemd"><xref linkend="gnome-shell"/>,</phrase>
       <xref linkend="gsettings-desktop-schemas"/>,
@@ -88,7 +87,6 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="dconf"/>,
       <phrase revision="systemd"><xref linkend="gnome-shell"/>,</phrase>
       <xref linkend="gsettings-desktop-schemas"/>,

@@ -276,19 +276,11 @@
 @z
 
 @x
-      <!-- hopefully, 2.2.2 only - https://github.com/apple/cups/issues/4947 -->
-      <command>sed -i '/kerberized/,$ d' conf/cupsd.conf.in</command>: when this
-      version of <application>cups</application> is compiled without kerberos
-      support, it nevertheless adds a policy entry at the end of
-      <filename>/etc/cups/cupsd.conf</filename>. But the daemon will error out
-      because it does not understand that entry, so remove it.
+      <command>sed ... cups/dest.c</command>: Fix a regression in cups-2.2.4,
+      which prevents finding printers when no default printer is defined.
 @y
-      <!-- hopefully, 2.2.2 only - https://github.com/apple/cups/issues/4947 -->
-      <command>sed -i '/kerberized/,$ d' conf/cupsd.conf.in</command>: when this
-      version of <application>cups</application> is compiled without kerberos
-      support, it nevertheless adds a policy entry at the end of
-      <filename>/etc/cups/cupsd.conf</filename>. But the daemon will error out
-      because it does not understand that entry, so remove it.
+      <command>sed ... cups/dest.c</command>: Fix a regression in cups-2.2.4,
+      which prevents finding printers when no default printer is defined.
 @z
 
 @x

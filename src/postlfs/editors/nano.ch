@@ -182,12 +182,11 @@
 
 @x
         Another example is the <filename>nanorc.sample</filename> file
-        in the <filename class="directory">/etc</filename> directory.
+        in the installed documentation directory.
         It includes color configurations and has some documentation included
         in the comments.
 @y
-        設定のサンプルとして <filename
-        class="directory">/etc</filename> ディレクトリに <filename>nanorc.sample</filename> というファイルもあります。
+        設定のサンプルとして、ドキュメントをインストールしたディレクトリに <filename>nanorc.sample</filename> というファイルもあります。
         このファイルには色の設定例や、多くの説明がコメント内にて示されています。
 @z
 

@@ -78,7 +78,6 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="appstream-glib"/>,
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libdvdread"/>,
@@ -89,7 +88,6 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="appstream-glib"/>,
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libdvdread"/>,

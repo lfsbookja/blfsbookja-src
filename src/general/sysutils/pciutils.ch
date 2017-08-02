@@ -181,13 +181,13 @@
 
 @x
         <seg>
-          lspci, setpci and update-pciids
+          lspci, setpci, and update-pciids
         </seg>
         <seg>
           libpci.so
         </seg>
         <seg>
-          /usr/include/pci
+          /usr/include/pci and /usr/share/hwdata
         </seg>
 @y
         <seg>
@@ -197,7 +197,7 @@
           libpci.so
         </seg>
         <seg>
-          /usr/include/pci
+          /usr/include/pci, /usr/share/hwdata
         </seg>
 @z
 

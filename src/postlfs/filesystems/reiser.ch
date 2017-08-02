@@ -129,14 +129,6 @@
 @z
 
 @x
-      <envar>CFLAGS="$CFLAGS -std=gnu89"</envar>: This environment variable
-      fixes a build error with GCC 5.
-@y
-      <envar>CFLAGS="$CFLAGS -std=gnu89"</envar>:
-      この環境変数は GCC 5 でのビルドエラーを回避します。
-@z
-
-@x
       <parameter>--sbindir=/sbin</parameter>: This switch ensures that the
       <application>reiserfsprogs</application> utilities are installed in
       <filename class="directory">/sbin</filename>.
@@ -154,8 +146,8 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -166,12 +158,12 @@
         <seg>debugreiserfs, mkreiserfs, reiserfsck, reiserfstune, and
         resize_reiserfs</seg>
         <seg>libreiserfscore.so</seg>
-        <seg>None</seg>
+        <seg>/usr/include/reiserfs</seg>
 @y
         <seg>debugreiserfs, mkreiserfs, reiserfsck, reiserfstune,
         resize_reiserfs</seg>
         <seg>libreiserfscore.so</seg>
-        <seg>&None;</seg>
+        <seg>/usr/include/reiserfs</seg>
 @z
 
 @x

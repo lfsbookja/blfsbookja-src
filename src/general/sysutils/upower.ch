@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY upower-buildsize     "13 MB (add 2 MB for tests)">
+  <!ENTITY upower-buildsize     "12 MB (add 2 MB for tests)">
 @y
-  <!ENTITY upower-buildsize     "13 MB (テスト実施時はさらに 2 MB)">
+  <!ENTITY upower-buildsize     "12 MB (テスト実施時はさらに 2 MB)">
 @z
 
 @x
@@ -119,13 +119,21 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      <xref linkend="python3"/> (used only in the testsuite).
+      <xref linkend="python3"/>, with
+      <xref linkend="pygobject3"/>,
+      <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>, and
+      <ulink url="http://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
+      (for part of the testsuite).
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="python3"/> (テストスイートにおいてのみ利用)
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="python3"/>, with
+      <xref linkend="pygobject3"/>,
+      <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>, and
+      <ulink url="http://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
+      (for part of the testsuite).
     </para>
 @z
 
@@ -237,6 +245,9 @@
 @x
         <seg>
           upower<phrase revision="systemd"> and upowerd</phrase>
+<!-- Not sure upowerd should be listed. Isn't it in /usr/libexec for systemd
+too? Normally, we do not list executables, which are not supposed to be run
+by a user -->
         </seg>
         <seg>
           libupower-glib.so
@@ -248,7 +259,10 @@
         </seg>
 @y
         <seg>
-          upower<phrase revision="systemd">, upowerd</phrase>
+          upower<phrase revision="systemd">  upowerd</phrase>
+<!-- Not sure upowerd should be listed. Isn't it in /usr/libexec for systemd
+too? Normally, we do not list executables, which are not supposed to be run
+by a user -->
         </seg>
         <seg>
           libupower-glib.so

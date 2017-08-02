@@ -196,7 +196,7 @@
 
 @x
         <seg>
-          pcregrep, pcretest and pcre-config
+          pcregrep, pcretest, and pcre-config
         </seg>
         <seg>
           libpcre.so, libpcre16.so, libpcre32.so,

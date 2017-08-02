@@ -107,14 +107,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gobject-introspection"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
     </para>
@@ -123,6 +121,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV </ulink>, and
@@ -131,6 +130,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV </ulink>,

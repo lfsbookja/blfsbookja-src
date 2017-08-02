@@ -20,8 +20,8 @@
 @z
 
 @x
-    <para>The <application>xfsprogs</application> package contains administration
-    and debugging tools for the XFS file system.</para>
+    <para>The <application>xfsprogs</application> package contains
+    administration and debugging tools for the XFS file system.</para>
 @y
     <para>
     <application>xfsprogs</application> パッケージは XFS ファイルシステムの管理ツール、デバッグツールを提供します。
@@ -191,16 +191,16 @@
         <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_copy, xfs_db,
         xfs_estimate, xfs_freeze, xfs_fsr, xfs_growfs, xfs_info, xfs_io,
         xfs_logprint, xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck,
-        xfs_quota, xfs_repair, and xfs_rtcp</seg>
+        xfs_quota, xfs_repair, xfs_rtcp, and xfs_spaceman</seg>
         <seg>libhandle.so</seg>
         <seg>/usr/include/xfs and /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
 @y
         <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_copy, xfs_db,
         xfs_estimate, xfs_freeze, xfs_fsr, xfs_growfs, xfs_info, xfs_io,
         xfs_logprint, xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck,
-        xfs_quota, xfs_repair, and xfs_rtcp</seg>
+        xfs_quota, xfs_repair, xfs_rtcp, xfs_spaceman</seg>
         <seg>libhandle.so</seg>
-        <seg>/usr/include/xfs and /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
+        <seg>/usr/include/xfs, /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
 @z
 
 @x

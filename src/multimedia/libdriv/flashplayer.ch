@@ -34,9 +34,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Downlaods</bridgehead>
+    <bridgehead renderas="sect3">Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">Downlaods</bridgehead>
+    <bridgehead renderas="sect3">Downloads</bridgehead>
 @z
 
 @x

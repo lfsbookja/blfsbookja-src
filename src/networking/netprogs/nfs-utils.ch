@@ -230,19 +230,19 @@ The classic uid and gid values are 65534 which is also -2 when
     </para>
 @z
 
-@x
-    <para>If your <filename class="directory">/usr</filename> directory
-    is NFS mounted, you should install the executables in
-    <filename class="directory">/sbin</filename> by passing
-    an additional parameter <option>--sbindir=/sbin</option> to the
-    above <command>./configure</command> command.</para>
-@y
-    <para>
-    <filename class="directory">/usr</filename> ディレクトリを NFS マウントする場合は、実行モジュールを <filename
-    class="directory">/sbin</filename> にインストールしておく必要があります。
-    その場合には、上記の <command>./configure</command> コマンドの実行にあたり、パラメーター <option>--sbindir=/sbin</option> を加えてください。
-    </para>
-@z
+% @x
+%     <para>If your <filename class="directory">/usr</filename> directory
+%     is NFS mounted, you should install the executables in
+%     <filename class="directory">/sbin</filename> by passing
+%     an additional parameter <option>--sbindir=/sbin</option> to the
+%     above <command>./configure</command> command.</para>
+% @y
+%     <para>
+%     <filename class="directory">/usr</filename> ディレクトリを NFS マウントする場合は、実行モジュールを <filename
+%     class="directory">/sbin</filename> にインストールしておく必要があります。
+%     その場合には、上記の <command>./configure</command> コマンドの実行にあたり、パラメーター <option>--sbindir=/sbin</option> を加えてください。
+%     </para>
+% @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>

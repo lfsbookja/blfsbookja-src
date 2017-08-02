@@ -199,6 +199,9 @@
           2to3 (symlink),
           2to3-&python3-majorver;,
 
+          idle3 (symlink), and
+          idle&python3-majorver;
+
           pydoc3 (symlink),
           pydoc&python3-majorver;,
 
@@ -211,9 +214,6 @@
 
           pyvenv (symlink),
           pyvenv-&python3-majorver;,
-
-          idle3 (symlink), and
-          idle&python3-majorver;
         </seg>
         <seg>
           libpython&python3-majorver;m.so and libpython3.so
@@ -228,6 +228,9 @@
           2to3 (symlink),
           2to3-&python3-majorver;,
 
+          idle3 (symlink), and
+          idle&python3-majorver;
+
           pydoc3 (symlink),
           pydoc&python3-majorver;,
 
@@ -240,9 +243,6 @@
 
           pyvenv (symlink),
           pyvenv-&python3-majorver;,
-
-          idle3 (symlink), and
-          idle&python3-majorver;
         </seg>
         <seg>
           libpython&python3-majorver;m.so and libpython3.so

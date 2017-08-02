@@ -98,27 +98,27 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="libgcrypt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="libgcrypt"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/> (for the <application>Gtk+3</application> GUI),
       <xref linkend="libpcap"/> (required to capture data), and
       <xref linkend="qt5"/> (for the <application>Qt5</application> GUI)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/> (for the <application>Gtk+3</application> GUI),
-      <xref linkend="libpcap"/> (required to capture data), and
+      <xref linkend="libpcap"/> (required to capture data),
       <xref linkend="qt5"/> (for the <application>Qt5</application> GUI)
     </para>
 @z
@@ -128,34 +128,42 @@
     <para role="optional">
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
-      <xref linkend="libgcrypt"/>,
+      <xref linkend="gtk3"/> or <xref linkend="gtk2"/> (for the legacy GTK GUI),
       <xref linkend="libnl"/>,
       <xref linkend="lua"/>,
       <xref linkend="mitkrb"/>,
+      <xref linkend="nghttp2"/>,
       <xref linkend="openssl"/>,
       <xref linkend="sbc"/>,
-      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
-      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>, and
+      <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
+      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
+      <ulink url="https://www.libssh.org/">libssh</ulink>,
       <ulink url="http://www.portaudio.com/">PortAudio</ulink>
-      (for GTK+ RTP player)
+      (for GTK+ RTP player),
+      <ulink url="http://google.github.io/snappy/">Snappy</ulink>, and
+      <ulink url="https://www.soft-switch.org/">Spandsp</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
-      <xref linkend="libgcrypt"/>,
+      <xref linkend="gtk3"/> or <xref linkend="gtk2"/> (for the legacy GTK GUI),
       <xref linkend="libnl"/>,
       <xref linkend="lua"/>,
       <xref linkend="mitkrb"/>,
+      <xref linkend="nghttp2"/>,
       <xref linkend="openssl"/>,
       <xref linkend="sbc"/>,
-      <ulink url="http://www.gnu.org/software/adns/adns.html">adns</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
-      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>, and
+      <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
+      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
+      <ulink url="https://www.libssh.org/">libssh</ulink>,
       <ulink url="http://www.portaudio.com/">PortAudio</ulink>
-      (for GTK+ RTP player)
+      (for GTK+ RTP player),
+      <ulink url="http://google.github.io/snappy/">Snappy</ulink>, and
+      <ulink url="https://www.soft-switch.org/">Spandsp</ulink>
     </para>
 @z
 
@@ -278,36 +286,32 @@
 @z
 
 @x
-      <option>--with-gtk2=[yes/no]</option>: For the Gtk+2 GUI. If both Gtk+2
-      and 3 are installed, default is no. Notice that the GUI for only one Gtk+
-      version (either 2 or 3) can be built.
+      <option>--with-gtk=[yes/no/2/3]</option>: For the Gtk+ GUI. Default is no.
+      If both Gtk+2 and 3 are installed, and <quote>yes</quote> is selected,
+      default is 3. Obviously, <xref linkend="gtk2"/> or <xref linkend="gtk3"/>
+      must have been built for this to work.
 @y
-      <option>--with-gtk2=[yes/no]</option>: For the Gtk+2 GUI. If both Gtk+2
-      and 3 are installed, default is no. Notice that the GUI for only one Gtk+
-      version (either 2 or 3) can be built.
+      <option>--with-gtk=[yes/no/2/3]</option>: For the Gtk+ GUI. Default is no.
+      If both Gtk+2 and 3 are installed, and <quote>yes</quote> is selected,
+      default is 3. Obviously, <xref linkend="gtk2"/> or <xref linkend="gtk3"/>
+      must have been built for this to work.
 @z
 
 @x
-      <option>--with-gtk3=[yes/no]</option>: For the Gtk+3 GUI. If both Gtk+2
-      and 3 are installed, default is yes.
+      <option>--with-qt=[yes/no/4/5]</option>: For the Qt GUI. Default is yes,
+      if <xref linkend="qt5"/> is found on the system.
 @y
-      <option>--with-gtk3=[yes/no]</option>: For the Gtk+3 GUI. If both Gtk+2
-      and 3 are installed, default is yes.
-@z
-
-@x
-      <option>--with-qt=[yes/no/4/5]</option>: For the Qt GUI. Default is yes.
-@y
-      <option>--with-qt=[yes/no/4/5]</option>: For the Qt GUI. Default is yes.
+      <option>--with-qt=[yes/no/4/5]</option>: For the Qt GUI. Default is yes,
+      if <xref linkend="qt5"/> is found on the system.
 @z
 
 @x
       <option>--disable-wireshark</option>: Use this switch if you
-      have <application>GTK+</application> installed but do not want to build
+      have <application>Qt</application> installed but do not want to build
       any of the GUIs.
 @y
       <option>--disable-wireshark</option>: Use this switch if you
-      have <application>GTK+</application> installed but do not want to build
+      have <application>Qt</application> installed but do not want to build
       any of the GUIs.
 @z
 
@@ -390,8 +394,8 @@
 @x
         <seg>
           capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
-          mergecap, randpkt, rawshark, reordercap, text2pcap, tshark, wireshark,
-          and wireshark-gtk
+          mergecap, randpkt, rawshark, reordercap, sharkd,
+          text2pcap, tshark, wireshark, and wireshark-gtk (optional)
         </seg>
         <seg>
           libwireshark.so, libwiretap.so, libwscodecs.so (optional),
@@ -404,8 +408,8 @@
 @y
         <seg>
           capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
-          mergecap, randpkt, rawshark, reordercap, text2pcap, tshark, wireshark,
-          wireshark-gtk
+          mergecap, randpkt, rawshark, reordercap, sharkd,
+          text2pcap, tshark, wireshark, wireshark-gtk (optional)
         </seg>
         <seg>
           libwireshark.so, libwiretap.so, libwscodecs.so (optional),

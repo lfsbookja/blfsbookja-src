@@ -84,14 +84,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="fuse2"/>,
+      <xref linkend="fuse3"/>,
       <xref linkend="glib2"/>, and
       <xref linkend="openssh"/>.
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="fuse2"/>,
+      <xref linkend="fuse3"/>,
       <xref linkend="glib2"/>,
       <xref linkend="openssh"/>
     </para>
@@ -136,14 +136,12 @@
 
 @x
       To mount an ssh server you need to be able to log into the server. For
-      example, to mount your home folder on the computer called THINGY on the
-      folder ~/MOUNTPATH (the directory must exist and you must have permissions
-      to write to it):
+      example, to mount your remote home folder to the local ~/MOUNTPATH (the
+      directory must exist and you must have permissions to write to it):
 @y
       To mount an ssh server you need to be able to log into the server. For
-      example, to mount your home folder on the computer called THINGY on the
-      folder ~/MOUNTPATH (the directory must exist and you must have permissions
-      to write to it):
+      example, to mount your remote home folder to the local ~/MOUNTPATH (the
+      directory must exist and you must have permissions to write to it):
 @z
 
 @x

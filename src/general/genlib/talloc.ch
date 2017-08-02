@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY talloc-buildsize     "7.1 MB (with tests)">
+  <!ENTITY talloc-buildsize     "7.7 MB (with tests)">
   <!ENTITY talloc-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY talloc-buildsize     "7.1 MB (テスト込み)">
+  <!ENTITY talloc-buildsize     "7.7 MB (テスト込み)">
   <!ENTITY talloc-time          "0.3 SBU (テスト込み)">
 @z
 

@@ -83,15 +83,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="appstream-glib"/>,
-      <xref linkend="gtk3"/>, and
+      <xref linkend="gtk3"/> and
       <xref linkend="upower"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="appstream-glib"/>,
-      <xref linkend="gtk3"/>,
+      <xref linkend="gtk3"/>.
       <xref linkend="upower"/>
     </para>
 @z
@@ -99,12 +97,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>
+      <xref linkend="docbook-utils"/> and
+      <xref linkend="appstream-glib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>
+      <xref linkend="docbook-utils"/>.
+      <xref linkend="appstream-glib"/>
     </para>
 @z
 

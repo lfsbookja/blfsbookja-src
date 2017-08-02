@@ -184,18 +184,18 @@
 @z
 
 @x
-    <para>If <xref linkend="nss"/> is installed,
-    <filename>/usr/lib/libp11-kit.so</filename> can be used as a drop-in
-    replacement for <filename>/usr/lib/libnssckbi.so</filename> to
+    <para>The <application>p11-kit</application> trust module
+    (<filename>/usr/lib/pkcs11/p11-kit-trust.so</filename>) can be used as a
+    drop-in replacement for <filename>/usr/lib/libnssckbi.so</filename> to
     transparently make the system CAs available to
     <application>NSS</application> aware applications, rather than the static
     list provided by <filename>/usr/lib/libnssckbi.so</filename>. As the
     <systemitem class="username">root</systemitem> user, execute the following
     commands:</para>
 @y
-    <para>If <xref linkend="nss"/> is installed,
-    <filename>/usr/lib/libp11-kit.so</filename> can be used as a drop-in
-    replacement for <filename>/usr/lib/libnssckbi.so</filename> to
+    <para>The <application>p11-kit</application> trust module
+    (<filename>/usr/lib/pkcs11/p11-kit-trust.so</filename>) can be used as a
+    drop-in replacement for <filename>/usr/lib/libnssckbi.so</filename> to
     transparently make the system CAs available to
     <application>NSS</application> aware applications, rather than the static
     list provided by <filename>/usr/lib/libnssckbi.so</filename>. As the

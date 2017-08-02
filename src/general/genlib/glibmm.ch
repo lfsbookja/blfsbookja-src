@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glibmm-buildsize     "228 MB (with tests)">
-  <!ENTITY glibmm-time          "2.6 SBU (with tests)">
+  <!ENTITY glibmm-buildsize     "163 MB (with tests)">
+  <!ENTITY glibmm-time          "2.4 SBU (with tests)">
 @y
-  <!ENTITY glibmm-buildsize     "228 MB (テストスイート込み)">
-  <!ENTITY glibmm-time          "2.6 SBU (テストスイート込み)">
+  <!ENTITY glibmm-buildsize     "163 MB (テストスイート込み)">
+  <!ENTITY glibmm-time          "2.4 SBU (テストスイート込み)">
 @z
 
 @x

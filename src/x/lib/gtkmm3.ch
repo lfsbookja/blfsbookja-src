@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gtkmm3-buildsize     "563 MB (with tests)">
+  <!ENTITY gtkmm3-buildsize     "364 MB (with tests)">
   <!ENTITY gtkmm3-time          "4.4 SBU (with tests)">
 @y
-  <!ENTITY gtkmm3-buildsize     "563 MB (テスト込み)">
+  <!ENTITY gtkmm3-buildsize     "364 MB (テスト込み)">
   <!ENTITY gtkmm3-time          "4.4 SBU (テスト込み)">
 @z
 
