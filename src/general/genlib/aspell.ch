@@ -92,9 +92,9 @@
 @z
 
 @x
-          Aspell dictionaries: <ulink url="https://ftp.gnu.org/gnu/aspell/dict"/>
+          Aspell dictionaries: <ulink url="&gnu-http;/aspell/dict"/>
 @y
-          Aspell 辞書: <ulink url="https://ftp.gnu.org/gnu/aspell/dict"/>
+          Aspell 辞書: <ulink url="&gnu-http;/aspell/dict"/>
 @z
 
 @x

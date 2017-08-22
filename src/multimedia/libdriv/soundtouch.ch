@@ -109,12 +109,12 @@
 
 @x
       <option>--enable-openmp</option>: This switch adds support for running
-      the algorithms parallel in several CPU cores, in systems with multicore
-      processors.
+      the algorithms in parallel across several systems using the external 
+      OpenMP libraries.
 @y
       <option>--enable-openmp</option>: This switch adds support for running
-      the algorithms parallel in several CPU cores, in systems with multicore
-      processors.
+      the algorithms in parallel across several systems using the external 
+      OpenMP libraries.
 @z
 
 @x

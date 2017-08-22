@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY exempi-buildsize     "229 MB (add 21 MB for tests)">
+  <!ENTITY exempi-buildsize     "232 MB (add 20 MB for tests)">
   <!ENTITY exempi-time          "1.2 SBU (add 0.2 SBU for tests)">
 @y
-  <!ENTITY exempi-buildsize     "229 MB (テスト実施時はさらに 21 MB)">
+  <!ENTITY exempi-buildsize     "232 MB (テスト実施時はさらに 20 MB)">
   <!ENTITY exempi-time          "1.2 SBU (テスト実施時はさらに 0.2 SBU)">
 @z
 

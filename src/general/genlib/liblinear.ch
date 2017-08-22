@@ -94,22 +94,6 @@
 @z
 
 @x
-        The <application>liblinear</application> source tarball shown above
-        downloads with the correct name, liblinear-&liblinear-version;.tar.gz,
-        if using a browser such as Firefox. If you prefer to use a command line
-        program such as wget, you normally would obtain
-        v&liblinear-version;.tar.gz. To obtain this package with the proper
-        filename, run:
-@y
-        The <application>liblinear</application> source tarball shown above
-        downloads with the correct name, liblinear-&liblinear-version;.tar.gz,
-        if using a browser such as Firefox. If you prefer to use a command line
-        program such as wget, you normally would obtain
-        v&liblinear-version;.tar.gz. To obtain this package with the proper
-        filename, run:
-@z
-
-@x
       User Notes: <ulink url="&blfs-wiki;/liblinear"/>
 @y
       &UserNotes;: <ulink url="&blfs-wiki;/liblinear"/>

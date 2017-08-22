@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gtk-doc-buildsize     "12.2 MB (with tests)">
-  <!ENTITY gtk-doc-time          "0.3 SBU (with tests)">
+  <!ENTITY gtk-doc-buildsize     "16 MB (with tests)">
+  <!ENTITY gtk-doc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY gtk-doc-buildsize     "12.2 MB (テスト込み)">
-  <!ENTITY gtk-doc-time          "0.3 SBU (テスト込み)">
+  <!ENTITY gtk-doc-buildsize     "16 MB (テスト込み)">
+  <!ENTITY gtk-doc-time          "0.2 SBU (テスト込み)">
 @z
 
 @x
@@ -99,8 +99,9 @@
     <para role="required">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="itstool"/> and
-      <xref linkend="libxslt"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libxslt"/>, and
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -108,7 +109,8 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="libxslt"/>
+      <xref linkend="libxslt"/>,
+      <xref linkend="python2"/>
     </para>
 @z
 
@@ -117,32 +119,22 @@
     <para role="optional">
       <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
       <xref linkend="fop"/> (XML PDF support),
+      <xref linkend="highlight"/>,
       <xref linkend="glib2"/> (for the test suite),
-      <ulink url="&gnome-download-http;/gnome-doc-utils/">
-      GNOME Doc Utils</ulink> and
-      <xref linkend="which"/> (required for the test suite and gtk-doc documentation),
-      <xref linkend="openjade"/> with
-      <xref linkend="sgml-dtd"/> and
-      <xref linkend="docbook-dsssl"/>
-      (SGML support, not actively maintained any more),
-      <xref linkend="python2"/> (builds gtkdoc-depscan), and
-      <xref linkend="rarian"/>
+      <ulink url="&gnome-download-http;/gnome-doc-utils/">GNOME Doc Utils</ulink> and
+      <xref linkend="which"/> (required for the test suite and gtk-doc documentation), and
+      <ulink url="https://pypi.python.org/pypi/six">six</ulink>(for some tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
       <xref linkend="fop"/> (XML PDF サポート),
+      <xref linkend="highlight"/>,
       <xref linkend="glib2"/> (テストスイートのため),
-      <ulink url="&gnome-download-http;/gnome-doc-utils/">
-      GNOME Doc Utils</ulink>,
+      <ulink url="&gnome-download-http;/gnome-doc-utils/">GNOME Doc Utils</ulink>,
       <xref linkend="which"/> (テストスイートと gtk-doc 文書生成時に必要),
-      <xref linkend="openjade"/> with
-      <xref linkend="sgml-dtd"/> and
-      <xref linkend="docbook-dsssl"/>
-      (SGML support, not actively maintained any more),
-      <xref linkend="python2"/> (builds gtkdoc-depscan),
-      <xref linkend="rarian"/>
+      <ulink url="https://pypi.python.org/pypi/six">six</ulink>(テストにて必要とするものがある)
     </para>
 @z
 
@@ -200,17 +192,45 @@
 @z
 
 @x
-        <seg>gtkdoc-check,  gtkdoc-depscan, gtkdoc-fixxref,      gtkdocize,
-        gtkdoc-mkdb,   gtkdoc-mkhtml,  gtkdoc-mkman,        gtkdoc-mkpdf,
-        gtkdoc-mktmpl, gtkdoc-rebase, gtkdoc-scan,  and gtkdoc-scangobj</seg>
+        <seg>gtkdocize,
+        gtkdoc-check,  
+        gtkdoc-depscan, 
+        gtkdoc-fixxref,
+        gtkdoc-mkdb,   
+        gtkdoc-mkhtml,  
+        gtkdoc-mkman,        
+        gtkdoc-mkpdf,
+        gtkdoc-rebase, 
+        gtkdoc-scan, and 
+        gtkdoc-scangobj</seg>
+        
         <seg>None</seg>
-        <seg>/usr/share/{gtk-doc,help/*/gtk-doc-manual,sgml/gtk-doc}</seg>
+        
+        <seg>/usr/lib/cmake/GtkDoc, 
+        /usr/share/gtk-doc, and
+        /usr/share/help/*/gtk-doc-manual
+        </seg>
+      </seglistitem>
 @y
-        <seg>gtkdoc-check,  gtkdoc-depscan, gtkdoc-fixxref,      gtkdocize,
-        gtkdoc-mkdb,   gtkdoc-mkhtml,  gtkdoc-mkman,        gtkdoc-mkpdf,
-        gtkdoc-mktmpl, gtkdoc-rebase, gtkdoc-scan,  gtkdoc-scangobj</seg>
+        <seg>gtkdocize,
+        gtkdoc-check,  
+        gtkdoc-depscan, 
+        gtkdoc-fixxref,
+        gtkdoc-mkdb,   
+        gtkdoc-mkhtml,  
+        gtkdoc-mkman,        
+        gtkdoc-mkpdf,
+        gtkdoc-rebase, 
+        gtkdoc-scan,
+        gtkdoc-scangobj</seg>
+        
         <seg>&None;</seg>
-        <seg>/usr/share/{gtk-doc,help/*/gtk-doc-manual,sgml/gtk-doc}</seg>
+        
+        <seg>/usr/lib/cmake/GtkDoc, 
+        /usr/share/gtk-doc,
+        /usr/share/help/*/gtk-doc-manual
+        </seg>
+      </seglistitem>
 @z
 
 @x
@@ -220,12 +240,12 @@
 @z
 
 @x
-          <para>these are all shell, <application>Perl</application>, or
+          <para>these are all shell, or          
           <application>Python</application> scripts used by
           package <filename>Makefile</filename> scripts to generate
           documentation for the package being built.</para>
 @y
-          <para>these are all shell, <application>Perl</application>, or
+          <para>these are all shell, or          
           <application>Python</application> scripts used by
           package <filename>Makefile</filename> scripts to generate
           documentation for the package being built.</para>

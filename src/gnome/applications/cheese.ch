@@ -121,18 +121,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
+<!--      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase> -->
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
+      <ulink url="&appstream-glib-url;">appstream-glib</ulink>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV </ulink>, and
       <ulink url="&gnome-download-http;/nautilus-sendto/">Nautilus SendTo</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase>
+<!--      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase> -->
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
+      <ulink url="&appstream-glib-url;">appstream-glib</ulink>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV </ulink>,
       <ulink url="&gnome-download-http;/nautilus-sendto/">Nautilus SendTo</ulink>
     </para>

@@ -7,7 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/general/genlib
 CHANGE_FILES = \
-	appstream-glib.ch \
 	apr.ch \
 	apr-util.ch \
 	aspell.ch \

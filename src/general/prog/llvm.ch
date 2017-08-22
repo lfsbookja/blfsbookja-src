@@ -171,7 +171,7 @@
       <xref linkend="valgrind"/>,
       <xref linkend="zip"/>,
       <ulink url="http://www.ocaml.org/">OCaml</ulink>, and
-      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -183,7 +183,7 @@
       <xref linkend="valgrind"/>,
       <xref linkend="zip"/>,
       <ulink url="http://www.ocaml.org/">OCaml</ulink>,
-      <ulink url="http://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
     </para>
 @z
 

@@ -112,14 +112,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/></para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/></para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -156,23 +148,25 @@
 @z
 
 @x
-    <para>If you wish to install the API documentation you must have <xref
-    linkend="doxygen"/> installed, then change directories into the <filename
-    class='directory'>documentation</filename> directory of the source tree and
-    issue the command <command>doxygen doxygen.cfg</command>. Then as the
-    <systemitem class="username">root</systemitem> user copy the <filename
-    class='directory'>documentation/temp/tidylib_api</filename> directory to
-    <filename
-    class='directory'>/usr/share/doc/tidy-&tidy-html5-version;.</filename></para>
+    <title>Command Explanations</title>
 @y
-    <para>If you wish to install the API documentation you must have <xref
-    linkend="doxygen"/> installed, then change directories into the <filename
-    class='directory'>documentation</filename> directory of the source tree and
-    issue the command <command>doxygen doxygen.cfg</command>. Then as the
-    <systemitem class="username">root</systemitem> user copy the <filename
-    class='directory'>documentation/temp/tidylib_api</filename> directory to
-    <filename
-    class='directory'>/usr/share/doc/tidy-&tidy-html5-version;.</filename></para>
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      build the release library without any debug `assert` in the code.
+@y
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      build the release library without any debug `assert` in the code.
+@z
+
+@x
+      <parameter>-DBUILD_TAB2SPACE=ON</parameter>: This switch is used to enable
+      building the <command>tab2space</command> utility.
+@y
+      <parameter>-DBUILD_TAB2SPACE=ON</parameter>: This switch is used to enable
+      building the <command>tab2space</command> utility.
 @z
 
 @x

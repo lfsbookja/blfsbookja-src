@@ -136,11 +136,11 @@
 
 @x
       To mount an ssh server you need to be able to log into the server. For
-      example, to mount your remote home folder to the local ~/MOUNTPATH (the
+      example, to mount your remote home folder to the local ~/examplepath (the
       directory must exist and you must have permissions to write to it):
 @y
       To mount an ssh server you need to be able to log into the server. For
-      example, to mount your remote home folder to the local ~/MOUNTPATH (the
+      example, to mount your remote home folder to the local ~/examplepath (the
       directory must exist and you must have permissions to write to it):
 @z
 

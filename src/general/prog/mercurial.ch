@@ -103,7 +103,7 @@
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
     <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
-    <ulink url="http://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
+    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
     <ulink url="http://pygments.org/">pygments</ulink>, and
     <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
 @y
@@ -116,8 +116,8 @@
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
     <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
-    <ulink url="http://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
-    <ulink url="http://pygments.org/">pygments</ulink>, and
+    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
+    <ulink url="http://pygments.org/">pygments</ulink>,
     <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
 @z
 
@@ -193,7 +193,7 @@
         </seg>
         <seg>
           /etc/mercurial and
-          /usr/lib/python&python2-majorver;/site-packages/{hgext,hgext3rd,mercurial}
+          /usr/lib/python&python2-majorver;/site-packages/{hgdemandimport,hgext,hgext3rd,mercurial}
         </seg>
 @y
         <seg>
@@ -204,8 +204,8 @@
           /usr/lib/python&python2-majorver;/site-packages/mercurial
         </seg>
         <seg>
-          /etc/mercurial and
-          /usr/lib/python&python2-majorver;/site-packages/{hgext,hgext3rd,mercurial}
+          /etc/mercurial,
+          /usr/lib/python&python2-majorver;/site-packages/{hgdemandimport,hgext,hgext3rd,mercurial}
         </seg>
 @z
 

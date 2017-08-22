@@ -122,7 +122,7 @@
       <xref linkend="python3"/>, with
       <xref linkend="pygobject3"/>,
       <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>, and
-      <ulink url="http://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
+      <ulink url="https://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
       (for part of the testsuite).
     </para>
 @y
@@ -132,7 +132,7 @@
       <xref linkend="python3"/>, with
       <xref linkend="pygobject3"/>,
       <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>, and
-      <ulink url="http://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
+      <ulink url="https://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
       (for part of the testsuite).
     </para>
 @z
@@ -189,9 +189,9 @@
 @z
 
 @x
-    <title>Configuring your kernel for UPower</title>
+    <title>Configuring UPower</title>
 @y
-    <title>UPower に対するカーネル設定</title>
+    <title>Configuring UPower</title>
 @z
 
 @x
@@ -215,12 +215,12 @@
 @z
 
 @x
-        To start the <command>upowerd</command> daemon at boot,
+        To start the <command>UPower</command> service at boot,
         enable the previously installed systemd unit by
         running the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
-        To start the <command>upowerd</command> daemon at boot,
+        To start the <command>UPower</command> service at boot,
         enable the previously installed systemd unit by
         running the following command as the
         <systemitem class="username">root</systemitem> user:
@@ -233,7 +233,8 @@
 @z
 
 @x
-      <segtitle>Installed Program<phrase revision="systemd">s</phrase></segtitle>
+      <segtitle>Installed Program<!--
+See below... <phrase revision="systemd">s</phrase>--></segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
@@ -244,10 +245,11 @@
 
 @x
         <seg>
-          upower<phrase revision="systemd"> and upowerd</phrase>
-<!-- Not sure upowerd should be listed. Isn't it in /usr/libexec for systemd
-too? Normally, we do not list executables, which are not supposed to be run
-by a user -->
+          upower
+<!-- <phrase revision="systemd"> and upowerd</phrase>
+Upowerd should not be listed, as it is in /usr/libexec, and is not supposed
+to be run by a user. Furthermore, upowerd is also in sysv, and there is no
+reason so single out systemd here. -->
         </seg>
         <seg>
           libupower-glib.so
@@ -259,10 +261,11 @@ by a user -->
         </seg>
 @y
         <seg>
-          upower<phrase revision="systemd">  upowerd</phrase>
-<!-- Not sure upowerd should be listed. Isn't it in /usr/libexec for systemd
-too? Normally, we do not list executables, which are not supposed to be run
-by a user -->
+          upower
+<!-- <phrase revision="systemd"> and upowerd</phrase>
+Upowerd should not be listed, as it is in /usr/libexec, and is not supposed
+to be run by a user. Furthermore, upowerd is also in sysv, and there is no
+reason so single out systemd here. -->
         </seg>
         <seg>
           libupower-glib.so

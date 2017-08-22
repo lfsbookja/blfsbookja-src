@@ -35,6 +35,7 @@ CHANGE_FILES = \
 	openjpeg.ch      \
 	openjpeg2.ch     \
 	pixman.ch        \
+	potrace.ch       \
 	poppler.ch       \
 	qpdf.ch
 

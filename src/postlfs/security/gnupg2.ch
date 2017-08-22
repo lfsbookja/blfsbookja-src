@@ -282,16 +282,16 @@
 
 @x
         <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13,
-        gpg-agent, gpg-connect-agent, gpg, gpg2, gpgconf, gpgparsemail, 
-        gpgscm, gpgsm, gpgtar, gpgv, gpgv2, igpg-zip, kbxutil, symcryptrun, 
+        gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
+        gpgscm, gpgsm, gpgtar, gpgv, igpg-zip, kbxutil, symcryptrun, 
         and watchgnupg</seg>
         <seg>None</seg>
         <seg>/usr/share/doc/gnupg-&gnupg2-version; and
         /usr/share/gnupg</seg>
 @y
         <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13,
-        gpg-agent, gpg-connect-agent, gpg, gpg2, gpgconf, gpgparsemail, 
-        gpgscm, gpgsm, gpgtar, gpgv, gpgv2, igpg-zip, kbxutil, symcryptrun, 
+        gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
+        gpgscm, gpgsm, gpgtar, gpgv, igpg-zip, kbxutil, symcryptrun, 
         watchgnupg</seg>
         <seg>&None;</seg>
         <seg>/usr/share/doc/gnupg-&gnupg2-version;,
@@ -423,14 +423,6 @@
 @z
 
 @x gpgv
-          <para>(optional) is a symlink to <command>gpgv2</command> for
-          compatibility with the first version of GnuPG.</para>
-@y
-          <para>(optional) is a symlink to <command>gpgv2</command> for
-          compatibility with the first version of GnuPG.</para>
-@z
-
-@x gpgv2
           <para>is a verify only version of <command>gpg2</command>.</para>
 @y
           <para>is a verify only version of <command>gpg2</command>.</para>

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "405 MB (with optional dependencies and documentation)">
-  <!ENTITY git-time          "0.9 SBU (add 2.1 SBU for building documentation, add 4.2 SBU for tests)">
+  <!ENTITY git-buildsize     "542 MB (with optional dependencies and documentation, add 24MB if building the docs)">
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4, add 2.1 SBU if building documentation, add 1.4 SBU for tests with parallelism=4)">
 @y
-  <!ENTITY git-buildsize     "405 MB (任意依存パッケージとドキュメント込み)">
-  <!ENTITY git-time          "0.9 SBU (ドキュメント込みでさらに 2.1 SBU, テスト込みでさらに 4.2 SBU)">
+  <!ENTITY git-buildsize     "542 MB (任意依存パッケージとドキュメント込み, ドキュメント構築時はさらに 24 MB)">
+  <!ENTITY git-time          "0.3 SBU (parallelism=4 処理時, ドキュメント構築時はさらに 2.1 SBU, parallelism=4 でのテスト込みでさらに 1.4 SBU)">
 @z
 
 @x
@@ -155,7 +155,9 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/>,
+      <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
+      linkend="pcre"/>), in either case configured with
+      <literal>--enable-jit</literal>,
       <xref linkend="subversion"/> with Perl bindings (for <command>git svn</command>),
       <xref linkend="tk"/> (gitk, a simple <application>Git</application>
       repository viewer, uses <application>Tk</application> at runtime), and
@@ -164,9 +166,12 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/>,
+      <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
+      linkend="pcre"/>), in either case configured with
+      <literal>--enable-jit</literal>,
       <xref linkend="subversion"/> Perl バインディング込み (<command>git svn</command> コマンドのため),
-      <xref linkend="tk"/> (簡易な <application>Git</application> リポジトリビューワー gitk が実行時に <application>Tk</application> を必要とする),
+      <xref linkend="tk"/> (gitk, a simple <application>Git</application>
+      repository viewer, uses <application>Tk</application> at runtime),
       <xref linkend="valgrind"/>
     </para>
 @z
@@ -303,11 +308,23 @@
 @z
 
 @x
-      <option>--with-libpcre</option>: Use this switch if
-      <application>PCRE</application> is installed.
+      <option>--with-libpcre2</option>: Use this switch if
+      <application>PCRE2</application> is installed and has been built with
+      the non-default JIT enabled.
 @y
-      <option>--with-libpcre</option>: Use this switch if
-      <application>PCRE</application> is installed.
+      <option>--with-libpcre2</option>: Use this switch if
+      <application>PCRE2</application> is installed and has been built with
+      the non-default JIT enabled.
+@z
+
+@x
+      <option>--with-libpcre2</option>: As an alternative to PCRE2, use this
+      switch if the deprecated <application>PCRE</application> is installed
+      and has been built with the non-default JIT enabled.
+@y
+      <option>--with-libpcre2</option>: As an alternative to PCRE2, use this
+      switch if the deprecated <application>PCRE</application> is installed
+      and has been built with the non-default JIT enabled.
 @z
 
 @x

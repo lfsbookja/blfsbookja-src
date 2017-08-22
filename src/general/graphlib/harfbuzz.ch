@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "37 MB (add 20 MB for tests)">
-  <!ENTITY harfbuzz-time          "0.3 SBU (add 0.3 SBU for tests)">
+  <!ENTITY harfbuzz-buildsize     "30 MB (add 20 MB for tests)">
+  <!ENTITY harfbuzz-time          "0.3 SBU (add 0.2 SBU for tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "37 MB (テスト実施時はさらに 20 MB)">
-  <!ENTITY harfbuzz-time          "0.3 SBU (テスト実施時はさらに 0.3 SBU)"> 
+  <!ENTITY harfbuzz-buildsize     "30 MB (テスト実施時はさらに 20 MB)">
+  <!ENTITY harfbuzz-time          "0.3 SBU (テスト実施時はさらに 0.2 SBU)"> 
 @z
 
 @x

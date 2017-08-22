@@ -232,7 +232,6 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/general/genlib
 CHANGE_FILES = \
-	appstream-glib.ch \
 	apr.ch \
 	apr-util.ch \
 	aspell.ch \

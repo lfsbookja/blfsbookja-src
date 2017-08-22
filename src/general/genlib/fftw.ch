@@ -160,7 +160,8 @@
           fftw-wisdom and fftw-wisdom-to-conf
         </seg>
         <seg>
-          libfftw3.so and libfftw3_threads.so
+          libfftw3.so and libfftw3_threads.so, or libfftw3f.so and
+          libfftw3f_threads.so
         </seg>
         <seg>
           None
@@ -170,7 +171,7 @@
           fftw-wisdom, fftw-wisdom-to-conf
         </seg>
         <seg>
-          libfftw3.so, libfftw3_threads.so
+          libfftw3.so と libfftw3_threads.so、または libfftw3f.so と libfftw3f_threads.so
         </seg>
         <seg>
           &None;

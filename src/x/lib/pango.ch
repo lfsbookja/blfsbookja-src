@@ -125,15 +125,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cantarell-fonts"/> (for tests),
-      <xref linkend="gtk-doc"/>, and
+      <xref linkend="cantarell-fonts"/> (for tests), and
       <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cantarell-fonts"/> (テストのため),
-      <xref linkend="gtk-doc"/>,
       <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @z
@@ -263,11 +261,11 @@
 @z
 
 @x pango-view
-            renders a given file through <application>Pango</application> for
-            viewing purposes.
+            renders a given text file through <application>Pango</application>
+            for viewing purposes.
 @y
-            renders a given file through <application>Pango</application> for
-            viewing purposes.
+            renders a given text file through <application>Pango</application>
+            for viewing purposes.
 @z
 
 @x libpango-1.0.so

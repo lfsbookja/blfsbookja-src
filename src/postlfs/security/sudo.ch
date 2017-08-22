@@ -96,7 +96,7 @@
       <command>sendmail</command> command),
       <ulink url="http://www.openafs.org/">AFS</ulink>,
       <ulink url="http://www.fwtk.org/">FWTK</ulink>, and
-      <ulink url="http://sourceforge.net/projects/opie/files/">Opie</ulink>
+      <ulink url="&sourceforge-dl;/opie/">Opie</ulink>
 <!--  <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>-->
     </para>
 @y
@@ -105,10 +105,11 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="server-mail"/> (<command>sendmail</command> コマンドを提供するもの),
+      <xref linkend="server-mail"/> (that provides a
+      <command>sendmail</command> command),
       <ulink url="http://www.openafs.org/">AFS</ulink>,
       <ulink url="http://www.fwtk.org/">FWTK</ulink>,
-      <ulink url="http://sourceforge.net/projects/opie/files/">Opie</ulink>
+      <ulink url="&sourceforge-dl;/opie/">Opie</ulink>
 <!--  <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>-->
     </para>
 @z

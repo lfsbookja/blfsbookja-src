@@ -113,7 +113,7 @@
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="valgrind"/>,
-      <ulink url="https://ftp.gnu.org/gnu/intlfonts/">intlfonts</ulink>,
+      <ulink url="&gnu-http;/intlfonts/">intlfonts</ulink>,
       <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>,
       <ulink url="http://www.nongnu.org/m17n/">libotf</ulink> and
       <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
@@ -141,12 +141,12 @@
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="valgrind"/>,
-      <ulink url="https://ftp.gnu.org/gnu/intlfonts/">intlfonts</ulink>,
+      <ulink url="&gnu-http;/intlfonts/">intlfonts</ulink>,
       <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>,
       <ulink url="http://www.nongnu.org/m17n/">libotf</ulink> and
       <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
       display such complex scripts as Indic and Khmer, and also for scripts
-      that require Arabic shaping support (Arabic and Farsi), and
+      that require Arabic shaping support (Arabic and Farsi),
       <ulink url="&xorg-download-http;/lib/">libXaw3d</ulink>
     </para>
 @z

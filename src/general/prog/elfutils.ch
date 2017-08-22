@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY elfutils-buildsize     "77 MB (with tests)">
-  <!ENTITY elfutils-time          "1.5 SBU (with tests)">
+  <!ENTITY elfutils-buildsize     "78 MB (with tests)">
+  <!ENTITY elfutils-time          "0.9 SBU (with tests)">
 @y
-  <!ENTITY elfutils-buildsize     "77 MB (テスト込み)">
-  <!ENTITY elfutils-time          "1.5 SBU (テスト込み)">
+  <!ENTITY elfutils-buildsize     "78 MB (テスト込み)">
+  <!ENTITY elfutils-time          "0.9 SBU (テスト込み)">
 @z
 
 @x

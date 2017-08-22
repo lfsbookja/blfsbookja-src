@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY p11-kit-buildsize     "173 MB (with tests)">
-  <!ENTITY p11-kit-time          "0.9 SBU (with tests)">
+  <!ENTITY p11-kit-buildsize     "87 MB (an additional 104 MB for tests)">
+  <!ENTITY p11-kit-time          "0.5 SBU (an additional 0.2 SBU for tests)">
 @y
-  <!ENTITY p11-kit-buildsize     "173 MB (テスト込み)">
-  <!ENTITY p11-kit-time          "0.9 SBU (テスト込み)">
+  <!ENTITY p11-kit-buildsize     "87 MB (テスト実施時はさらに 104 MB)">
+  <!ENTITY p11-kit-time          "0.5 SBU (テスト実施時はさらに 0.2 SBU)">
 @z
 
 @x
@@ -134,9 +134,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. The test-token
+      test is known to fail.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      test-token というテストは失敗します。
 @z
 
 @x

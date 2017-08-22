@@ -98,13 +98,15 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/> and
-      <xref linkend="appstream-glib"/>
+<!--      <xref linkend="appstream-glib"/> -->
+      <ulink url="&appstream-glib-url;">appstream-glib</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>.
-      <xref linkend="appstream-glib"/>
+      <xref linkend="docbook-utils"/>,
+<!--      <xref linkend="appstream-glib"/> -->
+      <ulink url="&appstream-glib-url;">appstream-glib</ulink>
     </para>
 @z
 

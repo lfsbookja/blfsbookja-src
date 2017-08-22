@@ -289,6 +289,8 @@ CHANGE_FILES = \
 	python3.ch        \
 	ruby.ch           \
 	scons.ch          \
+	six.ch            \
+	scour.ch          \
 	slang.ch          \
 	subversion.ch     \
 	svnserver.ch      \
