@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY mariadb-buildsize     "1.3 GB">
-  <!ENTITY mariadb-time          "7.6 SBU (with parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.5 SBU for tests)">
 @y
   <!ENTITY mariadb-buildsize     "1.3 GB">
-  <!ENTITY mariadb-time          "7.6 SBU (with parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.5 SBU for tests)">
 @z
 
 @x

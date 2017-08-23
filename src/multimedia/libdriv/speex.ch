@@ -171,18 +171,18 @@
 @z
 
 @x
-        <seg>speexdec and speexenc</seg>
+        <seg>None</seg>
         <seg>libspeex.so and libspeexdsp.so</seg>
         <seg>
-          /usr/share/doc/speex-&speex-version; and
-          /usr/share/doc/speexdsp-&speexdsp-version;
+          /usr/include/speex and
+          /usr/share/doc/speex-&speex-version; 
         </seg>
 @y
-        <seg>speexdec, speexenc</seg>
+        <seg>&None;</seg>
         <seg>libspeex.so, libspeexdsp.so</seg>
         <seg>
-          /usr/share/doc/speex-&speex-version;,
-          /usr/share/doc/speexdsp-&speexdsp-version;
+          /usr/include/speex,
+          /usr/share/doc/speex-&speex-version; 
         </seg>
 @z
 
