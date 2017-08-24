@@ -105,8 +105,9 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="valgrind"/>, and
+      <!-- DotGNU has been decommisioned. Look again for next  libidn version. -->
       <ulink url="http://www.gnu.org/software/dotgnu/">DotGNU Portable.NET</ulink> or
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>
+      <ulink url="http://www.mono-project.com/">Mono</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -116,8 +117,9 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="valgrind"/>,
+      <!-- DotGNU has been decommisioned. Look again for next  libidn version. -->
       <ulink url="http://www.gnu.org/software/dotgnu/">DotGNU Portable.NET</ulink> または
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>
+      <ulink url="http://www.mono-project.com/">Mono</ulink>
     </para>
 @z
 
