@@ -235,12 +235,14 @@
 @x
       To test the results, issue: <command>make check-all</command>. Tests are
       run using the maximum number of processors/threads available.
-      Note that the Address Sanitizer tests are known to fail.
+      Note that the Address Sanitizer tests are known to fail, and that
+      19 tests fail because of the removal of an obsolete header.
 <!--  Still true for v 3.9.1 -->
 @y
       To test the results, issue: <command>make check-all</command>. Tests are
       run using the maximum number of processors/threads available.
-      Note that the Address Sanitizer tests are known to fail.
+      Note that the Address Sanitizer tests are known to fail, and that
+      19 tests fail because of the removal of an obsolete header.
 <!--  Still true for v 3.9.1 -->
 @z
 

@@ -129,11 +129,13 @@
 @z
 
 @x
-      To check the results, issue <command>make check</command>.
-      The python tests fail due to missing files.
+      To check the results, issue <command>make check</command>. 
+      <!-- The python tests fail due to missing files. - Not applicable
+      when testing for 8.1 -->
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      python のテストはファイルがないため失敗します。
+      <!-- The python tests fail due to missing files. - Not applicable
+      when testing for 8.1 -->
 @z
 
 @x

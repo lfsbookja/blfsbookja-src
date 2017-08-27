@@ -15,12 +15,14 @@ CHANGE_FILES = \
 	libevent.ch        \
 	libndp.ch          \
 	libnl.ch           \
+	libnsl.ch          \
 	libpcap.ch         \
 	libsoup.ch         \
 	libtirpc.ch        \
 	neon.ch            \
 	netlibs.ch         \
 	nghttp2.ch         \
+	rpcsvc-proto.ch    \
 	serf.ch            \
 	uhttpmock.ch
 

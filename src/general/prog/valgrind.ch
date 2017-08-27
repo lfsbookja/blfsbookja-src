@@ -130,19 +130,19 @@
 
 @x
        To run the tests for this package, valgrind requires a version of the
-       /lib/ld-2.24.so (or later) library with debugging symbols present.
+       /lib/ld-2.26.so (or later) library with debugging symbols present.
        Normally in LFS these debugging symbols are stripped at the end of
        Chapter 6. To get this library, glibc must be rebuilt with the current
        glibc version using the same compiler that was used to build LFS. The
-       ld.so can then be renamed to ld-2.24.so.dbg and copied to /lib.
+       ld.so can then be renamed to ld-2.26.so.dbg and copied to /lib.
        Then a symlink needs to be changed:</para>
 @y
        To run the tests for this package, valgrind requires a version of the
-       /lib/ld-2.24.so (or later) library with debugging symbols present.
+       /lib/ld-2.26.so (or later) library with debugging symbols present.
        Normally in LFS these debugging symbols are stripped at the end of
        Chapter 6. To get this library, glibc must be rebuilt with the current
        glibc version using the same compiler that was used to build LFS. The
-       ld.so can then be renamed to ld-2.24.so.dbg and copied to /lib.
+       ld.so can then be renamed to ld-2.26.so.dbg and copied to /lib.
        Then a symlink needs to be changed:</para>
 @z
 

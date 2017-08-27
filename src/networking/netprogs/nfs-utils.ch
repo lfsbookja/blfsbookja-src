@@ -94,13 +94,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="sqlite"/> and
-
-      <phrase revision="sysv"><ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink></phrase>
-      
+      <xref linkend="lvm2"/> (libdevmapper for NFSv4 support),
       <phrase revision="systemd"><xref linkend="libnfsidmap"/></phrase>
-      
+      <phrase revision="sysv"><ulink
+      url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink></phrase>
       (for NFSv4 support),
+      <xref linkend="libnsl"/> (for NIS client support),
+      <xref linkend="sqlite"/>,
+      <phrase revision="sysv">
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink>
+      (for NFSv4 support),</phrase>
       <xref linkend="mitkrb"/> or
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink> (for GSS and RPC security support) and
@@ -110,13 +113,16 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="sqlite"/> and
-
-      <phrase revision="sysv"><ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink></phrase>
-      
+      <xref linkend="lvm2"/> (libdevmapper for NFSv4 support),
       <phrase revision="systemd"><xref linkend="libnfsidmap"/></phrase>
-      
+      <phrase revision="sysv"><ulink
+      url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink></phrase>
       (for NFSv4 support),
+      <xref linkend="libnsl"/> (for NIS client support),
+      <xref linkend="sqlite"/>,
+      <phrase revision="sysv">
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink>
+      (for NFSv4 support),</phrase>
       <xref linkend="mitkrb"/> or
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink> (for GSS and RPC security support) and

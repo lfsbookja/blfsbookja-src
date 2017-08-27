@@ -117,7 +117,7 @@
       <xref linkend="libglade"/>,
       <xref linkend="gs"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="qt5"/>,
+<!-- Needs Qt4:      <xref linkend="qt5"/>,-->
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
       <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
@@ -130,7 +130,7 @@
       <xref linkend="libglade"/>,
       <xref linkend="gs"/>,
       <xref linkend="gtk2"/>,
-      <xref linkend="qt5"/>,
+<!-- Needs Qt4:      <xref linkend="qt5"/>,-->
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
       <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
