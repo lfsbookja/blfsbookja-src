@@ -79,10 +79,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="avahi"/>,
+<!-- zeroconf support has been removed: see NEWS file
+      <xref linkend="avahi"/>,-->
       <xref linkend="gcr"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="iso-codes"/>,
+      <xref linkend="json-glib"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libwnck"/>, and
       <xref linkend="webkitgtk"/>
@@ -90,10 +92,12 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="avahi"/>,
+<!-- zeroconf support has been removed: see NEWS file
+      <xref linkend="avahi"/>,-->
       <xref linkend="gcr"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="iso-codes"/>,
+      <xref linkend="json-glib"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libwnck"/>,
       <xref linkend="webkitgtk"/>
@@ -109,6 +113,20 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="nss"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="lsb-release"/> and
+      <ulink url="https://github.com/GNOME/libhttpseverywhere">libhttpseverywhere</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="lsb-release"/>,
+      <ulink url="https://github.com/GNOME/libhttpseverywhere">libhttpseverywhere</ulink>
     </para>
 @z
 
@@ -149,6 +167,16 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      An already active graphical session with a bus address is necessary
+      to execute the test suite.  Some tests may fail for unknown reasons.
+      To test the results, run:
+@y
+      テストスイートを実行するには、バスアドレス上にアクティブなグラフィカルセッションがあらかじめ存在していることが必要です。
+      なおテストに失敗するものもありますが、理由は不明です。
+      テストを実行するには以下を実行します。
 @z
 
 @x
