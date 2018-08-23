@@ -128,7 +128,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
       <xref linkend="libidn"/> or 
-      <ulink url="https://www.gnu.org/software/libidn/libidn2/manual/libidn2.html">libidn2</ulink>,
+      <xref linkend="libidn2"/>
       <xref linkend="net-tools"/> (used during the test suite),
       <xref linkend="texlive"/> or <xref linkend="tl-installer"/>,
       <xref linkend="unbound"/> (to build the DANE library),
@@ -144,14 +144,14 @@
       <xref linkend="doxygen"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
-      <xref linkend="libidn"/> or 
-      <ulink url="https://www.gnu.org/software/libidn/libidn2/manual/libidn2.html">libidn2</ulink>,
+      <xref linkend="libidn"/> または
+      <xref linkend="libidn2"/>
       <xref linkend="net-tools"/> (used during the test suite),
       <xref linkend="texlive"/> or <xref linkend="tl-installer"/>,
       <xref linkend="unbound"/> (to build the DANE library),
       <xref linkend="valgrind"/> (used during the test suite),
       <ulink url="&gnu-http;/autogen/">autogen</ulink>,
-      <ulink url="https://cmocka.org/">cmocka</ulink> and
+      <ulink url="https://cmocka.org/">cmocka</ulink>,
       <ulink url="http://ftp.debian.org/debian/pool/main/d/datefudge/">datefudge</ulink> (used during the test suite if the DANE library is built), and
       <ulink url="&sourceforge-dl;/trousers/">Trousers</ulink> (Trusted Platform Module support)
     </para>
@@ -255,11 +255,11 @@
         </seg>
         <seg>
           libgnutls.so, libgnutls-dane.so, libgnutlsxx.so,
-          libgnutls-openssl.so, and
-          /usr/lib/guile/2.0/guile-gnutls-v-2.so
+          libgnutls-openssl.so (optional), and
+          /usr/lib/guile/2.2/guile-gnutls-v-2.so
         </seg>
         <seg>
-          /usr/{include,share/gtk-doc/html,share/guile/site/2.0}/gnutls
+          /usr/{include,share/gtk-doc/html,share/guile/site/2.2}/gnutls
         </seg>
 @y
         <seg>
@@ -268,11 +268,11 @@
         </seg>
         <seg>
           libgnutls.so, libgnutls-dane.so, libgnutlsxx.so,
-          libgnutls-openssl.so,
-          /usr/lib/guile/2.0/guile-gnutls-v-2.so
+          libgnutls-openssl.so （任意ビルド）,
+          /usr/lib/guile/2.2/guile-gnutls-v-2.so
         </seg>
         <seg>
-          /usr/{include,share/gtk-doc/html,share/guile/site/2.0}/gnutls
+          /usr/{include,share/gtk-doc/html,share/guile/site/2.2}/gnutls
         </seg>
 @z
 

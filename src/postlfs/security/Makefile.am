@@ -7,7 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/postlfs/security
 CHANGE_FILES = \
-	cacerts.ch         \
 	consolekit.ch      \
 	cracklib.ch        \
 	cryptsetup.ch      \
@@ -22,12 +21,12 @@ CHANGE_FILES = \
 	liboauth.ch        \
 	libpwquality.ch    \
 	linux-pam.ch       \
+	make-ca.ch         \
 	mitkrb.ch          \
 	nessus.ch          \
 	nettle.ch          \
 	nss.ch             \
 	openssh.ch         \
-	openssl.ch         \
 	openssl10.ch       \
 	p11-kit.ch         \
 	polkit.ch          \

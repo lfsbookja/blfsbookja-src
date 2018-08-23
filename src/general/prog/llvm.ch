@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "1.8 GB (with Clang, add 8.2 GB for tests)">
-  <!ENTITY llvm-time          "19 SBU (with Clang and parallelism=4, add 14 SBU for tests using 12 cores)">
+  <!ENTITY llvm-buildsize     "2.8 GB (with Clang, add 10.8 GB for tests)">
+  <!ENTITY llvm-time          "29 SBU (with Clang and parallelism=4, add 10 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "1.8 GB (with Clang, add 8.2 GB for tests)">
-  <!ENTITY llvm-time          "19 SBU (with Clang and parallelism=4, add 14 SBU for tests using 12 cores)">
+  <!ENTITY llvm-buildsize     "2.8 GB (with Clang, add 10.8 GB for tests)">
+  <!ENTITY llvm-time          "29 SBU (with Clang and parallelism=4, add 10 SBU for tests)">
 @z
 
 @x
@@ -49,12 +49,16 @@
       The optional <application>Clang</application> and <application>Compiler
       RT</application> packages provide new C, C++, Objective C and Objective
       C++ front-ends and runtime libraries for the
-      <application>LLVM</application>.
+      <application>LLVM</application> and are required by some packages which
+      use <application>Rust</application>, for example
+      <application>firefox</application>.
 @y
       The optional <application>Clang</application> and <application>Compiler
       RT</application> packages provide new C, C++, Objective C and Objective
       C++ front-ends and runtime libraries for the
-      <application>LLVM</application>.
+      <application>LLVM</application> and are required by some packages which
+      use <application>Rust</application>, for example
+      <application>firefox</application>.
 @z
 
 @x
@@ -148,16 +152,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="libffi"/> and
-      <xref linkend="python2"/>
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/> and <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="libffi"/>,
-      <xref linkend="python2"/>
+    <para role="required">
+      <xref linkend="cmake"/> and <xref linkend="python2"/>
     </para>
 @z
 
@@ -215,51 +217,65 @@
 @z
 
 @x
-      If you have installed <application>Sphinx</application> and wish
-      to generate the html documentation and manual pages, issue the
-      following commands:
+      To test the results, issue: <command>ninja check-all</command>. Tests are
+      built with a single thread, but run using the maximum number of 
+      processors/threads available.
+      Note that the several Sanitizer tests (9 of 26479) are known to fail.
+<!--  Still true for v 5.0.0 -->
 @y
-      If you have installed <application>Sphinx</application> and wish
-      to generate the html documentation and manual pages, issue the
-      following commands:
-@z
-
-@x
-      If you have downloaded the optional packages, the clang documentation
-      can be built too:
-@y
-      If you have downloaded the optional packages, the clang documentation
-      can be built too:
-@z
-
-@x
-      To test the results, issue: <command>make check-all</command>. Tests are
-      run using the maximum number of processors/threads available.
-      Note that the Address Sanitizer tests are known to fail, and that
-      19 tests fail because of the removal of an obsolete header.
-<!--  Still true for v 3.9.1 -->
-@y
-      To test the results, issue: <command>make check-all</command>. Tests are
-      run using the maximum number of processors/threads available.
-      Note that the Address Sanitizer tests are known to fail, and that
-      19 tests fail because of the removal of an obsolete header.
-<!--  Still true for v 3.9.1 -->
+      To test the results, issue: <command>ninja check-all</command>. Tests are
+      built with a single thread, but run using the maximum number of 
+      processors/threads available.
+      Note that the several Sanitizer tests (9 of 26479) are known to fail.
+<!--  Still true for v 5.0.0 -->
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      Now, as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-      If you have built  the documentation, install it by running the
-      following command as the <systemitem class="username">root</systemitem>
-      user:
+      If you have installed <application>Sphinx</application> and wish
+      to generate the html documentation and manual pages, double check 
+      that you are still in the <filename class="directory">build</filename>
+      directory and issue the following commands:
 @y
-      If you have built  the documentation, install it by running the
-      following command as the <systemitem class="username">root</systemitem>
-      user:
+      If you have installed <application>Sphinx</application> and wish
+      to generate the html documentation and manual pages, double check 
+      that you are still in the <filename class="directory">build</filename>
+      directory and issue the following commands:
+@z
+
+@x
+      If you have downloaded the optional packages, the clang documentation
+      can be built too:
+@y
+      If you have downloaded the optional packages, the clang documentation
+      can be built too:
+@z
+
+@x
+      Install the llvm documentation by running the following command as the 
+      <systemitem class="username">root</systemitem> user:
+@y
+      Install the llvm documentation by running the following command as the 
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      The clang documentation can be installed in the same way (again as the
+      <systemitem class="username">root</systemitem> user):
+@y
+      The clang documentation can be installed in the same way (again as the
+      <systemitem class="username">root</systemitem> user):
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -282,47 +298,59 @@
         <seg>
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
-          clang-format, git-clang-format,
-          llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov,
-          llvm-c-test, llvm-cxxdump, llvm-diff, llvm-dis, llvm-dsymutil,
-          llvm-dwarfdump, llvm-dwp, llvm-extract, llvm-lib (symlink to
-          llvm-ar), llvm-link, llvm-lto, llvm-mc, llvm-mcmarkup, llvm-nm,
-          llvm-objdump, llvm-pdbdump, llvm-profdata, llvm-ranlib (symlink to
-          llvm-ar), llvm-readobj, llvm-rtdyld, llvm-size, llvm-split,
-          llvm-stress, llvm-symbolizer, llvm-tblgen, obj2yaml, opt, sancov,
-          sanstats, scan-build, scan-view, verify-uselistorder, and yaml2obj
+          clang-cppi (last two symlinks to clang), clang-format,
+          clang-import-test, clang-offload-bundler, clang-rename,
+          git-clang-format, llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer,
+          llvm-cat, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
+          llvm-cxxdump, llvm-cxxfilt, llvm-diff, llvm-dis, llvm-dlltool
+          (symlink to llvm-ar), llvm-dsymutil, llvm-dwarfdump, llvm-dwp,
+          llvm-extract, llvm-lib (symlink to llvm-ar), llvm-link, llvm-lto,
+          llvm-lto2, llvm-mc, llvm-mcmarkup, llvm-modextract, llvm-mt, llvm-nm,
+          llvm-objdump, llvm-opt-report, llvm-pdbutil, llvm-profdata,
+          llvm-ranlib (symlink to llvm-ar), llvm-readelf (symlink to
+          llvm-readobj), llvm-readobj, llvm-rtdyld, llvm-size, llvm-split,
+          llvm-stress, llvm-strings, llvm-symbolizer, llvm-tblgen, llvm-xray,
+          obj2yaml, opt, sancov, sanstats, scan-build, scan-view,
+          verify-uselistorder, and yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (57
-          libraries), libLTO.so, libclang.so and libclang*.a (24 libraries)
+          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (63
+          libraries), libLTO.so, libclang.so and libclang*.a (25 libraries)
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
-          /usr/lib/{clang,cmake/{clang,llvm}} and
-          /usr/share/{clang,scan-build,scan-view,doc/llvm-&llvm-version;}
+          /usr/lib/{clang,cmake/{clang,llvm}},
+          /usr/share/{clang,opt-viewer,scan-build,scan-view}, and
+          /usr/share/doc/llvm-&llvm-version;}
         </seg>
 @y
         <seg>
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
-          clang-format, git-clang-format,
-          llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-config, llvm-cov,
-          llvm-c-test, llvm-cxxdump, llvm-diff, llvm-dis, llvm-dsymutil,
-          llvm-dwarfdump, llvm-dwp, llvm-extract, llvm-lib (symlink to
-          llvm-ar), llvm-link, llvm-lto, llvm-mc, llvm-mcmarkup, llvm-nm,
-          llvm-objdump, llvm-pdbdump, llvm-profdata, llvm-ranlib (symlink to
-          llvm-ar), llvm-readobj, llvm-rtdyld, llvm-size, llvm-split,
-          llvm-stress, llvm-symbolizer, llvm-tblgen, obj2yaml, opt, sancov,
-          sanstats, scan-build, scan-view, verify-uselistorder, yaml2obj
+          clang-cppi (last two symlinks to clang), clang-format,
+          clang-import-test, clang-offload-bundler, clang-rename,
+          git-clang-format, llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer,
+          llvm-cat, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
+          llvm-cxxdump, llvm-cxxfilt, llvm-diff, llvm-dis, llvm-dlltool
+          (symlink to llvm-ar), llvm-dsymutil, llvm-dwarfdump, llvm-dwp,
+          llvm-extract, llvm-lib (symlink to llvm-ar), llvm-link, llvm-lto,
+          llvm-lto2, llvm-mc, llvm-mcmarkup, llvm-modextract, llvm-mt, llvm-nm,
+          llvm-objdump, llvm-opt-report, llvm-pdbutil, llvm-profdata,
+          llvm-ranlib (symlink to llvm-ar), llvm-readelf (symlink to
+          llvm-readobj), llvm-readobj, llvm-rtdyld, llvm-size, llvm-split,
+          llvm-stress, llvm-strings, llvm-symbolizer, llvm-tblgen, llvm-xray,
+          obj2yaml, opt, sancov, sanstats, scan-build, scan-view,
+          verify-uselistorder, yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (57
-          libraries), libLTO.so, libclang.so, libclang*.a (24 libraries)
+          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (63
+          libraries), libLTO.so, libclang.so, libclang*.a (25 libraries)
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
           /usr/lib/{clang,cmake/{clang,llvm}},
-          /usr/share/{clang,scan-build,scan-view,doc/llvm-&llvm-version;}
+          /usr/share/{clang,opt-viewer,scan-build,scan-view},
+          /usr/share/doc/llvm-&llvm-version;}
         </seg>
 @z
 
@@ -432,10 +460,18 @@
             is an <application>LLVM</application> object file dumper.
 @z
 
-@x llvm-pdbdump
-            is used as PDB Dumper.
+@x llvm-opt-report
+            is a tool to generate an optimization report from YAML optimization
+            record files.
 @y
-            is used as PDB Dumper.
+            is a tool to generate an optimization report from YAML optimization
+            record files.
+@z
+
+@x llvm-pdbutil
+            is a PDB (Program Database) dumper. PDB is a Microsoft format.
+@y
+            is a PDB (Program Database) dumper. PDB is a Microsoft format.
 @z
 
 @x llvm-profdata
@@ -498,11 +534,17 @@
             To C++ Code Generator.
 @z
 
+@x llvm-xray
+            is an implementation of Google's XRay function call tracing system.
+@y
+            is an implementation of Google's XRay function call tracing system.
+@z
+
 @x obj2yaml
-            takes an object file,and produces a YAML representation of the
+            takes an object file, and produces a YAML representation of the
             file.
 @y
-            takes an object file,and produces a YAML representation of the
+            takes an object file, and produces a YAML representation of the
             file.
 @z
 

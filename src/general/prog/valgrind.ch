@@ -122,44 +122,16 @@
 @z
 
 @x
+      First, fix a bug, which has been exposed by glibc-2.26:
+@y
+      First, fix a bug, which has been exposed by glibc-2.26:
+@z
+
+@x
       Install <application>Valgrind</application> by running the following
       commands:
 @y
       以下のコマンドを実行して <application>Valgrind</application> をビルドします。
-@z
-
-@x
-       To run the tests for this package, valgrind requires a version of the
-       /lib/ld-2.26.so (or later) library with debugging symbols present.
-       Normally in LFS these debugging symbols are stripped at the end of
-       Chapter 6. To get this library, glibc must be rebuilt with the current
-       glibc version using the same compiler that was used to build LFS. The
-       ld.so can then be renamed to ld-2.26.so.dbg and copied to /lib.
-       Then a symlink needs to be changed:</para>
-@y
-       To run the tests for this package, valgrind requires a version of the
-       /lib/ld-2.26.so (or later) library with debugging symbols present.
-       Normally in LFS these debugging symbols are stripped at the end of
-       Chapter 6. To get this library, glibc must be rebuilt with the current
-       glibc version using the same compiler that was used to build LFS. The
-       ld.so can then be renamed to ld-2.26.so.dbg and copied to /lib.
-       Then a symlink needs to be changed:</para>
-@z
-
-@x
-       Adjust the above instruction as needed for a 32-bit system or for a
-       different version of glibc.
-@y
-       Adjust the above instruction as needed for a 32-bit system or for a
-       different version of glibc.
-@z
-
-@x
-       In addition, other glibc libraries with debugging symbols present
-       may be needed for some tests.
-@y
-       In addition, other glibc libraries with debugging symbols present
-       may be needed for some tests.
 @z
 
 @x

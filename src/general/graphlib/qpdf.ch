@@ -80,12 +80,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pcre"/>
+      <xref linkend="libjpeg"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pcre"/>
+      <xref linkend="libjpeg"/>
     </para>
 @z
 

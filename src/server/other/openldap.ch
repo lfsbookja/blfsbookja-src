@@ -88,14 +88,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cyrus-sasl"/> and
-      <xref linkend="openssl"/>
+      <xref linkend="cyrus-sasl"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="openssl"/>
+      <xref linkend="cyrus-sasl"/> 
     </para>
 @z
 
@@ -110,7 +108,7 @@
         <xref linkend="postgresql"/> or
         <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>, and
-      <xref linkend="db"/> (not recommended by the developers)
+      <xref linkend="db"/> (for slapd, but deprecated)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -123,7 +121,7 @@
         <xref linkend="postgresql"/> または
         <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-      <xref linkend="db"/> (not recommended by the developers)
+      <xref linkend="db"/> (for slapd, but deprecated)
     </para>
 @z
 
@@ -299,52 +297,90 @@
 @x
         Configuring the <command>slapd</command> servers can be complex.
         Securing the LDAP directory, especially if you are storing non-public
-        data such as password databases, can also be a challenging task. You'll
-        need to modify the <filename>/etc/openldap/slapd.conf</filename> and
-        <filename>/etc/openldap/ldap.conf</filename> files to set up
-        <application>OpenLDAP</application> for your particular needs.
+        data such as password databases, can also be a challenging task. In
+        order to set up <application>OpenLDAP</application>, you'll need to
+        modify either the <filename>/etc/openldap/slapd.conf</filename> 
+        file (old method), or the <filename>/etc/openldap/slapd.ldif</filename>
+        file and then use <command>ldapadd</command> to create de LDAP
+        configuration database in
+        <filename class="directory">/etc/openldap/slapd.d</filename>
+        (recommended by the OpenLDAP documentation).
 @y
         Configuring the <command>slapd</command> servers can be complex.
         Securing the LDAP directory, especially if you are storing non-public
-        data such as password databases, can also be a challenging task. You'll
-        need to modify the <filename>/etc/openldap/slapd.conf</filename> and
-        <filename>/etc/openldap/ldap.conf</filename> files to set up
-        <application>OpenLDAP</application> for your particular needs.
+        data such as password databases, can also be a challenging task. In
+        order to set up <application>OpenLDAP</application>, you'll need to
+        modify either the <filename>/etc/openldap/slapd.conf</filename> 
+        file (old method), or the <filename>/etc/openldap/slapd.ldif</filename>
+        file and then use <command>ldapadd</command> to create de LDAP
+        configuration database in
+        <filename class="directory">/etc/openldap/slapd.d</filename>
+        (recommended by the OpenLDAP documentation).
+@z
+
+@x
+        The shipped configuration files suppose the loadable modules are
+        installed with their <filename class="extension">.la</filename>
+        files, which may not be true if you remove those files as instructed
+        in <xref linkend="libtool"/>. If this is the case, issue, as the
+        <systemitem class="username">root</systemitem> user:
+@y
+        The shipped configuration files suppose the loadable modules are
+        installed with their <filename class="extension">.la</filename>
+        files, which may not be true if you remove those files as instructed
+        in <xref linkend="libtool"/>. If this is the case, issue, as the
+        <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+          The instructions above install an empty LDAP structure and a default
+          <filename>/etc/openldap/slapd.conf</filename> file, which are
+          suitable for testing the build and other packages using LDAP. Do not
+          use them on a production server.
+@y
+          The instructions above install an empty LDAP structure and a default
+          <filename>/etc/openldap/slapd.conf</filename> file, which are
+          suitable for testing the build and other packages using LDAP. Do not
+          use them on a production server.
 @z
 
 @x
         Resources to assist you with topics such as choosing a directory
-        configuration, backend and database definitions, access control settings,
-        running as a user other than <systemitem class="username">root</systemitem>
+        configuration, backend and database definitions, access control
+        settings, running as a user other than
+        <systemitem class="username">root</systemitem>
         and setting a <command>chroot</command> environment include:
 @y
         Resources to assist you with topics such as choosing a directory
-        configuration, backend and database definitions, access control settings,
-        running as a user other than <systemitem class="username">root</systemitem>
+        configuration, backend and database definitions, access control
+        settings, running as a user other than
+        <systemitem class="username">root</systemitem>
         and setting a <command>chroot</command> environment include:
 @z
 
 @x
-            The <command>slapd</command> man page.
+            The <emphasis role="strong">slapd(8)</emphasis> man page.
 @y
-            The <command>slapd</command> man page.
+            The <emphasis role="strong">slapd(8)</emphasis> man page.
 @z
 
 @x
-            The <filename>slapd.conf</filename> man page.
+            The <emphasis role="strong">slapd.conf(5)</emphasis> and
+            <emphasis role="strong">slapd-config(5)</emphasis> man pages.
 @y
-            The <filename>slapd.conf</filename> man page.
+            The <emphasis role="strong">slapd.conf(5)</emphasis> and
+            <emphasis role="strong">slapd-config(5)</emphasis> man pages.
 @z
 
 @x
             The <ulink url="http://www.openldap.org/doc/admin24/"> OpenLDAP 2.4
             Administrator's Guide</ulink> (also installed locally in
-            <filename class='directory'>
+            <filename class="directory">
             /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).
 @y
             The <ulink url="http://www.openldap.org/doc/admin24/"> OpenLDAP 2.4
             Administrator's Guide</ulink> (also installed locally in
-            <filename class='directory'>
+            <filename class="directory">
             /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).
 @z
 

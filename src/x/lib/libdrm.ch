@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY libdrm-time          "0.2 SBU (add 0.5 SBU for the tests)">
+  <!ENTITY libdrm-time          "0.1 SBU (add 0.8 SBU for tests)">
 @y
-  <!ENTITY libdrm-time          "0.2 SBU (テスト実行時はさらに 0.5 SBU)">
+  <!ENTITY libdrm-time          "0.1 SBU (テスト実行時はさらに 0.8 SBU)">
 @z
 
 @x
@@ -99,12 +99,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="xorg7-lib"/> (for Intel KMS API support required by Mesa) <!-- libpciaccess -->
+      <xref linkend="xorg7-lib"/> (for Intel KMS API support required by Mesa)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="xorg7-lib"/> (for Intel KMS API support required by Mesa) <!-- libpciaccess -->
+      <xref linkend="xorg7-lib"/> (for Intel KMS API support required by Mesa)
     </para>
 @z
 
@@ -150,16 +150,13 @@
 @z
 
 @x
-      To check the results, issue <command>make check</command>. Tests may hang
-      for unknown reasons. If nouveau threaded test hangs, you can disable it
+      To check the results, issue <command>ninja test</command>. Tests may hang
+      for unknown reasons. <!-- If nouveau threaded test hangs, you can disable it
       with
-      <command>sed -i 's/^TESTS/#&amp;/' tests/nouveau/Makefile.in</command>.
+      <command>sed -i 's/^TESTS/#&amp;/' tests/nouveau/Makefile.in</command>. -->
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      Tests may hang
-      for unknown reasons. If nouveau threaded test hangs, you can disable it
-      with
-      <command>sed -i 's/^TESTS/#&amp;/' tests/nouveau/Makefile.in</command>.
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      テストがいくつか失敗しますが、原因は不明です。
 @z
 
 @x
@@ -175,10 +172,10 @@
 @z
 
 @x
-      <parameter>--enable-udev</parameter>: This parameter enables support for using
+      <parameter>-Dudev=true</parameter>: This parameter enables support for using
       <application>Udev</application> instead of <command>mknod</command>.
 @y
-      <parameter>--enable-udev</parameter>:
+      <parameter>-Dudev=true</parameter>:
       このオプションは <command>mknod</command> サポートではなく <application>Udev</application> サポートを利用することを指示します。
 @z
 
@@ -207,7 +204,7 @@
           libdrm_radeon.so, libdrm.so, and libkms.so
         </seg>
         <seg>
-          /usr/include/lib{drm,kms}
+          /usr/include/libdrm, /usr/include/libkms, and /usr/share/libdrm
         </seg>
 @y
         <seg>
@@ -215,10 +212,10 @@
         </seg>
         <seg>
           libdrm_amdgpu.so, libdrm_intel.so, libdrm_nouveau.so,
-          libdrm_radeon.so, libdrm.so, and libkms.so
+          libdrm_radeon.so, libdrm.so, libkms.so
         </seg>
         <seg>
-          /usr/include/lib{drm,kms}
+          /usr/include/libdrm, /usr/include/libkms, /usr/share/libdrm
         </seg>
 @z
 

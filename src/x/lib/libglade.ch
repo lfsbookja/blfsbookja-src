@@ -21,8 +21,8 @@
 
 @x
     <para>The <application>libglade</application> package contains
-    <filename class="libraryfile">libglade</filename> libraries. These are useful
-    for loading Glade interface files in a program at runtime.</para>
+    <filename class="libraryfile">libglade</filename> libraries. These are
+    useful for loading Glade interface files in a program at runtime.</para>
 @y
     <para>
     <application>libglade</application> パッケージは <filename class="libraryfile">libglade</filename> ライブラリを提供します。

@@ -97,11 +97,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="libnsl"/> and
       <xref linkend="pcre"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="libnsl"/>,
       <xref linkend="pcre"/>
     </para>
 @z
@@ -109,9 +111,8 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="db"/> or
       <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
-      (alternatives to GDBM, built in LFS),
+      (alternative to GDBM, built in LFS),
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="libidn"/>,
       <xref linkend="linux-pam"/>,
@@ -128,9 +129,8 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="db"/> または
       <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
-      (LFS でビルドしている GDBM の代用),
+      （LFS でビルドしている GDBM の代用）,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="libidn"/>,
       <xref linkend="linux-pam"/>,
@@ -261,13 +261,13 @@
 
 @x
     <para><parameter>SUPPORT_TLS=yes</parameter>: This allows to support
-    STARTTLS connexions. If you use this option, you need to select
+    STARTTLS connections. If you use this option, you need to select
     whether <application>OpenSSL</application> or
     <application>GnuTLS</application> is used (see
     <filename>src/EDITME</filename>).</para>
 @y
     <para><parameter>SUPPORT_TLS=yes</parameter>: This allows to support
-    STARTTLS connexions. If you use this option, you need to select
+    STARTTLS connections. If you use this option, you need to select
     whether <application>OpenSSL</application> or
     <application>GnuTLS</application> is used (see
     <filename>src/EDITME</filename>).</para>
@@ -501,14 +501,14 @@
         Review the file <filename>/etc/exim.conf</filename>, and modify any
         settings to suit your needs. Note that the default configuration
         assumes that the <filename class="directory">/var/mail</filename>
-        directory is world writable, but has the stiky bit set. If you want
+        directory is world writable, but has the sticky bit set. If you want
         to use the default configuration, issue as the <systemitem
         class="username">root</systemitem> user:
 @y
         Review the file <filename>/etc/exim.conf</filename>, and modify any
         settings to suit your needs. Note that the default configuration
         assumes that the <filename class="directory">/var/mail</filename>
-        directory is world writable, but has the stiky bit set. If you want
+        directory is world writable, but has the sticky bit set. If you want
         to use the default configuration, issue as the <systemitem
         class="username">root</systemitem> user:
 @z

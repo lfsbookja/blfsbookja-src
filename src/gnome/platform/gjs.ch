@@ -79,14 +79,44 @@
     <para role="required">
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>, and
-      <xref linkend="js38"/>
+      <xref linkend="js52"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>, and
-      <xref linkend="js38"/>
+      <xref linkend="js52"/>
+    </para>
+@z
+
+@x
+    <bridgehead revision="systemd" renderas="sect4">Recommended (required for GNOME)</bridgehead>
+    <para role="recommended" revision="systemd">
+      <xref linkend="gtk3"/>
+    </para>
+@y
+    <bridgehead revision="systemd" renderas="sect4">Recommended (required for GNOME)</bridgehead>
+    <para role="recommended" revision="systemd">
+      <xref linkend="gtk3"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="valgrind"/> (for tests),
+      <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>, and
+      <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="valgrind"/> (テストのため),
+      <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
+      <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
     </para>
 @z
 
@@ -148,8 +178,9 @@
           libgjs.so
         </seg>
         <seg>
-          /usr/include/gjs-1.0 and
-          /usr/lib/gjs
+          /usr/include/gjs-1.0,
+          /usr/lib/gjs, and
+          /usr/share/gjs-1.0
         </seg>
 @y
         <seg>
@@ -160,7 +191,8 @@
         </seg>
         <seg>
           /usr/include/gjs-1.0,
-          /usr/lib/gjs
+          /usr/lib/gjs,
+          /usr/share/gjs-1.0
         </seg>
 @z
 

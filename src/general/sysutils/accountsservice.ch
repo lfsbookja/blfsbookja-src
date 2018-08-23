@@ -81,11 +81,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="gtk-doc"/> and
       <xref linkend="polkit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="gtk-doc"/> and
       <xref linkend="polkit"/>
     </para>
 @z
@@ -99,7 +101,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="systemd"/>
     </para>
 @z
@@ -107,13 +109,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
       <xref linkend="xmlto"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
       <xref linkend="xmlto"/>
     </para>
 @z

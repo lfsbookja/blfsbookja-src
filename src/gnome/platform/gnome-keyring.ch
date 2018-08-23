@@ -91,14 +91,16 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="linux-pam"/> and
-      <xref linkend="libxslt"/>
+      <xref linkend="linux-pam"/>,
+      <xref linkend="libxslt"/>, and
+      <xref linkend="openssh"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="linux-pam"/>,
-      <xref linkend="libxslt"/>
+      <xref linkend="libxslt"/>,
+      <xref linkend="openssh"/>
     </para>
 @z
 
@@ -107,8 +109,7 @@
     <para role="optional">
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
-      <xref linkend="gnupg2"/>,
-      <xref linkend="openssh"/> and
+      <xref linkend="gnupg2"/>, and
       <xref linkend="valgrind"/>
     </para>
 @y
@@ -116,8 +117,7 @@
     <para role="optional">
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
       <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
-      <xref linkend="gnupg2"/>,
-      <xref linkend="openssh"/>,
+      <xref linkend="gnupg2"/>, and
       <xref linkend="valgrind"/>
     </para>
 @z

@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY graphviz-buildsize     "177 MB">
+  <!ENTITY graphviz-time          "0.7 SBU (using parallelism=4)">
+@y
+  <!ENTITY graphviz-buildsize     "177 MB">
+  <!ENTITY graphviz-time          "0.7 SBU（parallelism=4 指定時）">
+@z
+
+@x
     <title>Introduction to Graphviz</title>
 @y
     <title>&IntroductionTo1;Graphviz&IntroductionTo2;</title>
@@ -84,58 +92,148 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="freetype2"/>,
-      <xref linkend="fontconfig"/>,
-      <xref linkend="freeglut"/>,
-      <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="pango"/> and
-      <xref linkend="xorg7-lib"/>
+        <application>Graphviz</application> basic usage does not need any
+        libraries out of what is found in the LFS book. Its <quote>core</quote>
+        rendering engine allows to generate several graphic formats, such as
+        Postscript, SVG, VML, .fig, and Tk. Those formats can be converted
+        to almost any other, using for example tools from <xref role="nodep"
+        linkend="imagemagick"/>. The dependencies below add the ability to
+        generate graph images in bitmap format, to display the graph image on
+        screen, to edit a graph by seeing directly the result image, or to view
+        large graphs. Since <application>Graphviz</application> is a dependency
+        of several other packages in this book, it is suggested to first build
+        it without any dependencies, then to rebuild it when you have built
+        enough packages to suit your needs.
+@y
+        <application>Graphviz</application> basic usage does not need any
+        libraries out of what is found in the LFS book. Its <quote>core</quote>
+        rendering engine allows to generate several graphic formats, such as
+        Postscript, SVG, VML, .fig, and Tk. Those formats can be converted
+        to almost any other, using for example tools from <xref role="nodep"
+        linkend="imagemagick"/>. The dependencies below add the ability to
+        generate graph images in bitmap format, to display the graph image on
+        screen, to edit a graph by seeing directly the result image, or to view
+        large graphs. Since <application>Graphviz</application> is a dependency
+        of several other packages in this book, it is suggested to first build
+        it without any dependencies, then to rebuild it when you have built
+        enough packages to suit your needs.
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional, for various bitmap outputs</bridgehead>
+    <para role="optional">
+      <xref linkend="pango"/>, with
+      <xref linkend="cairo"/>,
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="fontconfig"/>, and
+      <xref linkend="libpng"/>, to generate images in bitmap SVG, postscript,
+      PNG, and PDF formats, or displaying the image on screen
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="freetype2"/>,
-      <xref linkend="fontconfig"/>,
-      <xref linkend="freeglut"/>,
-      <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="pango"/>,
-      <xref linkend="xorg7-lib"/>
+    <bridgehead renderas="sect4">&Optional;, for various bitmap outputs</bridgehead>
+    <para role="optional">
+      <xref linkend="pango"/>, with
+      <xref linkend="cairo"/>,
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="fontconfig"/>, and
+      <xref linkend="libpng"/>, to generate images in bitmap SVG, postscript,
+      PNG, and PDF formats, or displaying the image on screen
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="libglade"/>,
-      <xref linkend="gs"/>,
-      <xref linkend="gtk2"/>,
-<!-- Needs Qt4:      <xref linkend="qt5"/>,-->
+      Adding
+      <xref linkend="gtk2"/> with
+      <xref linkend="libjpeg"/> allows to add JPEG, BMP, TIF, and ICO formats,
+      and to display the image in a GTK+ window
+@y
+      Adding
+      <xref linkend="gtk2"/> with
+      <xref linkend="libjpeg"/> allows to add JPEG, BMP, TIF, and ICO formats,
+      and to display the image in a GTK+ window
+@z
+
+@x
+      <ulink url="http://www.libgd.org/">GD Library</ulink> may be used
+      instead of <application>Pango</application>. It adds the ability to
+      generate images in GIF, VRML, and GD formats, but
+      <application>Pango</application> provides better outputs for the other
+      formats, and is needed for displaying images
+@y
+      <ulink url="http://www.libgd.org/">GD Library</ulink> may be used
+      instead of <application>Pango</application>. It adds the ability to
+      generate images in GIF, VRML, and GD formats, but
+      <application>Pango</application> provides better outputs for the other
+      formats, and is needed for displaying images
+@z
+
+@x
+      Other formats may be added with
+      <xref linkend="libwebp"/> (WebP support is considered experimental),
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
-      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
-      <ulink url="http://www.libgd.org/">GD Library</ulink>, and
-      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>
+      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
+      and <ulink url="http://www.libming.org/">libming</ulink> (Macromedia
+      Flash)
+@y
+      Other formats may be added with
+      <xref linkend="libwebp"/> (WebP support is considered experimental),
+      <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
+      <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
+      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
+      and <ulink url="http://www.libming.org/">libming</ulink> (Macromedia
+      Flash)
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional, to load graphic images that may be
+    displayed inside the nodes of a graph</bridgehead>
+
+    <para role="optional">
+      <filename class="libraryfile">libgs.so</filename> from
+      <xref linkend="gs"/>,
+      <xref linkend="librsvg"/>, and
+      <xref linkend="poppler"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <bridgehead renderas="sect4">&Optional;, to load graphic images that may be
+    displayed inside the nodes of a graph</bridgehead>
+
     <para role="optional">
-      <xref linkend="libglade"/>,
+      <filename class="libraryfile">libgs.so</filename> from
       <xref linkend="gs"/>,
-      <xref linkend="gtk2"/>,
-<!-- Needs Qt4:      <xref linkend="qt5"/>,-->
-      <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
-      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
-      <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
-      <ulink url="http://www.libgd.org/">GD Library</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>
+      <xref linkend="librsvg"/>,
+      <xref linkend="poppler"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional, to build more tools</bridgehead>
+
+    <para role="optional">
+      <xref linkend="freeglut"/> (with <xref linkend="libglade"/>, 
+      <ulink url="https://projects.gnome.org/gtkglext/">GtkGLExt</ulink>, and
+      <ulink url="http://gts.sourceforge.net/">libGTS</ulink>, for building
+      the <command>smyrna</command> large graph viewer, which is
+      considered experimental),
+      <xref linkend="qt5"/>, for building the <command>gvedit</command>
+      graph editor. Another graph editor, <command>dotty</command> needs only
+      <xref role="nodep" linkend="xorg7-lib"/>
+<!-- use nodep to avoid repetition -->
+    </para>
+@y
+    <bridgehead renderas="sect4">Optional, to build more tools</bridgehead>
+
+    <para role="optional">
+      <xref linkend="freeglut"/> (with <xref linkend="libglade"/>, 
+      <ulink url="https://projects.gnome.org/gtkglext/">GtkGLExt</ulink>, and
+      <ulink url="http://gts.sourceforge.net/">libGTS</ulink>, for building
+      the <command>smyrna</command> large graph viewer, which is
+      considered experimental),
+      <xref linkend="qt5"/>, for building the <command>gvedit</command>
+      graph editor. Another graph editor, <command>dotty</command> needs only
+      <xref role="nodep" linkend="xorg7-lib"/>
+<!-- use nodep to avoid repetition -->
     </para>
 @z
 
@@ -144,6 +242,7 @@
     <para role="optional">
       <xref linkend="swig"/> (<application>SWIG</application> must be
       installed or no bindings will be built),
+      <xref linkend="gcc"/> (for the go language),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="lua"/>,
@@ -158,10 +257,11 @@
       <ulink url="http://www.r-project.org/">R</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional; (言語バインディング構築に必要)</bridgehead>
+    <bridgehead renderas="sect4">Optional (To Build Language Bindings)</bridgehead>
     <para role="optional">
       <xref linkend="swig"/> (<application>SWIG</application> must be
       installed or no bindings will be built),
+      <xref linkend="gcc"/> (for the go language),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="lua"/>,
@@ -172,8 +272,24 @@
       <xref linkend="tk"/>,
       <ulink url="http://iolanguage.org/">Io</ulink>,
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
-      <ulink url="http://ocaml.org/">OCaml</ulink>,
+      <ulink url="http://ocaml.org/">OCaml</ulink>, and
       <ulink url="http://www.r-project.org/">R</ulink>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional (building tools)</bridgehead>
+    <para role="optional">
+      <ulink url="https://github.com/Snaipe/Criterion">Criterion</ulink>
+          (framework for tests),
+      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
+    </para>
+@y
+    <bridgehead renderas="sect4">Optional (building tools)</bridgehead>
+    <para role="optional">
+      <ulink url="https://github.com/Snaipe/Criterion">Criterion</ulink>
+          (framework for tests),
+      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
     </para>
 @z
 

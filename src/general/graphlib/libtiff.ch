@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libtiff-buildsize     "24 MB (with tests)">
-  <!ENTITY libtiff-time          "0.3 SBU (with tests)">
+  <!ENTITY libtiff-buildsize     "18 MB (with tests)">
+  <!ENTITY libtiff-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libtiff-buildsize     "24 MB (テスト込み)">
-  <!ENTITY libtiff-time          "0.3 SBU (テスト込み)">
+  <!ENTITY libtiff-buildsize     "18 MB（テスト込み）">
+  <!ENTITY libtiff-time          "&LessThan1;0.1 SBU&LessThan2;（テスト込み）">
 @z
 
 @x
@@ -122,9 +122,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -132,12 +132,6 @@
       user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -158,8 +152,8 @@
 
 @x
         <seg>
-          bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
-          raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps,
+          fax2ps, fax2tiff, pal2rgb, ppm2tiff,
+          raw2tiff, tiff2bw, tiff2pdf, tiff2ps,
           tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffgt,
           tiffinfo, tiffmedian, tiffset and tiffsplit
         </seg>
@@ -171,8 +165,8 @@
         </seg>
 @y
         <seg>
-          bmp2tiff, fax2ps, fax2tiff, gif2tiff, pal2rgb, ppm2tiff, ras2tiff,
-          raw2tiff, rgb2ycbcr, thumbnail, tiff2bw, tiff2pdf, tiff2ps,
+          fax2ps, fax2tiff, pal2rgb, ppm2tiff,
+          raw2tiff, tiff2bw, tiff2pdf, tiff2ps,
           tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffgt,
           tiffinfo, tiffmedian, tiffset, tiffsplit
         </seg>

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY p11-kit-buildsize     "87 MB (an additional 104 MB for tests)">
-  <!ENTITY p11-kit-time          "0.5 SBU (an additional 0.2 SBU for tests)">
+  <!ENTITY p11-kit-buildsize     "65 MB (add 167 MB for tests)">
+  <!ENTITY p11-kit-time          "0.4 SBU (add 0.6 SBU for tests)">
 @y
-  <!ENTITY p11-kit-buildsize     "87 MB (テスト実施時はさらに 104 MB)">
-  <!ENTITY p11-kit-time          "0.5 SBU (テスト実施時はさらに 0.2 SBU)">
+  <!ENTITY p11-kit-buildsize     "65 MB (テスト実施時はさらに 167 MB)">
+  <!ENTITY p11-kit-time          "0.4 SBU (テスト実施時はさらに 0.6 SBU)">
 @z
 
 @x
@@ -85,16 +85,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cacerts"/>,
-      <xref linkend="libtasn1"/>, and
-      <xref linkend="libffi"/>
+      <xref linkend="make-ca"/> and
+      <xref linkend="libtasn1"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="cacerts"/>,
-      <xref linkend="libtasn1"/>,
-      <xref linkend="libffi"/>
+      <xref linkend="make-ca"/>,
+      <xref linkend="libtasn1"/>
     </para>
 @z
 
@@ -134,11 +132,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. The test-token
-      test is known to fail.
+      To test the results, issue: <command>make check</command>. 
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      test-token というテストは失敗します。
 @z
 
 @x

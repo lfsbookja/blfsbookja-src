@@ -81,15 +81,19 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="colord"/>,
-      <xref linkend="dbus"/>, and
-      <xref linkend="libusb"/>
+      <xref linkend="dbus"/>, 
+      <xref linkend="libusb"/>,
+      <xref linkend="linux-pam"/>, and
+      <xref linkend="xdg-utils"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="colord"/>,
-      <xref linkend="dbus"/>,
-      <xref linkend="libusb"/>
+      <xref linkend="dbus"/>, 
+      <xref linkend="libusb"/>,
+      <xref linkend="linux-pam"/>, and
+      <xref linkend="xdg-utils"/>
     </para>
 @z
 
@@ -98,34 +102,32 @@
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="libpaper"/>,
-      <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openjdk"/>,
-      <xref linkend="php"/>,
-      <xref linkend="python2"/>, and
-      <xref linkend="xdg-utils"/>
+      <xref linkend="php"/>, and
+      <xref linkend="python2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="libpaper"/>,
-      <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="php"/>,
-      <xref linkend="python2"/>,
-      <xref linkend="xdg-utils"/>
+      <xref linkend="python2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Required (Postinstall)</bridgehead>
-    <para role="required runtime">
-      <xref linkend="cups-filters"/>
+    <para role="required">
+      <xref role="runtime" linkend="cups-filters"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required (インストール後)</bridgehead>
-    <para role="required runtime">
-      <xref linkend="cups-filters"/>
+    <para role="required">
+      <xref role="runtime" linkend="cups-filters"/>
     </para>
 @z
 
@@ -276,14 +278,6 @@
 @z
 
 @x
-      <command>sed ... cups/dest.c</command>: Fix a regression in cups-2.2.4,
-      which prevents finding printers when no default printer is defined.
-@y
-      <command>sed ... cups/dest.c</command>: Fix a regression in cups-2.2.4,
-      which prevents finding printers when no default printer is defined.
-@z
-
-@x
       <command>sed ... Makedefs.in</command>: Fix files and directories
       permissions.
 @y
@@ -326,19 +320,11 @@
 @z
 
 @x
-      <command>sed ... test/ippserver.c</command>: This sed fixes a bug,
-      which shows up when <application>avahi</application> is not present.
-@y
-      <command>sed ... test/ippserver.c</command>: This sed fixes a bug,
-      which shows up when <application>avahi</application> is not present.
-@z
-
-@x
       <parameter>--disable-systemd</parameter>: Systemd is not supported by
-      BLFS.
+      this version of BLFS.
 @y
       <parameter>--disable-systemd</parameter>: Systemd is not supported by
-      BLFS.
+      this version of BLFS.
 @z
 
 @x

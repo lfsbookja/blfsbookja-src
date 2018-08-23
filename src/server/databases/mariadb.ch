@@ -14,11 +14,9 @@
 @z
 
 @x
-  <!ENTITY mariadb-buildsize     "1.3 GB">
-  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY mariadb-time          "12 SBU (with parallelism=4, add 0.5 SBU for tests)">
 @y
-  <!ENTITY mariadb-buildsize     "1.3 GB">
-  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY mariadb-time          "12 SBU (with parallelism=4, add 0.5 SBU for tests)">
 @z
 
 @x
@@ -97,14 +95,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/> and
-      <xref linkend="openssl"/>
+      <xref linkend="cmake"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/>,
-      <xref linkend="openssl"/>
+      <xref linkend="cmake"/> 
     </para>
 @z
 

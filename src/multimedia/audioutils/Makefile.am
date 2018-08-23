@@ -10,7 +10,6 @@ CHANGE_FILES = \
 	audacious.ch   \
 	audioutils.ch  \
 	cdparanoia.ch  \
-	freetts.ch     \
 	kwave.ch       \
 	lame.ch        \
 	mpg123.ch      \

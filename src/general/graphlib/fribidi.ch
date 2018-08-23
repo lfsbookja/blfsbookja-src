@@ -81,12 +81,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="glib2"/>
+      <ulink url="http://www.ciselant.de/c2man/c2man.html">c2man (to build man pages)</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="glib2"/>
+      <ulink url="http://www.ciselant.de/c2man/c2man.html">c2man (to build man pages)</ulink>
     </para>
 @z
 
@@ -110,29 +110,15 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><command>sed -i ...</command>: These commands fix two header files if
-    <application>GLib-2</application> is linked into the build.</para>
-@y
-    <para><command>sed -i ...</command>:
-    これらのコマンドは <application>GLib-2</application> がリンクされる際に二つのヘッダーファイルを修正します。</para>
 @z
 
 @x

@@ -103,28 +103,28 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="python2"/> or
-      <xref linkend="python3"/>, and
       <xref linkend="xorg-env"/> (should be set for the following instructions
       to work)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="python2"/> または
-      <xref linkend="python3"/>,
-      <xref linkend="xorg-env"/> (本節での内容が適切に動作するように設定が必要)
+      <xref linkend="xorg-env"/> （本節での内容が適切に動作するように設定が必要）
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (required to run the
-    tests)</bridgehead>
-    <para role="optional"><xref linkend="libxml2"/></para>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="python2"/> and
+      <xref linkend="libxml2"/> (required to run the tests)
+     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;
-    (テスト実行のために必要)</bridgehead>
-    <para role="optional"><xref linkend="libxml2"/></para>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="python2"/>,
+      <xref linkend="libxml2"/> （テスト実行に必要）
+     </para>
 @z
 
 @x

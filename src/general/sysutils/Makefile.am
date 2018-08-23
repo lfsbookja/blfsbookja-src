@@ -7,12 +7,12 @@
 ##
 BOOKdir = @abs_bookdir@/general/sysutils
 CHANGE_FILES = \
+	accountsservice.ch \
 	acpid.ch         \
 	at.ch            \
 	autofs.ch        \
 	bluez.ch         \
 	colord.ch        \
-	colord1.ch       \
 	cpio.ch          \
 	cups-pk-helper.ch \
 	dbus.ch          \
@@ -24,7 +24,6 @@ CHANGE_FILES = \
 	logrotate.ch     \
 	mc.ch            \
 	modemmanager.ch  \
-	obex-data-server.ch \
 	p7zip.ch         \
 	pax.ch           \
 	pciutils.ch      \

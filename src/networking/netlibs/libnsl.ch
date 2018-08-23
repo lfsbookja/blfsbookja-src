@@ -22,10 +22,10 @@
 @x
       The <application>libnsl</application> package contains the public client
       interface for NIS(YP) and NIS+. It replaces the NIS library that used to
-      be in GlibC.
+      be in glibc.
 @y
-      <application>libnsl</application> パッケージは、NIS(YP) および NIS+ に対するクライアントインターフェースを提供します。
-      これは GlibC にて利用されている NIS ライブラリに置き換わるものです。
+      <application>libnsl</application> パッケージは、NIS（YP）および NIS+ に対するクライアントインターフェースを提供します。
+      これは glibc にて利用されている NIS ライブラリに置き換わるものです。
 @z
 
 @x
@@ -77,12 +77,12 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Requried</bridgehead>
+    <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="rpcsvc-proto"/> and <xref linkend="libtirpc"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="rpcsvc-proto"/>, <xref linkend="libtirpc"/>
     </para>

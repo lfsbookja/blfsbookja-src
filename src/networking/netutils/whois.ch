@@ -92,12 +92,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libidn"/>
+      <xref linkend="libidn"/> or
+      <xref linkend="libidn2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libidn"/>
+      <xref linkend="libidn"/> または
+      <xref linkend="libidn2"/>
     </para>
 @z
 
@@ -200,7 +202,7 @@
 @z
 
 @x mkpasswd
-            generate new password, optionally apply it to a user.
+            generates a new password, and optionally applies it to a user.
 @y
-            generate new password, optionally apply it to a user.
+            generates a new password, and optionally applies it to a user.
 @z

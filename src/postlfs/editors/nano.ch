@@ -71,24 +71,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Nano Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;Nano&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="slang"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="slang"/>
-    </para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -136,16 +118,6 @@
 @z
 
 @x
-      <option>--with-slang</option>: This forces <application>Nano</application>
-      to use <application>S-Lang</application>.
-      Use this if installed.
-@y
-      <option>--with-slang=/usr/lib</option>:
-      <application>Nano</application> において <application>S-Lang</application> を利用するようにします。
-      <application>S-Lang</application> をインストールしている場合にこれを指定します。
-@z
-
-@x
     <title>Configuring nano</title>
 @y
     <title>&Configuring1;Nano&Configuring2;</title>
@@ -181,12 +153,11 @@
 @z
 
 @x
-        Another example is the <filename>nanorc.sample</filename> file
-        in the installed documentation directory.
-        It includes color configurations and has some documentation included
-        in the comments.
+        Check the <filename>sample.nanorc</filename> file in the installed
+        documentation directory. It includes color configurations and has
+        some documentation included in the comments.
 @y
-        設定のサンプルとして、ドキュメントをインストールしたディレクトリに <filename>nanorc.sample</filename> というファイルもあります。
+        ドキュメントをインストールしたディレクトリに <filename>nanorc.sample</filename> というファイルもあります。
         このファイルには色の設定例や、多くの説明がコメント内にて示されています。
 @z
 

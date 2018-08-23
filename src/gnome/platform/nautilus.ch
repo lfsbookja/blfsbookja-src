@@ -77,15 +77,19 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="gexiv2"/>,
       <xref linkend="gnome-autoar"/>,
-      <xref linkend="gnome-desktop"/>, and
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="tracker"/>, and
       <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="gexiv2"/>,
       <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-desktop"/>,
+      <xref linkend="tracker"/>,
       <xref linkend="libnotify"/>
     </para>
 @z
@@ -93,13 +97,15 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="desktop-file-utils"/>,
       <xref linkend="exempi"/>,
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>, and
       <xref linkend="libexif"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="desktop-file-utils"/>,
       <xref linkend="exempi"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libexif"/>
@@ -109,28 +115,27 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
     <para role="recommended">
-      <xref linkend="adwaita-icon-theme"/>, and
-      <xref linkend="gvfs"/> (For hotplugging and device mounting to work)
+      <xref role="runtime" linkend="adwaita-icon-theme"/>, and
+      <xref role="runtime" linkend="gvfs"/> (For hotplugging and device
+        mounting to work)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (実行時)</bridgehead>
     <para role="recommended">
-      <xref linkend="adwaita-icon-theme"/>, and
-      <xref linkend="gvfs"/> (ホットプラグ、デバイスマッピングを動作させるため)
+      <xref role="runtime" linkend="adwaita-icon-theme"/>,
+      <xref role="runtime" linkend="gvfs"/> (ホットプラグ、デバイスマッピングを動作させるため)
     </para>
 @z
 
@@ -154,9 +159,11 @@
 @z
 
 @x
-      This package does not come with a test suite. 
+      To test the results, issue: <command>ninja test</command>. The tests
+      need to be run in a graphical environment.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>ninja check</command> を実行します。
+      テストはグラフィック環境にて実行する必要があります。
 @z
 
 @x
@@ -166,58 +173,33 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. The tests
-      need to be run in a graphical environment.
-@y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストはグラフィック環境にて実行する必要があります。
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
 @z
 
 @x
-      <parameter>--disable-selinux</parameter>: This switch disables the use
+      <command>sed s/\'libm\'/\'m\'/ -i meson.build</command>: Fix the build
+      system so that it finds the Math library.
+@y
+      <command>sed s/\'libm\'/\'m\'/ -i meson.build</command>: Fix the build
+      system so that it finds the Math library.
+@z
+
+@x
+      <parameter>-Dselinux=false</parameter>: This switch disables the use
       of selinux which isn't supported by BLFS.
 @y
-      <parameter>--disable-selinux</parameter>: This switch disables the use
+      <parameter>-Dselinux=false</parameter>: This switch disables the use
       of selinux which isn't supported by BLFS.
 @z
 
 @x
-      <parameter>--disable-packagekit</parameter>: This switch disables the use
+      <parameter>-Dpackagekit=false</parameter>: This switch disables the use
       of PackageKit which isn't suitable for BLFS.
 @y
-      <parameter>--disable-packagekit</parameter>:
-      本スイッチは BLFS には含めていない PackageKit を利用しないようにします。
-@z
-
-@x
-      <parameter>--disable-tracker</parameter>: This switch disables
-      the use of <application>Tracker</application> which isn't part of
-      BLFS.
-@y
-      <parameter>--disable-tracker</parameter>:
-      本スイッチは BLFS には含めていない <application>Tracker</application> は利用しないことを指示します。
-@z
-
-@x
-      <option>--disable-xmp</option>: Use this switch if
-      you did not install <application>Exempi</application>.
-@y
-      <option>--disable-xmp</option>:
-      <application>Exempi</application> をインストールしていない場合、本スイッチを指定します。
-@z
-
-@x
-      <option>--disable-libexif</option>: Use this switch if
-      you did not install <application>libexif</application>.
-@y
-      <option>--disable-libexif</option>:
-      <application>libexif</application> をインストールしていない場合、本スイッチを指定します。
+      <parameter>-Dpackagekit=false</parameter>: This switch disables the use
+      of PackageKit which isn't suitable for BLFS.
 @z
 
 @x
@@ -238,7 +220,7 @@
 
 @x
         <seg>
-          nautilus, nautilus-autorun-software, and nautilus-desktop
+          nautilus and nautilus-autorun-software
         </seg>
         <seg>
           libnautilus-extension.so
@@ -249,13 +231,13 @@
         </seg>
 @y
         <seg>
-          nautilus, nautilus-autorun-software, and nautilus-desktop
+          nautilus, nautilus-autorun-software
         </seg>
         <seg>
           libnautilus-extension.so
         </seg>
         <seg>
-          /usr/{include,lib}/nautilus and
+          /usr/{include,lib}/nautilus,
           /usr/share/{gnome-shell/search-providers,gtk-doc/html/libnautilus-extension}
         </seg>
 @z

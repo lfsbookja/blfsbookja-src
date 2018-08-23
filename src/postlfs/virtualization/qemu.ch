@@ -112,8 +112,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       Depending on the sound system, various packages in <xref linkend="alsa"/>,
+      <xref linkend="pulseaudio"/>,
       <xref linkend="bluez"/>,
-      <xref linkend="check"/>,
       <xref linkend="curl"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="gnutls"/>,
@@ -121,21 +121,21 @@
       <xref linkend="gtk3"/>,
       <xref linkend="libusb"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libssh2"/>,
       <xref linkend="lzo"/>,
       <xref linkend="nettle"/>,
       <xref linkend="mesa"/>,
       <xref linkend="sdl"/>,
-      <xref linkend="vte"/> or <xref linkend="vte2"/>,
+      <xref linkend="vte"/> or <xref linkend="vte2"/>, and
 <!-- libcacard has been a standalone project since qemu-2.5.-->
-      <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>,
-      and <ulink url="http://www.libssh2.org">libssh2</ulink>
+      <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       Depending on the sound system, various packages in <xref linkend="alsa"/>,
+      <xref linkend="pulseaudio"/>,
       <xref linkend="bluez"/>,
-      <xref linkend="check"/>,
       <xref linkend="curl"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="gnutls"/>,
@@ -143,14 +143,14 @@
       <xref linkend="gtk3"/>,
       <xref linkend="libusb"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libssh2"/>,
       <xref linkend="lzo"/>,
       <xref linkend="nettle"/>,
       <xref linkend="mesa"/>,
       <xref linkend="sdl"/>,
       <xref linkend="vte"/> or <xref linkend="vte2"/>,
 <!-- libcacard has been a standalone project since qemu-2.5.-->
-      <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>,
-      <ulink url="http://www.libssh2.org">libssh2</ulink>
+      <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>
     </para>
 @z
 
@@ -314,15 +314,23 @@
 @z
 
 @x
+      <command>sed ... util/memfd.c</command>: This command fixes a conflict
+      introduced with glibc-2.27.
+@y
+      <command>sed ... util/memfd.c</command>: This command fixes a conflict
+      introduced with glibc-2.27.
+@z
+
+@x
       <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
       driver to ALSA. For other drivers see the --audio-drv-list list in
       <command>configure</command>'s help output. The default audio driver is
-      OSS.
+      OSS. To enable support for alsa and pulseaudio, use <parameter>--audio-drv-list=alsa,pa</parameter>
 @y
       <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
       driver to ALSA. For other drivers see the --audio-drv-list list in
       <command>configure</command>'s help output. The default audio driver is
-      OSS.
+      OSS. To enable support for alsa and pulseaudio, use <parameter>--audio-drv-list=alsa,pa</parameter>
 @z
 
 @x

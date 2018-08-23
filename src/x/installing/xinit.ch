@@ -89,18 +89,20 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required (runtime only)</bridgehead>
-    <para role="required">
-      <xref linkend="twm"/>, 
-      <xref linkend="xclock"/>, and
-      <xref linkend="xterm2"/>
+    <bridgehead renderas="sect4">Recommended (runtime only)</bridgehead>
+    <para role="recommended">
+      <xref role="runtime" linkend="twm"/>, 
+      <xref role="runtime" linkend="xclock"/>, and
+      <xref role="runtime" linkend="xterm2"/> (used in the default <filename>
+      xinitrc</filename> file)
     </para>
 @y
-    <bridgehead renderas="sect4">&Required; (実行時のみ)</bridgehead>
-    <para role="required">
-      <xref linkend="twm"/>, 
-      <xref linkend="xclock"/>,
-      <xref linkend="xterm2"/>
+    <bridgehead renderas="sect4">&Recommended; （実行時のみ）</bridgehead>
+    <para role="recommended">
+      <xref role="runtime" linkend="twm"/>, 
+      <xref role="runtime" linkend="xclock"/>,
+      <xref role="runtime" linkend="xterm2"/> (used in the default <filename>
+      xinitrc</filename> file)
     </para>
 @z
 

@@ -26,36 +26,25 @@
 @z
 
 @x
-  <para>The presence or absence of the <command>which</command> program
-  in the main LFS book is probably one of the most contentious issues on the
-  mailing lists. It has resulted in at least one flame war in the past. To hopefully
-  put an end to this once and for all, presented here are two options for equipping
-  your system with <command>which</command>. The question of which
-  <quote><command>which</command></quote> is for you to decide.</para>
+    The presence or absence of the <command>which</command> program in the
+    main LFS book is probably one of the most contentious issues on the
+    mailing lists. It has resulted in at least one flame war in the past. To
+    hopefully put an end to this once and for all, presented here are two
+    options for equipping your system with <command>which</command>. The
+    question of which <quote><command>which</command></quote> is for you to
+    decide.
 @y
-  <para>
-  <command>which</command>
-  プログラムを LFS ブックに含めるべきかどうかは、メーリングリストにてかねてより議論されているところです。
-  過去には激しい議論だけに終わってしまった経緯もあります。
-  できればこの議論を終わりにしたいと考えています。
-  ここでは <command>which</command> を導入する２つの方法を示します。
-  どちらの方法を取るかは、みなさんが取り決めてください。
-  </para>
+    <command>which</command> プログラムを LFS ブックに含めるべきかどうかは、メーリングリストにてかねてより議論されているところです。
+    過去には激しい議論だけに終わってしまった経緯もあります。
+    できればこの議論を終わりにしたいと考えています。
+    ここでは <command>which</command> を導入する２つの方法を示します。
+    どちらの方法を取るかは、みなさんが取り決めてください。
 @z
 
 @x
-  <para>The first option is to install the actual GNU
-  <application>which</application> package.</para>
+    <title>Introduction to GNU Which</title>
 @y
-  <para>
-  １つの方法は GNU の <application>which</application> パッケージを導入することです。
-  </para>
-@z
-
-@x
-    <title>Introduction to Which</title>
-@y
-    <title>&IntroductionTo1;Which&IntroductionTo2;</title>
+    <title>&IntroductionTo1;GNU Which&IntroductionTo2;</title>
 @z
 
 @x

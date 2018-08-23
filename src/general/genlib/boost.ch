@@ -81,14 +81,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
-      <xref linkend="python2"/> or <xref linkend="python3"/>, and
+      <xref linkend="python2"/>, and
       <ulink url="https://www.open-mpi.org/">Open MPI</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
-      <xref linkend="python2"/> または <xref linkend="python3"/>,
+      <xref linkend="python2"/>,
       <ulink url="https://www.open-mpi.org/">Open MPI</ulink>
     </para>
 @z
@@ -113,26 +113,30 @@
 @z
 
 @x
-      To run the Boost.Build's regression test (<xref linkend="python2"/>
-      is required), issue <command>pushd tools/build/test; python test_all.py;
-      popd</command>. All 131 tests should pass.
+      To run the Boost.Build's regression test, <xref linkend="python2"/>
+      is required.
+      Run the tests with: issue <command>pushd tools/build/test; 
+      python test_all.py; popd</command>. 
+      All 150 tests should pass.
 @y
-      To run the Boost.Build's regression test (<xref linkend="python2"/>
-      is required), issue <command>pushd tools/build/test; python test_all.py;
-      popd</command>. All 131 tests should pass.
+      To run the Boost.Build's regression test, <xref linkend="python2"/>
+      is required.
+      Run the tests with: issue <command>pushd tools/build/test; 
+      python test_all.py; popd</command>. 
+      All 150 tests should pass.
 @z
 
 @x
       To run every library's regression tests, issue <command>pushd status;
-      ../b2; popd</command>.  A few tests may fail. They take very long (over
-      120 SBU at -j1, 50 SBU at -j4) and use a very large amount of disk space 
-      (up to 40 GB). You can use the <parameter>-jN</parameter> switch to
+      ../b2; popd</command>.  A few tests may fail. They take a very long time
+      (over 119 SBU at -j4) and use a very large amount of disk space
+      (46 GB). You should use the <parameter>-jN</parameter> switch to
       speed them up.
 @y
       To run every library's regression tests, issue <command>pushd status;
-      ../b2; popd</command>.  A few tests may fail. They take very long (over
-      120 SBU at -j1, 50 SBU at -j4) and use a very large amount of disk space 
-      (up to 40 GB). You can use the <parameter>-jN</parameter> switch to
+      ../b2; popd</command>.  A few tests may fail. They take a very long time
+      (over 119 SBU at -j4) and use a very large amount of disk space
+      (46 GB). You should use the <parameter>-jN</parameter> switch to
       speed them up.
 @z
 
@@ -160,7 +164,7 @@
       <parameter>link=shared</parameter>: This parameter ensures that only
       shared libraries are created, except for libboost_exception and
       libboost_test_exec_monitor which are created as static. Most people
-      will not need the static libraries. Indeed most programs using
+      will not need the static libraries, and most programs using
       <application>Boost</application> only use the headers. Omit
       this parameter if you do need static libraries.
 @y
@@ -202,11 +206,14 @@
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so,
-          libboost_python.so or libboost_python3.so, libboost_random.so,
+          libboost_python27.so or libboost_python3.so, libboost_random.so,
           libboost_regex.so, libboost_serialization.so, libboost_signals.so,
+          libboost_stacktrace_addr2line.so, libboost_stacktrace_basic.so,
+          libboost_stacktrace_noop.so,
           libboost_system.a, libboost_system.so, libboost_test_exec_monitor.a,
           libboost_thread.so, libboost_timer.a, libboost_timer.so,
-          libboost_type_erasure.so, libboost_unit_test_framework.so,
+          libboost_type_erasure.so,
+          libboost_unit_test_framework.so,
           libboost_wave.so, and libboost_wserialization.so
         </seg>
         <seg>
@@ -226,11 +233,14 @@
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so,
-          libboost_python.so or libboost_python3.so, libboost_random.so,
+          libboost_python27.so or libboost_python3.so, libboost_random.so,
           libboost_regex.so, libboost_serialization.so, libboost_signals.so,
+          libboost_stacktrace_addr2line.so, libboost_stacktrace_basic.so,
+          libboost_stacktrace_noop.so,
           libboost_system.a, libboost_system.so, libboost_test_exec_monitor.a,
           libboost_thread.so, libboost_timer.a, libboost_timer.so,
-          libboost_type_erasure.so, libboost_unit_test_framework.so,
+          libboost_type_erasure.so,
+          libboost_unit_test_framework.so,
           libboost_wave.so, libboost_wserialization.so
         </seg>
         <seg>

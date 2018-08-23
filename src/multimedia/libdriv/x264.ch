@@ -77,12 +77,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="yasm"/>
+      <xref linkend="nasm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="yasm"/>
+      <xref linkend="nasm"/>
     </para>
 @z
 
@@ -135,10 +135,10 @@
 
 @x
       <option>--disable-asm</option>: Use this switch if you didn't install
-      yasm.
+      NASM.
 @y
       <option>--disable-asm</option>:
-      本スイッチは yasm をインストールしていない場合に指定します。
+      本スイッチは NASM をインストールしていない場合に指定します。
 @z
 
 @x

@@ -88,7 +88,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libtirpc"/>,
       <xref linkend="nfs-utils"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
@@ -98,11 +97,10 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libtirpc"/>,
       <xref linkend="nfs-utils"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="openldap"/> (client only),
+      <xref linkend="openldap"/> (client only), and
       <xref linkend="cyrus-sasl"/>
     </para>
 @z
@@ -177,11 +175,13 @@
 @z
 
 @x
-      <option>--with-libtirpc</option>: This switch enables libtirpc support if
-      available.
+      <parameter>--with-libtirpc</parameter>: This switch forces the package to
+      use libtirpc for RPC functionality instead of relying on implementation
+      from Glibc, which was removed in LFS 8.1.
 @y
-      <option>--with-libtirpc</option>: This switch enables libtirpc support if
-      available.
+      <parameter>--with-libtirpc</parameter>: This switch forces the package to
+      use libtirpc for RPC functionality instead of relying on implementation
+      from Glibc, which was removed in LFS 8.1.
 @z
 
 @x
@@ -323,14 +323,14 @@
       feature is not configured in these instructions.  For additional
       configuration information, see the man pages for auto.master(5).  There
       are also web resources such as this <ulink
-      url='http://wiki.gentoo.org/wiki/Autofs'>AUTOFS
+      url='http://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
       HOWTO</ulink> available.</para>
 @y
       <para>This package could also be used to mount SMB shares, however that
       feature is not configured in these instructions.  For additional
       configuration information, see the man pages for auto.master(5).  There
       are also web resources such as this <ulink
-      url='http://wiki.gentoo.org/wiki/Autofs'>AUTOFS
+      url='http://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
       HOWTO</ulink> available.</para>
 @z
 

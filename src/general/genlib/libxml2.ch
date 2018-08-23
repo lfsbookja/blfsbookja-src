@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libxml2-buildsize     "95 MB (additional 20 MB for tests)">
-  <!ENTITY libxml2-time          "0.6 SBU (additional 0.2 SBU for tests)">
+  <!ENTITY libxml2-buildsize     "83 MB (add 15 MB for tests)">
+  <!ENTITY libxml2-time          "0.2 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY libxml2-buildsize     "95 MB (テスト実施時はさらに 20 MB)">
-  <!ENTITY libxml2-time          "0.6 SBU (テスト実施時はさらに 0.2 SBU)">
+  <!ENTITY libxml2-buildsize     "83 MB（テスト実施時はさらに 15 MB）">
+  <!ENTITY libxml2-time          "0.2 SBU（テスト実施時はさらに 0.3 SBU）">
 @z
 
 @x
@@ -99,19 +99,19 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="python2"/> or <xref linkend="python3"/> (to build and
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="python2"/> <!--or <xref linkend="python3"/> (to build and
       install a <application>Python</application> library module, additionally
-      it is required to run the full suite of tests)
+      it is required to run the full suite of tests)-->
       <!-- As discovered by Bruce, itstool needs this module. -->
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="python2"/> または <xref linkend="python3"/>
-      (<application>Python</application> ライブラリモジュールをビルドしインストールする場合には必要です。
-      またテストスイートをすべて実施する際にも必要です。)
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="python2"/> <!--or <xref linkend="python3"/> (to build and
+      install a <application>Python</application> library module, additionally
+      it is required to run the full suite of tests)-->
       <!-- As discovered by Bruce, itstool needs this module. -->
     </para>
 @z
@@ -119,13 +119,13 @@
 @x
         Some packages which utilize <application>libxml2</application> (such as
         <application>GNOME Doc Utils</application>) need the
-        <application>Python</application> module installed to function properly
+        <application>Python3</application> module installed to function properly
         and some packages will not build properly if the
-        <application>Python</application> module is not available.
+        <application>Python3</application> module is not available.
 @y
-        <application>libxml2</application> を利用するパッケージの中には <application>Python</application> モジュールがないと正しく動作しないものがあります。
-        (例えば <application>GNOME Doc Utils</application> など。)
-        また <application>Python</application> モジュールがないとビルドができないパッケージもあります。
+        <application>libxml2</application> を利用するパッケージの中には <application>Python3</application> モジュールがないと正しく動作しないものがあります。
+        （例えば <application>GNOME Doc Utils</application> など。）
+        また <application>Python3</application> モジュールがないとビルドができないパッケージもあります。
 @z
 
 @x
@@ -195,10 +195,10 @@
 @z
 
 @x
-      <option>--with-python=/usr/bin/python3</option>: Add this switch if you
-      want libxml2 to use Python3 instead of Python2.
+      <parameter>--with-python=/usr/bin/python3</parameter>: Allows to build
+      the libxml2 module with Python3 instead of Python2.
 @y
-      <option>--with-python=/usr/bin/python3</option>:
+      <parameter>--with-python=/usr/bin/python3</parameter>:
       libxml2 が Python2 でなく Python3 を利用するようにしたいときに指定します。
 @z
 
@@ -220,11 +220,13 @@
 
 @x
         <seg>
-          xml2-config, xmlcatalog and xmllint
+          xml2-config, xmlcatalog, xmllint and the
+          drv_libxml2.py and libxml2.py <application>Python3</application>
+          modules.
         </seg>
         <seg>
           libxml2.so and optionally, the libxml2mod.so
-          <application>Python</application> module
+          <application>Python3</application> module
         </seg>
         <seg>
           /usr/include/libxml2,
@@ -235,11 +237,12 @@
         </seg>
 @y
         <seg>
-          xml2-config, xmlcatalog, xmllint
+          xml2-config, xmlcatalog, xmllint, 
+          <application>Python3</application> モジュールである drv_libxml2.py, libxml2.py
         </seg>
         <seg>
           libxml2.so, また任意のビルドとして libxml2mod.so
-          <application>Python</application> モジュール
+          <application>Python3</application> モジュール
         </seg>
         <seg>
           /usr/include/libxml2,

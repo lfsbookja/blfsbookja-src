@@ -85,8 +85,9 @@
       <xref linkend="cairo"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="glu"/>,
-      <xref linkend="mesa"/>, and
-      <xref linkend="pango"/>
+      <xref linkend="mesa"/>,<phrase revision="sysv"> and</phrase>
+      <xref linkend="pango"/><phrase revision="systemd">, and 
+      <xref linkend="wayland"/></phrase>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -94,8 +95,9 @@
       <xref linkend="cairo"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="glu"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="pango"/>
+      <xref linkend="mesa"/>,<phrase revision="sysv"> </phrase>
+      <xref linkend="pango"/><phrase revision="systemd">, 
+      <xref linkend="wayland"/></phrase>
     </para>
 @z
 
@@ -116,18 +118,18 @@
     <para role="optional">
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="sdl"/>,
-      <xref linkend="sdl2"/>, and
-      <xref linkend="wayland"/>
+      <xref linkend="sdl"/>,<phrase revision="systemd"> and</phrase>
+      <xref linkend="sdl2"/><phrase revision="sysv">, and
+      <xref linkend="wayland"/></phrase>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="sdl"/>,
-      <xref linkend="sdl2"/>,
-      <xref linkend="wayland"/>
+      <xref linkend="sdl"/>,<phrase revision="systemd"> </phrase>
+      <xref linkend="sdl2"/><phrase revision="sysv">,
+      <xref linkend="wayland"/></phrase>
     </para>
 @z
 

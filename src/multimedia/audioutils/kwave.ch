@@ -78,14 +78,16 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="audiofile"/>,
-      <xref linkend="fftw"/>, and
+      <xref linkend="fftw"/>, 
+      <xref linkend="id3lib"/>, and
       <xref linkend="kf5-frameworks"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="audiofile"/>,
-      <xref linkend="fftw"/>,
+      <xref linkend="fftw"/>, 
+      <xref linkend="id3lib"/>,
       <xref linkend="kf5-frameworks"/>
     </para>
 @z

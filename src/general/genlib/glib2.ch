@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "142 MB (additional 73 MB for tests)">
-  <!ENTITY glib2-time          "1.0 SBU (additional 4.5 SBU for tests)">
+  <!ENTITY glib2-buildsize     "146 MB (add 77 MB for tests)">
+  <!ENTITY glib2-time          "0.4 SBU (using paralleism=4; add 4.5 SBU for tests)">
 @y
-  <!ENTITY glib2-buildsize     "142 MB (テスト実施時はさらに 73 MB)">
-  <!ENTITY glib2-time          "1.0 SBU (テスト実施時はさらに 4.5 SBU)">
+  <!ENTITY glib2-buildsize     "146 MB (テスト実施時はさらに 77 MB)">
+  <!ENTITY glib2-time          "0.4 SBU (parallelism=4 利用時；テスト実施時はさらに 4.5 SBU)">
 @z
 
 @x
@@ -88,20 +88,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="libffi"/> and
-      <xref linkend="python2"/> or <xref linkend="python3"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="libffi"/>,
-      <xref linkend="python2"/> または <xref linkend="python3"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="pcre"/> (built with Unicode properties)
@@ -116,20 +102,26 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/> (required for some tests),
-      <xref linkend="elfutils"/>,
-      <xref linkend="gtk-doc"/>,
-      <ulink url="ftp://oss.sgi.com/projects/fam/download/stable/">FAM library</ulink>, and
-      <ulink url="https://www.gnu.org/software/indent/">GNU Indent</ulink>
+      <xref linkend="dbus"/> and
+      <ulink url="https://bindfs.org/">bindfs</ulink>
+        (both may be used in some tests),
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="gtk-doc"/>, and
+      <xref linkend="libxslt"/>
+        (all four to build manual pages)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/> (いくつかのテストにて必要),
-      <xref linkend="elfutils"/>,
+      <xref linkend="dbus"/> と
+      <ulink url="https://bindfs.org/">bindfs</ulink>
+        （両者ともに各種テストにて用いられる）,
+      <xref linkend="DocBook"/>,
+      <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="ftp://oss.sgi.com/projects/fam/download/stable/">FAM library</ulink>,
-      <ulink url="https://www.gnu.org/software/indent/">GNU Indent</ulink>
+      <xref linkend="libxslt"/>
+        （man ページ生成に必要）
     </para>
 @z
 
@@ -139,11 +131,11 @@
     <bridgehead renderas="sect4">実行時のその他の依存パッケージ</bridgehead>
 @z
 @x
-      <xref linkend="gobject-introspection"/> (should be installed before
-      gtk+, atk, etc.)
+      <xref role="runtime" linkend="gobject-introspection"/>
+      (should be installed before gtk+, atk, etc.)
 @y
-      <xref linkend="gobject-introspection"/> (should be installed before
-      gtk+, atk, etc.)
+      <xref role="runtime" linkend="gobject-introspection"/>
+      (should be installed before gtk+, atk, etc.)
 @z
 @x
       Quoted directly from the <filename>INSTALL</filename> file:
@@ -151,16 +143,16 @@
       <command>update-mime-database</command> and
       <command>update-desktop-database</command> utilities</quote>,
       which are part of
-      <xref linkend="shared-mime-info"/> and
-      <xref linkend="desktop-file-utils"/>, respectively.
+      <xref role="runtime" linkend="shared-mime-info"/> and
+      <xref role="runtime" linkend="desktop-file-utils"/>, respectively.
 @y
       Quoted directly from the <filename>INSTALL</filename> file:
       <quote>Some of the mimetype-related functionality in GIO requires the
       <command>update-mime-database</command> and
       <command>update-desktop-database</command> utilities</quote>,
       which are part of
-      <xref linkend="shared-mime-info"/> and
-      <xref linkend="desktop-file-utils"/>, respectively.
+      <xref role="runtime" linkend="shared-mime-info"/> and
+      <xref role="runtime" linkend="desktop-file-utils"/>, respectively.
 @z
 
 @x
@@ -210,9 +202,12 @@
 
 @x
       To test the results, after having installed the package, issue:
-      <command>make -k check</command>. 
+      <command>make -k check</command>.  When run in a graphical environment, 
+      one test, appinfo, fails if <xref linkend='gnome-terminal'/> is not 
+      installed.
 @y
       ビルド結果をテストする場合は、本パッケージをインストールした後に <command>make -k check</command> を実行します。
+      グラフィック環境でテストを実行する場合、<xref linkend='gnome-terminal'/> をインストールしていないと、appinfo というテストが失敗します。
 @z
 
 @x
@@ -227,8 +222,18 @@
       <application>PCRE</application> library instead of an internal
       version.
 @y
-      <parameter>--with-pcre=system</parameter>:
-      このスイッチの指定により、バンドルされている <application>PCRE</application> ライブラリではなく、インストール済のライブラリを用いてビルドを行います。
+      <parameter>--with-pcre=system</parameter>: This switch causes the
+      build to use a system-provided version of the
+      <application>PCRE</application> library instead of an internal
+      version.
+@z
+
+@x
+      <parameter>--with-python=/usr/bin/python3</parameter>: Allows
+      using Python3 instead of Python2, even if Python2 is installed.
+@y
+      <parameter>--with-python=/usr/bin/python3</parameter>: Allows
+      using Python3 instead of Python2, even if Python2 is installed.
 @z
 
 @x
@@ -249,39 +254,53 @@
 
 @x
         <seg>
-          gapplication, gdbus, gdbus-codegen, gio, gio-querymodules,
+          gapplication,           gdbus, gdbus-codegen, 
+          gio,                    gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
-          glib-genmarshal, glib-gettextize, glib-mkenums,
-          gobject-query, gresource, gsettings, gtester,
-          and gtester-report
+          glib-genmarshal,        glib-gettextize, 
+          glib-mkenums,           gobject-query, 
+          gresource,              gsettings, 
+          gtester, and            gtester-report
         </seg>
         <seg>
-          libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
-          libgobject-2.0.so, and libgthread-2.0.so
+          libgio-2.0.so, 
+          libglib-2.0.so, 
+          libgmodule-2.0.so,
+          libgobject-2.0.so, and 
+          libgthread-2.0.so
         </seg>
         <seg>
           /usr/include/gio-unix-2.0,
-          /usr/{include,lib,share}/glib-2.0,
-          /usr/lib/gio, and
-          /usr/share/gtk-doc/html/g{io,lib,object}
+          /usr/include/glib-2.0,
+          /usr/lib/gio, 
+          /usr/lib/glib-2.0,
+          /usr/share/glib-2.0, and 
+          /usr/share/gtk-doc/html/{gio,glib,gobject}
         </seg>
 @y
         <seg>
-          gapplication, gdbus, gdbus-codegen, gio, gio-querymodules,
+          gapplication,           gdbus, gdbus-codegen, 
+          gio,                    gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
-          glib-genmarshal, glib-gettextize, glib-mkenums,
-          gobject-query, gresource, gsettings, gtester,
-          gtester-report
+          glib-genmarshal,        glib-gettextize, 
+          glib-mkenums,           gobject-query, 
+          gresource,              gsettings, 
+          gtester,                gtester-report
         </seg>
         <seg>
-          libgio-2.0.so, libglib-2.0.so, libgmodule-2.0.so,
-          libgobject-2.0.so, libgthread-2.0.so
+          libgio-2.0.so, 
+          libglib-2.0.so, 
+          libgmodule-2.0.so,
+          libgobject-2.0.so,
+          libgthread-2.0.so
         </seg>
         <seg>
           /usr/include/gio-unix-2.0,
-          /usr/{include,lib,share}/glib-2.0,
-          /usr/lib/gio,
-          /usr/share/gtk-doc/html/g{io,lib,object}
+          /usr/include/glib-2.0,
+          /usr/lib/gio, 
+          /usr/lib/glib-2.0,
+          /usr/share/glib-2.0,
+          /usr/share/gtk-doc/html/{gio,glib,gobject}
         </seg>
 @z
 

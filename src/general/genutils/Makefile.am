@@ -9,7 +9,6 @@ BOOKdir = @abs_bookdir@/general/genutils
 CHANGE_FILES = \
 	asciidoc.ch           \
 	bogofilter.ch         \
-	chrpath.ch            \
 	compface.ch           \
 	desktop-file-utils.ch \
 	genutils.ch           \
@@ -30,6 +29,8 @@ CHANGE_FILES = \
 	sharutils.ch          \
 	tidy-html5.ch         \
 	time.ch               \
+	telepathy-logger.ch   \
+	telepathy-mission-control.ch \
         tree.ch               \
 	unixodbc.ch           \
 	xdg-user-dirs.ch

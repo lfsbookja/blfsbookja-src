@@ -79,14 +79,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus"/> and
-      <xref linkend="glib2"/>
+      <xref linkend="dbus"/>,
+      <xref linkend="glib2"/>,
+      <xref linkend="libsecret"/> and
+      <xref linkend="libsoup"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="libsecret"/>,
+      <xref linkend="libsoup"/>
     </para>
 @z
 
@@ -95,18 +99,16 @@
     <para role="recommended" revision="sysv">
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libgudev"/>,
-      <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>, and
+      <xref linkend="libcdio"/>,
+      <xref linkend="libgudev"/> and
       <xref linkend="udisks2"/>
     </para>
     <para role="recommended" revision="systemd">
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="libcdio"/>,
       <xref linkend="libgdata"/>,
       <xref linkend="libgudev"/>,
-      <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>,
       <xref linkend="systemd"/>, and
       <xref linkend="udisks2"/>
     </para>
@@ -115,18 +117,16 @@
     <para role="recommended" revision="sysv">
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="libcdio"/>,
       <xref linkend="libgudev"/>,
-      <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>,
       <xref linkend="udisks2"/>
     </para>
     <para role="recommended" revision="systemd">
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="libcdio"/>,
       <xref linkend="libgdata"/>,
       <xref linkend="libgudev"/>,
-      <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>,
       <xref linkend="systemd"/>,
       <xref linkend="udisks2"/>
     </para>
@@ -142,7 +142,6 @@
       <xref linkend="fuse2"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
-      <xref linkend="libcdio"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
@@ -152,32 +151,11 @@
       <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, and
+      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, 
+      <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>, and
       <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>,
     </para>
-    <para role="optional" revision="systemd">
-      <xref linkend="apache"/>,
-      <xref linkend="avahi"/>,
-      <xref linkend="bluez"/>,
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="fuse3"/>,
-      <xref linkend="gnome-online-accounts"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="libcdio"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="openssh"/>,
-      <xref linkend="samba"/>,
-      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
-      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>, and
-      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
-    </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional" revision="sysv">
       <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
@@ -186,7 +164,6 @@
       <xref linkend="fuse2"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
-      <xref linkend="libcdio"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
@@ -196,19 +173,22 @@
       <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>,
+      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, 
+      <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>,
       <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>,
     </para>
+@z
+
+@x
     <para role="optional" revision="systemd">
       <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
-      <xref linkend="fuse3"/>,
+      <xref linkend="fuse2"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
-      <xref linkend="libcdio"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
@@ -218,6 +198,29 @@
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
       <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
       <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>,
+      <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>, and
+      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
+    </para>
+@y
+    <para role="optional" revision="systemd">
+      <xref linkend="apache"/>,
+      <xref linkend="avahi"/>,
+      <xref linkend="bluez"/>,
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="fuse2"/>,
+      <xref linkend="gnome-online-accounts"/>,
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libarchive"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="openssh"/>,
+      <xref linkend="samba"/>,
+      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
+      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
+      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
+      <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>,
+      <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>,
       <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
     </para>
 @z
@@ -225,12 +228,12 @@
 @x
     <bridgehead renderas="sect4">Optional (Runtime)</bridgehead>
     <para role="optional">
-      <xref linkend="obex-data-server"/>
+      <xref role="runtime" linkend="obex-data-server"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (実行時)</bridgehead>
     <para role="optional">
-      <xref linkend="obex-data-server"/>
+      <xref role="runtime" linkend="obex-data-server"/>
     </para>
 @z
 
@@ -254,13 +257,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>.
-      Some tests (potentially half) may fail, normally due to a missing
-      optional dependency (Twisted).
+      This package does not come with at test suite.
 @y
-      To test the results, issue: <command>make -k check</command>.
-      Some tests (potentially half) may fail, normally due to a missing
-      optional dependency (Twisted).
+      This package does not come with at test suite.
 @z
 
 @x
@@ -276,14 +275,37 @@
 @z
 
 @x
-      <parameter>--disable-gphoto2</parameter>: This switch is required if
-      <application>libgphoto2</application> is not installed. Remove
-      it if you installed <application>libgphoto2</application> and
-      wish to use it with <application>Gvfs</application>.
+      <parameter>-D&lt;option&gt;=false</parameter>: These switches are
+      required if the corresponding optional dependency is not installed.
+      Remove those where you have installed the corresponding application and
+      wish to use it with <application>Gvfs</application>. The dnssd option 
+      requires avahi and both goa/google require GNOME Online Accounts.
 @y
-      <parameter>--disable-gphoto2</parameter>:
-      このスイッチは <application>libgphoto2</application> がインストールされていない場合に必要です。
-      <application>libgphoto2</application> をインストールしていて、これを <application>Gvfs</application> にて利用したい場合は、このスイッチを取り除いてください。
+      <parameter>-D&lt;option&gt;=false</parameter>: These switches are
+      required if the corresponding optional dependency is not installed.
+      Remove those where you have installed the corresponding application and
+      wish to use it with <application>Gvfs</application>. The dnssd option 
+      requires avahi and both goa/google require GNOME Online Accounts.
+@z
+
+@x
+      <parameter>-Dtmpfilesdir=no -Dsystemduserunitdir=no</parameter>: These
+      switches provide systemd directory locations. Setting them to
+      <quote>no</quote> disables the dependency on systemd and logind.
+@y
+      <parameter>-Dtmpfilesdir=no -Dsystemduserunitdir=no</parameter>: These
+      switches provide systemd directory locations. Setting them to
+      <quote>no</quote> disables the dependency on systemd and logind.
+@z
+
+@x
+      <option>-Dcdda=false</option>: This switch is required if libcdio is not
+      installed. The cdda backend is useless on machines without a CDROM/DVD
+      drive.
+@y
+      <option>-Dcdda=false</option>: This switch is required if libcdio is not
+      installed. The cdda backend is useless on machines without a CDROM/DVD
+      drive.
 @z
 
 @x
@@ -304,10 +326,13 @@
 
 @x
         <seg>
-          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mime,
+<!--          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mime,
           gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
           gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
-          gvfs-set-attribute, gvfs-trash, and gvfs-tree
+          gvfs-set-attribute, gvfs-trash, and gvfs-tree -->
+          <!-- None are installed in 1.36.2. It's slightly concerning but
+               maybe the functionality is elsewhere now. -->
+          None
         </seg>
         <seg>
           libgvfscommon.so,
@@ -320,15 +345,18 @@
         </seg>
 @y
         <seg>
-          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mime,
+<!--          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mime,
           gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
           gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
-          gvfs-set-attribute, gvfs-trash, gvfs-tree
+          gvfs-set-attribute, gvfs-trash, and gvfs-tree -->
+          <!-- None are installed in 1.36.2. It's slightly concerning but
+               maybe the functionality is elsewhere now. -->
+          &None;
         </seg>
         <seg>
           libgvfscommon.so,
           libgvfsdaemon.so,
-          /usr/lib/gio/modules/ 配下に数種のライブラリ
+          some under /usr/lib/gio/modules/
         </seg>
         <seg>
           /usr/include/gvfs-client,

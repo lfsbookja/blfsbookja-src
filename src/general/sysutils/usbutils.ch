@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY usbutils-time          "less than 0.1 SBU">
-@y
-  <!ENTITY usbutils-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to USB Utils</title>
 @y
     <title>&IntroductionTo1;USB Utils&IntroductionTo2;</title>
@@ -95,12 +89,14 @@
 
 @x
     <bridgehead renderas="sect4">Required Runtime</bridgehead>
-    <para role="required runtime">
-      <xref linkend="python2"/>    </para>
+    <para role="required">
+      <xref role="runtime" linkend="python2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">実行時に&Required;</bridgehead>
-    <para role="required runtime">
-      <xref linkend="python2"/>    </para>
+    <para role="required">
+      <xref role="runtime" linkend="python2"/>
+    </para>
 @z
 
 @x

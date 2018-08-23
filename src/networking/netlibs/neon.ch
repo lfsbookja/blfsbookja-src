@@ -91,18 +91,22 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gnutls"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>, and
-      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>,
+      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
+      <!-- Note - this URL is broken as of 08-16-2018 -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gnutls"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>,
-      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>,
+      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
+      <!-- Note - this URL is broken as of 08-16-2018 -->
     </para>
 @z
 

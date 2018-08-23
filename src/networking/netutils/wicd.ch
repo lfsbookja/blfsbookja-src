@@ -224,13 +224,13 @@
 @z
 
 @x
-    <para><option>--no-install-kde</option>: Prevent installation of an
+    <para><parameter>--no-install-kde</parameter>: Prevent installation of an
     autostart desktop file for KDE. If you use KDE, you should instead install
     the
     <ulink url="http://projects.kde.org/projects/extragear/network/wicd-kde">Wicd
     KDE Client</ulink>.</para>
 @y
-    <para><option>--no-install-kde</option>:
+    <para><parameter>--no-install-kde</parameter>:
     KDE の自動起動デスクトップファイルをインストールしないようにします。
     KDE を利用するのであれば、代わりに <ulink
     url="http://projects.kde.org/projects/extragear/network/wicd-kde">Wicd KDE Client</ulink> をインストールしてください。
@@ -238,31 +238,31 @@
 @z
 
 @x
-    <para><option>--no-install-acpi</option>: Prevent installation of  
+    <para><parameter>--no-install-acpi</parameter>: Prevent installation of
     <command>suspend</command> and <command>resume</command> scripts for acpid.
     Omit this option if you use acpid.</para>
 @y
-    <para><option>--no-install-acpi</option>:
+    <para><parameter>--no-install-acpi</parameter>:
     acpid に対する <command>suspend</command> と <command>resume</command> スクリプトをインストールしないようにします。
     acpid を利用する場合は本オプションを取り除いてください。</para>
 @z
 
 @x
-    <para><option>--no-install-pmutils</option>: Prevent installation of hooks
-    for pm-utils. Omit this option if you use pm-utils.</para>
+    <para><parameter>--no-install-pmutils</parameter>: Prevent installation of
+    hooks for pm-utils. Omit this option if you use pm-utils.</para>
 @y
-    <para><option>--no-install-pmutils</option>:
+    <para><parameter>--no-install-pmutils</parameter>:
     pm-utils に対するフックをインストールしないようにします。
     pm-utils を利用する場合は本オプションを取り除いてください。
     </para>
 @z
 
 @x
-    <para revision="sysv"><option>--no-install-init</option>: Prevent
+    <para revision="sysv"><parameter>--no-install-init</parameter>: Prevent
     installation of any init scripts, as a bootscript is installed later in the
     instructions.</para>
 @y
-    <para revision="sysv"><option>--no-install-init</option>:
+    <para revision="sysv"><parameter>--no-install-init</parameter>:
     初期化のスクリプトをインストールしないようにします。
     ブートスクリプトは後の手順にてインストールされます。
     </para>

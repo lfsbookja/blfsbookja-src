@@ -102,11 +102,6 @@
 @y
         <para>OFFO (Objects for Formatting Objects) ハイフネーションパターン:
 @z
-@x
-        <para>Java Advanced Imaging (JAI) API components (architecture dependent):
-@y
-        <para>JAI (Java Advanced Imaging) API コンポーネント (アーキテクチャー依存):
-@z
 
 @x
     <bridgehead renderas="sect3">fop Dependencies</bridgehead>
@@ -131,7 +126,7 @@
     <para role="optional">
       <xref linkend="junit"/> (to run tests),
       <xref linkend="x-window-system"/> (to run tests),
-      <ulink url="https://maven.apache.org/">Maven</ulink>,
+      <xref linkend="maven"/> (an alternate build system),
       <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>, and
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
 <!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
@@ -142,10 +137,10 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="junit"/> (テスト実行のため),
-      <xref linkend="x-window-system"/> (テスト実行のため),
-      <ulink url="https://maven.apache.org/">Maven</ulink>,
-      <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>,
+      <xref linkend="junit"/> （テスト実行のため）,
+      <xref linkend="x-window-system"/> (to run tests),
+      <xref linkend="maven"/> (an alternate build system),
+      <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>, and
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
 <!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
      Some were listed here, but not all. I am not sure it is possible to
@@ -185,17 +180,11 @@
 @z
 
 @x
-      <title>Installing Java Advanced Imaging (JAI) API components</title>
+        Copy the XML hyphenation patterns into the fop source tree by running
+        the following commands:
 @y
-      <title>&InstallationOf1;Java Advanced Imaging (JAI) API コンポーネント&InstallationOf2;</title>
-@z
-
-@x
-        Install the JAI API components. As the <systemitem
-        class="username">root</systemitem> user:
-@y
-        Install the JAI API components. As the <systemitem
-        class="username">root</systemitem> user:
+        Copy the XML hyphenation patterns into the fop source tree by running
+        the following commands:
 @z
 
 @x
@@ -205,13 +194,13 @@
 @z
 
 @x
-        The <command>javadoc</command> command coming with OpenJDK 8 has
+        The <command>javadoc</command> command coming with OpenJDK 9 has
         become much stricter than before regarding the conformance of the
         Javadoc comments in source code to HTML. The FOP documentation does
         not meet those standard, so the conformance checks have to be
         disabled. This can be done with the following command:
 @y
-        The <command>javadoc</command> command coming with OpenJDK 8 has
+        The <command>javadoc</command> command coming with OpenJDK 9 has
         become much stricter than before regarding the conformance of the
         Javadoc comments in source code to HTML. The FOP documentation does
         not meet those standard, so the conformance checks have to be
@@ -397,10 +386,12 @@
 
 @x
         To include the <command>fop</command> script in your path,
-        update your personal or system-wide profile with the following:
+        update the system-wide profile with the following command as the
+        <systemitem class="username">root</systemitem> user:
 @y
         To include the <command>fop</command> script in your path,
-        update your personal or system-wide profile with the following:
+        update the system-wide profile with the following command as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x

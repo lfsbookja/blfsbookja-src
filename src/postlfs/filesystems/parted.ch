@@ -117,10 +117,10 @@
 
 @x
     <para>If you wish to run the test suite, first remove a test that normally
-    fails in BLFS, because it needs a locale C.UTF-8:</para>
+    fails in BLFS (because it needs a locale C.UTF-8):</para>
 @y
     <para>If you wish to run the test suite, first remove a test that normally
-    fails in BLFS, because it needs a locale C.UTF-8:</para>
+    fails in BLFS (because it needs a locale C.UTF-8):</para>
 @z
 
 @x

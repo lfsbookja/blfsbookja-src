@@ -80,6 +80,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="gtk3"/>,
       <xref linkend="libxfce4ui"/>,
       <xref linkend="libxfce4util"/> and
       <xref linkend="perl-uri"/>
@@ -87,6 +88,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="gtk3"/>,
       <xref linkend="libxfce4ui"/>,
       <xref linkend="libxfce4util"/>,
       <xref linkend="perl-uri"/>
@@ -164,11 +166,13 @@
           exo-preferred-applications
         </seg>
         <seg>
-          libexo-1.so
+          libexo-1.so and
+          libexo-2.so
         </seg>
         <seg>
           /etc/xdg/xfce4,
-          /usr/{include,lib/xfce4}/exo-1, and
+          /usr/{include,lib/xfce4}/exo-1, 
+          /usr/include/exo-2, and
           /usr/share/{{gtk-doc/html,pixmaps}/exo-1,xfce4}
         </seg>
 @y
@@ -177,11 +181,13 @@
           exo-preferred-applications
         </seg>
         <seg>
-          libexo-1.so
+          libexo-1.so,
+          libexo-2.so
         </seg>
         <seg>
           /etc/xdg/xfce4,
-          /usr/{include,lib/xfce4}/exo-1,
+          /usr/{include,lib/xfce4}/exo-1, 
+          /usr/include/exo-2,
           /usr/share/{{gtk-doc/html,pixmaps}/exo-1,xfce4}
         </seg>
 @z

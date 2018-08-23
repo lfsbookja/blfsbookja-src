@@ -105,8 +105,6 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="valgrind"/>, and
-      <!-- DotGNU has been decommisioned. Look again for next  libidn version. -->
-      <ulink url="http://www.gnu.org/software/dotgnu/">DotGNU Portable.NET</ulink> or
       <ulink url="http://www.mono-project.com/">Mono</ulink>
     </para>
 @y
@@ -117,8 +115,6 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="valgrind"/>,
-      <!-- DotGNU has been decommisioned. Look again for next  libidn version. -->
-      <ulink url="http://www.gnu.org/software/dotgnu/">DotGNU Portable.NET</ulink> または
       <ulink url="http://www.mono-project.com/">Mono</ulink>
     </para>
 @z
@@ -143,6 +139,7 @@
 @z
 
 @x
+<!--      This package does not come with a functional test suite. -->
       To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。

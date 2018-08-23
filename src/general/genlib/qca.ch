@@ -83,7 +83,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-    <xref linkend="cacerts"/>,
+    <xref linkend="make-ca"/>,
     <xref linkend="cmake"/>,
     <xref linkend="qt5"/>, and
     <xref linkend="which"/>
@@ -91,9 +91,9 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-    <xref linkend="cacerts"/>,
+    <xref linkend="make-ca"/>,
     <xref linkend="cmake"/>,
-    <xref linkend="qt5"/>,
+    <xref linkend="qt5"/>, and
     <xref linkend="which"/>
     </para>
 @z

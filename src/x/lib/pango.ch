@@ -98,15 +98,19 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="fontconfig"/> (must be built with
-       <xref linkend="freetype2"/> using <xref linkend="harfbuzz"/>) and
-      <xref linkend="glib2"/>
+       <xref linkend="freetype2"/> using <xref linkend="harfbuzz"/>),
+      <xref linkend="fribidi"/>, and
+      <xref linkend="glib2"/> 
+
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="fontconfig"/> (must be built with
        <xref linkend="freetype2"/> using <xref linkend="harfbuzz"/>),
-      <xref linkend="glib2"/>
+      <xref linkend="fribidi"/>, and
+      <xref linkend="glib2"/> 
+
     </para>
 @z
 
@@ -125,13 +129,17 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cantarell-fonts"/> (for tests), and
+      <xref linkend="cantarell-fonts"/> (for tests),
+      <xref linkend="gtk-doc"/>,
+      <ulink url="https://ftp.gnu.org/gnu/help2man">help2man</ulink>, and
       <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cantarell-fonts"/> (テストのため),
+      <xref linkend="cantarell-fonts"/> （テストのため）,
+      <xref linkend="gtk-doc"/>,
+      <ulink url="https://ftp.gnu.org/gnu/help2man">help2man</ulink>,
       <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @z
@@ -156,10 +164,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. The
-      test-layout test is known to fail.
+      To test the results, issue: <command>ninja test</command>. One test,
+      test-layout, is known to fail.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       test-layout テストは失敗します。
 @z
 
@@ -230,19 +238,20 @@
 
 @x
         <seg>
-          pango-view
+          pango-list and pango-view 
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
           and libpangoxft-1.0.so
         </seg>
         <seg>
-          /usr/include/pango-1.0 and
+          /usr/include/pango-1.0,
+          /usr/share/installed-tests/pango, and
           /usr/share/gtk-doc/html/pango
         </seg>
 @y
         <seg>
-          pango-view
+          pango-list, pango-view 
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
@@ -250,6 +259,7 @@
         </seg>
         <seg>
           /usr/include/pango-1.0,
+          /usr/share/installed-tests/pango,
           /usr/share/gtk-doc/html/pango
         </seg>
 @z

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "542 MB (with optional dependencies and documentation, add 24MB if building the docs)">
-  <!ENTITY git-time          "0.3 SBU (with parallelism=4, add 2.1 SBU if building documentation, add 1.4 SBU for tests with parallelism=4)">
+  <!ENTITY git-buildsize     "291 MB (with downloaded documentation)">
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 4.4 SBU for tests)">
 @y
-  <!ENTITY git-buildsize     "542 MB (任意依存パッケージとドキュメント込み, ドキュメント構築時はさらに 24 MB)">
-  <!ENTITY git-time          "0.3 SBU (parallelism=4 処理時, ドキュメント構築時はさらに 2.1 SBU, parallelism=4 でのテスト込みでさらに 1.4 SBU)">
+  <!ENTITY git-buildsize     "291 MB（ダウンロードドキュメントを含む）">
+  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; テスト実施時はさらに 4.4 SBU）">
 @z
 
 @x
@@ -138,7 +138,6 @@
     <para role="recommended">
       <xref linkend="curl"/> (needed to use <application>Git</application> over http,
       https, ftp or ftps),
-      <xref linkend="openssl"/>,
       <xref linkend="perl-error"/>, and
       <xref linkend="python2"/>
     </para>
@@ -146,7 +145,6 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/> (http, https, ftp, ftps 経由で <application>Git</application> を用いる場合に必要),
-      <xref linkend="openssl"/>,
       <xref linkend="perl-error"/>,
       <xref linkend="python2"/>
     </para>
@@ -159,7 +157,8 @@
       linkend="pcre"/>), in either case configured with
       <literal>--enable-jit</literal>,
       <xref linkend="subversion"/> with Perl bindings (for <command>git svn</command>),
-      <xref linkend="tk"/> (gitk, a simple <application>Git</application>
+      <xref role="runtime" linkend="tk"/>
+      (gitk, a simple <application>Git</application>
       repository viewer, uses <application>Tk</application> at runtime), and
       <xref linkend="valgrind"/>
     </para>
@@ -169,8 +168,9 @@
       <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
       linkend="pcre"/>), in either case configured with
       <literal>--enable-jit</literal>,
-      <xref linkend="subversion"/> Perl バインディング込み (<command>git svn</command> コマンドのため),
-      <xref linkend="tk"/> (gitk, a simple <application>Git</application>
+      <xref linkend="subversion"/> with Perl bindings (for <command>git svn</command>),
+      <xref role="runtime" linkend="tk"/>
+      (gitk, a simple <application>Git</application>
       repository viewer, uses <application>Tk</application> at runtime),
       <xref linkend="valgrind"/>
     </para>
@@ -318,11 +318,11 @@
 @z
 
 @x
-      <option>--with-libpcre2</option>: As an alternative to PCRE2, use this
+      <option>--with-libpcre</option>: As an alternative to PCRE2, use this
       switch if the deprecated <application>PCRE</application> is installed
       and has been built with the non-default JIT enabled.
 @y
-      <option>--with-libpcre2</option>: As an alternative to PCRE2, use this
+      <option>--with-libpcre</option>: As an alternative to PCRE2, use this
       switch if the deprecated <application>PCRE</application> is installed
       and has been built with the non-default JIT enabled.
 @z

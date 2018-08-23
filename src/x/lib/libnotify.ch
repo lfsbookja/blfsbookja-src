@@ -105,15 +105,15 @@
 
 @x
     <bridgehead renderas="sect4">Required (runtime)</bridgehead>
-    <para role="required runtime">
-      <xref linkend="notification-daemon"/> or
-      <xref linkend="xfce4-notifyd"/>
+    <para role="required">
+      <xref role="runtime" linkend="notification-daemon"/> or
+      <xref role="runtime" linkend="xfce4-notifyd"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
-    <para role="required runtime">
-      <xref linkend="notification-daemon"/> or
-      <xref linkend="xfce4-notifyd"/>
+    <bridgehead renderas="sect4">&Required; （実行時）</bridgehead>
+    <para role="required">
+      <xref role="runtime" linkend="notification-daemon"/> または
+      <xref role="runtime" linkend="xfce4-notifyd"/>
     </para>
 @z
 

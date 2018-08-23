@@ -80,16 +80,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="curl"/>,
-      <xref linkend="libevent"/>, and
-      <xref linkend="openssl"/>
+      <xref linkend="curl"/>, and
+      <xref linkend="libevent"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
-      <xref linkend="libevent"/>,
-      <xref linkend="openssl"/>
+      <xref linkend="libevent"/>
     </para>
 @z
 

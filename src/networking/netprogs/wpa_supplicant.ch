@@ -82,20 +82,18 @@
 @x
     <bridgehead renderas="sect3">WPA Supplicant Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">WPA Supplicant Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;WPA Supplicant&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libnl"/> and
-      <xref linkend="openssl"/>
+      <xref linkend="libnl"/> 
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libnl"/>,
-      <xref linkend="openssl"/>
+      <xref linkend="libnl"/> 
     </para>
 @z
 
@@ -107,7 +105,7 @@
       <xref linkend="qt5"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/>,
       <xref linkend="libxml2"/>,

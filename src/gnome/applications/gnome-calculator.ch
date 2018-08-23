@@ -127,13 +127,13 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. In 32bit
+      To test the results, issue: <command>ninja test</command>. On 32-bit
       systems, Number.float and Number.double tests might fail due to floating
-      point round off errors, most likely in 32 bit systems.
+      point round off errors.
 @y
-      To test the results, issue: <command>make check</command>. In 32bit
+      To test the results, issue: <command>ninja test</command>. On 32-bit
       systems, Number.float and Number.double tests might fail due to floating
-      point round off errors, most likely in 32 bit systems.
+      point round off errors.
 @z
 
 @x
@@ -163,20 +163,20 @@
           gcalccmd and gnome-calculator
         </seg>
         <seg>
-          libcalculator.so
+          None
         </seg>
         <seg>
-          /usr/{lib,share/help/*}/gnome-calculator
+          /usr/share/help/*/gnome-calculator
         </seg>
 @y
         <seg>
           gcalccmd, gnome-calculator
         </seg>
         <seg>
-          libcalculator.so
+          &None;
         </seg>
         <seg>
-          /usr/{lib,share/help/*}/gnome-calculator
+          /usr/share/help/*/gnome-calculator
         </seg>
 @z
 

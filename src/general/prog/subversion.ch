@@ -118,10 +118,13 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
+      <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
       <xref linkend="python2"/> (with sqlite support for the tests),
-      <xref linkend="ruby"/>, and
-      <xref linkend="swig"/> (for building Perl, Python and Ruby bindings)
+      <xref linkend="ruby"/>,
+      <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
+      <ulink url="https://github.com/lz4/lz4/releases">LZ4</ulink>, and
+      <ulink url="http://git.netsurf-browser.org/libutf8proc.git/">UTF8proc</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -132,10 +135,13 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
+      <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
       <xref linkend="python2"/> (with sqlite support for the tests),
-      <xref linkend="ruby"/>, and
-      <xref linkend="swig"/> (for building Perl, Python and Ruby bindings)
+      <xref linkend="ruby"/>,
+      <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
+      <ulink url="https://github.com/lz4/lz4/releases">LZ4</ulink>, and
+      <ulink url="http://git.netsurf-browser.org/libutf8proc.git/">UTF8proc</ulink>
     </para>
 @z
 

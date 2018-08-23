@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY upower-buildsize     "12 MB (add 2 MB for tests)">
-@y
-  <!ENTITY upower-buildsize     "12 MB (テスト実施時はさらに 2 MB)">
-@z
-
-@x
     <title>Introduction to UPower</title>
 @y
     <title>&IntroductionTo1;UPower&IntroductionTo2;</title>
@@ -119,7 +113,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      <xref linkend="python3"/>, with
       <xref linkend="pygobject3"/>,
       <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>, and
       <ulink url="https://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
@@ -128,10 +121,9 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="python3"/>, with
+      <xref linkend="gtk-doc"/>,
       <xref linkend="pygobject3"/>,
-      <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>, and
+      <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>,
       <ulink url="https://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
       (for part of the testsuite).
     </para>

@@ -94,6 +94,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="gtk-doc"/>
       <xref linkend="gobject-introspection"/>,
       <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
       which is also required for the tests), and
@@ -102,22 +103,11 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="gtk-doc"/>
       <xref linkend="gobject-introspection"/>,
       <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
       which is also required for the tests),
       <xref linkend="vala"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="gtk-doc"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="gtk-doc"/>
     </para>
 @z
 
@@ -141,9 +131,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -176,25 +166,25 @@
 
 @x
         <seg>
-          None
+          gusbcmd
         </seg>
         <seg>
           libgusb.so
         </seg>
         <seg>
           /usr/include/gusb-1 and
-          /usr/share/gtk-doc/html/gusb
+          /usr/share/gtk-doc/html/gusb (if gtk-doc is used)
         </seg>
 @y
         <seg>
-          &None;
+          gusbcmd
         </seg>
         <seg>
           libgusb.so
         </seg>
         <seg>
           /usr/include/gusb-1,
-          /usr/share/gtk-doc/html/gusb
+          /usr/share/gtk-doc/html/gusb (gtk-doc を利用した場合)
         </seg>
 @z
 

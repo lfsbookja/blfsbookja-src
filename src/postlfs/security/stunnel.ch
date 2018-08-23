@@ -104,12 +104,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <ulink url="http://netcat.sourceforge.net/">netcat</ulink> (required for tests),
       <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink> and
       <ulink url="https://dist.torproject.org/">TOR</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <ulink url="http://netcat.sourceforge.net/">netcat</ulink> (required for tests),
       <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink>,
       <ulink url="https://dist.torproject.org/">TOR</ulink>
     </para>
@@ -171,9 +173,31 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      <para>For some systems with <application>binutils</application>
+      versions prior to 2.25, <command>configure</command> may fail.  If
+      necessary, fix it either with:</para>
 @y
-    <para>&notTestSuite;</para>
+      <para>For some systems with <application>binutils</application>
+      versions prior to 2.25, <command>configure</command> may fail.  If
+      necessary, fix it either with:</para>
+@z
+
+@x
+      <para>or, if <xref linkend="llvm"/> with Clang is installed, you can
+      replace <command>./configure ...</command> with <command>CC=clang
+      ./configure ...</command> in the first command below.</para>
+@y
+      <para>or, if <xref linkend="llvm"/> with Clang is installed, you can
+      replace <command>./configure ...</command> with <command>CC=clang
+      ./configure ...</command> in the first command below.</para>
+@z
+
+@x
+    <para>If you have installed the optional netcat application, the
+    regression tests can be run with <command>make check</command>.</para>
+@y
+    <para>If you have installed the optional netcat application, the
+    regression tests can be run with <command>make check</command>.</para>
 @z
 
 @x

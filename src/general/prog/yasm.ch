@@ -91,13 +91,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> or <xref linkend="python3"/>, and
+      <xref linkend="python2"/> and
       <ulink url="http://cython.org/">Cython</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> または <xref linkend="python3"/>,
+      <xref linkend="python2"/> and
       <ulink url="http://cython.org/">Cython</ulink>
     </para>
 @z

@@ -88,16 +88,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="DocBook"/><!--,
-      <xref linkend="docbook-xsl"/>--> and
-      <xref linkend="python2"/>
+      <xref linkend="DocBook"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="DocBook"/><!--,
-      <xref linkend="docbook-xsl"/>-->,
-      <xref linkend="python2"/>
+      <xref linkend="DocBook"/>
     </para>
 @z
 

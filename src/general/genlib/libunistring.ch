@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libunistring-buildsize     "43 MB (add 42 MB for tests)">
-  <!ENTITY libunistring-time          "0.7 SBU (add 1.4 SBU for tests)">
+  <!ENTITY libunistring-buildsize     "49 MB (add 43 MB for tests)">
+  <!ENTITY libunistring-time          "0.9 SBU (add 1.0 SBU for tests)">
 @y
-  <!ENTITY libunistring-buildsize     "43 MB (テスト実施時はさらに 42 MB)">
-  <!ENTITY libunistring-time          "0.7 SBU (テスト実施時はさらに 1.4 SBU)">
+  <!ENTITY libunistring-buildsize     "49 MB (テスト実施時はさらに 43 MB)">
+  <!ENTITY libunistring-time          "0.9 SBU (テスト実施時はさらに 1.0 SBU)">
 @z
 
 @x

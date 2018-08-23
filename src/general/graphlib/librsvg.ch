@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "14 MB (with tests)">
-  <!ENTITY librsvg-time          "0.2 SBU (with tests)">
+  <!ENTITY librsvg-buildsize     "107 MB (add 163 MB for tests)">
+  <!ENTITY librsvg-time          "0.6 SBU (add 0.2 SBU for tests)">
 @y
-  <!ENTITY librsvg-buildsize     "14 MB (テスト込み)">
-  <!ENTITY librsvg-time          "0.2 SBU (テスト込み)">
+  <!ENTITY librsvg-buildsize     "107 MB（テスト実施時はさらに 163 MB)">
+  <!ENTITY librsvg-time          "0.6 SBU（テスト実施時はさらに 0.2 SBU）">
 @z
 
 @x
@@ -87,15 +87,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="libcroco"/> and
-      <xref linkend="pango"/>
+      <xref linkend="libcroco"/>,
+      <xref linkend="pango"/>, and 
+      <xref linkend="rust"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="libcroco"/>,
-      <xref linkend="pango"/>
+      <xref linkend="pango"/>,
+      <xref linkend="rust"/>
     </para>
 @z
 

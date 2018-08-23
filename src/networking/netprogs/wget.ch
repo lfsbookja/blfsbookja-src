@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY wget-buildsize     "32 MB (with tests)">
-  <!ENTITY wget-time          "0.4 SBU (with tests)">
+  <!ENTITY wget-buildsize     "27 MB (add 8 MB for tests)">
+  <!ENTITY wget-time          "0.3 SBU (add 0.2 SBU for tests)">
 @y
-  <!ENTITY wget-buildsize     "32 MB (テスト込み)">
-  <!ENTITY wget-time          "0.4 SBU (テスト込み)">
+  <!ENTITY wget-buildsize     "27 MB （テスト実施時はさらに 8 MB）">
+  <!ENTITY wget-time          "0.3 SBU （テスト実施時はさらに 0.2 SBU）">
 @z
 
 @x
@@ -85,16 +85,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cacerts"/> (runtime),
-      <xref linkend="openssl"/>, and 
-      <xref linkend="python3"/>
+      <xref role="runtime" linkend="make-ca"/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="cacerts"/> (実行時),
-      <xref linkend="openssl"/>,
-      <xref linkend="python3"/>
+      <xref role="runtime" linkend="make-ca"/> （実行時）
     </para>
 @z
 
@@ -103,11 +99,12 @@
     <para role="optional">
       <xref linkend="gnutls"/>,
       <xref linkend="gpgme"/>,
-      <xref linkend="libidn"/>,
+      <xref linkend="libidn2"/>,
       <xref linkend="pcre"/>,
-      <xref linkend="valgrind"/> (optional for the test suite),
-      <ulink url="http://search.cpan.org/~behroozi/IO-Socket-SSL/">IO::Socket::SSL</ulink>,
-      <ulink url="http://search.cpan.org/~gaas/HTTP-Daemon/">HTTP::Daemon</ulink>
+      <xref linkend="python2"/> (built with ssl; for the test suite),
+      <xref linkend="valgrind"/> (for the test suite),
+      <ulink url="https://metacpan.org/release/BEHROOZI/IO-Socket-SSL-0.97">IO::Socket::SSL</ulink>,
+      <ulink url="https://metacpan.org/release/HTTP-Daemon">HTTP::Daemon</ulink>
       (both required for the test suite), and
       <ulink url="https://github.com/rockdaboot/libpsl/">libpsl</ulink>
     </para>
@@ -116,12 +113,13 @@
     <para role="optional">
       <xref linkend="gnutls"/>,
       <xref linkend="gpgme"/>,
-      <xref linkend="libidn"/>,
+      <xref linkend="libidn2"/>,
       <xref linkend="pcre"/>,
-      <xref linkend="valgrind"/> (テストスイート向けに任意),
-      <ulink url="http://search.cpan.org/~behroozi/IO-Socket-SSL/">IO::Socket::SSL</ulink>,
-      <ulink url="http://search.cpan.org/~gaas/HTTP-Daemon/">HTTP::Daemon</ulink>
-      (以上2つはテストスイートに必要),
+      <xref linkend="python2"/> (built with ssl; for the test suite),
+      <xref linkend="valgrind"/> (for the test suite),
+      <ulink url="https://metacpan.org/release/BEHROOZI/IO-Socket-SSL-0.97">IO::Socket::SSL</ulink>,
+      <ulink url="https://metacpan.org/release/HTTP-Daemon">HTTP::Daemon</ulink>
+      (both required for the test suite), and
       <ulink url="https://github.com/rockdaboot/libpsl/">libpsl</ulink>
     </para>
 @z
@@ -145,11 +143,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. The HTTPS
-      tests fail if <application>valgrind</application> is enabled.
+      To test the results, issue: <command>make check</command>. Nine tests
+      fail if python2 was not built with SSL support.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      <application>valgrind</application> が利用可能である場合 HTTPS テストは失敗します。
+      <application>valgrind</application> が利用可能である場合、9 つのテストが失敗します。
 @z
 
 @x
@@ -177,10 +175,10 @@
 
 @x
       <parameter>--with-ssl=openssl</parameter>: This allows the program to use
-      <xref linkend="openssl"/> instead of <xref linkend="gnutls"/>.
+      openssl instead of <xref linkend="gnutls"/>.
 @y
       <parameter>--with-ssl=openssl</parameter>:
-      このオプションにより <xref linkend="gnutls"/> を用いず <xref linkend="openssl"/> を用いたプログラムとします。
+      このオプションにより <xref linkend="gnutls"/> を用いず openssl を用いたプログラムとします。
 @z
 
 @x
@@ -212,11 +210,11 @@
 @z
 
 @x
-        If you have installed the <xref linkend="cacerts"/> and you want
+        If you have installed <xref linkend="make-ca"/> and you want
         <application>Wget</application> to use them, as the
         <systemitem class="username">root</systemitem> user:
 @y
-        <xref linkend="cacerts"/> をインストールしていて <application>Wget</application> にて利用する場合は <systemitem
+        <xref linkend="make-ca"/> をインストールしていて <application>Wget</application> にて利用する場合は <systemitem
         class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 

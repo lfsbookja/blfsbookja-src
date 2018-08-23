@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libgsf-buildsize     "17 MB (with tests)">
-  <!ENTITY libgsf-time          "0.3 SBU (with tests)">
+  <!ENTITY libgsf-buildsize     "22 MB (with tests)">
+  <!ENTITY libgsf-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libgsf-buildsize     "17 MB (テスト込み)">
-  <!ENTITY libgsf-time          "0.3 SBU (テスト込み)">
+  <!ENTITY libgsf-buildsize     "22 MB （テスト込み）">
+  <!ENTITY libgsf-time          "0.2 SBU （テスト込み）">
 @z
 
 @x
@@ -146,10 +146,11 @@
 
 @x
       To test the results, issue: <command>make check</command>. Two
-      tests fail for unknown reasons. 
+      tests, t8000-valgrind-zip.pl and t8020-valgrind-ole.pl, 
+      are known to fail.
 @y
       ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-      テストが二つ、原因不明で失敗します。
+      t8000-valgrind-zip.pl, t8020-valgrind-ole.pl というテストが失敗します。
 @z
 
 @x

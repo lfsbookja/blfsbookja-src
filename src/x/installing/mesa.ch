@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "343 MB (with demos and docs, add 52 MB for tests)">
-  <!ENTITY mesa-time          "8.2 SBU (with demos and docs, add 0.7 SBU for tests)">
+  <!ENTITY mesa-buildsize     "382 MB (with demos and docs, add 40 MB for tests)">
+  <!ENTITY mesa-time          "3.5 SBU (with parallelism=4, demos, and docs; add 1.0 SBU for tests)">
 @y
-  <!ENTITY mesa-buildsize     "343 MB (with demos and docs, add 52 MB for tests)">
-  <!ENTITY mesa-time          "8.2 SBU (with demos and docs, add 0.7 SBU for tests)">
+  <!ENTITY mesa-buildsize     "382 MB (with demos and docs, add 40 MB for tests)">
+  <!ENTITY mesa-time          "3.5 SBU (with parallelism=4, demos, and docs; add 1.0 SBU for tests)">
 @z
 
 @x
@@ -125,7 +125,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="elfutils"/> (required for the radeonsi driver),
+      <!-- <xref linkend="elfutils"/> (required for the radeonsi driver), -->
       
       <phrase revision="systemd"><xref linkend="libva"/> (to build drivers for 
       supported hardware, note that there is a circular dependency. You must
@@ -135,44 +135,74 @@
       <xref linkend="libvdpau"/> (to build VDPAU drivers),
       
       <xref linkend="llvm"/> (required for Gallium3D, r300, and radeonsi
-      drivers and for the llvmpipe software rasterizer. See <ulink
-      url="http://www.mesa3d.org/systems.html"/> for more information)<phrase
-      revision="systemd">, and
-      <xref linkend="wayland"/> (required for <xref linkend='plasma5-build'/>,
-      <xref linkend='lxqt'/>, and GNOME)</phrase>
+      drivers and for the llvmpipe software rasterizer. See <ulink role="nodep"
+      url="http://www.mesa3d.org/systems.html"/> for more information), and
+      <xref linkend="wayland-protocols"/> (required for 
+        <xref role="nodep" linkend='plasma5-build'/>,
+        <!-- <xref role="nodep" linkend='lxqt'/>, -->
+        GNOME, and 
+        recommended for  <xref role="nodep" linkend='gtk3'/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="elfutils"/> (radeonsi ドライバーに必要),
+      <!-- <xref linkend="elfutils"/> (required for the radeonsi driver), -->
       
       <phrase revision="systemd"><xref linkend="libva"/> (to build drivers for 
       supported hardware, note that there is a circular dependency. You must
       build <application>libva</application> first without EGL and GLX support,
       install this package, and rebuild <application>libva</application>.),</phrase>
       
-      <xref linkend="libvdpau"/> (VDPAU ドライバービルド時),
+      <xref linkend="libvdpau"/> (to build VDPAU drivers),
       
       <xref linkend="llvm"/> (required for Gallium3D, r300, and radeonsi
-      drivers and for the llvmpipe software rasterizer. See <ulink
-      url="http://www.mesa3d.org/systems.html"/> for more information)<phrase
-      revision="systemd">, and
-      <xref linkend="wayland"/> (required for <xref linkend='plasma5-build'/>,
-      <xref linkend='lxqt'/>, and GNOME)</phrase>
+      drivers and for the llvmpipe software rasterizer. See <ulink role="nodep"
+      url="http://www.mesa3d.org/systems.html"/> for more information), and
+      <xref linkend="wayland-protocols"/> (required for 
+        <xref role="nodep" linkend='plasma5-build'/>,
+        <!-- <xref role="nodep" linkend='lxqt'/>, -->
+        GNOME, and 
+        recommended for  <xref role="nodep" linkend='gtk3'/>)
     </para>
 @z
 
 @x
-        The instructions below assume that <application>elfutils</application>
-        and <application>LLVM</application> with the r600/amdgpu and host 
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="nettle"/>,
+      <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">mesa-demos</ulink>
+      (provides more than 300 extra demos to test
+      <application>Mesa</application>; this includes the same programs added by
+      the patch above), and
+      <ulink url="http://omxil.sourceforge.net/">Bellagio OpenMAX Integration
+      Layer</ulink> (for mobile platforms)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="nettle"/>,
+      <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">mesa-demos</ulink>
+      (provides more than 300 extra demos to test
+      <application>Mesa</application>; this includes the same programs added by
+      the patch above), and
+      <ulink url="http://omxil.sourceforge.net/">Bellagio OpenMAX Integration
+      Layer</ulink> (for mobile platforms)
+    </para>
+@z
+
+@x
+        The instructions below assume that <!-- <application>elfutils</application>
+        and --> <application>LLVM</application> with the r600/amdgpu and host 
         backends are installed. You will need to modify the instructions if you
-        choose not to install them.  For an explanation of Gallium3D see
+        choose not to install it.  For an explanation of Gallium3D see
         <ulink url="https://en.wikipedia.org/wiki/Gallium3D"/>.
 @y
-        The instructions below assume that <application>elfutils</application>
-        and <application>LLVM</application> with the r600/amdgpu and host 
+        The instructions below assume that <!-- <application>elfutils</application>
+        and --> <application>LLVM</application> with the r600/amdgpu and host 
         backends are installed. You will need to modify the instructions if you
-        choose not to install them.  For an explanation of Gallium3D see
+        choose not to install it.  For an explanation of Gallium3D see
         <ulink url="https://en.wikipedia.org/wiki/Gallium3D"/>.
 @z
 %        これ以降の手順は <application>elfutils</application> と <application>LLVM</application> がインストールされていることを前提とします。
@@ -221,16 +251,6 @@
 @z
 
 @x
-        Add wayland to the <parameter>--with-egl-platforms</parameter> switch
-        below if you plan on building
-        <xref linkend='plasma5-build'/> or <xref linkend='lxqt'/>.
-@y
-        Add wayland to the <parameter>--with-egl-platforms</parameter> switch
-        below if you plan on building
-        <xref linkend='plasma5-build'/> or <xref linkend='lxqt'/>.
-@z
-
-@x
       If you have applied the xdemos patch, build the demo programs by
       running the following command:
 @y
@@ -240,9 +260,9 @@
 %      推奨パッチを適用した場合は、以下のコマンドを実行してデモプログラムをビルドします。
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command>. 
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
 @z
 
 @x
@@ -272,16 +292,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>sed -i ... configure.ac</command>: This sed removes a dependency
-      on the <application>libpthread-stubs</application> package which is
-      useless on Linux.
-@y
-      <command>sed -i ... configure.ac</command>: This sed removes a dependency
-      on the <application>libpthread-stubs</application> package which is
-      useless on Linux.
 @z
 
 @x
@@ -402,9 +412,9 @@
           libOSMesa.so,
 <!-- Those libraries are associated with the "swr" gallium driver,
      which has been removed at r17757. Keeping as a comment in case we
-     reintroduce that driver.
+     reintroduce that driver. AVX libs are restored in version 18.0.1 -->
           libswrAVX.so,
-          libswrAVX2.so,-->
+          libswrAVX2.so,
           libwayland-egl.so (if built with <application>Wayland</application>)
           libxatracker.so,
           libXvMCnouveau.so,
@@ -429,9 +439,9 @@
           libOSMesa.so,
 <!-- Those libraries are associated with the "swr" gallium driver,
      which has been removed at r17757. Keeping as a comment in case we
-     reintroduce that driver.
+     reintroduce that driver. AVX libs are restored in version 18.0.1 -->
           libswrAVX.so,
-          libswrAVX2.so,-->
+          libswrAVX2.so,
           libwayland-egl.so (if built with <application>Wayland</application>)
           libxatracker.so,
           libXvMCnouveau.so,
@@ -439,7 +449,7 @@
         </seg>
         <seg>
           $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR},lib/{dri,vdpau}},
-          /usr/share/doc/mesa-&mesa-version; (任意ビルド)
+          /usr/share/doc/mesa-&mesa-version; （任意ビルド）
         </seg>
 @z
 

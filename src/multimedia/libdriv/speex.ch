@@ -171,14 +171,14 @@
 @z
 
 @x
-        <seg>None</seg>
+        <seg>(optional) speexenc and speexdec</seg>
         <seg>libspeex.so and libspeexdsp.so</seg>
         <seg>
           /usr/include/speex and
           /usr/share/doc/speex-&speex-version; 
         </seg>
 @y
-        <seg>&None;</seg>
+        <seg>（任意ビルド）speexenc, speexdec</seg>
         <seg>libspeex.so, libspeexdsp.so</seg>
         <seg>
           /usr/include/speex,

@@ -128,14 +128,12 @@
 @x
     <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>,
       <xref linkend="sqlite"/> and
       <xref linkend="tk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="tk"/>
     </para>
@@ -214,12 +212,10 @@
 
 @x
       <parameter>--with-system-ffi</parameter>: This switch enables linking
-      against system version of <application>libffi</application>. Remove if
-      you have not installed <xref linkend="libffi"/>.
+      against system version of <application>libffi</application>. 
 @y
       <parameter>--with-system-ffi</parameter>: This switch enables linking
-      against system version of <application>libffi</application>. Remove if
-      you have not installed <xref linkend="libffi"/>.
+      against system version of <application>libffi</application>. 
 @z
 
 @x

@@ -229,14 +229,14 @@
     <para>If you've chosen to install <application>Xorg</application> into
     <filename class="directory">/usr</filename>, then no further
     configuration is necessary and you can skip the rest of this section.
-    If you've opted for an alternate prefix, you should create three symlinks
+    If you've opted for an alternate prefix, you should create two symlinks
     to satisfy the expected environment of several packages.
     Execute the following commands as the root user:</para>
 @y
     <para>
     <application>Xorg</application> のインストール先を <filename
     class="directory">/usr</filename> としている場合は、これ以降の設定は不要ですから残りの説明は読み飛ばしてください。
-    異なるインストール先を選んでいる場合は、他のパッケージが要求する環境設定に合わせて、以下の３つのシンボリックリンクを生成します。
+    異なるインストール先を選んでいる場合は、他のパッケージが要求する環境設定に合わせて、以下の 2 つのシンボリックリンクを生成します。
     root ユーザーになって以下のコマンドを実行します。
     </para>
 @z

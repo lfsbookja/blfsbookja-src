@@ -16,16 +16,16 @@ CHANGE_FILES = \
 	enchant.ch \
 	exempi.ch \
 	fftw.ch \
-	gcab.ch \
 	genlib.ch \
 	glib2.ch \
 	glibmm.ch \
-	gobject-introspection.ch \
 	gmime.ch \
+	gmime3.ch \
+	gobject-introspection.ch \
         grantlee.ch \
 	gsl.ch \
 	icu.ch \
-	js38.ch \
+	js52.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \
@@ -38,7 +38,6 @@ CHANGE_FILES = \
 	libdaemon.ch \
 	libcroco.ch \
 	libesmtp.ch \
-	libffi.ch \
 	libgcrypt.ch \
 	libgpg-error.ch \
 	libgsf.ch \
@@ -46,6 +45,7 @@ CHANGE_FILES = \
 	libgusb.ch \
 	libical.ch \
 	libidn.ch \
+	libidn2.ch \
 	libiodbc.ch \
 	libksba.ch \
 	liblinear.ch \
@@ -53,14 +53,17 @@ CHANGE_FILES = \
 	libnfsidmap.ch \
 	libpaper.ch \
 	libqmi.ch \
+	libseccomp.ch \
 	libsigc++.ch \
 	libsigsegv.ch \
+	libssh2.ch \
 	libstatgrab.ch \
 	libtasn1.ch \
 	libunique.ch \
 	libunistring.ch \
 	libusb.ch \
 	libusb-compat.ch \
+	libuv.ch \
 	libwacom.ch \
 	libxkbcommon.ch \
 	libxml2.ch \
@@ -71,7 +74,6 @@ CHANGE_FILES = \
 	nodejs.ch \
 	npth.ch \
 	nspr.ch \
-	openobex.ch \
 	pcre.ch \
 	pcre2.ch \
 	popt.ch \
@@ -79,6 +81,7 @@ CHANGE_FILES = \
 	ptlib.ch \
 	qca.ch \
 	talloc.ch \
+	telepathy-glib.ch \
 	wayland.ch \
 	wayland-protocols.ch \
 	wv.ch \

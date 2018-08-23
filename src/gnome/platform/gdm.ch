@@ -102,30 +102,18 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="check"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="check"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="required">
-      <xref linkend="gnome-session"/>,
-      <xref linkend="gnome-shell"/>, and
-      <xref linkend="systemd"/>
+      <xref role="runtime" linkend="gnome-session"/>,
+      <xref role="runtime" linkend="gnome-shell"/>, and
+      <xref role="runtime" linkend="systemd"/>
     </para>
 @y
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="required">
-      <xref linkend="gnome-session"/>,
-      <xref linkend="gnome-shell"/>,
-      <xref linkend="systemd"/>
+      <xref role="runtime" linkend="gnome-session"/>,
+      <xref role="runtime" linkend="gnome-shell"/>,
+      <xref role="runtime" linkend="systemd"/>
     </para>
 @z
 

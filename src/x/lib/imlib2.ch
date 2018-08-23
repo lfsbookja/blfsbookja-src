@@ -14,17 +14,17 @@
 @z
 
 @x
-    <title>Introduction to Imlib2</title>
+    <title>Introduction to imlib2</title>
 @y
-    <title>&IntroductionTo1;Imlib2&IntroductionTo2;</title>
+    <title>&IntroductionTo1;imlib2&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Imlib2</application> is a graphics library for fast file
+    <para><application>imlib2</application> is a graphics library for fast file
     loading, saving, rendering and manipulation.</para>
 @y
     <para>
-    <application>Imlib2</application> は、グラフィックに関するファイルのロード、保存、レンダリングなどを高速に行うライブラリを提供します。
+    <application>imlib2</application> は、グラフィックに関するファイルのロード、保存、レンダリングなどを高速に行うライブラリを提供します。
     </para>
 @z
 
@@ -71,9 +71,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Imlib2 Dependencies</bridgehead>
+    <bridgehead renderas="sect3">imlib2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Imlib2&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;imlib2&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -115,17 +115,17 @@
 @z
 
 @x
-    <title>Installation of Imlib2</title>
+    <title>Installation of imlib2</title>
 @y
-    <title>&InstallationOf1;Imlib2&InstallationOf2;</title>
+    <title>&InstallationOf1;imlib2&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Imlib2</application> by running the
+    <para>Install <application>imlib2</application> by running the
     following commands:</para>
 @y
     <para>
-    以下のコマンドを実行して <application>Imlib2</application> をビルドします。
+    以下のコマンドを実行して <application>imlib2</application> をビルドします。
     </para>
 @z
 

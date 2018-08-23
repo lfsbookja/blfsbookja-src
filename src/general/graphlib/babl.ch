@@ -105,16 +105,6 @@
 @z
 
 @x
-      <parameter>--disable-docs</parameter>: This switch disables
-      <filename>BablFishPath.html</filename> and
-      <filename>index.html</filename> generation. Remove it, if you want them.
-@y
-      <parameter>--disable-docs</parameter>: This switch disables
-      <filename>BablFishPath.html</filename> and
-      <filename>index.html</filename> generation. Remove it, if you want them.
-@z
-
-@x
       <command>install -v -m755 -d
       /usr/share/gtk-doc/html/babl/graphics</command>: This and the subsequent
       commands install the library html documentation under

@@ -95,7 +95,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gvfs"/> (runtime),
+      <xref role="runtime" linkend="gvfs"/> (runtime),
       <xref linkend="iso-codes"/>,
       <xref linkend="libsoup"/>, and
       <xref linkend="pygobject3"/>
@@ -104,11 +104,11 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gvfs"/> (実行時),
+      <xref role="runtime" linkend="gvfs"/> （実行時）,
       <xref linkend="iso-codes"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="pygobject3"/>
-      (<application>Python</application> 3 モジュール)
+      （<application>Python</application> 3 モジュール）
     </para>
 @z
 

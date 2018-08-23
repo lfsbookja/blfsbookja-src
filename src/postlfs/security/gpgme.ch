@@ -97,10 +97,10 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/> (for API documentation),
-      <xref linkend="gnupg2"/> (used during the testsuite), and 
+      <xref linkend="gnupg2"/> (required if Qt or SWIG are installed; 
+        used during the testsuite),
       <xref linkend="clisp"/>, 
       <xref linkend="python2"/>, 
-      <xref linkend="python3"/>,
       <xref linkend="qt5"/>, and/or
       <xref linkend="swig"/> (for language bindings)
     </para>
@@ -108,10 +108,10 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/> (for API documentation),
-      <xref linkend="gnupg2"/> (used during the testsuite), and 
+      <xref linkend="gnupg2"/> (required if Qt or SWIG are installed; 
+        used during the testsuite),
       <xref linkend="clisp"/>, 
       <xref linkend="python2"/>, 
-      <xref linkend="python3"/>,
       <xref linkend="qt5"/>, and/or
       <xref linkend="swig"/> (for language bindings)
     </para>
@@ -137,9 +137,13 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, you should have <xref linkend="gnupg2"/> installed
+      and remove the <command>--disable-gpg-test</command> above. Issue:
+      <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は、まず <xref
+      linkend="gnupg2"/> をインストールし、上の手順において <command>--disable-gpg-test</command> を取り除く必要があります。
+      その上で <command>make check</command> を実行します。
 @z
 
 @x

@@ -9,7 +9,6 @@ BOOKdir = @abs_bookdir@/networking/netutils
 CHANGE_FILES = \
 	avahi.ch          \
 	bind-utils.ch     \
-	mod_dnssd.ch      \
 	netutils.ch       \
 	networkmanager.ch \
 	nmap.ch           \

@@ -87,16 +87,14 @@
     <para role="optional">
       <xref linkend="libxml2"/>,
       <xref linkend="lzo"/>, and
-      <xref linkend="nettle"/> or
-      <xref linkend="openssl"/>
+      <xref linkend="nettle"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libxml2"/>,
       <xref linkend="lzo"/>,
-      <xref linkend="nettle"/> または
-      <xref linkend="openssl"/>
+      <xref linkend="nettle"/> 
     </para>
 @z
 

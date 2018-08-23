@@ -96,29 +96,37 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+    <xref linkend="docutils"/>
+      (required to build the documentation),
     <xref linkend="git"/>,
     <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
-    <xref linkend="openssh"/> (runtime, to access ssh://... repositories),
+    <xref role="runtime" linkend="openssh"/>
+      (runtime, to access ssh://... repositories),
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
     <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
     <ulink url="http://pygments.org/">pygments</ulink>, and
     <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
+
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+    <xref linkend="docutils"/>
+      (required to build the documentation),
     <xref linkend="git"/>,
     <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
-    <xref linkend="openssh"/> (runtime, to access ssh://... repositories),
+    <xref role="runtime" linkend="openssh"/>
+      (runtime, to access ssh://... repositories),
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="http://docutils.sourceforge.net/">Docutils</ulink> (required to build the documentation),
     <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
-    <ulink url="http://pygments.org/">pygments</ulink>,
+    <ulink url="http://pygments.org/">pygments</ulink>, and
     <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
+
+    </para>
 @z
 
 @x
@@ -143,11 +151,12 @@
 @z
 
 @x
-    <para>To build the documentation (requires
-    <application>Docutils</application>), issue:</para>
+    <para>To build the documentation (requires <xref linkend="docutils"/>), 
+    issue:</para>
 @y
     <para>
-    ドキュメントをビルドする場合 (<application>Docutils</application> が必要)、以下を実行します。</para>
+    ドキュメントをビルドする場合 (<xref linkend="docutils"/> が必要)、以下を実行します。
+    </para>
 @z
 
 @x

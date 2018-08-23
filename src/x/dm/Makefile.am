@@ -7,9 +7,9 @@
 ##
 BOOKdir = @abs_bookdir@/x/dm
 CHANGE_FILES = \
-	dm.ch   \
-	lxdm.ch \
-	sddm.ch
+	dm.ch      \
+	lightdm.ch \
+	lxdm.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

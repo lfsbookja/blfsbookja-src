@@ -92,14 +92,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="alsa-lib"/> and
-      <xref linkend="openssl"/>
+      <xref linkend="alsa-lib"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="alsa-lib"/>,
-      <xref linkend="openssl"/>
+      <xref linkend="alsa-lib"/> 
     </para>
 @z
 
@@ -111,8 +109,9 @@
       <xref linkend="openldap"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="sdl"/>,
-      <xref linkend="unixodbc"/>, 
-      <xref linkend="v4l-utils"/>, 
+      <xref linkend="unixodbc"/> (currently broken, see <emphasis>Command
+        Explanations</emphasis> below),
+      <xref linkend="v4l-utils"/>,
       <ulink url="http://sourceforge.net/projects/libdc1394/">libdc1394</ulink>, and
       <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
     </para>
@@ -124,10 +123,11 @@
       <xref linkend="openldap"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="sdl"/>,
-      <xref linkend="unixodbc"/>, 
-      <xref linkend="v4l-utils"/>, 
+      <xref linkend="unixodbc"/> (currently broken, see <emphasis>Command
+        Explanations</emphasis> below),
+      <xref linkend="v4l-utils"/>,
       <ulink url="http://sourceforge.net/projects/libdc1394/">libdc1394</ulink>,
-      <ulink url="http://www.linux1394.org/">libraw1394</ulink>,
+      <ulink url="http://www.linux1394.org/">libraw1394</ulink>
     </para>
 @z
 

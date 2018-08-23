@@ -180,10 +180,13 @@
 @x
     <para>If you have <xref linkend="texlive"/>
     installed and you wish to create documentation in alternate formats,
-    issue the following commands:</para>
+    issue the following commands
+    (<ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> is needed for
+    the ps format):</para>
 @y
     <para>
     <xref linkend="texlive"/> をインストールしていて、種々のフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
+    （ps ふぉーまっとに対しては <ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> が必要になります。）
     </para>
 @z
 
@@ -241,19 +244,19 @@
 @z
 
 @x
-    <para><parameter>--enable-symcryptrun</parameter>: This switch enables 
+    <para><parameter>--enable-symcryptrun</parameter>: This switch enables
     building the symcryptrun program.</para>
 @y
-    <para><parameter>--enable-symcryptrun</parameter>: This switch enables 
+    <para><parameter>--enable-symcryptrun</parameter>: This switch enables
     building the symcryptrun program.</para>
 @z
 
 @x
-    <para><parameter>--enable-maintainer-mode</parameter>: This switch is
-    needed for proper completion of the tests.</para>
+      <option>--enable-all-tests</option>: allows more tests to be run whith
+      <command>make check</command>.
 @y
-    <para><parameter>--enable-maintainer-mode</parameter>: This switch is
-    needed for proper completion of the tests.</para>
+      <option>--enable-all-tests</option>: allows more tests to be run whith
+      <command>make check</command>.
 @z
 
 @x
@@ -281,17 +284,17 @@
 @z
 
 @x
-        <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13,
-        gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
-        gpgscm, gpgsm, gpgtar, gpgv, igpg-zip, kbxutil, symcryptrun, 
+        <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13
+        (optional), gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
+        gpgscm, gpgsm, gpgtar, gpgv, gpg-zip, kbxutil, symcryptrun, 
         and watchgnupg</seg>
         <seg>None</seg>
         <seg>/usr/share/doc/gnupg-&gnupg2-version; and
         /usr/share/gnupg</seg>
 @y
-        <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13,
-        gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
-        gpgscm, gpgsm, gpgtar, gpgv, igpg-zip, kbxutil, symcryptrun, 
+        <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13
+        （任意ビルド）, gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
+        gpgscm, gpgsm, gpgtar, gpgv, gpg-zip, kbxutil, symcryptrun, 
         watchgnupg</seg>
         <seg>&None;</seg>
         <seg>/usr/share/doc/gnupg-&gnupg2-version;,

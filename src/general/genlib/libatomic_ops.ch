@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libatomic_ops-buildsize     "4.9 MB (with tests)">
-  <!ENTITY libatomic_ops-time          "0.1 SBU (with tests)">
+  <!ENTITY libatomic_ops-buildsize     "7.9 MB (with tests)">
+  <!ENTITY libatomic_ops-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libatomic_ops-buildsize     "4.9 MB (テスト込み)">
-  <!ENTITY libatomic_ops-time          "0.1 SBU (テスト込み)">
+  <!ENTITY libatomic_ops-buildsize     "7.9 MB (テスト込み)">
+  <!ENTITY libatomic_ops-time          "0.2 SBU (テスト込み)">
 @z
 
 @x

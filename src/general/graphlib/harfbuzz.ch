@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "30 MB (add 20 MB for tests)">
-  <!ENTITY harfbuzz-time          "0.3 SBU (add 0.2 SBU for tests)">
+  <!ENTITY harfbuzz-buildsize     "120 MB (with tests)">
+  <!ENTITY harfbuzz-time          "1.1 SBU (with tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "30 MB (テスト実施時はさらに 20 MB)">
-  <!ENTITY harfbuzz-time          "0.3 SBU (テスト実施時はさらに 0.2 SBU)"> 
+  <!ENTITY harfbuzz-buildsize     "120 MB （テスト込み）">
+  <!ENTITY harfbuzz-time          "1.1 SBU （テスト込み）"> 
 @z
 
 @x
@@ -86,18 +86,18 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="glib2"/> (required for Pango),
-      <xref linkend="icu"/> and
-      <xref linkend="freetype2"/>
-      (after <xref linkend="harfbuzz"/> is installed, reinstall
-      <xref linkend="freetype2"/>)
+      <xref linkend="icu"/>, and
+      <xref role="first" linkend="freetype2"/>
+      (after <xref role="nodep" linkend="harfbuzz"/> is installed, reinstall
+      <xref role="nodep" linkend="freetype2"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="glib2"/> (Pango に必要),
+      <xref linkend="glib2"/>（Pango に必要）,
       <xref linkend="icu"/>,
-      <xref linkend="freetype2"/>
-      (<xref linkend="harfbuzz"/> をインストールした後に <xref linkend="freetype2"/> をインストール)
+      <xref role="first" linkend="freetype2"/>
+      （<xref role="nodep" linkend="harfbuzz"/> をインストールした後に <xref role="nodep" linkend="freetype2"/> を再インストール）
     </para>
 @z
 
@@ -106,8 +106,13 @@
     <para role="optional">
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk-doc"/>, and
-      <xref linkend="graphite2"/>
+      <xref linkend="gtk-doc"/>,
+      <xref role="first" linkend="graphite2"/> (required for building
+        <xref role="nodep" linkend="texlive"/> or 
+        <xref role="nodep" linkend="libreoffice"/> with system harfbuzz)
+      <xref linkend="python2"/> (required for the testsuite), and
+      <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink> (for
+      the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -115,7 +120,12 @@
       <xref linkend="cairo"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="graphite2"/>
+      <xref role="first" linkend="graphite2"/> (required for building
+        <xref role="nodep" linkend="texlive"/> or 
+        <xref role="nodep" linkend="libreoffice"/> with system harfbuzz)
+      <xref linkend="python2"/> (required for the testsuite),
+      <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink> (for
+      the testsuite)
     </para>
 @z
 
@@ -180,10 +190,14 @@
 
 @x
       <option>--with-graphite2</option>: This switch enables
-      <application>Graphite2</application> support.
+      <application>Graphite2</application> support, which is required for
+      building <xref linkend="texlive"/> or <xref linkend="libreoffice"/>
+      with system harfbuzz.
 @y
       <option>--with-graphite2</option>:
       本スイッチは <application>Graphite2</application> サポートを有効にします。
+      <xref linkend="texlive"/> または <xref
+      linkend="libreoffice"/> をインストール済 harfbuzz を用いてビルドする場合に必要となります。
 @z
 
 @x
@@ -204,25 +218,27 @@
 
 @x
         <seg>
-          hb-ot-shape-closure, hb-shape, and
+          hb-ot-shape-closure, hb-shape, hb-subset, and
           hb-view (only if cairo is installed)
         </seg>
         <seg>
-          libharfbuzz.so, libharfbuzz-gobject.so and libharfbuzz-icu.so
+          libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-subset,
+          and libharfbuzz-icu.so
         </seg>
         <seg>
-          /usr/{include,share/gtk-doc/html}/harfbuzz
+          /usr/{include,lib/cmake,share/gtk-doc/html}/harfbuzz
         </seg>
 @y
         <seg>
-          hb-ot-shape-closure, hb-shape,
+          hb-ot-shape-closure, hb-shape, hb-subset,
           hb-view (cairo インストール時のみ)
         </seg>
         <seg>
-          libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-icu.so
+          libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-subset,
+          libharfbuzz-icu.so
         </seg>
         <seg>
-          /usr/{include,share/gtk-doc/html}/harfbuzz
+          /usr/{include,lib/cmake,share/gtk-doc/html}/harfbuzz
         </seg>
 @z
 

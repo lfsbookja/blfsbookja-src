@@ -30,17 +30,15 @@
 @z
 
 @x
-  <para>There are two versions of <application>KDE</application>. KDE4 is a
-  deprecated version that combines libraries and the desktop environment into
-  one set of packages. It is no longer in BLFS.  For KDE5, the libraries, now
-  called KDE Frameworks 5 or KF5, are separate from the desktop environment
-  called KDE Plasma 5.  </para>
+  <para>The KDE5 system has two main blocks: the libraries, called KDE
+  Frameworks 5 or KF5, which can be used in other environments, and the
+  desktop environment called KDE Plasma 5. Most of the applications written
+  by the KDE team only use KF5, and do not need the plasma environment.</para>
 @y
-  <para>There are two versions of <application>KDE</application>. KDE4 is a
-  deprecated version that combines libraries and the desktop environment into
-  one set of packages. It is no longer in BLFS.  For KDE5, the libraries, now
-  called KDE Frameworks 5 or KF5, are separate from the desktop environment
-  called KDE Plasma 5.  </para>
+  <para>The KDE5 system has two main blocks: the libraries, called KDE
+  Frameworks 5 or KF5, which can be used in other environments, and the
+  desktop environment called KDE Plasma 5. Most of the applications written
+  by the KDE team only use KF5, and do not need the plasma environment.</para>
 @z
 
 @x

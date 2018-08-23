@@ -19,7 +19,6 @@ CHANGE_FILES = \
 	faad2.ch              \
 	fdk-aac.ch            \
 	flac.ch               \
-	flashplayer.ch        \
 	frei0r.ch             \
 	gavl.ch               \
 	gst10-libav.ch        \
@@ -29,6 +28,7 @@ CHANGE_FILES = \
 	gst10-plugins-ugly.ch \
 	gstreamer10.ch        \
 	gstreamer10-vaapi.ch  \
+	id3lib.ch             \
 	liba52.ch             \
 	libao.ch              \
 	libass.ch             \

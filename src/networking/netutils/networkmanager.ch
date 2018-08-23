@@ -147,7 +147,9 @@
       <xref linkend="valgrind"/>,
       <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
       <ulink url="http://www.digip.org/jansson/">Jansson</ulink>,
+      <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
+      <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
       <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
       <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
     </para>
@@ -161,8 +163,10 @@
       <xref linkend="valgrind"/>,
       <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
       <ulink url="http://www.digip.org/jansson/">Jansson</ulink>,
+      <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
-      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
+      <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
+      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>,
       <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
     </para>
 @z
@@ -223,10 +227,10 @@
 @z
 
 @x
-      <parameter>--with-nmtui</parameter>: This parameter enables build of
+      <parameter>--with-nmtui</parameter>: This parameter enables building
       <command>nmtui</command>.
 @y
-      <parameter>--with-nmtui</parameter>: This parameter enables build of
+      <parameter>--with-nmtui</parameter>: This parameter enables building
       <command>nmtui</command>.
 @z
 
@@ -408,18 +412,17 @@
           nmtui-connect, nmtui-edit, and nmtui-hostname
         </seg>
         <seg>
-          libnm-glib.so, libnm-glib-vpn.so, libnm.so, libnm-util.so, and
-          modules under /usr/lib/NetworkManager
+          libnm.so and several modules under /usr/lib/NetworkManager
         </seg>
         <seg>
           /etc/NetworkManager,
-          /usr/include/{libnm,libnm-glib,NetworkManager},
+          /usr/include/libnm,
           /usr/lib/NetworkManager,
           /usr/share/doc/NetworkManager-&NetworkManager-version;,
-	  /usr/share/gtk-doc/html/{libnm,libnm-glib,libnm-util,NetworkManager}
+	  /usr/share/gtk-doc/html/{libnm,NetworkManager}
 	  (if the documentation is built),
           and
-          /var/{lib,run}/NetworkManager
+          /var/lib/NetworkManager
         </seg>
 @y
         <seg>
@@ -427,18 +430,17 @@
           nmtui-connect, nmtui-edit, and nmtui-hostname
         </seg>
         <seg>
-          libnm-glib.so, libnm-glib-vpn.so, libnm.so, libnm-util.so, and
-          modules under /usr/lib/NetworkManager
+          libnm.so and several modules under /usr/lib/NetworkManager
         </seg>
         <seg>
           /etc/NetworkManager,
-          /usr/include/{libnm,libnm-glib,NetworkManager},
+          /usr/include/libnm,
           /usr/lib/NetworkManager,
           /usr/share/doc/NetworkManager-&NetworkManager-version;,
-	  /usr/share/gtk-doc/html/{libnm,libnm-glib,libnm-util,NetworkManager}
+	  /usr/share/gtk-doc/html/{libnm,NetworkManager}
 	  (if the documentation is built),
           and
-          /var/{lib,run}/NetworkManager
+          /var/lib/NetworkManager
         </seg>
 @z
 
@@ -470,24 +472,8 @@
             is the network management daemon.
 @z
 
-@x libnm-glib.so
+@x libnm.so
             contains functions used by <application>NetworkManager</application>.
 @y
             contains functions used by <application>NetworkManager</application>.
-@z
-
-@x libnm-glib-vpn.so
-            contains functions used by <application>NetworkManager</application>
-            VPN plugins.
-@y
-            contains functions used by <application>NetworkManager</application>
-            VPN plugins.
-@z
-
-@x libnm-util.so
-            contains functions used by <application>NetworkManager</application>
-            utils.
-@y
-            contains functions used by <application>NetworkManager</application>
-            utils.
 @z

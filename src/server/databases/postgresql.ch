@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "199 MB (with tests)">
-  <!ENTITY postgresql-time          "1.7` SBU (with tests)">
+  <!ENTITY postgresql-buildsize     "224 MB (add 32 MB for tests)">
+  <!ENTITY postgresql-time          "0.7 SBU (with parallelism=4, add 0.1 SBU for tests)">
 @y
-  <!ENTITY postgresql-buildsize     "199 MB (テスト込み)">
-  <!ENTITY postgresql-time          "1.7 SBU (テスト込み)">
+  <!ENTITY postgresql-buildsize     "244 MB （テスト実施時はさらに 32 MB）">
+  <!ENTITY postgresql-time          "0.7 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
 @z
 
 @x
@@ -91,7 +91,6 @@
     <para role="optional">
       <xref linkend="python2"/>,
       <xref linkend="tcl"/>,
-      <xref linkend="openssl"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="openldap"/>,
@@ -104,12 +103,11 @@
     <para role="optional">
       <xref linkend="python2"/>,
       <xref linkend="tcl"/>,
-      <xref linkend="openssl"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="openldap"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="mitkrb"/>,
+      <xref linkend="mitkrb"/> and
       <ulink url="http://developer.apple.com/networking/bonjour/">Bonjour</ulink>
     </para>
 @z
@@ -174,18 +172,18 @@
     temporary server and this is prevented as the root user. For the same reason,
     you need to stop all PostgreSQL servers if any are running. If a previous
     version of PostgreSQL is installed, it may be necessary to use
-    <emphasis>--disable-rpath</emphasis> with <emphasis>configure</emphasis> to
-    avoid failures, but <command>installing the binaries created using this
-    switch is not recommended</command>. To test the results, issue:
+    <command>--disable-rpath</command> with <command>configure</command> to
+    avoid failures, but <emphasis>installing the binaries created using this
+    switch is not recommended</emphasis>. To test the results, issue:
     <command>make check</command>.</para>
 @y
     <para>Tests must be run as an unprivileged user because they need to start a
     temporary server and this is prevented as the root user. For the same reason,
     you need to stop all PostgreSQL servers if any are running. If a previous
     version of PostgreSQL is installed, it may be necessary to use
-    <emphasis>--disable-rpath</emphasis> with <emphasis>configure</emphasis> to
-    avoid failures, but <command>installing the binaries created using this
-    switch is not recommended</command>. To test the results, issue:
+    <command>--disable-rpath</command> with <command>configure</command> to
+    avoid failures, but <emphasis>installing the binaries created using this
+    switch is not recommended</emphasis>. To test the results, issue:
     <command>make check</command>.</para>
 @z
 
@@ -222,29 +220,11 @@
 @z
 
 @x
-    <para>Now, initialize the database at the <systemitem
+    <para>Now, initialize the database as the <systemitem
     class="username">root</systemitem> user:</para>
 @y
-    <para>Now, initialize the database at the <systemitem
+    <para>Now, initialize the database as the <systemitem
     class="username">root</systemitem> user:</para>
-@z
-
-@x
-    <para>Again as the <systemitem class="username">root</systemitem> user,
-    start the database server with the following command:</para>
-@y
-    <para>
-    再度 <systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してデータベースサーバーを起動します。
-    </para>
-@z
-
-@x
-    <para>Still as user <systemitem class="username">root</systemitem>, create
-    a database and verify the installation:</para>
-@y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーのまま、データベースを生成しインストール結果をチェックします。
-    </para>
 @z
 
 @x
@@ -292,38 +272,18 @@
 
 @x
     <para><option>--with-python</option>: builds the PL/Python server-side
-    language.</para>
+    language. Add PYTHON=/usr/bin/python2 for Python2 support, otherwise
+    Python3 is used by default.</para>
 @y
     <para><option>--with-python</option>: builds the PL/Python server-side
-    language.</para>
+    language. Add PYTHON=/usr/bin/python2 for Python2 support, otherwise
+    Python3 is used by default.</para>
 @z
 
 @x
     <para><option>--with-tcl</option>: builds the PL/Tcl server-side language.</para>
 @y
     <para><option>--with-tcl</option>: builds the PL/Tcl server-side language.</para>
-@z
-
-@x
-    <para><command>groupadd ...</command>; <command>useradd ...</command>:
-    These commands add an unprivileged user and group to run the database
-    server.</para>
-@y
-    <para><command>groupadd ...</command>; <command>useradd ...</command>:
-    These commands add an unprivileged user and group to run the database
-    server.</para>
-@z
-
-@x
-    <para><command>createdb test; create table t1; insert into t1 values...;
-    select * from t1</command>: Create a database, add a table to it, insert
-    some rows into the table and select them to verify that the installation
-    is working properly.</para>
-@y
-    <para><command>createdb test; create table t1; insert into t1 values...;
-    select * from t1</command>: Create a database, add a table to it, insert
-    some rows into the table and select them to verify that the installation
-    is working properly.</para>
 @z
 
 @x
@@ -412,14 +372,16 @@
 
 @x
         <seg>
-          clusterdb, createdb, createlang, createuser, dropdb, droplang,
+          clusterdb, createdb, createuser, dropdb,
           dropuser, ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_config,
           pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
-          pg_receivexlog, pg_recvlogical, pg_resetxlog, pg_restore, pg_rewind,
-          pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump, pgbench,
-          pltcl_delmod, pltcl_listmod, pltcl_loadmod, postgres, postmaster
-          (deprecated), psql, reindexdb, vacuumdb, and optionally (in contrib/)
-          oid2name, pg_standby, vacuumlo, and many others
+          pg_receivewal, pg_recvlogical, pg_resetwval, pg_restore, pg_rewind,
+          pg_test_fsync, pg_test_timing, pg_upgrade, pg_waldump, pgbench,
+          postgres, postmaster (deprecated), psql, reindexdb, vacuumdb,
+          optionally, if Tcl support has been built, pltcl_delmod,
+          pltcl_listmod, pltcl_loadmod, and optionally (in contrib/) oid2name,
+          pg_standby, vacuumlo, and many others
+
         </seg>
         <seg>
           libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a, libpgport.a,
@@ -434,14 +396,16 @@
         </seg>
 @y
         <seg>
-          clusterdb, createdb, createlang, createuser, dropdb, droplang,
+          clusterdb, createdb, createuser, dropdb,
           dropuser, ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_config,
           pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
-          pg_receivexlog, pg_recvlogical, pg_resetxlog, pg_restore, pg_rewind,
-          pg_test_fsync, pg_test_timing, pg_upgrade, pg_xlogdump, pgbench,
-          pltcl_delmod, pltcl_listmod, pltcl_loadmod, postgres, postmaster
-          (deprecated), psql, reindexdb, vacuumdb, and optionally (in contrib/)
-          oid2name, pg_standby, vacuumlo, and many others
+          pg_receivewal, pg_recvlogical, pg_resetwval, pg_restore, pg_rewind,
+          pg_test_fsync, pg_test_timing, pg_upgrade, pg_waldump, pgbench,
+          postgres, postmaster (deprecated), psql, reindexdb, vacuumdb,
+          optionally, if Tcl support has been built, pltcl_delmod,
+          pltcl_listmod, pltcl_loadmod, and optionally (in contrib/) oid2name,
+          pg_standby, vacuumlo, その他多数
+
         </seg>
         <seg>
           libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a, libpgport.a,
@@ -574,14 +538,6 @@
 @y
           <para>recursively calls <command>pg_dump</command> for each
           database in a cluster.</para>
-@z
-
-@x pg_resetxlog
-          <para>clears the write-ahead log and optionally resets some
-          fields in the <filename>pg_control</filename> file.</para>
-@y
-          <para>clears the write-ahead log and optionally resets some
-          fields in the <filename>pg_control</filename> file.</para>
 @z
 
 @x pg_restore

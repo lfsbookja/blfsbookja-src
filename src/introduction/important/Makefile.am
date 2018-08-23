@@ -11,6 +11,7 @@ CHANGE_FILES = \
 	bootscripts.ch    \
 	building-notes.ch \
 	important.ch      \
+	la-files.ch       \
 	libraries.ch      \
 	locale-issues.ch  \
 	patches.ch        \

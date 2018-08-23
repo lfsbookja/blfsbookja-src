@@ -10,10 +10,10 @@ CHANGE_FILES = \
 	chromium.ch  \
 	epiphany.ch  \
 	firefox.ch   \
+	falkon.ch   \
 	graphweb.ch  \
 	midori.ch    \
-	seamonkey.ch \
-	qupzilla.ch
+	seamonkey.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

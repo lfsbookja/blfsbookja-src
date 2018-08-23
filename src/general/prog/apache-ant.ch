@@ -115,58 +115,32 @@
 @z
 
 @x
-      <para>You may need additional libraries to satisfy the build
-      requirements of various packages installed using
-      <application>Apache Ant</application>. Review the table at
-      <ulink url="http://ant.apache.org/manual/install.html#librarydependencies"/>
-      for any prerequisite libraries you may need. Place any needed libraries 
-      in <filename>lib/optional</filename>.</para>
+      Build a limited bootstrap version of <application>Apache
+      Ant</application> using the following command:
 @y
-      <para>
-      <application>Apache Ant</application> を利用してインストールする各種のパッケージにて、ビルド要件を満たすためのライブラリを追加することが必要になる場合があります。
-      必要となるライブラリの詳細については <ulink
-      url="http://ant.apache.org/manual/install.html#librarydependencies"/> に示される表を参照してください。
-      必要なライブラリは <filename>lib/optional</filename> に配置します。
-      </para>
+      Build a limited bootstrap version of <application>Apache
+      Ant</application> using the following command:
 @z
 
 @x
-    <para>Unpack and copy the <application>junit</application> and
-    <application>hamcrest</application> jar files to the
-    local directory tree.</para>
+      Download the runtime dependencies using the
+      <filename>fetch.xml</filename> ant build script:
 @y
-    <para>
-    <application>junit</application>, <application>hamcrest</application> jar ファイルを伸張 (解凍) してローカルディレクトリに置きます。
-    </para>
+      Download the runtime dependencies using the
+      <filename>fetch.xml</filename> ant build script:
 @z
 
 @x
-    <para>Install <application>Apache Ant</application> by running the following
-    commands:</para>
+      Build <application>Apache Ant</application> by running the following
+      command:
 @y
-    <para>
-    以下のコマンドを実行して <application>Apache Ant</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Apache Ant</application> をビルドします。
 @z
 
 @x
-    <para>The unit regression tests are performed during the build step below
-    unless <application>JUnit</application> is not installed. Now, as the
-    <systemitem class="username">root</systemitem> user:</para>
+      Install, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    ユニット縮退テスト (unit regressin tests) は <application>JUnit</application> がインストールされていれば、ビルドの中で実施されます。
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <note><para>Make sure the JAVA_HOME environment variable is set for the
-    <systemitem class="username">root</systemitem> user.</para></note>
-@y
-    <note><para>
-    <systemitem class="username">root</systemitem> ユーザーにおいて、環境変数 JAVA_HOME が設定されていることを確認してください。
-    </para></note>
+      Install, as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -176,36 +150,32 @@
 @z
 
 @x
-    <para><command>cp -v ... lib/optional</command>:
-    This command copies the JUnit and hamcrest jar files into the directory
-    where Apache Ant will look for them.</para>
+      <command>bootstrap/bin/ant -f fetch.xml -Ddest=system</command>:
+      Downloads the missing dependencies to user's home directory, and copy
+      them into the source tree (in the <filename>lib/</filename> directory).
 @y
-    <para><command>cp -v
-    /usr/share/java/junit-&junit-version;.jar ...</command>:
-    このコマンドは JUnit jar ファイル、hamcrest jar ファイルを Apache Ant が見つけ出せるディレクトリにコピーします。
-    </para>
+      <command>bootstrap/bin/ant -f fetch.xml -Ddest=system</command>:
+      Downloads the missing dependencies to user's home directory, and copy
+      them into the source tree (in the <filename>lib/</filename> directory).
 @z
 
 @x
-    <para><command>./build.sh -Ddist.dir=/opt/ant-&apache-ant-version;
-    dist</command>: This command does everything. It builds, tests, then
-    installs the package into
-    <filename class='directory'>/opt/ant-&apache-ant-version;</filename>.</para>
+      <command>cp -v ... lib/optional</command>: This command copies the
+      previously downloaded jar files to the expected place in the source
+      tree so that <command>ant</command> picks them up at buld time.
 @y
-    <para><command>./build.sh -Ddist.dir=/opt/ant-&apache-ant-version;
-    dist</command>:
-    このコマンドはすべてをビルドします。ビルドを行い、テストを行い、そして本パッケージを <filename
-    class='directory'>/opt/ant-&apache-ant-version;</filename> にインストールします。
-    </para>
+      <command>cp -v ... lib/optional</command>: This command copies the
+      previously downloaded jar files to the expected place in the source
+      tree so that <command>ant</command> picks them up at buld time.
 @z
 
 @x
-    <para><command>ln -v -sfn ant-&apache-ant-version; /opt/ant</command>: This
-    command is optional, and creates a convenience symlink.</para>
+      <command>./build.sh -Ddist.dir=$PWD/ant-&apache-ant-version;
+      dist</command>: This command builds, tests, then installs the package
+      into a temporary directory.
 @y
-    <para><command>ln -v -sfn ant-&apache-ant-version; /opt/ant</command>:
-    このコマンドを実行するのは任意であり、有用なシンボリックリンクを生成します。
-    </para>
+      <command>./build.sh -Ddist.dir=$PWD/ant-&apache-ant-version;
+      dist</command>: このコマンドはすべてをビルドします。ビルドを行い、テストを行い、そして本パッケージを一時ディレクトリにインストールします。
 @z
 
 @x
@@ -266,12 +236,20 @@
 @z
 
 @x
-        <seg>ant, antRun, antRun.pl, complete-ant-cmd.pl, runant.pl, and runant.py</seg>
-        <seg>ant*.jar</seg>
+        <seg>
+          ant, antRun, antRun.pl, complete-ant-cmd.pl, runant.pl, and runant.py         </seg>
+        <seg>
+          Numerous <filename>ant*.jar</filename>  and dependant libraries in
+          <envar>$ANT_HOME</envar><filename>/lib</filename>
+        </seg>
         <seg>/opt/ant-&apache-ant-version;</seg>
 @y
-        <seg>ant, antRun, antRun.pl, complete-ant-cmd.pl, runant.pl, runant.py</seg>
-        <seg>ant*.jar</seg>
+        <seg>
+          ant, antRun, antRun.pl, complete-ant-cmd.pl, runant.pl, runant.py         </seg>
+        <seg>
+          Numerous <filename>ant*.jar</filename>  and dependant libraries in
+          <envar>$ANT_HOME</envar><filename>/lib</filename>
+        </seg>
         <seg>/opt/ant-&apache-ant-version;</seg>
 @z
 

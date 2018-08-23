@@ -21,9 +21,10 @@
 
 @x
       <application>JS</application> is Mozilla's JavaScript engine
-      written in C.
+      written in C. This package is present for GJS and polkit.
 @y
       <application>JS</application> は、C 言語によって構築された Mozilla の JavaScript エンジンです。
+      本パッケージは GJS と polkit のためにあります。
 @z
 
 @x
@@ -33,57 +34,45 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&js38-download-http;"/>
+          Download (HTTP): <ulink url="&js52-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&js38-download-http;"/>
+          &Download; (HTTP): <ulink url="&js52-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&js38-download-ftp;"/>
+          Download (FTP): <ulink url="&js52-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&js38-download-ftp;"/>
+          &Download; (FTP): <ulink url="&js52-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &js38-md5sum;
+          Download MD5 sum: &js52-md5sum;
 @y
-          &Download; MD5 sum: &js38-md5sum;
+          &Download; MD5 sum: &js52-md5sum;
 @z
 
 @x
-          Download size: &js38-size;
+          Download size: &js52-size;
 @y
-          &DownloadSize;: &js38-size;
+          &DownloadSize;: &js52-size;
 @z
 
 @x
-          Estimated disk space required: &js38-buildsize;
+          Estimated disk space required: &js52-buildsize;
 @y
-          &Estimateddiskspacerequired;: &js38-buildsize;
+          &Estimateddiskspacerequired;: &js52-buildsize;
 @z
 
 @x
-          Estimated build time: &js38-time;
+          Estimated build time: &js52-time;
 @y
-          &Estimatedbuildtime;: &js38-time;
+          &Estimatedbuildtime;: &js52-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">JS52 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
-    <bridgehead renderas="sect3">JS38 Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;JS38&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;JS52&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -91,9 +80,10 @@
     <para role="required">
       <xref linkend="autoconf213"/>,
       <xref linkend="icu"/>,
-      <xref linkend="libffi"/>,
       <xref linkend="nspr"/>,
-      <xref linkend="python2"/>, and
+      <xref linkend="python2"/>,
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="yasm"/>, and
       <xref linkend="zip"/>
     </para>
 @y
@@ -101,9 +91,10 @@
     <para role="required">
       <xref linkend="autoconf213"/>,
       <xref linkend="icu"/>,
-      <xref linkend="libffi"/>,
       <xref linkend="nspr"/>,
       <xref linkend="python2"/>,
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="yasm"/>,
       <xref linkend="zip"/>
     </para>
 @z
@@ -121,31 +112,15 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/js38"/>
+      User Notes: <ulink url="&blfs-wiki;/js52"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/js38"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/js52"/>
 @z
 
 @x
     <title>Installation of JS</title>
 @y
     <title>&InstallationOf1;JS&InstallationOf2;</title>
-@z
-
-@x
-      <para>The tarball extracts to mozjs-38.0.0, rather than what is
-      listed in the download section.</para>
-@y
-      <para>The tarball extracts to mozjs-38.0.0, rather than what is
-      listed in the download section.</para>
-@z
-
-@x
-      First, apply a patch to fix the build and to prevent segmentation
-      faults.
-@y
-      First, apply a patch to fix the build and to prevent segmentation
-      faults.
 @z
 
 @x
@@ -171,14 +146,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>autoconf213</command>: This command regenerates the configure
-      script with the changes from the patch.
-@y
-      <command>autoconf213</command>: This command regenerates the configure
-      script with the changes from the patch.
 @z
 
 @x
@@ -227,25 +194,25 @@
 
 @x
         <seg>
-          js38 and js38-config
+          js52 and js52-config
         </seg>
         <!-- Yes, the static library is required. -->
         <seg>
-          libmozjs-38.so and libjs_static.ajs
+          libmozjs-52.so and libjs_static.ajs
         </seg>
         <seg>
-          /usr/include/mozjs-38
+          /usr/include/mozjs-52
         </seg>
 @y
         <seg>
-          js38, js38-config
+          js52, js52-config
         </seg>
         <!-- Yes, the static library is required. -->
         <seg>
-          libmozjs-38.so, libjs_static.ajs
+          libmozjs-52.so, libjs_static.ajs
         </seg>
         <seg>
-          /usr/include/mozjs-38
+          /usr/include/mozjs-52
         </seg>
 @z
 

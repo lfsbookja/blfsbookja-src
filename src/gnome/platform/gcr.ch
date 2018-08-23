@@ -152,12 +152,10 @@
 
 @x
       To test the results, issue: <command>make -k check</command>.
-      The tests must be run from an X Terminal or similar, but two
-      still fail.
+      The tests must be run from an X Terminal or similar.
 @y
       To test the results, issue: <command>make -k check</command>.
-      The tests must be run from an X Terminal or similar, but two
-      still fail.
+      The tests must be run from an X Terminal or similar.
 @z
 
 @x

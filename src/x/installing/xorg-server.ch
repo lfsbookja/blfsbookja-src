@@ -89,22 +89,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="openssl"/> or
-      <xref linkend="nettle"/> or
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="pixman"/>, and at runtime:
-      <xref linkend="xorg7-font"/> and
-      <xref linkend="xkeyboard-config"/>
+      <xref linkend="pixman"/> and
+      <xref linkend="xorg7-font"/> (for the font-util package), and at runtime:
+      <xref role="runtime" linkend="xkeyboard-config"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="openssl"/> または
-      <xref linkend="nettle"/> または
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="pixman"/>, and at runtime:
-      <xref linkend="xorg7-font"/>,
-      <xref linkend="xkeyboard-config"/>
+      <xref linkend="pixman"/>,
+      <xref linkend="xorg7-font"/> (for the font-util package), and at runtime:
+      <xref role="runtime" linkend="xkeyboard-config"/>
     </para>
 @z
 
@@ -137,9 +131,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="acpid"/> (runtime),
+      <xref role="runtime" linkend="acpid"/> (runtime),
       <xref linkend="doxygen"/> (to build API documentation),
       <xref linkend="fop"/> (to build documentation),
+      <xref linkend="nettle"/>,
+      <xref linkend="libgcrypt"/>,
       <xref linkend="xcb-util-keysyms"/>,
       <xref linkend="xcb-util-image"/>,
       <xref linkend="xcb-util-renderutil"/>,
@@ -153,9 +149,11 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="acpid"/> (実行時),
-      <xref linkend="doxygen"/> (API ドキュメント生成のため),
-      <xref linkend="fop"/> (ドキュメント生成のため),
+      <xref role="runtime" linkend="acpid"/> （実行時）,
+      <xref linkend="doxygen"/> （API ドキュメント生成のため）,
+      <xref linkend="fop"/> （ドキュメント生成のため）,
+      <xref linkend="nettle"/>,
+      <xref linkend="libgcrypt"/>,
       <xref linkend="xcb-util-keysyms"/>,
       <xref linkend="xcb-util-image"/>,
       <xref linkend="xcb-util-renderutil"/>,
@@ -164,7 +162,7 @@
       <phrase revision="sysv"><xref linkend="wayland"/> (needed for Xwayland),
       <xref linkend="wayland-protocols"/>,</phrase>
       <ulink url="http://download.savannah.gnu.org/releases/libunwind">libunwind</ulink>,
-      <ulink url="https://www.x.org/archive/individual/doc/">xorg-sgml-doctools</ulink> (to build documentation)
+      <ulink url="https://www.x.org/archive/individual/doc/">xorg-sgml-doctools</ulink> （ドキュメント生成のため）
     </para>
 @z
 
@@ -275,7 +273,7 @@
           cvt, gtf, X, Xnest, Xorg, and Xvfb; optional: dmxaddinput,
           dmxaddscreen, dmxinfo, dmxreconfig, dmxresize, dmxrminput,
           dmxrmscreen, dmxtodmx, dmxwininfo, vdltodmx, Xdmx, xdmxconfig, Xephyr,
-          and Xfbdev
+          Xfbdev and Xwayland
         </seg>
         <seg>
           several under $XORG_PREFIX/lib/xorg/modules/{,drivers,extensions}
@@ -290,7 +288,7 @@
           cvt, gtf, X, Xnest, Xorg, and Xvfb; optional: dmxaddinput,
           dmxaddscreen, dmxinfo, dmxreconfig, dmxresize, dmxrminput,
           dmxrmscreen, dmxtodmx, dmxwininfo, vdltodmx, Xdmx, xdmxconfig, Xephyr,
-          Xfbdev
+          Xfbdev, Xwayland
         </seg>
         <seg>
           several under $XORG_PREFIX/lib/xorg/modules/{,drivers,extensions}

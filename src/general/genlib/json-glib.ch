@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY json-glib-buildsize     "13 MB (with tests)">
-  <!ENTITY json-glib-time          "0.1 SBU (with tests)">
+  <!ENTITY json-glib-buildsize     "8.6 MB (with tests)">
+  <!ENTITY json-glib-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY json-glib-buildsize     "13 MB (テスト込み)">
-  <!ENTITY json-glib-time          "0.1 SBU (テスト込み)">
+  <!ENTITY json-glib-buildsize     "8.6 MB (テスト込み)">
+  <!ENTITY json-glib-time          "&LessThan1;0.1 SBU &LessThan2; (テスト込み)">
 @z
 
 @x
@@ -139,21 +139,15 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
 @z
 
 @x

@@ -80,6 +80,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
+      <xref linkend="exempi"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libpeas"/>, and
@@ -89,6 +90,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
+      <xref linkend="exempi"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libpeas"/>,
@@ -99,13 +101,17 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="lcms2"/>, 
+      <xref linkend="libexif"/>, and
       <xref linkend="librsvg"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="lcms2"/>, 
+      <xref linkend="libexif"/>,
       <xref linkend="librsvg"/>
     </para>
 @z
@@ -113,18 +119,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="exempi"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="lcms2"/>, and
-      <xref linkend="libexif"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="exempi"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="libexif"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 

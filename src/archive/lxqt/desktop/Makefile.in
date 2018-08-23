@@ -256,7 +256,6 @@ CHANGE_FILES = \
 	lxqt-build-tools.ch     \
 	lxqt-notificationd.ch   \
 	pre-install.ch          \
-	lxqt-common.ch          \
 	lxqt-panel.ch           \
 	lxqt-config.ch          \
 	lxqt-policykit.ch

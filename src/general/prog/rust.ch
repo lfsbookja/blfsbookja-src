@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY rust-buildsize     "1.5 GB (208 MB installed) plus 118MB for cargo files">
-  <!ENTITY rust-time          "14 SBU (with 4 processors)">
+  <!ENTITY rust-buildsize     "5.1 GB (440 MB installed) including 379MB of ~/.cargo files for the user building this and 440MB of files in the DESTDIR (add 1.2GB if running the tests)">
+  <!ENTITY rust-time          "33 SBU (add 17 SBU for tests, both with 4 processors)">
 @y
-  <!ENTITY rust-buildsize     "1.5 GB (208 MB installed) plus 118MB for cargo files">
-  <!ENTITY rust-time          "14 SBU (4 プロセッサーの場合)">
+  <!ENTITY rust-buildsize     "5.1 GB (440 MB installed) including 379MB of ~/.cargo files for the user building this and 440MB of files in the DESTDIR (add 1.2GB if running the tests)">
+  <!ENTITY rust-time          "33 SBU (4 プロセッサーの場合; テスト実施時はさらに 17 SBU)">
 @z
 
 @x
@@ -36,14 +36,14 @@
 
 @x
       As with many  other programming languages, rustc (the rust compiler)
-      needs a binary from which to bootstrap. It will download a stage0 binary,
-      and several cargo files (these are actually .tar.gz source archives) at
+      needs a binary from which to bootstrap. It will download a stage0 binary
+      and many cargo crates (these are actually .tar.gz source archives) at
       the start of the build, so you cannot compile it without an internet
       connection.
 @y
       As with many  other programming languages, rustc (the rust compiler)
-      needs a binary from which to bootstrap. It will download a stage0 binary,
-      and several cargo files (these are actually .tar.gz source archives) at
+      needs a binary from which to bootstrap. It will download a stage0 binary
+      and many cargo crates (these are actually .tar.gz source archives) at
       the start of the build, so you cannot compile it without an internet
       connection.
 @z
@@ -60,14 +60,10 @@
 
 @x
       At the moment <application>Rust</application> does not provide any
-      guarantees of a stable ABI, and it is likely that the next few versions
-      of <application>firefox</application> will each require the latest version
-      of <application>Rust</application>.
+      guarantees of a stable ABI.
 @y
       At the moment <application>Rust</application> does not provide any
-      guarantees of a stable ABI, and it is likely that the next few versions
-      of <application>firefox</application> will each require the latest version
-      of <application>Rust</application>.
+      guarantees of a stable ABI.
 @z
 
 @x
@@ -122,14 +118,26 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
-      <xref linkend="cmake"/> (if not using the recommended <xref linkend="llvm-old"/>),
+      <xref linkend="cmake"/>,
+      <xref linkend="libssh2"/>,
+<!-- Although this appears to build with python3, there are sometimes strange
+ script errors in the compilation (i.e. it exits after the build, without
+ any obvious errors and with a good status. Also ,it ships with a configure
+ script which invokes python2.7 to create config.toml, and some of the files
+ in the package use python2.7. -->
       <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
-      <xref linkend="cmake"/> (if not using the recommended <xref linkend="llvm-old"/>),
+      <xref linkend="cmake"/>,
+      <xref linkend="libssh2"/>,
+<!-- Although this appears to build with python3, there are sometimes strange
+ script errors in the compilation (i.e. it exits after the build, without
+ any obvious errors and with a good status. Also ,it ships with a configure
+ script which invokes python2.7 to create config.toml, and some of the files
+ in the package use python2.7. -->
       <xref linkend="python2"/>
     </para>
 @z
@@ -137,32 +145,26 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <!-- acceptable versions of llvm are listed in the tests
-           of LLVM_VERSION in configure, currently 3.{7-9}*    -->
-      <xref linkend="llvm-old"/>
+      <package>clang</package> from <xref linkend="llvm"/>
+      (built with -DLLVM_LINK_LLVM_DYLIB=ON)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <!-- acceptable versions of llvm are listed in the tests
-           of LLVM_VERSION in configure, currently 3.{7-9}*    -->
-      <xref linkend="llvm-old"/>
+      <package>clang</package> from <xref linkend="llvm"/>
+      (built with -DLLVM_LINK_LLVM_DYLIB=ON)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (often required for the testsuite, but some of the
-      gdb tests may still fail),
-      <xref linkend="ninja"/>
+      <xref linkend="gdb"/> (used by debuginfo-gdb in the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (often required for the testsuite, but some of the
-      gdb tests may still fail),
-      <xref linkend="ninja"/>
+      <xref linkend="gdb"/> (used by debuginfo-gdb in the testsuite)
     </para>
 @z
 
@@ -179,44 +181,136 @@
 @z
 
 @x
-      Install <application>Rust</application> by running the following
+        This package is updated on a six-weekly release cycle. Because it is
+        such a large and slow package to build, and is at the moment only required
+        by three packages in this book, the BLFS editors take the view that it
+        should only be updated when that is necessary.
+@y
+        This package is updated on a six-weekly release cycle. Because it is
+        such a large and slow package to build, and is at the moment only required
+        by three packages in this book, the BLFS editors take the view that it
+        should only be updated when that is necessary.
+@z
+
+@x
+      First create a suitable <filename>config.toml</filename> file
+      which will configure the build :
+@y
+      First create a suitable <filename>config.toml</filename> file
+      which will configure the build :
+@z
+
+@x
+      Now install <application>Rust</application> by running the following
       commands:
 @y
       以下のコマンドを実行して <application>Rust</application> をビルドします。
 @z
 
 @x
-      The testsuite in this package selects random subsets of the
-      possible tests.  There is no correlation between how long a
-      particular run of the testsuite takes, and how many tests
-      were run. On occasion, the chosen tests will run in much
-      less than 1.0 SBU, on other occasions they may take more
-      than 20 SBU. Although it is normal to run the testsuite for
-      a compiler, in this case that is very hard to recommend.
+      The build will report it failed to compile <filename>miri</filename>
+      because of multiple potential crates for `log`, but that should be followed
+      by a message that the build completed successfully.
 @y
-      The testsuite in this package selects random subsets of the
-      possible tests.  There is no correlation between how long a
-      particular run of the testsuite takes, and how many tests
-      were run. On occasion, the chosen tests will run in much
-      less than 1.0 SBU, on other occasions they may take more
-      than 20 SBU. Although it is normal to run the testsuite for
-      a compiler, in this case that is very hard to recommend.
+      The build will report it failed to compile <filename>miri</filename>
+      because of multiple potential crates for `log`, but that should be followed
+      by a message that the build completed successfully.
 @z
 
 @x
-      Nevertheless, if you insist on running the tests issue
-      <command>./x.py test</command>: as with the build, that will
-      use all available CPUs.
+        On AMD Ryzen processors (family 17h), the non-optimized version of libstd
+        which is compiled at the start of the tests contains two opcodes which are
+        not implemented on this CPU family. These will be logged in the
+        <phrase revision="sysv">system log</phrase>
+        <phrase revision="systemd">systemd journal</phrase>
+        and will be followed a few minutes later by segmentation faults. Despite
+        that, the tests continue to run, apparently normally. But the system may
+        reboot before the tests have completed. The normal optimized libraries
+        run without this problem.
 @y
-      Nevertheless, if you insist on running the tests issue
-      <command>./x.py test</command>: as with the build, that will
-      use all available CPUs.
+        On AMD Ryzen processors (family 17h), the non-optimized version of libstd
+        which is compiled at the start of the tests contains two opcodes which are
+        not implemented on this CPU family. These will be logged in the
+        <phrase revision="sysv">system log</phrase>
+        <phrase revision="systemd">systemd journal</phrase>
+        and will be followed a few minutes later by segmentation faults. Despite
+        that, the tests continue to run, apparently normally. But the system may
+        reboot before the tests have completed. The normal optimized libraries
+        run without this problem.
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+        A mitigation is to install gdb
+        <!-- systemd apparently handles this with systemd-coredump -->
+        <phrase revision="sysv">and to run the tests with 'ulimit -C disabled'</phrase>
+        but this does not always prevent the system rebooting.
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+        A mitigation is to install gdb
+        <!-- systemd apparently handles this with systemd-coredump -->
+        <phrase revision="sysv">and to run the tests with 'ulimit -C disabled'</phrase>
+        but this does not always prevent the system rebooting.
+@z
+
+@x
+      To run the tests issue
+      <command>./x.py test --verbose --no-fail-fast &gt;../rustc-testlog</command>:
+      as with the build, that will use all available CPUs.  This runs many suites
+      of tests (in an apparently random order), at least one will fail:
+      compile-fail/issue-37131.rs tries to
+      compile for the thumbv6m-none-eabi target but the BLFS build does not cater for
+      that, and many tests in debuginfo-gdb will fail if
+      <application>gdb</application> has not been installed. A few other tests might
+      fail.
+@y
+      To run the tests issue
+      <command>./x.py test --verbose --no-fail-fast &gt;../rustc-testlog</command>:
+      as with the build, that will use all available CPUs.  This runs many suites
+      of tests (in an apparently random order), at least one will fail:
+      compile-fail/issue-37131.rs tries to
+      compile for the thumbv6m-none-eabi target but the BLFS build does not cater for
+      that, and many tests in debuginfo-gdb will fail if
+      <application>gdb</application> has not been installed. A few other tests might
+      fail.
+@z
+
+@x
+      If you wish to look at the numbers for the results, you can find the total
+      number of tests which were considered by running:
+@y
+      If you wish to look at the numbers for the results, you can find the total
+      number of tests which were considered by running:
+@z
+
+@x
+      That should report 13224 tests. Similarly, the total tests which failed can
+      be found by running:
+@y
+      That should report 13224 tests. Similarly, the total tests which failed can
+      be found by running:
+@z
+
+@x
+      And similarly for the tests which passed use $4, for those which were ignored
+      (i.e. skipped) use $8 (and $10 for 'measured', $12 for 'filtered out' but both
+      are probably zero). The breakdown does not match the overall total.
+@y
+      And similarly for the tests which passed use $4, for those which were ignored
+      (i.e. skipped) use $8 (and $10 for 'measured', $12 for 'filtered out' but both
+      are probably zero). The breakdown does not match the overall total.
+@z
+
+@x
+      Still as your normal user, do a DESTDIR install:
+@y
+      Still as your normal user, do a DESTDIR install:
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user
+      install the files from the DESTDIR:
+@y
+      Now, as the <systemitem class="username">root</systemitem> user
+      install the files from the DESTDIR:
 @z
 
 @x
@@ -226,67 +320,113 @@
 @z
 
 @x
-      <command>--llvm-root=/opt/llvm3 --enable-llvm-link-shared</command>:
-      This tells rust to use the system version of llvm3 installed in
-      <filename class="directory">/opt/llvm3</filename>, linking to the
-      shared libraries.
+      <command>targets = "X86"</command>: this avoids building all the available
+      linux cross-compilers (Aarch64, MIPS, PowerPC, SystemZ, etc). Unfortunately,
+      rust insists on installing source files for these below
+      <filename class="directory">/usr/lib/rustlib/src</filename>.
 @y
-      <command>--llvm-root=/opt/llvm3 --enable-llvm-link-shared</command>:
-      This tells rust to use the system version of llvm3 installed in
-      <filename class="directory">/opt/llvm3</filename>, linking to the
-      shared libraries.
+      <command>targets = "X86"</command>: this avoids building all the available
+      linux cross-compilers (Aarch64, MIPS, PowerPC, SystemZ, etc). Unfortunately,
+      rust insists on installing source files for these below
+      <filename class="directory">/usr/lib/rustlib/src</filename>.
 @z
 
 @x
-      <option>--enable-dist-host-only</option>: If you did not install a
-      system version of <xref linkend="llvm-old"/>, use this alternative command
-      to build the shipped static version of llvm. It will
-      <emphasis>compile</emphasis> for all the available linux cross-compilers
-      (Aarch64, MIPS, PowerPC, SystemZ, etc) but with this switch it will only
-      <emphasis>install</emphasis> for the host architecture.
+      <command>extended = true</command>: this installs Cargo alongside Rust.
 @y
-      <option>--enable-dist-host-only</option>: If you did not install a
-      system version of <xref linkend="llvm-old"/>, use this alternative command
-      to build the shipped static version of llvm. It will
-      <emphasis>compile</emphasis> for all the available linux cross-compilers
-      (Aarch64, MIPS, PowerPC, SystemZ, etc) but with this switch it will only
-      <emphasis>install</emphasis> for the host architecture.
+      <command>extended = true</command>: this installs Cargo alongside Rust.
 @z
 
 @x
-      <option>RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi"</option>: use this if
-      you need to link against a version of LLVM-3 which was compiled against
-      <xref linkend="libffi"/>.
+      <command>channel = "stable"</command>: this ensures only stable features
+      can be used, the default in <filename>config.toml</filename> is to use
+      development features, which is not appropriate for a released version.
 @y
-      <option>RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi"</option>: use this if
-      you need to link against a version of LLVM-3 which was compiled against
-      <xref linkend="libffi"/>.
+      <command>channel = "stable"</command>: this ensures only stable features
+      can be used, the default in <filename>config.toml</filename> is to use
+      development features, which is not appropriate for a released version.
 @z
 
 @x
-      <command>ln -sv /opt/llvm3/lib/libLLVM-3.9.so /usr/lib</command>:
-      Although the <emphasis>build</emphasis> of <application>Rust</application>
-      finds the shared library in
-      <filename class="directory">/opt/llvm3/lib</filename>, several of the steps
-      run by the <application>rustbuild</application>
-      <emphasis>installer</emphasis> do not find
-      <filename>libLLVM-3.9.so</filename>. This conditional symlink fixes that,
-      and works even if <filename>libLLVM-3.9.{0,1}</filename> has already been
-      installed in <filename class="directory">/usr</filename>.
-      <emphasis>Omit this command if you did not install a system version of
-      <xref linkend="llvm-old"/></emphasis>.
+      <command>rpath = false</command>: by default, <command>rust</command> can
+      be run from where it was built, without being installed. That adds DT_RPATH
+      entries to all of the ELF files, which produces very messy output from
+      <command>ldd</command>, showing the libraries in the place they were built,
+      even if they have been deleted from there after the install.
 @y
-      <command>ln -sv /opt/llvm3/lib/libLLVM-3.9.so /usr/lib</command>:
-      Although the <emphasis>build</emphasis> of <application>Rust</application>
-      finds the shared library in
-      <filename class="directory">/opt/llvm3/lib</filename>, several of the steps
-      run by the <application>rustbuild</application>
-      <emphasis>installer</emphasis> do not find
-      <filename>libLLVM-3.9.so</filename>. This conditional symlink fixes that,
-      and works even if <filename>libLLVM-3.9.{0,1}</filename> has already been
-      installed in <filename class="directory">/usr</filename>.
-      <emphasis>Omit this command if you did not install a system version of
-      <xref linkend="llvm-old"/></emphasis>.
+      <command>rpath = false</command>: by default, <command>rust</command> can
+      be run from where it was built, without being installed. That adds DT_RPATH
+      entries to all of the ELF files, which produces very messy output from
+      <command>ldd</command>, showing the libraries in the place they were built,
+      even if they have been deleted from there after the install.
+@z
+
+@x
+      <command>[target.x86_64-unknown-linux-gnu]</command>: the syntax of
+      <filename>config.toml</filename> requires an <literal>llvm-config</literal>
+      entry for each target for which system-llvm is to be used. Change the target
+      to <literal>[target.i686-unknown-linux-gnu]</literal> if you are building
+      on 32-bit x86. This whole section may be omitted if you wish to build
+      against the shipped llvm, or do not have clang, but the resulting build will
+      be larger and take a little longer.
+@y
+      <command>[target.x86_64-unknown-linux-gnu]</command>: the syntax of
+      <filename>config.toml</filename> requires an <literal>llvm-config</literal>
+      entry for each target for which system-llvm is to be used. Change the target
+      to <literal>[target.i686-unknown-linux-gnu]</literal> if you are building
+      on 32-bit x86. This whole section may be omitted if you wish to build
+      against the shipped llvm, or do not have clang, but the resulting build will
+      be larger and take a little longer.
+@z
+
+@x
+      <command>export RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi"</command>:
+      This adds a link to libffi to any RUSTFLAGS you may already be passing
+      to the build. On some systems, linking fails to include libffi unless
+      this is used. The reason why this is needed is not clear.
+@y
+      <command>export RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi"</command>:
+      This adds a link to libffi to any RUSTFLAGS you may already be passing
+      to the build. On some systems, linking fails to include libffi unless
+      this is used. The reason why this is needed is not clear.
+@z
+
+@x
+      <command>--verbose</command>: this switch can sometimes provide more
+      information about a test which fails.
+@y
+      <command>--verbose</command>: this switch can sometimes provide more
+      information about a test which fails.
+@z
+
+@x
+      <command>--no-fail-fast</command>: this switch ensures that the testsuite
+      will not stop at the first error.
+@y
+      <command>--no-fail-fast</command>: this switch ensures that the testsuite
+      will not stop at the first error.
+@z
+
+@x
+      <command>DESTDIR=${PWD}/install ./x.py install</command>: This effects a
+      DESTDIR-style install in the source tree,creating an <filename
+      class="directory">install</filename> directory. Note that DESTDIR installs
+      need an absolute path, passing 'install' will not work.
+@y
+      <command>DESTDIR=${PWD}/install ./x.py install</command>: This effects a
+      DESTDIR-style install in the source tree,creating an <filename
+      class="directory">install</filename> directory. Note that DESTDIR installs
+      need an absolute path, passing 'install' will not work.
+@z
+
+@x
+      <command>chown -R root:root install</command>: the DESTDIR install
+      was run by a regular user, who owns the files. For security, change their
+      owner before doing a simple copy to install them.
+@y
+      <command>chown -R root:root install</command>: the DESTDIR install
+      was run by a regular user, who owns the files. For security, change their
+      owner before doing a simple copy to install them.
 @z
 
 @x
@@ -307,33 +447,29 @@
 
 @x
         <seg>
-          rust-gdb, rust-lldb, rustc, rustdoc.
+          cargo-fmt, cargo, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt.
         </seg>
         <seg>
-          Many libraries (libarena, libflate, libfmt_macros, libgetopts,
-          libgraphviz, liblog, libproc_macro, librustc*, libserialize,
-          libstd, libsyntax, libterm, libtest), all containing a hash in
-          their names.
+          Many lib*&lt;16-byte-hash&gt;.so libraries.
         </seg>
         <seg>
           ~/.cargo,
-          /usr/lib/rustlib, and
-          /usr/share/doc/rustc-&rust-version;.
+          /usr/lib/rustlib,
+          /usr/share/doc/rustc-&rust-version;, and
+          /usr/share/zsh/site-functions/
         </seg>
 @y
         <seg>
-          rust-gdb, rust-lldb, rustc, rustdoc.
+          cargo-fmt, cargo, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt.
         </seg>
         <seg>
-          Many libraries (libarena, libflate, libfmt_macros, libgetopts,
-          libgraphviz, liblog, libproc_macro, librustc*, libserialize,
-          libstd, libsyntax, libterm, libtest), all containing a hash in
-          their names.
+          Many lib*&lt;16-byte-hash&gt;.so libraries.
         </seg>
         <seg>
           ~/.cargo,
-          /usr/lib/rustlib, and
-          /usr/share/doc/rustc-&rust-version;.
+          /usr/lib/rustlib,
+          /usr/share/doc/rustc-&rust-version;,
+          /usr/share/zsh/site-functions/
         </seg>
 @z
 
@@ -343,16 +479,46 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x rust-gdb
-            is a Python wrapper script for gdb.
+@x cargo-fmt
+            formats all bin and lib files of the current crate using
+            rustfmt.
 @y
-            gdb に対する Python ラッパー。
+            formats all bin and lib files of the current crate using
+            rustfmt.
 @z
 
-@x
-            is a Python wrapper script for LLDB (the LLVM debugger).
+@x cargo
+            is the Package Manager for Rust.
 @y
-            LLDB (LLVM デバッガー) に対する Python ラッパースクリプト。
+            is the Package Manager for Rust.
+@z
+
+@x rls
+            is the Rust Language Server. This can run in the background to
+            provide IDEs, editors, and other tools with information about Rust
+            programs.
+@y
+            is the Rust Language Server. This can run in the background to
+            provide IDEs, editors, and other tools with information about Rust
+            programs.
+@z
+
+@x rust-gdb
+            is a wrapper script for gdb, pulling in Python
+            pretty-printing modules installed in <filename
+            class="directory">/usr/lib/rustlib/etc</filename>.
+@y
+            is a wrapper script for gdb, pulling in Python
+            pretty-printing modules installed in <filename
+            class="directory">/usr/lib/rustlib/etc</filename>.
+@z
+
+@x rust-lldb
+            is a wrapper script for LLDB (the LLVM debugger)
+            pulling in the Python pretty-printing modules.
+@y
+            is a wrapper script for LLDB (the LLVM debugger)
+            pulling in the Python pretty-printing modules.
 @z
 
 @x rustc

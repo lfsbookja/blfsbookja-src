@@ -86,14 +86,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cacerts"/> (runtime) and
-      <xref linkend="openssl"/>
+      <xref role="runtime" linkend="make-ca"/> (runtime) 
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="cacerts"/> (実行時),
-      <xref linkend="openssl"/>
+      <xref role="runtime" linkend="make-ca"/> (実行時) 
     </para>
 @z
 
@@ -102,52 +100,56 @@
     <para role="optional">
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
+      <xref linkend="libidn2"/>,
+      <xref linkend="libssh2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
-      <ulink url="https://www.gnu.org/software/libidn/#libidn2/">libidn2</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
       <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
-      <ulink url="http://www.libssh2.org">libssh2</ulink>,
-      <ulink url="https://tls.mbed.org/">mbed TLS (formerly known as
-      PolarSSL)</ulink>, and
-      <ulink url="http://spnego.sourceforge.net/">
-      SPNEGO</ulink>
+      <ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
+      PolarSSL), and
+      <ulink url="http://spnego.sourceforge.net/">SPNEGO</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
+      <xref linkend="libidn2"/>,
+      <xref linkend="libssh2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
-      <ulink url="https://www.gnu.org/software/libidn/#libidn2/">libidn2</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
       <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
-      <ulink url="http://www.libssh2.org">libssh2</ulink>,
-      <ulink url="https://tls.mbed.org/">mbed TLS (formerly known as
-      PolarSSL)</ulink>, and
-      <ulink url="http://spnego.sourceforge.net/">
-      SPNEGO</ulink>
+      <ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
+      PolarSSL),
+      <ulink url="http://spnego.sourceforge.net/">SPNEGO</ulink>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional for Running the Test Suite</bridgehead>
+    <bridgehead renderas="sect4">Optional if Running the Test Suite</bridgehead>
     <para role="optional">
+      <!-- stunnel is still listed in the docs as required, but 7.58.0
+       tests completed happily without it, although the test for unit1323
+       reported that the tool set in the test case does not exist - ken -->
       <xref linkend="stunnel"/> (for the HTTPS and FTPS tests) and
-      <xref linkend="valgrind"/>
+      <xref linkend="valgrind"/> (this will slow the tests down)
     </para>
 @y
-    <bridgehead renderas="sect4">Optional for Running the Test Suite</bridgehead>
+    <bridgehead renderas="sect4">Optional if Running the Test Suite</bridgehead>
     <para role="optional">
-      <xref linkend="stunnel"/> (HTTPS, FTPS テストのため),
-      <xref linkend="valgrind"/>
+      <!-- stunnel is still listed in the docs as required, but 7.58.0
+       tests completed happily without it, although the test for unit1323
+       reported that the tool set in the test case does not exist - ken -->
+      <xref linkend="stunnel"/> (for the HTTPS and FTPS tests) and
+      <xref linkend="valgrind"/> (this will slow the tests down)
     </para>
 @z
 
@@ -171,35 +173,11 @@
 @z
 
 @x
-      To run the tests for this package, valgrind requires a version of the
-      /lib/ld-2.23.so (or later) library with debugging symbols present.
-      Normally in LFS these debugging symbols are stripped at the end of
-      Chapter 6. To get this library, glibc must be rebuilt with the current
-      glibc version using the same compiler that was used to build LFS. The
-      ld-2.23.so can then be renamed to ld-2.23.so.dbg and copied to /lib. Then
-      a symlink needs to be changed: 
+      To run the test suite, issue: <command>make test</command>. Two (of 857) tests
+      fail for unknown reasons.<!--
 @y
-      To run the tests for this package, valgrind requires a version of the
-      /lib/ld-2.23.so (or later) library with debugging symbols present.
-      Normally in LFS these debugging symbols are stripped at the end of
-      Chapter 6. To get this library, glibc must be rebuilt with the current
-      glibc version using the same compiler that was used to build LFS. The
-      ld-2.23.so can then be renamed to ld-2.23.so.dbg and copied to /lib. Then
-      a symlink needs to be changed: 
-@z
-
-@x
-      Adjust the above instruction as needed for a 32-bit system
-      or for a different version of glibc.
-@y
-      Adjust the above instruction as needed for a 32-bit system
-      or for a different version of glibc.
-@z
-
-@x
-      To run the test suite, issue: <command>make test</command>. 
-@y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      To run the test suite, issue: <command>make test</command>. Two (of 857) tests
+      fail for unknown reasons.<!--
 @z
 
 @x
@@ -261,7 +239,7 @@
 
 @x
         <seg>
-           curl, and curl-config
+           curl and curl-config
         </seg>
         <seg>
            libcurl.so

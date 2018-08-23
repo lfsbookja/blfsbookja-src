@@ -143,11 +143,13 @@
 @x
       A session bus address, normally available in an Xorg terminal,
       is necessary to run the tests. To test the results,
-      issue: <command>make check</command>.
+      issue: <command>ninja test</command>. One test, "memory", is known to
+      fail under an LFS environment.
 @y
       A session bus address, normally available in an Xorg terminal,
       is necessary to run the tests. To test the results,
-      issue: <command>make check</command>.
+      issue: <command>ninja test</command>. One test, "memory", is known to
+      fail under an LFS environment.
 @z
 
 @x
@@ -179,8 +181,8 @@
 @z
 
 @x
-        <!-- <seg> Not user executable programs
-          at-spi-bus-launcher and at-spi2-registryd
+        <!-- <seg> No user executable programs
+          at-spi-bus-launcher and at-spi2-registryd in /usr/libexec
         </seg> -->
         <seg>
           None
@@ -189,21 +191,23 @@
           libatspi.so
         </seg>
         <seg>
-          /usr/include/at-spi-2.0 and
+          /usr/include/at-spi-2.0,
+          /usr/share/defaults/at-spi2, and
           /usr/share/gtk-doc/html/libatspi
         </seg>
 @y
-        <!-- <seg> Not user executable programs
-          at-spi-bus-launcher and at-spi2-registryd
+        <!-- <seg> No user executable programs
+          at-spi-bus-launcher and at-spi2-registryd in /usr/libexec
         </seg> -->
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           libatspi.so
         </seg>
         <seg>
-          /usr/include/at-spi-2.0 and
+          /usr/include/at-spi-2.0,
+          /usr/share/defaults/at-spi2,
           /usr/share/gtk-doc/html/libatspi
         </seg>
 @z

@@ -14,12 +14,12 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "37 MB (add 11 MB for tests)">
-  <!ENTITY openssh-time          "0.4 SBU (running the tests takes 10+ minutes,
+  <!ENTITY openssh-buildsize     "38 MB (add 11 MB for tests)">
+  <!ENTITY openssh-time          "0.4 SBU (running the tests takes 15+ minutes,
                                   irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "37 MB (テスト実施時はさらに 11 MB)">
-  <!ENTITY openssh-time          "0.4 SBU (テスト実施はプロセッサーの処理スピードとは無関係に最低でも 10分)">
+  <!ENTITY openssh-buildsize     "38 MB （テスト実施時はさらに 11 MB）">
+  <!ENTITY openssh-time          "0.4 SBU （テスト実施はプロセッサーの処理スピードとは無関係に最低でも 15分以上）">
 @z
 
 @x
@@ -108,6 +108,7 @@
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
+      <ulink url="http://www.libressl.org/">LibreSSL Portable</ulink>,
       <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
@@ -118,7 +119,8 @@
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
-      <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>, and
+      <ulink url="http://www.libressl.org/">LibreSSL Portable</ulink>,
+      <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>,
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
 @z
@@ -126,16 +128,16 @@
 @x
     <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
     <para role="optional">
-      <xref linkend="openjdk"/>,
-      <xref linkend="net-tools"/>, and
-      <xref linkend="sysstat"/>
+      <xref role="runtime" linkend="openjdk"/>,
+      <xref role="runtime" linkend="net-tools"/>, and
+      <xref role="runtime" linkend="sysstat"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;, 実行時 (エントロピー収集のためにのみ利用される)</bridgehead>
+    <bridgehead renderas="sect4">&Optional;, 実行時 （エントロピー収集のためにのみ利用される）</bridgehead>
     <para role="optional">
-      <xref linkend="openjdk"/>,
-      <xref linkend="net-tools"/>,
-      <xref linkend="sysstat"/>
+      <xref role="runtime" linkend="openjdk"/>,
+      <xref role="runtime" linkend="net-tools"/>,
+      <xref role="runtime" linkend="sysstat"/>
     </para>
 @z
 

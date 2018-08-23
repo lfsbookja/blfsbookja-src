@@ -102,15 +102,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="bluez"/>,
-      <xref linkend="python3"/>, and
+      <xref linkend="bluez"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="bluez"/>,
-      <xref linkend="python3"/>,
+      <xref linkend="bluez"/> and
       <xref linkend="vala"/>
     </para>
 @z
@@ -118,15 +116,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="&gnome-download-http;/tracker/">Tracker</ulink>,
+      <xref linkend="tracker"/> (Broken due to API change),
       <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>, and
       <ulink url="https://packages.debian.org/jessie/zeitgeist">Zeitgeist</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="&gnome-download-http;/tracker/">Tracker</ulink>,
-      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>,
+      <xref linkend="tracker"/> (Broken due to API change),
+      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>, and
       <ulink url="https://packages.debian.org/jessie/zeitgeist">Zeitgeist</ulink>
     </para>
 @z
@@ -184,11 +182,13 @@
 @x
       <option>--enable-tracker-backend</option>: This switch enables
       building the <application>Tracker</application> backend.
-      Use it if you have <application>Tracker</application> installed.
+      Use it if you have <application>Tracker</application> installed. Note
+      that this functionality is currently not working properly.
 @y
       <option>--enable-tracker-backend</option>: This switch enables
       building the <application>Tracker</application> backend.
-      Use it if you have <application>Tracker</application> installed.
+      Use it if you have <application>Tracker</application> installed. Note
+      that this functionality is currently not working properly.
 @z
 
 @x

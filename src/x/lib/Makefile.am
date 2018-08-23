@@ -40,7 +40,6 @@ CHANGE_FILES = \
 	libxklavier.ch          \
 	pango.ch                \
 	pangomm.ch              \
-	qscintilla.ch           \
 	qt5.ch                  \
 	qtwebengine.ch          \
 	qtwebkit5.ch            \

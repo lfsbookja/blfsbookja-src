@@ -88,14 +88,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libnotify"/> and
-      <xref linkend="libxfce4ui"/>
+      <xref linkend="libnotify"/>,
+      <xref linkend="libxfce4ui"/>, and
+      <xref linkend="xfce4-panel"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libnotify"/>,
-      <xref linkend="libxfce4ui"/>
+      <xref linkend="libxfce4ui"/>,
+      <xref linkend="xfce4-panel"/>
     </para>
 @z
 

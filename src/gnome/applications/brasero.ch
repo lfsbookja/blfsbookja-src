@@ -121,27 +121,27 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>
+      <xref linkend="tracker"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://projects.gnome.org/tracker/">Tracker</ulink>
+      <xref linkend="tracker"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
     <para role="recommended">
-      <xref linkend="dvd-rw-tools"/> and
-      <xref linkend="gvfs"/>
+      <xref role="runtime" linkend="dvd-rw-tools"/> and
+      <xref role="runtime" linkend="gvfs"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (実行時)</bridgehead>
     <para role="recommended">
-      <xref linkend="dvd-rw-tools"/>,
-      <xref linkend="gvfs"/>
+      <xref role="runtime" linkend="dvd-rw-tools"/>,
+      <xref role="runtime" linkend="gvfs"/>
     </para>
 @z
 

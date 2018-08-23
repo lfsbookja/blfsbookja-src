@@ -79,14 +79,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>, and
-      <xref linkend="js38"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="js52"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="js38"/>
+      <xref linkend="js52"/>
     </para>
 @z
 
@@ -173,13 +173,10 @@
 @x
       To test the results, issue: <command>make check</command>.
       Note that system <application>D-Bus</application> daemon
-      must be running for the testsuite to complete. There is
-      also a warning about <application>ConsoleKit</application>
-      database not present, but that one can be safely ignored.
+      must be running for the testsuite to complete. 
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       すべてのテストを成功させるためには <application>D-Bus</application> デーモンを実行しておく必要があります。
-      なお <application>ConsoleKit</application> データベースがない場合に警告メッセージが出力されますが、これは特に問題なく無視して構いません。
 @z
 
 @x
@@ -209,12 +206,13 @@
 @x revision="sysv"
       <parameter>--with-authfw=shadow</parameter>: This parameter configures the
       package to use the <application>Shadow</application> rather than the
-      <application>Linux-PAM</application> Authentication framework. Remove it
-      if you would like to use <application>Linux-PAM</application>.
+      <application>Linux-PAM</application> Authentication framework. Change
+      the argument to 'pam' if you would like to use 
+      <application>Linux-PAM</application>.
 @y
       <parameter>--with-authfw=shadow</parameter>:
       本パラメーターは認証フレームワークとして <application>Linux-PAM</application> ではなく <application>Shadow</application> を使うことを指定します。
-      <application>Linux-PAM</application> とする場合は本パラメーターを取り除いてください。
+      <application>Linux-PAM</application> とする場合は本パラメーターの引数を 'pam' に変えてください。
 @z
 
 @x

@@ -84,9 +84,8 @@
       <xref linkend="gst10-plugins-bad"/>,
       <xref linkend="gst10-plugins-good"/> (built with <xref linkend="v4l-utils"/>),
       <xref linkend="itstool"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libgudev"/>, and
-      <xref linkend="librsvg"/>
+      <xref linkend="libcanberra"/>, and
+      <xref linkend="libgudev"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -99,8 +98,7 @@
       <xref linkend="gst10-plugins-good"/> (built with <xref linkend="v4l-utils"/>),
       <xref linkend="itstool"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="libgudev"/>,
-      <xref linkend="librsvg"/>
+      <xref linkend="libgudev"/>
     </para>
 @z
 
@@ -121,7 +119,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-<!--      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase> -->
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <ulink url="&appstream-glib-url;">appstream-glib</ulink>,
@@ -131,7 +128,6 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-<!--      <phrase revision="systemd"><xref linkend="appstream-glib"/>,</phrase> -->
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <ulink url="&appstream-glib-url;">appstream-glib</ulink>,

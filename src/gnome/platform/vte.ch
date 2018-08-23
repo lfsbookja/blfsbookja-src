@@ -96,19 +96,20 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gnutls"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gnutls"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gnutls"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="vala"/>, and
       <ulink url="http://glade.gnome.org/">Glade</ulink>
@@ -116,7 +117,6 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gnutls"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="vala"/>,
       <ulink url="http://glade.gnome.org/">Glade</ulink>
@@ -158,14 +158,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>sed ... configure.ac</command>: This command
-      removes -Werror options that prevent the build from completing.
-@y
-      <command>sed ... configure.ac</command>: This command
-      removes -Werror options that prevent the build from completing.
 @z
 
 @x

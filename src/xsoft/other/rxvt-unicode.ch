@@ -200,7 +200,8 @@
     <application>Perl</application> extension (assuming
     <application>Perl</application> support wasn't disabled), which enables a
     left button click to open an underlined URL in the specified browser, sets a
-    background and foreground color and loads an Xft font:</para>
+    background and foreground color and loads an Xft font (as the
+    <systemitem class="username">root</systemitem> user):</para>
 @y
     <para>The <application>rxvt-unicode</application> terminal emulator uses the
     resource class <classname>URxvt</classname> and the resource name
@@ -211,7 +212,8 @@
     <application>Perl</application> extension (assuming
     <application>Perl</application> support wasn't disabled), which enables a
     left button click to open an underlined URL in the specified browser, sets a
-    background and foreground color and loads an Xft font:</para>
+    background and foreground color and loads an Xft font (as the
+    <systemitem class="username">root</systemitem> user):</para>
 @z
 
 @x

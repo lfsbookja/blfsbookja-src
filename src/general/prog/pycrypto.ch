@@ -76,16 +76,14 @@
 @z
 
 @x
-      <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required">
-        <xref linkend="python2"/> and/or
-        <xref linkend="python3"/>
+      <bridgehead renderas="sect5">Optional</bridgehead>
+      <para role="optional">
+        <xref linkend="python2"/> 
       </para>
 @y
-      <bridgehead renderas="sect5">&Required;</bridgehead>
-      <para role="required">
-        <xref linkend="python2"/> または
-        <xref linkend="python3"/>
+      <bridgehead renderas="sect5">&Optional;</bridgehead>
+      <para role="optional">
+        <xref linkend="python2"/> 
       </para>
 @z
 

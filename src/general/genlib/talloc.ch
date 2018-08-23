@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY talloc-buildsize     "7.7 MB (with tests)">
+  <!ENTITY talloc-buildsize     "8.0 MB (with tests)">
   <!ENTITY talloc-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY talloc-buildsize     "7.7 MB (テスト込み)">
+  <!ENTITY talloc-buildsize     "8.0 MB (テスト込み)">
   <!ENTITY talloc-time          "0.3 SBU (テスト込み)">
 @z
 
@@ -95,17 +95,27 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/> and
       <xref linkend="libxslt"/> (To generate man pages),
-      <xref linkend="python2"/> (To build Python-2 module) and
-      <xref linkend="python3"/> (To build Python-3 module)
+      <xref linkend="python2"/> (To build Python-2 module),
+      <xref linkend="gdb"/>,
+      <xref linkend="git"/>,
+      <xref linkend="xfsprogs"/>,
+      <xref linkend="libtirpc"/>, and
+      <xref linkend="valgrind"/>
+      <!-- These are all looked for at build time, but might not actually be used.-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="libxslt"/> (man ページ生成のため),
+      <xref linkend="libxslt"/> (man ページ生成時),
       <xref linkend="python2"/> (Python-2 モジュール生成時),
-      <xref linkend="python3"/> (Python-3 モジュール生成時)
+      <xref linkend="gdb"/>,
+      <xref linkend="git"/>,
+      <xref linkend="xfsprogs"/>,
+      <xref linkend="libtirpc"/>,
+      <xref linkend="valgrind"/>
+      <!-- These are all looked for at build time, but might not actually be used.-->
     </para>
 @z
 

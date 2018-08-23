@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gtk-doc-buildsize     "16 MB (with tests)">
+  <!ENTITY gtk-doc-buildsize     "14 MB (with tests)">
   <!ENTITY gtk-doc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY gtk-doc-buildsize     "16 MB (テスト込み)">
+  <!ENTITY gtk-doc-buildsize     "14 MB (テスト込み)">
   <!ENTITY gtk-doc-time          "0.2 SBU (テスト込み)">
 @z
 
@@ -119,22 +119,18 @@
     <para role="optional">
       <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
       <xref linkend="fop"/> (XML PDF support),
-      <xref linkend="highlight"/>,
       <xref linkend="glib2"/> (for the test suite),
       <ulink url="&gnome-download-http;/gnome-doc-utils/">GNOME Doc Utils</ulink> and
-      <xref linkend="which"/> (required for the test suite and gtk-doc documentation), and
-      <ulink url="https://pypi.python.org/pypi/six">six</ulink>(for some tests)
+      <xref linkend="which"/> (required for the test suite and gtk-doc documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
+      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> または
       <xref linkend="fop"/> (XML PDF サポート),
-      <xref linkend="highlight"/>,
       <xref linkend="glib2"/> (テストスイートのため),
       <ulink url="&gnome-download-http;/gnome-doc-utils/">GNOME Doc Utils</ulink>,
-      <xref linkend="which"/> (テストスイートと gtk-doc 文書生成時に必要),
-      <ulink url="https://pypi.python.org/pypi/six">six</ulink>(テストにて必要とするものがある)
+      <xref linkend="which"/> (テストスイートと gtk-doc 文書生成時に必要)
     </para>
 @z
 

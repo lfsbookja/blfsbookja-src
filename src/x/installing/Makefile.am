@@ -40,7 +40,6 @@ CHANGE_FILES = \
 	x7font.ch              \
 	x7legacy.ch            \
 	x7lib.ch               \
-	x7proto.ch             \
 	xbitmaps.ch            \
 	xcb-proto.ch           \
 	xcb-util.ch            \
@@ -54,6 +53,7 @@ CHANGE_FILES = \
 	xinit.ch               \
 	xkeyboard-config.ch    \
 	xorg7.ch               \
+	xorgproto.ch           \
 	xorg-config.ch         \
 	xorg-server.ch         \
 	xterm.ch

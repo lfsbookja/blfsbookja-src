@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gs-buildsize     "159 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "2.3 SBU (with libgs.so)">
+  <!ENTITY gs-buildsize     "160 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "1.5 SBU (with libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "159 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "2.3 SBU (libgs.so 込み)">
+  <!ENTITY gs-buildsize     "160 MB （with fonts and libgs.so）">
+  <!ENTITY gs-time          "1.5 SBU （libgs.so 込み）">
 @z
 
 @x
@@ -143,6 +143,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="cups"/> (required for building the <quote>cups</quote>
+      device backend, which is needed by
+      <application>cups-filters</application>),
+      <xref linkend="fontconfig"/> (required, if you are installing any
+      suggested font),
       <xref linkend="freetype2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
@@ -150,12 +155,17 @@
       <xref linkend="lcms2"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="cups"/> (required for building the <quote>cups</quote>
+      device backend, which is needed by
+      <application>cups-filters</application>),
+      <xref linkend="fontconfig"/> (required, if you are installing any
+      suggested font),
       <xref linkend="freetype2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="libtiff"/>,
+      <xref linkend="libtiff"/>, and
       <xref linkend="lcms2"/>
     </para>
 @z
@@ -164,11 +174,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/>,
-      <xref linkend="cups"/> (required for building the <quote>cups</quote>
-      device backend, which is needed by
-      <application>cups-filters</application>),
-      <xref linkend="fontconfig"/> (required, if you are installing any
-      suggested font),
       <xref linkend="gtk3"/>,
       <xref linkend="libidn"/>,
       <xref linkend="libpaper"/>,
@@ -179,11 +184,6 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/>,
-      <xref linkend="cups"/> (required for building the <quote>cups</quote>
-      device backend, which is needed by
-      <application>cups-filters</application>),
-      <xref linkend="fontconfig"/> (required, if you are installing any
-      suggested font),
       <xref linkend="gtk3"/>,
       <xref linkend="libidn"/>,
       <xref linkend="libpaper"/>,
@@ -251,11 +251,11 @@
 @z
 
 @x
-        The shared library depends on <xref linkend="gtk2"/>. It is only used by
+        The shared library depends on <xref linkend="gtk3"/>. It is only used by
         external programs like <xref linkend="asymptote"/>, <xref
         linkend="imagemagick"/>, and <xref linkend="texlive"/>.
 @y
-        The shared library depends on <xref linkend="gtk2"/>. It is only used by
+        The shared library depends on <xref linkend="gtk3"/>. It is only used by
         external programs like <xref linkend="asymptote"/>, <xref
         linkend="imagemagick"/>, and <xref linkend="texlive"/>.
 @z
@@ -299,21 +299,17 @@
 @z
 
 @x
-      If you have downloaded any fonts, unpack them to
+      If you have downloaded the fonts, unpack them to
       <filename class="directory">/usr/share/ghostscript</filename> and ensure
       the ownerships of the files are
       <systemitem class="username">root</systemitem>:
-      <systemitem class="groupname">root</systemitem>. Substitute
-      <replaceable>&lt;font-tarball&gt;</replaceable> appropriately in the
-      command below for the fonts you wish to install:
+      <systemitem class="groupname">root</systemitem>.
 @y
-      If you have downloaded any fonts, unpack them to
+      If you have downloaded the fonts, unpack them to
       <filename class="directory">/usr/share/ghostscript</filename> and ensure
       the ownerships of the files are
       <systemitem class="username">root</systemitem>:
-      <systemitem class="groupname">root</systemitem>. Substitute
-      <replaceable>&lt;font-tarball&gt;</replaceable> appropriately in the
-      command below for the fonts you wish to install:
+      <systemitem class="groupname">root</systemitem>.
 @z
 
 @x

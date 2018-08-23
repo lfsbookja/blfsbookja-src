@@ -149,9 +149,7 @@
           gnome-disk-image-mounter and gnome-disks
         </seg>
         <seg>
-          libgdu-sd.so
-          (<application>GNOME Settings Daemon</application>
-          Plugin)
+          None
         </seg>
         <seg>
           None
@@ -161,9 +159,7 @@
           gnome-disk-image-mounter, gnome-disks
         </seg>
         <seg>
-          libgdu-sd.so
-          (<application>GNOME Settings Daemon</application>
-          Plugin)
+          &None;
         </seg>
         <seg>
           &None;

@@ -119,7 +119,7 @@
       For the tests:
       <xref linkend="dbus-glib"/>,
       <xref linkend="dbus-python"/>,
-      <xref linkend="pygobject2"/> (built with gobject-introspection support),
+      <xref linkend="pygobject3"/>,
       and <xref linkend="valgrind"/>;
 
       for documentation:
@@ -135,8 +135,8 @@
       テストのために:
       <xref linkend="dbus-glib"/>,
       <xref linkend="dbus-python"/>,
-      <xref linkend="pygobject2"/> (gobject-introspection サポートがビルドされたもの),
-      <xref linkend="valgrind"/>;
+      <xref linkend="pygobject3"/>,
+      and <xref linkend="valgrind"/>;
 
       ドキュメント生成のために:
       <xref linkend="doxygen"/>,
@@ -220,47 +220,41 @@
 @x
       The dbus tests cannot be run until after <xref linkend="dbus-glib"/> has
       been installed.  They must be run as an unprivileged user from a local
-      session with bus address. If you want to run only
-      the unit tests, replace, below, <parameter>--enable-tests</parameter> by
-      <parameter>--enable-embedded-tests</parameter>, otherwise, <xref
-      linkend="dbus-python"/> has to be installed, before.  The tests require
-      passing additional parameters to <command>configure</command> and
-      exposing additional functionality in the binaries. These interfaces are
-      not intended to be used in a production build of
-      <application>D-Bus</application>.  If you would like to run the tests,
-      issue the following commands (for the tests, you don't need to build the
-      docs):
+      session with bus address. To run the standard tests issue
+      <command>make check</command>.
 @y
       The dbus tests cannot be run until after <xref linkend="dbus-glib"/> has
       been installed.  They must be run as an unprivileged user from a local
-      session with bus address. If you want to run only
-      the unit tests, replace, below, <parameter>--enable-tests</parameter> by
-      <parameter>--enable-embedded-tests</parameter>, otherwise, <xref
-      linkend="dbus-python"/> has to be installed, before.  The tests require
-      passing additional parameters to <command>configure</command> and
-      exposing additional functionality in the binaries. These interfaces are
-      not intended to be used in a production build of
+      session with bus address. To run the standard tests issue
+      <command>make check</command>.
+@z
+
+@x
+      If you want to run the unit regression tests, configure requires
+      additional parameters which expose additional functionality in the
+      binaries that are not intended to be used in a production build of
+      <application>D-Bus</application>.  If you would like to run the tests,
+      issue the following commands (for the tests, you don't need to build the
+      docs):
+@y
+      If you want to run the unit regression tests, configure requires
+      additional parameters which expose additional functionality in the
+      binaries that are not intended to be used in a production build of
       <application>D-Bus</application>.  If you would like to run the tests,
       issue the following commands (for the tests, you don't need to build the
       docs):
 @z
 
 @x
-      If <command>run-test.sh</command> fails, it can be disabled with the
-      following sed, before running the commands for the tests:
+      The test <command>test-bus.sh</command> is known to fail. There has also
+      been reports that the tests may fail if running inside a Midnight
+      Commander shell. You may get out-of-memory error messages when running
+      the tests. These are normal and can be safely ignored.
 @y
-      If <command>run-test.sh</command> fails, it can be disabled with the
-      following sed, before running the commands for the tests:
-@z
-
-@x
-      There has been a report that the tests may fail if running inside a
-      Midnight Commander shell.  You may get out-of-memory error messages when
-      running the tests.  These are normal and can be safely ignored.
-@y
-      There has been a report that the tests may fail if running inside a
-      Midnight Commander shell.  You may get out-of-memory error messages when
-      running the tests.  These are normal and can be safely ignored.
+      The test <command>test-bus.sh</command> is known to fail. There has also
+      been reports that the tests may fail if running inside a Midnight
+      Commander shell. You may get out-of-memory error messages when running
+      the tests. These are normal and can be safely ignored.
 @z
 
 @x
@@ -296,13 +290,35 @@
 @z
 
 @x
+      <parameter>--with-system-pid-file=/run/dbus/pid</parameter>: This
+      parameter specifies the location of the PID file.
+@y
+      <parameter>--with-system-pid-file=/run/dbus/pid</parameter>: This
+      parameter specifies the location of the PID file.
+@z
+
+@x
+      <parameter>--with-system-socket=/run/dbus/system_bus_socket</parameter>:
+      This parameter specifies the location of the system bus socket.
+@y
+      <parameter>--with-system-socket=/run/dbus/system_bus_socket</parameter>:
+      This parameter specifies the location of the system bus socket.
+@z
+
+@x
       <parameter>--enable-tests</parameter>: Build extra parts of the code to
-      support all tests. Configure will end with a NOTE warning about increased
-      size of libraries and decreased security.
+      support all tests. Do not use on a production build.
 @y
       <parameter>--enable-tests</parameter>: Build extra parts of the code to
-      support all tests. Configure will end with a NOTE warning about increased
-      size of libraries and decreased security.
+      support all tests. Do not use on a production build.
+@z
+
+@x
+      <option>--enable-embedded-tests</option>: Build extra parts of the
+      code to support only unit tests. Do not use on a production build.
+@y
+      <option>--enable-embedded-tests</option>: Build extra parts of the
+      code to support only unit tests. Do not use on a production build.
 @z
 
 @x

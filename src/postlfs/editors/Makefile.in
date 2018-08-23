@@ -238,7 +238,6 @@ CHANGE_FILES = \
 	emacs.ch    \
 	gedit.ch    \
 	joe.ch      \
-	juffed.ch   \
 	kate5.ch    \
 	mousepad.ch \
 	nano.ch     \

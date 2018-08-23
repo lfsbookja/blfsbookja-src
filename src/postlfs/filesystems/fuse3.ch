@@ -124,20 +124,27 @@
 @z
 
 @x
-      <parameter>INIT_D_PATH=/tmp/init.d</parameter>: This parameter installs
-      the bootscript into <filename class="directory">/tmp/init.d</filename> as
-      a bootscript is not required.
+      <command>sed ... util/meson.build</command>: This command disables the
+      installation of a boot script and udev rule that are not needed.
 @y
-      <parameter>INIT_D_PATH=/tmp/init.d</parameter>: 
-      このパラメーターは、ブートスクリプトを不要なものとして <filename>/tmp/init.d</filename> にインストールします。
+      <command>sed ... util/meson.build</command>: This command disables the
+      installation of a boot script and udev rule that are not needed.
 @z
 
 @x
-      <command>rm -rf /tmp/init.d</command>: This removes the unneeded
-      bootscript.
+      <command>mv ... libfuse3.so.3*; ln ... libfuse3.so</command>: 
+      These commands install the libraries in the /lib directory.
 @y
-      <command>rm -rf /tmp/init.d</command>:
-      このコマンドは、不要になったブートスクリプトを削除します。
+      <command>mv ... libfuse3.so.3*; ln ... libfuse3.so</command>: 
+      These commands install the libraries in the /lib directory.
+@z
+
+@x
+      <command>unzip ...</command>: This uncompresses the installed man pages
+      to be consistent with the rest of the man pages.
+@y
+      <command>unzip ...</command>: This uncompresses the installed man pages
+      to be consistent with the rest of the man pages.
 @z
 
 @x
@@ -206,19 +213,17 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x fusermount
-            is a set users ID root program to mount and unmount Fuse
-            filesystems.
+@x fusermount3
+            is a suid root program to mount and unmount Fuse filesystems.
 @y
-            is a set users ID root program to mount and unmount Fuse
-            filesystems.
+            is a suid root program to mount and unmount Fuse filesystems.
 @z
 
 @x mount.fuse
-            is the command <command>mount</command> would call to mount a Fuse
+            is the command <command>mount</command> calls to mount a Fuse
             filesystem.
 @y
-            is the command <command>mount</command> would call to mount a Fuse
+            is the command <command>mount</command> calls to mount a Fuse
             filesystem.
 @z
 

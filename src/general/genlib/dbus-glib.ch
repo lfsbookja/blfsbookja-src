@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY dbus-glib-buildsize     "9.5 MB (with tests)">
+  <!ENTITY dbus-glib-buildsize     "10 MB (with tests)">
   <!ENTITY dbus-glib-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY dbus-glib-buildsize     "9.5 MB (テスト込み)">
+  <!ENTITY dbus-glib-buildsize     "10 MB (テスト込み)">
   <!ENTITY dbus-glib-time          "0.1 SBU (テスト込み)">
 @z
 

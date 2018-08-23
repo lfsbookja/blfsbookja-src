@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "450 MB (add 193 MB for tests, add 677 MB for docs)">
-  <!ENTITY gdb-time          "4.3 SBU (add 27 SBU for tests, add 0.7 for docs)">
+  <!ENTITY gdb-buildsize     "667 MB (add 753 MB for tests, add 757 MB for docs)">
+  <!ENTITY gdb-time          "5.0 SBU (add 56 SBU for tests, add 0.8 for docs)">
 @y
-  <!ENTITY gdb-buildsize     "450 MB (テスト実施時はさらに 193 MB, ドキュメント生成時はさらに 677MB)">
-  <!ENTITY gdb-time          "4.3 SBU (テスト実施時はさらに 27 SBU, ドキュメント生成時はさらに 0.7)">
+  <!ENTITY gdb-buildsize     "667 MB （テスト実施時はさらに 753 MB, ドキュメント生成時はさらに 757 MB）">
+  <!ENTITY gdb-time          "5.0 SBU （テスト実施時はさらに 56 SBU, ドキュメント生成時はさらに 0.8 SBU）">
 @z
 
 @x
@@ -91,28 +91,28 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (for tests),
+      <xref linkend="dejagnu"/> (required for tests),
       <xref linkend="doxygen"/>,
-      <xref linkend="gcc"/> (gfortran, for some tests),
-      <xref linkend="guile"/> (currently broken),
+      <xref linkend="gcc"/> (ada and gfortran are used for tests),
+      <xref linkend="guile"/>,
       <xref linkend="python2"/>,
-      <xref linkend="rust"/> (for some tests),
+      <xref linkend="rust"/> (used for some tests),
       <xref linkend="valgrind"/>, and
       <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
-      (run-time dependency, also used in a few tests)
+      (run-time, used for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (テスト時),
+      <xref linkend="dejagnu"/> （テストに必要）,
       <xref linkend="doxygen"/>,
-      <xref linkend="gcc"/> (gfortran, for some tests),
-      <xref linkend="guile"/> (currently broken),
+      <xref linkend="gcc"/> (ada and gfortran are used for tests),
+      <xref linkend="guile"/>,
       <xref linkend="python2"/>,
-      <xref linkend="rust"/> (for some tests),
+      <xref linkend="rust"/> (used for some tests),
       <xref linkend="valgrind"/>, and
       <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
-      (ランタイム時での依存、テスト内にて利用するものもあり)
+      （実行時での依存、テスト内にて利用するものもあり）
     </para>
 @z
 

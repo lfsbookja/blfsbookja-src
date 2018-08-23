@@ -255,7 +255,7 @@
 @x
         More information about configuring <application>Fontconfig</application>
         can be found in the user's manual in <ulink
-        url="file:///usr/share/doc/fontconfig-&fontconfig-version;/fontconfig-user.html"/>
+        url="file:///usr/share/doc/fontconfig-&fontconfig-version;/fontconfig-user.html"/>.
 @y
         <application>Fontconfig</application> の詳細な情報については、<ulink
         url="file:///usr/share/doc/fontconfig-&fontconfig-version;/fontconfig-user.html"/> にあるユーザーマニュアルを参照してください。
@@ -279,8 +279,8 @@
 
 @x
         <seg>
-          fc-cache, fc-cat, fc-list, fc-match, fc-pattern, fc-query,
-          fc-scan, and fc-validate
+          fc-cache, fc-cat, fc-conflist, fc-list, fc-match, fc-pattern,
+          fc-query, fc-scan, and fc-validate
         </seg>
         <seg>
           libfontconfig.so
@@ -295,8 +295,8 @@
         </seg>
 @y
         <seg>
-          fc-cache, fc-cat, fc-list, fc-match, fc-pattern, fc-query,
-          fc-scan, fc-validate
+          fc-cache, fc-cat, fc-conflist, fc-list, fc-match, fc-pattern,
+          fc-query, fc-scan, fc-validate
         </seg>
         <seg>
           libfontconfig.so

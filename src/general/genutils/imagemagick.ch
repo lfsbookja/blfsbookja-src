@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "184 MB, with typical dependencies">
-  <!ENTITY imagemagick-time          "2.6 SBU - typical build (add 3.2 SBU for the the validation suite)">
+  <!ENTITY imagemagick-buildsize     "207 MB, with typical dependencies (add 37MB for make check)">
+  <!ENTITY imagemagick-time          "0.9 SBU - typical build with parallelism=4 (add 1.3 SBU for make check with parallelism=4 and the validation suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "184 MB, with typical dependencies">
-  <!ENTITY imagemagick-time          "2.6 SBU - typical build (add 3.2 SBU for the the validation suite)">
+  <!ENTITY imagemagick-buildsize     "207 MB, with typical dependencies (add 37MB for make check)">
+  <!ENTITY imagemagick-time          "0.9 SBU - typical build with parallelism=4 (add 1.3 SBU for make check with parallelism=4 and the validation suite)">
 @z
 
 @x
@@ -152,6 +152,7 @@
 @x
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
     <para role="optional">
+      Clang from <xref linkend="llvm"/>,
       <xref linkend="cups"/>,
       <xref linkend="curl"/>,
       <xref linkend="ffmpeg"/>,
@@ -176,6 +177,7 @@
 @y
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
     <para role="optional">
+      Clang from <xref linkend="llvm"/>,
       <xref linkend="cups"/>,
       <xref linkend="curl"/>,
       <xref linkend="ffmpeg"/>,
@@ -208,6 +210,7 @@
       <xref linkend="libexif"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
+      <xref linkend="libraw"/> (RAW_R),
       <xref linkend="librsvg"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
@@ -219,6 +222,7 @@
       <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
       <ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,
+      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink>,
       <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
@@ -234,6 +238,7 @@
       <xref linkend="libexif"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
+      <xref linkend="libraw"/> (RAW_R),
       <xref linkend="librsvg"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
@@ -245,6 +250,7 @@
       <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
       <ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,
+      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink>,
       <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
@@ -350,8 +356,12 @@
       validation suite. If <command>make check</command> has not been executed,
       run <command>make tests/validate</command> to compile it.  Issue
       <command>tests/validate 2>&amp;1 | tee validate.log</command> to run the
-      validation suite. The result summary may be obtained with <command>grep
-      "validation suite" validate.log</command>. Note that the EPS, PS, and PDF
+      validation suite. <!-- summary is last line of output
+       The result summary may be obtained with <command>grep
+      "validation suite" validate.log</command>. -->
+     <!-- I'm not convinced that Helvetica is required, I don't install the gs
+      fonts. But lots of references to it. Surely fontconfig provides it? ken -->
+                                                 Note that the EPS, PS, and PDF
       tests require a working <application>Ghostscript</application>. One test
       in 'make check' needs <quote>Helvetica</quote> from <quote>Ghostscript
       Standard Fonts</quote>, which are optionally installed in
@@ -363,8 +373,12 @@
       validation suite. If <command>make check</command> has not been executed,
       run <command>make tests/validate</command> to compile it.  Issue
       <command>tests/validate 2>&amp;1 | tee validate.log</command> to run the
-      validation suite. The result summary may be obtained with <command>grep
-      "validation suite" validate.log</command>. Note that the EPS, PS, and PDF
+      validation suite. <!-- summary is last line of output
+       The result summary may be obtained with <command>grep
+      "validation suite" validate.log</command>. -->
+     <!-- I'm not convinced that Helvetica is required, I don't install the gs
+      fonts. But lots of references to it. Surely fontconfig provides it? ken -->
+                                                 Note that the EPS, PS, and PDF
       tests require a working <application>Ghostscript</application>. One test
       in 'make check' needs <quote>Helvetica</quote> from <quote>Ghostscript
       Standard Fonts</quote>, which are optionally installed in

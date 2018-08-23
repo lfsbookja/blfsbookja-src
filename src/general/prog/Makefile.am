@@ -7,9 +7,7 @@
 ##
 BOOKdir = @abs_bookdir@/general/prog
 CHANGE_FILES_pythonmodules = \
-	cargo.ch         \
 	dbus-python.ch   \
-	llvm3.ch         \
 	pyatspi2.ch      \
 	pycairo.ch       \
 	pycrypto.ch      \
@@ -25,13 +23,12 @@ CHANGE_FILES = \
 	apache-ant.ch     \
 	autoconf213.ch    \
 	beaker.ch         \
-	check.ch          \
 	clisp.ch          \
 	cmake.ch          \
 	dejagnu.ch        \
+	docutils.ch       \
 	doxygen.ch        \
 	dummy-java.ch     \
-	elfutils.ch       \
 	expect.ch         \
 	funcsigs.ch       \
 	gc.ch             \
@@ -44,11 +41,13 @@ CHANGE_FILES = \
 	jinja2.ch         \
 	junit.ch          \
 	librep.ch         \
+	libxml2py2.ch     \
 	llvm.ch           \
 	lua.ch            \
 	lxml.ch           \
 	markupsafe.ch     \
 	mako.ch           \
+	maven.ch          \
 	mercurial.ch      \
 	nasm.ch           \
 	ninja.ch          \

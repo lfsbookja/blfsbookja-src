@@ -146,12 +146,6 @@
 @z
 
 @x
-        <para>Required patch: <ulink
-@y
-        <para>Required patch: <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">TeX Live from source Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">TeX Live from source Dependencies</bridgehead>
@@ -162,7 +156,7 @@
     <para role="recommended">
       <xref linkend="gs"/> <emphasis>including
       <filename>libgs.so</filename></emphasis> (for dvisvgm, which is used by e.g.
-      <xref linkend="asymptote"/>),
+      <xref role="nodep" linkend="asymptote"/>),
       <xref linkend="x-window-system"/>
     </para>
 @y
@@ -170,7 +164,7 @@
     <para role="recommended">
       <xref linkend="gs"/> <emphasis>including
       <filename>libgs.so</filename></emphasis> (for dvisvgm, which is used by e.g.
-      <xref linkend="asymptote"/>),
+      <xref role="nodep" linkend="asymptote"/>),
       <xref linkend="x-window-system"/>
     </para>
 @z

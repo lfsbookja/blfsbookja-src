@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libgpg-error-buildsize     "7.8 MB (with tests)">
-  <!ENTITY libgpg-error-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libgpg-error-buildsize     "9.6 MB (with tests)">
+  <!ENTITY libgpg-error-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libgpg-error-buildsize     "7.8 MB (テスト込み)">
-  <!ENTITY libgpg-error-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
+  <!ENTITY libgpg-error-buildsize     "9.6 MB（テスト込み）">
+  <!ENTITY libgpg-error-time          "0.1 SBU（テスト込み）">
 @z
 
 @x
@@ -126,7 +126,7 @@
 
 @x
         <seg>
-          gpg-error and gpg-error-config
+          gpg-error, gpg-error-config, gpgrt-config, and yat2m
         </seg>
         <seg>
           libgpg-error.so
@@ -138,7 +138,7 @@
         </seg>
 @y
         <seg>
-          gpg-error, gpg-error-config
+          gpg-error, gpg-error-config, gpgrt-config, yat2m
         </seg>
         <seg>
           libgpg-error.so

@@ -116,7 +116,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>,
       <xref linkend="pygtk"/> (required for <command>zenmap</command>),
       <xref linkend="python2"/> (required for <command>ndiff</command>) and
       <xref linkend="subversion"/> (required for <command>nmap-update</command>)
@@ -124,10 +123,9 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>,
-      <xref linkend="pygtk"/> (<command>zenmap</command> に必要),
-      <xref linkend="python2"/> (<command>ndiff</command> に必要),
-      <xref linkend="subversion"/> (<command>nmap-update</command> に必要)
+      <xref linkend="pygtk"/> （<command>zenmap</command> に必要）,
+      <xref linkend="python2"/> （<command>ndiff</command> に必要）,
+      <xref linkend="subversion"/> （<command>nmap-update</command> に必要）
     </para>
 @z
 

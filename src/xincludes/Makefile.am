@@ -15,6 +15,7 @@ CHANGE_FILES = \
 	gnome-old-prefix.ch         \
 	gsettings-destdir.ch        \
 	gtk-doc-rebuild.ch          \
+	gtk-doc-rebuild-problem.ch  \
 	gtk-update-icon-cache.ch    \
 	lib-config.ch               \
 	scrollkeeper-dir.ch         \

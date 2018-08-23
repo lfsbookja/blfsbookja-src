@@ -103,11 +103,25 @@
 @z
 
 @x
-      Enable the following options in the kernel configuration and recompile the
-      kernel if necessary:
+      If you are building this package to use bluetooth devices (rather than as a
+      build dependency), enable the following options in the kernel configuration,
+      also the options below the next paragraph if you intend to run the tests,
+      and recompile the kernel if necessary:
 @y
-      Enable the following options in the kernel configuration and recompile the
-      kernel if necessary:
+      If you are building this package to use bluetooth devices (rather than as a
+      build dependency), enable the following options in the kernel configuration,
+      also the options below the next paragraph if you intend to run the tests,
+      and recompile the kernel if necessary:
+@z
+
+@x
+      If you wish to run the testsuite (even if treating this package as a build
+      dependency), you will need to enable the following options in the kernel
+      configuration and recompile the kernel if necessary:
+@y
+      If you wish to run the testsuite (even if treating this package as a build
+      dependency), you will need to enable the following options in the kernel
+      configuration and recompile the kernel if necessary:
 @z
 
 @x
@@ -211,10 +225,10 @@
 
 @x
       <title><phrase revision="sysv">Boot Script</phrase>
-             <phrase revision="systemd">Systemd Socket</phrase></title>
+             <phrase revision="systemd">Systemd Bluez Services</phrase></title>
 @y
       <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">Systemd Socket</phrase></title>
+             <phrase revision="systemd">Systemd Bluez Services</phrase></title>
 @z
 
 @x
@@ -247,28 +261,46 @@
 
 @x
         <seg>
-          bccmd, bluemoon, bluetoothctl, bluetoothd (symlink), btattach, btmon, ciptool,
-          hciattach, hciconfig, hcidump, hcitool, hex2hcd, l2ping, l2test,
-          mpris-proxy, rctest, rfcomm, and sdptool
+          bccmd, 
+          bluemoon, 
+          bluetoothctl, 
+          bluetoothd (symlink), 
+          btattach, 
+          btmon, 
+          hex2hcd, 
+          l2ping, 
+          l2test,
+          mpris-proxy, and 
+          rctest
         </seg>
         <seg>
           libbluetooth.so
         </seg>
         <seg>
-          /etc/bluetooth, /usr/{include,libexec}/bluetooth, and
+          /etc/bluetooth, 
+          /usr/{include,libexec}/bluetooth, and
           /usr/share/doc/bluez-&bluez-version;
         </seg>
 @y
         <seg>
-          bccmd, bluemoon, bluetoothctl, bluetoothd (シンボリックリンク), btattach, btmon, ciptool,
-          hciattach, hciconfig, hcidump, hcitool, hex2hcd, l2ping, l2test,
-          mpris-proxy, rctest, rfcomm, sdptool
+          bccmd, 
+          bluemoon, 
+          bluetoothctl, 
+          bluetoothd (symlink), 
+          btattach, 
+          btmon, 
+          hex2hcd, 
+          l2ping, 
+          l2test,
+          mpris-proxy,
+          rctest
         </seg>
         <seg>
           libbluetooth.so
         </seg>
         <seg>
-          /etc/bluetooth, /usr/{include,libexec}/bluetooth,
+          /etc/bluetooth, 
+          /usr/{include,libexec}/bluetooth,
           /usr/share/doc/bluez-&bluez-version;
         </seg>
 @z
@@ -293,42 +325,12 @@
             is the Bluetooth daemon.
 @z
 
-@x ciptool
-            is used to set up, maintain, and inspect the CIP configuration
-            of the Bluetooth subsystem in the Linux kernel.
+@x btmon
+            provides access to the Bluetooth subsystem monitor
+            infrastructure for reading HCI traces.
 @y
-            is used to set up, maintain, and inspect the CIP configuration
-            of the Bluetooth subsystem in the Linux kernel.
-@z
-
-@x hciattach
-            is used to attach a serial UART to the Bluetooth stack
-            as HCI transport interface.
-@y
-            is used to attach a serial UART to the Bluetooth stack
-            as HCI transport interface.
-@z
-
-@x hciconfig
-            is used to configure Bluetooth devices.
-@y
-            is used to configure Bluetooth devices.
-@z
-
-@x hcitool
-            is used to configure Bluetooth connections and send some
-            special command to Bluetooth devices.
-@y
-            is used to configure Bluetooth connections and send some
-            special command to Bluetooth devices.
-@z
-
-@x hid2hci
-            is used to set up switch supported Bluetooth devices into
-            the HCI mode and back.
-@y
-            is used to set up switch supported Bluetooth devices into
-            the HCI mode and back.
+            provides access to the Bluetooth subsystem monitor
+            infrastructure for reading HCI traces.
 @z
 
 @x l2ping
@@ -339,20 +341,18 @@
             address given in dotted hex notation.
 @z
 
-@x rfcomm
-            is used to set up, maintain, and inspect the RFCOMM
-            configuration of the Bluetooth subsystem in the
-            Linux kernel.
+@x l2test
+            is a L2CAP testing program.
 @y
-            is used to set up, maintain, and inspect the RFCOMM
-            configuration of the Bluetooth subsystem in the
-            Linux kernel.
+            is a L2CAP testing program.
 @z
 
-@x sdptool
-            is used to perform SDP queries on Bluetooth devices.
+@x rctest
+            is used to test RFCOMM communications on the
+            Bluetooth stack.
 @y
-            is used to perform SDP queries on Bluetooth devices.
+            is used to test RFCOMM communications on the
+            Bluetooth stack.
 @z
 
 @x libbluetooth.so

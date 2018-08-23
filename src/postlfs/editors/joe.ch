@@ -241,12 +241,37 @@
           </para>
 @z
 
+@x stringify
+          <para>is a program used by <command>joe</command> to convert rc and
+          .jsf files into a C file (see
+          /usr/share/doc/joe-&joe-version;/util/README).</para>
+@y
+          <para>is a program used by <command>joe</command> to convert rc and
+          .jsf files into a C file (see
+          /usr/share/doc/joe-&joe-version;/util/README).</para>
+@z
+
 @x termidx
           <para>is a program used by <command>joe</command> to generate the
-          termcap index file (see /usr/share/joe/util/README).</para>
+          termcap index file (see
+          /usr/share/doc/joe-&joe-version;/util/README).</para>
 @y
           <para>
           <command>joe</command> を利用して termcap インデックスファイルを生成します。
-          (/usr/share/joe/util/README 参照)
+          （/usr/share/doc/joe-&joe-version;/util/README 参照）
           </para>
+@z
+
+@x uniproc
+          <para>is a program used by <command>joe</command> to generate joe's
+          unicode database file unicat.c from Blocks.txt CaseFolding.txt
+          EastAsianWidth.txt and UnicodeData.txt (find them at
+          /usr/share/doc/joe-&joe-version;/util; see 
+          usr/share/doc/joe-&joe-version;/util/README).</para>
+@y
+          <para>is a program used by <command>joe</command> to generate joe's
+          unicode database file unicat.c from Blocks.txt CaseFolding.txt
+          EastAsianWidth.txt and UnicodeData.txt (find them at
+          /usr/share/doc/joe-&joe-version;/util; see 
+          usr/share/doc/joe-&joe-version;/util/README).</para>
 @z

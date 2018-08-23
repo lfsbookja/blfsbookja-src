@@ -139,11 +139,9 @@
 @z
 
 @x
-      <command>sed "s@&lt;unistd.h&gt;@&amp;\n#include &lt;sys/types.h&gt;@g" -i
-      fscklog/extract.c</command>: Fixes building with Glibc 2.17.
+      <command>sed ...</command>: Fixes building with glibc 2.28.
 @y
-      <command>sed "s@&lt;unistd.h&gt;@&amp;\n#include &lt;sys/types.h&gt;@g" -i
-      fscklog/extract.c</command>: Glibc 2.17 にてビルドするための修正を行います。
+      <command>sed ...</command>: glibc 2.18 にてビルドするための修正を行います。
 @z
 
 @x

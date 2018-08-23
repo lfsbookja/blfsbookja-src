@@ -102,8 +102,7 @@
     <bridgehead renderas="sect4">Optional for documentation</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      <xref linkend="graphviz"/>,
-      <xref linkend="python3"/>, and
+      <xref linkend="graphviz"/>, and
       <xref linkend="libxslt"/>
     </para>
 @y
@@ -111,7 +110,6 @@
     <para role="optional">
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
-      <xref linkend="python3"/>,
       <xref linkend="libxslt"/>
     </para>
 @z

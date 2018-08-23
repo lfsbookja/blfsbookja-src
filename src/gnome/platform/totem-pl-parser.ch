@@ -78,13 +78,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gmime"/> and
+      <xref linkend="gmime3"/> or <xref linkend="gmime"/>, and
       <xref linkend="libsoup"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gmime"/>,
+      <xref linkend="gmime3"/> または <xref linkend="gmime"/>,
       <xref linkend="libsoup"/>
     </para>
 @z
@@ -110,7 +110,7 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
-      <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9) and libquvi-scripts</ulink>
+      <ulink url="http://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
       - if they are installed, then
       <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>
       is necessary for the tests
@@ -119,8 +119,8 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
-      <ulink url="http://sourceforge.net/projects/quvi">libquvi (version 0.9) and libquvi-scripts</ulink>
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>,
+      <ulink url="http://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
       - if they are installed, then
       <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>
       is necessary for the tests
@@ -147,31 +147,17 @@
 @z
 
 @x
-      If you wish to run the test suite, disable two tests which fail,
-      by running:
+      To test the results, issue: <command>ninja test</command>. One test,
+      /parser/parsing/podcast_medium, is known to fail in a LFS environment.
 @y
-      ビルド結果のテストにあたっては、2つのテストが失敗するためこれを実行しないようにします。
-@z
-
-@x
-      To test the results, issue: <command>make check</command>. You will
-      need an active internet connection in order to successfully complete all
-      tests.
-@y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      すべてのテストを成功させるためにはインターネット接続環境が必要です。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      /parser/parsing/podcast_medium というテストは LFS 環境の中では失敗します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
 @z
 
 @x

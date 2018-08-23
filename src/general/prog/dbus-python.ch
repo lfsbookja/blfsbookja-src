@@ -78,41 +78,53 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="dbus-glib"/> and
-        <xref linkend="python2"/> and/or
-        <xref linkend="python3"/>
+        <xref linkend="dbus"/> and
+        <xref linkend="glib2"/> 
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <xref linkend="dbus-glib"/>,
-        <xref linkend="python2"/> または
-        <xref linkend="python3"/>
+        <xref linkend="dbus"/>,
+        <xref linkend="glib2"/> 
+      </para>
+@z
+
+@x
+      <bridgehead renderas="sect5">Optional</bridgehead>
+      <para role="optional">
+        <xref linkend="python2"/> and
+        <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink> 
+           (required for tests)
+      </para>
+@y
+      <bridgehead renderas="sect5">Optional</bridgehead>
+      <para role="optional">
+        <xref linkend="python2"/> and
+        <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink> 
+           (required for tests)
       </para>
 @z
 
 @x
       <bridgehead renderas="sect5">
-       Optional (Required to build the API and HTML Documentation)
-      </bridgehead>
+       Optional (Required to build the API and HTML Documentation)</bridgehead>
       <para role="optional">
-        <ulink url="http://epydoc.sourceforge.net/">Epydoc</ulink> and
-        <ulink url="http://docutils.sourceforge.net/">Docutils</ulink>
+        <xref linkend="docutils"/> and
+        <ulink url="http://sphinxsearch.com/downloads/">Sphinx</ulink> 
       </para>
 @y
       <bridgehead renderas="sect5">
-       Optional (Required to build the API and HTML Documentation)
-      </bridgehead>
+       Optional (Required to build the API and HTML Documentation)</bridgehead>
       <para role="optional">
-        <ulink url="http://epydoc.sourceforge.net/">Epydoc</ulink> and
-        <ulink url="http://docutils.sourceforge.net/">Docutils</ulink>
+        <xref linkend="docutils"/> and
+        <ulink url="http://sphinxsearch.com/downloads/">Sphinx</ulink> 
       </para>
 @z
 
 @x
       <para condition="html" role="usernotes">User Notes:
 @y
-      <para condition="html" role="usernotes">User Notes:
+      <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

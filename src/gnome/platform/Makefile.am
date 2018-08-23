@@ -7,19 +7,18 @@
 ##
 BOOKdir = @abs_bookdir@/gnome/platform
 CHANGE_FILES = \
-	accountsservice.ch           \
 	caribou.ch                   \
 	dconf.ch                     \
 	dummy-desktop.ch             \
 	dummy-platform.ch            \
 	dummy-runtime.ch             \
-	dummy-tel.ch                 \
 	evolution-data-server.ch     \
 	folks.ch                     \
 	gconf.ch                     \
 	gcr.ch                       \
 	gdm.ch                       \
 	geocode-glib.ch              \
+	gexiv2.ch                    \
 	gfbgraph.ch                  \
 	gjs.ch                       \
 	gnome-autoar.ch              \
@@ -38,7 +37,6 @@ CHANGE_FILES = \
 	gnome-video-effects.ch       \
 	grilo.ch                     \
 	gsettings-desktop-schemas.ch \
-	gtkhtml.ch                   \
 	gvfs.ch                      \
 	libchamplain.ch              \
 	libgee.ch                    \
@@ -54,10 +52,9 @@ CHANGE_FILES = \
 	platform.ch                  \
 	polkit-gnome.ch              \
 	rest.ch                      \
-	telepathy-glib.ch            \
-	telepathy-logger.ch          \
-	telepathy-mission-control.ch \
+	sassc.ch                     \
 	totem-pl-parser.ch           \
+	tracker.ch                   \
 	vte.ch                       \
 	yelp.ch                      \
 	yelp-xsl.ch                  \

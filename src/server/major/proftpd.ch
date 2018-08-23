@@ -84,7 +84,6 @@
       <xref linkend="libcap-pam"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openssl"/>,
       <xref linkend="pcre"/>, and
       <xref linkend="postgresql"/> 
     </para>
@@ -94,7 +93,6 @@
       <xref linkend="libcap-pam"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openssl"/>,
       <xref linkend="pcre"/>,
       <xref linkend="postgresql"/> 
     </para>

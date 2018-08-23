@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libxslt-buildsize     "40 MB (with tests)">
-  <!ENTITY libxslt-time          "0.3 SBU (with tests)">
+  <!ENTITY libxslt-buildsize     "37 MB (with tests)">
+  <!ENTITY libxslt-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libxslt-buildsize     "40 MB (テスト込み)">
-  <!ENTITY libxslt-time          "0.3 SBU (テスト込み)">
+  <!ENTITY libxslt-buildsize     "37 MB (テスト込み)">
+  <!ENTITY libxslt-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -112,20 +112,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="libgcrypt"/> and
-      <xref linkend="python2"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="python2"/>
-    </para>
-@z
-
-@x
         Although it is not a direct dependency, many applications
         using <application>libxslt</application> will expect
         <xref linkend="DocBook"/> and <xref linkend="docbook-xsl"/>
@@ -133,6 +119,34 @@
 @y
         <application>libxslt</application> を利用しているアプリケーションは、直接の依存関係ではないにせよ、<xref
         linkend="DocBook"/> や <xref linkend="docbook-xsl"/> を必要としているものが多々あります。
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="libxml2py2"/>
+      <note><simpara>The <xref role="nodep" linkend="libxml2py2"/> 
+      dependency is only appropriate if the <application>Python2</application>
+      module for this package is needed. The
+      libxslt <application>Python2</application> module is not needed for
+      any package in BLFS but various packages may install
+      <application>Python2</application> modules which reference it.
+      </simpara></note>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="libxml2py2"/>
+      <note><simpara>The <xref role="nodep" linkend="libxml2py2"/> 
+      dependency is only appropriate if the <application>Python2</application>
+      module for this package is needed. The
+      libxslt <application>Python2</application> module is not needed for
+      any package in BLFS but various packages may install
+      <application>Python2</application> modules which reference it.
+      </simpara></note>
+    </para>
 @z
 
 @x
@@ -194,7 +208,7 @@
         </seg>
         <seg>
           libexslt.so, libxslt.so and optionally, libxsltmod.so
-          <application>Python</application> modules
+          <application>Python</application> module
         </seg>
         <seg>
           /usr/include/libexslt,
@@ -207,7 +221,7 @@
           xslt-config, xsltproc
         </seg>
         <seg>
-          libexslt.so, libxslt.so さらに任意として libxsltmod.so
+          libexslt.so, libxslt.so, さらに任意ビルドとして libxsltmod.so
           <application>Python</application> モジュール
         </seg>
         <seg>

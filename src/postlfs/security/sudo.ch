@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY sudo-buildsize     "29 MB (with tests)">
-  <!ENTITY sudo-time          "0.3 SBU (with tests)">
+  <!ENTITY sudo-buildsize     "34 MB (with tests)">
+  <!ENTITY sudo-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY sudo-buildsize     "29 MB (テスト込み)">
-  <!ENTITY sudo-time          "0.3 SBU (テスト込み)">
+  <!ENTITY sudo-buildsize     "34 MB （テスト込み）">
+  <!ENTITY sudo-time          "0.4 SBU （テスト込み）">
 @z
 
 @x
@@ -135,12 +135,14 @@
 @x
       To test the results, issue: <command>env LC_ALL=C make check 2&gt;&amp;1
       | tee ../make-check.log</command>. Check the results with <command>grep
-      failed ../make-check.log</command>.
+      failed ../make-check.log</command>. One test, test3, is known to fail
+      if the tests are run as the root user.
 @y
       ビルド結果をテストする場合は <command>env LC_ALL=C make check 2&gt;&amp;1
       | tee ../make-check.log</command> を実行します。
       確認は <command>grep
       failed ../make-check.log</command> により行います。
+      root ユーザーによりテスト実行していた場合には、test3 というテストが失敗します。
 @z
 
 @x

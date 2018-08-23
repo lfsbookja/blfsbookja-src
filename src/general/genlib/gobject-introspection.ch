@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gobject-introspection-buildsize     "38 MB (add 7 MB for tests)">
-  <!ENTITY gobject-introspection-time          "0.3 SBU (additional 0.3 SBU for the tests)">
+  <!ENTITY gobject-introspection-buildsize     "39 MB (add 13 MB for tests)">
+  <!ENTITY gobject-introspection-time          "0.3 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY gobject-introspection-buildsize     "38 MB (テスト実施時はさらに 7 MB)">
+  <!ENTITY gobject-introspection-buildsize     "39 MB (テスト実施時はさらに 13 MB)">
   <!ENTITY gobject-introspection-time          "0.3 SBU (テスト実施時はさらに 0.3 SBU)">
 @z
 
@@ -80,14 +80,30 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
-      <xref linkend="python2"/>
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="python2"/>
+      <xref linkend="glib2"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="which"/>
+<!-- If - -with-python is used, configure runs "which $PYTHON", where PYTHON
+     is set to the argument of the switch. Somewhat silly because the presence
+     of which is not tested... -->
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="which"/>
+<!-- If - -with-python is used, configure runs "which $PYTHON", where PYTHON
+     is set to the argument of the switch. Somewhat silly because the presence
+     of which is not tested... -->
     </para>
 @z
 
@@ -95,15 +111,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (required for the tests),
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="Mako"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="Mako"/>, and
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (テスト実施時に必要),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="Mako"/>
+      <xref linkend="Mako"/>,
+      <xref linkend="python2"/>
     </para>
 @z
 

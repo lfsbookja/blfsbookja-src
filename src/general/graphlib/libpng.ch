@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libpng-buildsize     "14 MB (with tests)">
-  <!ENTITY libpng-time          "0.8 SBU (with tests)">
+  <!ENTITY libpng-buildsize     "15 MB (with tests)">
+  <!ENTITY libpng-time          "less than 0.1 SBU (using parallelism=4; add 0.8 SBU for tests)">
 @y
-  <!ENTITY libpng-buildsize     "14 MB (テスト込み)">
-  <!ENTITY libpng-time          "0.8 SBU (テスト込み)">
+  <!ENTITY libpng-buildsize     "15 MB （テスト込み）">
+  <!ENTITY libpng-time          "&LessThan1;0.1 SBU&LessThan2;（parallelism=4 利用時；テスト実施時はさらに 0.8 SBU）">
 @z
 
 @x

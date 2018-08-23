@@ -122,11 +122,15 @@
 @z
 
 @x
-        <seg>lsb_release</seg>
+        <seg>
+           lsb_release
+        </seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>lsb_release</seg>
+        <seg>
+           lsb_release
+        </seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
 @z

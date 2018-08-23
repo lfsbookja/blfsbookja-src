@@ -131,18 +131,18 @@
 @x
     <bridgehead renderas="sect4">Optional Runtime Dependencies</bridgehead>
     <para role="optional">
-      <xref linkend="cups-pk-helper"/> (Printers panel),
-      <xref linkend="gnome-color-manager"/> (Color panel),
-      <xref linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel), and
-      <xref linkend="vino"/> (Screen Sharing in Sharing panel)
+      <xref role="runtime" linkend="cups-pk-helper"/> (Printers panel),
+      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel),
+      <xref role="runtime" linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel), and
+      <xref role="runtime" linkend="vino"/> (Screen Sharing in Sharing panel)
     </para>
 @y
     <bridgehead renderas="sect4">Optional Runtime Dependencies</bridgehead>
     <para role="optional">
-      <xref linkend="cups-pk-helper"/> (Printers panel),
-      <xref linkend="gnome-color-manager"/> (Color panel),
-      <xref linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel), and
-      <xref linkend="vino"/> (Screen Sharing in Sharing panel)
+      <xref role="runtime" linkend="cups-pk-helper"/> (Printers panel),
+      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel),
+      <xref role="runtime" linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel), and
+      <xref role="runtime" linkend="vino"/> (Screen Sharing in Sharing panel)
     </para>
 @z
 
@@ -176,9 +176,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x

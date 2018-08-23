@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY apr-util-buildsize     "8 MB (additional 1.4 MB for tests)">
-  <!ENTITY apr-util-time          "0.1 SBU (additional 0.3 SBU for tests)">
+  <!ENTITY apr-util-buildsize     "6.5 MB (add 1.4 MB for tests)">
+  <!ENTITY apr-util-time          "less than 0.1 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY apr-util-buildsize     "8 MB (テスト実施時はさらに 1.4 MB)">
-  <!ENTITY apr-util-time          "0.1 SBU (テスト実施時はさらに 0.3 SBU)">
+  <!ENTITY apr-util-buildsize     "6.5 MB (テスト実施時はさらに 1.4 MB)">
+  <!ENTITY apr-util-time          "&LessThan1;0.1 &LessThan2; (テスト実施時はさらに 0.3 SBU)">
 @z
 
 @x
@@ -184,12 +184,10 @@
       <parameter>--with-openssl=/usr --with-crypto</parameter>: These
       switches enable the
       <filename class="libraryfile">apr_crypto_openssl-1.so</filename>
-      plugin. Remove them if you have not installed
-      <xref linkend="openssl"/>.
+      plugin. 
 @y
       <parameter>--with-openssl=/usr --with-crypto</parameter>:
       このスイッチにより、プラグイン <filename class="libraryfile">apr_crypto_openssl-1.so</filename> を有効にします。
-      <xref linkend="openssl"/> をインストールしていない場合はこれを取り除いてください。
 @z
 
 @x

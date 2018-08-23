@@ -13,7 +13,8 @@ CHANGE_FILES = \
 	lxinput.ch             \
 	lxrandr.ch             \
 	lxtask.ch              \
-	lxterminal.ch
+	lxterminal.ch          \
+        vte2.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

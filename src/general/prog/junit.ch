@@ -84,13 +84,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="apache-ant"/> and
+      <xref linkend="maven"/> and
       <xref linkend="unzip"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="apache-ant"/>,
+      <xref linkend="maven"/>,
       <xref linkend="unzip"/>
     </para>
 @z
@@ -110,33 +110,29 @@
 @z
 
 @x
-      The <command>javadoc</command> command coming with OpenJDK 8 has become
-      much stricter than before regarding the conformance of the Javadoc
-      comments in source code to HTML. The <application>Junit</application>
-      documentation does not meet that standard, so the conformance checks
-      have to be disabled. This can be done with the following command:
+      First remove a test, which fails with <application>Java 9</application>.
 @y
-      The <command>javadoc</command> command coming with OpenJDK 8 has become
-      much stricter than before regarding the conformance of the Javadoc
-      comments in source code to HTML. The <application>Junit</application>
-      documentation does not meet that standard, so the conformance checks
-      have to be disabled. This can be done with the following command:
+      First remove a test, which fails with <application>Java 9</application>.
 @z
 
 @x
-      Now place the required hamcrest jar files where needed and build the
-      package:
+      Install <application>Junit</application> by running the following
+      commands:
 @y
-      Now place the required hamcrest jar files where needed and build the
-      package:
+      Install <application>Junit</application> by running the following
+      commands:
 @z
 
 @x
-      Test the package by issuing <command>ant dist</command>. One test fails
-      for unknown reason.
+      The tests are run as part of the command above.
 @y
-      Test the package by issuing <command>ant dist</command>. One test fails
-      for unknown reason.
+      The tests are run as part of the command above.
+@z
+
+@x
+      If you wish to generate the documentation, issue:
+@y
+      If you wish to generate the documentation, issue:
 @z
 
 @x
@@ -144,6 +140,14 @@
       <systemitem class="username">root</systemitem> user:
 @y
       Install the files in the final location as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      if the documentation was built, install it as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      if the documentation was built, install it as the
       <systemitem class="username">root</systemitem> user:
 @z
 

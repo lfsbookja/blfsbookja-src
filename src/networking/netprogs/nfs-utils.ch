@@ -101,9 +101,6 @@
       (for NFSv4 support),
       <xref linkend="libnsl"/> (for NIS client support),
       <xref linkend="sqlite"/>,
-      <phrase revision="sysv">
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink>
-      (for NFSv4 support),</phrase>
       <xref linkend="mitkrb"/> or
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink> (for GSS and RPC security support) and
@@ -120,12 +117,9 @@
       (for NFSv4 support),
       <xref linkend="libnsl"/> (for NIS client support),
       <xref linkend="sqlite"/>,
-      <phrase revision="sysv">
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink>
-      (for NFSv4 support),</phrase>
-      <xref linkend="mitkrb"/> or
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>, and
-      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink> (for GSS and RPC security support) and
+      <xref linkend="mitkrb"/> または
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">libgssapi</ulink>,
+      <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">librpcsecgss</ulink> (for GSS and RPC security support),
       
       <xref linkend="libcap-pam"/>
     </para>
@@ -134,12 +128,12 @@
 @x
     <bridgehead renderas="sect4">Required (runtime)</bridgehead>
     <para role="required">
-      <xref linkend="rpcbind"/>
+      <xref role="runtime" linkend="rpcbind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
     <para role="required">
-      <xref linkend="rpcbind"/>
+      <xref role="runtime" linkend="rpcbind"/>
     </para>
 @z
 
@@ -268,14 +262,6 @@ The classic uid and gid values are 65534 which is also -2 when
     configured as specified below.  In addition, the the daemon from <xref
     linkend="rpcbind"/> needs to be running and the tests need to be run as the
     <systemitem class="username">root</systemitem> user.</para>
-@z
-
-@x
-    <para>To test the results, issue, as root: <command>make check</command>.</para>
-@y
-    <para>
-    ビルド結果をテストする場合は root ユーザーになって <command>make check</command> を実行します。
-    </para>
 @z
 
 @x

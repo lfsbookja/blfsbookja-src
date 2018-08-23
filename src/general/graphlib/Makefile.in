@@ -250,14 +250,15 @@ CHANGE_FILES = \
 	libexif.ch       \
 	libjpeg-turbo.ch \
 	libmng.ch        \
+	libmypaint.ch    \
 	libpng.ch        \
 	libraw.ch        \
 	librsvg.ch       \
 	libtiff.ch       \
 	libwebp.ch       \
+	mypaint-brushes.ch \
 	newt.ch          \
 	opencv.ch        \
-	openjpeg.ch      \
 	openjpeg2.ch     \
 	pixman.ch        \
 	potrace.ch       \

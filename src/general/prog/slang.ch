@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY slang-buildsize     "41 MB (with tests)">
-  <!ENTITY slang-time          "0.6 SBU (with tests)">
+  <!ENTITY slang-buildsize     "29 MB (add 4 MB for tests)">
+  <!ENTITY slang-time          "0.4 SBU (add 0.2 SBU for tests)">
 @y
-  <!ENTITY slang-buildsize     "41 MB (テスト込み)">
-  <!ENTITY slang-time          "0.6 SBU (テスト込み)">
+  <!ENTITY slang-buildsize     "29 MB（テスト実施時はさらに 4 MB）">
+  <!ENTITY slang-time          "0.4 SBU（テスト実施時はさらに 0.2 SBU）">
 @z
 
 @x

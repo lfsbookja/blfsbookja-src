@@ -121,11 +121,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="cmake"/> and
       <xref linkend="fontconfig"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="cmake"/>,
       <xref linkend="fontconfig"/>
     </para>
 @z
@@ -134,19 +136,21 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="cairo"/>,
+      <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="nss"/>, and
-      <xref linkend="openjpeg"/>
+      <xref linkend="openjpeg2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="cairo"/>,
+      <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="nss"/>,
-      <xref linkend="openjpeg"/>
+      <xref linkend="openjpeg2"/>
     </para>
 @z
 
@@ -154,29 +158,27 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="git"/> (for downloading test files),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="gtk2"/>,
-      <xref linkend="lcms"/> or <xref linkend="lcms2"/>,
+      <xref linkend="gtk3"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="openjpeg2"/>
-      (preference is for OpenJPEG1, due to regressions with OpenJPEG2), and
       <xref linkend="qt5"/>
-      (required for PDF support in <xref linkend="okular5"/>)
+      (required for PDF support in <xref role="nodep" linkend="okular5"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="git"/> (for downloading test files),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="gtk2"/>,
-      <xref linkend="lcms"/> または <xref linkend="lcms2"/>,
+      <xref linkend="gtk3"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="openjpeg2"/>
-      (preference is for OpenJPEG1, due to regressions with OpenJPEG2),
       <xref linkend="qt5"/>
-      (required for PDF support in <xref linkend="okular5"/>)
+      (required for PDF support in <xref role="nodep" linkend="okular5"/>)
     </para>
 @z
 
@@ -204,15 +206,15 @@
       be obtained only from a git repository. The command to download
       them is:
 <command>git clone git://git.freedesktop.org/git/poppler/test testfiles</command>.
-      Then issue: <command>LC_ALL=en_US.UTF-8 make check</command>. It seems
-      that only the Qt4/5 libraries are tested.
+      Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>. 
+      Only the Qt5 libraries are tested.
 @y
       In order to run the test suite, some testcases are needed and can
       be obtained only from a git repository. The command to download
       them is:
 <command>git clone git://git.freedesktop.org/git/poppler/test testfiles</command>.
-      Then issue: <command>LC_ALL=en_US.UTF-8 make check</command>. It seems
-      that only the Qt4/5 libraries are tested.
+      Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>. 
+      Only the Qt5 libraries are tested.
 @z
 
 @x
@@ -248,65 +250,39 @@
 @z
 
 @x
-      <parameter>--enable-build-type=release</parameter>: This switch is used
-      to apply a higher level of compiler optimizations. Other options are:
-      [<option>relwithdebinfo/debug/debugfull/profile</option>]
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply a higher level of compiler optimizations. 
 @y
-      <parameter>--enable-build-type=release</parameter>: This switch is used
-      to apply a higher level of compiler optimizations. Other options are:
-      [<option>relwithdebinfo/debug/debugfull/profile</option>]
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply a higher level of compiler optimizations. 
 @z
 
 @x
-      <parameter>--enable-cmyk</parameter>:
-      Include support for CMYK rasterization.
-@y
-      <parameter>--enable-cmyk</parameter>:
-      Include support for CMYK rasterization.
-@z
-
-@x
-      <parameter>--enable-xpdf-headers</parameter>: Install some old
-      <application>Xpdf</application> headers required by certain programs (e.g.
-      <application>Okular</application>, <application>LibreOffice</application>
-      and <application>Inkscape</application>).
-@y
-      <parameter>--enable-xpdf-headers</parameter>: Install some old
-      <application>Xpdf</application> headers required by certain programs (e.g.
-      <application>Okular</application>, <application>LibreOffice</application>
-      and <application>Inkscape</application>).
-@z
-
-@x
-      <parameter>--with-testdatadir=$PWD/testfiles</parameter>: Tell the test
+      <parameter>-DTESTDATADIR=$PWD/testfiles</parameter>: Tell the test
       programs where the auxiliary files are located.
 @y
-      <parameter>--with-testdatadir=$PWD/testfiles</parameter>: Tell the test
+      <parameter>-DTESTDATADIR=$PWD/testfiles</parameter>: Tell the test
       programs where the auxiliary files are located.
 @z
 
 @x
-      <option>--enable-libcurl</option>: Use libcurl for HTTP support.
+      <parameter>-DENABLE_XPDF_HEADERS=ON</parameter>: Install some old
+      <application>Xpdf</application> headers required by certain programs (e.g.
+      <application>Okular</application>, <application>LibreOffice</application>
+      and <application>Inkscape</application>).
 @y
-      <option>--enable-libcurl</option>: Use libcurl for HTTP support.
+      <parameter>-DENABLE_XPDF_HEADERS=ON</parameter>: Install some old
+      <application>Xpdf</application> headers required by certain programs (e.g.
+      <application>Okular</application>, <application>LibreOffice</application>
+      and <application>Inkscape</application>).
 @z
 
 @x
-      <option>--disable-poppler-qt5</option>: Don't compile poppler Qt5 wrapper,
-      when Qt5 is installed. Note that Qt5 support is required for PDF support
-      in <xref linkend="okular5"/>.
-@y
-      <option>--disable-poppler-qt5</option>: Don't compile poppler Qt5 wrapper,
-      when Qt5 is installed. Note that Qt5 support is required for PDF support
-      in <xref linkend="okular5"/>.
-@z
-
-@x
-      <command>LC_ALL=en_US.UTF-8 make check</command>: Run the test suite.
+      <command>LC_ALL=en_US.UTF-8 make test</command>: Run the test suite.
       The environment variable LC_ALL=en_US.UTF-8 is only needed if the
       default locale does not include UTF-8.
 @y
-      <command>LC_ALL=en_US.UTF-8 make check</command>: Run the test suite.
+      <command>LC_ALL=en_US.UTF-8 make test</command>: Run the test suite.
       The environment variable LC_ALL=en_US.UTF-8 is only needed if the
       default locale does not include UTF-8.
 @z
@@ -330,8 +306,8 @@
 @x
         <seg>
           pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdfsig,
-          pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
-          pdfunite, and poppler-glib-demo
+          pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, and
+          pdfunite
         </seg>
         <seg>
           libpoppler.so,
@@ -340,14 +316,15 @@
           libpoppler-qt5.so
         </seg>
         <seg>
-          /usr/{include,share,share/gtk-doc/html}/poppler and
+          /usr/include/poppler,
+          /usr/share/poppler, and
           /usr/share/doc/poppler-&poppler-version;
         </seg>
 @y
         <seg>
           pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdfsig,
           pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
-          pdfunite, poppler-glib-demo
+          pdfunite
         </seg>
         <seg>
           libpoppler.so,
@@ -356,7 +333,8 @@
           libpoppler-qt5.so
         </seg>
         <seg>
-          /usr/{include,share,share/gtk-doc/html}/poppler,
+          /usr/include/poppler,
+          /usr/share/poppler,
           /usr/share/doc/poppler-&poppler-version;
         </seg>
 @z
@@ -435,13 +413,6 @@
             command line, to one PDF output file.
 @z
 
-@x poppler-glib-demo
-            is a tool to demonstrate the API, and for use when debugging and
-            testing <application>Poppler</application>.
-@y
-            <application>Poppler</application> の API をデモしたり、デバッグやテストを行うためのツールです。
-@z
-
 @x libpoppler.so
             contains the API functions to render PDF files.
 @y
@@ -459,13 +430,6 @@
             with <application>GTK+</application>.
 @y
             <application>GTK+</application> に対しての PDF レンダリング機能を提供するラッパーライブラリです。
-@z
-
-@x libpoppler-qt4.so
-            is a wrapper library used to interface the PDF rendering functions
-            with <application>Qt</application>4.
-@y
-            <application>Qt</application>4 に対しての PDF レンダリング機能を提供するラッパーライブラリです。
 @z
 
 @x libpoppler-qt5.so

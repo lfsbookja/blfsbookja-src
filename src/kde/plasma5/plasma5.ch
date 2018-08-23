@@ -30,20 +30,6 @@
 @z
 
 @x
-  <para>Because KDE Plasma 5 is so new, there are issues preventing proper
-  operation on some systems in the LFS environment.  When these issues are
-  worked out, then the build instructions will be added here.  For more
-  information, see <ulink url="https://www.kde.org/announcements/plasma-5.4.0.php"/>.
-  </para>
-@y
-  <para>Because KDE Plasma 5 is so new, there are issues preventing proper
-  operation on some systems in the LFS environment.  When these issues are
-  worked out, then the build instructions will be added here.  For more
-  information, see <ulink url="https://www.kde.org/announcements/plasma-5.4.0.php"/>.
-  </para>
-@z
-
-@x
   <para>No additional configuration is needed before building the KDE Plasma 5
   because it uses the same configuration that KDE Frameworks 5 uses.</para>
 @y

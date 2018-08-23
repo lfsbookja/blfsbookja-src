@@ -78,13 +78,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gst10-plugins-base"/> and
+      <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="gst10-plugins-good"/> and
       <xref linkend="libxfce4ui"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="gst10-plugins-good"/>,
       <xref linkend="libxfce4ui"/>
     </para>
 @z

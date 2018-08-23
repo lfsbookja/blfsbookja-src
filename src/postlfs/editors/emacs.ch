@@ -215,7 +215,25 @@
 @z
 
 @x
-    <para><option>--with-giflib=no</option>: Use this if you have not installed
+    <para><option>IMAGEMAGICK_CFLAGS=-I/usr/include/ImageMagick-6 
+    IMAGEMAGICK_LIBS="-lMagickCore-6.Q16HDRI -lMagick++-6.Q16HDRI
+    -lMagickWand-6.Q16HDRI" </option>:
+    use these when you invoke configure if you have installed <xref
+    linkend="imagemagick6"/> and wish to link to them (the normal unversioned
+    pkgconfig files collide with <xref linkend="imagemagick"/> which this
+    package cannot use).</para>
+@y
+    <para><option>IMAGEMAGICK_CFLAGS=-I/usr/include/ImageMagick-6 
+    IMAGEMAGICK_LIBS="-lMagickCore-6.Q16HDRI -lMagick++-6.Q16HDRI
+    -lMagickWand-6.Q16HDRI" </option>:
+    use these when you invoke configure if you have installed <xref
+    linkend="imagemagick6"/> and wish to link to them (the normal unversioned
+    pkgconfig files collide with <xref linkend="imagemagick"/> which this
+    package cannot use).</para>
+@z
+
+@x
+    <para><option>--with-gif=no</option>: Use this if you have not installed
     <xref linkend="giflib"/> or 
     <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>.</para>
 @y

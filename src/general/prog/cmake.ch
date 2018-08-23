@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "335 MB (add 375 MB for tests)">
-  <!ENTITY cmake-time          "2.2 SBU (add 2.8 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-buildsize     "400 MB (add 416 MB for tests)">
+  <!ENTITY cmake-time          "2.6 SBU (add 3.0 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "335 MB (テスト実行時は 375 MB)">
-  <!ENTITY cmake-time          "2.2 SBU (テスト実行時は 2.8 SBU, いずれも parallelism=4 利用時)">
+  <!ENTITY cmake-buildsize     "400 MB（テスト実行時は 416 MB）">
+  <!ENTITY cmake-time          "2.6 SBU（テスト実行時は 3.0 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -107,8 +107,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="qt5"/> (for the Qt-based GUI),
-      <xref linkend="subversion"/> (for testing),
-      <ulink url="https://github.com/libuv/libuv/releases">libuv</ulink>, and 
+      <xref linkend="subversion"/> (for testing), and
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
       (for building documents)
     </para>
@@ -117,7 +116,6 @@
     <para role="optional">
       <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
       <xref linkend="subversion"/> (テスト時),
-      <ulink url="https://github.com/libuv/libuv/releases">libuv</ulink>,
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
       (ドキュメント構築時)
     </para>
@@ -227,7 +225,7 @@
 
 @x
         <seg>
-          ccmake, cmake, cmake-gui (optional), cpack and ctest
+          ccmake, cmake, cmake-gui (optional), cpack, and ctest
         </seg>
         <seg>
           None

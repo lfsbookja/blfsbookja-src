@@ -10,7 +10,6 @@ CHANGE_FILES = \
 	apps.ch           \
 	parole.ch         \
 	ristretto.ch      \
-	vte2.ch           \
 	xfburn.ch         \
 	xfce4-notifyd.ch  \
 	xfce4-terminal.ch

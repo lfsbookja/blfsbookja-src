@@ -96,14 +96,16 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
     <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
-    <ulink url="http://hunspell.github.io/">Hunspell</ulink>, and
-    <ulink url="http://hunspell.github.io/">Voikko</ulink></para>
+    <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
+    <ulink url="http://hunspell.github.io/">Voikko</ulink>, and
+    <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">unittest-cpp</ulink> (required for tests)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
     <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
     <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
-    <ulink url="http://hunspell.github.io/">Voikko</ulink></para>
+    <ulink url="http://hunspell.github.io/">Voikko</ulink>,
+    <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">unittest-cpp</ulink> (required for tests)</para>
 @z
 
 @x
@@ -130,9 +132,15 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To run tests, unittest-cpp must be installed and the 
+    --enable-relocatable option passed to configure above.  If these
+    conditions are present, the tests may be run with <command>make 
+    check</command>.</para>
 @y
-    <para>&notTestSuite;</para>
+    <para>To run tests, unittest-cpp must be installed and the 
+    --enable-relocatable option passed to configure above.  If these
+    conditions are present, the tests may be run with <command>make 
+    check</command>.</para>
 @z
 
 @x
@@ -220,11 +228,11 @@
 @z
 
 @x
-        <seg>enchant and enchant-lsmod</seg>
+        <seg>enchant</seg>
         <seg>libenchant.so and various backend libraries</seg>
         <seg>/usr/{include,lib,share}/enchant</seg>
 @y
-        <seg>enchant, enchant-lsmod</seg>
+        <seg>enchant</seg>
         <seg>libenchant.so とさまざまなバックエンドライブラリ</seg>
         <seg>/usr/{include,lib,share}/enchant</seg>
 @z

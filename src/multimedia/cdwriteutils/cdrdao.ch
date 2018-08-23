@@ -134,14 +134,6 @@
 @z
 
 @x
-      <command>sed -i '/ioctl/a #include &lt;sys/stat.h&gt;' ...</command>: This
-      sed adds a missing <filename>sys/stat.h</filename> include.
-@y
-      <command>sed -i '/ioctl/a #include &lt;sys/stat.h&gt;' ...</command>:
-      この sed コマンドは、不足している <filename>sys/stat.h</filename> のインクルード指定を追加します。
-@z
-
-@x
       <command>--mandir=/usr/share/man</command>: Install manual pages in
       /usr/share/man instead of /usr/man.
 @y

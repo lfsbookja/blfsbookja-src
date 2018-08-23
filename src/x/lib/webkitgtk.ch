@@ -84,8 +84,8 @@
     <para role="required">
       <xref linkend="cairo"/>,
       <xref linkend="cmake"/>,
-      <xref linkend="enchant"/>,
       <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="gst10-plugins-bad"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
@@ -95,7 +95,7 @@
       <xref linkend="libwebp"/>,
       <xref linkend="mesa"/>,
       <xref linkend="ruby"/>,
-      <xref linkend="sqlite"/> and
+      <xref linkend="sqlite"/>, and
       <xref linkend="which"/>
     </para>
 @y
@@ -103,8 +103,8 @@
     <para role="required">
       <xref linkend="cairo"/>,
       <xref linkend="cmake"/>,
-      <xref linkend="enchant"/>,
       <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="gst10-plugins-bad"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
@@ -122,17 +122,19 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="enchant"/>,
       <xref linkend="geoclue2"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="hicolor-icon-theme"/>
+      <xref linkend="hicolor-icon-theme"/>, and
       <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="enchant"/>,
       <xref linkend="geoclue2"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="hicolor-icon-theme"/>
+      <xref linkend="hicolor-icon-theme"/>,
       <xref linkend="libnotify"/>
     </para>
 @z
@@ -143,9 +145,10 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="llvm"/>,
-      <xref linkend="wayland"/>,
-      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>, and
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
+      <xref linkend="wayland"/>, 
+      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, and
+      <ulink url="https://github.com/google/woff2">woff2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -153,9 +156,10 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="llvm"/>,
-      <xref linkend="wayland"/>,
-      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>, and
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>
+      <xref linkend="wayland"/>, 
+      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>,
+      <ulink url="https://github.com/google/woff2">woff2</ulink>
     </para>
 @z
 
@@ -221,7 +225,9 @@
 
 @x
         <seg>
-          jsc and MiniBrowser
+          jsc, 
+          MiniBrowser, and
+          WebKitWebDriver <!-- New in 2.18.0 -->
         </seg>
         <seg>
           libjavascriptcoregtk-4.0.so and
@@ -229,12 +235,14 @@
         </seg>
         <seg>
           /usr/include/webkitgtk-4.0,
-          /usr/lib{,exec}/webkit2gtk-4.0 and
+          /usr/lib{,exec}/webkit2gtk-4.0, and
           /usr/share/gtk-doc/html/webkit{2,dom}gtk-4.0
         </seg>
 @y
         <seg>
-          jsc, MiniBrowser
+          jsc, 
+          MiniBrowser,
+          WebKitWebDriver <!-- New in 2.18.0 -->
         </seg>
         <seg>
           libjavascriptcoregtk-4.0.so,

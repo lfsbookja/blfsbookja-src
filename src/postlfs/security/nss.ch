@@ -112,12 +112,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="sqlite"/> and <xref linkend="p11-kit"/> (runtime)
+      <xref linkend="sqlite"/> and
+      <xref role="runtime" linkend="p11-kit"/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="sqlite"/>, <xref linkend="p11-kit"/> (実行時)
+      <xref linkend="sqlite"/>,
+      <xref role="runtime" linkend="p11-kit"/> （実行時）
     </para>
 @z
 

@@ -15,12 +15,12 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "August 27th, &year;">
+<!ENTITY releasedate  "August 23nd, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20170828">
-<!ENTITY jratio       "55.9 &percnt;">
+<!ENTITY jversion     "20180823">
+<!ENTITY jratio       "55.9? &percnt;">
 @z
 
 @x
@@ -101,23 +101,23 @@
 @z
 
 @x
-<!ENTITY lfs80_checked        "<para>This package is known to build and work
-                              properly using an LFS-8.0 platform.</para>">
-<!ENTITY lfs80_built          "<para>This package is known to build using an LFS
-                              8.0 platform but has not been tested.</para>">
+<!ENTITY lfs82_checked        "<para>This package is known to build and work
+                              properly using an LFS-8.2 platform.</para>">
+<!ENTITY lfs82_built          "<para>This package is known to build using an LFS
+                              8.2 platform but has not been tested.</para>">
 @y
-<!ENTITY lfs80_checked        "<para>本パッケージは LFS-8.0 において正しくビルドでき動作することが確認されています。</para>">
-<!ENTITY lfs80_built          "<para>本パッケージは LFS-8.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+<!ENTITY lfs82_checked        "<para>本パッケージは LFS-8.2 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs82_built          "<para>本パッケージは LFS-8.2 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 @x
-<!ENTITY lfs81_checked        "<para>This package is known to build and work
-                              properly using an LFS-8.1 platform.</para>">
-<!ENTITY lfs81_built          "<para>This package is known to build using an LFS
-                              8.1 platform but has not been tested.</para>">
+<!ENTITY lfs83_checked        "<para>This package is known to build and work
+                              properly using an LFS-8.3 platform.</para>">
+<!ENTITY lfs83_built          "<para>This package is known to build using an LFS
+                              8.3 platform but has not been tested.</para>">
 @y
-<!ENTITY lfs81_checked        "<para>本パッケージは LFS-8.1 において正しくビルドでき動作することが確認されています。</para>">
-<!ENTITY lfs81_built          "<para>本パッケージは LFS-8.1 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+<!ENTITY lfs83_checked        "<para>本パッケージは LFS-8.3 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs83_built          "<para>本パッケージは LFS-8.3 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 %@x

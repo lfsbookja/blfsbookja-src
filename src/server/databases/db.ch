@@ -75,21 +75,25 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="tcl"/>,
+      <xref linkend="tcl"/> and
+      <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
+
+      <!--,
       <xref linkend="openjdk"/> or <xref linkend="java"/>, and
+- -          This is currently broken, removed for now.                - -
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command
-      - Java bindings are required)
-    </para>
+      - Java bindings are required) -->
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="tcl"/>,
-      <xref linkend="openjdk"/> または <xref linkend="java"/>,
+      <xref linkend="tcl"/> and
+      <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
+
+      <!--,
+      <xref linkend="openjdk"/> or <xref linkend="java"/>, and
+- -          This is currently broken, removed for now.                - -
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command
-      - Java bindings are required)
-    </para>
+      - Java bindings are required) -->
 @z
 
 @x
@@ -99,9 +103,9 @@
 @z
 
 @x
-    <title>Testing Berkeley DB</title>
+    <title>Testing Berkeley DB before the real install</title>
 @y
-    <title>Berkeley DB のテスト</title>
+    <title>最終的なインストール前の Berkeley DB のテスト</title>
 @z
 
 @x
@@ -235,26 +239,26 @@
 @z
 
 @x
-      <option>--enable-compat185</option>: This switch enables building
+      <parameter>--enable-compat185</parameter>: This switch enables building
       the DB-1.85 compatibility API.
 @y
-      <option>--enable-compat185</option>:
+      <parameter>--enable-compat185</parameter>:
       このスイッチは、DB-1.85 互換 API をビルドすることを指定します。
 @z
 
 @x
-      <option>--enable-cxx</option>: This switch enables building C++ API
+      <parameter>--enable-cxx</parameter>: This switch enables building C++ API
       libraries.
 @y
-      <option>--enable-cxx</option>:
+      <parameter>--enable-cxx</parameter>:
       このスイッチは C++ API ライブラリをビルドすることを指定します。
 @z
 
 @x
-      <option>--enable-dbm</option>: Enables legacy interface support
+      <parameter>--enable-dbm</parameter>: Enables legacy interface support
       needed by some older packages.
 @y
-      <option>--enable-dbm</option>: 
+      <parameter>--enable-dbm</parameter>: 
       古いパッケージが必要としている、かつてのインターフェースサポートを有効にします。
 @z
 
@@ -332,8 +336,8 @@
         </seg>
         <seg>
           libdb.so,
-          libdb_cxx.so,
-          libdb_java.so, and
+          libdb_cxx.so, and
+<!--      libdb_java.so, and -->
           libdb_tcl.so
         </seg>
         <seg>/usr/share/doc/db-&db-version;</seg>
@@ -357,7 +361,7 @@
         <seg>
           libdb.so,
           libdb_cxx.so,
-          libdb_java.so,
+<!--      libdb_java.so, and -->
           libdb_tcl.so
         </seg>
         <seg>/usr/share/doc/db-&db-version;</seg>

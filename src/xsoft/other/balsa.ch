@@ -120,7 +120,6 @@
       didn't install the required <application>libESMTP</application>
       package),
       <xref linkend="openldap"/>,
-      <xref linkend="openssl"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="webkitgtk"/>,
       <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>, and
@@ -138,10 +137,9 @@
       didn't install the required <application>libESMTP</application>
       package),
       <xref linkend="openldap"/>,
-      <xref linkend="openssl"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="webkitgtk"/>,
-      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>, and
+      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>,
       <ulink url="https://pypi.python.org/pypi/html2text/">python-html2text</ulink>
     </para>
 @z

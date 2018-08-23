@@ -86,12 +86,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="python2"/>
+      <xref linkend="libtirpc"/>,
+      <xref linkend="python2"/>, and
+      <xref linkend="rpcsvc-proto"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="python2"/>
+      <xref linkend="libtirpc"/>,
+      <xref linkend="python2"/>,
+      <xref linkend="rpcsvc-proto"/>
     </para>
 @z
 
@@ -99,25 +103,19 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gpgme"/>,
-      <xref linkend="libtirpc"/>,
       <xref linkend="libxslt"/> (for documentation),
       <xref linkend="perl-parse-yapp"/>,
-      <xref linkend="pycrypto"/>,
-      <xref linkend="python3"/>,
-      <xref linkend="openldap"/>, and
-      <xref linkend="openssl"/> <!-- This can be removed at openldap-2.4.45.-->
+      <xref linkend="pycrypto"/>, and
+      <xref linkend="openldap"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gpgme"/>,
-      <xref linkend="libtirpc"/>,
-      <xref linkend="libxslt"/> (ドキュメント生成のため),
+      <xref linkend="libxslt"/>（ドキュメント生成のため）,
       <xref linkend="perl-parse-yapp"/>,
       <xref linkend="pycrypto"/>,
-      <xref linkend="python3"/>,
-      <xref linkend="openldap"/>,
-      <xref linkend="openssl"/> <!-- This can be removed at openldap-2.4.45.-->
+      <xref linkend="openldap"/>
     </para>
 @z
 
@@ -134,6 +132,7 @@
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libnsl"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nss"/>,
@@ -144,7 +143,7 @@
       <xref linkend="xfsprogs"/>,
       <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
-      <ulink url="http://www.h5l.org/">Heimdal</ulink> (currently not working),
+      <ulink url="http://www.h5l.org/">Heimdal</ulink> (included),
       <ulink url="http://ftp.de.debian.org/debian/pool/main/liba/libaio/">libaio</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
@@ -167,6 +166,7 @@
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libnsl"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nss"/>,
@@ -177,7 +177,7 @@
       <xref linkend="xfsprogs"/>,
       <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
-      <ulink url="http://www.h5l.org/">Heimdal</ulink> (currently not working),
+      <ulink url="http://www.h5l.org/">Heimdal</ulink> (included),
       <ulink url="http://ftp.de.debian.org/debian/pool/main/liba/libaio/">libaio</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
@@ -232,17 +232,14 @@
       <para>Additionally, developer test suites are available. If you've
       installed the optional python modules above, you can run these tests with
       <command>make test</command>. It is not recommended for the average
-      builder at nearly 100 SBU, and you should expect ~80 errors and ~30
-      failures from the 3000+ tests.</para>
+      builder at nearly 100 SBU and over a gigabyte of disk space, and you
+      should expect ~80 errors and ~30 failures from the 3000+ tests.</para>
 @y
-      <para>
-      
-      Additionally, developer test suites are available. If you've
+      <para>Additionally, developer test suites are available. If you've
       installed the optional python modules above, you can run these tests with
       <command>make test</command>. It is not recommended for the average
-      builder at nearly 100 SBU, and you should expect ~80 errors and ~30
-      failures from the 3000+ tests
-      </para>
+      builder at nearly 100 SBU and over a gigabyte of disk space, and you
+      should expect ~80 errors and ~30 failures from the 3000+ tests.</para>
 @z
 
 @x

@@ -25,7 +25,7 @@ CHANGE_FILES = \
 	gnome-screenshot.ch       \
 	gnome-system-monitor.ch   \
 	gnome-terminal.ch         \
-	gnome-tweak-tool.ch       \
+	gnome-tweaks.ch           \
 	gnome-weather.ch          \
 	gucharmap.ch              \
 	network-manager-applet.ch \

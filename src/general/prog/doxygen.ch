@@ -112,7 +112,7 @@
       <xref linkend="gs"/>,
       <xref linkend="libxml2"/> (required for the tests),
       <xref linkend="llvm"/> (with clang),
-      <xref linkend="python2"/> or <xref linkend="python3"/>,
+      <xref linkend="python2"/>,
       <xref linkend="qt5"/> (for doxywizard),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
       <xref linkend="xapian"/> (for doxyindexer)
@@ -124,7 +124,7 @@
       <xref linkend="gs"/>,
       <xref linkend="libxml2"/> (required for the tests),
       <xref linkend="llvm"/> (with clang),
-      <xref linkend="python2"/> or <xref linkend="python3"/>,
+      <xref linkend="python2"/>,
       <xref linkend="qt5"/> (for doxywizard),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
       <xref linkend="xapian"/> (for doxyindexer)
@@ -151,9 +151,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make tests</command>.
+      To test the results, issue: <command>make tests</command>. One test,
+      012_cite.dox, is known to fail.
 @y
       ビルド結果をテストする場合は <command>make tests</command> を実行します。
+      012_cite.dox というテストだけが失敗します。
 @z
 
 @x

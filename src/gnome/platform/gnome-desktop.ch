@@ -84,6 +84,7 @@
       <xref linkend="gtk3"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="libseccomp"/>,
       <xref linkend="libxml2"/>, and
       <xref linkend="xkeyboard-config"/>
     </para>
@@ -94,6 +95,7 @@
       <xref linkend="gtk3"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="libseccomp"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="xkeyboard-config"/>
     </para>

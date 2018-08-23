@@ -6,7 +6,7 @@
 ## $Date::                           $
 ##
 SUBDIRS=appendices book general gnome introduction kde lxde \
-	lxqt networking \
+	networking \
 	multimedia postlfs pst server stylesheets template x \
 	xfce xincludes xsoft
 EXTRA_DIST = \

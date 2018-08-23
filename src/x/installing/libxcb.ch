@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libxcb-buildsize     "28 MB (with tests, add 62 MB for doxygen docs)">
+  <!ENTITY libxcb-buildsize     "41 MB (with tests, add 62 MB for doxygen docs)">
   <!ENTITY libxcb-time          "0.3 SBU (with tests, add 1.4 SBU for doxygen docs)">
 @y
-  <!ENTITY libxcb-buildsize     "28 MB (テスト込み、doxygenドキュメント生成時はさらに 62 MB)">
-  <!ENTITY libxcb-time          "0.3 SBU (テスト込み、doxygenドキュメント生成時はさらに 1.4 SBU)">
+  <!ENTITY libxcb-buildsize     "41 MB （テスト込み、doxygenドキュメント生成時はさらに 62 MB）">
+  <!ENTITY libxcb-time          "0.3 SBU （テスト込み、doxygenドキュメント生成時はさらに 1.4 SBU）">
 @z
 
 @x
@@ -130,15 +130,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (to generate API documentation)
-      <xref linkend="check"/> (to run tests) and
+      <xref linkend="doxygen"/> (to generate API documentation) and
       <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (API ドキュメント生成のため)
-      <xref linkend="check"/> (テスト実行のため),
+      <xref linkend="doxygen"/> （API ドキュメント生成のため）,
       <xref linkend="libxslt"/>
     </para>
 @z
@@ -204,15 +202,6 @@
 @z
 
 @x
-    <para><parameter>--enable-xinput</parameter>: This switch enables XCB Xinput
-    extension.</para>
-@y
-    <para><parameter>--enable-xinput</parameter>:
-    本スイッチは XCB Xinput 拡張を有効にします。
-    </para>
-@z
-
-@x
     <para><parameter>--without-doxygen</parameter>: Do not use doxygen to
     generate API documentation (default: auto). Without it, if
     <xref linkend="doxygen"/> is installed, the API documentation will be
@@ -249,9 +238,9 @@
           libxcb-dri2.so, libxcb-dri3.so, libxcb-glx.so, libxcb-present.so,
           libxcb-randr.so, libxcb-record.so, libxcb-render.so, libxcb-res.so,
           libxcb-screensaver.so, libxcb-shape.so, libxcb-shm.so, libxcb-sync.so,
-          libxcb-xevie.so, libxcb-xf86dri.so, libxcb-xfixes.so,
+          libxcb-xf86dri.so, libxcb-xfixes.so,
           libxcb-xinerama.so, libxcb-xinput.so, libxcb-xkb.so,
-          libxcb-xprint.so, libxcb-xtest.so, libxcb-xvmc.so, and libxcb-xv.so
+          libxcb-xtest.so, libxcb-xvmc.so, and libxcb-xv.so
         </seg>
         <seg>
           <envar>$XORG_PREFIX</envar>/include/xcb and
@@ -266,9 +255,9 @@
           libxcb-dri2.so, libxcb-dri3.so, libxcb-glx.so, libxcb-present.so,
           libxcb-randr.so, libxcb-record.so, libxcb-render.so, libxcb-res.so,
           libxcb-screensaver.so, libxcb-shape.so, libxcb-shm.so, libxcb-sync.so,
-          libxcb-xevie.so, libxcb-xf86dri.so, libxcb-xfixes.so,
+          libxcb-xf86dri.so, libxcb-xfixes.so,
           libxcb-xinerama.so, libxcb-xinput.so, libxcb-xkb.so,
-          libxcb-xprint.so, libxcb-xtest.so, libxcb-xvmc.so, libxcb-xv.so
+          libxcb-xtest.so, libxcb-xvmc.so, libxcb-xv.so
         </seg>
         <seg>
           <envar>$XORG_PREFIX</envar>/include/xcb,

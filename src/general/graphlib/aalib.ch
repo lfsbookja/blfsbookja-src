@@ -149,11 +149,11 @@
 
 @x
         <seg>aafire, aainfo, aalib-config, aasavefont, and aatest</seg>
-        <seg>libaa.{so,a}</seg>
+        <seg>libaa.so</seg>
         <seg>None</seg>
 @y
         <seg>aafire, aainfo, aalib-config, aasavefont, aatest</seg>
-        <seg>libaa.{so,a}</seg>
+        <seg>libaa.so</seg>
         <seg>&None;</seg>
 @z
 

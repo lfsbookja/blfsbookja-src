@@ -20,15 +20,15 @@
 @z
 
 @x
-      <application>Colord</application> is a system activated daemon that
-      maps devices to color profiles. It is used by
+      <application>Colord</application> is a system service that makes it easy
+      to manage, install, and generate color profiles. It is used mainly by
       <application>GNOME Color Manager</application> for system integration
-      and use when there are no users logged in.
+      and use when no users are logged in.
 @y
-      <application>Colord</application> is a system activated daemon that
-      maps devices to color profiles. It is used by
+      <application>Colord</application> is a system service that makes it easy
+      to manage, install, and generate color profiles. It is used mainly by
       <application>GNOME Color Manager</application> for system integration
-      and use when there are no users logged in.
+      and use when no users are logged in.
 @z
 
 @x
@@ -103,7 +103,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
-      <xref linkend="polkit"/>,<phrase revision="sysv"> and</phrase>
+      <xref linkend="polkit"/>, <phrase revision="sysv">and</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>, and</phrase>
       <xref linkend="vala"/>
     </para>
@@ -113,7 +113,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
-      <xref linkend="polkit"/>,<phrase revision="sysv"> and</phrase>
+      <xref linkend="polkit"/>, <phrase revision="sysv">and</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>, and</phrase>
       <xref linkend="vala"/>
     </para>
@@ -128,27 +128,27 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="sane"/>,
-      <ulink url="http://www.argyllcms.com/">ArgllCMS</ulink>, and
-      <ulink url="http://bash-completion.alioth.debian.org/">Bash Completion</ulink>,
+      <ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink>, and
+      <ulink url="https://github.com/scop/bash-completion/">Bash Completion</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
-      <xref linkend="gnome-desktop"/> and
+      <xref linkend="gnome-desktop"/>,
       <xref linkend="colord-gtk"/> (to build the example tools),
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="sane"/>,
-      <ulink url="http://www.argyllcms.com/">ArgllCMS</ulink>, and
-      <ulink url="http://bash-completion.alioth.debian.org/">Bash Completion</ulink>,
+      <ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink>,
+      <ulink url="https://github.com/scop/bash-completion/">Bash Completion</ulink>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+      User Notes: <ulink url="&blfs-wiki;/colord"/>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+      &UserNotes;: <ulink url="&blfs-wiki;/colord"/>
 @z
 
 @x
@@ -171,14 +171,15 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>. For unknown
-      reasons, some tests may fail. Note that the system-wide
-      <application>D-Bus</application> daemon must be running or the tests
-      will fail.
+      To test the results, issue: <command>ninja -k 2 test</command>.
+      One test, <filename>colord-self-test-daemon</filename>, will fail.
+      The test suite must be run after the package is installed, and the
+      system-wide D-Bus Daemon must be running.
 @y
-      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-      テストの中には理由不明により失敗するものがあります。
-      システムワイドな <application>D-Bus</application> デーモンの稼動が必要なのかもしれず、そうでないときにテストが失敗するのかもしれません。
+      ビルド結果をテストする場合は <command>ninja -k 2 test</command> を実行します。
+      One test, <filename>colord-self-test-daemon</filename>, will fail.
+      The test suite must be run after the package is installed, and the
+      system-wide D-Bus Daemon must be running.
 @z
 
 @x
@@ -205,29 +206,43 @@
 
 @x
         <seg>
-          cd-create-profile, cd-fix-profile, cd-iccdump, cd-it8, and colormgr
+          cd-create-profile,
+          cd-fix-profile,
+          cd-iccdump,
+          cd-it8, and
+          colormgr
         </seg>
         <seg>
-          libcolord.so, libcolordprivate.so, and libcolorhug.so
+          libcolord.so,
+          libcolordcompat.so,
+          libcolordprivate.so, and
+          libcolorhug.so
         </seg>
         <seg>
           /usr/include/colord-1,
           /usr/lib/colord-{plugins,sensors},
-          /usr/share/color{,d},
+          /usr/share/color{d},
           /usr/share/gtk-doc/html/colord, and
           /var/lib/colord
         </seg>
 @y
         <seg>
-          cd-create-profile, cd-fix-profile, cd-iccdump, cd-it8, colormgr
+          cd-create-profile,
+          cd-fix-profile,
+          cd-iccdump,
+          cd-it8,
+          colormgr
         </seg>
         <seg>
-          libcolord.so, libcolordprivate.so, libcolorhug.so
+          libcolord.so,
+          libcolordcompat.so,
+          libcolordprivate.so,
+          libcolorhug.so
         </seg>
         <seg>
           /usr/include/colord-1,
           /usr/lib/colord-{plugins,sensors},
-          /usr/share/color{,d},
+          /usr/share/color{d},
           /usr/share/gtk-doc/html/colord,
           /var/lib/colord
         </seg>
@@ -240,9 +255,9 @@
 @z
 
 @x cd-create-profile
-            is a Color Manager Profile Creation Tool.
+            is the Color Manager Profile Creation Tool.
 @y
-            is a Color Manager Profile Creation Tool.
+            is the Color Manager Profile Creation Tool.
 @z
 
 @x cd-fix-profile
@@ -251,12 +266,24 @@
             is a tool used to fix metadata in ICC profiles.
 @z
 
-@x colormgr
-            is a text-mode program that allows you to interact with colord
-            on the command line.
+@x cd-iccdump
+            dumps the contents of an ICC profile as human readable text.
 @y
-            is a text-mode program that allows you to interact with colord
-            on the command line.
+            dumps the contents of an ICC profile as human readable text.
+@z
+
+@x cd-it8
+            is the Color Manager Testing Tool.
+@y
+            is the Color Manager Testing Tool.
+@z
+
+@x colormgr
+            is a text-mode program that allows you to interact with colord on
+            the command line.
+@y
+            is a text-mode program that allows you to interact with colord on
+            the command line.
 @z
 
 @x libcolord.so

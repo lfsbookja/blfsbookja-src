@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY vala-buildsize     "112 MB (including tests)">
-  <!ENTITY vala-time          "1.0 SBU (including tests)">
+  <!ENTITY vala-buildsize     "164 MB (with tests)">
+  <!ENTITY vala-time          "1.0 SBU (with tests)">
 @y
-  <!ENTITY vala-buildsize     "112 MB (テスト込み)">
-  <!ENTITY vala-time          "1.0 SBU (テスト込み)">
+  <!ENTITY vala-buildsize     "164 MB （テスト込み）">
+  <!ENTITY vala-time          "1.0 SBU （テスト込み）">
 @z
 
 @x
@@ -103,14 +103,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/> (Required for the tests) and
-      <xref linkend="libxslt"/> (Required for generating the documentation)
+      <xref linkend="dbus"/> (Required for the tests),
+      <xref linkend="graphviz"/> (Required for valadoc),
+      <xref linkend="libxslt"/> (Required for generating the documentation),
+      <ulink url="https://ftp.gnu.org/gnu/help2man/">help2man</ulink>, and
+      <ulink url="https://weasyprint.org/">weasyprint</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/> (テスト時に必要),
-      <xref linkend="libxslt"/> (ドキュメント生成時に必要)
+      <xref linkend="graphviz"/> (valadoc に必要),
+      <xref linkend="libxslt"/> (ドキュメント生成時に必要),
+      <ulink url="https://ftp.gnu.org/gnu/help2man/">help2man</ulink>,
+      <ulink url="https://weasyprint.org/">weasyprint</ulink>
     </para>
 @z
 
@@ -165,42 +171,58 @@
 
 @x
         <seg>
-          vala, valac, vala-gen-introspect,
-          vapicheck, and vapigen (symlinks);
+          vala, 
+          vala-&vala-major-version;, 
+          valac, 
+          valadoc (not built if the sed is applied), 
+          vala-gen-introspect, and
+          vapigen (symlinks);
 
-          vala-&vala-major-version;, valac-&vala-major-version;,
-          vala-gen-introspect-&vala-major-version;,
-          vapicheck-&vala-major-version;, and
+          valac-&vala-major-version;,
+          valadoc-&vala-major-version; (not built if the sed is applied),
+          vala-gen-introspect-&vala-major-version;, and
           vapigen-&vala-major-version;
         </seg>
         <seg>
-          libvala-&vala-major-version;.so
+          libvala-&vala-major-version;.so and
+          libvaladoc-&vala-major-version;.so (not built if the sed is applied)
         </seg>
         <seg>
           /usr/include/vala-&vala-major-version;,
+          /usr/include/valadoc-&vala-major-version; (not built if the sed is applied),
           /usr/lib/vala-&vala-major-version;,
-          /usr/share/devhelp/books/vala-&vala-major-version;,
-          /usr/share/vala, and
+          /usr/lib/valadoc (not built if the sed is applied),
+          /usr/share/vala, 
+          /usr/share/valadoc (not built if the sed is applied),
+          /usr/share/devhelp/books/vala-&vala-major-version;, and
           /usr/share/vala-&vala-major-version;
         </seg>
 @y
         <seg>
-          vala, valac, vala-gen-introspect,
-          vapicheck, vapigen (シンボリックリンク);
+          vala, 
+          vala-&vala-major-version;, 
+          valac, 
+          valadoc (not built if the sed is applied), 
+          vala-gen-introspect,
+          vapigen (symlinks);
 
-          vala-&vala-major-version;, valac-&vala-major-version;,
+          valac-&vala-major-version;,
+          valadoc-&vala-major-version; (not built if the sed is applied),
           vala-gen-introspect-&vala-major-version;,
-          vapicheck-&vala-major-version;,
           vapigen-&vala-major-version;
         </seg>
         <seg>
-          libvala-&vala-major-version;.so
+          libvala-&vala-major-version;.so,
+          libvaladoc-&vala-major-version;.so (not built if the sed is applied)
         </seg>
         <seg>
           /usr/include/vala-&vala-major-version;,
+          /usr/include/valadoc-&vala-major-version; (not built if the sed is applied),
           /usr/lib/vala-&vala-major-version;,
+          /usr/lib/valadoc (not built if the sed is applied),
+          /usr/share/vala, 
+          /usr/share/valadoc (not built if the sed is applied),
           /usr/share/devhelp/books/vala-&vala-major-version;,
-          /usr/share/vala,
           /usr/share/vala-&vala-major-version;
         </seg>
 @z

@@ -137,7 +137,7 @@
 @z
 
 @x
-      Those tests do not implement the <quote>expected fail</quote> possibility,
+      The tests do not implement the <quote>expected fail</quote> possibility,
       and a small number of test failures is expected by upstream. More
       failures may happen because some kernel options are missing. For example,
       the lack of the <emphasis>dm-delay</emphasis> device mapper target may
@@ -147,7 +147,7 @@
       thin-provisioning-tools</ulink> are not installed. A workaround is to
       add the following flags to <command>configure</command>:
 @y
-      Those tests do not implement the <quote>expected fail</quote> possibility,
+      The tests do not implement the <quote>expected fail</quote> possibility,
       and a small number of test failures is expected by upstream. More
       failures may happen because some kernel options are missing. For example,
       the lack of the <emphasis>dm-delay</emphasis> device mapper target may

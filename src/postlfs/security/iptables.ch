@@ -185,10 +185,10 @@
 @z
 
 @x
-      <command>ln -sfv ../../sbin/xtables-multi /usr/bin/iptables-xml</command>:
+      <command>ln -sfv ../../sbin/xtables-legacy-multi /usr/bin/iptables-xml</command>:
       Ensure the symbolic link for <command>iptables-xml</command> is relative.
 @y
-      <command>ln -sfv ../../sbin/xtables-multi /usr/bin/iptables-xml</command>:
+      <command>ln -sfv ../../sbin/xtables-legacy-multi /usr/bin/iptables-xml</command>:
       <command>iptables-xml</command> へのシンボリックリンクを相対的なものとします。
 @z
 

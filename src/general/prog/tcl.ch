@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY tcl-buildsize     "65 MB (including html documentation)">
-  <!ENTITY tcl-time          "0.9 SBU (additional 2.9 SBU for the tests)">
+  <!ENTITY tcl-time          "0.6 SBU (using parallelism=4; add 2.8 SBU for tests)">
 @y
   <!ENTITY tcl-buildsize     "65 MB (ドキュメント生成を含む)">
-  <!ENTITY tcl-time          "0.9 SBU (テスト実行時はさらに 2.9 SBU)">
+  <!ENTITY tcl-time          "0.6 SBU (parallelism=4 利用; テスト実行時はさらに 2.8 SBU)">
 @z
 
 @x

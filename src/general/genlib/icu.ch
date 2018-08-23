@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY icu-buildsize     "285 MB (add 32 MB for tests)">
-  <!ENTITY icu-time          "1.3 SBU (add 1.3 SBU for tests)">
+  <!ENTITY icu-buildsize     "331 MB (add 33 MB for tests)">
+  <!ENTITY icu-time          "2.4 SBU (add 1.7 SBU for tests)">
 @y
-  <!ENTITY icu-buildsize     "285 MB (テスト実施時はさらに 32 MB)">
-  <!ENTITY icu-time          "1.3 SBU (テスト実施時はさらに 1.3 SBU)">
+  <!ENTITY icu-buildsize     "331 MB (テスト実施時はさらに 33 MB)">
+  <!ENTITY icu-time          "2.4 SBU (テスト実施時はさらに 1.7 SBU)">
 @z
 
 @x
@@ -149,24 +149,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <envar>CC=gcc CXX=g++</envar>: If you prefer to use
-      <command>gcc</command> and/or <command>g++</command> instead of
-      <command>clang</command> and/or <command>clang++</command>, if they are
-      installed, use one or both variables in the configure line.
-@y
-      <envar>CC=gcc CXX=g++</envar>:
-      <command>clang</command> や <command>clang++</command> をインストールしていて、<command>clang</command> や <command>clang++</command> を用いずに
-      <command>gcc</command> and/or <command>g++</command> を用いたい場合は
-      configure スクリプトの実行においてこの環境変数を指定してください。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -184,32 +166,32 @@
 
 @x
         <seg>
-          derb, genbrk, genccode, gencfu, gencmn, gencnval, gendict, gennorm2,
+          derb, escapesrc, genbrk, genccode, gencfu, gencmn, gencnval,
+          gendict, gennorm2,
           genrb, gensprep, icu-config, icuinfo, icupkg, makeconv, pkgdata, and
           uconv
         </seg>
         <seg>
-          libicudata.so, libicui18n.so, libicuio.so, libicule.so, libiculx.so,
+          libicudata.so, libicui18n.so, libicuio.so,
           libicutest.so, libicutu.so, and libicuuc.so
         </seg>
         <seg>
-          /usr/include/layout,
           /usr/include/unicode,
           /usr/lib/icu, and
           /usr/share/icu
         </seg>
 @y
         <seg>
-          derb, genbrk, genccode, gencfu, gencmn, gencnval, gendict, gennorm2,
+          derb, escapesrc, genbrk, genccode, gencfu, gencmn, gencnval,
+          gendict, gennorm2,
           genrb, gensprep, icu-config, icuinfo, icupkg, makeconv, pkgdata,
           uconv
         </seg>
         <seg>
-          libicudata.so, libicui18n.so, libicuio.so, libicule.so, libiculx.so,
+          libicudata.so, libicui18n.so, libicuio.so,
           libicutest.so, libicutu.so, libicuuc.so
         </seg>
         <seg>
-          /usr/include/layout,
           /usr/include/unicode,
           /usr/lib/icu,
           /usr/share/icu

@@ -301,7 +301,8 @@
       <filename class='directory'>/etc/pam.d</filename>. Alternatively if
       <filename class='directory'>/etc/pam.d</filename> is not used, the
       installation will append two configuration sections to the existing
-      <filename>/etc/pam.conf</filename> file. You should ensure the files match      your preferences. Modify them as required to suit your needs.</para>
+      <filename>/etc/pam.conf</filename> file. You should ensure the files match
+      your preferences. Modify them as required to suit your needs.</para>
 @y
       <para id="fcron-pam">
       <application>Linux-PAM</application> をインストールしている場合、<filename

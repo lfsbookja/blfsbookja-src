@@ -79,15 +79,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gc"/>,
-      <xref linkend="libffi"/> and
+      <xref linkend="gc"/> and
       <xref linkend="libunistring"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gc"/>,
-      <xref linkend="libffi"/>,
       <xref linkend="libunistring"/>
     </para>
 @z

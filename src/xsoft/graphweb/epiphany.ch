@@ -133,14 +133,14 @@
 @x
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="optional">
-      <xref linkend="gnome-keyring"/> (for storing passwords) and
-      <xref linkend="seahorse"/> (for managing stored passwords)
+      <xref role="runtime" linkend="gnome-keyring"/> (for storing passwords) and
+      <xref role="runtime" linkend="seahorse"/> (for managing stored passwords)
     </para>
 @y
     <bridgehead renderas="sect4">実行時の依存パッケージ</bridgehead>
     <para role="optional">
-      <xref linkend="gnome-keyring"/> (強力なパスワードのため),
-      <xref linkend="seahorse"/> (パスワード管理のため)
+      <xref role="runtime" linkend="gnome-keyring"/> （強力なパスワードのため）,
+      <xref role="runtime" linkend="seahorse"/> （パスワード管理のため）
     </para>
 @z
 
@@ -170,13 +170,9 @@
 @z
 
 @x
-      An already active graphical session with a bus address is necessary
-      to execute the test suite.  Some tests may fail for unknown reasons.
-      To test the results, run:
+      This package does not have a working test suite.
 @y
-      テストスイートを実行するには、バスアドレス上にアクティブなグラフィカルセッションがあらかじめ存在していることが必要です。
-      なおテストに失敗するものもありますが、理由は不明です。
-      テストを実行するには以下を実行します。
+      本パッケージに有効なテストスイートはありません。
 @z
 
 @x

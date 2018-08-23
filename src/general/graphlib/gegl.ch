@@ -110,7 +110,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>,
       <xref linkend="w3m"/>,
-      <ulink url="https://wiki.gnome.org/Projects/gexiv2">gexiv2</ulink>,
+      <xref linkend="gexiv2"/>,
       <ulink url="http://lensfun.sourceforge.net/">lensfun</ulink>,
       <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
       <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
@@ -141,7 +141,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>,
       <xref linkend="w3m"/>,
-      <ulink url="https://wiki.gnome.org/Projects/gexiv2">gexiv2</ulink>,
+      <xref linkend="gexiv2"/>,
       <ulink url="http://lensfun.sourceforge.net/">lensfun</ulink>,
       <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
       <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
@@ -171,11 +171,20 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>. One
-      test is known to fail.
+      To test the results, issue: <command>make check</command>.
+      Many tests are skipped.
+     <!-- in 0.4.2 no failures, but the video tests have several
+       Failed to parse extradata messages.  The warnings are about
+      missing reference, assuming SUCCESS
+      and lots of Missing fast-path babl conversion detected
+      also GEGL-WARNING for runtime check failed and for
+      operation desired unknown paramspec type for seed 
+
+      In 0.4.8 all tests pass but there several messages about
+      deprecated parameter passing.-->
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストのうち一つは失敗します。
+      失敗するテストが多数あります。
 @z
 
 @x
@@ -193,12 +202,12 @@
 @x
       <command>install -v -m644/docs/*/{css,html} ...</command>:
       This and the subsequent commands install all the provided documentation
-      instead of only <filename>operations.html</filename> and the stylesheet
-      <filename>gegl.css</filename>.
+      instead of only the stylesheet <filename>gegl.css</filename> and three
+      png files.
 @y
       <command>install -v -m644/docs/*/{css,html} ...</command>:
       本コマンドおよび次のコマンドにより、提供されるドキュメントをすべてインストールするようにします。
-      これを行わない場合は、単に <filename>operations.html</filename> とスタイルシート <filename>gegl.css</filename> しかインストールされません。
+      これを行わない場合は、単にスタイルシート <filename>gegl.css</filename> と３つの png ファイルしかインストールされません。
 @z
 
 @x
@@ -228,13 +237,15 @@
 @z
 
 @x
-        <seg>gegl</seg>
-        <seg>libgegl-0.2.so and libraries in /usr/lib/gegl-0.2</seg>
-        <seg>/usr/include/gegl-0.2</seg>
+        <seg>gcut, gegl, gegl-imgcmp</seg>
+        <seg>libgegl-0.4.so, libgegl-npd-0.4.so, libgegl-sc-0.4.so and libraries in
+        /usr/lib/gegl-0.4</seg>
+        <seg>/usr/include/gegl-0.4</seg>
 @y
-        <seg>gegl</seg>
-        <seg>libgegl-0.2.so と /usr/lib/gegl-0.2 内のライブラリ</seg>
-        <seg>/usr/include/gegl-0.2</seg>
+        <seg>gcut, gegl, gegl-imgcmp</seg>
+        <seg>libgegl-0.4.so, libgegl-npd-0.4.so, libgegl-sc-0.4.so,
+        /usr/lib/gegl-0.4  内のライブラリ</seg>
+        <seg>/usr/include/gegl-0.4</seg>
 @z
 
 @x

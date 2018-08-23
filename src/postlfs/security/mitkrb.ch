@@ -140,22 +140,24 @@
 
 @x
       To test the build, issue as the <systemitem
-      class="username">root</systemitem> user: <command>make check</command>.
+      class="username">root</systemitem> user: <command>make -k check</command>.
       You need at least <xref linkend="tcl"/>, which is used to drive the
       testsuite.  Furthermore, <xref linkend="dejagnu"/> must be available for
       some of the tests to run. If you have a former version of MIT Kerberos V5
       installed, it may happen that the test suite pick up the installed
       versions of the libraries, rather than the newly built ones. If so, it is
-      better to run the tests after the installation.
+      better to run the tests after the installation. The t_ccselect test
+      is known to fail.
 @y
       To test the build, issue as the <systemitem
-      class="username">root</systemitem> user: <command>make check</command>.
+      class="username">root</systemitem> user: <command>make -k check</command>.
       You need at least <xref linkend="tcl"/>, which is used to drive the
       testsuite.  Furthermore, <xref linkend="dejagnu"/> must be available for
       some of the tests to run. If you have a former version of MIT Kerberos V5
       installed, it may happen that the test suite pick up the installed
       versions of the libraries, rather than the newly built ones. If so, it is
-      better to run the tests after the installation.
+      better to run the tests after the installation. The t_ccselect test
+      is known to fail.
 @z
 
 @x
@@ -171,17 +173,15 @@
 @z
 
 @x
-      <command>sed -e ...</command>: The first <command>sed</command> fixes
-      <application>Python</application> detection. The second one increases
-      the width of the virtual terminal used for some tests to prevent
-      some spurious text in the output which is taken as a failure. The
-      third <command>sed</command> removes a test that is known to fail.
+      The first sed increases the width of the virtual terminal used for some
+      tests to prevent some spurious text in the output which is taken as a
+      failure. The second <command>sed</command> removes a test that is known
+      to fail.
 @y
-      <command>sed -e ...</command>: The first <command>sed</command> fixes
-      <application>Python</application> detection. The second one increases
-      the width of the virtual terminal used for some tests to prevent
-      some spurious text in the output which is taken as a failure. The
-      third <command>sed</command> removes a test that is known to fail.
+      The first sed increases the width of the virtual terminal used for some
+      tests to prevent some spurious text in the output which is taken as a
+      failure. The second <command>sed</command> removes a test that is known
+      to fail.
 @z
 
 @x
@@ -555,7 +555,7 @@
           kadmind, kdb5_ldap_util (optional), kdb5_util, kdestroy, kinit, klist,
           kpasswd, kprop, kpropd, kproplog, krb5-config, krb5kdc, krb5-send-pr,
           ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server,
-          sserver, uuclient and uuserver
+          sserver, uuclient, and uuserver
         </seg>
         <seg>
           libgssapi_krb5.so, libgssrpc.so, libk5crypto.so, libkadm5clnt_mit.so,

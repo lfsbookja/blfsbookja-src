@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "459 MB (add 2 MB for tests)">
-  <!ENTITY php-time          "0.9 SBU (using parallelism=4, add 2.5 SBU for tests)">
+  <!ENTITY php-buildsize     "567 MB (add 2 MB for tests, add 111 MB for documentation)">
+  <!ENTITY php-time          "1.6 SBU (with parallelism=4; add 2.7 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "459 MB (テスト実施時はさらに 2 MB)">
-  <!ENTITY php-time          "0.9 SBU (parallelism=4 利用時、テスト実施時はさらに 2.5 SBU)">
+  <!ENTITY php-buildsize     "567 MB（テスト実施時はさらに 2 MB、ドキュメント生成時は 111 MB）">
+  <!ENTITY php-time          "1.6 SBU（parallelism=4 利用時、テスト実施時はさらに 2.7 SBU）">
 @z
 
 @x
@@ -259,7 +259,6 @@
 @x
     <bridgehead renderas="sect4">Optional Security/Encryption Utilities and Libraries</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://mcrypt.sourceforge.net/">libmcrypt</ulink>, and
@@ -268,7 +267,6 @@
 @y
     <bridgehead renderas="sect4">任意のセキュリティ/暗号化ユーティリティおよびライブラリ</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://mcrypt.sourceforge.net/">libmcrypt</ulink>, and
@@ -618,16 +616,16 @@
         php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
 
         <seg>dba.{so,a} and opcache.{so,a} in
-       /usr/lib/php/extensions/no-debug-non-zts-20151012</seg>
+       /usr/lib/php/extensions/no-debug-non-zts-20170718</seg>
 
         <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php and
         /usr/share/doc/php-&php-version;</seg>
 @y
-        <seg>pear, peardev, pecl, phar (シンボリックリンク), phar.phar, php,
+        <seg>pear, peardev, pecl, phar (symlink), phar.phar, php,
         php-cgi, php-config, php-fpm, phpdbg, phpize</seg>
 
         <seg>dba.{so,a} and opcache.{so,a} in
-       /usr/lib/php/extensions/no-debug-non-zts-20151012</seg>
+       /usr/lib/php/extensions/no-debug-non-zts-20170718</seg>
 
         <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php,
         /usr/share/doc/php-&php-version;</seg>

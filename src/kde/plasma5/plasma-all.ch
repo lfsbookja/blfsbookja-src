@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY plasma5-buildsize     "917 MB (290 MB installed)">
+  <!ENTITY plasma5-buildsize     "1.0 GB (336 MB installed)">
+  <!ENTITY plasma5-time          "17 SBU (using parallelism=4)">
 @y
-  <!ENTITY plasma5-buildsize     "917 MB (290 MB installed)">
+  <!ENTITY plasma5-buildsize     "1.0 GB (336 MB installed)">
+  <!ENTITY plasma5-time          "17 SBU (using parallelism=4)">
 @z
 
 @x
@@ -27,12 +29,10 @@
 
 @x
   <para>KDE Plasma 5 is a collection of packages based on top of KDE Frameworks
-  5 and QML. It has been derived from the monolithic KDE 4 desktop.
-  They implement the KDE Display Environment (Plasma 5).</para>
+  5 and QML. They implement the KDE Display Environment (Plasma 5).</para>
 @y
   <para>KDE Plasma 5 is a collection of packages based on top of KDE Frameworks
-  5 and QML. It has been derived from the monolithic KDE 4 desktop.
-  They implement the KDE Display Environment (Plasma 5).</para>
+  5 and QML. They implement the KDE Display Environment (Plasma 5).</para>
 @z
 
 @x
@@ -95,6 +95,7 @@
   <bridgehead renderas="sect4">Required</bridgehead>
   <para role="required">
     <!--<xref linkend="fontforge"/>,-->
+    <xref linkend="GConf"/>,
     <xref linkend="gtk2"/>,
     <xref linkend="gtk3"/>,
     <xref linkend="kf5-frameworks"/>,
@@ -104,7 +105,7 @@
     <xref linkend="NetworkManager"/>,
     <xref linkend="pulseaudio"/>,
     <xref linkend="python2"/>,
-    <xref linkend="qca"/> (built with qt5),
+    <xref linkend="qca"/>,
     <xref linkend="taglib"/>, and
     <xref linkend="xcb-util-cursor"/>
   </para>
@@ -112,6 +113,7 @@
   <bridgehead renderas="sect4">Required</bridgehead>
   <para role="required">
     <!--<xref linkend="fontforge"/>,-->
+    <xref linkend="GConf"/>,
     <xref linkend="gtk2"/>,
     <xref linkend="gtk3"/>,
     <xref linkend="kf5-frameworks"/>,
@@ -121,8 +123,8 @@
     <xref linkend="NetworkManager"/>,
     <xref linkend="pulseaudio"/>,
     <xref linkend="python2"/>,
-    <xref linkend="qca"/> (built with qt5),
-    <xref linkend="taglib"/>, and
+    <xref linkend="qca"/>,
+    <xref linkend="taglib"/>,
     <xref linkend="xcb-util-cursor"/>
   </para>
 @z
@@ -167,7 +169,7 @@
     <ulink url="http://qalculate.sourceforge.net">Qalculate</ulink>,
     <ulink url="https://launchpad.net/qapt">Qapt</ulink>, 
     <ulink url="https://github.com/osiam/osiam">SCIM</ulink>, and
-    <ulink url="http://www.dest-unreach.org/socat/">socat (for pam_kwallet)</ulink>
+    <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)
   </para>
 @y
   <bridgehead renderas="sect4">Optional</bridgehead>
@@ -184,8 +186,8 @@
     <ulink url="https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</ulink>,
     <ulink url="http://qalculate.sourceforge.net">Qalculate</ulink>,
     <ulink url="https://launchpad.net/qapt">Qapt</ulink>, 
-    <ulink url="https://github.com/osiam/osiam">SCIM</ulink>, and
-    <ulink url="http://www.dest-unreach.org/socat/">socat (for pam_kwallet)</ulink>
+    <ulink url="https://github.com/osiam/osiam">SCIM</ulink>,
+    <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)
   </para>
 @z
 

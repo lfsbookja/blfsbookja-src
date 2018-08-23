@@ -95,20 +95,20 @@
 @x
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="optional">
-      <xref linkend="bind-utils"/>,
-      <xref linkend="nmap"/>,
-      <xref linkend="net-tools"/>,
-      <xref linkend="traceroute"/>, and
-      <xref linkend="whois"/>
+      <xref role="runtime" linkend="bind-utils"/>,
+      <xref role="runtime" linkend="nmap"/>,
+      <xref role="runtime" linkend="net-tools"/>,
+      <xref role="runtime" linkend="traceroute"/>, and
+      <xref role="runtime" linkend="whois"/>
     </para>
 @y
     <bridgehead renderas="sect4">実行時の依存パッケージ</bridgehead>
     <para role="optional">
-      <xref linkend="bind-utils"/>,
-      <xref linkend="nmap"/>,
-      <xref linkend="net-tools"/>,
-      <xref linkend="traceroute"/>,
-      <xref linkend="whois"/>
+      <xref role="runtime" linkend="bind-utils"/>,
+      <xref role="runtime" linkend="nmap"/>,
+      <xref role="runtime" linkend="net-tools"/>,
+      <xref role="runtime" linkend="traceroute"/>, and
+      <xref role="runtime" linkend="whois"/>
     </para>
 @z
 
