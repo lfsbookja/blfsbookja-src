@@ -53,7 +53,6 @@ CHANGE_FILES = \
 	libvorbis.ch          \
 	libvpx.ch             \
 	mlt.ch                \
-	opal.ch               \
 	opus.ch               \
 	pulseaudio.ch         \
 	sbc.ch                \

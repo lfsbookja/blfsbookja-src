@@ -17,8 +17,8 @@
   <!ENTITY mesa-buildsize     "382 MB (with demos and docs, add 40 MB for tests)">
   <!ENTITY mesa-time          "3.5 SBU (with parallelism=4, demos, and docs; add 1.0 SBU for tests)">
 @y
-  <!ENTITY mesa-buildsize     "382 MB (with demos and docs, add 40 MB for tests)">
-  <!ENTITY mesa-time          "3.5 SBU (with parallelism=4, demos, and docs; add 1.0 SBU for tests)">
+  <!ENTITY mesa-buildsize     "382 MB (デモおよびドキュメント込み、テスト実施時はさらに 40 MB)">
+  <!ENTITY mesa-time          "3.5 SBU (parallelism=4, デモおよびドキュメント込み、テスト実施時はさらに 1.0 SBU)">
 @z
 
 @x
@@ -32,6 +32,14 @@
       library.
 @y
       <application>Mesa</application> は OpenGL 互換の 3D グラフィックライブラリです。
+@z
+
+@x
+        <application>Mesa</application> is updated relatively often. You may
+        want to use the latest available &mesa-major-minor;.x mesa version.
+@y
+        <application>Mesa</application> は頻繁に更新されています。
+        mesa の最新バージョン &mesa-major-minor;.x があれば、それを利用することもできます。
 @z
 
 @x
@@ -79,7 +87,7 @@
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
@@ -90,7 +98,7 @@
           install the <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">
           mesa-demos</ulink> package)
 @y
-          Recommended patch:
+          推奨パッチ:
           <ulink
             url="&patch-root;/mesa-&mesa-version;-add_xdemos-1.patch"/>
           (installs 2 demo programs for testing Mesa - not needed if you
@@ -254,10 +262,8 @@
       If you have applied the xdemos patch, build the demo programs by
       running the following command:
 @y
-      If you have applied the xdemos patch, build the demo programs by
-      running the following command:
+      xdemos パッチを適用した場合は、以下のコマンドを実行してデモプログラムをビルドします。
 @z
-%      推奨パッチを適用した場合は、以下のコマンドを実行してデモプログラムをビルドします。
 
 @x
       To test the results, issue: <command>make -k check</command>. 
@@ -276,7 +282,8 @@
       following command as the
       <systemitem class="username">root</systemitem> user:
 @y
-      デモプログラムをビルドした場合は、<systemitem class="username">root</systemitem> ユーザーとなって以下を実行することでそれらをインストールします。
+      デモプログラムをビルドした場合は、<systemitem
+      class="username">root</systemitem> ユーザーとなって以下を実行することでそれらをインストールします。
 @z
 
 @x

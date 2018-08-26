@@ -35,7 +35,6 @@ CHANGE_FILES = \
 	sysstat.ch       \
 	systemd.ch       \
 	sysutils.ch      \
-	udisks.ch        \
 	udisks2.ch       \
 	unrar.ch         \
 	unzip.ch         \

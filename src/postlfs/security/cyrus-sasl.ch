@@ -93,6 +93,12 @@
 @z
 
 @x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">Cyrus SASL Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Cyrus SASL&Dependencies2;</bridgehead>
@@ -163,11 +169,16 @@
 @z
 
 @x
+        This package does not support parallel build.
+@y
+        本パッケージは並行ビルドがサポートされていません。
+@z
+
+@x
       Install <application>Cyrus SASL</application> by
       running the following commands:
 @y
-      Install <application>Cyrus SASL</application> by
-      running the following commands:
+      以下のコマンドを実行して <application>Cyrus SASL</application> をビルドします。
 @z
 
 @x
@@ -189,7 +200,7 @@
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -244,8 +255,8 @@
       <option>--with-ldap</option>: This switch enables the
       <application>OpenLDAP</application> support.
 @y
-      <option>--with-ldap</option>: This switch enables the
-      <application>OpenLDAP</application> support.
+      <option>--with-ldap</option>:
+      本スイッチは <application>OpenLDAP</application> サポートを有効にします。
 @z
 
 @x
@@ -264,24 +275,24 @@
       <option>--enable-java</option>: This switch enables compiling of the
       <application>Java</application> support libraries.
 @y
-      <option>--enable-java</option>: This switch enables compiling of the
-      <application>Java</application> support libraries.
+      <option>--enable-java</option>:
+      本スイッチは <application>Java</application> サポートライブラリのビルドを行います。
 @z
 
 @x
       <option>--enable-login</option>: This option enables unsupported
       LOGIN authentication.
 @y
-      <option>--enable-login</option>: This option enables unsupported
-      LOGIN authentication.
+      <option>--enable-login</option>:
+      本オプションは、サポート非対象の LOGIN 認証を有効にします。
 @z
 
 @x
       <option>--enable-ntlm</option>: This option enables unsupported
       NTLM authentication.
 @y
-      <option>--enable-ntlm</option>: This option enables unsupported
-      NTLM authentication.
+      <option>--enable-ntlm</option>:
+      本オプションは、サポート非対象の　NTLM 認証を有効にします。
 @z
 
 @x
@@ -289,9 +300,8 @@
       install documentation which is not installed by the
       <command>make install</command> command.
 @y
-      <command>install -v -m644 ...</command>: These commands
-      install documentation which is not installed by the
-      <command>make install</command> command.
+      <command>install -v -m644 ...</command>:
+      これらのコマンドは、<command>make install</command> コマンドではインストールされないドキュメントをインストールします。
 @z
 
 @x
@@ -373,7 +383,7 @@
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
       <title><phrase revision="sysv">&InitScript;</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x revision="sysv"
@@ -393,10 +403,8 @@
         included in the <xref linkend="systemd-units"/> package using the
         following command:
 @y
-        If you need to run the <command>saslauthd</command> daemon at system
-        startup, install the <filename>saslauthd.service</filename> unit
-        included in the <xref linkend="systemd-units"/> package using the
-        following command:
+        システム起動時に <command>saslauthd</command> デーモンを起動したい場合は、以下のコマンドにより <xref
+        linkend="systemd-units"/> パッケージにある <filename>saslauthd.service</filename> をインストールします。
 @z
 
 @x
@@ -478,7 +486,7 @@
 @x saslauthd
             is the SASL authentication server.
 @y
-            is the SASL authentication server.
+            SASL の認証サーバー。
 @z
 
 @x sasldblistusers2

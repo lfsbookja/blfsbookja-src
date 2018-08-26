@@ -8,7 +8,6 @@
 BOOKdir = @abs_bookdir@/xsoft/other
 CHANGE_FILES = \
 	balsa.ch        \
-	ekiga.ch        \
 	feh.ch          \
 	fontforge.ch    \
 	gimp.ch         \

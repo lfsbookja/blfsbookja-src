@@ -90,6 +90,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="libuv"/> 
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="libuv"/> 
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/> and
@@ -147,11 +159,10 @@
       <replaceable>&lt;N&gt;</replaceable> is an integer between 1 and the
       number of system cores.  
 @y
-      To test the results, issue: <command>bin/ctest
+      ビルド結果をテストする場合は <command>bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
-      cmake-&cmake-version;-test.log</command>, where
-      <replaceable>&lt;N&gt;</replaceable> is an integer between 1 and the
-      number of system cores.  
+      cmake-&cmake-version;-test.log</command> を実行します。
+      ここで <replaceable>&lt;N&gt;</replaceable> は 1 からシステムコア数までの値を選んで指定します。
 @z
 @x
      <!-- Please, don't remove this comment, needed if tests start to fail

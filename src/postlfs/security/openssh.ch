@@ -84,6 +84,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+        <para>Required patch: <ulink url="&patch-root;/openssh-&openssh-version;-openssl-1.1.0-1.patch"/></para>
+@y
+        <para>必須のパッチ: <ulink url="&patch-root;/openssh-&openssh-version;-openssl-1.1.0-1.patch"/></para>
+@z
+
+@x
     <bridgehead renderas="sect3">OpenSSH Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;OpenSSH&Dependencies2;</bridgehead>
@@ -255,6 +267,14 @@
 @z
 
 @x
+      <option>--with-libedit</option>: This option enables line editing
+      and history features for <command>sftp</command>.
+@y
+      <option>--with-libedit</option>:
+      このオプションは <command>sftp</command> コマンドにおいての行編集および履歴機能を有効にします。
+@z
+
+@x
     <title>Configuring OpenSSH</title>
 @y
     <title>&Configuring1;OpenSSH&Configuring2;</title>
@@ -363,7 +383,7 @@
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
       <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x revision="sysv"
@@ -371,17 +391,16 @@
         <filename>/etc/rc.d/init.d/sshd</filename> init script included
         in the <xref linkend="bootscripts"/> package.
 @y
-      システム起動時に SSH サーバーを起動する場合は、<xref
-      linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/sshd</filename> をインストールします。
+        システム起動時に SSH サーバーを起動する場合は、<xref
+        linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/sshd</filename> をインストールします。
 @z
 @x revision="systemd"
         To start the SSH server at system boot, install the
         <filename>sshd.service</filename> unit included in the
         <xref linkend="systemd-units"/> package.
 @y
-        To start the SSH server at system boot, install the
-        <filename>sshd.service</filename> unit included in the
-        <xref linkend="systemd-units"/> package.
+        システム起動時に SSH サーバーを起動する場合は、<xref
+        linkend="systemd-units"/> パッケージに含まれる <filename>sshd.service</filename> ユニットをインストールします。
 @z
 
 @x

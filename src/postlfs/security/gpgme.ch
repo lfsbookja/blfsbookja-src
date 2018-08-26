@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY gpgme-buildsize     "125 MB (with all bindings)">
+  <!ENTITY gpgme-time          "0.5 SBU (with parallelism=4; with all bindings, add 0.5 SBU for tests)">
+@y
+  <!ENTITY gpgme-buildsize     "125 MB （全バインディングビルド時）">
+  <!ENTITY gpgme-time          "0.5 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.5 SBU）">
+@z
+
+@x
     <title>Introduction to GPGME</title>
 @y
     <title>&IntroductionTo1;GPGME&IntroductionTo2;</title>
@@ -150,6 +158,24 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>--disable-gpg-test</parameter>: if this parameter is not
+      passed to configure, the test programs are built during
+      <command>make</command> stage, which requires <xref linkend="gnupg2"/>.
+      This parameter is not needed if <xref linkend="gnupg2"/> is installed.
+@y
+      <parameter>--disable-gpg-test</parameter>:
+      このパラメーターを configure 時に指定しなかった場合、<command>make</command> 時にテストプログラムが生成されますが、これは <xref
+      linkend="gnupg2"/> を必要とします。
+      <xref linkend="gnupg2"/> をインストールしている時には本パラメーターは不要です。
 @z
 
 @x

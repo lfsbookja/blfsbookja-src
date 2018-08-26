@@ -115,6 +115,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="highlight"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="highlight"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
@@ -131,6 +143,18 @@
       <xref linkend="glib2"/> (テストスイートのため),
       <ulink url="&gnome-download-http;/gnome-doc-utils/">GNOME Doc Utils</ulink>,
       <xref linkend="which"/> (テストスイートと gtk-doc 文書生成時に必要)
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required (runtime)</bridgehead>
+    <para role="required">
+        <xref role="runtime" linkend="six"/> 
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
+    <para role="required">
+        <xref role="runtime" linkend="six"/> 
     </para>
 @z
 

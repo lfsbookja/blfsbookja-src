@@ -157,7 +157,7 @@ v   Insert the version of the OS, e.g., the build-date etc.</literal></screen>
 d   現在日付を表示します。
 s   システム名、つまりOS名を表示します。
 l   現在の TTY 行の名前を表示します。
-m   マシンアーキテクチャ名、例えば i686 などを表示します。
+m   マシンアーキテクチャー名、例えば i686 などを表示します。
 n   Insert the nodename of the machine, also known as the hostname.
 o   Insert the domainname of the machine.
 r   Insert the release number of the kernel, e.g., 2.6.11.12.
@@ -167,4 +167,3 @@ U   Insert the string "1 user" or "&lt;n&gt; users" where &lt;n&gt; is the
     number of current users logged in.
 v   Insert the version of the OS, e.g., the build-date etc.</literal></screen>
 @z
-

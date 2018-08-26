@@ -111,7 +111,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://netcat.sourceforge.net/">netcat</ulink> (required for tests),
+      <ulink url="http://netcat.sourceforge.net/">netcat</ulink> (テストに必要),
       <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink>,
       <ulink url="https://dist.torproject.org/">TOR</ulink>
     </para>
@@ -317,7 +317,7 @@
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
       <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x
@@ -354,9 +354,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -372,13 +372,13 @@
         </seg>
 @y
         <seg>
-          stunnel and stunnel3
+          stunnel, stunnel3
         </seg>
         <seg>
           libstunnel.so
         </seg>
         <seg>
-          /{etc,usr/lib,var/lib}/stunnel and
+          /{etc,usr/lib,var/lib}/stunnel,
           /usr/share/doc/stunnel-&stunnel-version;
         </seg>
 @z
@@ -386,7 +386,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x stunnel

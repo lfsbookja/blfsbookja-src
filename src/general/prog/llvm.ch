@@ -17,8 +17,8 @@
   <!ENTITY llvm-buildsize     "2.8 GB (with Clang, add 10.8 GB for tests)">
   <!ENTITY llvm-time          "29 SBU (with Clang and parallelism=4, add 10 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "2.8 GB (with Clang, add 10.8 GB for tests)">
-  <!ENTITY llvm-time          "29 SBU (with Clang and parallelism=4, add 10 SBU for tests)">
+  <!ENTITY llvm-buildsize     "2.8 GB (Clang 込み、テスト実施時はさらに 10.8 GB)">
+  <!ENTITY llvm-time          "29 SBU (Clang 込み、 parallelism=4、テスト実施時はさらに 10 SBU)">
 @z
 
 @x
@@ -70,79 +70,79 @@
 @x
           Download (HTTP): <ulink url="&llvm-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&llvm-download-http;"/>
+          &Download; (HTTP): <ulink url="&llvm-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&llvm-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&llvm-download-ftp;"/>
+          &Download; (FTP): <ulink url="&llvm-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &llvm-md5sum;
 @y
-          Download MD5 sum: &llvm-md5sum;
+          &Download; MD5 sum: &llvm-md5sum;
 @z
 
 @x
           Download size: &llvm-size;
 @y
-          Download size: &llvm-size;
+          &DownloadSize;: &llvm-size;
 @z
 
 @x
           Estimated disk space required: &llvm-buildsize;
 @y
-          Estimated disk space required: &llvm-buildsize;
+          &Estimateddiskspacerequired;: &llvm-buildsize;
 @z
 
 @x
           Estimated build time: &llvm-time;
 @y
-          Estimated build time: &llvm-time;
+          &Estimatedbuildtime;: &llvm-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Optional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">Optional Downloads</bridgehead>
+    <bridgehead renderas="sect3">オプションパッケージのダウンロード</bridgehead>
 @z
 
 @x
             Download: <ulink url="&clang-download-http;"/>
 @y
-            Download: <ulink url="&clang-download-http;"/>
+            &Download;: <ulink url="&clang-download-http;"/>
 @z
 
 @x
             Download MD5 sum: &clang-md5sum;
 @y
-            Download MD5 sum: &clang-md5sum;
+            &Download; MD5 sum: &clang-md5sum;
 @z
 
 @x
             Download size: &clang-size;
 @y
-            Download size: &clang-size;
+            &DownloadSize;: &clang-size;
 @z
 
 @x
             Download: <ulink url="&compiler-rt-download-http;"/>
 @y
-            Download: <ulink url="&compiler-rt-download-http;"/>
+            &Download;: <ulink url="&compiler-rt-download-http;"/>
 @z
 
 @x
             Download MD5 sum: &compiler-rt-md5sum;
 @y
-            Download MD5 sum: &compiler-rt-md5sum;
+            &Download; MD5 sum: &compiler-rt-md5sum;
 @z
 
 @x
             Download size: &compiler-rt-size;
 @y
-            Download size: &compiler-rt-size;
+            &DownloadSize;: &compiler-rt-size;
 @z
 
 @x
@@ -159,7 +159,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/> and <xref linkend="python2"/>
+      <xref linkend="cmake"/>, <xref linkend="python2"/>
     </para>
 @z
 
@@ -205,8 +205,7 @@
       If you have downloaded the optional packages, install them into
       the source tree by running the following commands:
 @y
-      If you have downloaded the optional packages, install them into
-      the source tree by running the following commands:
+      オプションパッケージをダウンロードしている場合は、以下のコマンドを実行してそれらをソースツリー内に含めます。
 @z
 
 @x
@@ -223,17 +222,16 @@
       Note that the several Sanitizer tests (9 of 26479) are known to fail.
 <!--  Still true for v 5.0.0 -->
 @y
-      To test the results, issue: <command>ninja check-all</command>. Tests are
-      built with a single thread, but run using the maximum number of 
-      processors/threads available.
-      Note that the several Sanitizer tests (9 of 26479) are known to fail.
+      ビルド結果をテストする場合は <command>ninja check-all</command> を実行します。
+      テストはシングルスレッドとしてビルドされていますが、プロセッサー数/スレッド数の最大を使って実行することができます。
+      Sanitizer テストの数個（26479 のうち 9 個）は失敗します。
 <!--  Still true for v 5.0.0 -->
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

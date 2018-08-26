@@ -107,18 +107,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gtk-doc"/>,
       <xref linkend="dbus-glib"/> and
-      <xref linkend="udisks"/> (for volume management - experimental) or
-      <xref linkend="gvfs"/> and
-      <xref linkend="gtk-doc"/>
+       <xref linkend="gvfs"/> or 
+       <ulink url="https://hal.freedesktop.org/releases/">udisks</ulink>
+       (for volume management - experimental)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gtk-doc"/>,
       <xref linkend="dbus-glib"/>,
-      <xref linkend="udisks"/> (ボリューム管理のため; 実験的) または
-      <xref linkend="gvfs"/>,
-      <xref linkend="gtk-doc"/>
+       <xref linkend="gvfs"/> または
+       <ulink url="https://hal.freedesktop.org/releases/">udisks</ulink>
+       (ボリューム管理のため; 実験的)
     </para>
 @z
 

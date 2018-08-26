@@ -24,11 +24,11 @@
     <application>libESMTP</application> libraries which are used by some programs
     to manage email submission to a mail transport layer.</para>
 @y
-<para>
-<application>libESMTP</application>
-パッケージは <application>libESMTP</application> ライブラリ群を提供します。
-これらのライブラリは、メールトランスポート層 (mail transport layer) に対してのメール送信を行うプログラムにおいて利用することができます。
-</para>
+    <para>
+    <application>libESMTP</application>
+    パッケージは <application>libESMTP</application> ライブラリ群を提供します。
+    これらのライブラリは、メールトランスポート層 (mail transport layer) に対してのメール送信を行うプログラムにおいて利用することができます。
+    </para>
 @z
 
 @x
@@ -102,28 +102,36 @@
 @z
 
 @x
+    <para>Fix a build issue with OpenSSL-1.1.0:</para>
+@y
+    <para>
+    OpenSSL-1.1.0 利用時のビルド不備を修正します。
+    </para>
+@z
+
+@x
     <para>Install <application>libESMTP</application> by running the following
     commands:</para>
 @y
-<para>
-以下のコマンドを実行して <application>libESMTP</application> をビルドします。
-</para>
+    <para>
+    以下のコマンドを実行して <application>libESMTP</application> をビルドします。
+    </para>
 @z
 
 @x
     <para>This package does not come with a test suite.</para>
 @y
-<para>
-&notTestSuite;
-</para>
+    <para>
+    &notTestSuite;
+    </para>
 @z
 
 @x
     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+    <para>
+    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
@@ -164,32 +172,32 @@
           <para>displays version information and the options used to
           compile <application>libESMTP</application>.</para>
 @y
-<para>
-<application>libESMTP</application>
-のバージョンと、ビルドした際に指定されたオプションを表示します。
-</para>
+          <para>
+          <application>libESMTP</application>
+          のバージョンと、ビルドした際に指定されたオプションを表示します。
+          </para>
 @z
 
 @x libesmtp.{so,a}
           <para>is used to manage submission of electronic mail to a Mail
           Transport Agent.</para>
 @y
-<para>
-メールトランスポートエージェント (Mail Transport Agent)
-に対して電子メールを送信するために利用されます。
-</para>
+          <para>
+          メールトランスポートエージェント (Mail Transport Agent)
+          に対して電子メールを送信するために利用されます。
+          </para>
 @z
 
 @x
         <term><filename class='libraryfile'>libesmtp SASL plugins</filename></term>
 @y
-        <term><filename class='libraryfile'>libesmtp SASLプラグイン</filename></term>
+        <term><filename class='libraryfile'>libesmtp SASL プラグイン</filename></term>
 @z
 @x
           <para>are used to integrate <application>libesmtp</application> with
           SASL authentication.</para>
 @y
-<para>
-SASL 認証を通じて <application>libesmtp</application> を制御するために利用されます。
-</para>
+          <para>
+          SASL 認証を通じて <application>libesmtp</application> を制御するために利用されます。
+          </para>
 @z

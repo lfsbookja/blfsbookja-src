@@ -139,8 +139,9 @@
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="nss"/>, and
-      <xref linkend="openjpeg2"/>
+      <xref linkend="nss"/>, 
+      <xref linkend="openjpeg2"/>, and 
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -149,8 +150,9 @@
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="nss"/>,
-      <xref linkend="openjpeg2"/>
+      <xref linkend="nss"/>, 
+      <xref linkend="openjpeg2"/>,
+      <xref linkend="python2"/>
     </para>
 @z
 

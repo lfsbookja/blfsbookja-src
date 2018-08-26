@@ -89,6 +89,14 @@
 @z
 
 @x
+    <para>First fix a minor display problem:</para>
+@y
+    <para>
+    表示に関する問題を修正します。
+    </para>
+@z
+
+@x
     <para>Install <application>lsb_release</application> by running the following
     commands:</para>
 @y
@@ -103,6 +111,24 @@
      <para>
      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
      </para>
+@z
+
+@x
+      <title>Configuration Information</title>
+@y
+      <title>&ConfigInfo;</title>
+@z
+
+@x
+        The configuration for this package was done in
+        <ulink url="&lfs-website;/lfs/view/stable/chapter09/theend.html">LFS</ulink>.
+        The file <filename>/etc/lsb-release</filename> should already exist.
+        Be sure that the DISTRIB_CODENAME entry has been set properly.
+@y
+        本パッケージに対する設定は <ulink
+        url="&lfs-website;/lfs/view/stable/chapter09/theend.html">LFS</ulink> において行っています。
+        <filename>/etc/lsb-release</filename> というファイルは既に生成しているはずです。
+        DISTRIB_CODENAME という設定項目が適切に設定されていることを確認してください。
 @z
 
 @x

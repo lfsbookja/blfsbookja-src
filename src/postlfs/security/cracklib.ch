@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY cracklib-time          "less than 0.1 SBU">
+@y
+  <!ENTITY cracklib-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to CrackLib</title>
 @y
     <title>&IntroductionTo1;CrackLib&IntroductionTo2;</title>
@@ -240,6 +246,14 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><command>sed -i '/skipping/d' util/packer.c</command>:
+    Remove a meaningless warning.</para>
+@y
+    <para><command>sed -i '/skipping/d' util/packer.c</command>:
+    意味のない警告メッセージを取り除きます。</para>
 @z
 
 @x

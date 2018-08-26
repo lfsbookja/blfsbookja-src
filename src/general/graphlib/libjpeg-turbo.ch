@@ -1,0 +1,246 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date:: 2018-08-23 16:57:07 +0900#$
+%
+@x
+<?xml version="1.0" encoding="ISO-8859-1"?>
+@y
+<?xml version="1.0" encoding="UTF-8"?>
+@z
+
+@x
+  <!ENTITY libjpeg-buildsize     "31 MB (with tests)">
+  <!ENTITY libjpeg-time          "0.3 SBU (using parallelism=4; with tests)">
+@y
+  <!ENTITY libjpeg-buildsize     "31 MB （テスト込み）">
+  <!ENTITY libjpeg-time          "0.3 SBU （parallelism=4 利用時; テスト込み）">
+@z
+
+@x
+    <title>Introduction to libjpeg-turbo</title>
+@y
+    <title>&IntroductionTo1;libjpeg-turbo&IntroductionTo2;</title>
+@z
+
+@x
+      <application>libjpeg-turbo</application> is a fork of the original
+      IJG <application>libjpeg</application> which uses SIMD to accelerate
+      baseline JPEG compression and decompression.
+      <application>libjpeg</application> is a library that implements JPEG
+      image encoding, decoding and transcoding.
+@y
+      <application>libjpeg-turbo</application> is a fork of the original
+      IJG <application>libjpeg</application> which uses SIMD to accelerate
+      baseline JPEG compression and decompression.
+      <application>libjpeg</application> is a library that implements JPEG
+      image encoding, decoding and transcoding.
+@z
+
+@x
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+@y
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
+@z
+
+@x
+          Download (HTTP): <ulink url="&libjpeg-download-http;"/>
+@y
+          &Download; (HTTP): <ulink url="&libjpeg-download-http;"/>
+@z
+
+@x
+          Download (FTP): <ulink url="&libjpeg-download-ftp;"/>
+@y
+          &Download; (FTP): <ulink url="&libjpeg-download-ftp;"/>
+@z
+
+@x
+          Download MD5 sum: &libjpeg-md5sum;
+@y
+          &Download; MD5 sum: &libjpeg-md5sum;
+@z
+
+@x
+          Download size: &libjpeg-size;
+@y
+          &DownloadSize;: &libjpeg-size;
+@z
+
+@x
+          Estimated disk space required: &libjpeg-buildsize;
+@y
+          &Estimateddiskspacerequired;: &libjpeg-buildsize;
+@z
+
+@x
+          Estimated build time: &libjpeg-time;
+@y
+          &Estimatedbuildtime;: &libjpeg-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">libjpeg-turbo Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;libjpeg-turbo&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/> and
+      <xref linkend="nasm"/> or 
+      <xref linkend="yasm"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/>,
+      <xref linkend="nasm"/> または
+      <xref linkend="yasm"/>
+    </para>
+@z
+
+@x
+    <para condition="html" role="usernotes">User Notes:
+@y
+    <para condition="html" role="usernotes">&UserNotes;:
+@z
+
+@x
+    <title>Installation of libjpeg-turbo</title>
+@y
+    <title>&InstallationOf1;libjpeg-turbo&InstallationOf2;</title>
+@z
+
+@x
+      Install <application>libjpeg-turbo</application> by running the
+      following commands:
+@y
+      以下のコマンドを実行して <application>libjpeg-turbo</application> をビルドします。
+@z
+
+@x
+      To test the results, issue: <command>make test</command>.
+@y
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
+@z
+
+@x
+      If installing <application>libjpeg-turbo</application> over an older jpeg
+      installation, not all library symbolic links are updated properly.  To fix
+      this before installation, run the following as the <systemitem
+      class="username">root</systemitem> user:</para>
+@y
+      If installing <application>libjpeg-turbo</application> over an older jpeg
+      installation, not all library symbolic links are updated properly.  To fix
+      this before installation, run the following as the <systemitem
+      class="username">root</systemitem> user:</para>
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Contents</title>
+@y
+    <title>&Contents;</title>
+@z
+
+@x
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
+@y
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
+@z
+
+@x
+        <seg>
+          cjpeg, djpeg, jpegtran, rdjpgcom, tjbench, and wrjpgcom
+        </seg>
+        <seg>
+          libjpeg.so and libturbojpeg.so
+        </seg>
+        <seg>
+          /usr/share/doc/libjpeg-turbo-&libjpeg-turbo-version;
+        </seg>
+@y
+        <seg>
+          cjpeg, djpeg, jpegtran, rdjpgcom, tjbench, wrjpgcom
+        </seg>
+        <seg>
+          libjpeg.so, libturbojpeg.so
+        </seg>
+        <seg>
+          /usr/share/doc/libjpeg-turbo-&libjpeg-turbo-version;
+        </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x cjpeg
+          <para>compresses image files to produce a JPEG/JFIF file on the
+          standard output. Currently supported input file formats are: PPM
+          (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
+          BMP, and Targa.</para>
+@y
+          <para>compresses image files to produce a JPEG/JFIF file on the
+          standard output. Currently supported input file formats are: PPM
+          (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
+          BMP, and Targa.</para>
+@z
+
+@x djpeg
+          <para>decompresses image files from JPEG/JFIF format to either
+          PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
+          BMP, or Targa format.</para>
+@y
+          <para>decompresses image files from JPEG/JFIF format to either
+          PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
+          BMP, or Targa format.</para>
+@z
+
+@x jpegtran
+          <para>is used for lossless transformation of JPEG files.</para>
+@y
+          <para>is used for lossless transformation of JPEG files.</para>
+@z
+
+@x rdjpgcom
+          <para>displays text comments from within a JPEG file.</para>
+@y
+          <para>displays text comments from within a JPEG file.</para>
+@z
+
+@x tjbench
+          <para>is used to benchmark the performance of libjpeg-turbo.</para>
+@y
+          <para>is used to benchmark the performance of libjpeg-turbo.</para>
+@z
+
+@x wrjpgcom
+          <para>inserts text comments into a JPEG file.</para>
+@y
+          <para>inserts text comments into a JPEG file.</para>
+@z
+
+@x libjpeg.so
+            contains functions used for reading and writing
+            JPEG images.
+@y
+            JPEG イメージの読み書きを行う各種関数を提供します。
+@z

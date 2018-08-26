@@ -223,8 +223,12 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -233,11 +237,23 @@
           desktop-file-validate and
           update-desktop-database
         </seg>
+        <seg>
+          None
+        </seg>
+        <seg>
+          None
+        </seg>
 @y
         <seg>
           desktop-file-edit, desktop-file-install, 
           desktop-file-validate,
           update-desktop-database
+        </seg>
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 

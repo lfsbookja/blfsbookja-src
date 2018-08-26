@@ -63,94 +63,106 @@
       <revremark>進行中リリース</revremark>
 @z
 
+@x 2018-03-02
+      <revremark>Seventeenth release</revremark>
+@y
+      <revremark>第 17 次リリース</revremark>
+@z
+
+@x 2017-09-01
+      <revremark>Sixteenth release</revremark>
+@y
+      <revremark>第 16 次リリース</revremark>
+@z
+
 @x
       <revremark>Fifteenth release</revremark>
 @y
-      <revremark>第15次リリース</revremark>
+      <revremark>第 15 次リリース</revremark>
 @z
 
 @x
       <revremark>Fourteenth release</revremark>
 @y
-      <revremark>第14次リリース</revremark>
+      <revremark>第 14 次リリース</revremark>
 @z
 
 @x
       <revremark>Thirteenth release</revremark>
 @y
-      <revremark>第13次リリース</revremark>
+      <revremark>第 13 次リリース</revremark>
 @z
 
 @x
       <revremark>Twelfth release</revremark>
 @y
-      <revremark>第12次リリース</revremark>
+      <revremark>第 12 次リリース</revremark>
 @z
 
 @x
       <revremark>Eleventh release</revremark>
 @y
-      <revremark>第11次リリース</revremark>
+      <revremark>第 11 次リリース</revremark>
 @z
 
 @x
       <revremark>Tenth release</revremark>
 @y
-      <revremark>第10次リリース</revremark>
+      <revremark>第 10 次リリース</revremark>
 @z
 
 @x
       <revremark>Ninth release</revremark>
 @y
-      <revremark>第9次リリース</revremark>
+      <revremark>第 9 次リリース</revremark>
 @z
 
 @x
       <revremark>Eighth release</revremark>
 @y
-      <revremark>第8次リリース</revremark>
+      <revremark>第 8 次リリース</revremark>
 @z
 
 @x
       <revremark>Seventh release</revremark>
 @y
-      <revremark>第7次リリース</revremark>
+      <revremark>第 7 次リリース</revremark>
 @z
 
 @x
       <revremark>Sixth release</revremark>
 @y
-      <revremark>第6次リリース</revremark>
+      <revremark>第 6 次リリース</revremark>
 @z
 
 @x
       <revremark>Fifth release</revremark>
 @y
-      <revremark>第5次リリース</revremark>
+      <revremark>第 5 次リリース</revremark>
 @z
 
 @x
       <revremark>Fourth release</revremark>
 @y
-      <revremark>第4次リリース</revremark>
+      <revremark>第 4 次リリース</revremark>
 @z
 
 @x
       <revremark>Third release</revremark>
 @y
-      <revremark>第3次リリース</revremark>
+      <revremark>第 3 次リリース</revremark>
 @z
 
 @x
       <revremark>Second release</revremark>
 @y
-      <revremark>第2次リリース</revremark>
+      <revremark>第 2 次リリース</revremark>
 @z
 
 @x
       <revremark>First release</revremark>
 @y
-      <revremark>第1次リリース</revremark>
+      <revremark>第 1 次リリース</revremark>
 @z
 
 @x

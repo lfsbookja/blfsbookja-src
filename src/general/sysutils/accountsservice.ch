@@ -164,6 +164,30 @@
 @z
 
 @x
+    <title>Configuring AccountsService</title>
+@y
+    <title>&Configuring1;AccountsService&Configuring2;</title>
+@z
+
+@x
+      <title>Systemd Units</title>
+@y
+      <title>&SystemdUnit;</title>
+@z
+
+@x
+        To start the <command>accounts-daemon</command> daemon at boot,
+        enable the previously installed systemd unit by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@y
+        To start the <command>accounts-daemon</command> daemon at boot,
+        enable the previously installed systemd unit by
+        running the following command as the
+        <systemitem class="username">root</systemitem> user:
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

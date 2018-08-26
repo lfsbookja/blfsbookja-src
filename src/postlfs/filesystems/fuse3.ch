@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY fuse3-time          "less than 0.1 SBU">
+@y
+  <!ENTITY fuse3-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to Fuse</title>
 @y
     <title>&IntroductionTo1;Fuse&IntroductionTo2;</title>
@@ -73,6 +79,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Fuse Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Fuse&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> (to rebuild the API documentation)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> (API ドキュメントの再生成のため)
+    </para>
+@z
+
+@x
       User Notes: <ulink url="&blfs-wiki;/fuse"/>
 @y
       &UserNotes;: <ulink url="&blfs-wiki;/fuse"/>
@@ -106,6 +130,15 @@
 @z
 
 @x
+      The API documentation is included in the package, but 
+      if you have <xref linkend="doxygen"/> installed and wish to rebuild 
+      it, issue <command>doxygen doc/Doxyfile</command>.
+@y
+      本パッケージには API ドキュメントが含まれます。
+      もし <xref linkend="doxygen"/> がインストール済であって、ドキュメントを再生成したい場合は <command>doxygen doc/Doxyfile</command> を実行します。
+@z
+
+@x
       This package does not come with a test suite.
 @y
       &notTestSuite;
@@ -127,8 +160,8 @@
       <command>sed ... util/meson.build</command>: This command disables the
       installation of a boot script and udev rule that are not needed.
 @y
-      <command>sed ... util/meson.build</command>: This command disables the
-      installation of a boot script and udev rule that are not needed.
+      <command>sed ... util/meson.build</command>:
+      このコマンドは、必要のないブートスクリプトや udev ルールをインストールしないようにします。
 @z
 
 @x
@@ -136,15 +169,16 @@
       These commands install the libraries in the /lib directory.
 @y
       <command>mv ... libfuse3.so.3*; ln ... libfuse3.so</command>: 
-      These commands install the libraries in the /lib directory.
+      これらのコマンドは、ライブラリを /lib ディレクトリにインストールします。
 @z
 
 @x
       <command>unzip ...</command>: This uncompresses the installed man pages
       to be consistent with the rest of the man pages.
 @y
-      <command>unzip ...</command>: This uncompresses the installed man pages
-      to be consistent with the rest of the man pages.
+      <command>unzip ...</command>:
+      このコマンドはインストールした man ページを伸張（解凍）します。
+      これは BLFS 全体で整合をとるためです。
 @z
 
 @x
@@ -167,6 +201,13 @@
 @y
         マウントの方針に基づいた設定は、<filename>/etc/fuse.conf</filename> にて行うことができます。
         このファイルを生成するために、<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+        Additional information about the meaning of the configuration
+        options are found in the man page.
+@y
+        設定オプションのさらに詳しい説明は man ページを参照してください。
 @z
 
 @x
@@ -216,15 +257,14 @@
 @x fusermount3
             is a suid root program to mount and unmount Fuse filesystems.
 @y
-            is a suid root program to mount and unmount Fuse filesystems.
+            Fuse ファイルシステムをマウントまたはアンマウントする suid プログラムです。
 @z
 
 @x mount.fuse
             is the command <command>mount</command> calls to mount a Fuse
             filesystem.
 @y
-            is the command <command>mount</command> calls to mount a Fuse
-            filesystem.
+            Fuse ファイルシステムをマウントするための <command>mount</command> プログラムを呼び出すプログラムです。
 @z
 
 @x libfuse3.so

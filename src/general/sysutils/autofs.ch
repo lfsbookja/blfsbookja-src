@@ -86,6 +86,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="libtirpc"/> and
+      <xref linkend="rpcsvc-proto"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="libtirpc"/>,
+      <xref linkend="rpcsvc-proto"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="nfs-utils"/>,
@@ -100,7 +114,7 @@
       <xref linkend="nfs-utils"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="openldap"/> (client only), and
+      <xref linkend="openldap"/> (クライアントのみ),
       <xref linkend="cyrus-sasl"/>
     </para>
 @z
@@ -128,7 +142,7 @@
 @x
       Optionally, enable the following options in the kernel configuration:
 @y
-      Optionally, enable the following options in the kernel configuration:
+      任意の設定として、カーネル設定にて以下のオプションを有効にします。
 @z
 
 @x
@@ -332,6 +346,68 @@
       are also web resources such as this <ulink
       url='http://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
       HOWTO</ulink> available.</para>
+@z
+
+@x
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
+@y
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
+@z
+
+@x
+      <para revision="sysv"><application>autofs</application> installs its own
+      boot script, but it has no capability for logging or visual conformance
+      with other BLFS scripts.</para>
+@y
+      <para revision="sysv"><application>autofs</application> installs its own
+      boot script, but it has no capability for logging or visual conformance
+      with other BLFS scripts.</para>
+@z
+
+@x
+      <para revision="sysv">Install the <filename>/etc/init.d/autofs</filename>
+      mount script included with the <xref linkend="bootscripts"/>
+      package.</para>
+@y
+      <para revision="sysv">Install the <filename>/etc/init.d/autofs</filename>
+      mount script included with the <xref linkend="bootscripts"/>
+      package.</para>
+@z
+
+@x
+        To start <application>Autofs</application> at boot, enable the
+        previously installed systemd unit by running the following command as
+        the <systemitem class="username">root</systemitem> user:
+@y
+        To start <application>Autofs</application> at boot, enable the
+        previously installed systemd unit by running the following command as
+        the <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      <para revision="sysv">The time-out variable is set in
+      <filename>/etc/sysconfig/autofs.conf</filename>. The installed file sets
+      a default of 60 seconds of inactivity before unmounting the device.  A
+      much shorter time may be necessary to protect buffer writing to a floppy
+      if users tend to remove the media prior to the timeout setting.</para>
+@y
+      <para revision="sysv">The time-out variable is set in
+      <filename>/etc/sysconfig/autofs.conf</filename>. The installed file sets
+      a default of 60 seconds of inactivity before unmounting the device.  A
+      much shorter time may be necessary to protect buffer writing to a floppy
+      if users tend to remove the media prior to the timeout setting.</para>
+@z
+
+@x
+          You can also specify <envar>OPTIONS</envar> variable in the
+          <filename>/etc/sysconfig/autofs</filename> file with any additional
+          parameters that you might want to pass to the automount daemon.
+@y
+          You can also specify <envar>OPTIONS</envar> variable in the
+          <filename>/etc/sysconfig/autofs</filename> file with any additional
+          parameters that you might want to pass to the automount daemon.
 @z
 
 @x
