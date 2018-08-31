@@ -101,7 +101,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libdaemon"/> and
+      <xref linkend="libdaemon"/>,
       <xref linkend="libglade"/>
     </para>
 @z
@@ -184,16 +184,16 @@
       <parameter>--disable-mono</parameter>: This parameter disables the
       <application>Mono</application> bindings.
 @y
-      <parameter>--disable-mono</parameter>: This parameter disables the
-      <application>Mono</application> bindings.
+      <parameter>--disable-mono</parameter>:
+      このパラメーターは <application>Mono</application> バインディングを無効にします。
 @z
 
 @x
       <parameter>--disable-monodoc</parameter>: This parameter disables
       documentation for the <application>Mono</application> bindings.
 @y
-      <parameter>--disable-monodoc</parameter>: This parameter disables
-      documentation for the <application>Mono</application> bindings.
+      <parameter>--disable-monodoc</parameter>:
+      このパラメーターは <application>Mono</application> バインディングに対するドキュメントを生成しないようにします。
 @z
 
 @x
@@ -201,9 +201,9 @@
       scripts that depend on <application>Python</application>. It also
       allows a regular install to complete successfully.
 @y
-      <parameter>--disable-python</parameter>: This parameter disables the
-      scripts that depend on <application>Python</application>. It also
-      allows a regular install to complete successfully.
+      <parameter>--disable-python</parameter>:
+      このパラメーターは <application>Python</application> に依存するスクリプトを無効にします。
+      さらに標準的なインストールを行います。
 @z
 
 @x
@@ -211,9 +211,8 @@
       attempt to build the obsolete <application>Qt3</application> 
       portions of the package.
 @y
-      <parameter>--disable-qt3</parameter>: This parameter disables the
-      attempt to build the obsolete <application>Qt3</application> 
-      portions of the package.
+      <parameter>--disable-qt3</parameter>:
+      このパラメーターは、本パッケージ内にて古くなった <application>Qt3</application> 関連部分をビルドしないようにします。
 @z
 
 @x
@@ -221,69 +220,69 @@
       attempt to build the obsolete <application>Qt4Core</application> 
       portions of the package.
 @y
-      <parameter>--disable-qt4</parameter>: This parameter disables the
-      attempt to build the obsolete <application>Qt4Core</application> 
-      portions of the package.
+      <parameter>--disable-qt4</parameter>:
+      このパラメーターは、本パッケージ内にて古くなった <application>Qt4Core</application> 関連部分をビルドしないようにします。
 @z
 
 @x
       <parameter>--enable-core-docs</parameter>: This parameter enables the
       building of documentation.
 @y
-      <parameter>--enable-core-docs</parameter>: This parameter enables the
-      building of documentation.
+      <parameter>--enable-core-docs</parameter>:
+      このパラメーターはドキュメントのビルドを行います。
 @z
 
 @x
       <parameter>--with-distro=none</parameter>: There is an obsolete
       boot script in the distribution for LFS. This option disables it.
 @y
-      <parameter>--with-distro=none</parameter>: There is an obsolete
-      boot script in the distribution for LFS. This option disables it.
+      <parameter>--with-distro=none</parameter>:
+      LFS においては古くなったブートスクリプトが存在します。
+      このオプションはそれを無効にします。
 @z
 
-@x
+@x revision="systemd"
       <parameter>--with-systemdsystemunitdir=no</parameter>: Without it, the
       daemon fails to start in BLFS, which does not support
       <application>systemd</application>.
 @y
-      <parameter>--with-systemdsystemunitdir=no</parameter>: Without it, the
+      <parameter>--with-systemdsystemunitdir=no</parameter>:
+      Without it, the
       daemon fails to start in BLFS, which does not support
       <application>systemd</application>.
 @z
 
-@x
+@x revision="systemd"
       <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
       This parameter is used to set the correct installation directory for
       systemd units.
 @y
       <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
-      This parameter is used to set the correct installation directory for
-      systemd units.
+      このパラメーターにより systemd ユニットのインストール先ディレクトリを設定します。
 @z
 
 @x
       <option>--disable-dbus</option>: This parameter disables the use
       of <application>D-Bus</application>.
 @y
-      <option>--disable-dbus</option>: This parameter disables the use
-      of <application>D-Bus</application>.
+      <option>--disable-dbus</option>:
+      このパラメーターは <application>D-Bus</application> を利用しないようにします。
 @z
 
 @x
       <option>--disable-gtk</option>: This parameter disables the use
       of <application>GTK+2</application>.
 @y
-      <option>--disable-gtk</option>: This parameter disables the use
-      of <application>GTK+2</application>.
+      <option>--disable-gtk</option>:
+      このパラメーターは <application>GTK+2</application> を利用しないようにします。
 @z
 
 @x
       <option>--disable-gtk3</option>: This parameter disables the use
       of <application>GTK+3</application>.
 @y
-      <option>--disable-gtk3</option>: This parameter disables the use
-      of <application>GTK+3</application>.
+      <option>--disable-gtk3</option>:
+      このパラメーターは <application>GTK+3</application> を利用しないようにします。
 @z
 
 @x
@@ -291,9 +290,9 @@
       of <application>libdaemon</application>. If you use this option,
       <command>avahi-daemon</command> won't be built.
 @y
-      <option>--disable-libdaemon</option>: This parameter disables the use
-      of <application>libdaemon</application>. If you use this option,
-      <command>avahi-daemon</command> won't be built.
+      <option>--disable-libdaemon</option>:
+      このパラメーターは <application>libdaemon</application> を利用しないようにします。
+      この指定により <command>avahi-daemon</command> はビルドされません。
 @z
 
 @x
@@ -318,6 +317,50 @@
 @y
       <option>--enable-compat-libdns_sd</option>: This option enables the
       compatibility layer for <application>libdns_sd</application>.
+@z
+
+@x
+    <title>Configuring avahi</title>
+@y
+    <title>&Configuring1;avahi&Configuring2;</title>
+@z
+
+@x
+      <title>Boot Script</title>
+@y
+      <title>&BootScript;</title>
+@z
+
+@x revision="sysv"
+        To automatically start the <command>avahi-daemon</command>
+        when the system is rebooted, install the
+        <filename>/etc/rc.d/init.d/avahi</filename> bootscript from
+        the <xref linkend="bootscripts"/> package.
+@y
+        To automatically start the <command>avahi-daemon</command>
+        when the system is rebooted, install the
+        <filename>/etc/rc.d/init.d/avahi</filename> bootscript from
+        the <xref linkend="bootscripts"/> package.
+@z
+
+@x revision="systemd"
+        To start the <command>avahi-daemon</command> daemon at boot, enable
+        the previously installed systemd unit by running the following command
+        as the <systemitem class="username">root</systemitem> user:
+@y
+        To start the <command>avahi-daemon</command> daemon at boot, enable
+        the previously installed systemd unit by running the following command
+        as the <systemitem class="username">root</systemitem> user:
+@z
+
+@x revision="systemd"
+        To start the <command>avahi-dnsconfd</command> daemon at boot, enable
+        the previously installed systemd unit by running the following command
+        as the <systemitem class="username">root</systemitem> user:
+@y
+        To start the <command>avahi-dnsconfd</command> daemon at boot, enable
+        the previously installed systemd unit by running the following command
+        as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -356,10 +399,10 @@
         avahi-daemon, avahi-discover, avahi-discover-standalone, avahi-dnsconfd,
         avahi-publish, avahi-publish-address, avahi-publish-service,
         avahi-resolve, avahi-resolve-address, avahi-resolve-host-name,
-        avahi-set-host-name, bshell, bssh, and bvnc</seg>
+        avahi-set-host-name, bshell, bssh, bvnc</seg>
         <seg>libavahi-client.so, libavahi-common.so,
         libavahi-core.so, libavahi-glib.so, libavahi-gobject.so,
-        libavahi-ui-gtk3.so,, libavahi-ui.so, libdns_sd.so, and
+        libavahi-ui-gtk3.so,, libavahi-ui.so, libdns_sd.so,
         libhowl.so,</seg>
         <seg>/etc/avahi/services, /usr/{include/{avahi-client,avahi-common,
         avahi-compat-howl/{corby,discovery,rendezvous,salt},
@@ -379,3 +422,4 @@
 @y
           <para>is a IPv4LL network address configuration daemon.</para>
 @z
+

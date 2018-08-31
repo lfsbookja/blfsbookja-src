@@ -14,7 +14,13 @@
 @z
 
 @x
-  <title>libcap-&libcap-version; with PAM</title>
+  <!ENTITY libcap-time          "less than 0.1 SBU">
+@y
+  <!ENTITY libcap-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
+    <title>Introduction to libcap with PAM</title>
 @y
     <title>&IntroductionTo1;libcap-&libcap-version; with PAM&IntroductionTo2;</title>
 @z
@@ -25,10 +31,10 @@
     the PAM module must be built (after installation of
     <application>Linux-PAM</application>).</para>
 @y
-    <para>The <application>libcap</application> package was installed in 
-    LFS, but if <application>Linux-PAM</application> support is desired,
-    the PAM module must be built (after installation of
-    <application>Linux-PAM</application>).</para>
+    <para>
+    <application>libcap</application> パッケージは LFS においてインストール済です。
+    しかし <application>Linux-PAM</application> サポートが必要となる場合は、(<application>Linux-PAM</application> をインストールした後に) PAM モジュールを生成する必要があります。
+    </para>
 @z
 
 @x

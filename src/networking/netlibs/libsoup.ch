@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY libsoup-buildsize     "32 MB (with tests)">
+@y
+  <!ENTITY libsoup-buildsize     "32 MB (テスト込み)">
+@z
+
+@x
     <title>Introduction to libsoup</title>
 @y
     <title>&IntroductionTo1;libsoup&IntroductionTo2;</title>
@@ -167,6 +173,15 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>--disable-vala</option>: use this if you have not installed
+      <application>Vala</application>, e.g. because you are not building 
+      <application>GNOME</application>.
+@y
+      <option>--disable-vala</option>:
+      <application>Vala</application> をインストールしていない、つまり <application>GNOME</application> をビルドしていない場合に、このオプションを指定します。
 @z
 
 @x

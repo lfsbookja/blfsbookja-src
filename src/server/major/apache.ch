@@ -120,15 +120,15 @@
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="libxml2"/>,
+      <xref linkend="lua"/>,
       <xref linkend="lynx"/> or
       <xref linkend="Links"/> or
       <ulink url="http://elinks.or.cz/">ELinks</ulink>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/> (<xref linkend="apr-util"/> needs to be
       installed with ldap suport),
-      <xref linkend="rsync"/>,
-      <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>, and
-      <xref linkend="lua"/>
+      <xref linkend="rsync"/>, and
+      <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -136,14 +136,14 @@
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="libxml2"/>,
+      <xref linkend="lua"/>,
       <xref linkend="lynx"/> または
       <xref linkend="Links"/> または
       <ulink url="http://elinks.or.cz/">ELinks</ulink>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/> (<xref linkend="apr-util"/> が ldap サポートつきでインストールされていること),
       <xref linkend="rsync"/>,
-      <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>,
-      <xref linkend="lua"/>
+      <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>
     </para>
 @z
 

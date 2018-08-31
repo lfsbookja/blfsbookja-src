@@ -130,6 +130,36 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><command>sed -i 's#$(LOBJS) ...</command>: This <command>sed</command>
+    fixes a race condition in the <filename>Makefile</filename>. It allows you
+    to run <command>make</command> with multiple jobs (e.g., <command>make -j4</command>)
+    <!-- how ironic that a package for using multiple threads has this bug in
+    its Makefile -->.</para>
+@y
+    <para><command>sed -i 's#$(LOBJS) ...</command>: This <command>sed</command>
+    fixes a race condition in the <filename>Makefile</filename>. It allows you
+    to run <command>make</command> with multiple jobs (e.g., <command>make -j4</command>)
+    <!-- how ironic that a package for using multiple threads has this bug in
+    its Makefile -->.</para>
+@z
+
+@x
+    <para><parameter>--mandir=/usr/share/man</parameter>: This switch puts the
+    man pages in <filename class="directory">/usr/share/man</filename> instead
+    of <filename class="directory">/usr/man</filename>.</para>
+@y
+    <para><parameter>--mandir=/usr/share/man</parameter>: This switch puts the
+    man pages in <filename class="directory">/usr/share/man</filename> instead
+    of <filename class="directory">/usr/man</filename>.</para>
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

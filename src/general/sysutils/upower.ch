@@ -125,7 +125,7 @@
       <xref linkend="pygobject3"/>,
       <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>,
       <ulink url="https://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
-      (for part of the testsuite).
+      (テストスイートの一部に必要)
     </para>
 @z
 
@@ -183,21 +183,7 @@
 @x
     <title>Configuring UPower</title>
 @y
-    <title>Configuring UPower</title>
-@z
-
-@x
-      To use the command <command>upower -w</command> for information about
-      processor wakeups (this command is used by <phrase revision="sysv"><ulink url="http://ftp.gnome.org/pub/gnome/sources/gnome-power-manager/">gnome-power-manager</ulink></phrase><phrase revision="systemd"><xref linkend="gnome-power-manager"/></phrase>)
-      you need to enable CONFIG_TIMER_STATS.  This is achieved in
-      <command>make menuconfig</command> by going to the &apos;kernel-hacking&apos;
-      menu and selecting &apos;Collect kernel timers statistics&apos;.
-@y
-      To use the command <command>upower -w</command> for information about
-      processor wakeups (this command is used by <phrase revision="sysv"><ulink url="http://ftp.gnome.org/pub/gnome/sources/gnome-power-manager/">gnome-power-manager</ulink></phrase><phrase revision="systemd"><xref linkend="gnome-power-manager"/></phrase>)
-      you need to enable CONFIG_TIMER_STATS.  This is achieved in
-      <command>make menuconfig</command> by going to the &apos;kernel-hacking&apos;
-      menu and selecting &apos;Collect kernel timers statistics&apos;.
+    <title>&Configuring1;UPower&Configuring2;</title>
 @z
 
 @x
@@ -212,10 +198,9 @@
         running the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
-        To start the <command>UPower</command> service at boot,
-        enable the previously installed systemd unit by
-        running the following command as the
-        <systemitem class="username">root</systemitem> user:
+        システム起動時に <command>UPower</command> サービスを起動させるには、<systemitem
+        class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+        これによって、上でインストールした systemd ユニットが有効になります。
 @z
 
 @x

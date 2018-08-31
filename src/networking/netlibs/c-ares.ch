@@ -7,3 +7,128 @@
 % $Rev$
 % $Date::                           $
 %
+@x
+<?xml version="1.0" encoding="ISO-8859-1"?>
+@y
+<?xml version="1.0" encoding="UTF-8"?>
+@z
+
+@x
+    <title>Introduction to c-ares</title>
+@y
+    <title>&IntroductionTo1;c-ares&IntroductionTo2;</title>
+@z
+
+@x
+      <application>c-ares</application> is a C library for asynchronous DNS
+      requests.
+@y
+      <application>c-ares</application> は非同期の DNS 要求を扱う C ライブラリです。
+@z
+
+@x
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+@y
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
+@z
+
+@x
+          Download (HTTP): <ulink url="&c-ares-download-http;"/>
+@y
+          &Download; (HTTP): <ulink url="&c-ares-download-http;"/>
+@z
+
+@x
+          Download (FTP): <ulink url="&c-ares-download-ftp;"/>
+@y
+          &Download; (FTP): <ulink url="&c-ares-download-ftp;"/>
+@z
+
+@x
+          Download MD5 sum: &c-ares-md5sum;
+@y
+          &Download; MD5 sum: &c-ares-md5sum;
+@z
+
+@x
+          Download size: &c-ares-size;
+@y
+          &DownloadSize;: &c-ares-size;
+@z
+
+@x
+          Estimated disk space required: &c-ares-buildsize;
+@y
+          &Estimateddiskspacerequired;: &c-ares-buildsize;
+@z
+
+@x
+          Estimated build time: &c-ares-time;
+@y
+          &Estimatedbuildtime;: &c-ares-time;
+@z
+
+@x
+    <title>Installation of c-ares</title>
+@y
+    <title>&InstallationOf1;c-ares&InstallationOf2;</title>
+@z
+
+@x
+      Install <application>c-ares</application> by running the following
+      commands:
+@y
+      以下のコマンドを実行して <application>c-ares</application> をビルドします。
+@z
+
+@x
+      This package does not include a test suite.
+@y
+      &notTestSuite;
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <title>Contents</title>
+@y
+    <title>&Contents;</title>
+@z
+
+@x
+      <segtitle>Installed Library</segtitle>
+@y
+      <segtitle>&InstalledLibraries;</segtitle>
+@z
+
+@x
+        <seg>
+          libcares.so
+        </seg>
+@y
+        <seg>
+          libcares.so
+        </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x libcares.so
+            A C library for asynchronous DNS requests.
+@y
+            非同期の DNS 要求を行う C ライブラリです。
+@z

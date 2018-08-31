@@ -73,6 +73,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Iptables Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Iptables&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <ulink url="http://www.netfilter.org/projects/nftables/index.html">nftables</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <ulink url="http://www.netfilter.org/projects/nftables/index.html">nftables</ulink>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -127,6 +145,15 @@
 @y
         x86 ではないアーキテクチャーでは、生のカーネルヘッダーを必要とするものがあります。
         そのような場合は <parameter>KERNEL_DIR=</parameter> パラメーターにて <application>Linux</application> のソースコードを指し示すようにしてください。
+@z
+
+@x
+     Disable libebt/libarp extensions if 
+     <ulink url="http://www.netfilter.org/projects/nftables/index.html">nftables</ulink>
+     is not installed to prevent a build failure:
+@y
+     <ulink url="http://www.netfilter.org/projects/nftables/index.html">nftables</ulink>
+     をインストールしていない場合は、ビルドに失敗しないように libebt/libarp 拡張を無効にします。
 @z
 
 @x
@@ -210,7 +237,7 @@
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
       <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x
@@ -220,6 +247,15 @@
 @y
         iptables によるファイアウォールの設定を起動時に有効とするには、<xref
         linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/iptables</filename> をインストールします。
+@z
+
+@x
+        To set up the iptables firewall at boot, install the
+        <filename>iptables.service</filename> unit included in the
+        <xref linkend="systemd-units"/> package.
+@y
+        iptables によるファイアウォールの設定を起動時に有効とするには、<xref
+        linkend="systemd-units"/> パッケージに含まれる <filename>iptables.service</filename> ユニットをインストールします。
 @z
 
 @x

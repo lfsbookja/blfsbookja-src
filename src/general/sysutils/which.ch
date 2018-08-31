@@ -48,6 +48,13 @@
 @z
 
 @x
+      The first option is to install the actual GNU
+      <application>which</application> package.
+@y
+      1 つの方法は、GNU <application>which</application> パッケージをインストールするものです。
+@z
+
+@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&PackageInformation;</bridgehead>

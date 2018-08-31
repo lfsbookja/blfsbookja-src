@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY nmap-buildsize     "116 MB (add 21 MB for tests)">
+  <!ENTITY nmap-time          "0.9 SBU (add 0.2 SBU for tests)">
+@y
+  <!ENTITY nmap-buildsize     "116 MB (テスト実施時はさらに 21 MB)">
+  <!ENTITY nmap-time          "0.9 SBU (テスト実施時はさらに 0.2 SBU)">
+@z
+
+@x
     <title>Introduction to Nmap</title>
 @y
     <title>&IntroductionTo1;Nmap&IntroductionTo2;</title>
@@ -144,9 +152,20 @@
 @z
 
 @x
+    <para>Install <application>Nmap</application> by running the following
+    commands:</para>
+@y
+    <para>
+    以下のコマンドを実行して <application>Nmap</application> をビルドします。
+    </para>
+@z
+
+@x
     <para>If you wish to run the test suite, run the following command:</para>
 @y
-    <para>If you wish to run the test suite, run the following command:</para>
+    <para>
+    テストスイートを実行する場合は、以下のコマンドを実行します。
+    </para>
 @z
 
 @x
@@ -154,9 +173,11 @@
     <systemitem class="username">root</systemitem> user. Tests need a
     graphical session.</para>
 @y
-    <para>To test the results, issue: <command>make check</command> as the
-    <systemitem class="username">root</systemitem> user. Tests need a
-    graphical session.</para>
+    <para>
+    ビルド結果をテストする場合は <systemitem
+    class="username">root</systemitem> ユーザーになって <command>make check</command> を実行します。
+    テストにはグラフィックセッションが必要です。
+    </para>
 @z
 
 @x
@@ -164,6 +185,22 @@
 @y
     <para>
     <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+    <para><parameter>--with-liblua=included</parameter>: This switch is
+    required to fix compilation with <application>lua</application> 5.3.</para>
+@y
+    <para>
+    <parameter>--with-liblua=included</parameter>:
+    このスイッチは <application>lua</application> 5.3 を使ってビルドをする場合に必要となります。
     </para>
 @z
 

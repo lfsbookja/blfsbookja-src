@@ -84,6 +84,12 @@
 @z
 
 @x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">Ptlib Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Ptlib&Dependencies2;</bridgehead>
@@ -144,6 +150,12 @@
 @z
 
 @x
+      Fix a build issue with gcc-7.1.0 and later:
+@y
+      gcc-7.1.0 以上においてビルド失敗するため修正します。
+@z
+
+@x
       Install <application>Ptlib</application> by running the following
       commands:
 @y
@@ -160,6 +172,24 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>--disable-odbc</parameter>: This parameter prevents the use
+      of <xref linkend="unixodbc"/>, whose libraries conflict with
+      <application>ptlib</application>. It is not needed if
+      <xref linkend="unixodbc"/> is not installed.
+@y
+      <parameter>--disable-odbc</parameter>:
+      このパラメーターは <xref linkend="unixodbc"/> を利用しないようにします。
+      そのライブラリは <application>ptlib</application> と衝突するためです。
+      <xref linkend="unixodbc"/> をインストールしていない場合は、このパラメーターを指定する必要はありません。
 @z
 
 @x
@@ -210,6 +240,14 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x ptlib-config
+            determines the compile and linker flags that should be used to
+            compile and link programs that use <filename class="libraryfile">libpt</filename>.
+@y
+            determines the compile and linker flags that should be used to
+            compile and link programs that use <filename class="libraryfile">libpt</filename>.
 @z
 
 @x libpt.so

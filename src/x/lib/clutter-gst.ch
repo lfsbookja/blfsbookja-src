@@ -112,14 +112,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="https://github.com/castano/cgc-opensrc">Cgc</ulink>,
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <ulink url="https://github.com/castano/cgc-opensrc">Cgc</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="https://github.com/castano/cgc-opensrc">Cgc</ulink>,
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="https://github.com/castano/cgc-opensrc">Cgc</ulink>
     </para>
 @z
 

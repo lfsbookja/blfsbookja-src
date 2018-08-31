@@ -7,7 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/xsoft/graphweb
 CHANGE_FILES = \
-	chromium.ch  \
 	epiphany.ch  \
 	firefox.ch   \
 	falkon.ch   \

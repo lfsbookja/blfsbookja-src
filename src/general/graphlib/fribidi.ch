@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY fribidi-time          "less than 0.1 SBU">
+@y
+  <!ENTITY fribidi-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to FriBidi</title>
 @y
     <title>&IntroductionTo1;FriBidi&IntroductionTo2;</title>
@@ -27,7 +33,7 @@
 @y
       <application>FriBidi</application> パッケージは <ulink
       url="http://www.unicode.org/reports/tr9/">Unicode 双方向アルゴリズム</ulink> (Unicode Bidirectional Algorithm; bidi) を実現するものです。
-      これはアラビア語やヘブライ語を用いる他のパッケージにて活用されます。
+      これはアラビア語やヘブライ語を用いるパッケージにおいて活用されます。
 @z
 
 @x
@@ -86,7 +92,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.ciselant.de/c2man/c2man.html">c2man (to build man pages)</ulink>
+      <ulink url="http://www.ciselant.de/c2man/c2man.html">c2man</ulink> (man ページ生成のため)
     </para>
 @z
 

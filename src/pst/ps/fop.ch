@@ -14,14 +14,6 @@
 @z
 
 @x
-  <!ENTITY fop-buildsize     "493 MB (add 39 MB for tests)">
-  <!ENTITY fop-time          "0.7 SBU (add 0.7 SBU for tests)">
-@y
-  <!ENTITY fop-buildsize     "493 MB (add 39 MB for tests)">
-  <!ENTITY fop-time          "0.7 SBU (add 0.7 SBU for tests)">
-@z
-
-@x
     <title>Introduction to fop</title>
 @y
     <title>&IntroductionTo1;fop&IntroductionTo2;</title>
@@ -194,52 +186,57 @@
 @z
 
 @x
-        The <command>javadoc</command> command coming with OpenJDK 9 has
-        become much stricter than before regarding the conformance of the
-        Javadoc comments in source code to HTML. The FOP documentation does
-        not meet those standard, so the conformance checks have to be
+        The <command>javadoc</command> command that ships with OpenJDK 10 has
+        become much more strict than previous versions regarding conformance of
+        the Javadoc comments in source code to HTML. The FOP documentation does
+        not meet those standards, so the conformance checks have to be
         disabled. This can be done with the following command:
 @y
-        The <command>javadoc</command> command coming with OpenJDK 9 has
-        become much stricter than before regarding the conformance of the
-        Javadoc comments in source code to HTML. The FOP documentation does
-        not meet those standard, so the conformance checks have to be
+        The <command>javadoc</command> command that ships with OpenJDK 10 has
+        become much more strict than previous versions regarding conformance of
+        the Javadoc comments in source code to HTML. The FOP documentation does
+        not meet those standards, so the conformance checks have to be
         disabled. This can be done with the following command:
 @z
 
 @x
-        Then, compile <application>fop</application> by running the
-        following commands:
+        The stack size set in <filename>build.xml</filename> for building the
+        hyphenation patterns is not large enough. Change it by running:
+@y
+        The stack size set in <filename>build.xml</filename> for building the
+        hyphenation patterns is not large enough. Change it by running:
+@z
+
+@x
+        The <filename>build.xml</filename> file calls for an old version of
+        <application>PDFBox</application> components that are no longer
+        available. Copy the updated PDFBox components into the source tree:
+@y
+        The <filename>build.xml</filename> file calls for an old version of
+        <application>PDFBox</application> components that are no longer
+        available. Copy the updated PDFBox components into the source tree:
+@z
+
+@x
+        Compile <application>fop</application> by running the following
+        commands:
 @y
         以下のコマンドを実行して <application>fop</application> をビルドします。
 @z
 
 @x
-        To test the application, first modify <filename>build.xml</filename>
-        so that tests do not stop when an error is encountered:
+        The <application>junit</application> test suite was run as part of the
+        above commands.
 @y
-        To test the application, first modify <filename>build.xml</filename>
-        so that tests do not stop when an error is encountered:
+        The <application>junit</application> test suite was run as part of the
+        above commands.
 @z
 
 @x
-        Then, run <command>ant junit</command>. The hyphenation tests will
-        fail if OFFO hyphenation has not been compiled. To see a list of other
-        test targets, use <command>ant -p</command>. You must run the tests
-        from an X-window using a GL-aware <application>Xorg</application>
-        server or some of the <application>JUnit</application> tests will hang.
+        Now, install <application>Fop</application> as the
+        <systemitem class="username">root</systemitem> user:
 @y
-        Then, run <command>ant junit</command>. The hyphenation tests will
-        fail if OFFO hyphenation has not been compiled. To see a list of other
-        test targets, use <command>ant -p</command>. You must run the tests
-        from an X-window using a GL-aware <application>Xorg</application>
-        server or some of the <application>JUnit</application> tests will hang.
-@z
-
-@x
-        Now, as the <systemitem class="username">root</systemitem> user:
-@y
-        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+        <systemitem class="username">root</systemitem> ユーザーになって <application>Fop</application> をインストールします。
 @z
 
 @x
@@ -271,13 +268,19 @@
       <filename>build.xml</filename> and builds the target: <option>compile
       </option> compiles the java sources, <option>jar-main</option> generates
       jar archives, <option>jar-hyphenation</option> generates the hyphenation
-      patterns for FOP, and <option>javadocs</option> builds the documentation.
+      patterns for FOP, <option>junit</option> runs the
+      <application>junit</application> tests, and <option>javadocs</option>
+      builds the documentation. The <option>all</option> target runs all of the
+      above.
 @y
       <command>ant <option>target</option></command>: This reads the file
       <filename>build.xml</filename> and builds the target: <option>compile
       </option> compiles the java sources, <option>jar-main</option> generates
       jar archives, <option>jar-hyphenation</option> generates the hyphenation
-      patterns for FOP, and <option>javadocs</option> builds the documentation.
+      patterns for FOP, <option>junit</option> runs the
+      <application>junit</application> tests, and <option>javadocs</option>
+      builds the documentation. The <option>all</option> target runs all of the
+      above.
 @z
 
 @x

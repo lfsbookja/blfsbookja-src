@@ -42,7 +42,6 @@ CHANGE_FILES = \
 	pangomm.ch              \
 	qt5.ch                  \
 	qtwebengine.ch          \
-	qtwebkit5.ch            \
 	startup-notification.ch \
 	webkitgtk.ch
 

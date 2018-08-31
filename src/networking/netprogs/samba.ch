@@ -104,7 +104,7 @@
     <para role="recommended">
       <xref linkend="gpgme"/>,
       <xref linkend="libxslt"/> (for documentation),
-      <xref linkend="perl-parse-yapp"/>,
+<!--      <xref linkend="perl-parse-yapp"/>, Now included with perl -->
       <xref linkend="pycrypto"/>, and
       <xref linkend="openldap"/>
     </para>
@@ -112,9 +112,9 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gpgme"/>,
-      <xref linkend="libxslt"/>（ドキュメント生成のため）,
-      <xref linkend="perl-parse-yapp"/>,
-      <xref linkend="pycrypto"/>,
+      <xref linkend="libxslt"/> (ドキュメント生成のため),
+<!--      <xref linkend="perl-parse-yapp"/>, Now included with perl -->
+      <xref linkend="pycrypto"/>, and
       <xref linkend="openldap"/>
     </para>
 @z

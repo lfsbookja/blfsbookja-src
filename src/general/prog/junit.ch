@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY junit-time          "0.2 SBU (with documentation, using 4 cores; add maven <quote>artifacts</quote> download time)">
+@y
+  <!ENTITY junit-time          "0.2 SBU (ドキュメント込み; 4 コア利用; add maven <quote>artifacts</quote> download time)">
+@z
+
+@x
     <title>Introduction to JUnit</title>
 @y
     <title>&IntroductionTo1;JUnit&IntroductionTo2;</title>
@@ -76,6 +82,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Required patch: <ulink
+@y
+          必須のパッチ: <ulink
+@z
+
+@x
     <bridgehead renderas="sect3">JUnit Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;JUnit&Dependencies2;</bridgehead>
@@ -110,17 +128,16 @@
 @z
 
 @x
-      First remove a test, which fails with <application>Java 9</application>.
+      First remove a test, which fails with <application>Java 10</application>.
 @y
-      First remove a test, which fails with <application>Java 9</application>.
+      <application>Java 10</application> において失敗するテストを削除します。
 @z
 
 @x
       Install <application>Junit</application> by running the following
       commands:
 @y
-      Install <application>Junit</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Junit</application> をビルドします。
 @z
 
 @x
@@ -132,7 +149,7 @@
 @x
       If you wish to generate the documentation, issue:
 @y
-      If you wish to generate the documentation, issue:
+      ドキュメントを生成したい場合は以下を実行します。
 @z
 
 @x
@@ -147,8 +164,8 @@
       if the documentation was built, install it as the
       <systemitem class="username">root</systemitem> user:
 @y
-      if the documentation was built, install it as the
-      <systemitem class="username">root</systemitem> user:
+      ドキュメントを生成している場合は、<systemitem
+       class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -202,4 +219,12 @@
           <para>
           xUnit フレームワークによるテスト機構をサポートする Java クラスを提供します。
           </para>
+@z
+
+@x hamcrest-core-1.3.jar
+          <para>contains java classes to support matchers used in xUnit
+          tests.</para>
+@y
+          <para>contains java classes to support matchers used in xUnit
+          tests.</para>
 @z

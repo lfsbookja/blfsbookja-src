@@ -13,7 +13,6 @@ CHANGE_FILES = \
 	gimp.ch         \
 	gparted.ch      \
 	hexchat.ch      \
-	icedtea-web.ch  \
 	inkscape.ch     \
 	other.ch        \
 	pidgin.ch       \

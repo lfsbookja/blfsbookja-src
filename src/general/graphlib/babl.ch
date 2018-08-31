@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY babl-buildsize     "16 MB (with tests)">
+  <!ENTITY babl-time          "0.3 SBU (with tests)">
+@y
+  <!ENTITY babl-buildsize     "16 MB (テスト込み)">
+  <!ENTITY babl-time          "0.3 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to Babl</title>
 @y
     <title>&IntroductionTo1;Babl&IntroductionTo2;</title>
