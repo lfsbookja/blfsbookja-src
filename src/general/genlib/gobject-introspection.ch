@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gobject-introspection-buildsize     "39 MB (add 13 MB for tests)">
+  <!ENTITY gobject-introspection-buildsize     "38 MB (add 7 MB for tests)">
   <!ENTITY gobject-introspection-time          "0.3 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY gobject-introspection-buildsize     "39 MB (テスト実施時はさらに 13 MB)">
+  <!ENTITY gobject-introspection-buildsize     "38 MB (テスト実施時はさらに 7 MB)">
   <!ENTITY gobject-introspection-time          "0.3 SBU (テスト実施時はさらに 0.3 SBU)">
 @z
 
@@ -112,8 +112,11 @@
     <para role="optional">
       <xref linkend="cairo"/> (required for the tests),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="Mako"/>, and
-      <xref linkend="python2"/>
+      <xref linkend="Mako"/>,
+      <xref linkend="python2"/>, and
+      <ulink url="https://pypi.org/project/Markdown/">Markdown</ulink>
+      <!-- There was talk of this being required in the release notes. Can someone
+      who doesn't have this installed verify? -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -121,7 +124,10 @@
       <xref linkend="cairo"/> (テスト実施時に必要),
       <xref linkend="gtk-doc"/>,
       <xref linkend="Mako"/>,
-      <xref linkend="python2"/>
+      <xref linkend="python2"/>,
+      <ulink url="https://pypi.org/project/Markdown/">Markdown</ulink>
+      <!-- There was talk of this being required in the release notes. Can someone
+      who doesn't have this installed verify? -->
     </para>
 @z
 

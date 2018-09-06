@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "146 MB (add 77 MB for tests)">
-  <!ENTITY glib2-time          "0.4 SBU (using paralleism=4; add 4.5 SBU for tests)">
+  <!ENTITY glib2-buildsize     "154 MB (add 4 MB for tests)">
+  <!ENTITY glib2-time          "0.5 SBU (add 0.5 SBU for tests; both using paralleism=4)">
 @y
-  <!ENTITY glib2-buildsize     "146 MB (テスト実施時はさらに 77 MB)">
-  <!ENTITY glib2-time          "0.4 SBU (parallelism=4 利用時；テスト実施時はさらに 4.5 SBU)">
+  <!ENTITY glib2-buildsize     "154 MB (テスト実施時はさらに 4 MB)">
+  <!ENTITY glib2-time          "0.4 SBU (テスト実施時はさらに 0.5 SBU; いずれも paralleism=4)">
 @z
 
 @x
@@ -90,11 +90,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="libxslt"/> and
       <xref linkend="pcre"/> (built with Unicode properties)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="libxslt"/>,
       <xref linkend="pcre"/> (Unicode プロパティを有効にしてビルドしたもの)
     </para>
 @z
@@ -108,8 +110,7 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/>, and
-      <xref linkend="libxslt"/>
-        (all four to build manual pages)
+        (to build api documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -119,9 +120,8 @@
         （両者ともに各種テストにて用いられる）,
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libxslt"/>
-        （man ページ生成に必要）
+      <xref linkend="gtk-doc"/>
+        （API ドキュメント生成に必要）
     </para>
 @z
 
@@ -202,12 +202,11 @@
 
 @x
       To test the results, after having installed the package, issue:
-      <command>make -k check</command>.  When run in a graphical environment, 
-      one test, appinfo, fails if <xref linkend='gnome-terminal'/> is not 
-      installed.
+      <command>ninja test</command>.  
+      One test, gdatetime, is known to fail.
 @y
-      ビルド結果をテストする場合は、本パッケージをインストールした後に <command>make -k check</command> を実行します。
-      グラフィック環境でテストを実行する場合、<xref linkend='gnome-terminal'/> をインストールしていないと、appinfo というテストが失敗します。
+      ビルド結果をテストする場合は、本パッケージをインストールした後に <command>ninja test</command> を実行します。
+      gdatetime というテストは失敗します。
 @z
 
 @x
@@ -217,23 +216,27 @@
 @z
 
 @x
-      <parameter>--with-pcre=system</parameter>: This switch causes the
-      build to use a system-provided version of the
-      <application>PCRE</application> library instead of an internal
-      version.
+      <parameter>-Dman=true</parameter>: This switch causes the
+      build to create and install the package man pages.
 @y
-      <parameter>--with-pcre=system</parameter>: This switch causes the
-      build to use a system-provided version of the
-      <application>PCRE</application> library instead of an internal
-      version.
+      <parameter>-Dman=true</parameter>: This switch causes the
+      build to create and install the package man pages.
 @z
 
 @x
-      <parameter>--with-python=/usr/bin/python3</parameter>: Allows
-      using Python3 instead of Python2, even if Python2 is installed.
+      <parameter>-Dselinux=false</parameter>: This switch disables
+      support fo rselinux wich is not supported in BLFS.
 @y
-      <parameter>--with-python=/usr/bin/python3</parameter>: Allows
-      using Python3 instead of Python2, even if Python2 is installed.
+      <parameter>-Dselinux=false</parameter>: This switch disables
+      support fo rselinux wich is not supported in BLFS.
+@z
+
+@x
+      <parameter>-Ddoc=true</parameter>: This switch causes the
+      build to create and install the API documentation.
+@y
+      <parameter>-Ddoc=true</parameter>: This switch causes the
+      build to create and install the API documentation.
 @z
 
 @x
@@ -272,7 +275,6 @@
         <seg>
           /usr/include/gio-unix-2.0,
           /usr/include/glib-2.0,
-          /usr/lib/gio, 
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0, and 
           /usr/share/gtk-doc/html/{gio,glib,gobject}
@@ -297,7 +299,6 @@
         <seg>
           /usr/include/gio-unix-2.0,
           /usr/include/glib-2.0,
-          /usr/lib/gio, 
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
           /usr/share/gtk-doc/html/{gio,glib,gobject}

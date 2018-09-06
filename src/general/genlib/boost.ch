@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY boost-buildsize     "1.3 GB (168 MB installed)">
+  <!ENTITY boost-time          "2.7 SBU (Using parallelism=4; add 1.2 SBU for tests)">
+@y
+  <!ENTITY boost-buildsize     "1.3 GB (インストールサイズは 168 MB)">
+  <!ENTITY boost-time          "2.7 SBU (parallelism=4; テスト実施時はさらに 1.2 SBU)">
+@z
+
+@x
     <title>Introduction to Boost</title>
 @y
     <title>&IntroductionTo1;Boost&IntroductionTo2;</title>
@@ -78,6 +86,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="which"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="which"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
@@ -119,11 +139,10 @@
       python test_all.py; popd</command>. 
       All 150 tests should pass.
 @y
-      To run the Boost.Build's regression test, <xref linkend="python2"/>
-      is required.
-      Run the tests with: issue <command>pushd tools/build/test; 
-      python test_all.py; popd</command>. 
-      All 150 tests should pass.
+      Boost.Build の縮退テストを実施するには <xref linkend="python2"/> が必要です。
+      テストは <command>pushd tools/build/test; 
+      python test_all.py; popd</command> を実行します。
+      全テスト 150 個が成功するはずです。
 @z
 
 @x
@@ -133,11 +152,11 @@
       (46 GB). You should use the <parameter>-jN</parameter> switch to
       speed them up.
 @y
-      To run every library's regression tests, issue <command>pushd status;
-      ../b2; popd</command>.  A few tests may fail. They take a very long time
-      (over 119 SBU at -j4) and use a very large amount of disk space
-      (46 GB). You should use the <parameter>-jN</parameter> switch to
-      speed them up.
+      各ライブラリの縮退テストをすべて実施するには <command>pushd status;
+      ../b2; popd</command> を実行します。
+      失敗するテストが多少あります。
+      そのテストには処理時間が相当 (-j4 指定でも 119 SBU 以上) かかり、ディスク消費も 46 GB は必要になります。
+      実施する際には <parameter>-jN</parameter> スイッチを必ず指定して高速化を図るようにしてください。
 @z
 
 @x

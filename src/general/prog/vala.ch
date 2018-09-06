@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY vala-buildsize     "164 MB (with tests)">
-  <!ENTITY vala-time          "1.0 SBU (with tests)">
+  <!ENTITY vala-buildsize     "227 MB (with tests)">
+  <!ENTITY vala-time          "1.4 SBU (with tests)">
 @y
-  <!ENTITY vala-buildsize     "164 MB （テスト込み）">
-  <!ENTITY vala-time          "1.0 SBU （テスト込み）">
+  <!ENTITY vala-buildsize     "227 MB (テスト込み)">
+  <!ENTITY vala-time          "1.4 SBU (テスト込み)">
 @z
 
 @x
@@ -104,7 +104,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/> (Required for the tests),
-      <xref linkend="graphviz"/> (Required for valadoc),
       <xref linkend="libxslt"/> (Required for generating the documentation),
       <ulink url="https://ftp.gnu.org/gnu/help2man/">help2man</ulink>, and
       <ulink url="https://weasyprint.org/">weasyprint</ulink>
@@ -113,7 +112,6 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/> (テスト時に必要),
-      <xref linkend="graphviz"/> (valadoc に必要),
       <xref linkend="libxslt"/> (ドキュメント生成時に必要),
       <ulink url="https://ftp.gnu.org/gnu/help2man/">help2man</ulink>,
       <ulink url="https://weasyprint.org/">weasyprint</ulink>

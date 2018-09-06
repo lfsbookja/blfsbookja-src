@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY wayland-buildsize     "12 MB (with tests)">
+  <!ENTITY wayland-buildsize     "13 MB (with tests)">
   <!ENTITY wayland-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY wayland-buildsize     "12 MB (テスト込み)">
+  <!ENTITY wayland-buildsize     "13 MB (テスト込み)">
   <!ENTITY wayland-time          "0.2 SBU (テスト込み)">
 @z
 

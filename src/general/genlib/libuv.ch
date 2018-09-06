@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY libuv-buildsize     "12 MB (add 10 MB for tests)">
-  <!ENTITY libuv-time          "0.1 SBU (add 1.2 SBU for tests)">
+  <!ENTITY libuv-time          "0.1 SBU (add 1.3 SBU for tests)">
 @y
   <!ENTITY libuv-buildsize     "12 MB (テスト実施時はさらに 10 MB)">
-  <!ENTITY libuv-time          "0.1 SBU (テスト実施時はさらに 1.2 SBU)">
+  <!ENTITY libuv-time          "0.1 SBU (テスト実施時はさらに 1.3 SBU)">
 @z
 
 @x
