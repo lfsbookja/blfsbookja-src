@@ -85,13 +85,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="make-ca"/> and
       <xref linkend="libtasn1"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="make-ca"/>,
       <xref linkend="libtasn1"/>
     </para>
 @z
@@ -99,14 +97,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="nss"/>,
+      <xref linkend="make-ca"/> (runtime), 
+      <xref linkend="nss"/> (runtime),
       <xref linkend="gtk-doc"/> and
       <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="nss"/>,
+      <xref linkend="make-ca"/> (実行時), 
+      <xref linkend="nss"/> (実行時),
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>
     </para>

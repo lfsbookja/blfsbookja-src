@@ -33,7 +33,7 @@
     </corpauthor>
 @y
     <corpauthor>
-      &copyholder; (日本語訳： 松山 道夫)
+      &copyholder;
     </corpauthor>
 @z
 
@@ -184,7 +184,7 @@
   <title>日本語訳情報</title>
   <para>
   この日本語訳は散発的に訳出を進めている状態であり、完成とは程遠いものです。
-  ご了承ください。
+  ご了承ください。 (日本語訳： 松山 道夫)
   </para>
   </abstract>
 @z

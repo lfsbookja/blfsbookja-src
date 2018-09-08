@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY make-ca-buildsize     "6.6 MB (with all runtime deps)">
-  <!ENTITY make-ca-time          "0.3 SBU (with all runtime deps)">
+  <!ENTITY make-ca-time          "0.1 SBU (with all runtime deps)">
 @y
   <!ENTITY make-ca-buildsize     "6.6 MB (with all runtime deps)">
-  <!ENTITY make-ca-time          "0.3 SBU (with all runtime deps)">
+  <!ENTITY make-ca-time          "0.1 SBU (with all runtime deps)">
 @z
 
 @x
@@ -113,24 +113,24 @@
    <bridgehead renderas="sect4">Optional (runtime)</bridgehead>
     <para role="optional">
       <xref role="runtime" linkend="java"/> or
-      <xref role="runtime" linkend="openjdk"/>,
-      <xref role="runtime" linkend="nss"/>, and
-      <xref role="runtime" linkend="p11-kit"/>
+      <xref role="runtime" linkend="openjdk"/> (to generate a java PKCS#12
+      store), and <xref role="runtime" linkend="nss"/> (to generate a shared
+      NSSDB)
     </para>
 @y
-   <bridgehead renderas="sect4">Optional (runtime)</bridgehead>
+   <bridgehead renderas="sect4">&Optional; (実行時)</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="java"/> or
-      <xref role="runtime" linkend="openjdk"/>,
-      <xref role="runtime" linkend="nss"/>, and
-      <xref role="runtime" linkend="p11-kit"/>
+      <xref role="runtime" linkend="java"/> または
+      <xref role="runtime" linkend="openjdk"/> (to generate a java PKCS#12
+      store), <xref role="runtime" linkend="nss"/> (to generate a shared
+      NSSDB)
     </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -142,18 +142,24 @@
 @x
     <para>The <application>make-ca</application> script will download and
     process the certificates included in the <filename>certdata.txt</filename>
-    file for use in multiple certificate stores (if the associated applications
-    are present on the system). Additionally, any local certificates stored in
-    <filename>/etc/ssl/local</filename> will be imported to the certificate
-    stores. Certificates in this directory should be stored as PEM encoded
+    file for use as trust anchors for the <xref linkend="p11-kit"/> trust
+    module. Additionally, it will generate system certificate stores used by
+    BLFS applications (if the recommended and optional applications are present
+    on the system). Any local certificates stored in
+    <filename>/etc/ssl/local</filename> will be imported to both the trust
+    anchors and the generated certificate stores (overriding Mozilla's trust).
+    Certificates in this directory should be stored as PEM encoded
     <application>OpenSSL</application> trusted certificates.</para>
 @y
     <para>The <application>make-ca</application> script will download and
     process the certificates included in the <filename>certdata.txt</filename>
-    file for use in multiple certificate stores (if the associated applications
-    are present on the system). Additionally, any local certificates stored in
-    <filename>/etc/ssl/local</filename> will be imported to the certificate
-    stores. Certificates in this directory should be stored as PEM encoded
+    file for use as trust anchors for the <xref linkend="p11-kit"/> trust
+    module. Additionally, it will generate system certificate stores used by
+    BLFS applications (if the recommended and optional applications are present
+    on the system). Any local certificates stored in
+    <filename>/etc/ssl/local</filename> will be imported to both the trust
+    anchors and the generated certificate stores (overriding Mozilla's trust).
+    Certificates in this directory should be stored as PEM encoded
     <application>OpenSSL</application> trusted certificates.</para>
 @z
 
@@ -218,23 +224,25 @@
 @z
 
 @x
-   <para>As the <systemitem class="username">root</systemitem> user, download
-   and update the certificate stores with the following command:</para>
+   <para>As the <systemitem class="username">root</systemitem> user, after
+   installing <xref linkend="p11-kit"/>, download the certificate source and
+   prepare for system use with the following command:</para>
 @y
-   <para>As the <systemitem class="username">root</systemitem> user, download
-   and update the certificate stores with the following command:</para>
+   <para>As the <systemitem class="username">root</systemitem> user, after
+   installing <xref linkend="p11-kit"/>, download the certificate source and
+   prepare for system use with the following command:</para>
 @z
 
 @x
       <para>If running the script a second time with the same version of
       <filename>certdata.txt</filename>, for instance, to add additional stores
-      as the requisite software is installed, add the <parameter>-f</parameter>
+      as the requisite software is installed, add the <parameter>-r</parameter>
       switch to the command line. If packaging, run <command>make-ca
       --help</command> to see all available command line options.</para>
 @y
       <para>If running the script a second time with the same version of
       <filename>certdata.txt</filename>, for instance, to add additional stores
-      as the requisite software is installed, add the <parameter>-f</parameter>
+      as the requisite software is installed, add the <parameter>-r</parameter>
       switch to the command line. If packaging, run <command>make-ca
       --help</command> to see all available command line options.</para>
 @z

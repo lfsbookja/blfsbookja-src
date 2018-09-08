@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY at-spi2-atk-buildsize     "7.4 MB (with tests)">
+  <!ENTITY at-spi2-atk-buildsize     "9.2 MB (with tests)">
   <!ENTITY at-spi2-atk-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY at-spi2-atk-buildsize     "7.4 MB （テスト込み）">
-  <!ENTITY at-spi2-atk-time          "0.1 SBU （テスト込み）">
+  <!ENTITY at-spi2-atk-buildsize     "9.2 MB (テスト込み)">
+  <!ENTITY at-spi2-atk-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -116,10 +116,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. An already
+      To test the results, issue: <command>ninja test</command>. An already
       active graphical session with bus address is necessary to run the tests.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       テスト実行にあたっては、バスアドレスが既に割り当てられているアクティブなグラフィックセッションが必要です。
 @z
 

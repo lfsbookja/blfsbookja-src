@@ -102,10 +102,10 @@
       <xref linkend="perl-http-daemon"/> (for the test suite),
       <xref linkend="perl-io-socket-ssl"/> (for the test suite),
       <xref linkend="libidn2"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="pcre"/>,
-      <xref linkend="python2"/> (built with ssl; for the test suite),
-      <xref linkend="valgrind"/> (for the test suite), and
-      <ulink url="https://github.com/rockdaboot/libpsl/">libpsl</ulink>
+      <xref linkend="python2"/> (built with ssl; for the test suite), and
+      <xref linkend="valgrind"/> (for the test suite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -115,10 +115,10 @@
       <xref linkend="perl-http-daemon"/> (テストスイートのため),
       <xref linkend="perl-io-socket-ssl"/> (テストスイートのため),
       <xref linkend="libidn2"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="pcre"/>,
-      <xref linkend="python2"/> (built with ssl; テストスイートのため),
-      <xref linkend="valgrind"/> (テストスイートのため),
-      <ulink url="https://github.com/rockdaboot/libpsl/">libpsl</ulink>
+      <xref linkend="python2"/> (ssl を含めたビルド; テストスイートのため),
+      <xref linkend="valgrind"/> (テストスイートのため)
     </para>
 @z
 

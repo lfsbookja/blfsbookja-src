@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY glib-networking-buildsize     "4.8 MB (with tests)">
+  <!ENTITY glib-networking-buildsize     "6.4 MB (with tests)">
   <!ENTITY glib-networking-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY glib-networking-buildsize     "4.8 MB (テスト込み)">
+  <!ENTITY glib-networking-buildsize     "6.4 MB (テスト込み)">
   <!ENTITY glib-networking-time          "0.1 SBU (テスト込み)">
 @z
 
@@ -85,14 +85,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>, <!-- needed because version is important -->
+      <xref linkend="glib2"/>,
       <xref linkend="gnutls"/>, and
       <xref linkend="gsettings-desktop-schemas"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>, <!-- needed because version is important -->
+      <xref linkend="glib2"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="gsettings-desktop-schemas"/>
     </para>

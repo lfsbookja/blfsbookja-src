@@ -143,13 +143,11 @@
 @x
       A session bus address, normally available in an Xorg terminal,
       is necessary to run the tests. To test the results,
-      issue: <command>ninja test</command>. One test, "memory", is known to
-      fail under an LFS environment.
+      issue: <command>ninja test</command>.
 @y
       A session bus address, normally available in an Xorg terminal,
       is necessary to run the tests. To test the results,
-      issue: <command>ninja test</command>. One test, "memory", is known to
-      fail under an LFS environment.
+      issue: <command>ninja test</command>.
 @z
 
 @x

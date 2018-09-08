@@ -17,6 +17,7 @@ CHANGE_FILES = \
 	libnl.ch           \
 	libnsl.ch          \
 	libpcap.ch         \
+	libpsl.ch          \
 	libsoup.ch         \
 	libtirpc.ch        \
 	neon.ch            \

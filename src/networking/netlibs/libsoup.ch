@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY libsoup-buildsize     "32 MB (with tests)">
+  <!ENTITY libsoup-buildsize     "27 MB (with tests)">
+  <!ENTITY libsoup-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY libsoup-buildsize     "32 MB (テスト込み)">
+  <!ENTITY libsoup-buildsize     "27 MB (テスト込み)">
+  <!ENTITY libsoup-time          "0.3 SBU (テスト込み)">
 @z
 
 @x
@@ -88,6 +90,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib-networking"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="libxml2"/> and
       <xref linkend="sqlite"/>
     </para>
@@ -95,6 +98,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib-networking"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="sqlite"/>
     </para>
@@ -158,9 +162,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -176,12 +180,21 @@
 @z
 
 @x
-      <option>--disable-vala</option>: use this if you have not installed
+      <option>-Dvapi=false</option>: use this if you have not installed
       <application>Vala</application>, e.g. because you are not building 
       <application>GNOME</application>.
 @y
-      <option>--disable-vala</option>:
+      <option>-Dvapi=false</option>:
       <application>Vala</application> をインストールしていない、つまり <application>GNOME</application> をビルドしていない場合に、このオプションを指定します。
+@z
+
+@x
+      <option>-Ddoc=true</option>: Use this option if you want to build
+      the documentation. Note that you must have <xref linkend="gtk-doc"/> installed.
+@y
+      <option>-Ddoc=true</option>:
+      ドキュメントを生成したい場合に指定します。
+      その場合には <xref linkend="gtk-doc"/> をインストールする必要があります。
 @z
 
 @x
@@ -210,7 +223,8 @@
         <seg>
           /usr/include/libsoup-2.4,
           /usr/include/libsoup-gnome-2.4 and
-          /usr/share/gtk-doc/html/libsoup-2.4
+          /usr/share/gtk-doc/html/libsoup-2.4 <!-- only installed if -Ddoc=true is
+          passed. -->
         </seg>
 @y
         <seg>
@@ -222,7 +236,8 @@
         <seg>
           /usr/include/libsoup-2.4,
           /usr/include/libsoup-gnome-2.4,
-          /usr/share/gtk-doc/html/libsoup-2.4
+          /usr/share/gtk-doc/html/libsoup-2.4 <!-- only installed if -Ddoc=true is
+          passed. -->
         </seg>
 @z
 

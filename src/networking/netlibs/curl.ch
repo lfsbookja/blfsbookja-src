@@ -101,13 +101,13 @@
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libidn2"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
       <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
       <ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
       PolarSSL), and
@@ -119,13 +119,13 @@
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libidn2"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
       <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
       <ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
       PolarSSL),
@@ -140,7 +140,7 @@
        tests completed happily without it, although the test for unit1323
        reported that the tool set in the test case does not exist - ken -->
       <xref linkend="stunnel"/> (for the HTTPS and FTPS tests) and
-      <xref linkend="valgrind"/> (this will slow the tests down)
+      <xref linkend="valgrind"/> (this will slow the tests down and may cause failures.)
     </para>
 @y
     <bridgehead renderas="sect4">Optional if Running the Test Suite</bridgehead>
@@ -149,7 +149,7 @@
        tests completed happily without it, although the test for unit1323
        reported that the tool set in the test case does not exist - ken -->
       <xref linkend="stunnel"/> (for the HTTPS and FTPS tests) and
-      <xref linkend="valgrind"/> (this will slow the tests down)
+      <xref linkend="valgrind"/> (this will slow the tests down and may cause failures.)
     </para>
 @z
 
@@ -174,10 +174,14 @@
 
 @x
       To run the test suite, issue: <command>make test</command>. Two (of 857) tests
-      fail for unknown reasons.<!--
+      fail for unknown reasons, and all tests fail is valgrind is installed. Moving
+      valgrind out of $PATH is recommended if you wish to run the tests suite while
+      it is installed.
 @y
       To run the test suite, issue: <command>make test</command>. Two (of 857) tests
-      fail for unknown reasons.<!--
+      fail for unknown reasons, and all tests fail is valgrind is installed. Moving
+      valgrind out of $PATH is recommended if you wish to run the tests suite while
+      it is installed.
 @z
 
 @x

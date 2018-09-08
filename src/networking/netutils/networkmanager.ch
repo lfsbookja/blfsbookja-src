@@ -142,6 +142,7 @@
     <para role="optional">
       <xref linkend="bluez"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="qt5"/> (for examples),
       <xref linkend="ModemManager"/>,
       <xref linkend="valgrind"/>,
@@ -149,7 +150,6 @@
       <ulink url="http://www.digip.org/jansson/">Jansson</ulink>,
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
-      <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
       <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
       <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
     </para>
@@ -158,6 +158,7 @@
     <para role="optional">
       <xref linkend="bluez"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="qt5"/> (for examples),
       <xref linkend="ModemManager"/>,
       <xref linkend="valgrind"/>,
@@ -165,7 +166,6 @@
       <ulink url="http://www.digip.org/jansson/">Jansson</ulink>,
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
-      <ulink url="https://github.com/rockdaboot/libpsl">libpsl</ulink>,
       <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>,
       <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
     </para>
