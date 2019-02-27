@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gs-buildsize     "160 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "1.5 SBU (with libgs.so)">
+  <!ENTITY gs-buildsize     "176 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "1.7 SBU (with libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "160 MB （with fonts and libgs.so）">
-  <!ENTITY gs-time          "1.5 SBU （libgs.so 込み）">
+  <!ENTITY gs-buildsize     "170 MB (フォントと libgs.so)">
+  <!ENTITY gs-time          "1.7 SBU (libgs.so 込み)">
 @z
 
 @x

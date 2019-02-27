@@ -227,7 +227,7 @@
         <seg>
           jsc, 
           MiniBrowser, and
-          WebKitWebDriver <!-- New in 2.18.0 -->
+          WebKitWebDriver
         </seg>
         <seg>
           libjavascriptcoregtk-4.0.so and
@@ -242,7 +242,7 @@
         <seg>
           jsc, 
           MiniBrowser,
-          WebKitWebDriver <!-- New in 2.18.0 -->
+          WebKitWebDriver
         </seg>
         <seg>
           libjavascriptcoregtk-4.0.so,

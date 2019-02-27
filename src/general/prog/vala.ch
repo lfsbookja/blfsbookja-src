@@ -172,26 +172,26 @@
           vala, 
           vala-&vala-major-version;, 
           valac, 
-          valadoc (not built if the sed is applied), 
+          valadoc (not built if the patch is applied),
           vala-gen-introspect, and
           vapigen (symlinks);
 
           valac-&vala-major-version;,
-          valadoc-&vala-major-version; (not built if the sed is applied),
+          valadoc-&vala-major-version; (not built if the patch is applied),
           vala-gen-introspect-&vala-major-version;, and
           vapigen-&vala-major-version;
         </seg>
         <seg>
           libvala-&vala-major-version;.so and
-          libvaladoc-&vala-major-version;.so (not built if the sed is applied)
+          libvaladoc-&vala-major-version;.so (not built if the patch is applied)
         </seg>
         <seg>
           /usr/include/vala-&vala-major-version;,
-          /usr/include/valadoc-&vala-major-version; (not built if the sed is applied),
+          /usr/include/valadoc-&vala-major-version; (not built if the patch is applied),
           /usr/lib/vala-&vala-major-version;,
-          /usr/lib/valadoc (not built if the sed is applied),
-          /usr/share/vala, 
-          /usr/share/valadoc (not built if the sed is applied),
+          /usr/lib/valadoc (not built if the patch is applied),
+          /usr/share/vala,
+          /usr/share/valadoc (not built if the patch is applied),
           /usr/share/devhelp/books/vala-&vala-major-version;, and
           /usr/share/vala-&vala-major-version;
         </seg>
@@ -200,26 +200,26 @@
           vala, 
           vala-&vala-major-version;, 
           valac, 
-          valadoc (not built if the sed is applied), 
-          vala-gen-introspect,
+          valadoc (not built if the patch is applied),
+          vala-gen-introspect, and
           vapigen (symlinks);
 
           valac-&vala-major-version;,
-          valadoc-&vala-major-version; (not built if the sed is applied),
+          valadoc-&vala-major-version; (not built if the patch is applied),
           vala-gen-introspect-&vala-major-version;,
           vapigen-&vala-major-version;
         </seg>
         <seg>
           libvala-&vala-major-version;.so,
-          libvaladoc-&vala-major-version;.so (not built if the sed is applied)
+          libvaladoc-&vala-major-version;.so (not built if the patch is applied)
         </seg>
         <seg>
           /usr/include/vala-&vala-major-version;,
-          /usr/include/valadoc-&vala-major-version; (not built if the sed is applied),
+          /usr/include/valadoc-&vala-major-version; (not built if the patch is applied),
           /usr/lib/vala-&vala-major-version;,
-          /usr/lib/valadoc (not built if the sed is applied),
-          /usr/share/vala, 
-          /usr/share/valadoc (not built if the sed is applied),
+          /usr/lib/valadoc (not built if the patch is applied),
+          /usr/share/vala,
+          /usr/share/valadoc (not built if the patch is applied),
           /usr/share/devhelp/books/vala-&vala-major-version;,
           /usr/share/vala-&vala-major-version;
         </seg>

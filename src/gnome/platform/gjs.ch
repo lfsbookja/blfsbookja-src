@@ -80,7 +80,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="gobject-introspection"/>, and
-      <xref linkend="js52"/>
+      <xref linkend="js60"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -88,7 +88,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="js52"/>
+      <xref linkend="js60"/>
     </para>
 @z
 

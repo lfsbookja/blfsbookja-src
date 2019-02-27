@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY fftw-buildsize     "57 MB (add 1 MB for tests)">
-  <!ENTITY fftw-time          "0.3 SBU (using parallelism=4; add 1.9 SBU for tests)">
+  <!ENTITY fftw-time          "1.6 SBU (using parallelism=4; add 1.9 SBU for tests)">
 @y
   <!ENTITY fftw-buildsize     "57 MB（テスト実施時はさらに 1 MB）">
-  <!ENTITY fftw-time          "0.3 SBU（parallelism=4 利用時; テスト実施時はさらに 1.9 SBU）">
+  <!ENTITY fftw-time          "1.6 SBU（parallelism=4 利用時; テスト実施時はさらに 1.9 SBU）">
 @z
 
 @x
@@ -100,10 +100,13 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>To test the results, issue: <command>make check</command>.
+    On 32-bit systems, the tests can take substantially longer than
+    they would on 64-bit machines.</para>
 @y
     <para>
     ビルド結果をテストする場合は <command>make check</command> を実行します。
+    32 ビットシステムにおけるテストは、64 ビットシステムに比べて処理時間が多くかかります。
     </para>
 @z
 
@@ -120,20 +123,20 @@
 @z
 
 @x
-        <command>--enable-shared --disable-static</command>: Use shared libs
+        <parameter>--enable-shared</parameter>: Use shared libs
         instead of static libs.
 @y
-        <command>--enable-shared --disable-static</command>: Use shared libs
+        <parameter>--enable-shared</parameter>: Use shared libs
         instead of static libs.
 @z
 
 @x
-        <command>--enable-threads</command>: This enables <filename
+        <parameter>--enable-threads</parameter>: This enables <filename
         class="libraryfile"> libfftw3_threads.so</filename> to be compiled.
         It is used by e.g. the <application>gimp</application> plugin from
         <ulink url="http://gmic.eu/">G'MIC</ulink>.
 @y
-        <command>--enable-threads</command>: This enables <filename
+        <parameter>--enable-threads</parameter>: This enables <filename
         class="libraryfile"> libfftw3_threads.so</filename> to be compiled.
         It is used by e.g. the <application>gimp</application> plugin from
         <ulink url="http://gmic.eu/">G'MIC</ulink>.
@@ -147,7 +150,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -160,8 +163,8 @@
           fftw-wisdom and fftw-wisdom-to-conf
         </seg>
         <seg>
-          libfftw3.so and libfftw3_threads.so, or libfftw3f.so and
-          libfftw3f_threads.so
+          libfftw3.so, libfftw3_threads.so, libfftw3f.so,
+          libfftw3f_threads.so, libfftw3l.so and libfftw3l_threads.so
         </seg>
         <seg>
           None
@@ -171,7 +174,8 @@
           fftw-wisdom, fftw-wisdom-to-conf
         </seg>
         <seg>
-          libfftw3.so と libfftw3_threads.so、または libfftw3f.so と libfftw3f_threads.so
+          libfftw3.so, libfftw3_threads.so, libfftw3f.so,
+          libfftw3f_threads.so, libfftw3l.so, libfftw3l_threads.so
         </seg>
         <seg>
           &None;

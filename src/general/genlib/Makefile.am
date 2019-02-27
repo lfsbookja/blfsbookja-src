@@ -26,6 +26,7 @@ CHANGE_FILES = \
 	gsl.ch \
 	icu.ch \
 	js52.ch \
+	js60.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \

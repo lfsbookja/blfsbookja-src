@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY rust-buildsize     "5.1 GB (440 MB installed) including 379MB of ~/.cargo files for the user building this and 440MB of files in the DESTDIR (add 1.2GB if running the tests)">
-  <!ENTITY rust-time          "33 SBU (add 17 SBU for tests, both with 4 processors)">
+  <!ENTITY rust-buildsize     "6.5 GB (679 MB installed) including 270MB of ~/.cargo files for the user building this (add 1.4GB if running the tests)">
+  <!ENTITY rust-time          "27 SBU (add 13 SBU for tests, both with 4 processors)">
 @y
-  <!ENTITY rust-buildsize     "5.1 GB (440 MB installed) including 379MB of ~/.cargo files for the user building this and 440MB of files in the DESTDIR (add 1.2GB if running the tests)">
-  <!ENTITY rust-time          "33 SBU (4 プロセッサーの場合; テスト実施時はさらに 17 SBU)">
+  <!ENTITY rust-buildsize     "6.5 GB (679 MB installed) including 270MB of ~/.cargo files for the user building this (add 1.4GB if running the tests)">
+  <!ENTITY rust-time          "27 SBU (4 プロセッサーの場合; テスト実施時はさらに 13 SBU)">
 @z
 
 @x
@@ -119,26 +119,16 @@
     <para role="required">
       <xref linkend="curl"/>,
       <xref linkend="cmake"/>,
-      <xref linkend="libssh2"/>,
-<!-- Although this appears to build with python3, there are sometimes strange
- script errors in the compilation (i.e. it exits after the build, without
- any obvious errors and with a good status. Also ,it ships with a configure
- script which invokes python2.7 to create config.toml, and some of the files
- in the package use python2.7. -->
-      <xref linkend="python2"/>
+      <xref linkend="libssh2"/>
+<!--  <xref linkend="python2"/> -->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
       <xref linkend="cmake"/>,
-      <xref linkend="libssh2"/>,
-<!-- Although this appears to build with python3, there are sometimes strange
- script errors in the compilation (i.e. it exits after the build, without
- any obvious errors and with a good status. Also ,it ships with a configure
- script which invokes python2.7 to create config.toml, and some of the files
- in the package use python2.7. -->
-      <xref linkend="python2"/>
+      <xref linkend="libssh2"/>
+<!--  <xref linkend="python2"/> -->
     </para>
 @z
 
@@ -159,12 +149,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (used by debuginfo-gdb in the testsuite)
+      <xref linkend="gdb"/> (recommended if running the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (used by debuginfo-gdb in the testsuite)
+      <xref linkend="gdb"/> (recommended if running the testsuite)
     </para>
 @z
 
@@ -253,24 +243,28 @@
 
 @x
       To run the tests issue
-      <command>./x.py test --verbose --no-fail-fast &gt;../rustc-testlog</command>:
+      <command>python3 ./x.py test --verbose --no-fail-fast | tee rustc-testlog</command>:
       as with the build, that will use all available CPUs.  This runs many suites
-      of tests (in an apparently random order), at least one will fail:
-      compile-fail/issue-37131.rs tries to
-      compile for the thumbv6m-none-eabi target but the BLFS build does not cater for
-      that, and many tests in debuginfo-gdb will fail if
-      <application>gdb</application> has not been installed. A few other tests might
-      fail.
+      of tests (in an apparently random order), several will fail in BLFS:
+      compile-fail/issue-37131.rs require a thumbv6m-none-eabi compiler but the
+      BLFS build does not cater for
+      that, ui/issue-49851/compiler-builtins-error.rs and ui/issue-50993.rs (both
+      run twice) require a thumbv7em-none-eabihf compiler, and seven tests in
+      debuginfo-gdb will fail because gdb-8.1 changed the output format.  If
+      <application>gdb</application> has not been installed, most of the gdb tests
+      will fail.
 @y
       To run the tests issue
-      <command>./x.py test --verbose --no-fail-fast &gt;../rustc-testlog</command>:
+      <command>python3 ./x.py test --verbose --no-fail-fast | tee rustc-testlog</command>:
       as with the build, that will use all available CPUs.  This runs many suites
-      of tests (in an apparently random order), at least one will fail:
-      compile-fail/issue-37131.rs tries to
-      compile for the thumbv6m-none-eabi target but the BLFS build does not cater for
-      that, and many tests in debuginfo-gdb will fail if
-      <application>gdb</application> has not been installed. A few other tests might
-      fail.
+      of tests (in an apparently random order), several will fail in BLFS:
+      compile-fail/issue-37131.rs require a thumbv6m-none-eabi compiler but the
+      BLFS build does not cater for
+      that, ui/issue-49851/compiler-builtins-error.rs and ui/issue-50993.rs (both
+      run twice) require a thumbv7em-none-eabihf compiler, and seven tests in
+      debuginfo-gdb will fail because gdb-8.1 changed the output format.  If
+      <application>gdb</application> has not been installed, most of the gdb tests
+      will fail.
 @z
 
 @x
@@ -282,10 +276,10 @@
 @z
 
 @x
-      That should report 13224 tests. Similarly, the total tests which failed can
+      That should report 17101 tests. Similarly, the total tests which failed can
       be found by running:
 @y
-      That should report 13224 tests. Similarly, the total tests which failed can
+      That should report 17101 tests. Similarly, the total tests which failed can
       be found by running:
 @z
 
@@ -368,7 +362,7 @@
       to <literal>[target.i686-unknown-linux-gnu]</literal> if you are building
       on 32-bit x86. This whole section may be omitted if you wish to build
       against the shipped llvm, or do not have clang, but the resulting build will
-      be larger and take a little longer.
+      be larger and take longer.
 @y
       <command>[target.x86_64-unknown-linux-gnu]</command>: the syntax of
       <filename>config.toml</filename> requires an <literal>llvm-config</literal>
@@ -376,7 +370,7 @@
       to <literal>[target.i686-unknown-linux-gnu]</literal> if you are building
       on 32-bit x86. This whole section may be omitted if you wish to build
       against the shipped llvm, or do not have clang, but the resulting build will
-      be larger and take a little longer.
+      be larger and take longer.
 @z
 
 @x
@@ -447,7 +441,7 @@
 
 @x
         <seg>
-          cargo-fmt, cargo, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt.
+          cargo-clippy, cargo-fmt, cargo, clippy-driver, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt.
         </seg>
         <seg>
           Many lib*&lt;16-byte-hash&gt;.so libraries.
@@ -460,7 +454,7 @@
         </seg>
 @y
         <seg>
-          cargo-fmt, cargo, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt.
+          cargo-clippy, cargo-fmt, cargo, clippy-driver, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt
         </seg>
         <seg>
           Many lib*&lt;16-byte-hash&gt;.so libraries.

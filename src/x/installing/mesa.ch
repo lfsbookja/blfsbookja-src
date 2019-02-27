@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "388 MB (with demos and docs, add 40 MB for tests)">
-  <!ENTITY mesa-time          "3.5 SBU (with parallelism=4, demos, and docs; add 1.0 SBU for tests)">
+  <!ENTITY mesa-buildsize     "352 MB (with demos and docs, add 42 MB for tests)">
+  <!ENTITY mesa-time          "2.3 SBU (with parallelism=4, demos, and docs; add 1.0 SBU for tests)">
 @y
-  <!ENTITY mesa-buildsize     "388 MB (デモおよびドキュメント込み、テスト実施時はさらに 40 MB)">
-  <!ENTITY mesa-time          "3.5 SBU (parallelism=4, デモおよびドキュメント込み、テスト実施時はさらに 1.0 SBU)">
+  <!ENTITY mesa-buildsize     "352 MB (デモおよびドキュメント込み、テスト実施時はさらに 42 MB)">
+  <!ENTITY mesa-time          "2.3 SBU (parallelism=4, デモおよびドキュメント込み、テスト実施時はさらに 1.0 SBU)">
 @z
 
 @x

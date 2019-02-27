@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "154 MB (add 4 MB for tests)">
-  <!ENTITY glib2-time          "0.5 SBU (add 0.5 SBU for tests; both using paralleism=4)">
+  <!ENTITY glib2-buildsize     "190 MB (add 4 MB for tests)">
+  <!ENTITY glib2-time          "0.5 SBU (add 1.6 SBU for tests; both using paralleism=4)">
 @y
-  <!ENTITY glib2-buildsize     "154 MB (テスト実施時はさらに 4 MB)">
-  <!ENTITY glib2-time          "0.4 SBU (テスト実施時はさらに 0.5 SBU; いずれも paralleism=4)">
+  <!ENTITY glib2-buildsize     "190 MB (テスト実施時はさらに 4 MB)">
+  <!ENTITY glib2-time          "0.5 SBU (テスト実施時はさらに 1.6 SBU; いずれも paralleism=4)">
 @z
 
 @x
@@ -107,21 +107,23 @@
       <xref linkend="dbus"/> and
       <ulink url="https://bindfs.org/">bindfs</ulink>
         (both may be used in some tests),
+      <xref linkend="gdb"/> (for bindings),
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>,
-      <xref linkend="gtk-doc"/>, and
-        (to build api documentation)
+      <xref linkend="docbook-xsl"/>, and
+      <xref linkend="gtk-doc"/>
+        (to build API documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/> と
       <ulink url="https://bindfs.org/">bindfs</ulink>
-        （両者ともに各種テストにて用いられる）,
+        (両者ともに各種テストにて用いられる),
+      <xref linkend="gdb"/> (バインディングのため),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/>
-        （API ドキュメント生成に必要）
+        (API ドキュメント生成のため)
     </para>
 @z
 
@@ -203,10 +205,10 @@
 @x
       To test the results, after having installed the package, issue:
       <command>ninja test</command>.  
-      One test, gdatetime, is known to fail.
+      One test, gdatetime, is known to fail on sysvinit systems.
 @y
       ビルド結果をテストする場合は、本パッケージをインストールした後に <command>ninja test</command> を実行します。
-      gdatetime というテストは失敗します。
+      gdatetime というテストは sysvinit システムにおいては失敗します。
 @z
 
 @x
@@ -225,10 +227,10 @@
 
 @x
       <parameter>-Dselinux=false</parameter>: This switch disables
-      support fo rselinux wich is not supported in BLFS.
+      support for selinux which is not supported in BLFS.
 @y
       <parameter>-Dselinux=false</parameter>: This switch disables
-      support fo rselinux wich is not supported in BLFS.
+      support for selinux which is not supported in BLFS.
 @z
 
 @x
@@ -258,7 +260,7 @@
 @x
         <seg>
           gapplication,           gdbus, gdbus-codegen, 
-          gio,                    gio-querymodules,
+          gio,                    gio-launch-desktop, gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal,        glib-gettextize, 
           glib-mkenums,           gobject-query, 
@@ -282,7 +284,7 @@
 @y
         <seg>
           gapplication,           gdbus, gdbus-codegen, 
-          gio,                    gio-querymodules,
+          gio,                    gio-launch-desktop, gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal,        glib-gettextize, 
           glib-mkenums,           gobject-query, 
@@ -349,11 +351,11 @@
 
 @x glib-compile-schemas
             is used to compile all the GSettings XML schema files
-            in directory into a binary file with the name 
+            in a directory into a binary file with the name 
             <filename>gschemas.compiled</filename> that can be used by GSettings.
 @y
             is used to compile all the GSettings XML schema files
-            in directory into a binary file with the name 
+            in a directory into a binary file with the name 
             <filename>gschemas.compiled</filename> that can be used by GSettings.
 @z
 

@@ -14,14 +14,6 @@
 @z
 
 @x
-  <!ENTITY highlight-buildsize     "19 MB (with gui)">
-  <!ENTITY highlight-time          "0.4 SBU">
-@y
-  <!ENTITY highlight-buildsize     "19 MB (GUI 込み)">
-  <!ENTITY highlight-time          "0.4 SBU">
-@z
-
-@x
     <title>Introduction to Highlight</title>
 @y
     <title>&IntroductionTo1;Highlight&IntroductionTo2;</title>

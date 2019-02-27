@@ -82,12 +82,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libtirpc"/>
+      <xref linkend="libtirpc"/>,
+      <xref linkend="rpcsvc-proto"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libtirpc"/>
+      <xref linkend="libtirpc"/>,
+      <xref linkend="rpcsvc-proto"/>
     </para>
 @z
 

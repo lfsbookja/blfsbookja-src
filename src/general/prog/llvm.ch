@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "2.8 GB (with Clang, add 10.8 GB for tests)">
-  <!ENTITY llvm-time          "29 SBU (with Clang and parallelism=4, add 10 SBU for tests)">
+  <!ENTITY llvm-buildsize     "2.8 GB (with Clang, 670MB installed, add 16 GB for tests)">
+  <!ENTITY llvm-time          "26 SBU (with Clang and parallelism=4, add 8 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "2.8 GB (Clang 込み、テスト実施時はさらに 10.8 GB)">
-  <!ENTITY llvm-time          "29 SBU (Clang 込み、 parallelism=4、テスト実施時はさらに 10 SBU)">
+  <!ENTITY llvm-buildsize     "2.8 GB (Clang 込み、インストールに 670MB、テスト実施時はさらに 16 GB)">
+  <!ENTITY llvm-time          "26 SBU (Clang 込み、 parallelism=4、テスト実施時はさらに 8 SBU)">
 @z
 
 @x
@@ -217,15 +217,26 @@
 
 @x
       To test the results, issue: <command>ninja check-all</command>. Tests are
-      built with a single thread, but run using the maximum number of 
-      processors/threads available.
-      Note that the several Sanitizer tests (9 of 26479) are known to fail.
-<!--  Still true for v 5.0.0 -->
+      built with all <emphasis>available</emphasis> cores, but run using the number
+      of <emphasis>online</emphasis> processors. (The difference is that available
+      cores can be limited using <command>taskset</command>, but taking them offline
+      requires echoing 0 to <filename
+      class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
+      by the <systemitem class="username">root</systemitem> user and makes them
+      temporarily unusable by all jobs on the machine.)
+      Note that several Sanitizer tests (7 of more than 32000 tests run) are known
+      to fail.
 @y
-      ビルド結果をテストする場合は <command>ninja check-all</command> を実行します。
-      テストはシングルスレッドとしてビルドされていますが、プロセッサー数/スレッド数の最大を使って実行することができます。
-      Sanitizer テストの数個（26479 のうち 9 個）は失敗します。
-<!--  Still true for v 5.0.0 -->
+      To test the results, issue: <command>ninja check-all</command>. Tests are
+      built with all <emphasis>available</emphasis> cores, but run using the number
+      of <emphasis>online</emphasis> processors. (The difference is that available
+      cores can be limited using <command>taskset</command>, but taking them offline
+      requires echoing 0 to <filename
+      class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
+      by the <systemitem class="username">root</systemitem> user and makes them
+      temporarily unusable by all jobs on the machine.)
+      Note that several Sanitizer tests (7 of more than 32000 tests run) are known
+      to fail.
 @z
 
 @x
@@ -236,14 +247,12 @@
 
 @x
       If you have installed <application>Sphinx</application> and wish
-      to generate the html documentation and manual pages, double check 
-      that you are still in the <filename class="directory">build</filename>
-      directory and issue the following commands:
+      to generate the html documentation and manual pages, issue the following
+      commands:
 @y
       If you have installed <application>Sphinx</application> and wish
-      to generate the html documentation and manual pages, double check 
-      that you are still in the <filename class="directory">build</filename>
-      directory and issue the following commands:
+      to generate the html documentation and manual pages, issue the following
+      commands:
 @z
 
 @x
@@ -296,24 +305,25 @@
         <seg>
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
-          clang-cppi (last two symlinks to clang), clang-format,
-          clang-import-test, clang-offload-bundler, clang-rename,
-          git-clang-format, llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer,
-          llvm-cat, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
-          llvm-cxxdump, llvm-cxxfilt, llvm-diff, llvm-dis, llvm-dlltool
-          (symlink to llvm-ar), llvm-dsymutil, llvm-dwarfdump, llvm-dwp,
-          llvm-extract, llvm-lib (symlink to llvm-ar), llvm-link, llvm-lto,
-          llvm-lto2, llvm-mc, llvm-mcmarkup, llvm-modextract, llvm-mt, llvm-nm,
-          llvm-objdump, llvm-opt-report, llvm-pdbutil, llvm-profdata,
-          llvm-ranlib (symlink to llvm-ar), llvm-readelf (symlink to
-          llvm-readobj), llvm-readobj, llvm-rtdyld, llvm-size, llvm-split,
-          llvm-stress, llvm-strings, llvm-symbolizer, llvm-tblgen, llvm-xray,
+          clang-cpp (last two symlinks to clang), clang-format, clang-func-mapping
+          clang-import-test, clang-offload-bundler, clang-refactor, clang-rename,
+          diagtool, dsymutil, git-clang-format, hmap-tool, llc, lli, llvm-ar,
+          llvm-as, llvm-bcanalyzer, llvm-cat, llvm-cfi-verify, llvm-config,
+          llvm-cov, llvm-c-test, llvm-cvtres, llvm-cxxdump, llvm-cxxfilt,
+          llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
+          llvm-dwp, llvm-exegenesis, llvm-extract, llvm-lib (symlink to llvm-ar),
+          llvm-link, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-modextract,
+          llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump, llvm-opt-report,
+          llvm-pdbutil, llvm-profdata, llvm-ranlib (symlink to llvm-ar), llvm-rc,
+          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-rtdyld,
+          llvm-size, llvm-split, llvm-stress, llvm-strings, llvm-strip (symlink
+          to llvm-objcopy), llvm-symbolizer, llvm-tblgen, llvm-undname, llvm-xray,
           obj2yaml, opt, sancov, sanstats, scan-build, scan-view,
           verify-uselistorder, and yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (63
-          libraries), libLTO.so, libclang.so and libclang*.a (25 libraries)
+          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (66
+          libraries), libLTO.so, libclang.so and libclang*.a (30 libraries)
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
@@ -325,24 +335,25 @@
         <seg>
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
-          clang-cppi (last two symlinks to clang), clang-format,
-          clang-import-test, clang-offload-bundler, clang-rename,
-          git-clang-format, llc, lli, llvm-ar, llvm-as, llvm-bcanalyzer,
-          llvm-cat, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
-          llvm-cxxdump, llvm-cxxfilt, llvm-diff, llvm-dis, llvm-dlltool
-          (symlink to llvm-ar), llvm-dsymutil, llvm-dwarfdump, llvm-dwp,
-          llvm-extract, llvm-lib (symlink to llvm-ar), llvm-link, llvm-lto,
-          llvm-lto2, llvm-mc, llvm-mcmarkup, llvm-modextract, llvm-mt, llvm-nm,
-          llvm-objdump, llvm-opt-report, llvm-pdbutil, llvm-profdata,
-          llvm-ranlib (symlink to llvm-ar), llvm-readelf (symlink to
-          llvm-readobj), llvm-readobj, llvm-rtdyld, llvm-size, llvm-split,
-          llvm-stress, llvm-strings, llvm-symbolizer, llvm-tblgen, llvm-xray,
+          clang-cpp (last two symlinks to clang), clang-format, clang-func-mapping
+          clang-import-test, clang-offload-bundler, clang-refactor, clang-rename,
+          diagtool, dsymutil, git-clang-format, hmap-tool, llc, lli, llvm-ar,
+          llvm-as, llvm-bcanalyzer, llvm-cat, llvm-cfi-verify, llvm-config,
+          llvm-cov, llvm-c-test, llvm-cvtres, llvm-cxxdump, llvm-cxxfilt,
+          llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
+          llvm-dwp, llvm-exegenesis, llvm-extract, llvm-lib (symlink to llvm-ar),
+          llvm-link, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-modextract,
+          llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump, llvm-opt-report,
+          llvm-pdbutil, llvm-profdata, llvm-ranlib (symlink to llvm-ar), llvm-rc,
+          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-rtdyld,
+          llvm-size, llvm-split, llvm-stress, llvm-strings, llvm-strip (symlink
+          to llvm-objcopy), llvm-symbolizer, llvm-tblgen, llvm-undname, llvm-xray,
           obj2yaml, opt, sancov, sanstats, scan-build, scan-view,
           verify-uselistorder, yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (63
-          libraries), libLTO.so, libclang.so, libclang*.a (25 libraries)
+          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (66
+          ライブラリ), libLTO.so, libclang.so, libclang*.a (30 ライブラリ)
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY exempi-buildsize     "233 MB (add 21 MB for tests)">
-  <!ENTITY exempi-time          "0.4 SBU (using parallelism=4; add 0.2 SBU for tests)">
+  <!ENTITY exempi-buildsize     "288 MB (add 42 MB for tests)">
+  <!ENTITY exempi-time          "0.5 SBU (using parallelism=4; add 0.4 SBU for tests)">
 @y
-  <!ENTITY exempi-buildsize     "233 MB (テスト実施時はさらに 21 MB)">
-  <!ENTITY exempi-time          "0.4 SBU (parallelism=4；テスト実施時はさらに 0.2 SBU)">
+  <!ENTITY exempi-buildsize     "288 MB (テスト実施時はさらに 42 MB)">
+  <!ENTITY exempi-time          "0.5 SBU (parallelism=4；テスト実施時はさらに 0.4 SBU)">
 @z
 
 @x

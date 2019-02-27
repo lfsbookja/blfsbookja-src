@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libuv-buildsize     "12 MB (add 10 MB for tests)">
-  <!ENTITY libuv-time          "0.1 SBU (add 1.3 SBU for tests)">
+  <!ENTITY libuv-buildsize     "13 MB (add 10 MB for tests)">
+  <!ENTITY libuv-time          "0.1 SBU (add 1.4 SBU for tests)">
 @y
-  <!ENTITY libuv-buildsize     "12 MB (テスト実施時はさらに 10 MB)">
-  <!ENTITY libuv-time          "0.1 SBU (テスト実施時はさらに 1.3 SBU)">
+  <!ENTITY libuv-buildsize     "13 MB (テスト実施時はさらに 10 MB)">
+  <!ENTITY libuv-time          "0.1 SBU (テスト実施時はさらに 1.4 SBU)">
 @z
 
 @x
@@ -117,7 +117,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>Installed Directory</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -132,7 +132,7 @@
           libuv.so
         </seg>
         <seg>
-          None
+          /usr/include/uv
         </seg>
 @y
         <seg>
@@ -142,6 +142,18 @@
           libuv.so
         </seg>
         <seg>
-          &None;
+          /usr/include/uv
         </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x libuv.so
+            contains API functions for asynchronous I/O operations
+@y
+            contains API functions for asynchronous I/O operations
 @z

@@ -83,14 +83,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="alsa-utils"/> and
-      <xref linkend="gtk2"/>
+      <xref linkend="alsa-utils"/>,
+      <xref linkend="gtk3"/>, and
+      <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="alsa-utils"/>,
-      <xref linkend="gtk2"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="libnotify"/>
     </para>
 @z
 

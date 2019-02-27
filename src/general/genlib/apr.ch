@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY apr-buildsize     "11 MB (additional 3 MB for the tests)">
+  <!ENTITY apr-buildsize     "13 MB (additional 3 MB for the tests)">
   <!ENTITY apr-time          "0.2 SBU (add 1.5 SBU for tests)">
 @y
-  <!ENTITY apr-buildsize     "11 MB (テスト実施時はさらに 3 MB)">
+  <!ENTITY apr-buildsize     "13 MB (テスト実施時はさらに 3 MB)">
   <!ENTITY apr-time          "0.2 SBU (テスト実施時は 1.5 SBU)">
 @z
 
@@ -102,11 +102,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>. teststr is
-      known to hang on some systems.
+      To test the results, issue: <command>make test</command>. <!-- teststr is
+      known to hang on some systems. - WORKS AS OF 1.6.5 (renodr) -->
 @y
       ビルド結果をテストする場合は <command>make test</command> を実行します。
-      システムによっては teststr がハングアップする場合があります。
 @z
 
 @x

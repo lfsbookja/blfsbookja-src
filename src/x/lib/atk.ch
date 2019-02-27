@@ -168,8 +168,7 @@
           libatk-1.0.so
         </seg>
         <seg>
-          /usr/include/atk-1.0 and
-          /usr/share/gtk-doc/html/atk
+          /usr/include/atk-1.0
         </seg>
 @y
         <seg>
@@ -179,8 +178,7 @@
           libatk-1.0.so
         </seg>
         <seg>
-          /usr/include/atk-1.0,
-          /usr/share/gtk-doc/html/atk
+          /usr/include/atk-1.0
         </seg>
 @z
 

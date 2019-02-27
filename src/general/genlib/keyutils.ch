@@ -103,9 +103,13 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue, as the 
+    <systemitem class="username">root</systemitem> user: </para>
 @y
-    <para>&notTestSuite;</para>
+    <para>
+    ビルド結果をテストする場合は <systemitem
+    class="username">root</systemitem> ユーザーになって以下を実行します。
+    </para>
 @z
 
 @x
