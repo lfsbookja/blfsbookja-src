@@ -10,28 +10,8 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE note PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE note PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" >
-@z
-
-@x
-    <!-- $LastChangedBy$
-         $Date$ -->
-@y
-    <!-- $LastChangedBy$
-         $Date$ -->
-@z
-
-@x
-    <!-- Since this is referenced in every GStreamer Plugins page, simplify
-    the pages by adding an XInclude. -->
-@y
-    <!-- Since this is referenced in every GStreamer Plugins page, simplify
-    the pages by adding an XInclude. -->
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x

@@ -10,70 +10,16 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY libhandy-download-http "https://source.puri.sm/Librem5/libhandy/-/archive/v&libhandy-version;/libhandy-v&libhandy-version;.tar.bz2">
-  <!ENTITY libhandy-download-ftp  " ">
-  <!ENTITY libhandy-md5sum        "6011ebf671786958d8afc73b04ffc378">
-  <!ENTITY libhandy-size          "336 KB">
   <!ENTITY libhandy-buildsize     "14 MB (with tests)">
   <!ENTITY libhandy-time          "0.2 SBU (with tests)">
-]>
 @y
-  <!ENTITY libhandy-download-http "https://source.puri.sm/Librem5/libhandy/-/archive/v&libhandy-version;/libhandy-v&libhandy-version;.tar.bz2">
-  <!ENTITY libhandy-download-ftp  " ">
-  <!ENTITY libhandy-md5sum        "6011ebf671786958d8afc73b04ffc378">
-  <!ENTITY libhandy-size          "336 KB">
   <!ENTITY libhandy-buildsize     "14 MB (with tests)">
   <!ENTITY libhandy-time          "0.2 SBU (with tests)">
-]>
-@z
-
-@x
-<sect1 id="libhandy" xreflabel="libhandy-&libhandy-version;">
-  <?dbhtml filename="libhandy.html"?>
-@y
-<sect1 id="libhandy" xreflabel="libhandy-&libhandy-version;">
-  <?dbhtml filename="libhandy.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>Libhandy-&libhandy-version;</title>
-@y
-  <title>Libhandy-&libhandy-version;</title>
-@z
-
-@x
-  <indexterm zone="libhandy">
-    <primary sortas="a-libhandy">libhandy</primary>
-  </indexterm>
-@y
-  <indexterm zone="libhandy">
-    <primary sortas="a-libhandy">libhandy</primary>
-  </indexterm>
 @z
 
 @x

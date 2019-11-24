@@ -10,70 +10,8 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY firewalld-download-http "https://github.com/firewalld/firewalld/releases/download/v&firewalld-version;/firewalld-&firewalld-version;.tar.gz">
-  <!ENTITY firewalld-download-ftp  " ">
-  <!ENTITY firewalld-md5sum        "2549c2006def07a19b4c77ec960e5aab">
-  <!ENTITY firewalld-size          "1.6 MB">
-  <!ENTITY firewalld-buildsize     "26 MB">
-  <!ENTITY firewalld-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY firewalld-download-http "https://github.com/firewalld/firewalld/releases/download/v&firewalld-version;/firewalld-&firewalld-version;.tar.gz">
-  <!ENTITY firewalld-download-ftp  " ">
-  <!ENTITY firewalld-md5sum        "2549c2006def07a19b4c77ec960e5aab">
-  <!ENTITY firewalld-size          "1.6 MB">
-  <!ENTITY firewalld-buildsize     "26 MB">
-  <!ENTITY firewalld-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="firewalld" xreflabel="firewalld-&firewalld-version;">
-  <?dbhtml filename="firewalld.html"?>
-@y
-<sect1 id="firewalld" xreflabel="firewalld-&firewalld-version;">
-  <?dbhtml filename="firewalld.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>firewalld-&firewalld-version;</title>
-@y
-  <title>firewalld-&firewalld-version;</title>
-@z
-
-@x
-  <indexterm zone="firewalld">
-    <primary sortas="a-firewalld">firewalld</primary>
-  </indexterm>
-@y
-  <indexterm zone="firewalld">
-    <primary sortas="a-firewalld">firewalld</primary>
-  </indexterm>
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x

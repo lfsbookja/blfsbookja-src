@@ -10,60 +10,8 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY docbook5-download-http "https://docbook.org/xml/5.0/docbook-5.0.zip">
-  <!ENTITY docbook5-download-ftp  " ">
-  <!ENTITY docbook5-md5sum        "2411c19ed4fb141f3fa3d389fae40736">
-  <!ENTITY docbook5-size          "820 KB">
-  <!ENTITY docbook5-buildsize     "6.2 MB">
-  <!ENTITY docbook5-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY docbook5-download-http "https://docbook.org/xml/5.0/docbook-5.0.zip">
-  <!ENTITY docbook5-download-ftp  " ">
-  <!ENTITY docbook5-md5sum        "2411c19ed4fb141f3fa3d389fae40736">
-  <!ENTITY docbook5-size          "820 KB">
-  <!ENTITY docbook5-buildsize     "6.2 MB">
-  <!ENTITY docbook5-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="docbook5" xreflabel="docbook-xml-5.0">
-  <?dbhtml filename="docbook5.html"?>
-@y
-<sect1 id="docbook5" xreflabel="docbook-xml-5.0">
-  <?dbhtml filename="docbook5.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>docbook-xml-5.0</title>
-@y
-  <title>docbook-xml-5.0</title>
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x

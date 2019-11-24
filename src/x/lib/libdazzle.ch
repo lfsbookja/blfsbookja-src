@@ -10,70 +10,16 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY libdazzle-download-http "&gnome-download-http;/libdazzle/&gnome-minor-32;/libdazzle-&libdazzle-version;.tar.xz">
-  <!ENTITY libdazzle-download-ftp  "&gnome-download-ftp;/libdazzle/&gnome-minor-32;/libdazzle-&libdazzle-version;.tar.xz">
-  <!ENTITY libdazzle-md5sum        "b6da085649dcda2795e6980a84667950">
-  <!ENTITY libdazzle-size          "432 KB">
   <!ENTITY libdazzle-buildsize     "34 MB (with tests)">
   <!ENTITY libdazzle-time          "0.2 SBU (uning parallelism=4; with tests)">
-]>
 @y
-  <!ENTITY libdazzle-download-http "&gnome-download-http;/libdazzle/&gnome-minor-32;/libdazzle-&libdazzle-version;.tar.xz">
-  <!ENTITY libdazzle-download-ftp  "&gnome-download-ftp;/libdazzle/&gnome-minor-32;/libdazzle-&libdazzle-version;.tar.xz">
-  <!ENTITY libdazzle-md5sum        "b6da085649dcda2795e6980a84667950">
-  <!ENTITY libdazzle-size          "432 KB">
   <!ENTITY libdazzle-buildsize     "34 MB (with tests)">
   <!ENTITY libdazzle-time          "0.2 SBU (uning parallelism=4; with tests)">
-]>
-@z
-
-@x
-<sect1 id="libdazzle" xreflabel="libdazzle-&libdazzle-version;">
-  <?dbhtml filename="libdazzle.html"?>
-@y
-<sect1 id="libdazzle" xreflabel="libdazzle-&libdazzle-version;">
-  <?dbhtml filename="libdazzle.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>libdazzle-&libdazzle-version;</title>
-@y
-  <title>libdazzle-&libdazzle-version;</title>
-@z
-
-@x
-  <indexterm zone="libdazzle">
-    <primary sortas="a-libdazzle">libdazzle</primary>
-  </indexterm>
-@y
-  <indexterm zone="libdazzle">
-    <primary sortas="a-libdazzle">libdazzle</primary>
-  </indexterm>
 @z
 
 @x

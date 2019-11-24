@@ -10,70 +10,14 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY iw-download-http "https://www.kernel.org/pub/software/network/iw/iw-&iw-version;.tar.xz">
-  <!ENTITY iw-download-ftp  " ">
-  <!ENTITY iw-md5sum        "b65bb6dc3b9474c55f6107a25469d8cf">
-  <!ENTITY iw-size          "136 KB">
-  <!ENTITY iw-buildsize     "3.5 MB">
   <!ENTITY iw-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY iw-download-http "https://www.kernel.org/pub/software/network/iw/iw-&iw-version;.tar.xz">
-  <!ENTITY iw-download-ftp  " ">
-  <!ENTITY iw-md5sum        "b65bb6dc3b9474c55f6107a25469d8cf">
-  <!ENTITY iw-size          "136 KB">
-  <!ENTITY iw-buildsize     "3.5 MB">
   <!ENTITY iw-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="iw" xreflabel="iw-&iw-version;">
-  <?dbhtml filename="iw.html"?>
-@y
-<sect1 id="iw" xreflabel="iw-&iw-version;">
-  <?dbhtml filename="iw.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>iw-&iw-version;</title>
-@y
-  <title>iw-&iw-version;</title>
-@z
-
-@x
-  <indexterm zone="iw">
-    <primary sortas="a-iw">iw</primary>
-  </indexterm>
-@y
-  <indexterm zone="iw">
-    <primary sortas="a-iw">iw</primary>
-  </indexterm>
 @z
 
 @x

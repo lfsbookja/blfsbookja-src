@@ -10,70 +10,16 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY tracker-miners-download-http "&gnome-download-http;/tracker-miners/2.3/tracker-miners-&tracker-miners-version;.tar.xz">
-  <!ENTITY tracker-miners-download-ftp  "&gnome-download-ftp;/tracker-miners/2.3/tracker-miners-&tracker-miners-version;.tar.xz">
-  <!ENTITY tracker-miners-md5sum        "0321d8f4ad27e3fccdbc8384e5b3cb83">
-  <!ENTITY tracker-miners-size          "3.0 MB">
   <!ENTITY tracker-miners-buildsize     "30 MB (with tests)">
   <!ENTITY tracker-miners-time          "0.4 SBU (with tests)">
-]>
 @y
-  <!ENTITY tracker-miners-download-http "&gnome-download-http;/tracker-miners/2.3/tracker-miners-&tracker-miners-version;.tar.xz">
-  <!ENTITY tracker-miners-download-ftp  "&gnome-download-ftp;/tracker-miners/2.3/tracker-miners-&tracker-miners-version;.tar.xz">
-  <!ENTITY tracker-miners-md5sum        "0321d8f4ad27e3fccdbc8384e5b3cb83">
-  <!ENTITY tracker-miners-size          "3.0 MB">
   <!ENTITY tracker-miners-buildsize     "30 MB (with tests)">
   <!ENTITY tracker-miners-time          "0.4 SBU (with tests)">
-]>
-@z
-
-@x
-<sect1 id="tracker-miners" xreflabel="tracker-miners-&tracker-miners-version;">
-  <?dbhtml filename="tracker-miners.html"?>
-@y
-<sect1 id="tracker-miners" xreflabel="tracker-miners-&tracker-miners-version;">
-  <?dbhtml filename="tracker-miners.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>Tracker-miners-&tracker-miners-version;</title>
-@y
-  <title>Tracker-miners-&tracker-miners-version;</title>
-@z
-
-@x
-  <indexterm zone="tracker-miners">
-    <primary sortas="a-tracker-miners">tracker-miners</primary>
-  </indexterm>
-@y
-  <indexterm zone="tracker-miners">
-    <primary sortas="a-tracker-miners">tracker-miners</primary>
-  </indexterm>
 @z
 
 @x

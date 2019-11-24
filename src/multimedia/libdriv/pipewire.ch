@@ -10,70 +10,14 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY pipewire-download-http "https://github.com/PipeWire/pipewire/archive/&pipewire-version;/pipewire-&pipewire-version;.tar.gz">
-  <!ENTITY pipewire-download-ftp  " ">
-  <!ENTITY pipewire-md5sum        "026fe15fc65e4a63bd8e5e63c0e054c6">
-  <!ENTITY pipewire-size          "412 KB">
-  <!ENTITY pipewire-buildsize     "27 MB">
   <!ENTITY pipewire-time          "0.1 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY pipewire-download-http "https://github.com/PipeWire/pipewire/archive/&pipewire-version;/pipewire-&pipewire-version;.tar.gz">
-  <!ENTITY pipewire-download-ftp  " ">
-  <!ENTITY pipewire-md5sum        "026fe15fc65e4a63bd8e5e63c0e054c6">
-  <!ENTITY pipewire-size          "412 KB">
-  <!ENTITY pipewire-buildsize     "27 MB">
   <!ENTITY pipewire-time          "0.1 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="pipewire" xreflabel="pipewire-&pipewire-version;">
-  <?dbhtml filename="pipewire.html"?>
-@y
-<sect1 id="pipewire" xreflabel="pipewire-&pipewire-version;">
-  <?dbhtml filename="pipewire.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>Pipewire-&pipewire-version;</title>
-@y
-  <title>Pipewire-&pipewire-version;</title>
-@z
-
-@x
-  <indexterm zone="pipewire">
-    <primary sortas="a-pipewire">pipewire</primary>
-  </indexterm>
-@y
-  <indexterm zone="pipewire">
-    <primary sortas="a-pipewire">pipewire</primary>
-  </indexterm>
 @z
 
 @x

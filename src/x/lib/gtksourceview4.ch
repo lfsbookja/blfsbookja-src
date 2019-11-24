@@ -10,74 +10,16 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY gtksourceview4-download-http
-    "&gnome-download-http;/gtksourceview/4.4/gtksourceview-&gtksourceview4-version;.tar.xz">
-  <!ENTITY gtksourceview4-download-ftp
-    "&gnome-download-ftp;/gtksourceview/4.4/gtksourceview-&gtksourceview4-version;.tar.xz">
-  <!ENTITY gtksourceview4-md5sum        "5c47e314517692f2622a0b724c65e628">
-  <!ENTITY gtksourceview4-size          "1.1 MB">
   <!ENTITY gtksourceview4-buildsize     "36 MB (with tests)">
   <!ENTITY gtksourceview4-time          "0.1 SBU (with tests; both using parallelism=4)">
-]>
 @y
-  <!ENTITY gtksourceview4-download-http
-    "&gnome-download-http;/gtksourceview/4.4/gtksourceview-&gtksourceview4-version;.tar.xz">
-  <!ENTITY gtksourceview4-download-ftp
-    "&gnome-download-ftp;/gtksourceview/4.4/gtksourceview-&gtksourceview4-version;.tar.xz">
-  <!ENTITY gtksourceview4-md5sum        "5c47e314517692f2622a0b724c65e628">
-  <!ENTITY gtksourceview4-size          "1.1 MB">
   <!ENTITY gtksourceview4-buildsize     "36 MB (with tests)">
   <!ENTITY gtksourceview4-time          "0.1 SBU (with tests; both using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="gtksourceview4" xreflabel="gtksourceview4-&gtksourceview4-version;">
-  <?dbhtml filename="gtksourceview4.html"?>
-@y
-<sect1 id="gtksourceview4" xreflabel="gtksourceview4-&gtksourceview4-version;">
-  <?dbhtml filename="gtksourceview4.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>gtksourceview4-&gtksourceview4-version;</title>
-@y
-  <title>gtksourceview4-&gtksourceview4-version;</title>
-@z
-
-@x
-  <indexterm zone="gtksourceview4">
-    <primary sortas="a-gtksourceview4">gtksourceview4</primary>
-  </indexterm>
-@y
-  <indexterm zone="gtksourceview4">
-    <primary sortas="a-gtksourceview4">gtksourceview4</primary>
-  </indexterm>
 @z
 
 @x

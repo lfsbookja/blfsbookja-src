@@ -10,70 +10,14 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY libnftnl-download-http "https://netfilter.org/projects/libnftnl/files/libnftnl-&libnftnl-version;.tar.bz2">
-  <!ENTITY libnftnl-download-ftp  " ">
-  <!ENTITY libnftnl-md5sum        "bf1a51c9cad0f0cb12b6811ce1e0dd90">
-  <!ENTITY libnftnl-size          "360 KB">
-  <!ENTITY libnftnl-buildsize     "8.6 MB">
   <!ENTITY libnftnl-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY libnftnl-download-http "https://netfilter.org/projects/libnftnl/files/libnftnl-&libnftnl-version;.tar.bz2">
-  <!ENTITY libnftnl-download-ftp  " ">
-  <!ENTITY libnftnl-md5sum        "bf1a51c9cad0f0cb12b6811ce1e0dd90">
-  <!ENTITY libnftnl-size          "360 KB">
-  <!ENTITY libnftnl-buildsize     "8.6 MB">
   <!ENTITY libnftnl-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libnftnl" xreflabel="libnftnl-&libnftnl-version;">
-  <?dbhtml filename="libnftnl.html"?>
-@y
-<sect1 id="libnftnl" xreflabel="libnftnl-&libnftnl-version;">
-  <?dbhtml filename="libnftnl.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>libnftnl-&libnftnl-version;</title>
-@y
-  <title>libnftnl-&libnftnl-version;</title>
-@z
-
-@x
-  <indexterm zone="libnftnl">
-    <primary sortas="a-libnftnl">libnftnl</primary>
-  </indexterm>
-@y
-  <indexterm zone="libnftnl">
-    <primary sortas="a-libnftnl">libnftnl</primary>
-  </indexterm>
 @z
 
 @x

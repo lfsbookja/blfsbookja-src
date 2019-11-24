@@ -10,70 +10,14 @@
 
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY docbook51-download-http "https://docbook.org/xml/5.1/docbook-v5.1-os.zip">
-  <!ENTITY docbook51-download-ftp  " ">
-  <!ENTITY docbook51-md5sum        "d8bea8ddfc5743578a31cb18f9ae1f5a">
-  <!ENTITY docbook51-size          "752 KB">
-  <!ENTITY docbook51-buildsize     "8.5 MB">
   <!ENTITY docbook51-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY docbook51-download-http "https://docbook.org/xml/5.1/docbook-v5.1-os.zip">
-  <!ENTITY docbook51-download-ftp  " ">
-  <!ENTITY docbook51-md5sum        "d8bea8ddfc5743578a31cb18f9ae1f5a">
-  <!ENTITY docbook51-size          "752 KB">
-  <!ENTITY docbook51-buildsize     "8.5 MB">
   <!ENTITY docbook51-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="docbook51" xreflabel="docbook-xml-5.1">
-  <?dbhtml filename="docbook51.html"?>
-@y
-<sect1 id="docbook51" xreflabel="docbook-xml-5.1">
-  <?dbhtml filename="docbook51.html"?>
-@z
-
-@x
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@y
-  <sect1info>
-    <othername>$LastChangedBy$</othername>
-    <date>$Date$</date>
-  </sect1info>
-@z
-
-@x
-  <title>docbook-xml-5.1</title>
-@y
-  <title>docbook-xml-5.1</title>
-@z
-
-@x
-  <indexterm zone="docbook51">
-    <primary sortas="a-DocBook51-XML-DTD">DocBook XML Schemas 5.1</primary>
-  </indexterm>
-@y
-  <indexterm zone="docbook51">
-    <primary sortas="a-DocBook51-XML-DTD">DocBook XML Schemas 5.1</primary>
-  </indexterm>
 @z
 
 @x
