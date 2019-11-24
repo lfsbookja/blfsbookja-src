@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libsigc-buildsize     "58 MB (with tests)">
-  <!ENTITY libsigc-time          "0.3 SBU (with tests)">
+  <!ENTITY libsigc-buildsize     "65 MB (with tests)">
+  <!ENTITY libsigc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libsigc-buildsize     "58 MB (テスト込み)">
-  <!ENTITY libsigc-time          "0.3 SBU (テスト込み)">
+  <!ENTITY libsigc-buildsize     "65 MB (テスト込み)">
+  <!ENTITY libsigc-time          "0.2 SBU (テスト込み)">
 @z
 
 @x

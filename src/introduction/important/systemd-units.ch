@@ -45,9 +45,9 @@
 @z
 
 @x
-        Download: <ulink url="&downloads-root;/blfs-systemd-units-&systemd-units-version;.tar.bz2"/>
+        Download: <ulink url="&downloads-root-systemd;/blfs-systemd-units-&systemd-units-version;.tar.xz"/>
 @y
-        &Download;: <ulink url="&downloads-root;/blfs-systemd-units-&systemd-units-version;.tar.bz2"/>
+        &Download;: <ulink url="&downloads-root-systemd;/blfs-systemd-units-&systemd-units-version;.tar.xz"/>
 @z
 
 @x

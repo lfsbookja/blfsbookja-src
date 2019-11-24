@@ -83,7 +83,7 @@ Liboauth provides functions
 @z
 
 @x
-    <bridgehead renderas="sect3">Additonal Downloads</bridgehead>
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
     <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
@@ -154,19 +154,17 @@ Liboauth provides functions
 @z
 
 @x
-      If you have installed <xref linkend="doxygen"/>, issue
-      <command>make dox</command> to build the documentation.
+      If you wish to build the documentation (needs <xref linkend="doxygen"/>),
+      issue:
 @y
-      If you have installed <xref linkend="doxygen"/>, issue
-      <command>make dox</command> to build the documentation.
+      If you wish to build the documentation (needs <xref linkend="doxygen"/>),
+      issue:
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. One test,
-      test/tcwiki, is known to fail due to a coding error.
+      To test the results, issue: <command>make check</command>.
 @y
-      To test the results, issue: <command>make check</command>. One test,
-      test/tcwiki, is known to fail due to a coding error.
+      To test the results, issue: <command>make check</command>.
 @z
 
 @x

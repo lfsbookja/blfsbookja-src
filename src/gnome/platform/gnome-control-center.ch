@@ -83,10 +83,12 @@
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="grilo"/>,
+      <xref linkend="gsound"/>,
       <xref linkend="libgtop"/>,
       <xref linkend="libpwquality"/>,
-      <xref linkend="mitkrb"/>, and
-      <xref linkend="shared-mime-info"/>
+      <xref linkend="mitkrb"/>,
+      <xref linkend="shared-mime-info"/>, and
+      <xref linkend="udisks2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -97,10 +99,12 @@
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="grilo"/>,
+      <xref linkend="gsound"/>,
       <xref linkend="libgtop"/>,
       <xref linkend="libpwquality"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="shared-mime-info"/>
+      <xref linkend="shared-mime-info"/>,
+      <xref linkend="udisks2"/>
     </para>
 @z
 
@@ -132,17 +136,15 @@
     <bridgehead renderas="sect4">Optional Runtime Dependencies</bridgehead>
     <para role="optional">
       <xref role="runtime" linkend="cups-pk-helper"/> (Printers panel),
-      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel),
-      <xref role="runtime" linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel), and
-      <xref role="runtime" linkend="vino"/> (Screen Sharing in Sharing panel)
+      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel), and
+      <xref role="runtime" linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel)
     </para>
 @y
     <bridgehead renderas="sect4">Optional Runtime Dependencies</bridgehead>
     <para role="optional">
       <xref role="runtime" linkend="cups-pk-helper"/> (Printers panel),
-      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel),
-      <xref role="runtime" linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel), and
-      <xref role="runtime" linkend="vino"/> (Screen Sharing in Sharing panel)
+      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel), and
+      <xref role="runtime" linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel)
     </para>
 @z
 
@@ -176,9 +178,12 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>.
+      To test the results, issue: <command>ninja test</command>. Note that
+      you must have <application>python-dbusmock</application> module 
+      installed in order for the tests to complete successfully. 
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      なおテストを成功させるためには <application>python-dbusmock</application> モジュールをインストールしておくことが必要です。
 @z
 
 @x

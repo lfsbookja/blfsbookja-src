@@ -13,7 +13,6 @@ CHANGE_FILES = \
 	devices.ch       \
 	firmware.ch      \
 	logon.ch         \
-	lsb-release.ch   \
 	profile.ch       \
 	random.ch        \
 	skel.ch          \

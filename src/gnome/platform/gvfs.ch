@@ -81,6 +81,7 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
+      <xref linkend="libusb"/>,
       <xref linkend="libsecret"/> and
       <xref linkend="libsoup"/>
     </para>
@@ -89,6 +90,7 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
+      <xref linkend="libusb"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>
     </para>
@@ -96,96 +98,38 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended" revision="sysv">
-      <xref linkend="gcr"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="libcdio"/>,
-      <xref linkend="libgudev"/> and
-      <xref linkend="udisks2"/>
-    </para>
-    <para role="recommended" revision="systemd">
+    <para role="recommended">
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libcdio"/>,
       <xref linkend="libgdata"/>,
       <xref linkend="libgudev"/>,
-      <xref linkend="systemd"/>, and
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
+      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase> and
       <xref linkend="udisks2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended" revision="sysv">
-      <xref linkend="gcr"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="libcdio"/>,
-      <xref linkend="libgudev"/>,
-      <xref linkend="udisks2"/>
-    </para>
-    <para role="recommended" revision="systemd">
+    <para role="recommended">
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libcdio"/>,
       <xref linkend="libgdata"/>,
       <xref linkend="libgudev"/>,
-      <xref linkend="systemd"/>,
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
+      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>,
       <xref linkend="udisks2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional" revision="sysv">
+    <para role="optional">
       <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
-      <xref linkend="fuse2"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="openssh"/>,
-      <xref linkend="samba"/>,
-      <ulink url="&gnome-download-http;/gnome-online-accounts">GNOME Online Accounts</ulink>,
-      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
-      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, 
-      <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>, and
-      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>,
-    </para>
-@y
-    <para role="optional" revision="sysv">
-      <xref linkend="apache"/>,
-      <xref linkend="avahi"/>,
-      <xref linkend="bluez"/>,
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="fuse2"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="openssh"/>,
-      <xref linkend="samba"/>,
-      <ulink url="&gnome-download-http;/gnome-online-accounts">GNOME Online Accounts</ulink>,
-      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
-      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://sourceforge.net/projects/libmtp/">libmtp</ulink>, 
-      <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>,
-      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>,
-    </para>
-@z
-
-@x
-    <para role="optional" revision="systemd">
-      <xref linkend="apache"/>,
-      <xref linkend="avahi"/>,
-      <xref linkend="bluez"/>,
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="fuse2"/>,
+      <xref linkend="fuse3"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
@@ -202,12 +146,13 @@
       <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
     </para>
 @y
-    <para role="optional" revision="systemd">
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
       <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
       <xref linkend="dbus-glib"/>,
-      <xref linkend="fuse2"/>,
+      <xref linkend="fuse3"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
@@ -222,18 +167,6 @@
       <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>,
       <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>,
       <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional (Runtime)</bridgehead>
-    <para role="optional">
-      <xref role="runtime" linkend="obex-data-server"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional; (実行時)</bridgehead>
-    <para role="optional">
-      <xref role="runtime" linkend="obex-data-server"/>
     </para>
 @z
 
@@ -257,9 +190,9 @@
 @z
 
 @x
-      This package does not come with at test suite.
+      This package does not come with a test suite.
 @y
-      This package does not come with at test suite.
+      &notTestSuite;
 @z
 
 @x
@@ -326,12 +259,10 @@
 
 @x
         <seg>
-<!--          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mime,
-          gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
-          gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
-          gvfs-set-attribute, gvfs-trash, and gvfs-tree -->
-          <!-- None are installed in 1.36.2. It's slightly concerning but
-               maybe the functionality is elsewhere now. -->
+<!--      All of the applications that were previously installed were
+          removed in 1.37.2. There are 20+ library executables, but they
+          won't get documented here.
+          Proceeding with removing the obsolete command explanations. -->
           None
         </seg>
         <seg>
@@ -345,13 +276,11 @@
         </seg>
 @y
         <seg>
-<!--          gvfs-cat, gvfs-copy, gvfs-info, gvfs-less, gvfs-ls, gvfs-mime,
-          gvfs-mkdir, gvfs-monitor-dir, gvfs-monitor-file, gvfs-mount,
-          gvfs-move, gvfs-open, gvfs-rename, gvfs-rm, gvfs-save,
-          gvfs-set-attribute, gvfs-trash, and gvfs-tree -->
-          <!-- None are installed in 1.36.2. It's slightly concerning but
-               maybe the functionality is elsewhere now. -->
-          &None;
+<!--      All of the applications that were previously installed were
+          removed in 1.37.2. There are 20+ library executables, but they
+          won't get documented here.
+          Proceeding with removing the obsolete command explanations. -->
+          None
         </seg>
         <seg>
           libgvfscommon.so,
@@ -368,121 +297,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x gvfs-cat
-            concatenates the given files and prints them
-            to the standard output.
-@y
-            指定された複数ファイルを連結し、標準出力へ出力します。
-@z
-
-@x gvfs-copy
-            copies a file from one URI location to another.
-@y
-            １つの URI 位置から１つのファイルを他へコピーします。
-@z
-
-@x gvfs-info
-            shows information about the given locations.
-@y
-            指定された位置 (locations) についての情報を出力します。
-@z
-
-@x gvfs-less
-            executes <command>less</command> using the VFS as the
-            input preprocesor, so less can access any resource accessible
-            by any of the <application>Gvfs</application> backends.
-@y
-            executes <command>less</command> using the VFS as the
-            input preprocesor, so less can access any resource accessible
-            by any of the <application>Gvfs</application> backends.
-@z
-
-@x gvfs-ls
-            lists information about the given locations.
-@y
-           指定された位置 (locations) についての情報を一覧出力します。
-@z
-
-@x gvfs-mkdir
-            creates a directory specified by an URI.
-@y
-            URI により指定されたディレクトリを生成します。
-@z
-
-@x gvfs-monitor-dir
-            prints information about file creation, deletion, file content and
-            attribute changes and mount and unmount operations inside the
-            specified directories.
-@y
-            prints information about file creation, deletion, file content and
-            attribute changes and mount and unmount operations inside the
-            specified directories.
-@z
-
-@x gvfs-monitor-file
-            prints information about creation, deletion, content and attribute
-            changes and mount and unmount operations affecting the monitored files.
-@y
-            prints information about creation, deletion, content and attribute
-            changes and mount and unmount operations affecting the monitored files.
-@z
-
-@x gvfs-mount
-            provides commandline access to various aspects of GIOs mounting
-            functionality.
-@y
-            provides commandline access to various aspects of GIOs mounting
-            functionality.
-@z
-
-@x gvfs-move
-            moves a file from one URI location to another.
-@y
-            １つの URI 位置から１つのファイルを他へ移動します。
-@z
-
-@x gvfs-open
-            opens files with the default application that is registered
-            to handle files of that type.
-@y
-            opens files with the default application that is registered
-            to handle files of that type.
-@z
-
-@x gvfs-rename
-            changes the name of a file or directory.
-@y
-            ファイル名またはディレクトリ名を変更します。
-@z
-
-@x gvfs-rm
-            removes a file.
-@y
-            ファイルを削除します。
-@z
-
-@x gvfs-save
-            reads from the standard input and saves the data to
-            the given location.
-@y
-            reads from the standard input and saves the data to
-            the given location.
-@z
-
-@x gvfs-trash
-            sends files or directories to the "Trashcan".
-@y
-            ファイルまたはディレクトリを "ごみ箱" に移動します。
-@z
-
-@x gvfs-tree
-            lists the contents of the given directories recursively,
-            in a tree-like format.
-@y
-            lists the contents of the given directories recursively,
-            in a tree-like format.
 @z
 
 @x libgvfscommon.so

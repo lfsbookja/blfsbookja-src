@@ -75,6 +75,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="gtkmm2"/>,
       <xref linkend="libao"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="libmad"/>, and
@@ -83,9 +84,10 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="gtkmm2"/>,
       <xref linkend="libao"/>,
       <xref linkend="libvorbis"/>,
-      <xref linkend="libmad"/>,
+      <xref linkend="libmad"/>, and
       <xref linkend="lame"/> (<command>toc2mp3</command> のビルドに必要)
     </para>
 @z

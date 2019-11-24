@@ -81,13 +81,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="libgcrypt"/> and
       <xref linkend="polkit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="libgcrypt"/>,
       <xref linkend="polkit"/>
     </para>
 @z
@@ -96,25 +96,31 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/> and
-      <xref linkend="systemd"/>
+      <phrase revision="sysv"><xref linkend="elogind"/></phrase>
+      <phrase revision="systemd"><xref linkend="systemd"/></phrase>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="systemd"/>
+      <phrase revision="sysv"><xref linkend="elogind"/></phrase>
+      <phrase revision="systemd"><xref linkend="systemd"/></phrase>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gtk-doc"/> and
       <xref linkend="xmlto"/>
+      <!-- I did not have gtk-doc installed this time, and it worked fine. -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gtk-doc"/>,
       <xref linkend="xmlto"/>
+      <!-- I did not have gtk-doc installed this time, and it worked fine. -->
     </para>
 @z
 
@@ -156,11 +162,11 @@
 @z
 
 @x
-      <parameter>--enable-admin-group=adm</parameter>: This switch sets
+      <parameter>-Dadmin_group=adm</parameter>: This switch sets
       the group for administrator accounts.
 @y
-      <parameter>--enable-admin-group=adm</parameter>:
-      このスイッチは管理者権限に対するグループを設定します。
+      <parameter>-Dadmin_group=adm</parameter>:
+      このスイッチは管理者権限アカウントに対してグループを設定します。
 @z
 
 @x
@@ -170,20 +176,36 @@
 @z
 
 @x
-      <title>Systemd Units</title>
+      To allow users in the adm group to be listed as Administrators,
+      execute the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @y
-      <title>&SystemdUnit;</title>
+      To allow users in the adm group to be listed as Administrators,
+      execute the following commands as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Units</phrase></title>
+@y
+      <title><phrase revision="sysv">&BootScript;</phrase>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x
         To start the <command>accounts-daemon</command> daemon at boot,
-        enable the previously installed systemd unit by
-        running the following command as the
+        install the
+        <filename>/etc/rc.d/init.d/accounts-daemon</filename> init script from
+        the <xref linkend="bootscripts"/> package
+        by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
         To start the <command>accounts-daemon</command> daemon at boot,
-        enable the previously installed systemd unit by
-        running the following command as the
+        install the
+        <filename>/etc/rc.d/init.d/accounts-daemon</filename> init script from
+        the <xref linkend="bootscripts"/> package
+        by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @z
 

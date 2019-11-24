@@ -144,7 +144,7 @@
           nl-pktloc-lookup,
           nl-qdisc-add,
           nl-qdisc-delete,
-          nl-qdisc-list, and 32 other helper programs with nl- and nf- prefixes
+          nl-qdisc-list, and 48 other helper programs with nl- and nf- prefixes
         </seg>
         <seg>
           libnl-3.so,
@@ -177,7 +177,7 @@
           nl-pktloc-lookup,
           nl-qdisc-add,
           nl-qdisc-delete,
-          nl-qdisc-list, and 32 other helper programs with nl- and nf- prefixes
+          nl-qdisc-list, and 48 other helper programs with nl- and nf- prefixes
         </seg>
         <seg>
           libnl-3.so,
@@ -186,13 +186,13 @@
           libnl-idiag-3.so,
           libnl-nf-3.so,
           libnl-route-3.so,
-          libnl-xfrm-3.so, and
+          libnl-xfrm-3.so,
           cli modules under /usr/lib/libnl/cli tree
         </seg>
         <seg>
           /etc/libnl,
           /usr/include/libnl3,
-          /usr/lib/libnl, and
+          /usr/lib/libnl,
           /usr/share/doc/libnl-&libnl-version;
         </seg>
 @z

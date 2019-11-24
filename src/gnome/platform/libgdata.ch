@@ -83,6 +83,7 @@
     <para role="required">
       <xref linkend="liboauth"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="uhttpmock"/>, and
@@ -93,6 +94,7 @@
     <para role="required">
       <xref linkend="liboauth"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="uhttpmock"/>,
@@ -104,8 +106,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gcr"/>,
-      <xref linkend="git"/>,
-      <xref linkend="gnome-online-accounts"/>, and
+      <xref linkend="git"/>, and
       <xref linkend="gobject-introspection"/>
     </para>
 @y
@@ -113,7 +114,6 @@
     <para role="recommended">
       <xref linkend="gcr"/>,
       <xref linkend="git"/>,
-      <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gobject-introspection"/>
     </para>
 @z
@@ -150,10 +150,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Note that
+      To test the results, issue: <command>ninja test</command>. Note that
       the tests need network access.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       テストの際にはネットワークアクセスが必要です。
 @z
 
@@ -193,8 +193,10 @@
           libgdata.so
         </seg>
         <seg>
-          /usr/include/libgdata and
-          /usr/share/gtk-doc/html/gdata
+          /usr/include/libgdata,
+          /usr/libexec/installed-tests/libgdata,
+          /usr/share/gtk-doc/html/gdata, and
+          /usr/share/installed-tests/libgdata
         </seg>
 @y
         <seg>
@@ -205,7 +207,9 @@
         </seg>
         <seg>
           /usr/include/libgdata,
-          /usr/share/gtk-doc/html/gdata
+          /usr/libexec/installed-tests/libgdata,
+          /usr/share/gtk-doc/html/gdata,
+          /usr/share/installed-tests/libgdata
         </seg>
 @z
 

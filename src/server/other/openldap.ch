@@ -440,13 +440,13 @@
 @z
 
 @x
-          You'll need to modify the
+          You'll need to modify
           <phrase revision="sysv"><filename>/etc/sysconfig/slapd</filename></phrase>
           <phrase revision="systemd"><filename>/etc/default/slapd</filename></phrase>
           to include the parameters needed for your specific configuration. See
           the <command>slapd</command> man page for parameter information.
 @y
-          You'll need to modify the
+          You'll need to modify
           <phrase revision="sysv"><filename>/etc/sysconfig/slapd</filename></phrase>
           <phrase revision="systemd"><filename>/etc/default/slapd</filename></phrase>
           to include the parameters needed for your specific configuration. See

@@ -148,14 +148,13 @@
 @z
 
 @x
-      <parameter>--disable-migration</parameter>: This switch disables
-      building the <application>GNOME Terminal</application>
-      <application>GConf</application> migration tool which is
-      not necessary for BLFS.
+      <parameter>--without-nautilus-extension</parameter>: This switch disables
+      the a dependency on the <application>nautilus</application> file
+      manager.
 @y
-      <parameter>--disable-migration</parameter>:
-      本スイッチは <application>GNOME Terminal</application> の <application>GConf</application> 互換ツールをビルドしないことを指示します。
-      これは BLFS においては不要なものです。
+      <parameter>--without-nautilus-extension</parameter>: This switch disables
+      the a dependency on the <application>nautilus</application> file
+      manager.
 @z
 
 @x

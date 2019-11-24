@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "February 26th, &year;">
+<!ENTITY releasedate  "November 21st, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20190227">
+<!ENTITY jversion     "20191121">
 <!ENTITY jratio       "55.9? &percnt;">
 @z
 
@@ -101,13 +101,13 @@
 @z
 
 @x
-<!ENTITY lfs83_checked        "<para>This package is known to build and work
-                              properly using an LFS-8.3 platform.</para>">
-<!ENTITY lfs83_built          "<para>This package is known to build using an LFS
-                              8.3 platform but has not been tested.</para>">
+<!ENTITY lfs90_checked        "<para>This package is known to build and work
+                              properly using an LFS-9.0 platform.</para>">
+<!ENTITY lfs90_built          "<para>This package is known to build using an LFS
+                              9.0 platform but has not been tested.</para>">
 @y
-<!ENTITY lfs83_checked        "<para>本パッケージは LFS-8.3 において正しくビルドでき動作することが確認されています。</para>">
-<!ENTITY lfs83_built          "<para>本パッケージは LFS-8.3 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+<!ENTITY lfs90_checked        "<para>本パッケージは LFS-9.0 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs90_built          "<para>本パッケージは LFS-9.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 %@x

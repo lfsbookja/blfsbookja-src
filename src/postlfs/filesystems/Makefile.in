@@ -238,7 +238,6 @@ CHANGE_FILES = \
 	dosfstools.ch    \
 	ext3.ch          \
 	filesystems.ch   \
-	fuse2.ch         \
 	fuse3.ch         \
 	gptfdisk.ch      \
 	initramfs.ch     \

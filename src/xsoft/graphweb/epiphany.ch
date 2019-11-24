@@ -79,27 +79,21 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-<!-- zeroconf support has been removed: see NEWS file
-      <xref linkend="avahi"/>,-->
       <xref linkend="gcr"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="json-glib"/>,
-      <xref linkend="libnotify"/>,
-      <xref linkend="libwnck"/>, and
+      <xref linkend="libnotify"/>, and
       <xref linkend="webkitgtk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-<!-- zeroconf support has been removed: see NEWS file
-      <xref linkend="avahi"/>,-->
       <xref linkend="gcr"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="libnotify"/>,
-      <xref linkend="libwnck"/>,
       <xref linkend="webkitgtk"/>
     </para>
 @z
@@ -107,26 +101,24 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="nss"/>
+      <xref linkend="libdazzle"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="nss"/>
+      <xref linkend="libdazzle"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="lsb-release"/> and
-      <ulink url="https://github.com/GNOME/libhttpseverywhere">libhttpseverywhere</ulink>
+      <ulink url="&appstream-glib-url;">Appstream-Glib</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="lsb-release"/>,
-      <ulink url="https://github.com/GNOME/libhttpseverywhere">libhttpseverywhere</ulink>
+      <ulink url="&appstream-glib-url;">Appstream-Glib</ulink>
     </para>
 @z
 

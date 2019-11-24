@@ -6,7 +6,7 @@
 ## $Date:: 2013-04-19 09:45:44 +0900#$
 ##
 SUBDIRS = ctie src
-EXTRA_DIST = version.ac
+EXTRA_DIST = version.ac bin/buildch.perl
 
 jchangelog:
 	@$(MAKE) -C src jchangelog

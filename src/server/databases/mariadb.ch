@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY mariadb-time          "12 SBU (with parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY mariadb-time          "10 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @y
-  <!ENTITY mariadb-time          "12 SBU (with parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY mariadb-time          "10 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @z
 
 @x
@@ -120,6 +120,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="boost"/>,
+      <xref linkend="libaio"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
@@ -130,7 +131,6 @@
       <ulink url="http://groonga.org/">Groonga</ulink>,
       <ulink url="http://www.phontron.com/kytea/">KyTea</ulink>,
       <ulink url="http://sourceforge.net/projects/judy/">Judy</ulink>,
-      <ulink url="http://packages.debian.org/source/sid/libaio">libaio</ulink>,
       <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>,
       <ulink url="http://taku910.github.io/mecab">MeCab</ulink>,
       <ulink url="http://msgpack.org/">MessagePack</ulink>,
@@ -143,6 +143,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="boost"/>,
+      <xref linkend="libaio"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
@@ -153,7 +154,6 @@
       <ulink url="http://groonga.org/">Groonga</ulink>,
       <ulink url="http://www.phontron.com/kytea/">KyTea</ulink>,
       <ulink url="http://sourceforge.net/projects/judy/">Judy</ulink>,
-      <ulink url="http://packages.debian.org/source/sid/libaio">libaio</ulink>,
       <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>,
       <ulink url="http://taku910.github.io/mecab">MeCab</ulink>,
       <ulink url="http://msgpack.org/">MessagePack</ulink>,

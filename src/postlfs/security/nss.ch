@@ -142,9 +142,15 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      The testsuite is designed for testing changes to nss or nspr and is
+      not particularly useful for checking a released version (e.g. it needs
+      to be run on a non-optimized build with both nss and nspr directories
+      existing alongside each other). For further details, see the User Notes.
 @y
-      &notTestSuite;
+      The testsuite is designed for testing changes to nss or nspr and is
+      not particularly useful for checking a released version (e.g. it needs
+      to be run on a non-optimized build with both nss and nspr directories
+      existing alongside each other). For further details, see the User Notes.
 @z
 
 @x
@@ -222,9 +228,10 @@
           certutil, nss-config, and pk12util
         </seg>
         <seg>
-          libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, libnss3.so,
-          libnssckbi.so, libnssdbm3.so, libnsssysinit.so,
-          libnssutil3.so, libsmime3.so, libsoftokn3.so, and libssl3.so
+          libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, 
+          libgtestutil.so, libnss3.so, libnssckbi.so, libnssdbm3.so, 
+          libnsssysinit.so, libnssutil3.so, libsmime3.so, libsoftokn3.so, 
+          and libssl3.so
         </seg>
         <seg>
           /usr/include/nss
@@ -234,9 +241,10 @@
           certutil, nss-config, pk12util
         </seg>
         <seg>
-          libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, libnss3.so,
-          libnssckbi.so, libnssdbm3.so, libnsssysinit.so,
-          libnssutil3.so, libsmime3.so, libsoftokn3.so, libssl3.so
+          libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, 
+          libgtestutil.so, libnss3.so, libnssckbi.so, libnssdbm3.so, 
+          libnsssysinit.so, libnssutil3.so, libsmime3.so, libsoftokn3.so, 
+          libssl3.so
         </seg>
         <seg>
           /usr/include/nss

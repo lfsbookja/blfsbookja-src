@@ -14,10 +14,15 @@ CHANGE_FILES = \
 	gnome-old-sysconfdir.ch     \
 	gnome-old-prefix.ch         \
 	gsettings-destdir.ch        \
+	gst10-objc-error.ch         \
+	gst10-plugins.ch            \
 	gtk-doc-rebuild.ch          \
 	gtk-doc-rebuild-problem.ch  \
 	gtk-update-icon-cache.ch    \
 	lib-config.ch               \
+	perl-build-install.ch       \
+	perl-standard-install.ch    \
+	perl-unsafe-install.ch      \
 	scrollkeeper-dir.ch         \
 	static-libraries.ch         \
 	texrecommendlibs.ch         \
@@ -50,3 +55,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

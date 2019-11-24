@@ -85,9 +85,9 @@
       <xref linkend="cairo"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="glu"/>,
-      <xref linkend="mesa"/>,<phrase revision="sysv"> and</phrase>
-      <xref linkend="pango"/><phrase revision="systemd">, and 
-      <xref linkend="wayland"/></phrase>
+      <xref linkend="mesa"/>,
+      <xref linkend="pango"/>, and 
+      <xref linkend="wayland"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -95,9 +95,9 @@
       <xref linkend="cairo"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="glu"/>,
-      <xref linkend="mesa"/>,<phrase revision="sysv"> </phrase>
-      <xref linkend="pango"/><phrase revision="systemd">, 
-      <xref linkend="wayland"/></phrase>
+      <xref linkend="mesa"/>,
+      <xref linkend="pango"/>,
+      <xref linkend="wayland"/>
     </para>
 @z
 
@@ -118,18 +118,16 @@
     <para role="optional">
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="sdl"/>,<phrase revision="systemd"> and</phrase>
-      <xref linkend="sdl2"/><phrase revision="sysv">, and
-      <xref linkend="wayland"/></phrase>
+      <xref linkend="sdl"/>, and
+      <xref linkend="sdl2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="sdl"/>,<phrase revision="systemd"> </phrase>
-      <xref linkend="sdl2"/><phrase revision="sysv">,
-      <xref linkend="wayland"/></phrase>
+      <xref linkend="sdl"/>, and
+      <xref linkend="sdl2"/>
     </para>
 @z
 
@@ -155,11 +153,13 @@
 @x
       To test the results, issue: <command>make check</command>. The
       tests should be run from an X terminal on the hardware accelerated
-      Xorg Server.
+      Xorg Server. A few tests will use all CPUs in parallel, regardless of
+      parallellism settings.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       The tests should be run from an X terminal on the hardware accelerated
-      Xorg Server.
+      Xorg Server. A few tests will use all CPUs in parallel, regardless of
+      parallellism settings.
 @z
 
 @x

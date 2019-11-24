@@ -87,14 +87,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="python2"/> 
+    <bridgehead renderas="sect4">Required (Run time)</bridgehead>
+    <para role="required">
+      <xref role="runtime" linkend="python2"/> 
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="python2"/> 
+    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
+    <para role="required">
+      <xref role="runtime" linkend="python2"/> 
     </para>
 @z
 

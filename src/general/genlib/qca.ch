@@ -120,10 +120,14 @@
 @z
 
 @x
-    <para>To test the results, issue <command>make test</command>.</para>
+    <para>To test the results, issue <command>make test</command>. One test
+    using <xref linkend="gnupg2"/> fails without a correct passphrase.  The
+    required passphrase does not seem to be published.</para>
 @y
     <para>
     ビルド結果をテストする場合は <command>make test</command> を実行します。
+    <xref linkend="gnupg2"/> を利用するテスト 1 つが、適正なパスフレーズが得られないため失敗します。
+    ここに必要となるパスフレーズは公開されていないようです。
     </para>
 @z
 
@@ -175,7 +179,16 @@
 
 @x
         <seg>mozcerts-qt5 and qcatool-qt5</seg>
-        <seg>libqca-qt5.so</seg>
+        <seg>
+          libqca-qt5.so,
+          libqca-cyrus-sasl.so,
+          libqca-gcrypt.so,
+          libqca-gnupg.so,
+          libqca-logger.so,
+          libqca-nss.so,
+          libqca-ossl.so, and
+          libqca-softstore.so
+        </seg>
         <seg>
           &qt5-dir;/include/Qca-qt5,
           &qt5-dir;/lib/cmake/Qca-qt5, and
@@ -183,7 +196,16 @@
         </seg>
 @y
         <seg>mozcerts-qt5, qcatool-qt5</seg>
-        <seg>libqca-qt5.so</seg>
+        <seg>
+          libqca-qt5.so,
+          libqca-cyrus-sasl.so,
+          libqca-gcrypt.so,
+          libqca-gnupg.so,
+          libqca-logger.so,
+          libqca-nss.so,
+          libqca-ossl.so,
+          libqca-softstore.so
+        </seg>
         <seg>
           &qt5-dir;/include/Qca-qt5,
           &qt5-dir;/lib/cmake/Qca-qt5,

@@ -147,9 +147,12 @@
     BLFS applications (if the recommended and optional applications are present
     on the system). Any local certificates stored in
     <filename>/etc/ssl/local</filename> will be imported to both the trust
-    anchors and the generated certificate stores (overriding Mozilla's trust).
-    Certificates in this directory should be stored as PEM encoded
-    <application>OpenSSL</application> trusted certificates.</para>
+    anchors and the generated certificate stores (overriding Mozilla's
+    trust). Additionally, any modified trust values will be copied from the
+    trust anchors to <filename>/etc/ssl/local</filename> prior to any updates,
+    preserving custom trust values that differ from Mozilla when using the
+    <command>trust</command> utility from <application>p11-kit</application>
+    to operate on the trust store.</para>
 @y
     <para>The <application>make-ca</application> script will download and
     process the certificates included in the <filename>certdata.txt</filename>
@@ -158,59 +161,12 @@
     BLFS applications (if the recommended and optional applications are present
     on the system). Any local certificates stored in
     <filename>/etc/ssl/local</filename> will be imported to both the trust
-    anchors and the generated certificate stores (overriding Mozilla's trust).
-    Certificates in this directory should be stored as PEM encoded
-    <application>OpenSSL</application> trusted certificates.</para>
-@z
-
-@x
-    <para>To create an <application>OpenSSL</application> trusted certificate
-    from a regular PEM encoded file, you need to add trust arguments to the
-    <command>openssl</command> command, and create a new certificate. There are
-    three trust types that are recognized by the
-    <application>make-ca</application> script, SSL/TLS, S/Mime, and code
-    signing. For example, using the
-    <ulink url="http://www.cacert.org/">CAcert</ulink> roots, if you want to
-    trust both for all three roles, the following commands will create
-    appropriate OpenSSL trusted certificates (run as the <systemitem
-    class="username">root</systemitem> user):</para>
-@y
-    <para>To create an <application>OpenSSL</application> trusted certificate
-    from a regular PEM encoded file, you need to add trust arguments to the
-    <command>openssl</command> command, and create a new certificate. There are
-    three trust types that are recognized by the
-    <application>make-ca</application> script, SSL/TLS, S/Mime, and code
-    signing. For example, using the
-    <ulink url="http://www.cacert.org/">CAcert</ulink> roots, if you want to
-    trust both for all three roles, the following commands will create
-    appropriate OpenSSL trusted certificates (run as the <systemitem
-    class="username">root</systemitem> user):</para>
-@z
-
-@x
-    <para>If one of the three trust arguments is omitted, the certificate is
-    neither trusted, nor rejected for that role. Clients that use
-    <application>OpenSSL</application> or <application>NSS</application>
-    encountering this certificate will present a warning to the user. Clients
-    using <application>GnuTLS</application> without
-    <application>p11-kit</application> support are not aware of trusted
-    certificates. To include this CA into the ca-bundle.crt (used for
-    <application>GnuTLS</application>), it must have <envar>serverAuth</envar>
-    trust. Additionally, to explicitly disallow a certificate for a particular
-    use, replace the <parameter>-addtrust</parameter> flag with the
-    <parameter>-addreject</parameter> flag.</para> 
-@y
-    <para>If one of the three trust arguments is omitted, the certificate is
-    neither trusted, nor rejected for that role. Clients that use
-    <application>OpenSSL</application> or <application>NSS</application>
-    encountering this certificate will present a warning to the user. Clients
-    using <application>GnuTLS</application> without
-    <application>p11-kit</application> support are not aware of trusted
-    certificates. To include this CA into the ca-bundle.crt (used for
-    <application>GnuTLS</application>), it must have <envar>serverAuth</envar>
-    trust. Additionally, to explicitly disallow a certificate for a particular
-    use, replace the <parameter>-addtrust</parameter> flag with the
-    <parameter>-addreject</parameter> flag.</para> 
+    anchors and the generated certificate stores (overriding Mozilla's
+    trust). Additionally, any modified trust values will be copied from the
+    trust anchors to <filename>/etc/ssl/local</filename> prior to any updates,
+    preserving custom trust values that differ from Mozilla when using the
+    <command>trust</command> utility from <application>p11-kit</application>
+    to operate on the trust store.</para>
 @z
 
 @x
@@ -248,16 +204,30 @@
 @z
 
 @x
-    <para>You should periodically update the store with the above command
+    <para>You should periodically update the store with the above command,
     either manually, or via a <phrase revision="sysv">cron job.</phrase>
     <phrase revision="systemd">systemd timer. A timer is installed at
-    <filename>/etc/systemd/system/update-pki.timer</filename> that, if enabled,
-    will check for updates weekly.</phrase></para>
+    <filename>/usr/lib/systemd/system/update-pki.timer</filename> that, if
+    enabled, will check for updates weekly. </phrase><phrase revision="sysv">If
+    you've installed <xref linkend="fcron"/> and completed the section on
+    periodic jobs, execute</phrase><phrase revision="systemd">Execute</phrase>
+    the following commands, as the
+    <systemitem class="username">root</systemitem> user, to
+    <phrase revision="sysv">create a weekly cron job:</phrase>
+    <phrase revision="systemd">enable the systemd timer:</phrase>
+    </para>
 @y
-    <para>You should periodically update the store with the above command
+    <para>You should periodically update the store with the above command,
     either manually, or via a <phrase revision="sysv">cron job.</phrase>
     <phrase revision="systemd">systemd timer. A timer is installed at
-    <filename>/etc/systemd/system/update-pki.timer</filename> that, if enabled,
-    will check for updates weekly.</phrase></para>
+    <filename>/usr/lib/systemd/system/update-pki.timer</filename> that, if
+    enabled, will check for updates weekly. </phrase><phrase revision="sysv">If
+    you've installed <xref linkend="fcron"/> and completed the section on
+    periodic jobs, execute</phrase><phrase revision="systemd">Execute</phrase>
+    the following commands, as the
+    <systemitem class="username">root</systemitem> user, to
+    <phrase revision="sysv">create a weekly cron job:</phrase>
+    <phrase revision="systemd">enable the systemd timer:</phrase>
+    </para>
 @z
 

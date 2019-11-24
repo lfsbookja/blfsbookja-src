@@ -22,9 +22,9 @@
 @x
         <application>D-Bus Python</application> provides
         <application>Python</application> bindings to the
-        <application>D-Bus</application>.
+        <application>D-Bus</application> API interface.
 @y
-        <application>D-Bus Python</application> は <application>D-Bus</application> に対する <application>Python</application> バインディングを提供します。
+        <application>D-Bus Python</application> は <application>D-Bus</application> API インターフェースに対する <application>Python</application> バインディングを提供します。
 @z
 
 @x
@@ -92,16 +92,16 @@
 @x
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
-        <xref linkend="python2"/> and
-        <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink> 
-           (required for tests)
+        <xref linkend="pygobject3"/> and
+        <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+        (required for some tests)
       </para>
 @y
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
-        <xref linkend="python2"/> and
-        <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink> 
-           (required for tests)
+        <xref linkend="pygobject3"/> and
+        <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+        (required for some tests)
       </para>
 @z
 
@@ -110,14 +110,16 @@
        Optional (Required to build the API and HTML Documentation)</bridgehead>
       <para role="optional">
         <xref linkend="docutils"/> and
-        <ulink url="http://sphinxsearch.com/downloads/">Sphinx</ulink> 
+        <ulink url="http://www.sphinx-doc.org/en/master/">Sphinx</ulink> with
+        <ulink url="https://github.com/rtfd/sphinx_rtd_theme">sphinx_rtd_theme</ulink>
       </para>
 @y
       <bridgehead renderas="sect5">
        Optional (Required to build the API and HTML Documentation)</bridgehead>
       <para role="optional">
         <xref linkend="docutils"/> and
-        <ulink url="http://sphinxsearch.com/downloads/">Sphinx</ulink> 
+        <ulink url="http://www.sphinx-doc.org/en/master/">Sphinx</ulink> with
+        <ulink url="https://github.com/rtfd/sphinx_rtd_theme">sphinx_rtd_theme</ulink>
       </para>
 @z
 

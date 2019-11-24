@@ -83,6 +83,7 @@
       <xref linkend="exempi"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="libjpeg"/>,
       <xref linkend="libpeas"/>, and
       <xref linkend="shared-mime-info"/>
     </para>
@@ -93,6 +94,7 @@
       <xref linkend="exempi"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="libjpeg"/>,
       <xref linkend="libpeas"/>,
       <xref linkend="shared-mime-info"/>
     </para>

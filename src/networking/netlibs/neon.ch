@@ -75,28 +75,15 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="openssl"/> or
-      <xref linkend="gnutls"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="openssl"/> または
-      <xref linkend="gnutls"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gnutls"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>, and
-      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
-      <!-- Note - this URL is broken as of 08-16-2018 -->
+      <ulink url="https://web.archive.org/web/20180310225603/http://www.manyfish.co.uk:80/pakchois/">pakchois</ulink>
+      <!-- Note - this URL is broken as of 08-16-2018
+      01-01-2019 - still broken.  -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -104,9 +91,10 @@
       <xref linkend="gnutls"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
-      <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>,
-      <ulink url="http://www.manyfish.co.uk/pakchois/">pakchois</ulink>
-      <!-- Note - this URL is broken as of 08-16-2018 -->
+      <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>, and
+      <ulink url="https://web.archive.org/web/20180310225603/http://www.manyfish.co.uk:80/pakchois/">pakchois</ulink>
+      <!-- Note - this URL is broken as of 08-16-2018
+      01-01-2019 - still broken.  -->
     </para>
 @z
 
@@ -157,7 +145,7 @@
       you don't have any of these installed. To force
       <application>GnuTLS</application> usage when both are present,
       simply pass <option>--with-ssl=gnutls</option> and 
-      <option>--with-ca-bundle=/etc/ssl/ca-bundle.crt</option> to the
+      <option>--with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt</option> to the
       <command>configure</command> script.
 @y
       <parameter>--with-ssl</parameter>: This switch enables SSL support
@@ -166,7 +154,7 @@
       you don't have any of these installed. To force
       <application>GnuTLS</application> usage when both are present,
       simply pass <option>--with-ssl=gnutls</option> and 
-      <option>--with-ca-bundle=/etc/ssl/ca-bundle.crt</option> to the
+      <option>--with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt</option> to the
       <command>configure</command> script.
 @z
 

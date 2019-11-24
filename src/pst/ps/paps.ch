@@ -124,22 +124,11 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>src/test_libpaps &gt;
-    test.ps</command>.  View the output file in any available PostScript viewer
-    and visually compare it to
-    <filename>doxygen-doc/html/example-output.png</filename> in the source tree.
-    The results of the output will be more robust with <xref linkend="dejavu-fonts"/>
-    and some of the <xref linkend="Chinese-fonts"/> and <xref
-    linkend="Japanese-fonts"/>.</para>
+    <para>This package does not come with a test suite.</para>
 @y
     <para>
-    ビルド結果をテストする場合は <command>src/test_libpaps &gt; test.ps</command> を実行します。
-    出力された PostScript ファイルを PostScript ビューアーで開きます。
-    そしてソースツリー内にある <filename>doxygen-doc/html/example-output.png</filename> と比較してください。
-    
-    The results of the output will be more robust with <xref linkend="dejavu-fonts"/>
-    and some of the <xref linkend="Chinese-fonts"/> and <xref
-    linkend="Japanese-fonts"/>.</para>
+    &notTestSuite;
+    </para>
 @z
 
 @x
@@ -168,12 +157,12 @@
 
 @x
         <seg>paps</seg>
-        <seg>libpaps.a</seg>
-        <seg>/usr/share/doc/paps-&paps-version;</seg>
+        <seg>None</seg>
+        <seg>None</seg>
 @y
         <seg>paps</seg>
-        <seg>libpaps.a</seg>
-        <seg>/usr/share/doc/paps-&paps-version;</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x

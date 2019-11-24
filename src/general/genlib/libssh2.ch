@@ -77,14 +77,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="openssh"/> (required for the testsuite)
+      <xref linkend="gnupg2"/>,
+      <xref linkend="libgcrypt"/>, and
+      <xref linkend="openssh"/> (all three required for the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gnupg2"/>,
       <xref linkend="libgcrypt"/>,
-      <xref linkend="openssh"/> (テストスイートに必要)
+      <xref linkend="openssh"/> (テストスイートには 3 つすべてが必要)
     </para>
 @z
 

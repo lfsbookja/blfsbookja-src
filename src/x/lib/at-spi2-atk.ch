@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY at-spi2-atk-buildsize     "9.2 MB (with tests)">
-  <!ENTITY at-spi2-atk-time          "0.1 SBU (with tests)">
+  <!ENTITY at-spi2-atk-buildsize     "9.4 MB (with tests)">
+  <!ENTITY at-spi2-atk-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY at-spi2-atk-buildsize     "9.2 MB (テスト込み)">
-  <!ENTITY at-spi2-atk-time          "0.1 SBU (テスト込み)">
+  <!ENTITY at-spi2-atk-buildsize     "9.4 MB (テスト込み)">
+  <!ENTITY at-spi2-atk-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x
@@ -153,7 +153,8 @@
            libatk-bridge-2.0.so and /usr/lib/gtk-2.0/modules/libatk-bridge.so
         </seg>
         <seg>
-          /usr/include/at-spi2-atk
+           /usr/include/at-spi2-atk and
+           /usr/share/gnome-settings-daemon-3.0
         </seg>
 @y
         <seg>
@@ -163,7 +164,8 @@
            libatk-bridge-2.0.so, /usr/lib/gtk-2.0/modules/libatk-bridge.so
         </seg>
         <seg>
-          /usr/include/at-spi2-atk
+           /usr/include/at-spi2-atk,
+           /usr/share/gnome-settings-daemon-3.0
         </seg>
 @z
 

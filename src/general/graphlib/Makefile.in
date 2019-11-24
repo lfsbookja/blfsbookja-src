@@ -241,13 +241,14 @@ CHANGE_FILES = \
 	harfbuzz.ch      \
 	gegl.ch          \
 	giflib.ch        \
+	glm.ch           \
 	graphite2.ch     \
 	graphlib.ch      \
-	ijs.ch           \
 	jasper.ch        \
 	lcms.ch          \
 	lcms2.ch         \
 	libexif.ch       \
+	libgxps.ch       \
 	libjpeg-turbo.ch \
 	libmng.ch        \
 	libmypaint.ch    \
@@ -263,7 +264,9 @@ CHANGE_FILES = \
 	pixman.ch        \
 	potrace.ch       \
 	poppler.ch       \
-	qpdf.ch
+	qpdf.ch          \
+	sassc.ch         \
+	woff2.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)
@@ -462,6 +465,11 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+.PHONY: chbuild
+chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

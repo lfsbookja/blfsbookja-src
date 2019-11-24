@@ -151,26 +151,26 @@
       One of <xref linkend="openjdk"/>,
       <ulink url="http://www.inet.no/dante/">Dante</ulink> or
       <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
-      and <xref linkend="junit"/> (to test the Java bindings)
+      and <ulink url="https://junit.org/junit4/">JUnit 4</ulink>
+      (to test the Java bindings). Note that JUnit is included with
+      <xref linkend="apache-ant"/>.
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;; (Java バインディングビルド時)</bridgehead>
     <para role="optional">
       One of <xref linkend="openjdk"/>,
-      <ulink url="http://www.inet.no/dante/">Dante</ulink> または
+      <ulink url="http://www.inet.no/dante/">Dante</ulink> or
       <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
-      and <xref linkend="junit"/> (Java バインディングのテスト時に必要)
+      and <ulink url="https://junit.org/junit4/">JUnit 4</ulink>
+      (to test the Java bindings). Note that JUnit is included with
+      <xref linkend="apache-ant"/>.
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">
       User Notes: <ulink url="&blfs-wiki;/subversion"/>
-    </para>
 @y
-    <para condition="html" role="usernotes">
       &UserNotes;: <ulink url="&blfs-wiki;/subversion"/>
-    </para>
 @z
 
 @x
@@ -188,9 +188,9 @@
 
 @x
       If you have <xref linkend="doxygen"/> installed and you wish to build the
-      API documentation, issue: <command>doxygen doc/doxygen.conf</command>.
+      API documentation, issue:
 @y
-      <xref linkend="doxygen"/> をインストールしていて、API ドキュメントをインストールする場合は <command>doxygen doc/doxygen.conf</command> を実行します。
+      <xref linkend="doxygen"/> をインストールしていて、API ドキュメントをインストールする場合は以下を実行します。
 @z
 
 @x

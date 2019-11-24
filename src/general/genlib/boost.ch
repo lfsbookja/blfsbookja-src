@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY boost-buildsize     "927 MB (168 MB installed)">
-  <!ENTITY boost-time          "1.7 SBU (Using parallelism=4; add 1.1 SBU for tests)">
+  <!ENTITY boost-buildsize     "943 MB (168 MB installed)">
+  <!ENTITY boost-time          "1.5 SBU (Using parallelism=4; add 1.1 SBU for tests)">
 @y
-  <!ENTITY boost-buildsize     "927 MB (インストールサイズは 168 MB)">
-  <!ENTITY boost-time          "1.7 SBU (parallelism=4; テスト実施時はさらに 1.1 SBU)">
+  <!ENTITY boost-buildsize     "943 MB (インストールサイズは 168 MB)">
+  <!ENTITY boost-time          "1.5 SBU (parallelism=4; テスト実施時はさらに 1.1 SBU)">
 @z
 
 @x
@@ -126,10 +126,14 @@
 @z
 
 @x
-      Install <application>Boost</application> by running the following
-      commands:
+      This package can be built with several jobs running in parallel. In
+      the instructions below, <parameter>&lt;N&gt;</parameter> stands for the
+      number of jobs. Install <application>Boost</application> by running the
+      following commands:
 @y
-      以下のコマンドを実行して <application>Boost</application> をビルドします。
+      本パッケージは、複数ジョブ実行による並行ビルドが可能です。
+      以下の手順において <parameter>&lt;N&gt;</parameter> はそのジョブ数を表わします。
+      <application>Boost</application> を以下のコマンドの実行によりビルドします。
 @z
 
 @x
@@ -137,12 +141,12 @@
       is required.
       Run the tests with: issue <command>pushd tools/build/test; 
       python test_all.py; popd</command>. 
-      All 150 tests should pass.
+      All 152 tests should pass.
 @y
       Boost.Build の縮退テストを実施するには <xref linkend="python2"/> が必要です。
       テストは <command>pushd tools/build/test; 
       python test_all.py; popd</command> を実行します。
-      全テスト 150 個が成功するはずです。
+      全テスト 152 個が成功するはずです。
 @z
 
 @x

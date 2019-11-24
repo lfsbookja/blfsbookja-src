@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY sudo-buildsize     "37 MB (with tests)">
-  <!ENTITY sudo-time          "0.4 SBU (with tests)">
+  <!ENTITY sudo-buildsize     "31 MB (without tests)">
+  <!ENTITY sudo-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY sudo-buildsize     "37 MB (テスト込み)">
-  <!ENTITY sudo-time          "0.4 SBU (テスト込み)">
+  <!ENTITY sudo-buildsize     "31 MB (テストを含まず)">
+  <!ENTITY sudo-time          "0.3 SBU (テスト込み)">
 @z
 
 @x
@@ -249,13 +249,19 @@
 @z
 
 @x
-        One example usage is to allow the system administrator to execute
-        any program without typing a password each time root privileges are
-        needed. This can be configured as:
+        A couple of common configuration chanes are to set the path for the
+        super user and to allow members of the wheel group to execute all
+        commands after providing their own credientials. Use the following
+        commands to create the <filename>/etc/sudoers.d/sudo</filename>
+        configuration file as the
+        <systemitem class="username">root</systemitem> user:
 @y
-        以下はシステム管理者に対する設定の例です。
-        root 権限を必要とする場合であっても、パスワードを入力せずにプログラムを実行できるようにします。
-        以下の設定により実現します。
+        A couple of common configuration chanes are to set the path for the
+        super user and to allow members of the wheel group to execute all
+        commands after providing their own credientials. Use the following
+        commands to create the <filename>/etc/sudoers.d/sudo</filename>
+        configuration file as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -304,7 +310,7 @@
 
 @x
         <seg>
-          sudo, sudoedit (symlink), sudoreplay, and visudo
+          cvtsudoers, sudo, sudoedit (symlink), sudoreplay, and visudo
         </seg>
         <seg>
           group_file.so, libsudo_util.so,
@@ -318,7 +324,7 @@
         </seg>
 @y
         <seg>
-          sudo, sudoedit (シンボリックリンク), sudoreplay, visudo
+          cvtsudoers, sudo, sudoedit (symlink), sudoreplay, visudo
         </seg>
         <seg>
           group_file.so, libsudo_util.so,

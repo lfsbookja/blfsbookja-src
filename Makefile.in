@@ -312,7 +312,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = ctie src
-EXTRA_DIST = version.ac
+EXTRA_DIST = version.ac bin/buildch.perl
 all: all-recursive
 
 .SUFFIXES:

@@ -21,10 +21,9 @@
 
 @x
       <application>JS</application> is Mozilla's JavaScript engine
-      written in C. This package is present for GJS.
+      written in C.
 @y
       <application>JS</application> は C 言語で書かれた Mozilla の JavaScript エンジンです。
-      This package is present for GJS.
 @z
 
 @x
@@ -80,10 +79,9 @@
     <para role="required">
       <xref linkend="autoconf213"/>,
       <xref linkend="icu"/>,
-      <xref linkend="nspr"/>,
       <xref linkend="python2"/>,
-      <xref linkend="xorg7-lib"/>,
-      <xref linkend="yasm"/>, and
+      <xref linkend="which"/>,
+      <!--<xref linkend="yasm"/>,--> and
       <xref linkend="zip"/>
     </para>
 @y
@@ -91,10 +89,9 @@
     <para role="required">
       <xref linkend="autoconf213"/>,
       <xref linkend="icu"/>,
-      <xref linkend="nspr"/>,
       <xref linkend="python2"/>,
-      <xref linkend="xorg7-lib"/>,
-      <xref linkend="yasm"/>,
+      <xref linkend="which"/>,
+      <!--<xref linkend="yasm"/>,-->
       <xref linkend="zip"/>
     </para>
 @z
@@ -182,7 +179,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries)</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -194,10 +191,9 @@
         <seg>
           js60 and js60-config
         </seg>
-        <!-- Yes, the static library is required. -->
         <seg>
-          libmozjs-60.so and libjs_static.ajs <!-- These two may conflict, can't
-          verify without a rebuild unfortunately :-( -->
+          libmozjs-60.so and libjs_static.ajs <!-- The AJS file doesn't
+          conflict with the one from js52 like originally thought -->
         </seg>
         <seg>
           /usr/include/mozjs-60
@@ -206,10 +202,9 @@
         <seg>
           js60, js60-config
         </seg>
-        <!-- Yes, the static library is required. -->
         <seg>
-          libmozjs-60.so, libjs_static.ajs <!-- These two may conflict, can't
-          verify without a rebuild unfortunately :-( -->
+          libmozjs-60.so, libjs_static.ajs <!-- The AJS file doesn't
+          conflict with the one from js52 like originally thought -->
         </seg>
         <seg>
           /usr/include/mozjs-60

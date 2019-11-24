@@ -193,10 +193,10 @@
 
 @x
         <seg>
-          None
+          phononsettings
         </seg>
         <seg>
-          libphonon4qt5.so
+          libphonon4qt5.so and
           libphonon4qt5experimental.so
         </seg>
         <seg>
@@ -206,7 +206,7 @@
         </seg>
 @y
         <seg>
-          &None;
+          phononsettings
         </seg>
         <seg>
           libphonon4qt5.so,

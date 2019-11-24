@@ -248,11 +248,9 @@
 @x
       To test the results, issue: <command>make -k check</command>. An already
       active graphical session with bus address is necessary to run the tests.
-      Some tests fail for unknown reasons.
 @y
       To test the results, issue: <command>make -k check</command>. An already
       active graphical session with bus address is necessary to run the tests.
-      Some tests fail for unknown reasons.
 @z
 
 @x
@@ -286,34 +284,20 @@
 @z
 
 @x
-      <command>sed ... cups-manpages.m4</command>: This sed prevents
-      compression of the man pages by default.
+      <command>sed ... tools/ipptool.c</command>: This sed fixes a bug caused
+      by glibc-2.30 changing the user-space API for sockets.
 @y
-      <command>sed ... cups-manpages.m4</command>: This sed prevents
-      compression of the man pages by default.
+      <command>sed ... tools/ipptool.c</command>: This sed fixes a bug caused
+      by glibc-2.30 changing the user-space API for sockets.
 @z
 
 @x
-      <command>sed ... cups-ssl.m4</command>: Prevent
-      <command>configure</command> script from searching
-      <command>libgcrypt-config</command>, because
-      <application>libgcrypt</application> is not used anywere else in the
-      package.
-@y
-      <command>sed ... cups-ssl.m4</command>: Prevent
-      <command>configure</command> script from searching
-      <command>libgcrypt-config</command>, because
-      <application>libgcrypt</application> is not used anywere else in the
-      package.
-@z
-
-@x
-      <envar>CC=gcc</envar>: This environment variable ensures that gcc is used,
+      <envar>CC=gcc CXX=g++</envar>: This environment variable ensures that gcc is used,
       if clang is installed. Remove it, if you prefer to use clang. Using clang
       almost doubles build time and slightly decreases build disk space.
       Installed disk space is not appreciably modified.
 @y
-      <envar>CC=gcc</envar>: This environment variable ensures that gcc is used,
+      <envar>CC=gcc CXX=g++</envar>: This environment variable ensures that gcc is used,
       if clang is installed. Remove it, if you prefer to use clang. Using clang
       almost doubles build time and slightly decreases build disk space.
       Installed disk space is not appreciably modified.
@@ -425,7 +409,7 @@
         linkend="gs"/> to convert PostScript to raster images and a driver
         (e.g. from <xref linkend="gutenprint"/>) to convert the resulting
         raster images to a form that the printer understands.  <ulink
-        url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
+        url="https://wiki.linuxfoundation.org/openprinting/database/foomatic">Foomatic</ulink>
         drivers use <xref linkend="gs"/> to convert PostScript to a printable
         form directly, but this is considered suboptimal by
         <application>Cups</application> developers.
@@ -435,7 +419,7 @@
         linkend="gs"/> to convert PostScript to raster images and a driver
         (e.g. from <xref linkend="gutenprint"/>) to convert the resulting
         raster images to a form that the printer understands.  <ulink
-        url="http://www.linuxprinting.org/foomatic.html">Foomatic</ulink>
+        url="https://wiki.linuxfoundation.org/openprinting/database/foomatic">Foomatic</ulink>
         drivers use <xref linkend="gs"/> to convert PostScript to a printable
         form directly, but this is considered suboptimal by
         <application>Cups</application> developers.

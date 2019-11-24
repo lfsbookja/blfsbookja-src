@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gpgme-buildsize     "125 MB (with all bindings)">
-  <!ENTITY gpgme-time          "0.5 SBU (with parallelism=4; with all bindings, add 0.5 SBU for tests)">
+  <!ENTITY gpgme-buildsize     "232 MB (with all bindings)">
+  <!ENTITY gpgme-time          "0.7 SBU (with parallelism=4; with all bindings, add 0.5 SBU for tests)">
 @y
-  <!ENTITY gpgme-buildsize     "125 MB （全バインディングビルド時）">
-  <!ENTITY gpgme-time          "0.5 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.5 SBU）">
+  <!ENTITY gpgme-buildsize     "232 MB （全バインディングビルド時）">
+  <!ENTITY gpgme-time          "0.7 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.5 SBU）">
 @z
 
 @x
@@ -104,7 +104,8 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (for API documentation),
+      <xref linkend="doxygen"/> and 
+      <xref linkend="graphviz"/> (for API documentation),
       <xref linkend="gnupg2"/> (required if Qt or SWIG are installed; 
         used during the testsuite),
       <xref linkend="clisp"/>, 
@@ -115,7 +116,8 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (for API documentation),
+      <xref linkend="doxygen"/> and 
+      <xref linkend="graphviz"/> (for API documentation),
       <xref linkend="gnupg2"/> (required if Qt or SWIG are installed; 
         used during the testsuite),
       <xref linkend="clisp"/>, 
@@ -196,22 +198,28 @@
 
 @x
         <seg>
-          gpgme-config and gpgme-tool
+          gpgme-config, gpgme-json, and gpgme-tool
         </seg>
         <seg>
-          libgpgme-pthread.so and libgpgme.so
+          libgpgme, libgpgmepp.so, and libqgpgme.so
         </seg>
         <seg>
+          /usr/include/{gpgme++,qgpgme,QGpgME},
+          /usr/lib/cmake/{Gpgmepp,QGpgme}.
+          /usr/lib/python{2.7,3.7}/site-packages/gpg, and
           /usr/share/common-lisp/source/gpgme
         </seg>
 @y
         <seg>
-          gpgme-config, gpgme-tool
+          gpgme-config, gpgme-json, gpgme-tool
         </seg>
         <seg>
-          libgpgme-pthread.so, libgpgme.so
+          libgpgme, libgpgmepp.so, libqgpgme.so
         </seg>
         <seg>
+          /usr/include/{gpgme++,qgpgme,QGpgME},
+          /usr/lib/cmake/{Gpgmepp,QGpgme}.
+          /usr/lib/python{2.7,3.7}/site-packages/gpg,
           /usr/share/common-lisp/source/gpgme
         </seg>
 @z

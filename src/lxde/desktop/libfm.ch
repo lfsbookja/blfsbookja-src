@@ -77,13 +77,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/> and
+      <xref linkend="gtk3"/> or 
+      <xref role="nodep" linkend="gtk2"/>, and
       <xref linkend="menu-cache"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/> or 
+      <xref role="nodep" linkend="gtk2"/>,
       <xref linkend="menu-cache"/>
     </para>
 @z

@@ -7,10 +7,10 @@
 ##
 BOOKdir = @abs_bookdir@/postlfs/security
 CHANGE_FILES = \
-	consolekit.ch      \
 	cracklib.ch        \
 	cryptsetup.ch      \
 	cyrus-sasl.ch      \
+	firewalld.ch       \
 	firewalling.ch     \
 	gnupg2.ch          \
 	gnutls.ch          \
@@ -25,9 +25,9 @@ CHANGE_FILES = \
 	mitkrb.ch          \
 	nessus.ch          \
 	nettle.ch          \
+	nftables.ch        \
 	nss.ch             \
 	openssh.ch         \
-	openssl10.ch       \
 	p11-kit.ch         \
 	polkit.ch          \
 	security.ch        \
@@ -54,3 +54,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

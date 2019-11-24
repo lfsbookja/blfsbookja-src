@@ -160,10 +160,8 @@
 
 @x
       To test the results, issue: <command>make -k test</command>.
-      One test fails for unknown reasons.
 @y
       ビルド結果をテストする場合は <command>make -k test</command> を実行します。
-      １つのテストが失敗しますが理由は不明です。
 @z
 
 @x
@@ -260,7 +258,7 @@
 
 @x
         <seg>
-          2to3, pydoc, python (symlink), python-config (symlink),
+          2to3, pip2, pydoc, python (symlink), python-config (symlink),
           python2 (symlink), python2-config (symlink),
           python&python2-majorver;, python&python2-majorver;-config,
           smtpd.py, and idle
@@ -274,16 +272,16 @@
         </seg>
 @y
         <seg>
-          2to3, pydoc, python (symlink), python-config (symlink),
+          2to3, pip2, pydoc, python (symlink), python-config (symlink),
           python2 (symlink), python2-config (symlink),
           python&python2-majorver;, python&python2-majorver;-config,
-          smtpd.py, and idle
+          smtpd.py, idle
         </seg>
         <seg>
           libpython&python2-majorver;.so
         </seg>
         <seg>
-          /usr/{include,lib}/python&python2-majorver; and
+          /usr/{include,lib}/python&python2-majorver;,
           /usr/share/doc/python-&python2-version;
         </seg>
 @z

@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY p11-kit-buildsize     "45 MB (add 168 MB for tests)">
+  <!ENTITY p11-kit-buildsize     "46 MB (add 169 MB for tests)">
   <!ENTITY p11-kit-time          "0.4 SBU (add 0.6 SBU for tests)">
 @y
-  <!ENTITY p11-kit-buildsize     "45 MB (テスト実施時はさらに 168 MB)">
+  <!ENTITY p11-kit-buildsize     "46 MB (テスト実施時はさらに 169 MB)">
   <!ENTITY p11-kit-time          "0.4 SBU (テスト実施時はさらに 0.6 SBU)">
 @z
 
@@ -85,30 +85,30 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libtasn1"/>
+      <xref linkend="libtasn1"/> and
+      <xref role="runtime" linkend="make-ca"/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libtasn1"/>
+      <xref linkend="libtasn1"/>,
+      <xref role="runtime" linkend="make-ca"/> (runtime)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="make-ca"/> (runtime), 
-      <xref linkend="nss"/> (runtime),
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="libxslt"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/>, and
+      <xref role="runtime" linkend="nss"/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="make-ca"/> (実行時), 
-      <xref linkend="nss"/> (実行時),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="libxslt"/>
+      <xref linkend="libxslt"/>,
+      <xref role="runtime" linkend="nss"/> (実行時)
     </para>
 @z
 
@@ -208,7 +208,7 @@
 @z
 
 @x
-      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
@@ -219,7 +219,7 @@
 
 @x
         <seg>
-          p11-kit and trust
+          p11-kit, trust, and update-ca-certificates
         </seg>
         <seg>
           libp11-kit.so and p11-kit-proxy.so
@@ -227,13 +227,14 @@
         <seg>
           /etc/pkcs11,
           /usr/include/p11-kit-1,
-          /usr/lib/{p11-kit,pkcs11},
+          /usr/lib/pkcs11,
+          /usr/libexec/p11-kit,
           /usr/share/gtk-doc/html/p11-kit, and
           /usr/share/p11-kit
         </seg>
 @y
         <seg>
-          p11-kit, trust
+          p11-kit, trust, update-ca-certificates
         </seg>
         <seg>
           libp11-kit.so, p11-kit-proxy.so
@@ -241,7 +242,8 @@
         <seg>
           /etc/pkcs11,
           /usr/include/p11-kit-1,
-          /usr/lib/{p11-kit,pkcs11},
+          /usr/lib/pkcs11,
+          /usr/libexec/p11-kit,
           /usr/share/gtk-doc/html/p11-kit,
           /usr/share/p11-kit
         </seg>

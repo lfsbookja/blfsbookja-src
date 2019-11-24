@@ -98,28 +98,28 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
-      <xref linkend="libgcrypt"/>
+      <xref linkend="glib2"/>, 
+      <xref linkend="libgcrypt"/>, and
+      <xref linkend="qt5"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="libgcrypt"/>
+      <xref linkend="glib2"/>, 
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="qt5"/> 
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libpcap"/> (required to capture data), and
-      <xref linkend="qt5"/> (for the <application>Qt5</application> GUI)
+      <xref linkend="libpcap"/> (required to capture data)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libpcap"/> (required to capture data),
-      <xref linkend="qt5"/> (for the <application>Qt5</application> GUI)
+      <xref linkend="libpcap"/> (required to capture data)
     </para>
 @z
 
@@ -127,19 +127,22 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="c-ares"/>,
+      <xref linkend="doxygen"/>,
+      <xref linkend="git"/>,
       <xref linkend="gnutls"/>,
-      <xref linkend="gtk3"/> or <xref linkend="gtk2"/> (for the legacy GTK GUI),
       <xref linkend="libnl"/>,
-      <xref linkend="lua"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="lua52"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="sbc"/>,
+      <ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,
+      <ulink url="https://www.linphone.org/technical-corner/bcg729">BCG729</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
       <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
-      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
       <ulink url="https://www.libssh.org/">libssh</ulink>,
-      <ulink url="http://www.portaudio.com/">PortAudio</ulink>
-      (for GTK+ RTP player),
+      <ulink url="https://github.com/maxmind/libmaxminddb">MaxMindDB</ulink>,
       <ulink url="http://google.github.io/snappy/">Snappy</ulink>, and
       <ulink url="https://www.soft-switch.org/">Spandsp</ulink>
     </para>
@@ -147,19 +150,22 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="c-ares"/>,
+      <xref linkend="doxygen"/>,
+      <xref linkend="git"/>,
       <xref linkend="gnutls"/>,
-      <xref linkend="gtk3"/> または <xref linkend="gtk2"/> (for the legacy GTK GUI),
       <xref linkend="libnl"/>,
-      <xref linkend="lua"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="libxml2"/>,
+      <xref linkend="lua52"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="sbc"/>,
+      <ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,
+      <ulink url="https://www.linphone.org/technical-corner/bcg729">BCG729</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
       <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
-      <ulink url="http://www.maxmind.com/app/c">GeoIP</ulink>,
       <ulink url="https://www.libssh.org/">libssh</ulink>,
-      <ulink url="http://www.portaudio.com/">PortAudio</ulink>
-      (for GTK+ RTP player),
+      <ulink url="https://github.com/maxmind/libmaxminddb">MaxMindDB</ulink>,
       <ulink url="http://google.github.io/snappy/">Snappy</ulink>,
       <ulink url="https://www.soft-switch.org/">Spandsp</ulink>
     </para>
@@ -284,36 +290,6 @@
 @z
 
 @x
-      <option>--with-gtk=[yes/no/2/3]</option>: For the Gtk+ GUI. Default is no.
-      If both Gtk+2 and 3 are installed, and <quote>yes</quote> is selected,
-      default is 3. Obviously, <xref linkend="gtk2"/> or <xref linkend="gtk3"/>
-      must have been built for this to work.
-@y
-      <option>--with-gtk=[yes/no/2/3]</option>: For the Gtk+ GUI. Default is no.
-      If both Gtk+2 and 3 are installed, and <quote>yes</quote> is selected,
-      default is 3. Obviously, <xref linkend="gtk2"/> or <xref linkend="gtk3"/>
-      must have been built for this to work.
-@z
-
-@x
-      <option>--with-qt=[yes/no/4/5]</option>: For the Qt GUI. Default is yes,
-      if <xref linkend="qt5"/> is found on the system.
-@y
-      <option>--with-qt=[yes/no/4/5]</option>: For the Qt GUI. Default is yes,
-      if <xref linkend="qt5"/> is found on the system.
-@z
-
-@x
-      <option>--disable-wireshark</option>: Use this switch if you
-      have <application>Qt</application> installed but do not want to build
-      any of the GUIs.
-@y
-      <option>--disable-wireshark</option>: Use this switch if you
-      have <application>Qt</application> installed but do not want to build
-      any of the GUIs.
-@z
-
-@x
     <title>Configuring Wireshark</title>
 @y
     <title>&Configuring1;Wireshark&Configuring2;</title>
@@ -391,30 +367,30 @@
 
 @x
         <seg>
-          capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
+          capinfos, captype, dumpcap, editcap, idl2wrs,
           mergecap, randpkt, rawshark, reordercap, sharkd,
-          text2pcap, tshark, wireshark, and wireshark-gtk (optional)
+          text2pcap, tshark, and wireshark
         </seg>
         <seg>
-          libwireshark.so, libwiretap.so, libwscodecs.so (optional),
+          libwireshark.so, libwiretap.so, libwscodecs.so,
           libwsutil.so, and numerous modules under /usr/lib/wireshark/plugins
         </seg>
         <seg>
-          /usr/{lib,share}/wireshark and
+          /usr/{include,lib,share}/wireshark and
           /usr/share/doc/wireshark-&wireshark-version;
          </seg>
 @y
         <seg>
-          capinfos, captype, dftest, dumpcap, editcap, idl2wrs,
+          capinfos, captype, dumpcap, editcap, idl2wrs,
           mergecap, randpkt, rawshark, reordercap, sharkd,
-          text2pcap, tshark, wireshark, wireshark-gtk (optional)
+          text2pcap, tshark, wireshark
         </seg>
         <seg>
-          libwireshark.so, libwiretap.so, libwscodecs.so (optional),
+          libwireshark.so, libwiretap.so, libwscodecs.so,
           libwsutil.so, and numerous modules under /usr/lib/wireshark/plugins
         </seg>
         <seg>
-          /usr/{lib,share}/wireshark,
+          /usr/{include,lib,share}/wireshark,
           /usr/share/doc/wireshark-&wireshark-version;
          </seg>
 @z
@@ -435,10 +411,10 @@
           supported by the <application>Wireshark</application> package.</para>
 @z
 
-@x dftest
-          <para>is a display-filter-compiler test program.</para>
+@x captype
+          <para>prints the file types of capture files.</para>
 @y
-          <para>is a display-filter-compiler test program.</para>
+          <para>prints the file types of capture files.</para>
 @z
 
 @x dumpcap

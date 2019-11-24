@@ -116,15 +116,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> and
       <xref linkend="libxml2"/> (required to run the tests)
-     </para>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/>,
       <xref linkend="libxml2"/> （テスト実行に必要）
-     </para>
+    </para>
 @z
 
 @x

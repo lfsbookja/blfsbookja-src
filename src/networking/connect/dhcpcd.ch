@@ -90,12 +90,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="llvm"/> (with Clang)
+       <xref linkend="llvm"/> (with Clang),
+       <xref linkend="ntp"/>,
+       <ulink url="https://chrony.tuxfamily.org/">chronyd</ulink>, and
+       <ulink url="https://github.com/thkukuk/ypbind-mt/">ypbind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="llvm"/> (Clang 込み)
+       <xref linkend="llvm"/> (Clang 込み),
+       <xref linkend="ntp"/>,
+       <ulink url="https://chrony.tuxfamily.org/">chronyd</ulink>,
+       <ulink url="https://github.com/thkukuk/ypbind-mt/">ypbind</ulink>
     </para>
 @z
 
@@ -121,9 +127,11 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+    <para>To test the results, issue: <command>make test</command>.</para>
 @y
-    <para>&notTestSuite;</para>
+    <para>
+    ビルド結果をテストする場合は <command>make test</command> を実行します。
+    </para>
 @z
 
 @x

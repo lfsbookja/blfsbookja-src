@@ -72,12 +72,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
     <bridgehead renderas="sect3">Python 3 Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Python 3&Dependencies2;</bridgehead>
@@ -87,29 +81,33 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="bluez"/>,
-      <xref linkend="gdb"/> (required for some tests), and
-      <xref linkend="valgrind"/>
+      <xref linkend="gdb"/> (required for some tests),
+      <xref linkend="valgrind"/>, and
+      <ulink url="http://www.bytereef.org/mpdecimal">libmpcdec</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="bluez"/>,
-      <xref linkend="gdb"/> (いくつかのテストに必要),
-      <xref linkend="valgrind"/>
+      <xref linkend="gdb"/> (required for some tests),
+      <xref linkend="valgrind"/>, and
+      <ulink url="http://www.bytereef.org/mpdecimal">libmpcdec</ulink>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="db"/> and
-      <xref linkend="sqlite"/>
+      <xref linkend="db"/>,
+      <xref linkend="sqlite"/>, and
+      <xref linkend="tk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (追加モジュール用)</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
-      <xref linkend="sqlite"/>
+      <xref linkend="sqlite"/>,
+      <xref linkend="tk"/>
     </para>
 @z
 
@@ -145,19 +143,125 @@
 @z
 
 @x
-      If you have downloaded the preformatted documentation from
-      <ulink url="http://docs.python.org/download.html"/>, install it
-      as the <systemitem class="username">root</systemitem> user:
+      The test suite must be run separately from the build, either before or
+      after the package is built and installed. Do not run
+      <command>make install</command> after running the test suite. To build
+      and install the package, you need to start with a fresh or clean source
+      tree. For the tests, you also need a clean source code, so either start by
+      removing the source code directory and starting over, by uncompressing
+      the source tarball or by running <command>make clean</command>. Then
+      configure again, adding <quote>--with-pydebug</quote> to the
+      <command>configure</command> switches above, run <command>make</command>,
+      then <command>make test</command>. Remember that tests must be executed
+      using an X terminal. 
+      The test SBU highly depends on the speed of the internet connection.
+      The test_sqlite test is known to fail.
 @y
-      If you have downloaded the preformatted documentation from
-      <ulink url="http://docs.python.org/download.html"/>, install it
-      as the <systemitem class="username">root</systemitem> user:
+      The test suite must be run separately from the build, either before or
+      after the package is built and installed. Do not run
+      <command>make install</command> after running the test suite. To build
+      and install the package, you need to start with a fresh or clean source
+      tree. For the tests, you also need a clean source code, so either start by
+      removing the source code directory and starting over, by uncompressing
+      the source tarball or by running <command>make clean</command>. Then
+      configure again, adding <quote>--with-pydebug</quote> to the
+      <command>configure</command> switches above, run <command>make</command>,
+      then <command>make test</command>. Remember that tests must be executed
+      using an X terminal. 
+      The test SBU highly depends on the speed of the internet connection.
+      The test_sqlite test is known to fail.
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command> CXX="/usr/bin/g++" ./configure ...</command>: Avoid an annoying
+      message during configuration.
+@y
+      <command> CXX="/usr/bin/g++" ./configure ...</command>: Avoid an annoying
+      message during configuration.
+@z
+
+@x
+      <parameter>--with-system-expat</parameter>: This switch enables linking
+      against the system version of <application>Expat</application>.
+@y
+      <parameter>--with-system-expat</parameter>: This switch enables linking
+      against the system version of <application>Expat</application>.
+@z
+
+@x
+      <parameter>--with-system-ffi</parameter>: This switch enables linking
+      against system version of <application>libffi</application>. 
+@y
+      <parameter>--with-system-ffi</parameter>: This switch enables linking
+      against system version of <application>libffi</application>. 
+@z
+
+@x
+      <parameter>--with-ensurepip=yes</parameter> : This switch enables building
+      <command>pip</command> and <command>setuptools</command> packaging programs.
+      <command>setuptools</command> is needed for building some Python modules.
+@y
+      <parameter>--with-ensurepip=yes</parameter> : This switch enables building
+      <command>pip</command> and <command>setuptools</command> packaging programs.
+      <command>setuptools</command> is needed for building some Python modules.
+@z
+
+@x
+      <option>--with-dbmliborder=bdb:gdbm:ndbm</option>: Use this switch
+      if you want to build <application>Python</application> DBM Module
+      against <application>Berkeley DB</application> instead of
+      <application>GDBM</application>.
+@y
+      <option>--with-dbmliborder=bdb:gdbm:ndbm</option>: Use this switch
+      if you want to build <application>Python</application> DBM Module
+      against <application>Berkeley DB</application> instead of
+      <application>GDBM</application>.
+@z
+
+@x
+      <option>--enable-optimization</option>: Use this switch
+      if you want to enable <emphasis>expensive</emphasis> optimizations (i.e.
+      Profile Guided Optimizations). This adds around 20 SBU, but can
+      <emphasis>slightly</emphasis> speed up some uses, such as using
+      <application>Sphinx</application> for creating documentation, or use of
+      <application>Python3</application> scripts.
+@y
+      <option>--enable-optimization</option>: Use this switch
+      if you want to enable <emphasis>expensive</emphasis> optimizations (i.e.
+      Profile Guided Optimizations). This adds around 20 SBU, but can
+      <emphasis>slightly</emphasis> speed up some uses, such as using
+      <application>Sphinx</application> for creating documentation, or use of
+      <application>Python3</application> scripts.
+@z
+
+@x
+      <option>--with-lto</option>: This optional switch enables thick Link
+      Time Optimization. Unusually, it creates a much larger <filename
+      class="libraryfile">/usr/lib/python3.8/config-3.8-x86_64-linux-gnu/libpython3.8.a</filename>
+      with a small increase in the time to compile
+      <application>Python</application>. Run-time results do not appear to show
+      any benefit from doing this.
+@y
+      <option>--with-lto</option>: This optional switch enables thick Link
+      Time Optimization. Unusually, it creates a much larger <filename
+      class="libraryfile">/usr/lib/python3.8/config-3.8-x86_64-linux-gnu/libpython3.8.a</filename>
+      with a small increase in the time to compile
+      <application>Python</application>. Run-time results do not appear to show
+      any benefit from doing this.
+@z
+
+@x
+      <command>chmod ...</command>: Fix permissions for shared libraries to be
+      consistent with other libraries.
+@y
+      <command>chmod ...</command>: Fix permissions for shared libraries to be
+      consistent with other libraries.
 @z
 
 @x
@@ -192,30 +296,36 @@
 
 @x
         <seg>
-          2to3 (symlink),
+          2to3 (symlink) and
           2to3-&python3-majorver;,
 
-          idle3 (symlink), and
-          idle&python3-majorver;
+          easy_install (symlink) and
+          easy_install-&python3-majorver;,
 
-          pydoc3 (symlink),
+          idle3 (symlink) and
+          idle&python3-majorver;,
+
+          pip3 (symlink) and
+          pip&python3-majorver;,
+
+          pydoc3 (symlink) and
           pydoc&python3-majorver;,
 
           python3 (symlink);
-          python&python3-majorver; and python&python3-majorver;m (hardlinked);
+          python&python3-majorver;, and
 
-          python3-config (symlink),
-          python&python3-majorver;-config (symlink),
-          python&python3-majorver;m-config,
-
+          python3-config (symlink) and
+          python&python3-majorver;-config
+          <!--
           pyvenv (symlink),
-          pyvenv-&python3-majorver;,
+          pyvenv-&python3-majorver;
+          -->
         </seg>
         <seg>
-          libpython&python3-majorver;m.so and libpython3.so
+          libpython&python3-majorver;.so and libpython3.so
         </seg>
         <seg>
-          /usr/include/python&python3-majorver;m,
+          /usr/include/python&python3-majorver;,
           /usr/lib/python&python3-majorver;, and
           /usr/share/doc/python-&python3-version;
         </seg>
@@ -224,28 +334,34 @@
           2to3 (symlink),
           2to3-&python3-majorver;,
 
-          idle3 (symlink), and
-          idle&python3-majorver;
+          easy_install (symlink),
+          easy_install-&python3-majorver;,
+
+          idle3 (symlink),
+          idle&python3-majorver;,
+
+          pip3 (symlink),
+          pip&python3-majorver;,
 
           pydoc3 (symlink),
           pydoc&python3-majorver;,
 
-          python3 (symlink);
-          python&python3-majorver; and python&python3-majorver;m (hardlinked);
+          python3 (symlink),
+          python&python3-majorver;,
 
           python3-config (symlink),
-          python&python3-majorver;-config (symlink),
-          python&python3-majorver;m-config,
-
+          python&python3-majorver;-config
+          <!--
           pyvenv (symlink),
-          pyvenv-&python3-majorver;,
+          pyvenv-&python3-majorver;
+          -->
         </seg>
         <seg>
-          libpython&python3-majorver;m.so and libpython3.so
+          libpython&python3-majorver;.so, libpython3.so
         </seg>
         <seg>
-          /usr/include/python&python3-majorver;m,
-          /usr/lib/python&python3-majorver;, and
+          /usr/include/python&python3-majorver;,
+          /usr/lib/python&python3-majorver;,
           /usr/share/doc/python-&python3-version;
         </seg>
 @z

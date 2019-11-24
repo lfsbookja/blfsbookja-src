@@ -78,13 +78,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gmime3"/> or <xref linkend="gmime"/>, and
       <xref linkend="libsoup"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gmime3"/> または <xref linkend="gmime"/>,
       <xref linkend="libsoup"/>
     </para>
 @z
@@ -108,7 +106,9 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="cmake"/> (for CMake Bindings),
       <xref linkend="gtk-doc"/>,
+      <xref linkend="gvfs"/> (for some tests),
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
       <ulink url="http://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
       - if they are installed, then
@@ -118,7 +118,9 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="cmake"/> (for CMake Bindings),
       <xref linkend="gtk-doc"/>,
+      <xref linkend="gvfs"/> (for some tests),
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>,
       <ulink url="http://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
       - if they are installed, then
@@ -147,11 +149,9 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. One test,
-      /parser/parsing/podcast_medium, is known to fail in a LFS environment.
+       To test the results, issue: <command>ninja test</command>.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      /parser/parsing/podcast_medium というテストは LFS 環境の中では失敗します。
 @z
 
 @x

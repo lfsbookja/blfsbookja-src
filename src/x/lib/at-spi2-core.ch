@@ -143,11 +143,13 @@
 @x
       A session bus address, normally available in an Xorg terminal,
       is necessary to run the tests. To test the results,
-      issue: <command>ninja test</command>.
+      issue: <command>ninja test</command>. The memory test is known
+      to timeout.
 @y
       A session bus address, normally available in an Xorg terminal,
       is necessary to run the tests. To test the results,
-      issue: <command>ninja test</command>.
+      issue: <command>ninja test</command>. The memory test is known
+      to timeout.
 @z
 
 @x

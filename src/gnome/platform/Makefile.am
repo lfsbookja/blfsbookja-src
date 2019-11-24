@@ -7,7 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/gnome/platform
 CHANGE_FILES = \
-	caribou.ch                   \
 	dconf.ch                     \
 	dummy-desktop.ch             \
 	dummy-platform.ch            \
@@ -37,6 +36,7 @@ CHANGE_FILES = \
 	gnome-video-effects.ch       \
 	grilo.ch                     \
 	gsettings-desktop-schemas.ch \
+	gsound.ch                    \
 	gvfs.ch                      \
 	libchamplain.ch              \
 	libgee.ch                    \
@@ -52,9 +52,9 @@ CHANGE_FILES = \
 	platform.ch                  \
 	polkit-gnome.ch              \
 	rest.ch                      \
-	sassc.ch                     \
 	totem-pl-parser.ch           \
 	tracker.ch                   \
+	tracker-miners.ch            \
 	vte.ch                       \
 	yelp.ch                      \
 	yelp-xsl.ch                  \
@@ -74,3 +74,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

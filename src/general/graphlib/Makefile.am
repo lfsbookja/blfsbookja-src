@@ -16,13 +16,14 @@ CHANGE_FILES = \
 	harfbuzz.ch      \
 	gegl.ch          \
 	giflib.ch        \
+	glm.ch           \
 	graphite2.ch     \
 	graphlib.ch      \
-	ijs.ch           \
 	jasper.ch        \
 	lcms.ch          \
 	lcms2.ch         \
 	libexif.ch       \
+	libgxps.ch       \
 	libjpeg-turbo.ch \
 	libmng.ch        \
 	libmypaint.ch    \
@@ -38,7 +39,9 @@ CHANGE_FILES = \
 	pixman.ch        \
 	potrace.ch       \
 	poppler.ch       \
-	qpdf.ch
+	qpdf.ch          \
+	sassc.ch         \
+	woff2.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -54,3 +57,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

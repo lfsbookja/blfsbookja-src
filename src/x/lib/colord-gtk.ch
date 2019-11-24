@@ -145,9 +145,13 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
+      The tests need to be run from an X session, and may require
+      a color profile for your primary display.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      The tests need to be run from an X session, and may require
+      a color profile for your primary display.
 @z
 
 @x
@@ -163,13 +167,41 @@
 @z
 
 @x
-      <parameter>--enable-vala</parameter>: This switch enables
+      <parameter>-Dvapi=true</parameter>: This switch enables
       building of the Vala bindings. Remove if you don't
       have <xref linkend="vala"/> installed.
 @y
-      <parameter>--enable-vala</parameter>:
-      このスイッチにより Vala バインディングをビルドすることを指示します。
-      <xref linkend="vala"/> をインストールしていない場合はこれを取り除いてください。
+      <parameter>-Dvapi=true</parameter>: This switch enables
+      building of the Vala bindings. Remove if you don't
+      have <xref linkend="vala"/> installed.
+@z
+
+@x
+      <parameter>-Dgtk2=true</parameter>: This switch enables building
+      the GTK+-2 bindings for colord.
+@y
+      <parameter>-Dgtk2=true</parameter>: This switch enables building
+      the GTK+-2 bindings for colord.
+@z
+
+@x
+      <parameter>-Ddocs=false</parameter>: This switch disables building
+      GTK-DOC based documentation. Even if GTK-DOC is installed, you will
+      need the namespaced versions of the Docbook XSL stylesheets.
+@y
+      <parameter>-Ddocs=false</parameter>: This switch disables building
+      GTK-DOC based documentation. Even if GTK-DOC is installed, you will
+      need the namespaced versions of the Docbook XSL stylesheets.
+@z
+
+@x
+      <parameter>-Dman=false</parameter>: This switch disables generating
+      the manual pages for this package. Remove this switch if you have
+      namespaced versions of the Docbook XSL stylesheets installed.
+@y
+      <parameter>-Dman=false</parameter>: This switch disables generating
+      the manual pages for this package. Remove this switch if you have
+      namespaced versions of the Docbook XSL stylesheets installed.
 @z
 
 @x
@@ -193,7 +225,7 @@
           cd-convert
         </seg>
         <seg>
-          libcolord-gtk.so
+          libcolord-gtk.so and libcolord-gtk2.so
         </seg>
         <seg>
           /usr/include/colord-1/colord-gtk and
@@ -204,7 +236,7 @@
           cd-convert
         </seg>
         <seg>
-          libcolord-gtk.so
+          libcolord-gtk.so, libcolord-gtk2.so
         </seg>
         <seg>
           /usr/include/colord-1/colord-gtk,

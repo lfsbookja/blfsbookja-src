@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY fuse3-time          "less than 0.1 SBU">
-@y
-  <!ENTITY fuse3-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to Fuse</title>
 @y
     <title>&IntroductionTo1;Fuse&IntroductionTo2;</title>
@@ -132,10 +126,10 @@
 @x
       The API documentation is included in the package, but 
       if you have <xref linkend="doxygen"/> installed and wish to rebuild 
-      it, issue <command>doxygen doc/Doxyfile</command>.
+      it, issue:
 @y
       本パッケージには API ドキュメントが含まれます。
-      もし <xref linkend="doxygen"/> がインストール済であって、ドキュメントを再生成したい場合は <command>doxygen doc/Doxyfile</command> を実行します。
+      もし <xref linkend="doxygen"/> がインストール済であって、ドキュメントを再生成したい場合は以下を実行します。
 @z
 
 @x

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "190 MB (add 4 MB for tests)">
-  <!ENTITY glib2-time          "0.5 SBU (add 1.6 SBU for tests; both using paralleism=4)">
+  <!ENTITY glib2-buildsize     "200 MB (add 3 MB for tests)">
+  <!ENTITY glib2-time          "0.4 SBU (add 0.9 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY glib2-buildsize     "190 MB (テスト実施時はさらに 4 MB)">
-  <!ENTITY glib2-time          "0.5 SBU (テスト実施時はさらに 1.6 SBU; いずれも paralleism=4)">
+  <!ENTITY glib2-buildsize     "200 MB (テスト実施時はさらに 3 MB)">
+  <!ENTITY glib2-time          "0.4 SBU (テスト実施時はさらに 0.9 SBU; いずれも paralleism=4)">
 @z
 
 @x
@@ -196,19 +196,28 @@
 @z
 
 @x
-      You should now install <xref linkend="desktop-file-utils"/> and proceed to
+      If <xref linkend="libxslt"/> is installed, the following command may
+      indicate several (about 33) errors that start with "Error: no ID for
+      constraint linkend:" when installing the man pages.  These are harmless.
+@y
+      If <xref linkend="libxslt"/> is installed, the following command may
+      indicate several (about 33) errors that start with "Error: no ID for
+      constraint linkend:" when installing the man pages.  These are harmless.
+@z
+
+@x
+      You should now install <xref linkend="desktop-file-utils"/> and 
+      <xref linkend="shared-mime-info"/> and proceed to
       run the test suite.
 @y
-      ここで <xref linkend="desktop-file-utils"/> をインストールした上で、テストスイートを実行してください。
+      ここで <xref linkend="desktop-file-utils"/> と <xref linkend="shared-mime-info"/> をインストールした上で、テストスイートを実行してください。
 @z
 
 @x
       To test the results, after having installed the package, issue:
-      <command>ninja test</command>.  
-      One test, gdatetime, is known to fail on sysvinit systems.
+      <command>ninja test</command>.
 @y
       ビルド結果をテストする場合は、本パッケージをインストールした後に <command>ninja test</command> を実行します。
-      gdatetime というテストは sysvinit システムにおいては失敗します。
 @z
 
 @x
@@ -226,10 +235,10 @@
 @z
 
 @x
-      <parameter>-Dselinux=false</parameter>: This switch disables
+      <parameter>-Dselinux=disabled</parameter>: This switch disables
       support for selinux which is not supported in BLFS.
 @y
-      <parameter>-Dselinux=false</parameter>: This switch disables
+      <parameter>-Dselinux=disabled</parameter>: This switch disables
       support for selinux which is not supported in BLFS.
 @z
 

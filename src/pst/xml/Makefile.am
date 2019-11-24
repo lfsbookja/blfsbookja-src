@@ -9,6 +9,8 @@ BOOKdir = @abs_bookdir@/pst/xml
 CHANGE_FILES = \
 	docbook-xsl.ch \
 	docbook.ch     \
+	docbook5.ch    \
+	docbook51.ch   \
 	itstool.ch     \
 	xml.ch         \
 	xmlto.ch
@@ -27,3 +29,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

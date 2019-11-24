@@ -14,11 +14,15 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "291 MB (with downloaded documentation)">
-  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 4.4 SBU for tests)">
+  <!ENTITY git-buildsize     "319 MB (with downloaded documentation)">
 @y
-  <!ENTITY git-buildsize     "291 MB（ダウンロードドキュメントを含む）">
-  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; テスト実施時はさらに 4.4 SBU）">
+  <!ENTITY git-buildsize     "319 MB（ダウンロードドキュメントを含む）">
+@z
+
+@x
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 6.3 SBU for tests)">
+@y
+  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; テスト実施時はさらに 6.3 SBU）">
 @z
 
 @x
@@ -136,17 +140,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="curl"/> (needed to use <application>Git</application> over http,
-      https, ftp or ftps),
-      <xref linkend="perl-error"/>, and
-      <xref linkend="python2"/>
+      <xref linkend="curl"/> (needed to use <application>Git</application> over
+      http, https, ftp or ftps)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="curl"/> (http, https, ftp, ftps 経由で <application>Git</application> を用いる場合に必要),
-      <xref linkend="perl-error"/>,
-      <xref linkend="python2"/>
+      <xref linkend="curl"/> (http, https, ftp, ftps 経由で <application>Git</application> を用いる場合に必要)
     </para>
 @z
 
@@ -154,9 +154,11 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
-      linkend="pcre"/>), in either case configured with
+      role="nodep" linkend="pcre"/>), in either case configured with
       <literal>--enable-jit</literal>,
-      <xref linkend="subversion"/> with Perl bindings (for <command>git svn</command>),
+      <xref linkend="python2"/>,
+      <xref linkend="subversion"/> with Perl bindings (for <command>git
+         svn</command>),
       <xref role="runtime" linkend="tk"/>
       (gitk, a simple <application>Git</application>
       repository viewer, uses <application>Tk</application> at runtime), and
@@ -166,12 +168,14 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
-      linkend="pcre"/>), in either case configured with
+      role="nodep" linkend="pcre"/>), in either case configured with
       <literal>--enable-jit</literal>,
-      <xref linkend="subversion"/> with Perl bindings (for <command>git svn</command>),
+      <xref linkend="python2"/>,
+      <xref linkend="subversion"/> with Perl bindings (for <command>git
+         svn</command>),
       <xref role="runtime" linkend="tk"/>
       (gitk, a simple <application>Git</application>
-      repository viewer, uses <application>Tk</application> at runtime),
+      repository viewer, uses <application>Tk</application> at runtime), and
       <xref linkend="valgrind"/>
     </para>
 @z
@@ -300,11 +304,27 @@
 @z
 
 @x
-      <option>--without-python</option>: Use this switch if
-      <application>Python</application> is not installed.
+      <parameter>--with-gitconfig=/etc/gitconfig</parameter>: This sets
+      <filename>/etc/gitconfig</filename> as the file that stores
+      the default, system wide, <application>Git</application>
+      settings.
 @y
-      <option>--without-python</option>: Use this switch if
-      <application>Python</application> is not installed.
+      <parameter>--with-gitconfig=/etc/gitconfig</parameter>: This sets
+      <filename>/etc/gitconfig</filename> as the file that stores
+      the default, system wide, <application>Git</application>
+      settings.
+@z
+
+@x
+      <option>--with-python=python3</option>: Use this switch to allow using
+      <application>Python 3</application>. <application>Python</application> is
+      only used for the <command>git p4</command> interface to Perforce
+      repositories.
+@y
+      <option>--with-python=python3</option>: Use this switch to allow using
+      <application>Python 3</application>. <application>Python</application> is
+      only used for the <command>git p4</command> interface to Perforce
+      repositories.
 @z
 
 @x
@@ -404,7 +424,8 @@
           None
         </seg>
         <seg>
-          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;{,&lt;arch&gt;-linux/auto}/Git,
+          /usr/share/perl5/Git,
+          <!-- I do NOT think this is in our %INC search path. -->
           /usr/libexec/git-core and
           /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>
@@ -417,7 +438,8 @@
           &None;
         </seg>
         <seg>
-          /usr/lib/perl5/site_perl/&lt;5.x.y&gt;{,&lt;arch&gt;-linux/auto}/Git,
+          /usr/share/perl5/Git,
+          <!-- I do NOT think this is in our %INC search path. -->
           /usr/libexec/git-core,
           /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>

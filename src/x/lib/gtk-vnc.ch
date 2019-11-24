@@ -95,13 +95,15 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="python2"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="python2"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -109,16 +111,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="pulseaudio"/> and
-      <ulink url="http://view.sourceforge.net/">libview</ulink>
+      <xref linkend="cyrus-sasl"/> and
+      <xref linkend="pulseaudio"/>
+      <!-- <ulink url="http://view.sourceforge.net/">libview</ulink> -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cyrus-sasl"/>,
-      <xref linkend="pulseaudio"/>,
-      <ulink url="http://view.sourceforge.net/">libview</ulink>
+      <xref linkend="pulseaudio"/>
+      <!-- <ulink url="http://view.sourceforge.net/">libview</ulink> -->
     </para>
 @z
 
@@ -159,36 +161,36 @@
     <title>&CommandExplanations;</title>
 @z
 
-@x
-      <parameter>--with-gtk=3.0</parameter>: This switch enables
-      building of the <application>GTK+ 3</application> library
-      instead of the <application>GTK+ 2</application> one.
-@y
-      <parameter>--with-gtk=3.0</parameter>:
-      このスイッチは <application>GTK+ 2</application> ではなく <application>GTK+ 3</application> をビルドするようにします。
-@z
+%@x
+%      <parameter>--with-gtk=3.0</parameter>: This switch enables
+%      building of the <application>GTK+ 3</application> library
+%      instead of the <application>GTK+ 2</application> one.
+%@y
+%      <parameter>--with-gtk=3.0</parameter>:
+%      このスイッチは <application>GTK+ 2</application> ではなく <application>GTK+ 3</application> をビルドするようにします。
+%@z
 
 @x
-      <parameter>--enable-vala</parameter>: This switch enables
-      building of the Vala bindings. Remove if you don't have
-      <xref linkend="vala"/> installed.
+      <option>-Dwith-vala=false</option>: This switch disables
+      building of the Vala bindings. Add this if you decide to build gtk-vnc
+      without vala installed.
 @y
-      <parameter>--enable-vala</parameter>:
-      このスイッチは Vala バインディングを有効にします。
-      <xref linkend="vala"/> をインストールしていない場合は、本オプションを取り除いてください。
+      <option>--enable-vala</option>:
+      このスイッチは Vala バインディングのビルドを無効にします。
+      <xref linkend="vala"/> をインストールしていない状態で gtk-vnc をビルドする場合は、本オプションを指定してください。
 @z
 
-@x
-      <parameter>--without-sasl</parameter>: This switch disables the
-      use of <application>Cyrus SASL</application> for authentication.
-      Remove it if you have installed
-      <application>Cyrus SASL</application> and wish to enable it for
-      authentication.
-@y
-      <parameter>--without-sasl</parameter>:
-      このスイッチは、認証処理にあたって <application>Cyrus SASL</application> を利用しないことを指示します。
-      <application>Cyrus SASL</application> をインストールしていて、これを有効にする場合は本パラメーターを取り除いてください。
-@z
+%@x
+%      <parameter>--without-sasl</parameter>: This switch disables the
+%      use of <application>Cyrus SASL</application> for authentication.
+%      Remove it if you have installed
+%      <application>Cyrus SASL</application> and wish to enable it for
+%      authentication.
+%@y
+%      <parameter>--without-sasl</parameter>:
+%      このスイッチは、認証処理にあたって <application>Cyrus SASL</application> を利用しないことを指示します。
+%      <application>Cyrus SASL</application> をインストールしていて、これを有効にする場合は本パラメーターを取り除いてください。
+%@z
 
 @x
     <title>Contents</title>

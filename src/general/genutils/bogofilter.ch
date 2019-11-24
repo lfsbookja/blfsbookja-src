@@ -91,26 +91,32 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gsl"/>
+      <xref linkend="gsl"/> and
+      <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gsl"/>
+      <xref linkend="gsl"/>,
+      <xref linkend="libxml2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="lmdb"/>,
       <xref linkend="sqlite"/>,
+      <xref linkend="xmlto"/>,
       <ulink url="http://fallabs.com/qdbm/">QDBM</ulink> and
       <ulink url="http://fallabs.com/tokyocabinet/">TokyoCabinet</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="lmdb"/>,
       <xref linkend="sqlite"/>,
+      <xref linkend="xmlto"/>,
       <ulink url="http://fallabs.com/qdbm/">QDBM</ulink>,
       <ulink url="http://fallabs.com/tokyocabinet/">TokyoCabinet</ulink>
     </para>
@@ -243,23 +249,23 @@
 @z
 
 @x bogolexer
-            used to separate messages into tokens and to test new
+            is used to separate messages into tokens and to test new
             versions of the lexer.l code.
 @y
-            used to separate messages into tokens and to test new
+            is used to separate messages into tokens and to test new
             versions of the lexer.l code.
 @z
 
 @x bogotune
-            tries to find optimum parameter settings for bogofilter.
+            attempts to find optimum parameter settings for bogofilter.
 @y
-            tries to find optimum parameter settings for bogofilter.
+            attempts to find optimum parameter settings for bogofilter.
 @z
 
 @x bogoupgrade
-            upgrades bogofilter database to current version.
+            upgrades the bogofilter database to the current version.
 @y
-            upgrades bogofilter database to current version.
+            upgrades the bogofilter database to the current version.
 @z
 
 @x bogoutil

@@ -117,29 +117,31 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="brotli"/>,
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="lua"/>,
       <xref linkend="lynx"/> or
       <xref linkend="Links"/> or
-      <ulink url="http://elinks.or.cz/">ELinks</ulink>,
+      <ulink url="&elinks-url;">ELinks</ulink>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/> (<xref linkend="apr-util"/> needs to be
-      installed with ldap suport),
+      installed with ldap support),
       <xref linkend="rsync"/>, and
       <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="brotli"/>,
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="lua"/>,
       <xref linkend="lynx"/> または
       <xref linkend="Links"/> または
-      <ulink url="http://elinks.or.cz/">ELinks</ulink>,
+      <ulink url="&elinks-url;">ELinks</ulink>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/> (<xref linkend="apr-util"/> が ldap サポートつきでインストールされていること),
       <xref linkend="rsync"/>,

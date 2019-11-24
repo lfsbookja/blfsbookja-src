@@ -149,14 +149,14 @@
 @z
 
 @x
-        <seg> getcifsacl, mount.cifs and setcifsacl;
+        <seg> getcifsacl, mount.cifs, setcifsacl, and smbinfo;
           optional: cifs.idmap, cifs.upcall and cifscreds</seg>
         <seg>/usr/lib/cifs-utils/idmapwb.so and optionally
           PAM module /lib/security/pam_cifscreds.so</seg>
         <seg>/usr/lib/cifs-utils</seg>
 @y
-        <seg> getcifsacl, mount.cifs, setcifsacl;
-          任意ビルド時: cifs.idmap, cifs.upcall, cifscreds</seg>
+        <seg> getcifsacl, mount.cifs, setcifsacl, and smbinfo;
+          任意ビルド時: cifs.idmap, cifs.upcall and cifscreds</seg>
         <seg>/usr/lib/cifs-utils/idmapwb.so and optionally
           PAM module /lib/security/pam_cifscreds.so</seg>
         <seg>/usr/lib/cifs-utils</seg>

@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY pixman-buildsize     "47 MB (with tests)">
+  <!ENTITY pixman-buildsize     "55 MB (with tests)">
   <!ENTITY pixman-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY pixman-buildsize     "47 MB (テスト込み)">
+  <!ENTITY pixman-buildsize     "55 MB (テスト込み)">
   <!ENTITY pixman-time          "0.8 SBU (テスト込み)">
 @z
 
@@ -119,21 +119,15 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
 @z
 
 @x

@@ -83,21 +83,31 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="alsa-lib"/>,
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="flac"/>,
+      <xref linkend="libogg"/>, and
+      <xref linkend="libvorbis"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
       <xref linkend="flac"/>,
       <xref linkend="libogg"/>,
-      <xref linkend="libvorbis"/> and
+      <xref linkend="libvorbis"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="alsa-lib"/> and
       <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="alsa-lib"/>,
-      <xref linkend="flac"/>,
-      <xref linkend="libogg"/>,
-      <xref linkend="libvorbis"/>,
       <xref linkend="sqlite"/>
     </para>
 @z

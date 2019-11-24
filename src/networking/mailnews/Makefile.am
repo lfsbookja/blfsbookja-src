@@ -7,7 +7,6 @@
 ##
 BOOKdir = @abs_bookdir@/networking/mailnews
 CHANGE_FILES = \
-	alpine.ch    \
 	fetchmail.ch \
 	mailnews.ch  \
 	mailx.ch     \

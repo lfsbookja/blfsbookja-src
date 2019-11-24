@@ -106,12 +106,27 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/> and
+      <xref linkend="git"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/>,
+      <xref linkend="git"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="graphviz"/>,
       <xref linkend="gs"/>,
       <xref linkend="libxml2"/> (required for the tests),
       <xref linkend="llvm"/> (with clang),
+      <!-- Can someone check this? With LLVM7, it fails to build. -->
       <xref linkend="python2"/>,
       <xref linkend="qt5"/> (for doxywizard),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
@@ -124,6 +139,7 @@
       <xref linkend="gs"/>,
       <xref linkend="libxml2"/> (required for the tests),
       <xref linkend="llvm"/> (with clang),
+      <!-- Can someone check this? With LLVM7, it fails to build. -->
       <xref linkend="python2"/>,
       <xref linkend="qt5"/> (for doxywizard),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and

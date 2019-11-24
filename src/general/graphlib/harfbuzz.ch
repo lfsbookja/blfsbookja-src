@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "120 MB (with tests)">
-  <!ENTITY harfbuzz-time          "1.1 SBU (with tests)">
+  <!ENTITY harfbuzz-buildsize     "163 MB (add 24 MB for tests)">
+  <!ENTITY harfbuzz-time          "0.5 SBU (Using parallelism=4; add 0.4 SBU for tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "120 MB （テスト込み）">
-  <!ENTITY harfbuzz-time          "1.1 SBU （テスト込み）"> 
+  <!ENTITY harfbuzz-buildsize     "163 MB （テスト実施時はさらに 24 MB）">
+  <!ENTITY harfbuzz-time          "0.5 SBU （parallelism=4 利用時。テスト実施時はさらに 0.4 SBU）"> 
 @z
 
 @x
@@ -86,6 +86,9 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="glib2"/> (required for Pango),
+      <xref role="first" linkend="graphite2"/> (required for building
+        <xref role="nodep" linkend="texlive"/> or 
+        <xref role="nodep" linkend="libreoffice"/> with system harfbuzz),
       <xref linkend="icu"/>, and
       <xref role="first" linkend="freetype2"/>
       (after <xref role="nodep" linkend="harfbuzz"/> is installed, reinstall
@@ -95,37 +98,37 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="glib2"/>（Pango に必要）,
-      <xref linkend="icu"/>,
+      <xref role="first" linkend="graphite2"/> (required for building
+        <xref role="nodep" linkend="texlive"/> or 
+        <xref role="nodep" linkend="libreoffice"/> with system harfbuzz),
+      <xref linkend="icu"/>, and
       <xref role="first" linkend="freetype2"/>
-      （<xref role="nodep" linkend="harfbuzz"/> をインストールした後に <xref role="nodep" linkend="freetype2"/> を再インストール）
+      (after <xref role="nodep" linkend="harfbuzz"/> is installed, reinstall
+      <xref role="nodep" linkend="freetype2"/>)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cairo"/>,
+      <xref linkend="cairo"/> (circular: build cairo and all its recommended
+      dependencies, including harfbuzz, first, then rebuild harfbuzz if the
+      cairo backend is needed),
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref role="first" linkend="graphite2"/> (required for building
-        <xref role="nodep" linkend="texlive"/> or 
-        <xref role="nodep" linkend="libreoffice"/> with system harfbuzz)
-      <xref linkend="python2"/> (required for the testsuite), and
-      <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink> (for
-      the testsuite)
+      <xref linkend="gtk-doc"/>, and
+      <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
+      (Python 2 or Python 3 module, for the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cairo"/>,
+      <xref linkend="cairo"/> (circular: build cairo and all its recommended
+      dependencies, including harfbuzz, first, then rebuild harfbuzz if the
+      cairo backend is needed),
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref role="first" linkend="graphite2"/> (required for building
-        <xref role="nodep" linkend="texlive"/> or 
-        <xref role="nodep" linkend="libreoffice"/> with system harfbuzz)
-      <xref linkend="python2"/> (required for the testsuite),
-      <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink> (for
-      the testsuite)
+      <xref linkend="gtk-doc"/>, and
+      <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
+      (Python 2 or Python 3 module, for the testsuite)
     </para>
 @z
 
@@ -189,12 +192,12 @@
 @z
 
 @x
-      <option>--with-graphite2</option>: This switch enables
+      <parameter>--with-graphite2</parameter>: This switch enables
       <application>Graphite2</application> support, which is required for
       building <xref linkend="texlive"/> or <xref linkend="libreoffice"/>
       with system harfbuzz.
 @y
-      <option>--with-graphite2</option>:
+      <parameter>--with-graphite2</parameter>:
       本スイッチは <application>Graphite2</application> サポートを有効にします。
       <xref linkend="texlive"/> または <xref
       linkend="libreoffice"/> をインストール済 harfbuzz を用いてビルドする場合に必要となります。
@@ -222,8 +225,8 @@
           hb-view (only if cairo is installed)
         </seg>
         <seg>
-          libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-subset,
-          and libharfbuzz-icu.so
+          libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-icu.so, and 
+          libharfbuzz-subset.so
         </seg>
         <seg>
           /usr/{include,lib/cmake,share/gtk-doc/html}/harfbuzz
@@ -234,8 +237,8 @@
           hb-view (cairo インストール時のみ)
         </seg>
         <seg>
-          libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-subset,
-          libharfbuzz-icu.so
+          libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-icu.so,
+          libharfbuzz-subset.so
         </seg>
         <seg>
           /usr/{include,lib/cmake,share/gtk-doc/html}/harfbuzz

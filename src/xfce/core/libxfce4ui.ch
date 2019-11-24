@@ -80,13 +80,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/> and
+      <xref linkend="gtk3"/> and
       <xref linkend="xfconf"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>,
       <xref linkend="xfconf"/>
     </para>
 @z
@@ -95,14 +95,14 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
 <!-- gtk3 is required later by garcon -->
-      <xref linkend="gtk3"/> and
+      <xref linkend="gtk2"/> and
       <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
 <!-- gtk3 is required later by garcon -->
-      <xref linkend="gtk3"/>,
+      <xref linkend="gtk2"/> and
       <xref linkend="startup-notification"/>
     </para>
 @z

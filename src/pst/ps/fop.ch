@@ -116,10 +116,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="junit"/> (to run tests),
+<!-- Included into ant      <xref linkend="junit"/> (to run tests),-->
       <xref linkend="x-window-system"/> (to run tests),
-      <xref linkend="maven"/> (an alternate build system),
-      <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>, and
+<!--      <xref linkend="maven"/> (an alternate build system), not funcional
+      with fop-2.3          -->
+      <ulink url="http://jai-tools.blogspot.com/">JAI Image I/O Tools</ulink>, and
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
 <!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
      Some were listed here, but not all. I am not sure it is possible to
@@ -129,10 +130,11 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="junit"/> （テスト実行のため）,
+<!-- Included into ant      <xref linkend="junit"/> (to run tests),-->
       <xref linkend="x-window-system"/> (to run tests),
-      <xref linkend="maven"/> (an alternate build system),
-      <ulink url="https://java.net/projects/jai-imageio">JAI Image I/O Tools</ulink>, and
+<!--      <xref linkend="maven"/> (an alternate build system), not funcional
+      with fop-2.3          -->
+      <ulink url="http://jai-tools.blogspot.com/">JAI Image I/O Tools</ulink>, and
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
 <!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
      Some were listed here, but not all. I am not sure it is possible to
@@ -186,14 +188,16 @@
 @z
 
 @x
-        The <command>javadoc</command> command that ships with OpenJDK 10 has
-        become much more strict than previous versions regarding conformance of
+        The <command>javadoc</command> command that ships with OpenJDK 10 and
+        later has
+        become much stricter than previous versions regarding conformance of
         the Javadoc comments in source code to HTML. The FOP documentation does
         not meet those standards, so the conformance checks have to be
         disabled. This can be done with the following command:
 @y
-        The <command>javadoc</command> command that ships with OpenJDK 10 has
-        become much more strict than previous versions regarding conformance of
+        The <command>javadoc</command> command that ships with OpenJDK 10 and
+        later has
+        become much stricter than previous versions regarding conformance of
         the Javadoc comments in source code to HTML. The FOP documentation does
         not meet those standards, so the conformance checks have to be
         disabled. This can be done with the following command:

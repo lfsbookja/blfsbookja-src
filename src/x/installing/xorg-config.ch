@@ -8,9 +8,10 @@
 % $Date::                           $
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 @y
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 @z
 
 @x
@@ -52,9 +53,9 @@
 @x
         When testing <application>Xorg</application> with the
         <application>twm</application> window manager, there will be several
-        warnings in the Xorg log file, <filename revision="sysv">
-        /var/log/Xorg.0.log</filename><filename revision="systemd">
-        $HOME/.local/share/xorg/Xorg.0.log</filename>, about missing font
+        warnings in the Xorg log file, <!--<filename revision="sysv">
+        /var/log/Xorg.0.log</filename><filename revision="systemd">-->
+        $HOME/.local/share/xorg/Xorg.0.log<!--</filename>-->, about missing font
         files. In addition, there will be several warnings on the text mode
         terminal (usually tty1) about missing fonts. These warnings do not
         affect functionality, but can be removed if desired by installing
@@ -62,9 +63,9 @@
 @y
         When testing <application>Xorg</application> with the
         <application>twm</application> window manager, there will be several
-        warnings in the Xorg log file, <filename revision="sysv">
-        /var/log/Xorg.0.log</filename><filename revision="systemd">
-        $HOME/.local/share/xorg/Xorg.0.log</filename>, about missing font
+        warnings in the Xorg log file, <!--<filename revision="sysv">
+        /var/log/Xorg.0.log</filename><filename revision="systemd">-->
+        $HOME/.local/share/xorg/Xorg.0.log<!--</filename>-->, about missing font
         files. In addition, there will be several warnings on the text mode
         terminal (usually tty1) about missing fonts. These warnings do not
         affect functionality, but can be removed if desired by installing

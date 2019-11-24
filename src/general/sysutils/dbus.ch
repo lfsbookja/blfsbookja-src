@@ -90,26 +90,32 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="expat"/>
+    <bridgehead renderas="sect4" revision="systemd">Required</bridgehead>
+    <para role="required" revision="systemd">
+      <xref linkend="systemd"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="expat"/>
+    <bridgehead renderas="sect4" revision="systemd">&Required;</bridgehead>
+    <para role="required" revision="systemd">
+      <xref linkend="systemd"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="xorg7-lib"/> (for <command>dbus-launch</command> program)
+      <xref linkend="xorg7-lib"/> (for <command>dbus-launch</command> program) 
+      <phrase revision="sysv">and <xref linkend="elogind"/> (These are
+      circular dependencies. First build without them, and then again after 
+      both packages are installed.)</phrase>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="xorg7-lib"/> (<command>dbus-launch</command> プログラムのため)
+      <xref linkend="xorg7-lib"/> (<command>dbus-launch</command> プログラムのため) 
+      <phrase revision="sysv">and <xref linkend="elogind"/> (These are
+      circular dependencies. First build without them, and then again after 
+      both packages are installed.)</phrase>
     </para>
 @z
 
@@ -192,19 +198,55 @@
 @z
 
 @x
+      The shared library needs to be moved to
+      <filename class="directory">/lib</filename>, and as a result the
+      <filename class="extension">.so</filename> file in
+      <filename class="directory">/usr/lib</filename> will need to be
+      recreated. Run the following command as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      The shared library needs to be moved to
+      <filename class="directory">/lib</filename>, and as a result the
+      <filename class="extension">.so</filename> file in
+      <filename class="directory">/usr/lib</filename> will need to be
+      recreated. Run the following command as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      If you are using a DESTDIR install,
+      <command>dbus-daemon-launch-helper</command> needs to be fixed
+      afterwards. Issue, as <systemitem class="username">root</systemitem>
+      user:
+@y
+      If you are using a DESTDIR install,
+      <command>dbus-daemon-launch-helper</command> needs to be fixed
+      afterwards. Issue, as <systemitem class="username">root</systemitem>
+      user:
+@z
+
+@x
       If you are still building your system in chroot or you did not start the
       daemon yet, but you want to compile some packages that require
-      <application>D-Bus</application>, generate
+      <application>D-Bus</application>, generate the 
       <application>D-Bus</application> UUID to avoid warnings when compiling
       some packages with the following command as the
       <systemitem class="username">root</systemitem> user:
 @y
       If you are still building your system in chroot or you did not start the
       daemon yet, but you want to compile some packages that require
-      <application>D-Bus</application>, generate
+      <application>D-Bus</application>, generate the 
       <application>D-Bus</application> UUID to avoid warnings when compiling
       some packages with the following command as the
       <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      If using <xref linkend="elogind"/>, create a symlink to the
+      <filename>/var/lib/dbus/machine-id</filename> file:
+@y
+      If using <xref linkend="elogind"/>, create a symlink to the
+      <filename>/var/lib/dbus/machine-id</filename> file:
 @z
 
 @x
@@ -264,29 +306,59 @@
 @z
 
 @x
-      <parameter>--disable-systemd</parameter>: This switch disables systemd
-      support in <application>D-Bus</application>.
+      <parameter>--disable-doxygen-docs</parameter>: This switch disables
+      doxygen documentation build and install, if you have
+      <application>doxygen</application> installed. If
+      <application>doxygen</application> is installed, and you wish to build
+      them, remove this parameter.
 @y
-      <parameter>--disable-systemd</parameter>: This switch disables systemd
-      support in <application>D-Bus</application>.
+      <parameter>--disable-doxygen-docs</parameter>: This switch disables
+      doxygen documentation build and install, if you have
+      <application>doxygen</application> installed. If
+      <application>doxygen</application> is installed, and you wish to build
+      them, remove this parameter.
 @z
 
 @x
-      <parameter>--without-systemdsystemunitdir</parameter>: This switch
-      prevents installation of systemd unit files.
+      <parameter>--disable-xml-docs</parameter>: This switch disables html
+      documentation build and install, if you have
+      <application>xmlto</application> installed. If
+      <application>xmlto</application> is installed, and you wish to build
+      them, remove this parameter.
 @y
-      <parameter>--without-systemdsystemunitdir</parameter>: This switch
-      prevents installation of systemd unit files.
+      <parameter>--disable-xml-docs</parameter>: This switch disables html
+      documentation build and install, if you have
+      <application>xmlto</application> installed. If
+      <application>xmlto</application> is installed, and you wish to build
+      them, remove this parameter.
+@z
+
+@x
+      <parameter>--enable-user-session</parameter>: This parameter enables
+      per-user DBus sessions with
+      <phrase revision="sysv"><application>elogind</application>.</phrase>
+      <phrase revision="systemd"><application>systemd</application>.</phrase>
+@y
+      <parameter>--enable-user-session</parameter>: This parameter enables
+      per-user DBus sessions with
+      <phrase revision="sysv"><application>elogind</application>.</phrase>
+      <phrase revision="systemd"><application>systemd</application>.</phrase>
+@z
+
+@x
+      <parameter>--with-systemd{user,system}unitdir=</parameter>: These
+      switches disable installation of systemd units on elogind based systems.
+@y
+      <parameter>--with-systemd{user,system}unitdir=</parameter>: These
+      switches disable installation of systemd units on elogind based systems.
 @z
 
 @x
       <parameter>--with-console-auth-dir=/run/console/</parameter>: This
-      parameter specifies location of the
-      <application>ConsoleKit</application> auth dir.
+      parameter specifies the directory to check for console ownerhip.
 @y
       <parameter>--with-console-auth-dir=/run/console/</parameter>: This
-      parameter specifies location of the
-      <application>ConsoleKit</application> auth dir.
+      parameter specifies the directory to check for console ownerhip.
 @z
 
 @x
@@ -527,7 +599,9 @@
         <seg>
           /etc/dbus-1,
           /usr/{include,lib}/dbus-1.0,
+          /usr/lib/cmake/DBus1,
           /usr/share/dbus-1,
+          /usr/share/xml/dbus-1,
           /usr/share/doc/dbus-&dbus-version;, and
           /var/{lib,run}/dbus
         </seg>
@@ -543,7 +617,9 @@
         <seg>
           /etc/dbus-1,
           /usr/{include,lib}/dbus-1.0,
+          /usr/lib/cmake/DBus1,
           /usr/share/dbus-1,
+          /usr/share/xml/dbus-1,
           /usr/share/doc/dbus-&dbus-version;,
           /var/{lib,run}/dbus
         </seg>

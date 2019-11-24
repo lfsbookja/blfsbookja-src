@@ -80,13 +80,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib2"/> and
-      <xref linkend="js52"/>
+      <xref linkend="js60"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="js52"/>
+      <xref linkend="js60"/>
     </para>
 @z
 
@@ -107,9 +107,8 @@
     <para role="optional">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="gtk-doc"/>, <phrase revision="systemd">and </phrase>
-      <xref linkend="libxslt"/><phrase revision="sysv">, and
-      <xref linkend="linux-pam"/></phrase>
+      <xref linkend="gtk-doc"/>, and
+      <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -117,8 +116,7 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="libxslt"/><phrase revision="sysv">,
-      <xref linkend="linux-pam"/></phrase>
+      <xref linkend="libxslt"/>
     </para>
 @z
 
@@ -191,28 +189,15 @@
     <title>&CommandExplanations;</title>
 @z
 
-@x revision="sysv"
-      <parameter>--enable-libsystemd-login=no</parameter>: This parameter fixes
-      building without <application>systemd</application>, which is not part
-      of LFS/BLFS. If you use <application>systemd</application>,
-      replace "no" by "yes".
-@y
-      <parameter>--enable-libsystemd-login=no</parameter>: This parameter fixes
-      building without <application>systemd</application>, which is not part
-      of LFS/BLFS. If you use <application>systemd</application>,
-      replace "no" by "yes".
-@z
-
-@x revision="sysv"
-      <parameter>--with-authfw=shadow</parameter>: This parameter configures the
+@x
+      <option>--with-authfw=shadow</option>: This switch enables the
       package to use the <application>Shadow</application> rather than the
-      <application>Linux-PAM</application> Authentication framework. Change
-      the argument to 'pam' if you would like to use 
-      <application>Linux-PAM</application>.
+      <application>Linux PAM</application> Authentication framework. Use it
+      if you have not installed <application>Linux PAM</application>.
 @y
-      <parameter>--with-authfw=shadow</parameter>:
-      本パラメーターは認証フレームワークとして <application>Linux-PAM</application> ではなく <application>Shadow</application> を使うことを指定します。
-      <application>Linux-PAM</application> とする場合は本パラメーターの引数を 'pam' に変えてください。
+      <option>--with-authfw=shadow</option>:
+      本スイッチは認証フレームワークとして <application>Linux-PAM</application> ではなく <application>Shadow</application> を使うことを指定します。
+      <application>Linux-PAM</application> をインストールしていない場合は、本スイッチを用いてください。
 @z
 
 @x

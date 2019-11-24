@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libstatgrab-buildsize     "9.0 MB (with the test suite)">
-  <!ENTITY libstatgrab-time          "0.1 SBU (1.6 SBU with the test suite)">
+  <!ENTITY libstatgrab-buildsize     "7.4 MB (with tests)">
+  <!ENTITY libstatgrab-time          "0.1 SBU (add 1.6 SBU for tests)">
 @y
-  <!ENTITY libstatgrab-buildsize     "9.0 MB (テストスイート込み)">
+  <!ENTITY libstatgrab-buildsize     "7.4 MB (テスト込み)">
   <!ENTITY libstatgrab-time          "0.1 SBU (テストスイート実施時はさらに 1.6 SBU)">
 @z
 

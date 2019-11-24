@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY mousepad-time          "less than 0.1 SBU">
-@y
-  <!ENTITY mousepad-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to Mousepad</title>
 @y
     <title>&IntroductionTo1;Mousepad&IntroductionTo2;</title>
@@ -85,14 +79,16 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtksourceview"/> (optionally, it can be built with
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/gtksourceview/2.10/">gtksourceview-2</ulink>)
+      <ulink url="http://ftp.gnome.org/pub/gnome/sources/gtksourceview/2.10/">gtksourceview-2</ulink>) and 
+      <xref linkend="xfconf"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtksourceview"/> (任意として
       <ulink url="http://ftp.gnome.org/pub/gnome/sources/gtksourceview/2.10/">gtksourceview-2</ulink>
-      を使ってビルドすることも可)
+      を使ってビルドすることも可),
+      <xref linkend="xfconf"/>
     </para>
 @z
 

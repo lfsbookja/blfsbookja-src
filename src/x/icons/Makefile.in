@@ -236,7 +236,7 @@ CHANGE_FILES = \
 	gnome-icon-theme.ch          \
 	icons.ch                     \
 	breeze-icons.ch              \
-	gnome-themes-standard.ch     \
+	gnome-themes-extra.ch        \
 	lxde-icon-theme.ch           \
 	gnome-icon-theme-extras.ch   \
 	hicolor-icon-theme.ch        \

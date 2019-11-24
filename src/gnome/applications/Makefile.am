@@ -30,8 +30,7 @@ CHANGE_FILES = \
 	gucharmap.ch              \
 	network-manager-applet.ch \
 	seahorse.ch               \
-	vinagre.ch                \
-	vino.ch
+	vinagre.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

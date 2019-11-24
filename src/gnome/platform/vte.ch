@@ -96,30 +96,32 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
-      <xref linkend="gnutls"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gnutls"/>, and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gnutls"/>
+      <xref linkend="gnutls"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="vala"/>, and
-      <ulink url="http://glade.gnome.org/">Glade</ulink>
+      <xref linkend="fribidi"/>,
+      <xref linkend="gtk-doc"/>, and
+      <ulink url="https://wiki.gnome.org/Projects/GTK/Roadmap/GTK4">GTK+-4</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="fribidi"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="vala"/>,
-      <ulink url="http://glade.gnome.org/">Glade</ulink>
+      <ulink url="https://wiki.gnome.org/Projects/GTK/Roadmap/GTK4">GTK+-4</ulink>
     </para>
 @z
 
@@ -143,9 +145,9 @@
 @z
 
 @x
-      To test the results, issue <command>make check</command>.
+      To test the results, issue <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -161,15 +163,35 @@
 @z
 
 @x
-      <parameter>--enable-introspection</parameter>: This switch enables
-      <application>Gobject Introspection</application> bindings.
-      Remove if you don't have <xref linkend="gobject-introspection"/>
-      installed.
+      <option>-Dgnutls=false</option>: Add this switch if you do not
+      want to enable GNUTLS support.
 @y
-      <parameter>--enable-introspection</parameter>: This switch enables
-      <application>Gobject Introspection</application> bindings.
-      Remove if you don't have <xref linkend="gobject-introspection"/>
-      installed.
+      <option>-Dgnutls=false</option>: Add this switch if you do not
+      want to enable GNUTLS support.
+@z
+
+@x
+      <option>-Dvapi=false</option>: Add this switch if you do not
+      want to enable vala bindings.
+@y
+      <option>-Dvapi=false</option>: Add this switch if you do not
+      want to enable vala bindings.
+@z
+
+@x
+      <option>-Dfribidi=false</option>: Omit this switch if want to enable 
+      bidirectional capabilities.
+@y
+      <option>-Dfribidi=false</option>: Omit this switch if want to enable 
+      bidirectional capabilities.
+@z
+
+@x
+      <option>-Ddocs=true</option>: Add this switch if wish to 
+      build the documentation.
+@y
+      <option>-Ddocs=true</option>: Add this switch if wish to 
+      build the documentation.
 @z
 
 @x

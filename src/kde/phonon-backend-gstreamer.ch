@@ -124,16 +124,6 @@
 @z
 
 @x
-    <note><para>This package unpacks to the directory 
-      phonon-gstreamer-&phonon-backend-gstreamer-version;.
-    </para></note>
-@y
-    <note><para>This package unpacks to the directory 
-      phonon-gstreamer-&phonon-backend-gstreamer-version;.
-    </para></note>
-@z
-
-@x
     <para>Install <application>Phonon-backend-gstreamer</application> by
     running the following commands:</para>
 @y

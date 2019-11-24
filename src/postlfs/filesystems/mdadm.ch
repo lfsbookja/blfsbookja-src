@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mdadm-buildsize     "6.7 MB (10 MB with tests)">
-  <!ENTITY mdadm-time          "less than 0.1 SBU (tests take about an hour, only partially processor dependent)">
+  <!ENTITY mdadm-buildsize     "4.9 MB (10 MB with tests)">
+  <!ENTITY mdadm-time          "0.1 SBU (tests take about an hour, only partially processor dependent)">
 @y
-  <!ENTITY mdadm-buildsize     "6.7 MB (テスト込みで 10 MB)">
-  <!ENTITY mdadm-time          "&LessThan1;0.1 SBU&LessThan2; (tests take about an hour, only partially processor dependent)">
+  <!ENTITY mdadm-buildsize     "4.9 MB (テスト込みで 10 MB)">
+  <!ENTITY mdadm-time          "0.1 SBU (tests take about an hour, only partially processor dependent)">
 @z
 
 @x
@@ -112,8 +112,14 @@
 @z
 
 @x
-    <para>Install <application>mdadm</application> by running the following
-    commands:</para>
+    <para>Fix a build error introduced by gcc-7.1:</para>
+@y
+    <para>Fix a build error introduced by gcc-7.1:</para>
+@z
+
+@x
+    <para>Build <application>mdadm</application> by running the following
+    command:</para>
 @y
     <para>
     以下のコマンドを実行して <application>mdadm</application> をビルドします。

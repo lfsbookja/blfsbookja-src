@@ -153,14 +153,23 @@
 @z
 
 @x
-      You may wish to add an entry to
-      <systemitem class="username">root</systemitem>'s (or any other user who has
-      write privilege to <filename class="directory">/usr/share/hwdata</filename>)
-      crontab to automatically update the <filename>pci.ids</filename> file
-      periodically.
+      You should update the <filename>/usr/share/hwdata/pci.ids</filename> file
+      periodically. <phrase revision="sysv">If you've installed
+      <xref linkend="fcron"/> and completed the section on periodic jobs,
+      execute</phrase><phrase revision="systemd">Execute</phrase> the following
+      commands, as the  <systemitem class="username">root</systemitem> user,
+      to create a <phrase revision="sysv">weekly cron job:</phrase>
+      <phrase revision="systemd">systemd timer to update it weekly on Sundays
+      at 2:30 A.M. (local time):</phrase>
 @y
-      crontab に対して <systemitem class="username">root</systemitem> ユーザー (または <filename
-      class='directory'>/usr/share/hwdata</filename> ディレクトリに対して書き込み権限を有する他のユーザー) の設定を行って、<filename>pci.ids</filename> ファイルの定期的な自動更新を実現することもできます。
+      You should update the <filename>/usr/share/hwdata/pci.ids</filename> file
+      periodically. <phrase revision="sysv">If you've installed
+      <xref linkend="fcron"/> and completed the section on periodic jobs,
+      execute</phrase><phrase revision="systemd">Execute</phrase> the following
+      commands, as the  <systemitem class="username">root</systemitem> user,
+      to create a <phrase revision="sysv">weekly cron job:</phrase>
+      <phrase revision="systemd">systemd timer to update it weekly on Sundays
+      at 2:30 A.M. (local time):</phrase>
 @z
 
 @x
@@ -222,13 +231,15 @@
 @z
 
 @x update-pciids
-            fetches the current version of the PCI ID list. Requires
+             fetches the current version of the PCI ID list. <!-- Requires
             <xref linkend="curl"/>, <xref linkend="lynx"/> or
             <xref linkend="wget"/>.
+            -->
 @y
-            fetches the current version of the PCI ID list. Requires
+             fetches the current version of the PCI ID list. <!-- Requires
             <xref linkend="curl"/>, <xref linkend="lynx"/> or
             <xref linkend="wget"/>.
+            -->
 @z
 
 @x libpci.so

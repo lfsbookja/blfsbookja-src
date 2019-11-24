@@ -113,15 +113,15 @@
       <xref linkend="db"/>,
       <xref linkend="cracklib"/>,
       <xref linkend="libtirpc"/> and
-      <ulink url="http://www.prelude-ids.org/">Prelude</ulink>
+      <ulink url="http://www.prelude-siem.org">Prelude</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
       <xref linkend="cracklib"/>,
-      <xref linkend="libtirpc"/>,
-      <ulink url="http://www.prelude-ids.org/">Prelude</ulink>
+      <xref linkend="libtirpc"/> and
+      <ulink url="http://www.prelude-siem.org">Prelude</ulink>
     </para>
 @z
 
@@ -132,9 +132,8 @@
       <xref linkend="docbook-xsl"/>,
       <xref linkend="fop"/>,
       <xref linkend="libxslt"/> and either
-      <xref linkend="w3m"/> or
-      <ulink url="http://elinks.or.cz/">elinks</ulink> (but with a link calling it
-      '<application>links</application>') and remove the documentation switch.
+      <xref linkend="lynx"/> or
+      <ulink url="&w3m-url;">W3m</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (ドキュメント再生成時)</bridgehead>
@@ -143,9 +142,8 @@
       <xref linkend="docbook-xsl"/>,
       <xref linkend="fop"/>,
       <xref linkend="libxslt"/> and either
-      <xref linkend="w3m"/> or
-      <ulink url="http://elinks.or.cz/">elinks</ulink> (but with a link calling it
-      '<application>links</application>') and remove the documentation switch.
+      <xref linkend="lynx"/> or
+      <ulink url="&w3m-url;">W3m</ulink>
     </para>
 @z
 
@@ -212,19 +210,23 @@
 @z
 
 @x
-      <parameter>--disable-regenerate-docu</parameter> : This switch prevents
-     this version of the package trying to build its documentation, and failing,
-     if the required dependencies <emphasis>except</emphasis>
-     <xref linkend="w3m"/> are present, but <xref linkend="Links"/> is present.
-     Remove this switch if you have installed w3m (or elinks, with a link so it
-     can be invoked as 'links').
+      <option>--disable-regenerate-docu</option> : If the needed dependencies
+      (<xref linkend="DocBook"/>, <xref linkend="docbook-xsl"/>, <xref
+      linkend="libxslt"/>, and <xref linkend="lynx"/> or <ulink
+      url="&w3m-url;">W3m</ulink>) are installed, the manual pages, and the
+      html and text documentations are (re)generated and installed.
+      Furthermore, if <xref linkend="fop"/> is installed, the PDF
+      documentation is generated and installed. Use this switch if you do not
+      want to rebuild the documentation.
 @y
-      <parameter>--disable-regenerate-docu</parameter> : This switch prevents
-     this version of the package trying to build its documentation, and failing,
-     if the required dependencies <emphasis>except</emphasis>
-     <xref linkend="w3m"/> are present, but <xref linkend="Links"/> is present.
-     Remove this switch if you have installed w3m (or elinks, with a link so it
-     can be invoked as 'links').
+      <option>--disable-regenerate-docu</option> : If the needed dependencies
+      (<xref linkend="DocBook"/>, <xref linkend="docbook-xsl"/>, <xref
+      linkend="libxslt"/>, and <xref linkend="lynx"/> or <ulink
+      url="&w3m-url;">W3m</ulink>) are installed, the manual pages, and the
+      html and text documentations are (re)generated and installed.
+      Furthermore, if <xref linkend="fop"/> is installed, the PDF
+      documentation is generated and installed. Use this switch if you do not
+      want to rebuild the documentation.
 @z
 
 @x

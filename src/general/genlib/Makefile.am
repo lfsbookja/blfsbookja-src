@@ -11,6 +11,7 @@ CHANGE_FILES = \
 	apr-util.ch \
 	aspell.ch \
 	boost.ch \
+	brotli.ch \
 	clucene.ch \
 	dbus-glib.ch \
 	enchant.ch \
@@ -24,12 +25,14 @@ CHANGE_FILES = \
 	gobject-introspection.ch \
         grantlee.ch \
 	gsl.ch \
+	gspell.ch \
 	icu.ch \
-	js52.ch \
+	jansson.ch \
 	js60.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \
+	libaio.ch \
 	libarchive.ch \
 	libassuan.ch \
 	libatasmart.ch \
@@ -41,6 +44,7 @@ CHANGE_FILES = \
 	libesmtp.ch \
 	libgcrypt.ch \
 	libgpg-error.ch \
+	libgrss.ch \
 	libgsf.ch \
 	libgudev.ch \
 	libgusb.ch \
@@ -63,13 +67,12 @@ CHANGE_FILES = \
 	libunique.ch \
 	libunistring.ch \
 	libusb.ch \
-	libusb-compat.ch \
 	libuv.ch \
 	libwacom.ch \
 	libxkbcommon.ch \
 	libxml2.ch \
 	libxslt.ch \
-	libzeitgeist.ch \
+	libyaml.ch \
 	lzo.ch \
 	mtdev.ch \
 	nodejs.ch \
@@ -86,8 +89,7 @@ CHANGE_FILES = \
 	wayland.ch \
 	wayland-protocols.ch \
 	wv.ch \
-	xapian.ch \
-	yaml.ch
+	xapian.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
@@ -103,3 +105,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

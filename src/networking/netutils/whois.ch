@@ -146,20 +146,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <option>HAVE_LIBIDN=1</option>: This make variable adds internationalized
-      string handling support to <command>whois</command>.
-@y
-      <option>HAVE_LIBIDN=1</option>:
-      <command>whois</command> において文字列処理に対する国際化サポートを有効にします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

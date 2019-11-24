@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libassuan-buildsize     "5.7 MB (with tests)">
-  <!ENTITY libassuan-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libassuan-buildsize     "6.7 MB (with tests)">
+  <!ENTITY libassuan-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libassuan-buildsize     "5.7 MB (テスト込み)">
-  <!ENTITY libassuan-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
+  <!ENTITY libassuan-buildsize     "6.7 MB (テスト込み)">
+  <!ENTITY libassuan-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -136,10 +136,12 @@
 @z
 
 @x
-      If you wish to build documentation, you must have
-      <xref linkend="texlive"/> installed and issue the following commands:
+      The above commands build the documentation in html and plaintext formats.
+      If you wish to build alternate formats of the documentation, you must
+      have <xref linkend="texlive"/> installed and issue the following commands:
 @y
-      ドキュメントをビルドする場合は、<xref linkend="texlive"/> をインストールしておく必要があります。
+      上のコマンドからは html 形式とプレーンテキスト形式によるドキュメントが生成されます。
+      その他のドキュメント形式を生成したい場合は <xref linkend="texlive"/> をインストールしておく必要があります。
       その上で以下のコマンドを実行します。
 @z
 
@@ -156,11 +158,11 @@
 @z
 
 @x
-      If you built the documentation, install it by running the
-      following commands as the
+      If you built alternate formats of the documentation, install them by
+      running the following commands as the
       <systemitem class="username">root</systemitem> user:
 @y
-      ドキュメントをビルドした場合は、<systemitem
+      上で種々のドキュメントをビルドした場合は、<systemitem
        class="username">root</systemitem> ユーザーになり以下のコマンドを実行することでインストールします。
 @z
 

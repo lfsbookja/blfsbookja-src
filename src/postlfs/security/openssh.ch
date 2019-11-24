@@ -14,12 +14,12 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "44 MB (add 7 MB for tests)">
-  <!ENTITY openssh-time          "0.4 SBU (running the tests takes 18+ minutes,
+  <!ENTITY openssh-buildsize     "45 MB (add 12 MB for tests)">
+  <!ENTITY openssh-time          "0.4 SBU (running the tests takes 17+ minutes,
                                   irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "44 MB (テスト実施時はさらに 11 MB)">
-  <!ENTITY openssh-time          "0.4 SBU (テスト実施はプロセッサーの処理スピードとは無関係に最低でも 18 分以上)">
+  <!ENTITY openssh-buildsize     "45 MB (テスト実施時はさらに 12 MB)">
+  <!ENTITY openssh-time          "0.4 SBU (テスト実施はプロセッサーの処理スピードとは無関係に最低でも 17 分以上)">
 @z
 
 @x
@@ -84,38 +84,15 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-        <para>Required patch: <ulink url="&patch-root;/openssh-&openssh-version;-openssl-1.1.0-1.patch"/></para>
-@y
-        <para>必須のパッチ: <ulink url="&patch-root;/openssh-&openssh-version;-openssl-1.1.0-1.patch"/></para>
-@z
-
-@x
     <bridgehead renderas="sect3">OpenSSH Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;OpenSSH&Dependencies2;</bridgehead>
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="openssl"/> or
-      <ulink url="http://www.libressl.org/">LibreSSL Portable</ulink></para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="openssl"/> または
-      <ulink url="http://www.libressl.org/">LibreSSL Portable</ulink></para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gdb"/> (for tests),
       <xref linkend="linux-pam"/>,
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
@@ -127,12 +104,13 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gdb"/> (for tests),
       <xref linkend="linux-pam"/>,
       <xref linkend="x-window-system"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
       <ulink url="http://www.libressl.org/">LibreSSL Portable</ulink>,
-      <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>,
+      <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
 @z

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY talloc-buildsize     "8.0 MB (with tests)">
-  <!ENTITY talloc-time          "0.3 SBU (with tests)">
+  <!ENTITY talloc-buildsize     "9.9 MB (with tests)">
+  <!ENTITY talloc-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY talloc-buildsize     "8.0 MB (テスト込み)">
-  <!ENTITY talloc-time          "0.3 SBU (テスト込み)">
+  <!ENTITY talloc-buildsize     "9.9 MB (テスト込み)">
+  <!ENTITY talloc-time          "0.4 SBU (テスト込み)">
 @z
 
 @x
@@ -140,12 +140,8 @@
 
 @x
       To check the results, issue <command>make check</command>. 
-      <!-- The python tests fail due to missing files. - Not applicable
-      when testing for 8.1 -->
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      <!-- The python tests fail due to missing files. - Not applicable
-      when testing for 8.1 -->
 @z
 
 @x
@@ -158,16 +154,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <option>--extra-python=PYTHON</option>: This switch enables building
-      selected libraries for the specified additional version of Python
-      (example: <option>--extra-python=/usr/bin/python3</option>).
-@y
-      <option>--extra-python=PYTHON</option>:
-      このスイッチは指定された Python のバージョンに対応したライブラリを生成します。
-      (例: <option>--extra-python=/usr/bin/python3</option>)
 @z
 
 @x
@@ -194,6 +180,7 @@
           libpytalloc-util.cpython-35m-x86-64-linux-gnu.so,
           libpytalloc-util.so,
           libtalloc.so,
+          <!-- NOTE: The below is Optional now. -->
           talloc.so (Python-2 Module) and
           talloc.cpython-35m-x86_64-linux-gnu.so (Python-3 Module)
         </seg>
@@ -208,6 +195,7 @@
           libpytalloc-util.cpython-35m-x86-64-linux-gnu.so,
           libpytalloc-util.so,
           libtalloc.so,
+          <!-- NOTE: The below is Optional now. -->
           talloc.so (Python-2 モジュール),
           talloc.cpython-35m-x86_64-linux-gnu.so (Python-3 モジュール)
         </seg>

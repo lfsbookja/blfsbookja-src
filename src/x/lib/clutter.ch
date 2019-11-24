@@ -93,11 +93,7 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended" revision="sysv">
-      <xref linkend="gobject-introspection"/> and
-      <xref linkend="gtk3"/>
-    </para>
-    <para role="recommended" revision="systemd">
+    <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libgudev"/>,
@@ -107,11 +103,7 @@
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended" revision="sysv">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk3"/>
-    </para>
-    <para role="recommended" revision="systemd">
+    <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libgudev"/>,
@@ -123,29 +115,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional" revision="sysv">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libgudev"/>,
-      <xref linkend="libinput"/>,
-      <xref linkend="libxkbcommon"/>,
-      <ulink url="https://github.com/kergoth/tslib">Tslib</ulink>, and
-      <xref linkend="wayland"/>
-    </para>
-    <para role="optional" revision="systemd">
+    <para role="optional">
       <xref linkend="gtk-doc"/> and
       <ulink url="https://github.com/kergoth/tslib">Tslib</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional" revision="sysv">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libgudev"/>,
-      <xref linkend="libinput"/>,
-      <xref linkend="libxkbcommon"/>,
-      <ulink url="https://github.com/kergoth/tslib">Tslib</ulink>,
-      <xref linkend="wayland"/>
-    </para>
-    <para role="optional" revision="systemd">
+    <para role="optional">
       <xref linkend="gtk-doc"/>,
       <ulink url="https://github.com/kergoth/tslib">Tslib</ulink>
     </para>

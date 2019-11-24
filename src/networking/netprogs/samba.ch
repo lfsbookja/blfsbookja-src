@@ -89,7 +89,7 @@
       <xref linkend="jansson"/>,
       <xref linkend="libtirpc"/>,
       <xref linkend="lmdb"/>,
-      <xref linkend="python2"/>, and
+      <xref linkend="python3"/>, and
       <xref linkend="rpcsvc-proto"/>
     </para>
 @y
@@ -98,7 +98,7 @@
       <xref linkend="jansson"/>,
       <xref linkend="libtirpc"/>,
       <xref linkend="lmdb"/>,
-      <xref linkend="python2"/>,
+      <xref linkend="python3"/>,
       <xref linkend="rpcsvc-proto"/>
     </para>
 @z
@@ -106,19 +106,23 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="fuse3"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="libxslt"/> (for documentation),
-      <xref linkend="perl-parse-yapp"/>
-      <xref linkend="pycrypto"/>, and
+      <xref linkend="linux-pam"/>,
+      <xref linkend="perl-parse-yapp"/>,
+      <xref linkend="pycryptodome"/>, and
       <xref linkend="openldap"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="fuse3"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="libxslt"/> (ドキュメント生成のため),
-      <xref linkend="perl-parse-yapp"/>
-      <xref linkend="pycrypto"/>,
+      <xref linkend="linux-pam"/>,
+      <xref linkend="perl-parse-yapp"/>,
+      <xref linkend="pycryptodome"/>,
       <xref linkend="openldap"/>
     </para>
 @z
@@ -127,31 +131,34 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
+      <xref linkend="bind"/>,
       <xref linkend="cups"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="gdb"/>,
       <xref linkend="git"/>,
       <xref linkend="gnupg2"/> (required for ADS and testsuite),
       <xref linkend="gnutls"/>,
-      <xref linkend="jansson"/>,
+      <xref linkend="libaio"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libnsl"/>,
-      <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nss"/>,
       <xref linkend="popt"/>,
       <xref linkend="talloc"/> (included),
       <xref linkend="vala"/>,
       <xref linkend="valgrind"/> (optionally used by the test suite),
+      <xref linkend="wireshark"/> (module installed),
       <xref linkend="xfsprogs"/>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
       <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
+      <ulink url="https://cwrap.org/">cwrap</ulink>,
+      <ulink url="&pypi;/dnspython/">dnspython</ulink>,
+      <ulink url="https://packages.debian.org/stretch/fam/">FAM</ulink>,
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
+      <ulink url="https://github.com/gluster/glusterfs/">GlusterFS</ulink>,
       <ulink url="http://www.h5l.org/">Heimdal</ulink> (included),
-    <!--  <ulink url="http://www.digip.org/jansson/">Jansson</ulink>, -->
-      <ulink url="http://ftp.de.debian.org/debian/pool/main/liba/libaio/">libaio</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
@@ -164,37 +171,40 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="avahi"/>,
+      <xref linkend="bind"/>,
       <xref linkend="cups"/>,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="gdb"/>,
       <xref linkend="git"/>,
       <xref linkend="gnupg2"/> (required for ADS and testsuite),
       <xref linkend="gnutls"/>,
-      <xref linkend="jansson"/>,
+      <xref linkend="libaio"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libnsl"/>,
-      <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nss"/>,
       <xref linkend="popt"/>,
       <xref linkend="talloc"/> (included),
       <xref linkend="vala"/>,
       <xref linkend="valgrind"/> (optionally used by the test suite),
+      <xref linkend="wireshark"/> (module installed),
       <xref linkend="xfsprogs"/>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
       <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
+      <ulink url="https://cwrap.org/">cwrap</ulink>,
+      <ulink url="&pypi;/dnspython/">dnspython</ulink>,
+      <ulink url="https://packages.debian.org/stretch/fam/">FAM</ulink>,
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
+      <ulink url="https://github.com/gluster/glusterfs/">GlusterFS</ulink>,
       <ulink url="http://www.h5l.org/">Heimdal</ulink> (included),
-    <!--  <ulink url="http://www.digip.org/jansson/">Jansson</ulink>, -->
-      <ulink url="http://ftp.de.debian.org/debian/pool/main/liba/libaio/">libaio</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
-      <ulink url="https://tevent.samba.org/">tevent</ulink> (included),
+      <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
       <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
     </para>
 @z
@@ -242,14 +252,14 @@
       <para>Additionally, developer test suites are available. If you've
       installed the optional python modules above, you can run these tests with
       <command>make test</command>. It is not recommended for the average
-      builder at nearly 100 SBU and over a gigabyte of disk space, and you
-      should expect ~80 errors and ~30 failures from the 3000+ tests.</para>
+      builder at around 290 SBU and over a gigabyte of disk space, and you
+      should expect ~73 errors and ~30 failures from the 3000+ tests.</para>
 @y
       <para>Additionally, developer test suites are available. If you've
       installed the optional python modules above, you can run these tests with
       <command>make test</command>. It is not recommended for the average
-      builder at nearly 100 SBU and over a gigabyte of disk space, and you
-      should expect ~80 errors and ~30 failures from the 3000+ tests.</para>
+      builder at around 290 SBU and over a gigabyte of disk space, and you
+      should expect ~73 errors and ~30 failures from the 3000+ tests.</para>
 @z
 
 @x

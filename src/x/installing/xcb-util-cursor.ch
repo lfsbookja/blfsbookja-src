@@ -27,7 +27,7 @@
 
 @x
       The <application>xcb-util-cursor</application> package provides a module
-      that implements the XCB cursor library.  It is a the
+      that implements the XCB cursor library.  It is the
       <application>XCB</application> replacement for libXcursor.
 @y
       <application>xcb-util-cursor</application> パッケージは、XCB cursor ライブラリを実装したモジュールを提供します。

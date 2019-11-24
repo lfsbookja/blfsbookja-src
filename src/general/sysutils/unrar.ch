@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY unrar-time          "less than 0.1 SBU">
-@y
-  <!ENTITY unrar-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to UnRar</title>
 @y
     <title>&IntroductionTo1;UnRar&IntroductionTo2;</title>

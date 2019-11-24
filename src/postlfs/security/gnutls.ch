@@ -46,14 +46,14 @@
 @z
 
 @x
-      <application>GnuTLS</application> provides support for TLS 1.2, TLS 1.1,
+      <application>GnuTLS</application> provides support for TLS 1.3, TLS 1.2, TLS 1.1,
       TLS 1.0, and SSL 3.0 protocols, TLS extensions, including server name and max
       record size. Additionally, the library supports authentication using the
       SRP protocol, X.509 certificates and OpenPGP keys, along with support for
       the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
       extension and X.509 and OpenPGP certificate handling.
 @y
-      <application>GnuTLS</application> provides support for TLS 1.2, TLS 1.1,
+      <application>GnuTLS</application> provides support for TLS 1.3, TLS 1.2, TLS 1.1,
       TLS 1.0, and SSL 3.0 protocols, TLS extensions, including server name and max
       record size. Additionally, the library supports authentication using the
       SRP protocol, X.509 certificates and OpenPGP keys, along with support for

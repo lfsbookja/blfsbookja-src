@@ -77,12 +77,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf5-frameworks"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf5-frameworks"/>
     </para>
 @z
 

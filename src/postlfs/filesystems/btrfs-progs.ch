@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY btrfs-progs-buildsize     "78 MB (add 6 MB for tests)">
-  <!ENTITY btrfs-progs-time          "0.4 SBU (add 6.4 SBU for tests)">
+  <!ENTITY btrfs-progs-buildsize     "59 MB (add 28 MB for tests)">
+  <!ENTITY btrfs-progs-time          "0.2 SBU (add 12 SBU for tests)">
 @y
-  <!ENTITY btrfs-progs-buildsize     "78 MB (テスト実施時はさらに 6 MB)">
-  <!ENTITY btrfs-progs-time          "0.4 SBU (テスト実施時はさらに 6.4 SBU)">
+  <!ENTITY btrfs-progs-buildsize     "59 MB (テスト実施時はさらに 28 MB)">
+  <!ENTITY btrfs-progs-time          "0.2 SBU (テスト実施時はさらに 12 SBU)">
 @z
 
 @x
@@ -210,16 +210,6 @@
 @z
 
 @x
-    <para><command>sed ... Documentation/Makefile.in</command>: Disables
-    compressing man pages to be consistent with the rest of BLFS.</para>
-@y
-    <para><command>sed ... Documentation/Makefile.in</command>:
-    man ページの圧縮は行わないようにします。
-    これは BLFS 全体で整合をとるためです。
-    </para>
-@z
-
-@x
     <para><option>--disable-documentation</option>: This option
     is needed if the recommended dependencies are not installed.</para>
 @y
@@ -275,38 +265,40 @@
         <seg>
           btrfs,
           btrfs-convert,
-          btrfs-debug-tree,
           btrfs-find-root,
           btrfs-image,
           btrfs-map-logical,
           btrfs-select-super,
-          btrfs-zero-log,
           btrfsck (link to btrfs),
           btrfstune,
           fsck.btrfs, and
           mkfs.btrfs
         </seg>
 
-        <seg>libbtrfs.so</seg>
+        <seg>
+          libbtrfs.so and
+          libbtrfsutil.so
+        </seg>
 
         <seg>/usr/include/btrfs</seg>
 @y
         <seg>
           btrfs,
           btrfs-convert,
-          btrfs-debug-tree,
           btrfs-find-root,
           btrfs-image,
           btrfs-map-logical,
           btrfs-select-super,
-          btrfs-zero-log,
-          btrfsck (&LinkTo1;btrfs&LinkTo2;),
+          btrfsck (link to btrfs),
           btrfstune,
           fsck.btrfs,
           mkfs.btrfs
         </seg>
 
-        <seg>libbtrfs.so</seg>
+        <seg>
+          libbtrfs.so,
+          libbtrfsutil.so
+        </seg>
 
         <seg>/usr/include/btrfs</seg>
 @z
@@ -324,15 +316,9 @@
 @z
 
 @x btrfs-convert
-            converts from ext2/3/4 filesystem to btrfs.
+            converts from an ext2/3/4 filesystem to btrfs.
 @y
-            converts from ext2/3/4 filesystem to btrfs.
-@z
-
-@x btrfs-debug-tree
-            queries various internal information.
-@y
-            queries various internal information.
+            converts from an ext2/3/4 filesystem to btrfs.
 @z
 
 @x btrfs-find-root
@@ -348,15 +334,9 @@
 @z
 
 @x btrfs-select-super
-            overwrites primary superblock with a backup copy.
+            overwrites the primary superblock with a backup copy.
 @y
-            overwrites primary superblock with a backup copy.
-@z
-
-@x btrfs-zero-log
-            recovers a damaged btrfs filesystem.
-@y
-            recovers a damaged btrfs filesystem.
+            overwrites the primary superblock with a backup copy.
 @z
 
 @x btrfstune

@@ -83,14 +83,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>
+      <xref role="nodep" linkend="gtk2"/> or <xref linkend="gtk3"/>
       (If both are installed, <command>configure</command> defaults to using
       <application>GTK+ 3</application>)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/> または <xref linkend="gtk3"/>
+      <xref role="nodep" linkend="gtk2"/> または <xref linkend="gtk3"/>
       (両方がインストールされている場合、<command>configure</command> はデフォルトで <application>GTK+ 3</application> を利用します。)
     </para>
 @z

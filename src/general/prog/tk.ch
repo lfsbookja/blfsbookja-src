@@ -114,7 +114,14 @@
       Some tests will steal focus and some might crash your X Server. To test
       the results anyway, issue: <command>make test</command>. Ensure you run
       it from an X Window display device with the GLX extensions loaded, but
-      even so, tests might hang.
+      even so, tests might hang. 2 tests are known to fail regardless.
+      <!-- Test Statistics (tk8.6.9 - renodr):
+      Total: 466
+      Passed: 447
+      Skipped: 17
+      Failed: 2
+      The two tests that fail have to do with ttk.test
+      -->
 @y
       Running the tests is not recommended. Failures will be reported during the
       tests, depending on the screen resolution/capabilities, fonts installed
@@ -122,7 +129,14 @@
       Some tests will steal focus and some might crash your X Server. To test
       the results anyway, issue: <command>make test</command>. Ensure you run
       it from an X Window display device with the GLX extensions loaded, but
-      even so, tests might hang.
+      even so, tests might hang. 2 tests are known to fail regardless.
+      <!-- Test Statistics (tk8.6.9 - renodr):
+      Total: 466
+      Passed: 447
+      Skipped: 17
+      Failed: 2
+      The two tests that fail have to do with ttk.test
+      -->
 @z
 
 @x

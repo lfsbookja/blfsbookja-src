@@ -234,6 +234,7 @@ BOOKdir = @abs_bookdir@/pst/typesetting
 CHANGE_FILES = \
 	asymptote.ch    \
 	biber.ch        \
+	dvisvgm.ch      \
 	typesetting.ch  \
 	tex-path.ch     \
 	texlive.ch      \
@@ -437,6 +438,11 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+.PHONY: chbuild
+chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

@@ -82,19 +82,23 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libcap-pam"/>,
+      <xref linkend="libssh2"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="pcre"/>, and
-      <xref linkend="postgresql"/> 
+      <xref linkend="pcre"/>,
+      <xref linkend="postgresql"/>, and
+      <ulink url="https://metacpan.org/pod/Net::SSH2">Net::SSH2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libcap-pam"/>,
+      <xref linkend="libssh2"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="pcre"/>,
-      <xref linkend="postgresql"/> 
+      <xref linkend="postgresql"/>,
+      <ulink url="https://metacpan.org/pod/Net::SSH2">Net::SSH2</ulink>
     </para>
 @z
 

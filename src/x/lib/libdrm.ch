@@ -112,9 +112,11 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (for tests),
+      <xref linkend="cmake"/> (could be used to find dependencies without pkgconfig files),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/> and
       <xref linkend="libxslt"/> (to build manual pages),
+      <xref linkend="libatomic_ops"/> (required by architectures without native atomic operations),
       <xref linkend="valgrind"/>, and
       <ulink url="http://cunit.sourceforge.net/">CUNIT</ulink> (for AMDGPU tests)
     </para>
@@ -122,10 +124,12 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (テストのため),
+      <xref linkend="cmake"/> (could be used to find dependencies without pkgconfig files),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="libxslt"/> (man ページ生成のため),
-      <xref linkend="valgrind"/>,
+      <xref linkend="libatomic_ops"/> (required by architectures without native atomic operations),
+      <xref linkend="valgrind"/>, and
       <ulink url="http://cunit.sourceforge.net/">CUNIT</ulink> (for AMDGPU tests)
     </para>
 @z
@@ -150,14 +154,14 @@
 @z
 
 @x
-      To check the results, issue <command>ninja test</command>. Tests may hang
-      for unknown reasons. <!-- If nouveau threaded test hangs, you can disable it
-      with
-      <command>sed -i 's/^TESTS/#&amp;/' tests/nouveau/Makefile.in</command>. -->
+      To check the results, issue <command>ninja test</command>. One test,
+      'threaded' in the nouveau subdirectory, is known to fail with a 
+      30 second timeout.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      テストがいくつか失敗しますが、原因は不明です。
-@z
+      One test,
+      'threaded' in the nouveau subdirectory, is known to fail with a 
+      30 second timeout.@z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:

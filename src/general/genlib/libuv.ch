@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libuv-buildsize     "13 MB (add 10 MB for tests)">
-  <!ENTITY libuv-time          "0.1 SBU (add 1.4 SBU for tests)">
+  <!ENTITY libuv-buildsize     "25 MB (with tests)">
+  <!ENTITY libuv-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY libuv-buildsize     "13 MB (テスト実施時はさらに 10 MB)">
-  <!ENTITY libuv-time          "0.1 SBU (テスト実施時はさらに 1.4 SBU)">
+  <!ENTITY libuv-buildsize     "25 MB (テスト込み)">
+  <!ENTITY libuv-time          "0.4 SBU (テスト込み)">
 @z
 
 @x
@@ -97,7 +97,7 @@
 @z
 
 @x
-      To execute the test suite, run <command>make check</command>.  
+      If you want to run the tests, run: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z

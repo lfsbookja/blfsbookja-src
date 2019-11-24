@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libxcb-buildsize     "41 MB (with tests, add 62 MB for doxygen docs)">
-  <!ENTITY libxcb-time          "0.3 SBU (with tests, add 1.4 SBU for doxygen docs)">
+  <!ENTITY libxcb-buildsize     "43 MB (with tests, add 62 MB for doxygen docs)">
+  <!ENTITY libxcb-time          "0.2 SBU (with tests, add 1.4 SBU for doxygen docs)">
 @y
-  <!ENTITY libxcb-buildsize     "41 MB （テスト込み、doxygenドキュメント生成時はさらに 62 MB）">
-  <!ENTITY libxcb-time          "0.3 SBU （テスト込み、doxygenドキュメント生成時はさらに 1.4 SBU）">
+  <!ENTITY libxcb-buildsize     "43 MB （テスト込み、doxygenドキュメント生成時はさらに 62 MB）">
+  <!ENTITY libxcb-time          "0.2 SBU （テスト込み、doxygenドキュメント生成時はさらに 1.4 SBU）">
 @z
 
 @x
@@ -192,7 +192,7 @@
 
 @x
     <para><command>sed "s/pthread-stubs//" -i configure</command>: This
-    sed removes dependency on libpthread-stubs package which is useless on
+    sed removes a dependency on the libpthread-stubs package which is useless on
     Linux.</para>
 @y
     <para><command>sed "s/pthread-stubs//" -i configure</command>:

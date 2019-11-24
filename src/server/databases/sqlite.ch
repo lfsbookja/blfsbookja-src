@@ -173,7 +173,16 @@
 @z
 
 @x
+      <parameter>--enable-fts5</parameter>: enable version 5 of the full text
+      search extension.
+@y
+      <parameter>--enable-fts5</parameter>: enable version 5 of the full text
+      search extension.
+@z
+
+@x
       <parameter>CFLAGS="-g -O2
+      -DSQLITE_ENABLE_FTS3=1
       -DSQLITE_ENABLE_FTS4=1
       -DSQLITE_ENABLE_COLUMN_METADATA=1
       -DSQLITE_SECURE_DELETE
@@ -190,6 +199,7 @@
       url="http://www.sqlite.org/compile.html"/>.
 @y
       <parameter>CFLAGS="-g -O2
+      -DSQLITE_ENABLE_FTS3=1
       -DSQLITE_ENABLE_FTS4=1
       -DSQLITE_ENABLE_COLUMN_METADATA=1
       -DSQLITE_SECURE_DELETE

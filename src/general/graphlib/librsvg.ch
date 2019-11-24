@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "107 MB (add 163 MB for tests)">
-  <!ENTITY librsvg-time          "0.6 SBU (add 0.2 SBU for tests)">
+  <!ENTITY librsvg-buildsize     "848 MB (add 375 MB for tests)">
+  <!ENTITY librsvg-time          "1.7 SBU (add 1.2 SBU for tests)">
 @y
-  <!ENTITY librsvg-buildsize     "107 MB（テスト実施時はさらに 163 MB)">
-  <!ENTITY librsvg-time          "0.6 SBU（テスト実施時はさらに 0.2 SBU）">
+  <!ENTITY librsvg-buildsize     "848 MB（テスト実施時はさらに 375 MB)">
+  <!ENTITY librsvg-time          "1.7 SBU（テスト実施時はさらに 1.2 SBU）">
 @z
 
 @x
@@ -88,6 +88,7 @@
     <para role="required">
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="libcroco"/>,
+      <xref linkend="cairo"/>,
       <xref linkend="pango"/>, and 
       <xref linkend="rust"/>
     </para>
@@ -96,6 +97,7 @@
     <para role="required">
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="libcroco"/>,
+      <xref linkend="cairo"/>,
       <xref linkend="pango"/>,
       <xref linkend="rust"/>
     </para>
@@ -104,15 +106,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk3"/> (For the <command>rsvg-view-3</command>), and
+      <xref linkend="gobject-introspection"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk3"/> (<command>rsvg-view-3</command> コマンドのため),
       <xref linkend="vala"/>
     </para>
 @z
@@ -202,7 +202,7 @@
 
 @x
         <seg>
-          rsvg-convert and rsvg-view-3
+          rsvg-convert
         </seg>
         <seg>
           librsvg-2.so and libpixbufloader-svg.so
@@ -213,7 +213,7 @@
         </seg>
 @y
         <seg>
-          rsvg-convert, rsvg-view-3
+          rsvg-convert
         </seg>
         <seg>
           librsvg-2.so, libpixbufloader-svg.so
@@ -234,12 +234,6 @@
             is used to convert images into PNG, PDF, PS, SVG and other formats.
 @y
             is used to convert images into PNG, PDF, PS, SVG and other formats.
-@z
-
-@x rsvg-view-3
-            is a simple GTK+ 3 application that can be used to view an SVG file.
-@y
-            is a simple GTK+ 3 application that can be used to view an SVG file.
 @z
 
 @x librsvg-2.so

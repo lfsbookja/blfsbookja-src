@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY json-glib-buildsize     "8.6 MB (with tests)">
+  <!ENTITY json-glib-buildsize     "9.4 MB (with tests)">
   <!ENTITY json-glib-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY json-glib-buildsize     "8.6 MB (テスト込み)">
+  <!ENTITY json-glib-buildsize     "9.4 MB (テスト込み)">
   <!ENTITY json-glib-time          "&LessThan1;0.1 SBU &LessThan2; (テスト込み)">
 @z
 
@@ -174,7 +174,8 @@
           libjson-glib-1.0.so
         </seg>
         <seg>
-          /usr/include/json-glib-1.0 and
+          /usr/{include,share/installed-tests}/json-glib-1.0,
+          /usr/libexec/installed-tests/json-glib-&json-glib-version;, and
           /usr/share/gtk-doc/html/json-glib
         </seg>
 @y
@@ -185,7 +186,8 @@
           libjson-glib-1.0.so
         </seg>
         <seg>
-          /usr/include/json-glib-1.0,
+          /usr/{include,share/installed-tests}/json-glib-1.0,
+          /usr/libexec/installed-tests/json-glib-&json-glib-version;,
           /usr/share/gtk-doc/html/json-glib
         </seg>
 @z

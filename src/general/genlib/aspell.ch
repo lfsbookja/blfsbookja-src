@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY aspell-buildsize     "58 MB (Additional 8 MB for EN dictionary)">
+  <!ENTITY aspell-buildsize     "51 MB (Additional 8 MB for EN dictionary)">
 @y
-  <!ENTITY aspell-buildsize     "58 MB (EN 辞書導入の場合、さらに 8 MB)">
+  <!ENTITY aspell-buildsize     "51 MB (EN 辞書導入の場合、さらに 8 MB)">
 @z
 
 @x

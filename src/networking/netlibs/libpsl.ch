@@ -86,14 +86,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libidn2"/> and
-      <xref linkend="python2"/>
+      <xref linkend="libidn2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libidn2"/>,
-      <xref linkend="python2"/>
+      <xref linkend="libidn2"/>
     </para>
 @z
 

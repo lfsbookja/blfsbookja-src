@@ -129,10 +129,10 @@
 
 @x
     <para>If you have <xref linkend="doxygen"/> installed and wish to
-    build HTML API documentation, issue <command>doxygen</command>.</para>
+    build HTML API documentation, issue:</para>
 @y
     <para>
-    <xref linkend="doxygen"/> をインストールしていて、HTML API ドキュメントをビルドしたい場合は <command>doxygen</command> を実行します。
+    <xref linkend="doxygen"/> をインストールしていて、HTML API ドキュメントをビルドしたい場合は以下を実行します。
     </para>
 @z
 

@@ -95,12 +95,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/>
+      <xref linkend="doxygen"/> (for documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/>
+      <xref linkend="doxygen"/> (for documentation)
     </para>
 @z
 

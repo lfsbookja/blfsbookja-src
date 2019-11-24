@@ -150,23 +150,15 @@
 @z
 
 @x
-      <command>bootstrap/bin/ant -f fetch.xml -Ddest=system</command>:
+      <command>bootstrap/bin/ant -f fetch.xml -Ddest=optional</command>:
       Downloads the missing dependencies to user's home directory, and copy
-      them into the source tree (in the <filename>lib/</filename> directory).
+      them into the source tree (in the <filename>lib/optional</filename>
+      directory, where <command>ant</command> picks them up at build time).
 @y
-      <command>bootstrap/bin/ant -f fetch.xml -Ddest=system</command>:
+      <command>bootstrap/bin/ant -f fetch.xml -Ddest=optional</command>:
       Downloads the missing dependencies to user's home directory, and copy
-      them into the source tree (in the <filename>lib/</filename> directory).
-@z
-
-@x
-      <command>cp -v ... lib/optional</command>: This command copies the
-      previously downloaded jar files to the expected place in the source
-      tree so that <command>ant</command> picks them up at buld time.
-@y
-      <command>cp -v ... lib/optional</command>: This command copies the
-      previously downloaded jar files to the expected place in the source
-      tree so that <command>ant</command> picks them up at buld time.
+      them into the source tree (in the <filename>lib/optional</filename>
+      directory, where <command>ant</command> picks them up at build time).
 @z
 
 @x

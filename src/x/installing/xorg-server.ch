@@ -90,41 +90,37 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="pixman"/> and
-      <xref linkend="xorg7-font"/> (for the font-util package), and at runtime:
+      <xref linkend="xorg7-font"/> (only font-util), and at runtime:
       <xref role="runtime" linkend="xkeyboard-config"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pixman"/>,
-      <xref linkend="xorg7-font"/> (for the font-util package), and at runtime:
+      <xref linkend="pixman"/> and
+      <xref linkend="xorg7-font"/> (only font-util), and at runtime:
       <xref role="runtime" linkend="xkeyboard-config"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended" revision="sysv">
-      <xref linkend="libepoxy"/> (required for glamor, see command
-      explanations below)
-    </para>
-    <para role="recommended" revision="systemd">
+    <para role="recommended">
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <xref linkend="libepoxy"/> (needed for glamor and Xwayland),
-      <xref linkend="wayland"/> (needed for Xwayland),
-      <xref linkend="wayland-protocols"/>, and
-      <xref linkend="systemd"/>
+      <phrase revision="sysv"><xref role="runtime" linkend="polkit"/> (runtime),
+      </phrase><xref linkend="wayland"/> (needed for Xwayland),
+      <phrase revision="sysv"> and</phrase> <xref linkend="wayland-protocols"/>
+      <phrase revision="systemd">, and <xref linkend="systemd"/></phrase>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended" revision="sysv">
-      <xref linkend="libepoxy"/> (required for glamor, see command
-      explanations below)
-    </para>
-    <para role="recommended" revision="systemd">
+    <para role="recommended">
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <xref linkend="libepoxy"/> (needed for glamor and Xwayland),
-      <xref linkend="wayland"/> (needed for Xwayland),
-      <xref linkend="wayland-protocols"/>, and
-      <xref linkend="systemd"/>
+      <phrase revision="sysv"><xref role="runtime" linkend="polkit"/> (runtime),
+      </phrase><xref linkend="wayland"/> (needed for Xwayland),
+      <phrase revision="sysv"> and</phrase> <xref linkend="wayland-protocols"/>
+      <phrase revision="systemd">, and <xref linkend="systemd"/></phrase>
     </para>
 @z
 
@@ -141,17 +137,15 @@
       <xref linkend="xcb-util-renderutil"/>,
       <xref linkend="xcb-util-wm"/> (all three to build Xephyr),
       <xref linkend="xmlto"/> (to build documentation),
-      <phrase revision="sysv"><xref linkend="wayland"/> (needed for Xwayland),
-      <xref linkend="wayland-protocols"/>,</phrase>
       <ulink url="http://download.savannah.gnu.org/releases/libunwind">libunwind</ulink>, and
       <ulink url="https://www.x.org/archive/individual/doc/">xorg-sgml-doctools</ulink> (to build documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="acpid"/> （実行時）,
-      <xref linkend="doxygen"/> （API ドキュメント生成のため）,
-      <xref linkend="fop"/> （ドキュメント生成のため）,
+      <xref role="runtime" linkend="acpid"/> (実行時),
+      <xref linkend="doxygen"/> (API ドキュメント生成のため),
+      <xref linkend="fop"/> (ドキュメント生成のため),
       <xref linkend="nettle"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="xcb-util-keysyms"/>,
@@ -159,10 +153,8 @@
       <xref linkend="xcb-util-renderutil"/>,
       <xref linkend="xcb-util-wm"/> (all three to build Xephyr),
       <xref linkend="xmlto"/> (to build documentation),
-      <phrase revision="sysv"><xref linkend="wayland"/> (needed for Xwayland),
-      <xref linkend="wayland-protocols"/>,</phrase>
       <ulink url="http://download.savannah.gnu.org/releases/libunwind">libunwind</ulink>,
-      <ulink url="https://www.x.org/archive/individual/doc/">xorg-sgml-doctools</ulink> （ドキュメント生成のため）
+      <ulink url="https://www.x.org/archive/individual/doc/">xorg-sgml-doctools</ulink> (ドキュメント生成のため)
     </para>
 @z
 
@@ -230,13 +222,37 @@
 @z
 
 @x
-      <parameter>--enable-install-setuid</parameter>: The Xorg binary must run
-      as the root user. This switch ensures that the binary is installed
-      setuid when <command>make</command> is run by an unprivileged user.
+      <parameter>--enable-suid-wrapper</parameter>: Build suid-root wrapper for
+      legacy driver support on rootless xserver systems.
 @y
-      <parameter>--enable-install-setuid</parameter>:
-      Xorg の実行モジュールは root ユーザーにて実行される必要があります。
-      このパラメーターは一般ユーザーによって <command>make</command> によりビルドを行っても、実行モジュールに対して正しく setuid がセットされるようにします。
+      <parameter>--enable-suid-wrapper</parameter>: Build suid-root wrapper for
+      legacy driver support on rootless xserver systems.
+@z
+
+@x
+      <option>--disable-systemd-logind</option>:
+      This switch disables <phrase revision="systemd">systemd-logind</phrase>
+      <phrase revision="sysv">elogind</phrase> integration allowing Xorg Server
+      to work without having the <phrase revision="systemd">systemd</phrase>
+      <phrase revision="elogind">elogind</phrase> PAM module configured.
+@y
+      <option>--disable-systemd-logind</option>:
+      This switch disables <phrase revision="systemd">systemd-logind</phrase>
+      <phrase revision="sysv">elogind</phrase> integration allowing Xorg Server
+      to work without having the <phrase revision="systemd">systemd</phrase>
+      <phrase revision="elogind">elogind</phrase> PAM module configured.
+@z
+
+@x
+      <option>--enable-install-setuid</option>:
+      This switch restores the setuid bit to the Xorg executable allowing Xorg
+      Server to work with a virtual terminal designated on the
+      <command>startx</command> command line.
+@y
+      <option>--enable-install-setuid</option>:
+      This switch restores the setuid bit to the Xorg executable allowing Xorg
+      Server to work with a virtual terminal designated on the
+      <command>startx</command> command line.
 @z
 
 @x
@@ -250,6 +266,14 @@
       このコマンドは起動時に <filename class="directory">/tmp/.ICE-unix</filename> ディレクトリと <filename
       class="directory">/tmp/.X11-unix</filename> ディレクトリを生成します。
       そしてサーバーが必要としているパーミッションおよび所有者を適切に設定します。
+@z
+
+@x
+      <option>--enable-dmx</option>: Build DMX (Distributed Multihead X)
+      server.
+@y
+      <option>--enable-dmx</option>: Build DMX (Distributed Multihead X)
+      server.
 @z
 
 @x

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libsoup-buildsize     "27 MB (with tests)">
-  <!ENTITY libsoup-time          "0.3 SBU (with tests)">
+  <!ENTITY libsoup-buildsize     "25 MB (with tests)"> 
+  <!ENTITY libsoup-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY libsoup-buildsize     "27 MB (テスト込み)">
-  <!ENTITY libsoup-time          "0.3 SBU (テスト込み)">
+  <!ENTITY libsoup-buildsize     "25 MB (テスト込み)">
+  <!ENTITY libsoup-time          "0.4 SBU (テスト込み)">
 @z
 
 @x
@@ -122,6 +122,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="apache"/> (required to run the test suite),
+      <xref linkend="brotli"/>,
       <xref linkend="curl"/> (required to run the test suite),
       <xref linkend="mitkrb"/> (required to run the test suite),
       <xref linkend="gtk-doc"/>,
@@ -133,11 +134,12 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="apache"/> (テストスイート実行時に必要),
+      <xref linkend="brotli"/>,
       <xref linkend="curl"/> (テストスイート実行時に必要),
       <xref linkend="mitkrb"/> (テストスイート実行時に必要),
       <xref linkend="gtk-doc"/>,
-      XMLRPC-EPI サポートがビルドされている <xref linkend="php"/> <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
-      (XMLRPC の縮退テストにおいてのみ利用される),
+      <xref linkend="php"/> compiled with XMLRPC-EPI <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
+      support (only used for the XMLRPC regression tests),
       <xref linkend="samba"/> (テストスイートを実行する場合は ntlm_auth が必要)
     </para>
 @z
@@ -180,19 +182,19 @@
 @z
 
 @x
-      <option>-Dvapi=false</option>: use this if you have not installed
+      <option>-Dvapi=disabled</option>: use this if you have not installed
       <application>Vala</application>, e.g. because you are not building 
       <application>GNOME</application>.
 @y
-      <option>-Dvapi=false</option>:
+      <option>-Dvapi=disabled</option>:
       <application>Vala</application> をインストールしていない、つまり <application>GNOME</application> をビルドしていない場合に、このオプションを指定します。
 @z
 
 @x
-      <option>-Ddoc=true</option>: Use this option if you want to build
+      <option>-Ddoc=enabled</option>: Use this option if you want to build
       the documentation. Note that you must have <xref linkend="gtk-doc"/> installed.
 @y
-      <option>-Ddoc=true</option>:
+      <option>-Ddoc=enabled</option>:
       ドキュメントを生成したい場合に指定します。
       その場合には <xref linkend="gtk-doc"/> をインストールする必要があります。
 @z

@@ -228,11 +228,11 @@
 @z
 
 @x
-        <seg>enchant</seg>
+        <seg>enchant and enchant-lsmod-2</seg>
         <seg>libenchant.so and various backend libraries</seg>
-        <seg>/usr/{include,lib,share}/enchant</seg>
+        <seg>/usr/{include,lib,share}/enchant-2</seg>
 @y
-        <seg>enchant</seg>
+        <seg>enchant and enchant-lsmod-2</seg>
         <seg>libenchant.so とさまざまなバックエンドライブラリ</seg>
         <seg>/usr/{include,lib,share}/enchant</seg>
 @z

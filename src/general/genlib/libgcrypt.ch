@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libgcrypt-buildsize     "49 MB (with tests; add 8 MB for building docs)">
+  <!ENTITY libgcrypt-buildsize     "44 MB (with tests; add 8 MB for building docs)">
   <!ENTITY libgcrypt-time          "0.3 SBU (with docs; add 0.5 SBU for tests)">
 @y
-  <!ENTITY libgcrypt-buildsize     "49 MB (テスト込み、ドキュメント生成時はさらに 81 MB)">
+  <!ENTITY libgcrypt-buildsize     "44 MB (テスト込み、ドキュメント生成時はさらに 8 MB)">
   <!ENTITY libgcrypt-time          "0.3 SBU (ドキュメント込み、テスト実施時はさらに 0.5 SBU)">
 @z
 
@@ -134,13 +134,14 @@
 @z
 
 @x
-      Only <command>info</command> documentation is shipped in the package
-      tarball. If you wish to build alternate formats of the documentation,
-      (you must have <xref linkend="texlive"/> installed to build the PDF
-      and PostScript documentation), then issue the following commands:
+      The above commands build the documentation in html and plaintext
+      formats. If you wish to build alternate formats of the documentation, you
+      need <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>). Issue
+      the following command:
 @y
-      パッケージの tarball には <command>info</command> ドキュメントのみが提供されています。
-      他の書式のドキュメントをビルドする場合 (その場合は<xref linkend="texlive"/> をインストールしておく必要があり)、以下のコマンドを実行します。
+      上のコマンドからは html 形式とプレーンテキスト形式によるドキュメントが生成されます。
+      その他のドキュメント形式を生成したい場合は <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>) をインストールしておく必要があります。
+      その場合は以下のコマンドを実行します。
 @z
 
 @x
@@ -156,11 +157,11 @@
 @z
 
 @x
-      If you built the additional documentation, install it by issuing the
-      following commands as the <systemitem class="username">root</systemitem>
-      user:
+      If you built alternate formats of the documentation, install them by
+      issuing the following command as the
+      <systemitem class="username">root</systemitem> user:
 @y
-      他の書式のドキュメントをビルドしていた場合は、<systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してドキュメントをインストールします。
+      上で他形式のドキュメントをビルドしていた場合は、<systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してドキュメントをインストールします。
 @z
 
 @x

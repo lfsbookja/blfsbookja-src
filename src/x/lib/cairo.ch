@@ -154,7 +154,7 @@
       <ulink url="https://github.com/rillian/jbig2dec/">jbig2dec</ulink>,
       <ulink url="https://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
       <ulink url="https://skia.org/">Skia</ulink>, and
-      <ulink url="http://download.qt.io/official_releases/qt/4.8/">Qt4</ulink>.
+      <ulink url="http://download.qt.io/archive/qt/4.8/">Qt4</ulink>.
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -172,8 +172,8 @@
       <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>,
       <ulink url="https://github.com/rillian/jbig2dec/">jbig2dec</ulink>,
       <ulink url="https://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
-      <ulink url="https://skia.org/">Skia</ulink>,
-      <ulink url="http://download.qt.io/official_releases/qt/4.8/">Qt4</ulink>.
+      <ulink url="https://skia.org/">Skia</ulink>, and
+      <ulink url="http://download.qt.io/archive/qt/4.8/">Qt4</ulink>.
     </para>
 @z
 

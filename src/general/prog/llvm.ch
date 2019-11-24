@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "2.8 GB (with Clang, 670MB installed, add 16 GB for tests)">
-  <!ENTITY llvm-time          "26 SBU (with Clang and parallelism=4, add 8 SBU for tests)">
+  <!ENTITY llvm-buildsize     "2.4 GB (with Clang, 735 MB installed, add 18 GB for tests)">
+  <!ENTITY llvm-time          "27 SBU (with Clang and parallelism=4, add 5 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "2.8 GB (Clang 込み、インストールに 670MB、テスト実施時はさらに 16 GB)">
-  <!ENTITY llvm-time          "26 SBU (Clang 込み、 parallelism=4、テスト実施時はさらに 8 SBU)">
+  <!ENTITY llvm-buildsize     "2.4 GB (Clang 込み、インストールに 735MB、テスト実施時はさらに 18 GB)">
+  <!ENTITY llvm-time          "27 SBU (Clang 込み、 parallelism=4、テスト実施時はさらに 5 SBU)">
 @z
 
 @x
@@ -154,12 +154,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/> and <xref linkend="python2"/>
+      <xref linkend="cmake"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/>, <xref linkend="python2"/>
+      <xref linkend="cmake"/>
     </para>
 @z
 
@@ -169,11 +169,15 @@
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
+      <xref linkend="python2"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
+      <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
-      <ulink url="http://www.ocaml.org/">OCaml</ulink>, and
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
+      <ulink url="http://www.ocaml.org/">OCaml</ulink>,
+      <ulink url="https://pypi.python.org/pypi/recommonmark">recommonmark</ulink>,
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>, and
+      <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -181,11 +185,15 @@
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
+      <xref linkend="python2"/>,
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
+      <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
       <ulink url="http://www.ocaml.org/">OCaml</ulink>,
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
+      <ulink url="https://pypi.python.org/pypi/recommonmark">recommonmark</ulink>,
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>,
+      <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
     </para>
 @z
 
@@ -224,8 +232,8 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that several Sanitizer tests (7 of more than 32000 tests run) are known
-      to fail.
+      Note that the Sanitizer based tests (377 of more than 35000 tests run) 
+      are known to fail.
 @y
       To test the results, issue: <command>ninja check-all</command>. Tests are
       built with all <emphasis>available</emphasis> cores, but run using the number
@@ -235,8 +243,8 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that several Sanitizer tests (7 of more than 32000 tests run) are known
-      to fail.
+      Note that the Sanitizer based tests (377 of more than 35000 tests run) 
+      are known to fail.
 @z
 
 @x
@@ -246,36 +254,22 @@
 @z
 
 @x
-      If you have installed <application>Sphinx</application> and wish
-      to generate the html documentation and manual pages, issue the following
-      commands:
+      If you have built the the llvm documentation, install it by running the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:
 @y
-      If you have installed <application>Sphinx</application> and wish
-      to generate the html documentation and manual pages, issue the following
-      commands:
+      If you have built the the llvm documentation, install it by running the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:
 @z
 
 @x
-      If you have downloaded the optional packages, the clang documentation
-      can be built too:
-@y
-      If you have downloaded the optional packages, the clang documentation
-      can be built too:
-@z
-
-@x
-      Install the llvm documentation by running the following command as the 
-      <systemitem class="username">root</systemitem> user:
-@y
-      Install the llvm documentation by running the following command as the 
-      <systemitem class="username">root</systemitem> user:
-@z
-
-@x
-      The clang documentation can be installed in the same way (again as the
+      If you have built the clang documentation, it can be installed in the
+      same way (again as the
       <systemitem class="username">root</systemitem> user):
 @y
-      The clang documentation can be installed in the same way (again as the
+      If you have built the clang documentation, it can be installed in the
+      same way (again as the
       <systemitem class="username">root</systemitem> user):
 @z
 
@@ -322,8 +316,11 @@
           verify-uselistorder, and yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (66
-          libraries), libLTO.so, libclang.so and libclang*.a (30 libraries)
+          libLLVM.so, 
+          libLLVM*.a (75 libraries), 
+          libLTO.so, 
+          libclang.so,
+          and libclang*.a (63 libraries)
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
@@ -352,8 +349,11 @@
           verify-uselistorder, yaml2obj
         </seg>
         <seg>
-          BugpointPasses.so,  LLVMHello.so, libLLVM.so, libLLVM*.a (66
-          ライブラリ), libLTO.so, libclang.so, libclang*.a (30 ライブラリ)
+          libLLVM.so, 
+          libLLVM*.a (75 個のライブラリ), 
+          libLTO.so, 
+          libclang.so,
+          and libclang*.a (63 個のライブラリ)
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},

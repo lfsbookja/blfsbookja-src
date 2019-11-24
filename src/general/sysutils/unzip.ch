@@ -228,29 +228,19 @@
 @z
 
 @x
-    <para>2) After running <command>unzip</command>, fix the damage made to
+    <para>2) Use <command>bsdtar -xf</command> from
+    <xref role="nodep" linkend="libarchive"/> to unpack the ZIP archive.
+    Then fix the damage made to
     the filenames using the <command>convmv</command> tool
     (<ulink url="http://j3e.de/linux/convmv/"/>). The following is an example
-    for the ru_RU.KOI8-R locale:</para>
+    for the zh_CN.UTF-8 locale:</para>
 @y
-    <para>2) After running <command>unzip</command>, fix the damage made to
+    <para>2) Use <command>bsdtar -xf</command> from
+    <xref role="nodep" linkend="libarchive"/> to unpack the ZIP archive.
+    Then fix the damage made to
     the filenames using the <command>convmv</command> tool
     (<ulink url="http://j3e.de/linux/convmv/"/>). The following is an example
-    for the ru_RU.KOI8-R locale:</para>
-@z
-
-@x
-      <para>Step 1. Undo the conversion done by
-      <command>unzip</command>:</para>
-@y
-      <para>Step 1. Undo the conversion done by
-      <command>unzip</command>:</para>
-@z
-
-@x
-      <para>Step 2. Do the correct conversion instead:</para>
-@y
-      <para>Step 2. Do the correct conversion instead:</para>
+    for the zh_CN.UTF-8 locale:</para>
 @z
 
 @x

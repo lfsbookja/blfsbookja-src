@@ -105,18 +105,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="openssl"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="openssl"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="db"/>
@@ -138,7 +126,7 @@
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <ulink url="ftp://ftp.pdc.kth.se/pub/krb/src/">krb4</ulink> and
+      <ulink url="https://stuff.mit.edu/afs/net.mit.edu/project/attic/krb4/">krb4</ulink> and
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>
     </para>
 @y
@@ -151,7 +139,7 @@
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <ulink url="ftp://ftp.pdc.kth.se/pub/krb/src/">krb4</ulink>,
+      <ulink url="https://stuff.mit.edu/afs/net.mit.edu/project/attic/krb4/">krb4</ulink> and
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>
     </para>
 @z
@@ -183,14 +171,14 @@
 
 @x
       This package does not come with a test suite. If you are planning
-      on using the GSSAPI authentication mechanism, it is recommended to test
+      on using the GSSAPI authentication mechanism, test
       it after installing the package using the sample server and client
       programs which were built in the preceding step. Instructions for
       performing the tests can be found at
       <ulink url="&hints-root;/downloads/files/cyrus-sasl.txt"/>.
 @y
       This package does not come with a test suite. If you are planning
-      on using the GSSAPI authentication mechanism, it is recommended to test
+      on using the GSSAPI authentication mechanism, test
       it after installing the package using the sample server and client
       programs which were built in the preceding step. Instructions for
       performing the tests can be found at

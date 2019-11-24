@@ -102,15 +102,15 @@
 
 @x
     <para>If you have <xref linkend="doxygen"/> installed and wish to build
-    the API documentation, issue <command>doxygen</command>.</para>
+    the API documentation, issue:</para>
 @y
     <para>
-    <xref linkend="doxygen"/> をインストール済であって API ドキュメントをビルドする場合は <command>doxygen</command> を実行します。
+    <xref linkend="doxygen"/> をインストール済であって API ドキュメントをビルドする場合は以下を実行します。
     </para>
 @z
 
 @x
-    <para>To test the results, issue:<command>make check</command>.</para>
+    <para>To test the results, issue: <command>make check</command>.</para>
 @y
     <para>
     コンパイル結果をテストする場合は <command>make check</command> を実行します。

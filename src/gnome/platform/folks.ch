@@ -86,7 +86,9 @@
     <para role="required">
       <xref linkend="evolution-data-server"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libgee"/>, and
+      <xref linkend="libgee"/>,
+<!-- one file "tests/tools/manager-file.py" is still P2 -->
+      <xref linkend="python2"/> (during the build), and
       <xref linkend="telepathy-glib"/>
     </para>
 @y
@@ -95,6 +97,8 @@
       <xref linkend="evolution-data-server"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgee"/>,
+<!-- one file "tests/tools/manager-file.py" is still P2 -->
+      <xref linkend="python2"/> (during the build),
       <xref linkend="telepathy-glib"/>
     </para>
 @z
@@ -116,15 +120,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="tracker"/> (Broken due to API change),
+      <xref linkend="tracker"/> (Broken due to API changes in tracker),
       <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>, and
       <ulink url="https://packages.debian.org/jessie/zeitgeist">Zeitgeist</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="tracker"/> (Broken due to API change),
-      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>, and
+      <xref linkend="tracker"/> (Broken due to API changes in tracker),
+      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>,
       <ulink url="https://packages.debian.org/jessie/zeitgeist">Zeitgeist</ulink>
     </para>
 @z
@@ -150,11 +154,11 @@
 @z
 
 @x
-      To test the results, issue <command>make -k check</command> from a local
-      X session started with <command>dbus-launch</command>.
+    <para>This package does not come with a test suite.
+    </para>
 @y
-      To test the results, issue <command>make -k check</command> from a local
-      X session started with <command>dbus-launch</command>.
+    <para>This package does not come with a test suite.
+    </para>
 @z
 
 @x
@@ -170,32 +174,24 @@
 @z
 
 @x
-      <parameter>--disable-fatal-warnings</parameter>: This switch
-      allows the package to build with latest versions of the
-      dependencies.
+      <option>-Dtracker_backend=true</option>: This switch enables
+      building the <application>Tracker</application> backend.
+      Use it if you have <application>Tracker</application> installed. This
+      functionality is current broken, however, due to an upstream API change
+      in Tracker that hasn't been accounted for in this package.
 @y
-      <parameter>--disable-fatal-warnings</parameter>: This switch
-      allows the package to build with latest versions of the
-      dependencies.
+      <option>-Dtracker_backend=true</option>: This switch enables
+      building the <application>Tracker</application> backend.
+      Use it if you have <application>Tracker</application> installed. This
+      functionality is current broken, however, due to an upstream API change
+      in Tracker that hasn't been accounted for in this package.
 @z
 
 @x
-      <option>--enable-tracker-backend</option>: This switch enables
-      building the <application>Tracker</application> backend.
-      Use it if you have <application>Tracker</application> installed. Note
-      that this functionality is currently not working properly.
-@y
-      <option>--enable-tracker-backend</option>: This switch enables
-      building the <application>Tracker</application> backend.
-      Use it if you have <application>Tracker</application> installed. Note
-      that this functionality is currently not working properly.
-@z
-
-@x
-      <option>--enable-docs</option>: This switch enables
+      <option>-Ddocs=true</option>: This switch enables
       documentation generation.
 @y
-      <option>--enable-docs</option>: This switch enables
+      <option>-Ddocs=true</option>: This switch enables
       documentation generation.
 @z
 

@@ -97,10 +97,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (libdevmapper for NFSv4 support),
-      <phrase revision="systemd"><xref linkend="libnfsidmap"/></phrase>
-      <phrase revision="sysv"><ulink
-      url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink></phrase>
-      (for NFSv4 support),
+      <xref linkend="libnfsidmap"/> (for NFSv4 support),
       <xref linkend="libnsl"/> (for NIS client support),
       <xref linkend="sqlite"/>,
       <xref linkend="mitkrb"/> or
@@ -113,10 +110,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (libdevmapper for NFSv4 support),
-      <phrase revision="systemd"><xref linkend="libnfsidmap"/></phrase>
-      <phrase revision="sysv"><ulink
-      url="http://www.citi.umich.edu/projects/nfsv4/linux/">libnfsidmap</ulink></phrase>
-      (for NFSv4 support),
+      <xref linkend="libnfsidmap"/> (for NFSv4 support),
       <xref linkend="libnsl"/> (for NIS client support),
       <xref linkend="sqlite"/>,
       <xref linkend="mitkrb"/> または
@@ -256,12 +250,12 @@ The classic uid and gid values are 65534 which is also -2 when
 
 @x
     <para>The tests for this package require that the package be installed and
-    configured as specified below.  In addition, the the daemon from <xref
+    configured as specified below.  In addition, the daemon from <xref
     linkend="rpcbind"/> needs to be running and the tests need to be run as the
     <systemitem class="username">root</systemitem> user.</para>
 @y
     <para>The tests for this package require that the package be installed and
-    configured as specified below.  In addition, the the daemon from <xref
+    configured as specified below.  In addition, the daemon from <xref
     linkend="rpcbind"/> needs to be running and the tests need to be run as the
     <systemitem class="username">root</systemitem> user.</para>
 @z

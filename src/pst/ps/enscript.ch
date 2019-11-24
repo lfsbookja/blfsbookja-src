@@ -112,11 +112,10 @@
 @x
     <para>If you have <xref linkend="texlive"/> installed, you can create
     Postscript and PDF documentation by issuing (does not support parallel
-    make):
-    <command>make -j1 -C docs ps pdf</command>.</para>
+    make):</para>
 @y
     <para>
-    <xref linkend="texlive"/> をインストールしている場合は、<command>make -j1 -C docs ps pdf</command> を実行すれば Postscript および PDF によるドキュメントを生成することができます。
+    <xref linkend="texlive"/> をインストールしている場合は、以下のようにして Postscript および PDF によるドキュメントを生成することができます。
     （並行ビルドはサポートされません。）
     </para>
 @z

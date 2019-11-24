@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY keyutils-time          "less than 0.1 SBU">
+  <!ENTITY keyutils-buildsize     "2.1 MB (with tests)">
+  <!ENTITY keyutils-time          "less than 0.1 SBU (add 0.8 SBU for tests)">
 @y
-  <!ENTITY keyutils-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY keyutils-buildsize     "2.1 MB (テスト込み)">
+  <!ENTITY keyutils-time          "&LessThan1;0.1 SBU&LessThan2; (テスト時はさらに 0.8 SBU)">
 @z
 
 @x

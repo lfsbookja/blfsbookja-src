@@ -93,62 +93,58 @@
     <para role="optional">
       <xref linkend="asciidoc"/>,
       <xref linkend="cairo"/>,
-      <xref linkend="enscript"/>,
       <xref linkend="exiv2"/>,
-      <xref linkend="ffmpeg"/>,
       <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="gexiv2"/>,
       <xref linkend="graphviz"/>,
-      <xref linkend="libjpeg"/>,
+      <xref linkend="jasper"/>,
+      <xref linkend="lcms2"/>,
+      <xref linkend="libjpeg"/>
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
+      <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
-      <xref linkend="lua"/>,
       <xref linkend="pango"/>,
-      <xref linkend="python2"/>,
       <xref linkend="ruby"/>,
-      <xref linkend="sdl"/>,
-      <xref linkend="gobject-introspection"/>,
+      <xref linkend="sdl2"/>,
+      <xref linkend="v4l-utils"/>,
       <xref linkend="vala"/>,
-      <xref linkend="w3m"/>,
-      <xref linkend="gexiv2"/>,
-      <ulink url="http://lensfun.sourceforge.net/">lensfun</ulink>,
-      <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
+      <ulink url="https://lensfun.github.io/">lensfun</ulink>,
+      <ulink url="https://libopenraw.pages.freedesktop.org/">libopenraw</ulink>,
       <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
       <ulink url="http://faculty.cse.tamu.edu/davis/suitesparse.html">libumfpack</ulink>,
-      <ulink url="https://github.com/hodefoting/mrg/releases">MRG</ulink>,
-      <ulink url="https://www.khronos.org/opencl/">OpenCL</ulink> (for tests), and
-      <ulink url="http://www.openexr.org">OpenEXR</ulink>
+      <ulink url="http://luajit.org/luajit.html">LuaJIT</ulink>,
+      <ulink url="https://github.com/hodefoting/mrg/releases">MRG</ulink>, and
+      <ulink url="https://www.openexr.com">OpenEXR</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="asciidoc"/>,
       <xref linkend="cairo"/>,
-      <xref linkend="enscript"/>,
       <xref linkend="exiv2"/>,
-      <xref linkend="ffmpeg"/>,
       <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="gexiv2"/>,
       <xref linkend="graphviz"/>,
-      <xref linkend="libjpeg"/>,
+      <xref linkend="jasper"/>,
+      <xref linkend="lcms2"/>,
+      <xref linkend="libjpeg"/>
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
+      <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
-      <xref linkend="lua"/>,
       <xref linkend="pango"/>,
-      <xref linkend="python2"/>,
       <xref linkend="ruby"/>,
-      <xref linkend="sdl"/>,
-      <xref linkend="gobject-introspection"/>,
+      <xref linkend="sdl2"/>,
+      <xref linkend="v4l-utils"/>,
       <xref linkend="vala"/>,
-      <xref linkend="w3m"/>,
-      <xref linkend="gexiv2"/>,
-      <ulink url="http://lensfun.sourceforge.net/">lensfun</ulink>,
-      <ulink url="http://libopenraw.freedesktop.org/wiki/">libopenraw</ulink>,
+      <ulink url="https://lensfun.github.io/">lensfun</ulink>,
+      <ulink url="https://libopenraw.pages.freedesktop.org/">libopenraw</ulink>,
       <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
       <ulink url="http://faculty.cse.tamu.edu/davis/suitesparse.html">libumfpack</ulink>,
+      <ulink url="http://luajit.org/luajit.html">LuaJIT</ulink>,
       <ulink url="https://github.com/hodefoting/mrg/releases">MRG</ulink>,
-      <ulink url="https://www.khronos.org/opencl/">OpenCL</ulink> (for tests), and
-      <ulink url="http://www.openexr.org">OpenEXR</ulink>
+      <ulink url="https://www.openexr.com">OpenEXR</ulink>
     </para>
 @z
 
@@ -171,20 +167,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
-      Many tests are skipped.
-     <!-- in 0.4.2 no failures, but the video tests have several
-       Failed to parse extradata messages.  The warnings are about
-      missing reference, assuming SUCCESS
-      and lots of Missing fast-path babl conversion detected
-      also GEGL-WARNING for runtime check failed and for
-      operation desired unknown paramspec type for seed 
-
-      In 0.4.8 all tests pass but there several messages about
-      deprecated parameter passing.-->
+      To test the results, issue: <command>ninja test</command>.
+      Two tests, gegl-format and gegl-node are known to fail.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      失敗するテストが多数あります。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      gegl-format と gegl-node という 2 つのテストが失敗します。
 @z
 
 @x
@@ -200,24 +187,11 @@
 @z
 
 @x
-      <command>install -v -m644/docs/*/{css,html} ...</command>:
-      This and the subsequent commands install all the provided documentation
-      instead of only the stylesheet <filename>gegl.css</filename> and three
-      png files.
+      <parameter>-Ddocs=true</parameter>: Build and
+      install documentation.
 @y
-      <command>install -v -m644/docs/*/{css,html} ...</command>:
-      本コマンドおよび次のコマンドにより、提供されるドキュメントをすべてインストールするようにします。
-      これを行わない場合は、単にスタイルシート <filename>gegl.css</filename> と３つの png ファイルしかインストールされません。
-@z
-
-@x
-      <parameter>--without-vala</parameter>: Do not create a
-      <application>vala</application> API - use this if
-      <command>vapigen</command> breaks the build.
-@y
-      <parameter>--without-vala</parameter>:
-      <application>vala</application> API を生成しないようにします。
-      <command>vapigen</command> によりビルドが失敗する場合に指定します。
+      <parameter>-Ddocs=true</parameter>:
+      ドキュメントのビルドとインストールを行います。
 @z
 
 @x
@@ -237,15 +211,29 @@
 @z
 
 @x
-        <seg>gcut, gegl, gegl-imgcmp</seg>
-        <seg>libgegl-0.4.so, libgegl-npd-0.4.so, libgegl-sc-0.4.so and libraries in
-        /usr/lib/gegl-0.4</seg>
-        <seg>/usr/include/gegl-0.4</seg>
+        <seg>gegl and
+             gegl-imgcmp
+        </seg>
+        <seg>libgegl-0.4.so, 
+             libgegl-npd-0.4.so, 
+             libgegl-sc-0.4.so, and 
+             modules in /usr/lib/gegl-0.4
+        </seg>
+        <seg>/usr/lib/gegl-0.4 and
+             /usr/include/gegl-0.4
+        </seg>
 @y
-        <seg>gcut, gegl, gegl-imgcmp</seg>
-        <seg>libgegl-0.4.so, libgegl-npd-0.4.so, libgegl-sc-0.4.so,
-        /usr/lib/gegl-0.4  内のライブラリ</seg>
-        <seg>/usr/include/gegl-0.4</seg>
+        <seg>gegl,
+             gegl-imgcmp
+        </seg>
+        <seg>libgegl-0.4.so, 
+             libgegl-npd-0.4.so, 
+             libgegl-sc-0.4.so,
+             /usr/lib/gegl-0.4 内のモジュール
+        </seg>
+        <seg>/usr/lib/gegl-0.4,
+             /usr/include/gegl-0.4
+        </seg>
 @z
 
 @x

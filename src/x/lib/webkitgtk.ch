@@ -94,6 +94,7 @@
       <xref linkend="libsoup"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="mesa"/>,
+      <xref linkend="openjpeg2"/>,
       <xref linkend="ruby"/>,
       <xref linkend="sqlite"/>, and
       <xref linkend="which"/>
@@ -113,6 +114,7 @@
       <xref linkend="libsoup"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="mesa"/>,
+      <xref linkend="openjpeg2"/>,
       <xref linkend="ruby"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="which"/>
@@ -145,10 +147,13 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="llvm"/>,
-      <xref linkend="wayland"/>, 
+      <xref linkend="wayland"/>,
+      <xref linkend="woff2"/>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, and
-      <ulink url="https://github.com/google/woff2">woff2</ulink>
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
+      <ulink url="https://github.com/WebPlatformForEmbedded/libwpe">libwpe</ulink>,
+      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>, and
+      <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -156,10 +161,13 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="llvm"/>,
-      <xref linkend="wayland"/>, 
+      <xref linkend="wayland"/>,
+      <xref linkend="woff2"/>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>,
-      <ulink url="https://github.com/google/woff2">woff2</ulink>
+      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
+      <ulink url="https://github.com/WebPlatformForEmbedded/libwpe">libwpe</ulink>,
+      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>, and
+      <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
     </para>
 @z
 
@@ -184,7 +192,7 @@
 
 @x
       This package does not have a working testsuite. However, there is a
-      useable basic graphical web browser in the build directory,
+      usable basic graphical web browser in the build directory,
       <application>build/bin/MiniBrowser</application>. If launching it fails,
       there is a problem with the build.
 @y

@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY potrace-buildsize     "7.5 MB (including tests)">
+  <!ENTITY potrace-buildsize     "7.1 MB (including tests)">
   <!ENTITY potrace-time          "less than 0.1 SBU (including tests)">
 @y
-  <!ENTITY potrace-buildsize     "7.5 MB (テスト込み)">
+  <!ENTITY potrace-buildsize     "7.1 MB (テスト込み)">
   <!ENTITY potrace-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
@@ -179,7 +179,7 @@
           mkbitmap, potrace
         </seg>
         <seg>
-          libpotrace.so,
+          libpotrace.so
         </seg>
         <seg>
           /usr/share/doc/potrace-&potrace-version;
@@ -189,7 +189,7 @@
           mkbitmap, potrace
         </seg>
         <seg>
-          libpotrace.so,
+          libpotrace.so
         </seg>
         <seg>
           /usr/share/doc/potrace-&potrace-version;

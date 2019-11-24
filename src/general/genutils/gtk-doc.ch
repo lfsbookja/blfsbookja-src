@@ -99,9 +99,8 @@
     <para role="required">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="itstool"/>,
-      <xref linkend="libxslt"/>, and
-      <xref linkend="python2"/>
+      <xref linkend="itstool"/>, and
+      <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -109,53 +108,56 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="python2"/>
+      <xref linkend="libxslt"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="highlight"/>
+      <xref role="runtime" linkend="pygments"/> at run time
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="highlight"/>
+      実行時に <xref role="runtime" linkend="pygments"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      For tests: 
       <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
       <xref linkend="fop"/> (XML PDF support),
-      <xref linkend="glib2"/> (for the test suite),
-      <ulink url="&gnome-download-http;/gnome-doc-utils/">GNOME Doc Utils</ulink> and
-      <xref linkend="which"/> (required for the test suite and gtk-doc documentation)
+      <xref linkend="glib2"/>,
+      <xref linkend="which"/>, and
+      Python modules 
+      <xref linkend="lxml"/>,
+      <ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>, and
+      <ulink url="https://pypi.org/project/parameterized/">parameterized</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      テスト向け: 
       <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> または
       <xref linkend="fop"/> (XML PDF サポート),
-      <xref linkend="glib2"/> (テストスイートのため),
-      <ulink url="&gnome-download-http;/gnome-doc-utils/">GNOME Doc Utils</ulink>,
-      <xref linkend="which"/> (テストスイートと gtk-doc 文書生成時に必要)
+      <xref linkend="glib2"/>,
+      <xref linkend="which"/>,
+      Python モジュール
+      <xref linkend="lxml"/>,
+      <ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>,
+      <ulink url="https://pypi.org/project/parameterized/">parameterized</ulink>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Required (runtime)</bridgehead>
-    <para role="required">
-        <xref role="runtime" linkend="six"/> 
-    </para>
+    <note><para>The optional python modules above can be easily installed with
+    the <command>pip3</command> command.</para></note>
 @y
-    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
-    <para role="required">
-        <xref role="runtime" linkend="six"/> 
-    </para>
+    <note><para>The optional python modules above can be easily installed with
+    the <command>pip3</command> command.</para></note>
 @z
 
 @x
@@ -180,10 +182,11 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+    <para>The test suite will hang if the package (or a previous version) 
+    is not already installed.</para>
 @y
     <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
+    テストスイートはパッケージをまだインストールしていない (あるいは前バージョンをインストールしていない) 場合には失敗します。
     </para>
 @z
 
@@ -212,45 +215,49 @@
 @z
 
 @x
-        <seg>gtkdocize,
-        gtkdoc-check,  
-        gtkdoc-depscan, 
-        gtkdoc-fixxref,
-        gtkdoc-mkdb,   
-        gtkdoc-mkhtml,  
-        gtkdoc-mkman,        
-        gtkdoc-mkpdf,
-        gtkdoc-rebase, 
-        gtkdoc-scan, and 
-        gtkdoc-scangobj</seg>
+        <seg>
+          gtkdocize,
+          gtkdoc-check,  
+          gtkdoc-depscan, 
+          gtkdoc-fixxref,
+          gtkdoc-mkdb,   
+          gtkdoc-mkhtml,  
+          gtkdoc-mkhtml2,  
+          gtkdoc-mkman,        
+          gtkdoc-mkpdf,
+          gtkdoc-rebase, 
+          gtkdoc-scan, and 
+          gtkdoc-scangobj
+        </seg>
         
         <seg>None</seg>
         
-        <seg>/usr/lib/cmake/GtkDoc, 
-        /usr/share/gtk-doc, and
-        /usr/share/help/*/gtk-doc-manual
+        <seg>
+          /usr/share/gtk-doc and
+          /usr/share/help/*/gtk-doc-manual
         </seg>
-      </seglistitem>
 @y
-        <seg>gtkdocize,
-        gtkdoc-check,  
-        gtkdoc-depscan, 
-        gtkdoc-fixxref,
-        gtkdoc-mkdb,   
-        gtkdoc-mkhtml,  
-        gtkdoc-mkman,        
-        gtkdoc-mkpdf,
-        gtkdoc-rebase, 
-        gtkdoc-scan,
-        gtkdoc-scangobj</seg>
+        <seg>
+          gtkdocize,
+          gtkdoc-check,  
+          gtkdoc-depscan, 
+          gtkdoc-fixxref,
+          gtkdoc-mkdb,   
+          gtkdoc-mkhtml,  
+          gtkdoc-mkhtml2,  
+          gtkdoc-mkman,        
+          gtkdoc-mkpdf,
+          gtkdoc-rebase, 
+          gtkdoc-scan, 
+          gtkdoc-scangobj
+        </seg>
         
         <seg>&None;</seg>
         
-        <seg>/usr/lib/cmake/GtkDoc, 
-        /usr/share/gtk-doc,
-        /usr/share/help/*/gtk-doc-manual
+        <seg>
+          /usr/share/gtk-doc,
+          /usr/share/help/*/gtk-doc-manual
         </seg>
-      </seglistitem>
 @z
 
 @x

@@ -139,9 +139,14 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. If a Desktop
+      Environment has not been started that uses XDG, it's possible that 90%
+      of the test suite will fail. To rectify this, create the directory listed
+      in $XDG_RUNTIME_DIR first, if required.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      XDG を利用していないデスクトップ環境が稼動している場合、テストスイートの 9 割が失敗する可能性があります。
+      これを適正に処理したい場合は、先に $XDG_RUNTIME_DIR に示されるディレクトリを生成してください。
 @z
 
 @x

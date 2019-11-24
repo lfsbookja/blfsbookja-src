@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gs-buildsize     "176 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "1.7 SBU (with libgs.so)">
+  <!ENTITY gs-buildsize     "161 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "1.6 SBU (Using parallelism=4; with libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "170 MB (フォントと libgs.so)">
-  <!ENTITY gs-time          "1.7 SBU (libgs.so 込み)">
+  <!ENTITY gs-buildsize     "161 MB (フォントと libgs.so)">
+  <!ENTITY gs-time          "1.6 SBU (parallelism=4 指定時; libgs.so 込み)">
 @z
 
 @x
@@ -151,8 +151,9 @@
       <xref linkend="freetype2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="libtiff"/>, and
-      <xref linkend="lcms2"/>
+      <xref linkend="libtiff"/>,
+      <xref linkend="lcms2"/>, and
+      <xref linkend="openjpeg2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -165,8 +166,9 @@
       <xref linkend="freetype2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="libtiff"/>, and
-      <xref linkend="lcms2"/>
+      <xref linkend="libtiff"/>,
+      <xref linkend="lcms2"/>,
+      <xref linkend="openjpeg2"/>
     </para>
 @z
 
@@ -215,20 +217,20 @@
 @z
 
 @x
-      <application>GPL Ghostscript</application> includes (old) copies of
+      <application>Ghostscript</application> includes (old) copies of
       several libraries. Some of these seem to have been patched to fix known
       vulnerabilities, but others of these copies are less-well maintained.
       To ensure that any future fixes are applied throughout the whole system,
       it is recommended that you first install the released versions of these
-      libraries and then configure <application>GPL Ghostscript</application>
+      libraries and then configure <application>Ghostscript</application>
       to link to them.
 @y
-      <application>GPL Ghostscript</application> includes (old) copies of
+      <application>Ghostscript</application> includes (old) copies of
       several libraries. Some of these seem to have been patched to fix known
       vulnerabilities, but others of these copies are less-well maintained.
       To ensure that any future fixes are applied throughout the whole system,
       it is recommended that you first install the released versions of these
-      libraries and then configure <application>GPL Ghostscript</application>
+      libraries and then configure <application>Ghostscript</application>
       to link to them.
 @z
 
@@ -236,12 +238,14 @@
       If you have installed the recommended dependencies on your system, 
       remove the copies of
       <application>freetype</application>, <application>lcms2</application>,
-      <application>libjpeg</application>, and <application>libpng</application>:
+      <application>libjpeg</application>, <application>libpng</application>,
+      and <application>openjpeg</application>:
 @y
       If you have installed the recommended dependencies on your system, 
       remove the copies of
       <application>freetype</application>, <application>lcms2</application>,
-      <application>libjpeg</application>, and <application>libpng</application>:
+      <application>libjpeg</application>, <application>libpng</application>,
+      and <application>openjpeg</application>:
 @z
 
 @x
@@ -253,11 +257,13 @@
 @x
         The shared library depends on <xref linkend="gtk3"/>. It is only used by
         external programs like <xref linkend="asymptote"/>, <xref
-        linkend="imagemagick"/>, and <xref linkend="texlive"/>.
+        linkend="dvisvgm"/>, <xref linkend="imagemagick"/>, and <xref
+        linkend="texlive"/>.
 @y
         The shared library depends on <xref linkend="gtk3"/>. It is only used by
         external programs like <xref linkend="asymptote"/>, <xref
-        linkend="imagemagick"/>, and <xref linkend="texlive"/>.
+        linkend="dvisvgm"/>, <xref linkend="imagemagick"/>, and <xref
+        linkend="texlive"/>.
 @z
 
 @x
@@ -336,11 +342,11 @@
 
 @x
         <seg>
-          dvipdf, eps2eps, font2c, gs, gsbj, gsc (from soinstall), gsdj,
+          dvipdf, eps2eps, gs, gsbj, gsc (from soinstall), gsdj,
           gsdj500, gslj, gslp, gsnd, gsx (from soinstall), lprsetup.sh,
           pdf2dsc, pdf2ps, pf2afm, pfbtopfa, pphs, printafm, ps2ascii,
           ps2epsi, ps2pdf, ps2pdf12, ps2pdf13, ps2pdf14, ps2pdfwr,
-          ps2ps, ps2ps2, unix-lpr.sh, and wftopfa
+          ps2ps, ps2ps2, and unix-lpr.sh
           <!-- I don't see bdftops,fixmswrd.pl or pv.sh on my builds [ I don't
           have any bdf tools from xorg ] but they are still referenced in
           base/unixinst.mak -->
@@ -355,11 +361,11 @@
         </seg>
 @y
         <seg>
-          dvipdf, eps2eps, font2c, gs, gsbj, gsc (from soinstall), gsdj,
+          dvipdf, eps2eps, gs, gsbj, gsc (from soinstall), gsdj,
           gsdj500, gslj, gslp, gsnd, gsx (from soinstall), lprsetup.sh,
           pdf2dsc, pdf2ps, pf2afm, pfbtopfa, pphs, printafm, ps2ascii,
           ps2epsi, ps2pdf, ps2pdf12, ps2pdf13, ps2pdf14, ps2pdfwr,
-          ps2ps, ps2ps2, unix-lpr.sh, wftopfa
+          ps2ps, ps2ps2, unix-lpr.sh
           <!-- I don't see bdftops,fixmswrd.pl or pv.sh on my builds [ I don't
           have any bdf tools from xorg ] but they are still referenced in
           base/unixinst.mak -->
@@ -401,12 +407,12 @@
 @z
 
 @x
-     <application>GPL Ghostscript</application> provides many different
+     <application>Ghostscript</application> provides many different
      scripts used to convert PostScript, PDF, and other formats. Please refer to
      the HTML documentation or the man pages for information about the
      capabilities provided.
 @y
-     <application>GPL Ghostscript</application> provides many different
+     <application>Ghostscript</application> provides many different
      scripts used to convert PostScript, PDF, and other formats. Please refer to
      the HTML documentation or the man pages for information about the
      capabilities provided.

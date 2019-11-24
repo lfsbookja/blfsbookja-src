@@ -21,6 +21,7 @@ CHANGE_FILES = \
 	fltk.ch                 \
 	freeglut.ch             \
 	gdk-pixbuf.ch           \
+	glew.ch                 \
 	goffice010.ch           \
 	gtk+2.ch                \
 	gtk+3.ch                \
@@ -28,14 +29,17 @@ CHANGE_FILES = \
 	gtkmm2.ch               \
 	gtkmm3.ch               \
         gtksourceview.ch        \
+	gtksourceview4.ch       \
 	gtk-engines.ch          \
         glu.ch                  \
         imlib2.ch               \
 	keybinder2.ch           \
 	lib.ch                  \
+	libdazzle.ch            \
 	libdrm.ch               \
 	libepoxy.ch             \
 	libglade.ch             \
+	libhandy.ch             \
 	libnotify.ch            \
 	libxklavier.ch          \
 	pango.ch                \
@@ -59,3 +63,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

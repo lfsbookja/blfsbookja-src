@@ -80,13 +80,13 @@
 @z
 
 @x
-      <bridgehead renderas="sect5">Optional Dependencies</bridgehead>
-      <para role="optional">
+      <bridgehead renderas="sect5">Recommended Dependencies</bridgehead>
+      <para role="recommended">
         <xref linkend="python2"/> 
       </para>
 @y
-      <bridgehead renderas="sect5">&Optional;</bridgehead>
-      <para role="optional">
+      <bridgehead renderas="sect5">&Recommended; Dependencies</bridgehead>
+      <para role="recommended">
         <xref linkend="python2"/> 
       </para>
 @z
@@ -104,29 +104,10 @@
 @z
 
 @x
-        Install <application>six</application> for Python2 by running 
-        the following commands:
+        Install <application>six</application> for Python 2 and Python 3
+        by running the following commands:
 @y
-        以下のコマンドを実行して Python2 向け <application>six</application> をビルドします。
-@z
-
-@x
-        This package does not come with a test suite.
-@y
-        &notTestSuite;
-@z
-
-@x
-        Now, as the <systemitem class="username">root</systemitem> user:
-@y
-        <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-        Install <application>six</application> for Python3 by running 
-        the following commands:
-@y
-        以下のコマンドを実行して Python3 向け <application>six</application> をビルドします。
+        以下のコマンドを実行して Python2 向けおよび Python3 向けの <application>six</application> をビルドします。
 @z
 
 @x
@@ -149,7 +130,7 @@
 
 @x
         <segtitle>Installed Programs</segtitle>
-        <segtitle>Installed Module</segtitle>
+        <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -162,21 +143,21 @@
             None
           </seg>
           <seg>
-            six.py
+            None
           </seg>
           <seg>
-            /usr/lib/python2.7/site-packages/six-1.10.0-py2.7.egg and/or
-            /usr/lib/python3.6/site-packages/six-1.10.0-py3.6.egg
+            /usr/lib/python&python2-majorver;/site-packages/six-&six-version;-py&python2-majorver;.egg and/or
+            /usr/lib/python&python3-majorver;/site-packages/six-&six-version;-py&python3-majorver;.egg
           </seg>
 @y
           <seg>
             &None;
           </seg>
           <seg>
-            six.py
+            &None;
           </seg>
           <seg>
-            /usr/lib/python2.7/site-packages/six-1.10.0-py2.7.egg または
-            /usr/lib/python3.6/site-packages/six-1.10.0-py3.6.egg
+            /usr/lib/python&python2-majorver;/site-packages/six-&six-version;-py&python2-majorver;.egg and/or
+            /usr/lib/python&python3-majorver;/site-packages/six-&six-version;-py&python3-majorver;.egg
           </seg>
 @z

@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY volume_key-time          "less than 0.1 SBU">
-@y
-  <!ENTITY volume_key-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to volume_key</title>
 @y
     <title>&IntroductionTo1;volume_key&IntroductionTo2;</title>
@@ -89,7 +83,7 @@
       <xref linkend="cryptsetup"/>,
       <xref linkend="glib2"/>,
       <xref linkend="gpgme"/>, and
-      <xref linkend="python2"/>
+      <xref linkend="nss"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -97,19 +91,19 @@
       <xref linkend="cryptsetup"/>,
       <xref linkend="glib2"/>,
       <xref linkend="gpgme"/>,
-      <xref linkend="python2"/>
+      <xref linkend="nss"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="swig"/>
+      <xref linkend="python2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="swig"/>
+      <xref linkend="python2"/>
     </para>
 @z
 

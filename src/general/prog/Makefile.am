@@ -5,12 +5,14 @@
 ## $Rev$
 ## $Date::                           $
 ##
+SUBDIRS = perl-deps perl-modules
+
 BOOKdir = @abs_bookdir@/general/prog
 CHANGE_FILES_pythonmodules = \
 	dbus-python.ch   \
 	pyatspi2.ch      \
 	pycairo.ch       \
-	pycrypto.ch      \
+	pycryptodome.ch  \
 	pygobject2.ch    \
 	pygobject3.ch    \
 	pygtk.ch         \
@@ -22,43 +24,43 @@ CHANGE_FILES = \
 	${CHANGE_FILES_pythonmodules} \
 	apache-ant.ch     \
 	autoconf213.ch    \
-	beaker.ch         \
+	cbindgen.ch       \
 	clisp.ch          \
 	cmake.ch          \
+	decorator.ch      \
 	dejagnu.ch        \
 	docutils.ch       \
 	doxygen.ch        \
 	dummy-java.ch     \
 	expect.ch         \
-	funcsigs.ch       \
 	gc.ch             \
 	gcc.ch            \
-	gcc-ada.ch        \
 	gdb.ch            \
 	git.ch            \
 	guile.ch          \
 	java.ch           \
 	jinja2.ch         \
-	junit.ch          \
 	librep.ch         \
 	libxml2py2.ch     \
 	llvm.ch           \
 	lua.ch            \
+	lua52.ch          \
 	lxml.ch           \
 	markupsafe.ch     \
 	mako.ch           \
-	maven.ch          \
 	mercurial.ch      \
 	nasm.ch           \
-	ninja.ch          \
-	npapi-sdk.ch      \
 	ojdk-conf.ch      \
 	openjdk.ch        \
 	other-tools.ch    \
+	perl-alternatives.ch \
+	perl-deps.ch      \
 	perl-modules.ch   \
 	php.ch            \
 	prog.ch           \
+	pygments.ch       \
 	python-modules.ch \
+	python-slip.ch    \
 	python2.ch        \
 	python3.ch        \
 	ruby.ch           \
@@ -89,3 +91,8 @@ ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
 $(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi

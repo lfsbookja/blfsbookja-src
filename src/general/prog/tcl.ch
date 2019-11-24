@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY tcl-buildsize     "65 MB (including html documentation)">
-  <!ENTITY tcl-time          "0.6 SBU (using parallelism=4; add 2.8 SBU for tests)">
+  <!ENTITY tcl-buildsize     "84 MB (including html documentation)">
+  <!ENTITY tcl-time          "0.6 SBU (add 3.0 SBU for tests)">
 @y
-  <!ENTITY tcl-buildsize     "65 MB (ドキュメント生成を含む)">
-  <!ENTITY tcl-time          "0.6 SBU (parallelism=4 利用; テスト実行時はさらに 2.8 SBU)">
+  <!ENTITY tcl-buildsize     "84 MB (html ドキュメント生成を含む)">
+  <!ENTITY tcl-time          "0.6 SBU (テスト実施時はさらに 3.0 SBU)">
 @z
 
 @x
@@ -235,41 +235,41 @@
 
 @x
         <seg>
-          tclsh and tclsh&tcl-ver;
+          sqlite3_analyzer, tclsh, and tclsh&tcl-ver;
         </seg>
         <seg>
           libtcl&tcl-ver;.so and libtclstub&tcl-ver;.a
         </seg>
         <seg>
-          /usr/lib/itcl4.0.1,
-          /usr/lib/sqlite3.8.6
+          /usr/lib/itcl&itcl-ver;,
+          /usr/lib/sqlite&sqlite3-ver;
           /usr/lib/tcl8,
           /usr/lib/tcl&tcl-ver;,
-          /usr/lib/tdbc1.0.1,
-          /usr/lib/tdbcmysql1.0.1,
-          /usr/lib/tdbcodbc1.0.1,
-          /usr/lib/tdbcpostgres1.0.1,
-          /usr/lib/thread2.7.1,
+          /usr/lib/tdbc&tdbc-ver;,
+          /usr/lib/tdbcmysql&tdbc-ver;,
+          /usr/lib/tdbcodbc&tdbc-ver;,
+          /usr/lib/tdbcpostgres&tdbc-ver;,
+          /usr/lib/thread&thread-ver;,
           /usr/share/doc/tcl-&tcl-version;, and
           /usr/share/man/mann
         </seg>
 @y
         <seg>
-          tclsh, tclsh&tcl-ver;
+          sqlite3_analyzer, tclsh, tclsh&tcl-ver;
         </seg>
         <seg>
           libtcl&tcl-ver;.so, libtclstub&tcl-ver;.a
         </seg>
         <seg>
-          /usr/lib/itcl4.0.1,
-          /usr/lib/sqlite3.8.6
+          /usr/lib/itcl&itcl-ver;,
+          /usr/lib/sqlite&sqlite3-ver;
           /usr/lib/tcl8,
           /usr/lib/tcl&tcl-ver;,
-          /usr/lib/tdbc1.0.1,
-          /usr/lib/tdbcmysql1.0.1,
-          /usr/lib/tdbcodbc1.0.1,
-          /usr/lib/tdbcpostgres1.0.1,
-          /usr/lib/thread2.7.1,
+          /usr/lib/tdbc&tdbc-ver;,
+          /usr/lib/tdbcmysql&tdbc-ver;,
+          /usr/lib/tdbcodbc&tdbc-ver;,
+          /usr/lib/tdbcpostgres&tdbc-ver;,
+          /usr/lib/thread&thread-ver;,
           /usr/share/doc/tcl-&tcl-version;,
           /usr/share/man/mann
         </seg>

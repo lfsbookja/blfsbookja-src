@@ -14,20 +14,17 @@
 @z
 
 @x
-    <title>Introduction to Iptables</title>
+    <title>Introduction to iptables</title>
 @y
-    <title>&IntroductionTo1;Iptables&IntroductionTo2;</title>
+    <title>&IntroductionTo1;iptables&IntroductionTo2;</title>
 @z
 
 @x
-      The next part of this chapter deals with firewalls. The principal
-      firewall tool for Linux is <application>Iptables</application>. You will
-      need to install <application>Iptables</application> if you intend on using
-      any form of a firewall.
+      <application>iptables</application> is a userspace command line program
+      used to configure Linux 2.4 and later kernel packet filtering ruleset.
 @y
-      この節の次ではファイアウォールについて説明します。
-      Linux においてファイアウォールを取り扱う重要なツールが <application>Iptables</application> です。
-      どのような形にせよ、ファイアウォールを実現するなら <application>Iptables</application> をインストールすることが必要です。
+      <application>iptables</application> is a userspace command line program
+      used to configure Linux 2.4 and later kernel packet filtering ruleset.
 @z
 
 @x
@@ -73,20 +70,20 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Iptables Dependencies</bridgehead>
+    <bridgehead renderas="sect3">iptables Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;Iptables&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;iptables&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.netfilter.org/projects/nftables/index.html">nftables</ulink>
+      <xref linkend="nftables"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.netfilter.org/projects/nftables/index.html">nftables</ulink>
+      <xref linkend="nftables"/>
     </para>
 @z
 
@@ -103,20 +100,28 @@
 @z
 
 @x
-      A firewall in Linux is accomplished through a portion of the
-      kernel called netfilter. The interface to netfilter is
-      <application>Iptables</application>. To use it, the appropriate
-      kernel configuration parameters are found in:
+      A firewall in Linux is accomplished through the netfilter interface. To
+      use <application>iptables</application> to configure netfilter, the
+      following kernel configuration parameters are required:
 @y
-      Linux におけるファイアウォールは、カーネルの機能の一部である netfilter を通じて実現されます。
-      その netfilter へのインターフェースが <application>Iptables</application> です。
-      これを使うには、以下のカーネルのパラメーターを設定します。
+      Linux におけるファイアウォールは netfilter インターフェースを通じて実現されます。
+      <application>iptables</application> を利用して netfilter を設定するには、以下に示すカーネル設定パラメーターが必要です。
 @z
 
 @x
-      <title>Installation of Iptables</title>
+      Include any connection tracking protocols that will be used, as well as
+      any protocols that you wish to use for match suppport under the
+      "Core Netfilter Configuration" section.
 @y
-      <title>&InstallationOf1;Iptables&InstallationOf2;</title>
+      Include any connection tracking protocols that will be used, as well as
+      any protocols that you wish to use for match suppport under the
+      "Core Netfilter Configuration" section.
+@z
+
+@x
+      <title>Installation of iptables</title>
+@y
+      <title>&InstallationOf1;iptables&InstallationOf2;</title>
 @z
 
 @x
@@ -128,59 +133,54 @@
         how to change the <parameter>KERNEL_DIR=</parameter> parameter to point
         at the <application>Linux</application> source code. Note that if you
         upgrade the kernel version, you may also need to recompile
-        <application>Iptables</application> and that the BLFS team has not tested
-        using the raw kernel headers.
+        <application>iptables</application> and that the BLFS team has not
+        tested using the raw kernel headers.
 @y
-        以降にて示しているインストール手順では <application>Linux</application> ソースコード内の、生のヘッダーファイルを必要とする、特定の拡張ライブラリまではビルドしません。
-        そのような拡張ライブラリをビルドする場合 (不明であればビルドする必要はないでしょう) <filename>INSTALL</filename> ファイルを参照して <application>Linux</application> ソースコードの場所を指定する <parameter>KERNEL_DIR=</parameter> パラメーターの設定例を確認してください。
-        カーネルバージョンをアップグレードする際には、<application>iptables</application> も再コンパイルする必要があることを覚えておいてください。
-        なお BLFS チームでは、生のカーネルヘッダーを用いたテストは行っていません。
+        The installation below does not include building some specialized
+        extension libraries which require the raw headers in the
+        <application>Linux</application> source code. If you wish to build the
+        additional extensions (if you aren't sure, then you probably don't), you
+        can look at the <filename>INSTALL</filename> file to see an example of
+        how to change the <parameter>KERNEL_DIR=</parameter> parameter to point
+        at the <application>Linux</application> source code. Note that if you
+        upgrade the kernel version, you may also need to recompile
+        <application>iptables</application> and that the BLFS team has not
+        tested using the raw kernel headers.
 @z
 
 @x
-        For some non-x86 architectures, the raw kernel headers may be
-        required. In that case, modify the <parameter>KERNEL_DIR=</parameter>
-        parameter to point at the <application>Linux</application> source
-        code.
-@y
-        x86 ではないアーキテクチャーでは、生のカーネルヘッダーを必要とするものがあります。
-        そのような場合は <parameter>KERNEL_DIR=</parameter> パラメーターにて <application>Linux</application> のソースコードを指し示すようにしてください。
-@z
-
-@x
-     Disable libebt/libarp extensions if 
-     <ulink url="http://www.netfilter.org/projects/nftables/index.html">nftables</ulink>
-     is not installed to prevent a build failure:
-@y
-     <ulink url="http://www.netfilter.org/projects/nftables/index.html">nftables</ulink>
-     をインストールしていない場合は、ビルドに失敗しないように libebt/libarp 拡張を無効にします。
-@z
-
-@x
-      Install <application>Iptables</application> by running the following
+      Install <application>iptables</application> by running the following
       commands:
 @y
       <application>iptables</application> をインストールするために以下を実行します。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>--disable-nftables</parameter>: This switch disables building
+      nftables compat. Omit this switch if you have installed
+      <xref linkend="nftables"/>.
+@y
+      <parameter>--disable-nftables</parameter>: This switch disables building
+      nftables compat. Omit this switch if you have installed
+      <xref linkend="nftables"/>.
 @z
 
 @x
@@ -194,12 +194,12 @@
 @z
 
 @x
-      <parameter>--with-xtlibdir=/lib/xtables</parameter>: Ensure all 
-      <application>Iptables</application> modules are installed in the 
+      <parameter>--with-xtlibdir=/lib/xtables</parameter>: Ensure all
+      <application>iptables</application> modules are installed in the
       <filename class="directory">/lib/xtables</filename> directory.
 @y
       <parameter>--with-xtlibdir=/lib/xtables</parameter>:
-      <application>Iptables</application> モジュールをすべて <filename
+      <application>iptables</application> モジュールをすべて <filename
       class="directory">/lib/xtables</filename> ディレクトリにインストールするようにします。
 @z
 
@@ -220,133 +220,8 @@
 @z
 
 @x
-    <title>Configuring Iptables</title>
+    <title>Configuring iptables</title>
 @y
-    <title>&Configuring1;Iptables&Configuring2;</title>
+    <title>&Configuring1;iptables&Configuring2;</title>
 @z
 
-@x
-      Introductory instructions for configuring your firewall are
-      presented in the next section: <xref linkend="fw-firewall"/>
-@y
-      ファイアウォールの設定手順は、次の節 <xref linkend="fw-firewall"/> にて説明しています。
-@z
-
-@x
-      <title><phrase revision="sysv">Boot Script</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
-@y
-      <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">&SystemdUnit;</phrase></title>
-@z
-
-@x
-        To set up the iptables firewall at boot, install the
-        <filename>/etc/rc.d/init.d/iptables</filename> init script included
-        in the <xref linkend="bootscripts"/> package.
-@y
-        iptables によるファイアウォールの設定を起動時に有効とするには、<xref
-        linkend="bootscripts"/> パッケージに含まれる初期起動スクリプト <filename>/etc/rc.d/init.d/iptables</filename> をインストールします。
-@z
-
-@x
-        To set up the iptables firewall at boot, install the
-        <filename>iptables.service</filename> unit included in the
-        <xref linkend="systemd-units"/> package.
-@y
-        iptables によるファイアウォールの設定を起動時に有効とするには、<xref
-        linkend="systemd-units"/> パッケージに含まれる <filename>iptables.service</filename> ユニットをインストールします。
-@z
-
-@x
-    <title>Contents</title>
-@y
-    <title>&Contents;</title>
-@z
-
-@x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
-@y
-      <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-        <seg>
-          ip6tables, ip6tables-restore, ip6tables-save, iptables, iptables-restore,
-          iptables-save, iptables-xml, nfsynproxy (optional) and xtables-multi
-        </seg>
-        <seg>
-          libip4tc.so, libip6tc.so, libipq.so, libiptc.so, and libxtables.so
-        </seg>
-        <seg>
-          /lib/xtables and /usr/include/libiptc
-        </seg>
-@y
-        <seg>
-          ip6tables, ip6tables-restore, ip6tables-save, iptables, iptables-restore,
-          iptables-save, iptables-xml, nfsynproxy (任意ビルド), xtables-multi
-        </seg>
-        <seg>
-          libip4tc.so, libip6tc.so, libipq.so, libiptc.so, libxtables.so
-        </seg>
-        <seg>
-          /lib/xtables, /usr/include/libiptc
-        </seg>
-@z
-
-@x
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x iptables
-            is used to set up, maintain, and inspect the tables of
-            IP packet filter rules in the Linux kernel.
-@y
-            Linux カーネル内の IP パケットフィルタルール (IP packet filter rules) のテーブルを設定、管理、検証します。
-@z
-
-@x iptables-restore
-            is used to restore IP Tables from data specified on
-            STDIN. Use I/O redirection provided by your
-            shell to read from a file.
-@y
-            is used to restore IP Tables from data specified on
-            STDIN. Use I/O redirection provided by your
-            shell to read from a file.
-@z
-
-@x iptables-save
-            is used to dump the contents of an IP Table in easily
-            parseable format to STDOUT. Use I/O-redirection
-            provided by your shell to write to a file.
-@y
-            is used to dump the contents of an IP Table in easily
-            parseable format to STDOUT. Use I/O-redirection
-            provided by your shell to write to a file.
-@z
-
-@x iptables-xml
-            is used to convert the output of
-            <command>iptables-save</command> to an XML format. Using the
-            <filename>iptables.xslt</filename> stylesheet converts the XML
-            back to the format of <command>iptables-restore</command>.
-@y
-            is used to convert the output of
-            <command>iptables-save</command> to an XML format. Using the
-            <filename>iptables.xslt</filename> stylesheet converts the XML
-            back to the format of <command>iptables-restore</command>.
-@z
-
-@x ip6tables
-            are a set of commands for IPV6 that parallel the iptables
-            commands above.
-@y
-            are a set of commands for IPV6 that parallel the iptables
-            commands above.
-@z

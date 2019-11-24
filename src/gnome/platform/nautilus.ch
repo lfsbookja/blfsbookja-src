@@ -77,20 +77,24 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="bubblewrap"/>,
       <xref linkend="gexiv2"/>,
       <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="tracker"/>, and
-      <xref linkend="libnotify"/>
+      <xref linkend="libnotify"/>,
+      <xref linkend="libseccomp"/>, and
+      <xref linkend="tracker-miners"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="bubblewrap"/>,
       <xref linkend="gexiv2"/>,
       <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="tracker"/>,
-      <xref linkend="libnotify"/>
+      <xref linkend="libnotify"/>,
+      <xref linkend="libseccomp"/>,
+      <xref linkend="tracker-miners"/>
     </para>
 @z
 
@@ -127,7 +131,7 @@
 @x
     <bridgehead renderas="sect4">Recommended (Runtime)</bridgehead>
     <para role="recommended">
-      <xref role="runtime" linkend="adwaita-icon-theme"/>, and
+      <xref role="runtime" linkend="adwaita-icon-theme"/> and
       <xref role="runtime" linkend="gvfs"/> (For hotplugging and device
         mounting to work)
     </para>
@@ -176,14 +180,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>sed s/\'libm\'/\'m\'/ -i meson.build</command>: Fix the build
-      system so that it finds the Math library.
-@y
-      <command>sed s/\'libm\'/\'m\'/ -i meson.build</command>: Fix the build
-      system so that it finds the Math library.
 @z
 
 @x

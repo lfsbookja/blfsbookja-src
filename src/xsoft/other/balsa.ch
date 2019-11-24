@@ -82,6 +82,7 @@
       <xref linkend="aspell"/>,
       <xref linkend="enchant"/>,
       <xref linkend="gmime"/>,
+      <xref linkend='gpgme'/>,
       <xref linkend="libesmtp"/>, and
       <xref linkend="rarian"/>
     </para>
@@ -91,6 +92,7 @@
       <xref linkend="aspell"/>,
       <xref linkend="enchant"/>,
       <xref linkend="gmime"/>,
+      <xref linkend='gpgme'/>,
       <xref linkend="libesmtp"/>,
       <xref linkend="rarian"/>
     </para>
@@ -139,20 +141,8 @@
       <xref linkend="openldap"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="webkitgtk"/>,
-      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>,
+      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>, and
       <ulink url="https://pypi.python.org/pypi/html2text/">python-html2text</ulink>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional to Build S/MIME Support</bridgehead>
-    <para role="optional">
-      <xref linkend='gpgme'/>
-    </para>
-@y
-    <bridgehead renderas="sect4">S/MIME サポートビルド時の&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend='gpgme'/>
     </para>
 @z
 

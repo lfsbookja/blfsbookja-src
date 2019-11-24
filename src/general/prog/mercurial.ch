@@ -102,11 +102,11 @@
     <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
     <xref role="runtime" linkend="openssh"/>
       (runtime, to access ssh://... repositories),
+    <xref linkend="pygments"/>,
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
-    <ulink url="http://pygments.org/">pygments</ulink>, and
+    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>, and
     <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
 
     </para>
@@ -119,11 +119,11 @@
     <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
     <xref role="runtime" linkend="openssh"/>
       (runtime, to access ssh://... repositories),
+    <xref linkend="pygments"/>,
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
-    <ulink url="http://pygments.org/">pygments</ulink>, and
+    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>, and
     <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
 
     </para>
@@ -225,7 +225,7 @@
 @z
 
 @x hg
-          <para>is the program file for mercurial.</para>
+          <para>is the mercurial version control system.</para>
 @y
-          <para>is the program file for mercurial.</para>
+          <para>is the mercurial version control system.</para>
 @z

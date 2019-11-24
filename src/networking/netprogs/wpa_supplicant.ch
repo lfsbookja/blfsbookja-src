@@ -267,13 +267,13 @@
 
 @x
         <phrase revision="sysv"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf </filename></phrase>
-        <phrase revision="systemd"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase> 
+        <phrase revision="systemd"><filename>/etc/wpa_supplicant/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase> 
         can hold the details of several access points. When
         <command>wpa_supplicant</command> is started, it will scan for the
         SSIDs it can see and choose the appropriate password to connect.
 @y
         <phrase revision="sysv"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf </filename></phrase>
-        <phrase revision="systemd"><filename>/etc/sysconfig/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase> 
+        <phrase revision="systemd"><filename>/etc/wpa_supplicant/wpa_supplicant-<replaceable>wifi0</replaceable>.conf</filename></phrase> 
         can hold the details of several access points. When
         <command>wpa_supplicant</command> is started, it will scan for the
         SSIDs it can see and choose the appropriate password to connect.

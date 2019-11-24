@@ -232,7 +232,6 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/networking/mailnews
 CHANGE_FILES = \
-	alpine.ch    \
 	fetchmail.ch \
 	mailnews.ch  \
 	mailx.ch     \

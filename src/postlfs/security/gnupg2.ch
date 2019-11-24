@@ -90,7 +90,6 @@
     <para role="required">
       <xref linkend="libassuan"/>,
       <xref linkend="libgcrypt"/>,
-      <xref linkend="libgpg-error"/>,
       <xref linkend="libksba"/>, and
       <xref linkend="npth"/>
     </para>
@@ -99,7 +98,6 @@
     <para role="required">
       <xref linkend="libassuan"/>,
       <xref linkend="libgcrypt"/>,
-      <xref linkend="libgpg-error"/>,
       <xref linkend="libksba"/>,
       <xref linkend="npth"/>
     </para>
@@ -122,10 +120,11 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
+      <xref linkend="fuse3"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="imagemagick"/> (for the <command>convert</command> utility,
       used for generating the documentation),
-      <xref linkend="libusb-compat"/>,
+      <xref linkend="libusb"/>,
       an <xref linkend="server-mail"/>,
       <xref linkend="openldap"/>,
       <xref linkend="sqlite"/>,
@@ -139,10 +138,11 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
+      <xref linkend="fuse3"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="imagemagick"/> (for the <command>convert</command> utility,
       used for generating the documentation),
-      <xref linkend="libusb-compat"/>,
+      <xref linkend="libusb"/>,
       an <xref linkend="server-mail"/>,
       <xref linkend="openldap"/>,
       <xref linkend="sqlite"/>,
@@ -209,7 +209,7 @@
 @z
 
 @x
-    <para>If you created alternate formats of the documentation, install it
+    <para>If you created alternate formats of the documentation, install them
     using the following command as the
     <systemitem class="username">root</systemitem> user:</para>
 @y
@@ -252,19 +252,19 @@
 @z
 
 @x
-      <option>--enable-all-tests</option>: allows more tests to be run whith
+      <option>--enable-all-tests</option>: allows more tests to be run with
       <command>make check</command>.
 @y
-      <option>--enable-all-tests</option>: allows more tests to be run whith
+      <option>--enable-all-tests</option>: allows more tests to be run with
       <command>make check</command>.
 @z
 
 @x
-    <para><option>--enable-g13</option>: This switch enables building the
-    g13 program.</para>
+      <option>--enable-g13</option>: This switch enables building the
+      g13 program.
 @y
-    <para><option>--enable-g13</option>: This switch enables building the
-    g13 program.</para>
+      <option>--enable-g13</option>: This switch enables building the
+      g13 program.
 @z
 
 @x
@@ -286,16 +286,16 @@
 @x
         <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13
         (optional), gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
-        gpgscm, gpgsm, gpgtar, gpgv, gpg-zip, kbxutil, symcryptrun, 
-        and watchgnupg</seg>
+           gpgscm, gpgsm, gpgtar, gpgv, gpg-wks-server, gpg-zip, kbxutil, 
+        symcryptrun, and watchgnupg</seg>
         <seg>None</seg>
         <seg>/usr/share/doc/gnupg-&gnupg2-version; and
         /usr/share/gnupg</seg>
 @y
         <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13
-        （任意ビルド）, gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
-        gpgscm, gpgsm, gpgtar, gpgv, gpg-zip, kbxutil, symcryptrun, 
-        watchgnupg</seg>
+        (optional), gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
+           gpgscm, gpgsm, gpgtar, gpgv, gpg-wks-server, gpg-zip, kbxutil, 
+        symcryptrun, watchgnupg</seg>
         <seg>&None;</seg>
         <seg>/usr/share/doc/gnupg-&gnupg2-version;,
         /usr/share/gnupg</seg>
@@ -308,10 +308,10 @@
 @z
 
 @x addgnupghome
-          <para>is used to create and populate user's
+          <para>is used to create and populate a user's
           <filename class='directory'>~/.gnupg</filename> directories</para>
 @y
-          <para>is used to create and populate user's
+          <para>is used to create and populate a user's
           <filename class='directory'>~/.gnupg</filename> directories</para>
 @z
 
@@ -431,10 +431,18 @@
           <para>is a verify only version of <command>gpg2</command>.</para>
 @z
 
-@x gpg-zip
-          <para> encrypts or signs files into an archive.</para>
+@x gpg-wks-server
+          <para>provides a server for the
+          <application>Web Key Service</application> protocol.</para>
 @y
-          <para> encrypts or signs files into an archive.</para>
+          <para>provides a server for the
+          <application>Web Key Service</application> protocol.</para>
+@z
+
+@x gpg-zip
+          <para>encrypts or signs files into an archive.</para>
+@y
+          <para>encrypts or signs files into an archive.</para>
 @z
 
 @x kbxutil

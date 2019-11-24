@@ -81,10 +81,10 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="openssl"/></para>
+    <para role="recommended"><xref linkend="libevent"/></para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="openssl"/></para>
+    <para role="recommended"><xref linkend="libevent"/></para>
 @z
 
 @x

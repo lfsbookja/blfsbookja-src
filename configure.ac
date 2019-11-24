@@ -70,6 +70,8 @@ AC_CONFIG_FILES([Makefile
 		 src/general/genutils/Makefile
 		 src/general/graphlib/Makefile
 		 src/general/prog/Makefile
+		 src/general/prog/perl-deps/Makefile
+		 src/general/prog/perl-modules/Makefile
 		 src/general/sysutils/Makefile
 		 src/gnome/Makefile
 		 src/gnome/applications/Makefile
@@ -117,14 +119,6 @@ AC_CONFIG_FILES([Makefile
 		 src/server/other/Makefile
 		 src/stylesheets/Makefile
 		 src/stylesheets/lfs-xsl/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/common/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/fo/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/highlighting/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/html/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/lib/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/profiling/Makefile
-		 src/stylesheets/lfs-xsl/docbook-xsl-snapshot/xhtml/Makefile
 		 src/stylesheets/lfs-xsl/pdf/Makefile
 		 src/stylesheets/lfs-xsl/xhtml/Makefile
 		 src/template/Makefile

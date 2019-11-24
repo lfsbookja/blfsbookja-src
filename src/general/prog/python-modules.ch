@@ -35,12 +35,8 @@
       The <application>Python</application> module packages add useful objects
       to the <application>Python</application> language. Modules utilized by
       packages throughout BLFS are listed here, along with their dependencies.
-      Installation of the modules shown on this page is meant to follow from top
-      to bottom to handle optional dependencies in each module.
 @y
-      <application>Python</application> &Module; パッケージは、add useful objects
+      The <application>Python</application> module packages add useful objects
       to the <application>Python</application> language. Modules utilized by
       packages throughout BLFS are listed here, along with their dependencies.
-      Installation of the modules shown on this page is meant to follow from top
-      to bottom to handle optional dependencies in each module.
 @z

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libxslt-buildsize     "37 MB (with tests)">
-  <!ENTITY libxslt-time          "0.1 SBU (with tests)">
+  <!ENTITY libxslt-buildsize     "36 MB (with tests)">
+  <!ENTITY libxslt-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY libxslt-buildsize     "37 MB (テスト込み)">
-  <!ENTITY libxslt-time          "0.1 SBU (テスト込み)">
+  <!ENTITY libxslt-buildsize     "36 MB (テスト込み)">
+  <!ENTITY libxslt-time          "0.3 SBU (テスト込み)">
 @z
 
 @x

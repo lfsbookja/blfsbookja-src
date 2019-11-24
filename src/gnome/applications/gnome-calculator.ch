@@ -81,16 +81,18 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="gtksourceview"/>, 
-      <xref linkend="itstool"/>, and 
+      <xref linkend="gtksourceview4"/>, 
+      <xref linkend="itstool"/>, 
+      <xref linkend="libgee"/>, and
       <xref linkend="libsoup"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="gtksourceview"/>, 
-      <xref linkend="itstool"/>,
+      <xref linkend="gtksourceview4"/>, 
+      <xref linkend="itstool"/>, 
+      <xref linkend="libgee"/>,
       <xref linkend="libsoup"/>
     </para>
 @z
@@ -127,13 +129,9 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. On 32-bit
-      systems, Number.float and Number.double tests might fail due to floating
-      point round off errors.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      To test the results, issue: <command>ninja test</command>. On 32-bit
-      systems, Number.float and Number.double tests might fail due to floating
-      point round off errors.
+      To test the results, issue: <command>ninja test</command>.
 @z
 
 @x

@@ -270,7 +270,7 @@
 
 @x
     <para><command>mv -v /usr/lib/libcrack.so.2* /lib</command> and
-    <command>ln -v -sf ../../lib/libcrack.so.2.8.1 ...</command>: These two
+    <command>ln -v -sf ../../lib/libcrack.so.2.9.0 ...</command>: These two
     commands move the <filename class="libraryfile">libcrack.so.2.9.0</filename>
     library and associated symlink from
     <filename class="directory">/usr/lib</filename> to
@@ -280,7 +280,7 @@
 @y
     <para>
     <command>mv -v /usr/lib/libcrack.so.2* /lib</command> と
-    <command>ln -v -sf ../../lib/libcrack.so.2.8.1 ...</command>:
+    <command>ln -v -sf ../../lib/libcrack.so.2.9.0 ...</command>:
     この２つのコマンドは、<filename
     class="libraryfile">libcrack.so.2.9.0</filename> ライブラリとこれに関するシンボリックリンクを <filename
     class="directory">/usr/lib</filename> ディレクトリから <filename class="directory">/lib</filename> ディレクトリに移動します。

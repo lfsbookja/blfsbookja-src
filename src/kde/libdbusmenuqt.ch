@@ -123,7 +123,7 @@
 @z
 
 @x
-    <para>This packages doe not come with a working test suite.</para>
+    <para>This packages does not come with a working test suite.</para>
 @y
     <para>
     本パッケージには有効なテストスイートがありません。

@@ -113,19 +113,19 @@
     <para role="optional">
       <xref linkend="cheese"/> (for camera tracking support),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="https://gitlab.com/accounts-sso/libaccounts-glib">libaccounts-glib</ulink>, and
-      <ulink url="https://launchpad.net/account-plugins">account-plugins</ulink>
+      <xref linkend="mitkrb"/>, and
+      <xref linkend="valgrind"/>
+      <!-- <ulink url="https://gitlab.com/accounts-sso/libaccounts-glib">libaccounts-glib</ulink>, and
+      <ulink url="https://launchpad.net/account-plugins">account-plugins</ulink> -->
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cheese"/> (for camera tracking support),
       <xref linkend="gtk-doc"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="https://gitlab.com/accounts-sso/libaccounts-glib">libaccounts-glib</ulink>, and
-      <ulink url="https://launchpad.net/account-plugins">account-plugins</ulink>
+      <xref linkend="valgrind"/>
+      <!-- <ulink url="https://gitlab.com/accounts-sso/libaccounts-glib">libaccounts-glib</ulink>,
+      <ulink url="https://launchpad.net/account-plugins">account-plugins</ulink> -->
 @z
 
 @x
@@ -190,8 +190,7 @@
         </seg>
         <seg>
           /usr/include/goa-1.0,
-          /usr/lib/goa-1.0,
-          /usr/share/gnome-online-accounts, and
+          /usr/lib/goa-1.0, and
           /usr/share/gtk-doc/html/goa
         </seg>
 @y
@@ -204,7 +203,6 @@
         <seg>
           /usr/include/goa-1.0,
           /usr/lib/goa-1.0,
-          /usr/share/gnome-online-accounts,
           /usr/share/gtk-doc/html/goa
         </seg>
 @z

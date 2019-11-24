@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY valgrind-buildsize     "347 MB (additional 228 MB for tests)">
-  <!ENTITY valgrind-time          "1.1 SBU (additional 5.1 SBU for tests)">
+  <!ENTITY valgrind-buildsize     "425 MB (add 70 MB for tests)">
+  <!ENTITY valgrind-time          "0.6 SBU (Using parallelism=4; add 11 SBU for tests)">
 @y
-  <!ENTITY valgrind-buildsize     "347 MB (テスト実施時はさらに 228 MB)">
-  <!ENTITY valgrind-time          "1.1 SBU (テスト実施時はさらに 5.1 SBU)">
+  <!ENTITY valgrind-buildsize     "425 MB (テスト実施時はさらに 70 MB)">
+  <!ENTITY valgrind-time          "0.6 SBU (parallelism=4 利用時。テスト実施時はさらに 11 SBU)">
 @z
 
 @x
@@ -119,12 +119,6 @@
     <title>Installation of Valgrind</title>
 @y
     <title>&InstallationOf1;Valgrind&InstallationOf2;</title>
-@z
-
-@x
-      First, fix a bug, which has been exposed by glibc-2.26:
-@y
-      First, fix a bug, which has been exposed by glibc-2.26:
 @z
 
 @x

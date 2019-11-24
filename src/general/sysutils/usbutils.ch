@@ -76,14 +76,25 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/>
+      <xref linkend="libusb"/> and
+      <xref linkend="wget"/>
+      <!-- In the systemd book, a unit/timer is installed to update the
+      usb.ids file automatically. 
+      
+      wget is used in the instructions below.
+      -->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/>
+      <xref linkend="libusb"/> and
+      <xref linkend="wget"/>
+      <!-- In the systemd book, a unit/timer is installed to update the
+      usb.ids file automatically. 
+      
+      wget is used in the instructions below.
+      -->
     </para>
 @z
 
@@ -183,15 +194,21 @@
 @z
 
 @x
-      You may wish to add an entry to
-      <systemitem class="username">root</systemitem>'s (or any other user who has
-      write privilege to <filename class="directory">/usr/share/hwdata</filename>)
-      crontab to automatically update the <filename>usb.ids</filename> file
-      periodically.
+      You should update the <filename>/usr/share/hwdata/usb.ids</filename> file
+      periodically. <phrase revision="sysv">If you've installed
+      <xref linkend="fcron"/> and completed the section on periodic jobs,
+      execute</phrase><phrase revision="systemd">Execute</phrase> the following       commands, as the  <systemitem class="username">root</systemitem> user,
+      to create a <phrase revision="sysv">weekly cron job:</phrase>
+      <phrase revision="systemd">systemd timer to update it weekly on Sundays
+      at 2:30 A.M. (local time):</phrase>
 @y
-      crontab において <systemitem
-      class="username">root</systemitem> ユーザー (あるいは <filename
-      class='directory'>/usr/share/hwdata</filename> ディレクトリに対する書き込み権限を有するユーザー) に対する項目を追加して <filename>usb.ids</filename> ファイルを定期的に自動更新することもできます。
+      You should update the <filename>/usr/share/hwdata/usb.ids</filename> file
+      periodically. <phrase revision="sysv">If you've installed
+      <xref linkend="fcron"/> and completed the section on periodic jobs,
+      execute</phrase><phrase revision="systemd">Execute</phrase> the following       commands, as the  <systemitem class="username">root</systemitem> user,
+      to create a <phrase revision="sysv">weekly cron job:</phrase>
+      <phrase revision="systemd">systemd timer to update it weekly on Sundays
+      at 2:30 A.M. (local time):</phrase>
 @z
 
 @x

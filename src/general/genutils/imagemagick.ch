@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "207 MB, with typical dependencies (add 37MB for make check)">
-  <!ENTITY imagemagick-time          "0.9 SBU - typical build with parallelism=4 (add 1.3 SBU for make check with parallelism=4 and the validation suite)">
+  <!ENTITY imagemagick-buildsize     "209 MB, with typical dependencies (add 36MB for make check)">
+  <!ENTITY imagemagick-time          "0.9 SBU - typical build with parallelism=4 (add 1.8 SBU for make check and the validation suite)">
 @y
-  <!ENTITY imagemagick-buildsize     "207 MB, with typical dependencies (add 37MB for make check)">
-  <!ENTITY imagemagick-time          "0.9 SBU - typical build with parallelism=4 (add 1.3 SBU for make check with parallelism=4 and the validation suite)">
+  <!ENTITY imagemagick-buildsize     "209 MB, with typical dependencies (add 36MB for make check)">
+  <!ENTITY imagemagick-time          "0.9 SBU - typical build with parallelism=4 (add 1.8 SBU for make check and the validation suite)">
 @z
 
 @x
@@ -205,9 +205,10 @@
     <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
     <para role="optional">
       <xref linkend="jasper"/>,
-      <xref linkend="lcms"/> or
+      <xref role="nodep" linkend="lcms"/> or
       <xref linkend="lcms2"/>,
       <xref linkend="libexif"/>,
+      <xref linkend="libgxps"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libraw"/> (RAW_R),
@@ -221,7 +222,7 @@
       FlashPIX (libfpx)</ulink>,
       <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-      <ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,
+      <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
       <ulink url="https://github.com/strukturag/libheif/">libheif</ulink>,
       <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
@@ -233,9 +234,10 @@
     <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
     <para role="optional">
       <xref linkend="jasper"/>,
-      <xref linkend="lcms"/> or
+      <xref role="nodep" linkend="lcms"/> or
       <xref linkend="lcms2"/>,
       <xref linkend="libexif"/>,
+      <xref linkend="libgxps"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libraw"/> (RAW_R),
@@ -249,7 +251,7 @@
       FlashPIX (libfpx)</ulink>,
       <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-      <ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,
+      <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
       <ulink url="https://github.com/strukturag/libheif/">libheif</ulink>,
       <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,

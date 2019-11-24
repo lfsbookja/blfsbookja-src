@@ -101,7 +101,8 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libburn"/> and
+      <xref linkend="libburn"/>,
+      <xref linkend="libisoburn"/>, and
       <xref linkend="libisofs"/>,
       <xref linkend="nautilus"/>, and
       <xref linkend="totem-pl-parser"/>
@@ -111,6 +112,7 @@
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libburn"/>,
+      <xref linkend="libisoburn"/>,
       <xref linkend="libisofs"/>,
       <xref linkend="nautilus"/>,
       <xref linkend="totem-pl-parser"/>

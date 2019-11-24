@@ -177,8 +177,8 @@
     log file. Even if one of the tests fails to produce the file
     <filename>test.out</filename> in <filename
     class="directory">src/testdir</filename>, the remaining tests will still
-    be executed. If all goes well,the final message in the log file will be
-    <literal>ALL DONE</literal>. <emphasis>Note</emphasis>: Some color tests
+    be executed. If all goes well,the log will report <literal>ALL DONE</literal>.
+    <emphasis>Note</emphasis>: Some color tests
     expect to be executed under the <command>xterm</command> terminal
     emulator. Three tests are known to fail occasionally and can be ignored.</para>
 @y
@@ -189,7 +189,7 @@
     これを避けるには出力をリダイレクトしてログファイルに出力するようにしてください。
     テストが失敗した場合、<filename
     class="directory">src/testdir</filename> ディレクトリに <filename>test.out</filename> が出力され、残りのテストは続行します。
-    テストが成功すれば、最後に <literal>ALL DONE</literal> と出力されます。
+    テストが成功すれば、ログに <literal>ALL DONE</literal> が出力されます。
     <emphasis>メモ</emphasis>: 
     色に関するテストは、端末エミュレーター <command>xterm</command> 上にて実行することが必要です。
     状況により失敗するテストが三つありますが無視して構いません。

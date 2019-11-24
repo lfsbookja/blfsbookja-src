@@ -110,11 +110,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gtk-doc"/> and
       <xref linkend="libnotify"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gtk-doc"/>,
       <xref linkend="libnotify"/>
     </para>
 @z
@@ -157,23 +159,43 @@
 @z
 
 @x
-      <option>--disable-3g-source</option>: This switch disables
+      <option>-D3g-source=false</option>: This switch disables
       the 3G backend. Use it if you have not installed the
       <application>ModemManager</application> package.
 @y
-      <option>--disable-3g-source</option>: This switch disables
+      <option>-D3g-source=false</option>: This switch disables
       the 3G backend. Use it if you have not installed the
       <application>ModemManager</application> package.
 @z
 
 @x
-      <option>--disable-modem-gps-source</option>: This switch disables
+      <option>-Dmodem-gps-source=false</option>: This switch disables
       the modem GPS backend. Use it if you have not installed the
       <application>ModemManager</application> package.
 @y
-      <option>--disable-modem-gps-source</option>: This switch disables
+      <option>-Dmodem-gps-source=false</option>: This switch disables
       the modem GPS backend. Use it if you have not installed the
       <application>ModemManager</application> package.
+@z
+
+@x
+      <option>-Dcdma-source=false</option>: This switch disables the
+      CDMA source backend. Use it if you have not installed the
+      <application>ModemManager</application> package.
+@y
+      <option>-Dcdma-source=false</option>: This switch disables the
+      CDMA source backend. Use it if you have not installed the
+      <application>ModemManager</application> package.
+@z
+
+@x
+      <option>-Dnmea-source=false</option>: This switch disables the
+      NMEA source. Use it if you have not installed the
+      <application>Avahi</application> package.
+@y
+      <option>-Dnmea-source=false</option>: This switch disables the
+      NMEA source. Use it if you have not installed the
+      <application>Avahi</application> package.
 @z
 
 @x
@@ -201,8 +223,9 @@
         </seg>
         <seg>
           /etc/geoclue,
-          /usr/include/libgeoclue-2.0, and
-          /usr/libexec/geoclue-2.0
+          /usr/include/libgeoclue-2.0,
+          /usr/libexec/geoclue-2.0, and
+          /usr/share/gtk-doc/html/{geoclue,libgeoclue}
         </seg>
 @y
         <seg>
@@ -214,6 +237,7 @@
         <seg>
           /etc/geoclue,
           /usr/include/libgeoclue-2.0,
-          /usr/libexec/geoclue-2.0
+          /usr/libexec/geoclue-2.0,
+          /usr/share/gtk-doc/html/{geoclue,libgeoclue}
         </seg>
 @z

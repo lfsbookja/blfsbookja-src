@@ -104,16 +104,6 @@
 @z
 
 @x
-    <note><para>This package unpacks to the directory 
-      phonon-vlc-&phonon-backend-vlc-version;.
-    </para></note>
-@y
-    <note><para>This package unpacks to the directory 
-      phonon-vlc-&phonon-backend-vlc-version;.
-    </para></note>
-@z
-
-@x
     <para>Install 
     <application>Phonon-backend-vlc</application> by running the following
     commands:</para>
@@ -145,16 +135,6 @@
     <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
     このスイッチは、コンパイラーの最適化オプションを最高レベルにて適用することを指示します。
     </para>
-@z
-
-@x
-    <para><parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is
-    used to ensure that Qt5 version of the backend is built even if Qt4 is
-    present.</para>
-@y
-    <para><parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is
-    used to ensure that Qt5 version of the backend is built even if Qt4 is
-    present.</para>
 @z
 
 @x

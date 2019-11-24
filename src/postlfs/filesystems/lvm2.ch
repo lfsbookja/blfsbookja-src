@@ -106,7 +106,7 @@
 
 @x
       The tests use <application>udev</application> for logical volume
-      synchronization, so that the LVM udev rules and some utilities need to
+      synchronization, so the LVM udev rules and some utilities need to
       be installed before running the tests. If you are installing
       <application>LVM2</application> for the first time, and do not
       want to install the full package before running the tests, the minimal
@@ -114,7 +114,7 @@
       as the <systemitem class="username">root</systemitem> user:
 @y
       The tests use <application>udev</application> for logical volume
-      synchronization, so that the LVM udev rules and some utilities need to
+      synchronization, so the LVM udev rules and some utilities need to
       be installed before running the tests. If you are installing
       <application>LVM2</application> for the first time, and do not
       want to install the full package before running the tests, the minimal
@@ -123,17 +123,21 @@
 @z
 
 @x
-      To test the results, issue: <command>make check_local</command> as the
-      <systemitem class="username">root</systemitem> user. Other targets are
-      available and can be listed with <command>make -C test help</command>.
-      The test timings are very dependent on the speed of the disk(s), and on
-      the number of enabled kernel options.
+      To test the results, issue, as the
+      <systemitem class="username">root</systemitem> user:
 @y
-      To test the results, issue: <command>make check_local</command> as the
-      <systemitem class="username">root</systemitem> user. Other targets are
-      available and can be listed with <command>make -C test help</command>.
-      The test timings are very dependent on the speed of the disk(s), and on
-      the number of enabled kernel options.
+      To test the results, issue, as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      Other targets are available and can be listed with
+      <command>make -C test help</command>. The test timings are very dependent
+      on the speed of the disk(s), and on the number of enabled kernel options.
+@y
+      Other targets are available and can be listed with
+      <command>make -C test help</command>. The test timings are very dependent
+      on the speed of the disk(s), and on the number of enabled kernel options.
 @z
 
 @x
@@ -159,19 +163,27 @@
 @z
 
 @x
-      Some tests may hang with kernel versions in the 4.1 and 4.2 series (see
-      above). They can be removed if necessary, for example: <command>rm
-      test/shell/lvcreate-large-raid.sh</command>. The tests generate a lot
-      of kernel messages, which may clutter your terminal. You can disable them
-      by issuing <command>dmesg -D</command> before running the tests (do not
-      forget to issue <command>dmesg -E</command> when tests are done).
+      Some tests may hang. They can be removed if necessary, for example:
+      <command>rm test/shell/lvconvert-raid-reshape.sh</command>. The tests
+      generate a lot of kernel messages, which may clutter your terminal. You
+      can disable them by issuing <command>dmesg -D</command> before running
+      the tests (do not forget to issue <command>dmesg -E</command> when tests
+      are done).
+
+      <note><simpara>The checks create device nodes in the /tmp directory.  The
+      tests will fail if /tmp is mounted with the nodev
+      option.</simpara></note>
 @y
-      Some tests may hang with kernel versions in the 4.1 and 4.2 series (see
-      above). They can be removed if necessary, for example: <command>rm
-      test/shell/lvcreate-large-raid.sh</command>. The tests generate a lot
-      of kernel messages, which may clutter your terminal. You can disable them
-      by issuing <command>dmesg -D</command> before running the tests (do not
-      forget to issue <command>dmesg -E</command> when tests are done).
+      Some tests may hang. They can be removed if necessary, for example:
+      <command>rm test/shell/lvconvert-raid-reshape.sh</command>. The tests
+      generate a lot of kernel messages, which may clutter your terminal. You
+      can disable them by issuing <command>dmesg -D</command> before running
+      the tests (do not forget to issue <command>dmesg -E</command> when tests
+      are done).
+
+      <note><simpara>The checks create device nodes in the /tmp directory.  The
+      tests will fail if /tmp is mounted with the nodev
+      option.</simpara></note>
 @z
 
 @x
@@ -187,11 +199,17 @@
 @z
 
 @x
-      <parameter>--enable-applib</parameter>: This switch enables
-      building of the shared application library.
+      <command>PATH=$PATH:/sbin:/usr/sbin</command>: The path
+      must contain <filename class="directory">/sbin</filename> and
+      <filename class='directory'>/usr/sbin</filename> for proper system tool
+      detection by the <command>configure</command> script. This instruction
+      ensures that PATH is properly set even if you build as an unprivileged user.
 @y
-      <parameter>--enable-applib</parameter>:
-      このスイッチは共有アプリケーションライブラリをビルドすることを指示します。
+      <command>PATH=$PATH:/sbin:/usr/sbin</command>: The path
+      must contain <filename class="directory">/sbin</filename> and
+      <filename class='directory'>/usr/sbin</filename> for proper system tool
+      detection by the <command>configure</command> script. This instruction
+      ensures that PATH is properly set even if you build as an unprivileged user.
 @z
 
 @x
@@ -245,13 +263,12 @@
 
 @x
         <seg>
-          blkdeactivate, dmeventd (optional), dmsetup, fsadm, lvm, lvmconf,
-          lvmdump, and lvmetad (optional). There are also
-          numerous symbolic links to lvm that implement specific
+          blkdeactivate, dmeventd (optional), dmsetup, fsadm, lvm, and lvmdump. 
+          There are also numerous symbolic links to lvm that implement specific
           functionalities
         </seg>
         <seg>
-          libdevmapper.so, liblvm2app.so, and liblvm2cmd.so; optional:
+          libdevmapper.so and liblvm2cmd.so; optional:
           libdevmapper-event.so, libdevmapper-event-lvm2.so,
           libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2snapshot.so,
           libdevmapper-event-lvm2raid.so, and libdevmapper-event-lvm2thin.so
@@ -262,18 +279,17 @@
         </seg>
 @y
         <seg>
-          blkdeactivate, dmeventd (任意ビルド), dmsetup, fsadm, lvm, lvmconf,
-          lvmdump, lvmetad (任意ビルド),
+          blkdeactivate, dmeventd (任意ビルド), dmsetup, fsadm, lvm, lvmdump 
           この他に lvm に対してのシンボリックリンクが数多くあり、所定の機能を提供します。
         </seg>
         <seg>
-          libdevmapper.so, liblvm2app.so, and liblvm2cmd.so; optional:
+          libdevmapper.so and liblvm2cmd.so; optional:
           libdevmapper-event.so, libdevmapper-event-lvm2.so,
           libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2snapshot.so,
-          libdevmapper-event-lvm2raid.so, libdevmapper-event-lvm2thin.so
+          libdevmapper-event-lvm2raid.so, and libdevmapper-event-lvm2thin.so
         </seg>
         <seg>
-          /etc/lvm,
+          /etc/lvm and
           /lib/device-mapper (任意ビルド)
         </seg>
 @z

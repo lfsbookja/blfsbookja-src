@@ -20,10 +20,14 @@
 @z
 
 @x
-  <title>Beyond Linux<superscript>&reg;</superscript> From Scratch<phrase revision="systemd"> (systemd edition)</phrase></title>
+  <title>Beyond Linux<superscript>&reg;</superscript> From Scratch 
+  <phrase revision="systemd">(systemd</phrase>
+  <phrase revision="sysv">(System V</phrase> Edition)</title>
   <subtitle>Version &version;</subtitle>
 @y
-  <title>Beyond Linux<superscript>&reg;</superscript> From Scratch<phrase revision="systemd"> (systemd版)</phrase></title>
+  <title>Beyond Linux<superscript>&reg;</superscript> From Scratch 
+  <phrase revision="systemd">(systemd</phrase>
+  <phrase revision="sysv">(System V</phrase> 版)</title>
   <subtitle>Version &version;</subtitle>
 @z
 
@@ -61,6 +65,24 @@
       <revremark>Ongoing Release</revremark>
 @y
       <revremark>進行中リリース</revremark>
+@z
+
+@x 2019-09-01
+      <revremark>Twentieth release</revremark>
+@y
+      <revremark>第 20 次リリース</revremark>
+@z
+
+@x 2019-03-01
+      <revremark>Nineteenth release</revremark>
+@y
+      <revremark>第 19 次リリース</revremark>
+@z
+
+@x 2018-09-01
+      <revremark>Eighteenth release</revremark>
+@y
+      <revremark>第 18 次リリース</revremark>
 @z
 
 @x 2018-03-02

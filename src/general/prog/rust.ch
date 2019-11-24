@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY rust-buildsize     "6.5 GB (679 MB installed) including 270MB of ~/.cargo files for the user building this (add 1.4GB if running the tests)">
-  <!ENTITY rust-time          "27 SBU (add 13 SBU for tests, both with 4 processors)">
+  <!ENTITY rust-buildsize     "5.3GB (375 MB installed) including 429MB of ~/.cargo files for the user building this. Add 1.7 GB if running the tests">
+  <!ENTITY rust-time          "24 SBU (add 13 SBU for tests, both with 4 processors)">
 @y
-  <!ENTITY rust-buildsize     "6.5 GB (679 MB installed) including 270MB of ~/.cargo files for the user building this (add 1.4GB if running the tests)">
-  <!ENTITY rust-time          "27 SBU (4 プロセッサーの場合; テスト実施時はさらに 13 SBU)">
+  <!ENTITY rust-buildsize     "5.3GB (375 MB installed) including 429MB of ~/.cargo files for the user building this. Add 1.7 GB if running the tests">
+  <!ENTITY rust-time          "24 SBU (4 プロセッサーの場合; テスト実施時はさらに 13 SBU)">
 @z
 
 @x
@@ -35,6 +35,20 @@
 @z
 
 @x
+      This package is updated on a six-weekly release cycle. Because it is
+      such a large and slow package to build, and is at the moment only required
+      by a few packages in this book, the BLFS editors take the view that it
+      should only be updated when that is necessary (either to fix problems,
+      or to allow a new version of <application>firefox</application> to build).
+@y
+      This package is updated on a six-weekly release cycle. Because it is
+      such a large and slow package to build, and is at the moment only required
+      by a few packages in this book, the BLFS editors take the view that it
+      should only be updated when that is necessary (either to fix problems,
+      or to allow a new version of <application>firefox</application> to build).
+@z
+
+@x
       As with many  other programming languages, rustc (the rust compiler)
       needs a binary from which to bootstrap. It will download a stage0 binary
       and many cargo crates (these are actually .tar.gz source archives) at
@@ -46,6 +60,76 @@
       and many cargo crates (these are actually .tar.gz source archives) at
       the start of the build, so you cannot compile it without an internet
       connection.
+@z
+
+@x
+      These crates will then remain in various forms (cache, directories of
+      extracted source), in <filename class="directory">~/.cargo</filename> for
+      ever more. It is common for large <application>rust</application> packages
+      to use multiple versions of some crates. If you purge the files before
+      updating this package, very few crates will need to be updated by the
+      packages in this book which use it (and they will be downloaded as
+      required). But if you retain an older version as a fallback option and
+      then use it (when <emphasis>not</emphasis> building in
+      <filename class="directory">/usr</filename>), it is likely that it will
+      then have to re-download some crates. For a full download (i.e. starting
+      with an empty or missing <filename class="directory">~/.cargo</filename>)
+      downloading the external cargo files for this version only takes a minute
+      or so on a fast network.
+@y
+      These crates will then remain in various forms (cache, directories of
+      extracted source), in <filename class="directory">~/.cargo</filename> for
+      ever more. It is common for large <application>rust</application> packages
+      to use multiple versions of some crates. If you purge the files before
+      updating this package, very few crates will need to be updated by the
+      packages in this book which use it (and they will be downloaded as
+      required). But if you retain an older version as a fallback option and
+      then use it (when <emphasis>not</emphasis> building in
+      <filename class="directory">/usr</filename>), it is likely that it will
+      then have to re-download some crates. For a full download (i.e. starting
+      with an empty or missing <filename class="directory">~/.cargo</filename>)
+      downloading the external cargo files for this version only takes a minute
+      or so on a fast network.
+@z
+
+@x
+        Although BLFS usually installs in <filename
+        class="directory">/usr</filename>, when you later upgrade to a newer
+        version of <application>rust</application> the old libraries in <filename
+        class="directory">/usr/lib/rustlib</filename> will remain, with various
+        hashes in their names, but will not be usable and will waste space. The
+        editors recommend placing the files in the <filename
+        class="directory">/opt</filename> directory.  In particular, if you
+        have reason to rebuild with a modified configuration (e.g. using the
+        shipped LLVM after building with shared LLVM, but perhaps also the
+        reverse situation) it it possible for the install to leave a broken
+        <command>cargo</command> program. In such a situation, either remove
+        the existing installation first, or use a different prefix such as
+        /opt/rustc-&rust-version;-build2.
+@y
+        Although BLFS usually installs in <filename
+        class="directory">/usr</filename>, when you later upgrade to a newer
+        version of <application>rust</application> the old libraries in <filename
+        class="directory">/usr/lib/rustlib</filename> will remain, with various
+        hashes in their names, but will not be usable and will waste space. The
+        editors recommend placing the files in the <filename
+        class="directory">/opt</filename> directory.  In particular, if you
+        have reason to rebuild with a modified configuration (e.g. using the
+        shipped LLVM after building with shared LLVM, but perhaps also the
+        reverse situation) it it possible for the install to leave a broken
+        <command>cargo</command> program. In such a situation, either remove
+        the existing installation first, or use a different prefix such as
+        /opt/rustc-&rust-version;-build2.
+@z
+
+@x
+        If you prefer, you can of course change the prefix to <filename
+        class="directory">/usr</filename> and omit the
+        <command>ldconfig</command> and the actions to add rustc to the PATH.
+@y
+        If you prefer, you can of course change the prefix to <filename
+        class="directory">/usr</filename> and omit the
+        <command>ldconfig</command> and the actions to add rustc to the PATH.
 @z
 
 @x
@@ -64,6 +148,48 @@
 @y
       At the moment <application>Rust</application> does not provide any
       guarantees of a stable ABI.
+@z
+
+@x
+        Rustc defaults to building for ALL supported architectures, using a
+        shipped copy of LLVM. In BLFS the build is only for the X86
+        architecture. Rustc still claims to require Python 2, but that is only
+        really necessary when building some other architectures with the
+        shipped LLVM.
+        If you intend to develop rust crates, this build may not be good
+        enough for your purposes.
+@y
+        Rustc defaults to building for ALL supported architectures, using a
+        shipped copy of LLVM. In BLFS the build is only for the X86
+        architecture. Rustc still claims to require Python 2, but that is only
+        really necessary when building some other architectures with the
+        shipped LLVM.
+        If you intend to develop rust crates, this build may not be good
+        enough for your purposes.
+@z
+
+@x
+        The build times of this version when repeated on the same machine are
+        often reasonably consistent, but as with all compilations using
+        <command>rustc</command> there can be some very slow outliers.
+@y
+        The build times of this version when repeated on the same machine are
+        often reasonably consistent, but as with all compilations using
+        <command>rustc</command> there can be some very slow outliers.
+@z
+
+@x
+        Unusually, a DESTDIR-style method is being used to install this package.
+        This is because running the install as root not only downloads all of the
+        cargo files again (to <filename>/root/.cargo</filename>), it then spends
+        a very long time recompiling. Using this method saves a lot of time, at
+        the cost of extra disk space.
+@y
+        Unusually, a DESTDIR-style method is being used to install this package.
+        This is because running the install as root not only downloads all of the
+        cargo files again (to <filename>/root/.cargo</filename>), it then spends
+        a very long time recompiling. Using this method saves a lot of time, at
+        the cost of extra disk space.
 @z
 
 @x
@@ -118,17 +244,15 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
-      <xref linkend="cmake"/>,
+      <xref linkend="cmake"/>, and
       <xref linkend="libssh2"/>
-<!--  <xref linkend="python2"/> -->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="curl"/>,
-      <xref linkend="cmake"/>,
+      <xref linkend="cmake"/>, and
       <xref linkend="libssh2"/>
-<!--  <xref linkend="python2"/> -->
     </para>
 @z
 
@@ -136,25 +260,29 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <package>clang</package> from <xref linkend="llvm"/>
-      (built with -DLLVM_LINK_LLVM_DYLIB=ON)
+      (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
+      system LLVM instead of building its shipped version)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <package>clang</package> from <xref linkend="llvm"/>
-      (built with -DLLVM_LINK_LLVM_DYLIB=ON)
+      (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
+      system LLVM instead of building its shipped version)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (recommended if running the testsuite)
+      <xref linkend="gdb"/> (used by the testsuite if it is present) and
+      <xref linkend="python2"/> (used by the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (recommended if running the testsuite)
+      <xref linkend="gdb"/> (used by the testsuite if it is present) and
+      <xref linkend="python2"/> (used by the testsuite)
     </para>
 @z
 
@@ -171,126 +299,137 @@
 @z
 
 @x
-        This package is updated on a six-weekly release cycle. Because it is
-        such a large and slow package to build, and is at the moment only required
-        by three packages in this book, the BLFS editors take the view that it
-        should only be updated when that is necessary.
+      To install into the
+      <filename class="directory">/opt</filename> directory, remove the symlink
+      and create a new directory (i.e. with a different name if trying a
+      modified build).
+      As the <systemitem class="username">root</systemitem>
+      user:
 @y
-        This package is updated on a six-weekly release cycle. Because it is
-        such a large and slow package to build, and is at the moment only required
-        by three packages in this book, the BLFS editors take the view that it
-        should only be updated when that is necessary.
+      To install into the
+      <filename class="directory">/opt</filename> directory, remove the symlink
+      and create a new directory (i.e. with a different name if trying a
+      modified build).
+      As the <systemitem class="username">root</systemitem>
+      user:
 @z
 
 @x
-      First create a suitable <filename>config.toml</filename> file
-      which will configure the build :
+        If multiple versions of <application>Rust</application> are installed
+        in <filename class="directory">/opt</filename>, changing to another
+        version only requires changing the <filename> /opt/rustc</filename>
+        symbolic link and then running <command>ldconfig</command>.
 @y
-      First create a suitable <filename>config.toml</filename> file
-      which will configure the build :
+        If multiple versions of <application>Rust</application> are installed
+        in <filename class="directory">/opt</filename>, changing to another
+        version only requires changing the <filename> /opt/rustc</filename>
+        symbolic link and then running <command>ldconfig</command>.
 @z
 
 @x
-      Now install <application>Rust</application> by running the following
+      Create a suitable <filename>config.toml</filename> file which will
+      configure the build.
+@y
+      Create a suitable <filename>config.toml</filename> file which will
+      configure the build.
+@z
+
+@x
+      Now compile <application>Rust</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>Rust</application> をビルドします。
+      Now compile <application>Rust</application> by running the following
+      commands:
 @z
 
 @x
-      The build will report it failed to compile <filename>miri</filename>
-      because of multiple potential crates for `log`, but that should be followed
-      by a message that the build completed successfully.
-@y
-      The build will report it failed to compile <filename>miri</filename>
-      because of multiple potential crates for `log`, but that should be followed
-      by a message that the build completed successfully.
-@z
-
-@x
-        On AMD Ryzen processors (family 17h), the non-optimized version of libstd
-        which is compiled at the start of the tests contains two opcodes which are
-        not implemented on this CPU family. These will be logged in the
+        The testsuite will generate some messages in the
         <phrase revision="sysv">system log</phrase>
         <phrase revision="systemd">systemd journal</phrase>
-        and will be followed a few minutes later by segmentation faults. Despite
-        that, the tests continue to run, apparently normally. But the system may
-        reboot before the tests have completed. The normal optimized libraries
-        run without this problem.
+        for traps on invalid opcodes, and for segmentation faults.
+        In themselves these are nothing to worry about, just a way for the
+        test to be terminated.
 @y
-        On AMD Ryzen processors (family 17h), the non-optimized version of libstd
-        which is compiled at the start of the tests contains two opcodes which are
-        not implemented on this CPU family. These will be logged in the
+        The testsuite will generate some messages in the
         <phrase revision="sysv">system log</phrase>
         <phrase revision="systemd">systemd journal</phrase>
-        and will be followed a few minutes later by segmentation faults. Despite
-        that, the tests continue to run, apparently normally. But the system may
-        reboot before the tests have completed. The normal optimized libraries
-        run without this problem.
+        for traps on invalid opcodes, and for segmentation faults.
+        In themselves these are nothing to worry about, just a way for the
+        test to be terminated.
 @z
 
 @x
-        A mitigation is to install gdb
-        <!-- systemd apparently handles this with systemd-coredump -->
-        <phrase revision="sysv">and to run the tests with 'ulimit -C disabled'</phrase>
-        but this does not always prevent the system rebooting.
+      To run the tests issue <command>python3 ./x.py test --verbose
+      --no-fail-fast | tee rustc-testlog</command>: as with the build, that
+      will use all available CPUs.
 @y
-        A mitigation is to install gdb
-        <!-- systemd apparently handles this with systemd-coredump -->
-        <phrase revision="sysv">and to run the tests with 'ulimit -C disabled'</phrase>
-        but this does not always prevent the system rebooting.
+      To run the tests issue <command>python3 ./x.py test --verbose
+      --no-fail-fast | tee rustc-testlog</command>: as with the build, that
+      will use all available CPUs.
 @z
 
 @x
-      To run the tests issue
-      <command>python3 ./x.py test --verbose --no-fail-fast | tee rustc-testlog</command>:
-      as with the build, that will use all available CPUs.  This runs many suites
-      of tests (in an apparently random order), several will fail in BLFS:
-      compile-fail/issue-37131.rs require a thumbv6m-none-eabi compiler but the
-      BLFS build does not cater for
-      that, ui/issue-49851/compiler-builtins-error.rs and ui/issue-50993.rs (both
-      run twice) require a thumbv7em-none-eabihf compiler, and seven tests in
-      debuginfo-gdb will fail because gdb-8.1 changed the output format.  If
-      <application>gdb</application> has not been installed, most of the gdb tests
-      will fail.
+      The instructions above do not build ARM compilers, so the testsuite
+      <emphasis>will</emphasis> fail and the tests will be reported to end in
+      error, with a backtrace of the last failing test. On a good run, 3 tests
+      which need Thumb (ARM) compilers will fail, all in <filename
+      class="directory">ui/issues</filename> for issues 37131, 49851 and 50993.
+      A fourth test,
+      <filename>run-make-fulldeps/sysroot-crates-are-unstable</filename>
+      fails, presumably because we are using only stable features.
+      <!-- appears to be fixed now
+      If gdb has been installed, in some circumstances tests in
+      <filename class="directory">debuginfo</filename> may fail.--> As with all
+      large testsuites, other tests might
+      fail on some machines - if the number of failures is in the single digits,
+      check the log for 'FAILED' and review lines above that, particularly the
+      'stderr:' lines. Any mention of
+      SIGSEGV or signal 11 in a failing test is a cause for concern.
+      A fifth test, run-make-fulldeps/linker-output-non-utf8, is known to fail.
 @y
-      To run the tests issue
-      <command>python3 ./x.py test --verbose --no-fail-fast | tee rustc-testlog</command>:
-      as with the build, that will use all available CPUs.  This runs many suites
-      of tests (in an apparently random order), several will fail in BLFS:
-      compile-fail/issue-37131.rs require a thumbv6m-none-eabi compiler but the
-      BLFS build does not cater for
-      that, ui/issue-49851/compiler-builtins-error.rs and ui/issue-50993.rs (both
-      run twice) require a thumbv7em-none-eabihf compiler, and seven tests in
-      debuginfo-gdb will fail because gdb-8.1 changed the output format.  If
-      <application>gdb</application> has not been installed, most of the gdb tests
-      will fail.
+      The instructions above do not build ARM compilers, so the testsuite
+      <emphasis>will</emphasis> fail and the tests will be reported to end in
+      error, with a backtrace of the last failing test. On a good run, 3 tests
+      which need Thumb (ARM) compilers will fail, all in <filename
+      class="directory">ui/issues</filename> for issues 37131, 49851 and 50993.
+      A fourth test,
+      <filename>run-make-fulldeps/sysroot-crates-are-unstable</filename>
+      fails, presumably because we are using only stable features.
+      <!-- appears to be fixed now
+      If gdb has been installed, in some circumstances tests in
+      <filename class="directory">debuginfo</filename> may fail.--> As with all
+      large testsuites, other tests might
+      fail on some machines - if the number of failures is in the single digits,
+      check the log for 'FAILED' and review lines above that, particularly the
+      'stderr:' lines. Any mention of
+      SIGSEGV or signal 11 in a failing test is a cause for concern.
+      A fifth test, run-make-fulldeps/linker-output-non-utf8, is known to fail.
 @z
 
 @x
-      If you wish to look at the numbers for the results, you can find the total
-      number of tests which were considered by running:
+      Therefore, you should determine the number of tests, failures, etc. The
+      total number of tests which were considered is found by running:
 @y
-      If you wish to look at the numbers for the results, you can find the total
-      number of tests which were considered by running:
+      Therefore, you should determine the number of tests, failures, etc. The
+      total number of tests which were considered is found by running:
 @z
 
 @x
-      That should report 17101 tests. Similarly, the total tests which failed can
+      That should report 16499 tests. Similarly, the total tests which failed can
       be found by running:
 @y
-      That should report 17101 tests. Similarly, the total tests which failed can
+      That should report 16499 tests. Similarly, the total tests which failed can
       be found by running:
 @z
 
 @x
       And similarly for the tests which passed use $4, for those which were ignored
       (i.e. skipped) use $8 (and $10 for 'measured', $12 for 'filtered out' but both
-      are probably zero). The breakdown does not match the overall total.
+      are probably zero). The breakdown does not quite match the overall total.
 @y
       And similarly for the tests which passed use $4, for those which were ignored
       (i.e. skipped) use $8 (and $10 for 'measured', $12 for 'filtered out' but both
-      are probably zero). The breakdown does not match the overall total.
+      are probably zero). The breakdown does not quite match the overall total.
 @z
 
 @x
@@ -314,15 +453,27 @@
 @z
 
 @x
+      <command>ln -svfn rustc-&rust-version; /opt/rustc</command>: if this is
+      not the first use of the <filename class="directory">/opt/rustc</filename>
+      symlink, overwrite it by forcing, and use the '-n' flag to avoid getting
+      confusing results from e.g. <command>ls -l</command>.
+@y
+      <command>ln -svfn rustc-&rust-version; /opt/rustc</command>: if this is
+      not the first use of the <filename class="directory">/opt/rustc</filename>
+      symlink, overwrite it by forcing, and use the '-n' flag to avoid getting
+      confusing results from e.g. <command>ls -l</command>.
+@z
+
+@x
       <command>targets = "X86"</command>: this avoids building all the available
       linux cross-compilers (Aarch64, MIPS, PowerPC, SystemZ, etc). Unfortunately,
       rust insists on installing source files for these below
-      <filename class="directory">/usr/lib/rustlib/src</filename>.
+      <filename class="directory">/opt/rustc/lib/src</filename>.
 @y
       <command>targets = "X86"</command>: this avoids building all the available
       linux cross-compilers (Aarch64, MIPS, PowerPC, SystemZ, etc). Unfortunately,
       rust insists on installing source files for these below
-      <filename class="directory">/usr/lib/rustlib/src</filename>.
+      <filename class="directory">/opt/rustc/lib/src</filename>.
 @z
 
 @x
@@ -402,13 +553,25 @@
 @z
 
 @x
-      <command>DESTDIR=${PWD}/install ./x.py install</command>: This effects a
-      DESTDIR-style install in the source tree,creating an <filename
+      <command>export LIBSSH2_SYS_USE_PKG_CONFIG=1</command>: On some systems,
+      cairo fails to link during the install because it cannot find libssh2.
+      This seems to fix it, but again the reason why the problem occurs is not
+      understood.
+@y
+      <command>export LIBSSH2_SYS_USE_PKG_CONFIG=1</command>: On some systems,
+      cairo fails to link during the install because it cannot find libssh2.
+      This seems to fix it, but again the reason why the problem occurs is not
+      understood.
+@z
+
+@x
+      <command>DESTDIR=${PWD}/install python3 ./x.py install</command>: This
+      effects a DESTDIR-style install in the source tree,creating an <filename
       class="directory">install</filename> directory. Note that DESTDIR installs
       need an absolute path, passing 'install' will not work.
 @y
-      <command>DESTDIR=${PWD}/install ./x.py install</command>: This effects a
-      DESTDIR-style install in the source tree,creating an <filename
+      <command>DESTDIR=${PWD}/install python3 ./x.py install</command>: This
+      effects a DESTDIR-style install in the source tree,creating an <filename
       class="directory">install</filename> directory. Note that DESTDIR installs
       need an absolute path, passing 'install' will not work.
 @z
@@ -441,29 +604,29 @@
 
 @x
         <seg>
-          cargo-clippy, cargo-fmt, cargo, clippy-driver, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt.
+          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt.
         </seg>
         <seg>
           Many lib*&lt;16-byte-hash&gt;.so libraries.
         </seg>
         <seg>
           ~/.cargo,
-          /usr/lib/rustlib,
-          /usr/share/doc/rustc-&rust-version;, and
-          /usr/share/zsh/site-functions/
+          /opt/rustc/lib/rustlib,
+          /opt/rustc/share/doc/rustc-&rust-version;, and
+          /opt/rustc/share/zsh/site-functions
         </seg>
 @y
         <seg>
-          cargo-clippy, cargo-fmt, cargo, clippy-driver, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt
+          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt
         </seg>
         <seg>
-          Many lib*&lt;16-byte-hash&gt;.so libraries.
+          数多くの lib*&lt;16-byte-hash&gt;.so ライブラリ
         </seg>
         <seg>
           ~/.cargo,
-          /usr/lib/rustlib,
-          /usr/share/doc/rustc-&rust-version;,
-          /usr/share/zsh/site-functions/
+          /opt/rustc/lib/rustlib,
+          /opt/rustc/share/doc/rustc-&rust-version;,
+          /opt/rustc/share/zsh/site-functions
         </seg>
 @z
 

@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libxml2-buildsize     "83 MB (add 15 MB for tests)">
+  <!ENTITY libxml2-buildsize     "87 MB (add 15 MB for tests)">
   <!ENTITY libxml2-time          "0.2 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY libxml2-buildsize     "83 MB（テスト実施時はさらに 15 MB）">
+  <!ENTITY libxml2-buildsize     "87 MB（テスト実施時はさらに 15 MB）">
   <!ENTITY libxml2-time          "0.2 SBU（テスト実施時はさらに 0.3 SBU）">
 @z
 
@@ -195,7 +195,7 @@
 @z
 
 @x
-      <parameter>--with-python=/usr/bin/python3</parameter>: Allows to build
+      <parameter>--with-python=/usr/bin/python3</parameter>: Allows building
       the libxml2 module with Python3 instead of Python2.
 @y
       <parameter>--with-python=/usr/bin/python3</parameter>:
@@ -220,13 +220,15 @@
 
 @x
         <seg>
-          xml2-config, xmlcatalog, xmllint and the
+          xml2-config, 
+          xmlcatalog, and 
+          xmllint <!--and the
           drv_libxml2.py and libxml2.py <application>Python3</application>
-          modules.
+          modules.  These are pythin modules, not programs -->
         </seg>
         <seg>
-          libxml2.so and optionally, the libxml2mod.so
-          <application>Python3</application> module
+          libxml2.so and 
+          libxml2mod.so (<application>Python3</application> module)
         </seg>
         <seg>
           /usr/include/libxml2,
@@ -237,12 +239,15 @@
         </seg>
 @y
         <seg>
-          xml2-config, xmlcatalog, xmllint, 
-          <application>Python3</application> モジュールである drv_libxml2.py, libxml2.py
+          xml2-config, 
+          xmlcatalog,
+          xmllint <!--and the
+          drv_libxml2.py and libxml2.py <application>Python3</application>
+          modules.  These are pythin modules, not programs -->
         </seg>
         <seg>
-          libxml2.so, また任意のビルドとして libxml2mod.so
-          <application>Python3</application> モジュール
+          libxml2.so, 
+          libxml2mod.so (<application>Python3</application> モジュール)
         </seg>
         <seg>
           /usr/include/libxml2,

@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libtiff-buildsize     "18 MB (with tests)">
+  <!ENTITY libtiff-buildsize     "15 MB (with tests)">
   <!ENTITY libtiff-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libtiff-buildsize     "18 MB（テスト込み）">
+  <!ENTITY libtiff-buildsize     "15 MB（テスト込み）">
   <!ENTITY libtiff-time          "&LessThan1;0.1 SBU&LessThan2;（テスト込み）">
 @z
 
@@ -102,15 +102,19 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="freeglut"/> (required for <command>tiffgt</command>),
-      <xref linkend="libjpeg"/> and
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libwebp"/>,
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>, and
+      <ulink url="https://facebook.github.io/zstd/">Zstd</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="freeglut"/> (<command>tiffgt</command> に必要),
       <xref linkend="libjpeg"/>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
+      <xref linkend="libwebp"/>,
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
+      <ulink url="https://facebook.github.io/zstd/">Zstd</ulink>
     </para>
 @z
 

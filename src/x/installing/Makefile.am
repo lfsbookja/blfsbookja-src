@@ -11,7 +11,6 @@ CHANGE_FILES_x7drivers = \
 	x7driver-evdev.ch       \
 	x7driver-libinput.ch    \
 	x7driver-synaptics.ch   \
-	x7driver-vmmouse.ch     \
 	x7driver-wacom.ch       \
 	x7driver-ati.ch         \
 	x7driver-fbdev.ch       \

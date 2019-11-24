@@ -86,13 +86,13 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="Beaker"/> and
+<!--        <xref linkend="Beaker"/> and -->
         <xref linkend="MarkupSafe"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <xref linkend="Beaker"/>,
+<!--        <xref linkend="Beaker"/> and -->
         <xref linkend="MarkupSafe"/>
       </para>
 @z
@@ -173,27 +173,27 @@
 
 @x
           <seg>
-            mako-render and/or mako-render3
+            <!--mako-render and/or--> mako-render3
           </seg>
           <seg>
             None
           </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/mako,
-            /usr/lib/python&python2-majorver;/site-packages/Mako-&mako-version;-py&python2-majorver;.egg-info and/or
-            /usr/lib/python&python3-majorver;/site-packages/mako,
+<!--            /usr/lib/python&python2-majorver;/site-packages/mako,
+            /usr/lib/python&python2-majorver;/site-packages/Mako-&mako-version;-py&python2-majorver;.egg-info and/or-->
+            /usr/lib/python&python3-majorver;/site-packages/mako and 
             /usr/lib/python&python3-majorver;/site-packages/Mako-&mako-version;-py&python3-majorver;.egg-info
           </seg>
 @y
           <seg>
-            mako-render あるいは mako-render3
+            <!--mako-render and/or--> mako-render3
           </seg>
           <seg>
             &None;
           </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/mako,
-            /usr/lib/python&python2-majorver;/site-packages/Mako-&mako-version;-py&python2-majorver;.egg-info, あるいは
+<!--            /usr/lib/python&python2-majorver;/site-packages/mako,
+            /usr/lib/python&python2-majorver;/site-packages/Mako-&mako-version;-py&python2-majorver;.egg-info and/or-->
             /usr/lib/python&python3-majorver;/site-packages/mako,
             /usr/lib/python&python3-majorver;/site-packages/Mako-&mako-version;-py&python3-majorver;.egg-info
           </seg>

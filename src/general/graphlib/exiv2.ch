@@ -75,13 +75,25 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="cmake"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-      <para role="recommended">
+    <para role="recommended">
       <xref linkend="curl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-      <para role="recommended">
+    <para role="recommended">
       <xref linkend="curl"/>
     </para>
 @z
@@ -160,7 +172,7 @@
 @x
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -172,20 +184,24 @@
           exiv2
         </seg>
         <seg>
-          libexiv2.so
+          libexiv2.so and
+          libxmp.a
         </seg>
         <seg>
-          /usr/include/exiv2
+          /usr/include/exiv2 and 
+          /usr/share/exiv2
         </seg>
 @y
         <seg>
           exiv2
         </seg>
         <seg>
-          libexiv2.so
+          libexiv2.so,
+          libxmp.a
         </seg>
         <seg>
-          /usr/include/exiv2
+          /usr/include/exiv2,
+          /usr/share/exiv2
         </seg>
 @z
 

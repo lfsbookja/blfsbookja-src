@@ -90,20 +90,18 @@
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="python2"/> (used during the testsuite),
       <xref linkend="rpcbind"/> (used during the testsuite), and
       <xref linkend="valgrind"/> (used during the test suite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (全テストの実行に必要),
+      <xref linkend="dejagnu"/> (全テストの網羅に必要),
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="python2"/> (テストスイート実行時に必要),
-      <xref linkend="rpcbind"/> (テストスイート実行時に必要),
-      <xref linkend="valgrind"/> (テストスイート実行時に必要)
+      <xref linkend="rpcbind"/> (テストスイート実行時に利用),
+      <xref linkend="valgrind"/> (テストスイート実行時に利用)
     </para>
 @z
 

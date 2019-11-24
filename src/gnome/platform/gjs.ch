@@ -93,13 +93,13 @@
 @z
 
 @x
-    <bridgehead revision="systemd" renderas="sect4">Recommended (required for GNOME)</bridgehead>
-    <para role="recommended" revision="systemd">
+    <bridgehead renderas="sect4">Recommended (required for GNOME)</bridgehead>
+    <para role="recommended">
       <xref linkend="gtk3"/>
     </para>
 @y
-    <bridgehead revision="systemd" renderas="sect4">Recommended (required for GNOME)</bridgehead>
-    <para role="recommended" revision="systemd">
+    <bridgehead renderas="sect4">Recommended (required for GNOME)</bridgehead>
+    <para role="recommended">
       <xref linkend="gtk3"/>
     </para>
 @z
@@ -109,15 +109,17 @@
     <para role="optional">
       <xref linkend="valgrind"/> (for tests),
       <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>, and
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
+      <ulink url="&gnome-download-http;/sysprof/">Sysprof</ulink>, and
       <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="valgrind"/> (テストのため),
+      <xref linkend="valgrind"/> (テスト時),
       <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
+      <ulink url="&gnome-download-http;/sysprof/">Sysprof</ulink>,
       <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
     </para>
 @z
@@ -144,10 +146,12 @@
 @x
       To test the results, issue: <command>make check</command>. The
       <application>GTK</application> and <application>Cairo</application>
-      tests will fail if not running in an Xorg session.
+      tests will fail if not running in an Xorg session. Two tests related
+      to testCommandLine.sh (4 and 5) are known to fail.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       Xorg セッション内でテスト実行しないと <application>GTK</application> と <application>Cairo</application> のテストは失敗します。
+      testCommandLine.sh に関連するテスト 2 つ (4 と 5) は失敗します。
 @z
 
 @x

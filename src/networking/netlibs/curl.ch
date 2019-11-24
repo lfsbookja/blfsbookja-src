@@ -98,6 +98,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="brotli"/>,
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libidn2"/>,
@@ -108,14 +109,16 @@
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
-      <ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
-      PolarSSL), and
+      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>, and
+      <!--<ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
+      PolarSSL), and -->
+      <!-- mbedTLS/PolarSSL support was removed in 7.65.1 -->
       <ulink url="http://spnego.sourceforge.net/">SPNEGO</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="brotli"/>,
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libidn2"/>,
@@ -127,8 +130,9 @@
       <xref linkend="samba"/>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
-      <ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
-      PolarSSL),
+      <!--<ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
+      PolarSSL), and -->
+      <!-- mbedTLS/PolarSSL support was removed in 7.65.1 -->
       <ulink url="http://spnego.sourceforge.net/">SPNEGO</ulink>
     </para>
 @z
@@ -173,15 +177,13 @@
 @z
 
 @x
-      To run the test suite, issue: <command>make test</command>. Two (of 857) tests
-      fail for unknown reasons, and all tests fail is valgrind is installed. Moving
-      valgrind out of $PATH is recommended if you wish to run the tests suite while
-      it is installed.
+       To run the test suite, issue: <command>make test</command>. 
+       Tests 323 and 1560 are known to fail.  A few other tests may fail
+       randomly for unknown reasons.
 @y
-      To run the test suite, issue: <command>make test</command>. Two (of 857) tests
-      fail for unknown reasons, and all tests fail is valgrind is installed. Moving
-      valgrind out of $PATH is recommended if you wish to run the tests suite while
-      it is installed.
+       To run the test suite, issue: <command>make test</command>. 
+       Tests 323 and 1560 are known to fail.  A few other tests may fail
+       randomly for unknown reasons.
 @z
 
 @x

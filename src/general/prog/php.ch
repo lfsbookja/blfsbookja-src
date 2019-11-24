@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "567 MB (add 2 MB for tests, add 111 MB for documentation)">
-  <!ENTITY php-time          "1.6 SBU (with parallelism=4; add 2.7 SBU for tests)">
+  <!ENTITY php-buildsize     "581 MB (add 2 MB for tests, add 112 MB for documentation)">
+  <!ENTITY php-time          "1.9 SBU (with parallelism=4; add 2.7 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "567 MB（テスト実施時はさらに 2 MB、ドキュメント生成時は 111 MB）">
-  <!ENTITY php-time          "1.6 SBU（parallelism=4 利用時、テスト実施時はさらに 2.7 SBU）">
+  <!ENTITY php-buildsize     "581 MB（テスト実施時はさらに 2 MB、ドキュメント生成時は 112 MB）">
+  <!ENTITY php-time          "1.9 SBU（parallelism=4 利用時、テスト実施時はさらに 2.7 SBU）">
 @z
 
 @x
@@ -87,10 +87,10 @@
 @z
 
 @x
-          Pre-built documentation (optional): <ulink
-          url="http://www.php.net/download-docs.php"/>
+          Optional pre-built documentation (single file html): <ulink
+          url="https://www.php.net/distributions/manual/php_manual_en.html.gz"/>
 @y
-          構築済ドキュメント (任意): <ulink
+          任意の構築済ドキュメント (単一の html ファイル): <ulink
           url="http://www.php.net/download-docs.php"/>
 @z
 
@@ -124,6 +124,7 @@
       <command>sendmail</command> command),
       <xref linkend="pcre"/>,
       <xref linkend="pth"/>,
+      <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
       <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
@@ -140,10 +141,11 @@
       <command>sendmail</command> command),
       <xref linkend="pcre"/>,
       <xref linkend="pth"/>,
+      <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
       <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
-      <ulink url="http://re2c.org/">re2c</ulink>, and
+      <ulink url="http://re2c.org/">re2c</ulink>,
       <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
     </para>
 @z
@@ -159,7 +161,7 @@
       <xref linkend="x-window-system"/>,
       <!--<ulink url="http://www.fastio.com/">ClibPDF</ulink>, - site asks for username/password-->
       <ulink url="http://www.adobe.com/devnet/acrobat/fdftoolkit.html">FDF Toolkit</ulink>,
-      <ulink url="https://bitbucket.org/libgd/gd-libgd/downloads">GD</ulink>, and
+      <ulink url="https://github.com/libgd/libgd">GD</ulink>, and
       <ulink url="http://fossies.org/linux/misc/old/t1lib-5.1.2.tar.gz/">t1lib</ulink>
     </para>
 @y
@@ -173,7 +175,7 @@
       <xref linkend="x-window-system"/>,
       <!--<ulink url="http://www.fastio.com/">ClibPDF</ulink>, - site asks for username/password-->
       <ulink url="http://www.adobe.com/devnet/acrobat/fdftoolkit.html">FDF Toolkit</ulink>,
-      <ulink url="https://bitbucket.org/libgd/gd-libgd/downloads">GD</ulink>, and
+      <ulink url="https://github.com/libgd/libgd">GD</ulink>, and
       <ulink url="http://fossies.org/linux/misc/old/t1lib-5.1.2.tar.gz/">t1lib</ulink>
     </para>
 @z
@@ -186,7 +188,7 @@
       <ulink url="http://sourceforge.net/projects/caudium/">Caudium</ulink>,
       <ulink url="https://www.hyperwave.com/en/">Hyperwave</ulink>,
       <ulink url="http://www.mnogosearch.org/">mnoGoSearch</ulink>,
-      <ulink url="http://www.roxen.com/products/webserver/">Roxen WebServer</ulink>, and
+      <ulink url="http://download.roxen.com/6.1/">Roxen WebServer</ulink>, and
       <ulink url="https://wddxnet.codeplex.com/">WDDX</ulink>
     </para>
 @y
@@ -197,7 +199,7 @@
       <ulink url="http://sourceforge.net/projects/caudium/">Caudium</ulink>,
       <ulink url="https://www.hyperwave.com/en/">Hyperwave</ulink>,
       <ulink url="http://www.mnogosearch.org/">mnoGoSearch</ulink>,
-      <ulink url="http://www.roxen.com/products/webserver/">Roxen WebServer</ulink>, and
+      <ulink url="http://download.roxen.com/6.1/">Roxen WebServer</ulink>,
       <ulink url="https://wddxnet.codeplex.com/">WDDX</ulink>
     </para>
 @z
@@ -206,7 +208,9 @@
     <bridgehead renderas="sect4">Optional Data Management Utilities and Libraries</bridgehead>
     <para role="optional">
       <xref linkend="db"/> (Note that PHP does not officially support versions
- above 5.3),
+      above 5.3),
+      <xref linkend="libiodbc"/>,
+      <xref linkend="lmdb"/>,
       <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
@@ -218,6 +222,7 @@
       <ulink url="http://www.dbmaker.com/">DBMaker</ulink>,
       <ulink url="http://www.empress.com/">Empress</ulink>,
       <ulink url="http://www.frontbase.com/cgi-bin/WebObjects/FBWebSite">FrontBase</ulink>,
+      <ulink url="https://www.ibm.com/analytics/us/en/db2/">IBM DB2</ulink>,
       <ulink url="http://www.hughes.com.au/products/msql/">Mini SQL</ulink>,
       <ulink url="http://www.monetra.com/">Monetra</ulink>, and
       <ulink url="http://sourceforge.net/projects/qdbm">QDBM</ulink>
@@ -226,7 +231,9 @@
     <bridgehead renderas="sect4">任意のデータ管理ユーティリティーおよびライブラリ</bridgehead>
     <para role="optional">
       <xref linkend="db"/> (Note that PHP does not officially support versions
- above 5.3),
+      above 5.3),
+      <xref linkend="libiodbc"/>,
+      <xref linkend="lmdb"/>,
       <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
@@ -238,8 +245,9 @@
       <ulink url="http://www.dbmaker.com/">DBMaker</ulink>,
       <ulink url="http://www.empress.com/">Empress</ulink>,
       <ulink url="http://www.frontbase.com/cgi-bin/WebObjects/FBWebSite">FrontBase</ulink>,
+      <ulink url="https://www.ibm.com/analytics/us/en/db2/">IBM DB2</ulink>,
       <ulink url="http://www.hughes.com.au/products/msql/">Mini SQL</ulink>,
-      <ulink url="http://www.monetra.com/">Monetra</ulink>, and
+      <ulink url="http://www.monetra.com/">Monetra</ulink>,
       <ulink url="http://sourceforge.net/projects/qdbm">QDBM</ulink>
     </para>
 @z
@@ -616,7 +624,7 @@
         php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
 
         <seg>dba.{so,a} and opcache.{so,a} in
-       /usr/lib/php/extensions/no-debug-non-zts-20170718</seg>
+       /usr/lib/php/extensions/no-debug-non-zts-20180731</seg>
 
         <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php and
         /usr/share/doc/php-&php-version;</seg>
@@ -625,7 +633,7 @@
         php-cgi, php-config, php-fpm, phpdbg, phpize</seg>
 
         <seg>dba.{so,a} and opcache.{so,a} in
-       /usr/lib/php/extensions/no-debug-non-zts-20170718</seg>
+       /usr/lib/php/extensions/no-debug-non-zts-20180731</seg>
 
         <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php,
         /usr/share/doc/php-&php-version;</seg>
@@ -647,10 +655,10 @@
 
 @x pear
             is the PHP Extension and Application Repository (PEAR) package
-            manager.
+            manager. This isn't installed by default.
 @y
             is the PHP Extension and Application Repository (PEAR) package
-            manager.
+            manager. This isn't installed by default.
 @z
 
 @x php-fpm

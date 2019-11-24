@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY nmap-buildsize     "116 MB (add 21 MB for tests)">
-  <!ENTITY nmap-time          "0.9 SBU (add 0.2 SBU for tests)">
+  <!ENTITY nmap-buildsize     "119 MB (add 25 MB for tests)">
+  <!ENTITY nmap-time          "0.9 SBU (add 0.1 SBU for tests)">
 @y
-  <!ENTITY nmap-buildsize     "116 MB (テスト実施時はさらに 21 MB)">
-  <!ENTITY nmap-time          "0.9 SBU (テスト実施時はさらに 0.2 SBU)">
+  <!ENTITY nmap-buildsize     "119 MB (テスト実施時はさらに 25 MB)">
+  <!ENTITY nmap-time          "0.9 SBU (テスト実施時はさらに 0.1 SBU)">
 @z
 
 @x
@@ -102,20 +102,20 @@
 @x
     <para role="recommended">
       <xref linkend="libpcap"/>,
-<!--  <xref linkend="lua"/>, broken with lua-5.3.0-->
-      <xref linkend="pcre"/> and
+      <xref linkend="lua"/>, 
+      <xref linkend="pcre"/>, and
       <xref linkend="liblinear"/>
-<!-- This is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
+<!--  libdnet is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
       <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
 -->
     </para>
 @y
     <para role="recommended">
       <xref linkend="libpcap"/>,
-<!--  <xref linkend="lua"/>, broken with lua-5.3.0-->
-      <xref linkend="pcre"/>,
+      <xref linkend="lua"/>, 
+      <xref linkend="pcre"/>, and
       <xref linkend="liblinear"/>
-<!-- This is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
+<!--  libdnet is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
       <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
 -->
     </para>
@@ -126,14 +126,16 @@
     <para role="optional">
       <xref linkend="pygtk"/> (required for <command>zenmap</command>),
       <xref linkend="python2"/> (required for <command>ndiff</command>) and
-      <xref linkend="subversion"/> (required for <command>nmap-update</command>)
+      <xref linkend="subversion"/> (required for <command>nmap-update</command>), and
+      <xref linkend="libssh2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pygtk"/> （<command>zenmap</command> に必要）,
-      <xref linkend="python2"/> （<command>ndiff</command> に必要）,
-      <xref linkend="subversion"/> （<command>nmap-update</command> に必要）
+      <xref linkend="pygtk"/> (<command>zenmap</command> に必要),
+      <xref linkend="python2"/> (<command>ndiff</command> に必要),
+      <xref linkend="subversion"/> (<command>nmap-update</command> に必要),
+      <xref linkend="libssh2"/>
     </para>
 @z
 

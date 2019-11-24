@@ -153,7 +153,7 @@
           None
         </seg>
         <seg>
-          libgnome-menu.so
+          libgnome-menu-3.so
         </seg>
         <seg>
           /etc/xdg/menus,
@@ -165,7 +165,7 @@
           &None;
         </seg>
         <seg>
-          libgnome-menu.so
+          libgnome-menu-3.so
         </seg>
         <seg>
           /etc/xdg/menus,

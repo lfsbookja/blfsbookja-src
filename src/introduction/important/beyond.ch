@@ -247,7 +247,9 @@
       deeply to find a fix for the package version you are trying to use, or even
       to find the package (names are sometimes not what you might expect, e.g.
       <application>ghostscript</application> often has a prefix or a suffix in its
-      name), but the following notes might help:</para>
+      name), but the following notes might help, particularly for those who, like
+      the editors, are trying to build the latest versions and encountering
+      problems:</para>
 @y
       <para>
       パッケージのコンパイルがうまくいかなった場合は、LFS のアーカイブ <ulink
@@ -262,8 +264,9 @@
       deeply to find a fix for the package version you are trying to use, or even
       to find the package (names are sometimes not what you might expect, e.g.
       <application>ghostscript</application> often has a prefix or a suffix in its
-      name), but the following notes might help:
-      </para>
+      name), but the following notes might help, particularly for those who, like
+      the editors, are trying to build the latest versions and encountering
+      problems:</para>
 @z
 
 @x

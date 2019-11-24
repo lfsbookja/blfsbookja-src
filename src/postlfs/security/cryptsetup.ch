@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cryptsetup-buildsize     "28 MB (add 11 MB for tests)">
-  <!ENTITY cryptsetup-time          "0.1 SBU (add 10 SBU for tests)">
+  <!ENTITY cryptsetup-buildsize     "25 MB (add 9 MB for tests)">
+  <!ENTITY cryptsetup-time          "0.2 SBU (add 12 SBU for tests)">
 @y
-  <!ENTITY cryptsetup-buildsize     "28 MB （テスト実施時はさらに 11 MB）">
-  <!ENTITY cryptsetup-time          "0.1 SBU （テスト実施時はさらに 10 SBU）">
+  <!ENTITY cryptsetup-buildsize     "25 MB （テスト実施時はさらに 9 MB）">
+  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 12 SBU）">
 @z
 
 @x

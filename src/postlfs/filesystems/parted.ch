@@ -116,22 +116,19 @@
 @z
 
 @x
-    <para>If you wish to run the test suite, first remove a test that normally
-    fails in BLFS (because it needs a locale C.UTF-8):</para>
+    <para>If you wish to run the test suite, first remove a couple of tests
+    that are known to fail in a BLFS environment:</para>
 @y
-    <para>If you wish to run the test suite, first remove a test that normally
-    fails in BLFS (because it needs a locale C.UTF-8):</para>
+    <para>If you wish to run the test suite, first remove a couple of tests
+    that are known to fail in a BLFS environment:</para>
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.  Note that
-      many tests are skipped if not run as the <systemitem
-      class="username">root</systemitem> user.
+      To test the results, issue, as the <systemitem
+      class="username">root</systemitem> user:
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      Note that
-      many tests are skipped if not run as the <systemitem
-      class="username">root</systemitem> user.
+      ビルド結果をテストする場合は <systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

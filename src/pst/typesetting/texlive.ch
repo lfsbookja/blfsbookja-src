@@ -155,16 +155,18 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gs"/> <emphasis>including
-      <filename>libgs.so</filename></emphasis> (for dvisvgm, which is used by e.g.
-      <xref role="nodep" linkend="asymptote"/>),
+      <filename>libgs.so</filename></emphasis>, <!--(for dvisvgm, which is used by e.g.
+      <xref role="nodep" linkend="asymptote"/>), : still referenced for dynamic loading,
+      even without dvisvgm - e.fg. by dvipsk -->
       <xref linkend="x-window-system"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gs"/> <emphasis>including
-      <filename>libgs.so</filename></emphasis> (for dvisvgm, which is used by e.g.
-      <xref role="nodep" linkend="asymptote"/>),
+      <filename>libgs.so</filename></emphasis>, <!--(for dvisvgm, which is used by e.g.
+      <xref role="nodep" linkend="asymptote"/>), : still referenced for dynamic loading,
+      even without dvisvgm - e.fg. by dvipsk -->
       <xref linkend="x-window-system"/>
     </para>
 @z

@@ -152,10 +152,12 @@
 
 @x
       To test the results, issue: <command>make -k check</command>.
-      The tests must be run from an X Terminal or similar.
+      The tests must be run from an X Terminal or similar. <!-- One test,
+      "test-openssl 3", is known to fail. -->
 @y
       To test the results, issue: <command>make -k check</command>.
-      The tests must be run from an X Terminal or similar.
+      The tests must be run from an X Terminal or similar. <!-- One test,
+      "test-openssl 3", is known to fail. -->
 @z
 
 @x
@@ -195,7 +197,7 @@
         </seg>
         <seg>
           /usr/include/gck-1,
-          /usr/{include,share,share/gtk-doc/html}/gcr-3, and
+          /usr/{include,share/gtk-doc/html}/gcr-3, and
           /usr/share/gtk-doc/html/gck
         </seg>
 @y
@@ -207,7 +209,7 @@
         </seg>
         <seg>
           /usr/include/gck-1,
-          /usr/{include,share,share/gtk-doc/html}/gcr-3,
+          /usr/{include,share/gtk-doc/html}/gcr-3,
           /usr/share/gtk-doc/html/gck
         </seg>
 @z

@@ -85,8 +85,9 @@
       <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="itstool"/>, and
-      <xref linkend="libxml2"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libxml2"/>, and
+      <xref linkend="openjpeg2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -95,7 +96,8 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="libxml2"/>
+      <xref linkend="libxml2"/>,
+      <xref linkend="openjpeg2"/>
     </para>
 @z
 
@@ -125,14 +127,18 @@
       <xref linkend="cups"/> (to enable printing if support is built into
       <application>GTK+ 3</application>),
       <xref linkend="gnome-desktop"/>,
+      <xref linkend="gspell"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libgxps"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>, and
-      <ulink url="http://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz">t1lib</ulink>
+      <!--<ulink url="http://ftp.gnome.org/pub/gnome/sources/gspell">gspell</ulink>,-->
+      <!--<ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,-->
+      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
+      <ulink url="https://github.com/jlaurens/synctex">Synctex</ulink>, and
+      <ulink url="https://www.ibiblio.org/pub/Linux/libs/graphics/!INDEX.html">t1lib</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -140,14 +146,18 @@
       <xref linkend="cups"/> (to enable printing if support is built into
       <application>GTK+ 3</application>),
       <xref linkend="gnome-desktop"/>,
+      <xref linkend="gspell"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libgxps"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>, and
-      <ulink url="http://www.ibiblio.org/pub/Linux/libs/graphics/t1lib-5.1.2.tar.gz">t1lib</ulink>
+      <!--<ulink url="http://ftp.gnome.org/pub/gnome/sources/gspell">gspell</ulink>,-->
+      <!--<ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,-->
+      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
+      <ulink url="https://github.com/jlaurens/synctex">Synctex</ulink>,
+      <ulink url="https://www.ibiblio.org/pub/Linux/libs/graphics/!INDEX.html">t1lib</ulink>
     </para>
 @z
 
@@ -183,19 +193,23 @@
 @z
 
 @x
-    <title>Command Explanation</title>
+      <para>If you installed the package to your system using a "DESTDIR"
+      method, 
+      <filename>/usr/share/glib-2.0/schemas/gschemas.compiled</filename>
+      was not updated/created. Create (or update) the file using the following
+      command as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <title>&CommandExplanations;</title>
+      <para>If you installed the package to your system using a "DESTDIR"
+      method, 
+      <filename>/usr/share/glib-2.0/schemas/gschemas.compiled</filename>
+      was not updated/created. Create (or update) the file using the following
+      command as the <systemitem class="username">root</systemitem> user:</para>
 @z
 
 @x
-      <parameter>--enable-compile-warnings=minimum</parameter>: This
-      switch prevents a warning about a date format being treated as an error by
-      <application>gcc-6.1</application>.
+    <title>Command Explanations</title>
 @y
-      <parameter>--enable-compile-warnings=minimum</parameter>: This
-      switch prevents a warning about a date format being treated as an error by
-      <application>gcc-6.1</application>.
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -250,9 +264,7 @@
         </seg>
         <seg>
           libevdocument3.so,
-          libevview3.so,
-          /usr/lib/mozilla/plugins/libevbrowserplugin.so (browser plugin,
-          but unusable in firefox), and
+          libevview3.so, and
           /usr/lib/nautilus/extensions-3.0/libevince-properties-page.so
         </seg>
         <seg>
@@ -267,8 +279,6 @@
         <seg>
           libevdocument3.so,
           libevview3.so,
-          /usr/lib/mozilla/plugins/libevbrowserplugin.so (browser plugin,
-          but unusable in firefox),
           /usr/lib/nautilus/extensions-3.0/libevince-properties-page.so
         </seg>
         <seg>

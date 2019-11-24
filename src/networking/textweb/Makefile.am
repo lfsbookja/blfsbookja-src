@@ -9,8 +9,7 @@ BOOKdir = @abs_bookdir@/networking/textweb
 CHANGE_FILES = \
 	links.ch   \
 	lynx.ch    \
-	textweb.ch \
-	w3m.ch
+	textweb.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

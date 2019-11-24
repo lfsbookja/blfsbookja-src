@@ -94,13 +94,15 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libxml2"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="libxml2"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -139,9 +141,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>LANG=C ninja test</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>LANG=C ninja test</command> を実行します。
 @z
 
 @x

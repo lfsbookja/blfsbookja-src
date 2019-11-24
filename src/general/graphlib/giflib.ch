@@ -72,14 +72,14 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="xmlto"/> (for html documentation)
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="xmlto"/> 
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="xmlto"/> (html ドキュメントのため)
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="xmlto"/> 
     </para>
 @z
 
@@ -105,13 +105,9 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check-TESTS</command>. Test
-    suite results are kept in <filename>test.sh.log</filename>.</para>
+    <para>This package does not come with a test suite.</para>
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check-TESTS</command> を実行します。
-    テスト結果は <filename>test.sh.log</filename> に出力されます。
-    </para>
+    <para>&notTestSuite;</para>
 @z
 
 @x
@@ -157,12 +153,12 @@
 @z
 
 @x
-        <seg>gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto,
+        <seg>gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto, gifsponge,
         giftext and giftool</seg>
         <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>
 @y
-        <seg>gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto,
+        <seg>gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto, gifsponge,
         giftext, giftool</seg>
         <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>

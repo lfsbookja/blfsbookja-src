@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY vala-buildsize     "227 MB (with tests)">
-  <!ENTITY vala-time          "1.4 SBU (with tests)">
+  <!ENTITY vala-buildsize     "171 MB (add 1 MB for tests)">
+  <!ENTITY vala-time          "0.3 SBU (using parallelism=4; add 1.6 SBU for tests)">
 @y
-  <!ENTITY vala-buildsize     "227 MB (テスト込み)">
-  <!ENTITY vala-time          "1.4 SBU (テスト込み)">
+  <!ENTITY vala-buildsize     "171 MB (テスト実施時はさらに 1 MB)">
+  <!ENTITY vala-time          "0.3 SBU (parallelism=4 利用時。テスト実施時はさらに 1.6 SBU)">
 @z
 
 @x
@@ -172,26 +172,26 @@
           vala, 
           vala-&vala-major-version;, 
           valac, 
-          valadoc (not built if the patch is applied),
+          valadoc,
           vala-gen-introspect, and
           vapigen (symlinks);
 
           valac-&vala-major-version;,
-          valadoc-&vala-major-version; (not built if the patch is applied),
+          valadoc-&vala-major-version;,
           vala-gen-introspect-&vala-major-version;, and
           vapigen-&vala-major-version;
         </seg>
         <seg>
           libvala-&vala-major-version;.so and
-          libvaladoc-&vala-major-version;.so (not built if the patch is applied)
+          libvaladoc-&vala-major-version;.so
         </seg>
         <seg>
           /usr/include/vala-&vala-major-version;,
-          /usr/include/valadoc-&vala-major-version; (not built if the patch is applied),
+          /usr/include/valadoc-&vala-major-version;,
           /usr/lib/vala-&vala-major-version;,
-          /usr/lib/valadoc (not built if the patch is applied),
+          /usr/lib/valadoc,
           /usr/share/vala,
-          /usr/share/valadoc (not built if the patch is applied),
+          /usr/share/valadoc,
           /usr/share/devhelp/books/vala-&vala-major-version;, and
           /usr/share/vala-&vala-major-version;
         </seg>
@@ -200,26 +200,26 @@
           vala, 
           vala-&vala-major-version;, 
           valac, 
-          valadoc (not built if the patch is applied),
-          vala-gen-introspect, and
+          valadoc,
+          vala-gen-introspect,
           vapigen (symlinks);
 
           valac-&vala-major-version;,
-          valadoc-&vala-major-version; (not built if the patch is applied),
+          valadoc-&vala-major-version;,
           vala-gen-introspect-&vala-major-version;,
           vapigen-&vala-major-version;
         </seg>
         <seg>
           libvala-&vala-major-version;.so,
-          libvaladoc-&vala-major-version;.so (not built if the patch is applied)
+          libvaladoc-&vala-major-version;.so
         </seg>
         <seg>
           /usr/include/vala-&vala-major-version;,
-          /usr/include/valadoc-&vala-major-version; (not built if the patch is applied),
+          /usr/include/valadoc-&vala-major-version;,
           /usr/lib/vala-&vala-major-version;,
-          /usr/lib/valadoc (not built if the patch is applied),
+          /usr/lib/valadoc,
           /usr/share/vala,
-          /usr/share/valadoc (not built if the patch is applied),
+          /usr/share/valadoc,
           /usr/share/devhelp/books/vala-&vala-major-version;,
           /usr/share/vala-&vala-major-version;
         </seg>

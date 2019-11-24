@@ -78,13 +78,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/> and
       <xref linkend="libxfce4util"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
       <xref linkend="libxfce4util"/>
     </para>
 @z
@@ -95,9 +93,7 @@
       <xref linkend="gtk-doc"/> and
       Perl Module
       <ulink url="http://sourceforge.net/projects/gtk2-perl/files/Glib/">Glib</ulink>
-      (you may want to use <xref linkend="perl-standard-install"/> or
-      <xref linkend="perl-auto-install"/>)
-<!--      <xref linkend="perl-glib"/>-->
+      (this allows perl developers to store settings in xfconf for perl applications)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -105,9 +101,7 @@
       <xref linkend="gtk-doc"/> and
       Perl Module
       <ulink url="http://sourceforge.net/projects/gtk2-perl/files/Glib/">Glib</ulink>
-      (you may want to use <xref linkend="perl-standard-install"/> or
-      <xref linkend="perl-auto-install"/>)
-<!--      <xref linkend="perl-glib"/>-->
+      (this allows perl developers to store settings in xfconf for perl applications)
     </para>
 @z
 

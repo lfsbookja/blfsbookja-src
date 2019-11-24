@@ -112,9 +112,9 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="gtk-doc"/>,
       <xref linkend="pygobject3"/>,
-      <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>, and
+      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>, and
       <ulink url="https://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
       (for part of the testsuite).
     </para>
@@ -123,7 +123,7 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="pygobject3"/>,
-      <ulink url="https://launchpad.net/umockdev/">umockdev</ulink>,
+      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>,
       <ulink url="https://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
       (テストスイートの一部に必要)
     </para>

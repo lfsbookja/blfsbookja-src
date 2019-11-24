@@ -104,11 +104,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="bubblewrap"/> (needed for thumbnailers in Nautilus) and
       <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="bubblewrap"/> (needed for thumbnailers in Nautilus) and
       <xref linkend="gobject-introspection"/>
     </para>
 @z
@@ -145,9 +147,10 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, run <command>ninja test</command> from a X Terminal
+      or similar.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は X 端末やこれに相当する端末から <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -163,13 +166,29 @@
 @z
 
 @x
-      <option>--with-gnome-distributor="Some Name"</option>: Use this
+      <option>-Dgnome_distributor="Some Name"</option>: Use this
       parameter to supply a custom name in the <quote>Distributor:</quote>
       field of the <quote>GNOME About</quote> display window.
 @y
-      <option>--with-gnome-distributor="Some Name"</option>: Use this
+      <option>-Dgnome_distributor="Some Name"</option>: Use this
       parameter to supply a custom name in the <quote>Distributor:</quote>
       field of the <quote>GNOME About</quote> display window.
+@z
+
+@x
+      <option>-Dgtk_doc=true</option>: Use this
+      parameter you wish to build the API documentation.
+@y
+      <option>-Dgtk_doc=true</option>: Use this
+      parameter you wish to build the API documentation.
+@z
+
+@x
+      <option>-Dinstalled_tests=true</option>: Use this
+      parameter you wish to enable the installed tests.
+@y
+      <option>-Dinstalled_tests=true</option>: Use this
+      parameter you wish to enable the installed tests.
 @z
 
 @x

@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY clisp-buildsize     "163 MB (add 8 MB for tests)">
-  <!ENTITY clisp-time          "0.9 SBU (18 SBU with tests)">
+  <!ENTITY clisp-time          "0.9 SBU (1.2 SBU with tests)">
 @y
   <!ENTITY clisp-buildsize     "163 MB (テスト実施時はさらに 8 MB)">
-  <!ENTITY clisp-time          "0.9 SBU (テスト実施時は 18 SBU)">
+  <!ENTITY clisp-time          "0.9 SBU (テスト実施時は 1.2 SBU)">
 @z
 
 @x

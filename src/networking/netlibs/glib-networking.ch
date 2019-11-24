@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib-networking-buildsize     "6.4 MB (with tests)">
-  <!ENTITY glib-networking-time          "0.1 SBU (with tests)">
+  <!ENTITY glib-networking-buildsize     "4.4 MB (with tests)">
+  <!ENTITY glib-networking-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY glib-networking-buildsize     "6.4 MB (テスト込み)">
-  <!ENTITY glib-networking-time          "0.1 SBU (テスト込み)">
+  <!ENTITY glib-networking-buildsize     "4.4 MB (テスト込み)">
+  <!ENTITY glib-networking-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x
@@ -101,14 +101,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="make-ca"/> and
-      <xref linkend="p11-kit"/>
+      <xref linkend="make-ca"/>
+      <!-- p11-kit option no longer exists, and is pulled in by GnuTLS anyway -->
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="make-ca"/>,
-      <xref linkend="p11-kit"/>
+      <xref linkend="make-ca"/>
+      <!-- p11-kit option no longer exists, and is pulled in by GnuTLS anyway -->
     </para>
 @z
 

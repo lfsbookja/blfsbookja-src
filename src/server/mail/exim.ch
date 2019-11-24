@@ -123,7 +123,7 @@
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="x-window-system"/>,
-      <ulink url="http://www.hl5.org">Heimdal GSSAPI</ulink>, and
+      <ulink url="http://www.h5l.org/">Heimdal GSSAPI</ulink>, and
       <ulink url="http://www.trusteddomain.org/opendmarc/">OpenDMARC</ulink>
     </para>
 @y
@@ -141,7 +141,7 @@
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="x-window-system"/>,
-      <ulink url="http://www.hl5.org">Heimdal GSSAPI</ulink>,
+      <ulink url="http://www.h5l.org/">Heimdal GSSAPI</ulink>,
       <ulink url="http://www.trusteddomain.org/opendmarc/">OpenDMARC</ulink>
     </para>
 @z

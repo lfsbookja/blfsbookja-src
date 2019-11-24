@@ -14,11 +14,9 @@
 @z
 
 @x
-  <!ENTITY graphviz-buildsize     "177 MB">
-  <!ENTITY graphviz-time          "0.7 SBU (using parallelism=4)">
+  <!ENTITY graphviz-time          "1.0 SBU (using parallelism=4)">
 @y
-  <!ENTITY graphviz-buildsize     "177 MB">
-  <!ENTITY graphviz-time          "0.7 SBU（parallelism=4 指定時）">
+  <!ENTITY graphviz-time          "1.0 SBU（parallelism=4 指定時）">
 @z
 
 @x

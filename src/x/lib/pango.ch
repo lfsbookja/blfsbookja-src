@@ -115,14 +115,18 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="cairo"/>,
+      <xref linkend="gobject-introspection"/> (Required if building GNOME), and
+      <xref linkend="xorg7-lib"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="cairo"/>,
+      <xref linkend="gobject-introspection"/> (Required if building GNOME),
+      <xref linkend="xorg7-lib"/>
     </para>
 @z
 
@@ -137,7 +141,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cantarell-fonts"/> （テストのため）,
+      <xref linkend="cantarell-fonts"/> (for tests),
       <xref linkend="gtk-doc"/>,
       <ulink url="https://ftp.gnu.org/gnu/help2man">help2man</ulink>,
       <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
@@ -165,10 +169,10 @@
 
 @x
       To test the results, issue: <command>ninja test</command>. One test,
-      test-layout, is known to fail.
+      <filename>test-layout</filename>, is known to fail.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      test-layout テストは失敗します。
+      <filename>test-layout</filename> テストは失敗します。
 @z
 
 @x

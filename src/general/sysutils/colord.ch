@@ -84,7 +84,9 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="lcms2"/>, and
+      <xref linkend="lcms2"/>,
+      <xref linkend="polkit"/>, and
+      <!-- Polkit now needed, see #11481 in Trac -->
       <xref linkend="sqlite"/>
     </para>
 @y
@@ -93,6 +95,8 @@
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
       <xref linkend="lcms2"/>,
+      <xref linkend="polkit"/>,
+      <!-- Polkit now needed, see #11481 in Trac -->
       <xref linkend="sqlite"/>
     </para>
 @z
@@ -103,7 +107,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
-      <xref linkend="polkit"/>, <phrase revision="sysv">and</phrase>
+      <phrase revision="sysv">and</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>, and</phrase>
       <xref linkend="vala"/>
     </para>
@@ -113,7 +117,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
-      <xref linkend="polkit"/>, <phrase revision="sysv">and</phrase>
+      <phrase revision="sysv">and</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>, and</phrase>
       <xref linkend="vala"/>
     </para>
@@ -122,10 +126,8 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>,
       <xref linkend="gnome-desktop"/> and
       <xref linkend="colord-gtk"/> (to build the example tools),
-      <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="sane"/>,
       <ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink>, and
@@ -134,10 +136,8 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="colord-gtk"/> (to build the example tools),
-      <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="sane"/>,
       <ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink>,

@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libogg-buildsize     "3.4 MB (with tests)">
+  <!ENTITY libogg-buildsize     "3.6 MB (with tests)">
   <!ENTITY libogg-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libogg-buildsize     "3.4 MB （テスト込み）">
+  <!ENTITY libogg-buildsize     "3.6 MB （テスト込み）">
   <!ENTITY libogg-time          "&LessThan1;0.1 SBU&LessThan2; （テスト込み）">
 @z
 

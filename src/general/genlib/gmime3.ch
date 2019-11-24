@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gmime3-buildsize     "23 MB (with tests)">
+  <!ENTITY gmime3-buildsize     "25 MB (with tests)">
   <!ENTITY gmime3-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY gmime3-buildsize     "23 MB （テスト込み）">
+  <!ENTITY gmime3-buildsize     "25 MB （テスト込み）">
   <!ENTITY gmime3-time          "0.3 SBU （テスト込み）">
 @z
 
@@ -104,16 +104,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="libidn"/>,  and
-      <xref linkend="vala"/>
+      <xref linkend="gobject-introspection"/> and 
+      <xref linkend="libidn2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libidn"/>,
-      <xref linkend="vala"/>
+      <xref linkend="libidn2"/>
     </para>
 @z
 
@@ -122,7 +120,8 @@
     <para role="optional">
       <xref linkend="docbook-utils"/>,
       <xref linkend="gpgme"/>,
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="vala"/>, and 
       <ulink url="http://download.mono-project.com/sources/gtk-sharp/">Gtk#</ulink> (requires
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>)
     </para>
@@ -132,6 +131,7 @@
       <xref linkend="docbook-utils"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="vala"/>,
       <ulink url="http://download.mono-project.com/sources/gtk-sharp/">Gtk#</ulink>
       (<ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> が必要)
     </para>

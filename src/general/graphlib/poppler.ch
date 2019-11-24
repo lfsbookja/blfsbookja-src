@@ -139,9 +139,8 @@
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="nss"/>, 
-      <xref linkend="openjpeg2"/>, and 
-      <xref linkend="python2"/>
+      <xref linkend="nss"/>, and
+      <xref linkend="openjpeg2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -150,15 +149,15 @@
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="nss"/>, 
-      <xref linkend="openjpeg2"/>,
-      <xref linkend="python2"/>
+      <xref linkend="nss"/>, and
+      <xref linkend="openjpeg2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="boost"/>,
       <xref linkend="curl"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="git"/> (for downloading test files),
@@ -166,12 +165,14 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libtiff"/>,
+      <xref linkend="python2"/>, and
       <xref linkend="qt5"/>
       (required for PDF support in <xref role="nodep" linkend="okular5"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="boost"/>,
       <xref linkend="curl"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="git"/> (for downloading test files),
@@ -179,6 +180,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libtiff"/>,
+      <xref linkend="python2"/>, and
       <xref linkend="qt5"/>
       (required for PDF support in <xref role="nodep" linkend="okular5"/>)
     </para>
@@ -268,15 +270,13 @@
 @z
 
 @x
-      <parameter>-DENABLE_XPDF_HEADERS=ON</parameter>: Install some old
+      <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Install some old
       <application>Xpdf</application> headers required by certain programs (e.g.
-      <application>Okular</application>, <application>LibreOffice</application>
-      and <application>Inkscape</application>).
+      <application>Inkscape</application>).
 @y
-      <parameter>-DENABLE_XPDF_HEADERS=ON</parameter>: Install some old
+      <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Install some old
       <application>Xpdf</application> headers required by certain programs (e.g.
-      <application>Okular</application>, <application>LibreOffice</application>
-      and <application>Inkscape</application>).
+      <application>Inkscape</application>).
 @z
 
 @x
@@ -307,8 +307,8 @@
 
 @x
         <seg>
-          pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdfsig,
-          pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, and
+          pdfattach, pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, 
+          pdfsig, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, and
           pdfunite
         </seg>
         <seg>
@@ -324,8 +324,8 @@
         </seg>
 @y
         <seg>
-          pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, pdfsig,
-          pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
+          pdfattach, pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, 
+          pdfsig, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
           pdfunite
         </seg>
         <seg>

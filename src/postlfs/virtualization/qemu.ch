@@ -81,15 +81,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="python2"/>, and
+      <xref linkend="glib2"/>, and
       <xref linkend="x-window-system"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="python2"/>,
       <xref linkend="x-window-system"/>
     </para>
 @z
@@ -112,6 +110,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       Depending on the sound system, various packages in <xref linkend="alsa"/>,
+      <xref linkend="python3"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="bluez"/>,
       <xref linkend="curl"/>,
@@ -126,7 +125,7 @@
       <xref linkend="nettle"/>,
       <xref linkend="mesa"/>,
       <xref linkend="sdl"/>,
-      <xref linkend="vte"/> or <xref linkend="vte2"/>, and
+      <xref role="nodep" linkend="vte"/> or <xref linkend="vte2"/>, and
 <!-- libcacard has been a standalone project since qemu-2.5.-->
       <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>
     </para>
@@ -134,6 +133,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       Depending on the sound system, various packages in <xref linkend="alsa"/>,
+      <xref linkend="python3"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="bluez"/>,
       <xref linkend="curl"/>,
@@ -148,7 +148,7 @@
       <xref linkend="nettle"/>,
       <xref linkend="mesa"/>,
       <xref linkend="sdl"/>,
-      <xref linkend="vte"/> or <xref linkend="vte2"/>,
+      <xref role="nodep" linkend="vte"/> or <xref linkend="vte2"/>,
 <!-- libcacard has been a standalone project since qemu-2.5.-->
       <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>
     </para>
@@ -322,31 +322,17 @@
 @z
 
 @x
-      <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
-      driver to ALSA. For other drivers see the --audio-drv-list list in
+      <option>--audio-drv-list=pa</option>: This switch sets the audio
+      driver to pulseaudio. For other drivers see the --audio-drv-list list in
       <command>configure</command>'s help output. The default audio driver is
-      OSS. To enable support for alsa and pulseaudio, use <parameter>--audio-drv-list=alsa,pa</parameter>
+      OSS. To enable support for both alsa and pulseaudio, use
+      <option>--audio-drv-list=alsa,pa</option>.
 @y
-      <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
-      driver to ALSA. For other drivers see the --audio-drv-list list in
+      <option>--audio-drv-list=pa</option>: This switch sets the audio
+      driver to pulseaudio. For other drivers see the --audio-drv-list list in
       <command>configure</command>'s help output. The default audio driver is
-      OSS. To enable support for alsa and pulseaudio, use <parameter>--audio-drv-list=alsa,pa</parameter>
-@z
-
-@x
-      <parameter>--with-sdlabi=2.0</parameter>: Chooses to build with SDL-2 if
-      both SDL and SDL-2 are installed.
-@y
-      <parameter>--with-sdlabi=2.0</parameter>: Chooses to build with SDL-2 if
-      both SDL and SDL-2 are installed.
-@z
-
-@x
-      <option>--with-gtkabi=3.0</option>: builds with GTK+-3 if both GTK+-2
-      and GTK+-3 are installed.
-@y
-      <option>--with-gtkabi=3.0</option>: builds with GTK+-3 if both GTK+-2
-      and GTK+-3 are installed.
+      OSS. To enable support for both alsa and pulseaudio, use
+      <option>--audio-drv-list=alsa,pa</option>.
 @z
 
 @x

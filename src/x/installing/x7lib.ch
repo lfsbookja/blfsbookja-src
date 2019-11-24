@@ -108,7 +108,7 @@
     following: <xref linkend="fop"/>,
     <xref linkend="Links"/>,
     <xref linkend="lynx"/>,
-    and <xref linkend="w3m"/> (to generate additional PDF or text
+    and <ulink url="&w3m-url;">W3m</ulink> (to generate additional PDF or text
     documentation for the libXfont package).</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -116,7 +116,7 @@
     <xref linkend="fop"/>,
     <xref linkend="Links"/>,
     <xref linkend="lynx"/>,
-    and <xref linkend="w3m"/> (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため).</para>
+    and <ulink url="&w3m-url;">W3m</ulink> (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため)</para>
 @z
 
 @x

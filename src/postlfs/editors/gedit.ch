@@ -77,16 +77,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="git"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gtksourceview"/>,
+      <xref linkend="gspell"/>,
+      <xref linkend="gtksourceview4"/>,
       <xref linkend="itstool"/>, and
       <xref linkend="libpeas"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="git"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gtksourceview"/>,
+      <xref linkend="gspell"/>,
+      <xref linkend="gtksourceview4"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libpeas"/>
     </para>
@@ -116,8 +120,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="vala"/>,
-      <ulink url="http://ftp.acc.umu.se/pub/gnome/sources/gspell/">gspell</ulink>, and
+      <xref linkend="vala"/>, and
       <ulink url="http://launchpad.net/zeitgeist">zeitgeist</ulink>
     </para>
 @y
@@ -125,7 +128,6 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="vala"/>,
-      <ulink url="http://ftp.acc.umu.se/pub/gnome/sources/gspell/">gspell</ulink>,
       <ulink url="http://launchpad.net/zeitgeist">zeitgeist</ulink>
     </para>
 @z
@@ -150,9 +152,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -168,13 +170,11 @@
 @z
 
 @x
-      <parameter>--disable-spell</parameter>: Use this switch to disable
-      spell-checking capability. It is required if
-      <application>gspell</application> is not installed.
+      <option>-Ddocumentation=true</option>: Use this option
+      to build the reference manual (needs <xref linkend="gtk-doc"/>).
 @y
-      <parameter>--disable-spell</parameter>:
-      本スイッチを指定することで、スペルチェック機能を無効にします。
-      <application>gspell</application> をインストールしていない場合はこの指定が必要です。
+      <option>-Ddocumentation=true</option>: Use this option
+      to build the reference manual (needs <xref linkend="gtk-doc"/>).
 @z
 
 @x
@@ -195,8 +195,7 @@
 
 @x
         <seg>
-          gedit and
-          gnome-text-editor (symlink to gedit)
+          gedit 
         </seg>
         <seg>
           libgedit.so
@@ -207,8 +206,7 @@
         </seg>
 @y
         <seg>
-          gedit,
-          gnome-text-editor (gedit へのシンボリックリンク)
+          gedit 
         </seg>
         <seg>
           libgedit.so

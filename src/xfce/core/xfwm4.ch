@@ -77,14 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libwnck2"/>,
+      <xref linkend="libwnck"/>,
       <xref linkend="libxfce4ui"/> and
       <xref linkend="libxfce4util"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libwnck2"/>,
+      <xref linkend="libwnck"/>,
       <xref linkend="libxfce4ui"/>,
       <xref linkend="libxfce4util"/>
     </para>

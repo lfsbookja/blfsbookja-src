@@ -84,12 +84,16 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="giflib"/>
+      <xref linkend="giflib"/>,
+      <xref linkend="gnutls"/>, and
+      <xref linkend="libtiff"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="giflib"/>
+      <xref linkend="giflib"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="libtiff"/>
     </para>
 @z
 
@@ -100,16 +104,14 @@
       <xref linkend="alsa-lib"/>,
       <xref linkend="dbus"/>,
       <xref linkend="GConf"/>,
-      <xref linkend="gnutls"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gpm"/>,
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>,
+      <xref role="nodep" linkend="gtk2"/> or <xref linkend="gtk3"/>,
       <xref linkend="imagemagick6"/> (see command explanations),
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
-      <xref linkend="libtiff"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="valgrind"/>,
@@ -128,16 +130,14 @@
       <xref linkend="alsa-lib"/>,
       <xref linkend="dbus"/>,
       <xref linkend="GConf"/>,
-      <xref linkend="gnutls"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gpm"/>,
-      <xref linkend="gtk2"/> or <xref linkend="gtk3"/>,
+      <xref role="nodep" linkend="gtk2"/> or <xref linkend="gtk3"/>,
       <xref linkend="imagemagick6"/> (see command explanations),
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
-      <xref linkend="libtiff"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="valgrind"/>,

@@ -90,18 +90,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="openssl"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="openssl"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <ulink url="http://netcat.sourceforge.net/">netcat</ulink> (required for tests),

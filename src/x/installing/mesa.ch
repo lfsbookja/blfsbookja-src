@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "352 MB (with demos and docs, add 42 MB for tests)">
-  <!ENTITY mesa-time          "2.3 SBU (with parallelism=4, demos, and docs; add 1.0 SBU for tests)">
+  <!ENTITY mesa-buildsize     "492 MB (with demos and docs), add 188 MB for tests">
+  <!ENTITY mesa-time          "2.4 SBU (with parallelism=4, demos, and docs), add 0.4 SBU for tests">
 @y
-  <!ENTITY mesa-buildsize     "352 MB (デモおよびドキュメント込み、テスト実施時はさらに 42 MB)">
-  <!ENTITY mesa-time          "2.3 SBU (parallelism=4, デモおよびドキュメント込み、テスト実施時はさらに 1.0 SBU)">
+  <!ENTITY mesa-buildsize     "492 MB (デモおよびドキュメント込み)、テスト実施時はさらに 188 MB">
+  <!ENTITY mesa-time          "2.4 SBU (parallelism=4, デモおよびドキュメント込み)、テスト実施時はさらに 0.4 SBU">
 @z
 
 @x
@@ -116,61 +116,53 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="xorg7-lib"/>,
-      <xref linkend="libdrm"/>, 
-      <xref linkend="Mako"/>, and
-      <xref linkend="python2"/>
+      <xref linkend="libdrm"/>, and
+      <xref linkend="Mako"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="xorg7-lib"/>,
-      <xref linkend="libdrm"/>, 
-      <xref linkend="Mako"/>,
-      <xref linkend="python2"/>
+      <xref linkend="libdrm"/>,
+      <xref linkend="Mako"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <!-- <xref linkend="elfutils"/> (required for the radeonsi driver), -->
-      
-      <phrase revision="systemd"><xref linkend="libva"/> (to build drivers for 
-      supported hardware, note that there is a circular dependency. You must
+
+      <xref role="first" linkend="libva"/> (to provide VA-API support for some
+      gallium drivers, note that there is a circular dependency. You must
       build <application>libva</application> first without EGL and GLX support,
-      install this package, and rebuild <application>libva</application>.),</phrase>
-      
+      install this package, and rebuild <application>libva</application>),
       <xref linkend="libvdpau"/> (to build VDPAU drivers),
-      
-      <xref linkend="llvm"/> (required for Gallium3D, r300, and radeonsi
-      drivers and for the llvmpipe software rasterizer. See <ulink role="nodep"
+      <xref linkend="llvm"/> (required for Gallium3D, nouveau, r300, and radeonsi
+      drivers and for swrast, the software rasterizer which is sometimes referred
+      to as llvmpipe. See <ulink role="nodep"
       url="http://www.mesa3d.org/systems.html"/> for more information), and
       <xref linkend="wayland-protocols"/> (required for 
         <xref role="nodep" linkend='plasma5-build'/>,
         <!-- <xref role="nodep" linkend='lxqt'/>, -->
-        GNOME, and 
-        recommended for  <xref role="nodep" linkend='gtk3'/>)
+        GNOME, and recommended for  <xref role="nodep" linkend='gtk3'/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <!-- <xref linkend="elfutils"/> (required for the radeonsi driver), -->
-      
-      <phrase revision="systemd"><xref linkend="libva"/> (to build drivers for 
-      supported hardware, note that there is a circular dependency. You must
+
+      <xref role="first" linkend="libva"/> (to provide VA-API support for some
+      gallium drivers, note that there is a circular dependency. You must
       build <application>libva</application> first without EGL and GLX support,
-      install this package, and rebuild <application>libva</application>.),</phrase>
-      
+      install this package, and rebuild <application>libva</application>),
       <xref linkend="libvdpau"/> (to build VDPAU drivers),
-      
-      <xref linkend="llvm"/> (required for Gallium3D, r300, and radeonsi
-      drivers and for the llvmpipe software rasterizer. See <ulink role="nodep"
+      <xref linkend="llvm"/> (required for Gallium3D, nouveau, r300, and radeonsi
+      drivers and for swrast, the software rasterizer which is sometimes referred
+      to as llvmpipe. See <ulink role="nodep"
       url="http://www.mesa3d.org/systems.html"/> for more information), and
       <xref linkend="wayland-protocols"/> (required for 
         <xref role="nodep" linkend='plasma5-build'/>,
         <!-- <xref role="nodep" linkend='lxqt'/>, -->
-        GNOME, and 
-        recommended for  <xref role="nodep" linkend='gtk3'/>)
+        GNOME, and recommended for  <xref role="nodep" linkend='gtk3'/>)
     </para>
 @z
 
@@ -178,39 +170,49 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libgcrypt"/>,
+      <xref linkend="lm_sensors"/> <!-- for libsensors according to Meson -->,
       <xref linkend="nettle"/>,
+      <xref linkend="valgrind"/>,
       <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">mesa-demos</ulink>
       (provides more than 300 extra demos to test
       <application>Mesa</application>; this includes the same programs added by
-      the patch above), and
+      the patch above),
       <ulink url="http://omxil.sourceforge.net/">Bellagio OpenMAX Integration
-      Layer</ulink> (for mobile platforms)
+      Layer</ulink> (for mobile platforms), and
+      <ulink url="https://github.com/tizonia/tizonia-openmax-il/wiki/Tizonia-OpenMAX-IL/">
+      libtizonia</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libgcrypt"/>,
+      <xref linkend="lm_sensors"/> <!-- for libsensors according to Meson -->,
       <xref linkend="nettle"/>,
+      <xref linkend="valgrind"/>,
       <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">mesa-demos</ulink>
       (provides more than 300 extra demos to test
       <application>Mesa</application>; this includes the same programs added by
-      the patch above), and
+      the patch above),
       <ulink url="http://omxil.sourceforge.net/">Bellagio OpenMAX Integration
-      Layer</ulink> (for mobile platforms)
+      Layer</ulink> (for mobile platforms), and
+      <ulink url="https://github.com/tizonia/tizonia-openmax-il/wiki/Tizonia-OpenMAX-IL/">
+      libtizonia</ulink>
     </para>
 @z
 
 @x
-        The instructions below assume that <!-- <application>elfutils</application>
-        and --> <application>LLVM</application> with the r600/amdgpu and host 
-        backends are installed. You will need to modify the instructions if you
-        choose not to install it.  For an explanation of Gallium3D see
+        The instructions below assume that
+        <application>LLVM</application> with the r600/amdgpu and host backends
+        and run-time type information (RTTI - needed for nouveau) are installed.
+        You will need to modify the instructions if you
+        choose not to install all of these. For an explanation of Gallium3D see
         <ulink url="https://en.wikipedia.org/wiki/Gallium3D"/>.
 @y
-        The instructions below assume that <!-- <application>elfutils</application>
-        and --> <application>LLVM</application> with the r600/amdgpu and host 
-        backends are installed. You will need to modify the instructions if you
-        choose not to install it.  For an explanation of Gallium3D see
+        The instructions below assume that
+        <application>LLVM</application> with the r600/amdgpu and host backends
+        and run-time type information (RTTI - needed for nouveau) are installed.
+        You will need to modify the instructions if you
+        choose not to install all of these. For an explanation of Gallium3D see
         <ulink url="https://en.wikipedia.org/wiki/Gallium3D"/>.
 @z
 %        これ以降の手順は <application>elfutils</application> と <application>LLVM</application> がインストールされていることを前提とします。
@@ -259,31 +261,17 @@
 @z
 
 @x
-      If you have applied the xdemos patch, build the demo programs by
-      running the following command:
+      If you built the tests (see 'Command Explanations'), to run them issue:
+      <command>ninja test</command>.
 @y
-      xdemos パッチを適用した場合は、以下のコマンドを実行してデモプログラムをビルドします。
-@z
-
-@x
-      To test the results, issue: <command>make -k check</command>. 
-@y
-      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+      If you built the tests (see 'Command Explanations'), to run them issue:
+      <command>ninja test</command>.
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      If you have built the demo programs, install them by running the
-      following command as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      デモプログラムをビルドした場合は、<systemitem
-      class="username">root</systemitem> ユーザーとなって以下を実行することでそれらをインストールします。
 @z
 
 @x
@@ -302,92 +290,68 @@
 @z
 
 @x
-      <parameter>CFLAGS="-O2" CXXFLAGS="-O2"</parameter>: By default,
-      <application>Autoconf</application> sets CFLAGS and CXXFLAGS to
-      "-g -O2". That results in binaries and libraries being built with
-      debugging symbols which make them bigger. Override the default
-      flags to omit the -g compiler flag so the final libraries are smaller.
+      <parameter>-Dbuildtype=release</parameter>: This switch ensures a
+      fully-optimized build, and disables debug assertions which will
+      severely slow down the libraries in certain use-cases. Without this
+      switch, build sizes can span into the 2GB range.
 @y
-      <parameter>CFLAGS="-O2" CXXFLAGS="-O2"</parameter>:
-      デフォルトにおいて <application>Autoconf</application> は CFLAGS および CXXFLAGS を "-g -O2" に設定します。
-      これに従うと、実行モジュールやライブラリにはデバッグシンボルが含まれてビルドされ、それはファイルサイズを大きくします。
-      そこでこのデフォルトフラグを上書きして、コンパイラーフラグ -g を取り除き、ファイルサイズを小さくします。
+      <parameter>-Dbuildtype=release</parameter>: This switch ensures a
+      fully-optimized build, and disables debug assertions which will
+      severely slow down the libraries in certain use-cases. Without this
+      switch, build sizes can span into the 2GB range.
 @z
 
 @x
-      <parameter>--enable-texture-float</parameter>: This switch enables
-      floating-point textures and render buffers. Please consult
-      <filename>docs/patents.txt</filename> to see if there are
-      any legal issues if you use this feature.
+      <parameter>-Ddri-drivers="..."</parameter>: This parameter
+      controls which (non-gallium) dri drivers should be built.
 @y
-      <parameter>--enable-texture-float</parameter>:
-      本スイッチは浮動小数点によるテクスチャーとレンダーバッファーを有効にします。
-      本機能を利用する際の法的な問題に関しては <filename>docs/patents.txt</filename> を参照してください。
-@z
-
-%@x
-%      <option>--enable-gles1</option>: This switch enables support for
-%      OpenGL ES 1.x API.
-%@y
-%      <option>--enable-gles1</option>:
-%      本スイッチは OpenGL ES 1.x API へのサポートを有効にします。
-%@z
-
-%@x
-%      <option>--enable-gles2</option>: This switch enables support for
-%      OpenGL ES 2.x API.
-%@y
-%      <option>--enable-gles2</option>:
-%      本スイッチは OpenGL ES 2.x API へのサポートを有効にします。
-%@z
-
-%@x
-%      <option>--enable-openvg</option>: This switch enables support for
-%      OpenVG API.
-%@y
-%      <option>--enable-openvg</option>:
-%      本スイッチは OpenVG API へのサポートを有効にします。
-%@z
-
-%@x
-%      <option>--enable-osmesa</option>: This switch enables building of
-%      the <filename class="libraryfile">libOSMesa</filename> library.
-%@y
-%      <option>--enable-osmesa</option>:
-%      本スイッチは <filename class="libraryfile">libOSMesa</filename> ライブラリをビルドすることを指示します。
-%@z
-
-@x
-      <parameter>--enable-xa</parameter>: This switch enables building the
-      XA X Acceleration API (Required for VMware 3D Driver).
-@y
-      <parameter>--enable-xa</parameter>:
-      本スイッチは XA X Acceleration API ライブラリ (VMware 3D ドライバーに必要) をビルドすることを指示します。
+      <parameter>-Ddri-drivers="..."</parameter>: This parameter
+      controls which (non-gallium) dri drivers should be built.
 @z
 
 @x
-      <parameter>--enable-gbm</parameter>: This switch enables building the
-      <application>Mesa</application> Graphics Buffer Manager library.
+      <parameter>-Dgallium-drivers="..."</parameter>: This parameter
+      controls which Gallium3D drivers should be built.
 @y
-      <parameter>--enable-gbm</parameter>:
-      本スイッチは <application>Mesa</application> グラフィックバッファーマネージャーライブラリをビルドすることを指示します。
+      <parameter>-Dgallium-drivers="..."</parameter>: This parameter
+      controls which Gallium3D drivers should be built.
 @z
 
-%@x
-%      <option>--enable-gallium-egl</option>: This switch enables optional
-%      EGL state tracker for Gallium.
-%@y
-%      <option>--enable-gallium-egl</option>:
-%      本スイッチは Gallium に対する EGL ステートトラッカーを有効にします。
-%@z
+@x
+      <option>-Dgallium-nine=true</option>: Setting this option to true will
+      provide support for (MS Windows) games designed for DX9.
+@y
+      <option>-Dgallium-nine=true</option>: Setting this option to true will
+      provide support for (MS Windows) games designed for DX9.
+@z
 
-%@x
-%      <option>--enable-gallium-gbm</option>: This switch enables optional
-%      GBM state tracker for Gallium.
-%@y
-%      <option>--enable-gallium-gbm</option>:
-%      本スイッチは Gallium に対する GBM ステートトラッカーを有効にします。
-%@z
+@x
+      <parameter>-Dosmesa=gallium</parameter>: This switch enables building
+      the <filename class="libraryfile">libOSMesa</filename> library and
+      provides Gallium3D support in it. It requires the swrast gallium driver.
+@y
+      <parameter>-Dosmesa=gallium</parameter>: This switch enables building
+      the <filename class="libraryfile">libOSMesa</filename> library and
+      provides Gallium3D support in it. It requires the swrast gallium driver.
+@z
+
+@x
+      <parameter>-Dvalgrind=false</parameter>: This parameter disables
+      the usage of Valgrind during the build process. Remove this parameter
+      if you have Valgrind installed, and wish to check for memory leaks.
+@y
+      <parameter>-Dvalgrind=false</parameter>: This parameter disables
+      the usage of Valgrind during the build process. Remove this parameter
+      if you have Valgrind installed, and wish to check for memory leaks.
+@z
+
+@x
+      <option>-Dbuild-tests=true</option>: This option will cause the test code
+      to be enabled.
+@y
+      <option>-Dbuild-tests=true</option>: This option will cause the test code
+      to be enabled.
+@z
 
 @x
     <title>Contents</title>
@@ -410,25 +374,51 @@
           glxgears and glxinfo
         </seg>
         <seg>
+          <!-- Begin DRI drivers : this is the full set from auto -->
+          d3dadapter9.so, <!-- For Windows games. This is DirectX's Direct3D -->
+          i915_dri.so,
+          i965_dri.so,
+          kms_swrast_dri.so,
+          nouveau_dri.so,
+          nouveau_drv_video.so,
+          nouveau_vieux_dri.so,
+          r200_dri.so,
+          r300_dri.so,
+          r600_dri.so,
+          r600_drv_video.so,
+          radeon_dri.so,
+          radeonsi_dri.so,
+          radeonsi_drv_video.so,
+          swrast_dri.so,
+          virtio_gpu_dri.so,
+          vmwgfx_dri.so
+          <!-- End DRI Drivers -->
           libEGL.so,
-          libgbm.so,
-          libglapi.so,
+          libGL.so,
           libGLESv1_CM.so,
           libGLESv2.so,
-          libGL.so,
           libOSMesa.so,
-<!-- Those libraries are associated with the "swr" gallium driver,
-     which has been removed at r17757. Keeping as a comment in case we
-     reintroduce that driver. AVX libs are restored in version 18.0.1 -->
-          libswrAVX.so,
-          libswrAVX2.so,
-          libwayland-egl.so (if built with <application>Wayland</application>)
-          libxatracker.so,
           libXvMCnouveau.so,
-          and libXvMCr600.so
+          libXvMCr600.so,
+          libgbm.so,
+          libglapi.so,
+          <!-- Begin Vulkan drivers -->
+          libvulkan_intel.so,
+          libvulkan_radeon.so,
+          <!-- End Vulkan drivers -->
+          libxatracker.so,
+          <!-- Begin VDPAU drivers -->
+          libvdpau_nouveau.so,
+          libvdpau_r300.so,
+          libvdpau_r600.so, and
+          libvdpau_radeonsi.so
+          <!-- End VDPAU drivers -->
         </seg>
         <seg>
-          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR},lib/{dri,vdpau}}
+          $XORG_PREFIX/{include/{d3dapater,EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{d3d,dri,vdpau}}
+          $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
+          particularly browsers and games)
+          $XORG_PREFIX/share/vulkan/icd.d,
           and
           /usr/share/doc/mesa-&mesa-version; (optional)
         </seg>
@@ -437,26 +427,52 @@
           glxgears, glxinfo
         </seg>
         <seg>
+          <!-- Begin DRI drivers : this is the full set from auto -->
+          d3dadapter9.so, <!-- For Windows games. This is DirectX's Direct3D -->
+          i915_dri.so,
+          i965_dri.so,
+          kms_swrast_dri.so,
+          nouveau_dri.so,
+          nouveau_drv_video.so,
+          nouveau_vieux_dri.so,
+          r200_dri.so,
+          r300_dri.so,
+          r600_dri.so,
+          r600_drv_video.so,
+          radeon_dri.so,
+          radeonsi_dri.so,
+          radeonsi_drv_video.so,
+          swrast_dri.so,
+          virtio_gpu_dri.so,
+          vmwgfx_dri.so
+          <!-- End DRI Drivers -->
           libEGL.so,
-          libgbm.so,
-          libglapi.so,
+          libGL.so,
           libGLESv1_CM.so,
           libGLESv2.so,
-          libGL.so,
           libOSMesa.so,
-<!-- Those libraries are associated with the "swr" gallium driver,
-     which has been removed at r17757. Keeping as a comment in case we
-     reintroduce that driver. AVX libs are restored in version 18.0.1 -->
-          libswrAVX.so,
-          libswrAVX2.so,
-          libwayland-egl.so (if built with <application>Wayland</application>)
-          libxatracker.so,
           libXvMCnouveau.so,
-          libXvMCr600.so
+          libXvMCr600.so,
+          libgbm.so,
+          libglapi.so,
+          <!-- Begin Vulkan drivers -->
+          libvulkan_intel.so,
+          libvulkan_radeon.so,
+          <!-- End Vulkan drivers -->
+          libxatracker.so,
+          <!-- Begin VDPAU drivers -->
+          libvdpau_nouveau.so,
+          libvdpau_r300.so,
+          libvdpau_r600.so,
+          libvdpau_radeonsi.so
+          <!-- End VDPAU drivers -->
         </seg>
         <seg>
-          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR},lib/{dri,vdpau}},
-          /usr/share/doc/mesa-&mesa-version; （任意ビルド）
+          $XORG_PREFIX/{include/{d3dapater,EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{d3d,dri,vdpau}}
+          $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
+          particularly browsers and games)
+          $XORG_PREFIX/share/vulkan/icd.d,
+          /usr/share/doc/mesa-&mesa-version; (optional)
         </seg>
 @z
 

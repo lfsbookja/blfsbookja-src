@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "399 MB (add 458 MB for tests)">
-  <!ENTITY cmake-time          "2.5 SBU (add 4.0 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-buildsize     "391 MB (add 514 MB for tests)">
+  <!ENTITY cmake-time          "2.6 SBU (add 3.3 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "399 MB（テスト実行時は 458 MB）">
-  <!ENTITY cmake-time          "2.5 SBU（テスト実行時は 4.0 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-buildsize     "391 MB（テスト実行時は 514 MB）">
+  <!ENTITY cmake-time          "2.6 SBU（テスト実行時は 3.3 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -119,17 +119,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="qt5"/> (for the Qt-based GUI),
-      <xref linkend="subversion"/> (for testing), and
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
-      (for building documents)
+      <xref linkend="subversion"/> (for testing), 
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (for building documents), and 
+      <ulink url="https://github.com/facebook/zstd">zstd</ulink> (for testing)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
-      <xref linkend="subversion"/> (テスト時),
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
-      (ドキュメント構築時)
+      <xref linkend="subversion"/> (テスト時), 
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (ドキュメント構築時),
+      <ulink url="https://github.com/facebook/zstd">zstd</ulink> (テスト時)
     </para>
 @z
 
@@ -157,12 +157,23 @@
       -j<replaceable>&lt;N&gt;</replaceable> -O
       cmake-&cmake-version;-test.log</command>, where
       <replaceable>&lt;N&gt;</replaceable> is an integer between 1 and the
-      number of system cores.  
+      number of system cores. In case the environment variable 
+      <literal>LANG</literal> is set to a non-blank value and failures 
+      occur, try running the tests without having <literal>LANG</literal> set.
+      The test RunCMake.CommandLineTar is known to fail if the 
+      <ulink url="https://github.com/facebook/zstd">zstd</ulink> 
+      package is not installed.  The LinkStatic test is also known to fail.
 @y
       ビルド結果をテストする場合は <command>bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
       cmake-&cmake-version;-test.log</command> を実行します。
       ここで <replaceable>&lt;N&gt;</replaceable> は 1 からシステムコア数までの値を選んで指定します。
+      In case the environment variable 
+      <literal>LANG</literal> is set to a non-blank value and failures 
+      occur, try running the tests without having <literal>LANG</literal> set.
+      The test RunCMake.CommandLineTar is known to fail if the 
+      <ulink url="https://github.com/facebook/zstd">zstd</ulink> 
+      package is not installed.  The LinkStatic test is also known to fail.
 @z
 @x
      <!-- Please, don't remove this comment, needed if tests start to fail

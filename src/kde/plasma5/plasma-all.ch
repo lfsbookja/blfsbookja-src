@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY plasma5-buildsize     "1.0 GB (336 MB installed)">
-  <!ENTITY plasma5-time          "17 SBU (using parallelism=4)">
+  <!ENTITY plasma5-buildsize     "1.2 GB (294 MB installed)">
+  <!ENTITY plasma5-time          "20 SBU (using parallelism=4)">
 @y
-  <!ENTITY plasma5-buildsize     "1.0 GB (336 MB installed)">
-  <!ENTITY plasma5-time          "17 SBU (using parallelism=4)">
+  <!ENTITY plasma5-buildsize     "1.2 GB (294 MB installed)">
+  <!ENTITY plasma5-time          "20 SBU (using parallelism=4)">
 @z
 
 @x
@@ -103,9 +103,10 @@
     <xref linkend="libxkbcommon"/>,
     <xref linkend="mesa"/> built with <xref linkend="wayland"/>,
     <xref linkend="NetworkManager"/>,
+    <xref linkend="pipewire"/>,
     <xref linkend="pulseaudio"/>,
-    <xref linkend="python2"/>,
     <xref linkend="qca"/>,
+    <xref linkend="sassc"/>,
     <xref linkend="taglib"/>, and
     <xref linkend="xcb-util-cursor"/>
   </para>
@@ -121,9 +122,10 @@
     <xref linkend="libxkbcommon"/>,
     <xref linkend="mesa"/> built with <xref linkend="wayland"/>,
     <xref linkend="NetworkManager"/>,
+    <xref linkend="pipewire"/>,
     <xref linkend="pulseaudio"/>,
-    <xref linkend="python2"/>,
     <xref linkend="qca"/>,
+    <xref linkend="sassc"/>,
     <xref linkend="taglib"/>,
     <xref linkend="xcb-util-cursor"/>
   </para>
@@ -132,6 +134,8 @@
 @x
   <bridgehead renderas="sect4">Recommended</bridgehead>
   <para role="recommended">
+    <xref linkend="fftw"/>,
+    <xref linkend="gsettings-desktop-schemas"/>,
     <xref linkend="libdbusmenu-qt"/>,
     <xref linkend="libcanberra"/>,
     <xref linkend="libinput"/>,
@@ -143,12 +147,14 @@
 @y
   <bridgehead renderas="sect4">Recommended</bridgehead>
   <para role="recommended">
+    <xref linkend="fftw"/>,
+    <xref linkend="gsettings-desktop-schemas"/>,
     <xref linkend="libdbusmenu-qt"/>,
     <xref linkend="libcanberra"/>,
     <xref linkend="libinput"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="lm_sensors"/>,
-    <xref linkend="oxygen-icons5"/>, and
+    <xref linkend="oxygen-icons5"/>,
     <xref linkend="pciutils"/>
   </para>
 @z
@@ -161,12 +167,12 @@
     <xref linkend="xorg-synaptics-driver"/>,
     <ulink url="http://distributions.freedesktop.org/wiki/AppStream">appstream-qt</ulink>, 
     <ulink url="https://www.kdevelop.org/">KDevPlatform</ulink>,
-    <ulink url="http://gpsd.berlios.de">libgps</ulink>,
+    <ulink url="http://www.catb.org/gpsd/libgps.html">libgps</ulink>,
     <ulink url="https://github.com/libhybris/libhybris">libhybris</ulink>,
     <ulink url="http://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
     <ulink url="https://bitbucket.org/godsme/mockcpp">mockcpp</ulink>,
     <ulink url="https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</ulink>,
-    <ulink url="http://qalculate.sourceforge.net">Qalculate</ulink>,
+    <ulink url="http://qalculate.github.io/">Qalculate</ulink>,
     <ulink url="https://launchpad.net/qapt">Qapt</ulink>, 
     <ulink url="https://github.com/osiam/osiam">SCIM</ulink>, and
     <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)
@@ -179,12 +185,12 @@
     <xref linkend="xorg-synaptics-driver"/>,
     <ulink url="http://distributions.freedesktop.org/wiki/AppStream">appstream-qt</ulink>, 
     <ulink url="https://www.kdevelop.org/">KDevPlatform</ulink>,
-    <ulink url="http://gpsd.berlios.de">libgps</ulink>,
+    <ulink url="http://www.catb.org/gpsd/libgps.html">libgps</ulink>,
     <ulink url="https://github.com/libhybris/libhybris">libhybris</ulink>,
     <ulink url="http://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
     <ulink url="https://bitbucket.org/godsme/mockcpp">mockcpp</ulink>,
     <ulink url="https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</ulink>,
-    <ulink url="http://qalculate.sourceforge.net">Qalculate</ulink>,
+    <ulink url="http://qalculate.github.io/">Qalculate</ulink>,
     <ulink url="https://launchpad.net/qapt">Qapt</ulink>, 
     <ulink url="https://github.com/osiam/osiam">SCIM</ulink>,
     <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)

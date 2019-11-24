@@ -78,15 +78,15 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/> or
-      <xref linkend="gtk2"/>,
+      <xref role="nodep" linkend="gtk2"/>,
       <xref linkend="hicolor-icon-theme"/>, and
       <xref linkend="icon-naming-utils"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> または
-      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/> or
+      <xref role="nodep" linkend="gtk2"/>,
       <xref linkend="hicolor-icon-theme"/>,
       <xref linkend="icon-naming-utils"/>
     </para>

@@ -82,12 +82,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="sqlite"/> and
+      <xref linkend="python2"/> (only during build),
+      <xref linkend="sqlite"/>, and
       <xref linkend="telepathy-glib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="python2"/> (ビルド時のみ),
       <xref linkend="sqlite"/>,
       <xref linkend="telepathy-glib"/>
     </para>

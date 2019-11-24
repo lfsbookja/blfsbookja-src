@@ -239,7 +239,6 @@ CHANGE_FILES = \
 	nmap.ch           \
 	traceroute.ch     \
 	whois.ch          \
-	wicd.ch           \
 	wireshark.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

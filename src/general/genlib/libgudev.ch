@@ -91,14 +91,14 @@
     <para role="optional">
       <xref linkend="gobject-introspection"/> (for gir-data, needed for GNOME),
       <xref linkend="gtk-doc"/>, and
-      <ulink url="https://launchpad.net/umockdev">umockdev</ulink>
+      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gobject-introspection"/> (gir-data, GNOME にて必要),
       <xref linkend="gtk-doc"/>,
-      <ulink url="https://launchpad.net/umockdev">umockdev</ulink>
+      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>
     </para>
 @z
 

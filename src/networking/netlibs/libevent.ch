@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libevent-buildsize     "18 MB (add 1 MB for the tests and 6 MB for the API docs)">
-  <!ENTITY libevent-time          "0.3 SBU (add 10 SBU for the tests)">
+  <!ENTITY libevent-buildsize     "20 MB (add 4 MB for tests and 4 MB for API docs)">
+  <!ENTITY libevent-time          "0.3 SBU (add 11 SBU for tests)">
 @y
-  <!ENTITY libevent-buildsize     "18 MB (テスト実施時さらには 1 MB、APIドキュメント生成時はさらに 6 MB)">
-  <!ENTITY libevent-time          "0.3 SBU (テスト実施時はさらに 10 SBU)">
+  <!ENTITY libevent-buildsize     "20 MB (テスト実施時さらには 4 MB、APIドキュメント生成時はさらに 4 MB)">
+  <!ENTITY libevent-time          "0.3 SBU (テスト実施時はさらに 11 SBU)">
 @z
 
 @x
@@ -134,9 +134,9 @@
 
 @x
       If you have <xref linkend="doxygen"/> installed and wish to build API
-      documentation, issue <command>doxygen Doxyfile</command>.
+      documentation, issue :
 @y
-      <xref linkend="doxygen"/> をインストールしていて API ドキュメントを生成したい場合は <command>doxygen Doxyfile</command> を実行します。
+      <xref linkend="doxygen"/> をインストールしていて API ドキュメントを生成したい場合は以下を実行します。
 @z
 
 @x

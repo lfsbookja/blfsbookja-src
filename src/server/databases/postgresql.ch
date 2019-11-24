@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "224 MB (add 32 MB for tests)">
-  <!ENTITY postgresql-time          "0.7 SBU (with parallelism=4, add 0.1 SBU for tests)">
+  <!ENTITY postgresql-buildsize     "184 MB (add 36 MB for tests)">
+  <!ENTITY postgresql-time          "1.0 SBU (with parallelism=4, add 0.1 SBU for tests)">
 @y
-  <!ENTITY postgresql-buildsize     "244 MB （テスト実施時はさらに 32 MB）">
-  <!ENTITY postgresql-time          "0.7 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
+  <!ENTITY postgresql-buildsize     "184 MB （テスト実施時はさらに 36 MB）">
+  <!ENTITY postgresql-time          "1.0 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
 @z
 
 @x
@@ -96,7 +96,7 @@
       <xref linkend="openldap"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/> and
-      <ulink url="http://developer.apple.com/networking/bonjour/">Bonjour</ulink>
+      <ulink url="https://developer.apple.com/bonjour/">Bonjour</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -107,24 +107,28 @@
       <xref linkend="libxslt"/>,
       <xref linkend="openldap"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="mitkrb"/> and
-      <ulink url="http://developer.apple.com/networking/bonjour/">Bonjour</ulink>
+      <xref linkend="mitkrb"/>,
+      <ulink url="https://developer.apple.com/bonjour/">Bonjour</ulink>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (To Regenerate Documentation)</bridgehead>
     <para role="optional">
+      <xref linkend="fop"/>,
       <xref linkend="sgml-dtd"/>,
       <xref linkend="docbook-dsssl"/>,
+      <xref linkend="docbook-utils"/>,
       <xref linkend="openjade"/>, and
       <xref linkend="perl-sgmlspm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (ドキュメント再生成時)</bridgehead>
     <para role="optional">
+      <xref linkend="fop"/>,
       <xref linkend="sgml-dtd"/>,
       <xref linkend="docbook-dsssl"/>,
+      <xref linkend="docbook-utils"/>,
       <xref linkend="openjade"/>,
       <xref linkend="perl-sgmlspm"/>
     </para>

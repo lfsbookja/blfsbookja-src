@@ -21,14 +21,14 @@
 
 @x
       <application>NetworkManager</application> is a set of co-operative
-      tools that make networking simple and straightforward. Whether WiFi,
+      tools that make networking simple and straightforward. Whether you use WiFi,
       wired, 3G, or Bluetooth, NetworkManager allows you to quickly move from
       one network to another: Once a network has been configured and joined
       once, it can be detected and re-joined automatically the next time it's
       available.
 @y
       <application>NetworkManager</application> is a set of co-operative
-      tools that make networking simple and straightforward. Whether WiFi,
+      tools that make networking simple and straightforward. Whether you use WiFi,
       wired, 3G, or Bluetooth, NetworkManager allows you to quickly move from
       one network to another: Once a network has been configured and joined
       once, it can be detected and re-joined automatically the next time it's
@@ -86,33 +86,31 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="libndp"/>,
-      <xref linkend="libnl"/>, and
-      <xref linkend="nss"/>
+      <xref linkend="dbus-glib"/> and
+      <xref linkend="libndp"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="libndp"/>,
-      <xref linkend="libnl"/>,
-      <xref linkend="nss"/>
+      <xref linkend="libndp"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <phrase revision="sysv"><xref linkend="consolekit"/>,</phrase>
       <xref linkend="curl"/>,
       <xref linkend="dhcpcd"/> or
-      <xref linkend="dhcp"/> (client only),
+      <xref role="nodep" linkend="dhcp"/> (client only),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
+      <xref linkend="jansson"/>,
       <xref linkend="newt"/> (for <command>nmtui</command>),
+      <xref linkend="nss"/>,
       <xref linkend="polkit"/>,
       <xref linkend="pygobject3"/>,
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
       <xref linkend="upower"/>,
       <xref linkend="vala"/>, and
@@ -121,19 +119,21 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <phrase revision="sysv"><xref linkend="consolekit"/>,</phrase>
       <xref linkend="curl"/>,
       <xref linkend="dhcpcd"/> または
-      <xref linkend="dhcp"/> (クライアントのみ),
+      <xref role="nodep" linkend="dhcp"/> (クライアントのみ),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
+      <xref linkend="jansson"/>,
       <xref linkend="newt"/> (<command>nmtui</command> のため),
+      <xref linkend="nss"/>,
       <xref linkend="polkit"/>,
       <xref linkend="pygobject3"/>,
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
       <xref linkend="upower"/>,
       <xref linkend="vala"/>,
-      <xref linkend="wpa_supplicant"/> (D-Bus サポートのビルド済み),
+      <xref linkend="wpa_supplicant"/> (D-Bus サポートのビルド済み)
     </para>
 @z
 
@@ -141,35 +141,35 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="bluez"/>,
+      <xref linkend="dbus-python"/> (for the test suite),
+      <xref linkend="gnutls"/> (used if <xref linkend="nss"/> is not found),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="jansson"/>,
       <xref linkend="libpsl"/>,
       <xref linkend="qt5"/> (for examples),
       <xref linkend="ModemManager"/>,
       <xref linkend="valgrind"/>,
       <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
-<!--      <ulink url="http://www.digip.org/jansson/">Jansson</ulink>, -->
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
       <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
-      <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
+      <ulink url="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="bluez"/>,
+      <xref linkend="dbus-python"/> (for the test suite),
+      <xref linkend="gnutls"/> (used if <xref linkend="nss"/> is not found),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="jansson"/>,
       <xref linkend="libpsl"/>,
       <xref linkend="qt5"/> (for examples),
       <xref linkend="ModemManager"/>,
       <xref linkend="valgrind"/>,
       <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
-<!--      <ulink url="http://www.digip.org/jansson/">Jansson</ulink>, -->
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
       <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>,
-      <ulink url="https://www.roaringpenguin.com/products/pppoe">RP-PPPoE</ulink>
+      <ulink url="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</ulink>
     </para>
 @z
 
@@ -201,11 +201,13 @@
 @z
 
 @x
-      An already active graphical session with bus address is necessary to run
-      the tests. To test the results, issue: <command>make check</command>.
+      An already active <phrase revision="sysv">graphical</phrase> session
+      with bus address is necessary to run the tests. To test the results,
+      issue: <command>ninja test</command>.
 @y
-      An already active graphical session with bus address is necessary to run
-      the tests. To test the results, issue: <command>make check</command>.
+      An already active <phrase revision="sysv">graphical</phrase> session
+      with bus address is necessary to run the tests. To test the results,
+      issue: <command>ninja test</command>.
 @z
 
 @x
@@ -229,77 +231,111 @@
 @z
 
 @x
-      <parameter>--with-nmtui</parameter>: This parameter enables building
-      <command>nmtui</command>.
+      <option>-Ddocs=true</option>: Use this switch to enable building
+      man pages and documentation if <xref linkend="gtk-doc"/> is installed.
 @y
-      <parameter>--with-nmtui</parameter>: This parameter enables building
-      <command>nmtui</command>.
+      <option>-Ddocs=true</option>: Use this switch to enable building
+      man pages and documentation if <xref linkend="gtk-doc"/> is installed.
 @z
 
-@x revision="systemd"
-      <parameter>--with-session-tracking=systemd</parameter>: This switch
-      is used to set <command>systemd-logind</command> as the default
-      program for session tracking.
+@x
+      <parameter>-Dnmtui=true</parameter>: This parameter enables building
+      <command>nmtui</command>.
 @y
-      <parameter>--with-session-tracking=systemd</parameter>: This switch
-      is used to set <command>systemd-logind</command> as the default
-      program for session tracking.
+      <parameter>-Dnmtui=true</parameter>: This parameter enables building
+      <command>nmtui</command>.
 @z
 
 @x revision="sysv"
-      <parameter>--with-systemdsystemunitdir=no</parameter>: systemd is not
+      <parameter>-Dsystemdsystemunitdir=no</parameter> and
+      <parameter>-Dsystemd_journal=false</parameter>: systemd is not
       used for sysv init systems.
 @y
-      <parameter>--with-systemdsystemunitdir=no</parameter>: systemd is not
+      <parameter>-Dsystemdsystemunitdir=no</parameter> and
+      <parameter>-Dsystemd_journal=false</parameter>: systemd is not
       used for sysv init systems.
+@z
+
+@x
+      <parameter>-Djson_validation=false</parameter>,
+      <parameter>-Dlibpsl=false</parameter>, and
+      <parameter>-Dovs=false</parameter>: These switches disable building with the
+      respective libraries. Remove if you have the needed libraries installed.
+@y
+      <parameter>-Djson_validation=false</parameter>,
+      <parameter>-Dlibpsl=false</parameter>, and
+      <parameter>-Dovs=false</parameter>: These switches disable building with the
+      respective libraries. Remove if you have the needed libraries installed.
+@z
+
+@x
+      <parameter>-Dmodem_manager=false</parameter>: This switch is requried if
+      <application>ModemManager</application> is not installed. Omit if you
+      have built <application>ModemManager</application>.
+@y
+      <parameter>-Dmodem_manager=false</parameter>: This switch is requried if
+      <application>ModemManager</application> is not installed. Omit if you
+      have built <application>ModemManager</application>.
+@z
+
+@x revision="sysv"
+      <parameter>-Dsession_tracking=elogind</parameter>: This switch
+      is used to set <command>elogind</command> as the default
+      program for session tracking.
+@y
+      <parameter>-Dsession_tracking=elogind</parameter>: This switch
+      is used to set <command>elogind</command> as the default
+      program for session tracking.
 @z
 
 @x revision="systemd"
-      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
+      <parameter>-Dsession_tracking=systemd</parameter>: This switch
+      is used to set <command>systemd-logind</command> as the default
+      program for session tracking.
+@y
+      <parameter>-Dsession_tracking=systemd</parameter>: This switch
+      is used to set <command>systemd-logind</command> as the default
+      program for session tracking.
+@z
+
+@x revision="systemd"
+      <parameter>-Dsystemdsystemunitdir=/lib/systemd/system</parameter>:
       This switch is used to set the correct installation directory for
       systemd units.
 @y
-      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
+      <parameter>-Dsystemdsystemunitdir=/lib/systemd/system</parameter>:
       This switch is used to set the correct installation directory for
       systemd units.
 @z
 
 @x
-      <parameter>--disable-ppp</parameter>: This parameter disables
+      <parameter>-Dppp=false</parameter>: This parameter disables
       <application>PPP</application> support in
       <application>NetworkManager</application>.
 @y
-      <parameter>--disable-ppp</parameter>: This parameter disables
+      <parameter>-Dppp=false</parameter>: This parameter disables
       <application>PPP</application> support in
       <application>NetworkManager</application>.
 @z
 
 @x
-      <parameter>--disable-json-validation</parameter>: This parameter allows
-      building without <application>Jansson</application>, which is needed
-      for <quote>team</quote> configuration validation (team is one way
-      of bonding network interfaces for increased throughput).
+      <parameter>-Dlibaudit=no</parameter> and
+      <parameter>-Dselinux=false</parameter>: libaudit and SELinux are not used
+      in BLFS.
 @y
-      <parameter>--disable-json-validation</parameter>: This parameter allows
-      building without <application>Jansson</application>, which is needed
-      for <quote>team</quote> configuration validation (team is one way
-      of bonding network interfaces for increased throughput).
+      <parameter>-Dlibaudit=no</parameter> and
+      <parameter>-Dselinux=false</parameter>: libaudit and SELinux are not used
+      in BLFS.
 @z
 
 @x
-      <option>--enable-gtk-doc</option>: Use this switch if you have installed
-      <xref linkend="gtk-doc"/> and wish to build the API manuals.
+      <parameter>-Dqt=false</parameter>: disables the
+      <application>QT</application> examples. Omit if you have
+      <application>QT</application> available and wish to install the examples.
 @y
-      <option>--enable-gtk-doc</option>: Use this switch if you have installed
-      <xref linkend="gtk-doc"/> and wish to build the API manuals.
-@z
-
-@x
-      <option>--without-iptables</option>: Use this switch if you don't have
-      <application>Iptables</application> installed.
-@y
-      <option>--without-iptables</option>: Use this switch if you don't have
-      <application>Iptables</application> installed.
+      <parameter>-Dqt=false</parameter>: disables the
+      <application>QT</application> examples. Omit if you have
+      <application>QT</application> available and wish to install the examples.
 @z
 
 @x
@@ -335,15 +371,53 @@
 @z
 
 @x
-        You can add <option>dns=none</option> to suppress changes to
-         <filename>/etc/resolv.conf</filename>. See
-         <command>man 5 NetworkManager.conf</command>
-         for any additional options.
+        This file should not be modified directly by users of the system.
+        Instead, system specific changes should be made using configuration
+        files in the
+        <filename class="directory">/etc/NetworkManager/conf.d</filename>
+        direcotry.
 @y
-        You can add <option>dns=none</option> to suppress changes to
-         <filename>/etc/resolv.conf</filename>. See
-         <command>man 5 NetworkManager.conf</command>
-         for any additional options.
+        This file should not be modified directly by users of the system.
+        Instead, system specific changes should be made using configuration
+        files in the
+        <filename class="directory">/etc/NetworkManager/conf.d</filename>
+        direcotry.
+@z
+
+@x
+        To allow polkit to manage authorizations, add the following
+        configuration file:
+@y
+        To allow polkit to manage authorizations, add the following
+        configuration file:
+@z
+
+@x
+        To use something other than the built-in dhcp client (recommended if
+        using only <command>nmcli</command>), use the following configuration
+       (valid values are dhclient, dhcpcd, and internal):
+@y
+        To use something other than the built-in dhcp client (recommended if
+        using only <command>nmcli</command>), use the following configuration
+       (valid values are dhclient, dhcpcd, and internal):
+@z
+
+@x
+        To prevent <application>NetworkManager</application> from updating the
+        <filename>/etc/resolv.conf</filename> file, add the following
+        configuration file:
+@y
+        To prevent <application>NetworkManager</application> from updating the
+        <filename>/etc/resolv.conf</filename> file, add the following
+        configuration file:
+@z
+
+@x
+        For additional configuation options, see
+        <command>man 5 NetworkManager.conf</command>.
+@y
+        For additional configuation options, see
+        <command>man 5 NetworkManager.conf</command>.
 @z
 
 @x
@@ -367,7 +441,7 @@
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
       <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x revision="sysv"
@@ -414,34 +488,35 @@
           nmtui-connect, nmtui-edit, and nmtui-hostname
         </seg>
         <seg>
-          libnm.so and several modules under /usr/lib/NetworkManager
+          libnm.so
+          and several modules under /usr/lib/NetworkManager
         </seg>
         <seg>
           /etc/NetworkManager,
-          /usr/include/libnm,
+          /usr/include/NetworkManager,
           /usr/lib/NetworkManager,
           /usr/share/doc/NetworkManager-&NetworkManager-version;,
-	  /usr/share/gtk-doc/html/{libnm,NetworkManager}
-	  (if the documentation is built),
+          /usr/share/gtk-doc/html/{libnm,NetworkManager}
+          (if the documentation is built),
           and
           /var/lib/NetworkManager
         </seg>
 @y
         <seg>
           NetworkManager, nmcli, nm-online, nmtui, and, symlinked to nmtui:
-          nmtui-connect, nmtui-edit, and nmtui-hostname
+          nmtui-connect, nmtui-edit, nmtui-hostname
         </seg>
         <seg>
-          libnm.so and several modules under /usr/lib/NetworkManager
+          libnm.so,
+          /usr/lib/NetworkManager 配下の数種のモジュール
         </seg>
         <seg>
           /etc/NetworkManager,
-          /usr/include/libnm,
+          /usr/include/NetworkManager,
           /usr/lib/NetworkManager,
           /usr/share/doc/NetworkManager-&NetworkManager-version;,
-	  /usr/share/gtk-doc/html/{libnm,NetworkManager}
-	  (if the documentation is built),
-          and
+          /usr/share/gtk-doc/html/{libnm,NetworkManager}
+          (if the documentation is built),
           /var/lib/NetworkManager
         </seg>
 @z

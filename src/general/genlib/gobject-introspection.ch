@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gobject-introspection-buildsize     "38 MB (add 7 MB for tests)">
-  <!ENTITY gobject-introspection-time          "0.3 SBU (add 0.3 SBU for tests)">
+  <!ENTITY gobject-introspection-buildsize     "40 MB (with tests)">
+  <!ENTITY gobject-introspection-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gobject-introspection-buildsize     "38 MB (テスト実施時はさらに 7 MB)">
-  <!ENTITY gobject-introspection-time          "0.3 SBU (テスト実施時はさらに 0.3 SBU)">
+  <!ENTITY gobject-introspection-buildsize     "40 MB (テスト込み)">
+  <!ENTITY gobject-introspection-time          "0.2 SBU (parallelism=4; テスト込み)">
 @z
 
 @x
@@ -90,44 +90,30 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="which"/>
-<!-- If - -with-python is used, configure runs "which $PYTHON", where PYTHON
-     is set to the argument of the switch. Somewhat silly because the presence
-     of which is not tested... -->
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="which"/>
-<!-- If - -with-python is used, configure runs "which $PYTHON", where PYTHON
-     is set to the argument of the switch. Somewhat silly because the presence
-     of which is not tested... -->
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (required for the tests),
+      <xref linkend="gjs"/> (to satisfy one test),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="Mako"/>,
-      <xref linkend="python2"/>, and
-      <ulink url="https://pypi.org/project/Markdown/">Markdown</ulink>
+      <xref linkend="Mako"/>, and
+      <ulink url="https://pypi.org/project/Markdown/">Markdown</ulink> (to satisfy one test)
       <!-- There was talk of this being required in the release notes. Can someone
-      who doesn't have this installed verify? -->
+      who doesn't have this installed verify? 
+      It is only needed for one test.  bdubbs March 3, 2019
+      -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cairo"/> (テスト実施時に必要),
+      <xref linkend="gjs"/> (1 つのテストにおいて必要),
       <xref linkend="gtk-doc"/>,
       <xref linkend="Mako"/>,
-      <xref linkend="python2"/>,
-      <ulink url="https://pypi.org/project/Markdown/">Markdown</ulink>
+      <ulink url="https://pypi.org/project/Markdown/">Markdown</ulink> (1 つのテストにおいて必要)
       <!-- There was talk of this being required in the release notes. Can someone
-      who doesn't have this installed verify? -->
+      who doesn't have this installed verify? 
+      It is only needed for one test.  bdubbs March 3, 2019
+      -->
     </para>
 @z
 
@@ -151,9 +137,12 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test -k0</command>.
+      One test (test_docwriter) fails if the optional Markdown module is 
+      not installed.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test -k0</command> を実行します。
+      任意ビルドである Markdown モジュールをインストールしていない場合は、テストが 1 つ (test_docwriter) 失敗します。
 @z
 
 @x
@@ -191,7 +180,7 @@
         </seg>
         <seg>
           libgirepository-1.0.so and
-          /usr/lib/gobject-introspection/giscanner/_giscanner.so
+          _giscanner.cpython-37m-x86_64-linux-gnu.so
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,
@@ -207,7 +196,7 @@
         </seg>
         <seg>
           libgirepository-1.0.so,
-          /usr/lib/gobject-introspection/giscanner/_giscanner.so
+          _giscanner.cpython-37m-x86_64-linux-gnu.so
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,

@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libgpg-error-buildsize     "9.6 MB (with tests)">
+  <!ENTITY libgpg-error-buildsize     "9.8 MB (with tests)">
   <!ENTITY libgpg-error-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libgpg-error-buildsize     "9.6 MB（テスト込み）">
+  <!ENTITY libgpg-error-buildsize     "9.8 MB（テスト込み）">
   <!ENTITY libgpg-error-time          "0.1 SBU（テスト込み）">
 @z
 

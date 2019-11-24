@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY wget-buildsize     "27 MB (add 8 MB for tests)">
-  <!ENTITY wget-time          "0.3 SBU (add 0.2 SBU for tests)">
+  <!ENTITY wget-buildsize     "60 MB (with tests)">
+  <!ENTITY wget-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY wget-buildsize     "27 MB （テスト実施時はさらに 8 MB）">
-  <!ENTITY wget-time          "0.3 SBU （テスト実施時はさらに 0.2 SBU）">
+  <!ENTITY wget-buildsize     "60 MB （テスト込み）">
+  <!ENTITY wget-time          "0.4 SBU （テスト込み）">
 @z
 
 @x
@@ -98,26 +98,22 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gnutls"/>,
-      <xref linkend="gpgme"/>,
       <xref linkend="perl-http-daemon"/> (for the test suite),
       <xref linkend="perl-io-socket-ssl"/> (for the test suite),
       <xref linkend="libidn2"/>,
       <xref linkend="libpsl"/>,
-      <xref linkend="pcre"/>,
-      <xref linkend="python2"/> (built with ssl; for the test suite), and
+      <xref linkend="pcre"/> or <xref linkend="pcre2"/>, and
       <xref linkend="valgrind"/> (for the test suite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gnutls"/>,
-      <xref linkend="gpgme"/>,
       <xref linkend="perl-http-daemon"/> (テストスイートのため),
       <xref linkend="perl-io-socket-ssl"/> (テストスイートのため),
       <xref linkend="libidn2"/>,
       <xref linkend="libpsl"/>,
-      <xref linkend="pcre"/>,
-      <xref linkend="python2"/> (ssl を含めたビルド; テストスイートのため),
+      <xref linkend="pcre"/> または <xref linkend="pcre2"/>,
       <xref linkend="valgrind"/> (テストスイートのため)
     </para>
 @z
@@ -141,11 +137,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Nine tests
-      fail if python2 was not built with SSL support.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      <application>valgrind</application> が利用可能である場合、9 つのテストが失敗します。
 @z
 
 @x

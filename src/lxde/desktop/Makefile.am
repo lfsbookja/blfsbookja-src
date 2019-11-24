@@ -10,6 +10,7 @@ CHANGE_FILES = \
 	desktop.ch         \
 	libfm.ch           \
 	libfm-extra.ch     \
+	libwnck2.ch        \
 	lxappearance.ch    \
 	lxde-common.ch     \
 	lxmenu-data.ch     \

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY nettle-buildsize     "68 MB (with tests)">
-  <!ENTITY nettle-time          "0.3 SBU (with tests)">
+  <!ENTITY nettle-buildsize     "73 MB (with tests)">
+  <!ENTITY nettle-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY nettle-buildsize     "68 MB (テスト込み)">
-  <!ENTITY nettle-time          "0.3 SBU (テスト込み)">
+  <!ENTITY nettle-buildsize     "73 MB (テスト込み)">
+  <!ENTITY nettle-time          "0.4 SBU (テスト込み)">
 @z
 
 @x

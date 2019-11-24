@@ -84,6 +84,7 @@
       <xref linkend="gtk3"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="keyutils"/>,
       <xref linkend="libcanberra"/>, 
       <xref linkend="libdaemon"/>, and
       <xref linkend="linux-pam"/>
@@ -95,6 +96,7 @@
       <xref linkend="gtk3"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="keyutils"/>,
       <xref linkend="libcanberra"/>, 
       <xref linkend="libdaemon"/>,
       <xref linkend="linux-pam"/>
@@ -106,14 +108,16 @@
     <para role="required">
       <xref role="runtime" linkend="gnome-session"/>,
       <xref role="runtime" linkend="gnome-shell"/>, and
-      <xref role="runtime" linkend="systemd"/>
+      <phrase revision="sysv"><xref role="runtime" linkend="elogind"/></phrase>
+      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/></phrase>
     </para>
 @y
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="required">
       <xref role="runtime" linkend="gnome-session"/>,
-      <xref role="runtime" linkend="gnome-shell"/>,
-      <xref role="runtime" linkend="systemd"/>
+      <xref role="runtime" linkend="gnome-shell"/>, and
+      <phrase revision="sysv"><xref role="runtime" linkend="elogind"/></phrase>
+      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/></phrase>
     </para>
 @z
 
@@ -149,10 +153,9 @@
 @z
 
 @x
-      If you have installed <xref linkend="check"/> and you wish to run
-      the testsuite, issue: <command>make check</command>.
+      This package does not come with a usable test suite.
 @y
-      <xref linkend="check"/> をインストールしていてテストスイートを実行する場合は、<command>make check</command> を実行します。
+      このパッケージに利用可能なテストスイートはありません。
 @z
 
 @x
@@ -204,9 +207,25 @@
 @z
 
 @x
-      <title>Systemd Units</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>Systemd Units</title>
+      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Unit</phrase></title>
+@z
+
+@x
+        To start the <command>gdm</command> automatically when the system
+        is booted, install the <filename>/etc/rc.d/init.d/gdm</filename>
+        init script included in the <xref linkend="bootscripts"/> package and
+        set the default runlevel to 5 (graphical login) as the
+        <systemitem class="username">root</systemitem> user:
+@y
+        To start the <command>gdm</command> automatically when the system
+        is booted, install the <filename>/etc/rc.d/init.d/gdm</filename>
+        init script included in the <xref linkend="bootscripts"/> package and
+        set the default runlevel to 5 (graphical login) as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -217,6 +236,24 @@
         To start the <command>gdm</command> daemon at boot, enable
         the previously installed systemd unit by running the following command
         as the <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        In order to permanently set the default runlevel to 5, starting the
+        <command>gdm</command> greeter screen automatically, you can modify
+        <filename>/etc/inittab</filename>. As the  <systemitem
+        class="username">root</systemitem> user:
+@y
+        In order to permanently set the default runlevel to 5, starting the
+        <command>gdm</command> greeter screen automatically, you can modify
+        <filename>/etc/inittab</filename>. As the  <systemitem
+        class="username">root</systemitem> user:
+@z
+
+@x
+          You should also disable default elogind power management:
+@y
+          You should also disable default elogind power management:
 @z
 
 @x

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY ruby-buildsize     "364 MB, with checks (add 206 MB for C API docs)">
-  <!ENTITY ruby-time          "1.1 SBU (using parallelism=4; add 3.4 SBU for tests; add 0.4 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "423 MB (add 139 MB for C API docs)">
+  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 3.8 SBU for tests; add 0.5 SBU for C API docs)">
 @y
-  <!ENTITY ruby-buildsize     "364 MB, with checks (add 206 MB for C API docs)">
-  <!ENTITY ruby-time          "1.1 SBU (using parallelism=4; add 3.4 SBU for tests; add 0.4 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "423 MB (add 139 MB for C API docs)">
+  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 3.8 SBU for tests; add 0.5 SBU for C API docs)">
 @z
 
 @x
@@ -90,9 +90,10 @@
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
+      <xref linkend="libyaml"/>,
       <xref linkend="tk"/>,
       <xref linkend="valgrind"/>, and
-      <xref linkend="yaml"/>
+      <ulink url="http://dtrace.org/blogs/about/">DTrace</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -100,9 +101,10 @@
       <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
+      <xref linkend="libyaml"/>,
       <xref linkend="tk"/>,
       <xref linkend="valgrind"/>,
-      <xref linkend="yaml"/>
+      <ulink url="http://dtrace.org/blogs/about/">DTrace</ulink>
     </para>
 @z
 
@@ -134,20 +136,18 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. There 
-      are 17388 tests.  A few (about 11) fail and one test may hang, but
-      the test process can continue with ctrl-C.  If the tests are 
-      run in a directory that has a world writable component (e.g. /tmp)
-      then several additional tests fail and the tests terminate after
-      25 failures.
+      To test the results, issue: <command>make check</command>. There are
+      over 20,000 tests. Some tests (up to 0.5 percent) may fail.
+      If the tests are run in a directory
+      that has a world writable component (e.g. /tmp) then several additional
+      tests may fail. Several jit (just-in-time) tests are known to fail.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      There 
-      are 17388 tests.  A few (about 11) fail and one test may hang, but
-      the test process can continue with ctrl-C.  If the tests are 
-      run in a directory that has a world writable component (e.g. /tmp)
-      then several additional tests fail and the tests terminate after
-      25 failures.
+      There are
+      over 20,000 tests. Some tests (up to 0.5 percent) may fail.
+      If the tests are run in a directory
+      that has a world writable component (e.g. /tmp) then several additional
+      tests may fail. Several jit (just-in-time) tests are known to fail.
 @z
 
 @x
@@ -212,10 +212,10 @@
 
 @x
         <seg>
-          erb, gem, irb, rake, rdoc, ri, and ruby
+          bundle, bundler, erb, gem, irb, rake, rdoc, ri, and ruby
         </seg>
         <seg>
-          libruby.so and libruby-static.a
+          libruby.so
         </seg>
         <seg>
           /usr/include/ruby-&ruby-minor-version;.0
@@ -225,10 +225,10 @@
         </seg>
 @y
         <seg>
-          erb, gem, irb, rake, rdoc, ri, ruby
+          bundle, bundler, erb, gem, irb, rake, rdoc, ri, ruby
         </seg>
         <seg>
-          libruby.so, libruby-static.a
+          libruby.so
         </seg>
         <seg>
           /usr/include/ruby-&ruby-minor-version;.0

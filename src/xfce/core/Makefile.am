@@ -10,8 +10,6 @@ CHANGE_FILES = \
 	core.ch \
 	exo.ch \
 	garcon.ch \
-	gtk-xfce-engine.ch \
-	libwnck2.ch \
 	libxfce4ui.ch \
 	libxfce4util.ch \
 	thunar.ch \
@@ -22,7 +20,6 @@ CHANGE_FILES = \
 	xfce4-power-manager.ch \
 	xfce4-session.ch \
 	xfce4-settings.ch \
-	xfce4-xkb-plugin.ch    \
 	xfconf.ch \
 	xfdesktop.ch \
 	xfwm4.ch
