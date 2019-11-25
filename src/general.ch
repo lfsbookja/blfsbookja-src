@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "November 21st, &year;">
+<!ENTITY releasedate  "November 24th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20191121">
+<!ENTITY jversion     "20191124">
 <!ENTITY jratio       "55.9? &percnt;">
 @z
 
@@ -191,4 +191,24 @@ export -f as_root</userinput></screen>
 @y
 <!ENTITY not-katamari         "<para>本パッケージは Xorg の一連の提供物 (Xorg katamari) ではありません。
                               他のパッケージが必要としていたり Xorg のテストを完了させたりするために必要となるものです。</para>">
+@z
+
+@x
+<!ENTITY parallel_issues "<note><para>This package may occasionally fail when
+                          building with multiple processors.  See <xref
+                          linkend='parallel-builds'/> for more information.</para></note>">
+@y
+<!ENTITY parallel_issues "<note><para>This package may occasionally fail when
+                          building with multiple processors.  See <xref
+                          linkend='parallel-builds'/> for more information.</para></note>">
+@z
+
+@x
+<!ENTITY shell-env "<note><para>If installing in the chroot environment, be
+                    sure to export the <envar>SHELL</envar> environment
+                    variable or configuration of the package will
+                    fail.</para></note>">
+@y
+<!ENTITY shell-env "<note><para>chroot 環境においてインストールを行っている場合は、環境変数 <envar>SHELL</envar> を設定しておいてください。
+                    これを行っていない場合、パッケージの設定が失敗します。</para></note>">
 @z

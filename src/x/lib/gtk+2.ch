@@ -145,13 +145,15 @@
       must run the tests from a session with X Window Display capability (i.e.,
       not a text-based terminal/console) as the tests attempt to open an X
       window, and the tests can take an excessively long time. Using an X
-      Window, the tests should take less than 0.3 SBU.
+      Window, the tests should take less than 0.3 SBU. One test, 
+      DefaultValues/GdkPixbuf, is known to fail.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       テストを実施する場合は X ウィンドウシステム内にて行う必要があります。
       (つまり、テキストベースのターミナル、コンソール画面からは行ってはなりません。)
       テストでは X ウィンドウを開くことが行われるためであり、X ウィンドウがなければこのテストにかなりの時間を要します。
       X ウィンドウがあれば 0.3 SBU 程度の時間でテストが終わります。
+      DefaultValues/GdkPixbuf というテストは失敗します。
 @z
 
 @x

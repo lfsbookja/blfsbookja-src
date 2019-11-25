@@ -94,7 +94,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="http://www.sphinx-doc.org/en/stable/man/sphinx-build.html">Sphinx</ulink>
-      with <ulink url="https://pypi.python.org/pypi/sphinx_rtd_theme">sphinx_rtd_theme</ulink>
+      ただし <ulink url="https://pypi.python.org/pypi/sphinx_rtd_theme">sphinx_rtd_theme</ulink> を含む
     </para>
 @z
 
@@ -117,6 +117,15 @@
 @z
 
 @x
+    <para>If you have the optional <application>Sphinx</application> package
+    installed, buid the documentation with:</para>
+@y
+    <para>
+    任意のパッケージ <application>Sphinx</application> をインストールしている場合は、以下によりドキュメントを生成します。
+    </para>
+@z
+
+@x
       To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
@@ -126,6 +135,14 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <para>If you built the documentation, install it (as root) with:</para>
+@y
+    <para>
+    ドキュメントを生成していた場合は (root になって) インストールします。
+    </para>
 @z
 
 @x

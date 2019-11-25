@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cbindgen-buildsize     "88 MB (add 504 MB for tests) ">
-  <!ENTITY cbindgen-time          "1.2 SBU (Using paralleism=4; add 0.5 SBU for tests)">
+  <!ENTITY cbindgen-buildsize     "88 MB (add 515 MB for tests) ">
+  <!ENTITY cbindgen-time          "0.9 SBU (Using paralleism=4; add 0.5 SBU for tests)">
 @y
-  <!ENTITY cbindgen-buildsize     "88 MB (add 504 MB for tests) ">
-  <!ENTITY cbindgen-time          "1.2 SBU (Using paralleism=4; add 0.5 SBU for tests)">
+  <!ENTITY cbindgen-buildsize     "88 MB (add 515 MB for tests) ">
+  <!ENTITY cbindgen-time          "0.9 SBU (Using paralleism=4; add 0.5 SBU for tests)">
 @z
 
 @x
@@ -128,10 +127,10 @@
 
 @x
       To test the results, issue: <command>cargo test</command>.
-      Four tests, test_expand*, are known to fail.
+      Five tests, test_expand*, are known to fail.
 @y
       To test the results, issue: <command>cargo test</command>.
-      Four tests, test_expand*, are known to fail.
+      Five tests, test_expand*, are known to fail.
 @z
 
 @x

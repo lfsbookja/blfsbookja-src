@@ -121,6 +121,21 @@
 @z
 
 @x
+      <para>If you are upgrading JS60 from a previously installed old version,
+      save all work and exit your GNOME Session if you have one running.
+      Replacing the JS60 binary will cause the GNOME Shell to crash and return
+      you to your display manager or TTY. After installing the new version,
+      reinstall <xref linkend="gjs"/>. Polkit is unaffected.</para>
+@y
+      <para>
+      旧バージョンがインストールされている状態から JS60 へのアップグレードを行う場合は、作業中のものはすべて保存し、GNOME セッションを起動しているなら終了させてください。
+      JS60 の実行モジュールへの切り替えを行うと GNOME シェルがクラッシュして、ディスプレイマネージャーや TTY に戻されることになります。
+      新たなバージョンのインストールを終えたら <xref linkend="gjs"/> を再インストールしてください。
+      なお Polkit に影響は及びません。
+      </para>
+@z
+
+@x
       Install <application>JS</application> by running the following
       commands:
 @y
@@ -150,25 +165,26 @@
       to use system versions of the above libriares. These are required for
       stability.
 @y
-      <parameter>--with-*</parameter>: These parameters allow the build system
-      to use system versions of the above libriares. These are required for
-      stability.
+      <parameter>--with-*</parameter>:
+      本パラメーターはビルドにあたって、システムにインストールされている各ライブラリを用いることを指示します。
+      安定したビルドのためにはこれが必要となります。
 @z
 
 @x
       <parameter>--enable-readline</parameter>: This switch enables Readline
       support in the JS shell.
 @y
-      <parameter>--enable-readline</parameter>: This switch enables Readline
-      support in the JS shell.
+      <parameter>--enable-readline</parameter>:
+      本スイッチは JS シェルにおいて Readline サポートを有効にします。
 @z
 
 @x
       <parameter>--disable-jemalloc</parameter>: This switch disables the
       internal memory allocator used in JS60. jemalloc causes a conflict with glibc.
 @y
-      <parameter>--disable-jemalloc</parameter>: This switch disables the
-      internal memory allocator used in JS60. jemalloc causes a conflict with glibc.
+      <parameter>--disable-jemalloc</parameter>:
+      本スイッチは JS60 内部で用いられているメモリ割り当て機能 jemalloc を無効にします。
+      jemalloc は glibc との間で競合が発生します
 @z
 
 @x
@@ -221,18 +237,17 @@
             provides a command line interface to the
             <application>JavaScript</application> engine.
 @y
-            provides a command line interface to the
-            <application>JavaScript</application> engine.
+            <application>JavaScript</application> エンジンに対してのコマンドラインインターフェースを提供します。
 @z
 
 @x js60-config
             is used to find the JS compiler and linker flags.
 @y
-            is used to find the JS compiler and linker flags.
+            JS コンパイラーフラグおよびリンカーフラグを検出するために用いられます。
 @z
 
 @x libmozjs-60.so
             contains the Mozilla JavaScript API functions.
 @y
-            contains the Mozilla JavaScript API functions.
+            Mozilla JavaScript API 関数を提供します。
 @z

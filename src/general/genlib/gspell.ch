@@ -18,70 +18,69 @@
   <!ENTITY gspell-buildsize     "12 MB (with tests)">
   <!ENTITY gspell-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY gspell-buildsize     "12 MB (with tests)">
-  <!ENTITY gspell-time          "0.2 SBU (with tests)">
+  <!ENTITY gspell-buildsize     "12 MB (テスト込み)">
+  <!ENTITY gspell-time          "0.2 SBU (テスト込み)">
 @z
 
 @x
     <title>Introduction to gspell</title>
 @y
-    <title>Introduction to gspell</title>
+    <title>&IntroductionTo1;gspell&IntroductionTo2;</title>
 @z
 
 @x
       The <application>gspell</application> package provides a flexible API to
       add spell checking to a GTK+ application.
 @y
-      The <application>gspell</application> package provides a flexible API to
-      add spell checking to a GTK+ application.
+      <application>gspell</application> パッケージは、GTK+ アプリケーションに対してスペルチェック機能を追加するための柔軟な API を提供します。
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&gspell-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&gspell-download-http;"/>
+          &Download; (HTTP): <ulink url="&gspell-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&gspell-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&gspell-download-ftp;"/>
+          &Download; (FTP): <ulink url="&gspell-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &gspell-md5sum;
 @y
-          Download MD5 sum: &gspell-md5sum;
+          &Download; MD5 sum: &gspell-md5sum;
 @z
 
 @x
           Download size: &gspell-size;
 @y
-          Download size: &gspell-size;
+          &DownloadSize;: &gspell-size;
 @z
 
 @x
           Estimated disk space required: &gspell-buildsize;
 @y
-          Estimated disk space required: &gspell-buildsize;
+          &Estimateddiskspacerequired;: &gspell-buildsize;
 @z
 
 @x
           Estimated build time: &gspell-time;
 @y
-          Estimated build time: &gspell-time;
+          &Estimatedbuildtime;: &gspell-time;
 @z
 
 @x
     <bridgehead renderas="sect3">gspell Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gspell Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gspell&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -90,7 +89,7 @@
       <xref linkend="enchant"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="enchant"/>
     </para>
@@ -106,12 +105,12 @@
       <xref linkend="valgrind"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="iso-codes"/>,
-      <xref linkend="vala"/>, and
+      <xref linkend="vala"/>,
       <xref linkend="valgrind"/>
     </para>
 @z
@@ -119,21 +118,20 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/gspell"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/gspell"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/gspell"/>
 @z
 
 @x
     <title>Installation of gspell</title>
 @y
-    <title>Installation of gspell</title>
+    <title>&InstallationOf1;gspell&InstallationOf2;</title>
 @z
 
 @x
       Install <application>gspell</application> by running the following
       commands:
 @y
-      Install <application>gspell</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>gspell</application> をビルドします。
 @z
 
 @x
@@ -143,23 +141,22 @@
       <ulink url="http://hunspell.github.io/">Hunspell</ulink> is not installed.
       The tests also must be run in an X session.
 @y
-      To test the results, issue: <command>make check</command>. One test, 
-      test-checker,
-      is known to fail if the external package 
-      <ulink url="http://hunspell.github.io/">Hunspell</ulink> is not installed.
-      The tests also must be run in an X session.
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      test-checker というテストは、外部パッケージである <ulink
+      url="http://hunspell.github.io/">Hunspell</ulink> がインストールされていない場合は失敗します。
+      またテストは X セッション内において実行することが必要です。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -167,9 +164,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -180,7 +177,7 @@
 @y
         <seg>gspell-appl</seg>
         <seg>libgspell-1.so</seg>
-        <seg>/usr/include/gspell-1 and
+        <seg>/usr/include/gspell-1,
              /usr/share/gtk-doc/html/gspell-1.0</seg>
 @z
 

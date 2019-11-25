@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY icu-buildsize     "302 MB (add 35 MB for tests)">
-  <!ENTITY icu-time          "0.8 SBU (add 1.9 SBU for tests)">
+  <!ENTITY icu-buildsize     "306 MB (add 34 MB for tests)">
+  <!ENTITY icu-time          "0.8 SBU (iUsing parallelixm=4; add 1.9 SBU for tests)">
 @y
-  <!ENTITY icu-buildsize     "302 MB (テスト実施時はさらに 35 MB)">
-  <!ENTITY icu-time          "0.8 SBU (テスト実施時はさらに 1.9 SBU)">
+  <!ENTITY icu-buildsize     "306 MB (テスト実施時はさらに 35 MB)">
+  <!ENTITY icu-time          "0.8 SBU (parallelixm=4  利用時。テスト実施時はさらに 1.9 SBU)">
 @z
 
 @x
@@ -34,7 +34,7 @@
       <application>ICU</application> is widely portable and gives applications
       the same results on all platforms.
 @y
-      <application>International Components for Unicode</application> (ICU) パッケージは、広く活用されている C/C++ ライブラリであり、アプリケーションに対しての Unicode と国際化サポートを提供します。
+      <application>ICU</application> (International Components for Unicode) パッケージは広く活用されている C/C++ ライブラリであり、アプリケーションに対しての Unicode と国際化サポートを提供します。
       <application>ICU</application> は可搬性に優れ、あらゆるプラットフォームにて同一の処理結果を実現します。
 @z
 
@@ -122,6 +122,20 @@
     <title>Installation of ICU</title>
 @y
     <title>&InstallationOf1;ICU&InstallationOf2;</title>
+@z
+
+@x
+        If <command>clang++</command> is available, it will be used in the
+        mistaken belief that <command>g++</command> might not support C++11,
+        even though <command>configure</command> has tested for that.  If
+        using <command>g++</command> there will be an unnecessary warning at
+        the end of <command>configure</command>.  Building with
+        <command>g++</command> also takes longer than the estimated SBU shown.
+@y
+        <command>clang++</command> が利用可能であれば用いられます。
+        ただしこれは <command>g++</command> が C++11 に対応していないとの思い込みによるものであり、<command>configure</command> がテストしているにもかかわらず発生します。
+        <command>g++</command> が用いられるときには <command>configure</command> 処理の最後に不要な警告メッセージが出力されます。
+        <command>g++</command> によるビルドは、示されている SBU 以上を要します。
 @z
 
 @x

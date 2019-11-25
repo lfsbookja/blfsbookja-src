@@ -212,7 +212,9 @@
           aserver
         </seg>
         <seg>
-          libasound.so and four others under /usr/lib/alsa-lib/smixer
+          libasound.so and
+          libatopology.so
+           <!-- and four others under /usr/lib/alsa-lib/smixer -->
         </seg>
         <seg>
           /usr/include/alsa,
@@ -225,12 +227,14 @@
           aserver
         </seg>
         <seg>
-          libasound.so and four others under /usr/lib/alsa-lib/smixer
+          libasound.so,
+          libatopology.so
+           <!-- and four others under /usr/lib/alsa-lib/smixer -->
         </seg>
         <seg>
           /usr/include/alsa,
           /usr/lib/alsa-lib,
-          /usr/share/alsa and
+          /usr/share/alsa,
           /usr/share/doc/alsa-lib-&alsa-lib-version;
         </seg>
 @z

@@ -82,11 +82,31 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">keyutils Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;keyutils&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="mitkrb"/>
+      <!-- Without krb5 installed, a FTBFS occurs while trying to compile dns.afsdb.c.
+      It looks for profile.h, which is installed by krb5. -->
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="mitkrb"/>
+      <!-- Without krb5 installed, a FTBFS occurs while trying to compile dns.afsdb.c.
+      It looks for profile.h, which is installed by krb5. -->
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/keyutils"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/keyutils"/></para>
 @z
 
 @x
@@ -112,6 +132,16 @@
     ビルド結果をテストする場合は <systemitem
     class="username">root</systemitem> ユーザーになって以下を実行します。
     </para>
+@z
+
+@x
+    <para>Note that several tests will fail if certain uncommon kernel options
+    were not used when the kernel was built.  These include CONFIG_BIG_KEYS,
+    CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.</para>
+@y
+    <para>Note that several tests will fail if certain uncommon kernel options
+    were not used when the kernel was built.  These include CONFIG_BIG_KEYS,
+    CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.</para>
 @z
 
 @x
@@ -146,6 +176,14 @@
       <title>Config Files</title>
 @y
       <title>&ConfigFiles;</title>
+@z
+
+@x
+        <filename>/etc/request-key.conf</filename> and
+        <filename>/etc/request-key.d/*</filename>
+@y
+        <filename>/etc/request-key.conf</filename>,
+        <filename>/etc/request-key.d/*</filename>
 @z
 
 @x

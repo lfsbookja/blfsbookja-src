@@ -17,95 +17,93 @@
 @x
     <title>Introduction to Jansson</title>
 @y
-    <title>Introduction to Jansson</title>
+    <title>&IntroductionTo1;Jansson&IntroductionTo2;</title>
 @z
 
 @x
       The <application>Jansson</application> package contains a library used to
       encode, decode, and manipulate JSON data.
 @y
-      The <application>Jansson</application> package contains a library used to
-      encode, decode, and manipulate JSON data.
+      <application>Jansson</application> パッケージは JSON データのエンコード、デコードなどの操作を行うライブラリを提供します。
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&jansson-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&jansson-download-http;"/>
+          &Download; (HTTP): <ulink url="&jansson-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&jansson-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&jansson-download-ftp;"/>
+          &Download; (FTP): <ulink url="&jansson-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &jansson-md5sum;
 @y
-          Download MD5 sum: &jansson-md5sum;
+          &Download; MD5 sum: &jansson-md5sum;
 @z
 
 @x
           Download size: &jansson-size;
 @y
-          Download size: &jansson-size;
+          &DownloadSize;: &jansson-size;
 @z
 
 @x
           Estimated disk space required: &jansson-buildsize;
 @y
-          Estimated disk space required: &jansson-buildsize;
+          &Estimateddiskspacerequired;: &jansson-buildsize;
 @z
 
 @x
           Estimated build time: &jansson-time;
 @y
-          Estimated build time: &jansson-time;
+          &Estimatedbuildtime;: &jansson-time;
 @z
 
 @x
       User Notes: <ulink url="&blfs-wiki;/jansson"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/jansson"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/jansson"/>
 @z
 
 @x
     <title>Installation of Jansson</title>
 @y
-    <title>Installation of Jansson</title>
+    <title>&InstallationOf1;Jansson&InstallationOf2;</title>
 @z
 
 @x
       Install <application>jansson</application> by running the following
       commands:
 @y
-      Install <application>jansson</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>jansson</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make check</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -113,9 +111,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -130,24 +128,24 @@
         </seg>
 @y
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           libjansson.so
         </seg>
         <seg>
-          None
+          &None;
         </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libjansson.so
             contains an API for encoding, decoding, and manipulating JSON data.
 @y
-            contains an API for encoding, decoding, and manipulating JSON data.
+            JSON データのエンコード、デコードなどを行う API を提供します。
 @z
