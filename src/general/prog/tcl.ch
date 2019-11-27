@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY tcl-buildsize     "84 MB (including html documentation)">
-  <!ENTITY tcl-time          "0.6 SBU (add 3.0 SBU for tests)">
+  <!ENTITY tcl-buildsize     "67 MB (including html documentation)">
+  <!ENTITY tcl-time          "0.7 SBU (add 2.7 SBU for tests)">
 @y
-  <!ENTITY tcl-buildsize     "84 MB (html ドキュメント生成を含む)">
-  <!ENTITY tcl-time          "0.6 SBU (テスト実施時はさらに 3.0 SBU)">
+  <!ENTITY tcl-buildsize     "67 MB (html ドキュメント生成を含む)">
+  <!ENTITY tcl-time          "0.7 SBU (テスト実施時はさらに 2.7 SBU)">
 @z
 
 @x
