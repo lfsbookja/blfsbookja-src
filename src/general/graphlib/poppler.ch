@@ -164,8 +164,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="python2"/>, and
+      <xref linkend="libtiff"/>, and
       <xref linkend="qt5"/>
       (required for PDF support in <xref role="nodep" linkend="okular5"/>)
     </para>
@@ -180,7 +179,6 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="python2"/>, and
       <xref linkend="qt5"/>
       (required for PDF support in <xref role="nodep" linkend="okular5"/>)
     </para>

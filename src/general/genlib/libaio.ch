@@ -17,13 +17,13 @@
 @x
   <!ENTITY libaio-time          "less than 0.1 SBU">
 @y
-  <!ENTITY libaio-time          "less than 0.1 SBU">
+  <!ENTITY libaio-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to libaio</title>
 @y
-    <title>Introduction to libaio</title>
+    <title>&IntroductionTo1;libaio&IntroductionTo2;</title>
 @z
 
 @x
@@ -47,89 +47,89 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&libaio-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&libaio-download-http;"/>
+          &Download; (HTTP): <ulink url="&libaio-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&libaio-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&libaio-download-ftp;"/>
+          &Download; (FTP): <ulink url="&libaio-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &libaio-md5sum;
 @y
-          Download MD5 sum: &libaio-md5sum;
+          &Download; MD5 sum: &libaio-md5sum;
 @z
 
 @x
           Download size: &libaio-size;
 @y
-          Download size: &libaio-size;
+          &DownloadSize;: &libaio-size;
 @z
 
 @x
           Estimated disk space required: &libaio-buildsize;
 @y
-          Estimated disk space required: &libaio-buildsize;
+          &Estimateddiskspacerequired;: &libaio-buildsize;
 @z
 
 @x
           Estimated build time: &libaio-time;
 @y
-          Estimated build time: &libaio-time;
+          &Estimatedbuildtime;: &libaio-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Installation of libaio</title>
 @y
-    <title>Installation of libaio</title>
+    <title>&InstallationOf1;libaio&InstallationOf2;</title>
 @z
 
 @x
     <para>First, disable the installation of the static library:</para>
 @y
-    <para>First, disable the installation of the static library:</para>
+    <para>
+    スタティックライブラリはインストールしないようにしておきます。
+    </para>
 @z
 
 @x
       Build <application>libaio</application> by running the following
       command:
 @y
-      Build <application>libaio</application> by running the following
-      command:
+      以下のコマンドを実行して <application>libaio</application> をビルドします。
 @z
 
 @x
       This package does not come with a test suite.
 @y
-      This package does not come with a test suite.
+      &notTestSuite;
 @z
 
 @x
       Now, install the package as the 
       <systemitem class="username">root</systemitem> user:
 @y
-      Now, install the package as the 
-      <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -137,9 +137,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -154,24 +154,24 @@
         </seg>
 @y
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           libaio.so
         </seg>
         <seg>
-          None
+          &None;
         </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libaio.so
             is the libaio library. 
 @y
-            is the libaio library. 
+            libaio ライブラリ
 @z

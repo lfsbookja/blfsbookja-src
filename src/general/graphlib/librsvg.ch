@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "848 MB (add 375 MB for tests)">
+  <!ENTITY librsvg-buildsize     "849 MB (add 375 MB for tests)">
   <!ENTITY librsvg-time          "1.7 SBU (add 1.2 SBU for tests)">
 @y
-  <!ENTITY librsvg-buildsize     "848 MB（テスト実施時はさらに 375 MB)">
+  <!ENTITY librsvg-buildsize     "849 MB（テスト実施時はさらに 375 MB)">
   <!ENTITY librsvg-time          "1.7 SBU（テスト実施時はさらに 1.2 SBU）">
 @z
 

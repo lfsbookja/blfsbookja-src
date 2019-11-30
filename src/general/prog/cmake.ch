@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "391 MB (add 514 MB for tests)">
-  <!ENTITY cmake-time          "2.6 SBU (add 3.3 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-buildsize     "443 MB (add 538 MB for tests)">
+  <!ENTITY cmake-time          "2.8 SBU (add 3.9 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "391 MB（テスト実行時は 514 MB）">
-  <!ENTITY cmake-time          "2.6 SBU（テスト実行時は 3.3 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-buildsize     "443 MB（テスト実行時は 538 MB）">
+  <!ENTITY cmake-time          "2.8 SBU（テスト実行時は 3.9 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -162,7 +162,7 @@
       occur, try running the tests without having <literal>LANG</literal> set.
       The test RunCMake.CommandLineTar is known to fail if the 
       <ulink url="https://github.com/facebook/zstd">zstd</ulink> 
-      package is not installed.  The LinkStatic test is also known to fail.
+      package is not installed.
 @y
       ビルド結果をテストする場合は <command>bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
@@ -173,8 +173,9 @@
       occur, try running the tests without having <literal>LANG</literal> set.
       The test RunCMake.CommandLineTar is known to fail if the 
       <ulink url="https://github.com/facebook/zstd">zstd</ulink> 
-      package is not installed.  The LinkStatic test is also known to fail.
+      package is not installed.
 @z
+
 @x
      <!-- Please, don't remove this comment, needed if tests start to fail
       again. If you want to investigate a problem with a given "problem1-test",
