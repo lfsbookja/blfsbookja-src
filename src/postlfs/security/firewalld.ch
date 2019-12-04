@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,11 +14,9 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to firewalld</title>
 @y
-  <sect2 role="package">
-    <title>Introduction to firewalld</title>
+    <title>&IntroductionTo1;firewalld&IntroductionTo2;</title>
 @z
 
 @x
@@ -45,497 +42,284 @@
 @z
 
 @x
-    &lfs90_checked;
+    <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    &lfs90_checked;
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
-    <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
           Download (HTTP): <ulink url="&firewalld-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&firewalld-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &firewalld-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &firewalld-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &firewalld-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &firewalld-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&firewalld-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&firewalld-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &firewalld-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &firewalld-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &firewalld-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &firewalld-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+          &Download; (HTTP): <ulink url="&firewalld-download-http;"/>
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/firewalld-&firewalld-version;-builtin-1.patch"/>
-       </para>
-      </listitem>
-    </itemizedlist>
+          Download (FTP): <ulink url="&firewalld-download-ftp;"/>
 @y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/firewalld-&firewalld-version;-builtin-1.patch"/>
-       </para>
-      </listitem>
-    </itemizedlist>
+          &Download; (FTP): <ulink url="&firewalld-download-ftp;"/>
+@z
+
+@x
+          Download MD5 sum: &firewalld-md5sum;
+@y
+          &Download; MD5 sum: &firewalld-md5sum;
+@z
+
+@x
+          Download size: &firewalld-size;
+@y
+          &DownloadSize;: &firewalld-size;
+@z
+
+@x
+          Estimated disk space required: &firewalld-buildsize;
+@y
+          &Estimateddiskspacerequired;: &firewalld-buildsize;
+@z
+
+@x
+          Estimated build time: &firewalld-time;
+@y
+          &Estimatedbuildtime;: &firewalld-time;
 @z
 
 @x
     <bridgehead renderas="sect3">firewalld Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">firewalld Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;firewalld&Dependencies2;</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="nftables"/> or <xref linkend="iptables" role="nodump"/>,
+      <xref linkend="nftables"/>,
       and <xref linkend="python-slip"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="nftables"/> or <xref linkend="iptables" role="nodump"/>,
-      and <xref linkend="python-slip"/>
+      <xref linkend="nftables"/>,
+      <xref linkend="python-slip"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="DocBook"/> and <xref linkend="libxslt"/> (for building
-      the manual pages), and
-      <ulink url="https://netfilter.org/projects/ipset/index.html">ipset</ulink>
-      for ipset support (only when used with iptables)
+      <xref linkend="DocBook"/>,
+      <xref linkend="iptables"/>, and
+      <xref linkend="libxslt"/> (for building the manual pages)
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="DocBook"/> and <xref linkend="libxslt"/> (for building
-      the manual pages), and
+      <xref linkend="DocBook"/>,
+      <xref linkend="iptables"/>,
+      <xref linkend="libxslt"/> (マニュアルページ生成のため)
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk3" role="runtime"/> (runtime only, required for
+      <application>fireall-config</application>),
+      <xref linkend="qt5" role="runtime"/> (runtime only, required for 
+      <application>fireall-applet</application>), and
+      <ulink url="https://netfilter.org/projects/ipset/index.html">ipset</ulink>
+      for ipset support (only when used with iptables)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk3" role="runtime"/> (runtime only, required for
+      <application>fireall-config</application>),
+      <xref linkend="qt5" role="runtime"/> (runtime only, required for 
+      <application>fireall-applet</application>),
       <ulink url="https://netfilter.org/projects/ipset/index.html">ipset</ulink>
       for ipset support (only when used with iptables)
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="qt5" role="runtime"/> (runtime only, required for 
-      <application>fireall-applet</application>) and
-      <xref linkend="gtk3" role="runtime"/> (runtime only, required for
-      <application>fireall-config</application>)
-    </para>
+    <para condition="html" role="usernotes">User Notes:
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="qt5" role="runtime"/> (runtime only, required for 
-      <application>fireall-applet</application>) and
-      <xref linkend="gtk3" role="runtime"/> (runtime only, required for
-      <application>fireall-config</application>)
-    </para>
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/firewalld"/>
-    </para>
-  </sect2>
-@y
-    <para condition="html" role="usernotes">User Notes:
-      <ulink url="&blfs-wiki;/firewalld"/>
-    </para>
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of firewalld</title>
 @y
-  <sect2 role="installation">
-    <title>Installation of firewalld</title>
+    <title>&InstallationOf1;firewalld&InstallationOf2;</title>
 @z
 
 @x
-    <para>
-      Fix an issue with use of built-in kernel modules:
-    </para>
-@y
-    <para>
-      Fix an issue with use of built-in kernel modules:
-    </para>
-@z
-
-@x
-<screen><userinput>patch -Np1 -i ../firewalld-&firewalld-version;-builtin-1.patch</userinput></screen>
-@y
-<screen><userinput>patch -Np1 -i ../firewalld-&firewalld-version;-builtin-1.patch</userinput></screen>
-@z
-
-@x
-    <para>
       Install <application>firewalld</application> by
       running the following commands:
-    </para>
 @y
-    <para>
       Install <application>firewalld</application> by
       running the following commands:
-    </para>
 @z
 
 @x
-<screen revision="systemd"><userinput>PYTHON=/usr/bin/python3           \
-    ./configure --sysconfdir=/etc \
-                --without-ipset   &amp;&amp;
-make</userinput></screen>
+      The testsuite for <application>firewalld</application> is very dependent
+      on the running kernel and system configuration. It requires
+      <application>ipset</application> as well as both backends, and all
+      supported kernel options available.
 @y
-<screen revision="systemd"><userinput>PYTHON=/usr/bin/python3           \
-    ./configure --sysconfdir=/etc \
-                --without-ipset   &amp;&amp;
-make</userinput></screen>
+      The testsuite for <application>firewalld</application> is very dependent
+      on the running kernel and system configuration. It requires
+      <application>ipset</application> as well as both backends, and all
+      supported kernel options available.
 @z
 
 @x
-<screen revision="sysv"><userinput>PYTHON=/usr/bin/python3           \
-    ./configure --sysconfdir=/etc \
-                --without-ipset   \
-                --disable-systemd &amp;&amp;
-make</userinput></screen>
+      If the above conditions are met, run the testsuite as the
+      <systemitem class="username">root</systemitem> user with the command
+      <command>make -C src check</command>. Any test failures are likely the
+      result of an incomplete configuration. Failed tests will give a detailed
+      failure status at
+      <filename>src/test/testsuite.dir/&lt;###&gt;/testsuite.log</filename>.
 @y
-<screen revision="sysv"><userinput>PYTHON=/usr/bin/python3           \
-    ./configure --sysconfdir=/etc \
-                --without-ipset   \
-                --disable-systemd &amp;&amp;
-make</userinput></screen>
+      If the above conditions are met, run the testsuite as the
+      <systemitem class="username">root</systemitem> user with the command
+      <command>make -C src check</command>. Any test failures are likely the
+      result of an incomplete configuration. Failed tests will give a detailed
+      failure status at
+      <filename>src/test/testsuite.dir/&lt;###&gt;/testsuite.log</filename>.
 @z
 
 @x
-    <para>
-      To run the testsuite, isssue the command <command>make test</command>.
-    </para>
-@y
-    <para>
-      To run the testsuite, isssue the command <command>make test</command>.
-    </para>
-@z
-
-@x
-    <para revision="sysv">
       Prevent installation of the distributed firewalld init script with the
       following command:
-    </para>
 @y
-    <para revision="sysv">
       Prevent installation of the distributed firewalld init script with the
       following command:
-    </para>
 @z
 
 @x
-<screen revision="sysv"><userinput>sed '/^am__append_3/,+1d' -i config/Makefile</userinput></screen>
-@y
-<screen revision="sysv"><userinput>sed '/^am__append_3/,+1d' -i config/Makefile</userinput></screen>
-@z
-
-@x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
-    <para>
       <parameter>--without-ipset</parameter>: This switch disables use of the
       <command>ipset</command> utility. Omit if it is installed.
-    </para>
 @y
-    <para>
       <parameter>--without-ipset</parameter>: This switch disables use of the
       <command>ipset</command> utility. Omit if it is installed.
-    </para>
 @z
 
 @x
-    <para revision="sysv">
       <parameter>--without-systemd</parameter>: This command prevents
       installation of <application>systemd</application> services.
-    </para>
 @y
-    <para revision="sysv">
       <parameter>--without-systemd</parameter>: This command prevents
       installation of <application>systemd</application> services.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="configuration">
     <title>Configuring firewalld</title>
 @y
-  <sect2 role="configuration">
-    <title>Configuring firewalld</title>
+    <title>&Configuring1;firewalld&Configuring2;</title>
 @z
 
 @x
-    <sect3 id="firewalld-conf">
       <title>Config Files</title>
 @y
-    <sect3 id="firewalld-conf">
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
-      <para>
         <filename>/etc/firewall/applet.conf</filename>,
         <filename>/etc/firewalld/firewalld.conf</filename>,
         and <filename>/etc/sysconfig/firewalld</filename>
-      </para>
 @y
-      <para>
         <filename>/etc/firewall/applet.conf</filename>,
         <filename>/etc/firewalld/firewalld.conf</filename>,
         and <filename>/etc/sysconfig/firewalld</filename>
-      </para>
 @z
 
 @x
-      <indexterm zone="firewalld firewalld-conf">
-        <primary sortas="e-etc-firewalld.conf">/etc/firewalld/firewalld.conf</primary>
-      </indexterm>
-@y
-      <indexterm zone="firewalld firewalld-conf">
-        <primary sortas="e-etc-firewalld.conf">/etc/firewalld/firewalld.conf</primary>
-      </indexterm>
-@z
-
-@x
-      <para>
         Configuration of <application>firewalld</application> is generally done
         without modification of the above configuration files using the
         <command>firewall-cmd</command> command. Within the above configuration
         files you can set daemon behavior only. E.g.: whether runtime rules are
         retained on restart, which firewall backend to use (default is
         nftables), or whether to turn on debugging.
-      </para>
 @y
-      <para>
         Configuration of <application>firewalld</application> is generally done
         without modification of the above configuration files using the
         <command>firewall-cmd</command> command. Within the above configuration
         files you can set daemon behavior only. E.g.: whether runtime rules are
         retained on restart, which firewall backend to use (default is
         nftables), or whether to turn on debugging.
-      </para>
 @z
 
 @x
-      <para>
         Detailed documentation is provided by the
         <application>firewalld</application> developers at
         <ulink url="https://firewalld.org/documentation/"/>.
-      </para>
 @y
-      <para>
         Detailed documentation is provided by the
         <application>firewalld</application> developers at
         <ulink url="https://firewalld.org/documentation/"/>.
-      </para>
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 id="firewalld-init">
       <title><phrase revision="sysv">Init Script</phrase>
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-    <sect3 id="firewalld-init">
-      <title><phrase revision="sysv">Init Script</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+      <title><phrase revision="sysv">&InitScript;</phrase>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x
-      <para revision="sysv">
         If you need to run the <command>firewalld</command> daemon at system
         startup, install the <filename>/etc/rc.d/init.d/firewalld</filename>
         init script included in the
         <xref linkend="bootscripts"/> package using the following command:
-      </para>
 @y
-      <para revision="sysv">
         If you need to run the <command>firewalld</command> daemon at system
         startup, install the <filename>/etc/rc.d/init.d/firewalld</filename>
         init script included in the
         <xref linkend="bootscripts"/> package using the following command:
-      </para>
 @z
 
 @x
-      <para revision="systemd">
         If you need to run the <command>firewalld</command> daemon at system
         startup, enable the previously installed
         <filename>firewalld.service</filename> unit with the following command:
-      </para>
 @y
-      <para revision="systemd">
         If you need to run the <command>firewalld</command> daemon at system
         startup, enable the previously installed
         <filename>firewalld.service</filename> unit with the following command:
-      </para>
 @z
 
 @x
-      <indexterm zone="firewalld firewalld-init">
-        <primary sortas="f-firewalld">firewalld</primary>
-      </indexterm>
-@y
-      <indexterm zone="firewalld firewalld-init">
-        <primary sortas="f-firewalld">firewalld</primary>
-      </indexterm>
-@z
-
-@x
-<screen role="root" revision="sysv"><userinput>make install-firewalld</userinput></screen>
-@y
-<screen role="root" revision="sysv"><userinput>make install-firewalld</userinput></screen>
-@z
-
-@x
-<screen role="root" revision="systemd"><userinput>systemctl enable firewalld</userinput></screen>
-@y
-<screen role="root" revision="systemd"><userinput>systemctl enable firewalld</userinput></screen>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           firewall-applet, firewall-cmd, firewall-config, firewall-offline-cmd,
           and firewalld
@@ -549,185 +333,56 @@ make</userinput></screen>
           /usr/lib/firewalld, and
           /usr/lib/python-&python3-version;/site-packages/firewall
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           firewall-applet, firewall-cmd, firewall-config, firewall-offline-cmd,
-          and firewalld
+          firewalld
         </seg>
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           /etc/firewalld,
           /etc/firewall,
-          /usr/lib/firewalld, and
+          /usr/lib/firewalld,
           /usr/lib/python-&python3-version;/site-packages/firewall
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x
-      <varlistentry id="firewall-applet">
-        <term><command>firewall-applet</command></term>
-        <listitem>
-          <para>
+@x firewall-applet
             is a tray applet using QSettings backend.
-          </para>
-          <indexterm zone="firewalld firewall-applet">
-            <primary sortas="b-firewall-applet">firwall-applet</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="firewall-applet">
-        <term><command>firewall-applet</command></term>
-        <listitem>
-          <para>
             is a tray applet using QSettings backend.
-          </para>
-          <indexterm zone="firewalld firewall-applet">
-            <primary sortas="b-firewall-applet">firwall-applet</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="firewall-cmd">
-        <term><command>firewall-cmd</command></term>
-        <listitem>
-          <para>
+@x firewall-cmd
             is the primary command line frontend.
-          </para>
-          <indexterm zone="firewalld firewall-cmd">
-            <primary sortas="b-firewall-cmd">firewall-cmd</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="firewall-cmd">
-        <term><command>firewall-cmd</command></term>
-        <listitem>
-          <para>
             is the primary command line frontend.
-          </para>
-          <indexterm zone="firewalld firewall-cmd">
-            <primary sortas="b-firewall-cmd">firewall-cmd</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="firewall-config">
-        <term><command>firewall-config</command></term>
-        <listitem>
-          <para>
+@x firewall-config
             is a GUI configuration tool using GTK+-3.
-          </para>
-          <indexterm zone="firewalld firewall-config">
-            <primary sortas="b-firewall-config">firewall-config</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="firewall-config">
-        <term><command>firewall-config</command></term>
-        <listitem>
-          <para>
             is a GUI configuration tool using GTK+-3.
-          </para>
-          <indexterm zone="firewalld firewall-config">
-            <primary sortas="b-firewall-config">firewall-config</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="firewall-offline-cmd">
-        <term><command>firewall-offline-cmd</command></term>
-        <listitem>
-          <para>
+@x firewall-offline-cmd
             is a command line client used for permanent configuration while
             firewalld is not running.
-          </para>
-          <indexterm zone="firewalld firewall-offline-cmd">
-            <primary sortas="b-firewall-offline-cmd">firewall-offline-cmd</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="firewall-offline-cmd">
-        <term><command>firewall-offline-cmd</command></term>
-        <listitem>
-          <para>
             is a command line client used for permanent configuration while
             firewalld is not running.
-          </para>
-          <indexterm zone="firewalld firewall-offline-cmd">
-            <primary sortas="b-firewall-offline-cmd">firewall-offline-cmd</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="firewalld-daemon">
-        <term><command>firewalld</command></term>
-        <listitem>
-          <para>
+@x firewalld
             is the Dynamic Firewall Manager daemon.
-          </para>
-          <indexterm zone="firewalld firewalld-daemon">
-            <primary sortas="b-firewalld">firewalld</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="firewalld-daemon">
-        <term><command>firewalld</command></term>
-        <listitem>
-          <para>
             is the Dynamic Firewall Manager daemon.
-          </para>
-          <indexterm zone="firewalld firewalld-daemon">
-            <primary sortas="b-firewalld">firewalld</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

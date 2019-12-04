@@ -115,34 +115,14 @@
 
 @x
         <para>Required patch: <ulink
-        url="&patch-root;/unzip-&unzip-version;-security_fix-1.patch"/></para>
 @y
         <para>必須のパッチ: <ulink
-        url="&patch-root;/unzip-&unzip-version;-security_fix-1.patch"/></para>
-@z
-
-@x
-        <para>Required patch: <ulink
-        url="&patch-root;/unzip-&unzip-version;-security_fix-2.patch"/></para>
-@y
-        <para>必須のパッチ: <ulink
-        url="&patch-root;/unzip-&unzip-version;-security_fix-2.patch"/></para>
-@z
-
-@x
-        <para>Optional patch (will not apply properly): <ulink
-        url="&patch-root;/unzip-5.50-alt-iconv-v1.1.patch"/></para>
-@y
-        <para>任意のパッチ (適用はうまくいかない): <ulink
-        url="&patch-root;/unzip-5.50-alt-iconv-v1.1.patch"/></para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/unzip"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/unzip"/></para>
 @z
 
 @x
@@ -290,19 +270,21 @@
 @z
 
 @x
-    <!-- <para>Note that if you applied the patch described above for locale issues,
-    the first required security patch will have some offsets.  Now install
-    <application>UnZip</application> by running the following commands:</para> -->
+      First apply the patch:
 @y
-    <!-- <para>Note that if you applied the patch described above for locale issues,
-    the first required security patch will have some offsets.  Now install
-    <application>UnZip</application> by running the following commands:</para> -->
+      First apply the patch:
 @z
 
 @x
-    <para>The test suite does not work for present target <quote>generic</quote>.</para>
+      Now compile the package:
 @y
-    <para>The test suite does not work for present target <quote>generic</quote>.</para>
+      Now compile the package:
+@z
+
+@x
+    <para>The test suite does not work for target <quote>generic</quote>.</para>
+@y
+    <para>The test suite does not work for target <quote>generic</quote>.</para>
 @z
 
 @x

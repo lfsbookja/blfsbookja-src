@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "581 MB (add 2 MB for tests, add 112 MB for documentation)">
-  <!ENTITY php-time          "1.9 SBU (with parallelism=4; add 2.7 SBU for tests)">
+  <!ENTITY php-buildsize     "514 MB (add 6 MB for tests, add 112 MB for documentation)">
+  <!ENTITY php-time          "1.6 SBU (with parallelism=4; add 2.2 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "581 MB（テスト実施時はさらに 2 MB、ドキュメント生成時は 112 MB）">
-  <!ENTITY php-time          "1.9 SBU（parallelism=4 利用時、テスト実施時はさらに 2.7 SBU）">
+  <!ENTITY php-buildsize     "514 MB（テスト実施時はさらに 6 MB、ドキュメント生成時は 112 MB）">
+  <!ENTITY php-time          "1.6 SBU（parallelism=4 利用時、テスト実施時はさらに 2.2 SBU）">
 @z
 
 @x
@@ -127,6 +127,7 @@
       <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
+      <ulink url="https://github.com/kkos/oniguruma">oniguruma</ulink>,
       <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
       <ulink url="http://re2c.org/">re2c</ulink>, and
       <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
@@ -144,6 +145,7 @@
       <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
+      <ulink url="https://github.com/kkos/oniguruma">oniguruma</ulink>,
       <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
       <ulink url="http://re2c.org/">re2c</ulink>,
       <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
@@ -341,15 +343,17 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>. A few
-      tests may fail, in which case you are asked whether you want to send
-      the report to the PHP developers. If you want to automate the test,
-      you may prefix the command with <command>yes "n" | </command>.
+      To test the results, issue: <command>make test</command>. Several
+      tests (out of over 11900) may fail, in which case you are asked 
+      whether you want to send the report to the PHP developers. If you 
+      want to automate the test, you may prefix the command with 
+      <command>yes "n" | </command>.
 @y
-      To test the results, issue: <command>make test</command>. A few
-      tests may fail, in which case you are asked whether you want to send
-      the report to the PHP developers. If you want to automate the test,
-      you may prefix the command with <command>yes "n" | </command>.
+      To test the results, issue: <command>make test</command>. Several
+      tests (out of over 11900) may fail, in which case you are asked 
+      whether you want to send the report to the PHP developers. If you 
+      want to automate the test, you may prefix the command with 
+      <command>yes "n" | </command>.
 @z
 
 @x
