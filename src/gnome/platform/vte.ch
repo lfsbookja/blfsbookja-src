@@ -179,14 +179,6 @@
 @z
 
 @x
-      <option>-Dfribidi=false</option>: Omit this switch if want to enable 
-      bidirectional capabilities.
-@y
-      <option>-Dfribidi=false</option>: Omit this switch if want to enable 
-      bidirectional capabilities.
-@z
-
-@x
       <option>-Ddocs=true</option>: Add this switch if wish to 
       build the documentation.
 @y

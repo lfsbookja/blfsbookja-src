@@ -143,11 +143,11 @@
 @z
 
 @x
-    <para><option>-DCMAKE_SKIP_INSTALL_RPATH=YES</option>: This option removes
-    embedded library search paths.</para>
+      <parameter>-DCMAKE_SKIP_INSTALL_RPATH=YES</parameter>: This option
+      removes embedded library search paths.
 @y
-    <para><option>-DCMAKE_SKIP_INSTALL_RPATH=YES</option>: This option removes
-    embedded library search paths.</para>
+      <parameter>-DCMAKE_SKIP_INSTALL_RPATH=YES</parameter>: This option
+      removes embedded library search paths.
 @z
 
 @x

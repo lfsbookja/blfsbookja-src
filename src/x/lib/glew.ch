@@ -139,10 +139,10 @@
 @z
 
 @x
-      <parameter>sed -i -e '/glew.lib.static:/d' ...</parameter>: This suppresses
+      <command>sed -i -e '/glew.lib.static:/d' ...</command>: This suppresses
       the static library.
 @y
-      <parameter>sed -i -e '/glew.lib.static:/d' ...</parameter>: This suppresses
+      <command>sed -i -e '/glew.lib.static:/d' ...</command>: This suppresses
       the static library.
 @z
 

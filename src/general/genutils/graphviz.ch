@@ -171,7 +171,7 @@
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
       <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
       <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
-      and <ulink url="http://www.libming.org/">libming</ulink> (Macromedia
+      and <ulink url="http://www.libming.org/">libming</ulink> (Adobe
       Flash)
 @y
       Other formats may be added with
@@ -179,7 +179,7 @@
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
       <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
       <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
-      and <ulink url="http://www.libming.org/">libming</ulink> (Macromedia
+      and <ulink url="http://www.libming.org/">libming</ulink> (Adobe
       Flash)
 @z
 

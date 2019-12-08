@@ -34,13 +34,13 @@
 
 @x
       <application>Pango</application> is a library for laying out and rendering
-      of text, with an emphasis on internationalization. It can be used anywhere
+      text, with an emphasis on internationalization. It can be used anywhere
       that text layout is needed, though most of the work on
       <application>Pango</application> so far has been done in the context of
       the <application>GTK+</application> widget toolkit.
 @y
       <application>Pango</application> is a library for laying out and rendering
-      of text, with an emphasis on internationalization. It can be used anywhere
+      text, with an emphasis on internationalization. It can be used anywhere
       that text layout is needed, though most of the work on
       <application>Pango</application> so far has been done in the context of
       the <application>GTK+</application> widget toolkit.
@@ -168,11 +168,15 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. One test,
-      <filename>test-layout</filename>, is known to fail.
+      To test the results, issue: <command>ninja test</command>. Three tests,
+      <filename>test-layout</filename>,
+      <filename>test-break</filename>, and
+      <filename>test-itemize</filename> are known to fail.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      <filename>test-layout</filename> テストは失敗します。
+            <filename>test-layout</filename>,
+      <filename>test-break</filename>, 
+      <filename>test-itemize</filename> という 3 つのテストは失敗します。
 @z
 
 @x
@@ -249,8 +253,7 @@
           and libpangoxft-1.0.so
         </seg>
         <seg>
-          /usr/include/pango-1.0,
-          /usr/share/installed-tests/pango, and
+          /usr/include/pango-1.0 and
           /usr/share/gtk-doc/html/pango
         </seg>
 @y
@@ -263,7 +266,6 @@
         </seg>
         <seg>
           /usr/include/pango-1.0,
-          /usr/share/installed-tests/pango,
           /usr/share/gtk-doc/html/pango
         </seg>
 @z

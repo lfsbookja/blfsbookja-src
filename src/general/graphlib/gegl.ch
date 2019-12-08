@@ -187,10 +187,10 @@
 @z
 
 @x
-      <parameter>-Ddocs=true</parameter>: Build and
+      <option>-Ddocs=true</option>: Build and
       install documentation.
 @y
-      <parameter>-Ddocs=true</parameter>:
+      <option>-Ddocs=true</option>:
       ドキュメントのビルドとインストールを行います。
 @z
 

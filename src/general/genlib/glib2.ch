@@ -243,10 +243,10 @@
 @z
 
 @x
-      <parameter>-Ddoc=true</parameter>: This switch causes the
+      <option>-Ddoc=true</option>: This switch causes the
       build to create and install the API documentation.
 @y
-      <parameter>-Ddoc=true</parameter>: This switch causes the
+      <option>-Ddoc=true</option>: This switch causes the
       build to create and install the API documentation.
 @z
 

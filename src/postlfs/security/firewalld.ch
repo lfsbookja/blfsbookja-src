@@ -218,11 +218,21 @@
 @z
 
 @x
-      <parameter>--without-systemd</parameter>: This command prevents
+      <parameter>--disable-systemd</parameter>: This command prevents
       installation of <application>systemd</application> services.
 @y
-      <parameter>--without-systemd</parameter>: This command prevents
+      <parameter>--disable-systemd</parameter>: This command prevents
       installation of <application>systemd</application> services.
+@z
+
+@x
+      <option>--without-{ip{,6},eb}tables{,-restore}</option>: These switches
+      disable <application>iptables</application> support and are required if
+      you wish to build without iptables support.
+@y
+      <option>--without-{ip{,6},eb}tables{,-restore}</option>: These switches
+      disable <application>iptables</application> support and are required if
+      you wish to build without iptables support.
 @z
 
 @x

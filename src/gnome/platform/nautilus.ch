@@ -103,7 +103,8 @@
     <para role="recommended">
       <xref linkend="desktop-file-utils"/>,
       <xref linkend="exempi"/>,
-      <xref linkend="gobject-introspection"/>, and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gst10-plugins-base"/>, and
       <xref linkend="libexif"/>
     </para>
 @y
@@ -112,6 +113,7 @@
       <xref linkend="desktop-file-utils"/>,
       <xref linkend="exempi"/>,
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="gst10-plugins-base"/>,
       <xref linkend="libexif"/>
     </para>
 @z

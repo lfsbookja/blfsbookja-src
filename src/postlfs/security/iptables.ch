@@ -124,11 +124,11 @@
 
 @x
       Include any connection tracking protocols that will be used, as well as
-      any protocols that you wish to use for match suppport under the
+      any protocols that you wish to use for match support under the
       "Core Netfilter Configuration" section.
 @y
       Include any connection tracking protocols that will be used, as well as
-      any protocols that you wish to use for match suppport under the
+      any protocols that you wish to use for match support under the
       "Core Netfilter Configuration" section.
 @z
 

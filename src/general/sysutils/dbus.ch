@@ -346,18 +346,18 @@
 @z
 
 @x
-      <parameter>--with-systemd{user,system}unitdir=</parameter>: These
+      <parameter>--with-systemd{user,system}unitdir=no</parameter>: These
       switches disable installation of systemd units on elogind based systems.
 @y
-      <parameter>--with-systemd{user,system}unitdir=</parameter>: These
+      <parameter>--with-systemd{user,system}unitdir=no</parameter>: These
       switches disable installation of systemd units on elogind based systems.
 @z
 
 @x
-      <parameter>--with-console-auth-dir=/run/console/</parameter>: This
+      <parameter>--with-console-auth-dir=/run/console</parameter>: This
       parameter specifies the directory to check for console ownerhip.
 @y
-      <parameter>--with-console-auth-dir=/run/console/</parameter>: This
+      <parameter>--with-console-auth-dir=/run/console</parameter>: This
       parameter specifies the directory to check for console ownerhip.
 @z
 

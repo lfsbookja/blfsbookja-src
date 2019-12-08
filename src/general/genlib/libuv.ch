@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libuv-buildsize     "25 MB (with tests)">
-  <!ENTITY libuv-time          "0.4 SBU (with tests)">
+  <!ENTITY libuv-buildsize     "24 MB (with tests)">
+  <!ENTITY libuv-time          "0.6 SBU (with tests)">
 @y
-  <!ENTITY libuv-buildsize     "25 MB (テスト込み)">
-  <!ENTITY libuv-time          "0.4 SBU (テスト込み)">
+  <!ENTITY libuv-buildsize     "24 MB (テスト込み)">
+  <!ENTITY libuv-time          "0.6 SBU (テスト込み)">
 @z
 
 @x

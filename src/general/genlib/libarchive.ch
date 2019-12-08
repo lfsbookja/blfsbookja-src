@@ -86,15 +86,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libxml2"/>,
-      <xref linkend="lzo"/>, and
-      <xref linkend="nettle"/> 
+      <xref linkend="lzo"/>,
+      <xref linkend="nettle"/>, and
+      <ulink url="https://facebook.github.io/zstd/">zstd</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libxml2"/>,
       <xref linkend="lzo"/>,
-      <xref linkend="nettle"/> 
+      <xref linkend="nettle"/>, and
+      <ulink url="https://facebook.github.io/zstd/">zstd</ulink>
     </para>
 @z
 

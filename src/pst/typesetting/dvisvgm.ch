@@ -215,12 +215,12 @@
 @z
 
 @x
-      <command>install -v -m644 doc/dvisgm.1 ...</command>: This ensures that
+      <command>install -v -m644 doc/dvisvgm.1 ...</command>: This ensures that
       the man page is installed in the correct place even if the optional
       dependencies are not present, and overwrites the version installed by
       <command>make install</command> if they are present.
 @y
-      <command>install -v -m644 doc/dvisgm.1 ...</command>: This ensures that
+      <command>install -v -m644 doc/dvisvgm.1 ...</command>: This ensures that
       the man page is installed in the correct place even if the optional
       dependencies are not present, and overwrites the version installed by
       <command>make install</command> if they are present.

@@ -14,12 +14,6 @@
 @z
 
 @x
-  <!ENTITY cairo-time          "0.4 SBU (using parallelism=4)">
-@y
-  <!ENTITY cairo-time          "0.4 SBU (parallelism=4)">
-@z
-
-@x
     <title>Introduction to Cairo</title>
 @y
     <title>&IntroductionTo1;Cairo&IntroductionTo2;</title>
@@ -146,9 +140,11 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libdrm"/>,
       <xref linkend="librsvg"/>,
+      <xref linkend="libxml2"/>,
       <xref linkend="lzo"/>,
       <xref linkend="mesa"/>,
       <xref linkend="poppler"/>,
+      <xref linkend="qt5"/>,
       <xref linkend="valgrind"/>,
       <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>,
       <ulink url="https://github.com/rillian/jbig2dec/">jbig2dec</ulink>,
@@ -165,9 +161,11 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libdrm"/>,
       <xref linkend="librsvg"/>,
+      <xref linkend="libxml2"/>,
       <xref linkend="lzo"/>,
       <xref linkend="mesa"/>,
       <xref linkend="poppler"/>,
+      <xref linkend="qt5"/>,
       <xref linkend="valgrind"/>,
       <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>,
       <ulink url="https://github.com/rillian/jbig2dec/">jbig2dec</ulink>,
