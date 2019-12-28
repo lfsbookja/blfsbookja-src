@@ -16,11 +16,11 @@
 
 @x
   <!ENTITY brotli-buildsize     "43 MB (add 5 MB if installing both sets of python bindings, add 9 MB for the main test and 5MB for testing the bindings)">
-  <!-- time for testing without the bindings is minimal, each set takes similar tiem and space -->
+  <!-- time for testing without the bindings is minimal, each set takes similar time and space -->
   <!ENTITY brotli-time          "0.2 SBU (add 0.3 SBU for the python bindings, and 1.2 SBU if testing them)">
 @y
   <!ENTITY brotli-buildsize     "43 MB (add 5 MB if installing both sets of python bindings, add 9 MB for the main test and 5MB for testing the bindings)">
-  <!-- time for testing without the bindings is minimal, each set takes similar tiem and space -->
+  <!-- time for testing without the bindings is minimal, each set takes similar time and space -->
   <!ENTITY brotli-time          "0.2 SBU (add 0.3 SBU for the python bindings, and 1.2 SBU if testing them)">
 @z
 
@@ -107,12 +107,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> (to create the bindings for that)
+      <xref linkend="python2"/> (to create python2 bindings)
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> (to create the bindings for that)
+      <xref linkend="python2"/> (to create python2 bindings)
     </para>
 @z
 
@@ -158,10 +158,10 @@
 
 @x
       If you wish to test the bindings, go back to the top-level directory and
-      run python3 setup.py test.
+      issue: <command>python3 setup.py test</command>.
 @y
       If you wish to test the bindings, go back to the top-level directory and
-      run python3 setup.py test.
+      issue: <command>python3 setup.py test</command>.
 @z
 
 @x
@@ -200,20 +200,20 @@
 
 @x
         <seg>
-          brotli.
+          brotli
         </seg>
         <seg>
-          libbrotlicommon{-static.a,.so}, libbrotlidec{,-static,.so} and libbrotlienc{,-static,.so}.
+          libbrotlicommon{-static.a,.so}, libbrotlidec{,-static,.so} and libbrotlienc{,-static,.so}
         </seg>
         <seg>
           /usr/include/brotli
         </seg>
 @y
         <seg>
-          brotli.
+          brotli
         </seg>
         <seg>
-          libbrotlicommon{-static.a,.so}, libbrotlidec{,-static,.so} and libbrotlienc{,-static,.so}.
+          libbrotlicommon{-static.a,.so}, libbrotlidec{,-static,.so}, libbrotlienc{,-static,.so}
         </seg>
         <seg>
           /usr/include/brotli

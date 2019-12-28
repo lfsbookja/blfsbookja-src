@@ -11,6 +11,7 @@ CHANGE_FILES = \
 	acpid.ch         \
 	at.ch            \
 	autofs.ch        \
+	blocaled.ch      \
 	bluez.ch         \
 	bubblewrap.ch    \
 	colord.ch        \

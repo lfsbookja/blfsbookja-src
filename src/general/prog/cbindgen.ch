@@ -14,17 +14,17 @@
 @z
 
 @x
-  <!ENTITY cbindgen-buildsize     "90 MB (add 513 MB for tests) ">
+  <!ENTITY cbindgen-buildsize     "91 MB (add 516 MB for tests)">
   <!ENTITY cbindgen-time          "0.9 SBU (Using paralleism=4; add 0.5 SBU for tests)">
 @y
-  <!ENTITY cbindgen-buildsize     "90 MB (add 513 MB for tests) ">
+  <!ENTITY cbindgen-buildsize     "91 MB (add 516 MB for tests)">
   <!ENTITY cbindgen-time          "0.9 SBU (Using paralleism=4; add 0.5 SBU for tests)">
 @z
 
 @x
     <title>Introduction to Cbindgen</title>
 @y
-    <title>Introduction to Cbindgen</title>
+    <title>&IntroductionTo1;Cbindgen&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,49 +38,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&cbindgen-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&cbindgen-download-http;"/>
+          &Download; (HTTP): <ulink url="&cbindgen-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&cbindgen-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&cbindgen-download-ftp;"/>
+          &Download; (FTP): <ulink url="&cbindgen-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &cbindgen-md5sum;
 @y
-          Download MD5 sum: &cbindgen-md5sum;
+          &Download; MD5 sum: &cbindgen-md5sum;
 @z
 
 @x
           Download size: &cbindgen-size;
 @y
-          Download size: &cbindgen-size;
+          &DownloadSize;: &cbindgen-size;
 @z
 
 @x
           Estimated disk space required: &cbindgen-buildsize;
 @y
-          Estimated disk space required: &cbindgen-buildsize;
+          &Estimateddiskspacerequired;: &cbindgen-buildsize;
 @z
 
 @x
           Estimated build time: &cbindgen-time;
 @y
-          Estimated build time: &cbindgen-time;
+          &Estimatedbuildtime;: &cbindgen-time;
 @z
 
 @x
     <bridgehead renderas="sect3">cbindgen Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">cbindgen Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;cbindgen&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,7 +104,7 @@
 @x
     <title>Installation of cbindgen</title>
 @y
-    <title>Installation of cbindgen</title>
+    <title>&InstallationOf1;cbindgen&InstallationOf2;</title>
 @z
 
 @x
@@ -150,9 +150,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -180,7 +180,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x cbindgen

@@ -99,13 +99,13 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="x-window-system"/> and
-      <xref linkend="gtk2"/>
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="x-window-system"/> and
-      <xref linkend="gtk2"/>
+      <xref linkend="x-window-system"/>,
+      <xref linkend="gtk3"/>
     </para>
 @z
 
@@ -115,6 +115,7 @@
       <xref linkend="gpm"/>,
       <xref linkend="lua"/>,
       <xref linkend="python2"/>,
+      <xref linkend="rsync"/>,
       <xref linkend="ruby"/>, and
       <xref linkend="tcl"/>
     </para>
@@ -124,6 +125,7 @@
       <xref linkend="gpm"/>,
       <xref linkend="lua"/>,
       <xref linkend="python2"/>,
+      <xref linkend="rsync"/>,
       <xref linkend="ruby"/>,
       <xref linkend="tcl"/>
     </para>
@@ -428,11 +430,11 @@ A list of the reinstalled files, along with their short
 @z
 
 @x
-        <seg>gview, gvim, gvimdiff, rgview, and rgvim</seg>
+        <seg>gview, gvim, gvimdiff, gvimtutor, rgview, and rgvim</seg>
         <seg>None</seg>
         <seg>/usr/share/vim</seg>
 @y
-        <seg>gview, gvim, gvimdiff, rgview, rgvim</seg>
+        <seg>gview, gvim, gvimdiff, gvimtutor, rgview, rgvim</seg>
         <seg>&None;</seg>
         <seg>/usr/share/vim</seg>
 @z

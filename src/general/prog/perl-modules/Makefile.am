@@ -35,6 +35,7 @@ CHANGE_FILES = \
 	perl-lwp-protocol-https.ch \
 	perl-module-build.ch \
 	perl-net-dns.ch \
+	perl-parse-recdescent.ch \
 	perl-parse-yapp.ch \
 	perl-perlio-utf8_strict.ch \
 	perl-regexp-common.ch \

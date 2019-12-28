@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -14,21 +14,21 @@
 @z
 
 @x
-    <title>Business-ISBN-Data-&Business-ISBN-Data-version;</title>
+    <title>Clone-&Clone-version;</title>
 @y
-    <title>Business-ISBN-Data-&Business-ISBN-Data-version;</title>
+    <title>Clone-&Clone-version;</title>
 @z
 
 @x
-      <title>Introduction to Business-ISBN-Data</title>
+      <title>Introduction to Clone</title>
 @y
-      <title>&IntroductionTo1;Business-ISBN-Data&IntroductionTo2;</title>
+      <title>&IntroductionTo1;Clone&IntroductionTo2;</title>
 @z
 
 @x
-        Business-ISBN-Data is a data pack for Business::ISBN.
+        Clone recursively copies perl datatypes.
 @y
-        Business-ISBN-Data is a data pack for Business::ISBN.
+        Clone recursively copies perl datatypes.
 @z
 
 @x
@@ -50,7 +50,7 @@
 @z
 
 @x
-      <title>Installation of Business-ISBN-Data</title>
+      <title>Installation of Clone</title>
 @y
-      <title>&InstallationOf1;Business-ISBN-Data&InstallationOf2;</title>
+      <title>&InstallationOf1;Clone&InstallationOf2;</title>
 @z

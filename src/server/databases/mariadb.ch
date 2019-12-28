@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY mariadb-time          "10 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-time          "13 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @y
-  <!ENTITY mariadb-time          "10 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-time          "13 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @z
 
 @x

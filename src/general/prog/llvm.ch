@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "2.4 GB (with Clang, 735 MB installed, add 18 GB for tests)">
-  <!ENTITY llvm-time          "27 SBU (with Clang and parallelism=4, add 5 SBU for tests)">
+  <!ENTITY llvm-buildsize     "2.1 GB (with Clang, 655 MB installed, add 19 GB for tests)">
+  <!ENTITY llvm-time          "30 SBU (with Clang and parallelism=4, add 5.5 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "2.4 GB (Clang 込み、インストールに 735MB、テスト実施時はさらに 18 GB)">
-  <!ENTITY llvm-time          "27 SBU (Clang 込み、 parallelism=4、テスト実施時はさらに 5 SBU)">
+  <!ENTITY llvm-buildsize     "2.1 GB (Clang 込み、インストールに 655MB、テスト実施時はさらに 19 GB)">
+  <!ENTITY llvm-time          "30 SBU (Clang 込み、parallelism=4、テスト実施時はさらに 5.5 SBU)">
 @z
 
 @x
@@ -232,7 +232,7 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that the Sanitizer based tests (377 of more than 35000 tests run) 
+      Note that the Sanitizer based tests (387 of more than 38000 tests run) 
       are known to fail.
 @y
       To test the results, issue: <command>ninja check-all</command>. Tests are
@@ -243,7 +243,7 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that the Sanitizer based tests (377 of more than 35000 tests run) 
+      Note that the Sanitizer based tests (387 of more than 38000 tests run) 
       are known to fail.
 @z
 

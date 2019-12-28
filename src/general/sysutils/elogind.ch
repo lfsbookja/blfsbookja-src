@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -17,7 +16,7 @@
 @x
     <title>Introduction to elogind</title>
 @y
-    <title>Introduction to elogind</title>
+    <title>&IntroductionTo1;elogind&IntroductionTo2;</title>
 @z
 
 @x
@@ -45,49 +44,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&elogind-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&elogind-download-http;"/>
+          &Download; (HTTP): <ulink url="&elogind-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&elogind-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&elogind-download-ftp;"/>
+          &Download; (FTP): <ulink url="&elogind-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &elogind-md5sum;
 @y
-          Download MD5 sum: &elogind-md5sum;
+          &Download; MD5 sum: &elogind-md5sum;
 @z
 
 @x
           Download size: &elogind-size;
 @y
-          Download size: &elogind-size;
+          &DownloadSize;: &elogind-size;
 @z
 
 @x
           Estimated disk space required: &elogind-buildsize;
 @y
-          Estimated disk space required: &elogind-buildsize;
+          &Estimateddiskspacerequired;: &elogind-buildsize;
 @z
 
 @x
           Estimated build time: &elogind-time;
 @y
-          Estimated build time: &elogind-time;
+          &Estimatedbuildtime;: &elogind-time;
 @z
 
 @x
     <bridgehead renderas="sect3">elogind Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">elogind Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;elogind&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -96,7 +95,7 @@
       <xref role="first" linkend="dbus"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref role="first" linkend="dbus"/>
     </para>
@@ -112,13 +111,13 @@
       <xref linkend="polkit" role="runtime"/> (runtime)
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>, and
-      <xref linkend="libxslt"/> (to build the man pages),
-      <xref linkend="linux-pam"/>, and
-      <xref linkend="polkit" role="runtime"/> (runtime)
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="libxslt"/> (man ページ生成のため),
+      <xref linkend="linux-pam"/>,
+      <xref linkend="polkit" role="runtime"/> (実行時)
     </para>
 @z
 
@@ -140,7 +139,7 @@
       SELinux</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       For the tests:
       <xref linkend="lxml"/>,
@@ -152,7 +151,7 @@
       <ulink url="https://github.com/scop/bash-completion">
       bash-completion</ulink>,
       <ulink url="https://mirrors.edge.kernel.org/pub/linux/utils/kernel/kexec/">
-      kexec</ulink>, and
+      kexec</ulink>,
       <ulink url="http://www.selinuxproject.org/page/Main_Page">
       SELinux</ulink>
     </para>
@@ -161,13 +160,13 @@
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Kernel Configuration</title>
 @y
-    <title>Kernel Configuration</title>
+    <title>&KernelConfiguration;</title>
 @z
 
 @x
@@ -181,7 +180,7 @@
 @x
     <title>Installation of elogind</title>
 @y
-    <title>Installation of elogind</title>
+    <title>&InstallationOf1;elogind&InstallationOf2;</title>
 @z
 
 @x
@@ -195,7 +194,7 @@
 @x
       This package does not come with a test suite.
 @y
-      This package does not come with a test suite.
+      &notTestSuite;
 @z
 
 @x
@@ -207,7 +206,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -241,7 +240,7 @@
 @x
   <title>Configuring elogind</title>
 @y
-  <title>Configuring elogind</title>
+  <title>&Configuring1;elogind&Configuring2;</title>
 @z
 
 @x
@@ -263,7 +262,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -271,9 +270,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -286,6 +285,7 @@
            libelogind.so
         </seg>
         <seg>
+          /lib/elogind,
           /etc/elogind,
           /usr/include/elogind, and
           /usr/share/doc/elogind-&elogind-version;
@@ -293,15 +293,16 @@
 @y
         <seg>
           busctl,
-          elogind-inhibit, and
+          elogind-inhibit,
           loginctl
         </seg>
         <seg>
            libelogind.so
         </seg>
         <seg>
+          /lib/elogind,
           /etc/elogind,
-          /usr/include/elogind, and
+          /usr/include/elogind,
           /usr/share/doc/elogind-&elogind-version;
         </seg>
 @z
@@ -309,7 +310,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x busctl

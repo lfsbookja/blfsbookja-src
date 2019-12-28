@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -17,7 +16,7 @@
 @x
   <!ENTITY woff2-time          "less than 0.1 SBU">
 @y
-  <!ENTITY woff2-time          "less than 0.1 SBU">
+  <!ENTITY woff2-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -47,25 +46,25 @@
 @x
           Download (HTTP): <ulink url="&woff2-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&woff2-download-http;"/>
+          &Download; (HTTP): <ulink url="&woff2-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&woff2-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&woff2-download-ftp;"/>
+          &Download; (FTP): <ulink url="&woff2-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &woff2-md5sum;
 @y
-          Download MD5 sum: &woff2-md5sum;
+          &Download; MD5 sum: &woff2-md5sum;
 @z
 
 @x
           Download size: &woff2-size;
 @y
-          Download size: &woff2-size;
+          &DownloadSize;: &woff2-size;
 @z
 
 @x
@@ -93,7 +92,7 @@
       <xref linkend="cmake"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="brotli"/>,
       <xref linkend="cmake"/>
@@ -150,28 +149,30 @@
 
 @x
         <seg>
+          None
         </seg>
         <seg>
-          libwoff2common.so, libwoff2dec.so and libwoff2enc.so.
+          libwoff2common.so, libwoff2dec.so and libwoff2enc.so
         </seg>
         <seg>
-          /usr/include/woff2.
+          /usr/include/woff2
         </seg>
 @y
         <seg>
+          &None;
         </seg>
         <seg>
-          libwoff2common.so, libwoff2dec.so and libwoff2enc.so.
+          libwoff2common.so, libwoff2dec.so, libwoff2enc.so
         </seg>
         <seg>
-          /usr/include/woff2.
+          /usr/include/woff2
         </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libwoff2common.so

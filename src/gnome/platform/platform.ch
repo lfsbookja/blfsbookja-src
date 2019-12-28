@@ -21,11 +21,8 @@
 
 @x
     The objective of this section is to build a
-    <application>GNOME</application> desktop, since we have
-    <application>systemd</application>.
+    <application>GNOME</application> desktop.
 @y
     The objective of this section is to build a
-    <application>GNOME</application> desktop, since we have
-    <application>systemd</application>.
+    <application>GNOME</application> desktop.
 @z
-

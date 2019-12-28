@@ -204,20 +204,12 @@
       An already active <phrase revision="sysv">graphical</phrase> session
       with bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Four tests,
-      <filename>platform/test-cleanup-linux</filename>,
-      <filename>platform/test-link-linux</filename>,
-      <filename>platform/test-route-linux</filename>, and
-      <filename>devices/test-acd</filename> are known to fail.
+      issue: <command>ninja test</command>. 
 @y
       An already active <phrase revision="sysv">graphical</phrase> session
       with bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Four tests,
-      <filename>platform/test-cleanup-linux</filename>,
-      <filename>platform/test-link-linux</filename>,
-      <filename>platform/test-route-linux</filename>, and
-      <filename>devices/test-acd</filename> are known to fail.
+      issue: <command>ninja test</command>. 
 @z
 
 @x

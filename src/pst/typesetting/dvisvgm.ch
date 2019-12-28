@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,17 +14,17 @@
 @z
 
 @x
-  <!ENTITY dvisvgm-buildsize     "319 MB (add 975 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.9 SBU (add 0.7 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "322 MB (add 978 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
 @y
-  <!ENTITY dvisvgm-buildsize     "319 MB (add 975 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.9 SBU (add 0.7 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "322 MB (add 978 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
 @z
 
 @x
     <title>Introduction to dvisvgm</title>
 @y
-    <title>Introduction to dvisvgm</title>
+    <title>&IntroductionTo1;dvisvgm&IntroductionTo2;</title>
 @z
 
 @x
@@ -39,49 +38,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&dvisvgm-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&dvisvgm-download-http;"/>
+          &Download; (HTTP): <ulink url="&dvisvgm-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&dvisvgm-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&dvisvgm-download-ftp;"/>
+          &Download; (FTP): <ulink url="&dvisvgm-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &dvisvgm-md5sum;
 @y
-          Download MD5 sum: &dvisvgm-md5sum;
+          &Download; MD5 sum: &dvisvgm-md5sum;
 @z
 
 @x
           Download size: &dvisvgm-size;
 @y
-          Download size: &dvisvgm-size;
+          &DownloadSize;: &dvisvgm-size;
 @z
 
 @x
           Estimated disk space required: &dvisvgm-buildsize;
 @y
-          Estimated disk space required: &dvisvgm-buildsize;
+          &Estimateddiskspacerequired;: &dvisvgm-buildsize;
 @z
 
 @x
           Estimated build time: &dvisvgm-time;
 @y
-          Estimated build time: &dvisvgm-time;
+          &Estimatedbuildtime;: &dvisvgm-time;
 @z
 
 @x
     <bridgehead renderas="sect3">dvisvgm Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">dvisvgm Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;dvisvgm&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -93,7 +92,7 @@
       <xref linkend="potrace"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <!-- EDITORS: the docs say it needs clipper, but it uses an internal
        modified version and cannot be built with system clipper -->
@@ -116,7 +115,7 @@
       (the current version is included in the tarball)
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="asciidoc"/> with
       <xref linkend="xmlto"/> and
@@ -133,13 +132,13 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/dvisvgm"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/dvisvgm"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/dvisvgm"/>
 @z
 
 @x
     <title>Installation of dvisvgm</title>
 @y
-    <title>Installation of dvisvgm</title>
+    <title>&InstallationOf1;dvisvgm&InstallationOf2;</title>
 @z
 
 @x
@@ -177,7 +176,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -229,7 +228,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -237,9 +236,9 @@
       <segtitle>Installed Librar(y,ies)</segtitle>
       <segtitle>Installed Director(y,ies)</segtitle>
 @y
-      <segtitle>Installed Program(s)</segtitle>
-      <segtitle>Installed Librar(y,ies)</segtitle>
-      <segtitle>Installed Director(y,ies)</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -267,7 +266,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x dvisvgm

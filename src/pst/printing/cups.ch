@@ -276,14 +276,6 @@
 @z
 
 @x
-      <command>sed ... Makedefs.in</command>: Fix files and directories
-      permissions.
-@y
-      <command>sed ... Makedefs.in</command>: Fix files and directories
-      permissions.
-@z
-
-@x
       <command>sed ... tools/ipptool.c</command>: This sed fixes a bug caused
       by glibc-2.30 changing the user-space API for sockets.
 @y

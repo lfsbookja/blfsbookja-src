@@ -18,6 +18,7 @@ CHANGE_FILES = \
 	perl-class-inspector.ch \
 	perl-class-singleton.ch \
 	perl-class-tiny.ch \
+	perl-clone.ch \
 	perl-config-autoconf.ch \
 	perl-cpan-meta-check.ch \
 	perl-datetime-format-strptime.ch \

@@ -144,8 +144,7 @@
       some of the tests to run. If you have a former version of MIT Kerberos V5
       installed, it may happen that the test suite pick up the installed
       versions of the libraries, rather than the newly built ones. If so, it is
-      better to run the tests after the installation. The t_ccselect test
-      is known to fail.
+      better to run the tests after the installation.
 @y
       To test the build, issue as the <systemitem
       class="username">root</systemitem> user: <command>make -k check</command>.
@@ -154,8 +153,7 @@
       some of the tests to run. If you have a former version of MIT Kerberos V5
       installed, it may happen that the test suite pick up the installed
       versions of the libraries, rather than the newly built ones. If so, it is
-      better to run the tests after the installation. The t_ccselect test
-      is known to fail.
+      better to run the tests after the installation.
 @z
 
 @x
@@ -551,7 +549,7 @@
         <seg>
           gss-client, gss-server, k5srvutil, kadmin, kadmin.local,
           kadmind, kdb5_ldap_util (optional), kdb5_util, kdestroy, kinit, klist,
-          kpasswd, kprop, kpropd, kproplog, krb5-config, krb5kdc, krb5-send-pr,
+          kpasswd, kprop, kpropd, kproplog, krb5-config, krb5-send-pr, krb5kdc,
           ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server,
           sserver, uuclient, and uuserver
         </seg>
@@ -566,13 +564,13 @@
           /usr/lib/krb5,
           /usr/share/{doc/krb5-&mitkrb-version;,examples/krb5},
           /var/lib/krb5kdc, and 
-          /var/lib/run/krb5kdc 
+          /run/krb5kdc 
         </seg>
 @y
         <seg>
           gss-client, gss-server, k5srvutil, kadmin, kadmin.local,
           kadmind, kdb5_ldap_util (optional), kdb5_util, kdestroy, kinit, klist,
-          kpasswd, kprop, kpropd, kproplog, krb5-config, krb5kdc, krb5-send-pr,
+          kpasswd, kprop, kpropd, kproplog, krb5-config, krb5-send-pr, krb5kdc,
           ksu, kswitch, ktutil, kvno, sclient, sim_client, sim_server,
           sserver, uuclient, uuserver
         </seg>
@@ -587,7 +585,7 @@
           /usr/lib/krb5,
           /usr/share/{doc/krb5-&mitkrb-version;,examples/krb5},
           /var/lib/krb5kdc,
-          /var/lib/run/krb5kdc 
+          /run/krb5kdc 
         </seg>
 @z
 

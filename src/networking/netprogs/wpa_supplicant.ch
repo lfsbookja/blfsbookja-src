@@ -88,12 +88,16 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libnl"/> 
+      <xref linkend="desktop-file-utils"/> (for running
+        <command>update-desktop-database</command>) and
+      <xref linkend="libnl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libnl"/> 
+      <xref linkend="desktop-file-utils"/> (for running
+        <command>update-desktop-database</command>) and
+      <xref linkend="libnl"/>
     </para>
 @z
 

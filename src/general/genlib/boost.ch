@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY boost-buildsize     "943 MB (168 MB installed)">
-  <!ENTITY boost-time          "1.5 SBU (Using parallelism=4; add 1.1 SBU for tests)">
+  <!ENTITY boost-buildsize     "1.0 GB (168 MB installed)">
+  <!ENTITY boost-time          "1.5 SBU (Using parallelism=4; add 1.3 SBU for tests)">
 @y
-  <!ENTITY boost-buildsize     "943 MB (インストールサイズは 168 MB)">
-  <!ENTITY boost-time          "1.5 SBU (parallelism=4; テスト実施時はさらに 1.1 SBU)">
+  <!ENTITY boost-buildsize     "1.0 GB (インストールサイズは 168 MB)">
+  <!ENTITY boost-time          "1.5 SBU (parallelism=4; テスト実施時はさらに 1.3 SBU)">
 @z
 
 @x
@@ -100,15 +100,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="icu"/>,
-      <xref linkend="python2"/>, and
+      <xref linkend="icu"/> and
       <ulink url="https://www.open-mpi.org/">Open MPI</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="icu"/>,
-      <xref linkend="python2"/>,
       <ulink url="https://www.open-mpi.org/">Open MPI</ulink>
     </para>
 @z
@@ -140,12 +138,12 @@
       To run the Boost.Build's regression test, <xref linkend="python2"/>
       is required.
       Run the tests with: issue <command>pushd tools/build/test; 
-      python test_all.py; popd</command>. 
+      python3 test_all.py; popd</command>. 
       All 152 tests should pass.
 @y
       Boost.Build の縮退テストを実施するには <xref linkend="python2"/> が必要です。
       テストは <command>pushd tools/build/test; 
-      python test_all.py; popd</command> を実行します。
+      python3 test_all.py; popd</command> を実行します。
       全テスト 152 個が成功するはずです。
 @z
 
