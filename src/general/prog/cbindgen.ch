@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cbindgen-buildsize     "91 MB (add 516 MB for tests)">
-  <!ENTITY cbindgen-time          "0.9 SBU (Using paralleism=4; add 0.5 SBU for tests)">
+  <!ENTITY cbindgen-buildsize     "97 MB (add 520 MB for tests)">
+  <!ENTITY cbindgen-time          "1.1 SBU (Using parallelism=4; add 0.5 SBU for tests)">
 @y
-  <!ENTITY cbindgen-buildsize     "91 MB (add 516 MB for tests)">
-  <!ENTITY cbindgen-time          "0.9 SBU (Using paralleism=4; add 0.5 SBU for tests)">
+  <!ENTITY cbindgen-buildsize     "97 MB (add 520 MB for tests)">
+  <!ENTITY cbindgen-time          "1.1 SBU (Using parallelism=4; add 0.5 SBU for tests)">
 @z
 
 @x
@@ -127,10 +127,10 @@
 
 @x
       To test the results, issue: <command>cargo test</command>.
-      Five tests, test_expand*, are known to fail.
+      Six tests, test_expand*, are known to fail.
 @y
       To test the results, issue: <command>cargo test</command>.
-      Five tests, test_expand*, are known to fail.
+      Six tests, test_expand*, are known to fail.
 @z
 
 @x

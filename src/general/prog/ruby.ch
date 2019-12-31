@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY ruby-buildsize     "423 MB (add 139 MB for C API docs)">
-  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 3.8 SBU for tests; add 0.5 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "451 MB (add 214 MB for C API docs)">
+  <!ENTITY ruby-time          "1.7 SBU (using parallelism=4; add 4.8 SBU for tests; add 0.5 SBU for C API docs)">
 @y
-  <!ENTITY ruby-buildsize     "423 MB (add 139 MB for C API docs)">
-  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 3.8 SBU for tests; add 0.5 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "451 MB (add 214 MB for C API docs)">
+  <!ENTITY ruby-time          "1.7 SBU (using parallelism=4; add 4.8 SBU for tests; add 0.5 SBU for C API docs)">
 @z
 
 @x
@@ -136,18 +136,16 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. There are
-      over 20,000 tests. Some tests (up to 0.5 percent) may fail.
-      If the tests are run in a directory
-      that has a world writable component (e.g. /tmp) then several additional
-      tests may fail. Several jit (just-in-time) tests are known to fail.
+      To test the results, issue: <command>make check</command>. There are over
+      21,000 tests. Some tests related to ipv6 may indicate errors.  If the
+      tests are run in a directory that has a world writable component (e.g.
+      /tmp) then several additional tests may fail. 
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      There are
-      over 20,000 tests. Some tests (up to 0.5 percent) may fail.
-      If the tests are run in a directory
-      that has a world writable component (e.g. /tmp) then several additional
-      tests may fail. Several jit (just-in-time) tests are known to fail.
+      There are over
+      21,000 tests. Some tests related to ipv6 may indicate errors.  If the
+      tests are run in a directory that has a world writable component (e.g.
+      /tmp) then several additional tests may fail. 
 @z
 
 @x

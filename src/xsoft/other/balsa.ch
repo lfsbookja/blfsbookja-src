@@ -82,8 +82,7 @@
       <xref linkend="aspell"/>,
       <xref linkend="enchant"/>,
       <xref linkend="gmime"/>,
-      <xref linkend='gpgme'/>,
-      <xref linkend="libesmtp"/>, and
+      <xref linkend='gpgme'/>, and
       <xref linkend="rarian"/>
     </para>
 @y
@@ -93,8 +92,21 @@
       <xref linkend="enchant"/>,
       <xref linkend="gmime"/>,
       <xref linkend='gpgme'/>,
-      <xref linkend="libesmtp"/>,
       <xref linkend="rarian"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required (Runtime)</bridgehead>
+    <para role="required">
+      <xref role="runtime" linkend="server-mail"/> (that provides a
+      <command>sendmail</command> command)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
+    <para role="required">
+      <xref role="runtime" linkend="server-mail"/> (that provides a
+      <command>sendmail</command> command)
     </para>
 @z
 
@@ -117,10 +129,6 @@
       <xref linkend="gtksourceview"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="server-mail"/> (that provides a
-      <command>sendmail</command> command, note that it is only used if you
-      didn't install the required <application>libESMTP</application>
-      package),
       <xref linkend="openldap"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="webkitgtk"/>,
@@ -134,14 +142,10 @@
       <xref linkend="gtksourceview"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="server-mail"/> (that provides a
-      <command>sendmail</command> command, note that it is only used if you
-      didn't install the required <application>libESMTP</application>
-      package),
       <xref linkend="openldap"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="webkitgtk"/>,
-      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>, and
+      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>,
       <ulink url="https://pypi.python.org/pypi/html2text/">python-html2text</ulink>
     </para>
 @z

@@ -41,7 +41,6 @@ CHANGE_FILES = \
 	libbytesize.ch \
 	libdaemon.ch \
 	libcroco.ch \
-	libesmtp.ch \
 	libgcrypt.ch \
 	libgpg-error.ch \
 	libgrss.ch \
