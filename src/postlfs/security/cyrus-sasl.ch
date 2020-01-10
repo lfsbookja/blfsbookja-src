@@ -336,11 +336,11 @@
 
 @x
         See
-        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/sysadmin.html"/>
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/html/sysadmin.html"/>
         for information on what to include in the application configuration files.
 @y
         See
-        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/sysadmin.html"/>
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/html/sysadmin.html"/>
         for information on what to include in the application configuration files.
 @z
 
@@ -358,11 +358,11 @@
 
 @x
         See
-        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/gssapi.html"/>
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/html/gssapi.html"/>
         for configuring <command>saslauthd</command> with <application>Kerberos</application>.
 @y
         See
-        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/gssapi.html"/>
+        <ulink url="file:///usr/share/doc/cyrus-sasl-&cyrus-sasl-version;/html/gssapi.html"/>
         for configuring <command>saslauthd</command> with <application>Kerberos</application>.
 @z
 

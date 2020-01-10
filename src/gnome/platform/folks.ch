@@ -87,8 +87,7 @@
       <xref linkend="evolution-data-server"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgee"/>,
-<!-- one file "tests/tools/manager-file.py" is still P2 -->
-      <xref linkend="python2"/> (during the build), and
+<!-- one file "tests/tools/manager-file.py" is still P2 but it's not invoked -->
       <xref linkend="telepathy-glib"/>
     </para>
 @y
@@ -97,8 +96,7 @@
       <xref linkend="evolution-data-server"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgee"/>,
-<!-- one file "tests/tools/manager-file.py" is still P2 -->
-      <xref linkend="python2"/> (during the build),
+<!-- one file "tests/tools/manager-file.py" is still P2 but it's not invoked -->
       <xref linkend="telepathy-glib"/>
     </para>
 @z

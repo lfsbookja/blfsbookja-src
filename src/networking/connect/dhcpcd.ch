@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY dhcpcd-time          "less than 0.1 SBU">
+  <!ENTITY dhcpcd-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY dhcpcd-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY dhcpcd-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x

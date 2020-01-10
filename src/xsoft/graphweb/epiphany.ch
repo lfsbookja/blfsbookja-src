@@ -101,12 +101,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libdazzle"/>
+      <xref linkend="libdazzle"/> and
+      <xref linkend="libhandy"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libdazzle"/>
+      <xref linkend="libdazzle"/>,
+      <xref linkend="libhandy"/>
     </para>
 @z
 

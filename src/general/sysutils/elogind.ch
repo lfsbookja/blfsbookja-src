@@ -192,9 +192,13 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>ninja test</command>. A few tests
+      are skipped if not run with <systemitem class="username">root</systemitem>
+      privileges.
 @y
-      &notTestSuite;
+      To test the results, issue: <command>ninja test</command>. A few tests
+      are skipped if not run with <systemitem class="username">root</systemitem>
+      privileges.
 @z
 
 @x

@@ -142,15 +142,9 @@
 @z
 
 @x
-      The testsuite is designed for testing changes to nss or nspr and is
-      not particularly useful for checking a released version (e.g. it needs
-      to be run on a non-optimized build with both nss and nspr directories
-      existing alongside each other). For further details, see the User Notes.
+      The unit tests were run during the build.
 @y
-      The testsuite is designed for testing changes to nss or nspr and is
-      not particularly useful for checking a released version (e.g. it needs
-      to be run on a non-optimized build with both nss and nspr directories
-      existing alongside each other). For further details, see the User Notes.
+      The unit tests were run during the build.
 @z
 
 @x

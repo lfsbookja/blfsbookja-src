@@ -149,9 +149,18 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. Over 100 tests
+      fail as a result of problems with the test suite. These test failures
+      are primarily related to svg1.1, and are comparison problems due to 
+      using a later version of Pango than what the developers created the
+      initial SVG files with.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      Over 100 tests
+      fail as a result of problems with the test suite. These test failures
+      are primarily related to svg1.1, and are comparison problems due to 
+      using a later version of Pango than what the developers created the
+      initial SVG files with.
 @z
 
 @x

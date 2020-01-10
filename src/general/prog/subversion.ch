@@ -118,6 +118,7 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
+      <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
       <xref linkend="python2"/> (with sqlite support for the tests),
@@ -135,6 +136,7 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
+      <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
       <xref linkend="python2"/> (with sqlite support for the tests),

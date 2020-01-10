@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -23,99 +22,59 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to libdazzle</title>
 @y
-  <sect2 role="package">
     <title>Introduction to libdazzle</title>
 @z
 
 @x
-    <para>
       <application>libdazzle</application> is a companion library to GObject
       and GTK+ that adds APIs for special graphical effects.
-    </para>
 @y
-    <para>
       <application>libdazzle</application> is a companion library to GObject
       and GTK+ that adds APIs for special graphical effects.
-    </para>
-@z
-
-@x
-    &lfs90_checked;
-@y
-    &lfs90_checked;
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&libdazzle-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&libdazzle-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &libdazzle-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &libdazzle-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &libdazzle-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &libdazzle-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&libdazzle-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&libdazzle-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&libdazzle-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&libdazzle-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &libdazzle-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &libdazzle-md5sum;
+@z
+
+@x
           Download size: &libdazzle-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &libdazzle-size;
+@z
+
+@x
           Estimated disk space required: &libdazzle-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &libdazzle-buildsize;
+@z
+
+@x
           Estimated build time: &libdazzle-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &libdazzle-time;
 @z
 
 @x
@@ -130,110 +89,63 @@
       <xref linkend="gtk3"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">
       User Notes: <ulink url="&blfs-wiki;/libdazzle"/>
-    </para>
-  </sect2>
 @y
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/libdazzle"/>
-    </para>
-  </sect2>
+      &UserNotes;: <ulink url="&blfs-wiki;/libdazzle"/>
 @z
 
 @x
-  <sect2 role="installation">
     <title>Installation of libdazzle</title>
 @y
-  <sect2 role="installation">
     <title>Installation of libdazzle</title>
 @z
 
 @x
-    <para>
       Install <application>libdazzle</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>libdazzle</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@y
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@z
-
-@x
-meson --prefix=/usr .. &amp;&amp;
-ninja</userinput></screen>
-@y
-meson --prefix=/usr .. &amp;&amp;
-ninja</userinput></screen>
-@z
-
-@x
-    <para>
       To test the results, issue: <command>ninja test</command>.
-    </para>
+      Two tests may fail due to a theme parsing error.
 @y
-    <para>
       To test the results, issue: <command>ninja test</command>.
-    </para>
+      Two tests may fail due to a theme parsing error.
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>ninja install</userinput></screen>
-  </sect2>
-@y
-<screen role="root"><userinput>ninja install</userinput></screen>
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           dazzle-list-counters
         </seg>
@@ -243,10 +155,7 @@ ninja</userinput></screen>
         <seg>
           /usr/include/libdazzle-1.0
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           dazzle-list-counters
         </seg>
@@ -256,76 +165,22 @@ ninja</userinput></screen>
         <seg>
           /usr/include/libdazzle-1.0
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="dazzle-list-counters">
-        <term><command>dazzle-list-counters</command></term>
-        <listitem>
-          <para>
+@x dazzle-list-counters
             lists counters that are in use by a process.
-          </para>
-          <indexterm zone="libdazzle dazzle-list-counters">
-            <primary sortas="b-dazzle-list-counters">dazzle-list-counters</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="dazzle-list-counters">
-        <term><command>dazzle-list-counters</command></term>
-        <listitem>
-          <para>
             lists counters that are in use by a process.
-          </para>
-          <indexterm zone="libdazzle dazzle-list-counters">
-            <primary sortas="b-dazzle-list-counters">dazzle-list-counters</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="libdazzle-lib">
-        <term><filename class="libraryfile">libdazzle-1.0.so</filename></term>
-        <listitem>
-          <para>
+@x libdazzle-1.0.so
             contains API functions for graphical effects
-          </para>
-          <indexterm zone="libdazzle libdazzle">
-            <primary sortas="c-libdazzle">libdazzle-1.0.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-  </sect2>
-</sect1>
 @y
-      <varlistentry id="libdazzle-lib">
-        <term><filename class="libraryfile">libdazzle-1.0.so</filename></term>
-        <listitem>
-          <para>
             contains API functions for graphical effects
-          </para>
-          <indexterm zone="libdazzle libdazzle">
-            <primary sortas="c-libdazzle">libdazzle-1.0.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-  </sect2>
-</sect1>
 @z

@@ -177,13 +177,23 @@
 @z
 
 @x
+      Running the test suite is optional. About 2% of the tests fail. Increase
+      in test time by each failed test is about 10%. Tests SBU above was
+      obtained disabling failing tests, with:
+@y
+      Running the test suite is optional. About 2% of the tests fail. Increase
+      in test time by each failed test is about 10%. Tests SBU above was
+      obtained disabling failing tests, with:
+@z
+
+@x
        To run the test suite, issue: <command>make test</command>. 
-       Tests 323 and 1560 are known to fail.  A few other tests may fail
-       randomly for unknown reasons.
+       Tests 323, 1139, 1140, 1173, and 1560 are known to fail.  
+       A few other tests may fail randomly for unknown reasons.
 @y
        To run the test suite, issue: <command>make test</command>. 
-       Tests 323 and 1560 are known to fail.  A few other tests may fail
-       randomly for unknown reasons.
+       Tests 323, 1139, 1140, 1173, and 1560 are known to fail.  
+       A few other tests may fail randomly for unknown reasons.
 @z
 
 @x
