@@ -119,17 +119,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="qt5"/> (for the Qt-based GUI),
-      <xref linkend="subversion"/> (for testing), 
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (for building documents), and 
-      <ulink url="https://github.com/facebook/zstd">zstd</ulink> (for testing)
+      <xref linkend="subversion"/> (for testing), and
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (for building documents)
+      <!--<ulink url="https://github.com/facebook/zstd">zstd</ulink> (for testing) NOW IN LFS -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
       <xref linkend="subversion"/> (テスト時), 
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (ドキュメント構築時),
-      <ulink url="https://github.com/facebook/zstd">zstd</ulink> (テスト時)
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (ドキュメント構築時)
+      <!--<ulink url="https://github.com/facebook/zstd">zstd</ulink> (for testing) NOW IN LFS -->
     </para>
 @z
 

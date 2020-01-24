@@ -151,6 +151,7 @@
       <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
+      <ulink url="https://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/">mobile-broadband-provider-info</ulink>,
       <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
       <ulink url="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</ulink>
     </para>
@@ -168,7 +169,8 @@
       <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
-      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>,
+      <ulink url="https://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/">mobile-broadband-provider-info</ulink>,
+      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
       <ulink url="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</ulink>
     </para>
 @z
@@ -273,11 +275,13 @@
 @x
       <parameter>-Dmodem_manager=false</parameter>: This switch is requried if
       <application>ModemManager</application> is not installed. Omit if you
-      have built <application>ModemManager</application>.
+      have built <application>ModemManager</application> and
+      <application>mobile-broadband-provider-info</application>.
 @y
       <parameter>-Dmodem_manager=false</parameter>: This switch is requried if
       <application>ModemManager</application> is not installed. Omit if you
-      have built <application>ModemManager</application>.
+      have built <application>ModemManager</application> and
+      <application>mobile-broadband-provider-info</application>.
 @z
 
 @x revision="sysv"

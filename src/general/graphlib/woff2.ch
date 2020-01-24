@@ -88,7 +88,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="brotli"/>,
+      <xref linkend="brotli"/> and
       <xref linkend="cmake"/>
     </para>
 @y

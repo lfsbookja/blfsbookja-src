@@ -1,9 +1,9 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author: matsuand $
-## $Rev: 23 $
-## $Date:: 2018-08-23 16:57:07 +0900#$
+## $Author$
+## $Rev$
+## $Date::                           $
 ##
 BOOKdir = @abs_bookdir@/general/prog/perl-modules
 CHANGE_FILES = \

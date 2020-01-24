@@ -107,11 +107,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="lua"/> (to create Lua bindings) and
       <xref linkend="python2"/> (to create python2 bindings)
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="lua"/> (to create Lua bindings) and
       <xref linkend="python2"/> (to create python2 bindings)
     </para>
 @z

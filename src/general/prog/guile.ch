@@ -162,7 +162,7 @@
           guild, guile, guile-config, guile-snarf and guile-tools
         </seg>
         <seg>
-          libguile-2.0.so and libguilereadline-v-18.so
+          libguile-3.0.so and guile-readline.so
         </seg>
         <seg>
           /usr/include/guile,
@@ -175,7 +175,7 @@
           guild, guile, guile-config, guile-snarf, guile-tools
         </seg>
         <seg>
-          libguile-2.0.so, libguilereadline-v-18.so
+          libguile-3.0.so, guile-readline.so
         </seg>
         <seg>
           /usr/include/guile,

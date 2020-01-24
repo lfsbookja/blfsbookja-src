@@ -78,15 +78,17 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/> and
-      <xref linkend="libtiff"/>
+      <xref linkend="libpng"/>,
+      <xref linkend="libtiff"/>, and
+      <xref linkend="sdl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="libtiff"/>
+      <xref linkend="libtiff"/>,
+      <xref linkend="sdl"/>
     </para>
 @z
 

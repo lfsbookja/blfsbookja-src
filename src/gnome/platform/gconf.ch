@@ -108,13 +108,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
+       <!--<xref linkend="gtk-doc"/> and -->
       <xref linkend="openldap"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
+       <!--<xref linkend="gtk-doc"/> and -->
       <xref linkend="openldap"/>
     </para>
 @z

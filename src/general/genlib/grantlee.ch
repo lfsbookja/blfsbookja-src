@@ -76,18 +76,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch:
-@y
-          必須のパッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">Grantlee Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Grantlee&Dependencies2;</bridgehead>
@@ -115,14 +103,6 @@
     <title>Installation of Grantlee</title>
 @y
     <title>&InstallationOf1;Grantlee&InstallationOf2;</title>
-@z
-
-@x
-    <para>First, make some updates from upstream:</para>
-@y
-    <para>
-    はじめにアップストリームによる更新を適用します。
-    </para>
 @z
 
 @x
