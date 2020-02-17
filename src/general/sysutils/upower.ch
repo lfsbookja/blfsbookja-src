@@ -114,8 +114,8 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="pygobject3"/>,
-      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>, and
-      <ulink url="https://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
+      <xref linkend="python-dbusmock"/>, and 
+      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>
       (for part of the testsuite).
     </para>
 @y
@@ -123,8 +123,8 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="pygobject3"/>,
-      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>,
-      <ulink url="https://pypi.python.org/pypi/python-dbusmock">python-dbusmock</ulink>
+      <xref linkend="python-dbusmock"/>,
+      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>
       (テストスイートの一部に必要)
     </para>
 @z

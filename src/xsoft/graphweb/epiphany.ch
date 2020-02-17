@@ -164,9 +164,13 @@
 @z
 
 @x
-      This package does not have a working test suite.
+      One test would fail if this package is not installed,
+      so it's better to run the test suite after installation.
+      To test the results, issue <command>ninja test</command>.
 @y
-      本パッケージに有効なテストスイートはありません。
+      本パッケージをインストールしていない状態では、テストが 1 つ失敗します。
+      したがってテストスイートは、インストールを終えてから行うのがよいでしょう。
+      テストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x

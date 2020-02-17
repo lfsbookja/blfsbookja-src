@@ -167,29 +167,26 @@
     Linux is <filename class="directory">/usr</filename>.  There is no
     standard alternate prefix, nor is there any exception in the current
     revision of the Filesystem Hierarchy Standard for Release 7 of the X
-    Window System.  Alan Coopersmith of Sun Microsystems, has recently
+    Window System.  Alan Coopersmith of Sun Microsystems, once
     stated "At Sun, we were using
     <filename class="directory">/usr/X11</filename> and plan to stick with
     it."  Only the <filename class="directory">/opt/*</filename> prefix or
     the <filename class="directory">/usr</filename> prefix adhere to the
     current FHS guidelines.</para>
 @y
-    <para>
-    
-    As with previous releases of the X Window System, it may be
+    <para>As with previous releases of the X Window System, it may be
     desirable to install <application>Xorg</application> into an alternate
     prefix.  This is no longer common practice among Linux distributions.
     The common installation prefix for <application>Xorg</application> on
     Linux is <filename class="directory">/usr</filename>.  There is no
     standard alternate prefix, nor is there any exception in the current
     revision of the Filesystem Hierarchy Standard for Release 7 of the X
-    Window System.  Alan Coopersmith of Sun Microsystems, has recently
+    Window System.  Alan Coopersmith of Sun Microsystems, once
     stated "At Sun, we were using
     <filename class="directory">/usr/X11</filename> and plan to stick with
     it."  Only the <filename class="directory">/opt/*</filename> prefix or
     the <filename class="directory">/usr</filename> prefix adhere to the
-    current FHS guidelines.
-    </para>
+    current FHS guidelines.</para>
 @z
 
 @x

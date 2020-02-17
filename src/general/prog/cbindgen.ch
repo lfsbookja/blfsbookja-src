@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cbindgen-buildsize     "91 MB (add 520 MB for tests)">
-  <!ENTITY cbindgen-time          "1.2 SBU (Using parallelism=4; add 0.5 SBU for tests)">
+  <!ENTITY cbindgen-buildsize     "92 MB (add 522 MB for tests)">
+  <!ENTITY cbindgen-time          "1.1 SBU (Using parallelism=4; add 0.5 SBU for tests)">
 @y
-  <!ENTITY cbindgen-buildsize     "91 MB (add 520 MB for tests)">
-  <!ENTITY cbindgen-time          "1.2 SBU (Using parallelism=4; add 0.5 SBU for tests)">
+  <!ENTITY cbindgen-buildsize     "92 MB (add 522 MB for tests)">
+  <!ENTITY cbindgen-time          "1.1 SBU (Using parallelism=4; add 0.5 SBU for tests)">
 @z
 
 @x

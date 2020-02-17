@@ -86,12 +86,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="enchant"/>
+      <xref linkend="enchant"/> and 
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="enchant"/>
+      <xref linkend="enchant"/>,
+      <xref linkend="gtk3"/>
     </para>
 @z
 

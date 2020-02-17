@@ -87,7 +87,7 @@
       <xref linkend="evolution-data-server"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgee"/>,
-<!-- one file "tests/tools/manager-file.py" is still P2 but it's not invoked -->
+      <xref linkend="python-dbusmock"/>, and 
       <xref linkend="telepathy-glib"/>
     </para>
 @y
@@ -96,7 +96,7 @@
       <xref linkend="evolution-data-server"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgee"/>,
-<!-- one file "tests/tools/manager-file.py" is still P2 but it's not invoked -->
+      <xref linkend="python-dbusmock"/>,
       <xref linkend="telepathy-glib"/>
     </para>
 @z

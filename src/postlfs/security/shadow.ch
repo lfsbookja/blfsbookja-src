@@ -181,8 +181,8 @@
 @z
 
 @x
-      <command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' -e
-      's@/var/spool/mail@/var/mail@' etc/login.defs</command>: Instead of using
+      <command>sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' -e
+      's@/var/spool/mail@/var/mail@' -i etc/login.defs</command>: Instead of using
       the default 'DES' method, this command modifies the installation to use
       the more secure 'SHA512' method of hashing passwords, which also allows
       passwords longer than eight characters. It also changes the obsolete
@@ -190,8 +190,8 @@
       mailboxes that <application>Shadow</application> uses by default to the
       <filename class="directory">/var/mail</filename> location.
 @y
-      <command>sed -i -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@'
-      -e 's@/var/spool/mail@/var/mail@' etc/login.defs</command>:
+      <command>sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' -e
+      's@/var/spool/mail@/var/mail@' -i etc/login.defs</command>:
       デフォルトで採用されている 'DES' メソッドではなく、よりセキュアな 'SHA512' メソッドを使ったハッシュパスワードをインストールするように変更します。
       これによりパスワードにて8文字以上の設定が可能となります。
       またユーザーのメールボックスの収容ディレクトリとして、古くなった <filename

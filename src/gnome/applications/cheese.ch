@@ -80,10 +80,8 @@
       <xref linkend="clutter-gst"/>,
       <xref linkend="clutter-gtk"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="gnome-video-effects"/>,
       <xref linkend="gst10-plugins-bad"/>,
       <xref linkend="gst10-plugins-good"/> (built with <xref linkend="v4l-utils"/>),
-      <xref linkend="itstool"/>,
       <xref linkend="libcanberra"/>, and
       <xref linkend="libgudev"/>
     </para>
@@ -93,10 +91,8 @@
       <xref linkend="clutter-gst"/>,
       <xref linkend="clutter-gtk"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="gnome-video-effects"/>,
       <xref linkend="gst10-plugins-bad"/>,
       <xref linkend="gst10-plugins-good"/> (built with <xref linkend="v4l-utils"/>),
-      <xref linkend="itstool"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="libgudev"/>
     </para>
@@ -105,12 +101,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref role="runtime" linkend="gnome-video-effects"/> (at runtime, for video effects),
       <xref linkend="gobject-introspection"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref role="runtime" linkend="gnome-video-effects"/> (at runtime, for video effects),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
     </para>

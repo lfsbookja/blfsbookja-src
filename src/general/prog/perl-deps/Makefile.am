@@ -97,6 +97,7 @@ CHANGE_FILES = \
 	perl-text-diff.ch \
 	perl-text-glob.ch \
 	perl-tie-cycle.ch \
+	perl-timedate.ch \
 	perl-try-tiny.ch \
 	perl-variable-magic.ch \
 	perl-www-robotrules.ch \

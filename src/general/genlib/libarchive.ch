@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libarchive-buildsize     "46 MB (add 29 MB for tests)">
-  <!ENTITY libarchive-time          "0.4 SBU (add 1.5 SBU for tests)">
+  <!ENTITY libarchive-buildsize     "40 MB (add 31 MB for tests)">
+  <!ENTITY libarchive-time          "0.4 SBU (add 1.3 SBU for tests)">
 @y
-  <!ENTITY libarchive-buildsize     "46 MB (テスト実施時はさらに 29 MB)">
+  <!ENTITY libarchive-buildsize     "40 MB (テスト実施時はさらに 31 MB)">
   <!ENTITY libarchive-time          "0.4 SBU (テスト実施時はさらに 1.5 SBU)">
 @z
 
@@ -86,17 +86,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libxml2"/>,
-      <xref linkend="lzo"/>,
-      <xref linkend="nettle"/>, and
-      <ulink url="https://facebook.github.io/zstd/">zstd</ulink>
+      <xref linkend="lzo"/>, and
+      <xref linkend="nettle"/>
+      <!-- <ulink url="https://facebook.github.io/zstd/">zstd</ulink> Now in LFS -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libxml2"/>,
       <xref linkend="lzo"/>,
-      <xref linkend="nettle"/>, and
-      <ulink url="https://facebook.github.io/zstd/">zstd</ulink>
+      <xref linkend="nettle"/>
+      <!-- <ulink url="https://facebook.github.io/zstd/">zstd</ulink> Now in LFS -->
     </para>
 @z
 

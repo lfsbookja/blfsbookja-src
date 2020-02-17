@@ -14,15 +14,15 @@
 @z
 
 @x
-      <title>Introduction to Business-ISBN-Data</title>
+      <title>Introduction to TimeDate</title>
 @y
-      <title>&IntroductionTo1;Business-ISBN-Data&IntroductionTo2;</title>
+      <title>&IntroductionTo1;TimeDate&IntroductionTo2;</title>
 @z
 
 @x
-        Business-ISBN-Data is a data pack for Business::ISBN.
+        TimeDate provides miscellaneous timezone manipulation routines.
 @y
-        Business-ISBN-Data is a data pack for Business::ISBN.
+        TimeDate provides miscellaneous timezone manipulation routines.
 @z
 
 @x
@@ -44,7 +44,7 @@
 @z
 
 @x
-      <title>Installation of Business-ISBN-Data</title>
+      <title>Installation of TimeDate</title>
 @y
-      <title>&InstallationOf1;Business-ISBN-Data&InstallationOf2;</title>
+      <title>&InstallationOf1;TimeDate&InstallationOf2;</title>
 @z

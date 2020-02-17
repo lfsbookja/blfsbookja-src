@@ -85,8 +85,7 @@
       <xref linkend="libsoup"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="json-glib"/>,
-      <xref linkend="uhttpmock"/>, and
+      <xref linkend="json-glib"/>, and
       <xref linkend="vala"/>
     </para>
 @y
@@ -97,7 +96,6 @@
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="json-glib"/>,
-      <xref linkend="uhttpmock"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -121,12 +119,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="uhttpmock"/> (required for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="uhttpmock"/> (テストに必要)
     </para>
 @z
 
@@ -150,9 +150,17 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. Note that
+      If you wish to run the test suite, make sure
+      <xref linkend="uhttpmock"/> is installed and remove
+      <parameter>-Dalways_build_tests=false</parameter> in the
+      <command>meson</command> command line.  To test the results,
+      issue: <command>ninja test</command>. Note that
       the tests need network access.
 @y
+      If you wish to run the test suite, make sure
+      <xref linkend="uhttpmock"/> is installed and remove
+      <parameter>-Dalways_build_tests=false</parameter> in the
+      <command>meson</command> command line.
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       テストの際にはネットワークアクセスが必要です。
 @z

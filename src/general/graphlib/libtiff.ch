@@ -103,18 +103,16 @@
     <para role="optional">
       <xref linkend="freeglut"/> (required for <command>tiffgt</command>),
       <xref linkend="libjpeg"/>,
-      <xref linkend="libwebp"/>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>, and
-      <ulink url="https://facebook.github.io/zstd/">Zstd</ulink>
+      <xref linkend="libwebp"/>, and
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="freeglut"/> (<command>tiffgt</command> に必要),
+      <xref linkend="freeglut"/> (required for <command>tiffgt</command>),
       <xref linkend="libjpeg"/>,
       <xref linkend="libwebp"/>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-      <ulink url="https://facebook.github.io/zstd/">Zstd</ulink>
+      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
     </para>
 @z
 

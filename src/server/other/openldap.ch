@@ -100,7 +100,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="icu"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="pth"/>,
       <xref linkend="unixodbc"/>,
@@ -113,7 +112,6 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="icu"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="pth"/>,
       <xref linkend="unixodbc"/>,

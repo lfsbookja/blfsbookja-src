@@ -86,7 +86,6 @@
       <xref linkend="cmake"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gst10-plugins-bad"/>,
-      <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
       <xref linkend="libgudev"/>,
@@ -106,7 +105,6 @@
       <xref linkend="cmake"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gst10-plugins-bad"/>,
-      <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
       <xref linkend="libgudev"/>,
@@ -144,9 +142,9 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="bubblewrap"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
-      <xref linkend="llvm"/>,
       <xref linkend="wayland"/>,
       <xref linkend="woff2"/>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
@@ -158,9 +156,9 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="bubblewrap"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="harfbuzz"/>,
-      <xref linkend="llvm"/>,
       <xref linkend="wayland"/>,
       <xref linkend="woff2"/>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,

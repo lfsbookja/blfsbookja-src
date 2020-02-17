@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY wayland-buildsize     "13 MB (with tests)">
+  <!ENTITY wayland-buildsize     "14 MB (with tests)">
   <!ENTITY wayland-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY wayland-buildsize     "13 MB (テスト込み)">
+  <!ENTITY wayland-buildsize     "14 MB (テスト込み)">
   <!ENTITY wayland-time          "0.2 SBU (テスト込み)">
 @z
 
@@ -139,14 +139,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. If a Desktop
-      Environment has not been started that uses XDG, it's possible that 90%
-      of the test suite will fail. To rectify this, create the directory listed
-      in $XDG_RUNTIME_DIR first, if required.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      XDG を利用していないデスクトップ環境が稼動している場合、テストスイートの 9 割が失敗する可能性があります。
-      これを適正に処理したい場合は、先に $XDG_RUNTIME_DIR に示されるディレクトリを生成してください。
 @z
 
 @x

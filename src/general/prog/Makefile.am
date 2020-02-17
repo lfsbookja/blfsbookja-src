@@ -12,6 +12,7 @@ CHANGE_FILES_pythonmodules = \
 	dbus-python.ch   \
 	pyatspi2.ch      \
 	pycairo.ch       \
+	pycairo2.ch      \
 	pycryptodome.ch  \
 	pygobject2.ch    \
 	pygobject3.ch    \
@@ -59,6 +60,7 @@ CHANGE_FILES = \
 	php.ch            \
 	prog.ch           \
 	pygments.ch       \
+	python-dbusmock.ch \
 	python-modules.ch \
 	python-slip.ch    \
 	python2.ch        \

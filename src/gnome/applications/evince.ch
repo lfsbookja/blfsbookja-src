@@ -132,7 +132,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libgxps"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <!--<ulink url="http://ftp.gnome.org/pub/gnome/sources/gspell">gspell</ulink>,-->
       <!--<ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,-->
@@ -151,12 +151,12 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libgxps"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <!--<ulink url="http://ftp.gnome.org/pub/gnome/sources/gspell">gspell</ulink>,-->
       <!--<ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,-->
       <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
-      <ulink url="https://github.com/jlaurens/synctex">Synctex</ulink>,
+      <ulink url="https://github.com/jlaurens/synctex">Synctex</ulink>, and
       <ulink url="https://www.ibiblio.org/pub/Linux/libs/graphics/!INDEX.html">t1lib</ulink>
     </para>
 @z

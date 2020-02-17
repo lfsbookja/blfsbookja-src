@@ -80,7 +80,6 @@
       <xref linkend="gcr"/>,
       <xref linkend="json-glib"/>, 
       <xref linkend="rest"/>,
-      <xref linkend="telepathy-glib"/>,
       <xref linkend="vala"/>, and
       <xref linkend="webkitgtk"/>
     </para>
@@ -90,7 +89,6 @@
       <xref linkend="gcr"/>,
       <xref linkend="json-glib"/>, 
       <xref linkend="rest"/>,
-      <xref linkend="telepathy-glib"/>,
       <xref linkend="vala"/>,
       <xref linkend="webkitgtk"/>
     </para>
@@ -111,7 +109,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cheese"/> (for camera tracking support),
       <xref linkend="gtk-doc"/>,
       <xref linkend="mitkrb"/>, and
       <xref linkend="valgrind"/>
@@ -120,9 +117,8 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cheese"/> (for camera tracking support),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="mitkrb"/>,
+      <xref linkend="mitkrb"/>, and
       <xref linkend="valgrind"/>
       <!-- <ulink url="https://gitlab.com/accounts-sso/libaccounts-glib">libaccounts-glib</ulink>,
       <ulink url="https://launchpad.net/account-plugins">account-plugins</ulink> -->

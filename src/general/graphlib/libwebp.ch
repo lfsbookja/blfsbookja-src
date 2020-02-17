@@ -80,7 +80,7 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>, and
-      <xref linkend="sdl"/>
+      <xref linkend="sdl"/> (for improved 3D Acceleration)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -88,7 +88,7 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="sdl"/>
+      <xref linkend="sdl"/> (for improved 3D Acceleration)
     </para>
 @z
 

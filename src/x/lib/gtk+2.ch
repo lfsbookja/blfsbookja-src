@@ -108,6 +108,8 @@
     <para role="optional">
       <xref linkend="cups"/>,
       <xref linkend="docbook-utils"/>,
+      <xref role="runtime" linkend="gnome-themes-extra"/> (runtime, for
+      Adwaita and HighContrast themes),
       <xref linkend="gobject-introspection"/> and
       <xref linkend="gtk-doc"/>
     </para>
@@ -116,7 +118,9 @@
     <para role="optional">
       <xref linkend="cups"/>,
       <xref linkend="docbook-utils"/>,
-      <xref linkend="gobject-introspection"/> and
+      <xref role="runtime" linkend="gnome-themes-extra"/> (runtime, for
+      Adwaita and HighContrast themes),
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>
     </para>
 @z
@@ -228,8 +232,8 @@
         <application>GTK+ 2</application> application looks. A
         <application>GTK+ 2</application> icon theme can be used to change the
         icons that appear on the application's toolbar. If you have installed a
-        <application>GTK+ 2</application> theme (such as <ulink
-        url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink> or
+        <application>GTK+ 2</application> theme (such as
+        <xref linkend="gnome-themes-extra"/> or
         <xref linkend="gtk-engines"/>), a
         <application>GTK+</application> icon theme (such as <xref
         linkend="adwaita-icon-theme"/>) you can set your preferences in
@@ -239,8 +243,8 @@
         <application>GTK+ 2</application> application looks. A
         <application>GTK+ 2</application> icon theme can be used to change the
         icons that appear on the application's toolbar. If you have installed a
-        <application>GTK+ 2</application> theme (such as <ulink
-        url="http://ftp.gnome.org/pub/gnome/sources/gnome-themes/2.32/">gnome-themes</ulink> or
+        <application>GTK+ 2</application> theme (such as
+        <xref linkend="gnome-themes-extra"/> or
         <xref linkend="gtk-engines"/>), a
         <application>GTK+</application> icon theme (such as <xref
         linkend="adwaita-icon-theme"/>) you can set your preferences in

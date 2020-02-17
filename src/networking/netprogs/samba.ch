@@ -86,6 +86,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="gnutls"/>,
       <xref linkend="jansson"/>,
       <xref linkend="libtirpc"/>,
       <xref linkend="lmdb"/>,
@@ -95,6 +96,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="gnutls"/>,
       <xref linkend="jansson"/>,
       <xref linkend="libtirpc"/>,
       <xref linkend="lmdb"/>,
@@ -137,7 +139,6 @@
       <xref linkend="gdb"/>,
       <xref linkend="git"/>,
       <xref linkend="gnupg2"/> (required for ADS and testsuite),
-      <xref linkend="gnutls"/>,
       <xref linkend="libaio"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
@@ -177,7 +178,6 @@
       <xref linkend="gdb"/>,
       <xref linkend="git"/>,
       <xref linkend="gnupg2"/> (required for ADS and testsuite),
-      <xref linkend="gnutls"/>,
       <xref linkend="libaio"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libcap-pam"/>,
@@ -204,7 +204,7 @@
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
-      <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
+      <ulink url="https://tevent.samba.org/">tevent</ulink> (included),
       <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
     </para>
 @z

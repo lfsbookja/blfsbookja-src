@@ -237,14 +237,16 @@
     url="https://www.freedesktop.org/wiki/Software/Plymouth/">Plymouth</ulink>
     which is designed to be run within an initial ram disk during boot (see
     <xref linkend="initramfs"/>).  The plasma-sdk package is optional and used
-    for software development.</para></note>
+    for software development. The plasma-nano package is used for embedded
+    systems and plasma-phone-components provides phone functionality for Plasma.</para></note>
 @y
     <note><para>The breeze-grub, breeze-plymouth, and plymouth-kcm packages 
     above are all for customized support of <ulink
     url="https://www.freedesktop.org/wiki/Software/Plymouth/">Plymouth</ulink>
     which is designed to be run within an initial ram disk during boot (see
     <xref linkend="initramfs"/>).  The plasma-sdk package is optional and used
-    for software development.</para></note>
+    for software development. The plasma-nano package is used for embedded
+    systems and plasma-phone-components provides phone functionality for Plasma.</para></note>
 @z
 
 @x
