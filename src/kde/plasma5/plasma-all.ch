@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY plasma5-buildsize     "1.2 GB (294 MB installed)">
-  <!ENTITY plasma5-time          "20 SBU (using parallelism=4)">
+  <!ENTITY plasma5-time          "17 SBU (using parallelism=4)">
 @y
   <!ENTITY plasma5-buildsize     "1.2 GB (294 MB installed)">
-  <!ENTITY plasma5-time          "20 SBU (using parallelism=4)">
+  <!ENTITY plasma5-time          "17 SBU (using parallelism=4)">
 @z
 
 @x

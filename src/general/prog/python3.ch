@@ -83,7 +83,7 @@
       <xref linkend="bluez"/>,
       <xref linkend="gdb"/> (required for some tests),
       <xref linkend="valgrind"/>, and
-      <ulink url="http://www.bytereef.org/mpdecimal">libmpcdec</ulink>
+      <ulink url="http://www.bytereef.org/mpdecimal">libmpdec</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -91,7 +91,7 @@
       <xref linkend="bluez"/>,
       <xref linkend="gdb"/> (required for some tests),
       <xref linkend="valgrind"/>, and
-      <ulink url="http://www.bytereef.org/mpdecimal">libmpcdec</ulink>
+      <ulink url="http://www.bytereef.org/mpdecimal">libmpdec</ulink>
     </para>
 @z
 

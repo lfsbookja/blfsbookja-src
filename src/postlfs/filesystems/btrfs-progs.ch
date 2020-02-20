@@ -114,17 +114,15 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (<command>dmsetup</command> is used in tests),
-      <xref linkend="python2"/> (python bindings),
-      <xref linkend="reiserfs"/> (for tests), and
-      <ulink url='https://github.com/facebook/zstd/releases/'>zstd</ulink> (for tests)
+      <xref linkend="python2"/> (python bindings), and
+      <xref linkend="reiserfs"/> (for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (テストにて <command>dmsetup</command> が利用される),
       <xref linkend="python2"/> (Python バインディング),
-      <xref linkend="reiserfs"/> (テストのため),
-      <ulink url='https://github.com/facebook/zstd/releases/'>zstd</ulink> (テストのため)
+      <xref linkend="reiserfs"/> (テストのため)
     </para>
 @z
 

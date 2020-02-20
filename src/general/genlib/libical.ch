@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libical-buildsize     "24 MB (with tests)">
+  <!ENTITY libical-time          "0.2 SBU (Using parallelism=4; with tests)">
+@y
+  <!ENTITY libical-buildsize     "24 MB (テスト込み)">
+  <!ENTITY libical-time          "0.2 SBU (parallelism=4 利用時; テスト込み)">
+@z
+
+@x
     <title>Introduction to libical</title>
 @y
     <title>&IntroductionTo1;libical&IntroductionTo2;</title>
@@ -83,6 +91,36 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/> and 
+      <xref linkend="vala"/>(both required for Gnome)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="vala"/>(いずれも Gnome において必要)
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="db"/>,
+      <xref linkend="doxygen"/> (for the API documentation),
+      <xref linkend="icu"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="db"/>,
+      <xref linkend="doxygen"/> (API ドキュメント生成のため),
+      <xref linkend="icu"/>
     </para>
 @z
 

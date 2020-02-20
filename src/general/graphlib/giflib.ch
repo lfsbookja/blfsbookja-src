@@ -153,13 +153,11 @@
 @z
 
 @x
-        <seg>gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto, gifsponge,
-        giftext and giftool</seg>
+        <seg>gif2rgb, gifbuild, gifclrmp, giffix, giftext, and giftool</seg>
         <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>
 @y
-        <seg>gif2rgb, gifbuild, gifclrmp, gifecho, giffix, gifinto, gifsponge,
-        giftext, giftool</seg>
+        <seg>gif2rgb, gifbuild, gifclrmp, giffix, giftext, giftool</seg>
         <seg>libgif.so</seg>
         <seg>/usr/share/doc/giflib-&giflib-version;</seg>
 @z

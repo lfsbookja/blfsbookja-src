@@ -139,13 +139,17 @@
       To test the results, issue: <command>make check</command>. There are over
       21,000 tests. Some tests related to ipv6 may indicate errors.  If the
       tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. 
+      /tmp) then several additional tests may fail. One test related to
+      the time function may fail due to a change in expectations as a result of
+      glibc-2.31.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       There are over
       21,000 tests. Some tests related to ipv6 may indicate errors.  If the
       tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. 
+      /tmp) then several additional tests may fail. One test related to
+      the time function may fail due to a change in expectations as a result of
+      glibc-2.31.
 @z
 
 @x

@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -17,15 +16,13 @@
 @x
   <!ENTITY iw-time          "less than 0.1 SBU">
 @y
-  <!ENTITY iw-time          "less than 0.1 SBU">
+  <!ENTITY iw-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to iw</title>
 @y
-  <sect2 role="package">
-    <title>Introduction to iw</title>
+    <title>&IntroductionTo1;iw&IntroductionTo2;</title>
 @z
 
 @x
@@ -43,61 +40,51 @@
 @z
 
 @x
-    &lfs90_checked;
+    <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    &lfs90_checked;
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
-    <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing='compact'>
-      <listitem>
         <para>Download (HTTP): <ulink url="&iw-download-http;"/></para>
-      </listitem>
-      <listitem>
-        <para>Download (FTP): <ulink url="&iw-download-ftp;"/></para>
-      </listitem>
-      <listitem>
-        <para>Download MD5 sum: &iw-md5sum;</para>
-      </listitem>
-      <listitem>
-        <para>Download size: &iw-size;</para>
-      </listitem>
-      <listitem>
-        <para>Estimated disk space required: &iw-buildsize;</para>
-      </listitem>
-      <listitem>
-        <para>Estimated build time: &iw-time;</para>
-      </listitem>
-    </itemizedlist>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing='compact'>
-      <listitem>
-        <para>Download (HTTP): <ulink url="&iw-download-http;"/></para>
-      </listitem>
-      <listitem>
+        <para>&Download; (HTTP): <ulink url="&iw-download-http;"/></para>
+@z
+
+@x
         <para>Download (FTP): <ulink url="&iw-download-ftp;"/></para>
-      </listitem>
-      <listitem>
+@y
+        <para>&Download; (FTP): <ulink url="&iw-download-ftp;"/></para>
+@z
+
+@x
         <para>Download MD5 sum: &iw-md5sum;</para>
-      </listitem>
-      <listitem>
+@y
+        <para>&Download; MD5 sum: &iw-md5sum;</para>
+@z
+
+@x
         <para>Download size: &iw-size;</para>
-      </listitem>
-      <listitem>
+@y
+        <para>&DownloadSize;: &iw-size;</para>
+@z
+
+@x
         <para>Estimated disk space required: &iw-buildsize;</para>
-      </listitem>
-      <listitem>
+@y
+        <para>Estimated disk space required: &iw-buildsize;</para>
+@z
+
+@x
         <para>Estimated build time: &iw-time;</para>
-      </listitem>
-    </itemizedlist>
+@y
+        <para>Estimated build time: &iw-time;</para>
 @z
 
 @x
     <bridgehead renderas="sect3">iw Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">iw Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;iw&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -106,7 +93,7 @@
       <xref linkend="libnl"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libnl"/>
     </para>
@@ -114,34 +101,20 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/iw'/></para>
 @y
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/iw'/></para>
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="kernel" id='iw-kernel'>
     <title>Kernel Configuration</title>
 @y
-  <sect2 role="kernel" id='iw-kernel'>
-    <title>Kernel Configuration</title>
+    <title>&KernelConfiguration;</title>
 @z
 
 @x
-    <indexterm zone="iw iw-kernel">
       <primary sortas="d-iw-devices">Wireless devices</primary>
-    </indexterm>
 @y
-    <indexterm zone="iw iw-kernel">
       <primary sortas="d-iw-devices">Wireless devices</primary>
-    </indexterm>
 @z
 
 @x
@@ -189,65 +162,40 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of iw</title>
 @y
-  <sect2 role="installation">
-    <title>Installation of iw</title>
+    <title>&InstallationOf1;iw&InstallationOf2;</title>
 @z
 
 @x
       <para>To install <application>iw</application>,
       use the following commands:</para>
 @y
-      <para>To install <application>iw</application>,
-      use the following commands:</para>
-@z
-
-@x
-<screen><userinput>sed -i "/INSTALL.*gz/s/.gz//" Makefile &amp;&amp;
-make</userinput></screen>
-@y
-<screen><userinput>sed -i "/INSTALL.*gz/s/.gz//" Makefile &amp;&amp;
-make</userinput></screen>
+      <para>
+      以下のコマンドを実行して <application>iw</application> をビルドします。
+      </para>
 @z
 
 @x
       <para>This package does not come with a test suite.</para>
 @y
-      <para>This package does not come with a test suite.</para>
+      <para>
+      &notTestSuite;
+      </para>
 @z
 
 @x
       <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      <para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      </para>
 @z
 
 @x
-<screen role="root"><userinput>make SBINDIR=/sbin install</userinput></screen>
-@y
-<screen role="root"><userinput>make SBINDIR=/sbin install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -259,95 +207,39 @@ make</userinput></screen>
 @z
 
 @x
-  </sect2>
+    <title>Contents</title>
 @y
-  </sect2>
+    <title>&Contents;</title>
 @z
 
 @x
-  <sect2 role="content">
-    <title>Contents</title>
-@y
-  <sect2 role="content">
-    <title>Contents</title>
-@z
-
-@x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>iw</seg>
         <seg>None</seg>
         <seg>None</seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>iw</seg>
-        <seg>None</seg>
-        <seg>None</seg>
-      </seglistitem>
-    </segmentedlist>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x
-      <varlistentry id="iw-prog">
-        <term><command>iw</command></term>
-        <listitem>
+@x iw
           <para>show / manipulate wireless devices and their configuration</para>
-          <indexterm zone="iw iw-prog">
-            <primary sortas="b-iw">iw</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="iw-prog">
-        <term><command>iw</command></term>
-        <listitem>
           <para>show / manipulate wireless devices and their configuration</para>
-          <indexterm zone="iw iw-prog">
-            <primary sortas="b-iw">iw</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "184 MB (add 36 MB for tests)">
-  <!ENTITY postgresql-time          "1.0 SBU (with parallelism=4, add 0.1 SBU for tests)">
+  <!ENTITY postgresql-buildsize     "185 MB (add 37 MB for tests)">
+  <!ENTITY postgresql-time          "0.6 SBU (with parallelism=4, add 0.1 SBU for tests)">
 @y
-  <!ENTITY postgresql-buildsize     "184 MB （テスト実施時はさらに 36 MB）">
-  <!ENTITY postgresql-time          "1.0 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
+  <!ENTITY postgresql-buildsize     "185 MB （テスト実施時はさらに 37 MB）">
+  <!ENTITY postgresql-time          "0.6 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
 @z
 
 @x

@@ -14,7 +14,6 @@ CHANGE_FILES = \
 	perl-business-isbn-data.ch \
 	perl-capture-tiny.ch \
 	perl-class-data-inheritable.ch \
-	perl-class-factory-util.ch \
 	perl-class-inspector.ch \
 	perl-class-singleton.ch \
 	perl-class-tiny.ch \
@@ -87,7 +86,6 @@ CHANGE_FILES = \
 	perl-test-needs.ch \
 	perl-test-requires.ch \
 	perl-test-requiresinternet.ch \
-	perl-test-simple.ch \
 	perl-test-utf8.ch \
 	perl-test-warnings.ch \
 	perl-test-without-module.ch \

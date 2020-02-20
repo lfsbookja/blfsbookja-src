@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY libgusb-buildsize     "1.9 MB (with tests)">
+  <!ENTITY libgusb-time          "less than 0.1 SBU (with tests)">
+@y
+  <!ENTITY libgusb-buildsize     "1.9 MB (テスト込み)">
+  <!ENTITY libgusb-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
+@z
+
+@x
     <title>Introduction to libgusb</title>
 @y
     <title>&IntroductionTo1;libgusb&IntroductionTo2;</title>
@@ -146,6 +154,15 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>-Ddocs=true</option>: Use this option if
+      <application>GTK-Doc</application> is installed and you wish to install
+      the documentation.
+@y
+      <option>-Ddocs=true</option>:
+      <application>GTK-Doc</application> がインストール済であってドキュメントをインストールしたい場合に、このオプションを指定します。
 @z
 
 @x

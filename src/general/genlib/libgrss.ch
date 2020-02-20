@@ -17,7 +17,7 @@
 @x
     <title>Introduction to libgrss</title>
 @y
-    <title>Introduction to libgrss</title>
+    <title>&IntroductionTo1;libgrss&IntroductionTo2;</title>
 @z
 
 @x
@@ -31,61 +31,61 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&libgrss-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&libgrss-download-http;"/>
+          &Download; (HTTP): <ulink url="&libgrss-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&libgrss-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&libgrss-download-ftp;"/>
+          &Download; (FTP): <ulink url="&libgrss-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &libgrss-md5sum;
 @y
-          Download MD5 sum: &libgrss-md5sum;
+          &Download; MD5 sum: &libgrss-md5sum;
 @z
 
 @x
           Download size: &libgrss-size;
 @y
-          Download size: &libgrss-size;
+          &DownloadSize;: &libgrss-size;
 @z
 
 @x
           Estimated disk space required: &libgrss-buildsize;
 @y
-          Estimated disk space required: &libgrss-buildsize;
+          &Estimateddiskspacerequired;: &libgrss-buildsize;
 @z
 
 @x
           Estimated build time: &libgrss-time;
 @y
-          Estimated build time: &libgrss-time;
+          &Estimatedbuildtime;: &libgrss-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
           Required patch:
 @y
-          Required patch:
+          必須のパッチ:
 @z
 
 @x
     <bridgehead renderas="sect3">libgrss Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libgrss Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libgrss&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -94,7 +94,7 @@
       <xref linkend="libsoup"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libsoup"/>
     </para>
@@ -103,45 +103,44 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/libgrss"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/libgrss"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/libgrss"/>
 @z
 
 @x
     <title>Installation of libgrss</title>
 @y
-    <title>Installation of libgrss</title>
+    <title>&InstallationOf1;libgrss&InstallationOf2;</title>
 @z
 
 @x
       Install <application>libgrss</application> by running the following
       commands:
 @y
-      Install <application>libgrss</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>libgrss</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make check</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -149,9 +148,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -167,13 +166,13 @@
         </seg>
 @y
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           libgrss.so
         </seg>
         <seg>
-          /usr/include/libgrss and 
+          /usr/include/libgrss,
           /usr/share/doc/libgrss-&libgrss-version;
         </seg>
 @z
@@ -181,11 +180,11 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libgrss.so
             provides API functions for handling RSS feeds.
 @y
-            provides API functions for handling RSS feeds.
+            RSS フィードを扱う API 関数を提供します。
 @z

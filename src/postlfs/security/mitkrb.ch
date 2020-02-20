@@ -90,8 +90,12 @@
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="rpcbind"/> (used during the testsuite), and
-      <xref linkend="valgrind"/> (used during the test suite)
+      <xref linkend="rpcbind"/> (used during the testsuite),
+      <xref linkend="valgrind"/> (used during the testsuite),
+      <ulink url="https://www.cs.utah.edu/~bigler/code/libedit.html">libedit</ulink>,
+      <ulink url="https://cmocka.org/">cmocka</ulink>,
+      <ulink url="https://pypi.org/project/pyrad/">pyrad</ulink>, and
+      <ulink url="https://cwrap.org/resolv_wrapper.html">resolv_wrapper</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -101,7 +105,11 @@
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,
       <xref linkend="rpcbind"/> (テストスイート実行時に利用),
-      <xref linkend="valgrind"/> (テストスイート実行時に利用)
+      <xref linkend="valgrind"/> (テストスイート実行時に利用),
+      <ulink url="https://www.cs.utah.edu/~bigler/code/libedit.html">libedit</ulink>,
+      <ulink url="https://cmocka.org/">cmocka</ulink>,
+      <ulink url="https://pypi.org/project/pyrad/">pyrad</ulink>,
+      <ulink url="https://cwrap.org/resolv_wrapper.html">resolv_wrapper</ulink>
     </para>
 @z
 
@@ -458,10 +466,12 @@
 
 @x
           To test the functionality of the keytab file, issue the
-          following command:
+          following command as the
+          <systemitem class="username">root</systemitem> user:
 @y
           To test the functionality of the keytab file, issue the
-          following command:
+          following command as the
+          <systemitem class="username">root</systemitem> user:
 @z
 
 @x

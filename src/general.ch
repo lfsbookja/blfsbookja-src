@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "February 16th, &year;">
+<!ENTITY releasedate  "February 19th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20200217">
+<!ENTITY jversion     "20200220">
 <!ENTITY jratio       "55.9? &percnt;">
 @z
 
@@ -110,12 +110,15 @@
 <!ENTITY lfs90_built          "<para>本パッケージは LFS-9.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
-%@x
-%<!ENTITY gcc7_checked         "<para>This package is known to build and work 
-%                              properly when built with gcc-7.1.</para>">
-%@y
-%<!ENTITY gcc7_checked         "<para>本パッケージは gcc-7.1 を用いて正しくビルドでき動作することが確認されています。</para>">
-%@z
+@x
+<!ENTITY lfs91_checked        "<para>This package is known to build and work
+                              properly using an LFS-9.1 platform.</para>">
+<!ENTITY lfs91_built          "<para>This package is known to build using an LFS
+                              9.1 platform but has not been tested.</para>">
+@y
+<!ENTITY lfs91_checked        "<para>本パッケージは LFS-9.0 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs91_built          "<para>本パッケージは LFS-9.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+@z
 
 @x
 <!ENTITY as_root "<note><para>When installing multiple packages in a script,
