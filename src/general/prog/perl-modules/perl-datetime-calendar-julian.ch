@@ -7,117 +7,46 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY my-download-http "&perl_authors;/id/W/WY/WYANT/DateTime-Calendar-Julian-&DateTime-Calendar-Julian-version;.tar.gz">
-  <!ENTITY my-md5sum "5832fb4eb8b695dfedd7e24f8ccc17f0">
-@y
-  <!ENTITY my-download-http "&perl_authors;/id/W/WY/WYANT/DateTime-Calendar-Julian-&DateTime-Calendar-Julian-version;.tar.gz">
-  <!ENTITY my-md5sum "5832fb4eb8b695dfedd7e24f8ccc17f0">
-@z
-
-@x
-]>
-@y
-]>
-@z
-
-@x
-  <!-- Begin DateTime::Calendar::Julian -->
-  <sect2 id="perl-datetime-calendar-julian" xreflabel="DateTime-Calendar-Julian-&DateTime-Calendar-Julian-version;">
-@y
-  <!-- Begin DateTime::Calendar::Julian -->
-  <sect2 id="perl-datetime-calendar-julian" xreflabel="DateTime-Calendar-Julian-&DateTime-Calendar-Julian-version;">
-@z
-
-@x
-    <title>DateTime::Calendar::Julian-&DateTime-Calendar-Julian-version;</title>
-@y
-    <title>DateTime::Calendar::Julian-&DateTime-Calendar-Julian-version;</title>
-@z
-
-@x
-    <indexterm zone="perl-datetime-calendar-julian">
-      <primary sortas="a-DateTime-Calendar-Julian">DateTime::Calendar::Julian</primary>
-    </indexterm>
-@y
-    <indexterm zone="perl-datetime-calendar-julian">
-      <primary sortas="a-DateTime-Calendar-Julian">DateTime::Calendar::Julian</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to DateTime::Calendar::Julian</title>
 @y
-    <sect3 role="package">
-      <title>Introduction to DateTime::Calendar::Julian</title>
+      <title>&IntroductionTo1;DateTime::Calendar::Julian&IntroductionTo2;</title>
 @z
 
 @x
-      <para>
         DateTime::Calendar::Julian implements the Julian Calendar.
-      </para>
 @y
-      <para>
         DateTime::Calendar::Julian implements the Julian Calendar.
-      </para>
-@z
-
-@x
-      &lfs90_checked;
-@y
-      &lfs90_checked;
 @z
 
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
-            Download (HTTP): <ulink url="&my-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &my-md5sum;
-          </para>
-        </listitem>
-      </itemizedlist>
 @y
-      <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
+@z
+
+@x
             Download (HTTP): <ulink url="&my-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            &Download; (HTTP): <ulink url="&my-download-http;"/>
+@z
+
+@x
             Download MD5 sum: &my-md5sum;
-          </para>
-        </listitem>
-      </itemizedlist>
+@y
+            &Download; MD5 sum: &my-md5sum;
 @z
 
 @x
       <bridgehead renderas="sect4">DateTime::Calendar::Julian Dependencies</bridgehead>
 @y
-      <bridgehead renderas="sect4">DateTime::Calendar::Julian Dependencies</bridgehead>
+      <bridgehead renderas="sect4">&Dependencies1;DateTime::Calendar::Julian&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -126,42 +55,14 @@
         <xref linkend="perl-datetime"/>
       </para>
 @y
-      <bridgehead renderas="sect5">Required</bridgehead>
+      <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="perl-datetime"/>
       </para>
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of DateTime::Calendar::Julian</title>
 @y
-    <sect3 role="installation">
-      <title>Installation of DateTime::Calendar::Julian</title>
-@z
-
-@x
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                  href="../../../xincludes/perl-standard-install.xml"/>
-@y
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                  href="../../../xincludes/perl-standard-install.xml"/>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
+      <title>&InstallationOf1;DateTime::Calendar::Julian&InstallationOf2;</title>
 @z

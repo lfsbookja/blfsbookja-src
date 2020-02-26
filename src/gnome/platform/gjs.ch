@@ -147,11 +147,12 @@
       To test the results, issue: <command>make check</command>. The
       <application>GTK</application> and <application>Cairo</application>
       tests will fail if not running in an Xorg session. Two tests related
-      to testCommandLine.sh (4 and 5) are known to fail.
+      to testCommandLine.sh (6 and 7) are known to fail.
+      <!-- Still fails with 1.58.5. -->
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       Xorg セッション内でテスト実行しないと <application>GTK</application> と <application>Cairo</application> のテストは失敗します。
-      testCommandLine.sh に関連するテスト 2 つ (4 と 5) は失敗します。
+      testCommandLine.sh に関連するテスト 2 つ (6 と 7) は失敗します。
 @z
 
 @x

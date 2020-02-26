@@ -177,10 +177,10 @@
 
 @x
       <option>-Dgtk_doc=true</option>: Use this
-      parameter you wish to build the API documentation.
+      parameter if you wish to build the API documentation.
 @y
       <option>-Dgtk_doc=true</option>: Use this
-      parameter you wish to build the API documentation.
+      parameter if you wish to build the API documentation.
 @z
 
 @x

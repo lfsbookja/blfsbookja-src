@@ -12,7 +12,7 @@ m4_include([version.ac])[] dnl define blfs_version
 
 AC_PREREQ([2.63])
 AC_INIT([BLFSbookja], [svn], [matsuand AT users DOT osdn DOT me])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([-Wno-portability])
 
 m4_include([m4/progs.m4])
 m4_include([m4/ax_compare_version.m4])

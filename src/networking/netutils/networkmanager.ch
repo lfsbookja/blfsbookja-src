@@ -189,10 +189,10 @@
 
 @x
     <para>If <xref linkend="qt5"/> is installed and the Qt based 
-    examples are desired, fix the configure script:</para>
+    examples are desired, fix two meson.build files:</para>
 @y
     <para>If <xref linkend="qt5"/> is installed and the Qt based 
-    examples are desired, fix the configure script:</para>
+    examples are desired, fix two meson.build files:</para>
 @z
 
 @x
@@ -203,13 +203,13 @@
 @z
 
 @x
-      An already active <phrase revision="sysv">graphical</phrase> session
-      with bus address is necessary to run the tests. To test the results,
+      An already active graphical session
+      with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
       issue: <command>ninja test</command>. 
 @y
-      An already active <phrase revision="sysv">graphical</phrase> session
-      with bus address is necessary to run the tests. To test the results,
+      An already active graphical session
+      with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
       issue: <command>ninja test</command>. 
 @z
@@ -544,9 +544,9 @@
 @z
 
 @x nm-online
-            is a utility to find out whether you are online.
+            is an utility to find out whether you are online.
 @y
-            is a utility to find out whether you are online.
+            is an utility to find out whether you are online.
 @z
 
 @x NetworkManager

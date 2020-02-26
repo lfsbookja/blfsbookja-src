@@ -14,12 +14,6 @@
 @z
 
 @x
-    <title>Data::Compare-&Data-Compare-version;</title>
-@y
-    <title>Data::Compare-&Data-Compare-version;</title>
-@z
-
-@x
       <title>Introduction to Data::Compare</title>
 @y
       <title>&IntroductionTo1;Data::Compare&IntroductionTo2;</title>

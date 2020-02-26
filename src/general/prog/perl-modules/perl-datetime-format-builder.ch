@@ -10,13 +10,13 @@
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
       <title>Introduction to DateTime::Format::Builder</title>
 @y
-      <title>Introduction to DateTime::Format::Builder</title>
+      <title>&IntroductionTo1;DateTime::Format::Builder&IntroductionTo2;</title>
 @z
 
 @x
@@ -59,7 +59,7 @@
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <xref linkend="perl-datetime-format-strptime"/> and
+        <xref linkend="perl-datetime-format-strptime"/>,
         <!-- perl-datetime-format-strptime fulls in perl-datetime -->
         <xref linkend="perl-params-validate"/>
       </para>

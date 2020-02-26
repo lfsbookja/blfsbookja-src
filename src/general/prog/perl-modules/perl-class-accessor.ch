@@ -7,143 +7,44 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY my-download-http "&perl_authors;/id/K/KA/KASEI/Class-Accessor-&Class-Accessor-version;.tar.gz">
-  <!ENTITY my-md5sum "1f1e5990f87cad7659b292fed7dc0407">
-@y
-  <!ENTITY my-download-http "&perl_authors;/id/K/KA/KASEI/Class-Accessor-&Class-Accessor-version;.tar.gz">
-  <!ENTITY my-md5sum "1f1e5990f87cad7659b292fed7dc0407">
-@z
-
-@x
-]>
-@y
-]>
-@z
-
-@x
-  <!-- Begin Class::Accessor -->
-  <sect2 id="perl-class-accessor" xreflabel="Class-Accessor-&Class-Accessor-version;">
-@y
-  <!-- Begin Class::Accessor -->
-  <sect2 id="perl-class-accessor" xreflabel="Class-Accessor-&Class-Accessor-version;">
-@z
-
-@x
-    <title>Class::Accessor-&Class-Accessor-version;</title>
-@y
-    <title>Class::Accessor-&Class-Accessor-version;</title>
-@z
-
-@x
-    <indexterm zone="perl-class-accessor">
-      <primary sortas="a-Class-Accessor">Class::Accessor</primary>
-    </indexterm>
-@y
-    <indexterm zone="perl-class-accessor">
-      <primary sortas="a-Class-Accessor">Class::Accessor</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to Class::Accessor</title>
 @y
-    <sect3 role="package">
-      <title>Introduction to Class::Accessor</title>
+      <title>&IntroductionTo1;Class::Accessor&IntroductionTo2;</title>
 @z
 
 @x
-      <para>
         Class::Accessor generates accessors/mutators for your class.
-      </para>
 @y
-      <para>
         Class::Accessor generates accessors/mutators for your class.
-      </para>
-@z
-
-@x
-      &lfs90_checked;
-@y
-      &lfs90_checked;
 @z
 
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
-            Download (HTTP): <ulink url="&my-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &my-md5sum;
-          </para>
-        </listitem>
-      </itemizedlist>
 @y
-      <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
-            Download (HTTP): <ulink url="&my-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &my-md5sum;
-          </para>
-        </listitem>
-      </itemizedlist>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
-    </sect3>
+            Download (HTTP): <ulink url="&my-download-http;"/>
 @y
-    </sect3>
+            &Download; (HTTP): <ulink url="&my-download-http;"/>
 @z
 
 @x
-    <sect3 role="installation">
+            Download MD5 sum: &my-md5sum;
+@y
+            &Download; MD5 sum: &my-md5sum;
+@z
+
+@x
       <title>Installation of Class::Accessor</title>
 @y
-    <sect3 role="installation">
-      <title>Installation of Class::Accessor</title>
-@z
-
-@x
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                  href="../../../xincludes/perl-standard-install.xml"/>
-@y
-      <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-                  href="../../../xincludes/perl-standard-install.xml"/>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
+      <title>&InstallationOf1;Class::Accessor&InstallationOf2;</title>
 @z

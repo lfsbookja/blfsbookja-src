@@ -171,12 +171,14 @@
       To test the results, issue: <command>ninja test</command>. Three tests,
       <filename>test-layout</filename>,
       <filename>test-break</filename>, and
-      <filename>test-itemize</filename> are known to fail.
+      <filename>test-itemize</filename> are known to fail if 
+      <xref linkend="cantarell-fonts"/> is not installed.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-            <filename>test-layout</filename>,
+      <filename>test-layout</filename>,
       <filename>test-break</filename>, 
-      <filename>test-itemize</filename> という 3 つのテストは失敗します。
+      <filename>test-itemize</filename> という 3 つのテストは、<xref
+      linkend="cantarell-fonts"/> をインストールしていない場合には失敗します。
 @z
 
 @x

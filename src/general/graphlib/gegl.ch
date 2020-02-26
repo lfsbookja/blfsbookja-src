@@ -94,9 +94,11 @@
       <xref linkend="asciidoc"/>,
       <xref linkend="cairo"/>,
       <xref linkend="exiv2"/>,
+      <xref linkend="ffmpeg"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="gexiv2"/>,
       <xref linkend="graphviz"/>,
+      <xref linkend="gtk-doc"/>,
       <xref linkend="jasper"/>,
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>
@@ -123,9 +125,11 @@
       <xref linkend="asciidoc"/>,
       <xref linkend="cairo"/>,
       <xref linkend="exiv2"/>,
+      <xref linkend="ffmpeg"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="gexiv2"/>,
       <xref linkend="graphviz"/>,
+      <xref linkend="gtk-doc"/>,
       <xref linkend="jasper"/>,
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>
@@ -168,10 +172,8 @@
 
 @x
       To test the results, issue: <command>ninja test</command>.
-      Two tests, gegl-format and gegl-node are known to fail.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      gegl-format と gegl-node という 2 つのテストが失敗します。
 @z
 
 @x
@@ -188,10 +190,11 @@
 
 @x
       <option>-Ddocs=true</option>: Build and
-      install documentation.
+      install documentation (requires <xref linkend="gtk-doc"/>,).
 @y
       <option>-Ddocs=true</option>:
       ドキュメントのビルドとインストールを行います。
+      (<xref linkend="gtk-doc"/> を必要とします。)
 @z
 
 @x

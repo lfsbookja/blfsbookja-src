@@ -16,7 +16,7 @@
 @x
       <title>Introduction to Role::Tiny</title>
 @y
-      <title>Introduction to Role::Tiny</title>
+      <title>&IntroductionTo1;Role::Tiny&IntroductionTo2;</title>
 @z
 
 @x
@@ -28,21 +28,23 @@
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
             Download (HTTP): <ulink url="&my-download-http;"/>
 @y
+            &Download; (HTTP): <ulink url="&my-download-http;"/>
 @z
 
 @x
             Download MD5 sum: &my-md5sum;
 @y
-            Download MD5 sum: &my-md5sum;
+            &Download; MD5 sum: &my-md5sum;
 @z
 
 @x
       <title>Installation of Role::Tiny</title>
 @y
-      <title>Installation of Role::Tiny</title>
+      <title>&InstallationOf1;Role::Tiny&InstallationOf2;</title>
 @z

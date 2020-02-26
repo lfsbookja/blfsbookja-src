@@ -16,7 +16,7 @@
 @x
       <title>Introduction to XML::LibXML::Simple</title>
 @y
-      <title>Introduction to XML::LibXML::Simple</title>
+      <title>&IntroductionTo1;XML::LibXML::Simple&IntroductionTo2;</title>
 @z
 
 @x
@@ -32,25 +32,25 @@
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
-      <bridgehead renderas="sect4">Package Information</bridgehead>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
             Download (HTTP): <ulink url="&my-download-http;"/>
 @y
-            Download (HTTP): <ulink url="&my-download-http;"/>
+            &Download; (HTTP): <ulink url="&my-download-http;"/>
 @z
 
 @x
             Download MD5 sum: &my-md5sum;
 @y
-            Download MD5 sum: &my-md5sum;
+            &Download; MD5 sum: &my-md5sum;
 @z
 
 @x
       <bridgehead renderas="sect4">XML::LibXML::Simple Dependencies</bridgehead>
 @y
-      <bridgehead renderas="sect4">XML::LibXML::Simple Dependencies</bridgehead>
+      <bridgehead renderas="sect4">&Dependencies1;XML::LibXML::Simple&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -59,7 +59,7 @@
         <xref linkend="perl-xml-libxml"/>
       </para>
 @y
-      <bridgehead renderas="sect5">Required</bridgehead>
+      <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="perl-xml-libxml"/>
       </para>
@@ -68,5 +68,5 @@
 @x
       <title>Installation of XML::LibXML::Simple</title>
 @y
-      <title>Installation of XML::LibXML::Simple</title>
+      <title>&InstallationOf1;XML::LibXML::Simple&InstallationOf2;</title>
 @z
