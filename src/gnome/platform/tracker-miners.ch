@@ -14,17 +14,17 @@
 @z
 
 @x
-  <!ENTITY tracker-miners-buildsize     "30 MB (with tests)">
-  <!ENTITY tracker-miners-time          "0.4 SBU (with tests)">
+  <!ENTITY tracker-miners-buildsize     "20 MB (with tests)">
+  <!ENTITY tracker-miners-time          "0.6 SBU (with tests)">
 @y
-  <!ENTITY tracker-miners-buildsize     "30 MB (with tests)">
-  <!ENTITY tracker-miners-time          "0.4 SBU (with tests)">
+  <!ENTITY tracker-miners-buildsize     "20 MB (テスト込み)">
+  <!ENTITY tracker-miners-time          "0.6 SBU (テスト込み)">
 @z
 
 @x
     <title>Introduction to Tracker-miners</title>
 @y
-    <title>Introduction to Tracker-miners</title>
+    <title>&IntroductionTo1;Tracker-miners&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,49 +38,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&tracker-miners-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&tracker-miners-download-http;"/>
+          &Download; (HTTP): <ulink url="&tracker-miners-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&tracker-miners-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&tracker-miners-download-ftp;"/>
+          &Download; (FTP): <ulink url="&tracker-miners-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &tracker-miners-md5sum;
 @y
-          Download MD5 sum: &tracker-miners-md5sum;
+          &Download; MD5 sum: &tracker-miners-md5sum;
 @z
 
 @x
           Download size: &tracker-miners-size;
 @y
-          Download size: &tracker-miners-size;
+          &DownloadSize;: &tracker-miners-size;
 @z
 
 @x
           Estimated disk space required: &tracker-miners-buildsize;
 @y
-          Estimated disk space required: &tracker-miners-buildsize;
+          &Estimateddiskspacerequired;: &tracker-miners-buildsize;
 @z
 
 @x
           Estimated build time: &tracker-miners-time;
 @y
-          Estimated build time: &tracker-miners-time;
+          &Estimatedbuildtime;: &tracker-miners-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Tracker-miners Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Tracker-miners Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Tracker-miners&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -92,11 +92,11 @@
       <xref linkend="gexiv2"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="tracker"/>,
-      <xref linkend="exempi"/>, and
+      <xref linkend="exempi"/>,
       <xref linkend="gexiv2"/>
     </para>
 @z
@@ -114,7 +114,7 @@
       <xref linkend="poppler"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="ffmpeg"/>,
       <xref linkend="flac"/>,
@@ -122,7 +122,7 @@
       <xref linkend="icu"/>,
       <xref linkend="libexif"/>,
       <xref linkend="libgrss"/>,
-      <xref linkend="libgxps"/>, and
+      <xref linkend="libgxps"/>,
       <xref linkend="poppler"/>
     </para>
 @z
@@ -142,7 +142,7 @@
       <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cmake"/>,
       <xref linkend="dconf"/>,
@@ -152,7 +152,7 @@
       <xref linkend="totem-pl-parser"/>,
       <xref linkend="upower"/>,
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
-      <ulink url="https://libosinfo.org">libosinfo</ulink>, and
+      <ulink url="https://libosinfo.org">libosinfo</ulink>,
       <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
     </para>
 @z
@@ -160,13 +160,13 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/tracker-miners"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/tracker-miners"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/tracker-miners"/>
 @z
 
 @x
     <title>Installation of Tracker-miners</title>
 @y
-    <title>Installation of Tracker-miners</title>
+    <title>&InstallationOf1;Tracker-miners&InstallationOf2;</title>
 @z
 
 @x
@@ -180,13 +180,19 @@
 @x
       To test the results, as the root user,
       issue: <command>ninja test</command>.
-      <!--Three tests, test-image-1, xmp-loaded-1, and
-          test_external_cue_sheet, are known to fail.-->
+      Eight tests, test-image-1, 300-miner-basic-ops, 310-fts-basic,
+      310-fts-basic, 311-fts-file-operations, 401-extractor-flac-cuesheet,
+      500-writeback-images, 501-writeback-image-details, and
+      502-writeback-audio are known to fail due to internal test
+      suite problems.
 @y
       To test the results, as the root user,
       issue: <command>ninja test</command>.
-      <!--Three tests, test-image-1, xmp-loaded-1, and
-          test_external_cue_sheet, are known to fail.-->
+      Eight tests, test-image-1, 300-miner-basic-ops, 310-fts-basic,
+      310-fts-basic, 311-fts-file-operations, 401-extractor-flac-cuesheet,
+      500-writeback-images, 501-writeback-image-details, and
+      502-writeback-audio are known to fail due to internal test
+      suite problems.
 @z
 
 @x
@@ -198,7 +204,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -212,7 +218,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -220,9 +226,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -239,14 +245,14 @@
         </seg>
 @y
         <seg>
-          None
+          &None;
         </seg>
         <seg>
-          libtracker-extract.so, and
+          libtracker-extract.so,
           several modules under /usr/lib/tracker-miners-2.0.
         </seg>
         <seg>
-          /usr/lib/tracker-miners-2.0 and
+          /usr/lib/tracker-miners-2.0,
           /usr/share/tracker-miners
         </seg>
 @z

@@ -88,7 +88,7 @@
     <para role="required">
       <!-- EDITORS: the docs say it needs clipper, but it uses an internal
        modified version and cannot be built with system clipper -->
-      <xref linkend="gs"/>,
+      <xref linkend="gs"/> and
       <xref linkend="potrace"/>
     </para>
 @y
@@ -96,7 +96,7 @@
     <para role="required">
       <!-- EDITORS: the docs say it needs clipper, but it uses an internal
        modified version and cannot be built with system clipper -->
-      <xref linkend="gs"/>,
+      <xref linkend="gs"/> and
       <xref linkend="potrace"/>
     </para>
 @z
@@ -111,7 +111,7 @@
       <!-- version checked for dvisvgm-2.8, 0.7.2 is mentioned in the
            news and is the latest version as of 2019-10-31
            maybe change to 'a recent version' if that releases faster -->
-      <ulink url="http://cyan4973.github.io/xxHash/releases/">xxHash</ulink>
+      <ulink url="https://github.com/Cyan4973/xxHash/releases/latest">xxHash</ulink>
       (the current version is included in the tarball)
     </para>
 @y
@@ -124,7 +124,7 @@
       <!-- version checked for dvisvgm-2.8, 0.7.2 is mentioned in the
            news and is the latest version as of 2019-10-31
            maybe change to 'a recent version' if that releases faster -->
-      <ulink url="http://cyan4973.github.io/xxHash/releases/">xxHash</ulink>
+      <ulink url="https://github.com/Cyan4973/xxHash/releases/latest">xxHash</ulink>
       (the current version is included in the tarball)
     </para>
 @z

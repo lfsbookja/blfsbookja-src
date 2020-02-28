@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "February 25th, &year;">
+<!ENTITY releasedate  "February 27th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20200226">
+<!ENTITY jversion     "20200228">
 <!ENTITY jratio       "55.9? &percnt;">
 @z
 
@@ -116,8 +116,8 @@
 <!ENTITY lfs91_built          "<para>This package is known to build using an LFS
                               9.1 platform but has not been tested.</para>">
 @y
-<!ENTITY lfs91_checked        "<para>本パッケージは LFS-9.0 において正しくビルドでき動作することが確認されています。</para>">
-<!ENTITY lfs91_built          "<para>本パッケージは LFS-9.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+<!ENTITY lfs91_checked        "<para>本パッケージは LFS-9.1 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs91_built          "<para>本パッケージは LFS-9.1 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 @x

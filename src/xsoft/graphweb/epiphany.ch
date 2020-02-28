@@ -197,7 +197,7 @@
           libephywebextension.so
         </seg>
         <seg>
-          /usr/{lib,share,share/help/*}/epiphany
+          /usr/{lib,libexec,share,share/help/*}/epiphany
         </seg>
 @y
         <seg>
@@ -207,7 +207,7 @@
           libephywebextension.so
         </seg>
         <seg>
-          /usr/{lib,share,share/help/*}/epiphany
+          /usr/{lib,libexec,share,share/help/*}/epiphany
         </seg>
 @z
 

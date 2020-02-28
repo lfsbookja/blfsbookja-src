@@ -17,13 +17,13 @@
 @x
   <!ENTITY glm-time          "less than 0.1 SBU">
 @y
-  <!ENTITY glm-time          "less than 0.1 SBU">
+  <!ENTITY glm-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to GLM</title>
 @y
-    <title>Introduction to GLM</title>
+    <title>&IntroductionTo1;GLM&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,55 +41,55 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&glm-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&glm-download-http;"/>
+          &Download; (HTTP): <ulink url="&glm-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&glm-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&glm-download-ftp;"/>
+          &Download; (FTP): <ulink url="&glm-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &glm-md5sum;
 @y
-          Download MD5 sum: &glm-md5sum;
+          &Download; MD5 sum: &glm-md5sum;
 @z
 
 @x
           Download size: &glm-size;
 @y
-          Download size: &glm-size;
+          &DownloadSize;: &glm-size;
 @z
 
 @x
           Estimated disk space required: &glm-buildsize;
 @y
-          Estimated disk space required: &glm-buildsize;
+          &Estimateddiskspacerequired;: &glm-buildsize;
 @z
 
 @x
           Estimated build time: &glm-time;
 @y
-          Estimated build time: &glm-time;
+          &Estimatedbuildtime;: &glm-time;
 @z
 
 @x
       User Notes: <ulink url="&blfs-wiki;/GLM"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/GLM"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/GLM"/>
 @z
 
 @x
     <title>Installation of GLM</title>
 @y
-    <title>Installation of GLM</title>
+    <title>&InstallationOf1;GLM&InstallationOf2;</title>
 @z
 
 @x
@@ -109,7 +109,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -117,30 +117,29 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
-          None.
+          None
         </seg>
         <seg>
-          None.
+          None
         </seg>
         <seg>
-          /usr/include/glm.
+          /usr/include/glm
         </seg>
 @y
         <seg>
-          None.
+          &None;
         </seg>
         <seg>
-          None.
+          &None;
         </seg>
         <seg>
-          /usr/include/glm.
+          /usr/include/glm
         </seg>
 @z
-

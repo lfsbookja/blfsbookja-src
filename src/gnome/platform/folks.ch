@@ -23,13 +23,13 @@
       <application>Folks</application> is a library that
       aggregates people from multiple sources (e.g,
       <application>Telepathy</application> connection managers and
-      eventually <application>Evolution Data Server</application>,
+      <application>Evolution Data Server</application>,
       Facebook, etc.) to create metacontacts.
 @y
       <application>Folks</application> is a library that
       aggregates people from multiple sources (e.g,
       <application>Telepathy</application> connection managers and
-      eventually <application>Evolution Data Server</application>,
+      <application>Evolution Data Server</application>,
       Facebook, etc.) to create metacontacts.
 @z
 
@@ -134,13 +134,13 @@
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Installation of Folks</title>
 @y
-    <title>Installation of Folks</title>
+    <title>&InstallationOf1;Folks&InstallationOf2;</title>
 @z
 
 @x
@@ -152,11 +152,11 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.
-    </para>
+      To test the results, issue <command>ninja test</command> from a local
+      X session started with <command>dbus-launch</command>.
 @y
-    <para>This package does not come with a test suite.
-    </para>
+      To test the results, issue <command>ninja test</command> from a local
+      X session started with <command>dbus-launch</command>.
 @z
 
 @x
@@ -168,7 +168,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -196,7 +196,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -204,9 +204,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -238,7 +238,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x folks-import
