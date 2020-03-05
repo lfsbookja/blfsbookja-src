@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libxcb-buildsize     "43 MB (with tests, add 62 MB for doxygen docs)">
+  <!ENTITY libxcb-buildsize     "27 MB (with tests, add 62 MB for doxygen docs)">
   <!ENTITY libxcb-time          "0.2 SBU (with tests, add 1.4 SBU for doxygen docs)">
 @y
-  <!ENTITY libxcb-buildsize     "43 MB （テスト込み、doxygenドキュメント生成時はさらに 62 MB）">
+  <!ENTITY libxcb-buildsize     "27 MB （テスト込み、doxygenドキュメント生成時はさらに 62 MB）">
   <!ENTITY libxcb-time          "0.2 SBU （テスト込み、doxygenドキュメント生成時はさらに 1.4 SBU）">
 @z
 
@@ -84,18 +84,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch (for Python 3): <ulink
-@y
-          必須のパッチ (Python 3 向け): <ulink
-@z
-
-@x
     <bridgehead renderas="sect3">libxcb Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;libxcb&Dependencies2;</bridgehead>
@@ -151,12 +139,6 @@
     <title>Installation of libxcb</title>
 @y
     <title>&InstallationOf1;libxcb&InstallationOf2;</title>
-@z
-
-@x
-      If building with Python 3, issue the following command:
-@y
-      Python 3 とともにビルドする場合は以下のコマンドを実行します。
 @z
 
 @x

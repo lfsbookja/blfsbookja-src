@@ -89,8 +89,8 @@
       <xref linkend="gnutls"/>,
       <xref linkend="jansson"/>,
       <xref linkend="libtirpc"/>,
-      <xref linkend="lmdb"/>,
-      <xref linkend="python3"/>, and
+      <xref linkend="lmdb"/>, and
+      <!--<xref linkend="python3"/>, and-->
       <xref linkend="rpcsvc-proto"/>
     </para>
 @y
@@ -100,7 +100,7 @@
       <xref linkend="jansson"/>,
       <xref linkend="libtirpc"/>,
       <xref linkend="lmdb"/>,
-      <xref linkend="python3"/>,
+      <!--<xref linkend="python3"/>, and-->
       <xref linkend="rpcsvc-proto"/>
     </para>
 @z

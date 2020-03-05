@@ -78,39 +78,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-          Required patch (for Python 3): <ulink
-@y
-          必須のパッチ (Python 3 向け): <ulink
-@z
-@x
-          Recommended patch:
-@y
-          推奨パッチ:
-@z
-
-@x
     <bridgehead renderas="sect3">xcb-proto Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;xcb-proto&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="xorg-env"/> (should be set for the following instructions
-      to work)
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="xorg-env"/> （本節での内容が適切に動作するように設定が必要）
-    </para>
 @z
 
 @x
@@ -135,20 +105,6 @@
     <title>Installation of xcb-proto</title>
 @y
     <title>&InstallationOf1;xcb-proto&InstallationOf2;</title>
-@z
-
-@x
-    <para>First, fix a file that allows the checks to run properly:</para>
-@y
-    <para>
-    チェック実行を適正にするようにファイル修正を行います。
-    </para>
-@z
-
-@x
-      If building with Python 3, issue the following command:
-@y
-      Python 3 とともにビルドする場合は以下のコマンドを実行します。
 @z
 
 @x

@@ -206,12 +206,12 @@
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. 
+      issue: <command>ninja test</command>. One test, test-core, is known to fail.
 @y
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. 
+      issue: <command>ninja test</command>. One test, test-core, is known to fail.
 @z
 
 @x

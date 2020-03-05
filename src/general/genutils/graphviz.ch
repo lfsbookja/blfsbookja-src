@@ -210,7 +210,7 @@
 
     <para role="optional">
       <xref linkend="freeglut"/> (with <xref linkend="libglade"/>, 
-      <ulink url="https://projects.gnome.org/gtkglext/">GtkGLExt</ulink>, and
+      <ulink url="https://sourceforge.net/projects/gtkglext/">GtkGLExt</ulink>, and
       <ulink url="http://gts.sourceforge.net/">libGTS</ulink>, for building
       the <command>smyrna</command> large graph viewer, which is
       considered experimental),
@@ -224,7 +224,7 @@
 
     <para role="optional">
       <xref linkend="freeglut"/> (with <xref linkend="libglade"/>, 
-      <ulink url="https://projects.gnome.org/gtkglext/">GtkGLExt</ulink>, and
+      <ulink url="https://sourceforge.net/projects/gtkglext/">GtkGLExt</ulink>, and
       <ulink url="http://gts.sourceforge.net/">libGTS</ulink>, for building
       the <command>smyrna</command> large graph viewer, which is
       considered experimental),

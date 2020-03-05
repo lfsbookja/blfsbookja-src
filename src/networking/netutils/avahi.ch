@@ -92,8 +92,9 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libdaemon"/> and
-      <xref linkend="libglade"/>
+      <xref linkend="libdaemon"/>,
+      <xref linkend="libglade"/>, and
+      <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -102,7 +103,8 @@
       <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libdaemon"/>,
-      <xref linkend="libglade"/>
+      <xref linkend="libglade"/>,
+      <xref linkend="qt5"/>
     </para>
 @z
 
@@ -386,35 +388,33 @@
 @z
 
 @x
-        <seg>avahi-autoipd, avahi-bookmarks, avahi-browse, avahi-browse-domains,
-        avahi-daemon, avahi-discover, avahi-discover-standalone, avahi-dnsconfd,
+        <seg>avahi-autoipd, avahi-browse, avahi-browse-domains,
+        avahi-daemon, avahi-discover-standalone, avahi-dnsconfd,
         avahi-publish, avahi-publish-address, avahi-publish-service,
         avahi-resolve, avahi-resolve-address, avahi-resolve-host-name,
         avahi-set-host-name, bshell, bssh, and bvnc</seg>
-        <seg>libavahi-client.so, libavahi-common.so,
-        libavahi-core.so, libavahi-glib.so, libavahi-gobject.so,
-        libavahi-ui-gtk3.so,, libavahi-ui.so, libdns_sd.so, and
+        <seg>libavahi-client.so, libavahi-common.so, libavahi-core.so, 
+        libavahi-glib.so, libavahi-gobject.so, libavahi-libevent.so
+        libavahi-ui-gtk3.so, libavahi-qt5, libavahi-ui.so, libdns_sd.so, and
         libhowl.so,</seg>
-        <seg>/etc/avahi/services, /usr/{include/{avahi-client,avahi-common,
-        avahi-compat-howl/{corby,discovery,rendezvous,salt},
-        avahi-compat-libdns_sd,avahi-core,avahi-glib,avahi-gobject,avahi-ui},
-        lib/{avahi,python&python2-majorver;/site-packages/{avahi,
-        avahi_discover}},share/{avahi/interfaces,locale/en_NZ/LC_MESSAGES}}</seg>
+        <seg>/etc/avahi/services, /usr/include/{avahi-client,avahi-common,
+        avahi-compat-howl, avahi-compat-libdns_sd, avahi-core, avahi-glib, 
+        avahi-gobject, avahi-libevent, avahi-qt5, avahi-ui}, 
+        /usr/lib/avahi, /usr/share/avahi</seg>
 @y
-        <seg>avahi-autoipd, avahi-bookmarks, avahi-browse, avahi-browse-domains,
-        avahi-daemon, avahi-discover, avahi-discover-standalone, avahi-dnsconfd,
+        <seg>avahi-autoipd, avahi-browse, avahi-browse-domains,
+        avahi-daemon, avahi-discover-standalone, avahi-dnsconfd,
         avahi-publish, avahi-publish-address, avahi-publish-service,
         avahi-resolve, avahi-resolve-address, avahi-resolve-host-name,
-        avahi-set-host-name, bshell, bssh, bvnc</seg>
-        <seg>libavahi-client.so, libavahi-common.so,
-        libavahi-core.so, libavahi-glib.so, libavahi-gobject.so,
-        libavahi-ui-gtk3.so,, libavahi-ui.so, libdns_sd.so,
+        avahi-set-host-name, bshell, bssh, and bvnc</seg>
+        <seg>libavahi-client.so, libavahi-common.so, libavahi-core.so, 
+        libavahi-glib.so, libavahi-gobject.so, libavahi-libevent.so
+        libavahi-ui-gtk3.so, libavahi-qt5, libavahi-ui.so, libdns_sd.so, and
         libhowl.so,</seg>
-        <seg>/etc/avahi/services, /usr/{include/{avahi-client,avahi-common,
-        avahi-compat-howl/{corby,discovery,rendezvous,salt},
-        avahi-compat-libdns_sd,avahi-core,avahi-glib,avahi-gobject,avahi-ui},
-        lib/{avahi,python&python2-majorver;/site-packages/{avahi,
-        avahi_discover}},share/{avahi/interfaces,locale/en_NZ/LC_MESSAGES}}</seg>
+        <seg>/etc/avahi/services, /usr/include/{avahi-client,avahi-common,
+        avahi-compat-howl, avahi-compat-libdns_sd, avahi-core, avahi-glib, 
+        avahi-gobject, avahi-libevent, avahi-qt5, avahi-ui}, 
+        /usr/lib/avahi, /usr/share/avahi</seg>
 @z
 
 @x

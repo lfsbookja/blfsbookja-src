@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cryptsetup-buildsize     "25 MB (add 9 MB for tests)">
-  <!ENTITY cryptsetup-time          "0.2 SBU (add 12 SBU for tests)">
+  <!ENTITY cryptsetup-buildsize     "29 MB (add 12 MB for tests)">
+  <!ENTITY cryptsetup-time          "0.2 SBU (add 15 SBU for tests)">
 @y
-  <!ENTITY cryptsetup-buildsize     "25 MB （テスト実施時はさらに 9 MB）">
-  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 12 SBU）">
+  <!ENTITY cryptsetup-buildsize     "29 MB （テスト実施時はさらに 12 MB）">
+  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 15 SBU）">
 @z
 
 @x
@@ -154,12 +154,12 @@
       To test the result, issue as the <systemitem
       class="username">root</systemitem> user: <command>make check</command>.
       Some tests may fail if the kernel configuration parameters above are not
-      set. One (of 12) tests is known to fail.
+      set. Three (of 21) tests are known to fail.
 @y
       ビルド結果をテストする場合は、<systemitem
       class="username">root</systemitem> ユーザーになって <command>make check</command> を実行します。
       上で説明したカーネル設定パラメーターがセットされていない場合には、失敗するテストが出てきます。
-      （12 のうちの）1 つのテストは失敗します。
+      （21 のうちの）1 つのテストは失敗します。
 @z
 
 @x

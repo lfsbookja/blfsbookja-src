@@ -81,7 +81,6 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="liboauth"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk3"/>,
@@ -91,7 +90,6 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="liboauth"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk3"/>,
@@ -119,13 +117,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="gtk-doc"/> (for documentation),
+      <xref linkend="liboauth"/> (for OAuth v1 support), and
       <xref linkend="uhttpmock"/> (required for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="gtk-doc"/> (for documentation),
+      <xref linkend="liboauth"/> (for OAuth v1 support), and
       <xref linkend="uhttpmock"/> (テストに必要)
     </para>
 @z

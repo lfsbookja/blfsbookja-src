@@ -95,16 +95,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
+    <xref linkend="doxygen"/>,
     <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
     <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
+    <ulink url="https://nuspell.github.io/">Nuspell</ulink>,
     <ulink url="http://hunspell.github.io/">Voikko</ulink>, and
     <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">unittest-cpp</ulink> (required for tests)</para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional"><xref linkend="dbus-glib"/>,
+    <xref linkend="doxygen"/>,
     <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
     <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
-    <ulink url="http://hunspell.github.io/">Voikko</ulink>,
+    <ulink url="https://nuspell.github.io/">Nuspell</ulink>,
+    <ulink url="http://hunspell.github.io/">Voikko</ulink>, and
     <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">unittest-cpp</ulink> (required for tests)</para>
 @z
 
@@ -189,7 +193,7 @@
 
 @x
         You can test your installation and configuration by creating a test
-        file and running the commands in the following (you can replace the
+        file and running the following commands (you can replace the
         en_GB dictionary by any other downloaded when installing <xref
         linkend="aspell"/>):
 @y

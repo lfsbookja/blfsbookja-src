@@ -108,7 +108,7 @@
     <para role="optional">
       <xref linkend="qca"/>,
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="http://download.kde.org/stable/applications/&kf5apps-version;/src/">
+      <ulink url="http://download.kde.org/stable/release-service/&kf5apps-version;/src/">
                  kpimtextedit</ulink>,
       <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> 
                  (for PostScript support),
@@ -122,12 +122,12 @@
     <para role="optional">
       <xref linkend="qca"/>,
       <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="http://download.kde.org/stable/applications/&kf5apps-version;/src/">
+      <ulink url="http://download.kde.org/stable/release-service/&kf5apps-version;/src/">
                  kpimtextedit</ulink>,
       <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> 
                  (for PostScript support),
       <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>,
-      <ulink url="http://sourceforge.net/projects/ebook-tools">libepub</ulink>,
+      <ulink url="http://sourceforge.net/projects/ebook-tools">libepub</ulink>, and
       <ulink url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket">
                  Mobipocket</ulink>
     </para>
