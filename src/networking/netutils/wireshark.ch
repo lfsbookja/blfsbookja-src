@@ -378,7 +378,7 @@
           text2pcap, tshark, and wireshark
         </seg>
         <seg>
-          libwireshark.so, libwiretap.so, libwscodecs.so,
+          libwireshark.so, libwiretap.so,
           libwsutil.so, and numerous modules under /usr/lib/wireshark/plugins
         </seg>
         <seg>
@@ -392,8 +392,8 @@
           text2pcap, tshark, wireshark
         </seg>
         <seg>
-          libwireshark.so, libwiretap.so, libwscodecs.so,
-          libwsutil.so, and numerous modules under /usr/lib/wireshark/plugins
+          libwireshark.so, libwiretap.so,
+          libwsutil.so, /usr/lib/wireshark/plugins 配下の数多くのライブラリ
         </seg>
         <seg>
           /usr/{include,lib,share}/wireshark,

@@ -314,7 +314,7 @@
         <phrase revision="systemd"><filename>httpd.service</filename>
         unit</phrase> included in the
         <xref linkend="bootscripts" revision="sysv"/>
-        <xref linkend="systemd-units" revision="systemd"/> package.
+        <xref linkend="systemd-units" revision="systemd"/> package:
 @y
         システム起動時に <application>Apache</application> サーバーを自動で起動する場合は <xref
         linkend="bootscripts" revision="sysv"/><xref linkend="systemd-units"

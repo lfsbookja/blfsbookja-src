@@ -20,18 +20,15 @@
 @z
 
 @x
-  <para>The Linux kernel now provides ALSA support by
-  default.  However, applications need to interface to that capability.  The
-  following six sections of the book deal with the separate components of
-  ALSA: the libraries, the plugins, the utilities, the tools, the firmware
-  and the OSS compatibility libraries.</para>
+    The Linux kernel now provides ALSA support by
+    default.  However, applications need to interface to that capability.  The
+    following six sections of the book deal with the separate components of
+    ALSA: the libraries, the plugins, the utilities, the tools, the firmware
+    and the OSS compatibility libraries.
 @y
-  <para>
-  現在の Linux カーネルはデフォルトで ALSA をサポートします。
-  
-  However, applications need to interface to that capability.  The
-  following six sections of the book deal with the separate components of
-  ALSA: the libraries, the plugins, the utilities, the tools, the firmware
-  and the OSS compatibility libraries.
-  </para>
+    現在の Linux カーネルはデフォルトで ALSA をサポートします。
+    However, applications need to interface to that capability.  The
+    following six sections of the book deal with the separate components of
+    ALSA: the libraries, the plugins, the utilities, the tools, the firmware
+    and the OSS compatibility libraries.
 @z

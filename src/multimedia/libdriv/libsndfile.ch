@@ -41,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libsndfile-download-http;"/></para>
+          Download (HTTP): <ulink url="&libsndfile-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libsndfile-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libsndfile-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libsndfile-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libsndfile-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libsndfile-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libsndfile-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libsndfile-md5sum;</para>
+          Download MD5 sum: &libsndfile-md5sum;
 @y
-        <para>&Download; MD5 sum: &libsndfile-md5sum;</para>
+          &Download; MD5 sum: &libsndfile-md5sum;
 @z
 
 @x
-        <para>Download size: &libsndfile-size;</para>
+          Download size: &libsndfile-size;
 @y
-        <para>&DownloadSize;: &libsndfile-size;</para>
+          &DownloadSize;: &libsndfile-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libsndfile-buildsize;</para>
+          Estimated disk space required: &libsndfile-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libsndfile-buildsize;</para>
+          &Estimateddiskspacerequired;: &libsndfile-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libsndfile-time;</para>
+          Estimated build time: &libsndfile-time;
 @y
-        <para>&Estimatedbuildtime;: &libsndfile-time;</para>
+          &Estimatedbuildtime;: &libsndfile-time;
 @z
 
 @x
@@ -132,11 +132,9 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -208,83 +206,61 @@
 @z
 
 @x sndfile-cmp
-          <para>compares two audio files.</para>
+            compares two audio files.
 @y
-          <para>
-          二つのオーディオファイルを比較します。
-          </para>
+            二つのオーディオファイルを比較します。
 @z
 
 @x sndfile-concat
-          <para>concatenates two or more audio files.</para>
+            concatenates two or more audio files.
 @y
-          <para>
-          複数のオーディオファイルを結合します。
-          </para>
+            複数のオーディオファイルを結合します。
 @z
 
 @x sndfile-convert
-          <para>converts a sound files from one format to another.</para>
+            converts a sound files from one format to another.
 @y
-          <para>
-          サウンドファイルを他形式に変換します。
-          </para>
+            サウンドファイルを他形式に変換します。
 @z
 
 @x sndfile-deinterleave
-          <para>splits a multi-channel into multiple single channel files.</para>
+            splits a multi-channel into multiple single channel files.
 @y
-          <para>
-          マルチチャネル形式のファイルを、複数のシングルチャネル形式のファイルに分割します。
-          </para>
+            マルチチャネル形式のファイルを、複数のシングルチャネル形式のファイルに分割します。
 @z
 
 @x sndfile-info
-          <para>displays information about a sound file.</para>
+            displays information about a sound file.
 @y
-          <para>
-          サウンドファイルの情報を表示します。
-          </para>
+            サウンドファイルの情報を表示します。
 @z
 
 @x sndfile-interleave
-          <para>converts multiple single channel files into a multi-channel
-          file.</para>
+            converts multiple single channel files into a multi-channel file.
 @y
-          <para>
-          複数のシングルチャネル形式のファイルを、マルチチャネル形式のファイルに変換します。
-          </para>
+            複数のシングルチャネル形式のファイルを、マルチチャネル形式のファイルに変換します。
 @z
 
 @x sndfile-metadata-get
-          <para>retrieves metadata from a sound file.</para>
+            retrieves metadata from a sound file.
 @y
-          <para>
-          サウンドファイルからメタデータを抽出します。
-          </para>
+            サウンドファイルからメタデータを抽出します。
 @z
 
 @x sndfile-metadata-set
-          <para>sets metadata in a sound file.</para>
+            sets metadata in a sound file.
 @y
-          <para>
-          サウンドファイル内のメタデータを設定します。
-          </para>
+            サウンドファイル内のメタデータを設定します。
 @z
 
 @x sndfile-play
-          <para>plays a sound file.</para>
+            plays a sound file.
 @y
-          <para>
-          サウンドファイルを再生します。
-          </para>
+            サウンドファイルを再生します。
 @z
 
-@x libsndfile.{so,a}
-          <para>contains the <application>libsndfile</application> API
-          functions.</para>
+@x libsndfile.so
+            contains the <application>libsndfile</application> API functions.
 @y
-          <para>
-          <application>libsndfile</application> の API 関数を提供します。
-          </para>
+            <application>libsndfile</application> の API 関数を提供します。
 @z

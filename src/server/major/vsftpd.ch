@@ -26,14 +26,12 @@
 @z
 
 @x
-    <para>The <application>vsftpd</application> package contains a very
-    secure and very small FTP daemon. This is useful for serving files
-    over a network.</para>
+      The <application>vsftpd</application> package contains a very
+      secure and very small FTP daemon. This is useful for serving files
+      over a network.
 @y
-    <para>
-    <application>vsftpd</application> パッケージは、セキュアで軽量な FTP デーモンを提供します。
-    ネットワークを通じてファイル提供を行う際に活用することができます。
-    </para>
+      <application>vsftpd</application> パッケージは、セキュアで軽量な FTP デーモンを提供します。
+      ネットワークを通じてファイル提供を行う際に活用することができます。
 @z
 
 @x
@@ -43,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&vsftpd-download-http;"/></para>
+          Download (HTTP): <ulink url="&vsftpd-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&vsftpd-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&vsftpd-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&vsftpd-download-ftp;"/></para>
+          Download (FTP): <ulink url="&vsftpd-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&vsftpd-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&vsftpd-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &vsftpd-md5sum;</para>
+          Download MD5 sum: &vsftpd-md5sum;
 @y
-        <para>&Download; MD5 sum: &vsftpd-md5sum;</para>
+          &Download; MD5 sum: &vsftpd-md5sum;
 @z
 
 @x
-        <para>Download size: &vsftpd-size;</para>
+          Download size: &vsftpd-size;
 @y
-        <para>&DownloadSize;: &vsftpd-size;</para>
+          &DownloadSize;: &vsftpd-size;
 @z
 
 @x
-        <para>Estimated disk space required: &vsftpd-buildsize;</para>
+          Estimated disk space required: &vsftpd-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &vsftpd-buildsize;</para>
+          &Estimateddiskspacerequired;: &vsftpd-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &vsftpd-time;</para>
+          Estimated build time: &vsftpd-time;
 @y
-        <para>&Estimatedbuildtime;: &vsftpd-time;</para>
+          &Estimatedbuildtime;: &vsftpd-time;
 @z
 
 @x
@@ -111,51 +109,37 @@
 @z
 
 @x
-    <para>For security reasons, running <application>vsftpd</application>
-    as an unprivileged user and group is encouraged. Also, a user should be
-    created to map anonymous users. As the <systemitem
-    class="username">root</systemitem> user, create the needed directories,
-    users, and groups with the following commands:</para>
+      For security reasons, running <application>vsftpd</application>
+      as an unprivileged user and group is encouraged. Also, a user should be
+      created to map anonymous users. As the <systemitem
+      class="username">root</systemitem> user, create the needed directories,
+      users, and groups with the following commands:
 @y
-    <para>
-    セキュリティ上の理由から <application>vsftpd</application> の起動は、非特権ユーザーおよびグループにより行うことが強く推奨されます。
-    また匿名アクセスを行うユーザーを別途作る必要もあります。
-    <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し、必要となるディレクトリ、ユーザー、グループを生成します。
-    </para>
+      セキュリティ上の理由から <application>vsftpd</application> の起動は、非特権ユーザーおよびグループにより行うことが強く推奨されます。
+      また匿名アクセスを行うユーザーを別途作る必要もあります。
+      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し、必要となるディレクトリ、ユーザー、グループを生成します。
 @z
 
 @x
-    <para>If you did not install the optional <application>libcap2</application> package,
-    run the following to avoid a build error:</para>
+      Build <application>vsftpd</application> as an unprivileged user
+      using the following command:
 @y
-    <para>
-    任意の依存パッケージ <application>libcap2</application> をインストールしていない場合は、ビルドエラーとならないように以下を実行します。
-    </para>
+      非特権ユーザーとなって以下のコマンドを実行し、<application>vsftpd</application> をビルドします。
 @z
 
 @x
-    <para>Build <application>vsftpd</application> as an unprivileged user
-    using the following command:</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    非特権ユーザーとなって以下のコマンドを実行し、<application>vsftpd</application> をビルドします。
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      Once again, become the <systemitem class="username">root</systemitem>
+      user and install <application>vsftpd</application> with the following
+      commands:
 @y
-    <para>&notTestSuite;</para>
-@z
-
-@x
-    <para>Once again, become the <systemitem class="username">root</systemitem>
-    user and install <application>vsftpd</application> with the following
-    commands:</para>
-@y
-    <para>
-    もう一度 <systemitem class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <application>vsftpd</application> をインストールします。
-    </para>
+      もう一度 <systemitem
+      class="username">root</systemitem> ユーザーになり、以下のコマンドを実行して <application>vsftpd</application> をインストールします。
 @z
 
 @x
@@ -165,59 +149,58 @@
 @z
 
 @x
-    <para><command>install -v -d ...</command>: This creates the
-    directory that anonymous users will use (<filename
-    class='directory'>/home/ftp</filename>)
-    and the directory the daemon will chroot into
-    (<filename class='directory'>&vsftpd-empty;</filename>).</para>
+      <command>install -v -d ...</command>: This creates the
+      directory that anonymous users will use (<filename
+      class='directory'>/home/ftp</filename>)
+      and the directory the daemon will chroot into
+      (<filename class='directory'>&vsftpd-empty;</filename>).
 @y
-    <para><command>install -v -d ...</command>:
-    これは匿名ユーザーが利用するディレクトリ (<filename
-    class='directory'>/home/ftp</filename>) と、デーモンが chroot する先のディレクトリ (<filename
-    class='directory'>&vsftpd-empty;</filename>) のそれぞれを生成します。
-    </para>
+      <command>install -v -d ...</command>:
+      これは匿名ユーザーが利用するディレクトリ (<filename
+      class='directory'>/home/ftp</filename>) と、デーモンが chroot する先のディレクトリ (<filename
+      class='directory'>&vsftpd-empty;</filename>) のそれぞれを生成します。
 @z
 
 @x
-      <para><filename class="directory">/home/ftp</filename> should not be
-      owned by the user <systemitem class="username">vsftpd</systemitem>,
-      or the user <systemitem class="username">ftp</systemitem>.</para>
+        <filename class="directory">/home/ftp</filename> should not be
+        owned by the user <systemitem class="username">vsftpd</systemitem>,
+        or the user <systemitem class="username">ftp</systemitem>.
 @y
-      <para><filename class="directory">/home/ftp</filename> should not be
-      owned by the user <systemitem class="username">vsftpd</systemitem>,
-      or the user <systemitem class="username">ftp</systemitem>.</para>
+        <filename class="directory">/home/ftp</filename> should not be
+        owned by the user <systemitem class="username">vsftpd</systemitem>,
+        or the user <systemitem class="username">ftp</systemitem>.
 @z
 
 @x
-    <para><command>echo "#define VSF_BUILD_TCPWRAPPERS" >>builddefs.h</command>:
-    Use this prior to <command>make</command> to add support for
-    <application>tcpwrappers</application>.</para>
+      <command>echo "#define VSF_BUILD_TCPWRAPPERS" >>builddefs.h</command>:
+      Use this prior to <command>make</command> to add support for
+      <application>tcpwrappers</application>.
 @y
-    <para><command>echo "#define VSF_BUILD_TCPWRAPPERS" >>builddefs.h</command>:
-    Use this prior to <command>make</command> to add support for
-    <application>tcpwrappers</application>.</para>
+      <command>echo "#define VSF_BUILD_TCPWRAPPERS" >>builddefs.h</command>:
+      Use this prior to <command>make</command> to add support for
+      <application>tcpwrappers</application>.
 @z
 
 @x
-    <para><command>echo "#define VSF_BUILD_SSL" >>builddefs.h</command>:
-    Use this prior to <command>make</command> to add support for SSL.</para>
+      <command>echo "#define VSF_BUILD_SSL" >>builddefs.h</command>:
+      Use this prior to <command>make</command> to add support for SSL.
 @y
-    <para><command>echo "#define VSF_BUILD_SSL" >>builddefs.h</command>:
-    Use this prior to <command>make</command> to add support for SSL.</para>
+      <command>echo "#define VSF_BUILD_SSL" >>builddefs.h</command>:
+      Use this prior to <command>make</command> to add support for SSL.
 @z
 
 @x
-    <para><command>install -v -m ...</command>:
-    The <filename>Makefile</filename> uses non-standard installation paths.
-    These commands install the files in
-    <filename class='directory'>/usr</filename> and
-    <filename class='directory'>/etc</filename>.</para>
+      <command>install -v -m ...</command>:
+      The <filename>Makefile</filename> uses non-standard installation paths.
+      These commands install the files in
+      <filename class='directory'>/usr</filename> and
+      <filename class='directory'>/etc</filename>.
 @y
-    <para><command>install -v -m ...</command>:
-    The <filename>Makefile</filename> uses non-standard installation paths.
-    These commands install the files in
-    <filename class='directory'>/usr</filename> and
-    <filename class='directory'>/etc</filename>.</para>
+      <command>install -v -m ...</command>:
+      The <filename>Makefile</filename> uses non-standard installation paths.
+      These commands install the files in
+      <filename class='directory'>/usr</filename> and
+      <filename class='directory'>/etc</filename>.
 @z
 
 @x
@@ -239,27 +222,69 @@
 @z
 
 @x
-      <para><application>vsftpd</application> comes with a basic
-      anonymous-only configuration file that was copied to
-      <filename class='directory'>/etc</filename> above. While still as
-      <systemitem class="username">root</systemitem>, this file should be
-      modified because it is now recommended to run <command>vsftpd</command>
-      in standalone mode. <!-- as opposed to
-      <command>inetd</command>/<command>xinetd</command> mode. -->Also, you
-      should specify the privilege separation user created above. Finally,
-      you should specify the <command>chroot</command> directory.
-      <command>man vsftpd.conf</command> will give you all the details.</para>
+        <application>vsftpd</application> comes with a basic
+        anonymous-only configuration file that was copied to
+        <filename class='directory'>/etc</filename> above. While still as
+        <systemitem class="username">root</systemitem>, this file should be
+        modified because it is now recommended to run <command>vsftpd</command>
+        in standalone mode. Also, you
+        should specify the privilege separation user created above. Finally,
+        you should specify the <command>chroot</command> directory.
+        <command>man vsftpd.conf</command> will give you all the details.
 @y
-      <para><application>vsftpd</application> comes with a basic
-      anonymous-only configuration file that was copied to
-      <filename class='directory'>/etc</filename> above. While still as
-      <systemitem class="username">root</systemitem>, this file should be
-      modified because it is now recommended to run <command>vsftpd</command>
-      in standalone mode. <!-- as opposed to
-      <command>inetd</command>/<command>xinetd</command> mode. -->Also, you
-      should specify the privilege separation user created above. Finally,
-      you should specify the <command>chroot</command> directory.
-      <command>man vsftpd.conf</command> will give you all the details.</para>
+        <application>vsftpd</application> comes with a basic
+        anonymous-only configuration file that was copied to
+        <filename class='directory'>/etc</filename> above. While still as
+        <systemitem class="username">root</systemitem>, this file should be
+        modified because it is now recommended to run <command>vsftpd</command>
+        in standalone mode. Also, you
+        should specify the privilege separation user created above. Finally,
+        you should specify the <command>chroot</command> directory.
+        <command>man vsftpd.conf</command> will give you all the details.
+@z
+
+@x
+        The vsftpd daemon uses seccomp to improve security by default.
+        But it's known to cause vsftpd unable to handle ftp
+        <literal>LIST</literal> command with recent kernel versions.  Append
+        a line to <filename>/etc/vsftpd.conf</filename> (as the
+        <systemitem class="username">root</systemitem> user) to disable
+        seccomp and workaround this issue:
+@y
+        The vsftpd daemon uses seccomp to improve security by default.
+        But it's known to cause vsftpd unable to handle ftp
+        <literal>LIST</literal> command with recent kernel versions.  Append
+        a line to <filename>/etc/vsftpd.conf</filename> (as the
+        <systemitem class="username">root</systemitem> user) to disable
+        seccomp and workaround this issue:
+@z
+
+@x
+        To enable local logins, append the following to the
+        <filename>/etc/vsftpd.conf</filename> file (as the
+        <systemitem class="username">root</systemitem> user):
+@y
+        To enable local logins, append the following to the
+        <filename>/etc/vsftpd.conf</filename> file (as the
+        <systemitem class="username">root</systemitem> user):
+@z
+
+@x
+        In addition, if using <application>Linux-PAM</application> and
+        <application>vsftpd</application> with local user logins, you will need
+        a <application>Linux-PAM</application> configuration file. As the
+        <systemitem class="username">root</systemitem> user, create the
+        <filename>/etc/pam.d/vsftpd</filename> file, and add the needed
+        configuration changes for <application>Linux-PAM</application> session
+        support using the following commands:
+@y
+        In addition, if using <application>Linux-PAM</application> and
+        <application>vsftpd</application> with local user logins, you will need
+        a <application>Linux-PAM</application> configuration file. As the
+        <systemitem class="username">root</systemitem> user, create the
+        <filename>/etc/pam.d/vsftpd</filename> file, and add the needed
+        configuration changes for <application>Linux-PAM</application> session
+        support using the following commands:
 @z
 
 @x
@@ -271,21 +296,21 @@
 @z
 
 @x
-      <para>Install the
-      <phrase revision="sysv"><filename>/etc/rc.d/init.d/vsftpd</filename> init
-      script</phrase>
-      <phrase revision="systemd"><filename>vsftpd.service</filename>
-      unit</phrase> included in the
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> package.</para>
+        Install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/vsftpd</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>vsftpd.service</filename>
+        unit</phrase> included in the
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> package:
 @y
-      <para>Install the
-      <phrase revision="sysv"><filename>/etc/rc.d/init.d/vsftpd</filename> init
-      script</phrase>
-      <phrase revision="systemd"><filename>vsftpd.service</filename>
-      unit</phrase> included in the
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> package.</para>
+        Install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/vsftpd</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>vsftpd.service</filename>
+        unit</phrase> included in the
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> package:
 @z
 
 @x
@@ -321,7 +346,7 @@
 @z
 
 @x
-          <para>is the FTP daemon.</para>
+            is the FTP daemon.
 @y
-          <para>is the FTP daemon.</para>
+            is the FTP daemon.
 @z

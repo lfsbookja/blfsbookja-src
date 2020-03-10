@@ -20,13 +20,10 @@
 @z
 
 @x
-    <para>This package provides a <application>Phonon</application> backend
-    which utilizes the <application>GStreamer</application> media framework.
-    </para>
+      This package provides a <application>Phonon</application> backend
+      which utilizes the <application>GStreamer</application> media framework.
 @y
-    <para>
-    このパッケージは <application>GStreamer</application> メディアフレームワークを利用する、<application>Phonon</application> のバックエンドライブラリを提供します。
-    </para>
+      このパッケージは <application>GStreamer</application> メディアフレームワークを利用する、<application>Phonon</application> のバックエンドライブラリを提供します。
 @z
 
 @x
@@ -36,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&phonon-backend-gstreamer-download-http;"/></para>
+          Download (HTTP): <ulink url="&phonon-backend-gstreamer-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&phonon-backend-gstreamer-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&phonon-backend-gstreamer-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&phonon-backend-gstreamer-download-ftp;"/></para>
+          Download (FTP): <ulink url="&phonon-backend-gstreamer-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&phonon-backend-gstreamer-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&phonon-backend-gstreamer-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &phonon-backend-gstreamer-md5sum;</para>
+          Download MD5 sum: &phonon-backend-gstreamer-md5sum;
 @y
-        <para>&Download; MD5 sum: &phonon-backend-gstreamer-md5sum;</para>
+          &Download; MD5 sum: &phonon-backend-gstreamer-md5sum;
 @z
 
 @x
-        <para>Download size: &phonon-backend-gstreamer-size;</para>
+          Download size: &phonon-backend-gstreamer-size;
 @y
-        <para>&DownloadSize;: &phonon-backend-gstreamer-size;</para>
+          &DownloadSize;: &phonon-backend-gstreamer-size;
 @z
 
 @x
-        <para>Estimated disk space required: &phonon-backend-gstreamer-buildsize;</para>
+          Estimated disk space required: &phonon-backend-gstreamer-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &phonon-backend-gstreamer-buildsize;</para>
+          &Estimateddiskspacerequired;: &phonon-backend-gstreamer-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &phonon-backend-gstreamer-time;</para>
+          Estimated build time: &phonon-backend-gstreamer-time;
 @y
-        <para>&Estimatedbuildtime;: &phonon-backend-gstreamer-time;</para>
+          &Estimatedbuildtime;: &phonon-backend-gstreamer-time;
 @z
 
 @x
@@ -124,20 +121,16 @@
 @z
 
 @x
-    <para>Install <application>Phonon-backend-gstreamer</application> by
-    running the following commands:</para>
+      Install <application>Phonon-backend-gstreamer</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Phonon-backend-gstreamer</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Phonon-backend-gstreamer</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -147,13 +140,11 @@
 @z
 
 @x
-    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
-    used to apply higher level of compiler optimizations.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+      used to apply higher level of compiler optimizations.
 @y
-    <para>
-    <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
-    このスイッチは、コンパイラーの最適化オプションを最高レベルにて適用することを指示します。
-    </para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
+      このスイッチは、コンパイラーの最適化オプションを最高レベルにて適用することを指示します。
 @z
 
 @x

@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY cmake-buildsize     "443 MB (add 541 MB for tests)">
-  <!ENTITY cmake-time          "2.8 SBU (add 3.8 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-time          "2.6 SBU (add 3.6 SBU for tests, both using parallelism=4)">
 @y
   <!ENTITY cmake-buildsize     "443 MB（テスト実行時は 541 MB）">
-  <!ENTITY cmake-time          "2.8 SBU（テスト実行時は 3.8 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-time          "2.6 SBU（テスト実行時は 3.6 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -121,7 +121,6 @@
       <xref linkend="qt5"/> (for the Qt-based GUI),
       <xref linkend="subversion"/> (for testing), and
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (for building documents)
-      <!--<ulink url="https://github.com/facebook/zstd">zstd</ulink> (for testing) NOW IN LFS -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -129,7 +128,6 @@
       <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
       <xref linkend="subversion"/> (テスト時), 
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (ドキュメント構築時)
-      <!--<ulink url="https://github.com/facebook/zstd">zstd</ulink> (for testing) NOW IN LFS -->
     </para>
 @z
 
@@ -160,9 +158,6 @@
       number of system cores. In case the environment variable 
       <literal>LANG</literal> is set to a non-blank value and failures 
       occur, try running the tests without having <literal>LANG</literal> set.
-      The test RunCMake.CommandLineTar is known to fail if the 
-      <ulink url="https://github.com/facebook/zstd">zstd</ulink> 
-      package is not installed.
 @y
       ビルド結果をテストする場合は <command>bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
@@ -171,31 +166,6 @@
       In case the environment variable 
       <literal>LANG</literal> is set to a non-blank value and failures 
       occur, try running the tests without having <literal>LANG</literal> set.
-      The test RunCMake.CommandLineTar is known to fail if the 
-      <ulink url="https://github.com/facebook/zstd">zstd</ulink> 
-      package is not installed.
-@z
-
-@x
-     <!-- Please, don't remove this comment, needed if tests start to fail
-      again. If you want to investigate a problem with a given "problem1-test",
-      use <command>bin/ctest -R "problem1-test"</command> and, to omit it, use
-      <command>bin/ctest -E "problem1-test"</command>. These options can be
-      used together: <command>bin/ctest -R "problem1-test" -E
-      "problem2-test"</command>.  Option -N can be used to display all
-      available tests, and you can run <command>bin/ctest</command> for a
-      sub-set of tests by using separated by spaces names or numbers as
-      options. Option -/-help can be used to show all options.-->
-@y
-     <!-- Please, don't remove this comment, needed if tests start to fail
-      again. If you want to investigate a problem with a given "problem1-test",
-      use <command>bin/ctest -R "problem1-test"</command> and, to omit it, use
-      <command>bin/ctest -E "problem1-test"</command>. These options can be
-      used together: <command>bin/ctest -R "problem1-test" -E
-      "problem2-test"</command>.  Option -N can be used to display all
-      available tests, and you can run <command>bin/ctest</command> for a
-      sub-set of tests by using separated by spaces names or numbers as
-      options. Option -/-help can be used to show all options.-->
 @z
 
 @x

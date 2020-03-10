@@ -26,37 +26,38 @@
 @z
 
 @x
-  <para>This section did not provide instructions for all of the available
-  packages in the KDE5 Software Compilation. The included packages were selected
-  based on what most people would want to use on a standard desktop computer.</para>
+    This section did not provide instructions for all of the available packages
+    in the KDE5 Software Compilation. The included packages were selected
+    based on what most people would want to use on a standard desktop computer.
 @y
-  <para>
-  本節は、利用可能な KDE5 ソフトウェアコンパイレーション (KDE5 Software Compilation) のビルド手順までは説明しません。
-  ここに示すパッケージは、多くの方が標準的なデスクトップコンピューターにおいて利用したいと思うパッケージを選んでいます。
-  </para>
+    本節は、利用可能な KDE5 ソフトウェアコンパイレーション (KDE5 Software Compilation) のビルド手順までは説明しません。
+    ここに示すパッケージは、多くの方が標準的なデスクトップコンピューターにおいて利用したいと思うパッケージを選んでいます。
 @z
 
 @x
-  <para>For a full list of available packages, have a look on the KDE5 servers at
-  <ulink url="&kf5apps-download-http;">&kf5apps-download-http;</ulink>,
-  </para>
+    For a full list of available packages, have a look on the KDE5 servers at
+    <ulink url="&kf5apps-download-http;">&kf5apps-download-http;</ulink>.
 @y
-  <para>
-  利用可能な全パッケージの詳細については KDE5 サーバー <ulink url="&kf5apps-download-http;">&kf5apps-download-http;</ulink> を参照してください。
-  </para>
+    利用可能な全パッケージの詳細については KDE5 サーバー <ulink url="&kf5apps-download-http;">&kf5apps-download-http;</ulink> を参照してください。
 @z
 
 @x
-  <para>Some additional packages worth mentioning are:</para>
+      Some packages, such as kde-baseapps, kde-runtime, and kmag listed in the
+      link above are only for the older KDE4 and cannot be used with KF5.
 @y
-  <para>
-  その他の KDE パッケージとして取り上げるのは以下のものです。
-  </para>
+      Some packages, such as kde-baseapps, kde-runtime, and kmag listed in the
+      link above are only for the older KDE4 and cannot be used with KF5.
 @z
 
 @x
-          <para>Juk: A lightweight music player.</para>
+    Some additional packages worth mentioning are:
 @y
-          <para>Juk: A lightweight music player.</para>
+    その他の KDE パッケージとして取り上げるのは以下のものです。
+@z
+
+@x
+      <para>Juk: A lightweight music player.</para>
+@y
+      <para>Juk: A lightweight music player.</para>
 @z
 

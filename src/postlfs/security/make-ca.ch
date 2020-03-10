@@ -110,20 +110,26 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required"><xref linkend="p11-kit"/> (required at runtime to
+    generate certificate stores from trust anchors)</para>
+    <!-- /usr/bin/trust is needed to extract the certs to /etc/ssl/certs -->
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required"><xref linkend="p11-kit"/> (required at runtime to
+    generate certificate stores from trust anchors)</para>
+    <!-- /usr/bin/trust is needed to extract the certs to /etc/ssl/certs -->
+@z
+
+@x
    <bridgehead renderas="sect4">Optional (runtime)</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="java"/> or
-      <xref role="runtime" linkend="openjdk"/> (to generate a java PKCS#12
-      store), and <xref role="runtime" linkend="nss"/> (to generate a shared
-      NSSDB)
+      <xref role="runtime" linkend="nss"/> (to generate a shared NSSDB)
     </para>
 @y
    <bridgehead renderas="sect4">&Optional; (実行時)</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="java"/> または
-      <xref role="runtime" linkend="openjdk"/> (to generate a java PKCS#12
-      store), <xref role="runtime" linkend="nss"/> (to generate a shared
-      NSSDB)
+      <xref role="runtime" linkend="nss"/> (to generate a shared NSSDB)
     </para>
 @z
 

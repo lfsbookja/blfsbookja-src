@@ -188,33 +188,33 @@
 @z
 
 @x xfwm4
-          <para>is the <application>Xfce</application> window manager.</para>
+            is the <application>Xfce</application> window manager.
 @y
-          <para><application>Xfce</application> ウィンドウマネージャー。</para>
+            <application>Xfce</application> ウィンドウマネージャー。
 @z
 
 @x xfwm4-settings
-            is a <application>GTK+ 2</application> application that allows you to
-            set some preferences such as your theme, keyboard shortcuts and
+            is a <application>GTK+ 2</application> application that allows
+            setting some preferences such as your theme, keyboard shortcuts and
             mouse focus behaviour.
 @y
-            is a <application>GTK+ 2</application> application that allows you to
-            set some preferences such as your theme, keyboard shortcuts and
+            is a <application>GTK+ 2</application> application that allows
+            setting some preferences such as your theme, keyboard shortcuts and
             mouse focus behaviour.
 @z
 
 @x xfwm4-tweaks-settings
-            is a <application>GTK+ 2</application> application that allows you to
-            set some more preferences for <application>Xfwm4</application>.
+            is a <application>GTK+ 2</application> application that allows
+            setting some more preferences for <application>Xfwm4</application>.
 @y
-            is a <application>GTK+ 2</application> application that allows you to
-            set some more preferences for <application>Xfwm4</application>.
+            is a <application>GTK+ 2</application> application that allows
+            setting some more preferences for <application>Xfwm4</application>.
 @z
 
 @x xfwm4-workspace-settings
-            is a <application>GTK+ 2</application> application that allows you to
-            set your workspace preferences.
+            is a <application>GTK+ 2</application> application that allows
+            setting your workspace preferences.
 @y
-            is a <application>GTK+ 2</application> application that allows you to
-            set your workspace preferences.
+            is a <application>GTK+ 2</application> application that allows
+            setting your workspace preferences.
 @z

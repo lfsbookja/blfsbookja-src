@@ -48,23 +48,29 @@
 @z
 
 @x
-    <para>Computer instructions may be extracted from the book under the
-    <xref linkend="MIT"/>.</para>
+      Computer instructions may be extracted from the book under the
+      <xref linkend="MIT"/>.
 @y
-    <para>本書のインストール手順のコマンドを抜き出したものは<xref linkend="MIT"/>に従ってください。</para>
+      本書のインストール手順のコマンドを抜き出したものは <xref linkend="MIT"/> に従ってください。
 @z
 
 @x
-    <para><trademark class='registered'>Linux</trademark> is a registered trademark of
-    Linus Torvalds.</para>
+      <trademark class='registered'>Linux</trademark> is a registered trademark
+      of Linus Torvalds.
 @y
-    <para><trademark class='registered'>Linux</trademark> は Linus Torvalds の登録商標です。</para>
+      <trademark class='registered'>Linux</trademark> は Linus Torvalds の登録商標です。
 @z
 
 @x
       <revremark>Ongoing Release</revremark>
 @y
       <revremark>進行中リリース</revremark>
+@z
+
+@x 2020-03-01
+      <revremark>Twenty-first Release</revremark>
+@y
+      <revremark>第 21 次リリース</revremark>
 @z
 
 @x 2019-09-01
@@ -188,20 +194,22 @@
 @z
 
 @x
-  <abstract>
-    <para>This book follows on from the Linux From Scratch book. It introduces
-    and guides the reader through additions to the system including networking,
-    graphical interfaces, sound support, and printer and scanner
-    support.</para>
-  </abstract>
+      This book follows on from the Linux From Scratch book. It introduces
+      and guides the reader through additions to the system including
+      networking, graphical interfaces, sound support, and printer and scanner
+      support.
 @y
-  <abstract>
-  <para>
-  本書は Linux From Scratch ブックに続くものです。
-  システムに追加していく機能として、ネットワーク、グラフィカルインターフェース、サウンド機能、プリンター、スキャナー機能などを紹介し説明していきます。
-  </para>
+      本書は Linux From Scratch ブックに続くものです。
+      システムに追加していく機能として、ネットワーク、グラフィカルインターフェース、サウンド機能、プリンター、スキャナー機能などを紹介し説明していきます。
+@z
+
+@x
   </abstract>
-  
+
+</bookinfo>
+@y
+  </abstract>
+
   <abstract>
   <title>日本語訳情報</title>
   <para>
@@ -209,4 +217,6 @@
   ご了承ください。 (日本語訳： 松山 道夫)
   </para>
   </abstract>
+
+</bookinfo>
 @z

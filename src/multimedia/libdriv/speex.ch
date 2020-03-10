@@ -14,21 +14,33 @@
 @z
 
 @x
+  <!ENTITY speex-time          "less than 0.1 SBU">
+@y
+  <!ENTITY speex-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
+  <!ENTITY speexdsp-time          "less than 0.1 SBU">
+@y
+  <!ENTITY speexdsp-time          "&LessThan1;0.1 SBU&LessThan2;">
+@z
+
+@x
     <title>Introduction to Speex</title>
 @y
     <title>&IntroductionTo1;Speex&IntroductionTo2;</title>
 @z
 
 @x
-    <para><application>Speex</application> is an audio compression format
-    designed especially for speech. It is well-adapted to internet applications
-    and provides useful features that are not present in most other
-    CODECs.</para>
+      <application>Speex</application> is an audio compression format
+      designed especially for speech. It is well-adapted to internet
+      applications and provides useful features that are not present in most
+      other CODECs.
 @y
-    <para><application>Speex</application> is an audio compression format
-    designed especially for speech. It is well-adapted to internet applications
-    and provides useful features that are not present in most other
-    CODECs.</para>
+      <application>Speex</application> is an audio compression format
+      designed especially for speech. It is well-adapted to internet
+      applications and provides useful features that are not present in most
+      other CODECs.
 @z
 
 @x
@@ -38,39 +50,81 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&speex-download-http;"/></para>
+          Download (HTTP): <ulink url="&speex-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&speex-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&speex-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&speex-download-ftp;"/></para>
+          Download (FTP): <ulink url="&speex-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&speex-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&speex-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &speex-md5sum;</para>
+          Download MD5 sum: &speex-md5sum;
 @y
-        <para>&Download; MD5 sum: &speex-md5sum;</para>
+          &Download; MD5 sum: &speex-md5sum;
 @z
 
 @x
-        <para>Download size: &speex-size;</para>
+          Download size: &speex-size;
 @y
-        <para>&DownloadSize;: &speex-size;</para>
+          &DownloadSize;: &speex-size;
 @z
 
 @x
-        <para>Estimated disk space required: &speex-buildsize;</para>
+          Estimated disk space required: &speex-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &speex-buildsize;</para>
+          &Estimateddiskspacerequired;: &speex-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &speex-time;</para>
+          Estimated build time: &speex-time;
 @y
-        <para>&Estimatedbuildtime;: &speex-time;</para>
+          &Estimatedbuildtime;: &speex-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+          Download (HTTP): <ulink url="&speexdsp-download-http;"/>
+@y
+          &Download; (HTTP): <ulink url="&speexdsp-download-http;"/>
+@z
+
+@x
+          Download (FTP): <ulink url="&speexdsp-download-ftp;"/>
+@y
+          &Download; (FTP): <ulink url="&speexdsp-download-ftp;"/>
+@z
+
+@x
+          Download MD5 sum: &speexdsp-md5sum;
+@y
+          &Download; MD5 sum: &speexdsp-md5sum;
+@z
+
+@x
+          Download size: &speexdsp-size;
+@y
+          &DownloadSize;: &speexdsp-size;
+@z
+
+@x
+          Estimated disk space required: &speexdsp-buildsize;
+@y
+          &Estimateddiskspacerequired;: &speexdsp-buildsize;
+@z
+
+@x
+          Estimated build time: &speexdsp-time;
+@y
+          &Estimatedbuildtime;: &speexdsp-time;
 @z
 
 @x
@@ -105,10 +159,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/speex"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/speex"/></para>
 @z
 
 @x
@@ -118,40 +170,42 @@
 @z
 
 @x
-    <para>Install <application>Speex</application> by running the
-    following commands:</para>
+      This package consists of two separate tarballs.
+      They need to be extracted and built independently.
 @y
-    <para>
-    以下のコマンドを実行して <application>Speex</application> をビルドします。
-    </para>
+      This package consists of two separate tarballs.
+      They need to be extracted and built independently.
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      Install <application>Speex</application> by running the
+      following commands:
 @y
-    <para>&notTestSuite;</para>
+      以下のコマンドを実行して <application>Speex</application> をビルドします。
 @z
 
 @x
-    <para>As the <systemitem class="username">root</systemitem> user:</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now extract and install the speexdsp package:</para>
+      As the <systemitem class="username">root</systemitem> user:
 @y
-    <para>Now extract and install the speexdsp package:</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>Again, as the <systemitem class="username">root</systemitem> user:</para>
+      Now extract and install the speexdsp package:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      Now extract and install the speexdsp package:
+@z
+
+@x
+      Again, as the <systemitem class="username">root</systemitem> user:
+@y
+      再度 <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -193,31 +247,29 @@
 @z
 
 @x speexdec
-          <para>decodes a <application>Speex</application> file and
-          produces a WAV or raw file.</para>
+            decodes a <application>Speex</application> file and
+            produces a WAV or raw file.
 @y
-          <para>decodes a <application>Speex</application> file and
-          produces a WAV or raw file.</para>
+            decodes a <application>Speex</application> file and
+            produces a WAV or raw file.
 @z
 
 @x speexenc
-          <para>encodes a WAV or raw files using
-          <application>Speex</application>.</para>
+            encodes a WAV or raw files using <application>Speex</application>.
 @y
-          <para>encodes a WAV or raw files using
-          <application>Speex</application>.</para>
+            encodes a WAV or raw files using <application>Speex</application>.
 @z
 
-@x libspeex.{so,a}
-          <para>provides functions for the audio encoding/decoding programs.</para>
+@x libspeex.so
+            provides functions for the audio encoding/decoding programs.
 @y
-          <para>provides functions for the audio encoding/decoding programs.</para>
+            provides functions for the audio encoding/decoding programs.
 @z
 
-@x libspeexdsp.{so,a}
-          <para>is a speech processing library that goes along with the
-          <application>Speex</application> codec.</para>
+@x libspeexdsp.so
+            is a speech processing library that goes along with the
+            <application>Speex</application> codec.
 @y
-          <para>is a speech processing library that goes along with the
-          <application>Speex</application> codec.</para>
+            is a speech processing library that goes along with the
+            <application>Speex</application> codec.
 @z

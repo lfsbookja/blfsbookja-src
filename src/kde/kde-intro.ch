@@ -20,31 +20,31 @@
 @z
 
 @x
-  <para><application>KDE</application> is a comprehensive desktop environment
-  with a huge number of applications written for it and a huge amount of users.
-  It is based on the <application>Qt</application> framework.</para>
+    <application>KDE</application> is a comprehensive desktop environment with
+    a huge number of applications written for it and a huge amount of users.
+    It is based on the <application>Qt</application> framework.
 @y
-  <para><application>KDE</application> is a comprehensive desktop environment
-  with a huge number of applications written for it and a huge amount of users.
-  It is based on the <application>Qt</application> framework.</para>
+    <application>KDE</application> is a comprehensive desktop environment with
+    a huge number of applications written for it and a huge amount of users.
+    It is based on the <application>Qt</application> framework.
 @z
 
 @x
-  <para>The KDE5 system has two main blocks: the libraries, called KDE
-  Frameworks 5 or KF5, which can be used in other environments, and the
-  desktop environment called KDE Plasma 5. Most of the applications written
-  by the KDE team only use KF5, and do not need the plasma environment.</para>
+    The KDE5 system has two main blocks: the libraries, called KDE
+    Frameworks 5 or KF5, which can be used in other environments, and the
+    desktop environment called KDE Plasma 5. Most of the applications written
+    by the KDE team only use KF5, and do not need the plasma environment.
 @y
-  <para>The KDE5 system has two main blocks: the libraries, called KDE
-  Frameworks 5 or KF5, which can be used in other environments, and the
-  desktop environment called KDE Plasma 5. Most of the applications written
-  by the KDE team only use KF5, and do not need the plasma environment.</para>
+    The KDE5 system has two main blocks: the libraries, called KDE
+    Frameworks 5 or KF5, which can be used in other environments, and the
+    desktop environment called KDE Plasma 5. Most of the applications written
+    by the KDE team only use KF5, and do not need the plasma environment.
 @z
 
 @x
-  <para>For more information visit the official KDE project site at
-  <ulink url="http://www.kde.org/"/>.</para>
+    For more information visit the official KDE project site at
+    <ulink url="http://www.kde.org/"/>.
 @y
-  <para>For more information visit the official KDE project site at
-  <ulink url="http://www.kde.org/"/>.</para>
+    For more information visit the official KDE project site at
+    <ulink url="http://www.kde.org/"/>.
 @z

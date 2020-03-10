@@ -102,12 +102,10 @@
 @z
 
 @x
-    <para>Install <application>Taglib</application> by running the
-    following commands:</para>
+      Install <application>Taglib</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Taglib</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Taglib</application> をビルドします。
 @z
 
 @x

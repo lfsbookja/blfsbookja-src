@@ -112,6 +112,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus-python"/>,
+      <xref linkend="libevent"/>,
       <xref linkend="pygtk"/>,
       <xref linkend="doxygen"/> and
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
@@ -121,10 +122,11 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus-python"/>,
+      <xref linkend="libevent"/>,
       <xref linkend="pygtk"/>,
-      <xref linkend="doxygen"/> and
+      <xref linkend="doxygen"/>,
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
-      (for generating documentation)
+      (ドキュメント生成のため)
     </para>
 @z
 

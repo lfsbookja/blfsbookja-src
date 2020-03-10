@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "167 MB (add 3 MB for tests)">
+  <!ENTITY glib2-buildsize     "176 MB (add 6 MB for tests)">
   <!ENTITY glib2-time          "0.5 SBU (add 0.5 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY glib2-buildsize     "167 MB (テスト実施時はさらに 3 MB)">
+  <!ENTITY glib2-buildsize     "176 MB (テスト実施時はさらに 6 MB)">
   <!ENTITY glib2-time          "0.5 SBU (テスト実施時はさらに 0.5 SBU; いずれも paralleism=4)">
 @z
 
@@ -193,16 +193,6 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      If <xref linkend="libxslt"/> is installed, the following command may
-      indicate several (about 33) errors that start with "Error: no ID for
-      constraint linkend:" when installing the man pages.  These are harmless.
-@y
-      If <xref linkend="libxslt"/> is installed, the following command may
-      indicate several (about 33) errors that start with "Error: no ID for
-      constraint linkend:" when installing the man pages.  These are harmless.
 @z
 
 @x

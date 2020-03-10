@@ -28,14 +28,12 @@
 @z
 
 @x
-    <para>The <application>libogg</application> package contains the Ogg file
-    structure. This is useful for creating (encoding) or playing (decoding) a
-    single physical bit stream.</para>
+      The <application>libogg</application> package contains the Ogg file
+      structure. This is useful for creating (encoding) or playing (decoding) a
+      single physical bit stream.
 @y
-    <para>
-    <application>libogg</application> パッケージは、Ogg ファイル構造 (Ogg file structure) を提供します。
-    これは単一の物理ビットストリームの生成 (エンコーディング) と再生 (デコーディング) を実現します。
-    </para>
+      <application>libogg</application> パッケージは、Ogg ファイル構造 (Ogg file structure) を提供します。
+      これは単一の物理ビットストリームの生成 (エンコーディング) と再生 (デコーディング) を実現します。
 @z
 
 @x
@@ -45,47 +43,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libogg-download-http;"/></para>
+          Download (HTTP): <ulink url="&libogg-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libogg-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libogg-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libogg-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libogg-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libogg-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libogg-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libogg-md5sum;</para>
+          Download MD5 sum: &libogg-md5sum;
 @y
-        <para>&Download; MD5 sum: &libogg-md5sum;</para>
+          &Download; MD5 sum: &libogg-md5sum;
 @z
 
 @x
-        <para>Download size: &libogg-size;</para>
+          Download size: &libogg-size;
 @y
-        <para>&DownloadSize;: &libogg-size;</para>
+          &DownloadSize;: &libogg-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libogg-buildsize;</para>
+          Estimated disk space required: &libogg-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libogg-buildsize;</para>
+          &Estimateddiskspacerequired;: &libogg-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libogg-time;</para>
+          Estimated build time: &libogg-time;
 @y
-        <para>&Estimatedbuildtime;: &libogg-time;</para>
+          &Estimatedbuildtime;: &libogg-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libogg"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libogg"/></para>
 @z
 
 @x
@@ -95,28 +91,22 @@
 @z
 
 @x
-    <para>Install <application>libogg</application> by running the following
-    commands:</para>
+      Install <application>libogg</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libogg</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libogg</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -148,7 +138,7 @@
 @y
         <seg>&None;</seg>
         <seg>libogg.so</seg>
-        <seg>/usr/include/ogg and /usr/share/doc/libogg-&libogg-version;</seg>
+        <seg>/usr/include/ogg, /usr/share/doc/libogg-&libogg-version;</seg>
 @z
 
 @x
@@ -158,10 +148,8 @@
 @z
 
 @x libogg.so
-          <para>provides the functions required for programs to
-          read or write Ogg formatted bit streams.</para>
+            provides the functions required for programs to
+            read or write Ogg formatted bit streams.
 @y
-          <para>
-          Ogg が定める書式のビットストリームを取り扱うための関数を提供します。
-          </para>
+            Ogg が定める書式のビットストリームを取り扱うための関数を提供します。
 @z

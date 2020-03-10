@@ -26,15 +26,13 @@
 @z
 
 @x
-    <para><application>Phonon</application> is the multimedia API for KDE.
-    It replaces the old <application>aRts</application> package.
-    Phonon needs either the GStreamer or VLC backend.</para>
+      <application>Phonon</application> is the multimedia API for KDE.
+      It replaces the old <application>aRts</application> package.
+      Phonon needs either the GStreamer or VLC backend.
 @y
-    <para>
-    <application>Phonon</application> は KDE に対するマルチメディア API です。
-    かつての <application>aRts</application> パッケージに置き換わるものです。
-    本パッケージは GStreamer や VLC のバックエンドとなります。
-    </para>
+      <application>Phonon</application> は KDE に対するマルチメディア API です。
+      かつての <application>aRts</application> パッケージに置き換わるものです。
+      本パッケージは GStreamer や VLC のバックエンドとなります。
 @z
 
 @x
@@ -44,39 +42,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&phonon-download-http;"/></para>
+          Download (HTTP): <ulink url="&phonon-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&phonon-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&phonon-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&phonon-download-ftp;"/></para>
+          Download (FTP): <ulink url="&phonon-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&phonon-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&phonon-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &phonon-md5sum;</para>
+          Download MD5 sum: &phonon-md5sum;
 @y
-        <para>&Download; MD5 sum: &phonon-md5sum;</para>
+          &Download; MD5 sum: &phonon-md5sum;
 @z
 
 @x
-        <para>Download size: &phonon-size;</para>
+          Download size: &phonon-size;
 @y
-        <para>&DownloadSize;: &phonon-size;</para>
+          &DownloadSize;: &phonon-size;
 @z
 
 @x
-        <para>Estimated disk space required: &phonon-buildsize;</para>
+          Estimated disk space required: &phonon-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &phonon-buildsize;</para>
+          &Estimateddiskspacerequired;: &phonon-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &phonon-time;</para>
+          Estimated build time: &phonon-time;
 @y
-        <para>&Estimatedbuildtime;: &phonon-time;</para>
+          &Estimatedbuildtime;: &phonon-time;
 @z
 
 @x
@@ -128,20 +126,16 @@
 @z
 
 @x
-    <para>Install <application>Phonon</application> by
-    running the following commands:</para>
+      Install <application>Phonon</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Phonon</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Phonon</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

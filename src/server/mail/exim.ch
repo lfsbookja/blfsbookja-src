@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para>The <application>Exim</application> package contains a Mail
-    Transport Agent written by the University of Cambridge, released
-    under the GNU Public License.</para>
+      The <application>Exim</application> package contains a Mail
+      Transport Agent written by the University of Cambridge, released
+      under the GNU Public License.
 @y
-    <para>
-    <application>Exim</application> パッケージは、メール転送エージェント (mail transfer agent) を提供します。
-    ケンブリッジ大学にて開発され、GNU Public License により公開されています。
-    </para>
+      <application>Exim</application> パッケージは、メール転送エージェント (mail transfer agent) を提供します。
+      ケンブリッジ大学にて開発され、GNU Public License により公開されています。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&exim-download-http;"/></para>
+          Download (HTTP): <ulink url="&exim-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&exim-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&exim-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&exim-download-ftp;"/></para>
+          Download (FTP): <ulink url="&exim-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&exim-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&exim-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &exim-md5sum;</para>
+          Download MD5 sum: &exim-md5sum;
 @y
-        <para>&Download; MD5 sum: &exim-md5sum;</para>
+          &Download; MD5 sum: &exim-md5sum;
 @z
 
 @x
-        <para>Download size: &exim-size;</para>
+          Download size: &exim-size;
 @y
-        <para>&DownloadSize;: &exim-size;</para>
+          &DownloadSize;: &exim-size;
 @z
 
 @x
-        <para>Estimated disk space required: &exim-buildsize;</para>
+          Estimated disk space required: &exim-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &exim-buildsize;</para>
+          &Estimateddiskspacerequired;: &exim-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &exim-time;</para>
+          Estimated build time: &exim-time;
 @y
-        <para>&Estimatedbuildtime;: &exim-time;</para>
+          &Estimatedbuildtime;: &exim-time;
 @z
 
 @x
@@ -79,13 +77,13 @@
 @z
 
 @x
-        <para>Additional formats of the documentation (text-based docs are
-        shipped with the sources) can be downloaded by following the links
-        shown at <ulink url="http://exim.org/docs.html"/>.</para>
+          Additional formats of the documentation (text-based docs are
+          shipped with the sources) can be downloaded by following the links
+          shown at <ulink url="http://exim.org/docs.html"/>.
 @y
-        <para>Additional formats of the documentation (text-based docs are
-        shipped with the sources) can be downloaded by following the links
-        shown at <ulink url="http://exim.org/docs.html"/>.</para>
+          Additional formats of the documentation (text-based docs are
+          shipped with the sources) can be downloaded by following the links
+          shown at <ulink url="http://exim.org/docs.html"/>.
 @z
 
 @x
@@ -159,40 +157,33 @@
 @z
 
 @x
-    <para>Before building <application>Exim</application>, as the
-    <systemitem class="username">root</systemitem> user you should create
-    the group and user <systemitem class="username">exim</systemitem> which
-    will run the <command>exim</command> daemon:</para>
+      Before building <application>Exim</application>, as the
+      <systemitem class="username">root</systemitem> user you should create
+      the group and user <systemitem class="username">exim</systemitem> which
+      will run the <command>exim</command> daemon:
 @y
-    <para>
-    <application>Exim</application> をビルドするにあたっては、<systemitem
-    class="username">root</systemitem> ユーザーになって <systemitem
-    class="username">exim</systemitem> というユーザーおよびグループを作成する必要があります。
-    これは <command>exim</command> デーモンを起動するものになります。
-    </para>
+      <application>Exim</application> をビルドするにあたっては、<systemitem
+      class="username">root</systemitem> ユーザーになって <systemitem
+      class="username">exim</systemitem> というユーザーおよびグループを作成する必要があります。
+      これは <command>exim</command> デーモンを起動するものになります。
 @z
 
 @x
-    <para>Install <application>Exim</application> with the following
-    commands:</para>
+      Install <application>Exim</application> with the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Exim</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Exim</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -202,135 +193,137 @@
 @z
 
 @x
-    <para><command>sed -e ... > Local/Makefile</command>: Most of
-    <application>Exim</application>'s configuration options are defined
-    in <filename>Local/Makefile</filename>, which is created from
-    the <filename>src/EDITME</filename> file. This command specifies the minimum
-    set of options. Descriptions for the options are listed below.</para>
+      <command>sed -e ... > Local/Makefile</command>: Most of
+      <application>Exim</application>'s configuration options are defined
+      in <filename>Local/Makefile</filename>, which is created from
+      the <filename>src/EDITME</filename> file. This command specifies the
+      minimum set of options. Descriptions for the options are listed below.
 @y
-    <para><command>sed -e ... > Local/Makefile</command>: Most of
-    <application>Exim</application>'s configuration options are defined
-    in <filename>Local/Makefile</filename>, which is created from
-    the <filename>src/EDITME</filename> file. This command specifies the minimum
-    set of options. Descriptions for the options are listed below.</para>
+      <command>sed -e ... > Local/Makefile</command>: Most of
+      <application>Exim</application>'s configuration options are defined
+      in <filename>Local/Makefile</filename>, which is created from
+      the <filename>src/EDITME</filename> file. This command specifies the
+      minimum set of options. Descriptions for the options are listed below.
 @z
 
 @x
-    <para><command>printf ... > Local/Makefile</command>: Setting those
-    variables allows to use GDBM instead of the default Berkeley DB. Remove
-    this command if you have installed <xref linkend="db"/>.</para>
+      <command>printf ... > Local/Makefile</command>: Setting those
+      variables allows to use GDBM instead of the default Berkeley DB. Remove
+      this command if you have installed <xref linkend="db"/>.
 @y
-    <para><command>printf ... > Local/Makefile</command>: Setting those
-    variables allows to use GDBM instead of the default Berkeley DB. Remove
-    this command if you have installed <xref linkend="db"/>.</para>
+      <command>printf ... > Local/Makefile</command>: Setting those
+      variables allows to use GDBM instead of the default Berkeley DB. Remove
+      this command if you have installed <xref linkend="db"/>.
 @z
 
 @x
-    <para><parameter>BIN_DIRECTORY=/usr/sbin</parameter>: This installs all of
-    <application>Exim</application>'s binaries and scripts in
-    <filename class='directory'>/usr/sbin</filename>.</para>
+      <parameter>BIN_DIRECTORY=/usr/sbin</parameter>: This installs all of
+      <application>Exim</application>'s binaries and scripts in
+      <filename class='directory'>/usr/sbin</filename>.
 @y
-    <para><parameter>BIN_DIRECTORY=/usr/sbin</parameter>: This installs all of
-    <application>Exim</application>'s binaries and scripts in
-    <filename class='directory'>/usr/sbin</filename>.</para>
+      <parameter>BIN_DIRECTORY=/usr/sbin</parameter>: This installs all of
+      <application>Exim</application>'s binaries and scripts in
+      <filename class='directory'>/usr/sbin</filename>.
 @z
 
 @x
-    <para><parameter>CONFIGURE_FILE=/etc/exim.conf</parameter>: This installs
-    <application>Exim</application>'s main configuration file in
-    <filename class='directory'>/etc</filename>.</para>
+      <parameter>CONFIGURE_FILE=/etc/exim.conf</parameter>: This installs
+      <application>Exim</application>'s main configuration file in
+      <filename class='directory'>/etc</filename>.
 @y
-    <para><parameter>CONFIGURE_FILE=/etc/exim.conf</parameter>: This installs
-    <application>Exim</application>'s main configuration file in
-    <filename class='directory'>/etc</filename>.</para>
+      <parameter>CONFIGURE_FILE=/etc/exim.conf</parameter>: This installs
+      <application>Exim</application>'s main configuration file in
+      <filename class='directory'>/etc</filename>.
 @z
 
 @x
-    <para><parameter>EXIM_USER=exim</parameter>: This tells
-    <application>Exim</application> that after the daemon no longer needs
-    <systemitem class="username">root</systemitem> privileges, the process
-    hands off the daemon to the <systemitem
-    class="username">exim</systemitem> user.</para>
+      <parameter>EXIM_USER=exim</parameter>: This tells
+      <application>Exim</application> that after the daemon no longer needs
+      <systemitem class="username">root</systemitem> privileges, the process
+      hands off the daemon to the <systemitem
+      class="username">exim</systemitem> user.
 @y
-    <para><parameter>EXIM_USER=exim</parameter>: This tells
-    <application>Exim</application> that after the daemon no longer needs
-    <systemitem class="username">root</systemitem> privileges, the process
-    hands off the daemon to the <systemitem
-    class="username">exim</systemitem> user.</para>
+      <parameter>EXIM_USER=exim</parameter>: This tells
+      <application>Exim</application> that after the daemon no longer needs
+      <systemitem class="username">root</systemitem> privileges, the process
+      hands off the daemon to the <systemitem
+      class="username">exim</systemitem> user.
 @z
 
 @x
-    <para><parameter>SUPPORT_TLS=yes</parameter>: This allows to support
-    STARTTLS connections. If you use this option, you need to select
-    whether <application>OpenSSL</application> or
-    <application>GnuTLS</application> is used (see
-    <filename>src/EDITME</filename>).</para>
+      <parameter>SUPPORT_TLS=yes</parameter>: This allows to support
+      STARTTLS connections. If you use this option, you need to select
+      whether <application>OpenSSL</application> or
+      <application>GnuTLS</application> is used (see
+      <filename>src/EDITME</filename>).
 @y
-    <para><parameter>SUPPORT_TLS=yes</parameter>: This allows to support
-    STARTTLS connections. If you use this option, you need to select
-    whether <application>OpenSSL</application> or
-    <application>GnuTLS</application> is used (see
-    <filename>src/EDITME</filename>).</para>
+      <parameter>SUPPORT_TLS=yes</parameter>: This allows to support
+      STARTTLS connections. If you use this option, you need to select
+      whether <application>OpenSSL</application> or
+      <application>GnuTLS</application> is used (see
+      <filename>src/EDITME</filename>).
 @z
 
 @x
-    <para><parameter>USE_OPENSSL_PC=openssl</parameter>: This tells the
-    build system to use <application>OpenSSL</application>, and to
-    find the needed libraries with <application>pkg-config</application>.
-    </para>
+      <parameter>USE_OPENSSL_PC=openssl</parameter>: This tells the
+      build system to use <application>OpenSSL</application>, and to
+      find the needed libraries with <application>pkg-config</application>.
 @y
-    <para><parameter>USE_OPENSSL_PC=openssl</parameter>: This tells the
-    build system to use <application>OpenSSL</application>, and to
-    find the needed libraries with <application>pkg-config</application>.
-    </para>
+      <parameter>USE_OPENSSL_PC=openssl</parameter>: This tells the
+      build system to use <application>OpenSSL</application>, and to
+      find the needed libraries with <application>pkg-config</application>.
 @z
 
 @x
-    <para><parameter>#EXIM_MONITOR</parameter>: This defers building the
-    <application>Exim</application> monitor program, as it requires
-    <application>X Window System</application> support, by commenting out the
-    <parameter>EXIM_MONITOR</parameter> line in the <filename>Makefile</filename>.
-    If you wish to build the monitor program, omit this <command>sed</command>
-    command and issue the following command before building the package (modify
-    <filename>Local/eximon.conf</filename>, if necessary):
-    <command>cp exim_monitor/EDITME Local/eximon.conf</command>.</para>
+      <parameter>#EXIM_MONITOR</parameter>: This defers building the
+      <application>Exim</application> monitor program, as it requires
+      <application>X Window System</application> support, by commenting out the
+      <parameter>EXIM_MONITOR</parameter> line in the
+      <filename>Makefile</filename>. If you wish to build the monitor program,
+      omit this <command>sed</command> command and issue the following command
+      before building the package (modify
+      <filename>Local/eximon.conf</filename>, if necessary):
+      <command>cp exim_monitor/EDITME Local/eximon.conf</command>.
 @y
-    <para><parameter>#EXIM_MONITOR</parameter>: This defers building the
-    <application>Exim</application> monitor program, as it requires
-    <application>X Window System</application> support, by commenting out the
-    <parameter>EXIM_MONITOR</parameter> line in the <filename>Makefile</filename>.
-    If you wish to build the monitor program, omit this <command>sed</command>
-    command and issue the following command before building the package (modify
-    <filename>Local/eximon.conf</filename>, if necessary):
-    <command>cp exim_monitor/EDITME Local/eximon.conf</command>.</para>
+      <parameter>#EXIM_MONITOR</parameter>: This defers building the
+      <application>Exim</application> monitor program, as it requires
+      <application>X Window System</application> support, by commenting out the
+      <parameter>EXIM_MONITOR</parameter> line in the
+      <filename>Makefile</filename>. If you wish to build the monitor program,
+      omit this <command>sed</command> command and issue the following command
+      before building the package (modify
+      <filename>Local/eximon.conf</filename>, if necessary):
+      <command>cp exim_monitor/EDITME Local/eximon.conf</command>.
 @z
 
 @x
-    <para><command>ln -sfv exim /usr/sbin/sendmail</command>: Creates a link to
-    <command>sendmail</command> for applications which need it.
-    <application>Exim</application> will accept most
-    <application>Sendmail</application> command-line options.</para>
+      <command>ln -sfv exim /usr/sbin/sendmail</command>: Creates a link to
+      <command>sendmail</command> for applications which need it.
+      <application>Exim</application> will accept most
+      <application>Sendmail</application> command-line options.
 @y
-    <para><command>ln -sfv exim /usr/sbin/sendmail</command>: Creates a link to
-    <command>sendmail</command> for applications which need it.
-    <application>Exim</application> will accept most
-    <application>Sendmail</application> command-line options.</para>
+      <command>ln -sfv exim /usr/sbin/sendmail</command>: Creates a link to
+      <command>sendmail</command> for applications which need it.
+      <application>Exim</application> will accept most
+      <application>Sendmail</application> command-line options.
 @z
 
 @x
-    <para><command>install -v -m750 -o exim -g exim /var/spool/exim</command>:
-    Since /var/spool is owned by root and this version of <command>exim</command>
-    drops <systemitem class="username">root</systemitem> privileges early, to
-    run as user <systemitem class="username">exim</systemitem>, it cannot create
-    the <filename class="directory">/var/spool/exim</filename> directory. As a
-    work around, it is created manually.</para>
+      <command>install -v -m750 -o exim -g exim /var/spool/exim</command>:
+      Since /var/spool is owned by root and this version of
+      <command>exim</command> drops
+      <systemitem class="username">root</systemitem> privileges early, to run
+      as user <systemitem class="username">exim</systemitem>, it cannot create
+      the <filename class="directory">/var/spool/exim</filename> directory. As
+      a work around, it is created manually.
 @y
-    <para><command>install -v -m750 -o exim -g exim /var/spool/exim</command>:
-    Since /var/spool is owned by root and this version of <command>exim</command>
-    drops <systemitem class="username">root</systemitem> privileges early, to
-    run as user <systemitem class="username">exim</systemitem>, it cannot create
-    the <filename class="directory">/var/spool/exim</filename> directory. As a
-    work around, it is created manually.</para>
+      <command>install -v -m750 -o exim -g exim /var/spool/exim</command>:
+      Since /var/spool is owned by root and this version of
+      <command>exim</command> drops
+      <systemitem class="username">root</systemitem> privileges early, to run
+      as user <systemitem class="username">exim</systemitem>, it cannot create
+      the <filename class="directory">/var/spool/exim</filename> directory. As
+      a work around, it is created manually.
 @z
 
 @x
@@ -340,135 +333,147 @@
 @z
 
 @x
-    <para>To utilize some or all of the dependency packages, you'll need to
-    modify <filename>Local/Makefile</filename> to include the appropriate
-    directives and parameters to link additional libraries before you build
-    <application>Exim</application>. <filename>Local/Makefile</filename> is
-    heavily commented with instructions on how to do this. Listed below is
-    additional information to help you link these dependency packages or
-    add additional functionality.</para>
+      To utilize some or all of the dependency packages, you'll need to
+      modify <filename>Local/Makefile</filename> to include the appropriate
+      directives and parameters to link additional libraries before you build
+      <application>Exim</application>. <filename>Local/Makefile</filename> is
+      heavily commented with instructions on how to do this. Listed below is
+      additional information to help you link these dependency packages or
+      add additional functionality.
 @y
-    <para>To utilize some or all of the dependency packages, you'll need to
-    modify <filename>Local/Makefile</filename> to include the appropriate
-    directives and parameters to link additional libraries before you build
-    <application>Exim</application>. <filename>Local/Makefile</filename> is
-    heavily commented with instructions on how to do this. Listed below is
-    additional information to help you link these dependency packages or
-    add additional functionality.</para>
+      To utilize some or all of the dependency packages, you'll need to
+      modify <filename>Local/Makefile</filename> to include the appropriate
+      directives and parameters to link additional libraries before you build
+      <application>Exim</application>. <filename>Local/Makefile</filename> is
+      heavily commented with instructions on how to do this. Listed below is
+      additional information to help you link these dependency packages or
+      add additional functionality.
 @z
 
 @x
-    <para>If you wish to build and install the
-    <filename class='extension'>.info</filename> documentation, refer to <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinsinfdoc"/>.</para>
+      If you wish to build and install the
+      <filename class='extension'>.info</filename> documentation, refer to
+      <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinsinfdoc"/>.
 @y
-    <para>If you wish to build and install the
-    <filename class='extension'>.info</filename> documentation, refer to <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinsinfdoc"/>.</para>
+      If you wish to build and install the
+      <filename class='extension'>.info</filename> documentation, refer to
+      <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinsinfdoc"/>.
 @z
 
 @x
-    <para>If you wish to build in Exim's interfaces for calling virus and spam
-    scanning software directly from access control lists, uncomment the
-    <option>WITH_CONTENT_SCAN=yes</option> parameter and review the information
-    found at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.</para>
+      If you wish to build in Exim's interfaces for calling virus and spam
+      scanning software directly from access control lists, uncomment the
+      <option>WITH_CONTENT_SCAN=yes</option> parameter and review the
+      information found at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.
 @y
-    <para>If you wish to build in Exim's interfaces for calling virus and spam
-    scanning software directly from access control lists, uncomment the
-    <option>WITH_CONTENT_SCAN=yes</option> parameter and review the information
-    found at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.</para>
+      If you wish to build in Exim's interfaces for calling virus and spam
+      scanning software directly from access control lists, uncomment the
+      <option>WITH_CONTENT_SCAN=yes</option> parameter and review the
+      information found at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.
 @z
 
 @x
-    <para>To use a backend database other than <application>Berkeley
-    DB</application>, see the instructions at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.</para>
+      To use a backend database other than <application>Berkeley
+      DB</application>, see the instructions at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.
 @y
-    <para>To use a backend database other than <application>Berkeley
-    DB</application>, see the instructions at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.</para>
+      To use a backend database other than <application>Berkeley
+      DB</application>, see the instructions at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.
 @z
 
 @x
-    <para>For SSL functionality, see the instructions at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
-    and <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.</para>
+      For SSL functionality, see the instructions at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
+      and <ulink url="
+      http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.
 @y
-    <para>For SSL functionality, see the instructions at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
-    and <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.</para>
+      For SSL functionality, see the instructions at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
+      and <ulink url="
+      http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.
 @z
 
 @x
-    <para>For <application>tcpwrappers</application> functionality, see the
-    instructions at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECID27"/>.</para>
+      For <application>tcpwrappers</application> functionality, see the
+      instructions at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECID27"/>.
 @y
-    <para>For <application>tcpwrappers</application> functionality, see the
-    instructions at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECID27"/>.</para>
+      For <application>tcpwrappers</application> functionality, see the
+      instructions at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECID27"/>.
 @z
 
 @x
-    <para>For information about adding authentication mechanisms to the
-    build, see chapters 33&mdash;41 of <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.</para>
+      For information about adding authentication mechanisms to the
+      build, see chapters 33&mdash;41 of <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.
 @y
-    <para>For information about adding authentication mechanisms to the
-    build, see chapters 33&mdash;41 of <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.</para>
+      For information about adding authentication mechanisms to the
+      build, see chapters 33&mdash;41 of <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.
 @z
 
 @x
-    <para>For information about linking <application>Linux-PAM</application>,
-    refer to the instructions <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch11.html#SECTexpcond"/>.</para>
+      For information about linking <application>Linux-PAM</application>,
+      refer to the instructions <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch11.html#SECTexpcond"/>.
 @y
-    <para>For information about linking <application>Linux-PAM</application>,
-    refer to the instructions <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch11.html#SECTexpcond"/>.</para>
+      For information about linking <application>Linux-PAM</application>,
+      refer to the instructions <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch11.html#SECTexpcond"/>.
 @z
 
 @x
-    <para>For information about linking database engine libraries used for
-    <application>Exim</application> name lookups, see the instructions at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch09.html"/>.</para>
+      For information about linking database engine libraries used for
+      <application>Exim</application> name lookups, see the instructions at
+      <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch09.html"/>.
 @y
-    <para>For information about linking database engine libraries used for
-    <application>Exim</application> name lookups, see the instructions at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch09.html"/>.</para>
+      For information about linking database engine libraries used for
+      <application>Exim</application> name lookups, see the instructions at
+      <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch09.html"/>.
 @z
 
 @x
-    <para>If you wish to add <application>Readline</application> support to
-    <application>Exim</application> when invoked in <quote>test expansion</quote>
-    (<option>-be</option>) mode, see the information in the <option>-be</option>
-    section of <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch05.html#id2525974"/>.</para>
+      If you wish to add <application>Readline</application> support to
+      <application>Exim</application> when invoked in <quote>test
+      expansion</quote> (<option>-be</option>) mode, see the information in
+      the <option>-be</option> section of <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch05.html#id2525974"/>.
 @y
-    <para>If you wish to add <application>Readline</application> support to
-    <application>Exim</application> when invoked in <quote>test expansion</quote>
-    (<option>-be</option>) mode, see the information in the <option>-be</option>
-    section of <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch05.html#id2525974"/>.</para>
+      If you wish to add <application>Readline</application> support to
+      <application>Exim</application> when invoked in <quote>test
+      expansion</quote> (<option>-be</option>) mode, see the information in
+      the <option>-be</option> section of <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch05.html#id2525974"/>.
 @z
 
 @x
-    <para>You may wish to modify the default configuration and send log files to
-    syslog instead of the default
-    <filename class='directory'>/var/spool/exim/log</filename> directory. See the
-    information at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch52.html"/>.</para>
+      You may wish to modify the default configuration and send log files to
+      syslog instead of the default
+      <filename class='directory'>/var/spool/exim/log</filename> directory. See
+      the information at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch52.html"/>.
 @y
-    <para>You may wish to modify the default configuration and send log files to
-    syslog instead of the default
-    <filename class='directory'>/var/spool/exim/log</filename> directory. See the
-    information at <ulink
-    url="http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch52.html"/>.</para>
+      You may wish to modify the default configuration and send log files to
+      syslog instead of the default
+      <filename class='directory'>/var/spool/exim/log</filename> directory. See
+      the information at <ulink url=
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch52.html"/>.
+@z
+
+@x
+      A wealth of information can be also found at the <ulink url=
+      "https://github.com/Exim/exim/wiki">Exim Wiki</ulink>.
+@y
+      A wealth of information can be also found at the <ulink url=
+      "https://github.com/Exim/exim/wiki">Exim Wiki</ulink>.
 @z
 
 @x
@@ -484,11 +489,11 @@
 @z
 
 @x
-      <para><filename>/etc/exim.conf</filename> and
-      <filename>/etc/aliases</filename></para>
+        <filename>/etc/exim.conf</filename> and
+        <filename>/etc/aliases</filename>
 @y
-      <para><filename>/etc/exim.conf</filename>,
-      <filename>/etc/aliases</filename></para>
+        <filename>/etc/exim.conf</filename> and
+        <filename>/etc/aliases</filename>
 @z
 
 @x
@@ -526,25 +531,25 @@
 @z
 
 @x
-        <para>To protect an existing <filename>/etc/aliases</filename> file,
-        the command above appends these aliases to it. This file should be
-        checked and duplicate aliases removed, if present.</para>
+          To protect an existing <filename>/etc/aliases</filename> file,
+          the command above appends these aliases to it. This file should be
+          checked and duplicate aliases removed, if present.
 @y
-        <para>To protect an existing <filename>/etc/aliases</filename> file,
-        the command above appends these aliases to it. This file should be
-        checked and duplicate aliases removed, if present.</para>
+          To protect an existing <filename>/etc/aliases</filename> file,
+          the command above appends these aliases to it. This file should be
+          checked and duplicate aliases removed, if present.
 @z
 
 @x
-      <para>The <command>/usr/sbin/exim -bd -q15m</command> command starts
-      the <application>Exim</application> daemon with a 15 minute interval
-      in processing the mail queue. Adjust this parameter to suit your
-      desires.</para>
+        The <command>/usr/sbin/exim -bd -q15m</command> command starts
+        the <application>Exim</application> daemon with a 15 minute interval
+        in processing the mail queue. Adjust this parameter to suit your
+        desires.
 @y
-      <para>The <command>/usr/sbin/exim -bd -q15m</command> command starts
-      the <application>Exim</application> daemon with a 15 minute interval
-      in processing the mail queue. Adjust this parameter to suit your
-      desires.</para>
+        The <command>/usr/sbin/exim -bd -q15m</command> command starts
+        the <application>Exim</application> daemon with a 15 minute interval
+        in processing the mail queue. Adjust this parameter to suit your
+        desires.
 @z
 
 @x
@@ -556,37 +561,35 @@
 @z
 
 @x
-      <para>To automatically start <command>exim</command> at boot,
-      install the
-      <phrase revision="sysv"><filename>/etc/rc.d/init.d/exim</filename>
-      init script</phrase>
-      <phrase revision="systemd"><filename>exim.service</filename> unit</phrase>
-      included in the <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> package.</para>
+        To automatically start <command>exim</command> at boot, install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/exim</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>exim.service</filename>
+        unit</phrase>
+        included in the <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> package:
 @y
-      <para>To automatically start <command>exim</command> at boot,
-      install the
-      <phrase revision="sysv"><filename>/etc/rc.d/init.d/exim</filename>
-      init script</phrase>
-      <phrase revision="systemd"><filename>exim.service</filename> unit</phrase>
-      included in the <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> package.</para>
+        To automatically start <command>exim</command> at boot, install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/exim</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>exim.service</filename>
+        unit</phrase>
+        included in the <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> package:
 @z
 
 @x
-      <para revision="sysv">The bootscript also starts the
-      <application>Exim</application> daemon and dispatches a queue runner
-      process every 15 minutes. Modify the
-      <option>-q<replaceable>&lt;time interval&gt;</replaceable></option>
-      parameter in <filename>/etc/rc.d/init.d/exim</filename>, if necessary
-      for your installation.</para>
+        The bootscript also starts the <application>Exim</application> daemon
+        and dispatches a queue runner process every 15 minutes. Modify the
+        <option>-q<replaceable>&lt;time interval&gt;</replaceable></option>
+        parameter in <filename>/etc/rc.d/init.d/exim</filename>, if necessary
+        for your installation.
 @y
-      <para revision="sysv">The bootscript also starts the
-      <application>Exim</application> daemon and dispatches a queue runner
-      process every 15 minutes. Modify the
-      <option>-q<replaceable>&lt;time interval&gt;</replaceable></option>
-      parameter in <filename>/etc/rc.d/init.d/exim</filename>, if necessary
-      for your installation.</para>
+        The bootscript also starts the <application>Exim</application> daemon
+        and dispatches a queue runner process every 15 minutes. Modify the
+        <option>-q<replaceable>&lt;time interval&gt;</replaceable></option>
+        parameter in <filename>/etc/rc.d/init.d/exim</filename>, if necessary
+        for your installation.
 @z
 
 @x
@@ -628,9 +631,131 @@
 @z
 
 @x exicyclog
-          <para>cycles <application>Exim</application> log files.</para>
+            cycles <application>Exim</application> log files.
 @y
-          <para>
-          <application>Exim</application> のログファイルを回します。
-          </para>
+            <application>Exim</application> のログファイルを回します。
+@z
+
+@x exigrep
+            searches <application>Exim</application> log files.
+@y
+            searches <application>Exim</application> log files.
+@z
+
+@x exim
+            is a symlink to the <command>exim-&exim-daemon-version;</command>
+            MTA daemon.
+@y
+            is a symlink to the <command>exim-&exim-daemon-version;</command>
+            MTA daemon.
+@z
+
+@x exim-&exim-daemon-version;
+            is the <application>Exim</application> mail transport agent daemon.
+@y
+            is the <application>Exim</application> mail transport agent daemon.
+@z
+
+@x exim_checkaccess
+            states whether a given recipient address from a given host is
+            acceptable or not.
+@y
+            states whether a given recipient address from a given host is
+            acceptable or not.
+@z
+
+@x exim_dbmbuild
+            creates and rebuilds <application>Exim</application> databases.
+@y
+            creates and rebuilds <application>Exim</application> databases.
+@z
+
+@x exim_dumpdb
+            writes the contents of <application>Exim</application>
+            databases to the standard output.
+@y
+            writes the contents of <application>Exim</application>
+            databases to the standard output.
+@z
+
+@x exim_fixdb
+            modifies data in <application>Exim</application> databases.
+@y
+            modifies data in <application>Exim</application> databases.
+@z
+
+@x exim_lock
+            locks a mailbox file.
+@y
+            locks a mailbox file.
+@z
+
+@x exim_tidydb
+            removes old records from <application>Exim</application>
+            databases.
+@y
+            removes old records from <application>Exim</application>
+            databases.
+@z
+
+@x eximstats
+            generates mail statistics from <application>Exim</application>
+            log files.
+@y
+            generates mail statistics from <application>Exim</application>
+            log files.
+@z
+
+@x exinext
+            queries remote host retry times.
+@y
+            queries remote host retry times.
+@z
+
+@x exipick
+            selects messages based on various criteria.
+@y
+            selects messages based on various criteria.
+@z
+
+@x exiqgrep
+            is a utility for selective queue listing.
+@y
+            is a utility for selective queue listing.
+@z
+
+@x exiqsumm
+            produces a summary of the messages in the mail queue.
+@y
+            produces a summary of the messages in the mail queue.
+@z
+
+@x exiwhat
+            queries running <application>Exim</application>
+          processes.
+@y
+            queries running <application>Exim</application>
+          processes.
+@z
+
+@x eximon
+            is a start-up shell script for <command>eximon.bin</command>
+            used to set the required environment variables before running the
+            program.
+@y
+            is a start-up shell script for <command>eximon.bin</command>
+            used to set the required environment variables before running the
+            program.
+@z
+
+@x eximon.bin
+            is a monitor program which displays current information in an
+            <application>X</application> window, and also contains a menu
+            interface to <application>Exim</application>'s command line
+            administration options.
+@y
+            is a monitor program which displays current information in an
+            <application>X</application> window, and also contains a menu
+            interface to <application>Exim</application>'s command line
+            administration options.
 @z

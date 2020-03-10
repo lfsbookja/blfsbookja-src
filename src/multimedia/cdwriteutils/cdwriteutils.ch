@@ -20,39 +20,36 @@
 @z
 
 @x
-  <para>This chapter contains information on CD/DVD-writing
-  utilities in Linux.</para>
+    This chapter contains information on CD/DVD-writing utilities in Linux.
 @y
-  <para>
-  本章では Linux における CD/DVD ライティングユーティリティーについて示します。
-  </para>
+    本章では Linux における CD/DVD ライティングユーティリティーについて示します。
 @z
 
 @x
-  <para>Additional sources of information include:</para>
+    Additional sources of information include:
 @y
-  <para>追加情報として以下があります。</para>
+    追加情報として以下があります。
 @z
 
 @x
-      url="http://www.tldp.org/HOWTO/CD-Writing-HOWTO.html">CD-Writing
-      HOWTO</ulink></para>
+        <ulink
+        url="http://www.tldp.org/HOWTO/CD-Writing-HOWTO.html">CD-Writing
+        HOWTO</ulink>
 @y
-      url="http://www.tldp.org/HOWTO/CD-Writing-HOWTO.html">CD ライティング ハウツー (CD-Writing
-      HOWTO)</ulink></para>
+        <ulink
+        url="http://www.tldp.org/HOWTO/CD-Writing-HOWTO.html">CD ライティング ハウツー（CD-Writing
+        HOWTO）</ulink>
 @z
 
 @x
-      <para><ulink url="http://www.cdrfaq.org">CD-Recordable
-      FAQ</ulink></para>
+        <ulink url="http://www.cdrfaq.org">CD-Recordable FAQ</ulink>
 @y
-      <para><ulink url="http://www.cdrfaq.org">CD 録音 FAQ (CD-Recordable
-      FAQ)</ulink></para>
+        <ulink url="http://www.cdrfaq.org">CD 録音 FAQ （CD-Recordable FAQ）</ulink>
 @z
 
 @x
-      <para><ulink url="http://fy.chalmers.se/~appro/linux/DVD+RW/">The
-      dvd+rw-tools Website</ulink></para>
+        <ulink url="http://fy.chalmers.se/~appro/linux/DVD+RW/">The
+        dvd+rw-tools Website</ulink>
 @y
-      <para><ulink url="http://fy.chalmers.se/~appro/linux/DVD+RW/">DVD+rw ツール ウェブサイト</ulink></para>
+        <ulink url="http://fy.chalmers.se/~appro/linux/DVD+RW/">DVD+rw ツール ウェブサイト</ulink>
 @z

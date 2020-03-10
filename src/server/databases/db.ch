@@ -413,18 +413,16 @@
             <command>db_dump</command> コマンドにより生成されたフラットファイルに基づいて、データベースを生成します。
 @z
 
-@x
-          <para>verifies the log files of a database.</para>
+@x db_log_verify
+            verifies the log files of a database.
 @y
-          <para>verifies the log files of a database.</para>
+            verifies the log files of a database.
 @z
 
 @x db_printlog
-          <para>converts database log files to human readable text.</para>
+            converts database log files to human readable text.
 @y
-          <para>
-          データベースログファイルを、人が読める形式のテキストに変換します。
-          </para>
+            データベースログファイルを、人が読める形式のテキストに変換します。
 @z
 
 @x db_recover
@@ -442,11 +440,9 @@
 @z
 
 @x db_stat
-          <para>displays database environment statistics.</para>
+            displays database environment statistics.
 @y
-          <para>
-          データベース環境の統計情報を表示します。
-          </para>
+            データベース環境の統計情報を表示します。
 @z
 
 @x db_tuner
@@ -461,13 +457,11 @@
             is used to upgrade database files to a newer version of
             <application>Berkeley DB</application>.
 @y
-          データベースファイルを新たなバージョンのものにアップグレードします。
+            データベースファイルを新たなバージョンのものにアップグレードします。
 @z
 
 @x db_verify
-          <para>is used to run consistency checks on database files.</para>
+            is used to run consistency checks on database files.
 @y
-          <para>
-          データベースファイルが安定しているかどうかのチェックを実行します。
-          </para>
+            データベースファイルが安定しているかどうかのチェックを実行します。
 @z

@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>sendmail</application> package contains a Mail
-    Transport Agent (MTA).</para>
+      The <application>sendmail</application> package contains a Mail
+      Transport Agent (MTA).
 @y
-    <para>
-    <application>sendmail</application> パッケージはメール転送エージェント (Mail Transport Agent; MTA) を提供します。
-    </para>
+      <application>sendmail</application> パッケージはメール転送エージェント (Mail Transport Agent; MTA) を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&sendmail-download-http;"/></para>
+          Download (HTTP): <ulink url="&sendmail-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&sendmail-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&sendmail-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&sendmail-download-ftp;"/></para>
+          Download (FTP): <ulink url="&sendmail-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&sendmail-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&sendmail-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &sendmail-md5sum;</para>
+          Download MD5 sum: &sendmail-md5sum;
 @y
-        <para>&Download; MD5 sum: &sendmail-md5sum;</para>
+          &Download; MD5 sum: &sendmail-md5sum;
 @z
 
 @x
-        <para>Download size: &sendmail-size;</para>
+          Download size: &sendmail-size;
 @y
-        <para>&DownloadSize;: &sendmail-size;</para>
+          &DownloadSize;: &sendmail-size;
 @z
 
 @x
-        <para>Estimated disk space required: &sendmail-buildsize;</para>
+          Estimated disk space required: &sendmail-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &sendmail-buildsize;</para>
+          &Estimateddiskspacerequired;: &sendmail-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &sendmail-time;</para>
+          Estimated build time: &sendmail-time;
 @y
-        <para>&Estimatedbuildtime;: &sendmail-time;</para>
+          &Estimatedbuildtime;: &sendmail-time;
 @z
 
 @x
@@ -119,27 +117,24 @@
 @z
 
 @x
-    <para>Before building <application>sendmail</application>, create the
-    required user, group and directory with the following commands issued as
-    the <systemitem class="username">root</systemitem> user:</para>
+      Before building <application>sendmail</application>, create the
+      required user, group and directory with the following commands issued as
+      the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <application>sendmail</application> をビルドする前に、必要となるユーザー、グループ、ディレクトリを生成します。
-    <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-    </para>
+      <application>sendmail</application> をビルドする前に、必要となるユーザー、グループ、ディレクトリを生成します。
+      <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
 @z
 
 @x
-    <note><para>See the source tree <filename>sendmail/README</filename> file
-    for information on linking optional packages into the build. Use the
-    example below, which adds support for SASL, StartTLS
-    (<application>OpenSSL</application>) and
-    <application>OpenLDAP</application>, as a starting point.  Of course,
-    modify it to suit your particular needs.</para></note>
+        See the source tree <filename>sendmail/README</filename> file
+        for information on linking optional packages into the build. Use the
+        example below, which adds support for SASL, StartTLS
+        (<application>OpenSSL</application>) and
+        <application>OpenLDAP</application>, as a starting point.  Of course,
+        modify it to suit your particular needs.
 @y
-    <note><para>ビルドにあたって任意のパッケージをリンクする方法については、ソースツリー内の <filename>sendmail/README</filename> ファイルを参照してください。
-    以下は本パッケージを利用する一つの例であり、SASLサポート、StartTLS (<application>OpenSSL</application>) サポート、<application>OpenLDAP</application> サポートを加えるものです。
-    もちろん必要な状況に応じて設定を変えてください。
-    </para></note>
+        ビルドにあたって任意のパッケージをリンクする方法については、ソースツリー内の <filename>sendmail/README</filename> ファイルを参照してください。
+        以下は本パッケージを利用する一つの例であり、SASLサポート、StartTLS (<application>OpenSSL</application>) サポート、<application>OpenLDAP</application> サポートを加えるものです。
+        もちろん必要な状況に応じて設定を変えてください。
 @z
 

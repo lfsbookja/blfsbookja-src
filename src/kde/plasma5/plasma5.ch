@@ -20,19 +20,19 @@
 @z
 
 @x
-  <para>KDE Plasma 5 is a desktop environment built using KDE Frameworks 5 and
-  QML which runs on top of a fully hardware accelerated graphics stack using
-  Qt5, QtQuick 2 and an OpenGL(-ES) scenegraph. </para>
+    KDE Plasma 5 is a desktop environment built using KDE Frameworks 5 and
+    QML which runs on top of a fully hardware accelerated graphics stack using
+    Qt5, QtQuick 2 and an OpenGL(-ES) scenegraph.
 @y
-  <para>KDE Plasma 5 is a desktop environment built using KDE Frameworks 5 and
-  QML which runs on top of a fully hardware accelerated graphics stack using
-  Qt5, QtQuick 2 and an OpenGL(-ES) scenegraph. </para>
+    KDE Plasma 5 is a desktop environment built using KDE Frameworks 5 and
+    QML which runs on top of a fully hardware accelerated graphics stack using
+    Qt5, QtQuick 2 and an OpenGL(-ES) scenegraph.
 @z
 
 @x
-  <para>No additional configuration is needed before building the KDE Plasma 5
-  because it uses the same configuration that KDE Frameworks 5 uses.</para>
+    No additional configuration is needed before building the KDE Plasma 5
+    because it uses the same configuration that KDE Frameworks 5 uses.
 @y
-  <para>No additional configuration is needed before building the KDE Plasma 5
-  because it uses the same configuration that KDE Frameworks 5 uses.</para>
+    No additional configuration is needed before building the KDE Plasma 5
+    because it uses the same configuration that KDE Frameworks 5 uses.
 @z

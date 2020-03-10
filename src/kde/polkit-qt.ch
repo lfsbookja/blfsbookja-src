@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>Polkit-Qt</application> provides an API to PolicyKit in
-    the Qt environment. </para>
+      <application>Polkit-Qt</application> provides an API to PolicyKit in
+      the Qt environment.
 @y
-    <para>
-    <application>Polkit-Qt</application> は Qt 環境での PolicyKit に対する API を提供します。
-    </para>
+      <application>Polkit-Qt</application> は Qt 環境での PolicyKit に対する API を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&polkit-qt-download-http;"/></para>
+          Download (HTTP): <ulink url="&polkit-qt-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&polkit-qt-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&polkit-qt-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&polkit-qt-download-ftp;"/></para>
+          Download (FTP): <ulink url="&polkit-qt-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&polkit-qt-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&polkit-qt-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &polkit-qt-md5sum;</para>
+          Download MD5 sum: &polkit-qt-md5sum;
 @y
-        <para>&Download; MD5 sum: &polkit-qt-md5sum;</para>
+          &Download; MD5 sum: &polkit-qt-md5sum;
 @z
 
 @x
-        <para>Download size: &polkit-qt-size;</para>
+          Download size: &polkit-qt-size;
 @y
-        <para>&DownloadSize;: &polkit-qt-size;</para>
+          &DownloadSize;: &polkit-qt-size;
 @z
 
 @x
-        <para>Estimated disk space required: &polkit-qt-buildsize;</para>
+          Estimated disk space required: &polkit-qt-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &polkit-qt-buildsize;</para>
+          &Estimateddiskspacerequired;: &polkit-qt-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &polkit-qt-time;</para>
+          Estimated build time: &polkit-qt-time;
 @y
-        <para>&Estimatedbuildtime;: &polkit-qt-time;</para>
+          &Estimatedbuildtime;: &polkit-qt-time;
 @z
 
 @x
@@ -105,12 +103,10 @@
 @z
 
 @x
-    <para>Install <application>Polkit-Qt</application>
-    by running the following commands:</para>
+      Install <application>Polkit-Qt</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Polkit-Qt</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Polkit-Qt</application> をビルドします。
 @z
 
 @x
@@ -120,11 +116,9 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -137,8 +131,8 @@
       <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
       to apply higher level of the compiler optimizations.
 @y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
-      to apply higher level of the compiler optimizations.
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
+      このスイッチは、コンパイラーの最適化オプションを最高レベルにて適用することを指示します。
 @z
 
 @x

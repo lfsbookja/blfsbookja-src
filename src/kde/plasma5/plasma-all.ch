@@ -28,19 +28,19 @@
 @z
 
 @x
-  <para>KDE Plasma 5 is a collection of packages based on top of KDE Frameworks
-  5 and QML. They implement the KDE Display Environment (Plasma 5).</para>
+    KDE Plasma 5 is a collection of packages based on top of KDE Frameworks
+    5 and QML. They implement the KDE Display Environment (Plasma 5).
 @y
-  <para>KDE Plasma 5 is a collection of packages based on top of KDE Frameworks
-  5 and QML. They implement the KDE Display Environment (Plasma 5).</para>
+    KDE Plasma 5 is a collection of packages based on top of KDE Frameworks
+    5 and QML. They implement the KDE Display Environment (Plasma 5).
 @z
 
 @x
-  <para>The instructions below build all of the Plasma 5 packages in one
-  step by using a bash script.</para>
+    The instructions below build all of the Plasma 5 packages in one
+    step by using a bash script.
 @y
-  <para>The instructions below build all of the Plasma 5 packages in one
-  step by using a bash script.</para>
+    The instructions below build all of the Plasma 5 packages in one
+    step by using a bash script.
 @z
 
 @x
@@ -50,39 +50,39 @@
 @z
 
 @x
-      <para>Download (HTTP): <ulink url="&plasma5-download-http;"/></para>
+        Download (HTTP): <ulink url="&plasma5-download-http;"/>
 @y
-      <para>Download (HTTP): <ulink url="&plasma5-download-http;"/></para>
+        &Download; (HTTP): <ulink url="&plasma5-download-http;"/>
 @z
 
 @x
-      <para>Download (FTP): <ulink url="&plasma5-download-ftp;"/></para>
+        Download (FTP): <ulink url="&plasma5-download-ftp;"/>
 @y
-      <para>Download (FTP): <ulink url="&plasma5-download-ftp;"/></para>
+        &Download; (FTP): <ulink url="&plasma5-download-ftp;"/>
 @z
 
 @x
-      <para>Download MD5 sum: &plasma5-md5sum;</para>
+        Download MD5 sum: &plasma5-md5sum;
 @y
-      <para>Download MD5 sum: &plasma5-md5sum;</para>
+        &Download; MD5 sum: &plasma5-md5sum;
 @z
 
 @x
-      <para>Download size: &plasma5-size;</para>
+        Download size: &plasma5-size;
 @y
-      <para>Download size: &plasma5-size;</para>
+        &DownloadSize;: &plasma5-size;
 @z
 
 @x
-      <para>Estimated disk space required: &plasma5-buildsize;</para>
+        Estimated disk space required: &plasma5-buildsize;
 @y
-      <para>Estimated disk space required: &plasma5-buildsize;</para>
+        Estimated disk space required: &plasma5-buildsize;
 @z
 
 @x
-      <para>Estimated build time: &plasma5-time;</para>
+        Estimated build time: &plasma5-time;
 @y
-      <para>Estimated build time: &plasma5-time;</para>
+        Estimated build time: &plasma5-time;
 @z
 
 @x
@@ -232,21 +232,25 @@
 @z
 
 @x
-    <note><para>The breeze-grub, breeze-plymouth, and plymouth-kcm packages 
-    above are all for customized support of <ulink
-    url="https://www.freedesktop.org/wiki/Software/Plymouth/">Plymouth</ulink>
-    which is designed to be run within an initial ram disk during boot (see
-    <xref linkend="initramfs"/>).  The plasma-sdk package is optional and used
-    for software development. The plasma-nano package is used for embedded
-    systems and plasma-phone-components provides phone functionality for Plasma.</para></note>
+        The breeze-grub, breeze-plymouth, and plymouth-kcm packages above are
+        all for customized support of <ulink
+            url="https://www.freedesktop.org/wiki/Software/Plymouth/"
+          >Plymouth</ulink>
+        which is designed to be run within an initial ram disk during boot (see
+        <xref linkend="initramfs"/>).  The plasma-sdk package is optional and
+        used for software development. The plasma-nano package is used for
+        embedded systems and plasma-phone-components provides phone
+        functionality for Plasma.
 @y
-    <note><para>The breeze-grub, breeze-plymouth, and plymouth-kcm packages 
-    above are all for customized support of <ulink
-    url="https://www.freedesktop.org/wiki/Software/Plymouth/">Plymouth</ulink>
-    which is designed to be run within an initial ram disk during boot (see
-    <xref linkend="initramfs"/>).  The plasma-sdk package is optional and used
-    for software development. The plasma-nano package is used for embedded
-    systems and plasma-phone-components provides phone functionality for Plasma.</para></note>
+        The breeze-grub, breeze-plymouth, and plymouth-kcm packages above are
+        all for customized support of <ulink
+            url="https://www.freedesktop.org/wiki/Software/Plymouth/"
+          >Plymouth</ulink>
+        which is designed to be run within an initial ram disk during boot (see
+        <xref linkend="initramfs"/>).  The plasma-sdk package is optional and
+        used for software development. The plasma-nano package is used for
+        embedded systems and plasma-phone-components provides phone
+        functionality for Plasma.
 @z
 
 @x

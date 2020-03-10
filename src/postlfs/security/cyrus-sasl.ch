@@ -126,8 +126,10 @@
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <ulink url="https://stuff.mit.edu/afs/net.mit.edu/project/attic/krb4/">krb4</ulink> and
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>
+      <ulink url="https://stuff.mit.edu/afs/net.mit.edu/project/attic/krb4/">krb4</ulink>,
+      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="https://metacpan.org/pod/Pod::POM::View::Restructured">Pod::POM::View::Restructured</ulink>,
+      and <ulink url="https://pypi.org/project/Sphinx">Sphinx</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -139,8 +141,10 @@
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <ulink url="https://stuff.mit.edu/afs/net.mit.edu/project/attic/krb4/">krb4</ulink> and
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>
+      <ulink url="https://stuff.mit.edu/afs/net.mit.edu/project/attic/krb4/">krb4</ulink>,
+      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="https://metacpan.org/pod/Pod::POM::View::Restructured">Pod::POM::View::Restructured</ulink>,
+      <ulink url="https://pypi.org/project/Sphinx">Sphinx</ulink>
     </para>
 @z
 

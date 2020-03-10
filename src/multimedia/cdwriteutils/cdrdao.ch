@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para>The <application>Cdrdao</application> package contains
-    CD recording utilities. These are useful for burning a
-    CD in disk-at-once mode.</para>
+      The <application>Cdrdao</application> package contains
+      CD recording utilities. These are useful for burning a
+      CD in disk-at-once mode.
 @y
-    <para>
-    <application>Cdrdao</application> パッケージは CD 録音に関するユーティリティーを提供します。
-    ディスクアットワンス (disk-at-once) モードにて CD を焼く際に有用です。
-    </para>
+      <application>Cdrdao</application> パッケージは CD 録音に関するユーティリティーを提供します。
+      ディスクアットワンス (disk-at-once) モードにて CD を焼く際に有用です。
 @z
 
 @x
@@ -37,33 +35,33 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&cdrdao-download-http;"/></para>
+          Download (HTTP): <ulink url="&cdrdao-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&cdrdao-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&cdrdao-download-http;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &cdrdao-md5sum;</para>
+          Download MD5 sum: &cdrdao-md5sum;
 @y
-        <para>&Download; MD5 sum: &cdrdao-md5sum;</para>
+          &Download; MD5 sum: &cdrdao-md5sum;
 @z
 
 @x
-        <para>Download size: &cdrdao-size;</para>
+          Download size: &cdrdao-size;
 @y
-        <para>&DownloadSize;: &cdrdao-size;</para>
+          &DownloadSize;: &cdrdao-size;
 @z
 
 @x
-        <para>Estimated disk space required: &cdrdao-buildsize;</para>
+          Estimated disk space required: &cdrdao-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &cdrdao-buildsize;</para>
+          &Estimateddiskspacerequired;: &cdrdao-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &cdrdao-time;</para>
+          Estimated build time: &cdrdao-time;
 @y
-        <para>&Estimatedbuildtime;: &cdrdao-time;</para>
+          &Estimatedbuildtime;: &cdrdao-time;
 @z
 
 @x
@@ -105,28 +103,22 @@
 @z
 
 @x
-    <para>Install <application>Cdrdao</application> by running the following
-    commands:</para>
+      Install <application>Cdrdao</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Cdrdao</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Cdrdao</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーにあって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーにあって以下を実行します。
 @z
 
 @x
@@ -178,37 +170,37 @@
 @z
 
 @x cdrdao
-          <para>records audio or data CD-Rs in disk-at-once (DAO) mode
-          based on a textual description of the CD contents.</para>
+            records audio or data CD-Rs in disk-at-once (DAO) mode
+            based on a textual description of the CD contents.
 @y
-          <para>records audio or data CD-Rs in disk-at-once (DAO) mode
-          based on a textual description of the CD contents.</para>
+            records audio or data CD-Rs in disk-at-once (DAO) mode
+            based on a textual description of the CD contents.
 @z
 
 @x cue2toc
-          <para>converts CUE to TOC format for audio CDs.</para>
+            converts CUE to TOC format for audio CDs.
 @y
-          <para>converts CUE to TOC format for audio CDs.</para>
+            converts CUE to TOC format for audio CDs.
 @z
 
 @x toc2cddb
-        <para>converts a <application>Cdrdao</application>
-          TOC file into a cddb file and prints it to stdout.</para>
+            converts a <application>Cdrdao</application>
+            TOC file into a cddb file and prints it to stdout.
 @y
-        <para>converts a <application>Cdrdao</application>
-          TOC file into a cddb file and prints it to stdout.</para>
+            converts a <application>Cdrdao</application>
+            TOC file into a cddb file and prints it to stdout.
 @z
 
 @x toc2cue
-          <para>converts TOC to CUE format for audio CDs.</para>
+            converts TOC to CUE format for audio CDs.
 @y
-          <para>converts TOC to CUE format for audio CDs.</para>
+            converts TOC to CUE format for audio CDs.
 @z
 
 @x toc2mp3
-          <para>converts an audio CD disk image (<filename>.toc</filename> file)
-          to MP3 files.</para>
+            converts an audio CD disk image (<filename>.toc</filename> file)
+            to MP3 files.
 @y
-          <para>converts an audio CD disk image (<filename>.toc</filename> file)
-          to MP3 files.</para>
+            converts an audio CD disk image (<filename>.toc</filename> file)
+            to MP3 files.
 @z

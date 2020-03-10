@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>libsamplerate</application> is a sample rate converter 
-    for audio.</para>
+      <application>libsamplerate</application> is a sample rate converter
+      for audio.
 @y
-    <para>
-    <application>libsamplerate</application> は音声データに対するサンプルレートコンバーターです。
-    </para>
+      <application>libsamplerate</application> は音声データに対するサンプルレートコンバーターです。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libsamplerate-download-http;"/></para>
+          Download (HTTP): <ulink url="&libsamplerate-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libsamplerate-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libsamplerate-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libsamplerate-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libsamplerate-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libsamplerate-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libsamplerate-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libsamplerate-md5sum;</para>
+          Download MD5 sum: &libsamplerate-md5sum;
 @y
-        <para>&Download; MD5 sum: &libsamplerate-md5sum;</para>
+          &Download; MD5 sum: &libsamplerate-md5sum;
 @z
 
 @x
-        <para>Download size: &libsamplerate-size;</para>
+          Download size: &libsamplerate-size;
 @y
-        <para>&DownloadSize;: &libsamplerate-size;</para>
+          &DownloadSize;: &libsamplerate-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libsamplerate-buildsize;</para>
+          Estimated disk space required: &libsamplerate-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libsamplerate-buildsize;</para>
+          &Estimateddiskspacerequired;: &libsamplerate-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libsamplerate-time;</para>
+          Estimated build time: &libsamplerate-time;
 @y
-        <para>&Estimatedbuildtime;: &libsamplerate-time;</para>
+          &Estimatedbuildtime;: &libsamplerate-time;
 @z
 
 @x
@@ -103,29 +101,22 @@
 @z
 
 @x
-    <para>Install <application>libsamplerate</application> by running the
-    following commands:</para>
+      Install <application>libsamplerate</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libsamplerate</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libsamplerate</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -167,9 +158,7 @@
 @z
 
 @x sndfile-resample
-          <para>is a sample rate converter using libsndfile for file I/O.</para>
+            is a sample rate converter using libsndfile for file I/O.
 @y
-          <para>
-          ファイル入出力に libsndfile を利用したサンプルレートコンバーターです。
-          </para>
+            ファイル入出力に libsndfile を利用したサンプルレートコンバーターです。
 @z

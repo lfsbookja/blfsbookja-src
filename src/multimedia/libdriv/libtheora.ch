@@ -42,39 +42,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libtheora-download-http;"/></para>
+          Download (HTTP): <ulink url="&libtheora-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libtheora-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libtheora-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libtheora-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libtheora-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libtheora-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libtheora-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libtheora-md5sum;</para>
+          Download MD5 sum: &libtheora-md5sum;
 @y
-        <para>&Download; MD5 sum: &libtheora-md5sum;</para>
+          &Download; MD5 sum: &libtheora-md5sum;
 @z
 
 @x
-        <para>Download size: &libtheora-size;</para>
+          Download size: &libtheora-size;
 @y
-        <para>&DownloadSize;: &libtheora-size;</para>
+          &DownloadSize;: &libtheora-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libtheora-buildsize;</para>
+          Estimated disk space required: &libtheora-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libtheora-buildsize;</para>
+          &Estimateddiskspacerequired;: &libtheora-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libtheora-time;</para>
+          Estimated build time: &libtheora-time;
 @y
-        <para>&Estimatedbuildtime;: &libtheora-time;</para>
+          &Estimatedbuildtime;: &libtheora-time;
 @z
 
 @x
@@ -138,39 +138,31 @@
 @z
 
 @x
-    <para>Install <application>libtheora</application> by running the following
-    commands:</para>
+      Install <application>libtheora</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libtheora</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libtheora</application> をビルドします。
 @z
 
 @x
-    <para>If you wish to run the tests, issue: <command>make check</command>.</para>
+      If you wish to run the tests, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you wish to install the examples (so that you can hack on
-    <literal>theora</literal>), install them as the <systemitem
-    class="username">root</systemitem> user:</para>
+      If you wish to install the examples (so that you can hack on
+      <literal>theora</literal>), install them as the <systemitem
+      class="username">root</systemitem> user:
 @y
-    <para>
-    サンプルをビルドしインストールしたい場合 (<literal>theora</literal> をハックしたい場合) は、<systemitem
-    class="username">root</systemitem> ユーザーになって以下を実行しインストールします。 
-    </para>
+      サンプルをビルドしインストールしたい場合 (<literal>theora</literal> をハックしたい場合) は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行しインストールします。 
 @z
 
 @x
@@ -222,11 +214,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libtheora*.{so,a}
-          <para>libraries provide the functions to read and write video
-          files.</para>
+@x libtheora*.so
+            contains the functions to read and write video files.
 @y
-          <para>
-          ビデオファイルの読み書きを行う関数を提供します。
-          </para>
+            ビデオファイルの読み書きを行う関数を提供します。
 @z

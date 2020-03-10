@@ -78,26 +78,28 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
- <!--     <xref linkend="nftables"/>, -->
+<!--      <xref linkend="nftables"/>, -->
       <xref linkend="libpcap"/> (required for nfsypproxy support),
       <ulink url="https://github.com/tadamdam/bpf-utils">bpf-utils</ulink>
       (required for Berkely Packet Filter support),
       <ulink url="https://netfilter.org/projects/libnfnetlink/">libnfnetlink</ulink>
-      (required for connlabel support), and 
-      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>
+      (required for connlabel support),
+      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>, and 
       (required for connlabel support)
+      <ulink url="https://netfilter.org/projects/nftables/">nftables</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
- <!--     <xref linkend="nftables"/>, -->
+<!--      <xref linkend="nftables"/>, -->
       <xref linkend="libpcap"/> (required for nfsypproxy support),
       <ulink url="https://github.com/tadamdam/bpf-utils">bpf-utils</ulink>
       (required for Berkely Packet Filter support),
       <ulink url="https://netfilter.org/projects/libnfnetlink/">libnfnetlink</ulink>
-      (required for connlabel support), and 
-      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>
+      (required for connlabel support),
+      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>, and 
       (required for connlabel support)
+      <ulink url="https://netfilter.org/projects/nftables/">nftables</ulink>
     </para>
 @z
 
@@ -125,13 +127,13 @@
 @x
       Include any connection tracking protocols that will be used, as well as
       any protocols that you wish to use for match support under the
-      "Core Netfilter Configuration" section. <!--The above options are enough
-      for running <xref linkend="fw-persFw-ipt"/> below.-->
+      "Core Netfilter Configuration" section. The above options are enough
+      for running <xref linkend="fw-persFw-ipt"/> below.
 @y
       Include any connection tracking protocols that will be used, as well as
       any protocols that you wish to use for match support under the
-      "Core Netfilter Configuration" section. <!--The above options are enough
-      for running <xref linkend="fw-persFw-ipt"/> below.-->
+      "Core Netfilter Configuration" section. The above options are enough
+      for running <xref linkend="fw-persFw-ipt"/> below.
 @z
 
 @x

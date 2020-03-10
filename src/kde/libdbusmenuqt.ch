@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para>This library provides a <application>Qt</application> implementation
-    of the DBusMenu specification that exposes menus via DBus.</para>
+      This library provides a <application>Qt</application> implementation
+      of the DBusMenu specification that exposes menus via DBus.
 @y
-    <para>
-    このライブラリは DBusMenu 仕様の <application>Qt</application> による実装です。
-    DBus 上にてメニュー表示を行うことを目的としています。
-    </para>
+      このライブラリは DBusMenu 仕様の <application>Qt</application> による実装です。
+      DBus 上にてメニュー表示を行うことを目的としています。
 @z
 
 @x
@@ -36,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libdbusmenu-qt-download-http;"/></para>
+          Download (HTTP): <ulink url="&libdbusmenu-qt-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libdbusmenu-qt-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libdbusmenu-qt-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libdbusmenu-qt-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libdbusmenu-qt-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libdbusmenu-qt-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libdbusmenu-qt-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libdbusmenu-qt-md5sum;</para>
+          Download MD5 sum: &libdbusmenu-qt-md5sum;
 @y
-        <para>&Download; MD5 sum: &libdbusmenu-qt-md5sum;</para>
+          &Download; MD5 sum: &libdbusmenu-qt-md5sum;
 @z
 
 @x
-        <para>Download size: &libdbusmenu-qt-size;</para>
+          Download size: &libdbusmenu-qt-size;
 @y
-        <para>&DownloadSize;: &libdbusmenu-qt-size;</para>
+          &DownloadSize;: &libdbusmenu-qt-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libdbusmenu-qt-buildsize;</para>
+          Estimated disk space required: &libdbusmenu-qt-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libdbusmenu-qt-buildsize;</para>
+          &Estimateddiskspacerequired;: &libdbusmenu-qt-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libdbusmenu-qt-time;</para>
+          Estimated build time: &libdbusmenu-qt-time;
 @y
-        <para>&Estimatedbuildtime;: &libdbusmenu-qt-time;</para>
+          &Estimatedbuildtime;: &libdbusmenu-qt-time;
 @z
 
 @x
@@ -114,26 +112,22 @@
 @z
 
 @x
-    <para>Install <application>libdbusmenu-qt</application> by running the
-    following commands:</para>
+      Install <application>libdbusmenu-qt</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libdbusmenu-qt</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libdbusmenu-qt</application> をビルドします。
 @z
 
 @x
-    <para>This packages does not come with a working test suite.</para>
+      This packages does not come with a working test suite.
 @y
-    <para>
-    本パッケージには有効なテストスイートがありません。
-    </para>
+      本パッケージには有効なテストスイートがありません。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para><systemitem class="username">root</systemitem> ユーザーになって以下を実行します。</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -143,25 +137,23 @@
 @z
 
 @x
-    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
-    used to build without debugging symbols and apply a higher level of
-    compiler optimizations.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+      used to build without debugging symbols and apply a higher level of
+      compiler optimizations.
 @y
-    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
-    本スイッチによりデバッグシンボルを取り除き、コンパイラーの最適化レベルを上げて処理します。
-    </para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
+      本スイッチによりデバッグシンボルを取り除き、コンパイラーの最適化レベルを上げて処理します。
 @z
 
 @x
-    <para><parameter>-DWITH_DOC=OFF</parameter>: This option is set to avoid
-    building the API documentation. Omit it if you have
-    <application>doxygen</application> installed and want the
-    documentation.</para>
+      <parameter>-DWITH_DOC=OFF</parameter>: This option is set to avoid
+      building the API documentation. Omit it if you have
+      <application>doxygen</application> installed and want the
+      documentation.
 @y
-    <para><parameter>-DWITH_DOC=OFF</parameter>:
-    このオプションは API ドキュメントのビルドを行わないようにします。
-    <application>doxygen</application> をインストールしていて、ドキュメントを必要とする場合は、このオプションを取り除いてください。
-    </para>
+      <parameter>-DWITH_DOC=OFF</parameter>:
+      このオプションは API ドキュメントのビルドを行わないようにします。
+      <application>doxygen</application> をインストールしていて、ドキュメントを必要とする場合は、このオプションを取り除いてください。
 @z
 
 @x

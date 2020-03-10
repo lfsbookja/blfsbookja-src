@@ -20,11 +20,8 @@
 @z
 
 @x
-  <para>Major servers are the programs that provide content or services
-  to users or other programs.</para>
+    Major servers are the programs that provide content or services
+    to users or other programs.
 @y
-<para>
-代表的なサーバーとして、さまざまな情報やサービスを、ユーザーまたは他のプログラムに対して提供するサーバープログラムを説明します。
-</para>
+    代表的なサーバーとして、さまざまな情報やサービスを、ユーザーまたは他のプログラムに対して提供するサーバープログラムを説明します。
 @z
-

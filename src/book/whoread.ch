@@ -26,34 +26,30 @@
 @z
 
 @x
-  <para>This book is mainly aimed at those who have built a system based
-  on the LFS book. It will also be useful for those who are using other
-  distributions, but for one reason or another want to manually build
-  software and are in need of some assistance. Note that the material
-  contained in this book, in particular the dependency listings, is based
-  upon the assumption that you are using a base LFS system with every
-  package listed in the LFS book already installed and configured. BLFS can
-  be used to create a range of diverse systems and so the target audience is
-  probably nearly as wide as that of the LFS book.  If you found LFS useful,
-  you should also like this!</para>
+    This book is mainly aimed at those who have built a system based
+    on the LFS book. It will also be useful for those who are using other
+    distributions, but for one reason or another want to manually build
+    software and are in need of some assistance. Note that the material
+    contained in this book, in particular the dependency listings, is based
+    upon the assumption that you are using a base LFS system with every
+    package listed in the LFS book already installed and configured. BLFS can
+    be used to create a range of diverse systems and so the target audience is
+    probably nearly as wide as that of the LFS book.  If you found LFS useful,
+    you should also like this!
 @y
-  <para>
-  本書は LFS ブックに従ってシステム構築を行った方を主に対象としています。
-  他のディストリビューションをご利用の方であっても、ソフトウェアを手作業でビルドしようとしていて、何らかの手助けを必要とする方にとっても有用なものとなるはずです。
-  本書に示す内容で特に依存パッケージの一覧は、LFS システムの利用を前提としています。
-  つまり LFS ブックに基づくパッケージ類をすべてインストールおよび設定済であるようなシステムをベースとしていることです。
-  BLFS は多種多様なシステム作りに利用することができるため、対象ユーザーは LFS ブックと同じく幅広いものとなります。
-  LFS が有用であると思っていただいた皆さんなら、本書も気に入っていただけることでしょう。
-  </para>
+    本書は LFS ブックに従ってシステム構築を行った方を主に対象としています。
+    他のディストリビューションをご利用の方であっても、ソフトウェアを手作業でビルドしようとしていて、何らかの手助けを必要とする方にとっても有用なものとなるはずです。
+    本書に示す内容で特に依存パッケージの一覧は、LFS システムの利用を前提としています。
+    つまり LFS ブックに基づくパッケージ類をすべてインストールおよび設定済であるようなシステムをベースとしていることです。
+    BLFS は多種多様なシステム作りに利用することができるため、対象ユーザーは LFS ブックと同じく幅広いものとなります。
+    LFS が有用であると思っていただいた皆さんなら、本書も気に入っていただけることでしょう。
 @z
 
 @x
-  <!-- <para>Since Release 5.0, the BLFS book version matches the LFS book version.
-  This book may be incompatible with a previous or later release of the LFS
-  book.</para> -->
+    Since Release 7.4, the BLFS book version matches the LFS book version.
+    This book may be incompatible with a previous or later release of the LFS
+    book.
 @y
-  <!-- <para>
-  バージョン 5.0 以降は、BLFS ブックのバージョンと LFS ブックのバージョンは一致させています。
-  本書は、LFS の前版や将来の版とは互換性がありません。
-  </para> -->
+    バージョン 7.4 以降は、BLFS ブックのバージョンと LFS ブックのバージョンは一致させています。
+    本書は LFS の前版や将来の版とは互換性がありません。
 @z

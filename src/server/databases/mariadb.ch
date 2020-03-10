@@ -76,14 +76,13 @@
 @z
 
 @x
-    <note><para>The installed size of MariaDB is 473 MB, but this can be
-    reduced by about 200 MB, if desired, by removing the /usr/share/mysql/test
-    directory after installation.</para></note>
+        The installed size of MariaDB is 473 MB, but this can be
+        reduced by about 200 MB, if desired, by removing the <filename
+        class="directory">/usr/share/mysql/test</filename>
+        directory after installation.
 @y
-    <note><para>
-    MariaDB のインストールサイズは 473MB です。
-    サイズを縮小する必要がある場合は、インストール後に /usr/share/mysql/test ディレクトリを削除すれば 200MB になります。
-    </para></note>
+        MariaDB のインストールサイズは 473MB です。
+       サイズを縮小する必要がある場合は、インストール後に /usr/share/mysql/test ディレクトリを削除すれば 200MB になります。
 @z
 
 @x

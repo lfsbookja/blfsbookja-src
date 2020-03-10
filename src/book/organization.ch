@@ -28,9 +28,9 @@
 @z
 
 @x
-  <para>This book is divided into the following parts.</para>
+    This book is divided into the following parts.
 @y
-  <para>本書は以下により構成されます。</para>
+    本書は以下により構成されます。
 @z
 
 @x
@@ -42,12 +42,10 @@
 @z
 
 @x
-  <para>This part contains information which is essential to
-  the rest of the book.</para>
+    This part contains information which is essential to
+    the rest of the book.
 @y
-  <para>
-  この部では本書全般における重要な情報について示します。
-  </para>
+    この部では本書全般における重要な情報について示します。
 @z
 
 @x
@@ -60,14 +58,12 @@
 @z
 
 @x
-  <para>Here we introduce basic configuration and security issues.  We also
-  discuss a range of editors, file systems, and shells which aren't covered in
-  the main LFS book.</para>
+    Here we introduce basic configuration and security issues.  We also
+    discuss a range of editors, file systems, and shells which aren't covered
+    in the main LFS book.
 @y
-  <para>
-  基本的な設定に関することやセキュリティに関する情報を示します。
-  また LFS ブックには示していない内容として、エディター、ファイルシステム、シェルに関する情報についても説明します。
-  </para>
+    基本的な設定に関することやセキュリティに関する情報を示します。
+    また LFS ブックには示していない内容として、エディター、ファイルシステム、シェルに関する情報についても説明します。
 @z
 
 @x
@@ -79,16 +75,14 @@
 @z
 
 @x
-  <para>In this section we cover libraries which are often needed by the rest
-  of the book as well as system utilities.  Information on Programming
-  (including recompiling <application>GCC</application> to support its full range
-  of languages) concludes this part.</para>
+    In this section we cover libraries which are often needed by the rest
+    of the book as well as system utilities.  Information on Programming
+    (including recompiling <application>GCC</application> to support its full
+    range of languages) concludes this part.
 @y
-  <para>
-  この部では本書全般に、随所にて必要となるライブラリやシステムユーティリティについて説明します。
-  プログラミング言語についてもここで説明します。
-  特に <application>GCC</application> に関しては、これを再ビルドすることによって、対応可能な全プログラミング言語がサポートされることについても説明します。
-  </para>
+    この部では本書全般に、随所にて必要となるライブラリやシステムユーティリティについて説明します。
+    プログラミング言語についてもここで説明します。
+    特に <application>GCC</application> に関しては、これを再ビルドすることによって、対応可能な全プログラミング言語がサポートされることについても説明します。
 @z
 
 @x
@@ -100,14 +94,12 @@
 @z
 
 @x
-  <para>Here we cover how to connect to a network when you aren't using the
-  simple static IP setup given in the main LFS book. Networking libraries
-  and command-line networking tools are also covered here.</para>
+    Here we cover how to connect to a network when you aren't using the
+    simple static IP setup given in the main LFS book. Networking libraries
+    and command-line networking tools are also covered here.
 @y
-  <para>
-  LFS ブックでは、単純に固定IPアドレスを用いていましたが、そうしない場合にネットワークに接続する方法をここで説明します。
-  ネットワークライブラリやコマンドライン実行によるネットワークツールについても説明します。
-  </para>
+    LFS ブックでは、単純に固定IPアドレスを用いていましたが、そうしない場合にネットワークに接続する方法をここで説明します。
+    ネットワークライブラリやコマンドライン実行によるネットワークツールについても説明します。
 @z
 
 @x
@@ -119,13 +111,11 @@
 @z
 
 @x
-  <para>Here we deal with setting up mail and other servers (such as
-  <application>SSH</application>, <application>Apache</application>, etc.).</para>
+    Here we deal with setting up mail and other servers (such as
+    <application>FTP</application>, <application>Apache</application>, etc.).
 @y
-  <para>
-  メールサーバーやそれ以外のサーバーについて説明します。
-  (例えば <application>SSH</application>、<application>Apache</application> などです。)
-  </para>
+    メールサーバーやそれ以外のサーバーについて説明します。
+    (例えば <application>FTP</application>、<application>Apache</application> などです。)
 @z
 
 @x
@@ -137,14 +127,12 @@
 @z
 
 @x
-  <para>This part explains how to set up a basic <application>X Window
-  System</application> installation along with some generic
-  <application>X</application> libraries and Window managers.</para>
+    This part explains how to set up a basic <application>X Window
+    System</application> installation along with some generic
+    <application>X</application> libraries and Window managers.
 @y
-  <para>
-  <application>X ウィンドウシステム</application> の基本的なビルド手順について説明します。
-  また <application>X</application> に関する汎用的なライブラリやウィンドウマネジャーについて説明します。
-  </para>
+    <application>X ウィンドウシステム</application> の基本的なビルド手順について説明します。
+    また <application>X</application> に関する汎用的なライブラリやウィンドウマネジャーについて説明します。
 @z
 
 @x
@@ -156,12 +144,10 @@
 @z
 
 @x
-  <para>For those who want to use the <application>K Desktop
-  Environment</application> or some parts of it, this part covers it.</para>
+    For those who want to use the <application>K Desktop
+    Environment</application> or some parts of it, this part covers it.
 @y
-  <para>
-  <application>K デスクトップ環境</application> またはその一部を利用したい方に向けて、その説明を行います。
-  </para>
+    <application>K デスクトップ環境</application> またはその一部を利用したい方に向けて、その説明を行います。
 @z
 
 @x
@@ -173,13 +159,10 @@
 @z
 
 @x
-  <para><application>GNOME</application> is the main alternative to
-  <application>KDE</application> in the Desktop Environment arena.
-  </para>
+    <application>GNOME</application> is the main alternative to
+    <application>KDE</application> in the Desktop Environment arena.
 @y
-  <para>
-  <application>GNOME</application> は <application>KDE</application> とは別の選択肢となるデスクトップ環境です。
-  </para>
+    <application>GNOME</application> は <application>KDE</application> とは別の選択肢となるデスクトップ環境です。
 @z
 
 @x
@@ -191,69 +174,75 @@
 @z
 
 @x
-  <para><application>Xfce</application> is a lightweight alternative to
-  <application>GNOME</application> and <application>KDE</application>.
-  </para>
+    <application>Xfce</application> is a lightweight alternative to
+    <application>GNOME</application> and <application>KDE</application>.
 @y
-  <para><application>Xfce</application> is a lightweight alternative to
-  <application>GNOME</application> and <application>KDE</application>.
-  </para>
+    <application>Xfce</application> は <application>GNOME</application> や <application>KDE</application> とは別の、軽量デスクトップ環境です。
 @z
 
 @x
-  <bridgehead renderas="sect2">Part X - X Software</bridgehead>
+  <bridgehead renderas="sect2">Part X - LXDE</bridgehead>
 @y
   <bridgehead renderas="sect2">
-  第 X 部 - X ソフトウェア
+  第 X 部 - LXDE
   </bridgehead>
 @z
 
 @x
-  <para>Office programs and graphical web browsers are important to most people.
-  They, along with some generic <application>X</application> software can be
-  found in this part of the book.</para>
+    <application>LXDE</application> is another lightweight alternative to
+    <application>GNOME</application> and <application>KDE</application>.
 @y
-  <para>
-  システムを扱うユーザーにとって、オフィスプログラムやグラフィカルなウェブブラウザーがたいていは必要になります。
-  <application>X</application> ウィンドウシステムの汎用的なソフトウェアも含めて、この章にて説明します。
-  </para>
+    <application>LXDE</application>  は <application>GNOME</application> や <application>KDE</application> とは別の、軽量デスクトップ環境です。
 @z
 
 @x
-  <bridgehead renderas="sect2">Part XI - Multimedia</bridgehead>
+  <bridgehead renderas="sect2">Part XI - X Software</bridgehead>
 @y
   <bridgehead renderas="sect2">
-  第 XI 部 - マルチメディア
+  第 XI 部 - X ソフトウェア
   </bridgehead>
 @z
 
 @x
-  <para>Here we cover setting multimedia libraries and drivers along with some
-  audio, video and CD-writing programs.</para>
+    Office programs and graphical web browsers are important to most people.
+    They, along with some generic <application>X</application> software can be
+    found in this part of the book.
 @y
-  <para>
-  この部では、オーディオ、ビデオ、CD書き込みツールなどにて必要となるマルチメディアライブラリやドライバーの扱いについて説明します。
-  </para>
+    システムを扱うユーザーにとって、オフィスプログラムやグラフィカルなウェブブラウザーがたいていは必要になります。
+    <application>X</application> ウィンドウシステムの汎用的なソフトウェアも含めて、この章にて説明します。
 @z
 
 @x
-  <bridgehead renderas="sect2">Part XII - Printing, Scanning and
+  <bridgehead renderas="sect2">Part XII - Multimedia</bridgehead>
+@y
+  <bridgehead renderas="sect2">
+  第 XII 部 - マルチメディア
+  </bridgehead>
+@z
+
+@x
+    Here we cover setting multimedia libraries and drivers along with some
+    audio, video and CD-writing programs.
+@y
+    この部では、オーディオ、ビデオ、CD書き込みツールなどにて必要となるマルチメディアライブラリやドライバーの扱いについて説明します。
+@z
+
+@x
+  <bridgehead renderas="sect2">Part XIII - Printing, Scanning and
   Typesetting (PST)</bridgehead>
 @y
   <bridgehead renderas="sect2">
-  第 XII 部 - 印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST)
+  第 XIII 部 - 印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST)
   </bridgehead>
 @z
 
 @x
-  <para>The PST part of the book covers document handling with applications like
-  <application>Ghostscript</application>, <application>CUPS</application> and
-  <application>DocBook</application> to installing
-  <application>texlive</application>.</para>
+    The PST part of the book covers document handling with applications like
+    <application>Ghostscript</application>, <application>CUPS</application> and
+    <application>DocBook</application> to installing
+    <application>texlive</application>.
 @y
-  <para>
-  印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST) の部では、文書を取り扱うアプリケーションとして <application>Ghostscript</application>、<application>CUPS</application>、<application>DocBook</application>、<application>texlive</application> について説明します。
-  </para>
+    印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST) の部では、文書を取り扱うアプリケーションとして <application>Ghostscript</application>、<application>CUPS</application>、<application>DocBook</application>、<application>texlive</application> について説明します。
 @z
 
 @x
@@ -263,11 +252,9 @@
 @z
 
 @x
-  <para>The Appendices cover information which doesn't belong in the main
-  book; they are mainly there as a reference.</para>
+    The Appendices cover information which doesn't belong in the main
+    book; they are mainly there as a reference.
 @y
-  <para>
-  付録の部では、本書の各部には属していない内容を示します。
-  主に参考情報を示すものです。
-  </para>
+    付録の部では、本書の各部には属していない内容を示します。
+    主に参考情報を示すものです。
 @z

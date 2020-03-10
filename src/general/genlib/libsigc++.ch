@@ -77,6 +77,26 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">libsigc++ Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;libsigc++&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> and
+      <xref linkend="libxslt"/> (for documentation)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <xref linkend="libxslt"/> (ドキュメントのため)
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:

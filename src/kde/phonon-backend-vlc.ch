@@ -20,13 +20,10 @@
 @z
 
 @x
-    <para>This package provides a <application>Phonon</application> backend
-    which utilizes the <application>VLC</application> media framework.
-    </para>
+      This package provides a <application>Phonon</application> backend
+      which utilizes the <application>VLC</application> media framework.
 @y
-    <para>
     本パッケージは <application>VLC</application> メディアフレームワークにて用いられている <application>Phonon</application> バックエンドを提供します。
-    </para>
 @z
 
 @x
@@ -36,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&phonon-backend-vlc-download-http;"/></para>
+          Download (HTTP): <ulink url="&phonon-backend-vlc-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&phonon-backend-vlc-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&phonon-backend-vlc-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&phonon-backend-vlc-download-ftp;"/></para>
+          Download (FTP): <ulink url="&phonon-backend-vlc-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&phonon-backend-vlc-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&phonon-backend-vlc-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &phonon-backend-vlc-md5sum;</para>
+          Download MD5 sum: &phonon-backend-vlc-md5sum;
 @y
-        <para>&Download; MD5 sum: &phonon-backend-vlc-md5sum;</para>
+          &Download; MD5 sum: &phonon-backend-vlc-md5sum;
 @z
 
 @x
-        <para>Download size: &phonon-backend-vlc-size;</para>
+          Download size: &phonon-backend-vlc-size;
 @y
-        <para>&DownloadSize;: &phonon-backend-vlc-size;</para>
+          &DownloadSize;: &phonon-backend-vlc-size;
 @z
 
 @x
-        <para>Estimated disk space required: &phonon-backend-vlc-buildsize;</para>
+          Estimated disk space required: &phonon-backend-vlc-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &phonon-backend-vlc-buildsize;</para>
+          &Estimateddiskspacerequired;: &phonon-backend-vlc-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &phonon-backend-vlc-time;</para>
+          Estimated build time: &phonon-backend-vlc-time;
 @y
-        <para>&Estimatedbuildtime;: &phonon-backend-vlc-time;</para>
+          &Estimatedbuildtime;: &phonon-backend-vlc-time;
 @z
 
 @x
@@ -104,21 +101,16 @@
 @z
 
 @x
-    <para>Install 
-    <application>Phonon-backend-vlc</application> by running the following
-    commands:</para>
+      Install <application>Phonon-backend-vlc</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Phonon-backend-vlc</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Phonon-backend-vlc</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -128,13 +120,11 @@
 @z
 
 @x
-    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
-    used to apply higher level of compiler optimizations.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+      used to apply higher level of compiler optimizations.
 @y
-    <para>
-    <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
-    このスイッチは、コンパイラーの最適化オプションを最高レベルにて適用することを指示します。
-    </para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
+      このスイッチは、コンパイラーの最適化オプションを最高レベルにて適用することを指示します。
 @z
 
 @x

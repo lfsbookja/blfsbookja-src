@@ -193,20 +193,6 @@
 @z
 
 @x
-      <para>If you installed the package to your system using a "DESTDIR"
-      method, 
-      <filename>/usr/share/glib-2.0/schemas/gschemas.compiled</filename>
-      was not updated/created. Create (or update) the file using the following
-      command as the <systemitem class="username">root</systemitem> user:</para>
-@y
-      <para>If you installed the package to your system using a "DESTDIR"
-      method, 
-      <filename>/usr/share/glib-2.0/schemas/gschemas.compiled</filename>
-      was not updated/created. Create (or update) the file using the following
-      command as the <systemitem class="username">root</systemitem> user:</para>
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>

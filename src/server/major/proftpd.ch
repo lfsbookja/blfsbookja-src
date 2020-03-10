@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para>The <application>ProFTPD</application> package contains a secure
-    and highly configurable FTP daemon. This is useful for serving large
-    file archives over a network.</para>
+      The <application>ProFTPD</application> package contains a secure
+      and highly configurable FTP daemon. This is useful for serving large
+      file archives over a network.
 @y
-    <para>
-    <application>ProFTPD</application> パッケージは、セキュアで設定変更が容易な FTP デーモンを提供します。
-    ネットワークに対して大量のファイルアーカイブを提供しようとする場合に活用することができます。
-    </para>
+      <application>ProFTPD</application> パッケージは、セキュアで設定変更が容易な FTP デーモンを提供します。
+      ネットワークに対して大量のファイルアーカイブを提供しようとする場合に活用することができます。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&proftpd-download-http;"/></para>
+          Download (HTTP): <ulink url="&proftpd-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&proftpd-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&proftpd-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&proftpd-download-ftp;"/></para>
+          Download (FTP): <ulink url="&proftpd-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&proftpd-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&proftpd-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &proftpd-md5sum;</para>
+          Download MD5 sum: &proftpd-md5sum;
 @y
-        <para>&Download; MD5 sum: &proftpd-md5sum;</para>
+          &Download; MD5 sum: &proftpd-md5sum;
 @z
 
 @x
-        <para>Download size: &proftpd-size;</para>
+          Download size: &proftpd-size;
 @y
-        <para>&DownloadSize;: &proftpd-size;</para>
+          &DownloadSize;: &proftpd-size;
 @z
 
 @x
-        <para>Estimated disk space required: &proftpd-buildsize;</para>
+          Estimated disk space required: &proftpd-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &proftpd-buildsize;</para>
+          &Estimateddiskspacerequired;: &proftpd-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &proftpd-time;</para>
+          Estimated build time: &proftpd-time;
 @y
-        <para>&Estimatedbuildtime;: &proftpd-time;</para>
+          &Estimatedbuildtime;: &proftpd-time;
 @z
 
 @x
@@ -115,37 +113,31 @@
 @z
 
 @x
-    <para>For security reasons, you should install
-    <application>ProFTPD</application> using an unprivileged user and group.
-    As the <systemitem class="username">root</systemitem> user:</para>
+      For security reasons, you should install
+      <application>ProFTPD</application> using an unprivileged user and group.
+      As the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    セキュリティ上の理由から <application>ProFTPD</application> のインストールにあたっては、非特権ユーザーおよびグループを用いる必要があります。
-    そこでまずは <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      セキュリティ上の理由から <application>ProFTPD</application> のインストールにあたっては、非特権ユーザーおよびグループを用いる必要があります。
+      そこでまずは <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>Install <application>ProFTPD</application> as an unprivileged user by
-    running the following commands:</para>
+      Install <application>ProFTPD</application> as an unprivileged user by
+      running the following commands:
 @y
-    <para>
-    非特権ユーザーとなって以下を実行することで <application>ProFTPD</application> をビルドします。
-    </para>
+      非特権ユーザーとなって以下を実行することで <application>ProFTPD</application> をビルドします。
 @z
 
 @x
-    <para>This packages does not come with a usable test suite.</para>
+      This packages does not come with a usable test suite.
 @y
-    <para>This packages does not come with a usable test suite.</para>
+      This packages does not come with a usable test suite.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -155,55 +147,45 @@
 @z
 
 @x
-    <para><command>install -v -d -m775 -o proftpd -g proftpd
-    /srv/ftp</command>: Create the home directory for
-    <application>ProFTPD</application>.</para>
+      <command>install -v -d -m775 -o proftpd -g proftpd /srv/ftp</command>:
+      Create the home directory for <application>ProFTPD</application>.
 @y
-    <para><command>install -v -d -m775 -o proftpd -g proftpd
-    /srv/ftp</command>:
-    <application>ProFTPD</application> のホームディレクトリを生成します。
-    </para>
+      <command>install -v -d -m775 -o proftpd -g proftpd /srv/ftp</command>:
+      <application>ProFTPD</application> のホームディレクトリを生成します。
 @z
 
 @x
-    <para><command>ln -v -s /bin/false /usr/bin/proftpdshell</command>:
-    Set the default shell as a link to an invalid shell.</para>
+      <command>ln -v -s /bin/false /usr/bin/proftpdshell</command>:
+      Set the default shell as a link to an invalid shell.
 @y
-    <para><command>ln -v -s /bin/false /usr/bin/proftpdshell</command>:
-    デフォルトシェルを /bin/false へのリンクとします。
-    </para>
+      <command>ln -v -s /bin/false /usr/bin/proftpdshell</command>:
+      デフォルトシェルを /bin/false へのリンクとします。
 @z
 
 @x
-    <para><command>echo /usr/bin/proftpdshell &gt;&gt;
-    /etc/shells</command>: Fake a valid shell for compatibility purposes.</para>
+      <command>echo /usr/bin/proftpdshell &gt;&gt; /etc/shells</command>:
+      Fake a valid shell for compatibility purposes.
 @y
-    <para><command>echo /usr/bin/proftpdshell &gt;&gt;
-    /etc/shells</command>:
-    互換目的でシェルを登録します。
-    </para>
+      <command>echo /usr/bin/proftpdshell &gt;&gt; /etc/shells</command>:
+      互換目的でシェルを登録します。
 @z
 
 @x
-      <para>The above two commands can be omitted if the following directive is
-      placed in the configuration file:</para>
+        The above two commands can be omitted if the following directive is
+        placed in the configuration file:
 @y
-      <para>
-      もし設定ファイル内に以下のディレクティブを設定するのであれば、上の２つのコマンドは省略可能です。
-      </para>
+        もし設定ファイル内に以下のディレクティブを設定するのであれば、上の２つのコマンドは省略可能です。
 @z
 
 @x
-      <para>By default, proftpd will require that users logging in have valid
-      shells. The RequireValidShell directive turns off this requirement. This
-      is only recommended if you are setting up your FTP server exclusively
-      for anonymous downloads.</para>
+        By default, proftpd will require that users logging in have valid
+        shells. The RequireValidShell directive turns off this requirement.
+        This is only recommended if you are setting up your FTP server
+        exclusively for anonymous downloads.
 @y
-      <para>
-      デフォルトにおいて proftpd は、ログインするユーザーが適正なシェルを利用するものでなければなりません。
-      ディレクティブ RequireValidShell はその要求を無効化するものです。
-      この設定を利用するのは、FTPサーバーを匿名ダウンロード専用とする場合にのみ推奨されるものです。
-      </para>
+        デフォルトにおいて proftpd は、ログインするユーザーが適正なシェルを利用するものでなければなりません。
+        ディレクティブ RequireValidShell はその要求を無効化するものです。
+        この設定を利用するのは、FTPサーバーを匿名ダウンロード専用とする場合にのみ推奨されるものです。
 @z
 
 @x
@@ -259,17 +241,15 @@
 @z
 
 @x
-      <para>This is a simple, download-only sample configuration. See the
-      <application>ProFTPD</application> documentation in
-      <filename class="directory">/usr/share/doc/proftpd</filename> and
-      consult the website at <ulink url="http://www.proftpd.org/"/> for
-      example configurations.</para>
+        This is a simple, download-only sample configuration. See the
+        <application>ProFTPD</application> documentation in
+        <filename class="directory">/usr/share/doc/proftpd</filename> and
+        consult the website at <ulink url="http://www.proftpd.org/"/> for
+        example configurations.
 @y
-      <para>
-      以下は設定ファイルの例であり、単純にダウンロードだけを行う設定例です。
-      これ以外のさまざまな設定については、<application>ProFTPD</application> のドキュメントとして、<filename
-      class="directory">/usr/share/doc/proftpd</filename> にあるものや Webサイト <ulink url="http://www.proftpd.org/"/> を参照してください。
-      </para>
+        以下は設定ファイルの例であり、単純にダウンロードだけを行う設定例です。
+        これ以外のさまざまな設定については、<application>ProFTPD</application> のドキュメントとして、<filename
+        class="directory">/usr/share/doc/proftpd</filename> にあるものや Webサイト <ulink url="http://www.proftpd.org/"/> を参照してください。
 @z
 
 @x
@@ -281,21 +261,19 @@
 @z
 
 @x
-      <para>Install the 
-      <phrase revision="sysv"><filename>/etc/rc.d/init.d/proftpd</filename>
-      init script</phrase>
-      <phrase revision="systemd"><filename>proftpd.service</filename>
-      unit</phrase> included in the
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/>
-      package.</para>
+        Install the 
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/proftpd</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>proftpd.service</filename>
+        unit</phrase> included in the
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/>
+        package:
 @y
-      <para>
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる <phrase
-      revision="sysv"><filename>/etc/rc.d/init.d/proftpd</filename>初期起動スクリプト</phrase><phrase
-      revision="systemd"><filename>proftpd.service</filename>ユニット</phrase>をインストールします。
-      </para>
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる <phrase
+        revision="sysv"><filename>/etc/rc.d/init.d/proftpd</filename>初期起動スクリプト</phrase><phrase
+        revision="systemd"><filename>proftpd.service</filename>ユニット</phrase>をインストールします。
 @z
 
 @x
@@ -345,41 +323,78 @@
 @z
 
 @x proftpd
-          <para>is the FTP daemon.</para>
+            is the FTP daemon.
 @y
-          <para>FTP デーモン。</para>
+            FTP デーモン。
 @z
 
 @x ftpcount
-          <para>shows the current number of connections.</para>
+            shows the current number of connections.
 @y
-          <para>
-          現在の接続数を表示します。
-          </para>
+            現在の接続数を表示します。
 @z
 
 @x ftpdctl
-          <para>is used to control the  proftpd daemon while it is running.</para>
+            is used to control the  proftpd daemon while it is running.
 @y
-          <para>
-          実行中の proftpd デーモンを制御します。
-          </para>
+            実行中の proftpd デーモンを制御します。
 @z
 
 @x ftpasswd
-          <para>is a Perl script designed to create and manage
-          AuthUserFiles and AuthGroupFiles of the correct format for proftpd.</para>
+            is a Perl script designed to create and manage
+            AuthUserFiles and AuthGroupFiles of the correct format for proftpd.
 @y
-          <para>
-          AuthUserFiles と AuthGroupFiles に対する正しい書式を生成し制御するための Perl スクリプト。
-          </para>
+            AuthUserFiles と AuthGroupFiles に対する正しい書式を生成し制御するための Perl スクリプト。
 @z
 
 @x ftpmail
-          <para>is a Perl script for sending email based on the proftpd TransferLog.
-          </para>
+            is a Perl script for sending email based on the proftpd TransferLog.
 @y
-          <para>
           proftpd の TransferLog に基づいて電子メール送信を行うための Perl スクリプト。
-          </para>
+@z
+
+@x ftpquota
+            is a Perl script designed to create and manage limits and tally
+            files for the mod_quotatab + mod_quotatab_file module combination
+            for proftpd.
+@y
+            is a Perl script designed to create and manage limits and tally
+            files for the mod_quotatab + mod_quotatab_file module combination
+            for proftpd.
+@z
+
+@x ftpscrub
+            provides a way to scrub the scoreboard file on demand.
+@y
+            provides a way to scrub the scoreboard file on demand.
+@z
+
+@x ftpshut
+            shuts down all <application>proftpd</application> servers
+            at a given time.
+@y
+            shuts down all <application>proftpd</application> servers
+            at a given time.
+@z
+
+@x ftptop
+            displays running status on connections.
+@y
+            displays running status on connections.
+@z
+
+@x ftpwho
+            shows current process information for each session.
+@y
+            shows current process information for each session.
+@z
+
+@x prxs
+            is a Perl script designed to compile and install third-party
+            modules, from source code, as DSO modules for the installed
+            proftpd.
+@y
+            is a Perl script designed to compile and install third-party
+            modules, from source code, as DSO modules for the installed
+            proftpd.
 @z

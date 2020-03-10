@@ -28,14 +28,12 @@
 @z
 
 @x
-    <para><application>PostgreSQL</application> is an advanced
-    object-relational database management system (ORDBMS), derived
-    from the Berkeley Postgres database management system.</para>
+      <application>PostgreSQL</application> is an advanced
+      object-relational database management system (ORDBMS), derived
+      from the Berkeley Postgres database management system.
 @y
-    <para>
-    <application>PostgreSQL</application> は先進的なオブジェクトリレーショナルデータベース管理システム (object-relational database management system; ORDBMS) です。
-    これは Berkeley Postgres データベース管理システムからの派生です。
-    </para>
+      <application>PostgreSQL</application> は先進的なオブジェクトリレーショナルデータベース管理システム (object-relational database management system; ORDBMS) です。
+      これは Berkeley Postgres データベース管理システムからの派生です。
 @z
 
 @x
@@ -45,39 +43,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&postgresql-download-http;"/></para>
+          Download (HTTP): <ulink url="&postgresql-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&postgresql-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&postgresql-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&postgresql-download-ftp;"/></para>
+          Download (FTP): <ulink url="&postgresql-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&postgresql-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&postgresql-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &postgresql-md5sum;</para>
+          Download MD5 sum: &postgresql-md5sum;
 @y
-        <para>&Download; MD5 sum: &postgresql-md5sum;</para>
+          &Download; MD5 sum: &postgresql-md5sum;
 @z
 
 @x
-        <para>Download size: &postgresql-size;</para>
+          Download size: &postgresql-size;
 @y
-        <para>&DownloadSize;: &postgresql-size;</para>
+          &DownloadSize;: &postgresql-size;
 @z
 
 @x
-        <para>Estimated disk space required: &postgresql-buildsize;</para>
+          Estimated disk space required: &postgresql-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &postgresql-buildsize;</para>
+          &Estimateddiskspacerequired;: &postgresql-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &postgresql-time;</para>
+          Estimated build time: &postgresql-time;
 @y
-        <para>&Estimatedbuildtime;: &postgresql-time;</para>
+          &Estimatedbuildtime;: &postgresql-time;
 @z
 
 @x
@@ -147,88 +145,107 @@
 @z
 
 @x
-    <para>Install <application>PostgreSQL</application> with the
-    following commands: </para>
+      For enhanced security, it is better to have a dedicated group and user
+      for running the PostgreSQL server. First, issue as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <application>PostgreSQL</application> をビルドします。
-    </para>
+      For enhanced security, it is better to have a dedicated group and user
+      for running the PostgreSQL server. First, issue as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>There are a number of programs in the
-    <filename class="directory">contrib/</filename> directory. If you are going
-    to run this installation as a server and wish to build some of them, enter
-    <command>make -C contrib</command> or
-    <command>make -C contrib/<replaceable>&lt;SUBDIR-NAME&gt;</replaceable></command> for each subdirectory.
-    </para>
+        There are several configuration items that add additional
+        functionality with optional packages to
+        <application>PostgreSQL</application>.  Use <command>./configure
+        --help</command> to see a list.
 @y
-    <para>There are a number of programs in the
-    <filename class="directory">contrib/</filename> directory. If you are going
-    to run this installation as a server and wish to build some of them, enter
-    <command>make -C contrib</command> or
-    <command>make -C contrib/<replaceable>&lt;SUBDIR-NAME&gt;</replaceable></command> for each subdirectory.
-    </para>
+        There are several configuration items that add additional
+        functionality with optional packages to
+        <application>PostgreSQL</application>.  Use <command>./configure
+        --help</command> to see a list.
 @z
 
 @x
-    <para>Tests must be run as an unprivileged user because they need to start a
-    temporary server and this is prevented as the root user. For the same reason,
-    you need to stop all PostgreSQL servers if any are running. If a previous
-    version of PostgreSQL is installed, it may be necessary to use
-    <command>--disable-rpath</command> with <command>configure</command> to
-    avoid failures, but <emphasis>installing the binaries created using this
-    switch is not recommended</emphasis>. To test the results, issue:
-    <command>make check</command>.</para>
+      Install <application>PostgreSQL</application> with the
+      following commands:
 @y
-    <para>Tests must be run as an unprivileged user because they need to start a
-    temporary server and this is prevented as the root user. For the same reason,
-    you need to stop all PostgreSQL servers if any are running. If a previous
-    version of PostgreSQL is installed, it may be necessary to use
-    <command>--disable-rpath</command> with <command>configure</command> to
-    avoid failures, but <emphasis>installing the binaries created using this
-    switch is not recommended</emphasis>. To test the results, issue:
-    <command>make check</command>.</para>
+      以下のコマンドを実行して <application>PostgreSQL</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      There are a number of programs in the
+      <filename class="directory">contrib/</filename> directory. If you are
+      going to run this installation as a server and wish to build some of
+      them, enter <command>make -C contrib</command> or <command>make -C
+      contrib/<replaceable>&lt;SUBDIR-NAME&gt;</replaceable></command> for
+      each subdirectory.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      There are a number of programs in the
+      <filename class="directory">contrib/</filename> directory. If you are
+      going to run this installation as a server and wish to build some of
+      them, enter <command>make -C contrib</command> or <command>make -C
+      contrib/<replaceable>&lt;SUBDIR-NAME&gt;</replaceable></command> for
+      each subdirectory.
 @z
 
 @x
-      <para>If you are upgrading an existing system and are going to install
-      the new files over the old ones, then you should back up your data, shut
-      down the old server and follow the instructions in <ulink
-      url="http://www.postgresql.org/docs/9.0/static/install-upgrading.html">the
-      official <application>PostgreSQL</application> documentation</ulink>.</para>
+      Tests must be run as an unprivileged user because they need to start a
+      temporary server and this is prevented as the root user. For the same
+      reason, you need to stop all PostgreSQL servers if any are running. If a
+      previous version of PostgreSQL is installed, it may be necessary to use
+      <command>--disable-rpath</command> with <command>configure</command> to
+      avoid failures, but <emphasis>installing the binaries created using this
+      switch is not recommended</emphasis>. To test the results, issue:
+      <command>make check</command>.
 @y
-      <para>
-      インストール済のシステムをアップグレードする際に、既存ファイルへ新たなファイルを上書きしようとしている場合には、データのバックアップを取っておく必要があります。
-      さらに古いサーバーをシャットダウンし <ulink
-      url="http://www.postgresql.org/docs/9.0/static/install-upgrading.html">the
-      official <application>PostgreSQL</application> documentation</ulink> に示される手順に従ってください。
-      </para>
+      Tests must be run as an unprivileged user because they need to start a
+      temporary server and this is prevented as the root user. For the same
+      reason, you need to stop all PostgreSQL servers if any are running. If a
+      previous version of PostgreSQL is installed, it may be necessary to use
+      <command>--disable-rpath</command> with <command>configure</command> to
+      avoid failures, but <emphasis>installing the binaries created using this
+      switch is not recommended</emphasis>. To test the results, issue:
+      <command>make check</command>.
 @z
 
 @x
-    <para>Initialize a database cluster with the following commands issued by the
-    <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してデータベースクラスターを初期化します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>Now, initialize the database as the <systemitem
-    class="username">root</systemitem> user:</para>
+      If you made any of the <filename class="directory">contrib/</filename>
+      programs, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>Now, initialize the database as the <systemitem
-    class="username">root</systemitem> user:</para>
+      If you made any of the <filename class="directory">contrib/</filename>
+      programs, as the <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+        If you only intend to use <application>PostgreSQL</application> as a
+        client to connect to a server on another machine, your installation is
+        complete and you should not run the remaining commands.
+@y
+        If you only intend to use <application>PostgreSQL</application> as a
+        client to connect to a server on another machine, your installation is
+        complete and you should not run the remaining commands.
+@z
+
+@x
+      Initialize a database cluster with the following commands issued by the
+      <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーとなり、以下のコマンドを実行してデータベースクラスターを初期化します。
+@z
+
+@x
+      Now, initialize the database as the <systemitem
+      class="username">root</systemitem> user:
+@y
+      Now, initialize the database as the <systemitem
+      class="username">root</systemitem> user:
 @z
 
 @x
@@ -238,56 +255,59 @@
 @z
 
 @x
-    <para><parameter>--docdir=/usr/share/doc/postgresql-&postgresql-version;</parameter>:
-    This switch puts the documentation in a versioned directory.</para>
+      <command>sed -i ...</command>: This sed changes server socket location
+      from <filename class="directory">/tmp</filename> to
+      <filename class="directory">/run/postgresql</filename><!-- and fix up the
+      regression tests to use <filename class="directory">/tmp</filename> so
+      that they can work reliably-->.
 @y
-    <para><parameter>--docdir=/usr/share/doc/postgresql-&postgresql-version;</parameter>:
-    本スイッチは、ドキュメントをバージョン番号つきディレクトリにインストールします。
-    </para>
+      <command>sed -i ...</command>: This sed changes server socket location
+      from <filename class="directory">/tmp</filename> to
+      <filename class="directory">/run/postgresql</filename><!-- and fix up the
+      regression tests to use <filename class="directory">/tmp</filename> so
+      that they can work reliably-->.
 @z
 
 @x
-    <para><parameter>--enable-thread-safety</parameter>: This switch makes the
-    client libraries thread-safe by allowing concurrent threads in
-    <filename class="libraryfile">libpq</filename> and ECPG programs to safely
-    control their private connection handles.</para>
+      <parameter>--enable-thread-safety</parameter>: This switch makes the
+      client libraries thread-safe by allowing concurrent threads in
+      <filename class="libraryfile">libpq</filename> and ECPG programs to
+      safely control their private connection handles.
 @y
-    <para><parameter>--enable-thread-safety</parameter>: This switch makes the
-    client libraries thread-safe by allowing concurrent threads in
-    <filename class="libraryfile">libpq</filename> and ECPG programs to safely
-    control their private connection handles.</para>
+      <parameter>--enable-thread-safety</parameter>: This switch makes the
+      client libraries thread-safe by allowing concurrent threads in
+      <filename class="libraryfile">libpq</filename> and ECPG programs to
+      safely control their private connection handles.
 @z
 
 @x
-    <para><option>--with-openssl</option>: builds the package  with support for
-    <application>OpenSSL</application> encrypted connections.</para>
+      <option>--with-openssl</option>: builds the package  with support for
+      <application>OpenSSL</application> encrypted connections.
 @y
-    <para><option>--with-openssl</option>: builds the package  with support for
-    <application>OpenSSL</application> encrypted connections.</para>
+      <option>--with-openssl</option>: builds the package  with support for
+      <application>OpenSSL</application> encrypted connections.
 @z
 
 @x
-    <para><option>--with-perl</option>: builds the PL/Perl server-side language.
-    </para>
+      <option>--with-perl</option>: builds the PL/Perl server-side language.
 @y
-    <para><option>--with-perl</option>: builds the PL/Perl server-side language.
-    </para>
+      <option>--with-perl</option>: builds the PL/Perl server-side language.
 @z
 
 @x
-    <para><option>--with-python</option>: builds the PL/Python server-side
-    language. Add PYTHON=/usr/bin/python2 for Python2 support, otherwise
-    Python3 is used by default.</para>
+      <option>--with-python</option>: builds the PL/Python server-side
+      language. Add PYTHON=/usr/bin/python2 for Python2 support, otherwise
+      Python3 is used by default.
 @y
-    <para><option>--with-python</option>: builds the PL/Python server-side
-    language. Add PYTHON=/usr/bin/python2 for Python2 support, otherwise
-    Python3 is used by default.</para>
+      <option>--with-python</option>: builds the PL/Python server-side
+      language. Add PYTHON=/usr/bin/python2 for Python2 support, otherwise
+      Python3 is used by default.
 @z
 
 @x
-    <para><option>--with-tcl</option>: builds the PL/Tcl server-side language.</para>
+      <option>--with-tcl</option>: builds the PL/Tcl server-side language.
 @y
-    <para><option>--with-tcl</option>: builds the PL/Tcl server-side language.</para>
+      <option>--with-tcl</option>: builds the PL/Tcl server-side language.
 @z
 
 @x
@@ -303,33 +323,33 @@
 @z
 
 @x
-      <para><filename>$PGDATA/pg_ident.con</filename>,
-      <filename>$PGDATA/pg_hba.conf</filename> and
-      <filename>$PGDATA/postgresql.conf</filename></para>
+        <filename>$PGDATA/pg_ident.con</filename>,
+        <filename>$PGDATA/pg_hba.conf</filename>, and
+        <filename>$PGDATA/postgresql.conf</filename>
 @y
-      <para><filename>$PGDATA/pg_ident.con</filename>,
-      <filename>$PGDATA/pg_hba.conf</filename> and
-      <filename>$PGDATA/postgresql.conf</filename></para>
+        <filename>$PGDATA/pg_ident.con</filename>,
+        <filename>$PGDATA/pg_hba.conf</filename>, and
+        <filename>$PGDATA/postgresql.conf</filename>
 @z
 
 @x
-      <para>The <envar>PGDATA</envar> environment variable is used to
-      distinguish database clusters from one another by setting it to
-      the value of the directory which contains the cluster desired.
-      The three configuration files exist in every <filename
-      class="directory">PGDATA/</filename> directory. Details on the
-      format of the files and the options that can be set in each can
-      be found in <ulink
-      url="file:///usr/share/doc/postgresql-&postgresql-version;/html/index.html"/>.</para>
+        The <envar>PGDATA</envar> environment variable is used to
+        distinguish database clusters from one another by setting it to
+        the value of the directory which contains the cluster desired.
+        The three configuration files exist in every <filename
+        class="directory">PGDATA/</filename> directory. Details on the
+        format of the files and the options that can be set in each can
+        be found in <filename>
+        /usr/share/doc/postgresql-&postgresql-version;/html/index.html</filename>.
 @y
-      <para>The <envar>PGDATA</envar> environment variable is used to
-      distinguish database clusters from one another by setting it to
-      the value of the directory which contains the cluster desired.
-      The three configuration files exist in every <filename
-      class="directory">PGDATA/</filename> directory. Details on the
-      format of the files and the options that can be set in each can
-      be found in <ulink
-      url="file:///usr/share/doc/postgresql-&postgresql-version;/html/index.html"/>.</para>
+        The <envar>PGDATA</envar> environment variable is used to
+        distinguish database clusters from one another by setting it to
+        the value of the directory which contains the cluster desired.
+        The three configuration files exist in every <filename
+        class="directory">PGDATA/</filename> directory. Details on the
+        format of the files and the options that can be set in each can
+        be found in <filename>
+        /usr/share/doc/postgresql-&postgresql-version;/html/index.html</filename>.
 @z
 
 @x
@@ -341,21 +361,19 @@
 @z
 
 @x
-      <para>Install the
-      <phrase revision="sysv"><filename>/etc/rc.d/init.d/postgresql</filename>
-      init script</phrase>
-      <phrase revision="systemd"><filename>postgresql.service</filename>
-      unit</phrase> included in the
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> package.</para>
+        Install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/postgresql</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>postgresql.service</filename>
+        unit</phrase> included in the
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> package:
 @y
-      <para>
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる
-      <phrase revision="sysv">初期化スクリプト <filename>/etc/rc.d/init.d/postgresql</filename></phrase>
-      <phrase revision="systemd">ユニット <filename>postgresql.service</filename></phrase>
-      をインストールします。
-      </para>
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる
+        <phrase revision="sysv">初期化スクリプト <filename>/etc/rc.d/init.d/postgresql</filename></phrase>
+        <phrase revision="systemd">ユニット <filename>postgresql.service</filename></phrase>
+        をインストールします。
 @z
 
 @x
@@ -431,229 +449,299 @@
 @z
 
 @x clusterdb
-          <para>is a utility for reclustering tables in a
-          <application>PostgreSQL</application> database.</para>
+            is a utility for reclustering tables in a
+            <application>PostgreSQL</application> database.
 @y
-          <para>is a utility for reclustering tables in a
-          <application>PostgreSQL</application> database.</para>
+            is a utility for reclustering tables in a
+            <application>PostgreSQL</application> database.
 @z
 
 @x createdb
-          <para> creates a new <application>PostgreSQL</application>
-          database.</para>
+            creates a new <application>PostgreSQL</application>
+            database.
 @y
-          <para> creates a new <application>PostgreSQL</application>
-          database.</para>
-@z
-
-@x createlang
-          <para>defines a new <application>PostgreSQL</application> procedural
-          language.</para>
-@y
-          <para>defines a new <application>PostgreSQL</application> procedural
-          language.</para>
+            creates a new <application>PostgreSQL</application>
+            database.
 @z
 
 @x createuser
-          <para>defines a new <application>PostgreSQL</application>
-          user account.</para>
+            defines a new <application>PostgreSQL</application>
+            user account.
 @y
-          <para>defines a new <application>PostgreSQL</application>
-          user account.</para>
+            defines a new <application>PostgreSQL</application>
+            user account.
 @z
 
 @x dropdb
-          <para>removes a <application>PostgreSQL</application> database.</para>
+            removes a <application>PostgreSQL</application> database.
 @y
-          <para>removes a <application>PostgreSQL</application> database.</para>
-@z
-
-@x droplang
-          <para>removes a <application>PostgreSQL</application> procedural
-          language.</para>
-@y
-          <para>removes a <application>PostgreSQL</application> procedural
-          language.</para>
+            removes a <application>PostgreSQL</application> database.
 @z
 
 @x dropuser
-          <para>removes a <application>PostgreSQL</application>
-          user account.</para>
+            removes a <application>PostgreSQL</application> user account.
 @y
-          <para>removes a <application>PostgreSQL</application>
-          user account.</para>
+            removes a <application>PostgreSQL</application> user account.
 @z
 
 @x ecpg
-          <para>is the embedded SQL preprocessor.</para>
+            is the embedded SQL preprocessor.
 @y
-          <para>is the embedded SQL preprocessor.</para>
+            is the embedded SQL preprocessor.
 @z
 
 @x initdb
-          <para>creates a new database cluster.</para>
+            creates a new database cluster.
 @y
-          <para>creates a new database cluster.</para>
+            creates a new database cluster.
+@z
+
+@x oid2name
+            resolves OIDs (Object IDs) and file nodes in a PostgreSQL data
+            directory.
+@y
+            resolves OIDs (Object IDs) and file nodes in a PostgreSQL data
+            directory.
+@z
+
+@x pg_archivecleanup
+            cleans up PostgreSQL WAL (write-ahead log) archive files.
+@y
+            cleans up PostgreSQL WAL (write-ahead log) archive files.
 @z
 
 @x pg_basebackup
-          <para>takes base backups of a running
-          <application>PostgreSQL</application> cluster.</para>
+            takes base backups of a running
+            <application>PostgreSQL</application> cluster.
 @y
-          <para>takes base backups of a running
-          <application>PostgreSQL</application> cluster.</para>
+            takes base backups of a running
+            <application>PostgreSQL</application> cluster.
 @z
 
 @x pg_config
-          <para>retrieves <application>PostgreSQL</application> version
-          information.</para>
+            retrieves <application>PostgreSQL</application> version
+            information.
 @y
-          <para>retrieves <application>PostgreSQL</application> version
-          information.</para>
+            retrieves <application>PostgreSQL</application> version
+            information.
 @z
 
 @x pg_controldata
-          <para>returns information initialized during
-          <command>initdb</command>, such as the catalog version and server
-          locale.</para>
+            returns information initialized during <command>initdb</command>,
+            such as the catalog version and server locale.
 @y
-          <para>returns information initialized during
-          <command>initdb</command>, such as the catalog version and server
-          locale.</para>
+            returns information initialized during <command>initdb</command>,
+            such as the catalog version and server locale.
 @z
 
 @x pg_ctl
-          <para>controls stopping and starting the database server.</para>
+            controls stopping and starting the database server.
 @y
-          <para>controls stopping and starting the database server.</para>
+            controls stopping and starting the database server.
 @z
 
 @x pg_dump
-          <para>dumps database data and metadata into scripts which are used
-          to recreate the database.</para>
+            dumps database data and metadata into scripts which are used
+            to recreate the database.
 @y
-          <para>dumps database data and metadata into scripts which are used
-          to recreate the database.</para>
+            dumps database data and metadata into scripts which are used
+            to recreate the database.
 @z
 
 @x pg_dumpall
-          <para>recursively calls <command>pg_dump</command> for each
-          database in a cluster.</para>
+            recursively calls <command>pg_dump</command> for each
+            database in a cluster.
 @y
-          <para>recursively calls <command>pg_dump</command> for each
-          database in a cluster.</para>
+            recursively calls <command>pg_dump</command> for each
+            database in a cluster.
+@z
+
+@x pg_isready
+            checks the connection status of a PostgreSQL server.
+@y
+            checks the connection status of a PostgreSQL server.
+@z
+
+@x pg_receivewal
+            is used to stream write-ahead logs from a PostgreSQL server.
+@y
+            is used to stream write-ahead logs from a PostgreSQL server.
+@z
+
+@x pg_recvlogical
+            controls PostgreSQL logical decoding streams.
+@y
+            controls PostgreSQL logical decoding streams.
+@z
+
+@x pg_resetwal
+            resets the write-ahead log and other control information
+            of a PostgreSQL database cluster.
+@y
+            resets the write-ahead log and other control information
+            of a PostgreSQL database cluster.
 @z
 
 @x pg_restore
-          <para>creates databases from dump files created by
-          <command>pg_dump</command>.</para>
+            creates databases from dump files created by
+            <command>pg_dump</command>.
 @y
-          <para>creates databases from dump files created by
-          <command>pg_dump</command>.</para>
+            creates databases from dump files created by
+            <command>pg_dump</command>.
+@z
+
+@x pg_rewind
+            synchronizes a PostgreSQL data directory with another data
+            directory that was forked from the first one.
+@y
+            synchronizes a PostgreSQL data directory with another data
+            directory that was forked from the first one.
+@z
+
+@x pg_standby
+            supports the creation of a PostgreSQL warm standby server.
+@y
+            supports the creation of a PostgreSQL warm standby server.
+@z
+
+@x pg_test_fsync
+            determines fastest wal_sync method for PostgreSQL.
+@y
+            determines fastest wal_sync method for PostgreSQL.
+@z
+
+@x pg_test_timing
+            measures timing overhead.
+@y
+            measures timing overhead.
+@z
+
+@x pg_upgrade
+            upgrades a PostgreSQL server instance.
+@y
+            upgrades a PostgreSQL server instance.
+@z
+
+@x pg_waldump
+            displays a human-readable rendering of the write-ahead log of a
+            PostgreSQL database cluster.
+@y
+            displays a human-readable rendering of the write-ahead log of a
+            PostgreSQL database cluster.
+@z
+
+@x pgbench
+            runs a benchmark test on PostgreSQL.
+@y
+            runs a benchmark test on PostgreSQL.
 @z
 
 @x pltcl_delmod
-          <para>is a support script used to delete a module from a
-          PL/<application>Tcl</application> table. The command
-          requires the <ulink
-          url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
-          package to be installed also.</para>
+            is a support script used to delete a module from a
+            PL/<application>Tcl</application> table. The command
+            requires the <ulink
+            url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
+            package to be installed also.
 @y
-          <para>is a support script used to delete a module from a
-          PL/<application>Tcl</application> table. The command
-          requires the <ulink
-          url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
-          package to be installed also.</para>
+            is a support script used to delete a module from a
+            PL/<application>Tcl</application> table. The command
+            requires the <ulink
+            url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
+            package to be installed also.
 @z
 
 @x pltcl_listmod
-          <para>is a support script used to list the modules in a
-          PL/<application>Tcl</application> table. The command
-          requires the <ulink
-          url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
-          package to be installed also.</para>
+            is a support script used to list the modules in a
+            PL/<application>Tcl</application> table. The command
+            requires the <ulink
+            url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            package to be installed also.
 @y
-          <para>is a support script used to list the modules in a
-          PL/<application>Tcl</application> table. The command
-          requires the <ulink
-          url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
-          package to be installed also.</para>
+            is a support script used to list the modules in a
+            PL/<application>Tcl</application> table. The command
+            requires the <ulink
+            url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            package to be installed also.
 @z
 
 @x pltcl_loadmod
-          <para>is a support script used to load a module into a
-          PL/<application>Tcl</application> table. The command
-          requires the <ulink
-          url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
-          package to be installed also.</para>
+            is a support script used to load a module into a
+            PL/<application>Tcl</application> table. The command
+            requires the <ulink
+            url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            package to be installed also.
 @y
-          <para>is a support script used to load a module into a
-          PL/<application>Tcl</application> table. The command
-          requires the <ulink
-          url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
-          package to be installed also.</para>
+            is a support script used to load a module into a
+            PL/<application>Tcl</application> table. The command
+            requires the <ulink
+            url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            package to be installed also.
 @z
 
 @x postgres
-          <para>is the PostgreSQL database server.</para>
+            is the PostgreSQL database server.
 @y
-          <para>is the PostgreSQL database server.</para>
+            is the PostgreSQL database server.
 @z
 
 @x postmaster
-          <para>(deprecated, a symlink to <command>postgres</command>) is a
-          multi-user database daemon.</para>
+            (deprecated, a symlink to <command>postgres</command>) is a
+            multi-user database daemon.
 @y
-          <para>(deprecated, a symlink to <command>postgres</command>) is a
-          multi-user database daemon.</para>
+            (deprecated, a symlink to <command>postgres</command>) is a
+            multi-user database daemon.
 @z
 
 @x psql
-          <para>is a console based database shell.</para>
+            is a console based database shell.
 @y
-          <para>is a console based database shell.</para>
+            is a console based database shell.
 @z
 
 @x reindexdb
-          <para>is a utility for rebuilding indexes in a database.</para>
+            is a utility for rebuilding indexes in a database.
 @y
-          <para>is a utility for rebuilding indexes in a database.</para>
+            is a utility for rebuilding indexes in a database.
 @z
 
 @x vacuumdb
-          <para>compacts databases and generates statistics for the query
-          analyzer.</para>
+            compacts databases and generates statistics for the query analyzer.
 @y
-          <para>compacts databases and generates statistics for the query
-          analyzer.</para>
+            compacts databases and generates statistics for the query analyzer.
+@z
+
+@x vacuumlo
+            removes orphaned large objects from a PostgreSQL database.
+@y
+            removes orphaned large objects from a PostgreSQL database.
 @z
 
 @x libecpg.{so,a}
-          <para>contains functions to support embedded SQL in C programs.</para>
+            contains functions to support embedded SQL in C programs.
 @y
-          <para>contains functions to support embedded SQL in C programs.</para>
+            contains functions to support embedded SQL in C programs.
 @z
 
 @x libecpg_compat.{so,a}
-          <para>is the ecpg compatibility library.</para>
+            is the ecpg compatibility library.
 @y
-          <para>is the ecpg compatibility library.</para>
+            is the ecpg compatibility library.
 @z
 
 @x libgport.a
-          <para>is the port-specific subsystem of the Postgres backend.</para>
+            is the port-specific subsystem of the Postgres backend.
 @y
-          <para>is the port-specific subsystem of the Postgres backend.</para>
+            is the port-specific subsystem of the Postgres backend.
 @z
 
 @x libpgtypes.{so,a}
-          <para>contains functions for dealing with Postgres data types.</para>
+            contains functions for dealing with Postgres data types.
 @y
-          <para>contains functions for dealing with Postgres data types.</para>
+            contains functions for dealing with Postgres data types.
 @z
 
 @x libpq.{so,a}
-          <para>is the C programmer's API to Postgres.</para>
+            is the C programmer's API to Postgres.
 @y
-          <para>is the C programmer's API to Postgres.</para>
+            is the C programmer's API to Postgres.
 @z
