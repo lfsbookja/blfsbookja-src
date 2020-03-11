@@ -117,12 +117,10 @@
 @z
 
 @x
-    <para>If you have the optional <application>Sphinx</application> package
-    installed, buid the documentation with:</para>
+      If you have the optional <application>Sphinx</application> package
+      installed, buid the documentation with:
 @y
-    <para>
-    任意のパッケージ <application>Sphinx</application> をインストールしている場合は、以下によりドキュメントを生成します。
-    </para>
+      任意のパッケージ <application>Sphinx</application> をインストールしている場合は、以下によりドキュメントを生成します。
 @z
 
 @x
@@ -138,11 +136,11 @@
 @z
 
 @x
-    <para>If you built the documentation, install it (as root) with:</para>
+      If you built the documentation, install it (as <systemitem
+      class="username">root</systemitem>) with:
 @y
-    <para>
-    ドキュメントを生成していた場合は (root になって) インストールします。
-    </para>
+    ドキュメントを生成していた場合は (<systemitem
+      class="username">root</systemitem> になって) インストールします。
 @z
 
 @x

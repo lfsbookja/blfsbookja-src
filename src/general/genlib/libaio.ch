@@ -98,11 +98,9 @@
 @z
 
 @x
-    <para>First, disable the installation of the static library:</para>
+      First, disable the installation of the static library:
 @y
-    <para>
-    スタティックライブラリはインストールしないようにしておきます。
-    </para>
+      スタティックライブラリはインストールしないようにしておきます。
 @z
 
 @x

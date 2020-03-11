@@ -28,13 +28,11 @@
 @z
 
 @x
-    <para>libunistring is a library that provides functions for manipulating
-    Unicode strings and for manipulating C strings according to the Unicode
-    standard.</para>
+      <application>libunistring</application> is a library that provides
+      functions for manipulating Unicode strings and for manipulating C
+      strings according to the Unicode standard.
 @y
-    <para>
-    libunistring は、ユニコード文字列およびユニコード標準に従った C 文字列を操作するための関数を提供するライブラリです。
-    </para>
+      <application>libunistring</application> は、ユニコード文字列およびユニコード標準に従った C 文字列を操作するための関数を提供するライブラリです。
 @z
 
 @x
@@ -44,39 +42,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libunistring-download-http;"/></para>
+          Download (HTTP): <ulink url="&libunistring-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libunistring-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libunistring-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libunistring-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libunistring-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libunistring-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libunistring-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libunistring-md5sum;</para>
+          Download MD5 sum: &libunistring-md5sum;
 @y
-        <para>&Download; MD5 sum: &libunistring-md5sum;</para>
+          &Download; MD5 sum: &libunistring-md5sum;
 @z
 
 @x
-        <para>Download size: &libunistring-size;</para>
+          Download size: &libunistring-size;
 @y
-        <para>&DownloadSize;: &libunistring-size;</para>
+          &DownloadSize;: &libunistring-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libunistring-buildsize;</para>
+          Estimated disk space required: &libunistring-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libunistring-buildsize;</para>
+          &Estimateddiskspacerequired;: &libunistring-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libunistring-time;</para>
+          Estimated build time: &libunistring-time;
 @y
-        <para>&Estimatedbuildtime;: &libunistring-time;</para>
+          &Estimatedbuildtime;: &libunistring-time;
 @z
 
 @x
@@ -97,10 +95,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libunistring"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libunistring"/></para>
 @z
 
 @x
@@ -110,28 +106,22 @@
 @z
 
 @x
-    <para>Install <application>libunistring</application> by running the following
-    commands:</para>
+      Install <application>libunistring</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libunistring</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libunistring</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -179,7 +169,7 @@
 @z
 
 @x libunistring.{a,so}
-          <para>provides the unicode string library API.</para>
+            provides the unicode string library API.
 @y
-          <para>ユニコード文字列 API ライブラリを提供します。</para>
+            ユニコード文字列 API ライブラリを提供します。
 @z

@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libical-buildsize     "24 MB (with tests)">
+  <!ENTITY libical-buildsize     "21 MB (with tests)">
   <!ENTITY libical-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libical-buildsize     "24 MB (テスト込み)">
+  <!ENTITY libical-buildsize     "21 MB (テスト込み)">
   <!ENTITY libical-time          "0.2 SBU (parallelism=4 利用時; テスト込み)">
 @z
 

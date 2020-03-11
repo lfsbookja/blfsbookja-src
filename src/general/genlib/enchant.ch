@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>enchant</application> package provide a generic
-    interface into various existing spell checking libraries.</para>
+      The <application>enchant</application> package provide a generic
+      interface into various existing spell checking libraries.
 @y
-    <para>
-    <application>enchant</application> パッケージは、スペルチェックを行うさまざまなライブラリへの汎用的なインターフェースを提供します。
-    </para>
+      <application>enchant</application> パッケージは、スペルチェックを行うさまざまなライブラリへの汎用的なインターフェースを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&enchant-download-http;"/></para>
+          Download (HTTP): <ulink url="&enchant-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&enchant-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&enchant-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&enchant-download-ftp;"/></para>
+          Download (FTP): <ulink url="&enchant-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&enchant-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&enchant-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &enchant-md5sum;</para>
+          Download MD5 sum: &enchant-md5sum;
 @y
-        <para>&Download; MD5 sum: &enchant-md5sum;</para>
+          &Download; MD5 sum: &enchant-md5sum;
 @z
 
 @x
-        <para>Download size: &enchant-size;</para>
+          Download size: &enchant-size;
 @y
-        <para>&DownloadSize;: &enchant-size;</para>
+          &DownloadSize;: &enchant-size;
 @z
 
 @x
-        <para>Estimated disk space required: &enchant-buildsize;</para>
+          Estimated disk space required: &enchant-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &enchant-buildsize;</para>
+          &Estimateddiskspacerequired;: &enchant-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &enchant-time;</para>
+          Estimated build time: &enchant-time;
 @y
-        <para>&Estimatedbuildtime;: &enchant-time;</para>
+          &Estimatedbuildtime;: &enchant-time;
 @z
 
 @x
@@ -127,38 +125,44 @@
 @z
 
 @x
-    <para>Install <application>enchant</application> by running the following
-    commands:</para>
+      Install <application>enchant</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>enchant</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>enchant</application> をビルドします。
 @z
 
 @x
-    <para>To run tests, unittest-cpp must be installed and the 
-    --enable-relocatable option passed to configure above.  If these
-    conditions are present, the tests may be run with <command>make 
-    check</command>.</para>
+      To run tests, unittest-cpp must be installed and the 
+      <option>--enable-relocatable</option> option passed to configure above.
+      If these conditions are present, the tests may be run with <command>make 
+      check</command>.
 @y
-    <para>To run tests, unittest-cpp must be installed and the 
-    --enable-relocatable option passed to configure above.  If these
-    conditions are present, the tests may be run with <command>make 
-    check</command>.</para>
+      To run tests, unittest-cpp must be installed and the 
+      <option>--enable-relocatable</option> option passed to configure above.
+      If these conditions are present, the tests may be run with <command>make 
+      check</command>.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>rm -rf /usr/include/enchant</command>; 
+      <command>ln -sfn ...</command>: Create symlinks for this package
+      version so that other other packages can find it using the old name.
+@y
+      <command>rm -rf /usr/include/enchant</command>; 
+      <command>ln -sfn ...</command>: Create symlinks for this package
+      version so that other other packages can find it using the old name.
 @z
 
 @x
@@ -169,12 +173,16 @@
 
 @x
       <title>Config Files</title>
-      <para><filename>~/.enchant</filename> and
-      <filename>/usr/share/enchant/enchant.ordering</filename></para>
 @y
       <title>&ConfigFiles;</title>
-      <para><filename>~/.enchant</filename>,
-      <filename>/usr/share/enchant/enchant.ordering</filename></para>
+@z
+
+@x
+        <filename>~/.enchant</filename> and
+        <filename>/usr/share/enchant/enchant.ordering</filename>
+@y
+        <filename>~/.enchant</filename>,
+        <filename>/usr/share/enchant/enchant.ordering</filename>
 @z
 
 @x
@@ -248,25 +256,19 @@
 @z
 
 @x enchant
-          <para>is a spellchecker</para>
+            is a spellchecker
 @y
-          <para>
-          スペルチェッカー。
-          </para>
+            スペルチェッカー。
 @z
 
 @x enchant-lsmod
-          <para>lists available backends, languages, and dictionaries.</para>
+            lists available backends, languages, and dictionaries.
 @y
-          <para>
-          利用可能なバックエンドライブラリ、対象言語、辞書の一覧を表示します。
-          </para>
+            利用可能なバックエンドライブラリ、対象言語、辞書の一覧を表示します。
 @z
 
-@x libenchant.{so,a}
-          <para>contains spell checking interface API functions.</para>
+@x libenchant.so
+            contains spell checking interface API functions.
 @y
-          <para>
-          スペルチェックを行う API インターフェース関数を提供します。
-          </para>
+            スペルチェックを行う API インターフェース関数を提供します。
 @z

@@ -28,12 +28,10 @@
 @z
 
 @x
-    <para><application>Exempi</application> is an implementation of XMP (Adobe's
-    Extensible Metadata Platform).</para>
+      <application>Exempi</application> is an implementation of XMP (Adobe's
+      Extensible Metadata Platform).
 @y
-    <para>
-    <application>Exempi</application> は XMP (Adobe の Extensible Metadata Platform) を実装するものです。
-    </para>
+      <application>Exempi</application> は XMP (Adobe の Extensible Metadata Platform) を実装するものです。
 @z
 
 @x
@@ -43,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&exempi-download-http;"/></para>
+          Download (HTTP): <ulink url="&exempi-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&exempi-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&exempi-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&exempi-download-ftp;"/></para>
+          Download (FTP): <ulink url="&exempi-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&exempi-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&exempi-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &exempi-md5sum;</para>
+          Download MD5 sum: &exempi-md5sum;
 @y
-        <para>&Download; MD5 sum: &exempi-md5sum;</para>
+          &Download; MD5 sum: &exempi-md5sum;
 @z
 
 @x
-        <para>Download size: &exempi-size;</para>
+          Download size: &exempi-size;
 @y
-        <para>&DownloadSize;: &exempi-size;</para>
+          &DownloadSize;: &exempi-size;
 @z
 
 @x
-        <para>Estimated disk space required: &exempi-buildsize;</para>
+          Estimated disk space required: &exempi-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &exempi-buildsize;</para>
+          &Estimateddiskspacerequired;: &exempi-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &exempi-time;</para>
+          Estimated build time: &exempi-time;
 @y
-        <para>&Estimatedbuildtime;: &exempi-time;</para>
+          &Estimatedbuildtime;: &exempi-time;
 @z
 
 @x
@@ -121,33 +119,35 @@
 @z
 
 @x
-    <para>Install <application>Exempi</application> by running the following
-    commands:</para>
+      If you intend to run the regression tests, first remove a test 
+      that depends on an apparently proprietary Adobe SDK:
 @y
-    <para>
-    以下のコマンドを実行して <application>Exempi</application> をビルドします。
-    </para>
+      If you intend to run the regression tests, first remove a test 
+      that depends on an apparently proprietary Adobe SDK:
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.<!--
-    Valgrind is installed, mosts tests will indicate a failure, but
-    that is a test problem and not a package problem.--></para>
+      Install <application>Exempi</application> by running the following
+      commands:
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    <!--
-    Valgrind をインストールしている場合、多くのテストが失敗しますが、これはテストの問題であってパッケージの問題ではありません。
-    -->
-    </para>
+      以下のコマンドを実行して <application>Exempi</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      To test the results, issue: <command>make check</command>.<!--
+      If valgrind is installed, mosts tests will indicate a failure, but
+      that is a test problem and not a package problem.-->
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      <!--
+      Valgrind をインストールしている場合、多くのテストが失敗しますが、これはテストの問題であってパッケージの問題ではありません。
+      -->
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -189,17 +189,13 @@
 @z
 
 @x exempi
-          <para>is a command line tool to manipulate XMP metadata.</para>
+            is a command line tool to manipulate XMP metadata.
 @y
-          <para>
-          XMP メタデータを処理するコマンドラインツール。
-          </para>
+            XMP メタデータを処理するコマンドラインツール。
 @z
 
 @x libexempi.so
-          <para>is a library used to parse XMP metadata.</para>
+            is a library used to parse XMP metadata.
 @y
-          <para>
-          XMP メタデータの解析に用いるライブラリ。
-          </para>
+            XMP メタデータの解析に用いるライブラリ。
 @z

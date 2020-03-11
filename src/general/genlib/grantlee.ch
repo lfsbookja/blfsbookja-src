@@ -40,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&grantlee-download-http;"/></para>
+          Download (HTTP): <ulink url="&grantlee-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&grantlee-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&grantlee-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&grantlee-download-ftp;"/></para>
+          Download (FTP): <ulink url="&grantlee-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&grantlee-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&grantlee-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &grantlee-md5sum;</para>
+          Download MD5 sum: &grantlee-md5sum;
 @y
-        <para>&Download; MD5 sum: &grantlee-md5sum;</para>
+          &Download; MD5 sum: &grantlee-md5sum;
 @z
 
 @x
-        <para>Download size: &grantlee-size;</para>
+          Download size: &grantlee-size;
 @y
-        <para>&DownloadSize;: &grantlee-size;</para>
+          &DownloadSize;: &grantlee-size;
 @z
 
 @x
-        <para>Estimated disk space required: &grantlee-buildsize;</para>
+          Estimated disk space required: &grantlee-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &grantlee-buildsize;</para>
+          &Estimateddiskspacerequired;: &grantlee-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &grantlee-time;</para>
+          Estimated build time: &grantlee-time;
 @y
-        <para>&Estimatedbuildtime;: &grantlee-time;</para>
+          &Estimatedbuildtime;: &grantlee-time;
 @z
 
 @x
@@ -106,12 +106,10 @@
 @z
 
 @x
-    <para>Install <application>Grantlee</application> by
-    running the following commands:</para>
+      Install <application>Grantlee</application> by
+      running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Grantlee</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Grantlee</application> をビルドします。
 @z
 
 @x
@@ -121,11 +119,9 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

@@ -121,18 +121,16 @@
 @z
 
 @x
-      <para>If you are upgrading JS60 from a previously installed old version,
-      save all work and exit your GNOME Session if you have one running.
-      Replacing the JS60 binary will cause the GNOME Shell to crash and return
-      you to your display manager or TTY. After installing the new version,
-      reinstall <xref linkend="gjs"/>. Polkit is unaffected.</para>
+        If you are upgrading JS60 from a previously installed old version,
+        save all work and exit your GNOME Session if you have one running.
+        Replacing the JS60 binary will cause the GNOME Shell to crash and return
+        you to your display manager or TTY. After installing the new version,
+        reinstall <xref linkend="gjs"/>. Polkit is unaffected.
 @y
-      <para>
-      旧バージョンがインストールされている状態から JS60 へのアップグレードを行う場合は、作業中のものはすべて保存し、GNOME セッションを起動しているなら終了させてください。
-      JS60 の実行モジュールへの切り替えを行うと GNOME シェルがクラッシュして、ディスプレイマネージャーや TTY に戻されることになります。
-      新たなバージョンのインストールを終えたら <xref linkend="gjs"/> を再インストールしてください。
-      なお Polkit に影響は及びません。
-      </para>
+        旧バージョンがインストールされている状態から JS60 へのアップグレードを行う場合は、作業中のものはすべて保存し、GNOME セッションを起動しているなら終了させてください。
+        JS60 の実行モジュールへの切り替えを行うと GNOME シェルがクラッシュして、ディスプレイマネージャーや TTY に戻されることになります。
+        新たなバージョンのインストールを終えたら <xref linkend="gjs"/> を再インストールしてください。
+        なお Polkit に影響は及びません。
 @z
 
 @x

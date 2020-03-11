@@ -20,16 +20,14 @@
 @z
 
 @x
-    <para><application>Qca</application> aims to provide a straightforward 
-    and cross-platform crypto API, using <application>Qt</application> datatypes 
-    and conventions. <application>Qca</application> separates the API from 
-    the implementation, using plugins known as Providers.</para>
+      <application>Qca</application> aims to provide a straightforward and
+      cross-platform crypto API, using <application>Qt</application> datatypes
+      and conventions. <application>Qca</application> separates the API from
+      the implementation, using plugins known as Providers.
 @y
-    <para>
-    <application>QCA</application> は、クロスプラットフォーム対応の分かりやすい暗号化 API を提供します。
-    これは <application>Qt</application> のデータタイプとその手法を採用しています。
-    <application>QCA</application> は、Providers と呼ばれるプラグインを用いて、実装と API の分離を図っています。
-    </para>
+      <application>QCA</application> は、クロスプラットフォーム対応の分かりやすい暗号化 API を提供します。
+      これは <application>Qt</application> のデータタイプとその手法を採用しています。
+      <application>QCA</application> は、Providers と呼ばれるプラグインを用いて、実装と API の分離を図っています。
 @z
 
 @x
@@ -39,39 +37,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&qca-download-http;"/></para>
+          Download (HTTP): <ulink url="&qca-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&qca-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&qca-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&qca-download-ftp;"/></para>
+          Download (FTP): <ulink url="&qca-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&qca-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&qca-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &qca-md5sum;</para>
+          Download MD5 sum: &qca-md5sum;
 @y
-        <para>&Download; MD5 sum: &qca-md5sum;</para>
+          &Download; MD5 sum: &qca-md5sum;
 @z
 
 @x
-        <para>Download size: &qca-size;</para>
+          Download size: &qca-size;
 @y
-        <para>&DownloadSize;: &qca-size;</para>
+          &DownloadSize;: &qca-size;
 @z
 
 @x
-        <para>Estimated disk space required: &qca-buildsize;</para>
+          Estimated disk space required: &qca-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &qca-buildsize;</para>
+          &Estimateddiskspacerequired;: &qca-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &qca-time;</para>
+          Estimated build time: &qca-time;
 @y
-        <para>&Estimatedbuildtime;: &qca-time;</para>
+          &Estimatedbuildtime;: &qca-time;
 @z
 
 @x
@@ -111,32 +109,32 @@
 @z
 
 @x
-    <para>Install <application>Qca</application> by running the following
-    commands:</para>
+      Fix the location of the CA certificates:
 @y
-    <para>
-    以下のコマンドを実行して <application>Qca</application> をビルドします。
-    </para>
+      Fix the location of the CA certificates:
 @z
 
 @x
-    <para>To test the results, issue <command>make test</command>. One test
-    using <xref linkend="gnupg2"/> fails without a correct passphrase.  The
-    required passphrase does not seem to be published.</para>
+      Install <application>Qca</application> by running the following
+      commands:
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make test</command> を実行します。
-    <xref linkend="gnupg2"/> を利用するテスト 1 つが、適正なパスフレーズが得られないため失敗します。
-    ここに必要となるパスフレーズは公開されていないようです。
-    </para>
+      以下のコマンドを実行して <application>Qca</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      To test the results, issue <command>make test</command>. One test
+      using <xref linkend="gnupg2"/> fails without a correct passphrase.  The
+      required passphrase does not seem to be published.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      <xref linkend="gnupg2"/> を利用するテスト 1 つが、適正なパスフレーズが得られないため失敗します。
+      ここに必要となるパスフレーズは公開されていないようです。
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -146,19 +144,19 @@
 @z
 
 @x
-    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
-    used to apply a higher level of compiler optimizations.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+      used to apply a higher level of compiler optimizations.
 @y
-    <para><parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
-    used to apply a higher level of compiler optimizations.</para>
+      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+      used to apply a higher level of compiler optimizations.
 @z
 
 @x
-    <para><parameter>-DQCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>: 
-    Install the qca man page in the normal location.</para>
+      <parameter>-DQCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>:
+      Install the qca man page in the normal location.
 @y
-    <para><parameter>-DQCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>: 
-    Install the qca man page in the normal location.</para>
+      <parameter>-DQCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>:
+      Install the qca man page in the normal location.
 @z
 
 @x
@@ -220,24 +218,23 @@
 @z
 
 @x mozcerts
-          <para>is a command line tool for converting certdata.txt into
-          outfile.pem files.</para>
+            is a command line tool for converting certdata.txt into
+            outfile.pem files.
 @y
-          <para>is a command line tool for converting certdata.txt into
-          outfile.pem files.</para>
+            is a command line tool for converting certdata.txt into
+            outfile.pem files.
 @z
 
-@x qcatool
-          <para>is a command line tool for performing various cryptographic
-          operations with Qca.</para>
+@x qcatool-qt5
+            is a command line tool for performing various cryptographic
+            operations with Qca.
 @y
-          <para>
-          Qca による種々の暗号化処理を実現するコマンドラインツール。
-          </para>
+            is a command line tool for performing various cryptographic
+            operations with Qca.
 @z
 
 @x libqca.so
-          <para>is the Qt Cryptography Architecture (Qca) library.</para>
+            is the Qt Cryptography Architecture (Qca) library.
 @y
-          <para>Qt 暗号アーキテクチャー (Qt Cryptography Architecture; Qca) ライブラリ。</para>
+            Qt 暗号アーキテクチャー (Qt Cryptography Architecture; Qca) ライブラリ。
 @z

@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>CLucene</application> is a C++ version of Lucene, a
-    high performance text search engine.</para>
+      <application>CLucene</application> is a C++ version of Lucene, a
+      high performance text search engine.
 @y
-    <para>
-    <application>CLucene</application> は、高性能なテキスト検索エンジンである Lucene の C++ 版です。
-    </para>
+      <application>CLucene</application> は、高性能なテキスト検索エンジンである Lucene の C++ 版です。
 @z
 
 @x
@@ -35,33 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&clucene-download-http;"/></para>
+          Download (HTTP): <ulink url="&clucene-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&clucene-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&clucene-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&clucene-download-ftp;"/></para>
+          Download (FTP): <ulink url="&clucene-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&clucene-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&clucene-download-ftp;"/>
 @z
 
 @x
-        <para>Download size: &clucene-size;</para>
+          Download MD5 sum: &clucene-md5sum;
 @y
-        <para>&DownloadSize;: &clucene-size;</para>
+          &Download; MD5 sum: &clucene-md5sum;
 @z
 
 @x
-        <para>Estimated disk space required: &clucene-buildsize;</para>
+          Download size: &clucene-size;
 @y
-        <para>&Estimateddiskspacerequired;: &clucene-buildsize;</para>
+          &DownloadSize;: &clucene-size;
 @z
 
 @x
-        <para>Estimated build time: &clucene-time;</para>
+          Estimated disk space required: &clucene-buildsize;
 @y
-        <para>&Estimatedbuildtime;: &clucene-time;</para>
+          &Estimateddiskspacerequired;: &clucene-buildsize;
+@z
+
+@x
+          Estimated build time: &clucene-time;
+@y
+          &Estimatedbuildtime;: &clucene-time;
 @z
 
 @x
@@ -71,9 +75,9 @@
 @z
 
 @x
-        <para>Required patch: <ulink
+          Required patch: <ulink
 @y
-        <para>必須のパッチ: <ulink
+          必須のパッチ: <ulink
 @z
 
 @x
@@ -119,20 +123,16 @@
 @z
 
 @x
-    <para>Install <application>CLucene</application> by running the following
-    commands:</para>
+      Install <application>CLucene</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>CLucene</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>CLucene</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

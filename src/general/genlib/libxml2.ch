@@ -154,11 +154,9 @@
 @z
 
 @x
-    <para>If you downloaded the testsuite, issue the following command:</para>
+      If you downloaded the testsuite, issue the following command:
 @y
-    <para>
-    テストスイート用のファイルをダウンロードしている場合は以下を実行します。
-    </para>
+      テストスイート用のファイルをダウンロードしている場合は以下を実行します。
 @z
 
 @x

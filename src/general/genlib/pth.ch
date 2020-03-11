@@ -20,19 +20,21 @@
 @z
 
 @x
-    <para>The <application>Pth</application> package contains a very portable
-    POSIX/ANSI-C based library for Unix platforms which provides non-preemptive
-    priority-based scheduling for multiple threads of execution (multithreading)
-    inside event-driven applications. All threads run in the same address space
-    of the server application, but each thread has its own individual
-    program-counter, run-time stack, signal mask and errno variable. </para>
+      The <application>Pth</application> package contains a very portable
+      POSIX/ANSI-C based library for Unix platforms which provides
+      non-preemptive priority-based scheduling for multiple threads of
+      execution (multithreading) inside event-driven applications. All
+      threads run in the same address space of the server application, but
+      each thread has its own individual program-counter, run-time stack,
+      signal mask and errno variable.
 @y
-    <para>The <application>Pth</application> package contains a very portable
-    POSIX/ANSI-C based library for Unix platforms which provides non-preemptive
-    priority-based scheduling for multiple threads of execution (multithreading)
-    inside event-driven applications. All threads run in the same address space
-    of the server application, but each thread has its own individual
-    program-counter, run-time stack, signal mask and errno variable. </para>
+      The <application>Pth</application> package contains a very portable
+      POSIX/ANSI-C based library for Unix platforms which provides
+      non-preemptive priority-based scheduling for multiple threads of
+      execution (multithreading) inside event-driven applications. All
+      threads run in the same address space of the server application, but
+      each thread has its own individual program-counter, run-time stack,
+      signal mask and errno variable.
 @z
 
 @x
@@ -42,47 +44,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&pth-download-http;"/></para>
+          Download (HTTP): <ulink url="&pth-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&pth-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&pth-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&pth-download-ftp;"/></para>
+          Download (FTP): <ulink url="&pth-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&pth-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&pth-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &pth-md5sum;</para>
+          Download MD5 sum: &pth-md5sum;
 @y
-        <para>&Download; MD5 sum: &pth-md5sum;</para>
+          &Download; MD5 sum: &pth-md5sum;
 @z
 
 @x
-        <para>Download size: &pth-size;</para>
+          Download size: &pth-size;
 @y
-        <para>&DownloadSize;: &pth-size;</para>
+          &Download; size: &pth-size;
 @z
 
 @x
-        <para>Estimated disk space required: &pth-buildsize;</para>
+          Estimated disk space required: &pth-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &pth-buildsize;</para>
+          &Estimateddiskspacerequired;: &pth-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &pth-time;</para>
+          Estimated build time: &pth-time;
 @y
-        <para>&Estimatedbuildtime;: &pth-time;</para>
+          &Estimatedbuildtime;: &pth-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/pth"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/pth"/></para>
 @z
 
 @x
@@ -92,41 +92,35 @@
 @z
 
 @x
-      <para>Don't add the <option>--enable-pthread</option> parameter to the
-      <command>configure</command> command below else you will overwrite the
-      pthread library and interface header installed by the
-      <application>Glibc</application> package in LFS.</para>
+        Don't add the <option>--enable-pthread</option> parameter to the
+        <command>configure</command> command below else you will overwrite the
+        pthread library and interface header installed by the
+        <application>Glibc</application> package in LFS.
 @y
-      <para>Don't add the <option>--enable-pthread</option> parameter to the
-      <command>configure</command> command below else you will overwrite the
-      pthread library and interface header installed by the
-      <application>Glibc</application> package in LFS.</para>
+        Don't add the <option>--enable-pthread</option> parameter to the
+        <command>configure</command> command below else you will overwrite the
+        pthread library and interface header installed by the
+        <application>Glibc</application> package in LFS.
 @z
 
 @x
-    <para>Install <application>Pth</application> by running the
-    following commands:</para>
+      Install <application>Pth</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Pth</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Pth</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>.</para>
+      To test the results, issue: <command>make test</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make test</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -136,27 +130,29 @@
 @z
 
 @x
-    <para><command>sed -i 's#$(LOBJS) ...</command>: This <command>sed</command>
-    fixes a race condition in the <filename>Makefile</filename>. It allows you
-    to run <command>make</command> with multiple jobs (e.g., <command>make -j4</command>)
-    <!-- how ironic that a package for using multiple threads has this bug in
-    its Makefile -->.</para>
+      <command>sed -i 's#$(LOBJS) ...</command>: This <command>sed</command>
+      fixes a race condition in the <filename>Makefile</filename>. It allows
+      running <command>make</command> with multiple jobs (e.g., <command>make
+      -j4</command>).
+      <!-- how ironic that a package for using multiple threads has this bug in
+      its Makefile -->
 @y
-    <para><command>sed -i 's#$(LOBJS) ...</command>: This <command>sed</command>
-    fixes a race condition in the <filename>Makefile</filename>. It allows you
-    to run <command>make</command> with multiple jobs (e.g., <command>make -j4</command>)
-    <!-- how ironic that a package for using multiple threads has this bug in
-    its Makefile -->.</para>
+      <command>sed -i 's#$(LOBJS) ...</command>: This <command>sed</command>
+      fixes a race condition in the <filename>Makefile</filename>. It allows
+      running <command>make</command> with multiple jobs (e.g., <command>make
+      -j4</command>).
+      <!-- how ironic that a package for using multiple threads has this bug in
+      its Makefile -->
 @z
 
 @x
-    <para><parameter>--mandir=/usr/share/man</parameter>: This switch puts the
-    man pages in <filename class="directory">/usr/share/man</filename> instead
-    of <filename class="directory">/usr/man</filename>.</para>
+      <parameter>--mandir=/usr/share/man</parameter>: This switch puts the
+      man pages in <filename class="directory">/usr/share/man</filename> instead
+      of <filename class="directory">/usr/man</filename>.
 @y
-    <para><parameter>--mandir=/usr/share/man</parameter>: This switch puts the
-    man pages in <filename class="directory">/usr/share/man</filename> instead
-    of <filename class="directory">/usr/man</filename>.</para>
+      <parameter>--mandir=/usr/share/man</parameter>: This switch puts the
+      man pages in <filename class="directory">/usr/share/man</filename> instead
+      of <filename class="directory">/usr/man</filename>.
 @z
 
 @x
@@ -192,22 +188,20 @@
 @z
 
 @x pth-config
-          <para>is a utility used to configure and build applications based on
-          the pth(3) library. It can be used to query the C compiler and
-          linker flags which are required to correctly compile and link the
-          application against the pth(3) library.</para>
+            is a utility used to configure and build applications based on
+            the pth(3) library. It can be used to query the C compiler and
+            linker flags which are required to correctly compile and link the
+            application against the pth(3) library.
 @y
-          <para>is a utility used to configure and build applications based on
-          the pth(3) library. It can be used to query the C compiler and
-          linker flags which are required to correctly compile and link the
-          application against the pth(3) library.</para>
+            is a utility used to configure and build applications based on
+            the pth(3) library. It can be used to query the C compiler and
+            linker flags which are required to correctly compile and link the
+            application against the pth(3) library.
 @z
 
 @x libpth.so
-          <para>contains the API functions used by the GNU Portable Threads
-          Library.</para>
+            contains the API functions used by the GNU Portable Threads
+            Library.
 @y
-          <para>
-          GNU ポータブルスレッドライブラリ (GNU Portable Threads Library) にて用いられる API 関数を提供します。
-          </para>
+            GNU ポータブルスレッドライブラリ (GNU Portable Threads Library) にて用いられる API 関数を提供します。
 @z

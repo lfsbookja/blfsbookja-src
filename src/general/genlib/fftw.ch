@@ -94,24 +94,62 @@
 @z
 
 @x
-      Install <application>fftw</application> by running the following commands:
+        We build fftw three times for different libraries in different
+        numerical precisions: the default double precision floating point, the
+        older 32-bit (single precision) version named float which sacrifices
+        precision for speed, and the long double which offers increased
+        precision at the cost of slower execution.
 @y
+        We build fftw three times for different libraries in different
+        numerical precisions: the default double precision floating point, the
+        older 32-bit (single precision) version named float which sacrifices
+        precision for speed, and the long double which offers increased
+        precision at the cost of slower execution.
+@z
+
+@x
+      The first build is for double precision arithmetic.  Install
+      <application>fftw</application> by running the following commands:
+@y
+      1 回めのビルドは倍精度演算向けです。
       以下のコマンドを実行して <application>fftw</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.
-    On 32-bit systems, the tests can take substantially longer than
-    they would on 64-bit machines.</para>
+      To test the results, issue: <command>make check</command>.
+      On 32-bit systems, the tests can take substantially longer than
+      they would on 64-bit machines.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    32 ビットシステムにおけるテストは、64 ビットシステムに比べて処理時間が多くかかります。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      32 ビットシステムにおけるテストは、64 ビットシステムに比べて処理時間が多くかかります。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      Now build single precision:
+@y
+      次に単精度演算向けをビルドします。
+@z
+
+@x
+      As the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      Finally, build long double precision:
+@y
+      最後に倍精度演算向けをビルドします。
+@z
+
+@x
+      As the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z

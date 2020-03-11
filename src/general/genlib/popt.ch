@@ -26,13 +26,11 @@
 @z
 
 @x
-    <para>The <application>popt</application> package contains the
-    <application>popt</application> libraries which are used by
-    some programs to parse command-line options.</para>
+      The <application>popt</application> package contains the
+      <application>popt</application> libraries which are used by
+      some programs to parse command-line options.
 @y
-    <para>
-    <application>popt</application> パッケージは <application>popt</application> ライブラリを提供するもので、コマンドラインオプションを処理するプログラムが利用します。
-    </para>
+      <application>popt</application> パッケージは <application>popt</application> ライブラリを提供するもので、コマンドラインオプションを処理するプログラムが利用します。
 @z
 
 @x
@@ -42,47 +40,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&popt-download-http;"/></para>
+          Download (HTTP): <ulink url="&popt-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&popt-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&popt-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&popt-download-ftp;"/></para>
+          Download (FTP): <ulink url="&popt-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&popt-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&popt-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &popt-md5sum;</para>
+          Download MD5 sum: &popt-md5sum;
 @y
-        <para>&Download; MD5 sum: &popt-md5sum;</para>
+          &Download; MD5 sum: &popt-md5sum;
 @z
 
 @x
-        <para>Download size: &popt-size;</para>
+          Download size: &popt-size;
 @y
-        <para>&DownloadSize;: &popt-size;</para>
+          &DownloadSize;: &popt-size;
 @z
 
 @x
-        <para>Estimated disk space required: &popt-buildsize;</para>
+          Estimated disk space required: &popt-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &popt-buildsize;</para>
+          &Estimateddiskspacerequired;: &popt-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &popt-time;</para>
+          Estimated build time: &popt-time;
 @y
-        <para>&Estimatedbuildtime;: &popt-time;</para>
+          &Estimatedbuildtime;: &popt-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/popt"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/popt"/></para>
 @z
 
 @x
@@ -92,48 +88,38 @@
 @z
 
 @x
-    <para>Install <application>popt</application> by running the following
-    commands:</para>
+      Install <application>popt</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>popt</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>popt</application> をビルドします。
 @z
 
 @x
-    <para>If you have <xref linkend="doxygen"/> installed and wish to build
-    the API documentation, issue:</para>
+      If you have <xref linkend="doxygen"/> installed and wish to build
+      the API documentation, issue:
 @y
-    <para>
-    <xref linkend="doxygen"/> をインストール済であって API ドキュメントをビルドする場合は以下を実行します。
-    </para>
+      <xref linkend="doxygen"/> をインストール済であって API ドキュメントをビルドする場合は以下を実行します。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    コンパイル結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      コンパイル結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行します。
 @z
 
 @x
-    <para>If you built the API documentation, install it using the following
-    commands issued by the <systemitem class="username">root</systemitem>
-    user:</para>
+      If you built the API documentation, install it using the following
+      commands issued by the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    API ドキュメントをビルドした場合は <systemitem
-    class="username">root</systemitem> ユーザーになって以下を実行しドキュメントをインストールします。
-    </para>
+      API ドキュメントをビルドした場合は <systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行しドキュメントをインストールします。
 @z
 
 @x
@@ -175,9 +161,7 @@
 @z
 
 @x libpopt
-        <para> is used to parse command-line options.</para>
+          is used to parse command-line options.
 @y
-        <para>
-        コマンドラインオプションを処理するために利用します。
-        </para>
+          コマンドラインオプションを処理するために利用します。
 @z

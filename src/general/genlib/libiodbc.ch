@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>libiodbc</application> is an API to ODBC compatible
-    databases.</para>
+      <application>libiodbc</application> is an API to ODBC compatible
+      databases.
 @y
-    <para>
-    <application>libiodbc</application> ODBC 互換データベースに対する API を提供します。
-    </para>
+      <application>libiodbc</application> ODBC 互換データベースに対する API を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libiodbc-download-http;"/></para>
+          Download (HTTP): <ulink url="&libiodbc-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libiodbc-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libiodbc-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libiodbc-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libiodbc-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libiodbc-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libiodbc-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libiodbc-md5sum;</para>
+          Download MD5 sum: &libiodbc-md5sum;
 @y
-        <para>&Download; MD5 sum: &libiodbc-md5sum;</para>
+          &Download; MD5 sum: &libiodbc-md5sum;
 @z
 
 @x
-        <para>Download size: &libiodbc-size;</para>
+          Download size: &libiodbc-size;
 @y
-        <para>&DownloadSize;: &libiodbc-size;</para>
+          &DownloadSize;: &libiodbc-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libiodbc-buildsize;</para>
+          Estimated disk space required: &libiodbc-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libiodbc-buildsize;</para>
+          &Estimateddiskspacerequired;: &libiodbc-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libiodbc-time;</para>
+          Estimated build time: &libiodbc-time;
 @y
-        <para>&Estimatedbuildtime;: &libiodbc-time;</para>
+          &Estimatedbuildtime;: &libiodbc-time;
 @z
 
 @x
@@ -79,12 +77,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-    <xref linkend="gtk2"/> (to create the GUI admin tool)
+      <xref linkend="gtk2"/> (to create the GUI admin tool)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-    <xref linkend="gtk2"/> (管理ツールを生成するために必要)
+      <xref linkend="gtk2"/> (管理ツールを生成するために必要)
     </para>
 @z
 
@@ -128,8 +126,9 @@
 @z
 
 @x
-      <parameter>--with-iodbc-inidir=/etc/iodbc</parameter>: <application>libiodbc</application>
-      will install configuration files in this directory.
+      <parameter>--with-iodbc-inidir=/etc/iodbc</parameter>:
+      <application>libiodbc</application> will install configuration files
+      in this directory.
 @y
       <parameter>--with-iodbc-inidir=/etc/iodbc</parameter>:
       <application>libiodbc</application> は設定ファイルをこのディレクトリにインストールします。
@@ -190,25 +189,19 @@
 @z
 
 @x iodbc-config
-          <para>is a utility for retrieving the installation options of libiodbc.</para>
+            is a utility for retrieving the installation options of libiodbc.
 @y
-          <para>
-          libiodbc のインストールオプションを検出するためのユーティリティ。
-          </para>
+            libiodbc のインストールオプションを検出するためのユーティリティ。
 @z
 
 @x iodbctest{,w}
-          <para>are interactive SQL processors.</para>
+            are interactive SQL processors.
 @y
-          <para>
-          対話的な SQL プロセッサー。
-          </para>
+            対話的な SQL プロセッサー。
 @z
 
 @x iodbcadm
-          <para>is a graphical administration utility.</para>
+            is a graphical administration utility.
 @y
-          <para>
-          グラフィカルな管理ユーティリティ。
-          </para>
+            グラフィカルな管理ユーティリティ。
 @z

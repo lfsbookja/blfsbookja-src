@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>This package contains tools for reading information from an MS Word
-    document.</para>
+      The <application>wv</application> package contains tools for reading
+      information from an MS Word document.
 @y
-    <para>
-    このパッケージは MS Word の文書ファイルから情報を読み取るためのツールを提供します。
-    </para>
+      <application>wv</application> パッケージは MS Word の文書ファイルから情報を読み取るためのツールを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&wv-download-http;"/></para>
+          Download (HTTP): <ulink url="&wv-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&wv-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&wv-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&wv-download-ftp;"/></para>
+          Download (FTP): <ulink url="&wv-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&wv-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&wv-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &wv-md5sum;</para>
+          Download MD5 sum: &wv-md5sum;
 @y
-        <para>&Download; MD5 sum: &wv-md5sum;</para>
+          &Download; MD5 sum: &wv-md5sum;
 @z
 
 @x
-        <para>Download size: &wv-size;</para>
+          Download size: &wv-size;
 @y
-        <para>&DownloadSize;: &wv-size;</para>
+          &DownloadSize;: &wv-size;
 @z
 
 @x
-        <para>Estimated disk space required: &wv-buildsize;</para>
+          Estimated disk space required: &wv-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &wv-buildsize;</para>
+          &Estimateddiskspacerequired;: &wv-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &wv-time;</para>
+          Estimated build time: &wv-time;
 @y
-        <para>&Estimatedbuildtime;: &wv-time;</para>
+          &Estimatedbuildtime;: &wv-time;
 @z
 
 @x
@@ -117,28 +115,21 @@
 @z
 
 @x
-    <para>Install <application>wv</application> by running the following
-    commands:</para>
+      Install <application>wv</application> by running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>wv</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>wv</application> をビルドします。
 @z
 
 @x
-    <para>This package does not have a testsuite.</para>
+      This package does not have a testsuite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -184,17 +175,13 @@
 @z
 
 @x wvSummary
-          <para>displays the summary information from an MS Word document.</para>
+            displays the summary information from an MS Word document.
 @y
-          <para>
-          MS Word 文書ファイルからの情報を要約して出力します。
-          </para>
+            MS Word 文書ファイルからの情報を要約して出力します。
 @z
 
-@x libwv-1.2.{so,a}
-          <para>provides functions to access MS Word documents.</para>
+@x libwv-1.2.so
+            provides functions to access MS Word documents.
 @y
-          <para>
-          MS Word 文書ファイルにアクセスするための関数を提供します。
-          </para>
+            MS Word 文書ファイルにアクセスするための関数を提供します。
 @z

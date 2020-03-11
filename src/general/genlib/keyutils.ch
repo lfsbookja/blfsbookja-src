@@ -28,15 +28,13 @@
 @z
 
 @x
-    <para>Keyutils is a set of utilities for managing the key retention
-    facility in the kernel, which can be used by filesystems, block devices and
-    more to gain and retain the authorization and encryption keys required to
-    perform secure operations.</para>
+      <application>Keyutils</application> is a set of utilities for managing
+      the key retention facility in the kernel, which can be used by
+      filesystems, block devices and more to gain and retain the authorization
+      and encryption keys required to perform secure operations.
 @y
-    <para>
     Keyutils は、カーネルにおける鍵保存機能 (key retention facility) を管理するユーティリティーです。
     これはファイルシステムやブロックデバイスにおいて利用され、セキュアな処理を実現するために必要な認証鍵や暗号鍵を生成維持するために利用されます。
-    </para>
 @z
 
 @x
@@ -46,39 +44,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&keyutils-download-http;"/></para>
+          Download (HTTP): <ulink url="&keyutils-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&keyutils-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&keyutils-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&keyutils-download-ftp;"/></para>
+          Download (FTP): <ulink url="&keyutils-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&keyutils-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&keyutils-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &keyutils-md5sum;</para>
+          Download MD5 sum: &keyutils-md5sum;
 @y
-        <para>&Download; MD5 sum: &keyutils-md5sum;</para>
+          &Download; MD5 sum: &keyutils-md5sum;
 @z
 
 @x
-        <para>Download size: &keyutils-size;</para>
+          Download size: &keyutils-size;
 @y
-        <para>&DownloadSize;: &keyutils-size;</para>
+          &DownloadSize;: &keyutils-size;
 @z
 
 @x
-        <para>Estimated disk space required: &keyutils-buildsize;</para>
+          Estimated disk space required: &keyutils-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &keyutils-buildsize;</para>
+          &Estimateddiskspacerequired;: &keyutils-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &keyutils-time;</para>
+          Estimated build time: &keyutils-time;
 @y
-        <para>&Estimatedbuildtime;: &keyutils-time;</para>
+          &Estimatedbuildtime;: &keyutils-time;
 @z
 
 @x
@@ -116,40 +114,34 @@
 @z
 
 @x
-    <para>Install <application>keyutils</application> by running the following
-    commands:</para>
+      Install <application>keyutils</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>keyutils</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>keyutils</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue, as the 
-    <systemitem class="username">root</systemitem> user: </para>
+      To test the results, issue, as the 
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    ビルド結果をテストする場合は <systemitem
-    class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      ビルド結果をテストする場合は <systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>Note that several tests will fail if certain uncommon kernel options
-    were not used when the kernel was built.  These include CONFIG_BIG_KEYS,
-    CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.</para>
+      Note that several tests will fail if certain uncommon kernel options
+      were not used when the kernel was built.  These include CONFIG_BIG_KEYS,
+      CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.
 @y
-    <para>Note that several tests will fail if certain uncommon kernel options
-    were not used when the kernel was built.  These include CONFIG_BIG_KEYS,
-    CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.</para>
+      Note that several tests will fail if certain uncommon kernel options
+      were not used when the kernel was built.  These include CONFIG_BIG_KEYS,
+      CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -219,15 +211,36 @@
 @z
 
 @x keyctl
-          <para>is to control the key management facility in various ways
-          using a variety of subcommands.</para>
+            controls the key management facility with a variety of subcommands.
 @y
-          <para>
-          多くのサブコマンドを通じて、さまざまな方法で鍵管理機能を制御します。
-          </para>
+            多くのサブコマンドを通じて鍵管理機能を制御します。
 @z
 
-@x libkeyutils.so.1
+@x key.dns_resolver
+            is invoked by <command>request-key</command> on behalf of the
+            kernel when kernel services (such as NFS, CIFS and AFS) need to
+            perform a hostname lookup and the kernel does not have the key
+            cached.  It is not ordinarily intended to be called directly.
+@y
+            is invoked by <command>request-key</command> on behalf of the
+            kernel when kernel services (such as NFS, CIFS and AFS) need to
+            perform a hostname lookup and the kernel does not have the key
+            cached.  It is not ordinarily intended to be called directly.
+@z
+
+@x request-key
+            is invoked by the kernel when the kernel is asked for a key that it
+            doesn't have immediately available. The kernel creates a temporary
+            key and then calls out to this program to instantiate it.  It is
+            not intended to be called directly.
+@y
+            is invoked by the kernel when the kernel is asked for a key that it
+            doesn't have immediately available. The kernel creates a temporary
+            key and then calls out to this program to instantiate it.  It is
+            not intended to be called directly.
+@z
+
+@x libkeyutils.so
             contains the keyutils library API instantiation.
 @y
             keyuils API ライブラリ。
