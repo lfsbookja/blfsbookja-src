@@ -90,9 +90,10 @@
 @z
 
 @x
-      <para>Install decorator with the following commands:</para>
+        Install <application>decorator</application> with the following
+        commands:
 @y
-      <para>Install decorator with the following commands:</para>
+        以下のコマンドを実行して <application>decorator</application> をビルドします。
 @z
 
 @x
@@ -105,8 +106,7 @@
         To install the decorator package with the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
-        To install the decorator package with the following command as the
-        <systemitem class="username">root</systemitem> user:
+        以下のコマンドを <systemitem class="username">root</systemitem> ユーザーになって実行し decorator パッケージをインストールします。
 @z
 
 @x

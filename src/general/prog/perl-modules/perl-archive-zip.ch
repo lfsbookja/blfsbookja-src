@@ -98,7 +98,7 @@
 @z
 
 @x crc32
-            <para>computes and prints to stdout the CRC-32 values of the given files.</para>
+              computes and prints to stdout the CRC-32 values of the given
 @y
-            <para>computes and prints to stdout the CRC-32 values of the given files.</para>
+              computes and prints to stdout the CRC-32 values of the given
 @z

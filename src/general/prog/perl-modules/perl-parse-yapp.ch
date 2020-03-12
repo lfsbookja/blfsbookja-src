@@ -78,9 +78,9 @@
 @z
 
 @x yapp
-            <para>is a frontend to the Parse::Yapp module, which lets you create
-            a Perl OO parser from an input grammar file.</para>
+              is a frontend to the Parse::Yapp module, which lets you create
+              a Perl OO parser from an input grammar file.
 @y
-            <para>is a frontend to the Parse::Yapp module, which lets you create
-            a Perl OO parser from an input grammar file.</para>
+              is a frontend to the Parse::Yapp module, which lets you create
+              a Perl OO parser from an input grammar file.
 @z

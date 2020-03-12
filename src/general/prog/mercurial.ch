@@ -20,17 +20,17 @@
 @z
 
 @x
-    <para><application>Mercurial</application> is a distributed source control
-    management tool similar to <application>Git</application> and
-    <application>Bazaar</application>. <application>Mercurial</application> is
-    written in <application>Python</application> and is used by projects such as
-    Mozilla and Vim.</para>
+      <application>Mercurial</application> is a distributed source control
+      management tool similar to <application>Git</application> and
+      <application>Bazaar</application>. <application>Mercurial</application>
+      is written in <application>Python</application> and is used by projects
+      such as Mozilla and Vim.
 @y
-    <para><application>Mercurial</application> is a distributed source control
-    management tool similar to <application>Git</application> and
-    <application>Bazaar</application>. <application>Mercurial</application> is
-    written in <application>Python</application> and is used by projects such as
-    Mozilla and Vim.</para>
+      <application>Mercurial</application> is a distributed source control
+      management tool similar to <application>Git</application> and
+      <application>Bazaar</application>. <application>Mercurial</application>
+      is written in <application>Python</application> and is used by projects
+      such as Mozilla and Vim.
 @z
 
 @x
@@ -40,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&mercurial-download-http;"/></para>
+          Download (HTTP): <ulink url="&mercurial-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&mercurial-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&mercurial-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&mercurial-download-ftp;"/></para>
+          Download (FTP): <ulink url="&mercurial-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&mercurial-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&mercurial-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &mercurial-md5sum;</para>
+          Download MD5 sum: &mercurial-md5sum;
 @y
-        <para>&Download; MD5 sum: &mercurial-md5sum;</para>
+          &Download; MD5 sum: &mercurial-md5sum;
 @z
 
 @x
-        <para>Download size: &mercurial-size;</para>
+          Download size: &mercurial-size;
 @y
-        <para>&DownloadSize;: &mercurial-size;</para>
+          &DownloadSize;: &mercurial-size;
 @z
 
 @x
-        <para>Estimated disk space required: &mercurial-buildsize;</para>
+          Estimated disk space required: &mercurial-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &mercurial-buildsize;</para>
+          &Estimateddiskspacerequired;: &mercurial-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &mercurial-time;</para>
+          Estimated build time: &mercurial-time;
 @y
-        <para>&Estimatedbuildtime;: &mercurial-time;</para>
+          &Estimatedbuildtime;: &mercurial-time;
 @z
 
 @x
@@ -123,7 +123,7 @@
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>, and
+    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
     <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
 
     </para>
@@ -142,38 +142,88 @@
 @z
 
 @x
-    <para>Build <application>Mercurial</application> by issuing the following 
-    command:</para>
+      Build <application>Mercurial</application> by issuing the following
+      command:
 @y
-    <para>
-    以下のコマンドを実行して <application>Mercurial</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Mercurial</application> をビルドします。
 @z
 
 @x
-    <para>To build the documentation (requires <xref linkend="docutils"/>), 
-    issue:</para>
+      To build the documentation (requires <xref linkend="docutils"/>), issue:
 @y
-    <para>
-    ドキュメントをビルドする場合 (<xref linkend="docutils"/> が必要)、以下を実行します。
-    </para>
+      ドキュメントをビルドする場合 (<xref linkend="docutils"/> が必要)、以下を実行します。
 @z
 
 @x
-    <para>Install <application>Mercurial</application> by running the following
-    command (as <systemitem class="username">root</systemitem>):</para>
+      To run the test suite, issue:
 @y
-    <para>Install <application>Mercurial</application> by running the following
-    command (as <systemitem class="username">root</systemitem>):</para>
+      ビルド結果をテストする場合は、以下を実行します。
 @z
 
 @x
-    <para>If you built the documentation, install it by running the following
-    command (as <systemitem class="username">root</systemitem>):</para>
+      where <replaceable>&lt;N&gt;</replaceable> is an integer between one
+      and the number of ( processor X threads ), inclusive.  In order to
+      investigate any apparently failing tests, you may use the
+      <command>run-tests.py</command> script. To see the almost forty switches,
+      some of them very useful, issue <command>tests/run-tests.py
+      --help</command>.  Running the following commands, you will execute only
+      the tests that failed before:
 @y
-    <para>
-    ドキュメントをビルドした場合 (<systemitem class="username">root</systemitem> ユーザーになり) 以下のコマンドを実行してドキュメントをインストールします。
-    </para>
+      where <replaceable>&lt;N&gt;</replaceable> is an integer between one
+      and the number of ( processor X threads ), inclusive.  In order to
+      investigate any apparently failing tests, you may use the
+      <command>run-tests.py</command> script. To see the almost forty switches,
+      some of them very useful, issue <command>tests/run-tests.py
+      --help</command>.  Running the following commands, you will execute only
+      the tests that failed before:
+@z
+
+@x
+      Normally, the previous failures will be confirmed. However, if
+      you add the switch <option>--debug</option> before
+      <option>--tmpdir</option>, and run again, some failures are gone, which
+      seems to be a problem with the test suite. If this happens, normally,
+      from now on, there will be no more such failures whether you use the
+      debug switch or not. Three tests, test-alias.t, test-install.t, and
+      test-bundle2-exchange.t (intermittently), are known to fail.
+@y
+      Normally, the previous failures will be confirmed. However, if
+      you add the switch <option>--debug</option> before
+      <option>--tmpdir</option>, and run again, some failures are gone, which
+      seems to be a problem with the test suite. If this happens, normally,
+      from now on, there will be no more such failures whether you use the
+      debug switch or not. Three tests, test-alias.t, test-install.t, and
+      test-bundle2-exchange.t (intermittently), are known to fail.
+@z
+
+@x
+      An interesting switch is <option>--time</option>, which will generate at
+      the end of the test suite execution, a table with all executed tests and
+      respective start, end, user, system and real times. Note that the
+      switches may be used with <command>make check</command> by including
+      them in the <envar>TESTFLAGS</envar> environment variable.
+@y
+      An interesting switch is <option>--time</option>, which will generate at
+      the end of the test suite execution, a table with all executed tests and
+      respective start, end, user, system and real times. Note that the
+      switches may be used with <command>make check</command> by including
+      them in the <envar>TESTFLAGS</envar> environment variable.
+@z
+
+@x
+      Install <application>Mercurial</application> by running the following
+      command (as <systemitem class="username">root</systemitem>):
+@y
+      Install <application>Mercurial</application> by running the following
+      command (as <systemitem class="username">root</systemitem>):
+@z
+
+@x
+      If you built the documentation, install it by running the following
+      command (as <systemitem class="username">root</systemitem>):
+@y
+      ドキュメントをビルドした場合 (<systemitem
+      class="username">root</systemitem> ユーザーになり) 以下のコマンドを実行してドキュメントをインストールします。
 @z
 
 @x
@@ -225,7 +275,7 @@
 @z
 
 @x hg
-          <para>is the mercurial version control system.</para>
+            is the mercurial version control system.
 @y
-          <para>is the mercurial version control system.</para>
+            is the mercurial version control system.
 @z

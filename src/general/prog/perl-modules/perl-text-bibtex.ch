@@ -110,29 +110,29 @@
 @z
 
 @x biblex
-            <para>performs lexical analysis on a BibTeX file.</para>
+              performs lexical analysis on a BibTeX file.
 @y
-            <para>performs lexical analysis on a BibTeX file.</para>
+              performs lexical analysis on a BibTeX file.
 @z
 
 @x bibparse
-            <para>parses a series of BibTeX files with command line options to
-            control the string post-processing behaviour.</para>
+              parses a series of BibTeX files with command line options to
+              control the string post-processing behaviour.
 @y
-            <para>parses a series of BibTeX files with command line options to
-            control the string post-processing behaviour.</para>
+              parses a series of BibTeX files with command line options to
+              control the string post-processing behaviour.
 @z
 
 @x dumpnames
-            <para>parses a BibTeX file, splitting 'author' and 'editor' fields
-            into lists of names, and then dumps everything to stdout.</para>
+              parses a BibTeX file, splitting 'author' and 'editor' fields
+              into lists of names, and then dumps everything to stdout.
 @y
-            <para>parses a BibTeX file, splitting 'author' and 'editor' fields
-            into lists of names, and then dumps everything to stdout.</para>
+              parses a BibTeX file, splitting 'author' and 'editor' fields
+              into lists of names, and then dumps everything to stdout.
 @z
 
 @x libbtparse.so
-            <para>is a library for parsing and processing BibTeX data files.</para>
+              is a library for parsing and processing BibTeX data files.
 @y
-            <para>is a library for parsing and processing BibTeX data files.</para>
+              is a library for parsing and processing BibTeX data files.
 @z

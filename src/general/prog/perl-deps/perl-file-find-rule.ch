@@ -100,7 +100,7 @@
 @z
 
 @x findrule
-            <para>is a command line wrapper to File::Find::Rule.</para>
+              is a command line wrapper to File::Find::Rule.
 @y
-            <para>is a command line wrapper to File::Find::Rule.</para>
+              is a command line wrapper to File::Find::Rule.
 @z

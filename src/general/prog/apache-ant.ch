@@ -20,24 +20,23 @@
 @z
 
 @x
-    <para>The <application>Apache Ant</application> package is a
-    <application>Java</application>-based build tool. In theory, it is 
-    like the <command>make</command> command, but without <command>make</command>'s
-    wrinkles. <application>Ant</application> is different. Instead of a model
-    that is extended with shell-based commands, <application>Ant</application>
-    is extended using <application>Java</application> classes. Instead of
-    writing shell commands, the configuration files are XML-based, calling out
-    a target tree that executes various tasks. Each task is run by an object
-    that implements a particular task interface.</para>
+      The <application>Apache Ant</application> package is a
+      <application>Java</application>-based build tool. In theory, it is
+      like the <command>make</command> command, but without
+      <command>make</command>'s wrinkles. <application>Ant</application> is
+      different. Instead of a model that is extended with shell-based commands,
+      <application>Ant</application> is extended using
+      <application>Java</application> classes. Instead of writing shell
+      commands, the configuration files are XML-based, calling out a target
+      tree that executes various tasks. Each task is run by an object that
+      implements a particular task interface.
 @y
-    <para>
-    <application>Apache Ant</application> パッケージは <application>Java</application> ベースのビルドツールを提供します。
-    理論的には <command>make</command> コマンドに似ています。
-    しかし <command>make</command> のような優れた機能はありません。
-    <application>Ant</application> はシェルベースで拡張される処理方式ではなく <application>Java</application> のクラスを利用します。
-    シェルコマンドを記述するのではなく、XML ベースの設定ファイルを記述することで、さまざまな処理タスクを実現します。
-    このタスクは、指定されたタスクインターフェースを実装するオブジェクトとして実行されます。
-    </para>
+      <application>Apache Ant</application> パッケージは <application>Java</application> ベースのビルドツールを提供します。
+      理論的には <command>make</command> コマンドに似ています。
+      しかし <command>make</command> のような優れた機能はありません。
+      <application>Ant</application> はシェルベースで拡張される処理方式ではなく <application>Java</application> のクラスを利用します。
+      シェルコマンドを記述するのではなく、XML ベースの設定ファイルを記述することで、さまざまな処理タスクを実現します。
+      このタスクは、指定されたタスクインターフェースを実装するオブジェクトとして実行されます。
 @z
 
 @x
@@ -47,39 +46,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&apache-ant-download-http;"/></para>
+          Download (HTTP): <ulink url="&apache-ant-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&apache-ant-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&apache-ant-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&apache-ant-download-ftp;"/></para>
+          Download (FTP): <ulink url="&apache-ant-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&apache-ant-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&apache-ant-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &apache-ant-md5sum;</para>
+          Download MD5 sum: &apache-ant-md5sum;
 @y
-        <para>&Download; MD5 sum: &apache-ant-md5sum;</para>
+          &Download; MD5 sum: &apache-ant-md5sum;
 @z
 
 @x
-        <para>Download size: &apache-ant-size;</para>
+          Download size: &apache-ant-size;
 @y
-        <para>&DownloadSize;: &apache-ant-size;</para>
+          &DownloadSize;: &apache-ant-size;
 @z
 
 @x
-        <para>Estimated disk space required: &apache-ant-buildsize;</para>
+          Estimated disk space required: &apache-ant-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &apache-ant-buildsize;</para>
+          &Estimateddiskspacerequired;: &apache-ant-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &apache-ant-time;</para>
+          Estimated build time: &apache-ant-time;
 @y
-        <para>&Estimatedbuildtime;: &apache-ant-time;</para>
+          &Estimatedbuildtime;: &apache-ant-time;
 @z
 
 @x
@@ -183,13 +182,13 @@
 @z
 
 @x
-      <para><filename>/etc/ant/ant.conf</filename>,
-      <filename>~/.ant/ant.conf</filename>, and
-      <filename>~/.antrc</filename></para>
+        <filename>/etc/ant/ant.conf</filename>,
+        <filename>~/.ant/ant.conf</filename>, and
+        <filename>~/.antrc</filename>
 @y
-      <para><filename>/etc/ant/ant.conf</filename>,
-      <filename>~/.ant/ant.conf</filename>,
-      <filename>~/.antrc</filename></para>
+        <filename>/etc/ant/ant.conf</filename>,
+        <filename>~/.ant/ant.conf</filename>,
+        <filename>~/.antrc</filename>
 @z
 
 @x
@@ -199,16 +198,14 @@
 @z
 
 @x
-      <para>Some packages will require <command>ant</command> to be in the
-      search path and the <envar>ANT_HOME</envar> environment variable
-      defined. Satisfy these requirements by issuing, as the <systemitem
-      class="username">root</systemitem> user:</para>
+        Some packages will require <command>ant</command> to be in the
+        search path and the <envar>ANT_HOME</envar> environment variable
+        defined. Satisfy these requirements by issuing, as the <systemitem
+        class="username">root</systemitem> user:
 @y
-      <para>
-      他のパッケージの中には、<command>ant</command> のインストール場所を、実行パスと環境変数 <envar>ANT_HOME</envar> の定義を参照するものがあります。
-      そこでこの状況への対処を行うため <systemitem
-      class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
+        他のパッケージの中には、<command>ant</command> のインストール場所を、実行パスと環境変数 <envar>ANT_HOME</envar> の定義を参照するものがあります。
+        そこでこの状況への対処を行うため <systemitem
+        class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -252,66 +249,52 @@
 @z
 
 @x ant
-          <para>is a <application>Java</application> based build tool used by
-          many packages instead of the conventional <command>make</command>
-          program.</para>
+            is a <application>Java</application> based build tool used by
+            many packages instead of the conventional <command>make</command>
+            program.
 @y
-          <para>
-          <application>Java</application> ベースのビルドツールであり、各種パッケージの多くが、従来の <command>make</command> でなくこれを利用しています。
-          </para>
+            <application>Java</application> ベースのビルドツールであり、各種パッケージの多くが、従来の <command>make</command> でなくこれを利用しています。
 @z
 
 @x antRun
-          <para>is a support script used to start <command>ant</command>
-          build scripts in a given directory.</para>
+            is a support script used to start <command>ant</command>
+            build scripts in a given directory.
 @y
-          <para>
-          指定されたディレクトリにて、ビルドスクリプト <command>ant</command> を実行するためのサポートスクリプトです。
-          </para>
+            指定されたディレクトリにて、ビルドスクリプト <command>ant</command> を実行するためのサポートスクリプトです。
 @z
 
 @x antRun.pl
-          <para>is a <application>Perl</application> script that provides
-          similar functionality offered by the <command>antRun</command> script.</para>
+            is a <application>Perl</application> script that provides similar
+            functionality offered by the <command>antRun</command> script.
 @y
-          <para>
-          <command>antRun</command> と同等の機能を実現する <application>Perl</application> スクリプトです。
-          </para>
+            <command>antRun</command> と同等の機能を実現する <application>Perl</application> スクリプトです。
 @z
 
 @x complete-ant-cmd.pl
-          <para>is a <application>Perl</application> script that allows
-          <application>Bash</application> to complete an <command>ant</command>
-          command-line.</para>
+            is a <application>Perl</application> script that allows
+            <application>Bash</application> to complete an
+            <command>ant</command> command-line.
 @y
-          <para>
-          <command>ant</command> のコマンドラインを <application>Bash</application> が補完できるようにするための <application>Perl</application> スクリプトです。
-          </para>
+            <command>ant</command> のコマンドラインを <application>Bash</application> が補完できるようにするための <application>Perl</application> スクリプトです。
 @z
 
 @x runant.pl
-          <para>is a <application>Perl</application> wrapper script used to
-          invoke <command>ant</command>.</para>
+            is a <application>Perl</application> wrapper script used to
+            invoke <command>ant</command>.
 @y
-          <para>
-          <command>ant</command> を呼び出すための <application>Perl</application> のラッパースクリプトです。
-          </para>
+            <command>ant</command> を呼び出すための <application>Perl</application> のラッパースクリプトです。
 @z
 
 @x runant.py
-          <para>is a <application>Python</application> wrapper script used to
-          invoke <command>ant</command>.</para>
+            is a <application>Python</application> wrapper script used to
+            invoke <command>ant</command>.
 @y
-          <para>
-          <command>ant</command> を呼び出すための <application>Python</application> のラッパースクリプトです。
-          </para>
+            <command>ant</command> を呼び出すための <application>Python</application> のラッパースクリプトです。
 @z
 
 @x ant-*.jar
-          <para>files are the <application>Apache Ant</application>
-          <application>Java</application> class libraries.</para>
+            files are the <application>Apache Ant</application>
+            <application>Java</application> class libraries.
 @y
-          <para>
-          <application>Apache Ant</application> の <application>Java</application> クラスライブラリです。
-          </para>
+            <application>Apache Ant</application> の <application>Java</application> クラスライブラリです。
 @z

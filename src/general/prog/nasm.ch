@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para><application>NASM</application> (Netwide Assembler)
-    is an 80x86 assembler designed for portability and modularity. It includes a
-    disassembler as well.</para>
+      <application>NASM</application> (Netwide Assembler) is an 80x86
+      assembler designed for portability and modularity. It includes a
+      disassembler as well.
 @y
-    <para>
-    <application>NASM</application> (Netwide Assembler) は、移植性やモジュール性を意識して設計された 80x86 アセンブラーです。
-    ディスアセンブラーも提供します。
-    </para>
+      <application>NASM</application> (Netwide Assembler) は、移植性やモジュール性を意識して設計された 80x86 アセンブラーです。
+      ディスアセンブラーも提供します。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&nasm-download-http;"/></para>
+          Download (HTTP): <ulink url="&nasm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&nasm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&nasm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&nasm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&nasm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&nasm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&nasm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &nasm-md5sum;</para>
+          Download MD5 sum: &nasm-md5sum;
 @y
-        <para>&Download; MD5 sum: &nasm-md5sum;</para>
+          &Download; MD5 sum: &nasm-md5sum;
 @z
 
 @x
-        <para>Download size: &nasm-size;</para>
+          Download size: &nasm-size;
 @y
-        <para>&DownloadSize;: &nasm-size;</para>
+          &DownloadSize;: &nasm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &nasm-buildsize;</para>
+          Estimated disk space required: &nasm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &nasm-buildsize;</para>
+          &Estimateddiskspacerequired;: &nasm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &nasm-time;</para>
+          Estimated build time: &nasm-time;
 @y
-        <para>&Estimatedbuildtime;: &nasm-time;</para>
+          &Estimatedbuildtime;: &nasm-time;
 @z
 
 @x
@@ -79,9 +77,9 @@
 @z
 
 @x
-        <para>Optional documentation: <ulink
+          Optional documentation: <ulink
 @y
-        <para>任意のドキュメント: <ulink
+          任意のドキュメント: <ulink
 @z
 
 @x
@@ -97,48 +95,38 @@
 @z
 
 @x
-    <para>If you downloaded the optional documentation, put it into the
-    source tree:</para>
+      If you downloaded the optional documentation, put it into the
+      source tree:
 @y
-    <para>
-    任意のドキュメントをダウンロードしている場合は、ソースディレクトリに伸張します。
-    </para>
+      任意のドキュメントをダウンロードしている場合は、ソースディレクトリに伸張します。
 @z
 
 @x
-    <para>Install <application>NASM</application> by running
-    the following commands:</para>
+      Install <application>NASM</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>NASM</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>NASM</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you downloaded the optional documentation, install it with the
-    following instructions as the <systemitem
-    class="username">root</systemitem> user:</para>
+      If you downloaded the optional documentation, install it with the
+      following instructions as the <systemitem
+      class="username">root</systemitem> user:
 @y
-    <para>
-    任意のドキュメントをダウンロードしていた場合は <systemitem
-    class="username">root</systemitem> ユーザーとなって以下を実行してインストールします。
-    </para>
+      任意のドキュメントをダウンロードしていた場合は <systemitem
+      class="username">root</systemitem> ユーザーとなって以下を実行してインストールします。
 @z
 
 @x
@@ -174,13 +162,13 @@
 @z
 
 @x nasm
-          <para>is a portable 80x86 assembler.</para>
+            is a portable 80x86 assembler.
 @y
-          <para>移植性に優れた 80x86 アセンブラー。</para>
+            移植性に優れた 80x86 アセンブラー。
 @z
 
 @x ndisasm
-          <para>is an 80x86 binary file disassembler.</para>
+            is an 80x86 binary file disassembler.
 @y
-          <para>80x86 バイナリファイルディスアセンブラー。</para>
+            80x86 バイナリファイルディスアセンブラー。
 @z

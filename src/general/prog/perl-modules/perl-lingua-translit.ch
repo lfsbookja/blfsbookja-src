@@ -80,9 +80,9 @@
 @z
 
 @x translit
-            <para>transliterates text between writing systems using
-            various standards.</para>
+              transliterates text between writing systems using various
+              standards.
 @y
-            <para>transliterates text between writing systems using
-            various standards.</para>
+              transliterates text between writing systems using various
+              standards.
 @z

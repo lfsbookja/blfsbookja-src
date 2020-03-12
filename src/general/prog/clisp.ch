@@ -208,17 +208,13 @@
 @z
 
 @x clisp
-          <para>is an ANSI Common Lisp compiler, interpreter, and debugger</para>
+            is an ANSI Common Lisp compiler, interpreter, and debugger
 @y
-          <para>
-          ANSI Common Lisp コンパイラー、インタープリター、デバッガー
-          </para>
+            ANSI Common Lisp コンパイラー、インタープリター、デバッガー
 @z
 
 @x clisp-link
-          <para>is used to link an external module to clisp</para>
+            is used to link an external module to clisp
 @y
-          <para>
-          clisp に対して外部モジュールをリンクするために利用されます。
-          </para>
+            clisp に対して外部モジュールをリンクするために利用されます。
 @z

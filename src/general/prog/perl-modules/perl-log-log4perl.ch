@@ -80,9 +80,9 @@
 @z
 
 @x l4p-templ
-            <para>prints out the text of a template Log4perl configuration for
-            starting a new Log4perl configuration file.</para>
+              prints out the text of a template Log4perl configuration for
+              starting a new Log4perl configuration file.
 @y
-            <para>prints out the text of a template Log4perl configuration for
-            starting a new Log4perl configuration file.</para>
+              prints out the text of a template Log4perl configuration for
+              starting a new Log4perl configuration file.
 @z

@@ -117,11 +117,11 @@
       <title>&InstallationOf1;libwww-perl&InstallationOf2;</title>
 @z
 @x
-       After installing this package, if you want HTTPS protocol support install
-       <xref linkend="perl-lwp-protocol-https"/>.
+        After installing this package, if you want HTTPS protocol support
+        install <xref linkend="perl-lwp-protocol-https"/>.
 @y
-       After installing this package, if you want HTTPS protocol support install
-       <xref linkend="perl-lwp-protocol-https"/>.
+        After installing this package, if you want HTTPS protocol support
+        install <xref linkend="perl-lwp-protocol-https"/>.
 @z
 
 @x
@@ -153,27 +153,25 @@
 @z
 
 @x lwp-download
-            <para>is a script to fetch a large file from the web.</para>
+              is a script to fetch a large file from the web.
 @y
-            <para>is a script to fetch a large file from the web.</para>
+              is a script to fetch a large file from the web.
 @z
 
 @x lwp-dump
-            <para>is used to see what headers and content is returned
-            for a URL.</para>
+              is used to see what headers and content is returned for a URL.
 @y
-            <para>is used to see what headers and content is returned
-            for a URL.</para>
+              is used to see what headers and content is returned for a URL.
 @z
 
 @x lwp-mirror
-            <para>is a simple mirror utility.</para>
+              is a simple mirror utility.
 @y
-            <para>is a simple mirror utility.</para>
+              is a simple mirror utility.
 @z
 
 @x lwp-request
-            <para>is a simple command line user agent.</para>
+              is a simple command line user agent.
 @y
-            <para>is a simple command line user agent.</para>
+              is a simple command line user agent.
 @z

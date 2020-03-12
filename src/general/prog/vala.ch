@@ -131,12 +131,10 @@
 @z
 
 @x
-    <para>Install <application>Vala</application> by running the following
-    commands:</para>
+      Install <application>Vala</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Vala</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Vala</application> をビルドします。
 @z
 
 @x

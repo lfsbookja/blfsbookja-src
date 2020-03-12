@@ -28,15 +28,13 @@
 @z
 
 @x
-    <para><application>S-Lang</application> (slang) is an interpreted language
-    that may be embedded into an application to make the application
-    extensible.  It provides facilities required by interactive applications
-    such as display/screen management, keyboard input and keymaps.</para>
+      <application>S-Lang</application> (slang) is an interpreted language
+      that may be embedded into an application to make the application
+      extensible.  It provides facilities required by interactive applications
+      such as display/screen management, keyboard input and keymaps.
 @y
-    <para>
-    <application>S-Lang</application> (slang) はインタープリター言語であり、アプリケーション内に埋め込んで、そのアプリケーションを拡張することが可能です。
-    これは、ディスプレイ画面、キーボード入力、キーマップなどのように、対話的インターフェースにおいて必要となる機能を提供します。
-    </para>
+      <application>S-Lang</application> (slang) はインタープリター言語であり、アプリケーション内に埋め込んで、そのアプリケーションを拡張することが可能です。
+      これは、ディスプレイ画面、キーボード入力、キーマップなどのように、対話的インターフェースにおいて必要となる機能を提供します。
 @z
 
 @x
@@ -46,39 +44,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&slang-download-http;"/></para>
+          Download (HTTP): <ulink url="&slang-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&slang-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&slang-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&slang-download-ftp;"/></para>
+          Download (FTP): <ulink url="&slang-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&slang-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&slang-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &slang-md5sum;</para>
+          Download MD5 sum: &slang-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &slang-md5sum;</para>
+          &Download; MD5 sum: &slang-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &slang-size;</para>
+          Download size: &slang-size;</para>
 @y
-        <para>&DownloadSize;: &slang-size;</para>
+          &DownloadSize;: &slang-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &slang-buildsize;</para>
+          Estimated disk space required: &slang-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &slang-buildsize;</para>
+          &Estimateddiskspacerequired;: &slang-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &slang-time;</para>
+          Estimated build time: &slang-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &slang-time;</para>
+          &Estimatedbuildtime;: &slang-time;</para>
 @z
 
 @x
@@ -105,10 +103,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/slang"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/slang"/></para>
 @z
 
 @x
@@ -124,31 +120,25 @@
 @z
 
 @x
-    <para>Install <application>slang</application> by running the following
-    commands:</para>
+      Install <application>slang</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>slang</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>slang</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>. Note that
-    this will also create a static version of the library which will then be
-    installed in the next step.</para>
+      To test the results, issue: <command>make check</command>. Note that
+      this will also create a static version of the library which will then be
+      installed in the next step.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    テストを行うとスタティックライブラリが生成されますので、これが次の作業を通じてインストールされることになります。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      テストを行うとスタティックライブラリが生成されますので、これが次の作業を通じてインストールされることになります。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -167,18 +157,16 @@
 @z
 
 @x
-    <para><command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
-    SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
-    This command installs the static library as well as
-    the dynamic shared version and related modules. It also changes the
-    documentation installation directories to a versioned directory.</para>
+      <command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
+      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
+      This command installs the static library as well as
+      the dynamic shared version and related modules. It also changes the
+      documentation installation directories to a versioned directory.
 @y
-    <para>
-    <command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
-    SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
-    このコマンドは、動的な共有ライブラリや関連モジュールをインストールし、さらにスタティックライブラリもインストールします。
-    またドキュメントを収めるディレクトリの名前にバージョン番号をつけた上でドキュメントをインストールします。
-    </para>
+      <command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
+      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
+      このコマンドは、動的な共有ライブラリや関連モジュールをインストールし、さらにスタティックライブラリもインストールします。
+      またドキュメントを収めるディレクトリの名前にバージョン番号をつけた上でドキュメントをインストールします。
 @z
 
 @x
@@ -189,12 +177,16 @@
 
 @x
       <title>Config Files</title>
-      <para><filename>~/.slshrc</filename> and
-      <filename>/etc/slsh.rc</filename></para>
 @y
       <title>&ConfigFiles;</title>
-      <para><filename>~/.slshrc</filename>,
-      <filename>/etc/slsh.rc</filename></para>
+@z
+
+@x
+        <filename>~/.slshrc</filename> and
+        <filename>/etc/slsh.rc</filename>
+@y
+        <filename>~/.slshrc</filename>,
+        <filename>/etc/slsh.rc</filename>
 @z
 
 @x
@@ -232,14 +224,11 @@
 @z
 
 @x slsh
-          <para>is a simple program for interpreting
-          <application>slang</application> scripts. It supports dynamic loading
-          of <application>slang</application> modules and includes a
-          <application>Readline</application> interface for interactive
-          use.</para>
+            is a simple program for interpreting
+            <application>slang</application> scripts. It supports dynamic
+            loading of <application>slang</application> modules and includes a
+            <application>Readline</application> interface for interactive use.
 @y
-          <para>
-          <application>S-Lang</application> スクリプトを解釈する単純なプログラムです。
-          これは <application>slang</application> モジュールの動的ローディングをサポートし、対話的な操作時には <application>Readline</application> インターフェースも提供します。
-          </para>
+            <application>S-Lang</application> スクリプトを解釈する単純なプログラムです。
+            これは <application>slang</application> モジュールの動的ローディングをサポートし、対話的な操作時には <application>Readline</application> インターフェースも提供します。
 @z

@@ -23,7 +23,7 @@
 @x
     <title>Introduction to Lua 5.2</title>
 @y
-    <title>Introduction to Lua 5.2</title>
+    <title>&IntroductionTo1;Lua 5.2&IntroductionTo2;</title>
 @z
 
 @x
@@ -57,83 +57,82 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&lua-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&lua-download-http;"/>
+          &Download; (HTTP): <ulink url="&lua-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&lua-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&lua-download-ftp;"/>
+          &Download; (FTP): <ulink url="&lua-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &lua-md5sum;
 @y
-          Download MD5 sum: &lua-md5sum;
+          &Download; MD5 sum: &lua-md5sum;
 @z
 
 @x
           Download size: &lua-size;
 @y
-          Download size: &lua-size;
+          &DownloadSize;: &lua-size;
 @z
 
 @x
           Estimated disk space required: &lua-buildsize;
 @y
-          Estimated disk space required: &lua-buildsize;
+          &Estimateddiskspacerequired;: &lua-buildsize;
 @z
 
 @x
           Estimated build time: &lua-time;
 @y
-          Estimated build time: &lua-time;
+          &Estimatedbuildtime;: &lua-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
 @z
 
 @x
           Required patch:
 @y
-          Required patch:
+          必須のパッチ:
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Installation of Lua 5.2</title>
 @y
-    <title>Installation of Lua 5.2</title>
+    <title>&IntroductionTo1;Lua 5.2&IntroductionTo2;</title>
 @z
 
 @x
-    <para>Some packages check for the <application>pkg-config</application> file
-    for <application>Lua</application>, which is created with:</para>
+      Some packages check for the <application>pkg-config</application> file
+      for <application>Lua</application>, which is created with:
 @y
-    <para>Some packages check for the <application>pkg-config</application> file
-    for <application>Lua</application>, which is created with:</para>
+      Some packages check for the <application>pkg-config</application> file
+      for <application>Lua</application>, which is created with:
 @z
 
 @x
       Install <application>Lua</application> by running the following
       commands:
 @y
-      Install <application>Lua</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Lua</application> をビルドします。
 @z
 
 @x
@@ -147,13 +146,13 @@
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -175,7 +174,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -183,9 +182,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -203,7 +202,7 @@
         </seg>
 @y
         <seg>
-          lua52 and luac52
+          lua52, luac52
         </seg>
         <seg>
           liblua5.2.so
@@ -211,7 +210,7 @@
         <seg>
           /usr/include/lua5.2,
           /usr/lib/lua/5.2,
-          /usr/share/doc/lua-&lua52-version;, and
+          /usr/share/doc/lua-&lua52-version;,
           /usr/share/lua/5.2
         </seg>
 @z
@@ -219,7 +218,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x lua52

@@ -28,16 +28,14 @@
 @z
 
 @x
-    <para><application>Yasm</application> is a complete rewrite of the
-    <xref linkend="nasm"/> assembler. It supports the x86 and AMD64 instruction
-    sets, accepts NASM and GAS assembler syntaxes and outputs binary, ELF32 and
-    ELF64 object formats.</para>
+      <application>Yasm</application> is a complete rewrite of the
+      <xref linkend="nasm"/> assembler. It supports the x86 and AMD64
+      instruction sets, accepts NASM and GAS assembler syntaxes and outputs
+      binary, ELF32 and ELF64 object formats.
 @y
-    <para>
-    <application>Yasm</application> は <xref linkend="nasm"/> アセンブラーの完全な書き直しにより構築されています。
-    これは x86 と AMD64 の命令セットをサポートします。
-    NASM アセンブラーと GAS アセンブラーの文法との互換性があり、ELF32 および ELF64 のオブジェクト形式を出力します。
-    </para>
+      <application>Yasm</application> は <xref linkend="nasm"/> アセンブラーの完全な書き直しにより構築されています。
+      これは x86 と AMD64 の命令セットをサポートします。
+      NASM アセンブラーと GAS アセンブラーの文法との互換性があり、ELF32 および ELF64 のオブジェクト形式を出力します。
 @z
 
 @x
@@ -47,39 +45,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&yasm-download-http;"/></para>
+          Download (HTTP): <ulink url="&yasm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&yasm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&yasm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&yasm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&yasm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&yasm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&yasm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &yasm-md5sum;</para>
+          Download MD5 sum: &yasm-md5sum;
 @y
-        <para>&Download; MD5 sum: &yasm-md5sum;</para>
+          &Download; MD5 sum: &yasm-md5sum;
 @z
 
 @x
-        <para>Download size: &yasm-size;</para>
+          Download size: &yasm-size;
 @y
-        <para>&DownloadSize;: &yasm-size;</para>
+          &DownloadSize;: &yasm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &yasm-buildsize;</para>
+          Estimated disk space required: &yasm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &yasm-buildsize;</para>
+          &Estimateddiskspacerequired;: &yasm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &yasm-time;</para>
+          Estimated build time: &yasm-time;
 @y
-        <para>&Estimatedbuildtime;: &yasm-time;</para>
+          &Estimatedbuildtime;: &yasm-time;
 @z
 
 @x
@@ -115,28 +113,22 @@
 @z
 
 @x
-    <para>Install <application>yasm</application> by running the following
-    commands:</para>
+      Install <application>yasm</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>yasm</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>yasm</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -146,15 +138,13 @@
 @z
 
 @x
-    <para><command>sed -i 's#) ytasm.*#)#' Makefile.in</command>: This sed
-    prevents it compiling 2 programs (vsyasm and ytasm) that are only of use
-    on Microsoft Windows.</para>
+      <command>sed -i 's#) ytasm.*#)#' Makefile.in</command>: This sed
+      prevents it compiling 2 programs (vsyasm and ytasm) that are only of use
+      on Microsoft Windows.
 @y
-    <para>
-    <command>sed -i 's#) ytasm.*#)#' Makefile.in</command>:
-    この sed コマンドは 2つのプログラム (vsyasm と ytasm) をビルドしないようにします。
-    これらは Microsoft Windows においてのみ利用されるものです。
-    </para>
+      <command>sed -i 's#) ytasm.*#)#' Makefile.in</command>:
+      この sed コマンドは 2つのプログラム (vsyasm と ytasm) をビルドしないようにします。
+      これらは Microsoft Windows においてのみ利用されるものです。
 @z
 
 @x
@@ -190,23 +180,18 @@
 @z
 
 @x yasm
-          <para>is a portable, retargetable assembler that supports the x86 and
-          AMD64 instruction sets, accepts NASM and GAS assembler syntaxes and
-          outputs binaries in ELF32 and ELF64 object formats.</para>
+            is a portable, retargetable assembler that supports the x86 and
+            AMD64 instruction sets, accepts NASM and GAS assembler syntaxes and
+            outputs binaries in ELF32 and ELF64 object formats.
 @y
-          <para>
-          可搬性に優れる、ターゲット変更が可能なアセンブラー。
-          x86 と AMD64 の命令セットをサポートします。
-          NASM アセンブラーと GAS アセンブラーの文法との互換性があり、ELF32 および ELF64 のオブジェクト形式を出力します。
-          </para>
+            可搬性に優れたターゲット変更が可能なアセンブラー。
+            x86 と AMD64 の命令セットをサポートします。
+            NASM アセンブラーと GAS アセンブラーの文法との互換性があり、ELF32 および ELF64 のオブジェクト形式を出力します。
 @z
 
 @x libyasm.a
-          <para>provides all of the core functionality of
-          <command>yasm</command>, for manipulating machine instructions and
-          object file constructs.</para>
+            provides all of the core functionality of <command>yasm</command>,
+            for manipulating machine instructions and object file constructs.
 @y
-          <para>
-          <command>yasm</command> の主要な機能、つまりマシン命令の制御やオブジェクトファイルの構築などの機能を提供します。
-          </para>
+            <command>yasm</command> の主要な機能、つまりマシン命令の制御やオブジェクトファイルの構築などの機能を提供します。
 @z
