@@ -135,14 +135,12 @@
 @z
 
 @x
-      To run the Boost.Build's regression test, <xref linkend="python2"/>
-      is required.
-      Run the tests with: issue <command>pushd tools/build/test; 
+      To run the Boost.Build's regression test,
+      issue <command>pushd tools/build/test; 
       python3 test_all.py; popd</command>. 
       All 152 tests should pass.
 @y
-      Boost.Build の縮退テストを実施するには <xref linkend="python2"/> が必要です。
-      テストは <command>pushd tools/build/test; 
+      Boost.Build の縮退テストを実施するには <command>pushd tools/build/test; 
       python3 test_all.py; popd</command> を実行します。
       全テスト 152 個が成功するはずです。
 @z
