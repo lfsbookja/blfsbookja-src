@@ -7,6 +7,7 @@
 ##
 BOOKdir = @abs_bookdir@/x/lib
 CHANGE_FILES = \
+	amtk.ch                 \
         at-spi2-atk.ch          \
         at-spi2-core.ch         \
 	atk.ch                  \
@@ -23,6 +24,7 @@ CHANGE_FILES = \
 	gdk-pixbuf.ch           \
 	glew.ch                 \
 	goffice010.ch           \
+	graphene.ch             \
 	gtk+2.ch                \
 	gtk+3.ch                \
 	gtk-vnc.ch              \
@@ -47,6 +49,7 @@ CHANGE_FILES = \
 	qt5.ch                  \
 	qtwebengine.ch          \
 	startup-notification.ch \
+	tepl.ch                 \
 	webkitgtk.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

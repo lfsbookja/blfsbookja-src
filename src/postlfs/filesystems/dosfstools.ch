@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para>The <application>dosfstools</application> package contains various
-    utilities for use with the FAT family of file systems.</para>
+      The <application>dosfstools</application> package contains various
+      utilities for use with the FAT family of file systems.
 @y
-    <para>
-    <application>dosfstools</application> パッケージは FAT 関連のファイルシステムを取り扱うユーティリティーを提供します。
-    </para>
+      <application>dosfstools</application> パッケージは FAT 関連のファイルシステムを取り扱うユーティリティーを提供します。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&dosfstools-download-http;"/></para>
+          Download (HTTP): <ulink url="&dosfstools-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&dosfstools-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&dosfstools-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&dosfstools-download-ftp;"/></para>
+          Download (FTP): <ulink url="&dosfstools-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&dosfstools-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&dosfstools-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &dosfstools-md5sum;</para>
+          Download MD5 sum: &dosfstools-md5sum;
 @y
-        <para>&Download; MD5 sum: &dosfstools-md5sum;</para>
+          &Download; MD5 sum: &dosfstools-md5sum;
 @z
 
 @x
-        <para>Download size: &dosfstools-size;</para>
+          Download size: &dosfstools-size;
 @y
-        <para>&DownloadSize;: &dosfstools-size;</para>
+          &DownloadSize;: &dosfstools-size;
 @z
 
 @x
-        <para>Estimated disk space required: &dosfstools-buildsize;</para>
+          Estimated disk space required: &dosfstools-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &dosfstools-buildsize;</para>
+          &Estimateddiskspacerequired;: &dosfstools-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &dosfstools-time;</para>
+          Estimated build time: &dosfstools-time;
 @y
-        <para>&Estimatedbuildtime;: &dosfstools-time;</para>
+          &Estimatedbuildtime;: &dosfstools-time;
 @z
 
 @x
@@ -89,12 +87,10 @@
 @z
 
 @x
-    <para>Enable the following option in the kernel configuration
-    and recompile the kernel:</para>
+      Enable the following option in the kernel configuration
+      and recompile the kernel:
 @y
-    <para>
-    カーネル設定における以下のオプションを有効にして、カーネルを再コンパイルします。
-    </para>
+      カーネル設定における以下のオプションを有効にして、カーネルを再コンパイルします。
 @z
 
 @x
@@ -104,29 +100,22 @@
 @z
 
 @x
-    <para>Install <application>dosfstools</application> by running the
-    following commands:</para>
+      Install <application>dosfstools</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>dosfstools</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>dosfstools</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -181,26 +170,19 @@
 @z
 
 @x fatlabel
-          <para>set or get a MS-DOS filesystem label from a given
-          device</para>
+            sets or gets a MS-DOS filesystem label from a given device.
 @y
-          <para>
-          指定されたデバイスの MS-DOS ファイルシステムラベルを取得または設定します。
-          </para>
+            指定されたデバイスの MS-DOS ファイルシステムラベルを取得または設定します。
 @z
 
 @x fsck.fat
-          <para>check and repair MS-DOS filesystems</para>
+            checks and repairs MS-DOS filesystems.
 @y
-          <para>
-          MS-DOS ファイルシステムをチェックし修復します。
-          </para>
+            MS-DOS ファイルシステムをチェックし修復します。
 @z
 
 @x mkfs.fat
-          <para>create an MS-DOS filesystem under Linux</para>
+            creates an MS-DOS filesystem under Linux.
 @y
-          <para>
-          Linux 下において MS-DOS ファイルシステムを生成します。
-          </para>
+            Linux 下において MS-DOS ファイルシステムを生成します。
 @z

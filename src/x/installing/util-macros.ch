@@ -26,13 +26,11 @@
 @z
 
 @x
-    <para>The <application>util-macros</application> package contains the
-    <application>m4</application> macros used by all of the
-    <application>Xorg</application> packages.</para>
+      The <application>util-macros</application> package contains the
+      <application>m4</application> macros used by all of the
+      <application>Xorg</application> packages.
 @y
-    <para>
-    <application>util-macros</application> パッケージは <application>Xorg</application> のすべてのパッケージにて用いられる <application>m4</application> マクロを提供します。
-    </para>
+      <application>util-macros</application> パッケージは <application>Xorg</application> のすべてのパッケージにて用いられる <application>m4</application> マクロを提供します。
 @z
 
 @x
@@ -42,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&util-macros-download-http;"/></para>
+          Download (HTTP): <ulink url="&util-macros-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&util-macros-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&util-macros-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&util-macros-download-ftp;"/></para>
+          Download (FTP): <ulink url="&util-macros-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&util-macros-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&util-macros-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &util-macros-md5sum;</para>
+          Download MD5 sum: &util-macros-md5sum;
 @y
-        <para>&Download; MD5 sum: &util-macros-md5sum;</para>
+          &Download; MD5 sum: &util-macros-md5sum;
 @z
 
 @x
-        <para>Download size: &util-macros-size;</para>
+          Download size: &util-macros-size;
 @y
-        <para>&DownloadSize;: &util-macros-size;</para>
+          &DownloadSize;: &util-macros-size;
 @z
 
 @x
-        <para>Estimated disk space required: &util-macros-buildsize;</para>
+          Estimated disk space required: &util-macros-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &util-macros-buildsize;</para>
+          &Estimateddiskspacerequired;: &util-macros-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &util-macros-time;</para>
+          Estimated build time: &util-macros-time;
 @y
-        <para>&Estimatedbuildtime;: &util-macros-time;</para>
+          &Estimatedbuildtime;: &util-macros-time;
 @z
 
 @x
@@ -109,28 +107,22 @@
 @z
 
 @x
-    <para>Install <application>util-macros</application> by running the following
-    commands:</para>
+      Install <application>util-macros</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>util-macros</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>util-macros</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
     &notTestSuite;
-    </para>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

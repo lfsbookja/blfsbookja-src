@@ -28,22 +28,20 @@
 @z
 
 @x
-    <para>The <application>GTK-Doc</application> package
-    contains a code documenter. This is useful for extracting specially formatted
-    comments from the code to create API documentation. This
-    package is <emphasis>optional</emphasis>; if it is not installed, packages will
-    not build the documentation. This does not mean that you will not have any
-    documentation. If <application>GTK-Doc</application> is not
-    available, the install process will copy any pre-built documentation to your
-    system.</para>
+      The <application>GTK-Doc</application> package contains a code
+      documenter. This is useful for extracting specially formatted comments
+      from the code to create API documentation. This package is
+      <emphasis>optional</emphasis>; if it is not installed, packages will
+      not build the documentation. This does not mean that you will not have
+      any documentation. If <application>GTK-Doc</application> is not
+      available, the install process will copy any pre-built documentation
+      to your system.
 @y
-    <para>
-    <application>GTK-Doc</application> パッケージは、コードから文書を作るためのツールを提供します。
-    コード内に記述された所定書式のコメントから、API ドキュメントを生成します。
-    このパッケージはオプションであって、もしインストールされていない場合、各種パッケージはドキュメントを生成しません。
-    このことは、ドキュメントが一切得られないことを意味するわけではありません。
-    <application>GTK-Doc</application> が利用できない場合は、各パッケージのインストール処理において、事前にビルドされているドキュメントがコピーされます。
-    </para>
+      <application>GTK-Doc</application> パッケージは、コードから文書を作るためのツールを提供します。
+      コード内に記述された所定書式のコメントから、API ドキュメントを生成します。
+      このパッケージはオプションであって、もしインストールされていない場合、各種パッケージはドキュメントを生成しません。
+      このことは、ドキュメントが一切得られないことを意味するわけではありません。
+      <application>GTK-Doc</application> が利用できない場合は、各パッケージのインストール処理において、事前にビルドされているドキュメントがコピーされます。
 @z
 
 @x
@@ -53,39 +51,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gtk-doc-download-http;"/></para>
+          Download (HTTP): <ulink url="&gtk-doc-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gtk-doc-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gtk-doc-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gtk-doc-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gtk-doc-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gtk-doc-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gtk-doc-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gtk-doc-md5sum;</para>
+          Download MD5 sum: &gtk-doc-md5sum;
 @y
-        <para>&Download; MD5 sum: &gtk-doc-md5sum;</para>
+          &Download; MD5 sum: &gtk-doc-md5sum;
 @z
 
 @x
-        <para>Download size: &gtk-doc-size;</para>
+          Download size: &gtk-doc-size;
 @y
-        <para>&DownloadSize;: &gtk-doc-size;</para>
+          &DownloadSize;: &gtk-doc-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gtk-doc-buildsize;</para>
+          Estimated disk space required: &gtk-doc-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gtk-doc-buildsize;</para>
+          &Estimateddiskspacerequired;: &gtk-doc-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gtk-doc-time;</para>
+          Estimated build time: &gtk-doc-time;
 @y
-        <para>&Estimatedbuildtime;: &gtk-doc-time;</para>
+          &Estimatedbuildtime;: &gtk-doc-time;
 @z
 
 @x
@@ -153,11 +151,11 @@
 @z
 
 @x
-    <note><para>The optional python modules above can be easily installed with
-    the <command>pip3</command> command.</para></note>
+      The optional python modules above can be easily installed with
+      the <command>pip3</command> command.
 @y
-    <note><para>The optional python modules above can be easily installed with
-    the <command>pip3</command> command.</para></note>
+      The optional python modules above can be easily installed with
+      the <command>pip3</command> command.
 @z
 
 @x
@@ -173,29 +171,23 @@
 @z
 
 @x
-    <para>Install <application>GTK-Doc</application> by running
-    the following commands:</para>
+      Install <application>GTK-Doc</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GTK-Doc</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GTK-Doc</application> をビルドします。
 @z
 
 @x
-    <para>The test suite will hang if the package (or a previous version) 
-    is not already installed.</para>
+      The test suite will hang if the package (or a previous version) 
+      is not already installed.
 @y
-    <para>
-    テストスイートはパッケージをまだインストールしていない (あるいは前バージョンをインストールしていない) 場合には失敗します。
-    </para>
+      テストスイートはパッケージをまだインストールしていない (あるいは前バージョンをインストールしていない) 場合には失敗します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -267,13 +259,13 @@
 @z
 
 @x
-          <para>these are all shell, or          
-          <application>Python</application> scripts used by
-          package <filename>Makefile</filename> scripts to generate
-          documentation for the package being built.</para>
+            these are all shell, or          
+            <application>Python</application> scripts used by
+            package <filename>Makefile</filename> scripts to generate
+            documentation for the package being built.
 @y
-          <para>these are all shell, or          
-          <application>Python</application> scripts used by
-          package <filename>Makefile</filename> scripts to generate
-          documentation for the package being built.</para>
+            these are all shell, or          
+            <application>Python</application> scripts used by
+            package <filename>Makefile</filename> scripts to generate
+            documentation for the package being built.
 @z

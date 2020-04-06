@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>xinit</application> package contains a usable script
-    to start the xserver.</para>
+      The <application>xinit</application> package contains a usable script
+      to start the xserver.
 @y
-    <para>
-    <application>xinit</application> パッケージは xserver を起動するための種々のスクリプトを提供します。
-    </para>
+      <application>xinit</application> パッケージは xserver を起動するための種々のスクリプトを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xinit-download-http;"/></para>
+          Download (HTTP): <ulink url="&xinit-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xinit-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xinit-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xinit-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xinit-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xinit-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xinit-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xinit-md5sum;</para>
+          Download MD5 sum: &xinit-md5sum;
 @y
-        <para>&Download; MD5 sum: &xinit-md5sum;</para>
+          &Download; MD5 sum: &xinit-md5sum;
 @z
 
 @x
-        <para>Download size: &xinit-size;</para>
+          Download size: &xinit-size;
 @y
-        <para>&DownloadSize;: &xinit-size;</para>
+          &DownloadSize;: &xinit-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xinit-buildsize;</para>
+          Estimated disk space required: &xinit-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xinit-buildsize;</para>
+          &Estimateddiskspacerequired;: &xinit-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xinit-time;</para>
+          Estimated build time: &xinit-time;
 @y
-        <para>&Estimatedbuildtime;: &xinit-time;</para>
+          &Estimatedbuildtime;: &xinit-time;
 @z
 
 @x
@@ -119,27 +117,22 @@
 @z
 
 @x
-    <para>Install <application>xinit</application> by running the
-    following commands:</para>
+      Install <application>xinit</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>xinit</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>xinit</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -175,13 +168,13 @@
 @z
 
 @x startx
-          <para>initializes an X session.</para>
+            initializes an X session.
 @y
-          <para>X セッションを初期化します。</para>
+            X セッションを初期化します。
 @z
 
 @x xinit
-          <para>is the X Window System initializer.</para>
+            is the X Window System initializer.
 @y
-          <para>X ウィンドウシステムの初期化プログラムです。</para>
+            X ウィンドウシステムの初期化プログラムです。
 @z

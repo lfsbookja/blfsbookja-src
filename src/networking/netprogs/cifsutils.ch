@@ -20,11 +20,11 @@
 @z
 
 @x
-    <para>The <application>cifs-utils</application> provides a means for
-    mounting SMB/CIFS shares on a Linux system.</para>
+      The <application>cifs-utils</application> provides a means for
+      mounting SMB/CIFS shares on a Linux system.
 @y
-    <para>The <application>cifs-utils</application> provides a means for
-    mounting SMB/CIFS shares on a Linux system.</para>
+      The <application>cifs-utils</application> provides a means for
+      mounting SMB/CIFS shares on a Linux system.
 @z
 
 @x
@@ -34,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&cifsutils-download-http;"/></para>
+          Download (HTTP): <ulink url="&cifsutils-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&cifsutils-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&cifsutils-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&cifsutils-download-ftp;"/></para>
+          Download (FTP): <ulink url="&cifsutils-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&cifsutils-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&cifsutils-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &cifsutils-md5sum;</para>
+          Download MD5 sum: &cifsutils-md5sum;
 @y
-        <para>&Download; MD5 sum: &cifsutils-md5sum;</para>
+          &Download; MD5 sum: &cifsutils-md5sum;
 @z
 
 @x
-        <para>Download size: &cifsutils-size;</para>
+          Download size: &cifsutils-size;
 @y
-        <para>&DownloadSize;: &cifsutils-size;</para>
+          &DownloadSize;: &cifsutils-size;
 @z
 
 @x
-        <para>Estimated disk space required: &cifsutils-buildsize;</para>
+          Estimated disk space required: &cifsutils-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &cifsutils-buildsize;</para>
+          &Estimateddiskspacerequired;: &cifsutils-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &cifsutils-time;</para>
+          Estimated build time: &cifsutils-time;
 @y
-        <para>&Estimatedbuildtime;: &cifsutils-time;</para>
+          &Estimatedbuildtime;: &cifsutils-time;
 @z
 
 @x
@@ -82,8 +82,10 @@
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="samba"/>, and
-      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> or
-      <xref linkend="libcap-pam"/>
+      <xref linkend="libcap-pam"/> or
+      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">
+        libcap-ng
+      </ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -91,9 +93,11 @@
       <xref linkend="keyutils"/> (PAM モジュールビルドに必要),
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="samba"/>,
-      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink> または
-      <xref linkend="libcap-pam"/>
+      <xref linkend="samba"/>, and
+      <xref linkend="libcap-pam"/> または
+      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">
+        libcap-ng
+      </ulink>
     </para>
 @z
 
@@ -104,32 +108,84 @@
 @z
 
 @x
+    <title>Kernel Configuration</title>
+@y
+    <title>&KernelConfiguration;</title>
+@z
+
+@x
+      Enable the following options in the kernel configuration and recompile the
+      kernel if necessary:
+@y
+      Enable the following options in the kernel configuration and recompile the
+      kernel if necessary:
+@z
+
+@x
+      Depending on your server configuration, additional kernel options may be
+      required.
+@y
+      Depending on your server configuration, additional kernel options may be
+      required.
+@z
+
+@x
     <title>Installation of cifs-utils</title>
 @y
     <title>&InstallationOf1;cifs-utils&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>cifs-utils</application> by running the following
-    commands:</para>
+      Install <application>cifs-utils</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>cifs-utils</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>cifs-utils</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>--disable-pam</parameter>: Do not build PAM support.
+      Remove it and use <option>--with-pamdir</option> (see below),
+      if <xref linkend="linux-pam"/> is installed and you wish
+      PAM support.
+@y
+      <parameter>--disable-pam</parameter>: Do not build PAM support.
+      Remove it and use <option>--with-pamdir</option> (see below),
+      if <xref linkend="linux-pam"/> is installed and you wish
+      PAM support.
+@z
+
+@x
+      <parameter>--disable-systemd</parameter>: Disable systemd specific
+      behavior for <command>mount.cifs</command>.
+@y
+      <parameter>--disable-systemd</parameter>: Disable systemd specific
+      behavior for <command>mount.cifs</command>.
+@z
+
+@x
+      <option>--with-pamdir=/lib/security</option>: Install the PAM
+      module in <filename class="directory">/lib/security</filename>.
+@y
+      <option>--with-pamdir=/lib/security</option>: Install the PAM
+      module in <filename class="directory">/lib/security</filename>.
 @z
 
 @x
@@ -162,42 +218,88 @@
         <seg>/usr/lib/cifs-utils</seg>
 @z
 
-@x cifs.idmap
-          <para>is a userspace helper program for the linux CIFS client
-          filesystem. There are a number of activities that the kernel cannot
-          easily do itself. This program is a callout program that does these
-          things for the kernel and then returns the result. It is not intended 
-          to be run from the command-line.</para>
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-          <para>is a userspace helper program for the linux CIFS client
-          filesystem. There are a number of activities that the kernel cannot
-          easily do itself. This program is a callout program that does these
-          things for the kernel and then returns the result. It is not intended 
-          to be run from the command-line.</para>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x cifs.idmap
+            is a userspace helper program for the linux CIFS client filesystem.
+            There are a number of activities that the kernel cannot easily do
+            itself. This program is a callout program that does these
+            things for the kernel and then returns the result. It is not
+            intended to be run from the command-line.
+@y
+            is a userspace helper program for the linux CIFS client filesystem.
+            There are a number of activities that the kernel cannot easily do
+            itself. This program is a callout program that does these
+            things for the kernel and then returns the result. It is not
+            intended to be run from the command-line.
+@z
+
+@x cifs.upcall
+            is a userspace helper program for the linux CIFS client
+            filesystem. It is intended to be run when the kernel calls
+            request-key for a particular key type.  It is not intended to be
+            run from the command-line.
+@y
+            is a userspace helper program for the linux CIFS client
+            filesystem. It is intended to be run when the kernel calls
+            request-key for a particular key type.  It is not intended to be
+            run from the command-line.
+@z
+
+@x cifscreds
+            is a tool for managing credentials (username and password)
+            for the purpose of establishing sessions in multiuser mounts.
+@y
+            is a tool for managing credentials (username and password)
+            for the purpose of establishing sessions in multiuser mounts.
 @z
 
 @x getcifsacl
-          <para>is a userspace helper  to display an ACL in a security
-          descriptor for Common Internet File System (CIFS).</para>
+            is a userspace helper  to display an ACL in a security
+            descriptor for Common Internet File System (CIFS).
 @y
-          <para>is a userspace helper  to display an ACL in a security
-          descriptor for Common Internet File System (CIFS).</para>
+            is a userspace helper  to display an ACL in a security
+            descriptor for Common Internet File System (CIFS).
 @z
 
 @x mount.cifs
-          <para>mounts a Linux CIFS filesystem. It is usually invoked
-          indirectly by the mount(8) command when using the "-t cifs" option.
-          </para>
+            mounts a Linux CIFS filesystem. It is usually invoked
+            indirectly by the mount(8) command when using the "-t cifs" option.
 @y
-          <para>mounts a Linux CIFS filesystem. It is usually invoked
-          indirectly by the mount(8) command when using the "-t cifs" option.
-          </para>
+            mounts a Linux CIFS filesystem. It is usually invoked
+            indirectly by the mount(8) command when using the "-t cifs" option.
+@z
+
+@x mount.smb3
+            mounts a SMB3-based filesystem. It is usually invoked
+            indirectly by the mount(8) command when using the "-t smb3" option.
+@y
+            mounts a SMB3-based filesystem. It is usually invoked
+            indirectly by the mount(8) command when using the "-t smb3" option.
 @z
 
 @x setcifsacl
-          <para>is intended to alter an ACL of a security descriptor for a file
-          system object.</para>
+            is intended to alter an ACL of a security descriptor for a file
+            system object.
 @y
-          <para>is intended to alter an ACL of a security descriptor for a file
-          system object.</para>
+            is intended to alter an ACL of a security descriptor for a file
+            system object.
+@z
+
+@x smb3-quota
+            displays quota information for a SMB filesystem.
+@y
+            displays quota information for a SMB filesystem.
+@z
+
+@x smbinfo
+            displays SMB-specific file information, such as security
+            descriptors and quotas.
+@y
+            displays SMB-specific file information, such as security
+            descriptors and quotas.
 @z

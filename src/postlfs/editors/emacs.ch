@@ -20,17 +20,15 @@
 @z
 
 @x
-    <para>The <application>Emacs</application> package contains an extensible,
-    customizable, self-documenting real-time display editor.</para>
+      The <application>Emacs</application> package contains an extensible,
+      customizable, self-documenting real-time display editor.
 @y
-    <!--
-    日本語訳情報：2009-10-31 matsuand
-    self-documenting という語にはいつも悩まされる。
-    訳語から除いてしまった・・
-    -->
-    <para>
-    <application>Emacs</application> パッケージは、拡張性やカスタマイズ性に優れた、リアルタイムなディスプレイエディターを提供します。
-    </para>
+      <!--
+      日本語訳情報：2009-10-31 matsuand
+      self-documenting という語にはいつも悩まされる。
+      訳語から除いてしまった・・
+      -->
+      <application>Emacs</application> パッケージは、拡張性やカスタマイズ性に優れたリアルタイムなディスプレイエディターを提供します。
 @z
 
 @x
@@ -40,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&emacs-download-http;"/></para>
+          Download (HTTP): <ulink url="&emacs-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&emacs-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&emacs-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&emacs-download-ftp;"/></para>
+          Download (FTP): <ulink url="&emacs-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&emacs-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&emacs-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &emacs-md5sum;</para>
+          Download MD5 sum: &emacs-md5sum;
 @y
-        <para>&Download; MD5 sum: &emacs-md5sum;</para>
+          &Download; MD5 sum: &emacs-md5sum;
 @z
 
 @x
-        <para>Download size: &emacs-size;</para>
+          Download size: &emacs-size;
 @y
-        <para>&DownloadSize;: &emacs-size;</para>
+          &DownloadSize;: &emacs-size;
 @z
 
 @x
-        <para>Estimated disk space required: &emacs-buildsize;</para>
+          Estimated disk space required: &emacs-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &emacs-buildsize;</para>
+          &Estimateddiskspacerequired;: &emacs-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &emacs-time;</para>
+          Estimated build time: &emacs-time;
 @y
-        <para>&Estimatedbuildtime;: &emacs-time;</para>
+          &Estimatedbuildtime;: &emacs-time;
 @z
 
 @x
@@ -166,12 +164,10 @@
 @z
 
 @x
-    <para>Install <application>Emacs</application> by running the following
-    commands:</para>
+      Install <application>Emacs</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Emacs</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Emacs</application> をビルドします。
 @z
 
 @x
@@ -188,11 +184,9 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -202,45 +196,42 @@
 @z
 
 @x
-    <para><parameter>--localstatedir=/var</parameter>: Create game score files
-    in <filename class='directory'>/var/games/emacs</filename> instead
-    of <filename class='directory'>/usr/var/games/emacs</filename>.</para>
+      <parameter>--localstatedir=/var</parameter>: Create game score files
+      in <filename class='directory'>/var/games/emacs</filename> instead
+      of <filename class='directory'>/usr/var/games/emacs</filename>.
 @y
-    <para>
-    <parameter>--localstatedir=/var</parameter>:
-    ゲームスコアのファイルを <filename
-    class='directory'>/usr/var/games/emacs</filename> ではなく<filename
-    class='directory'>/var/games/emacs</filename> に生成します。
-    </para>
+      <parameter>--localstatedir=/var</parameter>:
+      ゲームスコアのファイルを <filename
+      class='directory'>/usr/var/games/emacs</filename> ではなく<filename
+      class='directory'>/var/games/emacs</filename> に生成します。
 @z
 
 @x
-    <para><option>IMAGEMAGICK_CFLAGS=-I/usr/include/ImageMagick-6 
-    IMAGEMAGICK_LIBS="-lMagickCore-6.Q16HDRI -lMagick++-6.Q16HDRI
-    -lMagickWand-6.Q16HDRI" </option>:
-    use these when you invoke configure if you have installed <xref
-    linkend="imagemagick6"/> and wish to link to them (the normal unversioned
-    pkgconfig files collide with <xref linkend="imagemagick"/> which this
-    package cannot use).</para>
+      <option>IMAGEMAGICK_CFLAGS=-I/usr/include/ImageMagick-6 
+      IMAGEMAGICK_LIBS="-lMagickCore-6.Q16HDRI -lMagick++-6.Q16HDRI
+      -lMagickWand-6.Q16HDRI" </option>:
+      use these when you invoke configure if you have installed <xref
+      linkend="imagemagick6"/> and wish to link to them (the normal unversioned
+      pkgconfig files collide with <xref linkend="imagemagick"/> which this
+      package cannot use).
 @y
-    <para><option>IMAGEMAGICK_CFLAGS=-I/usr/include/ImageMagick-6 
-    IMAGEMAGICK_LIBS="-lMagickCore-6.Q16HDRI -lMagick++-6.Q16HDRI
-    -lMagickWand-6.Q16HDRI" </option>:
-    use these when you invoke configure if you have installed <xref
-    linkend="imagemagick6"/> and wish to link to them (the normal unversioned
-    pkgconfig files collide with <xref linkend="imagemagick"/> which this
-    package cannot use).</para>
+      <option>IMAGEMAGICK_CFLAGS=-I/usr/include/ImageMagick-6 
+      IMAGEMAGICK_LIBS="-lMagickCore-6.Q16HDRI -lMagick++-6.Q16HDRI
+      -lMagickWand-6.Q16HDRI" </option>:
+      use these when you invoke configure if you have installed <xref
+      linkend="imagemagick6"/> and wish to link to them (the normal unversioned
+      pkgconfig files collide with <xref linkend="imagemagick"/> which this
+      package cannot use).
 @z
 
 @x
-    <para><option>--with-gif=no</option>: Use this if you have not installed
-    <xref linkend="giflib"/> or 
-    <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>.</para>
+      <option>--with-gif=no</option>: Use this if you have not installed
+      <xref linkend="giflib"/> or 
+      <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>.
 @y
-    <para><option>--with-gif=no</option>:
-    このオプションは <xref linkend="giflib"/> または <ulink
-    url="http://directory.fsf.org/wiki/Libungif">libungif</ulink> をインストールしていない場合に指定します。
-    </para>
+      <option>--with-gif=no</option>:
+      このオプションは <xref linkend="giflib"/> または <ulink
+      url="http://directory.fsf.org/wiki/Libungif">libungif</ulink> をインストールしていない場合に指定します。
 @z
 
 @x
@@ -292,58 +283,48 @@
 @z
 
 @x ctags
-          <para>creates cross-reference tagfile database files
-          for source code.</para>
+            creates cross-reference tagfile database files
+            for source code.
 @y
-          <para>
-          ソースコードに対して、クロスリファレンスのタグファイルデータベースファイルを生成します。
-          </para>
+            ソースコードに対して、クロスリファレンスのタグファイルデータベースファイルを生成します。
 @z
 
 @x ebrowse
-          <para>permits browsing of C++ class hierarchies from
-          within <command>emacs</command>.</para>
+            permits browsing of C++ class hierarchies from
+            within <command>emacs</command>.
 @y
-          <para>
-          <command>emacs</command> 内から C++ のクラス階層をブラウズする機能を提供します。
-          </para>
+            <command>emacs</command> 内から C++ のクラス階層をブラウズする機能を提供します。
 @z
 
 @x emacs
-          <para>is an editor.</para>
+            is an editor.
 @y
-          <para>エディター</para>
+            エディター。
 @z
 
 @x emacsclient
-          <para>attaches an <command>emacs</command> session to an already
-          running <command>emacsserver</command> instance.</para>
+            attaches an <command>emacs</command> session to an already
+            running <command>emacsserver</command> instance.
 @y
-          <para>
-          稼動している <command>emacsserver</command> インスタンスに対して、<command>emacs</command> セッションをアタッチします。
-          </para>
+            稼動している <command>emacsserver</command> インスタンスに対して、<command>emacs</command> セッションをアタッチします。
 @z
 
 @x etags
-          <para>is another program to generate source code
-          cross-reference tagfiles.</para>
+            is another program to generate source code
+            cross-reference tagfiles.
 @y
-          <para>
-          ソースコードのクロスリファレンスタグファイルを生成する、もう一つのプログラムです。
-          </para>
+            ソースコードのクロスリファレンスタグファイルを生成する、もう一つのプログラムです。
 @z
 
 @x grep-changelog
-          <para>prints entries in Change Logs matching
-          various criteria.</para>
+            prints entries in Change Logs matching
+            various criteria.
 @y
-          <para>
-          さまざまな条件にマッチした変更履歴 (Change Logs) の項目を出力します。
-          </para>
+            さまざまな条件にマッチした変更履歴 (Change Logs) の項目を出力します。
 @z
 
 @x rcs-checkin
-          <para>is a shell script used to check files into RCS.</para>
+            is a shell script used to check files into RCS.
 @y
-          <para>RCS へのファイルチェックに用いられるシェルスクリプト。</para>
+            RCS へのファイルチェックに用いられるシェルスクリプト。
 @z

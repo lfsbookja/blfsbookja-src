@@ -13,12 +13,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 @z
 
-% @x
-%   <title>Automate Mounting of File Systems</title>
-% @y
-%   <title>ファイルシステムのマウント自動化</title>
-% @z
-
 @x
     <title>Introduction to Autofs</title>
 @y
@@ -44,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&autofs-download-http;"/></para>
+          Download (HTTP): <ulink url="&autofs-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&autofs-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&autofs-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&autofs-download-ftp;"/></para>
+          Download (FTP): <ulink url="&autofs-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&autofs-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&autofs-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &autofs-md5sum;</para>
+          Download MD5 sum: &autofs-md5sum;
 @y
-        <para>&Download; MD5 sum: &autofs-md5sum;</para>
+          &Download; MD5 sum: &autofs-md5sum;
 @z
 
 @x
-        <para>Download size: &autofs-size;</para>
+          Download size: &autofs-size;
 @y
-        <para>&DownloadSize;: &autofs-size;</para>
+          &DownloadSize;: &autofs-size;
 @z
 
 @x
-        <para>Estimated disk space required: &autofs-buildsize;</para>
+          Estimated disk space required: &autofs-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &autofs-buildsize;</para>
+          &Estimateddiskspacerequired;: &autofs-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &autofs-time;</para>
+          Estimated build time: &autofs-time;
 @y
-        <para>&Estimatedbuildtime;: &autofs-time;</para>
+          &Estimatedbuildtime;: &autofs-time;
 @z
 
 @x
@@ -121,10 +115,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/autofs"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/autofs"/></para>
 @z
 
 @x
@@ -146,11 +138,9 @@
 @z
 
 @x
-    <para>Recompile and install the new kernel, if necessary.</para>
+      Recompile and install the new kernel, if necessary.
 @y
-    <para>
-    必要な場合は、カーネルを再コンパイル、再インストールします。
-    </para>
+      必要な場合は、カーネルを再コンパイル、再インストールします。
 @z
 
 @x
@@ -160,26 +150,22 @@
 @z
 
 @x
-    <para>Install <application>Autofs</application> by running the following
-    commands:</para>
+      Install <application>Autofs</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Autofs</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Autofs</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -211,15 +197,15 @@
 @z
 
 @x
-      <para><filename>/etc/sysconfig/autofs.conf</filename>,
-      <filename>/etc/auto.master</filename>,
-      <filename>/etc/auto.misc</filename>, and
-      <filename>/etc/auto.net</filename></para>
+        <filename>/etc/sysconfig/autofs.conf</filename>,
+        <filename>/etc/auto.master</filename>,
+        <filename>/etc/auto.misc</filename>, and
+        <filename>/etc/auto.net</filename>
 @y
-      <para><filename>/etc/sysconfig/autofs.conf</filename>,
-      <filename>/etc/auto.master</filename>,
-      <filename>/etc/auto.misc</filename>,
-      <filename>/etc/auto.net</filename></para>
+        <filename>/etc/sysconfig/autofs.conf</filename>,
+        <filename>/etc/auto.master</filename>,
+        <filename>/etc/auto.misc</filename>,
+        <filename>/etc/auto.net</filename>
 @z
 
 @x
@@ -229,123 +215,125 @@
 @z
 
 @x
-      <para>The installation process creates <filename>auto.master</filename>,
-      <filename>auto.misc</filename>,  <filename>auto.smb</filename>, and
-      <filename>auto.net</filename>. Replace the
-      <filename>auto.master</filename> file with the following commands
-      as the <systemitem class="username">root</systemitem> user:</para>
+        The installation process creates <filename>auto.master</filename>,
+        <filename>auto.misc</filename>,  <filename>auto.smb</filename>, and
+        <filename>auto.net</filename>. Replace the
+        <filename>auto.master</filename> file with the following commands
+        as the <systemitem class="username">root</systemitem> user:
 @y
-      <para>The installation process creates <filename>auto.master</filename>,
-      <filename>auto.misc</filename>,  <filename>auto.smb</filename>, and
-      <filename>auto.net</filename>. Replace the
-      <filename>auto.master</filename> file with the following commands
-      as the <systemitem class="username">root</systemitem> user:</para>
+        The installation process creates <filename>auto.master</filename>,
+        <filename>auto.misc</filename>,  <filename>auto.smb</filename>, and
+        <filename>auto.net</filename>. Replace the
+        <filename>auto.master</filename> file with the following commands
+        as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-      <para>This file creates a new media directory, <filename>/media/auto</filename>
-      that will overlay any existing directory of the same name.  In this example,
-      the file, <filename>/etc/auto.misc</filename>, has a line:</para>
+        This file creates a new media directory,
+        <filename>/media/auto</filename> that will overlay any existing
+        directory of the same name.  In this example, the file,
+        <filename>/etc/auto.misc</filename>, has a line:
 @y
-      <para>This file creates a new media directory, <filename>/media/auto</filename>
-      that will overlay any existing directory of the same name.  In this example,
-      the file, <filename>/etc/auto.misc</filename>, has a line:</para>
+        This file creates a new media directory,
+        <filename>/media/auto</filename> that will overlay any existing
+        directory of the same name.  In this example, the file,
+        <filename>/etc/auto.misc</filename>, has a line:
 @z
 
 @x
-      <para>that will mount a cdrom as <filename>/media/auto/cd</filename> if
-      that directory is accessed.  The <option>--ghost</option> option tells
-      the automounter to create <quote>ghost</quote> versions (i.e. empty
-      directories) of all the mount points listed in the configuration file
-      regardless whether any of the file systems are actually mounted or not.
-      This is very convenient and highly recommended, because it will show you
-      the available auto-mountable file systems as existing directories, even
-      when their file systems aren't currently mounted. Without the
-      <option>--ghost</option> option, you'll have to remember the names of the
-      directories. As soon as you try to access one of them, the directory will
-      be created and the file system will be mounted. When the file system gets
-      unmounted again, the directory is destroyed too, unless the
-      <option>--ghost</option> option was given.</para>
+        that will mount a cdrom as <filename>/media/auto/cd</filename> if
+        that directory is accessed.  The <option>--ghost</option> option tells
+        the automounter to create <quote>ghost</quote> versions (i.e. empty
+        directories) of all the mount points listed in the configuration file
+        regardless whether any of the file systems are actually mounted or not.
+        This is very convenient and highly recommended, because it will show
+        you the available auto-mountable file systems as existing directories,
+        even when their file systems aren't currently mounted. Without the
+        <option>--ghost</option> option, you'll have to remember the names of
+        the directories. As soon as you try to access one of them, the
+        directory will be created and the file system will be mounted. When
+        the file system gets unmounted again, the directory is destroyed too,
+        unless the <option>--ghost</option> option was given.
 @y
-      <para>that will mount a cdrom as <filename>/media/auto/cd</filename> if
-      that directory is accessed.  The <option>--ghost</option> option tells
-      the automounter to create <quote>ghost</quote> versions (i.e. empty
-      directories) of all the mount points listed in the configuration file
-      regardless whether any of the file systems are actually mounted or not.
-      This is very convenient and highly recommended, because it will show you
-      the available auto-mountable file systems as existing directories, even
-      when their file systems aren't currently mounted. Without the
-      <option>--ghost</option> option, you'll have to remember the names of the
-      directories. As soon as you try to access one of them, the directory will
-      be created and the file system will be mounted. When the file system gets
-      unmounted again, the directory is destroyed too, unless the
-      <option>--ghost</option> option was given.</para>
+        that will mount a cdrom as <filename>/media/auto/cd</filename> if
+        that directory is accessed.  The <option>--ghost</option> option tells
+        the automounter to create <quote>ghost</quote> versions (i.e. empty
+        directories) of all the mount points listed in the configuration file
+        regardless whether any of the file systems are actually mounted or not.
+        This is very convenient and highly recommended, because it will show
+        you the available auto-mountable file systems as existing directories,
+        even when their file systems aren't currently mounted. Without the
+        <option>--ghost</option> option, you'll have to remember the names of
+        the directories. As soon as you try to access one of them, the
+        directory will be created and the file system will be mounted. When
+        the file system gets unmounted again, the directory is destroyed too,
+        unless the <option>--ghost</option> option was given.
 @z
 
 @x
-        <para>An alternative method would be to specify another automount
-        location such as <filename
-        class='directory'>/var/lib/auto/cdrom</filename> and create a
-        symbolic link from <filename class='directory'>/media/cdrom</filename>
-        to the automount location.</para>
+          An alternative method would be to specify another automount
+          location such as <filename
+          class='directory'>/var/lib/auto/cdrom</filename> and create a
+          symbolic link from <filename
+          class='directory'>/media/cdrom</filename> to the automount location.
 @y
-        <para>An alternative method would be to specify another automount
-        location such as <filename
-        class='directory'>/var/lib/auto/cdrom</filename> and create a
-        symbolic link from <filename class='directory'>/media/cdrom</filename>
-        to the automount location.</para>
+          An alternative method would be to specify another automount
+          location such as <filename
+          class='directory'>/var/lib/auto/cdrom</filename> and create a
+          symbolic link from <filename
+          class='directory'>/media/cdrom</filename> to the automount location.
 @z
 
 @x
-      <para>The <filename>auto.misc</filename> file must be configured to your
-      working hardware. The loaded configuration file should load your cdrom
-      if <filename>/dev/cdrom</filename> is active or it can be edited to
-      match your device setup.  Examples for floppies are available in the file
-      and easily activated. Documentation for this file is available using the
-      <command>man 5 autofs</command> command.</para>
+        The <filename>auto.misc</filename> file must be configured to your
+        working hardware. The loaded configuration file should load your cdrom
+        if <filename>/dev/cdrom</filename> is active or it can be edited to
+        match your device setup.  Examples for floppies are available in the
+        file and easily activated. Documentation for this file is available
+        using the <command>man 5 autofs</command> command.
 @y
-      <para>The <filename>auto.misc</filename> file must be configured to your
-      working hardware. The loaded configuration file should load your cdrom
-      if <filename>/dev/cdrom</filename> is active or it can be edited to
-      match your device setup.  Examples for floppies are available in the file
-      and easily activated. Documentation for this file is available using the
-      <command>man 5 autofs</command> command.</para>
+        The <filename>auto.misc</filename> file must be configured to your
+        working hardware. The loaded configuration file should load your cdrom
+        if <filename>/dev/cdrom</filename> is active or it can be edited to
+        match your device setup.  Examples for floppies are available in the
+        file and easily activated. Documentation for this file is available
+        using the <command>man 5 autofs</command> command.
 @z
 
 @x
-      <para>In the second line, if enabled, a user's home directory would be
-      mounted via NFS upon login.  The <filename>/etc/home.auto</filename>
-      would need to exist and have an entry similar to:</para>
+        In the second line, if enabled, a user's home directory would be
+        mounted via NFS upon login.  The <filename>/etc/home.auto</filename>
+        would need to exist and have an entry similar to:
 @y
-      <para>In the second line, if enabled, a user's home directory would be
-      mounted via NFS upon login.  The <filename>/etc/home.auto</filename>
-      would need to exist and have an entry similar to:</para>
+        In the second line, if enabled, a user's home directory would be
+        mounted via NFS upon login.  The <filename>/etc/home.auto</filename>
+        would need to exist and have an entry similar to:
 @z
 
 @x
-      <para>where the directory <filename>/export/home/joe</filename> is
-      exported via NFS from the system example.org.  NFS shares
-      are covered on the next page.</para>
+        where the directory <filename>/export/home/joe</filename> is
+        exported via NFS from the system example.org.  NFS shares
+        are covered on the next page.
 @y
-      <para>where the directory <filename>/export/home/joe</filename> is
-      exported via NFS from the system example.org.  NFS shares
-      are covered on the next page.</para>
+        where the directory <filename>/export/home/joe</filename> is
+        exported via NFS from the system example.org.  NFS shares
+        are covered on the next page.
 @z
 
 @x
-      <para>This package could also be used to mount SMB shares, however that
-      feature is not configured in these instructions.  For additional
-      configuration information, see the man pages for auto.master(5).  There
-      are also web resources such as this <ulink
-      url='http://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
-      HOWTO</ulink> available.</para>
+        This package could also be used to mount SMB shares, however that
+        feature is not configured in these instructions.  For additional
+        configuration information, see the man pages for auto.master(5). There
+        are also web resources such as this <ulink
+        url='http://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
+        HOWTO</ulink> available.
 @y
-      <para>This package could also be used to mount SMB shares, however that
-      feature is not configured in these instructions.  For additional
-      configuration information, see the man pages for auto.master(5).  There
-      are also web resources such as this <ulink
-      url='http://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
-      HOWTO</ulink> available.</para>
+        This package could also be used to mount SMB shares, however that
+        feature is not configured in these instructions.  For additional
+        configuration information, see the man pages for auto.master(5). There
+        are also web resources such as this <ulink
+        url='http://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
+        HOWTO</ulink> available.
 @z
 
 @x
@@ -357,23 +345,23 @@
 @z
 
 @x
-      <para revision="sysv"><application>autofs</application> installs its own
-      boot script, but it has no capability for logging or visual conformance
-      with other BLFS scripts.</para>
+        <application>autofs</application> installs its own
+        boot script, but it has no capability for logging or visual conformance
+        with other BLFS scripts.
 @y
-      <para revision="sysv"><application>autofs</application> installs its own
-      boot script, but it has no capability for logging or visual conformance
-      with other BLFS scripts.</para>
+        <application>autofs</application> installs its own
+        boot script, but it has no capability for logging or visual conformance
+        with other BLFS scripts.
 @z
 
 @x
-      <para revision="sysv">Install the <filename>/etc/init.d/autofs</filename>
-      mount script included with the <xref linkend="bootscripts"/>
-      package.</para>
+        Install the <filename>/etc/init.d/autofs</filename>
+        mount script included with the <xref linkend="bootscripts"/>
+        package.
 @y
-      <para revision="sysv">Install the <filename>/etc/init.d/autofs</filename>
-      mount script included with the <xref linkend="bootscripts"/>
-      package.</para>
+        Install the <filename>/etc/init.d/autofs</filename>
+        mount script included with the <xref linkend="bootscripts"/>
+        package.
 @z
 
 @x
@@ -387,17 +375,17 @@
 @z
 
 @x
-      <para revision="sysv">The time-out variable is set in
-      <filename>/etc/sysconfig/autofs.conf</filename>. The installed file sets
-      a default of 60 seconds of inactivity before unmounting the device.  A
-      much shorter time may be necessary to protect buffer writing to a floppy
-      if users tend to remove the media prior to the timeout setting.</para>
+        The time-out variable is set in
+        <filename>/etc/sysconfig/autofs.conf</filename>. The installed file sets
+        a default of 60 seconds of inactivity before unmounting the device.  A
+        much shorter time may be necessary to protect buffer writing to a floppy
+        if users tend to remove the media prior to the timeout setting.
 @y
-      <para revision="sysv">The time-out variable is set in
-      <filename>/etc/sysconfig/autofs.conf</filename>. The installed file sets
-      a default of 60 seconds of inactivity before unmounting the device.  A
-      much shorter time may be necessary to protect buffer writing to a floppy
-      if users tend to remove the media prior to the timeout setting.</para>
+        The time-out variable is set in
+        <filename>/etc/sysconfig/autofs.conf</filename>. The installed file sets
+        a default of 60 seconds of inactivity before unmounting the device.  A
+        much shorter time may be necessary to protect buffer writing to a floppy
+        if users tend to remove the media prior to the timeout setting.
 @z
 
 @x
@@ -457,9 +445,9 @@
 @z
 
 @x automount
-          <para>is the daemon that performs the mounting when a request is
-          made for the device.</para>
+            is the daemon that performs the mounting when a request is
+            made for the device.
 @y
-          <para>is the daemon that performs the mounting when a request is
-          made for the device.</para>
+            is the daemon that performs the mounting when a request is
+            made for the device.
 @z

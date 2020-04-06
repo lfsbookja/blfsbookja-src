@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>xfsprogs</application> package contains
-    administration and debugging tools for the XFS file system.</para>
+      The <application>xfsprogs</application> package contains
+      administration and debugging tools for the XFS file system.
 @y
-    <para>
-    <application>xfsprogs</application> パッケージは XFS ファイルシステムの管理ツール、デバッグツールを提供します。
-    </para>
+      <application>xfsprogs</application> パッケージは XFS ファイルシステムの管理ツール、デバッグツールを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xfsprogs-download-http;"/></para>
+          Download (HTTP): <ulink url="&xfsprogs-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xfsprogs-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xfsprogs-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xfsprogs-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xfsprogs-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xfsprogs-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xfsprogs-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xfsprogs-md5sum;</para>
+          Download MD5 sum: &xfsprogs-md5sum;
 @y
-        <para>&Download; MD5 sum: &xfsprogs-md5sum;</para>
+          &Download; MD5 sum: &xfsprogs-md5sum;
 @z
 
 @x
-        <para>Download size: &xfsprogs-size;</para>
+          Download size: &xfsprogs-size;
 @y
-        <para>&DownloadSize;: &xfsprogs-size;</para>
+          &DownloadSize;: &xfsprogs-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xfsprogs-buildsize;</para>
+          Estimated disk space required: &xfsprogs-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xfsprogs-buildsize;</para>
+          &Estimateddiskspacerequired;: &xfsprogs-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xfsprogs-time;</para>
+          Estimated build time: &xfsprogs-time;
 @y
-        <para>&Estimatedbuildtime;: &xfsprogs-time;</para>
+          &Estimatedbuildtime;: &xfsprogs-time;
 @z
 
 @x
@@ -83,12 +81,10 @@
 @z
 
 @x
-    <para>Enable the following options in the kernel configuration
-    and recompile the kernel:</para>
+      Enable the following options in the kernel configuration
+      and recompile the kernel:
 @y
-    <para>
-    以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
-    </para>
+      以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
 @z
 
 @x
@@ -98,26 +94,22 @@
 @z
 
 @x
-    <para>Install <application>xfsprogs</application> by running the following
-    commands:</para>
+      Install <application>xfsprogs</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>xfsprogs</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>xfsprogs</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -127,48 +119,44 @@
 @z
 
 @x
-    <para><command>make DEBUG=-DNDEBUG</command>: Turns off debugging
-    symbols.</para>
+      <command>make DEBUG=-DNDEBUG</command>: Turns off debugging
+      symbols.
 @y
-    <para>
-    <command>make DEBUG=-DNDEBUG</command>: デバッグシンボルを無効にします。
-    </para>
+      <command>make DEBUG=-DNDEBUG</command>: デバッグシンボルを無効にします。
 @z
 
 @x
-    <para><parameter>INSTALL_USER=root INSTALL_GROUP=root</parameter>: This
-    sets the owner and group of the installed files.</para>
+      <parameter>INSTALL_USER=root INSTALL_GROUP=root</parameter>: This
+      sets the owner and group of the installed files.
 @y
-    <para>
-    <parameter>INSTALL_USER=root INSTALL_GROUP=root</parameter>: This
-    sets the owner and group of the installed files.
-    </para>
+      <parameter>INSTALL_USER=root INSTALL_GROUP=root</parameter>: This
+      sets the owner and group of the installed files.
 @z
 
 @x
-    <para><parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
-    extra configuration options to the <filename>configure</filename> script.
-    The example <parameter>--enable-readline</parameter> parameter
-    enables linking the XFS programs with the
-    <filename class="libraryfile">libreadline.so</filename> library, in order
-    to allow editing interactive commands.</para>
+      <parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
+      extra configuration options to the <filename>configure</filename> script.
+      The example <parameter>--enable-readline</parameter> parameter
+      enables linking the XFS programs with the
+      <filename class="libraryfile">libreadline.so</filename> library, in order
+      to allow editing interactive commands.
 @y
-    <para><parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
-    extra configuration options to the <filename>configure</filename> script.
-    The example <parameter>--enable-readline</parameter> parameter
-    enables linking the XFS programs with the
-    <filename class="libraryfile">libreadline.so</filename> library, in order
-    to allow editing interactive commands.</para>
+      <parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
+      extra configuration options to the <filename>configure</filename> script.
+      The example <parameter>--enable-readline</parameter> parameter
+      enables linking the XFS programs with the
+      <filename class="libraryfile">libreadline.so</filename> library, in order
+      to allow editing interactive commands.
 @z
 
 @x
-    <para><option>OPTIMIZER="..."</option>: Adding this parameter to
-    the end of the <command>make</command> command overrides the
-    default optimization settings.</para>
+      <option>OPTIMIZER="..."</option>: Adding this parameter to
+      the end of the <command>make</command> command overrides the
+      default optimization settings.
 @y
-    <para><option>OPTIMIZER="..."</option>: Adding this parameter to
-    the end of the <command>make</command> command overrides the
-    default optimization settings.</para>
+      <option>OPTIMIZER="..."</option>: Adding this parameter to
+      the end of the <command>make</command> command overrides the
+      default optimization settings.
 @z
 
 @x
@@ -210,135 +198,165 @@
 @z
 
 @x fsck.xfs
-          <para>simply exits with a zero status, since XFS
-          partitions are checked at mount time.</para>
+            simply exits with a zero status, since XFS
+            partitions are checked at mount time.
 @y
-          <para>simply exits with a zero status, since XFS
-          partitions are checked at mount time.</para>
+            simply exits with a zero status, since XFS
+            partitions are checked at mount time.
 @z
 
 @x mkfs.xfs
-          <para>constructs an XFS file system.</para>
+            constructs an XFS file system.
 @y
-          <para>constructs an XFS file system.</para>
+            constructs an XFS file system.
 @z
 
 @x xfs_admin
-          <para>changes the parameters of an XFS file system.</para>
+            changes the parameters of an XFS file system.
 @y
-          <para>changes the parameters of an XFS file system.</para>
+            changes the parameters of an XFS file system.
 @z
 
 @x xfs_bmap
-          <para>prints block mapping for an XFS file.</para>
+            prints block mapping for an XFS file.
 @y
-          <para>prints block mapping for an XFS file.</para>
+            prints block mapping for an XFS file.
 @z
 
 @x xfs_copy
-          <para>copies the contents of an XFS file system
-          to one or more targets in parallel.</para>
+            copies the contents of an XFS file system
+            to one or more targets in parallel.
 @y
-          <para>copies the contents of an XFS file system
-          to one or more targets in parallel.</para>
+            copies the contents of an XFS file system
+            to one or more targets in parallel.
+@z
+
+@x xfs_estimate
+            for each directory argument, estimates the space that directory
+            would take if it were copied to an XFS filesystem
+            (does not cross mount points).
+@y
+            for each directory argument, estimates the space that directory
+            would take if it were copied to an XFS filesystem
+            (does not cross mount points).
 @z
 
 @x xfs_db
-          <para>is used to debug an XFS file system.</para>
+            is used to debug an XFS file system.
 @y
-          <para>is used to debug an XFS file system.</para>
+            is used to debug an XFS file system.
 @z
 
 @x xfs_freeze
-          <para>suspends access to an XFS file system.</para>
+            suspends access to an XFS file system.
 @y
-          <para>suspends access to an XFS file system.</para>
+            suspends access to an XFS file system.
+@z
+
+@x
+            applicable only to XFS filesystems, improves the organization of
+            mounted filesystems, the reorganization algorithm operates on one
+            file at a time, compacting or othewise  improving the layout of the
+            file extents (contiguous blocks of file data).
+@y
+            applicable only to XFS filesystems, improves the organization of
+            mounted filesystems, the reorganization algorithm operates on one
+            file at a time, compacting or othewise  improving the layout of the
+            file extents (contiguous blocks of file data).
 @z
 
 @x xfs_growfs
-          <para>expands an XFS file system.</para>
+            expands an XFS file system.
 @y
-          <para>expands an XFS file system.</para>
+            expands an XFS file system.
 @z
 
 @x xfs_info
-          <para>is equivalent to invoking <command>xfs_growfs</command>, but
-          specifying that no change to the file system is to be made.</para>
+            is equivalent to invoking <command>xfs_growfs</command>, but
+            specifying that no change to the file system is to be made.
 @y
-          <para>is equivalent to invoking <command>xfs_growfs</command>, but
-          specifying that no change to the file system is to be made.</para>
+            is equivalent to invoking <command>xfs_growfs</command>, but
+            specifying that no change to the file system is to be made.
 @z
 
 @x xfs_io
-          <para>is a debugging tool like <command>xfs_db</command>, but is
-          aimed at examining the regular file I/O path rather than the raw
-          XFS volume itself.</para>
+            is a debugging tool like <command>xfs_db</command>, but is
+            aimed at examining the regular file I/O path rather than the raw
+            XFS volume itself.
 @y
-          <para>is a debugging tool like <command>xfs_db</command>, but is
-          aimed at examining the regular file I/O path rather than the raw
-          XFS volume itself.</para>
+            is a debugging tool like <command>xfs_db</command>, but is
+            aimed at examining the regular file I/O path rather than the raw
+            XFS volume itself.
 @z
 
 @x xfs_logprint
-          <para>prints the log of an XFS file system.</para>
+            prints the log of an XFS file system.
 @y
-          <para>prints the log of an XFS file system.</para>
+            prints the log of an XFS file system.
 @z
 
 @x xfs_mdrestore
-          <para>restores an XFS metadump image to a filesystem image.</para>
+            restores an XFS metadump image to a filesystem image.
 @y
-          <para>restores an XFS metadump image to a filesystem image.</para>
+            restores an XFS metadump image to a filesystem image.
 @z
 
 @x xfs_metadump
-          <para>copies XFS filesystem metadata to a file.</para>
+            copies XFS filesystem metadata to a file.
 @y
-          <para>copies XFS filesystem metadata to a file.</para>
+            copies XFS filesystem metadata to a file.
 @z
 
 @x xfs_mkfile
-          <para>creates an XFS file, padded with zeroes by default.</para>
+            creates an XFS file, padded with zeroes by default.
 @y
-          <para>creates an XFS file, padded with zeroes by default.</para>
+            creates an XFS file, padded with zeroes by default.
 @z
 
 @x xfs_ncheck
-          <para>generates pathnames from inode numbers for an
-          XFS file system.</para>
+            generates pathnames from inode numbers for an
+            XFS file system.
 @y
-          <para>generates pathnames from inode numbers for an
-          XFS file system.</para>
+            generates pathnames from inode numbers for an
+            XFS file system.
 @z
 
 @x xfs_quota
-          <para>is a utility for reporting and editing various
-          aspects of filesystem quota.</para>
+            is a utility for reporting and editing various
+            aspects of filesystem quota.
 @y
-          <para>is a utility for reporting and editing various
-          aspects of filesystem quota.</para>
+            is a utility for reporting and editing various
+            aspects of filesystem quota.
 @z
 
 @x xfs_repair
-          <para>repairs corrupt or damaged XFS file systems.</para>
+            repairs corrupt or damaged XFS file systems.
 @y
-          <para>repairs corrupt or damaged XFS file systems.</para>
+            repairs corrupt or damaged XFS file systems.
 @z
 
 @x xfs_rtcp
-          <para>copies a file to the real-time partition on an
-          XFS file system.</para>
+            copies a file to the real-time partition on an
+            XFS file system.
 @y
-          <para>copies a file to the real-time partition on an
-          XFS file system.</para>
+            copies a file to the real-time partition on an
+            XFS file system.
+@z
+
+@x xfs_spaceman
+            reports and controls free space usage in an
+            XFS file system.
+@y
+            reports and controls free space usage in an
+            XFS file system.
 @z
 
 @x libhandle.so
-          <para>contains XFS-specific functions that provide a way to perform
-          certain filesystem  operations without using a file descriptor to
-          access filesystem objects.</para>
+            contains XFS-specific functions that provide a way to perform
+            certain filesystem  operations without using a file descriptor to
+            access filesystem objects.
 @y
-          <para>contains XFS-specific functions that provide a way to perform
-          certain filesystem  operations without using a file descriptor to
-          access filesystem objects.</para>
+            contains XFS-specific functions that provide a way to perform
+            certain filesystem  operations without using a file descriptor to
+            access filesystem objects.
 @z

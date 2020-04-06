@@ -28,17 +28,15 @@
 @z
 
 @x
-    <para>The <application>libxcb</application> package provides an interface
-    to the X Window System protocol, which replaces the current Xlib interface.
-    Xlib can also use XCB as a transport layer, allowing software to make
-    requests and receive responses with both.</para>
+      The <application>libxcb</application> package provides an interface to
+      the X Window System protocol, which replaces the current Xlib interface.
+      Xlib can also use XCB as a transport layer, allowing software to make
+      requests and receive responses with both.
 @y
-    <para>
-    <application>libxcb</application> パッケージは、X ウィンドウシステムプロトコルへのインターフェースを提供します。
-    これは Xlib インターフェースに代わるものとなります。
-    Xlib はトランスポート層として XCB も利用します。
-    これによりソフトウェアによるリクエストとレスポンスの双方を可能とします。
-    </para>
+      <application>libxcb</application> パッケージは、X ウィンドウシステムプロトコルへのインターフェースを提供します。
+      これは Xlib インターフェースに代わるものとなります。
+      Xlib はトランスポート層として XCB も利用します。
+      これによりソフトウェアによるリクエストとレスポンスの双方を可能とします。
 @z
 
 @x
@@ -48,39 +46,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libxcb-download-http;"/></para>
+          Download (HTTP): <ulink url="&libxcb-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libxcb-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libxcb-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libxcb-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libxcb-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libxcb-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libxcb-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libxcb-md5sum;</para>
+          Download MD5 sum: &libxcb-md5sum;
 @y
-        <para>&Download; MD5 sum: &libxcb-md5sum;</para>
+          &Download; MD5 sum: &libxcb-md5sum;
 @z
 
 @x
-        <para>Download size: &libxcb-size;</para>
+          Download size: &libxcb-size;
 @y
-        <para>&DownloadSize;: &libxcb-size;</para>
+          &DownloadSize;: &libxcb-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libxcb-buildsize;</para>
+          Estimated disk space required: &libxcb-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libxcb-buildsize;</para>
+          &Estimateddiskspacerequired;: &libxcb-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libxcb-time;</para>
+          Estimated build time: &libxcb-time;
 @y
-        <para>&Estimatedbuildtime;: &libxcb-time;</para>
+          &Estimatedbuildtime;: &libxcb-time;
 @z
 
 @x
@@ -142,28 +140,22 @@
 @z
 
 @x
-    <para>Install <application>libxcb</application> by running the following
-    commands:</para>
+      Install <application>libxcb</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libxcb</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libxcb</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -173,26 +165,24 @@
 @z
 
 @x
-    <para><command>sed "s/pthread-stubs//" -i configure</command>: This
-    sed removes a dependency on the libpthread-stubs package which is useless on
-    Linux.</para>
+      <command>sed "s/pthread-stubs//" -i configure</command>: This sed
+      removes a dependency on the libpthread-stubs package which is useless on
+      Linux.
 @y
-    <para><command>sed "s/pthread-stubs//" -i configure</command>:
-    この sed コマンドは libpthread-stubs パッケージへの依存を除きます。
-    これは Linux では不要なものです。
-    </para>
+      <command>sed "s/pthread-stubs//" -i configure</command>:
+      この sed コマンドは libpthread-stubs パッケージへの依存を除きます。
+      これは Linux では不要なものです。
 @z
 
 @x
-    <para><parameter>--without-doxygen</parameter>: Do not use doxygen to
-    generate API documentation (default: auto). Without it, if
-    <xref linkend="doxygen"/> is installed, the API documentation will be
-    generated and installed.</para>
+      <parameter>--without-doxygen</parameter>: Do not use doxygen to
+      generate API documentation (default: auto). Without it, if
+      <xref linkend="doxygen"/> is installed, the API documentation will be
+      generated and installed.
 @y
-    <para><parameter>--without-doxygen</parameter>:
-    doxygen を用いた API ドキュメント生成をしないようにします (デフォルトは auto)。
-    これを指定せずに <xref linkend="doxygen"/> がインストールされていた場合は API ドキュメントが生成されインストールされます。
-    </para>
+      <parameter>--without-doxygen</parameter>:
+      doxygen を用いた API ドキュメント生成をしないようにします (デフォルトは auto)。
+      これを指定せずに <xref linkend="doxygen"/> がインストールされていた場合は API ドキュメントが生成されインストールされます。
 @z
 
 @x
@@ -253,10 +243,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libxcb.{so,a}
-          <para>is an interface to the X Window System protocol.</para>
+@x libxcb.so
+            is an interface to the X Window System protocol.
 @y
-          <para>
-          X ウィンドウシステムプロトコルへのインターフェースを提供します。
-          </para>
+            X ウィンドウシステムプロトコルへのインターフェースを提供します。
 @z

@@ -26,17 +26,25 @@
 @z
 
 @x
-    <para>The <application>Traceroute</application> package contains a program
-    which is used to display the network route that packets take to reach a
-    specified host. This is a standard network troubleshooting tool. If you find
-    yourself unable to connect to another system, traceroute can help pinpoint
-    the problem.</para>
+      The <application>Traceroute</application> package contains a program
+      which is used to display the network route that packets take to reach a
+      specified host. This is a standard network troubleshooting tool. If you
+      find yourself unable to connect to another system, traceroute can help
+      pinpoint the problem.
 @y
-    <para>
-    <application>Traceroute</application> パッケージは、特定のホストマシンに向けて送信されたパケットのネットワーク経路 (route) を表示するプログラムを提供します。
-    ネットワークトラブルを解決する標準的なツールです。
-    他システムへの接続が出来ない場合、traceroute は問題を的確に突き止めるツールとして利用できます。
-    </para>
+      <application>Traceroute</application> パッケージは、特定のホストマシンに向けて送信されたパケットのネットワーク経路 (route) を表示するプログラムを提供します。
+      ネットワークトラブルを解決する標準的なツールです。
+      他システムへの接続が出来ない場合、traceroute は問題を的確に突き止めるツールとして利用できます。
+@z
+
+@x
+        This package overwrites the version of <command>traceroute</command>
+        that was installed in the inetutils package in LFS. This version is
+        more powerful and allows many more options than the standard version.
+@y
+        This package overwrites the version of <command>traceroute</command>
+        that was installed in the inetutils package in LFS. This version is
+        more powerful and allows many more options than the standard version.
 @z
 
 @x
@@ -46,76 +54,70 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&traceroute-download-http;"/></para>
+          Download (HTTP): <ulink url="&traceroute-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&traceroute-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&traceroute-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&traceroute-download-ftp;"/></para>
+          Download (FTP): <ulink url="&traceroute-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&traceroute-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&traceroute-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &traceroute-md5sum;</para>
+          Download MD5 sum: &traceroute-md5sum;
 @y
-        <para>&Download; MD5 sum: &traceroute-md5sum;</para>
+          &Download; MD5 sum: &traceroute-md5sum;
 @z
 
 @x
-        <para>Download size: &traceroute-size;</para>
+          Download size: &traceroute-size;
 @y
-        <para>&DownloadSize;: &traceroute-size;</para>
+          &DownloadSize;: &traceroute-size;
 @z
 
 @x
-        <para>Estimated disk space required: &traceroute-buildsize;</para>
+          Estimated disk space required: &traceroute-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &traceroute-buildsize;</para>
+          &Estimateddiskspacerequired;: &traceroute-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &traceroute-time;</para>
+          Estimated build time: &traceroute-time;
 @y
-        <para>&Estimatedbuildtime;: &traceroute-time;</para>
+          &Estimatedbuildtime;: &traceroute-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/traceroute"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/traceroute"/></para>
 @z
 
 @x
     <title>Installation of Traceroute</title>
 @y
-    <title>Traceroute のインストール</title>
+    <title>&InstallationOf1;Traceroute&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Traceroute</application> by running the following
-    commands:</para>
+      Install <application>Traceroute</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Traceroute</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Traceroute</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -151,17 +153,17 @@
 @z
 
 @x traceroute
-          <para>does basically what it says: it traces the route your packets
-          take from the host you are working on to another host on a network,
-          showing all the intermediate hops (gateways) along the way.</para>
+            does basically what it says: it traces the route your packets
+            take from the host you are working on to another host on a network,
+            showing all the intermediate hops (gateways) along the way.
 @y
-          <para>does basically what it says: it traces the route your packets
-          take from the host you are working on to another host on a network,
-          showing all the intermediate hops (gateways) along the way.</para>
+            does basically what it says: it traces the route your packets
+            take from the host you are working on to another host on a network,
+            showing all the intermediate hops (gateways) along the way.
 @z
 
 @x traceroute6
-          <para>is equivalent to <command>traceroute -6</command>.</para>
+            is equivalent to <command>traceroute -6</command>.
 @y
-          <para>is equivalent to <command>traceroute -6</command>.</para>
+            is equivalent to <command>traceroute -6</command>.
 @z

@@ -28,12 +28,10 @@
 @z
 
 @x
-    <para>The <application>btrfs-progs</application> package contains administration
-    and debugging tools for the B-tree file system (btrfs).</para>
+      The <application>btrfs-progs</application> package contains
+      administration and debugging tools for the B-tree file system (btrfs).
 @y
-    <para>
-    <application>btrfs-progs</application> パッケージは B ツリーファイルシステム (btffs) の管理およびデバッグを行うツールを提供します。
-    </para>
+      <application>btrfs-progs</application> パッケージは B ツリーファイルシステム (btffs) の管理およびデバッグを行うツールを提供します。
 @z
 
 @x
@@ -43,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&btrfs-progs-download-http;"/></para>
+          Download (HTTP): <ulink url="&btrfs-progs-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&btrfs-progs-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&btrfs-progs-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&btrfs-progs-download-ftp;"/></para>
+          Download (FTP): <ulink url="&btrfs-progs-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&btrfs-progs-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&btrfs-progs-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &btrfs-progs-md5sum;</para>
+          Download MD5 sum: &btrfs-progs-md5sum;
 @y
-        <para>&Download; MD5 sum: &btrfs-progs-md5sum;</para>
+          &Download; MD5 sum: &btrfs-progs-md5sum;
 @z
 
 @x
-        <para>Download size: &btrfs-progs-size;</para>
+          Download size: &btrfs-progs-size;
 @y
-        <para>&DownloadSize;: &btrfs-progs-size;</para>
+          &DownloadSize;: &btrfs-progs-size;
 @z
 
 @x
-        <para>Estimated disk space required: &btrfs-progs-buildsize;</para>
+          Estimated disk space required: &btrfs-progs-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &btrfs-progs-buildsize;</para>
+          &Estimateddiskspacerequired;: &btrfs-progs-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &btrfs-progs-time;</para>
+          Estimated build time: &btrfs-progs-time;
 @y
-        <para>&Estimatedbuildtime;: &btrfs-progs-time;</para>
+          &Estimatedbuildtime;: &btrfs-progs-time;
 @z
 
 @x
@@ -139,23 +137,19 @@
 @z
 
 @x
-    <para>Enable the following option in the kernel configuration
-    and recompile the kernel:</para>
+      Enable the following option in the kernel configuration
+      and recompile the kernel:
 @y
-    <para>
-    カーネル設定における以下のオプションを有効にして、カーネルを再コンパイルします。
-    </para>
+      カーネル設定における以下のオプションを有効にして、カーネルを再コンパイルします。
 @z
 
 @x
-    <note><para>CONFIG_BTRFS_FS_POSIX_ACL and 
-    CONFIG_REISERFS_FS_XATTR are required for some tests.
-    Other Btrfs options in the kernel are optional.</para></note>
+        CONFIG_BTRFS_FS_POSIX_ACL and 
+        CONFIG_REISERFS_FS_XATTR are required for some tests.
+        Other Btrfs options in the kernel are optional.
 @y
-    <note><para>
-    テストの中には CONFIG_BTRFS_FS_POSIX_ACL と CONFIG_REISERFS_FS_XATTR の設定を必要とするものがあります。
-    Btrfs に関する他のオプションはすべて任意設定です。
-    </para></note>
+        テストの中には CONFIG_BTRFS_FS_POSIX_ACL と CONFIG_REISERFS_FS_XATTR の設定を必要とするものがあります。
+        Btrfs に関する他のオプションはすべて任意設定です。
 @z
 
 @x
@@ -165,40 +159,42 @@
 @z
 
 @x
-    <para>Install <application>btrfs-progs</application> by running the following
-    commands:</para>
+      Install <application>btrfs-progs</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>btrfs-progs</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>btrfs-progs</application> をビルドします。
 @z
 
 @x
-    <para>Before running tests, build a support program and 
-    disable several that fail:</para>
+        Some tests require grep built with perl regular expressions. To
+        obtain this, rebuild grep with the LFS Chapter 6 instructions after
+        installing <xref linkend="pcre"/>.
 @y
-    <para>
+        Some tests require grep built with perl regular expressions. To
+        obtain this, rebuild grep with the LFS Chapter 6 instructions after
+        installing <xref linkend="pcre"/>.
+@z
+
+@x
+      Before running tests, build a support program and 
+      disable several that fail:
+@y
     テストを実行する場合は、その前にサポートプログラムをビルドし、さらに失敗するテストは無効にします。
-    </para>
 @z
 
 @x
-    <para>To test the results, issue (as the <systemitem
-    class="username">root</systemitem> user): </para>
+      To test the results, issue (as the <systemitem
+      class="username">root</systemitem> user): 
 @y
-    <para>
-    ビルド結果をテストする場合は (<systemitem
-    class="username">root</systemitem> ユーザーになって) 以下を実行します。
-    </para>
+      ビルド結果をテストする場合は (<systemitem
+      class="username">root</systemitem> ユーザーになって) 以下を実行します。
 @z
 
 @x
-    <para>Install the package as the <systemitem
-    class="username">root</systemitem> user:</para>
+      Install the package as the <systemitem
+      class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになってパッケージをインストールします。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになってパッケージをインストールします。
 @z
 
 @x
@@ -208,39 +204,35 @@
 @z
 
 @x
-    <para><option>--disable-documentation</option>: This option
-    is needed if the recommended dependencies are not installed.</para>
+      <option>--disable-documentation</option>: This option
+      is needed if the recommended dependencies are not installed.
 @y
-    <para><option>--disable-documentation</option>:
-    このオプションは、推奨する依存パッケージがインストールされていない場合に必要となります。
-    </para>
+      <option>--disable-documentation</option>:
+      このオプションは、推奨する依存パッケージがインストールされていない場合に必要となります。
 @z
 
 @x
-    <para><command>mv tests/{cli,convert,misc,fuzz}-tests/ ...</command>: Disables
-    tests that fail and prevent tests from completing.</para>
+      <command>mv tests/{cli,convert,misc,fuzz}-tests/ ...</command>: Disables
+      tests that fail and prevent tests from completing.
 @y
-    <para><command>mv tests/{cli,convert,misc,fuzz}-tests/ ...</command>:
-    失敗するテストを無効にし、テスト全体を成功させます。
-    </para>
+      <command>mv tests/{cli,convert,misc,fuzz}-tests/ ...</command>:
+      失敗するテストを無効にし、テスト全体を成功させます。
 @z
 
 @x
-    <para><command>ln -s ... /usr/lib/libbtrfs.so</command>: Creates a 
-    symbolic link in the directory where it is expected.</para>
+      <command>ln -s ... /usr/lib/libbtrfs.so</command>: Creates a 
+      symbolic link in the directory where it is expected.
 @y
-    <para><command>ln -s ... /usr/lib/libbtrfs.so</command>:
-    必要なシンボリックリンクを生成します。
-    </para>
+      <command>ln -s ... /usr/lib/libbtrfs.so</command>:
+      必要なシンボリックリンクを生成します。
 @z
 
 @x
-    <para><command>rm /lib/libbtrfs.{a,so}</command>: Removes unneeded
-    library entries.</para>
+      <command>rm /lib/libbtrfs.{a,so}</command>: Removes unneeded
+      library entries.
 @y
-    <para><command>rm /lib/libbtrfs.{a,so}</command>:
-    不要なライブラリを削除します。
-    </para>
+      <command>rm /lib/libbtrfs.{a,so}</command>:
+      不要なライブラリを削除します。
 @z
 
 @x
@@ -350,7 +342,7 @@
 @z
 
 @x mkfs.btrfs
-          <para>creates a btrfs file system.</para>
+            creates a btrfs file system.
 @y
-          <para>creates a btrfs file system.</para>
+            creates a btrfs file system.
 @z

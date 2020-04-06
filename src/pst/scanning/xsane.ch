@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para><application>XSane</application> is another front end for
-    <xref linkend="sane"/>. It has additional features to improve the image
-    quality and ease of use compared to <command>xscanimage</command>.</para>
+      <application>XSane</application> is another front end for
+      <xref linkend="sane"/>. It has additional features to improve the image
+      quality and ease of use compared to <command>xscanimage</command>.
 @y
-    <para>
-    <application>XSane</application> は <xref linkend="sane"/> に対するもうひとつのフロントエンドです。
-    これは <command>xscanimage</command> に比べて、イメージ品質の向上機能があり、利用し易いものにもなっています。
-    </para>
+      <application>XSane</application> は <xref linkend="sane"/> に対するもうひとつのフロントエンドです。
+      これは <command>xscanimage</command> に比べて、イメージ品質の向上機能があり、利用し易いものにもなっています。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xsane-download-http;"/></para>
+          Download (HTTP): <ulink url="&xsane-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xsane-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xsane-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xsane-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xsane-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xsane-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xsane-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xsane-md5sum;</para>
+          Download MD5 sum: &xsane-md5sum;
 @y
-        <para>&Download; MD5 sum: &xsane-md5sum;</para>
+          &Download; MD5 sum: &xsane-md5sum;
 @z
 
 @x
-        <para>Download size: &xsane-size;</para>
+          Download size: &xsane-size;
 @y
-        <para>&DownloadSize;: &xsane-size;</para>
+          &DownloadSize;: &xsane-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xsane-buildsize;</para>
+          Estimated disk space required: &xsane-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xsane-buildsize;</para>
+          &Estimateddiskspacerequired;: &xsane-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xsane-time;</para>
+          Estimated build time: &xsane-time;
 @y
-        <para>&Estimatedbuildtime;: &xsane-time;</para>
+          &Estimatedbuildtime;: &xsane-time;
 @z
 
 @x
@@ -119,55 +117,63 @@
 @z
 
 @x
-    <para>Install <application>XSane</application> by running the following
-    commands:</para>
+      Install <application>XSane</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>XSane</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>XSane</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>A browser of your choice can be used to get inline help, using the
-    following command,  as the <systemitem class="username">root</systemitem>
-    user:</para>
+      A browser of your choice can be used to get inline help, using the
+      following command,  as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>A browser of your choice can be used to get inline help, using the
-    following command,  as the <systemitem class="username">root</systemitem>
-    user:</para>
+      A browser of your choice can be used to get inline help, using the
+      following command,  as the <systemitem class="username">root</systemitem>
+      user:
 @z
 
 @x
-    <note><para>Be sure to replace &lt;browser&gt; with the browser of your
-    choice on your system.</para></note>
+        Be sure to replace &lt;browser&gt; with the browser of your
+        choice on your system.
 @y
-    <note><para>
-    &lt;browser&gt; の部分は、あなたが選んだシステム内のブラウザーを指定してください。
-    </para></note>
+        &lt;browser&gt; の部分は、あなたが選んだシステム内のブラウザーを指定してください。
 @z
 
 @x
-    <para>If <application>GIMP</application> is installed, issue the following
-    command as the <systemitem class="username">root</systemitem> user:</para>
+      Alternatively, if the environment variable BROWSER is set to the browser
+      you want to use, eg, BROWSER="/usr/bin/firefox", the first time you run
+      <command>xsane</command>, it will be recorded in <filename>
+      ~/.sane/xsane/xsane.rc</filename>. If you wish to change it, edit this
+      file, or remove it, and use the instructions above, so that a new one is
+      created.
 @y
-    <para>
-    <application>GIMP</application> をインストールしている場合は、<systemitem
-    class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      Alternatively, if the environment variable BROWSER is set to the browser
+      you want to use, eg, BROWSER="/usr/bin/firefox", the first time you run
+      <command>xsane</command>, it will be recorded in <filename>
+      ~/.sane/xsane/xsane.rc</filename>. If you wish to change it, edit this
+      file, or remove it, and use the instructions above, so that a new one is
+      created.
+@z
+
+@x
+      If <application>GIMP</application> is installed, issue the following
+      command as the <systemitem class="username">root</systemitem> user:
+@y
+      <application>GIMP</application> をインストールしている場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -187,43 +193,41 @@
 % @z
 
 @x
-    <para><command>ln -v -s ../../doc/xsane-&xsane-version;
-    /usr/share/sane/xsane/doc</command>: This symlink is created to ensure that
-    any program that looks for the <application>XSane</application>
-    documentation in the default location will find it, as the documentation
-    is installed in an alternate location specified in the
-    <command>make install</command> command.</para>
+      <command>ln -v -s ../../doc/xsane-&xsane-version;
+      /usr/share/sane/xsane/doc</command>: This symlink is created to ensure
+      that any program that looks for the <application>XSane</application>
+      documentation in the default location will find it, as the documentation
+      is installed in an alternate location specified in the <command>make
+      install</command> command.
 @y
-    <para><command>ln -v -s ../../doc/xsane-&xsane-version;
-    /usr/share/sane/xsane/doc</command>:
-    
-This symlink is created to ensure that
-    any program that looks for the <application>XSane</application>
-    documentation in the default location will find it, as the documentation
-    is installed in an alternate location specified in the
-    <command>make install</command> command.</para>
+      <command>ln -v -s ../../doc/xsane-&xsane-version;
+      /usr/share/sane/xsane/doc</command>: This symlink is created to ensure
+      that any program that looks for the <application>XSane</application>
+      documentation in the default location will find it, as the documentation
+      is installed in an alternate location specified in the <command>make
+      install</command> command.
 @z
 
 @x
-    <para><command>ln -v -s /usr/bin/xsane /usr/lib/gimp/2.0/plug-ins/</command>:
-    This creates a link in the system-wide <application>GIMP</application>
-    <filename class='directory'>plug-ins</filename> directory so that users can
-    access <application>XSane</application> directly from
-    <application>GIMP</application>. <application>GIMP</application> must be
-    available before building <application>XSane</application> for this to work.
-    Alternatively, create the link in <filename
-    class='directory'>~/.gimp-2.0/plug-ins/</filename> to provide individual
-    user access. <command>man xsane</command> for additional information.</para>
+      <command>ln -v -s /usr/bin/xsane /usr/lib/gimp/2.0/plug-ins/</command>:
+      This creates a link in the system-wide <application>GIMP</application>
+      <filename class='directory'>plug-ins</filename> directory so that users
+      can access <application>XSane</application> directly from
+      <application>GIMP</application>. <application>GIMP</application> must
+      be available before building <application>XSane</application> for this
+      to work. Alternatively, create the link in <filename
+      class='directory'>~/.gimp-2.0/plug-ins/</filename> to provide individual
+      user access. <command>man xsane</command> for additional information.
 @y
-    <para><command>ln -v -s /usr/bin/xsane /usr/lib/gimp/2.0/plug-ins/</command>:
-    This creates a link in the system-wide <application>GIMP</application>
-    <filename class='directory'>plug-ins</filename> directory so that users can
-    access <application>XSane</application> directly from
-    <application>GIMP</application>. <application>GIMP</application> must be
-    available before building <application>XSane</application> for this to work.
-    Alternatively, create the link in <filename
-    class='directory'>~/.gimp-2.0/plug-ins/</filename> to provide individual
-    user access. <command>man xsane</command> for additional information.</para>
+      <command>ln -v -s /usr/bin/xsane /usr/lib/gimp/2.0/plug-ins/</command>:
+      This creates a link in the system-wide <application>GIMP</application>
+      <filename class='directory'>plug-ins</filename> directory so that users
+      can access <application>XSane</application> directly from
+      <application>GIMP</application>. <application>GIMP</application> must
+      be available before building <application>XSane</application> for this
+      to work. Alternatively, create the link in <filename
+      class='directory'>~/.gimp-2.0/plug-ins/</filename> to provide individual
+      user access. <command>man xsane</command> for additional information.
 @z
 
 @x
@@ -261,9 +265,9 @@ This symlink is created to ensure that
 @z
 
 @x xsane
-          <para>is a graphical user-interface to control an image acquisition
-          device such as a flatbed scanner.</para>
+            is a graphical user-interface to control an image acquisition
+            device such as a flatbed scanner.
 @y
-          <para>is a graphical user-interface to control an image acquisition
-          device such as a flatbed scanner.</para>
+            is a graphical user-interface to control an image acquisition
+            device such as a flatbed scanner.
 @z

@@ -20,10 +20,8 @@
 @z
 
 @x
-    <para>These programs use the X Window System and don't fit easily into any
-    of the other chapters.</para>
+    These programs use the X Window System and don't fit easily into any
+    of the other chapters.
 @y
-    <para>
     ここであげるプログラムは X ウィンドウシステムを用いていますが、他の節にはまとめられないものを集めています。
-    </para>
 @z

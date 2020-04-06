@@ -20,61 +20,61 @@
 @z
 
 @x
-    <para>The <application>Tcsh</application> package contains <quote>an
-    enhanced but completely compatible version of the Berkeley Unix C shell
-    (<command>csh</command>)</quote>. This is useful as an alternative shell
-    for those who prefer C syntax to that of the <command>bash</command> shell,
-    and also because some programs require the C shell in order to perform
-    installation tasks.</para>
+      The <application>Tcsh</application> package contains <quote>an
+      enhanced but completely compatible version of the Berkeley Unix C shell
+      (<command>csh</command>)</quote>. This is useful as an alternative shell
+      for those who prefer C syntax to that of the <command>bash</command>
+      shell, and also because some programs require the C shell in order to
+      perform installation tasks.
 @y
-    <para>The <application>Tcsh</application> package contains <quote>an
-    enhanced but completely compatible version of the Berkeley Unix C shell
-    (<command>csh</command>)</quote>. This is useful as an alternative shell
-    for those who prefer C syntax to that of the <command>bash</command> shell,
-    and also because some programs require the C shell in order to perform
-    installation tasks.</para>
+      The <application>Tcsh</application> package contains <quote>an
+      enhanced but completely compatible version of the Berkeley Unix C shell
+      (<command>csh</command>)</quote>. This is useful as an alternative shell
+      for those who prefer C syntax to that of the <command>bash</command>
+      shell, and also because some programs require the C shell in order to
+      perform installation tasks.
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&tcsh-download-http;"/></para>
+          Download (HTTP): <ulink url="&tcsh-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&tcsh-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&tcsh-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&tcsh-download-ftp;"/></para>
+          Download (FTP): <ulink url="&tcsh-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&tcsh-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&tcsh-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &tcsh-md5sum;</para>
+          Download MD5 sum: &tcsh-md5sum;
 @y
-        <para>&Download; MD5 sum: &tcsh-md5sum;</para>
+          &Download; MD5 sum: &tcsh-md5sum;
 @z
 
 @x
-        <para>Download size: &tcsh-size;</para>
+          Download size: &tcsh-size;
 @y
-        <para>&DownloadSize;: &tcsh-size;</para>
+          &DownloadSize;: &tcsh-size;
 @z
 
 @x
-        <para>Estimated disk space required: &tcsh-buildsize;</para>
+          Estimated disk space required: &tcsh-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &tcsh-buildsize;</para>
+          &Estimateddiskspacerequired;: &tcsh-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &tcsh-time;</para>
+          Estimated build time: &tcsh-time;
 @y
-        <para>&Estimatedbuildtime;: &tcsh-time;</para>
+          &Estimatedbuildtime;: &tcsh-time;
 @z
 
 @x
@@ -90,28 +90,22 @@
 @z
 
 @x
-    <para>Install <application>Tcsh</application> by running the following
-    commands:</para>
+      Install <application>Tcsh</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Tcsh</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Tcsh</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストる場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストる場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -121,37 +115,35 @@
 @z
 
 @x
-    <para><parameter>--bindir=/bin</parameter>: This installs the
-    <command>tcsh</command> program in <filename
-    class='directory'>/bin</filename> instead of <filename
-    class='directory'>/usr/bin</filename>.</para>
+      <parameter>--bindir=/bin</parameter>: This installs the
+      <command>tcsh</command> program in <filename
+      class='directory'>/bin</filename> instead of <filename
+      class='directory'>/usr/bin</filename>.
 @y
-    <para><parameter>--bindir=/bin</parameter>:
-    これは <command>tcsh</command> プログラムのインストール先を <filename
-    class='directory'>/usr/bin</filename> ではなく <filename
-    class='directory'>/bin</filename> とします。
-    </para>
+      <parameter>--bindir=/bin</parameter>:
+      これは <command>tcsh</command> プログラムのインストール先を <filename
+      class='directory'>/usr/bin</filename> ではなく <filename
+      class='directory'>/bin</filename> とします。
 @z
 
 @x
-    <para><command>sh ./tcsh.man2html</command>: This creates HTML documentation
-    from the formatted man page.</para>
+      <command>sh ./tcsh.man2html</command>: This creates HTML documentation
+      from the formatted man page.
 @y
-    <para><command>sh ./tcsh.man2html</command>:
-    これは、書式化された man ページから HTML ドキュメントを生成します。
-    </para>
+      <command>sh ./tcsh.man2html</command>:
+      これは、書式化された man ページから HTML ドキュメントを生成します。
 @z
 
 @x
-    <para><command>ln -v -sf tcsh /bin/csh</command>: The FHS states that if
-    there is a <application>C</application> shell installed, there should be a
-    symlink from <filename>/bin/csh</filename> to it. This creates that
-    symlink.</para>
+      <command>ln -v -sf tcsh /bin/csh</command>: The FHS states that if
+      there is a <application>C</application> shell installed, there should
+      be a symlink from <filename>/bin/csh</filename> to it. This creates
+      that symlink.
 @y
-    <para><command>ln -v -sf tcsh /bin/csh</command>: The FHS states that if
-    there is a <application>C</application> shell installed, there should be a
-    symlink from <filename>/bin/csh</filename> to it. This creates that
-    symlink.</para>
+      <command>ln -v -sf tcsh /bin/csh</command>: The FHS states that if
+      there is a <application>C</application> shell installed, there should
+      be a symlink from <filename>/bin/csh</filename> to it. This creates
+      that symlink.
 @z
 
 @x
@@ -167,23 +159,25 @@
 @z
 
 @x
-      <para>There are numerous configuration files for the C shell. Examples
-      of these are <filename>/etc/csh.cshrc</filename>,
-      <filename>/etc/csh.login</filename>, <filename>/etc/csh.logout</filename>,
-      <filename>~/.tcshrc</filename>, <filename>~/.cshrc</filename>,
-      <filename>~/.history</filename>, <filename>~/.cshdirs</filename>,
-      <filename>~/.login</filename>, and <filename>~/.logout</filename>. More
-      information on these files can be found in the
-      <filename>tcsh(1)</filename> man page.</para>
+        There are numerous configuration files for the C shell. Examples
+        of these are <filename>/etc/csh.cshrc</filename>,
+        <filename>/etc/csh.login</filename>,
+        <filename>/etc/csh.logout</filename>,
+        <filename>~/.tcshrc</filename>, <filename>~/.cshrc</filename>,
+        <filename>~/.history</filename>, <filename>~/.cshdirs</filename>,
+        <filename>~/.login</filename>, and <filename>~/.logout</filename>. More
+        information on these files can be found in the
+        <filename>tcsh(1)</filename> man page.
 @y
-      <para>There are numerous configuration files for the C shell. Examples
-      of these are <filename>/etc/csh.cshrc</filename>,
-      <filename>/etc/csh.login</filename>, <filename>/etc/csh.logout</filename>,
-      <filename>~/.tcshrc</filename>, <filename>~/.cshrc</filename>,
-      <filename>~/.history</filename>, <filename>~/.cshdirs</filename>,
-      <filename>~/.login</filename>, and <filename>~/.logout</filename>. More
-      information on these files can be found in the
-      <filename>tcsh(1)</filename> man page.</para>
+        There are numerous configuration files for the C shell. Examples
+        of these are <filename>/etc/csh.cshrc</filename>,
+        <filename>/etc/csh.login</filename>,
+        <filename>/etc/csh.logout</filename>,
+        <filename>~/.tcshrc</filename>, <filename>~/.cshrc</filename>,
+        <filename>~/.history</filename>, <filename>~/.cshdirs</filename>,
+        <filename>~/.login</filename>, and <filename>~/.logout</filename>. More
+        information on these files can be found in the
+        <filename>tcsh(1)</filename> man page.
 @z
 
 @x
@@ -193,13 +187,27 @@
 @z
 
 @x
-      <para>Update <filename>/etc/shells</filename> to include the C shell
-      program names (as the <systemitem class="username">root</systemitem>
-      user):</para>
+        Update <filename>/etc/shells</filename> to include the C shell
+        program names (as the <systemitem class="username">root</systemitem>
+        user):
 @y
-      <para>Update <filename>/etc/shells</filename> to include the C shell
-      program names (as the <systemitem class="username">root</systemitem>
-      user):</para>
+        Update <filename>/etc/shells</filename> to include the C shell
+        program names (as the <systemitem class="username">root</systemitem>
+        user):
+@z
+
+@x
+        The following <filename>~/.cshrc</filename> provides two alternative
+        colour prompts and coloured <command>ls</command> output. If you prefer
+        a global modification, issue the command as the <systemitem
+        class="username">root</systemitem> user, replacing
+        <filename>~/.cshrc</filename> by <filename>/etc/csh.cshrc</filename>.
+@y
+        The following <filename>~/.cshrc</filename> provides two alternative
+        colour prompts and coloured <command>ls</command> output. If you prefer
+        a global modification, issue the command as the <systemitem
+        class="username">root</systemitem> user, replacing
+        <filename>~/.cshrc</filename> by <filename>/etc/csh.cshrc</filename>.
 @z
 
 @x
@@ -235,11 +243,11 @@
 @z
 
 @x tcsh
-          <para>is an enhanced but completely compatible version of the
-          Berkeley Unix C shell, <command>csh</command>. It is usable as both an
-          interactive shell and a script processor.</para>
+            is an enhanced but completely compatible version of the
+            Berkeley Unix C shell, <command>csh</command>. It is usable as
+            both an interactive shell and a script processor.
 @y
-          <para>is an enhanced but completely compatible version of the
-          Berkeley Unix C shell, <command>csh</command>. It is usable as both an
-          interactive shell and a script processor.</para>
+            is an enhanced but completely compatible version of the
+            Berkeley Unix C shell, <command>csh</command>. It is usable as
+            both an interactive shell and a script processor.
 @z

@@ -20,21 +20,23 @@
 @z
 
 @x
-    <para>Most of TeX Live can be built from source without a pre-existing
-    installation, but <application>xindy</application> (for indexing) needs
-    working versions of <command>latex</command> and <command>pdflatex</command>
-    when configure is run, and the testsuite and install for
-    <command>asy</command> (for vector graphics) will fail if TeX has not
-    already been installed. Additionally, <application>biber</application> is
-    not provided within the <application>texlive</application> source.</para>
+      Most of TeX Live can be built from source without a pre-existing
+      installation, but <application>xindy</application> (for indexing) needs
+      working versions of <command>latex</command> and
+      <command>pdflatex</command> when configure is run, and the testsuite
+      and install for <command>asy</command> (for vector graphics) will fail
+      if TeX has not already been installed. Additionally,
+      <application>biber</application> is not provided within the
+      <application>texlive</application> source.
 @y
-    <para>Most of TeX Live can be built from source without a pre-existing
-    installation, but <application>xindy</application> (for indexing) needs
-    working versions of <command>latex</command> and <command>pdflatex</command>
-    when configure is run, and the testsuite and install for
-    <command>asy</command> (for vector graphics) will fail if TeX has not
-    already been installed. Additionally, <application>biber</application> is
-    not provided within the <application>texlive</application> source.</para>
+      Most of TeX Live can be built from source without a pre-existing
+      installation, but <application>xindy</application> (for indexing) needs
+      working versions of <command>latex</command> and
+      <command>pdflatex</command> when configure is run, and the testsuite
+      and install for <command>asy</command> (for vector graphics) will fail
+      if TeX has not already been installed. Additionally,
+      <application>biber</application> is not provided within the
+      <application>texlive</application> source.
 @z
 %    <para>
 %    <application>TeX Live</application> パッケージは、統合的な TeX 文書生成システムです。
@@ -44,45 +46,57 @@
 %    </para>
 
 @x
+      All of those packages are dealt with on their own pages and can be
+      built after installing this package. If you have not already done so, you
+      should start at <xref linkend="tex-path"/> so that the final commands to
+      initialise the new installation will be found.
+@y
+      All of those packages are dealt with on their own pages and can be
+      built after installing this package. If you have not already done so, you
+      should start at <xref linkend="tex-path"/> so that the final commands to
+      initialise the new installation will be found.
+@z
+
+@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&texlive-download-http;"/></para>
+          Download (HTTP): <ulink url="&texlive-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&texlive-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&texlive-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&texlive-download-ftp;"/></para>
+          Download (FTP): <ulink url="&texlive-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&texlive-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&texlive-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &texlive-md5sum;</para>
+          Download MD5 sum: &texlive-md5sum;
 @y
-        <para>&Download; MD5 sum: &texlive-md5sum;</para>
+          &Download; MD5 sum: &texlive-md5sum;
 @z
 
 @x
-        <para>Download size: &texlive-size;</para>
+          Download size: &texlive-size;
 @y
-        <para>&DownloadSize;: &texlive-size;</para>
+          &DownloadSize;: &texlive-size;
 @z
 
 @x
-        <para>Estimated disk space required: &texlive-buildsize;</para>
+          Estimated disk space required: &texlive-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &texlive-buildsize;</para>
+          &Estimateddiskspacerequired;: &texlive-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &texlive-time;</para>
+          Estimated build time: &texlive-time;
 @y
-        <para>&Estimatedbuildtime;: &texlive-time;</para>
+          &Estimatedbuildtime;: &texlive-time;
 @z
 
 @x
@@ -92,17 +106,19 @@
 @z
 
 @x
-      <para>Much of the texlive environment (including scripts, documentation,
-      fonts and various other files) is not part of the source tarball. You must
-      download it separately. This will give you all of the additional files
-      which are provided by a full install of the binary version, there is no
-      realistic way to restrict which parts get installed.</para>
+        Much of the texlive environment (including scripts, documentation,
+        fonts, and various other files) is not part of the source tarball.
+        You must download it separately. This will give you all of the
+        additional files which are provided by a full install of the binary
+        version, there is no realistic way to restrict which parts get
+        installed.
 @y
-      <para>Much of the texlive environment (including scripts, documentation,
-      fonts and various other files) is not part of the source tarball. You must
-      download it separately. This will give you all of the additional files
-      which are provided by a full install of the binary version, there is no
-      realistic way to restrict which parts get installed.</para>
+        Much of the texlive environment (including scripts, documentation,
+        fonts, and various other files) is not part of the source tarball.
+        You must download it separately. This will give you all of the
+        additional files which are provided by a full install of the binary
+        version, there is no realistic way to restrict which parts get
+        installed.
 @z
 
 @x
@@ -116,33 +132,33 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&texlive-texmf-download-http;"/></para>
+          Download (HTTP): <ulink url="&texlive-texmf-download-http;"/>
 @y
-        <para>Download (HTTP): <ulink url="&texlive-texmf-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&texlive-texmf-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&texlive-texmf-download-ftp;"/></para>
+          Download (FTP): <ulink url="&texlive-texmf-download-ftp;"/>
 @y
-        <para>Download (FTP): <ulink url="&texlive-texmf-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&texlive-texmf-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &texlive-texmf-md5sum;</para>
+          Download MD5 sum: &texlive-texmf-md5sum;
 @y
-        <para>Download MD5 sum: &texlive-texmf-md5sum;</para>
+          &Download; MD5 sum: &texlive-texmf-md5sum;
 @z
 
 @x
-        <para>Download size: &texlive-texmf-size;</para>
+          Download size: &texlive-texmf-size;
 @y
-        <para>Download size: &texlive-texmf-size;</para>
+          &DownloadSize;: &texlive-texmf-size;
 @z
 
 @x
-        <para>Required patch: <ulink
+          Required patch: <ulink url=
 @y
-        <para>Required patch: <ulink
+          必須のパッチ: <ulink url=
 @z
 
 @x
@@ -156,7 +172,7 @@
     <para role="recommended">
       <xref linkend="gs"/> <emphasis>including
       <filename>libgs.so</filename></emphasis>, <!--(for dvisvgm, which is used by e.g.
-      <xref role="nodep" linkend="asymptote"/>), : still referenced for dynamic loading,
+      <xref role="nodep" linkend="asymptote"/>); still referenced for dynamic loading,
       even without dvisvgm - e.fg. by dvipsk -->
       <xref linkend="x-window-system"/>
     </para>
@@ -165,7 +181,7 @@
     <para role="recommended">
       <xref linkend="gs"/> <emphasis>including
       <filename>libgs.so</filename></emphasis>, <!--(for dvisvgm, which is used by e.g.
-      <xref role="nodep" linkend="asymptote"/>), : still referenced for dynamic loading,
+      <xref role="nodep" linkend="asymptote"/>); still referenced for dynamic loading,
       even without dvisvgm - e.fg. by dvipsk -->
       <xref linkend="x-window-system"/>
     </para>
@@ -231,13 +247,13 @@
 @z
 
 @x
-    <para>The shared libraries will be installed into a texlive directory.
-    As the <systemitem class="username">root</systemitem> user, add it to
-    your <filename>/etc/ld.so.conf</filename>:</para>
+      The shared libraries will be installed into a texlive directory.
+      As the <systemitem class="username">root</systemitem> user, add it to
+      your <filename>/etc/ld.so.conf</filename>:
 @y
-    <para>The shared libraries will be installed into a texlive directory.
-    As the <systemitem class="username">root</systemitem> user, add it to
-    your <filename>/etc/ld.so.conf</filename>:</para>
+      The shared libraries will be installed into a texlive directory.
+      As the <systemitem class="username">root</systemitem> user, add it to
+      your <filename>/etc/ld.so.conf</filename>:
 @z
 
 @x
@@ -257,22 +273,19 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>
-    A few tests may SKIP because kpathsea
-    has not yet been installed.</para>
+      To test the results, issue: <command>make check</command>
+      A few tests may SKIP because kpathsea
+      has not yet been installed.
 @y
-    <para>To test the results, issue: <command>make check</command>
-    A few tests may SKIP because kpathsea
-    has not yet been installed.</para>
+      To test the results, issue: <command>make check</command>
+      A few tests may SKIP because kpathsea
+      has not yet been installed.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 %@x

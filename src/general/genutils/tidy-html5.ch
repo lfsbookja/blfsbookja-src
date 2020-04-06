@@ -20,17 +20,17 @@
 @z
 
 @x
-    <para>The <application>Tidy HTML5</application> package contains a
-    command line tool and libraries used to read HTML, XHTML and XML files
-    and write cleaned up markup. It detects and corrects many common coding
-    errors and strives to produce visually equivalent markup that is both
-    W3C compliant and compatible with most browsers.</para>
+      The <application>Tidy HTML5</application> package contains a
+      command line tool and libraries used to read HTML, XHTML and XML files
+      and write cleaned up markup. It detects and corrects many common coding
+      errors and strives to produce visually equivalent markup that is both
+      W3C compliant and compatible with most browsers.
 @y
-    <para>The <application>Tidy HTML5</application> package contains a
-    command line tool and libraries used to read HTML, XHTML and XML files
-    and write cleaned up markup. It detects and corrects many common coding
-    errors and strives to produce visually equivalent markup that is both
-    W3C compliant and compatible with most browsers.</para>
+      The <application>Tidy HTML5</application> package contains a
+      command line tool and libraries used to read HTML, XHTML and XML files
+      and write cleaned up markup. It detects and corrects many common coding
+      errors and strives to produce visually equivalent markup that is both
+      W3C compliant and compatible with most browsers.
 @z
 
 @x
@@ -40,53 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&tidy-html5-download-http;"/></para>
+          Download (HTTP): <ulink url="&tidy-html5-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&tidy-html5-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&tidy-html5-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&tidy-html5-download-ftp;"/></para>
+          Download (FTP): <ulink url="&tidy-html5-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&tidy-html5-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&tidy-html5-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &tidy-html5-md5sum;</para>
+          Download MD5 sum: &tidy-html5-md5sum;
 @y
-        <para>&Download; MD5 sum: &tidy-html5-md5sum;</para>
+          &Download; MD5 sum: &tidy-html5-md5sum;
 @z
 
 @x
-        <para>Download size: &tidy-html5-size;</para>
+          Download size: &tidy-html5-size;
 @y
-        <para>&DownloadSize;: &tidy-html5-size;</para>
+          &DownloadSize;: &tidy-html5-size;
 @z
 
 @x
-        <para>Estimated disk space required: &tidy-html5-buildsize;</para>
+          Estimated disk space required: &tidy-html5-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &tidy-html5-buildsize;</para>
+          &Estimateddiskspacerequired;: &tidy-html5-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &tidy-html5-time;</para>
+          Estimated build time: &tidy-html5-time;
 @y
-        <para>&Estimatedbuildtime;: &tidy-html5-time;</para>
-@z
-
-@x
-        The <application>Tidy HTML5</application> source tarball shown above
-        downloads with the correct name, tidy-html5-&tidy-html5-version;.tar.gz, if
-        using a browser such as Firefox. If you prefer to use a command line
-        program such as wget, you normally would obtain &tidy-html5-version;.tar.gz.
-        To obtain this package with the proper filename, run:
-@y
-        The <application>Tidy HTML5</application> source tarball shown above
-        downloads with the correct name, tidy-html5-&tidy-html5-version;.tar.gz, if
-        using a browser such as Firefox. If you prefer to use a command line
-        program such as wget, you normally would obtain &tidy-html5-version;.tar.gz.
-        To obtain this package with the proper filename, run:
+          &Estimatedbuildtime;: &tidy-html5-time;
 @z
 
 @x
@@ -97,18 +83,26 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="cmake"/></para>
+    <para role="required">
+      <xref linkend="cmake"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="cmake"/></para>
+    <para role="required">
+      <xref linkend="cmake"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libxslt"/></para>
+    <para role="recommended">
+      <xref linkend="libxslt"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libxslt"/></para>
+    <para role="recommended">
+      <xref linkend="libxslt"/>
+    </para>
 @z
 
 @x
@@ -124,27 +118,22 @@
 @z
 
 @x
-    <para>Install <application>Tidy HTML5</application> by running the following
-    commands:</para>
+      Install <application>Tidy HTML5</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Tidy HTML5</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Tidy HTML5</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -182,13 +171,9 @@
 @z
 
 @x
-      <para>The absolute path of the file specified in
-      <envar>$HTML_TIDY</envar>.</para>
+        The absolute path of the file specified in <envar>HTML_TIDY</envar>.
 @y
-      <para>
-      The absolute path of the file specified in
-      <envar>$HTML_TIDY</envar>.
-      </para>
+        The absolute path of the file specified in <envar>HTML_TIDY</envar>.
 @z
 
 @x
@@ -198,18 +183,15 @@
 @z
 
 @x
-      <para>The default configuration options can be set in the file defined in
-      <envar>$HTML_TIDY</envar>. Additional configuration options can be passed
-      to <command>tidy</command> via command line parameters or the
-      <option>-config &lt;file&gt;</option> parameter.</para>
+        The default configuration options can be set in the file defined in
+        <envar>HTML_TIDY</envar>. Additional configuration options can be
+        passed to <command>tidy</command> via command line parameters or the
+        <option>-config &lt;file&gt;</option> parameter.
 @y
-      <para>
-      
-      The default configuration options can be set in the file defined in
-      <envar>$HTML_TIDY</envar>. Additional configuration options can be passed
-      to <command>tidy</command> via command line parameters or the
-      <option>-config &lt;file&gt;</option> parameter.
-      </para>
+        The default configuration options can be set in the file defined in
+        <envar>HTML_TIDY</envar>. Additional configuration options can be
+        passed to <command>tidy</command> via command line parameters or the
+        <option>-config &lt;file&gt;</option> parameter.
 @z
 
 @x
@@ -245,32 +227,27 @@
 @z
 
 @x tab2space
-          <para>is a utility to expand tabs and ensure consistent line
-          endings.</para>
+            is a utility to expand tabs and ensure consistent line endings.
 @y
-          <para>
-          
-          is a utility to expand tabs and ensure consistent line
-          endings.
-          </para>
+            is a utility to expand tabs and ensure consistent line endings.
 @z
 
 @x tidy
-          <para>validates, corrects, and pretty-prints HTML files.</para>
+            validates, corrects, and pretty-prints HTML files.
 @y
-          <para>
-          
-          validates, corrects, and pretty-prints HTML files.
-          </para>
+            validates, corrects, and pretty-prints HTML files.
 @z
 
-@x libtidy.so and libtidys.a
-          <para>library provides the <application>Tidy HTML5</application> API
-          functions to <command>tidy</command> and can also be called by other
-          programs.</para>
+@x
+          <filename class='libraryfile'>libtidy.so and libtidys.a</filename>
 @y
-          <para>
-          <command>tidy</command> コマンドに対して <application>Tidy HTML5</application> の API 関数を提供します。
-          他のプログラムから関数を呼び出すこともできます。
-          </para>
+          <filename class='libraryfile'>libtidy.so, libtidys.a</filename>
+@z
+@x libtidy.so and libtidys.a
+            library provides the <application>Tidy HTML5</application> API
+            functions to <command>tidy</command> and can also be called by other
+            programs.
+@y
+            <command>tidy</command> コマンドに対して <application>Tidy HTML5</application> の API 関数を提供します。
+            他のプログラムから関数を呼び出すこともできます。
 @z

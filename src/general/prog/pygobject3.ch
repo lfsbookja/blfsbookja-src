@@ -233,7 +233,7 @@
            </seg>
           <seg>
             /usr/lib/python&python2-majorver;/site-packages/gi/_gi{,_cairo}.so and/or
-            /usr/lib/python&python3-majorver;/site-packages/gi/_gi{,_cairo}.cpython-38m-&lt;arch&gt;-linux-gnu.so
+            /usr/lib/python&python3-majorver;/site-packages/gi/_gi{,_cairo}.&python3-lib-suffix;.so
            </seg>
           <seg>
             /usr/include/pygobject-3.0, and
@@ -245,12 +245,12 @@
             &None;
            </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/gi/_gi{,_cairo}.so and/or
-            /usr/lib/python&python3-majorver;/site-packages/gi/_gi{,_cairo}.cpython-38m-&lt;arch&gt;-linux-gnu.so
+            /usr/lib/python&python2-majorver;/site-packages/gi/_gi{,_cairo}.so または
+            /usr/lib/python&python3-majorver;/site-packages/gi/_gi{,_cairo}.&python3-lib-suffix;.so
            </seg>
           <seg>
             /usr/include/pygobject-3.0,
-            /usr/lib/python&python2-majorver;/site-packages/{gi,pygtkcompat} and/or
+            /usr/lib/python&python2-majorver;/site-packages/{gi,pygtkcompat} または
             /usr/lib/python&python3-majorver;/site-packages/{gi,pygtkcompat}
           </seg>
 @z

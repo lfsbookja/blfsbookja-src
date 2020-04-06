@@ -26,13 +26,13 @@
 @z
 
 @x
-    <para><application>Compface</application> provides utilities and a library to
-    convert from/to X-Face format, a 48x48 bitmap format used to carry thumbnails
-    of email authors in a mail header.</para>
+      <application>Compface</application> provides utilities and a library to
+      convert from/to X-Face format, a 48x48 bitmap format used to carry
+      thumbnails of email authors in a mail header.
 @y
-    <para><application>Compface</application> provides utilities and a library to
-    convert from/to X-Face format, a 48x48 bitmap format used to carry thumbnails
-    of email authors in a mail header.</para>
+      <application>Compface</application> provides utilities and a library to
+      convert from/to X-Face format, a 48x48 bitmap format used to carry
+      thumbnails of email authors in a mail header.
 @z
 
 @x
@@ -42,47 +42,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&compface-download-http;"/></para>
+          Download (HTTP): <ulink url="&compface-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&compface-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&compface-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&compface-download-ftp;"/></para>
+          Download (FTP): <ulink url="&compface-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&compface-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&compface-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &compface-md5sum;</para>
+          Download MD5 sum: &compface-md5sum;
 @y
-        <para>&Download; MD5 sum: &compface-md5sum;</para>
+          &Download; MD5 sum: &compface-md5sum;
 @z
 
 @x
-        <para>Download size: &compface-size;</para>
+          Download size: &compface-size;
 @y
-        <para>&DownloadSize;: &compface-size;</para>
+          &DownloadSize;: &compface-size;
 @z
 
 @x
-        <para>Estimated disk space required: &compface-buildsize;</para>
+          Estimated disk space required: &compface-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &compface-buildsize;</para>
+          &Estimateddiskspacerequired;: &compface-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &compface-time;</para>
+          Estimated build time: &compface-time;
 @y
-        <para>&Estimatedbuildtime;: &compface-time;</para>
+          &Estimatedbuildtime;: &compface-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/compface"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/compface"/></para>
 @z
 
 @x
@@ -92,26 +90,22 @@
 @z
 
 @x
-    <para>Install <application>Compface</application> by running the
-    following commands:</para>
+      Install <application>Compface</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Compface</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Compface</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -147,31 +141,31 @@
 @z
 
 @x compface
-          <para>is a filter for generating highly compressed representations
-          of 48x48x1 face image files.</para>
+            is a filter for generating highly compressed representations
+            of 48x48x1 face image files.
 @y
-          <para>is a filter for generating highly compressed representations
-          of 48x48x1 face image files.</para>
+            is a filter for generating highly compressed representations
+            of 48x48x1 face image files.
 @z
 
 @x uncompface
-          <para>is an inverse filter which performs an inverse
-          transformation with no loss of data.</para>
+            is an inverse filter which performs an inverse
+            transformation with no loss of data.
 @y
-          <para>is an inverse filter which performs an inverse
-          transformation with no loss of data.</para>
+            is an inverse filter which performs an inverse
+            transformation with no loss of data.
 @z
 
 @x xbm2xface.pl
-          <para>is a script to generate xfaces.</para>
+            is a script to generate xfaces.
 @y
-          <para>is a script to generate xfaces.</para>
+            is a script to generate xfaces.
 @z
 
 @x libcompface.{so,a}
-          <para>allows the compression and decompression algorithms to be
-          used in other programs such as MTAs.</para>
+            allows the compression and decompression algorithms to be
+            used in other programs such as MTAs.
 @y
-          <para>allows the compression and decompression algorithms to be
-          used in other programs such as MTAs.</para>
+            allows the compression and decompression algorithms to be
+            used in other programs such as MTAs.
 @z

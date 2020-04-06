@@ -26,17 +26,17 @@
 @z
 
 @x
-    <para>The <application>DocBook XML DTD</application>-&DocBook-version;
-    package contains document type definitions for verification of XML data
-    files against the DocBook rule set. These are useful for structuring books
-    and software documentation to a standard allowing you to utilize
-    transformations already written for that standard.</para>
+      The <application>DocBook XML DTD</application>-&DocBook-version;
+      package contains document type definitions for verification of XML data
+      files against the DocBook rule set. These are useful for structuring
+      books and software documentation to a standard allowing you to utilize
+      transformations already written for that standard.
 @y
-    <para>The <application>DocBook XML DTD</application>-&DocBook-version;
-    package contains document type definitions for verification of XML data
-    files against the DocBook rule set. These are useful for structuring books
-    and software documentation to a standard allowing you to utilize
-    transformations already written for that standard.</para>
+      The <application>DocBook XML DTD</application>-&DocBook-version;
+      package contains document type definitions for verification of XML data
+      files against the DocBook rule set. These are useful for structuring
+      books and software documentation to a standard allowing you to utilize
+      transformations already written for that standard.
 @z
 
 @x
@@ -46,45 +46,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&DocBook-download-http;"/></para>
+          Download (HTTP): <ulink url="&DocBook-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&DocBook-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&DocBook-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&DocBook-download-ftp;"/></para>
+          Download (FTP): <ulink url="&DocBook-download-ftp;"/>
 @y
-        <para>ダウンロード (FTP): <ulink url="&DocBook-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&DocBook-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &DocBook-md5sum;</para>
+          Download MD5 sum: &DocBook-md5sum;
 @y
-        <para>ダウンロード MD5 sum: &DocBook-md5sum;</para>
+          &Download; MD5 sum: &DocBook-md5sum;
 @z
 
 @x
-        <para>Download size: &DocBook-size;</para>
+          Download size: &DocBook-size;
 @y
-        <para>ダウンロードサイズ: &DocBook-size;</para>
+          &DownloadSize;: &DocBook-size;
 @z
 
 @x
-        <para>Estimated disk space required: &DocBook-buildsize;</para>
+          Estimated disk space required: &DocBook-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &DocBook-buildsize;</para>
+          &Estimateddiskspacerequired;: &DocBook-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &DocBook-time;</para>
+          Estimated build time: &DocBook-time;
 @y
-        <para>&Estimatedbuildtime;: &DocBook-time;</para>
+          &Estimatedbuildtime;: &DocBook-time;
 @z
 
 @x
     <bridgehead renderas="sect3">DocBook XML DTD Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">DocBook XML DTD の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;DocBook XML DTD&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -116,33 +116,33 @@
 @z
 
 @x
-    <para>Install <application>DocBook XML DTD</application> by running the
-    following commands as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Install <application>DocBook XML DTD</application> by running the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーとなって以下を実行し <application>DocBook XML DTD</application> をビルドします。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行し <application>DocBook XML DTD</application> をビルドします。
 @z
 
 @x
-    <para>Create (or update) and populate the
-    <filename>/etc/xml/docbook</filename> catalog file by running the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      Create (or update) and populate the <filename>/etc/xml/docbook</filename>
+      catalog file by running the following
+      commands as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>Create (or update) and populate the
-    <filename>/etc/xml/docbook</filename> catalog file by running the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      Create (or update) and populate the <filename>/etc/xml/docbook</filename>
+      catalog file by running the following
+      commands as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>Create (or update) and populate the
-    <filename>/etc/xml/catalog</filename> catalog file by running the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      Create (or update) and populate the
+      <filename>/etc/xml/catalog</filename> catalog file by running the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>Create (or update) and populate the
-    <filename>/etc/xml/catalog</filename> catalog file by running the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      Create (or update) and populate the
+      <filename>/etc/xml/catalog</filename> catalog file by running the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:
 @z
 
 @x
@@ -158,31 +158,39 @@
 @z
 
 @x
+        <filename>/etc/xml/catalog</filename> and
+        <filename>/etc/xml/docbook</filename>
+@y
+        <filename>/etc/xml/catalog</filename>,
+        <filename>/etc/xml/docbook</filename>
+@z
+
+@x
       <title>Configuration Information</title>
 @y
       <title>&ConfigInfo;</title>
 @z
 
 @x
-      <para>The above installation creates the files and updates the catalogs.
-      In order to 
-      utilize <application>DocBook XML DTD</application> V&DocBook-version;
-      when any version 4.x is requested in the System Identifier, you need to
-      add additional statements to the catalog files. If you have any of the
-      <application>DocBook XML DTD</application>'s referenced below already
-      installed on your system, remove those entries from the
-      <command>for</command> command below (issue the commands as the
-      <systemitem class="username">root</systemitem> user):</para>
+        The above installation creates the files and updates the catalogs.
+        In order to utilize <application>DocBook XML DTD</application>
+        V&DocBook-version; when any version 4.x is requested in the System
+        Identifier, you need to add additional statements to the catalog
+        files. If you have any of the <application>DocBook XML
+        DTD</application>'s referenced below already installed on your
+        system, remove those entries from the <command>for</command> command
+        below (issue the commands as the <systemitem
+        class="username">root</systemitem> user):
 @y
-      <para>The above installation creates the files and updates the catalogs.
-      In order to 
-      utilize <application>DocBook XML DTD</application> V&DocBook-version;
-      when any version 4.x is requested in the System Identifier, you need to
-      add additional statements to the catalog files. If you have any of the
-      <application>DocBook XML DTD</application>'s referenced below already
-      installed on your system, remove those entries from the
-      <command>for</command> command below (issue the commands as the
-      <systemitem class="username">root</systemitem> user):</para>
+        The above installation creates the files and updates the catalogs.
+        In order to utilize <application>DocBook XML DTD</application>
+        V&DocBook-version; when any version 4.x is requested in the System
+        Identifier, you need to add additional statements to the catalog
+        files. If you have any of the <application>DocBook XML
+        DTD</application>'s referenced below already installed on your
+        system, remove those entries from the <command>for</command> command
+        below (issue the commands as the <systemitem
+        class="username">root</systemitem> user):
 @z
 
 @x
@@ -227,13 +235,13 @@
         <term><filename>DTD ファイル</filename></term>
 @z
 @x
-          <para>contain a document type definition which defines the element
-          types and the attribute lists that can be used in the corresponding
-          <filename>XML</filename> files.</para>
+            contain a document type definition which defines the element
+            types and the attribute lists that can be used in the corresponding
+            <filename>XML</filename> files.
 @y
-          <para>contain a document type definition which defines the element
-          types and the attribute lists that can be used in the corresponding
-          <filename>XML</filename> files.</para>
+            contain a document type definition which defines the element
+            types and the attribute lists that can be used in the corresponding
+            <filename>XML</filename> files.
 @z
 
 @x
@@ -242,11 +250,11 @@
         <term><filename>MOD ファイル</filename></term>
 @z
 @x
-          <para>files contain components of the document type definition that
-          are sourced into the <filename>DTD</filename> files.</para>
+            contain components of the document type definition that
+            are sourced into the <filename>DTD</filename> files.
 @y
-          <para>files contain components of the document type definition that
-          are sourced into the <filename>DTD</filename> files.</para>
+            contain components of the document type definition that
+            are sourced into the <filename>DTD</filename> files.
 @z
 
 @x
@@ -255,9 +263,7 @@
         <term><filename>ENT ファイル</filename></term>
 @z
 @x
-          <para>files contain lists of named character entities allowed in
-          HTML.</para>
+            contain lists of named character entities allowed in HTML.
 @y
-          <para>files contain lists of named character entities allowed in
-          HTML.</para>
+            contain lists of named character entities allowed in HTML.
 @z

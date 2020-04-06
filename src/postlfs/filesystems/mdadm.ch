@@ -28,12 +28,10 @@
 @z
 
 @x
-    <para>The <application>mdadm</application> package contains administration
-    tools for software RAID.</para>
+      The <application>mdadm</application> package contains administration
+      tools for software RAID.
 @y
-    <para>
-    <application>mdadm</application> パッケージは、ソフトウェア RAID を実現する管理ツールを提供します。
-    </para>
+      <application>mdadm</application> パッケージは、ソフトウェア RAID を実現する管理ツールを提供します。
 @z
 
 @x
@@ -43,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&mdadm-download-http;"/></para>
+          Download (HTTP): <ulink url="&mdadm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&mdadm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&mdadm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&mdadm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&mdadm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&mdadm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&mdadm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &mdadm-md5sum;</para>
+          Download MD5 sum: &mdadm-md5sum;
 @y
-        <para>&Download; MD5 sum: &mdadm-md5sum;</para>
+          &Download; MD5 sum: &mdadm-md5sum;
 @z
 
 @x
-        <para>Download size: &mdadm-size;</para>
+          Download size: &mdadm-size;
 @y
-        <para>&DownloadSize;: &mdadm-size;</para>
+          &Download; size: &mdadm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &mdadm-buildsize;</para>
+          Estimated disk space required: &mdadm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &mdadm-buildsize;</para>
+          &Estimateddiskspacerequired;: &mdadm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &mdadm-time;</para>
+          Estimated build time: &mdadm-time;
 @y
-        <para>&Estimatedbuildtime;: &mdadm-time;</para>
+          &Estimatedbuildtime;: &mdadm-time;
 @z
 
 @x
@@ -85,24 +83,30 @@
 @z
 
 @x
+        Kernel versions in series 4.1 through 4.4.1 have a broken RAID
+        implementation. Use a kernel with version at or above 4.4.2.
+@y
+        Kernel versions in series 4.1 through 4.4.1 have a broken RAID
+        implementation. Use a kernel with version at or above 4.4.2.
+@z
+
+@x
     <title>Kernel Configuration</title>
 @y
     <title>&KernelConfiguration;</title>
 @z
 
 @x
-    <para>Enable the following options in the kernel configuration
-    and recompile the kernel, if necessary.  Only the RAID types desired
-    are required.</para>
+      Enable the following options in the kernel configuration
+      and recompile the kernel, if necessary.  Only the RAID types desired
+      are required.
 @y
-    <!--
-    日本語訳註：
-    訳出省略： Only the RAID types desired are required.
-    -->
-    <para>
-    カーネルに対する設定として以下のオプションを有効にする必要があります。
-    必要ならカーネルを再コンパイルしてください。
-    </para>
+      <!--
+      日本語訳註：
+      訳出省略： Only the RAID types desired are required.
+      -->
+      カーネルに対する設定として以下のオプションを有効にする必要があります。
+      必要ならカーネルを再コンパイルしてください。
 @z
 
 @x
@@ -112,37 +116,45 @@
 @z
 
 @x
-    <para>Fix a build error introduced by gcc-7.1:</para>
+      Fix a build error introduced by gcc-7.1:
 @y
-    <para>Fix a build error introduced by gcc-7.1:</para>
+      Fix a build error introduced by gcc-7.1:
 @z
 
 @x
-    <para>Build <application>mdadm</application> by running the following
-    command:</para>
+      Build <application>mdadm</application> by running the following
+      command:
 @y
-    <para>
-    以下のコマンドを実行して <application>mdadm</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>mdadm</application> をビルドします。
 @z
 
 @x
-    <para>If you wish to run the tests, ensure that your kernel supports
-    RAID and that a version of mdadm is not already running.  As many as 9 out
-    of 124 tests may fail.</para>
+      If you wish to run the tests, ensure that your kernel supports RAID
+      and that a version of mdadm is not already running.  As many as 9 out
+      of 124 tests may fail.
 @y
-    <para>
-    テストを実行したい場合、カーネルが RAID に対応していて、かつ mdadm はまだ稼動していないことを確認してください。
-    124 個のテストのうち 9 個は失敗します。
-    </para>
+      テストを実行したい場合、カーネルが RAID に対応していて、かつ mdadm はまだ稼動していないことを確認してください。
+      124 個のテストのうち 9 個は失敗します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+        The tests edit values in /proc and run tests on software raid devices.
+        They shouldn't be run on systems with active software RAID devices.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+        The tests edit values in /proc and run tests on software raid devices.
+        They shouldn't be run on systems with active software RAID devices.
+@z
+
+@x
+      Run the tests as the <systemitem class="username">root</systemitem> user:
+@y
+      Run the tests as the <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -195,26 +207,20 @@
 @z
 
 @x mdadm
-          <para>manages MD devices aka Linux Software RAID.</para>
+            manages MD devices aka Linux Software RAID.
 @y
-          <para>
-          Linux ソフトウェア RAID として知られる MD デバイスを管理します。
-          </para>
+            Linux ソフトウェア RAID として知られる MD デバイスを管理します。
 @z
 
 @x mdmon
-          <para>monitors MD external metadata arrays.</para>
+            monitors MD external metadata arrays.
 @y
-          <para>
-          MD デバイスの外部メタデータ情報を監視します。
-          </para>
+            MD デバイスの外部メタデータ情報を監視します。
 @z
 
 @x mdassemble
-          <para>is a tiny program that can be used to assemble MD devices
-          inside an initial ramdisk (initrd) or initramfs.</para>
+            is a tiny program that can be used to assemble MD devices
+            inside an initial ramdisk (initrd) or initramfs.
 @y
-          <para>
-          initrd (initial ramdisk) や initramfs 内の MD デバイスをアセンブルするために利用されるプログラムです。
-          </para>
+            initrd (initial ramdisk) や initramfs 内の MD デバイスをアセンブルするために利用されるプログラムです。
 @z

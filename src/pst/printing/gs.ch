@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gs-buildsize     "161 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "1.6 SBU (Using parallelism=4; with libgs.so)">
+  <!ENTITY gs-buildsize     "169 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "1.5 SBU (Using parallelism=4; with libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "161 MB (フォントと libgs.so)">
-  <!ENTITY gs-time          "1.6 SBU (parallelism=4 指定時; libgs.so 込み)">
+  <!ENTITY gs-buildsize     "169 MB (フォントと libgs.so)">
+  <!ENTITY gs-time          "1.5 SBU (parallelism=4 指定時; libgs.so 込み)">
 @z
 
 @x
@@ -28,14 +28,12 @@
 @z
 
 @x
-    <para><application>Ghostscript</application> is a versatile processor
-    for PostScript data with the ability to render PostScript to different
-    targets. It is a mandatory part of the cups printing stack.</para>
+      <application>Ghostscript</application> is a versatile processor
+      for PostScript data with the ability to render PostScript to different
+      targets. It is a mandatory part of the cups printing stack.
 @y
-    <para>
-    <application>Ghostscript</application> は、PostScrit データに対する万能なプロセッサーであり、PostScript をさまざまに異なる書式に変換する機能を提供します。
-    これは cups の印刷機能の一部として必須のものです。
-    </para>
+      <application>Ghostscript</application> は、PostScrit データに対する万能なプロセッサーであり、PostScript をさまざまに異なる書式に変換する機能を提供します。
+      これは cups の印刷機能の一部として必須のものです。
 @z
 
 @x
@@ -45,39 +43,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gs-download-http;"/></para>
+          Download (HTTP): <ulink url="&gs-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gs-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gs-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gs-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gs-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gs-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gs-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gs-md5sum;</para>
+          Download MD5 sum: &gs-md5sum;
 @y
-        <para>&Download; MD5 sum: &gs-md5sum;</para>
+          &Download; MD5 sum: &gs-md5sum;
 @z
 
 @x
-        <para>Download size: &gs-size;</para>
+          Download size: &gs-size;
 @y
-        <para>&DownloadSize;: &gs-size;</para>
+          &DownloadSize;: &gs-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gs-buildsize;</para>
+          Estimated disk space required: &gs-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gs-buildsize;</para>
+          &Estimateddiskspacerequired;: &gs-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gs-time;</para>
+          Estimated build time: &gs-time;
 @y
-        <para>&Estimatedbuildtime;: &gs-time;</para>
+          &Estimatedbuildtime;: &gs-time;
 @z
 
 @x
@@ -93,21 +91,21 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gs-standard-fonts-download;"/></para>
+          Download (HTTP): <ulink url="&gs-standard-fonts-download;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gs-standard-fonts-download;"/></para>
+          &Download; (HTTP): <ulink url="&gs-standard-fonts-download;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gs-standard-fonts-md5sum;</para>
+          Download MD5 sum: &gs-standard-fonts-md5sum;
 @y
-        <para>&Download; MD5 sum: &gs-standard-fonts-md5sum;</para>
+          &Download; MD5 sum: &gs-standard-fonts-md5sum;
 @z
 
 @x
-        <para>Download size: &gs-standard-fonts-size;</para>
+          Download size: &gs-standard-fonts-size;
 @y
-        <para>&DownloadSize;: &gs-standard-fonts-size;</para>
+          &DownloadSize;: &gs-standard-fonts-size;
 @z
 
 @x
@@ -117,21 +115,21 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gs-other-fonts-download;"/></para>
+          Download (HTTP): <ulink url="&gs-other-fonts-download;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gs-other-fonts-download;"/></para>
+          &Download; (HTTP): <ulink url="&gs-other-fonts-download;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gs-other-fonts-md5sum;</para>
+          Download MD5 sum: &gs-other-fonts-md5sum;
 @y
-        <para>&Download; MD5 sum: &gs-other-fonts-md5sum;</para>
+          &Download; MD5 sum: &gs-other-fonts-md5sum;
 @z
 
 @x
-        <para>Download size: &gs-other-fonts-size;</para>
+          Download size: &gs-other-fonts-size;
 @y
-        <para>&DownloadSize;: &gs-other-fonts-size;</para>
+          &DownloadSize;: &gs-other-fonts-size;
 @z
 
 @x
@@ -151,8 +149,7 @@
       <xref linkend="freetype2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="lcms2"/>, and
+      <xref linkend="libtiff"/>, and
       <xref linkend="openjpeg2"/>
     </para>
 @y
@@ -167,7 +164,6 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="lcms2"/>,
       <xref linkend="openjpeg2"/>
     </para>
 @z
@@ -178,8 +174,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libidn"/>,
-      <xref linkend="libpaper"/>,
-      <xref linkend="lcms"/> (not used by default, nor if lcms2 is present or found), and
+      <xref linkend="libpaper"/>, and
       <xref linkend="x-window-system"/>
     </para>
 @y
@@ -189,7 +184,6 @@
       <xref linkend="gtk3"/>,
       <xref linkend="libidn"/>,
       <xref linkend="libpaper"/>,
-      <xref linkend="lcms"/> (not used by default, nor if lcms2 is present or found), and
       <xref linkend="x-window-system"/>
     </para>
 @z
@@ -249,9 +243,9 @@
 @z
 
 @x
-    <para>Compile <application>Ghostscript</application>:</para>
+      Compile <application>Ghostscript</application>:
 @y
-    <para>Compile <application>Ghostscript</application>:</para>
+      Compile <application>Ghostscript</application>:
 @z
 
 @x
@@ -293,15 +287,15 @@
 @z
 
 @x
-    <para>If you want the shared library too:</para>
+      If you want the shared library too:
 @y
-    <para>If you want the shared library too:</para>
+      If you want the shared library too:
 @z
 
 @x
-    <para>Now make the documentation accessible from the normal place:</para>
+      Now make the documentation accessible from the normal place:
 @y
-    <para>Now make the documentation accessible from the normal place:</para>
+      Now make the documentation accessible from the normal place:
 @z
 
 @x

@@ -81,9 +81,7 @@
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>, and
-      <ulink url="https://web.archive.org/web/20180310225603/http://www.manyfish.co.uk:80/pakchois/">pakchois</ulink>
-      <!-- Note - this URL is broken as of 08-16-2018
-      01-01-2019 - still broken.  -->
+      <ulink url="http://www.manyfish.co.uk/pakchois/">PaKChoiS</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -91,10 +89,8 @@
       <xref linkend="gnutls"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
-      <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>, and
-      <ulink url="https://web.archive.org/web/20180310225603/http://www.manyfish.co.uk:80/pakchois/">pakchois</ulink>
-      <!-- Note - this URL is broken as of 08-16-2018
-      01-01-2019 - still broken.  -->
+      <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>,
+      <ulink url="http://www.manyfish.co.uk/pakchois/">PaKChoiS</ulink>
     </para>
 @z
 
@@ -119,11 +115,8 @@
 
 @x
       To test the results, issue: <command>make check</command>.
-      Most of the <parameter>ssl</parameter> tests fail, using
-      <option>--with-ssl=gnutls</option>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      <option>--with-ssl=gnutls</option> の指定時に <parameter>ssl</parameter> テストの多くは失敗します。
 @z
 
 @x

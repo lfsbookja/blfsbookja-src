@@ -83,12 +83,10 @@
 @z
 
 @x
-    <para>Install <application>Nano</application> by running the following
-    commands:</para>
+      Install <application>Nano</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Nano</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Nano</application> をビルドします。
 @z
 
 @x
@@ -130,11 +128,11 @@
 @z
 
 @x
-      <para><filename>/etc/nanorc</filename> and
-      <filename>~/.nanorc</filename></para>
+        <filename>/etc/nanorc</filename> and
+        <filename>~/.nanorc</filename>
 @y
-      <para><filename>/etc/nanorc</filename>,
-      <filename>~/.nanorc</filename></para>
+        <filename>/etc/nanorc</filename>,
+        <filename>~/.nanorc</filename>
 @z
 
 @x
@@ -148,8 +146,8 @@
         <filename>/etc/nanorc</filename> or a personal
         <filename>~/.nanorc</filename> file)
 @y
-      設定の例です。
-      (システム共通の <filename>/etc/nanorc</filename> ファイルとして、または各ユーザー向けの <filename>~/.nanorc</filename> ファイルとして生成します。)
+        設定の例です。
+        (システム共通の <filename>/etc/nanorc</filename> ファイルとして、または各ユーザー向けの <filename>~/.nanorc</filename> ファイルとして生成します。)
 @z
 
 @x

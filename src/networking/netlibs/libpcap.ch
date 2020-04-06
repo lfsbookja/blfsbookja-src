@@ -153,17 +153,13 @@
 @z
 
 @x
-    <para><option>--enable-bluetooth=no</option>: Necessary, if the
-    recommended patch is not applied, because since 1.6.1 this application
-    needs a fix, in order to build with
-    <application>bluez-5.21</application>.</para>
+      <option>--enable-bluetooth=no</option>: Necessary, if the recommended
+      patch is not applied, because since 1.6.1 this application needs a fix,
+      in order to build with <application>bluez-5.21</application>.
 @y
-    <para><option>--enable-bluetooth=no</option>:
-    
-Necessary, if the
-    recommended patch is not applied, because since 1.6.1 this application
-    needs a fix, in order to build with
-    <application>bluez-5.21</application>.</para>
+      <option>--enable-bluetooth=no</option>: Necessary, if the recommended
+      patch is not applied, because since 1.6.1 this application needs a fix,
+      in order to build with <application>bluez-5.21</application>.
 @z
 
 @x

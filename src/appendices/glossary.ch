@@ -21,26 +21,26 @@
 
 
 @x FAM
-        <para>File Alteration Monitor</para>
+          File Alteration Monitor
 @y
-        <para>ファイル変更監視 (File Alteration Monitor)</para>
+          ファイル変更監視 (File Alteration Monitor)
 @z
 
 @x FAME
-        <para>Fast Assembly Mpeg Encoder</para>
+          Fast Assembly Mpeg Encoder
 @y
-        <para>Fast Assembly Mpeg Encoder</para>
+          Fast Assembly Mpeg Encoder
 @z
 
 @x FAQ
-        <para>Frequently Asked Questions</para>
+          Frequently Asked Questions
 @y
-        <para>よく尋ねられる質問 (Frequently Asked Questions)</para>
+          よく尋ねられる質問 (Frequently Asked Questions)
 @z
 
 
 @x XML
-        <para>eXtensible Markup Language</para>
+          eXtensible Markup Language
 @y
-        <para>拡張可能なマーク付け言語 (eXtensible Markup Language)</para>
+          拡張可能なマーク付け言語 (eXtensible Markup Language)
 @z

@@ -46,45 +46,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&docbook51-download-http;"/></para>
+          Download (HTTP): <ulink url="&docbook51-download-http;"/>
 @y
-        <para>Download (HTTP): <ulink url="&docbook51-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&docbook51-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&docbook51-download-ftp;"/></para>
+          Download (FTP): <ulink url="&docbook51-download-ftp;"/>
 @y
-        <para>Download (FTP): <ulink url="&docbook51-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&docbook51-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &docbook51-md5sum;</para>
+          Download MD5 sum: &docbook51-md5sum;
 @y
-        <para>Download MD5 sum: &docbook51-md5sum;</para>
+          &Download; MD5 sum: &docbook51-md5sum;
 @z
 
 @x
-        <para>Download size: &docbook51-size;</para>
+          Download size: &docbook51-size;
 @y
-        <para>Download size: &docbook51-size;</para>
+          &DownloadSize;: &docbook51-size;
 @z
 
 @x
-        <para>Estimated disk space required: &docbook51-buildsize;</para>
+          Estimated disk space required: &docbook51-buildsize;
 @y
-        <para>Estimated disk space required: &docbook51-buildsize;</para>
+          &Estimateddiskspacerequired;: &docbook51-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &docbook51-time;</para>
+          Estimated build time: &docbook51-time;
 @y
-        <para>Estimated build time: &docbook51-time;</para>
+          &Estimatedbuildtime;: &docbook51-time;
 @z
 
 @x
     <bridgehead renderas="sect3">DocBook XML Schemas 5.1 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">DocBook XML Schemas 5.1 Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;DocBook XML Schemas 5.1&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -112,7 +112,7 @@
 @x
     <title>Installation of DocBook XML Schemas 5.1</title>
 @y
-    <title>Installation of DocBook XML Schemas 5.1</title>
+    <title>&InstallationOf1;DocBook XML Schemas 5.1&InstallationOf2;</title>
 @z
 
 @x
@@ -170,17 +170,17 @@
 @z
 
 @x
-      <para><filename>/etc/xml/catalog</filename>,
-      <filename>/etc/xml/docbook-5.1</filename></para>
+        <filename>/etc/xml/catalog</filename> and
+        <filename>/etc/xml/docbook-5.1</filename>
 @y
-      <para><filename>/etc/xml/catalog</filename>,
-      <filename>/etc/xml/docbook-5.1</filename></para>
+        <filename>/etc/xml/catalog</filename>,
+        <filename>/etc/xml/docbook-5.1</filename>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -188,9 +188,9 @@
       <segtitle>Installed Files</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Files</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -208,7 +208,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x db4-entities.pl
@@ -218,31 +218,16 @@
 @z
 
 @x
-      <varlistentry id="Schema51-files">
         <term><filename>RNC, RNG, and SCH files</filename></term>
-        <listitem>
-          <para>
-            contain the Docbook 5.1 RelaxNG, RelaxNG Compact, and Schematron
-            schema definitions.
-          </para>
-          <indexterm zone="docbook51 Schema51-files">
-            <primary sortas="g-XML-Schema-files">XML Schema files</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="Schema51-files">
         <term><filename>RNC, RNG, and SCH files</filename></term>
-        <listitem>
-          <para>
+@z
+@x
             contain the Docbook 5.1 RelaxNG, RelaxNG Compact, and Schematron
             schema definitions.
-          </para>
-          <indexterm zone="docbook51 Schema51-files">
-            <primary sortas="g-XML-Schema-files">XML Schema files</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
+@y
+            contain the Docbook 5.1 RelaxNG, RelaxNG Compact, and Schematron
+            schema definitions.
 @z
 
 @x db4-upgrade.xsl

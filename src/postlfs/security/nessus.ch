@@ -8,7 +8,7 @@
 % $Date::                           $
 %
 @x
-<para>TO BE WRITTEN - NEW</para>
+    TO BE WRITTEN - NEW
 @y
-<para>TO BE WRITTEN - NEW</para>
+    TO BE WRITTEN - NEW
 @z

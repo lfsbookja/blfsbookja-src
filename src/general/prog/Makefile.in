@@ -337,7 +337,6 @@ CHANGE_FILES = \
 	nasm.ch           \
 	ojdk-conf.ch      \
 	openjdk.ch        \
-	other-tools.ch    \
 	perl-alternatives.ch \
 	perl-deps.ch      \
 	perl-modules.ch   \

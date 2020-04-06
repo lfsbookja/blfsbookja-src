@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libdazzle-buildsize     "34 MB (with tests)">
+  <!ENTITY libdazzle-buildsize     "45 MB (with tests)">
   <!ENTITY libdazzle-time          "0.2 SBU (uning parallelism=4; with tests)">
 @y
-  <!ENTITY libdazzle-buildsize     "34 MB (with tests)">
+  <!ENTITY libdazzle-buildsize     "45 MB (with tests)">
   <!ENTITY libdazzle-time          "0.2 SBU (uning parallelism=4; with tests)">
 @z
 
@@ -117,10 +117,10 @@
 
 @x
       To test the results, issue: <command>ninja test</command>.
-      Two tests may fail due to a theme parsing error.
+      <!--Two tests may fail due to a theme parsing error.-->
 @y
       To test the results, issue: <command>ninja test</command>.
-      Two tests may fail due to a theme parsing error.
+      <!--Two tests may fail due to a theme parsing error.-->
 @z
 
 @x

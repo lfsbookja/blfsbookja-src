@@ -26,13 +26,11 @@
 @z
 
 @x
-    <para>The <application>hicolor-icon-theme</application> package
-    contains a default fallback theme for implementations of the icon
-    theme specification.</para>
+      The <application>hicolor-icon-theme</application> package
+      contains a default fallback theme for implementations of the icon
+      theme specification.
 @y
-    <para>
-    <application>hicolor-icon-theme</application> パッケージは、アイコンテーマ仕様に基づいて実現されたソフトウェアに対して、デフォルトテーマ (fallback theme) を提供します。
-    </para>
+      <application>hicolor-icon-theme</application> パッケージは、アイコンテーマ仕様に基づいて実現されたソフトウェアに対して、デフォルトテーマ (fallback theme) を提供します。
 @z
 
 @x
@@ -42,47 +40,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&hicolor-icon-theme-download-http;"/></para>
+          Download (HTTP): <ulink url="&hicolor-icon-theme-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&hicolor-icon-theme-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&hicolor-icon-theme-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&hicolor-icon-theme-download-ftp;"/></para>
+          Download (FTP): <ulink url="&hicolor-icon-theme-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&hicolor-icon-theme-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&hicolor-icon-theme-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &hicolor-icon-theme-md5sum;</para>
+          Download MD5 sum: &hicolor-icon-theme-md5sum;
 @y
-        <para>&Download; MD5 sum: &hicolor-icon-theme-md5sum;</para>
+          &Download; MD5 sum: &hicolor-icon-theme-md5sum;
 @z
 
 @x
-        <para>Download size: &hicolor-icon-theme-size;</para>
+          Download size: &hicolor-icon-theme-size;
 @y
-        <para>&DownloadSize;: &hicolor-icon-theme-size;</para>
+          &DownloadSize;: &hicolor-icon-theme-size;
 @z
 
 @x
-        <para>Estimated disk space required: &hicolor-icon-theme-buildsize;</para>
+          Estimated disk space required: &hicolor-icon-theme-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &hicolor-icon-theme-buildsize;</para>
+          &Estimateddiskspacerequired;: &hicolor-icon-theme-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &hicolor-icon-theme-time;</para>
+          Estimated build time: &hicolor-icon-theme-time;
 @y
-        <para>&Estimatedbuildtime;: &hicolor-icon-theme-time;</para>
+          &Estimatedbuildtime;: &hicolor-icon-theme-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/hicolor-icon-theme"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/hicolor-icon-theme"/></para>
 @z
 
 @x
@@ -92,26 +88,22 @@
 @z
 
 @x
-    <para>Install <application>hicolor-icon-theme</application> by running
-    the following commands:</para>
+      Install <application>hicolor-icon-theme</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>hicolor-icon-theme</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>hicolor-icon-theme</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -147,9 +139,7 @@
 @z
 
 @x /usr/share/icons/hicolor/*
-          <para>contains icon definitions used as defaults.</para>
+            contains icon definitions used as defaults.
 @y
-          <para>
-          デフォルトで用いられるアイコン定義を提供します。
-          </para>
+            デフォルトで用いられるアイコン定義を提供します。
 @z

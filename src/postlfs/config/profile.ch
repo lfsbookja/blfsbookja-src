@@ -28,40 +28,35 @@
 @z
 
 @x
-  <para>The shell program <filename>/bin/bash</filename> (hereafter
-  referred to as just "the shell") uses a collection of startup files to
-  help create an environment.  Each file has a specific use and
-  may affect login and interactive environments differently.  The files in
-  the <filename class="directory">/etc</filename> directory generally provide
-  global settings. If an equivalent file exists in your home directory it may
-  override the global settings.</para>
+    The shell program <filename>/bin/bash</filename> (hereafter referred to
+    as just "the shell") uses a collection of startup files to help create
+    an environment.  Each file has a specific use and may affect login and
+    interactive environments differently.  The files in the <filename
+    class="directory">/etc</filename> directory generally provide global
+    settings. If an equivalent file exists in your home directory it may
+    override the global settings.
 @y
-  <para>
-  シェルプログラムである <filename>/bin/bash</filename>
-  (これ以降は単に "シェル" と表現)
-  は、初期起動ファイルをいくつも利用して環境設定を行います。
-  個々のファイルにはそれぞれに目的があり、ログインや対話環境を様々に制御します。
-  <filename class="directory">/etc</filename>
-  ディレクトリにあるファイルは一般にグローバルな設定を行います。
-  これに対応づいたファイルがユーザーのホームディレクトリにある場合は、グローバルな設定を上書きします。
-  </para>
+    シェルプログラムである <filename>/bin/bash</filename>
+    (これ以降は単に "シェル" と表現)
+    は、初期起動ファイルをいくつも利用して環境設定を行います。
+    個々のファイルにはそれぞれに目的があり、ログインや対話環境を様々に制御します。
+    <filename class="directory">/etc</filename> ディレクトリにあるファイルは一般にグローバルな設定を行います。
+    これに対応づいたファイルがユーザーのホームディレクトリにある場合は、グローバルな設定を上書きします。
 @z
 
 @x
-  <para>An interactive login shell is started after a successful login, using
-  <filename>/bin/login</filename>, by reading the
-  <filename>/etc/passwd</filename> file. This shell invocation normally reads
-  <filename>/etc/profile</filename> and its private equivalent
-  <filename>~/.bash_profile</filename> (or <filename>~/.profile</filename> if
-  called as <command>/bin/sh</command>) upon startup.</para> 
+    An interactive login shell is started after a successful login, using
+    <filename>/bin/login</filename>, by reading the
+    <filename>/etc/passwd</filename> file. This shell invocation normally reads
+    <filename>/etc/profile</filename> and its private equivalent
+    <filename>~/.bash_profile</filename> (or <filename>~/.profile</filename>
+    if called as <command>/bin/sh</command>) upon startup.
 @y
-  <para>
-  対話型ログインシェル (interactive login shell) では
-  <filename>/etc/passwd</filename> ファイルの情報に基づいてログインが成功すれば
-  <filename>/bin/login</filename> が稼動します。
-  This shell invocation normally reads
-  <filename>/etc/profile</filename> and its private equivalent
-  <filename>~/.bash_profile</filename> (or <filename>~/.profile</filename> if
-  called as <command>/bin/sh</command>) upon startup.
-  </para>
+    対話型ログインシェル (interactive login shell) では
+    <filename>/etc/passwd</filename> ファイルの情報に基づいてログインが成功すれば
+    <filename>/bin/login</filename> が稼動します。
+    This shell invocation normally reads
+    <filename>/etc/profile</filename> and its private equivalent
+    <filename>~/.bash_profile</filename> (or <filename>~/.profile</filename> if
+    called as <command>/bin/sh</command>) upon startup.
 @z

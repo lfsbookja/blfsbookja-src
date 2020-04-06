@@ -20,7 +20,7 @@
 @z
 
 @x
-    <para><application>BIND Utilities</application> is not a separate
+      <application>BIND Utilities</application> is not a separate
     package, it is a collection of the client side programs that are included
     with <xref linkend="bind"/>. The <application>BIND</application>
     package includes the client side programs <command>nslookup</command>,
@@ -30,8 +30,7 @@
     <application>BIND</application> server, but need these
     client side applications.</para>
 @y
-    <para>
-    <application>BIND Utilities</application> is not a separate
+      <application>BIND Utilities</application> is not a separate
     package, it is a collection of the client side programs that are included
     with <xref linkend="bind"/>. The <application>BIND</application>
     package includes the client side programs <command>nslookup</command>,
@@ -39,8 +38,7 @@
     <application>BIND</application> server, these programs will be installed
     automatically. This section is for those users who don't need the complete
     <application>BIND</application> server, but need these
-    client side applications.
-    </para>
+    client side applications.</para>
 @z
 
 @x
@@ -50,39 +48,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&bind-download-http;"/></para>
+          Download (HTTP): <ulink url="&bind-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&bind-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&bind-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&bind-download-ftp;"/></para>
+          Download (FTP): <ulink url="&bind-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&bind-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&bind-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &bind-md5sum;</para>
+          Download MD5 sum: &bind-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &bind-md5sum;</para>
+          &Download; MD5 sum: &bind-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &bind-size;</para>
+          Download size: &bind-size;</para>
 @y
-        <para>&DownloadSize;: &bind-size;</para>
+          &DownloadSize;: &bind-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &bind-utils-buildsize;</para>
+          Estimated disk space required: &bind-utils-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &bind-utils-buildsize;</para>
+          &Estimateddiskspacerequired;: &bind-utils-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &bind-utils-time;</para>
+          Estimated build time: &bind-utils-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &bind-utils-time;</para>
+          &Estimatedbuildtime;: &bind-utils-time;</para>
 @z
 
 @x
@@ -118,28 +116,22 @@
 @z
 
 @x
-    <para>Install <application>BIND Utilities</application> by
+      Install <application>BIND Utilities</application> by
     running the following commands:</para>
 @y
-    <para>
-    以下のコマンドを実行して <application>BIND Utilities</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>BIND Utilities</application> をビルドします。</para>
 @z
 
 @x
-    <para>This portion of the package does not come with a test suite.</para>
+      This portion of the package does not come with a test suite.</para>
 @y
-    <para>
-    上のパッケージの部分に対してはテストスイートがありません。
-    </para>
+      上のパッケージの部分に対してはテストスイートがありません。</para>
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:</para>
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。</para>
 @z
 
 @x
@@ -149,23 +141,27 @@
 @z
 
 @x
-    <para><command>make -C lib/...</command>: These commands build the
-    libraries that are needed for the client programs.</para>
+      <parameter>--without-python</parameter>: This option eliminates
+    the need for an unused python module.</para>
 @y
-    <para>
-    <command>make -C lib/...</command>:
-    これらのコマンドは、クライアントプログラムが必要とするライブラリをビルドします。
-    </para>
+      <parameter>--without-python</parameter>: This option eliminates
+    the need for an unused python module.</para>
 @z
 
 @x
-    <para><command>make -C bin/dig</command>: This command builds the
+      <command>make -C lib/...</command>: These commands build the
+    libraries that are needed for the client programs.</para>
+@y
+      <command>make -C lib/...</command>:
+      これらのコマンドは、クライアントプログラムが必要とするライブラリをビルドします。</para>
+@z
+
+@x
+      <command>make -C bin/dig</command>: This command builds the
     client programs.</para>
 @y
-    <para>
-    <command>make -C bin/dig</command>:
-    このコマンドはクライアントプログラムをビルドします。
-    </para>
+      <command>make -C bin/dig</command>:
+      このコマンドはクライアントプログラムをビルドします。</para>
 @z
 
 @x
@@ -201,10 +197,7 @@
 @z
 
 @x
-    <para>See the program descriptions in the <xref linkend="bind"/>
-    section.</para>
+      See the program descriptions in the <xref linkend="bind"/> section.
 @y
-    <para>
-    プログラムの詳細については <xref linkend="bind"/> を参照してください。
-    </para>
+      プログラムの詳細については <xref linkend="bind"/> を参照してください。
 @z

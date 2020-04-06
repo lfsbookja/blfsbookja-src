@@ -26,19 +26,19 @@
 @z
 
 @x
-    <para>The <application>icon-naming-utils</application> package contains
-    a <application>Perl</application> script used for maintaining backwards
-    compatibility with current desktop icon themes, while migrating to the
-    names specified in the <ulink
-    url="http://standards.freedesktop.org/icon-naming-spec/latest/">
-    Icon Naming Specification</ulink>.</para>
+      The <application>icon-naming-utils</application> package contains
+      a <application>Perl</application> script used for maintaining backwards
+      compatibility with current desktop icon themes, while migrating to the
+      names specified in the <ulink
+      url="http://standards.freedesktop.org/icon-naming-spec/latest/">
+      Icon Naming Specification</ulink>.
 @y
-    <para>The <application>icon-naming-utils</application> package contains
-    a <application>Perl</application> script used for maintaining backwards
-    compatibility with current desktop icon themes, while migrating to the
-    names specified in the <ulink
-    url="http://standards.freedesktop.org/icon-naming-spec/latest/">
-    Icon Naming Specification</ulink>.</para>
+      The <application>icon-naming-utils</application> package contains
+      a <application>Perl</application> script used for maintaining backwards
+      compatibility with current desktop icon themes, while migrating to the
+      names specified in the <ulink
+      url="http://standards.freedesktop.org/icon-naming-spec/latest/">
+      Icon Naming Specification</ulink>.
 @z
 
 @x
@@ -48,39 +48,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&icon-naming-utils-download-http;"/></para>
+          Download (HTTP): <ulink url="&icon-naming-utils-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&icon-naming-utils-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&icon-naming-utils-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&icon-naming-utils-download-ftp;"/></para>
+          Download (FTP): <ulink url="&icon-naming-utils-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&icon-naming-utils-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&icon-naming-utils-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &icon-naming-utils-md5sum;</para>
+          Download MD5 sum: &icon-naming-utils-md5sum;
 @y
-        <para>&Download; MD5 sum: &icon-naming-utils-md5sum;</para>
+          &Download; MD5 sum: &icon-naming-utils-md5sum;
 @z
 
 @x
-        <para>Download size: &icon-naming-utils-size;</para>
+          Download size: &icon-naming-utils-size;
 @y
-        <para>&DownloadSize;: &icon-naming-utils-size;</para>
+          &DownloadSize;: &icon-naming-utils-size;
 @z
 
 @x
-        <para>Estimated disk space required: &icon-naming-utils-buildsize;</para>
+          Estimated disk space required: &icon-naming-utils-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &icon-naming-utils-buildsize;</para>
+          &Estimateddiskspacerequired;: &icon-naming-utils-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &icon-naming-utils-time;</para>
+          Estimated build time: &icon-naming-utils-time;
 @y
-        <para>&Estimatedbuildtime;: &icon-naming-utils-time;</para>
+          &Estimatedbuildtime;: &icon-naming-utils-time;
 @z
 
 @x
@@ -91,18 +91,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="perl-xml-simple"/></para>
+    <para role="required">
+      <xref linkend="perl-xml-simple"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="perl-xml-simple"/></para>
+    <para role="required">
+      <xref linkend="perl-xml-simple"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/icon-naming-utils"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/icon-naming-utils"/></para>
 @z
 
 @x
@@ -112,26 +114,22 @@
 @z
 
 @x
-    <para>Install <application>icon-naming-utils</application> by running
-    the following commands:</para>
+      Install <application>icon-naming-utils</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>icon-naming-utils</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>icon-naming-utils</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -167,15 +165,13 @@
 @z
 
 @x icon-name-mapping
-          <para>is a <application>Perl</application> script used for
-          maintaining backwards compatibility with current desktop icon themes,
-          while migrating to the names specified in the Icon Naming
-          Specification.</para>
+            is a <application>Perl</application> script used for maintaining
+            backwards compatibility with current desktop icon themes,
+            while migrating to the names specified in the Icon Naming
+            Specification.
 @y
-          <para>
-          is a <application>Perl</application> script used for
-          maintaining backwards compatibility with current desktop icon themes,
-          while migrating to the names specified in the Icon Naming
-          Specification.
-          </para>
+            is a <application>Perl</application> script used for maintaining
+            backwards compatibility with current desktop icon themes,
+            while migrating to the names specified in the Icon Naming
+            Specification.
 @z

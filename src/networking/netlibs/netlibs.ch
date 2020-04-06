@@ -20,14 +20,12 @@
 @z
 
 @x
-  <para>These applications are support libraries for other applications in
-  the book.  It is unlikely that you would just install these libraries, you will
-  generally find that you will be referred to this chapter to satisfy a
-  dependency of other applications.</para>
+    These applications are support libraries for other applications in the
+    book. It is unlikely that you would just install these libraries, you
+    will generally find that you will be referred to this chapter to satisfy
+    a dependency of other applications.
 @y
-  <para>
-  ここに示すライブラリは、本書内の他のアプリケーションをサポートするライブラリです。
-  これらのライブラリをインストールしたいと思うことは少ないでしょう。
-  ただし他のアプリケーションの依存関係から、本章を参照することになるかもしれません。
-  </para>
+    ここに示すライブラリは、本書内の他のアプリケーションをサポートするライブラリです。
+    これらのライブラリをインストールしたいと思うことは少ないでしょう。
+    ただし他のアプリケーションの依存関係から、本章を参照することになるかもしれません。
 @z

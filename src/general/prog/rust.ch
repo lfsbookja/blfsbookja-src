@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY rust-buildsize     "5.3GB (375 MB installed) including 429MB of ~/.cargo files for the user building this. Add 1.7 GB if running the tests">
-  <!ENTITY rust-time          "24 SBU (add 13 SBU for tests, both with 4 processors)">
+  <!ENTITY rust-buildsize     "5.7 GB (250 MB installed) including 344 MB of ~/.cargo files for the user building this. Add 2.5 GB if running the tests">
+  <!ENTITY rust-time          "33 SBU (add 17 SBU for tests, both on a 4-core machine)">
 @y
-  <!ENTITY rust-buildsize     "5.3GB (375 MB installed) including 429MB of ~/.cargo files for the user building this. Add 1.7 GB if running the tests">
-  <!ENTITY rust-time          "24 SBU (4 プロセッサーの場合; テスト実施時はさらに 13 SBU)">
+  <!ENTITY rust-buildsize     "5.7 GB (250 MB installed) including 344 MB of ~/.cargo files for the user building this. Add 2.5 GB if running the tests">
+  <!ENTITY rust-time          "33 SBU (4 プロセッサーの場合; テスト実施時はさらに 17 SBU)">
 @z
 
 @x
@@ -36,16 +36,18 @@
 
 @x
       This package is updated on a six-weekly release cycle. Because it is
-      such a large and slow package to build, and is at the moment only required
-      by a few packages in this book, the BLFS editors take the view that it
-      should only be updated when that is necessary (either to fix problems,
-      or to allow a new version of <application>firefox</application> to build).
+      such a large and slow package to build, is at the moment only required
+      by a few packages in this book, and particularly because newer versions
+      tend to break older mozilla packages, the BLFS editors take the view that
+      it should only be updated when that is necessary (either to fix problems,
+      or to allow a new version of a package to build).
 @y
       This package is updated on a six-weekly release cycle. Because it is
-      such a large and slow package to build, and is at the moment only required
-      by a few packages in this book, the BLFS editors take the view that it
-      should only be updated when that is necessary (either to fix problems,
-      or to allow a new version of <application>firefox</application> to build).
+      such a large and slow package to build, is at the moment only required
+      by a few packages in this book, and particularly because newer versions
+      tend to break older mozilla packages, the BLFS editors take the view that
+      it should only be updated when that is necessary (either to fix problems,
+      or to allow a new version of a package to build).
 @z
 
 @x
@@ -101,8 +103,8 @@
         editors recommend placing the files in the <filename
         class="directory">/opt</filename> directory.  In particular, if you
         have reason to rebuild with a modified configuration (e.g. using the
-        shipped LLVM after building with shared LLVM, but perhaps also the
-        reverse situation) it it possible for the install to leave a broken
+        shipped LLVM after building with shared LLVM, or for the
+        reverse situation) it is possible for the install to leave a broken
         <command>cargo</command> program. In such a situation, either remove
         the existing installation first, or use a different prefix such as
         /opt/rustc-&rust-version;-build2.
@@ -115,8 +117,8 @@
         editors recommend placing the files in the <filename
         class="directory">/opt</filename> directory.  In particular, if you
         have reason to rebuild with a modified configuration (e.g. using the
-        shipped LLVM after building with shared LLVM, but perhaps also the
-        reverse situation) it it possible for the install to leave a broken
+        shipped LLVM after building with shared LLVM, or for the
+        reverse situation) it is possible for the install to leave a broken
         <command>cargo</command> program. In such a situation, either remove
         the existing installation first, or use a different prefix such as
         /opt/rustc-&rust-version;-build2.
@@ -257,22 +259,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <package>clang</package> from <xref linkend="llvm"/>
-      (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
-      system LLVM instead of building its shipped version)
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <package>clang</package> from <xref linkend="llvm"/>
-      (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
-      system LLVM instead of building its shipped version)
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gdb"/> (used by the testsuite if it is present) and
@@ -335,10 +321,10 @@
 @z
 
 @x
-      Now compile <application>Rust</application> by running the following
+      Compile <application>Rust</application> by running the following
       commands:
 @y
-      Now compile <application>Rust</application> by running the following
+      Compile <application>Rust</application> by running the following
       commands:
 @z
 
@@ -377,7 +363,7 @@
       A fourth test,
       <filename>run-make-fulldeps/sysroot-crates-are-unstable</filename>
       fails, presumably because we are using only stable features.
-      <!-- appears to be fixed now
+      <!-- gdb appears to be fixed now
       If gdb has been installed, in some circumstances tests in
       <filename class="directory">debuginfo</filename> may fail.--> As with all
       large testsuites, other tests might
@@ -385,7 +371,6 @@
       check the log for 'FAILED' and review lines above that, particularly the
       'stderr:' lines. Any mention of
       SIGSEGV or signal 11 in a failing test is a cause for concern.
-      A fifth test, run-make-fulldeps/linker-output-non-utf8, is known to fail.
 @y
       The instructions above do not build ARM compilers, so the testsuite
       <emphasis>will</emphasis> fail and the tests will be reported to end in
@@ -395,7 +380,7 @@
       A fourth test,
       <filename>run-make-fulldeps/sysroot-crates-are-unstable</filename>
       fails, presumably because we are using only stable features.
-      <!-- appears to be fixed now
+      <!-- gdb appears to be fixed now
       If gdb has been installed, in some circumstances tests in
       <filename class="directory">debuginfo</filename> may fail.--> As with all
       large testsuites, other tests might
@@ -403,33 +388,52 @@
       check the log for 'FAILED' and review lines above that, particularly the
       'stderr:' lines. Any mention of
       SIGSEGV or signal 11 in a failing test is a cause for concern.
-      A fifth test, run-make-fulldeps/linker-output-non-utf8, is known to fail.
 @z
 
 @x
-      Therefore, you should determine the number of tests, failures, etc. The
-      total number of tests which were considered is found by running:
+      If you get any <emphasis>other</emphasis> failing test which reports an
+      issue number then you should search for that issue.  For example, when
+      rustc &gt;= 1.41.1 is built with a version of sysllvm before 10.0 the test
+      for issue 69225 fails <ulink
+      url="https://github.com/rust-lang/rust/issues/69225"/> and that should be
+      regarded as a critical failure (they released 1.41.1 because of it).
+      Most other failures will not be critical.
 @y
-      Therefore, you should determine the number of tests, failures, etc. The
-      total number of tests which were considered is found by running:
+      If you get any <emphasis>other</emphasis> failing test which reports an
+      issue number then you should search for that issue.  For example, when
+      rustc &gt;= 1.41.1 is built with a version of sysllvm before 10.0 the test
+      for issue 69225 fails <ulink
+      url="https://github.com/rust-lang/rust/issues/69225"/> and that should be
+      regarded as a critical failure (they released 1.41.1 because of it).
+      Most other failures will not be critical.
 @z
 
 @x
-      That should report 16499 tests. Similarly, the total tests which failed can
-      be found by running:
+      Therefore, you should determine the number of failures. The total number
+      of tests varies depending on which dependencies are present, e.g. more
+      will be run if <command>gdb</command> is available. If you wish, the
+      total number which were considered can be found if you run:
 @y
-      That should report 16499 tests. Similarly, the total tests which failed can
-      be found by running:
+      Therefore, you should determine the number of failures. The total number
+      of tests varies depending on which dependencies are present, e.g. more
+      will be run if <command>gdb</command> is available. If you wish, the
+      total number which were considered can be found if you run:
 @z
 
 @x
-      And similarly for the tests which passed use $4, for those which were ignored
-      (i.e. skipped) use $8 (and $10 for 'measured', $12 for 'filtered out' but both
-      are probably zero). The breakdown does not quite match the overall total.
+      More importantly, the total of tests which failed can be found by running:
 @y
-      And similarly for the tests which passed use $4, for those which were ignored
-      (i.e. skipped) use $8 (and $10 for 'measured', $12 for 'filtered out' but both
-      are probably zero). The breakdown does not quite match the overall total.
+      More importantly, the total of tests which failed can be found by running:
+@z
+
+@x
+      And similarly if you care about how many tests passed use $4, for those
+      which were ignored (i.e. skipped) use $8 (and $10 for 'measured', $12 for
+      'filtered out' but both are probably zero).
+@y
+      And similarly if you care about how many tests passed use $4, for those
+      which were ignored (i.e. skipped) use $8 (and $10 for 'measured', $12 for
+      'filtered out' but both are probably zero).
 @z
 
 @x
@@ -604,7 +608,7 @@
 
 @x
         <seg>
-          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt.
+          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri, rls, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt.
         </seg>
         <seg>
           Many lib*&lt;16-byte-hash&gt;.so libraries.
@@ -617,7 +621,7 @@
         </seg>
 @y
         <seg>
-          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri, rls, rust-gdb, rust-lldb, rustc, rustdoc, rustfmt
+          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri, rls, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt
         </seg>
         <seg>
           数多くの lib*&lt;16-byte-hash&gt;.so ライブラリ
@@ -663,11 +667,11 @@
 @x rust-gdb
             is a wrapper script for gdb, pulling in Python
             pretty-printing modules installed in <filename
-            class="directory">/usr/lib/rustlib/etc</filename>.
+			class="directory">/opt/rustc-&rust-version;/lib/rustlib/etc</filename>.
 @y
             is a wrapper script for gdb, pulling in Python
             pretty-printing modules installed in <filename
-            class="directory">/usr/lib/rustlib/etc</filename>.
+			class="directory">/opt/rustc-&rust-version;/lib/rustlib/etc</filename>.
 @z
 
 @x rust-lldb

@@ -20,18 +20,14 @@
 @z
 
 @x
-  <para>This chapter contains some tools that come in handy when the network
-  needs investigating.</para>
+    This chapter contains some tools that come in handy when the network
+    needs investigating.
 @y
-  <para>
-  本章では、ネットワークを調べるために利用される、取り扱いやすいツールを説明します。
-  </para>
+    本章では、ネットワークを調べるために利用される、取り扱いやすいツールを説明します。
 @z
 
 @x
   <para condition="html" role="usernotes">User Notes:
-  <ulink url="&blfs-wiki;/basicnetworkingutilities"/></para>
 @y
   <para condition="html" role="usernotes">&UserNotes;:
-  <ulink url="&blfs-wiki;/basicnetworkingutilities"/></para>
 @z

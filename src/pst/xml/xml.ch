@@ -20,12 +20,10 @@
 @z
 
 @x
-  <para>This chapter contains the DocBook XML document type definition
-  (DTD) and DocBook Stylesheets which are used to validate, transform,
-  format and publish DocBook documents.</para>
+    This chapter contains the DocBook XML document type definition
+    (DTD) and DocBook Stylesheets which are used to validate, transform,
+    format and publish DocBook documents.
 @y
-  <para>
-  本章では DocBook XML 文書型定義 (document type definition; DTD) や DocBook スタイルシートについて説明します。
-  これらは DocBook 文書を、検証、変換、出力するために利用します。
-  </para>
+    本章では DocBook XML 文書型定義 (document type definition; DTD) や DocBook スタイルシートについて説明します。
+    これらは DocBook 文書を、検証、変換、出力するために利用します。
 @z

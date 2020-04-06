@@ -76,38 +76,52 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required">
+      <xref linkend="glib2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="glib2"/></para>
+    <para role="required">
+      <xref linkend="glib2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="aspell"/></para>
+    <para role="recommended">
+      <xref linkend="aspell"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="aspell"/></para>
+    <para role="recommended">
+      <xref linkend="aspell"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="dbus-glib"/>,
-    <xref linkend="doxygen"/>,
-    <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
-    <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
-    <ulink url="https://nuspell.github.io/">Nuspell</ulink>,
-    <ulink url="http://hunspell.github.io/">Voikko</ulink>, and
-    <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">unittest-cpp</ulink> (required for tests)</para>
+    <para role="optional">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="doxygen"/>,
+      <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
+      <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
+      <ulink url="https://nuspell.github.io/">Nuspell</ulink>,
+      <ulink url="http://hunspell.github.io/">Voikko</ulink>, and
+      <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">
+        unittest-cpp</ulink> (required for tests)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="dbus-glib"/>,
-    <xref linkend="doxygen"/>,
-    <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
-    <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
-    <ulink url="https://nuspell.github.io/">Nuspell</ulink>,
-    <ulink url="http://hunspell.github.io/">Voikko</ulink>, and
-    <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">unittest-cpp</ulink> (required for tests)</para>
+    <para role="optional">
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="doxygen"/>,
+      <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
+      <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
+      <ulink url="https://nuspell.github.io/">Nuspell</ulink>,
+      <ulink url="http://hunspell.github.io/">Voikko</ulink>,
+      <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">
+        unittest-cpp</ulink> (required for tests)
+    </para>
 @z
 
 @x

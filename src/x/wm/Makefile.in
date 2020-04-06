@@ -234,7 +234,6 @@ BOOKdir = @abs_bookdir@/x/wm
 CHANGE_FILES = \
 	fluxbox.ch   \
 	icewm.ch     \
-	other-wms.ch \
 	openbox.ch   \
 	sawfish.ch   \
 	wm.ch
@@ -435,10 +434,12 @@ all: ctie $(srcs)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-other-wms.xml.tmp: $(BOOKdir)/other-wms.xml
-	sed -e "s/Motif\xAE/Motif\&reg;/" $^ > $@
-other-wms.xml: ./other-wms.xml.tmp $(srcdir)/other-wms.ch
-	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
+$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+
+.PHONY: chbuild
+chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

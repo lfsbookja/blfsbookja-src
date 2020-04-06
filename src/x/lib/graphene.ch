@@ -1,0 +1,194 @@
+%
+% This is part of BLFSbookja package.
+%
+% This is a CTIE change file for the original XML source of the BLFSbook.
+%
+% $Author$
+% $Rev$
+% $Date::                           $
+%
+@x
+<?xml version="1.0" encoding="ISO-8859-1"?>
+@y
+<?xml version="1.0" encoding="UTF-8"?>
+@z
+
+@x
+    <title>Introduction to Graphene</title>
+@y
+    <title>Introduction to Graphene</title>
+@z
+
+@x
+      The <application>Graphene</application> package provides a thin layer
+      of types for graphics libraries.
+@y
+      The <application>Graphene</application> package provides a thin layer
+      of types for graphics libraries.
+@z
+
+@x
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+@y
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+@z
+
+@x
+          Download (HTTP): <ulink url="&graphene-download-http;"/>
+@y
+          Download (HTTP): <ulink url="&graphene-download-http;"/>
+@z
+
+@x
+          Download (FTP): <ulink url="&graphene-download-ftp;"/>
+@y
+          Download (FTP): <ulink url="&graphene-download-ftp;"/>
+@z
+
+@x
+          Download MD5 sum: &graphene-md5sum;
+@y
+          Download MD5 sum: &graphene-md5sum;
+@z
+
+@x
+          Download size: &graphene-size;
+@y
+          Download size: &graphene-size;
+@z
+
+@x
+          Estimated disk space required: &graphene-buildsize;
+@y
+          Estimated disk space required: &graphene-buildsize;
+@z
+
+@x
+          Estimated build time: &graphene-time;
+@y
+          Estimated build time: &graphene-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Graphene Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">Graphene Dependencies</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="glib2"/> and
+      <xref linkend="gobject-introspection"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="glib2"/>,
+      <xref linkend="gobject-introspection"/>
+    </para>
+@z
+
+@x
+      User Notes: <ulink url="&blfs-wiki;/graphene"/>
+@y
+      &UserNotes;: <ulink url="&blfs-wiki;/graphene"/>
+@z
+
+@x
+    <title>Installation of Graphene</title>
+@y
+    <title>Installation of Graphene</title>
+@z
+
+@x
+      Install <application>Graphene</application> by running the following
+      commands:
+@y
+      Install <application>Graphene</application> by running the following
+      commands:
+@z
+
+@x
+      To test the results, issue: <command>ninja test</command>.
+@y
+      To test the results, issue: <command>ninja test</command>.
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      Now, as the <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>-Dgtk_doc=true</option>: Use this switch if you have
+      <xref role="nodep" linkend="gtk-doc"/> installed and wish to generate
+      the API documentation.
+@y
+      <option>-Dgtk_doc=true</option>: Use this switch if you have
+      <xref role="nodep" linkend="gtk-doc"/> installed and wish to generate
+      the API documentation.
+@z
+
+@x
+    <title>Contents</title>
+@y
+    <title>Contents</title>
+@z
+
+@x
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
+@y
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
+@z
+
+@x
+        <seg>
+          None
+        </seg>
+        <seg>
+          libgraphene-1.0.so
+        </seg>
+        <seg>
+          /usr/include/graphene-1.0,
+          /usr/lib/graphene-1.0,
+          /usr/{libexec,share}/installed-tests/graphene-1.0
+        </seg>
+@y
+        <seg>
+          &None;
+        </seg>
+        <seg>
+          libgraphene-1.0.so
+        </seg>
+        <seg>
+          /usr/include/graphene-1.0,
+          /usr/lib/graphene-1.0,
+          /usr/{libexec,share}/installed-tests/graphene-1.0
+        </seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x libgraphene-1.0.so
+            contains functions that provide a thin layer of types for graphics
+            libraries.
+@y
+            contains functions that provide a thin layer of types for graphics
+            libraries.
+@z

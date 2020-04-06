@@ -33,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&parted-download-http;"/></para>
+          Download (HTTP): <ulink url="&parted-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&parted-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&parted-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&parted-download-ftp;"/></para>
+          Download (FTP): <ulink url="&parted-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&parted-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&parted-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &parted-md5sum;</para>
+          Download MD5 sum: &parted-md5sum;
 @y
-        <para>&Download; MD5 sum: &parted-md5sum;</para>
+          &Download; MD5 sum: &parted-md5sum;
 @z
 
 @x
-        <para>Download size: &parted-size;</para>
+          Download size: &parted-size;
 @y
-        <para>&DownloadSize;: &parted-size;</para>
+          &DownloadSize;: &parted-size;
 @z
 
 @x
-        <para>Estimated disk space required: &parted-buildsize;</para>
+          Estimated disk space required: &parted-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &parted-buildsize;</para>
+          &Estimateddiskspacerequired;: &parted-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &parted-time;</para>
+          Estimated build time: &parted-time;
 @y
-        <para>&Estimatedbuildtime;: &parted-time;</para>
+          &Estimatedbuildtime;: &parted-time;
 @z
 
 @x
@@ -107,20 +107,18 @@
 @z
 
 @x
-    <para>If you have <xref linkend="texlive"/> installed and wish to create
-    PDF and Postcript documentation issue the following commands:</para>
+      If you have <xref linkend="texlive"/> installed and wish to create
+      PDF and Postcript documentation issue the following commands:
 @y
-    <para>
-    <xref linkend="texlive"/> をインストールしていて PDF と Postscript のドキュメントを生成したい場合は、以下のコマンドを実行します。
-    </para>
+      <xref linkend="texlive"/> をインストールしていて PDF と Postscript のドキュメントを生成したい場合は、以下のコマンドを実行します。
 @z
 
 @x
-    <para>If you wish to run the test suite, first remove a couple of tests
-    that are known to fail in a BLFS environment:</para>
+      If you wish to run the test suite, first remove a couple of tests
+      that are known to fail in a BLFS environment:
 @y
-    <para>If you wish to run the test suite, first remove a couple of tests
-    that are known to fail in a BLFS environment:</para>
+      If you wish to run the test suite, first remove a couple of tests
+      that are known to fail in a BLFS environment:
 @z
 
 @x
@@ -138,14 +136,12 @@
 @z
 
 @x
-    <para>Install the optional PDF and Postscript documentation by issuing
-    the following command as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Install the optional PDF and Postscript documentation by issuing the
+      following command as the <systemitem class="username">root</systemitem>
+      user:
 @y
-    <para>
-    PDF と Postscript ドキュメントを生成していた場合は、<systemitem
-    class="username">root</systemitem> ユーザーとなり以下のコマンドを実行してドキュメントをインストールします。
-    </para>
+      PDF と Postscript ドキュメントを生成していた場合は、<systemitem
+      class="username">root</systemitem> ユーザーとなり以下のコマンドを実行してドキュメントをインストールします。
 @z
 
 @x
@@ -211,19 +207,15 @@
 @z
 
 @x parted
-          <para>is a partition manipulation program.</para>
+            is a partition manipulation program.
 @y
-          <para>
-          パーティションを操作するプログラムです。
-          </para>
+            パーティションを操作するプログラムです。
 @z
 
 @x partprobe
-          <para>informs the OS of partition table changes.</para>
+            informs the OS of partition table changes.
 @y
-          <para>
-          OS に対してパーティションテーブルが変更されたことを通知します。
-          </para>
+            OS に対してパーティションテーブルが変更されたことを通知します。
 @z
 
 @x libparted.so

@@ -44,39 +44,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&smartmontools-download-http;"/></para>
+          Download (HTTP): <ulink url="&smartmontools-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&smartmontools-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&smartmontools-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&smartmontools-download-ftp;"/></para>
+          Download (FTP): <ulink url="&smartmontools-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&smartmontools-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&smartmontools-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &smartmontools-md5sum;</para>
+          Download MD5 sum: &smartmontools-md5sum;
 @y
-        <para>&Download; MD5 sum: &smartmontools-md5sum;</para>
+          &Download; MD5 sum: &smartmontools-md5sum;
 @z
 
 @x
-        <para>Download size: &smartmontools-size;</para>
+          Download size: &smartmontools-size;
 @y
-        <para>&DownloadSize;: &smartmontools-size;</para>
+          &DownloadSize;: &smartmontools-size;
 @z
 
 @x
-        <para>Estimated disk space required: &smartmontools-buildsize;</para>
+          Estimated disk space required: &smartmontools-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &smartmontools-buildsize;</para>
+          &Estimateddiskspacerequired;: &smartmontools-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &smartmontools-time;</para>
+          Estimated build time: &smartmontools-time;
 @y
-        <para>&Estimatedbuildtime;: &smartmontools-time;</para>
+          &Estimatedbuildtime;: &smartmontools-time;
 @z
 
 @x
@@ -124,11 +124,9 @@
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
@@ -248,19 +246,19 @@
 @z
 
 @x smartctl
-          <para>is the control and monitor utility for SMART Disks.</para>
+            is the control and monitor utility for SMART Disks.
 @y
-          <para>is the control and monitor utility for SMART Disks.</para>
+            is the control and monitor utility for SMART Disks.
 @z
 
 @x smartd
-          <para>is the SMART disk monitoring daemon.</para>
+            is the SMART disk monitoring daemon.
 @y
-          <para>is the SMART disk monitoring daemon.</para>
+            is the SMART disk monitoring daemon.
 @z
 
 @x update-smart-drivedb
-          <para>is the update tool for the smartmontools drive database.</para>
+            is the update tool for the smartmontools drive database.
 @y
-          <para>is the update tool for the smartmontools drive database.</para>
+            is the update tool for the smartmontools drive database.
 @z

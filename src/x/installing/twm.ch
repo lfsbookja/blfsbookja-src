@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para>The <application>twm</application> package contains a very minimal
-    window manager.</para>
+      The <application>twm</application> package contains a very minimal
+      window manager.
 @y
-    <para>
-    <application>twm</application> パッケージは、非常に軽量なウィンドウマネージャーを提供します。
-    </para>
+      <application>twm</application> パッケージは、非常に軽量なウィンドウマネージャーを提供します。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&twm-download-http;"/></para>
+          Download (HTTP): <ulink url="&twm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&twm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&twm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&twm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&twm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&twm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&twm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &twm-md5sum;</para>
+          Download MD5 sum: &twm-md5sum;
 @y
-        <para>&Download; MD5 sum: &twm-md5sum;</para>
+          &Download; MD5 sum: &twm-md5sum;
 @z
 
 @x
-        <para>Download size: &twm-size;</para>
+          Download size: &twm-size;
 @y
-        <para>&DownloadSize;: &twm-size;</para>
+          &DownloadSize;: &twm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &twm-buildsize;</para>
+          Estimated disk space required: &twm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &twm-buildsize;</para>
+          &Estimateddiskspacerequired;: &twm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &twm-time;</para>
+          Estimated build time: &twm-time;
 @y
-        <para>&Estimatedbuildtime;: &twm-time;</para>
+          &Estimatedbuildtime;: &twm-time;
 @z
 
 @x
@@ -84,10 +82,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg-server"/></para>
+    <para role="required">
+      <xref linkend="xorg-server"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg-server"/></para>
+    <para role="required">
+      <xref linkend="xorg-server"/>
+    </para>
 @z
 
 @x
@@ -103,29 +105,22 @@
 @z
 
 @x
-    <para>Install <application>twm</application> by running the
-    following commands:</para>
+      Install <application>twm</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>twm</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>twm</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -135,13 +130,12 @@
 @z
 
 @x
-    <para><command>sed -i -e '/^rcdir =/s...</command>: This command ensures
-    the <application>twm</application> configuration file gets installed in
-    the proper location.</para>
+      <command>sed -i -e '/^rcdir =/s...</command>: This command ensures
+      the <application>twm</application> configuration file gets installed in
+      the proper location.
 @y
-    <para><command>sed -i -e '/^rcdir =/s...</command>:
-    本コマンドは <application>twm</application> の設定ファイルを適切なディレクトリにインストールするようにします。
-    </para>
+      <command>sed -i -e '/^rcdir =/s...</command>:
+      本コマンドは <application>twm</application> の設定ファイルを適切なディレクトリにインストールするようにします。
 @z
 
 @x
@@ -177,7 +171,7 @@
 @z
 
 @x twm
-          <para>is the Tab Window Manager for the X Window System.</para>
+            is the Tab Window Manager for the X Window System.
 @y
-          <para>X ウィンドウシステムにおけるタブウィンドウマネージャー (Tab Window Manager) です。</para>
+            X ウィンドウシステムにおけるタブウィンドウマネージャー (Tab Window Manager) です。
 @z

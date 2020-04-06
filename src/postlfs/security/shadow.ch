@@ -357,13 +357,13 @@
 @z
 
 @x
-          As the <systemitem class="username">root</systemitem> user, replace
+          As the <systemitem class="username">root</systemitem> user, create
           the following <application>Linux-PAM</application> configuration files
           in the <filename class="directory">/etc/pam.d/</filename> directory
           (or add the contents to the <filename>/etc/pam.conf</filename> file)
           using the following commands:
 @y
-          <filename class="directory">/etc/pam.d/</filename> ディレクトリにある <application>Linux-PAM</application> 設定ファイルを置き換えます。
+          <filename class="directory">/etc/pam.d/</filename> ディレクトリに <application>Linux-PAM</application> 設定ファイルを生成します。
           (あるいは <filename>/etc/pam.conf</filename> ファイルに内容を追記します。)
           <systemitem class="username">root</systemitem> ユーザーになって、以下のコマンドを実行してください。
 @z

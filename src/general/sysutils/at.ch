@@ -26,14 +26,12 @@
 @z
 
 @x
-    <para>The <application>at</application> package provide delayed job execution 
-    and batch processing. It is required for Linux Standards Base (LSB)
-    conformance.</para>
+      The <application>at</application> package provide delayed job execution
+      and batch processing. It is required for Linux Standards Base (LSB)
+      conformance.
 @y
-    <para>
-    <application>at</application> パッケージは、ジョブの遅延実行やバッチ処理実行を提供します。
-    これは Linux Standards Base (LSB) に適合するために必要なものです。
-    </para>
+      <application>at</application> パッケージは、ジョブの遅延実行やバッチ処理実行を提供します。
+      これは Linux Standards Base (LSB) に適合するために必要なものです。
 @z
 
 @x
@@ -43,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&at-download-http;"/></para>
+          Download (HTTP): <ulink url="&at-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&at-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&at-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&at-download-ftp;"/></para>
+          Download (FTP): <ulink url="&at-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&at-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&at-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &at-md5sum;</para>
+          Download MD5 sum: &at-md5sum;
 @y
-        <para>&Download; MD5 sum: &at-md5sum;</para>
+          &Download; MD5 sum: &at-md5sum;
 @z
 
 @x
-        <para>Download size: &at-size;</para>
+          Download size: &at-size;
 @y
-        <para>&DownloadSize;: &at-size;</para>
+          &DownloadSize;: &at-size;
 @z
 
 @x
-        <para>Estimated disk space required: &at-buildsize;</para>
+          Estimated disk space required: &at-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &at-buildsize;</para>
+          &Estimateddiskspacerequired;: &at-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &at-time;</para>
+          Estimated build time: &at-time;
 @y
-        <para>&Estimatedbuildtime;: &at-time;</para>
+          &Estimatedbuildtime;: &at-time;
 @z
 
 @x
@@ -121,19 +119,17 @@
 @z
 
 @x
-    <para>Before building <application>at</application>, as the
-    <systemitem class="username">root</systemitem> user you should create
-    the group and user <systemitem class="username">atd</systemitem> which
-    will run the <command>atd</command> daemon.  Also ensure the working
-    directory for the daemon exists:</para>
+      Before building <application>at</application>, as the
+      <systemitem class="username">root</systemitem> user you should create
+      the group and user <systemitem class="username">atd</systemitem> which
+      will run the <command>atd</command> daemon.  Also ensure the working
+      directory for the daemon exists:
 @y
-    <para>
-    <application>at</application> のビルドにあたっては、まず <systemitem
-    class="username">root</systemitem> ユーザーになって <systemitem
-    class="username">atd</systemitem> グループおよびユーザーを生成します。
-    これは <command>atd</command> デーモンを実行するためのものです。
-    デーモン実行に必要なディレクトリの存在も確認しておきます。
-    </para>
+      <application>at</application> のビルドにあたっては、まず <systemitem
+      class="username">root</systemitem> ユーザーになって <systemitem
+      class="username">atd</systemitem> グループおよびユーザーを生成します。
+      これは <command>atd</command> デーモンを実行するためのものです。
+      デーモン実行に必要なディレクトリの存在も確認しておきます。
 @z
 
 @x
@@ -150,26 +146,22 @@
 @z
 
 @x
-    <para>Install <application>at</application> with the following
-    commands:</para>
+      Install <application>at</application> with the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>at</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>at</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -185,13 +177,11 @@
 @z
 
 @x
-      <para> <filename>/etc/at.allow</filename> and
-      <filename>/etc/at.deny</filename> determines who can submit jobs via at
-      or batch.</para>
+        <filename>/etc/at.allow</filename> and
+        <filename>/etc/at.deny</filename> determines who can submit jobs via at
+        or batch.
 @y
-      <para>
-      <filename>/etc/at.allow</filename> と <filename>/etc/at.deny</filename> により、at 経由でのジョブ実行やバッチ処理は誰に許可されるかなどを設定します。
-      </para>
+        <filename>/etc/at.allow</filename> と <filename>/etc/at.deny</filename> により、at 経由でのジョブ実行やバッチ処理は誰に許可されるかなどを設定します。
 @z
 
 @x
@@ -203,26 +193,20 @@
 @z
 
 @x
-      <para revision="sysv">Install the <filename>/etc/init.d/atd</filename>
-      init script from the <xref linkend="bootscripts"/> package.</para>
+        Install the <filename>/etc/init.d/atd</filename>
+        init script from the <xref linkend="bootscripts"/> package.
 @y
-      <para revision="sysv">
-      <xref linkend="bootscripts"/> パッケージにある初期化スクリプト <filename>/etc/init.d/atd</filename> をインストールします。
-      </para>
+        <xref linkend="bootscripts"/> パッケージにある初期化スクリプト <filename>/etc/init.d/atd</filename> をインストールします。
 @z
 
 @x
-      <para revision="systemd">
         To start the <command>atd</command> daemon at boot,
         enable the previously installed systemd unit by
         running the following command as the
         <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para revision="systemd">
         既にインストールされた systemd ユニットによりシステム起動時に <command>atd</command> デーモンが起動するようにします。
         <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
 @z
 
 @x
@@ -272,32 +256,37 @@
 @z
 
 @x at
-          <para>queues, examines or deletes jobs for later execution.</para>
+            queues, examines or deletes jobs for later execution.
 @y
-          <para>
-          遅延実行ジョブをキューに溜めたり、検証や削除を行ったりします。
-          </para>
+            遅延実行ジョブをキューに溜めたり、検証や削除を行ったりします。
 @z
 
 @x atd
-          <para>is the daemon that runs jobs queued for later execution.</para>
+            is the daemon that runs jobs queued for later execution.
 @y
-          <para>
-          遅延実行ジョブとしてキューに溜められたものを実行するデーモン。
-          </para>
+            遅延実行ジョブとしてキューに溜められたものを実行するデーモン。
+@z
+
+@x atq
+            lists the user's pending jobs, or all jobs, if superuser.
+@y
+            lists the user's pending jobs, or all jobs, if superuser.
+@z
+
+@x atrm
+            deletes jobs, identified by their job number.
+@y
+            deletes jobs, identified by their job number.
 @z
 
 @x atrun
-          <para>runs jobs queued for later execution.</para>
+            runs jobs queued for later execution.
 @y
-          <para>
-          遅延実行ジョブを実行します。
-          </para>
+            遅延実行ジョブを実行します。
 @z
 
 @x batch
-          <para>is a script that executes commands when system load levels permit.
+            is a script that executes commands when system load levels permit.
 @y
-          <para>
-          システムのロードレベルが許容されている場合に、コマンドを実行するスクリプトです。
+            システムのロードレベルが許容されている場合に、コマンドを実行するスクリプトです。
 @z

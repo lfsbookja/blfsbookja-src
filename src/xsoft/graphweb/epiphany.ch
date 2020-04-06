@@ -83,7 +83,8 @@
       <xref linkend="gnome-desktop"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="json-glib"/>,
-      <xref linkend="libnotify"/>, and
+      <xref linkend="libnotify"/>,
+      <xref linkend="nettle"/>, and
       <xref linkend="webkitgtk"/>
     </para>
 @y
@@ -94,6 +95,7 @@
       <xref linkend="iso-codes"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="libnotify"/>,
+      <xref linkend="nettle"/>,
       <xref linkend="webkitgtk"/>
     </para>
 @z
@@ -194,7 +196,7 @@
           epiphany and ephy-profile-migrator
         </seg>
         <seg>
-          libephywebextension.so
+          <!--libephywebextension.so--> None
         </seg>
         <seg>
           /usr/{lib,libexec,share,share/help/*}/epiphany
@@ -204,7 +206,7 @@
           epiphany, ephy-profile-migrator
         </seg>
         <seg>
-          libephywebextension.so
+          <!--libephywebextension.so--> &None;
         </seg>
         <seg>
           /usr/{lib,libexec,share,share/help/*}/epiphany

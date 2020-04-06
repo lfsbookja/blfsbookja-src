@@ -29,6 +29,7 @@ CHANGE_FILES = \
 	icu.ch \
 	jansson.ch \
 	js60.ch \
+	js68.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \
@@ -40,7 +41,6 @@ CHANGE_FILES = \
 	libblockdev.ch \
 	libbytesize.ch \
 	libdaemon.ch \
-	libcroco.ch \
 	libgcrypt.ch \
 	libgpg-error.ch \
 	libgrss.ch \
@@ -85,6 +85,8 @@ CHANGE_FILES = \
 	qca.ch \
 	talloc.ch \
 	telepathy-glib.ch \
+	uchardet.ch \
+	umockdev.ch \
 	wayland.ch \
 	wayland-protocols.ch \
 	wv.ch \

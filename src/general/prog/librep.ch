@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para>The <application>librep</application> package contains a Lisp system.
-    This is useful for scripting or for applications that may use the Lisp
-    interpreter as an extension language.</para>
+      The <application>librep</application> package contains a Lisp system.
+      This is useful for scripting or for applications that may use the Lisp
+      interpreter as an extension language.
 @y
-    <para>
-    <application>librep</application> パッケージは Lisp システムを提供します。
-    言語拡張機能として Lisp インタープリターを利用するスクリプトまたはアプリケーションにて利用することができます。
-    </para>
+      <application>librep</application> パッケージは Lisp システムを提供します。
+      言語拡張機能として Lisp インタープリターを利用するスクリプトまたはアプリケーションにて利用することができます。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&librep-download-http;"/></para>
+          Download (HTTP): <ulink url="&librep-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&librep-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&librep-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&librep-download-ftp;"/></para>
+          Download (FTP): <ulink url="&librep-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&librep-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&librep-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &librep-md5sum;</para>
+          Download MD5 sum: &librep-md5sum;
 @y
-        <para>&Download; MD5 sum: &librep-md5sum;</para>
+          &Download; MD5 sum: &librep-md5sum;
 @z
 
 @x
-        <para>Download size: &librep-size;</para>
+          Download size: &librep-size;
 @y
-        <para>&DownloadSize;: &librep-size;</para>
+          &DownloadSize;: &librep-size;
 @z
 
 @x
-        <para>Estimated disk space required: &librep-buildsize;</para>
+          Estimated disk space required: &librep-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &librep-buildsize;</para>
+          &Estimateddiskspacerequired;: &librep-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &librep-time;</para>
+          Estimated build time: &librep-time;
 @y
-        <para>&Estimatedbuildtime;: &librep-time;</para>
+          &Estimatedbuildtime;: &librep-time;
 @z
 
 @x
@@ -92,10 +90,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/librep"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/librep"/></para>
 @z
 
 @x
@@ -105,26 +101,22 @@
 @z
 
 @x
-    <para>Install <application>librep</application> by running the following
-    commands:</para>
+      Install <application>librep</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>librep</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>librep</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -161,17 +153,13 @@
 @z
 
 @x rep
-          <para>is the Lisp interpreter.</para>
+            is the Lisp interpreter.
 @y
-          <para>
-          Lisp インタープリター。
-          </para>
+            Lisp インタープリター。
 @z
 
 @x librep.so
-          <para> contains the functions necessary for the Lisp interpreter.</para>
+            contains the functions necessary for the Lisp interpreter.
 @y
-          <para>
-          Lisp インタープリターに対して必要となる関数を提供します。
-          </para>
+            Lisp インタープリターに対して必要となる関数を提供します。
 @z

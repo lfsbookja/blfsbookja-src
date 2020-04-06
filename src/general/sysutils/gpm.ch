@@ -20,22 +20,21 @@
 @z
 
 @x
-    <para>The <application>GPM</application> (General Purpose Mouse
-    daemon) package contains a mouse server for the console and
-    <command>xterm</command>. It not only provides cut and paste support
-    generally, but its library component is used by various software such as
-    <application>Links</application> to provide mouse support to the application.
-    It is useful on desktops, especially if following (Beyond) Linux From Scratch
-    instructions; it's often much easier (and less error prone) to cut and paste
-    between two console windows than to type everything by hand!</para>
+      The <application>GPM</application> (General Purpose Mouse daemon)
+      package contains a mouse server for the console and
+      <command>xterm</command>. It not only provides cut and paste support
+      generally, but its library component is used by various software such as
+      <application>Links</application> to provide mouse support to the
+      application.  It is useful on desktops, especially if following (Beyond)
+      Linux From Scratch instructions; it's often much easier (and less error
+      prone) to cut and paste between two console windows than to type
+      everything by hand!
 @y
-    <para>
-    <application>GPM</application> (General Purpose Mouse daemon; 汎用的なマウスデーモン) パッケージは、コンソールや <command>xterm</command> に対してのマウスサーバーです。
-    通常は単にカット＆ペーストの機能を提供するだけでなく、
-    <application>Links</application> などのさまざまなアプリケーションにて、マウスサポートを提供するためにこのライブラリが用いられます。
-    デスクトップ操作において、そして特に (Beyond) Linux From Sratch の手順実現の際に、複数の画面間にてコピーペースト操作を行うのに便利です。
-    これをすべて入力していくことに比べれば、誤りが少なく済みます。
-    </para>
+      <application>GPM</application> (General Purpose Mouse daemon; 汎用的なマウスデーモン) パッケージは、コンソールや <command>xterm</command> に対してのマウスサーバーです。
+      通常は単にカット＆ペーストの機能を提供するだけでなく、
+      <application>Links</application> などのさまざまなアプリケーションにて、マウスサポートを提供するためにこのライブラリが用いられます。
+      デスクトップ操作において、そして特に (Beyond) Linux From Sratch の手順実現の際に、複数の画面間にてコピーペースト操作を行うのに便利です。
+      これをすべて入力していくことに比べれば、誤りが少なく済みます。
 @z
 
 @x
@@ -45,47 +44,64 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gpm-download-http;"/></para>
+          Download (HTTP): <ulink url="&gpm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gpm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gpm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gpm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gpm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gpm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gpm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gpm-md5sum;</para>
+          Download MD5 sum: &gpm-md5sum;
 @y
-        <para>&Download; MD5 sum: &gpm-md5sum;</para>
+          &Download; MD5 sum: &gpm-md5sum;
 @z
 
 @x
-        <para>Download size: &gpm-size;</para>
+          Download size: &gpm-size;
 @y
-        <para>&DownloadSize;: &gpm-size;</para>
+          &DownloadSize;: &gpm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gpm-buildsize;</para>
+          Estimated disk space required: &gpm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gpm-buildsize;</para>
+          &Estimateddiskspacerequired;: &gpm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gpm-time;</para>
+          Estimated build time: &gpm-time;
 @y
-        <para>&Estimatedbuildtime;: &gpm-time;</para>
+          &Estimatedbuildtime;: &gpm-time;
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/GPM"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/GPM"/></para>
+@z
+
+@x
+    <title>Kernel Configuration</title>
+@y
+    <title>&KernelConfiguration;</title>
+@z
+
+@x
+      Enable the following option in the kernel configuration and recompile the
+      kernel if necessary:
+@y
+      カーネル設定における以下のオプションを有効にして、必要に応じてカーネルを再ビルドしてください。
 @z
 
 @x
@@ -95,26 +111,22 @@
 @z
 
 @x
-    <para>Install <application>GPM</application> by running
-    the following commands:</para>
+      Install <application>GPM</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>GPM</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>GPM</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -124,25 +136,31 @@
 @z
 
 @x
-    <para><command>install-info ...</command>: This package installs an
-    <filename class="extension">.info</filename> file, but does not update the
-    system <filename>dir</filename> file. This command makes the update.</para>
+      <command>./autogen.sh</command>: This command creates the missing
+      <command>configure</command> script.
 @y
-    <para><command>install-info ...</command>:
-    本パッケージは <filename
-    class="extension">.info</filename> ファイルをインストールしますが、<filename>dir</filename> ファイルまでは更新しません。
-    そこで更新が行われるようにします。
-    </para>
+      <command>./autogen.sh</command>:
+      このコマンドにより、まだ生成されていない <command>configure</command> スクリプトを生成します。
 @z
 
 @x
-    <para><command>ln -v -sfn libgpm.so.2.1.0 /usr/lib/libgpm.so</command>: This
-    command is used to create (or update) the <filename class="extension">.so</filename>
-    symlink to the library.</para>
+      <command>install-info ...</command>: This package installs a
+      <filename class="extension">.info</filename> file, but does not update
+      the system <filename>dir</filename> file. This command makes the update.
 @y
-    <para><command>ln -v -sfn libgpm.so.2.1.0 /usr/lib/libgpm.so</command>:
-    このコマンドはライブラリに対しての <filename class="extension">.so</filename> シンボリックリンクを作成 (または更新) します。
-    </para>
+      <command>install-info ...</command>:
+      本パッケージは <filename
+      class="extension">.info</filename> ファイルをインストールしますが、<filename>dir</filename> ファイルまでは更新しません。
+      このコマンドによって更新が行われるようにします。
+@z
+
+@x
+      <command>ln -v -sfn libgpm.so.2.1.0 /usr/lib/libgpm.so</command>: This
+      command is used to create (or update) the <filename
+      class="extension">.so</filename> symlink to the library.
+@y
+      <command>ln -v -sfn libgpm.so.2.1.0 /usr/lib/libgpm.so</command>:
+      このコマンドはライブラリに対しての <filename class="extension">.so</filename> シンボリックリンクを作成 (または更新) します。
 @z
 
 @x
@@ -160,28 +178,22 @@
 @z
 
 @x
-      <para revision="sysv">Install the
-      <filename>/etc/rc.d/init.d/gpm</filename> init script included in the
-      <xref linkend="bootscripts"/> package.</para>
+        Install the
+        <filename>/etc/rc.d/init.d/gpm</filename> init script included in the
+        <xref linkend="bootscripts"/> package.
 @y
-      <para revision="sysv">
-      <xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/gpm</filename> をインストールします。
-      </para>
+        <xref linkend="bootscripts"/> パッケージに含まれる初期化スクリプト <filename>/etc/rc.d/init.d/gpm</filename> をインストールします。
 @z
 @x
-      <para revision="systemd">
         To start the <command>gpm</command> daemon at boot,
         install the systemd unit from the <xref linkend="systemd-units"/>
         package by running the following command as the
         <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para revision="systemd">
         To start the <command>gpm</command> daemon at boot,
         install the systemd unit from the <xref linkend="systemd-units"/>
         package by running the following command as the
         <systemitem class="username">root</systemitem> user:
-      </para>
 @z
 
 @x
@@ -191,27 +203,24 @@
 @z
 
 @x
-      <para><filename>/etc/gpm-root.conf</filename> and
-      <filename>~/.gpm-root</filename>: The default and individual user
-      <command>gpm-root</command> configuration files.</para>
+        <filename>/etc/gpm-root.conf</filename> and
+        <filename>~/.gpm-root</filename>: The default and individual user
+        <command>gpm-root</command> configuration files.
 @y
-      <para><filename>/etc/gpm-root.conf</filename> と
-      <filename>~/.gpm-root</filename>: 
-      デフォルトの設定ファイル、および各ユーザーごとの <command>gpm-root</command> 設定ファイル。
-      </para>
+        <filename>/etc/gpm-root.conf</filename> と
+        <filename>~/.gpm-root</filename>: 
+        デフォルトの設定ファイル、および各ユーザーごとの <command>gpm-root</command> 設定ファイル。
 @z
 
 @x
-      <para revision="sysv"><filename>/etc/sysconfig/mouse</filename>:
-      This file contains the name of your mouse device and the protocol
-      it uses.  To create this file, run the following as the
-      <systemitem class="username">root</systemitem> user:</para>
+        <filename>/etc/sysconfig/mouse</filename>:
+        This file contains the name of your mouse device and the protocol
+        it uses.  To create this file, run the following as the
+        <systemitem class="username">root</systemitem> user:
 @y
-      <para revision="sysv">
-      <filename>/etc/sysconfig/mouse</filename>:
-      このファイルは、利用するマウスデバイスの名称とプロトコルを定めます。
-      このファイルを生成するために、<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
+        <filename>/etc/sysconfig/mouse</filename>:
+        このファイルは、利用するマウスデバイスの名称とプロトコルを定めます。
+        このファイルを生成するために、<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -221,51 +230,42 @@
 @z
 
 @x
-      <para revision="sysv">Examples of values to set <envar>MDEVICE</envar>,
-      <envar>PROTOCOL</envar>, and <envar>GPMOPTS</envar> to are:</para>
+        Examples of values to set <envar>MDEVICE</envar>,
+        <envar>PROTOCOL</envar>, and <envar>GPMOPTS</envar> to are:
 @y
-      <para revision="sysv">
-      <envar>MDEVICE</envar>, <envar>PROTOCOL</envar>, <envar>GPMOPTS</envar> の設定例は以下のとおりです。
-      </para>
+        <envar>MDEVICE</envar>, <envar>PROTOCOL</envar>, <envar>GPMOPTS</envar> の設定例は以下のとおりです。
 @z
 
 @x
-      <para revision="sysv">A list of which protocol values are known can be
-      found by running
-      <command>gpm -m <replaceable>[device]</replaceable> -t -help</command>.
-      The <envar>MDEVICE</envar> setting depends on which type of mouse you
-      have.  For example, <filename>/dev/ttyS0</filename> for a serial mouse
-      (on Windows this is COM1), <filename>/dev/input/mice</filename> is often
-      used for USB mice and <filename>/dev/psaux</filename> for PS2 mice.
-      <envar>GPMOPTS</envar> is the 'catch all' for any additional options that
-      are needed for your hardware.</para>
+        A list of which protocol values are known can be found by running
+        <command>gpm -m <replaceable>[device]</replaceable> -t -help</command>.
+        The <envar>MDEVICE</envar> setting depends on which type of mouse you
+        have.  For example, <filename>/dev/ttyS0</filename> for a serial mouse
+        (on Windows this is COM1), <filename>/dev/input/mice</filename> is
+        often used for USB mice and <filename>/dev/psaux</filename> for PS2
+        mice. <envar>GPMOPTS</envar> is the 'catch all' for any additional
+        options that are needed for your hardware.
 @y
-      <para revision="sysv">
-      どのようなプロトコルがあるかは、<command>gpm -m <replaceable>[device]</replaceable> -t -help</command> を実行することで一覧表示されます。
-      <envar>MDEVICE</envar> の設定は、利用しているマウスがどのようなタイプであるかにより決定します。
-      例えばシリアルマウスなら <filename>/dev/ttyS0</filename> (Windows では COM1 になります)、USB マウスならよく <filename>/dev/ttyS0</filename> となります。
-      また PS2 マウスなら <filename>/dev/psaux</filename> です。
-      <envar>GPMOPTS</envar> は、利用しているハードウェアに応じて、'すべての機能' を実現する設定を行います。
-      </para>
+        どのようなプロトコルがあるかは、<command>gpm -m <replaceable>[device]</replaceable> -t -help</command> を実行することで一覧表示されます。
+        <envar>MDEVICE</envar> の設定は、利用しているマウスがどのようなタイプであるかにより決定します。
+        例えばシリアルマウスなら <filename>/dev/ttyS0</filename> (Windows では COM1 になります)、USB マウスならよく <filename>/dev/ttyS0</filename> となります。
+        また PS2 マウスなら <filename>/dev/psaux</filename> です。
+        <envar>GPMOPTS</envar> は、利用しているハードウェアに応じて、'すべての機能' を実現する設定を行います。
 @z
 @x
-      <para revision="systemd">
         <application>GPM</application> is by default started with
         the following parameters:
         <parameter>-m /dev/input/mice -t imps2</parameter>. If the
         mentioned parameters don't suit your needs, you can override
         them by running the following commands as
         the <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para revision="systemd">
         <application>GPM</application> is by default started with
         the following parameters:
         <parameter>-m /dev/input/mice -t imps2</parameter>. If the
         mentioned parameters don't suit your needs, you can override
         them by running the following commands as
         the <systemitem class="username">root</systemitem> user:
-      </para>
 @z
 
 @x
@@ -303,73 +303,73 @@
 @z
 
 @x disable-paste
-          <para>is a security mechanism used to disable the paste buffer.</para>
+            is a security mechanism used to disable the paste buffer.
 @y
-          <para>is a security mechanism used to disable the paste buffer.</para>
+            is a security mechanism used to disable the paste buffer.
 @z
 
 @x display-buttons
-          <para>is a simple program that reports the mouse buttons being
-          pressed and released.</para>
+            is a simple program that reports the mouse buttons being
+            pressed and released.
 @y
-          <para>is a simple program that reports the mouse buttons being
-          pressed and released.</para>
+            is a simple program that reports the mouse buttons being
+            pressed and released.
 @z
 
 @x display-coords
-          <para>is a simple program that reports the mouse coordinates.</para>
+            is a simple program that reports the mouse coordinates.
 @y
-          <para>is a simple program that reports the mouse coordinates.</para>
+            is a simple program that reports the mouse coordinates.
 @z
 
 @x get-versions
-          <para>is used to report the <application>GPM</application> library
-          and server versions.</para>
+            is used to report the <application>GPM</application> library
+            and server versions.
 @y
-          <para>is used to report the <application>GPM</application> library
-          and server versions.</para>
+            is used to report the <application>GPM</application> library
+            and server versions.
 @z
 
 @x gpm
-          <para>is a cut and paste utility and mouse server for virtual consoles.</para>
+            is a cut and paste utility and mouse server for virtual consoles.
 @y
-          <para>is a cut and paste utility and mouse server for virtual consoles.</para>
+            is a cut and paste utility and mouse server for virtual consoles.
 @z
 
 @x gpm-root
-          <para>is a default handler for <command>gpm</command>. It is used to
-          draw menus on the root window.</para>
+            is a default handler for <command>gpm</command>. It is used to
+            draw menus on the root window.
 @y
-          <para>is a default handler for <command>gpm</command>. It is used to
-          draw menus on the root window.</para>
+            is a default handler for <command>gpm</command>. It is used to
+            draw menus on the root window.
 @z
 
 @x hltest
-          <para>is a simple sample application using the high-level library,
-          meant to be read by programmers trying to use the high-level library.</para>
+            is a simple sample application using the high-level library, meant
+            to be read by programmers trying to use the high-level library.
 @y
-          <para>is a simple sample application using the high-level library,
-          meant to be read by programmers trying to use the high-level library.</para>
+            is a simple sample application using the high-level library, meant
+            to be read by programmers trying to use the high-level library.
 @z
 
 @x mev
-          <para>is a program to report mouse events.</para>
+            is a program to report mouse events.
 @y
-          <para>is a program to report mouse events.</para>
+            is a program to report mouse events.
 @z
 
 @x mouse-test
-          <para>is a tool for determining the mouse type and device it's
-          attached to.</para>
+            is a tool for determining the mouse type and device it's
+            attached to.
 @y
-          <para>is a tool for determining the mouse type and device it's
-          attached to.</para>
+            is a tool for determining the mouse type and device it's
+            attached to.
 @z
 
 @x libgpm.{so.a}
-          <para>contains the API functions to access the
-          <application>GPM</application> daemon.</para>
+            contains the API functions to access the
+            <application>GPM</application> daemon.
 @y
-          <para>contains the API functions to access the
-          <application>GPM</application> daemon.</para>
+            contains the API functions to access the
+            <application>GPM</application> daemon.
 @z

@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>imlib2</application> is a graphics library for fast file
-    loading, saving, rendering and manipulation.</para>
+      <application>imlib2</application> is a graphics library for fast file
+      loading, saving, rendering and manipulation.
 @y
-    <para>
-    <application>imlib2</application> は、グラフィックに関するファイルのロード、保存、レンダリングなどを高速に行うライブラリを提供します。
-    </para>
+      <application>imlib2</application> は、グラフィックに関するファイルのロード、保存、レンダリングなどを高速に行うライブラリを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&imlib2-download-http;"/></para>
+          Download (HTTP): <ulink url="&imlib2-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&imlib2-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&imlib2-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&imlib2-download-ftp;"/></para>
+          Download (FTP): <ulink url="&imlib2-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&imlib2-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&imlib2-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &imlib2-md5sum;</para>
+          Download MD5 sum: &imlib2-md5sum;
 @y
-        <para>&Download; MD5 sum: &imlib2-md5sum;</para>
+          &Download; MD5 sum: &imlib2-md5sum;
 @z
 
 @x
-        <para>Download size: &imlib2-size;</para>
+          Download size: &imlib2-size;
 @y
-        <para>&DownloadSize;: &imlib2-size;</para>
+          &DownloadSize;: &imlib2-size;
 @z
 
 @x
-        <para>Estimated disk space required: &imlib2-buildsize;</para>
+          Estimated disk space required: &imlib2-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &imlib2-buildsize;</para>
+          &Estimateddiskspacerequired;: &imlib2-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &imlib2-time;</para>
+          Estimated build time: &imlib2-time;
 @y
-        <para>&Estimatedbuildtime;: &imlib2-time;</para>
+          &Estimatedbuildtime;: &imlib2-time;
 @z
 
 @x
@@ -121,26 +119,22 @@
 @z
 
 @x
-    <para>Install <application>imlib2</application> by running the
-    following commands:</para>
+      Install <application>imlib2</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>imlib2</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>imlib2</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -185,11 +179,67 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libImlib2.{so,a}
-          <para>provides the functions for programs to deal with various
-          image data formats.</para>
+@x imlib2_bumpmap
+            is to test the <application>imlib2</application> bumpmap function.
 @y
-          <para>
-          さまざまなイメージデータフォーマットを取り扱うプログラムに対しての関数を提供します。
-          </para>
+            is to test the <application>imlib2</application> bumpmap function.
+@z
+
+@x imlib2_colorspace
+            is to test the <application>imlib2</application> colorspace
+            function.
+@y
+            is to test the <application>imlib2</application> colorspace
+            function.
+@z
+
+@x imlib2-config
+            is a script used to obtain <application>imlib2</application>
+            building informations.
+@y
+            is a script used to obtain <application>imlib2</application>
+            building informations.
+@z
+
+@x imlib2_poly
+            is to test the <application>imlib2</application> poly function.
+@y
+            is to test the <application>imlib2</application> poly function.
+@z
+
+@x imlib2_conv
+            converts images between formats.
+@y
+            converts images between formats.
+@z
+
+@x imlib2_grab
+            take screenshots.
+@y
+            take screenshots.
+@z
+
+@x imlib2_show
+            is an <application>imlib2</application> program test.
+@y
+            is an <application>imlib2</application> program test.
+@z
+
+@x imlib2_test
+            is an <application>imlib2</application> program test.
+@y
+            is an <application>imlib2</application> program test.
+@z
+
+@x imlib2_view
+            diplays images files.
+@y
+            diplays images files.
+@z
+
+@x libImlib2.so
+            provides the functions for programs to deal with various
+            image data formats.
+@y
+            さまざまなイメージデータフォーマットを取り扱うプログラムに対しての関数を提供します。
 @z

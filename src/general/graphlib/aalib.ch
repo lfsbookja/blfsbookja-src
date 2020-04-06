@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>AAlib</application> is a library to render any graphic into
-    ASCII Art.</para>
+      <application>AAlib</application> is a library to render any graphic into
+      ASCII Art.
 @y
-    <para>
-    <application>AAlib</application> は、さまざまなグラフィックをアスキーアート (ASCII Art) に変換するライブラリです。
-    </para>
+      <application>AAlib</application> は、さまざまなグラフィックをアスキーアート (ASCII Art) に変換するライブラリです。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&aalib-download-http;"/></para>
+          Download (HTTP): <ulink url="&aalib-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&aalib-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&aalib-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&aalib-download-ftp;"/></para>
+          Download (FTP): <ulink url="&aalib-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&aalib-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&aalib-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &aalib-md5sum;</para>
+          Download MD5 sum: &aalib-md5sum;
 @y
-        <para>&Download; MD5 sum: &aalib-md5sum;</para>
+          &Download; MD5 sum: &aalib-md5sum;
 @z
 
 @x
-        <para>Download size: &aalib-size;</para>
+          Download size: &aalib-size;
 @y
-        <para>&DownloadSize;: &aalib-size;</para>
+          &DownloadSize;: &aalib-size;
 @z
 
 @x
-        <para>Estimated disk space required: &aalib-buildsize;</para>
+          Estimated disk space required: &aalib-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &aalib-buildsize;</para>
+          &Estimateddiskspacerequired;: &aalib-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &aalib-time;</para>
+          Estimated build time: &aalib-time;
 @y
-        <para>&Estimatedbuildtime;: &aalib-time;</para>
+          &Estimatedbuildtime;: &aalib-time;
 @z
 
 @x
@@ -78,14 +76,18 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <xref linkend="slang"/>, and
-    <xref linkend="gpm"/></para>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="slang"/>, and
+      <xref linkend="gpm"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="x-window-system"/>,
-    <xref linkend="slang"/>,
-    <xref linkend="gpm"/></para>
+    <para role="optional">
+      <xref linkend="x-window-system"/>,
+      <xref linkend="slang"/>, and
+      <xref linkend="gpm"/>
+    </para>
 @z
 
 @x
@@ -101,34 +103,28 @@
 @z
 
 @x
-    <para>Fix a minor problem with the included m4 file:</para>
+      Fix a minor problem with the included m4 file:
 @y
-    <para>
-    インクルードしている m4 ファイルに関する問題を修正します。
-    </para>
+      インクルードしている m4 ファイルに関する問題を修正します。
 @z
 
 @x
-    <para>Install <application>AAlib</application> by running the following
-    commands:</para>
+      Install <application>AAlib</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>AAlib</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>AAlib</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -164,37 +160,49 @@
 @z
 
 @x aafire
-          <para>is a demo of <application>AAlib</application>, rendering
-          an animated fire in ASCII Art.</para>
+            is a demo of <application>AAlib</application>, rendering
+            an animated fire in ASCII Art.
 @y
-          <para>is a demo of <application>AAlib</application>, rendering
-          an animated fire in ASCII Art.</para>
+            is a demo of <application>AAlib</application>, rendering
+            an animated fire in ASCII Art.
+@z
+
+@x
+            provides information for your current settings related to
+            <application>AAlib</application>.
+@y
+            provides information for your current settings related to
+            <application>AAlib</application>.
 @z
 
 @x aalib-config
-          <para>provides configuration info for
-          <application>AAlib</application>.</para>
+            provides configuration info for <application>AAlib</application>.
 @y
-          <para>provides configuration info for
-          <application>AAlib</application>.</para>
+            provides configuration info for <application>AAlib</application>.
+@z
+
+@x aasavefont
+            saves a font to a file.
+@y
+            saves a font to a file.
 @z
 
 @x aatest
-          <para>shows the abilities of <application>AAlib</application>
-          in a little test.</para>
+            shows the abilities of <application>AAlib</application>
+            in a little test.
 @y
-          <para>shows the abilities of <application>AAlib</application>
-          in a little test.</para>
+            shows the abilities of <application>AAlib</application>
+            in a little test.
 @z
 
 @x libaa.{so,a}
-          <para>is a collection of routines to render any graphical input in
-          portable format to ASCII Art. It can be used through many programs
-          and has a very well documented API, so you can easily put it into
-          your own programs.</para>
+            is a collection of routines to render any graphical input in
+            portable format to ASCII Art. It can be used through many programs
+            and has a very well documented API, so you can easily put it into
+            your own programs.
 @y
-          <para>is a collection of routines to render any graphical input in
-          portable format to ASCII Art. It can be used through many programs
-          and has a very well documented API, so you can easily put it into
-          your own programs.</para>
+            is a collection of routines to render any graphical input in
+            portable format to ASCII Art. It can be used through many programs
+            and has a very well documented API, so you can easily put it into
+            your own programs.
 @z

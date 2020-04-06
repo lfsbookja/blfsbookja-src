@@ -20,23 +20,23 @@
 @z
 
 @x
-    <para><application>Screen</application> is a terminal multiplexor that
-    runs several separate processes, typically interactive shells, on a single
-    physical character-based terminal. Each virtual terminal emulates a DEC
-    VT100 plus several ANSI X3.64 and ISO 2022 functions and also provides
-    configurable input and output translation, serial port support,
-    configurable logging, multi-user support, and many character encodings,
-    including UTF-8. Screen sessions can be detached and resumed
-    later on a different terminal.</para>
+      <application>Screen</application> is a terminal multiplexor that runs
+      several separate processes, typically interactive shells, on a single
+      physical character-based terminal. Each virtual terminal emulates a DEC
+      VT100 plus several ANSI X3.64 and ISO 2022 functions and also provides
+      configurable input and output translation, serial port support,
+      configurable logging, multi-user support, and many character encodings,
+      including UTF-8. Screen sessions can be detached and resumed
+      later on a different terminal.
 @y
-    <para><application>Screen</application> is a terminal multiplexor that
-    runs several separate processes, typically interactive shells, on a single
-    physical character-based terminal. Each virtual terminal emulates a DEC
-    VT100 plus several ANSI X3.64 and ISO 2022 functions and also provides
-    configurable input and output translation, serial port support,
-    configurable logging, multi-user support, and many character encodings,
-    including UTF-8. Screen sessions can be detached and resumed
-    later on a different terminal.</para>
+      <application>Screen</application> is a terminal multiplexor that runs
+      several separate processes, typically interactive shells, on a single
+      physical character-based terminal. Each virtual terminal emulates a DEC
+      VT100 plus several ANSI X3.64 and ISO 2022 functions and also provides
+      configurable input and output translation, serial port support,
+      configurable logging, multi-user support, and many character encodings,
+      including UTF-8. Screen sessions can be detached and resumed
+      later on a different terminal.
 @z
 
 @x
@@ -46,39 +46,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&screen-download-http;"/></para>
+          Download (HTTP): <ulink url="&screen-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&screen-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&screen-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&screen-download-ftp;"/></para>
+          Download (FTP): <ulink url="&screen-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&screen-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&screen-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &screen-md5sum;</para>
+          Download MD5 sum: &screen-md5sum;
 @y
-        <para>&Download; MD5 sum: &screen-md5sum;</para>
+          &Download; MD5 sum: &screen-md5sum;
 @z
 
 @x
-        <para>Download size: &screen-size;</para>
+          Download size: &screen-size;
 @y
-        <para>&DownloadSize;: &screen-size;</para>
+          &DownloadSize;: &screen-size;
 @z
 
 @x
-        <para>Estimated disk space required: &screen-buildsize;</para>
+          Estimated disk space required: &screen-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &screen-buildsize;</para>
+          &Estimateddiskspacerequired;: &screen-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &screen-time;</para>
+          Estimated build time: &screen-time;
 @y
-        <para>&Estimatedbuildtime;: &screen-time;</para>
+          &Estimatedbuildtime;: &screen-time;
 @z
 
 @x
@@ -89,18 +89,20 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="linux-pam"/></para>
+    <para role="optional">
+      <xref linkend="linux-pam"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/screen"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/screen"/></para>
 @z
 
 @x
@@ -110,26 +112,22 @@
 @z
 
 @x
-    <para>Install <application>Screen</application> by running the
-    following commands:</para>
+      Install <application>Screen</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Screen</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Screen</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -139,41 +137,41 @@
 @z
 
 @x
-    <para><parameter>--with-socket-dir=/run/screen</parameter>: This option
-    places the per-user sockets in a standard location.</para>
+      <parameter>--with-socket-dir=/run/screen</parameter>: This option
+      places the per-user sockets in a standard location.
 @y
-    <para><parameter>--with-socket-dir=/run/screen</parameter>: This option
-    places the per-user sockets in a standard location.</para>
+      <parameter>--with-socket-dir=/run/screen</parameter>: This option
+      places the per-user sockets in a standard location.
 @z
 
 @x
-    <para><parameter>--with-sys-screenrc=/etc/screenrc</parameter>: This option
-    places the global screenrc file in <filename
-    class='directory'>/etc</filename>.  </para>
+      <parameter>--with-sys-screenrc=/etc/screenrc</parameter>: This option
+      places the global screenrc file in <filename
+      class='directory'>/etc</filename>.
 @y
-    <para>
-    <parameter>--with-sys-screenrc=/etc/screenrc</parameter>:
-    
-    This option
-    places the global screenrc file in <filename
-    class='directory'>/etc</filename>.  
-    </para>
+      <parameter>--with-sys-screenrc=/etc/screenrc</parameter>: This option
+      places the global screenrc file in <filename
+      class='directory'>/etc</filename>.
 @z
 
 @x
-    <para><command>sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%"
-    {etc,doc}/*</command>: This command corrects the configuration and
-    documentation files to the location that is used here for the global
-    screenrc file.</para>
+      <parameter>--with-pty-group=5</parameter>: This option sets the gid
+      to the value used by LFS.
 @y
-    <para>
-    <command>sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%"
-    {etc,doc}/*</command>:
-    
-    This command corrects the configuration and
-    documentation files to the location that is used here for the global
-    screenrc file.
-    </para>
+      <parameter>--with-pty-group=5</parameter>: This option sets the gid
+      to the value used by LFS.
+@z
+
+@x
+      <command>sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%"
+      {etc,doc}/*</command>: This command corrects the configuration and
+      documentation files to the location that is used here for the global
+      screenrc file.
+@y
+      <command>sed -i -e "s%/usr/local/etc/screenrc%/etc/screenrc%"
+      {etc,doc}/*</command>: This command corrects the configuration and
+      documentation files to the location that is used here for the global
+      screenrc file.
 @z
 
 @x
@@ -189,11 +187,11 @@
 @z
 
 @x
-      <para><filename>/etc/screenrc</filename> and
-      <filename>~/.screenrc</filename></para>
+        <filename>/etc/screenrc</filename> and
+        <filename>~/.screenrc</filename>
 @y
-      <para><filename>/etc/screenrc</filename>,
-      <filename>~/.screenrc</filename></para>
+        <filename>/etc/screenrc</filename>,
+        <filename>~/.screenrc</filename>
 @z
 
 @x
@@ -203,14 +201,11 @@
 @z
 
 @x
-      <para>You may want to look at the example configuration file that was
-      installed and customize it for your needs.</para>
+        You may want to look at the example configuration file that was
+        installed and customize it for your needs.
 @y
-      <para>
-      
-      You may want to look at the example configuration file that was
-      installed and customize it for your needs.
-      </para>
+        You may want to look at the example configuration file that was
+        installed and customize it for your needs.
 @z
 
 @x
@@ -246,11 +241,7 @@
 @z
 
 @x screen
-          <para>is a terminal multiplexor with VT100/ANSI
-          terminal emulation.</para>
+            is a terminal multiplexor with VT100/ANSI terminal emulation.
 @y
-          <para>
-          is a terminal multiplexor with VT100/ANSI
-          terminal emulation.
-          </para>
+            is a terminal multiplexor with VT100/ANSI terminal emulation.
 @z

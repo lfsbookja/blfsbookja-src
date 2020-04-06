@@ -26,11 +26,11 @@
 @z
 
 @x
-    <para>Biber is a BibTeX replacement for users of biblatex, written in
-    <application>Perl</application>, with full Unicode support.</para>
+      Biber is a BibTeX replacement for users of biblatex, written in
+      <application>Perl</application>, with full Unicode support.
 @y
-    <para>Biber is a BibTeX replacement for users of biblatex, written in
-    <application>Perl</application>, with full Unicode support.</para>
+      Biber is a BibTeX replacement for users of biblatex, written in
+      <application>Perl</application>, with full Unicode support.
 @z
 
 @x
@@ -40,67 +40,67 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&biber-download-http;"/></para>
+          Download (HTTP): <ulink url="&biber-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&biber-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&biber-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&biber-download-ftp;"/></para>
+          Download (FTP): <ulink url="&biber-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&biber-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&biber-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &biber-md5sum;</para>
+          Download MD5 sum: &biber-md5sum;
 @y
-        <para>&Download; MD5 sum: &biber-md5sum;</para>
+          &Download; MD5 sum: &biber-md5sum;
 @z
 
 @x
-        <para>Download size: &biber-size;</para>
+          Download size: &biber-size;
 @y
-        <para>&DownloadSize;: &biber-size;</para>
+          &DownloadSize;: &biber-size;
 @z
 
 @x
-        <para>Estimated disk space required: &biber-buildsize;</para>
+          Estimated disk space required: &biber-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &biber-buildsize;</para>
+          &Estimateddiskspacerequired;: &biber-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &biber-time;</para>
+          Estimated build time: &biber-time;
 @y
-        <para>&Estimatedbuildtime;: &biber-time;</para>
+          &Estimatedbuildtime;: &biber-time;
 @z
 
 @x
-       If you have updated to a new release of texlive-source, biber and its
-       perl dependencies are still in present in <filename
-       class="directory">/usr</filename> and do not need to be rebuilt. However,
-       biblatex installs in <filename
-       class="directory">/opt/texlive/&texlive-year;</filename> and does need to
-       be reinstalled.
+        If you have updated to a new release of texlive-source, biber and its
+        perl dependencies are still in present in <filename
+        class="directory">/usr</filename> and do not need to be rebuilt.
+        However, biblatex installs in <filename
+        class="directory">/opt/texlive/&texlive-year;</filename> and does
+        need to be reinstalled.
 @y
-       If you have updated to a new release of texlive-source, biber and its
-       perl dependencies are still in present in <filename
-       class="directory">/usr</filename> and do not need to be rebuilt. However,
-       biblatex installs in <filename
-       class="directory">/opt/texlive/&texlive-year;</filename> and does need to
-       be reinstalled.
+        If you have updated to a new release of texlive-source, biber and its
+        perl dependencies are still in present in <filename
+        class="directory">/usr</filename> and do not need to be rebuilt.
+        However, biblatex installs in <filename
+        class="directory">/opt/texlive/&texlive-year;</filename> and does
+        need to be reinstalled.
 @z
 
 @x
-      This version of biber requires <application>perl-5.30</application> or later.
-      If you are still using the 8.4 version of BLFS you may wish to build the
-      2.13 version: see the 8.4 book noting that biblatex-3.13 has been replaced by
-      biblatex-3.13a upstream.
+        This version of biber requires <application>perl-5.30</application>
+        or later.  If you are still using the 8.4 version of BLFS you may
+        wish to build the 2.13 version: see the 8.4 book noting that
+        biblatex-3.13 has been replaced by biblatex-3.13a upstream.
 @y
-      This version of biber requires <application>perl-5.30</application> or later.
-      If you are still using the 8.4 version of BLFS you may wish to build the
-      2.13 version: see the 8.4 book noting that biblatex-3.13 has been replaced by
-      biblatex-3.13a upstream.
+        This version of biber requires <application>perl-5.30</application>
+        or later.  If you are still using the 8.4 version of BLFS you may
+        wish to build the 2.13 version: see the 8.4 book noting that
+        biblatex-3.13 has been replaced by biblatex-3.13a upstream.
 @z
 
 @x
@@ -110,27 +110,27 @@
 @z
 
 @x
-      <para>The corresponding version of <application>biblatex</application> is
-      a separate project - the tds tarball is pre-packaged for untarring into
-      the <filename class="directory">texmf-dist</filename> directory.
-      Download (HTTP): <ulink url="&biblatex-download-http;"/></para>
+          The corresponding version of <application>biblatex</application> is
+          a separate project - the tds tarball is pre-packaged for untarring
+          into the <filename class="directory">texmf-dist</filename>
+          directory. Download (HTTP): <ulink url="&biblatex-download-http;"/>
 @y
-      <para>The corresponding version of <application>biblatex</application> is
-      a separate project - the tds tarball is pre-packaged for untarring into
-      the <filename class="directory">texmf-dist</filename> directory.
-      Download (HTTP): <ulink url="&biblatex-download-http;"/></para>
+          The corresponding version of <application>biblatex</application> is
+          a separate project - the tds tarball is pre-packaged for untarring
+          into the <filename class="directory">texmf-dist</filename>
+          directory. Download (HTTP): <ulink url="&biblatex-download-http;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &biblatex-md5sum;</para>
+          Download MD5 sum: &biblatex-md5sum;
 @y
-        <para>&Download; MD5 sum: &biblatex-md5sum;</para>
+          &Download; MD5 sum: &biblatex-md5sum;
 @z
 
 @x
-        <para>Download size: &biblatex-size;</para>
+          Download size: &biblatex-size;
 @y
-        <para>&DownloadSize;: &biblatex-size;</para>
+          &DownloadSize;: &biblatex-size;
 @z
 
 @x
@@ -194,7 +194,7 @@
       <!-- untarring biblatex requires that the texmf directories already exist -->
       <xref linkend="texlive"/>
       (or <xref linkend="tl-installer"/>, but for that you can use
-       <command>tlmgr update </command>)
+       <command>tlmgr update</command>)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -251,7 +251,7 @@
       <!-- untarring biblatex requires that the texmf directories already exist -->
       <xref linkend="texlive"/>
       (or <xref linkend="tl-installer"/>, but for that you can use
-       <command>tlmgr update </command>)
+       <command>tlmgr update</command>)
     </para>
 @z
 
@@ -272,15 +272,15 @@
 @x
         It is possible to install all missing dependencies automatically. You
         must first install <xref linkend="perl-module-build"/> using <xref
-        linkend="perl-auto-install"/>. then run <command>perl ./Build.PL</command>
-        and when it prompts you, become the root user and run
-        <command>./Build installdeps</command>
+        linkend="perl-auto-install"/>. Then run <command>perl
+        ./Build.PL</command> and when it prompts you, become the root user
+        and run <command>./Build installdeps</command>
 @y
         It is possible to install all missing dependencies automatically. You
         must first install <xref linkend="perl-module-build"/> using <xref
-        linkend="perl-auto-install"/>. then run <command>perl ./Build.PL</command>
-        and when it prompts you, become the root user and run
-        <command>./Build installdeps</command>
+        linkend="perl-auto-install"/>. Then run <command>perl
+        ./Build.PL</command> and when it prompts you, become the root user
+        and run <command>./Build installdeps</command>
 @z
 
 @x
@@ -296,28 +296,22 @@
 @z
 
 @x
-    <para>Install <application>Biber</application> by running the following
-    commands:</para>
+      Install <application>Biber</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Biber</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Biber</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, enter: <command>./Build test</command></para>
+      To test the results, enter: <command>./Build test</command>
 @y
-    <para>
-    ビルド結果をテストする場合は <command>./Build test</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>./Build test</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -379,7 +373,7 @@
 @z
 
 @x biber
-          <para>is used for producing bibliographies in LaTeX documents.</para>
+            is used for producing bibliographies in LaTeX documents.
 @y
-          <para>is used for producing bibliographies in LaTeX documents.</para>
+            is used for producing bibliographies in LaTeX documents.
 @z

@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para><application>PSUtils</application> is a set of utilities to manipulate
-    PostScript files.</para>
+      <application>PSUtils</application> is a set of utilities to manipulate
+      PostScript files.
 @y
-    <para>
-    <application>PSUtils</application> は、PostScript ファイルを取り扱う一連のユーティリティを提供します。
-    </para>
+      <application>PSUtils</application> は、PostScript ファイルを取り扱う一連のユーティリティを提供します。
 @z
 
 @x
@@ -41,47 +39,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&psutils-download-http;"/></para>
+          Download (HTTP): <ulink url="&psutils-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&psutils-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&psutils-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&psutils-download-ftp;"/></para>
+          Download (FTP): <ulink url="&psutils-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&psutils-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&psutils-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &psutils-md5sum;</para>
+          Download MD5 sum: &psutils-md5sum;
 @y
-        <para>&Download; MD5 sum: &psutils-md5sum;</para>
+          &Download; MD5 sum: &psutils-md5sum;
 @z
 
 @x
-        <para>Download size: &psutils-size;</para>
+          Download size: &psutils-size;
 @y
-        <para>&DownloadSize;: &psutils-size;</para>
+          &DownloadSize;: &psutils-size;
 @z
 
 @x
-        <para>Estimated disk space required: &psutils-buildsize;</para>
+          Estimated disk space required: &psutils-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &psutils-buildsize;</para>
+          &Estimateddiskspacerequired;: &psutils-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &psutils-time;</para>
+          Estimated build time: &psutils-time;
 @y
-        <para>&Estimatedbuildtime;: &psutils-time;</para>
+          &Estimatedbuildtime;: &psutils-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/psutils"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/psutils"/></para>
 @z
 
 @x
@@ -91,26 +87,22 @@
 @z
 
 @x
-    <para>Install <application>PSUtils</application> by running the
-    following commands:</para>
+      Install <application>PSUtils</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>PSUtils</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>PSUtils</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -120,17 +112,15 @@
 @z
 
 @x
-    <para><command>sed 's@/usr/local@/usr@g' Makefile.unix &gt; Makefile</command>:
-    This command creates a <filename>Makefile</filename> that installs the
-    program to the <filename class="directory">/usr</filename> prefix instead
-    of the <filename class="directory">/usr/local</filename> prefix.</para>
+      <command>sed 's@/usr/local@/usr@g' Makefile.unix &gt; Makefile</command>:
+      This command creates a <filename>Makefile</filename> that installs the
+      program to the <filename class="directory">/usr</filename> prefix instead
+      of the <filename class="directory">/usr/local</filename> prefix.
 @y
-    <para>
-    <command>sed 's@/usr/local@/usr@g' Makefile.unix &gt; Makefile</command>:
-    This command creates a <filename>Makefile</filename> that installs the
-    program to the <filename class="directory">/usr</filename> prefix instead
-    of the <filename class="directory">/usr/local</filename> prefix.
-    </para>
+      <command>sed 's@/usr/local@/usr@g' Makefile.unix &gt; Makefile</command>:
+      This command creates a <filename>Makefile</filename> that installs the
+      program to the <filename class="directory">/usr</filename> prefix instead
+      of the <filename class="directory">/usr/local</filename> prefix.
 @z
 
 @x
@@ -166,19 +156,19 @@
 @z
 
 @x
-    <para>Sometimes <command>psnup</command> and other utilities from this
-    package produce PostScript files that don't conform to Adobe's DSC
-    standard. <application>CUPS</application> may print them incorrectly.
-    On the other hand, <application>CUPS</application> has builtin
-    replacements for most commands from this package. For example, to print
-    a document 2-up, you can issue this command:</para>
+      Sometimes <command>psnup</command> and other utilities from this
+      package produce PostScript files that don't conform to Adobe's DSC
+      standard. <application>CUPS</application> may print them incorrectly.
+      On the other hand, <application>CUPS</application> has builtin
+      replacements for most commands from this package. For example, to print
+      a document 2-up, you can issue this command:
 @y
-    <para>Sometimes <command>psnup</command> and other utilities from this
-    package produce PostScript files that don't conform to Adobe's DSC
-    standard. <application>CUPS</application> may print them incorrectly.
-    On the other hand, <application>CUPS</application> has builtin
-    replacements for most commands from this package. For example, to print
-    a document 2-up, you can issue this command:</para>
+      Sometimes <command>psnup</command> and other utilities from this
+      package produce PostScript files that don't conform to Adobe's DSC
+      standard. <application>CUPS</application> may print them incorrectly.
+      On the other hand, <application>CUPS</application> has builtin
+      replacements for most commands from this package. For example, to print
+      a document 2-up, you can issue this command:
 @z
 
 @x
@@ -188,42 +178,69 @@
 @z
 
 @x epsffit
-          <para>fits an EPSF file to a given bounding box.</para>
+            fits an EPSF file to a given bounding box.
 @y
-          <para>
-          
-          fits an EPSF file to a given bounding box.
-          </para>
+            fits an EPSF file to a given bounding box.
+@z
+
+@x extractres
+            is a filter to extract resources from a PostScript document.
+@y
+            is a filter to extract resources from a PostScript document.
+@z
+
+@x fix*
+            are filters of different kinds of documents to work with PSUtils.
+@y
+            are filters of different kinds of documents to work with PSUtils.
+@z
+
+@x getafm
+            create an AFM file for a PostScript font.
+@y
+            create an AFM file for a PostScript font.
+@z
+
+@x includeres
+            is a filter to include resources in a PostScript document.
+@y
+            is a filter to include resources in a PostScript document.
 @z
 
 @x psbook
-          <para>rearranges pages into signatures.</para>
+            rearranges pages into signatures.
 @y
-          <para>rearranges pages into signatures.</para>
+            rearranges pages into signatures.
+@z
+
+@x psmerge
+            is a filter to merge several PostScript files into one.
+@y
+            is a filter to merge several PostScript files into one.
 @z
 
 @x psnup
-          <para>puts multiple pages per physical sheet of paper.</para>
+            puts multiple pages per physical sheet of paper.
 @y
-          <para>puts multiple pages per physical sheet of paper.</para>
+            puts multiple pages per physical sheet of paper.
 @z
 
 @x psresize
-          <para>alters the document paper size.</para>
+            alters the document paper size.
 @y
-          <para>alters the document paper size.</para>
+            alters the document paper size.
 @z
 
 @x psselect
-          <para>selects pages and page ranges.</para>
+            selects pages and page ranges.
 @y
-          <para>selects pages and page ranges.</para>
+            selects pages and page ranges.
 @z
 
 @x pstops
-          <para>performs general page rearrangements and selection.</para>
+            performs general page rearrangements and selection.
 @y
-          <para>performs general page rearrangements and selection.</para>
+            performs general page rearrangements and selection.
 @z
 
 @x showchar

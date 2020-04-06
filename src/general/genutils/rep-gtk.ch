@@ -20,21 +20,20 @@
 @z
 
 @x
-    <para>The <application>rep-gtk</application> package contains a
-    <application>Lisp</application> and <application>GTK</application> binding.
-    This is useful for extending <application>GTK-2</application> and
-    <application>GDK</application> libraries with <application>Lisp</application>.
-    Starting at <application>rep-gtk</application>-0.15, the package contains the
-    bindings to <application>GTK</application> and uses the same instructions.
-    Both can be installed, if needed. </para>
+      The <application>rep-gtk</application> package contains a
+      <application>Lisp</application> and <application>GTK</application>
+      binding.  This is useful for extending <application>GTK-2</application>
+      and <application>GDK</application> libraries with
+      <application>Lisp</application>.  Starting at
+      <application>rep-gtk</application>-0.15, the package contains the
+      bindings to <application>GTK</application> and uses the same
+      instructions.  Both can be installed, if needed.
 @y
-    <para>
-    <application>Rep-gtk</application> パッケージは、<application>Lisp</application> および <application>GTK</application> バインディングを提供します。
-    これは <application>GTK-2</application> ライブラリと <application>GDK</application> ライブラリを <application>Lisp</application> により拡張するものとして利用できます。
-    Starting at <application>rep-gtk</application>-0.15, the package contains the
-    bindings to <application>GTK</application> and uses the same instructions.
-    Both can be installed, if needed.
-    </para>
+      <application>Rep-gtk</application> パッケージは、<application>Lisp</application> および <application>GTK</application> バインディングを提供します。
+      これは <application>GTK-2</application> ライブラリと <application>GDK</application> ライブラリを <application>Lisp</application> により拡張するものとして利用できます。
+      Starting at <application>rep-gtk</application>-0.15, the package contains the
+      bindings to <application>GTK</application> and uses the same instructions.
+      Both can be installed, if needed.
 @z
 
 @x
@@ -44,39 +43,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&rep-gtk-download-http;"/></para>
+          Download (HTTP): <ulink url="&rep-gtk-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&rep-gtk-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&rep-gtk-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&rep-gtk-download-ftp;"/></para>
+          Download (FTP): <ulink url="&rep-gtk-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&rep-gtk-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&rep-gtk-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &rep-gtk-md5sum;</para>
+          Download MD5 sum: &rep-gtk-md5sum;
 @y
-        <para>&Download; MD5 sum: &rep-gtk-md5sum;</para>
+          &Download; MD5 sum: &rep-gtk-md5sum;
 @z
 
 @x
-        <para>Download size: &rep-gtk-size;</para>
+          Download size: &rep-gtk-size;
 @y
-        <para>&DownloadSize;: &rep-gtk-size;</para>
+          &DownloadSize;: &rep-gtk-size;
 @z
 
 @x
-        <para>Estimated disk space required: &rep-gtk-buildsize;</para>
+          Estimated disk space required: &rep-gtk-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &rep-gtk-buildsize;</para>
+          &Estimateddiskspacerequired;: &rep-gtk-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &rep-gtk-time;</para>
+          Estimated build time: &rep-gtk-time;
 @y
-        <para>&Estimatedbuildtime;: &rep-gtk-time;</para>
+          &Estimatedbuildtime;: &rep-gtk-time;
 @z
 
 @x
@@ -114,26 +113,22 @@
 @z
 
 @x
-    <para>Install <application>rep-gtk</application> by running the following
-    commands:</para>
+      Install <application>rep-gtk</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>rep-gtk</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>rep-gtk</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -174,15 +169,15 @@
         <term><filename class='libraryfile'>Lisp バインディング</filename></term>
 @z
 @x
-          <para>are libraries stored in <filename
-          class="directory">/usr/lib/rep/gui/</filename> that assist
-          communication between Lisp and the <application>GTK</application>
-          libraries.</para>
+            are libraries stored in <filename
+            class="directory">/usr/lib/rep/gui/</filename> that assist
+            communication between Lisp and the <application>GTK</application>
+            libraries.
 @y
-          <para>are libraries stored in <filename
-          class="directory">/usr/lib/rep/gui/</filename> that assist
-          communication between Lisp and the <application>GTK</application>
-          libraries.</para>
+            are libraries stored in <filename
+            class="directory">/usr/lib/rep/gui/</filename> that assist
+            communication between Lisp and the <application>GTK</application>
+            libraries.
 @z
 @x
             <primary sortas="c-Lisp-bindings">Lisp bindings</primary>

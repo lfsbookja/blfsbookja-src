@@ -38,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&wireshark-download-http;"/></para>
+          Download (HTTP): <ulink url="&wireshark-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&wireshark-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&wireshark-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&wireshark-download-ftp;"/></para>
+          Download (FTP): <ulink url="&wireshark-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&wireshark-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&wireshark-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &wireshark-md5sum;</para>
+          Download MD5 sum: &wireshark-md5sum;
 @y
-        <para>&Download; MD5 sum: &wireshark-md5sum;</para>
+          &Download; MD5 sum: &wireshark-md5sum;
 @z
 
 @x
-        <para>Download size: &wireshark-size;</para>
+          Download size: &wireshark-size;
 @y
-        <para>&DownloadSize;: &wireshark-size;</para>
+          &DownloadSize;: &wireshark-size;
 @z
 
 @x
-        <para>Estimated disk space required: &wireshark-buildsize;</para>
+          Estimated disk space required: &wireshark-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &wireshark-buildsize;</para>
+          &Estimateddiskspacerequired;: &wireshark-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &wireshark-time;</para>
+          Estimated build time: &wireshark-time;
 @y
-        <para>&Estimatedbuildtime;: &wireshark-time;</para>
+          &Estimatedbuildtime;: &wireshark-time;
 @z
 
 @x
@@ -308,13 +308,13 @@
 @z
 
 @x
-      <para><filename>/etc/wireshark.conf</filename> and
-      <filename>~/.config/wireshark/*</filename> (unless there is already
-      <filename>~/.wireshark/*</filename> in the system)</para>
+        <filename>/etc/wireshark.conf</filename> and
+        <filename>~/.config/wireshark/*</filename> (unless there is already
+        <filename>~/.wireshark/*</filename> in the system)
 @y
-      <para><filename>/etc/wireshark.conf</filename> and
-      <filename>~/.config/wireshark/*</filename> (unless there is already
-      <filename>~/.wireshark/*</filename> in the system)</para>
+        <filename>/etc/wireshark.conf</filename> and
+        <filename>~/.config/wireshark/*</filename> (unless there is already
+        <filename>~/.wireshark/*</filename> in the system)
 @z
 
 @x
@@ -324,35 +324,35 @@
 @z
 
 @x
-      <para>Though the default configuration parameters are very sane, reference
-      the configuration section of the <ulink
-      url="http://www.wireshark.org/docs/wsug_html/">Wireshark User's
-      Guide</ulink> for configuration information. Most of
-      <application>Wireshark</application>'s configuration can be accomplished
-      using the menu options of the <command>wireshark</command> graphical
-      interfaces.</para>
+        Though the default configuration parameters are very sane, reference
+        the configuration section of the <ulink url=
+        "http://www.wireshark.org/docs/wsug_html/">Wireshark User's Guide
+        </ulink> for configuration information. Most of <application>Wireshark
+        </application>'s configuration can be accomplished
+        using the menu options of the <command>wireshark</command> graphical
+        interfaces.
 @y
-      <para>Though the default configuration parameters are very sane, reference
-      the configuration section of the <ulink
-      url="http://www.wireshark.org/docs/wsug_html/">Wireshark User's
-      Guide</ulink> for configuration information. Most of
-      <application>Wireshark</application>'s configuration can be accomplished
-      using the menu options of the <command>wireshark</command> graphical
-      interfaces.</para>
+        Though the default configuration parameters are very sane, reference
+        the configuration section of the <ulink url=
+        "http://www.wireshark.org/docs/wsug_html/">Wireshark User's Guide
+        </ulink> for configuration information. Most of <application>Wireshark
+        </application>'s configuration can be accomplished
+        using the menu options of the <command>wireshark</command> graphical
+        interfaces.
 @z
 
 @x
-        <para>If you want to look at packets, make sure you don't filter them
-        out with <xref linkend="iptables"/>. If you want to exclude certain
-        classes of packets, it is more efficient to do it with
-        <application>iptables</application> than it is with
-        <application>Wireshark</application>.</para>
+          If you want to look at packets, make sure you don't filter them
+          out with <xref linkend="iptables"/>. If you want to exclude certain
+          classes of packets, it is more efficient to do it with
+          <application>iptables</application> than it is with
+          <application>Wireshark</application>.
 @y
-        <para>If you want to look at packets, make sure you don't filter them
-        out with <xref linkend="iptables"/>. If you want to exclude certain
-        classes of packets, it is more efficient to do it with
-        <application>iptables</application> than it is with
-        <application>Wireshark</application>.</para>
+          If you want to look at packets, make sure you don't filter them
+          out with <xref linkend="iptables"/>. If you want to exclude certain
+          classes of packets, it is more efficient to do it with
+          <application>iptables</application> than it is with
+          <application>Wireshark</application>.
 @z
 
 @x
@@ -408,75 +408,111 @@
 @z
 
 @x capinfos
-          <para>reads a saved capture file and returns any or all of several
-          statistics about that file. It is able to detect and read any capture
-          supported by the <application>Wireshark</application> package.</para>
+            reads a saved capture file and returns any or all of several
+            statistics about that file. It is able to detect and read any
+            capture supported by the <application>Wireshark</application>
+            package.
 @y
-          <para>reads a saved capture file and returns any or all of several
-          statistics about that file. It is able to detect and read any capture
-          supported by the <application>Wireshark</application> package.</para>
+            reads a saved capture file and returns any or all of several
+            statistics about that file. It is able to detect and read any
+            capture supported by the <application>Wireshark</application>
+            package.
 @z
 
 @x captype
-          <para>prints the file types of capture files.</para>
+            prints the file types of capture files.
 @y
-          <para>prints the file types of capture files.</para>
+            prints the file types of capture files.
 @z
 
 @x dumpcap
-          <para>is a network traffic dump tool. It lets you capture packet data
-          from a live network and write the packets to a file.</para>
+            is a network traffic dump tool. It lets you capture packet data
+            from a live network and write the packets to a file.
 @y
-          <para>is a network traffic dump tool. It lets you capture packet data
-          from a live network and write the packets to a file.</para>
+            is a network traffic dump tool. It lets you capture packet data
+            from a live network and write the packets to a file.
 @z
 
 @x editcap
-          <para>edits and/or translates the format of capture files. It knows
-          how to read <application>libpcap</application> capture files,
-          including those of <command>tcpdump</command>,
-          <application>Wireshark</application> and other tools that write
-          captures in that format.</para>
+            edits and/or translates the format of capture files. It knows
+            how to read <application>libpcap</application> capture files,
+            including those of <command>tcpdump</command>,
+            <application>Wireshark</application> and other tools that write
+            captures in that format.
 @y
-          <para>edits and/or translates the format of capture files. It knows
-          how to read <application>libpcap</application> capture files,
-          including those of <command>tcpdump</command>,
-          <application>Wireshark</application> and other tools that write
-          captures in that format.</para>
+            edits and/or translates the format of capture files. It knows
+            how to read <application>libpcap</application> capture files,
+            including those of <command>tcpdump</command>,
+            <application>Wireshark</application> and other tools that write
+            captures in that format.
+@z
+
+@x idl2wrs
+            is a program that takes a user specified CORBA IDL file and
+            generates <quote>C</quote> source code for a
+            <application>Wireshark</application> <quote>plugin</quote>. It
+            relies on two Python programs <command>wireshark_be.py</command>
+            and <command>wireshark_gen.py</command>, which are not installed
+            by default. They have to be copied manually from the <filename
+            class="directory">tools</filename> directory to the <filename
+            class="directory">$PYTHONPATH/site-packages/</filename> directory.
+@y
+            is a program that takes a user specified CORBA IDL file and
+            generates <quote>C</quote> source code for a
+            <application>Wireshark</application> <quote>plugin</quote>. It
+            relies on two Python programs <command>wireshark_be.py</command>
+            and <command>wireshark_gen.py</command>, which are not installed
+            by default. They have to be copied manually from the <filename
+            class="directory">tools</filename> directory to the <filename
+            class="directory">$PYTHONPATH/site-packages/</filename> directory.
 @z
 
 @x mergecap
-          <para>combines multiple saved capture files into a single output
-          file.</para>
+            combines multiple saved capture files into a single output file.
 @y
-          <para>combines multiple saved capture files into a single output
-          file.</para>
+            combines multiple saved capture files into a single output file.
 @z
 
 @x randpkt
-          <para>creates random-packet capture files.</para>
+            creates random-packet capture files.
 @y
-          <para>creates random-packet capture files.</para>
+            creates random-packet capture files.
+@z
+
+@x rawshark
+            dumps and analyzes raw libpcap data.
+@y
+            dumps and analyzes raw libpcap data.
+@z
+
+@x reordercap
+            reorders timestamps of input file frames into output file.
+@y
+            reorders timestamps of input file frames into output file.
+@z
+
+@x sharkd
+            is a daemon that listens on UNIX sockets.
+@y
+            is a daemon that listens on UNIX sockets.
 @z
 
 @x text2pcap
-          <para>reads in an ASCII hex dump and writes the
-          data described into a <application>libpcap</application>-style
-          capture file.</para>
+            reads in an ASCII hex dump and writes the data described into a
+            <application>libpcap</application>-style capture file.
 @y
-          <para>reads in an ASCII hex dump and writes the
-          data described into a <application>libpcap</application>-style
-          capture file.</para>
+            reads in an ASCII hex dump and writes the data described into a
+            <application>libpcap</application>-style capture file.
 @z
 
 @x tshark
-          <para>is a TTY-mode network protocol analyzer. It lets you capture
-          packet data from a live network or read packets from a
-          previously saved capture file.</para>
+            is a TTY-mode network protocol analyzer. It lets you capture
+            packet data from a live network or read packets from a
+            previously saved capture file.
 @y
-          <para>is a TTY-mode network protocol analyzer. It lets you capture
-          packet data from a live network or read packets from a
-          previously saved capture file.</para>
+            is a TTY-mode network protocol analyzer. It lets you capture
+            packet data from a live network or read packets from a
+            previously saved capture file.
 @z
 
 @x wireshark
@@ -490,26 +526,24 @@
 @z
 
 @x libwireshark.so
-          <para>contains functions used by the
-          <application>Wireshark</application> programs to perform filtering and
-          packet capturing.</para>
+            contains functions used by the <application>Wireshark</application>
+            programs to perform filtering and packet capturing.
 @y
-          <para>contains functions used by the
-          <application>Wireshark</application> programs to perform filtering and
-          packet capturing.</para>
+            contains functions used by the <application>Wireshark</application>
+            programs to perform filtering and packet capturing.
 @z
 
 @x libwiretap.so
-          <para>is a library being developed as a future replacement for
-          <filename class='libraryfile'>libpcap</filename>, the current
-          standard Unix library for packet capturing. For more information,
-          see the <filename>README</filename> file in the source
-          <filename class='directory'>wiretap</filename> directory.</para>
+            is a library being developed as a future replacement for
+            <filename class='libraryfile'>libpcap</filename>, the current
+            standard Unix library for packet capturing. For more information,
+            see the <filename>README</filename> file in the source
+            <filename class='directory'>wiretap</filename> directory.
 @y
-          <para>is a library being developed as a future replacement for
-          <filename class='libraryfile'>libpcap</filename>, the current
-          standard Unix library for packet capturing. For more information,
-          see the <filename>README</filename> file in the source
-          <filename class='directory'>wiretap</filename> directory.</para>
+            is a library being developed as a future replacement for
+            <filename class='libraryfile'>libpcap</filename>, the current
+            standard Unix library for packet capturing. For more information,
+            see the <filename>README</filename> file in the source
+            <filename class='directory'>wiretap</filename> directory.
 @z
 s

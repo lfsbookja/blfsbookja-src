@@ -26,15 +26,12 @@
 @z
 
 @x
-    <para>The <application>libXdmcp</application> package contains a library
-    implementing the X Display Manager Control Protocol. This is useful for
-    allowing clients to interact with the X Display Manager.</para>
+      The <application>libXdmcp</application> package contains a library
+      implementing the X Display Manager Control Protocol. This is useful for
+      allowing clients to interact with the X Display Manager.
 @y
-    <para>
-    <application>libXdmcp</application>
-    パッケージは X ディスプレイマネージャーコントロールプロトコルを実行するライブラリを提供します。
-    クライアントプログラムが X ディスプレイマネージャーとのやり取りを行うために利用されます。
-    </para>
+      <application>libXdmcp</application> パッケージは X ディスプレイマネージャーコントロールプロトコルを実行するライブラリを提供します。
+      クライアントプログラムが X ディスプレイマネージャーとのやり取りを行うために利用されます。
 @z
 
 @x
@@ -44,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libXdmcp-download-http;"/></para>
+          Download (HTTP): <ulink url="&libXdmcp-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libXdmcp-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libXdmcp-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libXdmcp-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libXdmcp-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libXdmcp-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libXdmcp-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libXdmcp-md5sum;</para>
+          Download MD5 sum: &libXdmcp-md5sum;
 @y
-        <para>&Download; MD5 sum: &libXdmcp-md5sum;</para>
+          &Download; MD5 sum: &libXdmcp-md5sum;
 @z
 
 @x
-        <para>Download size: &libXdmcp-size;</para>
+          Download size: &libXdmcp-size;
 @y
-        <para>&DownloadSize;: &libXdmcp-size;</para>
+          &DownloadSize;: &libXdmcp-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libXdmcp-buildsize;</para>
+          Estimated disk space required: &libXdmcp-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libXdmcp-buildsize;</para>
+          &Estimateddiskspacerequired;: &libXdmcp-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libXdmcp-time;</para>
+          Estimated build time: &libXdmcp-time;
 @y
-        <para>&Estimatedbuildtime;: &libXdmcp-time;</para>
+          &Estimatedbuildtime;: &libXdmcp-time;
 @z
 
 @x
@@ -87,16 +84,36 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="xorgproto"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="xorgproto"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="xmlto"/>,
+      <xref linkend="fop"/>,
+      and <xref linkend="libxslt"/> (for documentation)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="xmlto"/>,
+      <xref linkend="fop"/>,
+      <xref linkend="libxslt"/> (ドキュメントのため)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libXdmcp"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libXdmcp"/></para>
 @z
 
 @x
@@ -106,28 +123,22 @@
 @z
 
 @x
-    <para>Install <application>libXdmcp</application> by running the following
-    commands:</para>
+      Install <application>libXdmcp</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libXdmcp</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libXdmcp</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -162,10 +173,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libXdmcp.{so,a}
-          <para>is the X Display Manager Control Protocol library.</para>
+@x libXdmcp.so
+            is the X Display Manager Control Protocol library.
 @y
-          <para>
-          X ディスプレイマネージャーコントロールライブラリ。
-          </para>
+            X ディスプレイマネージャーコントロールライブラリ。
 @z

@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY pipewire-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY pipewire-time          "0.3 SBU (Using parallelism=4)">
 @y
-  <!ENTITY pipewire-time          "0.1 SBU (parallelism=4 利用時)">
+  <!ENTITY pipewire-time          "0.3 SBU (parallelism=4 利用時)">
 @z
 
 @x
@@ -88,22 +88,26 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="ffmpeg"/>,
-      <xref linkend="gstreamer10"/>,
-      <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="libva"/>,
-      <xref linkend="sbc"/>, and
-      <xref linkend="sdl2"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
+      <xref linkend="bluez"/>,
       <xref linkend="ffmpeg"/>,
       <xref linkend="gstreamer10"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="libva"/>,
       <xref linkend="sbc"/>,
-      <xref linkend="sdl2"/>
+      <xref linkend="sdl2"/>, and
+      <xref linkend="v4l-utils"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="bluez"/>,
+      <xref linkend="ffmpeg"/>,
+      <xref linkend="gstreamer10"/>,
+      <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="libva"/>,
+      <xref linkend="sbc"/>,
+      <xref linkend="sdl2"/>,
+      <xref linkend="v4l-utils"/>
     </para>
 @z
 
@@ -112,14 +116,20 @@
     <para role="optional">
       <xref linkend="valgrind"/>,
       <xref linkend="doxygen"/> and
-      <xref linkend="graphviz"/> (for documentation)
+      <xref linkend="graphviz"/> (for documentation),
+      <ulink url="https://jackaudio.org/">JACK</ulink>,
+      <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>, and
+      <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="valgrind"/>,
-      <xref linkend="doxygen"/>,
-      <xref linkend="graphviz"/> (ドキュメントのため)
+      <xref linkend="doxygen"/> and
+      <xref linkend="graphviz"/> (ドキュメントのため),
+      <ulink url="https://jackaudio.org/">JACK</ulink>,
+      <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,
+      <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
     </para>
 @z
 
@@ -199,38 +209,58 @@
 @x
         <seg>
           pipewire,
-          pipewire-cli,
-          pipewire-monitor,
-          spa-inspect, and
-          spa-monitor
+          pipewire-media-session,
+          pw-cat,
+          pw-cli,
+          pw-dot,
+          pw-mon,
+          pw-profiler,
+          spa-inspect,
+          spa-monitor, and
+          pw-play and pw-record (symlinks to pw-cat)
         </seg>
         <seg>
-          libpipewire-2.0.so
+          libpipewire-0.3.so,
+          libpulse-mainloop-glib-pw.so,
+          libpulse-pw.so,
+          libpulse-simple-pw.so,
+          libasound_module_pcm_pipewire.so, and
+          libgstpipewire.so
         </seg>
         <seg>
           /etc/pipewire,
-          /usr/include/pipewire, 
-          /usr/include/spa,
-          /usr/lib/pipewire-0.2, and
-          /usr/lib/spa
+          /usr/include/pipewire-0.3, 
+          /usr/include/spa-0.2,
+          /usr/lib/pipewire-0.3, and
+          /usr/lib/spa-0.2
         </seg>
 @y
         <seg>
           pipewire,
-          pipewire-cli,
-          pipewire-monitor,
+          pipewire-media-session,
+          pw-cat,
+          pw-cli,
+          pw-dot,
+          pw-mon,
+          pw-profiler,
           spa-inspect,
-          spa-monitor
+          spa-monitor, and
+          pw-play and pw-record (symlinks to pw-cat)
         </seg>
         <seg>
-          libpipewire-2.0.so
+          libpipewire-0.3.so,
+          libpulse-mainloop-glib-pw.so,
+          libpulse-pw.so,
+          libpulse-simple-pw.so,
+          libasound_module_pcm_pipewire.so, and
+          libgstpipewire.so
         </seg>
         <seg>
           /etc/pipewire,
-          /usr/include/pipewire, 
-          /usr/include/spa,
-          /usr/lib/pipewire-0.2,
-          /usr/lib/spa
+          /usr/include/pipewire-0.3, 
+          /usr/include/spa-0.2,
+          /usr/lib/pipewire-0.3, and
+          /usr/lib/spa-0.2
         </seg>
 @z
 

@@ -17,6 +17,7 @@ CHANGE_FILES = \
 	libndp.ch          \
 	libnftnl.ch        \
 	libnl.ch           \
+	libnma.ch          \
 	libnsl.ch          \
 	libpcap.ch         \
 	libpsl.ch          \

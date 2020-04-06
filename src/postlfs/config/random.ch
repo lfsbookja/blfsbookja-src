@@ -28,46 +28,37 @@
 @z
 
 @x
-  <para>The Linux kernel supplies a random number generator which is accessed
-  through <filename class="devicefile">/dev/random</filename> and
-  <filename class="devicefile">/dev/urandom</filename>.  Programs that utilize
-  the random and urandom devices, such as <application>OpenSSH</application>,
-  will benefit from these instructions.</para>
+    The Linux kernel supplies a random number generator which is accessed
+    through <filename class="devicefile">/dev/random</filename> and
+    <filename class="devicefile">/dev/urandom</filename>. Programs that utilize
+    the random and urandom devices, such as <application>OpenSSH</application>,
+    will benefit from these instructions.
 @y
-<para>
-Linux カーネルは乱数生成の機能を提供しています。
-これは  <filename class="devicefile">/dev/random</filename> や
-<filename class="devicefile">/dev/urandom</filename> を通じて利用することができます。
-<application>OpenSSH</application> などのような
-random デバイスや urandom デバイスを利用するプログラムは、この機能を活用しています。
-</para>
+    Linux カーネルは乱数生成の機能を提供しています。
+    これは  <filename class="devicefile">/dev/random</filename> や <filename
+    class="devicefile">/dev/urandom</filename> を通じて利用することができます。
+    <application>OpenSSH</application> などのような random デバイスや urandom デバイスを利用するプログラムは、この機能を活用しています。
 @z
 
 @x
-  <para>When a Linux system starts up without much operator interaction, the
-  entropy pool (data used to compute a random number) may be in a fairly
-  predictable state.  This creates the real possibility that the number generated
-  at startup may always be the same.  In order to counteract this effect,
-  you should carry the entropy pool information across your shut-downs and
-  start-ups.</para>
+    When a Linux system starts up without much operator interaction, the
+    entropy pool (data used to compute a random number) may be in a fairly
+    predictable state.  This creates the real possibility that the number
+    generated at startup may always be the same.  In order to counteract
+    this effect, you should carry the entropy pool information across your
+    shut-downs and start-ups.
 @y
-<para>
-
-When a Linux system starts up without much operator interaction, the
-entropy pool (data used to compute a random number) may be in a fairly
-predictable state.  This creates the real possibility that the number generated
-at startup may always be the same.  In order to counteract this effect,
-you should carry the entropy pool information across your shut-downs and
-start-ups.</para>
+    When a Linux system starts up without much operator interaction, the
+    entropy pool (data used to compute a random number) may be in a fairly
+    predictable state.  This creates the real possibility that the number
+    generated at startup may always be the same.  In order to counteract
+    this effect, you should carry the entropy pool information across your
+    shut-downs and start-ups.
 @z
 
 @x
-  <para>Install the <filename>/etc/rc.d/init.d/random</filename> init script
-  included with the <xref linkend="bootscripts"/> package.</para>
+    Install the <filename>/etc/rc.d/init.d/random</filename> init script
+    included with the <xref linkend="bootscripts"/> package.
 @y
-<para>
-<xref linkend="bootscripts"/> パッケージに含まれる
-<filename>/etc/rc.d/init.d/random</filename> ブートスクリプトを以下のようにしてインストールします。
-</para>
+    <xref linkend="bootscripts"/> パッケージに含まれる <filename>/etc/rc.d/init.d/random</filename> ブートスクリプトを以下のようにしてインストールします。
 @z
-

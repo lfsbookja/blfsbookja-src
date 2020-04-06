@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>Little CMS</application> library is used by other
-    programs to provide color management facilities.</para>
+      The <application>Little CMS</application> library is used by other
+      programs to provide color management facilities.
 @y
-    <para>
-    <application>Little CMS</application> ライブラリは色に関する制御を管理して他のプログラムに機能を提供します。
-    </para>
+      <application>Little CMS</application> ライブラリは色に関する制御を管理して他のプログラムに機能を提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&lcms-download-http;"/></para>
+          Download (HTTP): <ulink url="&lcms-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&lcms-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&lcms-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&lcms-download-ftp;"/></para>
+          Download (FTP): <ulink url="&lcms-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&lcms-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&lcms-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &lcms-md5sum;</para>
+          Download MD5 sum: &lcms-md5sum;
 @y
-        <para>&Download; MD5 sum: &lcms-md5sum;</para>
+          &Download; MD5 sum: &lcms-md5sum;
 @z
 
 @x
-        <para>Download size: &lcms-size;</para>
+          Download size: &lcms-size;
 @y
-        <para>&DownloadSize;: &lcms-size;</para>
+          &DownloadSize;: &lcms-size;
 @z
 
 @x
-        <para>Estimated disk space required: &lcms-buildsize;</para>
+          Estimated disk space required: &lcms-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &lcms-buildsize;</para>
+          &Estimateddiskspacerequired;: &lcms-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &lcms-time;</para>
+          Estimated build time: &lcms-time;
 @y
-        <para>&Estimatedbuildtime;: &lcms-time;</para>
+          &Estimatedbuildtime;: &lcms-time;
 @z
 
 @x
@@ -90,24 +88,26 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="libtiff"/>,
-    <xref linkend="libjpeg"/>, and
-    <xref linkend="python2"/> (with
-    <xref linkend="swig"/> also)</para>
+    <para role="optional">
+      <xref linkend="libtiff"/>,
+      <xref linkend="libjpeg"/>, and
+      <xref linkend="python2"/> (with
+      <xref linkend="swig"/> also)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="libtiff"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="python2"/>
-    (<xref linkend="swig"/> も必要)</para>
+    <para role="optional">
+      <xref linkend="libtiff"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="python2"/>
+      (<xref linkend="swig"/> も必要)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/lcms"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/lcms"/></para>
 @z
 
 @x
@@ -117,28 +117,22 @@
 @z
 
 @x
-    <para>Install <application>Little CMS</application> by running the
-    following commands:</para>
+      Install <application>Little CMS</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Little CMS</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Little CMS</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -148,14 +142,12 @@
 @z
 
 @x
-    <para><option>--with-python</option>: Use this parameter if 
-    <application>Python</application> and
-    <application>SWIG</application> are installed.</para>
+      <option>--with-python</option>: Use this parameter if
+      <application>Python</application> and
+      <application>SWIG</application> are installed.
 @y
-    <para>
-    <option>--with-python</option>:
-    <application>Python</application> と <application>SWIG</application> をインストールしている場合に指定します。
-    </para>
+      <option>--with-python</option>:
+      <application>Python</application> と <application>SWIG</application> をインストールしている場合に指定します。
 @z
 
 @x
@@ -193,79 +185,60 @@
 @z
 
 @x icc2ps
-          <para>generates PostScript CRD or CSA from ICC profiles.</para>
+            generates PostScript CRD or CSA from ICC profiles.
 @y
-          <!--
-          日本語訳註： PostScript CRD CSA について全くの不理解。
-          -->
-          <para>
-          ICC プロファイルから PostScript CRD または CSA を生成します。
-          </para>
+            <!--
+            日本語訳註： PostScript CRD CSA について全くの不理解。
+            -->
+            ICC プロファイルから PostScript CRD または CSA を生成します。
 @z
 
 @x icclink
-          <para>links two or more profiles into a single device link profile.</para>
+            links two or more profiles into a single device link profile.
 @y
-          <para>
-          複数のプロファイルを、１つのデバイスリンクプロファイルとします。
-          </para>
+            複数のプロファイルを 1 つのデバイスリンクプロファイルとします。
 @z
 
 @x icctrans
-          <para>is a color space conversion calculator.</para>
+            is a color space conversion calculator.
 @y
-          <para>
-          
-          is a color space conversion calculator.
-          </para>
+            is a color space conversion calculator.
 @z
 
 @x jpegicc
-          <para>is an ICC profile applier for JPEG files.</para>
+            is an ICC profile applier for JPEG files.
 @y
-          <!--
-          日本語訳註： ツール内容不理解。
-          -->
-          <para>
-          JPEG ファイルに対しての ICC プロファイル生成。
-          </para>
+            <!--
+            日本語訳註： ツール内容不理解。
+            -->
+            JPEG ファイルに対しての ICC プロファイル生成。
 @z
 
 @x tifficc
-          <para>is an ICC profile applier for TIFF files.</para>
+            is an ICC profile applier for TIFF files.
 @y
-          <!--
-          日本語訳註： ツール内容不理解。
-          -->
-          <para>
-          TIFF ファイルに対しての ICC プロファイル生成。
-          </para>
+            <!--
+            日本語訳註： ツール内容不理解。
+            -->
+            TIFF ファイルに対しての ICC プロファイル生成。
 @z
 
 @x tiffdiff
-          <para>A TIFF compare utility</para>
+            is a TIFF compare utility.
 @y
-          <para>
-          TIFF ファイルの比較ユーティリティ。
-          </para>
+            TIFF ファイルの比較ユーティリティ。
 @z
 
 @x wtpt
-          <para>shows media white of profiles, identifying black body locus.</para>
+            shows media white of profiles, identifying black body locus.
 @y
-          <para>
-          
-          shows media white of profiles, identifying black body locus.
-          </para>
+            shows media white of profiles, identifying black body locus.
 @z
 
-@x liblcms.{so,a}
-          <para>is used by the <application>lcms</application> programs as
-          well as other programs to provide color management facilities.</para>
+@x liblcms.so
+            is used by the <application>lcms</application> programs as
+            well as other programs to provide color management facilities.
 @y
-          <para>
-          
-          is used by the <application>lcms</application> programs as
-          well as other programs to provide color management facilities.
-          </para>
+            is used by the <application>lcms</application> programs as
+            well as other programs to provide color management facilities.
 @z

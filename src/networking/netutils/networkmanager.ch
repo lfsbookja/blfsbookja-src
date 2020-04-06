@@ -188,11 +188,11 @@
 @z
 
 @x
-    <para>If <xref linkend="qt5"/> is installed and the Qt based 
-    examples are desired, fix two meson.build files:</para>
+      If <xref linkend="qt5"/> is installed and the Qt based 
+      examples are desired, fix two meson.build files:
 @y
-    <para>If <xref linkend="qt5"/> is installed and the Qt based 
-    examples are desired, fix two meson.build files:</para>
+      If <xref linkend="qt5"/> is installed and the Qt based 
+      examples are desired, fix two meson.build files:
 @z
 
 @x

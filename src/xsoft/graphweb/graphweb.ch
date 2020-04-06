@@ -20,9 +20,9 @@
 @z
 
 @x
-  <para>This chapter contains a wonderful selection of browsers. We hope
-  you can find one you enjoy using or give them each a trial run.</para>
+    This chapter contains a wonderful selection of browsers. We hope
+    you can find one you enjoy using or give them each a trial run.
 @y
-  <para>This chapter contains a wonderful selection of browsers. We hope
-  you can find one you enjoy using or give them each a trial run.</para>
+    This chapter contains a wonderful selection of browsers. We hope
+    you can find one you enjoy using or give them each a trial run.
 @z

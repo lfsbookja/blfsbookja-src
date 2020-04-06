@@ -20,7 +20,8 @@
 @z
 
 @x
-  <para>The LFS book covers setting up networking by connecting to a LAN
+  <para>
+    The LFS book covers setting up networking by connecting to a LAN
   with a static IP address. There are other methods used to obtain an IP
   address and connect to a LAN and other networks (such as the Internet).
   The most popular methods (DHCP and PPP) are covered in this chapter.</para>
@@ -33,27 +34,27 @@
 @z
 
 @x
-  <para>DHCP stands for Dynamic Host Configuration Protocol. It is a protocol
-  used by many sites to automatically provide information such as IP addresses,
-  subnet masks and routing information to computers.  If your network uses
-  DHCP, you will need a DHCP client in order to connect to it.</para>
+    DHCP stands for Dynamic Host Configuration Protocol. It is a protocol used
+    by many sites to automatically provide information such as IP addresses,
+    subnet masks and routing information to computers.  If your network uses
+    DHCP, you will need a DHCP client in order to connect to it.
 @y
-  <para>DHCP stands for Dynamic Host Configuration Protocol. It is a protocol
-  used by many sites to automatically provide information such as IP addresses,
-  subnet masks and routing information to computers.  If your network uses
-  DHCP, you will need a DHCP client in order to connect to it.</para>
+    DHCP stands for Dynamic Host Configuration Protocol. It is a protocol used
+    by many sites to automatically provide information such as IP addresses,
+    subnet masks and routing information to computers.  If your network uses
+    DHCP, you will need a DHCP client in order to connect to it.
 @z
 
 @x
-  <para>PPP stands for Point-to-Point Protocol. It is a data link protocol
-  commonly used for establishing authenticated IP connections over
-  a phone line with a modem, or over radio waves with a cellular phone. There
-  is also a variant (PPPoE) that works over Ethernet and is used by cable
-  providers to authenticate the Internet connections.</para>
+    PPP stands for Point-to-Point Protocol. It is a data link protocol
+    commonly used for establishing authenticated IP connections over
+    a phone line with a modem, or over radio waves with a cellular phone. There
+    is also a variant (PPPoE) that works over Ethernet and is used by cable
+    providers to authenticate the Internet connections.
 @y
-  <para>PPP stands for Point-to-Point Protocol. It is a data link protocol
-  commonly used for establishing authenticated IP connections over
-  a phone line with a modem, or over radio waves with a cellular phone. There
-  is also a variant (PPPoE) that works over Ethernet and is used by cable
-  providers to authenticate the Internet connections.</para>
+    PPP stands for Point-to-Point Protocol. It is a data link protocol
+    commonly used for establishing authenticated IP connections over
+    a phone line with a modem, or over radio waves with a cellular phone. There
+    is also a variant (PPPoE) that works over Ethernet and is used by cable
+    providers to authenticate the Internet connections.
 @z

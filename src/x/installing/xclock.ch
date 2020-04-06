@@ -26,13 +26,11 @@
 @z
 
 @x
-    <para>The <application>xclock</application> package contains a simple
-    clock application which is used in the default xinit configuration.</para>
+      The <application>xclock</application> package contains a simple
+      clock application which is used in the default xinit configuration.
 @y
-    <para>
-    <application>xclock</application> パッケージは、シンプルなクロックアプリケーションを提供します。
-    これは xinit 設定にてデフォルトで利用されます。
-    </para>
+      <application>xclock</application> パッケージは、シンプルなクロックアプリケーションを提供します。
+      これは xinit 設定にてデフォルトで利用されます。
 @z
 
 @x
@@ -42,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xclock-download-http;"/></para>
+          Download (HTTP): <ulink url="&xclock-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xclock-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xclock-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xclock-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xclock-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xclock-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xclock-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xclock-md5sum;</para>
+          Download MD5 sum: &xclock-md5sum;
 @y
-        <para>&Download; MD5 sum: &xclock-md5sum;</para>
+          &Download; MD5 sum: &xclock-md5sum;
 @z
 
 @x
-        <para>Download size: &xclock-size;</para>
+          Download size: &xclock-size;
 @y
-        <para>&DownloadSize;: &xclock-size;</para>
+          &DownloadSize;: &xclock-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xclock-buildsize;</para>
+          Estimated disk space required: &xclock-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xclock-buildsize;</para>
+          &Estimateddiskspacerequired;: &xclock-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xclock-time;</para>
+          Estimated build time: &xclock-time;
 @y
-        <para>&Estimatedbuildtime;: &xclock-time;</para>
+          &Estimatedbuildtime;: &xclock-time;
 @z
 
 @x
@@ -85,10 +83,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="xorg7-lib"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7-lib"/></para>
+    <para role="required">
+      <xref linkend="xorg7-lib"/>
+    </para>
 @z
 
 @x
@@ -104,27 +106,22 @@
 @z
 
 @x
-    <para>Install <application>xclock</application> by running the
-    following commands:</para>
+      Install <application>xclock</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>xclock</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>xclock</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -160,9 +157,7 @@
 @z
 
 @x xclock
-          <para>is an analog/digital clock for X.</para>
+            is an analog/digital clock for X.
 @y
-          <para>
-          X におけるアナログ/デジタルのクロックアプリケーション。
-          </para>
+            X におけるアナログ/デジタルのクロックアプリケーション。
 @z

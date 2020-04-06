@@ -83,8 +83,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libtasn1"/>, and
+      <xref linkend="libgcrypt"/>, and
       <xref linkend="p11-kit"/>
     </para>
 @y
@@ -92,7 +91,6 @@
     <para role="required">
       <xref linkend="glib2"/>,
       <xref linkend="libgcrypt"/>,
-      <xref linkend="libtasn1"/>,
       <xref linkend="p11-kit"/>
     </para>
 @z
@@ -151,11 +149,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>.
+      To test the results, issue: <command>ninja test</command>.
       The tests must be run from an X Terminal or similar. <!-- One test,
       "test-openssl 3", is known to fail. -->
 @y
-      To test the results, issue: <command>make -k check</command>.
+      To test the results, issue: <command>ninja test</command>.
       The tests must be run from an X Terminal or similar. <!-- One test,
       "test-openssl 3", is known to fail. -->
 @z
@@ -197,8 +195,8 @@
         </seg>
         <seg>
           /usr/include/gck-1,
-          /usr/{include,share/gtk-doc/html}/gcr-3, and
-          /usr/share/gtk-doc/html/gck
+          /usr/include/gcr-3, and
+          /usr/share/gtk-doc/html/{gcr,gck}
         </seg>
 @y
         <seg>
@@ -209,8 +207,8 @@
         </seg>
         <seg>
           /usr/include/gck-1,
-          /usr/{include,share/gtk-doc/html}/gcr-3,
-          /usr/share/gtk-doc/html/gck
+          /usr/include/gcr-3,
+          /usr/share/gtk-doc/html/{gcr,gck}
         </seg>
 @z
 

@@ -193,54 +193,53 @@
 @z
 
 @x cjpeg
-          <para>compresses image files to produce a JPEG/JFIF file on the
-          standard output. Currently supported input file formats are: PPM
-          (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-          BMP, and Targa.</para>
+            compresses image files to produce a JPEG/JFIF file on the
+            standard output. Currently supported input file formats are: PPM
+            (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
+            BMP, and Targa.
 @y
-          <para>compresses image files to produce a JPEG/JFIF file on the
-          standard output. Currently supported input file formats are: PPM
-          (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-          BMP, and Targa.</para>
+            compresses image files to produce a JPEG/JFIF file on the
+            standard output. Currently supported input file formats are: PPM
+            (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
+            BMP, and Targa.
 @z
 
 @x djpeg
-          <para>decompresses image files from JPEG/JFIF format to either
-          PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-          BMP, or Targa format.</para>
+            decompresses image files from JPEG/JFIF format to either
+            PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
+            BMP, or Targa format.
 @y
-          <para>decompresses image files from JPEG/JFIF format to either
-          PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-          BMP, or Targa format.</para>
+            decompresses image files from JPEG/JFIF format to either
+            PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
+            BMP, or Targa format.
 @z
 
 @x jpegtran
-          <para>is used for lossless transformation of JPEG files.</para>
+            is used for lossless transformation of JPEG files.
 @y
-          <para>is used for lossless transformation of JPEG files.</para>
+            is used for lossless transformation of JPEG files.
 @z
 
 @x rdjpgcom
-          <para>displays text comments from within a JPEG file.</para>
+            displays text comments from within a JPEG file.
 @y
-          <para>displays text comments from within a JPEG file.</para>
+            displays text comments from within a JPEG file.
 @z
 
 @x tjbench
-          <para>is used to benchmark the performance of libjpeg-turbo.</para>
+            is used to benchmark the performance of libjpeg-turbo.
 @y
-          <para>is used to benchmark the performance of libjpeg-turbo.</para>
+            is used to benchmark the performance of libjpeg-turbo.
 @z
 
 @x wrjpgcom
-          <para>inserts text comments into a JPEG file.</para>
+            inserts text comments into a JPEG file.
 @y
-          <para>inserts text comments into a JPEG file.</para>
+            inserts text comments into a JPEG file.
 @z
 
 @x libjpeg.so
-            contains functions used for reading and writing
-            JPEG images.
+            contains functions used for reading and writing JPEG images.
 @y
             JPEG イメージの読み書きを行う各種関数を提供します。
 @z

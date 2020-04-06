@@ -110,12 +110,10 @@
 @z
 
 @x
-    <para>Install <application>Pixman</application> by running the following
-    commands:</para>
+      Install <application>Pixman</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Pixman</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Pixman</application> をビルドします。
 @z
 
 @x

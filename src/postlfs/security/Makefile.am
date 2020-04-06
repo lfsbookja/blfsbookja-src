@@ -30,6 +30,7 @@ CHANGE_FILES = \
 	openssh.ch         \
 	p11-kit.ch         \
 	polkit.ch          \
+	polkit-gnome.ch    \
 	security.ch        \
 	shadow.ch          \
         ssh-askpass.ch     \

@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>reiserfsprogs</application> package contains various
-    utilities for use with the Reiser file system.</para>
+      The <application>reiserfsprogs</application> package contains various
+      utilities for use with the Reiser file system.
 @y
-    <para>
-    <application>reiserfsprogs</application> パッケージは、Reiser ファイルシステムを利用するためのさまざまなユーティリティを提供します。
-    </para>
+      <application>reiserfsprogs</application> パッケージは、Reiser ファイルシステムを利用するためのさまざまなユーティリティを提供します。
 @z
 
 @x
@@ -35,47 +33,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&reiser-download-http;"/></para>
+          Download (HTTP): <ulink url="&reiser-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&reiser-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&reiser-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&reiser-download-ftp;"/></para>
+          Download (FTP): <ulink url="&reiser-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&reiser-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&reiser-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &reiser-md5sum;</para>
+          Download MD5 sum: &reiser-md5sum;
 @y
-        <para>&Download; MD5 sum: &reiser-md5sum;</para>
+          &Download; MD5 sum: &reiser-md5sum;
 @z
 
 @x
-        <para>Download size: &reiser-size;</para>
+          Download size: &reiser-size;
 @y
-        <para>&DownloadSize;: &reiser-size;</para>
+          &DownloadSize;: &reiser-size;
 @z
 
 @x
-        <para>Estimated disk space required: &reiser-buildsize;</para>
+          Estimated disk space required: &reiser-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &reiser-buildsize;</para>
+          &Estimateddiskspacerequired;: &reiser-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &reiser-time;</para>
+          Estimated build time: &reiser-time;
 @y
-        <para>&Estimatedbuildtime;: &reiser-time;</para>
+          &Estimatedbuildtime;: &reiser-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/reiser"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/reiser"/></para>
 @z
 
 @x
@@ -85,12 +81,10 @@
 @z
 
 @x
-    <para>Enable the following option in the kernel configuration
-    and recompile the kernel:</para>
+      Enable the following option in the kernel configuration
+      and recompile the kernel:
 @y
-    <para>
-    以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
-    </para>
+      以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
 @z
 
 @x
@@ -100,32 +94,36 @@
 @z
 
 @x
-    <para>Install <application>reiserfsprogs</application> by running the following
-    commands:</para>
+      Install <application>reiserfsprogs</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>reiserfsprogs</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>reiserfsprogs</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>sed ...</command>: Ensure a variable is defined for use
+      with recent include files.
+@y
+      <command>sed ...</command>: Ensure a variable is defined for use
+      with recent include files.
 @z
 
 @x
@@ -173,52 +171,42 @@
 @z
 
 @x debugreiserfs
-          <para>can sometimes help to solve problems with
-          <application>ReiserFS</application> file systems. If it is called
-          without options, it prints the super block of any
-          <application>ReiserFS</application> file
-          system found on the device.</para>
+            can sometimes help to solve problems with
+            <application>ReiserFS</application> file systems. If it is called
+            without options, it prints the super block of any
+            <application>ReiserFS</application> file
+            system found on the device.
 @y
-          <para>
-          <application>ReiserFS</application>
-          ファイルシステムに発生したトラブルを解消するために利用することができます。
-          本コマンドをオプションなしに実行すると、デバイス上に存在する <application>ReiserFS</application> ファイルシステムのスーパーブロックをすべて表示します。
-          </para>
+            <application>ReiserFS</application>
+            ファイルシステムに発生したトラブルを解消するために利用することができます。
+            本コマンドをオプションなしに実行すると、デバイス上に存在する <application>ReiserFS</application> ファイルシステムのスーパーブロックをすべて表示します。
 @z
 
 @x mkreiserfs
-          <para>creates a <application>ReiserFS</application> file system.</para>
+            creates a <application>ReiserFS</application> file system.
 @y
-          <para>
-          <application>ReiserFS</application> ファイルシステムを生成します。
-          </para>
+            <application>ReiserFS</application> ファイルシステムを生成します。
 @z
 
 @x reiserfsck
-          <para>is used to check or repair a
-          <application>ReiserFS</application> file system.</para>
+            is used to check or repair a
+            <application>ReiserFS</application> file system.
 @y
-          <para>
-          <application>ReiserFS</application> ファイルシステムをチェックまたは修復します。
-          </para>
+            <application>ReiserFS</application> ファイルシステムをチェックまたは修復します。
 @z
 
 @x reiserfstune
-          <para>is used for tuning the <application>ReiserFS</application>
-          journal. <emphasis>WARNING</emphasis>: Don't use this utility without
-          first reading the man page thoroughly.</para>
+            is used for tuning the <application>ReiserFS</application>
+            journal. <emphasis>WARNING</emphasis>: Don't use this utility
+            without first reading the man page thoroughly.
 @y
-          <para>
-          <application>ReiserFS</application> のジャーナルを調整するために利用します。
-          <emphasis>注意</emphasis>: 本プログラムは、必ず man ページを一通り読んでから利用してください。
-          </para>
+            <application>ReiserFS</application> のジャーナルを調整するために利用します。
+            <emphasis>注意</emphasis>: 本プログラムは、必ず man ページを一通り読んでから利用してください。
 @z
 
 @x resize_reiserfs
-          <para>is used to resize an unmounted
-          <application>ReiserFS</application> file system.</para>
+            is used to resize an unmounted
+            <application>ReiserFS</application> file system.
 @y
-          <para>
-          <application>ReiserFS</application> ファイルシステムをリサイズまたはアンマウントします。
-          </para>
+            <application>ReiserFS</application> ファイルシステムをリサイズまたはアンマウントします。
 @z

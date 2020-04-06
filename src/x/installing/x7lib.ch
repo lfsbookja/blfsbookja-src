@@ -38,12 +38,10 @@
 @z
 
 @x
-    <para>The <application>Xorg</application> libraries provide library
-    routines that are used within all X Window applications.</para>
+      The <application>Xorg</application> libraries provide library
+      routines that are used within all X Window applications.
 @y
-    <para>
-    <application>Xorg</application> ライブラリは、X ウィンドウアプリケーションのすべてが利用するライブラリルーチンを提供します。
-    </para>
+      <application>Xorg</application> ライブラリは、X ウィンドウアプリケーションのすべてが利用するライブラリルーチンを提供します。
 @z
 
 @x
@@ -53,33 +51,33 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&x7libs-download-http;"/></para>
+          Download (HTTP): <ulink url="&x7libs-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&x7libs-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&x7libs-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&x7libs-download-ftp;"/></para>
+          Download (FTP): <ulink url="&x7libs-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&x7libs-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&x7libs-download-ftp;"/>
 @z
 
 @x
-        <para>Download size: &x7libs-size;</para>
+          Download size: &x7libs-size;
 @y
-        <para>&DownloadSize;: &x7libs-size;</para>
+          &DownloadSize;: &x7libs-size;
 @z
 
 @x
-        <para>Estimated disk space required: &x7libs-buildsize;</para>
+          Estimated disk space required: &x7libs-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &x7libs-buildsize;</para>
+          &Estimateddiskspacerequired;: &x7libs-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &x7libs-time;</para>
+          Estimated build time: &x7libs-time;
 @y
-        <para>&Estimatedbuildtime;: &x7libs-time;</para>
+          &Estimatedbuildtime;: &x7libs-time;
 @z
 
 @x
@@ -104,27 +102,30 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="xmlto"/> with one or more of the
-    following: <xref linkend="fop"/>,
-    <xref linkend="Links"/>,
-    <xref linkend="lynx"/>,
-    and <ulink url="&w3m-url;">W3m</ulink> (to generate additional PDF or text
-    documentation for the libXfont package).</para>
+    <para role="optional">
+      <xref linkend="xmlto"/> with one or more of the following:
+      <xref linkend="fop"/>,
+      <xref linkend="Links"/>,
+      <xref linkend="lynx"/>, and
+      <ulink url="&w3m-url;">W3m</ulink> (to generate additional PDF or text
+      documentation for the libXfont package).
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="xmlto"/>、さらに以下のいずれか１つ：
-    <xref linkend="fop"/>,
-    <xref linkend="Links"/>,
-    <xref linkend="lynx"/>,
-    and <ulink url="&w3m-url;">W3m</ulink> (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため)</para>
+    <para role="optional">
+      <xref linkend="xmlto"/>、さらに以下のいずれか１つ：
+      <xref linkend="fop"/>,
+      <xref linkend="Links"/>,
+      <xref linkend="lynx"/>,
+      <ulink url="&w3m-url;">W3m</ulink>
+      (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/Xorg7Libraries'/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url='&blfs-wiki;/Xorg7Libraries'/></para>
 @z
 
 @x
@@ -134,22 +135,18 @@
 @z
 
 @x
-    <para>First, create a list of files to be downloaded. This file will also
-    be used to verify the integrity of the downloads when complete:</para>
+      First, create a list of files to be downloaded. This file will also
+      be used to verify the integrity of the downloads when complete:
 @y
-    <para>
-    まずはダウンロードするファイル一覧を生成します。
-    このファイルは、ダウンロード後に各ファイルのチェックサムを確認する際にも利用します。
-    </para>
+      まずはダウンロードするファイル一覧を生成します。
+      このファイルは、ダウンロード後に各ファイルのチェックサムを確認する際にも利用します。
 @z
 
 @x
-    <para>To download the needed files using <application>wget</application>,
-    use the following commands:</para>
+      To download the needed files using <application>wget</application>,
+      use the following commands:
 @y
-    <para>
-    必要なファイルをダウンロードするために <application>wget</application> を使って以下を実行します。
-    </para>
+      必要なファイルをダウンロードするために <application>wget</application> を使って以下を実行します。
 @z
 
 @x
@@ -159,29 +156,52 @@
 @z
 
 @x
-    <para>First, start a subshell that will exit on error:</para>
+      Some libraries come with a test suite. If you wish to execute them,
+      either comment out the <command>rm -rf ...</command> below, so that,
+      after all libraries are installed, you can come back to the corresponding
+      directory and run <command>make check</command>, or do individual builds,
+      running the tests for each of those distributed with working test suites.
+      Alternatively, you can uncomment the line #<command>make check
+      ...</command>, and at the end, check the test results with:
 @y
-    <para>
-    まずはサブシェルを起動します。
-    こうしておけばエラー発生時に終了させることができます。
-    </para>
+      Some libraries come with a test suite. If you wish to execute them,
+      either comment out the <command>rm -rf ...</command> below, so that,
+      after all libraries are installed, you can come back to the corresponding
+      directory and run <command>make check</command>, or do individual builds,
+      running the tests for each of those distributed with working test suites.
+      Alternatively, you can uncomment the line #<command>make check
+      ...</command>, and at the end, check the test results with:
 @z
 
 @x
-    <para>Install all of the packages by running the following
-    commands:</para>
+      BLFS developers have confirmed that
+      <application>libX11</application>, <application>libXt</application> and
+      <application>libxshmfence</application> are distributed with working test
+      suites.
 @y
-    <para>
-    以下のコマンドを実行して、すべてのパッケージをインストールします。
-    </para>
+      BLFS developers have confirmed that
+      <application>libX11</application>, <application>libXt</application> and
+      <application>libxshmfence</application> are distributed with working test
+      suites.
 @z
 
 @x
-    <para>Finally, exit the shell that was started earlier:</para>
+      First, start a subshell that will exit on error:
 @y
-    <para>
-    上で実行したサブシェルから抜けます。
-    </para>
+      まずはサブシェルを起動します。
+      こうしておけばエラー発生時に終了させることができます。
+@z
+
+@x
+      Install all of the packages by running the following commands:
+@y
+      以下のコマンドを実行して、すべてのパッケージをインストールします。
+@z
+
+@x
+      Finally, exit the shell that was started earlier:
+@y
+      上で実行したサブシェルから抜けます。
 @z
 
 @x
@@ -191,32 +211,31 @@
 @z
 
 @x
-    <para><command>./configure $XORG_CONFIG ICE_LIBS=-lpthread</command>:
-    This fixes a change in glibc which breaks pulseaudio at runtime.</para>
+      <command>./configure $XORG_CONFIG ICE_LIBS=-lpthread</command>:
+      This fixes a change in glibc which breaks pulseaudio at runtime.
 @y
-    <para><command>./configure $XORG_CONFIG ICE_LIBS=-lpthread</command>:
-    This fixes a change in glibc which breaks pulseaudio at runtime.</para>
+      <command>./configure $XORG_CONFIG ICE_LIBS=-lpthread</command>:
+      This fixes a change in glibc which breaks pulseaudio at runtime.
 @z
 
 @x
-    <para><command>sed ... src/xftfreetype.c include/X11/Xft/XftCompat.h</command>:
-    Add fixes for changes in recent glibc headers.</para>
+      <parameter>--disable-devel-docs</parameter>: Disable generation of
+      text documentation in the libXfont2 package if
+      <xref linkend="xmlto"/> is installed without a text browser. Omit this
+      parameter (or the entire <command>case</command> statement) if a text
+      browser is installed.
 @y
-    <para><command>sed ... src/xftfreetype.c include/X11/Xft/XftCompat.h</command>:
-    Add fixes for changes in recent glibc headers.</para>
+      <parameter>--disable-devel-docs</parameter>:
+      テキストブラウザー機能のない <xref linkend="xmlto"/> をインストールしている場合に、テキストドキュメントを生成しないようにします。
+      テキストブラウザー機能がある場合は、このパラメーター (あるいは <command>case</command> 文全体) を取り除いてください。
 @z
 
 @x
-    <para><parameter>--disable-devel-docs</parameter>: Disable generation of
-    text documentation in the libXfont2 package if
-    <xref linkend="xmlto"/> is installed without a text browser. Omit
-    this parameter (or the entire <command>case</command> statement) if a text
-    browser is installed.</para>
+      <option>--with-fop</option>: Use <xref linkend="fop"/> to
+      generate PDF documentation (only for the libXfont package).
 @y
-    <para><parameter>--disable-devel-docs</parameter>:
-    テキストブラウザー機能のない <xref linkend="xmlto"/> をインストールしている場合に、テキストドキュメントを生成しないようにします。
-    テキストブラウザー機能がある場合は、このパラメーター (あるいは <command>case</command> 文全体) を取り除いてください。
-    </para>
+      <option>--with-fop</option>: Use <xref linkend="fop"/> to
+      generate PDF documentation (only for the libXfont package).
 @z
 
 @x
@@ -226,19 +245,17 @@
 @z
 
 @x
-    <para>If you've chosen to install <application>Xorg</application> into
-    <filename class="directory">/usr</filename>, then no further
-    configuration is necessary and you can skip the rest of this section.
-    If you've opted for an alternate prefix, you should create two symlinks
-    to satisfy the expected environment of several packages.
-    Execute the following commands as the root user:</para>
+      If you've chosen to install <application>Xorg</application> into
+      <filename class="directory">/usr</filename>, then no further
+      configuration is necessary and you can skip the rest of this section.
+      If you've opted for an alternate prefix, you should create two symlinks
+      to satisfy the expected environment of several packages.
+      Execute the following commands as the root user:
 @y
-    <para>
-    <application>Xorg</application> のインストール先を <filename
-    class="directory">/usr</filename> としている場合は、これ以降の設定は不要ですから残りの説明は読み飛ばしてください。
-    異なるインストール先を選んでいる場合は、他のパッケージが要求する環境設定に合わせて、以下の 2 つのシンボリックリンクを生成します。
-    root ユーザーになって以下のコマンドを実行します。
-    </para>
+      <application>Xorg</application> のインストール先を <filename
+      class="directory">/usr</filename> としている場合は、これ以降の設定は不要ですから残りの説明は読み飛ばしてください。
+      異なるインストール先を選んでいる場合は、他のパッケージが要求する環境設定に合わせて、以下の 2 つのシンボリックリンクを生成します。
+      root ユーザーになって以下のコマンドを実行します。
 @z
 
 @x
@@ -334,17 +351,34 @@
 @z
 
 @x cxpm
-          <para>checks the format of an XPM file.</para>
+            checks the format of an XPM file.
 @y
-          <para>XPM ファイルのフォーマットをチェックします。</para>
+            XPM ファイルのフォーマットをチェックします。
 @z
 
 @x sxpm
-          <para>shows an XPM file and/or converts XPM 1 or 2 files to
-          XPM 3.</para>
+            shows an XPM file and/or converts XPM 1 or 2 files to XPM 3.
 @y
-          <para>
-          XPM ファイルを参照したり、XPM 1、XPM 2 ファイルを XPM 3 ファイルに変換します。
-          </para>
+            XPM ファイルを参照したり、XPM 1、XPM 2 ファイルを XPM 3 ファイルに変換します。
+@z
+
+@x libdmx.so
+            is the X Window System DMX (Distributed Multihead X) extension
+            library.
+@y
+            is the X Window System DMX (Distributed Multihead X) extension
+            library.
+@z
+
+@x libfontenc.so
+            is the X11 font encoding library.
+@y
+            is the X11 font encoding library.
+@z
+
+@x libFS.so
+            is the library interface to the X Font Server.
+@y
+            is the library interface to the X Font Server.
 @z
 

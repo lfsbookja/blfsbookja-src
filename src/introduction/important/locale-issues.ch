@@ -116,7 +116,7 @@
     <para>Some programs require the user to specify the character encoding
     for their input or output data and present only a limited choice of
     encodings. This is the case for the <option>-X</option> option in
-    <xref linkend="a2ps"/> and <xref linkend="enscript"/>,
+<!--    <xref linkend="a2ps"/> and --><xref linkend="enscript"/>,
     the <option>-input-charset</option> option in unpatched
     <xref linkend="cdrtools"/>, and the character sets offered for display
     in the menu of <xref linkend="Links"/>. If the required encoding is not
@@ -129,7 +129,7 @@
     <para>
     プログラムの中には、データ入出力にあたってキャラクターエンコーディングに特定のものを求めていて、エンコーディングを自由に選択できないものがあります。
     This is the case for the <option>-X</option> option in
-    <xref linkend="a2ps"/> and <xref linkend="enscript"/>,
+<!--    <xref linkend="a2ps"/> and --><xref linkend="enscript"/>,
     the <option>-input-charset</option> option in unpatched
     <xref linkend="cdrtools"/>, and the character sets offered for display
     in the menu of <xref linkend="Links"/>. If the required encoding is not

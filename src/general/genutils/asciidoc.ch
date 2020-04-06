@@ -26,16 +26,14 @@
 @z
 
 @x
-    <para>The <application>Asciidoc</application> package is a text document
-    format for writing notes, documentation, articles, books, ebooks,
-    slideshows, web pages, man pages and blogs. AsciiDoc files can be
-    translated to many formats including HTML, PDF, EPUB, and man page.  </para>
+      The <application>Asciidoc</application> package is a text document
+      format for writing notes, documentation, articles, books, ebooks,
+      slideshows, web pages, man pages and blogs. AsciiDoc files can be
+      translated to many formats including HTML, PDF, EPUB, and man page.
 @y
-    <para>
-    <application>Asciidoc</application> パッケージは、テキスト文書のフォーマットを提供します。
-    テキスト文書は、メモ書き、文書、記事、書籍、ebook、スライドショー、ウェブページ、man ページ、ブログなどさまざまに対応しています。
-    AsciiDoc ファイルは、HTML、PDF、EPUB、man ページなど、数多くのフォーマットに変換することができます。
-    </para>
+      <application>Asciidoc</application> パッケージは、テキスト文書のフォーマットを提供します。
+      テキスト文書は、メモ書き、文書、記事、書籍、ebook、スライドショー、ウェブページ、man ページ、ブログなどさまざまに対応しています。
+      AsciiDoc ファイルは、HTML、PDF、EPUB、man ページなど、数多くのフォーマットに変換することができます。
 @z
 
 @x
@@ -45,39 +43,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&asciidoc-download-http;"/></para>
+          Download (HTTP): <ulink url="&asciidoc-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&asciidoc-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&asciidoc-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&asciidoc-download-ftp;"/></para>
+          Download (FTP): <ulink url="&asciidoc-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&asciidoc-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&asciidoc-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &asciidoc-md5sum;</para>
+          Download MD5 sum: &asciidoc-md5sum;
 @y
-        <para>&Download; MD5 sum: &asciidoc-md5sum;</para>
+          &Download; MD5 sum: &asciidoc-md5sum;
 @z
 
 @x
-        <para>Download size: &asciidoc-size;</para>
+          Download size: &asciidoc-size;
 @y
-        <para>&DownloadSize;: &asciidoc-size;</para>
+          &DownloadSize;: &asciidoc-size;
 @z
 
 @x
-        <para>Estimated disk space required: &asciidoc-buildsize;</para>
+          Estimated disk space required: &asciidoc-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &asciidoc-buildsize;</para>
+          &Estimateddiskspacerequired;: &asciidoc-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &asciidoc-time;</para>
+          Estimated build time: &asciidoc-time;
 @y
-        <para>&Estimatedbuildtime;: &asciidoc-time;</para>
+          &Estimatedbuildtime;: &asciidoc-time;
 @z
 
 @x
@@ -111,28 +109,22 @@
 @z
 
 @x
-    <para>Install <application>Asciidoc</application> by running
-    the following commands:</para>
+      Install <application>Asciidoc</application> by running
+      the following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Asciidoc</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Asciidoc</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -178,18 +170,14 @@
 @z
 
 @x a2x
-          <para>is a toolchain manager for AsciiDoc 
-          (converts Asciidoc text files to other file formats).</para>
+            is a toolchain manager for AsciiDoc 
+            (converts Asciidoc text files to other file formats).
 @y
-          <para>
-          AsciiDoc のツールチェーンマネージャー（AsciiDoc テキストファイルをさまざまなファイルフォーマットに変換します）。
-          </para>
+            AsciiDoc のツールチェーンマネージャー（AsciiDoc テキストファイルをさまざまなファイルフォーマットに変換します）。
 @z
 
 @x asciidoc
-          <para>converts an AsciiDoc text file to HTML or DocBook</para>
+            converts an AsciiDoc text file to HTML or DocBook
 @y
-          <para>
-          AsciiDoc テキストファイルを HTML や DocBook に変換します。
-          </para>
+            AsciiDoc テキストファイルを HTML や DocBook に変換します。
 @z

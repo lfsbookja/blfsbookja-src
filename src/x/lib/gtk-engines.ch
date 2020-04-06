@@ -34,39 +34,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gtk-engines-download-http;"/></para>
+          Download (HTTP): <ulink url="&gtk-engines-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gtk-engines-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gtk-engines-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gtk-engines-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gtk-engines-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gtk-engines-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gtk-engines-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gtk-engines-md5sum;</para>
+          Download MD5 sum: &gtk-engines-md5sum;
 @y
-        <para>&Download; MD5 sum: &gtk-engines-md5sum;</para>
+          &Download; MD5 sum: &gtk-engines-md5sum;
 @z
 
 @x
-        <para>Download size: &gtk-engines-size;</para>
+          Download size: &gtk-engines-size;
 @y
-        <para>&DownloadSize;: &gtk-engines-size;</para>
+          &DownloadSize;: &gtk-engines-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gtk-engines-buildsize;</para>
+          Estimated disk space required: &gtk-engines-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gtk-engines-buildsize;</para>
+          &Estimateddiskspacerequired;: &gtk-engines-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gtk-engines-time;</para>
+          Estimated build time: &gtk-engines-time;
 @y
-        <para>&Estimatedbuildtime;: &gtk-engines-time;</para>
+          &Estimatedbuildtime;: &gtk-engines-time;
 @z
 
 @x
@@ -121,11 +121,9 @@
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    テスト結果をビルドする場合は <command>make check</command> を実行します。
-    </para>
+      テスト結果をビルドする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -210,7 +208,7 @@
           libhcengine.so,
           libindustrial.so,
           libmist.so,
-          libredmond95.so and
+          libredmond95.so,
           libthinice.so (GTK-2 engines libraries)
         </seg>
         <seg>
@@ -220,7 +218,7 @@
           /usr/share/themes/Crux,
           /usr/share/themes/Industrial,
           /usr/share/themes/Mist,
-          /usr/share/themes/Redmond and
+          /usr/share/themes/Redmond,
           /usr/share/themes/ThinIce
         </seg>
         <seg>
@@ -228,7 +226,7 @@
           Crux,
           Industrial,
           Mist,
-          Redmond and
+          Redmond,
           ThinIce
         </seg>
 @z
@@ -245,9 +243,7 @@
         <term>engine ライブラリ</term>
 @z
 @x
-          <para>are manager systems for specific themes.</para>
+            are manager systems for specific themes.
 @y
-          <para>
-          所定のテーマに対する管理システムです。
-          </para>
+            所定のテーマに対する管理システムです。
 @z

@@ -89,10 +89,9 @@ Liboauth provides functions
 @z
 
 @x
-        <para>Required patch for use with openssl: <ulink 
+          Required patch for use with openssl: <ulink url=
 @y
-        <para>
-        openssl を利用するために必須のパッチ: <ulink 
+          openssl を利用するために必須のパッチ: <ulink url=
 @z
 
 @x

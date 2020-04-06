@@ -20,12 +20,10 @@
 @z
 
 @x
-  <para>This chapter contains mainly hardware utilities. It also contains
-  some applications used by other applications in the book for
-  installation or configuration purposes.</para>
+    This chapter contains mainly hardware utilities. It also contains
+    some applications used by other applications in the book for
+    installation or configuration purposes.
 @y
-  <para>
-  本章では主にハードウェア関連のユーティリティを示します。
-  また多くのアプリケーションが利用するアプリケーションで、本書でのインストールや設定作業のために必要となるものも説明します。
-  </para>
+    本章では主にハードウェア関連のユーティリティを示します。
+    また多くのアプリケーションが利用するアプリケーションで、本書でのインストールや設定作業のために必要となるものも説明します。
 @z

@@ -28,7 +28,6 @@ CHANGE_FILES = \
 	gnome-tweaks.ch           \
 	gnome-weather.ch          \
 	gucharmap.ch              \
-	network-manager-applet.ch \
 	seahorse.ch               \
 	vinagre.ch
 

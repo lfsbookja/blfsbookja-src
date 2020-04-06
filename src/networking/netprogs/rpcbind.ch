@@ -26,13 +26,13 @@
 @z
 
 @x
-    <para>The <application>rpcbind</application> program is a replacement for
-    <application>portmap</application>.  It is required for import or export
-    of Network File System (NFS) shared directories. </para>
+      The <application>rpcbind</application> program is a replacement for
+      <application>portmap</application>.  It is required for import or export
+      of Network File System (NFS) shared directories.
 @y
-    <para>The <application>rpcbind</application> program is a replacement for
-    <application>portmap</application>.  It is required for import or export
-    of Network File System (NFS) shared directories. </para>
+      The <application>rpcbind</application> program is a replacement for
+      <application>portmap</application>.  It is required for import or export
+      of Network File System (NFS) shared directories.
 @z
 
 @x
@@ -42,39 +42,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&rpcbind-download-http;"/></para>
+          Download (HTTP): <ulink url="&rpcbind-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&rpcbind-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&rpcbind-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&rpcbind-download-ftp;"/></para>
+          Download (FTP): <ulink url="&rpcbind-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&rpcbind-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&rpcbind-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &rpcbind-md5sum;</para>
+          Download MD5 sum: &rpcbind-md5sum;
 @y
-        <para>&Download; MD5 sum: &rpcbind-md5sum;</para>
+          &Download; MD5 sum: &rpcbind-md5sum;
 @z
 
 @x
-        <para>Download size: &rpcbind-size;</para>
+          Download size: &rpcbind-size;
 @y
-        <para>&DownloadSize;: &rpcbind-size;</para>
+          &DownloadSize;: &rpcbind-size;
 @z
 
 @x
-        <para>Estimated disk space required: &rpcbind-buildsize;</para>
+          Estimated disk space required: &rpcbind-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &rpcbind-buildsize;</para>
+          &Estimateddiskspacerequired;: &rpcbind-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &rpcbind-time;</para>
+          Estimated build time: &rpcbind-time;
 @y
-        <para>&Estimatedbuildtime;: &rpcbind-time;</para>
+          &Estimatedbuildtime;: &rpcbind-time;
 @z
 
 @x
@@ -108,35 +108,75 @@
 @z
 
 @x
-    <para>In order to get <application>rpcbind</application> to work
-    properly, first fix the package to use correct service name:</para>
+      There should be a dedicated user and group to take control
+      of the <command>rpcbind</command> daemon after it is started.
+      Issue the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <application>rpcbind</application> を正しく動作させるために、まずは正しいサービス名が用いられるように修正します。
-    </para>
+      There should be a dedicated user and group to take control
+      of the <command>rpcbind</command> daemon after it is started.
+      Issue the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <para>Install <application>rpcbind</application> by running the following
-    commands:</para>
+      In order to get <application>rpcbind</application> to work
+      properly, first fix the package to use correct service name:
 @y
-    <para>
-    以下のコマンドを実行して <application>rpcbind</application> をビルドします。
-    </para>
+      <application>rpcbind</application> を正しく動作させるために、まずは正しいサービス名が用いられるように修正します。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      Install <application>rpcbind</application> by running the following
+      commands:
 @y
-    <para>&notTestSuite;</para>
+      以下のコマンドを実行して <application>rpcbind</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      &notTestSuite;
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>--with-rpcuser=root</command>: This works
+      around an error in the configure script.
+@y
+      <command>--with-rpcuser=root</command>: This works
+      around an error in the configure script.
+@z
+
+@x
+      <command>--without-systemdsystemunitdir</command>:
+      This version of BLFS does not support systemd.
+@y
+      <command>--without-systemdsystemunitdir</command>:
+      This version of BLFS does not support systemd.
+@z
+
+@x
+      <parameter>--with-rpcuser=rpc</parameter>:
+      This switch is used so the <command>rpcbind</command> daemon will
+      run as an unprivileged user instead of the
+      <systemitem class="username">root</systemitem> user.
+@y
+      <parameter>--with-rpcuser=rpc</parameter>:
+      This switch is used so the <command>rpcbind</command> daemon will
+      run as an unprivileged user instead of the
+      <systemitem class="username">root</systemitem> user.
 @z
 
 @x
@@ -150,24 +190,22 @@
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
       <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x
-      <para>Install the
-      <phrase revision="sysv"><filename>/etc/rc.d/init.d/rpcbind</filename>
-      init script</phrase>
-      <phrase revision="systemd"><filename>rpcbind.service</filename>
-      unit</phrase> included in the
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> package.</para>
+        Install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/rpcbind</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>rpcbind.service</filename>
+        unit</phrase> included in the
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> package.
 @y
-      <para>
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる
-      <phrase revision="sysv">初期化スクリプト <filename>/etc/rc.d/init.d/rpcbind</filename></phrase>
-      <phrase revision="systemd"><filename>rpcbind.service</filename>ユニット</phrase> をインストールします。
-      </para>
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる
+        <phrase revision="sysv">初期化スクリプト <filename>/etc/rc.d/init.d/rpcbind</filename></phrase>
+        <phrase revision="systemd"><filename>rpcbind.service</filename>ユニット</phrase> をインストールします。
 @z
 
 @x
@@ -203,19 +241,19 @@
 @z
 
 @x rpcbind
-          <para>is a server that converts RPC program numbers into universal
-          addresses.  It must be running on the host to be able to make RPC
-          calls on a server on that machine.  </para>
+            is a server that converts RPC program numbers into universal
+            addresses.  It must be running on the host to be able to make RPC
+            calls on a server on that machine.
 @y
-          <para>is a server that converts RPC program numbers into universal
-          addresses.  It must be running on the host to be able to make RPC
-          calls on a server on that machine.  </para>
+            is a server that converts RPC program numbers into universal
+            addresses.  It must be running on the host to be able to make RPC
+            calls on a server on that machine.
 @z
 
 @x rpcinfo
-          <para>makes an RPC call to an RPC server and reports data according
-          to the requested options.  </para>
+            makes an RPC call to an RPC server and reports data according
+            to the requested options.
 @y
-          <para>makes an RPC call to an RPC server and reports data according
-          to the requested options.  </para>
+            makes an RPC call to an RPC server and reports data according
+            to the requested options.
 @z

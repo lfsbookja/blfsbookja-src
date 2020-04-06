@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para>The <application>rsync</application> package contains the
-    <command>rsync</command> utility. This is useful for synchronizing large
-    file archives over a network.</para>
+      The <application>rsync</application> package contains the
+      <command>rsync</command> utility. This is useful for synchronizing large
+      file archives over a network.
 @y
-    <para>
-    <application>rsync</application> パッケージは <command>rsync</command> ユーティリティを提供します。
-    これはネットワーク越しに、大容量のファイルアーカイブの同期をとることができます。
-    </para>
+      <application>rsync</application> パッケージは <command>rsync</command> ユーティリティを提供します。
+      これはネットワーク越しに、大容量のファイルアーカイブの同期をとることができます。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&rsync-download-http;"/></para>
+          Download (HTTP): <ulink url="&rsync-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&rsync-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&rsync-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&rsync-download-ftp;"/></para>
+          Download (FTP): <ulink url="&rsync-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&rsync-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&rsync-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &rsync-md5sum;</para>
+          Download MD5 sum: &rsync-md5sum;
 @y
-        <para>&Download; MD5 sum: &rsync-md5sum;</para>
+          &Download; MD5 sum: &rsync-md5sum;
 @z
 
 @x
-        <para>Download size: &rsync-size;</para>
+          Download size: &rsync-size;
 @y
-        <para>&DownloadSize;: &rsync-size;</para>
+          &DownloadSize;: &rsync-size;
 @z
 
 @x
-        <para>Estimated disk space required: &rsync-buildsize;</para>
+          Estimated disk space required: &rsync-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &rsync-buildsize;</para>
+          &Estimateddiskspacerequired;: &rsync-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &rsync-time;</para>
+          Estimated build time: &rsync-time;
 @y
-        <para>&Estimatedbuildtime;: &rsync-time;</para>
+          &Estimatedbuildtime;: &rsync-time;
 @z
 
 @x
@@ -103,62 +101,65 @@
 @z
 
 @x
-    <para>For security reasons, running the <application>rsync</application>
-    server as an unprivileged user and group is encouraged. If you intend to
-    run <command>rsync</command> as a daemon, create the
-    <systemitem class="username">rsyncd</systemitem> user and group
-    with the following commands issued by the
-    <systemitem class="username">root</systemitem> user:</para>
+      For security reasons, running the <application>rsync</application>
+      server as an unprivileged user and group is encouraged. If you intend to
+      run <command>rsync</command> as a daemon, create the
+      <systemitem class="username">rsyncd</systemitem> user and group
+      with the following commands issued by the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    セキュリティ観点から <application>rsync</application> サーバーは、非特権のユーザーおよびグループにて実行することが推奨されています。
-    <command>rsync</command> をデーモンとして実行する場合、<systemitem
-    class="username">rsyncd</systemitem> ユーザーおよびグループを作成します。
-    これは <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドにより実現します。
-    </para>
+      セキュリティ観点から <application>rsync</application> サーバーは、非特権のユーザーおよびグループにて実行することが推奨されています。
+      <command>rsync</command> をデーモンとして実行する場合、<systemitem
+      class="username">rsyncd</systemitem> ユーザーおよびグループを作成します。
+      これは <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドにより実現します。
 @z
 
 @x
-    <para>Install <application>rsync</application> by running the following
-    commands:</para>
+      Install <application>rsync</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>rsync</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>rsync</application> をビルドします。
 @z
 
 @x
-    <para>If you have <xref linkend="doxygen"/> installed and wish to
-    build HTML API documentation, issue:</para>
+      If you have <xref linkend="doxygen"/> installed and wish to
+      build HTML API documentation, issue:
 @y
-    <para>
-    <xref linkend="doxygen"/> をインストールしていて、HTML API ドキュメントをビルドしたい場合は以下を実行します。
-    </para>
+      <xref linkend="doxygen"/> をインストールしていて、HTML API ドキュメントをビルドしたい場合は以下を実行します。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you built the documentation, install it using the following
-    commands as the <systemitem class="username">root</systemitem> user:</para>
+      If you built the documentation, install it using the following
+      commands as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    ドキュメントをビルドした場合は、<systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行して、各ドキュメントをインストールします。
-    </para>
+      ドキュメントをビルドした場合は、<systemitem
+       class="username">root</systemitem> ユーザーになって以下のコマンドを実行して、各ドキュメントをインストールします。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>--without-included-zlib</parameter>: This switch enables
+      compilation with system-installed zlib library.
+@y
+      <parameter>--without-included-zlib</parameter>: This switch enables
+      compilation with system-installed zlib library.
 @z
 
 @x
@@ -180,34 +181,29 @@
 @z
 
 @x
-      <para>For client access to remote files, you may need to install the
-      <xref linkend="openssh"/> package to connect to the remote server.</para>
+        For client access to remote files, you may need to install the
+        <xref linkend="openssh"/> package to connect to the remote server.
 @y
-      <para>
-      クライアントがリモートファイルにアクセスできるようにするためには、<xref
-      linkend="openssh"/> パッケージをインストールしてリモートサーバーへ接続できるようにする必要があります。
-      </para>
+        クライアントがリモートファイルにアクセスできるようにするためには、<xref
+        linkend="openssh"/> パッケージをインストールしてリモートサーバーへ接続できるようにする必要があります。
 @z
 
 @x
-      <para>This is a simple download-only configuration to set up running
-      <command>rsync</command> as a server. See the rsyncd.conf(5)
-      man-page for additional options (i.e., user authentication).</para>
+        This is a simple download-only configuration to set up running
+        <command>rsync</command> as a server. See the rsyncd.conf(5)
+        man-page for additional options (i.e., user authentication).
 @y
-      <para>
-      以下は、<command>rsync</command> をサーバーにて起動させて、ダウンロードだけができるようにする設定例です。
-      詳細なオプション (ユーザー認証など) については man ページの rsyncd.conf(5) を参照してください。
-      </para>
+        以下は、<command>rsync</command> をサーバーにて起動させて、ダウンロードだけができるようにする設定例です。
+        詳細なオプション (ユーザー認証など) については man ページの rsyncd.conf(5) を参照してください。
 @z
 
 @x
-    <para>You can find additional configuration information and general
-    documentation about <command>rsync</command> at
-    <ulink url="http://rsync.samba.org/documentation.html"/>.</para>
+        You can find additional configuration information and general
+        documentation about <command>rsync</command> at
+        <ulink url="http://rsync.samba.org/documentation.html"/>.
 @y
-    <para>
-    <command>rsync</command> における、より詳細な設定情報は <ulink url="http://rsync.samba.org/documentation.html"/> を参照してください。
-    </para>
+        <command>rsync</command> における、より詳細な設定情報は <ulink
+        url="http://rsync.samba.org/documentation.html"/> を参照してください。
 @z
 
 @x
@@ -219,37 +215,37 @@
 @z
 
 @x
-      <para>Note that you only want to start the
-      <application>rsync</application> server if you want to provide an
-      <application>rsync</application> archive on your local machine.
-      You don't need this <phrase revision="sysv">script</phrase>
-      <phrase revision="systemd">unit</phrase> to run the
-      <application>rsync</application> client.</para>
+        Note that you only want to start the
+        <application>rsync</application> server if you want to provide an
+        <application>rsync</application> archive on your local machine.
+        You don't need this <phrase revision="sysv">script</phrase>
+        <phrase revision="systemd">unit</phrase> to run the
+        <application>rsync</application> client.
 @y
-      <para>Note that you only want to start the
-      <application>rsync</application> server if you want to provide an
-      <application>rsync</application> archive on your local machine.
-      You don't need this <phrase revision="sysv">script</phrase>
-      <phrase revision="systemd">unit</phrase> to run the
-      <application>rsync</application> client.</para>
+        Note that you only want to start the
+        <application>rsync</application> server if you want to provide an
+        <application>rsync</application> archive on your local machine.
+        You don't need this <phrase revision="sysv">script</phrase>
+        <phrase revision="systemd">unit</phrase> to run the
+        <application>rsync</application> client.
 @z
 
 @x
-      <para>Install the
-      <phrase revision="sysv"><filename>/etc/rc.d/init.d/rsyncd</filename> init
-      script</phrase>
-      <phrase revision="systemd"><filename>rsyncd.service</filename>
-      unit</phrase> included in the
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> package.</para>
+        Install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/rsyncd</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>rsyncd.service</filename>
+        unit</phrase> included in the
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> package.
 @y
-      <para>Install the
-      <phrase revision="sysv"><filename>/etc/rc.d/init.d/rsyncd</filename> init
-      script</phrase>
-      <phrase revision="systemd"><filename>rsyncd.service</filename>
-      unit</phrase> included in the
-      <xref linkend="bootscripts" revision="sysv"/>
-      <xref linkend="systemd-units" revision="systemd"/> package.</para>
+        Install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/rsyncd</filename>
+        init script</phrase>
+        <phrase revision="systemd"><filename>rsyncd.service</filename>
+        unit</phrase> included in the
+        <xref linkend="bootscripts" revision="sysv"/>
+        <xref linkend="systemd-units" revision="systemd"/> package.
 @z
 
 @x
@@ -285,17 +281,17 @@
 @z
 
 @x rsync
-          <para>is a replacement for <command>rcp</command> (and
-          <command>scp</command>) that has many more features. It uses the
-          <quote>rsync algorithm</quote> which provides a very fast method of
-          syncing remote files. It does this by sending just the differences
-          in the files across the link, without requiring that both sets of
-          files are present at one end of the link beforehand.</para>
+            is a replacement for <command>rcp</command> (and
+            <command>scp</command>) that has many more features. It uses the
+            <quote>rsync algorithm</quote> which provides a very fast method of
+            syncing remote files. It does this by sending just the differences
+            in the files across the link, without requiring that both sets of
+            files are present at one end of the link beforehand.
 @y
-          <para>is a replacement for <command>rcp</command> (and
-          <command>scp</command>) that has many more features. It uses the
-          <quote>rsync algorithm</quote> which provides a very fast method of
-          syncing remote files. It does this by sending just the differences
-          in the files across the link, without requiring that both sets of
-          files are present at one end of the link beforehand.</para>
+            is a replacement for <command>rcp</command> (and
+            <command>scp</command>) that has many more features. It uses the
+            <quote>rsync algorithm</quote> which provides a very fast method of
+            syncing remote files. It does this by sending just the differences
+            in the files across the link, without requiring that both sets of
+            files are present at one end of the link beforehand.
 @z

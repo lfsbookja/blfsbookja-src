@@ -26,18 +26,16 @@
 @z
 
 @x
-    <para><application>paps</application> is a text to PostScript converter
-    that works through <application>Pango</application>. Its input is a UTF-8
-    encoded text file and it outputs vectorized PostScript. It may be used for
-    printing any complex script supported by <application>Pango</application>.
-    </para>
+      <application>paps</application> is a text to PostScript converter that
+      works through <application>Pango</application>. Its input is a UTF-8
+      encoded text file and it outputs vectorized PostScript. It may be used
+      for printing any complex script supported by
+      <application>Pango</application>.
 @y
-    <para>
-    <application>paps</application> は、テキストファイルから PostScript へのコンバーターです。
-    これは <application>Pango</application> による処理を通じて実現されます。
-    その入力は UTF-8 エンコーディングによるファイルであり、出力はベクトル化された PostScript となります。
-    <application>Pango</application> によってサポートされているスクリプトであれば、複雑なものであっても印刷することができます。
-    </para>
+      <application>paps</application> は、テキストファイルから PostScript へのコンバーターです。
+      これは <application>Pango</application> による処理を通じて実現されます。
+      その入力は UTF-8 エンコーディングによるファイルであり、出力はベクトル化された PostScript となります。
+      <application>Pango</application> によってサポートされているスクリプトであれば、複雑なものであっても印刷することができます。
 @z
 
 @x
@@ -47,65 +45,75 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&paps-download-http;"/></para>
+          Download (HTTP): <ulink url="&paps-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&paps-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&paps-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&paps-download-ftp;"/></para>
+          Download (FTP): <ulink url="&paps-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&paps-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&paps-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &paps-md5sum;</para>
+          Download MD5 sum: &paps-md5sum;
 @y
-        <para>&Download; MD5 sum: &paps-md5sum;</para>
+          &Download; MD5 sum: &paps-md5sum;
 @z
 
 @x
-        <para>Download size: &paps-size;</para>
+          Download size: &paps-size;
 @y
-        <para>&DownloadSize;: &paps-size;</para>
+          &DownloadSize;: &paps-size;
 @z
 
 @x
-        <para>Estimated disk space required: &paps-buildsize;</para>
+          Estimated disk space required: &paps-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &paps-buildsize;</para>
+          &Estimateddiskspacerequired;: &paps-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &paps-time;</para>
+          Estimated build time: &paps-time;
 @y
-        <para>&Estimatedbuildtime;: &paps-time;</para>
+          &Estimatedbuildtime;: &paps-time;
 @z
 
 @x
     <bridgehead renderas="sect3">paps Dependencies</bridgehead>
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="pango"/></para>
 @y
-    <bridgehead renderas="sect3">paps の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;paps&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="pango"/>
+    </para>
+@y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="pango"/></para>
+    <para role="required">
+      <xref linkend="pango"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="doxygen"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="doxygen"/></para>
+    <para role="optional">
+      <xref linkend="doxygen"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/Paps"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/Paps"/></para>
 @z
 
 @x
@@ -115,28 +123,22 @@
 @z
 
 @x
-    <para>Install <application>paps</application> by running the following
-    commands:</para>
+      Install <application>paps</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>paps</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>paps</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -172,10 +174,8 @@
 @z
 
 @x paps
-          <para>is a text to PostScript converter that supports UTF-8
-          character encoding.</para>
+            is a text to PostScript converter that supports UTF-8
+            character encoding.
 @y
-          <para>
-          UTF-8 エンコーディングをサポートした、テキストファイルから PostScript へのコンバーターです。
-          </para>
+            UTF-8 エンコーディングをサポートした、テキストファイルから PostScript へのコンバーターです。
 @z

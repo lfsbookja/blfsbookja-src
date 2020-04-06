@@ -27,6 +27,7 @@ CHANGE_FILES = \
 	lsb-tools.ch     \
 	mc.ch            \
 	modemmanager.ch  \
+	notification-daemon.ch \
 	p7zip.ch         \
 	pax.ch           \
 	pciutils.ch      \

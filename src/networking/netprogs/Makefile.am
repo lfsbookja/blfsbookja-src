@@ -16,7 +16,6 @@ CHANGE_FILES = \
 	netprogs.ch         \
 	nfs-utils.ch        \
 	ntp.ch              \
-	othernetprogs.ch    \
 	rpcbind.ch          \
 	rsync.ch            \
 	samba.ch            \

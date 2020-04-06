@@ -61,47 +61,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&which-download-http;"/></para>
+          Download (HTTP): <ulink url="&which-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&which-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&which-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&which-download-ftp;"/></para>
+          Download (FTP): <ulink url="&which-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&which-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&which-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &which-md5sum;</para>
+          Download MD5 sum: &which-md5sum;
 @y
-        <para>&Download; MD5 sum: &which-md5sum;</para>
+          &Download; MD5 sum: &which-md5sum;
 @z
 
 @x
-        <para>Download size: &which-size;</para>
+          Download size: &which-size;
 @y
-        <para>&DownloadSize;: &which-size;</para>
+          &DownloadSize;: &which-size;
 @z
 
 @x
-        <para>Estimated disk space required: &which-buildsize;</para>
+          Estimated disk space required: &which-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &which-buildsize;</para>
+          &Estimateddiskspacerequired;: &which-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &which-time;</para>
+          Estimated build time: &which-time;
 @y
-        <para>&Estimatedbuildtime;: &which-time;</para>
+          &Estimatedbuildtime;: &which-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/which"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/which"/></para>
 @z
 
 @x
@@ -111,26 +109,22 @@
 @z
 
 @x
-    <para>Install <application>which</application> by running the following
-    commands:</para>
+      Install <application>which</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>which</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>which</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -166,12 +160,10 @@
 @z
 
 @x which
-          <para>shows the full path of (shell) commands installed in your
-          <envar>PATH</envar>.</para>
+            shows the full path of (shell) commands installed in your
+            <envar>PATH</envar>.
 @y
-          <para>
-          <envar>PATH</envar> ディレクトリ内にインストールされている (シェル) コマンドのフルパスを表示します。
-          </para>
+            <envar>PATH</envar> ディレクトリ内にインストールされている (シェル) コマンドのフルパスを表示します。
 @z
 
 @x
@@ -181,22 +173,18 @@
 @z
 
 @x
-    <para>The second option (for those who don't want to install the package)
-    is to create a simple script (execute as the
-    <systemitem class="username">root</systemitem> user):</para>
+      The second option (for those who don't want to install the package)
+      is to create a simple script (execute as the
+      <systemitem class="username">root</systemitem> user):
 @y
-    <para>
-    もう１つの方法 (パッケージをインストールしたくない方) は、単純なスクリプトを作ります。
-    (これは <systemitem class="username">root</systemitem> ユーザーになって実行します。)
-    </para>
+      もう 1 つの方法 (パッケージをインストールしたくない方) は、単純なスクリプトを作ります。
+      (これは <systemitem class="username">root</systemitem> ユーザーになって実行します。)
 @z
 
 @x
-    <para>This should work OK and is probably the easiest solution
-    for most cases, but is not the most comprehensive implementation.</para>
+      This should work OK and is probably the easiest solution
+      for most cases, but is not the most comprehensive implementation.
 @y
-    <para>
-    このスクリプトは、しっかりと動作しますので、目的を達するための最も簡単な方法と言うことができます。
-    ただし必ずしも分かりやすい実装というわけでもありません。
-    </para>
+      このスクリプトはしっかりと動作しますので、目的を達するための最も簡単な方法と言うことができます。
+      ただし必ずしも分かりやすい実装というわけでもありません。
 @z

@@ -16,22 +16,19 @@
 @x
     <title>Introduction to sawfish</title>
 @y
-    <title>sawfish の概要</title>
+    <title>&IntroductionTo1;sawfish&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>sawfish</application> package contains a window
-    manager. This is useful for organizing and displaying windows where all
-    window decorations are configurable and all user-interface policy is
-    controlled through the extension language.</para>
+      The <application>sawfish</application> package contains a window
+      manager. This is useful for organizing and displaying windows where all
+      window decorations are configurable and all user-interface policy is
+      controlled through the extension language.
 @y
-    <para>
-    <application>sawfish</application> はウィンドウマネージャーです。
-    
-    This is useful for organizing and displaying windows where all
-    window decorations are configurable and all user-interface policy is
-    controlled through the extension language.
-    </para>
+      <application>sawfish</application> はウィンドウマネージャーです。
+      This is useful for organizing and displaying windows where all
+      window decorations are configurable and all user-interface policy is
+      controlled through the extension language.
 @z
 
 @x
@@ -41,45 +38,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&sawfish-download-http;"/></para>
+          Download (HTTP): <ulink url="&sawfish-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&sawfish-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&sawfish-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&sawfish-download-ftp;"/></para>
+          Download (FTP): <ulink url="&sawfish-download-ftp;"/>
 @y
-        <para>ダウンロード (FTP): <ulink url="&sawfish-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&sawfish-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &sawfish-md5sum;</para>
+          Download MD5 sum: &sawfish-md5sum;
 @y
-        <para>ダウンロード MD5 sum: &sawfish-md5sum;</para>
+          &Download; MD5 sum: &sawfish-md5sum;
 @z
 
 @x
-        <para>Download size: &sawfish-size;</para>
+          Download size: &sawfish-size;
 @y
-        <para>ダウンロードサイズ: &sawfish-size;</para>
+          &DownloadSize;: &sawfish-size;
 @z
 
 @x
-        <para>Estimated disk space required: &sawfish-buildsize;</para>
+          Estimated disk space required: &sawfish-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &sawfish-buildsize;</para>
+          &Estimateddiskspacerequired;: &sawfish-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &sawfish-time;</para>
+          Estimated build time: &sawfish-time;
 @y
-        <para>&Estimatedbuildtime;: &sawfish-time;</para>
+          &Estimatedbuildtime;: &sawfish-time;
 @z
 
 @x
     <bridgehead renderas="sect3">sawfish Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">sawfish の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;sawfish&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -98,33 +95,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/sawfish"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/sawfish"/></para>
 @z
 
 @x
     <title>Installation of sawfish</title>
 @y
-    <title>sawfish のインストール</title>
+    <title>&InstallationOf1;sawfish&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>sawfish</application> by running the following
-    commands:</para>
+      Install <application>sawfish</application> by running the following
+      commands:
 @y
-<para>
-以下のコマンドを実行して <application>sawfish</application> をビルドします。
-</para>
+      以下のコマンドを実行して <application>sawfish</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      This package does not come with a test suite.
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+      &notTestSuite;
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -146,12 +143,10 @@
 @z
 
 @x
-      <para>Be sure to backup your current <filename>.xinitrc</filename>
-      before proceeding.</para>
+        Be sure to backup your current <filename>.xinitrc</filename>
+        before proceeding.
 @y
-      <para>
-      以下を行う前に、現時点の <filename>.xinitrc</filename> のバックアップをとってください。
-      </para>
+        以下を行う前に、現時点の <filename>.xinitrc</filename> のバックアップをとってください。
 @z
 
 @x
@@ -209,23 +204,69 @@
 @z
 
 @x sawfish
-          <para>is the extensible window manager using a
-          <application>Lisp</application>-based scripting language.</para>
+            is the extensible window manager using a
+            <application>Lisp</application>-based scripting language.
 @y
-          <para>is the extensible window manager using a
-          <application>Lisp</application>-based scripting language.</para>
+            is the extensible window manager using a
+            <application>Lisp</application>-based scripting language.
+@z
+
+@x sawfish-about
+            is the <application>sawfish</application> about window.
+@y
+            is the <application>sawfish</application> about window.
 @z
 
 @x sawfish-client
-          <para>allows you to connect to a window manager process and
-          evaluate arbitrary <application>Lisp</application> forms.</para>
+            allows you to connect to a window manager process and
+            evaluate arbitrary <application>Lisp</application> forms.
 @y
-          <para>allows you to connect to a window manager process and
-          evaluate arbitrary <application>Lisp</application> forms.</para>
+            allows you to connect to a window manager process and
+            evaluate arbitrary <application>Lisp</application> forms.
 @z
 
 @x sawfish-config
-          <para>is the <application>sawfish</application> configuration manager.</para>
+            is the <application>sawfish</application> configuration manager.
 @y
-          <para>is the <application>sawfish</application> configuration manager.</para>
+            is the <application>sawfish</application> configuration manager.
+@z
+
+@x sawfish-kde4-session
+             is a script to run <application>KDE4</application> using
+             <application>sawfish</application>.
+@y
+             is a script to run <application>KDE4</application> using
+             <application>sawfish</application>.
+@z
+
+@x sawfish-kde5-session
+            is a script to run <application>Plasma 5</application> using
+            <application>sawfish</application>
+@y
+            is a script to run <application>Plasma 5</application> using
+            <application>sawfish</application>
+@z
+
+@x sawfish-mate-session
+             is a script to run <application>mate</application> using
+             <application>sawfish</application>.
+@y
+             is a script to run <application>mate</application> using
+             <application>sawfish</application>.
+@z
+
+@x sawfish-lumina-session
+             is a script to run <application>Lumina</application> using
+             <application>sawfish</application>.
+@y
+             is a script to run <application>Lumina</application> using
+             <application>sawfish</application>.
+@z
+
+@x sawfish-xfce-session
+             is a script to run <application>xfce</application> using
+             <application>sawfish</application>.
+@y
+             is a script to run <application>xfce</application> using
+             <application>sawfish</application>.
 @z

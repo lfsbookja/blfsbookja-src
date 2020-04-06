@@ -26,20 +26,18 @@
 @z
 
 @x
-    <para><application>Ed</application> is a line-oriented text editor. It
-    is used to create, display, modify and otherwise manipulate text files,
-    both interactively and via shell scripts. Ed isn't something which many
-    people use. It's described here because it can be used by the patch
-    program if you encounter an ed-based patch file. This happens rarely
-    because diff-based patches are preferred these days.</para>
+      <application>Ed</application> is a line-oriented text editor. It
+      is used to create, display, modify and otherwise manipulate text files,
+      both interactively and via shell scripts. Ed isn't something which many
+      people use. It's described here because it can be used by the patch
+      program if you encounter an ed-based patch file. This happens rarely
+      because diff-based patches are preferred these days.
 @y
-    <para>
-    <application>Ed</application> は行ベースの (line-oriented) テキストエディターです。
-    テキストファイルの生成、表示、編集を、対話的に、あるいはシェルスクリプトからの実行でも実現します。
-    Ed を利用する人は、そう多くはありません。
-    なぜここで取り上げるかというと、patch プログラムが用いるパッチファイルにて Ed ベースのものが時々見受けられるためです。
-    もっともこれに出くわすことは非常にまれであり、通常は diff ベースのパッチファイルが用いられます。
-    </para>
+      <application>Ed</application> は行ベースの (line-oriented) テキストエディターです。
+      テキストファイルの生成、表示、編集を、対話的に、あるいはシェルスクリプトからの実行でも実現します。
+      Ed を利用する人は、そう多くはありません。
+      なぜここで取り上げるかというと、patch プログラムが用いるパッチファイルにて Ed ベースのものが時々見受けられるためです。
+      もっともこれに出くわすことは非常にまれであり、通常は diff ベースのパッチファイルが用いられます。
 @z
 
 @x
@@ -49,39 +47,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&ed-download-http;"/></para>
+          Download (HTTP): <ulink url="&ed-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&ed-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&ed-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&ed-download-ftp;"/></para>
+          Download (FTP): <ulink url="&ed-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&ed-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&ed-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &ed-md5sum;</para>
+          Download MD5 sum: &ed-md5sum;
 @y
-        <para>&Download; MD5 sum: &ed-md5sum;</para>
+          &Download; MD5 sum: &ed-md5sum;
 @z
 
 @x
-        <para>Download size: &ed-size;</para>
+          Download size: &ed-size;
 @y
-        <para>&DownloadSize;: &ed-size;</para>
+          &DownloadSize;: &ed-size;
 @z
 
 @x
-        <para>Estimated disk space required: &ed-buildsize;</para>
+          Estimated disk space required: &ed-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &ed-buildsize;</para>
+          &Estimateddiskspacerequired;: &ed-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &ed-time;</para>
+          Estimated build time: &ed-time;
 @y
-        <para>&Estimatedbuildtime;: &ed-time;</para>
+          &Estimatedbuildtime;: &ed-time;
 @z
 
 @x
@@ -104,41 +102,33 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/ed"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/ed"/></para>
 @z
 
 @x
     <title>Installation of Ed</title>
 @y
-    <title>Ed のインストール</title>
+    <title>&InstallationOf1;Ed&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>Ed</application> by running the following
-    commands:</para>
+      Install <application>Ed</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Ed</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Ed</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -174,20 +164,15 @@
 @z
 
 @x
-          <para>is a line-oriented text editor.</para>
+            is a line-oriented text editor.
 @y
-          <para>
-          行ベースのテキストエディターです。
-          </para>
+            行ベースのテキストエディターです。
 @z
 
-@x
-          <para>is a restricted <command>ed</command>&mdash;it can only edit
-          files in the current directory and cannot execute shell
-          commands.</para>
+@x red
+            is a restricted <command>ed</command>&mdash;it can only edit
+            files in the current directory and cannot execute shell commands.
 @y
-          <para>
-          機能が制限された <command>ed</command> です。
-          これはカレントディレクトリ配下のファイルのみ編集でき、シェルコマンドの実行はできません。
-          </para>
+            機能が制限された <command>ed</command> です。
+            これはカレントディレクトリ配下のファイルのみ編集でき、シェルコマンドの実行はできません。
 @z

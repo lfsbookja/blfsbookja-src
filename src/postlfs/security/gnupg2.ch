@@ -20,21 +20,21 @@
 @z
 
 @x
-    <para>The <application>GnuPG</application> package is GNU's tool for
-    secure communication and data storage. It can be used to encrypt data and
-    to create digital signatures. It includes an advanced key management
-    facility and is compliant with the proposed OpenPGP Internet standard as
-    described in RFC2440 and the S/MIME standard as described by several RFCs.
-    GnuPG 2 is the stable version of GnuPG integrating support for OpenPGP and
-    S/MIME.</para>
+      The <application>GnuPG</application> package is GNU's tool for
+      secure communication and data storage. It can be used to encrypt data and
+      to create digital signatures. It includes an advanced key management
+      facility and is compliant with the proposed OpenPGP Internet standard as
+      described in RFC2440 and the S/MIME standard as described by several RFCs.
+      GnuPG 2 is the stable version of GnuPG integrating support for OpenPGP and
+      S/MIME.
 @y
-    <para>The <application>GnuPG</application> package is GNU's tool for
-    secure communication and data storage. It can be used to encrypt data and
-    to create digital signatures. It includes an advanced key management
-    facility and is compliant with the proposed OpenPGP Internet standard as
-    described in RFC2440 and the S/MIME standard as described by several RFCs.
-    GnuPG 2 is the stable version of GnuPG integrating support for OpenPGP and
-    S/MIME.</para>
+      The <application>GnuPG</application> package is GNU's tool for
+      secure communication and data storage. It can be used to encrypt data and
+      to create digital signatures. It includes an advanced key management
+      facility and is compliant with the proposed OpenPGP Internet standard as
+      described in RFC2440 and the S/MIME standard as described by several RFCs.
+      GnuPG 2 is the stable version of GnuPG integrating support for OpenPGP and
+      S/MIME.
 @z
 
 @x
@@ -44,39 +44,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&gnupg2-download-http;"/></para>
+          Download (HTTP): <ulink url="&gnupg2-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&gnupg2-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&gnupg2-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&gnupg2-download-ftp;"/></para>
+          Download (FTP): <ulink url="&gnupg2-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&gnupg2-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&gnupg2-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &gnupg2-md5sum;</para>
+          Download MD5 sum: &gnupg2-md5sum;
 @y
-        <para>&Download; MD5 sum: &gnupg2-md5sum;</para>
+          &Download; MD5 sum: &gnupg2-md5sum;
 @z
 
 @x
-        <para>Download size: &gnupg2-size;</para>
+          Download size: &gnupg2-size;
 @y
-        <para>&DownloadSize;: &gnupg2-size;</para>
+          &DownloadSize;: &gnupg2-size;
 @z
 
 @x
-        <para>Estimated disk space required: &gnupg2-buildsize;</para>
+          Estimated disk space required: &gnupg2-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &gnupg2-buildsize;</para>
+          &Estimateddiskspacerequired;: &gnupg2-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &gnupg2-time;</para>
+          Estimated build time: &gnupg2-time;
 @y
-        <para>&Estimatedbuildtime;: &gnupg2-time;</para>
+          &Estimatedbuildtime;: &gnupg2-time;
 @z
 
 @x
@@ -156,10 +156,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/gnupg2"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/gnupg2"/></para>
 @z
 
 @x
@@ -169,54 +167,56 @@
 @z
 
 @x
-    <para>Install <application>GnuPG</application> by running the following
-    commands:</para>
+      By default GnuPG doesn't install the deprecated gpg-zip script,
+      but it is still needed by some programs.  Make GnuPG install it with:
 @y
-    <para>
-    以下のコマンドを実行して <application>GnuPG 2</application> をビルドします。
-    </para>
+      By default GnuPG doesn't install the deprecated gpg-zip script,
+      but it is still needed by some programs.  Make GnuPG install it with:
 @z
 
 @x
-    <para>If you have <xref linkend="texlive"/>
-    installed and you wish to create documentation in alternate formats,
-    issue the following commands
-    (<ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> is needed for
-    the ps format):</para>
+      Install <application>GnuPG</application> by running the following
+      commands:
 @y
-    <para>
-    <xref linkend="texlive"/> をインストールしていて、種々のフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
-    （ps ふぉーまっとに対しては <ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> が必要になります。）
-    </para>
+      以下のコマンドを実行して <application>GnuPG 2</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      If you have <xref linkend="texlive"/>
+      installed and you wish to create documentation in alternate formats,
+      issue the following commands
+      (<ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> is needed for
+      the ps format):
 @y
-    <para>ビルド結果をテストする場合は <command>make check</command> を実行します。</para>
+      <xref linkend="texlive"/> をインストールしていて、種々のフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
+      （ps フォーマットに対しては <ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> が必要になります。）
 @z
 
 @x
-    <para>Note that if you have already installed
-    <application>GnuPG</application>, the instructions below will overwrite
-    <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
-    <systemitem class="username">root</systemitem> user:</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>Note that if you have already installed
-    <application>GnuPG</application>, the instructions below will overwrite
-    <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
-    <systemitem class="username">root</systemitem> user:</para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>If you created alternate formats of the documentation, install them
-    using the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
+      Note that if you have already installed
+      <application>GnuPG</application>, the instructions below will overwrite
+      <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    種々のフォーマットのドキュメントを生成した場合は <systemitem
-    class="username">root</systemitem> ユーザーになり以下のコマンドを実行します。
-    </para>
+      Note that if you have already installed
+      <application>GnuPG</application>, the instructions below will overwrite
+      <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      If you created alternate formats of the documentation, install them
+      using the following command as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      種々のフォーマットのドキュメントを生成した場合は <systemitem
+      class="username">root</systemitem> ユーザーになり以下のコマンドを実行します。
 @z
 
 @x
@@ -226,29 +226,29 @@
 @z
 
 @x
-    <para><command>sed ... tools/Makefile.in</command>:
-    This command is needed to build the gpg-zip program.</para>
+      <command>sed ... tools/Makefile.in</command>:
+      This command is needed to build the gpg-zip program.
 @y
-    <para><command>sed ... tools/Makefile.in</command>:
-    This command is needed to build the gpg-zip program.</para>
+      <command>sed ... tools/Makefile.in</command>:
+      This command is needed to build the gpg-zip program.
 @z
 
 @x
-    <para><parameter>--docdir=/usr/share/doc/gnupg-&gnupg2-version;</parameter>:
-    This switch changes the default docdir to <filename
-    class="directory">/usr/share/doc/gnupg-&gnupg2-version;</filename>.</para>
+      <parameter>--docdir=/usr/share/doc/gnupg-&gnupg2-version;</parameter>:
+      This switch changes the default docdir to <filename
+      class="directory">/usr/share/doc/gnupg-&gnupg2-version;</filename>.
 @y
-    <para><parameter>--docdir=/usr/share/doc/gnupg-&gnupg2-version;</parameter>:
-    This switch changes the default docdir to <filename
-    class="directory">/usr/share/doc/gnupg-&gnupg2-version;</filename>.</para>
+      <parameter>--docdir=/usr/share/doc/gnupg-&gnupg2-version;</parameter>:
+      This switch changes the default docdir to <filename
+      class="directory">/usr/share/doc/gnupg-&gnupg2-version;</filename>.
 @z
 
 @x
-    <para><parameter>--enable-symcryptrun</parameter>: This switch enables
-    building the symcryptrun program.</para>
+      <parameter>--enable-symcryptrun</parameter>: This switch enables
+      building the symcryptrun program.
 @y
-    <para><parameter>--enable-symcryptrun</parameter>: This switch enables
-    building the symcryptrun program.</para>
+      <parameter>--enable-symcryptrun</parameter>: This switch enables
+      building the symcryptrun program.
 @z
 
 @x
@@ -308,159 +308,157 @@
 @z
 
 @x addgnupghome
-          <para>is used to create and populate a user's
-          <filename class='directory'>~/.gnupg</filename> directories</para>
+            is used to create and populate a user's
+            <filename class='directory'>~/.gnupg</filename> directories
 @y
-          <para>is used to create and populate a user's
-          <filename class='directory'>~/.gnupg</filename> directories</para>
+            is used to create and populate a user's
+            <filename class='directory'>~/.gnupg</filename> directories
 @z
 
 @x applygnupgdefaults
-          <para>is a wrapper script used to run <command>gpgconf</command>
-          with the <parameter>--apply-defaults</parameter> parameter on all
-          user's GnuPG home directories.</para>
+            is a wrapper script used to run <command>gpgconf</command>
+            with the <parameter>--apply-defaults</parameter> parameter on all
+            user's GnuPG home directories.
 @y
-          <para>is a wrapper script used to run <command>gpgconf</command>
-          with the <parameter>--apply-defaults</parameter> parameter on all
-          user's GnuPG home directories.</para>
+            is a wrapper script used to run <command>gpgconf</command>
+            with the <parameter>--apply-defaults</parameter> parameter on all
+            user's GnuPG home directories.
 @z
 
 @x dirmngr
-          <para> is a tool that takes care of accessing the OpenPGP keyservers.
+            is a tool that takes care of accessing the OpenPGP keyservers.
 @y
-          <para> is a tool that takes care of accessing the OpenPGP keyservers.
+            is a tool that takes care of accessing the OpenPGP keyservers.
 @z
 
 @x dirmngr-client
-          <para> is a tool to contact a running dirmngr and test whether a
-          certificate has been revoked. </para>
+            is a tool to contact a running dirmngr and test whether a
+            certificate has been revoked. 
 @y
-          <para> is a tool to contact a running dirmngr and test whether a
-          certificate has been revoked. </para>
+            is a tool to contact a running dirmngr and test whether a
+            certificate has been revoked. 
 @z
 
 @x g13
-          <para>is a tool to create, mount or unmount an encrypted file system
-          container (optional).</para>
+            is a tool to create, mount or unmount an encrypted file system
+            container (optional).
 @y
-          <para>is a tool to create, mount or unmount an encrypted file system
-          container (optional).</para>
+            is a tool to create, mount or unmount an encrypted file system
+            container (optional).
 @z
 
 @x gpg-agent
-          <para>is a daemon used to manage secret (private) keys independently
-          from any protocol. It is used as a backend for <command>gpg2</command>
-          and <command>gpgsm</command> as well as for a couple of other
-          utilities.</para>
+            is a daemon used to manage secret (private) keys independently
+            from any protocol. It is used as a backend for
+            <command>gpg2</command> and <command>gpgsm</command> as well as
+            for a couple of other utilities.
 @y
-          <para>is a daemon used to manage secret (private) keys independently
-          from any protocol. It is used as a backend for <command>gpg2</command>
-          and <command>gpgsm</command> as well as for a couple of other
-          utilities.</para>
+            is a daemon used to manage secret (private) keys independently
+            from any protocol. It is used as a backend for
+            <command>gpg2</command> and <command>gpgsm</command> as well as
+            for a couple of other utilities.
 @z
 
 @x gpg-connect-agent
-          <para>is a utility used to communicate with a running
-          <command>gpg-agent</command>.</para>
+            is a utility used to communicate with a running
+            <command>gpg-agent</command>.
 @y
-          <para>is a utility used to communicate with a running
-          <command>gpg-agent</command>.</para>
+            is a utility used to communicate with a running
+            <command>gpg-agent</command>.
 @z
 
-@x gpg2
-          <para>is the OpenPGP part of the GNU Privacy Guard (GnuPG). It is a
-          tool used to provide digital encryption and signing services using
-          the OpenPGP standard.</para>
+@x gpg
+            is the OpenPGP part of the GNU Privacy Guard (GnuPG). It is a
+            tool used to provide digital encryption and signing services using
+            the OpenPGP standard.
 @y
-          <para>is the OpenPGP part of the GNU Privacy Guard (GnuPG). It is a
-          tool used to provide digital encryption and signing services using
-          the OpenPGP standard.</para>
+            is the OpenPGP part of the GNU Privacy Guard (GnuPG). It is a
+            tool used to provide digital encryption and signing services using
+            the OpenPGP standard.
 @z
 
 @x gpgconf
-          <para>is a utility used to automatically and reasonably safely
-          query and modify configuration files in the
-          <filename class='directory'>~/.gnupg</filename> home directory. It is
-          designed not to be invoked manually by the user, but automatically by
-          graphical user interfaces.</para>
+            is a utility used to automatically and reasonably safely
+            query and modify configuration files in the
+            <filename class='directory'>~/.gnupg</filename> home directory. It
+            is designed not to be invoked manually by the user, but
+            automatically by graphical user interfaces.
 @y
-          <para>is a utility used to automatically and reasonably safely
-          query and modify configuration files in the
-          <filename class='directory'>~/.gnupg</filename> home directory. It is
-          designed not to be invoked manually by the user, but automatically by
-          graphical user interfaces.</para>
+            is a utility used to automatically and reasonably safely
+            query and modify configuration files in the
+            <filename class='directory'>~/.gnupg</filename> home directory. It
+            is designed not to be invoked manually by the user, but
+            automatically by graphical user interfaces.
 @z
 
 @x gpgparsemail
-          <para>is a utility currently only useful for debugging. Run it with
-          <parameter>--help</parameter> for usage information.</para>
+            is a utility currently only useful for debugging. Run it with
+            <parameter>--help</parameter> for usage information.
 @y
-          <para>is a utility currently only useful for debugging. Run it with
-          <parameter>--help</parameter> for usage information.</para>
+            is a utility currently only useful for debugging. Run it with
+            <parameter>--help</parameter> for usage information.
 @z
 
 @x gpgscm
-          <para>executes the given scheme program or spawns an interactive
-          shell.</para>
+            executes the given scheme program or spawns an interactive shell.
 @y
-          <para>executes the given scheme program or spawns an interactive
-          shell.</para>
+            executes the given scheme program or spawns an interactive shell.
 @z
 
 @x gpgsm
-          <para>is a tool similar to <command>gpg2</command> used to provide
-          digital encryption and signing services on X.509 certificates and the
-          CMS protocol. It is mainly used as a backend for S/MIME mail
-          processing.</para>
+            is a tool similar to <command>gpg2</command> used to provide
+            digital encryption and signing services on X.509 certificates and
+            the CMS protocol. It is mainly used as a backend for S/MIME mail
+            processing.
 @y
-          <para>is a tool similar to <command>gpg2</command> used to provide
-          digital encryption and signing services on X.509 certificates and the
-          CMS protocol. It is mainly used as a backend for S/MIME mail
-          processing.</para>
+            is a tool similar to <command>gpg2</command> used to provide
+            digital encryption and signing services on X.509 certificates and
+            the CMS protocol. It is mainly used as a backend for S/MIME mail
+            processing.
 @z
 
 @x gpgtar
-          <para> is a tool to encrypt or sign files into an archive.</para>
+            is a tool to encrypt or sign files into an archive.
 @y
-          <para> is a tool to encrypt or sign files into an archive.</para>
+            is a tool to encrypt or sign files into an archive.
 @z
 
 @x gpgv
-          <para>is a verify only version of <command>gpg2</command>.</para>
+            is a verify only version of <command>gpg2</command>.
 @y
-          <para>is a verify only version of <command>gpg2</command>.</para>
+            is a verify only version of <command>gpg2</command>.
 @z
 
 @x gpg-wks-server
-          <para>provides a server for the
-          <application>Web Key Service</application> protocol.</para>
+            provides a server for the
+            <application>Web Key Service</application> protocol.
 @y
-          <para>provides a server for the
-          <application>Web Key Service</application> protocol.</para>
+            provides a server for the
+            <application>Web Key Service</application> protocol.
 @z
 
 @x gpg-zip
-          <para>encrypts or signs files into an archive.</para>
+            encrypts or signs files into an archive.
 @y
-          <para>encrypts or signs files into an archive.</para>
+            encrypts or signs files into an archive.
 @z
 
 @x kbxutil
-          <para>is used to list, export and import Keybox data.</para>
+            is used to list, export and import Keybox data.
 @y
-          <para>is used to list, export and import Keybox data.</para>
+            is used to list, export and import Keybox data.
 @z
 
 @x symcryptrun
-          <para>is a simple symmetric encryption tool.</para>
+            is a simple symmetric encryption tool.
 @y
-          <para>is a simple symmetric encryption tool.</para>
+            is a simple symmetric encryption tool.
 @z
 
 @x watchgnupg
-          <para>is used to listen to a Unix Domain socket created by any of
-          the GnuPG tools.</para>
+            is used to listen to a Unix Domain socket created by any of
+            the GnuPG tools.
 @y
-          <para>is used to listen to a Unix Domain socket created by any of
-          the GnuPG tools.</para>
+            is used to listen to a Unix Domain socket created by any of
+            the GnuPG tools.
 @z

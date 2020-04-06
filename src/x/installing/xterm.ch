@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>xterm</application> is a terminal emulator for
-    the X Window System.</para>
+      <application>xterm</application> is a terminal emulator for
+      the X Window System.
 @y
-    <para>
-    <application>xterm</application> は、X ウィンドウシステムに対する端末エミュレーターです。
-    </para>
+      <application>xterm</application> は、X ウィンドウシステムに対する端末エミュレーターです。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xterm-download-http;"/></para>
+          Download (HTTP): <ulink url="&xterm-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xterm-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xterm-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xterm-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xterm-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xterm-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xterm-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xterm-md5sum;</para>
+          Download MD5 sum: &xterm-md5sum;
 @y
-        <para>&Download; MD5 sum: &xterm-md5sum;</para>
+          &Download; MD5 sum: &xterm-md5sum;
 @z
 
 @x
-        <para>Download size: &xterm-size;</para>
+          Download size: &xterm-size;
 @y
-        <para>&DownloadSize;: &xterm-size;</para>
+          &DownloadSize;: &xterm-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xterm-buildsize;</para>
+          Estimated disk space required: &xterm-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xterm-buildsize;</para>
+          &Estimateddiskspacerequired;: &xterm-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xterm-time;</para>
+          Estimated build time: &xterm-time;
 @y
-        <para>&Estimatedbuildtime;: &xterm-time;</para>
+          &Estimatedbuildtime;: &xterm-time;
 @z
 
 @x
@@ -78,18 +76,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="xorg7-app"/></para>
+    <para role="required">
+      <xref linkend="xorg7-app"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="xorg7-app"/></para>
+    <para role="required">
+      <xref linkend="xorg7-app"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/Xterm'/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url='&blfs-wiki;/Xterm'/></para>
 @z
 
 @x
@@ -99,27 +99,22 @@
 @z
 
 @x
-    <para>Install <application>xterm</application> by running the
-    following commands:</para>
+      Install <application>xterm</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>xterm</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>xterm</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem>
-    user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -129,50 +124,43 @@
 @z
 
 @x
-    <para><command>sed -i ... termcap</command>,
-    <command>printf ... >> terminfo</command>: These commands modify the terminal
-    description so that the Backspace key is expected to send the character
-    with ASCII code 127. This is done for consistency with the Linux console.</para>
+      <command>sed -i ... termcap</command>,
+      <command>printf ... >> terminfo</command>:
+      These commands modify the terminal description so that the Backspace
+      key is expected to send the character with ASCII code 127. This is done
+      for consistency with the Linux console.
 @y
-    <para>
-    <command>sed -i ... termcap</command>,
-    <command>printf ... >> terminfo</command>:
-    このコマンドは端末記述 (terminal description) を修正します。
-    これはバックスペースキーが ASCII コードの 127 を送信するようにするもので Linux コンソールとして一貫したものとします。
-    </para>
+      <command>sed -i ... termcap</command>,
+      <command>printf ... >> terminfo</command>:
+      このコマンドは端末記述 (terminal description) を修正します。
+      これはバックスペースキーが ASCII コードの 127 を送信するようにするもので Linux コンソールとして一貫したものとします。
 @z
 
 @x
-    <para><envar>TERMINFO=/usr/share/terminfo</envar>: This ensures
-    that the <command>xterm</command> terminfo files are installed to the
-    system terminfo database.</para>
+      <envar>TERMINFO=/usr/share/terminfo</envar>: This ensures
+      that the <command>xterm</command> terminfo files are installed to the
+      system terminfo database.
 @y
-    <para>
-    <envar>TERMINFO=/usr/share/terminfo</envar>:
-    <command>xterm</command> の terminfo ファイルをシステム terminfo データベースにインストールするようにします。
-    </para>
+      <envar>TERMINFO=/usr/share/terminfo</envar>:
+      <command>xterm</command> の terminfo ファイルをシステム terminfo データベースにインストールするようにします。
 @z
 
 @x
-    <para><parameter>--with-app-defaults=...</parameter>: Sets the location
-    for the <filename class="directory">app-defaults</filename>
-    directory.</para>
+      <parameter>--with-app-defaults=...</parameter>: Sets the location
+      for the <filename class="directory">app-defaults</filename>
+      directory.
 @y
-    <para>
-    <parameter>--with-app-defaults=...</parameter>:
-    <filename class="directory">app-defaults</filename> ディレクトリを設定します。
-    </para>
+      <parameter>--with-app-defaults=...</parameter>:
+      <filename class="directory">app-defaults</filename> ディレクトリを設定します。
 @z
 
 @x
-    <para><command>make install-ti</command>: This command installs corrected
-    terminfo description files for use with
-    <application>xterm</application>.</para>
+      <command>make install-ti</command>: This command installs corrected
+      terminfo description files for use with
+      <application>xterm</application>.
 @y
-    <para>
-    <command>make install-ti</command>:
-    本コマンドは <application>xterm</application> にて用いられる terminfo 記述ファイルを適正なものにします。
-    </para>
+      <command>make install-ti</command>:
+      本コマンドは <application>xterm</application> にて用いられる terminfo 記述ファイルを適正なものにします。
 @z
 
 @x
@@ -182,29 +170,25 @@
 @z
 
 @x
-    <para>There are two ways to configure xterm.  You can add the X resource
-    definitions to the user's <filename>~/.Xresources</filename> file, or
-    add them to the system-wide
-    <filename>$XORG_PREFIX/share/X11/app-defaults/Xterm</filename> file.</para>
+      There are two ways to configure xterm.  You can add the X resource
+      definitions to the user's <filename>~/.Xresources</filename> file, or
+      add them to the system-wide
+      <filename>$XORG_PREFIX/share/X11/app-defaults/Xterm</filename> file.
 @y
-    <para>
-    xterm の設定方法は二通りあります。
-    X リソースの定義はユーザー向けとして <filename>~/.Xresources</filename> ファイルに設定することができます。
-    またはシステムワイドな <filename>$XORG_PREFIX/share/X11/app-defaults/Xterm</filename> ファイルに設定することもできます。
-    </para>
+      xterm の設定方法は二通りあります。
+      X リソースの定義はユーザー向けとして <filename>~/.Xresources</filename> ファイルに設定することができます。
+      またはシステムワイドな <filename>$XORG_PREFIX/share/X11/app-defaults/Xterm</filename> ファイルに設定することもできます。
 @z
 
 @x
-    <para>In order for xterm to follow the locale settings in the environment,
-    use TrueType fonts, and follow the Linux convention about the code sent by
-    the Backspace key, add the following definitions as the
-    <systemitem class="username">root</systemitem> user:</para>
+      In order for xterm to follow the locale settings in the environment,
+      use TrueType fonts, and follow the Linux convention about the code sent by
+      the Backspace key, add the following definitions as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    xterm が適切にロケール設定に従うように、フォントは TrueType を用います。
-    バックスペースキーの送信コードは Linux の慣例に従います。
-    <systemitem class="username">root</systemitem> ユーザーになって以下の定義を設定します。
-    </para>
+      xterm が適切にロケール設定に従うように、フォントは TrueType を用います。
+      バックスペースキーの送信コードは Linux の慣例に従います。
+      <systemitem class="username">root</systemitem> ユーザーになって以下の定義を設定します。
 @z
 
 @x
@@ -240,36 +224,28 @@
 @z
 
 @x koi8rxterm
-          <para>is a wrapper script to set up xterm with a KOI8-R locale.</para>
+            is a wrapper script to set up xterm with a KOI8-R locale.
 @y
-          <para>
-          xterm に対して KOI8-R ロケールを設定するためのラッパースクリプト。
-          </para>
+            xterm に対して KOI8-R ロケールを設定するためのラッパースクリプト。
 @z
 
 @x resize
-          <para>prints a shell command for setting the TERM and TERMCAP
-          environment  variables to indicate the current size of xterm
-          window.</para>
+            prints a shell command for setting the TERM and TERMCAP
+            environment  variables to indicate the current size of xterm
+            window.
 @y
-          <para>
-          xterm ウィンドウの現サイズを示す環境変数 TERM, TERMCAP を設定するためのシェルコマンドを表示します。
-          </para>
+            xterm ウィンドウの現サイズを示す環境変数 TERM, TERMCAP を設定するためのシェルコマンドを表示します。
 @z
 
 @x uxterm
-          <para>is a wrapper script that modifies the current locale to use
-          UTF-8 and starts xterm with the proper settings.</para>
+            is a wrapper script that modifies the current locale to use
+            UTF-8 and starts xterm with the proper settings.
 @y
-          <para>
-          ロケールを UTF-8 に変更して xterm を起動するためのラッパースクリプト。
-          </para>
+            ロケールを UTF-8 に変更して xterm を起動するためのラッパースクリプト。
 @z
 
 @x xterm
-          <para>is a terminal emulator for the X Window System.</para>
+            is a terminal emulator for the X Window System.
 @y
-          <para>
-          X ウィンドウシステムに対する端末エミュレーターです。
-          </para>
+            X ウィンドウシステムに対する端末エミュレーターです。
 @z

@@ -188,11 +188,11 @@
 
 @x
        To run the test suite, issue: <command>make test</command>. 
-       Tests 323, 1139, 1140, 1173, and 1560 are known to fail.  
+       Tests 323, 1139, 1140, and 1173 are known to fail.  
        A few other tests may fail randomly for unknown reasons.
 @y
        To run the test suite, issue: <command>make test</command>. 
-       Tests 323, 1139, 1140, 1173, and 1560 are known to fail.  
+       Tests 323, 1139, 1140, and 1173 are known to fail.  
        A few other tests may fail randomly for unknown reasons.
 @z
 

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "2.1 GB (with Clang, 655 MB installed, add 19 GB for tests)">
-  <!ENTITY llvm-time          "30 SBU (with Clang and parallelism=4, add 5.5 SBU for tests)">
+  <!ENTITY llvm-buildsize     "2.3 GB (with Clang, 699 MB installed, add 18 GB for tests)">
+  <!ENTITY llvm-time          "30 SBU (with Clang and parallelism=4, add 5.8 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "2.1 GB (Clang 込み、インストールに 655MB、テスト実施時はさらに 19 GB)">
-  <!ENTITY llvm-time          "30 SBU (Clang 込み、parallelism=4、テスト実施時はさらに 5.5 SBU)">
+  <!ENTITY llvm-buildsize     "2.3 GB (Clang 込み、インストールに 699 MB、テスト実施時はさらに 18 GB)">
+  <!ENTITY llvm-time          "30 SBU (Clang 込み、parallelism=4、テスト実施時はさらに 5.8 SBU)">
 @z
 
 @x
@@ -170,11 +170,13 @@
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="python2"/>,
+      <xref linkend="rsync"/> (for tests),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
       <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
       <ulink url="http://www.ocaml.org/">OCaml</ulink>,
+      <ulink url="https://pypi.org/project/psutil/">psutil</ulink>,
       <ulink url="https://pypi.python.org/pypi/recommonmark">recommonmark</ulink>,
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>, and
       <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
@@ -186,11 +188,13 @@
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="python2"/>,
+      <xref linkend="rsync"/> (for tests),
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
       <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
       <ulink url="http://www.ocaml.org/">OCaml</ulink>,
+      <ulink url="https://pypi.org/project/psutil/">psutil</ulink>,
       <ulink url="https://pypi.python.org/pypi/recommonmark">recommonmark</ulink>,
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>,
       <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
@@ -224,6 +228,29 @@
 @z
 
 @x
+      If you have installed <application>Sphinx</application> and
+      <application>recommonmark</application> and wish
+      to generate the html documentation and manual pages, issue the following
+      commands:
+@y
+      If you have installed <application>Sphinx</application> and
+      <application>recommonmark</application> and wish
+      to generate the html documentation and manual pages, issue the following
+      commands:
+@z
+
+@x
+      If you have downloaded the optional packages, the clang documentation
+      can be built too:
+@y
+      If you have downloaded the optional packages, the clang documentation
+      can be built too:
+@z
+
+@x
+      <!-- EDITORS - if you have more than 4 cores, take some offline to measure
+      the elapsed time for the tests.  Also, libstdc++.a and perhaps libstdc++fs.a
+      are used by a couple of the link-static tests. -->
       To test the results, issue: <command>ninja check-all</command>. Tests are
       built with all <emphasis>available</emphasis> cores, but run using the number
       of <emphasis>online</emphasis> processors. (The difference is that available
@@ -232,9 +259,12 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that the Sanitizer based tests (387 of more than 38000 tests run) 
+      Note that the Sanitizer based tests (5 of more than 41000 tests run) 
       are known to fail.
 @y
+      <!-- EDITORS - if you have more than 4 cores, take some offline to measure
+      the elapsed time for the tests.  Also, libstdc++.a and perhaps libstdc++fs.a
+      are used by a couple of the link-static tests. -->
       To test the results, issue: <command>ninja check-all</command>. Tests are
       built with all <emphasis>available</emphasis> cores, but run using the number
       of <emphasis>online</emphasis> processors. (The difference is that available
@@ -243,7 +273,7 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that the Sanitizer based tests (387 of more than 38000 tests run) 
+      Note that the Sanitizer based tests (5 of more than 41000 tests run) 
       are known to fail.
 @z
 

@@ -91,14 +91,14 @@
     <para role="optional">
       <xref linkend="gobject-introspection"/> (for gir-data, needed for GNOME),
       <xref linkend="gtk-doc"/>, and
-      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>
+      <xref linkend="umockdev"/> (for testing)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gobject-introspection"/> (gir-data, GNOME にて必要),
       <xref linkend="gtk-doc"/>,
-      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>
+      <xref linkend="umockdev"/> (テストのため)
     </para>
 @z
 
@@ -122,9 +122,10 @@
 @z
 
 @x
-      This package does not come with a testsuite.
+      If you wish to run the test suite, omit "--disable-umockdev" from the
+      configure command and then issue: <command>make check</command>.
 @y
-      &notTestSuite;
+      テストスイートを実行したい場合は configure コマンドに対して "--disable-umockdev" をはずし、その後に  <command>make check</command> を実行します。
 @z
 
 @x

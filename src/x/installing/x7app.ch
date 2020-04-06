@@ -38,17 +38,14 @@
 @z
 
 @x
-    <para>The <application>Xorg</application> applications provide the
-    expected applications available in previous X Window
-    implementations.</para>
+      The <application>Xorg</application> applications provide the
+      expected applications available in previous X Window implementations.
 @y
-    <!--
-    日本語訳註：
-    expected をうまく訳せない； どうしたものか・・・
-    -->
-    <para>
-    <application>Xorg</application> アプリケーションは、以前の X ウィンドウシステムにて利用されてきたアプリケーションを提供します。
-    </para>
+      <!--
+      日本語訳註：
+      expected をうまく訳せない； どうしたものか・・・
+      -->
+      <application>Xorg</application> アプリケーションは、以前の X ウィンドウシステムにて利用されてきたアプリケーションを提供します。
 @z
 
 @x
@@ -58,33 +55,33 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&x7apps-download-http;"/></para>
+	  Download (HTTP): <ulink url="&x7apps-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&x7apps-download-http;"/></para>
+	  &Download; (HTTP): <ulink url="&x7apps-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&x7apps-download-ftp;"/></para>
+	  Download (FTP): <ulink url="&x7apps-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&x7apps-download-ftp;"/></para>
+	  &Download; (FTP): <ulink url="&x7apps-download-ftp;"/>
 @z
 
 @x
-        <para>Download size: &x7apps-size;</para>
+	  Download size: &x7apps-size;
 @y
-        <para>&DownloadSize;: &x7apps-size;</para>
+	  &DownloadSize;: &x7apps-size;
 @z
 
 @x
-        <para>Estimated disk space required: &x7apps-buildsize;</para>
+	  Estimated disk space required: &x7apps-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &x7apps-buildsize;</para>
+          &Estimateddiskspacerequired;: &x7apps-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &x7apps-time;</para>
+	  Estimated build time: &x7apps-time;
 @y
-        <para>&Estimatedbuildtime;: &x7apps-time;</para>
+          &Estimatedbuildtime;: &x7apps-time;
 @z
 
 @x
@@ -144,22 +141,18 @@
 @z
 
 @x
-    <para>First, create a list of files to be downloaded. This file will also
-    be used to verify the integrity of the downloads when complete:</para>
+      First, create a list of files to be downloaded. This file will also
+      be used to verify the integrity of the downloads when complete:
 @y
-    <para>
-    まずはダウンロードするファイル一覧を生成します。
-    このファイルは、ダウンロード後に各ファイルのチェックサムを確認する際にも利用します。 
-    </para>
+      まずはダウンロードするファイル一覧を生成します。
+      このファイルは、ダウンロード後に各ファイルのチェックサムを確認する際にも利用します。 
 @z
 
 @x
-    <para>To download the needed files using <application>wget</application>,
-    use the following commands:</para>
+      To download the needed files using <application>wget</application>,
+      use the following commands:
 @y
-    <para>
-    必要なファイルをダウンロードするために <application>wget</application> を使って以下を実行します。
-    </para>
+      必要なファイルをダウンロードするために <application>wget</application> を使って以下を実行します。
 @z
 
 @x
@@ -169,29 +162,22 @@
 @z
 
 @x
-    <para>First, start a subshell that will exit on error:</para>
+      First, start a subshell that will exit on error:
 @y
-    <para>
-    まずはサブシェルを起動します。
-    こうしておけばエラー発生時に終了させることができます。
-    </para>
+      まずはサブシェルを起動します。
+      こうしておけばエラー発生時に終了させることができます。
 @z
 
 @x
-    <para>Install all of the packages by running the following
-    commands:</para>
+      Install all of the packages by running the following commands:
 @y
-    <para>
-    以下のコマンドを実行して個々のパッケージのインストールを行います。
-    </para>
+      以下のコマンドを実行して個々のパッケージのインストールを行います。
 @z
 
 @x
-    <para>Finally, exit the shell that was started earlier:</para>
+      Finally, exit the shell that was started earlier:
 @y
-    <para>
-    上で実行したサブシェルから抜けます。
-    </para>
+      上で実行したサブシェルから抜けます。
 @z
 
 @x
@@ -237,63 +223,251 @@
 @z
 
 @x iceauth
-          <para>is the ICE authority file utility.</para>
+	    is the ICE authority file utility.
 @y
-          <para>is the ICE authority file utility.</para>
+	    is the ICE authority file utility.
 @z
 
 @x luit
-          <para>provides locale and ISO 2022 support for Unicode
-          terminals.</para>
+	    provides locale and ISO 2022 support for Unicode terminals.
 @y
-          <para>ユニコードターミナルに対して、ロケールと ISO 2022 サポートを提供します。</para>
+            Unicode ターミナルに対してロケールと ISO 2022 サポートを提供します。
 @z
 
 @x mkfontdir
-          <para>creates an index of X font files in a directory.</para>
+	    creates an index of X font files in a directory.
 @y
-          <para>ディレクトリ内に X フォントファイルのインデックスを生成します。</para>
+            ディレクトリ内に X フォントファイルのインデックスを生成します。
 @z
 
 @x mkfontscale
-          <para>creates an index of scalable font files for X.</para>
+	    creates an index of scalable font files for X.
 @y
-          <para>X におけるスケーラブルフォントファイルのインデックスを生成します。</para>
+            X におけるスケーラブルフォントファイルのインデックスを生成します。
 @z
 
 @x sessreg
-          <para>manages utmp/wtmp entries for non-init clients.</para>
+	    manages utmp/wtmp entries for non-init clients.
 @y
-          <para>manages utmp/wtmp entries for non-init clients.</para>
+	    manages utmp/wtmp entries for non-init clients.
 @z
 
 @x setxkbmap
-          <para>sets the keyboard using the X Keyboard Extension.</para>
+	    sets the keyboard using the X Keyboard Extension.
 @y
-          <para>XKB (X Keyboard Extension) を用いたキーボード設定を行います。</para>
+            XKB (X Keyboard Extension) を用いたキーボード設定を行います。
 @z
 
 @x smproxy
-          <para>is the Session Manager Proxy.</para>
+	    is the Session Manager Proxy.
 @y
-          <para>セッションマネージャープロキシー (Session Manager Proxy)</para>
+            セッションマネージャープロキシー (Session Manager Proxy)
 @z
 
 @x x11perf
-          <para>is an X11 server performance test program.</para>
+	    is an X11 server performance test program.
 @y
-          <para>X11 サーバーにおけるパフォーマンステストプログラム。</para>
+            X11 サーバーにおけるパフォーマンステストプログラム。
 @z
 
 @x x11perfcomp
-          <para>is an X11 server performance comparison program.</para>
+	    is an X11 server performance comparison program.
 @y
-          <para>X11 サーバーにおけるパフォーマンス比較プログラム。</para>
+            X11 サーバーにおけるパフォーマンス比較プログラム。
 @z
 
 @x xauth
-          <para>is the X authority file utility.</para>
+	    is the X authority file utility.
 @y
-          <para>X 認証 (authority) ファイルユーティリティー。</para>
+            X 認証 (authority) ファイルユーティリティー。
 @z
 
+@x xbacklight
+	    adjusts backlight brightness using RandR extension.
+@y
+	    adjusts backlight brightness using RandR extension.
+@z
+
+@x xcmsdb
+	    is the Device Color Characterization utility for the X
+            Color Management System.
+@y
+	    is the Device Color Characterization utility for the X
+            Color Management System.
+@z
+
+@x xcursorgen
+	    creates an X cursor file from a collection of PNG images.
+@y
+	    creates an X cursor file from a collection of PNG images.
+@z
+
+@x xdpr
+	    dumps an X window directly to a printer.
+@y
+	    dumps an X window directly to a printer.
+@z
+
+@x xdpyinfo
+	    is a display information utility for X.
+@y
+	    is a display information utility for X.
+@z
+
+@x xdriinfo
+	    queries configuration information of DRI drivers.
+@y
+	    queries configuration information of DRI drivers.
+@z
+
+@x xev
+	    prints contents of X events.
+@y
+	    prints contents of X events.
+@z
+
+@x xgamma
+	    alters a monitor's gamma correction through the X server.
+@y
+	    alters a monitor's gamma correction through the X server.
+@z
+
+@x xhost
+	    is a server access control program for X.
+@y
+	    is a server access control program for X.
+@z
+
+@x xinput
+	    is a utility to configure and test X input devices.
+@y
+	    is a utility to configure and test X input devices.
+@z
+
+@x xkbbell
+	    is an XKB utility program that raises a bell event.
+@y
+	    is an XKB utility program that raises a bell event.
+@z
+
+@x xkbcomp
+	    compiles an XKB keyboard description.
+@y
+	    compiles an XKB keyboard description.
+@z
+
+@x xkbevd
+	    is the XKB event daemon.
+@y
+	    is the XKB event daemon.
+@z
+
+@x xkbvleds
+	    shows the XKB status of keyboard LEDs.
+@y
+	    shows the XKB status of keyboard LEDs.
+@z
+
+@x xkbwatch
+	    monitors modifier keys and LEDs.
+@y
+	    monitors modifier keys and LEDs.
+@z
+
+@x xkill
+	    kills a client by its X resource.
+@y
+	    kills a client by its X resource.
+@z
+
+@x xlsatoms
+	    lists interned atoms defined on the server.
+@y
+	    lists interned atoms defined on the server.
+@z
+
+@x xlsclients
+	    lists client applications running on a display.
+@y
+	    lists client applications running on a display.
+@z
+
+@x xmessage
+	    displays a message or query in a window.
+@y
+	    displays a message or query in a window.
+@z
+
+@x xmodmap
+	    is a utility for modifying keymaps and pointer button
+            mappings in X.
+@y
+	    is a utility for modifying keymaps and pointer button
+            mappings in X.
+@z
+
+@x xpr
+	    prints an X window dump.
+@y
+	    prints an X window dump.
+@z
+
+@x xprop
+	    is a property displayer for X.
+@y
+	    is a property displayer for X.
+@z
+
+@x xrandr
+	    is a primitive command line interface to RandR extension.
+@y
+	    is a primitive command line interface to RandR extension.
+@z
+
+@x xrdb
+	    is the X server resource database utility.
+@y
+	    is the X server resource database utility.
+@z
+
+@x xrefresh
+	    refreshes all or part of an X screen.
+@y
+	    refreshes all or part of an X screen.
+@z
+
+@x xset
+	    is the user preference utility for X.
+@y
+	    is the user preference utility for X.
+@z
+
+@x xsetroot
+	    is the root window parameter setting utility for X.
+@y
+	    is the root window parameter setting utility for X.
+@z
+
+@x xvinfo
+	    prints out X-Video extension adaptor information.
+@y
+	    prints out X-Video extension adaptor information.
+@z
+
+@x xwd
+	    dumps an image of an X window.
+@y
+	    dumps an image of an X window.
+@z
+
+@x xwininfo
+	    is a window information utility for X.
+@y
+	    is a window information utility for X.
+@z
+
+@x xwud
+	    is an image displayer for X.
+@y
+	    is an image displayer for X.
+@z

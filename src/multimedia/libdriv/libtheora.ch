@@ -85,18 +85,26 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libogg"/></para>
+    <para role="required">
+      <xref linkend="libogg"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libogg"/></para>
+    <para role="required">
+      <xref linkend="libogg"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libvorbis"/></para>
+    <para role="recommended">
+      <xref linkend="libvorbis"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libvorbis"/></para>
+    <para role="recommended">
+      <xref linkend="libvorbis"/>
+    </para>
 @z
 
 @x

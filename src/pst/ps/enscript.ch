@@ -20,28 +20,26 @@
 @z
 
 @x
-    <para><application>Enscript</application> converts ASCII text files
-    to PostScript, HTML, RTF, ANSI and overstrikes.</para>
+      <application>Enscript</application> converts ASCII text files
+      to PostScript, HTML, RTF, ANSI and overstrikes.
 @y
-    <para><application>Enscript</application> converts ASCII text files
-    to PostScript, HTML, RTF, ANSI and overstrikes.</para>
+      <application>Enscript</application> converts ASCII text files
+      to PostScript, HTML, RTF, ANSI and overstrikes.
 @z
 
 @x
-      <para><application>Enscript</application> cannot convert UTF-8 encoded
-      text to PostScript. The issue is discussed in detail in the
-      <xref linkend="locale-not-valid-option"/> section of the
-      <xref linkend="locale-issues"/> page.
-      The solution is to use <xref linkend="paps"/>, instead of
-      <application>Enscript</application>, for converting
-      UTF-8 encoded text to PostScript.</para>
+        <application>Enscript</application> cannot convert UTF-8 encoded
+        text to PostScript. The issue is discussed in detail in the
+        <xref linkend="locale-not-valid-option"/> section of the
+        <xref linkend="locale-issues"/> page.
+        The solution is to use <xref linkend="paps"/>, instead of
+        <application>Enscript</application>, for converting
+        UTF-8 encoded text to PostScript.
 @y
-      <para>
-      <application>Enscript</application> は、UTF-8 エンコーディングのテキストを PostScript に変換することはできません。
-      このことは <xref linkend="locale-issues"/> の <xref linkend="locale-not-valid-option"/> にて説明しています。
-      UTF-8 エンコーディングのテキストを PostScript に変換するには <application>Enscript</application> ではなく <xref
-      linkend="paps"/> を利用します。
-      </para>
+        <application>Enscript</application> は、UTF-8 エンコーディングのテキストを PostScript に変換することはできません。
+        このことは <xref linkend="locale-issues"/> の <xref linkend="locale-not-valid-option"/> にて説明しています。
+        UTF-8 エンコーディングのテキストを PostScript に変換するには <application>Enscript</application> ではなく <xref
+        linkend="paps"/> を利用します。
 @z
 
 @x
@@ -51,47 +49,63 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&enscript-download-http;"/></para>
+          Download (HTTP): <ulink url="&enscript-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&enscript-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&enscript-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&enscript-download-ftp;"/></para>
+          Download (FTP): <ulink url="&enscript-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&enscript-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&enscript-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &enscript-md5sum;</para>
+          Download MD5 sum: &enscript-md5sum;
 @y
-        <para>&Download; MD5 sum: &enscript-md5sum;</para>
+          &Download; MD5 sum: &enscript-md5sum;
 @z
 
 @x
-        <para>Download size: &enscript-size;</para>
+          Download size: &enscript-size;
 @y
-        <para>&DownloadSize;: &enscript-size;</para>
+          &DownloadSize;: &enscript-size;
 @z
 
 @x
-        <para>Estimated disk space required: &enscript-buildsize;</para>
+          Estimated disk space required: &enscript-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &enscript-buildsize;</para>
+          &Estimateddiskspacerequired;: &enscript-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &enscript-time;</para>
+          Estimated build time: &enscript-time;
 @y
-        <para>&Estimatedbuildtime;: &enscript-time;</para>
+          &Estimatedbuildtime;: &enscript-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Enscript Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;Enscript&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/Enscript"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/Enscript"/></para>
 @z
 
 @x
@@ -101,50 +115,40 @@
 @z
 
 @x
-    <para>Install <application>Enscript</application> by running the
-    following commands:</para>
+      Install <application>Enscript</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Enscript</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Enscript</application> をビルドします。
 @z
 
 @x
-    <para>If you have <xref linkend="texlive"/> installed, you can create
-    Postscript and PDF documentation by issuing (does not support parallel
-    make):</para>
+      If you have <xref linkend="texlive"/> installed, you can create
+      Postscript and PDF documentation by issuing (does not support parallel
+      make):
 @y
-    <para>
-    <xref linkend="texlive"/> をインストールしている場合は、以下のようにして Postscript および PDF によるドキュメントを生成することができます。
-    （並行ビルドはサポートされません。）
-    </para>
+      <xref linkend="texlive"/> をインストールしている場合は、以下のようにして Postscript および PDF によるドキュメントを生成することができます。
+      （並行ビルドはサポートされません。）
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you built Postscript and PDF documentation, install it
-    using the following command as the
-    <systemitem class="username">root</systemitem> user:</para>
+      If you built Postscript and PDF documentation, install it
+      using the following command as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    PostScript および PDF のドキュメントをビルドした場合は、<systemitem
-    class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
-    </para>
+      PostScript および PDF のドキュメントをビルドした場合は、<systemitem
+      class="username">root</systemitem> ユーザーになり、以下のコマンドを実行してドキュメントをインストールします。
 @z
 
 @x
@@ -154,39 +158,33 @@
 @z
 
 @x
-    <para><parameter>--sysconfdir=/etc/enscript</parameter>: This switch puts
-    configuration data in <filename class="directory">/etc/enscript</filename>
-    instead of <filename class="directory">/usr/etc</filename>.</para>
+      <parameter>--sysconfdir=/etc/enscript</parameter>: This switch puts
+      configuration data in <filename class="directory">/etc/enscript</filename>
+      instead of <filename class="directory">/usr/etc</filename>.
 @y
-    <para>
-    <parameter>--sysconfdir=/etc/enscript</parameter>:
-    このパラメーターは設定データの配置ディレクトリを <filename
-    class="directory">/usr/etc</filename> ではなく <filename
-    class="directory">/etc/enscript</filename> とします。
-    </para>
+      <parameter>--sysconfdir=/etc/enscript</parameter>:
+      このパラメーターは設定データの配置ディレクトリを <filename
+      class="directory">/usr/etc</filename> ではなく <filename
+      class="directory">/etc/enscript</filename> とします。
 @z
 
 @x
-    <para><parameter>--localstatedir=/var</parameter>: This switch sets the
-    directory for runtime data to <filename class="directory">/var</filename>
-    instead of <filename class="directory">/usr/var</filename>.</para>
+      <parameter>--localstatedir=/var</parameter>: This switch sets the
+      directory for runtime data to <filename class="directory">/var</filename>
+      instead of <filename class="directory">/usr/var</filename>.
 @y
-    <para>
-    <parameter>--localstatedir=/var</parameter>:
-    このパラメーターは実行時のデータを配置するディレクトリを <filename
-    class="directory">/usr/var</filename> ではなく <filename
-    class="directory">/var</filename> とします。
-    </para>
+      <parameter>--localstatedir=/var</parameter>:
+      このパラメーターは実行時のデータを配置するディレクトリを <filename
+      class="directory">/usr/var</filename> ではなく <filename
+      class="directory">/var</filename> とします。
 @z
 
 @x
-    <para><parameter>--with-media=Letter</parameter>: This switch sets the
-    medium format to letter size instead of the A4 default.</para>
+      <parameter>--with-media=Letter</parameter>: This switch sets the
+      medium format to letter size instead of the A4 default.
 @y
-    <para>
-    <parameter>--with-media=Letter</parameter>:
-    このパラメーターはメディアフォーマットを、デフォルトの A4 ではなく letter とします。
-    </para>
+      <parameter>--with-media=Letter</parameter>:
+      このパラメーターはメディアフォーマットを、デフォルトの A4 ではなく letter とします。
 @z
 
 @x
@@ -226,54 +224,51 @@
 @z
 
 @x diffpp
-          <para>converts <command>diff</command> output files to a format
-          suitable to be printed with <command>enscript</command>.</para>
+            converts <command>diff</command> output files to a format
+            suitable to be printed with <command>enscript</command>.
 @y
-          <para>
-          
-          converts <command>diff</command> output files to a format
-          suitable to be printed with <command>enscript</command>.
-          </para>
+            converts <command>diff</command> output files to a format
+            suitable to be printed with <command>enscript</command>.
 @z
 
 @x enscript
-          <para>is a filter, used primarily by printing scripts, that
-          converts ASCII text files to PostScript, HTML, RTF, ANSI and
-          overstrikes.</para>
+            is a filter, used primarily by printing scripts, that
+            converts ASCII text files to PostScript, HTML, RTF, ANSI and
+            overstrikes.
 @y
-          <para>is a filter, used primarily by printing scripts, that
-          converts ASCII text files to PostScript, HTML, RTF, ANSI and
-          overstrikes.</para>
+            is a filter, used primarily by printing scripts, that
+            converts ASCII text files to PostScript, HTML, RTF, ANSI and
+            overstrikes.
 @z
 
 @x mkafmmap
-          <para>creates a font map from a given file.</para>
+            creates a font map from a given file.
 @y
-          <para>creates a font map from a given file.</para>
+            creates a font map from a given file.
 @z
 
 @x over
-          <para>is a script which calls <command>enscript</command> and
-          passes the correct parameters to create overstriked fonts.</para>
+            is a script which calls <command>enscript</command> and
+            passes the correct parameters to create overstriked fonts.
 @y
-          <para>is a script which calls <command>enscript</command> and
-          passes the correct parameters to create overstriked fonts.</para>
+            is a script which calls <command>enscript</command> and
+            passes the correct parameters to create overstriked fonts.
 @z
 
 @x sliceprint
-          <para>slices documents with long lines.</para>
+            slices documents with long lines.
 @y
-          <para>slices documents with long lines.</para>
+            slices documents with long lines.
 @z
 
 @x states
-          <para>is an <command>awk</command>-like text processing tool
-          with some state machine extensions. It is designed for program
-          source code highlighting and for similar tasks where state
-          information helps input processing.</para>
+            is an <command>awk</command>-like text processing tool
+            with some state machine extensions. It is designed for program
+            source code highlighting and for similar tasks where state
+            information helps input processing.
 @y
-          <para>is an <command>awk</command>-like text processing tool
-          with some state machine extensions. It is designed for program
-          source code highlighting and for similar tasks where state
-          information helps input processing.</para>
+            is an <command>awk</command>-like text processing tool
+            with some state machine extensions. It is designed for program
+            source code highlighting and for similar tasks where state
+            information helps input processing.
 @z

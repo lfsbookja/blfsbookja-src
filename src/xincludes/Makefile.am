@@ -20,6 +20,9 @@ CHANGE_FILES = \
 	gtk-doc-rebuild-problem.ch  \
 	gtk-update-icon-cache.ch    \
 	lib-config.ch               \
+	mozconfigure.ch             \
+	mozmach.ch                  \
+	mozshm.ch                   \
 	perl-build-install.ch       \
 	perl-standard-install.ch    \
 	perl-unsafe-install.ch      \

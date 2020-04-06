@@ -20,25 +20,25 @@
 @z
 
 @x
-    <para>The <application>stunnel</application> package contains a program
-    that allows you to encrypt arbitrary TCP connections inside SSL (Secure
-    Sockets Layer) so you can easily communicate with clients over secure
-    channels. <application>stunnel</application> can be used to add SSL
-    functionality to commonly used <application>Inetd</application> daemons
-    such as POP-2, POP-3, and IMAP servers, along with standalone daemons such
-    as NNTP, SMTP, and HTTP. <application>stunnel</application> can also be
-    used to tunnel PPP over network sockets without changes to the server
-    package source code.</para>
+      The <application>stunnel</application> package contains a program
+      that allows you to encrypt arbitrary TCP connections inside SSL (Secure
+      Sockets Layer) so you can easily communicate with clients over secure
+      channels. <application>stunnel</application> can be used to add SSL
+      functionality to commonly used <application>Inetd</application> daemons
+      such as POP-2, POP-3, and IMAP servers, along with standalone daemons
+      such as NNTP, SMTP, and HTTP. <application>stunnel</application> can
+      also be used to tunnel PPP over network sockets without changes to the
+      server package source code.
 @y
-    <para>The <application>stunnel</application> package contains a program
-    that allows you to encrypt arbitrary TCP connections inside SSL (Secure
-    Sockets Layer) so you can easily communicate with clients over secure
-    channels. <application>stunnel</application> can be used to add SSL
-    functionality to commonly used <application>Inetd</application> daemons
-    such as POP-2, POP-3, and IMAP servers, along with standalone daemons such
-    as NNTP, SMTP, and HTTP. <application>stunnel</application> can also be
-    used to tunnel PPP over network sockets without changes to the server
-    package source code.</para>
+      The <application>stunnel</application> package contains a program
+      that allows you to encrypt arbitrary TCP connections inside SSL (Secure
+      Sockets Layer) so you can easily communicate with clients over secure
+      channels. <application>stunnel</application> can be used to add SSL
+      functionality to commonly used <application>Inetd</application> daemons
+      such as POP-2, POP-3, and IMAP servers, along with standalone daemons
+      such as NNTP, SMTP, and HTTP. <application>stunnel</application> can
+      also be used to tunnel PPP over network sockets without changes to the
+      server package source code.
 @z
 
 @x
@@ -48,39 +48,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&stunnel-download-http;"/></para>
+          Download (HTTP): <ulink url="&stunnel-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&stunnel-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&stunnel-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&stunnel-download-ftp;"/></para>
+          Download (FTP): <ulink url="&stunnel-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&stunnel-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&stunnel-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &stunnel-md5sum;</para>
+          Download MD5 sum: &stunnel-md5sum;
 @y
-        <para>&Download; MD5 sum: &stunnel-md5sum;</para>
+          &Download; MD5 sum: &stunnel-md5sum;
 @z
 
 @x
-        <para>Download size: &stunnel-size;</para>
+          Download size: &stunnel-size;
 @y
-        <para>&DownloadSize;: &stunnel-size;</para>
+          &DownloadSize;: &stunnel-size;
 @z
 
 @x
-        <para>Estimated disk space required: &stunnel-buildsize;</para>
+          Estimated disk space required: &stunnel-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &stunnel-buildsize;</para>
+          &Estimateddiskspacerequired;: &stunnel-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &stunnel-time;</para>
+          Estimated build time: &stunnel-time;
 @y
-        <para>&Estimatedbuildtime;: &stunnel-time;</para>
+          &Estimatedbuildtime;: &stunnel-time;
 @z
 
 @x
@@ -92,14 +92,17 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://netcat.sourceforge.net/">netcat</ulink> (required for tests),
-      <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink> and
+      <ulink url="http://netcat.sourceforge.net/">netcat</ulink>
+      (required for tests),
+      <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink>,
+      and
       <ulink url="https://dist.torproject.org/">TOR</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://netcat.sourceforge.net/">netcat</ulink> (テストに必要),
+      <ulink url="http://netcat.sourceforge.net/">netcat</ulink>
+      (required for tests),
       <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink>,
       <ulink url="https://dist.torproject.org/">TOR</ulink>
     </para>
@@ -118,82 +121,114 @@
 @z
 
 @x
-    <para>The <command>stunnel</command> daemon will be run in a
-    <command>chroot</command> jail by an unprivileged user. Create the
-    new user and group using the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+      The <command>stunnel</command> daemon will be run in a
+      <command>chroot</command> jail by an unprivileged user. Create the
+      new user and group using the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    The <command>stunnel</command> daemon will be run in a
-    <command>chroot</command> jail by an unprivileged user. Create the
-    new user and group using the following commands as the
-    <systemitem class="username">root</systemitem> user:
-    </para>
+      The <command>stunnel</command> daemon will be run in a
+      <command>chroot</command> jail by an unprivileged user. Create the
+      new user and group using the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-      <para>A signed SSL Certificate and a Private Key is necessary to run the
-      <command>stunnel</command> daemon. After the package is installed, there
-      are instructions to generate them. However, if you own or have already
-      created a signed SSL Certificate you wish to use, copy it to
-      <filename>/etc/stunnel/stunnel.pem</filename> before starting the build
-      (ensure only <systemitem class="username">root</systemitem> has read and
-      write access).  The <filename class="extension">.pem</filename> file must
-      be formatted as shown below:</para>
+        A signed SSL Certificate and a Private Key is necessary to run the
+        <command>stunnel</command> daemon. After the package is installed,
+        there are instructions to generate them. However, if you own or have
+        already created a signed SSL Certificate you wish to use, copy it to
+        <filename>/etc/stunnel/stunnel.pem</filename> before starting the
+        build (ensure only <systemitem class="username">root</systemitem> has
+        read and write access). The <filename class="extension">.pem</filename>
+        file must be formatted as shown below:
 @y
-      <para>A signed SSL Certificate and a Private Key is necessary to run the
-      <command>stunnel</command> daemon. After the package is installed, there
-      are instructions to generate them. However, if you own or have already
-      created a signed SSL Certificate you wish to use, copy it to
-      <filename>/etc/stunnel/stunnel.pem</filename> before starting the build
-      (ensure only <systemitem class="username">root</systemitem> has read and
-      write access).  The <filename class="extension">.pem</filename> file must
-      be formatted as shown below:</para>
+        A signed SSL Certificate and a Private Key is necessary to run the
+        <command>stunnel</command> daemon. After the package is installed,
+        there are instructions to generate them. However, if you own or have
+        already created a signed SSL Certificate you wish to use, copy it to
+        <filename>/etc/stunnel/stunnel.pem</filename> before starting the
+        build (ensure only <systemitem class="username">root</systemitem> has
+        read and write access). The <filename class="extension">.pem</filename>
+        file must be formatted as shown below:
 @z
 
 @x
-    <para>Install <application>stunnel</application> by running the following
-    commands:</para>
+      Install <application>stunnel</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>stunnel</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>stunnel</application> をビルドします。
 @z
 
 @x
-      <para>For some systems with <application>binutils</application>
-      versions prior to 2.25, <command>configure</command> may fail.  If
-      necessary, fix it either with:</para>
+        For some systems with <application>binutils</application>
+        versions prior to 2.25, <command>configure</command> may fail.  If
+        necessary, fix it either with:
 @y
-      <para>For some systems with <application>binutils</application>
-      versions prior to 2.25, <command>configure</command> may fail.  If
-      necessary, fix it either with:</para>
+        For some systems with <application>binutils</application>
+        versions prior to 2.25, <command>configure</command> may fail.  If
+        necessary, fix it either with:
 @z
 
 @x
-      <para>or, if <xref linkend="llvm"/> with Clang is installed, you can
-      replace <command>./configure ...</command> with <command>CC=clang
-      ./configure ...</command> in the first command below.</para>
+        or, if <xref linkend="llvm"/> with Clang is installed, you can
+        replace <command>./configure ...</command> with <command>CC=clang
+        ./configure ...</command> in the first command below.
 @y
-      <para>or, if <xref linkend="llvm"/> with Clang is installed, you can
-      replace <command>./configure ...</command> with <command>CC=clang
-      ./configure ...</command> in the first command below.</para>
+        or, if <xref linkend="llvm"/> with Clang is installed, you can
+        replace <command>./configure ...</command> with <command>CC=clang
+        ./configure ...</command> in the first command below.
 @z
 
 @x
-    <para>If you have installed the optional netcat application, the
-    regression tests can be run with <command>make check</command>.</para>
+      If you have installed the optional netcat application, the
+      regression tests can be run with <command>make check</command>.
 @y
-    <para>If you have installed the optional netcat application, the
-    regression tests can be run with <command>make check</command>.</para>
+      If you have installed the optional netcat application, the
+      regression tests can be run with <command>make check</command>.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x revision="systemd"
+      Install the included systemd unit by running the following command as the
+      <systemitem class="username">root</systemitem> user:
+@y
+      Install the included systemd unit by running the following command as the
+      <systemitem class="username">root</systemitem> user:
+@z
+
+@x
+      If you do not already have a signed SSL Certificate and Private Key,
+      create the <filename>stunnel.pem</filename> file in the
+      <filename class="directory">/etc/stunnel</filename> directory using the
+      command below. You will be prompted to enter the necessary
+      information. Ensure you reply to the
+@y
+      If you do not already have a signed SSL Certificate and Private Key,
+      create the <filename>stunnel.pem</filename> file in the
+      <filename class="directory">/etc/stunnel</filename> directory using the
+      command below. You will be prompted to enter the necessary
+      information. Ensure you reply to the
+@z
+
+@x
+      prompt with the name or IP address you will be using
+      to access the service(s).
+@y
+      prompt with the name or IP address you will be using
+      to access the service(s).
+@z
+
+@x
+      To generate a certificate, as the
+      <systemitem class="username">root</systemitem> user, issue:
+@y
+      To generate a certificate, as the
+      <systemitem class="username">root</systemitem> user, issue:
 @z
 
 @x
@@ -202,24 +237,22 @@
     <title>&CommandExplanations;</title>
 @z
 
-@x
-    <para revision="sysv"><parameter>--disable-systemd</parameter>: This switch
-    disables systemd socket activation support which is not available in
-    BLFS.</para>
+@x revision="sysv"
+      <parameter>--disable-systemd</parameter>: This switch disables systemd
+      socket activation support which is not available in BLFS.
 @y
-    <para revision="sysv"><parameter>--disable-systemd</parameter>: This switch
-    disables systemd socket activation support which is not available in
-    BLFS.</para>
+      <parameter>--disable-systemd</parameter>: This switch disables systemd
+      socket activation support which is not available in BLFS.
 @z
 
 @x
-    <para><command>make docdir=... install</command>: This command installs the
-    package and changes the documentation installation directory to standard
-    naming conventions.</para>
+      <command>make docdir=... install</command>: This command installs the
+      package and changes the documentation installation directory to standard
+      naming conventions.
 @y
-    <para><command>make docdir=... install</command>: This command installs the
-    package and changes the documentation installation directory to standard
-    naming conventions.</para>
+      <command>make docdir=... install</command>: This command installs the
+      package and changes the documentation installation directory to standard
+      naming conventions.
 @z
 
 @x
@@ -235,9 +268,9 @@
 @z
 
 @x
-      <para><filename>/etc/stunnel/stunnel.conf</filename></para>
+        <filename>/etc/stunnel/stunnel.conf</filename>
 @y
-      <para><filename>/etc/stunnel/stunnel.conf</filename></para>
+        <filename>/etc/stunnel/stunnel.conf</filename>
 @z
 
 @x
@@ -247,57 +280,57 @@
 @z
 
 @x
-      <para>As the <systemitem class="username">root</systemitem> user,
-      create the directory used for the
-      <filename class="extension">.pid</filename> file created
-      when the <application>stunnel</application> daemon starts:</para>
+        As the <systemitem class="username">root</systemitem> user,
+        create the directory used for the
+        <filename class="extension">.pid</filename> file created
+        when the <application>stunnel</application> daemon starts:
 @y
-      <para>As the <systemitem class="username">root</systemitem> user,
-      create the directory used for the
-      <filename class="extension">.pid</filename> file created
-      when the <application>stunnel</application> daemon starts:</para>
+        As the <systemitem class="username">root</systemitem> user,
+        create the directory used for the
+        <filename class="extension">.pid</filename> file created
+        when the <application>stunnel</application> daemon starts:
 @z
 
 @x
-      <para>Next, create a basic <filename>/etc/stunnel/stunnel.conf</filename>
-      configuration file using the following commands as the
-      <systemitem class="username">root</systemitem> user:</para>
+        Next, create a basic <filename>/etc/stunnel/stunnel.conf</filename>
+        configuration file using the following commands as the
+        <systemitem class="username">root</systemitem> user:
 @y
-      <para>Next, create a basic <filename>/etc/stunnel/stunnel.conf</filename>
-      configuration file using the following commands as the
-      <systemitem class="username">root</systemitem> user:</para>
+        Next, create a basic <filename>/etc/stunnel/stunnel.conf</filename>
+        configuration file using the following commands as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-      <para>Finally, add the service(s) you wish to encrypt to the
-      configuration file. The format is as follows:</para>
+        Finally, add the service(s) you wish to encrypt to the
+        configuration file. The format is as follows:
 @y
-      <para>Finally, add the service(s) you wish to encrypt to the
-      configuration file. The format is as follows:</para>
+        Finally, add the service(s) you wish to encrypt to the
+        configuration file. The format is as follows:
 @z
 
 @x
-      <para>If you use <application>stunnel</application> to encrypt a daemon
-      started from <command>[x]inetd</command>, you may need to disable that
-      daemon in the <filename>/etc/[x]inetd.conf</filename> file and enable a
-      corresponding <replaceable>&lt;service&gt;</replaceable>_stunnel service. You
-      may have to add an appropriate entry in <filename>/etc/services</filename>
-      as well.</para>
+        If you use <application>stunnel</application> to encrypt a daemon
+        started from <command>[x]inetd</command>, you may need to disable that
+        daemon in the <filename>/etc/[x]inetd.conf</filename> file and enable a
+        corresponding <replaceable>&lt;service&gt;</replaceable>_stunnel
+        service. You may have to add an appropriate entry in
+        <filename>/etc/services</filename> as well.
 @y
-      <para>If you use <application>stunnel</application> to encrypt a daemon
-      started from <command>[x]inetd</command>, you may need to disable that
-      daemon in the <filename>/etc/[x]inetd.conf</filename> file and enable a
-      corresponding <replaceable>&lt;service&gt;</replaceable>_stunnel service. You
-      may have to add an appropriate entry in <filename>/etc/services</filename>
-      as well.</para>
+        If you use <application>stunnel</application> to encrypt a daemon
+        started from <command>[x]inetd</command>, you may need to disable that
+        daemon in the <filename>/etc/[x]inetd.conf</filename> file and enable a
+        corresponding <replaceable>&lt;service&gt;</replaceable>_stunnel
+        service. You may have to add an appropriate entry in
+        <filename>/etc/services</filename> as well.
 @z
 
 @x
-      <para>For a full explanation of the commands and syntax used in the
-      configuration file, issue <command>man stunnel</command>.</para>
+        For a full explanation of the commands and syntax used in the
+        configuration file, issue <command>man stunnel</command>.
 @y
-      <para>For a full explanation of the commands and syntax used in the
-      configuration file, issue <command>man stunnel</command>.</para>
+        For a full explanation of the commands and syntax used in the
+        configuration file, issue <command>man stunnel</command>.
 @z
 
 @x
@@ -308,27 +341,28 @@
              <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
-@x
-      <para revision="sysv">To automatically start the
-      <command>stunnel</command> daemon when the system is booted, install the
-      <filename>/etc/rc.d/init.d/stunnel</filename> bootscript from the
-      <xref linkend="bootscripts"/> package.</para>
+@x revision="sysv"
+        To automatically start the <command>stunnel</command> daemon when the
+        system is booted, install the
+        <filename>/etc/rc.d/init.d/stunnel</filename> bootscript from the
+        <xref linkend="bootscripts"/> package.
 @y
-      <para revision="sysv">To automatically start the
-      <command>stunnel</command> daemon when the system is booted, install the
-      <filename>/etc/rc.d/init.d/stunnel</filename> bootscript from the
-      <xref linkend="bootscripts"/> package.</para>
+        To automatically start the <command>stunnel</command> daemon when the
+        system is booted, install the
+        <filename>/etc/rc.d/init.d/stunnel</filename> bootscript from the
+        <xref linkend="bootscripts"/> package.
 @z
-@x
-      <para revision="systemd">To start the <command>stunnel</command>
-      daemon at boot, enable the previously installed
-      <application>systemd</application> unit by running the following command
-     as the <systemitem class="username">root</systemitem> user:</para>
+
+@x revision="systemd"
+        To start the <command>stunnel</command>
+        daemon at boot, enable the previously installed
+        <application>systemd</application> unit by running the following
+        command as the <systemitem class="username">root</systemitem> user:
 @y
-      <para revision="systemd">To start the <command>stunnel</command>
-      daemon at boot, enable the previously installed
-      <application>systemd</application> unit by running the following command
-     as the <systemitem class="username">root</systemitem> user:</para>
+        To start the <command>stunnel</command>
+        daemon at boot, enable the previously installed
+        <application>systemd</application> unit by running the following
+        command as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -378,29 +412,29 @@
 @z
 
 @x stunnel
-          <para> is a program designed to work as an SSL
-          encryption wrapper between remote clients and local
-          (<command>{x}inetd</command>-startable) or remote servers.</para>
+            is a program designed to work as an SSL
+            encryption wrapper between remote clients and local
+            (<command>{x}inetd</command>-startable) or remote servers.
 @y
-          <para> is a program designed to work as an SSL
-          encryption wrapper between remote clients and local
-          (<command>{x}inetd</command>-startable) or remote servers.</para>
+            is a program designed to work as an SSL
+            encryption wrapper between remote clients and local
+            (<command>{x}inetd</command>-startable) or remote servers.
 @z
 
 @x stunnel3
-          <para>is a <application>Perl</application> wrapper script to use
-          <command>stunnel</command> 3.x syntax with <command>stunnel</command>
-          >=4.05.</para>
+            is a <application>Perl</application> wrapper script to use
+            <command>stunnel</command> 3.x syntax with
+            <command>stunnel</command> 4.05 or later.
 @y
-          <para>is a <application>Perl</application> wrapper script to use
-          <command>stunnel</command> 3.x syntax with <command>stunnel</command>
-          >=4.05.</para>
+            is a <application>Perl</application> wrapper script to use
+            <command>stunnel</command> 3.x syntax with
+            <command>stunnel</command> 4.05 or later.
 @z
 
 @x libstunnel.so
-          <para> contains the API functions required by
-          <application>stunnel</application>.</para>
+            contains the API functions required by
+            <application>stunnel</application>.
 @y
-          <para> contains the API functions required by
-          <application>stunnel</application>.</para>
+            contains the API functions required by
+            <application>stunnel</application>.
 @z

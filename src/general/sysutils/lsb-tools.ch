@@ -17,89 +17,88 @@
 @x
     <title>Introduction to LSB-Tools</title>
 @y
-    <title>Introduction to LSB-Tools</title>
+    <title>&IntroductionTo1;LSB-Tools&IntroductionTo2;</title>
 @z
 
 @x
-    <para>The <application>LSB-Tools</application> package includes tools
-    for Linux Standards Base (LSB) conformance.</para>
+      The <application>LSB-Tools</application> package includes tools
+      for Linux Standards Base (LSB) conformance.
 @y
-    <para>The <application>LSB-Tools</application> package includes tools
-    for Linux Standards Base (LSB) conformance.</para>
+      The <application>LSB-Tools</application> package includes tools
+      for Linux Standards Base (LSB) conformance.
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&lsb-tools-download-http;"/></para>
+          Download (HTTP): <ulink url="&lsb-tools-download-http;"/>
 @y
-        <para>Download (HTTP): <ulink url="&lsb-tools-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&lsb-tools-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&lsb-tools-download-ftp;"/></para>
+          Download (FTP): <ulink url="&lsb-tools-download-ftp;"/>
 @y
-        <para>Download (FTP): <ulink url="&lsb-tools-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&lsb-tools-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &lsb-tools-md5sum;</para>
+          Download MD5 sum: &lsb-tools-md5sum;
 @y
-        <para>Download MD5 sum: &lsb-tools-md5sum;</para>
+          &Download; MD5 sum: &lsb-tools-md5sum;
 @z
 
 @x
-        <para>Download size: &lsb-tools-size;</para>
+          Download size: &lsb-tools-size;
 @y
-        <para>Download size: &lsb-tools-size;</para>
+          &DownloadSize;: &lsb-tools-size;
 @z
 
 @x
-        <para>Estimated disk space required: &lsb-tools-buildsize;</para>
+          Estimated disk space required: &lsb-tools-buildsize;
 @y
-        <para>Estimated disk space required: &lsb-tools-buildsize;</para>
+          Estimated disk space required: &lsb-tools-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &lsb-tools-time;</para>
+          Estimated build time: &lsb-tools-time;
 @y
-        <para>Estimated build time: &lsb-tools-time;</para>
+          Estimated build time: &lsb-tools-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Installation of LSB-Tools</title>
 @y
-    <title>Installation of LSB-Tools</title>
+    <title>&InstallationOf1;LSB-Tools&InstallationOf2;</title>
 @z
 
 @x
-    <para>Install <application>lsb_release</application> by running the following
-    commands:</para>
+      Install <application>lsb_release</application> by running the following
+      commands:
 @y
-    <para>Install <application>lsb_release</application> by running the following
-    commands:</para>
+      以下のコマンドを実行して <application>lsb_release</application> をビルドします。
 @z
 
 @x
-     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-     <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -125,7 +124,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -133,9 +132,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -153,13 +152,13 @@
 @y
         <seg>
            lsb_release, 
-           install_initd, and
+           install_initd,
            remove_initd
         </seg>
         <seg>
            LSB_Tools-&lsb-tools-version;-py&python3-majorver;.egg-info
         </seg>
-        <seg>/usr/lib/lsb and
+        <seg>/usr/lib/lsb,
              /usr/lib/python&python3-majorver;/site-packages/lsbtools
         </seg>
 @z
@@ -167,23 +166,5 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-@z
-
-@x lsb_release
-          <para>is a script to give LSB data.</para>
-@y
-          <para>is a script to give LSB data.</para>
-@z
-
-@x install_initd
-          <para>is a script to activate SysV startup scripts.</para>
-@y
-          <para>is a script to activate SysV startup scripts.</para>
-@z
-
-@x remove_initd
-          <para>is a script to deactivate SysV startup scripts.</para>
-@y
-          <para>is a script to deactivate SysV startup scripts.</para>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z

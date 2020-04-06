@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para><application>Redland</application> is a set of free software C libraries
-    that provide support for the Resource Description Framework (RDF). </para>
+      <application>Redland</application> is a set of free software C libraries
+      that provide support for the Resource Description Framework (RDF).
 @y
-    <para>
-    <application>Redland</application> は、リソースディスクリプションフレームワーク (Resource Description Framework; RDF) をサポートするフリーソフトウェアの C ライブラリ群です。
-    </para>
+      <application>Redland</application> は、リソースディスクリプションフレームワーク (Resource Description Framework; RDF) をサポートするフリーソフトウェアの C ライブラリ群です。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&redland-download-http;"/></para>
+          Download (HTTP): <ulink url="&redland-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&redland-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&redland-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&redland-download-ftp;"/></para>
+          Download (FTP): <ulink url="&redland-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&redland-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&redland-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &redland-md5sum;</para>
+          Download MD5 sum: &redland-md5sum;
 @y
-        <para>&Download; MD5 sum: &redland-md5sum;</para>
+          &Download; MD5 sum: &redland-md5sum;
 @z
 
 @x
-        <para>Download size: &redland-size;</para>
+          Download size: &redland-size;
 @y
-        <para>&DownloadSize;: &redland-size;</para>
+          &DownloadSize;: &redland-size;
 @z
 
 @x
-        <para>Estimated disk space required: &redland-buildsize;</para>
+          Estimated disk space required: &redland-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &redland-buildsize;</para>
+          &Estimateddiskspacerequired;: &redland-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &redland-time;</para>
+          Estimated build time: &redland-time;
 @y
-        <para>&Estimatedbuildtime;: &redland-time;</para>
+          &Estimatedbuildtime;: &redland-time;
 @z
 
 @x
@@ -125,28 +123,22 @@
 @z
 
 @x
-    <para>Install <application>Redland</application> by running the following
-    commands:</para>
+      Install <application>Redland</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Redland</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Redland</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue <command>make check</command>.</para>
+      To test the results, issue <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -190,26 +182,20 @@
 @z
 
 @x rdfproc
-          <para>is the Redland RDF processor utility.</para>
+            is the Redland RDF processor utility.
 @y
-          <para>
-          Redland RDF プロセッサーユーティリティ。
-          </para>
+            Redland RDF プロセッサーユーティリティ。
 @z
 
 @x redland-config
-          <para>is a script to get information about the installed version
-          of Redland.</para>
+            is a script to get information about the installed version
+            of Redland.
 @y
-          <para>
-          インストールされている Redland のバージョン情報を取得するスクリプト。
-          </para>
+            インストールされている Redland のバージョン情報を取得するスクリプト。
 @z
 
 @x redland-db-upgrade
-          <para>upgrades older Redland databases to 0.9.12 format.</para>
+            upgrades older Redland databases to 0.9.12 format.
 @y
-          <para>
-          古い Redland データベースを 0.9.12 フォーマットに更新します。
-          </para>
+            古い Redland データベースを 0.9.12 フォーマットに更新します。
 @z

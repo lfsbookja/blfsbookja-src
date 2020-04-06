@@ -20,14 +20,12 @@
 @z
 
 @x
-  <para>Depending on what your system will be used for, you may or
-  may not require the graphics and font libraries. Most desktop machines will
-  want them for use with graphical applications.  Most servers on the
-  other hand, will not require them.</para>
+    Depending on what your system will be used for, you may or
+    may not require the graphics and font libraries. Most desktop machines will
+    want them for use with graphical applications.  Most servers on the
+    other hand, will not require them.
 @y
-  <para>
-  システムにて何を利用するかによって、グラフィックやフォントのライブラリを必要とするかどうかが決まります。
-  デスクトップ機であれば、たいていはグラフィカルなアプリケーションを用いるためにそれらのライブラリが必要です。
-  逆にサーバー機であればそれらが不要になるかもしれません。
-  </para>
+    システムにて何を利用するかによって、グラフィックやフォントのライブラリを必要とするかどうかが決まります。
+    デスクトップ機であれば、たいていはグラフィカルなアプリケーションを用いるためにそれらのライブラリが必要です。
+    逆にサーバー機であればそれらが不要になるかもしれません。
 @z

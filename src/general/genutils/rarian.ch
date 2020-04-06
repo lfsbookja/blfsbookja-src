@@ -20,17 +20,15 @@
 @z
 
 @x
-    <para>The <application>Rarian</application> package is a documentation
-    metadata library based on the proposed Freedesktop.org spec. <application>
-    Rarian</application> is designed to be a replacement for <application>
-    ScrollKeeper</application>.</para>
+      The <application>Rarian</application> package is a documentation
+      metadata library based on the proposed Freedesktop.org spec. <application>
+      Rarian</application> is designed to be a replacement for <application>
+      ScrollKeeper</application>.
 @y
-    <para>
-    <application>Rarian</application> package is a documentation
-    metadata library based on the proposed Freedesktop.org spec. <application>
-    Rarian</application> is designed to be a replacement for <application>
-    ScrollKeeper</application>.
-    </para>
+      The <application>Rarian</application> package is a documentation
+      metadata library based on the proposed Freedesktop.org spec. <application>
+      Rarian</application> is designed to be a replacement for <application>
+      ScrollKeeper</application>.
 @z
 
 @x
@@ -40,39 +38,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&rarian-download-http;"/></para>
+          Download (HTTP): <ulink url="&rarian-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&rarian-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&rarian-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&rarian-download-ftp;"/></para>
+          Download (FTP): <ulink url="&rarian-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&rarian-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&rarian-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &rarian-md5sum;</para>
+          Download MD5 sum: &rarian-md5sum;
 @y
-        <para>&Download; MD5 sum: &rarian-md5sum;</para>
+          &Download; MD5 sum: &rarian-md5sum;
 @z
 
 @x
-        <para>Download size: &rarian-size;</para>
+          Download size: &rarian-size;
 @y
-        <para>&DownloadSize;: &rarian-size;</para>
+          &DownloadSize;: &rarian-size;
 @z
 
 @x
-        <para>Estimated disk space required: &rarian-buildsize;</para>
+          Estimated disk space required: &rarian-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &rarian-buildsize;</para>
+          &Estimateddiskspacerequired;: &rarian-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &rarian-time;</para>
+          Estimated build time: &rarian-time;
 @y
-        <para>&Estimatedbuildtime;: &rarian-time;</para>
+          &Estimatedbuildtime;: &rarian-time;
 @z
 
 @x
@@ -83,24 +81,26 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libxslt"/>
-    (<command>rarian-sk-extract</command> will not be built without this) and
-    <xref linkend="DocBook"/> (without this, <application>Rarian</application>
-    scripts source DTDs from the net)</para>
+    <para role="recommended">
+      <xref linkend="libxslt"/> (<command>rarian-sk-extract</command> will not
+      be built without this) and
+      <xref linkend="DocBook"/> (without this, <application>Rarian
+      </application> scripts source DTDs from the net)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libxslt"/>
-    (<command>rarian-sk-extract</command> will not be built without this) and
-    <xref linkend="DocBook"/> (without this, <application>Rarian</application>
-    scripts source DTDs from the net)</para>
+    <para role="recommended">
+      <xref linkend="libxslt"/> (<command>rarian-sk-extract</command> will not
+      be built without this) and
+      <xref linkend="DocBook"/> (without this, <application>Rarian
+      </application> scripts source DTDs from the net)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/rarian"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/rarian"/></para>
 @z
 
 @x
@@ -110,26 +110,22 @@
 @z
 
 @x
-    <para>Install <application>Rarian</application> by running the following
-    commands:</para>
+      Install <application>Rarian</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Rarian</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Rarian</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -181,113 +177,113 @@
 @z
 
 @x rarian-example
-          <para>prints a nice list of all available documents found by the
-          library.</para>
+            prints a nice list of all available documents found by the
+            library.
 @y
-          <para>prints a nice list of all available documents found by the
-          library.</para>
+            prints a nice list of all available documents found by the
+            library.
 @z
 
 @x rarian-sk-config
-          <para>emulates <command>scrollkeeper-config</command>.</para>
+            emulates <command>scrollkeeper-config</command>.
 @y
-          <para>emulates <command>scrollkeeper-config</command>.</para>
+            emulates <command>scrollkeeper-config</command>.
 @z
 
 @x rarian-sk-extract
-          <para>is a wrapper around xsltproc to mimic <command>
-          scrollkeeper-extract</command>.</para>
+            is a wrapper around xsltproc to mimic <command>
+            scrollkeeper-extract</command>.
 @y
-          <para>is a wrapper around xsltproc to mimic <command>
-          scrollkeeper-extract</command>.</para>
+            is a wrapper around xsltproc to mimic <command>
+            scrollkeeper-extract</command>.
 @z
 
 @x rarian-sk-gen-uuid
-          <para>generates a unique (random) uuid.</para>
+            generates a unique (random) uuid.
 @y
-          <para>generates a unique (random) uuid.</para>
+            generates a unique (random) uuid.
 @z
 
 @x rarian-sk-get-cl
-          <para>gets a content list (category tree).</para>
+            gets a content list (category tree).
 @y
-          <para>gets a content list (category tree).</para>
+            gets a content list (category tree).
 @z
 
 @x rarian-sk-get-content-list
-          <para>is a simple wrapper to make calling <command>scrollkeeper-get-cl
-          </command> easier.</para>
+            is a simple wrapper to make calling <command>scrollkeeper-get-cl
+            </command> easier.
 @y
-          <para>is a simple wrapper to make calling <command>scrollkeeper-get-cl
-          </command> easier.</para>
+            is a simple wrapper to make calling <command>scrollkeeper-get-cl
+            </command> easier.
 @z
 
 @x rarian-sk-get-extended-content-list
-          <para>is a simple wrapper to make calling <command>scrollkeeper-get-cl
-          </command> (extended) easier.</para>
+            is a simple wrapper to make calling <command>scrollkeeper-get-cl
+            </command> (extended) easier.
 @y
-          <para>is a simple wrapper to make calling <command>scrollkeeper-get-cl
-          </command> (extended) easier.</para>
+            is a simple wrapper to make calling <command>scrollkeeper-get-cl
+            </command> (extended) easier.
 @z
 
 @x rarian-sk-get-scripts
-          <para><!-- Does nothing. -->
-          emulates <command>scrollkeeper-get-index-from-index-from-docpath</command>,
-          <command>scrollkeeper-get-toc-from-docpath</command>, and
-          <command>scrollkeeper-get-toc-from-id</command>.</para>
+            emulates <command>
+            scrollkeeper-get-index-from-index-from-docpath</command>, <command>
+            scrollkeeper-get-toc-from-docpath</command>, and <command>
+            scrollkeeper-get-toc-from-id</command>.
 @y
-          <para><!-- Does nothing. -->
-          emulates <command>scrollkeeper-get-index-from-index-from-docpath</command>,
-          <command>scrollkeeper-get-toc-from-docpath</command>, and
-          <command>scrollkeeper-get-toc-from-id</command>.</para>
+            emulates <command>
+            scrollkeeper-get-index-from-index-from-docpath</command>, <command>
+            scrollkeeper-get-toc-from-docpath</command>, and <command>
+            scrollkeeper-get-toc-from-id</command>.
 @z
 
 @x rarian-sk-install
-          <para><!--Does nothing.--> emulates <command>scrollkeeper-install
-          </command> and <command>scrollkeeper-uninstall</command>.</para>
+            emulates <command>scrollkeeper-install</command> and
+            <command>scrollkeeper-uninstall</command>.
 @y
-          <para><!--Does nothing.--> emulates <command>scrollkeeper-install
-          </command> and <command>scrollkeeper-uninstall</command>.</para>
+            emulates <command>scrollkeeper-install</command> and
+            <command>scrollkeeper-uninstall</command>.
 @z
 
 @x rarian-sk-migrate
-          <para>takes in a directory full of omf's, reads and parses them and
-          spews out an equivalent scroll file.</para>
+            takes in a directory full of omf's, reads and parses them and
+            spews out an equivalent scroll file.
 @y
-          <para>takes in a directory full of omf's, reads and parses them and
-          spews out an equivalent scroll file.</para>
+            takes in a directory full of omf's, reads and parses them and
+            spews out an equivalent scroll file.
 @z
 
 @x rarian-sk-preinstall
-          <para>creates the omf file by reading an existing omf file and
-          replacing the url for a resource with the url.</para>
+            creates the omf file by reading an existing omf file and
+            replacing the url for a resource with the url.
 @y
-          <para>creates the omf file by reading an existing omf file and
-          replacing the url for a resource with the url.</para>
+            creates the omf file by reading an existing omf file and
+            replacing the url for a resource with the url.
 @z
 
 @x rarian-sk-rebuild
-          <para>is a simple wrapper script to emulate <command>
-          scrollkeeper-rebuilddb</command>.</para>
+            is a simple wrapper script to emulate <command>
+            scrollkeeper-rebuilddb</command>.
 @y
-          <para>is a simple wrapper script to emulate <command>
-          scrollkeeper-rebuilddb</command>.</para>
+            is a simple wrapper script to emulate <command>
+            scrollkeeper-rebuilddb</command>.
 @z
 
 @x rarian-sk-update
-          <para>is compatible with the <command>scrollkeeper-update</command>
-          script that's required to be run when installing new omf files.  It
-          converts the omf files into new-style scrolls.</para>
+            is compatible with the <command>scrollkeeper-update</command>
+            script that's required to be run when installing new omf files.  It
+            converts the omf files into new-style scrolls.
 @y
-          <para>is compatible with the <command>scrollkeeper-update</command>
-          script that's required to be run when installing new omf files.  It
-          converts the omf files into new-style scrolls.</para>
+            is compatible with the <command>scrollkeeper-update</command>
+            script that's required to be run when installing new omf files.  It
+            converts the omf files into new-style scrolls.
 @z
 
 @x librarian.{so,a}
-          <para>is the API to build a list of available meta data files and
-          allows access to these.</para>
+            is the API to build a list of available meta data files and
+            allows access to these.
 @y
-          <para>is the API to build a list of available meta data files and
-          allows access to these.</para>
+            is the API to build a list of available meta data files and
+            allows access to these.
 @z

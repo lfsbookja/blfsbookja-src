@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para>The <application>libmng</application> libraries are used by
-    programs wanting to read and write Multiple-image Network Graphics
-    (MNG) files which are the animation equivalents to PNG files.</para>
+      The <application>libmng</application> libraries are used by
+      programs wanting to read and write Multiple-image Network Graphics
+      (MNG) files which are the animation equivalents to PNG files.
 @y
-    <para>
-    <application>libmng</application> ライブラリは、MNG (Multiple-image Network Graphics) ファイルの入出力を行うプログラムが利用するものです。
-    このファイルは PNG ファイルをアニメーション化したものです。
-    </para>
+      <application>libmng</application> ライブラリは、MNG (Multiple-image Network Graphics) ファイルの入出力を行うプログラムが利用するものです。
+      このファイルは PNG ファイルをアニメーション化したものです。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libmng-download-http;"/></para>
+          Download (HTTP): <ulink url="&libmng-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libmng-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libmng-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libmng-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libmng-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libmng-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libmng-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libmng-md5sum;</para>
+          Download MD5 sum: &libmng-md5sum;
 @y
-        <para>&Download; MD5 sum: &libmng-md5sum;</para>
+          &Download; MD5 sum: &libmng-md5sum;
 @z
 
 @x
-        <para>Download size: &libmng-size;</para>
+          Download size: &libmng-size;
 @y
-        <para>&DownloadSize;: &libmng-size;</para>
+          &DownloadSize;: &libmng-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libmng-buildsize;</para>
+          Estimated disk space required: &libmng-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libmng-buildsize;</para>
+          &Estimateddiskspacerequired;: &libmng-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libmng-time;</para>
+          Estimated build time: &libmng-time;
 @y
-        <para>&Estimatedbuildtime;: &libmng-time;</para>
+          &Estimatedbuildtime;: &libmng-time;
 @z
 
 @x
@@ -94,10 +92,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libmng"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libmng"/></para>
 @z
 
 @x
@@ -107,26 +103,22 @@
 @z
 
 @x
-    <para>Install <application>libmng</application> by running the following
-    commands:</para>
+      Install <application>libmng</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libmng</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libmng</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -168,12 +160,10 @@
 @z
 
 @x libmng.{so,a}
-          <para>provides functions for programs wishing to read and write
-          MNG files which are animation files without the patent problems associated
-          with certain other formats.</para>
+            provides functions for programs wishing to read and write MNG
+            files which are animation files without the patent problems
+            associated with certain other formats.
 @y
-          <para>
-          MNG ファイルの入出力を行うプログラムに対して機能を提供します。
-          このファイルはアニメーションファイルであり、他のフォーマットに比べると商標権などの問題が一切ありません。
-          </para>
+            MNG ファイルの入出力を行うプログラムに対して機能を提供します。
+            このファイルはアニメーションファイルであり、他のフォーマットに比べると商標権などの問題が一切ありません。
 @z

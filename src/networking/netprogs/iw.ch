@@ -26,17 +26,19 @@
 @z
 
 @x
-    <para>iw is a new nl80211 based CLI configuration utility for wireless
-    devices. It supports all new drivers that have been added to the kernel
-    recently. The old tool iwconfig, which uses Wireless Extensions interface,
-    is deprecated and it's strongly recommended to switch to iw and nl80211.
-    </para>
+      <application>iw</application> is a new nl80211 based CLI configuration
+      utility for wireless devices. It supports all new drivers that have been
+      added to the kernel recently. The old tool
+      <application>iwconfig</application>, which uses Wireless Extensions
+      interface, is deprecated and it's strongly recommended to switch to
+      <application>iw</application> and nl80211.
 @y
-    <para>iw is a new nl80211 based CLI configuration utility for wireless
-    devices. It supports all new drivers that have been added to the kernel
-    recently. The old tool iwconfig, which uses Wireless Extensions interface,
-    is deprecated and it's strongly recommended to switch to iw and nl80211.
-    </para>
+      <application>iw</application> is a new nl80211 based CLI configuration
+      utility for wireless devices. It supports all new drivers that have been
+      added to the kernel recently. The old tool
+      <application>iwconfig</application>, which uses Wireless Extensions
+      interface, is deprecated and it's strongly recommended to switch to
+      <application>iw</application> and nl80211.
 @z
 
 @x
@@ -46,39 +48,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&iw-download-http;"/></para>
+          Download (HTTP): <ulink url="&iw-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&iw-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&iw-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&iw-download-ftp;"/></para>
+          Download (FTP): <ulink url="&iw-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&iw-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&iw-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &iw-md5sum;</para>
+          Download MD5 sum: &iw-md5sum;
 @y
-        <para>&Download; MD5 sum: &iw-md5sum;</para>
+          &Download; MD5 sum: &iw-md5sum;
 @z
 
 @x
-        <para>Download size: &iw-size;</para>
+          Download size: &iw-size;
 @y
-        <para>&DownloadSize;: &iw-size;</para>
+          &DownloadSize;: &iw-size;
 @z
 
 @x
-        <para>Estimated disk space required: &iw-buildsize;</para>
+          Estimated disk space required: &iw-buildsize;
 @y
-        <para>Estimated disk space required: &iw-buildsize;</para>
+          Estimated disk space required: &iw-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &iw-time;</para>
+          Estimated build time: &iw-time;
 @y
-        <para>Estimated build time: &iw-time;</para>
+          Estimated build time: &iw-time;
 @z
 
 @x
@@ -118,47 +120,47 @@
 @z
 
 @x
-    <para>To use <application>iw</application>, the kernel must
-    have the appropriate drivers and other support available.  The appropriate
-    bus must also be available.  For older laptops, the PCMCIA bus
-    (CONFIG_PCCARD) needs to be built.  In some cases, this bus support will
-    also need to be built for embedded iw cards.  The appropriate bridge
-    support also needs to be built.  For many modern laptops, the CardBus host
-    bridge (CONFIG_YENTA) will be needed.</para>
+      To use <application>iw</application>, the kernel must have the
+      appropriate drivers and other support available.  The appropriate bus
+      must also be available.  For older laptops, the PCMCIA bus
+      (CONFIG_PCCARD) needs to be built.  In some cases, this bus support will
+      also need to be built for embedded iw cards. The appropriate bridge
+      support also needs to be built. For many modern laptops, the CardBus host
+      bridge (CONFIG_YENTA) will be needed.
 @y
-    <para>To use <application>iw</application>, the kernel must
-    have the appropriate drivers and other support available.  The appropriate
-    bus must also be available.  For older laptops, the PCMCIA bus
-    (CONFIG_PCCARD) needs to be built.  In some cases, this bus support will
-    also need to be built for embedded iw cards.  The appropriate bridge
-    support also needs to be built.  For many modern laptops, the CardBus host
-    bridge (CONFIG_YENTA) will be needed.</para>
+      To use <application>iw</application>, the kernel must have the
+      appropriate drivers and other support available.  The appropriate bus
+      must also be available.  For older laptops, the PCMCIA bus
+      (CONFIG_PCCARD) needs to be built.  In some cases, this bus support will
+      also need to be built for embedded iw cards. The appropriate bridge
+      support also needs to be built. For many modern laptops, the CardBus host
+      bridge (CONFIG_YENTA) will be needed.
 @z
 
 @x
-    <para>In addition to the bus, the actual driver for the specific wireless
-    card must also be available.  There are many wireless cards and they don't
-    all work with Linux.  The first place to look for card support is the kernel.
-    The drivers are located in Device Drivers &rarr; Network Device Support
-    &rarr; Wireless LAN (non-hamradio).  There are also external drivers
-    available for some very common cards.  For more information, look
-    at the user notes.</para>
+      In addition to the bus, the actual driver for the specific wireless
+      card must also be available.  There are many wireless cards and they
+      don't all work with Linux.  The first place to look for card support is
+      the kernel.  The drivers are located in Device Drivers &rarr; Network
+      Device Support &rarr; Wireless LAN (non-hamradio).  There are also
+      external drivers available for some very common cards.  For more
+      information, look at the user notes.
 @y
-    <para>In addition to the bus, the actual driver for the specific wireless
-    card must also be available.  There are many wireless cards and they don't
-    all work with Linux.  The first place to look for card support is the kernel.
-    The drivers are located in Device Drivers &rarr; Network Device Support
-    &rarr; Wireless LAN (non-hamradio).  There are also external drivers
-    available for some very common cards.  For more information, look
-    at the user notes.</para>
+      In addition to the bus, the actual driver for the specific wireless
+      card must also be available.  There are many wireless cards and they
+      don't all work with Linux.  The first place to look for card support is
+      the kernel.  The drivers are located in Device Drivers &rarr; Network
+      Device Support &rarr; Wireless LAN (non-hamradio).  There are also
+      external drivers available for some very common cards.  For more
+      information, look at the user notes.
 @z
 
 @x
-    <para>After the correct drivers are loaded, the interface will
-    appear in <filename>/proc/net/wireless</filename>.</para>
+      After the correct drivers are loaded, the interface will
+      appear in <filename>/proc/net/wireless</filename>.
 @y
-    <para>After the correct drivers are loaded, the interface will
-    appear in <filename>/proc/net/wireless</filename>.</para>
+      After the correct drivers are loaded, the interface will
+      appear in <filename>/proc/net/wireless</filename>.
 @z
 
 @x
@@ -168,28 +170,22 @@
 @z
 
 @x
-      <para>To install <application>iw</application>,
-      use the following commands:</para>
+      To install <application>iw</application>,
+      use the following commands:
 @y
-      <para>
-      以下のコマンドを実行して <application>iw</application> をビルドします。
-      </para>
+        以下のコマンドを実行して <application>iw</application> をビルドします。
 @z
 
 @x
-      <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-      <para>
       &notTestSuite;
-      </para>
 @z
 
 @x
-      <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      <para>
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-      </para>
 @z
 
 @x
@@ -199,11 +195,11 @@
 @z
 
 @x
-    <para><command>sed ...</command>: Install uncompressed manual pages
-    in accordance with other man pages.</para>
+      <command>sed ...</command>: Install uncompressed manual pages
+      in accordance with other man pages.
 @y
-    <para><command>sed ...</command>: Install uncompressed manual pages
-    in accordance with other man pages.</para>
+      <command>sed ...</command>: Install uncompressed manual pages
+      in accordance with other man pages.
 @z
 
 @x
@@ -239,7 +235,7 @@
 @z
 
 @x iw
-          <para>show / manipulate wireless devices and their configuration</para>
+            shows / manipulates wireless devices and their configuration.
 @y
-          <para>show / manipulate wireless devices and their configuration</para>
+            shows / manipulates wireless devices and their configuration.
 @z

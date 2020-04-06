@@ -20,15 +20,15 @@
 @z
 
 @x
-    <para>The <application>NcFTP</application> package contains
-    a powerful and flexible interface to the Internet standard File Transfer
-    Protocol.  It is intended to replace or supplement the stock
-    <command>ftp</command> program.</para>
+      The <application>NcFTP</application> package contains
+      a powerful and flexible interface to the Internet standard File Transfer
+      Protocol.  It is intended to replace or supplement the stock
+      <command>ftp</command> program.
 @y
-    <para>The <application>NcFTP</application> package contains
-    a powerful and flexible interface to the Internet standard File Transfer
-    Protocol.  It is intended to replace or supplement the stock
-    <command>ftp</command> program.</para>
+      The <application>NcFTP</application> package contains
+      a powerful and flexible interface to the Internet standard File Transfer
+      Protocol.  It is intended to replace or supplement the stock
+      <command>ftp</command> program.
 @z
 
 @x
@@ -38,129 +38,123 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&ncftp-download-http;"/></para>
+          Download (HTTP): <ulink url="&ncftp-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&ncftp-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&ncftp-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&ncftp-download-ftp;"/></para>
+          Download (FTP): <ulink url="&ncftp-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&ncftp-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&ncftp-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &ncftp-md5sum;</para>
+          Download MD5 sum: &ncftp-md5sum;
 @y
-        <para>&Download; MD5 sum: &ncftp-md5sum;</para>
+          &Download; MD5 sum: &ncftp-md5sum;
 @z
 
 @x
-        <para>Download size: &ncftp-size;</para>
+          Download size: &ncftp-size;
 @y
-        <para>&DownloadSize;: &ncftp-size;</para>
+          &DownloadSize;: &ncftp-size;
 @z
 
 @x
-        <para>Estimated disk space required: &ncftp-buildsize;</para>
+          Estimated disk space required: &ncftp-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &ncftp-buildsize;</para>
+          &Estimateddiskspacerequired;: &ncftp-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &ncftp-time;</para>
+          Estimated build time: &ncftp-time;
 @y
-        <para>&Estimatedbuildtime;: &ncftp-time;</para>
+          &Estimatedbuildtime;: &ncftp-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/ncftp"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/ncftp"/></para>
 @z
 
 @x
     <title>Installation of NcFTP</title>
 @y
-    <title>NcFTP のインストール</title>
+    <title>&InstallationOf1;NcFTP&InstallationOf2;</title>
 @z
 
 @x
-    <para>There are two ways to build <application>NcFTP</application>.
-    The first (and optimal) way builds most of the functionality as a shared library
-    and then builds and installs the program linked against this library.  The
-    second method simply links all of the functionality into the binary statically.
-    This doesn't make the dynamic library available for linking by other applications.
-    You need to choose which method best suits you.  Note that the second method
-    does <emphasis>not</emphasis> create an entirely statically linked binary;
-    only the <filename class="libraryfile">libncftp</filename> parts are statically
-    linked in, in this case. Be aware that building and using the shared library is
-    covered by the Clarified Artistic License; however, developing applications that
-    utilize the shared library is subject to a different license.</para>
+      There are two ways to build <application>NcFTP</application>.  The first
+      (and optimal) way builds most of the functionality as a shared library
+      and then builds and installs the program linked against this library.
+      The second method simply links all of the functionality into the binary
+      statically.  This doesn't make the dynamic library available for linking
+      by other applications.  You need to choose which method best suits you.
+      Note that the second method does <emphasis>not</emphasis> create an
+      entirely statically linked binary; only the <filename
+      class="libraryfile">libncftp</filename> parts are statically linked in,
+      in this case. Be aware that building and using the shared library is
+      covered by the Clarified Artistic License; however, developing
+      applications that utilize the shared library is subject to a different
+      license.
 @y
-    <para>There are two ways to build <application>NcFTP</application>.
-    The first (and optimal) way builds most of the functionality as a shared library
-    and then builds and installs the program linked against this library.  The
-    second method simply links all of the functionality into the binary statically.
-    This doesn't make the dynamic library available for linking by other applications.
-    You need to choose which method best suits you.  Note that the second method
-    does <emphasis>not</emphasis> create an entirely statically linked binary;
-    only the <filename class="libraryfile">libncftp</filename> parts are statically
-    linked in, in this case. Be aware that building and using the shared library is
-    covered by the Clarified Artistic License; however, developing applications that
-    utilize the shared library is subject to a different license.</para>
+      There are two ways to build <application>NcFTP</application>.  The first
+      (and optimal) way builds most of the functionality as a shared library
+      and then builds and installs the program linked against this library.
+      The second method simply links all of the functionality into the binary
+      statically.  This doesn't make the dynamic library available for linking
+      by other applications.  You need to choose which method best suits you.
+      Note that the second method does <emphasis>not</emphasis> create an
+      entirely statically linked binary; only the <filename
+      class="libraryfile">libncftp</filename> parts are statically linked in,
+      in this case. Be aware that building and using the shared library is
+      covered by the Clarified Artistic License; however, developing
+      applications that utilize the shared library is subject to a different
+      license.
 @z
 
 @x
-    <para>To install <application>NcFTP</application> using the
-    first (and optimal) method, run the following commands:</para>
+      To install <application>NcFTP</application> using the
+      first (and optimal) method, run the following commands:
 @y
-    <para>
-    To install <application>NcFTP</application> using the
-    first (and optimal) method, run the following commands:
-    </para>
+      To install <application>NcFTP</application> using the
+      first (and optimal) method, run the following commands:
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>To install <application>NcFTP</application> using the
-    second method (with the <filename class="libraryfile">libncftp</filename>
-    functionality linked in statically) run the following commands:</para>
+      To install <application>NcFTP</application> using the
+      second method (with the <filename class="libraryfile">libncftp</filename>
+      functionality linked in statically) run the following commands:
 @y
-    <para>To install <application>NcFTP</application> using the
-    second method (with the <filename class="libraryfile">libncftp</filename>
-    functionality linked in statically) run the following commands:</para>
+      To install <application>NcFTP</application> using the
+      second method (with the <filename class="libraryfile">libncftp</filename>
+      functionality linked in statically) run the following commands:
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -170,21 +164,21 @@
 @z
 
 @x
-    <para><command>make -C ... &amp;&amp; make -C ...</command>:
-    These commands make and install the dynamic library <filename
-    class="libraryfile">libncftp</filename> which is then used to link
-    against when compiling the main program.</para>
+      <command>make -C ... &amp;&amp; make -C ...</command>:
+      These commands make and install the dynamic library <filename
+      class="libraryfile">libncftp</filename> which is then used to link
+      against when compiling the main program.
 @y
-    <para><command>make -C ... &amp;&amp; make -C ...</command>:
-    These commands make and install the dynamic library <filename
-    class="libraryfile">libncftp</filename> which is then used to link
-    against when compiling the main program.</para>
+      <command>make -C ... &amp;&amp; make -C ...</command>:
+      These commands make and install the dynamic library <filename
+      class="libraryfile">libncftp</filename> which is then used to link
+      against when compiling the main program.
 @z
 
 @x
     <title>Configuring NcFTP</title>
 @y
-    <title>NcFTP の設定</title>
+    <title>&Configuring1;NcFTP&Configuring2;</title>
 @z
 
 @x
@@ -194,15 +188,15 @@
 @z
 
 @x
-      <para><filename>/etc/ncftp.*</filename> and
-      <filename>~/.ncftp/*</filename>; especially
-      <filename>/etc/ncftp.prefs_v3</filename> and
-      <filename>~/.ncftp/prefs_v3</filename></para>
+        <filename>/etc/ncftp.*</filename> and
+        <filename>~/.ncftp/*</filename>; especially
+        <filename>/etc/ncftp.prefs_v3</filename> and
+        <filename>~/.ncftp/prefs_v3</filename>
 @y
-      <para><filename>/etc/ncftp.*</filename> and
-      <filename>~/.ncftp/*</filename>; especially
-      <filename>/etc/ncftp.prefs_v3</filename> and
-      <filename>~/.ncftp/prefs_v3</filename></para>
+        <filename>/etc/ncftp.*</filename> and
+        <filename>~/.ncftp/*</filename>; especially
+        <filename>/etc/ncftp.prefs_v3</filename> and
+        <filename>~/.ncftp/prefs_v3</filename>
 @z
 
 @x
@@ -212,33 +206,33 @@
 @z
 
 @x
-      <para>Most <application>NcFTP</application> configuration
-      is done while in the program, and the configuration files are dealt with
-      automatically. One exception to this is <filename>~/.ncftp/prefs_v3</filename>.
-      There are various options to alter in there, including:</para>
+        Most <application>NcFTP</application> configuration is done while in
+        the program, and the configuration files are dealt with automatically.
+        One exception to this is <filename>~/.ncftp/prefs_v3</filename>. There
+        are various options to alter in there, including:
 @y
-      <para>Most <application>NcFTP</application> configuration
-      is done while in the program, and the configuration files are dealt with
-      automatically. One exception to this is <filename>~/.ncftp/prefs_v3</filename>.
-      There are various options to alter in there, including:</para>
+        Most <application>NcFTP</application> configuration is done while in
+        the program, and the configuration files are dealt with automatically.
+        One exception to this is <filename>~/.ncftp/prefs_v3</filename>. There
+        are various options to alter in there, including:
 @z
 
 @x
-      <para>This disables the splash screen advertising the
-      <application>NcFTPd</application> server.</para>
+        This disables the splash screen advertising the
+        <application>NcFTPd</application> server.
 @y
-      <para>This disables the splash screen advertising the
-      <application>NcFTPd</application> server.</para>
+        This disables the splash screen advertising the
+        <application>NcFTPd</application> server.
 @z
 
 @x
-      <para>There are other options in the <filename>prefs_v3</filename> file.
-      Most of these are self-explanatory. Global defaults can be set in
-      <filename>/etc/ncftp.prefs_v3</filename>.</para>
+        There are other options in the <filename>prefs_v3</filename> file.
+        Most of these are self-explanatory. Global defaults can be set in
+        <filename>/etc/ncftp.prefs_v3</filename>.
 @y
-      <para>There are other options in the <filename>prefs_v3</filename> file.
-      Most of these are self-explanatory. Global defaults can be set in
-      <filename>/etc/ncftp.prefs_v3</filename>.</para>
+        There are other options in the <filename>prefs_v3</filename> file.
+        Most of these are self-explanatory. Global defaults can be set in
+        <filename>/etc/ncftp.prefs_v3</filename>.
 @z
 
 @x
@@ -266,7 +260,7 @@
         <seg>ncftp, ncftpbatch, ncftpbookmarks, ncftpget,
         ncftpls, ncftpput, ncftpspooler</seg>
         <seg>libncftp.so</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -276,51 +270,51 @@
 @z
 
 @x ncftp
-          <para>is a browser program for File Transfer Protocol.</para>
+            is a browser program for File Transfer Protocol.
 @y
-          <para>is a browser program for File Transfer Protocol.</para>
+            is a browser program for File Transfer Protocol.
 @z
 
 @x ncftpbatch
-          <para>is an individual batch FTP job processor.</para>
+            is an individual batch FTP job processor.
 @y
-          <para>is an individual batch FTP job processor.</para>
+            is an individual batch FTP job processor.
 @z
 
 @x ncftpbookmarks
-          <para>is the <application>NcFTP</application> Bookmark Editor
-          (<application>NCurses</application>-based).</para>
+            is the <application>NcFTP</application> Bookmark Editor
+            (<application>NCurses</application>-based).
 @y
-          <para>is the <application>NcFTP</application> Bookmark Editor
-          (<application>NCurses</application>-based).</para>
+            is the <application>NcFTP</application> Bookmark Editor
+            (<application>NCurses</application>-based).
 @z
 
 @x ncftpget
-          <para>is an internet file transfer program for scripts used to
-          retrieve files.</para>
+            is an internet file transfer program for scripts used to
+            retrieve files.
 @y
-          <para>is an internet file transfer program for scripts used to
-          retrieve files.</para>
+            is an internet file transfer program for scripts used to
+            retrieve files.
 @z
 
 @x ncftpls
-          <para>is an internet file transfer program for scripts used to
-          list files.</para>
+            is an internet file transfer program for scripts used to
+            list files.
 @y
-          <para>is an internet file transfer program for scripts used to
-          list files.</para>
+            is an internet file transfer program for scripts used to
+            list files.
 @z
 
 @x ncftpput
-          <para>is an internet file transfer program for scripts used to
-          transfer files.</para>
+            is an internet file transfer program for scripts used to
+            transfer files.
 @y
-          <para>is an internet file transfer program for scripts used to
-          transfer files.</para>
+            is an internet file transfer program for scripts used to
+            transfer files.
 @z
 
 @x ncftpspooler
-          <para>is a global batch FTP job processor daemon.</para>
+            is a global batch FTP job processor daemon.
 @y
-          <para>is a global batch FTP job processor daemon.</para>
+            is a global batch FTP job processor daemon.
 @z

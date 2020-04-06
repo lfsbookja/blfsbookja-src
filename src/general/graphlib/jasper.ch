@@ -20,13 +20,13 @@
 @z
 
 @x
-    <para>The <application>JasPer</application> Project is an open-source
-    initiative to provide a free software-based reference implementation of the
-    JPEG-2000 codec.</para>
+      The <application>JasPer</application> Project is an open-source
+      initiative to provide a free software-based reference implementation
+      of the JPEG-2000 codec.
 @y
-    <para>The <application>JasPer</application> Project is an open-source
-    initiative to provide a free software-based reference implementation of the
-    JPEG-2000 codec.</para>
+      The <application>JasPer</application> Project is an open-source
+      initiative to provide a free software-based reference implementation
+      of the JPEG-2000 codec.
 @z
 
 @x
@@ -36,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&jasper-download-http;"/></para>
+          Download (HTTP): <ulink url="&jasper-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&jasper-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&jasper-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&jasper-download-ftp;"/></para>
+          Download (FTP): <ulink url="&jasper-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&jasper-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&jasper-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &jasper-md5sum;</para>
+          Download MD5 sum: &jasper-md5sum;
 @y
-        <para>&Download; MD5 sum: &jasper-md5sum;</para>
+          &Download; MD5 sum: &jasper-md5sum;
 @z
 
 @x
-        <para>Download size: &jasper-size;</para>
+          Download size: &jasper-size;
 @y
-        <para>&DownloadSize;: &jasper-size;</para>
+          &DownloadSize;: &jasper-size;
 @z
 
 @x
-        <para>Estimated disk space required: &jasper-buildsize;</para>
+          Estimated disk space required: &jasper-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &jasper-buildsize;</para>
+          &Estimateddiskspacerequired;: &jasper-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &jasper-time;</para>
+          Estimated build time: &jasper-time;
 @y
-        <para>&Estimatedbuildtime;: &jasper-time;</para>
+          &Estimatedbuildtime;: &jasper-time;
 @z
 
 @x
@@ -107,10 +107,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/jasper"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/jasper"/></para>
 @z
 
 @x
@@ -120,20 +118,15 @@
 @z
 
 @x
-    <para>To test the results, issue:  <command>make test</command>.</para>
+      To test the results, issue:  <command>make test</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make test</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-
-    Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -148,6 +141,16 @@
 @y
       <parameter>-DCMAKE_SKIP_INSTALL_RPATH=YES</parameter>: This option
       removes embedded library search paths.
+@z
+
+@x
+      <parameter>-DJAS_ENABLE_DOC=NO</parameter>: This option disables
+      rebuilding the pdf documentation if <xref linkend="texlive"/>
+      is installed.
+@y
+      <parameter>-DJAS_ENABLE_DOC=NO</parameter>: This option disables
+      rebuilding the pdf documentation if <xref linkend="texlive"/>
+      is installed.
 @z
 
 @x
@@ -183,35 +186,35 @@
 @z
 
 @x imgcmp
-          <para>compares two images of the same geometry.</para>
+            compares two images of the same geometry.
 @y
-          <para>compares two images of the same geometry.</para>
+            compares two images of the same geometry.
 @z
 
 @x imginfo
-          <para>displays information about an image.</para>
+            displays information about an image.
 @y
-          <para>displays information about an image.</para>
+            displays information about an image.
 @z
 
 @x jasper
-          <para>converts images between formats (BMP, JPS, JPC, JPG, PGX, PNM, MIF,
-          and RAS).</para>
+            converts images between formats (BMP, JPS, JPC, JPG, PGX, PNM, MIF,
+            and RAS).
 @y
-          <para>converts images between formats (BMP, JPS, JPC, JPG, PGX, PNM, MIF,
-          and RAS).</para>
+            converts images between formats (BMP, JPS, JPC, JPG, PGX, PNM, MIF,
+            and RAS).
 @z
 
 @x jiv
-          <para>displays images.</para>
+            displays images.
 @y
-          <para>displays images.</para>
+            displays images.
 @z
 
 @x libjasper.so
-          <para>is a library used by programs for reading and writing
-          JPEG2000 format files.</para>
+            is a library used by programs for reading and writing
+            JPEG2000 format files.
 @y
-          <para>is a library used by programs for reading and writing
-          JPEG2000 format files.</para>
+            is a library used by programs for reading and writing
+            JPEG2000 format files.
 @z

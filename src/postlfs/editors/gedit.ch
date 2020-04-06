@@ -81,8 +81,9 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gspell"/>,
       <xref linkend="gtksourceview4"/>,
-      <xref linkend="itstool"/>, and
-      <xref linkend="libpeas"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libpeas"/>, and
+      <xref linkend="tepl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -92,7 +93,8 @@
       <xref linkend="gspell"/>,
       <xref linkend="gtksourceview4"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="libpeas"/>
+      <xref linkend="libpeas"/>,
+      <xref linkend="tepl"/>
     </para>
 @z
 
@@ -100,8 +102,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref role="runtime" linkend="gvfs"/> (runtime),
-      <xref linkend="iso-codes"/>,
-      <xref linkend="libsoup"/>, and
+      <xref linkend="iso-codes"/>, and
       <xref linkend="pygobject3"/>
       (<application>Python</application> 3 module)
     </para>
@@ -110,7 +111,6 @@
     <para role="recommended">
       <xref role="runtime" linkend="gvfs"/> （実行時）,
       <xref linkend="iso-codes"/>,
-      <xref linkend="libsoup"/>,
       <xref linkend="pygobject3"/>
       （<application>Python</application> 3 モジュール）
     </para>
@@ -170,10 +170,22 @@
 @z
 
 @x
-      <option>-Ddocumentation=true</option>: Use this option
+      <parameter>-Duser_documentation=false</parameter>: This switch disables
+      generating the user documentation. Omit this switch if you have
+      <xref linkend="gtk-doc"/> installed and wish to generate the user
+      documentation.
+@y
+      <parameter>-Duser_documentation=false</parameter>: This switch disables
+      generating the user documentation. Omit this switch if you have
+      <xref linkend="gtk-doc"/> installed and wish to generate the user
+      documentation.
+@z
+
+@x
+      <option>-Dgtk_doc=true</option>: Use this option
       to build the reference manual (needs <xref linkend="gtk-doc"/>).
 @y
-      <option>-Ddocumentation=true</option>: Use this option
+      <option>-Dgtk_doc=true</option>: Use this option
       to build the reference manual (needs <xref linkend="gtk-doc"/>).
 @z
 
@@ -198,22 +210,22 @@
           gedit 
         </seg>
         <seg>
-          libgedit.so
+          libgedit-3.36.so
         </seg>
         <seg>
-          /usr/include/gedit-3.14 and
-          /usr/{lib,libexec,share,share/gtk-doc/html,share/help/*}/gedit
+          /usr/include/gedit-3.36 and
+          /usr/{lib,share,share/gtk-doc/html,share/help/*}/gedit
         </seg>
 @y
         <seg>
           gedit 
         </seg>
         <seg>
-          libgedit.so
+          libgedit-3.36.so
         </seg>
         <seg>
-          /usr/include/gedit-3.14,
-          /usr/{lib,libexec,share,share/gtk-doc/html,share/help/*}/gedit
+          /usr/include/gedit-3.36,
+          /usr/{lib,share,share/gtk-doc/html,share/help/*}/gedit
         </seg>
 @z
 

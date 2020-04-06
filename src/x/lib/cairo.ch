@@ -224,10 +224,14 @@
 
 @x
       <option>--enable-xlib-xcb</option>: This switch enables several
-      experimental Xlib/XCB functions used by some window managers.
+      experimental Xlib/XCB functions used by some window managers. Note that
+      using this option will break some applications such as
+      <xref role="nodep" linkend="epiphany"/>.
 @y
       <option>--enable-xlib-xcb</option>: This switch enables several
-      experimental Xlib/XCB functions used by some window managers.
+      experimental Xlib/XCB functions used by some window managers. Note that
+      using this option will break some applications such as
+      <xref role="nodep" linkend="epiphany"/>.
 @z
 
 @x

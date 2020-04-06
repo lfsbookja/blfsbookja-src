@@ -26,19 +26,17 @@
 @z
 
 @x
-    <para><application>Whois</application> is a client-side application which
-    queries the whois directory service for information pertaining to a
-    particular domain name. This package will install two programs by default:
-    <command>whois</command> and <command>mkpasswd</command>. The
-    <command>mkpasswd</command> command is also installed by the
-    <xref linkend="expect"/> package.</para>
+      <application>Whois</application> is a client-side application which
+      queries the whois directory service for information pertaining to a
+      particular domain name. This package will install two programs by default:
+      <command>whois</command> and <command>mkpasswd</command>. The
+      <command>mkpasswd</command> command is also installed by the
+      <xref linkend="expect"/> package.
 @y
-    <para>
-    <application>Whois</application> はクライアント側のアプリケーションで、指定されたドメイン名に対する情報を提供する whois ディレクトリサービスを検索します。
-    このパッケージは二つのプログラムをインストールします。
-    <command>whois</command> と <command>mkpasswd</command> です。
-    <command>mkpasswd</command> コマンドは <xref linkend="expect"/> でもインストールされます。
-    </para>
+      <application>Whois</application> はクライアント側のアプリケーションで、指定されたドメイン名に対する情報を提供する whois ディレクトリサービスを検索します。
+      このパッケージは二つのプログラムをインストールします。
+      <command>whois</command> と <command>mkpasswd</command> です。
+      <command>mkpasswd</command> コマンドは <xref linkend="expect"/> でもインストールされます。
 @z
 
 @x
@@ -48,39 +46,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&whois-download-http;"/></para>
+          Download (HTTP): <ulink url="&whois-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&whois-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&whois-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&whois-download-ftp;"/></para>
+          Download (FTP): <ulink url="&whois-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&whois-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&whois-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &whois-md5sum;</para>
+          Download MD5 sum: &whois-md5sum;
 @y
-        <para>&Download; MD5 sum: &whois-md5sum;</para>
+          &Download; MD5 sum: &whois-md5sum;
 @z
 
 @x
-        <para>Download size: &whois-size;</para>
+          Download size: &whois-size;
 @y
-        <para>&DownloadSize;: &whois-size;</para>
+          &DownloadSize;: &whois-size;
 @z
 
 @x
-        <para>Estimated disk space required: &whois-buildsize;</para>
+          Estimated disk space required: &whois-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &whois-buildsize;</para>
+          &Estimateddiskspacerequired;: &whois-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &whois-time;</para>
+          Estimated build time: &whois-time;
 @y
-        <para>&Estimatedbuildtime;: &whois-time;</para>
+          &Estimatedbuildtime;: &whois-time;
 @z
 
 @x
@@ -105,10 +103,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/whois"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/whois"/></para>
 @z
 
 @x
@@ -118,31 +114,27 @@
 @z
 
 @x
-    <para>Build the application with:</para>
+      Build the application with:
 @y
-    <para>アプリケーションをビルドするために以下を実行します。</para>
+      アプリケーションをビルドするために以下を実行します。
 @z
 
 @x
-    <para>You can install the <command>whois</command> program, the
-    <command>mkpasswd</command> program, and the locale files independently.
-    Control your choice of what is installed with the following commands issued
-    as the <systemitem class="username">root</systemitem> user:</para>
+      You can install the <command>whois</command> program, the
+      <command>mkpasswd</command> program, and the locale files independently.
+      Control your choice of what is installed with the following commands
+      issued as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <command>whois</command> プログラム、<command>mkpasswd</command> プログラム、ロケールファイルは、それぞれ個別にインストールすることができます。
-    <systemitem class="username">root</systemitem> ユーザーになり、インストールするものに応じて、以下のいずれかのコマンドを実行します。
-    </para>
+      <command>whois</command> プログラム、<command>mkpasswd</command> プログラム、ロケールファイルは、それぞれ個別にインストールすることができます。
+      <systemitem class="username">root</systemitem> ユーザーになり、インストールするものに応じて、以下のいずれかのコマンドを実行します。
 @z
 
 @x
-    <note><para>Installing this version of <command>mkpasswd</command> will
-    overwrite the same command installed by <xref
-    linkend="expect"/>.</para></note>
+        Installing this version of <command>mkpasswd</command> will
+        overwrite the same command installed by <xref linkend="expect"/>.
 @y
-    <note><para>
-    <command>mkpasswd</command> のこのバージョンをインストールすると、<xref linkend="expect"/> によってインストールされた同じコマンドを上書きします。
-    </para></note>
+    <command>mkpasswd</command> のこのバージョンをインストールすると、<xref
+    linkend="expect"/> によってインストールされた同じコマンドを上書きします。
 @z
 
 @x
@@ -178,13 +170,11 @@
 @z
 
 @x whois
-          <para>is a client-side application which queries the whois directory
-          service for information pertaining to a particular domain name.</para>
+            is a client-side application which queries the whois directory
+            service for information pertaining to a particular domain name.
 @y
-          <para>
-          クライアント側のアプリケーションであり、指定されたドメイン名に対する情報を提供する
-          whois ディレクトリサービスを検索します。
-          </para>
+            クライアント側のアプリケーションであり、指定されたドメイン名に対する情報を提供する
+            whois ディレクトリサービスを検索します。
 @z
 
 @x mkpasswd

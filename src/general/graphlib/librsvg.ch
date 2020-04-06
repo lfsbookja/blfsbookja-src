@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "849 MB (add 375 MB for tests)">
-  <!ENTITY librsvg-time          "1.7 SBU (add 1.2 SBU for tests)">
+  <!ENTITY librsvg-buildsize     "1.2 GB (83 MB installed), add 642 MB for tests">
+  <!ENTITY librsvg-time          "1.9 SBU (on a 4-core machine), add 0.7 SBU for tests">
 @y
-  <!ENTITY librsvg-buildsize     "849 MB（テスト実施時はさらに 375 MB)">
-  <!ENTITY librsvg-time          "1.7 SBU（テスト実施時はさらに 1.2 SBU）">
+  <!ENTITY librsvg-buildsize     "1.2 GB (インストールに 83 MB), テスト実施時はさらに 642 MB">
+  <!ENTITY librsvg-time          "1.9 SBU (4 コアマシン), テスト実施時はさらに 0.7 SBU">
 @z
 
 @x
@@ -87,7 +87,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="libcroco"/>,
       <xref linkend="cairo"/>,
       <xref linkend="pango"/>, and 
       <xref linkend="rust"/>
@@ -96,7 +95,6 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="libcroco"/>,
       <xref linkend="cairo"/>,
       <xref linkend="pango"/>,
       <xref linkend="rust"/>
@@ -149,18 +147,21 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Over 100 tests
-      fail as a result of problems with the test suite. These test failures
-      are primarily related to svg1.1, and are comparison problems due to 
-      using a later version of Pango than what the developers created the
-      initial SVG files with.
+      To test the results, issue: <command>make check</command>.
+      <!-- https://gitlab.gnome.org/GNOME/librsvg/issues/511 -->
+      Many of the tests in 'reftests' may fail (45 failed in March 2020) because
+      they produce, and then diff, graphic files with text and the details such
+      as spacing vary when the system versions of cairo, freetype, pixman, pango
+      and perhaps harfbuzz differ from the versions on the system where the
+      reference files were created.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      Over 100 tests
-      fail as a result of problems with the test suite. These test failures
-      are primarily related to svg1.1, and are comparison problems due to 
-      using a later version of Pango than what the developers created the
-      initial SVG files with.
+      <!-- https://gitlab.gnome.org/GNOME/librsvg/issues/511 -->
+      Many of the tests in 'reftests' may fail (45 failed in March 2020) because
+      they produce, and then diff, graphic files with text and the details such
+      as spacing vary when the system versions of cairo, freetype, pixman, pango
+      and perhaps harfbuzz differ from the versions on the system where the
+      reference files were created.
 @z
 
 @x
@@ -217,7 +218,8 @@
           librsvg-2.so and libpixbufloader-svg.so
         </seg>
         <seg>
-          /usr/include/librsvg-2.0 and
+          /usr/include/librsvg-2.0,
+          /usr/share/doc/librsvg, and
           /usr/share/gtk-doc/html/rsvg-2.0
         </seg>
 @y
@@ -229,6 +231,7 @@
         </seg>
         <seg>
           /usr/include/librsvg-2.0,
+          /usr/share/doc/librsvg,
           /usr/share/gtk-doc/html/rsvg-2.0
         </seg>
 @z

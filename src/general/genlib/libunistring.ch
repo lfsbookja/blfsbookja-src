@@ -85,12 +85,16 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
-     (to rebuild the documentation)</para>
+    <para role="optional">
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      (to rebuild the documentation)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
-     (ドキュメントの再ビルド時に必要)</para>
+    <para role="optional">
+      <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
+      (ドキュメントの再ビルド時に必要)
+    </para>
 @z
 
 @x

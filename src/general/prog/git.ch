@@ -14,15 +14,15 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "508 MB (with downloaded documentation)">
+  <!ENTITY git-buildsize     "319 MB (with downloaded documentation)">
 @y
-  <!ENTITY git-buildsize     "508 MB（ダウンロードドキュメントを含む）">
+  <!ENTITY git-buildsize     "319 MB（ダウンロードドキュメントを含む）">
 @z
 
 @x
-  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 3.8 SBU for tests with parallelism=4)">
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 2.5 SBU for tests with parallelism=4)">
 @y
-  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; テスト実施時はさらに 3.8 SBU）">
+  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; テスト実施時はさらに 2.5 SBU）">
 @z
 
 @x
@@ -156,7 +156,6 @@
       <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
       role="nodep" linkend="pcre"/>), in either case configured with
       <literal>--enable-jit</literal>,
-      <xref linkend="python2"/>,
       <xref linkend="subversion"/> with Perl bindings (for <command>git
          svn</command>),
       <xref role="runtime" linkend="tk"/>
@@ -170,7 +169,6 @@
       <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
       role="nodep" linkend="pcre"/>), in either case configured with
       <literal>--enable-jit</literal>,
-      <xref linkend="python2"/>,
       <xref linkend="subversion"/> with Perl bindings (for <command>git
          svn</command>),
       <xref role="runtime" linkend="tk"/>
@@ -316,15 +314,17 @@
 @z
 
 @x
-      <option>--with-python=python3</option>: Use this switch to allow using
-      <application>Python 3</application>. <application>Python</application> is
-      only used for the <command>git p4</command> interface to Perforce
-      repositories.
+      <option>--with-python=python3</option>: Use this switch to use
+      <application>Python 3</application>, instead of the EOL'ed
+      <application>Python 2</application>. Python is used for the
+      <command>git p4</command> interface to Perforce repositories,
+      and also used in some tests.
 @y
-      <option>--with-python=python3</option>: Use this switch to allow using
-      <application>Python 3</application>. <application>Python</application> is
-      only used for the <command>git p4</command> interface to Perforce
-      repositories.
+      <option>--with-python=python3</option>: Use this switch to use
+      <application>Python 3</application>, instead of the EOL'ed
+      <application>Python 2</application>. Python is used for the
+      <command>git p4</command> interface to Perforce repositories,
+      and also used in some tests.
 @z
 
 @x

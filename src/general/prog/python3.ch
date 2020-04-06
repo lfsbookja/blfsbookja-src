@@ -243,14 +243,14 @@
 @x
       <option>--with-lto</option>: This optional switch enables thick Link
       Time Optimization. Unusually, it creates a much larger <filename
-      class="libraryfile">/usr/lib/python3.8/config-3.8-x86_64-linux-gnu/libpython3.8.a</filename>
+	  class="libraryfile">/usr/lib/python&python3-majorver;/config-&python3-majorver;-&lt;arch&gt;-linux-gnu/libpython&python3-majorver;.a</filename>
       with a small increase in the time to compile
       <application>Python</application>. Run-time results do not appear to show
       any benefit from doing this.
 @y
       <option>--with-lto</option>: This optional switch enables thick Link
       Time Optimization. Unusually, it creates a much larger <filename
-      class="libraryfile">/usr/lib/python3.8/config-3.8-x86_64-linux-gnu/libpython3.8.a</filename>
+	  class="libraryfile">/usr/lib/python&python3-majorver;/config-&python3-majorver;-&lt;arch&gt;-linux-gnu/libpython&python3-majorver;.a</filename>
       with a small increase in the time to compile
       <application>Python</application>. Run-time results do not appear to show
       any benefit from doing this.

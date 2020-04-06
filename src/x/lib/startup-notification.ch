@@ -26,16 +26,14 @@
 @z
 
 @x
-    <para>The <application>startup-notification</application> package
-    contains <filename class="libraryfile">startup-notification</filename>
-    libraries. These are useful for building a consistent manner to notify
-    the user through the cursor that the application is loading.</para>
+      The <application>startup-notification</application> package
+      contains <filename class="libraryfile">startup-notification</filename>
+      libraries. These are useful for building a consistent manner to notify
+      the user through the cursor that the application is loading.
 @y
-    <para>
-    <application>startup-notification</application> パッケージは <filename
-    class="libraryfile">startup-notification</filename> ライブラリを提供します。
-    アプリケーションがロードしている最中のカーソルを通じて、ユーザーへの通知手法を構築するものとして利用されます。
-    </para>
+      <application>startup-notification</application> パッケージは <filename
+      class="libraryfile">startup-notification</filename> ライブラリを提供します。
+      アプリケーションがロードしている最中のカーソルを通じて、ユーザーへの通知手法を構築するものとして利用されます。
 @z
 
 @x
@@ -45,39 +43,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&startup-notification-download-http;"/></para>
+          Download (HTTP): <ulink url="&startup-notification-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&startup-notification-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&startup-notification-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&startup-notification-download-ftp;"/></para>
+          Download (FTP): <ulink url="&startup-notification-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&startup-notification-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&startup-notification-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &startup-notification-md5sum;</para>
+          Download MD5 sum: &startup-notification-md5sum;
 @y
-        <para>&Download; MD5 sum: &startup-notification-md5sum;</para>
+          &Download; MD5 sum: &startup-notification-md5sum;
 @z
 
 @x
-        <para>Download size: &startup-notification-size;</para>
+          Download size: &startup-notification-size;
 @y
-        <para>&DownloadSize;: &startup-notification-size;</para>
+          &DownloadSize;: &startup-notification-size;
 @z
 
 @x
-        <para>Estimated disk space required: &startup-notification-buildsize;</para>
+          Estimated disk space required: &startup-notification-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &startup-notification-buildsize;</para>
+          &Estimateddiskspacerequired;: &startup-notification-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &startup-notification-time;</para>
+          Estimated build time: &startup-notification-time;
 @y
-        <para>&Estimatedbuildtime;: &startup-notification-time;</para>
+          &Estimatedbuildtime;: &startup-notification-time;
 @z
 
 @x
@@ -113,26 +111,22 @@
 @z
 
 @x
-    <para>Install <application>startup-notification</application> by running the
-    following commands:</para>
+      Install <application>startup-notification</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>startup-notification</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>startup-notification</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -175,13 +169,11 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libstartup-notification-1.{so,a}
-          <para>provides the functions to assist applications in communicating
-          with the cursor system to provide feedback to the user that the
-          application is loading.</para>
+@x libstartup-notification-1.so
+            provides the functions to assist applications in communicating
+            with the cursor system to provide feedback to the user that the
+            application is loading.
 @y
-          <para>
-          アプリケーションがカーソルシステムとのやり取りをするための機能を提供します。
-          これによりカーソルのロード中に、ユーザーへのフィードバックが実現できます。
-          </para>
+            アプリケーションがカーソルシステムとのやり取りをするための機能を提供します。
+            これによりカーソルのロード中に、ユーザーへのフィードバックが実現できます。
 @z

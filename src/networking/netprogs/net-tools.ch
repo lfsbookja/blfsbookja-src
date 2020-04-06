@@ -20,13 +20,10 @@
 @z
 
 @x
-    <para>The <application>Net-tools</application> package is a collection
-    of programs for controlling the network subsystem of the Linux
-    kernel.</para>
+      The <application>Net-tools</application> package is a collection
+      of programs for controlling the network subsystem of the Linux kernel.
 @y
-    <para>
-    <application>Net-tools</application> パッケージは、Linux カーネルのネットワーク関連システムを制御するためのプログラムを提供します。
-    </para>
+      <application>Net-tools</application> パッケージは、Linux カーネルのネットワーク関連システムを制御するためのプログラムを提供します。
 @z
 
 @x
@@ -36,47 +33,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&net-tools-download-http;"/></para>
+          Download (HTTP): <ulink url="&net-tools-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&net-tools-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&net-tools-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&net-tools-download-ftp;"/></para>
+          Download (FTP): <ulink url="&net-tools-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&net-tools-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&net-tools-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &net-tools-md5sum;</para>
+          Download MD5 sum: &net-tools-md5sum;
 @y
-        <para>&Download; MD5 sum: &net-tools-md5sum;</para>
+          &Download; MD5 sum: &net-tools-md5sum;
 @z
 
 @x
-        <para>Download size: &net-tools-size;</para>
+          Download size: &net-tools-size;
 @y
-        <para>&DownloadSize;: &net-tools-size;</para>
+          &DownloadSize;: &net-tools-size;
 @z
 
 @x
-        <para>Estimated disk space required: &net-tools-buildsize;</para>
+          Estimated disk space required: &net-tools-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &net-tools-buildsize;</para>
+          &Estimateddiskspacerequired;: &net-tools-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &net-tools-time;</para>
+          Estimated build time: &net-tools-time;
 @y
-        <para>&Estimatedbuildtime;: &net-tools-time;</para>
+          &Estimatedbuildtime;: &net-tools-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/net-tools"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/net-tools"/></para>
 @z
 
 @x
@@ -86,57 +81,75 @@
 @z
 
 @x
-    <para id="net-tools-automate-example" xreflabel="Net-tools">The
-    instructions below automate the configuration process by piping
-    <command>yes</command> to the <command>make config</command> command. If
-    you wish to run the interactive configuration process (by changing the
-    instruction to just <command>make config</command>), but you are not sure
-    how to answer all the questions, then just accept the defaults. This will
-    be just fine in the majority of cases. What you're asked here is a bunch of
-    questions about which network protocols you've enabled in your kernel. The
-    default answers will enable the tools from this package to work with the
-    most common protocols: TCP, PPP, and several others. You still need to
-    actually enable these protocols in the kernel&mdash;what you do here is
-    merely tell the package to include support for those protocols in its
-    programs, but it's up to the kernel to make the protocols available.</para>
+      The instructions below automate the configuration process by piping
+      <command>yes</command> to the <command>make config</command> command.
+      If you wish to run the interactive configuration process (by changing
+      the instruction to just <command>make config</command>), but you are
+      not sure how to answer all the questions, then just accept the defaults.
+      This will be just fine in the majority of cases. What you're asked here
+      is a bunch of questions about which network protocols you've enabled
+      in your kernel. The default answers will enable the tools from this
+      package to work with the most common protocols: TCP, PPP, and several
+      others. You still need to actually enable these protocols in the
+      kernel&mdash;what you do here is merely tell the package to include
+      support for those protocols in its programs, but it's up to the kernel
+      to make the protocols available.
 @y
-    <para id="net-tools-automate-example" xreflabel="Net-tools">
-    以下にある <command>make config</command> の実行に対しては、<command>yes</command> をパイプにより与えることで configure の処理を自動化しています。
-If
-    you wish to run the interactive configuration process (by changing the
-    instruction to just <command>make config</command>), but you are not sure
-    how to answer all the questions, then just accept the defaults. This will
-    be just fine in the majority of cases. What you're asked here is a bunch of
-    questions about which network protocols you've enabled in your kernel. The
-    default answers will enable the tools from this package to work with the
-    most common protocols: TCP, PPP, and several others. You still need to
-    actually enable these protocols in the kernel&mdash;what you do here is
-    merely tell the package to include support for those protocols in its
-    programs, but it's up to the kernel to make the protocols available.
-    </para>
+      以下にある <command>make config</command> の実行に対しては、<command>yes</command> をパイプにより与えることで configure の処理を自動化しています。
+      If you wish to run the interactive configuration process (by changing
+      the instruction to just <command>make config</command>), but you are
+      not sure how to answer all the questions, then just accept the defaults.
+      This will be just fine in the majority of cases. What you're asked here
+      is a bunch of questions about which network protocols you've enabled
+      in your kernel. The default answers will enable the tools from this
+      package to work with the most common protocols: TCP, PPP, and several
+      others. You still need to actually enable these protocols in the
+      kernel&mdash;what you do here is merely tell the package to include
+      support for those protocols in its programs, but it's up to the kernel
+      to make the protocols available.
 @z
 
 @x
-    <para>Install <application>Net-tools</application> by running the
-    following commands:</para>
+        This package has several unneeded protocols and hardware device
+        specific functions that are obsolete. To only build the minimum needed
+        for your system, skip the <command>yes</command> command and answer
+        each question interactively.  The minimum needed options are 'UNIX
+        protocol family' and 'INET (TCP/IP) protocol family'.
 @y
-    <para>
-    以下のコマンドを実行して <application>Net-tools</application> をビルドします。
-    </para>
+        This package has several unneeded protocols and hardware device
+        specific functions that are obsolete. To only build the minimum needed
+        for your system, skip the <command>yes</command> command and answer
+        each question interactively.  The minimum needed options are 'UNIX
+        protocol family' and 'INET (TCP/IP) protocol family'.
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      The patch below cleans up the installation so that it does not
+      overwrite the <application>ifconfig</application> and
+      <application>hostname</application> programs that were installed in LFS.
 @y
-    <para>&notTestSuite;</para>
+      The patch below cleans up the installation so that it does not
+      overwrite the <application>ifconfig</application> and
+      <application>hostname</application> programs that were installed in LFS.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Install <application>Net-tools</application> by running the
+      following commands:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      以下のコマンドを実行して <application>Net-tools</application> をビルドします。
+@z
+
+@x
+      This package does not come with a test suite.
+@y
+      &notTestSuite;
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -146,15 +159,11 @@ If
 @z
 
 @x
-    <para><command>yes "" | make config</command>: Piping <command>yes</command>
-    to <command>make config</command> skips the interactive configuration and
-    accepts the defaults.</para>
+      <command>sed -i '/#include &lt;netinet\/ip.h&gt;/d' iptunnel.c</command>:
+      This fixes build breakage with linux-4.8 headers.
 @y
-    <para>
-    <command>yes "" | make config</command>: Piping <command>yes</command>
-    to <command>make config</command> skips the interactive configuration and
-    accepts the defaults.
-    </para>
+      <command>sed -i '/#include &lt;netinet\/ip.h&gt;/d' iptunnel.c</command>:
+      This fixes build breakage with linux-4.8 headers.
 @z
 
 @x
@@ -196,119 +205,109 @@ If
 @z
 
 @x arp
-          <para>is used to manipulate the kernel's ARP cache, usually
-          to add or delete an entry, or to dump the entire cache.</para>
+            is used to manipulate the kernel's ARP cache, usually
+            to add or delete an entry, or to dump the entire cache.
 @y
-          <para>
-          is used to manipulate the kernel's ARP cache, usually
-          to add or delete an entry, or to dump the entire cache.
-          </para>
+            is used to manipulate the kernel's ARP cache, usually
+            to add or delete an entry, or to dump the entire cache.
 @z
 
 @x dnsdomainname
-          <para>reports the system's DNS domain name.</para>
+            reports the system's DNS domain name.
 @y
-          <para>
-          システムの DNS ドメイン名を表示します。
-          </para>
+            システムの DNS ドメイン名を表示します。
 @z
 
 @x domainname
-          <para>reports or sets the system's NIS/YP domain name.</para>
+            reports or sets the system's NIS/YP domain name.
 @y
-          <para>
-          システムの NIS/YP ドメイン名を表示または設定します。
-          </para>
+            システムの NIS/YP ドメイン名を表示または設定します。
 @z
 
 @x hostname
-          <para>reports or sets the name of the current host system.</para>
+            reports or sets the name of the current host system.
 @y
-          <para>
-          現在のホストシステム名を表示または設定します。
-          </para>
+            現在のホストシステム名を表示または設定します。
 @z
 
 @x ifconfig
-          <para>is the main utility for configuring network interfaces.</para>
+            is the main utility for configuring network interfaces.
 @y
-          <para>
-          ネットワークインターフェースを設定するための主要なユーティリティー。
-          </para>
+            ネットワークインターフェースを設定するための主要なユーティリティー。
 @z
 
 @x ipmaddr
-          <para>adds, deletes and shows an interface's multicast addresses.</para>
+            adds, deletes and shows an interface's multicast addresses.
 @y
-          <para>adds, deletes and shows an interface's multicast addresses.</para>
+            adds, deletes and shows an interface's multicast addresses.
 @z
 
 @x iptunnel
-          <para>adds, changes, deletes and shows an interface's tunnels.</para>
+            adds, changes, deletes and shows an interface's tunnels.
 @y
-          <para>adds, changes, deletes and shows an interface's tunnels.</para>
+            adds, changes, deletes and shows an interface's tunnels.
 @z
 
 @x mii-tool
-          <para>checks or sets the status of a network interface's Media Independent
-          Interface (MII) unit.</para>
+            checks or sets the status of a network interface's Media
+            Independent Interface (MII) unit.
 @y
-          <para>checks or sets the status of a network interface's Media Independent
-          Interface (MII) unit.</para>
+            checks or sets the status of a network interface's Media
+            Independent Interface (MII) unit.
 @z
 
 @x nameif
-          <para>names network interfaces based on MAC addresses.</para>
+            names network interfaces based on MAC addresses.
 @y
-          <para>names network interfaces based on MAC addresses.</para>
+            names network interfaces based on MAC addresses.
 @z
 
 @x netstat
-          <para>is used to report network connections, routing tables, and interface
-          statistics.</para>
+            is used to report network connections, routing tables, and
+            interface statistics.
 @y
-          <para>is used to report network connections, routing tables, and interface
-          statistics.</para>
+            is used to report network connections, routing tables, and
+            interface statistics.
 @z
 
 @x nisdomainname
-          <para>does the same as <command>domainname</command>.</para>
+            does the same as <command>domainname</command>.
 @y
-          <para>does the same as <command>domainname</command>.</para>
+            does the same as <command>domainname</command>.
 @z
 
 @x plipconfig
-          <para>is used to fine tune the PLIP device parameters, to
-          improve its performance.</para>
+            is used to fine tune the PLIP device parameters, to
+            improve its performance.
 @y
-          <para>is used to fine tune the PLIP device parameters, to
-          improve its performance.</para>
+            is used to fine tune the PLIP device parameters, to
+            improve its performance.
 @z
 
 @x rarp
-          <para>is used to manipulate the kernel's RARP table.</para>
+            is used to manipulate the kernel's RARP table.
 @y
-          <para>is used to manipulate the kernel's RARP table.</para>
+            is used to manipulate the kernel's RARP table.
 @z
 
 @x route
-          <para>is used to manipulate the IP routing table.</para>
+            is used to manipulate the IP routing table.
 @y
-          <para>is used to manipulate the IP routing table.</para>
+            is used to manipulate the IP routing table.
 @z
 
 @x slattach
-          <para>attaches a network interface to a serial line. This allows you to use
-          normal terminal lines for point-to-point links to other computers.</para>
+            attaches a network interface to a serial line. This allows you to
+            use normal terminal lines for point-to-point links to others
+            computers.
 @y
-          <para>attaches a network interface to a serial line. This allows you to use
-          normal terminal lines for point-to-point links to other computers.</para>
+            attaches a network interface to a serial line. This allows you to
+            use normal terminal lines for point-to-point links to others
+            computers.
 @z
 
 @x ypdomainname
-          <para>does the same as <command>domainname</command>.</para>
+            does the same as <command>domainname</command>.
 @y
-          <para>
-          <command>domainname</command> と同様のコマンド。
-          </para>
+            <command>domainname</command> と同様のコマンド。
 @z

@@ -26,16 +26,12 @@
 @z
 
 @x
-    <para>The <application>bridge-utils</application> package contains a utility
-    needed to create and manage bridge devices.  This is useful in setting up
-    networks for a hosted virtual machine (VM).</para>
+      The <application>bridge-utils</application> package contains a utility
+      needed to create and manage bridge devices.  This is useful in setting up
+      networks for a hosted virtual machine (VM).
 @y
-    <para>
-    <application>bridge-utils</application> パッケージは、ブリッジデバイスを生成し管理するためのユーティリティーを提供します。
-    
-This is useful in setting up
-    networks for a hosted virtual machine (VM).
-    </para>
+      <application>bridge-utils</application> パッケージは、ブリッジデバイスを生成し管理するためのユーティリティーを提供します。
+      This is useful in setting up networks for a hosted virtual machine (VM).
 @z
 
 @x
@@ -45,39 +41,39 @@ This is useful in setting up
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&bridge-download-http;"/></para>
+          Download (HTTP): <ulink url="&bridge-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&bridge-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&bridge-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&bridge-download-ftp;"/></para>
+          Download (FTP): <ulink url="&bridge-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&bridge-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&bridge-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &bridge-md5sum;</para>
+          Download MD5 sum: &bridge-md5sum;
 @y
-        <para>&Download; MD5 sum: &bridge-md5sum;</para>
+          &Download; MD5 sum: &bridge-md5sum;
 @z
 
 @x
-        <para>Download size: &bridge-size;</para>
+          Download size: &bridge-size;
 @y
-        <para>&DownloadSize;: &bridge-size;</para>
+          &DownloadSize;: &bridge-size;
 @z
 
 @x
-        <para>Estimated disk space required: &bridge-buildsize;</para>
+          Estimated disk space required: &bridge-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &bridge-buildsize;</para>
+          &Estimateddiskspacerequired;: &bridge-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &bridge-time;</para>
+          Estimated build time: &bridge-time;
 @y
-        <para>&Estimatedbuildtime;: &bridge-time;</para>
+          &Estimatedbuildtime;: &bridge-time;
 @z
 
 @x
@@ -111,21 +107,11 @@ This is useful in setting up
 @z
 
 @x
-    <para>Enable the following options in the kernel configuration
-    and recompile the kernel if necessary:</para>
+      Enable the following options in the kernel configuration
+      and recompile the kernel if necessary:
 @y
-    <para>Enable the following options in the kernel configuration
-    and recompile the kernel if necessary:</para>
-@z
-
-@x
-<screen><literal>[*] Networking support ---&gt;            [CONFIG_NET]
-      Networking options ---&gt;
-        &lt;*/M&gt; 802.1d Ethernet Bridging [CONFIG_BRIDGE]</literal></screen>
-@y
-<screen><literal>[*] Networking support ---&gt;            [CONFIG_NET]
-      Networking options ---&gt;
-        &lt;*/M&gt; 802.1d Ethernet Bridging [CONFIG_BRIDGE]</literal></screen>
+      Enable the following options in the kernel configuration
+      and recompile the kernel if necessary:
 @z
 
 @x
@@ -141,31 +127,31 @@ This is useful in setting up
 @z
 
 @x
-    <para>Install <application>bridge-utils</application> by running the following
-    commands:</para>
+      Install <application>bridge-utils</application> by running the following
+      commands:
 @y
-    <para>Install <application>bridge-utils</application> by running the following
-    commands:</para>
+      Install <application>bridge-utils</application> by running the following
+      commands:
 @z
 
 @x
-    <para>Testing the results requires running the six shell scripts in
-    the <filename class='directory'>tools/</filename> directory.
-    Two of the tests require two ethernet ports.  Some tests
-    will not preserve the current network configuration.  See
-    <filename>tests/README</filename> for details.</para>
+      Testing the results requires running the six shell scripts in
+      the <filename class='directory'>tools/</filename> directory.
+      Two of the tests require two ethernet ports.  Some tests
+      will not preserve the current network configuration.  See
+      <filename>tests/README</filename> for details.
 @y
-    <para>Testing the results requires running the six shell scripts in
-    the <filename class='directory'>tools/</filename> directory.
-    Two of the tests require two ethernet ports.  Some tests
-    will not preserve the current network configuration.  See
-    <filename>tests/README</filename> for details.</para>
+      Testing the results requires running the six shell scripts in
+      the <filename class='directory'>tools/</filename> directory.
+      Two of the tests require two ethernet ports.  Some tests
+      will not preserve the current network configuration.  See
+      <filename>tests/README</filename> for details.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -181,79 +167,79 @@ This is useful in setting up
 @z
 
 @x
-      <para>To automate bridge creation and configuration, 
-      install the <filename>/lib/services/etc/bridge</filename>
-      service script included in the <xref linkend="bootscripts"/>
-      package.</para>
+        To automate bridge creation and configuration,
+        install the <filename>/lib/services/etc/bridge</filename>
+        service script included in the <xref linkend="bootscripts"/>
+        package.
 @y
-      <para>To automate bridge creation and configuration, 
-      install the <filename>/lib/services/etc/bridge</filename>
-      service script included in the <xref linkend="bootscripts"/>
-      package.</para>
+        To automate bridge creation and configuration,
+        install the <filename>/lib/services/etc/bridge</filename>
+        service script included in the <xref linkend="bootscripts"/>
+        package.
 @z
 
 @x
-      <note><para>The <filename>bridge</filename> script depends
-      on the commands <command>/sbin/ifup</command> and
-      <command>/sbin/ifdown</command> and the service script
-      <emphasis>ipv4-static</emphasis> from the <emphasis>LFS</emphasis>
-      bootscripts dated January 27, 2012 or later.</para></note>
+          The <filename>bridge</filename> script depends
+          on the commands <command>/sbin/ifup</command> and
+          <command>/sbin/ifdown</command> and the service script
+          <emphasis>ipv4-static</emphasis> from the <emphasis>LFS</emphasis>
+          bootscripts dated January 27, 2012 or later.
 @y
-      <note><para>The <filename>bridge</filename> script depends
-      on the commands <command>/sbin/ifup</command> and
-      <command>/sbin/ifdown</command> and the service script
-      <emphasis>ipv4-static</emphasis> from the <emphasis>LFS</emphasis>
-      bootscripts dated January 27, 2012 or later.</para></note>
+          The <filename>bridge</filename> script depends
+          on the commands <command>/sbin/ifup</command> and
+          <command>/sbin/ifdown</command> and the service script
+          <emphasis>ipv4-static</emphasis> from the <emphasis>LFS</emphasis>
+          bootscripts dated January 27, 2012 or later.
 @z
 
 @x
-      <para>The following configuration file will create a bridge device at
-      boot time and attach the eth0 device to it.  If more than one device is
-      desired, use a space separated list of INTERFACE_COMPONENTS.  This
-      configuration is useful when planning to run a virtual machine such as
-      kvm/qemu.</para>
+        The following configuration file will create a bridge device at
+        boot time and attach the eth0 device to it.  If more than one device is
+        desired, use a space separated list of INTERFACE_COMPONENTS.  This
+        configuration is useful when planning to run a virtual machine such as
+        kvm/qemu.
 @y
-      <para>The following configuration file will create a bridge device at
-      boot time and attach the eth0 device to it.  If more than one device is
-      desired, use a space separated list of INTERFACE_COMPONENTS.  This
-      configuration is useful when planning to run a virtual machine such as
-      kvm/qemu.</para>
+        The following configuration file will create a bridge device at
+        boot time and attach the eth0 device to it.  If more than one device is
+        desired, use a space separated list of INTERFACE_COMPONENTS.  This
+        configuration is useful when planning to run a virtual machine such as
+        kvm/qemu.
 @z
 
 @x
-      <para>Other SERVICE combinations are possible, for example, 
-      SERVICES="bridge dhcp".  In that case, the address parameters
-      are not needed, but do not interfere if present. The 
-      bridge service may also be used alone, but will require
-      additional subsequent configuration.</para>
+        Other SERVICE combinations are possible, for example,
+        SERVICES="bridge dhcp".  In that case, the address parameters
+        are not needed, but do not interfere if present. The
+        bridge service may also be used alone, but will require
+        additional subsequent configuration.
 @y
-      <para>Other SERVICE combinations are possible, for example, 
-      SERVICES="bridge dhcp".  In that case, the address parameters
-      are not needed, but do not interfere if present. The 
-      bridge service may also be used alone, but will require
-      additional subsequent configuration.</para>
+        Other SERVICE combinations are possible, for example,
+        SERVICES="bridge dhcp".  In that case, the address parameters
+        are not needed, but do not interfere if present. The
+        bridge service may also be used alone, but will require
+        additional subsequent configuration.
 @z
 
 @x
-      <caution><para>Do not run a parallel configuration for a device in the
-      INTERFACE_COMPONENTS list.  For instance, in the example below, do not
-      configure <filename>/etc/sysconfig/ifconfig.eth0</filename> to run at
-      boot time.  The command <command>ifdown br0</command> followed by
-      command <command>ifup eth0</command> will work, but don't try to have
-      both up at the same time.</para></caution>
+          Do not run a parallel configuration for a device in the
+          INTERFACE_COMPONENTS list.  For instance, in the example below, do not
+          configure <filename>/etc/sysconfig/ifconfig.eth0</filename> to run at
+          boot time.  The command <command>ifdown br0</command> followed by
+          command <command>ifup eth0</command> will work, but don't try to have
+          both up at the same time.
 @y
-      <caution><para>Do not run a parallel configuration for a device in the
-      INTERFACE_COMPONENTS list.  For instance, in the example below, do not
-      configure <filename>/etc/sysconfig/ifconfig.eth0</filename> to run at
-      boot time.  The command <command>ifdown br0</command> followed by
-      command <command>ifup eth0</command> will work, but don't try to have
-      both up at the same time.</para></caution>
+          Do not run a parallel configuration for a device in the
+          INTERFACE_COMPONENTS list.  For instance, in the example below, do not
+          configure <filename>/etc/sysconfig/ifconfig.eth0</filename> to run at
+          boot time.  The command <command>ifdown br0</command> followed by
+          command <command>ifup eth0</command> will work, but don't try to have
+          both up at the same time.
 @z
 
 @x
-      <para>All addresses should be changed to meet your circumstance.</para>
+        All addresses should be changed to meet your circumstance.
 @y
-      <para>All addresses should be changed to meet your circumstance.</para>
+        All addresses should be changed to meet your circumstance.
 @z
 
 @x
@@ -289,9 +275,9 @@ This is useful in setting up
 @z
 
 @x brctl
-          <para>is a program  used to set up, maintain, and inspect the
-          ethernet bridge configuration in the linux kernel.  </para>
+            is a program  used to set up, maintain, and inspect the
+            ethernet bridge configuration in the linux kernel.
 @y
-          <para>is a program  used to set up, maintain, and inspect the
-          ethernet bridge configuration in the linux kernel.  </para>
+            is a program  used to set up, maintain, and inspect the
+            ethernet bridge configuration in the linux kernel.
 @z

@@ -20,16 +20,14 @@
 @z
 
 @x
-    <para>The <application>xmlto</application> package is a front-end to a XSL
-    toolchain. It chooses an appropriate stylesheet for the conversion you want
-    and applies it using an external XSLT processor. It also performs any
-    necessary post-processing.</para>
+      The <application>xmlto</application> package is a front-end to a XSL
+      toolchain. It chooses an appropriate stylesheet for the conversion you
+      want and applies it using an external XSLT processor. It also performs
+      any necessary post-processing.
 @y
-    <para>
-    <application>xmlto</application> パッケージは XSL ツールチェーンのフロントエンドです。
-    変換したいスタイルシートを適切に選び出し、外部の XSL-T プロセッサを利用して実行します。
-    その後に必要となる後処理も行います。
-    </para>
+      <application>xmlto</application> パッケージは XSL ツールチェーンのフロントエンドです。
+      変換したいスタイルシートを適切に選び出し、外部の XSL-T プロセッサーを利用して実行します。
+      その後に必要となる後処理も行います。
 @z
 
 @x
@@ -39,39 +37,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xmlto-download-http;"/></para>
+          Download (HTTP): <ulink url="&xmlto-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xmlto-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xmlto-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xmlto-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xmlto-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xmlto-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xmlto-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xmlto-md5sum;</para>
+          Download MD5 sum: &xmlto-md5sum;
 @y
-        <para>&Download; MD5 sum: &xmlto-md5sum;</para>
+          &Download; MD5 sum: &xmlto-md5sum;
 @z
 
 @x
-        <para>Download size: &xmlto-size;</para>
+          Download size: &xmlto-size;
 @y
-        <para>&DownloadSize;: &xmlto-size;</para>
+          &DownloadSize;: &xmlto-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xmlto-buildsize;</para>
+          Estimated disk space required: &xmlto-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xmlto-buildsize;</para>
+          &Estimateddiskspacerequired;: &xmlto-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xmlto-time;</para>
+          Estimated build time: &xmlto-time;
 @y
-        <para>&Estimatedbuildtime;: &xmlto-time;</para>
+          &Estimatedbuildtime;: &xmlto-time;
 @z
 
 @x
@@ -98,10 +96,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/xmlto"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/xmlto"/></para>
 @z
 
 @x
@@ -111,28 +107,22 @@
 @z
 
 @x
-    <para>Install <application>xmlto</application> by running the following
-    commands:</para>
+      Install <application>xmlto</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>xmlto</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>xmlto</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をビルドする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をビルドする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -168,18 +158,13 @@
 @z
 
 @x xmlif
-          <para>is a conditional processing instructions for XML.</para>
+            is a conditional processing instructions for XML.
 @y
-<para>
-
-is a conditional processing instructions for XML.
-</para>
+            is a conditional processing instructions for XML.
 @z
 
 @x xmlto
-          <para>applies an XSL stylesheet to an XML document.</para>
+            applies an XSL stylesheet to an XML document.
 @y
-          <para>
-          applies an XSL stylesheet to an XML document.
-          </para>
+            applies an XSL stylesheet to an XML document.
 @z

@@ -161,9 +161,11 @@
           gcalccmd and gnome-calculator
         </seg>
         <seg>
-          None
+          libgcalc-2.so and libgci-1.so
         </seg>
         <seg>
+          /usr/include/gcalc-2,
+          /usr/include/gci-2, and
           /usr/share/help/*/gnome-calculator
         </seg>
 @y
@@ -171,9 +173,11 @@
           gcalccmd, gnome-calculator
         </seg>
         <seg>
-          &None;
+          libgcalc-2.so, libgci-1.so
         </seg>
         <seg>
+          /usr/include/gcalc-2,
+          /usr/include/gci-2,
           /usr/share/help/*/gnome-calculator
         </seg>
 @z

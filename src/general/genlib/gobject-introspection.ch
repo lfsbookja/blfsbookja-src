@@ -180,7 +180,7 @@
         </seg>
         <seg>
           libgirepository-1.0.so and
-          _giscanner.cpython-37m-x86_64-linux-gnu.so
+          _giscanner.&python3-lib-suffix;.so
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,
@@ -196,7 +196,7 @@
         </seg>
         <seg>
           libgirepository-1.0.so,
-          _giscanner.cpython-37m-x86_64-linux-gnu.so
+          _giscanner.&python3-lib-suffix;.so
         </seg>
         <seg>
           /usr/include/gobject-introspection-1.0,

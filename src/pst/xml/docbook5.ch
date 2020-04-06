@@ -46,49 +46,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&docbook5-download-http;"/></para>
+          Download (HTTP): <ulink url="&docbook5-download-http;"/>
 @y
-        <para>Download (HTTP): <ulink url="&docbook5-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&docbook5-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&docbook5-download-ftp;"/></para>
+          Download (FTP): <ulink url="&docbook5-download-ftp;"/>
 @y
-        <para>Download (FTP): <ulink url="&docbook5-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&docbook5-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &docbook5-md5sum;</para>
+          Download MD5 sum: &docbook5-md5sum;
 @y
-        <para>Download MD5 sum: &docbook5-md5sum;</para>
+          &Download; MD5 sum: &docbook5-md5sum;
 @z
 
 @x
-        <para>Download size: &docbook5-size;</para>
+          Download size: &docbook5-size;
 @y
-        <para>Download size: &docbook5-size;</para>
+          &DownloadSize;: &docbook5-size;
 @z
 
 @x
-        <para>Estimated disk space required: &docbook5-buildsize;</para>
+          Estimated disk space required: &docbook5-buildsize;
 @y
-        <para>Estimated disk space required: &docbook5-buildsize;</para>
+          &Estimateddiskspacerequired;: &docbook5-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &docbook5-time;</para>
+          Estimated build time: &docbook5-time;
 @y
-        <para>Estimated build time: &docbook5-time;</para>
+          &Estimatedbuildtime;: &docbook5-time;
 @z
 
 @x
     <bridgehead renderas="sect3">DocBook XML DTD and Schemas 5.0 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">DocBook XML DTD and Schemas 5.0 Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;DocBook XML DTD と Schemas 5.0&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -102,7 +102,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libxml2"/>,
-      <xref linkend="sgml-common"/>, and
+      <xref linkend="sgml-common"/>,
       <xref linkend="unzip"/>
     </para>
 @z
@@ -174,17 +174,17 @@
 @z
 
 @x
-      <para><filename>/etc/xml/catalog</filename>,
-      <filename>/etc/xml/docbook-5.0</filename></para>
+        <filename>/etc/xml/catalog</filename> and
+        <filename>/etc/xml/docbook-5.0</filename>
 @y
-      <para><filename>/etc/xml/catalog</filename>,
-      <filename>/etc/xml/docbook-5.0</filename></para>
+        <filename>/etc/xml/catalog</filename>,
+        <filename>/etc/xml/docbook-5.0</filename>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -206,7 +206,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x
@@ -230,51 +230,25 @@
 @z
 
 @x
-      <varlistentry id="Schema5-files">
         <term><filename>RNC, RNG, and SCH files</filename></term>
-        <listitem>
-          <para>
-            contain the Docbook 5.0 RelaxNG, RelaxNG Compact, and Schematron
-            schema definitions.
-          </para>
-          <indexterm zone="docbook5 Schema5-files">
-            <primary sortas="g-XML-Schema-files">XML Schema files</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="Schema5-files">
         <term><filename>RNC, RNG, and SCH files</filename></term>
-        <listitem>
-          <para>
+@z
+@x
             contain the Docbook 5.0 RelaxNG, RelaxNG Compact, and Schematron
             schema definitions.
-          </para>
-          <indexterm zone="docbook5 Schema5-files">
-            <primary sortas="g-XML-Schema-files">XML Schema files</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
+@y
+            contain the Docbook 5.0 RelaxNG, RelaxNG Compact, and Schematron
+            schema definitions.
 @z
 
 @x
-      <varlistentry id="XSD5-files">
         <term><filename>XSD files</filename></term>
-        <listitem>
-          <para>files contain DocBook-5.0 Schematron rules.</para>
-          <indexterm zone="docbook5 XSD5-files">
-            <primary sortas="g-XML-XSD5-files">XML Schematron rules</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="XSD5-files">
         <term><filename>XSD files</filename></term>
-        <listitem>
-          <para>files contain DocBook-5.0 Schematron rules.</para>
-          <indexterm zone="docbook5 XSD5-files">
-            <primary sortas="g-XML-XSD5-files">XML Schematron rules</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
+@z
+@x
+            files contain DocBook-5.0 Schematron rules.
+@y
+            files contain DocBook-5.0 Schematron rules.
 @z

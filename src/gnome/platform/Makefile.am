@@ -48,9 +48,7 @@ CHANGE_FILES = \
 	libwnck.ch                   \
 	mutter.ch                    \
 	nautilus.ch                  \
-	notification-daemon.ch       \
 	platform.ch                  \
-	polkit-gnome.ch              \
 	rest.ch                      \
 	totem-pl-parser.ch           \
 	tracker.ch                   \

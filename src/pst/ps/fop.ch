@@ -43,39 +43,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&fop-download-http;"/></para>
+          Download (HTTP): <ulink url="&fop-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&fop-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&fop-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&fop-download-ftp;"/></para>
+          Download (FTP): <ulink url="&fop-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&fop-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&fop-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &fop-md5sum;</para>
+          Download MD5 sum: &fop-md5sum;
 @y
-        <para>&Download; MD5 sum: &fop-md5sum;</para>
+          &Download; MD5 sum: &fop-md5sum;
 @z
 
 @x
-        <para>Download size: &fop-size;</para>
+          Download size: &fop-size;
 @y
-        <para>&DownloadSize;: &fop-size;</para>
+          &DownloadSize;: &fop-size;
 @z
 
 @x
-        <para>Estimated disk space required: &fop-buildsize;</para>
+          Estimated disk space required: &fop-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &fop-buildsize;</para>
+          &Estimateddiskspacerequired;: &fop-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &fop-time;</para>
+          Estimated build time: &fop-time;
 @y
-        <para>&Estimatedbuildtime;: &fop-time;</para>
+          &Estimatedbuildtime;: &fop-time;
 @z
 
 @x
@@ -90,9 +90,9 @@
       <title>&Recommended;</title>
 @z
 @x
-        <para>Objects for Formatting Objects (OFFO) hyphenation patterns:
+          Objects for Formatting Objects (OFFO) hyphenation patterns:
 @y
-        <para>OFFO (Objects for Formatting Objects) ハイフネーションパターン:
+          OFFO (Objects for Formatting Objects) ハイフネーションパターン:
 @z
 
 @x
@@ -460,20 +460,18 @@
 @z
 
 @x fop
-          <para>is a wrapper script to the <command>java</command> command
+            is a wrapper script to the <command>java</command> command
           which sets up the <application>fop</application>
-          environment and passes the required parameters.</para>
+          environment and passes the required parameters.
 @y
-          <para>is a wrapper script to the <command>java</command> command
+            is a wrapper script to the <command>java</command> command
           which sets up the <application>fop</application>
-          environment and passes the required parameters.</para>
+          environment and passes the required parameters.
 @z
 
 @x fop.jar
-          <para>contains all the <application>fop</application>
-          <application>Java</application> classes.</para>
+            contains all the <application>fop</application>
+          <application>Java</application> classes.
 @y
-          <para>
           <application>fop</application> のすべての <application>Java</application> クラスを提供します。
-          </para>
 @z

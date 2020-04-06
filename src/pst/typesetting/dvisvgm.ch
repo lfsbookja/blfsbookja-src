@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY dvisvgm-buildsize     "322 MB (add 978 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "327 MB (48 MB installed, add 980 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.7 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
 @y
-  <!ENTITY dvisvgm-buildsize     "322 MB (add 978 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "327 MB (48 MB installed, add 980 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.7 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
 @z
 
 @x
@@ -108,8 +108,8 @@
       <xref linkend="xmlto"/> and
       <xref linkend="libxslt"/> (see command explanations),
       <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink> (with the above) and
-      <!-- version checked for dvisvgm-2.8, 0.7.2 is mentioned in the
-           news and is the latest version as of 2019-10-31
+      <!-- version checked for dvisvgm-2.9, 0.7.3 is mentioned in the
+           news and is the latest version at 2020-03-21
            maybe change to 'a recent version' if that releases faster -->
       <ulink url="https://github.com/Cyan4973/xxHash/releases/latest">xxHash</ulink>
       (the current version is included in the tarball)
@@ -121,8 +121,8 @@
       <xref linkend="xmlto"/> and
       <xref linkend="libxslt"/> (see command explanations),
       <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink> (with the above) and
-      <!-- version checked for dvisvgm-2.8, 0.7.2 is mentioned in the
-           news and is the latest version as of 2019-10-31
+      <!-- version checked for dvisvgm-2.9, 0.7.3 is mentioned in the
+           news and is the latest version at 2020-03-21
            maybe change to 'a recent version' if that releases faster -->
       <ulink url="https://github.com/Cyan4973/xxHash/releases/latest">xxHash</ulink>
       (the current version is included in the tarball)
@@ -188,22 +188,6 @@
 @z
 
 @x
-      <command>--mandir=/opt/texlive/&texlive-year;/texmf-dist/doc/man</command>:
-      Unusually, the shipped man page will only be installed by <command>make
-      install</command> if all of <application>asciidoc</application>,
-      <application>xmlto</application> and <application>libxslt</application>
-      have been installed. This switch ensures it will overwrite the (old) page
-      installed by the texmf tarball if it installs.
-@y
-      <command>--mandir=/opt/texlive/&texlive-year;/texmf-dist/doc/man</command>:
-      Unusually, the shipped man page will only be installed by <command>make
-      install</command> if all of <application>asciidoc</application>,
-      <application>xmlto</application> and <application>libxslt</application>
-      have been installed. This switch ensures it will overwrite the (old) page
-      installed by the texmf tarball if it installs.
-@z
-
-@x
       <command>--with-kpathsea=/opt/texlive/&texlive-year;</command>: This allows
       the build system to find the headers for <filename
       class="libraryfile">kpathsea</filename>
@@ -211,18 +195,6 @@
       <command>--with-kpathsea=/opt/texlive/&texlive-year;</command>: This allows
       the build system to find the headers for <filename
       class="libraryfile">kpathsea</filename>
-@z
-
-@x
-      <command>install -v -m644 doc/dvisvgm.1 ...</command>: This ensures that
-      the man page is installed in the correct place even if the optional
-      dependencies are not present, and overwrites the version installed by
-      <command>make install</command> if they are present.
-@y
-      <command>install -v -m644 doc/dvisvgm.1 ...</command>: This ensures that
-      the man page is installed in the correct place even if the optional
-      dependencies are not present, and overwrites the version installed by
-      <command>make install</command> if they are present.
 @z
 
 @x

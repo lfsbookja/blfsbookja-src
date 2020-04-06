@@ -46,39 +46,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&imagemagick-download-http;"/></para>
+          Download (HTTP): <ulink url="&imagemagick-download-http;"/></para>
 @y
-        <para>&Download; (HTTP): <ulink url="&imagemagick-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&imagemagick-download-http;"/></para>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&imagemagick-download-ftp;"/></para>
+          Download (FTP): <ulink url="&imagemagick-download-ftp;"/></para>
 @y
-        <para>&Download; (FTP): <ulink url="&imagemagick-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&imagemagick-download-ftp;"/></para>
 @z
 
 @x
-        <para>Download MD5 sum: &imagemagick-md5sum;</para>
+          Download MD5 sum: &imagemagick-md5sum;</para>
 @y
-        <para>&Download; MD5 sum: &imagemagick-md5sum;</para>
+          &Download; MD5 sum: &imagemagick-md5sum;</para>
 @z
 
 @x
-        <para>Download size: &imagemagick-size;</para>
+          Download size: &imagemagick-size;</para>
 @y
-        <para>&DownloadSize;: &imagemagick-size;</para>
+          &DownloadSize;: &imagemagick-size;</para>
 @z
 
 @x
-        <para>Estimated disk space required: &imagemagick-buildsize;</para>
+          Estimated disk space required: &imagemagick-buildsize;</para>
 @y
-        <para>&Estimateddiskspacerequired;: &imagemagick-buildsize;</para>
+          &Estimateddiskspacerequired;: &imagemagick-buildsize;</para>
 @z
 
 @x
-        <para>Estimated build time: &imagemagick-time;</para>
+          Estimated build time: &imagemagick-time;</para>
 @y
-        <para>&Estimatedbuildtime;: &imagemagick-time;</para>
+          &Estimatedbuildtime;: &imagemagick-time;</para>
 @z
 
 @x
@@ -551,84 +551,123 @@
 @z
 
 @x animate
-        <para>animates a sequence of images.</para>
+          animates a sequence of images.
 @y
-        <para>animates a sequence of images.</para>
+          animates a sequence of images.
 @z
 
 @x compare
-        <para>compares an image to a reconstructed image.</para>
+          compares an image to a reconstructed image.
 @y
-        <para>compares an image to a reconstructed image.</para>
+          compares an image to a reconstructed image.
 @z
 
 @x composite
-        <para>composites various images into the given base image.</para>
+          composites various images into the given base image.
 @y
-        <para>composites various images into the given base image.</para>
+          composites various images into the given base image.
 @z
 
 @x conjure
-        <para>processes a MSL script to create an image.</para>
+          processes a MSL script to create an image.
 @y
-        <para>processes a MSL script to create an image.</para>
+          processes a MSL script to create an image.
 @z
 
 @x convert
-        <para>converts image(s) from one format to another.</para>
+          converts image(s) from one format to another.
 @y
-        <para>converts image(s) from one format to another.</para>
+          converts image(s) from one format to another.
 @z
 
 @x display
-        <para>displays an image.</para>
+          displays an image.
 @y
-        <para>
-        イメージを表示します。
-        </para>
+          イメージを表示します。
 @z
 
 @x identify
-        <para>describes the format and characteristics of an image file.</para>
+          describes the format and characteristics of an image file.
 @y
-        <para>describes the format and characteristics of an image file.</para>
+          describes the format and characteristics of an image file.
 @z
 
 @x import
-        <para>captures an X window.</para>
+          captures an X window.
 @y
-        <para>
-        X ウィンドウをキャプチャーします。
-        </para>
+          X ウィンドウをキャプチャーします。
 @z
 
-@x
-        <para>show information about the installed versions of the
-        <application>ImageMagick</application> libraries.</para>
+@x magick
+          convert between image formats as well as resize an image,
+          blur, crop, despeckle, dither, draw on, flip, join, re-sample
+          and much more.
 @y
-        <para>show information about the installed versions of the
-        <application>ImageMagick</application> libraries.</para>
+          convert between image formats as well as resize an image,
+          blur, crop, despeckle, dither, draw on, flip, join, re-sample
+          and much more.
+@z
+
+@x Magick{++,Core,Wand}-config
+          show information about the installed versions of the
+          <application>ImageMagick</application> libraries.
+@y
+          show information about the installed versions of the
+          <application>ImageMagick</application> libraries.
 @z
 
 @x mogrify
-        <para>transforms an image.</para>
+          transforms an image.
 @y
-        <para>
-        イメージを変形します。
-        </para>
+          イメージを変形します。
 @z
 
 @x montage
-        <para>composites various images into a new image.</para>
+          composites various images into a new image.
 @y
-        <para>composites various images into a new image.</para>
+          composites various images into a new image.
 @z
 
 @x stream
-        <para>streams one or more pixel components of an image or
-         portion of the image to your choice of storage formats.</para>
+          streams one or more pixel components of an image or
+          portion of the image to your choice of storage formats.
 @y
-        <para>streams one or more pixel components of an image or
-         portion of the image to your choice of storage formats.</para>
+          streams one or more pixel components of an image or
+          portion of the image to your choice of storage formats.
 @z
 
+@x Image::Magick
+          allows the reading, manipulation and writing of a large number of
+          image file formats using the <application>ImageMagick</application>
+          library. Run <command>make</command> in the
+          <filename class='directory'>PerlMagick/demo</filename> directory of
+          the package source tree after the package is installed to see a nice
+          demo of the module's capabilities.
+@y
+          allows the reading, manipulation and writing of a large number of
+          image file formats using the <application>ImageMagick</application>
+          library. Run <command>make</command> in the
+          <filename class='directory'>PerlMagick/demo</filename> directory of
+          the package source tree after the package is installed to see a nice
+          demo of the module's capabilities.
+@z
+
+@x libMagickCore-7.Q16HDRI.so
+          provides the C API for ImageMagick.
+@y
+          provides the C API for ImageMagick.
+@z
+
+@x libMagickWand-7.Q16HDRI.so
+          is the recommended C API for ImageMagick. Unlike the MagickCore API it
+          uses  only a few opaque types.
+@y
+          is the recommended C API for ImageMagick. Unlike the MagickCore API it
+          uses  only a few opaque types.
+@z
+
+@x libMagick++-7.Q16HDRI.so
+          provides the C++ API for ImageMagick.
+@y
+          provides the C++ API for ImageMagick.
+@z

@@ -194,18 +194,20 @@
           pam_gnome_keyring.so (PAM module)
         </seg>
         <seg>
-          /usr/lib/gnome-keyring
+          /usr/lib/gnome-keyring and
+          /usr/share/xdg-desktop-portal
         </seg>
 @y
         <seg>
           gnome-keyring (シンボリックリンク), gnome-keyring-3, gnome-keyring-daemon
         </seg>
         <seg>
-          gnome-keyring-pkcs11.so (PKCS#11 module) and 
-          pam_gnome_keyring.so (PAM module)
+          gnome-keyring-pkcs11.so (PKCS#11 &Module;),
+          pam_gnome_keyring.so (PAM &Module;)
         </seg>
         <seg>
-          /usr/lib/gnome-keyring
+          /usr/lib/gnome-keyring,
+          /usr/share/xdg-desktop-portal
         </seg>
 @z
 

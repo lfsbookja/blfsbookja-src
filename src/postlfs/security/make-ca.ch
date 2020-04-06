@@ -74,33 +74,33 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&make-ca-download;"/></para>
+          Download (HTTP): <ulink url="&make-ca-download;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&make-ca-download;"/></para>
+          &Download; (HTTP): <ulink url="&make-ca-download;"/>
 @z
 
 @x
-        <para>Download size: &make-ca-size;</para>
+          Download size: &make-ca-size;
 @y
-        <para>Download size: &make-ca-size;</para>
+          &DownloadSize;: &make-ca-size;
 @z
 
 @x
-        <para>Download MD5 Sum: &make-ca-md5sum;</para>
+          Download MD5 Sum: &make-ca-md5sum;
 @y
-        <para>Download MD5 Sum: &make-ca-md5sum;</para>
+          &Download; MD5 Sum: &make-ca-md5sum;
 @z
 
 @x
-        <para>Estimated disk space required: &make-ca-buildsize;</para>
+          Estimated disk space required: &make-ca-buildsize;
 @y
-        <para>Estimated disk space required: &make-ca-buildsize;</para>
+          Estimated disk space required: &make-ca-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &make-ca-time;</para>
+          Estimated build time: &make-ca-time;
 @y
-        <para>Estimated build time: &make-ca-time;</para>
+          Estimated build time: &make-ca-time;
 @z
 
 @x
@@ -111,14 +111,16 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="p11-kit"/> (required at runtime to
-    generate certificate stores from trust anchors)</para>
-    <!-- /usr/bin/trust is needed to extract the certs to /etc/ssl/certs -->
+    <para role="required">
+      <xref linkend="p11-kit"/> (required at runtime to
+      generate certificate stores from trust anchors)
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="p11-kit"/> (required at runtime to
-    generate certificate stores from trust anchors)</para>
-    <!-- /usr/bin/trust is needed to extract the certs to /etc/ssl/certs -->
+    <para role="required">
+      <xref linkend="p11-kit"/> (required at runtime to
+      generate certificate stores from trust anchors)
+    </para>
 @z
 
 @x
@@ -146,94 +148,94 @@
 @z
 
 @x
-    <para>The <application>make-ca</application> script will download and
-    process the certificates included in the <filename>certdata.txt</filename>
-    file for use as trust anchors for the <xref linkend="p11-kit"/> trust
-    module. Additionally, it will generate system certificate stores used by
-    BLFS applications (if the recommended and optional applications are present
-    on the system). Any local certificates stored in
-    <filename>/etc/ssl/local</filename> will be imported to both the trust
-    anchors and the generated certificate stores (overriding Mozilla's
-    trust). Additionally, any modified trust values will be copied from the
-    trust anchors to <filename>/etc/ssl/local</filename> prior to any updates,
-    preserving custom trust values that differ from Mozilla when using the
-    <command>trust</command> utility from <application>p11-kit</application>
-    to operate on the trust store.</para>
+      The <application>make-ca</application> script will download and process
+      the certificates included in the <filename>certdata.txt</filename> file
+      for use as trust anchors for the <xref linkend="p11-kit"/> trust module.
+      Additionally, it will generate system certificate stores used by BLFS
+      applications (if the recommended and optional applications are present
+      on the system). Any local certificates stored in
+      <filename>/etc/ssl/local</filename> will be imported to both the trust
+      anchors and the generated certificate stores (overriding Mozilla's
+      trust). Additionally, any modified trust values will be copied from the
+      trust anchors to <filename>/etc/ssl/local</filename> prior to any
+      updates, preserving custom trust values that differ from Mozilla when
+      using the <command>trust</command> utility from
+      <application>p11-kit</application> to operate on the trust store.
 @y
-    <para>The <application>make-ca</application> script will download and
-    process the certificates included in the <filename>certdata.txt</filename>
-    file for use as trust anchors for the <xref linkend="p11-kit"/> trust
-    module. Additionally, it will generate system certificate stores used by
-    BLFS applications (if the recommended and optional applications are present
-    on the system). Any local certificates stored in
-    <filename>/etc/ssl/local</filename> will be imported to both the trust
-    anchors and the generated certificate stores (overriding Mozilla's
-    trust). Additionally, any modified trust values will be copied from the
-    trust anchors to <filename>/etc/ssl/local</filename> prior to any updates,
-    preserving custom trust values that differ from Mozilla when using the
-    <command>trust</command> utility from <application>p11-kit</application>
-    to operate on the trust store.</para>
+      The <application>make-ca</application> script will download and process
+      the certificates included in the <filename>certdata.txt</filename> file
+      for use as trust anchors for the <xref linkend="p11-kit"/> trust module.
+      Additionally, it will generate system certificate stores used by BLFS
+      applications (if the recommended and optional applications are present
+      on the system). Any local certificates stored in
+      <filename>/etc/ssl/local</filename> will be imported to both the trust
+      anchors and the generated certificate stores (overriding Mozilla's
+      trust). Additionally, any modified trust values will be copied from the
+      trust anchors to <filename>/etc/ssl/local</filename> prior to any
+      updates, preserving custom trust values that differ from Mozilla when
+      using the <command>trust</command> utility from
+      <application>p11-kit</application> to operate on the trust store.
 @z
 
 @x
-    <para>To install the various certificate stores, first install the
-    <application>make-ca</application> script into the correct location.
-    As the <systemitem class="username">root</systemitem> user:</para>
+      To install the various certificate stores, first install the
+      <application>make-ca</application> script into the correct location.
+      As the <systemitem class="username">root</systemitem> user:
 @y
-    <para>To install the various certificate stores, first install the
-    <application>make-ca</application> script into the correct location.
-    As the <systemitem class="username">root</systemitem> user:</para>
+      To install the various certificate stores, first install the
+      <application>make-ca</application> script into the correct location.
+      As the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-   <para>As the <systemitem class="username">root</systemitem> user, after
-   installing <xref linkend="p11-kit"/>, download the certificate source and
-   prepare for system use with the following command:</para>
+     As the <systemitem class="username">root</systemitem> user, after
+     installing <xref linkend="p11-kit"/>, download the certificate source and
+     prepare for system use with the following command:
 @y
-   <para>As the <systemitem class="username">root</systemitem> user, after
-   installing <xref linkend="p11-kit"/>, download the certificate source and
-   prepare for system use with the following command:</para>
+     As the <systemitem class="username">root</systemitem> user, after
+     installing <xref linkend="p11-kit"/>, download the certificate source and
+     prepare for system use with the following command:
 @z
 
 @x
-      <para>If running the script a second time with the same version of
-      <filename>certdata.txt</filename>, for instance, to add additional stores
-      as the requisite software is installed, add the <parameter>-r</parameter>
-      switch to the command line. If packaging, run <command>make-ca
-      --help</command> to see all available command line options.</para>
+        If running the script a second time with the same version of
+        <filename>certdata.txt</filename>, for instance, to add additional
+        stores as the requisite software is installed, add the
+        <parameter>-r</parameter> switch to the command line. If packaging,
+        run <command>make-ca --help</command> to see all available command
+        line options.
 @y
-      <para>If running the script a second time with the same version of
-      <filename>certdata.txt</filename>, for instance, to add additional stores
-      as the requisite software is installed, add the <parameter>-r</parameter>
-      switch to the command line. If packaging, run <command>make-ca
-      --help</command> to see all available command line options.</para>
+        If running the script a second time with the same version of
+        <filename>certdata.txt</filename>, for instance, to add additional
+        stores as the requisite software is installed, add the
+        <parameter>-r</parameter> switch to the command line. If packaging,
+        run <command>make-ca --help</command> to see all available command
+        line options.
 @z
 
 @x
-    <para>You should periodically update the store with the above command,
-    either manually, or via a <phrase revision="sysv">cron job.</phrase>
-    <phrase revision="systemd">systemd timer. A timer is installed at
-    <filename>/usr/lib/systemd/system/update-pki.timer</filename> that, if
-    enabled, will check for updates weekly. </phrase><phrase revision="sysv">If
-    you've installed <xref linkend="fcron"/> and completed the section on
-    periodic jobs, execute</phrase><phrase revision="systemd">Execute</phrase>
-    the following commands, as the
-    <systemitem class="username">root</systemitem> user, to
-    <phrase revision="sysv">create a weekly cron job:</phrase>
-    <phrase revision="systemd">enable the systemd timer:</phrase>
-    </para>
+      You should periodically update the store with the above command,
+      either manually, or via a <phrase revision="sysv">cron job.</phrase>
+      <phrase revision="systemd">systemd timer. A timer is installed at
+      <filename>/usr/lib/systemd/system/update-pki.timer</filename> that, if
+      enabled, will check for updates weekly.</phrase><phrase
+      revision="sysv">If you've installed <xref linkend="fcron"/> and
+      completed the section on periodic jobs, execute</phrase><phrase
+      revision="systemd">Execute</phrase> the following commands, as the
+      <systemitem class="username">root</systemitem> user, to <phrase
+      revision="sysv">create a weekly cron job:</phrase><phrase
+      revision="systemd">enable the systemd timer:</phrase>
 @y
-    <para>You should periodically update the store with the above command,
-    either manually, or via a <phrase revision="sysv">cron job.</phrase>
-    <phrase revision="systemd">systemd timer. A timer is installed at
-    <filename>/usr/lib/systemd/system/update-pki.timer</filename> that, if
-    enabled, will check for updates weekly. </phrase><phrase revision="sysv">If
-    you've installed <xref linkend="fcron"/> and completed the section on
-    periodic jobs, execute</phrase><phrase revision="systemd">Execute</phrase>
-    the following commands, as the
-    <systemitem class="username">root</systemitem> user, to
-    <phrase revision="sysv">create a weekly cron job:</phrase>
-    <phrase revision="systemd">enable the systemd timer:</phrase>
-    </para>
+      You should periodically update the store with the above command,
+      either manually, or via a <phrase revision="sysv">cron job.</phrase>
+      <phrase revision="systemd">systemd timer. A timer is installed at
+      <filename>/usr/lib/systemd/system/update-pki.timer</filename> that, if
+      enabled, will check for updates weekly.</phrase><phrase
+      revision="sysv">If you've installed <xref linkend="fcron"/> and
+      completed the section on periodic jobs, execute</phrase><phrase
+      revision="systemd">Execute</phrase> the following commands, as the
+      <systemitem class="username">root</systemitem> user, to <phrase
+      revision="sysv">create a weekly cron job:</phrase><phrase
+      revision="systemd">enable the systemd timer:</phrase>
 @z
 

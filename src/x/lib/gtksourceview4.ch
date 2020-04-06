@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gtksourceview4-buildsize     "36 MB (with tests)">
-  <!ENTITY gtksourceview4-time          "0.1 SBU (with tests; both using parallelism=4)">
+  <!ENTITY gtksourceview4-buildsize     "83 MB (with tests)">
+  <!ENTITY gtksourceview4-time          "0.2 SBU (with tests; both using parallelism=4)">
 @y
-  <!ENTITY gtksourceview4-buildsize     "36 MB (テスト込み)">
-  <!ENTITY gtksourceview4-time          "0.1 SBU (テスト込み、parallelism=4 利用)">
+  <!ENTITY gtksourceview4-buildsize     "83 MB (テスト込み)">
+  <!ENTITY gtksourceview4-time          "0.2 SBU (テスト込み、parallelism=4 利用)">
 @z
 
 @x
@@ -100,12 +100,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libxml2"/>
     </para>
 @z
 
@@ -174,13 +176,13 @@
 @z
 
 @x
-    <para><option>-Dgtk_doc=true</option>: This option is normally
-    used if <application>GTK-Doc</application> is installed and you wish 
-    to rebuild and install the API documentation.</para>
+      <option>-Dgtk_doc=true</option>: This option is normally
+      used if <application>GTK-Doc</application> is installed and you wish 
+      to rebuild and install the API documentation.
 @y
-    <para><option>-Dgtk_doc=true</option>: This option is normally
-    used if <application>GTK-Doc</application> is installed and you wish 
-    to rebuild and install the API documentation.</para>
+      <option>-Dgtk_doc=true</option>: This option is normally
+      used if <application>GTK-Doc</application> is installed and you wish 
+      to rebuild and install the API documentation.
 @z
 
 @x

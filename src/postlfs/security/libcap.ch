@@ -26,15 +26,13 @@
 @z
 
 @x
-    <para>The <application>libcap</application> package was installed in 
-    LFS, but if <application>Linux-PAM</application> support is desired,
-    the PAM module must be built (after installation of
-    <application>Linux-PAM</application>).</para>
+      The <application>libcap</application> package was installed in 
+      LFS, but if <application>Linux-PAM</application> support is desired,
+      the PAM module must be built (after installation of
+      <application>Linux-PAM</application>).
 @y
-    <para>
-    <application>libcap</application> パッケージは LFS においてインストール済です。
-    しかし <application>Linux-PAM</application> サポートが必要となる場合は、(<application>Linux-PAM</application> をインストールした後に) PAM モジュールを生成する必要があります。
-    </para>
+      <application>libcap</application> パッケージは LFS においてインストール済です。
+      しかし <application>Linux-PAM</application> サポートが必要となる場合は、(<application>Linux-PAM</application> をインストールした後に) PAM モジュールを生成する必要があります。
 @z
 
 @x
@@ -44,39 +42,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libcap-download-http;"/></para>
+          Download (HTTP): <ulink url="&libcap-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libcap-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libcap-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libcap-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libcap-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libcap-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libcap-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libcap-md5sum;</para>
+          Download MD5 sum: &libcap-md5sum;
 @y
-        <para>&Download; MD5 sum: &libcap-md5sum;</para>
+          &Download; MD5 sum: &libcap-md5sum;
 @z
 
 @x
-        <para>Download size: &libcap-size;</para>
+          Download size: &libcap-size;
 @y
-        <para>&DownloadSize;: &libcap-size;</para>
+          &DownloadSize;: &libcap-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libcap-buildsize;</para>
+          Estimated disk space required: &libcap-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libcap-buildsize;</para>
+          &Estimateddiskspacerequired;: &libcap-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libcap-time;</para>
+          Estimated build time: &libcap-time;
 @y
-        <para>&Estimatedbuildtime;: &libcap-time;</para>
+          &Estimatedbuildtime;: &libcap-time;
 @z
 
 @x
@@ -110,26 +108,38 @@
 @z
 
 @x
-    <para>Install <application>libcap</application> by running the following
-    commands:</para>
+        If you are upgrading libcap from a previous version, use the
+        instructions in
+        <ulink url="../../../../lfs/view/development/chapter06/libcap.html">
+          LFS libcap page
+        </ulink> to upgrade libcap. If <xref linkend="linux-pam"/> has been
+        built, the PAM module will automatically be built too.
 @y
-    <para>
-    以下のコマンドを実行して <application>libcap</application> をビルドします。
-    </para>
+        If you are upgrading libcap from a previous version, use the
+        instructions in
+        <ulink url="../../../../lfs/view/development/chapter06/libcap.html">
+          LFS libcap page
+        </ulink> to upgrade libcap. If <xref linkend="linux-pam"/> has been
+        built, the PAM module will automatically be built too.
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      Install <application>libcap</application> by running the following
+      commands:
 @y
-    <para>&notTestSuite;</para>
+      以下のコマンドを実行して <application>libcap</application> をビルドします。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      &notTestSuite;
+@z
+
+@x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

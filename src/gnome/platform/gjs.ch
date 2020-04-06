@@ -80,7 +80,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="gobject-introspection"/>, and
-      <xref linkend="js60"/>
+      <xref linkend="js68"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -88,7 +88,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="js60"/>
+      <xref linkend="js68"/>
     </para>
 @z
 
@@ -144,15 +144,17 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. The
+      To test the results, issue: <command>ninja test</command>. The
       <application>GTK</application> and <application>Cairo</application>
-      tests will fail if not running in an Xorg session. Two tests related
-      to testCommandLine.sh (6 and 7) are known to fail.
+      tests will fail if not running in an Xorg session. One test,
+      <filename>gjs: Scripts/CommandLine</filename>, is known to fail.
+      On some systems, up to four tests may fail with an error.
       <!-- Still fails with 1.58.5. -->
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       Xorg セッション内でテスト実行しないと <application>GTK</application> と <application>Cairo</application> のテストは失敗します。
-      testCommandLine.sh に関連するテスト 2 つ (6 と 7) は失敗します。
+      <filename>gjs: Scripts/CommandLine</filename> というテストが 1 つは失敗します。
+      システムによっては、最大 4 つのテストがエラーにより失敗します。
 @z
 
 @x
@@ -186,8 +188,10 @@
         </seg>
         <seg>
           /usr/include/gjs-1.0,
-          /usr/lib/gjs, and
-          /usr/share/gjs-1.0
+          /usr/lib/gjs,
+          /usr/libexec/gjs,
+          /usr/share/gjs-1.0, and
+          /usr/share/installed-tests/gjs
         </seg>
 @y
         <seg>
@@ -199,7 +203,9 @@
         <seg>
           /usr/include/gjs-1.0,
           /usr/lib/gjs,
-          /usr/share/gjs-1.0
+          /usr/libexec/gjs,
+          /usr/share/gjs-1.0,
+          /usr/share/installed-tests/gjs
         </seg>
 @z
 

@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para><application>Links</application> is a text and graphics mode
-    WWW browser. It includes support for rendering
-    tables and frames, features background downloads, can display colors
-    and has many other features.</para>
+      <application>Links</application> is a text and graphics mode
+      WWW browser. It includes support for rendering
+      tables and frames, features background downloads, can display colors
+      and has many other features.
 @y
-    <para>
-    <application>Links</application> は、テキストモードおよびグラフィックモードを持つ WWW ブラウザーです。
-    テーブルやフレームのレンダリング、バックグラウンドダウンロード、カラー表示など、数多くの機能をサポートしています。
-    </para>
+      <application>Links</application> は、テキストモードおよびグラフィックモードを持つ WWW ブラウザーです。
+      テーブルやフレームのレンダリング、バックグラウンドダウンロード、カラー表示など、数多くの機能をサポートしています。
 @z
 
 @x
@@ -38,39 +36,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&links-download-http;"/></para>
+          Download (HTTP): <ulink url="&links-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&links-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&links-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&links-download-ftp;"/></para>
+          Download (FTP): <ulink url="&links-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&links-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&links-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &links-md5sum;</para>
+          Download MD5 sum: &links-md5sum;
 @y
-        <para>&Download; MD5 sum: &links-md5sum;</para>
+          &Download; MD5 sum: &links-md5sum;
 @z
 
 @x
-        <para>Download size: &links-size;</para>
+          Download size: &links-size;
 @y
-        <para>&DownloadSize;: &links-size;</para>
+          &DownloadSize;: &links-size;
 @z
 
 @x
-        <para>Estimated disk space required: &links-buildsize;</para>
+          Estimated disk space required: &links-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &links-buildsize;</para>
+          &Estimateddiskspacerequired;: &links-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &links-time;</para>
+          Estimated build time: &links-time;
 @y
-        <para>&Estimatedbuildtime;: &links-time;</para>
+          &Estimatedbuildtime;: &links-time;
 @z
 
 @x
@@ -81,48 +79,58 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended"><xref linkend="libevent"/></para>
+    <para role="recommended">
+      <xref linkend="libevent"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended"><xref linkend="libevent"/></para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">Graphics mode requires at least one of
-    <xref linkend="gpm"/> (mouse support to be used with a framebuffer-based console),
-    <ulink url="http://www.svgalib.org/">SVGAlib</ulink>,
-    <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>, and
-    <xref linkend="x-window-system"/></para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">Graphics mode requires at least one of
-    <xref linkend="gpm"/> (mouse support to be used with a framebuffer-based console),
-    <ulink url="http://www.svgalib.org/">SVGAlib</ulink>,
-    <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>, and
-    <xref linkend="x-window-system"/></para>
-@z
-
-@x
-    <para>For decoding various image formats <application>Links</application>
-    can utilize
-    <xref linkend="libpng"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="librsvg"/>, and
-    <xref linkend="libtiff"/></para>
-@y
-    <para>
-    さまざまなイメージフォーマットのデコーディングを行うために <application>Links</application> では以下を利用します。
-    <xref linkend="libpng"/>, <xref linkend="libjpeg"/>, <xref linkend="librsvg"/>, <xref linkend="libtiff"/>
+    <para role="recommended">
+      <xref linkend="libevent"/>
     </para>
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      Graphics mode requires at least one of
+      <xref linkend="gpm"/> (mouse support to be used with a framebuffer-based
+      console),
+      <ulink url="http://www.svgalib.org/">SVGAlib</ulink>,
+      <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">
+        DirectFB
+      </ulink>, and
+      <xref linkend="x-window-system"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      Graphics mode requires at least one of
+      <xref linkend="gpm"/> (mouse support to be used with a framebuffer-based
+      console),
+      <ulink url="http://www.svgalib.org/">SVGAlib</ulink>,
+      <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">
+        DirectFB
+      </ulink>, and
+      <xref linkend="x-window-system"/>
+    </para>
+@z
+
+@x
+      For decoding various image formats <application>Links</application>
+      can utilize
+      <xref linkend="libpng"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="librsvg"/>, and
+      <xref linkend="libtiff"/>
+@y
+      さまざまなイメージフォーマットのデコーディングを行うために <application>Links</application> では以下を利用します。
+      <xref linkend="libpng"/>, <xref linkend="libjpeg"/>, <xref linkend="librsvg"/>, <xref linkend="libtiff"/>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/LinksBrowser"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/LinksBrowser"/></para>
 @z
 
 @x
@@ -132,26 +140,22 @@
 @z
 
 @x
-   <para>Install <application>Links</application> by running the following
-    commands:</para>
+      Install <application>Links</application> by running the following
+      commands:
 @y
-   <para>
-   以下のコマンドを実行して <application>Links</application> をビルドします。
-   </para>
+     以下のコマンドを実行して <application>Links</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -161,13 +165,11 @@
 @z
 
 @x
-    <para><option>--enable-graphics</option>: This switch enables support
-    for graphics mode.</para>
+      <option>--enable-graphics</option>: This switch enables support
+      for graphics mode.
 @y
-   <para>
-   <option>--enable-graphics</option>:
-   このパラメーターはグラフィックモードのサポートを有効にします。
-   </para>
+      <option>--enable-graphics</option>:
+      このパラメーターはグラフィックモードのサポートを有効にします。
 @z
 
 @x
@@ -189,16 +191,14 @@
 @z
 
 @x
-      <para><application>Links</application> stores its configuration in per-user
-      files in the <filename class="directory">~/.links</filename> directory. These
-      files are created automatically when <command>links</command> is run for the
-      first time.</para>
+        <application>Links</application> stores its configuration in per-user
+        files in the <filename class="directory">~/.links</filename> directory.
+        These files are created automatically when <command>links</command> is
+        run for the first time.
 @y
-      <para>
-      <application>Links</application> では、各ユーザーごとの設定ファイルが <filename
-      class="directory">~/.links</filename> ディレクトリに保存されます。
-      このファイルは <command>links</command> が初めて起動した際に自動的に生成されます。
-      </para>
+        <application>Links</application> では、各ユーザーごとの設定ファイルが <filename
+        class="directory">~/.links</filename> ディレクトリに保存されます。
+        このファイルは <command>links</command> が初めて起動した際に自動的に生成されます。
 @z
 
 @x
@@ -234,9 +234,7 @@
 @z
 
 @x links
-          <para>is a text and graphics mode WWW browser.</para>
+            is a text and graphics mode WWW browser.
 @y
-          <para>
-          テキストモードおよびグラフィックモードを持つ WWW ブラウザー。
-          </para>
+            テキストモードおよびグラフィックモードを持つ WWW ブラウザー。
 @z

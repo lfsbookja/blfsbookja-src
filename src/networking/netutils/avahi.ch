@@ -162,12 +162,10 @@
 @z
 
 @x
-    <para>Install <application>Avahi</application> by running the following
-    commands:</para>
+      Install <application>Avahi</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Avahi</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Avahi</application> をビルドします。
 @z
 
 @x
@@ -177,11 +175,9 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -426,8 +422,8 @@
 @z
 
 @x avahi-autoipd
-          <para>is a IPv4LL network address configuration daemon.</para>
+            is a IPv4LL network address configuration daemon.
 @y
-          <para>is a IPv4LL network address configuration daemon.</para>
+            is a IPv4LL network address configuration daemon.
 @z
 

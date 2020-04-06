@@ -163,29 +163,15 @@
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <para><parameter>--with-crypto_backend=openssl</parameter>:
-    This parameter selects the cryptographic libraries to use
-    with the application.  <application>gcrypt</application>
-    is the default.</para>
-@y
-    <para><parameter>--with-crypto_backend=openssl</parameter>:
-    This parameter selects the cryptographic libraries to use
-    with the application.  <application>gcrypt</application>
-    is the default.</para>
 @z
 
 @x

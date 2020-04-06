@@ -28,14 +28,12 @@
 @z
 
 @x
-    <para><application>Nmap</application> is a utility for network exploration
-    and security auditing. It supports ping scanning, port scanning and
-    TCP/IP fingerprinting.</para>
+      <application>Nmap</application> is a utility for network exploration
+      and security auditing. It supports ping scanning, port scanning and
+      TCP/IP fingerprinting.
 @y
-    <para>
-    <application>Nmap</application> はネットワーク探査やセキュリティ監査を行うユーティリティーです。
-    ping スキャン、ポートスキャン、TCP/IP フィンガープリント取得などを行います。
-    </para>
+      <application>Nmap</application> はネットワーク探査やセキュリティ監査を行うユーティリティーです。
+      ping スキャン、ポートスキャン、TCP/IP フィンガープリント取得などを行います。
 @z
 
 @x
@@ -45,45 +43,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&nmap-download-http;"/></para>
+          Download (HTTP): <ulink url="&nmap-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&nmap-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&nmap-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&nmap-download-ftp;"/></para>
+          Download (FTP): <ulink url="&nmap-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&nmap-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&nmap-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &nmap-md5sum;</para>
+          Download MD5 sum: &nmap-md5sum;
 @y
-        <para>&Download; MD5 sum: &nmap-md5sum;</para>
+          &Download; MD5 sum: &nmap-md5sum;
 @z
 
 @x
-        <para>Download size: &nmap-size;</para>
+          Download size: &nmap-size;
 @y
-        <para>&DownloadSize;: &nmap-size;</para>
+          &DownloadSize;: &nmap-size;
 @z
 
 @x
-        <para>Estimated disk space required: &nmap-buildsize;</para>
+          Estimated disk space required: &nmap-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &nmap-buildsize;</para>
+          &Estimateddiskspacerequired;: &nmap-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &nmap-time;</para>
+          Estimated build time: &nmap-time;
 @y
-        <para>&Estimatedbuildtime;: &nmap-time;</para>
+          &Estimatedbuildtime;: &nmap-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Nmap Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Nmap の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Nmap&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -105,7 +103,8 @@
       <xref linkend="lua"/>, 
       <xref linkend="pcre"/>, and
       <xref linkend="liblinear"/>
-<!--  libdnet is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
+<!--  libdnet is not recommended, see:
+      http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
       <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
 -->
     </para>
@@ -113,9 +112,10 @@
     <para role="recommended">
       <xref linkend="libpcap"/>,
       <xref linkend="lua"/>, 
-      <xref linkend="pcre"/>, and
+      <xref linkend="pcre"/>,
       <xref linkend="liblinear"/>
-<!--  libdnet is not recommended, see: http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
+<!--  libdnet is not recommended, see:
+      http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
       <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
 -->
     </para>
@@ -125,8 +125,9 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="pygtk"/> (required for <command>zenmap</command>),
-      <xref linkend="python2"/> (required for <command>ndiff</command>) and
-      <xref linkend="subversion"/> (required for <command>nmap-update</command>), and
+      <xref linkend="python2"/> (required for <command>ndiff</command>),
+      <xref linkend="subversion"/> (required for
+      <command>nmap-update</command>), and
       <xref linkend="libssh2"/>
     </para>
 @y
@@ -141,10 +142,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/nmap"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/nmap"/></para>
 @z
 
 @x
@@ -154,40 +153,32 @@
 @z
 
 @x
-    <para>Install <application>Nmap</application> by running the following
-    commands:</para>
+      Install <application>Nmap</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Nmap</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Nmap</application> をビルドします。
 @z
 
 @x
-    <para>If you wish to run the test suite, run the following command:</para>
+      If you wish to run the test suite, run the following command:
 @y
-    <para>
-    テストスイートを実行する場合は、以下のコマンドを実行します。
-    </para>
+      テストスイートを実行する場合は、以下のコマンドを実行します。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command> as the
-    <systemitem class="username">root</systemitem> user. Tests need a
-    graphical session.</para>
+      To test the results, issue: <command>make check</command> as the
+      <systemitem class="username">root</systemitem> user. Tests need a
+      graphical session.
 @y
-    <para>
-    ビルド結果をテストする場合は <systemitem
-    class="username">root</systemitem> ユーザーになって <command>make check</command> を実行します。
-    テストにはグラフィックセッションが必要です。
-    </para>
+      ビルド結果をテストする場合は <systemitem
+      class="username">root</systemitem> ユーザーになって <command>make check</command> を実行します。
+      テストにはグラフィックセッションが必要です。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -197,13 +188,11 @@
 @z
 
 @x
-    <para><parameter>--with-liblua=included</parameter>: This switch is
-    required to fix compilation with <application>lua</application> 5.3.</para>
+      <parameter>--with-liblua=included</parameter>: This switch is
+      required to fix compilation with <application>lua</application> 5.3.
 @y
-    <para>
-    <parameter>--with-liblua=included</parameter>:
-    このスイッチは <application>lua</application> 5.3 を使ってビルドをする場合に必要となります。
-    </para>
+      <parameter>--with-liblua=included</parameter>:
+      このスイッチは <application>lua</application> 5.3 を使ってビルドをする場合に必要となります。
 @z
 
 @x
@@ -227,7 +216,6 @@
           ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_ndiff,
           uninstall_zenmap, xnmap and zenmap
         </seg>
-<!--    <seg>/usr/lib/python&python2-version;/site-packages/</seg>-->
         <seg>
           None
         </seg>
@@ -238,15 +226,14 @@
 @y
         <seg>
           ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_ndiff,
-          uninstall_zenmap, xnmap and zenmap
+          uninstall_zenmap, xnmap, zenmap
         </seg>
-<!--    <seg>/usr/lib/python&python2-version;/site-packages/</seg>-->
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           /usr/lib/python&python2-majorver;/site-packages/{radialnet,zenmapCore,zenmapGUI},
-          and /usr/share/{ncat,nmap,zenmap}
+          /usr/share/{ncat,nmap,zenmap}
         </seg>
 @z
 
@@ -257,61 +244,66 @@
 @z
 
 @x ncat
-          <para>is a utility for reading and writing data across networks from
-          the command line.</para>
+            is a utility for reading and writing data across networks from
+            the command line.
 @y
-          <para>
-          コマンドラインからネットワークを通じたデータの読み書きを行うユーティリティーです。
-          </para>
+            コマンドラインからネットワークを通じたデータの読み書きを行うユーティリティーです。
 @z
 
 @x ndiff
-          <para>is a tool to aid in the comparison of Nmap scans.</para>
+            is a tool to aid in the comparison of Nmap scans.
 @y
-          <para>
-          Nmap によるスキャン結果の比較に用いられるツールです。
-          </para>
+            Nmap によるスキャン結果の比較に用いられるツールです。
 @z
 
 @x nmap
-          <para>is a utility for network exploration and security auditing. It
-          supports ping scanning, port scanning and TCP/IP
-          fingerprinting.</para>
+            is a utility for network exploration and security auditing. It
+            supports ping scanning, port scanning and TCP/IP fingerprinting.
 @y
-          <para>
-          ネットワーク探査やセキュリティ監査を行うユーティリティーです。
-          ping スキャン、ポートスキャン、TCP/IP フィンガープリント取得などを行います。
-          </para>
+            ネットワーク探査やセキュリティ監査を行うユーティリティーです。
+            ping スキャン、ポートスキャン、TCP/IP フィンガープリント取得などを行います。
 @z
 
 @x nmapfe
-          <para>is a symbolic link to <command>zenmap</command>.</para>
+            is a symbolic link to <command>zenmap</command>.
 @y
-          <para>
-          <command>zenmap</command> へのシンボリックリンク。
-          </para>
+            <command>zenmap</command> へのシンボリックリンク。
 @z
 
 @x nmap-update
-          <para>is an updater for Nmap architecture-independent files.</para>
+            is an updater for Nmap architecture-independent files.
 @y
-          <para>
-          Nmap のアーキテクチャーには依存しないファイルの更新プログラムです。
-          </para>
+            Nmap のアーキテクチャーには依存しないファイルの更新プログラムです。
+@z
+
+@x nping
+            is an open-source tool for network packet generation, response
+            analysis and response time measurement.
+@y
+            is an open-source tool for network packet generation, response
+            analysis and response time measurement.
+@z
+
+@x uninstall_ndiff
+            is a Python script to uninstall <command>ndiff</command>.
+@y
+            is a Python script to uninstall <command>ndiff</command>.
+@z
+
+@x uninstall_zenmap
+            is a Python script to uninstall <command>zenmap</command>.
+@y
+            is a Python script to uninstall <command>zenmap</command>.
 @z
 
 @x xnmap
-          <para>is a symbolic link to <command>zenmap</command>.</para>
+            is a symbolic link to <command>zenmap</command>.
 @y
-          <para>
-          <command>zenmap</command> へのシンボリックリンク。
-          </para>
+            <command>zenmap</command> へのシンボリックリンク。
 @z
 
 @x zenmap
-          <para>is a Python based graphical nmap frontend viewer.</para>
+            is a Python based graphical nmap frontend viewer.
 @y
-          <para>
-          Python ベースによる Nmap のフロントエンドグラフィックビューアー。
-          </para>
+            Python ベースによる Nmap のフロントエンドグラフィックビューアー。
 @z

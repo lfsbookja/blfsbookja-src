@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para><application>qemu</application> is a full virtualization solution
-    for Linux on x86 hardware containing virtualization extensions (Intel VT or
-    AMD-V).</para>
+      <application>qemu</application> is a full virtualization solution for
+      Linux on x86 hardware containing virtualization extensions (Intel VT or
+      AMD-V).
 @y
-    <para>
-    <application>qemu</application> は Linux 上における仮想化ソリューションを提供します。
-    仮想化拡張 (Intel VT または AMD-V) を持つ x86 ハードウェア上にて動作します。
-    </para>
+      <application>qemu</application> は Linux 上における仮想化ソリューションを提供します。
+      仮想化拡張 (Intel VT または AMD-V) を持つ x86 ハードウェア上にて動作します。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&qemu-download-http;"/></para>
+          Download (HTTP): <ulink url="&qemu-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&qemu-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&qemu-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&qemu-download-ftp;"/></para>
+          Download (FTP): <ulink url="&qemu-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&qemu-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&qemu-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &qemu-md5sum;</para>
+          Download MD5 sum: &qemu-md5sum;
 @y
-        <para>&Download; MD5 sum: &qemu-md5sum;</para>
+          &Download; MD5 sum: &qemu-md5sum;
 @z
 
 @x
-        <para>Download size: &qemu-size;</para>
+          Download size: &qemu-size;
 @y
-        <para>&DownloadSize;: &qemu-size;</para>
+          &DownloadSize;: &qemu-size;
 @z
 
 @x
-        <para>Estimated disk space required: &qemu-buildsize;</para>
+          Estimated disk space required: &qemu-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &qemu-buildsize;</para>
+          &Estimateddiskspacerequired;: &qemu-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &qemu-time;</para>
+          Estimated build time: &qemu-time;
 @y
-        <para>&Estimatedbuildtime;: &qemu-time;</para>
+          &Estimatedbuildtime;: &qemu-time;
 @z
 
 @x
@@ -167,25 +165,21 @@
 @z
 
 @x
-    <para>Before building <application>qemu</application>, check to see if
-    your processor supports Virtualization Technology (VT):</para>
+      Before building <application>qemu</application>, check to see if
+      your processor supports Virtualization Technology (VT):
 @y
-    <para>
-    <application>qemu</application> をビルドするにあたっては、まずあなたのプロセッサーが仮想化技術 (Virtualization Technology; VT) をサポートしているかを確認してください。
-    </para>
+      <application>qemu</application> をビルドするにあたっては、まずあなたのプロセッサーが仮想化技術 (Virtualization Technology; VT) をサポートしているかを確認してください。
 @z
 
 @x
-    <para>If you get any output, you have VT technology (vmx for Intel
-    processors and svm for AMD processors).  You then need to go into your
-    system BIOS and ensure it is enabled.  After enabing, reboot back to your
-    LFS instance.</para>
+      If you get any output, you have VT technology (vmx for Intel
+      processors and svm for AMD processors).  You then need to go into your
+      system BIOS and ensure it is enabled.  After enabing, reboot back to your
+      LFS instance.
 @y
-    <para>
-    何かの出力が得られたら VT に対応しているということです。 (Intel プロセッサーなら vmx、AMD プロセッサーなら svm など。)
-    次には BIOS 設定を確認して、この機能が有効になっていることを確認してください。
-    有効化にした後は、再起動を行って、再度 LFS 環境を立ち上げてください。
-    </para>
+      何かの出力が得られたら VT に対応しているということです。 (Intel プロセッサーなら vmx、AMD プロセッサーなら svm など。)
+      次には BIOS 設定を確認して、この機能が有効になっていることを確認してください。
+      有効化にした後は、再起動を行って、再度 LFS 環境を立ち上げてください。
 @z
 
 @x
@@ -195,23 +189,19 @@
 @z
 
 @x
-    <para>Enable the following options in the kernel configuration and
-    recompile the kernel if necessary:</para>
+      Enable the following options in the kernel configuration and
+      recompile the kernel if necessary:
 @y
-    <para>
-    カーネル設定における以下のオプションを有効にしてください。
-    もし有効でなければカーネルを再コンパイルしてください。
-    </para>
+      カーネル設定における以下のオプションを有効にしてください。
+      もし有効でなければカーネルを再コンパイルしてください。
 @z
 
 @x
-    <para>The Intel or AMD settings are not both required, but the one matching
-    your system processor is required.</para>
+      The Intel or AMD settings are not both required, but the one matching
+      your system processor is required.
 @y
-    <para>
-    Intel と AMD の設定を両方行う必要はありません。
-    自身のプロセッサーに合致するものを１つ選んでください。
-    </para>
+      Intel と AMD の設定を両方行う必要はありません。
+      自身のプロセッサーに合致するものを１つ選んでください。
 @z
 
 @x
@@ -249,26 +239,24 @@
 @z
 
 @x
-    <para>Install <application>qemu</application> by running the following
-    commands:</para>
+      Install <application>qemu</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>qemu</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>qemu</application> をビルドします。
 @z
 
 @x
-    <note><para>Qemu is capable of running many targets.  The build process
-    is also capable of building multiple targets at one time in a
-    comma delimited list assigned to <option>--target-list</option>. Run
-    <command>./configure --help</command> to get a complete list of
-    available targets.</para></note>
+        Qemu is capable of running many targets.  The build process
+        is also capable of building multiple targets at one time in a
+        comma delimited list assigned to <option>--target-list</option>. Run
+        <command>./configure --help</command> to get a complete list of
+        available targets.
 @y
-    <note><para>Qemu is capable of running many targets.  The build process
-    is also capable of building multiple targets at one time in a
-    comma delimited list assigned to <option>--target-list</option>. Run
-    <command>./configure --help</command> to get a complete list of
-    available targets.</para></note>
+        Qemu is capable of running many targets.  The build process
+        is also capable of building multiple targets at one time in a
+        comma delimited list assigned to <option>--target-list</option>. Run
+        <command>./configure --help</command> to get a complete list of
+        available targets.
 @z
 
 @x
@@ -300,11 +288,11 @@
 @z
 
 @x
-      <para>For convenience you may want to create a symbolic link to run
-      the installed program. For instance:</para>
+      For convenience you may want to create a symbolic link to run
+      the installed program. For instance:
 @y
-      <para>For convenience you may want to create a symbolic link to run
-      the installed program. For instance:</para>
+      For convenience you may want to create a symbolic link to run
+      the installed program. For instance:
 @z
 
 @x
@@ -322,6 +310,14 @@
 @z
 
 @x
+      <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
+      driver to ALSA. See below for enabling other audio drivers.
+@y
+      <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
+      driver to ALSA. See below for enabling other audio drivers.
+@z
+
+@x
       <option>--audio-drv-list=pa</option>: This switch sets the audio
       driver to pulseaudio. For other drivers see the --audio-drv-list list in
       <command>configure</command>'s help output. The default audio driver is
@@ -336,9 +332,61 @@
 @z
 
 @x
+      <option>\-\-with-gtkabi=3.0</option>: builds with GTK+-3 if both GTK+-2
+      and GTK+-3 are installed.
+@y
+      <option>\-\-with-gtkabi=3.0</option>: builds with GTK+-3 if both GTK+-2
+      and GTK+-3 are installed.
+@z
+
+@x
     <title>Using Qemu</title>
 @y
     <title>Using Qemu</title>
+@z
+
+@x
+      Since using qemu means using a virtual computer, the steps to set up
+      the virtual machine are in close analogy with those to set up a real
+      computer. You'll need to decide about CPU, memory, disk, USB devices,
+      network card(s), screen size, etc. Once the <quote>hardware</quote> is
+      decided, you'll have for example to choose how to connect the machine
+      to internet, and/or to install an OS. In the following, we show basic
+      ways of performing those steps. But qemu is much more than this, and it
+      is strongly advised to read the qemu documentation in
+      <filename>/usr/share/doc/qemu-&qemu-version;/qemu-doc.html</filename>.
+@y
+      Since using qemu means using a virtual computer, the steps to set up
+      the virtual machine are in close analogy with those to set up a real
+      computer. You'll need to decide about CPU, memory, disk, USB devices,
+      network card(s), screen size, etc. Once the <quote>hardware</quote> is
+      decided, you'll have for example to choose how to connect the machine
+      to internet, and/or to install an OS. In the following, we show basic
+      ways of performing those steps. But qemu is much more than this, and it
+      is strongly advised to read the qemu documentation in
+      <filename>/usr/share/doc/qemu-&qemu-version;/qemu-doc.html</filename>.
+@z
+
+@x
+        It is standard practice to name the computer running qemu
+        <quote>host</quote> and the emulated machine running under qemu the
+        <quote>guest</quote>. We'll use those notations in the following.
+@y
+        It is standard practice to name the computer running qemu
+        <quote>host</quote> and the emulated machine running under qemu the
+        <quote>guest</quote>. We'll use those notations in the following.
+@z
+
+@x
+        The following instructions assume the optional symbolic link,
+        <filename>qemu</filename>, has been created. Additionally,
+        <command>qemu</command> must be run from an X Window System based
+        terminal (either locally or over ssh).
+@y
+        The following instructions assume the optional symbolic link,
+        <filename>qemu</filename>, has been created. Additionally,
+        <command>qemu</command> must be run from an X Window System based
+        terminal (either locally or over ssh).
 @z
 
 @x
@@ -399,50 +447,70 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x qemu-ga
-          <para>implements support for QMP (QEMU Monitor Protocol) commands and
-          events that terminate and originate respectively within the guest
-          using an agent built as part of QEMU.</para>
+@x ivshmem-client
+            is a standalone client for using the ivshmem device.
 @y
-          <para>
-          implements support for QMP (QEMU Monitor Protocol) commands and
-          events that terminate and originate respectively within the guest
-          using an agent built as part of QEMU.
-          </para>
+            is a standalone client for using the ivshmem device.
+@z
+
+@x ivshmem-server
+            is an example server for the ivshmem device.
+@y
+            is an example server for the ivshmem device.
+@z
+
+@x qemu-edid
+            is a test tool for the qemu EDID generator.
+@y
+            is a test tool for the qemu EDID generator.
+@z
+
+@x qemu-ga
+            implements support for QMP (QEMU Monitor Protocol) commands and
+            events that terminate and originate respectively within the guest
+            using an agent built as part of QEMU.
+@y
+            implements support for QMP (QEMU Monitor Protocol) commands and
+            events that terminate and originate respectively within the guest
+            using an agent built as part of QEMU.
 @z
 
 @x qemu-img
-          <para>provides commands to manage QEMU disk images.</para>
+            provides commands to manage QEMU disk images.
 @y
-          <para>
-          provides commands to manage QEMU disk images.
-          </para>
+            provides commands to manage QEMU disk images.
 @z
 
 @x qemu-io
-          <para>is a diagnostic and manipulation program for (virtual) memory
-          media.  It is still at an early stage of development.</para>
+            is a diagnostic and manipulation program for (virtual) memory
+            media.  It is still at an early stage of development.
 @y
-          <para>
-          is a diagnostic and manipulation program for (virtual) memory
-          media.  It is still at an early stage of development.
-          </para>
+            is a diagnostic and manipulation program for (virtual) memory
+            media.  It is still at an early stage of development.
 @z
 
 @x qemu-nbd
-          <para>exports Qemu disk images using the QEMU Disk Network Block
-          Device (NBD) protocol.</para>
+            exports Qemu disk images using the QEMU Disk Network Block
+            Device (NBD) protocol.
 @y
-          <para>
-          exports Qemu disk images using the QEMU Disk Network Block
-          Device (NBD) protocol.
-          </para>
+            exports Qemu disk images using the QEMU Disk Network Block
+            Device (NBD) protocol.
 @z
 
 @x qemu-system-x86_64
-          <para>is the QEMU PC System emulator.</para>
+            is the QEMU PC System emulator.
 @y
-          <para>
-          PC システムエミュレーターである QEMU です。
-          </para>
+            PC システムエミュレーターである QEMU です。
+@z
+
+@x virtfs-proxy-helper
+            creates a socket pair or a named socket. QEMU and proxy helper
+            communicate using this socket. QEMU proxy fs driver sends
+            filesystem request to proxy helper and receives the response
+            from it.
+@y
+            creates a socket pair or a named socket. QEMU and proxy helper
+            communicate using this socket. QEMU proxy fs driver sends
+            filesystem request to proxy helper and receives the response
+            from it.
 @z

@@ -236,7 +236,6 @@ CHANGE_FILES = \
 	aboutraid.ch     \
 	btrfs-progs.ch   \
 	dosfstools.ch    \
-	ext3.ch          \
 	filesystems.ch   \
 	fuse3.ch         \
 	gptfdisk.ch      \

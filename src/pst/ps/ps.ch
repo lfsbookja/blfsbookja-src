@@ -14,11 +14,9 @@
 @z
 
 @x
-  <para>This chapter includes applications that create, manipulate or view
-  PostScript files and create or view Portable Document Format
-  PDF files.</para>
+    This chapter includes applications that create, manipulate or view
+    PostScript files and create or view Portable Document Format
+    PDF files.
 @y
-  <para>
-  本章は PostScript ファイルの生成や操作、参照を行うアプリケーション、および PDF (Portable Document Format) ファイルを参照するアプリケーションを説明します。
-  </para>
+    本章は PostScript ファイルの生成や操作、参照を行うアプリケーション、および PDF (Portable Document Format) ファイルを参照するアプリケーションを説明します。
 @z

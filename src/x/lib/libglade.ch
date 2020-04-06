@@ -20,14 +20,12 @@
 @z
 
 @x
-    <para>The <application>libglade</application> package contains
-    <filename class="libraryfile">libglade</filename> libraries. These are
-    useful for loading Glade interface files in a program at runtime.</para>
+      The <application>libglade</application> package contains
+      <filename class="libraryfile">libglade</filename> libraries. These are
+      useful for loading Glade interface files in a program at runtime.
 @y
-    <para>
-    <application>libglade</application> パッケージは <filename class="libraryfile">libglade</filename> ライブラリを提供します。
-    これはプログラム実行時に Glade インターフェースファイルをロードする際に利用します。
-    </para>
+      <application>libglade</application> パッケージは <filename class="libraryfile">libglade</filename> ライブラリを提供します。
+      これはプログラム実行時に Glade インターフェースファイルをロードする際に利用します。
 @z
 
 @x
@@ -37,39 +35,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libglade-download-http;"/></para>
+          Download (HTTP): <ulink url="&libglade-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libglade-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libglade-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libglade-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libglade-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libglade-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libglade-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libglade-md5sum;</para>
+          Download MD5 sum: &libglade-md5sum;
 @y
-        <para>&Download; MD5 sum: &libglade-md5sum;</para>
+          &Download; MD5 sum: &libglade-md5sum;
 @z
 
 @x
-        <para>Download size: &libglade-size;</para>
+          Download size: &libglade-size;
 @y
-        <para>&DownloadSize;: &libglade-size;</para>
+          &DownloadSize;: &libglade-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libglade-buildsize;</para>
+          Estimated disk space required: &libglade-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libglade-buildsize;</para>
+          &Estimateddiskspacerequired;: &libglade-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libglade-time;</para>
+          Estimated build time: &libglade-time;
 @y
-        <para>&Estimatedbuildtime;: &libglade-time;</para>
+          &Estimatedbuildtime;: &libglade-time;
 @z
 
 @x
@@ -80,30 +78,36 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="libxml2"/> and
-    <xref linkend="gtk2"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/> and
+      <xref linkend="gtk2"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="libxml2"/>,
-    <xref linkend="gtk2"/></para>
+    <para role="required">
+      <xref linkend="libxml2"/>,
+      <xref linkend="gtk2"/>
+    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><xref linkend="python2"/>
-    and <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="python2"/> and
+      <xref linkend="gtk-doc"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><xref linkend="python2"/>,
-    <xref linkend="gtk-doc"/></para>
+    <para role="optional">
+      <xref linkend="python2"/>,
+      <xref linkend="gtk-doc"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libglade"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libglade"/></para>
 @z
 
 @x
@@ -113,30 +117,24 @@
 @z
 
 @x
-    <para>Install <application>libglade</application> by running the following
-    commands:</para>
+      Install <application>libglade</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libglade</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libglade</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.
-    One of the tests, test-convert, is known to fail.</para>
+      To test the results, issue: <command>make check</command>.
+      One of the tests, test-convert, is known to fail.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    ただしテストのうち test-convert は失敗します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ただしテストのうち test-convert は失敗します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -146,15 +144,14 @@
 @z
 
 @x
-    <para><command>sed -i '/DG_DISABLE_DEPRECATED/d'</command>: Some of the
-    <application>glib</application> functions that
-    <application>libglade</application> uses were declared deprecated in
-    glib-2.30. This sed removes the G_DISABLE_DEPRECATED CFLAG.</para>
+      <command>sed -i '/DG_DISABLE_DEPRECATED/d'</command>: Some of the
+      <application>glib</application> functions that
+      <application>libglade</application> uses were declared deprecated in
+      glib-2.30. This sed removes the G_DISABLE_DEPRECATED CFLAG.
 @y
-    <para><command>sed -i '/DG_DISABLE_DEPRECATED/d'</command>: 
-    <application>libglade</application> が利用している <application>glib</application> 関数の中には、glib-2.30 にて廃止 (deprecated) となっています。
-    この sed により G_DISABLE_DEPRECATED CFLAG を取り除きます。
-    </para>
+      <command>sed -i '/DG_DISABLE_DEPRECATED/d'</command>: 
+      <application>libglade</application> が利用している <application>glib</application> 関数の中には、glib-2.30 にて廃止 (deprecated) となっています。
+      この sed により G_DISABLE_DEPRECATED CFLAG を取り除きます。
 @z
 
 @x
@@ -192,21 +189,14 @@
 @z
 
 @x libglade-convert
-          <para>is used to convert old Glade interface files to
-          Glade-2.0 standards.</para>
+            is used to convert old Glade interface files to
+            Glade-2.0 standards.
 @y
-          <para>
-          これは旧版の Glade インターフェースファイルを Glade-2.0
-          の標準に合ったものに変換します。
-          </para>
+          これは旧版の Glade インターフェースファイルを Glade-2.0 の標準に合ったものに変換します。
 @z
 
-@x libglade-2.0.{so,a}
-          <para>contains the functions necessary to load Glade interface
-          files.</para>
+@x libglade-2.0.so
+            contains the functions necessary to load Glade interface files.
 @y
-          <para>
-          Glade インターフェースファイルを読み込むために必要な関数を提供します。
-          </para>
+            Glade インターフェースファイルを読み込むために必要な関数を提供します。
 @z
-

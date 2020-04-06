@@ -20,12 +20,10 @@
 @z
 
 @x
-  <para>This chapter contains scanning applications which allow you to
-  convert printed documents into formatted documents readable by other
-  applications.</para>
+    This chapter contains scanning applications which allow you to
+    convert printed documents into formatted documents readable by other
+    applications.
 @y
-  <para>
-  本章ではスキャニングアプリケーションを示します。
-  これらを用いることで、印刷済のドキュメントを、他のアプリケーションが読み込める形式のドキュメントに変換することができます。
-  </para>
+    本章ではスキャニングアプリケーションを示します。
+    これらを用いることで、印刷済のドキュメントを、他のアプリケーションが読み込める形式のドキュメントに変換することができます。
 @z

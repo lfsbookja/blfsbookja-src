@@ -191,7 +191,7 @@
         <seg>
           /usr/include/bytesize,
           /usr/share/gtk-doc/html/libbytesize, and 
-          /usr/lib/python3.7/site-packages/bytesize
+          /usr/lib/python&python3-majorver;/site-packages/bytesize
         </seg>
 @y
         <seg>
@@ -203,6 +203,6 @@
         <seg>
           /usr/include/bytesize,
           /usr/share/gtk-doc/html/libbytesize,
-          /usr/lib/python3.7/site-packages/bytesize
+          /usr/lib/python&python3-majorver;/site-packages/bytesize
         </seg>
 @z

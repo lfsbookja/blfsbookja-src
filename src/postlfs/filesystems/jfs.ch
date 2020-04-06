@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>jfsutils</application> package contains administration
-    and debugging tools for the jfs file system.</para>
+      The <application>jfsutils</application> package contains administration
+      and debugging tools for the jfs file system.
 @y
-    <para>
-    <application>jfsutils</application> パッケージは、jfs ファイルシステムに対しての管理ツールやデバッグツールを提供します。
-    </para>
+      <application>jfsutils</application> パッケージは、jfs ファイルシステムに対しての管理ツールやデバッグツールを提供します。
 @z
 
 @x
@@ -35,47 +33,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&jfsutils-download-http;"/></para>
+          Download (HTTP): <ulink url="&jfsutils-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&jfsutils-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&jfsutils-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&jfsutils-download-ftp;"/></para>
+          Download (FTP): <ulink url="&jfsutils-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&jfsutils-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&jfsutils-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &jfsutils-md5sum;</para>
+          Download MD5 sum: &jfsutils-md5sum;
 @y
-        <para>&Download; MD5 sum: &jfsutils-md5sum;</para>
+          &Download; MD5 sum: &jfsutils-md5sum;
 @z
 
 @x
-        <para>Download size: &jfsutils-size;</para>
+          Download size: &jfsutils-size;
 @y
-        <para>&DownloadSize;: &jfsutils-size;</para>
+          &DownloadSize;: &jfsutils-size;
 @z
 
 @x
-        <para>Estimated disk space required: &jfsutils-buildsize;</para>
+          Estimated disk space required: &jfsutils-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &jfsutils-buildsize;</para>
+          &Estimateddiskspacerequired;: &jfsutils-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &jfsutils-time;</para>
+          Estimated build time: &jfsutils-time;
 @y
-        <para>&Estimatedbuildtime;: &jfsutils-time;</para>
+          &Estimatedbuildtime;: &jfsutils-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/jfs"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/jfs"/></para>
 @z
 
 @x
@@ -85,12 +81,10 @@
 @z
 
 @x
-    <para>Enable the following option in the kernel configuration
-    and recompile the kernel:</para>
+      Enable the following option in the kernel configuration
+      and recompile the kernel:
 @y
-    <para>
-    以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
-    </para>
+      以下に示すカーネル設定のオプションを有効にして、カーネルを再コンパイルしてください。
 @z
 
 @x
@@ -110,26 +104,22 @@
 @z
 
 @x
-    <para>Install <application>jfsutils</application> by running the following
-    commands:</para>
+      Install <application>jfsutils</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>jfsutils</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>jfsutils</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -179,57 +169,57 @@
 @z
 
 @x fsck.jfs
-          <para>is used to replay the JFS transaction log, check a 
-          JFS formatted device for errors, and fix any errors found.</para>
+            is used to replay the JFS transaction log, check a
+            JFS formatted device for errors, and fix any errors found.
 @y
-          <para>is used to replay the JFS transaction log, check a 
-          JFS formatted device for errors, and fix any errors found.</para>
+            is used to replay the JFS transaction log, check a
+            JFS formatted device for errors, and fix any errors found.
 @z
 
 @x jfs_fsck
-          <para>is a hard link to fsck.jfs.</para>
+            is a hard link to fsck.jfs.
 @y
-          <para>fsck.jfs へのハードリンク。</para>
+            fsck.jfs へのハードリンク。
 @z
 
 @x mkfs.jfs
-          <para>constructs an JFS file system.</para>
+            constructs an JFS file system.
 @y
-          <para>JFS ファイルシステムを構築します。</para>
+            JFS ファイルシステムを構築します。
 @z
 
 @x jfs_mkfs
-          <para>is a hard link to mkfs.jfs.</para>
+            is a hard link to mkfs.jfs.
 @y
-          <para>mkfs.jfs へのハードリンク。</para>
+            mkfs.jfs へのハードリンク。
 @z
 
 @x jfs_debugfs
-          <para>is a program which can be used to perform various low-level 
-          actions on a JFS formatted device.</para>
+            is a program which can be used to perform various low-level
+            actions on a JFS formatted device.
 @y
-          <para>is a program which can be used to perform various low-level 
-          actions on a JFS formatted device.</para>
+            is a program which can be used to perform various low-level
+            actions on a JFS formatted device.
 @z
 
 @x jfs_fscklog
-          <para>extracts a JFS fsck service log into a file and/or formats and 
-          displays the extracted file.</para>
+            extracts a JFS fsck service log into a file and/or formats and
+            displays the extracted file.
 @y
-          <para>extracts a JFS fsck service log into a file and/or formats and 
-          displays the extracted file.</para>
+            extracts a JFS fsck service log into a file and/or formats and
+            displays the extracted file.
 @z
 
 @x jfs_logdump
-          <para>dumps the contents of the journal log from the specified 
-          JFS formatted device into output file ./jfslog.dmp.</para>
+            dumps the contents of the journal log from the specified
+            JFS formatted device into output file ./jfslog.dmp.
 @y
-          <para>dumps the contents of the journal log from the specified 
-          JFS formatted device into output file ./jfslog.dmp.</para>
+            dumps the contents of the journal log from the specified
+            JFS formatted device into output file ./jfslog.dmp.
 @z
 
 @x jfs_tune
-          <para>adjusts tunable file system parameters on JFS file systems.</para>
+            adjusts tunable file system parameters on JFS file systems.
 @y
-          <para>adjusts tunable file system parameters on JFS file systems.</para>
+            adjusts tunable file system parameters on JFS file systems.
 @z

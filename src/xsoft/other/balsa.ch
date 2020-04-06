@@ -20,12 +20,10 @@
 @z
 
 @x
-    <para>The <application>Balsa</application> package contains a
-    <application>GNOME</application>-2 based mail client.</para>
+      The <application>Balsa</application> package contains a
+      <application>GNOME</application>-2 based mail client.
 @y
-    <para>
-    <application>Balsa</application> パッケージは <application>GNOME</application>-2 ベースのメールクライアントを提供します。
-    </para>
+      <application>Balsa</application> パッケージは <application>GNOME</application>-2 ベースのメールクライアントを提供します。
 @z
 
 @x
@@ -35,39 +33,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&balsa-download-http;"/></para>
+          Download (HTTP): <ulink url="&balsa-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&balsa-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&balsa-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&balsa-download-ftp;"/></para>
+          Download (FTP): <ulink url="&balsa-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&balsa-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&balsa-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &balsa-md5sum;</para>
+          Download MD5 sum: &balsa-md5sum;
 @y
-        <para>&Download; MD5 sum: &balsa-md5sum;</para>
+          &Download; MD5 sum: &balsa-md5sum;
 @z
 
 @x
-        <para>Download size: &balsa-size;</para>
+          Download size: &balsa-size;
 @y
-        <para>&DownloadSize;: &balsa-size;</para>
+          &DownloadSize;: &balsa-size;
 @z
 
 @x
-        <para>Estimated disk space required: &balsa-buildsize;</para>
+          Estimated disk space required: &balsa-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &balsa-buildsize;</para>
+          &Estimateddiskspacerequired;: &balsa-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &balsa-time;</para>
+          Estimated build time: &balsa-time;
 @y
-        <para>&Estimatedbuildtime;: &balsa-time;</para>
+          &Estimatedbuildtime;: &balsa-time;
 @z
 
 @x
@@ -163,28 +161,22 @@
 @z
 
 @x
-    <para>Install <application>Balsa</application> by running the following
-    commands:</para>
+      Install <application>Balsa</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Balsa</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Balsa</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>
-    &notTestSuite;
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -203,39 +195,79 @@
 %@z
 
 @x
-    <para><option>--enable-smime</option>: Use this option to enable S/MIME
-    support if <application>GnuPG-2.x.x</application> is installed.</para>
+      <option>--enable-smime</option>: Use this option to enable S/MIME
+      support if <application>GnuPG-2.x.x</application> is installed.
 @y
-    <para><option>--enable-smime</option>: Use this option to enable S/MIME
-    support if <application>GnuPG-2.x.x</application> is installed.</para>
+      <option>--enable-smime</option>: Use this option to enable S/MIME
+      support if <application>GnuPG-2.x.x</application> is installed.
 @z
 
 @x
-    <para><option>--with-ldap</option>: Use this option to enable LDAP address
-    book support if <application>OpenLDAP</application> is installed.</para>
+      <option>--with-canberra</option>: Enable libcanberra support.
 @y
-    <para><option>--with-ldap</option>: Use this option to enable LDAP address
-    book support if <application>OpenLDAP</application> is installed.</para>
+      <option>--with-canberra</option>: Enable libcanberra support.
 @z
 
 @x
-    <para><option>--with-gpgme</option>: Use this option to enable GPG support
-    if <quote><application>GnuPG</application> Made Easy</quote>
-    (<application>GPGME</application>) is installed.</para>
+      <option>--with-compface</option>: Enable compface support.
 @y
-    <para><option>--with-gpgme</option>: Use this option to enable GPG support
-    if <quote><application>GnuPG</application> Made Easy</quote>
-    (<application>GPGME</application>) is installed.</para>
+      <option>--with-compface</option>: Enable compface support.
 @z
 
 @x
-    <para><option>--with-sqlite</option>: Use this option to enable SQLite
-    address book support if <application>SQLite</application> is
-    installed.</para>
+      <option>--with-gcr</option>: Use libgcr for TLS support.
 @y
-    <para><option>--with-sqlite</option>: Use this option to enable SQLite
-    address book support if <application>SQLite</application> is
-    installed.</para>
+      <option>--with-gcr</option>: Use libgcr for TLS support.
+@z
+
+@x
+      <option>--with-gss</option>: Enable GSSAPI support.
+@y
+      <option>--with-gss</option>: Enable GSSAPI support.
+@z
+
+@x
+      <option>--with-ldap</option>: Use this option to enable LDAP address
+      book support if <application>OpenLDAP</application> is installed.
+@y
+      <option>--with-ldap</option>: Use this option to enable LDAP address
+      book support if <application>OpenLDAP</application> is installed.
+@z
+
+@x
+      <option>--with-libsecret</option>: Enable strong password
+      support.
+@y
+      <option>--with-libsecret</option>: Enable strong password
+      support.
+@z
+
+@x
+      <option>--with-gpgme</option>: Use this option to enable GPG support
+      if <quote><application>GnuPG</application> Made Easy</quote>
+      (<application>GPGME</application>) is installed.
+@y
+      <option>--with-gpgme</option>: Use this option to enable GPG support
+      if <quote><application>GnuPG</application> Made Easy</quote>
+      (<application>GPGME</application>) is installed.
+@z
+
+@x
+      <option>--with-html-widget</option>: enable the html renderer (remove
+      <parameter>--without-html-widget</parameter>).
+@y
+      <option>--with-html-widget</option>: enable the html renderer (remove
+      <parameter>--without-html-widget</parameter>).
+@z
+
+@x
+      <option>--with-sqlite</option>: Use this option to enable SQLite
+      address book support if <application>SQLite</application> is
+      installed.
+@y
+      <option>--with-sqlite</option>: Use this option to enable SQLite
+      address book support if <application>SQLite</application> is
+      installed.
 @z
 
 @x
@@ -251,31 +283,31 @@
 @z
 
 @x
-      <para>All configuration of <application>Balsa</application> is done
-      through the <application>Balsa</application> menu system, with mailbox
-      configuration done with the Settings&mdash;&gt;Preferences menu.</para>
+        All configuration of <application>Balsa</application> is done
+        through the <application>Balsa</application> menu system, with mailbox
+        configuration done with the Settings&mdash;&gt;Preferences menu.
 @y
-      <para>All configuration of <application>Balsa</application> is done
-      through the <application>Balsa</application> menu system, with mailbox
-      configuration done with the Settings&mdash;&gt;Preferences menu.</para>
+        All configuration of <application>Balsa</application> is done
+        through the <application>Balsa</application> menu system, with mailbox
+        configuration done with the Settings&mdash;&gt;Preferences menu.
 @z
 
 @x
-      <para>If you are unable to connect to your ISP, they probably don't
-      support APOP.  Disable it in Settings/Preferences/POP3/advanced.</para>
+        If you are unable to connect to your ISP, they probably don't
+        support APOP.  Disable it in Settings/Preferences/POP3/advanced.
 @y
-      <para>If you are unable to connect to your ISP, they probably don't
-      support APOP.  Disable it in Settings/Preferences/POP3/advanced.</para>
+        If you are unable to connect to your ISP, they probably don't
+        support APOP.  Disable it in Settings/Preferences/POP3/advanced.
 @z
 
 @x
-      <para>If you enable filters for your incoming POP3 mail, you must have
-      <xref linkend="procmail"/> installed, as the incoming mail will be
-      handed off to <command>procmail</command> for processing.</para>
+        If you enable filters for your incoming POP3 mail, you must have
+        <xref linkend="procmail"/> installed, as the incoming mail will be
+        handed off to <command>procmail</command> for processing.
 @y
-      <para>If you enable filters for your incoming POP3 mail, you must have
-      <xref linkend="procmail"/> installed, as the incoming mail will be
-      handed off to <command>procmail</command> for processing.</para>
+        If you enable filters for your incoming POP3 mail, you must have
+        <xref linkend="procmail"/> installed, as the incoming mail will be
+        handed off to <command>procmail</command> for processing.
 @z
 
 @x

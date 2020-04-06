@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para>The <application>giflib</application> package contains libraries
-    for reading and writing GIFs as well as programs for converting and
-    working with GIF files.</para>
+      The <application>giflib</application> package contains libraries
+      for reading and writing GIFs as well as programs for converting and
+      working with GIF files.
 @y
-    <para>
     <application>giflib</application> パッケージは GIF ファイルの入出力を行うライブラリを提供し、また GIF ファイルの変換処理などを行うプログラムを提供します。
-    </para>
 @z
 
 @x
@@ -36,33 +34,33 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&giflib-download-http;"/></para>
+          Download (HTTP): <ulink url="&giflib-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&giflib-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&giflib-download-http;"/>
 @z
 
 @x
-        <para>Download (HTTP) MD5 sum: &giflib-http-md5sum;</para>
+          Download (HTTP) MD5 sum: &giflib-http-md5sum;
 @y
-        <para>&Download; (HTTP) MD5 sum: &giflib-http-md5sum;</para>
+          &Download; (HTTP) MD5 sum: &giflib-http-md5sum;
 @z
 
 @x
-        <para>Download (HTTP) size: &giflib-http-size;</para>
+          Download (HTTP) size: &giflib-http-size;
 @y
-        <para>&DownloadSize;: &giflib-http-size;</para>
+          &Download; (HTTP) size: &giflib-http-size;
 @z
 
 @x
-        <para>Estimated disk space required: &giflib-buildsize;</para>
+          Estimated disk space required: &giflib-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &giflib-buildsize;</para>
+          &Estimateddiskspacerequired;: &giflib-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &giflib-time;</para>
+          Estimated build time: &giflib-time;
 @y
-        <para>&Estimatedbuildtime;: &giflib-time;</para>
+          &Estimatedbuildtime;: &giflib-time;
 @z
 
 @x
@@ -96,44 +94,38 @@
 @z
 
 @x
-    <para>Install <application>giflib</application> by running the following
-    commands:</para>
+      Install <application>giflib</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>giflib</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>giflib</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
-@z
-
-@x
-    <para>If <xref linkend="xmlto"/> is installed, then the API documentation
-    has been built.  If you wish to install the distributed and the just built
-    documentations, issue, as the
-    <systemitem class="username">root</systemitem> user:</para>
-@y
-    <para>If <xref linkend="xmlto"/> is installed, then the API documentation
-    has been built.  If you wish to install the distributed and the just built
-    documentations, issue, as the
-    <systemitem class="username">root</systemitem> user:</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>find doc ... -exec rm -v {} \;</command>: This command removes
+      <filename>Makefiles</filename>, man and xml files from the documentation
+      directory that would otherwise be installed by the commands that follow.
+@y
+      <command>find doc ... -exec rm -v {} \;</command>: This command removes
+      <filename>Makefiles</filename>, man and xml files from the documentation
+      directory that would otherwise be installed by the commands that follow.
 @z
 
 @x
@@ -169,10 +161,49 @@
 @z
 
 @x gif2rgb
-          <para>converts images saved as GIF to 24-bit RGB images.</para>
+            converts images saved as GIF to 24-bit RGB images.
 @y
-          <para>
-          GIF イメージを 24 ビット RGB イメージに変換します。
-          </para>
+            GIF イメージを 24 ビット RGB イメージに変換します。
 @z
 
+@x gifbuild
+            dumps GIF data in a textual format, or undumps it to a GIF.
+@y
+            dumps GIF data in a textual format, or undumps it to a GIF.
+@z
+
+@x gifclrmp
+            modifies GIF image colormaps.
+@y
+            modifies GIF image colormaps.
+@z
+
+@x giffix
+            clumsily attempts to fix truncated GIF images.
+@y
+            clumsily attempts to fix truncated GIF images.
+@z
+
+@x giftext
+            prints (text only) general information about a GIF file.
+@y
+            prints (text only) general information about a GIF file.
+@z
+
+@x giftool
+            is a GIF transformation tool.
+@y
+            is a GIF transformation tool.
+@z
+
+@x libgif.so
+            contains API functions required by the
+            <application>giflib</application> programs and any other programs
+            needing library functionality to read, write and manipulate GIF
+            images.
+@y
+            contains API functions required by the
+            <application>giflib</application> programs and any other programs
+            needing library functionality to read, write and manipulate GIF
+            images.
+@z

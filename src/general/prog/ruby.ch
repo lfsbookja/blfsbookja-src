@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY ruby-buildsize     "451 MB (add 214 MB for C API docs)">
-  <!ENTITY ruby-time          "1.7 SBU (using parallelism=4; add 4.8 SBU for tests; add 0.5 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "452 MB (add 214 MB for C API docs)">
+  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 4.8 SBU for tests; add 0.5 SBU for C API docs)">
 @y
-  <!ENTITY ruby-buildsize     "451 MB (add 214 MB for C API docs)">
-  <!ENTITY ruby-time          "1.7 SBU (using parallelism=4; add 4.8 SBU for tests; add 0.5 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "452 MB (add 214 MB for C API docs)">
+  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 4.8 SBU for tests; add 0.5 SBU for C API docs)">
 @z
 
 @x

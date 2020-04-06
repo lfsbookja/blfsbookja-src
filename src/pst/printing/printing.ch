@@ -20,11 +20,9 @@
 @z
 
 @x
-  <para>This chapter contains spooling printer management systems and
-  ghostscript applications to render PostScript for display on terminals
-  or paper.</para>
+    This chapter contains spooling printer management systems and
+    ghostscript applications to render PostScript for display on terminals
+    or paper.
 @y
-  <para>
-  本章では、プリンタースプーリングを管理するシステムや、PostScript をディスプレイ上に表示したり印刷したりする ghostscript について説明します。
-  </para>
+    本章ではプリンタースプーリングを管理するシステムや、PostScript をディスプレイ上に表示したり印刷したりする ghostscript について説明します。
 @z

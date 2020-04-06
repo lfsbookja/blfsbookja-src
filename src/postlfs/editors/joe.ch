@@ -20,13 +20,11 @@
 @z
 
 @x
-    <para><application>JOE</application> (Joe's own editor) is a small text
-    editor capable of emulating WordStar, <application>Pico</application>,
-    and <application>Emacs</application>.</para>
+      <application>JOE</application> (Joe's own editor) is a small text
+      editor capable of emulating WordStar, <application>Pico</application>,
+      and <application>Emacs</application>.
 @y
-    <para>
-    <application>JOE</application> (Joe's own editor) は、WordStar, <application>Pico</application>, <application>Emacs</application> といったエディターの機能をエミュレートする軽量なテキストエディターです。
-    </para>
+      <application>JOE</application> (Joe's own editor) は、WordStar, <application>Pico</application>, <application>Emacs</application> といったエディターの機能をエミュレートする軽量なテキストエディターです。
 @z
 
 @x
@@ -36,47 +34,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&joe-download-http;"/></para>
+          Download (HTTP): <ulink url="&joe-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&joe-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&joe-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&joe-download-ftp;"/></para>
+          Download (FTP): <ulink url="&joe-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&joe-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&joe-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &joe-md5sum;</para>
+          Download MD5 sum: &joe-md5sum;
 @y
-        <para>&Download; MD5 sum: &joe-md5sum;</para>
+          &Download; MD5 sum: &joe-md5sum;
 @z
 
 @x
-        <para>Download size: &joe-size;</para>
+          Download size: &joe-size;
 @y
-        <para>&DownloadSize;: &joe-size;</para>
+          &DownloadSize;: &joe-size;
 @z
 
 @x
-        <para>Estimated disk space required: &joe-buildsize;</para>
+          Estimated disk space required: &joe-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &joe-buildsize;</para>
+          &Estimateddiskspacerequired;: &joe-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &joe-time;</para>
+          Estimated build time: &joe-time;
 @y
-        <para>&Estimatedbuildtime;: &joe-time;</para>
+          &Estimatedbuildtime;: &joe-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/joe"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/joe"/></para>
 @z
 
 @x
@@ -86,26 +82,22 @@
 @z
 
 @x
-    <para>Install <application>JOE</application> by running the
-    following commands:</para>
+      Install <application>JOE</application> by running the
+      following commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>JOE</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>JOE</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> になって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> になって以下を実行します。
 @z
 
 @x
@@ -121,15 +113,19 @@
 @z
 
 @x
-      <para><filename>/etc/joe/jmacsrc</filename>,
-      <filename>/etc/joe/joerc</filename>, <filename>/etc/joe/jpicorc</filename>,
-      <filename>/etc/joe/jstarrc</filename>, <filename>/etc/joe/rjoerc</filename>,
-      and <filename>~/.joerc</filename></para>
+        <filename>/etc/joe/jmacsrc</filename>,
+        <filename>/etc/joe/joerc</filename>,
+        <filename>/etc/joe/jpicorc</filename>,
+        <filename>/etc/joe/jstarrc</filename>,
+        <filename>/etc/joe/rjoerc</filename>,
+        and <filename>~/.joerc</filename>
 @y
-      <para><filename>/etc/joe/jmacsrc</filename>,
-      <filename>/etc/joe/joerc</filename>, <filename>/etc/joe/jpicorc</filename>,
-      <filename>/etc/joe/jstarrc</filename>, <filename>/etc/joe/rjoerc</filename>,
-      <filename>~/.joerc</filename></para>
+        <filename>/etc/joe/jmacsrc</filename>,
+        <filename>/etc/joe/joerc</filename>,
+        <filename>/etc/joe/jpicorc</filename>,
+        <filename>/etc/joe/jstarrc</filename>,
+        <filename>/etc/joe/rjoerc</filename>,
+        <filename>~/.joerc</filename>
 @z
 
 @x
@@ -195,83 +191,71 @@
 @z
 
 @x
-          <para>is a symbolic link to <command>joe</command> used to
-          launch <application>Emacs</application> emulation mode.</para>
+            is a symbolic link to <command>joe</command> used to
+            launch <application>Emacs</application> emulation mode.
 @y
-          <para>
-          <command>joe</command> へのシンボリックリンクであり <application>Emacs</application> エミュレーションモードで起動します。
-          </para>
+            <command>joe</command> へのシンボリックリンクであり <application>Emacs</application> エミュレーションモードで起動します。
 @z
 
 @x joe
-          <para>is a small text editor capable of emulating
-          WordStar, <application>Pico</application>, and
-          <application>Emacs</application>.</para>
+            is a small text editor capable of emulating
+            WordStar, <application>Pico</application>, and
+            <application>Emacs</application>.
 @y
-          <para>
-          軽量なテキストエディターであり、WordStar, <application>Pico</application>, <application>Emacs</application> といったエディター機能をエミュレートします。
-          </para>
+            軽量なテキストエディターであり、WordStar, <application>Pico</application>, <application>Emacs</application> といったエディター機能をエミュレートします。
 @z
 
 @x jpico
-          <para>is a symbolic link to <command>joe</command> used to
-          launch <application>Pico</application> emulation mode.</para>
+            is a symbolic link to <command>joe</command> used to
+            launch <application>Pico</application> emulation mode.
 @y
-          <para>
-          <command>joe</command> へのシンボリックリンクであり <application>Pico</application> エミュレーションモードで起動します。
-          </para>
+            <command>joe</command> へのシンボリックリンクであり <application>Pico</application> エミュレーションモードで起動します。
 @z
 
 @x jstar
-          <para>is a symbolic link to <command>joe</command> used to
-          launch WordStar emulation mode.</para>
+            is a symbolic link to <command>joe</command> used to
+            launch WordStar emulation mode.
 @y
-          <para>
-          <command>joe</command> へのシンボリックリンクであり WordStar エミュレーションモードで起動します。
-          </para>
+            <command>joe</command> へのシンボリックリンクであり WordStar エミュレーションモードで起動します。
 @z
 
 @x rjoe
-          <para>is a symbolic link to <command>joe</command> that restricts
-          <application>JOE</application> to editing only files which are
-          specified on the command-line.</para>
+            is a symbolic link to <command>joe</command> that restricts
+            <application>JOE</application> to editing only files which are
+            specified on the command-line.
 @y
-          <para>
-          <command>joe</command> へのシンボリックリンクであり、コマンドラインから指定されたファイルのみを編集するように、限定的に <application>JOE</application> を起動します。
-          </para>
+            <command>joe</command> へのシンボリックリンクであり、コマンドラインから指定されたファイルのみを編集するように、限定的に <application>JOE</application> を起動します。
 @z
 
 @x stringify
-          <para>is a program used by <command>joe</command> to convert rc and
-          .jsf files into a C file (see
-          /usr/share/doc/joe-&joe-version;/util/README).</para>
+            is a program used by <command>joe</command> to convert rc and
+            .jsf files into a C file (see
+            /usr/share/doc/joe-&joe-version;/util/README).
 @y
-          <para>is a program used by <command>joe</command> to convert rc and
-          .jsf files into a C file (see
-          /usr/share/doc/joe-&joe-version;/util/README).</para>
+            is a program used by <command>joe</command> to convert rc and
+            .jsf files into a C file (see
+            /usr/share/doc/joe-&joe-version;/util/README).
 @z
 
 @x termidx
-          <para>is a program used by <command>joe</command> to generate the
-          termcap index file (see
-          /usr/share/doc/joe-&joe-version;/util/README).</para>
+            is a program used by <command>joe</command> to generate the
+            termcap index file (see
+            /usr/share/doc/joe-&joe-version;/util/README).
 @y
-          <para>
-          <command>joe</command> を利用して termcap インデックスファイルを生成します。
-          （/usr/share/doc/joe-&joe-version;/util/README 参照）
-          </para>
+            <command>joe</command> を利用して termcap インデックスファイルを生成します。
+            （/usr/share/doc/joe-&joe-version;/util/README 参照）
 @z
 
 @x uniproc
-          <para>is a program used by <command>joe</command> to generate joe's
-          unicode database file unicat.c from Blocks.txt CaseFolding.txt
-          EastAsianWidth.txt and UnicodeData.txt (find them at
-          /usr/share/doc/joe-&joe-version;/util; see 
-          usr/share/doc/joe-&joe-version;/util/README).</para>
+            is a program used by <command>joe</command> to generate joe's
+            unicode database file unicat.c from Blocks.txt CaseFolding.txt
+            EastAsianWidth.txt and UnicodeData.txt (find them at
+            /usr/share/doc/joe-&joe-version;/util; see 
+            usr/share/doc/joe-&joe-version;/util/README).
 @y
-          <para>is a program used by <command>joe</command> to generate joe's
-          unicode database file unicat.c from Blocks.txt CaseFolding.txt
-          EastAsianWidth.txt and UnicodeData.txt (find them at
-          /usr/share/doc/joe-&joe-version;/util; see 
-          usr/share/doc/joe-&joe-version;/util/README).</para>
+            is a program used by <command>joe</command> to generate joe's
+            unicode database file unicat.c from Blocks.txt CaseFolding.txt
+            EastAsianWidth.txt and UnicodeData.txt (find them at
+            /usr/share/doc/joe-&joe-version;/util; see 
+            usr/share/doc/joe-&joe-version;/util/README).
 @z

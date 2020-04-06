@@ -26,13 +26,11 @@
 @z
 
 @x
-    <para>The <application>xcb-proto</application> package provides the
-    XML-XCB protocol descriptions that <application>libxcb</application>
-    uses to generate the majority of its code and API.</para>
+      The <application>xcb-proto</application> package provides the
+      XML-XCB protocol descriptions that <application>libxcb</application>
+      uses to generate the majority of its code and API.
 @y
-    <para>
-    <application>xcb-proto</application> パッケージは、XML-XCB プロトコルによる記述を取り扱うものであり、<application>libxcb</application> パッケージが、そのコードや API の大半を生成するために利用しています。
-    </para>
+      <application>xcb-proto</application> パッケージは、XML-XCB プロトコルによる記述を取り扱うものであり、<application>libxcb</application> パッケージが、そのコードや API の大半を生成するために利用しています。
 @z
 
 @x
@@ -42,39 +40,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&xcb-proto-download-http;"/></para>
+          Download (HTTP): <ulink url="&xcb-proto-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&xcb-proto-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&xcb-proto-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&xcb-proto-download-ftp;"/></para>
+          Download (FTP): <ulink url="&xcb-proto-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&xcb-proto-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&xcb-proto-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &xcb-proto-md5sum;</para>
+          Download MD5 sum: &xcb-proto-md5sum;
 @y
-        <para>&Download; MD5 sum: &xcb-proto-md5sum;</para>
+          &Download; MD5 sum: &xcb-proto-md5sum;
 @z
 
 @x
-        <para>Download size: &xcb-proto-size;</para>
+          Download size: &xcb-proto-size;
 @y
-        <para>&DownloadSize;: &xcb-proto-size;</para>
+          &DownloadSize;: &xcb-proto-size;
 @z
 
 @x
-        <para>Estimated disk space required: &xcb-proto-buildsize;</para>
+          Estimated disk space required: &xcb-proto-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &xcb-proto-buildsize;</para>
+          &Estimateddiskspacerequired;: &xcb-proto-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &xcb-proto-time;</para>
+          Estimated build time: &xcb-proto-time;
 @y
-        <para>&Estimatedbuildtime;: &xcb-proto-time;</para>
+          &Estimatedbuildtime;: &xcb-proto-time;
 @z
 
 @x
@@ -108,28 +106,22 @@
 @z
 
 @x
-    <para>Install <application>xcb-proto</application> by running the following
-    commands:</para>
+      Install <application>xcb-proto</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>xcb-proto</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>xcb-proto</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

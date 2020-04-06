@@ -20,15 +20,13 @@
 @z
 
 @x
-    <para>The <application>Zip</application> package contains
-    <application>Zip</application> utilities. These
-    are useful for compressing files into <filename>ZIP</filename>
-    archives.</para>
+      The <application>Zip</application> package contains
+      <application>Zip</application> utilities. These
+      are useful for compressing files into <filename>ZIP</filename>
+      archives.
 @y
-    <para>
-    <application>Zip</application> パッケージは <application>Zip</application> ユーティリティを提供します。
-    ファイルを <filename>ZIP</filename> アーカイブ形式に圧縮する際に利用します。
-    </para>
+      <application>Zip</application> パッケージは <application>Zip</application> ユーティリティを提供します。
+      ファイルを <filename>ZIP</filename> アーカイブ形式に圧縮する際に利用します。
 @z
 
 @x
@@ -38,47 +36,45 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&zip-download-http;"/></para>
+          Download (HTTP): <ulink url="&zip-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&zip-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&zip-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&zip-download-ftp;"/></para>
+          Download (FTP): <ulink url="&zip-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&zip-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&zip-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &zip-md5sum;</para>
+          Download MD5 sum: &zip-md5sum;
 @y
-        <para>&Download; MD5 sum: &zip-md5sum;</para>
+          &Download; MD5 sum: &zip-md5sum;
 @z
 
 @x
-        <para>Download size: &zip-size;</para>
+          Download size: &zip-size;
 @y
-        <para>&DownloadSize;: &zip-size;</para>
+          &DownloadSize;: &zip-size;
 @z
 
 @x
-        <para>Estimated disk space required: &zip-buildsize;</para>
+          Estimated disk space required: &zip-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &zip-buildsize;</para>
+          &Estimateddiskspacerequired;: &zip-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &zip-time;</para>
+          Estimated build time: &zip-time;
 @y
-        <para>&Estimatedbuildtime;: &zip-time;</para>
+          &Estimatedbuildtime;: &zip-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/zip"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/zip"/></para>
 @z
 
 @x
@@ -88,26 +84,22 @@
 @z
 
 @x
-    <para>Install <application>Zip</application> by running the following
-    commands:</para>
+      Install <application>Zip</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Zip</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Zip</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -117,19 +109,17 @@
 @z
 
 @x
-    <para><command>make prefix=/usr -f unix/Makefile install</command>: This
-    command overrides the <varname>prefix</varname> variable that is set to
-    <filename class='directory'>/usr/local</filename> in the
-    <filename>unix/Makefile</filename>.
-    Alternatives to <option>generic_gcc</option> can be seen with a
-    <command>make -f unix/Makefile list</command> command.</para>
+      <command>make prefix=/usr -f unix/Makefile install</command>: This
+      command overrides the <varname>prefix</varname> variable that is set to
+      <filename class='directory'>/usr/local</filename> in the
+      <filename>unix/Makefile</filename>.
+      Alternatives to <option>generic_gcc</option> can be seen with a
+      <command>make -f unix/Makefile list</command> command.
 @y
-    <para>
-    <command>make prefix=/usr -f unix/Makefile install</command>:
-    このコマンドは <filename>unix/Makefile</filename> ファイルにて <varname>prefix</varname> 変数が <filename
-    class='directory'>/usr/local</filename> に設定されているものを上書き設定するものです。
-    <option>generic_gcc</option> ではない、別のオプションについては <command>make -f unix/Makefile list</command> を実行することで確認できます。
-    </para>
+      <command>make prefix=/usr -f unix/Makefile install</command>:
+      このコマンドは <filename>unix/Makefile</filename> ファイルにて <varname>prefix</varname> 変数が <filename
+      class='directory'>/usr/local</filename> に設定されているものを上書き設定するものです。
+      <option>generic_gcc</option> ではない、別のオプションについては <command>make -f unix/Makefile list</command> を実行することで確認できます。
 @z
 
 @x
@@ -165,35 +155,28 @@
 @z
 
 @x zip
-          <para>compresses files into a <filename>ZIP</filename> archive.</para>
+            compresses files into a <filename>ZIP</filename> archive.
 @y
-          <para>
-          <filename>ZIP</filename> アーカイブとしてファイルを圧縮します。
-          </para>
+            <filename>ZIP</filename> アーカイブとしてファイルを圧縮します。
 @z
 
 @x zipcloak
-          <para>is a utility to encrypt and decrypt a <filename>ZIP</filename> archive.</para>
+            is a utility to encrypt and decrypt a <filename>ZIP</filename>
+            archive.
 @y
-          <para>
-          <filename>ZIP</filename> アーカイブの暗号化と復号化を行います。
-          </para>
+            <filename>ZIP</filename> アーカイブの暗号化と復号化を行います。
 @z
 
 @x zipnote
-          <para>reads or writes comments stored in a <filename>ZIP</filename>
-          file.</para>
+            reads or writes comments stored in a <filename>ZIP</filename>
+            file.
 @y
-          <para>
-          <filename>ZIP</filename> ファイル内に含まれるコメントの読み込み、書き込みを行います。
-          </para>
+            <filename>ZIP</filename> ファイル内に含まれるコメントの読み込み、書き込みを行います。
 @z
 
 @x zipsplit
-          <para>is a utility to split <filename>ZIP</filename> files into
-          smaller files.</para>
+            is a utility to split <filename>ZIP</filename> files into
+            smaller files.
 @y
-          <para>
-          <filename>ZIP</filename> ファイルを容量の小さなファイルに分割します。
-          </para>
+            <filename>ZIP</filename> ファイルを容量の小さなファイルに分割します。
 @z

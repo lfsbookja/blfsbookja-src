@@ -11,6 +11,7 @@ CHANGE_FILES = \
 	bind-utils.ch     \
 	netutils.ch       \
 	networkmanager.ch \
+	network-manager-applet.ch \
 	nmap.ch           \
 	traceroute.ch     \
 	whois.ch          \

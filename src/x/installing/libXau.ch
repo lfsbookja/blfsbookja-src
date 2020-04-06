@@ -26,14 +26,12 @@
 @z
 
 @x
-    <para>The <application>libXau</application> package contains a library
-    implementing the X11 Authorization Protocol. This is useful for
-    restricting client access to the display.</para>
+      The <application>libXau</application> package contains a library
+      implementing the X11 Authorization Protocol. This is useful for
+      restricting client access to the display.
 @y
-    <para>
-    <application>libXau</application> パッケージは X11 認証プロトコル (X11 Authorization Protocol) を実装したライブラリを提供します。
-    これは、クライアントにおいて表示アクセスを制限する際に利用されます。
-    </para>
+      <application>libXau</application> パッケージは X11 認証プロトコル (X11 Authorization Protocol) を実装したライブラリを提供します。
+      これは、クライアントにおいて表示アクセスを制限する際に利用されます。
 @z
 
 @x
@@ -43,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&libXau-download-http;"/></para>
+          Download (HTTP): <ulink url="&libXau-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&libXau-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&libXau-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&libXau-download-ftp;"/></para>
+          Download (FTP): <ulink url="&libXau-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&libXau-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&libXau-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &libXau-md5sum;</para>
+          Download MD5 sum: &libXau-md5sum;
 @y
-        <para>&Download; MD5 sum: &libXau-md5sum;</para>
+          &Download; MD5 sum: &libXau-md5sum;
 @z
 
 @x
-        <para>Download size: &libXau-size;</para>
+          Download size: &libXau-size;
 @y
-        <para>&DownloadSize;: &libXau-size;</para>
+          &DownloadSize;: &libXau-size;
 @z
 
 @x
-        <para>Estimated disk space required: &libXau-buildsize;</para>
+          Estimated disk space required: &libXau-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &libXau-buildsize;</para>
+          &Estimateddiskspacerequired;: &libXau-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &libXau-time;</para>
+          Estimated build time: &libXau-time;
 @y
-        <para>&Estimatedbuildtime;: &libXau-time;</para>
+          &Estimatedbuildtime;: &libXau-time;
 @z
 
 @x
@@ -86,16 +84,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="xorgproto"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="xorgproto"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libXau"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libXau"/></para>
 @z
 
 @x
@@ -105,28 +107,22 @@
 @z
 
 @x
-    <para>Install <application>libXau</application> by running the following
-    commands:</para>
+      Install <application>libXau</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>libXau</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>libXau</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -162,9 +158,7 @@
 @z
 
 @x libXau-x7
-          <para>is the library of X authority database routines.</para>
+            is the library of X authority database routines.
 @y
-          <para>
-          X 認証データベース処理ライブラリです。
-          </para>
+            X 認証データベース処理ライブラリです。
 @z

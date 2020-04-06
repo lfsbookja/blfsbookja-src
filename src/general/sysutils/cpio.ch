@@ -28,12 +28,10 @@
 @z
 
 @x
-    <para>The <application>cpio</application> package contains
-    tools for archiving.</para>
+      The <application>cpio</application> package contains
+      tools for archiving.
 @y
-    <para>
-    <application>cpio</application> パッケージはアーカイブ処理ツールを提供します。
-    </para>
+      <application>cpio</application> パッケージはアーカイブ処理ツールを提供します。
 @z
 
 @x
@@ -43,39 +41,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&cpio-download-http;"/></para>
+          Download (HTTP): <ulink url="&cpio-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&cpio-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&cpio-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&cpio-download-ftp;"/></para>
+          Download (FTP): <ulink url="&cpio-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&cpio-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&cpio-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &cpio-md5sum;</para>
+          Download MD5 sum: &cpio-md5sum;
 @y
-        <para>&Download; MD5 sum: &cpio-md5sum;</para>
+          &Download; MD5 sum: &cpio-md5sum;
 @z
 
 @x
-        <para>Download size: &cpio-size;</para>
+          Download size: &cpio-size;
 @y
-        <para>&DownloadSize;: &cpio-size;</para>
+          &DownloadSize;: &cpio-size;
 @z
 
 @x
-        <para>Estimated disk space required: &cpio-buildsize;</para>
+          Estimated disk space required: &cpio-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &cpio-buildsize;</para>
+          &Estimateddiskspacerequired;: &cpio-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &cpio-time;</para>
+          Estimated build time: &cpio-time;
 @y
-        <para>&Estimatedbuildtime;: &cpio-time;</para>
+          &Estimatedbuildtime;: &cpio-time;
 @z
 
 @x
@@ -98,10 +96,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/cpio"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/cpio"/></para>
 @z
 
 @x
@@ -111,49 +107,38 @@
 @z
 
 @x
-    <para>Install <application>cpio</application> by running the following
-    commands:</para>
+      Install <application>cpio</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>cpio</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>cpio</application> をビルドします。
 @z
 
 @x
-    <para>If you have <xref linkend="texlive"/>
-    installed and wish to create PDF or Postscript documentation, issue one or
-    both of the following commands:</para>
+      If you have <xref linkend="texlive"/> installed and wish to create PDF
+      or Postscript documentation, issue one or both of the following commands:
 @y
-    <para>
-    <xref linkend="texlive"/> をインストールしていて、PDF や Postscript のドキュメントを生成したい場合は、以下のいずれか、あるいは両方のコマンドを実行します。
-    </para>
+      <xref linkend="texlive"/> をインストールしていて PDF や Postscript のドキュメントを生成したい場合は、以下のいずれか、あるいは両方のコマンドを実行します。
 @z
 
 @x
-    <para>To test the results, issue: <command>make check</command>.</para>
+      To test the results, issue: <command>make check</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make check</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you built PDF or Postscript documentation, install it
-    by issuing the following commands as the
-    <systemitem class="username">root</systemitem> user:</para>
+      If you built PDF or Postscript documentation, install it
+      by issuing the following commands as the
+      <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    PDF や Postscript のドキュメントをビルドした場合は、<systemitem
-    class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-    </para>
+      PDF や Postscript のドキュメントをビルドした場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
 @z
 
 @x
@@ -163,40 +148,34 @@
 @z
 
 @x
-    <para><parameter>--bindir=/bin</parameter>: This parameter installs
-    <command>cpio</command> to <filename class="directory">/bin</filename>
-    instead of <filename class="directory">/usr/bin</filename> as recommended
-    by the FHS guidelines.</para>
+      <parameter>--bindir=/bin</parameter>: This parameter installs
+      <command>cpio</command> to <filename class="directory">/bin</filename>
+      instead of <filename class="directory">/usr/bin</filename> as recommended
+      by the FHS guidelines.
 @y
-    <para>
-    <parameter>--bindir=/bin</parameter>:
-    このパラメーターは、<command>cpio</command> プログラムのインストール先を <filename
-    class="directory">/usr/bin</filename> ではなく<filename
-    class="directory">/bin</filename> にします。
-    これは FHS のガイドラインに従うものです。
-    </para>
+      <parameter>--bindir=/bin</parameter>:
+      このパラメーターは、<command>cpio</command> プログラムのインストール先を <filename
+      class="directory">/usr/bin</filename> ではなく<filename
+      class="directory">/bin</filename> にします。
+      これは FHS のガイドラインに従うものです。
 @z
 
 @x
-    <para><parameter>--enable-mt</parameter>: This parameter forces the
-    building and installation of the <command>mt</command> program.</para>
+      <parameter>--enable-mt</parameter>: This parameter forces the
+      building and installation of the <command>mt</command> program.
 @y
-    <para>
-    <parameter>--enable-mt</parameter>:
-    このパラメーターは <command>mt</command> プログラムをビルドしインストールすることを指示します。
-    </para>
+      <parameter>--enable-mt</parameter>:
+      このパラメーターは <command>mt</command> プログラムをビルドしインストールすることを指示します。
 @z
 
 @x
-    <para><parameter>--with-rmt=/usr/libexec/rmt</parameter>: This parameter
-    inhibits building the <command>rmt</command> program as it is already
-    installed by the <application>Tar</application> package in LFS.</para>
+      <parameter>--with-rmt=/usr/libexec/rmt</parameter>: This parameter
+      inhibits building the <command>rmt</command> program as it is already
+      installed by the <application>Tar</application> package in LFS.
 @y
-    <para>
-    <parameter>--with-rmt=/usr/libexec/rmt</parameter>:
-    このパラメーターは <command>rmt</command> プログラムをビルドしないようにします。
-    そのプログラムは LFS における <application>Tar</application> パッケージにて既にインストールされています。
-    </para>
+      <parameter>--with-rmt=/usr/libexec/rmt</parameter>:
+      このパラメーターは <command>rmt</command> プログラムをビルドしないようにします。
+      そのプログラムは LFS における <application>Tar</application> パッケージにて既にインストールされています。
 @z
 
 @x
@@ -221,7 +200,7 @@
         <seg>/usr/share/doc/cpio-&cpio-version;</seg>
 @y
         <seg>cpio, mt</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/doc/cpio-&cpio-version;</seg>
 @z
 
@@ -232,17 +211,13 @@
 @z
 
 @x cpio
-          <para>copies files to and from archives.</para>
+            copies files to and from archives.
 @y
-          <para>
-          アーカイブからのファイルコピー、あるいはアーカイブへのファイルコピーを行います。
-          </para>
+            アーカイブからのファイルコピー、あるいはアーカイブへのファイルコピーを行います。
 @z
 
 @x mt
-          <para>controls magnetic tape drive operations.</para>
+            controls magnetic tape drive operations.
 @y
-          <para>
-          磁気テープドライブの処理を制御します。
-          </para>
+            磁気テープドライブの処理を制御します。
 @z

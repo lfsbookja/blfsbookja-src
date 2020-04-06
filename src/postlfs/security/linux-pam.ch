@@ -274,12 +274,60 @@
 @z
 
 @x
+        Now set up some generic files.  As root:
+@y
+        Now set up some generic files.  As root:
+@z
+
+@x
+        The remaining generic file depends on whether <xref
+        linkend="cracklib"/> is installed.  If it is installed, use:
+@y
+        The remaining generic file depends on whether <xref
+        linkend="cracklib"/> is installed.  If it is installed, use:
+@z
+
+@x
+          In its default configuration, pam_cracklib will
+          allow multiple case passwords as short as 6 characters, even with
+          the <parameter>minlen</parameter> value set to 11. You should review
+          the pam_cracklib(8) man page and determine if these default values
+          are acceptable for the security of your system.
+@y
+          In its default configuration, pam_cracklib will
+          allow multiple case passwords as short as 6 characters, even with
+          the <parameter>minlen</parameter> value set to 11. You should review
+          the pam_cracklib(8) man page and determine if these default values
+          are acceptable for the security of your system.
+@z
+
+@x
+        If <xref linkend="cracklib"/> is <emphasis>NOT</emphasis> installed,
+        use:
+@y
+        If <xref linkend="cracklib"/> is <emphasis>NOT</emphasis> installed,
+        use:
+@z
+
+@x
+        Now add a restrictive <filename>/etc/pam.d/other</filename>
+        configuration file.  With this file, programs that are PAM aware will
+        not run unless a configuration file specifically for that application
+        is created.
+@y
+        Now add a restrictive <filename>/etc/pam.d/other</filename>
+        configuration file.  With this file, programs that are PAM aware will
+        not run unless a configuration file specifically for that application
+        is created.
+@z
+
+@x
         The <application>PAM</application> man page (<command>man
         pam</command>) provides a good starting point for descriptions
-        of fields and allowable entries. The <ulink
-        url="http://www.linux-pam.org/Linux-PAM-html/Linux-PAM_SAG.html">Linux-PAM
-        System Administrators' Guide</ulink> is recommended for additional
-        information.
+        of fields and allowable entries. The
+        <ulink url="http://www.linux-pam.org/Linux-PAM-html/Linux-PAM_SAG.html">
+          Linux-PAM System Administrators' Guide
+        </ulink> is recommended for additional information.
 @y
         <application>PAM</application> パッケージの Man ページ (<command>man pam</command>) を見れば、各項目と可能な記述内容がよく分かるようになっています。
         <ulink
@@ -288,21 +336,15 @@
 @z
 
 @x
-        Refer to <ulink url="&debian-pam-docs;/modules.html"/> for a list
-        of various third-party modules available.
-@y
-        <ulink
-        url="&debian-pam-docs;/modules.html"/> には、利用可能なサードパーティー製モジュールの一覧が示されています。
-@z
-
-@x
           You should now reinstall the <xref linkend="shadow"/>
           <phrase revision="sysv">package.</phrase>
           <phrase revision="systemd"> and <xref linkend="systemd"/>
           packages.</phrase>
 @y
-          <xref linkend="shadow"/>
-          <phrase revision="systemd"> と <xref linkend="systemd"/></phrase> をここで再インストールしてください。
+          You should now reinstall the <xref linkend="shadow"/>
+          <phrase revision="sysv">package.</phrase>
+          <phrase revision="systemd"> and <xref linkend="systemd"/>
+          packages.</phrase>
 @z
 
 @x

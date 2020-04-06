@@ -115,8 +115,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="pygobject3"/>,
       <xref linkend="python-dbusmock"/>, and 
-      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>
-      (for part of the testsuite).
+      <xref linkend="umockdev"/> (for part of the test suite).
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -124,8 +123,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="pygobject3"/>,
       <xref linkend="python-dbusmock"/>,
-      <ulink url="https://github.com/martinpitt/umockdev">umockdev</ulink>
-      (テストスイートの一部に必要)
+      <xref linkend="umockdev"/> (テストスイートの一部に必要)
     </para>
 @z
 

@@ -26,17 +26,15 @@
 @z
 
 @x
-    <para><application>dhcpcd</application> is an implementation of the
-    DHCP client specified in RFC2131. A DHCP client is useful for connecting
-    your computer to a network which uses DHCP to assign network
-    addresses. dhcpcd strives to be a fully featured, yet very lightweight 
-    DHCP client.</para>
+      <application>dhcpcd</application> is an implementation of the
+      DHCP client specified in RFC2131. A DHCP client is useful for connecting
+      your computer to a network which uses DHCP to assign network
+      addresses. dhcpcd strives to be a fully featured, yet very lightweight
+      DHCP client.
 @y
-    <para>
-    <application>dhcpcd</application> は、RFC2131 にて定義されている DHCP クライアントの実装です。
-    DHCP クライアントは、DHCP を利用してネットワークアドレスが割り当てられたネットワークへのアクセスに用いられます。
-    dhcpcd は十分な機能を有すると同時に、大変軽量な DHCP クライアントです。
-    </para>
+      <application>dhcpcd</application> は、RFC2131 にて定義されている DHCP クライアントの実装です。
+      DHCP クライアントは、DHCP を利用してネットワークアドレスが割り当てられたネットワークへのアクセスに用いられます。
+      dhcpcd は十分な機能を有すると同時に、大変軽量な DHCP クライアントです。
 @z
 
 @x
@@ -46,39 +44,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&dhcpcd-download-http;"/></para>
+          Download (HTTP): <ulink url="&dhcpcd-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&dhcpcd-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&dhcpcd-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&dhcpcd-download-ftp;"/></para>
+          Download (FTP): <ulink url="&dhcpcd-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&dhcpcd-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&dhcpcd-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &dhcpcd-md5sum;</para>
+          Download MD5 sum: &dhcpcd-md5sum;
 @y
-        <para>&Download; MD5 sum: &dhcpcd-md5sum;</para>
+          &Download; MD5 sum: &dhcpcd-md5sum;
 @z
 
 @x
-        <para>Download size: &dhcpcd-size;</para>
+          Download size: &dhcpcd-size;
 @y
-        <para>&DownloadSize;: &dhcpcd-size;</para>
+          &DownloadSize;: &dhcpcd-size;
 @z
 
 @x
-        <para>Estimated disk space required: &dhcpcd-buildsize;</para>
+          Estimated disk space required: &dhcpcd-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &dhcpcd-buildsize;</para>
+          &Estimateddiskspacerequired;: &dhcpcd-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &dhcpcd-time;</para>
+          Estimated build time: &dhcpcd-time;
 @y
-        <para>&Estimatedbuildtime;: &dhcpcd-time;</para>
+          &Estimatedbuildtime;: &dhcpcd-time;
 @z
 
 @x
@@ -90,18 +88,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-       <xref linkend="llvm"/> (with Clang),
-       <xref linkend="ntp"/>,
-       <ulink url="https://chrony.tuxfamily.org/">chronyd</ulink>, and
-       <ulink url="https://github.com/thkukuk/ypbind-mt/">ypbind</ulink>
+      <xref linkend="llvm"/> (with Clang),
+      <xref linkend="ntp"/>,
+      <ulink url="https://chrony.tuxfamily.org/">chronyd</ulink>, and
+      <ulink url="https://github.com/thkukuk/ypbind-mt/">ypbind</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-       <xref linkend="llvm"/> (Clang 込み),
-       <xref linkend="ntp"/>,
-       <ulink url="https://chrony.tuxfamily.org/">chronyd</ulink>,
-       <ulink url="https://github.com/thkukuk/ypbind-mt/">ypbind</ulink>
+      <xref linkend="llvm"/> (with Clang),
+      <xref linkend="ntp"/>,
+      <ulink url="https://chrony.tuxfamily.org/">chronyd</ulink>, and
+      <ulink url="https://github.com/thkukuk/ypbind-mt/">ypbind</ulink>
     </para>
 @z
 
@@ -118,28 +116,22 @@
 @z
 
 @x
-    <para>Install <application>dhcpcd</application> by running the following
-    commands:</para>
+      Install <application>dhcpcd</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>dhcpcd</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>dhcpcd</application> をビルドします。
 @z
 
 @x
-    <para>To test the results, issue: <command>make test</command>.</para>
+      To test the results, issue: <command>make test</command>.
 @y
-    <para>
-    ビルド結果をテストする場合は <command>make test</command> を実行します。
-    </para>
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -201,17 +193,17 @@
 @z
 
 @x
-      <para>To configure <command>dhcpcd</command>, you need to first install
-      the network service script,
-      <filename>/lib/services/dhcpcd</filename>
-      included in the <xref linkend="bootscripts"/> package
-      (as user <systemitem class="username">root</systemitem>):</para>
+        To configure <command>dhcpcd</command>, you need to first install
+        the network service script,
+        <filename>/lib/services/dhcpcd</filename>
+        included in the <xref linkend="bootscripts"/> package
+        (as user <systemitem class="username">root</systemitem>):
 @y
-      <para>To configure <command>dhcpcd</command>, you need to first install
-      the network service script,
-      <filename>/lib/services/dhcpcd</filename>
-      included in the <xref linkend="bootscripts"/> package
-      (as user <systemitem class="username">root</systemitem>):</para>
+        To configure <command>dhcpcd</command>, you need to first install
+        the network service script,
+        <filename>/lib/services/dhcpcd</filename>
+        included in the <xref linkend="bootscripts"/> package
+        (as user <systemitem class="username">root</systemitem>):
 @z
 
 @x
@@ -225,85 +217,49 @@
 @z
 
 @x
-      <para>Whenever <command>dhcpcd</command> configures or shuts down
-      a network interface, it executes hook scripts. For more details
-      about those scripts, see the <command>dhcpcd-run-hooks</command> and
-      <command>dhcpcd</command> man pages.</para>
+          The default for <command>dhcpcd</command> is to set the hostname
+          and mtu. It also overwrites <filename>/etc/resolv.conf </filename>
+          and <filename>/etc/ntp.conf</filename>. These
+          modifications to system files are done by hooks which are stored in
+          <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+          Setup <command>dhcpcd</command> by removing or adding hooks from/to
+          that directory.  The execution of hooks can be disabled by using
+          the <option>--nohook</option> (<option>-C</option>) command line
+          option or by the <option>nohook</option> option in the
+          <filename>/etc/dhcpcd.conf</filename> file.
 @y
-      <para>Whenever <command>dhcpcd</command> configures or shuts down
-      a network interface, it executes hook scripts. For more details
-      about those scripts, see the <command>dhcpcd-run-hooks</command> and
-      <command>dhcpcd</command> man pages.</para>
+          The default for <command>dhcpcd</command> is to set the hostname
+          and mtu. It also overwrites <filename>/etc/resolv.conf </filename>
+          and <filename>/etc/ntp.conf</filename>. These
+          modifications to system files are done by hooks which are stored in
+          <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+          Setup <command>dhcpcd</command> by removing or adding hooks from/to
+          that directory.  The execution of hooks can be disabled by using
+          the <option>--nohook</option> (<option>-C</option>) command line
+          option or by the <option>nohook</option> option in the
+          <filename>/etc/dhcpcd.conf</filename> file.
 @z
 
 @x
-      <para id="dhcpcd-config2">Finally, as the <systemitem
-      class="username">root</systemitem> user create the
-      <filename>/etc/sysconfig/ifconfig.eth0</filename>
-      configuration file using the following commands.  Adjust appropriately
-      for additional interfaces:</para>
+        Finally, as the <systemitem class="username">root</systemitem> user
+        create the <filename>/etc/sysconfig/ifconfig.eth0</filename>
+        configuration file using the following commands. Adjust appropriately
+        for additional interfaces:
 @y
-      <para id="dhcpcd-config2">Finally, as the <systemitem
-      class="username">root</systemitem> user create the
-      <filename>/etc/sysconfig/ifconfig.eth0</filename>
-      configuration file using the following commands.  Adjust appropriately
-      for additional interfaces:</para>
+        Finally, as the <systemitem class="username">root</systemitem> user
+        create the <filename>/etc/sysconfig/ifconfig.eth0</filename>
+        configuration file using the following commands. Adjust appropriately
+        for additional interfaces:
 @z
 
 @x
-      <para>For more information on the appropriate <envar>DHCP_START</envar> and
-      <envar>DHCP_STOP</envar> values, examine the man page for
-      <command>dhcpcd</command>.</para>
+        For more information on the appropriate <envar>DHCP_START</envar> and
+        <envar>DHCP_STOP</envar> values, examine the man page for
+        <command>dhcpcd</command>.
 @y
-      <para>
-      For more information on the appropriate <envar>DHCP_START</envar> and
-      <envar>DHCP_STOP</envar> values, examine the man page for
-      <command>dhcpcd</command>.
-      </para>
-@z
-
-@x
-        <para id="dhcpcd-config3">The default behavior of
-        <command>dhcpcd</command> sets the hostname and mtu settings.  It also
-        overwrites <filename>/etc/resolv.conf</filename> and
-        <filename>/etc/ntp.conf</filename>. 
-@y
-        <para id="dhcpcd-config3">The default behavior of
-        <command>dhcpcd</command> sets the hostname and mtu settings.  It also
-        overwrites <filename>/etc/resolv.conf</filename> and
-        <filename>/etc/ntp.conf</filename>. 
-@z
-
-@x
-        These modifications to system files and settings on system
-        configuration files are done by hooks which are stored in <filename
-        class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
-@y
-        These modifications to system files and settings on system
-        configuration files are done by hooks which are stored in <filename
-        class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
-@z
-
-@x
-        Setup <command>dhcpcd</command> by removing or adding hooks from/to
-        that directory.  The execution of hooks can be disabled by using the
-        <option>--nohook</option> (<option>-C</option>) command line option or
-        by the <option>nohook</option> option in the
-        <filename>/etc/dhcpcd.conf</filename> file.</para> 
-@y
-        Setup <command>dhcpcd</command> by removing or adding hooks from/to
-        that directory.  The execution of hooks can be disabled by using the
-        <option>--nohook</option> (<option>-C</option>) command line option or
-        by the <option>nohook</option> option in the
-        <filename>/etc/dhcpcd.conf</filename> file.</para> 
-@z
-
-@x
-        <para>Review the <command>dhcpcd</command> man page for switches to add
-        to the <envar>DHCP_START</envar> value.</para> 
-@y
-        <para>Review the <command>dhcpcd</command> man page for switches to add
-        to the <envar>DHCP_START</envar> value.</para> 
+        For more information on the appropriate <envar>DHCP_START</envar> and
+        <envar>DHCP_STOP</envar> values, examine the man page for
+        <command>dhcpcd</command>.
 @z
 
 @x revision="sysv"
@@ -312,7 +268,35 @@
       <title>&ConfigInfo;: 固定IP</title>
 @z
 
+@x
+        Although not usual, it is possible that you need
+        to configure <application>dhcpcd</application> to use a fixed ip. Here,
+        we give an example. As the
+        <systemitem class="username">root</systemitem> user create the
+        <filename>/etc/sysconfig/ifconfig.eth0</filename> configuration file
+        using the following commands.  Adjust appropriately for additional
+        interfaces and for the actual ip and router you need:
+@y
+        Although not usual, it is possible that you need
+        to configure <application>dhcpcd</application> to use a fixed ip. Here,
+        we give an example. As the
+        <systemitem class="username">root</systemitem> user create the
+        <filename>/etc/sysconfig/ifconfig.eth0</filename> configuration file
+        using the following commands.  Adjust appropriately for additional
+        interfaces and for the actual ip and router you need:
+@z
 
+@x
+        You can either use DNS servers in
+        <filename>/etc/resolv.conf</filename> from another system, your
+        preferred servers, or just the example
+        <filename>/etc/resolv.conf.head</filename> file below as is:
+@y
+        You can either use DNS servers in
+        <filename>/etc/resolv.conf</filename> from another system, your
+        preferred servers, or just the example
+        <filename>/etc/resolv.conf.head</filename> file below as is:
+@z
 
 @x revision="systemd"
       <title>General Configuration Information</title>
@@ -335,61 +319,39 @@
 @z
 
 @x
-        Whenever <command>dhcpcd</command> configures or shuts down
-        a network interface, it executes hook scripts. For more details
-        about those scripts, see the <command>dhcpcd-run-hooks</command> and
-        <command>dhcpcd</command> man pages.
+          The default behavior of <command>dhcpcd</command> is to set the
+          hostname and the mtu. It also overwrites <filename>/etc/resolv.conf
+          </filename> and <filename>/etc/ntp.conf</filename>. These
+          modifications to system configuration files are done by hooks which
+          are stored in <filename class="directory">
+          /lib/dhcpcd/dhcpcd-hooks</filename>. Setup <command>dhcpcd</command>
+          by removing or adding hooks from/to that directory. The execution
+          of hooks can be disabled by using the <option>--nohook</option>
+          (<option>-C</option>) command line option or by the
+          <option>nohook</option> option in the <filename>/etc/dhcpcd.conf
+          </filename> file.
 @y
-        Whenever <command>dhcpcd</command> configures or shuts down
-        a network interface, it executes hook scripts. For more details
-        about those scripts, see the <command>dhcpcd-run-hooks</command> and
-        <command>dhcpcd</command> man pages.
+          The default behavior of <command>dhcpcd</command> is to set the
+          hostname and the mtu. It also overwrites <filename>/etc/resolv.conf
+          </filename> and <filename>/etc/ntp.conf</filename>. These
+          modifications to system configuration files are done by hooks which
+          are stored in <filename class="directory">
+          /lib/dhcpcd/dhcpcd-hooks</filename>. Setup <command>dhcpcd</command>
+          by removing or adding hooks from/to that directory. The execution
+          of hooks can be disabled by using the <option>--nohook</option>
+          (<option>-C</option>) command line option or by the
+          <option>nohook</option> option in the <filename>/etc/dhcpcd.conf
+          </filename> file.
 @z
 
 @x
-        <para id="dhcpcd-config5">The default behavior of
-        <command>dhcpcd</command> sets the hostname and mtu settings. It also
-        overwrites <filename>/etc/resolv.conf</filename> and
-        <filename>/etc/ntp.conf</filename>.
+          Make sure that you disable the <command>systemd-networkd</command>
+          service or configure it not to manage the interfaces you want to
+          manage with <application>dhcpcd</application>.
 @y
-        <para id="dhcpcd-config5">The default behavior of
-        <command>dhcpcd</command> sets the hostname and mtu settings. It also
-        overwrites <filename>/etc/resolv.conf</filename> and
-        <filename>/etc/ntp.conf</filename>.
-@z
-
-@x
-        These modifications to system files and settings on system
-        configuration files are done by hooks which are stored in <filename
-        class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
-@y
-        These modifications to system files and settings on system
-        configuration files are done by hooks which are stored in <filename
-        class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
-@z
-
-@x
-        Setup <command>dhcpcd</command> by removing or adding hooks from/to
-        that directory.  The execution of hooks can be disabled by using the
-        <option>--nohook</option> (<option>-C</option>) command line option or
-        by the <option>nohook</option> option in the
-        <filename>/etc/dhcpcd.conf</filename> file.</para>
-@y
-        Setup <command>dhcpcd</command> by removing or adding hooks from/to
-        that directory.  The execution of hooks can be disabled by using the
-        <option>--nohook</option> (<option>-C</option>) command line option or
-        by the <option>nohook</option> option in the
-        <filename>/etc/dhcpcd.conf</filename> file.</para>
-@z
-
-@x
-        Make sure that you disable the <command>systemd-networkd</command>
-        service or configure it not to manage the interfaces you want to manage
-        with <application>dhcpcd</application>.
-@y
-        Make sure that you disable the <command>systemd-networkd</command>
-        service or configure it not to manage the interfaces you want to manage
-        with <application>dhcpcd</application>.
+          Make sure that you disable the <command>systemd-networkd</command>
+          service or configure it not to manage the interfaces you want to
+          manage with <application>dhcpcd</application>.
 @z
 
 @x
@@ -453,10 +415,17 @@
 @z
 
 @x dhcpcd
-          <para>is an implementation of the DHCP client specified
-          in RFC2131.</para>
+            is an implementation of the DHCP client specified in RFC2131.
 @y
-          <para>
-          RFC2131 にて定義されている DHCP クライアントの実装です。
-          </para>
+            RFC2131 にて定義されている DHCP クライアントの実装です。
+@z
+
+@x udev.so
+            adds udev support for interface arrival and departure; this is
+            because udev likes to rename the interface, which it can't do if
+            dhcpcd grabs it first.
+@y
+            adds udev support for interface arrival and departure; this is
+            because udev likes to rename the interface, which it can't do if
+            dhcpcd grabs it first.
 @z

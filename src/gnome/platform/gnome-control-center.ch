@@ -118,19 +118,21 @@
       <xref linkend="ibus"/>, 
       <xref linkend="libhandy"/>, and
       <xref linkend="ModemManager"/> and
-      <xref linkend="network-manager-applet"/> (for the Network Panel)
+      <xref linkend="libnma"/> (for the Network Panel)
+      <!-- gnome-remote-desktop can be used in the Sharing panel. -->
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="cheese"/>,
-      <xref linkend="cups"/>,
+      <xref linkend="cups"/> and
       <xref linkend="samba"/> (for the Printers Panel),
       <xref linkend="gnome-bluetooth"/>,
       <xref linkend="ibus"/>, 
-      <xref linkend="libhandy"/>,
-      <xref linkend="ModemManager"/>,
-      <xref linkend="network-manager-applet"/> (for the Network Panel)
+      <xref linkend="libhandy"/>, and
+      <xref linkend="ModemManager"/> and
+      <xref linkend="libnma"/> (for the Network Panel)
+      <!-- gnome-remote-desktop can be used in the Sharing panel. -->
     </para>
 @z
 

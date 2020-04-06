@@ -182,23 +182,23 @@
 @z
 
 @x
-    <para>The <application>p11-kit</application> trust module
-    (<filename>/usr/lib/pkcs11/p11-kit-trust.so</filename>) can be used as a
-    drop-in replacement for <filename>/usr/lib/libnssckbi.so</filename> to
-    transparently make the system CAs available to
-    <application>NSS</application> aware applications, rather than the static
-    list provided by <filename>/usr/lib/libnssckbi.so</filename>. As the
-    <systemitem class="username">root</systemitem> user, execute the following
-    commands:</para>
+      The <application>p11-kit</application> trust module
+      (<filename>/usr/lib/pkcs11/p11-kit-trust.so</filename>) can be used as a
+      drop-in replacement for <filename>/usr/lib/libnssckbi.so</filename> to
+      transparently make the system CAs available to
+      <application>NSS</application> aware applications, rather than the static
+      list provided by <filename>/usr/lib/libnssckbi.so</filename>. As the
+      <systemitem class="username">root</systemitem> user, execute the
+      following commands:
 @y
-    <para>The <application>p11-kit</application> trust module
-    (<filename>/usr/lib/pkcs11/p11-kit-trust.so</filename>) can be used as a
-    drop-in replacement for <filename>/usr/lib/libnssckbi.so</filename> to
-    transparently make the system CAs available to
-    <application>NSS</application> aware applications, rather than the static
-    list provided by <filename>/usr/lib/libnssckbi.so</filename>. As the
-    <systemitem class="username">root</systemitem> user, execute the following
-    commands:</para>
+      The <application>p11-kit</application> trust module
+      (<filename>/usr/lib/pkcs11/p11-kit-trust.so</filename>) can be used as a
+      drop-in replacement for <filename>/usr/lib/libnssckbi.so</filename> to
+      transparently make the system CAs available to
+      <application>NSS</application> aware applications, rather than the static
+      list provided by <filename>/usr/lib/libnssckbi.so</filename>. As the
+      <systemitem class="username">root</systemitem> user, execute the
+      following commands:
 @z
 
 @x
@@ -257,7 +257,7 @@
 
 @x p11-kit
             is a command line tool that can be used to perform operations
-             on PKCS#11 modules configured on the system.
+            on PKCS#11 modules configured on the system.
 @y
             システム内に導入されている PKCS#11 モジュールを制御するためのコマンドラインツール。
 @z

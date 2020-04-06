@@ -20,14 +20,12 @@
 @z
 
 @x
-  <para>Virtualization allows running a complete operating system, or virtual
-  machine (VM), within another operating environment as a task.  There are
-  several commercial and open source environments that either emulate another
-  processor or utilize the hardware virtualization features of the host
-  processor.</para>
+    Virtualization allows running a complete operating system, or virtual
+    machine (VM), within another operating environment as a task.  There are
+    several commercial and open source environments that either emulate another
+    processor or utilize the hardware virtualization features of the host
+    processor.
 @y
-  <para>
-  仮想化 (Virtualization) とは、一つのオペレーティングシステムの上に、それとは別の完全なオペレーティングシステムや仮想マシン (virtual machine; VM) をタスクとして稼動させるものです。
-  これを為すための有償のソフトウェアやオープンソースの環境が提供されており、異なるプロセッサーをエミュレートしたり、ホストプロセッサーのハードウェア仮想機構を利用したりするものがあります。
-  </para>
+    仮想化 (Virtualization) とは、一つのオペレーティングシステムの上に、それとは別の完全なオペレーティングシステムや仮想マシン (virtual machine; VM) をタスクとして稼動させるものです。
+    これを為すための有償のソフトウェアやオープンソースの環境が提供されており、異なるプロセッサーをエミュレートしたり、ホストプロセッサーのハードウェア仮想機構を利用したりするものがあります。
 @z

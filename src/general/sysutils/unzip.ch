@@ -26,43 +26,37 @@
 @z
 
 @x
-    <para>The <application>UnZip</application> package contains
-    <filename>ZIP</filename> extraction utilities. These are useful for
-    extracting files from <filename>ZIP</filename> archives.
-    <filename>ZIP</filename> archives are created with
-    <application>PKZIP</application> or <application>Info-ZIP</application>
-    utilities, primarily in a DOS environment.</para>
+      The <application>UnZip</application> package contains
+      <filename>ZIP</filename> extraction utilities. These are useful for
+      extracting files from <filename>ZIP</filename> archives.
+      <filename>ZIP</filename> archives are created with
+      <application>PKZIP</application> or <application>Info-ZIP</application>
+      utilities, primarily in a DOS environment.
 @y
-    <para>The <application>UnZip</application> package contains
-    <filename>ZIP</filename> extraction utilities. These are useful for
-    extracting files from <filename>ZIP</filename> archives.
-    <filename>ZIP</filename> archives are created with
-    <application>PKZIP</application> or <application>Info-ZIP</application>
-    utilities, primarily in a DOS environment.</para>
+      The <application>UnZip</application> package contains
+      <filename>ZIP</filename> extraction utilities. These are useful for
+      extracting files from <filename>ZIP</filename> archives.
+      <filename>ZIP</filename> archives are created with
+      <application>PKZIP</application> or <application>Info-ZIP</application>
+      utilities, primarily in a DOS environment.
 @z
 
 @x
-      <para>The previous version of the <application>UnZip</application>
-      package had some locale related issues. Currently there are no BLFS
-      editors capable of testing these locale issues. Therefore, the
-      locale related information is left on this page, but has not been
-      tested. <!--Note that the patch recommended for the locale issues will not
-      apply to this version of <application>UnZip</application>. See the
-      discussion below in <xref linkend="unzip-locale-issues"/>. --> A more
-      general discussion of these problems can be found in the
-      <xref linkend="locale-assumed-encoding"/> section of the
-      <xref linkend="locale-issues"/> page.</para>
+        The previous version of the <application>UnZip</application>
+        package had some locale related issues. Currently there are no BLFS
+        editors capable of testing these locale issues. Therefore, the
+        locale related information is left on this page, but has not been
+        tested. A more general discussion of these problems can be found in
+        the <xref linkend="locale-assumed-encoding"/> section of the <xref
+        linkend="locale-issues"/> page.
 @y
-      <para>The previous version of the <application>UnZip</application>
-      package had some locale related issues. Currently there are no BLFS
-      editors capable of testing these locale issues. Therefore, the
-      locale related information is left on this page, but has not been
-      tested. <!--Note that the patch recommended for the locale issues will not
-      apply to this version of <application>UnZip</application>. See the
-      discussion below in <xref linkend="unzip-locale-issues"/>. --> A more
-      general discussion of these problems can be found in the
-      <xref linkend="locale-assumed-encoding"/> section of the
-      <xref linkend="locale-issues"/> page.</para>
+        The previous version of the <application>UnZip</application>
+        package had some locale related issues. Currently there are no BLFS
+        editors capable of testing these locale issues. Therefore, the
+        locale related information is left on this page, but has not been
+        tested. A more general discussion of these problems can be found in
+        the <xref linkend="locale-assumed-encoding"/> section of the <xref
+        linkend="locale-issues"/> page.
 @z
 
 @x
@@ -72,39 +66,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&unzip-download-http;"/></para>
+          Download (HTTP): <ulink url="&unzip-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&unzip-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&unzip-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&unzip-download-ftp;"/></para>
+          Download (FTP): <ulink url="&unzip-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&unzip-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&unzip-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &unzip-md5sum;</para>
+          Download MD5 sum: &unzip-md5sum;
 @y
-        <para>&Download; MD5 sum: &unzip-md5sum;</para>
+          &Download; MD5 sum: &unzip-md5sum;
 @z
 
 @x
-        <para>Download size: &unzip-size;</para>
+          Download size: &unzip-size;
 @y
-        <para>&DownloadSize;: &unzip-size;</para>
+          &DownloadSize;: &unzip-size;
 @z
 
 @x
-        <para>Estimated disk space required: &unzip-buildsize;</para>
+          Estimated disk space required: &unzip-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &unzip-buildsize;</para>
+          &Estimateddiskspacerequired;: &unzip-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &unzip-time;</para>
+          Estimated build time: &unzip-time;
 @y
-        <para>&Estimatedbuildtime;: &unzip-time;</para>
+          &Estimatedbuildtime;: &unzip-time;
 @z
 
 @x
@@ -114,9 +108,9 @@
 @z
 
 @x
-        <para>Required patch: <ulink
+          Required patch: <ulink
 @y
-        <para>必須のパッチ: <ulink
+          必須のパッチ: <ulink
 @z
 
 @x
@@ -132,135 +126,145 @@
 @z
 
 @x
-      <para>Use of <application>UnZip</application> in the
-      <application>JDK</application>, <application>Mozilla</application>,
-      <application>DocBook</application> or any other BLFS package
-      installation is not a problem, as BLFS instructions never use
-      <application>UnZip</application> to extract a file with non-ASCII
-      characters in the file's name.</para>
+        Use of <application>UnZip</application> in the
+        <application>JDK</application>, <application>Mozilla</application>,
+        <application>DocBook</application> or any other BLFS package
+        installation is not a problem, as BLFS instructions never use
+        <application>UnZip</application> to extract a file with non-ASCII
+        characters in the file's name.
 @y
-      <para>Use of <application>UnZip</application> in the
-      <application>JDK</application>, <application>Mozilla</application>,
-      <application>DocBook</application> or any other BLFS package
-      installation is not a problem, as BLFS instructions never use
-      <application>UnZip</application> to extract a file with non-ASCII
-      characters in the file's name.</para>
+        Use of <application>UnZip</application> in the
+        <application>JDK</application>, <application>Mozilla</application>,
+        <application>DocBook</application> or any other BLFS package
+        installation is not a problem, as BLFS instructions never use
+        <application>UnZip</application> to extract a file with non-ASCII
+        characters in the file's name.
 @z
 
 @x
-    <para>The <application>UnZip</application> package assumes that filenames
-    stored in the ZIP archives created on non-Unix systems are encoded in
-    CP850, and that they should be converted to ISO-8859-1 when writing files
-    onto the filesystem. Such assumptions are not always valid. In fact,
-    inside the ZIP archive, filenames are encoded in the DOS codepage that is
-    in use in the relevant country, and the filenames on disk should be in
-    the locale encoding. In MS Windows, the OemToChar() C function (from
-    <filename>User32.DLL</filename>) does the correct conversion (which is
-    indeed the conversion from CP850 to a superset of ISO-8859-1 if MS
-    Windows is set up to use the US English language), but there is no
-    equivalent in Linux.</para>
+      These issues are thought to be fixed in the patch. But since none
+      of the editors have data to test this, the following workarounds are
+      retained in case they might still be needed.
 @y
-    <para>The <application>UnZip</application> package assumes that filenames
-    stored in the ZIP archives created on non-Unix systems are encoded in
-    CP850, and that they should be converted to ISO-8859-1 when writing files
-    onto the filesystem. Such assumptions are not always valid. In fact,
-    inside the ZIP archive, filenames are encoded in the DOS codepage that is
-    in use in the relevant country, and the filenames on disk should be in
-    the locale encoding. In MS Windows, the OemToChar() C function (from
-    <filename>User32.DLL</filename>) does the correct conversion (which is
-    indeed the conversion from CP850 to a superset of ISO-8859-1 if MS
-    Windows is set up to use the US English language), but there is no
-    equivalent in Linux.</para>
+      These issues are thought to be fixed in the patch. But since none
+      of the editors have data to test this, the following workarounds are
+      retained in case they might still be needed.
 @z
 
 @x
-    <para>When using <command>unzip</command> to unpack a ZIP archive
-    containing non-ASCII filenames, the filenames are damaged because
-    <command>unzip</command> uses improper conversion when any of its
-    encoding assumptions are incorrect. For example, in the ru_RU.KOI8-R
-    locale, conversion of filenames from CP866 to KOI8-R is required, but
-    conversion from CP850 to ISO-8859-1 is done, which produces filenames
-    consisting of undecipherable characters instead of words (the closest
-    equivalent understandable example for English-only users is rot13). There
-    are several ways around this limitation:</para>
+      The <application>UnZip</application> package assumes that filenames
+      stored in the ZIP archives created on non-Unix systems are encoded in
+      CP850, and that they should be converted to ISO-8859-1 when writing files
+      onto the filesystem. Such assumptions are not always valid. In fact,
+      inside the ZIP archive, filenames are encoded in the DOS codepage that is
+      in use in the relevant country, and the filenames on disk should be in
+      the locale encoding. In MS Windows, the OemToChar() C function (from
+      <filename>User32.DLL</filename>) does the correct conversion (which is
+      indeed the conversion from CP850 to a superset of ISO-8859-1 if MS
+      Windows is set up to use the US English language), but there is no
+      equivalent in Linux.
 @y
-    <para>When using <command>unzip</command> to unpack a ZIP archive
-    containing non-ASCII filenames, the filenames are damaged because
-    <command>unzip</command> uses improper conversion when any of its
-    encoding assumptions are incorrect. For example, in the ru_RU.KOI8-R
-    locale, conversion of filenames from CP866 to KOI8-R is required, but
-    conversion from CP850 to ISO-8859-1 is done, which produces filenames
-    consisting of undecipherable characters instead of words (the closest
-    equivalent understandable example for English-only users is rot13). There
-    are several ways around this limitation:</para>
+      The <application>UnZip</application> package assumes that filenames
+      stored in the ZIP archives created on non-Unix systems are encoded in
+      CP850, and that they should be converted to ISO-8859-1 when writing files
+      onto the filesystem. Such assumptions are not always valid. In fact,
+      inside the ZIP archive, filenames are encoded in the DOS codepage that is
+      in use in the relevant country, and the filenames on disk should be in
+      the locale encoding. In MS Windows, the OemToChar() C function (from
+      <filename>User32.DLL</filename>) does the correct conversion (which is
+      indeed the conversion from CP850 to a superset of ISO-8859-1 if MS
+      Windows is set up to use the US English language), but there is no
+      equivalent in Linux.
 @z
 
 @x
-    <para>1) For unpacking ZIP archives with filenames containing non-ASCII
-    characters, use <ulink url="http://www.winzip.com/">WinZip</ulink> while
-    running the <ulink url="http://www.winehq.com/">Wine</ulink> Windows
-    emulator.</para>
+      When using <command>unzip</command> to unpack a ZIP archive
+      containing non-ASCII filenames, the filenames are damaged because
+      <command>unzip</command> uses improper conversion when any of its
+      encoding assumptions are incorrect. For example, in the ru_RU.KOI8-R
+      locale, conversion of filenames from CP866 to KOI8-R is required, but
+      conversion from CP850 to ISO-8859-1 is done, which produces filenames
+      consisting of undecipherable characters instead of words (the closest
+      equivalent understandable example for English-only users is rot13). There
+      are several ways around this limitation:
 @y
-    <para>1) For unpacking ZIP archives with filenames containing non-ASCII
-    characters, use <ulink url="http://www.winzip.com/">WinZip</ulink> while
-    running the <ulink url="http://www.winehq.com/">Wine</ulink> Windows
-    emulator.</para>
+      When using <command>unzip</command> to unpack a ZIP archive
+      containing non-ASCII filenames, the filenames are damaged because
+      <command>unzip</command> uses improper conversion when any of its
+      encoding assumptions are incorrect. For example, in the ru_RU.KOI8-R
+      locale, conversion of filenames from CP866 to KOI8-R is required, but
+      conversion from CP850 to ISO-8859-1 is done, which produces filenames
+      consisting of undecipherable characters instead of words (the closest
+      equivalent understandable example for English-only users is rot13). There
+      are several ways around this limitation:
 @z
 
 @x
-    <para>2) Use <command>bsdtar -xf</command> from
-    <xref role="nodep" linkend="libarchive"/> to unpack the ZIP archive.
-    Then fix the damage made to
-    the filenames using the <command>convmv</command> tool
-    (<ulink url="http://j3e.de/linux/convmv/"/>). The following is an example
-    for the zh_CN.UTF-8 locale:</para>
+      1) For unpacking ZIP archives with filenames containing non-ASCII
+      characters, use <ulink url="http://www.winzip.com/">WinZip</ulink> while
+      running the <ulink url="http://www.winehq.com/">Wine</ulink> Windows
+      emulator.
 @y
-    <para>2) Use <command>bsdtar -xf</command> from
-    <xref role="nodep" linkend="libarchive"/> to unpack the ZIP archive.
-    Then fix the damage made to
-    the filenames using the <command>convmv</command> tool
-    (<ulink url="http://j3e.de/linux/convmv/"/>). The following is an example
-    for the zh_CN.UTF-8 locale:</para>
+      1) For unpacking ZIP archives with filenames containing non-ASCII
+      characters, use <ulink url="http://www.winzip.com/">WinZip</ulink> while
+      running the <ulink url="http://www.winehq.com/">Wine</ulink> Windows
+      emulator.
 @z
 
 @x
-    <para>3) Apply the optional
-    <filename>unzip-5.50-alt-iconv-v1.1.patch</filename> patch to
-    <application>UnZip</application>. It will apply with some offsets.</para>
+      2) Use <command>bsdtar -xf</command> from
+      <xref role="nodep" linkend="libarchive"/> to unpack the ZIP archive.
+      Then fix the damage made to
+      the filenames using the <command>convmv</command> tool
+      (<ulink url="http://j3e.de/linux/convmv/"/>). The following is an example
+      for the zh_CN.UTF-8 locale:
 @y
-    <para>3) Apply the optional
-    <filename>unzip-5.50-alt-iconv-v1.1.patch</filename> patch to
-    <application>UnZip</application>. It will apply with some offsets.</para>
+      2) Use <command>bsdtar -xf</command> from
+      <xref role="nodep" linkend="libarchive"/> to unpack the ZIP archive.
+      Then fix the damage made to
+      the filenames using the <command>convmv</command> tool
+      (<ulink url="http://j3e.de/linux/convmv/"/>). The following is an example
+      for the zh_CN.UTF-8 locale:
 @z
 
 @x
-    <para>It allows to specify the assumed filename encoding in the ZIP
-    archive using the <option>-O charset_name</option> option and the
-    on-disk filename encoding using the <option>-I charset_name</option>
-    option. Defaults: the on-disk filename encoding is the locale encoding,
-    the encoding inside the ZIP archive is guessed according to the builtin
-    table based on the locale encoding. For US English users, this still
-    means that unzip converts from CP850 to ISO-8859-1 by default.</para>
+      3) Apply the optional
+      <filename>unzip-5.50-alt-iconv-v1.1.patch</filename> patch to
+      <application>UnZip</application>. It will apply with some offsets.
 @y
-    <para>It allows to specify the assumed filename encoding in the ZIP
-    archive using the <option>-O charset_name</option> option and the
-    on-disk filename encoding using the <option>-I charset_name</option>
-    option. Defaults: the on-disk filename encoding is the locale encoding,
-    the encoding inside the ZIP archive is guessed according to the builtin
-    table based on the locale encoding. For US English users, this still
-    means that unzip converts from CP850 to ISO-8859-1 by default.</para>
+      3) Apply the optional
+      <filename>unzip-5.50-alt-iconv-v1.1.patch</filename> patch to
+      <application>UnZip</application>. It will apply with some offsets.
 @z
 
 @x
-    <para>Caveat: this method works only with 8-bit locale encodings, not
-    with UTF-8. Attempting to use a patched <command>unzip</command> in UTF-8
-    locales may result in a segmentation fault and is probably a security
-    risk.</para>
+      It allows to specify the assumed filename encoding in the ZIP
+      archive using the <option>-O charset_name</option> option and the
+      on-disk filename encoding using the <option>-I charset_name</option>
+      option. Defaults: the on-disk filename encoding is the locale encoding,
+      the encoding inside the ZIP archive is guessed according to the builtin
+      table based on the locale encoding. For US English users, this still
+      means that unzip converts from CP850 to ISO-8859-1 by default.
 @y
-    <para>Caveat: this method works only with 8-bit locale encodings, not
-    with UTF-8. Attempting to use a patched <command>unzip</command> in UTF-8
-    locales may result in a segmentation fault and is probably a security
-    risk.</para>
+      It allows to specify the assumed filename encoding in the ZIP
+      archive using the <option>-O charset_name</option> option and the
+      on-disk filename encoding using the <option>-I charset_name</option>
+      option. Defaults: the on-disk filename encoding is the locale encoding,
+      the encoding inside the ZIP archive is guessed according to the builtin
+      table based on the locale encoding. For US English users, this still
+      means that unzip converts from CP850 to ISO-8859-1 by default.
+@z
+
+@x
+      Caveat: this method works only with 8-bit locale encodings, not
+      with UTF-8. Attempting to use a patched <command>unzip</command> in UTF-8
+      locales may result in a segmentation fault and is probably a security
+      risk.
+@y
+      Caveat: this method works only with 8-bit locale encodings, not
+      with UTF-8. Attempting to use a patched <command>unzip</command> in UTF-8
+      locales may result in a segmentation fault and is probably a security
+      risk.
 @z
 
 @x
@@ -282,15 +286,15 @@
 @z
 
 @x
-    <para>The test suite does not work for target <quote>generic</quote>.</para>
+      The test suite does not work for target <quote>generic</quote>.
 @y
-    <para>The test suite does not work for target <quote>generic</quote>.</para>
+      The test suite does not work for target <quote>generic</quote>.
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -300,17 +304,19 @@
 @z
 
 @x
-    <para><command>make -f unix/Makefile generic</command>:
-    This target begins by running a configure script (unlike the older targets
-    such as linux and linux_noasm) which creates a flags file that is then used
-    in the build. This ensures that the 32-bit x86 build receives the right
-    flags to unzip files which which are larger than 2GB when extracted.</para>
+      <command>make -f unix/Makefile generic</command>:
+      This target begins by running a configure script (unlike the older
+      targets such as linux and linux_noasm) which creates a flags file that
+      is then used in the build. This ensures that the 32-bit x86 build
+      receives the right flags to unzip files which which are larger than 2GB
+      when extracted.
 @y
-    <para><command>make -f unix/Makefile generic</command>:
-    This target begins by running a configure script (unlike the older targets
-    such as linux and linux_noasm) which creates a flags file that is then used
-    in the build. This ensures that the 32-bit x86 build receives the right
-    flags to unzip files which which are larger than 2GB when extracted.</para>
+      <command>make -f unix/Makefile generic</command>:
+      This target begins by running a configure script (unlike the older
+      targets such as linux and linux_noasm) which creates a flags file that
+      is then used in the build. This ensures that the 32-bit x86 build
+      receives the right flags to unzip files which which are larger than 2GB
+      when extracted.
 @z
 
 @x
@@ -335,8 +341,8 @@
         <seg>None</seg>
 @y
         <seg>funzip, unzip, unzipfsx, zipgrep, and zipinfo</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -346,56 +352,55 @@
 @z
 
 @x funzip
-          <para>allows the output of <command>unzip</command> commands to be
-          redirected.</para>
+            allows the output of <command>unzip</command> commands to be
+            redirected.
 @y
-          <para>allows the output of <command>unzip</command> commands to be
-          redirected.</para>
+            allows the output of <command>unzip</command> commands to be
+            redirected.
 @z
 
 @x unzip
-          <para>lists, tests or extracts files from a <filename>ZIP</filename>
-          archive.</para>
+            lists, tests or extracts files from a <filename>ZIP</filename>
+            archive.
 @y
-          <para>lists, tests or extracts files from a <filename>ZIP</filename>
-          archive.</para>
+            lists, tests or extracts files from a <filename>ZIP</filename>
+            archive.
 @z
 
 @x unzipfsx
-          <para>is a self-extracting stub that can be prepended to a
-          <filename>ZIP</filename> archive.  Files in this format allow the
-          recipient to decompress the archive without installing
-          <application>UnZip</application>.</para>
+            is a self-extracting stub that can be prepended to a
+            <filename>ZIP</filename> archive.  Files in this format allow the
+            recipient to decompress the archive without installing
+            <application>UnZip</application>.
 @y
-          <para>is a self-extracting stub that can be prepended to a
-          <filename>ZIP</filename> archive.  Files in this format allow the
-          recipient to decompress the archive without installing
-          <application>UnZip</application>.</para>
+            is a self-extracting stub that can be prepended to a
+            <filename>ZIP</filename> archive.  Files in this format allow the
+            recipient to decompress the archive without installing
+            <application>UnZip</application>.
 @z
 
 @x zipgrep
-          <para>searches files in a <filename>ZIP</filename> archive for
-          lines matching a pattern.</para>
+            searches files in a <filename>ZIP</filename> archive for
+            lines matching a pattern.
 @y
-          <para>searches files in a <filename>ZIP</filename> archive for
-          lines matching a pattern.</para>
+            searches files in a <filename>ZIP</filename> archive for
+            lines matching a pattern.
 @z
 
 @x zipinfo
-          <para>produces technical information about the files in a
-          <filename>ZIP</filename> archive, including file access permissions,
-          encryption status, type of compression, etc.</para>
+            produces technical information about the files in a
+            <filename>ZIP</filename> archive, including file access permissions,
+            encryption status, type of compression, etc.
 @y
-          <para>produces technical information about the files in a
-          <filename>ZIP</filename> archive, including file access permissions,
-          encryption status, type of compression, etc.</para>
+            produces technical information about the files in a
+            <filename>ZIP</filename> archive, including file access permissions,
+            encryption status, type of compression, etc.
 @z
 
 @x libunzip.so
-          <para>contains the API functions required by the
-          <application>UnZip</application> programs.</para>
+            contains the API functions required by the
+            <application>UnZip</application> programs.
 @y
-          <para>contains the API functions required by the
-          <application>UnZip</application> programs.</para>
+            contains the API functions required by the
+            <application>UnZip</application> programs.
 @z
-

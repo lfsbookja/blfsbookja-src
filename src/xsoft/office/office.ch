@@ -20,15 +20,15 @@
 @z
 
 @x
-  <para>This chapter is a collection of programs that are useful for viewing
-  or editing office documents. Some specialise in doing one thing (such as word
-  processing or manipulating a spreadsheet). <application>Libre
-  Office</application> is a suite of programs that can manipulate many different
-  formats including powerpoint presentations.</para>
+    This chapter is a collection of programs that are useful for viewing
+    or editing office documents. Some specialise in doing one thing (such as
+    word processing or manipulating a spreadsheet).
+    <application>LibreOffice</application> is a suite of programs that can
+    manipulate many different formats including powerpoint presentations.
 @y
-  <para>This chapter is a collection of programs that are useful for viewing
-  or editing office documents. Some specialise in doing one thing (such as word
-  processing or manipulating a spreadsheet). <application>Libre
-  Office</application> is a suite of programs that can manipulate many different
-  formats including powerpoint presentations.</para>
+    This chapter is a collection of programs that are useful for viewing
+    or editing office documents. Some specialise in doing one thing (such as
+    word processing or manipulating a spreadsheet).
+    <application>LibreOffice</application> is a suite of programs that can
+    manipulate many different formats including powerpoint presentations.
 @z

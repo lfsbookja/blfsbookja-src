@@ -26,12 +26,10 @@
 @z
 
 @x
-    <para>The <application>hd2u</application> package contains
-    an any to any text format converter.</para>
+      The <application>hd2u</application> package contains
+      an any to any text format converter.
 @y
-    <para>
-    <application>hd2u</application> パッケージは、さまざまなテキストフォーマット間の変換を行うコンバーターを提供します。
-    </para>
+      <application>hd2u</application> パッケージは、さまざまなテキストフォーマット間の変換を行うコンバーターを提供します。
 @z
 
 @x
@@ -41,39 +39,39 @@
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&hd2u-download-http;"/></para>
+          Download (HTTP): <ulink url="&hd2u-download-http;"/>
 @y
-        <para>&Download; (HTTP): <ulink url="&hd2u-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&hd2u-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&hd2u-download-ftp;"/></para>
+          Download (FTP): <ulink url="&hd2u-download-ftp;"/>
 @y
-        <para>&Download; (FTP): <ulink url="&hd2u-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&hd2u-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &hd2u-md5sum;</para>
+          Download MD5 sum: &hd2u-md5sum;
 @y
-        <para>&Download; MD5 sum: &hd2u-md5sum;</para>
+          &Download; MD5 sum: &hd2u-md5sum;
 @z
 
 @x
-        <para>Download size: &hd2u-size;</para>
+          Download size: &hd2u-size;
 @y
-        <para>&DownloadSize;: &hd2u-size;</para>
+          &DownloadSize;: &hd2u-size;
 @z
 
 @x
-        <para>Estimated disk space required: &hd2u-buildsize;</para>
+          Estimated disk space required: &hd2u-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &hd2u-buildsize;</para>
+          &Estimateddiskspacerequired;: &hd2u-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &hd2u-time;</para>
+          Estimated build time: &hd2u-time;
 @y
-        <para>&Estimatedbuildtime;: &hd2u-time;</para>
+          &Estimatedbuildtime;: &hd2u-time;
 @z
 
 @x
@@ -84,18 +82,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required"><xref linkend="popt"/></para>
+    <para role="required">
+      <xref linkend="popt"/>
+    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required"><xref linkend="popt"/></para>
+    <para role="required">
+      <xref linkend="popt"/>
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/hd2u"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/hd2u"/></para>
 @z
 
 @x
@@ -105,26 +105,22 @@
 @z
 
 @x
-    <para>Install <application>hd2u</application> by running the following
-    commands:</para>
+      Install <application>hd2u</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>hd2u</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>hd2u</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-    <para>&notTestSuite;</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-    <para>
-    <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -160,10 +156,8 @@
 @z
 
 @x dos2unix
-          <para>converts text between various OS formats (such as
-          converting from DOS format to Unix).</para>
+            converts text between various OS formats (such as
+            converting from DOS format to Unix).
 @y
-          <para>
-          テキストファイルにて (DOS フォーマットから Unix フォーマットへの変換のように) さまざまな OS フォーマット間での変換を行います。
-          </para>
+            テキストファイルにて (DOS フォーマットから Unix フォーマットへの変換のように) さまざまな OS フォーマット間での変換を行います。
 @z

@@ -107,12 +107,10 @@
 @z
 
 @x
-    <para>Install <application>Nettle</application> by running the following
-    commands:</para>
+      Install <application>Nettle</application> by running the following
+      commands:
 @y
-    <para>
-    以下のコマンドを実行して <application>Nettle</application> をビルドします。
-    </para>
+      以下のコマンドを実行して <application>Nettle</application> をビルドします。
 @z
 
 @x

@@ -16,7 +16,6 @@ CHANGE_FILES = \
 	kate5.ch    \
 	mousepad.ch \
 	nano.ch     \
-	others.ch   \
 	vim.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

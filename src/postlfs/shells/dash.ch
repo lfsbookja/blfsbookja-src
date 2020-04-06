@@ -20,25 +20,22 @@
 @z
 
 @x
-    <para><application>Dash</application> is a POSIX compliant shell. It can be
-    installed as /bin/sh or as the default shell for either <systemitem
-    class="username">root</systemitem> or a second user with a userid of 0. It
-    depends on fewer libraries than the <application>Bash</application> shell
-    and is therefore less likely to be affected by an upgrade problem or disk
-    failure. <application>Dash</application> is also useful for checking that
-    a script is completely compatible with POSIX syntax.</para>
+      <application>Dash</application> is a POSIX compliant shell. It can be
+      installed as /bin/sh or as the default shell for either <systemitem
+      class="username">root</systemitem> or a second user with a userid of 0.
+      It depends on fewer libraries than the <application>Bash</application>
+      shell and is therefore less likely to be affected by an upgrade problem
+      or disk failure. <application>Dash</application> is also useful for
+      checking that a script is completely compatible with POSIX syntax.
 @y
-<para>
-<application>Dash</application> は POSIX 準拠のシェルです。
-
-It can be
-installed as /bin/sh or as the default shell for either <systemitem
-class="username">root</systemitem> or a second user with a userid of 0. It
-depends on fewer libraries than the <application>Bash</application> shell
-and is therefore less likely to be affected by an upgrade problem or disk
-failure. <application>Dash</application> is also useful for checking that
-a script is completely compatible with POSIX syntax.
-</para>
+      <application>Dash</application> は POSIX 準拠のシェルです。
+      It can be
+      installed as /bin/sh or as the default shell for either <systemitem
+      class="username">root</systemitem> or a second user with a userid of 0.
+      It depends on fewer libraries than the <application>Bash</application>
+      shell and is therefore less likely to be affected by an upgrade problem
+      or disk failure. <application>Dash</application> is also useful for
+      checking that a script is completely compatible with POSIX syntax.
 @z
 
 @x
@@ -48,39 +45,39 @@ a script is completely compatible with POSIX syntax.
 @z
 
 @x
-        <para>Download (HTTP): <ulink url="&dash-download-http;"/></para>
+          Download (HTTP): <ulink url="&dash-download-http;"/>
 @y
-        <para>ダウンロード (HTTP): <ulink url="&dash-download-http;"/></para>
+          &Download; (HTTP): <ulink url="&dash-download-http;"/>
 @z
 
 @x
-        <para>Download (FTP): <ulink url="&dash-download-ftp;"/></para>
+          Download (FTP): <ulink url="&dash-download-ftp;"/>
 @y
-        <para>ダウンロード (FTP): <ulink url="&dash-download-ftp;"/></para>
+          &Download; (FTP): <ulink url="&dash-download-ftp;"/>
 @z
 
 @x
-        <para>Download MD5 sum: &dash-md5sum;</para>
+          Download MD5 sum: &dash-md5sum;
 @y
-        <para>ダウンロード MD5 sum: &dash-md5sum;</para>
+          &Download; MD5 sum: &dash-md5sum;
 @z
 
 @x
-        <para>Download size: &dash-size;</para>
+          Download size: &dash-size;
 @y
-        <para>ダウンロードサイズ: &dash-size;</para>
+          &DownloadSize;: &dash-size;
 @z
 
 @x
-        <para>Estimated disk space required: &dash-buildsize;</para>
+          Estimated disk space required: &dash-buildsize;
 @y
-        <para>&Estimateddiskspacerequired;: &dash-buildsize;</para>
+          &Estimateddiskspacerequired;: &dash-buildsize;
 @z
 
 @x
-        <para>Estimated build time: &dash-time;</para>
+          Estimated build time: &dash-time;
 @y
-        <para>&Estimatedbuildtime;: &dash-time;</para>
+          &Estimatedbuildtime;: &dash-time;
 @z
 
 @x
@@ -91,20 +88,22 @@ a script is completely compatible with POSIX syntax.
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional"><ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
-    (command line editor library)</para>
+    <para role="optional">
+      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
+      (command line editor library)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional"><ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
-    (コマンドライン エディタ ライブラリ)</para>
+    <para role="optional">
+      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>
+      (コマンドラインエディターライブラリ)
+    </para>
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/dash"/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/dash"/></para>
 @z
 
 @x
@@ -114,54 +113,42 @@ a script is completely compatible with POSIX syntax.
 @z
 
 @x
-    <para>Install <application>Dash</application> by running the following
-    commands:</para>
+      Install <application>Dash</application> by running the following
+      commands:
 @y
-<para>
-以下のコマンドを実行して <application>Dash</application> をビルドします。
-</para>
+      以下のコマンドを実行して <application>Dash</application> をビルドします。
 @z
 
 @x
-    <para>This package does not come with a test suite.</para>
+      This package does not come with a test suite.
 @y
-<para>
-&notTestSuite;
-</para>
+      &notTestSuite;
 @z
 
 @x
-    <para>Now, as the <systemitem class="username">root</systemitem> user:</para>
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-<para>
-<systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-</para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <para>If you would like to make <command>dash</command> the default
-    <command>sh</command>, recreate the <filename>/bin/sh</filename>
-    symlink as the <systemitem class="username">root</systemitem> user:</para>
+      If you would like to make <command>dash</command> the default
+      <command>sh</command>, recreate the <filename>/bin/sh</filename>
+      symlink as the <systemitem class="username">root</systemitem> user:
 @y
-<para>
-
-If you would like to make <command>dash</command> the default
-<command>sh</command>, recreate the <filename>/bin/sh</filename>
-symlink as the <systemitem class="username">root</systemitem> user:
-</para>
+      If you would like to make <command>dash</command> the default
+      <command>sh</command>, recreate the <filename>/bin/sh</filename>
+      symlink as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-    <note><para>If you create the symbolic link from <command>dash</command>
-    to  <command>sh</command>, you will need to reset the link to
-    <command>bash</command> to build LFS.  </para></note>
+        If you create the symbolic link from <command>dash</command>
+        to  <command>sh</command>, you will need to reset the link to
+        <command>bash</command> to build LFS.
 @y
-<note><para>
-
-If you create the symbolic link from <command>dash</command>
-to  <command>sh</command>, you will need to reset the link to
-<command>bash</command> to build LFS.
-</para></note>
+        If you create the symbolic link from <command>dash</command>
+        to  <command>sh</command>, you will need to reset the link to
+        <command>bash</command> to build LFS.
 @z
 
 @x
@@ -171,25 +158,19 @@ to  <command>sh</command>, you will need to reset the link to
 @z
 
 @x
-    <para><parameter>--bindir=/bin</parameter>: This parameter places the
-    <command>dash</command> binary into the root filesystem.</para>
+      <parameter>--bindir=/bin</parameter>: This parameter places the
+      <command>dash</command> binary into the root filesystem.
 @y
-<para>
-<parameter>--bindir=/bin</parameter>:
-
-This parameter places the
-<command>dash</command> binary into the root filesystem.
-</para>
+      <parameter>--bindir=/bin</parameter>: This parameter places the
+      <command>dash</command> binary into the root filesystem.
 @z
 
 @x
-    <para><option>--with-libedit</option>: To compile <application>Dash</application>
-    with libedit support.</para>
+      <option>--with-libedit</option>: To compile
+      <application>Dash</application> with libedit support.
 @y
-<para>
-<option>--with-libedit</option>: To compile <application>Dash</application>
-with libedit support.
-</para>
+      <option>--with-libedit</option>: To compile
+      <application>Dash</application> with libedit support.
 @z
 
 @x
@@ -205,13 +186,13 @@ with libedit support.
 @z
 
 @x
-      <para><application>Dash</application> sources
-      <filename>/etc/profile</filename> and
-      <filename>~/.profile</filename></para>
+        <application>Dash</application> sources
+        <filename>/etc/profile</filename> and
+        <filename>~/.profile</filename>
 @y
-      <para><application>Dash</application> sources
-      <filename>/etc/profile</filename> and
-      <filename>~/.profile</filename></para>
+        <application>Dash</application> sources
+        <filename>/etc/profile</filename> and
+        <filename>~/.profile</filename>
 @z
 
 @x
@@ -221,16 +202,13 @@ with libedit support.
 @z
 
 @x
-      <para>Update <filename>/etc/shells</filename> to include the
-      <application>Dash</application> shell by issuing the following command
-      as the <systemitem class="username">root</systemitem> user:</para>
+        Update <filename>/etc/shells</filename> to include the
+        <application>Dash</application> shell by issuing the following command
+        as the <systemitem class="username">root</systemitem> user:
 @y
-<para>
-
-Update <filename>/etc/shells</filename> to include the
-<application>Dash</application> shell by issuing the following command
-as the <systemitem class="username">root</systemitem> user:
-</para>
+        Update <filename>/etc/shells</filename> to include the
+        <application>Dash</application> shell by issuing the following command
+        as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -255,8 +233,8 @@ as the <systemitem class="username">root</systemitem> user:
         <seg>None</seg>
 @y
         <seg>dash</seg>
-        <seg>なし</seg>
-        <seg>なし</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
 @z
 
 @x
@@ -266,9 +244,7 @@ as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x dash
-          <para>is a POSIX compliant shell.</para>
+            is a POSIX compliant shell.
 @y
-<para>
-POSIX 準拠のシェル。
-</para>
+            POSIX 準拠のシェル。
 @z
