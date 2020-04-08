@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY js68-buildsize     "2.8 GB (30 MB installed)"> <!-- Installed size is 62 MB -->
+  <!ENTITY js68-buildsize     "2.8 GB (30 MB installed after removing 31MB static lib)">
+  <!ENTITY js68-time          "1.6 SBU (with parallelism = 4)">
 @y
-  <!ENTITY js68-buildsize     "2.8 GB (30 MB installed)"> <!-- Installed size is 62 MB -->
+  <!ENTITY js68-buildsize     "2.8 GB (30 MB installed after removing 31MB static lib)">
+  <!ENTITY js68-time          "1.6 SBU (with parallelism = 4)">
 @z
 
 @x
@@ -134,13 +136,15 @@
         save all work and exit your GNOME Session if you have one running.
         Replacing the JS68 binary will cause the GNOME Shell to crash and
         return you to your display manager or TTY. After installing the new
-        version, reinstall <xref linkend="gjs"/>. Polkit is unaffected.
+        version, if GNOME Shell still doesn't work, reinstall
+        <xref linkend="gjs"/>.
 @y
         If you are upgrading JS68 from a previously installed old version,
         save all work and exit your GNOME Session if you have one running.
         Replacing the JS68 binary will cause the GNOME Shell to crash and
         return you to your display manager or TTY. After installing the new
-        version, reinstall <xref linkend="gjs"/>. Polkit is unaffected.
+        version, if GNOME Shell still doesn't work, reinstall
+        <xref linkend="gjs"/>.
 @z
 
 @x

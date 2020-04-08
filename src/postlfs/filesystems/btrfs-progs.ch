@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY btrfs-progs-buildsize     "62 MB (add 71 MB for tests)">
-  <!ENTITY btrfs-progs-time          "0.2 SBU (add 15 SBU for tests)">
+  <!ENTITY btrfs-progs-buildsize     "63 MB (add 37 MB for tests)">
+  <!ENTITY btrfs-progs-time          "0.2 SBU (add 11 SBU for tests)">
 @y
-  <!ENTITY btrfs-progs-buildsize     "62 MB (テスト実施時はさらに 71 MB)">
-  <!ENTITY btrfs-progs-time          "0.2 SBU (テスト実施時はさらに 15 SBU)">
+  <!ENTITY btrfs-progs-buildsize     "63 MB (テスト実施時はさらに 37 MB)">
+  <!ENTITY btrfs-progs-time          "0.2 SBU (テスト実施時はさらに 11 SBU)">
 @z
 
 @x

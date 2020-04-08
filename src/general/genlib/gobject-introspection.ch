@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gobject-introspection-buildsize     "40 MB (with tests)">
+  <!ENTITY gobject-introspection-buildsize     "64 MB (with tests)">
   <!ENTITY gobject-introspection-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gobject-introspection-buildsize     "40 MB (テスト込み)">
+  <!ENTITY gobject-introspection-buildsize     "64 MB (テスト込み)">
   <!ENTITY gobject-introspection-time          "0.2 SBU (parallelism=4; テスト込み)">
 @z
 
