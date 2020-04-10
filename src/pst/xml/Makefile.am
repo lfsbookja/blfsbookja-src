@@ -7,12 +7,12 @@
 ##
 BOOKdir = @abs_bookdir@/pst/xml
 CHANGE_FILES = \
-	docbook-xsl.ch \
-	docbook.ch     \
-	docbook5.ch    \
-	docbook51.ch   \
-	itstool.ch     \
-	xml.ch         \
+	docbook-45-xml.ch \
+	docbook-xsl.ch    \
+	docbook5.ch       \
+	docbook51.ch      \
+	itstool.ch        \
+	xml.ch            \
 	xmlto.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

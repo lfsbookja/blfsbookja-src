@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "176 MB (add 6 MB for tests)">
-  <!ENTITY glib2-time          "0.5 SBU (add 0.5 SBU for tests; both using parallelism=4)">
+  <!ENTITY glib2-buildsize     "209 MB (add 5 MB for tests)">
+  <!ENTITY glib2-time          "0.5 SBU (add 1.1 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY glib2-buildsize     "176 MB (テスト実施時はさらに 6 MB)">
-  <!ENTITY glib2-time          "0.5 SBU (テスト実施時はさらに 0.5 SBU; いずれも paralleism=4)">
+  <!ENTITY glib2-buildsize     "209 MB (テスト実施時はさらに 5 MB)">
+  <!ENTITY glib2-time          "0.5 SBU (テスト実施時はさらに 1.1 SBU; いずれも paralleism=4)">
 @z
 
 @x
@@ -259,7 +259,7 @@
 @x
         <seg>
           gapplication,           gdbus, gdbus-codegen, 
-          gio,                    gio-launch-desktop, gio-querymodules,
+          gio,                    gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal,        glib-gettextize, 
           glib-mkenums,           gobject-query, 
@@ -283,7 +283,7 @@
 @y
         <seg>
           gapplication,           gdbus, gdbus-codegen, 
-          gio,                    gio-launch-desktop, gio-querymodules,
+          gio,                    gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal,        glib-gettextize, 
           glib-mkenums,           gobject-query, 

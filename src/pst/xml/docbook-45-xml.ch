@@ -16,23 +16,23 @@
 @x
   <!ENTITY DocBook-time          "less than 0.1 SBU">
 @y
-  <!ENTITY DocBook-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY DocBook-time          "less than 0.1 SBU">
 @z
 
 @x
-    <title>Introduction to DocBook XML DTD</title>
+    <title>Introduction to DocBook-4.5 XML DTD</title>
 @y
-    <title>&IntroductionTo1;DocBook XML DTD&IntroductionTo2;</title>
+    <title>Introduction to DocBook-4.5 XML DTD</title>
 @z
 
 @x
-      The <application>DocBook XML DTD</application>-&DocBook-version;
+      The <application>DocBook-4.5 XML DTD</application>-&docBook-45-xml-version;
       package contains document type definitions for verification of XML data
       files against the DocBook rule set. These are useful for structuring
       books and software documentation to a standard allowing you to utilize
       transformations already written for that standard.
 @y
-      The <application>DocBook XML DTD</application>-&DocBook-version;
+      The <application>DocBook-4.5 XML DTD</application>-&docBook-45-xml-version;
       package contains document type definitions for verification of XML data
       files against the DocBook rule set. These are useful for structuring
       books and software documentation to a standard allowing you to utilize
@@ -42,49 +42,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
+    <bridgehead renderas="sect3">Package Information</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&DocBook-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&DocBook-download-http;"/>
+          Download (HTTP): <ulink url="&DocBook-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&DocBook-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&DocBook-download-ftp;"/>
+          Download (FTP): <ulink url="&DocBook-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &DocBook-md5sum;
 @y
-          &Download; MD5 sum: &DocBook-md5sum;
+          Download MD5 sum: &DocBook-md5sum;
 @z
 
 @x
           Download size: &DocBook-size;
 @y
-          &DownloadSize;: &DocBook-size;
+          Download size: &DocBook-size;
 @z
 
 @x
           Estimated disk space required: &DocBook-buildsize;
 @y
-          &Estimateddiskspacerequired;: &DocBook-buildsize;
+          Estimated disk space required: &DocBook-buildsize;
 @z
 
 @x
           Estimated build time: &DocBook-time;
 @y
-          &Estimatedbuildtime;: &DocBook-time;
+          Estimated build time: &DocBook-time;
 @z
 
 @x
-    <bridgehead renderas="sect3">DocBook XML DTD Dependencies</bridgehead>
+    <bridgehead renderas="sect3">DocBook-4.5 XML DTD Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;DocBook XML DTD&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">DocBook-4.5 XML DTD Dependencies</bridgehead>
 @z
 
 @x
@@ -95,10 +95,10 @@
       <xref linkend="unzip"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libxml2"/>,
-      <xref linkend="sgml-common"/>,
+      <xref linkend="sgml-common"/>, and
       <xref linkend="unzip"/>
     </para>
 @z
@@ -106,13 +106,13 @@
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">User Notes:
 @z
 
 @x
-    <title>Installation of DocBook XML DTD</title>
+    <title>Installation of DocBook-4.5 XML DTD</title>
 @y
-    <title>&InstallationOf1;DocBook XML DTD&InstallationOf2;</title>
+    <title>Installation of DocBook-4.5 XML DTD</title>
 @z
 
 @x
@@ -120,7 +120,9 @@
       following commands as the <systemitem class="username">root</systemitem>
       user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーとなって以下を実行し <application>DocBook XML DTD</application> をビルドします。
+      Install <application>DocBook XML DTD</application> by running the
+      following commands as the <systemitem class="username">root</systemitem>
+      user:
 @z
 
 @x
@@ -146,15 +148,15 @@
 @z
 
 @x
-    <title>Configuring DocBook XML DTD</title>
+    <title>Configuring DocBook-4.5 XML DTD</title>
 @y
-    <title>&Configuring1;DocBook XML DTD&Configuring2;</title>
+    <title>Configuring DocBook-4.5 XML DTD</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>&ConfigFiles;</title>
+      <title>Config Files</title>
 @z
 
 @x
@@ -168,13 +170,13 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>&ConfigInfo;</title>
+      <title>Configuration Information</title>
 @z
 
 @x
         The above installation creates the files and updates the catalogs.
         In order to utilize <application>DocBook XML DTD</application>
-        V&DocBook-version; when any version 4.x is requested in the System
+        V&docBook-45-xml-version; when any version 4.x is requested in the System
         Identifier, you need to add additional statements to the catalog
         files. If you have any of the <application>DocBook XML
         DTD</application>'s referenced below already installed on your
@@ -184,7 +186,7 @@
 @y
         The above installation creates the files and updates the catalogs.
         In order to utilize <application>DocBook XML DTD</application>
-        V&DocBook-version; when any version 4.x is requested in the System
+        V&docBook-45-xml-version; when any version 4.x is requested in the System
         Identifier, you need to add additional statements to the catalog
         files. If you have any of the <application>DocBook XML
         DTD</application>'s referenced below already installed on your
@@ -196,7 +198,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>&Contents;</title>
+    <title>Contents</title>
 @z
 
 @x
@@ -215,24 +217,24 @@
         <seg>None</seg>
         <seg>None</seg>
         <seg>DTD, MOD and ENT files</seg>
-        <seg>/etc/xml and /usr/share/xml/docbook/xml-dtd-&DocBook-version;</seg>
+        <seg>/etc/xml and /usr/share/xml/docbook/xml-dtd-&docBook-45-xml-version;</seg>
 @y
-        <seg>&None;</seg>
-        <seg>&None;</seg>
-        <seg>DTD, MOD, ENT の各ファイル</seg>
-        <seg>/etc/xml and /usr/share/xml/docbook/xml-dtd-&DocBook-version;</seg>
+        <seg>None</seg>
+        <seg>None</seg>
+        <seg>DTD, MOD and ENT files</seg>
+        <seg>/etc/xml and /usr/share/xml/docbook/xml-dtd-&docBook-45-xml-version;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @z
 
 @x
         <term><filename>DTD files</filename></term>
 @y
-        <term><filename>DTD ファイル</filename></term>
+        <term><filename>DTD files</filename></term>
 @z
 @x
             contain a document type definition which defines the element
@@ -247,7 +249,7 @@
 @x
         <term><filename>MOD files</filename></term>
 @y
-        <term><filename>MOD ファイル</filename></term>
+        <term><filename>MOD files</filename></term>
 @z
 @x
             contain components of the document type definition that
@@ -260,7 +262,7 @@
 @x
         <term><filename>ENT files</filename></term>
 @y
-        <term><filename>ENT ファイル</filename></term>
+        <term><filename>ENT files</filename></term>
 @z
 @x
             contain lists of named character entities allowed in HTML.

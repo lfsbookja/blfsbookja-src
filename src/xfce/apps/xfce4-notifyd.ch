@@ -161,10 +161,12 @@
           xfce4-notifyd-config
         </seg>
         <seg>
-          None
+          libnotification-plugin.so
         </seg>
         <seg>
+          /usr/share/themes/Bright/xfce-notify-4.0,
           /usr/share/themes/Default/xfce-notify-4.0,
+          /usr/share/themes/Retro/xfce-notify-4.0,
           /usr/share/themes/Smoke/xfce-notify-4.0 and
           /usr/share/themes/ZOMG-PONIES!/xfce-notify-4.0
         </seg>
@@ -173,10 +175,12 @@
           xfce4-notifyd-config
         </seg>
         <seg>
-          &None;
+          libnotification-plugin.so
         </seg>
         <seg>
+          /usr/share/themes/Bright/xfce-notify-4.0,
           /usr/share/themes/Default/xfce-notify-4.0,
+          /usr/share/themes/Retro/xfce-notify-4.0,
           /usr/share/themes/Smoke/xfce-notify-4.0,
           /usr/share/themes/ZOMG-PONIES!/xfce-notify-4.0
         </seg>
@@ -189,12 +193,12 @@
 @z
 
 @x xfce4-notifyd-config
-            is a <application>GTK+ 2</application> GUI that allows you to
+            is a <application>GTK+</application> GUI that allows you to
             change some of your preferences (theme and screen position)
             for the notifications that the
             <application>Xfce4 Notification Daemon</application> displays.
 @y
-            is a <application>GTK+ 2</application> GUI that allows you to
+            is a <application>GTK+</application> GUI that allows you to
             change some of your preferences (theme and screen position)
             for the notifications that the
             <application>Xfce4 Notification Daemon</application> displays.
