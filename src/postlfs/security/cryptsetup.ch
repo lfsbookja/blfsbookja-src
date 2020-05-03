@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cryptsetup-buildsize     "29 MB (add 12 MB for tests)">
-  <!ENTITY cryptsetup-time          "0.2 SBU (add 15 SBU for tests)">
+  <!ENTITY cryptsetup-buildsize     "34 MB (add 129 MB for tests)">
+  <!ENTITY cryptsetup-time          "0.2 SBU (add 9.1 SBU for tests)">
 @y
-  <!ENTITY cryptsetup-buildsize     "29 MB （テスト実施時はさらに 12 MB）">
-  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 15 SBU）">
+  <!ENTITY cryptsetup-buildsize     "34 MB （テスト実施時はさらに 129 MB）">
+  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 9.1 SBU）">
 @z
 
 @x
@@ -105,7 +105,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libpwquality"/>,
-      <xref linkend="python2"/>, and
+      <xref linkend="python2"/>,
+      <ulink url="https://github.com/P-H-C/phc-winner-argon2">argon2</ulink>, and
       <ulink url="http://www.openwall.com/passwdqc/">passwdqc</ulink>
     </para>
 @y
@@ -113,6 +114,7 @@
     <para role="optional">
       <xref linkend="libpwquality"/>,
       <xref linkend="python2"/>,
+      <ulink url="https://github.com/P-H-C/phc-winner-argon2">argon2</ulink>,
       <ulink url="http://www.openwall.com/passwdqc/">passwdqc</ulink>
     </para>
 @z
@@ -154,12 +156,12 @@
       To test the result, issue as the <systemitem
       class="username">root</systemitem> user: <command>make check</command>.
       Some tests may fail if the kernel configuration parameters above are not
-      set. Three (of 21) tests are known to fail.
+      set. <!--Three (of 21) tests are known to fail.-->
 @y
       ビルド結果をテストする場合は、<systemitem
       class="username">root</systemitem> ユーザーになって <command>make check</command> を実行します。
       上で説明したカーネル設定パラメーターがセットされていない場合には、失敗するテストが出てきます。
-      （21 のうちの）1 つのテストは失敗します。
+      <!-- （21 のうちの）1 つのテストは失敗します。 -->
 @z
 
 @x

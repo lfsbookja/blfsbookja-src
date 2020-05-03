@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY nodejs-buildsize     "676 MB (add 22 MB for tests)">
-  <!ENTITY nodejs-time          "7.8 SBU (using parallelism=4; add 2.2 SBU for tests)">
+  <!ENTITY nodejs-buildsize     "1.2 GB (add 21 MB for tests)">
+  <!ENTITY nodejs-time          "9.4 SBU (using parallelism=4; add 2.6 SBU for tests)">
 @y
-  <!ENTITY nodejs-buildsize     "676 MB (add 22 MB for tests)">
-  <!ENTITY nodejs-time          "7.8 SBU (using parallelism=4; add 2.2 SBU for tests)">
+  <!ENTITY nodejs-buildsize     "1.2 GB (add 21 MB for tests)">
+  <!ENTITY nodejs-time          "9.4 SBU (using parallelism=4; add 2.6 SBU for tests)">
 @z
 
 @x
@@ -178,20 +178,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--with-intl=system-icu</parameter>: use the system version
-      of <application>icu</application>. Other values are
-      <option>full-icu</option> (to build a local, full
-      <application>icu</application> library) and <option>small-icu</option>
-      (to build a local, minimal <application>icu</application> library).
-@y
-      <parameter>--with-intl=system-icu</parameter>: use the system version
-      of <application>icu</application>. Other values are
-      <option>full-icu</option> (to build a local, full
-      <application>icu</application> library) and <option>small-icu</option>
-      (to build a local, minimal <application>icu</application> library).
 @z
 
 @x

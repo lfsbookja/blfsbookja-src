@@ -108,6 +108,7 @@
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
+      <ulink url="https://www.secureauth.com/labs/open-source-tools/impacket/">impacket</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
       <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>, and
       <!--<ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
@@ -128,8 +129,9 @@
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
       <xref linkend="samba"/>,
+      <ulink url="https://www.secureauth.com/labs/open-source-tools/impacket/">impacket</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
+      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>, and
       <!--<ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
       PolarSSL), and -->
       <!-- mbedTLS/PolarSSL support was removed in 7.65.1 -->
@@ -188,12 +190,12 @@
 
 @x
        To run the test suite, issue: <command>make test</command>. 
-       Tests 323, 1139, 1140, and 1173 are known to fail.  
-       A few other tests may fail randomly for unknown reasons.
+       <!--Tests 323, 1139, 1140, and 1173 are known to fail.  
+       A few other tests may fail randomly for unknown reasons.-->
 @y
        To run the test suite, issue: <command>make test</command>. 
-       Tests 323, 1139, 1140, and 1173 are known to fail.  
-       A few other tests may fail randomly for unknown reasons.
+       <!--Tests 323, 1139, 1140, and 1173 are known to fail.  
+       A few other tests may fail randomly for unknown reasons.-->
 @z
 
 @x

@@ -147,6 +147,7 @@
       <xref linkend="harfbuzz"/>,
       <xref linkend="wayland"/>,
       <xref linkend="woff2"/>,
+      <ulink url="https://ccache.dev/">ccache</ulink>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
       <ulink url="https://github.com/WebPlatformForEmbedded/libwpe">libwpe</ulink>,
@@ -161,10 +162,11 @@
       <xref linkend="harfbuzz"/>,
       <xref linkend="wayland"/>,
       <xref linkend="woff2"/>,
+      <ulink url="https://ccache.dev/">ccache</ulink>,
       <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
       <ulink url="https://github.com/WebPlatformForEmbedded/libwpe">libwpe</ulink>,
-      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>, and
+      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>,
       <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
     </para>
 @z

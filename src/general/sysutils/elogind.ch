@@ -248,19 +248,45 @@
 @z
 
 @x
-      Each user will need to register a user session using
-      <application>Linux-PAM</application> at login. The
-      <filename>/etc/pam.d/system-session</filename> file needs to
-      be modified and a new file needs to be created in order for
-      <command>elogind</command> to work correctly. Run the following
-      commands as the <systemitem class="username">root</systemitem> user:
+      <title>Config File</title>
 @y
-      Each user will need to register a user session using
-      <application>Linux-PAM</application> at login. The
-      <filename>/etc/pam.d/system-session</filename> file needs to
-      be modified and a new file needs to be created in order for
-      <command>elogind</command> to work correctly. Run the following
-      commands as the <systemitem class="username">root</systemitem> user:
+      <title>&ConfigFiles;</title>
+@z
+
+@x
+    <sect3><title>Configuration Information</title>
+@y
+    <sect3><title>&ConfigInfo;</title>
+@z
+
+@x
+        The installed file <filename>/etc/elogind/logind.conf</filename>
+        contains all the possible options with their defaults, commented
+        out. You may wish to disable killing user processes when the user logs
+        out, by running, as the <systemitem class="username">root</systemitem>
+        user:
+@y
+        The installed file <filename>/etc/elogind/logind.conf</filename>
+        contains all the possible options with their defaults, commented
+        out. You may wish to disable killing user processes when the user logs
+        out, by running, as the <systemitem class="username">root</systemitem>
+        user:
+@z
+
+@x
+        Each user will need to register a user session using
+        <application>Linux-PAM</application> at login. The
+        <filename>/etc/pam.d/system-session</filename> file needs to
+        be modified and a new file needs to be created in order for
+        <command>elogind</command> to work correctly. Run the following
+        commands as the <systemitem class="username">root</systemitem> user:
+@y
+        Each user will need to register a user session using
+        <application>Linux-PAM</application> at login. The
+        <filename>/etc/pam.d/system-session</filename> file needs to
+        be modified and a new file needs to be created in order for
+        <command>elogind</command> to work correctly. Run the following
+        commands as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x

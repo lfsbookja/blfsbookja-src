@@ -464,15 +464,15 @@
 
 @x
         <seg>
-          accept, cancel, cupsaccept, cupsaddsmb, cups-config, cupsctl, cupsd,
-          cupsdisable, cupsenable, cupsfilter, cupsreject, cupstestdsc,
-          cupstestppd, ippfind, ipptool, lp, lpadmin, lpc, lpinfo, lpmove,
-          lpoptions, lpq, lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge,
-          ppdpo, and reject
+           <!--accept,--> cancel, cupsaccept, <!--cupsaddsmb,--> cups-config, 
+          cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter, cupsreject,
+          <!--cupstestdsc,--> cupstestppd, ippeveprinter, ippfind, ipptool, lp,
+          lpadmin, lpc, lpinfo, lpmove, lpoptions, lpq, lpr, lprm, lpstat, ppdc,
+          ppdhtml, ppdi, ppdmerge, and ppdpo <!--and reject-->
         </seg>
         <seg>
-          libcupscgi.so, libcupsimage.so, libcupsmime.so,
-          libcupsppdc.so, and libcups.so
+          <!--libcupscgi.so,--> libcupsimage.so <!--libcupsmime.so,-->
+          <!--libcupsppdc.so,--> and libcups.so
         </seg>
         <seg>
           /etc/cups,
@@ -482,15 +482,15 @@
         </seg>
 @y
         <seg>
-          accept, cancel, cupsaccept, cupsaddsmb, cups-config, cupsctl, cupsd,
-          cupsdisable, cupsenable, cupsfilter, cupsreject, cupstestdsc,
-          cupstestppd, ippfind, ipptool, lp, lpadmin, lpc, lpinfo, lpmove,
-          lpoptions, lpq, lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge,
-          ppdpo, reject
+           <!--accept,--> cancel, cupsaccept, <!--cupsaddsmb,--> cups-config, 
+          cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter, cupsreject,
+          <!--cupstestdsc,--> cupstestppd, ippeveprinter, ippfind, ipptool, lp,
+          lpadmin, lpc, lpinfo, lpmove, lpoptions, lpq, lpr, lprm, lpstat, ppdc,
+          ppdhtml, ppdi, ppdmerge, ppdpo <!--and reject-->
         </seg>
         <seg>
-          libcupscgi.so, libcupsimage.so, libcupsmime.so,
-          libcupsppdc.so, libcups.so
+          <!--libcupscgi.so,--> libcupsimage.so, <!--libcupsmime.so,-->
+          <!--libcupsppdc.so,--> libcups.so
         </seg>
         <seg>
           /etc/cups,

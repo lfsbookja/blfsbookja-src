@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "411 MB (with demos and docs), add 259 MB for tests">
-  <!ENTITY mesa-time          "2.4 SBU (with parallelism=4, demos, and docs), add 0.4 SBU for tests">
+  <!ENTITY mesa-buildsize     "541 MB (with demos and docs), add 262 MB for tests">
+  <!ENTITY mesa-time          "2.6 SBU (with parallelism=4, demos, and docs), add 0.4 SBU for tests">
 @y
-  <!ENTITY mesa-buildsize     "411 MB (デモおよびドキュメント込み)、テスト実施時はさらに 259 MB">
-  <!ENTITY mesa-time          "2.4 SBU (parallelism=4, デモおよびドキュメント込み)、テスト実施時はさらに 0.4 SBU">
+  <!ENTITY mesa-buildsize     "541 MB (デモおよびドキュメント込み)、テスト実施時はさらに 262 MB">
+  <!ENTITY mesa-time          "2.6 SBU (parallelism=4, デモおよびドキュメント込み)、テスト実施時はさらに 0.4 SBU">
 @z
 
 @x
@@ -393,7 +393,7 @@
           radeonsi_drv_video.so,
           swrast_dri.so,
           virtio_gpu_dri.so,
-          vmwgfx_dri.so
+          vmwgfx_dri.so,
           <!-- End DRI Drivers -->
           libEGL.so,
           libGL.so,
@@ -446,7 +446,7 @@
           radeonsi_drv_video.so,
           swrast_dri.so,
           virtio_gpu_dri.so,
-          vmwgfx_dri.so
+          vmwgfx_dri.so,
           <!-- End DRI Drivers -->
           libEGL.so,
           libGL.so,

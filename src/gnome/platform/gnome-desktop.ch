@@ -148,9 +148,11 @@
 
 @x
       To test the results, run <command>ninja test</command> from a X Terminal
-      or similar.
+      or similar. One test, <filename>wallclock-reftest</filename>, is known to
+      fail.
 @y
       ビルド結果をテストする場合は X 端末やこれに相当する端末から <command>ninja test</command> を実行します。
+      <filename>wallclock-reftest</filename> というテストが  1 つだけ失敗します。
 @z
 
 @x

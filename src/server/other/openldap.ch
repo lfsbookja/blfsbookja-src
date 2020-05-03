@@ -185,10 +185,10 @@
 @z
 
 @x
-      <parameter>--enable-crypt</parameter>: This switch enables using of
+      <parameter>--enable-crypt</parameter>: This switch enables using
       <command>crypt(3)</command> passwords.
 @y
-      <parameter>--enable-crypt</parameter>: This switch enables using of
+      <parameter>--enable-crypt</parameter>: This switch enables using
       <command>crypt(3)</command> passwords.
 @z
 

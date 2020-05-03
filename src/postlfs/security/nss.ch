@@ -223,8 +223,9 @@
         </seg>
         <seg>
           libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, 
-          libgtestutil.so, libnss3.so, libnssckbi.so, libnssdbm3.so, 
-          libnsssysinit.so, libnssutil3.so, libsmime3.so, libsoftokn3.so, 
+          libgtestutil.so, libnss3.so, libnssckbi.so, libnssckbi-testlib.so,
+          libnssdbm3.so, libnsssysinit.so, libnssutil3.so, 
+          libpkcs11testmodule.so, libsmime3.so, libsoftokn3.so, 
           and libssl3.so
         </seg>
         <seg>
@@ -236,8 +237,9 @@
         </seg>
         <seg>
           libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, 
-          libgtestutil.so, libnss3.so, libnssckbi.so, libnssdbm3.so, 
-          libnsssysinit.so, libnssutil3.so, libsmime3.so, libsoftokn3.so, 
+          libgtestutil.so, libnss3.so, libnssckbi.so, libnssckbi-testlib.so,
+          libnssdbm3.so, libnsssysinit.so, libnssutil3.so, 
+          libpkcs11testmodule.so, libsmime3.so, libsoftokn3.so, 
           libssl3.so
         </seg>
         <seg>

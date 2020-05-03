@@ -14,15 +14,15 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "319 MB (with downloaded documentation)">
+  <!ENTITY git-buildsize     "516 MB (with downloaded documentation, 196 MB installed)">
 @y
-  <!ENTITY git-buildsize     "319 MB（ダウンロードドキュメントを含む）">
+  <!ENTITY git-buildsize     "516 MB（ダウンロードドキュメントを含む、インストールサイズは 196 MB）">
 @z
 
 @x
-  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 2.5 SBU for tests with parallelism=4)">
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 3.4 SBU for tests with parallelism=4)">
 @y
-  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; テスト実施時はさらに 2.5 SBU）">
+  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; テスト実施時はさらに 3.4 SBU）">
 @z
 
 @x

@@ -94,7 +94,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
     <xref linkend="docutils"/>
       (required to build the documentation),
@@ -103,15 +102,15 @@
     <xref role="runtime" linkend="openssh"/>
       (runtime, to access ssh://... repositories),
     <xref linkend="pygments"/>,
+    <xref linkend="rust"/>,
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
     <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>, and
-    <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
+    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>
 
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="docutils"/>
       (required to build the documentation),
@@ -120,11 +119,12 @@
     <xref role="runtime" linkend="openssh"/>
       (runtime, to access ssh://... repositories),
     <xref linkend="pygments"/>,
+    <xref linkend="rust"/>,
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
-    <ulink url="https://github.com/pyca/pyopenssl">pyOpenSSL</ulink>
+    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>, and
+    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>
 
     </para>
 @z
@@ -184,16 +184,14 @@
       <option>--tmpdir</option>, and run again, some failures are gone, which
       seems to be a problem with the test suite. If this happens, normally,
       from now on, there will be no more such failures whether you use the
-      debug switch or not. Three tests, test-alias.t, test-install.t, and
-      test-bundle2-exchange.t (intermittently), are known to fail.
+      debug switch or not. One test, test-doctest.py, is known to fail.
 @y
       Normally, the previous failures will be confirmed. However, if
       you add the switch <option>--debug</option> before
       <option>--tmpdir</option>, and run again, some failures are gone, which
       seems to be a problem with the test suite. If this happens, normally,
       from now on, there will be no more such failures whether you use the
-      debug switch or not. Three tests, test-alias.t, test-install.t, and
-      test-bundle2-exchange.t (intermittently), are known to fail.
+      debug switch or not. One test, test-doctest.py, is known to fail.
 @z
 
 @x
@@ -248,11 +246,11 @@
         </seg>
         <seg>
           several internal modules under
-          /usr/lib/python&python2-majorver;/site-packages/mercurial
+          /usr/lib/python&python3-majorver;/site-packages/mercurial
         </seg>
         <seg>
           /etc/mercurial and
-          /usr/lib/python&python2-majorver;/site-packages/{hgdemandimport,hgext,hgext3rd,mercurial}
+          /usr/lib/python&python3-majorver;/site-packages/{hgdemandimport,hgext,hgext3rd,mercurial}
         </seg>
 @y
         <seg>
@@ -260,11 +258,11 @@
         </seg>
         <seg>
           several internal modules under
-          /usr/lib/python&python2-majorver;/site-packages/mercurial
+          /usr/lib/python&python3-majorver;/site-packages/mercurial
         </seg>
         <seg>
-          /etc/mercurial,
-          /usr/lib/python&python2-majorver;/site-packages/{hgdemandimport,hgext,hgext3rd,mercurial}
+          /etc/mercurial and
+          /usr/lib/python&python3-majorver;/site-packages/{hgdemandimport,hgext,hgext3rd,mercurial}
         </seg>
 @z
 

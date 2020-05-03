@@ -14,11 +14,9 @@
 @z
 
 @x
-  <!ENTITY json-c-buildsize     "5.0 MB (add 6.0 MB for tests)">
-  <!ENTITY json-c-time          "less than 0.1 SBU (add 1.7 SBU for tests)">
+  <!ENTITY json-c-time          "less than 0.1 SBU">
 @y
-  <!ENTITY json-c-buildsize     "5.0 MB (テストにさらに 6.0 MB)">
-  <!ENTITY json-c-time          "&LessThan1;0.1 SBU&LessThan2; (テストにさらに 1.7 SBU)">
+  <!ENTITY json-c-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -105,9 +103,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
@@ -143,10 +141,9 @@
           None
         </seg>
         <seg>
-          libjson-c.so and libjson.so
+          libjson-c.so
         </seg>
         <seg>
-          /usr/include/json and
           /usr/include/json-c
         </seg>
 @y
@@ -154,10 +151,9 @@
           &None;
         </seg>
         <seg>
-          libjson-c.so, libjson.so
+          libjson-c.so
         </seg>
         <seg>
-          /usr/include/json,
           /usr/include/json-c
         </seg>
 @z
@@ -166,12 +162,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x libjson.so
-            contains the <application>JSON-C</application> API functions.
-@y
-            <application>JSON-C</application> API 関数を提供します。
 @z
 
 @x libjson-c.so

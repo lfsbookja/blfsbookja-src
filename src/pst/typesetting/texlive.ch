@@ -7,11 +7,11 @@
 % $Rev$
 % $Date::                           $
 %
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
+%@x
+%<?xml version="1.0" encoding="ISO-8859-1"?>
+%@y
+%<?xml version="1.0" encoding="UTF-8"?>
+%@z
 
 @x
     <title>Introduction to TeX Live from source</title>
@@ -27,7 +27,10 @@
       and install for <command>asy</command> (for vector graphics) will fail
       if TeX has not already been installed. Additionally,
       <application>biber</application> is not provided within the
-      <application>texlive</application> source.
+      <application>texlive</application> source and the version of
+      <application>dvisvgm</application> in the
+      <application>texlive</application> tree cannot be built
+      if shared system libraries are used.
 @y
       Most of TeX Live can be built from source without a pre-existing
       installation, but <application>xindy</application> (for indexing) needs
@@ -36,7 +39,10 @@
       and install for <command>asy</command> (for vector graphics) will fail
       if TeX has not already been installed. Additionally,
       <application>biber</application> is not provided within the
-      <application>texlive</application> source.
+      <application>texlive</application> source and the version of
+      <application>dvisvgm</application> in the
+      <application>texlive</application> tree cannot be built
+      if shared system libraries are used.
 @z
 %    <para>
 %    <application>TeX Live</application> パッケージは、統合的な TeX 文書生成システムです。
@@ -257,11 +263,23 @@
 @z
 
 @x
-        From 2015 onwards, a successful install requires some texlive
+      <application>TexLive</application> ships with a very old version of
+      <application>poppler</application>, and some updated files for newer versions.
+      To use the system version, first identify it and then copy the correct
+      versions of the updated files (please read the Caution above):
+@y
+      <application>TexLive</application> ships with a very old version of
+      <application>poppler</application>, and some updated files for newer versions.
+      To use the system version, first identify it and then copy the correct
+      versions of the updated files (please read the Caution above):
+@z
+
+@x
+        A successful install requires some texlive
         commands to be run as the root user, so we will export the TEXARCH
         variable to let <systemitem class="username">root</systemitem> use it.
 @y
-        From 2015 onwards, a successful install requires some texlive
+        A successful install requires some texlive
         commands to be run as the root user, so we will export the TEXARCH
         variable to let <systemitem class="username">root</systemitem> use it.
 @z
@@ -273,13 +291,13 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>
-      A few tests may SKIP because kpathsea
-      has not yet been installed.
+      To test the results, issue: <command>make -k check</command>.
+      One of the Kpathsea tests will fail because BLFS uses system
+      libraries.
 @y
-      To test the results, issue: <command>make check</command>
-      A few tests may SKIP because kpathsea
-      has not yet been installed.
+      To test the results, issue: <command>make -k check</command>.
+      One of the Kpathsea tests will fail because BLFS uses system
+      libraries.
 @z
 
 @x
