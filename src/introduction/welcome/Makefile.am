@@ -47,6 +47,15 @@ all: ctie $(srcs) $(dist_changes)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
+-include Makefile.sub
+Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
+	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
+
+@MAINT@.PHONY: chbuild
+@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
+@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
+@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
+
 jchangelog-2008.txt: $(BOOKdir)/changelog-2008.txt $(srcdir)/changelog-2008.ch
 	$(top_builddir)/$(CTIE) -m $@ $^ >/dev/null
 jchangelog-2009.txt: $(BOOKdir)/changelog-2009.txt $(srcdir)/changelog-2009.ch

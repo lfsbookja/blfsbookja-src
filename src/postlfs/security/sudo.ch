@@ -135,14 +135,13 @@
 @x
       To test the results, issue: <command>env LC_ALL=C make check 2&gt;&amp;1
       | tee ../make-check.log</command>. Check the results with <command>grep
-      failed ../make-check.log</command>. One test, test3, is known to fail
-      if the tests are run as the root user.
+      failed ../make-check.log</command>. <!--One test, test3, is known to fail
+      if the tests are run as the root user.-->
 @y
       ビルド結果をテストする場合は <command>env LC_ALL=C make check 2&gt;&amp;1
       | tee ../make-check.log</command> を実行します。
       確認は <command>grep
       failed ../make-check.log</command> により行います。
-      root ユーザーによりテスト実行していた場合には、test3 というテストが失敗します。
 @z
 
 @x

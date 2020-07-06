@@ -115,10 +115,12 @@
 
 @x
       If you wish to run the test suite, first remove a couple of tests
-      that are known to fail in a BLFS environment:
+      that are known to fail in a BLFS environment.  And, adjust two Python
+      scripts to use Python 3, in case Python 2 is not installed:
 @y
       If you wish to run the test suite, first remove a couple of tests
-      that are known to fail in a BLFS environment:
+      that are known to fail in a BLFS environment.  And, adjust two Python
+      scripts to use Python 3, in case Python 2 is not installed:
 @z
 
 @x

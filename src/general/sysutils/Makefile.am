@@ -60,7 +60,9 @@ all: $(top_builddir)/$(CTIE) $(srcs)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+-include Makefile.sub
+Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
+	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
 
 @MAINT@.PHONY: chbuild
 @MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))

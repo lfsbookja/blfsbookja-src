@@ -224,8 +224,9 @@
           libnautilus-extension.so
         </seg>
         <seg>
-          /usr/{include,lib}/nautilus and
-          /usr/share/{gnome-shell/search-providers,gtk-doc/html/libnautilus-extension}
+          /usr/{include,lib}/nautilus,
+          /usr/share/gnome-shell/search-providers, and
+          /usr/share/gtk-doc/html/libnautilus-extension (optional)
         </seg>
 @y
         <seg>
@@ -236,7 +237,8 @@
         </seg>
         <seg>
           /usr/{include,lib}/nautilus,
-          /usr/share/{gnome-shell/search-providers,gtk-doc/html/libnautilus-extension}
+          /usr/share/gnome-shell/search-providers,
+          /usr/share/gtk-doc/html/libnautilus-extension (optional)
         </seg>
 @z
 

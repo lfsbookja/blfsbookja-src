@@ -149,10 +149,11 @@
 @x
       To test the results, run <command>ninja test</command> from a X Terminal
       or similar. One test, <filename>wallclock-reftest</filename>, is known to
-      fail.
+      fail due to a difference in expecations in the he_IL.UTF-8 locale.
 @y
       ビルド結果をテストする場合は X 端末やこれに相当する端末から <command>ninja test</command> を実行します。
       <filename>wallclock-reftest</filename> というテストが  1 つだけ失敗します。
+      原因は、期待しているロケール he_IL.UTF-8 が異なっているためです。
 @z
 
 @x

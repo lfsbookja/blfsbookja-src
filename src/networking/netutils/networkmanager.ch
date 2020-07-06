@@ -206,12 +206,20 @@
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. One test, test-core, is known to fail.
+      issue: <command>ninja test</command>. Four tests,
+      <filename>devices/test-acd</filename>,
+      <filename>platform/test-route-linux</filename>,
+      <filename>platform/test-link-linux</filename>, and
+      <filename>platform/test-cleanup-linux</filename>, are known to fail.
 @y
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. One test, test-core, is known to fail.
+      issue: <command>ninja test</command>. Four tests,
+      <filename>devices/test-acd</filename>,
+      <filename>platform/test-route-linux</filename>,
+      <filename>platform/test-link-linux</filename>, and
+      <filename>platform/test-cleanup-linux</filename>, are known to fail.
 @z
 
 @x
@@ -499,7 +507,7 @@
         </seg>
         <seg>
           /etc/NetworkManager,
-          /usr/include/NetworkManager,
+          /usr/include/libnm,
           /usr/lib/NetworkManager,
           /usr/share/doc/NetworkManager-&NetworkManager-version;,
           /usr/share/gtk-doc/html/{libnm,NetworkManager}
@@ -510,7 +518,7 @@
 @y
         <seg>
           NetworkManager, nmcli, nm-online, nmtui, and, symlinked to nmtui:
-          nmtui-connect, nmtui-edit, nmtui-hostname
+          nmtui-connect, nmtui-edit, and nmtui-hostname
         </seg>
         <seg>
           libnm.so,
@@ -518,7 +526,7 @@
         </seg>
         <seg>
           /etc/NetworkManager,
-          /usr/include/NetworkManager,
+          /usr/include/libnm,
           /usr/lib/NetworkManager,
           /usr/share/doc/NetworkManager-&NetworkManager-version;,
           /usr/share/gtk-doc/html/{libnm,NetworkManager}

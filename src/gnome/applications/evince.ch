@@ -106,6 +106,7 @@
     <para role="recommended">
       <xref linkend="gnome-keyring"/>,
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="libarchive"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="nautilus"/> (to build the plugin), and
       <xref linkend="poppler"/>
@@ -115,8 +116,9 @@
     <para role="recommended">
       <xref linkend="gnome-keyring"/>,
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="libarchive"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="nautilus"/> (to build the plugin),
+      <xref linkend="nautilus"/> (to build the plugin), and
       <xref linkend="poppler"/>
     </para>
 @z
@@ -196,36 +198,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--enable-introspection</parameter>: By default, the
-      <application>Gobject Introspection</application> support is
-      turned off, even though that package is an expected component
-      of the <application>GNOME</application> Desktop.
-@y
-      <parameter>--enable-introspection</parameter>:
-      <application>Gobject Introspection</application> は <application>GNOME</application> デスクトップにおいて必要なパッケージであるにもかかわらず、本パッケージのデフォルトにおいては、その <application>Gobject Introspection</application> サポートは無効になっています。
-@z
-
-@x
-      <option>--disable-nautilus</option>: This switch disables building
-      the <application>Nautilus</application> Plugin. Use this switch
-      if <application>Nautilus</application> is not installed.
-@y
-      <option>--disable-nautilus</option>:
-      本スイッチは <application>Nautilus</application> プラグインをビルドしないようにします。
-      <application>Nautilus</application> をインストールしていない場合に本スイッチを指定してください。
-@z
-
-@x
-      <option>--without-keyring</option>: This switch disables the use of
-      <application>libsecret</application>. Use this switch
-      if <application>libsecret</application> is not installed.
-@y
-      <option>--without-keyring</option>:
-      本スイッチは <application>libsecret</application> を利用しないようにします。
-      <application>libsecret</application> をインストールしていない場合に本スイッチを指定してください。
 @z
 
 @x

@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY asciidoc-time          "less than 0.1 SBU">
+  <!ENTITY asciidoc-buildsize     "8.9 MB (with tests)">
+  <!ENTITY asciidoc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY asciidoc-time          "&LessThan1;0.1 SBU &LessThan2;">
+  <!ENTITY asciidoc-buildsize     "8.9 MB (テスト込み)">
+  <!ENTITY asciidoc-time          "0.2 SBU (テスト込み)">
 @z
 
 @x
@@ -85,14 +87,24 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required (Run time)</bridgehead>
-    <para role="required">
-      <xref role="runtime" linkend="python2"/> 
+    <bridgehead renderas="sect4">Optional (tests and runtime)</bridgehead>
+    <para role="optional">
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="fop"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="lynx"/>,
+      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink>, and
+      <ulink url="&w3m-url;">W3m</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
-    <para role="required">
-      <xref role="runtime" linkend="python2"/> 
+    <bridgehead renderas="sect4">&Optional; (テスト時および実行時)</bridgehead>
+    <para role="optional">
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="fop"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="lynx"/>,
+      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink>,
+      <ulink url="&w3m-url;">W3m</ulink>
     </para>
 @z
 
@@ -116,9 +128,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make test</command>
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
@@ -151,16 +163,20 @@
           asciidoc.py
         </seg>
         <seg>None</seg>
-        <seg>/etc/asciidoc</seg>
+        <seg>/etc/asciidoc and
+             /usr/share/doc/asciidoc-&asciidoc-version;
+        </seg>
 @y
         <seg>
-          a2x (&SymLinkTo1;a2x.py&SymLinkTo2;), 
+          a2x (a2x.py へのシンボリックリンク), 
           a2x.py, 
-          asciidoc (&SymLinkTo1;asciidoc.py&SymLinkTo2;),
+          asciidoc (asciidoc.py へのシンボリックリンク),
           asciidoc.py
         </seg>
         <seg>&None;</seg>
-        <seg>/etc/asciidoc</seg>
+        <seg>/etc/asciidoc,
+             /usr/share/doc/asciidoc-&asciidoc-version;
+        </seg>
 @z
 
 @x

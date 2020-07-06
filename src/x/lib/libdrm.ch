@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libdrm-buildsize     "9.5 MB (with tests)">
-  <!ENTITY libdrm-time          "less than 0.1 SBU (add 0.3 SBU for tests)">
+  <!ENTITY libdrm-buildsize     "10 MB (with tests)">
+  <!ENTITY libdrm-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libdrm-buildsize     "9.5 MB (テスト込み)">
-  <!ENTITY libdrm-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実行時はさらに 0.3 SBU)">
+  <!ENTITY libdrm-buildsize     "10 MB (テスト込み)">
+  <!ENTITY libdrm-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -156,14 +156,11 @@
 @z
 
 @x
-      To check the results, issue <command>ninja test</command>. One test,
+      To check the results, issue <command>ninja test</command>. <!--One test,
       'threaded' in the nouveau subdirectory, is known to fail with a 
-      30 second timeout.
+      30 second timeout.-->
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      One test,
-      'threaded' in the nouveau subdirectory, is known to fail with a 
-      30 second timeout.@z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:

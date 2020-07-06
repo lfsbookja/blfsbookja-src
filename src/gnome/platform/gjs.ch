@@ -148,13 +148,13 @@
       <application>GTK</application> and <application>Cairo</application>
       tests will fail if not running in an Xorg session. One test,
       <filename>gjs: Scripts/CommandLine</filename>, is known to fail.
-      On some systems, up to four tests may fail with an error.
+      On some systems, up to six tests may fail with an error.
       <!-- Still fails with 1.58.5. -->
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       Xorg セッション内でテスト実行しないと <application>GTK</application> と <application>Cairo</application> のテストは失敗します。
       <filename>gjs: Scripts/CommandLine</filename> というテストが 1 つは失敗します。
-      システムによっては、最大 4 つのテストがエラーにより失敗します。
+      システムによっては、最大 6 つのテストがエラーにより失敗します。
 @z
 
 @x

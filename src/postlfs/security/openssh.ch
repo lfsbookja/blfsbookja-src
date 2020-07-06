@@ -16,11 +16,11 @@
 @x
   <!ENTITY openssh-buildsize     "43 MB (add 17 MB for tests)">
   <!ENTITY openssh-time          "0.2 SBU (Using parallelism=4; 
-                                  running the tests takes 17+ minutes,
+                                  running the tests takes 20+ minutes,
                                   irrespective of processor speed)">
 @y
   <!ENTITY openssh-buildsize     "43 MB (テスト実施時はさらに 17 MB)">
-  <!ENTITY openssh-time          "0.2 SBU (parallelism=4 利用時; テスト実施はプロセッサーの処理スピードとは無関係に最低でも 17 分以上)">
+  <!ENTITY openssh-time          "0.2 SBU (parallelism=4 利用時; テスト実施はプロセッサーの処理スピードとは無関係に最低でも 20 分以上)">
 @z
 
 @x
@@ -179,9 +179,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make tests</command>.
+      To test the results, issue: <command>make -j1 tests</command>.
 @y
-      ビルド結果をテストする場合は <command>make tests</command> を実行します。
+      ビルド結果をテストする場合は <command>make -j1 tests</command> を実行します。
 @z
 
 @x

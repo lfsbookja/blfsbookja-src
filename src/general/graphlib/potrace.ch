@@ -30,11 +30,11 @@
 @x
       <!-- summarized from the home page, where Potrace(TM) is used -->
       <application>Potrace&#8482;</application> is a tool for transforming a bitmap
-       (PBM, PGM, PPM, or BMP format) into one of several vector file formats.
+      (PBM, PGM, PPM, or BMP format) into one of several vector file formats.
 @y
       <!-- summarized from the home page, where Potrace(TM) is used -->
       <application>Potrace&#8482;</application> is a tool for transforming a bitmap
-       (PBM, PGM, PPM, or BMP format) into one of several vector file formats.
+      (PBM, PGM, PPM, or BMP format) into one of several vector file formats.
 @z
 
 @x
@@ -88,7 +88,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="llvm"/> (including <command>clang</command>).
+      <xref linkend="llvm"/> (including <command>clang</command>)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>

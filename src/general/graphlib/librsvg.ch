@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "1.2 GB (90 MB installed), add 651 MB for tests">
-  <!ENTITY librsvg-time          "2.0 SBU (on a 4-core machine), add 0.7 SBU for tests">
+  <!ENTITY librsvg-buildsize     "1.3 GB (90 MB installed), add 864 MB for tests">
+  <!ENTITY librsvg-time          "2.0 SBU (on a 4-core machine), add 0.9 SBU for tests">
 @y
-  <!ENTITY librsvg-buildsize     "1.2 GB (インストールに 90 MB), テスト実施時はさらに 651 MB">
-  <!ENTITY librsvg-time          "2.0 SBU (4 コアマシン), テスト実施時はさらに 0.7 SBU">
+  <!ENTITY librsvg-buildsize     "1.3 GB (インストールに 90 MB), テスト実施時はさらに 864 MB">
+  <!ENTITY librsvg-time          "2.0 SBU (4 コアマシン), テスト実施時はさらに 0.9 SBU">
 @z
 
 @x
@@ -149,7 +149,7 @@
 @x
       To test the results, issue: <command>make check</command>.
       <!-- https://gitlab.gnome.org/GNOME/librsvg/issues/511 -->
-      Many of the tests in 'reftests' may fail (45 failed in April 2020) because
+      Many of the tests in 'reftests' may fail (45 failed in June 2020) because
       they produce, and then diff, graphic files with text and the details such
       as spacing vary when the system versions of cairo, freetype, pixman, pango
       and perhaps harfbuzz differ from the versions on the system where the
@@ -157,7 +157,7 @@
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       <!-- https://gitlab.gnome.org/GNOME/librsvg/issues/511 -->
-      Many of the tests in 'reftests' may fail (45 failed in April 2020) because
+      Many of the tests in 'reftests' may fail (45 failed in June 2020) because
       they produce, and then diff, graphic files with text and the details such
       as spacing vary when the system versions of cairo, freetype, pixman, pango
       and perhaps harfbuzz differ from the versions on the system where the

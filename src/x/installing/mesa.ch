@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "541 MB (with demos and docs), add 262 MB for tests">
-  <!ENTITY mesa-time          "2.6 SBU (with parallelism=4, demos, and docs), add 0.4 SBU for tests">
+  <!ENTITY mesa-buildsize     "565 MB (with demos and docs), add 304 MB for tests">
+  <!ENTITY mesa-time          "2.6 SBU (with parallelism=4, demos, and docs), add 0.5 SBU for tests">
 @y
-  <!ENTITY mesa-buildsize     "541 MB (デモおよびドキュメント込み)、テスト実施時はさらに 262 MB">
-  <!ENTITY mesa-time          "2.6 SBU (parallelism=4, デモおよびドキュメント込み)、テスト実施時はさらに 0.4 SBU">
+  <!ENTITY mesa-buildsize     "565 MB (デモおよびドキュメント込み)、テスト実施時はさらに 304 MB">
+  <!ENTITY mesa-time          "2.6 SBU (parallelism=4, デモおよびドキュメント込み)、テスト実施時はさらに 0.5 SBU">
 @z
 
 @x
@@ -264,10 +264,12 @@
 
 @x
       If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>.
+      <command>ninja test</command>. Six tests in the glcpp test suite are
+      known to fail.
 @y
       If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>.
+      <command>ninja test</command>. Six tests in the glcpp test suite are
+      known to fail.
 @z
 
 @x

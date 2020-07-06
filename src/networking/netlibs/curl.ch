@@ -110,10 +110,12 @@
       <xref linkend="samba"/>,
       <ulink url="https://www.secureauth.com/labs/open-source-tools/impacket/">impacket</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>, and
+      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
+      <ulink url="https://github.com/ngtcp2/ngtcp2/">ngtcp2</ulink>, 
       <!--<ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
       PolarSSL), and -->
       <!-- mbedTLS/PolarSSL support was removed in 7.65.1 -->
+      <ulink url="https://github.com/cloudflare/quiche">quiche</ulink>, and
       <ulink url="http://spnego.sourceforge.net/">SPNEGO</ulink>
     </para>
 @y
@@ -131,10 +133,12 @@
       <xref linkend="samba"/>,
       <ulink url="https://www.secureauth.com/labs/open-source-tools/impacket/">impacket</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>, and
+      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
+      <ulink url="https://github.com/ngtcp2/ngtcp2/">ngtcp2</ulink>, 
       <!--<ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
       PolarSSL), and -->
       <!-- mbedTLS/PolarSSL support was removed in 7.65.1 -->
+      <ulink url="https://github.com/cloudflare/quiche">quiche</ulink>, and
       <ulink url="http://spnego.sourceforge.net/">SPNEGO</ulink>
     </para>
 @z

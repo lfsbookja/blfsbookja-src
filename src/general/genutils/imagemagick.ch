@@ -134,7 +134,7 @@
       well as issuing the <command>./configure --help</command> command. A
       summary of this information, as well as some additional notes can be
       viewed on-line at <ulink
-      url="http://www.imagemagick.org/script/advanced-unix-installation.php"/>.
+      url="https://imagemagick.org/script/advanced-unix-installation.php"/>.
 @y
       The optional dependencies listed below should be installed if you need
       support for the specific format or the conversion tool the dependency
@@ -146,7 +146,7 @@
       well as issuing the <command>./configure --help</command> command. A
       summary of this information, as well as some additional notes can be
       viewed on-line at <ulink
-      url="http://www.imagemagick.org/script/advanced-unix-installation.php"/>.
+      url="https://imagemagick.org/script/advanced-unix-installation.php"/>.
 @z
 
 @x
@@ -171,8 +171,8 @@
       and
       <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats
       listed in
-      <ulink url="http://imagemagick.org/script/formats.php">
-      http://www.imagemagick.org/www/formats.html</ulink>)
+      <ulink url="https://imagemagick.org/script/formats.php">
+      https://imagemagick.org/script/formats.php</ulink>)
     </para>
 @y
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
@@ -196,8 +196,8 @@
       and
       <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats
       listed in
-      <ulink url="http://imagemagick.org/script/formats.php">
-      http://www.imagemagick.org/www/formats.html</ulink>)
+      <ulink url="https://imagemagick.org/script/formats.php">
+      https://imagemagick.org/script/formats.php</ulink>)
     </para>
 @z
 
@@ -304,7 +304,7 @@
       <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
       <ulink url="http://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
       <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
-      <ulink url="http://sk1project.org/modules.php?name=products&amp;product=uniconvertor">
+      <ulink url="https://sk1project.net/uc2/">
       UniConvertor</ulink>, and
       <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
       (or <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)
@@ -320,7 +320,7 @@
       <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
       <ulink url="http://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
       <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
-      <ulink url="http://sk1project.org/modules.php?name=products&amp;product=uniconvertor">
+      <ulink url="https://sk1project.net/uc2/">
       UniConvertor</ulink>, and
       <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
       (or <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)

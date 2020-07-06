@@ -31,12 +31,12 @@
       particular domain name. This package will install two programs by default:
       <command>whois</command> and <command>mkpasswd</command>. The
       <command>mkpasswd</command> command is also installed by the
-      <xref linkend="expect"/> package.
+      expect package in LFS.
 @y
       <application>Whois</application> はクライアント側のアプリケーションで、指定されたドメイン名に対する情報を提供する whois ディレクトリサービスを検索します。
       このパッケージは二つのプログラムをインストールします。
       <command>whois</command> と <command>mkpasswd</command> です。
-      <command>mkpasswd</command> コマンドは <xref linkend="expect"/> でもインストールされます。
+      <command>mkpasswd</command> コマンドは LFS でもインストールしています。
 @z
 
 @x
@@ -131,10 +131,9 @@
 
 @x
         Installing this version of <command>mkpasswd</command> will
-        overwrite the same command installed by <xref linkend="expect"/>.
+        overwrite the same command installed in LFS.
 @y
-    <command>mkpasswd</command> のこのバージョンをインストールすると、<xref
-    linkend="expect"/> によってインストールされた同じコマンドを上書きします。
+        <command>mkpasswd</command> のこのバージョンをインストールすると、LFS によってインストールされた同じコマンドを上書きします。
 @z
 
 @x

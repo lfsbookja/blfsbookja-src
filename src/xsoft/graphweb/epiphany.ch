@@ -193,20 +193,20 @@
 
 @x
         <seg>
-          epiphany and ephy-profile-migrator
+          epiphany
         </seg>
         <seg>
-          <!--libephywebextension.so--> None
+          None
         </seg>
         <seg>
           /usr/{lib,libexec,share,share/help/*}/epiphany
         </seg>
 @y
         <seg>
-          epiphany, ephy-profile-migrator
+          epiphany
         </seg>
         <seg>
-          <!--libephywebextension.so--> &None;
+          &None;
         </seg>
         <seg>
           /usr/{lib,libexec,share,share/help/*}/epiphany

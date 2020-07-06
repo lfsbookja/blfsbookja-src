@@ -93,6 +93,7 @@
       <xref linkend="gstreamer10"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="libva"/>,
+      <xref linkend="pulseaudio"/>,
       <xref linkend="sbc"/>,
       <xref linkend="sdl2"/>, and
       <xref linkend="v4l-utils"/>
@@ -105,6 +106,7 @@
       <xref linkend="gstreamer10"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="libva"/>,
+      <xref linkend="pulseaudio"/>,
       <xref linkend="sbc"/>,
       <xref linkend="sdl2"/>,
       <xref linkend="v4l-utils"/>
@@ -213,11 +215,13 @@
           pw-cat,
           pw-cli,
           pw-dot,
+          pw-metadata,
+          pw-mididump,
           pw-mon,
           pw-profiler,
           spa-inspect,
           spa-monitor, and
-          pw-play and pw-record (symlinks to pw-cat)
+          pw-midirecord, pw-midiplay, pw-play, and pw-record (symlinks to pw-cat)
         </seg>
         <seg>
           libpipewire-0.3.so,
@@ -241,25 +245,27 @@
           pw-cat,
           pw-cli,
           pw-dot,
+          pw-metadata,
+          pw-mididump,
           pw-mon,
           pw-profiler,
           spa-inspect,
-          spa-monitor, and
-          pw-play and pw-record (symlinks to pw-cat)
+          spa-monitor,
+          pw-midirecord, pw-midiplay, pw-play, pw-record (pw-cat へのシンボリックリンク)
         </seg>
         <seg>
           libpipewire-0.3.so,
           libpulse-mainloop-glib-pw.so,
           libpulse-pw.so,
           libpulse-simple-pw.so,
-          libasound_module_pcm_pipewire.so, and
+          libasound_module_pcm_pipewire.so,
           libgstpipewire.so
         </seg>
         <seg>
           /etc/pipewire,
           /usr/include/pipewire-0.3, 
           /usr/include/spa-0.2,
-          /usr/lib/pipewire-0.3, and
+          /usr/lib/pipewire-0.3,
           /usr/lib/spa-0.2
         </seg>
 @z

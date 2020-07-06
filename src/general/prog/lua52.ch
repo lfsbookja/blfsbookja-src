@@ -189,7 +189,7 @@
 
 @x
         <seg>
-          lua52 and luac52
+          lua5.2 and luac5.2
         </seg>
         <seg>
           liblua5.2.so
@@ -202,7 +202,7 @@
         </seg>
 @y
         <seg>
-          lua52, luac52
+          lua5.2, luac5.2
         </seg>
         <seg>
           liblua5.2.so

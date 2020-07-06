@@ -128,7 +128,8 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
       <xref linkend="libidn"/> or 
-      <xref linkend="libidn2"/>
+      <xref linkend="libidn2"/>,
+      <xref linkend="libseccomp"/>,
       <xref linkend="net-tools"/> (used during the test suite),
       <xref linkend="texlive"/> or <xref linkend="tl-installer"/>,
       <xref linkend="unbound"/> (to build the DANE library),
@@ -145,13 +146,14 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="guile"/>,
       <xref linkend="libidn"/> または
-      <xref linkend="libidn2"/>
+      <xref linkend="libidn2"/>,
+      <xref linkend="libseccomp"/>,
       <xref linkend="net-tools"/> (used during the test suite),
       <xref linkend="texlive"/> or <xref linkend="tl-installer"/>,
       <xref linkend="unbound"/> (to build the DANE library),
       <xref linkend="valgrind"/> (used during the test suite),
       <ulink url="&gnu-http;/autogen/">autogen</ulink>,
-      <ulink url="https://cmocka.org/">cmocka</ulink>,
+      <ulink url="https://cmocka.org/">cmocka</ulink> and
       <ulink url="http://ftp.debian.org/debian/pool/main/d/datefudge/">datefudge</ulink> (used during the test suite if the DANE library is built), and
       <ulink url="&sourceforge-dl;/trousers/">Trousers</ulink> (Trusted Platform Module support)
     </para>

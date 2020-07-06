@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "185 MB (add 37 MB for tests)">
-  <!ENTITY postgresql-time          "0.6 SBU (with parallelism=4, add 0.1 SBU for tests)">
+  <!ENTITY postgresql-buildsize     "186 MB (add 36 MB for tests)">
+  <!ENTITY postgresql-time          "0.7 SBU (with parallelism=4, add 0.1 SBU for tests)">
 @y
-  <!ENTITY postgresql-buildsize     "185 MB （テスト実施時はさらに 37 MB）">
-  <!ENTITY postgresql-time          "0.6 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
+  <!ENTITY postgresql-buildsize     "186 MB （テスト実施時はさらに 36 MB）">
+  <!ENTITY postgresql-time          "0.7 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
 @z
 
 @x
@@ -88,7 +88,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="python2"/>,
-      <xref linkend="tcl"/>,
+      <!-- <xref linkend="tcl"/>, -->
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="openldap"/>,
@@ -100,12 +100,12 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="python2"/>,
-      <xref linkend="tcl"/>,
+      <!-- <xref linkend="tcl"/>, -->
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="openldap"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="mitkrb"/>,
+      <xref linkend="mitkrb"/> and
       <ulink url="https://developer.apple.com/bonjour/">Bonjour</ulink>
     </para>
 @z

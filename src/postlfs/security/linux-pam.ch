@@ -111,16 +111,18 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
-      <xref linkend="cracklib"/>,
-      <xref linkend="libtirpc"/> and
+      <xref linkend="libnsl"/>,
+      <xref linkend="libtirpc"/>, 
+      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>, and
       <ulink url="http://www.prelude-siem.org">Prelude</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
-      <xref linkend="cracklib"/>,
-      <xref linkend="libtirpc"/> and
+      <xref linkend="libnsl"/>,
+      <xref linkend="libtirpc"/>, 
+      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>,
       <ulink url="http://www.prelude-siem.org">Prelude</ulink>
     </para>
 @z
@@ -365,7 +367,7 @@
 
 @x
         <seg>
-          mkhomedir_helper, pam_tally, pam_tally2,
+          faillock, mkhomedir_helper,
           pam_timestamp_check, unix_chkpwd and
           unix_update
         </seg>
@@ -380,7 +382,7 @@
         </seg>
 @y
         <seg>
-          mkhomedir_helper, pam_tally, pam_tally2,
+          faillock, mkhomedir_helper,
           pam_timestamp_check, unix_chkpwd,
           unix_update
         </seg>

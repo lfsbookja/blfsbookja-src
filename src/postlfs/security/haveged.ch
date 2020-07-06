@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY haveged-buildsize     "20 MB (with tests)">
+  <!ENTITY haveged-buildsize     "21 MB (with tests)">
   <!ENTITY haveged-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY haveged-buildsize     "20 MB （テスト込み）">
+  <!ENTITY haveged-buildsize     "21 MB （テスト込み）">
   <!ENTITY haveged-time          "0.1 SBU （テスト込み）">
 @z
 
@@ -173,7 +173,8 @@
           libhavege.so
         </seg>
         <seg>
-          /usr/include/haveged
+          /usr/include/haveged and
+          /usr/share/doc/haveged-&haveged-version;
         </seg>
 @y
         <seg>
@@ -183,7 +184,8 @@
           libhavege.so
         </seg>
         <seg>
-          /usr/include/haveged
+          /usr/include/haveged,
+          /usr/share/doc/haveged-&haveged-version;
         </seg>
 @z
 

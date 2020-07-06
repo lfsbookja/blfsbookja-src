@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "656 MB (add 738 MB for docs)">
-  <!ENTITY gdb-time          "1.9 SBU (Using parallelism=4; add 18 SBU for tests, add 0.6 SBU for docs)">
+  <!ENTITY gdb-buildsize     "590 MB (add 733 MB for docs; add 27 MB for tests)">
+  <!ENTITY gdb-time          "2.0 SBU (Using parallelism=4; add 15 SBU for tests; add 0.5 SBU for docs)">
 @y
-  <!ENTITY gdb-buildsize     "656 MB （ドキュメント生成時はさらに 738 MB）">
-  <!ENTITY gdb-time          "1.9 SBU （parallelism=4; さらにテスト実施時 18 SBU, ドキュメント生成時 0.6 SBU）">
+  <!ENTITY gdb-buildsize     "590 MB （ドキュメント生成時はさらに 733 MB; テスト実施時はさらに 27 MB）">
+  <!ENTITY gdb-time          "2.0 SBU （parallelism=4; さらにテスト実施時 15 SBU, ドキュメント生成時 0.5 SBU）">
 @z
 
 @x
@@ -91,7 +91,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (required for tests),
+      <!-- <xref linkend="dejagnu"/> (required for tests), -->
       <xref linkend="doxygen"/>,
       <xref linkend="gcc"/> (ada and gfortran are used for tests),
       <xref linkend="guile"/>,
@@ -104,13 +104,13 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> （テストに必要）,
+      <!-- <xref linkend="dejagnu"/> (required for tests), -->
       <xref linkend="doxygen"/>,
       <xref linkend="gcc"/> (ada and gfortran are used for tests),
       <xref linkend="guile"/>,
       <xref linkend="python2"/>,
       <xref linkend="rust"/> (used for some tests),
-      <xref linkend="valgrind"/>, and
+      <xref linkend="valgrind"/>,
       <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
       （実行時での依存、テスト内にて利用するものもあり）
     </para>

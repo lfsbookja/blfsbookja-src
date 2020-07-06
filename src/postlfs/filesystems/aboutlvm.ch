@@ -169,10 +169,14 @@
 
 @x
     A LVM logical volume can host a root filesystem, but requires the use
-    of an initramfs (initial RAM file system) and is not discussed here.
+    of an initramfs (initial RAM file system). The initramfs proposed in
+    <xref linkend="initramfs"/> allows to pass the lvm volume in
+    the <parameter>root=</parameter> switch of the kernel command line.
 @y
     A LVM logical volume can host a root filesystem, but requires the use
-    of an initramfs (initial RAM file system) and is not discussed here.
+    of an initramfs (initial RAM file system). The initramfs proposed in
+    <xref linkend="initramfs"/> allows to pass the lvm volume in
+    the <parameter>root=</parameter> switch of the kernel command line.
 @z
 
 @x

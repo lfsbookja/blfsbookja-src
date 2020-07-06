@@ -88,13 +88,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="linux-pam"/> or
-      <xref linkend="cracklib"/>
+      <xref role="nodep" linkend="cracklib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="linux-pam"/> または
-      <xref linkend="cracklib"/>
+      <xref role="nodep" linkend="cracklib"/>
     </para>
 @z
 
@@ -112,13 +112,12 @@
 
 @x
         The installation commands shown below are for installations where
-        <application>Linux-PAM</application> has been installed (with or
-        without a <application>CrackLib</application> installation) and
+        <application>Linux-PAM</application> has been installed and
         <application>Shadow</application> is being reinstalled to support the
         <application>Linux-PAM</application> installation.
 @y
         以下に説明するビルド手順は <application>Linux-PAM</application> がインストールされていることを前提としています。
-        (<application>CrackLib</application> はインストールしているかどうかはどちらでも変わりません。) <application>Shadow</application> を再インストールすることによって <application>Linux-PAM</application> の機能を活用するものです。
+        <application>Shadow</application> を再インストールすることによって <application>Linux-PAM</application> の機能を活用するものです。
 @z
 
 @x
@@ -302,13 +301,13 @@
         on the <xref linkend="linux-pam"/> page for further configuration
         information. For information specific to integrating
         <application>Shadow</application>, <application>Linux-PAM</application>
-        and <application>CrackLib</application>, you can visit the following
-        link:
+        and <application>libpwquality</application>, you can visit the
+        following link:
 @y
         <application>Linux-PAM</application> を用いたシステム設定作業は複雑です。
         以下に示す情報は、<application>Linux-PAM</application> とともに <application>Shadow</application> のログイン機能、パスワード機能が有効に作動するための基本的な設定方法を示すものです。
         より詳細な設定方法については <xref linkend="linux-pam"/> に示されている情報およびリンクを参照してください。
-        <application>Shadow</application>, <application>Linux-PAM</application>, <application>CrackLib</application> による機能強化に関しては、以下のリンクを参照してください。
+        <application>Shadow</application>, <application>Linux-PAM</application>, <application>libpwquality</application> による機能強化に関しては、以下のリンクを参照してください。
 @z
 
 @x

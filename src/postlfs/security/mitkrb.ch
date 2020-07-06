@@ -86,11 +86,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (for full test coverage),
+      <!-- <xref linkend="dejagnu"/> (for full test coverage), -->
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
-      <xref linkend="openldap"/>,
-      <xref linkend="rpcbind"/> (used during the testsuite),
+      <xref linkend="openldap"/>,<!-- Seems so that mit has its own
+      implementation of rpc now.
+      <xref linkend="rpcbind"/> (used during the testsuite),-->
       <xref linkend="valgrind"/> (used during the testsuite),
       <ulink url="https://www.cs.utah.edu/~bigler/code/libedit.html">libedit</ulink>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
@@ -100,11 +101,12 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dejagnu"/> (全テストの網羅に必要),
+      <!-- <xref linkend="dejagnu"/> (for full test coverage), -->
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
-      <xref linkend="openldap"/>,
-      <xref linkend="rpcbind"/> (テストスイート実行時に利用),
+      <xref linkend="openldap"/>,<!-- Seems so that mit has its own
+      implementation of rpc now.
+      <xref linkend="rpcbind"/> (used during the testsuite),-->
       <xref linkend="valgrind"/> (テストスイート実行時に利用),
       <ulink url="https://www.cs.utah.edu/~bigler/code/libedit.html">libedit</ulink>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
@@ -147,19 +149,19 @@
 @x
       To test the build, issue as the <systemitem
       class="username">root</systemitem> user: <command>make -k check</command>.
-      You need at least <xref linkend="tcl"/>, which is used to drive the
-      testsuite.  Furthermore, <xref linkend="dejagnu"/> must be available for
-      some of the tests to run. If you have a former version of MIT Kerberos V5
-      installed, it may happen that the test suite pick up the installed
+      <!-- You need at least <xref link end="tcl"/>, which is used to drive the
+      testsuite.  Furthermore, <xref link end="dejagnu"/> must be available for
+      some of the tests to run.--> If you have a former version of MIT Kerberos V5
+      installed, it may happen that the test suite may pick up the installed
       versions of the libraries, rather than the newly built ones. If so, it is
       better to run the tests after the installation.
 @y
       To test the build, issue as the <systemitem
       class="username">root</systemitem> user: <command>make -k check</command>.
-      You need at least <xref linkend="tcl"/>, which is used to drive the
-      testsuite.  Furthermore, <xref linkend="dejagnu"/> must be available for
-      some of the tests to run. If you have a former version of MIT Kerberos V5
-      installed, it may happen that the test suite pick up the installed
+      <!-- You need at least <xref link end="tcl"/>, which is used to drive the
+      testsuite.  Furthermore, <xref link end="dejagnu"/> must be available for
+      some of the tests to run.--> If you have a former version of MIT Kerberos V5
+      installed, it may happen that the test suite may pick up the installed
       versions of the libraries, rather than the newly built ones. If so, it is
       better to run the tests after the installation.
 @z

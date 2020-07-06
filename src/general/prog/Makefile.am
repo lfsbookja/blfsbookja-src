@@ -10,6 +10,7 @@ SUBDIRS = perl-deps perl-modules
 BOOKdir = @abs_bookdir@/general/prog
 CHANGE_FILES_pythonmodules = \
 	dbus-python.ch   \
+	py3c.ch          \
 	pyatspi2.ch      \
 	pycairo.ch       \
 	pycairo2.ch      \
@@ -29,11 +30,9 @@ CHANGE_FILES = \
 	clisp.ch          \
 	cmake.ch          \
 	decorator.ch      \
-	dejagnu.ch        \
 	docutils.ch       \
 	doxygen.ch        \
 	dummy-java.ch     \
-	expect.ch         \
 	gc.ch             \
 	gcc.ch            \
 	gdb.ch            \
@@ -72,7 +71,6 @@ CHANGE_FILES = \
 	subversion.ch     \
 	svnserver.ch      \
 	swig.ch           \
-	tcl.ch            \
 	tk.ch             \
 	vala.ch           \
 	valgrind.ch       \
@@ -91,7 +89,9 @@ all: ctie $(srcs)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+-include Makefile.sub
+Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
+	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
 
 @MAINT@.PHONY: chbuild
 @MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))

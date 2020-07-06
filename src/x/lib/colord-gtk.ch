@@ -98,13 +98,15 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk2"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk2"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -112,15 +114,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="docbook-utils"/>,
-      <xref linkend="gtk2"/> and
+      <xref linkend="docbook-utils"/> and
       <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
-      <xref linkend="gtk2"/>,
       <xref linkend="gtk-doc"/>
     </para>
 @z

@@ -121,6 +121,7 @@
       <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
+      <xref linkend="py3c"/> (for tests)
       <xref linkend="python2"/> (with sqlite support for the tests),
       <xref linkend="ruby"/>,
       <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
@@ -139,6 +140,7 @@
       <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
+      <xref linkend="py3c"/> (for tests)
       <xref linkend="python2"/> (with sqlite support for the tests),
       <xref linkend="ruby"/>,
       <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
@@ -153,8 +155,7 @@
       One of <xref linkend="openjdk"/>,
       <ulink url="http://www.inet.no/dante/">Dante</ulink> or
       <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
-      and <ulink url="https://junit.org/junit4/">JUnit 4</ulink>
-      (to test the Java bindings). Note that JUnit is included with
+      <ulink url="https://junit.org/junit4/">JUnit 4</ulink> (to test the Java bindings) and
       <xref linkend="apache-ant"/>.
     </para>
 @y
@@ -163,8 +164,7 @@
       One of <xref linkend="openjdk"/>,
       <ulink url="http://www.inet.no/dante/">Dante</ulink> or
       <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
-      and <ulink url="https://junit.org/junit4/">JUnit 4</ulink>
-      (to test the Java bindings). Note that JUnit is included with
+      <ulink url="https://junit.org/junit4/">JUnit 4</ulink> (to test the Java bindings) and
       <xref linkend="apache-ant"/>.
     </para>
 @z
@@ -196,11 +196,25 @@
 @z
 
 @x
-      If you passed the <option>--enable-javahl</option> parameter to
-      <command>configure</command> and wish to build the Java bindings, issue
-      the following command:
+      If you wish to build the Java bindings pass the <option>--enable-javahl</option>
+      parameter to the <command>configure</command> command. In addition, if
+      you want to run the Java test suite, you have to specify the location
+      of the <application>JUnit</application> file by adding
+      <option>--with-junit=&lt;path to junit jar&gt;</option> (for
+      instance <option>--with-junit=/usr/local/java/lib/junit-4.13.jar</option>)
+      to <command>configure</command>. The JUnit jar file is no longer 
+      included in <xref linkend="apache-ant"/> and must be downloaded seperatly.
+      To build the Java bindings, issue the following command:
 @y
-      <command>configure</command> において <option>--enable-javahl</option> を指定していて、Java バインディングをビルドしたい場合は以下を実行します。
+      If you wish to build the Java bindings pass the <option>--enable-javahl</option>
+      parameter to the <command>configure</command> command. In addition, if
+      you want to run the Java test suite, you have to specify the location
+      of the <application>JUnit</application> file by adding
+      <option>--with-junit=&lt;path to junit jar&gt;</option> (for
+      instance <option>--with-junit=/usr/local/java/lib/junit-4.13.jar</option>)
+      to <command>configure</command>. The JUnit jar file is no longer 
+      included in <xref linkend="apache-ant"/> and must be downloaded seperatly.
+      To build the Java bindings, issue the following command:
 @z
 
 @x
@@ -288,7 +302,7 @@
         <seg>
           /usr/include/subversion-1,
           /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto/}SVN,
-          /usr/lib/python2.7/site-packages/{libsvn,svn},
+          /usr/lib/python&python3-majorver;/site-packages/{libsvn,svn},
           /usr/lib/ruby/site_ruby/&lt;x.y.z&gt;/{,&lt;arch-linux&gt;-linux/}svn,
           /usr/lib/svn-javahl, and
           /usr/share/doc/subversion-&subversion-version;
@@ -302,13 +316,13 @@
           libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
           and mod_authz_svn.so <application>Apache HTTP</application> DSO
           modules and various <application>Perl</application>,
-          <application>Python</application> and
+          <application>Python</application>,
           <application>Ruby</application> modules.
         </seg>
         <seg>
           /usr/include/subversion-1,
           /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto/}SVN,
-          /usr/lib/python2.7/site-packages/{libsvn,svn},
+          /usr/lib/python&python3-majorver;/site-packages/{libsvn,svn},
           /usr/lib/ruby/site_ruby/&lt;x.y.z&gt;/{,&lt;arch-linux&gt;-linux/}svn,
           /usr/lib/svn-javahl,
           /usr/share/doc/subversion-&subversion-version;

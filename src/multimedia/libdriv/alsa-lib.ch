@@ -214,11 +214,9 @@
         <seg>
           libasound.so and
           libatopology.so
-           <!-- and four others under /usr/lib/alsa-lib/smixer -->
         </seg>
         <seg>
           /usr/include/alsa,
-          /usr/lib/alsa-lib,
           /usr/share/alsa and
           /usr/share/doc/alsa-lib-&alsa-lib-version;
         </seg>
@@ -229,11 +227,9 @@
         <seg>
           libasound.so,
           libatopology.so
-           <!-- and four others under /usr/lib/alsa-lib/smixer -->
         </seg>
         <seg>
           /usr/include/alsa,
-          /usr/lib/alsa-lib,
           /usr/share/alsa,
           /usr/share/doc/alsa-lib-&alsa-lib-version;
         </seg>

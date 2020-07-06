@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libarchive-buildsize     "40 MB (add 31 MB for tests)">
-  <!ENTITY libarchive-time          "0.4 SBU (add 1.3 SBU for tests)">
+  <!ENTITY libarchive-buildsize     "40 MB (add 28 MB for tests)">
+  <!ENTITY libarchive-time          "0.4 SBU (add 1.0 SBU for tests)">
 @y
-  <!ENTITY libarchive-buildsize     "40 MB (テスト実施時はさらに 31 MB)">
-  <!ENTITY libarchive-time          "0.4 SBU (テスト実施時はさらに 1.5 SBU)">
+  <!ENTITY libarchive-buildsize     "40 MB (テスト実施時はさらに 28 MB)">
+  <!ENTITY libarchive-time          "0.4 SBU (テスト実施時はさらに 1.0 SBU)">
 @z
 
 @x

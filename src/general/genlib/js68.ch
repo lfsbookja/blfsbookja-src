@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY js68-buildsize     "2.8 GB (30 MB installed after removing 31MB static lib)">
-  <!ENTITY js68-time          "1.6 SBU (with parallelism = 4)">
+  <!ENTITY js68-buildsize     "2.8 GB (31 MB installed after removing 31MB static lib)">
+  <!ENTITY js68-time          "2.2 SBU (with parallelism = 4)">
 @y
-  <!ENTITY js68-buildsize     "2.8 GB (30 MB installed after removing 31MB static lib)">
-  <!ENTITY js68-time          "1.6 SBU (with parallelism = 4)">
+  <!ENTITY js68-buildsize     "2.8 GB (31 MB installed after removing 31MB static lib)">
+  <!ENTITY js68-time          "2.2 SBU (with parallelism = 4)">
 @z
 
 @x
@@ -54,15 +54,15 @@
 @z
 
 @x
-          Download MD5 sum: &firefox-md5sum;
+          Download MD5 sum: &js68-md5sum;
 @y
-          Download MD5 sum: &firefox-md5sum;
+          Download MD5 sum: &js68-md5sum;
 @z
 
 @x
-          Download size: &firefox-size;
+          Download size: &js68-size;
 @y
-          Download size: &firefox-size;
+          Download size: &js68-size;
 @z
 
 @x
@@ -88,34 +88,32 @@
     <para role="required">
       <xref linkend="autoconf213"/>,
       <xref linkend="icu"/>,
-      <xref linkend="python2"/>,
-      <xref linkend="which"/>,
-      <!--<xref linkend="yasm"/>,--> and
-      <xref linkend="zip"/>
+      <xref linkend="python2"/>, and
+      <xref linkend="which"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="autoconf213"/>,
       <xref linkend="icu"/>,
       <xref linkend="python2"/>,
-      <xref linkend="which"/>,
-      <!--<xref linkend="yasm"/>,--> and
-      <xref linkend="zip"/>
+      <xref linkend="which"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="llvm"/> (with <application>Clang</application>) and
-      <xref linkend="doxygen"/>
+      <xref linkend="llvm"/> (with <application>Clang</application>),
+      <xref linkend="nasm"/>, and
+      <xref linkend="doxygen"/> (for documentation)
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="llvm"/> (with <application>Clang</application>) and
-      <xref linkend="doxygen"/>
+      <xref linkend="llvm"/> (with <application>Clang</application>),
+      <xref linkend="nasm"/>, and
+      <xref linkend="doxygen"/> (for documentation)
     </para>
 @z
 
@@ -208,18 +206,24 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
-      <command>sed '21,+4d' js/moz.configure</command>: The building system
-      searches for <command>rustc</command> and <command>cargo</command> but
-      doesn't actually use them.  Remove the reference to them so we can
+      <command>sed '21,+4d' js/moz.configure</command>: Firefox building
+      system searches for <command>rustc</command> and
+      <command>cargo</command>.
+      Since we are building the standalone JS engine instead of the entire
+      browser, they are not actually used.
+      Remove the reference to them so we can
       build JS68 without <xref role="nodep" linkend="rust"/> installed.
 @y
-      <command>sed '21,+4d' js/moz.configure</command>: The building system
-      searches for <command>rustc</command> and <command>cargo</command> but
-      doesn't actually use them.  Remove the reference to them so we can
+      <command>sed '21,+4d' js/moz.configure</command>: Firefox building
+      system searches for <command>rustc</command> and
+      <command>cargo</command>.
+      Since we are building the standalone JS engine instead of the entire
+      browser, they are not actually used.
+      Remove the reference to them so we can
       build JS68 without <xref role="nodep" linkend="rust"/> installed.
 @z
 
@@ -234,13 +238,17 @@
 @z
 
 @x
-      <envar>LLVM_OBJDUMP=/bin/false</envar>: The building system searches
-      for <command>llvm-objdump</command> but doesn't actually use it.
+      <envar>LLVM_OBJDUMP=/bin/false</envar>: The firefox build system
+      searches for <command>llvm-objdump</command>.
+      Since we are building the standalone JS engine instead of the entire
+      browser, they are not actually used.
       Override it so we can build JS68 without
       <xref role="nodep" linkend="llvm"/> installed.
 @y
-      <envar>LLVM_OBJDUMP=/bin/false</envar>: The building system searches
-      for <command>llvm-objdump</command> but doesn't actually use it.
+      <envar>LLVM_OBJDUMP=/bin/false</envar>: The firefox build system
+      searches for <command>llvm-objdump</command>.
+      Since we are building the standalone JS engine instead of the entire
+      browser, they are not actually used.
       Override it so we can build JS68 without
       <xref role="nodep" linkend="llvm"/> installed.
 @z

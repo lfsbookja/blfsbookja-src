@@ -156,10 +156,10 @@
 
 @x
       <parameter>--without-included-zlib</parameter>: This switch enables
-      compilation with system-installed zlib library.
+      compilation with the system-installed zlib library.
 @y
       <parameter>--without-included-zlib</parameter>: This switch enables
-      compilation with system-installed zlib library.
+      compilation with the system-installed zlib library.
 @z
 
 @x
@@ -200,10 +200,10 @@
 @x
         You can find additional configuration information and general
         documentation about <command>rsync</command> at
-        <ulink url="http://rsync.samba.org/documentation.html"/>.
+        <ulink url="https://rsync.samba.org/documentation.html"/>.
 @y
         <command>rsync</command> における、より詳細な設定情報は <ulink
-        url="http://rsync.samba.org/documentation.html"/> を参照してください。
+        url="https://rsync.samba.org/documentation.html"/> を参照してください。
 @z
 
 @x
@@ -215,14 +215,14 @@
 @z
 
 @x
-        Note that you only want to start the
+        Note that you only need to start the
         <application>rsync</application> server if you want to provide an
         <application>rsync</application> archive on your local machine.
         You don't need this <phrase revision="sysv">script</phrase>
         <phrase revision="systemd">unit</phrase> to run the
         <application>rsync</application> client.
 @y
-        Note that you only want to start the
+        Note that you only need to start the
         <application>rsync</application> server if you want to provide an
         <application>rsync</application> archive on your local machine.
         You don't need this <phrase revision="sysv">script</phrase>
@@ -265,11 +265,11 @@
 @z
 
 @x
-        <seg>rsync</seg>
+        <seg>rsync and rsync-ssl</seg>
         <seg>None</seg>
         <seg>Optionally, /usr/share/doc/rsync-&rsync-version;</seg>
 @y
-        <seg>rsync</seg>
+        <seg>rsync, rsync-ssl</seg>
         <seg>&None;</seg>
         <seg>任意インストールとして /usr/share/doc/rsync-&rsync-version;</seg>
 @z

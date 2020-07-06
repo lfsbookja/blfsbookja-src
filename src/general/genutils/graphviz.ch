@@ -247,7 +247,7 @@
       <xref linkend="php"/>,
       <xref linkend="python2"/>,
       <xref linkend="ruby"/>,
-      <xref linkend="tcl"/>,
+      <!-- <xref linkend="tcl"/>, -->
       <xref linkend="tk"/>,
       <ulink url="http://iolanguage.org/">Io</ulink>,
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
@@ -266,11 +266,11 @@
       <xref linkend="php"/>,
       <xref linkend="python2"/>,
       <xref linkend="ruby"/>,
-      <xref linkend="tcl"/>,
+      <!-- <xref linkend="tcl"/>, -->
       <xref linkend="tk"/>,
       <ulink url="http://iolanguage.org/">Io</ulink>,
       <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
-      <ulink url="http://ocaml.org/">OCaml</ulink>, and
+      <ulink url="http://ocaml.org/">OCaml</ulink>,
       <ulink url="http://www.r-project.org/">R</ulink>
     </para>
 @z
@@ -403,16 +403,16 @@
           unflatten, and vimdot
         </seg>
         <seg>
-          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, libpathplan.so,
-          libxdot.so, and several plugins in /usr/lib/graphviz.
+          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so, 
+          libpathplan.so, libxdot.so, and several plugins in /usr/lib/graphviz.
           There are also several in subdirectories of
-          /usr/lib/{lua,perl5,php,python&python2-majorver;,tcl8.6}.
+          /usr/lib/{lua,perl5,php,python&python2-majorver;,python&python3-majorver;tcl8.6}.
           Unfortunately, some libraries are duplicated.
         </seg>
         <seg>
           /usr/include/graphviz,
           /usr/lib/graphviz,
-          /usr/lib/tcl8.6/graphviz, 
+          /usr/lib/tcl8.6/graphviz,
           /usr/share/doc/graphviz-&graphviz-version;, and
           /usr/share/graphviz
         </seg>
@@ -426,15 +426,15 @@
           unflatten, vimdot
         </seg>
         <seg>
-          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, libpathplan.so,
-          libxdot.so, /usr/lib/graphviz 配下に数種のプラグイン,
-          /usr/lib/{lua,perl5,php,python&python2-majorver;,tcl8.6} 配下にサブディレクトリ。
+          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so, 
+          libpathplan.so, libxdot.so, /usr/lib/graphviz 配下に数種のプラグイン,
+          /usr/lib/{lua,perl5,php,python&python2-majorver;,python&python3-majorver;tcl8.6} 配下にサブディレクトリ,
           ただしライブラリの中には重複しているものあり。
         </seg>
         <seg>
           /usr/include/graphviz,
           /usr/lib/graphviz,
-          /usr/lib/tcl8.6/graphviz, 
+          /usr/lib/tcl8.6/graphviz,
           /usr/share/doc/graphviz-&graphviz-version;,
           /usr/share/graphviz
         </seg>

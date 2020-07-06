@@ -27,12 +27,12 @@
 
 @x
       The <application>rpcsvc-proto</application> package contains the rcpsvc 
-      protocol.x files and headers, formerly included with glibc, that are not
+      protocol files and headers, formerly included with glibc, that are not
       included in replacement <xref linkend="libtirpc"/>, along with the rpcgen
       program.
 @y
       The <application>rpcsvc-proto</application> package contains the rcpsvc 
-      protocol.x files and headers, formerly included with glibc, that are not
+      protocol files and headers, formerly included with glibc, that are not
       included in replacement <xref linkend="libtirpc"/>, along with the rpcgen
       program.
 @z

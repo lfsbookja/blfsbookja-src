@@ -14,6 +14,7 @@ CHANGE_FILES = \
 	brotli.ch \
 	clucene.ch \
 	dbus-glib.ch \
+	double-conversion.ch \
 	enchant.ch \
 	exempi.ch \
 	fftw.ch \
@@ -21,14 +22,12 @@ CHANGE_FILES = \
 	glib2.ch \
 	glibmm.ch \
 	gmime.ch \
-	gmime3.ch \
 	gobject-introspection.ch \
         grantlee.ch \
 	gsl.ch \
 	gspell.ch \
 	icu.ch \
 	jansson.ch \
-	js60.ch \
 	js68.ch \
 	json-c.ch \
 	json-glib.ch \
@@ -63,6 +62,7 @@ CHANGE_FILES = \
 	libssh2.ch \
 	libstatgrab.ch \
 	libtasn1.ch \
+	libuninameslist.ch \
 	libunique.ch \
 	libunistring.ch \
 	libusb.ch \
@@ -81,7 +81,6 @@ CHANGE_FILES = \
 	pcre2.ch \
 	popt.ch \
 	pth.ch \
-	ptlib.ch \
 	qca.ch \
 	talloc.ch \
 	telepathy-glib.ch \
@@ -95,6 +94,7 @@ CHANGE_FILES = \
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@
 srcs = $(CHANGE_FILES:.ch=.xml)
+DISTCLEANFILES = $(srcs)
 
 SUFFIXES = .ch .xml
 .ch.xml:
@@ -105,7 +105,9 @@ all: ctie $(srcs)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+-include Makefile.sub
+Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
+	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
 
 @MAINT@.PHONY: chbuild
 @MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))

@@ -106,18 +106,34 @@
 @z
 
 @x
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
+      <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
         <seg>
+          acountry, adig, and ahost
+        </seg>
+        <seg>
           libcares.so
+        </seg>
+        <seg>
+          None
         </seg>
 @y
         <seg>
+          acountry, adig, ahost
+        </seg>
+        <seg>
           libcares.so
+        </seg>
+        <seg>
+          &None;
         </seg>
 @z
 
@@ -128,7 +144,7 @@
 @z
 
 @x libcares.so
-            A C library for asynchronous DNS requests.
+            is a C library for asynchronous DNS requests.
 @y
             非同期の DNS 要求を行う C ライブラリです。
 @z

@@ -80,7 +80,8 @@
       <xref linkend="aspell"/>,
       <xref linkend="enchant"/>,
       <xref linkend="gmime"/>,
-      <xref linkend='gpgme'/>, and
+      <xref linkend="gpgme"/>,
+      <xref linkend="gtk3"/>,and
       <xref linkend="rarian"/>
     </para>
 @y
@@ -89,7 +90,8 @@
       <xref linkend="aspell"/>,
       <xref linkend="enchant"/>,
       <xref linkend="gmime"/>,
-      <xref linkend='gpgme'/>,
+      <xref linkend="gpgme"/>,
+      <xref linkend="gtk3"/>,
       <xref linkend="rarian"/>
     </para>
 @z
@@ -124,27 +126,39 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="compface"/>,
+      <xref linkend="gcr"/>,
       <xref linkend="gtksourceview"/>,
+      <xref linkend="libcanberra"/>,
       <xref linkend="libnotify"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openldap"/>,
+      <xref linkend="procmail"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="webkitgtk"/>,
-      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>, and
-      <ulink url="https://pypi.python.org/pypi/html2text/">python-html2text</ulink>
+      <ulink url="https://pypi.python.org/pypi/html2text/">html2text</ulink>,
+      <ulink url="http://clayo.org/osmo/">osmo</ulink>,
+      <ulink url="https://sourceforge.net/projects/rubrica.berlios/">rubrica</ulink>,
+      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="compface"/>,
+      <xref linkend="gcr"/>,
       <xref linkend="gtksourceview"/>,
+      <xref linkend="libcanberra"/>,
       <xref linkend="libnotify"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openldap"/>,
+      <xref linkend="procmail"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="webkitgtk"/>,
-      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>,
-      <ulink url="https://pypi.python.org/pypi/html2text/">python-html2text</ulink>
+      <ulink url="https://pypi.python.org/pypi/html2text/">html2text</ulink>,
+      <ulink url="http://clayo.org/osmo/">osmo</ulink>,
+      <ulink url="https://sourceforge.net/projects/rubrica.berlios/">rubrica</ulink>,
+      <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>
     </para>
 @z
 
@@ -185,23 +199,6 @@
     <title>&CommandExplanations;</title>
 @z
 
-%@x
-%    <para><parameter>--with-rubrica</parameter>: This parameter is used
-%    to provide Rubrica2 address book support.</para>
-%@y
-%    <para><parameter>--with-rubrica</parameter>:
-%    本パラメーターは Rubrica2 アドレスブックサポートを実現します。
-%    </para>
-%@z
-
-@x
-      <option>--enable-smime</option>: Use this option to enable S/MIME
-      support if <application>GnuPG-2.x.x</application> is installed.
-@y
-      <option>--enable-smime</option>: Use this option to enable S/MIME
-      support if <application>GnuPG-2.x.x</application> is installed.
-@z
-
 @x
       <option>--with-canberra</option>: Enable libcanberra support.
 @y
@@ -236,28 +233,10 @@
 
 @x
       <option>--with-libsecret</option>: Enable strong password
-      support.
+      support and support for gnome-keyring to store passwords.
 @y
       <option>--with-libsecret</option>: Enable strong password
-      support.
-@z
-
-@x
-      <option>--with-gpgme</option>: Use this option to enable GPG support
-      if <quote><application>GnuPG</application> Made Easy</quote>
-      (<application>GPGME</application>) is installed.
-@y
-      <option>--with-gpgme</option>: Use this option to enable GPG support
-      if <quote><application>GnuPG</application> Made Easy</quote>
-      (<application>GPGME</application>) is installed.
-@z
-
-@x
-      <option>--with-html-widget</option>: enable the html renderer (remove
-      <parameter>--without-html-widget</parameter>).
-@y
-      <option>--with-html-widget</option>: enable the html renderer (remove
-      <parameter>--without-html-widget</parameter>).
+      support and support for gnome-keyring to store passwords.
 @z
 
 @x

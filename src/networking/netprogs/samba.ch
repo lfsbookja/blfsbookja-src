@@ -303,7 +303,7 @@
       Setup a Samba Active Directory Domain Controller</ulink> for detailed
       information. Remove this switch if you've installed the Python modules
       needed for ADS support. Note that BLFS does not provide a samba bootscript
-      for an Active Directory domain controller.
+      or systemd unit for an Active Directory domain controller.
 @y
       <parameter>--without-ad-dc</parameter>: Disable
       Active Directory Domain Controller functionality. See <ulink url=
@@ -311,7 +311,7 @@
       Setup a Samba Active Directory Domain Controller</ulink> for detailed
       information. Remove this switch if you've installed the Python modules
       needed for ADS support. Note that BLFS does not provide a samba bootscript
-      for an Active Directory domain controller.
+      or systemd unit for an Active Directory domain controller.
 @z
 
 @x

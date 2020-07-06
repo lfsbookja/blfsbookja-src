@@ -99,14 +99,12 @@
     <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
-      <xref linkend="sqlite"/>, and
       <xref linkend="tk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (追加モジュール用)</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
-      <xref linkend="sqlite"/>,
       <xref linkend="tk"/>
     </para>
 @z

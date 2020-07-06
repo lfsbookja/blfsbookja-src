@@ -80,15 +80,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="itstool"/>, and
-      <xref linkend="libxml2"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="libxml2"/>, and
+      <xref linkend="xmlto"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="libxml2"/>
+      <xref linkend="libxml2"/>,
+      <xref linkend="xmlto"/>
     </para>
 @z
 

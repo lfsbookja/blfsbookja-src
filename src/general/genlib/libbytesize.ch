@@ -26,10 +26,10 @@
 @z
 
 @x
-      The <application>libbytesize</application> package is a library
+      The <application>libbytesize</application> package is a library which
       facilitates the common operations with sizes in bytes.
 @y
-      The <application>libbytesize</application> package is a library
+      The <application>libbytesize</application> package is a library which
       facilitates the common operations with sizes in bytes.
 @z
 
@@ -84,12 +84,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pcre2"/>
+      <xref linkend="pcre2"/> and
+      <xref linkend="pygments"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pcre2"/>
+      <xref linkend="pcre2"/>,
+      <xref linkend="pygments"/>
     </para>
 @z
 

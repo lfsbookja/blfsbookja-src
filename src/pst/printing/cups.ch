@@ -246,11 +246,13 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>. An already
+      To test the results, issue: <command>LC_ALL=C make -k check</command>. An already
       active graphical session with bus address is necessary to run the tests.
+      <!--One test, <filename>httpAddrGetList</filename>, is known to fail.-->
 @y
-      To test the results, issue: <command>make -k check</command>. An already
+      To test the results, issue: <command>LC_ALL=C make -k check</command>. An already
       active graphical session with bus address is necessary to run the tests.
+      <!--One test, <filename>httpAddrGetList</filename>, is known to fail.-->
 @z
 
 @x

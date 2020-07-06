@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY valgrind-buildsize     "425 MB (add 70 MB for tests)">
-  <!ENTITY valgrind-time          "0.6 SBU (Using parallelism=4; add 11 SBU for tests)">
+  <!ENTITY valgrind-buildsize     "615 MB (add 100 MB for tests)">
+  <!ENTITY valgrind-time          "0.6 SBU (Using parallelism=4; add 7.7 SBU for tests)">
 @y
-  <!ENTITY valgrind-buildsize     "425 MB (テスト実施時はさらに 70 MB)">
-  <!ENTITY valgrind-time          "0.6 SBU (parallelism=4 利用時。テスト実施時はさらに 11 SBU)">
+  <!ENTITY valgrind-buildsize     "615 MB (テスト実施時はさらに 100 MB)">
+  <!ENTITY valgrind-time          "0.6 SBU (parallelism=4 利用時。テスト実施時はさらに 7.7 SBU)">
 @z
 
 @x
@@ -213,13 +213,13 @@
         </seg>
         <seg>
           libcoregrind-&lt;Arch&gt;-linux.a,
+          libgcc-sup-&lt;Arch&gt;-linux.a,
           libreplacemalloc_toolpreload-&lt;Arch&gt;-linux.a,
           libvex-&lt;Arch&gt;-linux.a,
           libvexmultiarch-amd64-linux.a,
           vgpreload_core-&lt;Arch&gt;-linux.so,
           vgpreload_drd-&lt;Arch&gt;-linux.so,
           vgpreload_exp-dhat-&lt;Arch&gt;-linux.so,
-          vgpreload_exp-sgcheck-&lt;Arch&gt;-linux.so,
           vgpreload_helgrind-&lt;Arch&gt;-linux.so,
           vgpreload_massif-&lt;Arch&gt;-linux.so, and
           vgpreload_memcheck-&lt;Arch&gt;-linux.so, where
@@ -227,6 +227,7 @@
         </seg>
         <seg>
           /usr/lib/valgrind,
+          /usr/libexec/valgrind,
           /usr/include/valgrind, and
           /usr/share/doc/valgrind-&valgrind-version;
         </seg>
@@ -245,20 +246,21 @@
         </seg>
         <seg>
           libcoregrind-&lt;Arch&gt;-linux.a,
+          libgcc-sup-&lt;Arch&gt;-linux.a,
           libreplacemalloc_toolpreload-&lt;Arch&gt;-linux.a,
           libvex-&lt;Arch&gt;-linux.a,
           libvexmultiarch-amd64-linux.a,
           vgpreload_core-&lt;Arch&gt;-linux.so,
           vgpreload_drd-&lt;Arch&gt;-linux.so,
           vgpreload_exp-dhat-&lt;Arch&gt;-linux.so,
-          vgpreload_exp-sgcheck-&lt;Arch&gt;-linux.so,
           vgpreload_helgrind-&lt;Arch&gt;-linux.so,
-          vgpreload_massif-&lt;Arch&gt;-linux.so,
+          vgpreload_massif-&lt;Arch&gt;-linux.so, and
           vgpreload_memcheck-&lt;Arch&gt;-linux.so, where
           &lt;Arch&gt; is x86 or amd64
         </seg>
         <seg>
           /usr/lib/valgrind,
+          /usr/libexec/valgrind,
           /usr/include/valgrind,
           /usr/share/doc/valgrind-&valgrind-version;
         </seg>

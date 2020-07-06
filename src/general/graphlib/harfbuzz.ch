@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "163 MB (add 24 MB for tests)">
-  <!ENTITY harfbuzz-time          "0.5 SBU (Using parallelism=4; add 0.4 SBU for tests)">
+  <!ENTITY harfbuzz-buildsize     "241 MB (add 31 MB for tests)">
+  <!ENTITY harfbuzz-time          "0.5 SBU (Using parallelism=4; add 2.1 SBU for tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "163 MB （テスト実施時はさらに 24 MB）">
-  <!ENTITY harfbuzz-time          "0.5 SBU （parallelism=4 利用時。テスト実施時はさらに 0.4 SBU）"> 
+  <!ENTITY harfbuzz-buildsize     "241 MB （テスト実施時はさらに 31 MB）">
+  <!ENTITY harfbuzz-time          "0.5 SBU （parallelism=4 利用時。テスト実施時はさらに 2.1 SBU）"> 
 @z
 
 @x
@@ -117,7 +117,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>, and
       <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
-      (Python 2 or Python 3 module, for the testsuite)
+      (Python 3 module, for the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -128,7 +128,7 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>, and
       <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
-      (Python 2 or Python 3 module, for the testsuite)
+      (Python 3 module, for the testsuite)
     </para>
 @z
 

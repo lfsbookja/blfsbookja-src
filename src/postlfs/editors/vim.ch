@@ -121,9 +121,9 @@
       <xref linkend="gpm"/>,
       <xref linkend="lua"/>,
       <xref linkend="python2"/>,
-      <xref linkend="rsync"/>,
-      <xref linkend="ruby"/>, and
-      <xref linkend="tcl"/>
+      <xref linkend="rsync"/> and
+      <xref linkend="ruby"/><!-- , and
+      <xref linkend="tcl"/> -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -132,8 +132,8 @@
       <xref linkend="lua"/>,
       <xref linkend="python2"/>,
       <xref linkend="rsync"/>,
-      <xref linkend="ruby"/>,
-      <xref linkend="tcl"/>
+      <xref linkend="ruby"/><!-- , and
+      <xref linkend="tcl"/> -->
     </para>
 @z
 
@@ -174,28 +174,30 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.  The
-      <application>vim</application> test suite outputs a lot of binary data
-      to the screen, which can cause issues with the settings of the current
-      terminal. This can be resolved by redirecting the output to a log file.
+        If the global configuration file <filename>/etc/vimrc</filename>
+        references the <envar>VIMRUNTIME</envar> environment variable, some
+        tests may complain about being unable to find the corresponding
+        directory and wait for user input. If this is the case, this file
+        should be saved and removed before running the tests.
+@y
+        グローバルな設定である <filename>/etc/vimrc</filename> において <envar>VIMRUNTIME</envar> 環境変数が設定されている場合、テストによっては、対応するディレクトリが見つけられなくなり、ユーザー入力を促すために停止することがあります。
+        このようなことが発生した場合は、このファイルを保存しておき、いったん削除した上でテストを実施してください。
+@z
+
+@x
+      To test the results, issue: <command>make -j1 test</command>.
       Even if one of the tests fails to produce the file
       <filename>test.out</filename> in <filename
       class="directory">src/testdir</filename>, the remaining tests will
-      still be executed. If all goes well,the log will report
-      <literal>ALL DONE</literal>.  <emphasis>Note</emphasis>: Some color
-      tests expect to be executed under the <command>xterm</command> terminal
-      emulator. Three tests are known to fail occasionally and can be ignored.
+      still be executed. If all goes well, the log will report
+      <literal>ALL DONE</literal>. Some tests labelled as
+      <quote>flaky</quote> may fail occasionally and can be ignored.
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
-      <application>vim</application> のテストスイートは数多くのバイナリデータを端末画面上に出力します。
-      これは端末画面の設定によっては問題を引き起こします。
-      これを避けるには出力をリダイレクトしてログファイルに出力するようにしてください。
+      ビルド結果をテストする場合は <command>make -j1 test</command> を実行します。
       テストが失敗した場合、<filename
       class="directory">src/testdir</filename> ディレクトリに <filename>test.out</filename> が出力され、残りのテストは続行します。
       テストが成功すれば、ログに <literal>ALL DONE</literal> が出力されます。
-      <emphasis>メモ</emphasis>: 
-      色に関するテストは、端末エミュレーター <command>xterm</command> 上にて実行することが必要です。
-      状況により失敗するテストが三つありますが無視して構いません。
+      <quote>flaky</quote>に関するテストは、場合によりいくつか失敗することがありますが、無視してかまいません。
 @z
 
 @x
@@ -282,19 +284,21 @@
 @z
 
 @x
+      <option>--enable-luainterp</option>,
       <option>--enable-perlinterp</option>,
       <option>--enable-pythoninterp</option>,
       <option>--enable-tclinterp</option>,
       <option>--enable-rubyinterp</option>:
-      These options include the Perl, Python, Tcl, or Ruby interpreters that
+      These options include the Lua, Perl, Python, Tcl, or Ruby interpreters that
       allow using other application code in <application>vim</application>
       scripts.
 @y
+      <option>--enable-luainterp</option>,
       <option>--enable-perlinterp</option>,
       <option>--enable-pythoninterp</option>,
       <option>--enable-tclinterp</option>,
       <option>--enable-rubyinterp</option>:
-      These options include the Perl, Python, Tcl, or Ruby interpreters that
+      These options include the Lua, Perl, Python, Tcl, or Ruby interpreters that
       allow using other application code in <application>vim</application>
       scripts.
 @z
@@ -343,7 +347,7 @@
 
 @x
         <application>Vim</application> has an integrated spell checker
-        which you can enable it if you issue the following in a vim window:
+        which you can enable by issuing the following in a vim window:
 @y
         <application>Vim</application> には優れたスペルチェッカーがあります。
         vim ウィンドウ内にて以下を実行すれば、この機能を有効にできます。

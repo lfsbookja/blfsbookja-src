@@ -174,10 +174,16 @@
 
 @x
       DESTDIR install must be done as <systemitem
-      class="username">root</systemitem> user.
+      class="username">root</systemitem> user. Furthermore, if PAM
+      configuration files should be installed in <filename class="directory">
+      /etc/pam.d</filename>, you have to create this directory in the
+      DESTDIR before doing the install.
 @y
       DESTDIR install must be done as <systemitem
-      class="username">root</systemitem> user.
+      class="username">root</systemitem> user. Furthermore, if PAM
+      configuration files should be installed in <filename class="directory">
+      /etc/pam.d</filename>, you have to create this directory in the
+      DESTDIR before doing the install.
 @z
 
 @x

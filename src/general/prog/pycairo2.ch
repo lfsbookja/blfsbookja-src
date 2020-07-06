@@ -86,7 +86,7 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="cairo"/>,
+        <xref linkend="cairo"/> and
         <xref linkend="python2"/>
       </para>
 @y

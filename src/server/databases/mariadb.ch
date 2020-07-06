@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY mariadb-time          "9.6 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "1.7 GB (637 MB installed)">
+  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @y
-  <!ENTITY mariadb-time          "9.6 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "1.7 GB (637 MB がインストールされる)">
+  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @z
 
 @x
@@ -219,14 +221,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>sed -i ... sql/CMakeLists.txt</command>: Set correct installation
-      directory for some components.
-@y
-      <command>sed -i ... sql/CMakeLists.txt</command>: Set correct installation
-      directory for some components.
 @z
 
 @x

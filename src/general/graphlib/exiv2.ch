@@ -185,11 +185,11 @@
         </seg>
         <seg>
           libexiv2.so and
-          libxmp.a
+          libexiv2-xmp.a
         </seg>
         <seg>
-          /usr/include/exiv2 and 
-          /usr/share/exiv2
+          /usr/include/exiv2 <!--and 
+          /usr/share/exiv2 -->
         </seg>
 @y
         <seg>
@@ -197,11 +197,11 @@
         </seg>
         <seg>
           libexiv2.so,
-          libxmp.a
+          libexiv2-xmp.a
         </seg>
         <seg>
-          /usr/include/exiv2,
-          /usr/share/exiv2
+          /usr/include/exiv2 <!--and 
+          /usr/share/exiv2 -->
         </seg>
 @z
 

@@ -209,14 +209,12 @@
       them is:
 <command>git clone git://git.freedesktop.org/git/poppler/test testfiles</command>.
       Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>. 
-      Only the Qt5 libraries are tested.
 @y
       In order to run the test suite, some testcases are needed and can
       be obtained only from a git repository. The command to download
       them is:
 <command>git clone git://git.freedesktop.org/git/poppler/test testfiles</command>.
       Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>. 
-      Only the Qt5 libraries are tested.
 @z
 
 @x
@@ -260,29 +258,43 @@
 @z
 
 @x
-      <parameter>-DTESTDATADIR=$PWD/testfiles</parameter>: Tell the test
+      <parameter>-DTESTDATADIR=$PWD/testfiles</parameter>: Tells the test
       programs where the auxiliary files are located.
 @y
-      <parameter>-DTESTDATADIR=$PWD/testfiles</parameter>: Tell the test
+      <parameter>-DTESTDATADIR=$PWD/testfiles</parameter>: Tells the test
       programs where the auxiliary files are located.
 @z
 
 @x
-      <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Install some old
+      <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Installs some old
       <application>Xpdf</application> headers required by certain programs (e.g.
       <application>Inkscape</application>).
 @y
-      <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Install some old
+      <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Installs some old
       <application>Xpdf</application> headers required by certain programs (e.g.
       <application>Inkscape</application>).
 @z
 
 @x
-      <command>LC_ALL=en_US.UTF-8 make test</command>: Run the test suite.
+      <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if 
+      GTK-Doc is installed and you wish to rebuild and install 
+      the API documentation. If Python 2 is not installed, one script
+      needs to be changed: run <command>sed -i '1s/python/&amp;3/'
+      make-glib-api-docs</command> first.
+@y
+      <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if 
+      GTK-Doc is installed and you wish to rebuild and install 
+      the API documentation. If Python 2 is not installed, one script
+      needs to be changed: run <command>sed -i '1s/python/&amp;3/'
+      make-glib-api-docs</command> first.
+@z
+
+@x
+      <command>LC_ALL=en_US.UTF-8 make test</command>: Runs the test suite.
       The environment variable LC_ALL=en_US.UTF-8 is only needed if the
       default locale does not include UTF-8.
 @y
-      <command>LC_ALL=en_US.UTF-8 make test</command>: Run the test suite.
+      <command>LC_ALL=en_US.UTF-8 make test</command>: Runs the test suite.
       The environment variable LC_ALL=en_US.UTF-8 is only needed if the
       default locale does not include UTF-8.
 @z

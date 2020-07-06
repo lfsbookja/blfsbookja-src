@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cryptsetup-buildsize     "34 MB (add 129 MB for tests)">
-  <!ENTITY cryptsetup-time          "0.2 SBU (add 9.1 SBU for tests)">
+  <!ENTITY cryptsetup-buildsize     "34 MB (add 130 MB for tests)">
+  <!ENTITY cryptsetup-time          "0.2 SBU (add 9.6 SBU for tests)">
 @y
-  <!ENTITY cryptsetup-buildsize     "34 MB （テスト実施時はさらに 129 MB）">
-  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 9.1 SBU）">
+  <!ENTITY cryptsetup-buildsize     "34 MB （テスト実施時はさらに 130 MB）">
+  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 9.6 SBU）">
 @z
 
 @x
@@ -87,7 +87,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="json-c"/>,
-      <xref linkend="libgcrypt"/>,
       <xref linkend="lvm2"/>, and
       <xref linkend="popt"/>
     </para>
@@ -95,8 +94,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="json-c"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="lvm2"/>,
+      <xref linkend="lvm2"/>, and
       <xref linkend="popt"/>
     </para>
 @z

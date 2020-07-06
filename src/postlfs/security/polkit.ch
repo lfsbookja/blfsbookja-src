@@ -80,13 +80,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib2"/> and
-      <xref linkend="js60"/>
+      <xref linkend="js68"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="js60"/>
+      <xref linkend="js68"/>
     </para>
 @z
 
@@ -105,6 +105,8 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="dbus-python"/> and 
+      <xref linkend="python-dbusmock"/> (for tests),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/>, and
@@ -113,6 +115,8 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="dbus-python"/> と
+      <xref linkend="python-dbusmock"/> (テストのため),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/>,

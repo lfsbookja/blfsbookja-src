@@ -220,7 +220,7 @@
       <filename>/usr/lib/systemd/system/update-pki.timer</filename> that, if
       enabled, will check for updates weekly.</phrase><phrase
       revision="sysv">If you've installed <xref linkend="fcron"/> and
-      completed the section on periodic jobs, execute</phrase><phrase
+      completed the section on periodic jobs, execute</phrase> <phrase
       revision="systemd">Execute</phrase> the following commands, as the
       <systemitem class="username">root</systemitem> user, to <phrase
       revision="sysv">create a weekly cron job:</phrase><phrase
@@ -232,7 +232,7 @@
       <filename>/usr/lib/systemd/system/update-pki.timer</filename> that, if
       enabled, will check for updates weekly.</phrase><phrase
       revision="sysv">If you've installed <xref linkend="fcron"/> and
-      completed the section on periodic jobs, execute</phrase><phrase
+      completed the section on periodic jobs, execute</phrase> <phrase
       revision="systemd">Execute</phrase> the following commands, as the
       <systemitem class="username">root</systemitem> user, to <phrase
       revision="sysv">create a weekly cron job:</phrase><phrase

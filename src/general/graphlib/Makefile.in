@@ -255,6 +255,7 @@ CHANGE_FILES = \
 	libpng.ch        \
 	libraw.ch        \
 	librsvg.ch       \
+	libspiro.ch      \
 	libtiff.ch       \
 	libwebp.ch       \
 	mypaint-brushes.ch \
@@ -464,7 +465,9 @@ all: ctie $(srcs)
 ctie:
 	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
 
-$(srcs): $(BOOKdir)/$@ $(srcdir)/$(@:.xml=.ch)
+-include Makefile.sub
+Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
+	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
 
 .PHONY: chbuild
 chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))

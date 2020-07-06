@@ -118,13 +118,13 @@
     <para role="optional">
 <!-- Included into ant      <xref linkend="junit"/> (to run tests),-->
       <xref linkend="x-window-system"/> (to run tests),
-<!--      <xref linkend="maven"/> (an alternate build system), not funcional
+<!--      <xref linkend="maven"/> (an alternate build system), not functional
       with fop-2.3          -->
       <ulink url="http://jai-tools.blogspot.com/">JAI Image I/O Tools</ulink>, and
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
 <!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
      Some were listed here, but not all. I am not sure it is possible to
-     use system ones. So, I have removed them, an kept only those which
+     use system ones. So, I have removed them, and kept only those which
      are not bundled. -->
     </para>
 @y
@@ -132,13 +132,13 @@
     <para role="optional">
 <!-- Included into ant      <xref linkend="junit"/> (to run tests),-->
       <xref linkend="x-window-system"/> (to run tests),
-<!--      <xref linkend="maven"/> (an alternate build system), not funcional
+<!--      <xref linkend="maven"/> (an alternate build system), not functional
       with fop-2.3          -->
       <ulink url="http://jai-tools.blogspot.com/">JAI Image I/O Tools</ulink>, and
       <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
 <!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
      Some were listed here, but not all. I am not sure it is possible to
-     use system ones. So, I have removed them, an kept only those which
+     use system ones. So, I have removed them, and kept only those which
      are not bundled. -->
     </para>
 @z
@@ -229,11 +229,11 @@
 @z
 
 @x
-        The <application>junit</application> test suite was run as part of the
-        above commands.
+        This package comes with a testsuite, but the java infrastructure
+        installed in this book does not allow running it.
 @y
-        The <application>junit</application> test suite was run as part of the
-        above commands.
+        This package comes with a testsuite, but the java infrastructure
+        installed in this book does not allow running it.
 @z
 
 @x
@@ -461,12 +461,12 @@
 
 @x fop
             is a wrapper script to the <command>java</command> command
-          which sets up the <application>fop</application>
-          environment and passes the required parameters.
+            which sets up the <application>fop</application>
+            environment and passes the required parameters.
 @y
             is a wrapper script to the <command>java</command> command
-          which sets up the <application>fop</application>
-          environment and passes the required parameters.
+            which sets up the <application>fop</application>
+            environment and passes the required parameters.
 @z
 
 @x fop.jar

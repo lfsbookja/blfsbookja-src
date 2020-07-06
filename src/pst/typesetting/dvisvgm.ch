@@ -204,9 +204,9 @@
 @z
 
 @x
-      <segtitle>Installed Program(s)</segtitle>
-      <segtitle>Installed Librar(y,ies)</segtitle>
-      <segtitle>Installed Director(y,ies)</segtitle>
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -218,10 +218,10 @@
           dvisvgm
         </seg>
         <seg>
-          none
+          None
         </seg>
         <seg>
-          none
+          None
         </seg>
 @y
         <seg>

@@ -149,11 +149,14 @@
 @x
       To test the results, you should have <xref linkend="gnupg2"/> installed
       and remove the <command>--disable-gpg-test</command> above. Issue:
-      <command>make check</command>.
+      <command>make -k check</command>.
+      <!-- https://dev.gnupg.org/T4820, would be fixed in next release -->
+      One test named t-json is known to fail.
 @y
       ビルド結果をテストする場合は、まず <xref
       linkend="gnupg2"/> をインストールし、上の手順において <command>--disable-gpg-test</command> を取り除く必要があります。
       その上で <command>make check</command> を実行します。
+      t-json というテストが 1 つだけ失敗します。
 @z
 
 @x

@@ -142,9 +142,9 @@
 @z
 
 @x
-      The unit tests were run during the build.
+      To run the tests, execute the following commands:
 @y
-      The unit tests were run during the build.
+      To run the tests, execute the following commands:
 @z
 
 @x
@@ -222,8 +222,8 @@
           certutil, nss-config, and pk12util
         </seg>
         <seg>
-          libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, 
-          libgtestutil.so, libnss3.so, libnssckbi.so, libnssckbi-testlib.so,
+          libcrmf.a, libfreebl3.so, libfreeblpriv3.so,
+          libnss3.so, libnssckbi.so, libnssckbi-testlib.so,
           libnssdbm3.so, libnsssysinit.so, libnssutil3.so, 
           libpkcs11testmodule.so, libsmime3.so, libsoftokn3.so, 
           and libssl3.so
@@ -236,8 +236,8 @@
           certutil, nss-config, pk12util
         </seg>
         <seg>
-          libcrmf.a, libfreebl3.so, libfreeblpriv3.so, libgtest1.so, 
-          libgtestutil.so, libnss3.so, libnssckbi.so, libnssckbi-testlib.so,
+          libcrmf.a, libfreebl3.so, libfreeblpriv3.so,
+          libnss3.so, libnssckbi.so, libnssckbi-testlib.so,
           libnssdbm3.so, libnsssysinit.so, libnssutil3.so, 
           libpkcs11testmodule.so, libsmime3.so, libsoftokn3.so, 
           libssl3.so

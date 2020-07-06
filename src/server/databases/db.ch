@@ -75,8 +75,9 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="tcl"/> and
+      <!-- <xref linkend="tcl"/> and -->
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
 
       <!--,
@@ -84,9 +85,11 @@
 - -          This is currently broken, removed for now.                - -
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command
       - Java bindings are required) -->
+    </para>
 @y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="tcl"/> and
+      <!-- <xref linkend="tcl"/> and -->
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
 
       <!--,
@@ -94,6 +97,7 @@
 - -          This is currently broken, removed for now.                - -
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command
       - Java bindings are required) -->
+    </para>
 @z
 
 @x

@@ -151,14 +151,14 @@
       <command>configure</command> script.
 @z
 
-@x
-      <option>--with-libxml2</option>: This switch forces the use of
-      <application>libxml2</application> instead of
-      <application>Expat</application>.
-@y
-      <option>--with-libxml2</option>:
-      このスイッチは <application>Expat</application> は利用せず <application>libxml2</application> を利用することを指示します。
-@z
+%@x
+%      <option>--with-libxml2</option>: This switch forces the use of
+%      <application>libxml2</application> instead of
+%      <application>Expat</application>.
+%@y
+%      <option>--with-libxml2</option>:
+%      このスイッチは <application>Expat</application> は利用せず <application>libxml2</application> を利用することを指示します。
+%@z
 
 @x
     <title>Contents</title>

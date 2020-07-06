@@ -173,11 +173,11 @@
 @z
 
 @x
-      <parameter>--enable-fts5</parameter>: enable version 5 of the full text
-      search extension.
+      <parameter>--enable-fts5</parameter>: This switch enables support for
+      version 5 of the full text search extension.
 @y
-      <parameter>--enable-fts5</parameter>: enable version 5 of the full text
-      search extension.
+      <parameter>--enable-fts5</parameter>: This switch enables support for
+      version 5 of the full text search extension.
 @z
 
 @x
