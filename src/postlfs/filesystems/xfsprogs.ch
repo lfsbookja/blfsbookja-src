@@ -134,22 +134,6 @@
 @z
 
 @x
-      <parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
-      extra configuration options to the <filename>configure</filename> script.
-      The example <parameter>--enable-readline</parameter> parameter
-      enables linking the XFS programs with the
-      <filename class="libraryfile">libreadline.so</filename> library, in order
-      to allow editing interactive commands.
-@y
-      <parameter>LOCAL_CONFIGURE_OPTIONS="..."</parameter>: This passes
-      extra configuration options to the <filename>configure</filename> script.
-      The example <parameter>--enable-readline</parameter> parameter
-      enables linking the XFS programs with the
-      <filename class="libraryfile">libreadline.so</filename> library, in order
-      to allow editing interactive commands.
-@z
-
-@x
       <option>OPTIMIZER="..."</option>: Adding this parameter to
       the end of the <command>make</command> command overrides the
       default optimization settings.

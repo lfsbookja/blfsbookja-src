@@ -155,9 +155,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the result, issue: <command>ninja test</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -219,17 +219,21 @@
           pw-mididump,
           pw-mon,
           pw-profiler,
+          pw-pulse,
           spa-inspect,
           spa-monitor, and
-          pw-midirecord, pw-midiplay, pw-play, and pw-record (symlinks to pw-cat)
+          pw-midiplay, pw-midirecord, pw-play, and pw-record (symlinks to pw-cat)
         </seg>
         <seg>
-          libpipewire-0.3.so,
+          libpipewire-0.3.so<!--,
+     [pierre July 29th, 2020]: all the following libs are in subdirectories
+     of /usr/lib. I'm not sure they should appear. But if they should, there
+     are many more libs to list... 
           libpulse-mainloop-glib-pw.so,
-          libpulse-pw.so,
-          libpulse-simple-pw.so,
+          libpulse.so,
+          libpulse-simple.so,
           libasound_module_pcm_pipewire.so, and
-          libgstpipewire.so
+          libgstpipewire.so -->
         </seg>
         <seg>
           /etc/pipewire,
@@ -249,17 +253,21 @@
           pw-mididump,
           pw-mon,
           pw-profiler,
+          pw-pulse,
           spa-inspect,
           spa-monitor,
-          pw-midirecord, pw-midiplay, pw-play, pw-record (pw-cat へのシンボリックリンク)
+          pw-midiplay, pw-midirecord, pw-play, pw-record (pw-cat へのシンボリックリンク)
         </seg>
         <seg>
-          libpipewire-0.3.so,
+          libpipewire-0.3.so<!--,
+     [pierre July 29th, 2020]: all the following libs are in subdirectories
+     of /usr/lib. I'm not sure they should appear. But if they should, there
+     are many more libs to list... 
           libpulse-mainloop-glib-pw.so,
-          libpulse-pw.so,
-          libpulse-simple-pw.so,
+          libpulse.so,
+          libpulse-simple.so,
           libasound_module_pcm_pipewire.so,
-          libgstpipewire.so
+          libgstpipewire.so -->
         </seg>
         <seg>
           /etc/pipewire,
@@ -294,6 +302,12 @@
             allows you to monitor pipewire instances.
 @y
             allows you to monitor pipewire instances.
+@z
+
+@x pw-pulse
+            runs Pulseaudio applications on pipewire
+@y
+            runs Pulseaudio applications on pipewire
 @z
 
 @x spa-inspect

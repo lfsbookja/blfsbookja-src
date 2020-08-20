@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY fuse3-time          "0.1 SBU (add 0.4 SBU for tests)">
+@y
+  <!ENTITY fuse3-time          "0.1 SBU (add 0.4 SBU for tests)">
+@z
+
+@x
     <title>Introduction to Fuse</title>
 @y
     <title>&IntroductionTo1;Fuse&IntroductionTo2;</title>
@@ -81,12 +87,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (to rebuild the API documentation)
+      <xref linkend="doxygen"/> (to rebuild the API documentation) and
+      <ulink url="https://pypi.org/project/pytest/">pytest</ulink> (for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (API ドキュメントの再生成のため)
+      <xref linkend="doxygen"/> (API ドキュメントの再生成のため),
+      <ulink url="https://pypi.org/project/pytest/">pytest</ulink> (テストのため)
     </para>
 @z
 
@@ -133,9 +141,19 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, run (as the <systemitem
+      role="username">root</systemitem> user):
 @y
-      &notTestSuite;
+      To test the results, run (as the <systemitem
+      role="username">root</systemitem> user):
+@z
+
+@x
+      The <ulink url="https://pypi.org/project/pytest/">pytest</ulink>
+       Python module is needed for the tests.
+@y
+      The <ulink url="https://pypi.org/project/pytest/">pytest</ulink>
+       Python module is needed for the tests.
 @z
 
 @x

@@ -161,11 +161,11 @@
 @z
 
 @x
-        <parameter>--enable-shared</parameter>: Use shared libs
-        instead of static libs.
+        <parameter>--enable-shared --disable-static</parameter>: Use shared
+        libs instead of static libs.
 @y
-        <parameter>--enable-shared</parameter>: Use shared libs
-        instead of static libs.
+        <parameter>--enable-shared --disable-static</parameter>: Use shared
+        libs instead of static libs.
 @z
 
 @x

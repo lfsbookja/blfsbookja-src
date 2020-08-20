@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY boost-buildsize     "1.1 GB (175 MB installed)">
-  <!ENTITY boost-time          "1.6 SBU (Using parallelism=4; add 1.2 SBU for tests)">
+  <!ENTITY boost-time          "1.8 SBU (Using parallelism=4; add 1.2 SBU for tests)">
 @y
   <!ENTITY boost-buildsize     "1.1 GB (インストールサイズは 175 MB)">
-  <!ENTITY boost-time          "1.6 SBU (parallelism=4; テスト実施時はさらに 1.2 SBU)">
+  <!ENTITY boost-time          "1.8 SBU (parallelism=4; テスト実施時はさらに 1.2 SBU)">
 @z
 
 @x
@@ -216,17 +216,17 @@
           None
         </seg>
         <seg>
-          libboost_atomic.so, libboost_chrono.so,
-          libboost_container.so, libboost_context.so, libboost_coroutine.so,
+          libboost_atomic.so, libboost_chrono.so, libboost_container.so,
+          libboost_context.so, libboost_contract.so, libboost_coroutine.so,
           libboost_date_time.so, libboost_exception.a, libboost_fiber.so,
           libboost_filesystem.so,
           libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
           libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so,
-          libboost_nowide.so, libboost_numpy27.so,
+          libboost_nowide.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so,
-          libboost_python27.so or libboost_python3.so, libboost_random.so,
+          libboost_python38.so, libboost_random.so,
           libboost_regex.so, libboost_serialization.so,
           libboost_stacktrace_addr2line.so, libboost_stacktrace_basic.so,
           libboost_stacktrace_noop.so, libboost_system.so, 
@@ -242,17 +242,17 @@
           &None;
         </seg>
         <seg>
-          libboost_atomic.so, libboost_chrono.so,
-          libboost_container.so, libboost_context.so, libboost_coroutine.so,
+          libboost_atomic.so, libboost_chrono.so, libboost_container.so,
+          libboost_context.so, libboost_contract.so, libboost_coroutine.so,
           libboost_date_time.so, libboost_exception.a, libboost_fiber.so,
           libboost_filesystem.so,
           libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
           libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so,
-          libboost_nowide.so, libboost_numpy27.so,
+          libboost_nowide.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so,
-          libboost_python27.so or libboost_python3.so, libboost_random.so,
+          libboost_python38.so, libboost_random.so,
           libboost_regex.so, libboost_serialization.so,
           libboost_stacktrace_addr2line.so, libboost_stacktrace_basic.so,
           libboost_stacktrace_noop.so, libboost_system.so, 

@@ -165,13 +165,18 @@
         E.g., for shell scripts, you can insert
         <option>include /usr/share/nano/sh.nanorc</option> in the personal or
         global configuration file. If you wish highlighting for all supported
-        files, use <option>include /usr/share/nano/*.nanorc</option>.
+        files, use <option>include /usr/share/nano/*.nanorc</option>. This
+        include does not descend into the <filename class="directory">extra</filename>
+        directory. Move required files one level up.
 @y
         特定のファイルタイプに対しての文法ハイライト機能を実現する設定ファイルが <filename
         class="directory">/usr/share/nano/</filename> ディレクトリに用意されています。
         例えばシェルスクリプトに対するものなどです。
         個人設定やグローバル設定において <option>include /usr/share/nano/sh.nanorc</option> を記述することで利用します。
         提供されているすべての設定ファイルを指定するには <option>include /usr/share/nano/*.nanorc</option> と記述します。
+        This
+        include does not descend into the <filename class="directory">extra</filename>
+        directory. Move required files one level up.
 @z
 
 @x

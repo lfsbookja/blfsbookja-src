@@ -76,6 +76,10 @@
 @x
       <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
       <para role="recommended">
+        <!-- This claims to need XString, and will use it for memory
+         efficiency if present, but runs fine without it. It also
+         shows Ref-Util in 'Runtime Recommends' but the only reference
+         to that seems to be in the prereqs. -->
         <xref linkend="perl-mro-compat"/>,
         <xref linkend="perl-test-fatal"/> and
         <xref linkend="perl-test-needs"/>
@@ -83,6 +87,10 @@
 @y
       <bridgehead renderas="sect5">&Recommended; (テストスイートに必要)</bridgehead>
       <para role="recommended">
+        <!-- This claims to need XString, and will use it for memory
+         efficiency if present, but runs fine without it. It also
+         shows Ref-Util in 'Runtime Recommends' but the only reference
+         to that seems to be in the prereqs. -->
         <xref linkend="perl-mro-compat"/>,
         <xref linkend="perl-test-fatal"/>,
         <xref linkend="perl-test-needs"/>

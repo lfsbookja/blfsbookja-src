@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY libpsl-time          "Less than 0.1 SBU (including tests)">
+  <!ENTITY libpsl-time          "0.1 SBU (including tests)">
 @y
-  <!ENTITY libpsl-time          "&LessThan1;0.1 SBU&LessThan2; (テストを含む)">
+  <!ENTITY libpsl-time          "0.1 SBU (テストを含む)">
 @z
 
 @x

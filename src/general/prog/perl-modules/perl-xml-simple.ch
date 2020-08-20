@@ -65,8 +65,6 @@
         which was installed in LFS will be used),
         <!-- perl-xml-sax pulls in perl-xml-namespacesupport and
              perl-xml-sax-base -->
-        <xref linkend="perl-xml-sax-expat"/> (for a further additional parser which
-        can be used by setting a variable in <application>Perl</application> code)
       </para>
 @y
       <bridgehead renderas="sect5">&Optional;</bridgehead>
@@ -76,8 +74,6 @@
         which was installed in LFS will be used),
         <!-- perl-xml-sax pulls in perl-xml-namespacesupport and
              perl-xml-sax-base -->
-        <xref linkend="perl-xml-sax-expat"/> (for a further additional parser which
-        can be used by setting a variable in <application>Perl</application> code)
       </para>
 @z
 

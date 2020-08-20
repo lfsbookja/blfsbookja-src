@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "162 MB (with typical dependencies; add 35 MB checks)">
-  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; using  parallelism=4; add 1.8 SBU for checks)">
+  <!ENTITY imagemagick-buildsize     "212 MB (with typical dependencies; add 31 MB for checks)">
+  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.6 SBU for checks, both using  parallelism=4)">
 @y
-  <!ENTITY imagemagick-buildsize     "162 MB (with typical dependencies; add 35 MB checks)">
-  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; using  parallelism=4; add 1.8 SBU for checks)">
+  <!ENTITY imagemagick-buildsize     "212 MB (with typical dependencies; add 31 MB for checks)">
+  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.6 SBU for checks, both using  parallelism=4)">
 @z
 
 @x

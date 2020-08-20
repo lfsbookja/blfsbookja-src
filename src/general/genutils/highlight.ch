@@ -170,6 +170,24 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <parameter>doc_dir=/usr/share/doc/highlight-&highlight-version;</parameter>:
+      install highlight documentation into a versioned directory. This
+      parameter is also needed for <command>make gui</command>, because
+      its value would be hardcoded into the gui executable.
+@y
+      <parameter>doc_dir=/usr/share/doc/highlight-&highlight-version;</parameter>:
+      install highlight documentation into a versioned directory. This
+      parameter is also needed for <command>make gui</command>, because
+      its value would be hardcoded into the gui executable.
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -194,7 +212,7 @@
         </seg>
         <seg>
           /etc/highlight,
-          /usr/share/doc/highlight, and
+          /usr/share/doc/highlight/&highlight-version;, and
           /usr/share/highlight
         </seg>
 @y
@@ -206,7 +224,7 @@
         </seg>
         <seg>
           /etc/highlight,
-          /usr/share/doc/highlight,
+          /usr/share/doc/highlight/&highlight-version;,
           /usr/share/highlight
         </seg>
 @z

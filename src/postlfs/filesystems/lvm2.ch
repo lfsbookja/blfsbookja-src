@@ -131,10 +131,16 @@
 @z
 
 @x
+      The <command>S=...</command> option allows to skip tests. The
+      <command>shell/thin-flags.sh</command> test has been reported to freeze
+      the computer.
       Other targets are available and can be listed with
       <command>make -C test help</command>. The test timings are very dependent
       on the speed of the disk(s), and on the number of enabled kernel options.
 @y
+      The <command>S=...</command> option allows to skip tests. The
+      <command>shell/thin-flags.sh</command> test has been reported to freeze
+      the computer.
       Other targets are available and can be listed with
       <command>make -C test help</command>. The test timings are very dependent
       on the speed of the disk(s), and on the number of enabled kernel options.
@@ -270,8 +276,8 @@
         <seg>
           libdevmapper.so and liblvm2cmd.so; optional:
           libdevmapper-event.so, libdevmapper-event-lvm2.so,
-          libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2snapshot.so,
-          libdevmapper-event-lvm2raid.so, and libdevmapper-event-lvm2thin.so
+          libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2raid.so,
+          libdevmapper-event-lvm2snapshot.so, and libdevmapper-event-lvm2thin.so
         </seg>
         <seg>
           /etc/lvm and
@@ -285,8 +291,8 @@
         <seg>
           libdevmapper.so and liblvm2cmd.so; optional:
           libdevmapper-event.so, libdevmapper-event-lvm2.so,
-          libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2snapshot.so,
-          libdevmapper-event-lvm2raid.so, and libdevmapper-event-lvm2thin.so
+          libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2raid.so,
+          libdevmapper-event-lvm2snapshot.so, libdevmapper-event-lvm2thin.so
         </seg>
         <seg>
           /etc/lvm and

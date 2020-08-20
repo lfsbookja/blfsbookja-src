@@ -233,8 +233,9 @@
 
 @x
         <seg>
+<!-- Moved to /usr/libexec/webkit2gtk-4.0, so shouldn't appear here
           jsc, 
-          MiniBrowser, and
+          MiniBrowser, and -->
           WebKitWebDriver
         </seg>
         <seg>
@@ -248,8 +249,9 @@
         </seg>
 @y
         <seg>
+<!-- Moved to /usr/libexec/webkit2gtk-4.0, so shouldn't appear here
           jsc, 
-          MiniBrowser,
+          MiniBrowser, and -->
           WebKitWebDriver
         </seg>
         <seg>

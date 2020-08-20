@@ -18,7 +18,6 @@ CHANGE_FILES = \
 	highlight.ch          \
 	ibus.ch               \
 	imagemagick.ch        \
-	imagemagick6.ch       \
         iso-codes.ch          \
         lsof.ch               \
 	pinentry.ch           \

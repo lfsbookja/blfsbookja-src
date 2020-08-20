@@ -110,14 +110,14 @@
 @x
         If you are upgrading libcap from a previous version, use the
         instructions in
-        <ulink url="&lfs-root;/chapter06/libcap.html">
+        <ulink url="&lfs-root;/chapter08/libcap.html">
           LFS libcap page
         </ulink> to upgrade libcap. If <xref linkend="linux-pam"/> has been
         built, the PAM module will automatically be built too.
 @y
         If you are upgrading libcap from a previous version, use the
         instructions in
-        <ulink url="&lfs-root;/chapter06/libcap.html">
+        <ulink url="&lfs-root;/chapter08/libcap.html">
           LFS libcap page
         </ulink> to upgrade libcap. If <xref linkend="linux-pam"/> has been
         built, the PAM module will automatically be built too.

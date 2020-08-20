@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY doxygen-buildsize     "157 MB (with tests)">
+  <!ENTITY doxygen-time          "1.3 SBU (using parallelism=4; with tests)">
+@y
+  <!ENTITY doxygen-buildsize     "157 MB (with tests)">
+  <!ENTITY doxygen-time          "1.3 SBU (using parallelism=4; with tests)">
+@z
+
+@x
     <title>Introduction to Doxygen</title>
 @y
     <title>&IntroductionTo1;Doxygen&IntroductionTo2;</title>
@@ -167,11 +175,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make tests</command>. One test,
-      012_cite.dox, is known to fail.
+      To test the results, issue: <command>make tests</command>.
 @y
       ビルド結果をテストする場合は <command>make tests</command> を実行します。
-      012_cite.dox というテストだけが失敗します。
 @z
 
 @x

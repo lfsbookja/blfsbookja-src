@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY gjs-buildsize     "65 MB (with tests)">
+  <!ENTITY gjs-time          "0.2 SBU (with tests)">
+@y
+  <!ENTITY gjs-buildsize     "65 MB (テスト込み)">
+  <!ENTITY gjs-time          "0.2 SBU (テスト込み)">
+@z
+
+@x
     <title>Introduction to Gjs</title>
 @y
     <title>&IntroductionTo1;Gjs&IntroductionTo2;</title>
@@ -146,15 +154,18 @@
 @x
       To test the results, issue: <command>ninja test</command>. The
       <application>GTK</application> and <application>Cairo</application>
-      tests will fail if not running in an Xorg session. One test,
+      tests will fail if not running in an Xorg session.
+<!-- All 53 tests passed for me with gjs-1.64.4
+      One test,
       <filename>gjs: Scripts/CommandLine</filename>, is known to fail.
-      On some systems, up to six tests may fail with an error.
-      <!-- Still fails with 1.58.5. -->
+      On some systems, up to six tests may fail with an error. -->
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       Xorg セッション内でテスト実行しないと <application>GTK</application> と <application>Cairo</application> のテストは失敗します。
+<!--
       <filename>gjs: Scripts/CommandLine</filename> というテストが 1 つは失敗します。
       システムによっては、最大 6 つのテストがエラーにより失敗します。
+-->
 @z
 
 @x

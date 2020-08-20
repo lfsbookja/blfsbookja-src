@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mariadb-buildsize     "1.7 GB (637 MB installed)">
-  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "1.7 GB (639 MB installed)">
+  <!ENTITY mariadb-time          "9.4 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @y
-  <!ENTITY mariadb-buildsize     "1.7 GB (637 MB がインストールされる)">
-  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "1.7 GB (639 MB がインストールされる)">
+  <!ENTITY mariadb-time          "9.4 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @z
 
 @x

@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY umockdev-buildsize     "13 MB (with tests)">
+  <!ENTITY umockdev-time          "0.2 SBU (with tests)">
+@y
+  <!ENTITY umockdev-buildsize     "13 MB (with tests)">
+  <!ENTITY umockdev-time          "0.2 SBU (with tests)">
+@z
+
+@x
     <title>Introduction to Umockdev</title>
 @y
     <title>Introduction to Umockdev</title>
@@ -30,49 +38,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&umockdev-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&umockdev-download-http;"/>
+          &Download; (HTTP): <ulink url="&umockdev-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&umockdev-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&umockdev-download-ftp;"/>
+          &Download; (FTP): <ulink url="&umockdev-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &umockdev-md5sum;
 @y
-          Download MD5 sum: &umockdev-md5sum;
+          &Download; MD5 sum: &umockdev-md5sum;
 @z
 
 @x
           Download size: &umockdev-size;
 @y
-          Download size: &umockdev-size;
+          &DownloadSize;: &umockdev-size;
 @z
 
 @x
           Estimated disk space required: &umockdev-buildsize;
 @y
-          Estimated disk space required: &umockdev-buildsize;
+          &Estimateddiskspacerequired;: &umockdev-buildsize;
 @z
 
 @x
           Estimated build time: &umockdev-time;
 @y
-          Estimated build time: &umockdev-time;
+          &Estimatedbuildtime;: &umockdev-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Umockdev Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Umockdev Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Umockdev&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -82,9 +90,9 @@
       <xref linkend="vala"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libgudev"/> and
+      <xref linkend="libgudev"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -95,7 +103,7 @@
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink> (optional for tests)
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink> (optional for tests)
     </para>
@@ -104,45 +112,50 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/umockdev"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/umockdev"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/umockdev"/>
 @z
 
 @x
     <title>Installation of Umockdev</title>
 @y
-    <title>Installation of Umockdev</title>
+    <title>&InstallationOf1;Umockdev&InstallationOf2;</title>
 @z
 
 @x
       Install <application>Umockdev</application> by running the following
       commands:
 @y
-      Install <application>Umockdev</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Umockdev</application> をビルドします。
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>PATH=$PATH:/sbin:/usr/sbin make
+      check</command>. The addition to <envar>PATH</envar> is needed if you
+      use the starting scripts in <xref linkend="postlfs-config-profile"/>,
+      because some tests need to run <command>udevadm</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>PATH=$PATH:/sbin:/usr/sbin make
+      check</command>. The addition to <envar>PATH</envar> is needed if you
+      use the starting scripts in <xref linkend="postlfs-config-profile"/>,
+      because some tests need to run <command>udevadm</command>.
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -150,9 +163,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -168,7 +181,7 @@
         </seg>
         <seg>
           /usr/include/umockdev-1.0 and
-          /usr/share/doc/umockdev
+          /usr/share/doc/umockdev-&umockdev-version;
         </seg>
 @y
         <seg>
@@ -183,14 +196,14 @@
         </seg>
         <seg>
           /usr/include/umockdev-1.0,
-          /usr/share/doc/umockdev
+          /usr/share/doc/umockdev-&umockdev-version;
         </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x umockdev-record

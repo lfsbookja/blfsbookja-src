@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -70,7 +69,7 @@
         modules have very frequent updates, often bringing different dependencies.
         <!-- FIXME - change or comment this when necessary -->
         The linked metacpan.org versions below are known to build and work with
-        the module versions in BLFS-9.0.
+        the module versions in BLFS-10.0..
 @y
         The links on this page (to metacpan.org) should go to "known good"
         versions, for which their dependencies are correct. If you wish to use a
@@ -79,7 +78,7 @@
         modules have very frequent updates, often bringing different dependencies.
         <!-- FIXME - change or comment this when necessary -->
         The linked metacpan.org versions below are known to build and work with
-        the module versions in BLFS-9.0.
+        the module versions in BLFS-10.0..
 @z
 
 @x

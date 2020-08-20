@@ -14,8 +14,10 @@
 @z
 
 @x
+  <!ENTITY at-buildsize     "1.8 MB including tests">
   <!ENTITY at-time          "less than 0.1 SBU">
 @y
+  <!ENTITY at-buildsize     "1.8 MB including tests">
   <!ENTITY at-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
@@ -122,27 +124,12 @@
       Before building <application>at</application>, as the
       <systemitem class="username">root</systemitem> user you should create
       the group and user <systemitem class="username">atd</systemitem> which
-      will run the <command>atd</command> daemon.  Also ensure the working
-      directory for the daemon exists:
+      will run the <command>atd</command> daemon:
 @y
       <application>at</application> のビルドにあたっては、まず <systemitem
       class="username">root</systemitem> ユーザーになって <systemitem
       class="username">atd</systemitem> グループおよびユーザーを生成します。
       これは <command>atd</command> デーモンを実行するためのものです。
-      デーモン実行に必要なディレクトリの存在も確認しておきます。
-@z
-
-@x
-      Fix <filename>Makefile.in</filename> so that the documentation directory
-      is installed in the specified docdir:
-@y
-      docdir に指定されたディレクトリにドキュメントをインストールするように <filename>Makefile.in</filename> を修正します。
-@z
-
-@x
-      Regenerate the build files to be consistent with this package version:
-@y
-      ビルド関連のファイルを再生成します。
 @z
 
 @x
@@ -153,9 +140,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make test</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
@@ -182,6 +169,34 @@
         or batch.
 @y
         <filename>/etc/at.allow</filename> と <filename>/etc/at.deny</filename> により、at 経由でのジョブ実行やバッチ処理は誰に許可されるかなどを設定します。
+@z
+
+@x
+      <title>Linux PAM Configuration</title>
+@y
+      <title>Linux PAM Configuration</title>
+@z
+
+@x
+        If <application>At</application> has been built with
+        <application>Linux PAM</application> support, you need to create a
+        <application>PAM</application> configuration file, to get it working
+        correctly with BLFS.
+@y
+        If <application>At</application> has been built with
+        <application>Linux PAM</application> support, you need to create a
+        <application>PAM</application> configuration file, to get it working
+        correctly with BLFS.
+@z
+
+@x
+        Issue the following commands as the <systemitem
+        class="username">root</systemitem> user to create the configuration
+        file for <application>Linux PAM</application>:
+@y
+        Issue the following commands as the <systemitem
+        class="username">root</systemitem> user to create the configuration
+        file for <application>Linux PAM</application>:
 @z
 
 @x
@@ -233,7 +248,6 @@
           None
         </seg>
         <seg>
-          /var/spool/cron/at{jobs,spool} and
           /usr/share/doc/at-&at-version;
         </seg>
 @y
@@ -244,7 +258,6 @@
           &None;
         </seg>
         <seg>
-          /var/spool/cron/at{jobs,spool},
           /usr/share/doc/at-&at-version;
         </seg>
 @z

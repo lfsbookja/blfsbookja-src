@@ -173,12 +173,12 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
-      Note that system <application>D-Bus</application> daemon
-      must be running for the testsuite to complete. 
+      To test the results, first ensure that the system 
+      <application>D-Bus</application> daemon is running and 
+      restore a missing file. Then run the tests:
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      すべてのテストを成功させるためには <application>D-Bus</application> デーモンを実行しておく必要があります。
+      ビルド結果をテストする場合、まずは <application>D-Bus</application> が稼動していることを確認し、削除されているファイルを元に戻すことが必要です。
+      そして以下のようにテストを実行します。
 @z
 
 @x

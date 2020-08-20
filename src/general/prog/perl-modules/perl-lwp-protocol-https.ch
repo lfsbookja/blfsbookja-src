@@ -30,18 +30,6 @@
 @z
 
 @x
-      <bridgehead renderas="sect4">Additional Download</bridgehead>
-@y
-      <bridgehead renderas="sect4">&AdditionalDownloads;</bridgehead>
-@z
-
-@x
-            Required patch:
-@y
-            必須のパッチ:
-@z
-
-@x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
       <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
@@ -57,6 +45,18 @@
             Download MD5 sum: &my-md5sum;
 @y
             &Download; MD5 sum: &my-md5sum;
+@z
+
+@x
+      <bridgehead renderas="sect4">Additional Download</bridgehead>
+@y
+      <bridgehead renderas="sect4">&AdditionalDownloads;</bridgehead>
+@z
+
+@x
+            Required patch:
+@y
+            必須のパッチ:
 @z
 
 @x

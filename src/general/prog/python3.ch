@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY python3-buildsize     "187 MB (add 27 MB for tests)">
+  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 2.1 SBU for tests, including rebuilding)">
+@y
+  <!ENTITY python3-buildsize     "187 MB (add 27 MB for tests)">
+  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 2.1 SBU for tests, including rebuilding)">
+@z
+
+@x
     <title>Introduction to Python 3</title>
 @y
     <title>&IntroductionTo1;Python 3&IntroductionTo2;</title>
@@ -98,7 +106,7 @@
 @x
     <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
+      <xref linkend="db"/> and
       <xref linkend="tk"/>
     </para>
 @y

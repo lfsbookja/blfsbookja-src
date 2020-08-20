@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "340 MB (add 584 MB for tests)">
-  <!ENTITY cmake-time          "3.2 SBU (add 3.4 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-buildsize     "348 MB (add 634 MB for tests)">
+  <!ENTITY cmake-time          "3.2 SBU (add 3.3 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "340 MB（テスト実行時は 584 MB）">
-  <!ENTITY cmake-time          "3.2 SBU（テスト実行時は 3.4 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-buildsize     "348 MB（テスト実行時は 634 MB）">
+  <!ENTITY cmake-time          "3.2 SBU（テスト実行時は 3.3 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -104,20 +104,23 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="curl"/> and
-      <xref linkend="libarchive"/>
+      <xref linkend="curl"/>,
+      <xref linkend="libarchive"/>, and
+      <xref linkend="nghttp2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/>,
-      <xref linkend="libarchive"/>
+      <xref linkend="libarchive"/>,
+      <xref linkend="nghttp2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="git"/> (for use during tests),
       <xref linkend="qt5"/> (for the Qt-based GUI),
       <xref linkend="subversion"/> (for testing), and
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (for building documents)
@@ -125,6 +128,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="git"/> (for use during tests),
       <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
       <xref linkend="subversion"/> (テスト時), 
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (ドキュメント構築時)
@@ -184,11 +188,12 @@
       <parameter>--system-libs</parameter>: This switch forces the build system
       to link against <application>Zlib</application>,
       <application>Bzip2</application>, <application>cURL</application>,
+      <application>nghttp2</application>,
       <application>Expat</application> and <application>libarchive</application>
       installed on the system.
 @y
       <parameter>--system-libs</parameter>:
-      本スイッチは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>Expat</application>, <application>libarchive</application> をリンクすることを指示します。
+      本スイッチは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>nghttp2</application>、<application>Expat</application>, <application>libarchive</application> をリンクすることを指示します。
 @z
 
 @x
@@ -198,6 +203,16 @@
 @y
       <option>--qt-gui</option>:
       本スイッチは <application>CMake</application> の <application>Qt</application>-ベースの GUI プログラムを生成することを指示します。
+@z
+
+@x
+      <option>--parallel=</option>: This switch enables performing the 
+      <application>CMake</application> bootstrap with multiple jobs
+      at one time.
+@y
+      <option>--parallel=</option>: This switch enables performing the 
+      <application>CMake</application> bootstrap with multiple jobs
+      at one time.
 @z
 
 @x

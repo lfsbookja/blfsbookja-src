@@ -14,11 +14,9 @@
 @z
 
 @x
-  <!ENTITY gpgme-buildsize     "232 MB (with all bindings)">
-  <!ENTITY gpgme-time          "0.7 SBU (with parallelism=4; with all bindings, add 0.5 SBU for tests)">
+  <!ENTITY gpgme-time          "0.3 SBU (with parallelism=4; with all bindings, add 0.5 SBU for tests)">
 @y
-  <!ENTITY gpgme-buildsize     "232 MB （全バインディングビルド時）">
-  <!ENTITY gpgme-time          "0.7 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.5 SBU）">
+  <!ENTITY gpgme-time          "0.3 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.5 SBU）">
 @z
 
 @x
@@ -150,13 +148,10 @@
       To test the results, you should have <xref linkend="gnupg2"/> installed
       and remove the <command>--disable-gpg-test</command> above. Issue:
       <command>make -k check</command>.
-      <!-- https://dev.gnupg.org/T4820, would be fixed in next release -->
-      One test named t-json is known to fail.
 @y
       ビルド結果をテストする場合は、まず <xref
       linkend="gnupg2"/> をインストールし、上の手順において <command>--disable-gpg-test</command> を取り除く必要があります。
       その上で <command>make check</command> を実行します。
-      t-json というテストが 1 つだけ失敗します。
 @z
 
 @x

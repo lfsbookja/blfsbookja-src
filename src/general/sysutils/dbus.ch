@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY dbus-time          "0.3 SBU (add 8.0 SBU for the tests)">
+@y
+  <!ENTITY dbus-time          "0.3 SBU (add 8.0 SBU for the tests)">
+@z
+
+@x
     <title>Introduction to D-Bus</title>
 @y
     <title>&IntroductionTo1;D-Bus&IntroductionTo2;</title>
@@ -288,15 +294,13 @@
 @z
 
 @x
-      The test <command>test-bus.sh</command> is known to fail. There has also
-      been reports that the tests may fail if running inside a Midnight
-      Commander shell. You may get out-of-memory error messages when running
-      the tests. These are normal and can be safely ignored.
+      There have been reports that the tests may fail if running inside a 
+      Midnight Commander shell. You may get out-of-memory error messages when 
+      running the tests. These are normal and can be safely ignored.
 @y
-      The test <command>test-bus.sh</command> is known to fail. There has also
-      been reports that the tests may fail if running inside a Midnight
-      Commander shell. You may get out-of-memory error messages when running
-      the tests. These are normal and can be safely ignored.
+      There have been reports that the tests may fail if running inside a 
+      Midnight Commander shell. You may get out-of-memory error messages when 
+      running the tests. These are normal and can be safely ignored.
 @z
 
 @x
@@ -355,10 +359,10 @@
 
 @x
       <parameter>--with-console-auth-dir=/run/console</parameter>: This
-      parameter specifies the directory to check for console ownerhip.
+      parameter specifies the directory to check for console ownership.
 @y
       <parameter>--with-console-auth-dir=/run/console</parameter>: This
-      parameter specifies the directory to check for console ownerhip.
+      parameter specifies the directory to check for console ownership.
 @z
 
 @x
@@ -378,29 +382,29 @@
 @z
 
 @x
-      <parameter>--enable-tests</parameter>: Build extra parts of the code to
+      <parameter>--enable-tests</parameter>: Builds extra parts of the code to
       support all tests. Do not use on a production build.
 @y
-      <parameter>--enable-tests</parameter>: Build extra parts of the code to
+      <parameter>--enable-tests</parameter>: Builds extra parts of the code to
       support all tests. Do not use on a production build.
 @z
 
 @x
-      <option>--enable-embedded-tests</option>: Build extra parts of the
+      <option>--enable-embedded-tests</option>: Builds extra parts of the
       code to support only unit tests. Do not use on a production build.
 @y
-      <option>--enable-embedded-tests</option>: Build extra parts of the
+      <option>--enable-embedded-tests</option>: Builds extra parts of the
       code to support only unit tests. Do not use on a production build.
 @z
 
 @x
-      <parameter>--enable-asserts</parameter>: Enable debugging code to run
+      <parameter>--enable-asserts</parameter>: Enables debugging code to run
       assertions for statements normally assumed to be true. This prevents a
       warning that '<parameter>--enable-tests</parameter>' on its own is only
       useful for profiling and might not give true results for all tests, but
       adds its own NOTE that this should not be used in a production build.
 @y
-      <parameter>--enable-asserts</parameter>: Enable debugging code to run
+      <parameter>--enable-asserts</parameter>: Enables debugging code to run
       assertions for statements normally assumed to be true. This prevents a
       warning that '<parameter>--enable-tests</parameter>' on its own is only
       useful for profiling and might not give true results for all tests, but
@@ -514,14 +518,14 @@
 @z
 
 @x
-            If you use <command>xdm</command> or some other display manager
+            If you use <command>gdm</command> or some other display manager
             that calls the <filename>~/.xsession</filename> file, you can add
             <command>dbus-launch</command> to the line in your
             <filename>~/.xsession</filename> file that starts your graphical
             desktop environment. The syntax would be similar to the example in
             the <filename>~/.xinitrc</filename> file.
 @y
-            If you use <command>xdm</command> or some other display manager
+            If you use <command>gdm</command> or some other display manager
             that calls the <filename>~/.xsession</filename> file, you can add
             <command>dbus-launch</command> to the line in your
             <filename>~/.xsession</filename> file that starts your graphical

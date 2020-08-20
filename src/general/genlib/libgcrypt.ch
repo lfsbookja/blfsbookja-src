@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libgcrypt-buildsize     "44 MB (with tests; add 8 MB for building docs)">
-  <!ENTITY libgcrypt-time          "0.3 SBU (with docs; add 0.5 SBU for tests)">
+  <!ENTITY libgcrypt-buildsize     "48 MB (with tests; add 8 MB for documentation)">
+  <!ENTITY libgcrypt-time          "0.3 SBU (with documentation; add 0.4 SBU for tests)">
 @y
-  <!ENTITY libgcrypt-buildsize     "44 MB (テスト込み、ドキュメント生成時はさらに 8 MB)">
-  <!ENTITY libgcrypt-time          "0.3 SBU (ドキュメント込み、テスト実施時はさらに 0.5 SBU)">
+  <!ENTITY libgcrypt-buildsize     "48 MB (テスト込み、ドキュメント生成時はさらに 8 MB)">
+  <!ENTITY libgcrypt-time          "0.3 SBU (ドキュメント込み、テスト実施時はさらに 0.4 SBU)">
 @z
 
 @x

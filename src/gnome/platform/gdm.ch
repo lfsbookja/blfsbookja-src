@@ -84,7 +84,6 @@
       <xref linkend="gtk3"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="keyutils"/>,
       <xref linkend="libcanberra"/>, 
       <xref linkend="libdaemon"/>, and
       <xref linkend="linux-pam"/>
@@ -96,10 +95,21 @@
       <xref linkend="gtk3"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="keyutils"/>,
       <xref linkend="libcanberra"/>, 
       <xref linkend="libdaemon"/>,
       <xref linkend="linux-pam"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="keyutils"/>,
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="keyutils"/>
     </para>
 @z
 

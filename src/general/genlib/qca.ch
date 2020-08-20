@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY qca-time          "0.6 SBU (using parallelism=4; add 0.6 SBU for tests)">
+@y
+  <!ENTITY qca-time          "0.6 SBU (using parallelism=4; add 0.6 SBU for tests)">
+@z
+
+@x
     <title>Introduction to Qca</title>
 @y
     <title>&IntroductionTo1;Qca&IntroductionTo2;</title>
@@ -122,13 +128,13 @@
 @z
 
 @x
-      To test the results, issue <command>make test</command>. One test
+      To test the results, issue <command>make test</command>. <!--One test
       using <xref linkend="gnupg2"/> fails without a correct passphrase.  The
-      required passphrase does not seem to be published.
+      required passphrase does not seem to be published.-->
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      ビルド結果をテストする場合は <command>make test</command> を実行します。<!--
       <xref linkend="gnupg2"/> を利用するテスト 1 つが、適正なパスフレーズが得られないため失敗します。
-      ここに必要となるパスフレーズは公開されていないようです。
+      ここに必要となるパスフレーズは公開されていないようです。 -->
 @z
 
 @x

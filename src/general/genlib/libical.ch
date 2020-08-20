@@ -113,14 +113,16 @@
     <para role="optional">
       <xref linkend="db"/>,
       <xref linkend="doxygen"/> (for the API documentation),
-      <xref linkend="icu"/>
+      <xref linkend="icu"/>, and
+      <xref linkend="pygobject3"/> (for some tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
       <xref linkend="doxygen"/> (API ドキュメント生成のため),
-      <xref linkend="icu"/>
+      <xref linkend="icu"/>,
+      <xref linkend="pygobject3"/> (特定のテストのため)
     </para>
 @z
 

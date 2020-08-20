@@ -92,14 +92,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libcap-pam"/> and
-      <xref linkend="libxml2"/>
+      <xref linkend="libcap-pam"/>,
+      <xref linkend="libxml2"/>, and
+      <ulink url="https://www.sphinx-doc.org/en/master/">Sphinx</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libcap-pam"/>,
-      <xref linkend="libxml2"/>
+      <xref linkend="libxml2"/>,
+      <ulink url="https://www.sphinx-doc.org/en/master/">Sphinx</ulink>
     </para>
 @z
 
@@ -142,26 +144,42 @@
 
 @x
       <parameter>--without-python</parameter>: This option eliminates
-    the need for an unused python module.</para>
+      the need for an unused python module.
 @y
       <parameter>--without-python</parameter>: This option eliminates
-    the need for an unused python module.</para>
+      the need for an unused python module.
 @z
 
 @x
       <command>make -C lib/...</command>: These commands build the
-    libraries that are needed for the client programs.</para>
+      libraries that are needed for the client programs.
 @y
       <command>make -C lib/...</command>:
-      これらのコマンドは、クライアントプログラムが必要とするライブラリをビルドします。</para>
+      これらのコマンドは、クライアントプログラムが必要とするライブラリをビルドします。
 @z
 
 @x
       <command>make -C bin/dig</command>: This command builds the
-    client programs.</para>
+      client programs.
 @y
       <command>make -C bin/dig</command>:
-      このコマンドはクライアントプログラムをビルドします。</para>
+      このコマンドはクライアントプログラムをビルドします。
+@z
+
+@x
+      <command>make -C doc</command>: This command builds the
+      manual pages.
+@y
+      <command>make -C doc</command>: This command builds the
+      manual pages.
+@z
+
+@x
+      <command>cp -v ... /usr/share/man/man1</command>: This command
+      installs the manual pages.
+@y
+      <command>cp -v ... /usr/share/man/man1</command>: This command
+      installs the manual pages.
 @z
 
 @x

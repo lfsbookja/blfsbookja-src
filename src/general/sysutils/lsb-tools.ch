@@ -83,10 +83,10 @@
 @z
 
 @x
-      Install <application>lsb_release</application> by running the following
+      Install <application>LSB-Tools</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>lsb_release</application> をビルドします。
+      以下のコマンドを実行して <application>LSB-Tools</application> をビルドします。
 @z
 
 @x

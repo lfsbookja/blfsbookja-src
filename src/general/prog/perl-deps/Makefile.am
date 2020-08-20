@@ -10,6 +10,7 @@ CHANGE_FILES = \
 	perl-algorithm-diff.ch \
 	perl-alien-build.ch \
 	perl-alien-libxml2.ch \
+	perl-b-cow.ch \
 	perl-b-hooks-endofscope.ch \
 	perl-business-isbn-data.ch \
 	perl-capture-tiny.ch \
@@ -102,7 +103,6 @@ CHANGE_FILES = \
 	perl-xml-libxml.ch \
 	perl-xml-namespacesupport.ch \
 	perl-xml-sax-base.ch \
-	perl-xml-sax-expat.ch \
 	perl-xml-sax.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

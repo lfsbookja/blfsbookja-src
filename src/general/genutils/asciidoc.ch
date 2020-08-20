@@ -14,11 +14,9 @@
 @z
 
 @x
-  <!ENTITY asciidoc-buildsize     "8.9 MB (with tests)">
-  <!ENTITY asciidoc-time          "0.2 SBU (with tests)">
+  <!ENTITY asciidoc-time          "less than 0.1 SBU">
 @y
-  <!ENTITY asciidoc-buildsize     "8.9 MB (テスト込み)">
-  <!ENTITY asciidoc-time          "0.2 SBU (テスト込み)">
+  <!ENTITY asciidoc-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -121,6 +119,12 @@
 @z
 
 @x
+      First, fix a build problem if the optional dependencies are not installed:
+@y
+      任意の依存パッケージがインストールされていないとき、ビルドに問題が発生するためこれを修正します。
+@z
+
+@x
       Install <application>Asciidoc</application> by running
       the following commands:
 @y
@@ -128,9 +132,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>
+      <!--To test the results, issue: <command>make test</command>-->
+      This package does not come with a test suite.
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      <!--ビルド結果をテストする場合は <command>make test</command> を実行します。-->
+      &notTestSuite;
 @z
 
 @x

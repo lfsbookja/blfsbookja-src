@@ -92,8 +92,9 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="bind"/> or <xref linkend="bind-utils"/> (for tests), 
-      <xref linkend="boost"/>,
+      <!-- The below programs are no longer used or looked for. -->
+      <!--<xref linkend="bind"/> or <xref linkend="bind-utils"/> (for tests),
+      <xref linkend="boost"/>, --> 
       <xref linkend="gdb"/> (for tests), 
       <xref linkend="llvm"/> (with Clang), and
       <xref linkend="which"/> (for tests)
@@ -101,8 +102,9 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="bind"/> または <xref linkend="bind-utils"/> (テスト用), 
-      <xref linkend="boost"/>,
+      <!-- The below programs are no longer used or looked for. -->
+      <!--<xref linkend="bind"/> or <xref linkend="bind-utils"/> (for tests),
+      <xref linkend="boost"/>, --> 
       <xref linkend="gdb"/> (テスト用), 
       <xref linkend="llvm"/> (Clang 込み),
       <xref linkend="which"/> (テスト用)
@@ -131,14 +133,16 @@
 @x
       To test the results, issue: <command>make regtest</command>. The tests
       may hang forever if <xref linkend="gdb"/> is not installed. Some tests
-      are known to hang also, depending on the version of glibc. Problematic
+      are known to hang also, depending on the version of glibc. Some tests 
+      in the "drd" test suite are known to fail as well. Problematic
       tests can be disabled by changing the <userinput>prereq:</userinput> line
       in the corresponding <filename>.vgtest</filename> file to
       <userinput>prereq: false</userinput>. For example:
 @y
       To test the results, issue: <command>make regtest</command>. The tests
       may hang forever if <xref linkend="gdb"/> is not installed. Some tests
-      are known to hang also, depending on the version of glibc. Problematic
+      are known to hang also, depending on the version of glibc. Some tests 
+      in the "drd" test suite are known to fail as well. Problematic
       tests can be disabled by changing the <userinput>prereq:</userinput> line
       in the corresponding <filename>.vgtest</filename> file to
       <userinput>prereq: false</userinput>. For example:

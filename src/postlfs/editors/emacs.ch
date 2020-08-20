@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY emacs-time          "0.7 SBU (Using parallelism=4)">
+@y
+  <!ENTITY emacs-time          "0.7 SBU (parallelism=4 利用時)">
+@z
+
+@x
     <title>Introduction to Emacs</title>
 @y
     <title>&IntroductionTo1;Emacs&IntroductionTo2;</title>
@@ -106,7 +112,8 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gpm"/>,
       <xref role="nodep" linkend="gtk2"/> or <xref linkend="gtk3"/>,
-      <xref linkend="imagemagick6"/> (see command explanations),
+      <xref linkend="imagemagick"/>,
+      <xref linkend="jansson"/>, <!-- for JSON support -->
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
@@ -132,7 +139,8 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gpm"/>,
       <xref role="nodep" linkend="gtk2"/> or <xref linkend="gtk3"/>,
-      <xref linkend="imagemagick6"/> (see command explanations),
+      <xref linkend="imagemagick"/>,
+      <xref linkend="jansson"/>, <!-- for JSON support -->
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
@@ -207,21 +215,11 @@
 @z
 
 @x
-      <option>IMAGEMAGICK_CFLAGS=-I/usr/include/ImageMagick-6 
-      IMAGEMAGICK_LIBS="-lMagickCore-6.Q16HDRI -lMagick++-6.Q16HDRI
-      -lMagickWand-6.Q16HDRI" </option>:
-      use these when you invoke configure if you have installed <xref
-      linkend="imagemagick6"/> and wish to link to them (the normal unversioned
-      pkgconfig files collide with <xref linkend="imagemagick"/> which this
-      package cannot use).
+      <option>--with-imagemagick</option>: Use this if you have installed
+      <xref linkend="imagemagick"/> and wish to link against it.
 @y
-      <option>IMAGEMAGICK_CFLAGS=-I/usr/include/ImageMagick-6 
-      IMAGEMAGICK_LIBS="-lMagickCore-6.Q16HDRI -lMagick++-6.Q16HDRI
-      -lMagickWand-6.Q16HDRI" </option>:
-      use these when you invoke configure if you have installed <xref
-      linkend="imagemagick6"/> and wish to link to them (the normal unversioned
-      pkgconfig files collide with <xref linkend="imagemagick"/> which this
-      package cannot use).
+      <option>--with-imagemagick</option>: Use this if you have installed
+      <xref linkend="imagemagick"/> and wish to link against it.
 @z
 
 @x

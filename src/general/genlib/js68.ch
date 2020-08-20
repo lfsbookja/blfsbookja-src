@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY js68-buildsize     "2.8 GB (31 MB installed after removing 31MB static lib)">
+  <!ENTITY js68-buildsize     "2.8 GB (30 MB installed after removing 31MB static lib)">
   <!ENTITY js68-time          "2.2 SBU (with parallelism = 4)">
 @y
-  <!ENTITY js68-buildsize     "2.8 GB (31 MB installed after removing 31MB static lib)">
+  <!ENTITY js68-buildsize     "2.8 GB (30 MB installed after removing 31MB static lib)">
   <!ENTITY js68-time          "2.2 SBU (with parallelism = 4)">
 @z
 
@@ -147,12 +147,12 @@
 
 @x
         Unlike most other packages in BLFS, the instructions below require you
-        to untar <filename>firefox-&firefox-version;esr.tar.xz</filename> and
-        change into the <filename>firefox-&firefox-version;</filename> folder.
+        to untar <filename>firefox-&JS68-version;esr.tar.xz</filename> and
+        change into the <filename>firefox-&JS68-version;</filename> folder.
 @y
         Unlike most other packages in BLFS, the instructions below require you
-        to untar <filename>firefox-&firefox-version;esr.tar.xz</filename> and
-        change into the <filename>firefox-&firefox-version;</filename> folder.
+        to untar <filename>firefox-&JS68-version;esr.tar.xz</filename> and
+        change into the <filename>firefox-&JS68-version;</filename> folder.
 @z
 
 @x
@@ -255,11 +255,11 @@
 
 @x
       <parameter>--with-*</parameter>: These parameters allow the build system
-      to use system versions of the above libriares. These are required for
+      to use system versions of the above libraries. These are required for
       stability.
 @y
       <parameter>--with-*</parameter>: These parameters allow the build system
-      to use system versions of the above libriares. These are required for
+      to use system versions of the above libraries. These are required for
       stability.
 @z
 
@@ -330,8 +330,7 @@
           js68 and js68-config
         </seg>
         <seg>
-          libmozjs-68.so and libjs_static.ajs <!-- The AJS file doesn't
-          conflict with the one from js52 like originally thought -->
+          libmozjs-68.so
         </seg>
         <seg>
           /usr/include/mozjs-68
@@ -341,8 +340,7 @@
           js68 and js68-config
         </seg>
         <seg>
-          libmozjs-68.so and libjs_static.ajs <!-- The AJS file doesn't
-          conflict with the one from js52 like originally thought -->
+          libmozjs-68.so
         </seg>
         <seg>
           /usr/include/mozjs-68

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY vala-buildsize     "172 MB (add 2 MB for tests)">
-  <!ENTITY vala-time          "0.3 SBU (using parallelism=4; add 2.3 SBU for tests)">
+  <!ENTITY vala-buildsize     "135 MB (add 3 MB for tests)">
+  <!ENTITY vala-time          "0.4 SBU (using parallelism=4; add 2.4 SBU for tests)">
 @y
-  <!ENTITY vala-buildsize     "172 MB (テスト実施時はさらに 2 MB)">
-  <!ENTITY vala-time          "0.3 SBU (parallelism=4 利用時。テスト実施時はさらに 2.3 SBU)">
+  <!ENTITY vala-buildsize     "135 MB (テスト実施時はさらに 3 MB)">
+  <!ENTITY vala-time          "0.4 SBU (parallelism=4 利用時。テスト実施時はさらに 2.4 SBU)">
 @z
 
 @x
@@ -187,11 +187,11 @@
           /usr/include/vala-&vala-major-version;,
           /usr/include/valadoc-&vala-major-version;,
           /usr/lib/vala-&vala-major-version;,
-          /usr/lib/valadoc,
+          /usr/lib/valadoc-&vala-major-version;,
           /usr/share/vala,
-          /usr/share/valadoc,
-          /usr/share/devhelp/books/vala-&vala-major-version;, and
-          /usr/share/vala-&vala-major-version;
+          /usr/share/vala-&vala-major-version;,
+          /usr/share/valadoc-&vala-major-version;, and
+          /usr/share/devhelp/books/vala-&vala-major-version;
         </seg>
 @y
         <seg>
@@ -215,11 +215,11 @@
           /usr/include/vala-&vala-major-version;,
           /usr/include/valadoc-&vala-major-version;,
           /usr/lib/vala-&vala-major-version;,
-          /usr/lib/valadoc,
+          /usr/lib/valadoc-&vala-major-version;,
           /usr/share/vala,
-          /usr/share/valadoc,
-          /usr/share/devhelp/books/vala-&vala-major-version;,
-          /usr/share/vala-&vala-major-version;
+          /usr/share/vala-&vala-major-version;,
+          /usr/share/valadoc-&vala-major-version;,
+          /usr/share/devhelp/books/vala-&vala-major-version;
         </seg>
 @z
 
@@ -234,6 +234,14 @@
             source code into C source and header files.
 @y
             <application>Vala</application> ソースコードを C のソースおよびヘッダーファイルへと変換するコンパイラーです。
+@z
+
+@x valadoc
+            is a documentation generator for generating API documentation
+            from <application>Vala</application> source code based on libvala.
+@y
+            is a documentation generator for generating API documentation
+            from <application>Vala</application> source code based on libvala.
 @z
 
 @x vala-gen-introspect

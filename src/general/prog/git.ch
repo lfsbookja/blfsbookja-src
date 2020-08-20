@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "318 MB (with downloaded documentation, 196 MB installed)">
+  <!ENTITY git-buildsize     "521 MB (with downloaded documentation, 196 MB installed)">
 @y
-  <!ENTITY git-buildsize     "318 MB（ダウンロードドキュメントを含む、インストールサイズは 196 MB）">
+  <!ENTITY git-buildsize     "521 MB（ダウンロードドキュメントを含む、インストールサイズは 196 MB）">
 @z
 
 @x
@@ -417,29 +417,27 @@
 
 @x
         <seg>
-          git, git-receive-pack and git-upload-archive (hardlinked to each
-          other), git-cvsserver, git-shell, git-upload-pack, and gitk
+          git, git-receive-pack, git-upload-archive, and
+          git-upload-pack (hardlinked to each
+          other), git-cvsserver, git-shell, and gitk
         </seg>
         <seg>
           None
         </seg>
         <seg>
-          /usr/share/perl5/Git,
-          <!-- I do NOT think this is in our %INC search path. -->
-          /usr/libexec/git-core and
+          /usr/libexec/git-core, and
           /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>
 @y
         <seg>
-          git, git-receive-pack and git-upload-archive (hardlinked to each
-          other), git-cvsserver, git-shell, git-upload-pack, gitk
+          git, git-receive-pack, git-upload-archive, and
+          git-upload-pack (hardlinked to each
+          other), git-cvsserver, git-shell, gitk
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
-          /usr/share/perl5/Git,
-          <!-- I do NOT think this is in our %INC search path. -->
           /usr/libexec/git-core,
           /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>

@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY NetworkManager-buildsize     "990 MB (with tests)">
+@y
+  <!ENTITY NetworkManager-buildsize     "990 MB (テスト込み)">
+@z
+
+@x
     <title>Introduction to NetworkManager</title>
 @y
     <title>&IntroductionTo1;NetworkManager&IntroductionTo2;</title>
@@ -142,6 +148,7 @@
     <para role="optional">
       <xref linkend="bluez"/>,
       <xref linkend="dbus-python"/> (for the test suite),
+      <!-- <xref linkend="firewalld"/> (For whenever firewalld is reintroduced) -->
       <xref linkend="gnutls"/> (used if <xref linkend="nss"/> is not found),
       <xref linkend="gtk-doc"/>,
       <xref linkend="libpsl"/>,
@@ -160,6 +167,7 @@
     <para role="optional">
       <xref linkend="bluez"/>,
       <xref linkend="dbus-python"/> (for the test suite),
+      <!-- <xref linkend="firewalld"/> (For whenever firewalld is reintroduced) -->
       <xref linkend="gnutls"/> (used if <xref linkend="nss"/> is not found),
       <xref linkend="gtk-doc"/>,
       <xref linkend="libpsl"/>,
@@ -206,8 +214,9 @@
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Four tests,
+      issue: <command>ninja test</command>. Five tests,
       <filename>devices/test-acd</filename>,
+      <filename>platform/test-tc-linux</filename>,
       <filename>platform/test-route-linux</filename>,
       <filename>platform/test-link-linux</filename>, and
       <filename>platform/test-cleanup-linux</filename>, are known to fail.
@@ -215,8 +224,9 @@
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Four tests,
+      issue: <command>ninja test</command>. Five tests,
       <filename>devices/test-acd</filename>,
+      <filename>platform/test-tc-linux</filename>,
       <filename>platform/test-route-linux</filename>,
       <filename>platform/test-link-linux</filename>, and
       <filename>platform/test-cleanup-linux</filename>, are known to fail.

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY dvisvgm-buildsize     "327 MB (48 MB installed, add 980 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.7 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "328 MB (49 MB installed, add 950 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
 @y
-  <!ENTITY dvisvgm-buildsize     "327 MB (48 MB installed, add 980 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.7 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "328 MB (49 MB installed, add 950 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
 @z
 
 @x
@@ -88,6 +88,7 @@
     <para role="required">
       <!-- EDITORS: the docs say it needs clipper, but it uses an internal
        modified version and cannot be built with system clipper -->
+      <xref linkend="brotli"/>,
       <xref linkend="gs"/> and
       <xref linkend="potrace"/>
     </para>
@@ -96,8 +97,21 @@
     <para role="required">
       <!-- EDITORS: the docs say it needs clipper, but it uses an internal
        modified version and cannot be built with system clipper -->
-      <xref linkend="gs"/> and
+      <xref linkend="brotli"/>,
+      <xref linkend="gs"/>,
       <xref linkend="potrace"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="woff2"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="woff2"/>
     </para>
 @z
 

@@ -124,13 +124,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libgcrypt"/>,
+      <xref linkend="libgcrypt"/> and 
       <xref linkend="libxml2py2"/>
+      <!-- Seems to be used for tests -->
       <note><simpara>The <xref role="nodep" linkend="libxml2py2"/> 
       dependency is only appropriate if the <application>Python2</application>
       module for this package is needed. The
       libxslt <application>Python2</application> module is not needed for
-      any package in BLFS but various packages may install
+      any package in BLFS but various non-BLFS packages may install
       <application>Python2</application> modules which reference it.
       </simpara></note>
     </para>
@@ -139,11 +140,12 @@
     <para role="optional">
       <xref linkend="libgcrypt"/>,
       <xref linkend="libxml2py2"/>
+      <!-- Seems to be used for tests -->
       <note><simpara>The <xref role="nodep" linkend="libxml2py2"/> 
       dependency is only appropriate if the <application>Python2</application>
       module for this package is needed. The
       libxslt <application>Python2</application> module is not needed for
-      any package in BLFS but various packages may install
+      any package in BLFS but various non-BLFS packages may install
       <application>Python2</application> modules which reference it.
       </simpara></note>
     </para>

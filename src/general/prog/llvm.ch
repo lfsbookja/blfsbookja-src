@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "2.3 GB (with Clang, 699 MB installed, add 18 GB for tests)">
-  <!ENTITY llvm-time          "30 SBU (with Clang and parallelism=4, add 5.8 SBU for tests)">
+  <!ENTITY llvm-buildsize     "2.8 GB (with Clang, 659 MB installed, add 16 GB for tests)">
+  <!ENTITY llvm-time          "30 SBU (with Clang and parallelism=4, add 15 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "2.3 GB (Clang 込み、インストールに 699 MB、テスト実施時はさらに 18 GB)">
-  <!ENTITY llvm-time          "30 SBU (Clang 込み、parallelism=4、テスト実施時はさらに 5.8 SBU)">
+  <!ENTITY llvm-buildsize     "2.8 GB (Clang 込み、インストールに 659 MB、テスト実施時はさらに 16 GB)">
+  <!ENTITY llvm-time          "30 SBU (Clang 込み、parallelism=4、テスト実施時はさらに 15 SBU)">
 @z
 
 @x
@@ -167,6 +167,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
+      <xref linkend="git"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="python2"/>,
@@ -175,7 +176,7 @@
       <xref linkend="valgrind"/>,
       <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
-      <ulink url="http://www.ocaml.org/">OCaml</ulink>,
+      <ulink url="https://ocaml.org/">OCaml</ulink>,
       <ulink url="https://pypi.org/project/psutil/">psutil</ulink>,
       <ulink url="https://pypi.python.org/pypi/recommonmark">recommonmark</ulink>,
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>, and
@@ -185,6 +186,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
+      <xref linkend="git"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="python2"/>,
@@ -193,7 +195,7 @@
       <xref linkend="valgrind"/>,
       <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
-      <ulink url="http://www.ocaml.org/">OCaml</ulink>,
+      <ulink url="https://ocaml.org/">OCaml</ulink>,
       <ulink url="https://pypi.org/project/psutil/">psutil</ulink>,
       <ulink url="https://pypi.python.org/pypi/recommonmark">recommonmark</ulink>,
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>,
@@ -259,7 +261,7 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that the Sanitizer based tests (5 of more than 41000 tests run) 
+      Note that the Sanitizer based tests (6 of more than 41000 tests run) 
       are known to fail.
 @y
       <!-- EDITORS - if you have more than 4 cores, take some offline to measure
@@ -273,7 +275,7 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that the Sanitizer based tests (5 of more than 41000 tests run) 
+      Note that the Sanitizer based tests (6 of more than 41000 tests run) 
       are known to fail.
 @z
 
@@ -329,26 +331,31 @@
         <seg>
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
-          clang-cpp (last two symlinks to clang), clang-format, clang-func-mapping
-          clang-import-test, clang-offload-bundler, clang-refactor, clang-rename,
-          diagtool, dsymutil, git-clang-format, hmap-tool, llc, lli, llvm-ar,
-          llvm-as, llvm-bcanalyzer, llvm-cat, llvm-cfi-verify, llvm-config,
-          llvm-cov, llvm-c-test, llvm-cvtres, llvm-cxxdump, llvm-cxxfilt,
+          clang-cpp (last two symlinks to clang), clang-format, clang-extdef-mapping,
+          clang-import-test, clang-offload-bundler, clang-offload-wrapper, 
+          clang-refactor, clang-rename, clang-scan-deps,
+          diagtool, dsymutil, git-clang-format, hmap-tool, llc, lli, 
+          llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-cat, 
+          llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres, 
+          llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
           llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
-          llvm-dwp, llvm-exegenesis, llvm-extract, llvm-lib (symlink to llvm-ar),
-          llvm-link, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-modextract,
+          llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-ifs,
+          llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
+          llvm-lib (symlink to llvm-ar), llvm-link, llvm-lipo, llvm-lto, 
+          llvm-lto2, llvm-mc, llvm-mca, llvm-modextract,
           llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump, llvm-opt-report,
           llvm-pdbutil, llvm-profdata, llvm-ranlib (symlink to llvm-ar), llvm-rc,
-          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-rtdyld,
-          llvm-size, llvm-split, llvm-stress, llvm-strings, llvm-strip (symlink
-          to llvm-objcopy), llvm-symbolizer, llvm-tblgen, llvm-undname, llvm-xray,
-          obj2yaml, opt, sancov, sanstats, scan-build, scan-view,
-          verify-uselistorder, and yaml2obj
+          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce, 
+          llvm-rtdyld, llvm-size, llvm-split, llvm-stress, llvm-strings, 
+          llvm-strip (symlink to llvm-objcopy), llvm-symbolizer, llvm-tblgen, 
+          llvm-undname, llvm-xray, obj2yaml, opt, sancov, sanstats, scan-build,
+          scan-view, verify-uselistorder, and yaml2obj
         </seg>
         <seg>
           libLLVM.so, 
           libLLVM*.a (75 libraries), 
           libLTO.so, 
+          libRemarks.so, 
           libclang.so,
           and libclang*.a (63 libraries)
         </seg>
@@ -356,32 +363,37 @@
           /usr/include/{clang,clang-c,llvm,llvm-c},
           /usr/lib/{clang,cmake/{clang,llvm}},
           /usr/share/{clang,opt-viewer,scan-build,scan-view}, and
-          /usr/share/doc/llvm-&llvm-version;}
+          /usr/share/doc/llvm-&llvm-version;
         </seg>
 @y
         <seg>
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
-          clang-cpp (last two symlinks to clang), clang-format, clang-func-mapping
-          clang-import-test, clang-offload-bundler, clang-refactor, clang-rename,
-          diagtool, dsymutil, git-clang-format, hmap-tool, llc, lli, llvm-ar,
-          llvm-as, llvm-bcanalyzer, llvm-cat, llvm-cfi-verify, llvm-config,
-          llvm-cov, llvm-c-test, llvm-cvtres, llvm-cxxdump, llvm-cxxfilt,
+          clang-cpp (last two symlinks to clang), clang-format, clang-extdef-mapping,
+          clang-import-test, clang-offload-bundler, clang-offload-wrapper, 
+          clang-refactor, clang-rename, clang-scan-deps,
+          diagtool, dsymutil, git-clang-format, hmap-tool, llc, lli, 
+          llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-cat, 
+          llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres, 
+          llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
           llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
-          llvm-dwp, llvm-exegenesis, llvm-extract, llvm-lib (symlink to llvm-ar),
-          llvm-link, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-modextract,
+          llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-ifs,
+          llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
+          llvm-lib (symlink to llvm-ar), llvm-link, llvm-lipo, llvm-lto, 
+          llvm-lto2, llvm-mc, llvm-mca, llvm-modextract,
           llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump, llvm-opt-report,
           llvm-pdbutil, llvm-profdata, llvm-ranlib (symlink to llvm-ar), llvm-rc,
-          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-rtdyld,
-          llvm-size, llvm-split, llvm-stress, llvm-strings, llvm-strip (symlink
-          to llvm-objcopy), llvm-symbolizer, llvm-tblgen, llvm-undname, llvm-xray,
-          obj2yaml, opt, sancov, sanstats, scan-build, scan-view,
-          verify-uselistorder, yaml2obj
+          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce, 
+          llvm-rtdyld, llvm-size, llvm-split, llvm-stress, llvm-strings, 
+          llvm-strip (symlink to llvm-objcopy), llvm-symbolizer, llvm-tblgen, 
+          llvm-undname, llvm-xray, obj2yaml, opt, sancov, sanstats, scan-build,
+          scan-view, verify-uselistorder, yaml2obj
         </seg>
         <seg>
           libLLVM.so, 
           libLLVM*.a (75 個のライブラリ), 
           libLTO.so, 
+          libRemarks.so, 
           libclang.so,
           and libclang*.a (63 個のライブラリ)
         </seg>
@@ -389,7 +401,7 @@
           /usr/include/{clang,clang-c,llvm,llvm-c},
           /usr/lib/{clang,cmake/{clang,llvm}},
           /usr/share/{clang,opt-viewer,scan-build,scan-view},
-          /usr/share/doc/llvm-&llvm-version;}
+          /usr/share/doc/llvm-&llvm-version;
         </seg>
 @z
 

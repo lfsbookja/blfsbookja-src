@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "565 MB (with demos and docs), add 304 MB for tests">
-  <!ENTITY mesa-time          "2.6 SBU (with parallelism=4, demos, and docs), add 0.5 SBU for tests">
+  <!ENTITY mesa-buildsize     "566 MB (with demos and docs), add 1.5 MB for tests">
+  <!ENTITY mesa-time          "2.6 SBU (with parallelism=4, demos, and docs), add 0.1 SBU for tests">
 @y
-  <!ENTITY mesa-buildsize     "565 MB (デモおよびドキュメント込み)、テスト実施時はさらに 304 MB">
-  <!ENTITY mesa-time          "2.6 SBU (parallelism=4, デモおよびドキュメント込み)、テスト実施時はさらに 0.5 SBU">
+  <!ENTITY mesa-buildsize     "566 MB (デモおよびドキュメント込み)、テスト実施時はさらに 1.5 MB">
+  <!ENTITY mesa-time          "2.6 SBU (parallelism=4, デモおよびドキュメント込み)、テスト実施時はさらに 0.1 SBU">
 @z
 
 @x
@@ -264,12 +264,12 @@
 
 @x
       If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>. Six tests in the glcpp test suite are
-      known to fail.
+      <command>ninja test</command>. Four tests in the glcpp test suite and
+      two tests in the llvmpipe suite are known to fail.
 @y
       If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>. Six tests in the glcpp test suite are
-      known to fail.
+      <command>ninja test</command>. Four tests in the glcpp test suite and
+      two tests in the llvmpipe suite are known to fail.
 @z
 
 @x
@@ -382,6 +382,7 @@
           d3dadapter9.so, <!-- For Windows games. This is DirectX's Direct3D -->
           i915_dri.so,
           i965_dri.so,
+          iris_dri.so,
           kms_swrast_dri.so,
           nouveau_dri.so,
           nouveau_drv_video.so,
@@ -435,6 +436,7 @@
           d3dadapter9.so, <!-- For Windows games. This is DirectX's Direct3D -->
           i915_dri.so,
           i965_dri.so,
+          iris_dri.so,
           kms_swrast_dri.so,
           nouveau_dri.so,
           nouveau_drv_video.so,

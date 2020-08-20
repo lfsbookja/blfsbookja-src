@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY wireshark-buildsize     "719 MB (with all optional dependencies available in the BLFS book)">
+@y
+  <!ENTITY wireshark-buildsize     "719 MB (with all optional dependencies available in the BLFS book)">
+@z
+
+@x
     <title>Introduction to Wireshark</title>
 @y
     <title>&IntroductionTo1;Wireshark&IntroductionTo2;</title>
@@ -281,12 +287,12 @@
 
 @x
       If you are installing wireshark for the first time, it will be necessary
-      to leave the session and login again, thus you will now have wireshark
-      between your groups, otherwise, it will not run properly.
+      to logout of your session and login again. This will put wireshark in your
+      groups, because otherwise Wireshark will not function properly.
 @y
       If you are installing wireshark for the first time, it will be necessary
-      to leave the session and login again, thus you will now have wireshark
-      between your groups, otherwise, it will not run properly.
+      to logout of your session and login again. This will put wireshark in your
+      groups, because otherwise Wireshark will not function properly.
 @z
 
 @x

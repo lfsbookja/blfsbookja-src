@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY samba-buildsize     "633 MB (add 341 MB for quicktest)">
+  <!ENTITY samba-time          "3.2 SBU (using parallelism=4; add 4.7 SBU for quicktest)">
+@y
+  <!ENTITY samba-buildsize     "633 MB (add 341 MB for quicktest)">
+  <!ENTITY samba-time          "3.2 SBU (using parallelism=4; add 4.7 SBU for quicktest)">
+@z
+
+@x
     <title>Introduction to Samba</title>
 @y
     <title>&IntroductionTo1;Samba&IntroductionTo2;</title>
@@ -159,7 +167,7 @@
       <ulink url="https://packages.debian.org/stretch/fam/">FAM</ulink>,
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
       <ulink url="https://www.gluster.org/">GlusterFS</ulink>,
-      <ulink url="http://www.h5l.org/">Heimdal</ulink> (included),
+      <ulink url="https://github.com/heimdal/">Heimdal</ulink> (included),
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
@@ -198,7 +206,7 @@
       <ulink url="https://packages.debian.org/stretch/fam/">FAM</ulink>,
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
       <ulink url="https://www.gluster.org/">GlusterFS</ulink>,
-      <ulink url="http://www.h5l.org/">Heimdal</ulink> (included),
+      <ulink url="https://github.com/heimdal/">Heimdal</ulink> (included),
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
@@ -219,6 +227,12 @@
     <title>Installation of Samba</title>
 @y
     <title>&InstallationOf1;Samba&InstallationOf2;</title>
+@z
+
+@x
+      Fix a file that fails to compile with Glibc-2.32:
+@y
+      Fix a file that fails to compile with Glibc-2.32:
 @z
 
 @x
