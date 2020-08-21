@@ -111,6 +111,16 @@
 @z
 
 @x
+<!ENTITY lfs10_checked        "<para>This package is known to build and work
+                              properly using an LFS-10.0 platform.</para>">
+<!ENTITY lfs10_built          "<para>This package is known to build using an LFS
+                              10.0 platform but has not been tested.</para>">
+@y
+<!ENTITY lfs10_checked        "<para>本パッケージは LFS-10.0 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs10_built          "<para>本パッケージは LFS-10.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+@z
+
+@x
 <!ENTITY as_root "<note><para>When installing multiple packages in a script,
   the installation needs to be done as the root user. There are three general
   options that can be used to do this:</para>
