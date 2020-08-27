@@ -15,7 +15,6 @@ CHANGE_FILES = \
 	libevent.ch        \
 	libmnl.ch          \
 	libndp.ch          \
-	libnftnl.ch        \
 	libnl.ch           \
 	libnma.ch          \
 	libnsl.ch          \

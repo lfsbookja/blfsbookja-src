@@ -139,13 +139,13 @@
 @x
       The instructions for using GRUB2 to make a custom rescue CD-ROM are
       also available in <ulink
-      url='http://www.&lfs-domainname;/lfs/view/stable/chapter08/grub.html'>LFS
-      Chapter 8</ulink>.
+      url='http://www.&lfs-domainname;/lfs/view/stable/chapter10/grub.html'>LFS
+      Chapter 10</ulink>.
 @y
       The instructions for using GRUB2 to make a custom rescue CD-ROM are
       also available in <ulink
-      url='http://www.&lfs-domainname;/lfs/view/stable/chapter08/grub.html'>LFS
-      Chapter 8</ulink>.
+      url='http://www.&lfs-domainname;/lfs/view/stable/chapter10/grub.html'>LFS
+      Chapter 10</ulink>.
 @z
 
 @x

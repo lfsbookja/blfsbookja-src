@@ -44,13 +44,13 @@
   scripts that are used throughout the book. It is assumed that you will be
   using the BLFS Bootscripts package in conjunction with a compatible
   LFS-Bootscripts package. Refer to
-  <ulink url="&lfs-root;/chapter07/bootscripts.html"/> for more
+  <ulink url="&lfs-root;/chapter09/bootscripts.html"/> for more
   information on the LFS-Bootscripts package.</para>
 @y
   <para>
   BLFS ブートスクリプトパッケージは、本書を通じて利用する初期化スクリプトを提供します。
   本パッケージは LFS ブートスクリプトパッケージとともに利用することを想定しています。
-  LFS ブートスクリプトパッケージについては <ulink url="&lfs-root;/chapter07/bootscripts.html"/> を参照してください。
+  LFS ブートスクリプトパッケージについては <ulink url="&lfs-root;/chapter09/bootscripts.html"/> を参照してください。
   </para>
 @z
 

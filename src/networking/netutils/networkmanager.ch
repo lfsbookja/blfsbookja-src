@@ -107,7 +107,8 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/>,
-      <xref linkend="dhcpcd"/> or
+      <!--<xref linkend="dhcpcd"/> or
+          DHCPCD support is known to be broken with dhcpcd-9 -->
       <xref role="nodep" linkend="dhcp"/> (client only),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
@@ -126,7 +127,8 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/>,
-      <xref linkend="dhcpcd"/> または
+      <!--<xref linkend="dhcpcd"/> or
+          DHCPCD support is known to be broken with dhcpcd-9 -->
       <xref role="nodep" linkend="dhcp"/> (クライアントのみ),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
@@ -419,11 +421,11 @@
 @x
         To use something other than the built-in dhcp client (recommended if
         using only <command>nmcli</command>), use the following configuration
-       (valid values are dhclient, dhcpcd, and internal):
+        (valid values include either dhclient <!--dhcpcd --> or internal):
 @y
         To use something other than the built-in dhcp client (recommended if
         using only <command>nmcli</command>), use the following configuration
-       (valid values are dhclient, dhcpcd, and internal):
+        (valid values include either dhclient <!--dhcpcd --> or internal):
 @z
 
 @x

@@ -167,11 +167,11 @@
 
 @x
         Some tests require grep built with perl regular expressions. To
-        obtain this, rebuild grep with the LFS Chapter 6 instructions after
+        obtain this, rebuild grep with the LFS Chapter 8 instructions after
         installing <xref linkend="pcre"/>.
 @y
         Some tests require grep built with perl regular expressions. To
-        obtain this, rebuild grep with the LFS Chapter 6 instructions after
+        obtain this, rebuild grep with the LFS Chapter 8 instructions after
         installing <xref linkend="pcre"/>.
 @z
 

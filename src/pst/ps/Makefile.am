@@ -7,14 +7,12 @@
 ##
 BOOKdir = @abs_bookdir@/pst/ps
 CHANGE_FILES = \
-	a2ps.ch     \
 	enscript.ch \
 	epdfview.ch \
 	fop.ch      \
 	mupdf.ch    \
 	paps.ch     \
-	ps.ch       \
-	psutils.ch
+	ps.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

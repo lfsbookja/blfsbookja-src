@@ -105,6 +105,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="json-c"/>,
       <xref linkend="docbook-utils"/> and
       <xref linkend="libxml2"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
@@ -112,6 +113,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="json-c"/>,
       <xref linkend="docbook-utils"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)

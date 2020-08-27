@@ -415,12 +415,12 @@
 @x
       A list of the reinstalled files, along with their short
       descriptions can be found in the <ulink
-      url="&lfs-root;/chapter06/vim.html#contents-vim">LFS Vim Installation
+      url="&lfs-root;/chapter08/vim.html#contents-vim">LFS Vim Installation
       Instructions</ulink>
 @y
       A list of the reinstalled files, along with their short
       descriptions can be found in the <ulink
-      url="&lfs-root;/chapter06/vim.html#contents-vim">LFS Vim Installation
+      url="&lfs-root;/chapter08/vim.html#contents-vim">LFS Vim Installation
       Instructions</ulink>
 @z
 

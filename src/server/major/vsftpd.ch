@@ -83,16 +83,26 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="linux-pam"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="linux-pam"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libcap-pam"/>, and
-      <xref linkend="linux-pam"/>
+      <xref linkend="libcap-pam"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libcap-pam"/>,
-      <xref linkend="linux-pam"/>
+      <xref linkend="libcap-pam"/>
     </para>
 @z
 

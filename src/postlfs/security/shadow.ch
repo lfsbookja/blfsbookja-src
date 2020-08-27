@@ -521,15 +521,15 @@
       A list of the installed files, along with their short descriptions can be
       found at
       <phrase revision="sysv">
-      <ulink url="&lfs-root;/chapter06/shadow.html#contents-shadow"/></phrase>
+      <ulink url="&lfs-root;/chapter08/shadow.html#contents-shadow"/></phrase>
       <phrase revision="systemd">
-      <ulink url="&lfs-rootd;/chapter06/shadow.html#contents-shadow"/></phrase>.
+      <ulink url="&lfs-rootd;/chapter08/shadow.html#contents-shadow"/></phrase>.
 @y
       インストールされるファイルの一覧および概略説明については <phrase revision="sysv">
-      <ulink url="&lfs-root;/chapter06/shadow.html#contents-shadow"/></phrase>
+      <ulink url="&lfs-root;/chapter08/shadow.html#contents-shadow"/></phrase>
       <phrase revision="systemd">
-      <ulink url="&lfs-rootd;/chapter06/shadow.html#contents-shadow"/></phrase> (日本語訳は <phrase revision="sysv">
-      <ulink url="&lfsja-dev;/chapter06/shadow.html#contents-shadow"/></phrase>
+      <ulink url="&lfs-rootd;/chapter08/shadow.html#contents-shadow"/></phrase> (日本語訳は <phrase revision="sysv">
+      <ulink url="&lfsja-dev;/chapter08/shadow.html#contents-shadow"/></phrase>
       <phrase revision="systemd">
-      <ulink url="&lfssysdja-dev;/chapter06/shadow.html#contents-shadow"/></phrase>) を参照してください。
+      <ulink url="&lfssysdja-dev;/chapter08/shadow.html#contents-shadow"/></phrase>) を参照してください。
 @z

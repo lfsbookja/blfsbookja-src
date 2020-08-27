@@ -54,27 +54,33 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="perl-file-which"/>
+        <xref linkend="perl-capture-tiny"/>,
+        <xref linkend="perl-file-which"/>,
+        <xref linkend="perl-ffi-checklib"/> and
+        <xref linkend="perl-file-chdir"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <xref linkend="perl-file-which"/>
+        <xref linkend="perl-capture-tiny"/>,
+        <xref linkend="perl-file-which"/>,
+        <xref linkend="perl-ffi-checklib"/>,
+        <xref linkend="perl-file-chdir"/>
       </para>
 @z
 
 @x
+      <!-- the direct test dependencies are also needed at runtime
+           when Alien-Build is used to build Alien-Libxml2
       <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
       <para role="recommended">
-        <xref linkend="perl-ffi-checklib"/>,
-        <xref linkend="perl-file-chdir"/>
-      </para>
+      </para>-->
 @y
+      <!-- the direct test dependencies are also needed at runtime
+           when Alien-Build is used to build Alien-Libxml2
       <bridgehead renderas="sect5">&Recommended; (テストスイートに必要)</bridgehead>
       <para role="recommended">
-        <xref linkend="perl-ffi-checklib"/>,
-        <xref linkend="perl-file-chdir"/>
-      </para>
+      </para>-->
 @z
 
 @x

@@ -232,14 +232,12 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/pst/ps
 CHANGE_FILES = \
-	a2ps.ch     \
 	enscript.ch \
 	epdfview.ch \
 	fop.ch      \
 	mupdf.ch    \
 	paps.ch     \
-	ps.ch       \
-	psutils.ch
+	ps.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)

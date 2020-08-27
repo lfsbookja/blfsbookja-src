@@ -8,14 +8,15 @@
 SUBDIRS=kf5 kf5-apps plasma5
 BOOKdir = @abs_bookdir@/kde
 CHANGE_FILES = \
-	introduction.ch        \
-	extra-cmake-modules.ch \
-	kde.ch                 \
-	kde-intro.ch           \
-	libdbusmenuqt.ch       \
-	phonon.ch              \
+	introduction.ch             \
+	extra-cmake-modules.ch      \
+	kde.ch                      \
+	kde-intro.ch                \
+	libdbusmenuqt.ch            \
+	phonon.ch                   \
 	phonon-backend-gstreamer.ch \
-	phonon-backend-vlc.ch  \
+	phonon-backend-vlc.ch       \
+	plasma-wayland-protocols.ch \
 	polkit-qt.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
