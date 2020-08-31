@@ -232,11 +232,13 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/xfce/apps
 CHANGE_FILES = \
-	apps.ch           \
-	parole.ch         \
-	ristretto.ch      \
-	xfburn.ch         \
-	xfce4-notifyd.ch  \
+	apps.ch                      \
+	parole.ch                    \
+	ristretto.ch                 \
+	xfburn.ch                    \
+	xfce4-dev-tools.ch           \
+	xfce4-notifyd.ch             \
+	xfce4-pulseaudio-plugin.ch   \
 	xfce4-terminal.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

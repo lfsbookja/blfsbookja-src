@@ -104,7 +104,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="keyutils"/>,
+      <xref linkend="keyutils"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>

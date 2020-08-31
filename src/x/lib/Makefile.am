@@ -37,6 +37,7 @@ CHANGE_FILES = \
         glu.ch                  \
         imlib2.ch               \
 	keybinder2.ch           \
+	keybinder3.ch           \
 	lib.ch                  \
 	libdazzle.ch            \
 	libdrm.ch               \

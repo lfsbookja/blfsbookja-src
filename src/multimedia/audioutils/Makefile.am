@@ -13,6 +13,7 @@ CHANGE_FILES = \
 	kwave.ch       \
 	lame.ch        \
 	mpg123.ch      \
+	pavucontrol.ch \
 	pnmixer.ch     \
 	vorbistools.ch
 
