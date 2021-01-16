@@ -26,10 +26,10 @@
 @z
 
 @x
-        <application>dbusmock</application> a Python library
+        <application>dbusmock</application> is a Python library
         useful for writing tests for software which talks to D-Bus services.
 @y
-        <application>dbusmock</application> a Python library
+        <application>dbusmock</application> is a Python library
         useful for writing tests for software which talks to D-Bus services.
 @z
 
@@ -125,7 +125,7 @@
             python_dbusmock-&dbusmock-version;-py&python3-majorver;.egg
           </seg>
           <seg>
-            None
+            /usr/lib/python&python3-majorver;/site-packages/dbusmock
           </seg>
 @y
           <seg>
@@ -135,6 +135,6 @@
             python_dbusmock-&dbusmock-version;-py&python3-majorver;.egg
           </seg>
           <seg>
-            &None;
+            /usr/lib/python&python3-majorver;/site-packages/dbusmock
           </seg>
 @z

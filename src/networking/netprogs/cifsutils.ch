@@ -20,10 +20,10 @@
 @z
 
 @x
-      The <application>cifs-utils</application> provides a means for
+      The <application>cifs-utils</application> package provides a means for
       mounting SMB/CIFS shares on a Linux system.
 @y
-      The <application>cifs-utils</application> provides a means for
+      The <application>cifs-utils</application> package provides a means for
       mounting SMB/CIFS shares on a Linux system.
 @z
 

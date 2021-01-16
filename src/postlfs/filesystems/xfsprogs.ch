@@ -163,16 +163,22 @@
         <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_copy, xfs_db,
         xfs_estimate, xfs_freeze, xfs_fsr, xfs_growfs, xfs_info, xfs_io,
         xfs_logprint, xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck,
-        xfs_quota, xfs_repair, xfs_rtcp, and xfs_spaceman</seg>
+        xfs_quota, xfs_repair, xfs_rtcp, xfs_scrub, xfs_scrub_all,
+        and xfs_spaceman</seg>
         <seg>libhandle.so</seg>
-        <seg>/usr/include/xfs and /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
+        <seg>/usr/include/xfs,
+        /usr/lib/xfsprogs, and
+        /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
 @y
         <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_copy, xfs_db,
         xfs_estimate, xfs_freeze, xfs_fsr, xfs_growfs, xfs_info, xfs_io,
         xfs_logprint, xfs_mdrestore, xfs_metadump, xfs_mkfile, xfs_ncheck,
-        xfs_quota, xfs_repair, xfs_rtcp, xfs_spaceman</seg>
+        xfs_quota, xfs_repair, xfs_rtcp, xfs_scrub, xfs_scrub_all,
+        xfs_spaceman</seg>
         <seg>libhandle.so</seg>
-        <seg>/usr/include/xfs, /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
+        <seg>/usr/include/xfs,
+        /usr/lib/xfsprogs,
+        /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
 @z
 
 @x

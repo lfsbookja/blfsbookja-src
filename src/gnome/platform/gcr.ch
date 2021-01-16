@@ -191,7 +191,7 @@
           gcr-viewer
         </seg>
         <seg>
-          libgck-1.so, libgcr-3.so, libgcr-base-3.so and libgcr-ui-3.so
+          libgck-1.so, libgcr-base-3.so and libgcr-ui-3.so
         </seg>
         <seg>
           /usr/include/gck-1,
@@ -203,7 +203,7 @@
           gcr-viewer
         </seg>
         <seg>
-          libgck-1.so, libgcr-3.so, libgcr-base-3.so, libgcr-ui-3.so
+          libgck-1.so, libgcr-base-3.so, libgcr-ui-3.so
         </seg>
         <seg>
           /usr/include/gck-1,
@@ -228,10 +228,4 @@
             contains GObject bindings for PKCS#11.
 @y
             contains GObject bindings for PKCS#11.
-@z
-
-@x libgcr-3.so
-            contains functions for high level crypto parsing.
-@y
-            contains functions for high level crypto parsing.
 @z

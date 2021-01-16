@@ -77,14 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cairomm"/>,
+      <xref linkend="cairomm-1.0"/>,
       <xref linkend="glibmm"/> and
       <xref linkend="pango"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="cairomm"/>,
+      <xref linkend="cairomm-1.0"/>,
       <xref linkend="glibmm"/>,
       <xref linkend="pango"/>
     </para>

@@ -145,19 +145,19 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Note that you
+      To test the results, issue: <command>make -k check</command>. Note that you
       must run the tests from a session with X Window Display capability (i.e.,
       not a text-based terminal/console) as the tests attempt to open an X
       window, and the tests can take an excessively long time. Using an X
-      Window, the tests should take less than 0.3 SBU. One test, 
-      DefaultValues/GdkPixbuf, is known to fail.
+      Window, the tests should take less than 0.1 SBU. One test, 
+      aliasfilescheck.sh, is known to fail.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
       テストを実施する場合は X ウィンドウシステム内にて行う必要があります。
       (つまり、テキストベースのターミナル、コンソール画面からは行ってはなりません。)
       テストでは X ウィンドウを開くことが行われるためであり、X ウィンドウがなければこのテストにかなりの時間を要します。
-      X ウィンドウがあれば 0.3 SBU 程度の時間でテストが終わります。
-      DefaultValues/GdkPixbuf というテストは失敗します。
+      X ウィンドウがあれば 0.1 SBU 程度の時間でテストが終わります。
+      aliasfilescheck.sh というテストは失敗します。
 @z
 
 @x

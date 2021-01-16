@@ -82,7 +82,6 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libusb"/>, and
       <xref linkend="polkit"/>
@@ -90,7 +89,6 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libusb"/>,
       <xref linkend="polkit"/>

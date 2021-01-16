@@ -84,6 +84,7 @@
       <xref linkend="iso-codes"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="libnotify"/>,
+      <xref linkend="libportal"/>,
       <xref linkend="nettle"/>, and
       <xref linkend="webkitgtk"/>
     </para>
@@ -95,6 +96,7 @@
       <xref linkend="iso-codes"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="libnotify"/>,
+      <xref linkend="libportal"/>,
       <xref linkend="nettle"/>,
       <xref linkend="webkitgtk"/>
     </para>
@@ -104,13 +106,13 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="libdazzle"/> and
-      <xref linkend="libhandy"/>
+      <xref linkend="libhandy1"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="libdazzle"/>,
-      <xref linkend="libhandy"/>
+      <xref linkend="libhandy1"/>
     </para>
 @z
 

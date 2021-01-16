@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "348 MB (add 634 MB for tests)">
-  <!ENTITY cmake-time          "3.2 SBU (add 3.3 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-buildsize     "352 MB (add 699 MB for tests)">
+  <!ENTITY cmake-time          "1.7 SBU (add 3.1 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "348 MB（テスト実行時は 634 MB）">
-  <!ENTITY cmake-time          "3.2 SBU（テスト実行時は 3.3 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-buildsize     "352 MB（テスト実行時は 699 MB）">
+  <!ENTITY cmake-time          "1.7 SBU（テスト実行時は 3.1 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -121,16 +121,20 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="git"/> (for use during tests),
+      <xref linkend="mercurial"/> (for use during tests),
       <xref linkend="qt5"/> (for the Qt-based GUI),
-      <xref linkend="subversion"/> (for testing), and
+      <xref linkend="subversion"/> (for testing),
+      <ulink url="http://rhash.sourceforge.net/">rhash</ulink>, and
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (for building documents)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="git"/> (for use during tests),
+      <xref linkend="mercurial"/> (for use during tests),
       <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
-      <xref linkend="subversion"/> (テスト時), 
+      <xref linkend="subversion"/> (テスト時),
+      <ulink url="http://rhash.sourceforge.net/">rhash</ulink>, and
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (ドキュメント構築時)
     </para>
 @z
@@ -185,6 +189,16 @@
 @z
 
 @x
+      <command>sed ... Modules/GNUInstallDirs.cmake</command>: 
+      This command disables applications using cmake from attempting to 
+      install files in /usr/lib64/.
+@y
+      <command>sed ... Modules/GNUInstallDirs.cmake</command>: 
+      This command disables applications using cmake from attempting to 
+      install files in /usr/lib64/.
+@z
+
+@x
       <parameter>--system-libs</parameter>: This switch forces the build system
       to link against <application>Zlib</application>,
       <application>Bzip2</application>, <application>cURL</application>,
@@ -197,7 +211,7 @@
 @z
 
 @x
-      <option>--qt-gui</option>: This switch enables building of the
+      <option>--qt-gui</option>: This switch enables building the
       <application>Qt</application>-based  GUI for
       <application>CMake</application>.
 @y
@@ -275,7 +289,7 @@
 @z
 
 @x cmake-gui
-            (optional) is the <application>Qt</application>-based frontent to
+            (optional) is the <application>Qt</application>-based frontend to
             <command>cmake</command>.
 @y
             (任意ビルド) <command>cmake</command> の <application>Qt</application>-ベースのフロントエンドです。

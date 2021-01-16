@@ -91,12 +91,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.gnu.org/software/libffcall/">libffcall</ulink>
+      <ulink url="https://www.gnu.org/software/libffcall/">libffcall</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.gnu.org/software/libffcall/">libffcall</ulink>
+      <ulink url="https://www.gnu.org/software/libffcall/">libffcall</ulink>
     </para>
 @z
 

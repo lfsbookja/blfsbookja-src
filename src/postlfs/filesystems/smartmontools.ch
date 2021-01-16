@@ -164,12 +164,14 @@
 @z
 
 @x
-      <title>Boot Script</title>
+       <title><phrase revision="sysv">Boot Script</phrase>
+              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
-      <title>&BootScript;</title>
+       <title><phrase revision="sysv">&BootScript;</phrase>
+              <phrase revision="systemd">Systemd Unit</phrase></title>
 @z
 
-@x
+@x revision="sysv"
         If you want the <application>smartd</application> daemon to
         start automatically when the system is booted, install the
         <filename>/etc/rc.d/init.d/smartd</filename> init script included
@@ -181,18 +183,18 @@
         in the <xref linkend="bootscripts"/> package.
 @z
 
-@x
-    <title>Command Explanations</title>
+@x revision="systemd"
+        If you want the <application>smartd</application> daemon to
+        start automatically when the system is booted, enable the
+        systemd unit provided by the package by executing the
+        following command as the
+        <systemitem class="username">root</systemitem> user:
 @y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--with-initscriptdir=no</parameter>: This switch suppresses
-      the default initialization script.  See above for the BLFS script.
-@y
-      <parameter>--with-initscriptdir=no</parameter>: This switch suppresses
-      the default initialization script.  See above for the BLFS script.
+        If you want the <application>smartd</application> daemon to
+        start automatically when the system is booted, enable the
+        systemd unit provided by the package by executing the
+        following command as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x

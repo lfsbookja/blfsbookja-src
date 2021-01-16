@@ -132,8 +132,9 @@
       <xref linkend="which"/>, and
       Python modules 
       <xref linkend="lxml"/>,
-      <ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>, and
-      <ulink url="https://pypi.org/project/parameterized/">parameterized</ulink>
+      <ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>,
+      <ulink url="https://pypi.org/project/parameterized/">parameterized</ulink>,
+      and <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -146,7 +147,8 @@
       Python モジュール
       <xref linkend="lxml"/>,
       <ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>,
-      <ulink url="https://pypi.org/project/parameterized/">parameterized</ulink>
+      <ulink url="https://pypi.org/project/parameterized/">parameterized</ulink>,
+      and <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
     </para>
 @z
 
@@ -226,7 +228,7 @@
         
         <seg>
           /usr/share/gtk-doc and
-          /usr/share/help/*/gtk-doc-manual
+          /usr/share/cmake/GtkDoc
         </seg>
 @y
         <seg>
@@ -240,15 +242,15 @@
           gtkdoc-mkman,        
           gtkdoc-mkpdf,
           gtkdoc-rebase, 
-          gtkdoc-scan, 
+          gtkdoc-scan,
           gtkdoc-scangobj
         </seg>
         
-        <seg>&None;</seg>
+        <seg>None</seg>
         
         <seg>
           /usr/share/gtk-doc,
-          /usr/share/help/*/gtk-doc-manual
+          /usr/share/cmake/GtkDoc
         </seg>
 @z
 

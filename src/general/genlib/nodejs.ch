@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY nodejs-buildsize     "677 MB (add 39 MB for tests)">
-  <!ENTITY nodejs-time          "8.0 SBU (using parallelism=4; add 2.9 SBU for tests)">
+  <!ENTITY nodejs-buildsize     "747 MB (add 36 MB for tests)">
+  <!ENTITY nodejs-time          "10.1 SBU (using parallelism=4; add 2.6 SBU for tests)">
 @y
-  <!ENTITY nodejs-buildsize     "677 MB (add 39 MB for tests)">
-  <!ENTITY nodejs-time          "8.0 SBU (using parallelism=4; add 2.9 SBU for tests)">
+  <!ENTITY nodejs-buildsize     "747 MB (add 36 MB for tests)">
+  <!ENTITY nodejs-time          "10.1 SBU (using parallelism=4; add 2.6 SBU for tests)">
 @z
 
 @x
@@ -88,13 +88,11 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="python2"/> and
       <xref linkend="which"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="python2"/>,
       <xref linkend="which"/> 
     </para>
 @z
@@ -181,13 +179,13 @@
 @z
 
 @x
-      <parameter>- -with-intl=system-icu</parameter>: use the system version
+      <parameter>--with-intl=system-icu</parameter>: use the system version
       of <application>icu</application>. Other values are
       <option>full-icu</option> (to build a local, full
       <application>icu</application> library) and <option>small-icu</option>
       (to build a local, minimal <application>icu</application> library).
 @y
-      <parameter>- -with-intl=system-icu</parameter>: use the system version
+      <parameter>--with-intl=system-icu</parameter>: use the system version
       of <application>icu</application>. Other values are
       <option>full-icu</option> (to build a local, full
       <application>icu</application> library) and <option>small-icu</option>

@@ -147,22 +147,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <option>--enable-bluetooth=no</option>: Necessary, if the recommended
-      patch is not applied, because since 1.6.1 this application needs a fix,
-      in order to build with <application>bluez-5.21</application>.
-@y
-      <option>--enable-bluetooth=no</option>: Necessary, if the recommended
-      patch is not applied, because since 1.6.1 this application needs a fix,
-      in order to build with <application>bluez-5.21</application>.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -183,7 +167,7 @@
           pcap-config
         </seg>
         <seg>
-          libpcap.so, libpcap.a (optional)
+          libpcap.so
         </seg>
         <seg>
           /usr/include/pcap
@@ -193,7 +177,7 @@
           pcap-config
         </seg>
         <seg>
-          libpcap.so, libpcap.a (任意ビルド)
+          libpcap.so
         </seg>
         <seg>
           /usr/include/pcap

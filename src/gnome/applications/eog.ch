@@ -22,7 +22,7 @@
 @x
       <application>EOG</application> is an application used for
       viewing and cataloging image files on the
-      <application>GNOME</application> Desktop. It has basic editing
+      <application>GNOME</application> Desktop. It also has basic editing
       capabilites.
 @y
       <application>EOG</application> は、<application>GNOME</application> デスクトップ環境上にて、イメージファイルを表示しカタログ化するアプリケーションであり、基本的な編集機能を提供します。
@@ -121,12 +121,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/> and
+      <xref linkend="libportal"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="libportal"/>
     </para>
 @z
 

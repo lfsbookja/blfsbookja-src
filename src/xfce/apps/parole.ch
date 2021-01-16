@@ -137,21 +137,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <option>--with-gstreamer=1.0</option>: Use this switch if both
-      the <xref linkend='gstreamer10'/> and the deprecated gstreamer-0.x  
-      packages are installed.
-@y
-      <option>--with-gstreamer=1.0</option>:
-      <xref linkend='gstreamer10'/> とかつての gstreamer-0.x を共にインストールしている場合は本スイッチを指定します。
-@z
-
-@x
     <title>Using Parole</title>
 @y
     <title>Parole の利用</title>
@@ -222,8 +207,8 @@
 @z
 
 @x parole
-            is a <application>GTK+ 2</application> media player that
+            is a <application>GTK+ 3</application> media player that
             uses <application>GStreamer</application>.
 @y
-            <application>GStreamer</application> を利用した <application>GTK+ 2</application> メディアプレイヤー。
+            <application>GStreamer</application> を利用した <application>GTK+ 3</application> メディアプレイヤー。
 @z

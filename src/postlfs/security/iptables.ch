@@ -84,8 +84,8 @@
       (required for Berkely Packet Filter support),
       <ulink url="https://netfilter.org/projects/libnfnetlink/">libnfnetlink</ulink>
       (required for connlabel support),
-      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>, and 
-      (required for connlabel support)
+      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>
+      (required for connlabel support), and 
       <ulink url="https://netfilter.org/projects/nftables/">nftables</ulink>
     </para>
 @y
@@ -97,8 +97,8 @@
       (required for Berkely Packet Filter support),
       <ulink url="https://netfilter.org/projects/libnfnetlink/">libnfnetlink</ulink>
       (required for connlabel support),
-      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>, and 
-      (required for connlabel support)
+      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>
+      (required for connlabel support), and 
       <ulink url="https://netfilter.org/projects/nftables/">nftables</ulink>
     </para>
 @z

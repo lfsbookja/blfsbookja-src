@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY doxygen-buildsize     "157 MB (with tests)">
-  <!ENTITY doxygen-time          "1.3 SBU (using parallelism=4; with tests)">
+  <!ENTITY doxygen-buildsize     "177 MB (with tests)">
+  <!ENTITY doxygen-time          "1.1 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY doxygen-buildsize     "157 MB (with tests)">
-  <!ENTITY doxygen-time          "1.3 SBU (using parallelism=4; with tests)">
+  <!ENTITY doxygen-buildsize     "177 MB (with tests)">
+  <!ENTITY doxygen-time          "1.1 SBU (using parallelism=4; with tests)">
 @z
 
 @x
@@ -137,8 +137,9 @@
       <!-- Can someone check this? With LLVM7, it fails to build. -->
       <xref linkend="python2"/>,
       <xref linkend="qt5"/> (for doxywizard),
-      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
-      <xref linkend="xapian"/> (for doxyindexer)
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
+      <xref linkend="xapian"/> (for doxyindexer), and
+      <ulink url="https://javacc.github.io/javacc/">javacc</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
@@ -150,8 +151,9 @@
       <!-- Can someone check this? With LLVM7, it fails to build. -->
       <xref linkend="python2"/>,
       <xref linkend="qt5"/> (for doxywizard),
-      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
-      <xref linkend="xapian"/> (for doxyindexer)
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
+      <xref linkend="xapian"/> (for doxyindexer),
+      <ulink url="https://javacc.github.io/javacc/">javacc</ulink>
     </para>
 @z
 

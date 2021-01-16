@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libsoup-buildsize     "25 MB (with tests)"> 
+  <!ENTITY libsoup-buildsize     "24 MB (with tests)"> 
   <!ENTITY libsoup-time          "0.3 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libsoup-buildsize     "25 MB (テスト込み)">
+  <!ENTITY libsoup-buildsize     "24 MB (テスト込み)">
   <!ENTITY libsoup-time          "0.3 SBU (parallelism=4 利用、テスト込み)">
 @z
 
@@ -91,7 +91,7 @@
     <para role="required">
       <xref linkend="glib-networking"/>,
       <xref linkend="libpsl"/>,
-      <xref linkend="libxml2"/> and
+      <xref linkend="libxml2"/>, and
       <xref linkend="sqlite"/>
     </para>
 @y
@@ -107,13 +107,15 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="sysprof"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="sysprof"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -127,8 +129,8 @@
       <xref linkend="mitkrb"/> (required to run the test suite),
       <xref linkend="gtk-doc"/>,
       <xref linkend="php"/> compiled with XMLRPC-EPI <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
-      support (only used for the XMLRPC regression tests) and
-      <xref linkend="samba"/> (ntlm_auth is required to run the test suite).
+      support (only used for the XMLRPC regression tests), and
+      <xref linkend="samba"/> (ntlm_auth is required to run the test suite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -182,7 +184,7 @@
 @z
 
 @x
-      <option>-Dvapi=disabled</option>: use this if you have not installed
+      <option>-Dvapi=disabled</option>: Use this if you have not installed
       <application>Vala</application>, e.g. because you are not building 
       <application>GNOME</application>.
 @y

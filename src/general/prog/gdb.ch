@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "590 MB (add 733 MB for docs; add 27 MB for tests)">
-  <!ENTITY gdb-time          "2.0 SBU (Using parallelism=4; add 15 SBU for tests; add 0.5 SBU for docs)">
+  <!ENTITY gdb-buildsize     "761 MB (add 750 MB for docs; add 633 MB for tests)">
+  <!ENTITY gdb-time          "1.7 SBU (Using parallelism=4; add 30 SBU for tests; add 0.5 SBU for docs)">
 @y
-  <!ENTITY gdb-buildsize     "590 MB （ドキュメント生成時はさらに 733 MB; テスト実施時はさらに 27 MB）">
-  <!ENTITY gdb-time          "2.0 SBU （parallelism=4; さらにテスト実施時 15 SBU, ドキュメント生成時 0.5 SBU）">
+  <!ENTITY gdb-buildsize     "761 MB （ドキュメント生成時はさらに 750 MB; テスト実施時はさらに 633 MB）">
+  <!ENTITY gdb-time          "1.7 SBU （parallelism=4; さらにテスト実施時 30 SBU, ドキュメント生成時 0.5 SBU）">
 @z
 
 @x
@@ -93,7 +93,7 @@
     <para role="optional">
       <!-- <xref linkend="dejagnu"/> (required for tests), -->
       <xref linkend="doxygen"/>,
-      <xref linkend="gcc"/> (ada and gfortran are used for tests),
+      <xref linkend="gcc"/> (ada, gfortran, and go are used for tests),
       <xref linkend="guile"/>,
       <xref linkend="python2"/>,
       <xref linkend="rust"/> (used for some tests),
@@ -106,11 +106,11 @@
     <para role="optional">
       <!-- <xref linkend="dejagnu"/> (required for tests), -->
       <xref linkend="doxygen"/>,
-      <xref linkend="gcc"/> (ada and gfortran are used for tests),
+      <xref linkend="gcc"/> (ada, gfortran, and go are used for tests),
       <xref linkend="guile"/>,
       <xref linkend="python2"/>,
       <xref linkend="rust"/> (used for some tests),
-      <xref linkend="valgrind"/>,
+      <xref linkend="valgrind"/>, and
       <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
       （実行時での依存、テスト内にて利用するものもあり）
     </para>
@@ -168,7 +168,8 @@
           gcore, gdb and gdbserver
         </seg>
         <seg>
-          libinproctrace.so
+          <!--libinproctrace.so-->
+          None
         </seg>
         <seg>
           /usr/{include,share}/gdb and /usr/share/doc/gdb-&gdb-version;
@@ -178,7 +179,8 @@
           gcore, gdb, gdbserver
         </seg>
         <seg>
-          libinproctrace.so
+          <!--libinproctrace.so-->
+          None
         </seg>
         <seg>
           /usr/{include,share}/gdb, /usr/share/doc/gdb-&gdb-version;

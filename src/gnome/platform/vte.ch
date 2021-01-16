@@ -163,11 +163,27 @@
 @z
 
 @x
+      <command>rm -v /etc/profile.d/vte.*</command>: This command removes two
+      files installed in /etc/profile.d that have no use on a LFS system.
+@y
+      <command>rm -v /etc/profile.d/vte.*</command>: This command removes two
+      files installed in /etc/profile.d that have no use on a LFS system.
+@z
+
+@x
+      <parameter>-Dfribidi=false</parameter>: Omit this switch if want to enable 
+      bidirectional capabilities.
+@y
+      <parameter>-Dfribidi=false</parameter>: Omit this switch if want to enable 
+      bidirectional capabilities.
+@z
+
+@x
       <option>-Dgnutls=false</option>: Add this switch if you do not
-      want to enable GNUTLS support.
+      want to enable GnuTLS support.
 @y
       <option>-Dgnutls=false</option>: Add this switch if you do not
-      want to enable GNUTLS support.
+      want to enable GnuTLS support.
 @z
 
 @x

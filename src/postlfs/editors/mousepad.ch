@@ -21,10 +21,10 @@
 
 @x
       <application>Mousepad</application> is a simple
-      <application>GTK+ 2</application> text editor for the
+      <application>GTK+ 3</application> text editor for the
       <application>Xfce</application> desktop environment.
 @y
-      <application>Mousepad</application> は <application>GTK+ 2</application> による簡易なテキストエディターであり、<application>Xfce</application> デスクトップ環境において用いられています。
+      <application>Mousepad</application> は <application>GTK+ 3</application> による簡易なテキストエディターであり、<application>Xfce</application> デスクトップ環境において用いられています。
 @z
 
 @x
@@ -78,16 +78,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtksourceview"/> (optionally, it can be built with
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/gtksourceview/2.10/">gtksourceview-2</ulink>) and 
+      <xref linkend="gtksourceview"/> and 
       <xref linkend="xfconf"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtksourceview"/> (任意として
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/gtksourceview/2.10/">gtksourceview-2</ulink>
-      を使ってビルドすることも可),
+      <xref linkend="gtksourceview"/>,
       <xref linkend="xfconf"/>
     </para>
 @z
@@ -196,7 +193,7 @@
 @z
 
 @x mousepad
-            is a simple <application>GTK+ 2</application> text editor.
+            is a simple <application>GTK+ 3</application> text editor.
 @y
-            <application>GTK+ 2</application> による簡易なテキストエディター。
+            <application>GTK+ 3</application> による簡易なテキストエディター。
 @z

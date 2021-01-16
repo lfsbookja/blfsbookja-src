@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY sudo-buildsize     "39 MB (with tests)">
-  <!ENTITY sudo-time          "0.4 SBU (with tests)">
+  <!ENTITY sudo-buildsize     "60 MB (add 9 MB for tests)">
+  <!ENTITY sudo-time          "0.4 SBU (add 0.1 SBU for tests)">
 @y
-  <!ENTITY sudo-buildsize     "39 MB (テスト込み)">
-  <!ENTITY sudo-time          "0.4 SBU (テスト込み)">
+  <!ENTITY sudo-buildsize     "60 MB (テスト実行時はさらに 9 MB)">
+  <!ENTITY sudo-time          "0.4 SBU (テスト実行時はさらに 0.1 SBU)">
 @z
 
 @x
@@ -97,7 +97,6 @@
       <ulink url="http://www.openafs.org/">AFS</ulink>,
       <ulink url="http://www.fwtk.org/">FWTK</ulink>, and
       <ulink url="&sourceforge-dl;/opie/">Opie</ulink>
-<!--  <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -108,9 +107,8 @@
       <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command),
       <ulink url="http://www.openafs.org/">AFS</ulink>,
-      <ulink url="http://www.fwtk.org/">FWTK</ulink>,
+      <ulink url="http://www.fwtk.org/">FWTK</ulink>, and
       <ulink url="&sourceforge-dl;/opie/">Opie</ulink>
-<!--  <ulink url="http://www.rsa.com/node.aspx?id=1156">SecurID</ulink>-->
     </para>
 @z
 
@@ -135,8 +133,7 @@
 @x
       To test the results, issue: <command>env LC_ALL=C make check 2&gt;&amp;1
       | tee ../make-check.log</command>. Check the results with <command>grep
-      failed ../make-check.log</command>. <!--One test, test3, is known to fail
-      if the tests are run as the root user.-->
+      failed ../make-check.log</command>. 
 @y
       ビルド結果をテストする場合は <command>env LC_ALL=C make check 2&gt;&amp;1
       | tee ../make-check.log</command> を実行します。
@@ -248,14 +245,14 @@
 @z
 
 @x
-        A couple of common configuration chanes are to set the path for the
+        A couple of common configuration changes are to set the path for the
         super user and to allow members of the wheel group to execute all
         commands after providing their own credientials. Use the following
         commands to create the <filename>/etc/sudoers.d/sudo</filename>
         configuration file as the
         <systemitem class="username">root</systemitem> user:
 @y
-        A couple of common configuration chanes are to set the path for the
+        A couple of common configuration changes are to set the path for the
         super user and to allow members of the wheel group to execute all
         commands after providing their own credientials. Use the following
         commands to create the <filename>/etc/sudoers.d/sudo</filename>
@@ -309,31 +306,41 @@
 
 @x
         <seg>
-          cvtsudoers, sudo, sudoedit (symlink), sudoreplay, and visudo
+          cvtsudoers, sudo, sudo_logsrvd, sudo_sendlog,
+          sudoedit (symlink), sudoreplay, and visudo
         </seg>
         <seg>
-          group_file.so, libsudo_util.so,
+          <!-- [pierre, September 25, 2020] except libsudo_util, the other
+          shared objects in /usr/lib/sudo look more like modules than
+          libraries. Leaving them now, and updating the list, but I think
+          they should not be listed. -->
+          audit_json.so, group_file.so, libsudo_util.so, sample_approval.so,
           sudoers.so, sudo_noexec.so, and system_group.so
         </seg>
         <seg>
           /etc/sudoers.d,
           /usr/lib/sudo,
           /usr/share/doc/sudo-&sudo-version;, and
-          /var/{lib,run}/sudo
+          /var/lib/sudo
         </seg>
 @y
         <seg>
-          cvtsudoers, sudo, sudoedit (symlink), sudoreplay, visudo
+          cvtsudoers, sudo, sudo_logsrvd, sudo_sendlog,
+          sudoedit (シンボリックリンク), sudoreplay, visudo
         </seg>
         <seg>
-          group_file.so, libsudo_util.so,
+          <!-- [pierre, September 25, 2020] except libsudo_util, the other
+          shared objects in /usr/lib/sudo look more like modules than
+          libraries. Leaving them now, and updating the list, but I think
+          they should not be listed. -->
+          audit_json.so, group_file.so, libsudo_util.so, sample_approval.so,
           sudoers.so, sudo_noexec.so, system_group.so
         </seg>
         <seg>
           /etc/sudoers.d,
           /usr/lib/sudo,
           /usr/share/doc/sudo-&sudo-version;,
-          /var/{lib,run}/sudo
+          /var/lib/sudo
         </seg>
 @z
 

@@ -299,7 +299,7 @@
         order to set up <application>OpenLDAP</application>, you'll need to
         modify either the <filename>/etc/openldap/slapd.conf</filename> 
         file (old method), or the <filename>/etc/openldap/slapd.ldif</filename>
-        file and then use <command>ldapadd</command> to create de LDAP
+        file and then use <command>ldapadd</command> to create the LDAP
         configuration database in
         <filename class="directory">/etc/openldap/slapd.d</filename>
         (recommended by the OpenLDAP documentation).
@@ -310,7 +310,7 @@
         order to set up <application>OpenLDAP</application>, you'll need to
         modify either the <filename>/etc/openldap/slapd.conf</filename> 
         file (old method), or the <filename>/etc/openldap/slapd.ldif</filename>
-        file and then use <command>ldapadd</command> to create de LDAP
+        file and then use <command>ldapadd</command> to create the LDAP
         configuration database in
         <filename class="directory">/etc/openldap/slapd.d</filename>
         (recommended by the OpenLDAP documentation).

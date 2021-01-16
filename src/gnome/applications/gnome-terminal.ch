@@ -134,27 +134,23 @@
 @z
 
 @x
-      <parameter>--disable-search-provider</parameter>: This switch disables
+      <option>--disable-search-provider</option>: This switch disables
       the <quote>search <application>gnome-shell</application></quote>
-      provider. This is necessary because 
-      <application>gnome-shell</application> is not in BLFS. Remove this if
-      you have <application>gnome-shell</application> installed.
+      provider. Use this option if you do not have gnome-shell installed.
 @y
-      <parameter>--disable-search-provider</parameter>: This switch disables
+      <option>--disable-search-provider</option>: This switch disables
       the <quote>search <application>gnome-shell</application></quote>
-      provider. This is necessary because 
-      <application>gnome-shell</application> is not in BLFS. Remove this if
-      you have <application>gnome-shell</application> installed.
+      provider. Use this option if you do not have gnome-shell installed.
 @z
 
 @x
-      <parameter>--without-nautilus-extension</parameter>: This switch disables
-      the a dependency on the <application>nautilus</application> file
-      manager.
+      <option>--without-nautilus-extension</option>: This switch disables
+      a dependency on the <application>nautilus</application> file
+      manager. Use this option if you do not have Nautilus installed.
 @y
-      <parameter>--without-nautilus-extension</parameter>: This switch disables
-      the a dependency on the <application>nautilus</application> file
-      manager.
+      <option>--without-nautilus-extension</option>: This switch disables
+      a dependency on the <application>nautilus</application> file
+      manager. Use this option if you do not have Nautilus installed.
 @z
 
 @x

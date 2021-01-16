@@ -3,11 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -32,14 +31,6 @@
       of the PulseAudio sound system and to an auto mixer tool like
       pavucontrol. It can optionally handle multimedia keys for controlling the
       audio volume. 
-@z
-
-@x
-    <note><para>This package extracts to a <emphasis>very non-standard</emphasis> 
-    directory.</para></note>
-@y
-    <note><para>This package extracts to a <emphasis>very non-standard</emphasis> 
-    directory.</para></note>
 @z
 
 @x
@@ -94,20 +85,16 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="keybinder3"/>,
       <xref linkend="libnotify"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="xfce4-dev-tools"/>, and
+      <xref linkend="pulseaudio"/>, and
       <xref linkend="xfce4-panel"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="keybinder3"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="pulseaudio"/>,
-      <xref linkend="xfce4-dev-tools"/>,
       <xref linkend="xfce4-panel"/>
     </para>
 @z
@@ -115,11 +102,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="keybinder3"/> and 
       <xref linkend="pavucontrol"/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="keybinder3"/>,
       <xref linkend="pavucontrol"/> (実行時)
     </para>
 @z

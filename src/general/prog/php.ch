@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "474 MB (add 2 MB for tests, add 117 MB for documentation)">
-  <!ENTITY php-time          "1.7 SBU (with parallelism=4; add 1.7 SBU for tests)">
+  <!ENTITY php-buildsize     "694 MB (add 7 MB for tests, add 103 MB for documentation)">
+  <!ENTITY php-time          "1.8 SBU (with parallelism=4; add 7.9 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "474 MB（テスト実施時はさらに 2 MB、ドキュメント生成時は 117 MB）">
-  <!ENTITY php-time          "1.7 SBU（parallelism=4 利用時、テスト実施時はさらに 1.7 SBU）">
+  <!ENTITY php-buildsize     "694 MB（テスト実施時はさらに 7 MB、ドキュメント生成時は 103 MB）">
+  <!ENTITY php-time          "1.8 SBU（parallelism=4 利用時、テスト実施時はさらに 7.9 SBU）">
 @z
 
 @x
@@ -160,11 +160,12 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
+      <xref linkend="libwebp"/>,
       <xref linkend="x-window-system"/>,
       <!--<ulink url="http://www.fastio.com/">ClibPDF</ulink>, - site asks for username/password-->
       <ulink url="http://www.adobe.com/devnet/acrobat/fdftoolkit.html">FDF Toolkit</ulink>,
       <ulink url="https://github.com/libgd/libgd">GD</ulink>, and
-      <ulink url="http://fossies.org/linux/misc/old/t1lib-5.1.2.tar.gz/">t1lib</ulink>
+      <ulink url="https://www.t1lib.org/">t1lib</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">任意のグラフィックユーティリティーおよびライブラリ</bridgehead>
@@ -174,11 +175,12 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
+      <xref linkend="libwebp"/>,
       <xref linkend="x-window-system"/>,
       <!--<ulink url="http://www.fastio.com/">ClibPDF</ulink>, - site asks for username/password-->
       <ulink url="http://www.adobe.com/devnet/acrobat/fdftoolkit.html">FDF Toolkit</ulink>,
-      <ulink url="https://github.com/libgd/libgd">GD</ulink>, and
-      <ulink url="http://fossies.org/linux/misc/old/t1lib-5.1.2.tar.gz/">t1lib</ulink>
+      <ulink url="https://github.com/libgd/libgd">GD</ulink>,
+      <ulink url="https://www.t1lib.org/">t1lib</ulink>
     </para>
 @z
 
@@ -344,13 +346,13 @@
 
 @x
       To test the results, issue: <command>make test</command>. Several
-      tests (out of over 11900) may fail, in which case you are asked 
+      tests (out of over 12400) may fail, in which case you are asked 
       whether you want to send the report to the PHP developers. If you 
       want to automate the test, you may prefix the command with 
       <command>yes "n" | </command>.
 @y
       To test the results, issue: <command>make test</command>. Several
-      tests (out of over 11900) may fail, in which case you are asked 
+      tests (out of over 12400) may fail, in which case you are asked 
       whether you want to send the report to the PHP developers. If you 
       want to automate the test, you may prefix the command with 
       <command>yes "n" | </command>.
@@ -624,22 +626,24 @@
 @z
 
 @x
-        <seg>pear, peardev, pecl, phar (symlink), phar.phar, php,
+        <seg><!-- not built anymore pear, peardev, pecl,-->
+        phar (symlink), phar.phar, php,
         php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
 
         <seg>dba.{so,a} and opcache.{so,a} in
-        /usr/lib/php/extensions/no-debug-non-zts-20190902</seg>
+        /usr/lib/php/extensions/no-debug-non-zts-20200930</seg>
 
-        <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php and
+        <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php, and
         /usr/share/doc/php-&php-version;</seg>
 @y
-        <seg>pear, peardev, pecl, phar (symlink), phar.phar, php,
+        <seg><!-- not built anymore pear, peardev, pecl,-->
+        phar (symlink), phar.phar, php,
         php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
 
         <seg>dba.{so,a} and opcache.{so,a} in
-        /usr/lib/php/extensions/no-debug-non-zts-20190902</seg>
+        /usr/lib/php/extensions/no-debug-non-zts-20200930</seg>
 
-        <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php and
+        <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php, and
         /usr/share/doc/php-&php-version;</seg>
 @z
 

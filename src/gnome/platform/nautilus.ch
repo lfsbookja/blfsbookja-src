@@ -83,7 +83,7 @@
       <xref linkend="gnome-desktop"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libseccomp"/>, and
-      <xref linkend="tracker-miners"/>
+      <xref linkend="tracker3-miners"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -94,7 +94,7 @@
       <xref linkend="gnome-desktop"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libseccomp"/>,
-      <xref linkend="tracker-miners"/>
+      <xref linkend="tracker3-miners"/>
     </para>
 @z
 
@@ -224,7 +224,7 @@
           libnautilus-extension.so
         </seg>
         <seg>
-          /usr/{include,lib}/nautilus,
+          /usr/{include,lib,share}/nautilus,
           /usr/share/gnome-shell/search-providers, and
           /usr/share/gtk-doc/html/libnautilus-extension (optional)
         </seg>
@@ -236,9 +236,9 @@
           libnautilus-extension.so
         </seg>
         <seg>
-          /usr/{include,lib}/nautilus,
+          /usr/{include,lib,share}/nautilus,
           /usr/share/gnome-shell/search-providers,
-          /usr/share/gtk-doc/html/libnautilus-extension (optional)
+          /usr/share/gtk-doc/html/libnautilus-extension (任意)
         </seg>
 @z
 

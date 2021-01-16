@@ -163,25 +163,25 @@
 
 @x
         <seg>
-          gwenview
+          gwenview and gwenview_importer
         </seg>
         <seg>
           libgwenviewlib.so and
           gvpart.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/{kxmlgui5/gvpart,kxmlgui5/org.kde.gwenview,gwenview,/doc/HTML/en/gwenview}
+          $KF5_PREFIX/share/{kxmlgui5/gvpart,gwenview,doc/HTML/*/gwenview}
         </seg>
 @y
         <seg>
-          gwenview
+          gwenview, gwenview_importer
         </seg>
         <seg>
           libgwenviewlib.so,
           gvpart.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/{kxmlgui5/gvpart,kxmlgui5/org.kde.gwenview,gwenview,/doc/HTML/en/gwenview}
+          $KF5_PREFIX/share/{kxmlgui5/gvpart,gwenview,doc/HTML/*/gwenview}
         </seg>
 @z
 

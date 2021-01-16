@@ -21,11 +21,11 @@
 
 @x
       The <application>Qpdf</application> package contains command-line
-      programs and library that do structural, content-preserving
+      programs and a library that does structural, content-preserving
       transformations on PDF files.
 @y
-      <application>Qpdf</application> パッケージはpackage contains command-line
-      programs and library that do structural, content-preserving
+      The <application>Qpdf</application> package contains command-line
+      programs and a library that does structural, content-preserving
       transformations on PDF files.
 @z
 
@@ -92,13 +92,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="fop"/> and
+      <xref linkend="fop"/>,
+      <xref linkend="gnutls"/>, and
       <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="fop"/>,
+      <xref linkend="gnutls"/>,
       <xref linkend="libxslt"/>
     </para>
 @z

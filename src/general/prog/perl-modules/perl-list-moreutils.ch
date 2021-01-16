@@ -52,7 +52,7 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="perl-exporter-tiny"/>,
+        <xref linkend="perl-exporter-tiny"/> and
         <xref linkend="perl-list-moreutils-xs"/>
       </para>
 @y

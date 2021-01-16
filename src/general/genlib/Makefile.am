@@ -21,14 +21,15 @@ CHANGE_FILES = \
 	genlib.ch \
 	glib2.ch \
 	glibmm.ch \
-	gmime.ch \
+	gmime3.ch \
 	gobject-introspection.ch \
         grantlee.ch \
 	gsl.ch \
 	gspell.ch \
 	icu.ch \
+	inih.ch \
 	jansson.ch \
-	js68.ch \
+	js78.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \
@@ -55,9 +56,11 @@ CHANGE_FILES = \
 	libmbim.ch \
 	libnfsidmap.ch \
 	libpaper.ch \
+	libportal.ch \
 	libqmi.ch \
 	libseccomp.ch \
 	libsigc++.ch \
+	libsigc3.ch \
 	libsigsegv.ch \
 	libssh2.ch \
 	libstatgrab.ch \

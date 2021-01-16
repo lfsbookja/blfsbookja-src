@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "233 MB (add 36 MB for tests)">
-  <!ENTITY postgresql-time          "0.6 SBU (with parallelism=4, add 0.1 SBU for tests)">
+  <!ENTITY postgresql-buildsize     "239 MB (add 38 MB for tests)">
+  <!ENTITY postgresql-time          "0.7 SBU (with parallelism=4, add 0.1 SBU for tests)">
 @y
-  <!ENTITY postgresql-buildsize     "233 MB （テスト実施時はさらに 36 MB）">
-  <!ENTITY postgresql-time          "0.6 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
+  <!ENTITY postgresql-buildsize     "239 MB （テスト実施時はさらに 38 MB）">
+  <!ENTITY postgresql-time          "0.7 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
 @z
 
 @x
@@ -394,11 +394,12 @@
 
 @x
         <seg>
-          clusterdb, createdb, createuser, dropdb,
-          dropuser, ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_checksums,
+          clusterdb, createdb, createuser, dropdb, dropuser,
+          ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_checksums,
           pg_config, pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
           pg_receivewal, pg_recvlogical, pg_resetwal, pg_restore, pg_rewind,
-          pg_test_fsync, pg_test_timing, pg_upgrade, pg_waldump, pgbench,
+          pg_test_fsync, pg_test_timing, pg_upgrade, pg_verify_backup,
+          pg_waldump, pgbench,
           postgres, postmaster (deprecated), psql, reindexdb, vacuumdb,
           optionally, if Tcl support has been built, pltcl_delmod,
           pltcl_listmod, pltcl_loadmod, and optionally (in contrib/) oid2name,
@@ -408,7 +409,7 @@
         <seg>
           libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a, 
           libpgcommon_shlib.a, libpgfeutils.a, libpgport.a, libpgport_shlib.a,
-          libpgtypes.{so,a}, libpq.{so,a}, various charset modules, and
+          libpgtypes.{so,a}, libpq.{so,a}, various charset modules and
           optionally programming language modules under /usr/lib/postgresql
         </seg>
         <seg>
@@ -419,11 +420,12 @@
         </seg>
 @y
         <seg>
-          clusterdb, createdb, createuser, dropdb,
-          dropuser, ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_checksums,
+          clusterdb, createdb, createuser, dropdb, dropuser,
+          ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_checksums,
           pg_config, pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
           pg_receivewal, pg_recvlogical, pg_resetwal, pg_restore, pg_rewind,
-          pg_test_fsync, pg_test_timing, pg_upgrade, pg_waldump, pgbench,
+          pg_test_fsync, pg_test_timing, pg_upgrade, pg_verify_backup,
+          pg_waldump, pgbench,
           postgres, postmaster (deprecated), psql, reindexdb, vacuumdb,
           optionally, if Tcl support has been built, pltcl_delmod,
           pltcl_listmod, pltcl_loadmod, and optionally (in contrib/) oid2name,
@@ -433,7 +435,7 @@
         <seg>
           libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a, 
           libpgcommon_shlib.a, libpgfeutils.a, libpgport.a, libpgport_shlib.a,
-          libpgtypes.{so,a}, libpq.{so,a}, various charset modules, and
+          libpgtypes.{so,a}, libpq.{so,a}, various charset modules and
           optionally programming language modules under /usr/lib/postgresql
         </seg>
         <seg>

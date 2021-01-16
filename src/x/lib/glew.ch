@@ -172,23 +172,23 @@
 
 @x
         <seg>
-          glewinfo, visualinfo.
+          glewinfo and visualinfo
         </seg>
         <seg>
-          libGLEW.so.
+          libGLEW.so
         </seg>
         <seg>
-          /usr/include/GL.
+          /usr/include/GL
         </seg>
 @y
         <seg>
-          glewinfo, visualinfo.
+          glewinfo, visualinfo
         </seg>
         <seg>
-          libGLEW.so.
+          libGLEW.so
         </seg>
         <seg>
-          /usr/include/GL.
+          /usr/include/GL
         </seg>
 @z
 

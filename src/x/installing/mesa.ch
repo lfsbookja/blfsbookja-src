@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "566 MB (with demos and docs), add 1.5 MB for tests">
-  <!ENTITY mesa-time          "2.6 SBU (with parallelism=4, demos, and docs), add 0.1 SBU for tests">
+  <!ENTITY mesa-buildsize     "481 MB (with docs), add 317 MB for tests">
+  <!ENTITY mesa-time          "2.5 SBU (with parallelism=4 and docs). Add 0.5 SBU for tests">
 @y
-  <!ENTITY mesa-buildsize     "566 MB (デモおよびドキュメント込み)、テスト実施時はさらに 1.5 MB">
-  <!ENTITY mesa-time          "2.6 SBU (parallelism=4, デモおよびドキュメント込み)、テスト実施時はさらに 0.1 SBU">
+  <!ENTITY mesa-buildsize     "481 MB (ドキュメント込み)、テスト実施時はさらに 317 MB">
+  <!ENTITY mesa-time          "2.5 SBU (parallelism=4, ドキュメント込み)、テスト実施時はさらに 0.5 SBU">
 @z
 
 @x
@@ -92,15 +92,13 @@
 
 @x
           Recommended patch:
-          <ulink
-            url="&patch-root;/mesa-&mesa-version;-add_xdemos-1.patch"/>
+          <ulink url="&patch-root;/mesa-&mesa-version;-add_xdemos-1.patch"/>
           (installs 2 demo programs for testing Mesa - not needed if you
           install the <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">
           mesa-demos</ulink> package)
 @y
           推奨パッチ:
-          <ulink
-            url="&patch-root;/mesa-&mesa-version;-add_xdemos-1.patch"/>
+          <ulink url="&patch-root;/mesa-&mesa-version;-add_xdemos-1.patch"/>
           (installs 2 demo programs for testing Mesa - not needed if you
           install the <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">
           mesa-demos</ulink> package)
@@ -264,12 +262,12 @@
 
 @x
       If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>. Four tests in the glcpp test suite and
-      two tests in the llvmpipe suite are known to fail.
+      <command>ninja test</command>. 
+      Two tests in the llvmpipe suite are known to fail.
 @y
       If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>. Four tests in the glcpp test suite and
-      two tests in the llvmpipe suite are known to fail.
+      <command>ninja test</command>. 
+      Two tests in the llvmpipe suite are known to fail.
 @z
 
 @x
@@ -322,11 +320,13 @@
 @z
 
 @x
-      <option>-Dgallium-nine=true</option>: Setting this option to true will
-      provide support for (MS Windows) games designed for DX9.
+      <parameter>-Dgallium-nine=false</parameter>: Prevents building
+      support for (MS Windows) games designed for DX9. Set it to true if
+      this support is desired.
 @y
-      <option>-Dgallium-nine=true</option>: Setting this option to true will
-      provide support for (MS Windows) games designed for DX9.
+      <parameter>-Dgallium-nine=false</parameter>: Prevents building
+      support for (MS Windows) games designed for DX9. Set it to true if
+      this support is desired.
 @z
 
 @x
@@ -365,11 +365,13 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Libraries</segtitle><!-- in /usr/lib -->
+      <segtitle>Installed Drivers</segtitle><!-- in /usr/lib/<subdir> -->
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>Installed Drivers</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -378,26 +380,6 @@
           glxgears and glxinfo
         </seg>
         <seg>
-          <!-- Begin DRI drivers : this is the full set from auto -->
-          d3dadapter9.so, <!-- For Windows games. This is DirectX's Direct3D -->
-          i915_dri.so,
-          i965_dri.so,
-          iris_dri.so,
-          kms_swrast_dri.so,
-          nouveau_dri.so,
-          nouveau_drv_video.so,
-          nouveau_vieux_dri.so,
-          r200_dri.so,
-          r300_dri.so,
-          r600_dri.so,
-          r600_drv_video.so,
-          radeon_dri.so,
-          radeonsi_dri.so,
-          radeonsi_drv_video.so,
-          swrast_dri.so,
-          virtio_gpu_dri.so,
-          vmwgfx_dri.so,
-          <!-- End DRI Drivers -->
           libEGL.so,
           libGL.so,
           libGLESv1_CM.so,
@@ -409,18 +391,44 @@
           libglapi.so,
           <!-- Begin Vulkan drivers -->
           libvulkan_intel.so,
-          libvulkan_radeon.so,
+          libvulkan_lvp.so,
+          libvulkan_radeon.so, and
           <!-- End Vulkan drivers -->
           libxatracker.so,
+        </seg>
+        <seg>
+          <!-- Begin DRI drivers : this is the full set from auto -->
+          d3dadapter9.so (optional), <!-- For Windows games. This is DirectX's
+                                          Direct3D -->
+          i915_dri.so,
+          i965_dri.so,
+          iris_dri.so,
+          kms_swrast_dri.so,
+          nouveau_dri.so,
+          nouveau_drv_video.so,
+          nouveau_vieux_dri.so,
+          r200_dri.so (optional),
+          r300_dri.so (optional),
+          r600_dri.so,
+          r600_drv_video.so,
+          radeon_dri.so,
+          radeonsi_dri.so,
+          radeonsi_drv_video.so,
+          swrast_dri.so,
+          virtio_gpu_dri.so,
+          vmwgfx_dri.so,
+          <!-- End DRI Drivers -->
           <!-- Begin VDPAU drivers -->
           libvdpau_nouveau.so,
-          libvdpau_r300.so,
+          libvdpau_r300.so (optional),
           libvdpau_r600.so, and
           libvdpau_radeonsi.so
           <!-- End VDPAU drivers -->
         </seg>
         <seg>
-          $XORG_PREFIX/{include/{d3dapater,EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{d3d,dri,vdpau}}
+          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{dri,vdpau}},
+          $XORG_PREFIX/include/d3adapter (optional),
+          $XORG_PREFIX/lib/d3d (optional),
           $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
           particularly browsers and games)
           $XORG_PREFIX/share/vulkan/icd.d,
@@ -429,29 +437,9 @@
         </seg>
 @y
         <seg>
-          glxgears, glxinfo
+          glxgears and glxinfo
         </seg>
         <seg>
-          <!-- Begin DRI drivers : this is the full set from auto -->
-          d3dadapter9.so, <!-- For Windows games. This is DirectX's Direct3D -->
-          i915_dri.so,
-          i965_dri.so,
-          iris_dri.so,
-          kms_swrast_dri.so,
-          nouveau_dri.so,
-          nouveau_drv_video.so,
-          nouveau_vieux_dri.so,
-          r200_dri.so,
-          r300_dri.so,
-          r600_dri.so,
-          r600_drv_video.so,
-          radeon_dri.so,
-          radeonsi_dri.so,
-          radeonsi_drv_video.so,
-          swrast_dri.so,
-          virtio_gpu_dri.so,
-          vmwgfx_dri.so,
-          <!-- End DRI Drivers -->
           libEGL.so,
           libGL.so,
           libGLESv1_CM.so,
@@ -463,18 +451,44 @@
           libglapi.so,
           <!-- Begin Vulkan drivers -->
           libvulkan_intel.so,
+          libvulkan_lvp.so,
           libvulkan_radeon.so,
           <!-- End Vulkan drivers -->
           libxatracker.so,
+        </seg>
+        <seg>
+          <!-- Begin DRI drivers : this is the full set from auto -->
+          d3dadapter9.so (optional), <!-- For Windows games. This is DirectX's
+                                          Direct3D -->
+          i915_dri.so,
+          i965_dri.so,
+          iris_dri.so,
+          kms_swrast_dri.so,
+          nouveau_dri.so,
+          nouveau_drv_video.so,
+          nouveau_vieux_dri.so,
+          r200_dri.so (optional),
+          r300_dri.so (optional),
+          r600_dri.so,
+          r600_drv_video.so,
+          radeon_dri.so,
+          radeonsi_dri.so,
+          radeonsi_drv_video.so,
+          swrast_dri.so,
+          virtio_gpu_dri.so,
+          vmwgfx_dri.so,
+          <!-- End DRI Drivers -->
           <!-- Begin VDPAU drivers -->
           libvdpau_nouveau.so,
-          libvdpau_r300.so,
+          libvdpau_r300.so (optional),
           libvdpau_r600.so,
           libvdpau_radeonsi.so
           <!-- End VDPAU drivers -->
         </seg>
         <seg>
-          $XORG_PREFIX/{include/{d3dapater,EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{d3d,dri,vdpau}}
+          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{dri,vdpau}},
+          $XORG_PREFIX/include/d3adapter (optional),
+          $XORG_PREFIX/lib/d3d (optional),
           $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
           particularly browsers and games)
           $XORG_PREFIX/share/vulkan/icd.d,

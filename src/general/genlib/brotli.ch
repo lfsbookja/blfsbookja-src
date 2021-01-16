@@ -15,13 +15,15 @@
 @z
 
 @x
-  <!ENTITY brotli-buildsize     "43 MB (add 5 MB if installing both sets of python bindings, add 9 MB for the main test and 5MB for testing the bindings)">
-  <!-- time for testing without the bindings is minimal, each set takes similar time and space -->
-  <!ENTITY brotli-time          "0.2 SBU (add 0.3 SBU for the python bindings, and 1.2 SBU if testing them)">
+  <!ENTITY brotli-buildsize     "24 MB (with python3 bindings)">
 @y
-  <!ENTITY brotli-buildsize     "43 MB (add 5 MB if installing both sets of python bindings, add 9 MB for the main test and 5MB for testing the bindings)">
-  <!-- time for testing without the bindings is minimal, each set takes similar time and space -->
-  <!ENTITY brotli-time          "0.2 SBU (add 0.3 SBU for the python bindings, and 1.2 SBU if testing them)">
+  <!ENTITY brotli-buildsize     "24 MB (python3 バイディング込み)">
+@z
+
+@x
+  <!ENTITY brotli-time          "0.4 SBU (with python3 bindings)">
+@y
+  <!ENTITY brotli-time          "0.4 SBU (python3 バイディング込み)">
 @z
 
 @x
@@ -98,7 +100,7 @@
       <xref linkend="cmake"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>
     </para>
@@ -107,13 +109,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-  <!--<xref linkend="lua"/> (to create Lua bindings) and -->
+    <!--<xref linkend="lua"/> (to create Lua bindings) and -->
       <xref linkend="python2"/> (to create python2 bindings)
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-  <!--<xref linkend="lua"/> (to create Lua bindings) and -->
+    <!--<xref linkend="lua"/> (to create Lua bindings) and -->
       <xref linkend="python2"/> (to create python2 bindings)
     </para>
 @z
@@ -121,13 +123,19 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/brotli"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/brotli"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/brotli"/>
 @z
 
 @x
     <title>Installation of Brotli</title>
 @y
     <title>Installation of Brotli</title>
+@z
+
+@x
+      At first, fix an issue in pkg-config files:
+@y
+      At first, fix an issue in pkg-config files:
 @z
 
 @x
@@ -139,9 +147,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      To test the results, issue: <command>make test</command>
 @y
-      To test the results, issue: <command>make test</command>.
+      To test the results, issue: <command>make test</command>
 @z
 
 @x
@@ -159,10 +167,14 @@
 @z
 
 @x
-      If you wish to test the bindings, go back to the top-level directory and
+      The python tests are missing most of the necessary testdata files and
+      therefore 240 of 311 tests fail.
+      If you nevertheless wish to test the bindings, go back to the top-level directory and
       issue: <command>python3 setup.py test</command>.
 @y
-      If you wish to test the bindings, go back to the top-level directory and
+      The python tests are missing most of the necessary testdata files and
+      therefore 240 of 311 tests fail.
+      If you nevertheless wish to test the bindings, go back to the top-level directory and
       issue: <command>python3 setup.py test</command>.
 @z
 
@@ -205,7 +217,9 @@
           brotli
         </seg>
         <seg>
-          libbrotlicommon{-static.a,.so}, libbrotlidec{,-static,.so} and libbrotlienc{,-static,.so}
+          libbrotlicommon{-static.a,.so}, 
+          libbrotlidec{,-static.a,.so}, and
+          libbrotlienc{,-static.a,.so}
         </seg>
         <seg>
           /usr/include/brotli
@@ -215,7 +229,9 @@
           brotli
         </seg>
         <seg>
-          libbrotlicommon{-static.a,.so}, libbrotlidec{,-static,.so}, libbrotlienc{,-static,.so}
+          libbrotlicommon{-static.a,.so}, 
+          libbrotlidec{,-static.a,.so},
+          libbrotlienc{,-static.a,.so}
         </seg>
         <seg>
           /usr/include/brotli

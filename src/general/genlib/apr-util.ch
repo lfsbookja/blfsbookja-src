@@ -155,9 +155,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      To test the results, issue: <command>make -j1 test</command>.
+      One test, testdbm, is known to fail.
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      ビルド結果をテストする場合は <command>make -j1 test</command> を実行します。
+      testdbm というテストが 1 つだけ失敗します。
 @z
 
 @x

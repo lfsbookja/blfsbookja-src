@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY samba-buildsize     "633 MB (add 341 MB for quicktest)">
-  <!ENTITY samba-time          "3.2 SBU (using parallelism=4; add 4.7 SBU for quicktest)">
+  <!ENTITY samba-buildsize     "629 MB (add 380 MB for quicktest)">
+  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 5.1 SBU for quicktest)">
 @y
-  <!ENTITY samba-buildsize     "633 MB (add 341 MB for quicktest)">
-  <!ENTITY samba-time          "3.2 SBU (using parallelism=4; add 4.7 SBU for quicktest)">
+  <!ENTITY samba-buildsize     "629 MB (add 380 MB for quicktest)">
+  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 5.1 SBU for quicktest)">
 @z
 
 @x
@@ -116,8 +116,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <phrase revision="sysv"><xref linkend="dbus"/> (for vfs_snapper, which is
+      useful on systems that support Volume Shadow Copies on Windows),</phrase>
       <xref linkend="fuse3"/>,
       <xref linkend="gpgme"/>,
+      <xref linkend="icu"/>,
       <xref linkend="libxslt"/> (for documentation),
       <xref linkend="linux-pam"/>,
       <xref linkend="perl-parse-yapp"/>,
@@ -127,8 +130,11 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <phrase revision="sysv"><xref linkend="dbus"/> (for vfs_snapper, which is
+      useful on systems that support Volume Shadow Copies on Windows),</phrase>
       <xref linkend="fuse3"/>,
       <xref linkend="gpgme"/>,
+      <xref linkend="icu"/>,
       <xref linkend="libxslt"/> (ドキュメント生成のため),
       <xref linkend="linux-pam"/>,
       <xref linkend="perl-parse-yapp"/>,
@@ -311,7 +317,7 @@
 @z
 
 @x
-      <parameter>--without-ad-dc</parameter>: Disable
+      <parameter>--without-ad-dc</parameter>: Disables
       Active Directory Domain Controller functionality. See <ulink url=
       "https://wiki.samba.org/index.php/Setup_a_Samba_Active_Directory_Domain_Controller">
       Setup a Samba Active Directory Domain Controller</ulink> for detailed
@@ -319,7 +325,7 @@
       needed for ADS support. Note that BLFS does not provide a samba bootscript
       or systemd unit for an Active Directory domain controller.
 @y
-      <parameter>--without-ad-dc</parameter>: Disable
+      <parameter>--without-ad-dc</parameter>: Disables
       Active Directory Domain Controller functionality. See <ulink url=
       "https://wiki.samba.org/index.php/Setup_a_Samba_Active_Directory_Domain_Controller">
       Setup a Samba Active Directory Domain Controller</ulink> for detailed

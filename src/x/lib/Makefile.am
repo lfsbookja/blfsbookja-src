@@ -14,6 +14,7 @@ CHANGE_FILES = \
 	atkmm.ch                \
 	cairo.ch                \
 	cairomm.ch              \
+	cairomm-1.0.ch          \
 	clutter.ch              \
 	clutter-gst.ch          \
 	clutter-gtk.ch          \
@@ -22,6 +23,7 @@ CHANGE_FILES = \
 	fltk.ch                 \
 	freeglut.ch             \
 	gdk-pixbuf.ch           \
+	gdk-pixbuf-xlib.ch      \
 	gdl.ch                  \
 	glew.ch                 \
 	goffice010.ch           \
@@ -43,7 +45,7 @@ CHANGE_FILES = \
 	libdrm.ch               \
 	libepoxy.ch             \
 	libglade.ch             \
-	libhandy.ch             \
+	libhandy1.ch            \
 	libnotify.ch            \
 	libxklavier.ch          \
 	pango.ch                \

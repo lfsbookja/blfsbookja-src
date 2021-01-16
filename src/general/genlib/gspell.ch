@@ -15,11 +15,11 @@
 @z
 
 @x
-  <!ENTITY gspell-buildsize     "12 MB (with tests)">
-  <!ENTITY gspell-time          "0.2 SBU (with tests)">
+  <!ENTITY gspell-buildsize     "13 MB (with tests)">
+  <!ENTITY gspell-time          "0.1 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY gspell-buildsize     "12 MB (テスト込み)">
-  <!ENTITY gspell-time          "0.2 SBU (テスト込み)">
+  <!ENTITY gspell-buildsize     "13 MB (テスト込み)">
+  <!ENTITY gspell-time          "0.1 SBU (parallelism=4 利用時、テスト込み)">
 @z
 
 @x
@@ -172,12 +172,12 @@
 @z
 
 @x
-        <seg>gspell-appl</seg>
+        <seg>gspell-app1</seg>
         <seg>libgspell-1.so</seg>
         <seg>/usr/include/gspell-1 and
              /usr/share/gtk-doc/html/gspell-1.0</seg>
 @y
-        <seg>gspell-appl</seg>
+        <seg>gspell-app1</seg>
         <seg>libgspell-1.so</seg>
         <seg>/usr/include/gspell-1,
              /usr/share/gtk-doc/html/gspell-1.0</seg>

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY babl-buildsize     "21 MB (with tests)">
-  <!ENTITY babl-time          "0.1 SBU (Using parallelism=4; with tests)">
+  <!ENTITY babl-buildsize     "16 MB (with tests)">
+  <!ENTITY babl-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY babl-buildsize     "21 MB (テスト込み)">
-  <!ENTITY babl-time          "0.1 SBU (parallelism=4 利用時、テスト込み)">
+  <!ENTITY babl-buildsize     "16 MB (テスト込み)">
+  <!ENTITY babl-time          "0.2 SBU (テスト込み)">
 @z
 
 @x

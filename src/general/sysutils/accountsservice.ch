@@ -186,11 +186,15 @@
 @z
 
 @x
-      <title><phrase revision="sysv">Boot Script</phrase>
-             <phrase revision="systemd">Systemd Units</phrase></title>
+    <sect3 id="accountsservice-init" revision="systemd">
+<!--      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">Systemd Units</phrase></title> -->
+      <title>Systemd Unit</title>
 @y
-      <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">&SystemdUnit;</phrase></title>
+    <sect3 id="accountsservice-init" revision="systemd">
+<!--      <title><phrase revision="sysv">Boot Script</phrase>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title> -->
+      <title>Systemd Unit</title>
 @z
 
 @x

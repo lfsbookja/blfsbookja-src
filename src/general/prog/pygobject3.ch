@@ -100,22 +100,6 @@
 @z
 
 @x
-      <bridgehead renderas="sect5">Recommended</bridgehead>
-      <para role="recommended">
-        <xref linkend="python2"/> and
-        <xref linkend="pycairo2"/>
-          (<application>Python 2</application> module)
-      </para>
-@y
-      <bridgehead renderas="sect5">&Recommended;</bridgehead>
-      <para role="recommended">
-        <xref linkend="python2"/>,
-        <xref linkend="pycairo2"/>
-          (<application>Python 2</application> モジュール)
-      </para>
-@z
-
-@x
       <bridgehead renderas="sect5">Optional (for the tests)</bridgehead>
       <para role="optional">
         <ulink url="https://pypi.python.org/pypi/pep8">pep8</ulink>,
@@ -232,12 +216,12 @@
             None
            </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/gi/_gi{,_cairo}.so and/or
+            <!--/usr/lib/python&python2-majorver;/site-packages/gi/_gi{,_cairo}.so and/or-->
             /usr/lib/python&python3-majorver;/site-packages/gi/_gi{,_cairo}.&python3-lib-suffix;.so
            </seg>
           <seg>
-            /usr/include/pygobject-3.0, and
-            /usr/lib/python&python2-majorver;/site-packages/{gi,pygtkcompat} and/or
+            /usr/include/pygobject-3.0 and
+             <!--/usr/lib/python&python2-majorver;/site-packages/{gi,pygtkcompat} and/or-->
             /usr/lib/python&python3-majorver;/site-packages/{gi,pygtkcompat}
           </seg>
 @y
@@ -245,12 +229,12 @@
             &None;
            </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/gi/_gi{,_cairo}.so または
+            <!--/usr/lib/python&python2-majorver;/site-packages/gi/_gi{,_cairo}.so and/or-->
             /usr/lib/python&python3-majorver;/site-packages/gi/_gi{,_cairo}.&python3-lib-suffix;.so
            </seg>
           <seg>
             /usr/include/pygobject-3.0,
-            /usr/lib/python&python2-majorver;/site-packages/{gi,pygtkcompat} または
+             <!--/usr/lib/python&python2-majorver;/site-packages/{gi,pygtkcompat} and/or-->
             /usr/lib/python&python3-majorver;/site-packages/{gi,pygtkcompat}
           </seg>
 @z

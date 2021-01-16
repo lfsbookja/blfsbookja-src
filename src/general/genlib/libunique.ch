@@ -89,26 +89,28 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/>
+      <xref linkend="gtk2"/>, also
+      <xref linkend="gtk-doc"/> (for autoreconf)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/>
+      <xref linkend="gtk2"/>,
+      <xref linkend="gtk-doc"/> (autoreconf のため)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/> and
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gobject-introspection"/> <!--and
+      <xref linkend="gtk-doc"/>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gobject-introspection"/> <!--and
+      <xref linkend="gtk-doc"/>-->
     </para>
 @z
 

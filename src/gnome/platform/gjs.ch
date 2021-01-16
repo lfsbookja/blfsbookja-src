@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gjs-buildsize     "65 MB (with tests)">
-  <!ENTITY gjs-time          "0.2 SBU (with tests)">
+  <!ENTITY gjs-buildsize     "82 MB (with tests)">
+  <!ENTITY gjs-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY gjs-buildsize     "65 MB (テスト込み)">
-  <!ENTITY gjs-time          "0.2 SBU (テスト込み)">
+  <!ENTITY gjs-buildsize     "82 MB (テスト込み)">
+  <!ENTITY gjs-time          "0.8 SBU (テスト込み)">
 @z
 
 @x
@@ -88,7 +88,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="gobject-introspection"/>, and
-      <xref linkend="js68"/>
+      <xref linkend="js78"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -96,7 +96,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="js68"/>
+      <xref linkend="js78"/>
     </para>
 @z
 
@@ -115,19 +115,21 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="sysprof"/>,
       <xref linkend="valgrind"/> (for tests),
       <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
-      <ulink url="&gnome-download-http;/sysprof/">Sysprof</ulink>, and
+      <ulink url="https://wiki.gnome.org/Projects/GTK/Roadmap/GTK4">GTK+-4</ulink>,
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>, and
       <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="valgrind"/> (テスト時),
+      <xref linkend="sysprof"/>,
+      <xref linkend="valgrind"/> (テストのため),
       <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
+      <ulink url="https://wiki.gnome.org/Projects/GTK/Roadmap/GTK4">GTK+-4</ulink>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
-      <ulink url="&gnome-download-http;/sysprof/">Sysprof</ulink>,
       <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
     </para>
 @z
@@ -154,18 +156,15 @@
 @x
       To test the results, issue: <command>ninja test</command>. The
       <application>GTK</application> and <application>Cairo</application>
-      tests will fail if not running in an Xorg session.
-<!-- All 53 tests passed for me with gjs-1.64.4
-      One test,
-      <filename>gjs: Scripts/CommandLine</filename>, is known to fail.
-      On some systems, up to six tests may fail with an error. -->
+      tests will fail if not running in an Xorg session. <!--Additionally, four
+      tests are currently known to fail:
+      <filename>gjs:C / API tests</filename>,
+      <filename>gjs:JS / GIMarshalling</filename>,
+      <filename>gjs:JS / Regress</filename>, and
+      <filename>gjs:JS / Gtk3</filename>.-->
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       Xorg セッション内でテスト実行しないと <application>GTK</application> と <application>Cairo</application> のテストは失敗します。
-<!--
-      <filename>gjs: Scripts/CommandLine</filename> というテストが 1 つは失敗します。
-      システムによっては、最大 6 つのテストがエラーにより失敗します。
--->
 @z
 
 @x
@@ -200,7 +199,7 @@
         <seg>
           /usr/include/gjs-1.0,
           /usr/lib/gjs,
-          /usr/libexec/gjs,
+          /usr/libexec/installed-tests/gjs,
           /usr/share/gjs-1.0, and
           /usr/share/installed-tests/gjs
         </seg>
@@ -214,7 +213,7 @@
         <seg>
           /usr/include/gjs-1.0,
           /usr/lib/gjs,
-          /usr/libexec/gjs,
+          /usr/libexec/installed-tests/gjs,
           /usr/share/gjs-1.0,
           /usr/share/installed-tests/gjs
         </seg>

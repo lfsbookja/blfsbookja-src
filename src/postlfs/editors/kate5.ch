@@ -133,19 +133,13 @@
           kate and kwrite
         </seg>
         <seg>
-          libkdeinit5_kate.so and libkdeinit5_kwrite.so
+          Several plugins under $KF5_PREFIX/lib/plugins
         </seg>
         <seg>
           $KF5_PREFIX/lib/plugins/ktexteditor,
           $KF5_PREFIX/lib/plugins/plasma/dataengine,
           $KF5_PREFIX/share/doc/HTML/*/{kate,katepart,kwrite},
-          $KF5_PREFIX/share/{kateproject,katexmltools},
-          $KF5_PREFIX/share/kxmlgui5/{kate,katebuild,katecloseexceptplugin},
-          $KF5_PREFIX/share/kxmlgui5/{katectags,katefiletree,kategdb},
-          $KF5_PREFIX/share/kxmlgui5/{katekonsole,kateopenheaderplugin},
-          $KF5_PREFIX/share/kxmlgui5/{kateproject,katesearch,katesnippets},
-          $KF5_PREFIX/share/kxmlgui5/{katesql,katesymbolviewer,katexmltools},
-          $KF5_PREFIX/share/kxmlgui5/{kwrite,tabswitcher} and
+          $KF5_PREFIX/share/{kateproject,katexmltools}, and
           $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions
         </seg>
 @y
@@ -153,19 +147,13 @@
           kate, kwrite
         </seg>
         <seg>
-          libkdeinit5_kate.so, libkdeinit5_kwrite.so
+          Several plugins under $KF5_PREFIX/lib/plugins
         </seg>
         <seg>
           $KF5_PREFIX/lib/plugins/ktexteditor,
           $KF5_PREFIX/lib/plugins/plasma/dataengine,
           $KF5_PREFIX/share/doc/HTML/*/{kate,katepart,kwrite},
           $KF5_PREFIX/share/{kateproject,katexmltools},
-          $KF5_PREFIX/share/kxmlgui5/{kate,katebuild,katecloseexceptplugin},
-          $KF5_PREFIX/share/kxmlgui5/{katectags,katefiletree,kategdb},
-          $KF5_PREFIX/share/kxmlgui5/{katekonsole,kateopenheaderplugin},
-          $KF5_PREFIX/share/kxmlgui5/{kateproject,katesearch,katesnippets},
-          $KF5_PREFIX/share/kxmlgui5/{katesql,katesymbolviewer,katexmltools},
-          $KF5_PREFIX/share/kxmlgui5/{kwrite,tabswitcher},
           $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions
         </seg>
 @z

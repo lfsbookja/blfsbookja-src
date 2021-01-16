@@ -94,15 +94,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-<!-- gtk3 is required later by garcon -->
-      <xref linkend="gtk2"/> and
       <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-<!-- gtk3 is required later by garcon -->
-      <xref linkend="gtk2"/> and
       <xref linkend="startup-notification"/>
     </para>
 @z
@@ -111,14 +107,18 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="perl-html-parser"/>, and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libgtop"/>, 
+      <xref linkend="libgudev"/>, and
       <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="perl-html-parser"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libgtop"/>, 
+      <xref linkend="libgudev"/>,
       <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
 @z

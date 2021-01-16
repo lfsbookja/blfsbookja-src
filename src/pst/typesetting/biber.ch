@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY biber-time          "0.6 SBU including tests">
+  <!ENTITY biber-time          "0.4 SBU including tests">
 @y
-  <!ENTITY biber-time          "0.6 SBU including tests">
+  <!ENTITY biber-time          "0.4 SBU including tests">
 @z
 
 @x
@@ -77,14 +77,14 @@
 
 @x
         If you have updated to a new release of texlive-source, biber and its
-        perl dependencies are still in present in <filename
+        perl dependencies are still present in <filename
         class="directory">/usr</filename> and do not need to be rebuilt.
         However, biblatex installs in <filename
         class="directory">/opt/texlive/&texlive-year;</filename> and does
         need to be reinstalled.
 @y
         If you have updated to a new release of texlive-source, biber and its
-        perl dependencies are still in present in <filename
+        perl dependencies are still present in <filename
         class="directory">/usr</filename> and do not need to be rebuilt.
         However, biblatex installs in <filename
         class="directory">/opt/texlive/&texlive-year;</filename> and does
@@ -92,15 +92,17 @@
 @z
 
 @x
-        This version of biber requires <application>perl-5.30</application>
-        or later.  If you are still using the 8.4 version of BLFS you may
-        wish to build the 2.13 version: see the 8.4 book noting that
-        biblatex-3.13 has been replaced by biblatex-3.13a upstream.
+        If you installed the above dependencies using the BLFS instructions
+        for each of them, <command>perl ./Build.PL</command> will complain
+        that Mozilla::CA is not installed, but that is not needed unless
+        CPAN was used to install the modules. BLFS patches LWP::Protocol::https
+        to use the system certificates, Mozilla::CA uses old certificates.
 @y
-        This version of biber requires <application>perl-5.30</application>
-        or later.  If you are still using the 8.4 version of BLFS you may
-        wish to build the 2.13 version: see the 8.4 book noting that
-        biblatex-3.13 has been replaced by biblatex-3.13a upstream.
+        If you installed the above dependencies using the BLFS instructions
+        for each of them, <command>perl ./Build.PL</command> will complain
+        that Mozilla::CA is not installed, but that is not needed unless
+        CPAN was used to install the modules. BLFS patches LWP::Protocol::https
+        to use the system certificates, Mozilla::CA uses old certificates.
 @z
 
 @x
@@ -274,13 +276,17 @@
         must first install <xref linkend="perl-module-build"/> using <xref
         linkend="perl-auto-install"/>. Then run <command>perl
         ./Build.PL</command> and when it prompts you, become the root user
-        and run <command>./Build installdeps</command>
+        and run <command>./Build installdeps</command> - this will use CPAN
+        and as noted above it will use Mozilla::CA instead of using system
+        certificates.
 @y
         It is possible to install all missing dependencies automatically. You
         must first install <xref linkend="perl-module-build"/> using <xref
         linkend="perl-auto-install"/>. Then run <command>perl
         ./Build.PL</command> and when it prompts you, become the root user
-        and run <command>./Build installdeps</command>
+        and run <command>./Build installdeps</command> - this will use CPAN
+        and as noted above it will use Mozilla::CA instead of using system
+        certificates.
 @z
 
 @x

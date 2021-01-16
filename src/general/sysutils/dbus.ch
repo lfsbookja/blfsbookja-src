@@ -139,7 +139,7 @@
       <xref linkend="xmlto"/>,
       <ulink url="https://pypi.python.org/pypi/mallard-ducktype">Ducktype</ulink>,
       and
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/yelp-tools/">Yelp Tools</ulink>
+      <ulink url="&gnome-download-http;/yelp-tools/">Yelp Tools</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -148,13 +148,13 @@
       <xref linkend="dbus-glib"/>,
       <xref linkend="dbus-python"/>,
       <xref linkend="pygobject3"/>,
-      and <xref linkend="valgrind"/>;
+      <xref linkend="valgrind"/>;
 
       ドキュメント生成のために:
       <xref linkend="doxygen"/>,
       <xref linkend="xmlto"/>,
       <ulink url="https://pypi.python.org/pypi/mallard-ducktype">Ducktype</ulink>,
-      <ulink url="http://ftp.gnome.org/pub/gnome/sources/yelp-tools/">Yelp Tools</ulink>
+      <ulink url="&gnome-download-http;/yelp-tools/">Yelp Tools</ulink>
     </para>
 @z
 

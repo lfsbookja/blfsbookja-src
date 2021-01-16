@@ -150,7 +150,7 @@
 @z
 
 @x
-      <command>sed -i ...</command>: This sed prevents a warning when 
+      <command>sed -i ...</command>: This sed prevents some warnings when 
       building the documentation.
 @y
       <command>sed -i ...</command>:

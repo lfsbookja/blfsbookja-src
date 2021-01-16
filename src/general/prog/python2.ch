@@ -258,10 +258,13 @@
 
 @x
         <seg>
-          2to3, pip2, pydoc, python (symlink), python-config (symlink),
-          python2 (symlink), python2-config (symlink),
-          python&python2-majorver;, python&python2-majorver;-config,
-          smtpd.py, and idle
+          pydoc, 
+          python2 (symlink), 
+          python2-config (symlink),
+          python&python2-majorver;, 
+          python&python2-majorver;-config,
+          smtpd.py, and 
+          idle
         </seg>
         <seg>
           libpython&python2-majorver;.so
@@ -272,10 +275,13 @@
         </seg>
 @y
         <seg>
-          2to3, pip2, pydoc, python (symlink), python-config (symlink),
-          python2 (symlink), python2-config (symlink),
-          python&python2-majorver;, python&python2-majorver;-config,
-          smtpd.py, idle
+          pydoc, 
+          python2 (symlink), 
+          python2-config (symlink),
+          python&python2-majorver;, 
+          python&python2-majorver;-config,
+          smtpd.py,
+          idle
         </seg>
         <seg>
           libpython&python2-majorver;.so
@@ -290,18 +296,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x 2to3
-            is a <application>Python</application> program that reads
-            <application>Python 2.x</application> source code and applies a
-            series of fixes to transform it into valid
-            <application>Python 3.x</application> code.
-@y
-            is a <application>Python</application> program that reads
-            <application>Python 2.x</application> source code and applies a
-            series of fixes to transform it into valid
-            <application>Python 3.x</application> code.
 @z
 
 @x idle

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "202 MB (add 5 MB for tests)">
-  <!ENTITY glib2-time          "0.5 SBU (add 1.1 SBU for tests; both using parallelism=4)">
+  <!ENTITY glib2-buildsize     "205 MB (add 10 MB for tests)">
+  <!ENTITY glib2-time          "0.5 SBU (add 1.0 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY glib2-buildsize     "202 MB (テスト実施時はさらに 5 MB)">
-  <!ENTITY glib2-time          "0.5 SBU (テスト実施時はさらに 1.1 SBU; いずれも paralleism=4)">
+  <!ENTITY glib2-buildsize     "205 MB (テスト実施時はさらに 10 MB)">
+  <!ENTITY glib2-time          "0.5 SBU (テスト実施時はさらに 1.0 SBU; いずれも paralleism=4)">
 @z
 
 @x
@@ -109,10 +109,10 @@
         (both may be used in some tests),
       <xref linkend="gdb"/> (for bindings),
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>, and
-      <xref linkend="gtk-doc"/>
-        (to build API documentation)
-    </para>
+      <xref linkend="docbook-xsl"/>, 
+      <xref linkend="gtk-doc"/> (to build API documentation), and
+      <xref linkend="glib-networking"/> (for some tests, but this is a circular
+          dependency)
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
@@ -121,10 +121,9 @@
         (両者ともに各種テストにて用いられる),
       <xref linkend="gdb"/> (バインディングのため),
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>,
-      <xref linkend="gtk-doc"/>
-        (API ドキュメント生成のため)
-    </para>
+      <xref linkend="docbook-xsl"/>, 
+      <xref linkend="gtk-doc"/> (API ドキュメント生成のため),
+      <xref linkend="glib-networking"/> (一部のテストのため、ただし循環依存性あり)
 @z
 
 @x
@@ -233,10 +232,10 @@
 @z
 
 @x
-      <option>-Ddoc=true</option>: This switch causes the
+      <option>-Dgtk_doc=true</option>: This switch causes the
       build to create and install the API documentation.
 @y
-      <option>-Ddoc=true</option>: This switch causes the
+      <option>-Dgtk_doc=true</option>: This switch causes the
       build to create and install the API documentation.
 @z
 
@@ -277,7 +276,8 @@
           /usr/include/gio-unix-2.0,
           /usr/include/glib-2.0,
           /usr/lib/glib-2.0,
-          /usr/share/glib-2.0, and 
+          /usr/share/glib-2.0,
+          /usr/share/doc/glib-&glib2-version;, and 
           /usr/share/gtk-doc/html/{gio,glib,gobject}
         </seg>
 @y
@@ -302,6 +302,7 @@
           /usr/include/glib-2.0,
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
+          /usr/share/doc/glib-&glib2-version;,
           /usr/share/gtk-doc/html/{gio,glib,gobject}
         </seg>
 @z

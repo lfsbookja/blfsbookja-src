@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "212 MB (with typical dependencies; add 31 MB for checks)">
-  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.6 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "191 MB (with typical dependencies; add 20 MB for checks)">
+  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.5 SBU for checks, both using  parallelism=4)">
 @y
-  <!ENTITY imagemagick-buildsize     "212 MB (with typical dependencies; add 31 MB for checks)">
-  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.6 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "191 MB (with typical dependencies; add 20 MB for checks)">
+  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.5 SBU for checks, both using  parallelism=4)">
 @z
 
 @x
@@ -207,7 +207,9 @@
       <xref linkend="jasper"/>,
       <xref role="nodep" linkend="lcms"/> or
       <xref linkend="lcms2"/>,
-      <xref linkend="libexif"/>,
+      <!-- although libexif may have been used in the past, I can find no
+          evidence that it has been used in imagemagick-7.  ken
+      <xref linkend="libexif"/>,-->
       <xref linkend="libgxps"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
@@ -236,7 +238,9 @@
       <xref linkend="jasper"/>,
       <xref role="nodep" linkend="lcms"/> or
       <xref linkend="lcms2"/>,
-      <xref linkend="libexif"/>,
+      <!-- although libexif may have been used in the past, I can find no
+          evidence that it has been used in imagemagick-7.  ken
+      <xref linkend="libexif"/>,-->
       <xref linkend="libgxps"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
@@ -301,7 +305,7 @@
       <ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
       <ulink url="http://www.lizardtech.com/downloads/category/">
       GeoExpress Command Line Utilities, AKA MrSID Utilities (binary package)</ulink>,
-      <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
+      <ulink url="https://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
       <ulink url="http://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
       <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
       <ulink url="https://sk1project.net/uc2/">
@@ -317,7 +321,7 @@
       <ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
       <ulink url="http://www.lizardtech.com/downloads/category/">
       GeoExpress Command Line Utilities, AKA MrSID Utilities (binary package)</ulink>,
-      <ulink url="http://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
+      <ulink url="https://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
       <ulink url="http://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
       <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
       <ulink url="https://sk1project.net/uc2/">

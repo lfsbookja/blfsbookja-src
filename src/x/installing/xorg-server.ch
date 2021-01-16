@@ -222,11 +222,11 @@
 @z
 
 @x
-      <parameter>--enable-suid-wrapper</parameter>: Build suid-root wrapper for
-      legacy driver support on rootless xserver systems.
+      <parameter>--enable-suid-wrapper</parameter>: Builds the suid-root 
+      wrapper for legacy driver support on rootless xserver systems.
 @y
-      <parameter>--enable-suid-wrapper</parameter>: Build suid-root wrapper for
-      legacy driver support on rootless xserver systems.
+      <parameter>--enable-suid-wrapper</parameter>: Builds the suid-root 
+      wrapper for legacy driver support on rootless xserver systems.
 @z
 
 @x
@@ -269,10 +269,10 @@
 @z
 
 @x
-      <option>--enable-dmx</option>: Build DMX (Distributed Multihead X)
+      <option>--enable-dmx</option>: Builds the  DMX (Distributed Multihead X)
       server.
 @y
-      <option>--enable-dmx</option>: Build DMX (Distributed Multihead X)
+      <option>--enable-dmx</option>: Builds the  DMX (Distributed Multihead X)
       server.
 @z
 
@@ -297,7 +297,7 @@
           cvt, gtf, X, Xnest, Xorg, and Xvfb; optional: dmxaddinput,
           dmxaddscreen, dmxinfo, dmxreconfig, dmxresize, dmxrminput,
           dmxrmscreen, dmxtodmx, dmxwininfo, vdltodmx, Xdmx, xdmxconfig, Xephyr,
-          Xfbdev and Xwayland
+          <!--Xfbdev--> and Xwayland
         </seg>
         <seg>
           several under $XORG_PREFIX/lib/xorg/modules/{,drivers,extensions}
@@ -312,14 +312,14 @@
           cvt, gtf, X, Xnest, Xorg, and Xvfb; optional: dmxaddinput,
           dmxaddscreen, dmxinfo, dmxreconfig, dmxresize, dmxrminput,
           dmxrmscreen, dmxtodmx, dmxwininfo, vdltodmx, Xdmx, xdmxconfig, Xephyr,
-          Xfbdev, Xwayland
+          <!--Xfbdev--> and Xwayland
         </seg>
         <seg>
           several under $XORG_PREFIX/lib/xorg/modules/{,drivers,extensions}
           including modesetting_drv.so
         </seg>
         <seg>
-          $XORG_PREFIX/{include/xorg,lib/xorg,share/X11/xorg.conf.d},
+          $XORG_PREFIX/{include/xorg,lib/xorg,share/X11/xorg.conf.d} and
           /var/lib/xkb
         </seg>
 @z

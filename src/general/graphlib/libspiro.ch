@@ -81,15 +81,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">libspiro Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">libspiro Dependencies</bridgehead>
-@z
-
-@x
       User Notes: <ulink url="&blfs-wiki;/libspiro"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/libspiro"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/libspiro"/>
 @z
 
 @x
@@ -121,13 +115,13 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x

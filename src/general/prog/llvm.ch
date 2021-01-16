@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "2.8 GB (with Clang, 659 MB installed, add 16 GB for tests)">
-  <!ENTITY llvm-time          "30 SBU (with Clang and parallelism=4, add 15 SBU for tests)">
+  <!ENTITY llvm-buildsize     "3.1 GB (726 MB installed, add 20 GB for tests)">
+  <!ENTITY llvm-time          "30 SBU (with parallelism=4, add 15 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "2.8 GB (Clang 込み、インストールに 659 MB、テスト実施時はさらに 16 GB)">
-  <!ENTITY llvm-time          "30 SBU (Clang 込み、parallelism=4、テスト実施時はさらに 15 SBU)">
+  <!ENTITY llvm-buildsize     "3.1 GB (インストールに 726 MB、テスト実施時はさらに 20 GB)">
+  <!ENTITY llvm-time          "30 SBU (parallelism=4、テスト実施時はさらに 15 SBU)">
 @z
 
 @x
@@ -46,19 +46,27 @@
 @z
 
 @x
-      The optional <application>Clang</application> and <application>Compiler
-      RT</application> packages provide new C, C++, Objective C and Objective
-      C++ front-ends and runtime libraries for the
-      <application>LLVM</application> and are required by some packages which
-      use <application>Rust</application>, for example
-      <application>firefox</application>.
+      <application>Clang</application> provides new C, C++, Objective C
+      and Objective C++ front-ends for <application>LLVM</application> and is
+      required by some desktop packages such as <application>firefox</application>
+      and for <application>rust</application> if that is built using the system
+      <application>LLVM</application>.
 @y
-      The optional <application>Clang</application> and <application>Compiler
-      RT</application> packages provide new C, C++, Objective C and Objective
-      C++ front-ends and runtime libraries for the
-      <application>LLVM</application> and are required by some packages which
-      use <application>Rust</application>, for example
-      <application>firefox</application>.
+      <application>Clang</application> provides new C, C++, Objective C
+      and Objective C++ front-ends for <application>LLVM</application> and is
+      required by some desktop packages such as <application>firefox</application>
+      and for <application>rust</application> if that is built using the system
+      <application>LLVM</application>.
+@z
+
+@x
+      The <application>Compiler RT</application> package provides
+      runtime sanitizer and profiling libraries for developers who use
+      <application>Clang</application> and <application>LLVM</application>.
+@y
+      The <application>Compiler RT</application> package provides
+      runtime sanitizer and profiling libraries for developers who use
+      <application>Clang</application> and <application>LLVM</application>.
 @z
 
 @x
@@ -104,9 +112,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Optional Downloads</bridgehead>
+    <bridgehead renderas="sect3">Recommended Download</bridgehead>
 @y
-    <bridgehead renderas="sect3">オプションパッケージのダウンロード</bridgehead>
+    <bridgehead renderas="sect3">Recommended Download</bridgehead>
 @z
 
 @x
@@ -170,7 +178,7 @@
       <xref linkend="git"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="python2"/>,
+      <xref linkend="pygments"/>,
       <xref linkend="rsync"/> (for tests),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
@@ -189,7 +197,7 @@
       <xref linkend="git"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
-      <xref linkend="python2"/>,
+      <xref linkend="pygments"/>,
       <xref linkend="rsync"/> (for tests),
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
@@ -216,10 +224,30 @@
 @z
 
 @x
-      If you have downloaded the optional packages, install them into
+      Install <application>clang</application> into
       the source tree by running the following commands:
 @y
-      オプションパッケージをダウンロードしている場合は、以下のコマンドを実行してそれらをソースツリー内に含めます。
+      以下のコマンドを実行して <application>clang</application> をソースツリー内に含めます。
+@z
+
+@x
+      If you have downloaded <application>compiler-rt</application>,
+      install it into the source tree by running the following commands:
+@y
+      If you have downloaded <application>compiler-rt</application>,
+      install it into the source tree by running the following commands:
+@z
+
+@x
+     There are many Python scripts in this package which use
+     <command>/usr/bin/env python</command> to access the system Python
+     which on LFS is <xref linkend="python3"/>. Use the following comand
+     to fix these scripts:
+@y
+     There are many Python scripts in this package which use
+     <command>/usr/bin/env python</command> to access the system Python
+     which on LFS is <xref linkend="python3"/>. Use the following comand
+     to fix these scripts:
 @z
 
 @x
@@ -242,11 +270,9 @@
 @z
 
 @x
-      If you have downloaded the optional packages, the clang documentation
-      can be built too:
+      The clang documentation can be built too:
 @y
-      If you have downloaded the optional packages, the clang documentation
-      can be built too:
+      The clang documentation can be built too:
 @z
 
 @x
@@ -261,8 +287,8 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that the Sanitizer based tests (6 of more than 41000 tests run) 
-      are known to fail.
+      Note that a few of the compiler-rt Sanitizer based tests (6 of more than 48000
+      tests run) are known to fail.
 @y
       <!-- EDITORS - if you have more than 4 cores, take some offline to measure
       the elapsed time for the tests.  Also, libstdc++.a and perhaps libstdc++fs.a
@@ -275,8 +301,8 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that the Sanitizer based tests (6 of more than 41000 tests run) 
-      are known to fail.
+      Note that a few of the compiler-rt Sanitizer based tests (6 of more than 48000
+      tests run) are known to fail.
 @z
 
 @x
@@ -331,18 +357,18 @@
         <seg>
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
-          clang-cpp (last two symlinks to clang), clang-format, clang-extdef-mapping,
-          clang-import-test, clang-offload-bundler, clang-offload-wrapper, 
+          clang-cpp (last two symlinks to clang), clang-extdef-mapping, clang-format,
+          clang-offload-bundler, clang-offload-wrapper, 
           clang-refactor, clang-rename, clang-scan-deps,
-          diagtool, dsymutil, git-clang-format, hmap-tool, llc, lli, 
+          diagtool, dsymutil, git-clang-format, hmaptool, llc, lli, 
           llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-cat, 
           llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres, 
           llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
           llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
-          llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-ifs,
+          llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
           llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
           llvm-lib (symlink to llvm-ar), llvm-link, llvm-lipo, llvm-lto, 
-          llvm-lto2, llvm-mc, llvm-mca, llvm-modextract,
+          llvm-lto2, llvm-mc, llvm-mca, llvm-ml, llvm-modextract,
           llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump, llvm-opt-report,
           llvm-pdbutil, llvm-profdata, llvm-ranlib (symlink to llvm-ar), llvm-rc,
           llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce, 
@@ -369,18 +395,18 @@
         <seg>
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
-          clang-cpp (last two symlinks to clang), clang-format, clang-extdef-mapping,
-          clang-import-test, clang-offload-bundler, clang-offload-wrapper, 
+          clang-cpp (last two symlinks to clang), clang-extdef-mapping, clang-format,
+          clang-offload-bundler, clang-offload-wrapper, 
           clang-refactor, clang-rename, clang-scan-deps,
-          diagtool, dsymutil, git-clang-format, hmap-tool, llc, lli, 
+          diagtool, dsymutil, git-clang-format, hmaptool, llc, lli, 
           llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-cat, 
           llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres, 
           llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
           llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
-          llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-ifs,
+          llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
           llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
           llvm-lib (symlink to llvm-ar), llvm-link, llvm-lipo, llvm-lto, 
-          llvm-lto2, llvm-mc, llvm-mca, llvm-modextract,
+          llvm-lto2, llvm-mc, llvm-mca, llvm-ml, llvm-modextract,
           llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump, llvm-opt-report,
           llvm-pdbutil, llvm-profdata, llvm-ranlib (symlink to llvm-ar), llvm-rc,
           llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce, 
@@ -395,7 +421,7 @@
           libLTO.so, 
           libRemarks.so, 
           libclang.so,
-          and libclang*.a (63 個のライブラリ)
+          libclang*.a (63 個のライブラリ)
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},

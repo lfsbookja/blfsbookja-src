@@ -203,11 +203,11 @@
 
 @x
       <parameter>--enable-securedir=/lib/security</parameter>:
-      This switch sets install location for the
+      This switch sets the installation location for the
       <application>PAM</application> modules.
 @y
       <parameter>--enable-securedir=/lib/security</parameter>:
-      This switch sets install location for the
+      This switch sets the installation location for the
       <application>PAM</application> modules.
 @z
 
@@ -276,9 +276,11 @@
 @z
 
 @x
-        Now set up some generic files.  As root:
+        Now set up some generic files.  As the 
+        <systemitem class="username">root:</systemitem> user
 @y
-        Now set up some generic files.  As root:
+        Now set up some generic files.  As the 
+        <systemitem class="username">root:</systemitem> user
 @z
 
 @x
@@ -367,8 +369,8 @@
 
 @x
         <seg>
-          faillock, mkhomedir_helper,
-          pam_timestamp_check, unix_chkpwd and
+          faillock, mkhomedir_helper, pam_namespace_helper,
+          pam_timestamp_check, pwhistory_helper, unix_chkpwd and
           unix_update
         </seg>
         <seg>
@@ -382,8 +384,8 @@
         </seg>
 @y
         <seg>
-          faillock, mkhomedir_helper,
-          pam_timestamp_check, unix_chkpwd,
+          faillock, mkhomedir_helper, pam_namespace_helper,
+          pam_timestamp_check, pwhistory_helper, unix_chkpwd,
           unix_update
         </seg>
         <seg>

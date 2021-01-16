@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY tracker-miners-buildsize     "30 MB (with tests)">
-  <!ENTITY tracker-miners-time          "0.9 SBU (with tests)">
+  <!ENTITY tracker-miners-buildsize     "28 MB (with tests)">
+  <!ENTITY tracker-miners-time          "1.0 SBU (with tests)">
 @y
-  <!ENTITY tracker-miners-buildsize     "30 MB (テスト込み)">
-  <!ENTITY tracker-miners-time          "0.9 SBU (テスト込み)">
+  <!ENTITY tracker-miners-buildsize     "28 MB (テスト込み)">
+  <!ENTITY tracker-miners-time          "1.0 SBU (テスト込み)">
 @z
 
 @x
@@ -178,8 +178,8 @@
 @z
 
 @x
-      To test the results, as the root user,
-      issue: <command>ninja test</command>.
+      To test the results, as the <systemitem class="username">root</systemitem>
+      user, issue: <command>ninja test</command>.
       <!--
       Eight tests, test-image-1, 300-miner-basic-ops, 310-fts-basic,
       310-fts-basic, 311-fts-file-operations, 401-extractor-flac-cuesheet,
@@ -187,12 +187,12 @@
       502-writeback-audio are known to fail due to internal test
       suite problems.
       -->
-      Three tests, miners-common-file-utils, test-image-1, and 
-      functional-401-extractor-flac-cuesheet, are known to fail.
+      Two tests, test-image-1 and functional-401-extractor-flac-cuesheet, 
+      are known to fail.
       <!-- flac cuesheet is due to libcue not being installed. -->
 @y
-      To test the results, as the root user,
-      issue: <command>ninja test</command>.
+      To test the results, as the <systemitem class="username">root</systemitem>
+      user, issue: <command>ninja test</command>.
       <!--
       Eight tests, test-image-1, 300-miner-basic-ops, 310-fts-basic,
       310-fts-basic, 311-fts-file-operations, 401-extractor-flac-cuesheet,
@@ -200,8 +200,8 @@
       502-writeback-audio are known to fail due to internal test
       suite problems.
       -->
-      Three tests, miners-common-file-utils, test-image-1, and 
-      functional-401-extractor-flac-cuesheet, are known to fail.
+      Two tests, test-image-1 and functional-401-extractor-flac-cuesheet, 
+      are known to fail.
       <!-- flac cuesheet is due to libcue not being installed. -->
 @z
 

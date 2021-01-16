@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY p11-kit-buildsize     "46 MB (add 169 MB for tests)">
-  <!ENTITY p11-kit-time          "0.4 SBU (add 0.6 SBU for tests)">
+  <!ENTITY p11-kit-buildsize     "47 MB (add 169 MB for tests)">
+  <!ENTITY p11-kit-time          "0.2 SBU (add 0.6 SBU for tests)">
 @y
-  <!ENTITY p11-kit-buildsize     "46 MB (テスト実施時はさらに 169 MB)">
-  <!ENTITY p11-kit-time          "0.4 SBU (テスト実施時はさらに 0.6 SBU)">
+  <!ENTITY p11-kit-buildsize     "47 MB (テスト実施時はさらに 169 MB)">
+  <!ENTITY p11-kit-time          "0.2 SBU (テスト実施時はさらに 0.6 SBU)">
 @z
 
 @x

@@ -82,12 +82,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-       <xref linkend="rep-gtk"/> and
+       <xref linkend="gdk-pixbuf-xlib"/>,
+       <xref linkend="rep-gtk"/>, and
        <xref linkend="which"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+       <xref linkend="gdk-pixbuf-xlib"/>,
        <xref linkend="rep-gtk"/>,
        <xref linkend="which"/>
     </para>

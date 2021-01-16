@@ -10,7 +10,6 @@ CHANGE_FILES = \
 	dconf.ch                     \
 	dummy-desktop.ch             \
 	dummy-platform.ch            \
-	dummy-runtime.ch             \
 	evolution-data-server.ch     \
 	folks.ch                     \
 	gconf.ch                     \
@@ -53,6 +52,8 @@ CHANGE_FILES = \
 	totem-pl-parser.ch           \
 	tracker.ch                   \
 	tracker-miners.ch            \
+	tracker3.ch                  \
+	tracker3-miners.ch           \
 	vte.ch                       \
 	yelp.ch                      \
 	yelp-xsl.ch                  \

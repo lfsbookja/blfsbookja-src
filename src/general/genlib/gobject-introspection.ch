@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gobject-introspection-buildsize     "64 MB (with tests)">
+  <!ENTITY gobject-introspection-buildsize     "55 MB (with tests)">
   <!ENTITY gobject-introspection-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gobject-introspection-buildsize     "64 MB (テスト込み)">
+  <!ENTITY gobject-introspection-buildsize     "55 MB (テスト込み)">
   <!ENTITY gobject-introspection-time          "0.2 SBU (parallelism=4; テスト込み)">
 @z
 
@@ -176,7 +176,7 @@
 @x
         <seg>
           g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool,
-          g-ir-inspect, g-ir-generate, and g-ir-scanner
+          g-ir-generate, g-ir-inspect, and g-ir-scanner
         </seg>
         <seg>
           libgirepository-1.0.so and
@@ -192,7 +192,7 @@
 @y
         <seg>
           g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool,
-          g-ir-inspect, g-ir-generate, g-ir-scanner
+          g-ir-generate, g-ir-inspect, g-ir-scanner
         </seg>
         <seg>
           libgirepository-1.0.so,
@@ -242,12 +242,6 @@
             introspecting GObject based libraries.
 @y
             GObject ベースのライブラリとヘッダーを用いて GIR XML ファイルを生成するためのツールです。
-@z
-
-@x g-ir-generate
-            is a GIR generator that uses the repository API.
-@y
-            GIR 生成ツールです。リポジトリ API が利用されます。
 @z
 
 @x libgirepository-1.0.so

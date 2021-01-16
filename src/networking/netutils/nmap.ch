@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY nmap-buildsize     "119 MB (add 25 MB for tests)">
-  <!ENTITY nmap-time          "0.9 SBU (add 0.1 SBU for tests)">
+  <!ENTITY nmap-buildsize     "148 MB (add 24 MB for tests)">
+  <!ENTITY nmap-time          "0.3 SBU (Using parallelism=4; add 0.2 SBU for tests)">
 @y
-  <!ENTITY nmap-buildsize     "119 MB (テスト実施時はさらに 25 MB)">
-  <!ENTITY nmap-time          "0.9 SBU (テスト実施時はさらに 0.1 SBU)">
+  <!ENTITY nmap-buildsize     "148 MB (テスト実施時はさらに 24 MB)">
+  <!ENTITY nmap-time          "0.3 SBU (parallelism=4 利用時、テスト実施時はさらに 0.2 SBU)">
 @z
 
 @x
@@ -125,9 +125,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="pygtk"/> (required for <command>zenmap</command>),
-      <xref linkend="python2"/> (required for <command>ndiff</command>),
-      <xref linkend="subversion"/> (required for
-      <command>nmap-update</command>), and
+      <xref linkend="python2"/> (required for <command>ndiff</command>), and
       <xref linkend="libssh2"/>
     </para>
 @y
@@ -135,7 +133,6 @@
     <para role="optional">
       <xref linkend="pygtk"/> (<command>zenmap</command> に必要),
       <xref linkend="python2"/> (<command>ndiff</command> に必要),
-      <xref linkend="subversion"/> (<command>nmap-update</command> に必要),
       <xref linkend="libssh2"/>
     </para>
 @z
@@ -182,20 +179,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--with-liblua=included</parameter>: This switch is
-      required to fix compilation with <application>lua</application> 5.3.
-@y
-      <parameter>--with-liblua=included</parameter>:
-      このスイッチは <application>lua</application> 5.3 を使ってビルドをする場合に必要となります。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -213,8 +196,8 @@
 
 @x
         <seg>
-          ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_ndiff,
-          uninstall_zenmap, xnmap and zenmap
+          ncat, ndiff, nmap, nping, uninstall_ndiff, uninstall_zenmap,
+          zenmap, and 2 symlinks to zenmap: nmapfe and xnmap
         </seg>
         <seg>
           None
@@ -225,8 +208,8 @@
         </seg>
 @y
         <seg>
-          ncat, ndiff, nmap, nmapfe, nmap-update, nping, uninstall_ndiff,
-          uninstall_zenmap, xnmap, zenmap
+          ncat, ndiff, nmap, nping, uninstall_ndiff, uninstall_zenmap,
+          zenmap, and 2 symlinks to zenmap: nmapfe, xnmap
         </seg>
         <seg>
           &None;
@@ -264,12 +247,6 @@
             ping スキャン、ポートスキャン、TCP/IP フィンガープリント取得などを行います。
 @z
 
-@x nmapfe
-            is a symbolic link to <command>zenmap</command>.
-@y
-            <command>zenmap</command> へのシンボリックリンク。
-@z
-
 @x nmap-update
             is an updater for Nmap architecture-independent files.
 @y
@@ -294,12 +271,6 @@
             is a Python script to uninstall <command>zenmap</command>.
 @y
             is a Python script to uninstall <command>zenmap</command>.
-@z
-
-@x xnmap
-            is a symbolic link to <command>zenmap</command>.
-@y
-            <command>zenmap</command> へのシンボリックリンク。
 @z
 
 @x zenmap

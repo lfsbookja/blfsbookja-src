@@ -150,7 +150,7 @@
           None
         </seg>
         <seg>
-          /usr/{libexec, share, share/help/*}/gnome-system-monitor
+          /usr/{libexec,share,share/help/*}/gnome-system-monitor
         </seg>
 @y
         <seg>
@@ -160,7 +160,7 @@
           &None;
         </seg>
         <seg>
-          /usr/{libexec, share, share/help/*}/gnome-system-monitor
+          /usr/{libexec,share,share/help/*}/gnome-system-monitor
         </seg>
 @z
 

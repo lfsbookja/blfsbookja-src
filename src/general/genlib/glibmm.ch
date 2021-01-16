@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glibmm-buildsize     "210 MB (with tests)">
-  <!ENTITY glibmm-time          "1.2 SBU (Using parallelism=4; with tests)">
+  <!ENTITY glibmm-buildsize     "173 MB (with tests)">
+  <!ENTITY glibmm-time          "0.6 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY glibmm-buildsize     "210 MB (テストスイート込み)">
-  <!ENTITY glibmm-time          "1.2 SBU (parallelism=4 時; テストスイート込み)">
+  <!ENTITY glibmm-buildsize     "173 MB (テスト込み)">
+  <!ENTITY glibmm-time          "0.6 SBU (parallelism=4 時; テスト込み)">
 @z
 
 @x
@@ -101,8 +101,9 @@
     <para role="optional">
       <xref linkend="doxygen"/>,
       <xref linkend="glib-networking"/> (for tests), 
-      <xref linkend="gnutls"/> (for tests), and
-      <xref linkend="libxslt"/>
+      <xref linkend="gnutls"/> (for tests),
+      <xref linkend="libxslt"/>, and
+      <ulink url="&gnome-download-http;/mm-common">mm-common</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -110,7 +111,8 @@
       <xref linkend="doxygen"/>,
       <xref linkend="glib-networking"/> (テストのため), 
       <xref linkend="gnutls"/> (テストのため),
-      <xref linkend="libxslt"/>
+      <xref linkend="libxslt"/>,
+      <ulink url="&gnome-download-http;/mm-common">mm-common</ulink>
     </para>
 @z
 
@@ -127,12 +129,6 @@
 @z
 
 @x
-      First, fix the documents directory name:
-@y
-      はじめにドキュメントディレクトリ名を修正します。
-@z
-
-@x
       Install <application>GLibmm</application> by running the following
       commands:
 @y
@@ -140,9 +136,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -176,8 +172,8 @@
           libglibmm_generate_extra_defs-2.4.so
         </seg>
         <seg>
-          /usr/{include,lib}/g{io,lib}mm-2.4 and
-          /usr/share/{devhelp/books/glibmm-2.4,doc/glibmm-&glibmm-version;}
+          /usr/lib/g{io,lib}mm-2.4 and
+          /usr/include/g{io,lib}mm-2.4 
         </seg>
 @y
         <seg>
@@ -188,8 +184,8 @@
           libglibmm_generate_extra_defs-2.4.so
         </seg>
         <seg>
-          /usr/{include,lib}/g{io,lib}mm-2.4,
-          /usr/share/{devhelp/books/glibmm-2.4,doc/glibmm-&glibmm-version;}
+          /usr/lib/g{io,lib}mm-2.4,
+          /usr/include/g{io,lib}mm-2.4 
         </seg>
 @z
 

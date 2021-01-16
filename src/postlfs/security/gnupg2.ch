@@ -244,14 +244,6 @@
 @z
 
 @x
-      <parameter>--enable-symcryptrun</parameter>: This switch enables
-      building the symcryptrun program.
-@y
-      <parameter>--enable-symcryptrun</parameter>: This switch enables
-      building the symcryptrun program.
-@z
-
-@x
       <option>--enable-all-tests</option>: allows more tests to be run with
       <command>make check</command>.
 @y
@@ -286,18 +278,18 @@
 @x
         <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13
         (optional), gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
-           gpgscm, gpgsm, gpgtar, gpgv, gpg-wks-server, gpg-zip, kbxutil, 
-        symcryptrun, and watchgnupg</seg>
+        gpgscm, gpgsm, gpgsplit, gpgtar, gpgv, gpg-wks-server, gpg-zip, kbxutil, 
+        <!--symcryptrun,--> and watchgnupg</seg>
         <seg>None</seg>
         <seg>/usr/share/doc/gnupg-&gnupg2-version; and
         /usr/share/gnupg</seg>
 @y
         <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13
         (optional), gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
-           gpgscm, gpgsm, gpgtar, gpgv, gpg-wks-server, gpg-zip, kbxutil, 
-        symcryptrun, watchgnupg</seg>
-        <seg>&None;</seg>
-        <seg>/usr/share/doc/gnupg-&gnupg2-version;,
+        gpgscm, gpgsm, gpgsplit, gpgtar, gpgv, gpg-wks-server, gpg-zip, kbxutil, 
+        <!--symcryptrun,--> and watchgnupg</seg>
+        <seg>None</seg>
+        <seg>/usr/share/doc/gnupg-&gnupg2-version; and
         /usr/share/gnupg</seg>
 @z
 

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY ruby-buildsize     "452 MB (add 214 MB for C API docs)">
-  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 4.8 SBU for tests; add 0.5 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "629 MB (add 533 MB for C API docs)">
+  <!ENTITY ruby-time          "1.3 SBU (using parallelism=4; add 5.5 SBU for tests; add 0.8 SBU for C API docs)">
 @y
-  <!ENTITY ruby-buildsize     "452 MB (add 214 MB for C API docs)">
-  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 4.8 SBU for tests; add 0.5 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "629 MB (add 533 MB for C API docs)">
+  <!ENTITY ruby-time          "1.3 SBU (using parallelism=4; add 5.5 SBU for tests; add 0.8 SBU for C API docs)">
 @z
 
 @x
@@ -136,20 +136,17 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. There are over
+      To test the results, issue: <command>make check</command>. There are almost
       21,000 tests. Some tests related to ipv6 may indicate errors.  If the
       tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. One test related to
-      the time function may fail due to a change in expectations as a result of
-      glibc-2.31.
+      /tmp) then several additional tests may fail. A few tests my fail due
+      to system configuration expectations.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      There are over
+      To test the results, issue: <command>make check</command>. There are almost
       21,000 tests. Some tests related to ipv6 may indicate errors.  If the
       tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. One test related to
-      the time function may fail due to a change in expectations as a result of
-      glibc-2.31.
+      /tmp) then several additional tests may fail. A few tests my fail due
+      to system configuration expectations.
 @z
 
 @x
@@ -214,7 +211,18 @@
 
 @x
         <seg>
-          bundle, bundler, erb, gem, irb, rake, rdoc, ri, and ruby
+          bundle, 
+          bundler, 
+          erb, 
+          gem, 
+          irb, 
+          racc, 
+          rake, 
+          rbs, 
+          rdoc, 
+          ri, 
+          ruby, and
+          typeprof
         </seg>
         <seg>
           libruby.so
@@ -227,7 +235,18 @@
         </seg>
 @y
         <seg>
-          bundle, bundler, erb, gem, irb, rake, rdoc, ri, ruby
+          bundle, 
+          bundler, 
+          erb, 
+          gem, 
+          irb, 
+          racc, 
+          rake, 
+          rbs, 
+          rdoc, 
+          ri, 
+          ruby,
+          typeprof
         </seg>
         <seg>
           libruby.so

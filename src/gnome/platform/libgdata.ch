@@ -201,10 +201,8 @@
           libgdata.so
         </seg>
         <seg>
-          /usr/include/libgdata,
-          /usr/libexec/installed-tests/libgdata,
-          /usr/share/gtk-doc/html/gdata, and
-          /usr/share/installed-tests/libgdata
+          /usr/include/libgdata and
+          /usr/share/gtk-doc/html/gdata
         </seg>
 @y
         <seg>
@@ -215,9 +213,7 @@
         </seg>
         <seg>
           /usr/include/libgdata,
-          /usr/libexec/installed-tests/libgdata,
-          /usr/share/gtk-doc/html/gdata,
-          /usr/share/installed-tests/libgdata
+          /usr/share/gtk-doc/html/gdata
         </seg>
 @z
 

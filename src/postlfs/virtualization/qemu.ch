@@ -260,9 +260,13 @@
 @z
 
 @x
-      To run the built in tests, run <command>make V=1 -k check</command>.
+      <application>qemu</application> uses <command>ninja</command> as
+      a subprocess when building.  To run the tests, issue:
+      <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make V=1 check</command> を実行します。
+      <application>qemu</application> uses <command>ninja</command> as
+      a subprocess when building.  To run the tests, issue:
+      <command>ninja test</command>.
 @z
 
 @x
@@ -288,11 +292,11 @@
 @z
 
 @x
-      For convenience you may want to create a symbolic link to run
-      the installed program. For instance:
+        For convenience you may want to create a symbolic link to run
+        the installed program. For instance:
 @y
-      For convenience you may want to create a symbolic link to run
-      the installed program. For instance:
+        For convenience you may want to create a symbolic link to run
+        the installed program. For instance:
 @z
 
 @x

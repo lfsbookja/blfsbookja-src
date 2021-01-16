@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY at-spi2-atk-buildsize     "9.4 MB (with tests)">
+  <!ENTITY at-spi2-atk-buildsize     "8.5 MB (with tests)">
   <!ENTITY at-spi2-atk-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY at-spi2-atk-buildsize     "9.4 MB (テスト込み)">
+  <!ENTITY at-spi2-atk-buildsize     "8.5 MB (テスト込み)">
   <!ENTITY at-spi2-atk-time          "0.1 SBU (テスト込み)">
 @z
 

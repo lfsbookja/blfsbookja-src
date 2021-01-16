@@ -14,11 +14,9 @@
 @z
 
 @x
-  <!ENTITY fftw-buildsize     "57 MB (add 1 MB for tests)">
-  <!ENTITY fftw-time          "1.6 SBU (using parallelism=4; add 1.9 SBU for tests)">
+  <!ENTITY fftw-time          "1.4 SBU (using parallelism=4; add 2.2 SBU for tests)">
 @y
-  <!ENTITY fftw-buildsize     "57 MB（テスト実施時はさらに 1 MB）">
-  <!ENTITY fftw-time          "1.6 SBU（parallelism=4 利用時; テスト実施時はさらに 1.9 SBU）">
+  <!ENTITY fftw-time          "1.4 SBU（parallelism=4 利用時; テスト実施時はさらに 2.2 SBU）">
 @z
 
 @x

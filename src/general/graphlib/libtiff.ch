@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libtiff-buildsize     "15 MB (with tests)">
+  <!ENTITY libtiff-buildsize     "16 MB (with tests)">
   <!ENTITY libtiff-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libtiff-buildsize     "15 MB（テスト込み）">
+  <!ENTITY libtiff-buildsize     "16 MB（テスト込み）">
   <!ENTITY libtiff-time          "&LessThan1;0.1 SBU&LessThan2;（テスト込み）">
 @z
 

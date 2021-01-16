@@ -37,6 +37,7 @@ CHANGE_FILES = \
 	gcc.ch            \
 	gdb.ch            \
 	git.ch            \
+	gitserver.ch      \
 	guile.ch          \
 	java.ch           \
 	jinja2.ch         \
@@ -71,6 +72,7 @@ CHANGE_FILES = \
 	subversion.ch     \
 	svnserver.ch      \
 	swig.ch           \
+	sysprof.ch        \
 	tk.ch             \
 	vala.ch           \
 	valgrind.ch       \

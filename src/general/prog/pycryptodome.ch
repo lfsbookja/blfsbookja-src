@@ -72,24 +72,6 @@
 @z
 
 @x
-      <bridgehead renderas="sect4">PyCryptodome Dependencies</bridgehead>
-@y
-      <bridgehead renderas="sect4">&Dependencies1;PyCryptodome&Dependencies2;</bridgehead>
-@z
-
-@x
-      <bridgehead renderas="sect5">Recommended</bridgehead>
-      <para role="recommended">
-        <xref linkend="python2"/> 
-      </para>
-@y
-      <bridgehead renderas="sect5">&Recommended;</bridgehead>
-      <para role="recommended">
-        <xref linkend="python2"/> 
-      </para>
-@z
-
-@x
         User Notes: <ulink url="&blfs-wiki;/pycryptodome"/>
 @y
         &UserNotes;: <ulink url="&blfs-wiki;/pycryptodome"/>
@@ -102,26 +84,19 @@
 @z
 
 @x
-          Both <application>Python 2</application> and
-          <application>Python 3</application> modules can
-          be built and installed without any conflicts.
+        To build <application>PyCryptodome</application> as a Python 3
+        module, run the following command:
 @y
-          <application>Python 2</application> モジュールと <application>Python 3</application> モジュールは、互いに干渉することなくビルドしインストールすることができます。
+        To build <application>PyCryptodome</application> as a Python 3
+        module, run the following command:
 @z
 
 @x
-        To build the <application>Python 2</application> and
-        <application>Python 3</application> modules, run the following commands:
-@y
-        <application>Python 2</application> モジュールや <application>Python 3</application> モジュールをビルドする場合は以下のコマンドを実行します。
-@z
-
-@x
-        To install both modules, run the following commands as the
+        To install the module, run the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
-        両バージョンのモジュールをインストールする場合は <systemitem
-        class="username">root</systemitem> ユーザーになって以下を実行します。
+        To install the module, run the following command as the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -145,11 +120,9 @@
             None
           </seg>
           <seg>
-            pycryptodome-&pycryptodome-version;-py&python2-majorver;.egg-info and/or
             pycryptodome-&pycryptodome-version;-py&python3-majorver;.egg-info
           </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/Crypto and/or
             /usr/lib/python&python3-majorver;/site-packages/Crypto
           </seg>
 @y
@@ -157,11 +130,9 @@
             &None;
           </seg>
           <seg>
-            pycryptodome-&pycryptodome-version;-py&python2-majorver;.egg-info または
             pycryptodome-&pycryptodome-version;-py&python3-majorver;.egg-info
           </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/Crypto または
             /usr/lib/python&python3-majorver;/site-packages/Crypto
           </seg>
 @z

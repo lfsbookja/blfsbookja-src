@@ -138,26 +138,26 @@
 
 @x
         <seg>
-          ark and arkprofile
+          ark
         </seg>
         <seg>
-          libkdeinit5_ark.so and libarkprivate.so
+          libkerfuffle.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/doc/HTML/*/ark,
-          $KF5_PREFIX/share/ark, and
+          $KF5_PREFIX/lib/plugins/kerfuffle,
+          $KF5_PREFIX/share/doc/HTML/*/ark, and
           $KF5_PREFIX/share/kxmlgui5/ark
         </seg>
 @y
         <seg>
-          ark, arkprofile
+          ark
         </seg>
         <seg>
-          libkdeinit5_ark.so, libarkprivate.so
+          libkerfuffle.so
         </seg>
         <seg>
+          $KF5_PREFIX/lib/plugins/kerfuffle,
           $KF5_PREFIX/share/doc/HTML/*/ark,
-          $KF5_PREFIX/share/ark,
           $KF5_PREFIX/share/kxmlgui5/ark
         </seg>
 @z
@@ -169,17 +169,7 @@
 @z
 
 @x ark
-             is an X terminal emulation which provides a command-line
-             interface.
+             is a KF5-based Archive Manager.
 @y
-             is an X terminal emulation which provides a command-line
-             interface.
-@z
-
-@x arkprofile
-            is a command-line tool to change the current tab's profile
-            options.
-@y
-            is a command-line tool to change the current tab's profile
-            options.
+             is a KF5-based Archive Manager.
 @z

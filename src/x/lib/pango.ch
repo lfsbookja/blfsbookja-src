@@ -135,7 +135,7 @@
     <para role="optional">
       <xref linkend="cantarell-fonts"/> (for tests),
       <xref linkend="gtk-doc"/>,
-      <ulink url="https://ftp.gnu.org/gnu/help2man">help2man</ulink>, and
+      <ulink url="https://ftpmirror.gnu.org/gnu/help2man">help2man</ulink>, and
       <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @y
@@ -143,7 +143,7 @@
     <para role="optional">
       <xref linkend="cantarell-fonts"/> (for tests),
       <xref linkend="gtk-doc"/>,
-      <ulink url="https://ftp.gnu.org/gnu/help2man">help2man</ulink>,
+      <ulink url="https://ftpmirror.gnu.org/gnu/help2man">help2man</ulink>,
       <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @z
@@ -168,16 +168,14 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. Three tests,
-      <filename>test-layout</filename>,
-      <filename>test-break</filename>, and
-      <filename>test-itemize</filename> are known to fail if 
+      To test the results, issue: <command>ninja test</command>. Two tests,
+      <filename>test-layout</filename> and
+      <filename>test-itemize</filename>, are known to fail if 
       <xref linkend="cantarell-fonts"/> is not installed.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       <filename>test-layout</filename>,
-      <filename>test-break</filename>, 
-      <filename>test-itemize</filename> という 3 つのテストは、<xref
+      <filename>test-itemize</filename> という 2 つのテストは、<xref
       linkend="cantarell-fonts"/> をインストールしていない場合には失敗します。
 @z
 

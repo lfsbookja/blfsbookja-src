@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY pipewire-time          "0.3 SBU (Using parallelism=4)">
+  <!ENTITY pipewire-buildsize     "122 MB (with tests)">
+  <!ENTITY pipewire-time          "0.4 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY pipewire-time          "0.3 SBU (parallelism=4 利用時)">
+  <!ENTITY pipewire-buildsize     "122 MB (テスト込み)">
+  <!ENTITY pipewire-time          "0.4 SBU (parallelism=4 利用時、テスト込み)">
 @z
 
 @x
@@ -212,20 +214,27 @@
         <seg>
           pipewire,
           pipewire-media-session,
+          pipewire-pulse,
           pw-cat,
           pw-cli,
           pw-dot,
+          pw-dump,
           pw-metadata,
           pw-mididump,
           pw-mon,
           pw-profiler,
-          pw-pulse,
+          <!--pw-pulse,-->
+          pw-reserve,
+          pw-top,
+          spa-acp-tool,
           spa-inspect,
-          spa-monitor, and
+          spa-monitor, 
+          spa-resample, and
           pw-midiplay, pw-midirecord, pw-play, and pw-record (symlinks to pw-cat)
         </seg>
         <seg>
-          libpipewire-0.3.so<!--,
+          libpipewire-0.3.so and
+          30 modules below /usr/lib/pipewire-0.3<!--,
      [pierre July 29th, 2020]: all the following libs are in subdirectories
      of /usr/lib. I'm not sure they should appear. But if they should, there
      are many more libs to list... 
@@ -233,12 +242,24 @@
           libpulse.so,
           libpulse-simple.so,
           libasound_module_pcm_pipewire.so, and
-          libgstpipewire.so -->
+          libgstpipewire.so 
+      [bdubbs Sep 29th, 2020]: add
+          libpipewire-module-{access,adapter,client-device,client-node,
+            link-factory,metadata,portal,profiler,protocol-native,
+            rtkit,session-manager,spa-device,spa-device-factory,spa-node,
+            spa-node-factory}.so
+          libasound_module_ctl_pipewire.so
+          libasound_module_pcm_pipewire.so
+          libspa-{alsa,audioconvert,audiomixer,bluez5,control,dbus,support
+            v4l2,videoconvert}.so
+          -->
         </seg>
         <seg>
           /etc/pipewire,
           /usr/include/pipewire-0.3, 
           /usr/include/spa-0.2,
+          /usr/lib/alsa-lib,
+          /usr/lib/gstreamer-1.0,
           /usr/lib/pipewire-0.3, and
           /usr/lib/spa-0.2
         </seg>
@@ -246,33 +267,52 @@
         <seg>
           pipewire,
           pipewire-media-session,
+          pipewire-pulse,
           pw-cat,
           pw-cli,
           pw-dot,
+          pw-dump,
           pw-metadata,
           pw-mididump,
           pw-mon,
           pw-profiler,
-          pw-pulse,
+          <!--pw-pulse,-->
+          pw-reserve,
+          pw-top,
+          spa-acp-tool,
           spa-inspect,
-          spa-monitor,
-          pw-midiplay, pw-midirecord, pw-play, pw-record (pw-cat へのシンボリックリンク)
+          spa-monitor, 
+          spa-resample,
+          pw-midiplay, pw-midirecord, pw-play, and pw-record (symlinks to pw-cat)
         </seg>
         <seg>
-          libpipewire-0.3.so<!--,
+          libpipewire-0.3.so and
+          30 modules below /usr/lib/pipewire-0.3<!--,
      [pierre July 29th, 2020]: all the following libs are in subdirectories
      of /usr/lib. I'm not sure they should appear. But if they should, there
      are many more libs to list... 
           libpulse-mainloop-glib-pw.so,
           libpulse.so,
           libpulse-simple.so,
-          libasound_module_pcm_pipewire.so,
-          libgstpipewire.so -->
+          libasound_module_pcm_pipewire.so, and
+          libgstpipewire.so 
+      [bdubbs Sep 29th, 2020]: add
+          libpipewire-module-{access,adapter,client-device,client-node,
+            link-factory,metadata,portal,profiler,protocol-native,
+            rtkit,session-manager,spa-device,spa-device-factory,spa-node,
+            spa-node-factory}.so
+          libasound_module_ctl_pipewire.so
+          libasound_module_pcm_pipewire.so
+          libspa-{alsa,audioconvert,audiomixer,bluez5,control,dbus,support
+            v4l2,videoconvert}.so
+          -->
         </seg>
         <seg>
           /etc/pipewire,
           /usr/include/pipewire-0.3, 
           /usr/include/spa-0.2,
+          /usr/lib/alsa-lib,
+          /usr/lib/gstreamer-1.0,
           /usr/lib/pipewire-0.3,
           /usr/lib/spa-0.2
         </seg>
@@ -304,10 +344,10 @@
             allows you to monitor pipewire instances.
 @z
 
-@x pw-pulse
-            runs Pulseaudio applications on pipewire
+@x pw-profiler
+            tracks memory usage and API calls used by pipewire.
 @y
-            runs Pulseaudio applications on pipewire
+            tracks memory usage and API calls used by pipewire.
 @z
 
 @x spa-inspect

@@ -113,6 +113,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="apache"/>,
+      <xref linkend="boost"/>,
 <!-- support for berkeley db is deprecated since 1.8
       <xref linkend="db"/>,
 -->
@@ -132,6 +133,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="apache"/>,
+      <xref linkend="boost"/>,
 <!-- support for berkeley db is deprecated since 1.8
       <xref linkend="db"/>,
 -->

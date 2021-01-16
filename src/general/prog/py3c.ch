@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -39,25 +38,25 @@
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
-      <bridgehead renderas="sect4">Package Information</bridgehead>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
             Download (HTTP): <ulink url="&py3c-download-http;"/>
 @y
-            Download (HTTP): <ulink url="&py3c-download-http;"/>
+            &Download; (HTTP): <ulink url="&py3c-download-http;"/>
 @z
 
 @x
             Download MD5 sum: &py3c-md5sum;
 @y
-            Download MD5 sum: &py3c-md5sum;
+            &Download; MD5 sum: &py3c-md5sum;
 @z
 
 @x
             Download size: &py3c-size;
 @y
-            Download size: &py3c-size;
+            &DownloadSize;: &py3c-size;
 @z
 
 @x
@@ -73,45 +72,9 @@
 @z
 
 @x
-      <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required">
-        <xref linkend="pygobject3"/>
-      </para>
-@y
-      <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required">
-        <xref linkend="pygobject3"/>
-      </para>
-@z
-
-@x
-      <bridgehead renderas="sect5">Recommended</bridgehead>
-      <para role="recommended">
-        <xref linkend="at-spi2-core"/>
-      </para>
-@y
-      <bridgehead renderas="sect5">Recommended</bridgehead>
-      <para role="recommended">
-        <xref linkend="at-spi2-core"/>
-      </para>
-@z
-
-@x
-      <bridgehead renderas="sect5">Optional</bridgehead>
-      <para role="optional">
-        <xref linkend="python2"/>
-      </para>
-@y
-      <bridgehead renderas="sect5">Optional</bridgehead>
-      <para role="optional">
-        <xref linkend="python2"/>
-      </para>
-@z
-
-@x
         User Notes: <ulink url="&blfs-wiki;/py3c"/>
 @y
-        User Notes: <ulink url="&blfs-wiki;/py3c"/>
+        &UserNotes;: <ulink url="&blfs-wiki;/py3c"/>
 @z
 
 @x

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY dvisvgm-buildsize     "328 MB (49 MB installed, add 950 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "330 MB (49 MB installed, add 954 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.7 SBU (add 0.5 SBU for the tests, both using parallelism=4)">
 @y
-  <!ENTITY dvisvgm-buildsize     "328 MB (49 MB installed, add 950 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "330 MB (49 MB installed, add 954 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.7 SBU (add 0.5 SBU for the tests, both using parallelism=4)">
 @z
 
 @x

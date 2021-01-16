@@ -179,7 +179,7 @@
 
 @x
         <seg>
-          goa-daemon (library executable)
+          goa-daemon and goa-identity-service (library executables)
         </seg>
         <seg>
           libgoa-1.0.so and libgoa-backend-1.0.so
@@ -191,7 +191,7 @@
         </seg>
 @y
         <seg>
-          goa-daemon (library executable)
+          goa-daemon, goa-identity-service (library executables)
         </seg>
         <seg>
           libgoa-1.0.so, libgoa-backend-1.0.so

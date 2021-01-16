@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY wireshark-buildsize     "719 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-buildsize     "606 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-time          "2.0 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
 @y
-  <!ENTITY wireshark-buildsize     "719 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-buildsize     "606 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-time          "2.0 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
 @z
 
 @x
@@ -104,6 +106,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="cmake"/>,
       <xref linkend="glib2"/>, 
       <xref linkend="libgcrypt"/>, and
       <xref linkend="qt5"/> 
@@ -111,6 +114,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="cmake"/>,
       <xref linkend="glib2"/>, 
       <xref linkend="libgcrypt"/>,
       <xref linkend="qt5"/> 
@@ -492,9 +496,9 @@
 @z
 
 @x reordercap
-            reorders timestamps of input file frames into output file.
+            reorders timestamps of input file frames into an output file.
 @y
-            reorders timestamps of input file frames into output file.
+            reorders timestamps of input file frames into an output file.
 @z
 
 @x sharkd

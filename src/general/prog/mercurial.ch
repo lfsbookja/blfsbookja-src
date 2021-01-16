@@ -184,14 +184,16 @@
       <option>--tmpdir</option>, and run again, some failures are gone, which
       seems to be a problem with the test suite. If this happens, normally,
       from now on, there will be no more such failures whether you use the
-      debug switch or not. One test, test-doctest.py, is known to fail.
+      debug switch or not. 
+      <!--One test, test-doctest.py, is known to fail.-->
 @y
       Normally, the previous failures will be confirmed. However, if
       you add the switch <option>--debug</option> before
       <option>--tmpdir</option>, and run again, some failures are gone, which
       seems to be a problem with the test suite. If this happens, normally,
       from now on, there will be no more such failures whether you use the
-      debug switch or not. One test, test-doctest.py, is known to fail.
+      debug switch or not. 
+      <!--One test, test-doctest.py, is known to fail.-->
 @z
 
 @x

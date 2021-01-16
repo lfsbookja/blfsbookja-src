@@ -80,7 +80,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libtirpc"/>,
+      <xref linkend="libtirpc"/> and
       <xref linkend="rpcsvc-proto"/>
     </para>
 @y
@@ -94,9 +94,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="cyrus-sasl"/> (for SASL authentication),
       <xref linkend="lvm2"/> (libdevmapper for NFSv4 support),
       <xref linkend="libnfsidmap"/> (for NFSv4 support),
       <xref linkend="libnsl"/> (for NIS client support),
+      <xref linkend="openldap"/> (for LDAP authentication),
       <xref linkend="sqlite"/>,
       <xref linkend="mitkrb"/> or
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">
@@ -110,14 +112,16 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="cyrus-sasl"/> (for SASL authentication),
       <xref linkend="lvm2"/> (libdevmapper for NFSv4 support),
       <xref linkend="libnfsidmap"/> (for NFSv4 support),
       <xref linkend="libnsl"/> (for NIS client support),
+      <xref linkend="openldap"/> (for LDAP authentication),
       <xref linkend="sqlite"/>,
       <xref linkend="mitkrb"/> または
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">
         libgssapi
-      </ulink>,
+      </ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">
         librpcsecgss
       </ulink> (for GSS and RPC security support),

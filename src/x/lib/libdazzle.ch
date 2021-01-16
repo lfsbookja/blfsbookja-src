@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libdazzle-buildsize     "45 MB (with tests)">
-  <!ENTITY libdazzle-time          "0.2 SBU (uning parallelism=4; with tests)">
+  <!ENTITY libdazzle-buildsize     "42 MB (with tests)">
+  <!ENTITY libdazzle-time          "0.2 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY libdazzle-buildsize     "45 MB (with tests)">
-  <!ENTITY libdazzle-time          "0.2 SBU (uning parallelism=4; with tests)">
+  <!ENTITY libdazzle-buildsize     "42 MB (with tests)">
+  <!ENTITY libdazzle-time          "0.2 SBU (using parallelism=4; with tests)">
 @z
 
 @x

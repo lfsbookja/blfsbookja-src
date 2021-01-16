@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libsigc-buildsize     "50 MB (with tests)">
-  <!ENTITY libsigc-time          "0.3 SBU (with tests)">
+  <!ENTITY libsigc-buildsize     "39 MB (with tests)">
+  <!ENTITY libsigc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libsigc-buildsize     "50 MB (テスト込み)">
-  <!ENTITY libsigc-time          "0.3 SBU (テスト込み)">
+  <!ENTITY libsigc-buildsize     "39 MB (テスト込み)">
+  <!ENTITY libsigc-time          "0.2 SBU (テスト込み)">
 @z
 
 @x
@@ -85,14 +85,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> and
-      <xref linkend="libxslt"/> (for documentation)
+      <xref linkend="docbook-utils"/>,
+      <xref linkend="doxygen"/>, and
+      <ulink url="&gnome-download-http;/mm-common">mm-common</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="docbook-utils"/>,
       <xref linkend="doxygen"/>,
-      <xref linkend="libxslt"/> (ドキュメントのため)
+      <ulink url="&gnome-download-http;/mm-common">mm-common</ulink>
     </para>
 @z
 
@@ -122,9 +124,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストするなら <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -158,7 +160,7 @@
         </seg>
         <seg>
           /usr/{include,lib}/sigc++-2.0 and
-          /usr/share/{devhelp/books,doc}/libsigc++-2.0
+          /usr/share/{devhelp/books,doc}/libsigc++-2.0 (if the documentation is enabled)
         </seg>
 @y
         <seg>
@@ -169,7 +171,7 @@
         </seg>
         <seg>
           /usr/{include,lib}/sigc++-2.0,
-          /usr/share/{devhelp/books,doc}/libsigc++-2.0
+          /usr/share/{devhelp/books,doc}/libsigc++-2.0 (ドキュメント有効時)
         </seg>
 @z
 

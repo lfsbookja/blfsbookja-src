@@ -210,10 +210,10 @@
           gedit 
         </seg>
         <seg>
-          libgedit-3.36.so
+          libgedit-3.38.so
         </seg>
         <seg>
-          /usr/include/gedit-3.36 and
+          /usr/include/gedit-3.38 and
           /usr/{lib,share,share/gtk-doc/html,share/help/*}/gedit
         </seg>
 @y
@@ -221,10 +221,10 @@
           gedit 
         </seg>
         <seg>
-          libgedit-3.36.so
+          libgedit-3.38.so
         </seg>
         <seg>
-          /usr/include/gedit-3.36,
+          /usr/include/gedit-3.38,
           /usr/{lib,share,share/gtk-doc/html,share/help/*}/gedit
         </seg>
 @z

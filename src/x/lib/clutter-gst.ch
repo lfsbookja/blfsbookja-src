@@ -175,7 +175,7 @@
           None
         </seg>
         <seg>
-          libclutter-gst-3.0.so and /usr/lib/gstreamer-1.0/libgstclutter.so
+          libclutter-gst-3.0.so and /usr/lib/gstreamer-1.0/libcluttergst3.so
         </seg>
         <seg>
           /usr/include/clutter-gst-3.0 and
@@ -186,7 +186,7 @@
           &None;
         </seg>
         <seg>
-          libclutter-gst-3.0.so, /usr/lib/gstreamer-1.0/libgstclutter.so
+          libclutter-gst-3.0.so, /usr/lib/gstreamer-1.0/libcluttergst3.so
         </seg>
         <seg>
           /usr/include/clutter-gst-3.0,

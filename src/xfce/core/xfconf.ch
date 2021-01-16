@@ -91,17 +91,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> and
-      Perl Module
-      <ulink url="http://sourceforge.net/projects/gtk2-perl/files/Glib/">Glib</ulink>
-      (this allows perl developers to store settings in xfconf for perl applications)
+      <xref linkend="vala"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      Perl Module
-      <ulink url="http://sourceforge.net/projects/gtk2-perl/files/Glib/">Glib</ulink>
-      (this allows perl developers to store settings in xfconf for perl applications)
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="vala"/> 
     </para>
 @z
 
@@ -138,12 +134,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -164,10 +154,10 @@
           xfconf-query
         </seg>
         <seg>
-          libxfconf.so
+          libxfconf-0.so
         </seg>
         <seg>
-          /usr/include/xfconf-0,
+          /usr/include/xfce4/xfconf-0,
           /usr/lib/xfce4/xfconf, and
           /usr/share/gtk-doc/html/xfconf
         </seg>
@@ -176,10 +166,10 @@
           xfconf-query
         </seg>
         <seg>
-          libxfconf.so
+          libxfconf-0.so
         </seg>
         <seg>
-          /usr/include/xfconf-0,
+          /usr/include/xfce4/xfconf-0,
           /usr/lib/xfce4/xfconf,
           /usr/share/gtk-doc/html/xfconf
         </seg>

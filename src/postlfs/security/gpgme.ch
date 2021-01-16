@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY gpgme-time          "0.3 SBU (with parallelism=4; with all bindings, add 0.5 SBU for tests)">
+  <!ENTITY gpgme-time          "0.8 SBU (with parallelism=4; with all bindings, add 0.6 SBU for tests)">
 @y
-  <!ENTITY gpgme-time          "0.3 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.5 SBU）">
+  <!ENTITY gpgme-time          "0.8 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.6 SBU）">
 @z
 
 @x
@@ -204,7 +204,7 @@
         <seg>
           /usr/include/{gpgme++,qgpgme,QGpgME},
           /usr/lib/cmake/{Gpgmepp,QGpgme}.
-          /usr/lib/python{2.7,3.7}/site-packages/gpg, and
+          /usr/lib/python{2.7,3.9}/site-packages/gpg, and
           /usr/share/common-lisp/source/gpgme
         </seg>
 @y
@@ -217,7 +217,7 @@
         <seg>
           /usr/include/{gpgme++,qgpgme,QGpgME},
           /usr/lib/cmake/{Gpgmepp,QGpgme}.
-          /usr/lib/python{2.7,3.7}/site-packages/gpg,
+          /usr/lib/python{2.7,3.9}/site-packages/gpg,
           /usr/share/common-lisp/source/gpgme
         </seg>
 @z

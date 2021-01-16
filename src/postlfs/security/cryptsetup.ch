@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cryptsetup-buildsize     "34 MB (add 130 MB for tests)">
-  <!ENTITY cryptsetup-time          "0.2 SBU (add 9.6 SBU for tests)">
+  <!ENTITY cryptsetup-buildsize     "29 MB (add 115 MB for tests)">
+  <!ENTITY cryptsetup-time          "0.2 SBU (add 9 SBU for tests)">
 @y
-  <!ENTITY cryptsetup-buildsize     "34 MB （テスト実施時はさらに 130 MB）">
-  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 9.6 SBU）">
+  <!ENTITY cryptsetup-buildsize     "29 MB （テスト実施時はさらに 115 MB）">
+  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 9 SBU）">
 @z
 
 @x
@@ -153,13 +153,53 @@
 @x
       To test the result, issue as the <systemitem
       class="username">root</systemitem> user: <command>make check</command>.
-      Some tests may fail if the kernel configuration parameters above are not
-      set. <!--Three (of 21) tests are known to fail.-->
+      Some tests will fail if appropriate kernel configuration options are not
+      set. Some additional options that may be needed for tests are: 
+      CONFIG_SCSI_LOWLEVEL,
+      CONFIG_SCSI_DEBUG,
+      CONFIG_BLK_DEV_DM_BUILTIN,
+      CONFIG_CRYPTO_USER,
+      CONFIG_CRYPTO_CRYPTD,
+      CONFIG_CRYPTO_LRW,
+      CONFIG_CRYPTO_XTS,
+      CONFIG_CRYPTO_ESSIV,
+      CONFIG_CRYPTO_CRCT10DIF,
+      CONFIG_CRYPTO_AES_TI,
+      CONFIG_CRYPTO_AES_NI_INTEL,
+      CONFIG_CRYPTO_BLOWFISH,
+      CONFIG_CRYPTO_CAST5,
+      CONFIG_CRYPTO_SERPENT,
+      CONFIG_CRYPTO_SERPENT_SSE2_X86_64,
+      CONFIG_CRYPTO_SERPENT_AVX_X86_64,
+      CONFIG_CRYPTO_SERPENT_AVX2_X86_64, and
+      CONFIG_CRYPTO_TWOFISH_X86_64.  
+      <!--I still had 5 of 19 tests fail after adding the above crypto options in the 
+      kernel.  bdubbs -->
 @y
       ビルド結果をテストする場合は、<systemitem
       class="username">root</systemitem> ユーザーになって <command>make check</command> を実行します。
-      上で説明したカーネル設定パラメーターがセットされていない場合には、失敗するテストが出てきます。
-      <!-- （21 のうちの）1 つのテストは失敗します。 -->
+      カーネル設定パラメーターが適切にセットされていない場合には、失敗するテストが出てきます。
+      テストに必要となる追加のオプションは以下です。
+      CONFIG_SCSI_LOWLEVEL,
+      CONFIG_SCSI_DEBUG,
+      CONFIG_BLK_DEV_DM_BUILTIN,
+      CONFIG_CRYPTO_USER,
+      CONFIG_CRYPTO_CRYPTD,
+      CONFIG_CRYPTO_LRW,
+      CONFIG_CRYPTO_XTS,
+      CONFIG_CRYPTO_ESSIV,
+      CONFIG_CRYPTO_CRCT10DIF,
+      CONFIG_CRYPTO_AES_TI,
+      CONFIG_CRYPTO_AES_NI_INTEL,
+      CONFIG_CRYPTO_BLOWFISH,
+      CONFIG_CRYPTO_CAST5,
+      CONFIG_CRYPTO_SERPENT,
+      CONFIG_CRYPTO_SERPENT_SSE2_X86_64,
+      CONFIG_CRYPTO_SERPENT_AVX_X86_64,
+      CONFIG_CRYPTO_SERPENT_AVX2_X86_64, and
+      CONFIG_CRYPTO_TWOFISH_X86_64.  
+      <!--I still had 5 of 19 tests fail after adding the above crypto options in the 
+      kernel.  bdubbs -->
 @z
 
 @x

@@ -14,15 +14,15 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "521 MB (with downloaded documentation, 196 MB installed)">
+  <!ENTITY git-buildsize     "365 MB (with downloaded documentation, 135 MB installed)">
 @y
-  <!ENTITY git-buildsize     "521 MB（ダウンロードドキュメントを含む、インストールサイズは 196 MB）">
+  <!ENTITY git-buildsize     "365 MB（ダウンロードドキュメントを含む、インストールサイズは 135 MB）">
 @z
 
 @x
-  <!ENTITY git-time          "0.4 SBU (with parallelism=4; add 2.7 SBU for tests with parallelism=4)">
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 4.1 SBU for tests with parallelism=4)">
 @y
-  <!ENTITY git-time          "0.4 SBU（parallelism=4 処理時; テスト実施時はさらに 2.7 SBU）">
+  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; テスト実施時はさらに 4.1 SBU）">
 @z
 
 @x
@@ -224,11 +224,11 @@
 
 @x
       You can build the man pages and/or html docs, or
-      use downloaded ones. If you choose to build them, use next two following
+      use downloaded ones. If you choose to build them, use the next two
       instructions.
 @y
       You can build the man pages and/or html docs, or
-      use downloaded ones. If you choose to build them, use next two following
+      use downloaded ones. If you choose to build them, use the next two
       instructions.
 @z
 
@@ -266,14 +266,14 @@
 @z
 
 @x
-      Install the man pages as
+      Install the man pages as the
       <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し man ページをインストールします。
 @z
 
 @x
-      Install the html docs as
+      Install the html docs as the
       <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行し html ドキュメントをインストールします。

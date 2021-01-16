@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY boost-buildsize     "1.1 GB (175 MB installed)">
-  <!ENTITY boost-time          "1.8 SBU (Using parallelism=4; add 1.2 SBU for tests)">
+  <!ENTITY boost-time          "1.3 SBU (Using parallelism=4; add 1.3 SBU for tests)">
 @y
   <!ENTITY boost-buildsize     "1.1 GB (インストールサイズは 175 MB)">
-  <!ENTITY boost-time          "1.8 SBU (parallelism=4; テスト実施時はさらに 1.2 SBU)">
+  <!ENTITY boost-time          "1.3 SBU (parallelism=4; テスト実施時はさらに 1.3 SBU)">
 @z
 
 @x

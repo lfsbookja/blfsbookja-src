@@ -254,13 +254,16 @@
 @z
 
 @x
-        <seg>enchant and enchant-lsmod-2</seg>
-        <seg>libenchant.so and various backend libraries</seg>
-        <seg>/usr/{include,lib,share}/enchant-2</seg>
+        <seg>enchant (symbolic link to enchant-2) and enchant-lsmod-2</seg>
+        <seg>libenchant-2.so and libenchant.so (symbolic link to
+        libenchant-2.so)</seg>
+        <seg>/usr/include/enchant{,-2}, /usr/lib/enchant-2, and
+        /usr/share/enchant</seg>
 @y
-        <seg>enchant and enchant-lsmod-2</seg>
-        <seg>libenchant.so とさまざまなバックエンドライブラリ</seg>
-        <seg>/usr/{include,lib,share}/enchant</seg>
+        <seg>enchant (enchant-2 へのシンボリックリンク), enchant-lsmod-2</seg>
+        <seg>libenchant-2.so, libenchant.so (libenchant-2.so へのシンボリックリンク)</seg>
+        <seg>/usr/include/enchant{,-2}, /usr/lib/enchant-2,
+        /usr/share/enchant</seg>
 @z
 
 @x

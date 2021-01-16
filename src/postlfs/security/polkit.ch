@@ -80,13 +80,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="glib2"/> and
-      <xref linkend="js68"/>
+      <xref linkend="js78"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="js68"/>
+      <xref linkend="js78"/>
     </para>
 @z
 
@@ -174,11 +174,11 @@
 
 @x
       To test the results, first ensure that the system 
-      <application>D-Bus</application> daemon is running and 
-      restore a missing file. Then run the tests:
+      <application>D-Bus</application> daemon is running.
+      Then run <command>make check</command>.
 @y
-      ビルド結果をテストする場合、まずは <application>D-Bus</application> が稼動していることを確認し、削除されているファイルを元に戻すことが必要です。
-      そして以下のようにテストを実行します。
+      ビルド結果をテストする場合、まずは <application>D-Bus</application> が稼動していることを確認します。
+      そして <command>make check</command> を実行します。
 @z
 
 @x
@@ -218,7 +218,8 @@
 
 @x
           If you did not build <application>Polkit</application> with
-          <application>Linux PAM</application> support, you can skip this section.
+          <application>Linux PAM</application> support, you can skip this
+          section.
 @y
           <application>Linux PAM</application> サポートを含めずに <application>Polkit</application> をビルドした場合は本節を読み飛ばしてください。
 @z

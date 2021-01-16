@@ -191,11 +191,9 @@
           $KF5_PREFIX/include/okular,
           $KF5_PREFIX/lib/cmake/Okular5,
           $KF5_PREFIX/lib/plugins/okular,
-          $KF5_PREFIX/lib/qml/org/kde/okular,
           $KF5_PREFIX/share/kxmlgui5/okular,
           $KF5_PREFIX/share/okular,
-          $KF5_PREFIX/share/doc/HTML/en/okular, and
-          $KF5_PREFIX/share/kpackage/genericqml/org.kde.mobile.okular
+          $KF5_PREFIX/share/doc/HTML/*/okular, and
         </seg>
 @y
         <seg>
@@ -208,11 +206,9 @@
           $KF5_PREFIX/include/okular,
           $KF5_PREFIX/lib/cmake/Okular5,
           $KF5_PREFIX/lib/plugins/okular,
-          $KF5_PREFIX/lib/qml/org/kde/okular,
           $KF5_PREFIX/share/kxmlgui5/okular,
           $KF5_PREFIX/share/okular,
-          $KF5_PREFIX/share/doc/HTML/en/okular, and
-          $KF5_PREFIX/share/kpackage/genericqml/org.kde.mobile.okular
+          $KF5_PREFIX/share/doc/HTML/*/okular
         </seg>
 @z
 

@@ -77,16 +77,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libwnck"/>,
-      <xref linkend="libxfce4ui"/> and
-      <xref linkend="libxfce4util"/>
+      <xref linkend="libwnck"/> and
+      <xref linkend="libxfce4ui"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libwnck"/>,
-      <xref linkend="libxfce4ui"/>,
-      <xref linkend="libxfce4util"/>
+      <xref linkend="libxfce4ui"/> 
     </para>
 @z
 
@@ -194,27 +192,27 @@
 @z
 
 @x xfwm4-settings
-            is a <application>GTK+ 2</application> application that allows
+            is a <application>GTK+ 3</application> application that allows
             setting some preferences such as your theme, keyboard shortcuts and
             mouse focus behaviour.
 @y
-            is a <application>GTK+ 2</application> application that allows
+            is a <application>GTK+ 3</application> application that allows
             setting some preferences such as your theme, keyboard shortcuts and
             mouse focus behaviour.
 @z
 
 @x xfwm4-tweaks-settings
-            is a <application>GTK+ 2</application> application that allows
+            is a <application>GTK+ 3</application> application that allows
             setting some more preferences for <application>Xfwm4</application>.
 @y
-            is a <application>GTK+ 2</application> application that allows
+            is a <application>GTK+ 3</application> application that allows
             setting some more preferences for <application>Xfwm4</application>.
 @z
 
 @x xfwm4-workspace-settings
-            is a <application>GTK+ 2</application> application that allows
+            is a <application>GTK+ 3</application> application that allows
             setting your workspace preferences.
 @y
-            is a <application>GTK+ 2</application> application that allows
+            is a <application>GTK+ 3</application> application that allows
             setting your workspace preferences.
 @z

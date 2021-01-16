@@ -163,6 +163,7 @@
       <xref linkend="git"/> (for downloading test files),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="pygments"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libtiff"/>, and
       <xref linkend="qt5"/>
@@ -177,8 +178,9 @@
       <xref linkend="git"/> (for downloading test files),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="pygments"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libtiff"/>,
+      <xref linkend="libtiff"/>, and
       <xref linkend="qt5"/>
       (required for PDF support in <xref role="nodep" linkend="okular5"/>)
     </para>
@@ -267,26 +269,22 @@
 
 @x
       <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Installs some old
-      <application>Xpdf</application> headers required by certain programs (e.g.
-      <application>Inkscape</application>).
+      <application>Xpdf</application> headers required by certain programs.
+      <!--(e.g. <application>Inkscape</application>).-->
 @y
       <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Installs some old
-      <application>Xpdf</application> headers required by certain programs (e.g.
-      <application>Inkscape</application>).
+      <application>Xpdf</application> headers required by certain programs.
+      <!--(e.g. <application>Inkscape</application>).-->
 @z
 
 @x
       <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if 
-      GTK-Doc is installed and you wish to rebuild and install 
-      the API documentation. If Python 2 is not installed, one script
-      needs to be changed: run <command>sed -i '1s/python/&amp;3/'
-      make-glib-api-docs</command> first.
+      GTK-Doc and Pygments is installed and you wish to rebuild and install 
+      the API documentation.
 @y
       <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if 
-      GTK-Doc is installed and you wish to rebuild and install 
-      the API documentation. If Python 2 is not installed, one script
-      needs to be changed: run <command>sed -i '1s/python/&amp;3/'
-      make-glib-api-docs</command> first.
+      GTK-Doc and Pygments is installed and you wish to rebuild and install 
+      the API documentation.
 @z
 
 @x

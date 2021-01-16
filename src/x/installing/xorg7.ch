@@ -260,11 +260,11 @@
 
 @x
         If you've decided to use the standard <filename
-        class="directory">/usr</filename> prefix, you can omit the remainder of
+        class="directory">/usr</filename> prefix, you must omit the remainder of
         this page and continue at <xref linkend='util-macros'/>.
 @y
         If you've decided to use the standard <filename
-        class="directory">/usr</filename> prefix, you can omit the remainder of
+        class="directory">/usr</filename> prefix, you must omit the remainder of
         this page and continue at <xref linkend='util-macros'/>.
 @z
 

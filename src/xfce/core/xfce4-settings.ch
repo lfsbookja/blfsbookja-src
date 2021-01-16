@@ -78,16 +78,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="exo"/>,
-      <xref linkend="garcon"/> and
-      <xref linkend="libxfce4ui"/>
+      <xref linkend="exo"/> and
+      <xref linkend="garcon"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="exo"/>,
-      <xref linkend="garcon"/>,
-      <xref linkend="libxfce4ui"/>
+      <xref linkend="garcon"/> 
     </para>
 @z
 
@@ -164,8 +162,11 @@
         <seg>
           xfce4-accessibility-settings,
           xfce4-appearance-settings,
+          xfce4-color-settings,
           xfce4-display-settings,
+          xfce4-find-cursor,
           xfce4-keyboard-settings,
+          xfce4-mime-helper,
           xfce4-mime-settings,
           xfce4-mouse-settings,
           xfce4-settings-editor,
@@ -182,8 +183,11 @@
         <seg>
           xfce4-accessibility-settings,
           xfce4-appearance-settings,
+          xfce4-color-settings,
           xfce4-display-settings,
+          xfce4-find-cursor,
           xfce4-keyboard-settings,
+          xfce4-mime-helper,
           xfce4-mime-settings,
           xfce4-mouse-settings,
           xfce4-settings-editor,
@@ -205,10 +209,10 @@
 @z
 
 @x xfce4-accessibility-settings
-            is a <application>GTK+ 2</application> GUI to allow you to change
+            is a <application>GTK+ 3</application> GUI to allow you to change
             some of your keyboard and mouse preferences.
 @y
-            is a <application>GTK+ 2</application> GUI to allow you to change
+            is a <application>GTK+ 3</application> GUI to allow you to change
             some of your keyboard and mouse preferences.
 @z
 

@@ -165,16 +165,6 @@
 @z
 
 @x
-      <command>sed "s/pthread-stubs//" -i configure</command>: This sed
-      removes a dependency on the libpthread-stubs package which is useless on
-      Linux.
-@y
-      <command>sed "s/pthread-stubs//" -i configure</command>:
-      この sed コマンドは libpthread-stubs パッケージへの依存を除きます。
-      これは Linux では不要なものです。
-@z
-
-@x
       <parameter>--without-doxygen</parameter>: Do not use doxygen to
       generate API documentation (default: auto). Without it, if
       <xref linkend="doxygen"/> is installed, the API documentation will be

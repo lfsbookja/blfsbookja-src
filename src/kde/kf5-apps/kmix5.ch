@@ -164,20 +164,24 @@
           kmix, kmixctrl, and kmixremote
         </seg>
         <seg>
-          libkdeinit5_kmixctrl.so and libkdeinit5_kmix.so
+          libkmixcore.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/kmix
+          $KF5_PREFIX/share/kmix,
+          $KF5_PREFIX/share/kxmlgui5/kmix, and
+          $KF5_PREFIX/share/doc/HTML/*/kmix
         </seg>
 @y
         <seg>
           kmix, kmixctrl, kmixremote
         </seg>
         <seg>
-          libkdeinit5_kmixctrl.so, libkdeinit5_kmix.so
+          libkmixcore.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/kmix
+          $KF5_PREFIX/share/kmix,
+          $KF5_PREFIX/share/kxmlgui5/kmix,
+          $KF5_PREFIX/share/doc/HTML/*/kmix
         </seg>
 @z
 

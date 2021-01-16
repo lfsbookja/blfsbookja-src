@@ -79,7 +79,7 @@
     <para role="required">
       <xref linkend="aspell"/>,
       <xref linkend="enchant"/>,
-      <xref linkend="gmime"/>,
+      <xref linkend="gmime3"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="gtk3"/>,and
       <xref linkend="rarian"/>
@@ -89,7 +89,7 @@
     <para role="required">
       <xref linkend="aspell"/>,
       <xref linkend="enchant"/>,
-      <xref linkend="gmime"/>,
+      <xref linkend="gmime3"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="rarian"/>

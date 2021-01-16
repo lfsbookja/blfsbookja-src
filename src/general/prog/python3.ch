@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY python3-buildsize     "187 MB (add 27 MB for tests)">
-  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 2.1 SBU for tests, including rebuilding)">
+  <!ENTITY python3-buildsize     "202 MB (add 31 MB for tests)">
+  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 1.9 SBU for tests, including rebuilding)">
 @y
-  <!ENTITY python3-buildsize     "187 MB (add 27 MB for tests)">
-  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 2.1 SBU for tests, including rebuilding)">
+  <!ENTITY python3-buildsize     "202 MB (add 31 MB for tests)">
+  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 1.9 SBU for tests, including rebuilding)">
 @z
 
 @x
@@ -161,7 +161,6 @@
       then <command>make test</command>. Remember that tests must be executed
       using an X terminal. 
       The test SBU highly depends on the speed of the internet connection.
-      The test_sqlite test is known to fail.
 @y
       The test suite must be run separately from the build, either before or
       after the package is built and installed. Do not run
@@ -175,7 +174,6 @@
       then <command>make test</command>. Remember that tests must be executed
       using an X terminal. 
       The test SBU highly depends on the speed of the internet connection.
-      The test_sqlite test is known to fail.
 @z
 
 @x
@@ -263,14 +261,6 @@
 @z
 
 @x
-      <command>chmod ...</command>: Fix permissions for shared libraries to be
-      consistent with other libraries.
-@y
-      <command>chmod ...</command>: Fix permissions for shared libraries to be
-      consistent with other libraries.
-@z
-
-@x
     <title>Configuring Python 3</title>
 @y
     <title>&Configuring1;Python 3&Configuring2;</title>
@@ -305,7 +295,6 @@
           2to3 (symlink) and
           2to3-&python3-majorver;,
 
-          easy_install (symlink) and
           easy_install-&python3-majorver;,
 
           idle3 (symlink) and
@@ -314,18 +303,17 @@
           pip3 (symlink) and
           pip&python3-majorver;,
 
-          pydoc3 (symlink) and
+          pydoc3 and
           pydoc&python3-majorver;,
 
           python3 (symlink);
           python&python3-majorver;, and
 
+          python3 (symlink), and
+          python&python3-majorver;
+
           python3-config (symlink) and
           python&python3-majorver;-config
-          <!--
-          pyvenv (symlink),
-          pyvenv-&python3-majorver;
-          -->
         </seg>
         <seg>
           libpython&python3-majorver;.so and libpython3.so
@@ -340,7 +328,6 @@
           2to3 (symlink),
           2to3-&python3-majorver;,
 
-          easy_install (symlink),
           easy_install-&python3-majorver;,
 
           idle3 (symlink),
@@ -349,18 +336,17 @@
           pip3 (symlink),
           pip&python3-majorver;,
 
-          pydoc3 (symlink),
+          pydoc3,
           pydoc&python3-majorver;,
 
-          python3 (symlink),
+          python3 (symlink);
           python&python3-majorver;,
+
+          python3 (symlink),
+          python&python3-majorver;
 
           python3-config (symlink),
           python&python3-majorver;-config
-          <!--
-          pyvenv (symlink),
-          pyvenv-&python3-majorver;
-          -->
         </seg>
         <seg>
           libpython&python3-majorver;.so, libpython3.so

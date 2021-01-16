@@ -14,9 +14,11 @@
 @z
 
 @x
-  <!ENTITY NetworkManager-buildsize     "990 MB (with tests)">
+  <!ENTITY NetworkManager-buildsize     "900 MB (with tests)">
+  <!ENTITY NetworkManager-time          "0.9 SBU (with tests, using parallelism=4)">
 @y
-  <!ENTITY NetworkManager-buildsize     "990 MB (テスト込み)">
+  <!ENTITY NetworkManager-buildsize     "900 MB (テスト込み)">
+  <!ENTITY NetworkManager-time          "0.9 SBU (テスト込み、parallelism=4 利用)">
 @z
 
 @x
@@ -92,13 +94,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/> and
+      <xref linkend="jansson"/> and
       <xref linkend="libndp"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
+      <xref linkend="jansson"/>,
       <xref linkend="libndp"/>
     </para>
 @z
@@ -112,7 +114,6 @@
       <xref role="nodep" linkend="dhcp"/> (client only),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
-      <xref linkend="jansson"/>,
       <xref linkend="newt"/> (for <command>nmtui</command>),
       <xref linkend="nss"/>,
       <xref linkend="polkit"/>,
@@ -132,7 +133,6 @@
       <xref role="nodep" linkend="dhcp"/> (クライアントのみ),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
-      <xref linkend="jansson"/>,
       <xref linkend="newt"/> (<command>nmtui</command> のため),
       <xref linkend="nss"/>,
       <xref linkend="polkit"/>,
@@ -141,7 +141,7 @@
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
       <xref linkend="upower"/>,
       <xref linkend="vala"/>,
-      <xref linkend="wpa_supplicant"/> (D-Bus サポートのビルド済み)
+      <xref linkend="wpa_supplicant"/> (D-Bus サポートビルド済み)
     </para>
 @z
 
@@ -158,9 +158,10 @@
       <xref linkend="ModemManager"/>,
       <xref linkend="valgrind"/>,
       <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
+      <ulink url="https://firewalld.org/">firewalld</ulink>,
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
-      <ulink url="https://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/">mobile-broadband-provider-info</ulink>,
+      <ulink url="&gnome-download-http;/mobile-broadband-provider-info/">mobile-broadband-provider-info</ulink>,
       <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
       <ulink url="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</ulink>
     </para>
@@ -177,10 +178,11 @@
       <xref linkend="ModemManager"/>,
       <xref linkend="valgrind"/>,
       <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
+      <ulink url="https://firewalld.org/">firewalld</ulink>,
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
-      <ulink url="https://ftp.gnome.org/pub/gnome/sources/mobile-broadband-provider-info/">mobile-broadband-provider-info</ulink>,
-      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
+      <ulink url="&gnome-download-http;/mobile-broadband-provider-info/">mobile-broadband-provider-info</ulink>,
+      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>,
       <ulink url="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</ulink>
     </para>
 @z
@@ -216,7 +218,8 @@
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Five tests,
+      issue: <command>ninja test</command>. Six tests,
+      <filename>test-l3cfg</filename>,
       <filename>devices/test-acd</filename>,
       <filename>platform/test-tc-linux</filename>,
       <filename>platform/test-route-linux</filename>,
@@ -226,7 +229,8 @@
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Five tests,
+      issue: <command>ninja test</command>. Six tests,
+      <filename>test-l3cfg</filename>,
       <filename>devices/test-acd</filename>,
       <filename>platform/test-tc-linux</filename>,
       <filename>platform/test-route-linux</filename>,
@@ -281,13 +285,11 @@
 @z
 
 @x
-      <parameter>-Djson_validation=false</parameter>,
-      <parameter>-Dlibpsl=false</parameter>, and
+      <parameter>-Dlibpsl=false</parameter> and
       <parameter>-Dovs=false</parameter>: These switches disable building with the
       respective libraries. Remove if you have the needed libraries installed.
 @y
-      <parameter>-Djson_validation=false</parameter>,
-      <parameter>-Dlibpsl=false</parameter>, and
+      <parameter>-Dlibpsl=false</parameter> and
       <parameter>-Dovs=false</parameter>: These switches disable building with the
       respective libraries. Remove if you have the needed libraries installed.
 @z
@@ -384,16 +386,16 @@
 
 @x
         For <application>NetworkManager</application> to work, at least
-        a minimal configuration file must be present. Such file is not
+        a minimal configuration file must be present. Such a file is not
         installed with <command>make install</command>. Issue the following
         command as the <systemitem class="username">root</systemitem> user to
-        create minimal <filename>NetworkManager.conf</filename> file:
+        create a minimal <filename>NetworkManager.conf</filename> file:
 @y
         For <application>NetworkManager</application> to work, at least
-        a minimal configuration file must be present. Such file is not
+        a minimal configuration file must be present. Such a file is not
         installed with <command>make install</command>. Issue the following
         command as the <systemitem class="username">root</systemitem> user to
-        create minimal <filename>NetworkManager.conf</filename> file:
+        create a minimal <filename>NetworkManager.conf</filename> file:
 @z
 
 @x
@@ -401,13 +403,13 @@
         Instead, system specific changes should be made using configuration
         files in the
         <filename class="directory">/etc/NetworkManager/conf.d</filename>
-        direcotry.
+        directory.
 @y
         This file should not be modified directly by users of the system.
         Instead, system specific changes should be made using configuration
         files in the
         <filename class="directory">/etc/NetworkManager/conf.d</filename>
-        direcotry.
+        directory.
 @z
 
 @x
@@ -447,14 +449,14 @@
 @z
 
 @x
-        To allow regular users permission to configure network connections,
+        To allow regular users to configure network connections,
         you should add them to the
         <systemitem class="groupname">netdev</systemitem>
         group, and create a <application>polkit</application> rule that grants
         access. Run the following commands as the
         <systemitem class="username">root</systemitem> user:
 @y
-        To allow regular users permission to configure network connections,
+        To allow regular users to configure network connections,
         you should add them to the
         <systemitem class="groupname">netdev</systemitem>
         group, and create a <application>polkit</application> rule that grants
@@ -564,9 +566,9 @@
 @z
 
 @x nm-online
-            is an utility to find out whether you are online.
+            is an utility to determine whether you are online.
 @y
-            is an utility to find out whether you are online.
+            is an utility to determine whether you are online.
 @z
 
 @x NetworkManager

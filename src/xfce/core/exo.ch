@@ -81,17 +81,15 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
-      <xref linkend="libxfce4ui"/>,
-      <xref linkend="libxfce4util"/> and
-      <xref linkend="perl-uri"/>
+      <xref linkend="libxfce4ui"/>, and
+      <xref linkend="libxfce4util"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
       <xref linkend="libxfce4ui"/>,
-      <xref linkend="libxfce4util"/>,
-      <xref linkend="perl-uri"/>
+      <xref linkend="libxfce4util"/> 
     </para>
 @z
 
@@ -162,33 +160,27 @@
 
 @x
         <seg>
-          exo-csource, exo-desktop-item-edit, exo-open and
-          exo-preferred-applications
+          exo-desktop-item-edit and 
+          exo-open 
         </seg>
         <seg>
-          libexo-1.so and
           libexo-2.so
         </seg>
         <seg>
-          /etc/xdg/xfce4,
-          /usr/{include,lib/xfce4}/exo-1, 
-          /usr/include/exo-2, and
-          /usr/share/{{gtk-doc/html,pixmaps}/exo-1,xfce4}
+          /usr/include/exo-2 and
+          /usr/share/gtk-doc/html/exo-2
         </seg>
 @y
         <seg>
-          exo-csource, exo-desktop-item-edit, exo-open,
-          exo-preferred-applications
+          exo-desktop-item-edit,
+          exo-open 
         </seg>
         <seg>
-          libexo-1.so,
           libexo-2.so
         </seg>
         <seg>
-          /etc/xdg/xfce4,
-          /usr/{include,lib/xfce4}/exo-1, 
           /usr/include/exo-2,
-          /usr/share/{{gtk-doc/html,pixmaps}/exo-1,xfce4}
+          /usr/share/gtk-doc/html/exo-2
         </seg>
 @z
 
@@ -196,14 +188,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x exo-csource
-            is a small utility that generates C code containing arbitrary data,
-            useful for compiling texts or other data directly into programs.
-@y
-            is a small utility that generates C code containing arbitrary data,
-            useful for compiling texts or other data directly into programs.
 @z
 
 @x exo-desktop-item-edit
@@ -222,14 +206,6 @@
             Preferred Applications framework. It can either be used to open a
             list of urls with the default URL handler or launch the preferred
             application for a certain category.
-@z
-
-@x exo-preferred-applications
-            is a command line utility to edit the preferred application that is
-            used to handle a particular type of file or URI.
-@y
-            is a command line utility to edit the preferred application that is
-            used to handle a particular type of file or URI.
 @z
 
 @x libexo-1.so

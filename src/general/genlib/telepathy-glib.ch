@@ -83,13 +83,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/> and
+      <xref linkend="dbus-glib"/>,
+      <xref linkend="gtk-doc"/> (required for autoreconf) and
       <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
+      <xref linkend="gtk-doc"/> (autoreconf にて必要),
       <xref linkend="libxslt"/>
     </para>
 @z
@@ -105,18 +107,6 @@
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="gtk-doc"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="gtk-doc"/>
     </para>
 @z
 
@@ -140,15 +130,15 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>.
-      Four tests are known to fail: <emphasis>test-account</emphasis>, 
+      To test the results, issue: <command>make check</command>.
+      <!--Four tests are known to fail: <emphasis>test-account</emphasis>, 
       <emphasis>test-cm</emphasis>, <emphasis>test-contact-lists</emphasis>, and
-      <emphasis>test-contact-list-client</emphasis>.
+      <emphasis>test-contact-list-client</emphasis>.-->
 @y
       ビルド結果をテストする場合は <command>make -k check</command> を実行します。
-      Four tests are known to fail: <emphasis>test-account</emphasis>, 
+      <!--Four tests are known to fail: <emphasis>test-account</emphasis>, 
       <emphasis>test-cm</emphasis>, <emphasis>test-contact-lists</emphasis>, and
-      <emphasis>test-contact-list-client</emphasis>.
+      <emphasis>test-contact-list-client</emphasis>.-->
 @z
 
 @x

@@ -225,26 +225,20 @@
 @z
 
 @x
-        To start the <command>gdm</command> automatically when the system
-        is booted, install the <filename>/etc/rc.d/init.d/gdm</filename>
-        init script included in the <xref linkend="bootscripts"/> package and
-        set the default runlevel to 5 (graphical login) as the
-        <systemitem class="username">root</systemitem> user:
-@y
-        To start the <command>gdm</command> automatically when the system
-        is booted, install the <filename>/etc/rc.d/init.d/gdm</filename>
-        init script included in the <xref linkend="bootscripts"/> package and
-        set the default runlevel to 5 (graphical login) as the
-        <systemitem class="username">root</systemitem> user:
-@z
-
-@x
-        To start the <command>gdm</command> daemon at boot, enable
-        the previously installed systemd unit by running the following command
+        To start <command>gdm</command> automatically when the system is
+        switched to runlevel 5, install the
+        <filename>/etc/rc.d/init.d/xdm</filename> script and the
+        <filename>/etc/sysconfig/xdm</filename> configuration file
+        included in the <xref linkend="bootscripts"/> package
+        and adjust <filename>/etc/inittab</filename> by running
         as the <systemitem class="username">root</systemitem> user:
 @y
-        To start the <command>gdm</command> daemon at boot, enable
-        the previously installed systemd unit by running the following command
+        To start <command>gdm</command> automatically when the system is
+        switched to runlevel 5, install the
+        <filename>/etc/rc.d/init.d/xdm</filename> script and the
+        <filename>/etc/sysconfig/xdm</filename> configuration file
+        included in the <xref linkend="bootscripts"/> package
+        and adjust <filename>/etc/inittab</filename> by running
         as the <systemitem class="username">root</systemitem> user:
 @z
 
@@ -261,9 +255,13 @@
 @z
 
 @x
-          You should also disable default elogind power management:
+        To start the <command>gdm</command> daemon at boot, enable
+        the previously installed systemd unit by running the following command
+        as the <systemitem class="username">root</systemitem> user:
 @y
-          You should also disable default elogind power management:
+        To start the <command>gdm</command> daemon at boot, enable
+        the previously installed systemd unit by running the following command
+        as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x

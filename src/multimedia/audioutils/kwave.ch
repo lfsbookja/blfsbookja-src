@@ -179,8 +179,9 @@
           29 plugins
         </seg>
         <seg>
-          $KF5_PREFIX/lib/plugins/kwave and
-          $KF5_PREFIX/share/doc/HTML/en/kwave
+          $KF5_PREFIX/lib/plugins/kwave,
+          $KF5_PREFIX/share/kwave,
+          $KF5_PREFIX/share/doc/HTML/*/kwave
         </seg>
 @y
         <seg>
@@ -189,11 +190,12 @@
         <seg>
           libkwave.so, 
           libkwavegui.so,
-          29 plugins
+          29 個のプラグイン
         </seg>
         <seg>
           $KF5_PREFIX/lib/plugins/kwave,
-          $KF5_PREFIX/share/doc/HTML/en/kwave
+          $KF5_PREFIX/share/kwave,
+          $KF5_PREFIX/share/doc/HTML/*/kwave
         </seg>
 @z
 

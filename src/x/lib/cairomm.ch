@@ -78,26 +78,24 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cairo"/> and
-      <xref linkend="libsigc"/>
+      <xref linkend="libsigc3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cairo"/>,
-      <xref linkend="libsigc"/>
+      <xref linkend="libsigc3"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="boost"/> and
       <xref linkend="doxygen"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="boost"/>,
       <xref linkend="doxygen"/>
     </para>
 @z
@@ -122,9 +120,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To run the test suite, run: <command>ninja test</command>.
 @y
-      &notTestSuite;
+      テストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -154,22 +152,22 @@
           None
         </seg>
         <seg>
-          libcairomm-1.0.so
+          libcairomm-1.16.so
         </seg>
         <seg>
-          /usr/{include,lib}/cairomm-1.0 and
-          /usr/share/{devhelp/books/cairomm-1.0,doc/cairomm-&cairomm-version;}
+          /usr/{lib,include}/cairomm-1.16 and
+          /usr/share/{devhelp/books,doc}/cairomm-1.16 (optional)
         </seg>
 @y
         <seg>
 	  &None;
 	</seg>
         <seg>
-          libcairomm-1.0.so
+          libcairomm-1.16.so
         </seg>
         <seg>
-          /usr/{include,lib}/cairomm-1.0,
-          /usr/share/{devhelp/books/cairomm-1.0,doc/cairomm-&cairomm-version;}
+          /usr/{lib,include}/cairomm-1.16,
+          /usr/share/{devhelp/books,doc}/cairomm-1.16 (任意)
         </seg>
 @z
 

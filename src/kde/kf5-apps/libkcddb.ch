@@ -138,8 +138,9 @@
           kcm_cddb.so 
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KF5Cddb and 
+          $KF5_PREFIX/include/KF5/KCddb and 
           $KF5_PREFIX/lib/cmake/KF5Cddb
+          $KF5_PREFIX/share/doc/HTML/*/kcontrol
         </seg>
 @y
         <seg>
@@ -150,8 +151,9 @@
           kcm_cddb.so 
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KF5Cddb,
-          $KF5_PREFIX/lib/cmake/KF5Cddb
+          $KF5_PREFIX/include/KF5/KCddb,
+          $KF5_PREFIX/lib/cmake/KF5Cddb,
+          $KF5_PREFIX/share/doc/HTML/*/kcontrol
         </seg>
 @z
 

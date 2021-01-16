@@ -30,31 +30,31 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&tepl-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&tepl-download-http;"/>
+          &Download; (HTTP): <ulink url="&tepl-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&tepl-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&tepl-download-ftp;"/>
+          &Download; (FTP): <ulink url="&tepl-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &tepl-md5sum;
 @y
-          Download MD5 sum: &tepl-md5sum;
+          &Download; MD5 sum: &tepl-md5sum;
 @z
 
 @x
           Download size: &tepl-size;
 @y
-          Download size: &tepl-size;
+          &DownloadSize;: &tepl-size;
 @z
 
 @x
@@ -80,15 +80,15 @@
     <para role="required">
       <xref linkend="amtk"/>,
       <xref linkend="gtksourceview4"/>,
-      <xref linkend="libxml2"/>, and
+      <xref linkend="icu"/>, and
       <xref linkend="uchardet"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="amtk"/>,
       <xref linkend="gtksourceview4"/>,
-      <xref linkend="libxml2"/>, and
+      <xref linkend="icu"/>,
       <xref linkend="uchardet"/>
     </para>
 @z
@@ -100,7 +100,7 @@
       <xref linkend="valgrind"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/> (for documentation) and
       <xref linkend="valgrind"/>
@@ -110,7 +110,7 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/tepl"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/tepl"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/tepl"/>
 @z
 
 @x
@@ -123,20 +123,19 @@
       Install <application>Tepl</application> by running the following
       commands:
 @y
-      Install <application>Tepl</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Tepl</application> をビルドします。
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -166,22 +165,22 @@
           None
         </seg>
         <seg>
-          libtepl-4.so
+          libtepl-5.so
         </seg>
         <seg>
-          /usr/include/tepl-4 and
-          /usr/share/gtk-doc/html/tepl-4.0
+          /usr/include/tepl-5 and
+          /usr/share/gtk-doc/html/tepl-5.0
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libtepl-4.so
+          libtepl-5.so
         </seg>
         <seg>
-          /usr/include/tepl-4 and
-          /usr/share/gtk-doc/html/tepl-4.0
+          /usr/include/tepl-5,
+          /usr/share/gtk-doc/html/tepl-5.0
         </seg>
 @z
 

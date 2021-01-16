@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY rust-buildsize     "5.7 GB (250 MB installed) including 344 MB of ~/.cargo files for the user building this. Add 2.5 GB if running the tests">
-  <!ENTITY rust-time          "33 SBU (add 17 SBU for tests, both on a 4-core machine)">
+  <!ENTITY rust-buildsize     "7.6 GB (369 MB installed) including 294 MB of ~/.cargo files for the user building this. Add 3.3 GB if running the tests">
+  <!ENTITY rust-time          "39 SBU (add 31 SBU for tests, both on a 4-core machine)">
 @y
-  <!ENTITY rust-buildsize     "5.7 GB (250 MB installed) including 344 MB of ~/.cargo files for the user building this. Add 2.5 GB if running the tests">
-  <!ENTITY rust-time          "33 SBU (4 プロセッサーの場合; テスト実施時はさらに 17 SBU)">
+  <!ENTITY rust-buildsize     "7.6 GB (369 MB installed) including 294 MB of ~/.cargo files for the user building this. Add 3.3 GB if running the tests">
+  <!ENTITY rust-time          "39 SBU (add 31 SBU for tests, both on a 4-core machine)">
 @z
 
 @x
@@ -136,12 +136,24 @@
 
 @x
       The current <application>rustbuild</application> build-system will use
-      all available processors, although it does not scale well and often falls
+      all processors, although it does not scale well and often falls
       back to just using one core while waiting for a library to compile.
+      However it can be mostly limited to a specified number of processors by
+      a combination of adding the switch <literal>--jobs &lt;N&gt;</literal>
+      (e.g. '--jobs 4' to limit to 4 processors) on each invocation of
+      <command>python3 ./x.py</command> <emphasis>and</emphasis> using an
+      environment variable <envar>CARGO_BUILD_JOBS=&lt;N&gt;</envar>. At the
+      moment this is not effective when some of the rustc tests are run.
 @y
       The current <application>rustbuild</application> build-system will use
-      all available processors, although it does not scale well and often falls
+      all processors, although it does not scale well and often falls
       back to just using one core while waiting for a library to compile.
+      However it can be mostly limited to a specified number of processors by
+      a combination of adding the switch <literal>--jobs &lt;N&gt;</literal>
+      (e.g. '--jobs 4' to limit to 4 processors) on each invocation of
+      <command>python3 ./x.py</command> <emphasis>and</emphasis> using an
+      environment variable <envar>CARGO_BUILD_JOBS=&lt;N&gt;</envar>. At the
+      moment this is not effective when some of the rustc tests are run.
 @z
 
 @x
@@ -155,17 +167,13 @@
 @x
         Rustc defaults to building for ALL supported architectures, using a
         shipped copy of LLVM. In BLFS the build is only for the X86
-        architecture. Rustc still claims to require Python 2, but that is only
-        really necessary when building some other architectures with the
-        shipped LLVM.
+        architecture.
         If you intend to develop rust crates, this build may not be good
         enough for your purposes.
 @y
         Rustc defaults to building for ALL supported architectures, using a
         shipped copy of LLVM. In BLFS the build is only for the X86
-        architecture. Rustc still claims to require Python 2, but that is only
-        really necessary when building some other architectures with the
-        shipped LLVM.
+        architecture.
         If you intend to develop rust crates, this build may not be good
         enough for your purposes.
 @z
@@ -261,14 +269,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (used by the testsuite if it is present) and
-      <xref linkend="python2"/> (used by the testsuite)
+      <xref linkend="gdb"/> (used by the testsuite if it is present)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (used by the testsuite if it is present) and
-      <xref linkend="python2"/> (used by the testsuite)
+      <xref linkend="gdb"/> (used by the testsuite if it is present)
     </para>
 @z
 
@@ -355,36 +361,30 @@
 @z
 
 @x
-      The instructions above do not build ARM compilers, so the testsuite
-      <emphasis>will</emphasis> fail and the tests will be reported to end in
-      error, with a backtrace of the last failing test. On a good run, 3 tests
-      which need Thumb (ARM) compilers will fail, all in <filename
-      class="directory">ui/issues</filename> for issues 37131, 49851 and 50993.
-      A fourth test,
-      <filename>run-make-fulldeps/sysroot-crates-are-unstable</filename>
-      fails, presumably because we are using only stable features.
-      <!-- gdb appears to be fixed now
-      If gdb has been installed, in some circumstances tests in
-      <filename class="directory">debuginfo</filename> may fail.--> As with all
-      large testsuites, other tests might
-      fail on some machines - if the number of failures is in the single digits,
+      At a minimum, two tests (run-make-fulldeps/long-linker-command-lines
+      and run-make-fulldeps/sysroot-crates-are-unstable) may fail.
+      If a version of <command>gdb</command> which was released after this
+      version of rust is used, such as <xref linkend="gdb"/>, four more failures
+      (debuginfo/extern-c-fn.rs, debuginfo/generator-objects.rs,
+      debuginfo/issue-57822.rs, debuginfo/pretty-huge-vec.rs) can be expected.
+@y
+      At a minimum, two tests (run-make-fulldeps/long-linker-command-lines
+      and run-make-fulldeps/sysroot-crates-are-unstable) may fail.
+      If a version of <command>gdb</command> which was released after this
+      version of rust is used, such as <xref linkend="gdb"/>, four more failures
+      (debuginfo/extern-c-fn.rs, debuginfo/generator-objects.rs,
+      debuginfo/issue-57822.rs, debuginfo/pretty-huge-vec.rs) can be expected.
+@z
+
+@x
+      As with all large testsuites, other tests might fail on some machines -
+      if the number of additional failures is in the single digits,
       check the log for 'FAILED' and review lines above that, particularly the
       'stderr:' lines. Any mention of
       SIGSEGV or signal 11 in a failing test is a cause for concern.
 @y
-      The instructions above do not build ARM compilers, so the testsuite
-      <emphasis>will</emphasis> fail and the tests will be reported to end in
-      error, with a backtrace of the last failing test. On a good run, 3 tests
-      which need Thumb (ARM) compilers will fail, all in <filename
-      class="directory">ui/issues</filename> for issues 37131, 49851 and 50993.
-      A fourth test,
-      <filename>run-make-fulldeps/sysroot-crates-are-unstable</filename>
-      fails, presumably because we are using only stable features.
-      <!-- gdb appears to be fixed now
-      If gdb has been installed, in some circumstances tests in
-      <filename class="directory">debuginfo</filename> may fail.--> As with all
-      large testsuites, other tests might
-      fail on some machines - if the number of failures is in the single digits,
+      As with all large testsuites, other tests might fail on some machines -
+      if the number of additional failures is in the single digits,
       check the log for 'FAILED' and review lines above that, particularly the
       'stderr:' lines. Any mention of
       SIGSEGV or signal 11 in a failing test is a cause for concern.
@@ -393,37 +393,31 @@
 @x
       If you get any <emphasis>other</emphasis> failing test which reports an
       issue number then you should search for that issue.  For example, when
-      rustc &gt;= 1.41.1 is built with a version of sysllvm before 10.0 the test
-      for issue 69225 fails <ulink
+      rustc &gt;= 1.41.1 was built with a version of sysllvm before 10.0 the test
+      for issue 69225 failed <ulink
       url="https://github.com/rust-lang/rust/issues/69225"/> and that should be
       regarded as a critical failure (they released 1.41.1 because of it).
       Most other failures will not be critical.
 @y
       If you get any <emphasis>other</emphasis> failing test which reports an
       issue number then you should search for that issue.  For example, when
-      rustc &gt;= 1.41.1 is built with a version of sysllvm before 10.0 the test
-      for issue 69225 fails <ulink
+      rustc &gt;= 1.41.1 was built with a version of sysllvm before 10.0 the test
+      for issue 69225 failed <ulink
       url="https://github.com/rust-lang/rust/issues/69225"/> and that should be
       regarded as a critical failure (they released 1.41.1 because of it).
       Most other failures will not be critical.
 @z
 
 @x
-      Therefore, you should determine the number of failures. The total number
-      of tests varies depending on which dependencies are present, e.g. more
-      will be run if <command>gdb</command> is available. If you wish, the
-      total number which were considered can be found if you run:
+      Therefore, you should determine the number of failures.
 @y
-      Therefore, you should determine the number of failures. The total number
-      of tests varies depending on which dependencies are present, e.g. more
-      will be run if <command>gdb</command> is available. If you wish, the
-      total number which were considered can be found if you run:
+      Therefore, you should determine the number of failures.
 @z
 
 @x
-      More importantly, the total of tests which failed can be found by running:
+      The number of tests which failed can be found by running:
 @y
-      More importantly, the total of tests which failed can be found by running:
+      The number of tests which failed can be found by running:
 @z
 
 @x

@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "244 MB (add 31 MB for tests)">
-  <!ENTITY harfbuzz-time          "0.5 SBU (Using parallelism=4; add 0.8 SBU for tests)">
+  <!ENTITY harfbuzz-buildsize     "229 MB (add 6 MB for tests)">
+  <!ENTITY harfbuzz-time          "0.3 SBU (Using parallelism=4; add 0.2 SBU for tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "244 MB （テスト実施時はさらに 31 MB）">
-  <!ENTITY harfbuzz-time          "0.5 SBU （parallelism=4 利用時。テスト実施時はさらに 0.8 SBU）"> 
+  <!ENTITY harfbuzz-buildsize     "229 MB （テスト実施時はさらに 6 MB）">
+  <!ENTITY harfbuzz-time          "0.3 SBU （parallelism=4 利用時。テスト実施時はさらに 0.2 SBU）"> 
 @z
 
 @x
@@ -85,6 +85,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="git"/>,
       <xref linkend="glib2"/> (required for Pango),
       <xref role="first" linkend="graphite2"/> (required for building
         <xref role="nodep" linkend="texlive"/> or 
@@ -97,7 +98,8 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="glib2"/>（Pango に必要）,
+      <xref linkend="git"/>,
+      <xref linkend="glib2"/> (Pango に必要),
       <xref role="first" linkend="graphite2"/> (required for building
         <xref role="nodep" linkend="texlive"/> or 
         <xref role="nodep" linkend="libreoffice"/> with system harfbuzz),
@@ -164,9 +166,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -182,22 +184,12 @@
 @z
 
 @x
-      <parameter>--with-gobject</parameter>: This switch enables building
-      of the <application>HarfBuzz</application> GObject wrapper. Remove
-      it if you did not install <application>GLib</application>.
-@y
-      <parameter>--with-gobject</parameter>:
-      本スイッチは <application>HarfBuzz</application> GObject ラッパーのビルドを指示します。
-      <application>GLib</application> をインストールしていない場合はこれを取り除いてください。
-@z
-
-@x
-      <parameter>--with-graphite2</parameter>: This switch enables
+      <parameter>-Dgraphite=enabled</parameter>: This switch enables
       <application>Graphite2</application> support, which is required for
       building <xref linkend="texlive"/> or <xref linkend="libreoffice"/>
       with system harfbuzz.
 @y
-      <parameter>--with-graphite2</parameter>:
+      <parameter>-Dgraphite=enabled</parameter>:
       本スイッチは <application>Graphite2</application> サポートを有効にします。
       <xref linkend="texlive"/> または <xref
       linkend="libreoffice"/> をインストール済 harfbuzz を用いてビルドする場合に必要となります。
