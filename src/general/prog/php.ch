@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "694 MB (add 7 MB for tests, add 103 MB for documentation)">
-  <!ENTITY php-time          "1.8 SBU (with parallelism=4; add 7.9 SBU for tests)">
+  <!ENTITY php-buildsize     "675 MB (with tests, add 182 MB for documentation)">
+  <!ENTITY php-time          "1.8 SBU (with parallelism=4; add 1.9 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "694 MB（テスト実施時はさらに 7 MB、ドキュメント生成時は 103 MB）">
-  <!ENTITY php-time          "1.8 SBU（parallelism=4 利用時、テスト実施時はさらに 7.9 SBU）">
+  <!ENTITY php-buildsize     "675 MB（テスト込み、ドキュメント生成時はさらに 182 MB）">
+  <!ENTITY php-time          "1.8 SBU（parallelism=4 利用時、テスト実施時はさらに 1.9 SBU）">
 @z
 
 @x
@@ -630,7 +630,7 @@
         phar (symlink), phar.phar, php,
         php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
 
-        <seg>dba.{so,a} and opcache.{so,a} in
+        <seg>dba.so and opcache.so in
         /usr/lib/php/extensions/no-debug-non-zts-20200930</seg>
 
         <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php, and
@@ -638,12 +638,12 @@
 @y
         <seg><!-- not built anymore pear, peardev, pecl,-->
         phar (symlink), phar.phar, php,
-        php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
+        php-cgi, php-config, php-fpm, phpdbg, phpize</seg>
 
-        <seg>dba.{so,a} and opcache.{so,a} in
+        <seg>dba.so and opcache.so in
         /usr/lib/php/extensions/no-debug-non-zts-20200930</seg>
 
-        <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php, and
+        <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php,
         /usr/share/doc/php-&php-version;</seg>
 @z
 

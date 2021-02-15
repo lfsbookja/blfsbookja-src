@@ -77,17 +77,15 @@
       <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
       <para role="recommended">
         <xref linkend="perl-cpan-meta-check"/>,
-        <xref linkend="perl-ipc-system-simple"/>,
-        <xref linkend="perl-test-file-sharedir"/> and
-        <xref linkend="perl-test-warnings"/>
+        <xref linkend="perl-ipc-system-simple"/> and
+        <xref linkend="perl-test-file-sharedir"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Recommended; (テストスイートに必要)</bridgehead>
       <para role="recommended">
         <xref linkend="perl-cpan-meta-check"/>,
         <xref linkend="perl-ipc-system-simple"/>,
-        <xref linkend="perl-test-file-sharedir"/>,
-        <xref linkend="perl-test-warnings"/>
+        <xref linkend="perl-test-file-sharedir"/>
       </para>
 @z
 

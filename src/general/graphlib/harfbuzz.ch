@@ -85,7 +85,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="git"/>,
+      <xref linkend="gobject-introspection"/> (required if building GNOME),
       <xref linkend="glib2"/> (required for Pango),
       <xref role="first" linkend="graphite2"/> (required for building
         <xref role="nodep" linkend="texlive"/> or 
@@ -98,7 +98,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="git"/>,
+      <xref linkend="gobject-introspection"/> (GNOME ビルド時に必要),
       <xref linkend="glib2"/> (Pango に必要),
       <xref role="first" linkend="graphite2"/> (required for building
         <xref role="nodep" linkend="texlive"/> or 
@@ -116,7 +116,7 @@
       <xref linkend="cairo"/> (circular: build cairo and all its recommended
       dependencies, including harfbuzz, first, then rebuild harfbuzz if the
       cairo backend is needed),
-      <xref linkend="gobject-introspection"/>,
+      <xref linkend="git"/>,
       <xref linkend="gtk-doc"/>, and
       <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
       (Python 3 module, for the testsuite)
@@ -127,7 +127,7 @@
       <xref linkend="cairo"/> (circular: build cairo and all its recommended
       dependencies, including harfbuzz, first, then rebuild harfbuzz if the
       cairo backend is needed),
-      <xref linkend="gobject-introspection"/>,
+      <xref linkend="git"/>,
       <xref linkend="gtk-doc"/>, and
       <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
       (Python 3 module, for the testsuite)

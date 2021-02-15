@@ -87,12 +87,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <!-- <xref linkend="dejagnu"/> (for full test coverage), -->
+      <xref linkend="bind-utils"/>,
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,<!-- Seems so that mit has its own
       implementation of rpc now.
       <xref linkend="rpcbind"/> (used during the testsuite),-->
       <xref linkend="valgrind"/> (used during the testsuite),
+      <xref linkend="yasm"/>,
       <ulink url="http://thrysoee.dk/editline/">libedit</ulink>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
       <ulink url="https://pypi.org/project/pyrad/">pyrad</ulink>, and
@@ -102,12 +104,14 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <!-- <xref linkend="dejagnu"/> (for full test coverage), -->
+      <xref linkend="bind-utils"/>,
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,<!-- Seems so that mit has its own
       implementation of rpc now.
       <xref linkend="rpcbind"/> (used during the testsuite),-->
       <xref linkend="valgrind"/> (テストスイート実行時に利用),
+      <xref linkend="yasm"/>,
       <ulink url="http://thrysoee.dk/editline/">libedit</ulink>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
       <ulink url="https://pypi.org/project/pyrad/">pyrad</ulink>,
@@ -181,25 +185,27 @@
 @z
 
 @x
-      The first sed increases the width of the virtual terminal used for some
-      tests to prevent some spurious text in the output which is taken as a
-      failure. The second <command>sed</command> removes a test that is known
-      to fail.
+      The first <command>sed</command> increases the width of the virtual 
+      terminal used for some tests to prevent some spurious text in the output
+      which is taken as a failure. The second <command>sed</command> removes a
+      test that is known to fail. The third <command>sed</command> removes a
+      test that is known to hang.
 @y
-      The first sed increases the width of the virtual terminal used for some
-      tests to prevent some spurious text in the output which is taken as a
-      failure. The second <command>sed</command> removes a test that is known
-      to fail.
+      The first <command>sed</command> increases the width of the virtual 
+      terminal used for some tests to prevent some spurious text in the output
+      which is taken as a failure. The second <command>sed</command> removes a
+      test that is known to fail. The third <command>sed</command> removes a
+      test that is known to hang.
 @z
 
 @x
       <parameter>--localstatedir=/var/lib</parameter>: This option is
-      used so that the Kerberos variable run-time data is located in
+      used so that the Kerberos variable runtime data is located in
       <filename class="directory">/var/lib</filename> instead of
       <filename class="directory">/usr/var</filename>.
 @y
       <parameter>--localstatedir=/var/lib</parameter>: This option is
-      used so that the Kerberos variable run-time data is located in
+      used so that the Kerberos variable runtime data is located in
       <filename class="directory">/var/lib</filename> instead of
       <filename class="directory">/usr/var</filename>.
 @z

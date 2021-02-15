@@ -54,7 +54,6 @@ CHANGE_FILES = \
 	libksba.ch \
 	liblinear.ch \
 	libmbim.ch \
-	libnfsidmap.ch \
 	libpaper.ch \
 	libportal.ch \
 	libqmi.ch \

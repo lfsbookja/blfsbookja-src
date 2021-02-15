@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libsndfile-buildsize     "34 MB (with tests)">
-  <!ENTITY libsndfile-time          "0.6 SBU (with tests)">
+  <!ENTITY libsndfile-buildsize     "13 MB (add 9 MB for tests)">
+  <!ENTITY libsndfile-time          "0.3 SBU (add 0.6 SBU for tests)">
 @y
-  <!ENTITY libsndfile-buildsize     "34 MB (テスト込み)">
-  <!ENTITY libsndfile-time          "0.6 SBU (テスト込み)">
+  <!ENTITY libsndfile-buildsize     "13 MB (テスト実施時はさらに 9 MB)">
+  <!ENTITY libsndfile-time          "0.3 SBU (テスト実施時はさらに 0.6 SBU)">
 @z
 
 @x
@@ -86,28 +86,30 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="flac"/>,
-      <xref linkend="libogg"/>, and
-      <xref linkend="libvorbis"/>
+      <xref linkend="opus"/>, and
+      <xref linkend="libvorbis"/><!-- brings in libogg -->
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="flac"/>,
-      <xref linkend="libogg"/>,
-      <xref linkend="libvorbis"/>
+      <xref linkend="opus"/>,
+      <xref linkend="libvorbis"/><!-- brings in libogg -->
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="alsa-lib"/> and
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="speex"/>, and
       <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="alsa-lib"/>,
+      <xref linkend="speex"/>,
       <xref linkend="sqlite"/>
     </para>
 @z
@@ -175,8 +177,7 @@
           sndfile-interleave,
           sndfile-metadata-get,
           sndfile-metadata-set,
-          sndfile-play,
-          sndfile-regtest and
+          sndfile-play, and
           sndfile-salvage
         </seg>
         <seg>libsndfile.so</seg>
@@ -192,7 +193,6 @@
           sndfile-metadata-get,
           sndfile-metadata-set,
           sndfile-play,
-          sndfile-regtest,
           sndfile-salvage
         </seg>
         <seg>libsndfile.so</seg>

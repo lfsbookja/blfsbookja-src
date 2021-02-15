@@ -119,6 +119,7 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
+      <xref linkend="doxygen"/> (for generating HTML documentation),
       <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
@@ -139,6 +140,7 @@
 -->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
+      <xref linkend="doxygen"/> (for generating HTML documentation),
       <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->

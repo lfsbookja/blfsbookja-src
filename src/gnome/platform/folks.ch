@@ -118,15 +118,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="tracker"/> (Broken due to API changes in tracker),
-      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>, and
+  <!--<xref linkend="tracker"/> (Broken due to API changes in tracker), -->
+      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink> and
       <ulink url="https://packages.debian.org/jessie/zeitgeist">Zeitgeist</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="tracker"/> (Broken due to API changes in tracker),
-      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink>,
+  <!--<xref linkend="tracker"/> (Broken due to API changes in tracker), -->
+      <ulink url="&gnome-download-http;/libsocialweb/">libsocialweb</ulink> and
       <ulink url="https://packages.debian.org/jessie/zeitgeist">Zeitgeist</ulink>
     </para>
 @z

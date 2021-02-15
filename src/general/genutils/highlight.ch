@@ -176,15 +176,19 @@
 @z
 
 @x
-      <parameter>doc_dir=/usr/share/doc/highlight-&highlight-version;</parameter>:
+      <parameter>doc_dir=/usr/share/doc/highlight-&highlight-version;/</parameter>:
       install highlight documentation into a versioned directory. This
       parameter is also needed for <command>make gui</command>, because
-      its value would be hardcoded into the gui executable.
+      its value would be hardcoded into the gui executable.  Note that the
+      trailing <quote>/</quote> is necessary.
+	</para>
 @y
-      <parameter>doc_dir=/usr/share/doc/highlight-&highlight-version;</parameter>:
+      <parameter>doc_dir=/usr/share/doc/highlight-&highlight-version;/</parameter>:
       install highlight documentation into a versioned directory. This
       parameter is also needed for <command>make gui</command>, because
-      its value would be hardcoded into the gui executable.
+      its value would be hardcoded into the gui executable.  Note that the
+      trailing <quote>/</quote> is necessary.
+	</para>
 @z
 
 @x

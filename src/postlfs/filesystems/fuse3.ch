@@ -240,7 +240,7 @@
 
 @x
         <seg>
-          fusermount3, mount.fuse3
+          fusermount3 and mount.fuse3
         </seg>
         <seg>
           libfuse3.so
@@ -256,7 +256,7 @@
           libfuse3.so
         </seg>
         <seg>
-          /usr/include/fuse3 and /usr/share/doc/fuse-&fuse3-version;
+          /usr/include/fuse3, /usr/share/doc/fuse-&fuse3-version;
         </seg>
 @z
 

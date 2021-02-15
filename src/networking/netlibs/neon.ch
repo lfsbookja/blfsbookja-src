@@ -134,31 +134,20 @@
 @x
       <parameter>--with-ssl</parameter>: This switch enables SSL support
       using <application>OpenSSL</application> or
-      <application>GnuTLS</application> respectively. Remove it if
-      you don't have any of these installed. To force
-      <application>GnuTLS</application> usage when both are present,
+      <application>GnuTLS</application> respectively. To force
+      <application>GnuTLS</application> usage when it is are present,
       simply pass <option>--with-ssl=gnutls</option> and 
       <option>--with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt</option> to the
       <command>configure</command> script.
 @y
       <parameter>--with-ssl</parameter>: This switch enables SSL support
       using <application>OpenSSL</application> or
-      <application>GnuTLS</application> respectively. Remove it if
-      you don't have any of these installed. To force
-      <application>GnuTLS</application> usage when both are present,
+      <application>GnuTLS</application> respectively. To force
+      <application>GnuTLS</application> usage when it is are present,
       simply pass <option>--with-ssl=gnutls</option> and 
       <option>--with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt</option> to the
       <command>configure</command> script.
 @z
-
-%@x
-%      <option>--with-libxml2</option>: This switch forces the use of
-%      <application>libxml2</application> instead of
-%      <application>Expat</application>.
-%@y
-%      <option>--with-libxml2</option>:
-%      このスイッチは <application>Expat</application> は利用せず <application>libxml2</application> を利用することを指示します。
-%@z
 
 @x
     <title>Contents</title>

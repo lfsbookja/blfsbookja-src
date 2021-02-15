@@ -67,6 +67,16 @@
       <revremark>進行中リリース</revremark>
 @z
 
+@x
+      <revnumber>10.0</revnumber>
+      <date>2020-09-01</date>
+      <revremark>Twenty-second Release</revremark>
+@y
+      <revnumber>10.0</revnumber>
+      <date>2020-09-01</date>
+      <revremark>第 22 次リリース</revremark>
+@z
+
 @x 2020-03-01
       <revremark>Twenty-first Release</revremark>
 @y

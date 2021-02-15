@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY talloc-buildsize     "9.8 MB (with tests)">
-  <!ENTITY talloc-time          "0.4 SBU (with tests)">
+  <!ENTITY talloc-buildsize     "10 MB (with tests)">
+  <!ENTITY talloc-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY talloc-buildsize     "9.8 MB (テスト込み)">
-  <!ENTITY talloc-time          "0.4 SBU (テスト込み)">
+  <!ENTITY talloc-buildsize     "10 MB (テスト込み)">
+  <!ENTITY talloc-time          "0.3 SBU (テスト込み)">
 @z
 
 @x
@@ -98,9 +98,10 @@
       <xref linkend="python2"/> (To build Python-2 module),
       <xref linkend="gdb"/>,
       <xref linkend="git"/>,
-      <xref linkend="xfsprogs"/>,
-      <xref linkend="libtirpc"/>, and
-      <xref linkend="valgrind"/>
+      <xref linkend="libnsl"/>,
+      <xref linkend="libtirpc"/>,
+      <xref linkend="valgrind"/>, and
+      <xref linkend="xfsprogs"/>
       <!-- These are all looked for at build time, but might not actually be used.-->
     </para>
 @y
@@ -112,9 +113,10 @@
       <xref linkend="python2"/> (Python-2 モジュール生成時),
       <xref linkend="gdb"/>,
       <xref linkend="git"/>,
-      <xref linkend="xfsprogs"/>,
+      <xref linkend="libnsl"/>,
       <xref linkend="libtirpc"/>,
-      <xref linkend="valgrind"/>
+      <xref linkend="valgrind"/>,
+      <xref linkend="xfsprogs"/>
       <!-- These are all looked for at build time, but might not actually be used.-->
     </para>
 @z
@@ -178,7 +180,7 @@
         </seg>
         <seg>
           libpytalloc-util.&python3-lib-suffix;.so,
-          libpytalloc-util.so,
+          <!--libpytalloc-util.so,-->
           libtalloc.so,
           <!-- NOTE: The below is Optional now. -->
           talloc.so (Python-2 Module) and
@@ -193,7 +195,7 @@
         </seg>
         <seg>
           libpytalloc-util.&python3-lib-suffix;.so,
-          libpytalloc-util.so,
+          <!--libpytalloc-util.so,-->
           libtalloc.so,
           <!-- NOTE: The below is Optional now. -->
           talloc.so (Python-2 モジュール),

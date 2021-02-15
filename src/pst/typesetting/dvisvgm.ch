@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY dvisvgm-buildsize     "330 MB (49 MB installed, add 954 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.7 SBU (add 0.5 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "334 MB (49 MB installed, add 959 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
 @y
-  <!ENTITY dvisvgm-buildsize     "330 MB (49 MB installed, add 954 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.7 SBU (add 0.5 SBU for the tests, both using parallelism=4)">
+  <!ENTITY dvisvgm-buildsize     "334 MB (49 MB installed, add 959 MB for the tests)">
+  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
 @z
 
 @x
@@ -168,11 +168,34 @@
 @z
 
 @x
-      Now install <application>dvisvgm</application> by running the following
+      The testsuite assumes that a modern version of <application>Python</application>
+      has been installed as plain <command>python</command>. Adjust it to use
+      <command>python3</command> with the following sed:
+@y
+      The testsuite assumes that a modern version of <application>Python</application>
+      has been installed as plain <command>python</command>. Adjust it to use
+      <command>python3</command> with the following sed:
+@z
+
+@x
+      The testsuite assumes that a modern version of <application>Python</application>
+      has been installed as plain <command>python</command>. Changing this to use
+      <command>python3</command> requires a sed to one of <filename>Makefile.in</filename>
+      files, but that gets regenerated when <command>autoreconf</command> is run, so
+      the sed must come after that.
+@y
+      The testsuite assumes that a modern version of <application>Python</application>
+      has been installed as plain <command>python</command>. Changing this to use
+      <command>python3</command> requires a sed to one of <filename>Makefile.in</filename>
+      files, but that gets regenerated when <command>autoreconf</command> is run, so
+      the sed must come after that.
+@z
+
+@x
+      Install <application>dvisvgm</application> by running the following
       commands:
 @y
-      Now install <application>dvisvgm</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>dvisvgm</application> をビルドします。
 @z
 
 @x

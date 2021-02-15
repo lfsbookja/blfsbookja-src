@@ -77,12 +77,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-       <xref linkend='libsndfile'/> and
+       <xref linkend="alsa-lib"/>,
+       <xref linkend='libsndfile'/>, and
        <xref linkend="fftw"/> (for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+       <xref linkend="alsa-lib"/>,
        <xref linkend='libsndfile'/>,
        <xref linkend="fftw"/> (テスト実行時)
     </para>
@@ -142,11 +144,11 @@
 @z
 
 @x
-        <seg>sndfile-resample</seg>
+        <seg>None</seg>
         <seg>libsamplerate.so</seg>
         <seg>/usr/share/doc/libsamplerate-&libsamplerate-version;</seg>
 @y
-        <seg>sndfile-resample</seg>
+        <seg>&None;</seg>
         <seg>libsamplerate.so</seg>
         <seg>/usr/share/doc/libsamplerate-&libsamplerate-version;</seg>
 @z

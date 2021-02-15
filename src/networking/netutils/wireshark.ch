@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY wireshark-buildsize     "606 MB (with all optional dependencies available in the BLFS book)">
-  <!ENTITY wireshark-time          "2.0 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-buildsize     "749 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-time          "2.4 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
 @y
-  <!ENTITY wireshark-buildsize     "606 MB (with all optional dependencies available in the BLFS book)">
-  <!ENTITY wireshark-time          "2.0 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-buildsize     "749 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-time          "2.4 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
 @z
 
 @x

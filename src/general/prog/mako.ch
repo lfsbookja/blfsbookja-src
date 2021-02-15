@@ -173,7 +173,7 @@
 
 @x
           <seg>
-            <!--mako-render and/or--> mako-render3
+            mako-render
           </seg>
           <seg>
             None
@@ -181,12 +181,14 @@
           <seg>
 <!--            /usr/lib/python&python2-majorver;/site-packages/mako,
             /usr/lib/python&python2-majorver;/site-packages/Mako-&mako-version;-py&python2-majorver;.egg-info and/or-->
-            /usr/lib/python&python3-majorver;/site-packages/mako and 
-            /usr/lib/python&python3-majorver;/site-packages/Mako-&mako-version;-py&python3-majorver;.egg-info
+            /usr/lib/python&python3-majorver;/site-packages/Mako-&mako-version;-py&python3-majorver;.egg
+<!-- This is different when doing a -\-root install and a direct install.
+     In the latter case, there is only a .egg directory, and no mako
+     directory. -->
           </seg>
 @y
           <seg>
-            <!--mako-render and/or--> mako-render3
+            mako-render
           </seg>
           <seg>
             &None;
@@ -194,7 +196,9 @@
           <seg>
 <!--            /usr/lib/python&python2-majorver;/site-packages/mako,
             /usr/lib/python&python2-majorver;/site-packages/Mako-&mako-version;-py&python2-majorver;.egg-info and/or-->
-            /usr/lib/python&python3-majorver;/site-packages/mako,
-            /usr/lib/python&python3-majorver;/site-packages/Mako-&mako-version;-py&python3-majorver;.egg-info
+            /usr/lib/python&python3-majorver;/site-packages/Mako-&mako-version;-py&python3-majorver;.egg
+<!-- This is different when doing a -\-root install and a direct install.
+     In the latter case, there is only a .egg directory, and no mako
+     directory. -->
           </seg>
 @z

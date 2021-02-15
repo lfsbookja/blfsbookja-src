@@ -70,14 +70,16 @@
 @x
       <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
       <para role="recommended">
+        <xref linkend="perl-cpan-meta-check"/>,
         <xref linkend="perl-test-fatal"/>,
-        <xref linkend="perl-test-requires"/>
+        <xref linkend="perl-test-needs"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Recommended; (テストスイートに必要)</bridgehead>
       <para role="recommended">
+        <xref linkend="perl-cpan-meta-check"/>,
         <xref linkend="perl-test-fatal"/>,
-        <xref linkend="perl-test-requires"/>
+        <xref linkend="perl-test-needs"/>
       </para>
 @z
 

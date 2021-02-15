@@ -383,7 +383,8 @@
           libLTO.so, 
           libRemarks.so, 
           libclang.so,
-          and libclang*.a (63 libraries)
+          libclang*.a (63 libraries),
+          and LLVMgold.so
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
@@ -421,7 +422,8 @@
           libLTO.so, 
           libRemarks.so, 
           libclang.so,
-          libclang*.a (63 個のライブラリ)
+          libclang*.a (63 個のライブラリ),
+          LLVMgold.so
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},

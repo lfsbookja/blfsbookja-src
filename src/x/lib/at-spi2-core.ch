@@ -142,14 +142,16 @@
 
 @x
       A session bus address, normally available in an Xorg terminal,
-      is necessary to run the tests. To test the results,
-      issue: <command>ninja test</command>. The memory test is known
-      to timeout.
+      is necessary to run the tests. And, the test suite requires the 
+      glib schemas of the package already installed. To test the results,
+      install the package first, then issue: <command>ninja test</command>.
+      The memory test is known to timeout.
 @y
       A session bus address, normally available in an Xorg terminal,
-      is necessary to run the tests. To test the results,
-      issue: <command>ninja test</command>. The memory test is known
-      to timeout.
+      is necessary to run the tests. And, the test suite requires the 
+      glib schemas of the package already installed. To test the results,
+      install the package first, then issue: <command>ninja test</command>.
+      The memory test is known to timeout.
 @z
 
 @x

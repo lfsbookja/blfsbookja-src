@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY samba-buildsize     "629 MB (add 380 MB for quicktest)">
-  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 5.1 SBU for quicktest)">
+  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 4.9 SBU for quicktest)">
 @y
   <!ENTITY samba-buildsize     "629 MB (add 380 MB for quicktest)">
-  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 5.1 SBU for quicktest)">
+  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 4.9 SBU for quicktest)">
 @z
 
 @x
@@ -170,7 +170,7 @@
       <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
       <ulink url="https://cwrap.org/">cwrap</ulink>,
       <ulink url="&pypi;/dnspython/">dnspython</ulink>,
-      <ulink url="https://packages.debian.org/stretch/fam/">FAM</ulink>,
+      <ulink url="https://packages.debian.org/stretch/fam">FAM</ulink>,
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
       <ulink url="https://www.gluster.org/">GlusterFS</ulink>,
       <ulink url="https://github.com/heimdal/">Heimdal</ulink> (included),
@@ -209,7 +209,7 @@
       <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
       <ulink url="https://cwrap.org/">cwrap</ulink>,
       <ulink url="&pypi;/dnspython/">dnspython</ulink>,
-      <ulink url="https://packages.debian.org/stretch/fam/">FAM</ulink>,
+      <ulink url="https://packages.debian.org/stretch/fam">FAM</ulink>,
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
       <ulink url="https://www.gluster.org/">GlusterFS</ulink>,
       <ulink url="https://github.com/heimdal/">Heimdal</ulink> (included),
@@ -233,12 +233,6 @@
     <title>Installation of Samba</title>
 @y
     <title>&InstallationOf1;Samba&InstallationOf2;</title>
-@z
-
-@x
-      Fix a file that fails to compile with Glibc-2.32:
-@y
-      Fix a file that fails to compile with Glibc-2.32:
 @z
 
 @x

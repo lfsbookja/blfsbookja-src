@@ -97,6 +97,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="nfs-utils"/>,
+      <xref linkend="libnsl"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openldap"/> (client only), and
@@ -106,6 +107,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="nfs-utils"/>,
+      <xref linkend="libnsl"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openldap"/> (クライアントのみ),

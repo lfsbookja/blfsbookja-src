@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "239 MB (add 38 MB for tests)">
-  <!ENTITY postgresql-time          "0.7 SBU (with parallelism=4, add 0.1 SBU for tests)">
+  <!ENTITY postgresql-buildsize     "240 MB (add 38 MB for tests)">
+  <!ENTITY postgresql-time          "0.6 SBU (with parallelism=4, add 0.1 SBU for tests)">
 @y
-  <!ENTITY postgresql-buildsize     "239 MB （テスト実施時はさらに 38 MB）">
-  <!ENTITY postgresql-time          "0.7 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
+  <!ENTITY postgresql-buildsize     "240 MB （テスト実施時はさらに 38 MB）">
+  <!ENTITY postgresql-time          "0.6 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
 @z
 
 @x
@@ -89,6 +89,7 @@
     <para role="optional">
       <xref linkend="python2"/>,
       <!-- <xref linkend="tcl"/>, -->
+      <xref linkend="icu"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="openldap"/>,
@@ -101,11 +102,12 @@
     <para role="optional">
       <xref linkend="python2"/>,
       <!-- <xref linkend="tcl"/>, -->
+      <xref linkend="icu"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="openldap"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="mitkrb"/> and
+      <xref linkend="mitkrb"/>,
       <ulink url="https://developer.apple.com/bonjour/">Bonjour</ulink>
     </para>
 @z
@@ -255,13 +257,13 @@
 @z
 
 @x
-      <command>sed -i ...</command>: This sed changes server socket location
+      <command>sed -i ...</command>: This sed changes the server socket location
       from <filename class="directory">/tmp</filename> to
       <filename class="directory">/run/postgresql</filename><!-- and fix up the
       regression tests to use <filename class="directory">/tmp</filename> so
       that they can work reliably-->.
 @y
-      <command>sed -i ...</command>: This sed changes server socket location
+      <command>sed -i ...</command>: This sed changes the server socket location
       from <filename class="directory">/tmp</filename> to
       <filename class="directory">/run/postgresql</filename><!-- and fix up the
       regression tests to use <filename class="directory">/tmp</filename> so
@@ -398,7 +400,7 @@
           ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_checksums,
           pg_config, pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
           pg_receivewal, pg_recvlogical, pg_resetwal, pg_restore, pg_rewind,
-          pg_test_fsync, pg_test_timing, pg_upgrade, pg_verify_backup,
+          pg_test_fsync, pg_test_timing, pg_upgrade, pg_verifybackup,
           pg_waldump, pgbench,
           postgres, postmaster (deprecated), psql, reindexdb, vacuumdb,
           optionally, if Tcl support has been built, pltcl_delmod,
@@ -424,7 +426,7 @@
           ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_checksums,
           pg_config, pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
           pg_receivewal, pg_recvlogical, pg_resetwal, pg_restore, pg_rewind,
-          pg_test_fsync, pg_test_timing, pg_upgrade, pg_verify_backup,
+          pg_test_fsync, pg_test_timing, pg_upgrade, pg_verifybackup,
           pg_waldump, pgbench,
           postgres, postmaster (deprecated), psql, reindexdb, vacuumdb,
           optionally, if Tcl support has been built, pltcl_delmod,
@@ -617,9 +619,9 @@
 @z
 
 @x pg_test_fsync
-            determines fastest wal_sync method for PostgreSQL.
+            determines the fastest wal_sync method for PostgreSQL.
 @y
-            determines fastest wal_sync method for PostgreSQL.
+            determines the fastest wal_sync method for PostgreSQL.
 @z
 
 @x pg_test_timing

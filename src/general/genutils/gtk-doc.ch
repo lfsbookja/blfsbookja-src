@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gtk-doc-buildsize     "14 MB (with tests)">
+  <!ENTITY gtk-doc-buildsize     "13 MB (with tests)">
   <!ENTITY gtk-doc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY gtk-doc-buildsize     "14 MB (テスト込み)">
+  <!ENTITY gtk-doc-buildsize     "13 MB (テスト込み)">
   <!ENTITY gtk-doc-time          "0.2 SBU (テスト込み)">
 @z
 
@@ -132,7 +132,7 @@
       <xref linkend="which"/>, and
       Python modules 
       <xref linkend="lxml"/>,
-      <ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>,
+      <!--<ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>,-->
       <ulink url="https://pypi.org/project/parameterized/">parameterized</ulink>,
       and <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
     </para>
@@ -146,9 +146,9 @@
       <xref linkend="which"/>,
       Python モジュール
       <xref linkend="lxml"/>,
-      <ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>,
+      <!--<ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>,-->
       <ulink url="https://pypi.org/project/parameterized/">parameterized</ulink>,
-      and <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
+      <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
     </para>
 @z
 

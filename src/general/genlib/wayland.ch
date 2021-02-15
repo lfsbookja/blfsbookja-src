@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY wayland-buildsize     "14 MB (with tests)">
+  <!ENTITY wayland-buildsize     "15 MB (with tests)">
   <!ENTITY wayland-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY wayland-buildsize     "14 MB (テスト込み)">
+  <!ENTITY wayland-buildsize     "15 MB (テスト込み)">
   <!ENTITY wayland-time          "0.2 SBU (テスト込み)">
 @z
 
@@ -187,7 +187,10 @@
           wayland-scanner
         </seg>
         <seg>
-          libwayland-client.so, libwayland-cursor.so, and libwayland-server.so
+          libwayland-client.so, 
+          libwayland-cursor.so,
+          libwayland-egl.so, 
+          and libwayland-server.so
         </seg>
         <seg>
           /usr/share/wayland
@@ -197,7 +200,10 @@
           wayland-scanner
         </seg>
         <seg>
-          libwayland-client.so, libwayland-cursor.so, libwayland-server.so
+          libwayland-client.so, 
+          libwayland-cursor.so,
+          libwayland-egl.so, 
+          libwayland-server.so
         </seg>
         <seg>
           /usr/share/wayland

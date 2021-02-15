@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY libical-buildsize     "21 MB (with tests)">
+  <!ENTITY libical-buildsize     "27 MB (with tests)">
   <!ENTITY libical-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libical-buildsize     "21 MB (テスト込み)">
+  <!ENTITY libical-buildsize     "27 MB (テスト込み)">
   <!ENTITY libical-time          "0.2 SBU (parallelism=4 利用時; テスト込み)">
 @z
 
@@ -113,6 +113,7 @@
     <para role="optional">
       <xref linkend="db"/>,
       <xref linkend="doxygen"/> (for the API documentation),
+      <xref linkend="gtk-doc"/> (for the API documentation),
       <xref linkend="icu"/>, and
       <xref linkend="pygobject3"/> (for some tests)
     </para>
@@ -121,6 +122,7 @@
     <para role="optional">
       <xref linkend="db"/>,
       <xref linkend="doxygen"/> (API ドキュメント生成のため),
+      <xref linkend="gtk-doc"/> (API ドキュメント生成のため),
       <xref linkend="icu"/>,
       <xref linkend="pygobject3"/> (特定のテストのため)
     </para>
@@ -192,23 +194,37 @@
           None
         </seg>
         <seg>
-          libical_cxx.so, libical.so, libicalss_cxx.so, libicalss.so,
+          libical_cxx.so, 
+          libical.so, 
+          libical-glib.so, 
+          libicalss_cxx.so, 
+          libicalss.so,
           and libicalvcal.so
         </seg>
         <seg>
-          /usr/include/libical, /usr/lib/cmake/LibIcal and
-          /usr/share/doc/libical-&libical-version;/html
+          /usr/include/libical, 
+          /usr/include/libical-glib, 
+          /usr/lib/cmake/LibIcal, 
+          /usr/libexec/libical, 
+          and /usr/share/doc/libical-&libical-version;/html
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libical_cxx.so, libical.so, libicalss_cxx.so, libicalss.so,
+          libical_cxx.so, 
+          libical.so, 
+          libical-glib.so, 
+          libicalss_cxx.so, 
+          libicalss.so,
           libicalvcal.so
         </seg>
         <seg>
-          /usr/include/libical, /usr/lib/cmake/LibIcal,
+          /usr/include/libical, 
+          /usr/include/libical-glib, 
+          /usr/lib/cmake/LibIcal, 
+          /usr/libexec/libical, 
           /usr/share/doc/libical-&libical-version;/html
         </seg>
 @z

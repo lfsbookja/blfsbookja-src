@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY btrfs-progs-buildsize     "97 MB (add 2.7 GB for tests)">
-  <!ENTITY btrfs-progs-time          "0.2 SBU (add 6.3 SBU for tests)">
+  <!ENTITY btrfs-progs-buildsize     "92 MB (add 2.7 GB for tests)">
+  <!ENTITY btrfs-progs-time          "0.3 SBU (add 45 SBU for tests)">
 @y
-  <!ENTITY btrfs-progs-buildsize     "97 MB (テスト実施時はさらに 2.7 MB)">
-  <!ENTITY btrfs-progs-time          "0.2 SBU (テスト実施時はさらに 6.3 SBU)">
+  <!ENTITY btrfs-progs-buildsize     "92 MB (テスト実施時はさらに 2.7 GB)">
+  <!ENTITY btrfs-progs-time          "0.3 SBU (テスト実施時はさらに 45 SBU)">
 @z
 
 @x
@@ -176,10 +176,10 @@
 @z
 
 @x
-      Before running tests, build a support program and 
-      disable several that fail:
+      Before running tests, build a support program:
+      <!-- and disable several that fail:-->
 @y
-    テストを実行する場合は、その前にサポートプログラムをビルドし、さらに失敗するテストは無効にします。
+    テストを実行する場合は、その前にサポートプログラムをビルドします。
 @z
 
 @x

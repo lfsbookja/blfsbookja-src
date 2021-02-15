@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY biber-time          "0.4 SBU including tests">
+  <!ENTITY biber-time          "0.5 SBU including tests">
 @y
-  <!ENTITY biber-time          "0.4 SBU including tests">
+  <!ENTITY biber-time          "0.5 SBU including tests">
 @z
 
 @x
@@ -106,9 +106,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Required Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">Required Additional Download</bridgehead>
 @y
-    <bridgehead renderas="sect3">Required Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">Required Additional Download</bridgehead>
 @z
 
 @x

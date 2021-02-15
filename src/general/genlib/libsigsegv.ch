@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libsigsegv-buildsize     "3.5 MB (with checks)">
-  <!ENTITY libsigsegv-time          "less than 0.1 SBU (with checks)">
+  <!ENTITY libsigsegv-buildsize     "3.8 MB (with tests)">
+  <!ENTITY libsigsegv-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libsigsegv-buildsize     "3.5 MB (with checks)">
-  <!ENTITY libsigsegv-time          "less than 0.1 SBU (with checks)">
+  <!ENTITY libsigsegv-buildsize     "3.8 MB (テスト込み)">
+  <!ENTITY libsigsegv-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x

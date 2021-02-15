@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY pipewire-buildsize     "122 MB (with tests)">
+  <!ENTITY pipewire-buildsize     "124 MB (with tests)">
   <!ENTITY pipewire-time          "0.4 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY pipewire-buildsize     "122 MB (テスト込み)">
+  <!ENTITY pipewire-buildsize     "124 MB (テスト込み)">
   <!ENTITY pipewire-time          "0.4 SBU (parallelism=4 利用時、テスト込み)">
 @z
 
@@ -122,6 +122,7 @@
       <xref linkend="doxygen"/> and
       <xref linkend="graphviz"/> (for documentation),
       <ulink url="https://jackaudio.org/">JACK</ulink>,
+      <ulink url="https://github.com/EHfive/ldacBT">ldacBT</ulink>,
       <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>, and
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
     </para>
@@ -129,9 +130,10 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="valgrind"/>,
-      <xref linkend="doxygen"/> and
+      <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/> (ドキュメントのため),
       <ulink url="https://jackaudio.org/">JACK</ulink>,
+      <ulink url="https://github.com/EHfive/ldacBT">ldacBT</ulink>,
       <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
     </para>

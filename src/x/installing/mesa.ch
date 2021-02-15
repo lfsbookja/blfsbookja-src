@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "481 MB (with docs), add 317 MB for tests">
-  <!ENTITY mesa-time          "2.5 SBU (with parallelism=4 and docs). Add 0.5 SBU for tests">
+  <!ENTITY mesa-buildsize     "676 MB (with docs), add 319 MB for tests">
+  <!ENTITY mesa-time          "2.9 SBU (with parallelism=4 and docs). Add 0.5 SBU for tests">
 @y
-  <!ENTITY mesa-buildsize     "481 MB (ドキュメント込み)、テスト実施時はさらに 317 MB">
-  <!ENTITY mesa-time          "2.5 SBU (parallelism=4, ドキュメント込み)、テスト実施時はさらに 0.5 SBU">
+  <!ENTITY mesa-buildsize     "676 MB (ドキュメント込み)、テスト実施時はさらに 319 MB">
+  <!ENTITY mesa-time          "2.9 SBU (parallelism=4, ドキュメント込み)、テスト実施時はさらに 0.5 SBU">
 @z
 
 @x
@@ -411,7 +411,7 @@
           r300_dri.so (optional),
           r600_dri.so,
           r600_drv_video.so,
-          radeon_dri.so,
+          radeon_dri.so (optional),
           radeonsi_dri.so,
           radeonsi_drv_video.so,
           swrast_dri.so,
@@ -471,7 +471,7 @@
           r300_dri.so (optional),
           r600_dri.so,
           r600_drv_video.so,
-          radeon_dri.so,
+          radeon_dri.so (optional),
           radeonsi_dri.so,
           radeonsi_drv_video.so,
           swrast_dri.so,

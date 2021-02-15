@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "352 MB (add 699 MB for tests)">
-  <!ENTITY cmake-time          "1.7 SBU (add 3.1 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-buildsize     "375 MB (add 733 MB for tests)">
+  <!ENTITY cmake-time          "2.2 SBU (add 3.2 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "352 MB（テスト実行時は 699 MB）">
-  <!ENTITY cmake-time          "1.7 SBU（テスト実行時は 3.1 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-buildsize     "375 MB（テスト実行時は 733 MB）">
+  <!ENTITY cmake-time          "2.2 SBU（テスト実行時は 3.2 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -159,21 +159,20 @@
 @z
 
 @x
-      To test the results, issue: <command>bin/ctest
+      To test the results, issue: <command>LC_ALL=en_US.UTF-8 bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
       cmake-&cmake-version;-test.log</command>, where
       <replaceable>&lt;N&gt;</replaceable> is an integer between 1 and the
-      number of system cores. In case the environment variable 
-      <literal>LANG</literal> is set to a non-blank value and failures 
-      occur, try running the tests without having <literal>LANG</literal> set.
+      number of system cores. Setting <envar>LC_ALL</envar> is needed to
+      prevent some test failures when some of the locale variables are
+      set to non English locales.
 @y
-      ビルド結果をテストする場合は <command>bin/ctest
+      ビルド結果をテストする場合は <command>LC_ALL=en_US.UTF-8 bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
       cmake-&cmake-version;-test.log</command> を実行します。
       ここで <replaceable>&lt;N&gt;</replaceable> は 1 からシステムコア数までの値を選んで指定します。
-      In case the environment variable 
-      <literal>LANG</literal> is set to a non-blank value and failures 
-      occur, try running the tests without having <literal>LANG</literal> set.
+      テストがいくつか失敗するため <envar>LC_ALL</envar> の設定が必要となります。
+      ロケール変数が英語以外のロケールに設定される場合があるためです。
 @z
 
 @x

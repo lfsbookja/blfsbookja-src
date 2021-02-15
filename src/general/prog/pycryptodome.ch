@@ -120,19 +120,19 @@
             None
           </seg>
           <seg>
-            pycryptodome-&pycryptodome-version;-py&python3-majorver;.egg-info
+            None
           </seg>
           <seg>
-            /usr/lib/python&python3-majorver;/site-packages/Crypto
+            /usr/lib/python&python3-majorver;/site-packages/pycryptodome-&pycryptodome-version;-py&python3-majorver;.egg
           </seg>
 @y
           <seg>
             &None;
           </seg>
           <seg>
-            pycryptodome-&pycryptodome-version;-py&python3-majorver;.egg-info
+            &None;
           </seg>
           <seg>
-            /usr/lib/python&python3-majorver;/site-packages/Crypto
+            /usr/lib/python&python3-majorver;/site-packages/pycryptodome-&pycryptodome-version;-py&python3-majorver;.egg
           </seg>
 @z

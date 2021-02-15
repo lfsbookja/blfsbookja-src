@@ -84,14 +84,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pcre2"/> and
-      <xref linkend="pygments"/>
+      <xref linkend="pcre2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pcre2"/>,
-      <xref linkend="pygments"/>
+      <xref linkend="pcre2"/>
     </para>
 @z
 

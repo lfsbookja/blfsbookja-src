@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY gobject-introspection-time          "less than 0.1 SBU">
+  <!ENTITY inih-time          "less than 0.1 SBU">
 @y
-  <!ENTITY gobject-introspection-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY inih-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -38,39 +38,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&gobject-introspection-download-http;"/>
+          Download (HTTP): <ulink url="&inih-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&gobject-introspection-download-http;"/>
+          &Download; (HTTP): <ulink url="&inih-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&gobject-introspection-download-ftp;"/>
+          Download (FTP): <ulink url="&inih-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&gobject-introspection-download-ftp;"/>
+          &Download; (FTP): <ulink url="&inih-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &gobject-introspection-md5sum;
+          Download MD5 sum: &inih-md5sum;
 @y
-          &Download; MD5 sum: &gobject-introspection-md5sum;
+          &Download; MD5 sum: &inih-md5sum;
 @z
 
 @x
-          Download size: &gobject-introspection-size;
+          Download size: &inih-size;
 @y
-          &DownloadSize;: &gobject-introspection-size;
+          &DownloadSize;: &inih-size;
 @z
 
 @x
-          Estimated disk space required: &gobject-introspection-buildsize;
+          Estimated disk space required: &inih-buildsize;
 @y
-          &Estimateddiskspacerequired;: &gobject-introspection-buildsize;
+          &Estimateddiskspacerequired;: &inih-buildsize;
 @z
 
 @x
-          Estimated build time: &gobject-introspection-time;
+          Estimated build time: &inih-time;
 @y
-          &Estimatedbuildtime;: &gobject-introspection-time;
+          &Estimatedbuildtime;: &inih-time;
 @z
 
 @x
@@ -125,7 +125,7 @@
           None
         </seg>
         <seg>
-          libinih.so
+          libinih.so, libINIReader.so
         </seg>
         <seg>
           None
@@ -135,7 +135,7 @@
           &None;
         </seg>
         <seg>
-          libinih.so
+          libinih.so, libINIReader.so
         </seg>
         <seg>
           &None;

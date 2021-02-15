@@ -21,10 +21,10 @@
 
 @x
       <application>iptables</application> is a userspace command line program
-      used to configure Linux 2.4 and later kernel packet filtering ruleset.
+      used to configure the Linux 2.4 and later kernel packet filtering ruleset.
 @y
       <application>iptables</application> is a userspace command line program
-      used to configure Linux 2.4 and later kernel packet filtering ruleset.
+      used to configure the Linux 2.4 and later kernel packet filtering ruleset.
 @z
 
 @x
@@ -81,10 +81,10 @@
 <!--      <xref linkend="nftables"/>, -->
       <xref linkend="libpcap"/> (required for nfsypproxy support),
       <ulink url="https://github.com/tadamdam/bpf-utils">bpf-utils</ulink>
-      (required for Berkely Packet Filter support),
+      (required for Berkeley Packet Filter support),
       <ulink url="https://netfilter.org/projects/libnfnetlink/">libnfnetlink</ulink>
       (required for connlabel support),
-      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>
+      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack</ulink>
       (required for connlabel support), and 
       <ulink url="https://netfilter.org/projects/nftables/">nftables</ulink>
     </para>
@@ -94,10 +94,10 @@
 <!--      <xref linkend="nftables"/>, -->
       <xref linkend="libpcap"/> (required for nfsypproxy support),
       <ulink url="https://github.com/tadamdam/bpf-utils">bpf-utils</ulink>
-      (required for Berkely Packet Filter support),
+      (required for Berkeley Packet Filter support),
       <ulink url="https://netfilter.org/projects/libnfnetlink/">libnfnetlink</ulink>
       (required for connlabel support),
-      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack"</ulink>
+      <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack</ulink>
       (required for connlabel support), and 
       <ulink url="https://netfilter.org/projects/nftables/">nftables</ulink>
     </para>
@@ -193,11 +193,11 @@
 
 @x
       <parameter>--disable-nftables</parameter>: This switch disables building
-      nftables compat. <!--Omit this switch if you have installed
+      nftables compatibility. <!--Omit this switch if you have installed
       <xref linkend="nftables"/>.-->
 @y
       <parameter>--disable-nftables</parameter>: This switch disables building
-      nftables compat. <!--Omit this switch if you have installed
+      nftables compatibility. <!--Omit this switch if you have installed
       <xref linkend="nftables"/>.-->
 @z
 
@@ -212,12 +212,12 @@
 @z
 
 @x
-      <parameter>--with-xtlibdir=/lib/xtables</parameter>: Ensure all
-      <application>iptables</application> modules are installed in the
+      <parameter>--with-xtlibdir=/lib/xtables</parameter>: This switch ensures that
+      all <application>iptables</application> modules are installed in the
       <filename class="directory">/lib/xtables</filename> directory.
 @y
       <parameter>--with-xtlibdir=/lib/xtables</parameter>:
-      <application>iptables</application> モジュールをすべて <filename
+      本スイッチは <application>iptables</application> モジュールをすべて <filename
       class="directory">/lib/xtables</filename> ディレクトリにインストールするようにします。
 @z
 
@@ -231,10 +231,11 @@
 
 @x
       <command>ln -sfv ../../sbin/xtables-legacy-multi /usr/bin/iptables-xml</command>:
-      Ensure the symbolic link for <command>iptables-xml</command> is relative.
+      This command ensures that the symbolic link for the 
+      <command>iptables-xml</command> command is relative.
 @y
       <command>ln -sfv ../../sbin/xtables-legacy-multi /usr/bin/iptables-xml</command>:
-      <command>iptables-xml</command> へのシンボリックリンクを相対的なものとします。
+      本コマンドは <command>iptables-xml</command> へのシンボリックリンクを相対的なものとします。
 @z
 
 @x

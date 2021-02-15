@@ -102,7 +102,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
       which is also required for the tests), and
@@ -111,7 +111,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
       which is also required for the tests),
