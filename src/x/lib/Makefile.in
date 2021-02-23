@@ -239,7 +239,6 @@ CHANGE_FILES = \
 	atk.ch                  \
 	atkmm.ch                \
 	cairo.ch                \
-	cairomm.ch              \
 	cairomm-1.0.ch          \
 	clutter.ch              \
 	clutter-gst.ch          \
