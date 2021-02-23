@@ -270,51 +270,51 @@
 @z
 
 @x ncftp
-            is a browser program for File Transfer Protocol.
+            is a browser program for File Transfer Protocol
 @y
-            is a browser program for File Transfer Protocol.
+            is a browser program for File Transfer Protocol
 @z
 
 @x ncftpbatch
-            is an individual batch FTP job processor.
+            is an individual batch FTP job processor
 @y
-            is an individual batch FTP job processor.
+            is an individual batch FTP job processor
 @z
 
 @x ncftpbookmarks
             is the <application>NcFTP</application> Bookmark Editor
-            (<application>NCurses</application>-based).
+            (<application>NCurses</application>-based)
 @y
             is the <application>NcFTP</application> Bookmark Editor
-            (<application>NCurses</application>-based).
+            (<application>NCurses</application>-based)
 @z
 
 @x ncftpget
             is an internet file transfer program for scripts used to
-            retrieve files.
+            retrieve files
 @y
             is an internet file transfer program for scripts used to
-            retrieve files.
+            retrieve files
 @z
 
 @x ncftpls
             is an internet file transfer program for scripts used to
-            list files.
+            list files
 @y
             is an internet file transfer program for scripts used to
-            list files.
+            list files
 @z
 
 @x ncftpput
             is an internet file transfer program for scripts used to
-            transfer files.
+            transfer files
 @y
             is an internet file transfer program for scripts used to
-            transfer files.
+            transfer files
 @z
 
 @x ncftpspooler
-            is a global batch FTP job processor daemon.
+            is a global batch FTP job processor daemon
 @y
-            is a global batch FTP job processor daemon.
+            is a global batch FTP job processor daemon
 @z

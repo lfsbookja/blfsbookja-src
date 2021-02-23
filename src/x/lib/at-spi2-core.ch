@@ -227,7 +227,7 @@
 @z
 
 @x libatspi.so
-            contains the <application>At-Spi2</application> API functions.
+            contains the <application>At-Spi2</application> API functions
 @y
             <application>At-Spi2</application> API 関数を提供します。
 @z

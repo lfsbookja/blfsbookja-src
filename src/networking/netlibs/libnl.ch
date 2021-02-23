@@ -205,7 +205,7 @@
 
 @x libnl*-3.so
             These libraries contain API functions used to access Netlink
-            interfaces in Linux kernel.
+            interfaces in Linux kernel
 @y
             これらのライブラリは、Linux カーネルにおける Netlink にアクセスするための API 関数を提供します。
 @z

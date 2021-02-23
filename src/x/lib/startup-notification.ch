@@ -172,7 +172,7 @@
 @x libstartup-notification-1.so
             provides the functions to assist applications in communicating
             with the cursor system to provide feedback to the user that the
-            application is loading.
+            application is loading
 @y
             アプリケーションがカーソルシステムとのやり取りをするための機能を提供します。
             これによりカーソルのロード中に、ユーザーへのフィードバックが実現できます。

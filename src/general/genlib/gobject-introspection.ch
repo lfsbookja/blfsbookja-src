@@ -214,7 +214,7 @@
 @z
 
 @x g-ir-compiler
-            converts one or more GIR files into one or more typelib.
+            converts one or more GIR files into one or more typelib
 @y
             複数の GIR ファイルを複数の typelib に変換します。
 @z
@@ -222,30 +222,30 @@
 @x g-ir-doc-tool
             generates Mallard files that can be viewed with
             <command>yelp</command> or rendered to HTML with
-            <command>yelp-build</command> from <ulink
-            url="http://ftp.acc.umu.se/pub/gnome/sources/yelp-tools">yelp-tools</ulink>.
+            <command>yelp-build</command> from
+            <ulink url="http://ftp.acc.umu.se/pub/gnome/sources/yelp-tools">yelp-tools</ulink>
 @y
             generates Mallard files that can be viewed with
             <command>yelp</command> or rendered to HTML with
-            <command>yelp-build</command> from <ulink
-            url="http://ftp.acc.umu.se/pub/gnome/sources/yelp-tools">yelp-tools</ulink>.
+            <command>yelp-build</command> from
+            <ulink url="http://ftp.acc.umu.se/pub/gnome/sources/yelp-tools">yelp-tools</ulink>
 @z
 
 @x g-ir-inspect
-            is a utility that gives information about a GI typelib.
+            is a utility that gives information about a GI typelib
 @y
             GI typelib についての情報を提供するユーティリティーです。
 @z
 
 @x g-ir-scanner
             is a tool which generates GIR XML files by parsing headers and
-            introspecting GObject based libraries.
+            introspecting GObject based libraries
 @y
             GObject ベースのライブラリとヘッダーを用いて GIR XML ファイルを生成するためのツールです。
 @z
 
 @x libgirepository-1.0.so
-            provides an API to access the typelib metadata.
+            provides an API to access the typelib metadata
 @y
             typelib メタデータにアクセスするための API 関数を提供します。
 @z

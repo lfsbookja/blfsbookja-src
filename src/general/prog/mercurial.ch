@@ -259,11 +259,10 @@
           hg
         </seg>
         <seg>
-          several internal modules under
-          /usr/lib/python&python3-majorver;/site-packages/mercurial
+          /usr/lib/python&python3-majorver;/site-packages/mercurial 配下にある内部モジュールが数種類。
         </seg>
         <seg>
-          /etc/mercurial and
+          /etc/mercurial,
           /usr/lib/python&python3-majorver;/site-packages/{hgdemandimport,hgext,hgext3rd,mercurial}
         </seg>
 @z
@@ -275,7 +274,7 @@
 @z
 
 @x hg
-            is the mercurial version control system.
+            is the mercurial version control system
 @y
-            is the mercurial version control system.
+            is the mercurial version control system
 @z

@@ -256,18 +256,18 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-% @x apu-1-config
-%           <para>is a simple script that provides information about the
-%           installed APR-Util program.</para>
-% @y
-%           <para>is a simple script that provides information about the
-%           installed APR-Util program.</para>
-% @z
+@x apu-1-config
+            is an APR-util script designed to allow easy command line access to
+            APR-util configuration parameters
+@y
+            is an APR-util script designed to allow easy command line access to
+            APR-util configuration parameters
+@z
 
 @x libaprutil-1.so
             contains functions that provide a predictable and consistent
-            interface to underlying client library interfaces.
+            interface to underlying client library interfaces
 @y
             contains functions that provide a predictable and consistent
-            interface to underlying client library interfaces.
+            interface to underlying client library interfaces
 @z

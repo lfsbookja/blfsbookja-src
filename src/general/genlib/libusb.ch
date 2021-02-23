@@ -231,7 +231,7 @@
 @z
 
 @x libusb-1.0.{so,a}
-            contains API functions used for accessing USB hardware.
+            contains API functions used for accessing USB hardware
 @y
             USB ハードウェアにアクセスするための API 関数を提供します。
 @z

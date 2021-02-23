@@ -448,8 +448,8 @@
 
 @x automount
             is the daemon that performs the mounting when a request is
-            made for the device.
+            made for the device
 @y
             is the daemon that performs the mounting when a request is
-            made for the device.
+            made for the device
 @z

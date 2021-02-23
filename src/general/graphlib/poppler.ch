@@ -357,94 +357,94 @@
 
 @x pdffonts
             lists the fonts used in a PDF file along with various information
-            for each font.
+            for each font
 @y
             lists the fonts used in a PDF file along with various information
-            for each font.
+            for each font
 @z
 
 @x pdfimages
-            saves images from a PDF file as PPM, PBM, or JPEG files.
+            saves images from a PDF file as PPM, PBM, or JPEG files
 @y
-            saves images from a PDF file as PPM, PBM, or JPEG files.
+            saves images from a PDF file as PPM, PBM, or JPEG files
 @z
 
 @x pdfinfo
             prints the contents of the 'Info' dictionary (plus some other useful
-            information) from a PDF file.
+            information) from a PDF file
 @y
             prints the contents of the 'Info' dictionary (plus some other useful
-            information) from a PDF file.
+            information) from a PDF file
 @z
 
 @x pdfseparate
-            extracts single pages from a PDF file.
+            extracts single pages from a PDF file
 @y
-            extracts single pages from a PDF file.
+            extracts single pages from a PDF file
 @z
 
 @x pdftocairo
             converts a PDF file to one of several formats (PNG, JPEG, PDF, PS,
-            EPS, SVG) using the cairo output device of the poppler library.
+            EPS, SVG) using the cairo output device of the poppler library
 @y
             converts a PDF file to one of several formats (PNG, JPEG, PDF, PS,
-            EPS, SVG) using the cairo output device of the poppler library.
+            EPS, SVG) using the cairo output device of the poppler library
 @z
 
 @x pdftohtml
-            converts a PDF file to HTML.
+            converts a PDF file to HTML
 @y
-            converts a PDF file to HTML.
+            converts a PDF file to HTML
 @z
 
 @x pdftoppm
-            converts PDF files to PBM, PGM and PPM formats.
+            converts PDF files to PBM, PGM and PPM formats
 @y
-            converts PDF files to PBM, PGM and PPM formats.
+            converts PDF files to PBM, PGM and PPM formats
 @z
 
 @x pdftops
-            converts PDF files to Postscript format.
+            converts PDF files to Postscript format
 @y
-            converts PDF files to Postscript format.
+            converts PDF files to Postscript format
 @z
 
 @x pdftotext
-            converts PDF files to plain text.
+            converts PDF files to plain text
 @y
-            converts PDF files to plain text.
+            converts PDF files to plain text
 @z
 
 @x pdfunite
             merges several PDF files, in the order of their occurrence on the
-            command line, to one PDF output file.
+            command line, to one PDF output file
 @y
             merges several PDF files, in the order of their occurrence on the
-            command line, to one PDF output file.
+            command line, to one PDF output file
 @z
 
 @x libpoppler.so
-            contains the API functions to render PDF files.
+            contains the API functions to render PDF files
 @y
             レンダリング PDF ファイルに対する API 関数を提供します。
 @z
 
 @x libpoppler-cpp.so
-            is a C++ backend for rendering PDF files.
+            is a C++ backend for rendering PDF files
 @y
             レンダリング PDF ファイルへの C++ バックエンドです。
 @z
 
 @x libpoppler-glib.so
             is a wrapper library used to interface the PDF rendering functions
-            with <application>GTK+</application>.
+            with <application>GTK+</application>
 @y
             <application>GTK+</application> に対しての PDF レンダリング機能を提供するラッパーライブラリです。
 @z
 
 @x libpoppler-qt5.so
             is a wrapper library used to interface the PDF rendering functions
-            with <application>Qt</application>5.
+            with <application>Qt</application>5
 @y
             <application>Qt</application>5 に対しての PDF レンダリング機能を提供するラッパーライブラリです。
 @z

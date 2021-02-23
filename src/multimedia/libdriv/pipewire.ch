@@ -328,44 +328,44 @@
 
 @x pipewire
             is a service that allows access to multimedia devices and allows
-            sharing of multimedia files between applications.
+            sharing of multimedia files between applications
 @y
             is a service that allows access to multimedia devices and allows
-            sharing of multimedia files between applications.
+            sharing of multimedia files between applications
 @z
 
 @x pipewire-cli
-            allows you to interact with a pipewire instance.
+            allows you to interact with a pipewire instance
 @y
-            allows you to interact with a pipewire instance.
+            allows you to interact with a pipewire instance
 @z
 
 @x pipewire-monitor
-            allows you to monitor pipewire instances.
+            allows you to monitor pipewire instances
 @y
-            allows you to monitor pipewire instances.
+            allows you to monitor pipewire instances
 @z
 
 @x pw-profiler
-            tracks memory usage and API calls used by pipewire.
+            tracks memory usage and API calls used by pipewire
 @y
-            tracks memory usage and API calls used by pipewire.
+            tracks memory usage and API calls used by pipewire
 @z
 
 @x spa-inspect
-            allows you to inspect pipewire plugins.
+            allows you to inspect pipewire plugins
 @y
-            allows you to inspect pipewire plugins.
+            allows you to inspect pipewire plugins
 @z
 
 @x spa-monitor
-            allows you to monitor pipewire plugins.
+            allows you to monitor pipewire plugins
 @y
-            allows you to monitor pipewire plugins.
+            allows you to monitor pipewire plugins
 @z
 
 @x libpipewire-0.2.so
-            contains API functions for handling multimedia pipelines.
+            contains API functions for handling multimedia pipelines
 @y
-            contains API functions for handling multimedia pipelines.
+            contains API functions for handling multimedia pipelines
 @z

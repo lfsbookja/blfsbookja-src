@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -184,7 +183,7 @@
 @z
 
 @x libgrss.so
-            provides API functions for handling RSS feeds.
+            provides API functions for handling RSS feeds
 @y
             RSS フィードを扱う API 関数を提供します。
 @z

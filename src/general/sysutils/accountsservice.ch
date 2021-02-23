@@ -264,13 +264,13 @@
 @z
 
 @x accounts-daemon
-            is the <application>AccountsService</application> daemon.
+            is the <application>AccountsService</application> daemon
 @y
             <application>AccountsService</application> デーモン。
 @z
 
 @x libaccountsservice.{so,a}
-            contains the <application>AccountsService</application> API functions.
+            contains the <application>AccountsService</application> API functions
 @y
             <application>AccountsService</application> API 関数を提供します。
 @z

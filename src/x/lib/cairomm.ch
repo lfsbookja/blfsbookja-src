@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Cairomm</title>
 @y
-    <title>Cairomm の概要</title>
+    <title>&IntroductionTo1;Cairomm&IntroductionTo2;</title>
 @z
 
 @x
@@ -178,7 +178,7 @@
 @z
 
 @x libcairomm-1.0.so
-            contains the <application>Cairo</application> API classes.
+            contains the <application>Cairo</application> API classes
 @y
             <application>Cairo</application> API クラスを提供します。
 @z

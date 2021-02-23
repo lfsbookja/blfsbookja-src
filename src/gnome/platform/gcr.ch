@@ -219,13 +219,13 @@
 @z
 
 @x gcr-viewer
-            is used to view certificates and key files.
+            is used to view certificates and key files
 @y
-            is used to view certificates and key files.
+            is used to view certificates and key files
 @z
 
 @x libgck-1.so
-            contains GObject bindings for PKCS#11.
+            contains GObject bindings for PKCS#11
 @y
-            contains GObject bindings for PKCS#11.
+            contains GObject bindings for PKCS#11
 @z

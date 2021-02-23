@@ -461,26 +461,26 @@
 
 @x wpa_supplicant
             is a daemon that can connect to a password protected wireless
-            access point.
+            access point
 @y
             is a daemon that can connect to a password protected wireless
-            access point.
+            access point
 @z
 
 @x wpa_passphrase
             takes an SSID and a password and generates a simple
             configuration that <command>wpa_supplicant</command> can
-            understand.
+            understand
 @y
             takes an SSID and a password and generates a simple
             configuration that <command>wpa_supplicant</command> can
-            understand.
+            understand
 @z
 
 @x wpa_cli
             is a command line interface used to control a running
-            <command>wpa_supplicant</command> daemon.
+            <command>wpa_supplicant</command> daemon
 @y
             is a command line interface used to control a running
-            <command>wpa_supplicant</command> daemon.
+            <command>wpa_supplicant</command> daemon
 @z

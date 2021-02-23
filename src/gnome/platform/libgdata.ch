@@ -224,7 +224,7 @@
 @z
 
 @x libgdata.so
-            contains the <application>libgdata</application> API functions.
+            contains the <application>libgdata</application> API functions
 @y
             <application>libgdata</application> API 関数を提供します。
 @z

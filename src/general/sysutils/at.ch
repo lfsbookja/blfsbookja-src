@@ -269,37 +269,37 @@
 @z
 
 @x at
-            queues, examines or deletes jobs for later execution.
+            queues, examines or deletes jobs for later execution
 @y
             遅延実行ジョブをキューに溜めたり、検証や削除を行ったりします。
 @z
 
 @x atd
-            is the daemon that runs jobs queued for later execution.
+            is the daemon that runs jobs queued for later execution
 @y
             遅延実行ジョブとしてキューに溜められたものを実行するデーモン。
 @z
 
 @x atq
-            lists the user's pending jobs, or all jobs, if superuser.
+            lists the user's pending jobs, or all jobs, if superuser
 @y
-            lists the user's pending jobs, or all jobs, if superuser.
+            lists the user's pending jobs, or all jobs, if superuser
 @z
 
 @x atrm
-            deletes jobs, identified by their job number.
+            deletes jobs, identified by their job number
 @y
-            deletes jobs, identified by their job number.
+            deletes jobs, identified by their job number
 @z
 
 @x atrun
-            runs jobs queued for later execution.
+            runs jobs queued for later execution
 @y
             遅延実行ジョブを実行します。
 @z
 
 @x batch
-            is a script that executes commands when system load levels permit.
+            is a script that executes commands when system load levels permit
 @y
             システムのロードレベルが許容されている場合に、コマンドを実行するスクリプトです。
 @z

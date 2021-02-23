@@ -193,7 +193,7 @@
 
 @x a2x
             is a toolchain manager for AsciiDoc 
-            (converts Asciidoc text files to other file formats).
+            (converts Asciidoc text files to other file formats)
 @y
             AsciiDoc のツールチェーンマネージャー（AsciiDoc テキストファイルをさまざまなファイルフォーマットに変換します）。
 @z

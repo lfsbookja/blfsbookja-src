@@ -170,14 +170,14 @@
 
 @x whois
             is a client-side application which queries the whois directory
-            service for information pertaining to a particular domain name.
+            service for information pertaining to a particular domain name
 @y
             クライアント側のアプリケーションであり、指定されたドメイン名に対する情報を提供する
             whois ディレクトリサービスを検索します。
 @z
 
 @x mkpasswd
-            generates a new password, and optionally applies it to a user.
+            generates a new password, and optionally applies it to a user
 @y
-            generates a new password, and optionally applies it to a user.
+            generates a new password, and optionally applies it to a user
 @z

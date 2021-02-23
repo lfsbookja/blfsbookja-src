@@ -81,8 +81,8 @@
 
 @x translit
               transliterates text between writing systems using various
-              standards.
+              standards
 @y
               transliterates text between writing systems using various
-              standards.
+              standards
 @z

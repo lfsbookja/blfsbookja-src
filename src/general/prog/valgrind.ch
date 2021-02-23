@@ -277,25 +277,25 @@
 @z
 
 @x valgrind
-            is a program for debugging and profiling Linux executables.
+            is a program for debugging and profiling Linux executables
 @y
-            is a program for debugging and profiling Linux executables.
+            is a program for debugging and profiling Linux executables
 @z
 
 @x callgrind_annotate
             takes an output file produced by the
             <application>Valgrind</application> tool Callgrind and prints the
-            information in an easy-to-read form.
+            information in an easy-to-read form
 @y
             takes an output file produced by the
             <application>Valgrind</application> tool Callgrind and prints the
-            information in an easy-to-read form.
+            information in an easy-to-read form
 @z
 
 @x callgrind_control
             controls programs being run by the <application>Valgrind</application>
-            tool Callgrind.
+            tool Callgrind
 @y
             controls programs being run by the <application>Valgrind</application>
-            tool Callgrind.
+            tool Callgrind
 @z

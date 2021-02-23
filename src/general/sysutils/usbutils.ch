@@ -258,27 +258,27 @@
 @x lsusb
             is a utility for displaying information about all USB buses
             in the system and all devices connected to them, but not in human
-            friendly form.
+            friendly form
 @y
             is a utility for displaying information about all USB buses
             in the system and all devices connected to them, but not in human
-            friendly form.
+            friendly form
 @z
 
 @x usb-devices
             is a shell script that displays details of USB buses and devices
             connected to them. It is designed to be used if /proc/bus/usb/devices
-            is not available on your system.
+            is not available on your system
 @y
             is a shell script that displays details of USB buses and devices
             connected to them. It is designed to be used if /proc/bus/usb/devices
-            is not available on your system.
+            is not available on your system
 @z
 
 @x usbhid-dump
             is used to dump report descriptors and streams from HID
-            (human interface device) interfaces of USB devices.
+            (human interface device) interfaces of USB devices
 @y
             is used to dump report descriptors and streams from HID
-            (human interface device) interfaces of USB devices.
+            (human interface device) interfaces of USB devices
 @z

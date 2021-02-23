@@ -227,7 +227,7 @@
             is a simple program for interpreting
             <application>slang</application> scripts. It supports dynamic
             loading of <application>slang</application> modules and includes a
-            <application>Readline</application> interface for interactive use.
+            <application>Readline</application> interface for interactive use
 @y
             <application>S-Lang</application> スクリプトを解釈する単純なプログラムです。
             これは <application>slang</application> モジュールの動的ローディングをサポートし、対話的な操作時には <application>Readline</application> インターフェースも提供します。

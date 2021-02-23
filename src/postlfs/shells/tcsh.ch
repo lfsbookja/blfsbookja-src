@@ -245,9 +245,9 @@
 @x tcsh
             is an enhanced but completely compatible version of the
             Berkeley Unix C shell, <command>csh</command>. It is usable as
-            both an interactive shell and a script processor.
+            both an interactive shell and a script processor
 @y
             is an enhanced but completely compatible version of the
             Berkeley Unix C shell, <command>csh</command>. It is usable as
-            both an interactive shell and a script processor.
+            both an interactive shell and a script processor
 @z

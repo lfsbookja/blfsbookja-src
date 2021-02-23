@@ -168,7 +168,7 @@
 @z
 
 @x lxtask
-            is a lightweight and desktop-independent task manager.
+            is a lightweight and desktop-independent task manager
 @y
             軽量でデスクトップに依存しないタスクマネージャー。
 @z

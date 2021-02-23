@@ -192,21 +192,21 @@
 @z
 
 @x kmix
-            is a mini audio mixer for kde.
+            is a mini audio mixer for kde
 @y
-            is a mini audio mixer for kde.
+            is a mini audio mixer for kde
 @z
 
 @x kmixctrl
             is used to save or restore the settings of
-            <command>kmix</command>.
+            <command>kmix</command>
 @y
             is used to save or restore the settings of
-            <command>kmix</command>.
+            <command>kmix</command>
 @z
 
 @x kmixremote
-            is a utility to mute, get and set volume levels.
+            is a utility to mute, get and set volume levels
 @y
-            is a utility to mute, get and set volume levels.
+            is a utility to mute, get and set volume levels
 @z

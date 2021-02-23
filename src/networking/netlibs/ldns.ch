@@ -244,23 +244,23 @@
 @x drill
             is a tool like <command>dig</command> from
             <xref linkend="bind-utils"/> designed to get all sorts of
-            information out of the DNS.
+            information out of the DNS
 @y
             is a tool like <command>dig</command> from
             <xref linkend="bind-utils"/> designed to get all sorts of
-            information out of the DNS.
+            information out of the DNS
 @z
 
 @x ldns-config
-            shows compiler and linker flags for ldns usage.
+            shows compiler and linker flags for ldns usage
 @y
-            shows compiler and linker flags for ldns usage.
+            shows compiler and linker flags for ldns usage
 @z
 
 @x libldns.so
             provides the <application>ldns</application> API functions to
-            programs.
+            programs
 @y
             provides the <application>ldns</application> API functions to
-            programs.
+            programs
 @z

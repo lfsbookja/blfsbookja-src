@@ -406,9 +406,9 @@
 @z
 
 @x mkhomedir_helper
-            is a helper binary that creates home directories.
+            is a helper binary that creates home directories
 @y
-            is a helper binary that creates home directories.
+            is a helper binary that creates home directories
 @z
 
 @x pam_tally
@@ -434,20 +434,20 @@
 @z
 
 @x unix_chkpwd
-            is a helper binary that verifies the password of the current user.
+            is a helper binary that verifies the password of the current user
 @y
-            is a helper binary that verifies the password of the current user.
+            is a helper binary that verifies the password of the current user
 @z
 
 @x unix_update
-            is a helper binary that updates the password of a given user.
+            is a helper binary that updates the password of a given user
 @y
-            is a helper binary that updates the password of a given user.
+            is a helper binary that updates the password of a given user
 @z
 
 @x libpam.so
             provides the interfaces between applications and the
-            PAM modules.
+            PAM modules
 @y
             アプリケーションと PAM モジュールの間のインターフェースを提供します。
 @z

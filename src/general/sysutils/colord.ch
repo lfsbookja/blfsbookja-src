@@ -255,39 +255,39 @@
 @z
 
 @x cd-create-profile
-            is the Color Manager Profile Creation Tool.
+            is the Color Manager Profile Creation Tool
 @y
-            is the Color Manager Profile Creation Tool.
+            is the Color Manager Profile Creation Tool
 @z
 
 @x cd-fix-profile
-            is a tool used to fix metadata in ICC profiles.
+            is a tool used to fix metadata in ICC profiles
 @y
-            is a tool used to fix metadata in ICC profiles.
+            is a tool used to fix metadata in ICC profiles
 @z
 
 @x cd-iccdump
-            dumps the contents of an ICC profile as human readable text.
+            dumps the contents of an ICC profile as human readable text
 @y
-            dumps the contents of an ICC profile as human readable text.
+            dumps the contents of an ICC profile as human readable text
 @z
 
 @x cd-it8
-            is the Color Manager Testing Tool.
+            is the Color Manager Testing Tool
 @y
-            is the Color Manager Testing Tool.
+            is the Color Manager Testing Tool
 @z
 
 @x colormgr
             is a text-mode program that allows you to interact with colord on
-            the command line.
+            the command line
 @y
             is a text-mode program that allows you to interact with colord on
-            the command line.
+            the command line
 @z
 
 @x libcolord.so
-            contains the <application>Colord</application> API functions.
+            contains the <application>Colord</application> API functions
 @y
-            contains the <application>Colord</application> API functions.
+            <application>Colord</application> API 関数を提供します。
 @z

@@ -217,8 +217,8 @@
 
 @x eog
             is a fast and functional image viewer as well as an
-            image cataloging program.  It has basic editing capabilites.
+            image cataloging program.  It has basic editing capabilites
 @y
             is a fast and functional image viewer as well as an
-            image cataloging program.  It has basic editing capabilites.
+            image cataloging program.  It has basic editing capabilites
 @z

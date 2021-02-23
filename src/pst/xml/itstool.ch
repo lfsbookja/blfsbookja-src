@@ -173,7 +173,7 @@
 @z
 
 @x itstool
-            is used to create translated XML files.
+            is used to create translated XML files
 @y
-            is used to create translated XML files.
+            is used to create translated XML files
 @z

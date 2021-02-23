@@ -186,7 +186,7 @@
 @z
 
 @x xfwm4
-            is the <application>Xfce</application> window manager.
+            is the <application>Xfce</application> window manager
 @y
             <application>Xfce</application> ウィンドウマネージャー。
 @z
@@ -194,25 +194,25 @@
 @x xfwm4-settings
             is a <application>GTK+ 3</application> application that allows
             setting some preferences such as your theme, keyboard shortcuts and
-            mouse focus behaviour.
+            mouse focus behaviour
 @y
             is a <application>GTK+ 3</application> application that allows
             setting some preferences such as your theme, keyboard shortcuts and
-            mouse focus behaviour.
+            mouse focus behaviour
 @z
 
 @x xfwm4-tweaks-settings
             is a <application>GTK+ 3</application> application that allows
-            setting some more preferences for <application>Xfwm4</application>.
+            setting some more preferences for <application>Xfwm4</application>
 @y
             is a <application>GTK+ 3</application> application that allows
-            setting some more preferences for <application>Xfwm4</application>.
+            setting some more preferences for <application>Xfwm4</application>
 @z
 
 @x xfwm4-workspace-settings
             is a <application>GTK+ 3</application> application that allows
-            setting your workspace preferences.
+            setting your workspace preferences
 @y
             is a <application>GTK+ 3</application> application that allows
-            setting your workspace preferences.
+            setting your workspace preferences
 @z

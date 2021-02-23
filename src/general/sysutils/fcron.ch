@@ -404,28 +404,28 @@
 @z
 
 @x fcron
-            is the scheduling daemon.
+            is the scheduling daemon
 @y
             スケジューリングデーモン。
 @z
 
 @x fcrondyn
             is a user tool intended to interact with a running
-            <command>fcron</command> daemon.
+            <command>fcron</command> daemon
 @y
             実行中の <command>fcron</command> デーモンへの指示を行うユーザーツール。
 @z
 
 @x fcronsighup
             instructs <command>fcron</command> to reread the
-            <application>Fcron</application> tables.
+            <application>Fcron</application> tables
 @y
             <command>fcron</command> に対して <application>Fcron</application> テーブルを再読込みすることを指示します。
 @z
 
 @x fcrontab
             is a program used to install, edit, list and remove the
-            tables used by <command>fcron</command>.
+            tables used by <command>fcron</command>
 @y
             <command>fcron</command> が利用するテーブルをインストール、編集、一覧、削除するためのプログラム。
 @z

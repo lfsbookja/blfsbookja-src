@@ -177,7 +177,7 @@
 
 @x libglut.so
             contains functions that implement the OpenGL Utility
-            Toolkit.
+            Toolkit
 @y
             OpenGL ユーティリティーツールキット (OpenGL Utility Toolkit) を実装した関数を提供します。
 @z

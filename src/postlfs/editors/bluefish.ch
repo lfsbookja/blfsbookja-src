@@ -197,7 +197,8 @@
 
 @x bluefish
             is a <application>GTK+</application> text editor for markup and
-            programming.
+            programming
 @y
-            <application>GTK+</application> により実装されたエディターです。マークアップやプログラミングに用いられます。
+            <application>GTK+</application> により実装されたエディターです。
+            マークアップやプログラミングに用いられます。
 @z

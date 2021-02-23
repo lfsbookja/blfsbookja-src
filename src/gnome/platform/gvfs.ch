@@ -301,8 +301,8 @@
 
 @x libgvfscommon.so
             contains the common API functions used in 
-            <application>Gvfs</application> programs.
+            <application>Gvfs</application> programs
 @y
             contains the common API functions used in 
-            <application>Gvfs</application> programs.
+            <application>Gvfs</application> programs
 @z

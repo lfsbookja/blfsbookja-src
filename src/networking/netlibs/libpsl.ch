@@ -185,13 +185,13 @@
 @z
 
 @x psl
-            queries the Public Suffix List.
+            queries the Public Suffix List
 @y
-            queries the Public Suffix List.
+            queries the Public Suffix List
 @z
 
 @x libpsl.so
-            contains a library used to access the Public Suffix List.
+            contains a library used to access the Public Suffix List
 @y
-            contains a library used to access the Public Suffix List.
+            contains a library used to access the Public Suffix List
 @z

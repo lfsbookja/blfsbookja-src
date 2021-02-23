@@ -168,13 +168,13 @@
 @z
 
 @x startx
-            initializes an X session.
+            initializes an X session
 @y
             X セッションを初期化します。
 @z
 
 @x xinit
-            is the X Window System initializer.
+            is the X Window System initializer
 @y
             X ウィンドウシステムの初期化プログラムです。
 @z

@@ -241,7 +241,7 @@
 @z
 
 @x screen
-            is a terminal multiplexor with VT100/ANSI terminal emulation.
+            is a terminal multiplexor with VT100/ANSI terminal emulation
 @y
-            is a terminal multiplexor with VT100/ANSI terminal emulation.
+            is a terminal multiplexor with VT100/ANSI terminal emulation
 @z

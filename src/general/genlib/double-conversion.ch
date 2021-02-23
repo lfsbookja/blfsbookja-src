@@ -17,7 +17,7 @@
 @x
     <title>Introduction to Double-conversion</title>
 @y
-    <title>Introduction to Double-conversion</title>
+    <title>&IntroductionTo1;Double-conversion&IntroductionTo2;</title>
 @z
 
 @x
@@ -33,49 +33,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&double-conversion-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&double-conversion-download-http;"/>
+          &Download; (HTTP): <ulink url="&double-conversion-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&double-conversion-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&double-conversion-download-ftp;"/>
+          &Download; (FTP): <ulink url="&double-conversion-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &double-conversion-md5sum;
 @y
-          Download MD5 sum: &double-conversion-md5sum;
+          &Download; MD5 sum: &double-conversion-md5sum;
 @z
 
 @x
           Download size: &double-conversion-size;
 @y
-          Download size: &double-conversion-size;
+          &DownloadSize;: &double-conversion-size;
 @z
 
 @x
           Estimated disk space required: &double-conversion-buildsize;
 @y
-          Estimated disk space required: &double-conversion-buildsize;
+          &Estimateddiskspacerequired;: &double-conversion-buildsize;
 @z
 
 @x
           Estimated build time: &double-conversion-time;
 @y
-          Estimated build time: &double-conversion-time;
+          &Estimatedbuildtime;: &double-conversion-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Double-conversion Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Double-conversion Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Double-conversion&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -84,54 +84,47 @@
       <xref linkend="cmake"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">
       User Notes: <ulink url="&blfs-wiki;/double-conversion"/>
-    </para>
-  </sect2>
 @y
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/double-conversion"/>
-    </para>
-  </sect2>
+      &UserNotes;: <ulink url="&blfs-wiki;/double-conversion"/>
 @z
 
 @x
     <title>Installation of Double-conversion</title>
 @y
-    <title>Installation of Double-conversion</title>
+    <title>&InstallationOf1;Double-conversion&InstallationOf2;</title>
 @z
 
 @x
       Install <application>Double-conversion</application> by running the following
       commands:
 @y
-      Install <application>Double-conversion</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Double-conversion</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make test</command>.
 @y
-      To test the results, issue: <command>make test</command>.
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -151,7 +144,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -159,9 +152,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -176,7 +169,7 @@
         </seg>
 @y
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           libdouble-conversion.so
@@ -189,11 +182,11 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libdouble-conversion.so
-            provides binary-to-decimal and decimal-to-binary routines for IEEE doubles.
+            provides binary-to-decimal and decimal-to-binary routines for IEEE doubles
 @y
-            provides binary-to-decimal and decimal-to-binary routines for IEEE doubles.
+            provides binary-to-decimal and decimal-to-binary routines for IEEE doubles
 @z

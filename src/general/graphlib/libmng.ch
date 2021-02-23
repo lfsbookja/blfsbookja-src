@@ -162,7 +162,7 @@
 @x libmng.{so,a}
             provides functions for programs wishing to read and write MNG
             files which are animation files without the patent problems
-            associated with certain other formats.
+            associated with certain other formats
 @y
             MNG ファイルの入出力を行うプログラムに対して機能を提供します。
             このファイルはアニメーションファイルであり、他のフォーマットに比べると商標権などの問題が一切ありません。

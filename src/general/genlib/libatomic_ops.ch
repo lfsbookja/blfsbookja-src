@@ -174,7 +174,7 @@
 @z
 
 @x libatomic_ops.so
-            contains functions for atomic memory operations.
+            contains functions for atomic memory operations
 @y
             atomic メモリ制御のための関数を提供します。
 @z

@@ -180,66 +180,66 @@
 @z
 
 @x imlib2_bumpmap
-            is to test the <application>imlib2</application> bumpmap function.
+            is to test the <application>imlib2</application> bumpmap function
 @y
-            is to test the <application>imlib2</application> bumpmap function.
+            is to test the <application>imlib2</application> bumpmap function
 @z
 
 @x imlib2_colorspace
             is to test the <application>imlib2</application> colorspace
-            function.
+            function
 @y
             is to test the <application>imlib2</application> colorspace
-            function.
+            function
 @z
 
 @x imlib2-config
             is a script used to obtain <application>imlib2</application>
-            building informations.
+            building informations
 @y
             is a script used to obtain <application>imlib2</application>
-            building informations.
+            building informations
 @z
 
 @x imlib2_poly
-            is to test the <application>imlib2</application> poly function.
+            is to test the <application>imlib2</application> poly function
 @y
-            is to test the <application>imlib2</application> poly function.
+            is to test the <application>imlib2</application> poly function
 @z
 
 @x imlib2_conv
-            converts images between formats.
+            converts images between formats
 @y
-            converts images between formats.
+            converts images between formats
 @z
 
 @x imlib2_grab
-            take screenshots.
+            take screenshots
 @y
-            take screenshots.
+            take screenshots
 @z
 
 @x imlib2_show
-            is an <application>imlib2</application> program test.
+            is an <application>imlib2</application> program test
 @y
-            is an <application>imlib2</application> program test.
+            is an <application>imlib2</application> program test
 @z
 
 @x imlib2_test
-            is an <application>imlib2</application> program test.
+            is an <application>imlib2</application> program test
 @y
-            is an <application>imlib2</application> program test.
+            is an <application>imlib2</application> program test
 @z
 
 @x imlib2_view
-            diplays images files.
+            diplays images files
 @y
-            diplays images files.
+            diplays images files
 @z
 
 @x libImlib2.so
             provides the functions for programs to deal with various
-            image data formats.
+            image data formats
 @y
             さまざまなイメージデータフォーマットを取り扱うプログラムに対しての関数を提供します。
 @z

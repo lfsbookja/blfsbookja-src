@@ -282,20 +282,20 @@
 @x MiniBrowser
             is a very simple graphical browser.
 @y
-            is a very simple graphical browser.
+            非常に簡単なグラフィカルブラウザー。
 @z
 
 @x libjavascriptcoregtk-4.0.so
             contains core JavaScript API functions used by
-            <command>jsc</command> and <filename
-            class="libraryfile">libwebkit2gtk-4.0</filename>.
+            <command>jsc</command> and
+            <filename class="libraryfile">libwebkit2gtk-4.0</filename>
 @y
             <command>jsc</command> と <filename
             class="libraryfile">libwebkit2gtk-4.0.so</filename> により利用されるコアな JavaScript API 関数を提供します。
 @z
 
 @x libwebkit2gtk-4.0.so
-            contains the <application>WebKit2</application> API functions.
+            contains the <application>WebKit2</application> API functions
 @y
             <application>WebKit2</application> API 関数を提供します。
 @z

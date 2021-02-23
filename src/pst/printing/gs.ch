@@ -382,22 +382,22 @@
 
 @x gs
             is an interpreter for Adobe Systems' PostScript(tm) and Portable
-            Document Format (PDF).
+            Document Format (PDF)
 @y
             is an interpreter for Adobe Systems' PostScript(tm) and Portable
-            Document Format (PDF).
+            Document Format (PDF)
 @z
 
 @x libgs.so
             provides <application>Ghostscript</application> functionality to
             other programs, such as <application>GSView</application>,
             <application>ImageMagick</application>, and
-            <application>libspectre</application>.
+            <application>libspectre</application>
 @y
             provides <application>Ghostscript</application> functionality to
             other programs, such as <application>GSView</application>,
             <application>ImageMagick</application>, and
-            <application>libspectre</application>.
+            <application>libspectre</application>
 @z
 
 @x

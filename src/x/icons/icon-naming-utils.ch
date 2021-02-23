@@ -168,10 +168,10 @@
             is a <application>Perl</application> script used for maintaining
             backwards compatibility with current desktop icon themes,
             while migrating to the names specified in the Icon Naming
-            Specification.
+            Specification
 @y
             is a <application>Perl</application> script used for maintaining
             backwards compatibility with current desktop icon themes,
             while migrating to the names specified in the Icon Naming
-            Specification.
+            Specification
 @z

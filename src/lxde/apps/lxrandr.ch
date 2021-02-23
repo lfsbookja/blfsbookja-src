@@ -201,7 +201,7 @@
 @z
 
 @x lxrandr
-            is a <application>GTK+</application> interface to XRandR.
+            is a <application>GTK+</application> interface to XRandR
 @y
             XRandR に対する <application>GTK+</application> インターフェースです。
 @z

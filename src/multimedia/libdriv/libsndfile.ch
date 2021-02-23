@@ -206,61 +206,61 @@
 @z
 
 @x sndfile-cmp
-            compares two audio files.
+            compares two audio files
 @y
             二つのオーディオファイルを比較します。
 @z
 
 @x sndfile-concat
-            concatenates two or more audio files.
+            concatenates two or more audio files
 @y
             複数のオーディオファイルを結合します。
 @z
 
 @x sndfile-convert
-            converts a sound files from one format to another.
+            converts a sound files from one format to another
 @y
             サウンドファイルを他形式に変換します。
 @z
 
 @x sndfile-deinterleave
-            splits a multi-channel into multiple single channel files.
+            splits a multi-channel into multiple single channel files
 @y
             マルチチャネル形式のファイルを、複数のシングルチャネル形式のファイルに分割します。
 @z
 
 @x sndfile-info
-            displays information about a sound file.
+            displays information about a sound file
 @y
             サウンドファイルの情報を表示します。
 @z
 
 @x sndfile-interleave
-            converts multiple single channel files into a multi-channel file.
+            converts multiple single channel files into a multi-channel file
 @y
             複数のシングルチャネル形式のファイルを、マルチチャネル形式のファイルに変換します。
 @z
 
 @x sndfile-metadata-get
-            retrieves metadata from a sound file.
+            retrieves metadata from a sound file
 @y
             サウンドファイルからメタデータを抽出します。
 @z
 
 @x sndfile-metadata-set
-            sets metadata in a sound file.
+            sets metadata in a sound file
 @y
             サウンドファイル内のメタデータを設定します。
 @z
 
 @x sndfile-play
-            plays a sound file.
+            plays a sound file
 @y
             サウンドファイルを再生します。
 @z
 
 @x libsndfile.so
-            contains the <application>libsndfile</application> API functions.
+            contains the <application>libsndfile</application> API functions
 @y
             <application>libsndfile</application> の API 関数を提供します。
 @z

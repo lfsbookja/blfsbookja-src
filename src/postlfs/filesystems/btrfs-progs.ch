@@ -300,49 +300,49 @@
 @z
 
 @x btrfs
-            is the main interface into btrfs filesystem operations.
+            is the main interface into btrfs filesystem operations
 @y
-            is the main interface into btrfs filesystem operations.
+            is the main interface into btrfs filesystem operations
 @z
 
 @x btrfs-convert
-            converts from an ext2/3/4 filesystem to btrfs.
+            converts from an ext2/3/4 filesystem to btrfs
 @y
-            converts from an ext2/3/4 filesystem to btrfs.
+            converts from an ext2/3/4 filesystem to btrfs
 @z
 
 @x btrfs-find-root
-            is a filter to find btrfs root.
+            is a filter to find btrfs root
 @y
-            is a filter to find btrfs root.
+            is a filter to find btrfs root
 @z
 
 @x btrfs-map-logical
-            maps btrfs logical extent to physical extent.
+            maps btrfs logical extent to physical extent
 @y
-            maps btrfs logical extent to physical extent.
+            maps btrfs logical extent to physical extent
 @z
 
 @x btrfs-select-super
-            overwrites the primary superblock with a backup copy.
+            overwrites the primary superblock with a backup copy
 @y
-            overwrites the primary superblock with a backup copy.
+            overwrites the primary superblock with a backup copy
 @z
 
 @x btrfstune
-            tunes various filesystem parameters.
+            tunes various filesystem parameters
 @y
-            tunes various filesystem parameters.
+            tunes various filesystem parameters
 @z
 
 @x fsck.btrfs
-            does nothing, but is present for consistency with fstab.
+            does nothing, but is present for consistency with fstab
 @y
-            does nothing, but is present for consistency with fstab.
+            does nothing, but is present for consistency with fstab
 @z
 
 @x mkfs.btrfs
-            creates a btrfs file system.
+            creates a btrfs file system
 @y
-            creates a btrfs file system.
+            creates a btrfs file system
 @z

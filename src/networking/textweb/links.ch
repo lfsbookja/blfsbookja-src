@@ -234,7 +234,7 @@
 @z
 
 @x links
-            is a text and graphics mode WWW browser.
+            is a text and graphics mode WWW browser
 @y
             テキストモードおよびグラフィックモードを持つ WWW ブラウザー。
 @z

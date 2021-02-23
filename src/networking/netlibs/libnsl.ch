@@ -178,7 +178,7 @@
 @z
 
 @x libnsl.{a,so}
-            provides the NIS (YP) API functions required by other programs.
+            provides the NIS (YP) API functions required by other programs
 @y
             他のプログラムが必要とする NIS (YP) API 関数を提供します。
 @z

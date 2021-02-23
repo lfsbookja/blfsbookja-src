@@ -222,8 +222,8 @@
 
 @x libgmime-3.0.so
             contains API functions used by programs that need to comply to
-            the MIME standards.
+            the MIME standards
 @y
             contains API functions used by programs that need to comply to
-            the MIME standards.
+            the MIME standards
 @z

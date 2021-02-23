@@ -81,8 +81,8 @@
 
 @x l4p-templ
               prints out the text of a template Log4perl configuration for
-              starting a new Log4perl configuration file.
+              starting a new Log4perl configuration file
 @y
               prints out the text of a template Log4perl configuration for
-              starting a new Log4perl configuration file.
+              starting a new Log4perl configuration file
 @z

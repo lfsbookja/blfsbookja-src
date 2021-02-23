@@ -379,7 +379,7 @@
 @z
 
 @x biber
-            is used for producing bibliographies in LaTeX documents.
+            is used for producing bibliographies in LaTeX documents
 @y
-            is used for producing bibliographies in LaTeX documents.
+            is used for producing bibliographies in LaTeX documents
 @z

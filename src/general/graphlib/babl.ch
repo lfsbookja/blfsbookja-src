@@ -164,7 +164,7 @@
 @z
 
 @x libbabl.so
-            contains functions to access BablFishes to convert between formats.
+            contains functions to access BablFishes to convert between formats
 @y
             各種フォーマットを変換するために BablFish にアクセスする関数を提供します。
 @z

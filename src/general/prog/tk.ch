@@ -230,7 +230,7 @@
 @z
 
 @x wish
-            is a symlink to the <command>wish&tk-ver;</command> program.
+            is a symlink to the <command>wish&tk-ver;</command> program
 @y
             <command>wish&tk-ver;</command> プログラムへのシンボリックリンク。
 @z
@@ -238,7 +238,7 @@
 @x wish&tk-ver;
             is a simple shell containing the
             <application>Tk</application> toolkit that creates a main window and
-            then processes <application>Tcl</application> commands.
+            then processes <application>Tcl</application> commands
 @y
             <application>Tk</application> ツールキットを含む単純なシェルスクリプト。
             メインウィンドウを生成し、<application>Tcl</application> コマンドを実行することができます。
@@ -246,7 +246,7 @@
 
 @x libtk&tk-ver;.so
             contains the API functions required
-            by <application>Tk</application>.
+            by <application>Tk</application>
 @y
             <application>Tk</application> が必要とする API 関数を提供します。
 @z

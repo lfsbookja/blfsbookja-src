@@ -168,7 +168,7 @@
 @z
 
 @x libaio.so
-            is the libaio library. 
+            is the libaio library
 @y
             libaio ライブラリ
 @z

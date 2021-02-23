@@ -164,14 +164,14 @@
 @z
 
 @x
-            is a line-oriented text editor.
+            is a line-oriented text editor
 @y
             行ベースのテキストエディターです。
 @z
 
 @x red
             is a restricted <command>ed</command>&mdash;it can only edit
-            files in the current directory and cannot execute shell commands.
+            files in the current directory and cannot execute shell commands
 @y
             機能が制限された <command>ed</command> です。
             これはカレントディレクトリ配下のファイルのみ編集でき、シェルコマンドの実行はできません。

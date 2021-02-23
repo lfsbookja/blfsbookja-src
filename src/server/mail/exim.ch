@@ -631,131 +631,131 @@
 @z
 
 @x exicyclog
-            cycles <application>Exim</application> log files.
+            cycles <application>Exim</application> log files
 @y
             <application>Exim</application> のログファイルを回します。
 @z
 
 @x exigrep
-            searches <application>Exim</application> log files.
+            searches <application>Exim</application> log files
 @y
-            searches <application>Exim</application> log files.
+            searches <application>Exim</application> log files
 @z
 
 @x exim
             is a symlink to the <command>exim-&exim-daemon-version;</command>
-            MTA daemon.
+            MTA daemon
 @y
             is a symlink to the <command>exim-&exim-daemon-version;</command>
-            MTA daemon.
+            MTA daemon
 @z
 
 @x exim-&exim-daemon-version;
-            is the <application>Exim</application> mail transport agent daemon.
+            is the <application>Exim</application> mail transport agent daemon
 @y
-            is the <application>Exim</application> mail transport agent daemon.
+            is the <application>Exim</application> mail transport agent daemon
 @z
 
 @x exim_checkaccess
             states whether a given recipient address from a given host is
-            acceptable or not.
+            acceptable or not
 @y
             states whether a given recipient address from a given host is
-            acceptable or not.
+            acceptable or not
 @z
 
 @x exim_dbmbuild
-            creates and rebuilds <application>Exim</application> databases.
+            creates and rebuilds <application>Exim</application> databases
 @y
-            creates and rebuilds <application>Exim</application> databases.
+            creates and rebuilds <application>Exim</application> databases
 @z
 
 @x exim_dumpdb
             writes the contents of <application>Exim</application>
-            databases to the standard output.
+            databases to the standard output
 @y
             writes the contents of <application>Exim</application>
-            databases to the standard output.
+            databases to the standard output
 @z
 
 @x exim_fixdb
-            modifies data in <application>Exim</application> databases.
+            modifies data in <application>Exim</application> databases
 @y
-            modifies data in <application>Exim</application> databases.
+            modifies data in <application>Exim</application> databases
 @z
 
 @x exim_lock
-            locks a mailbox file.
+            locks a mailbox file
 @y
-            locks a mailbox file.
+            locks a mailbox file
 @z
 
 @x exim_tidydb
             removes old records from <application>Exim</application>
-            databases.
+            databases
 @y
             removes old records from <application>Exim</application>
-            databases.
+            databases
 @z
 
 @x eximstats
             generates mail statistics from <application>Exim</application>
-            log files.
+            log files
 @y
             generates mail statistics from <application>Exim</application>
-            log files.
+            log files
 @z
 
 @x exinext
-            queries remote host retry times.
+            queries remote host retry times
 @y
-            queries remote host retry times.
+            queries remote host retry times
 @z
 
 @x exipick
-            selects messages based on various criteria.
+            selects messages based on various criteria
 @y
-            selects messages based on various criteria.
+            selects messages based on various criteria
 @z
 
 @x exiqgrep
-            is a utility for selective queue listing.
+            is a utility for selective queue listing
 @y
-            is a utility for selective queue listing.
+            is a utility for selective queue listing
 @z
 
 @x exiqsumm
-            produces a summary of the messages in the mail queue.
+            produces a summary of the messages in the mail queue
 @y
-            produces a summary of the messages in the mail queue.
+            produces a summary of the messages in the mail queue
 @z
 
 @x exiwhat
             queries running <application>Exim</application>
-          processes.
+          processes
 @y
             queries running <application>Exim</application>
-          processes.
+          processes
 @z
 
 @x eximon
             is a start-up shell script for <command>eximon.bin</command>
             used to set the required environment variables before running the
-            program.
+            program
 @y
             is a start-up shell script for <command>eximon.bin</command>
             used to set the required environment variables before running the
-            program.
+            program
 @z
 
 @x eximon.bin
             is a monitor program which displays current information in an
             <application>X</application> window, and also contains a menu
             interface to <application>Exim</application>'s command line
-            administration options.
+            administration options
 @y
             is a monitor program which displays current information in an
             <application>X</application> window, and also contains a menu
             interface to <application>Exim</application>'s command line
-            administration options.
+            administration options
 @z

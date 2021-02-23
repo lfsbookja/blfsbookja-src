@@ -517,27 +517,27 @@
 @z
 
 @x cancel
-            cancels existing print jobs from the print queues.
+            cancels existing print jobs from the print queues
 @y
-            cancels existing print jobs from the print queues.
+            cancels existing print jobs from the print queues
 @z
 
 @x cups-config
             is a <application>Cups</application>
-            program configuration utility.
+            program configuration utility
 @y
             is a <application>Cups</application>
-            program configuration utility.
+            program configuration utility
 @z
 
 @x cupsd
-            is the scheduler for the Common Unix Printing System.
+            is the scheduler for the Common Unix Printing System
 @y
-            is the scheduler for the Common Unix Printing System.
+            is the scheduler for the Common Unix Printing System
 @z
 
 @x cupstestppd
-            tests the conformance of PPD files.
+            tests the conformance of PPD files
 @y
-            tests the conformance of PPD files.
+            tests the conformance of PPD files
 @z

@@ -183,13 +183,13 @@
 @z
 
 @x volume_key
-            manages encrypted volume keys and passphrases.
+            manages encrypted volume keys and passphrases
 @y
-            manages encrypted volume keys and passphrases.
+            manages encrypted volume keys and passphrases
 @z
 
 @x volume_key.so
-            contains API functions for managing encrypted volume keys.
+            contains API functions for managing encrypted volume keys
 @y
-            contains API functions for managing encrypted volume keys.
+            contains API functions for managing encrypted volume keys
 @z

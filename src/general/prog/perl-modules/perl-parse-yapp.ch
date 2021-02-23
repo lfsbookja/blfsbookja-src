@@ -79,8 +79,8 @@
 
 @x yapp
               is a frontend to the Parse::Yapp module, which lets you create
-              a Perl OO parser from an input grammar file.
+              a Perl OO parser from an input grammar file
 @y
               is a frontend to the Parse::Yapp module, which lets you create
-              a Perl OO parser from an input grammar file.
+              a Perl OO parser from an input grammar file
 @z

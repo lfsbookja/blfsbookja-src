@@ -189,7 +189,7 @@
 @z
 
 @x libdaemon.so
-            contains the <application>libdaemon</application> API functions.
+            contains the <application>libdaemon</application> API functions
 @y
             <application>libdaemon</application> の API 関数を提供します。
 @z

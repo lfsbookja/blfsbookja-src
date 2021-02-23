@@ -168,7 +168,7 @@
 @z
 
 @x evdev_drv.so
-              is an Xorg input driver for Linux generic event devices.
+              is an Xorg input driver for Linux generic event devices
 @y
               Linux の汎用イベントデバイス (Linux generic event devices) 用の Xorg 入力ドライバー。
 @z

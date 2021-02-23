@@ -88,7 +88,7 @@
 @z
 
 @x config_data
-              is used to query or change the configuration of perl modules.
+              is used to query or change the configuration of perl modules
 @y
-              is used to query or change the configuration of perl modules.
+              is used to query or change the configuration of perl modules
 @z

@@ -192,16 +192,16 @@
             is a utility used to configure and build applications based on
             the libksba(3) library. It can be used to query the C compiler and
             linker flags which are required to correctly compile and link the
-            application against the libksba(3) library.
+            application against the libksba(3) library
 @y
             is a utility used to configure and build applications based on
             the libksba(3) library. It can be used to query the C compiler and
             linker flags which are required to correctly compile and link the
-            application against the libksba(3) library.
+            application against the libksba(3) library
 @z
 
 @x libksba.{so,a}
-            contains the cryptographic API functions.
+            contains the cryptographic API functions
 @y
-            contains the cryptographic API functions.
+            暗号化 API 関数を提供します。
 @z

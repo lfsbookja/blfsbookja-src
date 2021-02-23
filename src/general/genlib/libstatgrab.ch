@@ -167,33 +167,33 @@
 @z
 
 @x saidar
-            is a curses-based tool for viewing system statistics.
+            is a curses-based tool for viewing system statistics
 @y
-            is a curses-based tool for viewing system statistics.
+            is a curses-based tool for viewing system statistics
 @z
 
 @x statgrab
-            is a sysctl-style interface to system statistics.
+            is a sysctl-style interface to system statistics
 @y
-            is a sysctl-style interface to system statistics.
+            is a sysctl-style interface to system statistics
 @z
 
 @x statgrab-make-mrtg-config
-            generates MRTG configuration.
+            generates MRTG configuration
 @y
-            generates MRTG configuration.
+            generates MRTG configuration
 @z
 
 @x statgrab-make-mrtg-index
             generates an XHTML index page from MRTG configuration files or
-            stdin.
+            stdin
 @y
             generates an XHTML index page from MRTG configuration files or
-            stdin.
+            stdin
 @z
 
 @x libstatgrab.so
-            contains the <application>libstatgrab</application> API functions.
+            contains the <application>libstatgrab</application> API functions
 @y
-            contains the <application>libstatgrab</application> API functions.
+            <application>libstatgrab</application> API 関数を提供します。
 @z

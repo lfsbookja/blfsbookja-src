@@ -212,7 +212,7 @@
 
 @x libassuan.so
             is an inter process communication library which
-            implements the Assuan protocol.
+            implements the Assuan protocol
 @y
             Assuan プロトコルを実装したプロセス間通信ライブラリ。
 @z

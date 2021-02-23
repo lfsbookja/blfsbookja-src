@@ -187,7 +187,7 @@
 @z
 
 @x libgudev-1.0.so
-            is a GObject-based wrapper library for libudev.
+            is a GObject-based wrapper library for libudev
 @y
             libudev に対する Gobject ベースのラッパーライブラリ。
 @z

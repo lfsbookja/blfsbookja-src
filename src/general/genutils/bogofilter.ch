@@ -222,54 +222,54 @@
 
 @x bf_compact
             creates a more compact bogofilter working directory with a
-            dump/load cycle.
+            dump/load cycle
 @y
             creates a more compact bogofilter working directory with a
-            dump/load cycle.
+            dump/load cycle
 @z
 
 @x bf_copy
-            copies a bogofilter working directory to another directory.
+            copies a bogofilter working directory to another directory
 @y
-            copies a bogofilter working directory to another directory.
+            copies a bogofilter working directory to another directory
 @z
 
 @x bf_tar
             bundles a bogofilter working directory in tar format and
-            copies it to standard output.
+            copies it to standard output
 @y
             bundles a bogofilter working directory in tar format and
-            copies it to standard output.
+            copies it to standard output
 @z
 
 @x bogofilter
-            is a fast Bayesian spam filter.
+            is a fast Bayesian spam filter
 @y
-            is a fast Bayesian spam filter.
+            is a fast Bayesian spam filter
 @z
 
 @x bogolexer
             is used to separate messages into tokens and to test new
-            versions of the lexer.l code.
+            versions of the lexer.l code
 @y
             is used to separate messages into tokens and to test new
-            versions of the lexer.l code.
+            versions of the lexer.l code
 @z
 
 @x bogotune
-            attempts to find optimum parameter settings for bogofilter.
+            attempts to find optimum parameter settings for bogofilter
 @y
-            attempts to find optimum parameter settings for bogofilter.
+            attempts to find optimum parameter settings for bogofilter
 @z
 
 @x bogoupgrade
-            upgrades the bogofilter database to the current version.
+            upgrades the bogofilter database to the current version
 @y
-            upgrades the bogofilter database to the current version.
+            upgrades the bogofilter database to the current version
 @z
 
 @x bogoutil
-            dumps, loads, and maintains bogofilter database files.
+            dumps, loads, and maintains bogofilter database files
 @y
-            dumps, loads, and maintains bogofilter database files.
+            dumps, loads, and maintains bogofilter database files
 @z

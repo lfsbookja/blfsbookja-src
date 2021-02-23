@@ -183,7 +183,7 @@
 @z
 
 @x libmenu-cache.so
-            contains the <application>menu-cache</application> API functions.
+            contains the <application>menu-cache</application> API functions
 @y
             <application>menu-cache</application> API 関数を提供します。
 @z

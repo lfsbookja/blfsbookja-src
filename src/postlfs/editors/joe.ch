@@ -192,7 +192,7 @@
 
 @x
             is a symbolic link to <command>joe</command> used to
-            launch <application>Emacs</application> emulation mode.
+            launch <application>Emacs</application> emulation mode
 @y
             <command>joe</command> へのシンボリックリンクであり <application>Emacs</application> エミュレーションモードで起動します。
 @z
@@ -200,21 +200,21 @@
 @x joe
             is a small text editor capable of emulating
             WordStar, <application>Pico</application>, and
-            <application>Emacs</application>.
+            <application>Emacs</application>
 @y
             軽量なテキストエディターであり、WordStar, <application>Pico</application>, <application>Emacs</application> といったエディター機能をエミュレートします。
 @z
 
 @x jpico
             is a symbolic link to <command>joe</command> used to
-            launch <application>Pico</application> emulation mode.
+            launch <application>Pico</application> emulation mode
 @y
             <command>joe</command> へのシンボリックリンクであり <application>Pico</application> エミュレーションモードで起動します。
 @z
 
 @x jstar
             is a symbolic link to <command>joe</command> used to
-            launch WordStar emulation mode.
+            launch WordStar emulation mode
 @y
             <command>joe</command> へのシンボリックリンクであり WordStar エミュレーションモードで起動します。
 @z
@@ -222,7 +222,7 @@
 @x rjoe
             is a symbolic link to <command>joe</command> that restricts
             <application>JOE</application> to editing only files which are
-            specified on the command-line.
+            specified on the command-line
 @y
             <command>joe</command> へのシンボリックリンクであり、コマンドラインから指定されたファイルのみを編集するように、限定的に <application>JOE</application> を起動します。
 @z
@@ -230,17 +230,17 @@
 @x stringify
             is a program used by <command>joe</command> to convert rc and
             .jsf files into a C file (see
-            /usr/share/doc/joe-&joe-version;/util/README).
+            /usr/share/doc/joe-&joe-version;/util/README)
 @y
             is a program used by <command>joe</command> to convert rc and
             .jsf files into a C file (see
-            /usr/share/doc/joe-&joe-version;/util/README).
+            /usr/share/doc/joe-&joe-version;/util/README)
 @z
 
 @x termidx
             is a program used by <command>joe</command> to generate the
             termcap index file (see
-            /usr/share/doc/joe-&joe-version;/util/README).
+            /usr/share/doc/joe-&joe-version;/util/README)
 @y
             <command>joe</command> を利用して termcap インデックスファイルを生成します。
             （/usr/share/doc/joe-&joe-version;/util/README 参照）
@@ -251,11 +251,11 @@
             unicode database file unicat.c from Blocks.txt CaseFolding.txt
             EastAsianWidth.txt and UnicodeData.txt (find them at
             /usr/share/doc/joe-&joe-version;/util; see 
-            usr/share/doc/joe-&joe-version;/util/README).
+            usr/share/doc/joe-&joe-version;/util/README)
 @y
             is a program used by <command>joe</command> to generate joe's
             unicode database file unicat.c from Blocks.txt CaseFolding.txt
             EastAsianWidth.txt and UnicodeData.txt (find them at
             /usr/share/doc/joe-&joe-version;/util; see 
-            usr/share/doc/joe-&joe-version;/util/README).
+            usr/share/doc/joe-&joe-version;/util/README)
 @z

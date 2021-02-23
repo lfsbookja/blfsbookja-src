@@ -153,13 +153,13 @@
 @z
 
 @x rep
-            is the Lisp interpreter.
+            is the Lisp interpreter
 @y
             Lisp インタープリター。
 @z
 
 @x librep.so
-            contains the functions necessary for the Lisp interpreter.
+            contains the functions necessary for the Lisp interpreter
 @y
             Lisp インタープリターに対して必要となる関数を提供します。
 @z

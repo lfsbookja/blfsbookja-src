@@ -214,14 +214,14 @@
 
 @x handy-1-demo
             provides an example of how to use the
-            <application>libhandy</application> library.
+            <application>libhandy</application> library
 @y
             provides an example of how to use the
-            <application>libhandy</application> library.
+            <application>libhandy</application> library
 @z
 
 @x libhandy-1.so
-            provides additional GTK widgets for use in creating user interfaces.
+            provides additional GTK widgets for use in creating user interfaces
 @y
-            provides additional GTK widgets for use in creating user interfaces.
+            provides additional GTK widgets for use in creating user interfaces
 @z

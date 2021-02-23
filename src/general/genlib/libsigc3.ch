@@ -209,7 +209,7 @@
 @z
 
 @x libsigc-3.0.so
-            contains the <application>libsigc++3</application> API functions.
+            contains the <application>libsigc++3</application> API functions
 @y
-            <application>libsigc++3</application> API 関数を含みます。
+            <application>libsigc++3</application> API 関数を提供します。
 @z

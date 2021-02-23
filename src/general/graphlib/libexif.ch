@@ -192,7 +192,7 @@
 
 @x libexif.so
             contains functions used for parsing, editing, and saving
-            EXIF data.
+            EXIF data
 @y
             EXIF データの解析、編集、保存を行うための関数を提供します。
 @z

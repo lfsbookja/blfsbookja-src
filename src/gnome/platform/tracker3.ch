@@ -261,13 +261,13 @@
 @z
 
 @x tracker3
-            is a control program for the indexer.
+            is a control program for the indexer
 @y
-            is a control program for the indexer.
+            is a control program for the indexer
 @z
 
 @x libtracker-sparql-3.0.so
-            contains resource management and database functions.
+            contains resource management and database functions
 @y
-            contains resource management and database functions.
+            contains resource management and database functions
 @z

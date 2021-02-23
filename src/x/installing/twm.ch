@@ -171,7 +171,7 @@
 @z
 
 @x twm
-            is the Tab Window Manager for the X Window System.
+            is the Tab Window Manager for the X Window System
 @y
             X ウィンドウシステムにおけるタブウィンドウマネージャー (Tab Window Manager) です。
 @z

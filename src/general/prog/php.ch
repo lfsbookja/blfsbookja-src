@@ -655,22 +655,22 @@
 
 @x php
             is a command line interface that enables you to parse and
-            execute PHP code.
+            execute PHP code
 @y
             is a command line interface that enables you to parse and
-            execute PHP code.
+            execute PHP code
 @z
 
 @x pear
             is the PHP Extension and Application Repository (PEAR) package
-            manager. This isn't installed by default.
+            manager. This isn't installed by default
 @y
             is the PHP Extension and Application Repository (PEAR) package
-            manager. This isn't installed by default.
+            manager. This isn't installed by default
 @z
 
 @x php-fpm
-            is the fastCGI process manager for PHP.
+            is the fastCGI process manager for PHP
 @y
-            is the fastCGI process manager for PHP.
+            is the fastCGI process manager for PHP
 @z

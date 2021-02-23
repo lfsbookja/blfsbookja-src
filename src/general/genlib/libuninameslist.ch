@@ -7,7 +7,6 @@
 % $Rev$
 % $Date::                           $
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -160,7 +159,7 @@
 @z
 
 @x libuninameslist.so
-            provides a library of Unicode names and annotation data.
+            provides a library of Unicode names and annotation data
 @y
-            provides a library of Unicode names and annotation data.
+            provides a library of Unicode names and annotation data
 @z

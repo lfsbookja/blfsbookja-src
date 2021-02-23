@@ -176,14 +176,14 @@
 @z
 
 @x libatk-bridge.so
-            is the Accessibility Toolkit <application>GTK+</application> module.
+            is the Accessibility Toolkit <application>GTK+</application> module
 @y
             <application>GTK+</application> モジュールであるアクセサビリティーツールキット (Accessibility Toolkit) です。
 @z
 
 @x libatk-bridge-2.0.so
             Contains the common functions used by <application>GTK+</application>
-            Accessibility Toolkit Bridge.
+            Accessibility Toolkit Bridge
 @y
             <application>GTK+</application> アクセサビリティーツールキットのブリッジとして用いられる共通関数を提供します。
 @z

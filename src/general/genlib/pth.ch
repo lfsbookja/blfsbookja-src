@@ -191,17 +191,17 @@
             is a utility used to configure and build applications based on
             the pth(3) library. It can be used to query the C compiler and
             linker flags which are required to correctly compile and link the
-            application against the pth(3) library.
+            application against the pth(3) library
 @y
             is a utility used to configure and build applications based on
             the pth(3) library. It can be used to query the C compiler and
             linker flags which are required to correctly compile and link the
-            application against the pth(3) library.
+            application against the pth(3) library
 @z
 
 @x libpth.so
             contains the API functions used by the GNU Portable Threads
-            Library.
+            Library
 @y
             GNU ポータブルスレッドライブラリ (GNU Portable Threads Library) にて用いられる API 関数を提供します。
 @z

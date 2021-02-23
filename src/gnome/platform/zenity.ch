@@ -200,16 +200,16 @@
 
 @x gdialog
             is a <application>Perl</application> wrapper script which
-            can be used with legacy scripts.
+            can be used with legacy scripts
 @y
             is a <application>Perl</application> wrapper script which
-            can be used with legacy scripts.
+            can be used with legacy scripts
 @z
 
 @x zenity
             is a program that will display <application>GTK+</application>
-            dialogs, and return the user's input.
+            dialogs, and return the user's input
 @y
             is a program that will display <application>GTK+</application>
-            dialogs, and return the user's input.
+            dialogs, and return the user's input
 @z

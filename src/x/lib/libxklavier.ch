@@ -208,7 +208,7 @@
 @z
 
 @x libxklavier.so
-            contains XKB utility functions.
+            contains XKB utility functions
 @y
             XKB ユーティリティー関数を提供します。
 @z

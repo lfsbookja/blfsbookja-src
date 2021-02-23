@@ -231,37 +231,37 @@
 
 @x valac
             is a compiler that translates <application>Vala</application>
-            source code into C source and header files.
+            source code into C source and header files
 @y
             <application>Vala</application> ソースコードを C のソースおよびヘッダーファイルへと変換するコンパイラーです。
 @z
 
 @x valadoc
             is a documentation generator for generating API documentation
-            from <application>Vala</application> source code based on libvala.
+            from <application>Vala</application> source code based on libvala
 @y
             is a documentation generator for generating API documentation
-            from <application>Vala</application> source code based on libvala.
+            from <application>Vala</application> source code based on libvala
 @z
 
 @x vala-gen-introspect
             generates a GI file for GObject and
-            <application>GLib</application> based packages.
+            <application>GLib</application> based packages
 @y
             generates a GI file for GObject and
-            <application>GLib</application> based packages.
+            <application>GLib</application> based packages
 @z
 
 @x vapigen
             is an utility which generates <application>Vala</application> API
-            (VAPI) files from GI files.
+            (VAPI) files from GI files
 @y
             is an utility which generates <application>Vala</application> API
-            (VAPI) files from GI files.
+            (VAPI) files from GI files
 @z
 
 @x libvala-0.16.so
-            contains the <application>Vala</application> API functions.
+            contains the <application>Vala</application> API functions
 @y
             <application>Vala</application> API 関数を提供します。
 @z

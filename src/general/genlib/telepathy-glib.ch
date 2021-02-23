@@ -210,7 +210,7 @@
 @z
 
 @x libtelepathy-glib.{so,a}
-            contains the <application>Telepathy GLib</application> API functions.
+            contains the <application>Telepathy GLib</application> API functions
 @y
             <application>Telepathy GLib</application> の API 関数を提供します。
 @z

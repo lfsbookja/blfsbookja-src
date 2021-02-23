@@ -173,15 +173,15 @@
 @z
 
 @x gnome-disk-image-mounter
-            is used to set up disk images.
+            is used to set up disk images
 @y
-            is used to set up disk images.
+            is used to set up disk images
 @z
 
 @x gnome-disks
             is used to inspect, format, partition and configure disks
-            and block devices.
+            and block devices
 @y
             is used to inspect, format, partition and configure disks
-            and block devices.
+            and block devices
 @z

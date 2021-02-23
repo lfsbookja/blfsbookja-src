@@ -191,7 +191,7 @@
 
 @x libtirpc.{so,a}
             provides the Remote Procedure Call (RPC) API functions required by
-            other programs.
+            other programs
 @y
             他のプログラムが必要とするリモートプロシジャーコール (Remote Procedure Call; RPC) の API 関数を提供します。
 @z

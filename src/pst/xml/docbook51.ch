@@ -212,9 +212,9 @@
 @z
 
 @x db4-entities.pl
-            is a script to convert DocBook 4.x filed to DocBook 5.1.
+            is a script to convert DocBook 4.x filed to DocBook 5.1
 @y
-            is a script to convert DocBook 4.x filed to DocBook 5.1.
+            is a script to convert DocBook 4.x filed to DocBook 5.1
 @z
 
 @x
@@ -224,18 +224,18 @@
 @z
 @x
             contain the Docbook 5.1 RelaxNG, RelaxNG Compact, and Schematron
-            schema definitions.
+            schema definitions
 @y
             contain the Docbook 5.1 RelaxNG, RelaxNG Compact, and Schematron
-            schema definitions.
+            schema definitions
 @z
 
 @x db4-upgrade.xsl
             is an XSL stylesheet to assist in conversion from DocBook 4.x files
-            to DocBook 5.1.
+            to DocBook 5.1
 @y
             is an XSL stylesheet to assist in conversion from DocBook 4.x files
-            to DocBook 5.1.
+            to DocBook 5.1
 @z
 @x
             <primary sortas="g-XSL-Stylesheets">XSL Stylesheets</primary>

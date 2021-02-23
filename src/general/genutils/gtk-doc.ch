@@ -264,10 +264,10 @@
             these are all shell, or          
             <application>Python</application> scripts used by
             package <filename>Makefile</filename> scripts to generate
-            documentation for the package being built.
+            documentation for the package being built
 @y
             these are all shell, or          
             <application>Python</application> scripts used by
             package <filename>Makefile</filename> scripts to generate
-            documentation for the package being built.
+            documentation for the package being built
 @z

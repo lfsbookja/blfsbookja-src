@@ -155,7 +155,7 @@
 @z
 
 @x rpcgen
-            Generates C code to implement the RPC protocol.
+            Generates C code to implement the RPC protocol
 @y
             RPC プロトコルを実装する C 言語コードを生成します。
 @z

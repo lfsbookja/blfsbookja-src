@@ -223,7 +223,7 @@
 @z
 
 @x libtheora*.so
-            contains the functions to read and write video files.
+            contains the functions to read and write video files
 @y
             ビデオファイルの読み書きを行う関数を提供します。
 @z

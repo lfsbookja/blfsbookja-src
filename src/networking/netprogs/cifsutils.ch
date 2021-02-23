@@ -229,77 +229,77 @@
             There are a number of activities that the kernel cannot easily do
             itself. This program is a callout program that does these
             things for the kernel and then returns the result. It is not
-            intended to be run from the command-line.
+            intended to be run from the command-line
 @y
             is a userspace helper program for the linux CIFS client filesystem.
             There are a number of activities that the kernel cannot easily do
             itself. This program is a callout program that does these
             things for the kernel and then returns the result. It is not
-            intended to be run from the command-line.
+            intended to be run from the command-line
 @z
 
 @x cifs.upcall
             is a userspace helper program for the linux CIFS client
             filesystem. It is intended to be run when the kernel calls
             request-key for a particular key type.  It is not intended to be
-            run from the command-line.
+            run from the command-line
 @y
             is a userspace helper program for the linux CIFS client
             filesystem. It is intended to be run when the kernel calls
             request-key for a particular key type.  It is not intended to be
-            run from the command-line.
+            run from the command-line
 @z
 
 @x cifscreds
             is a tool for managing credentials (username and password)
-            for the purpose of establishing sessions in multiuser mounts.
+            for the purpose of establishing sessions in multiuser mounts
 @y
             is a tool for managing credentials (username and password)
-            for the purpose of establishing sessions in multiuser mounts.
+            for the purpose of establishing sessions in multiuser mounts
 @z
 
 @x getcifsacl
             is a userspace helper  to display an ACL in a security
-            descriptor for Common Internet File System (CIFS).
+            descriptor for Common Internet File System (CIFS)
 @y
             is a userspace helper  to display an ACL in a security
-            descriptor for Common Internet File System (CIFS).
+            descriptor for Common Internet File System (CIFS)
 @z
 
 @x mount.cifs
             mounts a Linux CIFS filesystem. It is usually invoked
-            indirectly by the mount(8) command when using the "-t cifs" option.
+            indirectly by the mount(8) command when using the "-t cifs" option
 @y
             mounts a Linux CIFS filesystem. It is usually invoked
-            indirectly by the mount(8) command when using the "-t cifs" option.
+            indirectly by the mount(8) command when using the "-t cifs" option
 @z
 
 @x mount.smb3
             mounts a SMB3-based filesystem. It is usually invoked
-            indirectly by the mount(8) command when using the "-t smb3" option.
+            indirectly by the mount(8) command when using the "-t smb3" option
 @y
             mounts a SMB3-based filesystem. It is usually invoked
-            indirectly by the mount(8) command when using the "-t smb3" option.
+            indirectly by the mount(8) command when using the "-t smb3" option
 @z
 
 @x setcifsacl
             is intended to alter an ACL of a security descriptor for a file
-            system object.
+            system object
 @y
             is intended to alter an ACL of a security descriptor for a file
-            system object.
+            system object
 @z
 
 @x smb3-quota
-            displays quota information for a SMB filesystem.
+            displays quota information for a SMB filesystem
 @y
-            displays quota information for a SMB filesystem.
+            displays quota information for a SMB filesystem
 @z
 
 @x smbinfo
             displays SMB-specific file information, such as security
-            descriptors and quotas.
+            descriptors and quotas
 @y
             displays SMB-specific file information, such as security
-            descriptors and quotas.
+            descriptors and quotas
 @z

@@ -449,58 +449,57 @@
 @x acyclic
             is a filter that takes a directed graph as input and outputs a
             copy of the graph with sufficient edges reversed to make the 
-            graph acyclic.
+            graph acyclic
 @y
             is a filter that takes a directed graph as input and outputs a
             copy of the graph with sufficient edges reversed to make the 
-            graph acyclic.
+            graph acyclic
 @z
 
 @x bcomps
             decomposes graphs into their biconnected components, 
-            printing the components to standard output.
+            printing the components to standard output
 @y
             decomposes graphs into their biconnected components, 
-            printing the components to standard output.
+            printing the components to standard output
 @z
 
 @x ccomps
             decomposes graphs into their connected components, 
-            printing the components to standard output.
+            printing the components to standard output
 @y
             decomposes graphs into their connected components, 
-            printing the components to standard output.
+            printing the components to standard output
 @z
 
 @x circo
-            draws graphs using a circular layout.
+            draws graphs using a circular layout
 @y
-            draws graphs using a circular layout.
+            draws graphs using a circular layout
 @z
 
 @x cluster
             takes as input a graph in DOT format, finds node clusters
-            and augments the graph with this information.
+            and augments the graph with this information
 @y
             takes as input a graph in DOT format, finds node clusters
-            and augments the graph with this information.
+            and augments the graph with this information
 @z
 
 @x diffimg
             generates an image where each pixel is the 
             difference between the corresponding pixel in 
-            each of the two source images.
+            each of the two source images
 @y
             generates an image where each pixel is the 
             difference between the corresponding pixel in 
-            each of the two source images.
+            each of the two source images
 @z
 
 @x dijkstra
             reads a stream of graphs and for each computes the distance of
-            every node from sourcenode.
+            every node from sourcenode
 @y
             reads a stream of graphs and for each computes the distance of
-            every node from sourcenode.
+            every node from sourcenode
 @z
-

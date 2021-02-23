@@ -177,7 +177,7 @@
 @z
 
 @x libgee.so
-            contains the <application>libgee</application> API functions.
+            contains the <application>libgee</application> API functions
 @y
             <application>libgee</application> API 関数を提供します。
 @z

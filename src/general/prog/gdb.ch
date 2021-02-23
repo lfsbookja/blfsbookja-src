@@ -194,26 +194,14 @@
 @z
 
 @x gdb
-            is the GNU Debugger.
+            is the GNU Debugger
 @y
             GNU デバッガー。
 @z
 
 @x gdbserver
             is a remote server for the GNU debugger (it allows programs
-            to be debugged from a different machine).
+            to be debugged from a different machine)
 @y
             GNU デバッガーに対するリモートサーバー。(他端末からのプログラムのデバッグが可能となります。)
-@z
-
-@x libinproctrace.so
-            contains functions for the in-process tracing agent. The agent
-            allows for installing fast tracepoints, listing static tracepoint
-            markers, probing static tracepoints markers, and starting trace
-            monitoring.
-@y
-            contains functions for the in-process tracing agent. The agent
-            allows for installing fast tracepoints, listing static tracepoint
-            markers, probing static tracepoints markers, and starting trace
-            monitoring.
 @z

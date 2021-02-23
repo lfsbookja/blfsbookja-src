@@ -223,7 +223,7 @@
 
 @x epiphany
             is a <application>GNOME</application> web browser based on
-            the <application>WebKit2</application> rendering engine.
+            the <application>WebKit2</application> rendering engine
 @y
             <application>WebKit2</application> レンダリングエンジンに基づいた <application>GNOME</application> ウェブブラウザー。
 @z

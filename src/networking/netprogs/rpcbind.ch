@@ -243,17 +243,17 @@
 @x rpcbind
             is a server that converts RPC program numbers into universal
             addresses.  It must be running on the host to be able to make RPC
-            calls on a server on that machine.
+            calls on a server on that machine
 @y
             is a server that converts RPC program numbers into universal
             addresses.  It must be running on the host to be able to make RPC
-            calls on a server on that machine.
+            calls on a server on that machine
 @z
 
 @x rpcinfo
             makes an RPC call to an RPC server and reports data according
-            to the requested options.
+            to the requested options
 @y
             makes an RPC call to an RPC server and reports data according
-            to the requested options.
+            to the requested options
 @z

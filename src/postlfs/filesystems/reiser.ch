@@ -175,7 +175,7 @@
             <application>ReiserFS</application> file systems. If it is called
             without options, it prints the super block of any
             <application>ReiserFS</application> file
-            system found on the device.
+            system found on the device
 @y
             <application>ReiserFS</application>
             ファイルシステムに発生したトラブルを解消するために利用することができます。
@@ -183,14 +183,14 @@
 @z
 
 @x mkreiserfs
-            creates a <application>ReiserFS</application> file system.
+            creates a <application>ReiserFS</application> file system
 @y
             <application>ReiserFS</application> ファイルシステムを生成します。
 @z
 
 @x reiserfsck
             is used to check or repair a
-            <application>ReiserFS</application> file system.
+            <application>ReiserFS</application> file system
 @y
             <application>ReiserFS</application> ファイルシステムをチェックまたは修復します。
 @z
@@ -198,7 +198,7 @@
 @x reiserfstune
             is used for tuning the <application>ReiserFS</application>
             journal. <emphasis>WARNING</emphasis>: Don't use this utility
-            without first reading the man page thoroughly.
+            without first reading the man page thoroughly
 @y
             <application>ReiserFS</application> のジャーナルを調整するために利用します。
             <emphasis>注意</emphasis>: 本プログラムは、必ず man ページを一通り読んでから利用してください。
@@ -206,7 +206,7 @@
 
 @x resize_reiserfs
             is used to resize an unmounted
-            <application>ReiserFS</application> file system.
+            <application>ReiserFS</application> file system
 @y
             <application>ReiserFS</application> ファイルシステムをリサイズまたはアンマウントします。
 @z

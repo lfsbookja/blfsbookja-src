@@ -169,14 +169,14 @@
 @x apr-1-config
             is a shell script used to retrieve information about the apr
             library in the system. It is typically used to compile and link
-            against the library.
+            against the library
 @y
             apr ライブラリについての情報を得るためのシェルスクリプトです。
             本ライブラリをコンパイルしたりリンクしたりする際に、よく利用されます。
 @z
 
 @x libapr-1.so
-            is the Apache Portable Runtime library.
+            is the Apache Portable Runtime library
 @y
             Apache ポータブルランタイムライブラリ (Apache Portable Runtime library)
 @z

@@ -295,45 +295,45 @@
 @z
 
 @x pkaction
-            is used to obtain information about registered PolicyKit actions.
+            is used to obtain information about registered PolicyKit actions
 @y
             登録されている PolicyKit アクションについての情報を取得するために用います。
 @z
 
 @x pkcheck
-            is used to check whether a process is authorized for action.
+            is used to check whether a process is authorized for action
 @y
             プロセスがアクションを行う権限を有するかどうかをチェックするために用います。
 @z
 
 @x pkexec
-            allows an authorized user to execute a command as another user.
+            allows an authorized user to execute a command as another user
 @y
             認証されたユーザーが、他ユーザーとなってコマンド実行することを許可します。
 @z
 
 @x pkttyagent
-            is used to start a textual authentication agent for the subject.
+            is used to start a textual authentication agent for the subject
 @y
             プロセスなどに対して、テキスト情報による権限エージェントを開始します。
 @z
 
 @x polkitd
             provides the org.freedesktop.PolicyKit1 <application>D-Bus</application> 
-            service on the system message bus.
+            service on the system message bus
 @y
             システムメッセージバス上にて、org.freedesktop.PolicyKit1 なる <application>D-Bus</application> サービスを提供します。
 @z
 
 @x libpolkit-agent-1.{so,a}
             contains the <application>Polkit</application> authentication
-            agent API functions.
+            agent API functions
 @y
             <application>Polkit</application> の認証エージェント API 関数を提供します。
 @z
 
 @x libpolkit-gobject-1.{so,a}
-            contains the <application>Polkit</application> authorization API functions.
+            contains the <application>Polkit</application> authorization API functions
 @y
             <application>Polkit</application> 認証 API 関数を提供します。
 @z

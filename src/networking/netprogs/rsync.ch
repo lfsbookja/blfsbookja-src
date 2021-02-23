@@ -286,12 +286,12 @@
             <quote>rsync algorithm</quote> which provides a very fast method of
             syncing remote files. It does this by sending just the differences
             in the files across the link, without requiring that both sets of
-            files are present at one end of the link beforehand.
+            files are present at one end of the link beforehand
 @y
             is a replacement for <command>rcp</command> (and
             <command>scp</command>) that has many more features. It uses the
             <quote>rsync algorithm</quote> which provides a very fast method of
             syncing remote files. It does this by sending just the differences
             in the files across the link, without requiring that both sets of
-            files are present at one end of the link beforehand.
+            files are present at one end of the link beforehand
 @z

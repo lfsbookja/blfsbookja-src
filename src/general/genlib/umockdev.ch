@@ -210,34 +210,34 @@
 
 @x umockdev-record
             records Linux devices and their ancestors from sysfs/udev or
-            records ioctls for a device.
+            records ioctls for a device
 @y
             records Linux devices and their ancestors from sysfs/udev or
-            records ioctls for a device.
+            records ioctls for a device
 @z
 
 @x umockdev-run
             runs a program under an <application>umockdev</application>
-            testbed.
+            testbed
 @y
             runs a program under an <application>umockdev</application>
-            testbed.
+            testbed
 @z
 
 @x umockdev-wrapper
             wraps a program around 
             <filename class="libraryfile">libumockdev-preload.so.0</filename>
-            through LD_PRELOAD.
+            through LD_PRELOAD
 @y
             wraps a program around 
             <filename class="libraryfile">libumockdev-preload.so.0</filename>
-            through LD_PRELOAD.
+            through LD_PRELOAD
 @z
 
 @x libumockdev.so
             provides API functions that allow mocking hardware devices for unit
-            testing.
+            testing
 @y
             provides API functions that allow mocking hardware devices for unit
-            testing.
+            testing
 @z

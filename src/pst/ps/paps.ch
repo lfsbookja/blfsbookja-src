@@ -175,7 +175,7 @@
 
 @x paps
             is a text to PostScript converter that supports UTF-8
-            character encoding.
+            character encoding
 @y
             UTF-8 エンコーディングをサポートした、テキストファイルから PostScript へのコンバーターです。
 @z

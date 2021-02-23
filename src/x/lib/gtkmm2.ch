@@ -177,13 +177,13 @@
 @z
 
 @x libgdkmm-2.4.so
-          contains the GDK API classes.
+          contains the GDK API classes
 @y
           GDK API クラスを提供します。
 @z
 
 @x libgtkmm-2.4.so
-          contains the <application>GTK+</application> API classes.
+          contains the <application>GTK+</application> API classes
 @y
           <application>GTK+</application> API クラスを提供します。
 @z

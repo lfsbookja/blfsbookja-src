@@ -221,43 +221,43 @@
 @z
 
 @x sysprof
-            is a graphical interface to sysprof.
+            is a graphical interface to sysprof
 @y
-            is a graphical interface to sysprof.
+            is a graphical interface to sysprof
 @z
 
 @x sysprof-cli
-            is a command line interface to sysprof.
+            is a command line interface to sysprof
 @y
-            is a command line interface to sysprof.
+            is a command line interface to sysprof
 @z
 
 @x libsysprof-4.so
-            provides API functions for profiling processes running on a system.
+            provides API functions for profiling processes running on a system
 @y
-            provides API functions for profiling processes running on a system.
+            provides API functions for profiling processes running on a system
 @z
 
 @x libsysprof-capture-4.a
-            provides a hook used to capture statistics from a process.
+            provides a hook used to capture statistics from a process
 @y
-            provides a hook used to capture statistics from a process.
+            provides a hook used to capture statistics from a process
 @z
 
 @x libsysprof-memory-4.so
-            provides API functions for capturing memory statistics.
+            provides API functions for capturing memory statistics
 @y
-            provides API functions for capturing memory statistics.
+            provides API functions for capturing memory statistics
 @z
 
 @x libsysprof-speedtrack-4.so
-            provides API functions for tracking the speed of a running process.
+            provides API functions for tracking the speed of a running process
 @y
-            provides API functions for tracking the speed of a running process.
+            provides API functions for tracking the speed of a running process
 @z
 
 @x libsysprof-ui-4.so
-            provides API functions for the sysprof GUI.
+            provides API functions for the sysprof GUI
 @y
-            provides API functions for the sysprof GUI.
+            provides API functions for the sysprof GUI
 @z

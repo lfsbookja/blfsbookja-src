@@ -206,10 +206,10 @@
 
 @x arp
             is used to manipulate the kernel's ARP cache, usually
-            to add or delete an entry, or to dump the entire cache.
+            to add or delete an entry, or to dump the entire cache
 @y
             is used to manipulate the kernel's ARP cache, usually
-            to add or delete an entry, or to dump the entire cache.
+            to add or delete an entry, or to dump the entire cache
 @z
 
 @x dnsdomainname
@@ -237,37 +237,37 @@
 @z
 
 @x ipmaddr
-            adds, deletes and shows an interface's multicast addresses.
+            adds, deletes and shows an interface's multicast addresses
 @y
-            adds, deletes and shows an interface's multicast addresses.
+            adds, deletes and shows an interface's multicast addresses
 @z
 
 @x iptunnel
-            adds, changes, deletes and shows an interface's tunnels.
+            adds, changes, deletes and shows an interface's tunnels
 @y
-            adds, changes, deletes and shows an interface's tunnels.
+            adds, changes, deletes and shows an interface's tunnels
 @z
 
 @x mii-tool
             checks or sets the status of a network interface's Media
-            Independent Interface (MII) unit.
+            Independent Interface (MII) unit
 @y
             checks or sets the status of a network interface's Media
-            Independent Interface (MII) unit.
+            Independent Interface (MII) unit
 @z
 
 @x nameif
-            names network interfaces based on MAC addresses.
+            names network interfaces based on MAC addresses
 @y
-            names network interfaces based on MAC addresses.
+            names network interfaces based on MAC addresses
 @z
 
 @x netstat
             is used to report network connections, routing tables, and
-            interface statistics.
+            interface statistics
 @y
             is used to report network connections, routing tables, and
-            interface statistics.
+            interface statistics
 @z
 
 @x nisdomainname
@@ -278,32 +278,32 @@
 
 @x plipconfig
             is used to fine tune the PLIP device parameters, to
-            improve its performance.
+            improve its performance
 @y
             is used to fine tune the PLIP device parameters, to
-            improve its performance.
+            improve its performance
 @z
 
 @x rarp
-            is used to manipulate the kernel's RARP table.
+            is used to manipulate the kernel's RARP table
 @y
-            is used to manipulate the kernel's RARP table.
+            is used to manipulate the kernel's RARP table
 @z
 
 @x route
-            is used to manipulate the IP routing table.
+            is used to manipulate the IP routing table
 @y
-            is used to manipulate the IP routing table.
+            is used to manipulate the IP routing table
 @z
 
 @x slattach
             attaches a network interface to a serial line. This allows you to
             use normal terminal lines for point-to-point links to others
-            computers.
+            computers
 @y
             attaches a network interface to a serial line. This allows you to
             use normal terminal lines for point-to-point links to others
-            computers.
+            computers
 @z
 
 @x ypdomainname

@@ -16,13 +16,13 @@
 @x
   <!ENTITY sgml-dtd-3-time          "less than 0.1 SBU">
 @y
-  <!ENTITY sgml-dtd-3-time          "less than 0.1 SBU">
+  <!ENTITY sgml-dtd-3-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to DocBook-3.1 SGML DTD</title>
 @y
-    <title>Introduction to DocBook-3.1 SGML DTD</title>
+    <title>&IntroductionTo1;DocBook-3.1 SGML DTD&IntroductionTo2;</title>
 @z
 
 @x
@@ -42,49 +42,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&sgml-dtd-3-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&sgml-dtd-3-download-http;"/>
+          &Download; (HTTP): <ulink url="&sgml-dtd-3-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&sgml-dtd-3-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&sgml-dtd-3-download-ftp;"/>
+          &Download; (FTP): <ulink url="&sgml-dtd-3-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &sgml-dtd-3-md5sum;
 @y
-          Download MD5 sum: &sgml-dtd-3-md5sum;
+          &Download; MD5 sum: &sgml-dtd-3-md5sum;
 @z
 
 @x
           Download size: &sgml-dtd-3-size;
 @y
-          Download size: &sgml-dtd-3-size;
+          &DownloadSize;: &sgml-dtd-3-size;
 @z
 
 @x
           Estimated disk space required: &sgml-dtd-3-buildsize;
 @y
-          Estimated disk space required: &sgml-dtd-3-buildsize;
+          &Estimateddiskspacerequired;: &sgml-dtd-3-buildsize;
 @z
 
 @x
           Estimated build time: &sgml-dtd-3-time;
 @y
-          Estimated build time: &sgml-dtd-3-time;
+          &Estimatedbuildtime;: &sgml-dtd-3-time;
 @z
 
 @x
     <bridgehead renderas="sect3">DocBook-3.1 SGML DTD Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">DocBook-3.1 SGML DTD Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;DocBook-3.1 SGML DTD&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -94,9 +94,9 @@
       <xref linkend="unzip"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="sgml-common"/> and
+      <xref linkend="sgml-common"/>,
       <xref linkend="unzip"/>
     </para>
 @z
@@ -104,39 +104,38 @@
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Installation of DocBook-3.1 SGML DTD</title>
 @y
-    <title>Installation of DocBook-3.1 SGML DTD</title>
+    <title>&InstallationOf1;DocBook-3.1 SGML DTD&InstallationOf2;</title>
 @z
 
 @x
       Install <application>DocBook-3.1 SGML DTD</application> by running
       the following commands:
 @y
-      Install <application>DocBook-3.1 SGML DTD</application> by running
-      the following commands:
+      以下のコマンドを実行して <application>DocBook-3.1 SGML DTD</application> をビルドします。
 @z
 
 @x
       This package does not come with a test suite.
 @y
-      This package does not come with a test suite.
+      &notTestSuite;
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -164,13 +163,13 @@
 @x
     <title>Configuring DocBook-3.1 SGML DTD</title>
 @y
-    <title>Configuring DocBook-3.1 SGML DTD</title>
+    <title>&Configuring1;DocBook-3.1 SGML DTD&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -182,7 +181,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -204,7 +203,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -213,10 +212,10 @@
       <segtitle>Installed Files</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Files</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledFiles;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -225,42 +224,42 @@
         <seg>SGML DTD and MOD files</seg>
         <seg>/usr/share/sgml/docbook/sgml-dtd-&docbook-3.1-dtd-version;</seg>
 @y
-        <seg>None</seg>
-        <seg>None</seg>
-        <seg>SGML DTD and MOD files</seg>
+        <seg>&None;</seg>
+        <seg>&None;</seg>
+        <seg>SGML DTD と MOD ファイル</seg>
         <seg>/usr/share/sgml/docbook/sgml-dtd-&docbook-3.1-dtd-version;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x
         <term><filename>SGML DTD files</filename></term>
 @y
-        <term><filename>SGML DTD files</filename></term>
+        <term><filename>SGML DTD ファイル</filename></term>
 @z
 @x
             contains a document type definition which defines the element
             types and the attribute lists that can be used in the corresponding
-            SGML files.
+            SGML files
 @y
             contains a document type definition which defines the element
             types and the attribute lists that can be used in the corresponding
-            SGML files.
+            SGML files
 @z
 
 @x
         <term><filename>SGML MOD files</filename></term>
 @y
-        <term><filename>SGML MOD files</filename></term>
+        <term><filename>SGML MOD ファイル</filename></term>
 @z
 @x
             contains components of the document type definition that are
-            sourced into the <filename>DTD</filename> files.
+            sourced into the <filename>DTD</filename> files
 @y
             contains components of the document type definition that are
-            sourced into the <filename>DTD</filename> files.
+            sourced into the <filename>DTD</filename> files
 @z

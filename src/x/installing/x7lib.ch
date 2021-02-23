@@ -351,34 +351,34 @@
 @z
 
 @x cxpm
-            checks the format of an XPM file.
+            checks the format of an XPM file
 @y
             XPM ファイルのフォーマットをチェックします。
 @z
 
 @x sxpm
-            shows an XPM file and/or converts XPM 1 or 2 files to XPM 3.
+            shows an XPM file and/or converts XPM 1 or 2 files to XPM 3
 @y
             XPM ファイルを参照したり、XPM 1、XPM 2 ファイルを XPM 3 ファイルに変換します。
 @z
 
 @x libdmx.so
             is the X Window System DMX (Distributed Multihead X) extension
-            library.
+            library
 @y
             is the X Window System DMX (Distributed Multihead X) extension
-            library.
+            library
 @z
 
 @x libfontenc.so
-            is the X11 font encoding library.
+            is the X11 font encoding library
 @y
-            is the X11 font encoding library.
+            is the X11 font encoding library
 @z
 
 @x libFS.so
-            is the library interface to the X Font Server.
+            is the library interface to the X Font Server
 @y
-            is the library interface to the X Font Server.
+            is the library interface to the X Font Server
 @z
 

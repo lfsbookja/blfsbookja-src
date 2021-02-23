@@ -200,7 +200,7 @@
 @z
 
 @x gnome-terminal
-            is the <application>GNOME</application> Terminal Emulator.
+            is the <application>GNOME</application> Terminal Emulator
 @y
             <application>GNOME</application> 端末エミュレーター。
 @z

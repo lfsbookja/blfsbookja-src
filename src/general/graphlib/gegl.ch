@@ -246,16 +246,16 @@
 @z
 
 @x gegl
-            is a commandline tool for working with the XML data model.
+            is a commandline tool for working with the XML data model
 @y
             XML データモデルに基づくコマンドラインツールです。
 @z
 
 @x libgegl-0.1.so
             provides infrastructure to do demand based cached non destructive
-            image editing on larger than RAM buffers.
+            image editing on larger than RAM buffers
 @y
             
             provides infrastructure to do demand based cached non destructive
-            image editing on larger than RAM buffers.
+            image editing on larger than RAM buffers
 @z

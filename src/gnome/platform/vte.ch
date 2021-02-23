@@ -96,15 +96,17 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="gnutls"/>, and
+      <xref linkend="icu"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="gobject-introspection"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      <xref linkend="icu"/>,
       <xref linkend="gnutls"/>,
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -250,15 +252,15 @@
 
 @x vte2_90
             is a test application for the <application>VTE</application>
-            libraries.
+            libraries
 @y
             <application>VTE</application> ライブラリに対するテストアプリケーション。
 @z
 
 @x libvte2_90.so
             is a library which implements a terminal emulator
-            widget for <application>GTK+ 3</application>.
+            widget for <application>GTK+ 3</application>
 @y
             is a library which implements a terminal emulator
-            widget for <application>GTK+ 3</application>.
+            widget for <application>GTK+ 3</application>
 @z

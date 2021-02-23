@@ -25,7 +25,7 @@
 @x
     <title>Introduction to libspiro</title>
 @y
-    <title>Introduction to libspiro</title>
+    <title>&IntroductionTo1;libspiro&IntroductionTo2;</title>
 @z
 
 @x
@@ -41,43 +41,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&libspiro-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&libspiro-download-http;"/>
+          &Download; (HTTP): <ulink url="&libspiro-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&libspiro-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&libspiro-download-ftp;"/>
+          &Download; (FTP): <ulink url="&libspiro-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &libspiro-md5sum;
 @y
-          Download MD5 sum: &libspiro-md5sum;
+          &Download; MD5 sum: &libspiro-md5sum;
 @z
 
 @x
           Download size: &libspiro-size;
 @y
-          Download size: &libspiro-size;
+          &DownloadSize;: &libspiro-size;
 @z
 
 @x
           Estimated disk space required: &libspiro-buildsize;
 @y
-          Estimated disk space required: &libspiro-buildsize;
+          &Estimateddiskspacerequired;: &libspiro-buildsize;
 @z
 
 @x
           Estimated build time: &libspiro-time;
 @y
-          Estimated build time: &libspiro-time;
+          &Estimatedbuildtime;: &libspiro-time;
 @z
 
 @x
@@ -89,27 +89,26 @@
 @x
     <title>Installation of libspiro</title>
 @y
-    <title>Installation of libspiro</title>
+    <title>&InstallationOf1;libspiro&InstallationOf2;</title>
 @z
 
 @x
       Install <application>libspiro</application> by running the following
       commands:
 @y
-      Install <application>libspiro</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>libspiro</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make check</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -129,9 +128,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -146,26 +145,26 @@
         </seg>
 @y
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           libspiro.so
         </seg>
         <seg>
-          None
+          &None;
         </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libspiro.so
             is a shareable library that can be used by programs to do the Spiro
-            computations for you.
+            computations for you
 @y
             is a shareable library that can be used by programs to do the Spiro
-            computations for you.
+            computations for you
 @z

@@ -207,38 +207,38 @@
 
 @x sawfish
             is the extensible window manager using a
-            <application>Lisp</application>-based scripting language.
+            <application>Lisp</application>-based scripting language
 @y
             is the extensible window manager using a
-            <application>Lisp</application>-based scripting language.
+            <application>Lisp</application>-based scripting language
 @z
 
 @x sawfish-about
-            is the <application>sawfish</application> about window.
+            is the <application>sawfish</application> about window
 @y
-            is the <application>sawfish</application> about window.
+            is the <application>sawfish</application> about window
 @z
 
 @x sawfish-client
             allows you to connect to a window manager process and
-            evaluate arbitrary <application>Lisp</application> forms.
+            evaluate arbitrary <application>Lisp</application> forms
 @y
             allows you to connect to a window manager process and
-            evaluate arbitrary <application>Lisp</application> forms.
+            evaluate arbitrary <application>Lisp</application> forms
 @z
 
 @x sawfish-config
-            is the <application>sawfish</application> configuration manager.
+            is the <application>sawfish</application> configuration manager
 @y
-            is the <application>sawfish</application> configuration manager.
+            is the <application>sawfish</application> configuration manager
 @z
 
 @x sawfish-kde4-session
              is a script to run <application>KDE4</application> using
-             <application>sawfish</application>.
+             <application>sawfish</application>
 @y
              is a script to run <application>KDE4</application> using
-             <application>sawfish</application>.
+             <application>sawfish</application>
 @z
 
 @x sawfish-kde5-session
@@ -251,24 +251,24 @@
 
 @x sawfish-mate-session
              is a script to run <application>mate</application> using
-             <application>sawfish</application>.
+             <application>sawfish</application>
 @y
              is a script to run <application>mate</application> using
-             <application>sawfish</application>.
+             <application>sawfish</application>
 @z
 
 @x sawfish-lumina-session
              is a script to run <application>Lumina</application> using
-             <application>sawfish</application>.
+             <application>sawfish</application>
 @y
              is a script to run <application>Lumina</application> using
-             <application>sawfish</application>.
+             <application>sawfish</application>
 @z
 
 @x sawfish-xfce-session
              is a script to run <application>xfce</application> using
-             <application>sawfish</application>.
+             <application>sawfish</application>
 @y
              is a script to run <application>xfce</application> using
-             <application>sawfish</application>.
+             <application>sawfish</application>
 @z

@@ -248,28 +248,28 @@
 
 @x speexdec
             decodes a <application>Speex</application> file and
-            produces a WAV or raw file.
+            produces a WAV or raw file
 @y
             decodes a <application>Speex</application> file and
-            produces a WAV or raw file.
+            produces a WAV or raw file
 @z
 
 @x speexenc
-            encodes a WAV or raw files using <application>Speex</application>.
+            encodes a WAV or raw files using <application>Speex</application>
 @y
-            encodes a WAV or raw files using <application>Speex</application>.
+            encodes a WAV or raw files using <application>Speex</application>
 @z
 
 @x libspeex.so
-            provides functions for the audio encoding/decoding programs.
+            provides functions for the audio encoding/decoding programs
 @y
-            provides functions for the audio encoding/decoding programs.
+            provides functions for the audio encoding/decoding programs
 @z
 
 @x libspeexdsp.so
             is a speech processing library that goes along with the
-            <application>Speex</application> codec.
+            <application>Speex</application> codec
 @y
             is a speech processing library that goes along with the
-            <application>Speex</application> codec.
+            <application>Speex</application> codec
 @z

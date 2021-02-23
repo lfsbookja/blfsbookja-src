@@ -206,7 +206,7 @@
 @z
 
 @x kwave
-            is a sound editor built on the KDE Frameworks 5.
+            is a sound editor built on the KDE Frameworks 5
 @y
             KDE フレームワーク 5 上にて構築されているサウンドエディター。
 @z

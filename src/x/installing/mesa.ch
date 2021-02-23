@@ -138,7 +138,7 @@
       <xref linkend="llvm"/> (required for Gallium3D, nouveau, r300, and radeonsi
       drivers and for swrast, the software rasterizer which is sometimes referred
       to as llvmpipe. See <ulink role="nodep"
-      url="http://www.mesa3d.org/systems.html"/> for more information), and
+      url="https://docs.mesa3d.org/systems.html"/> for more information), and
       <xref linkend="wayland-protocols"/> (required for 
         <xref role="nodep" linkend='plasma5-build'/>,
         <!-- <xref role="nodep" linkend='lxqt'/>, -->
@@ -156,7 +156,7 @@
       <xref linkend="llvm"/> (required for Gallium3D, nouveau, r300, and radeonsi
       drivers and for swrast, the software rasterizer which is sometimes referred
       to as llvmpipe. See <ulink role="nodep"
-      url="http://www.mesa3d.org/systems.html"/> for more information), and
+      url="https://docs.mesa3d.org/systems.html"/> for more information), and
       <xref linkend="wayland-protocols"/> (required for 
         <xref role="nodep" linkend='plasma5-build'/>,
         <!-- <xref role="nodep" linkend='lxqt'/>, -->
@@ -504,28 +504,28 @@
 
 @x glxgears
             is a GL demo useful for troubleshooting graphics
-            problems.
+            problems
 @y
             GL のデモプログラム。グラフィックにて何か問題があった場合のトラブルシューティングとなります。
 @z
 
 @x glxinfo
             is a diagnostic program that displays information about the
-            graphics hardware and installed GL libraries.
+            graphics hardware and installed GL libraries
 @y
             グラフィックハードウェアや、インストールされている GL ライブラリの情報を表示する診断プログラムです。
 @z
 
 @x libEGL.so
             provides a native platform graphics interface as
-            defined by the EGL-1.4 specification.
+            defined by the EGL-1.4 specification
 @y
             provides a native platform graphics interface as
-            defined by the EGL-1.4 specification.
+            defined by the EGL-1.4 specification
 @z
 
 @x libGL.so
-            is the main <application>Mesa</application> OpenGL library.
+            is the main <application>Mesa</application> OpenGL library
 @y
             主要な <application>Mesa</application> OpenGL ライブラリ。
 @z

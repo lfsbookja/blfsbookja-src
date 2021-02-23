@@ -307,55 +307,47 @@
 @z
 
 @x dmsetup
-            is a low level logical volume management tool.
+            is a low level logical volume management tool
 @y
-            is a low level logical volume management tool.
+            is a low level logical volume management tool
 @z
 
 @x fsadm
-            is a utility used to resize or check filesystem on a device.
+            is a utility used to resize or check filesystem on a device
 @y
-            is a utility used to resize or check filesystem on a device.
+            is a utility used to resize or check filesystem on a device
 @z
 
 @x lvm
             provides the command-line tools for <application>LVM2</application>.
             Commands are implemented via sympolic links to this program to
             manage physical devices (pv*), volume groups (vg*) and logical
-            volumes (lv*).
+            volumes (lv*)
 @y
             provides the command-line tools for <application>LVM2</application>.
             Commands are implemented via sympolic links to this program to
             manage physical devices (pv*), volume groups (vg*) and logical
-            volumes (lv*).
-@z
-
-@x lvmconf
-            is a script that modifies the locking configuration in 
-            the <application>LVM2</application> configuration file.
-@y
-            is a script that modifies the locking configuration in 
-            the <application>LVM2</application> configuration file.
+            volumes (lv*)
 @z
 
 @x lvmdump
             is a tool used to dump various information concerning
-            <application>LVM2</application>.
+            <application>LVM2</application>
 @y
             is a tool used to dump various information concerning
-            <application>LVM2</application>.
+            <application>LVM2</application>
 @z
 
 @x vgimportclone
-            is used to import a duplicated VG (e.g. hardware snapshot).
+            is used to import a duplicated VG (e.g. hardware snapshot)
 @y
-            is used to import a duplicated VG (e.g. hardware snapshot).
+            is used to import a duplicated VG (e.g. hardware snapshot)
 @z
 
 @x libdevmapper.so
             contains the <application>Device Mapper</application> API
-            functions.
+            functions
 @y
             contains the <application>Device Mapper</application> API
-            functions.
+            functions
 @z

@@ -197,13 +197,13 @@
 
 @x wnckprop
             is used to print or modify the properties of a screen/workspace/window,
-            or to interact with it.
+            or to interact with it
 @y
             スクリーン/ワークスペース/ウィンドウのプロパティを表示したり更新したりします。
 @z
 
 @x libwnck-1.{so,a}
-            contains functions for writing pagers and task lists.
+            contains functions for writing pagers and task lists
 @y
             ページャー (pagers) やタスクリストへの更新を行う関数を提供します。
 @z

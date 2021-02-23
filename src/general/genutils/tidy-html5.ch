@@ -227,26 +227,26 @@
 @z
 
 @x tab2space
-            is a utility to expand tabs and ensure consistent line endings.
+            is a utility to expand tabs and ensure consistent line endings
 @y
-            is a utility to expand tabs and ensure consistent line endings.
+            is a utility to expand tabs and ensure consistent line endings
 @z
 
 @x tidy
-            validates, corrects, and pretty-prints HTML files.
+            validates, corrects, and pretty-prints HTML files
 @y
-            validates, corrects, and pretty-prints HTML files.
+            validates, corrects, and pretty-prints HTML files
 @z
 
 @x
-          <filename class='libraryfile'>libtidy.so and libtidys.a</filename>
+          <filename class="libraryfile">libtidy.so and libtidys.a</filename>
 @y
-          <filename class='libraryfile'>libtidy.so, libtidys.a</filename>
+          <filename class="libraryfile">libtidy.so, libtidys.a</filename>
 @z
 @x libtidy.so and libtidys.a
             library provides the <application>Tidy HTML5</application> API
             functions to <command>tidy</command> and can also be called by other
-            programs.
+            programs
 @y
             <command>tidy</command> コマンドに対して <application>Tidy HTML5</application> の API 関数を提供します。
             他のプログラムから関数を呼び出すこともできます。

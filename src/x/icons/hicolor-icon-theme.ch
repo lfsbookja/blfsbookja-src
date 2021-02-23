@@ -139,7 +139,7 @@
 @z
 
 @x /usr/share/icons/hicolor/*
-            contains icon definitions used as defaults.
+            contains icon definitions used as defaults
 @y
             デフォルトで用いられるアイコン定義を提供します。
 @z

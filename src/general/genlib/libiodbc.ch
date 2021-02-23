@@ -189,19 +189,19 @@
 @z
 
 @x iodbc-config
-            is a utility for retrieving the installation options of libiodbc.
+            is a utility for retrieving the installation options of libiodbc
 @y
             libiodbc のインストールオプションを検出するためのユーティリティ。
 @z
 
 @x iodbctest{,w}
-            are interactive SQL processors.
+            are interactive SQL processors
 @y
             対話的な SQL プロセッサー。
 @z
 
 @x iodbcadm
-            is a graphical administration utility.
+            is a graphical administration utility
 @y
             グラフィカルな管理ユーティリティ。
 @z

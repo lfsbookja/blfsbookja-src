@@ -174,7 +174,7 @@
 @z
 
 @x libsigsegv.so
-            is a library for handling page faults in user mode.
+            is a library for handling page faults in user mode
 @y
             ユーザーモードでのページフォールトを取り扱うライブラリ。
 @z

@@ -242,43 +242,31 @@
 @z
 
 @x folks-import
-            is used to import meta-contact information to libfolks.
+            is used to import meta-contact information to libfolks
 @y
-            is used to import meta-contact information to libfolks.
+            is used to import meta-contact information to libfolks
 @z
 
 @x folks-inspect
-            is used to inspect meta-contact information in libfolks.
+            is used to inspect meta-contact information in libfolks
 @y
-            is used to inspect meta-contact information in libfolks.
+            is used to inspect meta-contact information in libfolks
 @z
 
 @x libfolks-eds.so
-            contains Evolution specific implementations of the libfolks classes.
+            contains Evolution specific implementations of the libfolks classes
 @y
-            contains Evolution specific implementations of the libfolks classes.
-@z
-
-@x libfolks-libsocialweb.so
-            contains libsocialweb specific implementations of the libfolks classes.
-@y
-            contains libsocialweb specific implementations of the libfolks classes.
+            contains Evolution specific implementations of the libfolks classes
 @z
 
 @x libfolks.so
-            contains the <application>Folks</application> API functions.
+            contains the <application>Folks</application> API functions
 @y
-            contains the <application>Folks</application> API functions.
+            contains the <application>Folks</application> API functions
 @z
 
 @x libfolks-telepathy.so
-            contains Telepathy specific implementations of the libfolks classes.
+            contains Telepathy specific implementations of the libfolks classes
 @y
-            contains Telepathy specific implementations of the libfolks classes.
-@z
-
-@x libfolks-tracker.so
-            contains Tracker specific implementations of the libfolks classes.
-@y
-            contains Tracker specific implementations of the libfolks classes.
+            contains Telepathy specific implementations of the libfolks classes
 @z

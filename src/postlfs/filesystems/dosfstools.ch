@@ -170,19 +170,19 @@
 @z
 
 @x fatlabel
-            sets or gets a MS-DOS filesystem label from a given device.
+            sets or gets a MS-DOS filesystem label from a given device
 @y
             指定されたデバイスの MS-DOS ファイルシステムラベルを取得または設定します。
 @z
 
 @x fsck.fat
-            checks and repairs MS-DOS filesystems.
+            checks and repairs MS-DOS filesystems
 @y
             MS-DOS ファイルシステムをチェックし修復します。
 @z
 
 @x mkfs.fat
-            creates an MS-DOS filesystem under Linux.
+            creates an MS-DOS filesystem under Linux
 @y
             Linux 下において MS-DOS ファイルシステムを生成します。
 @z

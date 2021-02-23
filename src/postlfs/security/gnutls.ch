@@ -292,52 +292,52 @@
 
 @x certtool
             is used to generate X.509 certificates, certificate requests,
-            and private keys.
+            and private keys
 @y
             is used to generate X.509 certificates, certificate requests,
-            and private keys.
+            and private keys
 @z
 
 @x gnutls-cli
             is a simple client program to set up a TLS connection to some
-            other computer.
+            other computer
 @y
             is a simple client program to set up a TLS connection to some
-            other computer.
+            other computer
 @z
 
 @x gnutls-cli-debug
             is a simple client program to set up a TLS connection to some
-            other computer and produces very verbose progress results.
+            other computer and produces very verbose progress results
 @y
             is a simple client program to set up a TLS connection to some
-            other computer and produces very verbose progress results.
+            other computer and produces very verbose progress results
 @z
 
 @x gnutls-serv
             is a simple server program that listens to incoming TLS
-            connections.
+            connections
 @y
             is a simple server program that listens to incoming TLS
-            connections.
+            connections
 @z
 
 @x psktool
-            is a simple program that generates random keys for use with TLS-PSK.
+            is a simple program that generates random keys for use with TLS-PSK
 @y
-            is a simple program that generates random keys for use with TLS-PSK.
+            is a simple program that generates random keys for use with TLS-PSK
 @z
 
 @x srptool
             is a simple program that emulates the programs in the Stanford
-            SRP (Secure Remote Password) libraries using GnuTLS.
+            SRP (Secure Remote Password) libraries using GnuTLS
 @y
             is a simple program that emulates the programs in the Stanford
-            SRP (Secure Remote Password) libraries using GnuTLS.
+            SRP (Secure Remote Password) libraries using GnuTLS
 @z
 
 @x libgnutls.{so,a}
-            contains the core API functions and X.509 certificate API functions.
+            contains the core API functions and X.509 certificate API functions
 @y
-            contains the core API functions and X.509 certificate API functions.
+            contains the core API functions and X.509 certificate API functions
 @z

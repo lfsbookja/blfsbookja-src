@@ -193,7 +193,7 @@
 @z
 
 @x gpicview
-            is a lightweight image viewer.
+            is a lightweight image viewer
 @y
             軽量なイメージビューアー。
 @z

@@ -237,7 +237,7 @@
 
 @x gedit
             is a lightweight text editor integrated with the
-            <application>GNOME</application> Desktop.
+            <application>GNOME</application> Desktop
 @y
             <application>GNOME</application> デスクトップにて利用される軽量なテキストエディターです。
 @z

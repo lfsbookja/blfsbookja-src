@@ -152,7 +152,7 @@
 @z
 
 @x libdiscid.so
-            contains the DiscID API functions.
+            contains the DiscID API functions
 @y
             DiscID API 関数を提供します。
 @z

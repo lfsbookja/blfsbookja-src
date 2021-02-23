@@ -168,7 +168,7 @@
 @z
 
 @x baobab
-            is a graphical tool used to analyze disk usage.
+            is a graphical tool used to analyze disk usage
 @y
             ディスク使用状況を解析するグラフィカルツール。
 @z

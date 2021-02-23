@@ -208,13 +208,13 @@
 @z
 
 @x notify-send
-            is a command used to send notifications.
+            is a command used to send notifications
 @y
             通知を送信するコマンド。
 @z
 
 @x libnotify.so
-            contains the <application>libnotify</application> API functions.
+            contains the <application>libnotify</application> API functions
 @y
             通知 API 関数 (notify API functions) を提供します。
 @z

@@ -157,7 +157,7 @@
 
 @x GNOME backgrounds
             are background images for the 
-            <application>GNOME</application> Desktop.
+            <application>GNOME</application> Desktop
 @y
             <application>GNOME</application> デスクトップの背景イメージ (backgrounds) です。
 @z

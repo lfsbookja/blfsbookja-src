@@ -231,7 +231,7 @@
 @z
 
 @x lvm-cache-stats
-            prints statistics on caches on LVM Logical Volumes.
+            prints statistics on caches on LVM Logical Volumes
 @y
             LVM 論理ボリューム上のキャッシュの統計情報を表示します。
 @z

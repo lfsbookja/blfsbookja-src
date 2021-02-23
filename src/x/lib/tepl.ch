@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Tepl</title>
 @y
-    <title>Introduction to Tepl</title>
+    <title>&IntroductionTo1;Tepl&IntroductionTo2;</title>
 @z
 
 @x
@@ -60,19 +60,19 @@
 @x
           Estimated disk space required: &tepl-buildsize;
 @y
-          Estimated disk space required: &tepl-buildsize;
+          &Estimateddiskspacerequired;: &tepl-buildsize;
 @z
 
 @x
           Estimated build time: &tepl-time;
 @y
-          Estimated build time: &tepl-time;
+          &Estimatedbuildtime;: &tepl-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Tepl Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Tepl Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Tepl&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -116,7 +116,7 @@
 @x
     <title>Installation of Tepl</title>
 @y
-    <title>Installation of Tepl</title>
+    <title>&InstallationOf1;Tepl&InstallationOf2;</title>
 @z
 
 @x
@@ -155,9 +155,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -191,7 +191,7 @@
 @z
 
 @x libtepl-4.so
-            contains convenience functions for GtkSourceView4-based programs.
+            contains convenience functions for GtkSourceView4-based programs
 @y
-            contains convenience functions for GtkSourceView4-based programs.
+            contains convenience functions for GtkSourceView4-based programs
 @z

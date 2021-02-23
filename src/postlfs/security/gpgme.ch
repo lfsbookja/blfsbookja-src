@@ -236,7 +236,7 @@
 @z
 
 @x libgpgme.{so,a}
-            contains the <application>GPGME</application> API functions.
+            contains the <application>GPGME</application> API functions
 @y
             <application>GPGME</application> API 関数を提供します。
 @z

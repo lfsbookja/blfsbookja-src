@@ -182,8 +182,8 @@
 
 @x hdparm
             provides a command-line interface to various hard disk ioctls
-            supported by the stock Linux ATA/IDE device driver subsystem.
+            supported by the stock Linux ATA/IDE device driver subsystem
 @y
             provides a command-line interface to various hard disk ioctls
-            supported by the stock Linux ATA/IDE device driver subsystem.
+            supported by the stock Linux ATA/IDE device driver subsystem
 @z

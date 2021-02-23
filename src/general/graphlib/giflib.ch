@@ -161,49 +161,49 @@
 @z
 
 @x gif2rgb
-            converts images saved as GIF to 24-bit RGB images.
+            converts images saved as GIF to 24-bit RGB images
 @y
             GIF イメージを 24 ビット RGB イメージに変換します。
 @z
 
 @x gifbuild
-            dumps GIF data in a textual format, or undumps it to a GIF.
+            dumps GIF data in a textual format, or undumps it to a GIF
 @y
-            dumps GIF data in a textual format, or undumps it to a GIF.
+            dumps GIF data in a textual format, or undumps it to a GIF
 @z
 
 @x gifclrmp
-            modifies GIF image colormaps.
+            modifies GIF image colormaps
 @y
-            modifies GIF image colormaps.
+            modifies GIF image colormaps
 @z
 
 @x giffix
-            clumsily attempts to fix truncated GIF images.
+            clumsily attempts to fix truncated GIF images
 @y
-            clumsily attempts to fix truncated GIF images.
+            clumsily attempts to fix truncated GIF images
 @z
 
 @x giftext
-            prints (text only) general information about a GIF file.
+            prints (text only) general information about a GIF file
 @y
-            prints (text only) general information about a GIF file.
+            prints (text only) general information about a GIF file
 @z
 
 @x giftool
-            is a GIF transformation tool.
+            is a GIF transformation tool
 @y
-            is a GIF transformation tool.
+            is a GIF transformation tool
 @z
 
 @x libgif.so
             contains API functions required by the
             <application>giflib</application> programs and any other programs
             needing library functionality to read, write and manipulate GIF
-            images.
+            images
 @y
             contains API functions required by the
             <application>giflib</application> programs and any other programs
             needing library functionality to read, write and manipulate GIF
-            images.
+            images
 @z

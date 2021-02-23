@@ -237,20 +237,20 @@
 
 @x libical.{so,a}
             contains the <application>libical</application> API
-            functions.
+            functions
 @y
             <application>libical</application> API 関数を提供します。
 @z
 
 @x libicalss.{so,a}
             is a library that allows you to store iCal component data
-            to disk in a variety of ways.
+            to disk in a variety of ways
 @y
             iCal コンポーネントデータを、さまざまな方法でディスクに保存するためのライブラリを提供します。
 @z
 
 @x libicalvcal.{so,a}
-            is a vCard/vCalendar C interface.
+            is a vCard/vCalendar C interface
 @y
             vCard/vCalendar C インターフェース。
 @z

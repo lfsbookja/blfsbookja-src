@@ -182,7 +182,7 @@
 @x yasm
             is a portable, retargetable assembler that supports the x86 and
             AMD64 instruction sets, accepts NASM and GAS assembler syntaxes and
-            outputs binaries in ELF32 and ELF64 object formats.
+            outputs binaries in ELF32 and ELF64 object formats
 @y
             可搬性に優れたターゲット変更が可能なアセンブラー。
             x86 と AMD64 の命令セットをサポートします。
@@ -191,7 +191,7 @@
 
 @x libyasm.a
             provides all of the core functionality of <command>yasm</command>,
-            for manipulating machine instructions and object file constructs.
+            for manipulating machine instructions and object file constructs
 @y
             <command>yasm</command> の主要な機能、つまりマシン命令の制御やオブジェクトファイルの構築などの機能を提供します。
 @z

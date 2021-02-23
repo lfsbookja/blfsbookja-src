@@ -198,14 +198,14 @@
 
 @x rasqal-config
             is an utility for retrieving the installation options
-            of <application>Rasqal</application>.
+            of <application>Rasqal</application>
 @y
             is an utility for retrieving the installation options
-            of <application>Rasqal</application>.
+            of <application>Rasqal</application>
 @z
 
 @x roqet
-            is an RDF query utility.
+            is an RDF query utility
 @y
             RDF クエリーユーティリティー。
 @z

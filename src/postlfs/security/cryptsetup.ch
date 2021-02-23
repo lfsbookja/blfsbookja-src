@@ -285,29 +285,29 @@
 @z
 
 @x cryptsetup
-             is used to setup dm-crypt managed device-mapper mappings.
+             is used to setup dm-crypt managed device-mapper mappings
 @y
-             is used to setup dm-crypt managed device-mapper mappings.
+             is used to setup dm-crypt managed device-mapper mappings
 @z
 
 @x cryptsetup-reencrypt
-             is a for offline LUKS device re-encryption.
+             is a for offline LUKS device re-encryption
 @y
-             is a for offline LUKS device re-encryption.
+             is a for offline LUKS device re-encryption
 @z
 
 @x integritysetup
-             is a tool to manage dm-integrity (block level integrity) volumes.
+             is a tool to manage dm-integrity (block level integrity) volumes
 @y
-             is a tool to manage dm-integrity (block level integrity) volumes.
+             is a tool to manage dm-integrity (block level integrity) volumes
 @z
 
 @x veritysetup
              is used to configure dm-verity managed device-mapper mappings.
              Device-mapper verity target provides read-only transparent integrity
-             checking of block devices using kernel crypto API.
+             checking of block devices using kernel crypto API
 @y
              is used to configure dm-verity managed device-mapper mappings.
              Device-mapper verity target provides read-only transparent integrity
-             checking of block devices using kernel crypto API.
+             checking of block devices using kernel crypto API
 @z

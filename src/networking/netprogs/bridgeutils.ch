@@ -276,8 +276,8 @@
 
 @x brctl
             is a program  used to set up, maintain, and inspect the
-            ethernet bridge configuration in the linux kernel.
+            ethernet bridge configuration in the linux kernel
 @y
             is a program  used to set up, maintain, and inspect the
-            ethernet bridge configuration in the linux kernel.
+            ethernet bridge configuration in the linux kernel
 @z

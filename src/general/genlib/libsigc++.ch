@@ -182,7 +182,7 @@
 @z
 
 @x libsigc-2.0.so
-            contains the <application>libsigc++</application> API functions.
+            contains the <application>libsigc++</application> API functions
 @y
             <application>libsigc++</application> API 関数を提供します。
 @z

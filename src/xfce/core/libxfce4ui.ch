@@ -215,17 +215,17 @@
 @x libxfce4kbd-private-2.so
             is a private <application>Xfce</application> library for sharing
             code between <application>Xfwm4</application> and
-            <application>Xfce4 Settings</application>.
+            <application>Xfce4 Settings</application>
 @y
             is a private <application>Xfce</application> library for sharing
             code between <application>Xfwm4</application> and
-            <application>Xfce4 Settings</application>.
+            <application>Xfce4 Settings</application>
 @z
 
 @x libxfce4ui-1.so
             contains widgets that are used by other
-            <application>Xfce</application> applications.
+            <application>Xfce</application> applications
 @y
             contains widgets that are used by other
-            <application>Xfce</application> applications.
+            <application>Xfce</application> applications
 @z

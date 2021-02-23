@@ -303,11 +303,11 @@
 @x
         <seg>urxvt, urxvtd, and urxvtc</seg>
         <seg>Many <application>Perl</application> extensions located under
-        <filename class='directory'>/usr/lib/urxvt/perl</filename></seg>
+        <filename class="directory">/usr/lib/urxvt/perl</filename></seg>
         <seg>/usr/lib/urxvt</seg>
 @y
         <seg>urxvt, urxvtd, urxvtc</seg>
-        <seg><filename class='directory'>/usr/lib/urxvt/perl</filename> 配下に数多くの <application>Perl</application> 拡張ライブラリ。</seg>
+        <seg><filename class="directory">/usr/lib/urxvt/perl</filename> 配下に数多くの <application>Perl</application> 拡張ライブラリ。</seg>
         <seg>/usr/lib/urxvt</seg>
 @z
 
@@ -318,19 +318,19 @@
 @z
 
 @x urxvt
-            is a terminal emulator for the X Window System.
+            is a terminal emulator for the X Window System
 @y
             X ウィンドウシステムにおける端末エミュレーター。
 @z
 
 @x urxvtd
-            is the <command>urxvt</command> terminal daemon.
+            is the <command>urxvt</command> terminal daemon
 @y
             <command>urxvt</command> 端末デーモン。
 @z
 
 @x urxvtc
-            controls the <command>urxvtd</command> daemon.
+            controls the <command>urxvtd</command> daemon
 @y
             <command>urxvtd</command> デーモンを制御します。
 @z

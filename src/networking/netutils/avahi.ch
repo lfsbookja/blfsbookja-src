@@ -422,8 +422,8 @@
 @z
 
 @x avahi-autoipd
-            is a IPv4LL network address configuration daemon.
+            is a IPv4LL network address configuration daemon
 @y
-            is a IPv4LL network address configuration daemon.
+            is a IPv4LL network address configuration daemon
 @z
 

@@ -184,7 +184,7 @@
 @z
 
 @x cbindgen
-            generates C bindings for <application>Rust</application> code.
+            generates C bindings for <application>Rust</application> code
 @y
-            generates C bindings for <application>Rust</application> code.
+            generates C bindings for <application>Rust</application> code
 @z

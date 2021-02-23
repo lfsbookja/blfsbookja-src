@@ -165,7 +165,7 @@
 @z
 
 @x kate
-            is an advanced text editor for kde.
+            is an advanced text editor for kde
 @y
-            is an advanced text editor for kde.
+            is an advanced text editor for kde
 @z

@@ -269,19 +269,19 @@
 @z
 
 @x node
-            is the server-side JavaScript runtime.
+            is the server-side JavaScript runtime
 @y
-            is the server-side JavaScript runtime.
+            is the server-side JavaScript runtime
 @z
 
 @x npm
-            is the <application>Node.js</application> package manager.
+            is the <application>Node.js</application> package manager
 @y
-            is the <application>Node.js</application> package manager.
+            is the <application>Node.js</application> package manager
 @z
 
 @x /usr/lib/node_modules/npm/
-            is the installation root for Node.js executables and libraries.
+            is the installation root for Node.js executables and libraries
 @y
-            is the installation root for Node.js executables and libraries.
+            is the installation root for Node.js executables and libraries
 @z

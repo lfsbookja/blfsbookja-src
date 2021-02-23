@@ -182,20 +182,20 @@
 @z
 
 @x rdfproc
-            is the Redland RDF processor utility.
+            is the Redland RDF processor utility
 @y
             Redland RDF プロセッサーユーティリティ。
 @z
 
 @x redland-config
             is a script to get information about the installed version
-            of Redland.
+            of Redland
 @y
             インストールされている Redland のバージョン情報を取得するスクリプト。
 @z
 
 @x redland-db-upgrade
-            upgrades older Redland databases to 0.9.12 format.
+            upgrades older Redland databases to 0.9.12 format
 @y
             古い Redland データベースを 0.9.12 フォーマットに更新します。
 @z

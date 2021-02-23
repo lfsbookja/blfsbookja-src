@@ -140,13 +140,13 @@
 @z
 
 @x ndptool
-            is a tool for sending and receiving NDP messages.
+            is a tool for sending and receiving NDP messages
 @y
             NDP メッセージの送受信を行うツールです。
 @z
 
 @x libndp.so
-            provides a wrapper for the IPv6 Neighbor Discovery Protocol.
+            provides a wrapper for the IPv6 Neighbor Discovery Protocol
 @y
             IPv6 近隣探索プロトコル (Neighbor Discovery Protocol) のラッパーを提供します。
 @z

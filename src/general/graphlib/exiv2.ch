@@ -212,7 +212,7 @@
 @z
 
 @x exiv2
-            is a utility used to dump Exif data.
+            is a utility used to dump Exif data
 @y
             Exif データをダンプするユーティリティです。
 @z

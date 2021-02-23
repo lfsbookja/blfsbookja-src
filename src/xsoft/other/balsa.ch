@@ -326,13 +326,13 @@
 @z
 
 @x balsa
-            is a glib based mail client.
+            is a glib based mail client
 @y
             glib ベースのメールクライアント。
 @z
 
 @x balsa-ab
-            is the address-book application used by <command>balsa</command>.
+            is the address-book application used by <command>balsa</command>
 @y
-            is the address-book application used by <command>balsa</command>.
+            is the address-book application used by <command>balsa</command>
 @z

@@ -169,7 +169,7 @@
 
 @x libxcb-keysyms.so
              provides the standard X key constants and API functions for
-             conversion to/from keycodes.
+             conversion to/from keycodes
 @y
              標準的な X キー制約やキーコード間の変換のための API 関数を提供します。
 @z

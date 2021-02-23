@@ -168,7 +168,7 @@
 @z
 
 @x liblzo2.{so,a}
-            is a data compression and decompression library.
+            is a data compression and decompression library
 @y
             データ圧縮および復元を行うライブラリです。
 @z

@@ -197,7 +197,7 @@
 @z
 
 @x libclutter-gtk-0.10.so
-            contains the <application>Clutter Gtk</application> API functions.
+            contains the <application>Clutter Gtk</application> API functions
 @y
             <application>Clutter Gtk</application> の API 関数を提供します。
 @z

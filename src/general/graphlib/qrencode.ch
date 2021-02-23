@@ -237,13 +237,13 @@
 @z
 
 @x qrencode
-            encodes input data in a QR Code and saves it as a PNG or EPS image.
+            encodes input data in a QR Code and saves it as a PNG or EPS image
 @y
-            encodes input data in a QR Code and saves it as a PNG or EPS image.
+            encodes input data in a QR Code and saves it as a PNG or EPS image
 @z
 
 @x libqrencode.so
-            contains functions for encoding data in a QR code symbol.
+            contains functions for encoding data in a QR code symbol
 @y
-            contains functions for encoding data in a QR code symbol.
+            contains functions for encoding data in a QR code symbol
 @z

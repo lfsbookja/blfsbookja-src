@@ -174,9 +174,9 @@
 @z
 
 @x dazzle-list-counters
-            lists counters that are in use by a process.
+            lists counters that are in use by a process
 @y
-            lists counters that are in use by a process.
+            lists counters that are in use by a process
 @z
 
 @x libdazzle-1.0.so

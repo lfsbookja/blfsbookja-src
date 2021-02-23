@@ -164,20 +164,20 @@
 @z
 
 @x
-        <term><filename class='libraryfile'>Lisp bindings</filename></term>
+        <term><filename class="libraryfile">Lisp bindings</filename></term>
 @y
-        <term><filename class='libraryfile'>Lisp バインディング</filename></term>
+        <term><filename class="libraryfile">Lisp バインディング</filename></term>
 @z
 @x
-            are libraries stored in <filename
-            class="directory">/usr/lib/rep/gui/</filename> that assist
-            communication between Lisp and the <application>GTK</application>
-            libraries.
+            are libraries stored in
+            <filename class="directory">/usr/lib/rep/gui/</filename> that
+            assist communication between Lisp and the
+            <application>GTK</application> libraries
 @y
-            are libraries stored in <filename
-            class="directory">/usr/lib/rep/gui/</filename> that assist
-            communication between Lisp and the <application>GTK</application>
-            libraries.
+            are libraries stored in
+            <filename class="directory">/usr/lib/rep/gui/</filename> that
+            assist communication between Lisp and the
+            <application>GTK</application> libraries
 @z
 @x
             <primary sortas="c-Lisp-bindings">Lisp bindings</primary>

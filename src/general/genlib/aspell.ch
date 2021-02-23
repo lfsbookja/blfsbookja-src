@@ -246,94 +246,94 @@
             is a utility that can function as an <command>ispell -a</command>
             replacement, as an independent spell checker, as a test utility to
             test out <application>Aspell</application> features, and as a
-            utility for managing dictionaries.
+            utility for managing dictionaries
 @y
             is a utility that can function as an <command>ispell -a</command>
             replacement, as an independent spell checker, as a test utility to
             test out <application>Aspell</application> features, and as a
-            utility for managing dictionaries.
+            utility for managing dictionaries
 @z
 
 @x ispell
             is a wrapper around <command>aspell</command> to invoke it in
-            <command>ispell</command> compatible mode.
+            <command>ispell</command> compatible mode
 @y
             is a wrapper around <command>aspell</command> to invoke it in
-            <command>ispell</command> compatible mode.
+            <command>ispell</command> compatible mode
 @z
 
 @x spell
             is a wrapper around <command>aspell</command> to invoke it in
-            <command>spell</command> compatible mode.
+            <command>spell</command> compatible mode
 @y
             is a wrapper around <command>aspell</command> to invoke it in
-            <command>spell</command> compatible mode.
+            <command>spell</command> compatible mode
 @z
 
 @x aspell-import
             imports old personal dictionaries into
-            <application>Aspell</application>.
+            <application>Aspell</application>
 @y
             imports old personal dictionaries into
-            <application>Aspell</application>.
+            <application>Aspell</application>
 @z
 
 @x precat
-            decompresses a <command>prezip</command>ped file to stdout.
+            decompresses a <command>prezip</command>ped file to stdout
 @y
-            decompresses a <command>prezip</command>ped file to stdout.
+            decompresses a <command>prezip</command>ped file to stdout
 @z
 
 @x preunzip
-            decompresses a <command>prezip</command>ped file.
+            decompresses a <command>prezip</command>ped file
 @y
-            decompresses a <command>prezip</command>ped file.
+            decompresses a <command>prezip</command>ped file
 @z
 
 @x prezip
             is a prefix delta compressor, used to compress sorted word lists or
-            other similar text files.
+            other similar text files
 @y
             is a prefix delta compressor, used to compress sorted word lists or
-            other similar text files.
+            other similar text files
 @z
 
 @x prezip-bin
             is called by the various wrapper scripts to perform the actual
-            compressing and decompressing.
+            compressing and decompressing
 @y
             is called by the various wrapper scripts to perform the actual
-            compressing and decompressing.
+            compressing and decompressing
 @z
 
 @x pspell-config
             displays information about the
             <filename class="libraryfile">libpspell</filename> installation,
-            mostly for use in build scripts.
+            mostly for use in build scripts
 @y
             displays information about the
             <filename class="libraryfile">libpspell</filename> installation,
-            mostly for use in build scripts.
+            mostly for use in build scripts
 @z
 
 @x run-with-aspell
             is a script to help use <application>Aspell</application> as an
-            <command>ispell</command> replacement.
+            <command>ispell</command> replacement
 @y
             is a script to help use <application>Aspell</application> as an
-            <command>ispell</command> replacement.
+            <command>ispell</command> replacement
 @z
 
 @x word-list-compress
             compresses or decompresses sorted word lists for use with the
-            <application>Aspell</application> spell checker.
+            <application>Aspell</application> spell checker
 @y
             compresses or decompresses sorted word lists for use with the
-            <application>Aspell</application> spell checker.
+            <application>Aspell</application> spell checker
 @z
 
 @x libaspell.so
-            contains spell checking API functions.
+            contains spell checking API functions
 @y
             スペルチェックの API 関数を提供します。
 @z
@@ -343,7 +343,7 @@
             <filename class="libraryfile">libaspell</filename> library. All the
             spell checking functionality is now in
             <filename class="libraryfile">libaspell</filename> but this library
-            is included for backward compatibility.
+            is included for backward compatibility
 @y
             <filename class='libraryfile'>libaspell</filename> ライブラリへのインターフェースを提供します。
             スペルチェックの機能は <filename

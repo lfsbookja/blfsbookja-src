@@ -212,14 +212,14 @@
 @z
 
 @x bdftruncate
-            generates a truncated BDF font from an ISO 10646-1 encoded BDF font.
+            generates a truncated BDF font from an ISO 10646-1 encoded BDF font
 @y
             ISO 10646-1 エンコーディングによる BDF フォントから、圧縮した BDF フォントを生成します。
 @z
 
 @x ucs2any
             generates BDF fonts in any encoding from an ISO 10646-1 encoded
-            BDF font.
+            BDF font
 @y
             ISO 10646-1 エンコーディングの BDF フォントから、種々のエンコーディングによる BDF フォントを生成します。
 @z

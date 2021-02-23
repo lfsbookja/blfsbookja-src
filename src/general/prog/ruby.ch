@@ -267,7 +267,7 @@
 
 @x erb
             is Tiny eRuby. It interprets a
-            <application>Ruby</application> code embedded text file.
+            <application>Ruby</application> code embedded text file
 @y
             Tiny eRuby です。
             これはテキストファイルに埋め込まれた <application>Ruby</application> コードを実行します。
@@ -275,35 +275,35 @@
 
 @x gem
             command for RubyGems - a sophisticated package manager for
-            <application>Ruby</application>.
+            <application>Ruby</application>
 @y
             command for RubyGems - a sophisticated package manager for
-            <application>Ruby</application>.
+            <application>Ruby</application>
 @z
 
 @x irb
             is the interactive interface for
-            <application>Ruby</application>.
+            <application>Ruby</application>
 @y
             <application>Ruby</application> に対するインタラクティブなインターフェースを提供します。
 @z
 
 @x ri
             displays documentation from a database on
-            <application>Ruby</application> classes, modules, and methods.
+            <application>Ruby</application> classes, modules, and methods
 @y
             <application>Ruby</application> のクラス、モジュール、メソッドに対するドキュメントを、データベースより表示します。
 @z
 
 @x ruby
             is an interpreted scripting language for quick
-            and easy object-oriented programming.
+            and easy object-oriented programming
 @y
             オブジェクト指向プログラミングを素早く容易に実現する、インタープリタースクリプト言語です。
 @z
 
 @x libruby.so
-            contains the API functions required by <application>Ruby</application>.
+            contains the API functions required by <application>Ruby</application>
 @y
             <application>Ruby</application> が必要とする API 関数を提供します。
 @z

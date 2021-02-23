@@ -203,15 +203,15 @@
 @z
 
 @x mkbitmap
-            transforms images into bitmaps with scaling and filtering.
+            transforms images into bitmaps with scaling and filtering
 @y
-            transforms images into bitmaps with scaling and filtering.
+            transforms images into bitmaps with scaling and filtering
 @z
 
 @x potrace
-            transforms bitmaps into vector graphics.
+            transforms bitmaps into vector graphics
 @y
-            transforms bitmaps into vector graphics.
+            transforms bitmaps into vector graphics
 @z
 
 @x libpotrace.so

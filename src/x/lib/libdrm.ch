@@ -229,13 +229,13 @@
 @z
 
 @x libdrm.so
-            contains the Direct Rendering Manager API functions.
+            contains the Direct Rendering Manager API functions
 @y
             ダイレクトレンダリングモジュール (Direct Rendering Module) の API 関数を提供します。
 @z
 
 @x libkms.so
-            contains API functions for kernel mode setting abstraction.
+            contains API functions for kernel mode setting abstraction
 @y
             カーネルのモード設定 (kernel mode setting abstraction) に必要な API 関数を提供します。
 @z

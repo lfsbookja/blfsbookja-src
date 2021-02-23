@@ -196,10 +196,10 @@
             is a <application>GTK+</application> GUI that allows you to
             change some of your preferences (theme and screen position)
             for the notifications that the
-            <application>Xfce4 Notification Daemon</application> displays.
+            <application>Xfce4 Notification Daemon</application> displays
 @y
             is a <application>GTK+</application> GUI that allows you to
             change some of your preferences (theme and screen position)
             for the notifications that the
-            <application>Xfce4 Notification Daemon</application> displays.
+            <application>Xfce4 Notification Daemon</application> displays
 @z

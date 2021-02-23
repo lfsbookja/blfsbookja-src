@@ -341,92 +341,92 @@
 
 @x svn
             is a command-line client program used to access
-            <application>Subversion</application> repositories.
+            <application>Subversion</application> repositories
 @y
             <application>Subversion</application> リポジトリにアクセスするための、コマンドラインのクライアントプログラム。
 @z
 
 @x svnadmin
             is a tool for creating, tweaking or repairing a
-            <application>Subversion</application> repository.
+            <application>Subversion</application> repository
 @y
             is a tool for creating, tweaking or repairing a
-            <application>Subversion</application> repository.
+            <application>Subversion</application> repository
 @z
 
 @x svndumpfilter
             is a program for filtering <application>Subversion</application>
-            repository dumpfile format streams.
+            repository dumpfile format streams
 @y
             is a program for filtering <application>Subversion</application>
-            repository dumpfile format streams.
+            repository dumpfile format streams
 @z
 
 @x svnlook
             is a tool for inspecting a <application>Subversion</application>
-            repository.
+            repository
 @y
             <application>Subversion</application> リポジトリを調べるためのツール。
 @z
 
 @x svnrdump
             is a tool for dumping or loading a remote
-            <application>Subversion</application> repository.
+            <application>Subversion</application> repository
 @y
             is a tool for dumping or loading a remote
-            <application>Subversion</application> repository.
+            <application>Subversion</application> repository
 @z
 
 @x svnserve
             is a custom standalone server program, able to run as a daemon
-            process or invoked by SSH.
+            process or invoked by SSH
 @y
             is a custom standalone server program, able to run as a daemon
-            process or invoked by SSH.
+            process or invoked by SSH
 @z
 
 @x svnsync
             is a <application>Subversion</application> repository
-            synchronisation tool.
+            synchronisation tool
 @y
             is a <application>Subversion</application> repository
-            synchronisation tool.
+            synchronisation tool
 @z
 
 @x svnversion
             is used to report the version number and state of a working
-            <application>Subversion</application> repository copy.
+            <application>Subversion</application> repository copy
 @y
             is used to report the version number and state of a working
-            <application>Subversion</application> repository copy.
+            <application>Subversion</application> repository copy
 @z
 
 @x libsvn_*.{so,a}
             are the support libraries used by the
-            <application>Subversion</application> programs.
+            <application>Subversion</application> programs
 @y
             are the support libraries used by the
-            <application>Subversion</application> programs.
+            <application>Subversion</application> programs
 @z
 
 @x mod_authz_svn.so
             is a plug-in module for the <application>Apache</application> HTTP
             server, used to authenticate users to a
             <application>Subversion</application> repository over the Internet
-            or an intranet.
+            or an intranet
 @y
             is a plug-in module for the <application>Apache</application> HTTP
             server, used to authenticate users to a
             <application>Subversion</application> repository over the Internet
-            or an intranet.
+            or an intranet
 @z
 
 @x mod_dav_svn.so
             is a plug-in module for the <application>Apache</application> HTTP
             server, used to make a <application>Subversion</application>
-            repository available to others over the Internet or an intranet.
+            repository available to others over the Internet or an intranet
 @y
             is a plug-in module for the <application>Apache</application> HTTP
             server, used to make a <application>Subversion</application>
-            repository available to others over the Internet or an intranet.
+            repository available to others over the Internet or an intranet
 @z

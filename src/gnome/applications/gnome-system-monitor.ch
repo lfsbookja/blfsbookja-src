@@ -171,7 +171,7 @@
 @z
 
 @x gnome-system-monitor
-            is used to display the process tree and hardware meters.
+            is used to display the process tree and hardware meters
 @y
             プロセスツリーやハードウェアメーターを表示します。
 @z

@@ -226,21 +226,21 @@
 
 @x pcregrep
             is a <command>grep</command> that understands
-            <application>Perl</application> compatible regular expressions.
+            <application>Perl</application> compatible regular expressions
 @y
             <command>grep</command> コマンドと同等であり <application>Perl</application> 互換の正規表現を扱います。
 @z
 
 @x pcretest
             can test a <application>Perl</application> compatible
-            regular expression.
+            regular expression
 @y
             <application>Perl</application> 互換の正規表現をテストします。
 @z
 
 @x pcre-config
             is used during the compile process of programs linking to
-            the <application>PCRE</application> libraries.
+            the <application>PCRE</application> libraries
 @y
             プログラムのコンパイル中に <application>PCRE</application> ライブラリをリンクするために利用されます。
 @z

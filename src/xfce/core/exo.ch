@@ -191,31 +191,31 @@
 @z
 
 @x exo-desktop-item-edit
-            is a command line utility to create or edit icons on the desktop.
+            is a command line utility to create or edit icons on the desktop
 @y
-            is a command line utility to create or edit icons on the desktop.
+            is a command line utility to create or edit icons on the desktop
 @z
 
 @x exo-open
             is a command line frontend to the <application>Xfce</application>
             Preferred Applications framework. It can either be used to open a
             list of urls with the default URL handler or launch the preferred
-            application for a certain category.
+            application for a certain category
 @y
             is a command line frontend to the <application>Xfce</application>
             Preferred Applications framework. It can either be used to open a
             list of urls with the default URL handler or launch the preferred
-            application for a certain category.
+            application for a certain category
 @z
 
 @x libexo-1.so
             contains additional widgets, a framework for editable toolbars,
             light-weight session management support and functions to
             automatically synchronise object properties (based on GObject
-            Binding Properties). 
+            Binding Properties)
 @y
             contains additional widgets, a framework for editable toolbars,
             light-weight session management support and functions to
             automatically synchronise object properties (based on GObject
-            Binding Properties). 
+            Binding Properties)
 @z

@@ -238,14 +238,14 @@
 
 @x freetype-config
             is used to get <application>FreeType</application> compilation
-            and linking information.
+            and linking information
 @y
             <application>FreeType</application> に対するコンパイル情報、リンク情報を取得するために利用します。
 @z
 
 @x libfreetype.{so,a}
             contains functions for rendering various font types, such
-            as TrueType and Type1.
+            as TrueType and Type1
 @y
             TrueType や Type1 などのさまざまなフォントを表示する機能を提供します。
 @z

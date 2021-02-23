@@ -168,7 +168,7 @@
 @z
 
 @x liblinear.so
-            is a large linear classification library.
+            is a large linear classification library
 @y
             is a large linear classification library.
 @z

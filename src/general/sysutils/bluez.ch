@@ -313,50 +313,50 @@
 
 @x bccmd
             is used to issue BlueCore commands to Cambridge Silicon
-            Radio devices.
+            Radio devices
 @y
             is used to issue BlueCore commands to Cambridge Silicon
-            Radio devices.
+            Radio devices
 @z
 
 @x bluetoothd
-            is the Bluetooth daemon.
+            is the Bluetooth daemon
 @y
-            is the Bluetooth daemon.
+            is the Bluetooth daemon
 @z
 
 @x btmon
             provides access to the Bluetooth subsystem monitor
-            infrastructure for reading HCI traces.
+            infrastructure for reading HCI traces
 @y
             provides access to the Bluetooth subsystem monitor
-            infrastructure for reading HCI traces.
+            infrastructure for reading HCI traces
 @z
 
 @x l2ping
             is used to send a L2CAP echo request to the Bluetooth MAC
-            address given in dotted hex notation.
+            address given in dotted hex notation
 @y
             is used to send a L2CAP echo request to the Bluetooth MAC
-            address given in dotted hex notation.
+            address given in dotted hex notation
 @z
 
 @x l2test
-            is a L2CAP testing program.
+            is a L2CAP testing program
 @y
-            is a L2CAP testing program.
+            is a L2CAP testing program
 @z
 
 @x rctest
             is used to test RFCOMM communications on the
-            Bluetooth stack.
+            Bluetooth stack
 @y
             is used to test RFCOMM communications on the
-            Bluetooth stack.
+            Bluetooth stack
 @z
 
 @x libbluetooth.so
-            contains the <application>BlueZ</application> 4 API functions.
+            contains the <application>BlueZ</application> 4 API functions
 @y
-            contains the <application>BlueZ</application> 4 API functions.
+            contains the <application>BlueZ</application> 4 API functions
 @z

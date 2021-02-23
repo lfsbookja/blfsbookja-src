@@ -192,7 +192,7 @@
 @z
 
 @x gwenview
-            is the KDE image viewer. 
+            is the KDE image viewer
 @y
             KDE イメージビューアー。
 @z

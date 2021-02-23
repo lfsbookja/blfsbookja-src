@@ -220,7 +220,7 @@
 
 @x libkeybinder.so
             is the library that registers global <application>X</application>
-            keyboard shortcuts.
+            keyboard shortcuts
 @y
             グローバルな <application>X</application> キーボードショートカットを登録するライブラリです。
 @z

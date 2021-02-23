@@ -265,14 +265,14 @@
 @x sqlite3
             A terminal-based front-end to the <application>SQLite</application>
             library that can evaluate queries interactively and display the
-            results.
+            results
 @y
             端末操作により <application>SQLite</application> ライブラリへアクセスするフロントエンド。
             クエリーを対話的に実行しその結果を得ることができます。
 @z
 
 @x libsqlite3.so
-            contains the <application>SQLite</application> API functions.
+            contains the <application>SQLite</application> API functions
 @y
             <application>SQLite</application> API 関数を提供します。
 @z

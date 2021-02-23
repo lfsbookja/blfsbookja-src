@@ -174,24 +174,24 @@
 
 @x sfinfo
             displays the sound file format, audio encoding, sampling
-            rate and duration for audio formats supported by this library.
+            rate and duration for audio formats supported by this library
 @y
             displays the sound file format, audio encoding, sampling
-            rate and duration for audio formats supported by this library.
+            rate and duration for audio formats supported by this library
 @z
 
 @x sfconvert
             converts sound file formats where the original format and
-            destination format are supported by this library.
+            destination format are supported by this library
 @y
             converts sound file formats where the original format and
-            destination format are supported by this library.
+            destination format are supported by this library
 @z
 
 @x libaudiofile.{so,a}
             contains functions used by programs to support AIFF,
-            AIFF-compressed, Sun/NeXT, WAV and BIC audio formats.
+            AIFF-compressed, Sun/NeXT, WAV and BIC audio formats
 @y
             contains functions used by programs to support AIFF,
-            AIFF-compressed, Sun/NeXT, WAV and BIC audio formats.
+            AIFF-compressed, Sun/NeXT, WAV and BIC audio formats
 @z

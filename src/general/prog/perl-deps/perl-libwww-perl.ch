@@ -153,25 +153,25 @@
 @z
 
 @x lwp-download
-              is a script to fetch a large file from the web.
+              is a script to fetch a large file from the web
 @y
-              is a script to fetch a large file from the web.
+              is a script to fetch a large file from the web
 @z
 
 @x lwp-dump
-              is used to see what headers and content is returned for a URL.
+              is used to see what headers and content is returned for a URL
 @y
-              is used to see what headers and content is returned for a URL.
+              is used to see what headers and content is returned for a URL
 @z
 
 @x lwp-mirror
-              is a simple mirror utility.
+              is a simple mirror utility
 @y
-              is a simple mirror utility.
+              is a simple mirror utility
 @z
 
 @x lwp-request
-              is a simple command line user agent.
+              is a simple command line user agent
 @y
-              is a simple command line user agent.
+              is a simple command line user agent
 @z

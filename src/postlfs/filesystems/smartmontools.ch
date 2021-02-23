@@ -248,19 +248,19 @@
 @z
 
 @x smartctl
-            is the control and monitor utility for SMART Disks.
+            is the control and monitor utility for SMART Disks
 @y
-            is the control and monitor utility for SMART Disks.
+            is the control and monitor utility for SMART Disks
 @z
 
 @x smartd
-            is the SMART disk monitoring daemon.
+            is the SMART disk monitoring daemon
 @y
-            is the SMART disk monitoring daemon.
+            is the SMART disk monitoring daemon
 @z
 
 @x update-smart-drivedb
-            is the update tool for the smartmontools drive database.
+            is the update tool for the smartmontools drive database
 @y
-            is the update tool for the smartmontools drive database.
+            is the update tool for the smartmontools drive database
 @z

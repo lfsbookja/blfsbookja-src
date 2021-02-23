@@ -100,7 +100,7 @@
 @z
 
 @x findrule
-              is a command line wrapper to File::Find::Rule.
+              is a command line wrapper to File::Find::Rule
 @y
-              is a command line wrapper to File::Find::Rule.
+              is a command line wrapper to File::Find::Rule
 @z

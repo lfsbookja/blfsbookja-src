@@ -164,7 +164,7 @@
 @z
 
 @x libSoundTouch.so
-            contains <application>SoundTouch</application> API functions.
+            contains <application>SoundTouch</application> API functions
 @y
             <application>SoundTouch</application> API 関数を提供します。
 @z

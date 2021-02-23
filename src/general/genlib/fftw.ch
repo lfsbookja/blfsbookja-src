@@ -227,19 +227,19 @@
 @x fftw-wisdom
             is a utility to generate FFTW wisdom files, which contain saved
             information about how to optimally compute (Fourier) transforms  of
-            various sizes.
+            various sizes
 @y
             is a utility to generate FFTW wisdom files, which contain saved
             information about how to optimally compute (Fourier) transforms  of
-            various sizes.
+            various sizes
 @z
 
 @x fftw-wisdom-to-conf
             is a utility to generate C configuration routines from FFTW wisdom
             files, where the latter contain saved information about  how  to
-            optimally  compute  (Fourier)  transforms of various sizes.
+            optimally  compute  (Fourier)  transforms of various sizes
 @y
             is a utility to generate C configuration routines from FFTW wisdom
             files, where the latter contain saved information about  how  to
-            optimally  compute  (Fourier)  transforms of various sizes.
+            optimally  compute  (Fourier)  transforms of various sizes
 @z

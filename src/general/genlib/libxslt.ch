@@ -243,19 +243,19 @@
 @x xslt-config
             is used to find out the pre-processor, linking and
             compiling flags necessary to use the <application>libxslt</application>
-            libraries in 3rd-party programs.
+            libraries in 3rd-party programs
 @y
             サードパーティー製のプログラムが <application>libxslt</application> ライブラリを利用するにあたって、必要となるプリプロセッサー、コンパイルフラグ、リンクフラグを決定するために利用します。
 @z
 
 @x xsltproc
-            is used to apply XSLT stylesheets to XML documents.
+            is used to apply XSLT stylesheets to XML documents
 @y
             XML ドキュメントファイルに対して XSLT スタイルシートを適用します。
 @z
 
 @x libexslt.so
-            is used to provide extensions to XSLT functions.
+            is used to provide extensions to XSLT functions
 @y
             XSLT 関数を取り扱う拡張機能を提供します。
 @z
@@ -263,7 +263,7 @@
 @x libxslt.so
             provides extensions to the
             <filename class="libraryfile">libxml2</filename>
-            libraries to parse files that use the XSLT format.
+            libraries to parse files that use the XSLT format
 @y
             <filename class="libraryfile">libxml2</filename> ライブラリを拡張して XSLT 形式のファイルを取り扱う機能を提供します。
 @z

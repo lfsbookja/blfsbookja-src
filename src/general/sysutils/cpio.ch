@@ -211,13 +211,13 @@
 @z
 
 @x cpio
-            copies files to and from archives.
+            copies files to and from archives
 @y
             アーカイブからのファイルコピー、あるいはアーカイブへのファイルコピーを行います。
 @z
 
 @x mt
-            controls magnetic tape drive operations.
+            controls magnetic tape drive operations
 @y
             磁気テープドライブの処理を制御します。
 @z

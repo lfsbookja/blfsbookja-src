@@ -178,112 +178,112 @@
 
 @x rarian-example
             prints a nice list of all available documents found by the
-            library.
+            library
 @y
             prints a nice list of all available documents found by the
-            library.
+            library
 @z
 
 @x rarian-sk-config
-            emulates <command>scrollkeeper-config</command>.
+            emulates <command>scrollkeeper-config</command>
 @y
-            emulates <command>scrollkeeper-config</command>.
+            emulates <command>scrollkeeper-config</command>
 @z
 
 @x rarian-sk-extract
             is a wrapper around xsltproc to mimic <command>
-            scrollkeeper-extract</command>.
+            scrollkeeper-extract</command>
 @y
             is a wrapper around xsltproc to mimic <command>
-            scrollkeeper-extract</command>.
+            scrollkeeper-extract</command>
 @z
 
 @x rarian-sk-gen-uuid
-            generates a unique (random) uuid.
+            generates a unique (random) uuid
 @y
-            generates a unique (random) uuid.
+            generates a unique (random) uuid
 @z
 
 @x rarian-sk-get-cl
-            gets a content list (category tree).
+            gets a content list (category tree)
 @y
-            gets a content list (category tree).
+            gets a content list (category tree)
 @z
 
 @x rarian-sk-get-content-list
             is a simple wrapper to make calling <command>scrollkeeper-get-cl
-            </command> easier.
+            </command> easier
 @y
             is a simple wrapper to make calling <command>scrollkeeper-get-cl
-            </command> easier.
+            </command> easier
 @z
 
 @x rarian-sk-get-extended-content-list
             is a simple wrapper to make calling <command>scrollkeeper-get-cl
-            </command> (extended) easier.
+            </command> (extended) easier
 @y
             is a simple wrapper to make calling <command>scrollkeeper-get-cl
-            </command> (extended) easier.
+            </command> (extended) easier
 @z
 
 @x rarian-sk-get-scripts
             emulates <command>
             scrollkeeper-get-index-from-index-from-docpath</command>, <command>
             scrollkeeper-get-toc-from-docpath</command>, and <command>
-            scrollkeeper-get-toc-from-id</command>.
+            scrollkeeper-get-toc-from-id</command>
 @y
             emulates <command>
             scrollkeeper-get-index-from-index-from-docpath</command>, <command>
             scrollkeeper-get-toc-from-docpath</command>, and <command>
-            scrollkeeper-get-toc-from-id</command>.
+            scrollkeeper-get-toc-from-id</command>
 @z
 
 @x rarian-sk-install
             emulates <command>scrollkeeper-install</command> and
-            <command>scrollkeeper-uninstall</command>.
+            <command>scrollkeeper-uninstall</command>
 @y
             emulates <command>scrollkeeper-install</command> and
-            <command>scrollkeeper-uninstall</command>.
+            <command>scrollkeeper-uninstall</command>
 @z
 
 @x rarian-sk-migrate
             takes in a directory full of omf's, reads and parses them and
-            spews out an equivalent scroll file.
+            spews out an equivalent scroll file
 @y
             takes in a directory full of omf's, reads and parses them and
-            spews out an equivalent scroll file.
+            spews out an equivalent scroll file
 @z
 
 @x rarian-sk-preinstall
             creates the omf file by reading an existing omf file and
-            replacing the url for a resource with the url.
+            replacing the url for a resource with the url
 @y
             creates the omf file by reading an existing omf file and
-            replacing the url for a resource with the url.
+            replacing the url for a resource with the url
 @z
 
 @x rarian-sk-rebuild
             is a simple wrapper script to emulate <command>
-            scrollkeeper-rebuilddb</command>.
+            scrollkeeper-rebuilddb</command>
 @y
             is a simple wrapper script to emulate <command>
-            scrollkeeper-rebuilddb</command>.
+            scrollkeeper-rebuilddb</command>
 @z
 
 @x rarian-sk-update
             is compatible with the <command>scrollkeeper-update</command>
             script that's required to be run when installing new omf files.  It
-            converts the omf files into new-style scrolls.
+            converts the omf files into new-style scrolls
 @y
             is compatible with the <command>scrollkeeper-update</command>
             script that's required to be run when installing new omf files.  It
-            converts the omf files into new-style scrolls.
+            converts the omf files into new-style scrolls
 @z
 
 @x librarian.{so,a}
             is the API to build a list of available meta data files and
-            allows access to these.
+            allows access to these
 @y
             is the API to build a list of available meta data files and
-            allows access to these.
+            allows access to these
 @z

@@ -194,7 +194,7 @@
 @x libpng-config
             is a shell script that provides configuration information
             for applications wanting to use
-            <application>libpng</application>.
+            <application>libpng</application>
 @y
             設定情報を提供するシェルスクリプト。
             <application>libpng</application> を利用するアプリケーションがこれを利用します。
@@ -202,7 +202,7 @@
 
 @x libpng.so
             contain routines used to create and manipulate PNG
-            format graphics files.
+            format graphics files
 @y
             グラフィックフォーマットの一つである PNG を生成したり取り扱ったりするための処理ルーチンを提供します。
 @z

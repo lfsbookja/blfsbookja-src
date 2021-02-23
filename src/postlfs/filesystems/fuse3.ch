@@ -267,20 +267,20 @@
 @z
 
 @x fusermount3
-            is a suid root program to mount and unmount Fuse filesystems.
+            is a suid root program to mount and unmount Fuse filesystems
 @y
             Fuse ファイルシステムをマウントまたはアンマウントする suid プログラムです。
 @z
 
 @x mount.fuse
             is the command <command>mount</command> calls to mount a Fuse
-            filesystem.
+            filesystem
 @y
             Fuse ファイルシステムをマウントするための <command>mount</command> プログラムを呼び出すプログラムです。
 @z
 
 @x libfuse3.so
-            contains the <application>FUSE</application> API functions.
+            contains the <application>FUSE</application> API functions
 @y
             <application>FUSE</application> API 関数を提供します。
 @z

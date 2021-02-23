@@ -357,41 +357,41 @@
 @z
 
 @x cracklib-check
-            is used to determine if a password is strong.
+            is used to determine if a password is strong
 @y
-            is used to determine if a password is strong.
+            is used to determine if a password is strong
 @z
 
 @x cracklib-format
             is used to format text files (lowercases all words,
-            removes control characters and sorts the lists).
+            removes control characters and sorts the lists)
 @y
             is used to format text files (lowercases all words,
-            removes control characters and sorts the lists).
+            removes control characters and sorts the lists)
 @z
 
 @x cracklib-packer
-            creates a database with words read from standard input.
+            creates a database with words read from standard input
 @y
-            creates a database with words read from standard input.
+            creates a database with words read from standard input
 @z
 
 @x cracklib-unpacker
-            displays on standard output the database specified.
+            displays on standard output the database specified
 @y
-            displays on standard output the database specified.
+            displays on standard output the database specified
 @z
 
 @x create-cracklib-dict
             is used to create the <application>CrackLib</application>
-            dictionary from the given word list(s).
+            dictionary from the given word list(s)
 @y
             指定された語句リスト (word list) から <application>CrackLib</application> の辞書情報を生成します。
 @z
 
 @x libcrack.so
             provides a fast dictionary lookup method for strong
-            password enforcement.
+            password enforcement
 @y
             強力なパスワード機能に対しての、高速な辞書情報の検索を実現します。
 @z

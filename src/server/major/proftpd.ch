@@ -323,32 +323,32 @@
 @z
 
 @x proftpd
-            is the FTP daemon.
+            is the FTP daemon
 @y
             FTP デーモン。
 @z
 
 @x ftpcount
-            shows the current number of connections.
+            shows the current number of connections
 @y
             現在の接続数を表示します。
 @z
 
 @x ftpdctl
-            is used to control the  proftpd daemon while it is running.
+            is used to control the  proftpd daemon while it is running
 @y
             実行中の proftpd デーモンを制御します。
 @z
 
 @x ftpasswd
             is a Perl script designed to create and manage
-            AuthUserFiles and AuthGroupFiles of the correct format for proftpd.
+            AuthUserFiles and AuthGroupFiles of the correct format for proftpd
 @y
             AuthUserFiles と AuthGroupFiles に対する正しい書式を生成し制御するための Perl スクリプト。
 @z
 
 @x ftpmail
-            is a Perl script for sending email based on the proftpd TransferLog.
+            is a Perl script for sending email based on the proftpd TransferLog
 @y
           proftpd の TransferLog に基づいて電子メール送信を行うための Perl スクリプト。
 @z
@@ -356,45 +356,45 @@
 @x ftpquota
             is a Perl script designed to create and manage limits and tally
             files for the mod_quotatab + mod_quotatab_file module combination
-            for proftpd.
+            for proftpd
 @y
             is a Perl script designed to create and manage limits and tally
             files for the mod_quotatab + mod_quotatab_file module combination
-            for proftpd.
+            for proftpd
 @z
 
 @x ftpscrub
-            provides a way to scrub the scoreboard file on demand.
+            provides a way to scrub the scoreboard file on demand
 @y
-            provides a way to scrub the scoreboard file on demand.
+            provides a way to scrub the scoreboard file on demand
 @z
 
 @x ftpshut
             shuts down all <application>proftpd</application> servers
-            at a given time.
+            at a given time
 @y
             shuts down all <application>proftpd</application> servers
-            at a given time.
+            at a given time
 @z
 
 @x ftptop
-            displays running status on connections.
+            displays running status on connections
 @y
-            displays running status on connections.
+            displays running status on connections
 @z
 
 @x ftpwho
-            shows current process information for each session.
+            shows current process information for each session
 @y
-            shows current process information for each session.
+            shows current process information for each session
 @z
 
 @x prxs
             is a Perl script designed to compile and install third-party
             modules, from source code, as DSO modules for the installed
-            proftpd.
+            proftpd
 @y
             is a Perl script designed to compile and install third-party
             modules, from source code, as DSO modules for the installed
-            proftpd.
+            proftpd
 @z

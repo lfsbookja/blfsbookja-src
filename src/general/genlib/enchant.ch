@@ -279,13 +279,13 @@
 @z
 
 @x enchant-lsmod
-            lists available backends, languages, and dictionaries.
+            lists available backends, languages, and dictionaries
 @y
             利用可能なバックエンドライブラリ、対象言語、辞書の一覧を表示します。
 @z
 
 @x libenchant.so
-            contains spell checking interface API functions.
+            contains spell checking interface API functions
 @y
             スペルチェックを行う API インターフェース関数を提供します。
 @z

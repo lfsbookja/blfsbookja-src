@@ -157,7 +157,7 @@
 
 @x dos2unix
             converts text between various OS formats (such as
-            converting from DOS format to Unix).
+            converting from DOS format to Unix)
 @y
             テキストファイルにて (DOS フォーマットから Unix フォーマットへの変換のように) さまざまな OS フォーマット間での変換を行います。
 @z

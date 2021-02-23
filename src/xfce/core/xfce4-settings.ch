@@ -210,9 +210,9 @@
 
 @x xfce4-accessibility-settings
             is a <application>GTK+ 3</application> GUI to allow you to change
-            some of your keyboard and mouse preferences.
+            some of your keyboard and mouse preferences
 @y
             is a <application>GTK+ 3</application> GUI to allow you to change
-            some of your keyboard and mouse preferences.
+            some of your keyboard and mouse preferences
 @z
 

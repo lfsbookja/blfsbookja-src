@@ -142,30 +142,30 @@
 
 @x compface
             is a filter for generating highly compressed representations
-            of 48x48x1 face image files.
+            of 48x48x1 face image files
 @y
             is a filter for generating highly compressed representations
-            of 48x48x1 face image files.
+            of 48x48x1 face image files
 @z
 
 @x uncompface
             is an inverse filter which performs an inverse
-            transformation with no loss of data.
+            transformation with no loss of data
 @y
             is an inverse filter which performs an inverse
-            transformation with no loss of data.
+            transformation with no loss of data
 @z
 
 @x xbm2xface.pl
-            is a script to generate xfaces.
+            is a script to generate xfaces
 @y
-            is a script to generate xfaces.
+            is a script to generate xfaces
 @z
 
 @x libcompface.{so,a}
             allows the compression and decompression algorithms to be
-            used in other programs such as MTAs.
+            used in other programs such as MTAs
 @y
             allows the compression and decompression algorithms to be
-            used in other programs such as MTAs.
+            used in other programs such as MTAs
 @z

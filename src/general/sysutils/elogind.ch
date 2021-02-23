@@ -344,29 +344,29 @@
 @z
 
 @x busctl
-            is used to introspect and monitor the D-Bus bus.
+            is used to introspect and monitor the D-Bus bus
 @y
-            is used to introspect and monitor the D-Bus bus.
+            is used to introspect and monitor the D-Bus bus
 @z
 
 @x elogind-inhibit
             is used to execute a program with a shutdown, sleep or idle
-            inhibitor lock taken.
+            inhibitor lock taken
 @y
             is used to execute a program with a shutdown, sleep or idle
-            inhibitor lock taken.
+            inhibitor lock taken
 @z
 
 @x loginctl
             is used to introspect and control the state of the elogind Login
-            Manager.
+            Manager
 @y
             is used to introspect and control the state of the elogind Login
-            Manager.
+            Manager
 @z
 
 @x libelogind.so
-            is the main elogind utility library.
+            is the main elogind utility library
 @y
-            is the main elogind utility library.
+            is the main elogind utility library
 @z

@@ -337,54 +337,54 @@
 
 @x gtk-builder-convert
            converts glade files into XML files which can be loaded with
-           GtkBuilder.
+           GtkBuilder
 @y
            converts glade files into XML files which can be loaded with
-           GtkBuilder.
+           GtkBuilder
 @z
 
 @x gtk-demo
             demonstrates <application>GTK+ 2</application> functionality and
-            provides code for the examples.
+            provides code for the examples
 @y
             demonstrates <application>GTK+ 2</application> functionality and
-            provides code for the examples.
+            provides code for the examples
 @z
 
 @x gtk-query-immodules-2.0
             collects information about loadable input method modules for
-            <application>GTK+ 2</application> and writes it to standard output.
+            <application>GTK+ 2</application> and writes it to standard output
 @y
             collects information about loadable input method modules for
-            <application>GTK+ 2</application> and writes it to standard output.
+            <application>GTK+ 2</application> and writes it to standard output
 @z
 
 @x gtk-update-icon-cache
             creates mmap()able cache files for icon themes. Starting with
             <application>gtk+-2.24.24</application>, add the flag
             <quote>--include-image-data</quote> to this command, if you wish
-            previous behavior, with image data in the cache.
+            previous behavior, with image data in the cache
 @y
             creates mmap()able cache files for icon themes. Starting with
             <application>gtk+-2.24.24</application>, add the flag
             <quote>--include-image-data</quote> to this command, if you wish
-            previous behavior, with image data in the cache.
+            previous behavior, with image data in the cache
 @z
 
 @x libgdk-x11-2.0.so
             contains functions that act as a wrapper around the low-level
             drawing and windowing functions provided by the underlying graphics
-            system.
+            system
 @y
             contains functions that act as a wrapper around the low-level
             drawing and windowing functions provided by the underlying graphics
-            system.
+            system
 @z
 
 @x libgtk-x11-2.0.so
             contains functions that provide an API to implement graphical user
-            interfaces.
+            interfaces
 @y
             contains functions that provide an API to implement graphical user
-            interfaces.
+            interfaces
 @z

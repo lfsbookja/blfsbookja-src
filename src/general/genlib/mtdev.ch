@@ -159,13 +159,13 @@
 @z
 
 @x mtdev-test
-            is a tool to test <filename class="libraryfile">libmtdev</filename>.
+            is a tool to test <filename class="libraryfile">libmtdev</filename>
 @y
             <filename class="libraryfile">libmtdev</filename> をテストするツール。
 @z
 
 @x libmtdev.so
-            contains Multitouch Protocol Translation API functions.
+            contains Multitouch Protocol Translation API functions
 @y
             マルチタッチプロトコル変換 (Multitouch Protocol Translation) API 関数を提供します。
 @z

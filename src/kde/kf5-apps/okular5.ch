@@ -219,7 +219,7 @@
 @z
 
 @x okular
-             is a document viewer. 
+             is a document viewer
 @y
              ドキュメントビューアー。
 @z

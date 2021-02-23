@@ -188,7 +188,7 @@
 @x libgarcon-1.so
             contains functions that provide a freedesktop.org compliant menu
             implementation based on <application>GLib</application> and
-            <application>GIO</application>.
+            <application>GIO</application>
 @y
             <application>GLib</application> と <application>GIO</application> により実装された、freedesktop.org 互換のメニュー機能を提供します。
 @z

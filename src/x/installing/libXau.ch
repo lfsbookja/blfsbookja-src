@@ -158,7 +158,7 @@
 @z
 
 @x libXau-x7
-            is the library of X authority database routines.
+            is the library of X authority database routines
 @y
             X 認証データベース処理ライブラリです。
 @z

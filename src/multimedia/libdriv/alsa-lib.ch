@@ -242,7 +242,7 @@
 @z
 
 @x aserver
-            is the ALSA server.
+            is the ALSA server
 @y
-            is the ALSA server.
+            ALSA サーバー。
 @z

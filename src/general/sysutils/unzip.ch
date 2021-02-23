@@ -353,54 +353,46 @@
 
 @x funzip
             allows the output of <command>unzip</command> commands to be
-            redirected.
+            redirected
 @y
             allows the output of <command>unzip</command> commands to be
-            redirected.
+            redirected
 @z
 
 @x unzip
             lists, tests or extracts files from a <filename>ZIP</filename>
-            archive.
+            archive
 @y
             lists, tests or extracts files from a <filename>ZIP</filename>
-            archive.
+            archive
 @z
 
 @x unzipfsx
             is a self-extracting stub that can be prepended to a
             <filename>ZIP</filename> archive.  Files in this format allow the
             recipient to decompress the archive without installing
-            <application>UnZip</application>.
+            <application>UnZip</application>
 @y
             is a self-extracting stub that can be prepended to a
             <filename>ZIP</filename> archive.  Files in this format allow the
             recipient to decompress the archive without installing
-            <application>UnZip</application>.
+            <application>UnZip</application>
 @z
 
 @x zipgrep
             searches files in a <filename>ZIP</filename> archive for
-            lines matching a pattern.
+            lines matching a pattern
 @y
             searches files in a <filename>ZIP</filename> archive for
-            lines matching a pattern.
+            lines matching a pattern
 @z
 
 @x zipinfo
             produces technical information about the files in a
             <filename>ZIP</filename> archive, including file access permissions,
-            encryption status, type of compression, etc.
+            encryption status, type of compression, etc
 @y
             produces technical information about the files in a
             <filename>ZIP</filename> archive, including file access permissions,
-            encryption status, type of compression, etc.
-@z
-
-@x libunzip.so
-            contains the API functions required by the
-            <application>UnZip</application> programs.
-@y
-            contains the API functions required by the
-            <application>UnZip</application> programs.
+            encryption status, type of compression, etc
 @z

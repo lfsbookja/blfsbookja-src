@@ -218,16 +218,16 @@
 
 @x lspci
             is a utility for displaying information about all PCI buses
-            in the system and all devices connected to them.
+            in the system and all devices connected to them
 @y
             is a utility for displaying information about all PCI buses
-            in the system and all devices connected to them.
+            in the system and all devices connected to them
 @z
 
 @x setpci
-            is a utility for querying and configuring PCI devices.
+            is a utility for querying and configuring PCI devices
 @y
-            is a utility for querying and configuring PCI devices.
+            is a utility for querying and configuring PCI devices
 @z
 
 @x update-pciids
@@ -244,8 +244,8 @@
 
 @x libpci.so
           is library that allows applications to access the PCI
-          subsystem.
+          subsystem
 @y
           is library that allows applications to access the PCI
-          subsystem.
+          subsystem
 @z

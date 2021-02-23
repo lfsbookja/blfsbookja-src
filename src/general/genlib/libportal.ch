@@ -173,7 +173,7 @@
 @z
 
 @x libportal.so
-            provides GIO-style async APIs for most Flatpak portals.
+            provides GIO-style async APIs for most Flatpak portals
 @y
-            provides GIO-style async APIs for most Flatpak portals.
+            provides GIO-style async APIs for most Flatpak portals
 @z

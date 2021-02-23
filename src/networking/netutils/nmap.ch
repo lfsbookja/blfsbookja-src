@@ -228,20 +228,20 @@
 
 @x ncat
             is a utility for reading and writing data across networks from
-            the command line.
+            the command line
 @y
             コマンドラインからネットワークを通じたデータの読み書きを行うユーティリティーです。
 @z
 
 @x ndiff
-            is a tool to aid in the comparison of Nmap scans.
+            is a tool to aid in the comparison of Nmap scans
 @y
             Nmap によるスキャン結果の比較に用いられるツールです。
 @z
 
 @x nmap
             is a utility for network exploration and security auditing. It
-            supports ping scanning, port scanning and TCP/IP fingerprinting.
+            supports ping scanning, port scanning and TCP/IP fingerprinting
 @y
             ネットワーク探査やセキュリティ監査を行うユーティリティーです。
             ping スキャン、ポートスキャン、TCP/IP フィンガープリント取得などを行います。
@@ -255,26 +255,26 @@
 
 @x nping
             is an open-source tool for network packet generation, response
-            analysis and response time measurement.
+            analysis and response time measurement
 @y
             is an open-source tool for network packet generation, response
-            analysis and response time measurement.
+            analysis and response time measurement
 @z
 
 @x uninstall_ndiff
-            is a Python script to uninstall <command>ndiff</command>.
+            is a Python script to uninstall <command>ndiff</command>
 @y
-            is a Python script to uninstall <command>ndiff</command>.
+            is a Python script to uninstall <command>ndiff</command>
 @z
 
 @x uninstall_zenmap
-            is a Python script to uninstall <command>zenmap</command>.
+            is a Python script to uninstall <command>zenmap</command>
 @y
-            is a Python script to uninstall <command>zenmap</command>.
+            is a Python script to uninstall <command>zenmap</command>
 @z
 
 @x zenmap
-            is a Python based graphical nmap frontend viewer.
+            is a Python based graphical nmap frontend viewer
 @y
             Python ベースによる Nmap のフロントエンドグラフィックビューアー。
 @z

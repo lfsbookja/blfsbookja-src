@@ -217,11 +217,11 @@
 @x
             contain the DocBook 5.0 document type definitions which define the
             element types and the attribute lists that can be used in the
-            corresponding <filename>XML</filename> files.
+            corresponding <filename>XML</filename> files
 @y
             contain the DocBook 5.0 document type definitions which define the
             element types and the attribute lists that can be used in the
-            corresponding <filename>XML</filename> files.
+            corresponding <filename>XML</filename> files
 @z
 @x
             <primary sortas="g-XML-DTD-files">XML DTD Files</primary>
@@ -236,10 +236,10 @@
 @z
 @x
             contain the Docbook 5.0 RelaxNG, RelaxNG Compact, and Schematron
-            schema definitions.
+            schema definitions
 @y
             contain the Docbook 5.0 RelaxNG, RelaxNG Compact, and Schematron
-            schema definitions.
+            schema definitions
 @z
 
 @x
@@ -248,7 +248,7 @@
         <term><filename>XSD files</filename></term>
 @z
 @x
-            files contain DocBook-5.0 Schematron rules.
+            files contain DocBook-5.0 Schematron rules
 @y
-            files contain DocBook-5.0 Schematron rules.
+            files contain DocBook-5.0 Schematron rules
 @z

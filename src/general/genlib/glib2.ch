@@ -315,98 +315,98 @@
 
 @x gdbus
             is a simple tool used for working with
-            <application>D-Bus</application> objects.
+            <application>D-Bus</application> objects
 @y
             is a simple tool used for working with
-            <application>D-Bus</application> objects.
+            <application>D-Bus</application> objects
 @z
 
 @x gdbus-codegen
             is used to generate code and/or documentation for one or 
-            more <application>D-Bus</application> interfaces.
+            more <application>D-Bus</application> interfaces
 @y
             is used to generate code and/or documentation for one or 
-            more <application>D-Bus</application> interfaces.
+            more <application>D-Bus</application> interfaces
 @z
 
 @x gio-querymodules
             is used to create a <filename>giomodule.cache</filename> file in 
             the listed directories. This file lists the implemented extension 
-            points for each module that has been found.
+            points for each module that has been found
 @y
             is used to create a <filename>giomodule.cache</filename> file in 
             the listed directories. This file lists the implemented extension 
-            points for each module that has been found.
+            points for each module that has been found
 @z
 
 @x glib-compile-resources
             is used to read the resource description from a file and
             the files that it references to create a binary resource
-            bundle that is suitable for use with the GResource API.
+            bundle that is suitable for use with the GResource API
 @y
             is used to read the resource description from a file and
             the files that it references to create a binary resource
-            bundle that is suitable for use with the GResource API.
+            bundle that is suitable for use with the GResource API
 @z
 
 @x glib-compile-schemas
             is used to compile all the GSettings XML schema files
             in a directory into a binary file with the name 
-            <filename>gschemas.compiled</filename> that can be used by GSettings.
+            <filename>gschemas.compiled</filename> that can be used by GSettings
 @y
             is used to compile all the GSettings XML schema files
             in a directory into a binary file with the name 
-            <filename>gschemas.compiled</filename> that can be used by GSettings.
+            <filename>gschemas.compiled</filename> that can be used by GSettings
 @z
 
 @x glib-genmarshal
-            is a C code marshaller generation utility for GLib closures.
+            is a C code marshaller generation utility for GLib closures
 @y
-            is a C code marshaller generation utility for GLib closures.
+            is a C code marshaller generation utility for GLib closures
 @z
 
 @x glib-gettextize
             is a variant of the <application>gettext</application>
-            internationalization utility.
+            internationalization utility
 @y
             is a variant of the <application>gettext</application>
-            internationalization utility.
+            internationalization utility
 @z
 
 @x glib-mkenums
-            is a C language enum description generation utility.
+            is a C language enum description generation utility
 @y
-            is a C language enum description generation utility.
+            is a C language enum description generation utility
 @z
 
 @x gobject-query
-            is a small utility that draws a tree of types.
+            is a small utility that draws a tree of types
 @y
-            is a small utility that draws a tree of types.
+            is a small utility that draws a tree of types
 @z
 
 @x gresource
-            offers a simple command line interface to GResource.
+            offers a simple command line interface to GResource
 @y
-            offers a simple command line interface to GResource.
+            offers a simple command line interface to GResource
 @z
 
 @x gsettings
-            offers a simple command line interface to GSettings.
+            offers a simple command line interface to GSettings
 @y
-            offers a simple command line interface to GSettings.
+            offers a simple command line interface to GSettings
 @z
 
 @x gtester
-            is a test running utility.
+            is a test running utility
 @y
-            is a test running utility.
+            is a test running utility
 @z
 
 @x gtester-report
-            is a test report formatting utility.
+            is a test report formatting utility
 @y
-            is a test report formatting utility.
+            is a test report formatting utility
 @z
 
 @x
@@ -416,8 +416,8 @@
 @z
 @x
             contain low-level core libraries for the
-            <application>GIMP</application> Toolkit.
+            <application>GIMP</application> Toolkit
 @y
             contain low-level core libraries for the
-            <application>GIMP</application> Toolkit.
+            <application>GIMP</application> Toolkit
 @z

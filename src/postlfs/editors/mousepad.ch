@@ -193,7 +193,7 @@
 @z
 
 @x mousepad
-            is a simple <application>GTK+ 3</application> text editor.
+            is a simple <application>GTK+ 3</application> text editor
 @y
             <application>GTK+ 3</application> による簡易なテキストエディター。
 @z

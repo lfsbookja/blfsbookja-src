@@ -257,20 +257,20 @@
 
 @x p11-kit
             is a command line tool that can be used to perform operations
-            on PKCS#11 modules configured on the system.
+            on PKCS#11 modules configured on the system
 @y
             システム内に導入されている PKCS#11 モジュールを制御するためのコマンドラインツール。
 @z
 
 @x libp11-kit.so
             contains functions used to coordinate initialization and 
-            finalization of any PKCS#11 module.
+            finalization of any PKCS#11 module
 @y
             あらゆる PKCS#11 モジュールの初期化や終了化を行う機能を提供します。
 @z
 
 @x p11-kit-proxy.so
-            is the PKCS#11 proxy module.
+            is the PKCS#11 proxy module
 @y
             PKCS#11 プロキシーモジュール。
 @z

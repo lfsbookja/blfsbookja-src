@@ -241,27 +241,27 @@
 @z
 
 @x gvnccapture
-            is used to capture image from VNC server.
+            is used to capture image from VNC server
 @y
             VNC ビューアーからの画面キャプチャーを行います。
 @z
 
 @x libgtk-vnc-2.0.so
             contains the <application>GTK+ 3</application> bindings for
-            <application>Gtk VNC</application>.
+            <application>Gtk VNC</application>
 @y
             <application>Gtk VNC</application> に対する <application>GTK+ 3</application> バインディングを提供します。
 @z
 
 @x libgvnc-1.0.so
-            contains the GObject bindings for <application>Gtk VNC</application>.
+            contains the GObject bindings for <application>Gtk VNC</application>
 @y
             <application>Gtk VNC</application> に対する GObject バインディングを提供します。
 @z
 
 @x libgvncpulse-1.0.so
             is the <application>PulseAudio</application> bridge for 
-            <application>Gtk VNC</application>.
+            <application>Gtk VNC</application>
 @y
             <application>Gtk VNC</application> に対する <application>PulseAudio</application> ブリッジです。
 @z

@@ -264,29 +264,29 @@
 @z
 
 @x desktop-file-edit
-            is used to modify an existing desktop file entry.
+            is used to modify an existing desktop file entry
 @y
-            is used to modify an existing desktop file entry.
+            is used to modify an existing desktop file entry
 @z
 
 @x desktop-file-install
             is used to install a new desktop file entry. It is 
             also used to rebuild or modify the MIME-types application 
-            database.
+            database
 @y
             is used to install a new desktop file entry. It is 
             also used to rebuild or modify the MIME-types application 
-            database.
+            database
 @z
 
 @x desktop-file-validate
-            is used to verify the integrity of a desktop file.
+            is used to verify the integrity of a desktop file
 @y
-            is used to verify the integrity of a desktop file.
+            is used to verify the integrity of a desktop file
 @z
 
 @x update-desktop-database
-            is used to update the MIME-types application database.
+            is used to update the MIME-types application database
 @y
-            is used to update the MIME-types application database.
+            is used to update the MIME-types application database
 @z

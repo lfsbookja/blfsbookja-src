@@ -169,7 +169,7 @@
 @z
 
 @x ark
-             is a KF5-based Archive Manager.
+             is a KF5-based Archive Manager
 @y
-             is a KF5-based Archive Manager.
+             is a KF5-based Archive Manager
 @z

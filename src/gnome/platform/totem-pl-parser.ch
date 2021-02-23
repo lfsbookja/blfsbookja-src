@@ -207,15 +207,15 @@
 @z
 
 @x libtotem-plparser.{so,a}
-            is the <application>Totem</application> Playlist Parser library.
+            is the <application>Totem</application> Playlist Parser library
 @y
-            is the <application>Totem</application> Playlist Parser library.
+            is the <application>Totem</application> Playlist Parser library
 @z
 
 @x libtotem-plparser-mini.{so,a}
             is the <application>Totem</application> Playlist Parser library,
-            mini version.
+            mini version
 @y
             is the <application>Totem</application> Playlist Parser library,
-            mini version.
+            mini version
 @z

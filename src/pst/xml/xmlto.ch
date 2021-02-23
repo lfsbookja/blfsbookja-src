@@ -158,13 +158,13 @@
 @z
 
 @x xmlif
-            is a conditional processing instructions for XML.
+            is a conditional processing instructions for XML
 @y
-            is a conditional processing instructions for XML.
+            is a conditional processing instructions for XML
 @z
 
 @x xmlto
-            applies an XSL stylesheet to an XML document.
+            applies an XSL stylesheet to an XML document
 @y
-            applies an XSL stylesheet to an XML document.
+            applies an XSL stylesheet to an XML document
 @z

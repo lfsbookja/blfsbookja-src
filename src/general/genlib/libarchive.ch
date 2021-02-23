@@ -198,26 +198,26 @@
 @z
 
 @x bsdcat
-            expands files to standard output.
+            expands files to standard output
 @y
             ファイルを拡張し標準出力に出力します。
 @z
 
 @x bsdcpio
-            is a tool similar to <command>cpio</command>.
+            is a tool similar to <command>cpio</command>
 @y
             <command>cpio</command> と同等のツール。
 @z
 
 @x bsdtar
-            is a tool similar to GNU <command>tar</command>.
+            is a tool similar to GNU <command>tar</command>
 @y
             GNU <command>tar</command> と同等のツール。
 @z
 
 @x libarchive.so
             is a library that can create and read several streaming
-            archive formats.
+            archive formats
 @y
             数々のストリーミングアーカイブ形式を生成、読み込みを行うライブラリを提供します。
 @z

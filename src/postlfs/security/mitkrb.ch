@@ -616,91 +616,91 @@
 @z
 
 @x k5srvutil
-            is a host keytable manipulation utility.
+            is a host keytable manipulation utility
 @y
-            is a host keytable manipulation utility.
+            is a host keytable manipulation utility
 @z
 
 @x kadmin
             is an utility used to make modifications
-            to the Kerberos database.
+            to the Kerberos database
 @y
             is an utility used to make modifications
-            to the Kerberos database.
+            to the Kerberos database
 @z
 
 @x kadmind
             is a server for administrative access
-            to a Kerberos database.
+            to a Kerberos database
 @y
             is a server for administrative access
-            to a Kerberos database.
+            to a Kerberos database
 @z
 
 @x kdb5_util
-            is the KDC database utility.
+            is the KDC database utility
 @y
-            is the KDC database utility.
+            is the KDC database utility
 @z
 
 @x kdestroy
-            removes the current set of tickets.
+            removes the current set of tickets
 @y
-            removes the current set of tickets.
+            removes the current set of tickets
 @z
 
 @x kinit
             is used to authenticate to the Kerberos server as a
             principal and acquire a ticket granting ticket that can
-            later be used to obtain tickets for other services.
+            later be used to obtain tickets for other services
 @y
             is used to authenticate to the Kerberos server as a
             principal and acquire a ticket granting ticket that can
-            later be used to obtain tickets for other services.
+            later be used to obtain tickets for other services
 @z
 
 @x klist
             reads and displays the current tickets in
-            the credential cache.
+            the credential cache
 @y
             reads and displays the current tickets in
-            the credential cache.
+            the credential cache
 @z
 
 @x kpasswd
-            is a program for changing Kerberos 5 passwords.
+            is a program for changing Kerberos 5 passwords
 @y
-            is a program for changing Kerberos 5 passwords.
+            is a program for changing Kerberos 5 passwords
 @z
 
 @x kprop
             takes a principal database in a specified format and
-            converts it into a stream of database records.
+            converts it into a stream of database records
 @y
             takes a principal database in a specified format and
-            converts it into a stream of database records.
+            converts it into a stream of database records
 @z
 
 @x kpropd
             receives a database sent by <command>kprop</command>
-            and writes it as a local database.
+            and writes it as a local database
 @y
             receives a database sent by <command>kprop</command>
-            and writes it as a local database.
+            and writes it as a local database
 @z
 
 @x krb5-config
             gives information on how to link programs against
-            libraries.
+            libraries
 @y
             gives information on how to link programs against
-            libraries.
+            libraries
 @z
 
 @x krb5kdc
-            is the <application>Kerberos 5</application> server.
+            is the <application>Kerberos 5</application> server
 @y
-            is the <application>Kerberos 5</application> server.
+            is the <application>Kerberos 5</application> server
 @z
 
 @x ksu
@@ -708,21 +708,21 @@
             Requires a properly configured
             <filename>/etc/shells</filename> and
             <filename>~/.k5login</filename> containing principals
-            authorized to become super users.
+            authorized to become super users
 @y
             is the super user program using Kerberos protocol.
             Requires a properly configured
             <filename>/etc/shells</filename> and
             <filename>~/.k5login</filename> containing principals
-            authorized to become super users.
+            authorized to become super users
 @z
 
 @x kswitch
             makes the specified credential cache the 
             primary cache for the collection, if a cache 
-            collection is available.
+            collection is available
 @y
             makes the specified credential cache the 
             primary cache for the collection, if a cache 
-            collection is available.
+            collection is available
 @z

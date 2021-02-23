@@ -168,7 +168,7 @@
 @z
 
 @x lxinput
-            is a program used to configure keyboard and mouse.
+            is a program used to configure keyboard and mouse
 @y
             キーボードとマウスの設定を行うプログラム。
 @z

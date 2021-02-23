@@ -205,10 +205,10 @@
 
 @x idn
             is a command line interface to the internationalized domain
-            name library.
+            name library
 @y
             is a command line interface to the internationalized domain
-            name library.
+            name library
 @z
 
 @x libidn.so
@@ -219,7 +219,7 @@
             Compatible Encoding (ACE) via IDNA. A mechanism to define Top-Level
             Domain (TLD) specific validation tables, and to compare strings
             against those tables, as well as default tables for some TLDs are
-            included.
+            included
 @y
             contains a generic Stringprep implementation that does Unicode
             3.2 NFKC normalization, mapping and prohibition of characters, and
@@ -228,5 +228,5 @@
             Compatible Encoding (ACE) via IDNA. A mechanism to define Top-Level
             Domain (TLD) specific validation tables, and to compare strings
             against those tables, as well as default tables for some TLDs are
-            included.
+            included
 @z

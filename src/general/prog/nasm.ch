@@ -162,13 +162,13 @@
 @z
 
 @x nasm
-            is a portable 80x86 assembler.
+            is a portable 80x86 assembler
 @y
             移植性に優れた 80x86 アセンブラー。
 @z
 
 @x ndisasm
-            is an 80x86 binary file disassembler.
+            is an 80x86 binary file disassembler
 @y
             80x86 バイナリファイルディスアセンブラー。
 @z

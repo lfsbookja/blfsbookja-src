@@ -265,21 +265,21 @@
 @x xml2-config
             determines the compile and linker flags that should be used to
             compile and link programs that use
-            <filename class='libraryfile'>libxml2</filename>.
+            <filename class="libraryfile">libxml2</filename>
 @y
             他のプログラムが <filename
-            class='libraryfile'>libxml2</filename> を利用してコンパイルおよびリンクを行う場合に、コンパイラーフラグやリンカーフラグを決定します。
+            class="libraryfile">libxml2</filename> を利用してコンパイルおよびリンクを行う場合に、コンパイラーフラグやリンカーフラグを決定します。
 @z
 
 @x xmlcalalog
-            is used to monitor and manipulate XML and SGML catalogs.
+            is used to monitor and manipulate XML and SGML catalogs
 @y
             XML カタログや SGML カタログを監視したり操作するために利用します。
 @z
 
 @x xmllint
             parses XML files and outputs reports (based upon options) to detect
-            errors in XML coding.
+            errors in XML coding
 @y
             XML ファイルを精査して (オプションの指示状況に従った) 結果報告を行います。
             XML 記述に誤りがあれば検出し報告します。
@@ -287,7 +287,7 @@
 
 @x libxml2.so
             provides functions for programs to parse files that use the XML
-            format.
+            format
 @y
           XML 形式で書かれたファイルを精査するためのプログラム関数を提供するライブラリです。
 @z

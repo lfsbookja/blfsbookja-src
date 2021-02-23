@@ -195,7 +195,7 @@
 @z
 
 @x sshfs
-            mounts an <command>ssh</command> server as a local file system.
+            mounts an <command>ssh</command> server as a local file system
 @y
             <command>ssh</command> サーバーをローカルファイルシステムにマウントします。
 @z

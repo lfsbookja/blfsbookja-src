@@ -172,7 +172,7 @@
 @z
 
 @x libssh2.so
-            contains functions to use the SSH2 protocol.
+            contains functions to use the SSH2 protocol
 @y
             SSH2 プロトコルを用いた関数を提供します。
 @z

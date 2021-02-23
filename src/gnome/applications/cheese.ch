@@ -210,20 +210,20 @@
 @z
 
 @x cheese
-            is a webcam tool with graphical effects.
+            is a webcam tool with graphical effects
 @y
             グラフィック効果を伴うウェブカメラツールです。
 @z
 
 @x libcheese.so
-            contains the <application>Cheese</application> API functions.
+            contains the <application>Cheese</application> API functions
 @y
             <application>Cheese</application> API 関数を提供します。
 @z
 
 @x libcheese-gtk.so
             contains the <application>Cheese</application>
-            <application>GTK+</application> widgets.
+            <application>GTK+</application> widgets
 @y
             <application>Cheese</application> の <application>GTK+</application> ウィジェットを提供します。
 @z

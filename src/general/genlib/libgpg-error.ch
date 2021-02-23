@@ -158,7 +158,7 @@
 
 @x gpg-error
             is used to determine <application>libgpg-error</application>
-            error codes.
+            error codes
 @y
             <application>libgpg-error</application> のエラーコードを決定するために利用します。
 @z
@@ -168,7 +168,7 @@
             the <application>libgpg-error</application> library. It can be used
             to query the C compiler and linker flags which are required to
             correctly compile and link the application against the
-            <application>libgpg-error</application> library.
+            <application>libgpg-error</application> library
 @y
             <application>libgpg-error</application> ライブラリに基づいて生成されるアプリケーションの設定と構築のために利用するユーティリティです。
             <application>libgpg-error</application> ライブラリに対してアプリケーションをコンパイルしリンクする際の C コンパイラーフラグやリンカーフラグを決定するために利用します。
@@ -176,7 +176,7 @@
 
 @x liblibgpg-error.so
             contains the <application>libgpg-error</application> API
-            functions.
+            functions
 @y
             <application>libgpg-error</application> の API 関数を提供します。
 @z

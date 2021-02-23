@@ -170,7 +170,7 @@
 @z
 
 @x libpangomm-1.4.so
-            contains the <application>Pango</application> API classes.
+            contains the <application>Pango</application> API classes
 @y
             <application>Pango</application> API クラスを提供します。
 @z

@@ -234,7 +234,7 @@
 @z
 
 @x libxcb.so
-            is an interface to the X Window System protocol.
+            is an interface to the X Window System protocol
 @y
             X ウィンドウシステムプロトコルへのインターフェースを提供します。
 @z

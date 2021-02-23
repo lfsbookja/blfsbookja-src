@@ -206,13 +206,13 @@
 @z
 
 @x fax2ps
-            converts a TIFF facsimile to compressed PostScript file.
+            converts a TIFF facsimile to compressed PostScript file
 @y
             TIFF のファクシミリを、圧縮された PostScript ファイルに変換します。
 @z
 
 @x fax2tiff
-            creates a TIFF Class F fax file from raw fax data.
+            creates a TIFF Class F fax file from raw fax data
 @y
             Raw Fax データからクラス F の Fax データを生成します。
 @z
@@ -225,13 +225,13 @@
 
 @x pal2rgb
             converts a palette color TIFF image to a full color
-            image.
+            image
 @y
             パレットカラーの TIFF イメージをフルカラーイメージに変換します。
 @z
 
 @x ppm2tiff
-            creates a TIFF file from a PPM image file.
+            creates a TIFF file from a PPM image file
 @y
             PPM イメージファイルから TIFF ファイルを生成します。
 @z
@@ -243,7 +243,7 @@
 @z
 
 @x raw2tiff
-            converts a raw byte sequence into TIFF.
+            converts a raw byte sequence into TIFF
 @y
             Raw バイトシーケンスを TIFF に変換します。
 @z
@@ -261,87 +261,87 @@
 @z
 
 @x tiff2bw
-            converts a color TIFF image to grayscale.
+            converts a color TIFF image to grayscale
 @y
             カラー TIFF イメージをグレースケールに変換します。
 @z
 
 @x tiff2pdf
-            converts a TIFF image to a PDF document.
+            converts a TIFF image to a PDF document
 @y
             TIFF イメージを PDF ファイルに変換します。
 @z
 
 @x tiff2ps
-            converts a TIFF image to a PostScript file.
+            converts a TIFF image to a PostScript file
 @y
             TIFF イメージを PostScript ファイルに変換します。
 @z
 
 @x tiff2rgba
             converts a wide variety of TIFF images into an RGBA
-            TIFF image.
+            TIFF image
 @y
             さまざまな形式の TIFF イメージを RGBA TIFF イメージに変換します。
 @z
 
 @x tiffcmp
-            compares two TIFF files.
+            compares two TIFF files
 @y
             二つの TIFF ファイルを比較します。
 @z
 
 @x tiffcp
-            copies (and possibly converts) a TIFF file.
+            copies (and possibly converts) a TIFF file
 @y
             TIFF ファイルをコピー (また可能なら変換) を行います。
 @z
 
 @x tiffcrop
             selects, copies, crops, converts, extracts and/or processes
-            one or more TIFF files.
+            one or more TIFF files
 @y
             複数の TIFF ファイルに対してのコピー、切り取り、変換、抽出などを行います。
 @z
 
 @x tiffdither
-            converts a grayscale image to bilevel using dithering.
+            converts a grayscale image to bilevel using dithering
 @y
             グレースケールイメージを、ディザリング (dithering) を使ってバイレベル (bilevel) に変換します。
 @z
 
 @x tiffdump
-            prints verbatim information about TIFF files.
+            prints verbatim information about TIFF files
 @y
             TIFF ファイルのそのままの情報を出力します。
 @z
 
 @x tiffgt
-            displays an image stored in a TIFF file.
+            displays an image stored in a TIFF file
 @y
             TIFF ファイルに保存されたイメージを表示します。
 @z
 
 @x tiffinfo
-            prints information about TIFF files.
+            prints information about TIFF files
 @y
             TIFF ファイルの情報を出力します。
 @z
 
 @x tiffmedian
-            applies the median cut algorithm to data in a TIFF file.
+            applies the median cut algorithm to data in a TIFF file
 @y
             TIFF ファイル内のデータに対し、中央値分割 (median cut) アルゴリズムを適用します。
 @z
 
 @x tiffset
-            sets the value of a TIFF header to a specified value.
+            sets the value of a TIFF header to a specified value
 @y
             TIFF のヘッダーに指定値をセットします。
 @z
 
 @x tiffsplit
-            splits a multi-image TIFF into single-image TIFF files.
+            splits a multi-image TIFF into single-image TIFF files
 @y
             複数イメージを持つ TIFF ファイルを単一イメージの TIFF ファイルに分割します。
 @z
@@ -349,14 +349,14 @@
 @x libtiff.so
             contains the API functions used by the
             <application>libtiff</application> programs as well as other
-            programs to read and write TIFF files.
+            programs to read and write TIFF files
 @y
             TIFF ファイルの入出力を行う <application>libtiff</application> プログラムや他のプログラムに対しての API 関数を提供します。
 @z
 
 @x libtiffxx.so
             contains the C++ API functions used
-            by programs to read and write TIFF files.
+            by programs to read and write TIFF files
 @y
             TIFF ファイルの入出力を行うプログラムが利用する C++ の API 関数を提供します。
 @z

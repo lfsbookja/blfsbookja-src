@@ -152,7 +152,7 @@
 @z
 
 @x libfdk-aac.so
-            provides the functions used to encode audio in AAC format.
+            provides the functions used to encode audio in AAC format
 @y
             AAC フォーマットのオーディオエンコーディングを行う関数を提供します。
 @z

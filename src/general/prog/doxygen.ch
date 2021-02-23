@@ -313,17 +313,17 @@
             is a command-line based utility used to generate template
             configuration files and then generate documentation from these
             templates. Use <command>doxygen --help</command> for an
-            explanation of the command-line parameters.
+            explanation of the command-line parameters
 @y
             is a command-line based utility used to generate template
             configuration files and then generate documentation from these
             templates. Use <command>doxygen --help</command> for an
-            explanation of the command-line parameters.
+            explanation of the command-line parameters
 @z
 
 @x doxywizard
             is a GUI front-end for configuring and
-            running <command>doxygen</command>.
+            running <command>doxygen</command>
 @y
             <command>doxygen</command> の設定および実行を行う GUI フロントエンド。
 @z

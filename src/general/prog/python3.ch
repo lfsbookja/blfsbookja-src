@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY python3-buildsize     "202 MB (add 31 MB for tests)">
-  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 1.9 SBU for tests, including rebuilding)">
+  <!ENTITY python3-buildsize     "379 MB (add 36 MB for tests)">
+  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 1.7 SBU for tests)">
 @y
-  <!ENTITY python3-buildsize     "202 MB (add 31 MB for tests)">
-  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 1.9 SBU for tests, including rebuilding)">
+  <!ENTITY python3-buildsize     "379 MB (add 36 MB for tests)">
+  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 1.7 SBU for tests)">
 @z
 
 @x
@@ -137,43 +137,17 @@
 @z
 
 @x
-      The test suite must be run separately, using an X terminal (see below).
+      To test the result, issue <command>make test</command>.
+      Some tests may need Internet connection.
 @y
-      The test suite must be run separately, using an X terminal (see below).
+      To test the result, issue <command>make test</command>.
+      Some tests may need Internet connection.
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      The test suite must be run separately from the build, either before or
-      after the package is built and installed. Do not run
-      <command>make install</command> after running the test suite. To build
-      and install the package, you need to start with a fresh or clean source
-      tree. For the tests, you also need a clean source code, so either start by
-      removing the source code directory and starting over, by uncompressing
-      the source tarball or by running <command>make clean</command>. Then
-      configure again, adding <quote>--with-pydebug</quote> to the
-      <command>configure</command> switches above, run <command>make</command>,
-      then <command>make test</command>. Remember that tests must be executed
-      using an X terminal. 
-      The test SBU highly depends on the speed of the internet connection.
-@y
-      The test suite must be run separately from the build, either before or
-      after the package is built and installed. Do not run
-      <command>make install</command> after running the test suite. To build
-      and install the package, you need to start with a fresh or clean source
-      tree. For the tests, you also need a clean source code, so either start by
-      removing the source code directory and starting over, by uncompressing
-      the source tarball or by running <command>make clean</command>. Then
-      configure again, adding <quote>--with-pydebug</quote> to the
-      <command>configure</command> switches above, run <command>make</command>,
-      then <command>make test</command>. Remember that tests must be executed
-      using an X terminal. 
-      The test SBU highly depends on the speed of the internet connection.
 @z
 
 @x
@@ -368,34 +342,34 @@
             is a wrapper script that opens a <application>Python</application>
             aware GUI editor. For this script to run, you must have installed
             <application>Tk</application> before Python so that the Tkinter
-            Python module is built.
+            Python module is built
 @y
             is a wrapper script that opens a <application>Python</application>
             aware GUI editor. For this script to run, you must have installed
             <application>Tk</application> before Python so that the Tkinter
-            Python module is built.
+            Python module is built
 @z
 
 @x pydoc3
             is the <application>Python</application> documentation
-            tool.
+            tool
 @y
             is the <application>Python</application> documentation
-            tool.
+            tool
 @z
 
 @x python3
             is an interpreted, interactive, object-oriented programming
-            language.
+            language
 @y
             is an interpreted, interactive, object-oriented programming
-            language.
+            language
 @z
 
 @x python&python-majorver;
             is a version-specific name for the <command>python</command>
-            program.
+            program
 @y
             is a version-specific name for the <command>python</command>
-            program.
+            program
 @z

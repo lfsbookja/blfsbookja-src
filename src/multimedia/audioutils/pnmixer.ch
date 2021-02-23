@@ -172,7 +172,7 @@
 @z
 
 @x pnmixer
-            is a lightweight volume control that sits in a tray.
+            is a lightweight volume control that sits in a tray
 @y
             トレイ内での軽量なボリューム制御プログラム。
 @z

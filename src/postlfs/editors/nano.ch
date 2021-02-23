@@ -228,14 +228,14 @@
 @x nano
             is a small, simple text editor which aims to replace
             <application>Pico</application>, the default editor in the
-            <application>Pine</application> package.
+            <application>Pine</application> package
 @y
             軽量でシンプルなテキストエディターです。
             <application>Pine</application> パッケージにおけるデフォルトのエディター <application>Pico</application> に代わるものとして提供されています。
 @z
 
 @x rnano
-            is a restricted mode for <command>nano</command>.
+            is a restricted mode for <command>nano</command>
 @y
             <command>nano</command> を制限モード (restricted mode) で起動します。
 @z

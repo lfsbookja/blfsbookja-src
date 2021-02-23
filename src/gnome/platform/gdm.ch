@@ -323,13 +323,13 @@
 @z
 
 @x gdm
-            is a login prompt for <application>GNOME</application>.
+            is a login prompt for <application>GNOME</application>
 @y
-            is a login prompt for <application>GNOME</application>.
+            is a login prompt for <application>GNOME</application>
 @z
 
 @x gdm-screenshot
-            is a screenshot tool for <application>GDM</application>.
+            is a screenshot tool for <application>GDM</application>
 @y
-            is a screenshot tool for <application>GDM</application>.
+            is a screenshot tool for <application>GDM</application>
 @z

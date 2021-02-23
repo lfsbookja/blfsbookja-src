@@ -3,8 +3,8 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
+% $Author$
+% $Rev$
 % $Date::                           $
 %
 @x
@@ -180,7 +180,7 @@
 
 @x pavucontrol
             is a GUI configuration tool for sound settings using
-            <application>pulsaudio</application>.
+            <application>pulsaudio</application>
 @y
             <application>pulsaudio</application> を使ったサウンド設定を行う GUI ツール。
 @z

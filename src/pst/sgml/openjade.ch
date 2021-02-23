@@ -291,13 +291,13 @@
 @z
 
 @x openjade
-            is a DSSSL engine used for transformations.
+            is a DSSSL engine used for transformations
 @y
-            is a DSSSL engine used for transformations.
+            is a DSSSL engine used for transformations
 @z
 
 @x jade
-            is a symlink to <command>openjade</command>.
+            is a symlink to <command>openjade</command>
 @y
-            is a symlink to <command>openjade</command>.
+            <command>openjade</command> へのシンボリックリンク。
 @z

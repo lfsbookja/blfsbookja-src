@@ -10,7 +10,6 @@ CHANGE_FILES = \
 	cracklib.ch        \
 	cryptsetup.ch      \
 	cyrus-sasl.ch      \
-	firewalld.ch       \
 	firewalling.ch     \
 	gnupg2.ch          \
 	gnutls.ch          \
@@ -25,7 +24,6 @@ CHANGE_FILES = \
 	mitkrb.ch          \
 	nessus.ch          \
 	nettle.ch          \
-	nftables.ch        \
 	nss.ch             \
 	openssh.ch         \
 	p11-kit.ch         \

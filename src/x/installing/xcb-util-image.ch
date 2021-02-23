@@ -157,7 +157,7 @@
 @z
 
 @x libxcb-image.so
-             Is a port of Xlib's XImage and XShmImage functions.
+             Is a port of Xlib's XImage and XShmImage functions
 @y
              Xlib の XImage、xShmImage 関数のポートです。
 @z

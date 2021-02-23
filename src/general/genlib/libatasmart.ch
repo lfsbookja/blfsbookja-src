@@ -157,19 +157,19 @@
 @z
 
 @x skdump
-            is a utility that reports on the status of the disk.
+            is a utility that reports on the status of the disk
 @y
             ディスクの状態を検出するユーティリティです。
 @z
 
 @x sktest
-            is a utility to issue disks tests.
+            is a utility to issue disks tests
 @y
             ディスクに対するテストを実施するユーティリティです。
 @z
 
 @x libatasmart.{so,a}
-            contains the ATA S.M.A.R.T API functions.
+            contains the ATA S.M.A.R.T API functions
 @y
             ATA の S.M.A.R.T API 関数を提供します。
 @z

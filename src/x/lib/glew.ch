@@ -199,19 +199,19 @@
 @z
 
 @x glewinfo
-            provides information about the supported extensions.
+            provides information about the supported extensions
 @y
-            provides information about the supported extensions.
+            provides information about the supported extensions
 @z
 
 @x visualinfo
-            is an extended version of glxinfo.
+            is an extended version of glxinfo
 @y
-            is an extended version of glxinfo.
+            is an extended version of glxinfo
 @z
 
 @x libGLEW.so
-            provides functions to access OpenGL extensions.
+            provides functions to access OpenGL extensions
 @y
-            provides functions to access OpenGL extensions.
+            provides functions to access OpenGL extensions
 @z

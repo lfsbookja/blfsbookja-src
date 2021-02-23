@@ -190,7 +190,7 @@
 
 @x atklib-1.0.so
             contains functions that are used by assistive technologies
-            to interact with the desktop applications.
+            to interact with the desktop applications
 @y
             デスクトップやアプリケーションにおける支援技術 (assistive technologies) にて用いられる関数を提供します。
 @z

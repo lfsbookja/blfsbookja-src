@@ -172,7 +172,7 @@
 @z
 
 @x update-mime-database
-            assists in adding MIME data to the database.
+            assists in adding MIME data to the database
 @y
             MIME データをデータベースに追加します。
 @z

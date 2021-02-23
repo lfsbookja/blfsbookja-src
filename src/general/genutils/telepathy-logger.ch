@@ -205,13 +205,13 @@
 @z
 
 @x telepathy-logger
-            is the <application>Telepathy Logger</application> D-Bus service.
+            is the <application>Telepathy Logger</application> D-Bus service
 @y
-            is the <application>Telepathy Logger</application> D-Bus service.
+            is the <application>Telepathy Logger</application> D-Bus service
 @z
 
 @x libtelepathy-logger.so
-            contains the <application>Telepathy Logger</application> API functions.
+            contains the <application>Telepathy Logger</application> API functions
 @y
             <application>Telepathy Logger</application> API 関数を提供します。
 @z

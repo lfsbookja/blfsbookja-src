@@ -190,7 +190,7 @@
 @z
 
 @x gnome-nettool
-            is a network information tool.
+            is a network information tool
 @y
             ネットワーク情報ツール。
 @z

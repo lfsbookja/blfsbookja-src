@@ -169,7 +169,7 @@
 @z
 
 @x libsbc.so
-            contains the <application>SBC</application> API functions.
+            contains the <application>SBC</application> API functions
 @y
             <application>SBC</application> API 関数を提供します。
 @z

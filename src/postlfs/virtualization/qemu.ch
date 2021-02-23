@@ -452,57 +452,57 @@
 @z
 
 @x ivshmem-client
-            is a standalone client for using the ivshmem device.
+            is a standalone client for using the ivshmem device
 @y
-            is a standalone client for using the ivshmem device.
+            is a standalone client for using the ivshmem device
 @z
 
 @x ivshmem-server
-            is an example server for the ivshmem device.
+            is an example server for the ivshmem device
 @y
-            is an example server for the ivshmem device.
+            is an example server for the ivshmem device
 @z
 
 @x qemu-edid
-            is a test tool for the qemu EDID generator.
+            is a test tool for the qemu EDID generator
 @y
-            is a test tool for the qemu EDID generator.
+            is a test tool for the qemu EDID generator
 @z
 
 @x qemu-ga
             implements support for QMP (QEMU Monitor Protocol) commands and
             events that terminate and originate respectively within the guest
-            using an agent built as part of QEMU.
+            using an agent built as part of QEMU
 @y
             implements support for QMP (QEMU Monitor Protocol) commands and
             events that terminate and originate respectively within the guest
-            using an agent built as part of QEMU.
+            using an agent built as part of QEMU
 @z
 
 @x qemu-img
-            provides commands to manage QEMU disk images.
+            provides commands to manage QEMU disk images
 @y
-            provides commands to manage QEMU disk images.
+            provides commands to manage QEMU disk images
 @z
 
 @x qemu-io
             is a diagnostic and manipulation program for (virtual) memory
-            media.  It is still at an early stage of development.
+            media.  It is still at an early stage of development
 @y
             is a diagnostic and manipulation program for (virtual) memory
-            media.  It is still at an early stage of development.
+            media.  It is still at an early stage of development
 @z
 
 @x qemu-nbd
             exports Qemu disk images using the QEMU Disk Network Block
-            Device (NBD) protocol.
+            Device (NBD) protocol
 @y
             exports Qemu disk images using the QEMU Disk Network Block
-            Device (NBD) protocol.
+            Device (NBD) protocol
 @z
 
 @x qemu-system-x86_64
-            is the QEMU PC System emulator.
+            is the QEMU PC System emulator
 @y
             PC システムエミュレーターである QEMU です。
 @z
@@ -511,10 +511,10 @@
             creates a socket pair or a named socket. QEMU and proxy helper
             communicate using this socket. QEMU proxy fs driver sends
             filesystem request to proxy helper and receives the response
-            from it.
+            from it
 @y
             creates a socket pair or a named socket. QEMU and proxy helper
             communicate using this socket. QEMU proxy fs driver sends
             filesystem request to proxy helper and receives the response
-            from it.
+            from it
 @z

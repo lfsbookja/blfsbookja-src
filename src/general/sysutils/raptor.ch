@@ -206,13 +206,13 @@
 @z
 
 @x rapper
-            is a RDF parsing and serializing utility.
+            is a RDF parsing and serializing utility
 @y
             RDF 解析およびシリアライズを行うユーティリティ。
 @z
 
 @x libraptor2.so
-            contains the <application>Raptor</application> API functions.
+            contains the <application>Raptor</application> API functions
 @y
             <application>Raptor</application> API 関数を提供します。
 @z

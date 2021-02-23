@@ -421,26 +421,26 @@
             reads a saved capture file and returns any or all of several
             statistics about that file. It is able to detect and read any
             capture supported by the <application>Wireshark</application>
-            package.
+            package
 @y
             reads a saved capture file and returns any or all of several
             statistics about that file. It is able to detect and read any
             capture supported by the <application>Wireshark</application>
-            package.
+            package
 @z
 
 @x captype
-            prints the file types of capture files.
+            prints the file types of capture files
 @y
-            prints the file types of capture files.
+            prints the file types of capture files
 @z
 
 @x dumpcap
             is a network traffic dump tool. It lets you capture packet data
-            from a live network and write the packets to a file.
+            from a live network and write the packets to a file
 @y
             is a network traffic dump tool. It lets you capture packet data
-            from a live network and write the packets to a file.
+            from a live network and write the packets to a file
 @z
 
 @x editcap
@@ -448,13 +448,13 @@
             how to read <application>libpcap</application> capture files,
             including those of <command>tcpdump</command>,
             <application>Wireshark</application> and other tools that write
-            captures in that format.
+            captures in that format
 @y
             edits and/or translates the format of capture files. It knows
             how to read <application>libpcap</application> capture files,
             including those of <command>tcpdump</command>,
             <application>Wireshark</application> and other tools that write
-            captures in that format.
+            captures in that format
 @z
 
 @x idl2wrs
@@ -463,97 +463,99 @@
             <application>Wireshark</application> <quote>plugin</quote>. It
             relies on two Python programs <command>wireshark_be.py</command>
             and <command>wireshark_gen.py</command>, which are not installed
-            by default. They have to be copied manually from the <filename
-            class="directory">tools</filename> directory to the <filename
-            class="directory">$PYTHONPATH/site-packages/</filename> directory.
+            by default. They have to be copied manually from the
+            <filename class="directory">tools</filename> directory to the
+            <filename class="directory">$PYTHONPATH/site-packages/</filename>
+            directory
 @y
             is a program that takes a user specified CORBA IDL file and
             generates <quote>C</quote> source code for a
             <application>Wireshark</application> <quote>plugin</quote>. It
             relies on two Python programs <command>wireshark_be.py</command>
             and <command>wireshark_gen.py</command>, which are not installed
-            by default. They have to be copied manually from the <filename
-            class="directory">tools</filename> directory to the <filename
-            class="directory">$PYTHONPATH/site-packages/</filename> directory.
+            by default. They have to be copied manually from the
+            <filename class="directory">tools</filename> directory to the
+            <filename class="directory">$PYTHONPATH/site-packages/</filename>
+            directory
 @z
 
 @x mergecap
-            combines multiple saved capture files into a single output file.
+            combines multiple saved capture files into a single output file
 @y
-            combines multiple saved capture files into a single output file.
+            combines multiple saved capture files into a single output file
 @z
 
 @x randpkt
-            creates random-packet capture files.
+            creates random-packet capture files
 @y
-            creates random-packet capture files.
+            creates random-packet capture files
 @z
 
 @x rawshark
-            dumps and analyzes raw libpcap data.
+            dumps and analyzes raw libpcap data
 @y
-            dumps and analyzes raw libpcap data.
+            dumps and analyzes raw libpcap data
 @z
 
 @x reordercap
-            reorders timestamps of input file frames into an output file.
+            reorders timestamps of input file frames into an output file
 @y
-            reorders timestamps of input file frames into an output file.
+            reorders timestamps of input file frames into an output file
 @z
 
 @x sharkd
-            is a daemon that listens on UNIX sockets.
+            is a daemon that listens on UNIX sockets
 @y
-            is a daemon that listens on UNIX sockets.
+            is a daemon that listens on UNIX sockets
 @z
 
 @x text2pcap
             reads in an ASCII hex dump and writes the data described into a
-            <application>libpcap</application>-style capture file.
+            <application>libpcap</application>-style capture file
 @y
             reads in an ASCII hex dump and writes the data described into a
-            <application>libpcap</application>-style capture file.
+            <application>libpcap</application>-style capture file
 @z
 
 @x tshark
             is a TTY-mode network protocol analyzer. It lets you capture
             packet data from a live network or read packets from a
-            previously saved capture file.
+            previously saved capture file
 @y
             is a TTY-mode network protocol analyzer. It lets you capture
             packet data from a live network or read packets from a
-            previously saved capture file.
+            previously saved capture file
 @z
 
 @x wireshark
             is the Qt GUI network protocol analyzer. It lets you interactively
             browse packet data from a live network or from a previously saved
-            capture file.
+            capture file
 @y
             is the Qt GUI network protocol analyzer. It lets you interactively
             browse packet data from a live network or from a previously saved
-            capture file.
+            capture file
 @z
 
 @x libwireshark.so
             contains functions used by the <application>Wireshark</application>
-            programs to perform filtering and packet capturing.
+            programs to perform filtering and packet capturing
 @y
             contains functions used by the <application>Wireshark</application>
-            programs to perform filtering and packet capturing.
+            programs to perform filtering and packet capturing
 @z
 
 @x libwiretap.so
             is a library being developed as a future replacement for
-            <filename class='libraryfile'>libpcap</filename>, the current
+            <filename class="libraryfile">libpcap</filename>, the current
             standard Unix library for packet capturing. For more information,
             see the <filename>README</filename> file in the source
-            <filename class='directory'>wiretap</filename> directory.
+            <filename class="directory">wiretap</filename> directory
 @y
             is a library being developed as a future replacement for
-            <filename class='libraryfile'>libpcap</filename>, the current
+            <filename class="libraryfile">libpcap</filename>, the current
             standard Unix library for packet capturing. For more information,
             see the <filename>README</filename> file in the source
-            <filename class='directory'>wiretap</filename> directory.
+            <filename class="directory">wiretap</filename> directory
 @z
 s

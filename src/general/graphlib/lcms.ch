@@ -185,7 +185,7 @@
 @z
 
 @x icc2ps
-            generates PostScript CRD or CSA from ICC profiles.
+            generates PostScript CRD or CSA from ICC profiles
 @y
             <!--
             日本語訳註： PostScript CRD CSA について全くの不理解。
@@ -194,19 +194,19 @@
 @z
 
 @x icclink
-            links two or more profiles into a single device link profile.
+            links two or more profiles into a single device link profile
 @y
             複数のプロファイルを 1 つのデバイスリンクプロファイルとします。
 @z
 
 @x icctrans
-            is a color space conversion calculator.
+            is a color space conversion calculator
 @y
-            is a color space conversion calculator.
+            is a color space conversion calculator
 @z
 
 @x jpegicc
-            is an ICC profile applier for JPEG files.
+            is an ICC profile applier for JPEG files
 @y
             <!--
             日本語訳註： ツール内容不理解。
@@ -215,7 +215,7 @@
 @z
 
 @x tifficc
-            is an ICC profile applier for TIFF files.
+            is an ICC profile applier for TIFF files
 @y
             <!--
             日本語訳註： ツール内容不理解。
@@ -224,21 +224,21 @@
 @z
 
 @x tiffdiff
-            is a TIFF compare utility.
+            is a TIFF compare utility
 @y
             TIFF ファイルの比較ユーティリティ。
 @z
 
 @x wtpt
-            shows media white of profiles, identifying black body locus.
+            shows media white of profiles, identifying black body locus
 @y
-            shows media white of profiles, identifying black body locus.
+            shows media white of profiles, identifying black body locus
 @z
 
 @x liblcms.so
             is used by the <application>lcms</application> programs as
-            well as other programs to provide color management facilities.
+            well as other programs to provide color management facilities
 @y
             is used by the <application>lcms</application> programs as
-            well as other programs to provide color management facilities.
+            well as other programs to provide color management facilities
 @z

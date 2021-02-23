@@ -17,13 +17,13 @@
 @x
   <!ENTITY gsound-time          "less than 0.1 SBU">
 @y
-  <!ENTITY gsound-time          "less than 0.1 SBU">
+  <!ENTITY gsound-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to GSound</title>
 @y
-    <title>Introduction to GSound</title>
+    <title>&IntroductionTo1;GSound&IntroductionTo2;</title>
 @z
 
 @x
@@ -37,49 +37,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&gsound-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&gsound-download-http;"/>
+          &Download; (HTTP): <ulink url="&gsound-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&gsound-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&gsound-download-ftp;"/>
+          &Download; (FTP): <ulink url="&gsound-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &gsound-md5sum;
 @y
-          Download MD5 sum: &gsound-md5sum;
+          &Download; MD5 sum: &gsound-md5sum;
 @z
 
 @x
           Download size: &gsound-size;
 @y
-          Download size: &gsound-size;
+          &DownloadSize;: &gsound-size;
 @z
 
 @x
           Estimated disk space required: &gsound-buildsize;
 @y
-          Estimated disk space required: &gsound-buildsize;
+          &Estimateddiskspacerequired;: &gsound-buildsize;
 @z
 
 @x
           Estimated build time: &gsound-time;
 @y
-          Estimated build time: &gsound-time;
+          &Estimatedbuildtime;: &gsound-time;
 @z
 
 @x
     <bridgehead renderas="sect3">gsound Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">gsound Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;gsound&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -89,9 +89,9 @@
       <xref linkend="vala"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -102,54 +102,53 @@
       <xref linkend="gtk-doc"/> (for generating documentation)
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> (for generating documentation)
+      <xref linkend="gtk-doc"/> (ドキュメント生成のため)
     </para>
 @z
 
 @x
       User Notes: <ulink url="&blfs-wiki;/gsound"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/gsound"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/gsound"/>
 @z
 
 @x
     <title>Installation of GSound</title>
 @y
-    <title>Installation of GSound</title>
+    <title>&InstallationOf1;GSound&InstallationOf2;</title>
 @z
 
 @x
       Install <application>gsound</application> by running the following
       commands:
 @y
-      Install <application>gsound</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>gsound</application> をビルドします。
 @z
 
 @x
       This package does not come with a test suite.
 @y
-      This package does not come with a test suite.
+      &notTestSuite;
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -157,9 +156,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -187,17 +186,17 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x gsound-play
-            plays system sounds through the libgsound interface.
+            plays system sounds through the libgsound interface
 @y
-            plays system sounds through the libgsound interface.
+            plays system sounds through the libgsound interface
 @z
 
 @x libgsound.so
-            contains API functions for playing system sounds.
+            contains API functions for playing system sounds
 @y
-            contains API functions for playing system sounds.
+            contains API functions for playing system sounds
 @z

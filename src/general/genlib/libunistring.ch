@@ -173,7 +173,7 @@
 @z
 
 @x libunistring.{a,so}
-            provides the unicode string library API.
+            provides the unicode string library API
 @y
             ユニコード文字列 API ライブラリを提供します。
 @z

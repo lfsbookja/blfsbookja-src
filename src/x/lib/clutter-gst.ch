@@ -201,7 +201,7 @@
 @z
 
 @x libclutter-gst-2.0.so
-            contains the <application>Clutter Gst</application> API functions.
+            contains the <application>Clutter Gst</application> API functions
 @y
             <application>Clutter Gst</application> API 関数を提供します。
 @z

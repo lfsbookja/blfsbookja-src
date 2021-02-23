@@ -158,7 +158,7 @@
 @z
 
 @x libxcb-cursor.so
-             Is a port of Xlib's libXcursor functions.
+             Is a port of Xlib's libXcursor functions
 @y
              Xlib の libXcursor 関数をポートしたものです。
 @z

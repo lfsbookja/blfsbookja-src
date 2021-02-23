@@ -17,24 +17,24 @@
   <!ENTITY blocaled-buildsize     "4.2 MB (with tests)">
   <!ENTITY blocaled-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY blocaled-buildsize     "4.2 MB (with tests)">
-  <!ENTITY blocaled-time          "0.1 SBU (with tests)">
+  <!ENTITY blocaled-buildsize     "4.2 MB （テスト込み）">
+  <!ENTITY blocaled-time          "0.1 SBU （テスト込み）">
 @z
 
 @x
     <title>Introduction to blocaled</title>
 @y
-    <title>Introduction to blocaled</title>
+    <title>&IntroductionTo1;blocaled&IntroductionTo2;</title>
 @z
 
 @x
       <application>blocaled</application> is an implementation of the
-      <emphasis>org.freedesktop.locale1</emphasis> D&ndash;Bus protocol,
+      <emphasis>org.freedesktop.locale1</emphasis> D-Bus protocol,
       which normally comes with <application>systemd</application>. It is
       needed by the <application>GNOME</application> desktop.
 @y
       <application>blocaled</application> is an implementation of the
-      <emphasis>org.freedesktop.locale1</emphasis> D&ndash;Bus protocol,
+      <emphasis>org.freedesktop.locale1</emphasis> D-Bus protocol,
       which normally comes with <application>systemd</application>. It is
       needed by the <application>GNOME</application> desktop.
 @z
@@ -42,49 +42,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&blocaled-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&blocaled-download-http;"/>
+          &Download; (HTTP): <ulink url="&blocaled-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&blocaled-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&blocaled-download-ftp;"/>
+          &Download; (FTP): <ulink url="&blocaled-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &blocaled-md5sum;
 @y
-          Download MD5 sum: &blocaled-md5sum;
+          &Download; MD5 sum: &blocaled-md5sum;
 @z
 
 @x
           Download size: &blocaled-size;
 @y
-          Download size: &blocaled-size;
+          &DownloadSize;: &blocaled-size;
 @z
 
 @x
           Estimated disk space required: &blocaled-buildsize;
 @y
-          Estimated disk space required: &blocaled-buildsize;
+          &Estimateddiskspacerequired;: &blocaled-buildsize;
 @z
 
 @x
           Estimated build time: &blocaled-time;
 @y
-          Estimated build time: &blocaled-time;
+          &Estimatedbuildtime;: &blocaled-time;
 @z
 
 @x
     <bridgehead renderas="sect3">blocaled Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">blocaled Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;blocaled&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -94,9 +94,9 @@
       <xref linkend="libdaemon"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="polkit"/> and
+      <xref linkend="polkit"/>,
       <xref linkend="libdaemon"/>
     </para>
 @z
@@ -104,45 +104,44 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/blocaled"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/blocaled"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/blocaled"/>
 @z
 
 @x
     <title>Installation of blocaled</title>
 @y
-    <title>Installation of blocaled</title>
+    <title>&InstallationOf1;blocaled&InstallationOf2;</title>
 @z
 
 @x
       Install <application>blocaled</application> by running the following
       commands:
 @y
-      Install <application>blocaled</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>blocaled</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make check</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Configuring blocaled</title>
 @y
-    <title>Configuring blocaled</title>
+    <title>&Configuring1;blocaled&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -154,7 +153,7 @@
 @x
     <sect3><title>Configuration Information</title>
 @y
-    <sect3><title>Configuration Information</title>
+    <sect3><title>&ConfigInfo;</title>
 @z
 
 @x
@@ -194,7 +193,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -202,9 +201,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -222,7 +221,7 @@
           blocaled (in <filename class="directory">/usr/libexec</filename>)
         </seg>
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           /usr/share/blocaled
@@ -232,13 +231,13 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x blocaled
             is the daemon implementing the
-            <emphasis>org.freedesktop.locale1</emphasis> D&ndash;Bus protocol
+            <emphasis>org.freedesktop.locale1</emphasis> D-Bus protocol
 @y
             is the daemon implementing the
-            <emphasis>org.freedesktop.locale1</emphasis> D&ndash;Bus protocol
+            <emphasis>org.freedesktop.locale1</emphasis> D-Bus protocol
 @z

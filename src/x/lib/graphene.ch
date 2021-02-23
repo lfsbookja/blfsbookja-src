@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Graphene</title>
 @y
-    <title>Introduction to Graphene</title>
+    <title>&IntroductionTo1;Graphene&IntroductionTo2;</title>
 @z
 
 @x
@@ -30,49 +30,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&graphene-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&graphene-download-http;"/>
+          &Download; (HTTP): <ulink url="&graphene-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&graphene-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&graphene-download-ftp;"/>
+          &Download; (FTP): <ulink url="&graphene-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &graphene-md5sum;
 @y
-          Download MD5 sum: &graphene-md5sum;
+          &Download; MD5 sum: &graphene-md5sum;
 @z
 
 @x
           Download size: &graphene-size;
 @y
-          Download size: &graphene-size;
+          &DownloadSize;: &graphene-size;
 @z
 
 @x
           Estimated disk space required: &graphene-buildsize;
 @y
-          Estimated disk space required: &graphene-buildsize;
+          &Estimateddiskspacerequired;: &graphene-buildsize;
 @z
 
 @x
           Estimated build time: &graphene-time;
 @y
-          Estimated build time: &graphene-time;
+          &Estimatedbuildtime;: &graphene-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Graphene Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Graphene Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Graphene&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -98,27 +98,26 @@
 @x
     <title>Installation of Graphene</title>
 @y
-    <title>Installation of Graphene</title>
+    <title>&InstallationOf1;Graphene&InstallationOf2;</title>
 @z
 
 @x
       Install <application>Graphene</application> by running the following
       commands:
 @y
-      Install <application>Graphene</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Graphene</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>ninja test</command>.
 @y
-      To test the results, issue: <command>ninja test</command>.
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -140,7 +139,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -148,9 +147,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -187,8 +186,8 @@
 
 @x libgraphene-1.0.so
             contains functions that provide a thin layer of types for graphics
-            libraries.
+            libraries
 @y
             contains functions that provide a thin layer of types for graphics
-            libraries.
+            libraries
 @z

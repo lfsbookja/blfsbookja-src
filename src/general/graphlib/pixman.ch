@@ -174,7 +174,7 @@
 
 @x libpixman1.so
             contains functions that provide low-level pixel manipulation
-            features.
+            features
 @y
             ピクセルを取り扱う低レベル関数を提供します。
 @z

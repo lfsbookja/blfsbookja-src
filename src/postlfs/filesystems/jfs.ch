@@ -170,56 +170,56 @@
 
 @x fsck.jfs
             is used to replay the JFS transaction log, check a
-            JFS formatted device for errors, and fix any errors found.
+            JFS formatted device for errors, and fix any errors found
 @y
             is used to replay the JFS transaction log, check a
-            JFS formatted device for errors, and fix any errors found.
+            JFS formatted device for errors, and fix any errors found
 @z
 
 @x jfs_fsck
-            is a hard link to fsck.jfs.
+            is a hard link to fsck.jfs
 @y
             fsck.jfs へのハードリンク。
 @z
 
 @x mkfs.jfs
-            constructs an JFS file system.
+            constructs an JFS file system
 @y
             JFS ファイルシステムを構築します。
 @z
 
 @x jfs_mkfs
-            is a hard link to mkfs.jfs.
+            is a hard link to mkfs.jfs
 @y
             mkfs.jfs へのハードリンク。
 @z
 
 @x jfs_debugfs
             is a program which can be used to perform various low-level
-            actions on a JFS formatted device.
+            actions on a JFS formatted device
 @y
             is a program which can be used to perform various low-level
-            actions on a JFS formatted device.
+            actions on a JFS formatted device
 @z
 
 @x jfs_fscklog
             extracts a JFS fsck service log into a file and/or formats and
-            displays the extracted file.
+            displays the extracted file
 @y
             extracts a JFS fsck service log into a file and/or formats and
-            displays the extracted file.
+            displays the extracted file
 @z
 
 @x jfs_logdump
             dumps the contents of the journal log from the specified
-            JFS formatted device into output file ./jfslog.dmp.
+            JFS formatted device into output file ./jfslog.dmp
 @y
             dumps the contents of the journal log from the specified
-            JFS formatted device into output file ./jfslog.dmp.
+            JFS formatted device into output file ./jfslog.dmp
 @z
 
 @x jfs_tune
-            adjusts tunable file system parameters on JFS file systems.
+            adjusts tunable file system parameters on JFS file systems
 @y
-            adjusts tunable file system parameters on JFS file systems.
+            adjusts tunable file system parameters on JFS file systems
 @z

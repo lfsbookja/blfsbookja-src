@@ -385,7 +385,7 @@
 
 @x ab
             is a tool for benchmarking your <application>Apache</application>
-            HTTP server.
+            HTTP server
 @y
             <application>Apache</application> HTTP サーバーのベンチマークを計測するツールです。
 @z
@@ -393,16 +393,16 @@
 @x apachectl
             is a front end to the <application>Apache</application> HTTP server
             which is designed to help the administrator control the functioning
-            of the <application>Apache</application> httpd daemon.
+            of the <application>Apache</application> httpd daemon
 @y
             is a front end to the <application>Apache</application> HTTP server
             which is designed to help the administrator control the functioning
-            of the <application>Apache</application> httpd daemon.
+            of the <application>Apache</application> httpd daemon
 @z
 
 @x apxs
             is a tool for building and installing extension modules for the
-            <application>Apache</application> HTTP server.
+            <application>Apache</application> HTTP server
 @y
             <application>Apache</application> HTTP サーバーに対する追加モジュールをビルドしインストールするためのツールです。
 @z
@@ -411,37 +411,37 @@
             is a program that checks whether it can setgid to the group
             specified. This is to see if it is a valid group for Apache2 to use
             at runtime. If the user (should be run as superuser) is in that
-            group, or can setgid to it, it will return 0.
+            group, or can setgid to it, it will return 0
 @y
             is a program that checks whether it can setgid to the group
             specified. This is to see if it is a valid group for Apache2 to use
             at runtime. If the user (should be run as superuser) is in that
-            group, or can setgid to it, it will return 0.
+            group, or can setgid to it, it will return 0
 @z
 
 @x dbmmanage
             is used to create and update the DBM format files used to store
-            usernames and passwords for basic authentication of HTTP users.
+            usernames and passwords for basic authentication of HTTP users
 @y
             is used to create and update the DBM format files used to store
-            usernames and passwords for basic authentication of HTTP users.
+            usernames and passwords for basic authentication of HTTP users
 @z
 
 @x htcacheclean
-            is used to clean up the disk cache.
+            is used to clean up the disk cache
 @y
             ディスクキャッシュをクリーンアップします。
 @z
 
 @x htdbm
-            is used to manipulate the DBM password databases.
+            is used to manipulate the DBM password databases
 @y
             DBM パスワードデータベースを操作します。
 @z
 
 @x htdigest
             is used to create and update the flat-files used to store usernames,
-            realms and passwords for digest authentication of HTTP users.
+            realms and passwords for digest authentication of HTTP users
 @y
             HTTP におけるダイジェスト認証を行うためのファイルを生成し更新します。
             そのファイルはフラットファイルであり、ユーザー名、領域名、パスワードを保持します。
@@ -449,36 +449,36 @@
 
 @x htpasswd
             is used to create and update the flat-files used to store usernames
-            and passwords for basic authentication of HTTP users.
+            and passwords for basic authentication of HTTP users
 @y
             is used to create and update the flat-files used to store usernames
-            and passwords for basic authentication of HTTP users.
+            and passwords for basic authentication of HTTP users
 @z
 
 @x httpd
-            is the <application>Apache</application> HTTP server program.
+            is the <application>Apache</application> HTTP server program
 @y
             <application>Apache</application> HTTP サーバープログラム。
 @z
 
 @x httxt2dbm
-            is used to generate DBM files from text, for use in RewriteMap.
+            is used to generate DBM files from text, for use in RewriteMap
 @y
             DBM ファイルをテキストファイルから生成するもので、RewiteMap 内にて利用されます。
 @z
 
 @x logresolve
             is a post-processing program to resolve IP-addresses in
-            <application>Apache</application>'s access log files.
+            <application>Apache</application>'s access log files
 @y
             is a post-processing program to resolve IP-addresses in
-            <application>Apache</application>'s access log files.
+            <application>Apache</application>'s access log files
 @z
 
 @x rotatelogs
             is a simple program for use in conjunction with
-            <application>Apache</application>'s piped log file feature.
+            <application>Apache</application>'s piped log file feature
 @y
             is a simple program for use in conjunction with
-            <application>Apache</application>'s piped log file feature.
+            <application>Apache</application>'s piped log file feature
 @z

@@ -189,13 +189,13 @@
 @z
 
 @x exempi
-            is a command line tool to manipulate XMP metadata.
+            is a command line tool to manipulate XMP metadata
 @y
             XMP メタデータを処理するコマンドラインツール。
 @z
 
 @x libexempi.so
-            is a library used to parse XMP metadata.
+            is a library used to parse XMP metadata
 @y
             XMP メタデータの解析に用いるライブラリ。
 @z

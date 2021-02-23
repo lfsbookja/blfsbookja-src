@@ -558,27 +558,27 @@
 @x nmcli
             is a command-line tool for controlling
             <application>NetworkManager</application> 
-            and getting its status.
+            and getting its status
 @y
             is a command-line tool for controlling
             <application>NetworkManager</application> 
-            and getting its status.
+            and getting its status
 @z
 
 @x nm-online
-            is an utility to determine whether you are online.
+            is an utility to determine whether you are online
 @y
-            is an utility to determine whether you are online.
+            is an utility to determine whether you are online
 @z
 
 @x NetworkManager
-            is the network management daemon.
+            is the network management daemon
 @y
-            is the network management daemon.
+            is the network management daemon
 @z
 
 @x libnm.so
-            contains functions used by <application>NetworkManager</application>.
+            contains functions used by <application>NetworkManager</application>
 @y
-            contains functions used by <application>NetworkManager</application>.
+            contains functions used by <application>NetworkManager</application>
 @z

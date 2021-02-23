@@ -636,60 +636,60 @@
 
 @x cargo-fmt
             formats all bin and lib files of the current crate using
-            rustfmt.
+            rustfmt
 @y
             formats all bin and lib files of the current crate using
-            rustfmt.
+            rustfmt
 @z
 
 @x cargo
-            is the Package Manager for Rust.
+            is the Package Manager for Rust
 @y
-            is the Package Manager for Rust.
+            is the Package Manager for Rust
 @z
 
 @x rls
             is the Rust Language Server. This can run in the background to
             provide IDEs, editors, and other tools with information about Rust
-            programs.
+            programs
 @y
             is the Rust Language Server. This can run in the background to
             provide IDEs, editors, and other tools with information about Rust
-            programs.
+            programs
 @z
 
 @x rust-gdb
-            is a wrapper script for gdb, pulling in Python
-            pretty-printing modules installed in <filename
-			class="directory">/opt/rustc-&rust-version;/lib/rustlib/etc</filename>.
+            is a wrapper script for gdb, pulling in Python pretty-printing
+            modules installed in
+            <filename class="directory">/opt/rustc-&rust-version;/lib/rustlib/etc</filename>
 @y
-            is a wrapper script for gdb, pulling in Python
-            pretty-printing modules installed in <filename
-			class="directory">/opt/rustc-&rust-version;/lib/rustlib/etc</filename>.
+            is a wrapper script for gdb, pulling in Python pretty-printing
+            modules installed in
+            <filename class="directory">/opt/rustc-&rust-version;/lib/rustlib/etc</filename>
 @z
 
 @x rust-lldb
             is a wrapper script for LLDB (the LLVM debugger)
-            pulling in the Python pretty-printing modules.
+            pulling in the Python pretty-printing modules
 @y
             is a wrapper script for LLDB (the LLVM debugger)
-            pulling in the Python pretty-printing modules.
+            pulling in the Python pretty-printing modules
 @z
 
 @x rustc
-            is the rust compiler.
+            is the rust compiler
 @y
             rust コンパイラー。
 @z
 
 @x rustdoc
-            generates documentation from rust source code.
+            generates documentation from rust source code
 @y
             rust ソースコードからドキュメントを生成します。
 @z
 
 @x libstd-&lt;16-byte-hash&gt;.so
-            is the Rust Standard Library, the foundation of portable Rust software.
+            is the Rust Standard Library, the foundation of portable Rust software
 @y
             rust 標準ライブラリ (Rust Standard Library)。
 @z

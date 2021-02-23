@@ -189,164 +189,164 @@
 
 @x fsck.xfs
             simply exits with a zero status, since XFS
-            partitions are checked at mount time.
+            partitions are checked at mount time
 @y
             simply exits with a zero status, since XFS
-            partitions are checked at mount time.
+            partitions are checked at mount time
 @z
 
 @x mkfs.xfs
-            constructs an XFS file system.
+            constructs an XFS file system
 @y
-            constructs an XFS file system.
+            constructs an XFS file system
 @z
 
 @x xfs_admin
-            changes the parameters of an XFS file system.
+            changes the parameters of an XFS file system
 @y
-            changes the parameters of an XFS file system.
+            changes the parameters of an XFS file system
 @z
 
 @x xfs_bmap
-            prints block mapping for an XFS file.
+            prints block mapping for an XFS file
 @y
-            prints block mapping for an XFS file.
+            prints block mapping for an XFS file
 @z
 
 @x xfs_copy
             copies the contents of an XFS file system
-            to one or more targets in parallel.
+            to one or more targets in parallel
 @y
             copies the contents of an XFS file system
-            to one or more targets in parallel.
+            to one or more targets in parallel
 @z
 
 @x xfs_estimate
             for each directory argument, estimates the space that directory
             would take if it were copied to an XFS filesystem
-            (does not cross mount points).
+            (does not cross mount points)
 @y
             for each directory argument, estimates the space that directory
             would take if it were copied to an XFS filesystem
-            (does not cross mount points).
+            (does not cross mount points)
 @z
 
 @x xfs_db
-            is used to debug an XFS file system.
+            is used to debug an XFS file system
 @y
-            is used to debug an XFS file system.
+            is used to debug an XFS file system
 @z
 
 @x xfs_freeze
-            suspends access to an XFS file system.
+            suspends access to an XFS file system
 @y
-            suspends access to an XFS file system.
+            suspends access to an XFS file system
 @z
 
 @x
             applicable only to XFS filesystems, improves the organization of
             mounted filesystems, the reorganization algorithm operates on one
             file at a time, compacting or othewise  improving the layout of the
-            file extents (contiguous blocks of file data).
+            file extents (contiguous blocks of file data)
 @y
             applicable only to XFS filesystems, improves the organization of
             mounted filesystems, the reorganization algorithm operates on one
             file at a time, compacting or othewise  improving the layout of the
-            file extents (contiguous blocks of file data).
+            file extents (contiguous blocks of file data)
 @z
 
 @x xfs_growfs
-            expands an XFS file system.
+            expands an XFS file system
 @y
-            expands an XFS file system.
+            expands an XFS file system
 @z
 
 @x xfs_info
             is equivalent to invoking <command>xfs_growfs</command>, but
-            specifying that no change to the file system is to be made.
+            specifying that no change to the file system is to be made
 @y
             is equivalent to invoking <command>xfs_growfs</command>, but
-            specifying that no change to the file system is to be made.
+            specifying that no change to the file system is to be made
 @z
 
 @x xfs_io
             is a debugging tool like <command>xfs_db</command>, but is
             aimed at examining the regular file I/O path rather than the raw
-            XFS volume itself.
+            XFS volume itself
 @y
             is a debugging tool like <command>xfs_db</command>, but is
             aimed at examining the regular file I/O path rather than the raw
-            XFS volume itself.
+            XFS volume itself
 @z
 
 @x xfs_logprint
-            prints the log of an XFS file system.
+            prints the log of an XFS file system
 @y
-            prints the log of an XFS file system.
+            prints the log of an XFS file system
 @z
 
 @x xfs_mdrestore
-            restores an XFS metadump image to a filesystem image.
+            restores an XFS metadump image to a filesystem image
 @y
-            restores an XFS metadump image to a filesystem image.
+            restores an XFS metadump image to a filesystem image
 @z
 
 @x xfs_metadump
-            copies XFS filesystem metadata to a file.
+            copies XFS filesystem metadata to a file
 @y
-            copies XFS filesystem metadata to a file.
+            copies XFS filesystem metadata to a file
 @z
 
 @x xfs_mkfile
-            creates an XFS file, padded with zeroes by default.
+            creates an XFS file, padded with zeroes by default
 @y
-            creates an XFS file, padded with zeroes by default.
+            creates an XFS file, padded with zeroes by default
 @z
 
 @x xfs_ncheck
             generates pathnames from inode numbers for an
-            XFS file system.
+            XFS file system
 @y
             generates pathnames from inode numbers for an
-            XFS file system.
+            XFS file system
 @z
 
 @x xfs_quota
             is a utility for reporting and editing various
-            aspects of filesystem quota.
+            aspects of filesystem quota
 @y
             is a utility for reporting and editing various
-            aspects of filesystem quota.
+            aspects of filesystem quota
 @z
 
 @x xfs_repair
-            repairs corrupt or damaged XFS file systems.
+            repairs corrupt or damaged XFS file systems
 @y
-            repairs corrupt or damaged XFS file systems.
+            repairs corrupt or damaged XFS file systems
 @z
 
 @x xfs_rtcp
             copies a file to the real-time partition on an
-            XFS file system.
+            XFS file system
 @y
             copies a file to the real-time partition on an
-            XFS file system.
+            XFS file system
 @z
 
 @x xfs_spaceman
             reports and controls free space usage in an
-            XFS file system.
+            XFS file system
 @y
             reports and controls free space usage in an
-            XFS file system.
+            XFS file system
 @z
 
 @x libhandle.so
             contains XFS-specific functions that provide a way to perform
             certain filesystem  operations without using a file descriptor to
-            access filesystem objects.
+            access filesystem objects
 @y
             contains XFS-specific functions that provide a way to perform
             certain filesystem  operations without using a file descriptor to
-            access filesystem objects.
+            access filesystem objects
 @z

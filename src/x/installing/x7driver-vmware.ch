@@ -160,7 +160,7 @@
 @z
 
 @x vmware_drv.so
-              is an Xorg video driver for VMware SVGA virtual video card.
+              is an Xorg video driver for VMware SVGA virtual video card
 @y
               VMware SVGA 仮想ビデオカードに対する Xorg ビデオドライバー。
 @z

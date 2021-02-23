@@ -251,21 +251,21 @@
 @x ant
             is a <application>Java</application> based build tool used by
             many packages instead of the conventional <command>make</command>
-            program.
+            program
 @y
             <application>Java</application> ベースのビルドツールであり、各種パッケージの多くが、従来の <command>make</command> でなくこれを利用しています。
 @z
 
 @x antRun
             is a support script used to start <command>ant</command>
-            build scripts in a given directory.
+            build scripts in a given directory
 @y
             指定されたディレクトリにて、ビルドスクリプト <command>ant</command> を実行するためのサポートスクリプトです。
 @z
 
 @x antRun.pl
             is a <application>Perl</application> script that provides similar
-            functionality offered by the <command>antRun</command> script.
+            functionality offered by the <command>antRun</command> script
 @y
             <command>antRun</command> と同等の機能を実現する <application>Perl</application> スクリプトです。
 @z
@@ -273,28 +273,28 @@
 @x complete-ant-cmd.pl
             is a <application>Perl</application> script that allows
             <application>Bash</application> to complete an
-            <command>ant</command> command-line.
+            <command>ant</command> command-line
 @y
             <command>ant</command> のコマンドラインを <application>Bash</application> が補完できるようにするための <application>Perl</application> スクリプトです。
 @z
 
 @x runant.pl
             is a <application>Perl</application> wrapper script used to
-            invoke <command>ant</command>.
+            invoke <command>ant</command>
 @y
             <command>ant</command> を呼び出すための <application>Perl</application> のラッパースクリプトです。
 @z
 
 @x runant.py
             is a <application>Python</application> wrapper script used to
-            invoke <command>ant</command>.
+            invoke <command>ant</command>
 @y
             <command>ant</command> を呼び出すための <application>Python</application> のラッパースクリプトです。
 @z
 
 @x ant-*.jar
             files are the <application>Apache Ant</application>
-            <application>Java</application> class libraries.
+            <application>Java</application> class libraries
 @y
             <application>Apache Ant</application> の <application>Java</application> クラスライブラリです。
 @z

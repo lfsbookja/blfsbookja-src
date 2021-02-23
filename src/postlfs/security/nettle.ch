@@ -178,7 +178,7 @@
 @z
 
 @x nettle-hash
-            calculates a hash value using a specified algorithm.
+            calculates a hash value using a specified algorithm
 @y
             指定されたアルゴリズムを用いてハッシュ値を計算します。
 @z
@@ -187,7 +187,7 @@
             outputs a sequence of pseudorandom (non-cryptographic)  bytes,
             using Knuth's lagged fibonacci generator. The stream is useful for
             testing, but should not be used to generate cryptographic keys or
-            anything else that needs real randomness.
+            anything else that needs real randomness
 @y
             (暗号化されていない) 擬似乱数によるバイト列を出力します。
             これは Knuth のラグ付きフィボナッチ法 (lagged fibonacchi generator) に基づきます。
@@ -196,13 +196,13 @@
 
 @x pkcs1-conv
             converts private and public RSA keys from PKCS #1 format to
-            sexp format.
+            sexp format
 @y
             RSA 公開鍵、暗号鍵を PKCS #1 フォーマットから sexp フォーマットに変換します。
 @z
 
 @x sexp-conv
-            converts an s-expression to a different encoding.
+            converts an s-expression to a different encoding
 @y
             S 表現 (s-expression) を異なるエンコーディングに変換します。
 @z

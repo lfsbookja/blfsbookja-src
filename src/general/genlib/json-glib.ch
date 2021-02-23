@@ -199,19 +199,19 @@
 @z
 
 @x json-glib-format
-            is a simple command line interface to format JSON data.
+            is a simple command line interface to format JSON data
 @y
             JSON データを生成するコマンドラインインターフェース。
 @z
 
 @x json-glib-validate
-            is a simple command line interface to validate JSON data.
+            is a simple command line interface to validate JSON data
 @y
             JSON データを検証 (validate) するコマンドラインインターフェース。
 @z
 
 @x libjson-glib-1.0.so
-            contains the <application>JSON GLib</application> API functions.
+            contains the <application>JSON GLib</application> API functions
 @y
             <application>JSON GLib</application> API 関数を提供します。
 @z

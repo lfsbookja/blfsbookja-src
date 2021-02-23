@@ -150,7 +150,7 @@
 @z
 
 @x unrar
-            uncompresses a <filename>RAR</filename> archive.
+            uncompresses a <filename>RAR</filename> archive
 @y
             <filename>RAR</filename> 形式アーカイブを解凍します。
 @z

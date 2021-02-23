@@ -240,7 +240,7 @@
 @z
 
 @x highlight
-            is a universal source code to formatted text converter.
+            is a universal source code to formatted text converter
 @y
-            is a universal source code to formatted text converter.
+            is a universal source code to formatted text converter
 @z

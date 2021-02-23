@@ -205,7 +205,7 @@
 
 @x vinagre
             is a remote desktop viewer for the 
-            <application>GNOME</application> Desktop.
+            <application>GNOME</application> Desktop
 @y
             <application>GNOME</application> デスクトップに対するリモートデスクトップビューアー。
 @z

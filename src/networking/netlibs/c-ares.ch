@@ -144,7 +144,7 @@
 @z
 
 @x libcares.so
-            is a C library for asynchronous DNS requests.
+            is a C library for asynchronous DNS requests
 @y
             非同期の DNS 要求を行う C ライブラリです。
 @z

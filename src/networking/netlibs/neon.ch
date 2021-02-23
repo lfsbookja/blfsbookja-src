@@ -197,7 +197,7 @@
 
 @x libneon.so
             is used as a high-level interface to common HTTP and WebDAV
-            methods.
+            methods
 @y
             一般的な HTTP や WebDAV に対する高レベルインターフェースとして用いられます。
 @z

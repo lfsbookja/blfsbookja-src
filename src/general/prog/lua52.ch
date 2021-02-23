@@ -222,19 +222,19 @@
 @z
 
 @x lua52
-            is the standalone Lua version 5.2 interpreter.
+            is the standalone Lua version 5.2 interpreter
 @y
-            is the standalone Lua version 5.2 interpreter.
+            is the standalone Lua version 5.2 interpreter
 @z
 
 @x luac52
-            is the Lua version 5.2 compiler.
+            is the Lua version 5.2 compiler
 @y
-            is the Lua version 5.2 compiler.
+            is the Lua version 5.2 compiler
 @z
 
 @x liblua52
-            contains the <application>Lua</application> version 5.2 API functions.
+            contains the <application>Lua</application> version 5.2 API functions
 @y
-            contains the <application>Lua</application> version 5.2 API functions.
+            contains the <application>Lua</application> version 5.2 API functions
 @z

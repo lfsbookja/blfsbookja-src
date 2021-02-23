@@ -257,7 +257,7 @@
 @x wget
             retrieves files from the Web using the HTTP, HTTPS and FTP
             protocols.  It is designed to be non-interactive, for background or
-            unattended operations.
+            unattended operations
 @y
             HTTP, HTTPS, FTP の各プロトコルにより Web 経由でのファイル取得を行います。
             これはバックグラウンド実行などのように、非対話的に実行する用途が意図されています。

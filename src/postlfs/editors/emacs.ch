@@ -282,41 +282,41 @@
 
 @x ctags
             creates cross-reference tagfile database files
-            for source code.
+            for source code
 @y
             ソースコードに対して、クロスリファレンスのタグファイルデータベースファイルを生成します。
 @z
 
 @x ebrowse
             permits browsing of C++ class hierarchies from
-            within <command>emacs</command>.
+            within <command>emacs</command>
 @y
             <command>emacs</command> 内から C++ のクラス階層をブラウズする機能を提供します。
 @z
 
 @x emacs
-            is an editor.
+            is an editor
 @y
             エディター。
 @z
 
 @x emacsclient
             attaches an <command>emacs</command> session to an already
-            running <command>emacsserver</command> instance.
+            running <command>emacsserver</command> instance
 @y
             稼動している <command>emacsserver</command> インスタンスに対して、<command>emacs</command> セッションをアタッチします。
 @z
 
 @x etags
             is another program to generate source code
-            cross-reference tagfiles.
+            cross-reference tagfiles
 @y
             ソースコードのクロスリファレンスタグファイルを生成する、もう一つのプログラムです。
 @z
 
 @x grep-changelog
             prints entries in Change Logs matching
-            various criteria.
+            various criteria
 @y
             さまざまな条件にマッチした変更履歴 (Change Logs) の項目を出力します。
 @z

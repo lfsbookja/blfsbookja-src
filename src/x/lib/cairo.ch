@@ -119,7 +119,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="fontconfig"/>,
-      <xref linkend="glib2"/> (required for most GUIs) and
+      <xref linkend="glib2"/> (required for most GUIs), and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
@@ -297,41 +297,41 @@
 @z
 
 @x cairo-sphinx
-            is an internal utility for regression analysis.
+            is an internal utility for regression analysis
 @y
-            is an internal utility for regression analysis.
+            is an internal utility for regression analysis
 @z
 
 @x cairo-trace
             generates a log of all calls made by an application to
-            <application>Cairo</application>.
+            <application>Cairo</application>
 @y
             generates a log of all calls made by an application to
-            <application>Cairo</application>.
+            <application>Cairo</application>
 @z
 
 @x libcairo.so
             contains the 2D graphics functions required for rendering to the
-            various output targets.
+            various output targets
 @y
             contains the 2D graphics functions required for rendering to the
-            various output targets.
+            various output targets
 @z
 
 @x libcairo-gobject.so
             contains functions that integrate
             <application>Cairo</application> with 
-            <application>Glib</application>'s GObject type system.
+            <application>Glib</application>'s GObject type system
 @y
             contains functions that integrate
             <application>Cairo</application> with 
-            <application>Glib</application>'s GObject type system.
+            <application>Glib</application>'s GObject type system
 @z
 
 @x libcairo-script-interpreter.so
             contains the script interpreter functions for executing and
-            manipulating <application>Cairo</application> execution traces.
+            manipulating <application>Cairo</application> execution traces
 @y
             contains the script interpreter functions for executing and
-            manipulating <application>Cairo</application> execution traces.
+            manipulating <application>Cairo</application> execution traces
 @z

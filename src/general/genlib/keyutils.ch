@@ -211,7 +211,7 @@
 @z
 
 @x keyctl
-            controls the key management facility with a variety of subcommands.
+            controls the key management facility with a variety of subcommands
 @y
             多くのサブコマンドを通じて鍵管理機能を制御します。
 @z
@@ -220,28 +220,28 @@
             is invoked by <command>request-key</command> on behalf of the
             kernel when kernel services (such as NFS, CIFS and AFS) need to
             perform a hostname lookup and the kernel does not have the key
-            cached.  It is not ordinarily intended to be called directly.
+            cached.  It is not ordinarily intended to be called directly
 @y
             is invoked by <command>request-key</command> on behalf of the
             kernel when kernel services (such as NFS, CIFS and AFS) need to
             perform a hostname lookup and the kernel does not have the key
-            cached.  It is not ordinarily intended to be called directly.
+            cached.  It is not ordinarily intended to be called directly
 @z
 
 @x request-key
             is invoked by the kernel when the kernel is asked for a key that it
             doesn't have immediately available. The kernel creates a temporary
             key and then calls out to this program to instantiate it.  It is
-            not intended to be called directly.
+            not intended to be called directly
 @y
             is invoked by the kernel when the kernel is asked for a key that it
             doesn't have immediately available. The kernel creates a temporary
             key and then calls out to this program to instantiate it.  It is
-            not intended to be called directly.
+            not intended to be called directly
 @z
 
 @x libkeyutils.so
-            contains the keyutils library API instantiation.
+            contains the keyutils library API instantiation
 @y
             keyuils API ライブラリ。
 @z

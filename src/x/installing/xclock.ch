@@ -157,7 +157,7 @@
 @z
 
 @x xclock
-            is an analog/digital clock for X.
+            is an analog/digital clock for X
 @y
             X におけるアナログ/デジタルのクロックアプリケーション。
 @z

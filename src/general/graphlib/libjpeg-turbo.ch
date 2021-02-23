@@ -196,50 +196,50 @@
             compresses image files to produce a JPEG/JFIF file on the
             standard output. Currently supported input file formats are: PPM
             (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-            BMP, and Targa.
+            BMP, and Targa
 @y
             compresses image files to produce a JPEG/JFIF file on the
             standard output. Currently supported input file formats are: PPM
             (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-            BMP, and Targa.
+            BMP, and Targa
 @z
 
 @x djpeg
             decompresses image files from JPEG/JFIF format to either
             PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-            BMP, or Targa format.
+            BMP, or Targa format
 @y
             decompresses image files from JPEG/JFIF format to either
             PPM (PBMPLUS color format), PGM (PBMPLUS gray-scale format),
-            BMP, or Targa format.
+            BMP, or Targa format
 @z
 
 @x jpegtran
-            is used for lossless transformation of JPEG files.
+            is used for lossless transformation of JPEG files
 @y
-            is used for lossless transformation of JPEG files.
+            is used for lossless transformation of JPEG files
 @z
 
 @x rdjpgcom
-            displays text comments from within a JPEG file.
+            displays text comments from within a JPEG file
 @y
-            displays text comments from within a JPEG file.
+            displays text comments from within a JPEG file
 @z
 
 @x tjbench
-            is used to benchmark the performance of libjpeg-turbo.
+            is used to benchmark the performance of libjpeg-turbo
 @y
-            is used to benchmark the performance of libjpeg-turbo.
+            is used to benchmark the performance of libjpeg-turbo
 @z
 
 @x wrjpgcom
-            inserts text comments into a JPEG file.
+            inserts text comments into a JPEG file
 @y
-            inserts text comments into a JPEG file.
+            inserts text comments into a JPEG file
 @z
 
 @x libjpeg.so
-            contains functions used for reading and writing JPEG images.
+            contains functions used for reading and writing JPEG images
 @y
             JPEG イメージの読み書きを行う各種関数を提供します。
 @z

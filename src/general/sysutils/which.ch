@@ -161,7 +161,7 @@
 
 @x which
             shows the full path of (shell) commands installed in your
-            <envar>PATH</envar>.
+            <envar>PATH</envar>
 @y
             <envar>PATH</envar> ディレクトリ内にインストールされている (シェル) コマンドのフルパスを表示します。
 @z

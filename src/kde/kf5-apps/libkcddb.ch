@@ -165,7 +165,7 @@
 
 @x libkcddb.so
             contains functions used to retrieve audio CD meta data
-            from the internet.
+            from the internet
 @y
             インターネットからオーディオ CD のメタデータを取得するための関数を提供します。
 @z

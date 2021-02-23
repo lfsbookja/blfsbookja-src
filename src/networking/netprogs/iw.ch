@@ -235,7 +235,7 @@
 @z
 
 @x iw
-            shows / manipulates wireless devices and their configuration.
+            shows / manipulates wireless devices and their configuration
 @y
-            shows / manipulates wireless devices and their configuration.
+            shows / manipulates wireless devices and their configuration
 @z

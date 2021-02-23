@@ -155,28 +155,28 @@
 @z
 
 @x zip
-            compresses files into a <filename>ZIP</filename> archive.
+            compresses files into a <filename>ZIP</filename> archive
 @y
             <filename>ZIP</filename> アーカイブとしてファイルを圧縮します。
 @z
 
 @x zipcloak
             is a utility to encrypt and decrypt a <filename>ZIP</filename>
-            archive.
+            archive
 @y
             <filename>ZIP</filename> アーカイブの暗号化と復号化を行います。
 @z
 
 @x zipnote
             reads or writes comments stored in a <filename>ZIP</filename>
-            file.
+            file
 @y
             <filename>ZIP</filename> ファイル内に含まれるコメントの読み込み、書き込みを行います。
 @z
 
 @x zipsplit
             is a utility to split <filename>ZIP</filename> files into
-            smaller files.
+            smaller files
 @y
             <filename>ZIP</filename> ファイルを容量の小さなファイルに分割します。
 @z

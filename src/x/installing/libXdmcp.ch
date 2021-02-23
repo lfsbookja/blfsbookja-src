@@ -174,7 +174,7 @@
 @z
 
 @x libXdmcp.so
-            is the X Display Manager Control Protocol library.
+            is the X Display Manager Control Protocol library
 @y
             X ディスプレイマネージャーコントロールライブラリ。
 @z

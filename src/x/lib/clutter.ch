@@ -221,7 +221,7 @@
 @z
 
 @x libclutter-glx-1.0.so
-            contains the <application>Clutter</application> API functions.
+            contains the <application>Clutter</application> API functions
 @y
             <application>Clutter</application> の API 関数を提供します。
 @z

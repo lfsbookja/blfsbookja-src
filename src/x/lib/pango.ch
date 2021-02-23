@@ -280,18 +280,18 @@
 
 @x pango-view
             renders a given text file through <application>Pango</application>
-            for viewing purposes.
+            for viewing purposes
 @y
             renders a given text file through <application>Pango</application>
-            for viewing purposes.
+            for viewing purposes
 @z
 
 @x libpango-1.0.so
             contains low level layout rendering routines, a high level driver for
             laying out entire blocks of text, and routines to assist in editing
-            internationalized text.
+            internationalized text
 @y
             contains low level layout rendering routines, a high level driver for
             laying out entire blocks of text, and routines to assist in editing
-            internationalized text.
+            internationalized text
 @z

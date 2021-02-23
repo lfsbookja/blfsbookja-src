@@ -440,14 +440,14 @@
 @x
         <seg>fop</seg>
         <seg>fop.jar and numerous support library classes located in
-        <filename class='directory'>/opt/fop/{build,lib}</filename>; JAI
+        <filename class="directory">/opt/fop/{build,lib}</filename>; JAI
         components include libmlib_jai.so, jai_codec.jar, jai_core.jar, and
         mlibwrapper_jai.jar</seg>
         <seg>/opt/fop-&fop-version;</seg>
 @y
         <seg>fop</seg>
         <seg>fop.jar and numerous support library classes located in
-        <filename class='directory'>/opt/fop/{build,lib}</filename>; JAI
+        <filename class="directory">/opt/fop/{build,lib}</filename>; JAI
         components include libmlib_jai.so, jai_codec.jar, jai_core.jar,
         mlibwrapper_jai.jar</seg>
         <seg>/opt/fop-&fop-version;</seg>
@@ -462,16 +462,16 @@
 @x fop
             is a wrapper script to the <command>java</command> command
             which sets up the <application>fop</application>
-            environment and passes the required parameters.
+            environment and passes the required parameters
 @y
             is a wrapper script to the <command>java</command> command
             which sets up the <application>fop</application>
-            environment and passes the required parameters.
+            environment and passes the required parameters
 @z
 
 @x fop.jar
             contains all the <application>fop</application>
-          <application>Java</application> classes.
+          <application>Java</application> classes
 @y
           <application>fop</application> のすべての <application>Java</application> クラスを提供します。
 @z

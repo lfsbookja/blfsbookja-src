@@ -210,25 +210,21 @@
 @z
 
 @x goa-daemon
-          <para>
-            is the <application>GNOME Online Accounts</application> Daemon.
-          </para>
+            is the <application>GNOME Online Accounts</application> Daemon
 @y
-          <para>
             <application>GNOME Online Accounts</application> デーモン。
-          </para>
 @z
 
 @x libgoa-1.0.so
             contains the <application>GNOME Online Accounts</application>
-            API functions.
+            API functions
 @y
             <application>GNOME Online Accounts</application> の API 関数を提供します。
 @z
 
 @x libgoa-backend-1.0.so
             contains functions used by <application>GNOME Online Accounts</application>
-            backends.
+            backends
 @y
             <application>GNOME Online Accounts</application> バックエンドにより利用される関数を提供します。
 @z

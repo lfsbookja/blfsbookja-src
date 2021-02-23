@@ -266,8 +266,8 @@
 
 @x xsane
             is a graphical user-interface to control an image acquisition
-            device such as a flatbed scanner.
+            device such as a flatbed scanner
 @y
             is a graphical user-interface to control an image acquisition
-            device such as a flatbed scanner.
+            device such as a flatbed scanner
 @z

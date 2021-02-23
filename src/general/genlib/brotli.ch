@@ -11,7 +11,7 @@
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
@@ -49,49 +49,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&brotli-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&brotli-download-http;"/>
+          &Download; (HTTP): <ulink url="&brotli-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&brotli-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&brotli-download-ftp;"/>
+          &Download; (FTP): <ulink url="&brotli-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &brotli-md5sum;
 @y
-          Download MD5 sum: &brotli-md5sum;
+          &Download; MD5 sum: &brotli-md5sum;
 @z
 
 @x
           Download size: &brotli-size;
 @y
-          Download size: &brotli-size;
+          &DownloadSize;: &brotli-size;
 @z
 
 @x
           Estimated disk space required: &brotli-buildsize;
 @y
-          Estimated disk space required: &brotli-buildsize;
+          &Estimateddiskspacerequired;: &brotli-buildsize;
 @z
 
 @x
           Estimated build time: &brotli-time;
 @y
-          Estimated build time: &brotli-time;
+          &Estimatedbuildtime;: &brotli-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Brotli Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Brotli Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Brotli&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -129,7 +129,7 @@
 @x
     <title>Installation of Brotli</title>
 @y
-    <title>Installation of Brotli</title>
+    <title>&InstallationOf1;Brotli&InstallationOf2;</title>
 @z
 
 @x
@@ -142,14 +142,13 @@
       Install <application>brotli</application> by running the following
       commands:
 @y
-      Install <application>brotli</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>brotli</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make test</command>
 @y
-      To test the results, issue: <command>make test</command>
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
@@ -181,7 +180,7 @@
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -199,7 +198,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -207,9 +206,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -241,31 +240,31 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x brotli
             can compress or decompress files, or test the integrity of
-            compressed files.
+            compressed files
 @y
             can compress or decompress files, or test the integrity of
-            compressed files.
+            compressed files
 @z
 
 @x libbrotlicommon{-static.a,.so}
-            is the Brotli common dictionary library.
+            is the Brotli common dictionary library
 @y
-            is the Brotli common dictionary library.
+            is the Brotli common dictionary library
 @z
 
 @x libbrotlidec{-static.a,.so}
-            is the Brotli decoder library.
+            is the Brotli decoder library
 @y
-            is the Brotli decoder library.
+            is the Brotli decoder library
 @z
 
 @x libbrotlienc{-static.a,.so}
-            is the Brotli common encoder library.
+            is the Brotli common encoder library
 @y
-            is the Brotli common encoder library.
+            is the Brotli common encoder library
 @z

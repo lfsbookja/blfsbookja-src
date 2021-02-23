@@ -255,8 +255,8 @@
 
 @x nss-config
             is used to determine the NSS library settings of the installed NSS
-            libraries.
+            libraries
 @y
             is used to determine the NSS library settings of the installed NSS
-            libraries.
+            libraries
 @z

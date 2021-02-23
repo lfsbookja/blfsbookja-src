@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY cmake-buildsize     "375 MB (add 733 MB for tests)">
-  <!ENTITY cmake-time          "2.2 SBU (add 3.2 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-time          "2.1 SBU (add 3.4 SBU for tests, both using parallelism=4)">
 @y
   <!ENTITY cmake-buildsize     "375 MB（テスト実行時は 733 MB）">
-  <!ENTITY cmake-time          "2.2 SBU（テスト実行時は 3.2 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-time          "2.1 SBU（テスト実行時は 3.4 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -120,6 +120,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gcc"/> (for gfortran),
       <xref linkend="git"/> (for use during tests),
       <xref linkend="mercurial"/> (for use during tests),
       <xref linkend="qt5"/> (for the Qt-based GUI),
@@ -130,11 +131,12 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gcc"/> (for gfortran),
       <xref linkend="git"/> (for use during tests),
       <xref linkend="mercurial"/> (for use during tests),
       <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
       <xref linkend="subversion"/> (テスト時),
-      <ulink url="http://rhash.sourceforge.net/">rhash</ulink>, and
+      <ulink url="http://rhash.sourceforge.net/">rhash</ulink>,
       <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (ドキュメント構築時)
     </para>
 @z
@@ -276,32 +278,32 @@
 
 @x ccmake
             is a curses based interactive frontend to
-            <command>cmake</command>.
+            <command>cmake</command>
 @y
             <command>cmake</command> に対しての curses ベースの対話フロントエンドです。
 @z
 
 @x cmake
-            is the makefile generator.
+            is the makefile generator
 @y
             Makefile 生成ツールです。
 @z
 
 @x cmake-gui
             (optional) is the <application>Qt</application>-based frontend to
-            <command>cmake</command>.
+            <command>cmake</command>
 @y
             (任意ビルド) <command>cmake</command> の <application>Qt</application>-ベースのフロントエンドです。
 @z
 
 @x cpack
-            is the <application>CMake</application> packaging program.
+            is the <application>CMake</application> packaging program
 @y
             <application>CMake</application> のパッケージングプログラムです。
 @z
 
 @x ctest
-            is a testing utility for cmake-generated build trees.
+            is a testing utility for cmake-generated build trees
 @y
             cmake により生成されたディレクトリツリーをテストするユーティリティーです。
 @z

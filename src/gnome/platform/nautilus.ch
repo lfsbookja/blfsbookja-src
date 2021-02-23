@@ -249,13 +249,13 @@
 @z
 
 @x nautilus
-            is the <application>GNOME</application> file manager.
+            is the <application>GNOME</application> file manager
 @y
             <application>GNOME</application> ファイルマネージャー。
 @z
 
 @x libnautilus-extension.so
-            supplies the functions needed by the file manager extensions.
+            supplies the functions needed by the file manager extensions
 @y
             ファイルマネージャー拡張に必要となる関数を提供します。
 @z

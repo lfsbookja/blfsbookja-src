@@ -636,47 +636,47 @@
 @z
 
 @x dbus-cleanup-sockets
-            is used to clean up leftover sockets in a directory.
+            is used to clean up leftover sockets in a directory
 @y
-            is used to clean up leftover sockets in a directory.
+            is used to clean up leftover sockets in a directory
 @z
 
 @x dbus-daemon
-            is the <application>D-Bus</application> message bus daemon.
+            is the <application>D-Bus</application> message bus daemon
 @y
-            is the <application>D-Bus</application> message bus daemon.
+            is the <application>D-Bus</application> message bus daemon
 @z
 
 @x dbus-launch
             is used to start <command>dbus-daemon</command> from a shell
             script. It  would  normally be called from a user's login
-            scripts.
+            scripts
 @y
             is used to start <command>dbus-daemon</command> from a shell
             script. It  would  normally be called from a user's login
-            scripts.
+            scripts
 @z
 
 @x dbus-monitor
             is used to monitor messages going through a
-            <application>D-Bus</application> message bus.
+            <application>D-Bus</application> message bus
 @y
             is used to monitor messages going through a
-            <application>D-Bus</application> message bus.
+            <application>D-Bus</application> message bus
 @z
 
 @x dbus-send
             is used to send a message to a <application>D-Bus</application>
-            message bus.
+            message bus
 @y
             is used to send a message to a <application>D-Bus</application>
-            message bus.
+            message bus
 @z
 
 @x dbus-uuidgen
-            is used to generate a universally unique ID.
+            is used to generate a universally unique ID
 @y
-            is used to generate a universally unique ID.
+            is used to generate a universally unique ID
 @z
 
 @x libdbus-1.so
@@ -685,12 +685,12 @@
             <application>D-Bus</application> is first a library that provides
             one-to-one communication between any two applications;
             <command>dbus-daemon</command> is an application that uses this
-            library to implement a message bus daemon.
+            library to implement a message bus daemon
 @y
             contains the API functions used by the
             <application>D-Bus</application> message daemon.
             <application>D-Bus</application> is first a library that provides
             one-to-one communication between any two applications;
             <command>dbus-daemon</command> is an application that uses this
-            library to implement a message bus daemon.
+            library to implement a message bus daemon
 @z

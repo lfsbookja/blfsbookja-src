@@ -102,10 +102,8 @@
 
 @x
     <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/wv'/></para>
 @y
     <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url='&blfs-wiki;/wv'/></para>
 @z
 
 @x
@@ -157,13 +155,13 @@
 @x
         <seg>wvSummary and several other wv* programs which are deprecated in
         favour of abiword: see
-        <ulink url="http://wvware.sourceforge.net/"></ulink></seg>
+        <ulink url="http://wvware.sourceforge.net/"/></seg>
         <seg>libwv-1.2.so</seg>
         <seg>/usr/share/wv</seg>
 @y
         <seg>wvSummary, wv で始まるプログラム
-        (これらは abiword を利用するのが望ましい。
-        <ulink url="http://wvware.sourceforge.net/"></ulink> を参照のこと。)</seg>
+        これらは abiword を利用するのが望ましい。
+        <ulink url="http://wvware.sourceforge.net/"/> を参照のこと。</seg>
         <seg>libwv-1.2.so</seg>
         <seg>/usr/share/wv/</seg>
 @z
@@ -175,13 +173,13 @@
 @z
 
 @x wvSummary
-            displays the summary information from an MS Word document.
+            displays the summary information from an MS Word document
 @y
             MS Word 文書ファイルからの情報を要約して出力します。
 @z
 
 @x libwv-1.2.so
-            provides functions to access MS Word documents.
+            provides functions to access MS Word documents
 @y
             MS Word 文書ファイルにアクセスするための関数を提供します。
 @z

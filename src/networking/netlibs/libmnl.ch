@@ -23,7 +23,7 @@
 @x
     <title>Introduction to libmnl</title>
 @y
-    <title>Introduction to libmnl</title>
+    <title>&IntroductionTo1;libmnl&IntroductionTo2;</title>
 @z
 
 @x
@@ -45,101 +45,100 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&libmnl-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&libmnl-download-http;"/>
+          &Download; (HTTP): <ulink url="&libmnl-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&libmnl-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&libmnl-download-ftp;"/>
+          &Download; (FTP): <ulink url="&libmnl-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &libmnl-md5sum;
 @y
-          Download MD5 sum: &libmnl-md5sum;
+          &Download; MD5 sum: &libmnl-md5sum;
 @z
 
 @x
           Download size: &libmnl-size;
 @y
-          Download size: &libmnl-size;
+          &DownloadSize;: &libmnl-size;
 @z
 
 @x
           Estimated disk space required: &libmnl-buildsize;
 @y
-          Estimated disk space required: &libmnl-buildsize;
+          &Estimateddiskspacerequired;: &libmnl-buildsize;
 @z
 
 @x
           Estimated build time: &libmnl-time;
 @y
-          Estimated build time: &libmnl-time;
+          &Estimatedbuildtime;: &libmnl-time;
 @z
 
 @x
     <para condition="html" role="usernotes">User Notes:
 @y
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Installation of libmnl</title>
 @y
-    <title>Installation of libmnl</title>
+    <title>&InstallationOf1;libmnl&InstallationOf2;</title>
 @z
 
 @x
       Install <application>libmnl</application> by running the following
       commands:
 @y
-      Install <application>libmnl</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>libmnl</application> をビルドします。
 @z
 
 @x
       This package does not come with a test suite.
 @y
-      This package does not come with a test suite.
+      &notTestSuite;
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
       <command>mv -v /usr/lib/libmnl.so.* ...</command>: Move shared
       libraries into /lib so they are available before /usr is mounted.
 @y
-      <command>mv -v /usr/lib/libmnl.so.* ...</command>: Move shared
-      libraries into /lib so they are available before /usr is mounted.
+      <command>mv -v /usr/lib/libmnl.so.* ...</command>:
+      シェアライブラリを　/lib に移動することで、/usr がマウントされる前であっても利用可能とします。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
       <segtitle>Installed Library</segtitle>
 @y
-      <segtitle>Installed Library</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
 @z
 
 @x
@@ -155,13 +154,13 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libmnl.so
             provides functions for parsing, validating, constructing of both
-            the Netlink header and TLVs.
+            the Netlink header and TLVs
 @y
             provides functions for parsing, validating, constructing of both
-            the Netlink header and TLVs.
+            the Netlink header and TLVs
 @z

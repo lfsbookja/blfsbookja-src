@@ -155,15 +155,15 @@
 @x traceroute
             does basically what it says: it traces the route your packets
             take from the host you are working on to another host on a network,
-            showing all the intermediate hops (gateways) along the way.
+            showing all the intermediate hops (gateways) along the way
 @y
             does basically what it says: it traces the route your packets
             take from the host you are working on to another host on a network,
-            showing all the intermediate hops (gateways) along the way.
+            showing all the intermediate hops (gateways) along the way
 @z
 
 @x traceroute6
-            is equivalent to <command>traceroute -6</command>.
+            is equivalent to <command>traceroute -6</command>
 @y
-            is equivalent to <command>traceroute -6</command>.
+            is equivalent to <command>traceroute -6</command>
 @z

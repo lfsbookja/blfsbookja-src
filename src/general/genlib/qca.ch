@@ -225,22 +225,22 @@
 
 @x mozcerts
             is a command line tool for converting certdata.txt into
-            outfile.pem files.
+            outfile.pem files
 @y
             is a command line tool for converting certdata.txt into
-            outfile.pem files.
+            outfile.pem files
 @z
 
 @x qcatool-qt5
             is a command line tool for performing various cryptographic
-            operations with Qca.
+            operations with Qca
 @y
             is a command line tool for performing various cryptographic
-            operations with Qca.
+            operations with Qca
 @z
 
 @x libqca.so
-            is the Qt Cryptography Architecture (Qca) library.
+            is the Qt Cryptography Architecture (Qca) library
 @y
             Qt 暗号アーキテクチャー (Qt Cryptography Architecture; Qca) ライブラリ。
 @z

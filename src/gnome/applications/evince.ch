@@ -251,20 +251,20 @@
 @z
 
 @x evince
-            is a multiple format document viewer.
+            is a multiple format document viewer
 @y
             複数フォーマットに対応したドキュメントビューアー。
 @z
 
 @x evince-previewer
-            is an applicaton that implements the printing previewer.
+            is an applicaton that implements the printing previewer
 @y
             印刷プレビューを実装したアプリケーション。
 @z
 
 @x evince-thumbnailer
             is a simple program used to create thumbnail images of
-            supported documents.
+            supported documents
 @y
             対応フォーマットのドキュメントに対するサムネイルイメージを生成するための簡易なプログラム。
 @z

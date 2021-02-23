@@ -17,7 +17,7 @@
 @x
     <title>Introduction to libgxps</title>
 @y
-    <title>Introduction to libgxps</title>
+    <title>&IntroductionTo1;libgxps&IntroductionTo2;</title>
 @z
 
 @x
@@ -31,49 +31,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&libgxps-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&libgxps-download-http;"/>
+          &Download; (HTTP): <ulink url="&libgxps-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&libgxps-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&libgxps-download-ftp;"/>
+          &Download; (FTP): <ulink url="&libgxps-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &libgxps-md5sum;
 @y
-          Download MD5 sum: &libgxps-md5sum;
+          &Download; MD5 sum: &libgxps-md5sum;
 @z
 
 @x
           Download size: &libgxps-size;
 @y
-          Download size: &libgxps-size;
+          &DownloadSize;: &libgxps-size;
 @z
 
 @x
           Estimated disk space required: &libgxps-buildsize;
 @y
-          Estimated disk space required: &libgxps-buildsize;
+          &Estimateddiskspacerequired;: &libgxps-buildsize;
 @z
 
 @x
           Estimated build time: &libgxps-time;
 @y
-          Estimated build time: &libgxps-time;
+          &Estimatedbuildtime;: &libgxps-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Libgxps Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Libgxps Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Libgxps&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -87,13 +87,13 @@
       <xref linkend="libxslt"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
       <xref linkend="lcms2"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libjpeg"/>,
-      <xref linkend="libtiff"/>, and
+      <xref linkend="libtiff"/>,
       <xref linkend="libxslt"/>
     </para>
 @z
@@ -105,9 +105,9 @@
       <xref linkend="gtk-doc"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="git"/> and
+      <xref linkend="git"/>,
       <xref linkend="gtk-doc"/>
     </para>
 @z
@@ -115,39 +115,38 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/libgxps"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/libgxps"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/libgxps"/>
 @z
 
 @x
     <title>Installation of Libgxps</title>
 @y
-    <title>Installation of Libgxps</title>
+    <title>&InstallationOf1;Libgxps&InstallationOf2;</title>
 @z
 
 @x
       Install <application>Libgxps</application> by running the following
       commands:
 @y
-      Install <application>Libgxps</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Libgxps</application> をビルドします。
 @z
 
 @x
       This package does not come with a test suite.
 @y
-      This package does not come with a test suite.
+      &notTestSuite;
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -155,9 +154,9 @@
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -172,7 +171,7 @@
         </seg>
 @y
         <seg>
-          xpstojpeg, xpstopdf, xpstopng, xpstops, and xpstosvg
+          xpstojpeg, xpstopdf, xpstopng, xpstops, xpstosvg
         </seg>
         <seg>
           libgxps.so
@@ -185,41 +184,41 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x xpstojpeg
-            converts XPS documents to a JPEG image.
+            converts XPS documents to a JPEG image
 @y
-            converts XPS documents to a JPEG image.
+            converts XPS documents to a JPEG image
 @z
 
 @x xpstopdf
-            converts XPS documents to PDF format.
+            converts XPS documents to PDF format
 @y
-            converts XPS documents to PDF format.
+            converts XPS documents to PDF format
 @z
 
 @x xpstopng
-            converts XPS documents to a PNG image.
+            converts XPS documents to a PNG image
 @y
-            converts XPS documents to a PNG image.
+            converts XPS documents to a PNG image
 @z
 
 @x xpstops
-            converts XPS documents to PostScript.
+            converts XPS documents to PostScript
 @y
-            converts XPS documents to PostScript.
+            converts XPS documents to PostScript
 @z
 
 @x xpstosvg
-            converts XPS documents to SVG images.
+            converts XPS documents to SVG images
 @y
-            converts XPS documents to SVG images.
+            converts XPS documents to SVG images
 @z
 
 @x libgxps.so
-            contains API functions for manipulating XPS documents.
+            contains API functions for manipulating XPS documents
 @y
-            contains API functions for manipulating XPS documents.
+            contains API functions for manipulating XPS documents
 @z

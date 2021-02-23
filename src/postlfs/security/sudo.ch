@@ -352,21 +352,21 @@
 
 @x sudo
             executes a command as another user as permitted by
-            the <filename>/etc/sudoers</filename> configuration file.
+            the <filename>/etc/sudoers</filename> configuration file
 @y
             設定ファイル <filename>/etc/sudoers</filename> によって許可された他ユーザーとなって、コマンドを実行します。
 @z
 
 @x sudoedit
             is a symlink to <command>sudo</command> that implies the
-            <option>-e</option> option to invoke an editor as another user.
+            <option>-e</option> option to invoke an editor as another user
 @y
             <command>sudo</command> コマンドに対して <option>-e</option> オプションをつけたシンボリックリンクであり、他ユーザーとなってエディターを起動します。
 @z
 
 @x visudo
             allows for safer editing of the <filename>sudoers</filename>
-            file.
+            file
 @y
             <filename>sudoers</filename> ファイルを安全な形で編集します。
 @z

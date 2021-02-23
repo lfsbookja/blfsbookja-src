@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "191 MB (with typical dependencies; add 20 MB for checks)">
-  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.5 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "203 MB (with typical dependencies; add 19 MB for checks)">
+  <!ENTITY imagemagick-time          "0.8 SBU (with typical dependencies; add 0.5 SBU for checks, both using  parallelism=4)">
 @y
-  <!ENTITY imagemagick-buildsize     "191 MB (with typical dependencies; add 20 MB for checks)">
-  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.5 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "203 MB (with typical dependencies; add 19 MB for checks)">
+  <!ENTITY imagemagick-time          "0.8 SBU (with typical dependencies; add 0.5 SBU for checks, both using  parallelism=4)">
 @z
 
 @x
@@ -88,7 +88,7 @@
         the existing BLFS instructions to install it. Chances are that it will
         work just fine, but this has not been tested by the BLFS team. If the
         package version shown above is not available from the locations shown
-        above, or from the <filename class='directory'>legacy/</filename>
+        above, or from the <filename class="directory">legacy/</filename>
         directory at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you
         can download it from the BLFS package server at Oregon State University: 
         <ulink url="ftp://ftp.osuosl.org/pub/blfs/conglomeration/ImageMagick/"/>.
@@ -99,7 +99,7 @@
         the existing BLFS instructions to install it. Chances are that it will
         work just fine, but this has not been tested by the BLFS team. If the
         package version shown above is not available from the locations shown
-        above, or from the <filename class='directory'>legacy/</filename>
+        above, or from the <filename class="directory">legacy/</filename>
         directory at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you
         can download it from the BLFS package server at Oregon State University: 
         <ulink url="ftp://ftp.osuosl.org/pub/blfs/conglomeration/ImageMagick/"/>.
@@ -225,7 +225,9 @@
       <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
       <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
-      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink>,
+      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
+      <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
+      (both needed if converting macOS heic images),
       <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
@@ -256,7 +258,9 @@
       <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
       <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
       <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
-      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink>,
+      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
+      <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
+      (both needed if converting macOS heic images),
       <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
@@ -555,49 +559,49 @@
 @z
 
 @x animate
-          animates a sequence of images.
+          animates a sequence of images
 @y
-          animates a sequence of images.
+          animates a sequence of images
 @z
 
 @x compare
-          compares an image to a reconstructed image.
+          compares an image to a reconstructed image
 @y
-          compares an image to a reconstructed image.
+          compares an image to a reconstructed image
 @z
 
 @x composite
-          composites various images into the given base image.
+          composites various images into the given base image
 @y
-          composites various images into the given base image.
+          composites various images into the given base image
 @z
 
 @x conjure
-          processes a MSL script to create an image.
+          processes a MSL script to create an image
 @y
-          processes a MSL script to create an image.
+          processes a MSL script to create an image
 @z
 
 @x convert
-          converts image(s) from one format to another.
+          converts image(s) from one format to another
 @y
-          converts image(s) from one format to another.
+          converts image(s) from one format to another
 @z
 
 @x display
-          displays an image.
+          displays an image
 @y
           イメージを表示します。
 @z
 
 @x identify
-          describes the format and characteristics of an image file.
+          describes the format and characteristics of an image file
 @y
-          describes the format and characteristics of an image file.
+          describes the format and characteristics of an image file
 @z
 
 @x import
-          captures an X window.
+          captures an X window
 @y
           X ウィンドウをキャプチャーします。
 @z
@@ -605,73 +609,73 @@
 @x magick
           convert between image formats as well as resize an image,
           blur, crop, despeckle, dither, draw on, flip, join, re-sample
-          and much more.
+          and much more
 @y
           convert between image formats as well as resize an image,
           blur, crop, despeckle, dither, draw on, flip, join, re-sample
-          and much more.
+          and much more
 @z
 
 @x Magick{++,Core,Wand}-config
           show information about the installed versions of the
-          <application>ImageMagick</application> libraries.
+          <application>ImageMagick</application> libraries
 @y
           show information about the installed versions of the
-          <application>ImageMagick</application> libraries.
+          <application>ImageMagick</application> libraries
 @z
 
 @x mogrify
-          transforms an image.
+          transforms an image
 @y
           イメージを変形します。
 @z
 
 @x montage
-          composites various images into a new image.
+          composites various images into a new image
 @y
-          composites various images into a new image.
+          composites various images into a new image
 @z
 
 @x stream
           streams one or more pixel components of an image or
-          portion of the image to your choice of storage formats.
+          portion of the image to your choice of storage formats
 @y
           streams one or more pixel components of an image or
-          portion of the image to your choice of storage formats.
+          portion of the image to your choice of storage formats
 @z
 
 @x Image::Magick
           allows the reading, manipulation and writing of a large number of
           image file formats using the <application>ImageMagick</application>
           library. Run <command>make</command> in the
-          <filename class='directory'>PerlMagick/demo</filename> directory of
+          <filename class="directory">PerlMagick/demo</filename> directory of
           the package source tree after the package is installed to see a nice
-          demo of the module's capabilities.
+          demo of the module's capabilities
 @y
           allows the reading, manipulation and writing of a large number of
           image file formats using the <application>ImageMagick</application>
           library. Run <command>make</command> in the
-          <filename class='directory'>PerlMagick/demo</filename> directory of
+          <filename class="directory">PerlMagick/demo</filename> directory of
           the package source tree after the package is installed to see a nice
-          demo of the module's capabilities.
+          demo of the module's capabilities
 @z
 
 @x libMagickCore-7.Q16HDRI.so
-          provides the C API for ImageMagick.
+          provides the C API for ImageMagick
 @y
-          provides the C API for ImageMagick.
+          provides the C API for ImageMagick
 @z
 
 @x libMagickWand-7.Q16HDRI.so
           is the recommended C API for ImageMagick. Unlike the MagickCore API it
-          uses  only a few opaque types.
+          uses  only a few opaque types
 @y
           is the recommended C API for ImageMagick. Unlike the MagickCore API it
-          uses  only a few opaque types.
+          uses  only a few opaque types
 @z
 
 @x libMagick++-7.Q16HDRI.so
-          provides the C++ API for ImageMagick.
+          provides the C++ API for ImageMagick
 @y
-          provides the C++ API for ImageMagick.
+          provides the C++ API for ImageMagick
 @z

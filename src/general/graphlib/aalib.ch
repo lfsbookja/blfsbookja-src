@@ -161,48 +161,48 @@
 
 @x aafire
             is a demo of <application>AAlib</application>, rendering
-            an animated fire in ASCII Art.
+            an animated fire in ASCII Art
 @y
             is a demo of <application>AAlib</application>, rendering
-            an animated fire in ASCII Art.
+            an animated fire in ASCII Art
 @z
 
 @x
             provides information for your current settings related to
-            <application>AAlib</application>.
+            <application>AAlib</application>
 @y
             provides information for your current settings related to
-            <application>AAlib</application>.
+            <application>AAlib</application>
 @z
 
 @x aalib-config
-            provides configuration info for <application>AAlib</application>.
+            provides configuration info for <application>AAlib</application>
 @y
-            provides configuration info for <application>AAlib</application>.
+            provides configuration info for <application>AAlib</application>
 @z
 
 @x aasavefont
-            saves a font to a file.
+            saves a font to a file
 @y
-            saves a font to a file.
+            saves a font to a file
 @z
 
 @x aatest
             shows the abilities of <application>AAlib</application>
-            in a little test.
+            in a little test
 @y
             shows the abilities of <application>AAlib</application>
-            in a little test.
+            in a little test
 @z
 
 @x libaa.{so,a}
             is a collection of routines to render any graphical input in
             portable format to ASCII Art. It can be used through many programs
             and has a very well documented API, so you can easily put it into
-            your own programs.
+            your own programs
 @y
             is a collection of routines to render any graphical input in
             portable format to ASCII Art. It can be used through many programs
             and has a very well documented API, so you can easily put it into
-            your own programs.
+            your own programs
 @z

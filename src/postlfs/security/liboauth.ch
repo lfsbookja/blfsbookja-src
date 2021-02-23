@@ -244,10 +244,10 @@ Liboauth provides functions
             provides functions to escape and encode stings according to
             OAuth specifications and offers high-level functionality built
             on top to sign requests or verify signatures using either NSS or
-            OpenSSL for calculating the hash/signatures.
+            OpenSSL for calculating the hash/signatures
 @y
             provides functions to escape and encode stings according to
             OAuth specifications and offers high-level functionality built
             on top to sign requests or verify signatures using either NSS or
-            OpenSSL for calculating the hash/signatures.
+            OpenSSL for calculating the hash/signatures
 @z

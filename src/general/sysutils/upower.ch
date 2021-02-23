@@ -257,13 +257,13 @@ reason so single out systemd here. -->
 @z
 
 @x upower
-            is the <application>UPower</application> command line tool.
+            is the <application>UPower</application> command line tool
 @y
             <application>UPower</application> のコマンドラインツール。
 @z
 
 @x libupower-glib.so
-            contains the <application>UPower</application> API functions.
+            contains the <application>UPower</application> API functions
 @y
             <application>UPower</application> API 関数を提供します。
 @z

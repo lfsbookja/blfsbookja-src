@@ -342,20 +342,20 @@
 
 @x js78
             provides a command line interface to the
-            <application>JavaScript</application> engine.
+            <application>JavaScript</application> engine
 @y
             provides a command line interface to the
-            <application>JavaScript</application> engine.
+            <application>JavaScript</application> engine
 @z
 
 @x js78-config
-            is used to find the JS compiler and linker flags.
+            is used to find the JS compiler and linker flags
 @y
-            is used to find the JS compiler and linker flags.
+            is used to find the JS compiler and linker flags
 @z
 
 @x libmozjs-78.so
-            contains the Mozilla JavaScript API functions.
+            contains the Mozilla JavaScript API functions
 @y
-            contains the Mozilla JavaScript API functions.
+            contains the Mozilla JavaScript API functions
 @z

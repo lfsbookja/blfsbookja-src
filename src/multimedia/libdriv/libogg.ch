@@ -149,7 +149,7 @@
 
 @x libogg.so
             provides the functions required for programs to
-            read or write Ogg formatted bit streams.
+            read or write Ogg formatted bit streams
 @y
             Ogg が定める書式のビットストリームを取り扱うための関数を提供します。
 @z

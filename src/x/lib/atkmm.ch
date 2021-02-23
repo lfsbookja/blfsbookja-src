@@ -166,7 +166,7 @@
 @z
 
 @x libatkmm-1.6.so
-            contains the <application>ATK</application> API classes.
+            contains the <application>ATK</application> API classes
 @y
             <application>ATK</application> API クラスを提供します。
 @z

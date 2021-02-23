@@ -187,7 +187,7 @@
 
 @x libx264.so
             provides the functions used to encode video streams into the
-            H.264/MPEG-4 AVC format.
+            H.264/MPEG-4 AVC format
 @y
             ビデオストリームを H.264/MPEG-4 AVC フォーマットにエンコードするための関数を提供します。
 @z

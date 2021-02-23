@@ -190,13 +190,13 @@
 
 @x libglade-convert
             is used to convert old Glade interface files to
-            Glade-2.0 standards.
+            Glade-2.0 standards
 @y
           これは旧版の Glade インターフェースファイルを Glade-2.0 の標準に合ったものに変換します。
 @z
 
 @x libglade-2.0.so
-            contains the functions necessary to load Glade interface files.
+            contains the functions necessary to load Glade interface files
 @y
             Glade インターフェースファイルを読み込むために必要な関数を提供します。
 @z

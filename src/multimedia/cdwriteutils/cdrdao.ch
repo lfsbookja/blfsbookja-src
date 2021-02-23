@@ -118,7 +118,7 @@
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーにあって以下を実行します。
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -159,7 +159,7 @@
 @y
         <seg>cdrdao, cue2toc, toc2cddb, toc2cue and optionally
         toc2mp3</seg>
-        <seg>None</seg>
+        <seg>&None;</seg>
         <seg>/usr/share/cdrdao, /usr/share/doc/cdrdao-&cdrdao-version;</seg>
 @z
 
@@ -171,36 +171,36 @@
 
 @x cdrdao
             records audio or data CD-Rs in disk-at-once (DAO) mode
-            based on a textual description of the CD contents.
+            based on a textual description of the CD contents
 @y
             records audio or data CD-Rs in disk-at-once (DAO) mode
-            based on a textual description of the CD contents.
+            based on a textual description of the CD contents
 @z
 
 @x cue2toc
-            converts CUE to TOC format for audio CDs.
+            converts CUE to TOC format for audio CDs
 @y
-            converts CUE to TOC format for audio CDs.
+            converts CUE to TOC format for audio CDs
 @z
 
 @x toc2cddb
             converts a <application>Cdrdao</application>
-            TOC file into a cddb file and prints it to stdout.
+            TOC file into a cddb file and prints it to stdout
 @y
             converts a <application>Cdrdao</application>
-            TOC file into a cddb file and prints it to stdout.
+            TOC file into a cddb file and prints it to stdout
 @z
 
 @x toc2cue
-            converts TOC to CUE format for audio CDs.
+            converts TOC to CUE format for audio CDs
 @y
-            converts TOC to CUE format for audio CDs.
+            converts TOC to CUE format for audio CDs
 @z
 
 @x toc2mp3
             converts an audio CD disk image (<filename>.toc</filename> file)
-            to MP3 files.
+            to MP3 files
 @y
             converts an audio CD disk image (<filename>.toc</filename> file)
-            to MP3 files.
+            to MP3 files
 @z

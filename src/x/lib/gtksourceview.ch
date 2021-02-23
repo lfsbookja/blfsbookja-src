@@ -210,7 +210,7 @@
 @z
 
 @x libgtksourceview-3.0.so
-            contains function extensions for the GtkTextView widget.
+            contains function extensions for the GtkTextView widget
 @y
             GtkTextView ウィジェットに対する拡張機能を提供します。
 @z

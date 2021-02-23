@@ -186,7 +186,7 @@
 @z
 
 @x gnome-power-statistics
-            is used to visualize the power consumption of laptop hardware.
+            is used to visualize the power consumption of laptop hardware
 @y
             ラップトップハードウェアの電源消費を視覚化するために用いられます。
 @z

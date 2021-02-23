@@ -230,7 +230,7 @@
 @z
 
 @x libgtksourceview-4.so
-            contains function extensions for the GtkTextView widget.
+            contains function extensions for the GtkTextView widget
 @y
-            contains function extensions for the GtkTextView widget.
+            contains function extensions for the GtkTextView widget
 @z

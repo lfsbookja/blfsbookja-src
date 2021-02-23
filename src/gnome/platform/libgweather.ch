@@ -208,7 +208,7 @@
 
 @x libgweather.{so,a}
             contains functions that allow the retrieval of weather
-            information.
+            information
 @y
             気象情報を抽出するための関数を提供します。
 @z

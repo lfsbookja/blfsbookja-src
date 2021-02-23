@@ -183,16 +183,16 @@
 
 @x xfconf-query
             is a commandline utility to view or change any setting stored in
-            <application>Xfconf</application>.
+            <application>Xfconf</application>
 @y
             is a commandline utility to view or change any setting stored in
-            <application>Xfconf</application>.
+            <application>Xfconf</application>
 @z
 
 @x libxfconf.so
             contains basic functions for <application>Xfce</application>
-            configuration.
+            configuration
 @y
             contains basic functions for <application>Xfce</application>
-            configuration.
+            configuration
 @z

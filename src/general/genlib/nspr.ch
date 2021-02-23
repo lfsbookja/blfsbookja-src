@@ -218,7 +218,7 @@
 
 @x nspr-config
             provides compiler and linker options to other packages that use
-            <application>NSPR</application>.
+            <application>NSPR</application>
 @y
             <application>NSPR</application> を利用する他のパッケージに対して、コンパイラーとリンカーのオプションを提供します。
 @z
@@ -227,13 +227,12 @@
             contains functions that provide platform independence for non-GUI
             operating system facilities such as threads, thread synchronization,
             normal file and network I/O, interval timing and calendar time,
-            basic memory management and shared library linking.
+            basic memory management and shared library linking
 @y
-            
             contains functions that provide platform independence for non-GUI
             operating system facilities such as threads, thread synchronization,
             normal file and network I/O, interval timing and calendar time,
-            basic memory management and shared library linking.
+            basic memory management and shared library linking
 @z
 
 @x libplc4.so
@@ -244,7 +243,7 @@
 @z
 
 @x libplds4.so
-            contains functions that provide data structures.
+            contains functions that provide data structures
 @y
             データ構造を提供する関数を含みます。
 @z

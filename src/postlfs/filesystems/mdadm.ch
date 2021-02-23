@@ -207,20 +207,20 @@
 @z
 
 @x mdadm
-            manages MD devices aka Linux Software RAID.
+            manages MD devices aka Linux Software RAID
 @y
             Linux ソフトウェア RAID として知られる MD デバイスを管理します。
 @z
 
 @x mdmon
-            monitors MD external metadata arrays.
+            monitors MD external metadata arrays
 @y
             MD デバイスの外部メタデータ情報を監視します。
 @z
 
 @x mdassemble
             is a tiny program that can be used to assemble MD devices
-            inside an initial ramdisk (initrd) or initramfs.
+            inside an initial ramdisk (initrd) or initramfs
 @y
             initrd (initial ramdisk) や initramfs 内の MD デバイスをアセンブルするために利用されるプログラムです。
 @z

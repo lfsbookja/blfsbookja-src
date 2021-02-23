@@ -378,94 +378,94 @@
 @z
 
 @x db_archive
-            prints the pathnames of log files that are no longer in use.
+            prints the pathnames of log files that are no longer in use
 @y
             利用されなくなったログファイルのパス名を表示します。
 @z
 
 @x db_checkpoint
-            is a daemon process used to monitor and checkpoint database logs.
+            is a daemon process used to monitor and checkpoint database logs
 @y
             データベースログのチェックポイントを監視するためのデーモンプロセスです。
 @z
 
 @x db_deadlock
-            is used to abort lock requests when deadlocks are detected.
+            is used to abort lock requests when deadlocks are detected
 @y
             デッドロックが検出された際に、ロックを解除するために利用します。
 @z
 
 @x db_dump
             converts database files to a flat file format readable by
-            <command>db_load</command>.
+            <command>db_load</command>
 @y
             データベースファイルを <command>db_load</command> によって読み取り可能なフラットファイルの形式に変換します。
 @z
 
 @x
             creates "hot backup" or "hot failover" snapshots of Berkeley DB
-            databases.
+            databases
 @y
             creates "hot backup" or "hot failover" snapshots of Berkeley DB
-            databases.
+            databases
 @z
 
 @x db_load
             is used to create database files from flat files created with
-            <command>db_dump</command>.
+            <command>db_dump</command>
 @y
             <command>db_dump</command> コマンドにより生成されたフラットファイルに基づいて、データベースを生成します。
 @z
 
 @x db_log_verify
-            verifies the log files of a database.
+            verifies the log files of a database
 @y
-            verifies the log files of a database.
+            verifies the log files of a database
 @z
 
 @x db_printlog
-            converts database log files to human readable text.
+            converts database log files to human readable text
 @y
             データベースログファイルを、人が読める形式のテキストに変換します。
 @z
 
 @x db_recover
-            is used to restore a database to a consistent state after a failure.
+            is used to restore a database to a consistent state after a failure
 @y
             データベース障害の後に、安定した状態に復元するために利用します。
 @z
 
 @x db_replicate
             is a daemon process that provides replication/HA services on a
-            transactional environment.
+            transactional environment
 @y
             is a daemon process that provides replication/HA services on a
-            transactional environment.
+            transactional environment
 @z
 
 @x db_stat
-            displays database environment statistics.
+            displays database environment statistics
 @y
             データベース環境の統計情報を表示します。
 @z
 
 @x db_tuner
             analyzes the data in a btree database, and suggests a page size that
-            is likely to deliver optimal operation.
+            is likely to deliver optimal operation
 @y
             analyzes the data in a btree database, and suggests a page size that
-            is likely to deliver optimal operation.
+            is likely to deliver optimal operation
 @z
 
 @x db_upgrade
             is used to upgrade database files to a newer version of
-            <application>Berkeley DB</application>.
+            <application>Berkeley DB</application>
 @y
             データベースファイルを新たなバージョンのものにアップグレードします。
 @z
 
 @x db_verify
-            is used to run consistency checks on database files.
+            is used to run consistency checks on database files
 @y
             データベースファイルが安定しているかどうかのチェックを実行します。
 @z

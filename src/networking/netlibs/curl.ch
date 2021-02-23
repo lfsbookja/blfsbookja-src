@@ -290,21 +290,21 @@
 @z
 
 @x curl
-           is a command line tool for transferring files with URL syntax.
+           is a command line tool for transferring files with URL syntax
 @y
-           is a command line tool for transferring files with URL syntax.
+           is a command line tool for transferring files with URL syntax
 @z
 
 @x curl-config
             prints information about the last compile, like libraries
-            linked to and prefix setting.
+            linked to and prefix setting
 @y
             リンクされているライブラリやプレフィックスなど、コンパイル時の情報を表示します。
 @z
 
 @x libcurl.{so,a}
             provides the API functions required by
-            <command>curl</command> and other programs.
+            <command>curl</command> and other programs
 @y
             <command>curl</command> や他のプログラムが必要としている API 関数を提供します。
 @z

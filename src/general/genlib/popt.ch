@@ -161,7 +161,7 @@
 @z
 
 @x libpopt
-          is used to parse command-line options.
+          is used to parse command-line options
 @y
           コマンドラインオプションを処理するために利用します。
 @z

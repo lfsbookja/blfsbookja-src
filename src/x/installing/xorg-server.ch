@@ -331,56 +331,56 @@
 @z
 
 @x cvt-x7
-            calculates VESA CVT mode lines.
+            calculates VESA CVT mode lines
 @y
             VESA CVT モードの行数を算出します。
 @z
 
 @x dmx*
-            are various tools used for manipulating the dmx server.
+            are various tools used for manipulating the dmx server
 @y
             dmx サーバーを操作するためのさまざまなツール。
 @z
 
 @x gtf-x7
-            calculates VESA GTF mode lines.
+            calculates VESA GTF mode lines
 @y
             VESA GTF モードの行数を算出します。
 @z
 
 @x vdltodmx
             is a tool used to convert VDL config files to DMX config
-            files.
+            files
 @y
             VDL 設定ファイルを DMX 設定ファイルに変換するツール。
 @z
 
 @x X
-            is a symbolic link to Xorg.
+            is a symbolic link to Xorg
 @y
             Xorg へのシンボリックリンク。
 @z
 
 @x Xnest-x7
-            is a nested X server.
+            is a nested X server
 @y
             Nested X サーバー。
 @z
 
 @x Xorg-x7
-            is the X11R7 X Server.
+            is the X11R7 X Server
 @y
             X11R7 X サーバー。
 @z
 
 @x Xvfb-x7
-            is the virtual framebuffer X server for X Version 11.
+            is the virtual framebuffer X server for X Version 11
 @y
             X バージョン 11 における X サーバーの仮想フレームバッファー。
 @z
 
 @x xdmxconfig
-            is a graphical configuration utility for the dmx server.
+            is a graphical configuration utility for the dmx server
 @y
             dmx サーバーに対するグラフィカルな設定ユーティリティー。
 @z

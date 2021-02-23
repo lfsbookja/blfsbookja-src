@@ -224,39 +224,39 @@
 @z
 
 @x gconf-merge-tree
-            merges an XML filesystem hierarchy.
+            merges an XML filesystem hierarchy
 @y
-            merges an XML filesystem hierarchy.
+            merges an XML filesystem hierarchy
 @z
 
 @x gconftool-2
             is a command line tool used for manipulating the
-            <application>GConf</application> database.
+            <application>GConf</application> database
 @y
             is a command line tool used for manipulating the
-            <application>GConf</application> database.
+            <application>GConf</application> database
 @z
 
 @x gsettings-data-convert
             reads values out of the users <application>GConf</application>
-            database and stores them in GSettings.
+            database and stores them in GSettings
 @y
             reads values out of the users <application>GConf</application>
-            database and stores them in GSettings.
+            database and stores them in GSettings
 @z
 
 @x gsettings-schemas-convert
             converts between <application>GConf</application> and GSettings
-            schema file formats.
+            schema file formats
 @y
             converts between <application>GConf</application> and GSettings
-            schema file formats.
+            schema file formats
 @z
 
 @x libgconf-2.{so,a}
             provides the functions necessary to maintain the
-            configuration database.
+            configuration database
 @y
             provides the functions necessary to maintain the
-            configuration database.
+            configuration database
 @z

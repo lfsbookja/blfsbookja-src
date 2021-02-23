@@ -456,306 +456,306 @@
 
 @x clusterdb
             is a utility for reclustering tables in a
-            <application>PostgreSQL</application> database.
+            <application>PostgreSQL</application> database
 @y
             is a utility for reclustering tables in a
-            <application>PostgreSQL</application> database.
+            <application>PostgreSQL</application> database
 @z
 
 @x createdb
             creates a new <application>PostgreSQL</application>
-            database.
+            database
 @y
             creates a new <application>PostgreSQL</application>
-            database.
+            database
 @z
 
 @x createuser
             defines a new <application>PostgreSQL</application>
-            user account.
+            user account
 @y
             defines a new <application>PostgreSQL</application>
-            user account.
+            user account
 @z
 
 @x dropdb
-            removes a <application>PostgreSQL</application> database.
+            removes a <application>PostgreSQL</application> database
 @y
-            removes a <application>PostgreSQL</application> database.
+            removes a <application>PostgreSQL</application> database
 @z
 
 @x dropuser
-            removes a <application>PostgreSQL</application> user account.
+            removes a <application>PostgreSQL</application> user account
 @y
-            removes a <application>PostgreSQL</application> user account.
+            removes a <application>PostgreSQL</application> user account
 @z
 
 @x ecpg
-            is the embedded SQL preprocessor.
+            is the embedded SQL preprocessor
 @y
-            is the embedded SQL preprocessor.
+            is the embedded SQL preprocessor
 @z
 
 @x initdb
-            creates a new database cluster.
+            creates a new database cluster
 @y
-            creates a new database cluster.
+            creates a new database cluster
 @z
 
 @x oid2name
             resolves OIDs (Object IDs) and file nodes in a PostgreSQL data
-            directory.
+            directory
 @y
             resolves OIDs (Object IDs) and file nodes in a PostgreSQL data
-            directory.
+            directory
 @z
 
 @x pg_archivecleanup
-            cleans up PostgreSQL WAL (write-ahead log) archive files.
+            cleans up PostgreSQL WAL (write-ahead log) archive files
 @y
-            cleans up PostgreSQL WAL (write-ahead log) archive files.
+            cleans up PostgreSQL WAL (write-ahead log) archive files
 @z
 
 @x pg_basebackup
             takes base backups of a running
-            <application>PostgreSQL</application> cluster.
+            <application>PostgreSQL</application> cluster
 @y
             takes base backups of a running
-            <application>PostgreSQL</application> cluster.
+            <application>PostgreSQL</application> cluster
 @z
 
 @x pg_checksums
             enables, disables, or checks data checksums in a
-            <application>PostgreSQL</application> database cluster.
+            <application>PostgreSQL</application> database cluster
 @y
             enables, disables, or checks data checksums in a
-            <application>PostgreSQL</application> database cluster.
+            <application>PostgreSQL</application> database cluster
 @z
 
 @x pg_config
             retrieves <application>PostgreSQL</application> version
-            information.
+            information
 @y
             retrieves <application>PostgreSQL</application> version
-            information.
+            information
 @z
 
 @x pg_controldata
             returns information initialized during <command>initdb</command>,
-            such as the catalog version and server locale.
+            such as the catalog version and server locale
 @y
             returns information initialized during <command>initdb</command>,
-            such as the catalog version and server locale.
+            such as the catalog version and server locale
 @z
 
 @x pg_ctl
-            controls stopping and starting the database server.
+            controls stopping and starting the database server
 @y
-            controls stopping and starting the database server.
+            controls stopping and starting the database server
 @z
 
 @x pg_dump
             dumps database data and metadata into scripts which are used
-            to recreate the database.
+            to recreate the database
 @y
             dumps database data and metadata into scripts which are used
-            to recreate the database.
+            to recreate the database
 @z
 
 @x pg_dumpall
             recursively calls <command>pg_dump</command> for each
-            database in a cluster.
+            database in a cluster
 @y
             recursively calls <command>pg_dump</command> for each
-            database in a cluster.
+            database in a cluster
 @z
 
 @x pg_isready
-            checks the connection status of a PostgreSQL server.
+            checks the connection status of a PostgreSQL server
 @y
-            checks the connection status of a PostgreSQL server.
+            checks the connection status of a PostgreSQL server
 @z
 
 @x pg_receivewal
-            is used to stream write-ahead logs from a PostgreSQL server.
+            is used to stream write-ahead logs from a PostgreSQL server
 @y
-            is used to stream write-ahead logs from a PostgreSQL server.
+            is used to stream write-ahead logs from a PostgreSQL server
 @z
 
 @x pg_recvlogical
-            controls PostgreSQL logical decoding streams.
+            controls PostgreSQL logical decoding streams
 @y
-            controls PostgreSQL logical decoding streams.
+            controls PostgreSQL logical decoding streams
 @z
 
 @x pg_resetwal
             resets the write-ahead log and other control information
-            of a PostgreSQL database cluster.
+            of a PostgreSQL database cluster
 @y
             resets the write-ahead log and other control information
-            of a PostgreSQL database cluster.
+            of a PostgreSQL database cluster
 @z
 
 @x pg_restore
             creates databases from dump files created by
-            <command>pg_dump</command>.
+            <command>pg_dump</command>
 @y
             creates databases from dump files created by
-            <command>pg_dump</command>.
+            <command>pg_dump</command>
 @z
 
 @x pg_rewind
             synchronizes a PostgreSQL data directory with another data
-            directory that was forked from the first one.
+            directory that was forked from the first one
 @y
             synchronizes a PostgreSQL data directory with another data
-            directory that was forked from the first one.
+            directory that was forked from the first one
 @z
 
 @x pg_standby
-            supports the creation of a PostgreSQL warm standby server.
+            supports the creation of a PostgreSQL warm standby server
 @y
-            supports the creation of a PostgreSQL warm standby server.
+            supports the creation of a PostgreSQL warm standby server
 @z
 
 @x pg_test_fsync
-            determines the fastest wal_sync method for PostgreSQL.
+            determines the fastest wal_sync method for PostgreSQL
 @y
-            determines the fastest wal_sync method for PostgreSQL.
+            determines the fastest wal_sync method for PostgreSQL
 @z
 
 @x pg_test_timing
-            measures timing overhead.
+            measures timing overhead
 @y
-            measures timing overhead.
+            measures timing overhead
 @z
 
 @x pg_upgrade
-            upgrades a PostgreSQL server instance.
+            upgrades a PostgreSQL server instance
 @y
-            upgrades a PostgreSQL server instance.
+            upgrades a PostgreSQL server instance
 @z
 
 @x pg_waldump
             displays a human-readable rendering of the write-ahead log of a
-            PostgreSQL database cluster.
+            PostgreSQL database cluster
 @y
             displays a human-readable rendering of the write-ahead log of a
-            PostgreSQL database cluster.
+            PostgreSQL database cluster
 @z
 
 @x pgbench
-            runs a benchmark test on PostgreSQL.
+            runs a benchmark test on PostgreSQL
 @y
-            runs a benchmark test on PostgreSQL.
+            runs a benchmark test on PostgreSQL
 @z
 
 @x pltcl_delmod
             is a support script used to delete a module from a
             PL/<application>Tcl</application> table. The command
-            requires the <ulink
-            url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
-            package to be installed also.
+            requires the
+            <ulink url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
+            package to be installed
 @y
             is a support script used to delete a module from a
             PL/<application>Tcl</application> table. The command
-            requires the <ulink
-            url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
-            package to be installed also.
+            requires the
+            <ulink url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
+            package to be installed
 @z
 
 @x pltcl_listmod
             is a support script used to list the modules in a
             PL/<application>Tcl</application> table. The command
-            requires the <ulink
-            url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
-            package to be installed also.
+            requires the
+            <ulink url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            package to be installed
 @y
             is a support script used to list the modules in a
             PL/<application>Tcl</application> table. The command
-            requires the <ulink
-            url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
-            package to be installed also.
+            requires the
+            <ulink url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            package to be installed
 @z
 
 @x pltcl_loadmod
             is a support script used to load a module into a
             PL/<application>Tcl</application> table. The command
-            requires the <ulink
-            url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
-            package to be installed also.
+            requires the
+            <ulink url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            package to be installed too
 @y
             is a support script used to load a module into a
             PL/<application>Tcl</application> table. The command
-            requires the <ulink
-            url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
-            package to be installed also.
+            requires the
+            <ulink url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            package to be installed too
 @z
 
 @x postgres
-            is the PostgreSQL database server.
+            is the PostgreSQL database server
 @y
-            is the PostgreSQL database server.
+            is the PostgreSQL database server
 @z
 
 @x postmaster
             (deprecated, a symlink to <command>postgres</command>) is a
-            multi-user database daemon.
+            multi-user database daemon
 @y
             (deprecated, a symlink to <command>postgres</command>) is a
-            multi-user database daemon.
+            multi-user database daemon
 @z
 
 @x psql
-            is a console based database shell.
+            is a console based database shell
 @y
-            is a console based database shell.
+            is a console based database shell
 @z
 
 @x reindexdb
-            is a utility for rebuilding indexes in a database.
+            is a utility for rebuilding indexes in a database
 @y
-            is a utility for rebuilding indexes in a database.
+            is a utility for rebuilding indexes in a database
 @z
 
 @x vacuumdb
-            compacts databases and generates statistics for the query analyzer.
+            compacts databases and generates statistics for the query analyzer
 @y
-            compacts databases and generates statistics for the query analyzer.
+            compacts databases and generates statistics for the query analyzer
 @z
 
 @x vacuumlo
-            removes orphaned large objects from a PostgreSQL database.
+            removes orphaned large objects from a PostgreSQL database
 @y
-            removes orphaned large objects from a PostgreSQL database.
+            removes orphaned large objects from a PostgreSQL database
 @z
 
 @x libecpg.{so,a}
-            contains functions to support embedded SQL in C programs.
+            contains functions to support embedded SQL in C programs
 @y
-            contains functions to support embedded SQL in C programs.
+            contains functions to support embedded SQL in C programs
 @z
 
 @x libecpg_compat.{so,a}
-            is the ecpg compatibility library.
+            is the ecpg compatibility library
 @y
-            is the ecpg compatibility library.
+            is the ecpg compatibility library
 @z
 
 @x libgport.a
-            is the port-specific subsystem of the Postgres backend.
+            is the port-specific subsystem of the Postgres backend
 @y
-            is the port-specific subsystem of the Postgres backend.
+            is the port-specific subsystem of the Postgres backend
 @z
 
 @x libpgtypes.{so,a}
-            contains functions for dealing with Postgres data types.
+            contains functions for dealing with Postgres data types
 @y
-            contains functions for dealing with Postgres data types.
+            contains functions for dealing with Postgres data types
 @z
 
 @x libpq.{so,a}
-            is the C programmer's API to Postgres.
+            is the C programmer's API to Postgres
 @y
-            is the C programmer's API to Postgres.
+            is the C programmer's API to Postgres
 @z

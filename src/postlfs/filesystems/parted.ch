@@ -209,19 +209,19 @@
 @z
 
 @x parted
-            is a partition manipulation program.
+            is a partition manipulation program
 @y
             パーティションを操作するプログラムです。
 @z
 
 @x partprobe
-            informs the OS of partition table changes.
+            informs the OS of partition table changes
 @y
             OS に対してパーティションテーブルが変更されたことを通知します。
 @z
 
 @x libparted.so
-            contains the <application>Parted</application> API functions.
+            contains the <application>Parted</application> API functions
 @y
             <application>Parted</application> API 関数を提供します。
 @z

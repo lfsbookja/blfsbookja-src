@@ -434,58 +434,58 @@
 
 @x scp
             is a file copy program that acts like <command>rcp</command> except
-            it uses an encrypted protocol.
+            it uses an encrypted protocol
 @y
             <command>rcp</command> に似たファイルコピープログラム。
             ただし暗号化プロトコルが用いられます。
 @z
 
 @x sftp
-            is an FTP-like program that works over the SSH1 and SSH2 protocols.
+            is an FTP-like program that works over the SSH1 and SSH2 protocols
 @y
             SSH1 および SSH2 プロトコルを用いて動作する FTP ライクなプログラム。
 @z
 
 @x slogin
-            is a symlink to <command>ssh</command>.
+            is a symlink to <command>ssh</command>
 @y
             <command>ssh</command> へのシンボリックリンク。
 @z
 
 @x ssh
             is an <command>rlogin</command>/<command>rsh</command>-like client
-            program except it uses an encrypted protocol.
+            program except it uses an encrypted protocol
 @y
             <command>rlogin</command> や <command>rsh</command> に似たクライアントプログラム。
             ただし暗号化プロトコルが用いられます。
 @z
 
 @x sshd
-            is a daemon that listens for <command>ssh</command> login requests.
+            is a daemon that listens for <command>ssh</command> login requests
 @y
             <command>ssh</command> からのログイン要求を待ち受けるデーモンプログラム。
 @z
 
 @x ssh-add
-            is a tool which adds keys to the <command>ssh-agent</command>.
+            is a tool which adds keys to the <command>ssh-agent</command>
 @y
             <command>ssh-agent</command> に対して鍵を追加するツール。
 @z
 
 @x ssh-agent
-            is an authentication agent that can store private keys.
+            is an authentication agent that can store private keys
 @y
-            is an authentication agent that can store private keys.
+            is an authentication agent that can store private keys
 @z
 
 @x ssh-keygen
-            is a key generation tool.
+            is a key generation tool
 @y
             鍵生成ツール。
 @z
 
 @x ssh-keyscan
-            is a utility for gathering public host keys from a number of hosts.
+            is a utility for gathering public host keys from a number of hosts
 @y
-            is a utility for gathering public host keys from a number of hosts.
+            is a utility for gathering public host keys from a number of hosts
 @z

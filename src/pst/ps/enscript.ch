@@ -225,50 +225,50 @@
 
 @x diffpp
             converts <command>diff</command> output files to a format
-            suitable to be printed with <command>enscript</command>.
+            suitable to be printed with <command>enscript</command>
 @y
             converts <command>diff</command> output files to a format
-            suitable to be printed with <command>enscript</command>.
+            suitable to be printed with <command>enscript</command>
 @z
 
 @x enscript
             is a filter, used primarily by printing scripts, that
             converts ASCII text files to PostScript, HTML, RTF, ANSI and
-            overstrikes.
+            overstrikes
 @y
             is a filter, used primarily by printing scripts, that
             converts ASCII text files to PostScript, HTML, RTF, ANSI and
-            overstrikes.
+            overstrikes
 @z
 
 @x mkafmmap
-            creates a font map from a given file.
+            creates a font map from a given file
 @y
-            creates a font map from a given file.
+            creates a font map from a given file
 @z
 
 @x over
             is a script which calls <command>enscript</command> and
-            passes the correct parameters to create overstriked fonts.
+            passes the correct parameters to create overstriked fonts
 @y
             is a script which calls <command>enscript</command> and
-            passes the correct parameters to create overstriked fonts.
+            passes the correct parameters to create overstriked fonts
 @z
 
 @x sliceprint
-            slices documents with long lines.
+            slices documents with long lines
 @y
-            slices documents with long lines.
+            slices documents with long lines
 @z
 
 @x states
             is an <command>awk</command>-like text processing tool
             with some state machine extensions. It is designed for program
             source code highlighting and for similar tasks where state
-            information helps input processing.
+            information helps input processing
 @y
             is an <command>awk</command>-like text processing tool
             with some state machine extensions. It is designed for program
             source code highlighting and for similar tasks where state
-            information helps input processing.
+            information helps input processing
 @z

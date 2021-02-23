@@ -226,24 +226,24 @@
 
 @x libwayland-client.so
             contains API functions for writing <application>Wayland</application>
-            applications.
+            applications
 @y
             contains API functions for writing <application>Wayland</application>
-            applications.
+            applications
 @z
 
 @x libwayland-cursor.so
             contains API functions for managing cursors in <application>Wayland</application>
-            applications.
+            applications
 @y
             contains API functions for managing cursors in <application>Wayland</application>
-            applications.
+            applications
 @z
 
 @x libwayland-server.so
             contains API functions for writing <application>Wayland</application>
-            compositors.
+            compositors
 @y
             contains API functions for writing <application>Wayland</application>
-            compositors.
+            compositors
 @z

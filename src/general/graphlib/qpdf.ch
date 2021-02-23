@@ -190,22 +190,22 @@
 
 @x fix-qdf
             is used to repair PDF files in QDF form after
-            editing.
+            editing
 @y
             is used to repair PDF files in QDF form after
-            editing.
+            editing
 @z
 
 @x qpdf
             is used to convert one PDF file to another equivalent
-            PDF file.
+            PDF file
 @y
             is used to convert one PDF file to another equivalent
-            PDF file.
+            PDF file
 @z
 
 @x libqpdf.so
-            contains the <application>Qpdf</application> API functions.
+            contains the <application>Qpdf</application> API functions
 @y
             <application>Qpdf</application> API 関数を提供します。
 @z

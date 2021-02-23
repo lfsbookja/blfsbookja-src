@@ -470,45 +470,45 @@
 @z
 
 @x pluginviewer
-            is used to list loadable SASL plugins and their properties.
+            is used to list loadable SASL plugins and their properties
 @y
-            is used to list loadable SASL plugins and their properties.
+            is used to list loadable SASL plugins and their properties
 @z
 
 @x saslauthd
-            is the SASL authentication server.
+            is the SASL authentication server
 @y
             SASL の認証サーバー。
 @z
 
 @x sasldblistusers2
             is used to list the users in the SASL password database
-            <filename>sasldb2</filename>.
+            <filename>sasldb2</filename>
 @y
             is used to list the users in the SASL password database
-            <filename>sasldb2</filename>.
+            <filename>sasldb2</filename>
 @z
 
 @x saslpasswd2
             is used to set and delete a user's SASL password and
             mechanism specific secrets in the SASL password
-            database <filename>sasldb2</filename>.
+            database <filename>sasldb2</filename>
 @y
             is used to set and delete a user's SASL password and
             mechanism specific secrets in the SASL password
-            database <filename>sasldb2</filename>.
+            database <filename>sasldb2</filename>
 @z
 
 @x testsaslauthd
-            is a test utility for the SASL authentication server.
+            is a test utility for the SASL authentication server
 @y
-            is a test utility for the SASL authentication server.
+            is a test utility for the SASL authentication server
 @z
 
 @x libsasl2.so
             is a general purpose authentication library for server
-            and client applications.
+            and client applications
 @y
             is a general purpose authentication library for server
-            and client applications.
+            and client applications
 @z

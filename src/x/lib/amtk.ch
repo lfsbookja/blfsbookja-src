@@ -16,7 +16,7 @@
 @x
     <title>Introduction to Amtk</title>
 @y
-    <title>Introduction to Amtk</title>
+    <title>&IntroductionTo1;Amtk&IntroductionTo2;</title>
 @z
 
 @x
@@ -30,49 +30,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&amtk-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&amtk-download-http;"/>
+          &Download; (HTTP): <ulink url="&amtk-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&amtk-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&amtk-download-ftp;"/>
+          &Download; (FTP): <ulink url="&amtk-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &amtk-md5sum;
 @y
-          Download MD5 sum: &amtk-md5sum;
+          &Download; MD5 sum: &amtk-md5sum;
 @z
 
 @x
           Download size: &amtk-size;
 @y
-          Download size: &amtk-size;
+          &DownloadSize;: &amtk-size;
 @z
 
 @x
           Estimated disk space required: &amtk-buildsize;
 @y
-          Estimated disk space required: &amtk-buildsize;
+          &Estimateddiskspacerequired;: &amtk-buildsize;
 @z
 
 @x
           Estimated build time: &amtk-time;
 @y
-          Estimated build time: &amtk-time;
+          &Estimatedbuildtime;: &amtk-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Amtk Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Amtk Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Amtk&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -81,7 +81,7 @@
       <xref linkend="gtk3"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>
     </para>
@@ -94,9 +94,9 @@
       <xref linkend="valgrind"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> (for documentation) and
+      <xref linkend="gtk-doc"/> (ドキュメントのため),
       <xref linkend="valgrind"/>
     </para>
 @z
@@ -104,45 +104,44 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/amtk"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/amtk"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/amtk"/>
 @z
 
 @x
     <title>Installation of Amtk</title>
 @y
-    <title>Installation of Amtk</title>
+    <title>&InstallationOf1;Amtk&InstallationOf2;</title>
 @z
 
 @x
       Install <application>Amtk</application> by running the following
       commands:
 @y
-      Install <application>Amtk</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Amtk</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make check</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -150,9 +149,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -168,13 +167,13 @@
         </seg>
 @y
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           libamtk-5.so
         </seg>
         <seg>
-          /usr/include/amtk-5 and
+          /usr/include/amtk-5,
           /usr/share/gtk-doc/html/amtk-5.0
         </seg>
 @z
@@ -182,11 +181,11 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libamtk-5.so
-            provides a basic GTKUIManager replacement API based on GAction.
+            provides a basic GTKUIManager replacement API based on GAction
 @y
-            provides a basic GTKUIManager replacement API based on GAction.
+            provides a basic GTKUIManager replacement API based on GAction
 @z

@@ -16,13 +16,13 @@
 @x
   <!ENTITY uchardet-time          "less than 0.1 SBU">
 @y
-  <!ENTITY uchardet-time          "less than 0.1 SBU">
+  <!ENTITY uchardet-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Uchardet</title>
 @y
-    <title>Introduction to Uchardet</title>
+    <title>&IntroductionTo1;Uchardet&IntroductionTo2;</title>
 @z
 
 @x
@@ -38,43 +38,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&uchardet-download-http;"/>
 @y
+          &Download; (HTTP): <ulink url="&uchardet-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&uchardet-download-ftp;"/>
 @y
+          &Download; (FTP): <ulink url="&uchardet-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &uchardet-md5sum;
 @y
+          &Download; MD5 sum: &uchardet-md5sum;
 @z
 
 @x
           Download size: &uchardet-size;
 @y
+          &DownloadSize;: &uchardet-size;
 @z
 
 @x
           Estimated disk space required: &uchardet-buildsize;
 @y
+          &Estimateddiskspacerequired;: &uchardet-buildsize;
 @z
 
 @x
           Estimated build time: &uchardet-time;
 @y
-          Estimated build time: &uchardet-time;
+          &Estimatedbuildtime;: &uchardet-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Uchardet Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Uchardet Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Uchardet&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -83,7 +89,7 @@
       <xref linkend="cmake"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>
     </para>
@@ -92,53 +98,52 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/uchardet"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/uchardet"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/uchardet"/>
 @z
 
 @x
     <title>Installation of Uchardet</title>
 @y
-    <title>Installation of Uchardet</title>
+    <title>&InstallationOf1;Uchardet&InstallationOf2;</title>
 @z
 
 @x
       Install <application>Uchardet</application> by running the following
       commands:
 @y
-      Install <application>Uchardet</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Uchardet</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make test</command>.
 @y
-      To test the results, issue: <command>make test</command>.
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
       <parameter>-DBUILD_STATIC=OFF</parameter>: This switch disables building
       the static version of the library.
 @y
-      <parameter>-DBUILD_STATIC=OFF</parameter>: This switch disables building
-      the static version of the library.
+      <parameter>-DBUILD_STATIC=OFF</parameter>:
+      本スイッチはスタティックライブラリをビルドしないようにします。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -146,9 +151,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -176,17 +181,17 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x uchardet
-            detects what character set is used inside of a file.
+            detects what character set is used inside of a file
 @y
-            detects what character set is used inside of a file.
+            detects what character set is used inside of a file
 @z
 
 @x libuchardet.so
-            provides an API for detecting the encoding of text in a file.
+            provides an API for detecting the encoding of text in a file
 @y
-            provides an API for detecting the encoding of text in a file.
+            provides an API for detecting the encoding of text in a file
 @z

@@ -192,13 +192,13 @@
 
 @x libpcap-config
           provides configuration information for
-          <application>libpcap</application>.
+          <application>libpcap</application>
 @y
           <application>libpcap</application> の設定情報を提供します。
 @z
 
 @x libpcap.a
-          are libraries used for user-level packet capture.
+          are libraries used for user-level packet capture
 @y
           ユーザーレベルのパケットキャプチャー機能を提供するライブラリです。
 @z

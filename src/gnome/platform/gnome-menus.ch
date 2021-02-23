@@ -184,9 +184,9 @@
 @x libgnome-menu.so
             contains functions required to support
             <application>GNOME</application>'s implementation of the
-            Desktop Menu Specification.
+            Desktop Menu Specification
 @y
             contains functions required to support
             <application>GNOME</application>'s implementation of the
-            Desktop Menu Specification.
+            Desktop Menu Specification
 @z

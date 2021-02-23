@@ -199,10 +199,10 @@
             is a daemon that generates an unpredictable stream of random
             numbers harvested from the indirect effects of hardware events
             based on hidden processor states (caches, branch  predictors, memory
-            translation tables, etc).
+            translation tables, etc)
 @y
             is a daemon that generates an unpredictable stream of random
             numbers harvested from the indirect effects of hardware events
             based on hidden processor states (caches, branch  predictors, memory
-            translation tables, etc).
+            translation tables, etc)
 @z

@@ -218,7 +218,7 @@
 @z
 
 @x gnome-keyring-daemon
-            is a session daemon that keeps passwords for users.
+            is a session daemon that keeps passwords for users
 @y
             ユーザーパスワードを保持するセッションデーモンです。
 @z

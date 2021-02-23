@@ -216,19 +216,19 @@
 @x
     <title>Configuring vsftpd</title>
 @y
-    <title>Configuring vsftpd</title>
+    <title>&Configuring1;vsftpd&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -302,7 +302,7 @@
              <phrase revision="systemd">Systemd Unit</phrase></title>
 @y
       <title><phrase revision="sysv">&BootScript;</phrase>
-             <phrase revision="systemd">Systemd Unit</phrase></title>
+             <phrase revision="systemd">&SystemdUnit;</phrase></title>
 @z
 
 @x
@@ -326,7 +326,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -334,9 +334,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -352,11 +352,11 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x
-            is the FTP daemon.
+            is the FTP daemon
 @y
-            is the FTP daemon.
+            FTP デーモン。
 @z

@@ -415,7 +415,7 @@
 @z
 
 @x dhcpcd
-            is an implementation of the DHCP client specified in RFC2131.
+            is an implementation of the DHCP client specified in RFC2131
 @y
             RFC2131 にて定義されている DHCP クライアントの実装です。
 @z
@@ -423,9 +423,9 @@
 @x udev.so
             adds udev support for interface arrival and departure; this is
             because udev likes to rename the interface, which it can't do if
-            dhcpcd grabs it first.
+            dhcpcd grabs it first
 @y
             adds udev support for interface arrival and departure; this is
             because udev likes to rename the interface, which it can't do if
-            dhcpcd grabs it first.
+            dhcpcd grabs it first
 @z

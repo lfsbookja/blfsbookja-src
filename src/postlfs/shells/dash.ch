@@ -83,7 +83,7 @@
 @x
     <bridgehead renderas="sect3">Dash Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Dash の依存パッケージ</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Dash&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -109,7 +109,7 @@
 @x
     <title>Installation of Dash</title>
 @y
-    <title>Dash のインストール</title>
+    <title>&InstallationOf1;Dash&InstallationOf2;</title>
 @z
 
 @x
@@ -176,7 +176,7 @@
 @x
     <title>Configuring Dash</title>
 @y
-    <title>Dash の設定</title>
+    <title>&Configuring1;Dash&Configuring2;</title>
 @z
 
 @x
@@ -244,7 +244,7 @@
 @z
 
 @x dash
-            is a POSIX compliant shell.
+            is a POSIX compliant shell
 @y
             POSIX 準拠のシェル。
 @z

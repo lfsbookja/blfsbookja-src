@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "3.1 GB (726 MB installed, add 20 GB for tests)">
-  <!ENTITY llvm-time          "30 SBU (with parallelism=4, add 15 SBU for tests)">
+  <!ENTITY llvm-buildsize     "3.1 GB (727 MB installed, add 20 GB for tests)">
+  <!ENTITY llvm-time          "30 SBU (with parallelism=4, add 18 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "3.1 GB (インストールに 726 MB、テスト実施時はさらに 20 GB)">
-  <!ENTITY llvm-time          "30 SBU (parallelism=4、テスト実施時はさらに 15 SBU)">
+  <!ENTITY llvm-buildsize     "3.1 GB (インストールに 727 MB、テスト実施時はさらに 20 GB)">
+  <!ENTITY llvm-time          "30 SBU (parallelism=4、テスト実施時はさらに 18 SBU)">
 @z
 
 @x
@@ -440,201 +440,196 @@
 @z
 
 @x bugpoint
-            is the automatic test case reduction tool.
+            is the automatic test case reduction tool
 @y
-            is the automatic test case reduction tool.
+            is the automatic test case reduction tool
 @z
 
 @x clang
             is the <application>Clang</application> C, C++,
-            and Objective-C compiler.
+            and Objective-C compiler
 @y
             is the <application>Clang</application> C, C++,
-            and Objective-C compiler.
+            and Objective-C compiler
 @z
 
 @x llc
-            is the <application>LLVM</application> static compiler.
+            is the <application>LLVM</application> static compiler
 @y
-            is the <application>LLVM</application> static compiler.
+            is the <application>LLVM</application> static compiler
 @z
 
 @x lli
             is used to directly execute programs from
-            <application>LLVM</application> bitcode.
+            <application>LLVM</application> bitcode
 @y
             is used to directly execute programs from
-            <application>LLVM</application> bitcode.
+            <application>LLVM</application> bitcode
 @z
 
 @x llvm-ar
-            is the <application>LLVM</application> archiver.
+            is the <application>LLVM</application> archiver
 @y
-            is the <application>LLVM</application> archiver.
+            is the <application>LLVM</application> archiver
 @z
 
 @x llvm-as
-            is the <application>LLVM</application> assembler.
+            is the <application>LLVM</application> assembler
 @y
-            is the <application>LLVM</application> assembler.
+            is the <application>LLVM</application> assembler
 @z
 
 @x llvm-bcanalyzer
-            is the <application>LLVM</application> bitcode analyzer.
+            is the <application>LLVM</application> bitcode analyzer
 @y
-            is the <application>LLVM</application> bitcode analyzer.
+            is the <application>LLVM</application> bitcode analyzer
 @z
 
 @x llvm-config
-            Prints <application>LLVM</application> compilation options.
+            Prints <application>LLVM</application> compilation options
 @y
-            Prints <application>LLVM</application> compilation options.
+            Prints <application>LLVM</application> compilation options
 @z
 
 @x llvm-cov
-            is used to emit coverage information.
+            is used to emit coverage information
 @y
-            is used to emit coverage information.
+            is used to emit coverage information
 @z
 
 @x llvm-diff
             is the <application>LLVM</application> structural
-            '<command>diff</command>'.
+            '<command>diff</command>'
 @y
             is the <application>LLVM</application> structural
-            '<command>diff</command>'.
+            '<command>diff</command>'
 @z
 
 @x llvm-dis
-            is the <application>LLVM</application> disassembler.
+            is the <application>LLVM</application> disassembler
 @y
-            is the <application>LLVM</application> disassembler.
+            is the <application>LLVM</application> disassembler
 @z
 
 @x llvm-extract
             is used to extract a function from an
-            <application>LLVM</application> module.
+            <application>LLVM</application> module
 @y
             is used to extract a function from an
-            <application>LLVM</application> module.
+            <application>LLVM</application> module
 @z
 
 @x llvm-link
-            is the <application>LLVM</application> linker.
+            is the <application>LLVM</application> linker
 @y
-            is the <application>LLVM</application> linker.
+            is the <application>LLVM</application> linker
 @z
 
 @x llvm-nm
             is used to list <application>LLVM</application> bitcode
-            and object file's symbol table.
+            and object file's symbol table
 @y
             is used to list <application>LLVM</application> bitcode
-            and object file's symbol table.
+            and object file's symbol table
 @z
 
 @x llvm-objdump
-            is an <application>LLVM</application> object file dumper.
+            is an <application>LLVM</application> object file dumper
 @y
-            is an <application>LLVM</application> object file dumper.
+            is an <application>LLVM</application> object file dumper
 @z
 
 @x llvm-opt-report
             is a tool to generate an optimization report from YAML optimization
-            record files.
+            record files
 @y
             is a tool to generate an optimization report from YAML optimization
-            record files.
+            record files
 @z
 
 @x llvm-pdbutil
-            is a PDB (Program Database) dumper. PDB is a Microsoft format.
+            is a PDB (Program Database) dumper. PDB is a Microsoft format
 @y
-            is a PDB (Program Database) dumper. PDB is a Microsoft format.
+            is a PDB (Program Database) dumper. PDB is a Microsoft format
 @z
 
 @x llvm-profdata
-            is a small tool to manipulate and print profile data files.
+            is a small tool to manipulate and print profile data files
 @y
-            is a small tool to manipulate and print profile data files.
+            is a small tool to manipulate and print profile data files
 @z
 
 @x llvm-ranlib
             is used to generate an index for a <application>LLVM</application>
-            archive.
+            archive
 @y
             is used to generate an index for a <application>LLVM</application>
-            archive.
+            archive
 @z
 
 @x llvm-readobj
-            displays low-level format-specific information about object files.
+            displays low-level format-specific information about object files
 @y
-            displays low-level format-specific information about object files.
+            displays low-level format-specific information about object files
 @z
 
 @x llvm-rtdyld
-            is the <application>LLVM</application> MC-JIT tool.
+            is the <application>LLVM</application> MC-JIT tool
 @y
-            is the <application>LLVM</application> MC-JIT tool.
+            is the <application>LLVM</application> MC-JIT tool
 @z
 
 @x llvm-size
-            is the <application>LLVM</application> object size dumper.
+            is the <application>LLVM</application> object size dumper
 @y
-            is the <application>LLVM</application> object size dumper.
+            is the <application>LLVM</application> object size dumper
 @z
 
 @x llvm-split
-            is the <application>LLVM</application> module splitter.
+            is the <application>LLVM</application> module splitter
 @y
-            is the <application>LLVM</application> module splitter.
+            is the <application>LLVM</application> module splitter
 @z
 
 @x llvm-stress
             is used to generate random
-            <filename class="extension">.ll</filename> files.
+            <filename class="extension">.ll</filename> files
 @y
             is used to generate random
-            <filename class="extension">.ll</filename> files.
+            <filename class="extension">.ll</filename> files
 @z
 
 @x llvm-symbolizer
-            converts adresses into source code locations.
+            converts adresses into source code locations
 @y
-            converts adresses into source code locations.
+            converts adresses into source code locations
 @z
 
 @x llvm-tblgen
             is the <application>LLVM</application> Target Description
-            To C++ Code Generator.
+            To C++ Code Generator
 @y
             is the <application>LLVM</application> Target Description
-            To C++ Code Generator.
+            To C++ Code Generator
 @z
 
 @x llvm-xray
-            is an implementation of Google's XRay function call tracing system.
+            is an implementation of Google's XRay function call tracing system
 @y
-            is an implementation of Google's XRay function call tracing system.
+            is an implementation of Google's XRay function call tracing system
 @z
 
 @x obj2yaml
             takes an object file, and produces a YAML representation of the
-            file.
+            file
 @y
             takes an object file, and produces a YAML representation of the
-            file.
+            file
 @z
 
 @x opt
-            is the <application>LLVM</application> optimizer.
+            is the <application>LLVM</application> optimizer
 @y
-            is the <application>LLVM</application> optimizer.
+            is the <application>LLVM</application> optimizer
 @z
 
-@x libLLVM-&llvm-version;.so
-            contains the <application>LLVM</application> API functions.
-@y
-            contains the <application>LLVM</application> API functions.
-@z

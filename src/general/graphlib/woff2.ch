@@ -22,7 +22,7 @@
 @x
     <title>Introduction to WOFF2</title>
 @y
-    <title>Introduction to WOFF2</title>
+    <title>&IntroductionTo1;WOFF2&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,7 +40,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
@@ -70,19 +70,19 @@
 @x
           Estimated disk space required: &woff2-buildsize;
 @y
-          Estimated disk space required: &woff2-buildsize;
+          &Estimateddiskspacerequired;: &woff2-buildsize;
 @z
 
 @x
           Estimated build time: &woff2-time;
 @y
-          Estimated build time: &woff2-time;
+          &Estimatedbuildtime;: &woff2-time;
 @z
 
 @x
     <bridgehead renderas="sect3">WOFF2 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">WOFF2 Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;WOFF2&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -102,39 +102,38 @@
 @x
       User Notes: <ulink url="&blfs-wiki;/woff2"/>
 @y
-      User Notes: <ulink url="&blfs-wiki;/woff2"/>
+      &UserNotes;: <ulink url="&blfs-wiki;/woff2"/>
 @z
 
 @x
     <title>Installation of WOFF2</title>
 @y
-    <title>Installation of WOFF2</title>
+    <title>&InstallationOf1;WOFF2&InstallationOf2;</title>
 @z
 
 @x
       Install <application>WOFF2</application> by running the following
       commands:
 @y
-      Install <application>WOFF2</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>WOFF2</application> をビルドします。
 @z
 
 @x
       This package does not come with a test suite.
 @y
-      This package does not come with a test suite.
+      &notTestSuite;
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -142,9 +141,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -176,19 +175,19 @@
 @z
 
 @x libwoff2common.so
-            provides shared data used by the libwoff2dec and libwoff2enc libraries.
+            provides shared data used by the libwoff2dec and libwoff2enc libraries
 @y
-            provides shared data used by the libwoff2dec and libwoff2enc libraries.
+            provides shared data used by the libwoff2dec and libwoff2enc libraries
 @z
 
 @x libwoff2dec.so
-            is the WOFF2 decoder library.
+            is the WOFF2 decoder library
 @y
-            is the WOFF2 decoder library.
+            is the WOFF2 decoder library
 @z
 
 @x libwoff2enc.so
-            is the WOFF2 encoder library.
+            is the WOFF2 encoder library
 @y
-            is the WOFF2 encoder library.
+            is the WOFF2 encoder library
 @z

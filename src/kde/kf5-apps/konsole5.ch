@@ -167,16 +167,16 @@
 
 @x konsole
              is an X terminal emulation which provides a command-line
-             interface.
+             interface
 @y
              is an X terminal emulation which provides a command-line
-             interface.
+             interface
 @z
 
 @x konsoleprofile
             is a command-line tool to change the current tab's profile
-            options.
+            options
 @y
             is a command-line tool to change the current tab's profile
-            options.
+            options
 @z

@@ -219,100 +219,100 @@
 @z
 
 @x derb
-            disassembles a resource bundle.
+            disassembles a resource bundle
 @y
             リソースバンドル (resource bundle) をディスアセンブルします。
 @z
 
 @x genbrk
             compiles ICU break iteration rules source files into binary data
-            files.
+            files
 @y
             ICU の break iteration rules のソースファイルをバイナリデータファイルにコンパイルします。
 @z
 
 @x genccode
             generates C or platform specific assembly code from an ICU data
-            file.
+            file
 @y
             ICU データファイルから C 言語コード、あるいは特定のアセンブリ言語コードを生成します。
 @z
 
 @x gencfu
             reads in Unicode confusable character definitions and writes out the
-            binary data.
+            binary data
 @y
             Unicode にて混同を生じ易い文字 (confusable character) の定義を読み込んで、バイナリデータを出力します。
 @z
 
 @x gencmn
-            generates an ICU memory-mappable data file.
+            generates an ICU memory-mappable data file
 @y
             ICU のメモリマッピングデータファイルを生成します。
 @z
 
 @x gencnval
-            compiles the converter's aliases file.
+            compiles the converter's aliases file
 @y
             変換エイリアスファイル (converters aliases file) をコンパイルします。
 @z
 
 @x gendict
-            compiles word lists into ICU string trie dictionaries.
+            compiles word lists into ICU string trie dictionaries
 @y
             ワードリスト (word list) を ICU の compact trie 辞書 へコンパイルします。
 @z
 
 @x gennorm2
-            builds binary data files with Unicode normalization data.
+            builds binary data files with Unicode normalization data
 @y
             Unicode 標準データによりバイナリデータファイルを生成します。
 @z
 
 @x genrb
-            compiles a resource bundle.
+            compiles a resource bundle
 @y
             リソースバンドル (resource bundle) をコンパイルします。
 @z
 
 @x gensprep
-            compiles StringPrep data from filtered RFC 3454 files.
+            compiles StringPrep data from filtered RFC 3454 files
 @y
             フィルタリングされた RFC 3454 ファイルから StringPrep データを収集します。
 @z
 
 @x icu-config
-            outputs ICU build options.
+            outputs ICU build options
 @y
             ICU のビルドオプションを表示します。
 @z
 
 @x icuinfo
-            outputs configuration information about the current ICU.
+            outputs configuration information about the current ICU
 @y
             ICU に対しての設定情報を表示します。
 @z
 
 @x icupkg
-            extracts or modifies an ICU .dat archive.
+            extracts or modifies an ICU .dat archive
 @y
             ICU の .dat アーカイブを抽出または修正します。
 @z
 
 @x makeconv
-            compiles a converter table.
+            compiles a converter table
 @y
             コンバーターテーブル (converter table) をコンパイルします。
 @z
 
 @x pkgdata
-            packages data for use by ICU.
+            packages data for use by ICU
 @y
             ICU により用いられるパッケージデータ。
 @z
 
 @x uconv
-            converts data from one encoding to another.
+            converts data from one encoding to another
 @y
             1つのエンコーディングからなるデータを他のエンコーディングに変換します。
 @z
@@ -360,49 +360,37 @@
 % @z
 
 @x libicudata.so
-            is the data library.
+            is the data library
 @y
             データライブラリ。
 @z
 
 @x libicui18n.so
-            is the internationalization (i18n) library.
+            is the internationalization (i18n) library
 @y
             国際化 (i18n) ライブラリ。
 @z
 
 @x libicuio.so
-            is the ICU I/O (unicode stdio) library.
+            is the ICU I/O (unicode stdio) library
 @y
             ICU I/O (ユニコード標準) ライブラリ。
 @z
 
-@x libicule.so
-            is the layout engine.
-@y
-            レイアウトエンジン。
-@z
-
-@x libiculx.so
-            is the layout extensions engine.
-@y
-            レイアウトエンジンの拡張。
-@z
-
 @x libicutest.so
-            is the test library.
+            is the test library
 @y
             テストライブラリ。
 @z
 
 @x libicutu.so
-            is the tool utility library.
+            is the tool utility library
 @y
             ツールユーティリティライブラリ。
 @z
 
 @x libicuuc.so
-            is the common library.
+            is the common library
 @y
             共通ライブラリ。
 @z

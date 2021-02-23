@@ -198,14 +198,14 @@
 @z
 
 @x dbus-binding-tool
-            is a tool used to interface with the D-Bus API.
+            is a tool used to interface with the D-Bus API
 @y
             D-Bus API とのインターフェースに対し利用するツール。
 @z
 
 @x libdbus-glib-1.so
             contains <application>GLib</application> interface functions
-            to the <application>D-Bus</application> API.
+            to the <application>D-Bus</application> API
 @y
             <application>D-Bus</application> API に対しての <application>GLib</application> インターフェース関数を提供します。
 @z

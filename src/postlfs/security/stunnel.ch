@@ -414,27 +414,27 @@
 @x stunnel
             is a program designed to work as an SSL
             encryption wrapper between remote clients and local
-            (<command>{x}inetd</command>-startable) or remote servers.
+            (<command>{x}inetd</command>-startable) or remote servers
 @y
             is a program designed to work as an SSL
             encryption wrapper between remote clients and local
-            (<command>{x}inetd</command>-startable) or remote servers.
+            (<command>{x}inetd</command>-startable) or remote servers
 @z
 
 @x stunnel3
             is a <application>Perl</application> wrapper script to use
             <command>stunnel</command> 3.x syntax with
-            <command>stunnel</command> 4.05 or later.
+            <command>stunnel</command> 4.05 or later
 @y
             is a <application>Perl</application> wrapper script to use
             <command>stunnel</command> 3.x syntax with
-            <command>stunnel</command> 4.05 or later.
+            <command>stunnel</command> 4.05 or later
 @z
 
 @x libstunnel.so
             contains the API functions required by
-            <application>stunnel</application>.
+            <application>stunnel</application>
 @y
             contains the API functions required by
-            <application>stunnel</application>.
+            <application>stunnel</application>
 @z

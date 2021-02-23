@@ -246,8 +246,8 @@
 
 @x libgnome-desktop-3.so
             contains functions shared by several <application>GNOME</application>
-            applications.
+            applications
 @y
             contains functions shared by several <application>GNOME</application>
-            applications.
+            applications
 @z

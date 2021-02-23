@@ -159,7 +159,7 @@
 @z
 
 @x libxcb-util.{so,a}
-            Provides utility functions for other XCB utilities.
+            Provides utility functions for other XCB utilities
 @y
             他の XCB ユーティリティーに対して、ユーティリティー関数を提供します。
 @z

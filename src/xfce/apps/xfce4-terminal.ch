@@ -169,7 +169,7 @@
 @z
 
 @x Terminal
-            is a <application>GTK+ 3</application> terminal emulator.
+            is a <application>GTK+ 3</application> terminal emulator
 @y
             <application>Gtk+ 3</application> によるターミナルエミュレーター。
 @z

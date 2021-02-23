@@ -243,7 +243,7 @@
         <term>engine ライブラリ</term>
 @z
 @x
-            are manager systems for specific themes.
+            are manager systems for specific themes
 @y
             所定のテーマに対する管理システムです。
 @z

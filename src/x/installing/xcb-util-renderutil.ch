@@ -156,7 +156,7 @@
 @z
 
 @x libxcb-render-util.so
-            Provides convenience functions for the Render extension.
+            Provides convenience functions for the Render extension
 @y
             Render 拡張のための便利な関数を提供します。
 @z

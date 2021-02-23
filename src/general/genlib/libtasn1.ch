@@ -189,20 +189,20 @@
 @z
 
 @x asn1Coding
-            is an ASN.1 DER encoder.
+            is an ASN.1 DER encoder
 @y
             ASN.1 DER エンコーダー。
 @z
 
 @x asn1Decoding
-            is an ASN.1 DER decoder.
+            is an ASN.1 DER decoder
 @y
             ASN.1 DER デコーダー。
 @z
 
 @x asn1Parser
             is an ASN.1 syntax tree generator for
-            <application>libtasn1</application>.
+            <application>libtasn1</application>
 @y
             <!--
             日本語訳註：
@@ -213,7 +213,7 @@
 
 @x libtasn1.{so,a}
             is a library for Abstract Syntax Notation One (ASN.1) and
-            Distinguish Encoding Rules (DER) manipulation.
+            Distinguish Encoding Rules (DER) manipulation
 @y
             ASN.1 (Abstract Syntax Notation One) と DER (Distinguish Encoding Rules) を操作するライブラリです。
 @z

@@ -535,155 +535,155 @@
 @z
 
 @x ldapadd
-            opens a connection to an LDAP server, binds and adds entries.
+            opens a connection to an LDAP server, binds and adds entries
 @y
-            opens a connection to an LDAP server, binds and adds entries.
+            opens a connection to an LDAP server, binds and adds entries
 @z
 
 @x ldapcompare
             opens a connection to an LDAP server, binds and performs
-            a compare using specified parameters.
+            a compare using specified parameters
 @y
             opens a connection to an LDAP server, binds and performs
-            a compare using specified parameters.
+            a compare using specified parameters
 @z
 
 @x ldapdelete
             opens a connection to an LDAP server, binds and deletes
-            one or more entries.
+            one or more entries
 @y
             opens a connection to an LDAP server, binds and deletes
-            one or more entries.
+            one or more entries
 @z
 
 @x ldapexop
             issues the LDAP extended operation specified by 
             oid or one of the  special  keywords  whoami,
-            cancel, or refresh.
+            cancel, or refresh
 @y
             issues the LDAP extended operation specified by 
             oid or one of the  special  keywords  whoami,
-            cancel, or refresh.
+            cancel, or refresh
 @z
 
 @x ldapmodify
-            opens a connection to an LDAP server, binds and modifies entries.
+            opens a connection to an LDAP server, binds and modifies entries
 @y
-            opens a connection to an LDAP server, binds and modifies entries.
+            opens a connection to an LDAP server, binds and modifies entries
 @z
 
 @x ldapmodrdn
             opens a connection to an LDAP server, binds and modifies
-            the RDN of entries.
+            the RDN of entries
 @y
             opens a connection to an LDAP server, binds and modifies
-            the RDN of entries.
+            the RDN of entries
 @z
 
 @x ldappasswd
-            is a tool used to set the password of an LDAP user.
+            is a tool used to set the password of an LDAP user
 @y
-            is a tool used to set the password of an LDAP user.
+            is a tool used to set the password of an LDAP user
 @z
 
 @x ldapsearch
             opens a connection to an LDAP server, binds and performs
-            a search using specified parameters.
+            a search using specified parameters
 @y
             opens a connection to an LDAP server, binds and performs
-            a search using specified parameters.
+            a search using specified parameters
 @z
 
 @x ldapurl
             is a command that allows to either compose or 
-            decompose LDAP URIs.
+            decompose LDAP URIs
 @y
             is a command that allows to either compose or 
-            decompose LDAP URIs.
+            decompose LDAP URIs
 @z
 
 @x ldapwhoami
             opens a connection to an LDAP server, binds and displays
-            whoami information.
+            whoami information
 @y
             opens a connection to an LDAP server, binds and displays
-            whoami information.
+            whoami information
 @z
 
 @x slapacl
             is used to check the behavior of slapd by verifying 
             access to directory data according to the access control 
-            list directives defined in its configuration.
+            list directives defined in its configuration
 @y
             is used to check the behavior of slapd by verifying 
             access to directory data according to the access control 
-            list directives defined in its configuration.
+            list directives defined in its configuration
 @z
 
 @x slapadd
             is used to add entries specified in LDAP Directory Interchange
-            Format (LDIF) to an LDAP database.
+            Format (LDIF) to an LDAP database
 @y
             is used to add entries specified in LDAP Directory Interchange
-            Format (LDIF) to an LDAP database.
+            Format (LDIF) to an LDAP database
 @z
 
 @x slapauth
             is used to check the behavior of the slapd 
             in mapping identities for authentication and
-            authorization purposes, as specified in slapd.conf.
+            authorization purposes, as specified in slapd.conf
 @y
             is used to check the behavior of the slapd 
             in mapping identities for authentication and
-            authorization purposes, as specified in slapd.conf.
+            authorization purposes, as specified in slapd.conf
 @z
 
 @x slapcat
             is used to generate an LDAP LDIF output based upon the
-            contents of a slapd database.
+            contents of a slapd database
 @y
             is used to generate an LDAP LDIF output based upon the
-            contents of a slapd database.
+            contents of a slapd database
 @z
 
 @x slapd
-            is the standalone LDAP server.
+            is the standalone LDAP server
 @y
-            is the standalone LDAP server.
+            is the standalone LDAP server
 @z
 
 @x slapdn
-            checks a list of string-represented DNs based on schema syntax.
+            checks a list of string-represented DNs based on schema syntax
 @y
-            checks a list of string-represented DNs based on schema syntax.
+            checks a list of string-represented DNs based on schema syntax
 @z
 
 @x slapindex
             is used to regenerate slapd indexes based upon the current
-            contents of a database.
+            contents of a database
 @y
             is used to regenerate slapd indexes based upon the current
-            contents of a database.
+            contents of a database
 @z
 
 @x slappasswd
-            is an <application>OpenLDAP</application> password utility.
+            is an <application>OpenLDAP</application> password utility
 @y
-            is an <application>OpenLDAP</application> password utility.
+            is an <application>OpenLDAP</application> password utility
 @z
 
 @x slapschema
             is used to check schema compliance of the contents 
-            of a slapd database.
+            of a slapd database
 @y
             is used to check schema compliance of the contents 
-            of a slapd database.
+            of a slapd database
 @z
 
 @x slaptest
-            checks the sanity of the <filename>slapd.conf</filename> file.
+            checks the sanity of the <filename>slapd.conf</filename> file
 @y
-            checks the sanity of the <filename>slapd.conf</filename> file.
+            checks the sanity of the <filename>slapd.conf</filename> file
 @z
 
 @x liblber.so
@@ -692,28 +692,28 @@
             LDAP protocol elements using the (slightly simplified) Basic
             Encoding Rules defined by LDAP. They are not normally used directly
             by an LDAP application program except in the handling of controls
-            and extended operations.
+            and extended operations
 @y
             is a set of Lightweight Basic Encoding Rules routines. These
             routines are used by the LDAP library routines to encode and decode
             LDAP protocol elements using the (slightly simplified) Basic
             Encoding Rules defined by LDAP. They are not normally used directly
             by an LDAP application program except in the handling of controls
-            and extended operations.
+            and extended operations
 @z
 
 @x libldap.so
             supports the LDAP programs and provide functionality for
-            other programs interacting with LDAP.
+            other programs interacting with LDAP
 @y
             supports the LDAP programs and provide functionality for
-            other programs interacting with LDAP.
+            other programs interacting with LDAP
 @z
 
 @x libldap_r.so
             contains the functions required by the LDAP programs to
-            produce the results from LDAP requests.
+            produce the results from LDAP requests
 @y
             contains the functions required by the LDAP programs to
-            produce the results from LDAP requests.
+            produce the results from LDAP requests
 @z

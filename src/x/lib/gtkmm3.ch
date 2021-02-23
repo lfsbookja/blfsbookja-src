@@ -187,13 +187,13 @@
 @z
 
 @x libgdkmm-3.0.so
-          contains the GDK API classes.
+          contains the GDK API classes
 @y
           GDK の API クラスを提供します。
 @z
 
 @x libgtkmm-3.0.so
-          contains the <application>GTK+ 3</application> API classes.
+          contains the <application>GTK+ 3</application> API classes
 @y
           <application>GTK+ 3</application> の API クラスを提供します。
 @z

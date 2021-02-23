@@ -239,11 +239,11 @@
 @x
             contain a document type definition which defines the element
             types and the attribute lists that can be used in the corresponding
-            <filename>XML</filename> files.
+            <filename>XML</filename> files
 @y
             contain a document type definition which defines the element
             types and the attribute lists that can be used in the corresponding
-            <filename>XML</filename> files.
+            <filename>XML</filename> files
 @z
 
 @x
@@ -253,10 +253,10 @@
 @z
 @x
             contain components of the document type definition that
-            are sourced into the <filename>DTD</filename> files.
+            are sourced into the <filename>DTD</filename> files
 @y
             contain components of the document type definition that
-            are sourced into the <filename>DTD</filename> files.
+            are sourced into the <filename>DTD</filename> files
 @z
 
 @x
@@ -265,7 +265,7 @@
         <term><filename>ENT files</filename></term>
 @z
 @x
-            contain lists of named character entities allowed in HTML.
+            contain lists of named character entities allowed in HTML
 @y
-            contain lists of named character entities allowed in HTML.
+            contain lists of named character entities allowed in HTML
 @z

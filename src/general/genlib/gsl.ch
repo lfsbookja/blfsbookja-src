@@ -195,35 +195,35 @@
 
 @x gsl-config
             is a shell script to get the version number and compiler flags of
-            the installed <application>Gsl</application> library.
+            the installed <application>Gsl</application> library
 @y
             インストールされている <application>Gsl</application> ライブラリのバージョン番号やコンパイラーフラグの情報を取得します。
 @z
 
 @x gsl-histogram
             is a demonstration program for the GNU Scientific Library that
-            computes a histogram from data taken from stdin.
+            computes a histogram from data taken from stdin
 @y
             標準入力よりデータを得てヒストグラムを計算する GNU 科学技術計算ライブラリ (GNU Scientific Library) のデモプログラムです。
 @z
 
 @x gsl-randist
             is a demonstration program for the GNU Scientific Library that
-            generates random samples from various distributions.
+            generates random samples from various distributions
 @y
             さまざまな分布から乱数サンプルを生成する GNU 科学技術計算ライブラリ (GNU Scientific Library) のデモプログラムです。
 @z
 
 @x libgslcblas.so
             contains functions that implement a C interface to Basic Linear
-            Algebra Subprograms.
+            Algebra Subprograms
 @y
             基本線形代数サブプログラム (Basic Linear Algebra Subprograms) への C 言語インターフェースを実装する関数を提供します。
 @z
 
 @x libgsl.so.so
             contains functions that provide a collection of numerical routines
-            for scientific computing.
+            for scientific computing
 @y
             科学技術計算に関するさまざまな数値ルーチンを提供します。
 @z

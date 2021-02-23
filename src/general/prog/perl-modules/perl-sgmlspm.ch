@@ -100,15 +100,15 @@
 @z
 
 @x sgmlspl.pl
-              is an SGML processor.
+              is an SGML processor
 @y
-              is an SGML processor.
+              is an SGML processor
 @z
 
 @x sgmlspl
-              is a symbolic link used during the install of <xref
-              linkend="docbook-utils"/>.
+              is a symbolic link used during the install of
+              <xref linkend="docbook-utils"/>
 @y
-              is a symbolic link used during the install of <xref
-              linkend="docbook-utils"/>.
+              is a symbolic link used during the install of
+              <xref linkend="docbook-utils"/>
 @z

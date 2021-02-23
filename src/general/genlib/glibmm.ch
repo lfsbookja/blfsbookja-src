@@ -196,13 +196,13 @@
 @z
 
 @x libgiomm-2.4.so
-            contains the GIO API classes.
+            contains the GIO API classes
 @y
             GIO API クラスを提供します。
 @z
 
 @x libglibmm-2.4.so
-            contains the <application>GLib</application> API classes.
+            contains the <application>GLib</application> API classes
 @y
             <application>GLib</application> API クラスを提供します。
 @z

@@ -320,52 +320,52 @@
 @z
 
 @x fc-cache
-            is used to create font information caches.
+            is used to create font information caches
 @y
             フォント情報のキャッシュを生成します。
 @z
 
 @x fc-cat
-            is used to read font information caches.
+            is used to read font information caches
 @y
             フォント情報のキャッシュを読み込みます。
 @z
 
 @x fc-list
-            is used to create font lists.
+            is used to create font lists
 @y
             フォントリストを生成します。
 @z
 
 @x fc-match
             is used to match available fonts, or find fonts that match
-            a given pattern.
+            a given pattern
 @y
             利用可能なフォントを、検索指定パターンを用いて検索します。
 @z
 
 @x fc-pattern
             is used to parse pattern (empty pattern by default) and show
-            the parsed result.
+            the parsed result
 @y
             パターンを解析し（空パターンをデフォルトとする）、解析結果を出力する。
 @z
 
 @x fc-query
-            is used to query fonts files and print resulting patterns.
+            is used to query fonts files and print resulting patterns
 @y
             フォントファイルを検索し結果を出力します。
 @z
 
 @x fc-scan
             is used to scan font files and directories, and print resulting
-            patterns.
+            patterns
 @y
             フォントファイルとディレクトリをスキャンして、結果を表示します。
 @z
 
 @x fc-validate
-            is used to validate font files.
+            is used to validate font files
 @y
             フォントファイルを検証します。
 @z
@@ -373,7 +373,7 @@
 @x libfontconfig.{so,a}
             contains functions used by the <application>Fontconfig</application>
             programs and also by other programs to configure or customize font
-            access.
+            access
 @y
             フォントへのアクセスを行ったり設定したりするための関数を提供します。
             これは <application>Fontconfig</application> やその他のプログラムからも利用されます。

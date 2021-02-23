@@ -215,13 +215,13 @@
 
 @x libfm-pref-apps
             sets preferred applications for programs based
-            on <application>libfm</application>.
+            on <application>libfm</application>
 @y
             <application>libfm</application> を用いたプログラムをアプリケーションに適用します。
 @z
 
 @x libfm.so
-            contains the <application>libfm</application> API functions.
+            contains the <application>libfm</application> API functions
 @y
             <application>libfm</application> API 関数を提供します。
 @z

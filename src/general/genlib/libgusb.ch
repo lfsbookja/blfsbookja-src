@@ -212,7 +212,7 @@
 @z
 
 @x libgusb.so
-            contains the <application>libgusb</application> API functions.
+            contains the <application>libgusb</application> API functions
 @y
             <application>libgusb</application> API 関数を提供します。
 @z

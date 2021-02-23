@@ -174,16 +174,16 @@
 @x fribidi
             is a command-line interface to the
             <filename class="libraryfile">libfribidi</filename> library and
-            can be used to convert a logical string to visual output.
+            can be used to convert a logical string to visual output
 @y
             <filename class="libraryfile">libfribidi</filename> ライブラリへのコマンドラインインターフェース。
             論理文字 (logical string) を視覚的に出力します。
 @z
 
 @x libfribidi.so
-            contains functions used to implement the <ulink
-            url="http://www.unicode.org/reports/tr9/">Unicode
-            Bidirectional Algorithm</ulink>.
+            contains functions used to implement the
+            <ulink url="http://www.unicode.org/reports/tr9/">Unicode
+            Bidirectional Algorithm</ulink>
 @y
             <ulink url="http://www.unicode.org/reports/tr9/">Unicode 双方向アルゴリズム (Unicode Bidirectional Algorithm)</ulink> を実装するための関数を提供します。
 @z

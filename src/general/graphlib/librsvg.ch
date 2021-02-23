@@ -243,13 +243,13 @@
 @z
 
 @x rsvg-convert
-            is used to convert images into PNG, PDF, PS, SVG and other formats.
+            is used to convert images into PNG, PDF, PS, SVG and other formats
 @y
-            is used to convert images into PNG, PDF, PS, SVG and other formats.
+            is used to convert images into PNG, PDF, PS, SVG and other formats
 @z
 
 @x librsvg-2.so
-            provides the functions to render Scalable Vector Graphics.
+            provides the functions to render Scalable Vector Graphics
 @y
             Scalable Vector Graphics を描画するための関数を提供します。
 @z
@@ -257,9 +257,9 @@
 @x libpixbufloader-svg.so
             is the <application>Gdk Pixbuf</application> plugin that allows
             <application>GTK+</application> applications to render Scalable 
-            Vector Graphics images.
+            Vector Graphics images
 @y
             is the <application>Gdk Pixbuf</application> plugin that allows
             <application>GTK+</application> applications to render Scalable 
-            Vector Graphics images.
+            Vector Graphics images
 @z

@@ -190,14 +190,14 @@
 
 @x gnome-calculator
             is the official calculator of the
-            <application>GNOME</application> Desktop.
+            <application>GNOME</application> Desktop
 @y
             <application>GNOME</application> デスクトップにおける公式の計算機です。
 @z
 
 @x gcalccmd
             is a command line version of
-            <application>gnome-calculator</application>.
+            <application>gnome-calculator</application>
 @y
             <application>gnome-calculator</application> のコマンドライン版です。
 @z

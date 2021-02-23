@@ -224,7 +224,7 @@
 @z
 
 @x koi8rxterm
-            is a wrapper script to set up xterm with a KOI8-R locale.
+            is a wrapper script to set up xterm with a KOI8-R locale
 @y
             xterm に対して KOI8-R ロケールを設定するためのラッパースクリプト。
 @z
@@ -232,20 +232,20 @@
 @x resize
             prints a shell command for setting the TERM and TERMCAP
             environment  variables to indicate the current size of xterm
-            window.
+            window
 @y
             xterm ウィンドウの現サイズを示す環境変数 TERM, TERMCAP を設定するためのシェルコマンドを表示します。
 @z
 
 @x uxterm
             is a wrapper script that modifies the current locale to use
-            UTF-8 and starts xterm with the proper settings.
+            UTF-8 and starts xterm with the proper settings
 @y
             ロケールを UTF-8 に変更して xterm を起動するためのラッパースクリプト。
 @z
 
 @x xterm
-            is a terminal emulator for the X Window System.
+            is a terminal emulator for the X Window System
 @y
             X ウィンドウシステムに対する端末エミュレーターです。
 @z

@@ -193,7 +193,7 @@
 
 @x guile
             is a stand-alone Scheme interpreter for
-            <application>Guile</application>.
+            <application>Guile</application>
 @y
             <application>Guile</application> におけるスタンドアロンの Scheme インタープリター。
 @z
@@ -202,38 +202,38 @@
             is a <application>Guile</application> script which provides the
             information necessary to link your programs against the
             <application>Guile</application> library, in much the same way
-            PkgConfig does.
+            PkgConfig does
 @y
             is a <application>Guile</application> script which provides the
             information necessary to link your programs against the
             <application>Guile</application> library, in much the same way
-            PkgConfig does.
+            PkgConfig does
 @z
 
 @x guile-snarf
             is a script to parse declarations in your
             <application>C</application> code for
             <application>Scheme</application> visible
-            <application>C</application> functions.
+            <application>C</application> functions
 @y
             is a script to parse declarations in your
             <application>C</application> code for
             <application>Scheme</application> visible
-            <application>C</application> functions.
+            <application>C</application> functions
 @z
 
 @x guild
             is a wrapper program installed along with <command>guile</command>,
             which knows where a particular module is installed and calls it,
-            passing its arguments to the program.
+            passing its arguments to the program
 @y
             is a wrapper program installed along with <command>guile</command>,
             which knows where a particular module is installed and calls it,
-            passing its arguments to the program.
+            passing its arguments to the program
 @z
 
 @x guile-tools
-            is a symlink to <command>guild</command>.
+            is a symlink to <command>guild</command>
 @y
-            is a symlink to <command>guild</command>.
+            is a symlink to <command>guild</command>
 @z

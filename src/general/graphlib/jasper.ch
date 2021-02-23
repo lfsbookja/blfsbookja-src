@@ -186,35 +186,35 @@
 @z
 
 @x imgcmp
-            compares two images of the same geometry.
+            compares two images of the same geometry
 @y
-            compares two images of the same geometry.
+            compares two images of the same geometry
 @z
 
 @x imginfo
-            displays information about an image.
+            displays information about an image
 @y
-            displays information about an image.
+            displays information about an image
 @z
 
 @x jasper
             converts images between formats (BMP, JPS, JPC, JPG, PGX, PNM, MIF,
-            and RAS).
+            and RAS)
 @y
             converts images between formats (BMP, JPS, JPC, JPG, PGX, PNM, MIF,
-            and RAS).
+            and RAS)
 @z
 
 @x jiv
-            displays images.
+            displays images
 @y
-            displays images.
+            displays images
 @z
 
 @x libjasper.so
             is a library used by programs for reading and writing
-            JPEG2000 format files.
+            JPEG2000 format files
 @y
             is a library used by programs for reading and writing
-            JPEG2000 format files.
+            JPEG2000 format files
 @z

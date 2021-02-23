@@ -208,7 +208,7 @@
 
 @x parole
             is a <application>GTK+ 3</application> media player that
-            uses <application>GStreamer</application>.
+            uses <application>GStreamer</application>
 @y
             <application>GStreamer</application> を利用した <application>GTK+ 3</application> メディアプレイヤー。
 @z

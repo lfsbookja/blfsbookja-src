@@ -240,26 +240,26 @@
 
 @x brasero
             is a simple and easy to use CD/DVD burning application for the
-            <application>GNOME</application> Desktop.
+            <application>GNOME</application> Desktop
 @y
             is a simple and easy to use CD/DVD burning application for the
-            <application>GNOME</application> Desktop.
+            <application>GNOME</application> Desktop
 @z
 
 @x libbrasero-burn3.so
-            contains the Burning API functions.
+            contains the Burning API functions
 @y
-            contains the Burning API functions.
+            contains the Burning API functions
 @z
 
 @x libbrasero-media3.so
-            contains the Media API functions.
+            contains the Media API functions
 @y
-            contains the Media API functions.
+            contains the Media API functions
 @z
 
 @x libbrasero-utils3.so
-            contains the <application>Brasero</application> API functions.
+            contains the <application>Brasero</application> API functions
 @y
             <application>Brasero</application> API 関数を提供します。
 @z

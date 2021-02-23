@@ -201,7 +201,7 @@
 @z
 
 @x libgdk_pixbuf_xlib-2.0.so
-            provides a Xlib interface to gdk-pixbuf.
+            provides a Xlib interface to gdk-pixbuf
 @y
             gdk-pixbuf に対する Xlib インターフェースを提供します。
 @z

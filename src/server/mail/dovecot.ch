@@ -364,8 +364,8 @@
           doveadm, doveconf, dovecot, dovecot-sysreport, and dsync (symbolic link)
         </seg>
         <seg>
-          various internal plugins in <filename
-          class="directory">/usr/lib/dovecot</filename>
+          various internal plugins in
+          <filename class="directory">/usr/lib/dovecot</filename>
         </seg>
         <seg>
           /etc/dovecot,
@@ -377,8 +377,8 @@
           doveadm, doveconf, dovecot, dovecot-sysreport, and dsync (symbolic link)
         </seg>
         <seg>
-          various internal plugins in <filename
-          class="directory">/usr/lib/dovecot</filename>
+          various internal plugins in
+          <filename class="directory">/usr/lib/dovecot</filename>
         </seg>
         <seg>
           /etc/dovecot,
@@ -394,37 +394,37 @@
 @z
 
 @x doveadm
-            is the <application>Dovecot</application> administration tool.
+            is the <application>Dovecot</application> administration tool
 @y
-            is the <application>Dovecot</application> administration tool.
+            is the <application>Dovecot</application> administration tool
 @z
 
 @x doveconf
             is <application>Dovecot</application>'s configuration dumping
-            utility.
+            utility
 @y
             is <application>Dovecot</application>'s configuration dumping
-            utility.
+            utility
 @z
 
 @x dovecot
-            is the IMAP and POP server.
+            is the IMAP and POP server
 @y
-            is the IMAP and POP server.
+            is the IMAP and POP server
 @z
 
 @x dovecot-sysreport
             prints system information that is useful to the Dovecot developers
-            when submitting bug reports upstream.
+            when submitting bug reports upstream
 @y
             prints system information that is useful to the Dovecot developers
-            when submitting bug reports upstream.
+            when submitting bug reports upstream
 @z
 
 @x dsync
             is <application>Dovecot</application>'s mailbox synchronization
-            utility.
+            utility
 @y
             is <application>Dovecot</application>'s mailbox synchronization
-            utility.
+            utility
 @z

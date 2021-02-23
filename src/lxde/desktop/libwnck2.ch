@@ -217,14 +217,14 @@
 
 @x wnckprop-1
             Prints, modifies, or interacts with  the properties of a 
-            screen/workspace/window.
+            screen/workspace/window
 @y
             Prints, modifies, or interacts with  the properties of a 
-            screen/workspace/window.
+            screen/workspace/window
 @z
 
 @x libwnck-1.so
-            contains functions for writing pagers and task lists.
+            contains functions for writing pagers and task lists
 @y
-            contains functions for writing pagers and task lists.
+            contains functions for writing pagers and task lists
 @z

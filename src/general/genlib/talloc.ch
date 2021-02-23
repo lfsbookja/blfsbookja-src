@@ -214,7 +214,7 @@
 
 @x libtalloc.so
             contains a replacement for the <application>Glibc</application>
-            malloc function.
+            malloc function
 @y
             <application>Glibc</application> の malloc に対応する代替関数を提供します。
 @z

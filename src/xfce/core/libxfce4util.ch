@@ -181,18 +181,18 @@
             Queries the given capabilities of &lt;module&gt; for the current
             user and reports whether the user has the capabilities or not. This
             tool is mainly meant for system administrators to test their Kiosk
-            setup.
+            setup
 @y
             Queries the given capabilities of &lt;module&gt; for the current
             user and reports whether the user has the capabilities or not. This
             tool is mainly meant for system administrators to test their Kiosk
-            setup.
+            setup
 @z
 
 @x libxfce4util.so
             contains basic utility functions for the
-            <application>Xfce</application> desktop environment.
+            <application>Xfce</application> desktop environment
 @y
             contains basic utility functions for the
-            <application>Xfce</application> desktop environment.
+            <application>Xfce</application> desktop environment
 @z

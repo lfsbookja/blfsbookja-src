@@ -206,19 +206,19 @@
 @z
 
 @x cwebp
-            compresses an image using the WebP format.
+            compresses an image using the WebP format
 @y
             WebP フォーマットによりイメージを圧縮します。
 @z
 
 @x dwebp
-            decompresses WebP files into PNG, PAM, PPM or PGM images.
+            decompresses WebP files into PNG, PAM, PPM or PGM images
 @y
             WebP ファイルを PNG, PAM, PPM, PGM イメージに復元します。
 @z
 
 @x libwebp.so
-            contains the API functions for WebP encoding and decoding.
+            contains the API functions for WebP encoding and decoding
 @y
             WebP エンコーディング、デコーディングを行う API 関数を提供します。
 @z

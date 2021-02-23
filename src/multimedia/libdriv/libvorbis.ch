@@ -195,7 +195,7 @@
 @z
 
 @x libvorbis*.so
-            provides the functions used to read and write sound files.
+            provides the functions used to read and write sound files
 @y
             サウンドファイルの入出力を行う関数を提供するライブラリ。
 @z

@@ -153,14 +153,14 @@
 
 @x shar
             creates "shell archives" (or shar files) which are in 
-            text format and can be mailed.
+            text format and can be mailed
 @y
             "シェルアーカイブ" (shell archives または shar ファイル) を生成します。
             これはテキストフォーマットであり、メールに添付することもできます。
 @z
 
 @x unshar
-            unpacks a shar file.
+            unpacks a shar file
 @y
             shar ファイルを復元します。
 @z
@@ -168,7 +168,7 @@
 @x uudecode
             reads a file (or by default the standard input) and writes an
             encoded  version to the standard output. The encoding uses only
-            printing ASCII characters.
+            printing ASCII characters
 @y
             ファイルを読み込んで (またはデフォルトでは標準入力を読み込んで)、標準出力にエンコード結果を出力します。
             エンコード結果は印字可能なアスキー文字のみが用いられます。
@@ -176,7 +176,7 @@
 
 @x uuencode
             reads a file (or by default the standard input) and decodes
-            the uuencoded version to the standard output.
+            the uuencoded version to the standard output
 @y
             ファイルを読み込んで (またはデフォルトでは標準入力を読み込んで)、uuencode により処理された内容を復元して標準出力に出力します。
 @z

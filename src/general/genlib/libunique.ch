@@ -209,7 +209,7 @@
 
 @x libunique-1.0.so
             contains the <application>libunique</application> API functions
-            for single instance support.
+            for single instance support
 @y
             シングルインスタンスをサポートする <application>libunique</application> API 関数を提供します。
 @z

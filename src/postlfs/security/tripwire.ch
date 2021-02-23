@@ -458,33 +458,33 @@
 
 @x siggen
             is a signature gathering utility that displays
-            the hash function values for the specified files.
+            the hash function values for the specified files
 @y
             is a signature gathering utility that displays
-            the hash function values for the specified files.
+            the hash function values for the specified files
 @z
 
 @x tripwire
-            is the main file integrity checking program.
+            is the main file integrity checking program
 @y
-            is the main file integrity checking program.
+            is the main file integrity checking program
 @z
 
 @x twadmin
             administrative and utility tool used to perform
             certain administrative functions related to
             <application>Tripwire</application> files and configuration
-            options.
+            options
 @y
             administrative and utility tool used to perform
             certain administrative functions related to
             <application>Tripwire</application> files and configuration
-            options.
+            options
 @z
 
 @x twprint
             prints <application>Tripwire</application>
-            database and report files in clear text format.
+            database and report files in clear text format
 @y
             <application>Tripwire</application> のデータベースを表示します。
             またその内容を分かりやすいテキスト形式で出力します。

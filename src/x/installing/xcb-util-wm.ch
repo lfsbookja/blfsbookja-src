@@ -180,13 +180,13 @@
 @z
 
 @x libxcb-ewmh.so
-            provides the client and window-manager helpers for EWMH.
+            provides the client and window-manager helpers for EWMH
 @y
             EWMH に対するクライアントおよびウィンドウマネージャーヘルパーを提供します。
 @z
 
 @x libxcb-icccm.so
-            provides the client and window-manager helpers for ICCCM.
+            provides the client and window-manager helpers for ICCCM
 @y
             ICCCM に対するクライアントおよびウィンドウマネージャーヘルパーを提供します。
 @z

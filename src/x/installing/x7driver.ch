@@ -20,12 +20,6 @@
 @z
 
 @x
-    <primary sortas="a-xorg7-driver">xorg7-driver</primary>
-@y
-    <primary sortas="a-xorg7-driver">xorg7-driver</primary>
-@z
-
-@x
     <title>Introduction to Xorg Drivers</title>
 @y
     <title>&IntroductionTo1;Xorg ドライバー&IntroductionTo2;</title>

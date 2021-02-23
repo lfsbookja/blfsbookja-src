@@ -450,54 +450,54 @@
 @z
 
 @x git
-            is the stupid content tracker.
+            is the stupid content tracker
 @y
-            is the stupid content tracker.
+            is the stupid content tracker
 @z
 
 @x git-cvsserver
-            is a CVS server emulator for <application>Git</application>.
+            is a CVS server emulator for <application>Git</application>
 @y
-            is a CVS server emulator for <application>Git</application>.
+            is a CVS server emulator for <application>Git</application>
 @z
 
 @x gitk
             is a graphical <application>Git</application> repository browser
-            (needs <xref linkend="tk"/>).
+            (needs <xref linkend="tk"/>)
 @y
             <application>Git</application> リポジトリブラウザー (<xref linkend="tk"/> が必要)
 @z
 
 @x git-receive-pack
             is invoked by <command>git send-pack</command> and updates the
-            repository with the information fed from the remote end.
+            repository with the information fed from the remote end
 @y
             is invoked by <command>git send-pack</command> and updates the
-            repository with the information fed from the remote end.
+            repository with the information fed from the remote end
 @z
 
 @x git-shell
             is a login shell for SSH accounts to provide restricted Git
-            access.
+            access
 @y
             is a login shell for SSH accounts to provide restricted Git
-            access.
+            access
 @z
 
 @x git-upload-archive
             is invoked by <command>git archive --remote</command> and sends
-            a generated archive to the other end over the git protocol.
+            a generated archive to the other end over the git protocol
 @y
             is invoked by <command>git archive --remote</command> and sends
-            a generated archive to the other end over the git protocol.
+            a generated archive to the other end over the git protocol
 @z
 
 @x git-upload-pack
             is invoked by <command>git fetch-pack</command>, it discovers
             what objects the other side is missing, and sends them after
-            packing.
+            packing
 @y
             is invoked by <command>git fetch-pack</command>, it discovers
             what objects the other side is missing, and sends them after
-            packing.
+            packing
 @z

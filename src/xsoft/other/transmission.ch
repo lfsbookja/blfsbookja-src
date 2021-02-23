@@ -230,14 +230,14 @@
 
 @x transmission-cli
             is a lightweight, command-line BitTorrent client with scripting
-            capabilities.
+            capabilities
 @y
             軽量なコマンドラインベースの BitTorrent クライアントです。
             スクリプト生成機能も含みます。
 @z
 
 @x transmission-create
-            is a command line tool used to create .torrent files.
+            is a command line tool used to create .torrent files
 @y
             .torrent ファイルを生成するためのコマンドラインツール。
 @z
@@ -245,38 +245,38 @@
 @x transmission-daemon
             is a daemon-based Transmission session that can be controlled via
             RPC commands from transmission's web interface or
-            <command>transmission-remote</command>.
+            <command>transmission-remote</command>
 @y
             デーモンベースの Transmission セッション。
             transmission のウェブインターフェースからの PRC コマンドや <command>transmission-remote</command> から制御することができます。
 @z
 
 @x transmission-edit
-            is a command-line utility to modify .torrent files' announce URLs.
+            is a command-line utility to modify .torrent files' announce URLs
 @y
             .torrent ファイルのアナウンス URL を修正するコマンドラインユーティリティー。
 @z
 
 @x transmission-gtk
-            is a GTK+ bittorrent client.
+            is a GTK+ bittorrent client
 @y
             Gtk+ ベースの bittorrent クライアント。
 @z
 
 @x transmission-qt
-            is a Qt bittorrent client.
+            is a Qt bittorrent client
 @y
             Qt ベースの bittorrent クライアント。
 @z
 
 @x transmission-remote
-            is a remote control utility for transmission-daemon and transmission.
+            is a remote control utility for transmission-daemon and transmission
 @y
             transmission-daemon と transmission に対するリモート制御ユーティリティー。
 @z
 
 @x transmission-show
-            is a command line tool to display bittorrent .torrent file metadata.
+            is a command line tool to display bittorrent .torrent file metadata
 @y
             .torrent ファイルのメタデータを表示するコマンドラインツール。
 @z

@@ -302,38 +302,38 @@
             is a wrapper script that opens a <application>Python</application>
             aware GUI editor. For this script to run, you must have installed
             <application>Tk</application> before Python so that the Tkinter
-            Python module is built.
+            Python module is built
 @y
             is a wrapper script that opens a <application>Python</application>
             aware GUI editor. For this script to run, you must have installed
             <application>Tk</application> before Python so that the Tkinter
-            Python module is built.
+            Python module is built
 @z
 
 @x pydoc
-            is the <application>Python</application> documentation tool.
+            is the <application>Python</application> documentation tool
 @y
             <application>Python</application> ドキュメントツール。
 @z
 
 @x python
             is an interpreted, interactive, object-oriented programming
-            language.
+            language
 @y
             is an interpreted, interactive, object-oriented programming
-            language.
+            language
 @z
 
 @x python&python2-majorver;
             is a version-specific name for the <command>python</command>
-            program.
+            program
 @y
             is a version-specific name for the <command>python</command>
-            program.
+            program
 @z
 
 @x smtpd.py
-            is an SMTP proxy implemented in <application>Python</application>.
+            is an SMTP proxy implemented in <application>Python</application>
 @y
-            is an SMTP proxy implemented in <application>Python</application>.
+            is an SMTP proxy implemented in <application>Python</application>
 @z

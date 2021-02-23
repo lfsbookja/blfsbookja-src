@@ -303,73 +303,73 @@
 @z
 
 @x disable-paste
-            is a security mechanism used to disable the paste buffer.
+            is a security mechanism used to disable the paste buffer
 @y
-            is a security mechanism used to disable the paste buffer.
+            is a security mechanism used to disable the paste buffer
 @z
 
 @x display-buttons
             is a simple program that reports the mouse buttons being
-            pressed and released.
+            pressed and released
 @y
             is a simple program that reports the mouse buttons being
-            pressed and released.
+            pressed and released
 @z
 
 @x display-coords
-            is a simple program that reports the mouse coordinates.
+            is a simple program that reports the mouse coordinates
 @y
-            is a simple program that reports the mouse coordinates.
+            is a simple program that reports the mouse coordinates
 @z
 
 @x get-versions
             is used to report the <application>GPM</application> library
-            and server versions.
+            and server versions
 @y
             is used to report the <application>GPM</application> library
-            and server versions.
+            and server versions
 @z
 
 @x gpm
-            is a cut and paste utility and mouse server for virtual consoles.
+            is a cut and paste utility and mouse server for virtual consoles
 @y
-            is a cut and paste utility and mouse server for virtual consoles.
+            is a cut and paste utility and mouse server for virtual consoles
 @z
 
 @x gpm-root
             is a default handler for <command>gpm</command>. It is used to
-            draw menus on the root window.
+            draw menus on the root window
 @y
             is a default handler for <command>gpm</command>. It is used to
-            draw menus on the root window.
+            draw menus on the root window
 @z
 
 @x hltest
             is a simple sample application using the high-level library, meant
-            to be read by programmers trying to use the high-level library.
+            to be read by programmers trying to use the high-level library
 @y
             is a simple sample application using the high-level library, meant
-            to be read by programmers trying to use the high-level library.
+            to be read by programmers trying to use the high-level library
 @z
 
 @x mev
-            is a program to report mouse events.
+            is a program to report mouse events
 @y
-            is a program to report mouse events.
+            is a program to report mouse events
 @z
 
 @x mouse-test
             is a tool for determining the mouse type and device it's
-            attached to.
+            attached to
 @y
             is a tool for determining the mouse type and device it's
-            attached to.
+            attached to
 @z
 
 @x libgpm.{so.a}
             contains the API functions to access the
-            <application>GPM</application> daemon.
+            <application>GPM</application> daemon
 @y
             contains the API functions to access the
-            <application>GPM</application> daemon.
+            <application>GPM</application> daemon
 @z

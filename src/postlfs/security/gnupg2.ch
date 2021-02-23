@@ -301,144 +301,144 @@
 
 @x addgnupghome
             is used to create and populate a user's
-            <filename class='directory'>~/.gnupg</filename> directories
+            <filename class="directory">~/.gnupg</filename> directories
 @y
             is used to create and populate a user's
-            <filename class='directory'>~/.gnupg</filename> directories
+            <filename class="directory">~/.gnupg</filename> directories
 @z
 
 @x applygnupgdefaults
             is a wrapper script used to run <command>gpgconf</command>
             with the <parameter>--apply-defaults</parameter> parameter on all
-            user's GnuPG home directories.
+            user's GnuPG home directories
 @y
             is a wrapper script used to run <command>gpgconf</command>
             with the <parameter>--apply-defaults</parameter> parameter on all
-            user's GnuPG home directories.
+            user's GnuPG home directories
 @z
 
 @x dirmngr
-            is a tool that takes care of accessing the OpenPGP keyservers.
+            is a tool that takes care of accessing the OpenPGP keyservers
 @y
-            is a tool that takes care of accessing the OpenPGP keyservers.
+            is a tool that takes care of accessing the OpenPGP keyservers
 @z
 
 @x dirmngr-client
             is a tool to contact a running dirmngr and test whether a
-            certificate has been revoked. 
+            certificate has been revoked
 @y
             is a tool to contact a running dirmngr and test whether a
-            certificate has been revoked. 
+            certificate has been revoked
 @z
 
 @x g13
             is a tool to create, mount or unmount an encrypted file system
-            container (optional).
+            container (optional)
 @y
             is a tool to create, mount or unmount an encrypted file system
-            container (optional).
+            container (optional)
 @z
 
 @x gpg-agent
             is a daemon used to manage secret (private) keys independently
             from any protocol. It is used as a backend for
             <command>gpg2</command> and <command>gpgsm</command> as well as
-            for a couple of other utilities.
+            for a couple of other utilities
 @y
             is a daemon used to manage secret (private) keys independently
             from any protocol. It is used as a backend for
             <command>gpg2</command> and <command>gpgsm</command> as well as
-            for a couple of other utilities.
+            for a couple of other utilities
 @z
 
 @x gpg-connect-agent
             is a utility used to communicate with a running
-            <command>gpg-agent</command>.
+            <command>gpg-agent</command>
 @y
             is a utility used to communicate with a running
-            <command>gpg-agent</command>.
+            <command>gpg-agent</command>
 @z
 
 @x gpg
             is the OpenPGP part of the GNU Privacy Guard (GnuPG). It is a
             tool used to provide digital encryption and signing services using
-            the OpenPGP standard.
+            the OpenPGP standard
 @y
             is the OpenPGP part of the GNU Privacy Guard (GnuPG). It is a
             tool used to provide digital encryption and signing services using
-            the OpenPGP standard.
+            the OpenPGP standard
 @z
 
 @x gpgconf
             is a utility used to automatically and reasonably safely
             query and modify configuration files in the
-            <filename class='directory'>~/.gnupg</filename> home directory. It
+            <filename class="directory">~/.gnupg</filename> home directory. It
             is designed not to be invoked manually by the user, but
-            automatically by graphical user interfaces.
+            automatically by graphical user interfaces
 @y
             is a utility used to automatically and reasonably safely
             query and modify configuration files in the
-            <filename class='directory'>~/.gnupg</filename> home directory. It
+            <filename class="directory">~/.gnupg</filename> home directory. It
             is designed not to be invoked manually by the user, but
-            automatically by graphical user interfaces.
+            automatically by graphical user interfaces
 @z
 
 @x gpgparsemail
             is a utility currently only useful for debugging. Run it with
-            <parameter>--help</parameter> for usage information.
+            <parameter>--help</parameter> for usage information
 @y
             is a utility currently only useful for debugging. Run it with
-            <parameter>--help</parameter> for usage information.
+            <parameter>--help</parameter> for usage information
 @z
 
 @x gpgscm
-            executes the given scheme program or spawns an interactive shell.
+            executes the given scheme program or spawns an interactive shell
 @y
-            executes the given scheme program or spawns an interactive shell.
+            executes the given scheme program or spawns an interactive shell
 @z
 
 @x gpgsm
             is a tool similar to <command>gpg2</command> used to provide
             digital encryption and signing services on X.509 certificates and
             the CMS protocol. It is mainly used as a backend for S/MIME mail
-            processing.
+            processing
 @y
             is a tool similar to <command>gpg2</command> used to provide
             digital encryption and signing services on X.509 certificates and
             the CMS protocol. It is mainly used as a backend for S/MIME mail
-            processing.
+            processing
 @z
 
 @x gpgtar
-            is a tool to encrypt or sign files into an archive.
+            is a tool to encrypt or sign files into an archive
 @y
-            is a tool to encrypt or sign files into an archive.
+            is a tool to encrypt or sign files into an archive
 @z
 
 @x gpgv
-            is a verify only version of <command>gpg2</command>.
+            is a verify only version of <command>gpg2</command>
 @y
-            is a verify only version of <command>gpg2</command>.
+            is a verify only version of <command>gpg2</command>
 @z
 
 @x gpg-wks-server
             provides a server for the
-            <application>Web Key Service</application> protocol.
+            <application>Web Key Service</application> protocol
 @y
             provides a server for the
-            <application>Web Key Service</application> protocol.
+            <application>Web Key Service</application> protocol
 @z
 
 @x gpg-zip
-            encrypts or signs files into an archive.
+            encrypts or signs files into an archive
 @y
-            encrypts or signs files into an archive.
+            encrypts or signs files into an archive
 @z
 
 @x kbxutil
-            is used to list, export and import Keybox data.
+            is used to list, export and import Keybox data
 @y
-            is used to list, export and import Keybox data.
+            is used to list, export and import Keybox data
 @z
 
 @x symcryptrun
@@ -449,8 +449,8 @@
 
 @x watchgnupg
             is used to listen to a Unix Domain socket created by any of
-            the GnuPG tools.
+            the GnuPG tools
 @y
             is used to listen to a Unix Domain socket created by any of
-            the GnuPG tools.
+            the GnuPG tools
 @z

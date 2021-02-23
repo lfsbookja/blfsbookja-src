@@ -252,7 +252,7 @@
 
 @x libcolord-gtk.so
             contains the <application>Colord</application>
-            <application>GTK+</application> bindings.
+            <application>GTK+</application> bindings
 @y
             <application>Colord</application> の <application>GTK+</application> バインディングを提供します。
 @z

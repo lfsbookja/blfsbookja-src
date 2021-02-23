@@ -414,14 +414,14 @@
 
 @x
       A list of the reinstalled files, along with their short
-      descriptions can be found in the <ulink
-      url="&lfs-root;/chapter08/vim.html#contents-vim">LFS Vim Installation
-      Instructions</ulink>
+      descriptions can be found in the
+      <ulink url="&lfs-root;/chapter08/vim.html#contents-vim">LFS Vim
+      Installation Instructions</ulink>.
 @y
       A list of the reinstalled files, along with their short
-      descriptions can be found in the <ulink
-      url="&lfs-root;/chapter08/vim.html#contents-vim">LFS Vim Installation
-      Instructions</ulink>
+      descriptions can be found in the
+      <ulink url="&lfs-root;/chapter08/vim.html#contents-vim">LFS Vim
+      Installation Instructions</ulink>.
 @z
 
 @x
@@ -451,43 +451,43 @@
 @z
 
 @x gview
-            starts <command>gvim</command> in read-only mode.
+            starts <command>gvim</command> in read-only mode
 @y
-            starts <command>gvim</command> in read-only mode.
+            starts <command>gvim</command> in read-only mode
 @z
 
 @x gvim
             is the editor that runs under <application>X</application>
-            and includes a GUI.
+            and includes a GUI
 @y
             is the editor that runs under <application>X</application>
-            and includes a GUI.
+            and includes a GUI
 @z
 
 @x gvimdiff
             edits two or three versions of a file with
-            <command>gvim</command> and shows the differences.
+            <command>gvim</command> and shows the differences
 @y
             edits two or three versions of a file with
-            <command>gvim</command> and shows the differences.
+            <command>gvim</command> and shows the differences
 @z
 
 @x gvimtutor
             teaches the basic keys and commands of
-            <command>gvim</command>.
+            <command>gvim</command>
 @y
             teaches the basic keys and commands of
-            <command>gvim</command>.
+            <command>gvim</command>
 @z
 
 @x rgview
-            is a restricted version of <command>gview</command>.
+            is a restricted version of <command>gview</command>
 @y
-            is a restricted version of <command>gview</command>.
+            is a restricted version of <command>gview</command>
 @z
 
 @x rgvim
-            is a restricted version of <command>gvim</command>.
+            is a restricted version of <command>gvim</command>
 @y
-            is a restricted version of <command>gvim</command>.
+            is a restricted version of <command>gvim</command>
 @z
