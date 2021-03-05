@@ -11,7 +11,6 @@ CHANGE_FILES = \
 	parole.ch                    \
 	ristretto.ch                 \
 	xfburn.ch                    \
-	xfce4-dev-tools.ch           \
 	xfce4-notifyd.ch             \
 	xfce4-pulseaudio-plugin.ch   \
 	xfce4-terminal.ch

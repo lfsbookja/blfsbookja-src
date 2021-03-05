@@ -173,42 +173,37 @@
       Install <application>Tracker-miners</application> by running the following
       commands:
 @y
-      Install <application>Tracker-miners</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Tracker-miners</application> をビルドします。
 @z
 
 @x
       To test the results, as the <systemitem class="username">root</systemitem>
       user, issue: <command>ninja test</command>.
-      <!--
       Eight tests, test-image-1, 300-miner-basic-ops, 310-fts-basic,
       310-fts-basic, 311-fts-file-operations, 401-extractor-flac-cuesheet,
       500-writeback-images, 501-writeback-image-details, and
       502-writeback-audio are known to fail due to internal test
       suite problems.
-      -->
-      Two tests, test-image-1 and functional-401-extractor-flac-cuesheet, 
-      are known to fail.
+      <!--Two tests, test-image-1 and functional-401-extractor-flac-cuesheet, 
+      are known to fail.-->
       <!-- flac cuesheet is due to libcue not being installed. -->
 @y
       To test the results, as the <systemitem class="username">root</systemitem>
       user, issue: <command>ninja test</command>.
-      <!--
       Eight tests, test-image-1, 300-miner-basic-ops, 310-fts-basic,
       310-fts-basic, 311-fts-file-operations, 401-extractor-flac-cuesheet,
       500-writeback-images, 501-writeback-image-details, and
       502-writeback-audio are known to fail due to internal test
       suite problems.
-      -->
-      Two tests, test-image-1 and functional-401-extractor-flac-cuesheet, 
-      are known to fail.
+      <!--Two tests, test-image-1 and functional-401-extractor-flac-cuesheet, 
+      are known to fail.-->
       <!-- flac cuesheet is due to libcue not being installed. -->
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -259,7 +254,7 @@
         </seg>
         <seg>
           libtracker-extract.so,
-          several modules under /usr/lib/tracker-miners-2.0.
+          /usr/lib/tracker-miners-2.0 配下に数種のライブラリ
         </seg>
         <seg>
           /usr/lib/tracker-miners-2.0,

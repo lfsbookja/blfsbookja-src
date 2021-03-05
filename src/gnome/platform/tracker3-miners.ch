@@ -190,10 +190,13 @@
 
 @x
       To test the results, as the <systemitem class="username">root</systemitem>
-      user, issue: <command>ninja test</command>.
+      user, issue: <command>ninja test</command>. One test,
+      <filename>tracker-miners:miners-common / file-utils</filename>, may fail
+      due to internal test suite problems.
 @y
       ビルド結果をテストする場合は <systemitem
       class="username">root</systemitem> ユーザーになって <command>ninja test</command> を実行します。
+      <filename>tracker-miners:miners-common / file-utils</filename> というテストだけが、テストスイート内部の問題により失敗するかもしれません。
 @z
 
 @x

@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gtksourceview4-buildsize     "80 MB (with tests)">
+  <!ENTITY gtksourceview4-buildsize     "81 MB (with tests)">
   <!ENTITY gtksourceview4-time          "0.1 SBU (with tests; both using parallelism=4)">
 @y
-  <!ENTITY gtksourceview4-buildsize     "80 MB (テスト込み)">
+  <!ENTITY gtksourceview4-buildsize     "81 MB (テスト込み)">
   <!ENTITY gtksourceview4-time          "0.1 SBU (テスト込み、parallelism=4 利用)">
 @z
 

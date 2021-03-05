@@ -181,8 +181,7 @@
 @z
 
 @x
-      <parameter>CFLAGS="-g -O2
-      -DSQLITE_ENABLE_FTS3=1
+      <parameter>CPPFLAGS="-DSQLITE_ENABLE_FTS3=1
       -DSQLITE_ENABLE_FTS3_TOKENIZER=1
       -DSQLITE_ENABLE_FTS4=1
       -DSQLITE_ENABLE_COLUMN_METADATA=1
@@ -192,15 +191,13 @@
       <application>SeaMonkey</application> require these options
       to be turned on.
       The only way to do this is to include them in
-      the CFLAGS.
-      By default, these are set to <literal>"-g -O2"</literal> so we
-      specify that to preserve those settings. You may, of course, wish to omit
-      the <literal>'-g'</literal> if you do not wish to create debugging
-      information. For further information on what can be specified see <ulink
+      the <envar>CFLAGS</envar> or <envar>CPPFLAGS</envar>.
+      We use the latter so the default value (or any value set by the user)
+      of <envar>CFLAGS</envar> won't be affected.
+      For further information on what can be specified see <ulink
       url="http://www.sqlite.org/compile.html"/>.
 @y
-      <parameter>CFLAGS="-g -O2
-      -DSQLITE_ENABLE_FTS3=1
+      <parameter>CPPFLAGS="-DSQLITE_ENABLE_FTS3=1
       -DSQLITE_ENABLE_FTS3_TOKENIZER=1
       -DSQLITE_ENABLE_FTS4=1
       -DSQLITE_ENABLE_COLUMN_METADATA=1
@@ -210,11 +207,10 @@
       <application>SeaMonkey</application> require these options
       to be turned on.
       The only way to do this is to include them in
-      the CFLAGS.
-      By default, these are set to <literal>"-g -O2"</literal> so we
-      specify that to preserve those settings. You may, of course, wish to omit
-      the <literal>'-g'</literal> if you do not wish to create debugging
-      information. For further information on what can be specified see <ulink
+      the <envar>CFLAGS</envar> or <envar>CPPFLAGS</envar>.
+      We use the latter so the default value (or any value set by the user)
+      of <envar>CFLAGS</envar> won't be affected.
+      For further information on what can be specified see <ulink
       url="http://www.sqlite.org/compile.html"/>.
 @z
 

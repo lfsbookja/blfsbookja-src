@@ -134,7 +134,7 @@
       well as issuing the <command>./configure --help</command> command. A
       summary of this information, as well as some additional notes can be
       viewed on-line at <ulink
-      url="https://imagemagick.org/script/advanced-unix-installation.php"/>.
+      url="https://imagemagick.org/script/install-source.php"/>.
 @y
       The optional dependencies listed below should be installed if you need
       support for the specific format or the conversion tool the dependency
@@ -146,7 +146,7 @@
       well as issuing the <command>./configure --help</command> command. A
       summary of this information, as well as some additional notes can be
       viewed on-line at <ulink
-      url="https://imagemagick.org/script/advanced-unix-installation.php"/>.
+      url="https://imagemagick.org/script/install-source.php"/>.
 @z
 
 @x

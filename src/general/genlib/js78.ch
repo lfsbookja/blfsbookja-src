@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY js78-buildsize     "3.0 GB (36 MB installed after removing 35MB static lib)">
-  <!ENTITY js78-time          "2.5 SBU (with parallelism = 4)">
+  <!ENTITY js78-buildsize     "2.9 GB (36 MB installed after removing 35MB static lib)">
+  <!ENTITY js78-time          "2.2 SBU (with parallelism = 4)">
 @y
-  <!ENTITY js78-buildsize     "3.0 GB (36 MB installed after removing 35MB static lib)">
-  <!ENTITY js78-time          "2.5 SBU (with parallelism = 4)">
+  <!ENTITY js78-buildsize     "2.9 GB (36 MB installed after removing 35MB static lib)">
+  <!ENTITY js78-time          "2.2 SBU (with parallelism = 4)">
 @z
 
 @x
@@ -116,22 +116,6 @@
 @z
 
 @x
-        If you are upgrading JS78 from a previously installed old version,
-        save all work and exit your GNOME Session if you have one running.
-        Replacing the JS78 binary will cause the GNOME Shell to crash and
-        return you to your display manager or TTY. After installing the new
-        version, if GNOME Shell still doesn't work, reinstall
-        <xref linkend="gjs"/>.
-@y
-        If you are upgrading JS78 from a previously installed old version,
-        save all work and exit your GNOME Session if you have one running.
-        Replacing the JS78 binary will cause the GNOME Shell to crash and
-        return you to your display manager or TTY. After installing the new
-        version, if GNOME Shell still doesn't work, reinstall
-        <xref linkend="gjs"/>.
-@z
-
-@x
         Unlike most other packages in BLFS, the instructions below require you
         to untar <filename>firefox-&ff78-version;esr.tar.xz</filename> and
         change into the <filename>firefox-&ff78-version;</filename> folder.
@@ -214,6 +198,18 @@
       <command>make -C js/src check-jit-test
       JITTEST_EXTRA_ARGS="--timeout 300"</command>. Again, a few tests
       may show as unexpected failures.
+@z
+
+@x
+        An issue in the installation process causes any running program which
+        links to JS78 shared library (for example, GNOME Shell) to crash if
+        JS78 is upgraded or reinstalled.  To work around this issue, remove
+        the old version of the JS78 shared library before installation:
+@y
+        An issue in the installation process causes any running program which
+        links to JS78 shared library (for example, GNOME Shell) to crash if
+        JS78 is upgraded or reinstalled.  To work around this issue, remove
+        the old version of the JS78 shared library before installation:
 @z
 
 @x

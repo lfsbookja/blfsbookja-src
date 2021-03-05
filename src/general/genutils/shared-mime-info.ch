@@ -116,9 +116,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the result, issue <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x

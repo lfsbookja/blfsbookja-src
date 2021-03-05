@@ -186,10 +186,10 @@
 @z
 
 @x
-      <command>CFLAGS+=...LDFLAGS+=...</command>: build with libtirpc
+      <command>CPPFLAGS=... LDFLAGS+=...</command>: build with libtirpc
       instead of the recently removed RPC code provided by GlibC.
 @y
-      <command>CFLAGS+=...LDFLAGS+=...</command>: build with libtirpc
+      <command>CPPFLAGS=... LDFLAGS+=...</command>: build with libtirpc
       instead of the recently removed RPC code provided by GlibC.
 @z
 

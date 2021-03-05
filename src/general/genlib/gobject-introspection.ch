@@ -137,12 +137,9 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test -k0</command>.
-      One test (test_docwriter) fails if the optional Markdown module is 
-      not installed.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>ninja test -k0</command> を実行します。
-      任意ビルドである Markdown モジュールをインストールしていない場合は、テストが 1 つ (test_docwriter) 失敗します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x

@@ -15,10 +15,10 @@
 
 @x
   <!ENTITY btrfs-progs-buildsize     "92 MB (add 2.7 GB for tests)">
-  <!ENTITY btrfs-progs-time          "0.3 SBU (add 45 SBU for tests)">
+  <!ENTITY btrfs-progs-time          "0.2 SBU (add 45-90 SBU for tests, depending on disk speed)">
 @y
   <!ENTITY btrfs-progs-buildsize     "92 MB (テスト実施時はさらに 2.7 GB)">
-  <!ENTITY btrfs-progs-time          "0.3 SBU (テスト実施時はさらに 45 SBU)">
+  <!ENTITY btrfs-progs-time          "0.2 SBU (テスト実施時はさらに 45～90 SBU、ディスク速度に依存)">
 @z
 
 @x
@@ -111,15 +111,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="lvm2"/> (<command>dmsetup</command> is used in tests),
-      <xref linkend="python2"/> (python bindings), and
+      <xref linkend="lvm2"/> (<command>dmsetup</command> is used in tests) and
       <xref linkend="reiserfs"/> (for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (テストにて <command>dmsetup</command> が利用される),
-      <xref linkend="python2"/> (Python バインディング),
       <xref linkend="reiserfs"/> (テストのため)
     </para>
 @z
@@ -144,11 +142,12 @@
 @z
 
 @x
-        CONFIG_BTRFS_FS_POSIX_ACL and 
-        CONFIG_REISERFS_FS_XATTR are required for some tests.
+        CONFIG_BTRFS_FS_POSIX_ACL,
+        CONFIG_REISERFS_FS_XATTR, and
+        CONFIG_REISERFS_FS_POSIX_ACL are required for some tests.
         Other Btrfs options in the kernel are optional.
 @y
-        テストの中には CONFIG_BTRFS_FS_POSIX_ACL と CONFIG_REISERFS_FS_XATTR の設定を必要とするものがあります。
+        テストの中には CONFIG_BTRFS_FS_POSIX_ACL、CONFIG_REISERFS_FS_XATTR、CONFIG_REISERFS_FS_POSIX_ACL の設定を必要とするものがあります。
         Btrfs に関する他のオプションはすべて任意設定です。
 @z
 
@@ -173,13 +172,6 @@
         Some tests require grep built with perl regular expressions. To
         obtain this, rebuild grep with the LFS Chapter 8 instructions after
         installing <xref linkend="pcre"/>.
-@z
-
-@x
-      Before running tests, build a support program:
-      <!-- and disable several that fail:-->
-@y
-    テストを実行する場合は、その前にサポートプログラムをビルドします。
 @z
 
 @x

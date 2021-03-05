@@ -14,12 +14,12 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "48 MB (add 17 MB for tests)">
+  <!ENTITY openssh-buildsize     "51 MB (add 40 MB for tests)">
   <!ENTITY openssh-time          "0.2 SBU (Using parallelism=4; 
                                   running the tests takes 20+ minutes,
                                   irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "48 MB (テスト実施時はさらに 17 MB)">
+  <!ENTITY openssh-buildsize     "51 MB (テスト実施時はさらに 40 MB)">
   <!ENTITY openssh-time          "0.2 SBU (parallelism=4 利用時; テスト実施はプロセッサーの処理スピードとは無関係に最低でも 20 分以上)">
 @z
 
@@ -400,7 +400,7 @@
 
 @x
         <seg>
-          scp, sftp, slogin (symlink to ssh), ssh, ssh-add, ssh-agent,
+          scp, sftp, <!--slogin (symlink to ssh),--> ssh, ssh-add, ssh-agent,
           ssh-copy-id, ssh-keygen, ssh-keyscan, and sshd
         </seg>
         <seg>
@@ -413,7 +413,7 @@
         </seg>
 @y
         <seg>
-          scp, sftp, slogin (ssh へのシンボリックリンク), ssh, ssh-add, ssh-agent,
+          scp, sftp, <!--slogin (symlink to ssh),--> ssh, ssh-add, ssh-agent,
           ssh-copy-id, ssh-keygen, ssh-keyscan, sshd
         </seg>
         <seg>

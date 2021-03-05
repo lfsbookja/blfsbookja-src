@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY NetworkManager-buildsize     "900 MB (with tests)">
+  <!ENTITY NetworkManager-buildsize     "917 MB (with tests)">
   <!ENTITY NetworkManager-time          "0.9 SBU (with tests, using parallelism=4)">
 @y
-  <!ENTITY NetworkManager-buildsize     "900 MB (テスト込み)">
+  <!ENTITY NetworkManager-buildsize     "917 MB (テスト込み)">
   <!ENTITY NetworkManager-time          "0.9 SBU (テスト込み、parallelism=4 利用)">
 @z
 
@@ -218,8 +218,8 @@
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Six tests,
-      <filename>test-l3cfg</filename>,
+      issue: <command>ninja test</command>. Five tests,
+      <!--<filename>test-l3cfg</filename>,-->
       <filename>devices/test-acd</filename>,
       <filename>platform/test-tc-linux</filename>,
       <filename>platform/test-route-linux</filename>,
@@ -229,8 +229,8 @@
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Six tests,
-      <filename>test-l3cfg</filename>,
+      issue: <command>ninja test</command>. Five tests,
+      <!--<filename>test-l3cfg</filename>,-->
       <filename>devices/test-acd</filename>,
       <filename>platform/test-tc-linux</filename>,
       <filename>platform/test-route-linux</filename>,

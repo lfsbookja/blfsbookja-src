@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY mariadb-buildsize     "2.3 GB (644 MB installed)">
-  <!ENTITY mariadb-time          "7.0 SBU (with parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "2.3 GB (645 MB installed)">
+  <!ENTITY mariadb-time          "8.1 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @y
-  <!ENTITY mariadb-buildsize     "2.3 GB (644 MB がインストールされる)">
-  <!ENTITY mariadb-time          "7.0 SBU (with parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "2.3 GB (645 MB がインストールされる)">
+  <!ENTITY mariadb-time          "8.1 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @z
 
 @x
@@ -136,6 +136,7 @@
       <ulink url="http://taku910.github.io/mecab">MeCab</ulink>,
       <ulink url="http://msgpack.org/">MessagePack</ulink>,
       <ulink url="http://www.mruby.org/">mruby</ulink>,
+      <ulink url="https://google.github.io/snappy/">Snappy</ulink>,
       <ulink url="http://sphinxsearch.com/downloads/">Sphinx</ulink>,
       <ulink url="https://mariadb.com/kb/en/mariadb/tokudb/">TokuDB</ulink>, and
       <ulink url="http://zeromq.org/">ZeroMQ</ulink>
@@ -159,6 +160,7 @@
       <ulink url="http://taku910.github.io/mecab">MeCab</ulink>,
       <ulink url="http://msgpack.org/">MessagePack</ulink>,
       <ulink url="http://www.mruby.org/">mruby</ulink>,
+      <ulink url="https://google.github.io/snappy/">Snappy</ulink>,
       <ulink url="http://sphinxsearch.com/downloads/">Sphinx</ulink>,
       <ulink url="https://mariadb.com/kb/en/mariadb/tokudb/">TokuDB</ulink>,
       <ulink url="http://zeromq.org/">ZeroMQ</ulink>
@@ -226,11 +228,11 @@
 @x
       <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>: This switch enables
       compiling the embedded server library needed by certain applications,
-      such as <application>Amarok</application>..
+      such as <application>Amarok</application>.
 @y
       <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>: This switch enables
       compiling the embedded server library needed by certain applications,
-      such as <application>Amarok</application>..
+      such as <application>Amarok</application>.
 @z
 
 @x

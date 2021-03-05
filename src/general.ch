@@ -15,11 +15,11 @@
 
 @x
 <!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "February 22nd, &year;">
+<!ENTITY releasedate  "March 5th, &year;">
 @y
 <!ENTITY version      "&year;-&month;-&day;">
 <!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20210223">
+<!ENTITY jversion     "20210305">
 <!ENTITY jratio       "55.9? &percnt;">
 @z
 
@@ -99,16 +99,6 @@
 <!ENTITY lfs-dev              "../../../../lfs/view/development">
 <!ENTITY lfsja-dev            "http://lfsbookja.osdn.jp/svn-ja">
 <!ENTITY lfssysdja-dev        "http://lfsbookja.osdn.jp/svn-sysdja">
-@z
-
-@x
-<!ENTITY lfs10_checked        "<para>This package is known to build and work
-                              properly using an LFS-10.0 platform.</para>">
-<!ENTITY lfs10_built          "<para>This package is known to build using an LFS
-                              10.0 platform but has not been tested.</para>">
-@y
-<!ENTITY lfs10_checked        "<para>本パッケージは LFS-10.0 において正しくビルドでき動作することが確認されています。</para>">
-<!ENTITY lfs10_built          "<para>本パッケージは LFS-10.0 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
 @z
 
 @x

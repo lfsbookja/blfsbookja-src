@@ -340,13 +340,21 @@
 @z
 
 @x
-      <parameter>-Dvalgrind=false</parameter>: This parameter disables
+      <parameter>-Dvalgrind=disabled</parameter>: This parameter disables
       the usage of Valgrind during the build process. Remove this parameter
       if you have Valgrind installed, and wish to check for memory leaks.
 @y
-      <parameter>-Dvalgrind=false</parameter>: This parameter disables
+      <parameter>-Dvalgrind=disabled</parameter>: This parameter disables
       the usage of Valgrind during the build process. Remove this parameter
       if you have Valgrind installed, and wish to check for memory leaks.
+@z
+
+@x
+      <parameter>-Dlibunwind=disabled</parameter>: This parameter disables
+      the usage of libunwind.
+@y
+      <parameter>-Dlibunwind=disabled</parameter>: This parameter disables
+      the usage of libunwind.
 @z
 
 @x
