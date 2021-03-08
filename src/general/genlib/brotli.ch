@@ -107,20 +107,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-    <!--<xref linkend="lua"/> (to create Lua bindings) and -->
-      <xref linkend="python2"/> (to create python2 bindings)
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-    <!--<xref linkend="lua"/> (to create Lua bindings) and -->
-      <xref linkend="python2"/> (to create python2 bindings)
-    </para>
-@z
-
-@x
       User Notes: <ulink url="&blfs-wiki;/brotli"/>
 @y
       &UserNotes;: <ulink url="&blfs-wiki;/brotli"/>
@@ -152,17 +138,11 @@
 @z
 
 @x
-      If desired, either or both sets of python bindings can be built and
-      installed without any conflicts. If you need the
-      <application>Python2</application> bindings, add or substitute
-      <command>python2</command> for <command>python3</command> in the
-      following instructions:
+      If desired, build the <application>Python3</application>
+      bindings:
 @y
-      If desired, either or both sets of python bindings can be built and
-      installed without any conflicts. If you need the
-      <application>Python2</application> bindings, add or substitute
-      <command>python2</command> for <command>python3</command> in the
-      following instructions:
+      If desired, build the <application>Python3</application>
+      bindings:
 @z
 
 @x
@@ -184,15 +164,13 @@
 @z
 
 @x
-      If you have built either or both sets of <application>python</application>
-      bindings, install them as the <systemitem class="username">root</systemitem>
-      user (as before, use the appropriate version(s) of
-      <application>python</application>:
+      If you have built the <application>python</application> bindings,
+      install them as the <systemitem class="username">root</systemitem>
+      user:
 @y
-      If you have built either or both sets of <application>python</application>
-      bindings, install them as the <systemitem class="username">root</systemitem>
-      user (as before, use the appropriate version(s) of
-      <application>python</application>:
+      If you have built the <application>python</application> bindings,
+      install them as the <systemitem class="username">root</systemitem>
+      user:
 @z
 
 @x

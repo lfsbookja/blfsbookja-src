@@ -120,20 +120,20 @@
     <para role="optional">
       <xref linkend="gpm"/>,
       <xref linkend="lua"/>,
+<!-- can use python3: don't advertise python2
       <xref linkend="python2"/>,
-      <xref linkend="rsync"/> and
-      <xref linkend="ruby"/><!-- , and
-      <xref linkend="tcl"/> -->
+-->   <xref linkend="rsync"/>, and
+      <xref linkend="ruby"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gpm"/>,
       <xref linkend="lua"/>,
+<!-- can use python3: don't advertise python2
       <xref linkend="python2"/>,
-      <xref linkend="rsync"/>,
-      <xref linkend="ruby"/><!-- , and
-      <xref linkend="tcl"/> -->
+-->   <xref linkend="rsync"/>,
+      <xref linkend="ruby"/>
     </para>
 @z
 
@@ -286,21 +286,33 @@
 @x
       <option>--enable-luainterp</option>,
       <option>--enable-perlinterp</option>,
-      <option>--enable-pythoninterp</option>,
-      <option>--enable-tclinterp</option>,
+      <option>--enable-python3interp=dynamic</option>,
+      <option>--enable-tclinterp --with-tclsh=tclsh</option>,
       <option>--enable-rubyinterp</option>:
-      These options include the Lua, Perl, Python, Tcl, or Ruby interpreters that
-      allow using other application code in <application>vim</application>
-      scripts.
+      These options include the Lua, Perl, Python3, Tcl, or Ruby interpreters
+      that allow using other application code in <application>vim</application>
+      scripts. All the <option>--enable-...</option> options can accept
+      <option>=dynamic</option> to dynamically load the interpreter when
+      needed. This is required for <application>Python 3</application> to
+      prevent segmentation faults. For <application>tcl</application>,
+      it is necessary to indicate the name of the <command>tclsh</command>
+      executable, since <command>configure</command> only searches versioned
+      names with old versions.
 @y
       <option>--enable-luainterp</option>,
       <option>--enable-perlinterp</option>,
-      <option>--enable-pythoninterp</option>,
-      <option>--enable-tclinterp</option>,
+      <option>--enable-python3interp=dynamic</option>,
+      <option>--enable-tclinterp --with-tclsh=tclsh</option>,
       <option>--enable-rubyinterp</option>:
-      These options include the Lua, Perl, Python, Tcl, or Ruby interpreters that
-      allow using other application code in <application>vim</application>
-      scripts.
+      These options include the Lua, Perl, Python3, Tcl, or Ruby interpreters
+      that allow using other application code in <application>vim</application>
+      scripts. All the <option>--enable-...</option> options can accept
+      <option>=dynamic</option> to dynamically load the interpreter when
+      needed. This is required for <application>Python 3</application> to
+      prevent segmentation faults. For <application>tcl</application>,
+      it is necessary to indicate the name of the <command>tclsh</command>
+      executable, since <command>configure</command> only searches versioned
+      names with old versions.
 @z
 
 @x

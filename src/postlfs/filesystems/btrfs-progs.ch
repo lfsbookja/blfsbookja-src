@@ -142,13 +142,13 @@
 @z
 
 @x
-        CONFIG_BTRFS_FS_POSIX_ACL,
-        CONFIG_REISERFS_FS_XATTR, and
-        CONFIG_REISERFS_FS_POSIX_ACL are required for some tests.
-        Other Btrfs options in the kernel are optional.
+      In addition to the above and to the options required for
+      <xref linkend="lvm2"/> and <xref linkend="reiserfs"/>, the following
+      options must be enabled for running tests:
 @y
-        テストの中には CONFIG_BTRFS_FS_POSIX_ACL、CONFIG_REISERFS_FS_XATTR、CONFIG_REISERFS_FS_POSIX_ACL の設定を必要とするものがあります。
-        Btrfs に関する他のオプションはすべて任意設定です。
+      In addition to the above and to the options required for
+      <xref linkend="lvm2"/> and <xref linkend="reiserfs"/>, the following
+      options must be enabled for running tests:
 @z
 
 @x

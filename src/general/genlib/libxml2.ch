@@ -99,39 +99,41 @@
 @z
 
 @x
+-->
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> <!--or <xref linkend="python3"/> (to build and
-      install a <application>Python</application> library module, additionally
-      it is required to run the full suite of tests)-->
-      <!-- As discovered by Bruce, itstool needs this module. -->
+      <xref linkend="icu"/> (see below) and
+      <xref linkend="valgrind"/> (may be used in the tests)
     </para>
 @y
+-->
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> <!--or <xref linkend="python3"/> (to build and
-      install a <application>Python</application> library module, additionally
-      it is required to run the full suite of tests)-->
-      <!-- As discovered by Bruce, itstool needs this module. -->
+      <xref linkend="icu"/> (下記参照),
+      <xref linkend="valgrind"/> (テスト内で利用)
     </para>
 @z
 
-@x
-        Some packages which utilize <application>libxml2</application> (such as
-        <application>GNOME Doc Utils</application>) need the
-        <application>Python3</application> module installed to function properly
-        and some packages will not build properly if the
-        <application>Python3</application> module is not available.
-@y
-        <application>libxml2</application> を利用するパッケージの中には <application>Python3</application> モジュールがないと正しく動作しないものがあります。
-        （例えば <application>GNOME Doc Utils</application> など。）
-        また <application>Python3</application> モジュールがないとビルドができないパッケージもあります。
-@z
+%@x
+%        Some packages which utilize <application>libxml2</application> (such as
+%        <application>GNOME Doc Utils</application>) need the
+%        <application>Python3</application> module installed to function properly
+%        and some packages will not build properly if the
+%        <application>Python3</application> module is not available.
+%@y
+%        <application>libxml2</application> を利用するパッケージの中には <application>Python3</application> モジュールがないと正しく動作しないものがあります。
+%        （例えば <application>GNOME Doc Utils</application> など。）
+%        また <application>Python3</application> モジュールがないとビルドができないパッケージもあります。
+%@z
 
 @x
-      <xref linkend="valgrind"/> (may be used in the tests)
+        The old <application>Python2</application> module can be built after
+        <filename class="libraryfile">libxml2.so</filename> has been installed,
+        see <xref linkend="libxml2py2"/>.
 @y
-      <xref linkend="valgrind"/> (テスト実施時に利用)
+        The old <application>Python2</application> module can be built after
+        <filename class="libraryfile">libxml2.so</filename> has been installed,
+        see <xref linkend="libxml2py2"/>.
 @z
 
 @x

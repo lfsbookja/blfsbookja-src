@@ -106,18 +106,18 @@
     <para role="recommended">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>, and
-      <xref linkend="libxslt"/> (to build the man pages),
+      <xref linkend="libxslt"/> (all three to build the man pages),
       <xref linkend="linux-pam"/>, and
-      <xref linkend="polkit" role="runtime"/> (runtime)
+      <xref linkend="polkit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="libxslt"/> (man ページ生成のため),
+      <xref linkend="libxslt"/> (ここまでの 3 つは man ページ生成のため),
       <xref linkend="linux-pam"/>,
-      <xref linkend="polkit" role="runtime"/> (実行時)
+      <xref linkend="polkit"/>
     </para>
 @z
 

@@ -95,8 +95,9 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/> and
       <xref linkend="libxslt"/> (To generate man pages),
+<!-- not accepted anymore
       <xref linkend="python2"/> (To build Python-2 module),
-      <xref linkend="gdb"/>,
+-->   <xref linkend="gdb"/>,
       <xref linkend="git"/>,
       <xref linkend="libnsl"/>,
       <xref linkend="libtirpc"/>,
@@ -108,14 +109,15 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>,
+      <xref linkend="docbook-xsl"/> and
       <xref linkend="libxslt"/> (man ページ生成時),
-      <xref linkend="python2"/> (Python-2 モジュール生成時),
-      <xref linkend="gdb"/>,
+<!-- not accepted anymore
+      <xref linkend="python2"/> (To build Python-2 module),
+-->   <xref linkend="gdb"/>,
       <xref linkend="git"/>,
       <xref linkend="libnsl"/>,
       <xref linkend="libtirpc"/>,
-      <xref linkend="valgrind"/>,
+      <xref linkend="valgrind"/>, and
       <xref linkend="xfsprogs"/>
       <!-- These are all looked for at build time, but might not actually be used.-->
     </para>
