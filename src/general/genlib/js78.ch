@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY js78-buildsize     "2.9 GB (36 MB installed after removing 35MB static lib)">
-  <!ENTITY js78-time          "2.2 SBU (with parallelism = 4)">
+  <!ENTITY js78-buildsize     "2.0 GB (36 MB installed after removing 34MB static lib)">
+  <!ENTITY js78-time          "2.0 SBU (on a 4-core machine)">
 @y
-  <!ENTITY js78-buildsize     "2.9 GB (36 MB installed after removing 35MB static lib)">
-  <!ENTITY js78-time          "2.2 SBU (with parallelism = 4)">
+  <!ENTITY js78-buildsize     "2.0 GB (36 MB installed after removing 34MB static lib)">
+  <!ENTITY js78-time          "2.0 SBU (on a 4-core machine)">
 @z
 
 @x

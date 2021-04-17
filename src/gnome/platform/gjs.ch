@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gjs-buildsize     "82 MB (with tests)">
+  <!ENTITY gjs-buildsize     "93 MB (with tests)">
   <!ENTITY gjs-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY gjs-buildsize     "82 MB (テスト込み)">
-  <!ENTITY gjs-time          "0.8 SBU (テスト込み)">
+  <!ENTITY gjs-buildsize     "93 MB（テスト込み）">
+  <!ENTITY gjs-time          "0.8 SBU（テスト込み）">
 @z
 
 @x
@@ -103,12 +103,14 @@
 @x
     <bridgehead renderas="sect4">Recommended (required for GNOME)</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/> and
+      <xref linkend="gtk4"/>
     </para>
 @y
     <bridgehead renderas="sect4">Recommended (required for GNOME)</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>
     </para>
 @z
 
@@ -118,7 +120,6 @@
       <xref linkend="sysprof"/>,
       <xref linkend="valgrind"/> (for tests),
       <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
-      <ulink url="https://wiki.gnome.org/Projects/GTK/Roadmap/GTK4">GTK+-4</ulink>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>, and
       <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
     </para>
@@ -128,7 +129,6 @@
       <xref linkend="sysprof"/>,
       <xref linkend="valgrind"/> (テストのため),
       <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
-      <ulink url="https://wiki.gnome.org/Projects/GTK/Roadmap/GTK4">GTK+-4</ulink>,
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
       <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
     </para>

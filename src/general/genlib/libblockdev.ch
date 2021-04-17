@@ -101,7 +101,7 @@
       <xref linkend="btrfs-progs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="mdadm"/>,
-      <ulink url="http://people.redhat.com/~heinzm/sw/dmraid/">dmraid</ulink>,
+      <ulink url="https://people.redhat.com/~heinzm/sw/dmraid/">dmraid</ulink>,
       <ulink url="http://bcachefs.org/">bcachefs</ulink>, and
       <ulink url="https://github.com/pmem/ndctl">ndctl</ulink>
     </para>
@@ -111,7 +111,7 @@
       <xref linkend="btrfs-progs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="mdadm"/>,
-      <ulink url="http://people.redhat.com/~heinzm/sw/dmraid/">dmraid</ulink>,
+      <ulink url="https://people.redhat.com/~heinzm/sw/dmraid/">dmraid</ulink>,
       <ulink url="http://bcachefs.org/">bcachefs</ulink>,
       <ulink url="https://github.com/pmem/ndctl">ndctl</ulink>
     </para>

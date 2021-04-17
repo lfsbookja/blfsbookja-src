@@ -119,7 +119,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="itstool"/>,
       <xref linkend="fop"/> (or
-      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink>),
+      <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink>),
       and
       <ulink url="http://glade.gnome.org/">Glade</ulink>
     </para>
@@ -130,8 +130,8 @@
       <xref linkend="valgrind"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="fop"/> (または
-      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink>),
+      <xref linkend="fop"/> （または
+      <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink>）,
       <ulink url="http://glade.gnome.org/">Glade</ulink>
     </para>
 @z

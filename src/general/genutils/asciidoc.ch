@@ -91,7 +91,7 @@
       <xref linkend="fop"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="lynx"/>,
-      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink>, and
+      <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink>, and
       <ulink url="&w3m-url;">W3m</ulink>
     </para>
 @y
@@ -101,7 +101,7 @@
       <xref linkend="fop"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="lynx"/>,
-      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink>,
+      <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink>,
       <ulink url="&w3m-url;">W3m</ulink>
     </para>
 @z

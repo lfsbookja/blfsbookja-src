@@ -259,11 +259,11 @@
 @z
 
 @x sqlite3
-            A terminal-based front-end to the <application>SQLite</application>
+            is a terminal-based front-end to the <application>SQLite</application>
             library that can evaluate queries interactively and display the
             results
 @y
-            端末操作により <application>SQLite</application> ライブラリへアクセスするフロントエンド。
+            端末操作により <application>SQLite</application> ライブラリへアクセスするフロントエンドです。
             クエリーを対話的に実行しその結果を得ることができます。
 @z
 

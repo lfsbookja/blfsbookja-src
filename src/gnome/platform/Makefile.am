@@ -50,8 +50,6 @@ CHANGE_FILES = \
 	platform.ch                  \
 	rest.ch                      \
 	totem-pl-parser.ch           \
-	tracker.ch                   \
-	tracker-miners.ch            \
 	tracker3.ch                  \
 	tracker3-miners.ch           \
 	vte.ch                       \

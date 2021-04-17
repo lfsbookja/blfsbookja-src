@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY tracker3-miners-buildsize     "36 MB (with tests)">
-  <!ENTITY tracker3-miners-time          "1.2 SBU (with tests)">
+  <!ENTITY tracker3-miners-buildsize     "44 MB (with tests)">
+  <!ENTITY tracker3-miners-time          "1.0 SBU (with tests)">
 @y
-  <!ENTITY tracker3-miners-buildsize     "36 MB (テスト込み)">
-  <!ENTITY tracker3-miners-time          "1.2 SBU (テスト込み)">
+  <!ENTITY tracker3-miners-buildsize     "44 MB（テスト込み）">
+  <!ENTITY tracker3-miners-time          "1.0 SBU（テスト込み）">
 @z
 
 @x
@@ -138,8 +138,10 @@
       <xref linkend="upower"/>,
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
       <ulink url="http://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
-      <ulink url="https://libosinfo.org">libosinfo</ulink>, and
-      <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
+      <ulink url="https://libosinfo.org">libosinfo</ulink>,
+      <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>, and
+      <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+      (for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -155,7 +157,9 @@
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
       <ulink url="http://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
       <ulink url="https://libosinfo.org">libosinfo</ulink>,
-      <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
+      <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>,
+      <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+      (for tests)
     </para>
 @z
 
@@ -190,13 +194,12 @@
 
 @x
       To test the results, as the <systemitem class="username">root</systemitem>
-      user, issue: <command>ninja test</command>. One test,
-      <filename>tracker-miners:miners-common / file-utils</filename>, may fail
-      due to internal test suite problems.
+      user, issue: <command>ninja test</command>.  38 tests will fail if the
+      Python 3 module tap.py is not installed.
 @y
       ビルド結果をテストする場合は <systemitem
       class="username">root</systemitem> ユーザーになって <command>ninja test</command> を実行します。
-      <filename>tracker-miners:miners-common / file-utils</filename> というテストだけが、テストスイート内部の問題により失敗するかもしれません。
+      Python 3 モジュール tap.py がインストールされていない場合、38 個のテストが失敗します。
 @z
 
 @x

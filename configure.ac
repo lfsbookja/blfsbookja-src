@@ -102,6 +102,7 @@ AC_CONFIG_FILES([Makefile
 		 src/postlfs/config/Makefile
 		 src/postlfs/editors/Makefile
 		 src/postlfs/filesystems/Makefile
+		 src/postlfs/filesystems/uefi-bootloaders/Makefile
 		 src/postlfs/security/Makefile
 		 src/postlfs/shells/Makefile
 		 src/postlfs/virtualization/Makefile

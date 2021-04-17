@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "229 MB (add 6 MB for tests)">
-  <!ENTITY harfbuzz-time          "0.3 SBU (Using parallelism=4; add 0.2 SBU for tests)">
+  <!ENTITY harfbuzz-buildsize     "226 MB (add 18 MB for tests)">
+  <!ENTITY harfbuzz-time          "0.4 SBU (Using parallelism=4; add 0.2 SBU for tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "229 MB （テスト実施時はさらに 6 MB）">
-  <!ENTITY harfbuzz-time          "0.3 SBU （parallelism=4 利用時。テスト実施時はさらに 0.2 SBU）"> 
+  <!ENTITY harfbuzz-buildsize     "226 MB （テスト実施時はさらに 18 MB）">
+  <!ENTITY harfbuzz-time          "0.4 SBU （parallelism=4 利用時。テスト実施時はさらに 0.2 SBU）"> 
 @z
 
 @x
@@ -117,9 +117,10 @@
       dependencies, including harfbuzz, first, then rebuild harfbuzz if the
       cairo backend is needed),
       <xref linkend="git"/>,
-      <xref linkend="gtk-doc"/>, and
+      <xref linkend="gtk-doc"/>,
       <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
-      (Python 3 module, for the testsuite)
+      (Python 3 module, for the testsuite), and
+      <ulink url="https://www.colm.net/open-source/ragel/">ragel</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -128,9 +129,10 @@
       dependencies, including harfbuzz, first, then rebuild harfbuzz if the
       cairo backend is needed),
       <xref linkend="git"/>,
-      <xref linkend="gtk-doc"/>, and
+      <xref linkend="gtk-doc"/>,
       <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
-      (Python 3 module, for the testsuite)
+      (Python 3 module, for the testsuite),
+      <ulink url="https://www.colm.net/open-source/ragel/">ragel</ulink>
     </para>
 @z
 

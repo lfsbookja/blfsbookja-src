@@ -77,14 +77,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="babl"/> and
-      <xref linkend="json-glib"/>
+      <xref linkend="babl"/>,
+      <xref linkend="json-glib"/>,
+      <xref linkend="libjpeg"/>, and
+      <xref linkend="libpng"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="babl"/>,
-      <xref linkend="json-glib"/>
+      <xref linkend="json-glib"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>
     </para>
 @z
 
@@ -97,12 +101,9 @@
       <xref linkend="ffmpeg"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="gexiv2"/>,
-      <xref linkend="graphviz"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="jasper"/>,
       <xref linkend="lcms2"/>,
-      <xref linkend="libjpeg"/>
-      <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
@@ -111,9 +112,9 @@
       <xref linkend="sdl2"/>,
       <xref linkend="v4l-utils"/>,
       <xref linkend="vala"/>,
+      <xref linkend="libspiro"/>,
       <ulink url="https://lensfun.github.io/">lensfun</ulink>,
       <ulink url="https://libopenraw.pages.freedesktop.org/">libopenraw</ulink>,
-      <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
       <ulink url="http://faculty.cse.tamu.edu/davis/suitesparse.html">libumfpack</ulink>,
       <ulink url="http://luajit.org/luajit.html">LuaJIT</ulink>,
       <ulink url="https://github.com/hodefoting/mrg/releases">MRG</ulink>, and
@@ -128,12 +129,9 @@
       <xref linkend="ffmpeg"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="gexiv2"/>,
-      <xref linkend="graphviz"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="jasper"/>,
       <xref linkend="lcms2"/>,
-      <xref linkend="libjpeg"/>
-      <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
@@ -142,9 +140,9 @@
       <xref linkend="sdl2"/>,
       <xref linkend="v4l-utils"/>,
       <xref linkend="vala"/>,
+      <xref linkend="libspiro"/>,
       <ulink url="https://lensfun.github.io/">lensfun</ulink>,
       <ulink url="https://libopenraw.pages.freedesktop.org/">libopenraw</ulink>,
-      <ulink url="http://libspiro.sourceforge.net/">libspiro</ulink>,
       <ulink url="http://faculty.cse.tamu.edu/davis/suitesparse.html">libumfpack</ulink>,
       <ulink url="http://luajit.org/luajit.html">LuaJIT</ulink>,
       <ulink url="https://github.com/hodefoting/mrg/releases">MRG</ulink>,

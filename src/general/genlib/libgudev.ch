@@ -122,10 +122,9 @@
 @z
 
 @x
-      If you wish to run the test suite, omit "--disable-umockdev" from the
-      configure command and then issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      テストスイートを実行したい場合は configure コマンドに対して "--disable-umockdev" をはずし、その後に  <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -138,6 +137,14 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>-Dgtk_doc=true</option>: Use this option if GTK-Doc is installed
+      and you wish to build and install the API documentation.
+@y
+      <option>-Dgtk_doc=true</option>:
+      GTK-Doc がインストールされていて、API ドキュメントのビルドとインストールを行いたい場合に、本オプションを指定します。
 @z
 
 @x

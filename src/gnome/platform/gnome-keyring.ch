@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY gnome-keyring-time          "0.2 SBU (Using parallelism=4; add 0.3 SBU for tests)">
+@y
+  <!ENTITY gnome-keyring-time          "0.2 SBU（parallelism=4 利用時。テスト実施時はさらに 0.3 SBU）">
+@z
+
+@x
     <title>Introduction to GNOME Keyring</title>
 @y
     <title>&IntroductionTo1;GNOME Keyring&IntroductionTo2;</title>

@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY vte-buildsize     "13 MB (with tests)">
+  <!ENTITY vte-time          "0.3 SBU (using parallelism=4; with tests)">
+@y
+  <!ENTITY vte-buildsize     "13 MB（テスト込み）">
+  <!ENTITY vte-time          "0.3 SBU（parallelism=4 利用時、テスト込み）">
+@z
+
+@x
     <title>Introduction to VTE</title>
 @y
     <title>&IntroductionTo1;VTE&IntroductionTo2;</title>
@@ -116,14 +124,20 @@
     <para role="optional">
       <xref linkend="fribidi"/>,
       <xref linkend="gtk-doc"/>, and
-      <ulink url="https://wiki.gnome.org/Projects/GTK/Roadmap/GTK4">GTK+-4</ulink>
+      <xref linkend="gtk4"/>
+      <!-- Does not currently work unless you pass -Dgtk4=true to meson. However,
+           it's not looking for gtk-4, it's looking for gtk+-4, so it will still
+           fail to build for now.-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="fribidi"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="https://wiki.gnome.org/Projects/GTK/Roadmap/GTK4">GTK+-4</ulink>
+      <xref linkend="gtk4"/>
+      <!-- Does not currently work unless you pass -Dgtk4=true to meson. However,
+           it's not looking for gtk-4, it's looking for gtk+-4, so it will still
+           fail to build for now.-->
     </para>
 @z
 

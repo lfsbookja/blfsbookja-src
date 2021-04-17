@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY samba-buildsize     "629 MB (add 380 MB for quicktest)">
-  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 4.9 SBU for quicktest)">
+  <!ENTITY samba-buildsize     "620 MB (add 380 MB for quicktest)">
+  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 4.7 SBU for quicktest)">
 @y
-  <!ENTITY samba-buildsize     "629 MB (add 380 MB for quicktest)">
-  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 4.9 SBU for quicktest)">
+  <!ENTITY samba-buildsize     "620 MB (add 380 MB for quicktest)">
+  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 4.7 SBU for quicktest)">
 @z
 
 @x
@@ -123,8 +123,7 @@
       <xref linkend="icu"/>,
       <xref linkend="libxslt"/> (for documentation),
       <xref linkend="linux-pam"/>,
-      <xref linkend="perl-parse-yapp"/>,
-      <xref linkend="pycryptodome"/>, and
+      <xref linkend="perl-parse-yapp"/>, and
       <xref linkend="openldap"/>
     </para>
 @y
@@ -135,10 +134,9 @@
       <xref linkend="fuse3"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="icu"/>,
-      <xref linkend="libxslt"/> (ドキュメント生成のため),
+      <xref linkend="libxslt"/>（ドキュメント生成のため）,
       <xref linkend="linux-pam"/>,
       <xref linkend="perl-parse-yapp"/>,
-      <xref linkend="pycryptodome"/>,
       <xref linkend="openldap"/>
     </para>
 @z
@@ -167,6 +165,7 @@
       <!--<xref linkend="wireshark"/> (module installed),-->
       <xref linkend="xfsprogs"/>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
+      <ulink url="https://cryptography.io/en/latest/">cryptography</ulink>,
       <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
       <ulink url="https://cwrap.org/">cwrap</ulink>,
       <ulink url="&pypi;/dnspython/">dnspython</ulink>,
@@ -174,10 +173,12 @@
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
       <ulink url="https://www.gluster.org/">GlusterFS</ulink>,
       <ulink url="https://github.com/heimdal/">Heimdal</ulink> (included),
+      <ulink url="https://pypi.org/project/iso8601/">iso8601</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
+      <ulink url="https://pypi.org/project/pyasn1/">pyasn1</ulink>,
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
       <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
       <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
@@ -206,6 +207,7 @@
       <!--<xref linkend="wireshark"/> (module installed),-->
       <xref linkend="xfsprogs"/>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
+      <ulink url="https://cryptography.io/en/latest/">cryptography</ulink>,
       <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
       <ulink url="https://cwrap.org/">cwrap</ulink>,
       <ulink url="&pypi;/dnspython/">dnspython</ulink>,
@@ -213,12 +215,14 @@
       <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
       <ulink url="https://www.gluster.org/">GlusterFS</ulink>,
       <ulink url="https://github.com/heimdal/">Heimdal</ulink> (included),
+      <ulink url="https://pypi.org/project/iso8601/">iso8601</ulink>,
       <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
       <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
+      <ulink url="https://pypi.org/project/pyasn1/">pyasn1</ulink>,
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
-      <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
+      <ulink url="https://tevent.samba.org/">tevent</ulink> (included),
       <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
     </para>
 @z
@@ -268,22 +272,41 @@
 
 @x
         Additionally, developer test suites are available. If you've installed
-        the optional python modules above, you can run these tests with
+        the optional python modules above in the Python virtual environment
+        for building this package, you can run these tests with
         <command>make test</command>. It is not recommended for the average
         builder at around 290 SBU and over a gigabyte of disk space, and you
         should expect ~73 errors and ~30 failures from the 3000+ tests.
 @y
         Additionally, developer test suites are available. If you've installed
-        the optional python modules above, you can run these tests with
+        the optional python modules above in the Python virtual environment
+        for building this package, you can run these tests with
         <command>make test</command>. It is not recommended for the average
         builder at around 290 SBU and over a gigabyte of disk space, and you
         should expect ~73 errors and ~30 failures from the 3000+ tests.
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Fix a hard coded path to Python 3 interpreter:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      Fix a hard coded path to Python 3 interpreter:
+@z
+
+@x
+      If upgrading from an old version of samba, as the
+      <systemitem class="username">root</systemitem> user, remove the old
+      Python support files to prevent some issues:
+@y
+      If upgrading from an old version of samba, as the
+      <systemitem class="username">root</systemitem> user, remove the old
+      Python support files to prevent some issues:
+@z
+
+@x
+      Still as the <systemitem class="username">root</systemitem> user,
+      install the package:
+@y
+      <systemitem class="username">root</systemitem> ユーザーのまま、以下を実行してパッケージをインストールします。
 @z
 
 @x

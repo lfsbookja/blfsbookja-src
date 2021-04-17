@@ -106,11 +106,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="cmake"/> (for CMake Bindings),
+      <xref linkend="cmake"/>, <!-- uses it to look for packages -->
       <xref linkend="gtk-doc"/>,
       <xref linkend="gvfs"/> (for some tests),
       <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
-      <ulink url="http://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
+      <ulink url="https://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
       - if they are installed, then
       <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>
       is necessary for the tests
@@ -118,11 +118,11 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cmake"/> (for CMake Bindings),
+      <xref linkend="cmake"/>, <!-- uses it to look for packages -->
       <xref linkend="gtk-doc"/>,
       <xref linkend="gvfs"/> (for some tests),
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>,
-      <ulink url="http://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
+      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
+      <ulink url="https://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
       - if they are installed, then
       <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>
       is necessary for the tests

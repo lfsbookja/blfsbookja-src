@@ -158,13 +158,27 @@
 @z
 
 @x
-    The LFS boot scripts automatically make these file systems available to
-    the system in the checkfs script. Edit the <filename>/etc/fstab</filename>
-    file as required to automatically mount them.
+    It may be needed to activate those logical volumes, for them to
+    appear in <filename class="directory">/dev</filename>. They can all
+    be activated at the same time by issuing, as the
+    <systemitem class="username">root</systemitem> user:
 @y
-    The LFS boot scripts automatically make these file systems available to
-    the system in the checkfs script. Edit the <filename>/etc/fstab</filename>
-    file as required to automatically mount them.
+    It may be needed to activate those logical volumes, for them to
+    appear in <filename class="directory">/dev</filename>. They can all
+    be activated at the same time by issuing, as the
+    <systemitem class="username">root</systemitem> user:
+@z
+
+@x revision="sysv"
+    The LFS boot scripts automatically make these logical volumes available to
+    the system in the <command>udev</command> script. Edit the
+    <filename>/etc/fstab</filename> file as required to automatically mount
+    them.
+@y
+    The LFS boot scripts automatically make these logical volumes available to
+    the system in the <command>udev</command> script. Edit the
+    <filename>/etc/fstab</filename> file as required to automatically mount
+    them.
 @z
 
 @x
@@ -179,12 +193,48 @@
     the <parameter>root=</parameter> switch of the kernel command line.
 @z
 
-@x
-    For a more information about LVM, see the <ulink
-    url="http://www.tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</ulink> and
-    the lvm man pages.
+@x revision="systemd"
+    If not using an initramfs, there is a race condition in <application>
+    systemd</application> preventing mounting logical volumes through
+    <filename>/etc/fstab</filename>. You must create a <quote>mount</quote>
+    unit (see systemd.mount(5)) as in the following example, which mounts
+    the <filename class="directory">/home</filename> directory automatically
+    at boot:
 @y
-    For a more information about LVM, see the <ulink
+    If not using an initramfs, there is a race condition in <application>
+    systemd</application> preventing mounting logical volumes through
+    <filename>/etc/fstab</filename>. You must create a <quote>mount</quote>
+    unit (see systemd.mount(5)) as in the following example, which mounts
+    the <filename class="directory">/home</filename> directory automatically
+    at boot:
+@z
+
+@x revision="systemd"
+    The name of the unit must be the name of the mount point with the
+    `/' character replaced by `-', omitting the leading one.
+@y
+    The name of the unit must be the name of the mount point with the
+    `/' character replaced by `-', omitting the leading one.
+@z
+
+@x revision="systemd"
+    Next the unit must be enabled with:
+@y
+    Next the unit must be enabled with:
+@z
+
+@x
+    For more information about LVM, see the <ulink
     url="http://www.tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</ulink> and
-    the lvm man pages.
+    the lvm man pages. A good in-depth
+    <ulink url="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index">
+    guide</ulink> is available from RedHat<superscript>&reg;</superscript>,
+    although it makes sometimes reference to proprietary tools.
+@y
+    For more information about LVM, see the <ulink
+    url="http://www.tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</ulink> and
+    the lvm man pages. A good in-depth
+    <ulink url="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index">
+    guide</ulink> is available from RedHat<superscript>&reg;</superscript>,
+    although it makes sometimes reference to proprietary tools.
 @z

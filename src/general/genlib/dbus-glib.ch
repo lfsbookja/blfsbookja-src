@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY dbus-glib-buildsize     "10 MB (with tests)">
+  <!ENTITY dbus-glib-buildsize     "12 MB (with tests)">
   <!ENTITY dbus-glib-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY dbus-glib-buildsize     "10 MB (テスト込み)">
+  <!ENTITY dbus-glib-buildsize     "12 MB (テスト込み)">
   <!ENTITY dbus-glib-time          "0.1 SBU (テスト込み)">
 @z
 
@@ -175,8 +175,7 @@
           libdbus-glib-1.so
         </seg>
         <seg>
-          /usr/share/gtk-doc/html/dbus-glib and
-          /usr/share/doc/dbus-glib-&dbus-glib-version;
+          /usr/share/gtk-doc/html/dbus-glib
         </seg>
 @y
         <seg>
@@ -186,8 +185,7 @@
           libdbus-glib-1.so
         </seg>
         <seg>
-          /usr/share/gtk-doc/html/dbus-glib,
-          /usr/share/doc/dbus-glib-&dbus-glib-version;
+          /usr/share/gtk-doc/html/dbus-glib
         </seg>
 @z
 

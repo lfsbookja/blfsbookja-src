@@ -122,14 +122,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="tracker"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="tracker"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 

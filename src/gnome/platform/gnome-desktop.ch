@@ -219,6 +219,7 @@
         </seg>
         <seg>
           /usr/include/gnome-desktop-3.0,
+          /usr/libexec/gnome-desktop-debug,
           /usr/share/gnome,
           /usr/share/gtk-doc/html/gnome-desktop3, and
           /usr/share/help/*/{fdl,gpl,lgpl}
@@ -232,6 +233,7 @@
         </seg>
         <seg>
           /usr/include/gnome-desktop-3.0,
+          /usr/libexec/gnome-desktop-debug,
           /usr/share/gnome,
           /usr/share/gtk-doc/html/gnome-desktop3,
           /usr/share/help/*/{fdl,gpl,lgpl}

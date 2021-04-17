@@ -42,6 +42,12 @@
 @z
 
 @x
+  <pubdate>Published &pubdate;</pubdate>
+@y
+  <pubdate>&pubdate; 公開（日本語訳 &jversion;）</pubdate>
+@z
+
+@x
     <para>This book is licensed under a <xref linkend="CC"/>.</para>
 @y
     <para>本書のライセンスは <xref linkend="CC"/> に基づきます。</para>
@@ -67,13 +73,15 @@
       <revremark>進行中リリース</revremark>
 @z
 
-@x
-      <revnumber>10.0</revnumber>
-      <date>2020-09-01</date>
+@x 2021-03-01
+      <revremark>Twenty-third Release</revremark>
+@y
+      <revremark>第 23 次リリース</revremark>
+@z
+
+@x 2020-09-01
       <revremark>Twenty-second Release</revremark>
 @y
-      <revnumber>10.0</revnumber>
-      <date>2020-09-01</date>
       <revremark>第 22 次リリース</revremark>
 @z
 

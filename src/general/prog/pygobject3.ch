@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY pygobject3-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY pygobject3-time          "0.2 SBU (Using parallelism=4)">
 @y
-  <!ENTITY pygobject3-time          "0.1 SBU (parallelism=4 利用時)">
+  <!ENTITY pygobject3-time          "0.2 SBU (parallelism=4 利用時)">
 @z
 
 @x
@@ -130,69 +130,34 @@
 @z
 
 @x
-          Both <application>Python 2</application> and
-          <application>Python 3</application> modules can
-          be built and installed without any conflicts.
+      First, remove a faulty test:
 @y
-          <application>Python 2</application> モジュールと <application>Python 3</application> モジュールはどちらもビルド可能であり、互いに干渉することはありません。
+      First, remove a faulty test:
 @z
 
 @x
-        To build <application>PyGObject3</application> as a
-        <application>Python 2</application> module, run the
-        following commands:
+      Install <application>pygobject3</application> by running the following
+      commands:
 @y
-        <application>PyGObject3</application> の <application>Python 2</application> モジュールをビルドするには、以下のコマンドを実行します。
+      以下のコマンドを実行して <application>pygobject3</application> をビルドします。
 @z
 
 @x
-        To test the results, issue: <command>ninja -C python2 test</command>.
-        An already active graphical session with bus address is necessary to
-        run the tests. Two tests fail due to a search for GTK+-4, which has not
-        been released yet.
+      To test the results, issue: <command>ninja test</command>.
+      An already active graphical session with a bus address is necessary
+      to run the tests. One test, <filename>tests/test_gdbus.py</filename>,
+      is known to fail.
 @y
-        To test the results, issue: <command>ninja -C python2 test</command>.
-        An already active graphical session with bus address is necessary to
-        run the tests. Two tests fail due to a search for GTK+-4, which has not
-        been released yet.
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      An already active graphical session with a bus address is necessary
+      to run the tests. One test, <filename>tests/test_gdbus.py</filename>,
+      is known to fail.
 @z
 
 @x
-        To build <application>PyGObject3</application> as a
-        <application>Python 3</application> module, run the
-        following commands:
+      Now, as the <systemitem class="username">root</systemitem> user:
 @y
-        <application>PyGObject3</application> の <application>Python 3</application> モジュールをビルドするには、以下のコマンドを実行します。
-@z
-
-@x
-        To test the results, issue: <command>ninja -C python3 test</command>.
-        An already active graphical session with bus address is necessary to
-        run the tests. Two tests fail due to a search for GTK+-4, which has not
-        been released yet.
-@y
-        To test the results, issue: <command>ninja -C python3 test</command>.
-        An already active graphical session with bus address is necessary to
-        run the tests. Two tests fail due to a search for GTK+-4, which has not
-        been released yet.
-@z
-
-@x
-        To install the <application>Python 2</application> module,
-        run the following command as the
-        <systemitem class="username">root</systemitem> user:
-@y
-        <application>Python 2</application> モジュールをインストールするために <systemitem
-        class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-        To install the <application>Python 3</application> module,
-        run the following command as the
-        <systemitem class="username">root</systemitem> user:
-@y
-        <application>Python 3</application> モジュールをインストールするために <systemitem
-        class="username">root</systemitem> ユーザーになって以下を実行します。
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

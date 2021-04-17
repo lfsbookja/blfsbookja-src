@@ -133,17 +133,19 @@
 
 @x
         <seg>
-          scsi_logging_level, scsi_mandat, scsi_readcap, scsi_ready, scsi_satl,
-          scsi_start, scsi_stop, scsi_temperature, sg_bg_ctl, sg_compare_and_write,
-          sg_copy_results, sg_dd, sg_decode_sense, sg_emc_trespass, sg_format,
+          rescan-scsi-bus.sh, scsi_logging_level, scsi_mandat, scsi_readcap, 
+          scsi_ready, scsi_satl, scsi_start, scsi_stop, scsi_temperature,
+          sg_bg_ctl, sg_compare_and_write, sg_copy_results, sg_dd,
+          sg_decode_sense, sg_emc_trespass, sg_format,
           sg_get_config, sg_get_lba_status, sg_ident, sg_inq, sg_logs, sg_luns,
           sg_map, sg_map26, sg_modes, sg_opcodes, sg_persist, sg_prevent,
           sg_raw, sg_rbuf, sg_rdac, sg_read, sg_read_attr, sg_read_block_limits,
           sg_read_buffer, sg_read_long, sg_readcap, sg_reassign, sg_referrals,
-          sg_rep_zones, sg_requests, sg_reset, sg_reset_wp, sg_rmsn, sg_rtpg,
-          sg_safte, sg_sanitize, sg_sat_identify, sg_sat_phy_event,
-          sg_sat_read_gplog, sg_sat_set_features, sg_scan, sg_seek, sg_senddiag, sg_ses,
-          sg_ses_microcode, sg_start, sg_stpg, sg_stream_ctl, sg_sync, sg_test_rwbuf, 
+          sg_rep_pip, sg_rep_zones, sg_requests, sg_reset, sg_reset_wp,
+          sg_rmsn, sg_rtpg, sg_safte, sg_sanitize, sg_sat_identify,
+          sg_sat_phy_event, sg_sat_read_gplog, sg_sat_set_features, sg_scan,
+          sg_seek, sg_senddiag, sg_ses, sg_ses_microcode, sg_start, sg_stpg,
+          sg_stream_ctl, sg_sync, sg_test_rwbuf, sg_timestamp, 
           sg_turs, sg_unmap, sg_verify, sg_vpd, sg_wr_mode, sg_write_buffer,
           sg_write_long, sg_write_same, sg_write_verify, sg_write_x, sg_xcopy, sg_zone, 
           sginfo, sgm_dd, and sgp_dd
@@ -156,17 +158,19 @@
         </seg>
 @y
         <seg>
-          scsi_logging_level, scsi_mandat, scsi_readcap, scsi_ready, scsi_satl,
-          scsi_start, scsi_stop, scsi_temperature, sg_bg_ctl, sg_compare_and_write,
-          sg_copy_results, sg_dd, sg_decode_sense, sg_emc_trespass, sg_format,
+          rescan-scsi-bus.sh, scsi_logging_level, scsi_mandat, scsi_readcap, 
+          scsi_ready, scsi_satl, scsi_start, scsi_stop, scsi_temperature,
+          sg_bg_ctl, sg_compare_and_write, sg_copy_results, sg_dd,
+          sg_decode_sense, sg_emc_trespass, sg_format,
           sg_get_config, sg_get_lba_status, sg_ident, sg_inq, sg_logs, sg_luns,
           sg_map, sg_map26, sg_modes, sg_opcodes, sg_persist, sg_prevent,
           sg_raw, sg_rbuf, sg_rdac, sg_read, sg_read_attr, sg_read_block_limits,
           sg_read_buffer, sg_read_long, sg_readcap, sg_reassign, sg_referrals,
-          sg_rep_zones, sg_requests, sg_reset, sg_reset_wp, sg_rmsn, sg_rtpg,
-          sg_safte, sg_sanitize, sg_sat_identify, sg_sat_phy_event,
-          sg_sat_read_gplog, sg_sat_set_features, sg_scan, sg_seek, sg_senddiag, sg_ses,
-          sg_ses_microcode, sg_start, sg_stpg, sg_stream_ctl, sg_sync, sg_test_rwbuf, 
+          sg_rep_pip, sg_rep_zones, sg_requests, sg_reset, sg_reset_wp,
+          sg_rmsn, sg_rtpg, sg_safte, sg_sanitize, sg_sat_identify,
+          sg_sat_phy_event, sg_sat_read_gplog, sg_sat_set_features, sg_scan,
+          sg_seek, sg_senddiag, sg_ses, sg_ses_microcode, sg_start, sg_stpg,
+          sg_stream_ctl, sg_sync, sg_test_rwbuf, sg_timestamp, 
           sg_turs, sg_unmap, sg_verify, sg_vpd, sg_wr_mode, sg_write_buffer,
           sg_write_long, sg_write_same, sg_write_verify, sg_write_x, sg_xcopy, sg_zone, 
           sginfo, sgm_dd, sgp_dd
@@ -183,6 +187,12 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x rescan-scsi-bus.sh
+            adds or removes SCSI devices without having to reboot
+@y
+            adds or removes SCSI devices without having to reboot
 @z
 
 @x sg_dd
@@ -282,9 +292,9 @@
 @z
 
 @x sg_modes
-            reads mode pages with SCSI MODE SENSE command
+            reads mode pages with the SCSI MODE SENSE command
 @y
-            reads mode pages with SCSI MODE SENSE command
+            reads mode pages with the SCSI MODE SENSE command
 @z
 
 @x sg_opcodes
@@ -324,15 +334,15 @@
 @z
 
 @x sg_rbuf
-            reads data using SCSI READ BUFFER command
+            reads data using the SCSI READ BUFFER command
 @y
-            reads data using SCSI READ BUFFER command
+            reads data using the SCSI READ BUFFER command
 @z
 
 @x sg_rdac
-            displays or modifies RDAC Redundant Controller Page
+            displays or modifies the RDAC Redundant Controller Page
 @y
-            displays or modifies RDAC Redundant Controller Page
+            displays or modifies the RDAC Redundant Controller Page
 @z
 
 @x sg_read
@@ -372,9 +382,15 @@
 @z
 
 @x sg_referrals
-            sends the SCSI REPORT REFERRALS command
+            sends a SCSI REPORT REFERRALS command
 @y
-            sends the SCSI REPORT REFERRALS command
+            sends a SCSI REPORT REFERRALS command
+@z
+
+@x sg_rep_pip
+            sends a SCSI REPORT PROVISIONING INITIALIZATION PATTERN command
+@y
+            sends a SCSI REPORT PROVISIONING INITIALIZATION PATTERN command
 @z
 
 @x sg_requests
@@ -384,9 +400,9 @@
 @z
 
 @x sg_reset
-            sends SCSI device, target, bus or host reset; or checks reset state
+            sends a SCSI device, target, bus or host reset; or checks reset state
 @y
-            sends SCSI device, target, bus or host reset; or checks reset state
+            sends a SCSI device, target, bus or host reset; or checks reset state
 @z
 
 @x sg_rmsn
@@ -394,4 +410,3 @@
 @y
             sends a SCSI READ MEDIA SERIAL NUMBER command
 @z
-

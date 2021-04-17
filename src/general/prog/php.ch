@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "675 MB (with tests, add 182 MB for documentation)">
-  <!ENTITY php-time          "1.8 SBU (with parallelism=4; add 1.9 SBU for tests)">
+  <!ENTITY php-buildsize     "694 MB (with tests, add 182 MB for documentation)">
+  <!ENTITY php-time          "1.7 SBU (with parallelism=4; add 2.0 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "675 MB（テスト込み、ドキュメント生成時はさらに 182 MB）">
-  <!ENTITY php-time          "1.8 SBU（parallelism=4 利用時、テスト実施時はさらに 1.9 SBU）">
+  <!ENTITY php-buildsize     "694 MB（テスト込み、ドキュメント生成時はさらに 182 MB）">
+  <!ENTITY php-time          "1.7 SBU（parallelism=4 利用時、テスト実施時はさらに 2.0 SBU）">
 @z
 
 @x
@@ -189,22 +189,22 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="tidy-html5"/>,
-      <ulink url="http://sourceforge.net/projects/caudium/">Caudium</ulink>,
+      <ulink url="https://sourceforge.net/projects/caudium/">Caudium</ulink>,
       <ulink url="https://www.hyperwave.com/en/">Hyperwave</ulink>,
       <ulink url="http://www.mnogosearch.org/">mnoGoSearch</ulink>,
       <ulink url="http://download.roxen.com/6.1/">Roxen WebServer</ulink>, and
-      <ulink url="https://wddxnet.codeplex.com/">WDDX</ulink>
+      <ulink url="https://github.com/Bilal-S/WDDX.net">WDDX</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">任意のウェブユーティリティー</bridgehead>
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="tidy-html5"/>,
-      <ulink url="http://sourceforge.net/projects/caudium/">Caudium</ulink>,
+      <ulink url="https://sourceforge.net/projects/caudium/">Caudium</ulink>,
       <ulink url="https://www.hyperwave.com/en/">Hyperwave</ulink>,
       <ulink url="http://www.mnogosearch.org/">mnoGoSearch</ulink>,
       <ulink url="http://download.roxen.com/6.1/">Roxen WebServer</ulink>,
-      <ulink url="https://wddxnet.codeplex.com/">WDDX</ulink>
+      <ulink url="https://github.com/Bilal-S/WDDX.net">WDDX</ulink>
     </para>
 @z
 
@@ -229,7 +229,7 @@
       <ulink url="https://www.ibm.com/analytics/us/en/db2/">IBM DB2</ulink>,
       <ulink url="http://www.hughes.com.au/products/msql/">Mini SQL</ulink>,
       <ulink url="http://www.monetra.com/">Monetra</ulink>, and
-      <ulink url="http://sourceforge.net/projects/qdbm">QDBM</ulink>
+      <ulink url="https://sourceforge.net/projects/qdbm">QDBM</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">任意のデータ管理ユーティリティーおよびライブラリ</bridgehead>
@@ -252,7 +252,7 @@
       <ulink url="https://www.ibm.com/analytics/us/en/db2/">IBM DB2</ulink>,
       <ulink url="http://www.hughes.com.au/products/msql/">Mini SQL</ulink>,
       <ulink url="http://www.monetra.com/">Monetra</ulink>,
-      <ulink url="http://sourceforge.net/projects/qdbm">QDBM</ulink>
+      <ulink url="https://sourceforge.net/projects/qdbm">QDBM</ulink>
     </para>
 @z
 

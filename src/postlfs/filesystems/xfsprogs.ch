@@ -313,10 +313,10 @@
 
 @x xfs_quota
             is a utility for reporting and editing various
-            aspects of filesystem quota
+            aspects of filesystem quotas
 @y
             is a utility for reporting and editing various
-            aspects of filesystem quota
+            aspects of filesystem quotas
 @z
 
 @x xfs_repair

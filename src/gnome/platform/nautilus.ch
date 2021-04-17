@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY nautilus-time          "1.0 SBU (with tests, at -j4)">
+@y
+  <!ENTITY nautilus-time          "1.0 SBU（テスト込み。-j4 利用）">
+@z
+
+@x
     <title>Introduction to Nautilus</title>
 @y
     <title>&IntroductionTo1;Nautilus&IntroductionTo2;</title>
@@ -81,6 +87,7 @@
       <xref linkend="gexiv2"/>,
       <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-desktop"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libseccomp"/>, and
       <xref linkend="tracker3-miners"/>
@@ -92,6 +99,7 @@
       <xref linkend="gexiv2"/>,
       <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-desktop"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="libseccomp"/>,
       <xref linkend="tracker3-miners"/>
@@ -104,8 +112,9 @@
       <xref linkend="desktop-file-utils"/>,
       <xref linkend="exempi"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gst10-plugins-base"/>, and
-      <xref linkend="libexif"/>
+      <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="libexif"/>, and
+      <xref linkend="libportal"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -114,7 +123,8 @@
       <xref linkend="exempi"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="libexif"/>
+      <xref linkend="libexif"/>,
+      <xref linkend="libportal"/>
     </para>
 @z
 
@@ -198,6 +208,14 @@
 @y
       <parameter>-Dpackagekit=false</parameter>: This switch disables the use
       of PackageKit which isn't suitable for BLFS.
+@z
+
+@x
+      <option>-Dlibportal=false</option>: Use this switch if you do not
+      have <xref linkend="libportal"/> installed.
+@y
+      <option>-Dlibportal=false</option>: Use this switch if you do not
+      have <xref linkend="libportal"/> installed.
 @z
 
 @x

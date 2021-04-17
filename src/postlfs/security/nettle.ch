@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY nettle-buildsize     "89 MB (with tests)">
+  <!ENTITY nettle-buildsize     "88 MB (with tests)">
   <!ENTITY nettle-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY nettle-buildsize     "89 MB (テスト込み)">
-  <!ENTITY nettle-time          "0.4 SBU (テスト込み)">
+  <!ENTITY nettle-buildsize     "88 MB（テスト込み）">
+  <!ENTITY nettle-time          "0.4 SBU（テスト込み）">
 @z
 
 @x
@@ -85,12 +85,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/> (for examples)
+      <xref linkend="valgrind"/> (optional for the tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="openssl"/> (example プログラムのため)
+      <xref linkend="valgrind"/> (optional for the tests)
     </para>
 @z
 

@@ -5,6 +5,7 @@
 ## $Rev$
 ## $Date::                           $
 ##
+SUBDIRS = uefi-bootloaders
 BOOKdir = @abs_bookdir@/postlfs/filesystems
 CHANGE_FILES = \
 	aboutlvm.ch      \

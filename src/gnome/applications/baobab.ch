@@ -79,7 +79,8 @@
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="itstool"/> and
+      <xref linkend="itstool"/>,
+      <xref linkend="libhandy1"/>, and
       <xref linkend="vala"/>
     </para>
 @y
@@ -88,6 +89,7 @@
       <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="vala"/>
     </para>
 @z

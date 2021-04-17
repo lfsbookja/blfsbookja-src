@@ -119,6 +119,14 @@
 @z
 
 @x
+      <command>rm -fv /usr/lib/libgif.a</command>: This command removes a
+      static library which is not used by any BLFS package.
+@y
+      <command>rm -fv /usr/lib/libgif.a</command>: This command removes a
+      static library which is not used by any BLFS package.
+@z
+
+@x
       <command>find doc ... -exec rm -v {} \;</command>: This command removes
       <filename>Makefiles</filename>, man and xml files from the documentation
       directory that would otherwise be installed by the commands that follow.

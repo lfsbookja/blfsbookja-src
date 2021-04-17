@@ -136,7 +136,7 @@
       <xref linkend="valgrind"/> (used during the test suite),
       <ulink url="&gnu-http;/autogen/">autogen</ulink>,
       <ulink url="https://cmocka.org/">cmocka</ulink> and
-      <ulink url="http://ftp.debian.org/debian/pool/main/d/datefudge/">datefudge</ulink> (used during the test suite if the DANE library is built), and
+      <ulink url="https://ftp.debian.org/debian/pool/main/d/datefudge/">datefudge</ulink> (used during the test suite if the DANE library is built), and
       <ulink url="&sourceforge-dl;/trousers/">Trousers</ulink> (Trusted Platform Module support)
     </para>
 @y
@@ -154,7 +154,7 @@
       <xref linkend="valgrind"/> (used during the test suite),
       <ulink url="&gnu-http;/autogen/">autogen</ulink>,
       <ulink url="https://cmocka.org/">cmocka</ulink> and
-      <ulink url="http://ftp.debian.org/debian/pool/main/d/datefudge/">datefudge</ulink> (used during the test suite if the DANE library is built), and
+      <ulink url="https://ftp.debian.org/debian/pool/main/d/datefudge/">datefudge</ulink> (used during the test suite if the DANE library is built), and
       <ulink url="&sourceforge-dl;/trousers/">Trousers</ulink> (Trusted Platform Module support)
     </para>
 @z
@@ -187,22 +187,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.  If a prior
-      version of <application>GnuTLS</application> (or the same version but
-      without all of the recommended dependencies) has been installed, some
-      tests may fail. If <filename>/usr/lib/libgnutls.so</filename> and the
-      target of that symlink are moved or renamed so that they cannot be found,
-      all tests should pass and the install procedure will restore
-      <filename>libgnutls.so</filename> and the versioned library it points to.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      If a prior
-      version of <application>GnuTLS</application> (or the same version but
-      without all of the recommended dependencies) has been installed, some
-      tests may fail. If <filename>/usr/lib/libgnutls.so</filename> and the
-      target of that symlink are moved or renamed so that they cannot be found,
-      all tests should pass and the install procedure will restore
-      <filename>libgnutls.so</filename> and the versioned library it points to.
 @z
 
 @x

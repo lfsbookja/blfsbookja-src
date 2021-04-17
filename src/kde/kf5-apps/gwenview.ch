@@ -105,12 +105,12 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://download.kde.org/stable/release-service/&kf5apps-version;/src/">KF5Kipi</ulink>
+      <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">KF5Kipi</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://download.kde.org/stable/release-service/&kf5apps-version;/src/">KF5Kipi</ulink>
+      <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">KF5Kipi</ulink>
     </para>
 @z
 

@@ -82,15 +82,15 @@
 @z
 
 @x
-      <title>Optional HTML Documentation</title>
+          Required patch:
 @y
-      <title>任意の HTML ドキュメント</title>
+          必須のパッチ:
 @z
 
 @x
-          Download (HTTP): <ulink url="&python2htmldoc-download-http;"/>
+          Optional HTML Documentation: <ulink url="&python2htmldoc-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&python2htmldoc-download-http;"/>
+          任意の HTML ドキュメント: <ulink url="&python2htmldoc-download-http;"/>
 @z
 
 @x
@@ -159,8 +159,10 @@
 @z
 
 @x
+      If you invoke the tests, they will run through twice.
       To test the results, issue: <command>make -k test</command>.
 @y
+      テストを実行するには、二度の実行が必要です。
       ビルド結果をテストする場合は <command>make -k test</command> を実行します。
 @z
 

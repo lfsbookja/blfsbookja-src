@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY graphviz-time          "1.0 SBU (using parallelism=4)">
+  <!ENTITY graphviz-time          "0.7 SBU (using parallelism=4)">
 @y
-  <!ENTITY graphviz-time          "1.0 SBU（parallelism=4 指定時）">
+  <!ENTITY graphviz-time          "0.7 SBU（parallelism=4 指定時）">
 @z
 
 @x
@@ -169,7 +169,7 @@
       Other formats may be added with
       <xref linkend="libwebp"/> (WebP support is considered experimental),
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
-      <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
+      <ulink url="https://sourceforge.net/projects/lasi/">libLASi</ulink>,
       <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
       and <ulink url="http://www.libming.org/">libming</ulink> (Adobe
       Flash)
@@ -177,7 +177,7 @@
       Other formats may be added with
       <xref linkend="libwebp"/> (WebP support is considered experimental),
       <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
-      <ulink url="http://sourceforge.net/projects/lasi/">libLASi</ulink>,
+      <ulink url="https://sourceforge.net/projects/lasi/">libLASi</ulink>,
       <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
       and <ulink url="http://www.libming.org/">libming</ulink> (Adobe
       Flash)
@@ -279,15 +279,15 @@
     <bridgehead renderas="sect4">Optional (building tools)</bridgehead>
     <para role="optional">
       <ulink url="https://github.com/Snaipe/Criterion">Criterion</ulink>
-          (framework for tests),
-      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
+          (framework for tests) and
+      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">Optional (building tools)</bridgehead>
     <para role="optional">
       <ulink url="https://github.com/Snaipe/Criterion">Criterion</ulink>
           (framework for tests),
-      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
+      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>
     </para>
 @z
 
@@ -359,7 +359,7 @@
         There are no specific configuration requirements for
         <application>Graphviz</application>. You may consider installing the
         additional plugins and tools available from the download page at
-        <ulink url="http://www.graphviz.org/Download_source.php"/> for additional
+        <ulink url="https://graphviz.org/download/source/"/> for additional
         capabilities. If additional plugins are installed, you can run
         <command>dot -c</command> (as the
         <systemitem class="username">root</systemitem> user) to update the
@@ -369,7 +369,7 @@
         There are no specific configuration requirements for
         <application>Graphviz</application>. You may consider installing the
         additional plugins and tools available from the download page at
-        <ulink url="http://www.graphviz.org/Download_source.php"/> for additional
+        <ulink url="https://graphviz.org/download/source/"/> for additional
         capabilities. If additional plugins are installed, you can run
         <command>dot -c</command> (as the
         <systemitem class="username">root</systemitem> user) to update the
@@ -406,7 +406,7 @@
           libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so, 
           libpathplan.so, libxdot.so, and several plugins in /usr/lib/graphviz.
           There are also several in subdirectories of
-          /usr/lib/{lua,perl5,php,python&python2-majorver;,python&python3-majorver;tcl8.6}.
+          /usr/lib/{lua,perl5,php,python&python2-majorver;,python&python3-majorver;,tcl8.6}.
           Unfortunately, some libraries are duplicated.
         </seg>
         <seg>
@@ -428,7 +428,7 @@
         <seg>
           libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so, 
           libpathplan.so, libxdot.so, /usr/lib/graphviz 配下に数種のプラグイン,
-          /usr/lib/{lua,perl5,php,python&python2-majorver;,python&python3-majorver;tcl8.6} 配下にサブディレクトリ,
+          /usr/lib/{lua,perl5,php,python&python2-majorver;,python&python3-majorver;,tcl8.6} 配下にサブディレクトリ,
           ただしライブラリの中には重複しているものあり。
         </seg>
         <seg>

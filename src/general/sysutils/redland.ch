@@ -95,7 +95,7 @@
       <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="postgresql"/>,
       <ulink url="&sourceforge-dl;/virtuoso/">virtuoso</ulink>, and
-      <ulink url="http://sourceforge.net/projects/threestore/">3store</ulink>
+      <ulink url="https://sourceforge.net/projects/threestore/">3store</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -106,7 +106,7 @@
       <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="postgresql"/>,
       <ulink url="&sourceforge-dl;/virtuoso/">virtuoso</ulink>,
-      <ulink url="http://sourceforge.net/projects/threestore/">3store</ulink>
+      <ulink url="https://sourceforge.net/projects/threestore/">3store</ulink>
     </para>
 @z
 

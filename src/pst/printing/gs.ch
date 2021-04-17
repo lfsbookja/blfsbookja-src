@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY gs-buildsize     "247 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "0.7 SBU (Using parallelism=4; with libgs.so)">
+  <!ENTITY gs-buildsize     "342 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "1.8 SBU (Using parallelism=4; with libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "247 MB (フォントと libgs.so)">
-  <!ENTITY gs-time          "0.7 SBU (parallelism=4 指定時; libgs.so 込み)">
+  <!ENTITY gs-buildsize     "342 MB（フォントと libgs.so）">
+  <!ENTITY gs-time          "1.8 SBU（parallelism=4 指定時、libgs.so 込み）">
 @z
 
 @x
@@ -293,21 +293,21 @@
 @z
 
 @x
-      Now make the documentation accessible from the normal place:
+      Now make the documentation accessible from a standard place:
 @y
-      Now make the documentation accessible from the normal place:
+      Now make the documentation accessible from a standard place:
 @z
 
 @x
       If you have downloaded the fonts, unpack them to
       <filename class="directory">/usr/share/ghostscript</filename> and ensure
-      the ownerships of the files are
+      the ownership of the files are
       <systemitem class="username">root</systemitem>:
       <systemitem class="groupname">root</systemitem>.
 @y
       If you have downloaded the fonts, unpack them to
       <filename class="directory">/usr/share/ghostscript</filename> and ensure
-      the ownerships of the files are
+      the ownership of the files are
       <systemitem class="username">root</systemitem>:
       <systemitem class="groupname">root</systemitem>.
 @z

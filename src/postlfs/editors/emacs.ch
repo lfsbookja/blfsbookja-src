@@ -14,9 +14,9 @@
 @z
 
 @x
-  <!ENTITY emacs-time          "0.7 SBU (Using parallelism=4)">
+  <!ENTITY emacs-time          "0.6 SBU (Using parallelism=4)">
 @y
-  <!ENTITY emacs-time          "0.7 SBU (parallelism=4 利用時)">
+  <!ENTITY emacs-time          "0.6 SBU（parallelism=4 利用時）">
 @z
 
 @x
@@ -88,15 +88,19 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="harfbuzz"/>,
       <xref linkend="giflib"/>,
-      <xref linkend="gnutls"/>, and
+      <xref linkend="gnutls"/>,
+      <xref linkend="jansson"/>, and
       <xref linkend="libtiff"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="harfbuzz"/>,
       <xref linkend="giflib"/>,
       <xref linkend="gnutls"/>,
+      <xref linkend="jansson"/>,
       <xref linkend="libtiff"/>
     </para>
 @z
@@ -106,6 +110,7 @@
     <para role="optional">
       <xref linkend="x-window-system"/>,
       <xref linkend="alsa-lib"/>,
+      <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="GConf"/>,
       <xref linkend="gobject-introspection"/>,
@@ -113,7 +118,7 @@
       <xref linkend="gpm"/>,
       <xref role="nodep" linkend="gtk2"/> or <xref linkend="gtk3"/>,
       <xref linkend="imagemagick"/>,
-      <xref linkend="jansson"/>, <!-- for JSON support -->
+      <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
@@ -122,10 +127,11 @@
       <xref linkend="valgrind"/>,
       <ulink url="&gnu-http;/intlfonts/">intlfonts</ulink>,
       <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>,
-      <ulink url="http://www.nongnu.org/m17n/">libotf</ulink> and
+      <ulink url="http://www.nongnu.org/m17n/">libotf</ulink>, and
       <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
       display such complex scripts as Indic and Khmer, and also for scripts
-      that require Arabic shaping support (Arabic and Farsi), and
+      that require Arabic shaping support (Arabic and Farsi),
+      <ulink url="https://mailutils.org/">mailutils</ulink>, and
       <ulink url="&xorg-download-http;/lib/">libXaw3d</ulink>
     </para>
 @y
@@ -133,6 +139,7 @@
     <para role="optional">
       <xref linkend="x-window-system"/>,
       <xref linkend="alsa-lib"/>,
+      <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="GConf"/>,
       <xref linkend="gobject-introspection"/>,
@@ -140,7 +147,7 @@
       <xref linkend="gpm"/>,
       <xref role="nodep" linkend="gtk2"/> or <xref linkend="gtk3"/>,
       <xref linkend="imagemagick"/>,
-      <xref linkend="jansson"/>, <!-- for JSON support -->
+      <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="librsvg"/>,
@@ -149,10 +156,11 @@
       <xref linkend="valgrind"/>,
       <ulink url="&gnu-http;/intlfonts/">intlfonts</ulink>,
       <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>,
-      <ulink url="http://www.nongnu.org/m17n/">libotf</ulink> and
+      <ulink url="http://www.nongnu.org/m17n/">libotf</ulink>, and
       <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
       display such complex scripts as Indic and Khmer, and also for scripts
       that require Arabic shaping support (Arabic and Farsi),
+      <ulink url="https://mailutils.org/">mailutils</ulink>, and
       <ulink url="&xorg-download-http;/lib/">libXaw3d</ulink>
     </para>
 @z
@@ -204,17 +212,6 @@
 @z
 
 @x
-      <parameter>--localstatedir=/var</parameter>: Create game score files
-      in <filename class='directory'>/var/games/emacs</filename> instead
-      of <filename class='directory'>/usr/var/games/emacs</filename>.
-@y
-      <parameter>--localstatedir=/var</parameter>:
-      ゲームスコアのファイルを <filename
-      class='directory'>/usr/var/games/emacs</filename> ではなく<filename
-      class='directory'>/var/games/emacs</filename> に生成します。
-@z
-
-@x
       <option>--with-imagemagick</option>: Use this if you have installed
       <xref linkend="imagemagick"/> and wish to link against it.
 @y
@@ -253,25 +250,21 @@
              ebrowse,
              emacs (symlink),
              emacs-&emacs-version;,
-             emacsclient,
-             etags, and
-             grep-changelog</seg>
+             emacsclient, and
+             etags</seg>
         <seg>None</seg>
-        <seg>/usr/libexec/emacs,
-             /usr/share/emacs, and
-             /var/games/emacs</seg>
+        <seg>/usr/libexec/emacs and
+             /usr/share/emacs</seg>
 @y
         <seg>ctags,
              ebrowse,
-             emacs (シンボリックリンク),
+             emacs（シンボリックリンク）,
              emacs-&emacs-version;,
              emacsclient,
-             etags,
-             grep-changelog</seg>
+             etags</seg>
         <seg>&None;</seg>
         <seg>/usr/libexec/emacs,
-             /usr/share/emacs,
-             /var/games/emacs</seg>
+             /usr/share/emacs</seg>
 @z
 
 @x

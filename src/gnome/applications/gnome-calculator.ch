@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY gnome-calculator-buildsize     "62 MB (with tests)">
+  <!ENTITY gnome-calculator-time          "0.3 SBU (with tests)">
+@y
+  <!ENTITY gnome-calculator-buildsize     "62 MB（テスト込み）">
+  <!ENTITY gnome-calculator-time          "0.3 SBU（テスト込み）">
+@z
+
+@x
     <title>Introduction to GNOME Calculator</title>
 @y
     <title>&IntroductionTo1;GNOME Calculator&IntroductionTo2;</title>
@@ -83,7 +91,8 @@
       <xref linkend="gtk3"/>,
       <xref linkend="gtksourceview4"/>, 
       <xref linkend="itstool"/>, 
-      <xref linkend="libgee"/>, and
+      <xref linkend="libgee"/>,
+      <xref linkend="libhandy1"/>, and
       <xref linkend="libsoup"/>
     </para>
 @y
@@ -93,6 +102,7 @@
       <xref linkend="gtksourceview4"/>, 
       <xref linkend="itstool"/>, 
       <xref linkend="libgee"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="libsoup"/>
     </para>
 @z
@@ -165,19 +175,21 @@
         </seg>
         <seg>
           /usr/include/gcalc-2,
-          /usr/include/gci-2, and
+          /usr/include/gci-2,
+          /usr/share/devhelp/books/{GCalc-2,GCi-1}, and
           /usr/share/help/*/gnome-calculator
         </seg>
 @y
         <seg>
-          gcalccmd, gnome-calculator
+          gcalccmd and gnome-calculator
         </seg>
         <seg>
-          libgcalc-2.so, libgci-1.so
+          libgcalc-2.so and libgci-1.so
         </seg>
         <seg>
           /usr/include/gcalc-2,
           /usr/include/gci-2,
+          /usr/share/devhelp/books/{GCalc-2,GCi-1},
           /usr/share/help/*/gnome-calculator
         </seg>
 @z

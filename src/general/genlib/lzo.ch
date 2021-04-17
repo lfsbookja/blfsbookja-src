@@ -16,7 +16,7 @@
 @x
   <!ENTITY lzo-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY lzo-time          "0.3 SBU (テスト込み)">
+  <!ENTITY lzo-time          "0.3 SBU（テスト込み）">
 @z
 
 @x

@@ -109,7 +109,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
+      <ulink url="https://sourceforge.net/projects/tdb">TDB</ulink>
       (alternative to GDBM, built in LFS),
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="libidn"/>,
@@ -127,12 +127,12 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://sourceforge.net/projects/tdb">TDB</ulink>
+      <ulink url="https://sourceforge.net/projects/tdb">TDB</ulink>
       （LFS でビルドしている GDBM の代用）,
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="libidn"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="mariadb"/> または
+      <xref linkend="mariadb"/> or
       <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="gnutls"/>,

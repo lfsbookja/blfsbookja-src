@@ -14,18 +14,26 @@
 @z
 
 @x
-    <title>Introduction to WebKitGTK+</title>
+  <!ENTITY webkitgtk-buildsize     "899 MB (127 MB installed)">
+  <!ENTITY webkitgtk-time          "29 SBU (using parallelism=4, estimated 96 SBU using one core)">
 @y
-    <title>&IntroductionTo1;WebKitGTK+&IntroductionTo2;</title>
+  <!ENTITY webkitgtk-buildsize     "899 MB (127 MB installed)">
+  <!ENTITY webkitgtk-time          "29 SBU (using parallelism=4, estimated 96 SBU using one core)">
 @z
 
 @x
-      The <application>WebKitGTK+</application> package is a port of the 
+    <title>Introduction to WebKitGTK</title>
+@y
+    <title>&IntroductionTo1;WebKitGTK&IntroductionTo2;</title>
+@z
+
+@x
+      The <application>WebKitGTK</application> package is a port of the 
       portable web rendering engine <application>WebKit</application> to the
       <application>GTK+ 3</application> and <application>GTK+ 2</application>
       platforms.
 @y
-      The <application>WebKitGTK+</application> package is a port of the 
+      The <application>WebKitGTK</application> package is a port of the 
       portable web rendering engine <application>WebKit</application> to the
       <application>GTK+ 3</application> and <application>GTK+ 2</application>
       platforms.
@@ -74,9 +82,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">WebKitGTK+ Dependencies</bridgehead>
+    <bridgehead renderas="sect3">WebKitGTK Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;WebKitGTK+&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;WebKitGTK&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -91,6 +99,7 @@
       <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="libtasn1"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="mesa"/>,
       <xref linkend="openjpeg2"/>,
@@ -110,6 +119,7 @@
       <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="libtasn1"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="mesa"/>,
       <xref linkend="openjpeg2"/>,
@@ -144,12 +154,14 @@
     <para role="optional">
       <xref linkend="bubblewrap"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="wayland"/>,
       <xref linkend="woff2"/>,
       <ulink url="https://ccache.dev/">ccache</ulink>,
-      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
+      <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
+      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>,
       <ulink url="https://github.com/WebPlatformForEmbedded/libwpe">libwpe</ulink>,
       <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>, and
       <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
@@ -159,14 +171,16 @@
     <para role="optional">
       <xref linkend="bubblewrap"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="wayland"/>,
       <xref linkend="woff2"/>,
       <ulink url="https://ccache.dev/">ccache</ulink>,
-      <ulink url="http://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
+      <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
+      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>,
       <ulink url="https://github.com/WebPlatformForEmbedded/libwpe">libwpe</ulink>,
-      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>,
+      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>, and
       <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
     </para>
 @z
@@ -178,16 +192,16 @@
 @z
 
 @x
-    <title>Installation of WebKitGTK+</title>
+    <title>Installation of WebKitGTK</title>
 @y
-    <title>&InstallationOf1;WebKitGTK+&InstallationOf2;</title>
+    <title>&InstallationOf1;WebKitGTK&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>WebKitGTK+</application> by running the
+      Install <application>WebKitGTK</application> by running the
       following commands:
 @y
-      以下のコマンドを実行して <application>WebKitGTK+</application> をビルドします。
+      以下のコマンドを実行して <application>WebKitGTK</application> をビルドします。
 @z
 
 @x

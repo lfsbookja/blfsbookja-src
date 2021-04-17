@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libhandy1-buildsize     "16 MB (with tests)">
-  <!ENTITY libhandy1-time          "0.2 SBU (with tests)">
+  <!ENTITY libhandy1-buildsize     "28 MB (with tests)">
+  <!ENTITY libhandy1-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY libhandy1-buildsize     "16 MB (テスト込み)">
-  <!ENTITY libhandy1-time          "0.2 SBU (テスト込み)">
+  <!ENTITY libhandy1-buildsize     "28 MB（テスト込み）">
+  <!ENTITY libhandy1-time          "0.3 SBU（テスト込み）">
 @z
 
 @x

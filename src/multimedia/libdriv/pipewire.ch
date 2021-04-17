@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY pipewire-buildsize     "124 MB (with tests)">
+  <!ENTITY pipewire-buildsize     "135 MB (with tests)">
   <!ENTITY pipewire-time          "0.4 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY pipewire-buildsize     "124 MB (テスト込み)">
-  <!ENTITY pipewire-time          "0.4 SBU (parallelism=4 利用時、テスト込み)">
+  <!ENTITY pipewire-buildsize     "135 MB（テスト込み）">
+  <!ENTITY pipewire-time          "0.4 SBU（parallelism=4 利用時、テスト込み）">
 @z
 
 @x
@@ -221,6 +221,7 @@
           pw-cli,
           pw-dot,
           pw-dump,
+          pw-jack,
           pw-metadata,
           pw-mididump,
           pw-mon,
@@ -230,6 +231,7 @@
           pw-top,
           spa-acp-tool,
           spa-inspect,
+          spa-json-dump,
           spa-monitor, 
           spa-resample, and
           pw-midiplay, pw-midirecord, pw-play, and pw-record (symlinks to pw-cat)
@@ -274,6 +276,7 @@
           pw-cli,
           pw-dot,
           pw-dump,
+          pw-jack,
           pw-metadata,
           pw-mididump,
           pw-mon,
@@ -283,12 +286,13 @@
           pw-top,
           spa-acp-tool,
           spa-inspect,
+          spa-json-dump,
           spa-monitor, 
-          spa-resample,
-          pw-midiplay, pw-midirecord, pw-play, and pw-record (symlinks to pw-cat)
+          spa-resample, and
+          pw-midiplay, pw-midirecord, pw-play, pw-record (symlinks to pw-cat)
         </seg>
         <seg>
-          libpipewire-0.3.so and
+          libpipewire-0.3.so,
           30 modules below /usr/lib/pipewire-0.3<!--,
      [pierre July 29th, 2020]: all the following libs are in subdirectories
      of /usr/lib. I'm not sure they should appear. But if they should, there

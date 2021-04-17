@@ -97,6 +97,34 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <phrase revision="sysv"><xref linkend="gnome-shell"/> and</phrase>
+      <xref linkend="nautilus"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <phrase revision="sysv"><xref linkend="gnome-shell"/>,</phrase>
+      <xref linkend="nautilus"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="desktop-file-utils"/>, and 
+      <ulink url="&appstream-glib-url;">appstream-glib</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="desktop-file-utils"/>,
+      <ulink url="&appstream-glib-url;">appstream-glib</ulink>
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:

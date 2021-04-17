@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY libassuan-buildsize     "6.7 MB (with tests)">
-  <!ENTITY libassuan-time          "0.1 SBU (with tests)">
+  <!ENTITY libassuan-buildsize     "7.4 MB (with tests, add 3.4 MB for documentation)">
+  <!ENTITY libassuan-time          "0.1 SBU (with tests and documentation)">
 @y
-  <!ENTITY libassuan-buildsize     "6.7 MB (テスト込み)">
-  <!ENTITY libassuan-time          "0.1 SBU (テスト込み)">
+  <!ENTITY libassuan-buildsize     "7.4 MB（テスト込み、ドキュメント込みはさらに 3.4 MB）">
+  <!ENTITY libassuan-time          "0.1 SBU（テスト、ドキュメント込み）">
 @z
 
 @x

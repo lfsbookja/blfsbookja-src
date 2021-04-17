@@ -159,8 +159,8 @@
       <command>sed -i ... src/luaconf.h</command>: This command changes the
       <application>Lua</application> search path to match the install path.
 @y
-      <command>sed -i ... src/luaconf.h</command>: This command changes the
-      <application>Lua</application> search path to match the install path.
+      <command>sed -i ... src/luaconf.h</command>:
+      このコマンドは <application>Lua</application> の検索パスをインストールパスに合致するようにします。
 @z
 
 @x

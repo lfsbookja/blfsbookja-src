@@ -78,13 +78,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtksourceview"/> and 
+      <xref linkend="gtksourceview4"/> and 
       <xref linkend="xfconf"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtksourceview"/>,
+      <xref linkend="gtksourceview4"/>,
       <xref linkend="xfconf"/>
     </para>
 @z

@@ -14,6 +14,14 @@
 @z
 
 @x
+  <!ENTITY jasper-buildsize     "10 MB (with tests)">
+  <!ENTITY jasper-time          "0.2 SBU (with tests)">
+@y
+  <!ENTITY jasper-buildsize     "10 MB（テスト込み）">
+  <!ENTITY jasper-time          "0.2 SBU（テスト込み）">
+@z
+
+@x
     <title>Introduction to JasPer</title>
 @y
     <title>&IntroductionTo1;JasPer&IntroductionTo2;</title>

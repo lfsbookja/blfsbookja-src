@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY gnome-control-center-buildsize     "187 MB (with tests)">
+@y
+  <!ENTITY gnome-control-center-buildsize     "187 MB（テスト込み）">
+@z
+
+@x
     <title>Introduction to GNOME Control Center</title>
 @y
     <title>&IntroductionTo1;GNOME Control Center&IntroductionTo2;</title>

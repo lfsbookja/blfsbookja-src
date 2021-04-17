@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "206 MB (add 1 MB for tests)">
+  <!ENTITY glib2-buildsize     "178 MB (add 5 MB for tests)">
   <!ENTITY glib2-time          "0.5 SBU (add 1.0 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY glib2-buildsize     "206 MB (テスト実施時はさらに 1 MB)">
-  <!ENTITY glib2-time          "0.5 SBU (テスト実施時はさらに 1.0 SBU; いずれも paralleism=4)">
+  <!ENTITY glib2-buildsize     "178 MB（テスト実施時はさらに 5 MB）">
+  <!ENTITY glib2-time          "0.5 SBU（テスト実施時はさらに 1.0 SBU、いずれも paralleism=4）">
 @z
 
 @x
@@ -110,9 +110,10 @@
       <xref linkend="gdb"/> (for bindings),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>, 
-      <xref linkend="gtk-doc"/> (to build API documentation), and
+      <xref linkend="gtk-doc"/> (to build API documentation),
       <xref linkend="glib-networking"/> (for some tests, but this is a circular
-          dependency)
+      dependency), and
+      <xref linkend="sysprof"/>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
@@ -123,7 +124,8 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>, 
       <xref linkend="gtk-doc"/> (API ドキュメント生成のため),
-      <xref linkend="glib-networking"/> (一部のテストのため、ただし循環依存性あり)
+      <xref linkend="glib-networking"/> (一部のテストのため、ただし循環依存性あり),
+      <xref linkend="sysprof"/>
 @z
 
 @x

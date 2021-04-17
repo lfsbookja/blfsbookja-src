@@ -142,9 +142,9 @@
 @z
 
 @x
-      To run the tests, execute the following commands (5 tests are known to fail):
+      To run the tests, execute the following commands (1 test is known to fail):
 @y
-      To run the tests, execute the following commands (5 tests are known to fail):
+      To run the tests, execute the following commands (1 test is known to fail):
 @z
 
 @x

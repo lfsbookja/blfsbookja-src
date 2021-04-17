@@ -110,14 +110,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://glade.gnome.org/">Glade</ulink> and
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://glade.gnome.org/">Glade</ulink>, and
+      <ulink url="https://pypi.org/project/pylint/">pylint</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://glade.gnome.org/">Glade</ulink> and
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <ulink url="http://glade.gnome.org/">Glade</ulink>,
+      <ulink url="https://pypi.org/project/pylint/">pylint</ulink>
     </para>
 @z
 
@@ -182,6 +184,7 @@
           libgweather-3.so
         </seg>
         <seg>
+          /usr/lib/libgweather,
           /usr/include/libgweather-3.0,
           /usr/share/gtk-doc/html/libgweather-3.0 and
           /usr/share/libgweather
@@ -194,6 +197,7 @@
           libgweather-3.so
         </seg>
         <seg>
+          /usr/lib/libgweather,
           /usr/include/libgweather-3.0,
           /usr/share/gtk-doc/html/libgweather-3.0 and
           /usr/share/libgweather

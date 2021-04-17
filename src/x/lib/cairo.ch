@@ -224,14 +224,10 @@
 
 @x
       <option>--enable-xlib-xcb</option>: This switch enables several
-      experimental Xlib/XCB functions used by some window managers. Note that
-      using this option will break some applications such as
-      <xref role="nodep" linkend="epiphany"/>.
+      experimental Xlib/XCB functions used by some window managers.
 @y
       <option>--enable-xlib-xcb</option>: This switch enables several
-      experimental Xlib/XCB functions used by some window managers. Note that
-      using this option will break some applications such as
-      <xref role="nodep" linkend="epiphany"/>.
+      experimental Xlib/XCB functions used by some window managers.
 @z
 
 @x
@@ -268,7 +264,7 @@
 
 @x
         <seg>
-          cairo-sphinx and cairo-trace
+          cairo-trace
         </seg>
         <seg>
           libcairo.so, libcairo-gobject.so and
@@ -279,7 +275,7 @@
         </seg>
 @y
         <seg>
-          cairo-sphinx, cairo-trace
+          cairo-trace
         </seg>
         <seg>
           libcairo.so, libcairo-gobject.so,

@@ -76,6 +76,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">popt Dependencies</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> (for generating documentation)
+    </para>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;popt&Dependencies2;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> (ドキュメント生成のため)
+    </para>
+@z
+
+@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -126,6 +138,21 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
+@z
+
+@x
+      <command>mv /usr/lib/libpopt.so.* /lib</command> and
+      <command>ln -sfv ...</command>: Moves the popt library on the root
+      filesystem, so it is avaliable in case
+      <systemitem class="filesystem">/usr</systemitem> is offline and
+      <xref linkend="efibootmgr"/> is installed and linked to popt.
+@y
+      <command>mv /usr/lib/libpopt.so.* /lib</command> と
+      <command>ln -sfv ...</command>:
+      root ファイルシステム上の popt ライブラリを移動します。
+      こうすることで <systemitem
+      class="filesystem">/usr</systemitem> がオフラインであり <xref
+      linkend="efibootmgr"/> がインストールされ popt にリンクされていても利用可能になります。
 @z
 
 @x

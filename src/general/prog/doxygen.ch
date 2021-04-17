@@ -170,6 +170,12 @@
 @z
 
 @x
+      Remove a spurious file that prevents building the documentation:
+@y
+      Remove a spurious file that prevents building the documentation:
+@z
+
+@x
       Install <application>Doxygen</application> by running the following
       commands:
 @y

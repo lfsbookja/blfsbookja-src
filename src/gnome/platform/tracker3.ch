@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY tracker3-buildsize     "79 MB (with tests)">
-  <!ENTITY tracker3-time          "0.3 SBU (with tests)">
+  <!ENTITY tracker3-buildsize     "81 MB (with tests)">
+  <!ENTITY tracker3-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY tracker3-buildsize     "79 MB (テスト込み)">
-  <!ENTITY tracker3-time          "0.3 SBU (テスト込み)">
+  <!ENTITY tracker3-buildsize     "81 MB（テスト込み）">
+  <!ENTITY tracker3-time          "0.8 SBU（テスト込み）">
 @z
 
 @x
@@ -126,8 +126,10 @@
     <para role="optional">
       <xref linkend="asciidoc"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>, and
-      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>
+      <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>,
+      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>, and
+      <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+      (for tests)
       <!-- Python2 used to be a dependency until 2.2.1 -->
     </para>
 @y
@@ -136,7 +138,9 @@
       <xref linkend="asciidoc"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>,
-      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>
+      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>,
+      <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+      (for tests)
       <!-- Python2 used to be a dependency until 2.2.1 -->
     </para>
 @z
@@ -162,10 +166,14 @@
 
 @x
       To test the results, issue: <command>ninja test</command>. The tests
-      should be run from a graphical session.
+      should be run from a graphical session. One test,
+      <filename>tracker:functional/portal</filename>, is known to timeout.
+      14 tests will fail if the Python 3 module tap.py is not installed.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       テストはグラフィックセッションから実行することが必要です。
+      1 つのテスト <filename>tracker:functional/portal</filename> はタイムアウトします。
+      また 14 個のテストが、Python 3 モジュール tap.py がインストールされていない場合には失敗します。
 @z
 
 @x
@@ -238,7 +246,9 @@
           libtracker-sparql-3.0.so
         </seg>
         <seg>
-          /usr/{include,lib,libexec}/tracker-3.0, /usr/share/tracker3, and
+          /usr/{include,lib}/tracker-3.0,
+          /usr/libexec/tracker3,
+          /usr/share/tracker3, and
           /usr/share/gtk-doc/html/{libtracker-sparql,ontology}-3
         </seg>
 @y
@@ -249,7 +259,9 @@
           libtracker-sparql-3.0.so
         </seg>
         <seg>
-          /usr/{include,lib,libexec}/tracker-3.0, /usr/share/tracker3,
+          /usr/{include,lib}/tracker-3.0,
+          /usr/libexec/tracker3,
+          /usr/share/tracker3,
           /usr/share/gtk-doc/html/{libtracker-sparql,ontology}-3
         </seg>
 @z

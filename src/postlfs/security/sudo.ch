@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY sudo-buildsize     "60 MB (add 9 MB for tests)">
+  <!ENTITY sudo-buildsize     "44 MB (add 9 MB for tests)">
   <!ENTITY sudo-time          "0.4 SBU (add 0.1 SBU for tests)">
 @y
-  <!ENTITY sudo-buildsize     "60 MB (テスト実行時はさらに 9 MB)">
-  <!ENTITY sudo-time          "0.4 SBU (テスト実行時はさらに 0.1 SBU)">
+  <!ENTITY sudo-buildsize     "44 MB（テスト実行時はさらに 9 MB）">
+  <!ENTITY sudo-time          "0.4 SBU（テスト実行時はさらに 0.1 SBU）">
 @z
 
 @x

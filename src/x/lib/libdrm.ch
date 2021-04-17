@@ -116,7 +116,8 @@
       <xref linkend="cairo"/> (for tests),
       <xref linkend="cmake"/> (could be used to find dependencies without pkgconfig files),
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/> and
+      <xref linkend="docbook-xsl"/>,
+      <xref linkend="docutils"/>, and
       <xref linkend="libxslt"/> (to build manual pages),
       <xref linkend="libatomic_ops"/> (required by architectures without native atomic operations),
       <xref linkend="valgrind"/>, and
@@ -125,13 +126,14 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cairo"/> (テストのため),
+      <xref linkend="cairo"/> （テストのため）,
       <xref linkend="cmake"/> (could be used to find dependencies without pkgconfig files),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="libxslt"/> (man ページ生成のため),
+      <xref linkend="docutils"/>, and
+      <xref linkend="libxslt"/> （man ページ生成のため）,
       <xref linkend="libatomic_ops"/> (required by architectures without native atomic operations),
-      <xref linkend="valgrind"/>, and
+      <xref linkend="valgrind"/>,
       <ulink url="http://cunit.sourceforge.net/">CUNIT</ulink> (for AMDGPU tests)
     </para>
 @z

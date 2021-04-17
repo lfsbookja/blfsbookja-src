@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY wireshark-buildsize     "749 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-buildsize     "751 MB (with all optional dependencies available in the BLFS book)">
   <!ENTITY wireshark-time          "2.4 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
 @y
-  <!ENTITY wireshark-buildsize     "749 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-buildsize     "751 MB (with all optional dependencies available in the BLFS book)">
   <!ENTITY wireshark-time          "2.4 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
 @z
 
@@ -151,6 +151,7 @@
       <xref linkend="speex"/>,
       <ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,
       <ulink url="https://www.linphone.org/technical-corner/bcg729">BCG729</ulink>,
+      <ulink url="https://github.com/TimothyGu/libilbc">libilbc</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
       <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
       <ulink url="https://www.libssh.org/">libssh</ulink>,
@@ -177,12 +178,13 @@
       <xref linkend="speex"/>,
       <ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,
       <ulink url="https://www.linphone.org/technical-corner/bcg729">BCG729</ulink>,
+      <ulink url="https://github.com/TimothyGu/libilbc">libilbc</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
       <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
       <ulink url="https://www.libssh.org/">libssh</ulink>,
       <ulink url="https://github.com/maxmind/libmaxminddb">MaxMindDB</ulink>,
       <ulink url="https://www.winimage.com/zLibDll/minizip.html">Minizip</ulink>,
-      <ulink url="http://google.github.io/snappy/">Snappy</ulink>, and
+      <ulink url="http://google.github.io/snappy/">Snappy</ulink>,
       <ulink url="https://www.soft-switch.org/">Spandsp</ulink>
     </para>
 @z

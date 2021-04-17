@@ -121,14 +121,14 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="vala"/>, and
-      <ulink url="http://launchpad.net/zeitgeist">zeitgeist</ulink>
+      <ulink url="https://launchpad.net/zeitgeist">zeitgeist</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="vala"/>,
-      <ulink url="http://launchpad.net/zeitgeist">zeitgeist</ulink>
+      <ulink url="https://launchpad.net/zeitgeist">zeitgeist</ulink>
     </para>
 @z
 
@@ -210,10 +210,10 @@
           gedit 
         </seg>
         <seg>
-          libgedit-3.38.so
+          libgedit-40.0.so
         </seg>
         <seg>
-          /usr/include/gedit-3.38 and
+          /usr/include/gedit-40.0 and
           /usr/{lib,share,share/gtk-doc/html,share/help/*}/gedit
         </seg>
 @y
@@ -221,10 +221,10 @@
           gedit 
         </seg>
         <seg>
-          libgedit-3.38.so
+          libgedit-40.0.so
         </seg>
         <seg>
-          /usr/include/gedit-3.38,
+          /usr/include/gedit-40.0,
           /usr/{lib,share,share/gtk-doc/html,share/help/*}/gedit
         </seg>
 @z

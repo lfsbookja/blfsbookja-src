@@ -29,11 +29,13 @@ CHANGE_FILES = \
 	graphene.ch             \
 	gtk+2.ch                \
 	gtk+3.ch                \
+	gtk4.ch                 \
 	gtk-vnc.ch              \
 	gtkmm2.ch               \
 	gtkmm3.ch               \
         gtksourceview.ch        \
 	gtksourceview4.ch       \
+	gtksourceview5.ch       \
 	gtk-engines.ch          \
         glu.ch                  \
         imlib2.ch               \

@@ -86,6 +86,7 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="libxml2"/>, and
       <xref linkend="openjpeg2"/>
     </para>
@@ -96,6 +97,7 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="openjpeg2"/>
     </para>

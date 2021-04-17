@@ -83,19 +83,19 @@
       <xref linkend="mitkrb"/>,
       <xref linkend="samba"/>, and
       <xref linkend="libcap-pam"/> or
-      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">
+      <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">
         libcap-ng
       </ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="keyutils"/> (PAM モジュールビルドに必要),
+      <xref linkend="keyutils"/>（PAM モジュールビルドに必要）,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="samba"/>, and
+      <xref linkend="samba"/>,
       <xref linkend="libcap-pam"/> または
-      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">
+      <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">
         libcap-ng
       </ulink>
     </para>

@@ -165,22 +165,22 @@
           None
         </seg>
         <seg>
-          libtepl-5.so
+          libtepl-6.so
         </seg>
         <seg>
-          /usr/include/tepl-5 and
-          /usr/share/gtk-doc/html/tepl-5.0
+          /usr/include/tepl-6 and
+          /usr/share/gtk-doc/html/tepl-6.0
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libtepl-5.so
+          libtepl-6.so
         </seg>
         <seg>
-          /usr/include/tepl-5,
-          /usr/share/gtk-doc/html/tepl-5.0
+          /usr/include/tepl-6,
+          /usr/share/gtk-doc/html/tepl-6.0
         </seg>
 @z
 

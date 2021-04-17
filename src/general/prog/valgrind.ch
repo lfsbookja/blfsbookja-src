@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY valgrind-buildsize     "615 MB (add 100 MB for tests)">
-  <!ENTITY valgrind-time          "0.6 SBU (Using parallelism=4; add 7.7 SBU for tests)">
+  <!ENTITY valgrind-buildsize     "629 MB (add 103 MB for tests)">
+  <!ENTITY valgrind-time          "0.5 SBU (Using parallelism=4; add 7.9 SBU for tests)">
 @y
-  <!ENTITY valgrind-buildsize     "615 MB (テスト実施時はさらに 100 MB)">
-  <!ENTITY valgrind-time          "0.6 SBU (parallelism=4 利用時。テスト実施時はさらに 7.7 SBU)">
+  <!ENTITY valgrind-buildsize     "629 MB (テスト実施時はさらに 103 MB)">
+  <!ENTITY valgrind-time          "0.5 SBU (parallelism=4 利用時。テスト実施時はさらに 7.9 SBU)">
 @z
 
 @x
@@ -194,7 +194,7 @@
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Library</segtitle>
+      <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
@@ -216,6 +216,7 @@
           vgdb
         </seg>
         <seg>
+           <!-- Moved to /usr/lib/valgrind in 3.17.0
           libcoregrind-&lt;Arch&gt;-linux.a,
           libgcc-sup-&lt;Arch&gt;-linux.a,
           libreplacemalloc_toolpreload-&lt;Arch&gt;-linux.a,
@@ -228,6 +229,8 @@
           vgpreload_massif-&lt;Arch&gt;-linux.so, and
           vgpreload_memcheck-&lt;Arch&gt;-linux.so, where
           &lt;Arch&gt; is x86 or amd64
+          -->
+          None
         </seg>
         <seg>
           /usr/lib/valgrind,
@@ -249,6 +252,7 @@
           vgdb
         </seg>
         <seg>
+           <!-- Moved to /usr/lib/valgrind in 3.17.0
           libcoregrind-&lt;Arch&gt;-linux.a,
           libgcc-sup-&lt;Arch&gt;-linux.a,
           libreplacemalloc_toolpreload-&lt;Arch&gt;-linux.a,
@@ -261,6 +265,8 @@
           vgpreload_massif-&lt;Arch&gt;-linux.so, and
           vgpreload_memcheck-&lt;Arch&gt;-linux.so, where
           &lt;Arch&gt; is x86 or amd64
+          -->
+          &None;
         </seg>
         <seg>
           /usr/lib/valgrind,

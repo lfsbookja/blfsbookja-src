@@ -14,15 +14,15 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "366 MB (with downloaded documentation, add 16 MB to build documentation)">
+  <!ENTITY git-buildsize     "374 MB (with downloaded documentation, add 16 MB to build documentation)">
 @y
-  <!ENTITY git-buildsize     "366 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 16 MB）">
+  <!ENTITY git-buildsize     "374 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 16 MB）">
 @z
 
 @x
-  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 0.5 SBU for building documentation and 8.3 SBU for tests with parallelism=4)">
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 0.4 SBU for building documentation and 1.6 SBU for tests, both with parallelism=4)">
 @y
-  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; ドキュメントビルド時はさらに 0.5 SBU、テスト実施時はさらに 8.3 SBU）">
+  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; ドキュメントビルド時はさらに 0.4 SBU、テスト実施時はさらに 1.6 SBU）">
 @z
 
 @x
@@ -160,8 +160,11 @@
          svn</command>),
       <xref role="runtime" linkend="tk"/>
       (gitk, a simple <application>Git</application>
-      repository viewer, uses <application>Tk</application> at runtime), and
-      <xref linkend="valgrind"/>
+      repository viewer, uses <application>Tk</application> at runtime),
+      <xref linkend="valgrind"/>,
+      <ulink url="https://metacpan.org/pod/Authen::SASL">Authen::SASL</ulink> and
+      <ulink url="https://metacpan.org/pod/MIME::Base64">MIME::Base64</ulink>
+      (both runtime, for <command>git send-email</command>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -173,8 +176,11 @@
          svn</command>),
       <xref role="runtime" linkend="tk"/>
       (gitk, a simple <application>Git</application>
-      repository viewer, uses <application>Tk</application> at runtime), and
-      <xref linkend="valgrind"/>
+      repository viewer, uses <application>Tk</application> at runtime),
+      <xref linkend="valgrind"/>,
+      <ulink url="https://metacpan.org/pod/Authen::SASL">Authen::SASL</ulink> and
+      <ulink url="https://metacpan.org/pod/MIME::Base64">MIME::Base64</ulink>
+      (both runtime, for <command>git send-email</command>)
     </para>
 @z
 
@@ -314,13 +320,13 @@
 @z
 
 @x
-      <option>--with-python=python3</option>: Use this switch to use
+      <parameter>--with-python=python3</parameter>: Use this switch to use
       <application>Python 3</application>, instead of the EOL'ed
       <application>Python 2</application>. Python is used for the
       <command>git p4</command> interface to Perforce repositories,
       and also used in some tests.
 @y
-      <option>--with-python=python3</option>: Use this switch to use
+      <parameter>--with-python=python3</parameter>: Use this switch to use
       <application>Python 3</application>, instead of the EOL'ed
       <application>Python 2</application>. Python is used for the
       <command>git p4</command> interface to Perforce repositories,

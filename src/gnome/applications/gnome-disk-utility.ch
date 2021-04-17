@@ -81,6 +81,7 @@
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libdvdread"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="libpwquality"/>,
       <xref linkend="libsecret"/>, and
       <xref linkend="udisks2"/>
@@ -91,6 +92,7 @@
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libdvdread"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="libpwquality"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="udisks2"/>

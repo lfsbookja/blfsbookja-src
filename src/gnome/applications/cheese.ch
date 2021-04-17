@@ -69,6 +69,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@z
+
+@x
+          Required patch:
+@y
+          必須のパッチ:
+@z
+
+@x
     <bridgehead renderas="sect3">Cheese Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Cheese&Dependencies2;</bridgehead>
@@ -144,6 +156,12 @@
     <title>Installation of Cheese</title>
 @y
     <title>&InstallationOf1;Cheese&InstallationOf2;</title>
+@z
+
+@x
+      Next, fix some build issues due to removed Vala functions:
+@y
+      Next, fix some build issues due to removed Vala functions:
 @z
 
 @x

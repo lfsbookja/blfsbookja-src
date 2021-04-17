@@ -14,6 +14,12 @@
 @z
 
 @x
+  <!ENTITY libgee-buildsize     "42 MB (add 3 MB for tests)">
+@y
+  <!ENTITY libgee-buildsize     "42 MB（テスト実施時はさらに 3 MB）">
+@z
+
+@x
     <title>Introduction to libgee</title>
 @y
     <title>&IntroductionTo1;libgee&IntroductionTo2;</title>

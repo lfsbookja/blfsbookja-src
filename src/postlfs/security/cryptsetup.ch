@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY cryptsetup-buildsize     "29 MB (add 115 MB for tests)">
-  <!ENTITY cryptsetup-time          "0.2 SBU (add 9 SBU for tests)">
+  <!ENTITY cryptsetup-buildsize     "34 MB (add 102 MB for tests)">
+  <!ENTITY cryptsetup-time          "0.2 SBU (add 14 SBU for tests)">
 @y
-  <!ENTITY cryptsetup-buildsize     "29 MB （テスト実施時はさらに 115 MB）">
-  <!ENTITY cryptsetup-time          "0.2 SBU （テスト実施時はさらに 9 SBU）">
+  <!ENTITY cryptsetup-buildsize     "34 MB（テスト実施時はさらに 102 MB）">
+  <!ENTITY cryptsetup-time          "0.2 SBU（テスト実施時はさらに 14 SBU）">
 @z
 
 @x
@@ -289,9 +289,9 @@
 @z
 
 @x cryptsetup-reencrypt
-             is a for offline LUKS device re-encryption
+             is a tool for offline LUKS device re-encryption
 @y
-             is a for offline LUKS device re-encryption
+             is a tool for offline LUKS device re-encryption
 @z
 
 @x integritysetup

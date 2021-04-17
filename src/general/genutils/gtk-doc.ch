@@ -17,8 +17,8 @@
   <!ENTITY gtk-doc-buildsize     "13 MB (with tests)">
   <!ENTITY gtk-doc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY gtk-doc-buildsize     "13 MB (テスト込み)">
-  <!ENTITY gtk-doc-time          "0.2 SBU (テスト込み)">
+  <!ENTITY gtk-doc-buildsize     "13 MB（テスト込み）">
+  <!ENTITY gtk-doc-time          "0.2 SBU（テスト込み）">
 @z
 
 @x
@@ -126,7 +126,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       For tests: 
-      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> or
+      <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink> or
       <xref linkend="fop"/> (XML PDF support),
       <xref linkend="glib2"/>,
       <xref linkend="which"/>, and
@@ -137,18 +137,18 @@
       and <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      テスト向け: 
-      <ulink url="http://sourceforge.net/projects/dblatex/">dblatex</ulink> または
-      <xref linkend="fop"/> (XML PDF サポート),
+      For tests: 
+      <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink> or
+      <xref linkend="fop"/> (XML PDF support),
       <xref linkend="glib2"/>,
-      <xref linkend="which"/>,
-      Python モジュール
+      <xref linkend="which"/>, and
+      Python modules 
       <xref linkend="lxml"/>,
       <!--<ulink url="https://anytree.readthedocs.io/en/latest/">anytree</ulink>,-->
       <ulink url="https://pypi.org/project/parameterized/">parameterized</ulink>,
-      <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
+      and <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
     </para>
 @z
 

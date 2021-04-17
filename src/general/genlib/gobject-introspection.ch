@@ -14,10 +14,10 @@
 @z
 
 @x
-  <!ENTITY gobject-introspection-buildsize     "55 MB (with tests)">
+  <!ENTITY gobject-introspection-buildsize     "64 MB (with tests)">
   <!ENTITY gobject-introspection-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gobject-introspection-buildsize     "55 MB (テスト込み)">
+  <!ENTITY gobject-introspection-buildsize     "64 MB (テスト込み)">
   <!ENTITY gobject-introspection-time          "0.2 SBU (parallelism=4; テスト込み)">
 @z
 
@@ -138,8 +138,12 @@
 
 @x
       To test the results, issue: <command>ninja test</command>.
+      If <xref linkend="Mako"/> is installed but the Python 3 module named
+      Markdown (not in BLFS) is not, one test named test_docwriter.py will
+      fail.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      <xref linkend="Mako"/> がインストールされていて（BLFS にない）Markdown という Python 3 モジュールがインストールされていない場合、test_docwriter.py というテストが 1 つだけ失敗します。
 @z
 
 @x

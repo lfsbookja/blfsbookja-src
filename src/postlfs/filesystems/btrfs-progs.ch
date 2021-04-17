@@ -14,11 +14,11 @@
 @z
 
 @x
-  <!ENTITY btrfs-progs-buildsize     "92 MB (add 2.7 GB for tests)">
-  <!ENTITY btrfs-progs-time          "0.2 SBU (add 45-90 SBU for tests, depending on disk speed)">
+  <!ENTITY btrfs-progs-buildsize     "93 MB (up to 2.7 GB are used during tests)">
+  <!ENTITY btrfs-progs-time          "0.2 SBU (add 50-100 SBU for tests, depending on disk speed)">
 @y
-  <!ENTITY btrfs-progs-buildsize     "92 MB (テスト実施時はさらに 2.7 GB)">
-  <!ENTITY btrfs-progs-time          "0.2 SBU (テスト実施時はさらに 45～90 SBU、ディスク速度に依存)">
+  <!ENTITY btrfs-progs-buildsize     "93 MB（テスト中に最大 2.7 GB まで）">
+  <!ENTITY btrfs-progs-time          "0.2 SBU（テスト実施時はさらに 50～100 SBU、ディスク速度に依存）">
 @z
 
 @x
@@ -298,9 +298,9 @@
 @z
 
 @x btrfs-convert
-            converts from an ext2/3/4 filesystem to btrfs
+            converts from an ext2/3/4 or reiserfs filesystem to btrfs
 @y
-            converts from an ext2/3/4 filesystem to btrfs
+            converts from an ext2/3/4 or reiserfs filesystem to btrfs
 @z
 
 @x btrfs-find-root
