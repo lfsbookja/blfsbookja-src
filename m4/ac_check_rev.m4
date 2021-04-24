@@ -14,22 +14,22 @@ if test "x${with_rev}" != "x"; then
 fi
 AC_SUBST(revspec)
 
-VER=svn
+VER=git
 if test "x${with_rev}" = "xsystemd"; then
   BASEDIR=../${VER}-sysdja
-  PDF_OUTPUT=../blfssysdja-${VER}.pdf
-  NOCHUNKS_NAME=blfssysdja-${VER}
-  NOCHUNKS_OUTPUT=../blfssysdja-${VER}.html
-  DUMPDIR=../lfs-sysd-commands
+  PDF_OUTPUT=../blfsja-sysd-${VER}.pdf
+  NOCHUNKS_NAME=blfsja-sysd-${VER}
+  NOCHUNKS_OUTPUT=../blfsja-sysd-${VER}.html
+  DUMPDIR=../blfs-sysd-commands
   BLFSHTML=blfs-systemd-html.xml
   BLFSHTML2=blfs-systemd-html2.xml
   BLFSFULL=blfs-systemd-full.xml
 else
   BASEDIR=../${VER}-ja
-  PDF_OUTPUT=../blfsbookja-${VER}.pdf
-  NOCHUNKS_NAME=blfsbookja-${VER}
-  NOCHUNKS_OUTPUT=../blfsbookja-${VER}.html
-  DUMPDIR=../lfs-commands
+  PDF_OUTPUT=../blfsja-${VER}.pdf
+  NOCHUNKS_NAME=blfsja-${VER}
+  NOCHUNKS_OUTPUT=../blfsja-${VER}.html
+  DUMPDIR=../blfs-commands
   BLFSHTML=blfs-html.xml
   BLFSHTML2=blfs-html2.xml
   BLFSFULL=blfs-full.xml

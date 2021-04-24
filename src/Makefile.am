@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 SUBDIRS=appendices book general gnome introduction kde lxde \
 	networking \
 	multimedia postlfs pst server stylesheets template x \
@@ -20,11 +16,11 @@ EXTRA_DIST = \
 	ipag.xml
 BOOKdir = @abs_bookdir@
 srcdir = @srcdir@
-srcs = general.ent packages.ent gnome.ent index.xml tidy.conf
+srcs = general.ent packages.ent gnome.ent index.xml tidy.conf git-version.sh
 EXTRACLEANFILES = $(srcs)
 
 ROOT_ID =
-PDF_OUTPUT = ../blfsbookja-svn.pdf
+PDF_OUTPUT = ../blfsbookja-git.pdf
 RENDERTMP = tmp
 CHUNK_QUIET = 1
 
@@ -56,6 +52,10 @@ tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch $(srcdir)/tidy.sed
 	$(top_builddir)/$(CTIE) -m $@ tidy.conf.tmp $(srcdir)/tidy.ch >/dev/null
 	@rm -f tidy.conf.tmp
 
+git-version.sh: $(BOOKdir)/git-version.sh
+	sed -e "s|version\.ent|$(abs_builddir)/version\.ent|g" \
+            -e "/^full_date/afull_date=\"\$$year/\$$month_digit/\$$day\"" $^ > $@
+
 stylesheets:
 	$(MKDIR_P) stylesheets
 	cp -R $(BOOKdir)/stylesheets/* stylesheets
@@ -71,7 +71,7 @@ udev-config:
 blfs: html wget-list
 
 html: $(BASEDIR)/index.html jchangelog
-$(BASEDIR)/index.html: $(RENDERTMP)/$(BLFSHTML)
+$(BASEDIR)/index.html: $(RENDERTMP)/$(BLFSHTML) version
 	@echo "Generating chunked XHTML files..."
 	$(XSLTPROC) --nonet                                \
                 --stringparam chunk.quietly $(CHUNK_QUIET) \
@@ -107,7 +107,7 @@ jchangelog:
 	$(Q)cp -p introduction/welcome/jchangelog-*.txt $(BASEDIR)/introduction
 
 validate: $(RENDERTMP)/$(BLFSFULL)
-$(RENDERTMP)/$(BLFSFULL): general.ent $(ALLXML) $(ALLXSL)
+$(RENDERTMP)/$(BLFSFULL): general.ent $(ALLXML) $(ALLXSL) version
 	$(Q)[ -d $(RENDERTMP) ] || mkdir -p $(RENDERTMP)
 
 	@echo "Adjusting for revision $(REV)..."
@@ -126,7 +126,7 @@ $(RENDERTMP)/$(BLFSFULL): general.ent $(ALLXML) $(ALLXSL)
                $(RENDERTMP)/$(BLFSHTML2)
 
 profile-html: $(RENDERTMP)/$(BLFSHTML)
-$(RENDERTMP)/$(BLFSHTML): $(RENDERTMP)/$(BLFSFULL)
+$(RENDERTMP)/$(BLFSHTML): $(RENDERTMP)/$(BLFSFULL) version
 	@echo "Generating profiled XML for XHTML..."
 	$(XSLTPROC) --nonet                          \
                 --stringparam profile.condition html \
@@ -171,10 +171,17 @@ $(RENDERTMP)/$(BLFSHTML): $(RENDERTMP)/$(BLFSFULL)
 @PDF@@IPA@userconfig.xml: $(srcdir)/userconfig.xml.in
 
 wget-list: $(BASEDIR)/wget-list
-$(BASEDIR)/wget-list: $(RENDERTMP)/$(BLFSFULL)
+$(BASEDIR)/wget-list: $(RENDERTMP)/$(BLFSFULL) version
 	@echo "Generating wget list for $(REV) at $(BASEDIR)/wget-list ..."
 	$(MKDIR_P) $(BASEDIR)
 	$(XSLTPROC) --nonet                   \
                 --output $(BASEDIR)/wget-list \
                 stylesheets/wget-list.xsl     \
                 $(RENDERTMP)/$(BLFSFULL)
+
+.PHONY: blfs all world html nochunks tmpdir clean  \
+   validate profile-html blfs-patch-list wget-list test-links \
+   dump-commands  bootscripts systemd-units version
+
+version:
+	(cd $(BOOKdir) && sh $(abs_builddir)/git-version.sh)

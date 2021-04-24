@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "1.2 GB (97 MB installed), add 987 MB for tests">
-  <!ENTITY librsvg-time          "1.2 SBU (Using parallelism=4), add 1.3 SBU for tests">
+  <!ENTITY librsvg-buildsize     "1.2 GB (97 MB installed), add 994 MB for tests">
+  <!ENTITY librsvg-time          "1.1 SBU (Using parallelism=4), add 1.4 SBU for tests">
 @y
-  <!ENTITY librsvg-buildsize     "1.2 GB (インストールに 97 MB), テスト実施時はさらに 987 MB">
-  <!ENTITY librsvg-time          "1.2 SBU (parallelism=4 利用時), テスト実施時はさらに 1.3 SBU">
+  <!ENTITY librsvg-buildsize     "1.2 GB（インストールに 97 MB）、テスト実施時はさらに 994 MB">
+  <!ENTITY librsvg-time          "1.1 SBU（parallelism=4 利用時）、テスト実施時はさらに 1.4 SBU">
 @z
 
 @x
@@ -149,7 +145,7 @@
 @x
       To test the results, issue: <command>make check</command>.
       <!-- https://gitlab.gnome.org/GNOME/librsvg/issues/511 -->
-      Many of the tests in 'reftests' may fail (44 in November 2020) because
+      Many of the tests in 'reftests' may fail (44 in April 2021) because
       they produce, and then diff, graphic files with text and the details such
       as spacing vary when the system versions of cairo, freetype, pixman, pango
       and perhaps harfbuzz differ from the versions on the system where the
@@ -157,7 +153,7 @@
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
       <!-- https://gitlab.gnome.org/GNOME/librsvg/issues/511 -->
-      Many of the tests in 'reftests' may fail (44 in November 2020) because
+      Many of the tests in 'reftests' may fail (44 in April 2021) because
       they produce, and then diff, graphic files with text and the details such
       as spacing vary when the system versions of cairo, freetype, pixman, pango
       and perhaps harfbuzz differ from the versions on the system where the

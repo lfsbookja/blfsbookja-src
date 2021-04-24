@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,10 +11,10 @@
 
 @x
   <!ENTITY nodejs-buildsize     "727 MB (add 16 MB for tests)">
-  <!ENTITY nodejs-time          "9.4 SBU (using parallelism=4; add 1.8 SBU for tests)">
+  <!ENTITY nodejs-time          "11 SBU (using parallelism=4; add 2.0 SBU for tests)">
 @y
   <!ENTITY nodejs-buildsize     "727 MB (add 16 MB for tests)">
-  <!ENTITY nodejs-time          "9.4 SBU (using parallelism=4; add 1.8 SBU for tests)">
+  <!ENTITY nodejs-time          "11 SBU (using parallelism=4; add 2.0 SBU for tests)">
 @z
 
 @x

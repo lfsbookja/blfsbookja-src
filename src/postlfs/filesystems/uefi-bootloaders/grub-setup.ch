@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -171,12 +167,12 @@
 
 @x CONFIG_FB_EFI and CONFIG_FRAMEBUFFER_CONSOLE
           <para>The combination of these two options allows the kernel to
-          print debug messages (along with Tux logos) at the early stage of boot
-          the process with UEFI.</para>
+          print debug messages (along with Tux logos) at the early stage of
+          the boot process with UEFI.</para>
 @y
           <para>The combination of these two options allows the kernel to
-          print debug messages (along with Tux logos) at the early stage of boot
-          the process with UEFI.</para>
+          print debug messages (along with Tux logos) at the early stage of
+          the boot process with UEFI.</para>
 @z
 
 @x

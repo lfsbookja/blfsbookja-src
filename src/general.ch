@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <!ENTITY copyholder   "The BLFS Development Team">
 @y
@@ -14,19 +10,10 @@
 @z
 
 @x
-<!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "April 13th, &year;">
-@y
-<!ENTITY version      "&year;-&month;-&day;">
-<!ENTITY releasedate  "&year;/&month;/&day;">
-<!ENTITY jversion     "20210417">
-<!ENTITY jratio       "55.9? &percnt;">
-@z
-
-@x
 <!ENTITY lfs-domainname       "linuxfromscratch.org">
 @y
 <!ENTITY lfs-domainname       "linuxfromscratch.org">
+<!ENTITY jversion "20210424">
 
 <!ENTITY Estimateddiskspacerequired "必要ディスク容量">
 <!ENTITY Estimatedbuildtime         "概算ビルド時間">

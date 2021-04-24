@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY js78-buildsize     "2.0 GB (36 MB installed after removing 34MB static lib)">
-  <!ENTITY js78-time          "2.0 SBU (on a 4-core machine)">
+  <!ENTITY js78-buildsize     "3.0 GB (36 MB installed after removing 34MB static lib)">
+  <!ENTITY js78-time          "2.5 SBU (on a 4-core machine)">
 @y
-  <!ENTITY js78-buildsize     "2.0 GB (36 MB installed after removing 34MB static lib)">
-  <!ENTITY js78-time          "2.0 SBU (on a 4-core machine)">
+  <!ENTITY js78-buildsize     "3.0 GB (36 MB installed after removing 34MB static lib)">
+  <!ENTITY js78-time          "2.5 SBU (on a 4-core machine)">
 @z
 
 @x

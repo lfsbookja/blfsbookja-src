@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -141,24 +137,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">CrackLib Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;CrackLib&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="python2"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="python2"/>
-    </para>
-@z
-
-@x
     <para condition="html" role="usernotes">User Notes:
 @y
     <para condition="html" role="usernotes">&UserNotes;:
@@ -233,6 +211,24 @@
 @y
       <command>sed -i '/skipping/d' util/packer.c</command>:
       意味のない警告メッセージを取り除きます。
+@z
+
+@x
+      <envar>PYTHON=python3</envar>: This forces the installation of
+      python bindings for Python 3, even if Python 2 is installed.
+@y
+      <envar>PYTHON=python3</envar>: This forces the installation of
+      python bindings for Python 3, even if Python 2 is installed.
+@z
+
+@x
+      <envar>CPPFLAGS=-I/usr/include/python&python3-majorver;</envar>:
+      This works around an issue caused by incorrect usage of Python 3
+      headers.
+@y
+      <envar>CPPFLAGS=-I/usr/include/python&python3-majorver;</envar>:
+      This works around an issue caused by incorrect usage of Python 3
+      headers.
 @z
 
 @x
@@ -336,16 +332,16 @@
         <seg>cracklib-check, cracklib-format, cracklib-packer,
         cracklib-unpacker and create-cracklib-dict</seg>
 
-        <seg>libcrack.so and the _cracklibmodule.so
-          <application>Python</application> module</seg>
+        <seg>libcrack.so and the _cracklib.so
+          (<application>Python</application> module)</seg>
         
         <seg>/lib/cracklib, /usr/share/dict and /usr/share/cracklib</seg>
 @y
         <seg>cracklib-check, cracklib-format, cracklib-packer,
         cracklib-unpacker, create-cracklib-dict</seg>
 
-        <seg>libcrack.so, _cracklibmodule.so
-          <application>Python</application> モジュール</seg>
+        <seg>libcrack.so and the _cracklib.so
+          （<application>Python</application> モジュール）</seg>
         
         <seg>/lib/cracklib, /usr/share/dict, /usr/share/cracklib</seg>
 @z

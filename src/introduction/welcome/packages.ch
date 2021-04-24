@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -47,8 +43,8 @@
   <para>To overcome this problem, the BLFS Team, with the assistance of Oregon
   State University Open Source Lab, has made an HTTP/FTP site available through
   world wide mirrors.  See <ulink
-  url="http://www.linuxfromscratch.org/blfs/download.html#sources">
-  http://www.linuxfromscratch.org/blfs/download.html#sources</ulink> for a
+  url="https://www.linuxfromscratch.org/blfs/download.html#sources">
+  https://www.linuxfromscratch.org/blfs/download.html#sources</ulink> for a
   list.  These sites have all the sources of the exact versions of the packages
   used in BLFS.  If you can't find the BLFS package you need at the listed
   addresses, get it from these sites.</para>
@@ -57,8 +53,8 @@
   このような状況を避けるために BLFS チームはオレゴン州立大学のオープンソースラボ (Oregon
   State University Open Source Lab) の協力のもと、HTTP/FTP によりアクセス可能なサイトを用意しています。
   詳しくは <ulink
-  url="http://www.linuxfromscratch.org/blfs/download.html#sources">
-  http://www.linuxfromscratch.org/blfs/download.html#sources</ulink> を参照してください。
+  url="https://www.linuxfromscratch.org/blfs/download.html#sources">
+  https://www.linuxfromscratch.org/blfs/download.html#sources</ulink> を参照してください。
   このサイトでは BLFS が利用するすべてのパッケージの正しいバージョンによるソースを提供しています。
   BLFS のパッケージが入手できなかった時には、このサイトを利用してください。
   </para>

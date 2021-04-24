@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -87,7 +83,7 @@
       via partition UUID or partition LABEL or a rootfs on an LVM logical
       volume.  They do not support an encrypted root file system or mounting
       the rootfs over a network card.  For a more complete capability see
-      <ulink url="http://www.linuxfromscratch.org/hints/read.html"> the LFS
+      <ulink url="https://www.linuxfromscratch.org/hints/read.html"> the LFS
       Hints</ulink> or <ulink
       url="http://fedoraproject.org/wiki/Dracut">dracut</ulink>.
 @y
@@ -96,7 +92,7 @@
       via partition UUID or partition LABEL or a rootfs on an LVM logical
       volume.  They do not support an encrypted root file system or mounting
       the rootfs over a network card.  For a more complete capability see
-      <ulink url="http://www.linuxfromscratch.org/hints/read.html"> the LFS
+      <ulink url="https://www.linuxfromscratch.org/hints/read.html"> the LFS
       Hints</ulink> or <ulink
       url="http://fedoraproject.org/wiki/Dracut">dracut</ulink>.
 @z
