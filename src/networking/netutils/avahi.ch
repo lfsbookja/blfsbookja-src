@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -256,15 +252,6 @@
       Without it, the
       daemon fails to start in BLFS, which does not support
       <application>systemd</application>.
-@z
-
-@x revision="systemd"
-      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
-      This parameter is used to set the correct installation directory for
-      systemd units.
-@y
-      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
-      このパラメーターにより systemd ユニットのインストール先ディレクトリを設定します。
 @z
 
 @x

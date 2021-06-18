@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/general/genlib
 CHANGE_FILES = \
 	apr.ch \
@@ -70,6 +66,7 @@ CHANGE_FILES = \
 	libusb.ch \
 	libuv.ch \
 	libwacom.ch \
+	libwpe.ch \
 	libxkbcommon.ch \
 	libxml2.ch \
 	libxslt.ch \
@@ -90,6 +87,7 @@ CHANGE_FILES = \
 	umockdev.ch \
 	wayland.ch \
 	wayland-protocols.ch \
+	wpebackend-fdo.ch \
 	wv.ch \
 	xapian.ch
 

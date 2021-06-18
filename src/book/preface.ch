@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -68,11 +64,11 @@
 @x
     Finally, we encourage you to become involved in the community; ask
     questions on the mailing list or news gateway and join in the fun on #lfs
-    and #lfs-support at freenode. You can find more details about all of these
+    and #lfs-support at Libera. You can find more details about all of these
     in the <xref linkend="introduction"/> section of the book.
 @y
     皆さんには是非 BLFS コミュニティに参加していただくことを望んでいます。
-    メーリングリストなどにて質問をあげたり、freenode の #lfs チャネルへ参加したりしてください。
+    メーリングリストなどにて質問をあげたり、Libera の #lfs チャネルへ参加したりしてください。
     より詳しくは本書の <xref linkend="introduction"/> を参照してください。
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -123,13 +119,11 @@
 @z
 
 @x
-      <command>sed -ri 's#^(RELEASE_BINS =).*#\1#'
-      pr/src/misc/Makefile.in</command>: This sed disables installing two unneeded
-      scripts.
+      <command>sed -ri '/^RELEASE/s/^/#/' pr/src/misc/Makefile.in</command>: 
+      This sed disables installing two unneeded scripts.
 @y
-      <command>sed -ri 's#^(RELEASE_BINS =).*#\1#'
-      pr/src/misc/Makefile.in</command>:
-      これは不要なスクリプト２つをインストールしないようにします。
+      <command>sed -ri '/^RELEASE/s/^/#/' pr/src/misc/Makefile.in</command>:
+      これは不要なスクリプト 2 つをインストールしないようにします。
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -77,11 +73,17 @@
 
 @x
     <bridgehead renderas="sect3">popt Dependencies</bridgehead>
+@y
+    <bridgehead renderas="sect3">&Dependencies1;popt&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/> (for generating documentation)
     </para>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;popt&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/> (ドキュメント生成のため)
     </para>

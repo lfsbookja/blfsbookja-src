@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the LFS hint text files.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gsl-buildsize     "275 MB (with tests, without docs)">
-  <!ENTITY gsl-time          "1.7 SBU (with tests, without docs)">
+  <!ENTITY gsl-buildsize     "256 MB (with tests, without docs)">
+  <!ENTITY gsl-time          "1.4 SBU (Using parallelism=4; with tests, without docs)">
 @y
-  <!ENTITY gsl-buildsize     "275 MB (テスト込み、ドキュメントなし)">
-  <!ENTITY gsl-time          "1.7 SBU (テスト込み、ドキュメントなし)">
+  <!ENTITY gsl-buildsize     "256 MB (テスト込み、ドキュメントなし)">
+  <!ENTITY gsl-time          "1.4 SBU (parallelism=4 利用時、テスト込み、ドキュメントなし)">
 @z
 
 @x

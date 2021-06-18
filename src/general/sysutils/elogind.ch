@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -108,7 +104,8 @@
       <xref linkend="docbook-xsl"/>, and
       <xref linkend="libxslt"/> (all three to build the man pages),
       <xref linkend="linux-pam"/>, and
-      <xref linkend="polkit"/>
+      <xref linkend="polkit"/> (circular, build elogind first, then polkit,
+      then elogind again)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -117,7 +114,8 @@
       <xref linkend="docbook-xsl"/>,
       <xref linkend="libxslt"/> (ここまでの 3 つは man ページ生成のため),
       <xref linkend="linux-pam"/>,
-      <xref linkend="polkit"/>
+      <xref linkend="polkit"/> (circular, build elogind first, then polkit,
+      then elogind again)
     </para>
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY qca-time          "0.6 SBU (using parallelism=4; add 0.6 SBU for tests)">
+  <!ENTITY qca-time          "0.5 SBU (using parallelism=4; add 0.7 SBU for tests)">
 @y
-  <!ENTITY qca-time          "0.6 SBU (using parallelism=4; add 0.6 SBU for tests)">
+  <!ENTITY qca-time          "0.5 SBU (using parallelism=4; add 0.7 SBU for tests)">
 @z
 
 @x

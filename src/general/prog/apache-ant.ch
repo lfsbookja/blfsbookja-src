@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -150,13 +146,13 @@
 
 @x
       <command>bootstrap/bin/ant -f fetch.xml -Ddest=optional</command>:
-      Downloads the missing dependencies to user's home directory, and copy
-      them into the source tree (in the <filename>lib/optional</filename>
+      Downloads the missing dependencies to the user's home directory, and
+      copies them into the source tree (in the <filename>lib/optional</filename>
       directory, where <command>ant</command> picks them up at build time).
 @y
       <command>bootstrap/bin/ant -f fetch.xml -Ddest=optional</command>:
-      Downloads the missing dependencies to user's home directory, and copy
-      them into the source tree (in the <filename>lib/optional</filename>
+      Downloads the missing dependencies to the user's home directory, and
+      copies them into the source tree (in the <filename>lib/optional</filename>
       directory, where <command>ant</command> picks them up at build time).
 @z
 

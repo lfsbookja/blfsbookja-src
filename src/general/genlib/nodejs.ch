@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY nodejs-buildsize     "727 MB (add 16 MB for tests)">
-  <!ENTITY nodejs-time          "11 SBU (using parallelism=4; add 2.0 SBU for tests)">
+  <!ENTITY nodejs-buildsize     "748 MB (add 21 MB for tests)">
+  <!ENTITY nodejs-time          "9.1 SBU (using parallelism=4; add 2.1 SBU for tests)">
 @y
-  <!ENTITY nodejs-buildsize     "727 MB (add 16 MB for tests)">
-  <!ENTITY nodejs-time          "11 SBU (using parallelism=4; add 2.0 SBU for tests)">
+  <!ENTITY nodejs-buildsize     "748 MB (add 21 MB for tests)">
+  <!ENTITY nodejs-time          "9.1 SBU (using parallelism=4; add 2.1 SBU for tests)">
 @z
 
 @x

@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "1.2 GB (97 MB installed), add 994 MB for tests">
-  <!ENTITY librsvg-time          "1.1 SBU (Using parallelism=4), add 1.4 SBU for tests">
+  <!ENTITY librsvg-buildsize     "1.2 GB (96 MB installed), add 1.0 GB for tests">
+  <!ENTITY librsvg-time          "1.0 SBU (Using parallelism=4), add 0.7 SBU for tests">
 @y
-  <!ENTITY librsvg-buildsize     "1.2 GB（インストールに 97 MB）、テスト実施時はさらに 994 MB">
-  <!ENTITY librsvg-time          "1.1 SBU（parallelism=4 利用時）、テスト実施時はさらに 1.4 SBU">
+  <!ENTITY librsvg-buildsize     "1.2 GB（インストールに 96 MB）、テスト実施時はさらに 1.0 GB">
+  <!ENTITY librsvg-time          "1.0 SBU（parallelism=4 利用時）、テスト実施時はさらに 0.7 SBU">
 @z
 
 @x
@@ -143,21 +143,21 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
-      <!-- https://gitlab.gnome.org/GNOME/librsvg/issues/511 -->
-      Many of the tests in 'reftests' may fail (44 in April 2021) because
+      Many of the tests in 'reftests' may fail (over half in May 2021) because
       they produce, and then diff, graphic files with text and the details such
       as spacing vary when the system versions of cairo, freetype, pixman, pango
       and perhaps harfbuzz differ from the versions on the system where the
-      reference files were created.
+      reference files were created. For this reason, running the tests is not
+      recommended.
+      To test the results anyway, issue: <command>make check</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
-      <!-- https://gitlab.gnome.org/GNOME/librsvg/issues/511 -->
-      Many of the tests in 'reftests' may fail (44 in April 2021) because
+      Many of the tests in 'reftests' may fail (over half in May 2021) because
       they produce, and then diff, graphic files with text and the details such
       as spacing vary when the system versions of cairo, freetype, pixman, pango
       and perhaps harfbuzz differ from the versions on the system where the
-      reference files were created.
+      reference files were created. For this reason, running the tests is not
+      recommended.
+      To test the results anyway, issue: <command>make check</command>.
 @z
 
 @x

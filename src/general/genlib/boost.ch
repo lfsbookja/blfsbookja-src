@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY boost-buildsize     "1.1 GB (175 MB installed)">
-  <!ENTITY boost-time          "1.3 SBU (Using parallelism=4; add 1.3 SBU for tests)">
+  <!ENTITY boost-buildsize     "1.0 GB (180 MB installed)">
+  <!ENTITY boost-time          "1.4 SBU (Using parallelism=4; add 1.3 SBU for tests)">
 @y
-  <!ENTITY boost-buildsize     "1.1 GB (インストールサイズは 175 MB)">
-  <!ENTITY boost-time          "1.3 SBU (parallelism=4; テスト実施時はさらに 1.3 SBU)">
+  <!ENTITY boost-buildsize     "1.0 GB (インストールサイズは 180 MB)">
+  <!ENTITY boost-time          "1.4 SBU (parallelism=4; テスト実施時はさらに 1.3 SBU)">
 @z
 
 @x
@@ -135,14 +131,12 @@
 @z
 
 @x
-      To run the Boost.Build's regression test,
-      issue <command>pushd tools/build/test; 
-      python3 test_all.py; popd</command>. 
-      All 153 tests should pass.
+      To run the Boost.Build's regression test, issue 
+      <command>pushd tools/build/test; python3 test_all.py; popd</command>. 
+      All 154 tests should pass.
 @y
-      Boost.Build の縮退テストを実施するには <command>pushd tools/build/test; 
-      python3 test_all.py; popd</command> を実行します。
-      全テスト 153 個が成功するはずです。
+      Boost.Build の縮退テストを実施するには <command>pushd tools/build/test; python3 test_all.py; popd</command> を実行します。
+      全テスト 154 個が成功するはずです。
 @z
 
 @x

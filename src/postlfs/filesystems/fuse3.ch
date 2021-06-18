@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -88,7 +84,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/> (to rebuild the API documentation) and
-      <ulink url="https://pypi.org/project/pytest/">pytest</ulink> (for tests)
+      <ulink url="https://pypi.org/project/pytest/">pytest</ulink> (required for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -150,10 +146,10 @@
 
 @x
       The <ulink url="https://pypi.org/project/pytest/">pytest</ulink>
-       Python module is needed for the tests.
+       Python module is required for the tests.
 @y
       The <ulink url="https://pypi.org/project/pytest/">pytest</ulink>
-       Python module is needed for the tests.
+       Python module is required for the tests.
 @z
 
 @x
@@ -174,23 +170,6 @@
 @y
       <command>sed ... util/meson.build</command>:
       このコマンドは、必要のないブートスクリプトや udev ルールをインストールしないようにします。
-@z
-
-@x
-      <command>mv ... libfuse3.so.3*; ln ... libfuse3.so</command>: 
-      These commands install the libraries in the /lib directory.
-@y
-      <command>mv ... libfuse3.so.3*; ln ... libfuse3.so</command>: 
-      これらのコマンドは、ライブラリを /lib ディレクトリにインストールします。
-@z
-
-@x
-      <command>unzip ...</command>: This uncompresses the installed man pages
-      to be consistent with the rest of the man pages.
-@y
-      <command>unzip ...</command>:
-      このコマンドはインストールした man ページを伸張（解凍）します。
-      これは BLFS 全体で整合をとるためです。
 @z
 
 @x

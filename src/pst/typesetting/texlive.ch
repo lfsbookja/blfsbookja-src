@@ -3,15 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-%@x
-%<?xml version="1.0" encoding="ISO-8859-1"?>
-%@y
-%<?xml version="1.0" encoding="UTF-8"?>
-%@z
+@x
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+@y
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+@z
 
 @x
     <title>Introduction to TeX Live from source</title>
@@ -263,18 +260,6 @@
 @z
 
 @x
-      <application>TexLive</application> ships with a very old version of
-      <application>poppler</application>, and some updated files for newer versions.
-      To use the system version, first identify it and then copy the correct
-      versions of the updated files (please read the Caution above):
-@y
-      <application>TexLive</application> ships with a very old version of
-      <application>poppler</application>, and some updated files for newer versions.
-      To use the system version, first identify it and then copy the correct
-      versions of the updated files (please read the Caution above):
-@z
-
-@x
         A successful install requires some texlive
         commands to be run as the root user, so we will export the TEXARCH
         variable to let <systemitem class="username">root</systemitem> use it.
@@ -291,13 +276,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>.
-      One of the Kpathsea tests will fail because BLFS uses system
-      libraries.
+      To test the results, issue: <command>make check</command>.
 @y
-      To test the results, issue: <command>make -k check</command>.
-      One of the Kpathsea tests will fail because BLFS uses system
-      libraries.
+      To test the results, issue: <command>make check</command>.
 @z
 
 @x

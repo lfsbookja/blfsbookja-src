@@ -264,11 +264,13 @@
 @x
       The installation of GRUB on a UEFI platform requires that the EFI Variable
       file system, <systemitem class="filesystem">efivarfs</systemitem>, to be
-      mounted.  As the <systemitem class="username">root</systemitem> user:
+      mounted.  As the <systemitem class="username">root</systemitem> user,
+      mount it if it's not already mounted:
 @y
       The installation of GRUB on a UEFI platform requires that the EFI Variable
       file system, <systemitem class="filesystem">efivarfs</systemitem>, to be
-      mounted.  As the <systemitem class="username">root</systemitem> user:
+      mounted.  As the <systemitem class="username">root</systemitem> user,
+      mount it if it's not already mounted:
 @z
 
 @x revision="systemd"

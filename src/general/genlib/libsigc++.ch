@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libsigc-buildsize     "39 MB (with tests)">
+  <!ENTITY libsigc-buildsize     "38 MB (with tests)">
   <!ENTITY libsigc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libsigc-buildsize     "39 MB (テスト込み)">
+  <!ENTITY libsigc-buildsize     "38 MB (テスト込み)">
   <!ENTITY libsigc-time          "0.2 SBU (テスト込み)">
 @z
 
@@ -111,12 +107,6 @@
 @z
 
 @x
-      First, fix the documentation directory name:
-@y
-      まずドキュメントディレクトリ名を変更します。
-@z
-
-@x
       Install <application>libsigc++</application> by running the following
       commands:
 @y
@@ -124,9 +114,9 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>.
+      This package does not come with a test suite.
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      &notTestSuite;
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libgusb-buildsize     "2.4 MB (with tests)">
+  <!ENTITY libgusb-buildsize     "1.9 MB (with tests)">
   <!ENTITY libgusb-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libgusb-buildsize     "2.4 MB (テスト込み)">
+  <!ENTITY libgusb-buildsize     "1.9 MB (テスト込み)">
   <!ENTITY libgusb-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -127,22 +123,13 @@
 @z
 
 @x
-      <parameter>--disable-gssapi</parameter>: This switch is needed if 
+      <parameter>--disable-gssapi</parameter>: This switch is needed if
       no GSSAPI is installed. Remove this switch if you have one
       installed (for example <xref linkend="mitkrb"/>) and you wish to use it.
 @y
-      <parameter>--disable-gssapi</parameter>: This switch is needed if 
+      <parameter>--disable-gssapi</parameter>: This switch is needed if
       no GSSAPI is installed. Remove this switch if you have one
       installed (for example <xref linkend="mitkrb"/>) and you wish to use it.
-@z
-
-@x
-      <command>mv -v /usr/lib/libtirpc.so.* ...</command>: Move shared 
-      libraries into /lib so they are available before /usr is mounted.
-@y
-      <command>mv -v /usr/lib/libtirpc.so.* ...</command>:
-      共有ライブラリを移動させます。
-      これは /usr がマウントされる前にこれらのライブラリを利用できるようにするためです。
 @z
 
 @x

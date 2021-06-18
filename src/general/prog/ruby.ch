@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY ruby-buildsize     "629 MB (add 533 MB for C API docs)">
-  <!ENTITY ruby-time          "1.3 SBU (using parallelism=4; add 5.5 SBU for tests; add 0.8 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "627 MB (add 1.0 GB for C API docs)">
+  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 4.6 SBU for tests; add 1.1 SBU for C API docs)">
 @y
-  <!ENTITY ruby-buildsize     "629 MB (add 533 MB for C API docs)">
-  <!ENTITY ruby-time          "1.3 SBU (using parallelism=4; add 5.5 SBU for tests; add 0.8 SBU for C API docs)">
+  <!ENTITY ruby-buildsize     "627 MB (add 1.0 GB for C API docs)">
+  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 4.6 SBU for tests; add 1.1 SBU for C API docs)">
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "694 MB (with tests, add 182 MB for documentation)">
-  <!ENTITY php-time          "1.7 SBU (with parallelism=4; add 2.0 SBU for tests)">
+  <!ENTITY php-buildsize     "693 MB (with tests, add 182 MB for documentation)">
+  <!ENTITY php-time          "1.7 SBU (with parallelism=4; add 1.9 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "694 MB（テスト込み、ドキュメント生成時はさらに 182 MB）">
-  <!ENTITY php-time          "1.7 SBU（parallelism=4 利用時、テスト実施時はさらに 2.0 SBU）">
+  <!ENTITY php-buildsize     "693 MB（テスト込み、ドキュメント生成時はさらに 182 MB）">
+  <!ENTITY php-time          "1.7 SBU（parallelism=4 利用時、テスト実施時はさらに 1.9 SBU）">
 @z
 
 @x
@@ -346,13 +342,13 @@
 
 @x
       To test the results, issue: <command>make test</command>. Several
-      tests (out of over 12400) may fail, in which case you are asked 
+      tests (out of over 16000) may fail, in which case you are asked 
       whether you want to send the report to the PHP developers. If you 
       want to automate the test, you may prefix the command with 
       <command>yes "n" | </command>.
 @y
       To test the results, issue: <command>make test</command>. Several
-      tests (out of over 12400) may fail, in which case you are asked 
+      tests (out of over 16000) may fail, in which case you are asked 
       whether you want to send the report to the PHP developers. If you 
       want to automate the test, you may prefix the command with 
       <command>yes "n" | </command>.

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY plasma5-buildsize     "572 MB (357 MB installed)">
+  <!ENTITY plasma5-buildsize     "1.6 GB (355 MB installed)">
   <!ENTITY plasma5-time          "14 SBU (using parallelism=4)">
 @y
-  <!ENTITY plasma5-buildsize     "572 MB (357 MB installed)">
+  <!ENTITY plasma5-buildsize     "1.6 GB (355 MB installed)">
   <!ENTITY plasma5-time          "14 SBU (using parallelism=4)">
 @z
 

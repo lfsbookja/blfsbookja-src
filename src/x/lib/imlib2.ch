@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -214,9 +210,9 @@
 @z
 
 @x imlib2_grab
-            take screenshots
+            takes screenshots
 @y
-            take screenshots
+            takes screenshots
 @z
 
 @x imlib2_show
@@ -238,7 +234,7 @@
 @z
 
 @x libImlib2.so
-            provides the functions for programs to deal with various
+            provides the functions for programs to handle various
             image data formats
 @y
             さまざまなイメージデータフォーマットを取り扱うプログラムに対しての関数を提供します。

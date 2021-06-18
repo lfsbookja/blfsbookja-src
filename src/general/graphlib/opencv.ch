@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY opencv-time              "2.9 SBU (using parallelism=4)">
+  <!ENTITY opencv-time              "4.0 SBU (using parallelism=4)">
 @y
-  <!ENTITY opencv-time              "2.9 SBU (using parallelism=4)">
+  <!ENTITY opencv-time              "4.0 SBU (using parallelism=4)">
 @z
 
 @x
@@ -150,6 +146,7 @@
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="jasper"/>,
+      <xref linkend="libexif"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
@@ -158,17 +155,18 @@
       <xref linkend="xine-lib"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="ffmpeg"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="jasper"/>,
+      <xref linkend="libexif"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
-      <xref linkend="v4l-utils"/>, and
+      <xref linkend="v4l-utils"/>,
       <xref linkend="xine-lib"/>
     </para>
 @z
@@ -180,48 +178,52 @@
       <xref linkend="doxygen"/>,
       <xref linkend="java"/>,
       <xref linkend="python2"/>,
+      <ulink url="https://www.netlib.org/blas/">blas</ulink>,
       <ulink url="https://developer.nvidia.com/cuda-zone">Cuda</ulink>,
       <ulink url="http://eigen.tuxfamily.org/">Eigen</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-      <ulink url="http://gcd.joewheaton.org/">GCD</ulink>,
+      <!--<ulink url="http://gcd.joewheaton.org/">GCD</ulink>,-->
       <ulink url="http://www.gdal.org/">GDAL</ulink>,
-      <ulink url="https://www.jai.com/technology/interfaces">GigEVisionSDK</ulink>,
-      <ulink url="http://jackaudio.org/">JACK</ulink>,
+      <!--<ulink url="https://www.jai.com/technology/interfaces">GigEVisionSDK</ulink>,-->
+      <!--<ulink url="http://jackaudio.org/">JACK</ulink>,-->
+      <ulink url="http://www.netlib.org/lapack/">lapack</ulink>,
       <ulink url="https://sourceforge.net/projects/libdc1394/">libdc1394</ulink>,
-      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
+      <!--<ulink url="http://www.gphoto.org/">libgphoto2</ulink>,-->
       <ulink url="http://www.numpy.org/">NumPy</ulink>,
-      <ulink url="http://structure.io/openni">OpenNI</ulink>,
+      <!--<ulink url="http://structure.io/openni">OpenNI</ulink>,
       <ulink url="http://plantuml.sourceforge.net/">PlanetUML</ulink>,
-      <ulink url="https://www.alliedvision.com/en/support/software-downloads.html">PvAPI</ulink>,
-      <ulink url="https://github.com/oneapi-src/oneTBB">Threading Building Blocks (TBB)</ulink>,
-      <ulink url="http://unicap-imaging.org/">UniCap</ulink>,
-      <ulink url="http://www.vtk.org/">VTK - The Visualization Toolkit</ulink>, and
-      <ulink url="http://www.ximea.com/">XIMEA</ulink>
+      <ulink url="https://www.alliedvision.com/en/support/software-downloads.html">PvAPI</ulink>,-->
+      <ulink url="https://github.com/oneapi-src/oneTBB">Threading Building Blocks (TBB)</ulink>, and
+      <!--<ulink url="http://unicap-imaging.org/">UniCap</ulink>,-->
+      <ulink url="http://www.vtk.org/">VTK - The Visualization Toolkit</ulink>,
+      <!--<ulink url="http://www.ximea.com/">XIMEA</ulink>-->
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="apache-ant"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="java"/>,
       <xref linkend="python2"/>,
+      <ulink url="https://www.netlib.org/blas/">blas</ulink>,
       <ulink url="https://developer.nvidia.com/cuda-zone">Cuda</ulink>,
       <ulink url="http://eigen.tuxfamily.org/">Eigen</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-      <ulink url="http://gcd.joewheaton.org/">GCD</ulink>,
+      <!--<ulink url="http://gcd.joewheaton.org/">GCD</ulink>,-->
       <ulink url="http://www.gdal.org/">GDAL</ulink>,
-      <ulink url="https://www.jai.com/technology/interfaces">GigEVisionSDK</ulink>,
-      <ulink url="http://jackaudio.org/">JACK</ulink>,
+      <!--<ulink url="https://www.jai.com/technology/interfaces">GigEVisionSDK</ulink>,-->
+      <!--<ulink url="http://jackaudio.org/">JACK</ulink>,-->
+      <ulink url="http://www.netlib.org/lapack/">lapack</ulink>,
       <ulink url="https://sourceforge.net/projects/libdc1394/">libdc1394</ulink>,
-      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
+      <!--<ulink url="http://www.gphoto.org/">libgphoto2</ulink>,-->
       <ulink url="http://www.numpy.org/">NumPy</ulink>,
-      <ulink url="http://structure.io/openni">OpenNI</ulink>,
+      <!--<ulink url="http://structure.io/openni">OpenNI</ulink>,
       <ulink url="http://plantuml.sourceforge.net/">PlanetUML</ulink>,
-      <ulink url="https://www.alliedvision.com/en/support/software-downloads.html">PvAPI</ulink>,
-      <ulink url="https://github.com/oneapi-src/oneTBB">Threading Building Blocks (TBB)</ulink>,
-      <ulink url="http://unicap-imaging.org/">UniCap</ulink>,
-      <ulink url="http://www.vtk.org/">VTK - The Visualization Toolkit</ulink>, and
-      <ulink url="http://www.ximea.com/">XIMEA</ulink>
+      <ulink url="https://www.alliedvision.com/en/support/software-downloads.html">PvAPI</ulink>,-->
+      <ulink url="https://github.com/oneapi-src/oneTBB">Threading Building Blocks (TBB)</ulink>, and
+      <!--<ulink url="http://unicap-imaging.org/">UniCap</ulink>,-->
+      <ulink url="http://www.vtk.org/">VTK - The Visualization Toolkit</ulink>,
+      <!--<ulink url="http://www.ximea.com/">XIMEA</ulink>-->
     </para>
 @z
 
@@ -313,6 +315,7 @@
         <seg>
           opencv_annotation,
           opencv_interactive-calibration,
+          opencv_model_diagnostics,
           opencv_version,
           opencv_visualisation, and
           setup_vars_opencv4.sh
@@ -337,6 +340,8 @@
         <seg>
           /usr/include/opencv4
           /usr/lib/cmake/opencv4,
+          /usr/lib/python&python3-majorver;/site-packages/cv2,
+          /usr/share/licenses/opencv4,
           /usr/share/opencv4, and
           /usr/share/java/opencv4
         </seg>
@@ -344,8 +349,9 @@
         <seg>
           opencv_annotation,
           opencv_interactive-calibration,
+          opencv_model_diagnostics,
           opencv_version,
-          opencv_visualisation, and
+          opencv_visualisation,
           setup_vars_opencv4.sh
         </seg>
         <seg>
@@ -362,13 +368,15 @@
           libopencv_objdetect.so,
           libopencv_photo.so,
           libopencv_stitching.so,
-          libopencv_video.so, and 
+          libopencv_video.so,
           libopencv_videoio.so
         </seg>
         <seg>
           /usr/include/opencv4
           /usr/lib/cmake/opencv4,
-          /usr/share/opencv4, and
+          /usr/lib/python&python3-majorver;/site-packages/cv2,
+          /usr/share/licenses/opencv4,
+          /usr/share/opencv4,
           /usr/share/java/opencv4
         </seg>
 @z

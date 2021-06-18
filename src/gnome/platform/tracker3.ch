@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY tracker3-buildsize     "81 MB (with tests)">
+  <!ENTITY tracker3-buildsize     "82 MB (with tests)">
   <!ENTITY tracker3-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY tracker3-buildsize     "81 MB（テスト込み）">
+  <!ENTITY tracker3-buildsize     "82 MB（テスト込み）">
   <!ENTITY tracker3-time          "0.8 SBU（テスト込み）">
 @z
 
@@ -105,19 +101,15 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="NetworkManager"/>,
-      <xref linkend="sqlite"/>, and
-      <xref linkend="upower"/>
+      <xref linkend="icu"/>, and
+      <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="icu"/>,
-      <xref linkend="NetworkManager"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="upower"/>
+      <xref linkend="sqlite"/>
     </para>
 @z
 
@@ -126,11 +118,10 @@
     <para role="optional">
       <xref linkend="asciidoc"/>,
       <xref linkend="gtk-doc"/>,
-      <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>,
-      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>, and
-      <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
-      (for tests)
-      <!-- Python2 used to be a dependency until 2.2.1 -->
+      <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>, and
+      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>
+      <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+      (for tests)-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -138,10 +129,9 @@
       <xref linkend="asciidoc"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>,
-      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>,
-      <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
-      (for tests)
-      <!-- Python2 used to be a dependency until 2.2.1 -->
+      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>
+      <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+      (for tests)-->
     </para>
 @z
 
@@ -168,12 +158,12 @@
       To test the results, issue: <command>ninja test</command>. The tests
       should be run from a graphical session. One test,
       <filename>tracker:functional/portal</filename>, is known to timeout.
-      14 tests will fail if the Python 3 module tap.py is not installed.
+      <!--14 tests will fail if the Python 3 module tap.py is not installed.-->
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       テストはグラフィックセッションから実行することが必要です。
       1 つのテスト <filename>tracker:functional/portal</filename> はタイムアウトします。
-      また 14 個のテストが、Python 3 モジュール tap.py がインストールされていない場合には失敗します。
+      <!-- また 14 個のテストが、Python 3 モジュール tap.py がインストールされていない場合には失敗します。-->
 @z
 
 @x

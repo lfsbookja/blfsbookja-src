@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libtasn1-buildsize     "11 MB (with tests)">
-  <!ENTITY libtasn1-time          "0.2 SBU (with tests)">
+  <!ENTITY libtasn1-buildsize     "12 MB (with tests)">
+  <!ENTITY libtasn1-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY libtasn1-buildsize     "11 MB (テスト込み)">
-  <!ENTITY libtasn1-time          "0.2 SBU (テスト込み)">
+  <!ENTITY libtasn1-buildsize     "12 MB (テスト込み)">
+  <!ENTITY libtasn1-time          "0.4 SBU (テスト込み)">
 @z
 
 @x

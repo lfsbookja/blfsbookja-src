@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -128,14 +124,6 @@
 @z
 
 @x
-      Move the shared libraries to <filename class="directory">/lib</filename>,
-      and recreate the symlinks in <filename class="directory">/usr/lib</filename>:
-@y
-      Move the shared libraries to <filename class="directory">/lib</filename>,
-      and recreate the symlinks in <filename class="directory">/usr/lib</filename>:
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
@@ -159,16 +147,6 @@
       This option overrides the default library directory of the package
       (<filename class="directory">/usr/lib64</filename>, which is not used
       by LFS.)
-@z
-
-@x
-      <parameter>BINDIR=/bin</parameter>:
-      Make <command>efivar</command> avaliable even if
-      <filename class="directory">/usr</filename> is offline.
-@y
-      <parameter>BINDIR=/bin</parameter>:
-      Make <command>efivar</command> avaliable even if
-      <filename class="directory">/usr</filename> is offline.
 @z
 
 @x

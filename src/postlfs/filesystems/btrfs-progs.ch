@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY btrfs-progs-buildsize     "93 MB (up to 2.7 GB are used during tests)">
-  <!ENTITY btrfs-progs-time          "0.2 SBU (add 50-100 SBU for tests, depending on disk speed)">
+  <!ENTITY btrfs-progs-buildsize     "63 MB (up to 2.7 GB are used during tests)">
+  <!ENTITY btrfs-progs-time          "0.2 SBU (add 12 SBU for tests, but will be longer on slow disks)">
 @y
-  <!ENTITY btrfs-progs-buildsize     "93 MB（テスト中に最大 2.7 GB まで）">
-  <!ENTITY btrfs-progs-time          "0.2 SBU（テスト実施時はさらに 50～100 SBU、ディスク速度に依存）">
+  <!ENTITY btrfs-progs-buildsize     "63 MB（テスト中に最大 2.7 GB まで）">
+  <!ENTITY btrfs-progs-time          "0.2 SBU（テスト実施時はさらに 12 SBU、低速ディスクではそれ以上）">
 @z
 
 @x

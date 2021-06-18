@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -22,13 +18,13 @@
 @z
 
 @x
-    <title>Introduction to LibTIFF</title>
+    <title>Introduction to libtiff</title>
 @y
-    <title>&IntroductionTo1;LibTIFF&IntroductionTo2;</title>
+    <title>&IntroductionTo1;libtiff&IntroductionTo2;</title>
 @z
 
 @x
-      The <application>LibTIFF</application> package contains the TIFF 
+      The <application>libtiff</application> package contains the TIFF 
       libraries and associated utilities. The libraries are used by many
       programs for reading and writing TIFF files and the utilities are
       used for general work with TIFF files.
@@ -81,9 +77,9 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">LibTIFF Dependencies</bridgehead>
+    <bridgehead renderas="sect3">libtiff Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">&Dependencies1;LibTIFF&Dependencies2;</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libtiff&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -123,16 +119,16 @@
 @z
 
 @x
-    <title>Installation of LibTIFF</title>
+    <title>Installation of libtiff</title>
 @y
-    <title>&InstallationOf1;LibTIFF&InstallationOf2;</title>
+    <title>&InstallationOf1;libtiff&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>LibTIFF</application> by running the following
+      Install <application>libtiff</application> by running the following
       commands:
 @y
-      以下のコマンドを実行して <application>LibTIFF</application> をビルドします。
+      以下のコマンドを実行して <application>libtiff</application> をビルドします。
 @z
 
 @x

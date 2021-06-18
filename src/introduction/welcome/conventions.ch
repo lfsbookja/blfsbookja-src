@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -75,9 +71,9 @@
 @z
 
 @x
-  <para><ulink url="http://www.&lfs-domainname;/"/></para>
+  <para><ulink url="https://www.&lfs-domainname;/"/></para>
 @y
-  <para><ulink url="http://www.&lfs-domainname;/"/></para>
+  <para><ulink url="https://www.&lfs-domainname;/"/></para>
 @z
 
 @x

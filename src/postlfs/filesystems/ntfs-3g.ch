@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -189,20 +185,20 @@
 @z
 
 @x
-      <command>ln -sv ../bin/ntfs-3g /sbin/mount.ntfs</command>: Creating
+      <command>ln -sv ../bin/ntfs-3g /usr/sbin/mount.ntfs</command>: Creating
       /sbin/mount.ntfs makes <command>mount</command> default to using Ntfs-3g
       to mount NTFS partitions.
 @y
-      <command>ln -sv ../bin/ntfs-3g /sbin/mount.ntfs</command>: Creating
+      <command>ln -sv ../bin/ntfs-3g /usr/sbin/mount.ntfs</command>: Creating
       /sbin/mount.ntfs makes <command>mount</command> default to using Ntfs-3g
       to mount NTFS partitions.
 @z
 
 @x
-      <command>chmod -v 4755 /bin/ntfs-3g</command>: Making mount.ntfs setuid
+      <command>chmod -v 4755 /usr/bin/ntfs-3g</command>: Making mount.ntfs setuid
       root allows non root users to mount NTFS partitions.
 @y
-      <command>chmod -v 4755 /bin/ntfs-3g</command>: Making mount.ntfs setuid
+      <command>chmod -v 4755 /usr/bin/ntfs-3g</command>: Making mount.ntfs setuid
       root allows non root users to mount NTFS partitions.
 @z
 

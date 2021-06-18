@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY glib-networking-buildsize     "6.5 MB (with tests)">
+  <!ENTITY glib-networking-buildsize     "5.1 MB (with tests)">
   <!ENTITY glib-networking-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY glib-networking-buildsize     "6.5 MB（テスト込み）">
+  <!ENTITY glib-networking-buildsize     "5.1 MB（テスト込み）">
   <!ENTITY glib-networking-time          "&LessThan1;0.1 SBU&LessThan2; （テスト込み）">
 @z
 
@@ -159,16 +155,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>- -without-ca-certificates</parameter>: This parameter forces
-      use of PKCS #11 modules for TLS certificate validation instead of a
-      bundle of certificates.
-@y
-      <parameter>- -without-ca-certificates</parameter>: This parameter forces
-      use of PKCS #11 modules for TLS certificate validation instead of a
-      bundle of certificates.
 @z
 
 @x

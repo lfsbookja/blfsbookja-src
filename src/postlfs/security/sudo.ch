@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY sudo-buildsize     "44 MB (add 9 MB for tests)">
+  <!ENTITY sudo-buildsize     "43 MB (add 13 MB for tests)">
   <!ENTITY sudo-time          "0.4 SBU (add 0.1 SBU for tests)">
 @y
-  <!ENTITY sudo-buildsize     "44 MB（テスト実行時はさらに 9 MB）">
+  <!ENTITY sudo-buildsize     "43 MB（テスト実行時はさらに 13 MB）">
   <!ENTITY sudo-time          "0.4 SBU（テスト実行時はさらに 0.1 SBU）">
 @z
 
@@ -132,11 +128,11 @@
 
 @x
       To test the results, issue: <command>env LC_ALL=C make check 2&gt;&amp;1
-      | tee ../make-check.log</command>. Check the results with <command>grep
-      failed ../make-check.log</command>. 
+      | tee make-check.log</command>. Check the results with <command>grep
+      failed make-check.log</command>. 
 @y
       ビルド結果をテストする場合は <command>env LC_ALL=C make check 2&gt;&amp;1
-      | tee ../make-check.log</command> を実行します。
+      | tee make-check.log</command> を実行します。
       確認は <command>grep
       failed ../make-check.log</command> により行います。
 @z

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY gnome-settings-daemon-time          "1.0 SBU (Using parallelism=4)">
+  <!ENTITY gnome-settings-daemon-time          "0.1 SBU (Using parallelism=4)">
 @y
-  <!ENTITY gnome-settings-daemon-time          "1.0 SBU（parallelism=4 利用時）">
+  <!ENTITY gnome-settings-daemon-time          "0.1 SBU（parallelism=4 利用時）">
 @z
 
 @x
@@ -86,6 +82,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="alsa-lib"/>,
       <xref linkend="colord"/>,
       <xref linkend="fontconfig"/>,
       <xref linkend="gcr"/>,
@@ -107,6 +104,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="alsa-lib"/>,
       <xref linkend="colord"/>,
       <xref linkend="fontconfig"/>,
       <xref linkend="gcr"/>,
@@ -122,7 +120,7 @@
       <xref linkend="pulseaudio"/>,
       <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
-      <xref linkend="upower"/>,
+      <xref linkend="upower"/>, and
       <xref linkend="xorg-wacom-driver"/>
     </para>
 @z

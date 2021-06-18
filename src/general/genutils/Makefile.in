@@ -234,6 +234,7 @@ top_srcdir = @top_srcdir@
 BOOKdir = @abs_bookdir@/general/genutils
 CHANGE_FILES = \
 	asciidoc.ch           \
+	asciidoctor.ch        \
 	bogofilter.ch         \
 	compface.ch           \
 	desktop-file-utils.ch \

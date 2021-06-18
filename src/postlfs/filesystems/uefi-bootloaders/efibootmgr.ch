@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -162,16 +158,6 @@
       This option specifies the name of the default EFI boot loader.  It is
       set to match the EFI boot loader provided by GRUB
       <!--xref linkend="grub-efi"/-->.
-@z
-
-@x
-      <parameter>sbindir=/sbin</parameter>:
-      Make <command>efibootmgr</command> avaliable even if
-      <filename class="directory">/usr</filename> is offline.
-@y
-      <parameter>sbindir=/sbin</parameter>:
-      Make <command>efibootmgr</command> avaliable even if
-      <filename class="directory">/usr</filename> is offline.
 @z
 
 @x

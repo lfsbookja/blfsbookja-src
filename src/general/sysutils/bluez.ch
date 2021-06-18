@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -275,7 +271,7 @@
 
 @x
         <seg>
-          bccmd, 
+      <!--bccmd, -->
           bluemoon, 
           bluetoothctl, 
           bluetoothd (symlink), 
@@ -297,7 +293,7 @@
         </seg>
 @y
         <seg>
-          bccmd, 
+      <!--bccmd, -->
           bluemoon, 
           bluetoothctl, 
           bluetoothd (symlink), 
@@ -306,7 +302,7 @@
           hex2hcd, 
           l2ping, 
           l2test,
-          mpris-proxy,
+          mpris-proxy, and 
           rctest
         </seg>
         <seg>
@@ -314,7 +310,7 @@
         </seg>
         <seg>
           /etc/bluetooth, 
-          /usr/{include,libexec}/bluetooth,
+          /usr/{include,libexec}/bluetooth, and
           /usr/share/doc/bluez-&bluez-version;
         </seg>
 @z

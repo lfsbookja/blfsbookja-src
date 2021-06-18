@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY rust-buildsize     "7.6 GB (369 MB installed) including 294 MB of ~/.cargo files for the user building this. Add 3.3 GB if running the tests">
-  <!ENTITY rust-time          "39 SBU (add 31 SBU for tests, both on a 4-core machine)">
+  <!ENTITY rust-buildsize     "9.3 GB (407 MB installed) including 291 MB of ~/.cargo files for the user building this. Add 4.0 GB including extra 179 MB of ~/.cargo files if running the tests">
+  <!ENTITY rust-time          "31 SBU (add 13 SBU for tests, both on a 4-core machine)">
 @y
-  <!ENTITY rust-buildsize     "7.6 GB (369 MB installed) including 294 MB of ~/.cargo files for the user building this. Add 3.3 GB if running the tests">
-  <!ENTITY rust-time          "39 SBU (add 31 SBU for tests, both on a 4-core machine)">
+  <!ENTITY rust-buildsize     "9.3 GB (407 MB installed) including 291 MB of ~/.cargo files for the user building this. Add 4.0 GB including extra 179 MB of ~/.cargo files if running the tests">
+  <!ENTITY rust-time          "31 SBU (add 13 SBU for tests, both on a 4-core machine)">
 @z
 
 @x
@@ -361,17 +357,21 @@
 @z
 
 @x
-      At a minimum, two tests (run-make-fulldeps/long-linker-command-lines
-      and run-make-fulldeps/sysroot-crates-are-unstable) may fail.
-      If a version of <command>gdb</command> which was released after this
-      version of rust is used, such as <xref linkend="gdb"/>, four more failures
+      At a minimum, seven tests will fail: ui/asm/inline-syntax.rs#arm,
+      assembly/target-feature-multiple.rs#SINGLEFLAG,
+      assembly/target-feature-multiple.rs#TWOFLAGS,
+      run-make-fulldeps/long-linker-command-lines, run-make-fulldeps/split-debuginfo,
+      run-make-fulldeps/split-dwarf, run-make-fulldeps/sysroot-crates-are-unstable.
+      With any recent version of <command>gdb</command>, four more failures
       (debuginfo/extern-c-fn.rs, debuginfo/generator-objects.rs,
       debuginfo/issue-57822.rs, debuginfo/pretty-huge-vec.rs) can be expected.
 @y
-      At a minimum, two tests (run-make-fulldeps/long-linker-command-lines
-      and run-make-fulldeps/sysroot-crates-are-unstable) may fail.
-      If a version of <command>gdb</command> which was released after this
-      version of rust is used, such as <xref linkend="gdb"/>, four more failures
+      At a minimum, seven tests will fail: ui/asm/inline-syntax.rs#arm,
+      assembly/target-feature-multiple.rs#SINGLEFLAG,
+      assembly/target-feature-multiple.rs#TWOFLAGS,
+      run-make-fulldeps/long-linker-command-lines, run-make-fulldeps/split-debuginfo,
+      run-make-fulldeps/split-dwarf, run-make-fulldeps/sysroot-crates-are-unstable.
+      With any recent version of <command>gdb</command>, four more failures
       (debuginfo/extern-c-fn.rs, debuginfo/generator-objects.rs,
       debuginfo/issue-57822.rs, debuginfo/pretty-huge-vec.rs) can be expected.
 @z
@@ -602,7 +602,9 @@
 
 @x
         <seg>
-          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri, rls, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt.
+          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri,
+          rls, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc,
+          rustdoc, rustfmt.
         </seg>
         <seg>
           Many lib*&lt;16-byte-hash&gt;.so libraries.
@@ -615,7 +617,9 @@
         </seg>
 @y
         <seg>
-          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri, rls, rust-gdb, rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt
+          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri,
+          rls, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc,
+          rustdoc, rustfmt
         </seg>
         <seg>
           数多くの lib*&lt;16-byte-hash&gt;.so ライブラリ

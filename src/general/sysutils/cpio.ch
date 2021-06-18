@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -145,19 +141,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--bindir=/bin</parameter>: This parameter installs
-      <command>cpio</command> to <filename class="directory">/bin</filename>
-      instead of <filename class="directory">/usr/bin</filename> as recommended
-      by the FHS guidelines.
-@y
-      <parameter>--bindir=/bin</parameter>:
-      このパラメーターは、<command>cpio</command> プログラムのインストール先を <filename
-      class="directory">/usr/bin</filename> ではなく<filename
-      class="directory">/bin</filename> にします。
-      これは FHS のガイドラインに従うものです。
 @z
 
 @x

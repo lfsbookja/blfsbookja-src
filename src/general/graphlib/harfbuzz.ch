@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "226 MB (add 18 MB for tests)">
+  <!ENTITY harfbuzz-buildsize     "228 MB (add 18 MB for tests)">
   <!ENTITY harfbuzz-time          "0.4 SBU (Using parallelism=4; add 0.2 SBU for tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "226 MB （テスト実施時はさらに 18 MB）">
+  <!ENTITY harfbuzz-buildsize     "228 MB （テスト実施時はさらに 18 MB）">
   <!ENTITY harfbuzz-time          "0.4 SBU （parallelism=4 利用時。テスト実施時はさらに 0.2 SBU）"> 
 @z
 

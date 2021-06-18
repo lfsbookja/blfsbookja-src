@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the LFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -125,7 +121,7 @@
       <xref linkend="sdl"/>,
       <xref role="nodep" linkend="vte"/> or <xref linkend="vte2"/>, and
 <!-- libcacard has been a standalone project since qemu-2.5.-->
-      <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>
+      <ulink url="https://gitlab.freedesktop.org/spice/libcacard">libcacard</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -148,7 +144,7 @@
       <xref linkend="sdl"/>,
       <xref role="nodep" linkend="vte"/> or <xref linkend="vte2"/>,
 <!-- libcacard has been a standalone project since qemu-2.5.-->
-      <ulink url="https://www.spice-space.org/page/Libcacard">libcacard</ulink>
+      <ulink url="https://gitlab.freedesktop.org/spice/libcacard">libcacard</ulink>
     </para>
 @z
 
@@ -487,10 +483,10 @@
 
 @x qemu-io
             is a diagnostic and manipulation program for (virtual) memory
-            media.  It is still at an early stage of development
+            media. It is still at an early stage of development
 @y
             is a diagnostic and manipulation program for (virtual) memory
-            media.  It is still at an early stage of development
+            media. It is still at an early stage of development
 @z
 
 @x qemu-nbd
@@ -508,13 +504,13 @@
 @z
 
 @x virtfs-proxy-helper
-            creates a socket pair or a named socket. QEMU and proxy helper
-            communicate using this socket. QEMU proxy fs driver sends
-            filesystem request to proxy helper and receives the response
+            creates a socket pair or a named socket. QEMU and the proxy helper
+            communicate using this socket. The QEMU proxy fs driver sends
+            filesystem requests to the proxy helper and receives the response
             from it
 @y
-            creates a socket pair or a named socket. QEMU and proxy helper
-            communicate using this socket. QEMU proxy fs driver sends
-            filesystem request to proxy helper and receives the response
+            creates a socket pair or a named socket. QEMU and the proxy helper
+            communicate using this socket. The QEMU proxy fs driver sends
+            filesystem requests to the proxy helper and receives the response
             from it
 @z

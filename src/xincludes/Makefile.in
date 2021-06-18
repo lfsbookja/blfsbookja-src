@@ -246,6 +246,7 @@ CHANGE_FILES = \
 	gtk-doc-rebuild-problem.ch  \
 	gtk-update-icon-cache.ch    \
 	lib-config.ch               \
+	meson-buildtype-release.ch  \
 	meson-wrap-nodownload.ch    \
 	mozconfigure.ch             \
 	mozmach.ch                  \

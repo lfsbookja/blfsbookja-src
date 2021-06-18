@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY wireshark-buildsize     "751 MB (with all optional dependencies available in the BLFS book)">
-  <!ENTITY wireshark-time          "2.4 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-buildsize     "606 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-time          "2.2 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
 @y
-  <!ENTITY wireshark-buildsize     "751 MB (with all optional dependencies available in the BLFS book)">
-  <!ENTITY wireshark-time          "2.4 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-buildsize     "606 MB (with all optional dependencies available in the BLFS book)">
+  <!ENTITY wireshark-time          "2.2 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
 @z
 
 @x

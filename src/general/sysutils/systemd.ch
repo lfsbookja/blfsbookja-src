@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY systemd-buildsize     "273 MB (with tests)">
-  <!ENTITY systemd-time          "2.1 SBU (with tests)">
+  <!ENTITY systemd-buildsize     "285 MB (with tests)">
+  <!ENTITY systemd-time          "2.2 SBU (with tests)">
 @y
-  <!ENTITY systemd-buildsize     "273 MB（テスト込み）">
-  <!ENTITY systemd-time          "2.1 SBU（テスト込み）">
+  <!ENTITY systemd-buildsize     "285 MB（テスト込み）">
+  <!ENTITY systemd-time          "2.2 SBU（テスト込み）">
 @z
 
 @x
@@ -147,16 +143,19 @@
       <xref linkend="pcre2"/>,
       <xref linkend="qemu"/>,
       <xref linkend="qrencode"/>,
+      <xref linkend="rsync"/>,
       <xref linkend="valgrind"/>,
       <xref linkend="zsh"/> (for the zsh completions),
       <ulink url="https://sourceforge.net/projects/gnu-efi/">gnu-efi</ulink>,
       <ulink url="https://www.kernel.org/pub/linux/utils/kernel/kexec/">kexec-tools</ulink>,
+      <ulink url="https://sourceware.org/elfutils/">libdw</ulink>,
       <ulink url="https://developers.yubico.com/libfido2/">libfido2</ulink>,
       <ulink url="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</ulink>,
       <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
       <!--<ulink url="http://fukuchi.org/works/qrencode/">qrencode</ulink>,-->
-      <ulink url="https://sourceforge.net/projects/linuxquota/">quota-tools</ulink> and
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
+      <ulink url="https://sourceforge.net/projects/linuxquota/">quota-tools</ulink>,
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>, and
+      <ulink url="https://tpm2-tss.readthedocs.io/en/latest/">tpm2-tss</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -176,16 +175,19 @@
       <xref linkend="pcre2"/>,
       <xref linkend="qemu"/>,
       <xref linkend="qrencode"/>,
+      <xref linkend="rsync"/>,
       <xref linkend="valgrind"/>,
-      <xref linkend="zsh"/> (zsh 補完のため),
+      <xref linkend="zsh"/> (for the zsh completions),
       <ulink url="https://sourceforge.net/projects/gnu-efi/">gnu-efi</ulink>,
       <ulink url="https://www.kernel.org/pub/linux/utils/kernel/kexec/">kexec-tools</ulink>,
+      <ulink url="https://sourceware.org/elfutils/">libdw</ulink>,
       <ulink url="https://developers.yubico.com/libfido2/">libfido2</ulink>,
       <ulink url="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</ulink>,
       <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
       <!--<ulink url="http://fukuchi.org/works/qrencode/">qrencode</ulink>,-->
       <ulink url="https://sourceforge.net/projects/linuxquota/">quota-tools</ulink>,
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>
+      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>,
+      <ulink url="https://tpm2-tss.readthedocs.io/en/latest/">tpm2-tss</ulink>
     </para>
 @z
 
@@ -220,13 +222,11 @@
 @z
 
 @x
-      Apply a patch to fix regressions in systemd-networkd and segmentation 
-      faults in systemctl, as well as to allow systemd-rfkill to function under
-      Linux-5.11+:
+      Apply a patch to fix a build issue with meson-0.57.2 and higher, as well
+      as to allow systemd-rfkill to work correctly with Linux-5.11 and higher.
 @y
-      Apply a patch to fix regressions in systemd-networkd and segmentation 
-      faults in systemctl, as well as to allow systemd-rfkill to function under
-      Linux-5.11+:
+      Apply a patch to fix a build issue with meson-0.57.2 and higher, as well
+      as to allow systemd-rfkill to work correctly with Linux-5.11 and higher.
 @z
 
 @x
@@ -302,13 +302,13 @@
 @z
 
 @x
-      <parameter>-Dhomed=false</parameter>: Remove a daemon that does not offer
+      <parameter>-Dhomed=false</parameter>: Removes a daemon that does not offer
       any use under a traditional BLFS configuration, especially using accounts
       created with useradd. To enable systemd-homed, first ensure that you have
       <xref linkend="cryptsetup"/> and <xref linkend="libpwquality"/>, and then
       change "false" to "true" in the above meson command.
 @y
-      <parameter>-Dhomed=false</parameter>: Remove a daemon that does not offer
+      <parameter>-Dhomed=false</parameter>: Removes a daemon that does not offer
       any use under a traditional BLFS configuration, especially using accounts
       created with useradd. To enable systemd-homed, first ensure that you have
       <xref linkend="cryptsetup"/> and <xref linkend="libpwquality"/>, and then

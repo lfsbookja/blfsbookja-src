@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -117,14 +113,14 @@
 
 @x
       Also, the LFS Community has developed its own LiveCD available at
-      <ulink url='http://www.&lfs-domainname;/livecd/'/>.  This LiveCD, is no
+      <ulink url='https://www.&lfs-domainname;/livecd/'/>.  This LiveCD, is no
       longer capable of building an entire LFS/BLFS system, but is still a
       good rescue CD-ROM.  If you download the
       ISO image, use <xref linkend="xorriso"/> to copy the image to a
       CD-ROM.
 @y
       Also, the LFS Community has developed its own LiveCD available at
-      <ulink url='http://www.&lfs-domainname;/livecd/'/>.  This LiveCD, is no
+      <ulink url='https://www.&lfs-domainname;/livecd/'/>.  This LiveCD, is no
       longer capable of building an entire LFS/BLFS system, but is still a
       good rescue CD-ROM.  If you download the
       ISO image, use <xref linkend="xorriso"/> to copy the image to a

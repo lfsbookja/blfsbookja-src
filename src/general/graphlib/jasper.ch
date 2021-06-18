@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY jasper-buildsize     "10 MB (with tests)">
+  <!ENTITY jasper-buildsize     "6.6 MB (with tests)">
   <!ENTITY jasper-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY jasper-buildsize     "10 MB（テスト込み）">
+  <!ENTITY jasper-buildsize     "6.6 MB（テスト込み）">
   <!ENTITY jasper-time          "0.2 SBU（テスト込み）">
 @z
 

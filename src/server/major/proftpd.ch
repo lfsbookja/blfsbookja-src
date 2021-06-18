@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -301,18 +297,22 @@
           None
         </seg>
         <seg>
-          /usr/{include,lib}/proftpd
+          /usr/{include,lib}/proftpd,
+          /usr/share/doc/proftpd-&proftpd-version;, and
+          /srv/ftp
         </seg>
 @y
         <seg>
           ftpasswd, ftpcount, ftpdctl, ftpmail, ftpquota, ftpscrub, ftpshut,
-          ftptop, ftpwho, in.proftpd (symlink to proftpd), proftpd, prxs
+          ftptop, ftpwho, in.proftpd (proftpd へのシンボリックリンク), proftpd, prxs
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
-          /usr/{include,lib}/proftpd
+          /usr/{include,lib}/proftpd,
+          /usr/share/doc/proftpd-&proftpd-version;,
+          /srv/ftp
         </seg>
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -168,11 +164,11 @@
 @z
 
 @x
-      <parameter>--with-pam-dir=/lib/security</parameter>: This switch
-      specifies where the PAM module will be installed.
+      <command>sed ... schema/*.xml</command>:  This command fixes a
+      deprecated entry in the schema template.
 @y
-      <parameter>--with-pam-dir=/lib/security</parameter>:
-      このスイッチは PAM モジュールのインストール先ディレクトリを指定します。
+      <command>sed ... schema/*.xml</command>:  This command fixes a
+      deprecated entry in the schema template.
 @z
 
 @x

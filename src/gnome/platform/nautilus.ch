@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY nautilus-time          "1.0 SBU (with tests, at -j4)">
+  <!ENTITY nautilus-buildsize     "160 MB (with tests)">
+  <!ENTITY nautilus-time          "0.3 SBU (with tests, at -j4)">
 @y
-  <!ENTITY nautilus-time          "1.0 SBU（テスト込み。-j4 利用）">
+  <!ENTITY nautilus-buildsize     "160 MB (テスト込み)">
+  <!ENTITY nautilus-time          "0.3 SBU（テスト込み。-j4 利用）">
 @z
 
 @x

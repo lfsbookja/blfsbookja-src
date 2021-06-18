@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY webkitgtk-buildsize     "899 MB (127 MB installed)">
-  <!ENTITY webkitgtk-time          "29 SBU (using parallelism=4, estimated 96 SBU using one core)">
+  <!ENTITY webkitgtk-buildsize     "897 MB (127 MB installed)">
+  <!ENTITY webkitgtk-time          "29 SBU (using parallelism=4, estimated 97 SBU using one core)">
 @y
-  <!ENTITY webkitgtk-buildsize     "899 MB (127 MB installed)">
-  <!ENTITY webkitgtk-time          "29 SBU (using parallelism=4, estimated 96 SBU using one core)">
+  <!ENTITY webkitgtk-buildsize     "897 MB (127 MB installed)">
+  <!ENTITY webkitgtk-time          "29 SBU (using parallelism=4, estimated 97 SBU using one core)">
 @z
 
 @x
@@ -104,8 +100,9 @@
       <xref linkend="mesa"/>,
       <xref linkend="openjpeg2"/>,
       <xref linkend="ruby"/>,
-      <xref linkend="sqlite"/>, and
-      <xref linkend="which"/>
+      <xref linkend="sqlite"/>,
+      <xref linkend="which"/>, and
+      <xref linkend="wpebackend-fdo"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -125,7 +122,8 @@
       <xref linkend="openjpeg2"/>,
       <xref linkend="ruby"/>,
       <xref linkend="sqlite"/>,
-      <xref linkend="which"/>
+      <xref linkend="which"/>,
+      <xref linkend="wpebackend-fdo"/>
     </para>
 @z
 
@@ -161,9 +159,7 @@
       <ulink url="https://ccache.dev/">ccache</ulink>,
       <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
-      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>,
-      <ulink url="https://github.com/WebPlatformForEmbedded/libwpe">libwpe</ulink>,
-      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>, and
+      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>, and
       <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
     </para>
 @y
@@ -179,8 +175,6 @@
       <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
       <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
       <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>,
-      <ulink url="https://github.com/WebPlatformForEmbedded/libwpe">libwpe</ulink>,
-      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>, and
       <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
     </para>
 @z

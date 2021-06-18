@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY python3-buildsize     "379 MB (add 36 MB for tests)">
-  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 1.7 SBU for tests)">
+  <!ENTITY python3-buildsize     "355 MB (add 47 MB for tests)">
+  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 2.5 SBU for tests)">
 @y
-  <!ENTITY python3-buildsize     "379 MB (add 36 MB for tests)">
-  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 1.7 SBU for tests)">
+  <!ENTITY python3-buildsize     "355 MB (add 47 MB for tests)">
+  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 2.5 SBU for tests)">
 @z
 
 @x
@@ -174,30 +170,32 @@
 
 @x
       <parameter>--with-system-ffi</parameter>: This switch enables linking
-      against system version of <application>libffi</application>. 
+      against the system version of <application>libffi</application>. 
 @y
       <parameter>--with-system-ffi</parameter>: This switch enables linking
-      against system version of <application>libffi</application>. 
+      against the system version of <application>libffi</application>. 
 @z
 
 @x
       <parameter>--with-ensurepip=yes</parameter> : This switch enables building
-      <command>pip</command> and <command>setuptools</command> packaging programs.
-      <command>setuptools</command> is needed for building some Python modules.
+      the <command>pip</command> and <command>setuptools</command> packaging 
+      programs. <command>setuptools</command> is needed for building some
+      Python modules.
 @y
       <parameter>--with-ensurepip=yes</parameter> : This switch enables building
-      <command>pip</command> and <command>setuptools</command> packaging programs.
-      <command>setuptools</command> is needed for building some Python modules.
+      the <command>pip</command> and <command>setuptools</command> packaging 
+      programs. <command>setuptools</command> is needed for building some
+      Python modules.
 @z
 
 @x
       <option>--with-dbmliborder=bdb:gdbm:ndbm</option>: Use this switch
-      if you want to build <application>Python</application> DBM Module
+      if you want to build the <application>Python</application> DBM Module
       against <application>Berkeley DB</application> instead of
       <application>GDBM</application>.
 @y
       <option>--with-dbmliborder=bdb:gdbm:ndbm</option>: Use this switch
-      if you want to build <application>Python</application> DBM Module
+      if you want to build the <application>Python</application> DBM Module
       against <application>Berkeley DB</application> instead of
       <application>GDBM</application>.
 @z
@@ -269,7 +267,9 @@
           2to3 (symlink) and
           2to3-&python3-majorver;,
 
+          <!--
           easy_install-&python3-majorver;,
+          -->
 
           idle3 (symlink) and
           idle&python3-majorver;,
@@ -282,9 +282,6 @@
 
           python3 (symlink);
           python&python3-majorver;, and
-
-          python3 (symlink), and
-          python&python3-majorver;
 
           python3-config (symlink) and
           python&python3-majorver;-config
@@ -299,35 +296,34 @@
         </seg>
 @y
         <seg>
-          2to3 (symlink),
+          2to3 (symlink) and
           2to3-&python3-majorver;,
 
+          <!--
           easy_install-&python3-majorver;,
+          -->
 
-          idle3 (symlink),
+          idle3 (symlink) and
           idle&python3-majorver;,
 
-          pip3 (symlink),
+          pip3 (symlink) and
           pip&python3-majorver;,
 
-          pydoc3,
+          pydoc3 and
           pydoc&python3-majorver;,
 
           python3 (symlink);
-          python&python3-majorver;,
+          python&python3-majorver;, and
 
-          python3 (symlink),
-          python&python3-majorver;
-
-          python3-config (symlink),
+          python3-config (symlink) and
           python&python3-majorver;-config
         </seg>
         <seg>
-          libpython&python3-majorver;.so, libpython3.so
+          libpython&python3-majorver;.so and libpython3.so
         </seg>
         <seg>
           /usr/include/python&python3-majorver;,
-          /usr/lib/python&python3-majorver;,
+          /usr/lib/python&python3-majorver;, and
           /usr/share/doc/python-&python3-version;
         </seg>
 @z

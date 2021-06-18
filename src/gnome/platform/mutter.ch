@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY mutter-time          "1.6 SBU (Using parallelism=4)">
+  <!ENTITY mutter-time          "1.8 SBU (Using parallelism=4)">
 @y
-  <!ENTITY mutter-time          "1.6 SBU（parallelism=4 利用時）">
+  <!ENTITY mutter-time          "1.8 SBU（parallelism=4 利用時）">
 @z
 
 @x
@@ -88,14 +84,10 @@
     <para role="required">
       <!-- now using internal shipped clutter and cogl copies -->
       <!-- <xref linkend="clutter"/>, -->
-      <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="graphene"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libwacom"/>,
       <xref linkend="libxkbcommon"/>,
-      <xref linkend="pipewire"/>,
-      <xref linkend="upower"/>, and
+      <xref linkend="pipewire"/>, and
       <xref linkend="zenity"/>
     </para>
 @y
@@ -103,14 +95,10 @@
     <para role="required">
       <!-- now using internal shipped clutter and cogl copies -->
       <!-- <xref linkend="clutter"/>, -->
-      <xref linkend="gnome-desktop"/>,
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="graphene"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libwacom"/>,
       <xref linkend="libxkbcommon"/>,
-      <xref linkend="pipewire"/>,
-      <xref linkend="upower"/>,
+      <xref linkend="pipewire"/>, and
       <xref linkend="zenity"/>
     </para>
 @z

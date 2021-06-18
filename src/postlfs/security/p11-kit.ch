@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY p11-kit-buildsize     "47 MB (add 169 MB for tests)">
+  <!ENTITY p11-kit-buildsize     "56 MB (with tests)">
   <!ENTITY p11-kit-time          "0.2 SBU (add 0.6 SBU for tests)">
 @y
-  <!ENTITY p11-kit-buildsize     "47 MB (テスト実施時はさらに 169 MB)">
+  <!ENTITY p11-kit-buildsize     "56 MB (テスト込み)">
   <!ENTITY p11-kit-time          "0.2 SBU (テスト実施時はさらに 0.6 SBU)">
 @z
 
@@ -132,9 +128,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. 
+      To test the results, issue: <command>ninja test</command>. 
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -150,28 +146,28 @@
 @z
 
 @x
-      <parameter>--with-trust-paths=/etc/pki/anchors</parameter>: this switch
+      <parameter>-Dtrust_paths=/etc/pki/anchors</parameter>: this switch
       sets the location of trusted certificates used by libp11-kit.so.
 @y
-      <parameter>--with-trust-paths=/etc/pki/anchors</parameter>:
-      このスイッチは libp11-kit.so が利用する認証済み証明書のディレクトリを指定します。
+      <parameter>-Dtrust_paths=/etc/pki/anchors</parameter>: this switch
+      sets the location of trusted certificates used by libp11-kit.so.
 @z
 
 @x
-      <option>--with-hash-impl=freebl</option>: Use this switch if you want to
+      <option>-Dhash_impl=freebl</option>: Use this switch if you want to
       use the Freebl library from <application>NSS</application> for SHA1 and
       MD5 hashing.
 @y
-      <option>--with-hash-impl=freebl</option>:
+      <option>-Dhash_impl=freebl</option>:
       SHA1 や MD5 のハッシングに <application>NSS</application> の Freebl ライブラリを利用したい場合に指定します。
 @z
 
 @x
-      <option>--enable-doc</option>: Use this switch if you have installed
+      <option>-Dgtk_doc=true</option>: Use this switch if you have installed
       <xref linkend="gtk-doc"/> and <xref linkend="libxslt"/> and wish to
       rebuild the documentation and generate manual pages.
 @y
-      <option>--enable-doc</option>: 
+      <option>-Dgtk_doc=true</option>: 
       <xref linkend="gtk-doc"/> と <xref linkend="libxslt"/> をインストールしていて、ドキュメントを再生成したり man ページを生成したいときに、本スイッチを指定します。
 @z
 

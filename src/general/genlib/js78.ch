@@ -11,10 +11,10 @@
 
 @x
   <!ENTITY js78-buildsize     "3.0 GB (36 MB installed after removing 34MB static lib)">
-  <!ENTITY js78-time          "2.5 SBU (on a 4-core machine)">
+  <!ENTITY js78-time          "2.6 SBU (on a 4-core machine with parallelism=4)">
 @y
   <!ENTITY js78-buildsize     "3.0 GB (36 MB installed after removing 34MB static lib)">
-  <!ENTITY js78-time          "2.5 SBU (on a 4-core machine)">
+  <!ENTITY js78-time          "2.6 SBU (on a 4-core machine with parallelism=4)">
 @z
 
 @x
@@ -157,7 +157,7 @@
 @z
 
 @x
-      To run JS test suite, issue:
+      To run the JS test suite, issue:
       <command>make -C js/src check-jstests
       JSTESTS_EXTRA_ARGS="--timeout 300 --wpt=disabled"</command>.
       It's recommended to redirect the output into a log.
@@ -170,13 +170,9 @@
       setup and locale. -->
       Depending on the machine, either
       ten or fourteen JS tests related to locale and timezone fail,
-      because of an issue in <xref linkend="icu"/>.
-      To run the JIT test suite, issue:
-      <command>make -C js/src check-jit-test
-      JITTEST_EXTRA_ARGS="--timeout 300"</command>. Again, a few tests
-      may show as unexpected failures.
+      because of an issue with recent versions of <xref linkend="icu"/>.
 @y
-      To run JS test suite, issue:
+      To run the JS test suite, issue:
       <command>make -C js/src check-jstests
       JSTESTS_EXTRA_ARGS="--timeout 300 --wpt=disabled"</command>.
       It's recommended to redirect the output into a log.
@@ -189,11 +185,17 @@
       setup and locale. -->
       Depending on the machine, either
       ten or fourteen JS tests related to locale and timezone fail,
-      because of an issue in <xref linkend="icu"/>.
+      because of an issue with recent versions of <xref linkend="icu"/>.
+@z
+
+@x
       To run the JIT test suite, issue:
       <command>make -C js/src check-jit-test
-      JITTEST_EXTRA_ARGS="--timeout 300"</command>. Again, a few tests
-      may show as unexpected failures.
+      JITTEST_EXTRA_ARGS="--timeout 300"</command>. One test may fail.
+@y
+      To run the JIT test suite, issue:
+      <command>make -C js/src check-jit-test
+      JITTEST_EXTRA_ARGS="--timeout 300"</command>. One test may fail.
 @z
 
 @x

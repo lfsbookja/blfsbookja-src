@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "676 MB (with docs), add 319 MB for tests">
-  <!ENTITY mesa-time          "2.9 SBU (with parallelism=4 and docs). Add 0.5 SBU for tests">
+  <!ENTITY mesa-buildsize     "545 MB (with docs)">
+  <!ENTITY mesa-time          "3.1 SBU (with parallelism=4 and docs)">
 @y
-  <!ENTITY mesa-buildsize     "676 MB (ドキュメント込み)、テスト実施時はさらに 319 MB">
-  <!ENTITY mesa-time          "2.9 SBU (parallelism=4, ドキュメント込み)、テスト実施時はさらに 0.5 SBU">
+  <!ENTITY mesa-buildsize     "545 MB (ドキュメント込み)">
+  <!ENTITY mesa-time          "3.1 SBU (parallelism=4 利用時、ドキュメント込み)">
 @z
 
 @x
@@ -292,12 +288,12 @@
 @z
 
 @x
-      <parameter>-Dbuildtype=release</parameter>: This switch ensures a
+      <parameter>--buildtype=release</parameter>: This switch ensures a
       fully-optimized build, and disables debug assertions which will
       severely slow down the libraries in certain use-cases. Without this
       switch, build sizes can span into the 2GB range.
 @y
-      <parameter>-Dbuildtype=release</parameter>: This switch ensures a
+      <parameter>--buildtype=release</parameter>: This switch ensures a
       fully-optimized build, and disables debug assertions which will
       severely slow down the libraries in certain use-cases. Without this
       switch, build sizes can span into the 2GB range.
@@ -327,16 +323,6 @@
       <parameter>-Dgallium-nine=false</parameter>: Prevents building
       support for (MS Windows) games designed for DX9. Set it to true if
       this support is desired.
-@z
-
-@x
-      <parameter>-Dosmesa=gallium</parameter>: This switch enables building
-      the <filename class="libraryfile">libOSMesa</filename> library and
-      provides Gallium3D support in it. It requires the swrast gallium driver.
-@y
-      <parameter>-Dosmesa=gallium</parameter>: This switch enables building
-      the <filename class="libraryfile">libOSMesa</filename> library and
-      provides Gallium3D support in it. It requires the swrast gallium driver.
 @z
 
 @x

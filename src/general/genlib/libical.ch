@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libical-buildsize     "27 MB (with tests)">
-  <!ENTITY libical-time          "0.2 SBU (Using parallelism=4; with tests)">
+  <!ENTITY libical-buildsize     "22 MB (with tests)">
+  <!ENTITY libical-time          "0.1 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libical-buildsize     "27 MB (テスト込み)">
-  <!ENTITY libical-time          "0.2 SBU (parallelism=4 利用時; テスト込み)">
+  <!ENTITY libical-buildsize     "22 MB (テスト込み)">
+  <!ENTITY libical-time          "0.1 SBU (parallelism=4 利用時; テスト込み)">
 @z
 
 @x
@@ -98,13 +94,13 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/> and 
-      <xref linkend="vala"/>(both required for Gnome)
+      <xref linkend="vala"/> (both required for GNOME)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="vala"/>(いずれも Gnome において必要)
+      <xref linkend="vala"/>(いずれも GNOME において必要)
     </para>
 @z
 

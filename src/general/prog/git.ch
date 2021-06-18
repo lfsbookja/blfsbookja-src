@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,15 +10,15 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "374 MB (with downloaded documentation, add 16 MB to build documentation)">
+  <!ENTITY git-buildsize     "213 MB (with downloaded documentation, add 16 MB to build documentation)">
 @y
-  <!ENTITY git-buildsize     "374 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 16 MB）">
+  <!ENTITY git-buildsize     "213 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 16 MB）">
 @z
 
 @x
-  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 0.4 SBU for building documentation and 1.6 SBU for tests, both with parallelism=4)">
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 0.4 SBU for building documentation and 1.7 SBU for tests, both with parallelism=4)">
 @y
-  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; ドキュメントビルド時はさらに 0.4 SBU、テスト実施時はさらに 1.6 SBU）">
+  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; ドキュメントビルド時はさらに 0.4 SBU、テスト実施時はさらに 1.7 SBU）">
 @z
 
 @x
@@ -156,8 +152,8 @@
       <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
       role="nodep" linkend="pcre"/>), in either case configured with
       <literal>--enable-jit</literal>,
-      <xref linkend="subversion"/> with Perl bindings (for <command>git
-         svn</command>),
+      <xref role="runtime" linkend="subversion"/> with Perl bindings
+         (runtime, for <command>git svn</command>),
       <xref role="runtime" linkend="tk"/>
       (gitk, a simple <application>Git</application>
       repository viewer, uses <application>Tk</application> at runtime),
@@ -172,8 +168,8 @@
       <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
       role="nodep" linkend="pcre"/>), in either case configured with
       <literal>--enable-jit</literal>,
-      <xref linkend="subversion"/> with Perl bindings (for <command>git
-         svn</command>),
+      <xref role="runtime" linkend="subversion"/> with Perl bindings
+         (runtime, for <command>git svn</command>),
       <xref role="runtime" linkend="tk"/>
       (gitk, a simple <application>Git</application>
       repository viewer, uses <application>Tk</application> at runtime),
@@ -189,8 +185,9 @@
     and other docs)</bridgehead>
     <para role="optional">
       <xref linkend="xmlto"/> and
-      <xref linkend="asciidoc"/> or
-      <ulink url="http://asciidoctor.org/">AsciiDoctor</ulink>, and also
+      <xref linkend="asciidoc"/>
+      <!-- or xref linkend="asciidoctor", doesn't work now because it needs docbook-xsl-ns -->,
+      and also
       <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>
       (for the PDF version of the user manual), and
       <ulink url="http://docbook2x.sourceforge.net/">docbook2x</ulink> to
@@ -199,11 +196,12 @@
 @y
     <bridgehead renderas="sect4">&Optional; (man ページと html ドキュメントなどを生成する場合)</bridgehead>
     <para role="optional">
-      <xref linkend="xmlto"/>,
-      <xref linkend="asciidoc"/> または
-      <ulink url="http://asciidoctor.org/">AsciiDoctor</ulink>, さらに
+      <xref linkend="xmlto"/> and
+      <xref linkend="asciidoc"/>
+      <!-- or xref linkend="asciidoctor", doesn't work now because it needs docbook-xsl-ns -->,
+      and also
       <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>
-      (for the PDF version of the user manual),
+      (for the PDF version of the user manual), and
       <ulink url="http://docbook2x.sourceforge.net/">docbook2x</ulink> to
       create info pages
     </para>

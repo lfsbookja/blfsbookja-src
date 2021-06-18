@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY cryptsetup-buildsize     "34 MB (add 102 MB for tests)">
+  <!ENTITY cryptsetup-buildsize     "29 MB (add 113 MB for tests)">
   <!ENTITY cryptsetup-time          "0.2 SBU (add 14 SBU for tests)">
 @y
-  <!ENTITY cryptsetup-buildsize     "34 MB（テスト実施時はさらに 102 MB）">
+  <!ENTITY cryptsetup-buildsize     "29 MB（テスト実施時はさらに 113 MB）">
   <!ENTITY cryptsetup-time          "0.2 SBU（テスト実施時はさらに 14 SBU）">
 @z
 

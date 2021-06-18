@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libxml2-buildsize     "87 MB (add 15 MB for tests)">
-  <!ENTITY libxml2-time          "0.2 SBU (add 0.3 SBU for tests)">
+  <!ENTITY libxml2-buildsize     "116 MB (with tests)">
+  <!ENTITY libxml2-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY libxml2-buildsize     "87 MB（テスト実施時はさらに 15 MB）">
-  <!ENTITY libxml2-time          "0.2 SBU（テスト実施時はさらに 0.3 SBU）">
+  <!ENTITY libxml2-buildsize     "116 MB (テスト込み)">
+  <!ENTITY libxml2-time          "0.4 SBU (テスト込み)">
 @z
 
 @x
@@ -165,7 +161,7 @@
       To test the results, issue: <command>make check &gt; check.log</command>.
       A summary of the results can be obtained with <command>grep -E
       '^Total|expected' check.log</command>. If <xref linkend="valgrind"/> is
-      installed and you want to check memory leaks, replace
+      installed and you want to check for memory leaks, replace
       <command>check</command> with <command>check-valgrind</command>.
 @y
       ビルド結果をテストする場合は <command>make check &gt; check.log</command> を実行します。

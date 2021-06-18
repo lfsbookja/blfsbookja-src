@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libsigc3-buildsize     "33 MB (with tests)">
+  <!ENTITY libsigc3-buildsize     "34 MB (with tests)">
   <!ENTITY libsigc3-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY libsigc3-buildsize     "33 MB (テスト込み)">
+  <!ENTITY libsigc3-buildsize     "34 MB (テスト込み)">
   <!ENTITY libsigc3-time          "0.4 SBU (テスト込み)">
 @z
 

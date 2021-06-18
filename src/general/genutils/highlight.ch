@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -177,14 +173,14 @@
 
 @x
       <parameter>doc_dir=/usr/share/doc/highlight-&highlight-version;/</parameter>:
-      install highlight documentation into a versioned directory. This
+      installs the highlight documentation into a versioned directory. This
       parameter is also needed for <command>make gui</command>, because
       its value would be hardcoded into the gui executable.  Note that the
       trailing <quote>/</quote> is necessary.
 	</para>
 @y
       <parameter>doc_dir=/usr/share/doc/highlight-&highlight-version;/</parameter>:
-      install highlight documentation into a versioned directory. This
+      installs the highlight documentation into a versioned directory. This
       parameter is also needed for <command>make gui</command>, because
       its value would be hardcoded into the gui executable.  Note that the
       trailing <quote>/</quote> is necessary.
@@ -209,7 +205,7 @@
 
 @x
         <seg>
-          highlight
+          highlight and highlight-gui (optional)
         </seg>
         <seg>
           None
@@ -221,7 +217,7 @@
         </seg>
 @y
         <seg>
-          highlight
+          highlight, highlight-gui (optional)
         </seg>
         <seg>
           &None;

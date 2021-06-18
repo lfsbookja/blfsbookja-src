@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -251,12 +247,12 @@
 
 @x
       <command>sed -i ... build.xml</command>: This adds two switches to the
-      <command>javadoc</command> command, preventing some errors to occur when
-      building the documentation.
+      <command>javadoc</command> command, preventing some errors from occuring
+      when building the documentation.
 @y
       <command>sed -i ... build.xml</command>: This adds two switches to the
-      <command>javadoc</command> command, preventing some errors to occur when
-      building the documentation.
+      <command>javadoc</command> command, preventing some errors from occuring
+      when building the documentation.
 @z
 
 @x
@@ -471,7 +467,7 @@
 
 @x fop.jar
             contains all the <application>fop</application>
-          <application>Java</application> classes
+            <application>Java</application> classes
 @y
           <application>fop</application> のすべての <application>Java</application> クラスを提供します。
 @z

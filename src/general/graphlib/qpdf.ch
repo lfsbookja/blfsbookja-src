@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY qpdf-buildsize     "321 MB (add 51 MB for tests)">
-  <!ENTITY qpdf-time          "0.5 SBU (using parallelism=4; add 1.8 SBU for tests)">
+  <!ENTITY qpdf-buildsize     "271 MB (add 50 MB for tests)">
+  <!ENTITY qpdf-time          "0.5 SBU (using parallelism=4; add 2.0 SBU for tests)">
 @y
-  <!ENTITY qpdf-buildsize     "321 MB (add 51 MB for tests)">
-  <!ENTITY qpdf-time          "0.5 SBU (using parallelism=4; add 1.8 SBU for tests)">
+  <!ENTITY qpdf-buildsize     "271 MB (add 50 MB for tests)">
+  <!ENTITY qpdf-time          "0.5 SBU (using parallelism=4; add 2.0 SBU for tests)">
 @z
 
 @x

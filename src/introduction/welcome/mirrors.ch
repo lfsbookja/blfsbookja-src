@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -30,13 +26,13 @@
 @x
   <para>The BLFS project has a number of mirrors set up world-wide to make it
   easier and more convenient for you to access the website. Please visit the
-  <ulink url="http://www.&lfs-domainname;/mirrors.html"/> website for the
+  <ulink url="https://www.&lfs-domainname;/mirrors.html"/> website for the
   list of current mirrors.</para>
 @y
   <para>
   BLFS プロジェクトは世界中にミラーサイトがあります。
   これらを使えばウェブサイト参照がより便利に利用できます。
   以下のサイトによりミラーサイトの情報を確認してください。
-  <ulink url="http://www.&lfs-domainname;/mirrors.html"/>
+  <ulink url="https://www.&lfs-domainname;/mirrors.html"/>
   </para>
 @z

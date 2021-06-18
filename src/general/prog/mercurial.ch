@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -24,13 +20,13 @@
       management tool similar to <application>Git</application> and
       <application>Bazaar</application>. <application>Mercurial</application>
       is written in <application>Python</application> and is used by projects
-      such as Mozilla and Vim.
+      such as Mozilla for Firefox and Thunderbird.
 @y
       <application>Mercurial</application> is a distributed source control
       management tool similar to <application>Git</application> and
       <application>Bazaar</application>. <application>Mercurial</application>
       is written in <application>Python</application> and is used by projects
-      such as Mozilla and Vim.
+      such as Mozilla for Firefox and Thunderbird.
 @z
 
 @x

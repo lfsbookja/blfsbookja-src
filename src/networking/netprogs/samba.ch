@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY samba-buildsize     "620 MB (add 380 MB for quicktest)">
-  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 4.7 SBU for quicktest)">
+  <!ENTITY samba-buildsize     "623 MB (add 381 MB for quicktest)">
+  <!ENTITY samba-time          "3.2 SBU (using parallelism=4; add 4.8 SBU for quicktest)">
 @y
-  <!ENTITY samba-buildsize     "620 MB (add 380 MB for quicktest)">
-  <!ENTITY samba-time          "3.1 SBU (using parallelism=4; add 4.7 SBU for quicktest)">
+  <!ENTITY samba-buildsize     "623 MB (add 381 MB for quicktest)">
+  <!ENTITY samba-time          "3.2 SBU (using parallelism=4; add 4.8 SBU for quicktest)">
 @z
 
 @x
@@ -121,6 +117,7 @@
       <xref linkend="fuse3"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="icu"/>,
+      <xref linkend="libtasn1"/>,
       <xref linkend="libxslt"/> (for documentation),
       <xref linkend="linux-pam"/>,
       <xref linkend="perl-parse-yapp"/>, and
@@ -134,7 +131,8 @@
       <xref linkend="fuse3"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="icu"/>,
-      <xref linkend="libxslt"/>（ドキュメント生成のため）,
+      <xref linkend="libtasn1"/>,
+      <xref linkend="libxslt"/> (ドキュメント生成のため),
       <xref linkend="linux-pam"/>,
       <xref linkend="perl-parse-yapp"/>,
       <xref linkend="openldap"/>
@@ -255,19 +253,19 @@
 @x
       To test the results, as the
       <systemitem class="username">root</systemitem> user, issue:
-      <command>make quicktest</command>. The test suite will produce lines that
-      look like failures, but these are innocuous. The last few lines of output
-      should report <emphasis>"ALL OK"</emphasis> for a good test run. A summary
-      of any failures can be found in
-      <filename class="directory">./st/summary</filename>. With Samba-4.12.0,
+      <command>PATH=$PWD/pyvenv/bin:$PATH make quicktest</command>. The test
+      suite will produce lines that look like failures, but these are innocuous.
+      The last few lines of output should report <emphasis>"ALL OK"</emphasis>
+      for a good test run. A summary of any failures can be found in
+      <filename class="directory">./st/summary</filename>. With Samba-4.14.4,
       many tests are known to fail.
 @y
       ビルド結果をテストする場合は <systemitem
-      class="username">root</systemitem> ユーザーになって <command>make quicktest</command> を実行します。
+      class="username">root</systemitem> ユーザーになって <command>PATH=$PWD/pyvenv/bin:$PATH make quicktest</command> を実行します。
       テストスイートの実行により複数行が出力され、あたかもエラーのように見えますが、これは問題ありません。
       出力の最後に <emphasis>"ALL OK"</emphasis> と表示されるのでテスト実行が成功したことが分かります。
       テストに失敗した場合は <filename class="directory">./st/summary</filename> を見て確認できます。
-      Samba-4.12.0 においては多くのテストが失敗します。
+      Samba-4.14.4 においては多くのテストが失敗します。
 @z
 
 @x
@@ -542,11 +540,13 @@
 @x
           There is no need to run any <application>Samba</application>
           servers in this scenario, thus you don't need to install the provided
-          bootscripts.
+          <phrase revision="sysv">bootscripts.</phrase>
+          <phrase revision="systemd">systemd units.</phrase>
 @y
           There is no need to run any <application>Samba</application>
           servers in this scenario, thus you don't need to install the provided
-          bootscripts.
+          <phrase revision="sysv">bootscripts.</phrase>
+          <phrase revision="systemd">systemd units.</phrase>
 @z
 
 @x
@@ -569,7 +569,7 @@
 
 @x
           In this case, the <filename>/etc/samba/smb.conf.default</filename>
-          file may be a good template to start from. Also add
+          file may be a good template to start from. Also, you should add the
           <quote>dos charset</quote> and <quote>unix charset</quote> parameters
           to the <quote>[global]</quote> section as described in Scenario 1 in
           order to prevent filename corruption. For security reasons, you may
@@ -584,7 +584,7 @@
           to create yours.
 @y
           In this case, the <filename>/etc/samba/smb.conf.default</filename>
-          file may be a good template to start from. Also add
+          file may be a good template to start from. Also, you should add the
           <quote>dos charset</quote> and <quote>unix charset</quote> parameters
           to the <quote>[global]</quote> section as described in Scenario 1 in
           order to prevent filename corruption. For security reasons, you may
@@ -630,7 +630,9 @@
 @x
           Since the <command>smbd</command> and <command>nmbd</command> daemons
           are needed in this case, install the <filename>samba</filename>
-          bootscript. Be sure to run <command>smbpasswd</command> (with the
+          <phrase revision="sysv">bootscript.</phrase>
+          <phrase revision="systemd">systemd unit.</phrase>
+          Be sure to run <command>smbpasswd</command> (with the
           <option>-a</option> option to add users) to enable and set passwords
           for all accounts that need <application>Samba</application> access.
           Using the default <application>Samba</application> passdb backend,
@@ -639,7 +641,9 @@
 @y
           Since the <command>smbd</command> and <command>nmbd</command> daemons
           are needed in this case, install the <filename>samba</filename>
-          bootscript. Be sure to run <command>smbpasswd</command> (with the
+          <phrase revision="sysv">bootscript.</phrase>
+          <phrase revision="systemd">systemd unit.</phrase>
+          Be sure to run <command>smbpasswd</command> (with the
           <option>-a</option> option to add users) to enable and set passwords
           for all accounts that need <application>Samba</application> access.
           Using the default <application>Samba</application> passdb backend,
@@ -660,15 +664,17 @@
           possible. Such setups are advanced topics and cannot be adequately
           covered in BLFS. Many complete books have been written on these topics
           alone. Note that in some domain membership scenarios, the
-          <command>winbindd</command> daemon and the corresponding bootscript
-          are needed.
+          <command>winbindd</command> daemon and the corresponding
+          <phrase revision="sysv">bootscript</phrase>
+          <phrase revision="systemd">systemd unit</phrase> are needed.
 @y
           More complex scenarios involving domain control or membership are
           possible. Such setups are advanced topics and cannot be adequately
           covered in BLFS. Many complete books have been written on these topics
           alone. Note that in some domain membership scenarios, the
-          <command>winbindd</command> daemon and the corresponding bootscript
-          are needed.
+          <command>winbindd</command> daemon and the corresponding
+          <phrase revision="sysv">bootscript</phrase>
+          <phrase revision="systemd">systemd unit</phrase> are needed.
 @z
 
 @x

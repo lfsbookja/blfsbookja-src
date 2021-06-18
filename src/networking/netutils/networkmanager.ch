@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY NetworkManager-buildsize     "917 MB (with tests)">
+  <!ENTITY NetworkManager-buildsize     "739 MB (with tests)">
   <!ENTITY NetworkManager-time          "0.9 SBU (with tests, using parallelism=4)">
 @y
-  <!ENTITY NetworkManager-buildsize     "917 MB (テスト込み)">
+  <!ENTITY NetworkManager-buildsize     "739 MB (テスト込み)">
   <!ENTITY NetworkManager-time          "0.9 SBU (テスト込み、parallelism=4 利用)">
 @z
 
@@ -219,23 +215,23 @@
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
       issue: <command>ninja test</command>. Five tests,
-      <!--<filename>test-l3cfg</filename>,-->
+      <filename>test-l3cfg</filename>,
       <filename>devices/test-acd</filename>,
       <filename>platform/test-tc-linux</filename>,
-      <filename>platform/test-route-linux</filename>,
-      <filename>platform/test-link-linux</filename>, and
-      <filename>platform/test-cleanup-linux</filename>, are known to fail.
+      <filename>platform/test-route-linux</filename>, and
+      <filename>platform/test-link-linux</filename>,
+      <!--<filename>platform/test-cleanup-linux</filename>,--> are known to fail.
 @y
       An already active graphical session
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
       issue: <command>ninja test</command>. Five tests,
-      <!--<filename>test-l3cfg</filename>,-->
+      <filename>test-l3cfg</filename>,
       <filename>devices/test-acd</filename>,
       <filename>platform/test-tc-linux</filename>,
-      <filename>platform/test-route-linux</filename>,
-      <filename>platform/test-link-linux</filename>, and
-      <filename>platform/test-cleanup-linux</filename>, are known to fail.
+      <filename>platform/test-route-linux</filename>, and
+      <filename>platform/test-link-linux</filename>,
+      <!--<filename>platform/test-cleanup-linux</filename>,--> are known to fail.
 @z
 
 @x

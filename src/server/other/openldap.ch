@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -371,12 +367,12 @@
 @z
 
 @x
-            The <ulink url="http://www.openldap.org/doc/admin24/"> OpenLDAP 2.4
+            The <ulink url="http://www.openldap.org/doc/admin25/"> OpenLDAP 2.5
             Administrator's Guide</ulink> (also installed locally in
             <filename class="directory">
             /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).
 @y
-            The <ulink url="http://www.openldap.org/doc/admin24/"> OpenLDAP 2.4
+            The <ulink url="http://www.openldap.org/doc/admin25/"> OpenLDAP 2.5
             Administrator's Guide</ulink> (also installed locally in
             <filename class="directory">
             /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -181,11 +177,11 @@
 @z
 
 @x
-      <option>--with-pamdir=/lib/security</option>: Install the PAM
-      module in <filename class="directory">/lib/security</filename>.
+      <option>--with-pamdir=/usr/lib/security</option>: Install the PAM
+      module in <filename class="directory">/usr/lib/security</filename>.
 @y
-      <option>--with-pamdir=/lib/security</option>: Install the PAM
-      module in <filename class="directory">/lib/security</filename>.
+      <option>--with-pamdir=/usr/lib/security</option>: Install the PAM
+      module in <filename class="directory">/usr/lib/security</filename>.
 @z
 
 @x
@@ -208,13 +204,13 @@
         <seg> cifs.idmap, cifs.upcall, cifscreds, getcifsacl, 
           mount.cifs, mount.smb3, setcifsacl, smb2-quota, and smbinfo</seg>
         <seg>/usr/lib/cifs-utils/idmapwb.so and optionally
-          PAM module /lib/security/pam_cifscreds.so</seg>
+          PAM module /usr/lib/security/pam_cifscreds.so</seg>
         <seg>/usr/lib/cifs-utils</seg>
 @y
         <seg> cifs.idmap, cifs.upcall, cifscreds, getcifsacl, 
-          mount.cifs, mount.smb3, setcifsacl, smb2-quota, smbinfo</seg>
+          mount.cifs, mount.smb3, setcifsacl, smb2-quota, and smbinfo</seg>
         <seg>/usr/lib/cifs-utils/idmapwb.so and optionally
-          PAM module /lib/security/pam_cifscreds.so</seg>
+          PAM module /usr/lib/security/pam_cifscreds.so</seg>
         <seg>/usr/lib/cifs-utils</seg>
 @z
 

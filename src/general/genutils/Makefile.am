@@ -1,13 +1,10 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/general/genutils
 CHANGE_FILES = \
 	asciidoc.ch           \
+	asciidoctor.ch        \
 	bogofilter.ch         \
 	compface.ch           \
 	desktop-file-utils.ch \

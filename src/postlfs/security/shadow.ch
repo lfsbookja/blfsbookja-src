@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -181,21 +177,26 @@
 
 @x
       <command>sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' -e
-      's@/var/spool/mail@/var/mail@' -i etc/login.defs</command>: Instead of using
+      's@/var/spool/mail@/var/mail@' -e '/PATH=/{s@/sbin:@@;s@/bin:@@}' 
+      -i etc/login.defs</command>: Instead of using
       the default 'DES' method, this command modifies the installation to use
       the more secure 'SHA512' method of hashing passwords, which also allows
       passwords longer than eight characters. It also changes the obsolete
       <filename class="directory">/var/spool/mail</filename> location for user
       mailboxes that <application>Shadow</application> uses by default to the
-      <filename class="directory">/var/mail</filename> location.
+      <filename class="directory">/var/mail</filename> location. It also
+      changes the default path to be consistent with that set in LFS.
 @y
       <command>sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' -e
-      's@/var/spool/mail@/var/mail@' -i etc/login.defs</command>:
-      デフォルトで採用されている 'DES' メソッドではなく、よりセキュアな 'SHA512' メソッドを使ったハッシュパスワードをインストールするように変更します。
-      これによりパスワードにて8文字以上の設定が可能となります。
-      またユーザーのメールボックスの収容ディレクトリとして、古くなった <filename
-      class="directory">/var/spool/mail</filename> ではなく <filename
-      class="directory">/var/mail</filename> を用いるものとします。
+      's@/var/spool/mail@/var/mail@' -e '/PATH=/{s@/sbin:@@;s@/bin:@@}' 
+      -i etc/login.defs</command>: Instead of using
+      the default 'DES' method, this command modifies the installation to use
+      the more secure 'SHA512' method of hashing passwords, which also allows
+      passwords longer than eight characters. It also changes the obsolete
+      <filename class="directory">/var/spool/mail</filename> location for user
+      mailboxes that <application>Shadow</application> uses by default to the
+      <filename class="directory">/var/mail</filename> location. It also
+      changes the default path to be consistent with that set in LFS.
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY kf5-buildsize     "560 MB (237 MB installed)">
+  <!ENTITY kf5-buildsize     "1.3 GB (238 MB installed)">
   <!ENTITY kf5-time          "14 SBU (using parallelism=4)">
 @y
-  <!ENTITY kf5-buildsize     "560 MB（インストールは 237 MB）">
+  <!ENTITY kf5-buildsize     "1.3 GB（インストールは 238 MB）">
   <!ENTITY kf5-time          "14 SBU（parallelism=4 利用）">
 @z
 

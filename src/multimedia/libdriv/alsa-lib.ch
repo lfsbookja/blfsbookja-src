@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -182,13 +178,13 @@
         installations. For extra functionality and/or advanced control of your
         sound device, you may need to create additional configuration files.
         For information on the available configuration parameters, visit
-        <ulink url="http://www.alsa-project.org/main/index.php/Asoundrc"/>.
+        <ulink url="https://www.alsa-project.org/main/index.php/Asoundrc"/>.
 @y
         The default <filename>alsa.conf</filename> is adequate for most
         installations. For extra functionality and/or advanced control of your
         sound device, you may need to create additional configuration files.
         For information on the available configuration parameters, visit
-        <ulink url="http://www.alsa-project.org/main/index.php/Asoundrc"/>.
+        <ulink url="https://www.alsa-project.org/main/index.php/Asoundrc"/>.
 @z
 
 @x

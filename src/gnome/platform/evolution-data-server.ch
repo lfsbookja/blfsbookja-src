@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,10 +11,10 @@
 
 @x
   <!ENTITY evolution-data-server-buildsize     "214 MB (with tests)">
-  <!ENTITY evolution-data-server-time          "0.8 SBU (using parallelism=4, with tests)">
+  <!ENTITY evolution-data-server-time          "0.9 SBU (using parallelism=4, with tests)">
 @y
   <!ENTITY evolution-data-server-buildsize     "214 MB（テスト込み）">
-  <!ENTITY evolution-data-server-time          "0.8 SBU（parallelism=4 利用時、テスト込み）">
+  <!ENTITY evolution-data-server-time          "0.9 SBU（parallelism=4 利用時、テスト込み）">
 @z
 
 @x
@@ -158,13 +154,7 @@
       <xref linkend="mitkrb"/>,
       a <xref linkend="server-mail"/> (that provides a <command>sendmail</command> command),
       <xref linkend="openldap"/>, and
-      <!--<ulink url="https://gitlab.com/groups/accounts-sso">Accounts-SSO</ulink>,
-      <ulink url="https://github.com/google/google-authenticator/">Google Authenticator</ulink>, and-->
       <ulink url="https://github.com/googlei18n/libphonenumber/">libphonenumber</ulink>
-      <!-- For the above commented entries - I can't seem to find references to
-      these in 3.32.0, so they've been commented.-->
-      <!-- Phone Number support via libphonenumber spotted in 3.34.1, check
-           CMakeLists.txt -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -172,14 +162,8 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="mitkrb"/>,
       a <xref linkend="server-mail"/> (that provides a <command>sendmail</command> command),
-      <xref linkend="openldap"/>,
-      <!--<ulink url="https://gitlab.com/groups/accounts-sso">Accounts-SSO</ulink>,
-      <ulink url="https://github.com/google/google-authenticator/">Google Authenticator</ulink>, and-->
+      <xref linkend="openldap"/>, and
       <ulink url="https://github.com/googlei18n/libphonenumber/">libphonenumber</ulink>
-      <!-- For the above commented entries - I can't seem to find references to
-      these in 3.32.0, so they've been commented.-->
-      <!-- Phone Number support via libphonenumber spotted in 3.34.1, check
-           CMakeLists.txt -->
     </para>
 @z
 
@@ -211,12 +195,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>. One test,
+      To test the results, issue: <command>make test</command>. <!--One test,
       <filename>test-book-client-custom-summary</filename>, is known to
-      fail due to an internal test suite error.
+      fail due to an internal test suite error.-->
 @y
       ビルド結果をテストする場合は <command>make test</command> を実行します。
-      <filename>test-book-client-custom-summary</filename> というテスト 1 つが、テストスイートの内部エラーにより失敗します。
 @z
 
 @x
@@ -232,11 +215,11 @@
 @z
 
 @x
-      <parameter>-DENABLE_GOOGLE=ON</parameter>: This default flag enables
+      <parameter>-DENABLE_GOOGLE=ON</parameter>: This switch enables
       access to google services via <xref linkend="libgdata"/> and also
       enables the Google Authentication option.
 @y
-      <parameter>-DENABLE_GOOGLE=ON</parameter>: This default flag enables
+      <parameter>-DENABLE_GOOGLE=ON</parameter>: This switch enables
       access to google services via <xref linkend="libgdata"/> and also
       enables the Google Authentication option.
 @z

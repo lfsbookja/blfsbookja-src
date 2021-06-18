@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/xincludes
 CHANGE_FILES = \
 	gnome-mandir.ch             \
@@ -20,6 +16,7 @@ CHANGE_FILES = \
 	gtk-doc-rebuild-problem.ch  \
 	gtk-update-icon-cache.ch    \
 	lib-config.ch               \
+	meson-buildtype-release.ch  \
 	meson-wrap-nodownload.ch    \
 	mozconfigure.ch             \
 	mozmach.ch                  \

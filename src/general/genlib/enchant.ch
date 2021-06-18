@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -20,7 +16,7 @@
 @z
 
 @x
-      The <application>enchant</application> package provide a generic
+      The <application>enchant</application> package provides a generic
       interface into various existing spell checking libraries.
 @y
       <application>enchant</application> パッケージは、スペルチェックを行うさまざまなライブラリへの汎用的なインターフェースを提供します。
@@ -170,16 +166,6 @@
 @z
 
 @x
-      <command>rm -rf /usr/include/enchant</command>; 
-      <command>ln -sfn ...</command>: Create symlinks for this package
-      version so that other other packages can find it using the old name.
-@y
-      <command>rm -rf /usr/include/enchant</command>; 
-      <command>ln -sfn ...</command>: Create symlinks for this package
-      version so that other other packages can find it using the old name.
-@z
-
-@x
     <title>Configuring enchant</title>
 @y
     <title>&Configuring1;enchant&Configuring2;</title>
@@ -254,15 +240,14 @@
 @z
 
 @x
-        <seg>enchant (symbolic link to enchant-2) and enchant-lsmod-2</seg>
-        <seg>libenchant-2.so and libenchant.so (symbolic link to
-        libenchant-2.so)</seg>
-        <seg>/usr/include/enchant{,-2}, /usr/lib/enchant-2, and
+        <seg>enchant-2 and enchant-lsmod-2</seg>
+        <seg>libenchant-2.so</seg>
+        <seg>/usr/include/enchant-2, /usr/lib/enchant-2, and
         /usr/share/enchant</seg>
 @y
-        <seg>enchant (enchant-2 へのシンボリックリンク), enchant-lsmod-2</seg>
-        <seg>libenchant-2.so, libenchant.so (libenchant-2.so へのシンボリックリンク)</seg>
-        <seg>/usr/include/enchant{,-2}, /usr/lib/enchant-2,
+        <seg>enchant-2, enchant-lsmod-2</seg>
+        <seg>libenchant-2.so</seg>
+        <seg>/usr/include/enchant-2, /usr/lib/enchant-2,
         /usr/share/enchant</seg>
 @z
 

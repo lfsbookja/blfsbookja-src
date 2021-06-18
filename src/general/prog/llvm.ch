@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "3.1 GB (727 MB installed, add 20 GB for tests)">
-  <!ENTITY llvm-time          "30 SBU (with parallelism=4, add 18 SBU for tests)">
+  <!ENTITY llvm-buildsize     "3.3 GB (772 MB installed, add 11 GB for tests)">
+  <!ENTITY llvm-time          "33 SBU (with parallelism=4, add 38 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "3.1 GB (インストールに 727 MB、テスト実施時はさらに 20 GB)">
-  <!ENTITY llvm-time          "30 SBU (parallelism=4、テスト実施時はさらに 18 SBU)">
+  <!ENTITY llvm-buildsize     "3.3 GB (インストールに 772 MB、テスト実施時はさらに 11 GB)">
+  <!ENTITY llvm-time          "33 SBU (parallelism=4、テスト実施時はさらに 38 SBU)">
 @z
 
 @x
@@ -288,7 +284,8 @@
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
       Note that a few of the compiler-rt Sanitizer based tests (6 of more than 48000
-      tests run) are known to fail.
+      tests run) are known to fail. Some of the LLVM-Unit IR tests are known to
+      fail as well.
 @y
       <!-- EDITORS - if you have more than 4 cores, take some offline to measure
       the elapsed time for the tests.  Also, libstdc++.a and perhaps libstdc++fs.a
@@ -302,7 +299,8 @@
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
       Note that a few of the compiler-rt Sanitizer based tests (6 of more than 48000
-      tests run) are known to fail.
+      tests run) are known to fail. Some of the LLVM-Unit IR tests are known to
+      fail as well.
 @z
 
 @x
@@ -361,29 +359,32 @@
           clang-offload-bundler, clang-offload-wrapper, 
           clang-refactor, clang-rename, clang-scan-deps,
           diagtool, dsymutil, git-clang-format, hmaptool, llc, lli, 
-          llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-cat, 
+          llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer,
+          llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat, 
           llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres, 
           llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
           llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
           llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
           llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
-          llvm-lib (symlink to llvm-ar), llvm-link, llvm-lipo, llvm-lto, 
-          llvm-lto2, llvm-mc, llvm-mca, llvm-ml, llvm-modextract,
-          llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump, llvm-opt-report,
-          llvm-pdbutil, llvm-profdata, llvm-ranlib (symlink to llvm-ar), llvm-rc,
+          llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link, 
+          llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml, 
+          llvm-modextract, llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump,
+          llvm-opt-report, llvm-pdbutil, llvm-profdata, llvm-profgen, 
+          llvm-ranlib (symlink to llvm-ar), llvm-rc, 
           llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce, 
           llvm-rtdyld, llvm-size, llvm-split, llvm-stress, llvm-strings, 
           llvm-strip (symlink to llvm-objcopy), llvm-symbolizer, llvm-tblgen, 
-          llvm-undname, llvm-xray, obj2yaml, opt, sancov, sanstats, scan-build,
-          scan-view, verify-uselistorder, and yaml2obj
+          llvm-undname, llvm-xray, opt, sancov, sanstats, scan-build,
+          scan-view, split-file, and verify-uselistorder
         </seg>
         <seg>
           libLLVM.so, 
-          libLLVM*.a (75 libraries), 
+          libLLVM*.a (84 libraries), 
           libLTO.so, 
           libRemarks.so, 
           libclang.so,
-          libclang*.a (63 libraries),
+          libclang-cpp.so,
+          libclang*.a (37 libraries),
           and LLVMgold.so
         </seg>
         <seg>
@@ -400,35 +401,38 @@
           clang-offload-bundler, clang-offload-wrapper, 
           clang-refactor, clang-rename, clang-scan-deps,
           diagtool, dsymutil, git-clang-format, hmaptool, llc, lli, 
-          llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer, llvm-cat, 
+          llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer,
+          llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat, 
           llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres, 
           llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
           llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
           llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
           llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
-          llvm-lib (symlink to llvm-ar), llvm-link, llvm-lipo, llvm-lto, 
-          llvm-lto2, llvm-mc, llvm-mca, llvm-ml, llvm-modextract,
-          llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump, llvm-opt-report,
-          llvm-pdbutil, llvm-profdata, llvm-ranlib (symlink to llvm-ar), llvm-rc,
+          llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link, 
+          llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml, 
+          llvm-modextract, llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump,
+          llvm-opt-report, llvm-pdbutil, llvm-profdata, llvm-profgen, 
+          llvm-ranlib (symlink to llvm-ar), llvm-rc, 
           llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce, 
           llvm-rtdyld, llvm-size, llvm-split, llvm-stress, llvm-strings, 
           llvm-strip (symlink to llvm-objcopy), llvm-symbolizer, llvm-tblgen, 
-          llvm-undname, llvm-xray, obj2yaml, opt, sancov, sanstats, scan-build,
-          scan-view, verify-uselistorder, yaml2obj
+          llvm-undname, llvm-xray, opt, sancov, sanstats, scan-build,
+          scan-view, split-file, and verify-uselistorder
         </seg>
         <seg>
           libLLVM.so, 
-          libLLVM*.a (75 個のライブラリ), 
+          libLLVM*.a (84 libraries), 
           libLTO.so, 
           libRemarks.so, 
           libclang.so,
-          libclang*.a (63 個のライブラリ),
-          LLVMgold.so
+          libclang-cpp.so,
+          libclang*.a (37 libraries),
+          and LLVMgold.so
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
           /usr/lib/{clang,cmake/{clang,llvm}},
-          /usr/share/{clang,opt-viewer,scan-build,scan-view},
+          /usr/share/{clang,opt-viewer,scan-build,scan-view}, and
           /usr/share/doc/llvm-&llvm-version;
         </seg>
 @z

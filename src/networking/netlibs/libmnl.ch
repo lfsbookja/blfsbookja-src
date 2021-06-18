@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -113,20 +108,6 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>mv -v /usr/lib/libmnl.so.* ...</command>: Move shared
-      libraries into /lib so they are available before /usr is mounted.
-@y
-      <command>mv -v /usr/lib/libmnl.so.* ...</command>:
-      シェアライブラリを　/lib に移動することで、/usr がマウントされる前であっても利用可能とします。
 @z
 
 @x

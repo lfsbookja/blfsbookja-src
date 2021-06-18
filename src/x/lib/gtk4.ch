@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gtk4-buildsize     "1.0 GB (138 MB installed, add 58 MB for tests)">
-  <!ENTITY gtk4-time          "1.2 SBU (using parallelism=4, add 0.3 SBU for tests)">
+  <!ENTITY gtk4-buildsize     "892 MB (138 MB installed, add 58 MB for tests)">
+  <!ENTITY gtk4-time          "1.1 SBU (using parallelism=4, add 0.3 SBU for tests)">
 @y
-  <!ENTITY gtk4-buildsize     "1.0 GB (138 MB installed, add 58 MB for tests)">
-  <!ENTITY gtk4-time          "1.2 SBU (using parallelism=4, add 0.3 SBU for tests)">
+  <!ENTITY gtk4-buildsize     "892 MB (138 MB installed, add 58 MB for tests)">
+  <!ENTITY gtk4-time          "1.1 SBU (using parallelism=4, add 0.3 SBU for tests)">
 @z
 
 @x
@@ -147,6 +143,9 @@
       <xref linkend="colord"/>,
       <xref linkend="cups"/>,
       <xref linkend="gtk-doc"/>,
+      <xref role="runtime" linkend="highlight"/>
+        (runtime, only used by <command>gtk4-demo</command> for syntax
+        highlighting of demo source code),
       <xref linkend="json-glib"/>,
       <xref linkend="rest"/>,
       <xref linkend="sassc"/>,
@@ -161,12 +160,15 @@
       <xref linkend="colord"/>,
       <xref linkend="cups"/>,
       <xref linkend="gtk-doc"/>,
+      <xref role="runtime" linkend="highlight"/>
+        (runtime, only used by <command>gtk4-demo</command> for syntax
+        highlighting of demo source code),
       <xref linkend="json-glib"/>,
       <xref linkend="rest"/>,
       <xref linkend="sassc"/>,
       <xref linkend="tracker3"/>,
       <ulink url="https://gitlab.gnome.org/ebassi/gi-docgen">gi-docgen</ulink>,
-      <ulink url="https://gitlab.gnome.org/World/libcloudproviders">libcloudproviders</ulink>, and
+      <ulink url="https://gitlab.gnome.org/World/libcloudproviders">libcloudproviders</ulink>,
       <ulink url="https://vulkan.lunarg.com/sdk/home">vulkan</ulink>
     </para>
 @z
@@ -194,13 +196,13 @@
 @x
       Running the test suite is not recommended unless you are in a Wayland
       session. If you are not in a Wayland session, around 625 tests will fail.
-      Under a Wayland session, the number decreases to around 25. If you are
+      Under a Wayland session, the number decreases to around 70. If you are
       in a Wayland session and wish to run the tests, issue:
       <command>ninja test</command>.
 @y
       Running the test suite is not recommended unless you are in a Wayland
       session. If you are not in a Wayland session, around 625 tests will fail.
-      Under a Wayland session, the number decreases to around 25. If you are
+      Under a Wayland session, the number decreases to around 70. If you are
       in a Wayland session and wish to run the tests, issue:
       <command>ninja test</command>.
 @z

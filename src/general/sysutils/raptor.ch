@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -102,14 +98,14 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="icu"/> and
-      <ulink url="http://lloyd.github.com/yajl/">libyajl</ulink>
+      <ulink url="http://lloyd.github.io/yajl/">libyajl</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="icu"/>,
-      <ulink url="http://lloyd.github.com/yajl/">libyajl</ulink>
+      <ulink url="http://lloyd.github.io/yajl/">libyajl</ulink>
     </para>
 @z
 

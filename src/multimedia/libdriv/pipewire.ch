@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY pipewire-buildsize     "135 MB (with tests)">
+  <!ENTITY pipewire-buildsize     "57 MB (with tests)">
   <!ENTITY pipewire-time          "0.4 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY pipewire-buildsize     "135 MB（テスト込み）">
+  <!ENTITY pipewire-buildsize     "57 MB（テスト込み）">
   <!ENTITY pipewire-time          "0.4 SBU（parallelism=4 利用時、テスト込み）">
 @z
 
@@ -222,6 +218,8 @@
           pw-dot,
           pw-dump,
           pw-jack,
+          pw-link,
+          pw-loopback,
           pw-metadata,
           pw-mididump,
           pw-mon,
@@ -277,6 +275,8 @@
           pw-dot,
           pw-dump,
           pw-jack,
+          pw-link,
+          pw-loopback,
           pw-metadata,
           pw-mididump,
           pw-mon,
@@ -289,10 +289,10 @@
           spa-json-dump,
           spa-monitor, 
           spa-resample, and
-          pw-midiplay, pw-midirecord, pw-play, pw-record (symlinks to pw-cat)
+          pw-midiplay, pw-midirecord, pw-play, and pw-record (symlinks to pw-cat)
         </seg>
         <seg>
-          libpipewire-0.3.so,
+          libpipewire-0.3.so and
           30 modules below /usr/lib/pipewire-0.3<!--,
      [pierre July 29th, 2020]: all the following libs are in subdirectories
      of /usr/lib. I'm not sure they should appear. But if they should, there
@@ -319,7 +319,7 @@
           /usr/include/spa-0.2,
           /usr/lib/alsa-lib,
           /usr/lib/gstreamer-1.0,
-          /usr/lib/pipewire-0.3,
+          /usr/lib/pipewire-0.3, and
           /usr/lib/spa-0.2
         </seg>
 @z

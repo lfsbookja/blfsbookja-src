@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gtkmm3-buildsize     "631 MB (with tests and documentation)">
-  <!ENTITY gtkmm3-time          "1.1 SBU (Using parallelism=4; with tests and documentation)">
+  <!ENTITY gtkmm3-buildsize     "313 MB (with tests)">
+  <!ENTITY gtkmm3-time          "1.0 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gtkmm3-buildsize     "631 MB （テストとドキュメント込み）">
-  <!ENTITY gtkmm3-time          "1.1 SBU （parallelism=4 指定時; テストとドキュメント込み）">
+  <!ENTITY gtkmm3-buildsize     "313 MB (テスト込み)">
+  <!ENTITY gtkmm3-time          "1.0 SBU (parallelism=4 利用時、テスト込み)">
 @z
 
 @x

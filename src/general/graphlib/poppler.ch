@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -135,6 +131,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="boost"/>,
       <xref linkend="cairo"/>,
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
@@ -145,6 +142,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="boost"/>,
       <xref linkend="cairo"/>,
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
@@ -157,7 +155,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="boost"/>,
       <xref linkend="curl"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="git"/> (for downloading test files),
@@ -172,7 +169,6 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="boost"/>,
       <xref linkend="curl"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="git"/> (for downloading test files),
@@ -209,13 +205,13 @@
       In order to run the test suite, some testcases are needed and can
       be obtained only from a git repository. The command to download
       them is:
-<command>git clone git://git.freedesktop.org/git/poppler/test testfiles</command>.
+<command>git clone --depth 1 git://git.freedesktop.org/git/poppler/test testfiles</command>.
       Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>. 
 @y
       In order to run the test suite, some testcases are needed and can
       be obtained only from a git repository. The command to download
       them is:
-<command>git clone git://git.freedesktop.org/git/poppler/test testfiles</command>.
+<command>git clone --depth 1 git://git.freedesktop.org/git/poppler/test testfiles</command>.
       Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>. 
 @z
 

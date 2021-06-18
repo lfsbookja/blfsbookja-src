@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY tracker3-miners-buildsize     "44 MB (with tests)">
+  <!ENTITY tracker3-miners-buildsize     "37 MB (with tests)">
   <!ENTITY tracker3-miners-time          "1.0 SBU (with tests)">
 @y
-  <!ENTITY tracker3-miners-buildsize     "44 MB（テスト込み）">
+  <!ENTITY tracker3-miners-buildsize     "37 MB（テスト込み）">
   <!ENTITY tracker3-miners-time          "1.0 SBU（テスト込み）">
 @z
 
@@ -138,10 +134,10 @@
       <xref linkend="upower"/>,
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
       <ulink url="http://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
-      <ulink url="https://libosinfo.org">libosinfo</ulink>,
-      <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>, and
-      <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
-      (for tests)
+      <ulink url="https://libosinfo.org">libosinfo</ulink>, and
+      <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
+      <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+      (for tests)-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -157,9 +153,9 @@
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
       <ulink url="http://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
       <ulink url="https://libosinfo.org">libosinfo</ulink>,
-      <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>,
-      <ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
-      (for tests)
+      <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
+      <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
+      (for tests)-->
     </para>
 @z
 
@@ -194,12 +190,12 @@
 
 @x
       To test the results, as the <systemitem class="username">root</systemitem>
-      user, issue: <command>ninja test</command>.  38 tests will fail if the
-      Python 3 module tap.py is not installed.
+      user, issue: <command>ninja test</command>. <!-- 38 tests will fail if the
+      Python 3 module tap.py is not installed. -->
 @y
       ビルド結果をテストする場合は <systemitem
       class="username">root</systemitem> ユーザーになって <command>ninja test</command> を実行します。
-      Python 3 モジュール tap.py がインストールされていない場合、38 個のテストが失敗します。
+      <!-- Python 3 モジュール tap.py がインストールされていない場合、38 個のテストが失敗します。-->
 @z
 
 @x
@@ -265,7 +261,7 @@
           None
         </seg>
         <seg>
-          Several modules under /usr/lib/tracker-miners-3.0.
+          Several modules under /usr/lib/tracker-miners-3.0
         </seg>
         <seg>
           /usr/lib/tracker-miners-3.0,

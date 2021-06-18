@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -85,6 +81,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
+      <xref linkend="json-glib"/>,
       <xref linkend="libdazzle"/>, <phrase revision="systemd">and</phrase>
       <xref linkend="polkit"/> <phrase revision="sysv">, and</phrase>
       <phrase revision="sysv"><xref linkend="elogind"/></phrase>
@@ -93,6 +90,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/>,
+      <xref linkend="json-glib"/>,
       <xref linkend="libdazzle"/>, <phrase revision="systemd">and</phrase>
       <xref linkend="polkit"/> <phrase revision="sysv">, and</phrase>
       <phrase revision="sysv"><xref linkend="elogind"/></phrase>

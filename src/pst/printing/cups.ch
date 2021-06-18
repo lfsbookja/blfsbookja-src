@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -102,6 +98,7 @@
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="libpaper"/>,
+      <xref linkend="llvm"/> (with <command>clang</command>),
       <xref linkend="mitkrb"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="php"/>, and
@@ -112,6 +109,7 @@
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="libpaper"/>,
+      <xref linkend="llvm"/> (with <command>clang</command>),
       <xref linkend="mitkrb"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="php"/>,
@@ -248,10 +246,14 @@
 @x
       To test the results, issue: <command>LC_ALL=C make -k check</command>. An already
       active graphical session with bus address is necessary to run the tests.
+      Make sure that there is not other instance of <application>Cups</application>
+      running, otherwise at least 4 tests will fail with "address in use".
       <!--One test, <filename>httpAddrGetList</filename>, is known to fail.-->
 @y
       To test the results, issue: <command>LC_ALL=C make -k check</command>. An already
       active graphical session with bus address is necessary to run the tests.
+      Make sure that there is not other instance of <application>Cups</application>
+      running, otherwise at least 4 tests will fail with "address in use".
       <!--One test, <filename>httpAddrGetList</filename>, is known to fail.-->
 @z
 
@@ -286,15 +288,13 @@
 @z
 
 @x
-      <envar>CC=gcc CXX=g++</envar>: This environment variable ensures that gcc is used,
-      if clang is installed. Remove it, if you prefer to use clang. Using clang
-      almost doubles build time and slightly decreases build disk space.
-      Installed disk space is not appreciably modified.
+      <envar>CC=gcc CXX=g++</envar>: Setting them if you prefer to use
+      <command>gcc</command> instead of <command>clang</command>, which is
+      now preferred by the upstream.
 @y
-      <envar>CC=gcc CXX=g++</envar>: This environment variable ensures that gcc is used,
-      if clang is installed. Remove it, if you prefer to use clang. Using clang
-      almost doubles build time and slightly decreases build disk space.
-      Installed disk space is not appreciably modified.
+      <envar>CC=gcc CXX=g++</envar>: Setting them if you prefer to use
+      <command>gcc</command> instead of <command>clang</command>, which is
+      now preferred by the upstream.
 @z
 
 @x
@@ -468,7 +468,7 @@
         <seg>
            <!--accept,--> cancel, cupsaccept, <!--cupsaddsmb,--> cups-config, 
           cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter, cupsreject,
-          <!--cupstestdsc,--> cupstestppd, ippeveprinter, ippfind, ipptool, lp,
+          <!--cupstestdsc,--> cupstestppd, ippeveprinter,<!-- ippfind--> ipptool, lp,
           lpadmin, lpc, lpinfo, lpmove, lpoptions, lpq, lpr, lprm, lpstat, ppdc,
           ppdhtml, ppdi, ppdmerge, and ppdpo <!--and reject-->
         </seg>
@@ -486,12 +486,12 @@
         <seg>
            <!--accept,--> cancel, cupsaccept, <!--cupsaddsmb,--> cups-config, 
           cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter, cupsreject,
-          <!--cupstestdsc,--> cupstestppd, ippeveprinter, ippfind, ipptool, lp,
+          <!--cupstestdsc,--> cupstestppd, ippeveprinter,<!-- ippfind--> ipptool, lp,
           lpadmin, lpc, lpinfo, lpmove, lpoptions, lpq, lpr, lprm, lpstat, ppdc,
           ppdhtml, ppdi, ppdmerge, ppdpo <!--and reject-->
         </seg>
         <seg>
-          <!--libcupscgi.so,--> libcupsimage.so, <!--libcupsmime.so,-->
+          <!--libcupscgi.so,--> libcupsimage.so <!--libcupsmime.so,-->
           <!--libcupsppdc.so,--> libcups.so
         </seg>
         <seg>

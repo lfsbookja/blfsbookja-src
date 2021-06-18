@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "376 MB (add 901 MB for tests)">
-  <!ENTITY cmake-time          "2.0 SBU (add 3.2 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-buildsize     "399 MB (add 910 MB for tests)">
+  <!ENTITY cmake-time          "2.4 SBU (add 3.4 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "376 MB（テスト実行時は 901 MB）">
-  <!ENTITY cmake-time          "2.0 SBU（テスト実行時は 3.2 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-buildsize     "399 MB（テスト実行時は 888 MB）">
+  <!ENTITY cmake-time          "2.4 SBU（テスト実行時は 3.4 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x

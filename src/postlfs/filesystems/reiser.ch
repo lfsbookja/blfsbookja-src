@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -124,16 +120,6 @@
 @y
       <command>sed ...</command>: Ensure a variable is defined for use
       with recent include files.
-@z
-
-@x
-      <parameter>--sbindir=/sbin</parameter>: This switch ensures that the
-      <application>reiserfsprogs</application> utilities are installed in
-      <filename class="directory">/sbin</filename>.
-@y
-      <parameter>--sbindir=/sbin</parameter>:
-      このオプションは <application>reiserfsprogs</application> のユーティリティプログラムを <filename
-      class="directory">/sbin</filename> ディレクトリにインストールします。
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date:: 2018-08-23 16:57:07 +0900#$
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libjpeg-buildsize     "31 MB (with tests)">
+  <!ENTITY libjpeg-buildsize     "32 MB (with tests)">
   <!ENTITY libjpeg-time          "0.3 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY libjpeg-buildsize     "31 MB （テスト込み）">
+  <!ENTITY libjpeg-buildsize     "32 MB （テスト込み）">
   <!ENTITY libjpeg-time          "0.3 SBU （parallelism=4 利用時; テスト込み）">
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -212,30 +208,11 @@
 @z
 
 @x
-      <parameter>--with-xtlibdir=/lib/xtables</parameter>: This switch ensures that
-      all <application>iptables</application> modules are installed in the
-      <filename class="directory">/lib/xtables</filename> directory.
-@y
-      <parameter>--with-xtlibdir=/lib/xtables</parameter>:
-      本スイッチは <application>iptables</application> モジュールをすべて <filename
-      class="directory">/lib/xtables</filename> ディレクトリにインストールするようにします。
-@z
-
-@x
       <option>--enable-nfsynproxy</option>: This switch enables installation
       of <application>nfsynproxy</application> SYNPROXY configuration tool.
 @y
       <option>--enable-nfsynproxy</option>: This switch enables installation
       of <application>nfsynproxy</application> SYNPROXY configuration tool.
-@z
-
-@x
-      <command>ln -sfv ../../sbin/xtables-legacy-multi /usr/bin/iptables-xml</command>:
-      This command ensures that the symbolic link for the 
-      <command>iptables-xml</command> command is relative.
-@y
-      <command>ln -sfv ../../sbin/xtables-legacy-multi /usr/bin/iptables-xml</command>:
-      本コマンドは <command>iptables-xml</command> へのシンボリックリンクを相対的なものとします。
 @z
 
 @x

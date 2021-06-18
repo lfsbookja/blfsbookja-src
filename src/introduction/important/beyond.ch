@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -237,7 +233,7 @@
 @x
       <para>If you are having a problem compiling the package, try
       searching the LFS archives at
-      <ulink url="http://www.&lfs-domainname;/search.html"/> for the error or if
+      <ulink url="https://www.&lfs-domainname;/search.html"/> for the error or if
       that fails, try searching Google. Often, a distribution will have already
       solved the problem (many of them use development versions of packages, so
       they see the changes sooner than those of us who normally use stable released
@@ -253,7 +249,7 @@
 @y
       <para>
       パッケージのコンパイルがうまくいかなった場合は、LFS のアーカイブ <ulink
-      url="http://www.&lfs-domainname;/search.html"/> にエラー情報があるかどうかを確認してください。
+      url="https://www.&lfs-domainname;/search.html"/> にエラー情報があるかどうかを確認してください。
       情報が見つからなければ Google で検索するのも一つの手です。
       Often, a distribution will have already
       solved the problem (many of them use development versions of packages, so

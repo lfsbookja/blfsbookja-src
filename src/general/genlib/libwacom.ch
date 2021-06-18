@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -205,8 +201,10 @@
 
 @x
         <seg>
-          libwacom-list-local-devices and
-          libwacom-show-stylus
+          libwacom-list-devices,
+          libwacom-list-local-devices,
+          libwacom-show-stylus, and
+          libwacom-update-db
         </seg>
         <seg>
           libwacom.so
@@ -217,8 +215,10 @@
         </seg>
 @y
         <seg>
+          libwacom-list-devices,
           libwacom-list-local-devices,
-          libwacom-show-stylus
+          libwacom-show-stylus,
+          libwacom-update-db
         </seg>
         <seg>
           libwacom.so

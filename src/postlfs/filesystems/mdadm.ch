@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -166,11 +162,12 @@
 @x
       <command>make everything</command>: This optional target creates extra
       programs, particularly a statically-linked version of
-      <command>mdadm</command> and also versions of
-      <command>mdassemble</command>. These all need to be manually installed.
+      <command>mdadm</command>. <!-- and also versions of
+      <command>mdassemble</command>. These all need to be manually installed.-->
+      This needs to be manually installed.
 @y
       <command>--make everything</command>:
-      このターゲットは追加のプログラムを生成するもので、スタティックリンク版の <command>mdadm</command> や <command>mdassemble</command> を作り出します。
+      このターゲットは追加のプログラムを生成するもので、スタティックリンク版の <command>mdadm</command> を作り出します。
       これらのプログラムは手動でインストールする必要があります。
 @z
 
@@ -191,11 +188,11 @@
 @z
 
 @x
-        <seg>mdadm, mdmon and optionally mdassemble</seg>
+        <seg>mdadm and mdmon <!--and optionally mdassemble--></seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>mdadm, mdmon, 任意ビルドにより mdassemble</seg>
+        <seg>mdadm, mdmon</seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
 @z
