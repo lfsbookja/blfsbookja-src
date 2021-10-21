@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY glib-networking-buildsize     "5.1 MB (with tests)">
+  <!ENTITY glib-networking-buildsize     "6.1 MB (with tests)">
   <!ENTITY glib-networking-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY glib-networking-buildsize     "5.1 MB（テスト込み）">
+  <!ENTITY glib-networking-buildsize     "6.1 MB（テスト込み）">
   <!ENTITY glib-networking-time          "&LessThan1;0.1 SBU&LessThan2; （テスト込み）">
 @z
 
@@ -81,28 +81,30 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="gnutls"/>, and
-      <xref linkend="gsettings-desktop-schemas"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="gnutls"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="gsettings-desktop-schemas"/>
+      <xref linkend="gnutls"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="gsettings-desktop-schemas"/> (for the applications
+      using this package to use proxy server settings in GNOME) and
       <xref linkend="make-ca"/>
       <!-- p11-kit option no longer exists, and is pulled in by GnuTLS anyway -->
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="gsettings-desktop-schemas"/> (for the applications
+      using this package to use proxy server settings in GNOME) and
       <xref linkend="make-ca"/>
       <!-- p11-kit option no longer exists, and is pulled in by GnuTLS anyway -->
     </para>
@@ -155,34 +157,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-    <title>Configuring Glib-networking</title>
-@y
-    <title>&Configuring1;Glib-networking&Configuring2;</title>
-@z
-
-@x
-      <title>Config Files</title>
-@y
-      <title>&ConfigFiles;</title>
-@z
-
-@x
-    <sect3><title>Configuration Information</title>
-@y
-    <sect3><title>&ConfigInfo;</title>
-@z
-
-@x
-        For using the PKCS #11 modules, the <envar>GIO_USE_TLS</envar> variable
-        should be set in the environment. This can be added to the Bash Startup
-        Files (as the <systemitem class="username">root</systemitem> user):
-@y
-        For using the PKCS #11 modules, the <envar>GIO_USE_TLS</envar> variable
-        should be set in the environment. This can be added to the Bash Startup
-        Files (as the <systemitem class="username">root</systemitem> user):
 @z
 
 @x

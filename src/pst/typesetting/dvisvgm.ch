@@ -3,22 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY dvisvgm-buildsize     "334 MB (49 MB installed, add 959 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
-@y
-  <!ENTITY dvisvgm-buildsize     "334 MB (49 MB installed, add 959 MB for the tests)">
-  <!ENTITY dvisvgm-time          "0.8 SBU (add 0.6 SBU for the tests, both using parallelism=4)">
 @z
 
 @x

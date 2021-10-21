@@ -11,10 +11,10 @@
 
 @x
   <!ENTITY js78-buildsize     "3.0 GB (36 MB installed after removing 34MB static lib)">
-  <!ENTITY js78-time          "2.6 SBU (on a 4-core machine with parallelism=4)">
+  <!ENTITY js78-time          "2.5 SBU (with parallelism=4)">
 @y
   <!ENTITY js78-buildsize     "3.0 GB (36 MB installed after removing 34MB static lib)">
-  <!ENTITY js78-time          "2.6 SBU (on a 4-core machine with parallelism=4)">
+  <!ENTITY js78-time          "2.5 SBU (with parallelism=4)">
 @z
 
 @x
@@ -113,12 +113,12 @@
 
 @x
         Unlike most other packages in BLFS, the instructions below require you
-        to untar <filename>firefox-&ff78-version;esr.tar.xz</filename> and
-        change into the <filename>firefox-&ff78-version;</filename> folder.
+        to untar <filename>firefox-&JS78-version;esr.tar.xz</filename> and
+        change into the <filename>firefox-&JS78-version;</filename> folder.
 @y
         Unlike most other packages in BLFS, the instructions below require you
-        to untar <filename>firefox-&ff78-version;esr.tar.xz</filename> and
-        change into the <filename>firefox-&ff78-version;</filename> folder.
+        to untar <filename>firefox-&JS78-version;esr.tar.xz</filename> and
+        change into the <filename>firefox-&JS78-version;</filename> folder.
 @z
 
 @x

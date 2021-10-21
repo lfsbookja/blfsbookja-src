@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY jasper-buildsize     "6.6 MB (with tests)">
+  <!ENTITY jasper-buildsize     "7.9 MB (with tests)">
   <!ENTITY jasper-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY jasper-buildsize     "6.6 MB（テスト込み）">
+  <!ENTITY jasper-buildsize     "7.9 MB（テスト込み）">
   <!ENTITY jasper-time          "0.2 SBU（テスト込み）">
 @z
 

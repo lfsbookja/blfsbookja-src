@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libatomic_ops-buildsize     "7.0 MB (with tests)">
+  <!ENTITY libatomic_ops-buildsize     "6.2 MB (with tests)">
   <!ENTITY libatomic_ops-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libatomic_ops-buildsize     "7.0 MB (テスト込み)">
+  <!ENTITY libatomic_ops-buildsize     "6.2 MB (テスト込み)">
   <!ENTITY libatomic_ops-time          "0.2 SBU (テスト込み)">
 @z
 

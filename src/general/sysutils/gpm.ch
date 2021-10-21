@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -287,12 +283,12 @@
 @x
         <seg>disable-paste, display-buttons, display-coords, get-versions, gpm,
         gpm-root, hltest, mev, and mouse-test</seg>
-        <seg>libgpm.{so.a}</seg>
+        <seg>libgpm.so</seg>
         <seg>/usr/share/doc/gpm-&gpm-version;</seg>
 @y
         <seg>disable-paste, display-buttons, display-coords, get-versions, gpm,
         gpm-root, hltest, mev, mouse-test</seg>
-        <seg>libgpm.{so.a}</seg>
+        <seg>libgpm.so</seg>
         <seg>/usr/share/doc/gpm-&gpm-version;</seg>
 @z
 

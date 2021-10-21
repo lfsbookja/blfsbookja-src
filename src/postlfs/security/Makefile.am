@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/postlfs/security
 CHANGE_FILES = \
 	cracklib.ch        \
@@ -14,7 +10,6 @@ CHANGE_FILES = \
 	gnupg2.ch          \
 	gnutls.ch          \
 	gpgme.ch           \
-	haveged.ch         \
 	iptables.ch        \
 	libcap.ch          \
 	liboauth.ch        \

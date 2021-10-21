@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY gnome-calculator-buildsize     "45 MB (with tests)">
+  <!ENTITY gnome-calculator-buildsize     "36 MB (with tests)">
   <!ENTITY gnome-calculator-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY gnome-calculator-buildsize     "45 MB（テスト込み）">
+  <!ENTITY gnome-calculator-buildsize     "36 MB（テスト込み）">
   <!ENTITY gnome-calculator-time          "0.4 SBU（テスト込み）">
 @z
 
@@ -137,7 +137,7 @@
 @x
       To test the results, issue: <command>ninja test</command>.
 @y
-      To test the results, issue: <command>ninja test</command>.
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x

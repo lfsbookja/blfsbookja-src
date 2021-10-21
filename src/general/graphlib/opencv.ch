@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY opencv-time              "4.0 SBU (using parallelism=4)">
+  <!ENTITY opencv-time              "4.3 SBU (using parallelism=4)">
 @y
-  <!ENTITY opencv-time              "4.0 SBU (using parallelism=4)">
+  <!ENTITY opencv-time              "4.3 SBU (using parallelism=4)">
 @z
 
 @x
@@ -180,7 +180,7 @@
       <xref linkend="python2"/>,
       <ulink url="https://www.netlib.org/blas/">blas</ulink>,
       <ulink url="https://developer.nvidia.com/cuda-zone">Cuda</ulink>,
-      <ulink url="http://eigen.tuxfamily.org/">Eigen</ulink>,
+      <ulink url="https://eigen.tuxfamily.org/">Eigen</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
       <!--<ulink url="http://gcd.joewheaton.org/">GCD</ulink>,-->
       <ulink url="http://www.gdal.org/">GDAL</ulink>,
@@ -207,7 +207,7 @@
       <xref linkend="python2"/>,
       <ulink url="https://www.netlib.org/blas/">blas</ulink>,
       <ulink url="https://developer.nvidia.com/cuda-zone">Cuda</ulink>,
-      <ulink url="http://eigen.tuxfamily.org/">Eigen</ulink>,
+      <ulink url="https://eigen.tuxfamily.org/">Eigen</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
       <!--<ulink url="http://gcd.joewheaton.org/">GCD</ulink>,-->
       <ulink url="http://www.gdal.org/">GDAL</ulink>,

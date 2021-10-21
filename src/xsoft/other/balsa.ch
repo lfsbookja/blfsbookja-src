@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -81,8 +77,9 @@
       <xref linkend="enchant"/>,
       <xref linkend="gmime3"/>,
       <xref linkend="gpgme"/>,
-      <xref linkend="gtk3"/>,and
-      <xref linkend="rarian"/>
+      <xref linkend="gtk3"/>, and
+      <xref linkend="libnotify"/>
+      <!--<xref linkend="rarian"/>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -92,7 +89,8 @@
       <xref linkend="gmime3"/>,
       <xref linkend="gpgme"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="rarian"/>
+      <xref linkend="libnotify"/>
+      <!--<xref linkend="rarian"/>-->
     </para>
 @z
 
@@ -111,25 +109,12 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="pcre"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="pcre"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="compface"/>,
       <xref linkend="gcr"/>,
       <xref linkend="gtksourceview"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="libnotify"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openldap"/>,
@@ -148,7 +133,6 @@
       <xref linkend="gcr"/>,
       <xref linkend="gtksourceview"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="libnotify"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="openldap"/>,

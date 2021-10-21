@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -106,12 +102,16 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="gnutls"/> (required to communicate with keyservers
+      using https or hkps protocol) and
       <xref linkend="pinentry"/> (Run-time requirement for most of
       the package's functionality)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="gnutls"/> (required to communicate with keyservers
+      using https or hkps protocol),
       <xref linkend="pinentry"/> (本パッケージのほとんどの機能に対して実行時に必要)
     </para>
 @z
@@ -121,7 +121,6 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="fuse3"/>,
-      <xref linkend="gnutls"/>,
       <xref linkend="imagemagick"/> (for the <command>convert</command> utility,
       used for generating the documentation),
       <xref linkend="libusb"/>,
@@ -139,7 +138,6 @@
     <para role="optional">
       <xref linkend="curl"/>,
       <xref linkend="fuse3"/>,
-      <xref linkend="gnutls"/>,
       <xref linkend="imagemagick"/> (for the <command>convert</command> utility,
       used for generating the documentation),
       <xref linkend="libusb"/>,
@@ -149,7 +147,7 @@
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> (for
       generating documentation),
-      and <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
+      <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
       adns</ulink>
     </para>
 @z
@@ -244,11 +242,11 @@
 @z
 
 @x
-      <option>--enable-all-tests</option>: allows more tests to be run with
-      <command>make check</command>.
+      <option>--enable-all-tests</option>: This switch allows more tests to be
+      run with <command>make check</command>.
 @y
-      <option>--enable-all-tests</option>: allows more tests to be run with
-      <command>make check</command>.
+      <option>--enable-all-tests</option>: This switch allows more tests to be
+      run with <command>make check</command>.
 @z
 
 @x
@@ -342,12 +340,12 @@
 @x gpg-agent
             is a daemon used to manage secret (private) keys independently
             from any protocol. It is used as a backend for
-            <command>gpg2</command> and <command>gpgsm</command> as well as
+            <command>gpg</command> and <command>gpgsm</command> as well as
             for a couple of other utilities
 @y
             is a daemon used to manage secret (private) keys independently
             from any protocol. It is used as a backend for
-            <command>gpg2</command> and <command>gpgsm</command> as well as
+            <command>gpg</command> and <command>gpgsm</command> as well as
             for a couple of other utilities
 @z
 
@@ -398,12 +396,12 @@
 @z
 
 @x gpgsm
-            is a tool similar to <command>gpg2</command> used to provide
+            is a tool similar to <command>gpg</command> used to provide
             digital encryption and signing services on X.509 certificates and
             the CMS protocol. It is mainly used as a backend for S/MIME mail
             processing
 @y
-            is a tool similar to <command>gpg2</command> used to provide
+            is a tool similar to <command>gpg</command> used to provide
             digital encryption and signing services on X.509 certificates and
             the CMS protocol. It is mainly used as a backend for S/MIME mail
             processing
@@ -416,9 +414,9 @@
 @z
 
 @x gpgv
-            is a verify only version of <command>gpg2</command>
+            is a verify only version of <command>gpg</command>
 @y
-            is a verify only version of <command>gpg2</command>
+            is a verify only version of <command>gpg</command>
 @z
 
 @x gpg-wks-server

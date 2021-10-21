@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "1.2 GB (96 MB installed), add 1.0 GB for tests">
-  <!ENTITY librsvg-time          "1.0 SBU (Using parallelism=4), add 0.7 SBU for tests">
+  <!ENTITY librsvg-buildsize     "831 MB (96 MB installed), add 220 MB for tests">
+  <!ENTITY librsvg-time          "1.5 SBU (Using parallelism=4), add 0.6 SBU for tests">
 @y
-  <!ENTITY librsvg-buildsize     "1.2 GB（インストールに 96 MB）、テスト実施時はさらに 1.0 GB">
-  <!ENTITY librsvg-time          "1.0 SBU（parallelism=4 利用時）、テスト実施時はさらに 0.7 SBU">
+  <!ENTITY librsvg-buildsize     "831 MB（インストールに 96 MB）、テスト実施時はさらに 220 MB">
+  <!ENTITY librsvg-time          "1.5 SBU（parallelism=4 利用時）、テスト実施時はさらに 0.6 SBU">
 @z
 
 @x

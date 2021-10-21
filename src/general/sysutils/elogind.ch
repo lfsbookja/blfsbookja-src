@@ -100,22 +100,20 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="linux-pam"/> (required for Xorg),
+      <xref linkend="polkit"/> (runtime),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>, and
-      <xref linkend="libxslt"/> (all three to build the man pages),
-      <xref linkend="linux-pam"/>, and
-      <xref linkend="polkit"/> (circular, build elogind first, then polkit,
-      then elogind again)
+      <xref linkend="libxslt"/> (all three to build the man pages)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="linux-pam"/> (required for Xorg),
+      <xref linkend="polkit"/> (runtime),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="libxslt"/> (ここまでの 3 つは man ページ生成のため),
-      <xref linkend="linux-pam"/>,
-      <xref linkend="polkit"/> (circular, build elogind first, then polkit,
-      then elogind again)
+      <xref linkend="libxslt"/> (all three to build the man pages)
     </para>
 @z
 

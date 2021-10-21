@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY doxygen-buildsize     "177 MB (with tests)">
-  <!ENTITY doxygen-time          "1.1 SBU (using parallelism=4; with tests)">
+  <!ENTITY doxygen-buildsize     "165 MB (with tests)">
+  <!ENTITY doxygen-time          "1.2 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY doxygen-buildsize     "177 MB (with tests)">
-  <!ENTITY doxygen-time          "1.1 SBU (using parallelism=4; with tests)">
+  <!ENTITY doxygen-buildsize     "165 MB (with tests)">
+  <!ENTITY doxygen-time          "1.2 SBU (using parallelism=4; with tests)">
 @z
 
 @x
@@ -167,12 +163,6 @@
     <title>Installation of Doxygen</title>
 @y
     <title>&InstallationOf1;Doxygen&InstallationOf2;</title>
-@z
-
-@x
-      Remove a spurious file that prevents building the documentation:
-@y
-      Remove a spurious file that prevents building the documentation:
 @z
 
 @x

@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libjpeg-buildsize     "32 MB (with tests)">
+  <!ENTITY libjpeg-buildsize     "33 MB (with tests)">
   <!ENTITY libjpeg-time          "0.3 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY libjpeg-buildsize     "32 MB （テスト込み）">
+  <!ENTITY libjpeg-buildsize     "33 MB （テスト込み）">
   <!ENTITY libjpeg-time          "0.3 SBU （parallelism=4 利用時; テスト込み）">
 @z
 

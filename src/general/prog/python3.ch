@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY python3-buildsize     "355 MB (add 47 MB for tests)">
-  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 2.5 SBU for tests)">
+  <!ENTITY python3-buildsize     "200 MB (add 38 MB for tests)">
+  <!ENTITY python3-time          "2.4 SBU (using parallelism=4; add 1.6 SBU for tests)">
 @y
-  <!ENTITY python3-buildsize     "355 MB (add 47 MB for tests)">
-  <!ENTITY python3-time          "0.5 SBU (using parallelism=4; add 2.5 SBU for tests)">
+  <!ENTITY python3-buildsize     "200 MB (add 38 MB for tests)">
+  <!ENTITY python3-time          "2.4 SBU (using parallelism=4; add 1.6 SBU for tests)">
 @z
 
 @x
@@ -102,13 +102,15 @@
 @x
     <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="db"/> and
+      <xref linkend="db"/>,
+      <xref linkend="libnsl"/>, and
       <xref linkend="tk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (追加モジュール用)</bridgehead>
     <para role="optional">
       <xref linkend="db"/>,
+      <xref linkend="libnsl"/>,
       <xref linkend="tk"/>
     </para>
 @z
@@ -134,10 +136,10 @@
 
 @x
       To test the result, issue <command>make test</command>.
-      Some tests may need Internet connection.
+      Some tests may need an Internet connection.
 @y
       To test the result, issue <command>make test</command>.
-      Some tests may need Internet connection.
+      Some tests may need an Internet connection.
 @z
 
 @x
@@ -201,19 +203,11 @@
 @z
 
 @x
-      <option>--enable-optimization</option>: Use this switch
-      if you want to enable <emphasis>expensive</emphasis> optimizations (i.e.
-      Profile Guided Optimizations). This adds around 20 SBU, but can
-      <emphasis>slightly</emphasis> speed up some uses, such as using
-      <application>Sphinx</application> for creating documentation, or use of
-      <application>Python3</application> scripts.
+      <parameter>--enable-optimization</parameter>: This switch enables
+      stable, but expensive, optimizations.
 @y
-      <option>--enable-optimization</option>: Use this switch
-      if you want to enable <emphasis>expensive</emphasis> optimizations (i.e.
-      Profile Guided Optimizations). This adds around 20 SBU, but can
-      <emphasis>slightly</emphasis> speed up some uses, such as using
-      <application>Sphinx</application> for creating documentation, or use of
-      <application>Python3</application> scripts.
+      <parameter>--enable-optimization</parameter>: This switch enables
+      stable, but expensive, optimizations.
 @z
 
 @x

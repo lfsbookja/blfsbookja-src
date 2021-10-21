@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY nodejs-buildsize     "748 MB (add 21 MB for tests)">
-  <!ENTITY nodejs-time          "9.1 SBU (using parallelism=4; add 2.1 SBU for tests)">
+  <!ENTITY nodejs-buildsize     "748 MB (add 27 MB for tests)">
+  <!ENTITY nodejs-time          "11 SBU (add 3.1 SBU for tests: both using parallelism=4 and 4 CPUs online, parts of the tests will use all online CPUs)">
 @y
-  <!ENTITY nodejs-buildsize     "748 MB (add 21 MB for tests)">
-  <!ENTITY nodejs-time          "9.1 SBU (using parallelism=4; add 2.1 SBU for tests)">
+  <!ENTITY nodejs-buildsize     "748 MB (add 27 MB for tests)">
+  <!ENTITY nodejs-time          "11 SBU (add 3.1 SBU for tests: both using parallelism=4 and 4 CPUs online, parts of the tests will use all online CPUs)">
 @z
 
 @x
@@ -148,18 +148,12 @@
 
 @x
       To test the results, issue: <command>make test-only</command>.
-      <!--One test, test-dns, is known to fail.-->
-      <!-- When using make check, a module is used that wasn't shipped properly
-           with the 12.16.2 release. See Ticket #13379 for details. We should
-           probably restore "make check" after the next version of Node.js.
-           This new command skips the documentation and lint checks. -renodr-->
+      One test in test/parallel/test-uv-errno.js is known to fail with
+      libuv-1.42.0.
 @y
       ビルド結果をテストする場合は <command>make test-only</command> を実行します。
-      <!--One test, test-dns, is known to fail.-->
-      <!-- When using make check, a module is used that wasn't shipped properly
-           with the 12.16.2 release. See Ticket #13379 for details. We should
-           probably restore "make check" after the next version of Node.js.
-           This new command skips the documentation and lint checks. -renodr-->
+      One test in test/parallel/test-uv-errno.js is known to fail with
+      libuv-1.42.0.
 @z
 
 @x

@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "399 MB (add 910 MB for tests)">
-  <!ENTITY cmake-time          "2.4 SBU (add 3.4 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-buildsize     "319 MB (add 881 MB for tests)">
+  <!ENTITY cmake-time          "2.0 SBU (add 3.2 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "399 MB（テスト実行時は 888 MB）">
-  <!ENTITY cmake-time          "2.4 SBU（テスト実行時は 3.4 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-buildsize     "319 MB（テスト実行時は 881 MB）">
+  <!ENTITY cmake-time          "2.0 SBU（テスト実行時は 3.2 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -163,7 +163,7 @@
       <replaceable>&lt;N&gt;</replaceable> is an integer between 1 and the
       number of system cores. Setting <envar>LC_ALL</envar> is needed to
       prevent some test failures when some of the locale variables are
-      set to non English locales.
+      set to non English locales. One test, RunCMake.CMP0125. is known to fail.
 @y
       ビルド結果をテストする場合は <command>LC_ALL=en_US.UTF-8 bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
@@ -171,6 +171,7 @@
       ここで <replaceable>&lt;N&gt;</replaceable> は 1 からシステムコア数までの値を選んで指定します。
       テストがいくつか失敗するため <envar>LC_ALL</envar> の設定が必要となります。
       ロケール変数が英語以外のロケールに設定される場合があるためです。
+      RunCMake.CMP0125 というテストが 1 つだけ失敗します。
 @z
 
 @x

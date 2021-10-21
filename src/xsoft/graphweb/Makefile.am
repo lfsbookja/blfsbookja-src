@@ -1,16 +1,13 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/xsoft/graphweb
 CHANGE_FILES = \
-	epiphany.ch  \
-	firefox.ch   \
-	falkon.ch   \
-	graphweb.ch  \
+	epiphany.ch       \
+	firefox.ch        \
+	firefox-legacy.ch \
+	falkon.ch         \
+	graphweb.ch       \
 	seamonkey.ch
 
 EXTRA_DIST = $(CHANGE_FILES)

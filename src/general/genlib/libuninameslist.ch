@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY libuninameslist-time          "less than 0.1 SBU">
+  <!ENTITY libuninameslist-buildsize     "14 MB (with tests)">
+  <!ENTITY libuninameslist-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libuninameslist-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY libuninameslist-buildsize     "14 MB (with tests)">
+  <!ENTITY libuninameslist-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x

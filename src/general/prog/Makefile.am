@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 SUBDIRS = perl-deps perl-modules
 
 BOOKdir = @abs_bookdir@/general/prog
@@ -29,7 +25,6 @@ CHANGE_FILES = \
 	cbindgen.ch       \
 	clisp.ch          \
 	cmake.ch          \
-	decorator.ch      \
 	docutils.ch       \
 	doxygen.ch        \
 	dummy-java.ch     \
@@ -61,7 +56,6 @@ CHANGE_FILES = \
 	pygments.ch       \
 	python-dbusmock.ch \
 	python-modules.ch \
-	python-slip.ch    \
 	python2.ch        \
 	python3.ch        \
 	ruby.ch           \

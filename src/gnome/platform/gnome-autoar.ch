@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -130,9 +126,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+       To test the results, issue: <command>ninja test</command>
 @y
-      &notTestSuite;
+       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -148,12 +144,11 @@
 @z
 
 @x
-      <parameter>--disable-debug</parameter>: Disable the debug mode,
-      in which this package would be built with <option>-O0 -g</option>.
+      <option>-Dgtk_doc=true</option>: Use this parameter if GTK-Doc is
+      installed and you wish to rebuild and install the API documentation.
 @y
-      <parameter>--disable-debug</parameter>:
-      デバッグモードを無効にします。
-      これにより本パッケージはオプション <option>-O0 -g</option> によりビルドされます。
+      <option>-Dgtk_doc=true</option>: Use this parameter if GTK-Doc is
+      installed and you wish to rebuild and install the API documentation.
 @z
 
 @x

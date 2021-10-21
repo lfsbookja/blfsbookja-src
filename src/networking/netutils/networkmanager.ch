@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY NetworkManager-buildsize     "739 MB (with tests)">
-  <!ENTITY NetworkManager-time          "0.9 SBU (with tests, using parallelism=4)">
+  <!ENTITY NetworkManager-buildsize     "286 MB (with tests)">
+  <!ENTITY NetworkManager-time          "0.8 SBU (with tests, using parallelism=4)">
 @y
-  <!ENTITY NetworkManager-buildsize     "739 MB (テスト込み)">
-  <!ENTITY NetworkManager-time          "0.9 SBU (テスト込み、parallelism=4 利用)">
+  <!ENTITY NetworkManager-buildsize     "286 MB (テスト込み)">
+  <!ENTITY NetworkManager-time          "0.8 SBU (テスト込み、parallelism=4 利用)">
 @z
 
 @x
@@ -118,7 +118,7 @@
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
       <xref linkend="upower"/>,
       <xref linkend="vala"/>, and
-      <xref linkend="wpa_supplicant"/> (built with D-Bus support),
+      <xref linkend="wpa_supplicant"/> (built with D-Bus support)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -126,10 +126,10 @@
       <xref linkend="curl"/>,
       <!--<xref linkend="dhcpcd"/> or
           DHCPCD support is known to be broken with dhcpcd-9 -->
-      <xref role="nodep" linkend="dhcp"/> (クライアントのみ),
+      <xref role="nodep" linkend="dhcp"/> (client only),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
-      <xref linkend="newt"/> (<command>nmtui</command> のため),
+      <xref linkend="newt"/> (for <command>nmtui</command>),
       <xref linkend="nss"/>,
       <xref linkend="polkit"/>,
       <xref linkend="pygobject3"/>,
@@ -215,9 +215,10 @@
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
       issue: <command>ninja test</command>. Five tests,
+      <filename>platform/test-tc-linux</filename>,
+      <!--<filename>platform/test-core</filename>,-->
       <filename>test-l3cfg</filename>,
       <filename>devices/test-acd</filename>,
-      <filename>platform/test-tc-linux</filename>,
       <filename>platform/test-route-linux</filename>, and
       <filename>platform/test-link-linux</filename>,
       <!--<filename>platform/test-cleanup-linux</filename>,--> are known to fail.
@@ -226,9 +227,10 @@
       with a bus address is necessary to run the tests. To test the results,
       as the root user, <!-- needs the "ip" command -->
       issue: <command>ninja test</command>. Five tests,
+      <filename>platform/test-tc-linux</filename>,
+      <!--<filename>platform/test-core</filename>,-->
       <filename>test-l3cfg</filename>,
       <filename>devices/test-acd</filename>,
-      <filename>platform/test-tc-linux</filename>,
       <filename>platform/test-route-linux</filename>, and
       <filename>platform/test-link-linux</filename>,
       <!--<filename>platform/test-cleanup-linux</filename>,--> are known to fail.

@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libsigc-buildsize     "38 MB (with tests)">
+  <!ENTITY libsigc-buildsize     "25 MB (with tests)">
   <!ENTITY libsigc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libsigc-buildsize     "38 MB (テスト込み)">
+  <!ENTITY libsigc-buildsize     "25 MB (テスト込み)">
   <!ENTITY libsigc-time          "0.2 SBU (テスト込み)">
 @z
 

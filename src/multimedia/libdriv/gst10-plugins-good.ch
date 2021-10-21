@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY gst10-plugins-good-buildsize     "101 MB (with tests)">
+  <!ENTITY gst10-plugins-good-buildsize     "102 MB (with tests)">
   <!ENTITY gst10-plugins-good-time          "0.6 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-good-buildsize     "101 MB（テスト込み）">
+  <!ENTITY gst10-plugins-good-buildsize     "102 MB（テスト込み）">
   <!ENTITY gst10-plugins-good-time          "0.6 SBU（parallelism=4 利用時、テスト込み）">
 @z
 
@@ -104,18 +104,10 @@
       <xref linkend="flac"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="lame"/>,
-      <xref linkend="libgudev"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="libvpx"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="mpg123"/>,
-      <xref linkend="nasm"/>, and
-      <xref linkend="xorg7-lib"/> <!-- build time requirements only,
-      you don't need either apps, fonts or xorg server to build this
-      package. You'll need xserver for any X app that wants to play
-      something though, but that should be obvious. -->
+      <xref linkend="mpg123"/>, and
+      <xref linkend="nasm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -124,18 +116,10 @@
       <xref linkend="flac"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="lame"/>,
-      <xref linkend="libgudev"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
       <xref linkend="libsoup"/>,
       <xref linkend="libvpx"/>,
-      <xref linkend="mesa"/>,
       <xref linkend="mpg123"/>,
-      <xref linkend="nasm"/>,
-      <xref linkend="xorg7-lib"/> <!-- build time requirements only,
-      you don't need either apps, fonts or xorg server to build this
-      package. You'll need xserver for any X app that wants to play
-      something though, but that should be obvious. -->
+      <xref linkend="nasm"/>
     </para>
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -114,19 +110,25 @@
 @z
 
 @x revision="sysv"
-      Several <application>KDE Frameworks 5</application> packages install
-      files into <application>D-Bus</application> directories. When installing
+      Several <application>KDE Frameworks 5</application> and
+      <application>Plasma 5</application> packages install
+      files into <application>D-Bus</application> and
+      <application>Polkit</application> directories. When installing
       <application>KDE Frameworks 5</application> in a location other than
       <filename class="directory">/usr</filename>,
-      <application>D-Bus</application> needs to be able to find these files.
+      <application>D-Bus</application> and <application>Polkit</application>
+      need to be able to find these files.
       The easiest way to achieve this is to create the following symlinks (as
       the <systemitem class="username">root</systemitem> user):
 @y
-      Several <application>KDE Frameworks 5</application> packages install
-      files into <application>D-Bus</application> directories. When installing
+      Several <application>KDE Frameworks 5</application> and
+      <application>Plasma 5</application> packages install
+      files into <application>D-Bus</application> and
+      <application>Polkit</application> directories. When installing
       <application>KDE Frameworks 5</application> in a location other than
       <filename class="directory">/usr</filename>,
-      <application>D-Bus</application> needs to be able to find these files.
+      <application>D-Bus</application> and <application>Polkit</application>
+      need to be able to find these files.
       The easiest way to achieve this is to create the following symlinks (as
       the <systemitem class="username">root</systemitem> user):
 @z
@@ -134,22 +136,26 @@
 @x revision="systemd"
       Several <application>KDE Frameworks 5</application> and
       <application>KDE Plasma 5</application> packages install
-      files into <application>D-Bus</application> and
+      files into <application>D-Bus</application>,
+      <application>Polkit</application>, and
       <application>systemd</application> directories. When installing
       <application>KDE 5</application> in a location other than
       <filename class="directory">/usr</filename>,
-      <application>D-Bus</application> and <application>systemd</application>
+      <application>D-Bus</application>, <application>Polkit</application>,
+      and <application>systemd</application>
       need to be able to find these files.
       The easiest way to achieve this is to create the following symlinks (as
       the <systemitem class="username">root</systemitem> user):
 @y
       Several <application>KDE Frameworks 5</application> and
       <application>KDE Plasma 5</application> packages install
-      files into <application>D-Bus</application> and
+      files into <application>D-Bus</application>,
+      <application>Polkit</application>, and
       <application>systemd</application> directories. When installing
       <application>KDE 5</application> in a location other than
       <filename class="directory">/usr</filename>,
-      <application>D-Bus</application> and <application>systemd</application>
+      <application>D-Bus</application>, <application>Polkit</application>,
+      and <application>systemd</application>
       need to be able to find these files.
       The easiest way to achieve this is to create the following symlinks (as
       the <systemitem class="username">root</systemitem> user):

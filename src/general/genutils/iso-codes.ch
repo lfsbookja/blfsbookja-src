@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY iso-codes-time          "0.1 SBU (with tests)">
+  <!ENTITY iso-codes-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY iso-codes-time          "0.1 SBU（テスト込み）">
+  <!ENTITY iso-codes-time          "0.2 SBU（テスト込み）">
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -79,12 +75,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> and
+      <!-- due to the patch -->
+      <xref linkend="accountsservice"/>,
+      <xref linkend="gtk3"/>, and
       <xref linkend="polkit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <!-- due to the patch -->
+      <xref linkend="accountsservice"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="polkit"/>
     </para>

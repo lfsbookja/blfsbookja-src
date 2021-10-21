@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -94,11 +90,12 @@
         libraries out of what is found in the LFS book. Its <quote>core</quote>
         rendering engine allows to generate several graphic formats, such as
         Postscript, SVG, VML, .fig, and Tk. Those formats can be converted
-        to almost any other, using for example tools from <xref role="nodep"
-        linkend="imagemagick"/>. The dependencies below add the ability to
-        generate graph images in bitmap format, to display the graph image on
-        screen, to edit a graph by seeing directly the result image, or to view
-        large graphs. Since <application>Graphviz</application> is a dependency
+        to almost any other format using for example tools from
+        <xref role="nodep" linkend="imagemagick"/>. The dependencies below add
+        the ability to generate graph images in bitmap format, to display the
+        graph image on screen, to edit a graph by viewing the resulting image
+        directly, or to view large graphs. Since
+        <application>Graphviz</application> is a dependency
         of several other packages in this book, it is suggested to first build
         it without any dependencies, then to rebuild it when you have built
         enough packages to suit your needs.
@@ -107,11 +104,12 @@
         libraries out of what is found in the LFS book. Its <quote>core</quote>
         rendering engine allows to generate several graphic formats, such as
         Postscript, SVG, VML, .fig, and Tk. Those formats can be converted
-        to almost any other, using for example tools from <xref role="nodep"
-        linkend="imagemagick"/>. The dependencies below add the ability to
-        generate graph images in bitmap format, to display the graph image on
-        screen, to edit a graph by seeing directly the result image, or to view
-        large graphs. Since <application>Graphviz</application> is a dependency
+        to almost any other format using for example tools from
+        <xref role="nodep" linkend="imagemagick"/>. The dependencies below add
+        the ability to generate graph images in bitmap format, to display the
+        graph image on screen, to edit a graph by viewing the resulting image
+        directly, or to view large graphs. Since
+        <application>Graphviz</application> is a dependency
         of several other packages in this book, it is suggested to first build
         it without any dependencies, then to rebuild it when you have built
         enough packages to suit your needs.
@@ -245,7 +243,7 @@
       <xref linkend="openjdk"/>,
       <xref linkend="lua"/>,
       <xref linkend="php"/>,
-      <xref linkend="python2"/>,
+      <!--<xref linkend="python2"/>, Removed in 2.47.3 -->
       <xref linkend="ruby"/>,
       <!-- <xref linkend="tcl"/>, -->
       <xref linkend="tk"/>,
@@ -264,7 +262,7 @@
       <xref linkend="openjdk"/>,
       <xref linkend="lua"/>,
       <xref linkend="php"/>,
-      <xref linkend="python2"/>,
+      <!--<xref linkend="python2"/>, Removed in 2.47.3 -->
       <xref linkend="ruby"/>,
       <!-- <xref linkend="tcl"/>, -->
       <xref linkend="tk"/>,
@@ -403,10 +401,10 @@
           unflatten, and vimdot
         </seg>
         <seg>
-          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so, 
+          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so,
           libpathplan.so, libxdot.so, and several plugins in /usr/lib/graphviz.
           There are also several in subdirectories of
-          /usr/lib/{lua,perl5,php,python&python2-majorver;,python&python3-majorver;,tcl8.6}.
+          /usr/lib/{lua,perl5,php,<!--python&python2-majorver;-->,python&python3-majorver;,tcl8.6}.
           Unfortunately, some libraries are duplicated.
         </seg>
         <seg>
@@ -423,13 +421,12 @@
           graphml2gv, gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh,
           gvpack, gvpr, gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop,
           osage, patchwork, prune, sccmap, sfdp, tred, twopi,
-          unflatten, vimdot
+          unflatten, and vimdot
         </seg>
         <seg>
-          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so, 
-          libpathplan.so, libxdot.so, /usr/lib/graphviz 配下に数種のプラグイン,
-          /usr/lib/{lua,perl5,php,python&python2-majorver;,python&python3-majorver;,tcl8.6} 配下にサブディレクトリ,
-          ただしライブラリの中には重複しているものあり。
+          libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so,
+          libpathplan.so, libxdot.so, /usr/lib/graphviz 内に数種のプラグイン。
+          さらに /usr/lib/{lua,perl5,php,<!--python&python2-majorver;-->,python&python3-majorver;,tcl8.6} 配下のサブディレクトリにも数種あるが、ただしライブラリの中には重複しているものがある。
         </seg>
         <seg>
           /usr/include/graphviz,
@@ -479,11 +476,11 @@
 @z
 
 @x cluster
-            takes as input a graph in DOT format, finds node clusters
-            and augments the graph with this information
+            takes a graph in DOT format as input, finds node clusters
+            and then augments the graph with this information
 @y
-            takes as input a graph in DOT format, finds node clusters
-            and augments the graph with this information
+            takes a graph in DOT format as input, finds node clusters
+            and then augments the graph with this information
 @z
 
 @x diffimg

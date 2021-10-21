@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gst10-plugins-base-buildsize     "99 MB (with tests)">
-  <!ENTITY gst10-plugins-base-time          "1.0 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-base-buildsize     "100 MB (with tests)">
+  <!ENTITY gst10-plugins-base-time          "0.9 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-base-buildsize     "99 MB（テスト込み）">
-  <!ENTITY gst10-plugins-base-time          "1.0 SBU（parallelism=4 利用、テスト込み）">
+  <!ENTITY gst10-plugins-base-buildsize     "100 MB（テスト込み）">
+  <!ENTITY gst10-plugins-base-time          "0.9 SBU（parallelism=4 利用、テスト込み）">
 @z
 
 @x
@@ -111,10 +107,13 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="libgudev"/>,
+      <xref linkend="libjpeg"/>,
       <xref linkend="libogg"/>,
+      <xref linkend="libpng"/>,
       <xref linkend="libtheora"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="mesa"/>,
+      <xref linkend="pango"/>,
       <xref linkend="wayland-protocols"/>, and
       <xref linkend="xorg7-lib"/>
    </para>
@@ -126,10 +125,13 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="libgudev"/>,
+      <xref linkend="libjpeg"/>,
       <xref linkend="libogg"/>,
+      <xref linkend="libpng"/>,
       <xref linkend="libtheora"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="mesa"/>,
+      <xref linkend="pango"/>,
       <xref linkend="wayland-protocols"/>,
       <xref linkend="xorg7-lib"/>
    </para>
@@ -246,9 +248,9 @@
         </seg>
         <seg>
           libgstallocators-1.0.so, libgstapp-1.0.so, libgstaudio-1.0.so,
-          libgstfft-1.0.so, libgstgl-1.0.so, libgstpbutils-1.0.so, 
-          libgstriff-1.0.so, libgstrtp-1.0.so, libgstrtsp-1.0.so, 
-          libgstsdp-1.0.so, libgsttag-1.0.so, libgstvideo-1.0.so 
+          libgstfft-1.0.so, libgstgl-1.0.so, libgstpbutils-1.0.so,
+          libgstriff-1.0.so, libgstrtp-1.0.so, libgstrtsp-1.0.so,
+          libgstsdp-1.0.so, libgsttag-1.0.so, libgstvideo-1.0.so,
           and several plugins under /usr/lib/gstreamer-1.0
         </seg>
         <seg>
@@ -262,9 +264,9 @@
         </seg>
         <seg>
           libgstallocators-1.0.so, libgstapp-1.0.so, libgstaudio-1.0.so,
-          libgstfft-1.0.so, libgstgl-1.0.so, libgstpbutils-1.0.so, 
-          libgstriff-1.0.so, libgstrtp-1.0.so, libgstrtsp-1.0.so, 
-          libgstsdp-1.0.so, libgsttag-1.0.so, libgstvideo-1.0.so 
+          libgstfft-1.0.so, libgstgl-1.0.so, libgstpbutils-1.0.so,
+          libgstriff-1.0.so, libgstrtp-1.0.so, libgstrtsp-1.0.so,
+          libgstsdp-1.0.so, libgsttag-1.0.so, libgstvideo-1.0.so,
           and several plugins under /usr/lib/gstreamer-1.0
         </seg>
         <seg>

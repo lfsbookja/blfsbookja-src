@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "194 MB (add 5 MB for tests)">
-  <!ENTITY glib2-time          "0.6 SBU (add 1.0 SBU for tests; both using parallelism=4)">
+  <!ENTITY glib2-buildsize     "130 MB (add 6 MB for tests)">
+  <!ENTITY glib2-time          "0.5 SBU (add 0.5 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY glib2-buildsize     "194 MB（テスト実施時はさらに 5 MB）">
-  <!ENTITY glib2-time          "0.6 SBU（テスト実施時はさらに 1.0 SBU、いずれも paralleism=4）">
+  <!ENTITY glib2-buildsize     "130 MB（テスト実施時はさらに 6 MB）">
+  <!ENTITY glib2-time          "0.5 SBU（テスト実施時はさらに 0.5 SBU、いずれも paralleism=4）">
 @z
 
 @x
@@ -105,7 +105,7 @@
         (both may be used in some tests),
       <xref linkend="gdb"/> (for bindings),
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>, 
+      <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/> (to build API documentation),
       <xref linkend="glib-networking"/> (for some tests, but this is a circular
       dependency), and
@@ -118,7 +118,7 @@
         (両者ともに各種テストにて用いられる),
       <xref linkend="gdb"/> (バインディングのため),
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>, 
+      <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/> (API ドキュメント生成のため),
       <xref linkend="glib-networking"/> (一部のテストのため、ただし循環依存性あり),
       <xref linkend="sysprof"/>
@@ -193,7 +193,7 @@
 @z
 
 @x
-      You should now install <xref linkend="desktop-file-utils"/> and 
+      You should now install <xref linkend="desktop-file-utils"/> and
       <xref linkend="shared-mime-info"/> and proceed to
       run the test suite.
 @y
@@ -202,9 +202,14 @@
 
 @x
       To test the results, after having installed the package, issue:
-      <command>ninja test</command>.
+      <command>ninja test</command>. One test named
+      <literal>gio / file</literal> is known to fail if the test is run as
+      the <systemitem class="username">root</systemitem> user.
 @y
       ビルド結果をテストする場合は、本パッケージをインストールした後に <command>ninja test</command> を実行します。
+      One test named
+      <literal>gio / file</literal> is known to fail if the test is run as
+      the <systemitem class="username">root</systemitem> user.
 @z
 
 @x
@@ -219,14 +224,6 @@
 @y
       <parameter>-Dman=true</parameter>: This switch causes the
       build to create and install the package man pages.
-@z
-
-@x
-      <parameter>-Dselinux=disabled</parameter>: This switch disables
-      support for selinux which is not supported in BLFS.
-@y
-      <parameter>-Dselinux=disabled</parameter>: This switch disables
-      support for selinux which is not supported in BLFS.
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -158,7 +154,8 @@
       some of the tests to run.--> If you have a former version of MIT Kerberos V5
       installed, it may happen that the test suite may pick up the installed
       versions of the libraries, rather than the newly built ones. If so, it is
-      better to run the tests after the installation.
+      better to run the tests after the installation. Some tests may fail with
+      the latest version of dejagnu and glibc.
       <!-- Note: on my laptop -j8 fails but -j1 passes -->
 @y
       To test the build, issue as the <systemitem
@@ -168,7 +165,8 @@
       some of the tests to run.--> If you have a former version of MIT Kerberos V5
       installed, it may happen that the test suite may pick up the installed
       versions of the libraries, rather than the newly built ones. If so, it is
-      better to run the tests after the installation.
+      better to run the tests after the installation. Some tests may fail with
+      the latest version of dejagnu and glibc.
       <!-- Note: on my laptop -j8 fails but -j1 passes -->
 @z
 

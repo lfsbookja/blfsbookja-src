@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -216,10 +212,10 @@
 @z
 
 @x wnckprop-1
-            Prints, modifies, or interacts with  the properties of a 
+            Prints, modifies, or interacts with the properties of a
             screen/workspace/window
 @y
-            Prints, modifies, or interacts with  the properties of a 
+            Prints, modifies, or interacts with the properties of a
             screen/workspace/window
 @z
 

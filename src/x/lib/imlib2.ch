@@ -87,8 +87,7 @@
     <para role="optional">
       <xref linkend="libpng"/>,
       <xref linkend="libjpeg"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="giflib"/>, and
+      <xref linkend="libtiff"/>, and
       <ulink url="https://sourceforge.net/projects/mad">libid3tag</ulink>
     </para>
 @y
@@ -97,7 +96,6 @@
       <xref linkend="libpng"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="giflib"/>,
       <ulink url="https://sourceforge.net/projects/mad">libid3tag</ulink>
     </para>
 @z

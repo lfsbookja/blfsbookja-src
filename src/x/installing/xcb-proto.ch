@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -144,12 +140,10 @@
         <seg>None</seg>
         <seg>None</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/xcb and
-             <envar>$XORG_PREFIX</envar>/lib/python&python2-majorver;/site-packages/xcbgen or
              <envar>$XORG_PREFIX</envar>/lib/python&python3-majorver;/site-packages/xcbgen</seg>
 @y
         <seg>&None;</seg>
         <seg>&None;</seg>
         <seg><envar>$XORG_PREFIX</envar>/share/xcb,
-             <envar>$XORG_PREFIX</envar>/lib/python&python2-majorver;/site-packages/xcbgen または
              <envar>$XORG_PREFIX</envar>/lib/python&python3-majorver;/site-packages/xcbgen</seg>
 @z

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -128,12 +124,14 @@
 @x
     <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="sqlite"/> and
+      <xref linkend="libnsl"/>,
+      <xref linkend="sqlite"/>, and
       <xref linkend="tk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (For Additional Modules)</bridgehead>
     <para role="optional">
+      <xref linkend="libnsl"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="tk"/>
     </para>

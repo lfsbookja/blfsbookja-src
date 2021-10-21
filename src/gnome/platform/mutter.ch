@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY mutter-time          "1.8 SBU (Using parallelism=4)">
+  <!ENTITY mutter-time          "2.1 SBU (Using parallelism=4)">
 @y
-  <!ENTITY mutter-time          "1.8 SBU（parallelism=4 利用時）">
+  <!ENTITY mutter-time          "2.1 SBU（parallelism=4 利用時）">
 @z
 
 @x

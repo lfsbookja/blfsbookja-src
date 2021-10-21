@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -78,6 +74,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <!-- <xref linkend="tcl"/> and -->
+      <xref linkend="libnsl"/> and
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
 
       <!--,
@@ -90,6 +87,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <!-- <xref linkend="tcl"/> and -->
+      <xref linkend="libnsl"/> and
       <xref linkend="sharutils"/> (for the <command>uudecode</command> command)
 
       <!--,

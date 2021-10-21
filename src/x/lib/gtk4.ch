@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gtk4-buildsize     "892 MB (138 MB installed, add 58 MB for tests)">
-  <!ENTITY gtk4-time          "1.1 SBU (using parallelism=4, add 0.3 SBU for tests)">
+  <!ENTITY gtk4-buildsize     "670 MB (76 MB installed, add 10 MB for tests)">
+  <!ENTITY gtk4-time          "1.1 SBU (using parallelism=4, add 0.5 SBU for tests)">
 @y
-  <!ENTITY gtk4-buildsize     "892 MB (138 MB installed, add 58 MB for tests)">
-  <!ENTITY gtk4-time          "1.1 SBU (using parallelism=4, add 0.3 SBU for tests)">
+  <!ENTITY gtk4-buildsize     "670 MB (76 MB installed, add 10 MB for tests)">
+  <!ENTITY gtk4-time          "1.1 SBU (using parallelism=4, add 0.5 SBU for tests)">
 @z
 
 @x
@@ -194,17 +194,13 @@
 @z
 
 @x
-      Running the test suite is not recommended unless you are in a Wayland
-      session. If you are not in a Wayland session, around 625 tests will fail.
-      Under a Wayland session, the number decreases to around 70. If you are
-      in a Wayland session and wish to run the tests, issue:
-      <command>ninja test</command>.
+      To run the tests, issue: <command>meson test --setup x11</command>. If you
+      are in a Wayland session, replace x11 with wayland. 8 tests are known to
+      fail, out of 730.
 @y
-      Running the test suite is not recommended unless you are in a Wayland
-      session. If you are not in a Wayland session, around 625 tests will fail.
-      Under a Wayland session, the number decreases to around 70. If you are
-      in a Wayland session and wish to run the tests, issue:
-      <command>ninja test</command>.
+      To run the tests, issue: <command>meson test --setup x11</command>. If you
+      are in a Wayland session, replace x11 with wayland. 8 tests are known to
+      fail, out of 730.
 @z
 
 @x
@@ -216,14 +212,14 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
-      <parameter>-Dbroadway_backend=true</parameter>: This switch enables the
+      <parameter>-Dbroadway-backend=true</parameter>: This switch enables the
       HTML5 GDK backend.
 @y
-      <parameter>-Dbroadway_backend=true</parameter>: This switch enables the
+      <parameter>-Dbroadway-backend=true</parameter>: This switch enables the
       HTML5 GDK backend.
 @z
 
@@ -267,14 +263,6 @@
       <option>-Dcolord=enabled</option>: Use this switch if you have
       <xref linkend="colord"/> installed and wish to use colord with the CUPS
       printing backend.
-@z
-
-@x
-      <option>-Dsassc=enabled</option>: Use this switch if you have
-      <xref linkend="sassc"/> installed and wish to rebuild the themes.
-@y
-      <option>-Dsassc=enabled</option>: Use this switch if you have
-      <xref linkend="sassc"/> installed and wish to rebuild the themes.
 @z
 
 @x

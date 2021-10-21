@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author: matsuand $
-## $Rev: 23 $
-## $Date:: 2018-08-23 16:57:07 +0900#$
-##
 BOOKdir = @abs_bookdir@/general/prog/perl-deps
 CHANGE_FILES = \
 	perl-algorithm-diff.ch \
@@ -68,6 +64,7 @@ CHANGE_FILES = \
 	perl-params-validationcompiler.ch \
 	perl-path-tiny.ch \
 	perl-role-tiny.ch \
+	perl-scalar-list-utils.ch \
 	perl-scope-guard.ch \
 	perl-specio.ch \
 	perl-sub-exporter-progressive.ch \

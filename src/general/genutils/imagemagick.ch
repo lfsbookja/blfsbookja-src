@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "203 MB (with typical dependencies; add 19 MB for checks)">
-  <!ENTITY imagemagick-time          "0.8 SBU (with typical dependencies; add 0.5 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "193 MB (with typical dependencies; add 20 MB for checks)">
+  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.6 SBU for checks, both using  parallelism=4)">
 @y
-  <!ENTITY imagemagick-buildsize     "203 MB (with typical dependencies; add 19 MB for checks)">
-  <!ENTITY imagemagick-time          "0.8 SBU (with typical dependencies; add 0.5 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "193 MB (with typical dependencies; add 20 MB for checks)">
+  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.6 SBU for checks, both using  parallelism=4)">
 @z
 
 @x
@@ -126,9 +122,10 @@
 @x
       The optional dependencies listed below should be installed if you need
       support for the specific format or the conversion tool the dependency
-      provides. Many of the dependencies' capabilities and uses are described in
+      provides. <!-- No such section in 7.1.0-4
+                Many of the dependencies' capabilities and uses are described in
       the <quote>MAGICK DELEGATES</quote> section of the
-      <filename>README.txt</filename> file located in the source tree.
+      <filename>README.txt</filename> file located in the source tree. -->
       Additional information about the dependencies can be found in the
       <filename>Install-unix.txt</filename> file located in the source tree as
       well as issuing the <command>./configure --help</command> command. A
@@ -138,9 +135,10 @@
 @y
       The optional dependencies listed below should be installed if you need
       support for the specific format or the conversion tool the dependency
-      provides. Many of the dependencies' capabilities and uses are described in
+      provides. <!-- No such section in 7.1.0-4
+                Many of the dependencies' capabilities and uses are described in
       the <quote>MAGICK DELEGATES</quote> section of the
-      <filename>README.txt</filename> file located in the source tree.
+      <filename>README.txt</filename> file located in the source tree. -->
       Additional information about the dependencies can be found in the
       <filename>Install-unix.txt</filename> file located in the source tree as
       well as issuing the <command>./configure --help</command> command. A
@@ -228,6 +226,7 @@
       <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
       <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
       (both needed if converting macOS heic images),
+      <ulink url="https://github.com/libjxl/libjxl/">libjxl</ulink>,
       <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
@@ -261,6 +260,7 @@
       <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
       <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
       (both needed if converting macOS heic images),
+      <ulink url="https://github.com/libjxl/libjxl/">libjxl</ulink>,
       <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
       <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
       <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
@@ -361,12 +361,13 @@
 @z
 
 @x
-      To test the installation, issue: <command>make check</command>. A more
+      To test the installation, issue: <command>make check</command>.
+              <!-- seems to have been dropped                         A more
       comprehensive test is the <application>ImageMagick</application>
       validation suite. If <command>make check</command> has not been executed,
       run <command>make tests/validate</command> to compile it.  Issue
       <command>tests/validate 2>&amp;1 | tee validate.log</command> to run the
-      validation suite. <!-- summary is last line of output
+      validation suite.--> <!-- summary is last line of output
        The result summary may be obtained with <command>grep
       "validation suite" validate.log</command>. -->
      <!-- I'm not convinced that Helvetica is required, I don't install the gs
@@ -378,12 +379,13 @@
       <xref linkend="gs"/> - that test, and one other, might fail, but all the
       validation can still pass.
 @y
-      To test the installation, issue: <command>make check</command>. A more
+      To test the installation, issue: <command>make check</command>.
+              <!-- seems to have been dropped                         A more
       comprehensive test is the <application>ImageMagick</application>
       validation suite. If <command>make check</command> has not been executed,
       run <command>make tests/validate</command> to compile it.  Issue
       <command>tests/validate 2>&amp;1 | tee validate.log</command> to run the
-      validation suite. <!-- summary is last line of output
+      validation suite.--> <!-- summary is last line of output
        The result summary may be obtained with <command>grep
       "validation suite" validate.log</command>. -->
      <!-- I'm not convinced that Helvetica is required, I don't install the gs

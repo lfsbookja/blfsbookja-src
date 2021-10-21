@@ -200,11 +200,13 @@
 @z
 
 @x
-      <command>sed -i 's/1000/999/' etc/useradd</command>: Make a minor change
-      to make the default useradd consistent with the LFS groups file.
+      <command>sed ... libmisc/salt.c</command> and
+      <command>sed ... libsubid/Makefile.am</command>: Fix a couple of errors
+      that were found after the package was released.
 @y
-      <command>sed -i 's/1000/999/' etc/useradd</command>: Make a minor change
-      to make the default useradd consistent with the LFS groups file.
+      <command>sed ... libmisc/salt.c</command> and
+      <command>sed ... libsubid/Makefile.am</command>: Fix a couple of errors
+      that were found after the package was released.
 @z
 
 @x
@@ -521,15 +523,10 @@
 @x
       A list of the installed files, along with their short descriptions can be
       found at
-      <phrase revision="sysv">
-      <ulink url="&lfs-root;/chapter08/shadow.html#contents-shadow"/></phrase>
-      <phrase revision="systemd">
-      <ulink url="&lfs-rootd;/chapter08/shadow.html#contents-shadow"/></phrase>.
+      <ulink url="&lfs-root;/chapter08/shadow.html#contents-shadow"/>.
 @y
-      インストールされるファイルの一覧および概略説明については <phrase revision="sysv">
-      <ulink url="&lfs-root;/chapter08/shadow.html#contents-shadow"/></phrase>
-      <phrase revision="systemd">
-      <ulink url="&lfs-rootd;/chapter08/shadow.html#contents-shadow"/></phrase> (日本語訳は <phrase revision="sysv">
+      インストールされるファイルの一覧および概略説明については <ulink
+      url="&lfs-root;/chapter08/shadow.html#contents-shadow"/> (日本語訳は <phrase revision="sysv">
       <ulink url="&lfsja-dev;/chapter08/shadow.html#contents-shadow"/></phrase>
       <phrase revision="systemd">
       <ulink url="&lfssysdja-dev;/chapter08/shadow.html#contents-shadow"/></phrase>) を参照してください。

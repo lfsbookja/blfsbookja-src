@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -91,7 +87,7 @@
     <para role="optional">
       <xref linkend="gnupg2"/>,
       <xref linkend="libgcrypt"/>, and
-      <xref linkend="openssh"/> (all three required for the testsuite)
+      <xref linkend="openssh"/> (all three are required for the testsuite)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>

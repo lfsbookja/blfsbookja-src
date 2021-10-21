@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libwacom-buildsize     "6.2 MB (with tests)">
+  <!ENTITY libwacom-buildsize     "7.6 MB (with tests)">
   <!ENTITY libwacom-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libwacom-buildsize     "6.2 MB（テスト込み）">
+  <!ENTITY libwacom-buildsize     "7.6 MB（テスト込み）">
   <!ENTITY libwacom-time          "&LessThan1;0.1 SBU&LessThan2;（テスト込み）">
 @z
 
@@ -162,14 +162,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>-Dudev-dir=/lib/udev</parameter>: This parameter sets the
-      proper installation directory for udev rules.
-@y
-      <parameter>-Dudev-dir=/lib/udev</parameter>:
-      本パラメーターは udev ルールのインストール先を適切に設定します。
 @z
 
 @x

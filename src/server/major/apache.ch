@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -343,7 +339,8 @@
         <seg>
           ab,           apachectl, apxs,     checkgid, dbmmanage, fcgistarter,
           htcacheclean, htdbm,     htdigest, htpasswd, httpd,
-          httxt2dbm,    logresolve,      rotatelogs, and suexec
+          httxt2dbm,    logresolve, and  rotatelogs
+          <!-- not executable from path, and suexec -->
         </seg>
         <seg>
           Several libraries under /usr/lib/httpd/modules/
@@ -361,7 +358,8 @@
         <seg>
           ab,           apachectl, apxs,     checkgid, dbmmanage, fcgistarter,
           htcacheclean, htdbm,     htdigest, htpasswd, httpd,
-          httxt2dbm,    logresolve,      rotatelogs, suexec
+          httxt2dbm,    logresolve, rotatelogs
+          <!-- not executable from path, and suexec -->
         </seg>
         <seg>
           Several libraries under /usr/lib/httpd/modules/

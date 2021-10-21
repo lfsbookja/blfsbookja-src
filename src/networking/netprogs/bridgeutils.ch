@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -207,15 +203,15 @@
 @z
 
 @x
-        Other SERVICE combinations are possible, for example,
-        SERVICES="bridge dhcp".  In that case, the address parameters
-        are not needed, but do not interfere if present. The
+        Other <envar>SERVICE</envar> combinations are possible, for example,
+        <code>SERVICE="bridge dhcp"</code>.  In that case, the address
+        parameters are not needed, but do not interfere if present. The
         bridge service may also be used alone, but will require
         additional subsequent configuration.
 @y
-        Other SERVICE combinations are possible, for example,
-        SERVICES="bridge dhcp".  In that case, the address parameters
-        are not needed, but do not interfere if present. The
+        Other <envar>SERVICE</envar> combinations are possible, for example,
+        <code>SERVICE="bridge dhcp"</code>.  In that case, the address
+        parameters are not needed, but do not interfere if present. The
         bridge service may also be used alone, but will require
         additional subsequent configuration.
 @z

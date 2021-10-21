@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -193,13 +189,13 @@
 @z
 
 @x
-       To run the test suite, issue: <command>make test</command>. 
-       <!-- Three tests, 1700, 1701, and 1702, are known to fail due to
-       missing executables from the nghttp2 package.-->
+       To run the test suite, issue: <command>make test</command>.
+<!--       Four tests, 1139, 1140, 1173, and 1177, are known to fail due to
+       missing executables from the optional dependencies.-->
 @y
-       To run the test suite, issue: <command>make test</command>. 
-       <!-- Three tests, 1700, 1701, and 1702, are known to fail due to
-       missing executables from the nghttp2 package.-->
+       To run the test suite, issue: <command>make test</command>.
+<!--       Four tests, 1139, 1140, 1173, and 1177, are known to fail due to
+       missing executables from the optional dependencies.-->
 @z
 
 @x

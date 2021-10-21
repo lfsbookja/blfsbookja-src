@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gjs-buildsize     "66 MB (with tests)">
-  <!ENTITY gjs-time          "0.8 SBU (with tests)">
+  <!ENTITY gjs-buildsize     "27 MB (with tests)">
+  <!ENTITY gjs-time          "0.9 SBU (with tests)">
 @y
-  <!ENTITY gjs-buildsize     "66 MB（テスト込み）">
-  <!ENTITY gjs-time          "0.8 SBU（テスト込み）">
+  <!ENTITY gjs-buildsize     "27 MB（テスト込み）">
+  <!ENTITY gjs-time          "0.9 SBU（テスト込み）">
 @z
 
 @x
@@ -103,7 +103,7 @@
       <xref linkend="gtk4"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended (required for GNOME)</bridgehead>
+    <bridgehead renderas="sect4">&Recommended; (GNOME に必要)</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/>,
       <xref linkend="gtk4"/>
@@ -152,21 +152,25 @@
 @x
       To test the results, issue: <command>ninja test</command>. The
       <application>GTK</application> and <application>Cairo</application>
-      tests will fail if not running in an Xorg session. <!--Additionally, four
-      tests are currently known to fail:
-      <filename>gjs:C / API tests</filename>,
-      <filename>gjs:JS / GIMarshalling</filename>,
-      <filename>gjs:JS / Regress</filename>, and
-      <filename>gjs:JS / Gtk3</filename>.-->
+      tests will fail if not running in an Xorg session. The
+      <filename>gjs:JS / Gtk4</filename> test is known to exit with an ERROR
+      on some systems.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       Xorg セッション内でテスト実行しないと <application>GTK</application> と <application>Cairo</application> のテストは失敗します。
+      <filename>gjs:JS / Gtk4</filename> というテストは、特定のシステムにおいて ERROR を返して終了します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
 @z
 
 @x

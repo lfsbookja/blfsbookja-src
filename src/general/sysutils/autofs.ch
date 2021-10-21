@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -200,14 +196,14 @@
 
 @x
         <filename>/etc/sysconfig/autofs.conf</filename>,
-        <filename>/etc/auto.master</filename>,
-        <filename>/etc/auto.misc</filename>, and
-        <filename>/etc/auto.net</filename>
+        <filename>/etc/autofs/auto.master</filename>,
+        <filename>/etc/autofs/auto.misc</filename>, and
+        <filename>/etc/autofs/auto.net</filename>
 @y
         <filename>/etc/sysconfig/autofs.conf</filename>,
-        <filename>/etc/auto.master</filename>,
-        <filename>/etc/auto.misc</filename>,
-        <filename>/etc/auto.net</filename>
+        <filename>/etc/autofs/auto.master</filename>,
+        <filename>/etc/autofs/auto.misc</filename>,
+        <filename>/etc/autofs/auto.net</filename>
 @z
 
 @x
@@ -234,12 +230,12 @@
         This file creates a new media directory,
         <filename>/media/auto</filename> that will overlay any existing
         directory of the same name.  In this example, the file,
-        <filename>/etc/auto.misc</filename>, has a line:
+        <filename>/etc/autofs/auto.misc</filename>, has a line:
 @y
         This file creates a new media directory,
         <filename>/media/auto</filename> that will overlay any existing
         directory of the same name.  In this example, the file,
-        <filename>/etc/auto.misc</filename>, has a line:
+        <filename>/etc/autofs/auto.misc</filename>, has a line:
 @z
 
 @x
@@ -349,11 +345,11 @@
 @x
         <application>autofs</application> installs its own
         boot script, but it has no capability for logging or visual conformance
-        with other BLFS scripts.
+        with other BLFS scripts. It will be replaced by an enhanced version.
 @y
         <application>autofs</application> installs its own
         boot script, but it has no capability for logging or visual conformance
-        with other BLFS scripts.
+        with other BLFS scripts. It will be replaced by an enhanced version.
 @z
 
 @x
@@ -426,7 +422,7 @@
           mount_ext3.so, mount_ext4.so, mount_generic.so, mount_nfs.so,
           mount_nfs4.so, parse_amd.so, and parse_sun.so
            </seg>
-        <seg>/lib/autofs</seg>
+        <seg>/usr/lib/autofs, /etc/autofs</seg>
 @y
         <seg>automount</seg>
         <seg>
@@ -437,7 +433,7 @@
           mount_ext3.so, mount_ext4.so, mount_generic.so, mount_nfs.so,
           mount_nfs4.so, parse_amd.so, parse_sun.so
            </seg>
-        <seg>/lib/autofs</seg>
+        <seg>/usr/lib/autofs, /etc/autofs</seg>
 @z
 
 @x

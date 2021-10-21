@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libsoup-buildsize     "24 MB (with tests)"> 
-  <!ENTITY libsoup-time          "0.3 SBU (Using parallelism=4; with tests)">
+  <!ENTITY libsoup-buildsize     "15 MB (with tests)">
+  <!ENTITY libsoup-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libsoup-buildsize     "24 MB (テスト込み)">
-  <!ENTITY libsoup-time          "0.3 SBU (parallelism=4 利用、テスト込み)">
+  <!ENTITY libsoup-buildsize     "15 MB (テスト込み)">
+  <!ENTITY libsoup-time          "0.2 SBU (parallelism=4 利用、テスト込み)">
 @z
 
 @x
@@ -107,15 +103,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="sysprof"/>, and
+      <xref linkend="gobject-introspection"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="sysprof"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -126,9 +120,11 @@
       <xref linkend="apache"/> (required to run the test suite),
       <xref linkend="brotli"/>,
       <xref linkend="curl"/> (required to run the test suite),
+      <xref linkend="sysprof"/> (for profiling),
       <xref linkend="mitkrb"/> (required to run the test suite),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="php"/> compiled with XMLRPC-EPI <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
+         <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
+      <xref linkend="php"/> compiled with XMLRPC-EPI
       support (only used for the XMLRPC regression tests), and
       <xref linkend="samba"/> (ntlm_auth is required to run the test suite)
     </para>
@@ -138,11 +134,13 @@
       <xref linkend="apache"/> (テストスイート実行時に必要),
       <xref linkend="brotli"/>,
       <xref linkend="curl"/> (テストスイート実行時に必要),
+      <xref linkend="sysprof"/> (for profiling),
       <xref linkend="mitkrb"/> (テストスイート実行時に必要),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="php"/> compiled with XMLRPC-EPI <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
+         <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
+      <xref linkend="php"/> compiled with XMLRPC-EPI
       support (only used for the XMLRPC regression tests),
-      <xref linkend="samba"/> (テストスイートを実行する場合は ntlm_auth が必要)
+      <xref linkend="samba"/> (ntlm_auth がテストスイート実行時に必要)
     </para>
 @z
 

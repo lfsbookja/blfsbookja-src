@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY evolution-data-server-buildsize     "214 MB (with tests)">
-  <!ENTITY evolution-data-server-time          "0.9 SBU (using parallelism=4, with tests)">
+  <!ENTITY evolution-data-server-buildsize     "215 MB (with tests)">
+  <!ENTITY evolution-data-server-time          "1.2 SBU (using parallelism=4, with tests)">
 @y
-  <!ENTITY evolution-data-server-buildsize     "214 MB（テスト込み）">
-  <!ENTITY evolution-data-server-time          "0.9 SBU（parallelism=4 利用時、テスト込み）">
+  <!ENTITY evolution-data-server-buildsize     "215 MB（テスト込み）">
+  <!ENTITY evolution-data-server-time          "1.2 SBU（parallelism=4 利用時、テスト込み）">
 @z
 
 @x

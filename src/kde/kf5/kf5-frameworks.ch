@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY kf5-buildsize     "1.3 GB (238 MB installed)">
+  <!ENTITY kf5-buildsize     "1.3 GB (241 MB installed)">
   <!ENTITY kf5-time          "14 SBU (using parallelism=4)">
 @y
-  <!ENTITY kf5-buildsize     "1.3 GB（インストールは 238 MB）">
+  <!ENTITY kf5-buildsize     "1.3 GB（インストールは 241 MB）">
   <!ENTITY kf5-time          "14 SBU（parallelism=4 利用）">
 @z
 
@@ -196,18 +196,20 @@
 @z
 
 @x
-  <bridgehead renderas="sect4">Runtime dependencies for kapidox</bridgehead>
-  <para role="optional">
-    <xref role="runtime" linkend="doxygen"/>,
-    <xref role="runtime" linkend="Jinja2"/>, and
-    <xref role="runtime" linkend="PyYAML"/>
+  <bridgehead renderas="sect4">Additional recommended dependencies for kapidox</bridgehead>
+  <para role="recommended">
+    <xref role="runtime" linkend="doxygen"/> (Run time),
+    <xref linkend="Jinja2"/>, and
+    <xref linkend="PyYAML"/> (if those python modules are not present at build
+    time, they will be downloaded)
   </para>
 @y
-  <bridgehead renderas="sect4">Runtime dependencies for kapidox</bridgehead>
-  <para role="optional">
-    <xref role="runtime" linkend="doxygen"/>,
-    <xref role="runtime" linkend="Jinja2"/>, and
-    <xref role="runtime" linkend="PyYAML"/>
+  <bridgehead renderas="sect4">Additional recommended dependencies for kapidox</bridgehead>
+  <para role="recommended">
+    <xref role="runtime" linkend="doxygen"/> (Run time),
+    <xref linkend="Jinja2"/>, and
+    <xref linkend="PyYAML"/> (if those python modules are not present at build
+    time, they will be downloaded)
   </para>
 @z
 

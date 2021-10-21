@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY vte-buildsize     "10 MB (with tests)">
+  <!ENTITY vte-buildsize     "13 MB (with tests)">
   <!ENTITY vte-time          "0.3 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY vte-buildsize     "10 MB（テスト込み）">
+  <!ENTITY vte-buildsize     "13 MB（テスト込み）">
   <!ENTITY vte-time          "0.3 SBU（parallelism=4 利用時、テスト込み）">
 @z
 
@@ -118,22 +118,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="fribidi"/>,
-      <xref linkend="gtk-doc"/>, and
-      <xref linkend="gtk4"/>
-      <!-- Does not currently work unless you pass -Dgtk4=true to meson. However,
-           it's not looking for gtk-4, it's looking for gtk+-4, so it will still
-           fail to build for now.-->
+      <xref linkend="fribidi"/> and
+      <xref linkend="gtk-doc"/>
+<!--      <xref linkend="gtk4"/>
+           The  -Dgtk4=true option just returns
+           'not supported on this branch; use git master' -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="fribidi"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="gtk4"/>
-      <!-- Does not currently work unless you pass -Dgtk4=true to meson. However,
-           it's not looking for gtk-4, it's looking for gtk+-4, so it will still
-           fail to build for now.-->
+      <xref linkend="gtk-doc"/>
+<!--      <xref linkend="gtk4"/>
+           The  -Dgtk4=true option just returns
+           'not supported on this branch; use git master' -->
     </para>
 @z
 
@@ -183,11 +181,11 @@
 @z
 
 @x
-      <parameter>-Dfribidi=false</parameter>: Omit this switch if want to enable 
-      bidirectional capabilities.
+      <parameter>-Dfribidi=false</parameter>: Omit this switch if you want
+      to enable bidirectional capabilities.
 @y
-      <parameter>-Dfribidi=false</parameter>: Omit this switch if want to enable 
-      bidirectional capabilities.
+      <parameter>-Dfribidi=false</parameter>: Omit this switch if you want
+      to enable bidirectional capabilities.
 @z
 
 @x
@@ -239,7 +237,7 @@
         </seg>
         <seg>
           /usr/include/vte-2.&vte-nano; and
-          /usr/share/gtk-doc/html/vte-2.&vte-nano;
+          (optional) /usr/share/gtk-doc/html/vte-2.&vte-nano;
         </seg>
 @y
         <seg>
@@ -250,7 +248,7 @@
         </seg>
         <seg>
           /usr/include/vte-2.&vte-nano;,
-          /usr/share/gtk-doc/html/vte-2.&vte-nano;
+          (任意) /usr/share/gtk-doc/html/vte-2.&vte-nano;
         </seg>
 @z
 

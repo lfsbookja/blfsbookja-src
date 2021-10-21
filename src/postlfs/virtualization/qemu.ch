@@ -407,37 +407,41 @@
 
 @x
         <seg>
-          ivshmem-client,
-          ivshmem-server,
+          elf2dmp,
           qemu (symlink),
+          qemu-edid,
           qemu-ga,
           qemu-img,
           qemu-io,
+          qemu-keymap,
           qemu-nbd,
-          qemu-system-&lt;arch&gt;, and
-          virtfs-proxy-helper
+          qemu-pr-helper,
+          qemu-storage-daemon, and
+          qemu-system-&lt;arch&gt;
         </seg>
         <seg>None</seg>
         <seg>
           /usr/share/qemu and
-          /usr/share/doc/qemu-&qemu-version;
+          /usr/share/doc/qemu-&qemu-version; (optional)
         </seg>
 @y
         <seg>
-          ivshmem-client,
-          ivshmem-server,
+          elf2dmp,
           qemu (シンボリックリンク),
+          qemu-edid,
           qemu-ga,
           qemu-img,
           qemu-io,
+          qemu-keymap,
           qemu-nbd,
-          qemu-system-&lt;arch&gt;,
-          virtfs-proxy-helper
+          qemu-pr-helper,
+          qemu-storage-daemon,
+          qemu-system-&lt;arch&gt;
         </seg>
         <seg>&None;</seg>
         <seg>
           /usr/share/qemu,
-          /usr/share/doc/qemu-&qemu-version;
+          /usr/share/doc/qemu-&qemu-version; (任意)
         </seg>
 @z
 

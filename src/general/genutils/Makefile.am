@@ -18,7 +18,6 @@ CHANGE_FILES = \
         iso-codes.ch          \
         lsof.ch               \
 	pinentry.ch           \
-	rarian.ch             \
 	rep-gtk.ch            \
 	screen.ch             \
         shared-mime-info.ch   \

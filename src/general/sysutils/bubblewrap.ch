@@ -3,21 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY bubblewrap-time          "less than 0.1 SBU">
-@y
-  <!ENTITY bubblewrap-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -102,9 +91,17 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      Next, if you desire to run the test suite, fix an issue caused by the
+      merged-/usr configuration in LFS:
 @y
-      &notTestSuite;
+      Next, if you desire to run the test suite, fix an issue caused by the
+      merged-/usr configuration in LFS:
+@z
+
+@x
+      To test the results, issue: <command>make check</command>
+@y
+      To test the results, issue: <command>make check</command>
 @z
 
 @x

@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY samba-buildsize     "623 MB (add 381 MB for quicktest)">
-  <!ENTITY samba-time          "3.2 SBU (using parallelism=4; add 4.8 SBU for quicktest)">
-@y
-  <!ENTITY samba-buildsize     "623 MB (add 381 MB for quicktest)">
-  <!ENTITY samba-time          "3.2 SBU (using parallelism=4; add 4.8 SBU for quicktest)">
-@z
-
-@x
     <title>Introduction to Samba</title>
 @y
     <title>&IntroductionTo1;Samba&IntroductionTo2;</title>
@@ -251,8 +243,7 @@
 @z
 
 @x
-      To test the results, as the
-      <systemitem class="username">root</systemitem> user, issue:
+      To test the results, issue:
       <command>PATH=$PWD/pyvenv/bin:$PATH make quicktest</command>. The test
       suite will produce lines that look like failures, but these are innocuous.
       The last few lines of output should report <emphasis>"ALL OK"</emphasis>
@@ -260,8 +251,7 @@
       <filename class="directory">./st/summary</filename>. With Samba-4.14.4,
       many tests are known to fail.
 @y
-      ビルド結果をテストする場合は <systemitem
-      class="username">root</systemitem> ユーザーになって <command>PATH=$PWD/pyvenv/bin:$PATH make quicktest</command> を実行します。
+      ビルド結果をテストする場合は、<command>PATH=$PWD/pyvenv/bin:$PATH make quicktest</command> を実行します。
       テストスイートの実行により複数行が出力され、あたかもエラーのように見えますが、これは問題ありません。
       出力の最後に <emphasis>"ALL OK"</emphasis> と表示されるのでテスト実行が成功したことが分かります。
       テストに失敗した場合は <filename class="directory">./st/summary</filename> を見て確認できます。
@@ -512,7 +502,7 @@
 @x
           The values in this example specify that the computer belongs to a
           Windows workgroup named
-          <quote><replaceable>MYGROUP</replaceable></quote>, uses the
+          <quote><replaceable>WORKGROUP</replaceable></quote>, uses the
           <quote><replaceable>cp850</replaceable></quote> character set on the
           wire when talking to MS-DOS and MS Windows 9x, and that the filenames
           are stored in the <quote><replaceable>ISO-8859-1</replaceable></quote>
@@ -525,7 +515,7 @@
 @y
           The values in this example specify that the computer belongs to a
           Windows workgroup named
-          <quote><replaceable>MYGROUP</replaceable></quote>, uses the
+          <quote><replaceable>WORKGROUP</replaceable></quote>, uses the
           <quote><replaceable>cp850</replaceable></quote> character set on the
           wire when talking to MS-DOS and MS Windows 9x, and that the filenames
           are stored in the <quote><replaceable>ISO-8859-1</replaceable></quote>

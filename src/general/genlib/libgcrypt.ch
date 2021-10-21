@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libgcrypt-buildsize     "138 MB (with tests; add 4 MB for documentation)">
-  <!ENTITY libgcrypt-time          "0.3 SBU (with documentation; add 0.5 SBU for tests)">
+  <!ENTITY libgcrypt-buildsize     "135 MB (with tests and pdf documentation)">
+  <!ENTITY libgcrypt-time          "0.4 SBU (with documentation; add 0.5 SBU for tests)">
 @y
-  <!ENTITY libgcrypt-buildsize     "138 MB (テスト込み、ドキュメント生成時はさらに 4 MB)">
-  <!ENTITY libgcrypt-time          "0.3 SBU (ドキュメント込み、テスト実施時はさらに 0.5 SBU)">
+  <!ENTITY libgcrypt-buildsize     "135 MB (テストと pdf 生成込み)">
+  <!ENTITY libgcrypt-time          "0.4 SBU (ドキュメント込み、テスト実施時はさらに 0.5 SBU)">
 @z
 
 @x

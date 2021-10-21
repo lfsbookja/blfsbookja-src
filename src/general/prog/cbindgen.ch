@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY cbindgen-buildsize     "123 MB (add 533 MB for tests)">
-  <!ENTITY cbindgen-time          "0.6 SBU (add 0.4 SBU for tests), both on a 4-core machine">
+  <!ENTITY cbindgen-buildsize     "124 MB (add 568 MB for tests)">
+  <!ENTITY cbindgen-time          "0.8 SBU (add 0.4 SBU for tests), both on a 4-core machine">
 @y
-  <!ENTITY cbindgen-buildsize     "123 MB (add 533 MB for tests)">
-  <!ENTITY cbindgen-time          "0.6 SBU (add 0.4 SBU for tests), both on a 4-core machine">
+  <!ENTITY cbindgen-buildsize     "124 MB (add 568 MB for tests)">
+  <!ENTITY cbindgen-time          "0.8 SBU (add 0.4 SBU for tests), both on a 4-core machine">
 @z
 
 @x

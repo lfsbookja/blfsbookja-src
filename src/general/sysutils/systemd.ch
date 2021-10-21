@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY systemd-buildsize     "285 MB (with tests)">
-  <!ENTITY systemd-time          "2.2 SBU (with tests)">
-@y
-  <!ENTITY systemd-buildsize     "285 MB（テスト込み）">
-  <!ENTITY systemd-time          "2.2 SBU（テスト込み）">
-@z
-
-@x
     <title>Introduction to systemd</title>
 @y
     <title>&IntroductionTo1;systemd&IntroductionTo2;</title>
@@ -104,11 +96,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="Jinja2"/> and
       <xref linkend="linux-pam"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="Jinja2"/>,
       <xref linkend="linux-pam"/>
     </para>
 @z
@@ -140,6 +134,7 @@
       <xref linkend="libseccomp"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="make-ca"/>,
+      <xref linkend="p11-kit"/>,
       <xref linkend="pcre2"/>,
       <xref linkend="qemu"/>,
       <xref linkend="qrencode"/>,
@@ -172,6 +167,7 @@
       <xref linkend="libseccomp"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="make-ca"/>,
+      <xref linkend="p11-kit"/>,
       <xref linkend="pcre2"/>,
       <xref linkend="qemu"/>,
       <xref linkend="qrencode"/>,
@@ -222,20 +218,20 @@
 @z
 
 @x
-      Apply a patch to fix a build issue with meson-0.57.2 and higher, as well
-      as to allow systemd-rfkill to work correctly with Linux-5.11 and higher.
+      Apply a patch to fix a security vulnerability:
 @y
-      Apply a patch to fix a build issue with meson-0.57.2 and higher, as well
-      as to allow systemd-rfkill to work correctly with Linux-5.11 and higher.
+      Apply a patch to fix a security vulnerability:
 @z
 
 @x
-      Remove an unneeded group,
-      <systemitem class="groupname">render</systemitem>, from the default udev
+      Remove two unneeded groups,
+      <systemitem class="groupname">render</systemitem> and
+      <systemitem class="groupname">sgx</systemitem>, from the default udev
       rules:
 @y
-      Remove an unneeded group,
-      <systemitem class="groupname">render</systemitem>, from the default udev
+      Remove two unneeded groups,
+      <systemitem class="groupname">render</systemitem> and
+      <systemitem class="groupname">sgx</systemitem>, from the default udev
       rules:
 @z
 
@@ -258,15 +254,13 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. <!--One test,
-      <filename>udev-test</filename> (test 273) fails due to changes in 
-      the Linux 5.3+ kernel. It does not affect the package's
-      functionality. NO LONGER APPLICABLE AS OF 244 -->
+      To test the results, issue:
+      <command>PATH+=:/usr/sbin ninja test</command>.
+      <!-- One test named test-repart needs sfdisk, which is in /usr/sbin. -->
 @y
-      To test the results, issue: <command>ninja test</command>. <!--One test,
-      <filename>udev-test</filename> (test 273) fails due to changes in 
-      the Linux 5.3+ kernel. It does not affect the package's
-      functionality. NO LONGER APPLICABLE AS OF 244 -->
+      To test the results, issue:
+      <command>PATH+=:/usr/sbin ninja test</command>.
+      <!-- One test named test-repart needs sfdisk, which is in /usr/sbin. -->
 @z
 
 @x

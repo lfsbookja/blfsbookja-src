@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gobject-introspection-buildsize     "64 MB (with tests)">
-  <!ENTITY gobject-introspection-time          "0.2 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gobject-introspection-buildsize     "55 MB (with tests)">
+  <!ENTITY gobject-introspection-time          "0.2 SBU (With tests; both using parallelism=4)">
 @y
-  <!ENTITY gobject-introspection-buildsize     "64 MB (テスト込み)">
-  <!ENTITY gobject-introspection-time          "0.2 SBU (parallelism=4; テスト込み)">
+  <!ENTITY gobject-introspection-buildsize     "55 MB (テスト込み)">
+  <!ENTITY gobject-introspection-time          "0.2 SBU (テスト込み, いずれも parallelism=4 利用時)">
 @z
 
 @x

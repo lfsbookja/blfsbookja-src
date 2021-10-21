@@ -16,7 +16,8 @@ EXTRA_DIST = \
 	ipag.xml
 BOOKdir = @abs_bookdir@
 srcdir = @srcdir@
-srcs = general.ent packages.ent gnome.ent index.xml tidy.conf git-version.sh
+srcs = general.ent packages.ent gnome.ent index.xml tidy.conf git-version.sh \
+	 conditional.ent
 EXTRACLEANFILES = $(srcs)
 
 ROOT_ID =
@@ -55,6 +56,8 @@ tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch $(srcdir)/tidy.sed
 git-version.sh: $(BOOKdir)/git-version.sh
 	sed -e "s|version\.ent|$(abs_builddir)/version\.ent|g" \
             -e "/^full_date/afull_date=\"\$$year/\$$month_digit/\$$day\"" $^ > $@
+conditional.ent: $(BOOKdir)/conditional.ent
+	cp -p $^ $@
 
 stylesheets:
 	$(MKDIR_P) stylesheets
@@ -184,4 +187,4 @@ $(BASEDIR)/wget-list: $(RENDERTMP)/$(BLFSFULL) version
    dump-commands  bootscripts systemd-units version
 
 version:
-	(cd $(BOOKdir) && sh $(abs_builddir)/git-version.sh)
+	(cd $(BOOKdir) && sh $(abs_builddir)/git-version.sh $(REV))

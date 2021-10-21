@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -39,14 +35,6 @@
     <ulink url="&kf5apps-download-http;">&kf5apps-download-http;</ulink>.
 @y
     利用可能な全パッケージの詳細については KDE5 サーバー <ulink url="&kf5apps-download-http;">&kf5apps-download-http;</ulink> を参照してください。
-@z
-
-@x
-      Some packages, such as kde-baseapps, kde-runtime, and kmag listed in the
-      link above are only for the older KDE4 and cannot be used with KF5.
-@y
-      Some packages, such as kde-baseapps, kde-runtime, and kmag listed in the
-      link above are only for the older KDE4 and cannot be used with KF5.
 @z
 
 @x

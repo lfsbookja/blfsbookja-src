@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -147,10 +143,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command> (you must be
+      To test the results, issue: <command>make -j1 -k check</command> (you must be
       in an xterm or similar to do this, because it launches some windows).
 @y
-      ビルド結果をテストする場合は <command>make -k check</command> を実行します。
+      ビルド結果をテストする場合は <command>make -j1 -k check</command> を実行します。
       (この際にはウィンドウ起動が行われるため、xterm などから実行することが必要です。)
 @z
 

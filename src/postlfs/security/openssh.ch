@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,13 +10,13 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "51 MB (add 40 MB for tests)">
-  <!ENTITY openssh-time          "0.2 SBU (Using parallelism=4; 
+  <!ENTITY openssh-buildsize     "48 MB (add 34 MB for tests)">
+  <!ENTITY openssh-time          "0.3 SBU (Using parallelism=4;
                                   running the tests takes 20+ minutes,
                                   irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "51 MB (テスト実施時はさらに 40 MB)">
-  <!ENTITY openssh-time          "0.2 SBU (parallelism=4 利用時; テスト実施はプロセッサーの処理スピードとは無関係に最低でも 20 分以上)">
+  <!ENTITY openssh-buildsize     "48 MB (テスト実施時はさらに 34 MB)">
+  <!ENTITY openssh-time          "0.3 SBU (parallelism=4 利用時; テスト実施はプロセッサーの処理スピードとは無関係に最低でも 20 分以上)">
 @z
 
 @x

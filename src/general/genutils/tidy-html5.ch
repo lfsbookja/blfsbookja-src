@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -212,11 +208,11 @@
 
 @x
     <seg>tab2space and tidy</seg>
-    <seg>libtidy.so and libtidys.a</seg>
+    <seg>libtidy.so</seg>
     <seg>/usr/share/doc/tidy-&tidy-html5-version;</seg>
 @y
     <seg>tab2space, tidy</seg>
-    <seg>libtidy.so, libtidys.a</seg>
+    <seg>libtidy.so</seg>
     <seg>/usr/share/doc/tidy-&tidy-html5-version;</seg>
 @z
 
@@ -238,12 +234,7 @@
             validates, corrects, and pretty-prints HTML files
 @z
 
-@x
-          <filename class="libraryfile">libtidy.so and libtidys.a</filename>
-@y
-          <filename class="libraryfile">libtidy.so, libtidys.a</filename>
-@z
-@x libtidy.so and libtidys.a
+@x libtidy.so
             library provides the <application>Tidy HTML5</application> API
             functions to <command>tidy</command> and can also be called by other
             programs

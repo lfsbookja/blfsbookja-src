@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY webkitgtk-buildsize     "897 MB (127 MB installed)">
-  <!ENTITY webkitgtk-time          "29 SBU (using parallelism=4, estimated 97 SBU using one core)">
-@y
-  <!ENTITY webkitgtk-buildsize     "897 MB (127 MB installed)">
-  <!ENTITY webkitgtk-time          "29 SBU (using parallelism=4, estimated 97 SBU using one core)">
-@z
-
-@x
     <title>Introduction to WebKitGTK</title>
 @y
     <title>&IntroductionTo1;WebKitGTK&IntroductionTo2;</title>
@@ -158,7 +150,7 @@
       <xref linkend="woff2"/>,
       <ulink url="https://ccache.dev/">ccache</ulink>,
       <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
+      <ulink url="https://github.com/AOMediaCodec/libavif">libavif</ulink>,
       <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>, and
       <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
     </para>
@@ -173,7 +165,7 @@
       <xref linkend="woff2"/>,
       <ulink url="https://ccache.dev/">ccache</ulink>,
       <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="http://xsltml.sourceforge.net/">MathML</ulink>, 
+      <ulink url="https://github.com/AOMediaCodec/libavif">libavif</ulink>,
       <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>,
       <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
     </para>

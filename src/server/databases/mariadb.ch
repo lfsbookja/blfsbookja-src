@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY mariadb-buildsize     "2.3 GB (646 MB installed)">
-  <!ENTITY mariadb-time          "8.0 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "2.3 GB (650 MB installed)">
+  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @y
-  <!ENTITY mariadb-buildsize     "2.3 GB (646 MB がインストールされる)">
-  <!ENTITY mariadb-time          "8.0 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "2.3 GB (650 MB がインストールされる)">
+  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.4 SBU for tests)">
 @z
 
 @x
@@ -121,7 +121,7 @@
       <xref linkend="libxml2"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="pcre"/>,
+      <xref linkend="pcre2"/>,
       <xref linkend="ruby"/>,
       <xref linkend="unixodbc"/>,
       <xref linkend="valgrind"/>,
@@ -145,7 +145,7 @@
       <xref linkend="libxml2"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="pcre"/>,
+      <xref linkend="pcre2"/>,
       <xref linkend="ruby"/>,
       <xref linkend="unixodbc"/>,
       <xref linkend="valgrind"/>,

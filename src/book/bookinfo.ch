@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -71,6 +67,12 @@
       <revremark>Ongoing Release</revremark>
 @y
       <revremark>進行中リリース</revremark>
+@z
+
+@x 2021-09-01
+      <revremark>Twenty-fourth Release</revremark>
+@y
+      <revremark>第 24 次リリース</revremark>
 @z
 
 @x 2021-03-01

@@ -78,23 +78,12 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="python2"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="python2"/>
-    </para>
-@z
-
-@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
     <xref linkend="docutils"/>
       (required to build the documentation),
     <xref linkend="git"/>,
-    <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
+    <xref linkend="gpgme"/> (with Python bindings),
     <xref role="runtime" linkend="openssh"/>
       (runtime, to access ssh://... repositories),
     <xref linkend="pygments"/>,
@@ -102,16 +91,18 @@
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>, and
-    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>
+    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
+    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>, and
+    <ulink url="https://github.com/google/re2/">re2</ulink>
 
     </para>
 @y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
     <xref linkend="docutils"/>
       (required to build the documentation),
     <xref linkend="git"/>,
-    <xref linkend="gnupg2"/> (<command>gpg2</command> with Python bindings),
+    <xref linkend="gpgme"/> (with Python bindings),
     <xref role="runtime" linkend="openssh"/>
       (runtime, to access ssh://... repositories),
     <xref linkend="pygments"/>,
@@ -119,8 +110,9 @@
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
     <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>, and
-    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>
+    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
+    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>,
+    <ulink url="https://github.com/google/re2/">re2</ulink>
 
     </para>
 @z
@@ -151,9 +143,9 @@
 @z
 
 @x
-      To run the test suite, issue:
+      To run the test suite, issue (15 tests are known to fail):
 @y
-      ビルド結果をテストする場合は、以下を実行します。
+      ビルド結果をテストする場合は、以下を実行します (15 個のテストが失敗します)。
 @z
 
 @x
@@ -180,16 +172,16 @@
       <option>--tmpdir</option>, and run again, some failures are gone, which
       seems to be a problem with the test suite. If this happens, normally,
       from now on, there will be no more such failures whether you use the
-      debug switch or not. 
-      <!--One test, test-doctest.py, is known to fail.-->
+      debug switch or not.
+      Two tests, test-duplicateoptions.py and test-removeemptydirs.t, are known to fail.
 @y
       Normally, the previous failures will be confirmed. However, if
       you add the switch <option>--debug</option> before
       <option>--tmpdir</option>, and run again, some failures are gone, which
       seems to be a problem with the test suite. If this happens, normally,
       from now on, there will be no more such failures whether you use the
-      debug switch or not. 
-      <!--One test, test-doctest.py, is known to fail.-->
+      debug switch or not.
+      Two tests, test-duplicateoptions.py and test-removeemptydirs.t, are known to fail.
 @z
 
 @x

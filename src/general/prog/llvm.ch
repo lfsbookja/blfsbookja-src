@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "3.3 GB (772 MB installed, add 11 GB for tests)">
-  <!ENTITY llvm-time          "33 SBU (with parallelism=4, add 38 SBU for tests)">
+  <!ENTITY llvm-buildsize     "2.5 GB (715 MB installed, add 11 GB for tests)">
+  <!ENTITY llvm-time          "29 SBU (with parallelism=4, add 38 SBU for tests)">
 @y
-  <!ENTITY llvm-buildsize     "3.3 GB (インストールに 772 MB、テスト実施時はさらに 11 GB)">
-  <!ENTITY llvm-time          "33 SBU (parallelism=4、テスト実施時はさらに 38 SBU)">
+  <!ENTITY llvm-buildsize     "2.5 GB (インストールに 715 MB、テスト実施時はさらに 11 GB)">
+  <!ENTITY llvm-time          "29 SBU (parallelism=4、テスト実施時はさらに 38 SBU)">
 @z
 
 @x
@@ -283,7 +283,7 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that a few of the compiler-rt Sanitizer based tests (6 of more than 48000
+      Note that a few of the compiler-rt Sanitizer based tests (16 of more than 48000
       tests run) are known to fail. Some of the LLVM-Unit IR tests are known to
       fail as well.
 @y
@@ -298,7 +298,7 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that a few of the compiler-rt Sanitizer based tests (6 of more than 48000
+      Note that a few of the compiler-rt Sanitizer based tests (16 of more than 48000
       tests run) are known to fail. Some of the LLVM-Unit IR tests are known to
       fail as well.
 @z

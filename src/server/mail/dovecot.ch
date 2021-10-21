@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -191,16 +187,6 @@
 @y
       <command>CPPFLAGS=... LDFLAGS+=...</command>: build with libtirpc
       instead of the recently removed RPC code provided by GlibC.
-@z
-
-@x revision="systemd"
-      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
-      This switch is used to set the correct installation directory for
-      systemd units.
-@y
-      <parameter>--with-systemdsystemunitdir=/lib/systemd/system</parameter>:
-      This switch is used to set the correct installation directory for
-      systemd units.
 @z
 
 @x

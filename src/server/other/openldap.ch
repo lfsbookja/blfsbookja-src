@@ -102,7 +102,8 @@
         <xref linkend="mariadb"/> or
         <xref linkend="postgresql"/> or
         <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <ulink url="http://www.openslp.org/">OpenSLP</ulink>, and
+      <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+      <ulink url="https://docs.mongodb.com/manual/core/wiredtiger/">WiredTiger</ulink>, and
       <xref linkend="db"/> (for slapd, but deprecated)
     </para>
 @y
@@ -115,6 +116,7 @@
         <xref linkend="postgresql"/> または
         <ulink url="http://www.mysql.com/">MySQL</ulink>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
+      <ulink url="https://docs.mongodb.com/manual/core/wiredtiger/">WiredTiger</ulink>,
       <xref linkend="db"/> (for slapd, but deprecated)
     </para>
 @z
@@ -493,13 +495,12 @@
 @x
         <seg>
           ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
-          ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd,
-          slapauth, slapcat, slapd, slapdn, slapindex, slappasswd, slapschema,
-          and slaptest
+          ldappasswd, ldapsearch, ldapurl, ldapvc, ldapwhoami, slapacl, slapadd,
+          slapauth, slapcat, slapd, slapdn, slapindex, slapmodify, slappasswd,
+          slapschema, and slaptest
         </seg>
         <seg>
-          liblber.so, libldap.so, libldap_r.so,
-          and several under /usr/lib/openldap
+          liblber.so, libldap.so, and several under /usr/lib/openldap
         </seg>
         <seg>
           /etc/openldap,
@@ -509,13 +510,12 @@
 @y
         <seg>
           ldapadd, ldapcompare, ldapdelete, ldapexop, ldapmodify, ldapmodrdn,
-          ldappasswd, ldapsearch, ldapurl, ldapwhoami, slapacl, slapadd,
-          slapauth, slapcat, slapd, slapdn, slapindex, slappasswd, slapschema,
-          slaptest
+          ldappasswd, ldapsearch, ldapurl, ldapvc, ldapwhoami, slapacl, slapadd,
+          slapauth, slapcat, slapd, slapdn, slapindex, slapmodify, slappasswd,
+          slapschema, and slaptest
         </seg>
         <seg>
-          liblber.so, libldap.so, libldap_r.so,
-          /usr/lib/openldap 配下に数種のライブラリ
+          liblber.so, libldap.so, /usr/lib/openldap 配下に数種のライブラリ
         </seg>
         <seg>
           /etc/openldap,

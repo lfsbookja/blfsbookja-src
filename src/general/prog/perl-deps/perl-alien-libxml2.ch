@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -57,13 +53,15 @@
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
         <xref linkend="perl-alien-build"/>,
-        <xref linkend="libxml2"/>
+        <xref linkend="libxml2"/>,
+        <xref linkend="perl-path-tiny"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="perl-alien-build"/>,
-        <xref linkend="libxml2"/>
+        <xref linkend="libxml2"/>,
+        <xref linkend="perl-path-tiny"/>
       </para>
 @z
 

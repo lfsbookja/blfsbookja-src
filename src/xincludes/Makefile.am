@@ -18,6 +18,7 @@ CHANGE_FILES = \
 	lib-config.ch               \
 	meson-buildtype-release.ch  \
 	meson-wrap-nodownload.ch    \
+	meson-wrap-nofallback.ch    \
 	mozconfigure.ch             \
 	mozmach.ch                  \
 	mozshm.ch                   \

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -160,22 +156,22 @@
 @z
 
 @x
-    <title>Verifying File Integrity Using 'md5sum'</title>
+    <title>Verifying File Integrity</title>
 @y
     <title>
-    'md5sum' を使ったファイルの整合確認
+    ファイルの整合確認
     </title>
 @z
 
 @x
-    <para>Generally, to verify that the downloaded file is genuine and complete,
+    <para>Generally, to verify that the downloaded file is complete,
     many package maintainers also distribute md5sums of the files. To verify the
     md5sum of the downloaded files, download both the file and the
     corresponding md5sum file to the same directory (preferably from different
     on-line locations), and (assuming <filename>file.md5sum</filename> is the
     md5sum file downloaded) run the following command:</para>
 @y
-    <para>Generally, to verify that the downloaded file is genuine and complete,
+    <para>Generally, to verify that the downloaded file is complete,
     many package maintainers also distribute md5sums of the files. To verify the
     md5sum of the downloaded files, download both the file and the
     corresponding md5sum file to the same directory (preferably from different

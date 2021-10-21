@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libuv-buildsize     "14 MB (add 12 MB for tests)">
-  <!ENTITY libuv-time          "0.1 SBU (Using parallelism=4; add 0.4 SBU for tests)">
+  <!ENTITY libuv-buildsize     "13 MB (add 12 MB for tests)">
+  <!ENTITY libuv-time          "less than 0.1 SBU (Using parallelism=4; add 0.5 SBU for tests)">
 @y
-  <!ENTITY libuv-buildsize     "14 MB (テスト実施はさらに 12 MB)">
-  <!ENTITY libuv-time          "0.1 SBU (parallelism=4 利用時、テスト実施時はさらに 0.4 SBU)">
+  <!ENTITY libuv-buildsize     "13 MB (テスト実施はさらに 12 MB)">
+  <!ENTITY libuv-time          "&LessThan1;0.1 SBU&LessThan2; (parallelism=4 利用時、テスト実施時はさらに 0.5 SBU)">
 @z
 
 @x

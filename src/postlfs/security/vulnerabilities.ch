@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -16,7 +12,7 @@
 @x
   <title>Vulnerabilities</title>
 @y
-  <title>脆弱性</title>
+  <title>ぜい弱性</title>
 @z
 
 @x
@@ -28,7 +24,7 @@
 @x
     <title>About vulnerabilities</title>
 @y
-    <title>脆弱性について</title>
+    <title>ぜい弱性について</title>
 @z
 
 @x
@@ -43,7 +39,7 @@
       例えばユーザーが、規定されている以上の権限を得てしまうことができます。
       (おそらくルートシェルにログインできたり、他ユーザーのファイルにアクセスできたり削除できたりといった状況です。)
       リモートサイト上のアプリケーションを破壊 (サービス停止) したり、データを盗んだりといったこともできてしまいます。
-      このようなバグは脆弱性と表現されます。
+      このようなバグはぜい弱性と表現されます。
 @z
 
 @x
@@ -55,7 +51,7 @@
       <command>configure</command> options, or only apply to old versions of
       packages which have long since been updated in BLFS.
 @y
-      脆弱性に関する情報を取りまとめているサイトとして <ulink url="http://cve.mitre.org">cve.mitre.org</ulink> があります。
+      ぜい弱性に関する情報を取りまとめているサイトとして <ulink url="http://cve.mitre.org">cve.mitre.org</ulink> があります。
       Unfortunately,
       many vulnerability numbers (CVE-yyyy-nnnn) are initially only labelled
       as "reserved" when distributions start issuing fixes.  Also, some

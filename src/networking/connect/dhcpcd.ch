@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -141,15 +137,11 @@
 @z
 
 @x
-      <parameter>--libexecdir=/lib/dhcpcd</parameter>: The default
-      <filename class="directory">/libexec</filename> is not FHS-compliant.
-      Since this directory may need to be available early in the boot,
-      <filename class="directory">/usr/libexec</filename> cannot be used either.
+      <parameter>--libexecdir=/usr/lib/dhcpcd</parameter>: Set a more proper
+      location for dhcpcd internal libraries.
 @y
-      <parameter>--libexecdir=/lib/dhcpcd</parameter>: The default
-      <filename class="directory">/libexec</filename> is not FHS-compliant.
-      Since this directory may need to be available early in the boot,
-      <filename class="directory">/usr/libexec</filename> cannot be used either.
+      <parameter>--libexecdir=/usr/lib/dhcpcd</parameter>: Set a more proper
+      location for dhcpcd internal libraries.
 @z
 
 @x
@@ -195,13 +187,13 @@
 @x
         To configure <command>dhcpcd</command>, you need to first install
         the network service script,
-        <filename>/lib/services/dhcpcd</filename>
+        <filename>/usr/lib/services/dhcpcd</filename>
         included in the <xref linkend="bootscripts"/> package
         (as user <systemitem class="username">root</systemitem>):
 @y
         To configure <command>dhcpcd</command>, you need to first install
         the network service script,
-        <filename>/lib/services/dhcpcd</filename>
+        <filename>/usr/lib/services/dhcpcd</filename>
         included in the <xref linkend="bootscripts"/> package
         (as user <systemitem class="username">root</systemitem>):
 @z
@@ -221,7 +213,7 @@
           and mtu. It also overwrites <filename>/etc/resolv.conf </filename>
           and <filename>/etc/ntp.conf</filename>. These
           modifications to system files are done by hooks which are stored in
-          <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+          <filename class="directory">/usr/lib/dhcpcd/dhcpcd-hooks</filename>.
           Setup <command>dhcpcd</command> by removing or adding hooks from/to
           that directory.  The execution of hooks can be disabled by using
           the <option>--nohook</option> (<option>-C</option>) command line
@@ -232,7 +224,7 @@
           and mtu. It also overwrites <filename>/etc/resolv.conf </filename>
           and <filename>/etc/ntp.conf</filename>. These
           modifications to system files are done by hooks which are stored in
-          <filename class="directory">/lib/dhcpcd/dhcpcd-hooks</filename>.
+          <filename class="directory">/usr/lib/dhcpcd/dhcpcd-hooks</filename>.
           Setup <command>dhcpcd</command> by removing or adding hooks from/to
           that directory.  The execution of hooks can be disabled by using
           the <option>--nohook</option> (<option>-C</option>) command line
@@ -400,12 +392,12 @@
 
 @x
         <seg>dhcpcd</seg>
-        <seg>/lib/dhcpcd/dev/udev.so</seg>
-        <seg>/{,var/}lib/dhcpcd and /usr/share/dhcpcd</seg>
+        <seg>/usr/lib/dhcpcd/dev/udev.so</seg>
+        <seg>/{usr,var}/lib/dhcpcd and /usr/share/dhcpcd</seg>
 @y
         <seg>dhcpcd</seg>
-        <seg>/lib/dhcpcd/dev/udev.so</seg>
-        <seg>/{,var/}lib/dhcpcd, /usr/share/dhcpcd</seg>
+        <seg>/usr/lib/dhcpcd/dev/udev.so</seg>
+        <seg>/{usr,var}/lib/dhcpcd, /usr/share/dhcpcd</seg>
 @z
 
 @x

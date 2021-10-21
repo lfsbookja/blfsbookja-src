@@ -75,14 +75,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> and
-      <xref linkend="python2"/>
+      <xref linkend="doxygen"/>,
+      <xref linkend="python2"/>, and
+      <ulink url="https://www.alsa-project.org/files/pub/lib/">alsa-ucm-conf</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      <xref linkend="python2"/>
+      <xref linkend="python2"/>,
+      <ulink url="https://www.alsa-project.org/files/pub/lib/">alsa-ucm-conf</ulink>
     </para>
 @z
 

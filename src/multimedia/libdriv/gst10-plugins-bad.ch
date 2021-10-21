@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gst10-plugins-bad-buildsize     "146 MB (with tests)">
-  <!ENTITY gst10-plugins-bad-time          "1.0 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-bad-buildsize     "141 MB (with tests)">
+  <!ENTITY gst10-plugins-bad-time          "0.9 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-bad-buildsize     "146 MB（テスト込み）">
-  <!ENTITY gst10-plugins-bad-time          "1.0 SBU（parallelism=4 利用、テスト込み）">
+  <!ENTITY gst10-plugins-bad-buildsize     "141 MB（テスト込み）">
+  <!ENTITY gst10-plugins-bad-time          "0.9 SBU（parallelism=4 利用、テスト込み）">
 @z
 
 @x
@@ -129,7 +125,6 @@
       <xref linkend="lcms2"/>,
       <xref linkend="libass"/>,
       <xref linkend="libexif"/> (for one test),
-      <xref linkend="libgudev"/>,
       <xref linkend="libmpeg2"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="libsndfile"/>,
@@ -149,8 +144,8 @@
       <xref linkend="valgrind"/>,
       <xref linkend="wayland"/> (<xref linkend="gtk3"/> must have been
       compiled with wayland support),
+      <xref linkend="wpebackend-fdo"/>,
       <xref linkend="x265"/>,
-      <xref linkend="xorg7-lib"/> (for one test),
       <ulink url="https://aomedia.googlesource.com/aom/">aom</ulink>,
       <ulink url="http://bs2b.sourceforge.net/">bs2b</ulink>,
       <ulink url="https://acoustid.org/chromaprint">Chromaprint</ulink>,
@@ -192,7 +187,6 @@
       <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,
       <ulink url="https://www.mindwerks.net/projects/wildmidi/">WildMidi</ulink>,
       <ulink url="https://webkit.org/wpe/">WPE-WebKit</ulink>,
-      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>,
       <ulink url="http://zbar.sourceforge.net/">ZBAR</ulink>,
       <ulink url="http://zapping.sourceforge.net/ZVBI/index.html/">ZVBI</ulink>, and
       <ulink url="https://github.com/zxing/zxing">zxing</ulink>
@@ -209,7 +203,6 @@
       <xref linkend="lcms2"/>,
       <xref linkend="libass"/>,
       <xref linkend="libexif"/> (for one test),
-      <xref linkend="libgudev"/>,
       <xref linkend="libmpeg2"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="libsndfile"/>,
@@ -229,8 +222,8 @@
       <xref linkend="valgrind"/>,
       <xref linkend="wayland"/> (<xref linkend="gtk3"/> must have been
       compiled with wayland support),
+      <xref linkend="wpebackend-fdo"/>,
       <xref linkend="x265"/>,
-      <xref linkend="xorg7-lib"/> (for one test),
       <ulink url="https://aomedia.googlesource.com/aom/">aom</ulink>,
       <ulink url="http://bs2b.sourceforge.net/">bs2b</ulink>,
       <ulink url="https://acoustid.org/chromaprint">Chromaprint</ulink>,
@@ -272,9 +265,8 @@
       <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,
       <ulink url="https://www.mindwerks.net/projects/wildmidi/">WildMidi</ulink>,
       <ulink url="https://webkit.org/wpe/">WPE-WebKit</ulink>,
-      <ulink url="https://github.com/Igalia/WPEBackend-fdo">WPEBackend-fdo</ulink>,
       <ulink url="http://zbar.sourceforge.net/">ZBAR</ulink>,
-      <ulink url="http://zapping.sourceforge.net/ZVBI/index.html/">ZVBI</ulink>,
+      <ulink url="http://zapping.sourceforge.net/ZVBI/index.html/">ZVBI</ulink>, and
       <ulink url="https://github.com/zxing/zxing">zxing</ulink>
     </para>
 @z

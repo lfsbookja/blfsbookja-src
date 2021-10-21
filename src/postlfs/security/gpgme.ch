@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY gpgme-time          "0.8 SBU (with parallelism=4; with all bindings, add 0.6 SBU for tests)">
+  <!ENTITY gpgme-time          "0.8 SBU (with parallelism=4; with all bindings, add 0.7 SBU for tests)">
 @y
-  <!ENTITY gpgme-time          "0.8 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.6 SBU）">
+  <!ENTITY gpgme-time          "0.8 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.7 SBU）">
 @z
 
 @x

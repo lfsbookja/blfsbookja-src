@@ -272,11 +272,11 @@
 @z
 
 @x
-        Now set up some generic files.  As the 
-        <systemitem class="username">root:</systemitem> user
+        Now set up some generic files.  As the
+        <systemitem class="username">root</systemitem> user:
 @y
-        Now set up some generic files.  As the 
-        <systemitem class="username">root:</systemitem> user
+        Now set up some generic files.  As the
+        <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -374,7 +374,7 @@
         </seg>
         <seg>
           /etc/security,
-          /lib/security,
+          /usr/lib/security,
           /usr/include/security and
           /usr/share/doc/Linux-PAM-&linux-pam-version;
         </seg>
@@ -389,7 +389,7 @@
         </seg>
         <seg>
           /etc/security,
-          /lib/security,
+          /usr/lib/security,
           /usr/include/security,
           /usr/share/doc/Linux-PAM-&linux-pam-version;
         </seg>

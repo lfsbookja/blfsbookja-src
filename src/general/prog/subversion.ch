@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -123,7 +119,7 @@
       <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
-      <xref linkend="py3c"/> (for tests)
+      <xref linkend="py3c"/> (for the python bindings, and tests)
       <xref linkend="python2"/> (with sqlite support for the tests),
       <xref linkend="ruby"/>,
       <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
@@ -144,7 +140,7 @@
       <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
-      <xref linkend="py3c"/> (for tests)
+      <xref linkend="py3c"/> (for the python bindings, and tests)
       <xref linkend="python2"/> (with sqlite support for the tests),
       <xref linkend="ruby"/>,
       <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
@@ -206,9 +202,9 @@
       of the <application>JUnit</application> file by adding
       <option>--with-junit=&lt;path to junit jar&gt;</option> (for
       instance <option>--with-junit=/usr/local/java/lib/junit-4.13.jar</option>)
-      to <command>configure</command>. The JUnit jar file is no longer 
-      included in <xref linkend="apache-ant"/> and must be downloaded seperatly.
-      To build the Java bindings, issue the following command:
+      to <command>configure</command>. The JUnit jar file is no longer
+      included in <xref linkend="apache-ant"/> and must be downloaded
+      separately. To build the Java bindings, issue the following command:
 @y
       If you wish to build the Java bindings pass the <option>--enable-javahl</option>
       parameter to the <command>configure</command> command. In addition, if
@@ -216,9 +212,9 @@
       of the <application>JUnit</application> file by adding
       <option>--with-junit=&lt;path to junit jar&gt;</option> (for
       instance <option>--with-junit=/usr/local/java/lib/junit-4.13.jar</option>)
-      to <command>configure</command>. The JUnit jar file is no longer 
-      included in <xref linkend="apache-ant"/> and must be downloaded seperatly.
-      To build the Java bindings, issue the following command:
+      to <command>configure</command>. The JUnit jar file is no longer
+      included in <xref linkend="apache-ant"/> and must be downloaded
+      separately. To build the Java bindings, issue the following command:
 @z
 
 @x

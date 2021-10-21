@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libdazzle-buildsize     "42 MB (with tests)">
-  <!ENTITY libdazzle-time          "0.2 SBU (using parallelism=4; with tests)">
+  <!ENTITY libdazzle-buildsize     "19 MB (with tests)">
+  <!ENTITY libdazzle-time          "0.1 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY libdazzle-buildsize     "42 MB (with tests)">
-  <!ENTITY libdazzle-time          "0.2 SBU (using parallelism=4; with tests)">
+  <!ENTITY libdazzle-buildsize     "19 MB (テスト込み)">
+  <!ENTITY libdazzle-time          "0.1 SBU (parallelism=4 利用, テスト込み)">
 @z
 
 @x
@@ -38,7 +34,7 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x

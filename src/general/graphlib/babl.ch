@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY babl-buildsize     "21 MB (with tests)">
+  <!ENTITY babl-buildsize     "9.4 MB (with tests)">
   <!ENTITY babl-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY babl-buildsize     "21 MB (テスト込み)">
+  <!ENTITY babl-buildsize     "9.4 MB (テスト込み)">
   <!ENTITY babl-time          "0.1 SBU (テスト込み)">
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -55,13 +51,15 @@
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
         <xref linkend="perl-list-someutils"/>,
-        <xref linkend="perl-list-utilsby"/>
+        <xref linkend="perl-list-utilsby"/>,
+        <xref linkend="perl-scalar-list-utils"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="perl-list-someutils"/>,
-        <xref linkend="perl-list-utilsby"/>
+        <xref linkend="perl-list-utilsby"/>,
+        <xref linkend="perl-scalar-list-utils"/>
       </para>
 @z
 

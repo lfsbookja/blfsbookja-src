@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY wireshark-buildsize     "606 MB (with all optional dependencies available in the BLFS book)">
-  <!ENTITY wireshark-time          "2.2 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
-@y
-  <!ENTITY wireshark-buildsize     "606 MB (with all optional dependencies available in the BLFS book)">
-  <!ENTITY wireshark-time          "2.2 SBU (with parallelism=4 and all optional dependencies available in the BLFS book)">
-@z
-
-@x
     <title>Introduction to Wireshark</title>
 @y
     <title>&IntroductionTo1;Wireshark&IntroductionTo2;</title>
@@ -132,6 +124,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="asciidoctor"/>,
       <xref linkend="brotli"/>,
       <xref linkend="c-ares"/>,
       <xref linkend="doxygen"/>,
@@ -145,7 +138,7 @@
       <xref linkend="nghttp2"/>,
       <xref linkend="sbc"/>,
       <xref linkend="speex"/>,
-      <ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,
+      <!--<ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,-->
       <ulink url="https://www.linphone.org/technical-corner/bcg729">BCG729</ulink>,
       <ulink url="https://github.com/TimothyGu/libilbc">libilbc</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
@@ -159,6 +152,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="asciidoctor"/>,
       <xref linkend="brotli"/>,
       <xref linkend="c-ares"/>,
       <xref linkend="doxygen"/>,
@@ -172,7 +166,7 @@
       <xref linkend="nghttp2"/>,
       <xref linkend="sbc"/>,
       <xref linkend="speex"/>,
-      <ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,
+      <!--<ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,-->
       <ulink url="https://www.linphone.org/technical-corner/bcg729">BCG729</ulink>,
       <ulink url="https://github.com/TimothyGu/libilbc">libilbc</ulink>,
       <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
@@ -180,7 +174,7 @@
       <ulink url="https://www.libssh.org/">libssh</ulink>,
       <ulink url="https://github.com/maxmind/libmaxminddb">MaxMindDB</ulink>,
       <ulink url="https://www.winimage.com/zLibDll/minizip.html">Minizip</ulink>,
-      <ulink url="http://google.github.io/snappy/">Snappy</ulink>,
+      <ulink url="http://google.github.io/snappy/">Snappy</ulink>, and
       <ulink url="https://www.soft-switch.org/">Spandsp</ulink>
     </para>
 @z

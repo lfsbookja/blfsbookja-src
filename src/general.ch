@@ -4,16 +4,17 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<!ENTITY copyholder   "The BLFS Development Team">
+<!ENTITY copyholder     "The BLFS Development Team">
 @y
-<!ENTITY copyholder   "BLFS 開発チーム">
+<!ENTITY copyholder     "BLFS 開発チーム">
 @z
 
 @x
-<!ENTITY lfs-domainname       "linuxfromscratch.org">
+<!ENTITY lfs-domainname "linuxfromscratch.org">
 @y
-<!ENTITY lfs-domainname       "linuxfromscratch.org">
-<!ENTITY jversion "20210424">
+<!ENTITY lfs-domainname "linuxfromscratch.org">
+<!ENTITY jversion "20211021">
+<!ENTITY jcorrespondSHA "acb648fd7a"> <!-- blfs-git SHA 値； 本箇所での記載のみ -->
 
 <!ENTITY Estimateddiskspacerequired "必要ディスク容量">
 <!ENTITY Estimatedbuildtime         "概算ビルド時間">
@@ -78,25 +79,27 @@
 
 @x
 <!ENTITY lfs-root             "../../../../lfs/view/&lfs-version;">
-<!ENTITY lfs-rootd            "../../../../lfs/view/&lfs-versiond;">
 <!ENTITY lfs-dev              "../../../../lfs/view/development">
 @y
-<!ENTITY lfs-root             "http://www.&lfs-domainname;/lfs/view/&lfs-version;">
-<!ENTITY lfs-rootd            "../../../../lfs/view/&lfs-versiond;">
+<!ENTITY lfs-root             "../../../../lfs/view/&lfs-version;">
 <!ENTITY lfs-dev              "../../../../lfs/view/development">
-<!ENTITY lfsja-dev            "http://lfsbookja.osdn.jp/svn-ja">
-<!ENTITY lfssysdja-dev        "http://lfsbookja.osdn.jp/svn-sysdja">
+<!ENTITY lfsja-dev            "http://lfsbookja.osdn.jp/git-ja">
+<!ENTITY lfssysdja-dev        "http://lfsbookja.osdn.jp/git-sysdja">
 @z
 
 @x
-<!ENTITY lfs101_checked       "<para>This package is known to build and work
-                              properly using an LFS-10.1 platform.</para>">
-<!ENTITY lfs101_built         "<para>This package is known to build using an LFS
-                              10.1 platform but has not been tested.</para>">
+<!ENTITY lfs110a_checked       "<para>This package is known to build and work
+                              properly using an LFS-11.0 platform.</para>">
 @y
-<!ENTITY lfs101_checked       "<para>本パッケージは LFS-10.1 において正しくビルドでき動作することが確認されています。</para>">
-<!ENTITY lfs101_built         "<para>本パッケージは LFS-10.1 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+<!ENTITY lfs110a_checked       "<para>本パッケージは LFS-11.1 において正しくビルドでき動作することが確認されています。</para>">
 @z
+
+%@x
+%<!ENTITY lfs110a_built         "<para>This package is known to build using an LFS
+%                              10.1 platform but has not been tested.</para>">
+%@y
+%<!ENTITY lfs110a_built         "<para>本パッケージは LFS-10.1 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
+%@z
 
 @x
 <!ENTITY as_root "<note><para>When installing multiple packages in a script,

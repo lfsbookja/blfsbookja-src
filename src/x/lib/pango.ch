@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -134,18 +130,22 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="cantarell-fonts"/> (for tests),
-      <xref linkend="gtk-doc"/>,
+  <!--<xref linkend="gtk-doc"/>,-->
       <xref linkend="sysprof"/>,
+      <ulink url="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</ulink>
+      (to generate documentation),
       <ulink url="https://ftpmirror.gnu.org/gnu/help2man">help2man</ulink>, and
       <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cantarell-fonts"/> (for tests),
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="cantarell-fonts"/> (テストのため),
+  <!--<xref linkend="gtk-doc"/>,-->
       <xref linkend="sysprof"/>,
-      <ulink url="https://ftpmirror.gnu.org/gnu/help2man">help2man</ulink>, and
+      <ulink url="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</ulink>
+      (to generate documentation),
+      <ulink url="https://ftpmirror.gnu.org/gnu/help2man">help2man</ulink>,
       <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
     </para>
 @z
@@ -170,16 +170,15 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. Three tests,
-      <filename>test-font</filename>, 
-      <filename>test-layout</filename>, and
-      <filename>test-itemize</filename>, are known to fail if 
+      To test the results, issue: <command>ninja test</command>. One test,
+      <filename>test-font</filename>,
+      <!--<filename>test-layout</filename>, and
+      <filename>test-itemize</filename>, are--> is known to fail if
       <xref linkend="cantarell-fonts"/> are not installed.
+      <!-- the other problematic tests get skipped now -->
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      <filename>test-font</filename>,
-      <filename>test-layout</filename>,
-      <filename>test-itemize</filename> という 3 つのテストは、<xref
+      <filename>test-font</filename> という 1 つのテストは、<xref
       linkend="cantarell-fonts"/> をインストールしていない場合には失敗します。
 @z
 
@@ -250,27 +249,31 @@
 
 @x
         <seg>
-          pango-list and pango-view 
+          pango-list, pango-segmentation, and pango-view
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
           and libpangoxft-1.0.so
         </seg>
         <seg>
-          /usr/include/pango-1.0 and
+          /usr/include/pango-1.0<!-- and
           /usr/share/gtk-doc/html/pango
+this last one does not seem to be installed now (since pango-1.48.2 at least)
+-->
         </seg>
 @y
         <seg>
-          pango-list, pango-view 
+          pango-list, pango-segmentation, pango-view
         </seg>
         <seg>
           libpango-1.0.so, libpangocairo-1.0.so, libpangoft2-1.0.so,
           libpangoxft-1.0.so
         </seg>
         <seg>
-          /usr/include/pango-1.0,
+          /usr/include/pango-1.0<!-- and
           /usr/share/gtk-doc/html/pango
+this last one does not seem to be installed now (since pango-1.48.2 at least)
+-->
         </seg>
 @z
 

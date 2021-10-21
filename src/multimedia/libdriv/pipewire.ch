@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY pipewire-buildsize     "57 MB (with tests)">
-  <!ENTITY pipewire-time          "0.4 SBU (Using parallelism=4; with tests)">
+  <!ENTITY pipewire-buildsize     "71 MB (with tests)">
+  <!ENTITY pipewire-time          "0.5 SBU (with tests, both using parallelism=4)">
 @y
-  <!ENTITY pipewire-buildsize     "57 MB（テスト込み）">
-  <!ENTITY pipewire-time          "0.4 SBU（parallelism=4 利用時、テスト込み）">
+  <!ENTITY pipewire-buildsize     "71 MB（テスト込み）">
+  <!ENTITY pipewire-time          "0.5 SBU（テスト込み、いずれも parallelism=4 利用）">
 @z
 
 @x
@@ -119,6 +119,7 @@
       <xref linkend="graphviz"/> (for documentation),
       <ulink url="https://jackaudio.org/">JACK</ulink>,
       <ulink url="https://github.com/EHfive/ldacBT">ldacBT</ulink>,
+      <ulink url="https://libcamera.org/">libcamera</ulink>,
       <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>, and
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
     </para>
@@ -126,10 +127,11 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="valgrind"/>,
-      <xref linkend="doxygen"/>,
+      <xref linkend="doxygen"/> と
       <xref linkend="graphviz"/> (ドキュメントのため),
       <ulink url="https://jackaudio.org/">JACK</ulink>,
       <ulink url="https://github.com/EHfive/ldacBT">ldacBT</ulink>,
+      <ulink url="https://libcamera.org/">libcamera</ulink>,
       <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
     </para>

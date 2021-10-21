@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY ruby-buildsize     "627 MB (add 1.0 GB for C API docs)">
-  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 4.6 SBU for tests; add 1.1 SBU for C API docs)">
-@y
-  <!ENTITY ruby-buildsize     "627 MB (add 1.0 GB for C API docs)">
-  <!ENTITY ruby-time          "1.2 SBU (using parallelism=4; add 4.6 SBU for tests; add 1.1 SBU for C API docs)">
-@z
-
-@x
     <title>Introduction to Ruby</title>
 @y
     <title>&IntroductionTo1;Ruby&IntroductionTo2;</title>
@@ -132,16 +124,16 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. There are almost
+      To test the results, issue: <command>make check</command>. There are over
       21,000 tests. Some tests related to ipv6 may indicate errors.  If the
       tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. A few tests my fail due
+      /tmp) then several additional tests may fail. A few tests may fail due
       to system configuration expectations.
 @y
-      To test the results, issue: <command>make check</command>. There are almost
+      To test the results, issue: <command>make check</command>. There are over
       21,000 tests. Some tests related to ipv6 may indicate errors.  If the
       tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. A few tests my fail due
+      /tmp) then several additional tests may fail. A few tests may fail due
       to system configuration expectations.
 @z
 

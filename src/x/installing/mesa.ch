@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "545 MB (with docs)">
-  <!ENTITY mesa-time          "3.1 SBU (with parallelism=4 and docs)">
+  <!ENTITY mesa-buildsize     "562 MB (with docs, add 376 MB if running the tests)">
+  <!ENTITY mesa-time          "3.5 SBU (Using parallelism=4; with docs)">
 @y
-  <!ENTITY mesa-buildsize     "545 MB (ドキュメント込み)">
-  <!ENTITY mesa-time          "3.1 SBU (parallelism=4 利用時、ドキュメント込み)">
+  <!ENTITY mesa-buildsize     "562 MB (ドキュメント込み, テスト実施時はさらに 376 MB)">
+  <!ENTITY mesa-time          "3.5 SBU (parallelism=4 利用時、ドキュメント込み)">
 @z
 
 @x
@@ -172,10 +172,11 @@
       <application>Mesa</application>; this includes the same programs added by
       the patch above),
       <ulink url="http://omxil.sourceforge.net/">Bellagio OpenMAX Integration
-      Layer</ulink> (for mobile platforms), 
-      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>, and
+      Layer</ulink> (for mobile platforms),
+      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://github.com/tizonia/tizonia-openmax-il/wiki/Tizonia-OpenMAX-IL/">
-      libtizonia</ulink>
+      libtizonia</ulink>,  and
+      <ulink url="https://www.vulkan.org/">libvulkan</ulink> (for the zink driver)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -189,10 +190,11 @@
       <application>Mesa</application>; this includes the same programs added by
       the patch above),
       <ulink url="http://omxil.sourceforge.net/">Bellagio OpenMAX Integration
-      Layer</ulink> (for mobile platforms), 
-      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>, and
+      Layer</ulink> (for mobile platforms),
+      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
       <ulink url="https://github.com/tizonia/tizonia-openmax-il/wiki/Tizonia-OpenMAX-IL/">
-      libtizonia</ulink>
+      libtizonia</ulink>,
+      <ulink url="https://www.vulkan.org/">libvulkan</ulink> (for the zink driver)
     </para>
 @z
 
@@ -258,12 +260,14 @@
 
 @x
       If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>. 
-      Two tests in the llvmpipe suite are known to fail.
+      <command>ninja test</command>.
+      All 33 subtests tests in the mesa:compiler+glsl / glsl compiler warnings
+      suite are known to fail.
 @y
       If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>. 
-      Two tests in the llvmpipe suite are known to fail.
+      <command>ninja test</command>.
+      All 33 subtests tests in the mesa:compiler+glsl / glsl compiler warnings
+      suite are known to fail.
 @z
 
 @x
@@ -345,10 +349,10 @@
 
 @x
       <option>-Dbuild-tests=true</option>: This option will cause the test code
-      to be enabled.
+      to be enabled. To run the tests, issue: <command>ninja test</command>.
 @y
       <option>-Dbuild-tests=true</option>: This option will cause the test code
-      to be enabled.
+      to be enabled. To run the tests, issue: <command>ninja test</command>.
 @z
 
 @x
@@ -391,9 +395,11 @@
           libxatracker.so,
         </seg>
         <seg>
-          <!-- Begin DRI drivers : this is the full set from auto -->
+          <!-- Begini gallium DRI drivers : this is the full set -->
           d3dadapter9.so (optional), <!-- For Windows games. This is DirectX's
                                           Direct3D -->
+          crocus_dri.so,
+          i830_dri.so,
           i915_dri.so,
           i965_dri.so,
           iris_dri.so,
@@ -418,6 +424,7 @@
           libvdpau_r600.so, and
           libvdpau_radeonsi.so
           <!-- End VDPAU drivers -->
+          (Many of these drivers are hard-linked).
         </seg>
         <seg>
           $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{dri,vdpau}},
@@ -451,9 +458,11 @@
           libxatracker.so,
         </seg>
         <seg>
-          <!-- Begin DRI drivers : this is the full set from auto -->
+          <!-- Begini gallium DRI drivers : this is the full set -->
           d3dadapter9.so (optional), <!-- For Windows games. This is DirectX's
                                           Direct3D -->
+          crocus_dri.so,
+          i830_dri.so,
           i915_dri.so,
           i965_dri.so,
           iris_dri.so,
@@ -475,9 +484,10 @@
           <!-- Begin VDPAU drivers -->
           libvdpau_nouveau.so,
           libvdpau_r300.so (optional),
-          libvdpau_r600.so,
+          libvdpau_r600.so, and
           libvdpau_radeonsi.so
           <!-- End VDPAU drivers -->
+          (Many of these drivers are hard-linked).
         </seg>
         <seg>
           $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{dri,vdpau}},
@@ -486,6 +496,7 @@
           $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
           particularly browsers and games)
           $XORG_PREFIX/share/vulkan/icd.d,
+          and
           /usr/share/doc/mesa-&mesa-version; (optional)
         </seg>
 @z

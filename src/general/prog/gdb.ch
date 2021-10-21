@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "761 MB (add 750 MB for docs; add 633 MB for tests)">
-  <!ENTITY gdb-time          "1.7 SBU (Using parallelism=4; add 30 SBU for tests; add 0.5 SBU for docs)">
+  <!ENTITY gdb-buildsize     "811 MB (add 777 MB for docs; add 536 MB for tests)">
+  <!ENTITY gdb-time          "1.9 SBU (Using parallelism=4; add 23 SBU for tests; add 0.5 SBU for docs)">
 @y
-  <!ENTITY gdb-buildsize     "761 MB （ドキュメント生成時はさらに 750 MB; テスト実施時はさらに 633 MB）">
-  <!ENTITY gdb-time          "1.7 SBU （parallelism=4; さらにテスト実施時 30 SBU, ドキュメント生成時 0.5 SBU）">
+  <!ENTITY gdb-buildsize     "811 MB （ドキュメント生成時はさらに 777 MB; テスト実施時はさらに 536 MB）">
+  <!ENTITY gdb-time          "1.9 SBU （parallelism=4; さらにテスト実施時 23 SBU, ドキュメント生成時 0.5 SBU）">
 @z
 
 @x

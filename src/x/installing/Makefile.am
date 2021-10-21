@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/x/installing
 CHANGE_FILES_x7drivers = \
 	x7driver-amdgpu.ch      \

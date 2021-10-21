@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -148,21 +144,27 @@
 
 @x
       The tests do not implement the <quote>expected fail</quote> possibility,
-      and a small number of test failures is expected by upstream. More
-      failures may happen because some kernel options are missing. For example,
-      the lack of the <emphasis>dm-delay</emphasis> device mapper target may
-      explain some failures. Some tests are flagged
-      <quote>warned</quote> if
+      and a small number of test failures is expected by upstream.
+      <!-- 1 -->More failures may happen because some kernel options are missing.
+      For example, the lack of the <emphasis>dm-delay</emphasis> device
+      mapper target  explains some failures.
+      <!-- 2 -->Some tests may fail if there is insufficient free space available
+      in the partition with the /tmp directory.  At least one test fails if 16 TB
+      is not available.
+      <!-- 3 -->Some tests are flagged  <quote>warned</quote> if
       <ulink url='https://github.com/jthornber/thin-provisioning-tools'>
       thin-provisioning-tools</ulink> are not installed. A workaround is to
       add the following flags to <command>configure</command>:
 @y
       The tests do not implement the <quote>expected fail</quote> possibility,
-      and a small number of test failures is expected by upstream. More
-      failures may happen because some kernel options are missing. For example,
-      the lack of the <emphasis>dm-delay</emphasis> device mapper target may
-      explain some failures. Some tests are flagged
-      <quote>warned</quote> if
+      and a small number of test failures is expected by upstream.
+      <!-- 1 -->More failures may happen because some kernel options are missing.
+      For example, the lack of the <emphasis>dm-delay</emphasis> device
+      mapper target  explains some failures.
+      <!-- 2 -->Some tests may fail if there is insufficient free space available
+      in the partition with the /tmp directory.  At least one test fails if 16 TB
+      is not available.
+      <!-- 3 -->Some tests are flagged  <quote>warned</quote> if
       <ulink url='https://github.com/jthornber/thin-provisioning-tools'>
       thin-provisioning-tools</ulink> are not installed. A workaround is to
       add the following flags to <command>configure</command>:
@@ -177,8 +179,8 @@
       are done).
 
       <note><simpara>The checks create device nodes in the /tmp directory.  The
-      tests will fail if /tmp is mounted with the nodev
-      option.</simpara></note>
+      tests will fail if /tmp is mounted with the nodev option.
+      </simpara></note>
 @y
       Some tests may hang. They can be removed if necessary, for example:
       <command>rm test/shell/lvconvert-raid-reshape.sh</command>. The tests
@@ -188,8 +190,8 @@
       are done).
 
       <note><simpara>The checks create device nodes in the /tmp directory.  The
-      tests will fail if /tmp is mounted with the nodev
-      option.</simpara></note>
+      tests will fail if /tmp is mounted with the nodev option.
+      </simpara></note>
 @z
 
 @x
@@ -205,14 +207,14 @@
 @z
 
 @x
-      <command>PATH=$PATH:/sbin:/usr/sbin</command>: The path
-      must contain <filename class="directory">/sbin</filename> and
+      <command>PATH+=:/usr/sbin</command>: The path
+      must contain
       <filename class='directory'>/usr/sbin</filename> for proper system tool
       detection by the <command>configure</command> script. This instruction
       ensures that PATH is properly set even if you build as an unprivileged user.
 @y
-      <command>PATH=$PATH:/sbin:/usr/sbin</command>: The path
-      must contain <filename class="directory">/sbin</filename> and
+      <command>PATH+=:/usr/sbin</command>: The path
+      must contain
       <filename class='directory'>/usr/sbin</filename> for proper system tool
       detection by the <command>configure</command> script. This instruction
       ensures that PATH is properly set even if you build as an unprivileged user.

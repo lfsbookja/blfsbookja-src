@@ -10,17 +10,9 @@
 @z
 
 @x
-  <!ENTITY plasma5-buildsize     "1.6 GB (355 MB installed)">
-  <!ENTITY plasma5-time          "14 SBU (using parallelism=4)">
-@y
-  <!ENTITY plasma5-buildsize     "1.6 GB (355 MB installed)">
-  <!ENTITY plasma5-time          "14 SBU (using parallelism=4)">
-@z
-
-@x
   <title>Building Plasma 5</title>
 @y
-  <title>Building Plasma 5</title>
+  <title>Plasma 5 のビルド</title>
 @z
 
 @x
@@ -91,7 +83,7 @@
   <bridgehead renderas="sect4">Required</bridgehead>
   <para role="required">
     <!--<xref linkend="fontforge"/>,-->
-    <xref linkend="GConf"/>,
+    <!-- does not seem to be needed as of 5.22.4 <xref linkend="GConf"/>, -->
     <xref linkend="gtk2"/>,
     <xref linkend="gtk3"/>,
     <xref linkend="kf5-frameworks"/>,
@@ -110,7 +102,7 @@
   <bridgehead renderas="sect4">Required</bridgehead>
   <para role="required">
     <!--<xref linkend="fontforge"/>,-->
-    <xref linkend="GConf"/>,
+    <!-- does not seem to be needed as of 5.22.4 <xref linkend="GConf"/>, -->
     <xref linkend="gtk2"/>,
     <xref linkend="gtk3"/>,
     <xref linkend="kf5-frameworks"/>,
@@ -135,23 +127,39 @@
     <xref linkend="libdbusmenu-qt"/>,
     <xref linkend="libcanberra"/>,
     <xref linkend="libinput"/>,
+    <xref linkend="libpcap"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="lm_sensors"/>,
     <xref linkend="oxygen-icons5"/>, and
     <xref linkend="pciutils"/>
   </para>
 @y
-  <bridgehead renderas="sect4">Recommended</bridgehead>
+  <bridgehead renderas="sect4">&Recommended;</bridgehead>
   <para role="recommended">
     <xref linkend="fftw"/>,
     <xref linkend="gsettings-desktop-schemas"/>,
     <xref linkend="libdbusmenu-qt"/>,
     <xref linkend="libcanberra"/>,
     <xref linkend="libinput"/>,
+    <xref linkend="libpcap"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="lm_sensors"/>,
-    <xref linkend="oxygen-icons5"/>,
+    <xref linkend="oxygen-icons5"/>, and
     <xref linkend="pciutils"/>
+  </para>
+@z
+
+@x
+  <bridgehead renderas="sect4">Recommended (runtime)</bridgehead>
+  <para role="recommended">
+    <xref role="runtime" linkend="accountsservice"/> and
+    <xref role="runtime" linkend="smartmontools"/>
+  </para>
+@y
+  <bridgehead renderas="sect4">&Recommended; (ランタイム)</bridgehead>
+  <para role="recommended">
+    <xref role="runtime" linkend="accountsservice"/>,
+    <xref role="runtime" linkend="smartmontools"/>
   </para>
 @z
 
@@ -160,8 +168,9 @@
   <para role="optional">
     <xref linkend="glu"/>,
     <xref linkend='ibus'/>,
+    <xref linkend='qtwebengine'/>,
     <xref linkend="xorg-synaptics-driver"/>,
-    <ulink url="http://distributions.freedesktop.org/wiki/AppStream">appstream-qt</ulink>, 
+    <ulink url="http://distributions.freedesktop.org/wiki/AppStream">appstream-qt</ulink>,
     <ulink url="https://www.kdevelop.org/">KDevPlatform</ulink>,
     <ulink url="https://gpsd.gitlab.io/gpsd/">libgps</ulink>,
     <ulink url="https://github.com/libhybris/libhybris">libhybris</ulink>,
@@ -169,7 +178,7 @@
     <ulink url="https://bitbucket.org/godsme/mockcpp">mockcpp</ulink>,
     <ulink url="https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</ulink>,
     <ulink url="http://qalculate.github.io/">Qalculate</ulink>,
-    <ulink url="https://launchpad.net/qapt">Qapt</ulink>, 
+    <ulink url="https://launchpad.net/qapt">Qapt</ulink>,
     <ulink url="https://github.com/osiam/osiam">SCIM</ulink>, and
     <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)
   </para>
@@ -178,8 +187,9 @@
   <para role="optional">
     <xref linkend="glu"/>,
     <xref linkend='ibus'/>,
+    <xref linkend='qtwebengine'/>,
     <xref linkend="xorg-synaptics-driver"/>,
-    <ulink url="http://distributions.freedesktop.org/wiki/AppStream">appstream-qt</ulink>, 
+    <ulink url="http://distributions.freedesktop.org/wiki/AppStream">appstream-qt</ulink>,
     <ulink url="https://www.kdevelop.org/">KDevPlatform</ulink>,
     <ulink url="https://gpsd.gitlab.io/gpsd/">libgps</ulink>,
     <ulink url="https://github.com/libhybris/libhybris">libhybris</ulink>,
@@ -187,8 +197,8 @@
     <ulink url="https://bitbucket.org/godsme/mockcpp">mockcpp</ulink>,
     <ulink url="https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</ulink>,
     <ulink url="http://qalculate.github.io/">Qalculate</ulink>,
-    <ulink url="https://launchpad.net/qapt">Qapt</ulink>, 
-    <ulink url="https://github.com/osiam/osiam">SCIM</ulink>, and
+    <ulink url="https://launchpad.net/qapt">Qapt</ulink>,
+    <ulink url="https://github.com/osiam/osiam">SCIM</ulink>,
     <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)
   </para>
 @z

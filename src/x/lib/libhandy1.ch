@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libhandy1-buildsize     "22 MB (with tests)">
+  <!ENTITY libhandy1-buildsize     "17 MB (with tests)">
   <!ENTITY libhandy1-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY libhandy1-buildsize     "22 MB（テスト込み）">
+  <!ENTITY libhandy1-buildsize     "17 MB（テスト込み）">
   <!ENTITY libhandy1-time          "0.4 SBU（テスト込み）">
 @z
 

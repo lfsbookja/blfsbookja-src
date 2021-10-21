@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -103,6 +99,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="asciidoc"/>,
       <xref linkend="xmlto"/> with one or more of the following:
       <xref linkend="fop"/>,
       <xref linkend="Links"/>,
@@ -113,12 +110,12 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="xmlto"/>、さらに以下のいずれか１つ：
+      <xref linkend="asciidoc"/>,
+      <xref linkend="xmlto"/> さらに以下のいずれか１つ：
       <xref linkend="fop"/>,
       <xref linkend="Links"/>,
       <xref linkend="lynx"/>,
-      <ulink url="&w3m-url;">W3m</ulink>
-      (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため)
+      <ulink url="&w3m-url;">W3m</ulink> (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため)
     </para>
 @z
 

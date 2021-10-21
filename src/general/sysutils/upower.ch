@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -112,8 +108,9 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="pygobject3"/>,
-      <xref linkend="python-dbusmock"/>, and 
-      <xref linkend="umockdev"/> (for part of the test suite).
+      <xref linkend="python-dbusmock"/>,
+      <xref linkend="umockdev"/> (for part of the test suite), and
+      <ulink url="https://libimobiledevice.org/">libimobiledevice</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -121,7 +118,8 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="pygobject3"/>,
       <xref linkend="python-dbusmock"/>,
-      <xref linkend="umockdev"/> (テストスイートの一部に必要)
+      <xref linkend="umockdev"/> (テストスイートの一部に必要),
+      <ulink url="https://libimobiledevice.org/">libimobiledevice</ulink>
     </para>
 @z
 

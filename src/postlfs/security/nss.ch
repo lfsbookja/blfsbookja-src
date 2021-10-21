@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -142,9 +138,9 @@
 @z
 
 @x
-      To run the tests, execute the following commands (1 test is known to fail):
+      To run the tests, execute the following commands<!--(1 test is known to fail)-->:
 @y
-      To run the tests, execute the following commands (1 test is known to fail):
+      To run the tests, execute the following commands<!--(1 test is known to fail)-->:
 @z
 
 @x

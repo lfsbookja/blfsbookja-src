@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -82,9 +78,9 @@
 
 @x
       The instructions below automate the configuration process by piping
-      <command>yes</command> to the <command>make config</command> command.
+      <command>yes</command> to the <command>make</command> command.
       If you wish to run the interactive configuration process (by changing
-      the instruction to just <command>make config</command>), but you are
+      the instruction to just <command>make</command>), but you are
       not sure how to answer all the questions, then just accept the defaults.
       This will be just fine in the majority of cases. What you're asked here
       is a bunch of questions about which network protocols you've enabled
@@ -95,9 +91,10 @@
       support for those protocols in its programs, but it's up to the kernel
       to make the protocols available.
 @y
-      以下にある <command>make config</command> の実行に対しては、<command>yes</command> をパイプにより与えることで configure の処理を自動化しています。
+      The instructions below automate the configuration process by piping
+      <command>yes</command> to the <command>make</command> command.
       If you wish to run the interactive configuration process (by changing
-      the instruction to just <command>make config</command>), but you are
+      the instruction to just <command>make</command>), but you are
       not sure how to answer all the questions, then just accept the defaults.
       This will be just fine in the majority of cases. What you're asked here
       is a bunch of questions about which network protocols you've enabled
@@ -124,13 +121,13 @@
 @z
 
 @x
-      The patch below cleans up the installation so that it does not
-      overwrite the <application>ifconfig</application> and
-      <application>hostname</application> programs that were installed in LFS.
+      For this package, we use the DESTDIR method of installation in order
+      to easily remove files from the build that overwrite those that we want
+      to keep or are not appropriate for our system.
 @y
-      The patch below cleans up the installation so that it does not
-      overwrite the <application>ifconfig</application> and
-      <application>hostname</application> programs that were installed in LFS.
+      For this package, we use the DESTDIR method of installation in order
+      to easily remove files from the build that overwrite those that we want
+      to keep or are not appropriate for our system.
 @z
 
 @x
@@ -159,11 +156,27 @@
 @z
 
 @x
-      <command>sed -i '/#include &lt;netinet\/ip.h&gt;/d' iptunnel.c</command>:
-      This fixes build breakage with linux-4.8 headers.
+      <command>export BINDIR='/usr/bin' SBINDIR='/usr/bin'</command>:
+      Ensure the executables are installed in the correct location.
 @y
-      <command>sed -i '/#include &lt;netinet\/ip.h&gt;/d' iptunnel.c</command>:
-      This fixes build breakage with linux-4.8 headers.
+      <command>export BINDIR='/usr/bin' SBINDIR='/usr/bin'</command>:
+      Ensure the executables are installed in the correct location.
+@z
+
+@x
+      <command>yes "" | make </command>: Piping <command>yes</command>
+      to <command>make config</command> skips the interactive configuration and
+      accepts the defaults.
+@y
+      <command>yes "" | make </command>: Piping <command>yes</command>
+      to <command>make config</command> skips the interactive configuration and
+      accepts the defaults.
+@z
+
+@x
+      <command>rm ...</command>: Remove unneeded programs and man pages.
+@y
+      <command>rm ...</command>: Remove unneeded programs and man pages.
 @z
 
 @x
@@ -183,16 +196,30 @@
 @z
 
 @x
-        <seg>arp, 
-        ipmaddr, iptunnel, mii-tool, nameif, netstat,
-        plipconfig, rarp, route, and slattach
+        <seg>arp,
+        ipmaddr,
+        iptunnel,
+        mii-tool,
+        nameif,
+        netstat,
+        plipconfig,
+        rarp,
+        route, and
+        slattach
         </seg>
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>arp, 
-        ipmaddr, iptunnel, mii-tool, nameif, netstat,
-        plipconfig, rarp, route, slattach
+        <seg>arp,
+        ipmaddr,
+        iptunnel,
+        mii-tool,
+        nameif,
+        netstat,
+        plipconfig,
+        rarp,
+        route, and
+        slattach
         </seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
@@ -210,30 +237,6 @@
 @y
             is used to manipulate the kernel's ARP cache, usually
             to add or delete an entry, or to dump the entire cache
-@z
-
-@x dnsdomainname
-            reports the system's DNS domain name.
-@y
-            システムの DNS ドメイン名を表示します。
-@z
-
-@x domainname
-            reports or sets the system's NIS/YP domain name.
-@y
-            システムの NIS/YP ドメイン名を表示または設定します。
-@z
-
-@x hostname
-            reports or sets the name of the current host system.
-@y
-            現在のホストシステム名を表示または設定します。
-@z
-
-@x ifconfig
-            is the main utility for configuring network interfaces.
-@y
-            ネットワークインターフェースを設定するための主要なユーティリティー。
 @z
 
 @x ipmaddr
@@ -270,12 +273,6 @@
             interface statistics
 @z
 
-@x nisdomainname
-            does the same as <command>domainname</command>.
-@y
-            does the same as <command>domainname</command>.
-@z
-
 @x plipconfig
             is used to fine tune the PLIP device parameters, to
             improve its performance
@@ -304,10 +301,4 @@
             attaches a network interface to a serial line. This allows you to
             use normal terminal lines for point-to-point links to others
             computers
-@z
-
-@x ypdomainname
-            does the same as <command>domainname</command>.
-@y
-            <command>domainname</command> と同様のコマンド。
 @z

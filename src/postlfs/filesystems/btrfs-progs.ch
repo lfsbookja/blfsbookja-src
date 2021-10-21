@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY btrfs-progs-buildsize     "63 MB (up to 2.7 GB are used during tests)">
-  <!ENTITY btrfs-progs-time          "0.2 SBU (add 12 SBU for tests, but will be longer on slow disks)">
+  <!ENTITY btrfs-progs-buildsize     "54 MB (up to 2.7 GB are used during tests)">
+  <!ENTITY btrfs-progs-time          "0.2 SBU (add 12.4 SBU for tests, but will be longer on slow disks)">
 @y
-  <!ENTITY btrfs-progs-buildsize     "63 MB（テスト中に最大 2.7 GB まで）">
-  <!ENTITY btrfs-progs-time          "0.2 SBU（テスト実施時はさらに 12 SBU、低速ディスクではそれ以上）">
+  <!ENTITY btrfs-progs-buildsize     "54 MB（テスト中に最大 2.7 GB まで）">
+  <!ENTITY btrfs-progs-time          "0.2 SBU（テスト実施時はさらに 12.4 SBU、低速ディスクではそれ以上）">
 @z
 
 @x

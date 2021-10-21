@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,10 +17,10 @@
 
 @x
       The <application>libnsl</application> package contains the public client
-      interface for NIS(YP) and NIS+. It replaces the NIS library that used to
+      interface for NIS(YP). It replaces the NIS library that used to
       be in glibc.
 @y
-      <application>libnsl</application> パッケージは、NIS（YP）および NIS+ に対するクライアントインターフェースを提供します。
+      <application>libnsl</application> パッケージは、NIS（YP）に対するクライアントインターフェースを提供します。
       これは glibc にて利用されている NIS ライブラリに置き換わるものです。
 @z
 
@@ -126,14 +122,6 @@
 @z
 
 @x
-      <command>mv -v /usr/lib/libnsl.so.2* ...</command>: Move shared
-      libraries into /lib so they are available before /usr is mounted.
-@y
-      <command>mv -v /usr/lib/libnsl.so.2* ...</command>:
-      共有ライブラリを /lib に移動させて、/usr がマウントされる前でも利用可能とします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -154,7 +142,7 @@
           None
         </seg>
         <seg>
-          libnsl.{a,so}
+          libnsl.so
         </seg>
         <seg>
           None
@@ -164,7 +152,7 @@
           &None;
         </seg>
         <seg>
-          libnsl.{a,so}
+          libnsl.so
         </seg>
         <seg>
           &None;

@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "693 MB (with tests, add 182 MB for documentation)">
-  <!ENTITY php-time          "1.7 SBU (with parallelism=4; add 1.9 SBU for tests)">
+  <!ENTITY php-buildsize     "446 MB (with tests, add 182 MB for documentation)">
+  <!ENTITY php-time          "1.6 SBU (with parallelism=4; add 2.1 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "693 MB（テスト込み、ドキュメント生成時はさらに 182 MB）">
-  <!ENTITY php-time          "1.7 SBU（parallelism=4 利用時、テスト実施時はさらに 1.9 SBU）">
+  <!ENTITY php-buildsize     "446 MB（テスト込み、ドキュメント生成時はさらに 182 MB）">
+  <!ENTITY php-time          "1.6 SBU（parallelism=4 利用時、テスト実施時はさらに 2.1 SBU）">
 @z
 
 @x
@@ -118,7 +118,7 @@
       <xref linkend="libxslt"/>,
       an <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command),
-      <xref linkend="pcre"/>,
+      <xref linkend="pcre2"/>,
       <xref linkend="pth"/>,
       <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
@@ -136,7 +136,7 @@
       <xref linkend="libxslt"/>,
       an <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command),
-      <xref linkend="pcre"/>,
+      <xref linkend="pcre2"/>,
       <xref linkend="pth"/>,
       <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
       <ulink url="http://dmalloc.com/">Dmalloc</ulink>,

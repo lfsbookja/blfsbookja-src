@@ -160,7 +160,6 @@
       <xref linkend="git"/> (for downloading test files),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="pygments"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libtiff"/>, and
       <xref linkend="qt5"/>
@@ -174,7 +173,6 @@
       <xref linkend="git"/> (for downloading test files),
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="pygments"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libtiff"/>, and
       <xref linkend="qt5"/>
@@ -274,13 +272,13 @@
 @z
 
 @x
-      <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if 
-      GTK-Doc and Pygments is installed and you wish to rebuild and install 
-      the API documentation.
+      <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if
+      GTK-Doc <!--and Pygments--> is installed and you wish to rebuild and
+      install the API documentation.
 @y
-      <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if 
-      GTK-Doc and Pygments is installed and you wish to rebuild and install 
-      the API documentation.
+      <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if
+      GTK-Doc <!--and Pygments--> is installed and you wish to rebuild and
+      install the API documentation.
 @z
 
 @x

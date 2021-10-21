@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY boost-buildsize     "1.0 GB (180 MB installed)">
-  <!ENTITY boost-time          "1.4 SBU (Using parallelism=4; add 1.3 SBU for tests)">
+  <!ENTITY boost-buildsize     "1.0 GB (189 MB installed)">
+  <!ENTITY boost-time          "1.7 SBU (Using parallelism=4; add 1.3 SBU for tests)">
 @y
-  <!ENTITY boost-buildsize     "1.0 GB (インストールサイズは 180 MB)">
-  <!ENTITY boost-time          "1.4 SBU (parallelism=4; テスト実施時はさらに 1.3 SBU)">
+  <!ENTITY boost-buildsize     "1.0 GB (インストールサイズは 189 MB)">
+  <!ENTITY boost-time          "1.7 SBU (parallelism=4; テスト実施時はさらに 1.3 SBU)">
 @z
 
 @x
@@ -213,12 +213,12 @@
           libboost_atomic.so, libboost_chrono.so, libboost_container.so,
           libboost_context.so, libboost_contract.so, libboost_coroutine.so,
           libboost_date_time.so, libboost_exception.a, libboost_fiber.so,
-          libboost_filesystem.so,
-          libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
+          libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,
+          libboost_json.so, libboost_locale.so,
           libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so,
-          libboost_nowide.so,
+          libboost_nowide.so, libboost_numpy39.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so,
           libboost_python3&python3-minor;.so, libboost_random.so,
           libboost_regex.so, libboost_serialization.so,
@@ -239,12 +239,12 @@
           libboost_atomic.so, libboost_chrono.so, libboost_container.so,
           libboost_context.so, libboost_contract.so, libboost_coroutine.so,
           libboost_date_time.so, libboost_exception.a, libboost_fiber.so,
-          libboost_filesystem.so,
-          libboost_graph.so, libboost_iostreams.so, libboost_locale.so,
+          libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,
+          libboost_json.so, libboost_locale.so,
           libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so,
-          libboost_nowide.so,
+          libboost_nowide.so, libboost_numpy39.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so,
           libboost_python3&python3-minor;.so, libboost_random.so,
           libboost_regex.so, libboost_serialization.so,
