@@ -5,7 +5,6 @@ BOOKdir = @abs_bookdir@/xsoft/graphweb
 CHANGE_FILES = \
 	epiphany.ch       \
 	firefox.ch        \
-	firefox-legacy.ch \
 	falkon.ch         \
 	graphweb.ch       \
 	seamonkey.ch

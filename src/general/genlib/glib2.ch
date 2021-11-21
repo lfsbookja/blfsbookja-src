@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "130 MB (add 6 MB for tests)">
-  <!ENTITY glib2-time          "0.5 SBU (add 0.5 SBU for tests; both using parallelism=4)">
+  <!ENTITY glib2-buildsize     "131 MB (add 6 MB for tests)">
+  <!ENTITY glib2-time          "0.5 SBU (add 0.6 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY glib2-buildsize     "130 MB（テスト実施時はさらに 6 MB）">
-  <!ENTITY glib2-time          "0.5 SBU（テスト実施時はさらに 0.5 SBU、いずれも paralleism=4）">
+  <!ENTITY glib2-buildsize     "131 MB（テスト実施時はさらに 6 MB）">
+  <!ENTITY glib2-time          "0.5 SBU（テスト実施時はさらに 0.6 SBU、いずれも paralleism=4）">
 @z
 
 @x
@@ -252,19 +252,19 @@
 
 @x
         <seg>
-          gapplication,           gdbus, gdbus-codegen, 
+          gapplication,           gdbus, gdbus-codegen,
           gio,                    gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
-          glib-genmarshal,        glib-gettextize, 
-          glib-mkenums,           gobject-query, 
-          gresource,              gsettings, 
+          glib-genmarshal,        glib-gettextize,
+          glib-mkenums,           gobject-query,
+          gresource,              gsettings,
           gtester, and            gtester-report
         </seg>
         <seg>
-          libgio-2.0.so, 
-          libglib-2.0.so, 
+          libgio-2.0.so,
+          libglib-2.0.so,
           libgmodule-2.0.so,
-          libgobject-2.0.so, and 
+          libgobject-2.0.so, and
           libgthread-2.0.so
         </seg>
         <seg>
@@ -272,22 +272,22 @@
           /usr/include/glib-2.0,
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
-          /usr/share/doc/glib-&glib2-version;, and 
-          /usr/share/gtk-doc/html/{gio,glib,gobject}
+          /usr/share/doc/glib-&glib2-version;, and
+          /usr/share/gtk-doc/html/{gio,glib,gobject} (optional)
         </seg>
 @y
         <seg>
-          gapplication,           gdbus, gdbus-codegen, 
+          gapplication,           gdbus, gdbus-codegen,
           gio,                    gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
-          glib-genmarshal,        glib-gettextize, 
-          glib-mkenums,           gobject-query, 
-          gresource,              gsettings, 
+          glib-genmarshal,        glib-gettextize,
+          glib-mkenums,           gobject-query,
+          gresource,              gsettings,
           gtester,                gtester-report
         </seg>
         <seg>
-          libgio-2.0.so, 
-          libglib-2.0.so, 
+          libgio-2.0.so,
+          libglib-2.0.so,
           libgmodule-2.0.so,
           libgobject-2.0.so,
           libgthread-2.0.so
@@ -298,7 +298,7 @@
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
           /usr/share/doc/glib-&glib2-version;,
-          /usr/share/gtk-doc/html/{gio,glib,gobject}
+          /usr/share/gtk-doc/html/{gio,glib,gobject} (optional)
         </seg>
 @z
 

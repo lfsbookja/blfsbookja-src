@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -106,21 +102,19 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus-python"/> and 
-      <xref linkend="python-dbusmock"/> (for tests),
-      <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>,
-      <xref linkend="gtk-doc"/>, and
-      <xref linkend="libxslt"/>
+      <xref linkend="python-dbusmock"/> (for tests), and
+      <!--<xref linkend="DocBook"/>, (Part of libxslt's chain)
+      <xref linkend="docbook-xsl"/>,-->
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus-python"/> と
-      <xref linkend="python-dbusmock"/> (テストのため),
-      <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libxslt"/>
+      <xref linkend="python-dbusmock"/> (for tests) と
+      <!--<xref linkend="DocBook"/>, (Part of libxslt's chain)
+      <xref linkend="docbook-xsl"/>,-->
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 
@@ -135,12 +129,12 @@
         then <xref linkend="DocBook"/> and <xref linkend="docbook-xsl"/> are
         required. If you have installed <xref linkend="libxslt"/>, but you do
         not want to install any of the DocBook packages mentioned, you will
-        need to use <option>--disable-man-pages</option> in the instructions
+        need to use <option>-Dman=false</option> in the instructions
         below.
 @y
         <xref linkend="libxslt"/> をインストールしている場合は <xref
         linkend="DocBook"/> と <xref linkend="docbook-xsl"/> が必要です。
-        また <xref linkend="libxslt"/> はインストールしていても、その DocBook パッケージ類をインストールしたくない場合は、後述する手順にて <option>--disable-man-pages</option> を指定することになります。
+        また <xref linkend="libxslt"/> はインストールしていても、その DocBook パッケージ類をインストールしたくない場合は、後述する手順にて <option>-Dman=false</option> を指定することになります。
 @z
 
 @x
@@ -194,12 +188,12 @@
 @z
 
 @x
-      <option>--with-authfw=shadow</option>: This switch enables the
+      <option>-Dauthfw=shadow</option>: This switch enables the
       package to use the <application>Shadow</application> rather than the
       <application>Linux PAM</application> Authentication framework. Use it
       if you have not installed <application>Linux PAM</application>.
 @y
-      <option>--with-authfw=shadow</option>:
+      <option>-Dauthfw=shadow</option>:
       本スイッチは認証フレームワークとして <application>Linux-PAM</application> ではなく <application>Shadow</application> を使うことを指定します。
       <application>Linux-PAM</application> をインストールしていない場合は、本スイッチを用いてください。
 @z
@@ -256,7 +250,7 @@
 
 @x
         <seg>
-          pkaction, pkcheck, pk-example-frobnicate, pkexec,
+          pkaction, pkcheck, <!--pk-example-frobnicate,--> pkexec,
           pkttyagent and polkitd
         </seg>
         <seg>
@@ -272,7 +266,7 @@
         </seg>
 @y
         <seg>
-          pkaction, pkcheck, pk-example-frobnicate, pkexec,
+          pkaction, pkcheck, <!--pk-example-frobnicate,--> pkexec,
           pkttyagent, polkitd
         </seg>
         <seg>

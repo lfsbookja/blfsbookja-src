@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "102 MB (with tests)">
-  <!ENTITY harfbuzz-time          "0.4 SBU (Using parallelism=4; with tests)">
+  <!ENTITY harfbuzz-buildsize     "109 MB (with tests)">
+  <!ENTITY harfbuzz-time          "0.5 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "102 MB （テスト込み）">
-  <!ENTITY harfbuzz-time          "0.4 SBU （parallelism=4 利用時。テスト込み）"> 
+  <!ENTITY harfbuzz-buildsize     "109 MB （テスト込み）">
+  <!ENTITY harfbuzz-time          "0.5 SBU （parallelism=4 利用時。テスト込み）"> 
 @z
 
 @x
@@ -182,12 +182,12 @@
 @z
 
 @x
-      <parameter>-Dgraphite=enabled</parameter>: This switch enables
+      <parameter>-Dgraphite2=enabled</parameter>: This switch enables
       <application>Graphite2</application> support, which is required for
       building <xref linkend="texlive"/> or <xref linkend="libreoffice"/>
       with system harfbuzz.
 @y
-      <parameter>-Dgraphite=enabled</parameter>:
+      <parameter>-Dgraphite2=enabled</parameter>:
       本スイッチは <application>Graphite2</application> サポートを有効にします。
       <xref linkend="texlive"/> または <xref
       linkend="libreoffice"/> をインストール済 harfbuzz を用いてビルドする場合に必要となります。

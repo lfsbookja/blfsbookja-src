@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY qpdf-buildsize     "271 MB (add 50 MB for tests)">
-  <!ENTITY qpdf-time          "0.5 SBU (using parallelism=4; add 2.0 SBU for tests)">
-@y
-  <!ENTITY qpdf-buildsize     "271 MB (add 50 MB for tests)">
-  <!ENTITY qpdf-time          "0.5 SBU (using parallelism=4; add 2.0 SBU for tests)">
-@z
-
-@x
     <title>Introduction to Qpdf</title>
 @y
     <title>&IntroductionTo1;Qpdf&IntroductionTo2;</title>

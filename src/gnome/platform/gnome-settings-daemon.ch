@@ -93,13 +93,11 @@
       <xref linkend="libcanberra"/>,
       <xref linkend="libgweather"/>,
       <xref linkend="libnotify"/>,
-      <xref linkend="librsvg"/>,
       <xref linkend="libwacom"/>,
       <xref linkend="pulseaudio"/>,
       <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
-      <xref linkend="upower"/>, and
-      <xref linkend="xorg-wacom-driver"/>
+      and <xref linkend="upower"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -115,13 +113,11 @@
       <xref linkend="libcanberra"/>,
       <xref linkend="libgweather"/>,
       <xref linkend="libnotify"/>,
-      <xref linkend="librsvg"/>,
       <xref linkend="libwacom"/>,
       <xref linkend="pulseaudio"/>,
       <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
-      <xref linkend="upower"/>, and
-      <xref linkend="xorg-wacom-driver"/>
+      and <xref linkend="upower"/>
     </para>
 @z
 

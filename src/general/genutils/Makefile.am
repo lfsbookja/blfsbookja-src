@@ -3,7 +3,6 @@
 ##
 BOOKdir = @abs_bookdir@/general/genutils
 CHANGE_FILES = \
-	asciidoc.ch           \
 	asciidoctor.ch        \
 	bogofilter.ch         \
 	compface.ch           \

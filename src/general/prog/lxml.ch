@@ -3,22 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY lxml-buildsize     "204 MB (add 29 MB for tests)">
-  <!ENTITY lxml-time          "1.6 SBU (add 0.6 SBU for tests)">
-@y
-  <!ENTITY lxml-buildsize     "204 MB (add 29 MB for tests)">
-  <!ENTITY lxml-time          "1.6 SBU (add 0.6 SBU for tests)">
 @z
 
 @x
@@ -148,30 +136,30 @@
 @z
 
 @x
-        To build both <application>Python 2</application> and
-        <application>Python 3</application> modules, run:
+        To build <!--both <application>Python 2</application> and --> the
+        <application>Python 3</application> module, run:
 @y
-        To build both <application>Python 2</application> and
-        <application>Python 3</application> modules, run:
+        To build <!--both <application>Python 2</application> and --> the
+        <application>Python 3</application> module, run:
 @z
 
 @x
        If you wish to run the tests, enter:
-       <command>make PYTHON=python2 test</command> and
        <command>make PYTHON=python3 test</command>.
        This will rebuild the package for inplace use before running the tests.
+       Several tests (28 of 1933) are known to fail with Python-3.10.
 @y
        If you wish to run the tests, enter:
-       <command>make PYTHON=python2 test</command> and
        <command>make PYTHON=python3 test</command>.
        This will rebuild the package for inplace use before running the tests.
+       Several tests (28 of 1933) are known to fail with Python-3.10.
 @z
 
 @x
-        To install both modules, issue the following commands as the
+        To install the module, issue the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
-        To install both modules, issue the following commands as the
+        To install the module, issue the following command as the
         <systemitem class="username">root</systemitem> user:
 @z
 
@@ -199,9 +187,9 @@
             None
           </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/lxml,
+<!--            /usr/lib/python&python2-majorver;/site-packages/lxml,
             /usr/lib/python&python2-majorver;/site-packages/lxml-&lxml-version;-py&python2-majorver;-linux-$ARCH.egg-info
-            and/or
+            and/or -->
             /usr/lib/python&python3-majorver;/site-packages/lxml,
             /usr/lib/python&python3-majorver;/site-packages/lxml-&lxml-version;-py&python3-majorver;-linux-$ARCH.egg-info
           </seg>
@@ -213,8 +201,9 @@
             &None;
           </seg>
           <seg>
-            /usr/lib/python&python2-majorver;/site-packages/lxml,
-            /usr/lib/python&python2-majorver;/site-packages/lxml-&lxml-version;-py&python2-majorver;-linux-$ARCH.egg-info,
+<!--            /usr/lib/python&python2-majorver;/site-packages/lxml,
+            /usr/lib/python&python2-majorver;/site-packages/lxml-&lxml-version;-py&python2-majorver;-linux-$ARCH.egg-info
+            and/or -->
             /usr/lib/python&python3-majorver;/site-packages/lxml,
             /usr/lib/python&python3-majorver;/site-packages/lxml-&lxml-version;-py&python3-majorver;-linux-$ARCH.egg-info
           </seg>

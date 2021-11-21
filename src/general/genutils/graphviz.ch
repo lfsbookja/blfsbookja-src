@@ -396,7 +396,7 @@
           acyclic, bcomps, ccomps, circo, cluster, diffimg, dijkstra,
           dot, dot2gxl, dot_builtins, dotty, edgepaint, fdp, gc, gml2gv,
           graphml2gv, gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh,
-          gvpack, gvpr, gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop,
+          gvpack, gvpr, gxl2dot, gxl2gv, lneato, mm2gv, neato, nop,
           osage, patchwork, prune, sccmap, sfdp, tred, twopi,
           unflatten, and vimdot
         </seg>
@@ -404,7 +404,7 @@
           libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so,
           libpathplan.so, libxdot.so, and several plugins in /usr/lib/graphviz.
           There are also several in subdirectories of
-          /usr/lib/{lua,perl5,php,<!--python&python2-majorver;-->,python&python3-majorver;,tcl8.6}.
+          /usr/lib/{lua,perl5, <!--php, -->python&python3-majorver;,tcl8.6}.
           Unfortunately, some libraries are duplicated.
         </seg>
         <seg>
@@ -419,14 +419,14 @@
           acyclic, bcomps, ccomps, circo, cluster, diffimg, dijkstra,
           dot, dot2gxl, dot_builtins, dotty, edgepaint, fdp, gc, gml2gv,
           graphml2gv, gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh,
-          gvpack, gvpr, gxl2dot, gxl2gv, lefty, lneato, mm2gv, neato, nop,
+          gvpack, gvpr, gxl2dot, gxl2gv, lneato, mm2gv, neato, nop,
           osage, patchwork, prune, sccmap, sfdp, tred, twopi,
           unflatten, and vimdot
         </seg>
         <seg>
           libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so,
           libpathplan.so, libxdot.so, /usr/lib/graphviz 内に数種のプラグイン。
-          さらに /usr/lib/{lua,perl5,php,<!--python&python2-majorver;-->,python&python3-majorver;,tcl8.6} 配下のサブディレクトリにも数種あるが、ただしライブラリの中には重複しているものがある。
+          さらに /usr/lib/{lua,perl5, <!--php, -->python&python3-majorver;,tcl8.6} 配下のサブディレクトリにも数種あるが、ただしライブラリの中には重複しているものがある。
         </seg>
         <seg>
           /usr/include/graphviz,

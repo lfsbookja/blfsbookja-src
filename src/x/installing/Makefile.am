@@ -24,6 +24,7 @@ CHANGE_FILES = \
 	libinput.ch            \
 	libXau.ch              \
 	libxcb.ch              \
+	libxcvt.ch             \
 	libXdmcp.ch            \
 	mesa.ch                \
 	TTF-and-OTF-fonts.ch   \

@@ -229,12 +229,14 @@
           <!--pw-pulse,-->
           pw-reserve,
           pw-top,
+          pw-v4l2,
           spa-acp-tool,
           spa-inspect,
           spa-json-dump,
           spa-monitor, 
           spa-resample, and
-          pw-midiplay, pw-midirecord, pw-play, and pw-record (symlinks to pw-cat)
+          pw-dsdplay, pw-midiplay, pw-midirecord, pw-play, and pw-record
+          (symlinks to pw-cat)
         </seg>
         <seg>
           libpipewire-0.3.so and
@@ -286,12 +288,14 @@
           <!--pw-pulse,-->
           pw-reserve,
           pw-top,
+          pw-v4l2,
           spa-acp-tool,
           spa-inspect,
           spa-json-dump,
           spa-monitor, 
           spa-resample, and
-          pw-midiplay, pw-midirecord, pw-play, and pw-record (symlinks to pw-cat)
+          pw-dsdplay, pw-midiplay, pw-midirecord, pw-play, and pw-record
+          (symlinks to pw-cat)
         </seg>
         <seg>
           libpipewire-0.3.so and

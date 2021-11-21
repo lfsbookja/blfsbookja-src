@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY icu-buildsize     "354 MB (add 36 MB for tests)">
-  <!ENTITY icu-time          "0.9 SBU (Using parallelism=4; add 2.0 SBU for tests)">
+  <!ENTITY icu-buildsize     "367 MB (add 37 MB for tests)">
+  <!ENTITY icu-time          "0.7 SBU (Using parallelism=4; add 0.8 SBU for tests)">
 @y
-  <!ENTITY icu-buildsize     "354 MB (テスト実施時はさらに 36 MB)">
-  <!ENTITY icu-time          "0.9 SBU (parallelism=4  利用時。テスト実施時はさらに 2.0 SBU)">
+  <!ENTITY icu-buildsize     "367 MB (テスト実施時はさらに 37 MB)">
+  <!ENTITY icu-time          "0.7 SBU (parallelism=4  利用時。テスト実施時はさらに 0.8 SBU)">
 @z
 
 @x
@@ -178,8 +178,8 @@
         <seg>
           derb, escapesrc, genbrk, genccode, gencfu, gencmn, gencnval,
           gendict, gennorm2,
-          genrb, gensprep, icu-config, icuinfo, icupkg, makeconv, pkgdata, and
-          uconv
+          genrb, gensprep, icu-config, icuexportdata, icuinfo, icupkg,
+          makeconv, pkgdata, and uconv
         </seg>
         <seg>
           libicudata.so, libicui18n.so, libicuio.so,
@@ -194,8 +194,8 @@
         <seg>
           derb, escapesrc, genbrk, genccode, gencfu, gencmn, gencnval,
           gendict, gennorm2,
-          genrb, gensprep, icu-config, icuinfo, icupkg, makeconv, pkgdata,
-          uconv
+          genrb, gensprep, icu-config, icuexportdata, icuinfo, icupkg,
+          makeconv, pkgdata, uconv
         </seg>
         <seg>
           libicudata.so, libicui18n.so, libicuio.so,

@@ -128,15 +128,15 @@
 
 @x
       The <command>S=...</command> option allows to skip tests. The
-      <command>shell/thin-flags.sh</command> test has been reported to freeze
-      the computer.
+      <command>lvconvert-repair-replace</command> test has been reported
+      to hang.
       Other targets are available and can be listed with
       <command>make -C test help</command>. The test timings are very dependent
       on the speed of the disk(s), and on the number of enabled kernel options.
 @y
       The <command>S=...</command> option allows to skip tests. The
-      <command>shell/thin-flags.sh</command> test has been reported to freeze
-      the computer.
+      <command>lvconvert-repair-replace</command> test has been reported
+      to hang.
       Other targets are available and can be listed with
       <command>make -C test help</command>. The test timings are very dependent
       on the speed of the disk(s), and on the number of enabled kernel options.
@@ -271,7 +271,8 @@
 
 @x
         <seg>
-          blkdeactivate, dmeventd (optional), dmsetup, fsadm, lvm, and lvmdump. 
+          blkdeactivate, dmeventd (optional), dmsetup, fsadm, lvm, lvmdump,
+          and lvm_import_vdo.
           There are also numerous symbolic links to lvm that implement specific
           functionalities
         </seg>
@@ -279,26 +280,29 @@
           libdevmapper.so and liblvm2cmd.so; optional:
           libdevmapper-event.so, libdevmapper-event-lvm2.so,
           libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2raid.so,
-          libdevmapper-event-lvm2snapshot.so, and libdevmapper-event-lvm2thin.so
+          libdevmapper-event-lvm2snapshot.so, libdevmapper-event-lvm2thin.so,
+          and libdevmapper-event-lvm2vdo.so
         </seg>
         <seg>
           /etc/lvm and
-          /lib/device-mapper (optional)
+          /usr/lib/device-mapper (optional)
         </seg>
 @y
         <seg>
-          blkdeactivate, dmeventd (任意ビルド), dmsetup, fsadm, lvm, lvmdump 
+          blkdeactivate, dmeventd (任意ビルド), dmsetup, fsadm, lvm, lvmdump,
+          lvm_import_vdo
           この他に lvm に対してのシンボリックリンクが数多くあり、所定の機能を提供します。
         </seg>
         <seg>
           libdevmapper.so and liblvm2cmd.so; optional:
           libdevmapper-event.so, libdevmapper-event-lvm2.so,
           libdevmapper-event-lvm2mirror.so, libdevmapper-event-lvm2raid.so,
-          libdevmapper-event-lvm2snapshot.so, libdevmapper-event-lvm2thin.so
+          libdevmapper-event-lvm2snapshot.so, libdevmapper-event-lvm2thin.so,
+          libdevmapper-event-lvm2vdo.so
         </seg>
         <seg>
           /etc/lvm and
-          /lib/device-mapper (任意ビルド)
+          /usr/lib/device-mapper (任意ビルド)
         </seg>
 @z
 

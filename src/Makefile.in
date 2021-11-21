@@ -208,6 +208,7 @@ ECHO_T = @ECHO_T@
 ETAGS = @ETAGS@
 EXEEXT = @EXEEXT@
 FOP = @FOP@
+GITVER = @GITVER@
 INSTALL = @INSTALL@
 INSTALL_DATA = @INSTALL_DATA@
 INSTALL_PROGRAM = @INSTALL_PROGRAM@
@@ -240,7 +241,6 @@ PDF_OUTPUT = ../blfsbookja-git.pdf
 SET_MAKE = @SET_MAKE@
 SHELL = @SHELL@
 STRIP = @STRIP@
-SVNVER = @SVNVER@
 TIDY = @TIDY@
 TXT = @TXT@
 VERSION = @VERSION@
@@ -650,7 +650,8 @@ tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch $(srcdir)/tidy.sed
 
 git-version.sh: $(BOOKdir)/git-version.sh
 	sed -e "s|version\.ent|$(abs_builddir)/version\.ent|g" \
-            -e "/^full_date/afull_date=\"\$$year/\$$month_digit/\$$day\"" $^ > $@
+            -e "/month=/s/+%B/+%m/" \
+            -e "/^full_date/afull_date=\"\$$year/\$$month/\$$day\"" $^ > $@
 conditional.ent: $(BOOKdir)/conditional.ent
 	cp -p $^ $@
 

@@ -244,14 +244,14 @@
         A couple of common configuration changes are to set the path for the
         super user and to allow members of the wheel group to execute all
         commands after providing their own credientials. Use the following
-        commands to create the <filename>/etc/sudoers.d/sudo</filename>
+        commands to create the <filename>/etc/sudoers.d/00-sudo</filename>
         configuration file as the
         <systemitem class="username">root</systemitem> user:
 @y
         A couple of common configuration changes are to set the path for the
         super user and to allow members of the wheel group to execute all
         commands after providing their own credientials. Use the following
-        commands to create the <filename>/etc/sudoers.d/sudo</filename>
+        commands to create the <filename>/etc/sudoers.d/00-sudo</filename>
         configuration file as the
         <systemitem class="username">root</systemitem> user:
 @z

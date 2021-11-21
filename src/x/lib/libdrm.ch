@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libdrm-buildsize     "10 MB (with tests)">
-  <!ENTITY libdrm-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libdrm-buildsize     "8.7 MB (with tests)">
+  <!ENTITY libdrm-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libdrm-buildsize     "10 MB (テスト込み)">
-  <!ENTITY libdrm-time          "less than 0.1 SBU (テスト込み)">
+  <!ENTITY libdrm-buildsize     "8.7 MB (テスト込み)">
+  <!ENTITY libdrm-time          "0.2 SBU (テスト込み)">
 @z
 
 @x
@@ -159,6 +159,7 @@
       30 second timeout.-->
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+@z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:

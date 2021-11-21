@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY valgrind-buildsize     "629 MB (add 103 MB for tests)">
-  <!ENTITY valgrind-time          "0.5 SBU (Using parallelism=4; add 7.9 SBU for tests)">
+  <!ENTITY valgrind-buildsize     "550 MB (add 62 MB for tests)">
+  <!ENTITY valgrind-time          "0.5 SBU (Using parallelism=4; add 7.5 SBU for tests)">
 @y
-  <!ENTITY valgrind-buildsize     "629 MB (テスト実施時はさらに 103 MB)">
-  <!ENTITY valgrind-time          "0.5 SBU (parallelism=4 利用時。テスト実施時はさらに 7.9 SBU)">
+  <!ENTITY valgrind-buildsize     "550 MB (テスト実施時はさらに 62 MB)">
+  <!ENTITY valgrind-time          "0.5 SBU (parallelism=4 利用時。テスト実施時はさらに 7.5 SBU)">
 @z
 
 @x
@@ -92,9 +88,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <!-- The below programs are no longer used or looked for. -->
-      <!--<xref linkend="bind"/> or <xref linkend="bind-utils"/> (for tests),
-      <xref linkend="boost"/>, --> 
       <xref linkend="gdb"/> (for tests), 
       <xref linkend="llvm"/> (with Clang), and
       <xref linkend="which"/> (for tests)
@@ -102,9 +95,6 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <!-- The below programs are no longer used or looked for. -->
-      <!--<xref linkend="bind"/> or <xref linkend="bind-utils"/> (for tests),
-      <xref linkend="boost"/>, --> 
       <xref linkend="gdb"/> (テスト用), 
       <xref linkend="llvm"/> (Clang 込み),
       <xref linkend="which"/> (テスト用)
@@ -133,16 +123,16 @@
 @x
       To test the results, issue: <command>make regtest</command>. The tests
       may hang forever if <xref linkend="gdb"/> is not installed. Some tests
-      are known to hang also, depending on the version of glibc. Some tests 
-      in the "drd" test suite are known to fail as well. Problematic
+      are known to hang also, depending on the version of glibc. A few test
+       can fail in various suites. Problematic
       tests can be disabled by changing the <userinput>prereq:</userinput> line
       in the corresponding <filename>.vgtest</filename> file to
       <userinput>prereq: false</userinput>. For example:
 @y
       To test the results, issue: <command>make regtest</command>. The tests
       may hang forever if <xref linkend="gdb"/> is not installed. Some tests
-      are known to hang also, depending on the version of glibc. Some tests 
-      in the "drd" test suite are known to fail as well. Problematic
+      are known to hang also, depending on the version of glibc. A few test
+       can fail in various suites. Problematic
       tests can be disabled by changing the <userinput>prereq:</userinput> line
       in the corresponding <filename>.vgtest</filename> file to
       <userinput>prereq: false</userinput>. For example:
@@ -216,20 +206,6 @@
           vgdb
         </seg>
         <seg>
-           <!-- Moved to /usr/lib/valgrind in 3.17.0
-          libcoregrind-&lt;Arch&gt;-linux.a,
-          libgcc-sup-&lt;Arch&gt;-linux.a,
-          libreplacemalloc_toolpreload-&lt;Arch&gt;-linux.a,
-          libvex-&lt;Arch&gt;-linux.a,
-          libvexmultiarch-amd64-linux.a,
-          vgpreload_core-&lt;Arch&gt;-linux.so,
-          vgpreload_drd-&lt;Arch&gt;-linux.so,
-          vgpreload_exp-dhat-&lt;Arch&gt;-linux.so,
-          vgpreload_helgrind-&lt;Arch&gt;-linux.so,
-          vgpreload_massif-&lt;Arch&gt;-linux.so, and
-          vgpreload_memcheck-&lt;Arch&gt;-linux.so, where
-          &lt;Arch&gt; is x86 or amd64
-          -->
           None
         </seg>
         <seg>
@@ -252,20 +228,6 @@
           vgdb
         </seg>
         <seg>
-           <!-- Moved to /usr/lib/valgrind in 3.17.0
-          libcoregrind-&lt;Arch&gt;-linux.a,
-          libgcc-sup-&lt;Arch&gt;-linux.a,
-          libreplacemalloc_toolpreload-&lt;Arch&gt;-linux.a,
-          libvex-&lt;Arch&gt;-linux.a,
-          libvexmultiarch-amd64-linux.a,
-          vgpreload_core-&lt;Arch&gt;-linux.so,
-          vgpreload_drd-&lt;Arch&gt;-linux.so,
-          vgpreload_exp-dhat-&lt;Arch&gt;-linux.so,
-          vgpreload_helgrind-&lt;Arch&gt;-linux.so,
-          vgpreload_massif-&lt;Arch&gt;-linux.so, and
-          vgpreload_memcheck-&lt;Arch&gt;-linux.so, where
-          &lt;Arch&gt; is x86 or amd64
-          -->
           &None;
         </seg>
         <seg>

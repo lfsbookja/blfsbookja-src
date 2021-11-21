@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libgpg-error-buildsize     "13 MB (with tests)">
+  <!ENTITY libgpg-error-buildsize     "11 MB (with tests)">
   <!ENTITY libgpg-error-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libgpg-error-buildsize     "13 MB（テスト込み）">
+  <!ENTITY libgpg-error-buildsize     "11 MB（テスト込み）">
   <!ENTITY libgpg-error-time          "0.1 SBU（テスト込み）">
 @z
 

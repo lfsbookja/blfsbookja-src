@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -169,9 +165,15 @@
 @z
 
 @x
-      Install <application>Exim</application> with the following commands:
+      If you want to build with <application>PAM</application> support, apply the following patch:
 @y
-      以下のコマンドを実行して <application>Exim</application> をビルドします。
+      If you want to build with <application>PAM</application> support, apply the following patch:
+@z
+
+@x
+      Configure <application>Exim</application> with the following commands:
+@y
+      Configure <application>Exim</application> with the following commands:
 @z
 
 @x
@@ -377,12 +379,12 @@
 @z
 
 @x
-      To use a backend database other than <application>Berkeley
-      DB</application>, see the instructions at <ulink url=
+      To use a backend database other than <application>GDBM
+      </application>, see the instructions at <ulink url=
       "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.
 @y
-      To use a backend database other than <application>Berkeley
-      DB</application>, see the instructions at <ulink url=
+      To use a backend database other than <application>GDBM
+      </application>, see the instructions at <ulink url=
       "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.
 @z
 
@@ -459,13 +461,13 @@
       syslog instead of the default
       <filename class='directory'>/var/spool/exim/log</filename> directory. See
       the information at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch52.html"/>.
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/chlog_files.html"/>.
 @y
       You may wish to modify the default configuration and send log files to
       syslog instead of the default
       <filename class='directory'>/var/spool/exim/log</filename> directory. See
       the information at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch52.html"/>.
+      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/chlog_files.html"/>.
 @z
 
 @x

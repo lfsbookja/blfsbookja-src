@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -159,7 +155,7 @@
           mpg123, mpg123-id3dump, mpg123-strip, and out123
         </seg>
         <seg>
-          libmpg123.so and libout123.so
+          libmpg123.so, libout123.so, and libsyn123
         </seg>
         <seg>
           /usr/lib/mpg123
@@ -169,7 +165,7 @@
           mpg123, mpg123-id3dump, mpg123-strip, out123
         </seg>
         <seg>
-          libmpg123.so, libout123.so
+          libmpg123.so, libout123.so, libsyn123
         </seg>
         <seg>
           /usr/lib/mpg123

@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY rust-buildsize     "9.3 GB (407 MB installed) including 291 MB of ~/.cargo files for the user building this. Add 4.0 GB including extra 179 MB of ~/.cargo files if running the tests">
-  <!ENTITY rust-time          "31 SBU (add 13 SBU for tests, both on a 4-core machine)">
-@y
-  <!ENTITY rust-buildsize     "9.3 GB (407 MB installed) including 291 MB of ~/.cargo files for the user building this. Add 4.0 GB including extra 179 MB of ~/.cargo files if running the tests">
-  <!ENTITY rust-time          "31 SBU (add 13 SBU for tests, both on a 4-core machine)">
-@z
-
-@x
     <title>Introduction to Rust</title>
 @y
     <title>&IntroductionTo1;Rust&IntroductionTo2;</title>
@@ -99,8 +91,9 @@
         editors recommend placing the files in the <filename
         class="directory">/opt</filename> directory.  In particular, if you
         have reason to rebuild with a modified configuration (e.g. using the
-        shipped LLVM after building with shared LLVM, or for the
-        reverse situation) it is possible for the install to leave a broken
+        shipped LLVM after building with shared LLVM, perhaps to compile crates
+        for architectres which the BLFS LLVM build does not support)
+        it is possible for the install to leave a broken
         <command>cargo</command> program. In such a situation, either remove
         the existing installation first, or use a different prefix such as
         /opt/rustc-&rust-version;-build2.
@@ -113,8 +106,9 @@
         editors recommend placing the files in the <filename
         class="directory">/opt</filename> directory.  In particular, if you
         have reason to rebuild with a modified configuration (e.g. using the
-        shipped LLVM after building with shared LLVM, or for the
-        reverse situation) it is possible for the install to leave a broken
+        shipped LLVM after building with shared LLVM, perhaps to compile crates
+        for architectres which the BLFS LLVM build does not support)
+        it is possible for the install to leave a broken
         <command>cargo</command> program. In such a situation, either remove
         the existing installation first, or use a different prefix such as
         /opt/rustc-&rust-version;-build2.
@@ -357,23 +351,21 @@
 @z
 
 @x
-      At a minimum, seven tests will fail: ui/asm/inline-syntax.rs#arm,
-      assembly/target-feature-multiple.rs#SINGLEFLAG,
-      assembly/target-feature-multiple.rs#TWOFLAGS,
-      run-make-fulldeps/long-linker-command-lines, run-make-fulldeps/split-debuginfo,
-      run-make-fulldeps/split-dwarf, run-make-fulldeps/sysroot-crates-are-unstable.
-      With any recent version of <command>gdb</command>, four more failures
-      (debuginfo/extern-c-fn.rs, debuginfo/generator-objects.rs,
-      debuginfo/issue-57822.rs, debuginfo/pretty-huge-vec.rs) can be expected.
+      At a minimum, fifteen tests will fail: all the tests (twelve) in
+      the <quote>assembly</quote> suite, apparently because warnings are
+      tuened on,
+      run-make-fulldeps/long-linker-command-lines, run-make-fulldeps/print-cfg,
+      run-make-fulldeps/sysroot-crates-are-unstable.
+      If <command>gdb</command> is installed,  another failure
+      (debuginfo/function-names.rs) can be expected.
 @y
-      At a minimum, seven tests will fail: ui/asm/inline-syntax.rs#arm,
-      assembly/target-feature-multiple.rs#SINGLEFLAG,
-      assembly/target-feature-multiple.rs#TWOFLAGS,
-      run-make-fulldeps/long-linker-command-lines, run-make-fulldeps/split-debuginfo,
-      run-make-fulldeps/split-dwarf, run-make-fulldeps/sysroot-crates-are-unstable.
-      With any recent version of <command>gdb</command>, four more failures
-      (debuginfo/extern-c-fn.rs, debuginfo/generator-objects.rs,
-      debuginfo/issue-57822.rs, debuginfo/pretty-huge-vec.rs) can be expected.
+      At a minimum, fifteen tests will fail: all the tests (twelve) in
+      the <quote>assembly</quote> suite, apparently because warnings are
+      tuened on,
+      run-make-fulldeps/long-linker-command-lines, run-make-fulldeps/print-cfg,
+      run-make-fulldeps/sysroot-crates-are-unstable.
+      If <command>gdb</command> is installed,  another failure
+      (debuginfo/function-names.rs) can be expected.
 @z
 
 @x
@@ -602,33 +594,37 @@
 
 @x
         <seg>
-          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri,
-          rls, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc,
+          cargo-clippy, cargo-fmt, cargo-miri (optional), cargo, clippy-driver,
+          miri (optional),
+          rls, rust-demangler, rust-gdb, rust-gdbgui, rust-lldb, rustc,
           rustdoc, rustfmt.
         </seg>
         <seg>
-          Many lib*&lt;16-byte-hash&gt;.so libraries.
+          librustc-driver-&lt;16-byte-hash&gt;.so,
+          libstd-&lt;16-byte-hash&gt;.so, and
+          libtest-&lt;16-byte-hash&gt;.so
         </seg>
         <seg>
           ~/.cargo,
-          /opt/rustc/lib/rustlib,
-          /opt/rustc/share/doc/rustc-&rust-version;, and
-          /opt/rustc/share/zsh/site-functions
+          /opt/rustc, symbolic link to
+          /opt/rustc-&rust-version;
         </seg>
 @y
         <seg>
-          cargo-clippy, cargo-fmt, cargo-miri, cargo, clippy-driver, miri,
-          rls, rust-analyzer, rust-gdb, rust-gdbgui, rust-lldb, rustc,
+          cargo-clippy, cargo-fmt, cargo-miri (optional), cargo, clippy-driver,
+          miri (optional),
+          rls, rust-demangler, rust-gdb, rust-gdbgui, rust-lldb, rustc,
           rustdoc, rustfmt
         </seg>
         <seg>
-          数多くの lib*&lt;16-byte-hash&gt;.so ライブラリ
+          librustc-driver-&lt;16-byte-hash&gt;.so,
+          libstd-&lt;16-byte-hash&gt;.so, and
+          libtest-&lt;16-byte-hash&gt;.so
         </seg>
         <seg>
           ~/.cargo,
-          /opt/rustc/lib/rustlib,
-          /opt/rustc/share/doc/rustc-&rust-version;,
-          /opt/rustc/share/zsh/site-functions
+          /opt/rustc, symbolic link to
+          /opt/rustc-&rust-version;
         </seg>
 @z
 

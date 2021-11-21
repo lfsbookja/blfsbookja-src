@@ -86,7 +86,6 @@
       <xref linkend="jansson"/>,
       <xref linkend="libtirpc"/>,
       <xref linkend="lmdb"/>, and
-      <!--<xref linkend="python3"/>, and-->
       <xref linkend="rpcsvc-proto"/>
     </para>
 @y
@@ -96,7 +95,6 @@
       <xref linkend="jansson"/>,
       <xref linkend="libtirpc"/>,
       <xref linkend="lmdb"/>,
-      <!--<xref linkend="python3"/>, and-->
       <xref linkend="rpcsvc-proto"/>
     </para>
 @z
@@ -170,8 +168,9 @@
       <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
       <ulink url="https://pypi.org/project/pyasn1/">pyasn1</ulink>,
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
-      <ulink url="https://tevent.samba.org/">tevent</ulink> (included), and
-      <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
+      <ulink url="https://tevent.samba.org/">tevent</ulink> (included),
+      <ulink url="https://tdb.samba.org/">tdb</ulink> (included), and
+      <ulink url="https://download.gnome.org/sources/tracker/2.3/">tracker-2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -213,7 +212,8 @@
       <ulink url="https://pypi.org/project/pyasn1/">pyasn1</ulink>,
       <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
       <ulink url="https://tevent.samba.org/">tevent</ulink> (included),
-      <ulink url="https://tdb.samba.org/">tdb</ulink> (included)
+      <ulink url="https://tdb.samba.org/">tdb</ulink> (included), and
+      <ulink url="https://download.gnome.org/sources/tracker/2.3/">tracker-2</ulink>
     </para>
 @z
 

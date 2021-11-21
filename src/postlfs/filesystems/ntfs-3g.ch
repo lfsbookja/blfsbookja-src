@@ -136,16 +136,17 @@
 @z
 
 @x
-      If you want ordinary users to be able to mount NTFS partitions you'll need
-      to set mount.ntfs with the root user ID. Note: it is probably unsafe to do
-      this on a computer that needs to be secure (like a server). As the
-      <systemitem class="username">root</systemitem> user:
+      It's recommended to use the in-kernel NTFS3 driver for mounting
+      NTFS filesystems, instead of ntfs-3g (see the note at the start of
+      this page).  However, if you want to use ntfs-3g to mount the NTFS
+      filesystems anyway, create a symlink for <command>mount</command>
+      command:
 @y
-      
-      If you want ordinary users to be able to mount NTFS partitions you'll need
-      to set mount.ntfs with the root user ID. Note: it is probably unsafe to do
-      this on a computer that needs to be secure (like a server). As the
-      <systemitem class="username">root</systemitem> user:
+      It's recommended to use the in-kernel NTFS3 driver for mounting
+      NTFS filesystems, instead of ntfs-3g (see the note at the start of
+      this page).  However, if you want to use ntfs-3g to mount the NTFS
+      filesystems anyway, create a symlink for <command>mount</command>
+      command:
 @z
 
 @x
@@ -182,16 +183,6 @@
 @y
       <option>--disable-ntfsprogs</option>: Disables installation of various
       utilities used to manipulate NTFS partitions.
-@z
-
-@x
-      <command>ln -sv ../bin/ntfs-3g /usr/sbin/mount.ntfs</command>: Creating
-      /sbin/mount.ntfs makes <command>mount</command> default to using Ntfs-3g
-      to mount NTFS partitions.
-@y
-      <command>ln -sv ../bin/ntfs-3g /usr/sbin/mount.ntfs</command>: Creating
-      /sbin/mount.ntfs makes <command>mount</command> default to using Ntfs-3g
-      to mount NTFS partitions.
 @z
 
 @x

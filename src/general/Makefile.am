@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 SUBDIRS=genlib genutils graphlib prog sysutils
 BOOKdir = @abs_bookdir@/general
 CHANGE_FILES = \

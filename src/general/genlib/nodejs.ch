@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY nodejs-buildsize     "748 MB (add 27 MB for tests)">
-  <!ENTITY nodejs-time          "11 SBU (add 3.1 SBU for tests: both using parallelism=4 and 4 CPUs online, parts of the tests will use all online CPUs)">
-@y
-  <!ENTITY nodejs-buildsize     "748 MB (add 27 MB for tests)">
-  <!ENTITY nodejs-time          "11 SBU (add 3.1 SBU for tests: both using parallelism=4 and 4 CPUs online, parts of the tests will use all online CPUs)">
-@z
-
-@x
     <title>Introduction to Node.js</title>
 @y
     <title>&IntroductionTo1;Node.js&IntroductionTo2;</title>
@@ -148,12 +140,8 @@
 
 @x
       To test the results, issue: <command>make test-only</command>.
-      One test in test/parallel/test-uv-errno.js is known to fail with
-      libuv-1.42.0.
 @y
       ビルド結果をテストする場合は <command>make test-only</command> を実行します。
-      One test in test/parallel/test-uv-errno.js is known to fail with
-      libuv-1.42.0.
 @z
 
 @x

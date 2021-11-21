@@ -161,9 +161,11 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libtiff"/>, and
+      <xref linkend="libtiff"/>,
       <xref linkend="qt5"/>
-      (required for PDF support in <xref role="nodep" linkend="okular5"/>)
+      (required for PDF support in <xref role="nodep" linkend="okular5"/>), and
+      <ulink url="https://download.qt.io/archive/qt/">Qt-6.1 or later</ulink>.
+
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -174,9 +176,11 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libtiff"/>, and
+      <xref linkend="libtiff"/>,
       <xref linkend="qt5"/>
-      (required for PDF support in <xref role="nodep" linkend="okular5"/>)
+      (required for PDF support in <xref role="nodep" linkend="okular5"/>),
+      <ulink url="https://download.qt.io/archive/qt/">Qt-6.1 or later</ulink>.
+
     </para>
 @z
 

@@ -55,7 +55,8 @@ tidy.conf: $(BOOKdir)/tidy.conf $(srcdir)/tidy.ch $(srcdir)/tidy.sed
 
 git-version.sh: $(BOOKdir)/git-version.sh
 	sed -e "s|version\.ent|$(abs_builddir)/version\.ent|g" \
-            -e "/^full_date/afull_date=\"\$$year/\$$month_digit/\$$day\"" $^ > $@
+            -e "/month=/s/+%B/+%m/" \
+            -e "/^full_date/afull_date=\"\$$year/\$$month/\$$day\"" $^ > $@
 conditional.ent: $(BOOKdir)/conditional.ent
 	cp -p $^ $@
 

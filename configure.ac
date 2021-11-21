@@ -40,20 +40,18 @@ AC_PROG_FOP
 AC_CHECK_IPAFONTDIR
 
 TARGETVER=blfs_version()
+(cd ${bookdir} && sh git-version.sh $revspec)
+cp -p ${bookdir}/version.ent .
+GITVER=`grep 'ENTITY version ' version.ent | sed -e 's/^<!ENTITY version[ ]*\"\([.]*\)\">/\1/'`
 
-ORGDAY=`grep 'ENTITY day' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[[^\"]]*\"\([[0-9]]*\)\".*$/\1/'`
-ORGMONTH=`grep 'ENTITY month' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[[^\"]]*\"\([[0-9]]*\)\".*$/\1/'`
-ORGYEAR=`grep 'ENTITY year' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[[^\"]]*\"\([[0-9]]*\)\".*$/\1/'`
-
-SVNVER=$ORGYEAR$ORGMONTH$ORGDAY
 AC_MSG_CHECKING([for the original XML version])
-if test ! "$SVNVER" = "$TARGETVER"; then
-  AC_MSG_RESULT([$SVNVER])
+if test ! "$GITVER" = "$TARGETVER"; then
+  AC_MSG_RESULT([$GITVER])
   AC_MSG_WARN([Version of the original XML not $TARGETVER])
 else
-  AC_MSG_RESULT([$SVNVER])
+  AC_MSG_RESULT([$GITVER])
 fi
-AC_SUBST(SVNVER)
+AC_SUBST(GITVER)
 
 AC_CONFIG_FILES([Makefile
 		 ctie/Makefile

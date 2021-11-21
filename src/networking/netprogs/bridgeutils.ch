@@ -164,12 +164,12 @@
 
 @x
         To automate bridge creation and configuration,
-        install the <filename>/lib/services/etc/bridge</filename>
+        install the <filename>/usr/lib/services/bridge</filename>
         service script included in the <xref linkend="bootscripts"/>
         package.
 @y
         To automate bridge creation and configuration,
-        install the <filename>/lib/services/etc/bridge</filename>
+        install the <filename>/usr/lib/services/bridge</filename>
         service script included in the <xref linkend="bootscripts"/>
         package.
 @z

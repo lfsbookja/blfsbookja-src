@@ -21,6 +21,7 @@ CHANGE_FILES_pythonmodules = \
 CHANGE_FILES = \
 	${CHANGE_FILES_pythonmodules} \
 	apache-ant.ch     \
+	asciidoc.ch       \
 	autoconf213.ch    \
 	cbindgen.ch       \
 	clisp.ch          \

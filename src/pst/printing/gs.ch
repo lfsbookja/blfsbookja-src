@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gs-buildsize     "342 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "1.8 SBU (Using parallelism=4; with libgs.so)">
+  <!ENTITY gs-buildsize     "360 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "2.5 SBU (Using parallelism=4; with libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "342 MB（フォントと libgs.so）">
-  <!ENTITY gs-time          "1.8 SBU（parallelism=4 指定時、libgs.so 込み）">
+  <!ENTITY gs-buildsize     "360 MB（フォントと libgs.so）">
+  <!ENTITY gs-time          "2.5 SBU（parallelism=4 指定時、libgs.so 込み）">
 @z
 
 @x
@@ -147,6 +143,7 @@
       <xref linkend="fontconfig"/> (required, if you are installing any
       suggested font),
       <xref linkend="freetype2"/>,
+      <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>, and
@@ -161,6 +158,7 @@
       <xref linkend="fontconfig"/> (required, if you are installing any
       suggested font),
       <xref linkend="freetype2"/>,
+      <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,

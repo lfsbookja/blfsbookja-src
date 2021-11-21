@@ -416,18 +416,18 @@
         <seg>automount</seg>
         <seg>
           lookup_dir.so, lookup_file.so, lookup_files.so, lookup_hosts.so,
-          lookup_ldap.so, lookup_multi.so, lookup_nis.so, lookup_nisplus.so,
+          lookup_ldap.so (optional), lookup_multi.so, lookup_nis.so,
           lookup_program.so, lookup_userhome.so, lookup_yp.so, mount_afs.so,
           mount_autofs.so, mount_bind.so, mount_changer.so, mount_ext2.so,
           mount_ext3.so, mount_ext4.so, mount_generic.so, mount_nfs.so,
           mount_nfs4.so, parse_amd.so, and parse_sun.so
            </seg>
-        <seg>/usr/lib/autofs, /etc/autofs</seg>
+        <seg>/usr/lib/autofs and /etc/autofs</seg>
 @y
         <seg>automount</seg>
         <seg>
           lookup_dir.so, lookup_file.so, lookup_files.so, lookup_hosts.so,
-          lookup_ldap.so, lookup_multi.so, lookup_nis.so, lookup_nisplus.so,
+          lookup_ldap.so (optional), lookup_multi.so, lookup_nis.so,
           lookup_program.so, lookup_userhome.so, lookup_yp.so, mount_afs.so,
           mount_autofs.so, mount_bind.so, mount_changer.so, mount_ext2.so,
           mount_ext3.so, mount_ext4.so, mount_generic.so, mount_nfs.so,

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY fribidi-time          "less than 0.1 SBU">
+  <!ENTITY fribidi-buildsize     "22 MB (with tests)">
+  <!ENTITY fribidi-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY fribidi-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY fribidi-buildsize     "22 MB (テスト込み)">
+  <!ENTITY fribidi-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x

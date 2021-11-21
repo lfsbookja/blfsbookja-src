@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -116,9 +112,12 @@
 @z
 
 @x
-      To test the result, issue <command>ninja test</command>.
+      If you wish to run the test suite, you must first extract the
+      <filename>xdgmime</filename> tarball into the current directory,
+      and compile it so that <command>meson</command> can find it:
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      テストスイートを実行したい場合には、まず初めに <filename>xdgmime</filename> tarball をカレントディレクトリに伸長しておく必要があります。
+      そして <command>meson</command> がこれを見い出せるように、コンパイルしておきます。
 @z
 
 @x

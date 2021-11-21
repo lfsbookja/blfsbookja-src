@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY llvm-buildsize     "2.5 GB (715 MB installed, add 11 GB for tests)">
-  <!ENTITY llvm-time          "29 SBU (with parallelism=4, add 38 SBU for tests)">
-@y
-  <!ENTITY llvm-buildsize     "2.5 GB (インストールに 715 MB、テスト実施時はさらに 11 GB)">
-  <!ENTITY llvm-time          "29 SBU (parallelism=4、テスト実施時はさらに 38 SBU)">
-@z
-
-@x
     <title>Introduction to LLVM</title>
 @y
     <title>&IntroductionTo1;LLVM&IntroductionTo2;</title>
@@ -283,7 +275,7 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that a few of the compiler-rt Sanitizer based tests (16 of more than 48000
+      Note that a few of the compiler-rt Sanitizer based tests (13 of more than 59000
       tests run) are known to fail. Some of the LLVM-Unit IR tests are known to
       fail as well.
 @y
@@ -298,7 +290,7 @@
       class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
       by the <systemitem class="username">root</systemitem> user and makes them
       temporarily unusable by all jobs on the machine.)
-      Note that a few of the compiler-rt Sanitizer based tests (16 of more than 48000
+      Note that a few of the compiler-rt Sanitizer based tests (13 of more than 59000
       tests run) are known to fail. Some of the LLVM-Unit IR tests are known to
       fail as well.
 @z
@@ -310,23 +302,23 @@
 @z
 
 @x
-      If you have built the the llvm documentation, install it by running the
-      following commands as the <systemitem class="username">root</systemitem>
-      user:
+      If you have built the llvm documentation, it has been installed
+      by the above command, but it needs to be moved. As the
+      <systemitem class="username">root</systemitem> user:
 @y
-      If you have built the the llvm documentation, install it by running the
-      following commands as the <systemitem class="username">root</systemitem>
-      user:
+      If you have built the llvm documentation, it has been installed
+      by the above command, but it needs to be moved. As the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-      If you have built the clang documentation, it can be installed in the
-      same way (again as the
-      <systemitem class="username">root</systemitem> user):
+      If you have built the clang documentation, it has been installed, but
+      needs to be moved too.  Again as the
+      <systemitem class="username">root</systemitem> user:
 @y
-      If you have built the clang documentation, it can be installed in the
-      same way (again as the
-      <systemitem class="username">root</systemitem> user):
+      If you have built the clang documentation, it has been installed, but
+      needs to be moved too.  Again as the
+      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -356,40 +348,43 @@
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
           clang-cpp (last two symlinks to clang), clang-extdef-mapping, clang-format,
-          clang-offload-bundler, clang-offload-wrapper, 
-          clang-refactor, clang-rename, clang-scan-deps,
-          diagtool, dsymutil, git-clang-format, hmaptool, llc, lli, 
-          llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer,
-          llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat, 
-          llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres, 
+          clang-offload-bundler, clang-offload-wrapper,
+          clang-refactor, clang-rename, clang-repl, clang-scan-deps,
+          diagtool, dsymutil, git-clang-format, hmaptool, llc, lli,
+          llvm-addr2line (symlink to llvm-symbolizer),
+          llvm-ar, llvm-as, llvm-bcanalyzer,
+          llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat,
+          llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
           llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
           llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
-          llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
+          llvm-dwp, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
           llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
-          llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link, 
-          llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml, 
+          llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link,
+          llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml,
           llvm-modextract, llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump,
-          llvm-opt-report, llvm-pdbutil, llvm-profdata, llvm-profgen, 
-          llvm-ranlib (symlink to llvm-ar), llvm-rc, 
-          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce, 
-          llvm-rtdyld, llvm-size, llvm-split, llvm-stress, llvm-strings, 
-          llvm-strip (symlink to llvm-objcopy), llvm-symbolizer, llvm-tblgen, 
-          llvm-undname, llvm-xray, opt, sancov, sanstats, scan-build,
+          llvm-opt-report, llvm-otool (symlink to llv-objdump),
+          llvm-pdbutil, llvm-profdata, llvm-profgen,
+          llvm-ranlib (symlink to llvm-ar), llvm-rc,
+          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce,
+          llvm-rtdyld, llvm-sim, llvm-size, llvm-split, llvm-stress,
+          llvm-strings, llvm-strip (symlink to llvm-objcopy), llvm-symbolizer,
+          llvm-tapi-diff, llvm-tblgen, llvm-undname, llvm-windres (symlink to
+          llvm-rc, llvm-xray, opt, sancov, sanstats, scan-build,
           scan-view, split-file, and verify-uselistorder
         </seg>
         <seg>
-          libLLVM.so, 
-          libLLVM*.a (84 libraries), 
-          libLTO.so, 
-          libRemarks.so, 
+          libLLVM.so,
+          libLLVM*.a (89 libraries),
+          libLTO.so,
+          libRemarks.so,
           libclang.so,
           libclang-cpp.so,
-          libclang*.a (37 libraries),
+          libclang*.a (38 libraries),
           and LLVMgold.so
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
-          /usr/lib/{clang,cmake/{clang,llvm}},
+          /usr/lib/{clang,cmake/{clang,llvm},libear,libscanbuild},
           /usr/share/{clang,opt-viewer,scan-build,scan-view}, and
           /usr/share/doc/llvm-&llvm-version;
         </seg>
@@ -398,40 +393,43 @@
           bugpoint, c-index-test, clang, clang++ (symlinks to
           clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
           clang-cpp (last two symlinks to clang), clang-extdef-mapping, clang-format,
-          clang-offload-bundler, clang-offload-wrapper, 
-          clang-refactor, clang-rename, clang-scan-deps,
-          diagtool, dsymutil, git-clang-format, hmaptool, llc, lli, 
-          llvm-addr2line, llvm-ar, llvm-as, llvm-bcanalyzer,
-          llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat, 
-          llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres, 
+          clang-offload-bundler, clang-offload-wrapper,
+          clang-refactor, clang-rename, clang-repl, clang-scan-deps,
+          diagtool, dsymutil, git-clang-format, hmaptool, llc, lli,
+          llvm-addr2line (symlink to llvm-symbolizer),
+          llvm-ar, llvm-as, llvm-bcanalyzer,
+          llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat,
+          llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
           llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
           llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
-          llvm-dwp, llvm-elfabi, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
+          llvm-dwp, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
           llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
-          llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link, 
-          llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml, 
+          llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link,
+          llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml,
           llvm-modextract, llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump,
-          llvm-opt-report, llvm-pdbutil, llvm-profdata, llvm-profgen, 
-          llvm-ranlib (symlink to llvm-ar), llvm-rc, 
-          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce, 
-          llvm-rtdyld, llvm-size, llvm-split, llvm-stress, llvm-strings, 
-          llvm-strip (symlink to llvm-objcopy), llvm-symbolizer, llvm-tblgen, 
-          llvm-undname, llvm-xray, opt, sancov, sanstats, scan-build,
+          llvm-opt-report, llvm-otool (symlink to llv-objdump),
+          llvm-pdbutil, llvm-profdata, llvm-profgen,
+          llvm-ranlib (symlink to llvm-ar), llvm-rc,
+          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce,
+          llvm-rtdyld, llvm-sim, llvm-size, llvm-split, llvm-stress,
+          llvm-strings, llvm-strip (symlink to llvm-objcopy), llvm-symbolizer,
+          llvm-tapi-diff, llvm-tblgen, llvm-undname, llvm-windres (symlink to
+          llvm-rc, llvm-xray, opt, sancov, sanstats, scan-build,
           scan-view, split-file, and verify-uselistorder
         </seg>
         <seg>
-          libLLVM.so, 
-          libLLVM*.a (84 libraries), 
-          libLTO.so, 
-          libRemarks.so, 
+          libLLVM.so,
+          libLLVM*.a (89 libraries),
+          libLTO.so,
+          libRemarks.so,
           libclang.so,
           libclang-cpp.so,
-          libclang*.a (37 libraries),
+          libclang*.a (38 libraries),
           and LLVMgold.so
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
-          /usr/lib/{clang,cmake/{clang,llvm}},
+          /usr/lib/{clang,cmake/{clang,llvm},libear,libscanbuild},
           /usr/share/{clang,opt-viewer,scan-build,scan-view}, and
           /usr/share/doc/llvm-&llvm-version;
         </seg>

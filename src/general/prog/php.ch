@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "446 MB (with tests, add 182 MB for documentation)">
-  <!ENTITY php-time          "1.6 SBU (with parallelism=4; add 2.1 SBU for tests)">
+  <!ENTITY php-buildsize     "410 MB (with tests, add 188 MB for documentation)">
+  <!ENTITY php-time          "1.7 SBU (with parallelism=4; add 1.8 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "446 MB（テスト込み、ドキュメント生成時はさらに 182 MB）">
-  <!ENTITY php-time          "1.6 SBU（parallelism=4 利用時、テスト実施時はさらに 2.1 SBU）">
+  <!ENTITY php-buildsize     "410 MB（テスト込み、ドキュメント生成時はさらに 188 MB）">
+  <!ENTITY php-time          "1.7 SBU（parallelism=4 利用時、テスト実施時はさらに 1.8 SBU）">
 @z
 
 @x
@@ -159,7 +159,7 @@
       <xref linkend="libwebp"/>,
       <xref linkend="x-window-system"/>,
       <!--<ulink url="http://www.fastio.com/">ClibPDF</ulink>, - site asks for username/password-->
-      <ulink url="http://www.adobe.com/devnet/acrobat/fdftoolkit.html">FDF Toolkit</ulink>,
+      <ulink url="https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/">FDF Toolkit</ulink>,
       <ulink url="https://github.com/libgd/libgd">GD</ulink>, and
       <ulink url="https://www.t1lib.org/">t1lib</ulink>
     </para>
@@ -174,7 +174,7 @@
       <xref linkend="libwebp"/>,
       <xref linkend="x-window-system"/>,
       <!--<ulink url="http://www.fastio.com/">ClibPDF</ulink>, - site asks for username/password-->
-      <ulink url="http://www.adobe.com/devnet/acrobat/fdftoolkit.html">FDF Toolkit</ulink>,
+      <ulink url="https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/">FDF Toolkit</ulink>,
       <ulink url="https://github.com/libgd/libgd">GD</ulink>,
       <ulink url="https://www.t1lib.org/">t1lib</ulink>
     </para>
@@ -216,8 +216,8 @@
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="unixodbc"/>,
-      <ulink url="http://www.softwareag.com/">Adabas</ulink>,
-      <ulink url="http://www.birdstep.com/">Birdstep</ulink>,
+      <ulink url="https://www.softwareag.com/en_corporate/platform/adabas-natural.html">Adabas</ulink>,
+      <ulink url="https://raima.com/raima-database-manager/">Birdstep</ulink>,
       <ulink url="http://cr.yp.to/cdb.html">cdb</ulink>,
       <ulink url="http://www.dbmaker.com/">DBMaker</ulink>,
       <ulink url="http://www.empress.com/">Empress</ulink>,
@@ -239,8 +239,8 @@
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="unixodbc"/>,
-      <ulink url="http://www.softwareag.com/">Adabas</ulink>,
-      <ulink url="http://www.birdstep.com/">Birdstep</ulink>,
+      <ulink url="https://www.softwareag.com/en_corporate/platform/adabas-natural.html">Adabas</ulink>,
+      <ulink url="https://raima.com/raima-database-manager/">Birdstep</ulink>,
       <ulink url="http://cr.yp.to/cdb.html">cdb</ulink>,
       <ulink url="http://www.dbmaker.com/">DBMaker</ulink>,
       <ulink url="http://www.empress.com/">Empress</ulink>,

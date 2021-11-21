@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "562 MB (with docs, add 376 MB if running the tests)">
-  <!ENTITY mesa-time          "3.5 SBU (Using parallelism=4; with docs)">
+  <!ENTITY mesa-buildsize     "635 MB (with docs, add 367 MB if running the tests)">
+  <!ENTITY mesa-time          "4.0 SBU (Using parallelism=4; with docs and tests)">
 @y
-  <!ENTITY mesa-buildsize     "562 MB (ドキュメント込み, テスト実施時はさらに 376 MB)">
-  <!ENTITY mesa-time          "3.5 SBU (parallelism=4 利用時、ドキュメント込み)">
+  <!ENTITY mesa-buildsize     "635 MB (ドキュメント込み, テスト実施時はさらに 367 MB)">
+  <!ENTITY mesa-time          "4.0 SBU (parallelism=4 利用時、ドキュメントとテスト込み)">
 @z
 
 @x
@@ -261,13 +261,9 @@
 @x
       If you built the tests (see 'Command Explanations'), to run them issue:
       <command>ninja test</command>.
-      All 33 subtests tests in the mesa:compiler+glsl / glsl compiler warnings
-      suite are known to fail.
 @y
       If you built the tests (see 'Command Explanations'), to run them issue:
       <command>ninja test</command>.
-      All 33 subtests tests in the mesa:compiler+glsl / glsl compiler warnings
-      suite are known to fail.
 @z
 
 @x
@@ -382,7 +378,7 @@
           libGL.so,
           libGLESv1_CM.so,
           libGLESv2.so,
-          libOSMesa.so,
+<!--          libOSMesa.so,-->
           libXvMCnouveau.so,
           libXvMCr600.so,
           libgbm.so,
@@ -395,11 +391,11 @@
           libxatracker.so,
         </seg>
         <seg>
-          <!-- Begini gallium DRI drivers : this is the full set -->
+          <!-- Begin gallium DRI drivers : this is the full set -->
           d3dadapter9.so (optional), <!-- For Windows games. This is DirectX's
                                           Direct3D -->
           crocus_dri.so,
-          i830_dri.so,
+<!--          i830_dri.so,-->
           i915_dri.so,
           i965_dri.so,
           iris_dri.so,
@@ -427,11 +423,11 @@
           (Many of these drivers are hard-linked).
         </seg>
         <seg>
-          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{dri,vdpau}},
+          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR},lib/{dri,vdpau}},
           $XORG_PREFIX/include/d3adapter (optional),
           $XORG_PREFIX/lib/d3d (optional),
           $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
-          particularly browsers and games)
+          particularly browsers and games),
           $XORG_PREFIX/share/vulkan/icd.d,
           and
           /usr/share/doc/mesa-&mesa-version; (optional)
@@ -445,7 +441,7 @@
           libGL.so,
           libGLESv1_CM.so,
           libGLESv2.so,
-          libOSMesa.so,
+<!--          libOSMesa.so,-->
           libXvMCnouveau.so,
           libXvMCr600.so,
           libgbm.so,
@@ -453,16 +449,16 @@
           <!-- Begin Vulkan drivers -->
           libvulkan_intel.so,
           libvulkan_lvp.so,
-          libvulkan_radeon.so,
+          libvulkan_radeon.so, and
           <!-- End Vulkan drivers -->
           libxatracker.so,
         </seg>
         <seg>
-          <!-- Begini gallium DRI drivers : this is the full set -->
+          <!-- Begin gallium DRI drivers : this is the full set -->
           d3dadapter9.so (optional), <!-- For Windows games. This is DirectX's
                                           Direct3D -->
           crocus_dri.so,
-          i830_dri.so,
+<!--          i830_dri.so,-->
           i915_dri.so,
           i965_dri.so,
           iris_dri.so,
@@ -490,11 +486,11 @@
           (Many of these drivers are hard-linked).
         </seg>
         <seg>
-          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR,vulkan},lib/{dri,vdpau}},
+          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR},lib/{dri,vdpau}},
           $XORG_PREFIX/include/d3adapter (optional),
           $XORG_PREFIX/lib/d3d (optional),
           $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
-          particularly browsers and games)
+          particularly browsers and games),
           $XORG_PREFIX/share/vulkan/icd.d,
           and
           /usr/share/doc/mesa-&mesa-version; (optional)

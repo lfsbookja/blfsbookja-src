@@ -619,7 +619,7 @@ ac_subst_vars='am__EXEEXT_FALSE
 am__EXEEXT_TRUE
 LTLIBOBJS
 LIBOBJS
-SVNVER
+GITVER
 IPAFONTDIR
 FOP
 LYNX
@@ -4892,23 +4892,21 @@ printf "%s\n" "found" >&6; }
   fi
 
 
-TARGETVER=20210413
+TARGETVER=r11.0-198
+(cd ${bookdir} && sh git-version.sh $revspec)
+cp -p ${bookdir}/version.ent .
+GITVER=`grep 'ENTITY version ' version.ent | sed -e 's/^<!ENTITY version *\"\(.*\)\">/\1/'`
 
-ORGDAY=`grep 'ENTITY day' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[^\"]*\"\([0-9]*\)\".*$/\1/'`
-ORGMONTH=`grep 'ENTITY month' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[^\"]*\"\([0-9]*\)\".*$/\1/'`
-ORGYEAR=`grep 'ENTITY year' ${bookdir}/general.ent | gawk '{print $3;}' | sed 's/^[^\"]*\"\([0-9]*\)\".*$/\1/'`
-
-SVNVER=$ORGYEAR$ORGMONTH$ORGDAY
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: checking for the original XML version" >&5
 printf %s "checking for the original XML version... " >&6; }
-if test ! "$SVNVER" = "$TARGETVER"; then
-  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $SVNVER" >&5
-printf "%s\n" "$SVNVER" >&6; }
+if test ! "$GITVER" = "$TARGETVER"; then
+  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $GITVER" >&5
+printf "%s\n" "$GITVER" >&6; }
   { printf "%s\n" "$as_me:${as_lineno-$LINENO}: WARNING: Version of the original XML not $TARGETVER" >&5
 printf "%s\n" "$as_me: WARNING: Version of the original XML not $TARGETVER" >&2;}
 else
-  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $SVNVER" >&5
-printf "%s\n" "$SVNVER" >&6; }
+  { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $GITVER" >&5
+printf "%s\n" "$GITVER" >&6; }
 fi
 
 
