@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gsl-buildsize     "256 MB (with tests, without docs)">
-  <!ENTITY gsl-time          "1.4 SBU (Using parallelism=4; with tests, without docs)">
+  <!ENTITY gsl-buildsize     "213 MB (with tests, without docs)">
+  <!ENTITY gsl-time          "1.2 SBU (Using parallelism=4; with tests, without docs)">
 @y
-  <!ENTITY gsl-buildsize     "256 MB (テスト込み、ドキュメントなし)">
-  <!ENTITY gsl-time          "1.4 SBU (parallelism=4 利用時、テスト込み、ドキュメントなし)">
+  <!ENTITY gsl-buildsize     "213 MB (テスト込み、ドキュメントなし)">
+  <!ENTITY gsl-time          "1.2 SBU (parallelism=4 利用時、テスト込み、ドキュメントなし)">
 @z
 
 @x

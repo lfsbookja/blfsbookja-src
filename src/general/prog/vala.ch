@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY vala-buildsize     "152 MB (add 17 MB for tests)">
-  <!ENTITY vala-time          "0.5 SBU (using parallelism=4; add 3.3 SBU for tests)">
+  <!ENTITY vala-buildsize     "153 MB (add 18 MB for tests)">
+  <!ENTITY vala-time          "0.5 SBU (using parallelism=4; add 4.4 SBU for tests)">
 @y
-  <!ENTITY vala-buildsize     "152 MB (テスト実施時はさらに 17 MB)">
-  <!ENTITY vala-time          "0.5 SBU (parallelism=4 利用時。テスト実施時はさらに 3.3 SBU)">
+  <!ENTITY vala-buildsize     "153 MB (テスト実施時はさらに 18 MB)">
+  <!ENTITY vala-time          "0.5 SBU (parallelism=4 利用時。テスト実施時はさらに 4.4 SBU)">
 @z
 
 @x
@@ -101,7 +101,8 @@
     <para role="optional">
       <xref linkend="dbus"/> (Required for the tests),
       <xref linkend="libxslt"/> (Required for generating the documentation),
-      <ulink url="https://ftpmirror.gnu.org/gnu/help2man/">help2man</ulink>, and
+      <ulink url="https://ftpmirror.gnu.org/gnu/help2man/">help2man</ulink>,
+      <ulink url="https://github.com/relaxng/jing-trang">jing</ulink>, and
       <ulink url="https://weasyprint.org/">weasyprint</ulink>
     </para>
 @y
@@ -110,6 +111,7 @@
       <xref linkend="dbus"/> (テスト時に必要),
       <xref linkend="libxslt"/> (ドキュメント生成時に必要),
       <ulink url="https://ftpmirror.gnu.org/gnu/help2man/">help2man</ulink>,
+      <ulink url="https://github.com/relaxng/jing-trang">jing</ulink>,
       <ulink url="https://weasyprint.org/">weasyprint</ulink>
     </para>
 @z

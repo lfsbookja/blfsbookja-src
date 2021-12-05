@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY yaml-buildsize     "6.7 MB (with tests)">
-  <!ENTITY yaml-time          "0.1 SBU (with tests)">
+  <!ENTITY yaml-buildsize     "6.4 MB (with tests)">
+  <!ENTITY yaml-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY yaml-buildsize     "6.7 MB （テスト込み）">
-  <!ENTITY yaml-time          "0.1 SBU （テスト込み）">
+  <!ENTITY yaml-buildsize     "6.4 MB （テスト込み）">
+  <!ENTITY yaml-time          "&LessThan1;0.1 SBU&LessThan2; （テスト込み）">
 @z
 
 @x

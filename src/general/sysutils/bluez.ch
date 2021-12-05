@@ -220,17 +220,15 @@
 @z
 
 @x revision="systemd"
-        <filename>/etc/bluetooth/mail.conf</filename> is installed automatically
+        <filename>/etc/bluetooth/main.conf</filename> is installed automatically
         during the installation. Additionally, there are two supplementary
-        configuration files. In addition, you can optionally install the
-        following files, as the <systemitem class="username">root</systemitem>
-        user:
+        configuration files. You can optionally install the following files
+        as the <systemitem class="username">root</systemitem> user:
 @y
-        <filename>/etc/bluetooth/mail.conf</filename> is installed automatically
+        <filename>/etc/bluetooth/main.conf</filename> is installed automatically
         during the installation. Additionally, there are two supplementary
-        configuration files. In addition, you can optionally install the
-        following files, as the <systemitem class="username">root</systemitem>
-        user:
+        configuration files. You can optionally install the following files
+        as the <systemitem class="username">root</systemitem> user:
 @z
 
 @x

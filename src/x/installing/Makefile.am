@@ -52,7 +52,8 @@ CHANGE_FILES = \
 	xorgproto.ch           \
 	xorg-config.ch         \
 	xorg-server.ch         \
-	xterm.ch
+	xterm.ch               \
+	xwayland.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

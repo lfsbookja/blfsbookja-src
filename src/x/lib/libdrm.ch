@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libdrm-buildsize     "8.7 MB (with tests)">
-  <!ENTITY libdrm-time          "0.2 SBU (with tests)">
+  <!ENTITY libdrm-buildsize     "8.1 MB (with tests)">
+  <!ENTITY libdrm-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libdrm-buildsize     "8.7 MB (テスト込み)">
-  <!ENTITY libdrm-time          "0.2 SBU (テスト込み)">
+  <!ENTITY libdrm-buildsize     "8.1 MB (テスト込み)">
+  <!ENTITY libdrm-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x

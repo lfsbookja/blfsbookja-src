@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -80,7 +76,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gnutls"/>,
-      <xref linkend="gtk3"/> and
+      <xref linkend="gtk3"/>, and
       <xref linkend="libgcrypt"/>
     </para>
 @y
@@ -95,15 +91,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="python2"/>, and
+      <xref linkend="gobject-introspection"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="python2"/>,
       <xref linkend="vala"/>
     </para>
 @z

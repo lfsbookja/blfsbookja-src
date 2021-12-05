@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "410 MB (with tests, add 188 MB for documentation)">
-  <!ENTITY php-time          "1.7 SBU (with parallelism=4; add 1.8 SBU for tests)">
+  <!ENTITY php-buildsize     "479 MB (with documentation)">
+  <!ENTITY php-time          "1.8 SBU (with parallelism=4; add 1.9 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "410 MB（テスト込み、ドキュメント生成時はさらに 188 MB）">
-  <!ENTITY php-time          "1.7 SBU（parallelism=4 利用時、テスト実施時はさらに 1.8 SBU）">
+  <!ENTITY php-buildsize     "479 MB（ドキュメント込み）">
+  <!ENTITY php-time          "1.8 SBU（parallelism=4 利用時、テスト実施時はさらに 1.9 SBU）">
 @z
 
 @x

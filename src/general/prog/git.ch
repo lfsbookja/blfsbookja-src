@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "220 MB (with downloaded documentation, add 16 MB to build documentation)">
+  <!ENTITY git-buildsize     "219 MB (with downloaded documentation, add 16 MB to build documentation)">
 @y
-  <!ENTITY git-buildsize     "220 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 16 MB）">
+  <!ENTITY git-buildsize     "219 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 16 MB）">
 @z
 
 @x

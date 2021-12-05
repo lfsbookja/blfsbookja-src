@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libsoup-buildsize     "15 MB (with tests)">
+  <!ENTITY libsoup-buildsize     "16 MB (with tests)">
   <!ENTITY libsoup-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libsoup-buildsize     "15 MB (テスト込み)">
+  <!ENTITY libsoup-buildsize     "16 MB (テスト込み)">
   <!ENTITY libsoup-time          "0.2 SBU (parallelism=4 利用、テスト込み)">
 @z
 

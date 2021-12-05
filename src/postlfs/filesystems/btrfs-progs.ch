@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY btrfs-progs-buildsize     "54 MB (up to 2.7 GB are used during tests)">
-  <!ENTITY btrfs-progs-time          "0.2 SBU (add 12.4 SBU for tests, but will be longer on slow disks)">
+  <!ENTITY btrfs-progs-buildsize     "73 MB (up to 2.7 GB are used during tests)">
+  <!ENTITY btrfs-progs-time          "0.1 SBU (add 17 SBU for tests, but will be longer on slow disks)">
 @y
-  <!ENTITY btrfs-progs-buildsize     "54 MB（テスト中に最大 2.7 GB まで）">
-  <!ENTITY btrfs-progs-time          "0.2 SBU（テスト実施時はさらに 12.4 SBU、低速ディスクではそれ以上）">
+  <!ENTITY btrfs-progs-buildsize     "73 MB（テスト中に最大 2.7 GB まで）">
+  <!ENTITY btrfs-progs-time          "0.1 SBU（テスト実施時はさらに 17 SBU、低速ディスクではそれ以上）">
 @z
 
 @x
@@ -93,13 +93,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="asciidoc"/> and
-      <xref linkend="xmlto"/> (both required to generate man pages)
+      <xref linkend="asciidoc"/> (or <xref role="nodep" linkend="asciidoctor"/>)
+      and <xref linkend="xmlto"/> (both required to generate man pages)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="asciidoc"/>,
+      <xref linkend="asciidoc"/> (または <xref role="nodep" linkend="asciidoctor"/>),
       <xref linkend="xmlto"/> (いずれも man ページ生成に必要)
     </para>
 @z

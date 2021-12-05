@@ -10,12 +10,6 @@
 @z
 
 @x
-  <!ENTITY opencv-time              "4.3 SBU (using parallelism=4)">
-@y
-  <!ENTITY opencv-time              "4.3 SBU (using parallelism=4)">
-@z
-
-@x
     <title>Introduction to opencv</title>
 @y
     <title>Introduction to opencv</title>

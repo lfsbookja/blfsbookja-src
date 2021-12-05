@@ -173,7 +173,7 @@
       seems to be a problem with the test suite. If this happens, normally,
       from now on, there will be no more such failures whether you use the
       debug switch or not.
-      Two tests, test-duplicateoptions.py and test-removeemptydirs.t, are known to fail.
+      There are 13 of 876 tests that are known to fail.
 @y
       Normally, the previous failures will be confirmed. However, if
       you add the switch <option>--debug</option> before
@@ -181,7 +181,7 @@
       seems to be a problem with the test suite. If this happens, normally,
       from now on, there will be no more such failures whether you use the
       debug switch or not.
-      Two tests, test-duplicateoptions.py and test-removeemptydirs.t, are known to fail.
+      There are 13 of 876 tests that are known to fail.
 @z
 
 @x

@@ -52,6 +52,7 @@ CHANGE_FILES = \
 	libmbim.ch \
 	libpaper.ch \
 	libportal.ch \
+	libptytty.ch \
 	libqmi.ch \
 	libseccomp.ch \
 	libsigc++.ch \
@@ -63,6 +64,7 @@ CHANGE_FILES = \
 	libuninameslist.ch \
 	libunique.ch \
 	libunistring.ch \
+	liburcu.ch \
 	libusb.ch \
 	libuv.ch \
 	libwacom.ch \

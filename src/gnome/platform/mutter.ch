@@ -86,6 +86,7 @@
       <!-- <xref linkend="clutter"/>, -->
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="graphene"/>,
+      <xref linkend="libxcvt"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="pipewire"/>, and
       <xref linkend="zenity"/>
@@ -97,8 +98,9 @@
       <!-- <xref linkend="clutter"/>, -->
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="graphene"/>,
+      <xref linkend="libxcvt"/>,
       <xref linkend="libxkbcommon"/>,
-      <xref linkend="pipewire"/>, and
+      <xref linkend="pipewire"/>,
       <xref linkend="zenity"/>
     </para>
 @z
@@ -126,9 +128,9 @@
     build the Wayland compositor)</bridgehead>
     <para role="recommended">
       <xref linkend="libinput"/>,
-      <xref linkend="wayland"/>, 
+      <xref linkend="wayland"/>,
       <xref linkend="wayland-protocols"/>, and
-      <xref linkend="xorg-server"/> (with <command>Xwayland</command>).
+      <xref linkend="xwayland"/>.
       Additionally, <xref linkend="gtk3"/> needs to be built with
       <application>Wayland</application> support.
     </para>
@@ -137,9 +139,9 @@
     build the Wayland compositor)</bridgehead>
     <para role="recommended">
       <xref linkend="libinput"/>,
-      <xref linkend="wayland"/>, 
-      <xref linkend="wayland-protocols"/>,
-      <xref linkend="xorg-server"/> (with <command>Xwayland</command>).
+      <xref linkend="wayland"/>,
+      <xref linkend="wayland-protocols"/>, and
+      <xref linkend="xwayland"/>.
       Additionally, <xref linkend="gtk3"/> needs to be built with
       <application>Wayland</application> support.
     </para>

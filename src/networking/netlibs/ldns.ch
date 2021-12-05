@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY ldns-buildsize     "28 MB (with docs)">
+  <!ENTITY ldns-buildsize     "11 MB (with docs)">
   <!ENTITY ldns-time          "0.2 SBU (with docs)">
 @y
-  <!ENTITY ldns-buildsize     "28 MB (ドキュメント込み)">
+  <!ENTITY ldns-buildsize     "11 MB (ドキュメント込み)">
   <!ENTITY ldns-time          "0.2 SBU (ドキュメント込み)">
 @z
 
