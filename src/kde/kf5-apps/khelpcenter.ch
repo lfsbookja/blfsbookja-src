@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY khelpcenter-time          "0.1 SBU (using parallelism=4)">
+  <!ENTITY khelpcenter-time          "0.2 SBU (using parallelism=4)">
 @y
-  <!ENTITY khelpcenter-time          "0.1 SBU (using parallelism=4)">
+  <!ENTITY khelpcenter-time          "0.2 SBU (using parallelism=4)">
 @z
 
 @x

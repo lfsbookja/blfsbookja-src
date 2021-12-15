@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -104,14 +100,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/>,
+      <phrase revision="sysv"><xref linkend="dbus"/>,</phrase>
       <xref linkend="libxml2"/>, and
       <xref linkend="qt5"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/>,
+      <phrase revision="sysv"><xref linkend="dbus"/>,</phrase>
       <xref linkend="libxml2"/>,
       <xref linkend="qt5"/>
     </para>

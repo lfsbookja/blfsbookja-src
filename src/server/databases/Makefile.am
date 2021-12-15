@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/server/databases
 CHANGE_FILES = \
 	databases.ch  \
@@ -12,7 +8,8 @@ CHANGE_FILES = \
 	lmdb.ch       \
 	mariadb.ch    \
 	postgresql.ch \
-	sqlite.ch
+	sqlite.ch     \
+	upgradedb.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcdir = @srcdir@

@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY glib-networking-buildsize     "6.1 MB (with tests)">
+  <!ENTITY glib-networking-buildsize     "6.7 MB (with tests)">
   <!ENTITY glib-networking-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY glib-networking-buildsize     "6.1 MB（テスト込み）">
+  <!ENTITY glib-networking-buildsize     "6.7 MB（テスト込み）">
   <!ENTITY glib-networking-time          "&LessThan1;0.1 SBU&LessThan2; （テスト込み）">
 @z
 

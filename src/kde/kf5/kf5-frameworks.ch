@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY kf5-buildsize     "1.3 GB (241 MB installed)">
-  <!ENTITY kf5-time          "14 SBU (using parallelism=4)">
+  <!ENTITY kf5-buildsize     "1.3 GB (244 MB installed)">
+  <!ENTITY kf5-time          "16 SBU (using parallelism=4)">
 @y
-  <!ENTITY kf5-buildsize     "1.3 GB（インストールは 241 MB）">
-  <!ENTITY kf5-time          "14 SBU（parallelism=4 利用）">
+  <!ENTITY kf5-buildsize     "1.3 GB（インストールは 244 MB）">
+  <!ENTITY kf5-time          "16 SBU（parallelism=4 利用）">
 @z
 
 @x

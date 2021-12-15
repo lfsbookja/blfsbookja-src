@@ -79,6 +79,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtkmm3"/>,
+      <xref linkend="json-glib"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="libsigc"/>, and
       <xref linkend="pulseaudio"/>
@@ -87,6 +88,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtkmm3"/>,
+      <xref linkend="json-glib"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="libsigc"/>,
       <xref linkend="pulseaudio"/>
@@ -148,7 +150,7 @@
           None
         </seg>
         <seg>
-          /usr/share/pavucontrol and /usr/share/doc/pavucontrol-4.0
+          /usr/share/pavucontrol and /usr/share/doc/pavucontrol-5.0
         </seg>
 @y
         <seg>
@@ -158,7 +160,7 @@
           &None;
         </seg>
         <seg>
-          /usr/share/pavucontrol, /usr/share/doc/pavucontrol-4.0
+          /usr/share/pavucontrol, /usr/share/doc/pavucontrol-5.0
         </seg>
 @z
 

@@ -88,7 +88,6 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="db"/>,
       <xref linkend="gcr"/>,
       <xref linkend="libical"/>,
       <xref linkend="libsecret"/>,
@@ -98,7 +97,6 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="db"/>,
       <xref linkend="gcr"/>,
       <xref linkend="libical"/>,
       <xref linkend="libsecret"/>,
@@ -150,6 +148,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="db"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="mitkrb"/>,
       a <xref linkend="server-mail"/> (that provides a <command>sendmail</command> command),
@@ -159,6 +158,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="db"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="mitkrb"/>,
       a <xref linkend="server-mail"/> (that provides a <command>sendmail</command> command),
@@ -244,6 +244,18 @@
       disables building the API documentation. It is broken for
       this package due to the use of a long deprecated gtk-doc program
       that is no longer available.
+@z
+
+@x
+      <parameter>-DWITH_LIBDB=OFF</parameter>: This switch allows building
+      this package without <xref linkend="db"/>.  This package only uses
+      <xref linkend="db"/> to import data from very outdated releases.
+      <xref linkend="sqlite"/> is used for normal operation.
+@y
+      <parameter>-DWITH_LIBDB=OFF</parameter>: This switch allows building
+      this package without <xref linkend="db"/>.  This package only uses
+      <xref linkend="db"/> to import data from very outdated releases.
+      <xref linkend="sqlite"/> is used for normal operation.
 @z
 
 @x revision="sysv"

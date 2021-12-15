@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY ldns-buildsize     "11 MB (with docs)">
+  <!ENTITY ldns-buildsize     "29 MB (with docs)">
   <!ENTITY ldns-time          "0.2 SBU (with docs)">
 @y
-  <!ENTITY ldns-buildsize     "11 MB (ドキュメント込み)">
+  <!ENTITY ldns-buildsize     "29 MB (ドキュメント込み)">
   <!ENTITY ldns-time          "0.2 SBU (ドキュメント込み)">
 @z
 

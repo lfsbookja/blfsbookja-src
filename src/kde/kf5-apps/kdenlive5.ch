@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY kdenlive5-time          "1.6 SBU (using parallelism=4)">
+  <!ENTITY kdenlive5-time          "1.7 SBU (using parallelism=4)">
 @y
-  <!ENTITY kdenlive5-time          "1.6 SBU (using parallelism=4)">
+  <!ENTITY kdenlive5-time          "1.7 SBU (using parallelism=4)">
 @z
 
 @x

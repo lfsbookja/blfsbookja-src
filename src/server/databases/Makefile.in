@@ -241,7 +241,8 @@ CHANGE_FILES = \
 	lmdb.ch       \
 	mariadb.ch    \
 	postgresql.ch \
-	sqlite.ch
+	sqlite.ch     \
+	upgradedb.ch
 
 EXTRA_DIST = $(CHANGE_FILES)
 srcs = $(CHANGE_FILES:.ch=.xml)

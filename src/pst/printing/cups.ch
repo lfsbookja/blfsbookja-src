@@ -100,7 +100,7 @@
       <xref linkend="libpaper"/>,
       <xref linkend="llvm"/> (with <command>clang</command>),
       <xref linkend="mitkrb"/>,
-      <xref linkend="openjdk"/>,
+      <!--<xref linkend="openjdk"/>, Not found in 2.4.0 -->
       <xref linkend="php"/>, and
       <xref linkend="python2"/>
     </para>
@@ -111,7 +111,7 @@
       <xref linkend="libpaper"/>,
       <xref linkend="llvm"/> (with <command>clang</command>),
       <xref linkend="mitkrb"/>,
-      <xref linkend="openjdk"/>,
+      <!--<xref linkend="openjdk"/>, Not found in 2.4.0 -->
       <xref linkend="php"/>,
       <xref linkend="python2"/>
     </para>
@@ -248,13 +248,13 @@
       active graphical session with bus address is necessary to run the tests.
       Make sure that there is not other instance of <application>Cups</application>
       running, otherwise at least 4 tests will fail with "address in use".
-      <!--One test, <filename>httpAddrGetList</filename>, is known to fail.-->
+      One test, <filename>httpAddrGetList</filename>, is known to fail.
 @y
       To test the results, issue: <command>LC_ALL=C make -k check</command>. An already
       active graphical session with bus address is necessary to run the tests.
       Make sure that there is not other instance of <application>Cups</application>
       running, otherwise at least 4 tests will fail with "address in use".
-      <!--One test, <filename>httpAddrGetList</filename>, is known to fail.-->
+      One test, <filename>httpAddrGetList</filename>, is known to fail.
 @z
 
 @x

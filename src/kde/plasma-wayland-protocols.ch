@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author:$
-% $Rev:$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -135,11 +131,11 @@
 @x
         <seg>none</seg>
         <seg>none</seg>
-        <seg>$KF5_PREFIX/share/plasma-wayland-protocols and
-             $KF5_PREFIX/lib/cmake/PlasmaWaylandProtocols</seg>
+        <seg>/usr/share/plasma-wayland-protocols and
+             /usr/lib/cmake/PlasmaWaylandProtocols</seg>
 @y
         <seg>&None;</seg>
         <seg>&None;</seg>
-        <seg>$KF5_PREFIX/share/plasma-wayland-protocols,
-             $KF5_PREFIX/lib/cmake/PlasmaWaylandProtocols</seg>
+        <seg>/usr/share/plasma-wayland-protocols,
+             /usr/lib/cmake/PlasmaWaylandProtocols</seg>
 @z

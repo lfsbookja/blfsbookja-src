@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY boost-buildsize     "1.0 GB (189 MB installed)">
-  <!ENTITY boost-time          "1.7 SBU (Using parallelism=4; add 1.3 SBU for tests)">
+  <!ENTITY boost-buildsize     "1.1 GB (190 MB installed)">
+  <!ENTITY boost-time          "1.5 SBU (Using parallelism=4; add 1.3 SBU for tests)">
 @y
-  <!ENTITY boost-buildsize     "1.0 GB (インストールサイズは 189 MB)">
-  <!ENTITY boost-time          "1.7 SBU (parallelism=4; テスト実施時はさらに 1.3 SBU)">
+  <!ENTITY boost-buildsize     "1.1 GB (インストールサイズは 190 MB)">
+  <!ENTITY boost-time          "1.5 SBU (parallelism=4; テスト実施時はさらに 1.3 SBU)">
 @z
 
 @x
@@ -133,10 +133,10 @@
 @x
       To run the Boost.Build's regression test, issue 
       <command>pushd tools/build/test; python3 test_all.py; popd</command>. 
-      All 154 tests should pass.
+      All 166 tests should pass.
 @y
       Boost.Build の縮退テストを実施するには <command>pushd tools/build/test; python3 test_all.py; popd</command> を実行します。
-      全テスト 154 個が成功するはずです。
+      全テスト 166 個が成功するはずです。
 @z
 
 @x

@@ -16,11 +16,13 @@
 @z
 
 @x
-      The <application>libptytty</application> package provides an OS
-      independent and secure pty/tty and utmp/wtmp/lastlog handling.
+      The <application>libptytty</application> package provides a library that
+      allows for OS independent and secure pty/tty and utmp/wtmp/lastlog
+      handling.
 @y
-      The <application>libptytty</application> package provides an OS
-      independent and secure pty/tty and utmp/wtmp/lastlog handling.
+      The <application>libptytty</application> package provides a library that
+      allows for OS independent and secure pty/tty and utmp/wtmp/lastlog
+      handling.
 @z
 
 @x

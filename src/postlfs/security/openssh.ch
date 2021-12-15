@@ -115,14 +115,14 @@
 @x
     <bridgehead renderas="sect4">Optional Runtime (Used only to gather entropy)</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="openjdk"/>,
+      <!--<xref role="runtime" linkend="openjdk"/>, Not seen in 8.8p1 -->
       <xref role="runtime" linkend="net-tools"/>, and
       <xref role="runtime" linkend="sysstat"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;, 実行時 （エントロピー収集のためにのみ利用される）</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="openjdk"/>,
+      <!--<xref role="runtime" linkend="openjdk"/>, Not seen in 8.8p1 -->
       <xref role="runtime" linkend="net-tools"/>,
       <xref role="runtime" linkend="sysstat"/>
     </para>
