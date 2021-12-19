@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY pipewire-buildsize     "71 MB (with tests)">
+  <!ENTITY pipewire-buildsize     "59 MB (with tests)">
   <!ENTITY pipewire-time          "0.5 SBU (with tests, both using parallelism=4)">
 @y
-  <!ENTITY pipewire-buildsize     "71 MB（テスト込み）">
+  <!ENTITY pipewire-buildsize     "59 MB（テスト込み）">
   <!ENTITY pipewire-time          "0.5 SBU（テスト込み、いずれも parallelism=4 利用）">
 @z
 

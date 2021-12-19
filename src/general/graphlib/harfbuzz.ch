@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "117 MB (with tests)">
+  <!ENTITY harfbuzz-buildsize     "121 MB (with tests)">
   <!ENTITY harfbuzz-time          "0.5 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "117 MB （テスト込み）">
+  <!ENTITY harfbuzz-buildsize     "121 MB （テスト込み）">
   <!ENTITY harfbuzz-time          "0.5 SBU （parallelism=4 利用時。テスト込み）"> 
 @z
 

@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY umockdev-buildsize     "6.3 MB (with tests)">
+  <!ENTITY umockdev-buildsize     "6.5 MB (with tests)">
   <!ENTITY umockdev-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY umockdev-buildsize     "6.3 MB (テスト込み)">
+  <!ENTITY umockdev-buildsize     "6.5 MB (テスト込み)">
   <!ENTITY umockdev-time          "0.2 SBU (テスト込み)">
 @z
 

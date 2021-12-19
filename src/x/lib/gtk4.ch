@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gtk4-buildsize     "670 MB (76 MB installed, add 10 MB for tests)">
-  <!ENTITY gtk4-time          "1.1 SBU (using parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY gtk4-buildsize     "672 MB (78 MB installed, add 310 MB for tests)">
+  <!ENTITY gtk4-time          "1.2 SBU (using parallelism=4, add 0.5 SBU for tests)">
 @y
-  <!ENTITY gtk4-buildsize     "670 MB (76 MB installed, add 10 MB for tests)">
-  <!ENTITY gtk4-time          "1.1 SBU (using parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY gtk4-buildsize     "672 MB (78 MB installed, add 310 MB for tests)">
+  <!ENTITY gtk4-time          "1.2 SBU (using parallelism=4, add 0.5 SBU for tests)">
 @z
 
 @x
@@ -89,7 +89,7 @@
       <xref linkend="libepoxy"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="pango"/>,
-      <xref linkend="wayland-protocols"/>,
+      <xref linkend="wayland-protocols"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
@@ -101,7 +101,7 @@
       <xref linkend="libepoxy"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="pango"/>,
-      <xref linkend="wayland-protocols"/>,
+      <xref linkend="wayland-protocols"/>
     </para>
 @z
 

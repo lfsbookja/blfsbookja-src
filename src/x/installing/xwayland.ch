@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY xwayland-buildsize     "84 MB (add 350 MB for test)">
-  <!ENTITY xwayland-time          "0.3 SBU (with paralellism=4; add 0.8 SBU for test, not including clone time)">
+  <!ENTITY xwayland-buildsize     "71 MB (add 350 MB for test)">
+  <!ENTITY xwayland-time          "0.2 SBU (with paralellism=4; add 0.8 SBU for test, not including clone time)">
 @y
-  <!ENTITY xwayland-buildsize     "84 MB (add 350 MB for test)">
-  <!ENTITY xwayland-time          "0.3 SBU (with paralellism=4; add 0.8 SBU for test, not including clone time)">
+  <!ENTITY xwayland-buildsize     "71 MB (add 350 MB for test)">
+  <!ENTITY xwayland-time          "0.2 SBU (with paralellism=4; add 0.8 SBU for test, not including clone time)">
 @z
 
 @x

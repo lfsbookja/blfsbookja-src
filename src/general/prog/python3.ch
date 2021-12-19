@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY python3-buildsize     "200 MB (add 38 MB for tests)">
-  <!ENTITY python3-time          "2.4 SBU (using parallelism=4; add 1.6 SBU for tests)">
-@y
-  <!ENTITY python3-buildsize     "200 MB (add 38 MB for tests)">
-  <!ENTITY python3-time          "2.4 SBU (using parallelism=4; add 1.6 SBU for tests)">
-@z
-
-@x
     <title>Introduction to Python 3</title>
 @y
     <title>&IntroductionTo1;Python 3&IntroductionTo2;</title>

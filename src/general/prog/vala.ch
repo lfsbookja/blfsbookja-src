@@ -11,10 +11,10 @@
 
 @x
   <!ENTITY vala-buildsize     "153 MB (add 18 MB for tests)">
-  <!ENTITY vala-time          "0.5 SBU (using parallelism=4; add 4.4 SBU for tests)">
+  <!ENTITY vala-time          "0.5 SBU (using parallelism=4; add 3.4 SBU for tests)">
 @y
   <!ENTITY vala-buildsize     "153 MB (テスト実施時はさらに 18 MB)">
-  <!ENTITY vala-time          "0.5 SBU (parallelism=4 利用時。テスト実施時はさらに 4.4 SBU)">
+  <!ENTITY vala-time          "0.5 SBU (parallelism=4 利用時。テスト実施時はさらに 3.4 SBU)">
 @z
 
 @x

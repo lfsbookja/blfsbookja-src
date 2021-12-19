@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/kde/kf5-apps
 CHANGE_FILES = \
 	add-pkgs.ch    \
@@ -14,6 +10,7 @@ CHANGE_FILES = \
 	kdenlive5.ch   \
 	kf5-apps.ch    \
 	khelpcenter.ch \
+	kio-extras.ch  \
 	kmix5.ch       \
 	konsole5.ch    \
 	libkcddb.ch    \

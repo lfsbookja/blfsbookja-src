@@ -147,12 +147,12 @@
        If you wish to run the tests, enter:
        <command>make PYTHON=python3 test</command>.
        This will rebuild the package for inplace use before running the tests.
-       Several tests (28 of 1933) are known to fail with Python-3.10.
+       Several tests (32 of 1948) are known to fail with Python-3.10.1.
 @y
        If you wish to run the tests, enter:
        <command>make PYTHON=python3 test</command>.
        This will rebuild the package for inplace use before running the tests.
-       Several tests (28 of 1933) are known to fail with Python-3.10.
+       Several tests (32 of 1948) are known to fail with Python-3.10.1.
 @z
 
 @x

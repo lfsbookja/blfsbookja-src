@@ -170,16 +170,18 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. One test,
-      <filename>test-font</filename>,
-      <!--<filename>test-layout</filename>, and
-      <filename>test-itemize</filename>, are--> is known to fail if
-      <xref linkend="cantarell-fonts"/> are not installed.
+      To test the results, issue: <command>ninja test</command>. Two tests,
+      <filename>test-font</filename> and 
+      <filename>test-layout</filename>
+      <!--<filename>test-itemize</filename>, are--> are known to fail. <!--if
+      <xref linkend="cantarell-fonts"/> are not installed.-->
       <!-- the other problematic tests get skipped now -->
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      <filename>test-font</filename> という 1 つのテストは、<xref
-      linkend="cantarell-fonts"/> をインストールしていない場合には失敗します。
+      To test the results, issue: <command>ninja test</command>. Two tests,
+      <filename>test-font</filename> and 
+      <filename>test-layout</filename>
+      <!--<filename>test-itemize</filename>, are--> are known to fail. <!--if
+      <xref linkend="cantarell-fonts"/> are not installed.-->
 @z
 
 @x

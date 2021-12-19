@@ -1,16 +1,13 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/networking/netlibs
 CHANGE_FILES = \
 	c-ares.ch          \
 	curl.ch            \
 	geoclue2.ch        \
 	glib-networking.ch \
+	kdsoup.ch          \
 	ldns.ch            \
 	libevent.ch        \
 	libmnl.ch          \
