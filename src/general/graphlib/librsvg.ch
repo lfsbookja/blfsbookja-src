@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "870 MB (26 MB installed), add 217 MB for tests">
-  <!ENTITY librsvg-time          "1.2 SBU (Using parallelism=4), add 1.9 SBU for tests">
+  <!ENTITY librsvg-buildsize     "865 MB (26 MB installed), add 211 MB for tests">
+  <!ENTITY librsvg-time          "1.6 SBU (Using parallelism=4), add 1.9 SBU for tests">
 @y
-  <!ENTITY librsvg-buildsize     "870 MB（インストールに 26 MB）、テスト実施時はさらに 217 MB">
-  <!ENTITY librsvg-time          "1.2 SBU（parallelism=4 利用時）、テスト実施時はさらに 1.9 SBU">
+  <!ENTITY librsvg-buildsize     "865 MB（インストールに 26 MB）、テスト実施時はさらに 211 MB">
+  <!ENTITY librsvg-time          "1.6 SBU（parallelism=4 利用時）、テスト実施時はさらに 1.9 SBU">
 @z
 
 @x
@@ -149,7 +149,7 @@
       and perhaps harfbuzz differ from the versions on the system where the
       reference files were created. For this reason, running the tests is not
       recommended.
-      To test the results anyway, issue: <command>make check</command>.
+      To test the results anyway, issue: <command>make -k check</command>.
 @y
       Many of the tests in 'reftests' may fail (over half in May 2021) because
       they produce, and then diff, graphic files with text and the details such
@@ -157,7 +157,7 @@
       and perhaps harfbuzz differ from the versions on the system where the
       reference files were created. For this reason, running the tests is not
       recommended.
-      To test the results anyway, issue: <command>make check</command>.
+      To test the results anyway, issue: <command>make -k check</command>.
 @z
 
 @x
