@@ -74,24 +74,42 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="gobject-introspection"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>, and
+      <xref linkend="qt5"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
+      <xref linkend="qt5"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="vala"/> and
+      <ulink url="https://gitlab.gnome.org/ebassi/gi-docgen">gi-docgen</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="vala"/>,
+      <ulink url="https://gitlab.gnome.org/ebassi/gi-docgen">gi-docgen</ulink>
     </para>
 @z
 
@@ -147,7 +165,10 @@
           None
         </seg>
         <seg>
-          libportal.so
+          libportal.so,
+          libportal-gtk3.so,
+          libportal-gtk4.so, and
+          libportal-qt5.so
         </seg>
         <seg>
           /usr/include/libportal and
@@ -158,7 +179,10 @@
           &None;
         </seg>
         <seg>
-          libportal.so
+          libportal.so,
+          libportal-gtk3.so,
+          libportal-gtk4.so,
+          libportal-qt5.so
         </seg>
         <seg>
           /usr/include/libportal,

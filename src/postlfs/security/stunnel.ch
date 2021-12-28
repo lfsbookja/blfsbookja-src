@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -23,20 +19,20 @@
       The <application>stunnel</application> package contains a program
       that allows you to encrypt arbitrary TCP connections inside SSL (Secure
       Sockets Layer) so you can easily communicate with clients over secure
-      channels. <application>stunnel</application> can be used to add SSL
+      channels. <!--<application>stunnel</application> can be used to add SSL
       functionality to commonly used <application>Inetd</application> daemons
       such as POP-2, POP-3, and IMAP servers, along with standalone daemons
-      such as NNTP, SMTP, and HTTP. <application>stunnel</application> can
+      such as NNTP, SMTP, and HTTP.--> <application>stunnel</application> can
       also be used to tunnel PPP over network sockets without changes to the
       server package source code.
 @y
       The <application>stunnel</application> package contains a program
       that allows you to encrypt arbitrary TCP connections inside SSL (Secure
       Sockets Layer) so you can easily communicate with clients over secure
-      channels. <application>stunnel</application> can be used to add SSL
+      channels. <!--<application>stunnel</application> can be used to add SSL
       functionality to commonly used <application>Inetd</application> daemons
       such as POP-2, POP-3, and IMAP servers, along with standalone daemons
-      such as NNTP, SMTP, and HTTP. <application>stunnel</application> can
+      such as NNTP, SMTP, and HTTP.--> <application>stunnel</application> can
       also be used to tunnel PPP over network sockets without changes to the
       server package source code.
 @z
@@ -92,6 +88,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="libnsl"/>,
       <ulink url="http://netcat.sourceforge.net/">netcat</ulink>
       (required for tests),
       <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink>,
@@ -101,6 +98,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="libnsl"/>,
       <ulink url="http://netcat.sourceforge.net/">netcat</ulink>
       (required for tests),
       <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink>,
@@ -389,7 +387,7 @@
           libstunnel.so
         </seg>
         <seg>
-          /{etc,usr/lib,var/lib}/stunnel and
+          /{etc,lib,var/lib}/stunnel and
           /usr/share/doc/stunnel-&stunnel-version;
         </seg>
 @y
@@ -400,7 +398,7 @@
           libstunnel.so
         </seg>
         <seg>
-          /{etc,usr/lib,var/lib}/stunnel,
+          /{etc,lib,var/lib}/stunnel,
           /usr/share/doc/stunnel-&stunnel-version;
         </seg>
 @z
@@ -414,11 +412,11 @@
 @x stunnel
             is a program designed to work as an SSL
             encryption wrapper between remote clients and local
-            (<command>{x}inetd</command>-startable) or remote servers
+            or remote servers
 @y
             is a program designed to work as an SSL
             encryption wrapper between remote clients and local
-            (<command>{x}inetd</command>-startable) or remote servers
+            or remote servers
 @z
 
 @x stunnel3

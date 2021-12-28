@@ -337,14 +337,16 @@
 
 @x
           You should now reinstall the <xref linkend="shadow"/>
-          <phrase revision="sysv">package.</phrase>
+          <phrase revision="sysv">package</phrase>
           <phrase revision="systemd"> and <xref linkend="systemd"/>
-          packages.</phrase>
+          packages</phrase>, and install <command>su</command> from
+          <xref linkend='util-linux'/>.
 @y
           You should now reinstall the <xref linkend="shadow"/>
-          <phrase revision="sysv">package.</phrase>
+          <phrase revision="sysv">package</phrase>
           <phrase revision="systemd"> and <xref linkend="systemd"/>
-          packages.</phrase>
+          packages</phrase>, and install <command>su</command> from
+          <xref linkend='util-linux'/>.
 @z
 
 @x

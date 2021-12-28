@@ -271,15 +271,15 @@
     <filename class='extension'>.rpm</filename>
     format, there are two small scripts, <command>rpm2targz</command> and
     <command>deb2targz</command> that are available at
-    <ulink url="&downloads-project;/deb2targz.tar.bz2"/> and
-    <ulink url="&downloads-project;/rpm2targz.tar.bz2"/> to convert the archives
+    <ulink url="&sources-anduin-http;/extras/deb2targz.tar.bz2"/> and
+    <ulink url="&sources-anduin-http;/extras/rpm2targz.tar.bz2"/> to convert the archives
     into a simple <filename>tar.gz</filename> format.</para>
 @y
     <para>
     探し出したパッケージが <filename class='extension'>.deb</filename> や <filename
     class='extension'>.rpm</filename> という形式でしか提供されていない場合、<command>rpm2targz</command>、<command>deb2targz</command> というスクリプトを使うことができます。
-    これらは <ulink url="&downloads-project;/deb2targz.tar.bz2"/> と <ulink
-    url="&downloads-project;/rpm2targz.tar.bz2"/> にあります。
+    これらは <ulink url="&sources-anduin-http;/extras/deb2targz.tar.bz2"/> と <ulink
+    url="&sources-anduin-http;/extras/rpm2targz.tar.bz2"/> にあります。
     これらを使えば、アーカイブファイルを単純な <filename>tar.gz</filename> 形式に変換することができます。
     </para>
 @z

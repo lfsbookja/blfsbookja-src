@@ -207,6 +207,7 @@
           racc, 
           rake, 
           rbs, 
+          rdbg,
           rdoc, 
           ri, 
           ruby, and
@@ -216,7 +217,7 @@
           libruby.so
         </seg>
         <seg>
-          /usr/include/ruby-&ruby-minor-version;.0
+          /usr/include/ruby-&ruby-minor-version;.0,
           /usr/lib/ruby,
           /usr/share/doc/ruby-&ruby-version; and
           /usr/share/ri
@@ -231,6 +232,7 @@
           racc, 
           rake, 
           rbs, 
+          rdbg,
           rdoc, 
           ri, 
           ruby,
@@ -240,7 +242,7 @@
           libruby.so
         </seg>
         <seg>
-          /usr/include/ruby-&ruby-minor-version;.0
+          /usr/include/ruby-&ruby-minor-version;.0,
           /usr/lib/ruby,
           /usr/share/doc/ruby-&ruby-version;,
           /usr/share/ri

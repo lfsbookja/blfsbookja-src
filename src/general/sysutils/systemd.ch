@@ -354,21 +354,17 @@
 @z
 
 @x
-        Listed below are the newly installed libraries and directories
+        Listed below are the newly installed programs
         along with short descriptions.
 @y
-        Listed below are the newly installed libraries and directories
+        Listed below are the newly installed programs
         along with short descriptions.
 @z
 
 @x
       <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -377,25 +373,11 @@
           homectl (if <xref linkend="cryptsetup"/> is installed)
           and userdbctl (optionally)
         </seg>
-        <seg>
-          pam_systemd.so
-          (in <filename class="directory">/lib/security</filename>)
-        </seg>
-        <seg>
-          None
-        </seg>
 @y
         <seg>
           <!-- maybe userdbd/userdbctl can go in LFS, try at next time -->
           homectl (if <xref linkend="cryptsetup"/> is installed),
           userdbctl (optionally)
-        </seg>
-        <seg>
-          pam_systemd.so
-          (in <filename class="directory">/lib/security</filename>)
-        </seg>
-        <seg>
-          &None;
         </seg>
 @z
 

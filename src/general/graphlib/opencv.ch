@@ -332,7 +332,7 @@
           libopencv_videoio.so
         </seg>
         <seg>
-          /usr/include/opencv4
+          /usr/include/opencv4,
           /usr/lib/cmake/opencv4,
           /usr/lib/python&python3-majorver;/site-packages/cv2,
           /usr/share/licenses/opencv4,
@@ -366,7 +366,7 @@
           libopencv_videoio.so
         </seg>
         <seg>
-          /usr/include/opencv4
+          /usr/include/opencv4,
           /usr/lib/cmake/opencv4,
           /usr/lib/python&python3-majorver;/site-packages/cv2,
           /usr/share/licenses/opencv4,

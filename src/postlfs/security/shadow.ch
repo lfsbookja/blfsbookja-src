@@ -395,12 +395,6 @@
 @z
 
 @x
-        <title>'su'</title>
-@y
-        <title>'su'</title>
-@z
-
-@x
         <title>'chage'</title>
 @y
         <title>'chage'</title>
@@ -421,47 +415,45 @@
 @x
             At this point, you should do a simple test to see if
             <application>Shadow</application> is working as expected. Open
-            another terminal and log in as a user, then <command>su</command> to
-            <systemitem class="username">root</systemitem>. If you do not see
-            any errors, then all is well and you should proceed with the rest of
-            the configuration. If you did receive errors, stop now and double
-            check the above configuration files manually. One obvious reason
-            for an error is if the user is not in group <systemitem
-            class="groupname">wheel</systemitem>. You may want to run (as
-            <systemitem class="username">root</systemitem>): <command>usermod
-            -a -G wheel <replaceable>&lt;user&gt;</replaceable></command>.
-            Any other error is the sign of an error in the above procedure.
+            another terminal and log in as
+            <systemitem class="username">root</systemitem>, and then run
+            <command>login</command> and login as another user.  If you do
+            not see any errors, then all is well and you should proceed with
+            the rest of the configuration. If you did receive errors, stop
+            now and double check the above configuration files manually.
+            Any error is the sign of an error in the above procedure.
             You can also run the
-            test suite from the <application>Linux-PAM</application> package to
-            assist you in determining the problem. If you cannot find and fix
-            the error, you should recompile <application>Shadow</application>
-            adding the <option>--without-libpam</option> switch to the
-            <command>configure</command> command in the above instructions (also
-            move the <filename>/etc/login.defs.orig</filename> backup file to
-            <filename>/etc/login.defs</filename>). If you fail to do this and
-            the errors remain, you will be unable to log into your system.
+            test suite from the <application>Linux-PAM</application> package
+            to assist you in determining the problem. If you cannot find and
+            fix the error, you should recompile
+            <application>Shadow</application> adding the
+            <option>--without-libpam</option> switch to the
+            <command>configure</command> command in the above instructions
+            (also move the <filename>/etc/login.defs.orig</filename> backup
+            file to <filename>/etc/login.defs</filename>). If you fail to do
+            this and the errors remain, you will be unable to log into your
+            system.
 @y
             At this point, you should do a simple test to see if
             <application>Shadow</application> is working as expected. Open
-            another terminal and log in as a user, then <command>su</command> to
-            <systemitem class="username">root</systemitem>. If you do not see
-            any errors, then all is well and you should proceed with the rest of
-            the configuration. If you did receive errors, stop now and double
-            check the above configuration files manually. One obvious reason
-            for an error is if the user is not in group <systemitem
-            class="groupname">wheel</systemitem>. You may want to run (as
-            <systemitem class="username">root</systemitem>): <command>usermod
-            -a -G wheel <replaceable>&lt;user&gt;</replaceable></command>.
-            Any other error is the sign of an error in the above procedure.
+            another terminal and log in as
+            <systemitem class="username">root</systemitem>, and then run
+            <command>login</command> and login as another user.  If you do
+            not see any errors, then all is well and you should proceed with
+            the rest of the configuration. If you did receive errors, stop
+            now and double check the above configuration files manually.
+            Any error is the sign of an error in the above procedure.
             You can also run the
-            test suite from the <application>Linux-PAM</application> package to
-            assist you in determining the problem. If you cannot find and fix
-            the error, you should recompile <application>Shadow</application>
-            adding the <option>--without-libpam</option> switch to the
-            <command>configure</command> command in the above instructions (also
-            move the <filename>/etc/login.defs.orig</filename> backup file to
-            <filename>/etc/login.defs</filename>). If you fail to do this and
-            the errors remain, you will be unable to log into your system.
+            test suite from the <application>Linux-PAM</application> package
+            to assist you in determining the problem. If you cannot find and
+            fix the error, you should recompile
+            <application>Shadow</application> adding the
+            <option>--without-libpam</option> switch to the
+            <command>configure</command> command in the above instructions
+            (also move the <filename>/etc/login.defs.orig</filename> backup
+            file to <filename>/etc/login.defs</filename>). If you fail to do
+            this and the errors remain, you will be unable to log into your
+            system.
 @z
 
 %@x

@@ -31,6 +31,7 @@ CHANGE_FILES = \
 	sudo.ch            \
 	syslog.ch          \
 	tripwire.ch        \
+	util-linux.ch      \
 	volume_key.ch      \
 	vulnerabilities.ch
 
