@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -67,20 +63,6 @@
         <xref linkend="perl-ffi-checklib"/>,
         <xref linkend="perl-file-chdir"/>
       </para>
-@z
-
-@x
-      <!-- the direct test dependencies are also needed at runtime
-           when Alien-Build is used to build Alien-Libxml2
-      <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
-      <para role="recommended">
-      </para>-->
-@y
-      <!-- the direct test dependencies are also needed at runtime
-           when Alien-Build is used to build Alien-Libxml2
-      <bridgehead renderas="sect5">&Recommended; (テストスイートに必要)</bridgehead>
-      <para role="recommended">
-      </para>-->
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -90,20 +86,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="python2"/> and
-      <ulink url="http://cython.org/">Cython</ulink>
+      <xref linkend="cython"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/> and
-      <ulink url="http://cython.org/">Cython</ulink>
+      <xref linkend="python2"/>,
+      <xref linkend="cython"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -120,9 +110,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -j1 check</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>make -j1 check</command> を実行します。
 @z
 
 @x

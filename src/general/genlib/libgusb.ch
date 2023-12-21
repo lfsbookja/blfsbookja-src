@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libgusb-buildsize     "1.6 MB (with tests)">
-  <!ENTITY libgusb-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libgusb-buildsize     "2.1 MB (with tests and docs)">
+  <!ENTITY libgusb-time          "0.1 SBU (with tests and docs)">
 @y
-  <!ENTITY libgusb-buildsize     "1.6 MB (テスト込み)">
-  <!ENTITY libgusb-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
+  <!ENTITY libgusb-buildsize     "2.1 MB (テストとドキュメント込み)">
+  <!ENTITY libgusb-time          "&LessThan1;0.1 SBU&LessThan2; (テストとドキュメント込み)">
 @z
 
 @x
@@ -86,11 +86,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="json-glib"/> and
       <xref linkend="libusb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="json-glib"/>,
       <xref linkend="libusb"/>
     </para>
 @z
@@ -98,8 +100,8 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk-doc"/>,
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="umockdev"/>,
       <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
       which is also required for the tests), and
       <xref linkend="vala"/>
@@ -107,18 +109,24 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk-doc"/>,
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="umockdev"/>,
       <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
-      which is also required for the tests),
+      which is also required for the tests), and
       <xref linkend="vala"/>
     </para>
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/libgusb"/>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gi-docgen"/>
+    </para>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/libgusb"/>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="gi-docgen"/>
+    </para>
 @z
 
 @x
@@ -153,12 +161,9 @@
 @z
 
 @x
-      <option>-Ddocs=true</option>: Use this option if
-      <application>GTK-Doc</application> is installed and you wish to install
-      the documentation.
+      <parameter>-Ddocs=false</parameter>: &gi-doc-disable;
 @y
-      <option>-Ddocs=true</option>:
-      <application>GTK-Doc</application> がインストール済であってドキュメントをインストールしたい場合に、このオプションを指定します。
+      <parameter>-Ddocs=false</parameter>: &gi-doc-disable;
 @z
 
 @x
@@ -186,7 +191,7 @@
         </seg>
         <seg>
           /usr/include/gusb-1 and
-          /usr/share/gtk-doc/html/gusb (if gtk-doc is used)
+          /usr/share/doc/libgusb-&libgusb-version; (if gi-docgen is used)
         </seg>
 @y
         <seg>
@@ -196,8 +201,8 @@
           libgusb.so
         </seg>
         <seg>
-          /usr/include/gusb-1,
-          /usr/share/gtk-doc/html/gusb (gtk-doc を利用した場合)
+          /usr/include/gusb-1
+          /usr/share/doc/libgusb-&libgusb-version; (gi-docgen を利用した場合)
         </seg>
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -89,24 +85,28 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="curl"/>
+      <xref linkend="brotli"/>,
+      <xref linkend="curl"/>, and
+      <xref linkend="inih"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="curl"/>
+      <xref linkend="brotli"/>,
+      <xref linkend="curl"/>,
+      <xref linkend="inih"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.libssh.org/">libssh</ulink>
+      <ulink url="https://www.libssh.org/">libssh</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.libssh.org/">libssh</ulink>
+      <ulink url="https://www.libssh.org/">libssh</ulink>
     </para>
 @z
 
@@ -127,12 +127,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Exiv2</title>
 @y
     <title>&InstallationOf1;Exiv2&InstallationOf2;</title>
@@ -146,9 +140,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make test</command>
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x

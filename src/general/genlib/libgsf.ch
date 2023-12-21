@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libgsf-buildsize     "15 MB (with tests)">
+  <!ENTITY libgsf-buildsize     "16 MB (with tests)">
   <!ENTITY libgsf-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY libgsf-buildsize     "15 MB （テスト込み）">
+  <!ENTITY libgsf-buildsize     "16 MB （テスト込み）">
   <!ENTITY libgsf-time          "0.3 SBU （テスト込み）">
 @z
 
@@ -122,12 +122,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of libgsf</title>
 @y
     <title>&InstallationOf1;libgsf&InstallationOf2;</title>
@@ -141,9 +135,12 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>. Two
+      tests, t1004-zip-zip64.pl and t1005-zip-nonseekable.pl are
+      known to fail.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      2 つのテスト t1004-zip-zip64.pl と t1005-zip-nonseekable.pl は失敗します。
 @z
 
 @x

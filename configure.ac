@@ -66,6 +66,8 @@ AC_CONFIG_FILES([Makefile
 		 src/general/prog/Makefile
 		 src/general/prog/perl-deps/Makefile
 		 src/general/prog/perl-modules/Makefile
+		 src/general/prog/python-dependencies/Makefile
+		 src/general/prog/python-modules/Makefile
 		 src/general/sysutils/Makefile
 		 src/gnome/Makefile
 		 src/gnome/applications/Makefile
@@ -77,9 +79,10 @@ AC_CONFIG_FILES([Makefile
 		 src/kde/kf5/Makefile
 		 src/kde/kf5-apps/Makefile
 		 src/kde/plasma5/Makefile
-		 src/lxde/Makefile
-		 src/lxde/apps/Makefile
-		 src/lxde/desktop/Makefile
+		 src/kernel-config/Makefile
+		 src/lxqt/Makefile
+		 src/lxqt/apps/Makefile
+		 src/lxqt/desktop/Makefile
 		 src/multimedia/Makefile
 		 src/multimedia/audioutils/Makefile
 		 src/multimedia/cdwriteutils/Makefile

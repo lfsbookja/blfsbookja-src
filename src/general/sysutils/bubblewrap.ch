@@ -72,12 +72,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/bubblewrap"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/bubblewrap"/>
-@z
-
-@x
     <title>Installation of Bubblewrap</title>
 @y
     <title>&InstallationOf1;Bubblewrap&InstallationOf2;</title>
@@ -99,9 +93,13 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>
+      To test the results, issue (as a user other than the
+      <systemitem class="username">root</systemitem> user):
+      <command>ninja test</command>
 @y
-      To test the results, issue: <command>make check</command>
+      To test the results, issue (as a user other than the
+      <systemitem class="username">root</systemitem> user):
+      <command>ninja test</command>
 @z
 
 @x

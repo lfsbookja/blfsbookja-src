@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libpng-buildsize     "14 MB (with tests)">
-  <!ENTITY libpng-time          "less than 0.1 SBU (using parallelism=4; add 0.7 SBU for tests)">
+  <!ENTITY libpng-buildsize     "16 MB (with tests)">
+  <!ENTITY libpng-time          "0.1 SBU (add 0.5 SBU for tests)">
 @y
-  <!ENTITY libpng-buildsize     "14 MB （テスト込み）">
-  <!ENTITY libpng-time          "&LessThan1;0.1 SBU&LessThan2;（parallelism=4 利用時；テスト実施時はさらに 0.7 SBU）">
+  <!ENTITY libpng-buildsize     "16 MB （テスト込み）">
+  <!ENTITY libpng-time          "0.1 SBU（テスト実施時はさらに 0.5 SBU）">
 @z
 
 @x
@@ -100,12 +96,6 @@
           <application>Firefox</application>,
           <application>Seamonkey</application>, and
           <application>Thunderbird</application>): <ulink url="&apng-patch;"/>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libpng"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libpng"/>
 @z
 
 @x

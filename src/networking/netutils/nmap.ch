@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY nmap-buildsize     "148 MB (add 24 MB for tests)">
-  <!ENTITY nmap-time          "0.3 SBU (Using parallelism=4; add 0.2 SBU for tests)">
+  <!ENTITY nmap-buildsize     "138 MB (add 17 MB for tests)">
+  <!ENTITY nmap-time          "0.3 SBU (Using parallelism=4; add 0.1 SBU for tests)">
 @y
-  <!ENTITY nmap-buildsize     "148 MB (テスト実施時はさらに 24 MB)">
-  <!ENTITY nmap-time          "0.3 SBU (parallelism=4 利用時、テスト実施時はさらに 0.2 SBU)">
+  <!ENTITY nmap-buildsize     "138 MB (テスト実施時はさらに 17 MB)">
+  <!ENTITY nmap-time          "0.3 SBU (parallelism=4 利用時、テスト実施時はさらに 0.1 SBU)">
 @z
 
 @x
@@ -99,24 +95,26 @@
 @z
 @x
     <para role="recommended">
+      <xref linkend="liblinear"/>,
       <xref linkend="libpcap"/>,
-      <xref linkend="lua"/>, 
+      <xref linkend="libssh2"/>,
+      <xref linkend="lua"/>,
       <xref linkend="pcre"/>, and
-      <xref linkend="liblinear"/>
+      <xref linkend="pygobject3"/>
 <!--  libdnet is not recommended, see:
       http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
-      <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
 -->
     </para>
 @y
     <para role="recommended">
+      <xref linkend="liblinear"/>,
       <xref linkend="libpcap"/>,
-      <xref linkend="lua"/>, 
-      <xref linkend="pcre"/>,
-      <xref linkend="liblinear"/>
+      <xref linkend="libssh2"/>,
+      <xref linkend="lua"/>,
+      <xref linkend="pcre"/>, and
+      <xref linkend="pygobject3"/>
 <!--  libdnet is not recommended, see:
       http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
-      <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
 -->
     </para>
 @z
@@ -124,23 +122,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pygtk"/> (required for <command>zenmap</command>),
-      <xref linkend="python2"/> (required for <command>ndiff</command>), and
-      <xref linkend="libssh2"/>
+      <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pygtk"/> (<command>zenmap</command> に必要),
-      <xref linkend="python2"/> (<command>ndiff</command> に必要),
-      <xref linkend="libssh2"/>
+      <ulink url="http://code.google.com/p/libdnet/">libdnet</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -203,19 +191,19 @@
           None
         </seg>
         <seg>
-          /usr/lib/python&python2-majorver;/site-packages/{radialnet,zenmapCore,zenmapGUI},
+          /usr/lib/python&python3-majorver;/site-packages/{radialnet,zenmapCore,zenmapGUI,zenmap-&nmap-version;-py&python3-majorver;.egg-info},
           and /usr/share/{ncat,nmap,zenmap}
         </seg>
 @y
         <seg>
           ncat, ndiff, nmap, nping, uninstall_ndiff, uninstall_zenmap,
-          zenmap, and 2 symlinks to zenmap: nmapfe, xnmap
+          zenmap, and 2 symlinks to zenmap: nmapfe and xnmap
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
-          /usr/lib/python&python2-majorver;/site-packages/{radialnet,zenmapCore,zenmapGUI},
+          /usr/lib/python&python3-majorver;/site-packages/{radialnet,zenmapCore,zenmapGUI,zenmap-&nmap-version;-py&python3-majorver;.egg-info},
           /usr/share/{ncat,nmap,zenmap}
         </seg>
 @z

@@ -120,12 +120,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/nodejs"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/nodejs"/>
-@z
-
-@x
     <title>Installation of Node.js</title>
 @y
     <title>&InstallationOf1;Node.js&InstallationOf2;</title>
@@ -214,27 +208,27 @@
 
 @x
         <seg>
-          node, npm, and npx
+          corepack, node, npm, and npx
         </seg>
         <seg>
           None
         </seg>
         <seg>
           /usr/include/node,
-          /usr/lib/node_modules/npm,
+          /usr/lib/node_modules/{corepack,npm},
           /usr/share/doc/{node,node-&nodejs-version;}, and
           /usr/share/systemtap/tapset
         </seg>
 @y
         <seg>
-          node, npm, npx
+          corepack, node, npm, npx
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
           /usr/include/node,
-          /usr/lib/node_modules/npm,
+          /usr/lib/node_modules/{corepack,npm},
           /usr/share/doc/{node,node-&nodejs-version;},
           /usr/share/systemtap/tapset
         </seg>

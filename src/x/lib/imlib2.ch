@@ -85,25 +85,33 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libpng"/>,
+      <xref linkend="doxygen"/> (for API documentation),
       <xref linkend="libjpeg"/>,
-      <xref linkend="libtiff"/>, and
-      <ulink url="https://sourceforge.net/projects/mad">libid3tag</ulink>
+      <xref linkend="libpng"/>,
+      <xref linkend="libtiff"/>,
+      <xref linkend="libwebp"/>,
+      <xref linkend="x265"/>,
+      <ulink url="https://github.com/google/highway/">highway</ulink>,
+      <ulink url="https://github.com/strukturag/libheif">libheif</ulink>,
+      <ulink url="https://sourceforge.net/projects/mad">libid3tag</ulink>,
+      <ulink url="https://jpeg.org/jpegxl/">libjxl</ulink>, and
+      <ulink url="https://www.freedesktop.org/wiki/Software/libspectre">libspectre</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libpng"/>,
+      <xref linkend="doxygen"/> (for API documentation),
       <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
-      <ulink url="https://sourceforge.net/projects/mad">libid3tag</ulink>
+      <xref linkend="libwebp"/>,
+      <xref linkend="x265"/>,
+      <ulink url="https://github.com/google/highway/">highway</ulink>,
+      <ulink url="https://github.com/strukturag/libheif">libheif</ulink>,
+      <ulink url="https://sourceforge.net/projects/mad">libid3tag</ulink>,
+      <ulink url="https://jpeg.org/jpegxl/">libjxl</ulink>, and
+      <ulink url="https://www.freedesktop.org/wiki/Software/libspectre">libspectre</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -126,9 +134,9 @@
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x
@@ -154,14 +162,28 @@
 @z
 
 @x
-        <seg>imlib2_bumpmap, imlib2_colorspace, imlib2-config, imlib2_conv,
-        imlib2_grab, imlib2_poly, imlib2_show, imlib2_test, and imlib2_view</seg>
+        <seg>imlib2_bumpmap,
+             imlib2_colorspace,
+             imlib2_conv,
+             imlib2_grab,
+             imlib2_load,
+             imlib2_poly,
+             imlib2_show,
+             imlib2_test, and
+             imlib2_view</seg>
         <seg>libImlib2.so and various filters and image loader modules.</seg>
         <seg>/usr/lib/imlib2, /usr/share/doc/imlib2-&imlib2-version;, and
         /usr/share/imlib2</seg>
 @y
-        <seg>imlib2_bumpmap, imlib2_colorspace, imlib2-config, imlib2_conv,
-        imlib2_grab, imlib2_poly, imlib2_show, imlib2_test, imlib2_view</seg>
+        <seg>imlib2_bumpmap,
+             imlib2_colorspace,
+             imlib2_conv,
+             imlib2_grab,
+             imlib2_load,
+             imlib2_poly,
+             imlib2_show,
+             imlib2_test,
+             imlib2_view</seg>
         <seg>libImlib2.so と、数多くのフィルタモジュールやイメージロードモジュール</seg>
         <seg>/usr/lib/imlib2, /usr/share/doc/imlib2-&imlib2-version;,
         /usr/share/imlib2</seg>
@@ -187,20 +209,6 @@
             function
 @z
 
-@x imlib2-config
-            is a script used to obtain <application>imlib2</application>
-            building informations
-@y
-            is a script used to obtain <application>imlib2</application>
-            building informations
-@z
-
-@x imlib2_poly
-            is to test the <application>imlib2</application> poly function
-@y
-            is to test the <application>imlib2</application> poly function
-@z
-
 @x imlib2_conv
             converts images between formats
 @y
@@ -211,6 +219,18 @@
             takes screenshots
 @y
             takes screenshots
+@z
+
+@x imlib2_load
+            loads and caches images
+@y
+            loads and caches images
+@z
+
+@x imlib2_poly
+            is to test the <application>imlib2</application> poly function
+@y
+            is to test the <application>imlib2</application> poly function
 @z
 
 @x imlib2_show
@@ -226,9 +246,9 @@
 @z
 
 @x imlib2_view
-            diplays images files
+            displays image files
 @y
-            diplays images files
+            displays image files
 @z
 
 @x libImlib2.so

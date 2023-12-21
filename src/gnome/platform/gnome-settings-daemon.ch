@@ -85,7 +85,7 @@
       <xref linkend="alsa-lib"/>,
       <xref linkend="colord"/>,
       <xref linkend="fontconfig"/>,
-      <xref linkend="gcr"/>,
+      <xref linkend="gcr4"/>,
       <xref linkend="geoclue2"/>,
       <xref linkend="geocode-glib"/>,
       <xref linkend="gnome-desktop"/>,
@@ -95,8 +95,6 @@
       <xref linkend="libnotify"/>,
       <xref linkend="libwacom"/>,
       <xref linkend="pulseaudio"/>,
-      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
       and <xref linkend="upower"/>
     </para>
 @y
@@ -105,7 +103,7 @@
       <xref linkend="alsa-lib"/>,
       <xref linkend="colord"/>,
       <xref linkend="fontconfig"/>,
-      <xref linkend="gcr"/>,
+      <xref linkend="gcr4"/>,
       <xref linkend="geoclue2"/>,
       <xref linkend="geocode-glib"/>,
       <xref linkend="gnome-desktop"/>,
@@ -115,8 +113,6 @@
       <xref linkend="libnotify"/>,
       <xref linkend="libwacom"/>,
       <xref linkend="pulseaudio"/>,
-      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
       and <xref linkend="upower"/>
     </para>
 @z
@@ -168,23 +164,25 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="gnome-session"/>,
       <xref linkend="mutter"/>,
-      <xref linkend="python-dbusmock"/>, and
-      <xref linkend="umockdev"/>
+      <xref linkend="python-dbusmock"/>,
+      <xref linkend="umockdev"/>, and
+      <command>Xvfb</command> (for tests, from
+      <xref linkend="xorg-server"/> or
+      <xref role="nodep" linkend="xwayland"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="gnome-session"/>,
       <xref linkend="mutter"/>,
       <xref linkend="python-dbusmock"/>,
-      <xref linkend="umockdev"/>
+      <xref linkend="umockdev"/>, and
+      <command>Xvfb</command> (for tests, from
+      <xref linkend="xorg-server"/> or
+      <xref role="nodep" linkend="xwayland"/>)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -194,21 +192,15 @@
 @z
 
 @x revision="sysv"
-      First, fix libelogind detection for tests:
+      Next, fix libelogind detection for tests:
 @y
-      First, fix libelogind detection for tests:
+      Next, fix libelogind detection for tests:
 @z
 
 @x revision="sysv"
        Next, fix backlight functionality in gnome-control-center:
 @y
        Next, fix backlight functionality in gnome-control-center:
-@z
-
-@x revision="systemd"
-      First, remove older versions of the systemd units:
-@y
-      First, remove older versions of the systemd units:
 @z
 
 @x
@@ -261,8 +253,8 @@
         </seg>
         <seg>
           /etc/xdg/Xwayland-session.d,
-          /usr/include/gnome-settings-daemon-40,
-          /usr/lib/gnome-settings-daemon-40, and
+          /usr/include/gnome-settings-daemon-45,
+          /usr/lib/gnome-settings-daemon-45, and
           /usr/share/gnome-settings-daemon
         </seg>
 @y
@@ -274,8 +266,8 @@
         </seg>
         <seg>
           /etc/xdg/Xwayland-session.d,
-          /usr/include/gnome-settings-daemon-40,
-          /usr/lib/gnome-settings-daemon-40,
+          /usr/include/gnome-settings-daemon-45,
+          /usr/lib/gnome-settings-daemon-45,
           /usr/share/gnome-settings-daemon
         </seg>
 @z

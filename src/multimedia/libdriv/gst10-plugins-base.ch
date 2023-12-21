@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gst10-plugins-base-buildsize     "100 MB (with tests)">
-  <!ENTITY gst10-plugins-base-time          "0.9 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-base-buildsize     "96 MB (with tests)">
+  <!ENTITY gst10-plugins-base-time          "1.0 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-base-buildsize     "100 MB（テスト込み）">
-  <!ENTITY gst10-plugins-base-time          "0.9 SBU（parallelism=4 利用、テスト込み）">
+  <!ENTITY gst10-plugins-base-buildsize     "96 MB（テスト込み）">
+  <!ENTITY gst10-plugins-base-time          "1.0 SBU（parallelism=4 利用、テスト込み）">
 @z
 
 @x
@@ -143,14 +143,13 @@
       <xref linkend="graphene"/>,
       <xref linkend="gtk3"/> (for examples),
       <xref linkend="opus"/>,
-      <xref linkend="qt5"/> (for examples),
-      <xref linkend="sdl"/>,
+      &qt5-deps; (for examples),
       <xref linkend="sdl2"/>,
       <xref linkend="valgrind"/>,
       <ulink url="https://pypi.org/project/hotdoc">hotdoc</ulink>,
       <ulink url="http://libvisual.org/">libvisual</ulink>,
-      <ulink url="http://gstreamer.freedesktop.org/src/orc/">Orc</ulink>, and
-      <ulink url="http://wiki.xiph.org/Tremor">Tremor</ulink>
+      <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>, and
+      <ulink url="https://wiki.xiph.org/Tremor">Tremor</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -158,21 +157,14 @@
       <xref linkend="graphene"/>,
       <xref linkend="gtk3"/> (for examples),
       <xref linkend="opus"/>,
-      <xref linkend="qt5"/> (for examples),
-      <xref linkend="sdl"/>,
+      &qt5-deps; (for examples),
       <xref linkend="sdl2"/>,
       <xref linkend="valgrind"/>,
       <ulink url="https://pypi.org/project/hotdoc">hotdoc</ulink>,
       <ulink url="http://libvisual.org/">libvisual</ulink>,
-      <ulink url="http://gstreamer.freedesktop.org/src/orc/">Orc</ulink>,
-      <ulink url="http://wiki.xiph.org/Tremor">Tremor</ulink>
+      <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>,
+      <ulink url="https://wiki.xiph.org/Tremor">Tremor</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gst10-plugins-base"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gst10-plugins-base"/>
 @z
 
 @x

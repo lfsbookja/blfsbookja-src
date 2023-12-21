@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY gnome-shell-buildsize     "69 MB (including tests)">
-  <!ENTITY gnome-shell-time          "0.2 SBU (Using parallelism=4, with tests)">
+  <!ENTITY gnome-shell-buildsize     "60 MB (with tests)">
+  <!ENTITY gnome-shell-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gnome-shell-buildsize     "69 MB（テスト込み）">
+  <!ENTITY gnome-shell-buildsize     "60 MB（テスト込み）">
   <!ENTITY gnome-shell-time          "0.2 SBU（parallelism=4 利用時。テスト込み。）">
 @z
 
@@ -83,37 +83,35 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="evolution-data-server"/>,
+      <xref linkend="gcr4"/>,
       <xref linkend="gjs"/>,
-      <xref linkend="gnome-autoar"/>,
-      <xref linkend="gnome-control-center"/>,
-      <xref linkend="gtk4"/>,
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="ibus"/>,
       <xref linkend="mutter"/>,
-      <xref linkend="sassc"/>,
-      <xref linkend="startup-notification"/>, and
-      <phrase revision="sysv"><xref linkend="elogind"/></phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/></phrase>
+      <xref linkend="polkit"/>,
+      <xref linkend="sassc"/>, and
+      <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="evolution-data-server"/>,
+      <xref linkend="gcr4"/>,
       <xref linkend="gjs"/>,
-      <xref linkend="gnome-autoar"/>,
-      <xref linkend="gnome-control-center"/>,
-      <xref linkend="gtk4"/>,
+      <xref linkend="gnome-desktop"/>,
+      <xref linkend="ibus"/>,
       <xref linkend="mutter"/>,
+      <xref linkend="polkit"/>,
       <xref linkend="sassc"/>,
-      <xref linkend="startup-notification"/>,
-      <phrase revision="sysv"><xref linkend="elogind"/></phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/></phrase>
+      <xref linkend="startup-notification"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="asciidoc"/>,
       <xref linkend="desktop-file-utils"/>,
+      <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-bluetooth"/>,
       <xref linkend="gst10-plugins-base"/>, and
       <xref linkend="NetworkManager"/>
@@ -121,25 +119,11 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="asciidoc"/>,
       <xref linkend="desktop-file-utils"/>,
+      <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-bluetooth"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="NetworkManager"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4"
-                revision="sysv">Recommended (Runtime)</bridgehead>
-    <para role="recommended" revision="sysv">
-      <xref linkend="blocaled" role="runtime"/>
-    </para>
-@y
-    <bridgehead renderas="sect4"
-                revision="sysv">&Recommended; （実行時）</bridgehead>
-    <para role="recommended" revision="sysv">
-      <xref linkend="blocaled" role="runtime"/>
     </para>
 @z
 
@@ -158,31 +142,55 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
+    <bridgehead renderas="sect4">Required Runtime Dependencies</bridgehead>
     <para role="required">
       <xref role="runtime" linkend="adwaita-icon-theme"/>,
       <xref role="runtime" linkend="dconf"/>,
+      <phrase revision="sysv">
+        <xref role='runtime' linkend="elogind"/>,
+      </phrase>
       <xref role="runtime" linkend="gdm"/>,
       <xref role="runtime" linkend="gnome-backgrounds"/>,
-      <xref role="runtime" linkend="gnome-menus"/>, and
+      <xref role="runtime" linkend="gnome-control-center"/>,
+      <xref role="runtime" linkend="libgweather"/>,
+      <phrase revision="sysv">and</phrase>
+      <phrase revision="systemd">
+        <xref role='runtime' linkend="systemd"/>, and
+      </phrase>
       <xref role="runtime" linkend="telepathy-mission-control"/>
     </para>
 @y
-    <bridgehead renderas="sect4">実行時依存パッケージ</bridgehead>
+    <bridgehead renderas="sect4">Required Runtime Dependencies</bridgehead>
     <para role="required">
       <xref role="runtime" linkend="adwaita-icon-theme"/>,
       <xref role="runtime" linkend="dconf"/>,
+      <phrase revision="sysv">
+        <xref role='runtime' linkend="elogind"/>,
+      </phrase>
       <xref role="runtime" linkend="gdm"/>,
       <xref role="runtime" linkend="gnome-backgrounds"/>,
-      <xref role="runtime" linkend="gnome-menus"/>,
+      <xref role="runtime" linkend="gnome-control-center"/>,
+      <xref role="runtime" linkend="libgweather"/>,
+      <phrase revision="sysv">and</phrase>
+      <phrase revision="systemd">
+        <xref role='runtime' linkend="systemd"/>, and
+      </phrase>
       <xref role="runtime" linkend="telepathy-mission-control"/>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4"
+                revision="sysv">Recommended Runtime Dependency</bridgehead>
+    <para role="recommended" revision="sysv">
+      <xref linkend="blocaled" role="runtime"/>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4"
+                revision="sysv">Recommended Runtime Dependency</bridgehead>
+    <para role="recommended" revision="sysv">
+      <xref linkend="blocaled" role="runtime"/>
+    </para>
 @z
 
 @x
@@ -199,13 +207,31 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. You must be
-      running an X session to run the tests. Some will fail if
-      <xref linkend="gdm"/> is not installed.
+      To test the results, you need to remove the
+      <parameter>-Dtests=false</parameter> switch, and to have <xref
+      linkend="mutter"/> compiled and installed with tests also.
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      テストは X セッションにおいて実行しなければなりません。
-      <xref linkend="gdm"/> をインストールしていない場合、失敗するテストがあります。
+      To test the results, you need to remove the
+      <parameter>-Dtests=false</parameter> switch, and to have <xref
+      linkend="mutter"/> compiled and installed with tests also.
+@z
+@x
+      To run the tests, issue: <command>ninja test</command>. You must be
+      running an X session to run the tests. Some will fail if <xref
+      linkend="gdm"/> is not installed. <phrase revision="sysv">Several
+      more tests may fail in the Sysv environment.</phrase>
+@y
+      To run the tests, issue: <command>ninja test</command>. You must be
+      running an X session to run the tests. Some will fail if <xref
+      linkend="gdm"/> is not installed. <phrase revision="sysv">Several
+      more tests may fail in the Sysv environment.</phrase>
+@z
+@x
+      One test named <filename>CSS styling support</filename> is known to
+      fail with some multi-monitor configurations.
+@y
+      One test named <filename>CSS styling support</filename> is known to
+      fail with some multi-monitor configurations.
 @z
 
 @x
@@ -229,13 +255,21 @@
 @z
 
 @x
-      <option>-Dextensions=false</option>: This option disables building the 
-      <command>gnome-extensions</command> CLI tool. Using this option removes
-      the need for <xref linkend="asciidoc"/>.
+      <parameter>-Dtests=false</parameter>: Remove this switch if you want
+      to build the tests. But then <command>meson</command> will fail if
+      <xref linkend="mutter"/> tests are not installed.
 @y
-      <option>-Dextensions=false</option>: This option disables building the 
-      <command>gnome-extensions</command> CLI tool. Using this option removes
-      the need for <xref linkend="asciidoc"/>.
+      <parameter>-Dtests=false</parameter>: Remove this switch if you want
+      to build the tests. But then <command>meson</command> will fail if
+      <xref linkend="mutter"/> tests are not installed.
+@z
+
+@x
+      <option>-Dextensions_tool=false</option>: This switch allows building
+      this package without <xref linkend='gnome-autoar'/> installed.
+@y
+      <option>-Dextensions_tool=false</option>: This switch allows building
+      this package without <xref linkend='gnome-autoar'/> installed.
 @z
 @x
     <title>Contents</title>
@@ -255,8 +289,8 @@
 
 @x
         <seg>
-          gnome-extensions, gnome-extensions-app, gnome-shell, 
-          gnome-shell-extension-prefs, gnome-shell-extension-tool, 
+          gnome-extensions, gnome-extensions-app, gnome-shell,
+          gnome-shell-extension-prefs, gnome-shell-extension-tool,
           and gnome-shell-perf-tool
         </seg>
         <seg>
@@ -265,13 +299,13 @@
         <seg>
           /usr/lib/gnome-shell,
           /usr/share/gnome-shell,
-          /usr/share/gtk-doc/html/{shell,st}, and
+          /usr/share/gtk-doc/html/{shell,st} (optional), and
           /usr/share/xdg-desktop-portal/
         </seg>
 @y
         <seg>
-          gnome-extensions, gnome-extensions-app, gnome-shell, 
-          gnome-shell-extension-prefs, gnome-shell-extension-tool, 
+          gnome-extensions, gnome-extensions-app, gnome-shell,
+          gnome-shell-extension-prefs, gnome-shell-extension-tool,
           gnome-shell-perf-tool
         </seg>
         <seg>
@@ -280,7 +314,7 @@
         <seg>
           /usr/lib/gnome-shell,
           /usr/share/gnome-shell,
-          /usr/share/gtk-doc/html/{shell,st},
+          /usr/share/gtk-doc/html/{shell,st} (任意インストール),
           /usr/share/xdg-desktop-portal/
         </seg>
 @z
@@ -293,7 +327,7 @@
 
 @x gnome-shell
             provides the core user interface functions for the
-            <application>GNOME</application> 3 Desktop
+            <application>GNOME</application> Desktop
 @y
-            <application>GNOME</application> 3 Desktop の中心的なユーザーインターフェース関数を提供します。
+            <application>GNOME</application> Desktop の中心的なユーザーインターフェース関数を提供します。
 @z

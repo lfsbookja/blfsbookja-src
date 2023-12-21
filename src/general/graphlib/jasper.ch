@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY jasper-buildsize     "7.9 MB (with tests)">
-  <!ENTITY jasper-time          "0.2 SBU (with tests)">
+  <!ENTITY jasper-buildsize     "10.0 MB (with tests)">
+  <!ENTITY jasper-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY jasper-buildsize     "7.9 MB（テスト込み）">
-  <!ENTITY jasper-time          "0.2 SBU（テスト込み）">
+  <!ENTITY jasper-buildsize     "10.0 MB（テスト込み）">
+  <!ENTITY jasper-time          "0.3 SBU（テスト込み）">
 @z
 
 @x
@@ -96,23 +96,17 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="freeglut"/> (required for <command>jiv</command>), 
+      <xref linkend="freeglut"/> (required for <command>jiv</command>),
       <xref linkend="doxygen"/> (needed for generating html documentation), and
-      <xref linkend="texlive"/> (needed to regnerate the pdf documentation)
+      <xref linkend="texlive"/> (needed to regenerate the pdf documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="freeglut"/> (<command>jiv</command> に必要), 
-      <xref linkend="doxygen"/> (needed for generating html documentation), and
-      <xref linkend="texlive"/> (needed to regnerate the pdf documentation)
+      <xref linkend="freeglut"/> (<command>jiv</command> に必要),
+      <xref linkend="doxygen"/> (needed for generating html documentation),
+      <xref linkend="texlive"/> (needed to regenerate the pdf documentation)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

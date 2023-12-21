@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -77,31 +73,30 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
-      <phrase revision="sysv"><xref role="runtime" linkend="elogind"/>,</phrase>
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <xref linkend="gnome-desktop"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="mesa"/>,
-      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/>,</phrase>
+      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/>
+      (runtime),</phrase>
       and <xref linkend="upower"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
-      <phrase revision="sysv"><xref role="runtime" linkend="elogind"/>,</phrase>
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <xref linkend="gnome-desktop"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="mesa"/>,
-      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/>,</phrase>
-      and <xref linkend="upower"/>
+      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/>
+      (runtime),</phrase>
+      <xref linkend="upower"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="GConf"/>,
       <xref linkend="xmlto"/>, and
       <xref linkend="libxslt"/> with
       <xref linkend="DocBook"/> and
@@ -110,17 +105,11 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="GConf"/>,
-      <xref linkend="xmlto"/>,
-      <xref linkend="libxslt"/> と <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>（ドキュメントビルドのため）
+      <xref linkend="xmlto"/>, and
+      <xref linkend="libxslt"/> with
+      <xref linkend="DocBook"/> and
+      <xref linkend="docbook-xsl"/> (ドキュメントビルドのため)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -143,18 +132,6 @@
       environment settings for user sessions. To work around this limitation,
       execute the following command to make
       <command>gnome-session</command> use a login shell:
-@z
-
-@x revision="systemd"
-      Adapt gnome-session to changes in systemd-247:
-@y
-      Adapt gnome-session to changes in systemd-247:
-@z
-
-@x revision="sysv"
-      Adapt meson.build so that gnome-session can build without systemd:
-@y
-      Adapt meson.build so that gnome-session can build without systemd:
 @z
 
 @x
@@ -201,8 +178,7 @@
 
 @x
         <seg>
-          gnome-session, gnome-session-custom-session, gnome-session-inhibit, 
-          and gnome-session-quit
+          gnome-session, gnome-session-inhibit, and gnome-session-quit
         </seg>
        <seg>
           None
@@ -213,8 +189,7 @@
         </seg>
 @y
         <seg>
-          gnome-session, gnome-session-custom-session, gnome-session-inhibit, 
-          gnome-session-quit
+          gnome-session, gnome-session-inhibit, gnome-session-quit
         </seg>
        <seg>
           &None;

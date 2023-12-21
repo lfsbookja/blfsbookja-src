@@ -85,23 +85,21 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gnupg2"/>,
-      <xref linkend="libgcrypt"/>, and
-      <xref linkend="openssh"/> (all three are required for the testsuite)
+      <xref linkend="cmake"/> (can be used instead of the
+      <command>configure</command> script),
+      <xref linkend="libgcrypt"/> (can be used instead of OpenSSL),
+      <xref linkend="openssh"/> (for some tests), and
+      <ulink url='https://www.docker.com'>Docker</ulink> (for some tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gnupg2"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="openssh"/> (テストスイートには 3 つすべてが必要)
+      <xref linkend="cmake"/> (can be used instead of the
+      <command>configure</command> script),
+      <xref linkend="libgcrypt"/> (can be used instead of OpenSSL),
+      <xref linkend="openssh"/> (for some tests), and
+      <ulink url='https://www.docker.com'>Docker</ulink> (for some tests)
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libssh2"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libssh2"/>
 @z
 
 @x

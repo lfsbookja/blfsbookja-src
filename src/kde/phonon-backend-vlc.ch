@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -89,12 +85,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Phonon-backend-vlc</title>
 @y
     <title>&InstallationOf1;Phonon-backend-vlc&InstallationOf2;</title>
@@ -145,10 +135,10 @@
 
 @x
         <seg>none</seg>
-        <seg>phonon_vlc.so</seg>
-        <seg>/usr/lib/qt5/plugins/phonon4qt5_backend</seg>
+        <seg>phonon_vlc_qt5.so</seg>
+        <seg>/usr/lib/plugins/phonon4qt5_backend</seg>
 @y
         <seg>&None;</seg>
-        <seg>phonon_vlc.so</seg>
-        <seg>/usr/lib/qt5/plugins/phonon4qt5_backend</seg>
+        <seg>phonon_vlc_qt5.so</seg>
+        <seg>/usr/lib/plugins/phonon4qt5_backend</seg>
 @z

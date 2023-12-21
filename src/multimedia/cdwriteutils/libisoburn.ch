@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -119,12 +115,6 @@
       <xref linkend="tk"/> (for <command>xorriso-tcltk</command>),
       <ulink url="https://www.einval.com/~steve/software/JTE/">libjte</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libisoburn"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libisoburn"/>
 @z
 
 @x
@@ -277,10 +267,10 @@
 @z
 
 @x xorrisofs
-            is a symbolic link to <command>xorriso</command> that that provides
+            is a symbolic link to <command>xorriso</command> that provides
             a mkisofs type user interface
 @y
-            is a symbolic link to <command>xorriso</command> that that provides
+            is a symbolic link to <command>xorriso</command> that provides
             a mkisofs type user interface
 @z
 

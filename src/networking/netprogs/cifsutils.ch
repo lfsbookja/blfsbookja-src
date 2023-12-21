@@ -72,11 +72,10 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="docutils"/> (to create the man pages),
       <xref linkend="keyutils"/> (required to build PAM module),
       <xref linkend="linux-pam"/>,
-      <xref linkend="mitkrb"/>,
       <xref linkend="samba"/>, and
       <xref linkend="libcap-pam"/> or
       <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">
@@ -86,21 +85,15 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="keyutils"/>（PAM モジュールビルドに必要）,
+      <xref linkend="docutils"/> (to create the man pages),
+      <xref linkend="keyutils"/> (required to build PAM module),
       <xref linkend="linux-pam"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="samba"/>,
-      <xref linkend="libcap-pam"/> または
+      <xref linkend="samba"/>, and
+      <xref linkend="libcap-pam"/> or
       <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">
         libcap-ng
       </ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

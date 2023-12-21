@@ -1,36 +1,13 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author: matsuand $
-## $Rev: 55 $
-## $Date:: 2020-07-06 16:03:25 +0900#$
-##
-BOOKdir = @abs_bookdir@/postlfs/filesystems/uefi-bootloaders
+
 CHANGE_FILES = \
-	dummy.ch      \
-	efibootmgr.ch \
-	efivar.ch     \
-	grub-efi.ch   \
-	grub-setup.ch
+	dummy.ch             \
+	efibootmgr.ch        \
+	efivar.ch            \
+	grub-efi.ch          \
+	grub-setup.ch        \
+	grub-setup-kernel.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
-srcdir = @srcdir@
-srcs = $(CHANGE_FILES:.ch=.xml)
-
-SUFFIXES = .ch .xml
-.ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
-
-all: ctie $(srcs)
-
-ctie:
-	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
-
--include Makefile.sub
-Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
-	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-
-@MAINT@.PHONY: chbuild
-@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
-@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
-@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
+include $(top_srcdir)/build-aux/main.mk

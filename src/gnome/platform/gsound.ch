@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -83,6 +78,18 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend="libcanberra"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend="libcanberra"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/> and
@@ -106,12 +113,6 @@
     <para role="optional">
       <xref linkend="gtk-doc"/> (ドキュメント生成のため)
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gsound"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gsound"/>
 @z
 
 @x

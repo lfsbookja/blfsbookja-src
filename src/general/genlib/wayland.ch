@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY wayland-buildsize     "6.2 MB (with tests)">
+  <!ENTITY wayland-buildsize     "7.4 MB (with tests)">
   <!ENTITY wayland-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY wayland-buildsize     "6.2 MB (テスト込み)">
+  <!ENTITY wayland-buildsize     "7.4 MB (テスト込み)">
   <!ENTITY wayland-time          "0.1 SBU (テスト込み)">
 @z
 
@@ -116,12 +116,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Wayland</title>
 @y
     <title>&InstallationOf1;Wayland&InstallationOf2;</title>
@@ -135,9 +129,10 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>.
+      To test the results, issue:
+      <command>env -u XDG_RUNTIME_DIR ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      ビルド結果をテストする場合は <command>env -u XDG_RUNTIME_DIR ninja test</command> を実行します。
 @z
 
 @x
@@ -153,11 +148,11 @@
 @z
 
 @x
-      <parameter>--disable-documentation</parameter>: This switch is used to
+      <parameter>-Ddocumentation=false</parameter>: This switch is used to
       disable building of the API documentation. Remove it if you have
       installed optional dependencies.
 @y
-      <parameter>--disable-documentation</parameter>:
+      <parameter>-Ddocumentation=false</parameter>:
       このスイッチは API ドキュメントをビルドしないようにします。
       任意の依存パッケージをインストールしている場合は、これを取り除いてください。
 @z

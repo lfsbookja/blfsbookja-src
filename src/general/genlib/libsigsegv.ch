@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libsigsegv-buildsize     "3.8 MB (with tests)">
+  <!ENTITY libsigsegv-buildsize     "3.6 MB (with tests)">
   <!ENTITY libsigsegv-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libsigsegv-buildsize     "3.8 MB (テスト込み)">
+  <!ENTITY libsigsegv-buildsize     "3.6 MB (テスト込み)">
   <!ENTITY libsigsegv-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
@@ -83,12 +79,6 @@
           Estimated build time: &libsigsegv-time;
 @y
           &Estimatedbuildtime;: &libsigsegv-time;
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libsigsegv"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libsigsegv"/>
 @z
 
 @x

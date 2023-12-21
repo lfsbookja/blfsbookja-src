@@ -1,10 +1,11 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-BOOKdir = @abs_bookdir@/general/prog/perl-deps
+
 CHANGE_FILES = \
 	perl-algorithm-diff.ch \
 	perl-alien-build.ch \
+	perl-alien-build-plugin-download-gitlab.ch \
 	perl-alien-libxml2.ch \
 	perl-b-cow.ch \
 	perl-b-hooks-endofscope.ch \
@@ -17,10 +18,10 @@ CHANGE_FILES = \
 	perl-clone.ch \
 	perl-config-autoconf.ch \
 	perl-cpan-meta-check.ch \
+	perl-datetime.ch \
 	perl-datetime-format-strptime.ch \
 	perl-datetime-locale.ch \
 	perl-datetime-timezone.ch \
-	perl-datetime.ch \
 	perl-devel-stacktrace.ch \
 	perl-dist-checkconflicts.ch \
 	perl-encode-locale.ch \
@@ -36,6 +37,7 @@ CHANGE_FILES = \
 	perl-file-sharedir-install.ch \
 	perl-file-sharedir.ch \
 	perl-html-tagset.ch \
+	perl-http-cookiejar.ch \
 	perl-http-cookies.ch \
 	perl-http-date.ch \
 	perl-http-message.ch \
@@ -43,10 +45,9 @@ CHANGE_FILES = \
 	perl-importer.ch \
 	perl-io-html.ch \
 	perl-ipc-system-simple.ch \
-	perl-libwww-perl.ch \
 	perl-list-moreutils-xs.ch \
-	perl-list-someutils-xs.ch \
 	perl-list-someutils.ch \
+	perl-list-someutils-xs.ch \
 	perl-list-utilsby.ch \
 	perl-lwp-mediatypes.ch \
 	perl-mime-charset.ch \
@@ -64,7 +65,6 @@ CHANGE_FILES = \
 	perl-params-validationcompiler.ch \
 	perl-path-tiny.ch \
 	perl-role-tiny.ch \
-	perl-scalar-list-utils.ch \
 	perl-scope-guard.ch \
 	perl-specio.ch \
 	perl-sub-exporter-progressive.ch \
@@ -72,7 +72,6 @@ CHANGE_FILES = \
 	perl-sub-info.ch \
 	perl-sub-quote.ch \
 	perl-sub-uplevel.ch \
-	perl-super.ch \
 	perl-term-table.ch \
 	perl-test-deep.ch \
 	perl-test-exception.ch \
@@ -80,7 +79,6 @@ CHANGE_FILES = \
 	perl-test-file-sharedir.ch \
 	perl-test-file.ch \
 	perl-test-leaktrace.ch \
-	perl-test-mockmodule.ch \
 	perl-test-needs.ch \
 	perl-test-requires.ch \
 	perl-test-requiresinternet.ch \
@@ -102,24 +100,4 @@ CHANGE_FILES = \
 	perl-xml-sax-base.ch \
 	perl-xml-sax.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
-srcdir = @srcdir@
-srcs = $(CHANGE_FILES:.ch=.xml)
-
-SUFFIXES = .ch .xml
-.ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
-
-all: ctie $(srcs)
-
-ctie:
-	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
-
--include Makefile.sub
-Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
-	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-
-@MAINT@.PHONY: chbuild
-@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
-@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
-@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
+include $(top_srcdir)/build-aux/main.mk

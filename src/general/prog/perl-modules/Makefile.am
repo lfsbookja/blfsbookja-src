@@ -1,11 +1,7 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
-BOOKdir = @abs_bookdir@/general/prog/perl-modules
+
 CHANGE_FILES = \
 	perl-archive-zip.ch \
 	perl-autovivification.ch \
@@ -21,6 +17,7 @@ CHANGE_FILES = \
 	perl-encode-eucjpascii.ch \
 	perl-encode-hanextra.ch \
 	perl-encode-jis2k.ch \
+	perl-file-fcntllock.ch \
 	perl-file-slurper.ch \
 	perl-file-which.ch \
 	perl-html-parser.ch \
@@ -28,6 +25,8 @@ CHANGE_FILES = \
 	perl-io-socket-ssl.ch \
 	perl-io-string.ch \
 	perl-ipc-run3.ch \
+	perl-json.ch \
+	perl-libwww-perl.ch \
 	perl-lingua-translit.ch \
 	perl-list-allutils.ch \
 	perl-list-moreutils.ch \
@@ -54,24 +53,4 @@ CHANGE_FILES = \
 	perl-xml-simple.ch \
 	perl-xml-writer.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
-srcdir = @srcdir@
-srcs = $(CHANGE_FILES:.ch=.xml)
-
-SUFFIXES = .ch .xml
-.ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
-
-all: ctie $(srcs)
-
-ctie:
-	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
-
--include Makefile.sub
-Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
-	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-
-@MAINT@.PHONY: chbuild
-@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
-@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
-@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
+include $(top_srcdir)/build-aux/main.mk

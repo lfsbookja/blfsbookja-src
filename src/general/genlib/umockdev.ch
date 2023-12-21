@@ -10,17 +10,17 @@
 @z
 
 @x
-  <!ENTITY umockdev-buildsize     "6.5 MB (with tests)">
+  <!ENTITY umockdev-buildsize     "6.8 MB (with tests)">
   <!ENTITY umockdev-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY umockdev-buildsize     "6.5 MB (テスト込み)">
+  <!ENTITY umockdev-buildsize     "6.8 MB (テスト込み)">
   <!ENTITY umockdev-time          "0.2 SBU (テスト込み)">
 @z
 
 @x
     <title>Introduction to Umockdev</title>
 @y
-    <title>Introduction to Umockdev</title>
+    <title>&IntroductionTo1;Umockdev&IntroductionTo2;</title>
 @z
 
 @x
@@ -110,12 +110,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/umockdev"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/umockdev"/>
-@z
-
-@x
     <title>Installation of Umockdev</title>
 @y
     <title>&InstallationOf1;Umockdev&InstallationOf2;</title>
@@ -129,17 +123,11 @@
 @z
 
 @x
-      To test the results, issue: <command>PATH=$PATH:/usr/sbin ninja
-      test</command>. The addition to <envar>PATH</envar> is needed if you
-      use the starting scripts in <xref linkend="postlfs-config-profile"/>,
-      because some tests need to run <command>udevadm</command>. One test
+      To test the results, issue: <command>ninja test</command>. One test
       needs to be run in an X session.
 @y
-      To test the results, issue: <command>PATH=$PATH:/usr/sbin ninja
-      test</command>. The addition to <envar>PATH</envar> is needed if you
-      use the starting scripts in <xref linkend="postlfs-config-profile"/>,
-      because some tests need to run <command>udevadm</command>. One test
-      needs to be run in an X session.
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      テストの中に 1 つ、X セッション内での実行を必要とするものがあります。
 @z
 
 @x
@@ -177,7 +165,7 @@
            umockdev-wrapper
         </seg>
         <seg>
-          libumockdev-preload.so.0 <!-- Only intended for use by
+          libumockdev-preload.so <!-- Only intended for use by
           umockdev-wrapper. Don't put in a short description for this--> and
           libumockdev.so
         </seg>
@@ -191,7 +179,7 @@
            umockdev-wrapper
         </seg>
         <seg>
-          libumockdev-preload.so.0, <!-- Only intended for use by
+          libumockdev-preload.so <!-- Only intended for use by
           umockdev-wrapper. Don't put in a short description for this-->
           libumockdev.so
         </seg>

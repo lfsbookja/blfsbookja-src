@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY at-buildsize     "2.3 MB including tests">
+  <!ENTITY at-buildsize     "1.9 MB (including tests)">
   <!ENTITY at-time          "less than 0.1 SBU">
 @y
-  <!ENTITY at-buildsize     "2.3 MB including tests">
+  <!ENTITY at-buildsize     "1.9 MB (テスト込み)">
   <!ENTITY at-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
@@ -105,9 +105,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x

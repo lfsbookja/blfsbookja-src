@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY NetworkManager-buildsize     "286 MB (with tests)">
-  <!ENTITY NetworkManager-time          "0.8 SBU (with tests, using parallelism=4)">
+  <!ENTITY NetworkManager-buildsize     "904 MB (with tests and documentation)">
+  <!ENTITY NetworkManager-time          "1.2 SBU (with tests, using parallelism=4)">
 @y
-  <!ENTITY NetworkManager-buildsize     "286 MB (テスト込み)">
-  <!ENTITY NetworkManager-time          "0.8 SBU (テスト込み、parallelism=4 利用)">
+  <!ENTITY NetworkManager-buildsize     "904 MB (テストとドキュメント込み)">
+  <!ENTITY NetworkManager-time          "1.2 SBU (テスト込み、parallelism=4 利用)">
 @z
 
 @x
@@ -105,39 +105,33 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/>,
-      <!--<xref linkend="dhcpcd"/> or
-          DHCPCD support is known to be broken with dhcpcd-9 -->
-      <xref role="nodep" linkend="dhcp"/> (client only),
+      <xref linkend="dhcpcd"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
       <xref linkend="newt"/> (for <command>nmtui</command>),
       <xref linkend="nss"/>,
-      <xref linkend="polkit"/>,
+      <xref role='runtime' linkend="polkit"/> (runtime),
       <xref linkend="pygobject3"/>,
       <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
-      <xref linkend="upower"/>,
       <xref linkend="vala"/>, and
-      <xref linkend="wpa_supplicant"/> (built with D-Bus support)
+      <xref linkend="wpa_supplicant"/> (runtime, built with D-Bus support)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/>,
-      <!--<xref linkend="dhcpcd"/> or
-          DHCPCD support is known to be broken with dhcpcd-9 -->
-      <xref role="nodep" linkend="dhcp"/> (client only),
+      <xref linkend="dhcpcd"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
       <xref linkend="newt"/> (for <command>nmtui</command>),
       <xref linkend="nss"/>,
-      <xref linkend="polkit"/>,
+      <xref role='runtime' linkend="polkit"/> (runtime),
       <xref linkend="pygobject3"/>,
       <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
-      <xref linkend="upower"/>,
-      <xref linkend="vala"/>,
-      <xref linkend="wpa_supplicant"/> (D-Bus サポートビルド済み)
+      <xref linkend="vala"/>, and
+      <xref linkend="wpa_supplicant"/> (runtime, built with D-Bus support)
     </para>
 @z
 
@@ -147,13 +141,15 @@
       <xref linkend="bluez"/>,
       <xref linkend="dbus-python"/> (for the test suite),
       <!-- <xref linkend="firewalld"/> (For whenever firewalld is reintroduced) -->
-      <xref linkend="gnutls"/> (used if <xref linkend="nss"/> is not found),
+      <xref linkend="gnutls"/> (can be used instead of <xref linkend="nss"/>),
       <xref linkend="gtk-doc"/>,
       <xref linkend="libpsl"/>,
-      <xref linkend="qt5"/> (for examples),
+      (<xref linkend="qt5"/> or
+       <xref role="node" linkend="qt5-components"/> with qtdoc) (for examples),
       <xref linkend="ModemManager"/>,
+      <xref linkend="upower"/>,
       <xref linkend="valgrind"/>,
-      <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
+      <ulink url="https://thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
       <ulink url="https://firewalld.org/">firewalld</ulink>,
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
@@ -167,13 +163,15 @@
       <xref linkend="bluez"/>,
       <xref linkend="dbus-python"/> (for the test suite),
       <!-- <xref linkend="firewalld"/> (For whenever firewalld is reintroduced) -->
-      <xref linkend="gnutls"/> (used if <xref linkend="nss"/> is not found),
+      <xref linkend="gnutls"/> (can be used instead of <xref linkend="nss"/>),
       <xref linkend="gtk-doc"/>,
       <xref linkend="libpsl"/>,
-      <xref linkend="qt5"/> (for examples),
+      (<xref linkend="qt5"/> or
+       <xref role="node" linkend="qt5-components"/> with qtdoc) (for examples),
       <xref linkend="ModemManager"/>,
+      <xref linkend="upower"/>,
       <xref linkend="valgrind"/>,
-      <ulink url="http://www.thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
+      <ulink url="https://thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
       <ulink url="https://firewalld.org/">firewalld</ulink>,
       <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
       <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
@@ -181,12 +179,6 @@
       <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>,
       <ulink url="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -211,29 +203,13 @@
 @z
 
 @x
-      An already active graphical session
-      with a bus address is necessary to run the tests. To test the results,
-      as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Five tests,
-      <filename>platform/test-tc-linux</filename>,
-      <!--<filename>platform/test-core</filename>,-->
-      <filename>test-l3cfg</filename>,
-      <filename>devices/test-acd</filename>,
-      <filename>platform/test-route-linux</filename>, and
-      <filename>platform/test-link-linux</filename>,
-      <!--<filename>platform/test-cleanup-linux</filename>,--> are known to fail.
+      An already active graphical session with a bus address is necessary
+      to run the tests. To test the results, issue
+      <command>ninja test</command>.
 @y
-      An already active graphical session
-      with a bus address is necessary to run the tests. To test the results,
-      as the root user, <!-- needs the "ip" command -->
-      issue: <command>ninja test</command>. Five tests,
-      <filename>platform/test-tc-linux</filename>,
-      <!--<filename>platform/test-core</filename>,-->
-      <filename>test-l3cfg</filename>,
-      <filename>devices/test-acd</filename>,
-      <filename>platform/test-route-linux</filename>, and
-      <filename>platform/test-link-linux</filename>,
-      <!--<filename>platform/test-cleanup-linux</filename>,--> are known to fail.
+      An already active graphical session with a bus address is necessary
+      to run the tests. To test the results, issue
+      <command>ninja test</command>.
 @z
 
 @x
@@ -265,42 +241,46 @@
 @z
 
 @x
-      <parameter>-Dnmtui=true</parameter>: This parameter enables building
+      <parameter>-Dnmtui=true</parameter>: This switch enables building
       <command>nmtui</command>.
 @y
-      <parameter>-Dnmtui=true</parameter>: This parameter enables building
+      <parameter>-Dnmtui=true</parameter>: This switch enables building
       <command>nmtui</command>.
 @z
 
 @x revision="sysv"
       <parameter>-Dsystemdsystemunitdir=no</parameter> and
       <parameter>-Dsystemd_journal=false</parameter>: systemd is not
-      used for sysv init systems.
+      used for sysv init systems, so prevent installing units and using the
+      systemd journal.
 @y
       <parameter>-Dsystemdsystemunitdir=no</parameter> and
       <parameter>-Dsystemd_journal=false</parameter>: systemd is not
-      used for sysv init systems.
+      used for sysv init systems, so prevent installing units and using the
+      systemd journal.
 @z
 
 @x
       <parameter>-Dlibpsl=false</parameter> and
-      <parameter>-Dovs=false</parameter>: These switches disable building with the
-      respective libraries. Remove if you have the needed libraries installed.
+      <parameter>-Dovs=false</parameter>: These switches disable building with
+      the respective libraries. Remove these if you have the needed libraries
+      installed on your system.
 @y
       <parameter>-Dlibpsl=false</parameter> and
-      <parameter>-Dovs=false</parameter>: These switches disable building with the
-      respective libraries. Remove if you have the needed libraries installed.
+      <parameter>-Dovs=false</parameter>: These switches disable building with
+      the respective libraries. Remove these if you have the needed libraries
+      installed on your system.
 @z
 
 @x
-      <parameter>-Dmodem_manager=false</parameter>: This switch is requried if
-      <application>ModemManager</application> is not installed. Omit if you
-      have built <application>ModemManager</application> and
+      <parameter>-Dmodem_manager=false</parameter>: This switch is required if
+      <application>ModemManager</application> is not installed. Omit this switch
+      if you have built <application>ModemManager</application> and
       <application>mobile-broadband-provider-info</application>.
 @y
-      <parameter>-Dmodem_manager=false</parameter>: This switch is requried if
-      <application>ModemManager</application> is not installed. Omit if you
-      have built <application>ModemManager</application> and
+      <parameter>-Dmodem_manager=false</parameter>: This switch is required if
+      <application>ModemManager</application> is not installed. Omit this switch
+      if you have built <application>ModemManager</application> and
       <application>mobile-broadband-provider-info</application>.
 @z
 
@@ -335,33 +315,37 @@
 @z
 
 @x
-      <parameter>-Dppp=false</parameter>: This parameter disables
+      <parameter>-Dppp=false</parameter>: This switch disables
       <application>PPP</application> support in
-      <application>NetworkManager</application>.
+      <application>NetworkManager</application> since the programs necessary
+      for it are not installed. Remove this switch if you need PPP support and
+      have <application>PPP</application> installed.
 @y
-      <parameter>-Dppp=false</parameter>: This parameter disables
+      <parameter>-Dppp=false</parameter>: This switch disables
       <application>PPP</application> support in
-      <application>NetworkManager</application>.
+      <application>NetworkManager</application> since the programs necessary
+      for it are not installed. Remove this switch if you need PPP support and
+      have <application>PPP</application> installed.
 @z
 
 @x
       <parameter>-Dlibaudit=no</parameter> and
-      <parameter>-Dselinux=false</parameter>: libaudit and SELinux are not used
-      in BLFS.
+      <parameter>-Dselinux=false</parameter>: This switch disables support for
+      libaudit and SELinux since they are not used in BLFS.
 @y
       <parameter>-Dlibaudit=no</parameter> and
-      <parameter>-Dselinux=false</parameter>: libaudit and SELinux are not used
-      in BLFS.
+      <parameter>-Dselinux=false</parameter>: This switch disables support for
+      libaudit and SELinux since they are not used in BLFS.
 @z
 
 @x
-      <parameter>-Dqt=false</parameter>: disables the
-      <application>QT</application> examples. Omit if you have
-      <application>QT</application> available and wish to install the examples.
+      <parameter>-Dqt=false</parameter>: This switch disables the
+      <application>Qt</application> examples. Omit if you have
+      <application>Qt</application> available and wish to install the examples.
 @y
-      <parameter>-Dqt=false</parameter>: disables the
-      <application>QT</application> examples. Omit if you have
-      <application>QT</application> available and wish to install the examples.
+      <parameter>-Dqt=false</parameter>: This switch disables the
+      <application>Qt</application> examples. Omit if you have
+      <application>Qt</application> available and wish to install the examples.
 @z
 
 @x
@@ -421,11 +405,11 @@
 @x
         To use something other than the built-in dhcp client (recommended if
         using only <command>nmcli</command>), use the following configuration
-        (valid values include either dhclient <!--dhcpcd --> or internal):
+        (valid values include either dhcpcd or internal):
 @y
         To use something other than the built-in dhcp client (recommended if
         using only <command>nmcli</command>), use the following configuration
-        (valid values include either dhclient <!--dhcpcd --> or internal):
+        (valid values include either dhcpcd or internal):
 @z
 
 @x
@@ -439,10 +423,10 @@
 @z
 
 @x
-        For additional configuation options, see
+        For additional configuration options, see
         <command>man 5 NetworkManager.conf</command>.
 @y
-        For additional configuation options, see
+        For additional configuration options, see
         <command>man 5 NetworkManager.conf</command>.
 @z
 

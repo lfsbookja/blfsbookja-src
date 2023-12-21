@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY vte-buildsize     "13 MB (with tests)">
-  <!ENTITY vte-time          "0.3 SBU (using parallelism=4; with tests)">
+  <!ENTITY vte-buildsize     "15 MB (with tests)">
+  <!ENTITY vte-time          "0.5 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY vte-buildsize     "13 MB（テスト込み）">
-  <!ENTITY vte-time          "0.3 SBU（parallelism=4 利用時、テスト込み）">
+  <!ENTITY vte-buildsize     "15 MB（テスト込み）">
+  <!ENTITY vte-time          "0.4 SBU（parallelism=4 利用時、テスト込み）">
 @z
 
 @x
@@ -102,7 +102,8 @@
     <para role="recommended">
       <xref linkend="icu"/>,
       <xref linkend="gnutls"/>,
-      <xref linkend="gobject-introspection"/>, and
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk4"/>, and
       <xref linkend="vala"/>
     </para>
 @y
@@ -111,6 +112,7 @@
       <xref linkend="icu"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -118,27 +120,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="fribidi"/> and
-      <xref linkend="gtk-doc"/>
-<!--      <xref linkend="gtk4"/>
-           The  -Dgtk4=true option just returns
-           'not supported on this branch; use git master' -->
+      <xref linkend="fribidi"/>, and
+      <xref linkend="gi-docgen"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="fribidi"/>,
-      <xref linkend="gtk-doc"/>
-<!--      <xref linkend="gtk4"/>
-           The  -Dgtk4=true option just returns
-           'not supported on this branch; use git master' -->
+      <xref linkend="gi-docgen"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -205,11 +195,11 @@
 @z
 
 @x
-      <option>-Ddocs=true</option>: Add this switch if wish to 
-      build the documentation.
+      <option>-Dgtk4=false</option>: Add this switch if you do not want to
+      build the GTK-4 version of VTE.
 @y
-      <option>-Ddocs=true</option>: Add this switch if wish to 
-      build the documentation.
+      <option>-Dgtk4=false</option>: Add this switch if you do not want to
+      build the GTK-4 version of VTE.
 @z
 
 @x
@@ -230,25 +220,31 @@
 
 @x
         <seg>
-          vte-2.&vte-nano;
+          vte-2.&vte-nano; and
+          vte-2.&vte-nano;-gtk4
         </seg>
         <seg>
-          libvte-2.&vte-nano;.so
-        </seg>
-        <seg>
-          /usr/include/vte-2.&vte-nano; and
-          (optional) /usr/share/gtk-doc/html/vte-2.&vte-nano;
-        </seg>
-@y
-        <seg>
-          vte-2.&vte-nano;
-        </seg>
-        <seg>
-          libvte-2.&vte-nano;.so
+          libvte-2.&vte-nano;.so and
+          libvte-2.&vte-nano;-gtk4.so
         </seg>
         <seg>
           /usr/include/vte-2.&vte-nano;,
-          (任意) /usr/share/gtk-doc/html/vte-2.&vte-nano;
+          /usr/include/vte-2.&vte-nano;-gtk4, and
+          (optional) /usr/share/doc/vte-&vte-version;
+        </seg>
+@y
+        <seg>
+          vte-2.&vte-nano;,
+          vte-2.&vte-nano;-gtk4
+        </seg>
+        <seg>
+          libvte-2.&vte-nano;.so,
+          libvte-2.&vte-nano;-gtk4.so
+        </seg>
+        <seg>
+          /usr/include/vte-2.&vte-nano;,
+          /usr/include/vte-2.&vte-nano;-gtk4,
+          (optional) /usr/share/doc/vte-&vte-version;
         </seg>
 @z
 

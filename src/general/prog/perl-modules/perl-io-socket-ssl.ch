@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -83,26 +79,6 @@
       <title>Installation of IO::Socket::SSL</title>
 @y
       <title>&InstallationOf1;IO::Socket::SSL&InstallationOf2;</title>
-@z
-
-@x
-          The tests hang if you are using openssl-1.1.1. They similarly
-          hang if you are using openssl-1.1.0 and Net::SSLeay has had the
-          patch for 1.1.1 applied.
-          Therefore, running them is at the moment not recommended.	
-          If you are on the old version of openssl and did not apply the
-          patch, you can run 'make test' in the normal way.
-          If you are using the cpan method of installation, use the -T 
-          option to avoid running the tests.
-@y
-          The tests hang if you are using openssl-1.1.1. They similarly
-          hang if you are using openssl-1.1.0 and Net::SSLeay has had the
-          patch for 1.1.1 applied.
-          Therefore, running them is at the moment not recommended.	
-          If you are on the old version of openssl and did not apply the
-          patch, you can run 'make test' in the normal way.
-          If you are using the cpan method of installation, use the -T 
-          option to avoid running the tests.
 @z
 
 @x

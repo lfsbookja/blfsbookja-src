@@ -102,12 +102,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Tidy HTML5</title>
 @y
     <title>&InstallationOf1;Tidy HTML5&InstallationOf2;</title>

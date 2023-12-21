@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -125,12 +121,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of GNOME Online Accounts</title>
 @y
     <title>&InstallationOf1;GNOME Online Accounts&InstallationOf2;</title>
@@ -187,7 +177,7 @@
         <seg>
           /usr/include/goa-1.0,
           /usr/lib/goa-1.0, and
-          /usr/share/gtk-doc/html/goa
+          /usr/share/gtk-doc/html/goa (optional)
         </seg>
 @y
         <seg>
@@ -199,7 +189,7 @@
         <seg>
           /usr/include/goa-1.0,
           /usr/lib/goa-1.0,
-          /usr/share/gtk-doc/html/goa
+          /usr/share/gtk-doc/html/goa (optional)
         </seg>
 @z
 

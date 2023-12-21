@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -74,7 +70,7 @@
 @z
 
 @x
-      <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
+      <bridgehead renderas="sect5">Recommended (required for the test suite)</bridgehead>
       <para role="recommended">
         Both <xref linkend="perl-test-fatal"/> and
         <xref linkend="perl-test-requires"/>,
@@ -84,7 +80,7 @@
 @y
       <bridgehead renderas="sect5">&Recommended; (テストスイートに必要)</bridgehead>
       <para role="recommended">
-        Both <xref linkend="perl-test-fatal"/>,
+        Both <xref linkend="perl-test-fatal"/> and
         <xref linkend="perl-test-requires"/>,
         but only if a copy of <xref role="nodep" linkend="perl-datetime"/>
         (for which this is a dependency) has already been installed

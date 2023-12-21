@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,10 +11,8 @@
 
 @x
 <sect1 id="svnserver" xreflabel="Running a Subversion Server">
-  <?dbhtml filename="svnserver.html"?>
 @y
 <sect1 id="svnserver" xreflabel="Subversion サーバーの起動">
-  <?dbhtml filename="svnserver.html"?>
 @z
 
 @x
@@ -86,7 +80,7 @@
 @z
 
 @x
-      <title>1. Setup Users, Groups, and Permissions</title>
+      <title>1. Set Uup Users, Groups, and Permissions</title>
 @y
       <title>1. ユーザー、グループ、パーミッションの設定</title>
 @z
@@ -144,13 +138,13 @@
 @x
         There are several ways to set up a subversion repository. It is
         recommended to have a look at the <ulink
-        url="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">SVN
+        url="https://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">SVN
         Book</ulink> corresponding chapter. A basic repository can be set up
         with the instructions below.
 @y
         There are several ways to set up a subversion repository. It is
         recommended to have a look at the <ulink
-        url="http://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">SVN
+        url="https://svnbook.red-bean.com/nightly/en/svn.reposadmin.html">SVN
         Book</ulink> corresponding chapter. A basic repository can be set up
         with the instructions below.
 @z
@@ -169,14 +163,14 @@
         something useful. You'll need to have a predefined directory
         layout set up exactly as you want your repository to look. For
         example, here is a sample BLFS layout setup with a root of
-        <filename>svntest/</filename>. You'll need to setup a directory
+        <filename>svntest/</filename>. You'll need to set up a directory
         tree similar to the following:
 @y
         Now that the repository is created, it should be populated with
         something useful. You'll need to have a predefined directory
         layout set up exactly as you want your repository to look. For
         example, here is a sample BLFS layout setup with a root of
-        <filename>svntest/</filename>. You'll need to setup a directory
+        <filename>svntest/</filename>. You'll need to set up a directory
         tree similar to the following:
 @z
 
@@ -273,14 +267,14 @@
         repository and to provide anonymous access using
         <command>svnserve</command>. There are several other ways to provide
         access to the repository. These additional configurations are best
-        explained at <ulink url="http://svnbook.red-bean.com/"/>.
+        explained at <ulink url="https://svnbook.red-bean.com/"/>.
 @y
         As mentioned previously, these instructions will configure the
         server to use only <command>ssh</command> for write access to the
         repository and to provide anonymous access using
         <command>svnserve</command>. There are several other ways to provide
         access to the repository. These additional configurations are best
-        explained at <ulink url="http://svnbook.red-bean.com/"/>.
+        explained at <ulink url="https://svnbook.red-bean.com/"/>.
 @z
 
 @x

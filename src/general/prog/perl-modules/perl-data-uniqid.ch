@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -50,9 +46,9 @@
 @z
 
 @x
-        Although the final test fails and reports an Error, the testsuite
+        Although the final test fails and reports an Error, the test suite
         returns a status of 0. The error can safely be ignored.
 @y
-        Although the final test fails and reports an Error, the testsuite
+        Although the final test fails and reports an Error, the test suite
         returns a status of 0. The error can safely be ignored.
 @z

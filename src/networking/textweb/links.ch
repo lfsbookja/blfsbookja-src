@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -91,46 +87,25 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      Graphics mode requires at least one of
-      <xref linkend="gpm"/> (mouse support to be used with a framebuffer-based
-      console),
-      <ulink url="http://www.svgalib.org/">SVGAlib</ulink>,
-      <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">
-        DirectFB
-      </ulink>, and
-      <xref linkend="x-window-system"/>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      Graphics mode requires at least one of
-      <xref linkend="gpm"/> (mouse support to be used with a framebuffer-based
-      console),
-      <ulink url="http://www.svgalib.org/">SVGAlib</ulink>,
-      <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">
-        DirectFB
-      </ulink>, and
-      <xref linkend="x-window-system"/>
-    </para>
 @z
 
 @x
       For decoding various image formats <application>Links</application>
       can utilize
+      <xref linkend="libavif"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="librsvg"/>, and
       <xref linkend="libtiff"/>
 @y
       さまざまなイメージフォーマットのデコーディングを行うために <application>Links</application> では以下を利用します。
-      <xref linkend="libpng"/>, <xref linkend="libjpeg"/>, <xref linkend="librsvg"/>, <xref linkend="libtiff"/>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
+      <xref linkend="libavif"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="librsvg"/>,
+      <xref linkend="libtiff"/>
 @z
 
 @x

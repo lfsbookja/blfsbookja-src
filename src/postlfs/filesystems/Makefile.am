@@ -1,49 +1,36 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 SUBDIRS = uefi-bootloaders
-BOOKdir = @abs_bookdir@/postlfs/filesystems
+
 CHANGE_FILES = \
-	aboutlvm.ch      \
-	aboutraid.ch     \
-	btrfs-progs.ch   \
-	dosfstools.ch    \
-	filesystems.ch   \
-	fuse3.ch         \
-	gptfdisk.ch      \
-	initramfs.ch     \
-	jfs.ch           \
-	lvm2.ch          \
-	mdadm.ch         \
-	ntfs-3g.ch       \
-	parted.ch        \
-	reiser.ch        \
-	smartmontools.ch \
-	sshfs.ch         \
-	xfsprogs.ch
+	aboutlvm.ch                \
+	aboutraid.ch               \
+	btrfs-progs.ch             \
+	btrfs-progs-kernel.ch      \
+	btrfs-progs-test-kernel.ch \
+	dosfstools.ch              \
+	dosfstools-kernel.ch       \
+	filesystems.ch             \
+	fuse3.ch                   \
+	fuse-kernel.ch             \
+	fuse-test-kernel.ch        \
+	gptfdisk.ch                \
+	initramfs.ch               \
+	jfs.ch                     \
+	jfs-kernel.ch              \
+	lvm2.ch                    \
+	lvm2-kernel.ch             \
+	mdadm.ch                   \
+	mdadm-kernel.ch            \
+	ntfs-3g.ch                 \
+	ntfs-3g-kernel.ch          \
+	ntfs3-kernel.ch            \
+	parted.ch                  \
+	parted-test-kernel.ch      \
+	smartmontools.ch           \
+	sshfs.ch                   \
+	xfsprogs.ch                \
+	xfsprogs-kernel.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
-srcdir = @srcdir@
-srcs = $(CHANGE_FILES:.ch=.xml)
-
-SUFFIXES = .ch .xml
-.ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
-
-all: ctie $(srcs)
-
-ctie:
-	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
-
--include Makefile.sub
-Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
-	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-
-@MAINT@.PHONY: chbuild
-@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
-@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
-@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
+include $(top_srcdir)/build-aux/main.mk

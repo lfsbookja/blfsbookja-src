@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY gnome-calculator-buildsize     "36 MB (with tests)">
+  <!ENTITY gnome-calculator-buildsize     "35 MB (with tests)">
   <!ENTITY gnome-calculator-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY gnome-calculator-buildsize     "36 MB（テスト込み）">
+  <!ENTITY gnome-calculator-buildsize     "35 MB（テスト込み）">
   <!ENTITY gnome-calculator-time          "0.4 SBU（テスト込み）">
 @z
 
@@ -84,22 +84,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="gtksourceview4"/>, 
-      <xref linkend="itstool"/>, 
-      <xref linkend="libgee"/>,
-      <xref linkend="libhandy1"/>, and
-      <xref linkend="libsoup"/>
+      <xref linkend="gtksourceview5"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="libadwaita1"/>,
+      <xref linkend="libgee"/>, and
+      <xref linkend="libsoup3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="gtksourceview4"/>, 
-      <xref linkend="itstool"/>, 
+      <xref linkend="gtksourceview5"/>,
+      <xref linkend="itstool"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="libgee"/>,
-      <xref linkend="libhandy1"/>,
-      <xref linkend="libsoup"/>
+      <xref linkend="libsoup3"/>
     </para>
 @z
 
@@ -113,12 +111,6 @@
     <para role="recommended">
       <xref linkend="vala"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

@@ -76,12 +76,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/libxcvt"/>
-@y
-      User Notes: <ulink url="&blfs-wiki;/libxcvt"/>
-@z
-
-@x
     <title>Installation of libxcvt</title>
 @y
     <title>Installation of libxcvt</title>
@@ -131,7 +125,7 @@
           libxcvt.so
         </seg>
         <seg>
-          /usr/include/libxcvt
+          $XORG_PREFIX/include/libxcvt
         </seg>
 @y
         <seg>
@@ -141,7 +135,7 @@
           libxcvt.so
         </seg>
         <seg>
-          /usr/include/libxcvt
+          $XORG_PREFIX/include/libxcvt
         </seg>
 @z
 

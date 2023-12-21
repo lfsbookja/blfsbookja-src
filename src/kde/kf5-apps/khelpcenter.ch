@@ -110,12 +110,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/khelpcenter"/>
-@y
-      User Notes: <ulink url="&blfs-wiki;/khelpcenter"/>
-@z
-
-@x
     <title>Installation of Khelpcenter</title>
 @y
     <title>Installation of Khelpcenter</title>

@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY mariadb-buildsize     "2.3 GB (650 MB installed)">
-  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "2.3 GB (719 MB installed)">
+  <!ENTITY mariadb-time          "8.7 SBU (with parallelism=4, add 0.3 SBU for tests)">
 @y
-  <!ENTITY mariadb-buildsize     "2.3 GB (650 MB がインストールされる)">
-  <!ENTITY mariadb-time          "7.8 SBU (with parallelism=4, add 0.4 SBU for tests)">
+  <!ENTITY mariadb-buildsize     "2.3 GB (719 MB がインストールされる)">
+  <!ENTITY mariadb-time          "8.7 SBU (with parallelism=4, add 0.3 SBU for tests)">
 @z
 
 @x
@@ -74,13 +74,13 @@
 @z
 
 @x
-        The installed size of MariaDB is 644 MB, but this can be
-        reduced by about 244 MB, if desired, by removing the <filename
+        The installed size of MariaDB is 723 MB, but this can be
+        reduced by about 262 MB, if desired, by removing the <filename
         class="directory">/usr/share/mysql/test</filename>
         directory after installation.
 @y
-        MariaDB のインストールサイズは 644 MB です。
-        サイズを縮小する必要がある場合は、インストール後に /usr/share/mysql/test ディレクトリを削除すれば 200MB になります。
+        MariaDB のインストールサイズは 723 MB です。
+        サイズを縮小する必要がある場合は、インストール後に /usr/share/mysql/test ディレクトリを削除すれば 262MB になります。
 @z
 
 @x
@@ -120,22 +120,24 @@
       <xref linkend="libaio"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="linux-pam"/>,
+      <xref linkend="lzo"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="pcre2"/>,
       <xref linkend="ruby"/>,
+      <xref linkend="sphinx"/>,
       <xref linkend="unixodbc"/>,
       <xref linkend="valgrind"/>,
-      <ulink url="http://groonga.org/">Groonga</ulink>,
-      <ulink url="http://www.phontron.com/kytea/">KyTea</ulink>,
+      <ulink url="https://groonga.org/">Groonga</ulink>,
+      <ulink url="https://www.phontron.com/kytea/">KyTea</ulink>,
       <ulink url="https://sourceforge.net/projects/judy/">Judy</ulink>,
       <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>,
-      <ulink url="http://taku910.github.io/mecab">MeCab</ulink>,
-      <ulink url="http://msgpack.org/">MessagePack</ulink>,
-      <ulink url="http://www.mruby.org/">mruby</ulink>,
-      <ulink url="https://google.github.io/snappy/">Snappy</ulink>,
-      <ulink url="http://sphinxsearch.com/downloads/">Sphinx</ulink>,
-      <ulink url="https://mariadb.com/kb/en/mariadb/tokudb/">TokuDB</ulink>, and
-      <ulink url="http://zeromq.org/">ZeroMQ</ulink>
+      <ulink url="https://taku910.github.io/mecab">MeCab</ulink>,
+      <ulink url="https://msgpack.org/">MessagePack</ulink>,
+      <ulink url="https://www.mruby.org/">mruby</ulink>,
+      <ulink url="https://mariadb.com/kb/en/myrocks/">MyRocks</ulink>,
+      <ulink url="https://github.com/google/snappy">Snappy</ulink>, and
+      <!--<ulink url="https://mariadb.com/kb/en/mariadb/tokudb/">TokuDB</ulink>, and-->
+      <ulink url="https://zeromq.org/">ZeroMQ</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -144,29 +146,25 @@
       <xref linkend="libaio"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="linux-pam"/>,
+      <xref linkend="lzo"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="pcre2"/>,
       <xref linkend="ruby"/>,
+      <xref linkend="sphinx"/>,
       <xref linkend="unixodbc"/>,
       <xref linkend="valgrind"/>,
-      <ulink url="http://groonga.org/">Groonga</ulink>,
-      <ulink url="http://www.phontron.com/kytea/">KyTea</ulink>,
+      <ulink url="https://groonga.org/">Groonga</ulink>,
+      <ulink url="https://www.phontron.com/kytea/">KyTea</ulink>,
       <ulink url="https://sourceforge.net/projects/judy/">Judy</ulink>,
       <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>,
-      <ulink url="http://taku910.github.io/mecab">MeCab</ulink>,
-      <ulink url="http://msgpack.org/">MessagePack</ulink>,
-      <ulink url="http://www.mruby.org/">mruby</ulink>,
-      <ulink url="https://google.github.io/snappy/">Snappy</ulink>,
-      <ulink url="http://sphinxsearch.com/downloads/">Sphinx</ulink>,
-      <ulink url="https://mariadb.com/kb/en/mariadb/tokudb/">TokuDB</ulink>,
-      <ulink url="http://zeromq.org/">ZeroMQ</ulink>
+      <ulink url="https://taku910.github.io/mecab">MeCab</ulink>,
+      <ulink url="https://msgpack.org/">MessagePack</ulink>,
+      <ulink url="https://www.mruby.org/">mruby</ulink>,
+      <ulink url="https://mariadb.com/kb/en/myrocks/">MyRocks</ulink>,
+      <ulink url="https://github.com/google/snappy">Snappy</ulink>,
+      <!--<ulink url="https://mariadb.com/kb/en/mariadb/tokudb/">TokuDB</ulink>, and-->
+      <ulink url="https://zeromq.org/">ZeroMQ</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

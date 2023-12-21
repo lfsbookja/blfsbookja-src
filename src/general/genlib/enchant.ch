@@ -100,9 +100,9 @@
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
       <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
-      <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
+      <ulink url="https://hunspell.github.io/">Hunspell</ulink>,
       <ulink url="https://nuspell.github.io/">Nuspell</ulink>,
-      <ulink url="http://hunspell.github.io/">Voikko</ulink>, and
+      <ulink url="https://hunspell.github.io/">Voikko</ulink>, and
       <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">
         unittest-cpp</ulink> (required for tests)
     </para>
@@ -112,20 +112,12 @@
       <xref linkend="dbus-glib"/>,
       <xref linkend="doxygen"/>,
       <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink>,
-      <ulink url="http://hunspell.github.io/">Hunspell</ulink>,
+      <ulink url="https://hunspell.github.io/">Hunspell</ulink>,
       <ulink url="https://nuspell.github.io/">Nuspell</ulink>,
-      <ulink url="http://hunspell.github.io/">Voikko</ulink>,
+      <ulink url="https://hunspell.github.io/">Voikko</ulink>,
       <ulink url="https://github.com/unittest-cpp/unittest-cpp/releases">
-        unittest-cpp</ulink> (required for tests)
+        unittest-cpp</ulink> (テストに必要)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/enchant"/></para>
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/enchant"/></para>
 @z
 
 @x
@@ -242,13 +234,13 @@
 @x
         <seg>enchant-2 and enchant-lsmod-2</seg>
         <seg>libenchant-2.so</seg>
-        <seg>/usr/include/enchant-2, /usr/lib/enchant-2, and
-        /usr/share/enchant</seg>
+        <seg>/usr/include/enchant-2, /usr/lib/enchant-2,
+          /usr/share/enchant, and /usr/share/doc/enchant-&enchant-version;</seg>
 @y
         <seg>enchant-2, enchant-lsmod-2</seg>
         <seg>libenchant-2.so</seg>
         <seg>/usr/include/enchant-2, /usr/lib/enchant-2,
-        /usr/share/enchant</seg>
+          /usr/share/enchant, /usr/share/doc/enchant-&enchant-version;</seg>
 @z
 
 @x

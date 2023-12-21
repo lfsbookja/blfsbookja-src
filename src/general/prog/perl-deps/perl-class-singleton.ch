@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,11 +17,11 @@
 
 @x
         A Singleton describes an object class that can have only one instance in
-        any system, such as a print spooler. This module implements a Singelton
+        any system, such as a print spooler. This module implements a Singleton
         class from which other classes can be derived.
 @y
         A Singleton describes an object class that can have only one instance in
-        any system, such as a print spooler. This module implements a Singelton
+        any system, such as a print spooler. This module implements a Singleton
         class from which other classes can be derived.
 @z
 

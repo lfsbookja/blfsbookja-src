@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -44,11 +40,11 @@
 @z
 
 @x
-        The version of vim changes daily.  The get the latest 
+        The version of vim changes daily.  To get the latest
         version, go to <ulink url="https://github.com/vim/vim/releases">
         https://github.com/vim/vim/releases</ulink>.
 @y
-        The version of vim changes daily.  The get the latest 
+        The version of vim changes daily.  To get the latest
         version, go to <ulink url="https://github.com/vim/vim/releases">
         https://github.com/vim/vim/releases</ulink>.
 @z
@@ -104,14 +100,16 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="x-window-system"/> and
-      <xref linkend="gtk3"/>
+      <xref linkend="x-window-system"/>,
+      <xref linkend="gtk3"/>, and
+      <xref linkend="rsync"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="x-window-system"/>,
-      <xref linkend="gtk3"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="rsync"/>
     </para>
 @z
 
@@ -119,10 +117,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gpm"/>,
-      <xref linkend="lua"/>,
-<!-- can use python3: don't advertise python2
-      <xref linkend="python2"/>,
--->   <xref linkend="rsync"/>, and
+      <xref linkend="lua"/>, and
       <xref linkend="ruby"/>
     </para>
 @y
@@ -130,19 +125,8 @@
     <para role="optional">
       <xref linkend="gpm"/>,
       <xref linkend="lua"/>,
-<!-- can use python3: don't advertise python2
-      <xref linkend="python2"/>,
--->   <xref linkend="rsync"/>,
       <xref linkend="ruby"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/vim"/></para>
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/vim"/></para>
 @z
 
 @x
@@ -178,26 +162,45 @@
         references the <envar>VIMRUNTIME</envar> environment variable, some
         tests may complain about being unable to find the corresponding
         directory and wait for user input. If this is the case, this file
-        should be saved and removed before running the tests.
+        should be saved and removed before running the tests.  Or if
+        <xref linkend='bubblewrap'/> is installed, it's also possible to
+        create a lightweight container environment where this file is hidden
+        and run the tests in the container.
 @y
         グローバルな設定である <filename>/etc/vimrc</filename> において <envar>VIMRUNTIME</envar> 環境変数が設定されている場合、テストによっては、対応するディレクトリが見つけられなくなり、ユーザー入力を促すために停止することがあります。
         このようなことが発生した場合は、このファイルを保存しておき、いったん削除した上でテストを実施してください。
+        Or if
+        <xref linkend='bubblewrap'/> is installed, it's also possible to
+        create a lightweight container environment where this file is hidden
+        and run the tests in the container.
 @z
 
 @x
-      To test the results, issue: <command>make -j1 test</command>.
+      To test the results, issue: <command>make -j1 test</command>, or
+      <command>bwrap --dev-bind / / --dev-bind /dev/null /etc/vimrc make -j1
+      test</command> if running the tests with <xref linkend='bubblewrap'/>
+      and <filename>/etc/vimrc</filename> hidden.
       Even if one of the tests fails to produce the file
       <filename>test.out</filename> in <filename
       class="directory">src/testdir</filename>, the remaining tests will
       still be executed. If all goes well, the log will report
       <literal>ALL DONE</literal>. Some tests labelled as
       <quote>flaky</quote> may fail occasionally and can be ignored.
+      The tests are known to fail if the output is redirected to a file,
+      and also if they are run in a 'screen' session.
 @y
-      ビルド結果をテストする場合は <command>make -j1 test</command> を実行します。
-      テストが失敗した場合、<filename
-      class="directory">src/testdir</filename> ディレクトリに <filename>test.out</filename> が出力され、残りのテストは続行します。
-      テストが成功すれば、ログに <literal>ALL DONE</literal> が出力されます。
-      <quote>flaky</quote>に関するテストは、場合によりいくつか失敗することがありますが、無視してかまいません。
+      To test the results, issue: <command>make -j1 test</command>, or
+      <command>bwrap --dev-bind / / --dev-bind /dev/null /etc/vimrc make -j1
+      test</command> if running the tests with <xref linkend='bubblewrap'/>
+      and <filename>/etc/vimrc</filename> hidden.
+      Even if one of the tests fails to produce the file
+      <filename>test.out</filename> in <filename
+      class="directory">src/testdir</filename>, the remaining tests will
+      still be executed. If all goes well, the log will report
+      <literal>ALL DONE</literal>. Some tests labelled as
+      <quote>flaky</quote> may fail occasionally and can be ignored.
+      The tests are known to fail if the output is redirected to a file,
+      and also if they are run in a 'screen' session.
 @z
 
 @x
@@ -291,7 +294,7 @@
       <option>--enable-rubyinterp</option>:
       These options include the Lua, Perl, Python3, Tcl, or Ruby interpreters
       that allow using other application code in <application>vim</application>
-      scripts. All the <option>--enable-...</option> options can accept
+      scripts. All the <option>--enable-*</option> options can accept
       <option>=dynamic</option> to dynamically load the interpreter when
       needed. This is required for <application>Python 3</application> to
       prevent segmentation faults. For <application>tcl</application>,
@@ -306,7 +309,7 @@
       <option>--enable-rubyinterp</option>:
       These options include the Lua, Perl, Python3, Tcl, or Ruby interpreters
       that allow using other application code in <application>vim</application>
-      scripts. All the <option>--enable-...</option> options can accept
+      scripts. All the <option>--enable-*</option> options can accept
       <option>=dynamic</option> to dynamically load the interpreter when
       needed. This is required for <application>Python 3</application> to
       prevent segmentation faults. For <application>tcl</application>,
@@ -411,11 +414,11 @@
         For additional information on setting up
         <application>Vim</application> configuration files, see <xref
         linkend="postlfs-config-vimrc"/> and <ulink
-        url='http://vim.wikia.com/wiki/Example_vimrc'/>.
+        url="https://vim.fandom.com/wiki/Example_vimrc"/>.
 @y
         <application>Vim</application> の設定ファイルについての詳細は <xref
         linkend="postlfs-config-vimrc"/> や <ulink
-        url='http://vim.wikia.com/wiki/Example_vimrc'/> を参照してください。
+        url="https://vim.fandom.com/wiki/Example_vimrc"/> を参照してください。
 @z
 
 @x

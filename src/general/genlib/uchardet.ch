@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY uchardet-time          "less than 0.1 SBU">
+  <!ENTITY uchardet-buildsize     "4.6 MB (with test)">
+  <!ENTITY uchardet-time          "less than 0.1 SBU (with test)">
 @y
-  <!ENTITY uchardet-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY uchardet-buildsize     "4.6 MB (テスト込み)">
+  <!ENTITY uchardet-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x
@@ -93,12 +91,6 @@
     <para role="required">
       <xref linkend="cmake"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/uchardet"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/uchardet"/>
 @z
 
 @x

@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gdb-buildsize     "811 MB (add 777 MB for docs; add 536 MB for tests)">
-  <!ENTITY gdb-time          "1.9 SBU (Using parallelism=4; add 23 SBU for tests; add 0.5 SBU for docs)">
+  <!ENTITY gdb-buildsize     "966 MB (add 805 MB for docs; add 710 MB for tests)">
+  <!ENTITY gdb-time          "2.1 SBU (add 0.4 SBU for docs; add 18 SBU for tests; all using parallelism=4)">
 @y
-  <!ENTITY gdb-buildsize     "811 MB （ドキュメント生成時はさらに 777 MB; テスト実施時はさらに 536 MB）">
-  <!ENTITY gdb-time          "1.9 SBU （parallelism=4; さらにテスト実施時 23 SBU, ドキュメント生成時 0.5 SBU）">
+  <!ENTITY gdb-buildsize     "966 MB （ドキュメント生成時はさらに 729 MB; テスト実施時はさらに 538 MB）">
+  <!ENTITY gdb-time          "2.1 SBU （ドキュメント生成時はさらに 0.4 SBU, テスト実施時はさらに 18 SBU, いずれも parallelism=4 利用）">
 @z
 
 @x
@@ -85,13 +85,27 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended Runtime Dependency</bridgehead>
+    <para role="recommended">
+      <xref linkend="six"/> (Python 3 module, required at run-time to
+      use GDB scripts from various LFS/BLFS packages with Python 3
+      installed in LFS)
+    </para>
+@y
+    <bridgehead renderas="sect4">Recommended Runtime Dependency</bridgehead>
+    <para role="recommended">
+      <xref linkend="six"/> (Python 3 module, required at run-time to
+      use GDB scripts from various LFS/BLFS packages with Python 3
+      installed in LFS)
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <!-- <xref linkend="dejagnu"/> (required for tests), -->
       <xref linkend="doxygen"/>,
       <xref linkend="gcc"/> (ada, gfortran, and go are used for tests),
       <xref linkend="guile"/>,
-      <xref linkend="python2"/>,
       <xref linkend="rust"/> (used for some tests),
       <xref linkend="valgrind"/>, and
       <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
@@ -100,22 +114,14 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <!-- <xref linkend="dejagnu"/> (required for tests), -->
       <xref linkend="doxygen"/>,
       <xref linkend="gcc"/> (ada, gfortran, and go are used for tests),
       <xref linkend="guile"/>,
-      <xref linkend="python2"/>,
       <xref linkend="rust"/> (used for some tests),
-      <xref linkend="valgrind"/>, and
+      <xref linkend="valgrind"/>,
       <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>
-      （実行時での依存、テスト内にて利用するものもあり）
+      (実行時での依存、テスト内にて利用するものもあり)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -161,22 +167,20 @@
 
 @x
         <seg>
-          gcore, gdb and gdbserver
+          gcore, gdb, gdbserver, and gdb-add-index
         </seg>
         <seg>
-          <!--libinproctrace.so-->
-          None
+          libinproctrace.so
         </seg>
         <seg>
           /usr/{include,share}/gdb and /usr/share/doc/gdb-&gdb-version;
         </seg>
 @y
         <seg>
-          gcore, gdb, gdbserver
+          gcore, gdb, gdbserver, gdb-add-index
         </seg>
         <seg>
-          <!--libinproctrace.so-->
-          None
+          libinproctrace.so
         </seg>
         <seg>
           /usr/{include,share}/gdb, /usr/share/doc/gdb-&gdb-version;

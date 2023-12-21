@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -107,70 +103,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="alsa-lib"/>,
-      <xref linkend="cairo"/>,
-      <xref linkend="dbus"/>,
-      <xref linkend="GConf"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gpm"/>,
-      <xref role="nodep" linkend="gtk2"/> or <xref linkend="gtk3"/>,
-      <xref linkend="imagemagick"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="&gnu-http;/intlfonts/">intlfonts</ulink>,
-      <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>,
-      <ulink url="http://www.nongnu.org/m17n/">libotf</ulink>, and
-      <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
-      display such complex scripts as Indic and Khmer, and also for scripts
-      that require Arabic shaping support (Arabic and Farsi),
-      <ulink url="https://mailutils.org/">mailutils</ulink>, and
-      <ulink url="&xorg-download-http;/lib/">libXaw3d</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="alsa-lib"/>,
-      <xref linkend="cairo"/>,
-      <xref linkend="dbus"/>,
-      <xref linkend="GConf"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gpm"/>,
-      <xref role="nodep" linkend="gtk2"/> or <xref linkend="gtk3"/>,
-      <xref linkend="imagemagick"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="&gnu-http;/intlfonts/">intlfonts</ulink>,
-      <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>,
-      <ulink url="http://www.nongnu.org/m17n/">libotf</ulink>, and
-      <ulink url="http://www.nongnu.org/m17n/">m17n-lib</ulink> - to correctly
-      display such complex scripts as Indic and Khmer, and also for scripts
-      that require Arabic shaping support (Arabic and Farsi),
-      <ulink url="https://mailutils.org/">mailutils</ulink>, and
-      <ulink url="&xorg-download-http;/lib/">libXaw3d</ulink>
-    </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/emacs"/></para>
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/emacs"/></para>
 @z
 
 @x
@@ -221,12 +155,12 @@
 
 @x
       <option>--with-gif=no</option>: Use this if you have not installed
-      <xref linkend="giflib"/> or 
-      <ulink url="http://directory.fsf.org/wiki/Libungif">libungif</ulink>.
+      <xref linkend="giflib"/> or
+      <ulink url="https://directory.fsf.org/wiki/Libungif">libungif</ulink>.
 @y
       <option>--with-gif=no</option>:
       このオプションは <xref linkend="giflib"/> または <ulink
-      url="http://directory.fsf.org/wiki/Libungif">libungif</ulink> をインストールしていない場合に指定します。
+      url="https://directory.fsf.org/wiki/Libungif">libungif</ulink> をインストールしていない場合に指定します。
 @z
 
 @x
@@ -305,17 +239,4 @@
             cross-reference tagfiles
 @y
             ソースコードのクロスリファレンスタグファイルを生成する、もう一つのプログラムです。
-@z
-
-@x grep-changelog
-            prints entries in Change Logs matching
-            various criteria
-@y
-            さまざまな条件にマッチした変更履歴 (Change Logs) の項目を出力します。
-@z
-
-@x rcs-checkin
-            is a shell script used to check files into RCS.
-@y
-            RCS へのファイルチェックに用いられるシェルスクリプト。
 @z

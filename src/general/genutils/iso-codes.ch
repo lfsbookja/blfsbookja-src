@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY iso-codes-time          "0.2 SBU (with tests)">
+  <!ENTITY iso-codes-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY iso-codes-time          "0.2 SBU（テスト込み）">
+  <!ENTITY iso-codes-time          "0.1 SBU（テスト込み）">
 @z
 
 @x
@@ -70,12 +70,6 @@
           Estimated build time: &iso-codes-time;
 @y
           &Estimatedbuildtime;: &iso-codes-time;
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

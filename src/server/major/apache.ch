@@ -88,67 +88,26 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="apr-util"/> and
-      <xref linkend="pcre"/>
+      <xref linkend="pcre2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="apr-util"/>,
-      <xref linkend="pcre"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="openssl"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="openssl"/>
+      <xref linkend="pcre2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="brotli"/>,
-      <xref linkend="db"/>,
-      <xref linkend="doxygen"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="lua"/>,
-      <xref linkend="lynx"/> or
-      <xref linkend="Links"/> or
-      <ulink url="&elinks-url;">ELinks</ulink>,
-      <xref linkend="nghttp2"/>,
-      <xref linkend="openldap"/> (<xref linkend="apr-util"/> needs to be
-      installed with ldap support),
-      <xref linkend="rsync"/>, and
-      <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="brotli"/>,
-      <xref linkend="db"/>,
-      <xref linkend="doxygen"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="lua"/>,
-      <xref linkend="lynx"/> または
-      <xref linkend="Links"/> または
-      <ulink url="&elinks-url;">ELinks</ulink>,
-      <xref linkend="nghttp2"/>,
-      <xref linkend="openldap"/> (<xref linkend="apr-util"/> が ldap サポートつきでインストールされていること),
-      <xref linkend="rsync"/>,
-      <ulink url="https://sourceforge.net/projects/distcache">Distcache</ulink>
-    </para>
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/apache"/>
+      Editor Notes: <ulink url="&blfs-wiki;/apache"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/apache"/>
+      &EditorNotes;: <ulink url="&blfs-wiki;/apache"/>
 @z
 
 @x

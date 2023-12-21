@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY tracker3-miners-buildsize     "37 MB (with tests)">
-  <!ENTITY tracker3-miners-time          "1.0 SBU (with tests)">
+  <!ENTITY tracker3-miners-buildsize     "85 MB (with tests)">
+  <!ENTITY tracker3-miners-time          "0.3 SBU (with parallelism=4; add as much as 1.0 SBU for tests, dependent on disk speed)">
 @y
-  <!ENTITY tracker3-miners-buildsize     "37 MB（テスト込み）">
-  <!ENTITY tracker3-miners-time          "1.0 SBU（テスト込み）">
+  <!ENTITY tracker3-miners-buildsize     "85 MB (テスト込み)">
+  <!ENTITY tracker3-miners-time          "0.3 SBU (with parallelism=4; add as much as 1.0 SBU for tests, dependent on disk speed)">
 @z
 
 @x
@@ -100,23 +100,27 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="ffmpeg"/>,
       <xref linkend="giflib"/>,
+      <xref role='runtime' linkend="gst10-plugins-good"/> (runtime),
+      <xref role='runtime' linkend="gst10-libav"/> (runtime),
       <xref linkend="icu"/>,
       <xref linkend="libexif"/>,
       <xref linkend="libgrss"/>,
-      <xref linkend="libgxps"/>, and
+      <xref linkend="libgxps"/>,
+      <xref linkend="libseccomp"/>, and
       <xref linkend="poppler"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="ffmpeg"/>,
       <xref linkend="giflib"/>,
+      <xref role='runtime' linkend="gst10-plugins-good"/> (実行時),
+      <xref role='runtime' linkend="gst10-libav"/> (実行時),
       <xref linkend="icu"/>,
       <xref linkend="libexif"/>,
       <xref linkend="libgrss"/>,
       <xref linkend="libgxps"/>,
+      <xref linkend="libseccomp"/>,
       <xref linkend="poppler"/>
     </para>
 @z
@@ -127,17 +131,16 @@
       <xref linkend="asciidoc"/>,
       <xref linkend="cmake"/>,
       <xref linkend="dconf"/>,
+      <xref linkend="ffmpeg"/>,
       <xref linkend="libgsf"/>,
-      <xref linkend="libseccomp"/>,
+      <xref linkend="NetworkManager"/>,
       <xref linkend="taglib"/>,
       <xref linkend="totem-pl-parser"/>,
       <xref linkend="upower"/>,
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
-      <ulink url="http://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
+      <ulink url="https://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
       <ulink url="https://libosinfo.org">libosinfo</ulink>, and
       <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
-      <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
-      (for tests)-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -145,24 +148,17 @@
       <xref linkend="asciidoc"/>,
       <xref linkend="cmake"/>,
       <xref linkend="dconf"/>,
+      <xref linkend="ffmpeg"/>,
       <xref linkend="libgsf"/>,
-      <xref linkend="libseccomp"/>,
+      <xref linkend="NetworkManager"/>,
       <xref linkend="taglib"/>,
       <xref linkend="totem-pl-parser"/>,
       <xref linkend="upower"/>,
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
-      <ulink url="http://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
+      <ulink url="https://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
       <ulink url="https://libosinfo.org">libosinfo</ulink>,
       <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
-      <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
-      (for tests)-->
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/tracker-miners"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/tracker-miners"/>
 @z
 
 @x
@@ -172,13 +168,29 @@
 @z
 
 @x
-      First, as the <systemitem class="username">root</systemitem> user, 
-      remove some files from tracker-2 which will conflict with 
-      tracker-miners-3:
+        If you plan to run the tests, some timeouts are too short when
+        using spinning disks. There are two places where timeouts are
+        used: first, individual tests inside a group of tests have a
+        default timeout of 10s. This can be changed by setting the environment
+        variable <envar>TRACKER_TESTS_AWAIT_TIMEOUT</envar> to the desired
+        value when running the tests (see below). Second, a global timeout
+        for a group of tests is fixed at configuration time. The default value
+        in the <filename class="directory">functional-tests</filename>
+        directory (other directories have only short lived tests) may be
+        increased with the following command (replace 200 with a value
+        suitable for your machine):
 @y
-      First, as the <systemitem class="username">root</systemitem> user, 
-      remove some files from tracker-2 which will conflict with 
-      tracker-miners-3:
+        If you plan to run the tests, some timeouts are too short when
+        using spinning disks. There are two places where timeouts are
+        used: first, individual tests inside a group of tests have a
+        default timeout of 10s. This can be changed by setting the environment
+        variable <envar>TRACKER_TESTS_AWAIT_TIMEOUT</envar> to the desired
+        value when running the tests (see below). Second, a global timeout
+        for a group of tests is fixed at configuration time. The default value
+        in the <filename class="directory">functional-tests</filename>
+        directory (other directories have only short lived tests) may be
+        increased with the following command (replace 200 with a value
+        suitable for your machine):
 @z
 
 @x
@@ -189,13 +201,11 @@
 @z
 
 @x
-      To test the results, as the <systemitem class="username">root</systemitem>
-      user, issue: <command>ninja test</command>. <!-- 38 tests will fail if the
-      Python 3 module tap.py is not installed. -->
+      To test the results, issue (adjust the individual test timeout to a
+      value suitable for your machine, see the note above):
 @y
-      ビルド結果をテストする場合は <systemitem
-      class="username">root</systemitem> ユーザーになって <command>ninja test</command> を実行します。
-      <!-- Python 3 モジュール tap.py がインストールされていない場合、38 個のテストが失敗します。-->
+      To test the results, issue (adjust the individual test timeout to a
+      value suitable for your machine, see the note above):
 @z
 
 @x

@@ -75,27 +75,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="itstool"/>,
-      <xref linkend="libxml2"/>, and
-      <xref linkend="xmlto"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="itstool"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="xmlto"/>
+      <xref linkend="libxml2"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/shared-mime-info"/></para>
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/shared-mime-info"/></para>
 @z
 
 @x

@@ -95,9 +95,17 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/shadow"/>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <ulink url="https://libbsd.freedesktop.org/wiki/">libbsd</ulink> and
+      <ulink url="https://www.openwall.com/tcb/">tcb</ulink>
+    </para>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/shadow"/>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <ulink url="https://libbsd.freedesktop.org/wiki/">libbsd</ulink>,
+      <ulink url="https://www.openwall.com/tcb/">tcb</ulink>
+    </para>
 @z
 
 @x
@@ -165,68 +173,44 @@
 @z
 
 @x
-      <command>find man -name Makefile.in -exec ... {} \;</command>: This
-      command is used to suppress the installation of the
+      <command>find man -name Makefile.in -exec ... {} \;</command>: The
+      first command is used to suppress the installation of the
       <command>groups</command> man pages so the existing ones installed from
       the <application>Coreutils</application> package are not replaced.
+      The two other commands prevent installation of manual pages that
+      are already installed by <application>Man-pages</application> in LFS.
 @y
       <command>find man -name Makefile.in -exec ... {} \;</command>:
-      このコマンドは <command>groups</command> の man ページをインストールしないようにします。
+      1 つめのコマンドは <command>groups</command> の man ページをインストールしないようにします。
       LFS 構築時に <application>Coreutils</application> パッケージによってインストールされた man ページを置き換えないようにするものです。
+      The two other commands prevent installation of manual pages that
+      are already installed by <application>Man-pages</application> in LFS.
 @z
 
 @x
-      <command>sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' -e
-      's@/var/spool/mail@/var/mail@' -e '/PATH=/{s@/sbin:@@;s@/bin:@@}' 
-      -i etc/login.defs</command>: Instead of using
-      the default 'DES' method, this command modifies the installation to use
-      the more secure 'SHA512' method of hashing passwords, which also allows
-      passwords longer than eight characters. It also changes the obsolete
-      <filename class="directory">/var/spool/mail</filename> location for user
-      mailboxes that <application>Shadow</application> uses by default to the
-      <filename class="directory">/var/mail</filename> location. It also
-      changes the default path to be consistent with that set in LFS.
+      <command>sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' -e
+        's@/var/spool/mail@/var/mail@' -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'
+        -i etc/login.defs</command>: Instead of using the default 'DES'
+      method, this command modifies the installation to use the much more
+      secure 'YESCRYPT' method of hashing passwords, which also allows
+      passwords longer than eight characters.  The command also changes the
+      obsolete <filename class="directory">/var/spool/mail</filename> location
+      for user mailboxes that <application>Shadow</application> uses by
+      default to the <filename class="directory">/var/mail</filename>
+      location. It also changes the default path to be consistent with that
+      set in LFS.
 @y
-      <command>sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD SHA512@' -e
-      's@/var/spool/mail@/var/mail@' -e '/PATH=/{s@/sbin:@@;s@/bin:@@}' 
-      -i etc/login.defs</command>: Instead of using
-      the default 'DES' method, this command modifies the installation to use
-      the more secure 'SHA512' method of hashing passwords, which also allows
-      passwords longer than eight characters. It also changes the obsolete
-      <filename class="directory">/var/spool/mail</filename> location for user
-      mailboxes that <application>Shadow</application> uses by default to the
-      <filename class="directory">/var/mail</filename> location. It also
-      changes the default path to be consistent with that set in LFS.
-@z
-
-@x
-      <command>sed ... libmisc/salt.c</command> and
-      <command>sed ... libsubid/Makefile.am</command>: Fix a couple of errors
-      that were found after the package was released.
-@y
-      <command>sed ... libmisc/salt.c</command> and
-      <command>sed ... libsubid/Makefile.am</command>: Fix a couple of errors
-      that were found after the package was released.
-@z
-
-@x
-      <parameter>--with-group-name-max-length=32</parameter>: The maximum
-      user name is 32 characters. Make the maximum group name the same.
-@y
-      <parameter>--with-group-name-max-length=32</parameter>: The maximum
-      user name is 32 characters. Make the maximum group name the same.
-@z
-
-@x
-      <command>mv -v /usr/bin/passwd /bin</command>: The
-      <command>passwd</command> program may be needed during times when the
-      <filename class='directory'>/usr</filename> filesystem is not mounted so
-      it is moved into the root partition.
-@y
-      <command>mv -v /usr/bin/passwd /bin</command>:
-      <command>passwd</command> プログラムは <filename
-      class='directory'>/usr</filename> ファイルシステムがマウントされていない時にも必要となります。
-      このためこのプログラムをルートパーティションに移動します。
+      <command>sed -e 's@#ENCRYPT_METHOD DES@ENCRYPT_METHOD YESCRYPT@' -e
+        's@/var/spool/mail@/var/mail@' -e '/PATH=/{s@/sbin:@@;s@/bin:@@}'
+        -i etc/login.defs</command>: Instead of using the default 'DES'
+      method, this command modifies the installation to use the much more
+      secure 'YESCRYPT' method of hashing passwords, which also allows
+      passwords longer than eight characters.  The command also changes the
+      obsolete <filename class="directory">/var/spool/mail</filename> location
+      for user mailboxes that <application>Shadow</application> uses by
+      default to the <filename class="directory">/var/mail</filename>
+      location. It also changes the default path to be consistent with that
+      set in LFS.
 @z
 
 @x
@@ -401,15 +385,9 @@
 @z
 
 @x
-        <title>Other common programs</title>
-        <!--<title>'chfn', 'chgpasswd', 'chgpasswd', 'chsh', 'groupadd', 'groupdel',
-        'groupmems', 'groupmod', 'newusers', 'useradd', 'userdel' and
-        'usermod'</title>-->
+        <title>Other shadow utilities</title>
 @y
-        <title>その他の一般的なプログラム</title>
-        <!--<title>'chfn', 'chgpasswd', 'chgpasswd', 'chsh', 'groupadd', 'groupdel',
-        'groupmems', 'groupmod', 'newusers', 'useradd', 'userdel' and
-        'usermod'</title>-->
+        <title>その他の shadow ユーティリティー</title>
 @z
 
 @x

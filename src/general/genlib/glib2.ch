@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY glib2-buildsize     "112 MB (add 6 MB for tests)">
-  <!ENTITY glib2-time          "0.5 SBU (add 0.5 SBU for tests; both using parallelism=4)">
+  <!ENTITY glib2-buildsize     "130 MB (add 20 MB for tests)">
+  <!ENTITY glib2-time          "0.8 SBU (add 0.5 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY glib2-buildsize     "112 MB（テスト実施時はさらに 6 MB）">
-  <!ENTITY glib2-time          "0.5 SBU（テスト実施時はさらに 0.5 SBU、いずれも paralleism=4）">
+  <!ENTITY glib2-buildsize     "130 MB（テスト実施時はさらに 20 MB）">
+  <!ENTITY glib2-time          "0.8 SBU（テスト実施時はさらに 0.5 SBU、いずれも paralleism=4）">
 @z
 
 @x
@@ -26,12 +26,12 @@
 @x
       The <application>GLib</application> package contains low-level
       libraries useful for providing data structure handling for C, portability
-      wrappers and interfaces for such runtime functionality as an
+      wrappers and interfaces for runtime functionality such as an
       event loop, threads, dynamic loading and an object system.
 @y
       The <application>GLib</application> package contains low-level
       libraries useful for providing data structure handling for C, portability
-      wrappers and interfaces for such runtime functionality as an
+      wrappers and interfaces for runtime functionality such as an
       event loop, threads, dynamic loading and an object system.
 @z
 
@@ -87,33 +87,37 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="libxslt"/> and
-      <xref linkend="pcre"/> (built with Unicode properties)
+      <xref linkend="pcre2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="libxslt"/>,
-      <xref linkend="pcre"/> (Unicode プロパティを有効にしてビルドしたもの)
+      <xref linkend="pcre2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/> and
+      <xref linkend="dbus"/> (for some tests),
+      <xref linkend="fuse3"/> and
       <ulink url="https://bindfs.org/">bindfs</ulink>
-        (both may be used in some tests),
+        (both needed for one test),
       <xref linkend="gdb"/> (for bindings),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/> (to build API documentation),
       <xref linkend="glib-networking"/> (for some tests, but this is a circular
       dependency), and
-      <xref linkend="sysprof"/>
+      <!--<xref linkend="sysprof"/>-->
+      <ulink url="&sysprof-url;">sysprof</ulink>
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/> と
+      <xref linkend="dbus"/> (for some tests),
+      <xref linkend="fuse3"/> and
       <ulink url="https://bindfs.org/">bindfs</ulink>
         (両者ともに各種テストにて用いられる),
       <xref linkend="gdb"/> (バインディングのため),
@@ -121,7 +125,9 @@
       <xref linkend="docbook-xsl"/>,
       <xref linkend="gtk-doc"/> (API ドキュメント生成のため),
       <xref linkend="glib-networking"/> (一部のテストのため、ただし循環依存性あり),
-      <xref linkend="sysprof"/>
+      <!--<xref linkend="sysprof"/>-->
+      <ulink url="&sysprof-url;">sysprof</ulink>
+    </para>
 @z
 
 @x
@@ -152,12 +158,6 @@
       which are part of
       <xref role="runtime" linkend="shared-mime-info"/> and
       <xref role="runtime" linkend="desktop-file-utils"/>, respectively.
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -201,15 +201,20 @@
 @z
 
 @x
-      To test the results, after having installed the package, issue:
-      <command>ninja test</command>. One test named
-      <literal>gio / file</literal> is known to fail if the test is run as
-      the <systemitem class="username">root</systemitem> user.
+        Do not run the test suite as &root; or some tests will fail
+        unexpectedly and leave some non-FHS-compliant directories in the
+        <filename class='directory'>/usr</filename> hierarchy.
 @y
-      ビルド結果をテストする場合は、本パッケージをインストールした後に <command>ninja test</command> を実行します。
-      One test named
-      <literal>gio / file</literal> is known to fail if the test is run as
-      the <systemitem class="username">root</systemitem> user.
+        Do not run the test suite as &root; or some tests will fail
+        unexpectedly and leave some non-FHS-compliant directories in the
+        <filename class='directory'>/usr</filename> hierarchy.
+@z
+
+@x
+      To test the results, after having installed the package, issue:
+      <command>LC_ALL=C ninja test</command> as a non-&root; user.
+@y
+      ビルド結果をテストする場合は、本パッケージをインストールした後に、非 &root; ユーザーになって <command>LC_ALL=C ninja test</command> を実行します。
 @z
 
 @x
@@ -270,9 +275,10 @@
         <seg>
           /usr/include/gio-unix-2.0,
           /usr/include/glib-2.0,
+          /usr/lib/gio,
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
-          /usr/share/doc/glib-&glib2-version;, and
+          /usr/share/doc/{glib-2.0,glib-&glib2-version;}, and
           /usr/share/gtk-doc/html/{gio,glib,gobject} (optional)
         </seg>
 @y
@@ -295,9 +301,10 @@
         <seg>
           /usr/include/gio-unix-2.0,
           /usr/include/glib-2.0,
+          /usr/lib/gio,
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
-          /usr/share/doc/glib-&glib2-version;,
+          /usr/share/doc/{glib-2.0,glib-&glib2-version;},
           /usr/share/gtk-doc/html/{gio,glib,gobject} (optional)
         </seg>
 @z

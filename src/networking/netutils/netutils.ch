@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -24,10 +20,4 @@
     needs investigating.
 @y
     本章では、ネットワークを調べるために利用される、取り扱いやすいツールを説明します。
-@z
-
-@x
-  <para condition="html" role="usernotes">User Notes:
-@y
-  <para condition="html" role="usernotes">&UserNotes;:
 @z

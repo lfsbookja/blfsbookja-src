@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -78,13 +74,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="dbus-glib"/>,
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="gst10-plugins-good"/> and
+      <xref linkend="gst10-plugins-good"/>, and
       <xref linkend="libxfce4ui"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="dbus-glib"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gst10-plugins-good"/>,
       <xref linkend="libxfce4ui"/>
@@ -103,12 +101,6 @@
       <xref linkend="libnotify"/>,
       <xref linkend="taglib"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/parole"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/parole"/>
 @z
 
 @x

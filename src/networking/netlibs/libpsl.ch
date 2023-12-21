@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY libpsl-time          "0.1 SBU (including tests)">
+  <!ENTITY libpsl-time          "less than 0.1 SBU (including tests)">
 @y
-  <!ENTITY libpsl-time          "0.1 SBU (テストを含む)">
+  <!ENTITY libpsl-time          "less than 0.1 SBU (including tests)">
 @z
 
 @x
@@ -86,12 +82,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libidn2"/>
+      <xref linkend="libidn2"/> and
+      <xref linkend='libunistring'/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libidn2"/>
+      <xref linkend="libidn2"/>,
+      <xref linkend='libunistring'/>
     </para>
 @z
 
@@ -110,12 +108,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/libpsl"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libpsl"/>
-@z
-
-@x
     <title>Installation of libpsl</title>
 @y
     <title>&InstallationOf1;libpsl&InstallationOf2;</title>
@@ -129,9 +121,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x

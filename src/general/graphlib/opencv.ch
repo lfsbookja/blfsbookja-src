@@ -12,7 +12,7 @@
 @x
     <title>Introduction to opencv</title>
 @y
-    <title>Introduction to opencv</title>
+    <title>&IntroductionTo1;opencv&IntroductionTo2;</title>
 @z
 
 @x
@@ -26,55 +26,48 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&opencv-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&opencv-download-http;"/>
+          &Download; (HTTP): <ulink url="&opencv-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&opencv-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&opencv-download-ftp;"/>
+          &Download; (FTP): <ulink url="&opencv-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &opencv-md5sum;
 @y
-          Download MD5 sum: &opencv-md5sum;
+          &Download; MD5 sum: &opencv-md5sum;
 @z
 
 @x
           Download size: &opencv-size;
 @y
-          Download size: &opencv-size;
+          &DownloadSize;: &opencv-size;
 @z
 
 @x
           Estimated disk space required: &opencv-buildsize;
 @y
-          Estimated disk space required: &opencv-buildsize;
+          &Estimateddiskspacerequired;: &opencv-buildsize;
 @z
 
 @x
           Estimated build time: &opencv-time;
 @y
-          Estimated build time: &opencv-time;
+          &Estimateddiskspacerequired;: &opencv-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
     <itemizedlist spacing="compact">
-<!--      <listitem>
-        <para>
-          Optional file (x86_64 only; will be downloaded when running cmake if not present):
-          <ulink
-          url="https://raw.githubusercontent.com/opencv/opencv_3rdparty/&ippicv_binaries_commit;/ippicv/&ippicv-version;.tgz"/>
-        </para>
-      </listitem>-->
       <listitem>
         <para>
           Optional additional modules: <ulink
@@ -83,15 +76,8 @@
       </listitem>
     </itemizedlist>
 @y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+    <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
     <itemizedlist spacing="compact">
-<!--      <listitem>
-        <para>
-          Optional file (x86_64 only; will be downloaded when running cmake if not present):
-          <ulink
-          url="https://raw.githubusercontent.com/opencv/opencv_3rdparty/&ippicv_binaries_commit;/ippicv/&ippicv-version;.tgz"/>
-        </para>
-      </listitem>-->
       <listitem>
         <para>
           Optional additional modules: <ulink
@@ -116,7 +102,7 @@
 @x
     <bridgehead renderas="sect3">opencv Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">opencv Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;opencv&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -126,9 +112,9 @@
       <xref linkend="unzip"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/> and
+      <xref linkend="cmake"/>,
       <xref linkend="unzip"/>
     </para>
 @z
@@ -145,6 +131,7 @@
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
+      <xref linkend="openjpeg2"/>,
       <xref linkend="v4l-utils"/>, and
       <xref linkend="xine-lib"/>
     </para>
@@ -160,6 +147,7 @@
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
+      <xref linkend="openjpeg2"/>,
       <xref linkend="v4l-utils"/>,
       <xref linkend="xine-lib"/>
     </para>
@@ -171,26 +159,19 @@
       <xref linkend="apache-ant"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="java"/>,
+      <xref linkend="numpy"/>,
       <xref linkend="python2"/>,
+      <ulink url="https://math-atlas.sourceforge.net/">ATLAS</ulink>,
       <ulink url="https://www.netlib.org/blas/">blas</ulink>,
       <ulink url="https://developer.nvidia.com/cuda-zone">Cuda</ulink>,
       <ulink url="https://eigen.tuxfamily.org/">Eigen</ulink>,
-      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-      <!--<ulink url="http://gcd.joewheaton.org/">GCD</ulink>,-->
-      <ulink url="http://www.gdal.org/">GDAL</ulink>,
-      <!--<ulink url="https://www.jai.com/technology/interfaces">GigEVisionSDK</ulink>,-->
-      <!--<ulink url="http://jackaudio.org/">JACK</ulink>,-->
-      <ulink url="http://www.netlib.org/lapack/">lapack</ulink>,
+      <ulink url="https://www.openexr.com/">OpenEXR</ulink>,
+      <ulink url="https://www.gdal.org/">GDAL</ulink>,
+      <ulink url="https://www.netlib.org/lapack/">lapack</ulink>,
       <ulink url="https://sourceforge.net/projects/libdc1394/">libdc1394</ulink>,
-      <!--<ulink url="http://www.gphoto.org/">libgphoto2</ulink>,-->
-      <ulink url="http://www.numpy.org/">NumPy</ulink>,
-      <!--<ulink url="http://structure.io/openni">OpenNI</ulink>,
-      <ulink url="http://plantuml.sourceforge.net/">PlanetUML</ulink>,
-      <ulink url="https://www.alliedvision.com/en/support/software-downloads.html">PvAPI</ulink>,-->
+<!--  <ulink url="https://www.numpy.org/">NumPy</ulink>, -->
       <ulink url="https://github.com/oneapi-src/oneTBB">Threading Building Blocks (TBB)</ulink>, and
-      <!--<ulink url="http://unicap-imaging.org/">UniCap</ulink>,-->
-      <ulink url="http://www.vtk.org/">VTK - The Visualization Toolkit</ulink>,
-      <!--<ulink url="http://www.ximea.com/">XIMEA</ulink>-->
+      <ulink url="https://vtk.org/">VTK - The Visualization Toolkit</ulink>,
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -198,71 +179,57 @@
       <xref linkend="apache-ant"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="java"/>,
+      <xref linkend="numpy"/>,
       <xref linkend="python2"/>,
+      <ulink url="https://math-atlas.sourceforge.net/">ATLAS</ulink>,
       <ulink url="https://www.netlib.org/blas/">blas</ulink>,
       <ulink url="https://developer.nvidia.com/cuda-zone">Cuda</ulink>,
       <ulink url="https://eigen.tuxfamily.org/">Eigen</ulink>,
-      <ulink url="http://www.openexr.com/">OpenEXR</ulink>,
-      <!--<ulink url="http://gcd.joewheaton.org/">GCD</ulink>,-->
-      <ulink url="http://www.gdal.org/">GDAL</ulink>,
-      <!--<ulink url="https://www.jai.com/technology/interfaces">GigEVisionSDK</ulink>,-->
-      <!--<ulink url="http://jackaudio.org/">JACK</ulink>,-->
-      <ulink url="http://www.netlib.org/lapack/">lapack</ulink>,
+      <ulink url="https://www.openexr.com/">OpenEXR</ulink>,
+      <ulink url="https://www.gdal.org/">GDAL</ulink>,
+      <ulink url="https://www.netlib.org/lapack/">lapack</ulink>,
       <ulink url="https://sourceforge.net/projects/libdc1394/">libdc1394</ulink>,
-      <!--<ulink url="http://www.gphoto.org/">libgphoto2</ulink>,-->
-      <ulink url="http://www.numpy.org/">NumPy</ulink>,
-      <!--<ulink url="http://structure.io/openni">OpenNI</ulink>,
-      <ulink url="http://plantuml.sourceforge.net/">PlanetUML</ulink>,
-      <ulink url="https://www.alliedvision.com/en/support/software-downloads.html">PvAPI</ulink>,-->
-      <ulink url="https://github.com/oneapi-src/oneTBB">Threading Building Blocks (TBB)</ulink>, and
-      <!--<ulink url="http://unicap-imaging.org/">UniCap</ulink>,-->
-      <ulink url="http://www.vtk.org/">VTK - The Visualization Toolkit</ulink>,
-      <!--<ulink url="http://www.ximea.com/">XIMEA</ulink>-->
+<!--  <ulink url="https://www.numpy.org/">NumPy</ulink>, -->
+      <ulink url="https://github.com/oneapi-src/oneTBB">Threading Building Blocks (TBB)</ulink>,
+      <ulink url="https://vtk.org/">VTK - The Visualization Toolkit</ulink>,
     </para>
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/opencv"/>
+    <title>Installation of opencv</title>
 @y
-      User Notes: <ulink url="&blfs-wiki;/opencv"/>
+    <title>&InstallationOf1;opencv&InstallationOf2;</title>
 @z
 
 @x
-    <title>Installation of opencv</title>
+      If you downloaded the optional modules, unpack them now:
 @y
-    <title>Installation of opencv</title>
-@z
-
-@x
-      If needed, unpack the additional modules package:
-@y
-      If needed, unpack the additional modules package:
+      If you downloaded the optional modules, unpack them now:
 @z
 
 @x
       Install <application>opencv</application> by running the following
       commands:
 @y
-      Install <application>opencv</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>opencv</application> をビルドします。
 @z
 
 @x
-      The package does not come with an operable test suite.
+      The package does not come with a test suite.
 @y
-      The package does not come with an operable test suite.
+      &notTestSuite;
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -274,11 +241,11 @@
 @z
 
 @x
-      <parameter>-DENABLE_PRECOMPILED_HEADERS=OFF</parameter>: This option 
-      is needed for compatibiiity with gcc-6.1 and later.
+      <parameter>-DENABLE_PRECOMPILED_HEADERS=OFF</parameter>: This option
+      is needed for compatibility with gcc-6.1 and later.
 @y
-      <parameter>-DENABLE_PRECOMPILED_HEADERS=OFF</parameter>: This option 
-      is needed for compatibiiity with gcc-6.1 and later.
+      <parameter>-DENABLE_PRECOMPILED_HEADERS=OFF</parameter>: This option
+      is needed for compatibility with gcc-6.1 and later.
 @z
 
 @x
@@ -292,7 +259,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -300,9 +267,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x

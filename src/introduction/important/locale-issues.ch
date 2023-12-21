@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,10 +11,8 @@
 
 @x
 <sect1 id="locale-issues" xreflabel="Locale Related Issues">
-  <?dbhtml filename="locale-issues.html"?>
 @y
 <sect1 id="locale-issues" xreflabel="ロケールに関すること">
-  <?dbhtml filename="locale-issues.html"?>
 @z
 
 @x
@@ -82,13 +76,13 @@
   <para>If there is a known workaround for a specific package, it will
   appear on that package's page. For the most recent information
   about locale related issues for individual packages, check the
-  <ulink url="&blfs-wiki;/BlfsNotes">User Notes</ulink> in the BLFS
+  <ulink url="&blfs-wiki;/BlfsNotes">Editor Notes</ulink> in the BLFS
   Wiki.</para>
 @y
   <para>
   特定のパッケージに対しての回避策があるとすれば、そのパッケージのホームページなどに示されているはずです。
   個々のパッケージにおけるロケール問題の最新情報は、BLFS Wiki として示している <ulink
-  url="&blfs-wiki;/BlfsNotes">&UserNotes;</ulink> を確認してください。
+  url="&blfs-wiki;/BlfsNotes">&EditorNotes;</ulink> を確認してください。
   </para>
 @z
 

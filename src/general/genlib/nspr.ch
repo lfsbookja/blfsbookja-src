@@ -71,16 +71,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/nspr"/>
-    </para>
-@y
-    <para condition="html" role="usernotes">
-      &UserNotes;: <ulink url="&blfs-wiki;/nspr"/>
-    </para>
-@z
-
-@x
     <title>Installation of NSPR</title>
 @y
     <title>&InstallationOf1;NSPR&InstallationOf2;</title>
@@ -93,16 +83,16 @@
 @z
 
 @x
-      The testsuite is designed for testing changes to nss or nspr and is
+      The test suite is designed for testing changes to nss or nspr and is
       not particularly useful for checking a released version (e.g. it needs
       to be run on a non-optimized build with both nss and nspr directories
-      existing alongside each other). For further details, see the User Notes
+      existing alongside each other). For further details, see the Editor Notes
       for nss at <ulink url="&blfs-wiki;/nss"/>
 @y
-      The testsuite is designed for testing changes to nss or nspr and is
+      The test suite is designed for testing changes to nss or nspr and is
       not particularly useful for checking a released version (e.g. it needs
       to be run on a non-optimized build with both nss and nspr directories
-      existing alongside each other). For further details, see the User Notes
+      existing alongside each other). For further details, see the Editor Notes
       for nss at <ulink url="&blfs-wiki;/nss"/>
 @z
 
@@ -153,15 +143,13 @@
 @z
 
 @x
-      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
-      --enable-64bit)</parameter>: The --enable-64bit parameter is
+      <parameter>--enable-64bit</parameter>: The --enable-64bit parameter is
       <emphasis>required</emphasis> on an x86_64 system to prevent
       <command>configure</command> failing with a claim that this is a system
       without pthread support. The [ $(uname -m) = x86_64 ] test ensures it has
       no effect on a 32 bit system.
 @y
-      <parameter>$([ $(uname -m) = x86_64 ] &amp;&amp; echo
-      --enable-64bit)</parameter>: 
+      <parameter>--enable-64bit</parameter>:
       この --enable-64bit パラメーターは、x86_64 システム上にて <command>configure</command> コマンドを実行した際に pthread サポートが無効であることを示す警告が発生するのを防ぐものです。
       32 ビットシステムではこの指定は意味がないため [ $(uname -m) = x86_64 ] という確認を行っています。
 @z
@@ -187,7 +175,7 @@
           nspr-config
         </seg>
         <seg>
-          libnspr4.so, libplc4.so and libplds4.so
+          libnspr4.so, libplc4.so, and libplds4.so
         </seg>
         <seg>
           /usr/include/nspr

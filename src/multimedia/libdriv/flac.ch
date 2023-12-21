@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY flac-buildsize     "21 MB (additional 95 MB to run the test suite)">
-  <!ENTITY flac-time          "0.1 SBU (additional 0.7 SBU to run the test suite)">
+  <!ENTITY flac-buildsize     "22 MB (additional 163 MB to run the test suite)">
+  <!ENTITY flac-time          "0.2 SBU (additional 0.6 SBU to run the test suite)">
 @y
-  <!ENTITY flac-buildsize     "21 MB (additional 95 MB to run the test suite)">
-  <!ENTITY flac-time          "0.1 SBU (additional 0.7 SBU to run the test suite)">
+  <!ENTITY flac-buildsize     "22 MB (additional 163 MB to run the test suite)">
+  <!ENTITY flac-time          "0.2 SBU (additional 0.6 SBU to run the test suite)">
 @z
 
 @x
@@ -101,28 +97,18 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libogg"/>,
-      <!-- <xref linkend="xmms"/>, -->
-      <xref linkend="nasm"/>,
       <xref linkend="docbook-utils"/>,
-      <xref linkend="doxygen"/> and
+      <xref linkend="doxygen"/>, and
       <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libogg"/>,
-      <!-- <xref linkend="xmms"/>, -->
-      <xref linkend="nasm"/>,
       <xref linkend="docbook-utils"/>,
-      <xref linkend="doxygen"/>,
+      <xref linkend="doxygen"/>, and
       <xref linkend="valgrind"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

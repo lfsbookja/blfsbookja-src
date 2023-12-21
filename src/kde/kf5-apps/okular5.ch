@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -107,10 +103,11 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="qca"/>,
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
+      <ulink url="https://www.pell.portland.or.us/~orc/Code/discount/">discount</ulink>,
+      <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
                  kpimtextedit</ulink>,
-      <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> 
+      <ulink url="https://libspectre.freedesktop.org/">libspectre</ulink>
                  (for PostScript support),
       <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>,
       <ulink url="https://sourceforge.net/projects/ebook-tools">libepub</ulink>, and
@@ -121,22 +118,17 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="qca"/>,
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
+      <ulink url="https://www.pell.portland.or.us/~orc/Code/discount/">discount</ulink>,
+      <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
       <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
                  kpimtextedit</ulink>,
-      <ulink url="http://libspectre.freedesktop.org/">libspectre</ulink> 
+      <ulink url="https://libspectre.freedesktop.org/">libspectre</ulink>
                  (for PostScript support),
       <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>,
-      <ulink url="https://sourceforge.net/projects/ebook-tools">libepub</ulink>,
+      <ulink url="https://sourceforge.net/projects/ebook-tools">libepub</ulink>, and
       <ulink url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket">
                  Mobipocket</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/okular5"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/okular5"/>
 @z
 
 @x

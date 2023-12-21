@@ -1,8 +1,9 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-BOOKdir = @abs_bookdir@/general/genlib
+
 CHANGE_FILES = \
+	appstream.ch \
 	apr.ch \
 	apr-util.ch \
 	aspell.ch \
@@ -12,6 +13,7 @@ CHANGE_FILES = \
 	dbus-glib.ch \
 	double-conversion.ch \
 	enchant.ch \
+	duktape.ch \
 	exempi.ch \
 	fftw.ch \
 	genlib.ch \
@@ -19,13 +21,12 @@ CHANGE_FILES = \
 	glibmm.ch \
 	gmime3.ch \
 	gobject-introspection.ch \
-        grantlee.ch \
 	gsl.ch \
 	gspell.ch \
 	icu.ch \
 	inih.ch \
+	intel-gmmlib.ch \
 	jansson.ch \
-	js78.ch \
 	json-c.ch \
 	json-glib.ch \
 	keyutils.ch \
@@ -36,6 +37,7 @@ CHANGE_FILES = \
 	libatomic_ops.ch \
 	libblockdev.ch \
 	libbytesize.ch \
+	libcloudproviders.ch \
 	libdaemon.ch \
 	libgcrypt.ch \
 	libgpg-error.ch \
@@ -50,29 +52,32 @@ CHANGE_FILES = \
 	libksba.ch \
 	liblinear.ch \
 	libmbim.ch \
+	libnvme.ch \
 	libpaper.ch \
 	libportal.ch \
 	libptytty.ch \
+	libqalculate.ch \
 	libqmi.ch \
 	libseccomp.ch \
 	libsigc++.ch \
-	libsigc3.ch \
 	libsigsegv.ch \
 	libssh2.ch \
 	libstatgrab.ch \
 	libtasn1.ch \
-	libuninameslist.ch \
-	libunique.ch \
 	libunistring.ch \
+	libunwind.ch \
 	liburcu.ch \
 	libusb.ch \
+	libusb-kernel.ch \
 	libuv.ch \
 	libwacom.ch \
 	libwpe.ch \
 	libxkbcommon.ch \
 	libxml2.ch \
+	libxmlb.ch \
 	libxslt.ch \
 	libyaml.ch \
+	log4cplus.ch \
 	lzo.ch \
 	mtdev.ch \
 	nodejs.ch \
@@ -83,6 +88,9 @@ CHANGE_FILES = \
 	popt.ch \
 	pth.ch \
 	qca.ch \
+	spidermonkey.ch \
+	spirv-headers.ch \
+	spirv-tools.ch \
 	talloc.ch \
 	telepathy-glib.ch \
 	uchardet.ch \
@@ -93,25 +101,4 @@ CHANGE_FILES = \
 	wv.ch \
 	xapian.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
-srcdir = @srcdir@
-srcs = $(CHANGE_FILES:.ch=.xml)
-DISTCLEANFILES = $(srcs)
-
-SUFFIXES = .ch .xml
-.ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
-
-all: ctie $(srcs)
-
-ctie:
-	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
-
--include Makefile.sub
-Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
-	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-
-@MAINT@.PHONY: chbuild
-@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
-@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
-@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
+include $(top_srcdir)/build-aux/main.mk

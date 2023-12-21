@@ -75,14 +75,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
-      <xref linkend="js78"/>
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
-      <xref linkend="js78"/>
+      <xref linkend="glib2"/>
     </para>
 @z
 
@@ -101,20 +99,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="dbus-python"/> and 
-      <xref linkend="python-dbusmock"/> (for tests), and
-      <!--<xref linkend="DocBook"/>, (Part of libxslt's chain)
-      <xref linkend="docbook-xsl"/>,-->
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="python-dbusmock"/>, and
+      <xref linkend="spidermonkey"/> (can be used in place of duktape)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dbus-python"/> と
-      <xref linkend="python-dbusmock"/> (for tests) と
-      <!--<xref linkend="DocBook"/>, (Part of libxslt's chain)
-      <xref linkend="docbook-xsl"/>,-->
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="python-dbusmock"/>, and
+      <xref linkend="spidermonkey"/> (can be used in place of duktape)
     </para>
 @z
 
@@ -135,12 +129,6 @@
         <xref linkend="libxslt"/> をインストールしている場合は <xref
         linkend="DocBook"/> と <xref linkend="docbook-xsl"/> が必要です。
         また <xref linkend="libxslt"/> はインストールしていても、その DocBook パッケージ類をインストールしたくない場合は、後述する手順にて <option>-Dman=false</option> を指定することになります。
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -167,12 +155,17 @@
 @z
 
 @x
-      To test the results, first ensure that the system 
-      <application>D-Bus</application> daemon is running.
-      Then run <command>make check</command>.
+      To test the results, first ensure that the system
+      <application>D-Bus</application> daemon is running,
+      and both <xref linkend='dbus-python'/> and
+      <xref linkend='python-dbusmock'/> are installed.
+      Then run <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合、まずは <application>D-Bus</application> が稼動していることを確認します。
-      そして <command>make check</command> を実行します。
+      To test the results, first ensure that the system
+      <application>D-Bus</application> daemon is running,
+      and both <xref linkend='dbus-python'/> and
+      <xref linkend='python-dbusmock'/> are installed.
+      Then run <command>ninja test</command>.
 @z
 
 @x
@@ -199,40 +192,6 @@
 @z
 
 @x
-    <title>Configuring Polkit</title>
-@y
-    <title>&Configuring1;Polkit&Configuring2;</title>
-@z
-
-@x
-      <title>PAM Configuration</title>
-@y
-      <title>PAM 設定</title>
-@z
-
-@x
-          If you did not build <application>Polkit</application> with
-          <application>Linux PAM</application> support, you can skip this
-          section.
-@y
-          <application>Linux PAM</application> サポートを含めずに <application>Polkit</application> をビルドした場合は本節を読み飛ばしてください。
-@z
-
-@x
-        If you have built <application>Polkit</application> with
-        <application>Linux PAM</application> support, you need to modify
-        the default PAM configuration file which was installed by default to get
-        <application>Polkit</application> to work correctly with BLFS. Issue the
-        following commands as the <systemitem class="username">root</systemitem>
-        user to create the configuration file for <application>Linux PAM</application>:
-@y
-        <application>Linux PAM</application> サポートを含めて <application>Polkit</application> をビルドしている場合、デフォルトでインストールされている PAM 設定ファイルを修正する必要があります。
-        これにより BLFS において <application>polkit</application> が正しく動作するものとなります。
-        <systemitem class="username">root</systemitem> ユーザーになって以下のコマンドを実行してください。
-        <application>Linux PAM</application> 用の設定ファイルを生成します。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -251,17 +210,17 @@
 @x
         <seg>
           pkaction, pkcheck, <!--pk-example-frobnicate,--> pkexec,
-          pkttyagent and polkitd
+          pkttyagent, and polkitd
         </seg>
         <seg>
-          libpolkit-agent-1.so and 
+          libpolkit-agent-1.so and
           libpolkit-gobject-1.so
         </seg>
         <seg>
           /etc/polkit-1,
           /usr/include/polkit-1,
           /usr/lib/polkit-1,
-          /usr/share/gtk-doc/html/polkit-1 and
+          /usr/share/gtk-doc/html/polkit-1, and
           /usr/share/polkit-1
         </seg>
 @y

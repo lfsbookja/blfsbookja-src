@@ -86,8 +86,9 @@
     <para role="required">
       <xref linkend="libassuan"/>,
       <xref linkend="libgcrypt"/>,
-      <xref linkend="libksba"/>, and
-      <xref linkend="npth"/>
+      <xref linkend="libksba"/>,
+      <xref linkend="npth"/>, and
+      <xref linkend="openldap"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -95,7 +96,8 @@
       <xref linkend="libassuan"/>,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libksba"/>,
-      <xref linkend="npth"/>
+      <xref linkend="npth"/>,
+      <xref linkend="openldap"/>
     </para>
 @z
 
@@ -125,12 +127,11 @@
       used for generating the documentation),
       <xref linkend="libusb"/>,
       an <xref linkend="server-mail"/>,
-      <xref linkend="openldap"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> (for
+      <ulink url="https://mcj.sourceforge.net/">fig2dev</ulink> (for
       generating documentation),
-      and <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
+      and <ulink url="https://www.chiark.greenend.org.uk/~ian/adns/">GNU
       adns</ulink>
     </para>
 @y
@@ -142,20 +143,13 @@
       used for generating the documentation),
       <xref linkend="libusb"/>,
       an <xref linkend="server-mail"/>,
-      <xref linkend="openldap"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> (for
+      <ulink url="https://mcj.sourceforge.net/">fig2dev</ulink> (for
       generating documentation),
-      <ulink url="http://www.chiark.greenend.org.uk/~ian/adns/">GNU
+      and <ulink url="https://www.chiark.greenend.org.uk/~ian/adns/">GNU
       adns</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -165,11 +159,9 @@
 @z
 
 @x
-      By default GnuPG doesn't install the deprecated gpg-zip script,
-      but it is still needed by some programs.  Make GnuPG install it with:
+      First, fix a compatibility issue with emacs:
 @y
-      By default GnuPG doesn't install the deprecated gpg-zip script,
-      but it is still needed by some programs.  Make GnuPG install it with:
+      First, fix a compatibility issue with emacs:
 @z
 
 @x
@@ -183,7 +175,7 @@
       If you have <xref linkend="texlive"/>
       installed and you wish to create documentation in alternate formats,
       issue the following commands
-      (<ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> is needed for
+      (<ulink url="https://mcj.sourceforge.net/">fig2dev</ulink> is needed for
       the ps format):
 @y
       <xref linkend="texlive"/> をインストールしていて、種々のフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
@@ -194,18 +186,6 @@
       To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-@z
-
-@x
-      Note that if you have already installed
-      <application>GnuPG</application>, the instructions below will overwrite
-      <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      Note that if you have already installed
-      <application>GnuPG</application>, the instructions below will overwrite
-      <filename>/usr/share/man/man1/gpg-zip.1</filename>. Now, as the
-      <systemitem class="username">root</systemitem> user:
 @z
 
 @x
@@ -275,19 +255,21 @@
 
 @x
         <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13
-        (optional), gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
-        gpgscm, gpgsm, gpgsplit, gpgtar, gpgv, gpg-wks-server, gpg-zip, kbxutil, 
+        (optional), gpg-agent, gpg-card, gpg-connect-agent, gpg, gpgconf,
+        gpgparsemail, gpgscm, gpgsm, gpgsplit, gpgtar, gpgv, gpg-wks-client,
+        gpg-wks-server, kbxutil,
         <!--symcryptrun,--> and watchgnupg</seg>
         <seg>None</seg>
         <seg>/usr/share/doc/gnupg-&gnupg2-version; and
         /usr/share/gnupg</seg>
 @y
         <seg>addgnupghome, applygnupgdefaults, dirmngr, dirmngr-client, g13
-        (optional), gpg-agent, gpg-connect-agent, gpg, gpgconf, gpgparsemail, 
-        gpgscm, gpgsm, gpgsplit, gpgtar, gpgv, gpg-wks-server, gpg-zip, kbxutil, 
-        <!--symcryptrun,--> and watchgnupg</seg>
-        <seg>None</seg>
-        <seg>/usr/share/doc/gnupg-&gnupg2-version; and
+        (optional), gpg-agent, gpg-card, gpg-connect-agent, gpg, gpgconf,
+        gpgparsemail, gpgscm, gpgsm, gpgsplit, gpgtar, gpgv, gpg-wks-client,
+        gpg-wks-server, kbxutil,
+        <!--symcryptrun,--> watchgnupg</seg>
+        <seg>&None;</seg>
+        <seg>/usr/share/doc/gnupg-&gnupg2-version;,
         /usr/share/gnupg</seg>
 @z
 

@@ -86,12 +86,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/libptytty"/>
-@y
-      User Notes: <ulink url="&blfs-wiki;/libptytty"/>
-@z
-
-@x
     <title>Installation of libptytty</title>
 @y
     <title>Installation of libptytty</title>

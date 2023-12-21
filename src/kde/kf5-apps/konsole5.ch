@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -84,12 +80,6 @@
     <para role="required">
       <xref linkend="kf5-frameworks"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/konsole5"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/konsole5"/>
 @z
 
 @x

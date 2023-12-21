@@ -90,12 +90,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of xcb-proto</title>
 @y
     <title>&InstallationOf1;xcb-proto&InstallationOf2;</title>

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the LFS hint text files.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -101,15 +97,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gcr"/>,
-      <xref linkend="git"/>, and
+      <xref linkend="gcr"/> and
       <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gcr"/>,
-      <xref linkend="git"/>,
       <xref linkend="gobject-introspection"/>
     </para>
 @z
@@ -128,12 +122,6 @@
       <xref linkend="liboauth"/> (for OAuth v1 support), and
       <xref linkend="uhttpmock"/> (テストに必要)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

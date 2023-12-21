@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -98,37 +94,23 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref role="runtime" linkend="gnome-menus"/>
+      (runtime, for Applications Menu extension) and
       <xref linkend="sassc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref role="runtime" linkend="gnome-menus"/>
+      (runtime, for Applications Menu extension) and
       <xref linkend="sassc"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Installation of GNOME Shell Extensions</title>
 @y
     <title>&InstallationOf1;GNOME Shell Extensions&InstallationOf2;</title>
-@z
-
-@x
-        If you have the windowsNavigator extension enabled and you are upgrading
-        from a previous version of GNOME, disable it before continuing.
-        This extension is known to cause the Overview menu to lockup after
-        an application is opened.
-@y
-        If you have the windowsNavigator extension enabled and you are upgrading
-        from a previous version of GNOME, disable it before continuing.
-        This extension is known to cause the Overview menu to lockup after
-        an application is opened.
 @z
 
 @x

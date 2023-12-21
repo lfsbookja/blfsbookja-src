@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -75,12 +71,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Kernel Configuration</title>
 @y
     <title>&KernelConfiguration;</title>
@@ -88,9 +78,9 @@
 
 @x
       Enable the following option in the kernel configuration
-      and recompile the kernel:
+      and recompile the kernel if you need to mount a FAT-family filesystem:
 @y
-      カーネル設定における以下のオプションを有効にして、カーネルを再コンパイルします。
+      FAT 系のファイルシステムをマウントする必要がある場合は、カーネル設定における以下のオプションを有効にして、カーネルを再コンパイルします。
 @z
 
 @x
@@ -107,9 +97,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x

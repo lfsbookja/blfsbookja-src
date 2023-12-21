@@ -88,23 +88,21 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="fop"/>,
-      <xref linkend="gnutls"/>, and
-      <xref linkend="libxslt"/>
+      <xref linkend="gs"/>,
+      <xref linkend="gnutls"/>,
+      <xref linkend="libtiff"/>,
+      <xref linkend="sphinx"/> with <xref linkend="sphinx_rtd_theme"/>, and
+      <xref linkend="texlive"/> or <xref linkend="tl-installer"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="fop"/>,
+      <xref linkend="gs"/>,
       <xref linkend="gnutls"/>,
-      <xref linkend="libxslt"/>
+      <xref linkend="libtiff"/>,
+      <xref linkend="sphinx"/> with <xref linkend="sphinx_rtd_theme"/>,
+      <xref linkend="texlive"/> or <xref linkend="tl-installer"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/qpdf"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/qpdf"/>
 @z
 
 @x
@@ -121,9 +119,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>ctest</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>ctest</command> を実行します。
 @z
 
 @x
@@ -162,7 +160,8 @@
           libqpdf.so
         </seg>
         <seg>
-          /usr/include/qpdf and
+          /usr/lib/cmake/qpdf,
+          /usr/include/qpdf, and
           /usr/share/doc/qpdf-&qpdf-version;
         </seg>
 @y
@@ -173,6 +172,7 @@
           libqpdf.so
         </seg>
         <seg>
+          /usr/lib/cmake/qpdf,
           /usr/include/qpdf,
           /usr/share/doc/qpdf-&qpdf-version;
         </seg>

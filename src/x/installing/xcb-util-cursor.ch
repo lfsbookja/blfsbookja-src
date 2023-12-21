@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -85,19 +81,27 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="xcb-util"/>
+      <xref linkend="xcb-util-image"/> and
+      <xref linkend="xcb-util-renderutil"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="xcb-util"/>
+      <xref linkend="xcb-util-image"/> and
+      <xref linkend="xcb-util-renderutil"/>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> (for documentation)
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/> (ドキュメントのため)
+    </para>
 @z
 
 @x

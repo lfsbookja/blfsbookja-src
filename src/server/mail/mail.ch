@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date$
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -30,8 +26,7 @@
 @z
 
 @x
-    As well as SMTP servers there is a POP server (qpopper) and an IMAP
-    server (Courier-IMAP).
+    In addition to the SMTP servers, there is also a POP/IMAP server (Dovecot).
 @y
-    SMTP サーバーというものがあり、他にも POP サーバー (qpopper) や IMAP (Courier-IMAP) サーバーもあります。
+    SMTP サーバーに加えて、他にも POP/IMAP サーバー (Dovecot) があります。
 @z

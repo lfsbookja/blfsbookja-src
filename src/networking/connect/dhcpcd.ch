@@ -100,22 +100,17 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of dhcpcd</title>
 @y
     <title>&InstallationOf1;dhcpcd&InstallationOf2;</title>
 @z
 
 @x
-      Install <application>dhcpcd</application> by running the following
-      commands:
+      Build <application>dhcpcd</application> without privilege separation
+      by running the following command:
 @y
-      以下のコマンドを実行して <application>dhcpcd</application> をビルドします。
+      Build <application>dhcpcd</application> without privilege separation
+      by running the following command:
 @z
 
 @x
@@ -137,31 +132,33 @@
 @z
 
 @x
-      <parameter>--libexecdir=/usr/lib/dhcpcd</parameter>: Set a more proper
-      location for dhcpcd internal libraries.
+      <parameter>--libexecdir=/usr/lib/dhcpcd</parameter>: This switch sets a
+      better location for the dhcpcd internal libraries.
 @y
-      <parameter>--libexecdir=/usr/lib/dhcpcd</parameter>: Set a more proper
-      location for dhcpcd internal libraries.
+      <parameter>--libexecdir=/usr/lib/dhcpcd</parameter>: This switch sets a
+      better location for the dhcpcd internal libraries.
 @z
 
 @x
-      <parameter>--dbdir=/var/lib/dhcpcd</parameter>: The default
-      <filename class="directory">/var/db</filename> is not FHS-compliant
+      <parameter>--dbdir=/var/lib/dhcpcd</parameter>: This switch adjusts the
+      database directory because the default directory,
+      <filename class="directory">/var/db</filename>, is not FHS-compliant.
 @y
-      <parameter>--dbdir=/var/lib/dhcpcd</parameter>: The default
-      <filename class="directory">/var/db</filename> is not FHS-compliant
+      <parameter>--dbdir=/var/lib/dhcpcd</parameter>: This switch adjusts the
+      database directory because the default directory,
+      <filename class="directory">/var/db</filename>, is not FHS-compliant.
 @z
 
 @x
       <option>--with-hook=...</option>: You can optionally install more hooks,
       for example to install some configuration files such as
-      <filename>ntp.conf</filename>. The set of hooks is in the
+      <filename>ntp.conf</filename>. A set of hooks can be found in the
       <filename class="directory">dhcpcd-hooks</filename> directory in the
       build tree.
 @y
       <option>--with-hook=...</option>: You can optionally install more hooks,
       for example to install some configuration files such as
-      <filename>ntp.conf</filename>. The set of hooks is in the
+      <filename>ntp.conf</filename>. A set of hooks can be found in the
       <filename class="directory">dhcpcd-hooks</filename> directory in the
       build tree.
 @z
@@ -214,8 +211,8 @@
           and <filename>/etc/ntp.conf</filename>. These
           modifications to system files are done by hooks which are stored in
           <filename class="directory">/usr/lib/dhcpcd/dhcpcd-hooks</filename>.
-          Setup <command>dhcpcd</command> by removing or adding hooks from/to
-          that directory.  The execution of hooks can be disabled by using
+          You can change this behavior by removing or adding hooks from/to
+          that directory. The execution of hooks can be disabled by using
           the <option>--nohook</option> (<option>-C</option>) command line
           option or by the <option>nohook</option> option in the
           <filename>/etc/dhcpcd.conf</filename> file.
@@ -225,8 +222,8 @@
           and <filename>/etc/ntp.conf</filename>. These
           modifications to system files are done by hooks which are stored in
           <filename class="directory">/usr/lib/dhcpcd/dhcpcd-hooks</filename>.
-          Setup <command>dhcpcd</command> by removing or adding hooks from/to
-          that directory.  The execution of hooks can be disabled by using
+          You can change this behavior by removing or adding hooks from/to
+          that directory. The execution of hooks can be disabled by using
           the <option>--nohook</option> (<option>-C</option>) command line
           option or by the <option>nohook</option> option in the
           <filename>/etc/dhcpcd.conf</filename> file.
@@ -316,7 +313,7 @@
           </filename> and <filename>/etc/ntp.conf</filename>. These
           modifications to system configuration files are done by hooks which
           are stored in <filename class="directory">
-          /lib/dhcpcd/dhcpcd-hooks</filename>. Setup <command>dhcpcd</command>
+          /usr/lib/dhcpcd/dhcpcd-hooks</filename>. You can change this behavior
           by removing or adding hooks from/to that directory. The execution
           of hooks can be disabled by using the <option>--nohook</option>
           (<option>-C</option>) command line option or by the
@@ -328,7 +325,7 @@
           </filename> and <filename>/etc/ntp.conf</filename>. These
           modifications to system configuration files are done by hooks which
           are stored in <filename class="directory">
-          /lib/dhcpcd/dhcpcd-hooks</filename>. Setup <command>dhcpcd</command>
+          /usr/lib/dhcpcd/dhcpcd-hooks</filename>. You can change this behavior
           by removing or adding hooks from/to that directory. The execution
           of hooks can be disabled by using the <option>--nohook</option>
           (<option>-C</option>) command line option or by the

@@ -131,29 +131,23 @@
     <para role="optional">
       <xref linkend="cantarell-fonts"/> (for tests),
   <!--<xref linkend="gtk-doc"/>,-->
-      <xref linkend="sysprof"/>,
-      <ulink url="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</ulink>
-      (to generate documentation),
-      <ulink url="https://ftpmirror.gnu.org/gnu/help2man">help2man</ulink>, and
-      <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
+  <!--<xref linkend="sysprof"/>,-->
+      <xref linkend="gi-docgen"/> (to generate documentation),
+      <ulink url="https://ftpmirror.gnu.org/gnu/help2man">help2man</ulink>,
+      <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>, and
+      <ulink url="&sysprof-url;">sysprof</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cantarell-fonts"/> (テストのため),
+      <xref linkend="cantarell-fonts"/> (for tests),
   <!--<xref linkend="gtk-doc"/>,-->
-      <xref linkend="sysprof"/>,
-      <ulink url="https://gitlab.gnome.org/GNOME/gi-docgen">gi-docgen</ulink>
-      (to generate documentation),
+  <!--<xref linkend="sysprof"/>,-->
+      <xref linkend="gi-docgen"/> (to generate documentation),
       <ulink url="https://ftpmirror.gnu.org/gnu/help2man">help2man</ulink>,
-      <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>
+      <ulink url="https://linux.thai.net/projects/libthai">libthai</ulink>, and
+      <ulink url="&sysprof-url;">sysprof</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/pango"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/pango"/>
 @z
 
 @x
@@ -170,18 +164,15 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. Two tests,
-      <filename>test-font</filename> and 
-      <filename>test-layout</filename>
-      <!--<filename>test-itemize</filename>, are--> are known to fail. <!--if
-      <xref linkend="cantarell-fonts"/> are not installed.-->
-      <!-- the other problematic tests get skipped now -->
+      To test the results, issue: <command>ninja test</command>. One test,
+      <filename>test-font</filename> is known to fail.  Some tests may
+      fail if no Opentype or Truetype fonts are installed in
+      <filename class='directory'>/usr/share/fonts</filename>.
 @y
-      To test the results, issue: <command>ninja test</command>. Two tests,
-      <filename>test-font</filename> and 
-      <filename>test-layout</filename>
-      <!--<filename>test-itemize</filename>, are--> are known to fail. <!--if
-      <xref linkend="cantarell-fonts"/> are not installed.-->
+      To test the results, issue: <command>ninja test</command>. One test,
+      <filename>test-font</filename> is known to fail.  Some tests may
+      fail if no Opentype or Truetype fonts are installed in
+      <filename class='directory'>/usr/share/fonts</filename>.
 @z
 
 @x
@@ -258,10 +249,8 @@
           and libpangoxft-1.0.so
         </seg>
         <seg>
-          /usr/include/pango-1.0<!-- and
-          /usr/share/gtk-doc/html/pango
-this last one does not seem to be installed now (since pango-1.48.2 at least)
--->
+          /usr/include/pango-1.0 and
+          /usr/share/doc/pango-&pango-version; (if gi-docgen is available)
         </seg>
 @y
         <seg>
@@ -272,10 +261,8 @@ this last one does not seem to be installed now (since pango-1.48.2 at least)
           libpangoxft-1.0.so
         </seg>
         <seg>
-          /usr/include/pango-1.0<!-- and
-          /usr/share/gtk-doc/html/pango
-this last one does not seem to be installed now (since pango-1.48.2 at least)
--->
+          /usr/include/pango-1.0,
+          /usr/share/doc/pango-&pango-version; (if gi-docgen is available)
         </seg>
 @z
 

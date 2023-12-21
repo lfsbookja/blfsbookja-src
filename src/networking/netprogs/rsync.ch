@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -89,9 +85,19 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <ulink url="https://lz4.github.io/lz4/">lz4</ulink>, and
+      <ulink url="https://cyan4973.github.io/xxHash/">xxhash</ulink>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="doxygen"/>,
+      <ulink url="https://lz4.github.io/lz4/">lz4</ulink>,
+      <ulink url="https://cyan4973.github.io/xxHash/">xxhash</ulink>
+    </para>
 @z
 
 @x

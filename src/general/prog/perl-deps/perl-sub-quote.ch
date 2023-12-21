@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -41,24 +37,6 @@
             Download MD5 sum: &my-md5sum;
 @y
             &Download; MD5 sum: &my-md5sum;
-@z
-
-@x
-      <bridgehead renderas="sect4">Sub::Quote Dependencies</bridgehead>
-@y
-      <bridgehead renderas="sect4">&Dependencies1;Sub::Quote&Dependencies2;</bridgehead>
-@z
-
-@x
-      <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
-      <para role="recommended">
-        <xref linkend="perl-test-fatal"/>
-      </para>
-@y
-      <bridgehead renderas="sect5">&Recommended; (テストスイートに必要)</bridgehead>
-      <para role="recommended">
-        <xref linkend="perl-test-fatal"/>
-      </para>
 @z
 
 @x

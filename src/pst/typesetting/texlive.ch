@@ -20,7 +20,7 @@
       Most of TeX Live can be built from source without a pre-existing
       installation, but <application>xindy</application> (for indexing) needs
       working versions of <command>latex</command> and
-      <command>pdflatex</command> when configure is run, and the testsuite
+      <command>pdflatex</command> when configure is run, and the test suite
       and install for <command>asy</command> (for vector graphics) will fail
       if TeX has not already been installed. Additionally,
       <application>biber</application> is not provided within the
@@ -32,7 +32,7 @@
       Most of TeX Live can be built from source without a pre-existing
       installation, but <application>xindy</application> (for indexing) needs
       working versions of <command>latex</command> and
-      <command>pdflatex</command> when configure is run, and the testsuite
+      <command>pdflatex</command> when configure is run, and the test suite
       and install for <command>asy</command> (for vector graphics) will fail
       if TeX has not already been installed. Additionally,
       <application>biber</application> is not provided within the
@@ -52,12 +52,12 @@
       All of those packages are dealt with on their own pages and can be
       built after installing this package. If you have not already done so, you
       should start at <xref linkend="tex-path"/> so that the final commands to
-      initialise the new installation will be found.
+      initialize the new installation will be found.
 @y
       All of those packages are dealt with on their own pages and can be
       built after installing this package. If you have not already done so, you
       should start at <xref linkend="tex-path"/> so that the final commands to
-      initialise the new installation will be found.
+      initialize the new installation will be found.
 @z
 
 @x
@@ -173,27 +173,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gs"/> <emphasis>including
-      <filename>libgs.so</filename></emphasis>, <!--(for dvisvgm, which is used by e.g.
-      <xref role="nodep" linkend="asymptote"/>); still referenced for dynamic loading,
-      even without dvisvgm - e.fg. by dvipsk -->
       <xref linkend="x-window-system"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gs"/> <emphasis>including
-      <filename>libgs.so</filename></emphasis>, <!--(for dvisvgm, which is used by e.g.
-      <xref role="nodep" linkend="asymptote"/>); still referenced for dynamic loading,
-      even without dvisvgm - e.fg. by dvipsk -->
       <xref linkend="x-window-system"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -250,13 +236,19 @@
 @z
 
 @x
-      The shared libraries will be installed into a texlive directory.
-      As the <systemitem class="username">root</systemitem> user, add it to
-      your <filename>/etc/ld.so.conf</filename>:
+        If you wish to upgrade to current <application>texlive</application>
+        on an older system where extra packages (<application>asymptote</application>,
+        <application>biber</application>, <application>dvisvgm</application>, or
+        <application>xindy</application>) have been installed, you will need to
+        reinstall those as well as fixing up your <literal>PATH</literal> for
+        <literal>$TEXLIVE_PREFIX</literal>.
 @y
-      The shared libraries will be installed into a texlive directory.
-      As the <systemitem class="username">root</systemitem> user, add it to
-      your <filename>/etc/ld.so.conf</filename>:
+        If you wish to upgrade to current <application>texlive</application>
+        on an older system where extra packages (<application>asymptote</application>,
+        <application>biber</application>, <application>dvisvgm</application>, or
+        <application>xindy</application>) have been installed, you will need to
+        reinstall those as well as fixing up your <literal>PATH</literal> for
+        <literal>$TEXLIVE_PREFIX</literal>.
 @z
 
 @x
@@ -276,9 +268,25 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command>.
+      <!-- It started to fail with libpaper-2.0.10 which rounds differently
+           in the 6th place of decimals, causing diff to fail -->
+      Two tests, <filename>psutils.test</filename> and
+      <!-- Upstream say that encoding conversion procedure Encode::from_to()
+      failed in fn-generate.perl, test now skips if that errors: possibly
+      related to changes in perl-5.36 since I understand current slackware
+      also sees this - ken -->
+      <filename>eptexdir/wcfname.test</filename> are known to fail.
 @y
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make -k check</command>.
+      <!-- It started to fail with libpaper-2.0.10 which rounds differently
+           in the 6th place of decimals, causing diff to fail -->
+      Two tests, <filename>psutils.test</filename> and
+      <!-- Upstream say that encoding conversion procedure Encode::from_to()
+      failed in fn-generate.perl, test now skips if that errors: possibly
+      related to changes in perl-5.36 since I understand current slackware
+      also sees this - ken -->
+      <filename>eptexdir/wcfname.test</filename> are known to fail.
 @z
 
 @x
@@ -479,16 +487,30 @@
 
 @x
         <seg>Over 300 binaries and symlinks to scripts</seg>
-        <seg>libkpathsea.so, libptexenc.so, libsynctex.so, libtexlua52.so,
-        libtexluajit.so</seg>
-        <seg>/opt/texlive/&texlive-year;/bin, /opt/texlive/&texlive-year;/include,
-        /opt/texlive/&texlive-year;/lib, /opt/texlive/&texlive-year;/texmf-dist</seg>
+        <seg>libkpathsea.so,
+             libptexenc.so,
+             libsynctex.so,
+             libtexlua52.so,
+             libtexluajit.so
+        </seg>
+        <seg>$TEXLIVE_PREFIX/bin,
+             $TEXLIVE_PREFIX/include,
+             $TEXLIVE_PREFIX/lib,
+             $TEXLIVE_PREFIX/texmf-dist
+        </seg>
 @y
         <seg>300 を超えるバイナリと、スクリプトに対するシンボリックリンク</seg>
-        <seg>libkpathsea.so, libptexenc.so, libsynctex.so, libtexlua52.so,
-        libtexluajit.so</seg>
-        <seg>/opt/texlive/&texlive-year;/bin, /opt/texlive/&texlive-year;/include,
-        /opt/texlive/&texlive-year;/lib, /opt/texlive/&texlive-year;/texmf-dist</seg>
+        <seg>libkpathsea.so,
+             libptexenc.so,
+             libsynctex.so,
+             libtexlua52.so,
+             libtexluajit.so
+        </seg>
+        <seg>$TEXLIVE_PREFIX/bin,
+             $TEXLIVE_PREFIX/include,
+             $TEXLIVE_PREFIX/lib,
+             $TEXLIVE_PREFIX/texmf-dist
+        </seg>
 @z
 
 @x

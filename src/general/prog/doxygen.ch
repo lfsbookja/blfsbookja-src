@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY doxygen-buildsize     "165 MB (with tests)">
-  <!ENTITY doxygen-time          "1.2 SBU (using parallelism=4; with tests)">
-@y
-  <!ENTITY doxygen-buildsize     "165 MB (with tests)">
-  <!ENTITY doxygen-time          "1.2 SBU (using parallelism=4; with tests)">
-@z
-
-@x
     <title>Introduction to Doxygen</title>
 @y
     <title>&IntroductionTo1;Doxygen&IntroductionTo2;</title>
@@ -131,32 +123,24 @@
       <xref linkend="libxml2"/> (required for the tests),
       <xref linkend="llvm"/> (with clang),
       <!-- Can someone check this? With LLVM7, it fails to build. -->
-      <xref linkend="python2"/>,
-      <xref linkend="qt5"/> (for doxywizard),
+      &qt5-deps; (for doxywizard),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="xapian"/> (for doxyindexer), and
       <ulink url="https://javacc.github.io/javacc/">javacc</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="graphviz"/>,
       <xref linkend="gs"/>,
       <xref linkend="libxml2"/> (required for the tests),
       <xref linkend="llvm"/> (with clang),
       <!-- Can someone check this? With LLVM7, it fails to build. -->
-      <xref linkend="python2"/>,
-      <xref linkend="qt5"/> (for doxywizard),
+      &qt5-deps; (for doxywizard),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <xref linkend="xapian"/> (for doxyindexer),
+      <xref linkend="xapian"/> (for doxyindexer), and
       <ulink url="https://javacc.github.io/javacc/">javacc</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">User Notes:
 @z
 
 @x
@@ -243,18 +227,16 @@
 @x
       There is no real configuration necessary for the
       <application>Doxygen</application> package although three additional
-      packages are required if you wish to use extended capabilities. If you
-      need to use the language translation features, you must have <xref
-       linkend="python2"/> installed. If you require formulas to create PDF
+      packages are required if you wish to use extended capabilities.
+      If you require formulas to create PDF
       documentation, then you must have <xref linkend="texlive"/> installed.
       If you require formulas to convert PostScript files to bitmaps, then
       you must have <xref linkend="gs"/> installed.
 @y
       There is no real configuration necessary for the
       <application>Doxygen</application> package although three additional
-      packages are required if you wish to use extended capabilities. If you
-      need to use the language translation features, you must have <xref
-       linkend="python2"/> installed. If you require formulas to create PDF
+      packages are required if you wish to use extended capabilities.
+      If you require formulas to create PDF
       documentation, then you must have <xref linkend="texlive"/> installed.
       If you require formulas to convert PostScript files to bitmaps, then
       you must have <xref linkend="gs"/> installed.

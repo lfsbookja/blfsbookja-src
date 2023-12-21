@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -36,12 +32,6 @@
     これは LFS においてインストールしたデフォルトのルール、すなわち <filename
     class="directory">/etc/udev/rules.d</filename> 配下にあるファイルを用いて行われます。
     しかし場合によっては、ルールを修正しなければならない状況も発生します。
-@z
-
-@x
-  <para condition="html" role="usernotes">User Notes:
-@y
-  <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -118,7 +108,7 @@
       acting as a device driver. However, for the program to open the device
       successfully, the permissions have to be set correctly. By default, due
       to security concerns, all raw USB devices are owned by user root and
-      group usb, and have 0664 permissions (the read access is needed, e.g.,
+      group root, and have 0664 permissions (the read access is needed, e.g.,
       for lsusb to work and for programs to access USB hubs). Packages (such
       as SANE and libgphoto2) containing userspace USB device drivers also
       ship udev rules that change the permissions of the controlled raw USB
@@ -131,7 +121,7 @@
       acting as a device driver. However, for the program to open the device
       successfully, the permissions have to be set correctly. By default, due
       to security concerns, all raw USB devices are owned by user root and
-      group usb, and have 0664 permissions (the read access is needed, e.g.,
+      group root, and have 0664 permissions (the read access is needed, e.g.,
       for lsusb to work and for programs to access USB hubs). Packages (such
       as SANE and libgphoto2) containing userspace USB device drivers also
       ship udev rules that change the permissions of the controlled raw USB
@@ -142,59 +132,19 @@
 @z
 
 @x
-      There is one situation when such fine-grained access control with
-      pre-generated udev rules doesn't work. Namely, PC emulators such as KVM,
-      QEMU and VirtualBox use raw USB device nodes to present arbitrary USB
-      devices to the guest operating system (note: patches are needed in order
-      to get this to work without the obsolete /proc/bus/usb mount point
-      described below). Obviously, maintainers of these packages cannot know
-      which USB devices are going to be connected to the guest operating
-      system. You can either write separate udev rules for all needed USB
-      devices yourself, or use the default catch-all "usb" group, members
-      of which can send arbitrary commands to all USB devices. 
-@y
-      There is one situation when such fine-grained access control with
-      pre-generated udev rules doesn't work. Namely, PC emulators such as KVM,
-      QEMU and VirtualBox use raw USB device nodes to present arbitrary USB
-      devices to the guest operating system (note: patches are needed in order
-      to get this to work without the obsolete /proc/bus/usb mount point
-      described below). Obviously, maintainers of these packages cannot know
-      which USB devices are going to be connected to the guest operating
-      system. You can either write separate udev rules for all needed USB
-      devices yourself, or use the default catch-all "usb" group, members
-      of which can send arbitrary commands to all USB devices. 
-@z
-
-@x
       Before Linux-2.6.15, raw USB device access was performed not with
       /dev/bus/usb/BBB/DDD device nodes, but with /proc/bus/usb/BBB/DDD
-      pseudofiles. Some applications (e.g., VMware Workstation) still use only
-      this deprecated technique and can't use the new device nodes. For them to
-      work, use the "usb" group, but remember that members will have
-      unrestricted access to all USB devices.  To create the fstab entry for
-      the obsolete usbfs filesystem:
+      pseudofiles. Some applications still use only
+      this deprecated technique and can't use the new device nodes.  They
+      cannot work with Linux kernel version 3.5 or newer.  If you need to
+      run such an application, contact the developer of it for a fix.
 @y
       Before Linux-2.6.15, raw USB device access was performed not with
       /dev/bus/usb/BBB/DDD device nodes, but with /proc/bus/usb/BBB/DDD
-      pseudofiles. Some applications (e.g., VMware Workstation) still use only
-      this deprecated technique and can't use the new device nodes. For them to
-      work, use the "usb" group, but remember that members will have
-      unrestricted access to all USB devices.  To create the fstab entry for
-      the obsolete usbfs filesystem:
-@z
-
-@x
-        Adding users to the "usb" group is inherently insecure, as they can
-        bypass access restrictions imposed through the driver-specific USB
-        device nodes. For instance, they can read sensitive data from USB
-        hard drives without being in the "disk" group. Avoid adding users
-        to this group, if you can.
-@y
-        Adding users to the "usb" group is inherently insecure, as they can
-        bypass access restrictions imposed through the driver-specific USB
-        device nodes. For instance, they can read sensitive data from USB
-        hard drives without being in the "disk" group. Avoid adding users
-        to this group, if you can.
+      pseudofiles. Some applications still use only
+      this deprecated technique and can't use the new device nodes.  They
+      cannot work with Linux kernel version 3.5 or newer.  If you need to
+      run such an application, contact the developer of it for a fix.
 @z
 
 @x

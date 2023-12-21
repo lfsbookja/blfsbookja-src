@@ -86,9 +86,25 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/ark5"/>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+       <!-- See README.packagers in the source tree -->
+       <xref linkend="cpio"/>,
+       <xref linkend="p7zip"/>,
+       <xref linkend="unrar"/>,
+       <xref linkend="unzip"/>, and
+       <xref linkend="zip"/>
+    </para>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/ark5"/>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+       <!-- See README.packagers in the source tree -->
+       <xref linkend="cpio"/>,
+       <xref linkend="p7zip"/>,
+       <xref linkend="unrar"/>,
+       <xref linkend="unzip"/>,
+       <xref linkend="zip"/>
+    </para>
 @z
 
 @x

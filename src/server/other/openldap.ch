@@ -101,10 +101,10 @@
       <xref linkend="unixodbc"/>,
         <xref linkend="mariadb"/> or
         <xref linkend="postgresql"/> or
-        <ulink url="http://www.mysql.com/">MySQL</ulink>,
+        <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
       <ulink url="https://docs.mongodb.com/manual/core/wiredtiger/">WiredTiger</ulink>, and
-      <xref linkend="db"/> (for slapd, but deprecated)
+      &berkeley-db; (for slapd, also deprecated)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -112,19 +112,13 @@
       <xref linkend="gnutls"/>,
       <xref linkend="pth"/>,
       <xref linkend="unixodbc"/>,
-        <xref linkend="mariadb"/> または
-        <xref linkend="postgresql"/> または
-        <ulink url="http://www.mysql.com/">MySQL</ulink>,
+        <xref linkend="mariadb"/> or
+        <xref linkend="postgresql"/> or
+        <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-      <ulink url="https://docs.mongodb.com/manual/core/wiredtiger/">WiredTiger</ulink>,
-      <xref linkend="db"/> (for slapd, but deprecated)
+      <ulink url="https://docs.mongodb.com/manual/core/wiredtiger/">WiredTiger</ulink>, and
+      &berkeley-db; (for slapd, also deprecated)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -141,14 +135,18 @@
 @z
 
 @x
-      The tests appear to be fragile.  Errors may cause the tests to abort
-      prior to finishing, apparently due to timing issues.  The tests
-      take about 65 minutes and are processor independent.
+      The tests are fragile, and errors may cause the tests to abort
+      prior to finishing. Some errors may happen due to timing problems.
+      The tests take around an hour, and the time is CPU independent due
+      to delays in the tests. On most systems, the tests will run up to the
+      <filename>test065-proxyauth for mdb</filename> test.
       To test the results, issue: <command>make test</command>.
 @y
-      The tests appear to be fragile.  Errors may cause the tests to abort
-      prior to finishing, apparently due to timing issues.  The tests
-      take about 65 minutes and are processor independent.
+      The tests are fragile, and errors may cause the tests to abort
+      prior to finishing. Some errors may happen due to timing problems.
+      The tests take around an hour, and the time is CPU independent due
+      to delays in the tests. On most systems, the tests will run up to the
+      <filename>test065-proxyauth for mdb</filename> test.
       To test the results, issue: <command>make test</command>.
 @z
 
@@ -228,18 +226,6 @@
 @y
       <parameter>--enable-overlays</parameter>: This switch enables
       all available overlays.
-@z
-
-@x
-      <parameter>--disable-ndb</parameter>: This switch disables
-      <application>MySQL</application> NDB Cluster backend
-      which causes configure to fail if
-      <application>MySQL</application> is present.
-@y
-      <parameter>--disable-ndb</parameter>: This switch disables
-      <application>MySQL</application> NDB Cluster backend
-      which causes configure to fail if
-      <application>MySQL</application> is present.
 @z
 
 @x
@@ -369,12 +355,12 @@
 @z
 
 @x
-            The <ulink url="http://www.openldap.org/doc/admin25/"> OpenLDAP 2.5
+            The <ulink url="https://www.openldap.org/doc/admin26/"> OpenLDAP 2.6
             Administrator's Guide</ulink> (also installed locally in
             <filename class="directory">
             /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).
 @y
-            The <ulink url="http://www.openldap.org/doc/admin25/"> OpenLDAP 2.5
+            The <ulink url="https://www.openldap.org/doc/admin26/"> OpenLDAP 2.6
             Administrator's Guide</ulink> (also installed locally in
             <filename class="directory">
             /usr/share/doc/openldap-&openldap-version;/guide/admin</filename>).
@@ -382,10 +368,10 @@
 
 @x
             Documents located at
-            <ulink url="http://www.openldap.org/pub/"/>.
+            <ulink url="https://www.openldap.org/pub/"/>.
 @y
             Documents located at
-            <ulink url="http://www.openldap.org/pub/"/>.
+            <ulink url="https://www.openldap.org/pub/"/>.
 @z
 
 @x

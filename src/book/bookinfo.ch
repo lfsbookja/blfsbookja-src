@@ -69,6 +69,30 @@
       <revremark>進行中リリース</revremark>
 @z
 
+@x 2023-09-01
+      <revremark>Twenty-eighth Release</revremark>
+@y
+      <revremark>第 28 次リリース</revremark>
+@z
+
+@x 2023-03-01
+      <revremark>Twenty-seventh Release</revremark>
+@y
+      <revremark>第 27 次リリース</revremark>
+@z
+
+@x 2022-09-01
+      <revremark>Twenty-sixth Release</revremark>
+@y
+      <revremark>第 26 次リリース</revremark>
+@z
+
+@x 2022-03-01
+      <revremark>Twenty-fifth Release</revremark>
+@y
+      <revremark>第 25 次リリース</revremark>
+@z
+
 @x 2021-09-01
       <revremark>Twenty-fourth Release</revremark>
 @y

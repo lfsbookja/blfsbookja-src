@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY sudo-buildsize     "45 MB (add 14 MB for tests)">
-  <!ENTITY sudo-time          "0.5 SBU (add 0.1 SBU for tests)">
+  <!ENTITY sudo-buildsize     "53 MB (add 19 MB for tests)">
+  <!ENTITY sudo-time          "0.2 SBU (with parallelism=4; add 0.1 SBU for tests)">
 @y
-  <!ENTITY sudo-buildsize     "45 MB（テスト実行時はさらに 14 MB）">
-  <!ENTITY sudo-time          "0.5 SBU（テスト実行時はさらに 0.1 SBU）">
+  <!ENTITY sudo-buildsize     "53 MB (add 19 MB for tests)">
+  <!ENTITY sudo-time          "0.2 SBU (with parallelism=4; add 0.1 SBU for tests)">
 @z
 
 @x
@@ -90,9 +90,13 @@
       <xref linkend="openldap"/>,
       <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command),
-      <ulink url="http://www.openafs.org/">AFS</ulink>,
-      <ulink url="http://www.fwtk.org/">FWTK</ulink>, and
-      <ulink url="&sourceforge-dl;/opie/">Opie</ulink>
+      <ulink url="https://www.openafs.org/">AFS</ulink>,
+<!--  It seems dead for decades, nowhere to download source code
+      <ulink url="https://www.fwtk.org/">FWTK</ulink>, and
+-->
+      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>,
+      <ulink url="&sourceforge-dl;/opie/">Opie</ulink>, and
+      <ulink url="https://sssd.io/">Sssd</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -102,16 +106,20 @@
       <xref linkend="openldap"/>,
       <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command),
-      <ulink url="http://www.openafs.org/">AFS</ulink>,
-      <ulink url="http://www.fwtk.org/">FWTK</ulink>, and
-      <ulink url="&sourceforge-dl;/opie/">Opie</ulink>
+      <ulink url="https://www.openafs.org/">AFS</ulink>,
+<!--  It seems dead for decades, nowhere to download source code
+      <ulink url="https://www.fwtk.org/">FWTK</ulink>, and
+-->
+      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>,
+      <ulink url="&sourceforge-dl;/opie/">Opie</ulink>, and
+      <ulink url="https://sssd.io/">Sssd</ulink>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -127,14 +135,13 @@
 @z
 
 @x
-      To test the results, issue: <command>env LC_ALL=C make check 2&gt;&amp;1
-      | tee make-check.log</command>. Check the results with <command>grep
-      failed make-check.log</command>. 
+      To test the results, issue:
+      <!-- line breaks in command tags confuse jhalfs -->
+      <command>env LC_ALL=C make check |&amp; tee make-check.log</command>.
+      Check the results with <command>grep failed make-check.log</command>.
 @y
-      ビルド結果をテストする場合は <command>env LC_ALL=C make check 2&gt;&amp;1
-      | tee make-check.log</command> を実行します。
-      確認は <command>grep
-      failed ../make-check.log</command> により行います。
+      ビルド結果をテストする場合は <command>env LC_ALL=C make check |&amp; tee make-check.log</command> を実行します。
+      確認は <command>grep failed make-check.log</command> により行います。
 @z
 
 @x
@@ -171,14 +178,6 @@
       <filename class="directory">/sbin</filename> and <filename
       class="directory">/usr/sbin</filename> directories to the
       <envar>PATH</envar> environment variable.
-@z
-
-@x
-      <parameter>--with-all-insults</parameter>: This switch includes all the
-      <application>sudo</application> insult sets.
-@y
-      <parameter>--with-all-insults</parameter>:
-      このスイッチは <application>sudo</application> が表示する侮辱の文言をすべて含めます。
 @z
 
 @x
@@ -243,14 +242,14 @@
 @x
         A couple of common configuration changes are to set the path for the
         super user and to allow members of the wheel group to execute all
-        commands after providing their own credientials. Use the following
+        commands after providing their own credentials. Use the following
         commands to create the <filename>/etc/sudoers.d/00-sudo</filename>
         configuration file as the
         <systemitem class="username">root</systemitem> user:
 @y
         A couple of common configuration changes are to set the path for the
         super user and to allow members of the wheel group to execute all
-        commands after providing their own credientials. Use the following
+        commands after providing their own credentials. Use the following
         commands to create the <filename>/etc/sudoers.d/00-sudo</filename>
         configuration file as the
         <systemitem class="username">root</systemitem> user:
@@ -310,8 +309,8 @@
           shared objects in /usr/lib/sudo look more like modules than
           libraries. Leaving them now, and updating the list, but I think
           they should not be listed. -->
-          audit_json.so, group_file.so, libsudo_util.so, sample_approval.so,
-          sudoers.so, sudo_noexec.so, and system_group.so
+          audit_json.so, group_file.so, libsudo_util.so,
+          sudoers.so, sudo_intercept.so, sudo_noexec.so, and system_group.so
         </seg>
         <seg>
           /etc/sudoers.d,
@@ -329,8 +328,8 @@
           shared objects in /usr/lib/sudo look more like modules than
           libraries. Leaving them now, and updating the list, but I think
           they should not be listed. -->
-          audit_json.so, group_file.so, libsudo_util.so, sample_approval.so,
-          sudoers.so, sudo_noexec.so, system_group.so
+          audit_json.so, group_file.so, libsudo_util.so,
+          sudoers.so, sudo_intercept.so, sudo_noexec.so, system_group.so
         </seg>
         <seg>
           /etc/sudoers.d,

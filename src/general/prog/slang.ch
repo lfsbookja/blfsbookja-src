@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY slang-buildsize     "29 MB (add 4 MB for tests)">
-  <!ENTITY slang-time          "0.4 SBU (add 0.2 SBU for tests)">
+  <!ENTITY slang-buildsize     "22 MB (add 15 MB for tests)">
+  <!ENTITY slang-time          "0.4 SBU (add 0.5 SBU for tests)">
 @y
-  <!ENTITY slang-buildsize     "29 MB（テスト実施時はさらに 4 MB）">
-  <!ENTITY slang-time          "0.4 SBU（テスト実施時はさらに 0.2 SBU）">
+  <!ENTITY slang-buildsize     "22 MB（テスト実施時はさらに 15 MB）">
+  <!ENTITY slang-time          "0.4 SBU（テスト実施時はさらに 0.5 SBU）">
 @z
 
 @x
@@ -102,12 +98,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Slang</title>
 @y
     <title>&InstallationOf1;Slang&InstallationOf2;</title>
@@ -127,12 +117,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Note that
-      this will also create a static version of the library which will then be
-      installed in the next step.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストを行うとスタティックライブラリが生成されますので、これが次の作業を通じてインストールされることになります。
 @z
 
 @x
@@ -158,15 +145,13 @@
 
 @x
       <command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
-      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
-      This command installs the static library as well as
-      the dynamic shared version and related modules. It also changes the
-      documentation installation directories to a versioned directory.
+      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install</command>:
+      This command installs this package with a versioned documentation
+      installation directory.
 @y
       <command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
-      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install-all</command>:
-      このコマンドは、動的な共有ライブラリや関連モジュールをインストールし、さらにスタティックライブラリもインストールします。
-      またドキュメントを収めるディレクトリの名前にバージョン番号をつけた上でドキュメントをインストールします。
+      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install</command>:
+      このコマンドはパッケージをインストールし、ドキュメントについてはそれを収めるディレクトリの名前にバージョン番号をつけた上でインストールします。
 @z
 
 @x
@@ -207,12 +192,12 @@
 
 @x
         <seg>slsh</seg>
-        <seg>libslang.{so,a} and numerous support modules</seg>
+        <seg>libslang.so and numerous support modules</seg>
         <seg>/usr/lib/slang, /usr/share/doc/slang-&slang-version;
         and /usr/share/slsh</seg>
 @y
         <seg>slsh</seg>
-        <seg>libslang.{so,a} と数多くのサポートライブラリ</seg>
+        <seg>libslang.so と数多くのサポートライブラリ</seg>
         <seg>/usr/lib/slang, /usr/share/doc/slang-&slang-version;,
         /usr/share/slsh</seg>
 @z

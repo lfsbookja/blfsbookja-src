@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libwacom-buildsize     "7.6 MB (with tests)">
+  <!ENTITY libwacom-buildsize     "3.5 MB (with tests)">
   <!ENTITY libwacom-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libwacom-buildsize     "7.6 MB（テスト込み）">
+  <!ENTITY libwacom-buildsize     "3.5 MB（テスト込み）">
   <!ENTITY libwacom-time          "&LessThan1;0.1 SBU&LessThan2;（テスト込み）">
 @z
 
@@ -109,7 +109,9 @@
       <xref linkend="git"/>,
       <xref linkend="librsvg"/>,
       <xref linkend="valgrind"/> (optional for some tests), and
-      <ulink url="https://docs.pytest.org/en/stable/">pytest</ulink>
+      <xref linkend="pytest"/> with
+      <ulink url="https://pypi.org/project/libevdev/">python-libevdev</ulink> and
+      <ulink url="https://pypi.org/project/pyudev/">pyudev</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -117,15 +119,11 @@
       <xref linkend="doxygen"/>,
       <xref linkend="git"/>,
       <xref linkend="librsvg"/>,
-      <xref linkend="valgrind"/> （一部のテストに必要）,
-      <ulink url="https://docs.pytest.org/en/stable/">pytest</ulink>
+      <xref linkend="valgrind"/> (一部のテストにて必要),
+      <ulink url="https://pypi.org/project/libevdev/">python-libevdev</ulink> と
+      <ulink url="https://pypi.org/project/pyudev/">pyudev</ulink> を含んだ
+      <xref linkend="pytest"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libwacom"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libwacom"/>
 @z
 
 @x
@@ -143,13 +141,12 @@
 
 @x
       To test the results, issue: <command>ninja test</command>.
-      To run additional tests, install 
-      <ulink url="https://docs.pytest.org/en/stable/">pytest</ulink> and remove
+      To run additional tests, install
+      <xref linkend="pytest"/>, python-libevdev, and pyudev, then remove
       the "-Dtests=disabled" option from the meson line above.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      追加テストを実行するには <ulink
-      url="https://docs.pytest.org/en/stable/">pytest</ulink> をインストールし、上の meson のコマンド行から "-Dtests=disabled" オプションを取り除いて実行してください。
+      追加テストを実行するには <xref linkend="pytest"/>、python-libevdev、pyudev をインストールし、上の meson のコマンド行から "-Dtests=disabled" オプションを取り除いて実行してください。
 @z
 
 @x
@@ -166,13 +163,12 @@
 
 @x
       <parameter>-Dtests=disabled</parameter>: This parameter disables some of
-      the more advanced tests because they require
-      <ulink url="https://docs.pytest.org/en/stable/">pytest</ulink> to work
-      properly.
+      the more advanced tests because they require <xref linkend="pytest"/> and
+      other two Python modules beyond the scope of BLFS to work properly.
 @y
       <parameter>-Dtests=disabled</parameter>:
-      追加の高度なテストを正常処理するためには <ulink
-      url="https://docs.pytest.org/en/stable/">pytest</ulink> を必要とするため、本パラメーターでそれを無効にします。
+      このパラメーターは、より高度なテストを無効化します。
+      それは <xref linkend="pytest"/> に加えて、BLFS の範疇を超えた 2 つの Python モジュールが必要になるためです。
 @z
 
 @x

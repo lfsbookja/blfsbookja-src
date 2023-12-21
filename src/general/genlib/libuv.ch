@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libuv-buildsize     "13 MB (add 12 MB for tests)">
-  <!ENTITY libuv-time          "less than 0.1 SBU (Using parallelism=4; add 0.5 SBU for tests)">
+  <!ENTITY libuv-buildsize     "14 MB (add 16 MB for tests)">
+  <!ENTITY libuv-time          "less than 0.1 SBU (add 0.5 SBU for tests)">
 @y
-  <!ENTITY libuv-buildsize     "13 MB (テスト実施はさらに 12 MB)">
-  <!ENTITY libuv-time          "&LessThan1;0.1 SBU&LessThan2; (parallelism=4 利用時、テスト実施時はさらに 0.5 SBU)">
+  <!ENTITY libuv-buildsize     "14 MB (テスト実施はさらに 16 MB)">
+  <!ENTITY libuv-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実施時はさらに 0.5 SBU)">
 @z
 
 @x
@@ -74,9 +74,21 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect3">libuv Dependencies</bridgehead>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect3">&Dependencies1;libuv&Dependencies2;</bridgehead>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="sphinx"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="sphinx"/>
+    </para>
 @z
 
 @x
@@ -93,15 +105,36 @@
 @z
 
 @x
-      If you want to run the tests, run: <command>make check</command>.
+        The <command>sh autogen.sh</command> command below fails if the ACLOCAL
+        environment variable is set as specified in <xref linkend="xorg7"/>.
+        If it is used, ACLOCAL needs to be unset for this package and then
+        reset for other packages.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+        The <command>sh autogen.sh</command> command below fails if the ACLOCAL
+        environment variable is set as specified in <xref linkend="xorg7"/>.
+        If it is used, ACLOCAL needs to be unset for this package and then
+        reset for other packages.
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      If you installed the optional <xref linkend="sphinx"/> python module,
+      create the man page:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      If you installed the optional <xref linkend="sphinx"/> python module,
+      create the man page:
+@z
+
+@x
+      If you want to run the tests, run: <command>make check</command> as
+      a non-root user. <!-- the test suite refuses to run as root -->
+@y
+      ビルド結果をテストする場合は、非 root ユーザーになって <command>make check</command> を実行します。
+@z
+
+@x
+      Now, as the &root; user:
+@y
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x

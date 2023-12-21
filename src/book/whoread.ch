@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -28,13 +24,13 @@
 @x
     This book is mainly aimed at those who have built a system based
     on the LFS book. It will also be useful for those who are using other
-    distributions, but for one reason or another want to manually build
-    software and are in need of some assistance. Note that the material
-    contained in this book, in particular the dependency listings, is based
-    upon the assumption that you are using a base LFS system with every
+    distributions, and for one reason or another want to manually build
+    software and need some assistance. Note that the material
+    in this book, in particular the dependency listings,
+    assumes that you are using a basic LFS system with every
     package listed in the LFS book already installed and configured. BLFS can
     be used to create a range of diverse systems and so the target audience is
-    probably nearly as wide as that of the LFS book.  If you found LFS useful,
+    probably as wide as that of the LFS book.  If you found LFS useful,
     you should also like this!
 @y
     本書は LFS ブックに従ってシステム構築を行った方を主に対象としています。
@@ -46,7 +42,7 @@
 @z
 
 @x
-    Since Release 7.4, the BLFS book version matches the LFS book version.
+    Since Release 7.4, the BLFS book version has matched the LFS book version.
     This book may be incompatible with a previous or later release of the LFS
     book.
 @y

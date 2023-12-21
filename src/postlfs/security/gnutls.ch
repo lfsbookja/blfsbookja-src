@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -24,41 +20,45 @@
       userspace tools which provide a secure layer over a reliable transport
       layer. Currently the <application>GnuTLS</application> library implements
       the proposed standards by the IETF's TLS working group. Quoting from the
-      TLS protocol specification:
+      <ulink url="https://datatracker.ietf.org/doc/rfc8446/">
+        TLS 1.3 protocol specification
+      </ulink>:
 @y
       The <application>GnuTLS</application> package contains libraries and
       userspace tools which provide a secure layer over a reliable transport
       layer. Currently the <application>GnuTLS</application> library implements
       the proposed standards by the IETF's TLS working group. Quoting from the
-      TLS protocol specification:
+      <ulink url="https://datatracker.ietf.org/doc/rfc8446/">
+        TLS 1.3 protocol specification
+      </ulink>:
 @z
 
 @x
-      <quote>The TLS protocol provides communications privacy over the
-      Internet. The protocol allows client/server applications to communicate in
-      a way that is designed to prevent eavesdropping, tampering, or message
-      forgery.</quote>
+        TLS allows client/server applications to communicate over the Internet
+        in a way that is designed to prevent eavesdropping, tampering, and
+        message forgery.
 @y
-      <quote>The TLS protocol provides communications privacy over the
-      Internet. The protocol allows client/server applications to communicate in
-      a way that is designed to prevent eavesdropping, tampering, or message
-      forgery.</quote>
+        TLS allows client/server applications to communicate over the Internet
+        in a way that is designed to prevent eavesdropping, tampering, and
+        message forgery.
 @z
 
 @x
-      <application>GnuTLS</application> provides support for TLS 1.3, TLS 1.2, TLS 1.1,
-      TLS 1.0, and SSL 3.0 protocols, TLS extensions, including server name and max
-      record size. Additionally, the library supports authentication using the
-      SRP protocol, X.509 certificates and OpenPGP keys, along with support for
-      the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
-      extension and X.509 and OpenPGP certificate handling.
+      <application>GnuTLS</application> provides support for TLS 1.3, TLS 1.2,
+      TLS 1.1, TLS 1.0, and (optionally) SSL 3.0 protocols. It also supports
+      TLS extensions, including server name and max record size. Additionally,
+      the library supports authentication using the SRP protocol, X.509
+      certificates, and OpenPGP keys, along with support for the TLS
+      Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
+      extension, and X.509 and OpenPGP certificate handling.
 @y
-      <application>GnuTLS</application> provides support for TLS 1.3, TLS 1.2, TLS 1.1,
-      TLS 1.0, and SSL 3.0 protocols, TLS extensions, including server name and max
-      record size. Additionally, the library supports authentication using the
-      SRP protocol, X.509 certificates and OpenPGP keys, along with support for
-      the TLS Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
-      extension and X.509 and OpenPGP certificate handling.
+      <application>GnuTLS</application> provides support for TLS 1.3, TLS 1.2,
+      TLS 1.1, TLS 1.0, and (optionally) SSL 3.0 protocols. It also supports
+      TLS extensions, including server name and max record size. Additionally,
+      the library supports authentication using the SRP protocol, X.509
+      certificates, and OpenPGP keys, along with support for the TLS
+      Pre-Shared-Keys (PSK) extension, the Inner Application (TLS/IA)
+      extension, and X.509 and OpenPGP certificate handling.
 @z
 
 @x
@@ -124,10 +124,10 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="brotli"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="guile"/>,
-      <xref linkend="libidn"/> or 
+      <xref linkend="libidn"/> or
       <xref linkend="libidn2"/>,
       <xref linkend="libseccomp"/>,
       <xref linkend="net-tools"/> (used during the test suite),
@@ -142,10 +142,10 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="brotli"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="guile"/>,
-      <xref linkend="libidn"/> または
+      <xref linkend="libidn"/> or
       <xref linkend="libidn2"/>,
       <xref linkend="libseccomp"/>,
       <xref linkend="net-tools"/> (used during the test suite),
@@ -160,17 +160,11 @@
 @z
 
 @x
-      Note that if you do not install <xref linkend="libtasn1"/>, an older
+      Note that if you do not install <xref linkend="libtasn1"/>, a
       version shipped in the <application>GnuTLS</application> tarball will be
       used instead.
 @y
-      <xref linkend="libtasn1"/> をインストールしない場合、<application>GnuTLS</application> の tarball 内に含まれる旧バージョンが利用されます。
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
+      <xref linkend="libtasn1"/> をインストールしない場合、<application>GnuTLS</application> の tarball 内に含まれるバージョンが利用されます。
 @z
 
 @x
@@ -197,22 +191,6 @@
       user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      If you passed <option>--enable-gtk-doc</option> to the
-      <command>configure</command> script, the API will automatically be
-      installed.  Otherwise, if desired, you can still install the API
-      documentation to the <filename
-      class="directory">/usr/share/gtk-doc/html/gnutls</filename> directory
-      using the following command as the <systemitem
-      class="username">root</systemitem> user:
-@y
-      <command>configure</command> スクリプトにて <option>--enable-gtk-doc</option> オプションを指定した場合は API ドキュメントが自動的にインストールされます。
-      これを指定しない場合であってもドキュメントをインストールしたければ <systemitem
-      class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-      ドキュメントは <filename
-      class="directory">/usr/share/gtk-doc/html/gnutls</filename> にインストールされます。
 @z
 
 @x
@@ -243,14 +221,14 @@
           gnutls-serv, ocsptool, p11tool, psktool, and srptool
         </seg>
         <seg>
-          libgnutls.so, libgnutls-dane.so, libgnutlsxx.so, and
-          libgnutls-openssl.so (optional)<!-- disabled , and
-          /usr/lib/guile/2.2/guile-gnutls-v-2.so -->
+          libgnutls.so, libgnutls-dane.so, libgnutlsxx.so,
+          libgnutls-openssl.so (optional), and
+          /usr/lib/guile/3.0/extensions/guile-gnutls-v-2.so
         </seg>
         <seg>
           /usr/include/gnutls,
-          /usr/share/gtk-doc/html/gnutls, and
-<!-- disabled /usr/share/guile/2.2/gnutls -->
+          /usr/lib/guile/3.0/site-ccache/gnutls,
+          /usr/share/guile/site/3.0/gnutls, and
           /usr/share/doc/gnutls-&gnutls-version;
         </seg>
 @y
@@ -260,13 +238,13 @@
         </seg>
         <seg>
           libgnutls.so, libgnutls-dane.so, libgnutlsxx.so,
-          libgnutls-openssl.so (任意ビルド)<!-- disabled , and
-          /usr/lib/guile/2.2/guile-gnutls-v-2.so -->
+          libgnutls-openssl.so (optional),
+          /usr/lib/guile/3.0/extensions/guile-gnutls-v-2.so
         </seg>
         <seg>
           /usr/include/gnutls,
-          /usr/share/gtk-doc/html/gnutls,
-<!-- disabled /usr/share/guile/2.2/gnutls -->
+          /usr/lib/guile/3.0/site-ccache/gnutls,
+          /usr/share/guile/site/3.0/gnutls,
           /usr/share/doc/gnutls-&gnutls-version;
         </seg>
 @z

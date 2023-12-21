@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -20,9 +16,9 @@
 @z
 
 @x
-        IPC::Run3 is used to run a subprocess with input/ouput redirection.
+        IPC::Run3 is used to run a subprocess with input/output redirection.
 @y
-        IPC::Run3 is used to run a subprocess with input/ouput redirection.
+        IPC::Run3 is used to run a subprocess with input/output redirection.
 @z
 
 @x

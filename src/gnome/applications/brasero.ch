@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -104,7 +100,8 @@
       <xref linkend="libburn"/>,
       <xref linkend="libisoburn"/>, and
       <xref linkend="libisofs"/>,
-      <xref linkend="nautilus"/>, and
+      <xref linkend="nautilus"/>,
+      <xref linkend="tracker3"/>, and
       <xref linkend="totem-pl-parser"/>
     </para>
 @y
@@ -115,6 +112,7 @@
       <xref linkend="libisoburn"/>,
       <xref linkend="libisofs"/>,
       <xref linkend="nautilus"/>,
+      <xref linkend="tracker3"/>,
       <xref linkend="totem-pl-parser"/>
     </para>
 @z
@@ -143,12 +141,6 @@
       <xref role="runtime" linkend="dvd-rw-tools"/>,
       <xref role="runtime" linkend="gvfs"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -203,8 +195,8 @@
           brasero
         </seg>
         <seg>
-          libbrasero-{burn,media,utils}3.so, and
-          /usr/lib/nautilus/extensions-3.0/libnautilus-brasero-extension.so
+          libbrasero-{burn,media,utils}3.so
+          <!--/usr/lib/nautilus/extensions-3.0/libnautilus-brasero-extension.so-->
         </seg>
         <seg>
           /usr/include/brasero3,
@@ -218,8 +210,8 @@
           brasero
         </seg>
         <seg>
-          libbrasero-{burn,media,utils}3.so,
-          /usr/lib/nautilus/extensions-3.0/libnautilus-brasero-extension.so
+          libbrasero-{burn,media,utils}3.so
+          <!--/usr/lib/nautilus/extensions-3.0/libnautilus-brasero-extension.so-->
         </seg>
         <seg>
           /usr/include/brasero3,

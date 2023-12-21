@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY lua-buildsize     "5.8 MB (with Basic tests)">
+  <!ENTITY lua-buildsize     "3.8 MB (with Basic tests)">
   <!ENTITY lua-time          "less than 0.1 SBU (with Basic tests)">
 @y
-  <!ENTITY lua-buildsize     "5.8 MB（基本テスト込み）">
+  <!ENTITY lua-buildsize     "3.8 MB（基本テスト込み）">
   <!ENTITY lua-time          "&LessThan1;0.1 SBU&LessThan2;（基本テスト込み）">
 @z
 
@@ -124,12 +119,6 @@
           Optional Test Suite Download size: &lua-tests-size;
 @y
           Optional Test Suite Download size: &lua-tests-size;
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

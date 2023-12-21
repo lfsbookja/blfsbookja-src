@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,10 +11,10 @@
 
 @x
   <!ENTITY apr-buildsize     "11 MB (additional 4 MB for the tests)">
-  <!ENTITY apr-time          "0.2 SBU (add 1.7 SBU for tests)">
+  <!ENTITY apr-time          "0.1 SBU (add 1.4 SBU for tests)">
 @y
   <!ENTITY apr-buildsize     "11 MB (テスト実施時はさらに 4 MB)">
-  <!ENTITY apr-time          "0.2 SBU (テスト実施時は 1.7 SBU)">
+  <!ENTITY apr-time          "0.1 SBU (テスト実施時は 1.4 SBU)">
 @z
 
 @x
@@ -81,12 +77,6 @@
           Estimated build time: &apr-time;
 @y
           &Estimatedbuildtime;: &apr-time;
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/apr"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/apr"/>
 @z
 
 @x

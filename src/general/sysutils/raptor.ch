@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY raptor-buildsize     "28 MB (additional 1 MB for the tests)">
-  <!ENTITY raptor-time          "0.2 SBU (additional 0.5 SBU for the tests)">
+  <!ENTITY raptor-buildsize     "25 MB (additional 2 MB for the tests)">
+  <!ENTITY raptor-time          "0.1 SBU (additional 0.3 SBU for the tests)">
 @y
-  <!ENTITY raptor-buildsize     "28 MB (テスト実施時はさらに 1 MB)">
-  <!ENTITY raptor-time          "0.2 SBU (テスト実施時はさらに 0.5 SBU)">
+  <!ENTITY raptor-buildsize     "25 MB (テスト実施時はさらに 2 MB)">
+  <!ENTITY raptor-time          "0.1 SBU (テスト実施時はさらに 0.3 SBU)">
 @z
 
 @x
@@ -98,21 +98,15 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="icu"/> and
-      <ulink url="http://lloyd.github.io/yajl/">libyajl</ulink>
+      <ulink url="https://lloyd.github.io/yajl/">libyajl</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       <xref linkend="icu"/>,
-      <ulink url="http://lloyd.github.io/yajl/">libyajl</ulink>
+      <ulink url="https://lloyd.github.io/yajl/">libyajl</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

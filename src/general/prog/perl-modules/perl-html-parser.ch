@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -55,27 +51,17 @@
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
         <xref linkend="perl-html-tagset"/>
+        <xref linkend="perl-http-message"/> (stritly speaking, not required
+        for building, but its module HTTP::Headers is required for tests and
+        a run-time requirement for HTML::HeadParser from this distribution).
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="perl-html-tagset"/>
-      </para>
-@z
-
-@x
-      <bridgehead renderas="sect5">Required (runtime)</bridgehead>
-      <para role="required">
-        <xref role="runtime" linkend="perl-http-message"/> (its module
-        HTTP::Headers is a run-time requirement for HTML::HeadParser from
-        this distribution).
-      </para>
-@y
-      <bridgehead renderas="sect5">&Required; (実行時)</bridgehead>
-      <para role="required">
-        <xref role="runtime" linkend="perl-http-message"/> (its module
-        HTTP::Headers is a run-time requirement for HTML::HeadParser from
-        this distribution).
+        <xref linkend="perl-http-message"/> (stritly speaking, not required
+        for building, but its module HTTP::Headers is required for tests and
+        a run-time requirement for HTML::HeadParser from this distribution).
       </para>
 @z
 

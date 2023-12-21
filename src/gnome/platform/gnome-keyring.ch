@@ -109,25 +109,19 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
-      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
+      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
+      <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
       <xref linkend="gnupg2"/>, and
       <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
-      <ulink url="http://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
-      <xref linkend="gnupg2"/>, and
+      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
+      <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
+      <xref linkend="gnupg2"/>,
       <xref linkend="valgrind"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -109,8 +105,7 @@
       <xref linkend="gnome-keyring"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libarchive"/>,
-      <xref linkend="libsecret"/>,
-      <xref linkend="nautilus"/> (to build the plugin), and
+      <xref linkend="libsecret"/>, and
       <xref linkend="poppler"/>
     </para>
 @y
@@ -120,7 +115,6 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="nautilus"/> (to build the plugin), and
       <xref linkend="poppler"/>
     </para>
 @z
@@ -133,15 +127,13 @@
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gspell"/>,
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="gi-docgen"/>,
       <xref linkend="libgxps"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <!--<ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,-->
-      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
-      <ulink url="https://github.com/jlaurens/synctex">Synctex</ulink>, and
-      <ulink url="https://www.t1lib.org/">t1lib</ulink>
+      <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
+      <ulink url="https://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>, and
+      <ulink url="https://github.com/jlaurens/synctex">Synctex</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -151,22 +143,14 @@
       <xref linkend="gnome-desktop"/>,
       <xref linkend="gspell"/>,
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="gi-docgen"/>,
       <xref linkend="libgxps"/>,
       <xref linkend="libtiff"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <!--<ulink url="https://wiki.gnome.org/action/show/Projects/libgxps">libgxps</ulink>,-->
-      <ulink url="http://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
-      <ulink url="https://github.com/jlaurens/synctex">Synctex</ulink>,
-      <ulink url="https://www.t1lib.org/">t1lib</ulink>
+      <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
+      <ulink url="https://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
+      <ulink url="https://github.com/jlaurens/synctex">Synctex</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -183,7 +167,15 @@
 @z
 
 @x
-      This package does not have a working testsuite.
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
+@y
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
+@z
+
+@x
+      This package does not have a working test suite.
 @y
       本パッケージには有効なテストスイートはありません。
 @z
@@ -221,13 +213,13 @@
           evince, evince-previewer, and evince-thumbnailer
         </seg>
         <seg>
-          libevdocument3.so,
-          libevview3.so, and
-          /usr/lib/nautilus/extensions-3.0/libevince-properties-page.so
+          libevdocument3.so and
+          libevview3.so
         </seg>
         <seg>
           /usr/{include,lib,share}/evince,
-          /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0}, and
+          /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0}
+               (optional), and
           /usr/share/help/*/evince
         </seg>
 @y
@@ -236,12 +228,12 @@
         </seg>
         <seg>
           libevdocument3.so,
-          libevview3.so,
-          /usr/lib/nautilus/extensions-3.0/libevince-properties-page.so
+          libevview3.so
         </seg>
         <seg>
           /usr/{include,lib,share}/evince,
-          /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0},
+          /usr/share/gtk-doc/html/{evince,libevdocument-3.0,libevview-3.0}
+               (任意インストール),
           /usr/share/help/*/evince
         </seg>
 @z
@@ -259,7 +251,7 @@
 @z
 
 @x evince-previewer
-            is an applicaton that implements the printing previewer
+            is an application that implements the printing previewer
 @y
             印刷プレビューを実装したアプリケーション。
 @z

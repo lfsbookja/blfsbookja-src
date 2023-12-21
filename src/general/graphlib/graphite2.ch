@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY graphite2-buildsize     "28 MB (with tests add docs)">
-  <!ENTITY graphite2-time          "0.2 SBU (with tests and docs)">
+  <!ENTITY graphite2-buildsize     "30 MB (with tests)">
+  <!ENTITY graphite2-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY graphite2-buildsize     "28 MB（テストとドキュメント込み）">
-  <!ENTITY graphite2-time          "0.2 SBU（テストとドキュメント込み）">
+  <!ENTITY graphite2-buildsize     "30 MB（テスト込み）">
+  <!ENTITY graphite2-time          "0.2 SBU（テスト込み）">
 @z
 
 @x
@@ -144,7 +139,7 @@
       <xref linkend="asciidoc"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>), and
-      <ulink url="http://dblatex.sourceforge.net/">
+      <ulink url="https://dblatex.sourceforge.net/">
       dblatex</ulink>  (for PDF docs)
     </para>
 @y
@@ -153,7 +148,7 @@
       <xref linkend="asciidoc"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>),
-      <ulink url="http://dblatex.sourceforge.net/">
+      <ulink url="https://dblatex.sourceforge.net/">
       dblatex</ulink>  (PDF ドキュメントのため)
     </para>
 @z
@@ -176,22 +171,16 @@
     <bridgehead renderas="sect4">Optional (at runtime)</bridgehead>
     <para role="optional">
       You will need at least one suitable <ulink role="runtime"
-      url="http://scripts.sil.org/cms/scripts/page.php?site_id=projects&amp;item_id=graphite_fonts">graphite font</ulink>
+      url="https://scripts.sil.org/cms/scripts/page.php?site_id=projects&amp;item_id=graphite_fonts">graphite font</ulink>
       for the package to be useful.
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; （実行時）</bridgehead>
     <para role="optional">
       You will need at least one suitable <ulink role="runtime"
-      url="http://scripts.sil.org/cms/scripts/page.php?site_id=projects&amp;item_id=graphite_fonts">graphite font</ulink>
+      url="https://scripts.sil.org/cms/scripts/page.php?site_id=projects&amp;item_id=graphite_fonts">graphite font</ulink>
       for the package to be useful.
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/graphite2"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/graphite2"/>
 @z
 
 @x

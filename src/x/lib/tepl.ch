@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -78,17 +74,19 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="amtk"/>,
-      <xref linkend="gtksourceview4"/>,
-      <xref linkend="icu"/>, and
+      <xref linkend="gsettings-desktop-schemas"/>,
+      <xref linkend="icu"/>,
+      <xref linkend="libgedit-amtk"/>,
+      <xref linkend="libgedit"/>, and
       <xref linkend="uchardet"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="amtk"/>,
-      <xref linkend="gtksourceview4"/>,
+      <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="icu"/>,
+      <xref linkend="libgedit-amtk"/>,
+      <xref linkend="libgedit"/>,
       <xref linkend="uchardet"/>
     </para>
 @z
@@ -105,12 +103,6 @@
       <xref linkend="gtk-doc"/> (for documentation) and
       <xref linkend="valgrind"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/tepl"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/tepl"/>
 @z
 
 @x

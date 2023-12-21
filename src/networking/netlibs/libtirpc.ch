@@ -86,12 +86,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of libtirpc</title>
 @y
     <title>&InstallationOf1;libtirpc&InstallationOf2;</title>

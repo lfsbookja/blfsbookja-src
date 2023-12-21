@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libjpeg-buildsize     "33 MB (with tests)">
-  <!ENTITY libjpeg-time          "0.3 SBU (using parallelism=4; with tests)">
+  <!ENTITY libjpeg-buildsize     "55 MB (with tests)">
+  <!ENTITY libjpeg-time          "0.5 SBU (with tests; both using parallelism=4)">
 @y
-  <!ENTITY libjpeg-buildsize     "33 MB （テスト込み）">
-  <!ENTITY libjpeg-time          "0.3 SBU （parallelism=4 利用時; テスト込み）">
+  <!ENTITY libjpeg-buildsize     "55 MB （テスト込み）">
+  <!ENTITY libjpeg-time          "0.5 SBU （テスト込み; いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -88,23 +88,27 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/> and
-      <xref linkend="nasm"/> or 
-      <xref linkend="yasm"/>
+      <xref linkend="cmake"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/>,
-      <xref linkend="nasm"/> または
-      <xref linkend="yasm"/>
+      <xref linkend="cmake"/>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="nasm"/> or <xref linkend="yasm"/>
+      (for building the package with optimized assembly routine)
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="nasm"/> または <xref linkend="yasm"/>
+      (for building the package with optimized assembly routine)
+    </para>
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -109,21 +105,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink> and
+      <ulink url="https://www.thrysoee.dk/editline/">libedit</ulink> and
       <xref linkend="unzip"/> (required to unzip the documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
+      <ulink url="https://www.thrysoee.dk/editline/">libedit</ulink> and
       <xref linkend="unzip"/> (ドキュメントを伸張するために必要)
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/sqlite"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/sqlite"/>
 @z
 
 @x
@@ -173,21 +163,20 @@
 @z
 
 @x
-      <parameter>--enable-fts5</parameter>: This switch enables support for
-      version 5 of the full text search extension.
+      <parameter>--enable-fts{4,5}</parameter>: These switches enable
+      support for version 3, 4 and 5 of the full text search (FTS)
+      extension.  Note that the <option>--enable-fts4</option> switch
+      enables support for both FTS version 4 and FTS version 3.
 @y
-      <parameter>--enable-fts5</parameter>: This switch enables support for
-      version 5 of the full text search extension.
+      <parameter>--enable-fts{4,5}</parameter>: These switches enable
+      support for version 3, 4 and 5 of the full text search (FTS)
+      extension.  Note that the <option>--enable-fts4</option> switch
+      enables support for both FTS version 4 and FTS version 3.
 @z
 
 @x
-      <parameter>CPPFLAGS="-DSQLITE_ENABLE_FTS3=1
-      -DSQLITE_ENABLE_FTS3_TOKENIZER=1
-      -DSQLITE_ENABLE_FTS4=1
-      -DSQLITE_ENABLE_COLUMN_METADATA=1
-      -DSQLITE_SECURE_DELETE
-      -DSQLITE_ENABLE_UNLOCK_NOTIFY=1
-      -DSQLITE_ENABLE_DBSTAT_VTAB=1"</parameter>: Applications such as
+      <parameter>CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA=1 ... </parameter>:
+      Applications such as
       <application>SeaMonkey</application> require these options
       to be turned on.
       The only way to do this is to include them in
@@ -195,15 +184,10 @@
       We use the latter so the default value (or any value set by the user)
       of <envar>CFLAGS</envar> won't be affected.
       For further information on what can be specified see <ulink
-      url="http://www.sqlite.org/compile.html"/>.
+      url="https://www.sqlite.org/compile.html"/>.
 @y
-      <parameter>CPPFLAGS="-DSQLITE_ENABLE_FTS3=1
-      -DSQLITE_ENABLE_FTS3_TOKENIZER=1
-      -DSQLITE_ENABLE_FTS4=1
-      -DSQLITE_ENABLE_COLUMN_METADATA=1
-      -DSQLITE_SECURE_DELETE
-      -DSQLITE_ENABLE_UNLOCK_NOTIFY=1
-      -DSQLITE_ENABLE_DBSTAT_VTAB=1"</parameter>: Applications such as
+      <parameter>CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA=1 ... </parameter>:
+      Applications such as
       <application>SeaMonkey</application> require these options
       to be turned on.
       The only way to do this is to include them in
@@ -211,7 +195,7 @@
       We use the latter so the default value (or any value set by the user)
       of <envar>CFLAGS</envar> won't be affected.
       For further information on what can be specified see <ulink
-      url="http://www.sqlite.org/compile.html"/>.
+      url="https://www.sqlite.org/compile.html"/>.
 @z
 
 @x

@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libsoup-buildsize     "16 MB (with tests)">
-  <!ENTITY libsoup-time          "0.2 SBU (Using parallelism=4; with tests)">
+  <!ENTITY libsoup-buildsize     "17 MB (with tests)">
+  <!ENTITY libsoup-time          "0.3 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libsoup-buildsize     "16 MB (テスト込み)">
-  <!ENTITY libsoup-time          "0.2 SBU (parallelism=4 利用、テスト込み)">
+  <!ENTITY libsoup-buildsize     "17 MB (テスト込み)">
+  <!ENTITY libsoup-time          "0.3 SBU (parallelism=4 利用、テスト込み)">
 @z
 
 @x
@@ -120,13 +120,14 @@
       <xref linkend="apache"/> (required to run the test suite),
       <xref linkend="brotli"/>,
       <xref linkend="curl"/> (required to run the test suite),
-      <xref linkend="sysprof"/> (for profiling),
+      <!--<xref linkend="sysprof"/> (for profiling),-->
       <xref linkend="mitkrb"/> (required to run the test suite),
       <xref linkend="gtk-doc"/>,
          <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
       <xref linkend="php"/> compiled with XMLRPC-EPI
-      support (only used for the XMLRPC regression tests), and
-      <xref linkend="samba"/> (ntlm_auth is required to run the test suite)
+      support (only used for the XMLRPC regression tests),
+      <xref linkend="samba"/> (ntlm_auth is required to run the test suite), and
+      <ulink url="&sysprof-url;">sysprof</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -134,20 +135,15 @@
       <xref linkend="apache"/> (テストスイート実行時に必要),
       <xref linkend="brotli"/>,
       <xref linkend="curl"/> (テストスイート実行時に必要),
-      <xref linkend="sysprof"/> (for profiling),
+      <!--<xref linkend="sysprof"/> (for profiling),-->
       <xref linkend="mitkrb"/> (テストスイート実行時に必要),
       <xref linkend="gtk-doc"/>,
          <!-- It seems that XMLRPC is part of PHP 5.4.10 -->
       <xref linkend="php"/> compiled with XMLRPC-EPI
       support (only used for the XMLRPC regression tests),
-      <xref linkend="samba"/> (ntlm_auth がテストスイート実行時に必要)
+      <xref linkend="samba"/> (ntlm_auth がテストスイート実行時に必要),
+      <ulink url="&sysprof-url;">sysprof</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libsoup"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libsoup"/>
 @z
 
 @x

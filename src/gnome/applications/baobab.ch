@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -78,26 +74,20 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
-      <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="libhandy1"/>, and
+      <xref linkend="libadwaita1"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
-      <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="libhandy1"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="vala"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/baobab"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/baobab"/>
 @z
 
 @x

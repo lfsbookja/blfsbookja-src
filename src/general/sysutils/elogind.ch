@@ -17,23 +17,23 @@
 
 @x
       <application>elogind</application> is the
-      <application>systemd</application> project's "logind", extracted out to
+      <application>systemd</application> project's "logind", extracted to
       be a standalone daemon.  It integrates with <xref linkend="linux-pam"/>
-      to know the set of users that are logged in to a system and whether they
+      to track all the users logged in to a system, and whether they
       are logged in graphically, on the console, or remotely.
       <application>Elogind</application> exposes this information via the
       standard org.freedesktop.login1 <application>D-Bus</application>
-      interface, as well as through the file system using systemd's standard
+      interface, and also through the file system using systemd's standard
       <filename class="directory">/run/systemd</filename> layout.
 @y
       <application>elogind</application> is the
-      <application>systemd</application> project's "logind", extracted out to
+      <application>systemd</application> project's "logind", extracted to
       be a standalone daemon.  It integrates with <xref linkend="linux-pam"/>
-      to know the set of users that are logged in to a system and whether they
+      to track all the users logged in to a system, and whether they
       are logged in graphically, on the console, or remotely.
       <application>Elogind</application> exposes this information via the
       standard org.freedesktop.login1 <application>D-Bus</application>
-      interface, as well as through the file system using systemd's standard
+      interface, and also through the file system using systemd's standard
       <filename class="directory">/run/systemd</filename> layout.
 @z
 
@@ -86,22 +86,11 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref role="first" linkend="dbus"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref role="first" linkend="dbus"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref role="runtime" linkend="dbus"/> (runtime),
       <xref linkend="linux-pam"/> (required for Xorg),
-      <xref linkend="polkit"/> (runtime),
+      <xref role="runtime" linkend="polkit"/> (runtime),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>, and
       <xref linkend="libxslt"/> (all three to build the man pages)
@@ -109,10 +98,11 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref role="runtime" linkend="dbus"/> (runtime),
       <xref linkend="linux-pam"/> (required for Xorg),
-      <xref linkend="polkit"/> (runtime),
+      <xref role="runtime" linkend="polkit"/> (runtime),
       <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>,
+      <xref linkend="docbook-xsl"/>, and
       <xref linkend="libxslt"/> (all three to build the man pages)
     </para>
 @z
@@ -120,43 +110,33 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      For the tests:
       <xref linkend="lxml"/>,
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="zsh"/>,
-      <xref linkend="valgrind"/>,
+      <xref linkend="valgrind"/> (needed for tests),
       <ulink url="https://github.com/linux-audit/audit-userspace">
       audit-userspace</ulink>,
       <ulink url="https://github.com/scop/bash-completion">
       bash-completion</ulink>,
       <ulink url="https://mirrors.edge.kernel.org/pub/linux/utils/kernel/kexec/">
       kexec</ulink>, and
-      <ulink url="http://www.selinuxproject.org/page/Main_Page">
+      <ulink url="https://selinuxproject.org/page/Main_Page">
       SELinux</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      For the tests:
       <xref linkend="lxml"/>,
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="zsh"/>,
-      <xref linkend="valgrind"/>,
+      <xref linkend="valgrind"/> (needed for tests),
       <ulink url="https://github.com/linux-audit/audit-userspace">
       audit-userspace</ulink>,
       <ulink url="https://github.com/scop/bash-completion">
       bash-completion</ulink>,
       <ulink url="https://mirrors.edge.kernel.org/pub/linux/utils/kernel/kexec/">
-      kexec</ulink>,
-      <ulink url="http://www.selinuxproject.org/page/Main_Page">
+      kexec</ulink>, and
+      <ulink url="https://selinuxproject.org/page/Main_Page">
       SELinux</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -190,11 +170,19 @@
 @x
       To test the results, issue: <command>ninja test</command>. A few tests
       are skipped if not run with <systemitem class="username">root</systemitem>
-      privileges.
+      privileges.  Two tests named <filename>test-fs-util</filename> and
+      <filename>test-id128</filename> require the
+      <filename>/etc/machine-id</filename> symlink, so they will fail if
+      this symlink is not created following the instruction in
+      <xref linkend='dbus'/> yet.
 @y
       To test the results, issue: <command>ninja test</command>. A few tests
       are skipped if not run with <systemitem class="username">root</systemitem>
-      privileges.
+      privileges.  Two tests named <filename>test-fs-util</filename> and
+      <filename>test-id128</filename> require the
+      <filename>/etc/machine-id</filename> symlink, so they will fail if
+      this symlink is not created following the instruction in
+      <xref linkend='dbus'/> yet.
 @z
 
 @x
@@ -210,13 +198,27 @@
 @z
 
 @x
-      <parameter>-Dcgroup-controller=elogind</parameter>: This switch ensures
-      that <application>elogind</application> is selected as the cgroup
-      controller, even if booted with another running cgroup controller.
+      <parameter>-Ddocdir=/usr/share/doc/elogind-&elogind-version;</parameter>:
+      This is needed to install documentation in a versioned directory.
 @y
-      <parameter>-Dcgroup-controller=elogind</parameter>: This switch ensures
-      that <application>elogind</application> is selected as the cgroup
-      controller, even if booted with another running cgroup controller.
+      <parameter>-Ddocdir=/usr/share/doc/elogind-&elogind-version;</parameter>:
+      This is needed to install documentation in a versioned directory.
+@z
+
+@x
+      <parameter>-Dcgroup-controller=elogind</parameter>: This switch is
+      necessary to build this package when the kernel is not built with
+      <option>CONFIG_CGROUPS</option> enabled.  Note that
+      <application>elogind</application> strictly needs
+      a kernel with <option>CONFIG_CGROUPS</option> enabled at runtime,
+      but this switch will allow building the package first.
+@y
+      <parameter>-Dcgroup-controller=elogind</parameter>: This switch is
+      necessary to build this package when the kernel is not built with
+      <option>CONFIG_CGROUPS</option> enabled.  Note that
+      <application>elogind</application> strictly needs
+      a kernel with <option>CONFIG_CGROUPS</option> enabled at runtime,
+      but this switch will allow building the package first.
 @z
 
 @x
@@ -230,11 +232,61 @@
 @z
 
 @x
+      <parameter>-Ddev-kvm-mode=0660</parameter>: The LFS udev rule sets the
+      mode of <filename class='devicefile'>/dev/kvm</filename> to 0660.
+      This option ensures the elogind udev rules consistent with the LFS
+      configuration.
+@y
+      <parameter>-Ddev-kvm-mode=0660</parameter>: The LFS udev rule sets the
+      mode of <filename class='devicefile'>/dev/kvm</filename> to 0660.
+      This option ensures the elogind udev rules consistent with the LFS
+      configuration.
+@z
+
+@x
+      <parameter>-Dman=auto</parameter>: The default value of this switch is
+      <emphasis>false</emphasis>. Setting it to <emphasis>auto</emphasis>
+      allows building and installing the man pages if the recommended
+      dependencies are installed.
+@y
+      <parameter>-Dman=auto</parameter>: The default value of this switch is
+      <emphasis>false</emphasis>. Setting it to <emphasis>auto</emphasis>
+      allows building and installing the man pages if the recommended
+      dependencies are installed.
+@z
+
+@x
+      <option>-Dhtml=auto</option>: The default value of this switch is
+      <emphasis>false</emphasis>. Setting it to <emphasis>auto</emphasis>
+      allows building and installing the html documentation if the recommended
+      dependencies are installed.
+@y
+      <option>-Dhtml=auto</option>: The default value of this switch is
+      <emphasis>false</emphasis>. Setting it to <emphasis>auto</emphasis>
+      allows building and installing the html documentation if the recommended
+      dependencies are installed.
+@z
+
+@x
+      <option>-Ddefault-kill-user-processes=false</option>: Determines whether
+      the processes of a user should be killed when the user logs out. The
+      default is <emphasis>true</emphasis>, but this defeats the traditional
+      use of <command>screen</command> or <command>tmux</command>. This can
+      also be changed in the configuration file (see below).
+@y
+      <option>-Ddefault-kill-user-processes=false</option>: Determines whether
+      the processes of a user should be killed when the user logs out. The
+      default is <emphasis>true</emphasis>, but this defeats the traditional
+      use of <command>screen</command> or <command>tmux</command>. This can
+      also be changed in the configuration file (see below).
+@z
+
+@x
       <command>ln -s ...</command>: These commands install symlinks so that
-      software packages find systemd compatible library and headers.
+      software packages can find the systemd-compatible library and headers.
 @y
       <command>ln -s ...</command>: These commands install symlinks so that
-      software packages find systemd compatible library and headers.
+      software packages can find the systemd-compatible library and headers.
 @z
 
 @x
@@ -258,13 +310,13 @@
 @x
         The installed file <filename>/etc/elogind/logind.conf</filename>
         contains all the possible options with their defaults, commented
-        out. You may wish to disable killing user processes when the user logs
+        out. You may wish to disable automatically killing user processes when the user logs
         out, by running, as the <systemitem class="username">root</systemitem>
         user:
 @y
         The installed file <filename>/etc/elogind/logind.conf</filename>
         contains all the possible options with their defaults, commented
-        out. You may wish to disable killing user processes when the user logs
+        out. You may wish to disable automatically killing user processes when the user logs
         out, by running, as the <systemitem class="username">root</systemitem>
         user:
 @z
@@ -273,14 +325,14 @@
         Each user will need to register a user session using
         <application>Linux-PAM</application> at login. The
         <filename>/etc/pam.d/system-session</filename> file needs to
-        be modified and a new file needs to be created in order for
+        be modified and a new file must be created in order for
         <command>elogind</command> to work correctly. Run the following
         commands as the <systemitem class="username">root</systemitem> user:
 @y
         Each user will need to register a user session using
         <application>Linux-PAM</application> at login. The
         <filename>/etc/pam.d/system-session</filename> file needs to
-        be modified and a new file needs to be created in order for
+        be modified and a new file must be created in order for
         <command>elogind</command> to work correctly. Run the following
         commands as the <systemitem class="username">root</systemitem> user:
 @z
@@ -311,7 +363,7 @@
            libelogind.so
         </seg>
         <seg>
-          /lib/elogind,
+          /usr/lib/elogind,
           /etc/elogind,
           /usr/include/elogind, and
           /usr/share/doc/elogind-&elogind-version;
@@ -326,7 +378,7 @@
            libelogind.so
         </seg>
         <seg>
-          /lib/elogind,
+          /usr/lib/elogind,
           /etc/elogind,
           /usr/include/elogind,
           /usr/share/doc/elogind-&elogind-version;

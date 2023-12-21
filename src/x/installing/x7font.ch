@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -110,14 +106,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/Xorg7Fonts'/></para>
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url='&blfs-wiki;/Xorg7Fonts'/></para>
-@z
-
-@x
     <title>Downloading Xorg Fonts</title>
 @y
     <title>Xorg フォントのダウンロード</title>
@@ -132,10 +120,10 @@
 @z
 
 @x
-      To download the needed files using <application>wget</application>,
+      To download the needed files using <xref linkend='wget'/>,
       use the following commands:
 @y
-      必要なファイルをダウンロードするために <application>wget</application> を使って以下のコマンドを実行します。
+      必要なファイルをダウンロードするために <xref linkend='wget'/> を使って以下のコマンドを実行します。
 @z
 
 @x
@@ -166,17 +154,19 @@
 @x
       When all of the fonts have been installed, the system must be
       configured so that <application>Fontconfig</application> can find the
-      TrueType fonts since they are outside of the default search path of
-      <filename class="directory">/usr/share/fonts</filename>.  Make symlinks
-      to the <application>Xorg</application> TrueType font directories by
+      TrueType fonts. Since the fonts are outside of the default search path of
+      several packages <emphasis role="bold">if <envar>XORG_PREFIX</envar> is
+      not <filename class="directory">/usr</filename></emphasis>, make symlinks
+      to the <application>Xorg</application> TrueType font directories in
+      <filename class="directory">/usr/share/fonts</filename> by
       running the following commands as the
       <systemitem class="username">root</systemitem> user:
 @y
       フォントのインストールがすべて終わったら、<application>Fontconfig</application> が TrueType フォントを探し出せるようにシステムを設定する必要があります。
-      というのも、ここでインストールしたフォントは、デフォルトのディレクトリ <filename
-      class="directory">/usr/share/fonts</filename> ではないディレクトリにインストールされているからです。
-      <application>Xorg</application> の TrueType フォントディレクトリに対するシンボリックリンクを作成するために、<systemitem
-      class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
+      というのも、ここでインストールしたフォントの中には、<emphasis role="bold"><envar>XORG_PREFIX</envar> を <filename class="directory">/usr</filename> にしていなかった場合</emphasis>、デフォルトの検索パス以外のディレクトリにインストールされるからです。
+      <application>Xorg</application> の TrueType フォントディレクトリが <filename
+      class="directory">/usr/share/fonts</filename> に配置されるようにするために、<systemitem
+      class="username">root</systemitem> ユーザーになって以下のようにシンボリックリンクを生成します。
 @z
 
 @x

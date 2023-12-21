@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libtiff-buildsize     "16 MB (with tests)">
-  <!ENTITY libtiff-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY libtiff-buildsize     "46 MB (with tests)">
+  <!ENTITY libtiff-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libtiff-buildsize     "16 MB（テスト込み）">
-  <!ENTITY libtiff-time          "&LessThan1;0.1 SBU&LessThan2;（テスト込み）">
+  <!ENTITY libtiff-buildsize     "46 MB（テスト込み）">
+  <!ENTITY libtiff-time          "0.2 SBU（テスト込み）">
 @z
 
 @x
@@ -99,23 +99,21 @@
     <para role="optional">
       <xref linkend="freeglut"/> (required for <command>tiffgt</command>),
       <xref linkend="libjpeg"/>,
-      <xref linkend="libwebp"/>, and
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
+      <xref linkend="sphinx"/>,
+      <xref linkend="libwebp"/>,
+      <ulink url="https://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>, and
+      <ulink url="https://www.osgeo.org/projects/lerc-limited-error-raster-compression/">LERC</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="freeglut"/> (required for <command>tiffgt</command>),
       <xref linkend="libjpeg"/>,
+      <xref linkend="sphinx"/>,
       <xref linkend="libwebp"/>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>
+      <ulink url="https://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>, and
+      <ulink url="https://www.osgeo.org/projects/lerc-limited-error-raster-compression/">LERC</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -162,10 +160,11 @@
 
 @x
         <seg>
-          fax2ps, fax2tiff, pal2rgb, ppm2tiff,
-          raw2tiff, tiff2bw, tiff2pdf, tiff2ps,
-          tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffgt,
-          tiffinfo, tiffmedian, tiffset and tiffsplit
+          tiffcp,
+          tiffdump,
+          tiffinfo,
+          tiffset, and
+          tiffsplit
         </seg>
         <seg>
           libtiff.so and libtiffxx.so
@@ -175,10 +174,11 @@
         </seg>
 @y
         <seg>
-          fax2ps, fax2tiff, pal2rgb, ppm2tiff,
-          raw2tiff, tiff2bw, tiff2pdf, tiff2ps,
-          tiff2rgba, tiffcmp, tiffcp, tiffcrop, tiffdither, tiffdump, tiffgt,
-          tiffinfo, tiffmedian, tiffset, tiffsplit
+          tiffcp,
+          tiffdump,
+          tiffinfo,
+          tiffset,
+          tiffsplit
         </seg>
         <seg>
           libtiff.so, libtiffxx.so
@@ -194,116 +194,10 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x bmp2tiff
-            converts a Microsoft Windows Device Independent Bitmap image
-            file to a TIFF image.
-@y
-            Microsoft Windows の Device Independent Bitmap イメージを TIFF イメージに変換します。
-@z
-
-@x fax2ps
-            converts a TIFF facsimile to compressed PostScript file
-@y
-            TIFF のファクシミリを、圧縮された PostScript ファイルに変換します。
-@z
-
-@x fax2tiff
-            creates a TIFF Class F fax file from raw fax data
-@y
-            Raw Fax データからクラス F の Fax データを生成します。
-@z
-
-@x gif2tiff
-            creates a TIFF file from a GIF87 format image file.
-@y
-            GIF87 フォーマットのイメージファイルから TIFF ファイルを生成します。
-@z
-
-@x pal2rgb
-            converts a palette color TIFF image to a full color
-            image
-@y
-            パレットカラーの TIFF イメージをフルカラーイメージに変換します。
-@z
-
-@x ppm2tiff
-            creates a TIFF file from a PPM image file
-@y
-            PPM イメージファイルから TIFF ファイルを生成します。
-@z
-
-@x ras2tiff
-            creates a TIFF file from a Sun rasterfile.
-@y
-            Sun ラスターファイルから TIFF ファイルを生成します。
-@z
-
-@x raw2tiff
-            converts a raw byte sequence into TIFF
-@y
-            Raw バイトシーケンスを TIFF に変換します。
-@z
-
-@x rgb2ycbcr
-            converts non-YCbCr TIFF images to YCbCr TIFF images.
-@y
-            Non-YCbCr TIFF イメージを YCbCr TIFF イメージに変換します。
-@z
-
-@x thumbnail
-            creates a TIFF file with thumbnail images.
-@y
-            TIFF ファイルにてサムネイル (thumbnail) イメージを生成します。
-@z
-
-@x tiff2bw
-            converts a color TIFF image to grayscale
-@y
-            カラー TIFF イメージをグレースケールに変換します。
-@z
-
-@x tiff2pdf
-            converts a TIFF image to a PDF document
-@y
-            TIFF イメージを PDF ファイルに変換します。
-@z
-
-@x tiff2ps
-            converts a TIFF image to a PostScript file
-@y
-            TIFF イメージを PostScript ファイルに変換します。
-@z
-
-@x tiff2rgba
-            converts a wide variety of TIFF images into an RGBA
-            TIFF image
-@y
-            さまざまな形式の TIFF イメージを RGBA TIFF イメージに変換します。
-@z
-
-@x tiffcmp
-            compares two TIFF files
-@y
-            二つの TIFF ファイルを比較します。
-@z
-
 @x tiffcp
             copies (and possibly converts) a TIFF file
 @y
             TIFF ファイルをコピー (また可能なら変換) を行います。
-@z
-
-@x tiffcrop
-            selects, copies, crops, converts, extracts and/or processes
-            one or more TIFF files
-@y
-            複数の TIFF ファイルに対してのコピー、切り取り、変換、抽出などを行います。
-@z
-
-@x tiffdither
-            converts a grayscale image to bilevel using dithering
-@y
-            グレースケールイメージを、ディザリング (dithering) を使ってバイレベル (bilevel) に変換します。
 @z
 
 @x tiffdump
@@ -312,22 +206,10 @@
             TIFF ファイルのそのままの情報を出力します。
 @z
 
-@x tiffgt
-            displays an image stored in a TIFF file
-@y
-            TIFF ファイルに保存されたイメージを表示します。
-@z
-
 @x tiffinfo
             prints information about TIFF files
 @y
             TIFF ファイルの情報を出力します。
-@z
-
-@x tiffmedian
-            applies the median cut algorithm to data in a TIFF file
-@y
-            TIFF ファイル内のデータに対し、中央値分割 (median cut) アルゴリズムを適用します。
 @z
 
 @x tiffset

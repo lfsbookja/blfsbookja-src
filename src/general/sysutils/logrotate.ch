@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY logrotate-buildsize     "39 MB (with tests)">
-  <!ENTITY logrotate-time          "0.1 SBU (with tests)">
+  <!ENTITY logrotate-buildsize     "2.9 MB (add 38 MB for tests)">
+  <!ENTITY logrotate-time          "less than 0.1 SBU (add 0.2 SBU for tests)">
 @y
-  <!ENTITY logrotate-buildsize     "39 MB (テスト込み)">
-  <!ENTITY logrotate-time          "0.1 SBU (テスト込み)">
+  <!ENTITY logrotate-buildsize     "2.9 MB (テスト実行時はさらに 38 MB)">
+  <!ENTITY logrotate-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実行時はさらに 0.2 SBU)">
 @z
 
 @x
@@ -113,12 +113,6 @@
     <para role="optional">
       An <xref role="runtime" linkend="server-mail"/> (実行時)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -327,12 +321,12 @@ EOF
 @x
       You can use in the same line the list of files: file1 file2 file3.
       See the logrotate man page or <ulink
-      url='http://www.techrepublic.com/article/manage-linux-log-files-with-logrotate/'/>
+      url='https://www.techrepublic.com/article/manage-linux-log-files-with-logrotate/'/>
       for more examples.
 @y
       You can use in the same line the list of files: file1 file2 file3.
       See the logrotate man page or <ulink
-      url='http://www.techrepublic.com/article/manage-linux-log-files-with-logrotate/'/>
+      url='https://www.techrepublic.com/article/manage-linux-log-files-with-logrotate/'/>
       for more examples.
 @z
 

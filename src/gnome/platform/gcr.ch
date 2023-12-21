@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -101,6 +97,7 @@
       <xref linkend="gnupg2"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="libxslt"/>, and
       <xref linkend="vala"/>
     </para>
@@ -110,6 +107,7 @@
       <xref linkend="gnupg2"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="libsecret"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="vala"/>
     </para>
@@ -118,21 +116,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="gi-docgen"/> and
       <xref linkend="valgrind"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="gi-docgen"/>,
       <xref linkend="valgrind"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gcr"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gcr"/>
 @z
 
 @x

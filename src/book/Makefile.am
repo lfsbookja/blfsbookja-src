@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 BOOKdir = @abs_bookdir@/book
 CHANGE_FILES = \
 	bookinfo.ch     \

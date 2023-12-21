@@ -10,13 +10,13 @@
 @z
 
 @x
-  <!ENTITY openssh-buildsize     "48 MB (add 34 MB for tests)">
-  <!ENTITY openssh-time          "0.3 SBU (Using parallelism=4;
-                                  running the tests takes 20+ minutes,
+  <!ENTITY openssh-buildsize     "45 MB (add 22 MB for tests)">
+  <!ENTITY openssh-time          "0.2 SBU (Using parallelism=4;
+                                  running the tests takes about 20 minutes,
                                   irrespective of processor speed)">
 @y
-  <!ENTITY openssh-buildsize     "48 MB (テスト実施時はさらに 34 MB)">
-  <!ENTITY openssh-time          "0.3 SBU (parallelism=4 利用時; テスト実施はプロセッサーの処理スピードとは無関係に最低でも 20 分以上)">
+  <!ENTITY openssh-buildsize     "45 MB (テスト実施時はさらに 22 MB)">
+  <!ENTITY openssh-time          "0.2 SBU (parallelism=4 利用時; テスト実施はプロセッサーの処理スピードとは無関係に最低でも 20 分以上)">
 @z
 
 @x
@@ -90,11 +90,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gdb"/> (for tests),
-      <xref linkend="linux-pam"/>,
-      <xref linkend="x-window-system"/>,
+      <xref linkend="linux-pam"/> (PAM configuration files from
+      <xref linkend="shadow"/> are used to create openssh ones),
+      <xref linkend="xorg7-app"/> (or
+      <xref linkend='xorg-env' role='nodep'/>, see Command Explanations),
       <xref linkend="mitkrb"/>,
-      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
-      <ulink url="http://www.libressl.org/">LibreSSL Portable</ulink>,
+      <xref linkend="which"/> (for tests),
+      <ulink url="https://www.thrysoee.dk/editline/">libedit</ulink>,
+      <ulink url="https://www.libressl.org/">LibreSSL Portable</ulink>,
       <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
@@ -102,12 +105,15 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gdb"/> (for tests),
-      <xref linkend="linux-pam"/>,
-      <xref linkend="x-window-system"/>,
+      <xref linkend="linux-pam"/> (PAM configuration files from
+      <xref linkend="shadow"/> are used to create openssh ones),
+      <xref linkend="xorg7-app"/> (or
+      <xref linkend='xorg-env' role='nodep'/>, see Command Explanations),
       <xref linkend="mitkrb"/>,
-      <ulink url="http://www.thrysoee.dk/editline/">libedit</ulink>,
-      <ulink url="http://www.libressl.org/">LibreSSL Portable</ulink>,
-      <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>, and
+      <xref linkend="which"/> (for tests),
+      <ulink url="https://www.thrysoee.dk/editline/">libedit</ulink>,
+      <ulink url="https://www.libressl.org/">LibreSSL Portable</ulink>,
+      <ulink url="https://github.com/OpenSC/OpenSC/wiki">OpenSC</ulink>,
       <ulink url="http://www.citi.umich.edu/projects/smartcard/sectok.html">libsectok</ulink>
     </para>
 @z
@@ -129,9 +135,9 @@
 @z
 
 @x
-        User Notes: <ulink url="&blfs-wiki;/OpenSSH"/>
+        Editor Notes: <ulink url="&blfs-wiki;/OpenSSH"/>
 @y
-        &UserNotes;: <ulink url="&blfs-wiki;/OpenSSH"/>
+        &EditorNotes;: <ulink url="&blfs-wiki;/OpenSSH"/>
 @z
 
 @x
@@ -163,7 +169,7 @@
 @z
 
 @x
-      The testsuite requires an installed copy of <command>scp</command> to
+      The test suite requires an installed copy of <command>scp</command> to
       complete the multiplexing tests. To run the test suite, first copy the
       <command>scp</command> program to
       <filename class="directory">/usr/bin</filename>, making sure that you
@@ -203,14 +209,6 @@
 @z
 
 @x
-      <parameter>--with-md5-passwords</parameter>: This enables the use of MD5
-      passwords.
-@y
-      <parameter>--with-md5-passwords</parameter>:
-      MD5 パスワードの利用を有効にします。
-@z
-
-@x
       <option>--with-pam</option>: This parameter enables
       <application>Linux-PAM</application> support in the build.
 @y
@@ -219,18 +217,19 @@
 @z
 
 @x
-      <option>--with-xauth=/usr/bin/xauth</option>: Set the default
+      <option>--with-xauth=$XORG_PREFIX/bin/xauth</option>: Set the default
       location for the <command>xauth</command> binary for X authentication.
-      Change the location if <command>xauth</command> will be installed to a
-      different path. This can also be controlled from
+      The environment variable <envar>XORG_PREFIX</envar> should be set
+      following <xref linkend='xorg-env'/>. This can also be controlled from
       <filename>sshd_config</filename> with the XAuthLocation keyword. You can
       omit this switch if <application>Xorg</application> is already installed.
 @y
-      <option>--with-xauth=/usr/bin/xauth</option>:
-      X における認証を行う <command>xauth</command> 実行モジュールのデフォルトインストール先を指定します。
-      <command>xauth</command> のインストール先に合わせて適宜修正してください。
-      このディレクトリは <filename>sshd_config</filename> ファイルの XAuthLocation キーワードにおいても設定することができます。
-      <application>Xorg</application> を既にインストールしている場合は、本スイッチを省略して構いません。
+      <option>--with-xauth=$XORG_PREFIX/bin/xauth</option>: Set the default
+      location for the <command>xauth</command> binary for X authentication.
+      The environment variable <envar>XORG_PREFIX</envar> should be set
+      following <xref linkend='xorg-env'/>. This can also be controlled from
+      <filename>sshd_config</filename> with the XAuthLocation keyword. You can
+      omit this switch if <application>Xorg</application> is already installed.
 @z
 
 @x

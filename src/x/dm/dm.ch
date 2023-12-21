@@ -28,39 +28,39 @@
 @x
     There are many Display Managers available. Some of the more well
     known include:
-    <application>GDM</application>,
-    <application>KDM</application> (deprecated),
+    <application>gdm</application>,
+    <application>kdm</application> (deprecated),
     <application>LightDM</application>,
-    <application>LXDM</application>,
+    <application>lxdm</application>,
     <application>Slim</application>, and
-    <application>SDDM</application>.
+    <application>sddm</application>.
 @y
     There are many Display Managers available. Some of the more well
     known include:
-    <application>GDM</application>,
-    <application>KDM</application> (deprecated),
+    <application>gdm</application>,
+    <application>kdm</application> (deprecated),
     <application>LightDM</application>,
-    <application>LXDM</application>,
+    <application>lxdm</application>,
     <application>Slim</application>, and
-    <application>SDDM</application>.
+    <application>sddm</application>.
 @z
 
 @x
     Among the Desktop Environments available for Linux you find:
     <application>Enlightenment</application>,
     <application>GNOME</application>,
-    <application>KDE</application>,
-    <application>LXDE</application>,
+    <application>Plasma</application>,
+    <application>lxde</application>,
     <application>LXQt</application>, and
-    <application>XFce</application>.
+    <application>xfce</application>.
 @y
     Among the Desktop Environments available for Linux you find:
     <application>Enlightenment</application>,
     <application>GNOME</application>,
-    <application>KDE</application>,
-    <application>LXDE</application>,
+    <application>Plasma</application>,
+    <application>lxde</application>,
     <application>LXQt</application>, and
-    <application>XFce</application>.
+    <application>xfce</application>.
 @z
 
 @x

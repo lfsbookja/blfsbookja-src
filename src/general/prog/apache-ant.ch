@@ -98,12 +98,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Apache Ant</title>
 @y
     <title>&InstallationOf1;Apache Ant&InstallationOf2;</title>
@@ -224,7 +218,7 @@
         <seg>
           ant, antRun, antRun.pl, complete-ant-cmd.pl, runant.pl, and runant.py         </seg>
         <seg>
-          Numerous <filename>ant*.jar</filename>  and dependant libraries in
+          Numerous <filename>ant*.jar</filename>  and dependent libraries in
           <envar>$ANT_HOME</envar><filename>/lib</filename>
         </seg>
         <seg>/opt/ant-&apache-ant-version;</seg>
@@ -232,7 +226,7 @@
         <seg>
           ant, antRun, antRun.pl, complete-ant-cmd.pl, runant.pl, runant.py         </seg>
         <seg>
-          Numerous <filename>ant*.jar</filename>  and dependant libraries in
+          Numerous <filename>ant*.jar</filename>  and dependent libraries in
           <envar>$ANT_HOME</envar><filename>/lib</filename>
         </seg>
         <seg>/opt/ant-&apache-ant-version;</seg>

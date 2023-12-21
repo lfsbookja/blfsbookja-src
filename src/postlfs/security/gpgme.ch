@@ -10,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY gpgme-time          "0.8 SBU (with parallelism=4; with all bindings, add 0.7 SBU for tests)">
+  <!ENTITY gpgme-buildsize     "260 MB (with tests)">
+  <!ENTITY gpgme-time          "1.0 SBU (with all bindings and tests; with parallelism=4)">
 @y
-  <!ENTITY gpgme-time          "0.8 SBU （parallelism=4; 全バインディングビルド時; テスト実施時はさらに 0.7 SBU）">
+  <!ENTITY gpgme-buildsize     "260 MB (with tests)">
+  <!ENTITY gpgme-time          "1.0 SBU (with all bindings and tests; with parallelism=4)">
 @z
 
 @x
@@ -101,12 +103,9 @@
       <xref linkend="doxygen"/> and
       <xref linkend="graphviz"/> (for API documentation),
       <xref linkend="gnupg2"/> (required if Qt or SWIG are installed;
-        used during the testsuite),
-      <xref linkend="clisp"/>,<!--
-gpgme can still use python 2.7, but can use python3 as well,
-so do not advertise python2
-      <xref linkend="python2"/>,-->
-      <xref linkend="qt5"/>, and/or
+        used during the test suite),
+      <xref linkend="clisp"/>,
+      &qt5-deps;, and
       <xref linkend="swig"/> (for language bindings)
     </para>
 @y
@@ -115,20 +114,11 @@ so do not advertise python2
       <xref linkend="doxygen"/> and
       <xref linkend="graphviz"/> (for API documentation),
       <xref linkend="gnupg2"/> (required if Qt or SWIG are installed;
-        used during the testsuite),
-      <xref linkend="clisp"/>,<!--
-gpgme can still use python 2.7, but can use python3 as well,
-so do not advertise python2
-      <xref linkend="python2"/>,-->
-      <xref linkend="qt5"/>, and/or
+        used during the test suite),
+      <xref linkend="clisp"/>,
+      &qt5-deps;, and
       <xref linkend="swig"/> (for language bindings)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -146,12 +136,16 @@ so do not advertise python2
 
 @x
       To test the results, you should have <xref linkend="gnupg2"/> installed
-      and remove the <command>--disable-gpg-test</command> above. Issue:
-      <command>make -k check</command>.
+      and remove the <option>--disable-gpg-test</option> above. If
+      <xref linkend='swig'/> is installed, it's necessary to adapt the
+      test suite to use the Python 3 binding just built as a wheel as well.
+      Issue:
 @y
-      ビルド結果をテストする場合は、まず <xref
-      linkend="gnupg2"/> をインストールし、上の手順において <command>--disable-gpg-test</command> を取り除く必要があります。
-      その上で <command>make check</command> を実行します。
+      To test the results, you should have <xref linkend="gnupg2"/> installed
+      and remove the <option>--disable-gpg-test</option> above. If
+      <xref linkend='swig'/> is installed, it's necessary to adapt the
+      test suite to use the Python 3 binding just built as a wheel as well.
+      Issue:
 @z
 
 @x
@@ -196,28 +190,28 @@ so do not advertise python2
 
 @x
         <seg>
-          gpgme-config, gpgme-json, and gpgme-tool
+          gpgme-json, and gpgme-tool
         </seg>
         <seg>
-          libgpgme, libgpgmepp.so, and libqgpgme.so
+          libgpgme.so, libgpgmepp.so, and libqgpgme.so
         </seg>
         <seg>
           /usr/include/{gpgme++,qgpgme,QGpgME},
           /usr/lib/cmake/{Gpgmepp,QGpgme}.
-          /usr/lib/python{2.7,3.9}/site-packages/gpg, and
+          /usr/lib/python&python3-majorver;/site-packages/gpg{,-&gpgme-version;.dist-info}, and
           /usr/share/common-lisp/source/gpgme
         </seg>
 @y
         <seg>
-          gpgme-config, gpgme-json, gpgme-tool
+          gpgme-json, gpgme-tool
         </seg>
         <seg>
-          libgpgme, libgpgmepp.so, libqgpgme.so
+          libgpgme.so, libgpgmepp.so, libqgpgme.so
         </seg>
         <seg>
           /usr/include/{gpgme++,qgpgme,QGpgME},
           /usr/lib/cmake/{Gpgmepp,QGpgme}.
-          /usr/lib/python{2.7,3.9}/site-packages/gpg,
+          /usr/lib/python&python3-majorver;/site-packages/gpg{,-&gpgme-version;.dist-info},
           /usr/share/common-lisp/source/gpgme
         </seg>
 @z

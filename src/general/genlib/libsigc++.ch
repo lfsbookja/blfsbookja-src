@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libsigc-buildsize     "25 MB (with tests)">
+  <!ENTITY libsigc-buildsize     "27 MB (with tests)">
   <!ENTITY libsigc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libsigc-buildsize     "25 MB (テスト込み)">
+  <!ENTITY libsigc-buildsize     "27 MB (テスト込み)">
   <!ENTITY libsigc-time          "0.2 SBU (テスト込み)">
 @z
 
@@ -82,6 +82,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
+      <xref linkend="docbook5"/>,
       <xref linkend="doxygen"/>, and
       <ulink url="&gnome-download-http;/mm-common">mm-common</ulink>
     </para>
@@ -89,15 +90,10 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
+      <xref linkend="docbook5"/>,
       <xref linkend="doxygen"/>,
       <ulink url="&gnome-download-http;/mm-common">mm-common</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -114,9 +110,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x

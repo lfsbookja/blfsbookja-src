@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -91,12 +87,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of PCRE</title>
 @y
     <title>&InstallationOf1;PCRE&InstallationOf2;</title>
@@ -131,14 +121,28 @@
       <parameter>--enable-unicode-properties</parameter>: This switch enables
       Unicode properties support and includes the code for handling UTF-8/16/32
       character strings in the library. You need this switch if you are going to
-      build <xref linkend="glib2"/> with the
-      <parameter>--with-pcre=system</parameter> switch.
+      build <xref linkend="glib2"/>.
 @y
       <parameter>--enable-unicode-properties</parameter>: This switch enables
       Unicode properties support and includes the code for handling UTF-8/16/32
       character strings in the library. You need this switch if you are going to
-      build <xref linkend="glib2"/> with the
-      <parameter>--with-pcre=system</parameter> switch.
+      build <xref linkend="glib2"/>.
+@z
+
+@x
+      <parameter>--enable-pcre16</parameter>: This switch enables 16 bit
+      character support.
+@y
+      <parameter>--enable-pcre16</parameter>: This switch enables 16 bit
+      character support.
+@z
+
+@x
+      <parameter>--enable-pcre32</parameter>: This switch enables 32 bit
+      character support.
+@y
+      <parameter>--enable-pcre32</parameter>: This switch enables 32 bit
+      character support.
 @z
 
 @x

@@ -99,12 +99,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/clisp"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/clisp"/>
-@z
-
-@x
     <title>Installation of Clisp</title>
 @y
     <title>&InstallationOf1;Clisp&InstallationOf2;</title>

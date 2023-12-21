@@ -107,21 +107,15 @@
     <para role="optional">
       <xref linkend="cyrus-sasl"/> and
       <xref linkend="pulseaudio"/>
-      <!-- <ulink url="http://view.sourceforge.net/">libview</ulink> -->
+      <!-- <ulink url="https://view.sourceforge.net/">libview</ulink> -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="pulseaudio"/>
-      <!-- <ulink url="http://view.sourceforge.net/">libview</ulink> -->
+      <!-- <ulink url="https://view.sourceforge.net/">libview</ulink> -->
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -138,7 +132,7 @@
 @z
 
 @x
-      This package does not come with a testsuite.
+      This package does not come with a test suite.
 @y
       &notTestSuite;
 @z

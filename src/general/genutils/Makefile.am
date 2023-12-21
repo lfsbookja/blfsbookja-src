@@ -1,52 +1,33 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-BOOKdir = @abs_bookdir@/general/genutils
+
 CHANGE_FILES = \
 	asciidoctor.ch        \
 	bogofilter.ch         \
 	compface.ch           \
 	desktop-file-utils.ch \
+	dos2unix.ch           \
 	genutils.ch           \
 	graphviz.ch           \
 	gtk-doc.ch            \
-	hd2u.ch               \
 	highlight.ch          \
 	ibus.ch               \
 	imagemagick.ch        \
         iso-codes.ch          \
         lsof.ch               \
+	lsof-test-kernel.ch   \
+	mandoc.ch             \
 	pinentry.ch           \
-	rep-gtk.ch            \
 	screen.ch             \
         shared-mime-info.ch   \
 	sharutils.ch          \
 	tidy-html5.ch         \
 	time.ch               \
-	telepathy-logger.ch   \
 	telepathy-mission-control.ch \
         tree.ch               \
 	unixodbc.ch           \
+	xdg-dbus-proxy.ch     \
 	xdg-user-dirs.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
-srcdir = @srcdir@
-srcs = $(CHANGE_FILES:.ch=.xml)
-
-SUFFIXES = .ch .xml
-.ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
-
-all: ctie $(srcs)
-
-ctie:
-	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
-
--include Makefile.sub
-Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
-	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-
-@MAINT@.PHONY: chbuild
-@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
-@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
-@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
+include $(top_srcdir)/build-aux/main.mk

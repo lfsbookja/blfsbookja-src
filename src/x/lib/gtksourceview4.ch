@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY gtksourceview4-buildsize     "73 MB (with tests)">
+  <!ENTITY gtksourceview4-buildsize     "71 MB (with tests)">
   <!ENTITY gtksourceview4-time          "0.1 SBU (with tests; both using parallelism=4)">
 @y
-  <!ENTITY gtksourceview4-buildsize     "73 MB (テスト込み)">
+  <!ENTITY gtksourceview4-buildsize     "71 MB (テスト込み)">
   <!ENTITY gtksourceview4-time          "0.1 SBU (テスト込み、parallelism=4 利用)">
 @z
 
@@ -117,7 +117,7 @@
       <xref linkend="fop"/> (or
       <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink>),
       and
-      <ulink url="http://glade.gnome.org/">Glade</ulink>
+      <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -126,16 +126,10 @@
       <xref linkend="valgrind"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="fop"/> （または
-      <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink>）,
-      <ulink url="http://glade.gnome.org/">Glade</ulink>
+      <xref linkend="fop"/> (or
+      <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink>),
+      <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

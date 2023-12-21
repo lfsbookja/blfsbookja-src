@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -82,6 +78,7 @@
     <para role="required">
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libseccomp"/>,
@@ -93,6 +90,7 @@
     <para role="required">
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libseccomp"/>,
@@ -125,12 +123,6 @@
     <para role="optional">
       <xref linkend="gtk-doc"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -215,13 +207,16 @@
           None
         </seg>
         <seg>
-          libgnome-desktop-3.so
+          libgnome-bg-4.so,
+          libgnome-desktop-3.so,
+          libgnome-desktop-4.so, and
+          libgnome-rr-4.so
         </seg>
         <seg>
           /usr/include/gnome-desktop-3.0,
+          /usr/include/gnome-desktop-4.0,
           /usr/libexec/gnome-desktop-debug,
-          /usr/share/gnome,
-          /usr/share/gtk-doc/html/gnome-desktop3, and
+          /usr/share/gtk-doc/html/gnome-desktop3 (optional), and
           /usr/share/help/*/{fdl,gpl,lgpl}
         </seg>
 @y
@@ -229,13 +224,16 @@
           &None;
         </seg>
         <seg>
-          libgnome-desktop-3.so
+          libgnome-bg-4.so,
+          libgnome-desktop-3.so,
+          libgnome-desktop-4.so,
+          libgnome-rr-4.so
         </seg>
         <seg>
           /usr/include/gnome-desktop-3.0,
+          /usr/include/gnome-desktop-4.0,
           /usr/libexec/gnome-desktop-debug,
-          /usr/share/gnome,
-          /usr/share/gtk-doc/html/gnome-desktop3,
+          /usr/share/gtk-doc/html/gnome-desktop3 (任意インストール),
           /usr/share/help/*/{fdl,gpl,lgpl}
         </seg>
 @z

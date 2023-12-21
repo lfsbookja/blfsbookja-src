@@ -112,12 +112,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Kernel Configuration</title>
 @y
     <title>&KernelConfiguration;</title>
@@ -323,14 +317,14 @@
         feature is not configured in these instructions.  For additional
         configuration information, see the man pages for auto.master(5). There
         are also web resources such as this <ulink
-        url='http://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
+        url='https://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
         HOWTO</ulink> available.
 @y
         This package could also be used to mount SMB shares, however that
         feature is not configured in these instructions.  For additional
         configuration information, see the man pages for auto.master(5). There
         are also web resources such as this <ulink
-        url='http://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
+        url='https://wiki.gentoo.org/wiki/AutoFS'>AUTOFS
         HOWTO</ulink> available.
 @z
 
@@ -415,25 +409,65 @@
 @x
         <seg>automount</seg>
         <seg>
-          lookup_dir.so, lookup_file.so, lookup_files.so, lookup_hosts.so,
-          lookup_ldap.so (optional), lookup_multi.so, lookup_nis.so,
-          lookup_program.so, lookup_userhome.so, lookup_yp.so, mount_afs.so,
-          mount_autofs.so, mount_bind.so, mount_changer.so, mount_ext2.so,
-          mount_ext3.so, mount_ext4.so, mount_generic.so, mount_nfs.so,
-          mount_nfs4.so, parse_amd.so, and parse_sun.so
-           </seg>
-        <seg>/usr/lib/autofs and /etc/autofs</seg>
+          libautofs.so.
+          lookup_dir.so, 
+          lookup_file.so, 
+          lookup_files.so (symlink to lookup_file.so), 
+          lookup_hosts.so,
+          lookup_ldap.so (optional), 
+          lookup_multi.so, 
+          lookup_nis.so (symlink to lookup_yp.so),
+          lookup_program.so, 
+          lookup_userhome.so, 
+          lookup_yp.so, 
+          mount_afs.so,
+          mount_autofs.so, 
+          mount_bind.so, 
+          mount_changer.so, 
+          mount_ext2.so,
+          mount_ext3.so (symlink to mount_ext2.so), 
+          mount_ext4.so (symlink to mount_ext2.so), 
+          mount_generic.so, 
+          mount_nfs.so,
+          mount_nfs4.so (symlink to mount_nfs.so), 
+          parse_amd.so, and 
+          parse_sun.so
+        </seg>
+        <seg>
+          /usr/lib/autofs and 
+          /etc/autofs
+        </seg>
 @y
         <seg>automount</seg>
         <seg>
-          lookup_dir.so, lookup_file.so, lookup_files.so, lookup_hosts.so,
-          lookup_ldap.so (optional), lookup_multi.so, lookup_nis.so,
-          lookup_program.so, lookup_userhome.so, lookup_yp.so, mount_afs.so,
-          mount_autofs.so, mount_bind.so, mount_changer.so, mount_ext2.so,
-          mount_ext3.so, mount_ext4.so, mount_generic.so, mount_nfs.so,
-          mount_nfs4.so, parse_amd.so, parse_sun.so
-           </seg>
-        <seg>/usr/lib/autofs, /etc/autofs</seg>
+          libautofs.so.
+          lookup_dir.so, 
+          lookup_file.so, 
+          lookup_files.so (symlink to lookup_file.so), 
+          lookup_hosts.so,
+          lookup_ldap.so (optional), 
+          lookup_multi.so, 
+          lookup_nis.so (symlink to lookup_yp.so),
+          lookup_program.so, 
+          lookup_userhome.so, 
+          lookup_yp.so, 
+          mount_afs.so,
+          mount_autofs.so, 
+          mount_bind.so, 
+          mount_changer.so, 
+          mount_ext2.so,
+          mount_ext3.so (symlink to mount_ext2.so), 
+          mount_ext4.so (symlink to mount_ext2.so), 
+          mount_generic.so, 
+          mount_nfs.so,
+          mount_nfs4.so (symlink to mount_nfs.so), 
+          parse_amd.so,
+          parse_sun.so
+        </seg>
+        <seg>
+          /usr/lib/autofs,
+          /etc/autofs
+        </seg>
 @z
 
 @x

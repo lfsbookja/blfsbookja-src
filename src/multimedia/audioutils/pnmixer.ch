@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -97,9 +93,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -116,7 +112,7 @@
 @z
 
 @x
-      This package does not have a testsuite.
+      This package does not have a test suite.
 @y
       &notTestSuite;
 @z

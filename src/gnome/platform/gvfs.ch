@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -81,9 +77,8 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="libusb"/>,
-      <xref linkend="libsecret"/> and
-      <xref linkend="libsoup"/>
+      <xref linkend="libusb"/>, and
+      <xref linkend="libsecret"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -91,8 +86,7 @@
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
       <xref linkend="libusb"/>,
-      <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>
+      <xref linkend="libsecret"/>
     </para>
 @z
 
@@ -102,10 +96,11 @@
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libcdio"/>,
-      <xref linkend="libgdata"/>,
       <xref linkend="libgudev"/>,
+      <xref linkend="libsoup3"/>,
       <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase> and
+      <phrase revision="systemd"><xref role='runtime' linkend="systemd"/>
+      (runtime),</phrase> and
       <xref linkend="udisks2"/>
     </para>
 @y
@@ -114,10 +109,11 @@
       <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libcdio"/>,
-      <xref linkend="libgdata"/>,
       <xref linkend="libgudev"/>,
+      <xref linkend="libsoup3"/>,
       <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>,
+      <phrase revision="systemd"><xref role='runtime' linkend="systemd"/>
+      (実行時),</phrase>,
       <xref linkend="udisks2"/>
     </para>
 @z
@@ -128,22 +124,23 @@
       <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
-      <xref linkend="dbus-glib"/>,
       <xref linkend="fuse3"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libgdata"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="openssh"/>,
       <xref linkend="samba"/>,
-      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
+      <ulink url="&gnome-download-http;/gnome-desktop-testing/">gnome-desktop-testing</ulink> (for tests),
+      <ulink url="https://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>,
+      <ulink url="https://www.libimobiledevice.org/">libimobiledevice</ulink>,
+      <ulink url="https://libmtp.sourceforge.net/">libmtp</ulink>,
       <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>, and
-      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
+      <ulink url="https://twisted.org/">Twisted</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -151,29 +148,24 @@
       <xref linkend="apache"/>,
       <xref linkend="avahi"/>,
       <xref linkend="bluez"/>,
-      <xref linkend="dbus-glib"/>,
       <xref linkend="fuse3"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="libarchive"/>,
       <xref linkend="libgcrypt"/>,
+      <xref linkend="libgdata"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="openssh"/>,
       <xref linkend="samba"/>,
-      <ulink url="http://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
+      <ulink url="&gnome-download-http;/gnome-desktop-testing/">gnome-desktop-testing</ulink> (for tests),
+      <ulink url="https://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
       <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-      <ulink url="http://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="http://libmtp.sourceforge.net/">libmtp</ulink>,
+      <ulink url="https://www.libimobiledevice.org/">libimobiledevice</ulink>,
+      <ulink url="https://libmtp.sourceforge.net/">libmtp</ulink>,
       <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>,
-      <ulink url="http://twistedmatrix.com/trac/">Twisted</ulink>
+      <ulink url="https://twisted.org/">Twisted</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -190,9 +182,11 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      The test suite requires <application>gnome-desktop-testing</application>,
+      which is beyond the scope of BLFS.
 @y
-      &notTestSuite;
+      The test suite requires <application>gnome-desktop-testing</application>,
+      which is beyond the scope of BLFS.
 @z
 
 @x
@@ -209,24 +203,28 @@
 
 @x
       <parameter>-D&lt;option&gt;=false</parameter>: These switches are
-      required if the corresponding optional dependency is not installed.
+      required if the corresponding dependency is not installed.
       Remove those where you have installed the corresponding application and
-      wish to use it with <application>Gvfs</application>. The dnssd option 
-      requires avahi and both goa/google require GNOME Online Accounts.
+      wish to use it with <application>Gvfs</application>. The dnssd option
+      requires avahi and both goa and google require GNOME Online Accounts.
+      The google option also requires libgdata.
 @y
       <parameter>-D&lt;option&gt;=false</parameter>: These switches are
-      required if the corresponding optional dependency is not installed.
+      required if the corresponding dependency is not installed.
       Remove those where you have installed the corresponding application and
-      wish to use it with <application>Gvfs</application>. The dnssd option 
-      requires avahi and both goa/google require GNOME Online Accounts.
+      wish to use it with <application>Gvfs</application>. The dnssd option
+      requires avahi and both goa and google require GNOME Online Accounts.
+      The google option also requires libgdata.
 @z
 
-@x
-      <parameter>-Dtmpfilesdir=no -Dsystemduserunitdir=no</parameter>: These
+@x revision="sysv"
+      <parameter>-Dtmpfilesdir=no</parameter>
+      <parameter>-Dsystemduserunitdir=no</parameter>: These
       switches provide systemd directory locations. Setting them to
       <quote>no</quote> disables the dependency on systemd and logind.
 @y
-      <parameter>-Dtmpfilesdir=no -Dsystemduserunitdir=no</parameter>: These
+      <parameter>-Dtmpfilesdir=no</parameter>
+      <parameter>-Dsystemduserunitdir=no</parameter>: These
       switches provide systemd directory locations. Setting them to
       <quote>no</quote> disables the dependency on systemd and logind.
 @z
@@ -259,10 +257,6 @@
 
 @x
         <seg>
-<!--      All of the applications that were previously installed were
-          removed in 1.37.2. There are 20+ library executables, but they
-          won't get documented here.
-          Proceeding with removing the obsolete command explanations. -->
           None
         </seg>
         <seg>
@@ -276,11 +270,7 @@
         </seg>
 @y
         <seg>
-<!--      All of the applications that were previously installed were
-          removed in 1.37.2. There are 20+ library executables, but they
-          won't get documented here.
-          Proceeding with removing the obsolete command explanations. -->
-          None
+          &None;
         </seg>
         <seg>
           libgvfscommon.so,

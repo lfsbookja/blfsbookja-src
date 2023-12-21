@@ -91,12 +91,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Kernel Configuration</title>
 @y
     <title>&KernelConfiguration;</title>

@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY mdadm-buildsize     "4.9 MB (10 MB with tests)">
-  <!ENTITY mdadm-time          "0.1 SBU (tests take about an hour, only partially processor dependent)">
-@y
-  <!ENTITY mdadm-buildsize     "4.9 MB (テスト込みで 10 MB)">
-  <!ENTITY mdadm-time          "0.1 SBU (tests take about an hour, only partially processor dependent)">
-@z
-
-@x
     <title>Introduction to mdadm</title>
 @y
     <title>&IntroductionTo1;mdadm&IntroductionTo2;</title>
@@ -70,12 +62,6 @@
           Estimated build time: &mdadm-time;
 @y
           &Estimatedbuildtime;: &mdadm-time;
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

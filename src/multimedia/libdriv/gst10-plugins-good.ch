@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gst10-plugins-good-buildsize     "102 MB (with tests)">
-  <!ENTITY gst10-plugins-good-time          "0.6 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-good-buildsize     "109 MB (with tests)">
+  <!ENTITY gst10-plugins-good-time          "0.8 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-good-buildsize     "102 MB（テスト込み）">
-  <!ENTITY gst10-plugins-good-time          "0.6 SBU（parallelism=4 利用時、テスト込み）">
+  <!ENTITY gst10-plugins-good-buildsize     "109 MB（テスト込み）">
+  <!ENTITY gst10-plugins-good-time          "0.8 SBU（parallelism=4 利用時、テスト込み）">
 @z
 
 @x
@@ -105,9 +105,11 @@
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="lame"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="libsoup3"/>,
       <xref linkend="libvpx"/>,
-      <xref linkend="mpg123"/>, and
-      <xref linkend="nasm"/>
+      <xref linkend="mpg123"/>,
+      <xref linkend="nasm"/>, and
+      <xref linkend="pulseaudio"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -117,9 +119,11 @@
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="lame"/>,
       <xref linkend="libsoup"/>,
+      <xref linkend="libsoup3"/>,
       <xref linkend="libvpx"/>,
       <xref linkend="mpg123"/>,
-      <xref linkend="nasm"/>
+      <xref linkend="nasm"/>,
+      <xref linkend="pulseaudio"/>
     </para>
 @z
 
@@ -130,23 +134,22 @@
       <xref linkend="alsa-oss"/>,
       <xref linkend="gtk3"/> (for examples),
       <xref linkend="libdv"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="qt5"/>,
+      &qt5-deps;,
       <xref linkend="speex"/>,
       <xref linkend="taglib"/>,
       <xref linkend="valgrind"/>,
       <xref linkend='v4l-utils'/>,
       <xref linkend="wayland"/>,
       <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>,
-      <ulink url="http://jackaudio.org/">JACK</ulink>,
-      <ulink url="http://caca.zoy.org/wiki/libcaca">libcaca</ulink>,
+      <ulink url="https://jackaudio.org/">JACK</ulink>,
+      <ulink url="https://github.com/cacalabs/libcaca">libcaca</ulink>,
       <ulink url="https://sourceforge.net/projects/libavc1394/">libavc1394</ulink>,
       <ulink url="https://sourceforge.net/projects/libraw1394/">libiec61883</ulink>,
       <ulink url="https://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
       <ulink url="https://www.icecast.org">libshout</ulink>,
-      <ulink url="http://gstreamer.freedesktop.org/src/orc/">Orc</ulink>,
-      <ulink url="http://www.twolame.org/">TwoLame</ulink>, and
-      <ulink url="http://wavpack.com/">WavPack</ulink>
+      <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>,
+      <ulink url="https://www.twolame.org/">TwoLame</ulink>, and
+      <ulink url="https://wavpack.com/">WavPack</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -155,30 +158,23 @@
       <xref linkend="alsa-oss"/>,
       <xref linkend="gtk3"/> (for examples),
       <xref linkend="libdv"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="qt5"/>,
+      &qt5-deps;,
       <xref linkend="speex"/>,
       <xref linkend="taglib"/>,
       <xref linkend="valgrind"/>,
       <xref linkend='v4l-utils'/>,
       <xref linkend="wayland"/>,
       <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>,
-      <ulink url="http://jackaudio.org/">JACK</ulink>,
-      <ulink url="http://caca.zoy.org/wiki/libcaca">libcaca</ulink>,
+      <ulink url="https://jackaudio.org/">JACK</ulink>,
+      <ulink url="https://github.com/cacalabs/libcaca">libcaca</ulink>,
       <ulink url="https://sourceforge.net/projects/libavc1394/">libavc1394</ulink>,
       <ulink url="https://sourceforge.net/projects/libraw1394/">libiec61883</ulink>,
       <ulink url="https://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
       <ulink url="https://www.icecast.org">libshout</ulink>,
-      <ulink url="http://gstreamer.freedesktop.org/src/orc/">Orc</ulink>,
-      <ulink url="http://www.twolame.org/">TwoLame</ulink>,
-      <ulink url="http://wavpack.com/">WavPack</ulink>
+      <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>,
+      <ulink url="https://www.twolame.org/">TwoLame</ulink>,
+      <ulink url="https://wavpack.com/">WavPack</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gst10-plugins-good"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gst10-plugins-good"/>
 @z
 
 @x
@@ -196,12 +192,8 @@
 
 @x
       To test the results, issue: <command>ninja test</command>.
-      <!--One test, <filename>elements_souphttpsrc</filename> is known to 
-      fail due to API changes in <application>libsoup</application>.--></para>
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      <!--One test, <filename>elements_souphttpsrc</filename> is known to 
-      fail due to API changes in <application>libsoup</application>.--></para>
 @z
 
 @x

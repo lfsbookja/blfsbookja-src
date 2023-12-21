@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY boost-buildsize     "1.1 GB (190 MB installed)">
-  <!ENTITY boost-time          "1.5 SBU (Using parallelism=4; add 1.3 SBU for tests)">
+  <!ENTITY boost-buildsize     "1.1 GB (199 MB installed)">
+  <!ENTITY boost-time          "1.7 SBU (Using parallelism=4; add 0.1 SBU for tests)">
 @y
-  <!ENTITY boost-buildsize     "1.1 GB (インストールサイズは 190 MB)">
-  <!ENTITY boost-time          "1.5 SBU (parallelism=4; テスト実施時はさらに 1.3 SBU)">
+  <!ENTITY boost-buildsize     "1.1 GB (インストールサイズは 199 MB)">
+  <!ENTITY boost-time          "1.7 SBU (parallelism=4; テスト実施時はさらに 0.1 SBU)">
 @z
 
 @x
@@ -108,9 +108,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -131,12 +131,10 @@
 @z
 
 @x
-      To run the Boost.Build's regression test, issue 
-      <command>pushd tools/build/test; python3 test_all.py; popd</command>. 
-      All 166 tests should pass.
+      To run Boost.Build's regression tests, issue
+      <command>pushd tools/build/test; python3 test_all.py; popd</command>.
 @y
       Boost.Build の縮退テストを実施するには <command>pushd tools/build/test; python3 test_all.py; popd</command> を実行します。
-      全テスト 166 個が成功するはずです。
 @z
 
 @x
@@ -218,15 +216,15 @@
           libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so,
-          libboost_nowide.so, libboost_numpy39.so,
+          libboost_nowide.so, libboost_numpy3&python3-minor;.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so,
           libboost_python3&python3-minor;.so, libboost_random.so,
           libboost_regex.so, libboost_serialization.so,
           libboost_stacktrace_addr2line.so, libboost_stacktrace_basic.so,
-          libboost_stacktrace_noop.so, libboost_system.so, 
+          libboost_stacktrace_noop.so, libboost_system.so,
           libboost_test_exec_monitor.a, libboost_thread.so, libboost_timer.so,
           libboost_type_erasure.so, libboost_unit_test_framework.so,
-          libboost_wave.so, and libboost_wserialization.so
+          libboost_url.so, libboost_wave.so, and libboost_wserialization.so
         </seg>
         <seg>
           /usr/include/boost
@@ -244,15 +242,15 @@
           libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
           libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
           libboost_math_tr1f.so, libboost_math_tr1l.so,
-          libboost_nowide.so, libboost_numpy39.so,
+          libboost_nowide.so, libboost_numpy3&python3-minor;.so,
           libboost_prg_exec_monitor.so, libboost_program_options.so,
           libboost_python3&python3-minor;.so, libboost_random.so,
           libboost_regex.so, libboost_serialization.so,
           libboost_stacktrace_addr2line.so, libboost_stacktrace_basic.so,
-          libboost_stacktrace_noop.so, libboost_system.so, 
+          libboost_stacktrace_noop.so, libboost_system.so,
           libboost_test_exec_monitor.a, libboost_thread.so, libboost_timer.so,
           libboost_type_erasure.so, libboost_unit_test_framework.so,
-          libboost_wave.so, and libboost_wserialization.so
+          libboost_url.so, libboost_wave.so, libboost_wserialization.so
         </seg>
         <seg>
           /usr/include/boost

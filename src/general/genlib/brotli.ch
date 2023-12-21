@@ -10,15 +10,15 @@
 @z
 
 @x
-  <!ENTITY brotli-buildsize     "24 MB (with python3 bindings)">
+  <!ENTITY brotli-buildsize     "33 MB (with python3 bindings)">
 @y
-  <!ENTITY brotli-buildsize     "24 MB (python3 バイディング込み)">
+  <!ENTITY brotli-buildsize     "33 MB (python3 バイディング込み)">
 @z
 
 @x
-  <!ENTITY brotli-time          "0.4 SBU (with python3 bindings)">
+  <!ENTITY brotli-time          "0.3 SBU (with python3 bindings; parallelism=4)">
 @y
-  <!ENTITY brotli-time          "0.4 SBU (python3 バイディング込み)">
+  <!ENTITY brotli-time          "0.3 SBU (python3 バイディング込み; parallelism=4)">
 @z
 
 @x
@@ -102,21 +102,9 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/brotli"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/brotli"/>
-@z
-
-@x
     <title>Installation of Brotli</title>
 @y
     <title>&InstallationOf1;Brotli&InstallationOf2;</title>
-@z
-
-@x
-      At first, fix an issue in pkg-config files:
-@y
-      At first, fix an issue in pkg-config files:
 @z
 
 @x
@@ -133,39 +121,16 @@
 @z
 
 @x
-      If desired, build the <application>Python3</application>
-      bindings:
-@y
-      If desired, build the <application>Python3</application>
-      bindings:
-@z
-
-@x
-      The python tests are missing most of the necessary testdata files and
-      therefore 240 of 311 tests fail.
-      If you nevertheless wish to test the bindings, go back to the top-level directory and
-      issue: <command>python3 setup.py test</command>.
-@y
-      The python tests are missing most of the necessary testdata files and
-      therefore 240 of 311 tests fail.
-      If you nevertheless wish to test the bindings, go back to the top-level directory and
-      issue: <command>python3 setup.py test</command>.
-@z
-
-@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-      If you have built the <application>python</application> bindings,
-      install them as the <systemitem class="username">root</systemitem>
-      user:
+      If desired, build the <application>Python3</application>
+      bindings:
 @y
-      If you have built the <application>python</application> bindings,
-      install them as the <systemitem class="username">root</systemitem>
-      user:
+      必要な場合は <application>Python3</application> バインディングをビルドします。
 @z
 
 @x
@@ -177,7 +142,7 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
@@ -189,24 +154,28 @@
           brotli
         </seg>
         <seg>
-          libbrotlicommon{-static.a,.so}, 
-          libbrotlidec{,-static.a,.so}, and
-          libbrotlienc{,-static.a,.so}
+          libbrotlicommon.so,
+          libbrotlidec.so, and
+          libbrotlienc.so
         </seg>
         <seg>
-          /usr/include/brotli
+          /usr/include/brotli and
+          /usr/lib/python&python3-majorver;/site-packages/Brotli-&brotli-version;.dist-info
+          (if you built and installed the Python3 bindings)
         </seg>
 @y
         <seg>
           brotli
         </seg>
         <seg>
-          libbrotlicommon{-static.a,.so}, 
-          libbrotlidec{,-static.a,.so},
-          libbrotlienc{,-static.a,.so}
+          libbrotlicommon.so,
+          libbrotlidec.so,
+          libbrotlienc.so
         </seg>
         <seg>
-          /usr/include/brotli
+          /usr/include/brotli and
+          /usr/lib/python&python3-majorver;/site-packages/Brotli-&brotli-version;.dist-info
+          (Python3 バインディングをビルドしてインストールした場合)
         </seg>
 @z
 

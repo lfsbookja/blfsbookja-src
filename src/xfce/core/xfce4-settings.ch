@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -106,9 +102,19 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/xfce4-settings"/>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="colord"/>,
+      <xref linkend="libinput"/>, and
+      <xref linkend="upower"/>
+    </para>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/xfce4-settings"/>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="colord"/>,
+      <xref linkend="libinput"/>,
+      <xref linkend="upower"/>
+    </para>
 @z
 
 @x

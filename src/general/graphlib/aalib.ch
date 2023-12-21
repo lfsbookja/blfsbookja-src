@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -77,23 +73,19 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="x-window-system"/>,
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="xorg7-legacy"/> (runtime),
       <xref linkend="slang"/>, and
       <xref linkend="gpm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="slang"/>, and
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="xorg7-legacy"/> (runtime),
+      <xref linkend="slang"/>,
       <xref linkend="gpm"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

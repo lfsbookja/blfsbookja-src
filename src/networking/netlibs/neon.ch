@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -80,8 +76,10 @@
       <xref linkend="gnutls"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
+      <xref linkend="nss"/> (for some tests),
+      <xref linkend="xmlto"/> (to regenerate the documentation),
       <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>, and
-      <ulink url="http://www.manyfish.co.uk/pakchois/">PaKChoiS</ulink>
+      <ulink url="https://www.manyfish.co.uk/pakchois/">PaKChoiS</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -89,15 +87,11 @@
       <xref linkend="gnutls"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="mitkrb"/>,
+      <xref linkend="nss"/> (for some tests),
+      <xref linkend="xmlto"/> (to regenerate the documentation),
       <ulink url="https://github.com/libproxy/libproxy">libproxy</ulink>,
-      <ulink url="http://www.manyfish.co.uk/pakchois/">PaKChoiS</ulink>
+      <ulink url="https://www.manyfish.co.uk/pakchois/">PaKChoiS</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -133,18 +127,16 @@
 
 @x
       <parameter>--with-ssl</parameter>: This switch enables SSL support
-      using <application>OpenSSL</application> or
-      <application>GnuTLS</application> respectively. To force
-      <application>GnuTLS</application> usage when it is are present,
-      simply pass <option>--with-ssl=gnutls</option> and 
+      using <application>OpenSSL</application>.
+      <application>GnuTLS</application> can be used instead, by passing
+      <option>--with-ssl=gnutls</option> and
       <option>--with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt</option> to the
       <command>configure</command> script.
 @y
       <parameter>--with-ssl</parameter>: This switch enables SSL support
-      using <application>OpenSSL</application> or
-      <application>GnuTLS</application> respectively. To force
-      <application>GnuTLS</application> usage when it is are present,
-      simply pass <option>--with-ssl=gnutls</option> and 
+      using <application>OpenSSL</application>.
+      <application>GnuTLS</application> can be used instead, by passing
+      <option>--with-ssl=gnutls</option> and
       <option>--with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt</option> to the
       <command>configure</command> script.
 @z

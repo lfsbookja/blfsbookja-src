@@ -1,10 +1,6 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
 SUBDIRS=lfs-xsl
 BOOKdir = @abs_bookdir@/stylesheets
 CHANGE_FILES = \

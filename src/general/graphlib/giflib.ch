@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -40,15 +36,21 @@
 @z
 
 @x
-          Download (HTTP) MD5 sum: &giflib-http-md5sum;
+          Download (FTP): <ulink url="&giflib-download-ftp;"/>
 @y
-          &Download; (HTTP) MD5 sum: &giflib-http-md5sum;
+          &Download; (FTP): <ulink url="&giflib-download-ftp;"/>
 @z
 
 @x
-          Download (HTTP) size: &giflib-http-size;
+          Download MD5 sum: &giflib-http-md5sum;
 @y
-          &Download; (HTTP) size: &giflib-http-size;
+          &Download; MD5 sum: &giflib-http-md5sum;
+@z
+
+@x
+          Download size: &giflib-http-size;
+@y
+          &DownloadSize;: &giflib-http-size;
 @z
 
 @x
@@ -79,12 +81,6 @@
     <para role="required">
       <xref linkend="xmlto"/> 
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

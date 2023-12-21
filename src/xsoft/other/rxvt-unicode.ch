@@ -101,12 +101,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of rxvt-unicode</title>
 @y
     <title>&InstallationOf1;rxvt-unicode&InstallationOf2;</title>
@@ -270,13 +264,13 @@
 
 @x
       For that, you need <xref linkend="desktop-file-utils"/> and at least
-      one of <xref linkend="gnome-icon-theme"/>, <xref linkend="oxygen-icons5"/>
+      one of <xref linkend="gnome-icon-theme"/>, <xref linkend="oxygen-icons"/>
       and <xref linkend="lxde-icon-theme"/>. Uncomment the line with
       <quote>StartupNotify=true</quote> if <xref
       linkend="startup-notification"/> is installed.
 @y
       For that, you need <xref linkend="desktop-file-utils"/> and at least
-      one of <xref linkend="gnome-icon-theme"/>, <xref linkend="oxygen-icons5"/>
+      one of <xref linkend="gnome-icon-theme"/>, <xref linkend="oxygen-icons"/>
       and <xref linkend="lxde-icon-theme"/>. Uncomment the line with
       <quote>StartupNotify=true</quote> if <xref
       linkend="startup-notification"/> is installed.

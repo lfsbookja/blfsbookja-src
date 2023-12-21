@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -67,12 +63,12 @@
 
 @x
     Additionally, the <ulink url=
-      "http://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html">
+      "https://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html">
     Linux Standard Base</ulink> recommends that system uid and gid values
     should be below 100.
 @y
     Additionally, the <ulink url=
-      "http://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html">
+      "https://refspecs.linuxfoundation.org/LSB_4.1.0/LSB-Core-generic/LSB-Core-generic/usernames.html">
     Linux Standard Base</ulink> recommends that system uid and gid values
     should be below 100.
 @z

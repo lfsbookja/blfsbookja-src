@@ -12,13 +12,13 @@
 @x
   <!ENTITY asciidoctor-time          "less than 0.1 SBU">
 @y
-  <!ENTITY asciidoctor-time          "less than 0.1 SBU">
+  <!ENTITY asciidoctor-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
     <title>Introduction to Asciidoctor</title>
 @y
-    <title>Introduction to Asciidoctor</title>
+    <title>&IntroductionTo1;Asciidoctor&IntroductionTo2;</title>
 @z
 
 @x
@@ -34,49 +34,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&asciidoctor-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&asciidoctor-download-http;"/>
+          &Download; (HTTP): <ulink url="&asciidoctor-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&asciidoctor-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&asciidoctor-download-ftp;"/>
+          &Download; (FTP): <ulink url="&asciidoctor-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &asciidoctor-md5sum;
 @y
-          Download MD5 sum: &asciidoctor-md5sum;
+          &Download; MD5 sum: &asciidoctor-md5sum;
 @z
 
 @x
           Download size: &asciidoctor-size;
 @y
-          Download size: &asciidoctor-size;
+          &DownloadSize;: &asciidoctor-size;
 @z
 
 @x
           Estimated disk space required: &asciidoctor-buildsize;
 @y
-          Estimated disk space required: &asciidoctor-buildsize;
+          &Estimateddiskspacerequired;: &asciidoctor-buildsize;
 @z
 
 @x
           Estimated build time: &asciidoctor-time;
 @y
-          Estimated build time: &asciidoctor-time;
+          &Estimatedbuildtime;: &asciidoctor-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Asciidoctor Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Asciidoctor Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Asciidoctor&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -92,39 +92,33 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Asciidoctor</title>
 @y
-    <title>Installation of Asciidoctor</title>
+    <title>&InstallationOf1;Asciidoctor&InstallationOf2;</title>
 @z
 
 @x
       Build the Ruby gem:
 @y
-      Build the Ruby gem:
+      Ruby gem をビルドします。
 @z
 
 @x
       The test suite needs many Ruby gems beyond the scope of BLFS.
 @y
-      The test suite needs many Ruby gems beyond the scope of BLFS.
+      テストスイートは数多くの Ruby gem を必要としていて、BLFS の範囲を超えます。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -132,9 +126,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -150,9 +144,9 @@
         <seg>
           asciidoctor
         </seg>
-        <seg>None</seg>
+        <seg>&None;</seg>
         <seg>
-          &ruby-gemdir;/gems/asciidoctor-&asciidoctor-version; and
+          &ruby-gemdir;/gems/asciidoctor-&asciidoctor-version;,
           &ruby-gemdir;/doc/asciidoctor-&asciidoctor-version;
         </seg>
 @z
@@ -160,7 +154,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x asciidoctor

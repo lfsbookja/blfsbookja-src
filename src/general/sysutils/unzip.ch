@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -114,12 +110,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>UnZip Locale Issues</title>
 @y
     <title>UnZip のロケールに関する問題</title>
@@ -201,13 +191,13 @@
 
 @x
       1) For unpacking ZIP archives with filenames containing non-ASCII
-      characters, use <ulink url="http://www.winzip.com/">WinZip</ulink> while
-      running the <ulink url="http://www.winehq.com/">Wine</ulink> Windows
+      characters, use <ulink url="https://www.winzip.com/">WinZip</ulink> while
+      running the <ulink url="https://www.winehq.com/">Wine</ulink> Windows
       emulator.
 @y
       1) For unpacking ZIP archives with filenames containing non-ASCII
-      characters, use <ulink url="http://www.winzip.com/">WinZip</ulink> while
-      running the <ulink url="http://www.winehq.com/">Wine</ulink> Windows
+      characters, use <ulink url="https://www.winzip.com/">WinZip</ulink> while
+      running the <ulink url="https://www.winehq.com/">Wine</ulink> Windows
       emulator.
 @z
 
@@ -216,14 +206,14 @@
       <xref role="nodep" linkend="libarchive"/> to unpack the ZIP archive.
       Then fix the damage made to
       the filenames using the <command>convmv</command> tool
-      (<ulink url="http://j3e.de/linux/convmv/"/>). The following is an example
+      (<ulink url="https://j3e.de/linux/convmv/"/>). The following is an example
       for the zh_CN.UTF-8 locale:
 @y
       2) Use <command>bsdtar -xf</command> from
       <xref role="nodep" linkend="libarchive"/> to unpack the ZIP archive.
       Then fix the damage made to
       the filenames using the <command>convmv</command> tool
-      (<ulink url="http://j3e.de/linux/convmv/"/>). The following is an example
+      (<ulink url="https://j3e.de/linux/convmv/"/>). The following is an example
       for the zh_CN.UTF-8 locale:
 @z
 
@@ -308,14 +298,14 @@
       This target begins by running a configure script (unlike the older
       targets such as linux and linux_noasm) which creates a flags file that
       is then used in the build. This ensures that the 32-bit x86 build
-      receives the right flags to unzip files which which are larger than 2GB
+      receives the right flags to unzip files which are larger than 2GB
       when extracted.
 @y
       <command>make -f unix/Makefile generic</command>:
       This target begins by running a configure script (unlike the older
       targets such as linux and linux_noasm) which creates a flags file that
       is then used in the build. This ensures that the 32-bit x86 build
-      receives the right flags to unzip files which which are larger than 2GB
+      receives the right flags to unzip files which are larger than 2GB
       when extracted.
 @z
 

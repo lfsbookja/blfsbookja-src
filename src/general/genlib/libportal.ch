@@ -86,43 +86,53 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/>,
-      <xref linkend="gtk4"/>, and
-      <xref linkend="qt5"/>
+      <xref linkend="gtk3"/> and
+      <xref linkend="gtk4"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gtk3"/>,
-      <xref linkend="gtk4"/>,
-      <xref linkend="qt5"/>
+      <xref linkend="gtk4"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="vala"/> and
-      <ulink url="https://gitlab.gnome.org/ebassi/gi-docgen">gi-docgen</ulink>
+      <xref linkend="gi-docgen"/> (for documentation),
+      <xref linkend="python-dbusmock"/> and
+      <xref linkend="pytest"/> (for testing),
+      &qt5-deps; (for the Qt5 version of libportal), and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="vala"/>,
-      <ulink url="https://gitlab.gnome.org/ebassi/gi-docgen">gi-docgen</ulink>
+      <xref linkend="gi-docgen"/> (for documentation),
+      <xref linkend="python-dbusmock"/> and
+      <xref linkend="pytest"/> (for testing),
+      &qt5-deps; (for the Qt5 version of libportal),
+      <xref linkend="vala"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libportal"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libportal"/>
 @z
 
 @x
     <title>Installation of libportal</title>
 @y
     <title>&InstallationOf1;libportal&InstallationOf2;</title>
+@z
+
+@x
+        If a previous version of libportal is installed, move the
+        headers out of the way so that later packages do not encounter
+        conflicts (as the <systemitem role="username">root</systemitem>
+        user):
+@y
+        If a previous version of libportal is installed, move the
+        headers out of the way so that later packages do not encounter
+        conflicts (as the <systemitem role="username">root</systemitem>
+        user):
 @z
 
 @x
@@ -133,9 +143,21 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
 @y
-      &notTestSuite;
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
+@z
+
+@x
+      To test the results, issue: <command>ninja test</command>. Note that
+      additional <filename>dbus-daemon</filename> processes may need to be
+      killed after the tests are run.
+@y
+      To test the results, issue: <command>ninja test</command>. Note that
+      additional <filename>dbus-daemon</filename> processes may need to be
+      killed after the tests are run.
 @z
 
 @x

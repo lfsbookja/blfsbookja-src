@@ -100,22 +100,24 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
-      <phrase revision="sysv">and</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/>, and</phrase>
-      <xref linkend="vala"/>
+      <phrase revision="systemd" role="runtime"><xref linkend="systemd"/>
+      (runtime),</phrase>
+      and <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
       <xref linkend="gobject-introspection"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libgusb"/>,
-      <phrase revision="sysv">and</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/>, and</phrase>
-      <xref linkend="vala"/>
+      <phrase revision="systemd" role="runtime"><xref linkend="systemd"/>
+      (runtime),</phrase>
+      and <xref linkend="vala"/>
     </para>
 @z
 
@@ -128,7 +130,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="sane"/>,
-      <ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink>, and
+      <ulink url="https://www.argyllcms.com/">ArgyllCMS</ulink>, and
       <ulink url="https://github.com/scop/bash-completion/">Bash Completion</ulink>
     </para>
 @y
@@ -140,15 +142,9 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libxslt"/>,
       <xref linkend="sane"/>,
-      <ulink url="http://www.argyllcms.com/">ArgyllCMS</ulink>,
+      <ulink url="https://www.argyllcms.com/">ArgyllCMS</ulink>, and
       <ulink url="https://github.com/scop/bash-completion/">Bash Completion</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/colord"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/colord"/>
 @z
 
 @x
@@ -171,15 +167,15 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja -k 2 test</command>.
-      One test, <filename>colord-self-test-daemon</filename>, will fail.
-      The test suite must be run after the package is installed, and the
-      system-wide D-Bus Daemon must be running.
+      To test the results, issue: <command>ninja test</command>.
+      One test, <filename>colord-self-test-daemon</filename>, will fail if the
+      package is already installed. The test suite must be run with the
+      system-wide D-Bus Daemon running.
 @y
       ビルド結果をテストする場合は <command>ninja -k 2 test</command> を実行します。
-      One test, <filename>colord-self-test-daemon</filename>, will fail.
-      The test suite must be run after the package is installed, and the
-      system-wide D-Bus Daemon must be running.
+      One test, <filename>colord-self-test-daemon</filename>, will fail if the
+      package is already installed. The test suite must be run with the
+      system-wide D-Bus Daemon running.
 @z
 
 @x

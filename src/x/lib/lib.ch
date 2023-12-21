@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <title>X Libraries</title>
+  <title>Graphical Environment Libraries</title>
 @y
-  <title>X ライブラリ</title>
+  <title>グラフィック環境ライブラリ</title>
 @z
 
 @x

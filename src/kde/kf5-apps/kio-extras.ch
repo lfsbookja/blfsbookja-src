@@ -91,22 +91,22 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libtirpc"/>,
-      <xref linkend="samba"/>, and
-      <xref linkend="taglib"/>
+      <xref linkend="samba"/>,
+      <xref linkend="taglib"/>,
+      <ulink url="https://libmtp.sourceforge.net/">libmtp</ulink>,
+      <ulink url="https://www.libssh.org/">libssh</ulink>, and
+      <ulink url="https://www.openexr.com/">OpenEXR</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libtirpc"/>,
       <xref linkend="samba"/>,
-      <xref linkend="taglib"/>
+      <xref linkend="taglib"/>,
+      <ulink url="https://libmtp.sourceforge.net/">libmtp</ulink>,
+      <ulink url="https://www.libssh.org/">libssh</ulink>,
+      <ulink url="https://www.openexr.com/">OpenEXR</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/kio-extras"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/kio-extras"/>
 @z
 
 @x

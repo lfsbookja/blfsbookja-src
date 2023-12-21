@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libarchive-buildsize     "40 MB (add 28 MB for tests)">
-  <!ENTITY libarchive-time          "0.3 SBU (add 1.0 SBU for tests)">
+  <!ENTITY libarchive-buildsize     "42 MB (add 34 MB for tests)">
+  <!ENTITY libarchive-time          "0.3 SBU (add 0.7 SBU for tests)">
 @y
-  <!ENTITY libarchive-buildsize     "40 MB (テスト実施時はさらに 28 MB)">
-  <!ENTITY libarchive-time          "0.3 SBU (テスト実施時はさらに 1.0 SBU)">
+  <!ENTITY libarchive-buildsize     "42 MB (テスト実施時はさらに 34 MB)">
+  <!ENTITY libarchive-time          "0.3 SBU (テスト実施時はさらに 0.7 SBU)">
 @z
 
 @x
@@ -97,12 +97,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of libarchive</title>
 @y
     <title>&InstallationOf1;libarchive&InstallationOf2;</title>
@@ -167,7 +161,7 @@
 
 @x
         <seg>
-          bsdcat, bsdcpio, and bsdtar
+          bsdcat, bsdcpio, bsdtar, and bsdunzip
         </seg>
         <seg>
           libarchive.so
@@ -177,7 +171,7 @@
         </seg>
 @y
         <seg>
-          bsdcat, bsdcpio, bsdtar
+          bsdcat, bsdcpio, bsdtar, bsdunzip
         </seg>
         <seg>
           libarchive.so

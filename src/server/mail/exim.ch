@@ -75,11 +75,11 @@
 @x
           Additional formats of the documentation (text-based docs are
           shipped with the sources) can be downloaded by following the links
-          shown at <ulink url="http://exim.org/docs.html"/>.
+          shown at <ulink url="https://exim.org/docs.html"/>.
 @y
           Additional formats of the documentation (text-based docs are
           shipped with the sources) can be downloaded by following the links
-          shown at <ulink url="http://exim.org/docs.html"/>.
+          shown at <ulink url="https://exim.org/docs.html"/>.
 @z
 
 @x
@@ -91,59 +91,23 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libnsl"/> and
-      <xref linkend="pcre"/>
+      <xref linkend="libnsl"/>,
+      <xref linkend="perl-file-fcntllock"/> and
+      <xref linkend="pcre2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libnsl"/>,
-      <xref linkend="pcre"/>
+      <xref linkend="perl-file-fcntllock"/> and
+      <xref linkend="pcre2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <ulink url="https://sourceforge.net/projects/tdb">TDB</ulink>
-      (alternative to GDBM, built in LFS),
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="libidn"/>,
-      <xref linkend="linux-pam"/>,
-      <xref linkend="mariadb"/> or
-      <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openldap"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="x-window-system"/>,
-      <ulink url="http://www.h5l.org/">Heimdal GSSAPI</ulink>, and
-      <ulink url="http://www.trusteddomain.org/opendmarc/">OpenDMARC</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <ulink url="https://sourceforge.net/projects/tdb">TDB</ulink>
-      （LFS でビルドしている GDBM の代用）,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="libidn"/>,
-      <xref linkend="linux-pam"/>,
-      <xref linkend="mariadb"/> or
-      <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openldap"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="x-window-system"/>,
-      <ulink url="http://www.h5l.org/">Heimdal GSSAPI</ulink>,
-      <ulink url="http://www.trusteddomain.org/opendmarc/">OpenDMARC</ulink>
-    </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -162,12 +126,6 @@
       class="username">root</systemitem> ユーザーになって <systemitem
       class="username">exim</systemitem> というユーザーおよびグループを作成する必要があります。
       これは <command>exim</command> デーモンを起動するものになります。
-@z
-
-@x
-      If you want to build with <application>PAM</application> support, apply the following patch:
-@y
-      If you want to build with <application>PAM</application> support, apply the following patch:
 @z
 
 @x
@@ -211,11 +169,11 @@
 @x
       <command>printf ... > Local/Makefile</command>: Setting those
       variables allows to use GDBM instead of the default Berkeley DB. Remove
-      this command if you have installed <xref linkend="db"/>.
+      this command if you have installed &berkeley-db;.
 @y
       <command>printf ... > Local/Makefile</command>: Setting those
       variables allows to use GDBM instead of the default Berkeley DB. Remove
-      this command if you have installed <xref linkend="db"/>.
+      this command if you have installed &berkeley-db;.
 @z
 
 @x
@@ -242,60 +200,40 @@
       <parameter>EXIM_USER=exim</parameter>: This tells
       <application>Exim</application> that after the daemon no longer needs
       <systemitem class="username">root</systemitem> privileges, the process
-      hands off the daemon to the <systemitem
+      needs to hand off the daemon to the <systemitem
       class="username">exim</systemitem> user.
 @y
       <parameter>EXIM_USER=exim</parameter>: This tells
       <application>Exim</application> that after the daemon no longer needs
       <systemitem class="username">root</systemitem> privileges, the process
-      hands off the daemon to the <systemitem
+      needs to hand off the daemon to the <systemitem
       class="username">exim</systemitem> user.
 @z
 
 @x
-      <parameter>SUPPORT_TLS=yes</parameter>: This allows to support
-      STARTTLS connections. If you use this option, you need to select
-      whether <application>OpenSSL</application> or
-      <application>GnuTLS</application> is used (see
-      <filename>src/EDITME</filename>).
-@y
-      <parameter>SUPPORT_TLS=yes</parameter>: This allows to support
-      STARTTLS connections. If you use this option, you need to select
-      whether <application>OpenSSL</application> or
-      <application>GnuTLS</application> is used (see
-      <filename>src/EDITME</filename>).
-@z
-
-@x
-      <parameter>USE_OPENSSL_PC=openssl</parameter>: This tells the
+      <parameter>USE_OPENSSL</parameter>: uncommenting
+      <option>USE_OPENSSL=yes</option> and <option>USE_OPNSSL_PC=yes</option>
+      tells the
       build system to use <application>OpenSSL</application>, and to
       find the needed libraries with <application>pkg-config</application>.
 @y
-      <parameter>USE_OPENSSL_PC=openssl</parameter>: This tells the
+      <parameter>USE_OPENSSL</parameter>: uncommenting
+      <option>USE_OPENSSL=yes</option> and <option>USE_OPNSSL_PC=yes</option>
+      tells the
       build system to use <application>OpenSSL</application>, and to
       find the needed libraries with <application>pkg-config</application>.
 @z
 
 @x
-      <parameter>#EXIM_MONITOR</parameter>: This defers building the
-      <application>Exim</application> monitor program, as it requires
-      <application>X Window System</application> support, by commenting out the
-      <parameter>EXIM_MONITOR</parameter> line in the
-      <filename>Makefile</filename>. If you wish to build the monitor program,
-      omit this <command>sed</command> command and issue the following command
-      before building the package (modify
-      <filename>Local/eximon.conf</filename>, if necessary):
-      <command>cp exim_monitor/EDITME Local/eximon.conf</command>.
+      Uncomment <option>EXIM_MONITOR</option>: This allows building the
+      <application>Exim</application> monitor program, which requires
+      <application>X Window System</application> support, and is commented out
+      by default.
 @y
-      <parameter>#EXIM_MONITOR</parameter>: This defers building the
-      <application>Exim</application> monitor program, as it requires
-      <application>X Window System</application> support, by commenting out the
-      <parameter>EXIM_MONITOR</parameter> line in the
-      <filename>Makefile</filename>. If you wish to build the monitor program,
-      omit this <command>sed</command> command and issue the following command
-      before building the package (modify
-      <filename>Local/eximon.conf</filename>, if necessary):
-      <command>cp exim_monitor/EDITME Local/eximon.conf</command>.
+      Uncomment <option>EXIM_MONITOR</option>: This allows building the
+      <application>Exim</application> monitor program, which requires
+      <application>X Window System</application> support, and is commented out
+      by default.
 @z
 
 @x
@@ -356,12 +294,12 @@
       If you wish to build and install the
       <filename class='extension'>.info</filename> documentation, refer to
       <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinsinfdoc"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinsinfdoc"/>.
 @y
       If you wish to build and install the
       <filename class='extension'>.info</filename> documentation, refer to
       <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinsinfdoc"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinsinfdoc"/>.
 @z
 
 @x
@@ -369,77 +307,77 @@
       scanning software directly from access control lists, uncomment the
       <option>WITH_CONTENT_SCAN=yes</option> parameter and review the
       information found at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.
 @y
       If you wish to build in Exim's interfaces for calling virus and spam
       scanning software directly from access control lists, uncomment the
       <option>WITH_CONTENT_SCAN=yes</option> parameter and review the
       information found at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch45.html"/>.
 @z
 
 @x
       To use a backend database other than <application>GDBM
       </application>, see the instructions at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.
 @y
       To use a backend database other than <application>GDBM
       </application>, see the instructions at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTdb"/>.
 @z
 
 @x
       For SSL functionality, see the instructions at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
       and <ulink url="
-      http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.
+      https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.
 @y
       For SSL functionality, see the instructions at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECTinctlsssl"/>
       and <ulink url="
-      http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.
+      https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch42.html"/>.
 @z
 
 @x
       For <application>tcpwrappers</application> functionality, see the
       instructions at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECID27"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECID27"/>.
 @y
       For <application>tcpwrappers</application> functionality, see the
       instructions at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECID27"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch04.html#SECID27"/>.
 @z
 
 @x
       For information about adding authentication mechanisms to the
       build, see chapters 33&mdash;41 of <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.
 @y
       For information about adding authentication mechanisms to the
       build, see chapters 33&mdash;41 of <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/index.html"/>.
 @z
 
 @x
       For information about linking <application>Linux-PAM</application>,
       refer to the instructions <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch11.html#SECTexpcond"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch11.html#SECTexpcond"/>.
 @y
       For information about linking <application>Linux-PAM</application>,
       refer to the instructions <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch11.html#SECTexpcond"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch11.html#SECTexpcond"/>.
 @z
 
 @x
       For information about linking database engine libraries used for
       <application>Exim</application> name lookups, see the instructions at
       <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch09.html"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch09.html"/>.
 @y
       For information about linking database engine libraries used for
       <application>Exim</application> name lookups, see the instructions at
       <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch09.html"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch09.html"/>.
 @z
 
 @x
@@ -447,13 +385,13 @@
       <application>Exim</application> when invoked in <quote>test
       expansion</quote> (<option>-be</option>) mode, see the information in
       the <option>-be</option> section of <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch05.html#id2525974"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch05.html#id2525974"/>.
 @y
       If you wish to add <application>Readline</application> support to
       <application>Exim</application> when invoked in <quote>test
       expansion</quote> (<option>-be</option>) mode, see the information in
       the <option>-be</option> section of <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch05.html#id2525974"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch05.html#id2525974"/>.
 @z
 
 @x
@@ -461,13 +399,13 @@
       syslog instead of the default
       <filename class='directory'>/var/spool/exim/log</filename> directory. See
       the information at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/chlog_files.html"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch-log_files.html"/>.
 @y
       You may wish to modify the default configuration and send log files to
       syslog instead of the default
       <filename class='directory'>/var/spool/exim/log</filename> directory. See
       the information at <ulink url=
-      "http://exim.org/exim-html-&exim-version;/doc/html/spec_html/chlog_files.html"/>.
+      "https://exim.org/exim-html-&exim-version;/doc/html/spec_html/ch-log_files.html"/>.
 @z
 
 @x
@@ -733,11 +671,9 @@
 @z
 
 @x exiwhat
-            queries running <application>Exim</application>
-          processes
+            queries running <application>Exim</application> processes
 @y
-            queries running <application>Exim</application>
-          processes
+            queries running <application>Exim</application> processes
 @z
 
 @x eximon

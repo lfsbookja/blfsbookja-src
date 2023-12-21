@@ -16,12 +16,12 @@
 @z
 
 @x
-      The <application>UPower</application> package provides an interface to
+      The <application>UPower</application> package provides an interface for
       enumerating power devices, listening to device events and querying history
       and statistics. Any application or service on the system can access the
       org.freedesktop.UPower service via the system message bus.
 @y
-      The <application>UPower</application> package provides an interface to
+      The <application>UPower</application> package provides an interface for
       enumerating power devices, listening to device events and querying history
       and statistics. Any application or service on the system can access the
       org.freedesktop.UPower service via the system message bus.
@@ -78,16 +78,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libgudev"/>,
-      <xref linkend="libusb"/>, and
-      <xref linkend="polkit"/>
+      <xref linkend="libgudev"/> and
+      <xref linkend="libusb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libgudev"/>,
-      <xref linkend="libusb"/>,
-      <xref linkend="polkit"/>
+      <xref linkend="libgudev"/> and
+      <xref linkend="libusb"/>
     </para>
 @z
 
@@ -107,6 +105,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="docbook-xsl"/>,
       <xref linkend="pygobject3"/>,
       <xref linkend="python-dbusmock"/>,
       <xref linkend="umockdev"/> (for part of the test suite), and
@@ -116,17 +116,27 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libxslt"/>,
+      <xref linkend="docbook-xsl"/>,
       <xref linkend="pygobject3"/>,
       <xref linkend="python-dbusmock"/>,
-      <xref linkend="umockdev"/> (テストスイートの一部に必要),
+      <xref linkend="umockdev"/> (for part of the test suite), and
       <ulink url="https://libimobiledevice.org/">libimobiledevice</ulink>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <title>Kernel Configuration</title>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <title>&KernelConfiguration;</title>
+@z
+
+@x
+      Enable the following options in the kernel configuration and recompile the
+      kernel if necessary:
+@y
+      Enable the following options in the kernel configuration and recompile the
+      kernel if necessary:
 @z
 
 @x
@@ -143,13 +153,21 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Some
-      checks may not pass due to missing files. Test suite should be run from
-      a local GUI session started with dbus-launch.
+      To test the results, issue: <command>LC_ALL=C ninja test</command>. Some
+      checks may not pass due to missing files. The test suite should be run
+      from a local GUI session started with dbus-launch. On 32-bit machines,
+      one test will fail due to rounding errors:
+      <filename>Tests.test_battery_energy_charge_mixed</filename>. On some
+      systems, two tests relading to the headphone hotplug feature are known
+      to fail. Those can be safely ignored since the functionality still works.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>LC_ALL=C ninja test</command> を実行します。
       テストの中には、必要なファイルがないために失敗するものがあります。
       テストは、dbus-launch から起動されたローカル GUI セッションにおいて実行する必要があります。
+      32 ビットマシンにおいては、丸めに関するエラーによりテストが 1 つ失敗します。
+      <filename>Tests.test_battery_energy_charge_mixed</filename>. On some
+      systems, two tests relading to the headphone hotplug feature are known
+      to fail. Those can be safely ignored since the functionality still works.
 @z
 
 @x
@@ -165,13 +183,45 @@
 @z
 
 @x
-      <parameter>--enable-deprecated</parameter>: This switch enables
-      deprecated functionality which is still needed by some
-      applications.
+      <parameter>-Dgtk-doc=false</parameter>: Prevents building the
+      documentation. Remove this if you have <application>GTK-Doc</application>
+      installed and wish to build the documentation.
 @y
-      <parameter>--enable-deprecated</parameter>:
-      このスイッチは古くなった機能を有効にします。
-      この機能を利用するアプリケーションがまだあるためです。
+      <parameter>-Dgtk-doc=false</parameter>: Prevents building the
+      documentation. Remove this if you have <application>GTK-Doc</application>
+      installed and wish to build the documentation.
+@z
+
+@x
+      <parameter>-Dman=false</parameter>: Prevents building the
+      manual pages. Remove this if you have <xref linkend='libxslt'/> and
+      <xref linkend='docbook-xsl'/> installed and wish to build the manual
+      pages.
+@y
+      <parameter>-Dman=false</parameter>: Prevents building the
+      manual pages. Remove this if you have <xref linkend='libxslt'/> and
+      <xref linkend='docbook-xsl'/> installed and wish to build the manual
+      pages.
+@z
+
+@x
+      <parameter>-Dsystemdsystemunitdir=no</parameter>: Removes
+      the dependency on <application>systemd</application>.
+@y
+      <parameter>-Dsystemdsystemunitdir=no</parameter>: Removes
+      the dependency on <application>systemd</application>.
+@z
+
+@x
+      <parameter>-Dudevrulesdir=/usr/lib/udev/rules.d</parameter>: Tells
+      the build system where to install <application>udev</application>
+      rules because the information is missing in
+      <filename>/usr/lib/pkgconfig/libudev.pc</filename>
+@y
+      <parameter>-Dudevrulesdir=/usr/lib/udev/rules.d</parameter>: Tells
+      the build system where to install <application>udev</application>
+      rules because the information is missing in
+      <filename>/usr/lib/pkgconfig/libudev.pc</filename>
 @z
 
 @x

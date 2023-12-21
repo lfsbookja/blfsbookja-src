@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY talloc-buildsize     "9.9 MB (with tests)">
+  <!ENTITY talloc-buildsize     "11 MB (with tests)">
   <!ENTITY talloc-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY talloc-buildsize     "9.9 MB (テスト込み)">
+  <!ENTITY talloc-buildsize     "11 MB (テスト込み)">
   <!ENTITY talloc-time          "0.3 SBU (テスト込み)">
 @z
 
@@ -91,9 +91,7 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/> and
       <xref linkend="libxslt"/> (To generate man pages),
-<!-- not accepted anymore
-      <xref linkend="python2"/> (To build Python-2 module),
--->   <xref linkend="gdb"/>,
+      <xref linkend="gdb"/>,
       <xref linkend="git"/>,
       <xref linkend="libnsl"/>,
       <xref linkend="libtirpc"/>,
@@ -107,22 +105,14 @@
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/> and
       <xref linkend="libxslt"/> (man ページ生成時),
-<!-- not accepted anymore
-      <xref linkend="python2"/> (To build Python-2 module),
--->   <xref linkend="gdb"/>,
+      <xref linkend="gdb"/>,
       <xref linkend="git"/>,
       <xref linkend="libnsl"/>,
       <xref linkend="libtirpc"/>,
-      <xref linkend="valgrind"/>, and
+      <xref linkend="valgrind"/>,
       <xref linkend="xfsprogs"/>
       <!-- These are all looked for at build time, but might not actually be used.-->
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/talloc"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/talloc"/>
 @z
 
 @x
@@ -178,11 +168,8 @@
         </seg>
         <seg>
           libpytalloc-util.&python3-lib-suffix;.so,
-          <!--libpytalloc-util.so,-->
-          libtalloc.so,
-          <!-- NOTE: The below is Optional now. -->
-          talloc.so (Python-2 Module) and
-          talloc.&python3-lib-suffix;.so (Python-3 Module)
+          libtalloc.so, and
+          talloc.&python3-lib-suffix;.so (Python 3 Module)
         </seg>
         <seg>
           None
@@ -193,11 +180,8 @@
         </seg>
         <seg>
           libpytalloc-util.&python3-lib-suffix;.so,
-          <!--libpytalloc-util.so,-->
           libtalloc.so,
-          <!-- NOTE: The below is Optional now. -->
-          talloc.so (Python-2 モジュール),
-          talloc.&python3-lib-suffix;.so (Python-3 モジュール)
+          talloc.&python3-lib-suffix;.so (Python 3 モジュール)
         </seg>
         <seg>
           &None;

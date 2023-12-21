@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -129,12 +125,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Yelp</title>
 @y
     <title>&InstallationOf1;Yelp&InstallationOf2;</title>
@@ -201,18 +191,20 @@
           libyelp.so
         </seg>
         <seg>
-          /usr/{include,share/gtk-doc/html}/libyelp and
+          /usr/include/libyelp,
+          /usr/share/gtk-doc/html/libyelp (optional), and
           /usr/{lib,share}/yelp
         </seg>
 @y
         <seg>
-          gnome-help（シンボリックリンク）,yelp
+          gnome-help (シンボリックリンク), yelp
         </seg>
         <seg>
           libyelp.so
         </seg>
         <seg>
-          /usr/{include,share/gtk-doc/html}/libyelp,
+          /usr/include/libyelp,
+          /usr/share/gtk-doc/html/libyelp (任意インストール),
           /usr/{lib,share}/yelp
         </seg>
 @z

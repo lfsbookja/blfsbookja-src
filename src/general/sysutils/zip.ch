@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -72,12 +68,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Zip</title>
 @y
     <title>&InstallationOf1;Zip&InstallationOf2;</title>
@@ -113,13 +103,13 @@
       command overrides the <varname>prefix</varname> variable that is set to
       <filename class='directory'>/usr/local</filename> in the
       <filename>unix/Makefile</filename>.
-      Alternatives to <option>generic_gcc</option> can be seen with a
+      Alternatives to <parameter>generic_gcc</parameter> can be seen with a
       <command>make -f unix/Makefile list</command> command.
 @y
       <command>make prefix=/usr -f unix/Makefile install</command>:
       このコマンドは <filename>unix/Makefile</filename> ファイルにて <varname>prefix</varname> 変数が <filename
       class='directory'>/usr/local</filename> に設定されているものを上書き設定するものです。
-      <option>generic_gcc</option> ではない、別のオプションについては <command>make -f unix/Makefile list</command> を実行することで確認できます。
+      <parameter>generic_gcc</parameter> ではない、別のオプションについては <command>make -f unix/Makefile list</command> を実行することで確認できます。
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,11 +17,11 @@
 
 @x
       The <application>libxfce4ui</application> package contains
-      <application>GTK+ 2</application> widgets that are used by other
+      <application>GTK+ 3</application> widgets that are used by other
       <application>Xfce</application> applications.
 @y
       The <application>libxfce4ui</application> package contains
-      <application>GTK+ 2</application> widgets that are used by other
+      <application>GTK+ 3</application> widgets that are used by other
       <application>Xfce</application> applications.
 @z
 
@@ -107,8 +103,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="libgtop"/>, 
+<!--      <xref linkend="gobject-introspection"/>,-->
+      <xref linkend="libgtop"/>,
       <xref linkend="libgudev"/>, and
       <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
@@ -116,17 +112,11 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="libgtop"/>, 
+<!--      <xref linkend="gobject-introspection"/>,-->
+      <xref linkend="libgtop"/>,
       <xref linkend="libgudev"/>,
       <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libxfce4ui"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libxfce4ui"/>
 @z
 
 @x

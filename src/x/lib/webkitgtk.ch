@@ -16,14 +16,14 @@
 @z
 
 @x
-      The <application>WebKitGTK</application> package is a port of the 
+      The <application>WebKitGTK</application> package is a port of the
       portable web rendering engine <application>WebKit</application> to the
-      <application>GTK+ 3</application> and <application>GTK+ 2</application>
+      <application>GTK+ 3</application> and <application>GTK 4</application>
       platforms.
 @y
-      The <application>WebKitGTK</application> package is a port of the 
+      The <application>WebKitGTK</application> package is a port of the
       portable web rendering engine <application>WebKit</application> to the
-      <application>GTK+ 3</application> and <application>GTK+ 2</application>
+      <application>GTK+ 3</application> and <application>GTK 4</application>
       platforms.
 @z
 
@@ -83,16 +83,19 @@
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gst10-plugins-bad"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="icu"/>,
+      <xref linkend="lcms2"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>,
+      <xref linkend="libsoup3"/>,
       <xref linkend="libtasn1"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="mesa"/>,
       <xref linkend="openjpeg2"/>,
       <xref linkend="ruby"/>,
       <xref linkend="sqlite"/>,
+      <xref linkend="unifdef"/>,
       <xref linkend="which"/>, and
       <xref linkend="wpebackend-fdo"/>
     </para>
@@ -104,17 +107,20 @@
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="gst10-plugins-bad"/>,
       <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="icu"/>,
+      <xref linkend="lcms2"/>,
       <xref linkend="libgudev"/>,
       <xref linkend="libsecret"/>,
-      <xref linkend="libsoup"/>,
+      <xref linkend="libsoup3"/>,
       <xref linkend="libtasn1"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="mesa"/>,
       <xref linkend="openjpeg2"/>,
       <xref linkend="ruby"/>,
       <xref linkend="sqlite"/>,
-      <xref linkend="which"/>,
+      <xref linkend="unifdef"/>,
+      <xref linkend="which"/>, and
       <xref linkend="wpebackend-fdo"/>
     </para>
 @z
@@ -122,59 +128,65 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="enchant"/>,
-      <xref linkend="geoclue2"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="hicolor-icon-theme"/>, and
-      <xref linkend="libnotify"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
+      <xref linkend="bubblewrap"/>,
       <xref linkend="enchant"/>,
       <xref linkend="geoclue2"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="libnotify"/>
+      <xref linkend="libavif"/>,
+      <xref linkend="libseccomp"/>, and
+      <xref linkend="xdg-dbus-proxy"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="bubblewrap"/>,
+      <xref linkend="enchant"/>,
+      <xref linkend="geoclue2"/>,
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="hicolor-icon-theme"/>,
+      <xref linkend="libavif"/>,
+      <xref linkend="libseccomp"/>, and
+      <xref linkend="xdg-dbus-proxy"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="bubblewrap"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="gtk4"/>,
+      <!--<xref linkend="bubblewrap"/>,-->
+      <xref linkend="gi-docgen"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="wayland"/>,
       <xref linkend="woff2"/>,
       <ulink url="https://ccache.dev/">ccache</ulink>,
       <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="https://github.com/AOMediaCodec/libavif">libavif</ulink>,
-      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>, and
-      <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
+      <!--<ulink url="https://github.com/AOMediaCodec/libavif">libavif</ulink>,-->
+      <ulink url="https://github.com/libjxl/libjxl">libjxl</ulink>, and
+      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>
+      <!--<ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="bubblewrap"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="gtk4"/>,
+      <!--<xref linkend="bubblewrap"/>,-->
+      <xref linkend="gi-docgen"/>,
       <xref linkend="harfbuzz"/>,
       <xref linkend="wayland"/>,
       <xref linkend="woff2"/>,
       <ulink url="https://ccache.dev/">ccache</ulink>,
       <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="https://github.com/AOMediaCodec/libavif">libavif</ulink>,
-      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>,
-      <ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>
+      <!--<ulink url="https://github.com/AOMediaCodec/libavif">libavif</ulink>,-->
+      <ulink url="https://github.com/libjxl/libjxl">libjxl</ulink>, and
+      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>
+      <!--<ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>-->
     </para>
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/webkitgtk"/>
+      Editor Notes: <ulink url="&blfs-wiki;/webkitgtk"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/webkitgtk"/>
+      &EditorNotes;: <ulink url="&blfs-wiki;/webkitgtk"/>
 @z
 
 @x
@@ -184,21 +196,29 @@
 @z
 
 @x
-      Install <application>WebKitGTK</application> by running the
-      following commands:
+        This package allows building with either GTK-3 or GTK-4, but not both
+        in the same build. The GTK-4 version is needed for packages such as
+        <xref linkend="epiphany"/>. Other packages, such as
+        <xref linkend="balsa"/> or <xref linkend="evolution"/>, require the
+        GTK-3 version. Both versions can be installed side by side on the
+        same system. We give build instructions for both cases below, but
+        the only difference is the setting of <command>-DUSE_GTK4</command>
 @y
-      以下のコマンドを実行して <application>WebKitGTK</application> をビルドします。
+        This package allows building with either GTK-3 or GTK-4, but not both
+        in the same build. The GTK-4 version is needed for packages such as
+        <xref linkend="epiphany"/>. Other packages, such as
+        <xref linkend="balsa"/> or <xref linkend="evolution"/>, require the
+        GTK-3 version. Both versions can be installed side by side on the
+        same system. We give build instructions for both cases below, but
+        the only difference is the setting of <command>-DUSE_GTK4</command>
 @z
 
 @x
-      This package does not have a working testsuite. However, there is a
-      usable basic graphical web browser in the build directory,
-      <application>build/bin/MiniBrowser</application>. If launching it fails,
-      there is a problem with the build.
+      If you want to install the GTK+-3 version of
+      <application>WebKitGTK</application>, run the following commands:
 @y
-      このパッケージには有効なテストスイートがありません。
-      しかしソースディレクトリ内には、単純なウェブブラウザー <application>Programs/GtkLauncher</application> が含まれています。
-      この起動に失敗したとしたら、ビルドに問題があることが分かります。
+      If you want to install the GTK+-3 version of
+      <application>WebKitGTK</application>, run the following commands:
 @z
 
 @x
@@ -234,34 +254,42 @@
 @x
         <seg>
 <!-- Moved to /usr/libexec/webkit2gtk-4.0, so shouldn't appear here
-          jsc, 
+          jsc,
           MiniBrowser, and -->
           WebKitWebDriver
         </seg>
         <seg>
-          libjavascriptcoregtk-4.0.so and
-          libwebkit2gtk-4.0.so
+          libjavascriptcoregtk-4.1.so,
+          libjavascriptcoregtk-6.0.so,
+          libwebkit2gtk-4.1.so, and
+          libwebkitgtk-6.0.so
         </seg>
         <seg>
-          /usr/include/webkitgtk-4.0,
-          /usr/lib{,exec}/webkit2gtk-4.0, and
-          /usr/share/gtk-doc/html/webkit{2,dom}gtk-4.0
+          /usr/include/webkitgtk-4.1,
+          /usr/include/webkitgtk-6.0,
+          /usr/lib{,exec}/webkit2gtk-4.1,
+          /usr/lib{,exec}/webkitgtk-6.0, and
+          /usr/share/gtk-doc/html/{jsc-glib,webkit2gtk{,-web-extension}}-4.1
         </seg>
 @y
         <seg>
 <!-- Moved to /usr/libexec/webkit2gtk-4.0, so shouldn't appear here
-          jsc, 
+          jsc,
           MiniBrowser, and -->
           WebKitWebDriver
         </seg>
         <seg>
-          libjavascriptcoregtk-4.0.so,
-          libwebkit2gtk-4.0.so
+          libjavascriptcoregtk-4.1.so,
+          libjavascriptcoregtk-6.0.so,
+          libwebkit2gtk-4.1.so,
+          libwebkitgtk-6.0.so
         </seg>
         <seg>
-          /usr/include/webkitgtk-4.0,
-          /usr/lib{,exec}/webkit2gtk-4.0,
-          /usr/share/gtk-doc/html/webkit{2,dom}gtk-4.0
+          /usr/include/webkitgtk-4.1,
+          /usr/include/webkitgtk-6.0,
+          /usr/lib{,exec}/webkit2gtk-4.1,
+          /usr/lib{,exec}/webkitgtk-6.0,
+          /usr/share/gtk-doc/html/{jsc-glib,webkit2gtk{,-web-extension}}-4.1
         </seg>
 @z
 
@@ -285,17 +313,3 @@
             非常に簡単なグラフィカルブラウザー。
 @z
 
-@x libjavascriptcoregtk-4.0.so
-            contains core JavaScript API functions used by
-            <command>jsc</command> and
-            <filename class="libraryfile">libwebkit2gtk-4.0</filename>
-@y
-            <command>jsc</command> と <filename
-            class="libraryfile">libwebkit2gtk-4.0.so</filename> により利用されるコアな JavaScript API 関数を提供します。
-@z
-
-@x libwebkit2gtk-4.0.so
-            contains the <application>WebKit2</application> API functions
-@y
-            <application>WebKit2</application> API 関数を提供します。
-@z

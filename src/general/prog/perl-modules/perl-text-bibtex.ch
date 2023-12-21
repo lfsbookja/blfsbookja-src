@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -117,10 +113,10 @@
 
 @x bibparse
               parses a series of BibTeX files with command line options to
-              control the string post-processing behaviour
+              control the string post-processing behavior
 @y
               parses a series of BibTeX files with command line options to
-              control the string post-processing behaviour
+              control the string post-processing behavior
 @z
 
 @x dumpnames

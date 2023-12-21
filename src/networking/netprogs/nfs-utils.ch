@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -80,14 +76,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libtirpc"/> and
-      <xref linkend="rpcsvc-proto"/>
+      <xref linkend="libtirpc"/>,
+      <xref linkend="libevent"/>,
+      <xref linkend="rpcsvc-proto"/>, and
+      <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libtirpc"/>,
-      <xref linkend="rpcsvc-proto"/>
+      <xref linkend="libevent"/>,
+      <xref linkend="rpcsvc-proto"/>,
+      <xref linkend="sqlite"/>
     </para>
 @z
 
@@ -100,7 +100,6 @@
       This is now built in, as of 2.2.1-->
       <xref linkend="libnsl"/> (for NIS client support),
       <xref linkend="openldap"/> (for LDAP authentication),
-      <xref linkend="sqlite"/>,
       <xref linkend="mitkrb"/> or
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">
         libgssapi
@@ -119,14 +118,13 @@
       This is now built in, as of 2.2.1-->
       <xref linkend="libnsl"/> (for NIS client support),
       <xref linkend="openldap"/> (for LDAP authentication),
-      <xref linkend="sqlite"/>,
       <xref linkend="mitkrb"/> or
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">
         libgssapi
       </ulink>, and
       <ulink url="http://www.citi.umich.edu/projects/nfsv4/linux/">
         librpcsecgss
-      </ulink> (for GSS and RPC security support),
+      </ulink> (for GSS and RPC security support), and
       <xref linkend="libcap-pam"/>
     </para>
 @z
@@ -144,9 +142,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -261,21 +259,19 @@
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x
-      The tests for this package require that the package be installed and
-      configured as specified below.  In addition, the daemon from <xref
-      linkend="rpcbind"/> needs to be running and the tests need to be run as
-      the <systemitem class="username">root</systemitem> user.
+      The tests for this package require that the package be installed.
+      In addition, the rpc.statd daemon must not be running and the tests
+      need to be run as the &root; user.
 @y
-      The tests for this package require that the package be installed and
-      configured as specified below.  In addition, the daemon from <xref
-      linkend="rpcbind"/> needs to be running and the tests need to be run as
-      the <systemitem class="username">root</systemitem> user.
+      The tests for this package require that the package be installed.
+      In addition, the rpc.statd daemon must not be running and the tests
+      need to be run as the &root; user.
 @z
 
 @x

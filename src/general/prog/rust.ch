@@ -40,46 +40,14 @@
 
 @x
       As with many  other programming languages, rustc (the rust compiler)
-      needs a binary from which to bootstrap. It will download a stage0 binary
-      and many cargo crates (these are actually .tar.gz source archives) at
-      the start of the build, so you cannot compile it without an internet
-      connection.
+      needs a binary from which to bootstrap. It will download a stage0
+      binary at the start of the build, so you cannot compile it without an
+      Internet connection.
 @y
       As with many  other programming languages, rustc (the rust compiler)
-      needs a binary from which to bootstrap. It will download a stage0 binary
-      and many cargo crates (these are actually .tar.gz source archives) at
-      the start of the build, so you cannot compile it without an internet
-      connection.
-@z
-
-@x
-      These crates will then remain in various forms (cache, directories of
-      extracted source), in <filename class="directory">~/.cargo</filename> for
-      ever more. It is common for large <application>rust</application> packages
-      to use multiple versions of some crates. If you purge the files before
-      updating this package, very few crates will need to be updated by the
-      packages in this book which use it (and they will be downloaded as
-      required). But if you retain an older version as a fallback option and
-      then use it (when <emphasis>not</emphasis> building in
-      <filename class="directory">/usr</filename>), it is likely that it will
-      then have to re-download some crates. For a full download (i.e. starting
-      with an empty or missing <filename class="directory">~/.cargo</filename>)
-      downloading the external cargo files for this version only takes a minute
-      or so on a fast network.
-@y
-      These crates will then remain in various forms (cache, directories of
-      extracted source), in <filename class="directory">~/.cargo</filename> for
-      ever more. It is common for large <application>rust</application> packages
-      to use multiple versions of some crates. If you purge the files before
-      updating this package, very few crates will need to be updated by the
-      packages in this book which use it (and they will be downloaded as
-      required). But if you retain an older version as a fallback option and
-      then use it (when <emphasis>not</emphasis> building in
-      <filename class="directory">/usr</filename>), it is likely that it will
-      then have to re-download some crates. For a full download (i.e. starting
-      with an empty or missing <filename class="directory">~/.cargo</filename>)
-      downloading the external cargo files for this version only takes a minute
-      or so on a fast network.
+      needs a binary from which to bootstrap. It will download a stage0
+      binary at the start of the build, so you cannot compile it without an
+      Internet connection.
 @z
 
 @x
@@ -92,7 +60,7 @@
         class="directory">/opt</filename> directory.  In particular, if you
         have reason to rebuild with a modified configuration (e.g. using the
         shipped LLVM after building with shared LLVM, perhaps to compile crates
-        for architectres which the BLFS LLVM build does not support)
+        for architectures which the BLFS LLVM build does not support)
         it is possible for the install to leave a broken
         <command>cargo</command> program. In such a situation, either remove
         the existing installation first, or use a different prefix such as
@@ -107,7 +75,7 @@
         class="directory">/opt</filename> directory.  In particular, if you
         have reason to rebuild with a modified configuration (e.g. using the
         shipped LLVM after building with shared LLVM, perhaps to compile crates
-        for architectres which the BLFS LLVM build does not support)
+        for architectures which the BLFS LLVM build does not support)
         it is possible for the install to leave a broken
         <command>cargo</command> program. In such a situation, either remove
         the existing installation first, or use a different prefix such as
@@ -116,12 +84,10 @@
 
 @x
         If you prefer, you can of course change the prefix to <filename
-        class="directory">/usr</filename> and omit the
-        <command>ldconfig</command> and the actions to add rustc to the PATH.
+        class="directory">/usr</filename>.
 @y
         If you prefer, you can of course change the prefix to <filename
-        class="directory">/usr</filename> and omit the
-        <command>ldconfig</command> and the actions to add rustc to the PATH.
+        class="directory">/usr</filename>.
 @z
 
 @x
@@ -131,7 +97,7 @@
       However it can be mostly limited to a specified number of processors by
       a combination of adding the switch <literal>--jobs &lt;N&gt;</literal>
       (e.g. '--jobs 4' to limit to 4 processors) on each invocation of
-      <command>python3 ./x.py</command> <emphasis>and</emphasis> using an
+      <command>python3 x.py</command> <emphasis>and</emphasis> using an
       environment variable <envar>CARGO_BUILD_JOBS=&lt;N&gt;</envar>. At the
       moment this is not effective when some of the rustc tests are run.
 @y
@@ -141,9 +107,23 @@
       However it can be mostly limited to a specified number of processors by
       a combination of adding the switch <literal>--jobs &lt;N&gt;</literal>
       (e.g. '--jobs 4' to limit to 4 processors) on each invocation of
-      <command>python3 ./x.py</command> <emphasis>and</emphasis> using an
+      <command>python3 x.py</command> <emphasis>and</emphasis> using an
       environment variable <envar>CARGO_BUILD_JOBS=&lt;N&gt;</envar>. At the
       moment this is not effective when some of the rustc tests are run.
+@z
+
+@x
+      The current version of rust's num_cpus crate now recognizes that cgroups
+      can be used to restrict which processors it is allowed to use. So if your
+      machine lacks DRAM (typically, less than 2GB DRAM per core) that might be
+      an alternative to taking CPUs offline.
+      Read <xref linkend='build-in-cgroup'/> for how to use a cgroup.
+@y
+      The current version of rust's num_cpus crate now recognizes that cgroups
+      can be used to restrict which processors it is allowed to use. So if your
+      machine lacks DRAM (typically, less than 2GB DRAM per core) that might be
+      an alternative to taking CPUs offline.
+      Read <xref linkend='build-in-cgroup'/> for how to use a cgroup.
 @z
 
 @x
@@ -176,20 +156,6 @@
         The build times of this version when repeated on the same machine are
         often reasonably consistent, but as with all compilations using
         <command>rustc</command> there can be some very slow outliers.
-@z
-
-@x
-        Unusually, a DESTDIR-style method is being used to install this package.
-        This is because running the install as root not only downloads all of the
-        cargo files again (to <filename>/root/.cargo</filename>), it then spends
-        a very long time recompiling. Using this method saves a lot of time, at
-        the cost of extra disk space.
-@y
-        Unusually, a DESTDIR-style method is being used to install this package.
-        This is because running the install as root not only downloads all of the
-        cargo files again (to <filename>/root/.cargo</filename>), it then spends
-        a very long time recompiling. Using this method saves a lot of time, at
-        the cost of extra disk space.
 @z
 
 @x
@@ -243,35 +209,69 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="curl"/>,
-      <xref linkend="cmake"/>, and
-      <xref linkend="libssh2"/>
+      <xref linkend="cmake"/> and
+      <!-- Required for downloading stage 0 binaries.
+           Otherwise it's recommended (if not installed, a vendored copy
+           will be built). -->
+      <xref linkend="curl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="curl"/>,
-      <xref linkend="cmake"/>, and
-      <xref linkend="libssh2"/>
+      <xref linkend="cmake"/>,
+      <!-- Required for downloading stage 0 binaries.
+           Otherwise it's recommended (if not installed, a vendored copy
+           will be built). -->
+      <xref linkend="curl"/>
     </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="libssh2"/> and
+      <xref linkend="llvm"/>
+      (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
+      system LLVM instead of building its shipped version)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="libssh2"/>,
+      <xref linkend="llvm"/>
+      (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
+      system LLVM instead of building its shipped version)
+    </para>
+@z
+
+@x
+        If a recommended dependency is not installed, a shipped copy in the
+        Rustc source tarball will be built and used.
+@y
+        If a recommended dependency is not installed, a shipped copy in the
+        Rustc source tarball will be built and used.
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (used by the testsuite if it is present)
+      <xref linkend="gdb"/> (used by the test suite if it is present),
+      <xref linkend="git"/> (required by the test suite), and
+      <ulink url='https://libgit2.org/'>libgit2</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gdb"/> (used by the testsuite if it is present)
+      <xref linkend="gdb"/> (used by the test suite if it is present),
+      <xref linkend="git"/> (required by the test suite),
+      <ulink url='https://libgit2.org/'>libgit2</ulink>
     </para>
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/rust"/>
+      Editor Notes: <ulink url="&blfs-wiki;/rust"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/rust"/>
+      &EditorNotes;: <ulink url="&blfs-wiki;/rust"/>
 @z
 
 @x
@@ -281,17 +281,51 @@
 @z
 
 @x
+        Currently the rust compiler produces SSE2 instructions for 32-bit x86,
+        causing the generated code to be broken on 32-bit systems without a
+        SSE2-capable processor.  All x86 processor models released after
+        2004 should be SSE2-capable.  Run
+        <command>lscpu | grep sse2</command> as a test.  If it outputs
+        anything, your CPU is SSE2-capable and OK.  Otherwise you may try
+        to build this package <emphasis>on a SSE2-capable system</emphasis>
+        with the following fix applied:
+@y
+        Currently the rust compiler produces SSE2 instructions for 32-bit x86,
+        causing the generated code to be broken on 32-bit systems without a
+        SSE2-capable processor.  All x86 processor models released after
+        2004 should be SSE2-capable.  Run
+        <command>lscpu | grep sse2</command> as a test.  If it outputs
+        anything, your CPU is SSE2-capable and OK.  Otherwise you may try
+        to build this package <emphasis>on a SSE2-capable system</emphasis>
+        with the following fix applied:
+@z
+
+@x
+        And copy the resulting
+        <filename class="directory">/opt/rustc-&rust-version;</filename>
+        to the system without SSE2 capability. But this change is still
+        under upstream review and not tested by BLFS editors.
+@y
+        And copy the resulting
+        <filename class="directory">/opt/rustc-&rust-version;</filename>
+        to the system without SSE2 capability. But this change is still
+        under upstream review and not tested by BLFS editors.
+@z
+
+@x
       To install into the
-      <filename class="directory">/opt</filename> directory, remove the symlink
+      <filename class="directory">/opt</filename> directory, remove any
+      existing <filename>/opt/rustc</filename> symlink
       and create a new directory (i.e. with a different name if trying a
-      modified build).
+      modified build of the same version).
       As the <systemitem class="username">root</systemitem>
       user:
 @y
       To install into the
-      <filename class="directory">/opt</filename> directory, remove the symlink
+      <filename class="directory">/opt</filename> directory, remove any
+      existing <filename>/opt/rustc</filename> symlink
       and create a new directory (i.e. with a different name if trying a
-      modified build).
+      modified build of the same version).
       As the <systemitem class="username">root</systemitem>
       user:
 @z
@@ -325,14 +359,14 @@
 @z
 
 @x
-        The testsuite will generate some messages in the
+        The test suite will generate some messages in the
         <phrase revision="sysv">system log</phrase>
         <phrase revision="systemd">systemd journal</phrase>
         for traps on invalid opcodes, and for segmentation faults.
         In themselves these are nothing to worry about, just a way for the
         test to be terminated.
 @y
-        The testsuite will generate some messages in the
+        The test suite will generate some messages in the
         <phrase revision="sysv">system log</phrase>
         <phrase revision="systemd">systemd journal</phrase>
         for traps on invalid opcodes, and for segmentation faults.
@@ -341,43 +375,41 @@
 @z
 
 @x
-      To run the tests issue <command>python3 ./x.py test --verbose
-      --no-fail-fast | tee rustc-testlog</command>: as with the build, that
-      will use all available CPUs.
+      To run the tests (again using all available CPUs) issue:
 @y
-      To run the tests issue <command>python3 ./x.py test --verbose
-      --no-fail-fast | tee rustc-testlog</command>: as with the build, that
-      will use all available CPUs.
+      To run the tests (again using all available CPUs) issue:
 @z
 
 @x
-      At a minimum, fifteen tests will fail: all the tests (twelve) in
-      the <quote>assembly</quote> suite, apparently because warnings are
-      tuened on,
-      run-make-fulldeps/long-linker-command-lines, run-make-fulldeps/print-cfg,
-      run-make-fulldeps/sysroot-crates-are-unstable.
-      If <command>gdb</command> is installed,  another failure
-      (debuginfo/function-names.rs) can be expected.
+      Two tests,<filename>tests/ui/issues/issue-21763.rs</filename> and
+      <filename>tests/debuginfo/regression-bad-location-list-67992.rs</filename>,
+      are known to fail.
 @y
-      At a minimum, fifteen tests will fail: all the tests (twelve) in
-      the <quote>assembly</quote> suite, apparently because warnings are
-      tuened on,
-      run-make-fulldeps/long-linker-command-lines, run-make-fulldeps/print-cfg,
-      run-make-fulldeps/sysroot-crates-are-unstable.
-      If <command>gdb</command> is installed,  another failure
-      (debuginfo/function-names.rs) can be expected.
+      Two tests,<filename>tests/ui/issues/issue-21763.rs</filename> and
+      <filename>tests/debuginfo/regression-bad-location-list-67992.rs</filename>,
+      are known to fail.
 @z
 
 @x
-      As with all large testsuites, other tests might fail on some machines -
-      if the number of additional failures is in the single digits,
-      check the log for 'FAILED' and review lines above that, particularly the
+      If <command>FileCheck</command> from <application>LLVM</application> has
+      not been installed, all 47 tests from the <quote>assembly</quote> suite
+      will fail.
+@y
+      If <command>FileCheck</command> from <application>LLVM</application> has
+      not been installed, all 47 tests from the <quote>assembly</quote> suite
+      will fail.
+@z
+
+@x
+      As with all large test suites, other tests might fail on some machines -
+      if the number of additional failures is low,
+      check the log for 'failures:' and review lines above that, particularly the
       'stderr:' lines. Any mention of
       SIGSEGV or signal 11 in a failing test is a cause for concern.
 @y
-      As with all large testsuites, other tests might fail on some machines -
-      if the number of additional failures is in the single digits,
-      check the log for 'FAILED' and review lines above that, particularly the
+      As with all large test suites, other tests might fail on some machines -
+      if the number of additional failures is low,
+      check the log for 'failures:' and review lines above that, particularly the
       'stderr:' lines. Any mention of
       SIGSEGV or signal 11 in a failing test is a cause for concern.
 @z
@@ -407,37 +439,69 @@
 @z
 
 @x
-      The number of tests which failed can be found by running:
+      The number of tests which passed and failed can be found by running:
 @y
-      The number of tests which failed can be found by running:
+      The number of tests which passed and failed can be found by running:
 @z
 
 @x
-      And similarly if you care about how many tests passed use $4, for those
-      which were ignored (i.e. skipped) use $8 (and $10 for 'measured', $12 for
-      'filtered out' but both are probably zero).
+      The other available fields are $8 for those which were ignored
+      (i.e. skipped),  $10 for 'measured' and $12 for 'filtered out' but both
+      those last two are probably zero.
 @y
-      And similarly if you care about how many tests passed use $4, for those
-      which were ignored (i.e. skipped) use $8 (and $10 for 'measured', $12 for
-      'filtered out' but both are probably zero).
+      The other available fields are $8 for those which were ignored
+      (i.e. skipped),  $10 for 'measured' and $12 for 'filtered out' but both
+      those last two are probably zero.
 @z
 
 @x
-      Still as your normal user, do a DESTDIR install:
+      Now, as the &root; user, install the package:
 @y
-      Still as your normal user, do a DESTDIR install:
+      Now, as the &root; user, install the package:
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user
-      install the files from the DESTDIR:
+        If <command>sudo</command> or <command>su</command> is invoked for
+        switching to the &root; user, ensure
+        <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> is correctly passed or the
+        following command may completely rebuild this package.  For
+        <command>sudo</command>, use the
+        <option>--preserve-env=LIBSSH2_SYS_USE_PKG_CONFIG</option> option.
+        For <command>su</command>, do <emphasis>not</emphasis> use the
+        <option>-</option> or <option>--login</option>.
 @y
-      Now, as the <systemitem class="username">root</systemitem> user
-      install the files from the DESTDIR:
+        If <command>sudo</command> or <command>su</command> is invoked for
+        switching to the &root; user, ensure
+        <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> is correctly passed or the
+        following command may completely rebuild this package.  For
+        <command>sudo</command>, use the
+        <option>--preserve-env=LIBSSH2_SYS_USE_PKG_CONFIG</option> option.
+        For <command>su</command>, do <emphasis>not</emphasis> use the
+        <option>-</option> or <option>--login</option>.
 @z
 
 @x
-    <title>Command Explanations</title>
+      The building system attempts to install some files twice, and during
+      the second attempt it renames the old one (installed in the first
+      attempt) with the <filename class='extension'>.old</filename> suffix.
+      As the &root; user, remove these files:
+@y
+      The building system attempts to install some files twice, and during
+      the second attempt it renames the old one (installed in the first
+      attempt) with the <filename class='extension'>.old</filename> suffix.
+      As the &root; user, remove these files:
+@z
+
+@x
+      Still as the &root; user, symlink a <application>Zsh</application>
+      completion file into the correct location:
+@y
+      Still as the &root; user, symlink a <application>Zsh</application>
+      completion file into the correct location:
+@z
+
+@x
+    <title>Command Explanations</title>			
 @y
     <title>&CommandExplanations;</title>
 @z
@@ -455,49 +519,53 @@
 @z
 
 @x
-      <command>targets = "X86"</command>: this avoids building all the available
-      linux cross-compilers (Aarch64, MIPS, PowerPC, SystemZ, etc). Unfortunately,
+      <literal>targets = "X86"</literal>: this avoids building all the available
+      linux cross-compilers (AArch64, MIPS, PowerPC, SystemZ, etc). Unfortunately,
       rust insists on installing source files for these below
       <filename class="directory">/opt/rustc/lib/src</filename>.
 @y
-      <command>targets = "X86"</command>: this avoids building all the available
-      linux cross-compilers (Aarch64, MIPS, PowerPC, SystemZ, etc). Unfortunately,
+      <literal>targets = "X86"</literal>: this avoids building all the available
+      linux cross-compilers (AArch64, MIPS, PowerPC, SystemZ, etc). Unfortunately,
       rust insists on installing source files for these below
       <filename class="directory">/opt/rustc/lib/src</filename>.
 @z
 
 @x
-      <command>extended = true</command>: this installs Cargo alongside Rust.
+      <literal>extended = true</literal>: this installs several tools
+      (specified by the <literal>tools</literal> entry) alongside
+      <command>rustc</command>.
 @y
-      <command>extended = true</command>: this installs Cargo alongside Rust.
+      <literal>extended = true</literal>: this installs several tools
+      (specified by the <literal>tools</literal> entry) alongside
+      <command>rustc</command>.
 @z
 
 @x
-      <command>channel = "stable"</command>: this ensures only stable features
+      <literal>tools = ["cargo", "clippy", "rustdoc", "rustfmt"]</literal>:
+      only build the tools from the 'default' profile in binary command
+      <command>rustup</command> which are recommended for most users.
+      The other tools are unlikely to be useful unless using (old) code
+      analyzers or editing the standard library.
+@y
+      <literal>tools = ["cargo", "clippy", "rustdoc", "rustfmt"]</literal>:
+      only build the tools from the 'default' profile in binary command
+      <command>rustup</command> which are recommended for most users.
+      The other tools are unlikely to be useful unless using (old) code
+      analyzers or editing the standard library.
+@z
+
+@x
+      <literal>channel = "stable"</literal>: this ensures only stable features
       can be used, the default in <filename>config.toml</filename> is to use
       development features, which is not appropriate for a released version.
 @y
-      <command>channel = "stable"</command>: this ensures only stable features
+      <literal>channel = "stable"</literal>: this ensures only stable features
       can be used, the default in <filename>config.toml</filename> is to use
       development features, which is not appropriate for a released version.
 @z
 
 @x
-      <command>rpath = false</command>: by default, <command>rust</command> can
-      be run from where it was built, without being installed. That adds DT_RPATH
-      entries to all of the ELF files, which produces very messy output from
-      <command>ldd</command>, showing the libraries in the place they were built,
-      even if they have been deleted from there after the install.
-@y
-      <command>rpath = false</command>: by default, <command>rust</command> can
-      be run from where it was built, without being installed. That adds DT_RPATH
-      entries to all of the ELF files, which produces very messy output from
-      <command>ldd</command>, showing the libraries in the place they were built,
-      even if they have been deleted from there after the install.
-@z
-
-@x
-      <command>[target.x86_64-unknown-linux-gnu]</command>: the syntax of
+      <literal>[target.x86_64-unknown-linux-gnu]</literal>: the syntax of
       <filename>config.toml</filename> requires an <literal>llvm-config</literal>
       entry for each target for which system-llvm is to be used. Change the target
       to <literal>[target.i686-unknown-linux-gnu]</literal> if you are building
@@ -505,7 +573,7 @@
       against the shipped llvm, or do not have clang, but the resulting build will
       be larger and take longer.
 @y
-      <command>[target.x86_64-unknown-linux-gnu]</command>: the syntax of
+      <literal>[target.x86_64-unknown-linux-gnu]</literal>: the syntax of
       <filename>config.toml</filename> requires an <literal>llvm-config</literal>
       entry for each target for which system-llvm is to be used. Change the target
       to <literal>[target.i686-unknown-linux-gnu]</literal> if you are building
@@ -515,65 +583,77 @@
 @z
 
 @x
-      <command>export RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi"</command>:
-      This adds a link to libffi to any RUSTFLAGS you may already be passing
-      to the build. On some systems, linking fails to include libffi unless
-      this is used. The reason why this is needed is not clear.
+      <command>export LIBSSH2_SYS_USE_PKG_CONFIG=1</command>: Allow
+      <command>cargo</command> to link to system libssh2.
 @y
-      <command>export RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi"</command>:
-      This adds a link to libffi to any RUSTFLAGS you may already be passing
-      to the build. On some systems, linking fails to include libffi unless
-      this is used. The reason why this is needed is not clear.
+      <command>export LIBSSH2_SYS_USE_PKG_CONFIG=1</command>: Allow
+      <command>cargo</command> to link to system libssh2.
 @z
 
 @x
-      <command>--verbose</command>: this switch can sometimes provide more
+      <envar>SSL_CERT_DIR=/etc/ssl/certs</envar>: Work around an issue
+      causing test failures with the CA certificate store layout used by
+      <xref linkend='make-ca'/>.
+@y
+      <envar>SSL_CERT_DIR=/etc/ssl/certs</envar>: Work around an issue
+      causing test failures with the CA certificate store layout used by
+      <xref linkend='make-ca'/>.
+@z
+
+@x
+      <parameter>--verbose</parameter>: this switch can sometimes provide more
       information about a test which fails.
 @y
-      <command>--verbose</command>: this switch can sometimes provide more
+      <parameter>--verbose</parameter>: this switch can sometimes provide more
       information about a test which fails.
 @z
 
 @x
-      <command>--no-fail-fast</command>: this switch ensures that the testsuite
+      <parameter>--no-fail-fast</parameter>: this switch ensures that the test suite
       will not stop at the first error.
 @y
-      <command>--no-fail-fast</command>: this switch ensures that the testsuite
+      <parameter>--no-fail-fast</parameter>: this switch ensures that the test suite
       will not stop at the first error.
 @z
 
 @x
-      <command>export LIBSSH2_SYS_USE_PKG_CONFIG=1</command>: On some systems,
-      cairo fails to link during the install because it cannot find libssh2.
-      This seems to fix it, but again the reason why the problem occurs is not
-      understood.
+    <title>Configuring Rust</title>
 @y
-      <command>export LIBSSH2_SYS_USE_PKG_CONFIG=1</command>: On some systems,
-      cairo fails to link during the install because it cannot find libssh2.
-      This seems to fix it, but again the reason why the problem occurs is not
-      understood.
+    <title>Configuring Rust</title>
 @z
 
 @x
-      <command>DESTDIR=${PWD}/install python3 ./x.py install</command>: This
-      effects a DESTDIR-style install in the source tree,creating an <filename
-      class="directory">install</filename> directory. Note that DESTDIR installs
-      need an absolute path, passing 'install' will not work.
+      <title>Configuration Information</title>
 @y
-      <command>DESTDIR=${PWD}/install python3 ./x.py install</command>: This
-      effects a DESTDIR-style install in the source tree,creating an <filename
-      class="directory">install</filename> directory. Note that DESTDIR installs
-      need an absolute path, passing 'install' will not work.
+      <title>Configuration Information</title>
 @z
 
 @x
-      <command>chown -R root:root install</command>: the DESTDIR install
-      was run by a regular user, who owns the files. For security, change their
-      owner before doing a simple copy to install them.
+        If you installed <application>rustc</application> in
+        <filename class="directory">/opt</filename>, you need to update the
+        following configuration files so that <application>rustc</application>
+        is correctly found by other packages and system processes.
 @y
-      <command>chown -R root:root install</command>: the DESTDIR install
-      was run by a regular user, who owns the files. For security, change their
-      owner before doing a simple copy to install them.
+        If you installed <application>rustc</application> in
+        <filename class="directory">/opt</filename>, you need to update the
+        following configuration files so that <application>rustc</application>
+        is correctly found by other packages and system processes.
+@z
+
+@x
+        As the <systemitem class="username">root</systemitem> user, create
+        the <filename>/etc/profile.d/rustc.sh</filename> file:
+@y
+        As the <systemitem class="username">root</systemitem> user, create
+        the <filename>/etc/profile.d/rustc.sh</filename> file:
+@z
+
+@x
+        Immediately after installation, update the current PATH
+        for your current shell as a normal user:
+@y
+        Immediately after installation, update the current PATH
+        for your current shell as a normal user:
 @z
 
 @x
@@ -594,10 +674,8 @@
 
 @x
         <seg>
-          cargo-clippy, cargo-fmt, cargo-miri (optional), cargo, clippy-driver,
-          miri (optional),
-          rls, rust-demangler, rust-gdb, rust-gdbgui, rust-lldb, rustc,
-          rustdoc, rustfmt.
+          cargo-clippy, cargo-fmt, cargo, clippy-driver, rust-gdb,
+          rust-gdbgui, rust-lldb, rustc, rustdoc, and rustfmt
         </seg>
         <seg>
           librustc-driver-&lt;16-byte-hash&gt;.so,
@@ -611,14 +689,12 @@
         </seg>
 @y
         <seg>
-          cargo-clippy, cargo-fmt, cargo-miri (optional), cargo, clippy-driver,
-          miri (optional),
-          rls, rust-demangler, rust-gdb, rust-gdbgui, rust-lldb, rustc,
-          rustdoc, rustfmt
+          cargo-clippy, cargo-fmt, cargo, clippy-driver, rust-gdb,
+          rust-gdbgui, rust-lldb, rustc, rustdoc, rustfmt
         </seg>
         <seg>
           librustc-driver-&lt;16-byte-hash&gt;.so,
-          libstd-&lt;16-byte-hash&gt;.so, and
+          libstd-&lt;16-byte-hash&gt;.so,
           libtest-&lt;16-byte-hash&gt;.so
         </seg>
         <seg>

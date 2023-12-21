@@ -18,15 +18,17 @@
 @x
       The <application>cURL</application> package contains an utility
       and a library used for transferring files with URL syntax to any of
-      the following protocols: FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP,
-      TELNET, DICT, LDAP, LDAPS and FILE. Its ability to both download
+      the following protocols: DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP,
+      HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTSP, SMB, SMBS,
+      SMTP, SMPTS, TELNET, and TFTP. Its ability to both download
       and upload files can be incorporated into other programs to support
       functions like streaming media.
 @y
       The <application>cURL</application> package contains an utility
       and a library used for transferring files with URL syntax to any of
-      the following protocols: FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP,
-      TELNET, DICT, LDAP, LDAPS and FILE. Its ability to both download
+      the following protocols: DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP,
+      HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTSP, SMB, SMBS,
+      SMTP, SMPTS, TELNET, and TFTP. Its ability to both download
       and upload files can be incorporated into other programs to support
       functions like streaming media.
 @z
@@ -103,16 +105,21 @@
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="samba"/>,
+      <!-- cURL implements the SMB client with own code.  Samba is only
+           used for /usr/bin/ntlm_auth helper.  The path is correctly
+           guessed even if Samba is not installed, so "runtime".  -->
+      <xref role='runtime' linkend="samba"/>
+      (runtime, for NTLM authentication),
+      <ulink url="https://www.gnu.org/software/gsasl/">gsasl</ulink>,
       <ulink url="https://www.secureauth.com/labs/open-source-tools/impacket/">impacket</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
-      <ulink url="https://github.com/ngtcp2/ngtcp2/">ngtcp2</ulink>, 
+      <ulink url="https://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
+      <ulink url="https://github.com/ngtcp2/ngtcp2/">ngtcp2</ulink>,
       <!--<ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
       PolarSSL), and -->
       <!-- mbedTLS/PolarSSL support was removed in 7.65.1 -->
       <ulink url="https://github.com/cloudflare/quiche">quiche</ulink>, and
-      <ulink url="http://spnego.sourceforge.net/">SPNEGO</ulink>
+      <ulink url="https://spnego.sourceforge.net/">SPNEGO</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -126,16 +133,21 @@
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
       <xref linkend="openldap"/>,
-      <xref linkend="samba"/>,
+      <!-- cURL implements the SMB client with own code.  Samba is only
+           used for /usr/bin/ntlm_auth helper.  The path is correctly
+           guessed even if Samba is not installed, so "runtime".  -->
+      <xref role='runtime' linkend="samba"/>
+      (runtime, for NTLM authentication),
+      <ulink url="https://www.gnu.org/software/gsasl/">gsasl</ulink>,
       <ulink url="https://www.secureauth.com/labs/open-source-tools/impacket/">impacket</ulink>,
       <ulink url="https://launchpad.net/libmetalink/">libmetalink</ulink>,
-      <ulink url="http://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
-      <ulink url="https://github.com/ngtcp2/ngtcp2/">ngtcp2</ulink>, 
+      <ulink url="https://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
+      <ulink url="https://github.com/ngtcp2/ngtcp2/">ngtcp2</ulink>,
       <!--<ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
       PolarSSL), and -->
       <!-- mbedTLS/PolarSSL support was removed in 7.65.1 -->
-      <ulink url="https://github.com/cloudflare/quiche">quiche</ulink>, and
-      <ulink url="http://spnego.sourceforge.net/">SPNEGO</ulink>
+      <ulink url="https://github.com/cloudflare/quiche">quiche</ulink>,
+      <ulink url="https://spnego.sourceforge.net/">SPNEGO</ulink>
     </para>
 @z
 
@@ -145,7 +157,9 @@
       <!-- stunnel is still listed in the docs as required, but 7.58.0
        tests completed happily without it, although the test for unit1323
        reported that the tool set in the test case does not exist - ken -->
-      <xref linkend="stunnel"/> (for the HTTPS and FTPS tests) and
+      <xref linkend="apache"/> and
+      <xref linkend="stunnel"/> (for the HTTPS and FTPS tests),
+      <xref linkend="openssh"/>, and
       <xref linkend="valgrind"/> (this will slow the tests down and may cause failures.)
     </para>
 @y
@@ -154,15 +168,11 @@
       <!-- stunnel is still listed in the docs as required, but 7.58.0
        tests completed happily without it, although the test for unit1323
        reported that the tool set in the test case does not exist - ken -->
-      <xref linkend="stunnel"/> (for the HTTPS and FTPS tests) and
+      <xref linkend="apache"/> and
+      <xref linkend="stunnel"/> (for the HTTPS and FTPS tests),
+      <xref linkend="openssh"/>, and
       <xref linkend="valgrind"/> (this will slow the tests down and may cause failures.)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -190,12 +200,22 @@
 
 @x
        To run the test suite, issue: <command>make test</command>.
-<!--       Four tests, 1139, 1140, 1173, and 1177, are known to fail due to
-       missing executables from the optional dependencies.-->
+       One test, <filename>1477</filename>, is known to fail due to 
+       a missing file in the curl tarball. Some tests are flaky, 
+       so if some tests have failed it's possible to
+       run a test again with: <command>(cd tests; ./runtests.pl
+       <replaceable>&lt;test ID&gt;</replaceable>)</command> (the ID of
+       failed tests are shown in the <quote><computeroutput>These test cases
+       failed:</computeroutput></quote> message).
 @y
        To run the test suite, issue: <command>make test</command>.
-<!--       Four tests, 1139, 1140, 1173, and 1177, are known to fail due to
-       missing executables from the optional dependencies.-->
+       One test, <filename>1477</filename>, is known to fail due to 
+       a missing file in the curl tarball. Some tests are flaky, 
+       so if some tests have failed it's possible to
+       run a test again with: <command>(cd tests; ./runtests.pl
+       <replaceable>&lt;test ID&gt;</replaceable>)</command> (the ID of
+       failed tests are shown in the <quote><computeroutput>These test cases
+       failed:</computeroutput></quote> message).
 @z
 
 @x
@@ -221,7 +241,7 @@
 @z
 
 @x
-      <option>--without-ssl --with-gnutls</option>: Use to
+      <option>--without-ssl --with-gnutls</option>: Use this switch to
       build with <application>GnuTLS</application> support
       instead of <application>OpenSSL</application> for SSL/TLS.
 @y

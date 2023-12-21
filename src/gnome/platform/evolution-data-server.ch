@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY evolution-data-server-buildsize     "215 MB (with tests)">
-  <!ENTITY evolution-data-server-time          "1.2 SBU (using parallelism=4, with tests)">
+  <!ENTITY evolution-data-server-buildsize     "177 MB (with tests)">
+  <!ENTITY evolution-data-server-time          "0.7 SBU (using parallelism=4, add 0.2 SBU for tests)">
 @y
-  <!ENTITY evolution-data-server-buildsize     "215 MB（テスト込み）">
-  <!ENTITY evolution-data-server-time          "1.2 SBU（parallelism=4 利用時、テスト込み）">
+  <!ENTITY evolution-data-server-buildsize     "177 MB（テスト込み）">
+  <!ENTITY evolution-data-server-time          "0.7 SBU（parallelism=4 利用時、テスト実施時はさらに 0.2 SBU）">
 @z
 
 @x
@@ -88,20 +88,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gcr"/>,
       <xref linkend="libical"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="nss"/>, and
-      <xref linkend="sqlite"/>.
+      <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gcr"/>,
       <xref linkend="libical"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="nss"/>,
-      <xref linkend="sqlite"/>.
+      <xref linkend="sqlite"/>
     </para>
 @z
 
@@ -113,9 +111,9 @@
       <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="libgdata"/>,
-      <xref linkend="libgweather"/>, and
-      <xref linkend="vala"/>
+      <xref linkend="libgweather"/>,
+      <xref linkend="vala"/>, and
+      <xref linkend="webkitgtk"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -125,9 +123,9 @@
       <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="libgdata"/>,
       <xref linkend="libgweather"/>,
-      <xref linkend="vala"/>
+      <xref linkend="vala"/>,
+      <xref linkend="webkitgtk"/>
     </para>
 @z
 
@@ -148,43 +146,29 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="mitkrb"/>,
       a <xref linkend="server-mail"/> (that provides a <command>sendmail</command> command),
-      <xref linkend="openldap"/>, and
+      <xref linkend="openldap"/>,
+      &berkeley-db;, and
       <ulink url="https://github.com/googlei18n/libphonenumber/">libphonenumber</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="mitkrb"/>,
       a <xref linkend="server-mail"/> (that provides a <command>sendmail</command> command),
-      <xref linkend="openldap"/>, and
+      <xref linkend="openldap"/>,
+      &berkeley-db;,
       <ulink url="https://github.com/googlei18n/libphonenumber/">libphonenumber</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Installation of Evolution Data Server</title>
 @y
     <title>&InstallationOf1;Evolution Data Server&InstallationOf2;</title>
-@z
-
-@x revision="systemd"
-      First, as the <systemitem class="username">root</systemitem> user, 
-      remove old and incompatible versions of the systemd units:
-@y
-      First, as the <systemitem class="username">root</systemitem> user, 
-      remove old and incompatible versions of the systemd units:
 @z
 
 @x
@@ -195,17 +179,15 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>. <!--One test,
-      <filename>test-book-client-custom-summary</filename>, is known to
-      fail due to an internal test suite error.-->
-@y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
-@z
-
-@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      To test the results, issue: <command>ninja test</command>.
+@y
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -215,22 +197,12 @@
 @z
 
 @x
-      <parameter>-DENABLE_GOOGLE=ON</parameter>: This switch enables
-      access to google services via <xref linkend="libgdata"/> and also
-      enables the Google Authentication option.
-@y
-      <parameter>-DENABLE_GOOGLE=ON</parameter>: This switch enables
-      access to google services via <xref linkend="libgdata"/> and also
-      enables the Google Authentication option.
-@z
-
-@x
       <parameter>-DENABLE_VALA_BINDINGS=ON</parameter>: This switch
-      enables building the Vala bindings. Remove if you don't
+      enables building the Vala bindings. Remove it if you don't
       have <xref linkend="vala"/> installed.
 @y
       <parameter>-DENABLE_VALA_BINDINGS=ON</parameter>: This switch
-      enables building the Vala bindings. Remove if you don't
+      enables building the Vala bindings. Remove it if you don't
       have <xref linkend="vala"/> installed.
 @z
 
@@ -248,14 +220,22 @@
 
 @x
       <parameter>-DWITH_LIBDB=OFF</parameter>: This switch allows building
-      this package without <xref linkend="db"/>.  This package only uses
-      <xref linkend="db"/> to import data from very outdated releases.
+      this package without &berkeley-db;.  <!--This package only uses
+      &berkeley-db; to import data from very outdated releases.-->
       <xref linkend="sqlite"/> is used for normal operation.
 @y
       <parameter>-DWITH_LIBDB=OFF</parameter>: This switch allows building
-      this package without <xref linkend="db"/>.  This package only uses
-      <xref linkend="db"/> to import data from very outdated releases.
+      this package without &berkeley-db;.  <!--This package only uses
+      &berkeley-db; to import data from very outdated releases.-->
       <xref linkend="sqlite"/> is used for normal operation.
+@z
+
+@x
+      <option>-DENABLE_OAUTH2_WEBKITGTK4=OFF</option>: Use this switch if
+      you did not build <xref linkend="webkitgtk" role="nodep"/> with GTK-4.
+@y
+      <option>-DENABLE_OAUTH2_WEBKITGTK4=OFF</option>: Use this switch if
+      you did not build <xref linkend="webkitgtk" role="nodep"/> with GTK-4.
 @z
 
 @x revision="sysv"
@@ -299,14 +279,22 @@
           None
         </seg>
         <seg>
-          libcamel-1.2.so, libebackend-1.2.so, libebook-1.2.so, 
-          libebook-contacts-1.2.so, libecal-2.0.so, libedata-book-1.2.so, 
-          libedata-cal-2.0.so, libedataserver-1.2.so, 
-          libedataserverui-1.2.so, and libetestserverutils.so
+          libcamel-1.2.so,
+          libebackend-1.2.so,
+          libebook-1.2.so,
+          libebook-contacts-1.2.so,
+          libecal-2.0.so,
+          libedata-book-1.2.so,
+          libedata-cal-2.0.so,
+          libedataserver-1.2.so,
+          libedataserverui-1.2.so,
+          libedataserverui4-1.0.so,
+          and libetestserverutils.so
         </seg>
         <seg>
           /usr/include/evolution-data-server,
           /usr/lib{,exec}/evolution-data-server,
+          /usr/share/evolution-data-server,
           /usr/share/installed-tests/evolution-data-server, and
           <!-- We explicitly disable gtk-doc generation, so comment these out
           /usr/share/gtk-doc/html/{camel,libebackend,libebook},
@@ -320,14 +308,22 @@
           &None;
         </seg>
         <seg>
-          libcamel-1.2.so, libebackend-1.2.so, libebook-1.2.so, 
-          libebook-contacts-1.2.so, libecal-2.0.so, libedata-book-1.2.so, 
-          libedata-cal-2.0.so, libedataserver-1.2.so, 
-          libedataserverui-1.2.so, libetestserverutils.so
+          libcamel-1.2.so,
+          libebackend-1.2.so,
+          libebook-1.2.so,
+          libebook-contacts-1.2.so,
+          libecal-2.0.so,
+          libedata-book-1.2.so,
+          libedata-cal-2.0.so,
+          libedataserver-1.2.so,
+          libedataserverui-1.2.so,
+          libedataserverui4-1.0.so,
+          libetestserverutils.so
         </seg>
         <seg>
           /usr/include/evolution-data-server,
           /usr/lib{,exec}/evolution-data-server,
+          /usr/share/evolution-data-server,
           /usr/share/installed-tests/evolution-data-server,
           <!-- We explicitly disable gtk-doc generation, so comment these out
           /usr/share/gtk-doc/html/{camel,libebackend,libebook},

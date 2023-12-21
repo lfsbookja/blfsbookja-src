@@ -96,12 +96,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/pavucontrol"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/pavucontrol"/>
-@z
-
-@x
     <title>Installation of pavucontrol</title>
 @y
     <title>&InstallationOf1;pavucontrol&InstallationOf2;</title>

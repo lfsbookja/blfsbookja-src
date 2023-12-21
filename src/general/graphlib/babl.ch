@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY babl-buildsize     "9.4 MB (with tests)">
-  <!ENTITY babl-time          "0.1 SBU (with tests)">
+  <!ENTITY babl-buildsize     "12 MB (with tests)">
+  <!ENTITY babl-time          "0.1 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY babl-buildsize     "9.4 MB (テスト込み)">
-  <!ENTITY babl-time          "0.1 SBU (テスト込み)">
+  <!ENTITY babl-buildsize     "12 MB (テスト込み)">
+  <!ENTITY babl-time          "0.1 SBU (parallelism=4 利用; テスト込み)">
 @z
 
 @x
@@ -70,12 +70,6 @@
           Estimated build time: &babl-time;
 @y
           &Estimatedbuildtime;: &babl-time;
-@z
-
-@x
-      User Notes: <ulink url='&blfs-wiki;/babl'/>
-@y
-      &UserNotes;: <ulink url='&blfs-wiki;/babl'/>
 @z
 
 @x

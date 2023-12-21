@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -80,49 +76,61 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="curl"/>, and
-      <xref linkend="libevent"/>
+      <xref linkend="curl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="curl"/>,
-      <xref linkend="libevent"/>
+      <xref linkend="curl"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended (to build a GUI)</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/> and 
-      <xref linkend="qt5"/>
+      <xref linkend="gtkmm3"/> or
+      &qt5-deps; or
+      <xref linkend="qt6" role="nodep"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (GUI ビルド時)</bridgehead>
     <para role="recommended">
-      <xref linkend="gtk3"/>,
-      <xref linkend="qt5"/>
+      <xref linkend="gtkmm3"/> または
+      &qt5-deps; または
+      <xref linkend="qt6" role="nodep"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> and
-      <xref linkend="gdb"/>
+      <xref linkend="nodejs"/> (for building the web client, not needed at run time),
+      <ulink url="https://github.com/ubuntu/gnome-shell-extension-appindicator">appindicator</ulink>,
+      <ulink url="https://github.com/jech/dht">dht</ulink>,
+      <ulink url="https://github.com/libb64/libb64">libb64</ulink>,
+      <ulink url="https://github.com/ebiggers/libdeflate">libdeflate</ulink>,
+      <ulink url="https://github.com/miniupnp/libnatpmp">libnatpmp</ulink>,
+      <ulink url="https://github.com/bittorrent/libutp">libutp</ulink>, and
+      <ulink url="https://github.com/miniupnp/miniupnp">miniupnp</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/>,
-      <xref linkend="gdb"/>
+      <xref linkend="nodejs"/> (for building the web client, not needed at run time),
+      <ulink url="https://github.com/ubuntu/gnome-shell-extension-appindicator">appindicator</ulink>,
+      <ulink url="https://github.com/jech/dht">dht</ulink>,
+      <ulink url="https://github.com/libb64/libb64">libb64</ulink>,
+      <ulink url="https://github.com/ebiggers/libdeflate">libdeflate</ulink>,
+      <ulink url="https://github.com/miniupnp/libnatpmp">libnatpmp</ulink>,
+      <ulink url="https://github.com/bittorrent/libutp">libutp</ulink>,
+      <ulink url="https://github.com/miniupnp/miniupnp">miniupnp</ulink>
     </para>
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/transmission"/>
+      Editor Notes: <ulink url="&blfs-wiki;/transmission"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/transmission"/>
+      &EditorNotes;: <ulink url="&blfs-wiki;/transmission"/>
 @z
 
 @x
@@ -139,28 +147,9 @@
 @z
 
 @x
-      Compile the Qt GUI with the following commands:
-@y
-      Compile the Qt GUI with the following commands:
-@z
-
-@x
-      This package does not come with a test suite.
-@y
-      &notTestSuite;
-@z
-
-@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      If you compiled the Qt GUI, install it by running the following commands
-      as the <systemitem class="username">root</systemitem> user:
-@y
-      Qt GUI をビルドしている場合は <systemitem class="username">root</systemitem> ユーザーとなって以下を実行することでインストールします。
 @z
 
 @x
@@ -170,14 +159,33 @@
 @z
 
 @x
-      <option>--without-gtk</option>: This switch disables building of the
-      <application>GTK+</application> interface if
-      <application>GTK+</application> is present on the system (useful for
-      <application>Qt5</application> or cli only builds).
+      <option>-DENABLE_QT=OFF</option>: This switch disables building
+      the <application>Qt</application> interface. The default is to build it
+      if &qt5-deps; or <xref linkend="qt6"/> is installed.
 @y
-      <option>--without-gtk</option>:
-      このスイッチは <application>GTK+</application> がインストールされている場合にはそのインターフェースをビルドしないようにします。
-      (これは <application>Qt5</application> または cli のみのビルド時には有用です。)
+      <option>-DENABLE_QT=OFF</option>: This switch disables building
+      the <application>Qt</application> interface. The default is to build it
+      if &qt5-deps; or <xref linkend="qt6"/> is installed.
+@z
+
+@x
+      <option>-DENABLE_GTK=OFF</option>: This switch disables building
+      the GTK+-3 interface. The default is to build it if
+      <xref linkend="gtkmm3"/> is installed.
+@y
+      <option>-DENABLE_GTK=OFF</option>: This switch disables building
+      the GTK+-3 interface. The default is to build it if
+      <xref linkend="gtkmm3"/> is installed.
+@z
+
+@x
+      <option>-DENABLE_WEB=OFF</option>: This switch disables building
+      the web client. The default is to build it if <xref linkend="nodejs"/>
+      is installed.
+@y
+      <option>-DENABLE_WEB=OFF</option>: This switch disables building
+      the web client. The default is to build it if <xref linkend="nodejs"/>
+      is installed.
 @z
 
 @x
@@ -198,27 +206,39 @@
 
 @x
         <seg>
-          transmission-cli, transmission-create, transmission-daemon,
-          transmission-edit, transmission-gtk, transmission-qt,
-          transmission-remote and transmission-show
+          <!--transmission-cli,-->
+          transmission-create,
+          transmission-daemon,
+          transmission-edit,
+          transmission-gtk,
+          transmission-qt,
+          transmission-remote, and
+          transmission-show
         </seg>
         <seg>
           None
         </seg>
         <seg>
-          /usr/share/transmission
+          /usr/share/transmission (contains the web client) and
+          /usr/share/doc/transmission-&transmission-version;
         </seg>
 @y
         <seg>
-          transmission-cli, transmission-create, transmission-daemon,
-          transmission-edit, transmission-gtk, transmission-qt,
-          transmission-remote, transmission-show
+          <!--transmission-cli,-->
+          transmission-create,
+          transmission-daemon,
+          transmission-edit,
+          transmission-gtk,
+          transmission-qt,
+          transmission-remote,
+          transmission-show
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
-          /usr/share/transmission
+          /usr/share/transmission (contains the web client),
+          /usr/share/doc/transmission-&transmission-version;
         </seg>
 @z
 
@@ -226,14 +246,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x transmission-cli
-            is a lightweight, command-line BitTorrent client with scripting
-            capabilities
-@y
-            軽量なコマンドラインベースの BitTorrent クライアントです。
-            スクリプト生成機能も含みます。
 @z
 
 @x transmission-create
@@ -244,7 +256,7 @@
 
 @x transmission-daemon
             is a daemon-based Transmission session that can be controlled via
-            RPC commands from transmission's web interface or
+            RPC commands from Transmission's web interface or
             <command>transmission-remote</command>
 @y
             デーモンベースの Transmission セッション。
@@ -252,7 +264,7 @@
 @z
 
 @x transmission-edit
-            is a command-line utility to modify .torrent files' announce URLs
+            is a command line tool to modify .torrent files' announce URLs
 @y
             .torrent ファイルのアナウンス URL を修正するコマンドラインユーティリティー。
 @z
@@ -264,7 +276,7 @@
 @z
 
 @x transmission-qt
-            is a Qt bittorrent client
+            is a Qt-based bittorrent client
 @y
             Qt ベースの bittorrent クライアント。
 @z

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -81,6 +77,7 @@
       <phrase revision="systemd"><xref linkend="gnome-shell"/>,</phrase>
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="pcre2"/>, and
       <xref linkend="vte"/>
     </para>
@@ -91,6 +88,7 @@
       <phrase revision="systemd"><xref linkend="gnome-shell"/>,</phrase>
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="itstool"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="pcre2"/>,
       <xref linkend="vte"/>
     </para>
@@ -125,12 +123,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of GNOME Terminal</title>
 @y
     <title>&InstallationOf1;GNOME Terminal&InstallationOf2;</title>
@@ -144,9 +136,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -162,21 +154,21 @@
 @z
 
 @x
-      <option>--disable-search-provider</option>: This switch disables
+      <option>-Dsearch_provider=false</option>: This switch disables
       the <quote>search <application>gnome-shell</application></quote>
       provider. Use this option if you do not have gnome-shell installed.
 @y
-      <option>--disable-search-provider</option>: This switch disables
+      <option>-Dsearch_provider=false</option>: This switch disables
       the <quote>search <application>gnome-shell</application></quote>
       provider. Use this option if you do not have gnome-shell installed.
 @z
 
 @x
-      <option>--without-nautilus-extension</option>: This switch disables
+      <option>-Dnautilus_extension=false</option>: This switch disables
       a dependency on the <application>nautilus</application> file
       manager. Use this option if you do not have Nautilus installed.
 @y
-      <option>--without-nautilus-extension</option>: This switch disables
+      <option>-Dnautilus_extension=false</option>: This switch disables
       a dependency on the <application>nautilus</application> file
       manager. Use this option if you do not have Nautilus installed.
 @z
@@ -202,22 +194,24 @@
           gnome-terminal
         </seg>
        <seg>
-          /usr/lib/nautilus/extensions-3.0/libterminal-nautilus.so
+          /usr/lib/nautilus/extensions-4/libterminal-nautilus.so
           (Nautilus Extension)
         </seg>
         <seg>
-          /usr/share/help/*/gnome-terminal
+          /usr/{lib,share/help/*}/gnome-terminal and
+          /usr/share/xdg-terminals
         </seg>
 @y
         <seg>
           gnome-terminal
         </seg>
        <seg>
-          /usr/lib/nautilus/extensions-3.0/libterminal-nautilus.so
+          /usr/lib/nautilus/extensions-4/libterminal-nautilus.so
           (Nautilus Extension)
         </seg>
         <seg>
-          /usr/share/help/*/gnome-terminal
+          /usr/{lib,share/help/*}/gnome-terminal,
+          /usr/share/xdg-terminals
         </seg>
 @z
 

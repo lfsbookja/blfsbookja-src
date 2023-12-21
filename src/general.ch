@@ -13,8 +13,8 @@
 <!ENTITY lfs-domainname "linuxfromscratch.org">
 @y
 <!ENTITY lfs-domainname "linuxfromscratch.org">
-<!ENTITY jversion "20211228">
-<!ENTITY jcorrespondSHA "bbf902915e"> <!-- blfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jversion "20231221">
+<!ENTITY jcorrespondSHA "b1e4cd84a9"> <!-- blfs-git SHA 値； 本箇所での記載のみ -->
 
 <!ENTITY Estimateddiskspacerequired "必要ディスク容量">
 <!ENTITY Estimatedbuildtime         "概算ビルド時間">
@@ -22,6 +22,7 @@
 <!ENTITY Recommended          "推奨">
 <!ENTITY Optional             "任意">
 <!ENTITY UserNotes            "ユーザー情報">
+<!ENTITY EditorNotes          "編集ノート">
 <!ENTITY AdditionalDownloads  "追加のダウンロード">
 <!ENTITY notTestSuite         "このパッケージにテストスイートはありません。">
 <!ENTITY notParallelBuild     "本パッケージは並行ビルドがサポートされていません。">
@@ -88,18 +89,12 @@
 @z
 
 @x
-<!ENTITY lfs110a_checked       "<para>This package is known to build and work
-                              properly using an LFS-11.0 platform.</para>">
+<!ENTITY lfs120_checked  "<note><para>Development versions of BLFS may not build or run
+                          some packages properly if LFS or dependencies have been updated
+                          since the most recent stable versions of the books.</para></note>">
 @y
-<!ENTITY lfs110a_checked       "<para>本パッケージは LFS-11.1 において正しくビルドでき動作することが確認されています。</para>">
+<!ENTITY lfs120_checked  "<note><para>LFS や依存パッケージが本ブックに示す最新安定バージョンでなかった場合には、BLFS 開発版においては、パッケージのビルドや処理実行が適切に行われないことがあります。</para></note>">
 @z
-
-%@x
-%<!ENTITY lfs110a_built         "<para>This package is known to build using an LFS
-%                              10.1 platform but has not been tested.</para>">
-%@y
-%<!ENTITY lfs110a_built         "<para>本パッケージは LFS-10.1 において正しくビルドできることが確認されていますが、まだ動作テストは行われていません。</para>">
-%@z
 
 @x
 <!ENTITY as_root "<note><para>When installing multiple packages in a script,
@@ -168,13 +163,10 @@ export -f as_root</userinput></screen>
 @z
 
 @x
-<!ENTITY not-katamari         "<para>This package is not a part of the Xorg
-                              katamari and is provided only as a dependency to
-                              other packages or for testing the completed Xorg
-                              installation.</para>">
+<!ENTITY not-katamari         "<para>This package is provided for testing the
+                               completed Xorg installation.</para>">
 @y
-<!ENTITY not-katamari         "<para>本パッケージは Xorg の一連の提供物 (Xorg katamari) ではありません。
-                              他のパッケージが必要としていたり Xorg のテストを完了させたりするために必要となるものです。</para>">
+<!ENTITY not-katamari         "<para>本パッケージは、Xorg のインストールが完成した際のテストのために提供されています。</para>">
 @z
 
 @x
@@ -195,4 +187,76 @@ export -f as_root</userinput></screen>
 @y
 <!ENTITY shell-env "<note><para>chroot 環境においてインストールを行っている場合は、環境変数 <envar>SHELL</envar> を設定しておいてください。
                     これを行っていない場合、パッケージの設定が失敗します。</para></note>">
+@z
+
+@x
+<!ENTITY gi-doc-disable
+         "Allow building this package without <xref linkend='gi-docgen'/>
+          installed.  If you have <xref linkend='gi-docgen'/> installed and
+          you wish to rebuild and install the API documentation, a
+          <command>meson configure</command> command will reset this
+          option.">
+@y
+<!ENTITY gi-doc-disable
+         "Allow building this package without <xref linkend='gi-docgen'/>
+          installed.  If you have <xref linkend='gi-docgen'/> installed and
+          you wish to rebuild and install the API documentation, a
+          <command>meson configure</command> command will reset this
+          option.">
+@z
+
+@x
+<!ENTITY build-use-internet
+         "<note><para>An Internet connection is needed for building this
+          package.</para></note>">
+@y
+<!ENTITY build-use-internet
+         "<note><para>本パッケージのビルドには、インターネット接続が必要になります。</para></note>">
+@z
+
+@x
+<!ENTITY test-use-internet
+         "<note><para>An Internet connection is needed for some tests of
+          this package.</para></note>">
+@y
+<!ENTITY test-use-internet
+         "<note><para>本パッケージのテストの中には、インターネット接続を必要とするものがあります。</para></note>">
+@z
+
+@x
+<!ENTITY logind
+         "<phrase revision='sysv'><xref linkend='elogind'/></phrase>
+          <phrase revision='systemd'><xref linkend='systemd'/></phrase>">
+@y
+<!ENTITY logind
+         "<phrase revision='sysv'><xref linkend='elogind'/></phrase>
+          <phrase revision='systemd'><xref linkend='systemd'/></phrase>">
+@z
+
+@x
+<!ENTITY qt5-deps
+         "(<xref linkend='qt5'/> or <xref role='nodep' linkend='qt5-alternate'/>)">
+@y
+<!ENTITY qt5-deps
+         "(<xref linkend='qt5'/> または <xref role='nodep' linkend='qt5-alternate'/>)">
+@z
+
+@x
+<!ENTITY build-wheel-cmd "pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir">
+<!ENTITY build-wheel "<screen><userinput>&build-wheel-cmd; $PWD</userinput></screen>">
+@y
+<!ENTITY build-wheel-cmd "pip3 wheel -w dist --no-build-isolation --no-deps --no-cache-dir">
+<!ENTITY build-wheel "<screen><userinput>&build-wheel-cmd; $PWD</userinput></screen>">
+@z
+
+@x
+<!ENTITY install-wheel "pip3 install --no-index --find-links=dist --no-cache-dir --no-user">
+@y
+<!ENTITY install-wheel "pip3 install --no-index --find-links=dist --no-cache-dir --no-user">
+@z
+
+@x
+<!ENTITY berkeley-db "<ulink url='https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz'>Berkeley DB</ulink> (deprecated)">
+@y
+<!ENTITY berkeley-db "<ulink url='https://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz'>Berkeley DB</ulink> (非推奨)">
 @z

@@ -83,21 +83,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.sphinx-doc.org/en/stable/man/sphinx-build.html">Sphinx</ulink>
-      with <ulink url="https://pypi.python.org/pypi/sphinx_rtd_theme">sphinx_rtd_theme</ulink>
+      <xref linkend="sphinx_rtd_theme"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.sphinx-doc.org/en/stable/man/sphinx-build.html">Sphinx</ulink>
-      ただし <ulink url="https://pypi.python.org/pypi/sphinx_rtd_theme">sphinx_rtd_theme</ulink> を含む
+      <xref linkend="sphinx_rtd_theme"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gsl"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gsl"/>
 @z
 
 @x
@@ -113,10 +105,10 @@
 @z
 
 @x
-      If you have the optional <application>Sphinx</application> package
-      installed, buid the documentation with:
+      If you have <xref linkend="sphinx_rtd_theme"/>
+      installed, build the documentation with:
 @y
-      任意のパッケージ <application>Sphinx</application> をインストールしている場合は、以下によりドキュメントを生成します。
+      任意のパッケージ <xref linkend="sphinx_rtd_theme"/> をインストールしている場合は、以下によりドキュメントを生成します。
 @z
 
 @x

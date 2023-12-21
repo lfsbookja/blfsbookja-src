@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,21 +17,20 @@
 
 @x
       The <application>Cyrus SASL</application> package contains a Simple
-      Authentication and Security Layer, a method for adding authentication
-      support to connection-based protocols. To use SASL, a protocol includes
-      a command for identifying and authenticating a user to a server and for
-      optionally negotiating protection of subsequent protocol interactions.
-      If its use is negotiated, a security layer is inserted between the
-      protocol and the connection.
+      Authentication and Security Layer implementation, a method for adding
+      authentication support to connection-based protocols. To use SASL, a
+      protocol includes a command for identifying and authenticating a user to
+      a server and for optionally negotiating protection of subsequent protocol
+      interactions. If its use is negotiated, a security layer is inserted
+      between the protocol and the connection.
 @y
-      <application>Cyrus SASL</application> パッケージはシンプルな認証層 (Authentication Layer) およびセキュリティ層 (Security Layer) を提供するものです。
-      接続を前提とするプロトコルに対しての認証機能のサポートを実現します。
-      SASL を利用すれば、
-      To use SASL, a protocol includes a
-      command for identifying and authenticating a user to a server and for
-      optionally negotiating protection of subsequent protocol interactions. If
-      its use is negotiated, a security layer is inserted between the protocol
-      and the connection.
+      The <application>Cyrus SASL</application> package contains a Simple
+      Authentication and Security Layer implementation, a method for adding
+      authentication support to connection-based protocols. To use SASL, a
+      protocol includes a command for identifying and authenticating a user to
+      a server and for optionally negotiating protection of subsequent protocol
+      interactions. If its use is negotiated, a security layer is inserted
+      between the protocol and the connection.
 @z
 
 @x
@@ -107,12 +102,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="db"/>
+      <xref linkend="lmdb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="db"/>
+      <xref linkend="lmdb"/>
     </para>
 @z
 
@@ -121,37 +116,31 @@
     <para role="optional">
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openjdk"/>,
+      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
+      <xref linkend="sphinx"/>,
       <xref linkend="sqlite"/>,
+      &berkeley-db;,
       <ulink url="https://stuff.mit.edu/afs/net.mit.edu/project/attic/krb4/">krb4</ulink>,
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
-      <ulink url="https://metacpan.org/pod/Pod::POM::View::Restructured">Pod::POM::View::Restructured</ulink>,
-      and <ulink url="https://pypi.org/project/Sphinx">Sphinx</ulink>
+      <ulink url="https://dmalloc.com/">Dmalloc</ulink>, and
+      <ulink url="https://metacpan.org/pod/Pod::POM::View::Restructured">Pod::POM::View::Restructured</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="linux-pam"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openjdk"/>,
+      <xref linkend="mariadb"/> または <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
+      <xref linkend="sphinx"/>,
       <xref linkend="sqlite"/>,
+      &berkeley-db;,
       <ulink url="https://stuff.mit.edu/afs/net.mit.edu/project/attic/krb4/">krb4</ulink>,
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
-      <ulink url="https://metacpan.org/pod/Pod::POM::View::Restructured">Pod::POM::View::Restructured</ulink>,
-      <ulink url="https://pypi.org/project/Sphinx">Sphinx</ulink>
+      <ulink url="https://dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="https://metacpan.org/pod/Pod::POM::View::Restructured">Pod::POM::View::Restructured</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -236,11 +225,11 @@
 @x
       <option>--with-dblib=gdbm</option>: This switch forces
       <application>GDBM</application> to be used instead of
-      <application>Berkeley DB</application>.
+      <application>LMDB</application>.
 @y
       <option>--with-dblib=gdbm</option>: This switch forces
       <application>GDBM</application> to be used instead of
-      <application>Berkeley DB</application>.
+      <application>LMDB</application>.
 @z
 
 @x
@@ -253,22 +242,10 @@
 
 @x
       <option>--enable-ldapdb</option>: This switch enables the
-      LDAPDB authentication backend. There is a circular dependency with this
-      parameter. See <ulink url="&blfs-wiki;/cyrus-sasl"/> for a solution to
-      this problem.
+      LDAPDB authentication backend.
 @y
       <option>--enable-ldapdb</option>: This switch enables the
-      LDAPDB authentication backend. There is a circular dependency with this
-      parameter. See <ulink url="&blfs-wiki;/cyrus-sasl"/> for a solution to
-      this problem.
-@z
-
-@x
-      <option>--enable-java</option>: This switch enables compiling of the
-      <application>Java</application> support libraries.
-@y
-      <option>--enable-java</option>:
-      本スイッチは <application>Java</application> サポートライブラリのビルドを行います。
+      LDAPDB authentication backend.
 @z
 
 @x

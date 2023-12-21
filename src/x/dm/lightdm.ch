@@ -136,11 +136,12 @@
       <xref linkend="exo"/> (for the greeter),
 <!-- required by exo      <xref linkend="gtk3"/>, -->
       <xref linkend="libgcrypt"/>,
-      <xref linkend="itstool"/>, and
-      <xref linkend="linux-pam"/>
+      <xref linkend="itstool"/>,
+      <xref linkend="linux-pam"/>, and
 <!-- Neither lightdm-1.30.0 nor lightdm-gtk-greeter-2.0.8
      mention pcre in their configure scripts
       <xref linkend="pcre"/>-->
+      <xref role='runtime' linkend='xorg-server'/> (Runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -149,10 +150,11 @@
 <!-- required by exo      <xref linkend="gtk3"/>, -->
       <xref linkend="libgcrypt"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="linux-pam"/>
+      <xref linkend="linux-pam"/>, and
 <!-- Neither lightdm-1.30.0 nor lightdm-gtk-greeter-2.0.8
      mention pcre in their configure scripts
       <xref linkend="pcre"/>-->
+      <xref role='runtime' linkend='xorg-server'/> (Runtime)
     </para>
 @z
 
@@ -178,24 +180,18 @@
       <xref role="runtime" linkend="accountsservice"/> (run time),
       <xref linkend="at-spi2-core"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="qt5"/>,
+      &qt5-deps;,
       <ulink url="https://launchpad.net/ido">libido</ulink>, and
       <ulink url="https://launchpad.net/libindicator">libindicator</ulink>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="accountsservice"/> (ランタイム時),
+      <xref role="runtime" linkend="accountsservice"/> (run time),
       <xref linkend="at-spi2-core"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="qt5"/>,
+      &qt5-deps;,
       <ulink url="https://launchpad.net/ido">libido</ulink>,
       <ulink url="https://launchpad.net/libindicator">libindicator</ulink>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -328,11 +324,11 @@
 @z
 
 @x revision="systemd"
-        Install and enable the systemd unit.  From the
-        <xref linkend="systemd-units"/> package:
+        Install the <filename>lightdm.service</filename> unit included in
+        the <xref linkend="systemd-units"/> package:
 @y
-        Install and enable the systemd unit.  From the
-        <xref linkend="systemd-units"/> package:
+        Install the <filename>lightdm.service</filename> unit included in
+        the <xref linkend="systemd-units"/> package:
 @z
 
 @x revision="sysv"

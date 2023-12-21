@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -76,44 +72,41 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/> and
-      <xref linkend="wget"/>
-      <!-- In the systemd book, a unit/timer is installed to update the
-      usb.ids file automatically. 
-      
-      wget is used in the instructions below.
-      -->
+      <xref linkend="libusb"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libusb"/> and
+      <xref linkend="libusb"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+<!-- git is required by autogen.sh. If using the tarball on kernel.org,
+     autogen.sh does not need to be run. If using the github source,
+     autogen.sh needs to be run, and git is used to pull the usbhid-dump
+     submodule.
+      <xref linkend="git"/> and -->
       <xref linkend="wget"/>
-      <!-- In the systemd book, a unit/timer is installed to update the
-      usb.ids file automatically. 
-      
-      wget is used in the instructions below.
-      -->
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required Runtime</bridgehead>
-    <para role="required">
-      <xref role="runtime" linkend="python2"/>
+<!-- In the systemd book, a unit/timer is installed to update the
+     usb.ids file automatically. wget is used in the instructions below. -->
     </para>
 @y
-    <bridgehead renderas="sect4">実行時に&Required;</bridgehead>
-    <para role="required">
-      <xref role="runtime" linkend="python2"/>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+<!-- git is required by autogen.sh. If using the tarball on kernel.org,
+     autogen.sh does not need to be run. If using the github source,
+     autogen.sh needs to be run, and git is used to pull the usbhid-dump
+     submodule.
+      <xref linkend="git"/> and -->
+      <xref linkend="wget"/>
+<!-- In the systemd book, a unit/timer is installed to update the
+     usb.ids file automatically. wget is used in the instructions below. -->
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

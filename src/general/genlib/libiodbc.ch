@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -84,14 +80,6 @@
     <para role="recommended">
       <xref linkend="gtk2"/> (管理ツールを生成するために必要)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url="&blfs-wiki;/libiodbc"/></para>
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url="&blfs-wiki;/libiodbc"/></para>
 @z
 
 @x

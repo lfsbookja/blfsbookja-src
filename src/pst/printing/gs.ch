@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gs-buildsize     "360 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "2.5 SBU (Using parallelism=4; with libgs.so)">
+  <!ENTITY gs-buildsize     "391 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "1.9 SBU (Using parallelism=4; with libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "360 MB（フォントと libgs.so）">
-  <!ENTITY gs-time          "2.5 SBU（parallelism=4 指定時、libgs.so 込み）">
+  <!ENTITY gs-buildsize     "391 MB（フォントと libgs.so）">
+  <!ENTITY gs-time          "1.9 SBU（parallelism=4 指定時、libgs.so 込み）">
 @z
 
 @x
@@ -172,7 +172,8 @@
       <xref linkend="cairo"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libidn"/>,
-      <xref linkend="libpaper"/>, and
+      <xref linkend="libpaper"/>,
+      <xref linkend="libwebp"/>, and
       <xref linkend="x-window-system"/>
     </para>
 @y
@@ -182,14 +183,9 @@
       <xref linkend="gtk3"/>,
       <xref linkend="libidn"/>,
       <xref linkend="libpaper"/>,
+      <xref linkend="libwebp"/>,
       <xref linkend="x-window-system"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gs"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gs"/>
 @z
 
 @x
@@ -249,13 +245,11 @@
 @x
         The shared library depends on <xref linkend="gtk3"/>. It is only used by
         external programs like <xref linkend="asymptote"/>, <xref
-        linkend="dvisvgm"/>, <xref linkend="imagemagick"/>, and <xref
-        linkend="texlive"/>.
+        linkend="dvisvgm"/>, and <xref linkend="imagemagick"/>.
 @y
         The shared library depends on <xref linkend="gtk3"/>. It is only used by
         external programs like <xref linkend="asymptote"/>, <xref
-        linkend="dvisvgm"/>, <xref linkend="imagemagick"/>, and <xref
-        linkend="texlive"/>.
+        linkend="dvisvgm"/>, and <xref linkend="imagemagick"/>.
 @z
 
 @x
@@ -343,11 +337,9 @@
           have any bdf tools from xorg ] but they are still referenced in
           base/unixinst.mak -->
         </seg>
-        <seg>libgs.so and
-             /usr/lib/ghostscript/&gs-version;/X11.so</seg>
+        <seg>libgs.so</seg>
         <seg>
           /usr/include/ghostscript,
-          /usr/lib/ghostscript,
           /usr/share/ghostscript, and
           /usr/share/doc/ghostscript-&gs-version;
         </seg>
@@ -362,11 +354,9 @@
           have any bdf tools from xorg ] but they are still referenced in
           base/unixinst.mak -->
         </seg>
-        <seg>libgs.so,
-             /usr/lib/ghostscript/&gs-version;/X11.so</seg>
+        <seg>libgs.so</seg>
         <seg>
           /usr/include/ghostscript,
-          /usr/lib/ghostscript,
           /usr/share/ghostscript,
           /usr/share/doc/ghostscript-&gs-version;
         </seg>

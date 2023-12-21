@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -78,20 +74,34 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="libbytesize"/>, 
-      <xref linkend="libyaml"/>,
-      <xref linkend="parted"/>, and 
-      <xref linkend="volume_key"/>
+      <xref linkend="glib2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="libbytesize"/>, 
-      <xref linkend="libyaml"/>,
-      <xref linkend="parted"/>,
-      <xref linkend="volume_key"/>
+      <xref linkend="glib2"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="cryptsetup"/>,
+      <xref linkend="gobject-introspection"/> (required for GNOME),
+      <xref linkend="keyutils"/>,
+      <xref linkend="libbytesize"/>,
+      <xref linkend="libnvme"/>, and
+      <xref linkend="lvm2"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="cryptsetup"/>,
+      <xref linkend="gobject-introspection"/> (GNOME にて必要),
+      <xref linkend="keyutils"/>,
+      <xref linkend="libbytesize"/>,
+      <xref linkend="libnvme"/>,
+      <xref linkend="lvm2"/>
     </para>
 @z
 
@@ -101,26 +111,28 @@
       <xref linkend="btrfs-progs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="mdadm"/>,
-      <ulink url="https://people.redhat.com/~heinzm/sw/dmraid/">dmraid</ulink>,
-      <ulink url="http://bcachefs.org/">bcachefs</ulink>, and
-      <ulink url="https://github.com/pmem/ndctl">ndctl</ulink>
-    </para>
+      <xref linkend="parted"/>,
+      <ulink url="https://github.com/felixonmars/volume_key">volume_key</ulink>,
+<!--      <xref linkend="volume_key"/>,-->
+<!--      <ulink url="https://people.redhat.com/~heinzm/sw/dmraid/">dmraid</ulink>, -->
+<!--      <ulink url="https://bcachefs.org/">bcachefs</ulink>, -->
+      <ulink url="https://github.com/pmem/ndctl">ndctl</ulink>, and
+      <ulink url="https://github.com/Datera/targetcli">targetcli</ulink>
+      (for tests)
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="btrfs-progs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="mdadm"/>,
-      <ulink url="https://people.redhat.com/~heinzm/sw/dmraid/">dmraid</ulink>,
-      <ulink url="http://bcachefs.org/">bcachefs</ulink>,
-      <ulink url="https://github.com/pmem/ndctl">ndctl</ulink>
-    </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
+      <xref linkend="parted"/>,
+      <ulink url="https://github.com/felixonmars/volume_key">volume_key</ulink>,
+<!--      <xref linkend="volume_key"/>,-->
+<!--      <ulink url="https://people.redhat.com/~heinzm/sw/dmraid/">dmraid</ulink>, -->
+<!--      <ulink url="https://bcachefs.org/">bcachefs</ulink>, -->
+      <ulink url="https://github.com/pmem/ndctl">ndctl</ulink>,
+      <ulink url="https://github.com/Datera/targetcli">targetcli</ulink>
+      (for tests)
 @z
 
 @x
@@ -137,9 +149,11 @@
 @z
 
 @x
-      This package does not come with a working test suite.
+      The test suite requires <application>targetcli</application>, which
+      is not a part of BLFS.
 @y
-      このパッケージには有効なテストスイートはありません。
+      The test suite requires <application>targetcli</application>, which
+      is not a part of BLFS.
 @z
 
 @x
@@ -172,55 +186,53 @@
 
 @x
         <seg>
-          lvm-cache-stats
+          lvm-cache-stats and vfat-resize (both optional)
         </seg>
         <seg>
-          libbd_btrfs.so, 
+          libbd_btrfs.so,
           libbd_crypto.so,
-          libbd_fs.so, 
-          libbd_kbd.so,
+          libbd_dm.so,
+          libbd_fs.so,
           libbd_loop.so,
-          libbd_lvm.so,
-          libbd_lvm-dbus.so,
+          libbd_lvm.so (optional),
+          libbd_lvm-dbus.so (optional),
           libbd_mdraid.so,
           libbd_mpath.so,
+          libbd_nvme.so,
           libbd_part.so,
-          libbd_part_err.so,
           libbd_swap.so,
-          libbd_utils.so,
-          libbd_vdo.so, and
+          libbd_utils.so, and
           libblockdev.so
         </seg>
         <seg>
           /etc/libblockdev,
           /usr/include/blockdev, and
-          /usr/share/gtk-doc/html/libblockdev
+          /usr/share/gtk-doc/html/libblockdev (optional)
         </seg>
 @y
         <seg>
-          lvm-cache-stats
+          lvm-cache-stats, vfat-resize (both optional)
         </seg>
         <seg>
-          libbd_btrfs.so, 
+          libbd_btrfs.so,
           libbd_crypto.so,
-          libbd_fs.so, 
-          libbd_kbd.so,
+          libbd_dm.so,
+          libbd_fs.so,
           libbd_loop.so,
-          libbd_lvm.so,
-          libbd_lvm-dbus.so,
+          libbd_lvm.so (optional),
+          libbd_lvm-dbus.so (optional),
           libbd_mdraid.so,
           libbd_mpath.so,
+          libbd_nvme.so,
           libbd_part.so,
-          libbd_part_err.so,
           libbd_swap.so,
           libbd_utils.so,
-          libbd_vdo.so,
           libblockdev.so
         </seg>
         <seg>
           /etc/libblockdev,
           /usr/include/blockdev,
-          /usr/share/gtk-doc/html/libblockdev
+          /usr/share/gtk-doc/html/libblockdev (optional)
         </seg>
 @z
 

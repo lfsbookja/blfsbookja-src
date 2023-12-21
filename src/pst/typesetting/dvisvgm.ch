@@ -77,7 +77,7 @@
       <!-- EDITORS: the docs say it needs clipper, but it uses an internal
        modified version and cannot be built with system clipper -->
       <xref linkend="brotli"/>,
-      <xref linkend="gs"/> and
+      <xref linkend="gs"/>, and
       <xref linkend="potrace"/>
     </para>
 @y
@@ -109,7 +109,7 @@
       <xref linkend="asciidoc"/> with
       <xref linkend="xmlto"/> and
       <xref linkend="libxslt"/> (see command explanations),
-      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink> (with the above) and
+      <ulink url="https://dblatex.sourceforge.net/">dblatex</ulink> (with the above) and
       <!-- version checked for dvisvgm-2.9, 0.7.3 is mentioned in the
            news and is the latest version at 2020-03-21
            maybe change to 'a recent version' if that releases faster -->
@@ -122,7 +122,7 @@
       <xref linkend="asciidoc"/> with
       <xref linkend="xmlto"/> and
       <xref linkend="libxslt"/> (see command explanations),
-      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink> (with the above) and
+      <ulink url="https://dblatex.sourceforge.net/">dblatex</ulink> (with the above) and
       <!-- version checked for dvisvgm-2.9, 0.7.3 is mentioned in the
            news and is the latest version at 2020-03-21
            maybe change to 'a recent version' if that releases faster -->
@@ -132,51 +132,21 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/dvisvgm"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/dvisvgm"/>
-@z
-
-@x
     <title>Installation of dvisvgm</title>
 @y
     <title>&InstallationOf1;dvisvgm&InstallationOf2;</title>
 @z
 
 @x
-      To enable the build system to link to
-      <filename class="libraryfile">libkpathsea.so</filename>, as the
-      <systemitem class="username">root</systemitem> user create a symlink from
-      <filename class="directory">/usr/lib</filename>:
-@y
-      To enable the build system to link to
-      <filename class="libraryfile">libkpathsea.so</filename>, as the
-      <systemitem class="username">root</systemitem> user create a symlink from
-      <filename class="directory">/usr/lib</filename>:
-@z
-
-@x
-      The testsuite assumes that a modern version of <application>Python</application>
-      has been installed as plain <command>python</command>. Adjust it to use
-      <command>python3</command> with the following sed:
-@y
-      The testsuite assumes that a modern version of <application>Python</application>
-      has been installed as plain <command>python</command>. Adjust it to use
-      <command>python3</command> with the following sed:
-@z
-
-@x
-      The testsuite assumes that a modern version of <application>Python</application>
+      The test suite assumes that a modern version of <application>Python</application>
       has been installed as plain <command>python</command>. Changing this to use
-      <command>python3</command> requires a sed to one of <filename>Makefile.in</filename>
-      files, but that gets regenerated when <command>autoreconf</command> is run, so
-      the sed must come after that.
+      <command>python3</command> requires a sed to one <filename>Makefile.in</filename>
+      file.
 @y
-      The testsuite assumes that a modern version of <application>Python</application>
+      The test suite assumes that a modern version of <application>Python</application>
       has been installed as plain <command>python</command>. Changing this to use
-      <command>python3</command> requires a sed to one of <filename>Makefile.in</filename>
-      files, but that gets regenerated when <command>autoreconf</command> is run, so
-      the sed must come after that.
+      <command>python3</command> requires a sed to one <filename>Makefile.in</filename>
+      file.
 @z
 
 @x
@@ -205,19 +175,11 @@
 @z
 
 @x
-      <command>ln -svf /opt/texlive/&texlive-year;/lib/libkpathsea.so /usr/lib</command>:
-      Without this, the program will not link correctly,
-@y
-      <command>ln -svf /opt/texlive/&texlive-year;/lib/libkpathsea.so /usr/lib</command>:
-      Without this, the program will not link correctly,
-@z
-
-@x
-      <command>--with-kpathsea=/opt/texlive/&texlive-year;</command>: This allows
+      <parameter>--with-kpathsea=$TEXLIVE_PREFIX</parameter>: This allows
       the build system to find the headers for <filename
       class="libraryfile">kpathsea</filename>
 @y
-      <command>--with-kpathsea=/opt/texlive/&texlive-year;</command>: This allows
+      <parameter>--with-kpathsea=$TEXLIVE_PREFIX</parameter>: This allows
       the build system to find the headers for <filename
       class="libraryfile">kpathsea</filename>
 @z

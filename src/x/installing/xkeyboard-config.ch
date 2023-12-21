@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -87,9 +83,15 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Optional (required for tests)</bridgehead>
+    <para role="optional">
+      <xref linkend="pytest"/>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Optional; (required for tests)</bridgehead>
+    <para role="optional">
+      <xref linkend="pytest"/>
+    </para>
 @z
 
 @x
@@ -106,9 +108,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>ninja test</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -121,17 +123,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--with-xkb-rules-symlink=xorg</parameter>: By default, the
-      XKB rules installed are named "base". This creates symlinks named
-      "xorg" to those rules, which is the default name used by Xorg.
-@y
-      <parameter>--with-xkb-rules-symlink=xorg</parameter>:
-      デフォルトにてインストールされる XKB ルールは "base" というファイル名です。
-      このパラメーターは、それらのルールに対して "xorg" というシンボリックリンクとして生成します。
-      この名前は Xorg にてデフォルトで用いられる名前です。
 @z
 
 @x

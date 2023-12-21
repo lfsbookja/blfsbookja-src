@@ -75,19 +75,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="rpcsvc-proto"/> and <xref linkend="libtirpc"/>
+      <xref linkend="libtirpc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="rpcsvc-proto"/>, <xref linkend="libtirpc"/>
+      <xref linkend="libtirpc"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -145,7 +139,7 @@
           libnsl.so
         </seg>
         <seg>
-          None
+          /usr/include/rpcsvc
         </seg>
 @y
         <seg>
@@ -155,7 +149,7 @@
           libnsl.so
         </seg>
         <seg>
-          &None;
+          /usr/include/rpcsvc
         </seg>
 @z
 

@@ -76,12 +76,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/fftw"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/fftw"/>
-@z
-
-@x
     <title>Installation of fftw</title>
 @y
     <title>&InstallationOf1;fftw&InstallationOf2;</title>
@@ -155,10 +149,12 @@
 @z
 
 @x
-        <parameter>--enable-shared --disable-static</parameter>: Use shared
+        <parameter>--enable-shared</parameter>
+        <parameter>--disable-static</parameter>: Use shared
         libs instead of static libs.
 @y
-        <parameter>--enable-shared --disable-static</parameter>: Use shared
+        <parameter>--enable-shared</parameter>
+        <parameter>--disable-static</parameter>: Use shared
         libs instead of static libs.
 @z
 
@@ -166,12 +162,12 @@
         <parameter>--enable-threads</parameter>: This enables <filename
         class="libraryfile"> libfftw3_threads.so</filename> to be compiled.
         It is used by e.g. the <application>gimp</application> plugin from
-        <ulink url="http://gmic.eu/">G'MIC</ulink>.
+        <ulink url="https://gmic.eu/">G'MIC</ulink>.
 @y
         <parameter>--enable-threads</parameter>: This enables <filename
         class="libraryfile"> libfftw3_threads.so</filename> to be compiled.
         It is used by e.g. the <application>gimp</application> plugin from
-        <ulink url="http://gmic.eu/">G'MIC</ulink>.
+        <ulink url="https://gmic.eu/">G'MIC</ulink>.
 @z
 
 @x

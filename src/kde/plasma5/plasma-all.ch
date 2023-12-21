@@ -82,12 +82,12 @@
 @x
   <bridgehead renderas="sect4">Required</bridgehead>
   <para role="required">
-    <!--<xref linkend="fontforge"/>,-->
-    <!-- does not seem to be needed as of 5.22.4 <xref linkend="GConf"/>, -->
-    <xref linkend="gtk2"/>,
+    <!--<xref linkend="gtk2"/>, Does not seem to be needed any more -->
     <xref linkend="gtk3"/>,
     <xref linkend="kf5-frameworks"/>,
+    <xref linkend="kuserfeedback"/>,
     <xref linkend="libpwquality"/>,
+    <xref linkend="libqalculate"/>,
     <xref linkend="libxkbcommon"/>,
     <xref linkend="mesa"/> built with <xref linkend="wayland"/>,
     <xref linkend="NetworkManager"/>,
@@ -101,12 +101,12 @@
 @y
   <bridgehead renderas="sect4">Required</bridgehead>
   <para role="required">
-    <!--<xref linkend="fontforge"/>,-->
-    <!-- does not seem to be needed as of 5.22.4 <xref linkend="GConf"/>, -->
-    <xref linkend="gtk2"/>,
+    <!--<xref linkend="gtk2"/>, Does not seem to be needed any more -->
     <xref linkend="gtk3"/>,
     <xref linkend="kf5-frameworks"/>,
+    <xref linkend="kuserfeedback"/>,
     <xref linkend="libpwquality"/>,
+    <xref linkend="libqalculate"/>,
     <xref linkend="libxkbcommon"/>,
     <xref linkend="mesa"/> built with <xref linkend="wayland"/>,
     <xref linkend="NetworkManager"/>,
@@ -130,7 +130,7 @@
     <xref linkend="libpcap"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="lm_sensors"/>,
-    <xref linkend="oxygen-icons5"/>, and
+    <xref linkend="oxygen-icons"/>, and
     <xref linkend="pciutils"/>
   </para>
 @y
@@ -144,7 +144,7 @@
     <xref linkend="libpcap"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="lm_sensors"/>,
-    <xref linkend="oxygen-icons5"/>, and
+    <xref linkend="oxygen-icons"/>,
     <xref linkend="pciutils"/>
   </para>
 @z
@@ -152,32 +152,33 @@
 @x
   <bridgehead renderas="sect4">Recommended (runtime)</bridgehead>
   <para role="recommended">
-    <xref role="runtime" linkend="accountsservice"/> and
-    <xref role="runtime" linkend="smartmontools"/>
+    <xref role="runtime" linkend="accountsservice"/>,
+    <xref role="runtime" linkend="smartmontools"/>, and
+    <xref role="runtime" linkend="xwayland"/>
   </para>
 @y
   <bridgehead renderas="sect4">&Recommended; (ランタイム)</bridgehead>
   <para role="recommended">
     <xref role="runtime" linkend="accountsservice"/>,
-    <xref role="runtime" linkend="smartmontools"/>
+    <xref role="runtime" linkend="smartmontools"/>,
+    <xref role="runtime" linkend="xwayland"/>
   </para>
 @z
 
 @x
   <bridgehead renderas="sect4">Optional</bridgehead>
   <para role="optional">
+    <xref linkend="appstream"/> (build with -qt=true),
     <xref linkend="glu"/>,
     <xref linkend='ibus'/>,
     <xref linkend='qtwebengine'/>,
     <xref linkend="xorg-synaptics-driver"/>,
-    <ulink url="http://distributions.freedesktop.org/wiki/AppStream">appstream-qt</ulink>,
     <ulink url="https://www.kdevelop.org/">KDevPlatform</ulink>,
     <ulink url="https://gpsd.gitlab.io/gpsd/">libgps</ulink>,
     <ulink url="https://github.com/libhybris/libhybris">libhybris</ulink>,
     <ulink url="https://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
-    <ulink url="https://bitbucket.org/godsme/mockcpp">mockcpp</ulink>,
     <ulink url="https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</ulink>,
-    <ulink url="http://qalculate.github.io/">Qalculate</ulink>,
+    <ulink url="https://qalculate.github.io/">Qalculate</ulink>,
     <ulink url="https://launchpad.net/qapt">Qapt</ulink>,
     <ulink url="https://github.com/osiam/osiam">SCIM</ulink>, and
     <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)
@@ -185,18 +186,17 @@
 @y
   <bridgehead renderas="sect4">Optional</bridgehead>
   <para role="optional">
+    <xref linkend="appstream"/> (build with -qt=true),
     <xref linkend="glu"/>,
     <xref linkend='ibus'/>,
     <xref linkend='qtwebengine'/>,
     <xref linkend="xorg-synaptics-driver"/>,
-    <ulink url="http://distributions.freedesktop.org/wiki/AppStream">appstream-qt</ulink>,
     <ulink url="https://www.kdevelop.org/">KDevPlatform</ulink>,
     <ulink url="https://gpsd.gitlab.io/gpsd/">libgps</ulink>,
     <ulink url="https://github.com/libhybris/libhybris">libhybris</ulink>,
     <ulink url="https://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
-    <ulink url="https://bitbucket.org/godsme/mockcpp">mockcpp</ulink>,
     <ulink url="https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</ulink>,
-    <ulink url="http://qalculate.github.io/">Qalculate</ulink>,
+    <ulink url="https://qalculate.github.io/">Qalculate</ulink>,
     <ulink url="https://launchpad.net/qapt">Qapt</ulink>,
     <ulink url="https://github.com/osiam/osiam">SCIM</ulink>,
     <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)
@@ -204,9 +204,23 @@
 @z
 
 @x
-  <para condition="html" role="usernotes">User Notes:
+      <xref linkend="qtwebengine"/> is required for aura-browser.
+      It is also optional for two other packages:
+      libksysguard and kdeplasma-addons. If QtWebEngine is installed later,
+      only these two packages need to be rebuilt. This allows
+      a more complete display in the system monitor application.
 @y
-  <para condition="html" role="usernotes">User Notes:
+      <xref linkend="qtwebengine"/> is required for aura-browser.
+      It is also optional for two other packages:
+      libksysguard and kdeplasma-addons. If QtWebEngine is installed later,
+      only these two packages need to be rebuilt. This allows
+      a more complete display in the system monitor application.
+@z
+
+@x
+  <para condition="html" role="usernotes">Editor Notes:
+@y
+  <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -238,25 +252,44 @@
 @z
 
 @x
+      <title>About Commented out Packages</title>
+@y
+      <title>About Commented out Packages</title>
+@z
+@x
         The breeze-grub, breeze-plymouth, and plymouth-kcm packages above are
         all for customized support of <ulink
             url="https://www.freedesktop.org/wiki/Software/Plymouth/"
           >Plymouth</ulink>
         which is designed to be run within an initial ram disk during boot (see
-        <xref linkend="initramfs"/>).  The plasma-sdk package is optional and
-        used for software development. The plasma-nano package is used for
-        embedded systems and plasma-phone-components provides phone
-        functionality for Plasma.
+        <xref linkend="initramfs"/>).
+        The plasma-sdk package is optional and used for software development.
+        The plasma-nano package is used for  embedded systems and
+        plasma-mobile provides phone functionality for Plasma.
+        The aura-browser package requires <xref linkend="qtwebengine"/>.
+        The discover package requires <xref linkend="appstream"/> to be built
+        with the -Dqt=true switch.
+        The plasma-welcome package requires the external package
+          <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
+        kaccounts-integration</ulink>.
+        The flatpack-kcm package is for managing support of flatpack applications.
 @y
         The breeze-grub, breeze-plymouth, and plymouth-kcm packages above are
         all for customized support of <ulink
             url="https://www.freedesktop.org/wiki/Software/Plymouth/"
           >Plymouth</ulink>
         which is designed to be run within an initial ram disk during boot (see
-        <xref linkend="initramfs"/>).  The plasma-sdk package is optional and
-        used for software development. The plasma-nano package is used for
-        embedded systems and plasma-phone-components provides phone
-        functionality for Plasma.
+        <xref linkend="initramfs"/>).
+        The plasma-sdk package is optional and used for software development.
+        The plasma-nano package is used for  embedded systems and
+        plasma-mobile provides phone functionality for Plasma.
+        The aura-browser package requires <xref linkend="qtwebengine"/>.
+        The discover package requires <xref linkend="appstream"/> to be built
+        with the -Dqt=true switch.
+        The plasma-welcome package requires the external package
+          <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
+        kaccounts-integration</ulink>.
+        The flatpack-kcm package is for managing support of flatpack applications.
 @z
 
 @x

@@ -118,12 +118,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of libcairomm-1.0</title>
 @y
     <title>&InstallationOf1;libcairomm-1.0&InstallationOf2;</title>

@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY kdenlive5-time          "1.7 SBU (using parallelism=4)">
+  <!ENTITY kdenlive5-time          "1.6 SBU (using parallelism=4)">
 @y
-  <!ENTITY kdenlive5-time          "1.7 SBU (using parallelism=4)">
+  <!ENTITY kdenlive5-time          "1.6 SBU (using parallelism=4)">
 @z
 
 @x
@@ -103,12 +103,6 @@
     <para role="recommended">
       <xref linkend="breeze-icons"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/kdenlive5"/>
-@y
-      User Notes: <ulink url="&blfs-wiki;/kdenlive5"/>
 @z
 
 @x

@@ -74,12 +74,24 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="sqlite"/> (required if building firefox or thunderbird)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="sqlite"/> (required if building firefox or thunderbird)
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="bluez"/>,
       <xref linkend="gdb"/> (required for some tests),
       <xref linkend="valgrind"/>, and
-      <ulink url="http://www.bytereef.org/mpdecimal">libmpdec</ulink>
+      <ulink url="https://www.bytereef.org/mpdecimal/">libmpdec</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -87,30 +99,30 @@
       <xref linkend="bluez"/>,
       <xref linkend="gdb"/> (required for some tests),
       <xref linkend="valgrind"/>, and
-      <ulink url="http://www.bytereef.org/mpdecimal">libmpdec</ulink>
+      <ulink url="https://www.bytereef.org/mpdecimal/">libmpdec</ulink>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
-      <xref linkend="libnsl"/>, and
-      <xref linkend="tk"/>
+      <xref linkend="libnsl"/>, 
+      <xref linkend="tk"/>, and
+      &berkeley-db;
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (追加モジュール用)</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
-      <xref linkend="libnsl"/>,
-      <xref linkend="tk"/>
+      <xref linkend="libnsl"/>, 
+      <xref linkend="tk"/>, and
+      &berkeley-db;
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -127,11 +139,13 @@
 @z
 
 @x
-      To test the result, issue <command>make test</command>.
-      Some tests may need an Internet connection.
+      To test the result, issue <command>LC_ALL=en_US.UTF-8
+      make test</command>.
+      Some tests may need an Internet connection. 
 @y
-      To test the result, issue <command>make test</command>.
-      Some tests may need an Internet connection.
+      To test the result, issue <command>LC_ALL=en_US.UTF-8
+      make test</command>.
+      Some tests may need an Internet connection. 
 @z
 
 @x
@@ -163,26 +177,6 @@
 @z
 
 @x
-      <parameter>--with-system-ffi</parameter>: This switch enables linking
-      against the system version of <application>libffi</application>. 
-@y
-      <parameter>--with-system-ffi</parameter>: This switch enables linking
-      against the system version of <application>libffi</application>. 
-@z
-
-@x
-      <parameter>--with-ensurepip=yes</parameter> : This switch enables building
-      the <command>pip</command> and <command>setuptools</command> packaging 
-      programs. <command>setuptools</command> is needed for building some
-      Python modules.
-@y
-      <parameter>--with-ensurepip=yes</parameter> : This switch enables building
-      the <command>pip</command> and <command>setuptools</command> packaging 
-      programs. <command>setuptools</command> is needed for building some
-      Python modules.
-@z
-
-@x
       <option>--with-dbmliborder=bdb:gdbm:ndbm</option>: Use this switch
       if you want to build the <application>Python</application> DBM Module
       against <application>Berkeley DB</application> instead of
@@ -195,24 +189,24 @@
 @z
 
 @x
-      <parameter>--enable-optimization</parameter>: This switch enables
+      <parameter>--enable-optimizations</parameter>: This switch enables
       stable, but expensive, optimizations.
 @y
-      <parameter>--enable-optimization</parameter>: This switch enables
+      <parameter>--enable-optimizations</parameter>: This switch enables
       stable, but expensive, optimizations.
 @z
 
 @x
       <option>--with-lto</option>: This optional switch enables thick Link
       Time Optimization. Unusually, it creates a much larger <filename
-	  class="libraryfile">/usr/lib/python&python3-majorver;/config-&python3-majorver;-&lt;arch&gt;-linux-gnu/libpython&python3-majorver;.a</filename>
+      class="libraryfile">/usr/lib/python&python3-majorver;/config-&python3-majorver;-&lt;arch&gt;-linux-gnu/libpython&python3-majorver;.a</filename>
       with a small increase in the time to compile
       <application>Python</application>. Run-time results do not appear to show
       any benefit from doing this.
 @y
       <option>--with-lto</option>: This optional switch enables thick Link
       Time Optimization. Unusually, it creates a much larger <filename
-	  class="libraryfile">/usr/lib/python&python3-majorver;/config-&python3-majorver;-&lt;arch&gt;-linux-gnu/libpython&python3-majorver;.a</filename>
+      class="libraryfile">/usr/lib/python&python3-majorver;/config-&python3-majorver;-&lt;arch&gt;-linux-gnu/libpython&python3-majorver;.a</filename>
       with a small increase in the time to compile
       <application>Python</application>. Run-time results do not appear to show
       any benefit from doing this.
@@ -260,13 +254,13 @@
           idle3 (symlink) and
           idle&python3-majorver;,
 
-          pip3 (symlink) and
+          pip3 and
           pip&python3-majorver;,
 
-          pydoc3 and
+          pydoc3 (symlink) and
           pydoc&python3-majorver;,
 
-          python3 (symlink);
+          python3 (symlink) and
           python&python3-majorver;, and
 
           python3-config (symlink) and
@@ -292,24 +286,24 @@
           idle3 (symlink) and
           idle&python3-majorver;,
 
-          pip3 (symlink) and
+          pip3 and
           pip&python3-majorver;,
 
-          pydoc3 and
+          pydoc3 (symlink) and
           pydoc&python3-majorver;,
 
-          python3 (symlink);
+          python3 (symlink) and
           python&python3-majorver;, and
 
-          python3-config (symlink) and
+          python3-config (symlink),
           python&python3-majorver;-config
         </seg>
         <seg>
-          libpython&python3-majorver;.so and libpython3.so
+          libpython&python3-majorver;.so, libpython3.so
         </seg>
         <seg>
           /usr/include/python&python3-majorver;,
-          /usr/lib/python&python3-majorver;, and
+          /usr/lib/python&python3-majorver;,
           /usr/share/doc/python-&python3-version;
         </seg>
 @z

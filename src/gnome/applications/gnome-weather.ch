@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -89,15 +85,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gjs"/>,
-      <xref linkend="libgweather"/>, and
-      <xref linkend="libhandy1"/>
+      <xref linkend="libadwaita1"/>, and
+      <xref linkend="libgweather"/>
+<!--      <xref linkend="libhandy1"/>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gjs"/>,
-      <xref linkend="libgweather"/>,
-      <xref linkend="libhandy1"/>
+      <xref linkend="libadwaita1"/>,
+      <xref linkend="libgweather"/>
+<!--      <xref linkend="libhandy1"/>-->
     </para>
 @z
 
@@ -116,12 +114,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of GNOME Weather</title>
 @y
     <title>&InstallationOf1;GNOME Weather&InstallationOf2;</title>
@@ -135,9 +127,7 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. <!--One test may
-      fail if the package is not already installed, and all tests must be run
-      in a X session with D-Bus support.-->
+      To test the results, issue: <command>ninja test</command>.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z

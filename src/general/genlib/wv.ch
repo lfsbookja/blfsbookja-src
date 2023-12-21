@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -91,19 +87,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://wvware.sourceforge.net/libwmf.html">libwmf</ulink>
+      <ulink url="https://wvware.sourceforge.net/libwmf.html">libwmf</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://wvware.sourceforge.net/libwmf.html">libwmf</ulink>
+      <ulink url="https://wvware.sourceforge.net/libwmf.html">libwmf</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -119,7 +109,7 @@
 @z
 
 @x
-      This package does not have a testsuite.
+      This package does not have a test suite.
 @y
       &notTestSuite;
 @z
@@ -155,13 +145,13 @@
 @x
         <seg>wvSummary and several other wv* programs which are deprecated in
         favour of abiword: see
-        <ulink url="http://wvware.sourceforge.net/"/></seg>
+        <ulink url="https://wvware.sourceforge.net/"/></seg>
         <seg>libwv-1.2.so</seg>
         <seg>/usr/share/wv</seg>
 @y
         <seg>wvSummary, wv で始まるプログラム
         これらは abiword を利用するのが望ましい。
-        <ulink url="http://wvware.sourceforge.net/"/> を参照のこと。</seg>
+        <ulink url="https://wvware.sourceforge.net/"/> を参照のこと。</seg>
         <seg>libwv-1.2.so</seg>
         <seg>/usr/share/wv/</seg>
 @z

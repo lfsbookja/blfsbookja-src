@@ -22,8 +22,8 @@
 @z
 
 @x
-  <para>To make things easy to follow, there are a number of conventions used
-  throughout the book.  Following are some examples:</para>
+  <para>To make things easy to follow, a number of conventions are used
+  throughout the book.  Here are some examples:</para>
 @y
   <para>
   本書では、特定の表記を用いて分かりやすく説明を行っていきます。
@@ -32,7 +32,7 @@
 @z
 
 @x
-    <para>This form of text is designed to be typed exactly as seen unless
+    <para>This form of text should be typed exactly as shown unless
     otherwise noted in the surrounding text. It is also used to identify
     references to specific commands.</para>
 @y
@@ -43,8 +43,8 @@
 @z
 
 @x
-    <para>This form of text (fixed width text) is showing screen
-    output, probably a result from issuing a command. It is also used to
+    <para>This form of text (fixed width font) shows screen
+    output, probably the result of issuing a command. It is also used to
     show filenames such as <filename>/boot/grub/grub.conf</filename></para>
 @y
     <para>
@@ -60,8 +60,8 @@
 @z
 
 @x
-    <para>This form of text is used for several purposes in the
-    book but mainly to emphasize important points or to give examples as to
+    <para>This form of text is used for several purposes,
+    but mainly to emphasize important points, or to give examples of
     what to type.</para>
 @y
     <para>
@@ -78,7 +78,7 @@
 
 @x
     <para>This form of text is used for hypertext links external to
-    the book such as HowTos, download locations, websites, etc.</para>
+    the book, such as HowTos, download locations, websites, etc.</para>
 @y
     <para>
     この表記は 外部サイトへのハイパーリンクを示します。
@@ -94,7 +94,7 @@
 
 @x
     <para>This form of text is used for links internal to
-    the book such as another section describing a different package.</para>
+    the book, such as another section describing a different package.</para>
 @y
     <para>
     この表記は本書内の別のページへのリンクを表わします。
@@ -103,17 +103,19 @@
 @z
 
 @x
-    <para>This type of section is used mainly when creating configuration
+    <para>This style is mainly used when creating configuration
     files.  The first command (in bold) tells the system to create
     the file <filename>$LFS/etc/group</filename> from whatever is typed on the
-    following lines until the sequence EOF is encountered.
-    Therefore, this whole section is generally typed as seen.</para>
+    following lines, until the sequence EOF is encountered.
+    Therefore, this whole section is usually typed exactly as shown.
+    Remember, copy and paste is your friend!</para>
 @y
     <para>
     この表記は設定ファイル類を生成する場合などにおいて示します。
     １行目のコマンドは太字で表記され <filename>$LFS/etc/group</filename> というファイルを生成することを指示しています。
     そのファイルへは2行目以降 EOF が記述されるまでのテキストが出力されます。
     したがってこの表記は通常そのままタイプ入力します。
+    コピーしてペーストするだけですぐに使えます。
     </para>
 @z
 
@@ -125,9 +127,9 @@
 
 @x
     <para>This form of text is used to encapsulate text that should be
-    modified and is not to be typed as seen, or copy and pasted. Note that
-    the square brackets are not part of the text, but should be substituted
-    for as well.</para>
+    modified, and is not to be typed as shown, or copied and pasted.
+    The angle brackets are not part of the literal text; they are part of the
+    substitution.</para>
 @y
     <para>
     上の表記は入力するテキストを仮に表現したものです。

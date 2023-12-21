@@ -138,7 +138,6 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="ffmpeg"/>,
       <xref linkend="libburn"/>,
       <xref linkend="libdvdread"/>, and
       <xref linkend="taglib"/>
@@ -146,7 +145,6 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="ffmpeg"/>,
       <xref linkend="libburn"/>,
       <xref linkend="libdvdread"/>,
       <xref linkend="taglib"/>
@@ -184,7 +182,7 @@
       <xref linkend="libsndfile"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="libmusicbrainz"/>, and
-      <ulink url="http://www.musepack.net/">Musepack (libmpcdec)</ulink>
+      <ulink url="https://www.musepack.net/">Musepack (libmpcdec)</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -195,14 +193,8 @@
       <xref linkend="libsndfile"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="libmusicbrainz"/>,
-      <ulink url="http://www.musepack.net/">Musepack (libmpcdec)</ulink>
+      <ulink url="https://www.musepack.net/">Musepack (libmpcdec)</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

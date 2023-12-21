@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libsndfile-buildsize     "13 MB (add 9 MB for tests)">
-  <!ENTITY libsndfile-time          "0.3 SBU (add 0.6 SBU for tests)">
+  <!ENTITY libsndfile-buildsize     "12 MB (add 10 MB for tests)">
+  <!ENTITY libsndfile-time          "0.3 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY libsndfile-buildsize     "13 MB (テスト実施時はさらに 9 MB)">
-  <!ENTITY libsndfile-time          "0.3 SBU (テスト実施時はさらに 0.6 SBU)">
+  <!ENTITY libsndfile-buildsize     "12 MB (テスト実施時はさらに 10 MB)">
+  <!ENTITY libsndfile-time          "0.3 SBU (テスト実施時はさらに 0.3 SBU)">
 @z
 
 @x
@@ -102,6 +98,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="alsa-lib"/>,
+      <xref linkend="lame"/>,
+      <xref linkend="mpg123"/>,
       <xref linkend="speex"/>, and
       <xref linkend="sqlite"/>
     </para>
@@ -109,15 +107,11 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="alsa-lib"/>,
+      <xref linkend="lame"/>,
+      <xref linkend="mpg123"/>,
       <xref linkend="speex"/>,
       <xref linkend="sqlite"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libsndfile"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libsndfile"/>
 @z
 
 @x
@@ -218,7 +212,7 @@
 @z
 
 @x sndfile-convert
-            converts a sound files from one format to another
+            converts a sound file from one format to another
 @y
             サウンドファイルを他形式に変換します。
 @z

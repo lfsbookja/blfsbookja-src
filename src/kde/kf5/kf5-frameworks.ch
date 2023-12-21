@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY kf5-buildsize     "1.3 GB (244 MB installed)">
-  <!ENTITY kf5-time          "16 SBU (using parallelism=4)">
+  <!ENTITY kf5-buildsize     "2.5 GB (252 MB installed)">
+  <!ENTITY kf5-time          "7.4 SBU (using parallelism=4)">
 @y
-  <!ENTITY kf5-buildsize     "1.3 GB（インストールは 244 MB）">
-  <!ENTITY kf5-time          "16 SBU（parallelism=4 利用）">
+  <!ENTITY kf5-buildsize     "2.5 GB（インストールは 252 MB）">
+  <!ENTITY kf5-time          "7.4 SBU（parallelism=4 利用）">
 @z
 
 @x
@@ -104,6 +104,7 @@
     <xref linkend="libpng"/>,
     <xref linkend="libxslt"/>,
     <xref linkend="lmdb"/>,
+    <xref linkend="qca"/>,
     <xref linkend="qrencode"/>,
     <xref linkend="phonon"/>,
     <xref linkend="plasma-wayland-protocols"/>,
@@ -126,12 +127,13 @@
     <xref linkend="libpng"/>,
     <xref linkend="libxslt"/>,
     <xref linkend="lmdb"/>,
+    <xref linkend="qca"/>,
     <xref linkend="qrencode"/>,
     <xref linkend="phonon"/>,
     <xref linkend="plasma-wayland-protocols"/>,
     <xref linkend="shared-mime-info"/>,
-    <xref linkend="perl-uri"/>,
-    <xref linkend="wget"/>（パッケージのダウンロードに必要）
+    <xref linkend="perl-uri"/>, and
+    <xref linkend="wget"/> (パッケージのダウンロードに必要)
   </para>
 @z
 
@@ -141,7 +143,9 @@
     <xref linkend="aspell"/> (Dictionary backend for Sonnet),
     <xref linkend="avahi"/> (DNS-SD backend for KDNSSD),
     <xref linkend="libdbusmenu-qt"/> (built with qt5),
-    <xref linkend="NetworkManager"/> (needed to build NetworkManager-Qt), and
+    <xref linkend="ModemManager"/> (needed to build ModemManager-Qt),
+    <xref linkend="NetworkManager"/> (needed to build NetworkManager-Qt),
+    <xref linkend="pcre"/>, and
     <xref linkend="polkit-qt"/> (Authentication backend for KAuth)
   </para>
 @y
@@ -150,7 +154,9 @@
     <xref linkend="aspell"/> (Dictionary backend for Sonnet),
     <xref linkend="avahi"/> (DNS-SD backend for KDNSSD),
     <xref linkend="libdbusmenu-qt"/> (built with qt5),
+    <xref linkend="ModemManager"/> (needed to build ModemManager-Qt),
     <xref linkend="NetworkManager"/> (needed to build NetworkManager-Qt),
+    <xref linkend="pcre"/>, and
     <xref linkend="polkit-qt"/> (Authentication backend for KAuth)
   </para>
 @z
@@ -167,16 +173,14 @@
   <bridgehead renderas="sect4">Optional</bridgehead>
   <para role="optional">
     <xref linkend="bluez"/> (needed to build Bluez-Qt),
-    <xref linkend="ModemManager"/> (needed to build ModemManager-Qt),
-    <ulink url="http://libdmtx.sourceforge.net/">Datamatrix</ulink> (deemed
+    <ulink url="https://libdmtx.sourceforge.net/">Datamatrix</ulink> (deemed
       recommended for Prison by upstream)
   </para>
 @y
   <bridgehead renderas="sect4">&Optional;</bridgehead>
   <para role="optional">
     <xref linkend="bluez"/> (needed to build Bluez-Qt),
-    <xref linkend="ModemManager"/> (needed to build ModemManager-Qt),
-    <ulink url="http://libdmtx.sourceforge.net/">Datamatrix</ulink> (deemed
+    <ulink url="https://libdmtx.sourceforge.net/">Datamatrix</ulink> (deemed
       recommended for Prison by upstream)
   </para>
 @z
@@ -184,14 +188,14 @@
 @x
   <bridgehead renderas="sect4">Runtime dependency for FrameworkIntegration</bridgehead>
   <para role="optional">
-    <xref role="runtime" linkend="oxygen-fonts"/> and 
-    <xref role="runtime" linkend="noto-fonts"/> 
+<!--<xref role="runtime" linkend="oxygen-fonts"/> and-->
+    <xref role="runtime" linkend="noto-fonts"/>
   </para>
 @y
   <bridgehead renderas="sect4">Runtime dependency for FrameworkIntegration</bridgehead>
   <para role="optional">
-    <xref role="runtime" linkend="oxygen-fonts"/> and 
-    <xref role="runtime" linkend="noto-fonts"/> 
+<!--<xref role="runtime" linkend="oxygen-fonts"/> and-->
+    <xref role="runtime" linkend="noto-fonts"/>
   </para>
 @z
 
@@ -199,31 +203,43 @@
   <bridgehead renderas="sect4">Additional recommended dependencies for kapidox</bridgehead>
   <para role="recommended">
     <xref role="runtime" linkend="doxygen"/> (Run time),
-    <xref linkend="Jinja2"/>, and
-    <xref linkend="PyYAML"/> (if those python modules are not present at build
-    time, they will be downloaded)
+    <xref linkend="doxypypy"/>,
+    <xref linkend="doxyqml"/>,
+    <xref linkend="PyYAML"/>, and
+    <xref linkend="requests"/>
   </para>
 @y
   <bridgehead renderas="sect4">Additional recommended dependencies for kapidox</bridgehead>
   <para role="recommended">
     <xref role="runtime" linkend="doxygen"/> (Run time),
-    <xref linkend="Jinja2"/>, and
-    <xref linkend="PyYAML"/> (if those python modules are not present at build
-    time, they will be downloaded)
+    <xref linkend="doxypypy"/>,
+    <xref linkend="doxyqml"/>,
+    <xref linkend="PyYAML"/>, and
+    <xref linkend="requests"/>
   </para>
 @z
 
 @x
   <bridgehead renderas="sect4">Additional image formats support in KImageFormats</bridgehead>
   <para role="optional">
-    <xref linkend="jasper"/> and
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>
+    <xref linkend="jasper"/>,
+    <xref linkend="libavif"/>,
+    <xref linkend="libraw"/>,
+    <ulink url="https://github.com/strukturag/libheif">libheif</ulink>,
+    <ulink url="https://github.com/libjxl/libjxl">libjxl</ulink>, and
+    <!-- www.openexr.com redirects here -->
+    <ulink url="https://github.com/AcademySoftwareFoundation/openexr">OpenEXR</ulink>
   </para>
 @y
   <bridgehead renderas="sect4">Additional image formats support in KImageFormats</bridgehead>
   <para role="optional">
-    <xref linkend="jasper"/> and
-    <ulink url="http://www.openexr.com/">OpenEXR</ulink>
+    <xref linkend="jasper"/>,
+    <xref linkend="libavif"/>,
+    <xref linkend="libraw"/>,
+    <ulink url="https://github.com/strukturag/libheif">libheif</ulink>,
+    <ulink url="https://github.com/libjxl/libjxl">libjxl</ulink>, and
+    <!-- www.openexr.com redirects here -->
+    <ulink url="https://github.com/AcademySoftwareFoundation/openexr">OpenEXR</ulink>
   </para>
 @z
 
@@ -244,14 +260,14 @@
   <para role="optional">
     <xref linkend="udisks2"/>,
     <xref linkend="upower"/> and
-    <ulink role="runtime" url="http://www.freedesktop.org/software/media-player-info/">media-player-info</ulink> (runtime)
+    <ulink role="runtime" url="https://www.freedesktop.org/software/media-player-info/">media-player-info</ulink> (runtime)
   </para>
 @y
   <bridgehead renderas="sect4">Optional dependencies for Solid</bridgehead>
   <para role="optional">
     <xref linkend="udisks2"/>,
     <xref linkend="upower"/> and
-    <ulink role="runtime" url="http://www.freedesktop.org/software/media-player-info/">media-player-info</ulink> (runtime)
+    <ulink role="runtime" url="https://www.freedesktop.org/software/media-player-info/">media-player-info</ulink> (runtime)
   </para>
 @z
 
@@ -268,23 +284,35 @@
 @z
 
 @x
-  <bridgehead renderas="sect4">Optional dictionary backends for Sonnet</bridgehead>
+  <bridgehead renderas="sect4">Optional dependency for kdewebkit</bridgehead>
   <para role="optional">
-    <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink> and
-    <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>
+    <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">QtWebkit</ulink>
   </para>
 @y
-  <bridgehead renderas="sect4">Optional dictionary backends for Sonnet</bridgehead>
+  <bridgehead renderas="sect4">Optional dependency for kdewebkit</bridgehead>
   <para role="optional">
-    <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink> and
-    <ulink url="http://hunspell.sourceforge.net/">Hunspell</ulink>
+    <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">QtWebkit</ulink>
   </para>
 @z
 
 @x
-  <para condition="html" role="usernotes">User Notes:
+  <bridgehead renderas="sect4">Optional dictionary backends for Sonnet</bridgehead>
+  <para role="optional">
+    <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink> and
+    <ulink url="https://hunspell.sourceforge.net/">Hunspell</ulink>
+  </para>
 @y
-  <para condition="html" role="usernotes">&UserNotes;:
+  <bridgehead renderas="sect4">Optional dictionary backends for Sonnet</bridgehead>
+  <para role="optional">
+    <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink> and
+    <ulink url="https://hunspell.sourceforge.net/">Hunspell</ulink>
+  </para>
+@z
+
+@x
+  <para condition="html" role="usernotes">Editor Notes:
+@y
+  <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -320,9 +348,8 @@
     a hash (#) character. The extra-cmake-modules entry has been commented out
     because it was built earlier in the <xref linkend="kde-prereq"/>. The icon
     packages are covered separately at <xref linkend="breeze-icons"/> and <xref
-    linkend="oxygen-icons5"/>.  The modemmanager-qt package may be built if its
-    optional dependency has been installed. The
-    kdewebkit may be built if the external package 
+    linkend="oxygen-icons"/>.  The
+    kdewebkit package may be built if the external package
     <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">
     QtWebkit</ulink> has been built.
 @y
@@ -330,9 +357,8 @@
     a hash (#) character. The extra-cmake-modules entry has been commented out
     because it was built earlier in the <xref linkend="kde-prereq"/>. The icon
     packages are covered separately at <xref linkend="breeze-icons"/> and <xref
-    linkend="oxygen-icons5"/>.  The modemmanager-qt package may be built if its
-    optional dependency has been installed. The
-    kdewebkit may be built if the external package 
+    linkend="oxygen-icons"/>.  The
+    kdewebkit package may be built if the external package
     <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">
     QtWebkit</ulink> has been built.
 @z
@@ -382,11 +408,11 @@
 @x revision="sysv"
       Useless systemd units have been installed in
       <filename class="directory">$KF5_PREFIX/lib</filename>. Remove
-      them now (as <systemitem class="username">root</systemitem>):
+      them now (as &root;):
 @y
       Useless systemd units have been installed in
       <filename class="directory">$KF5_PREFIX/lib</filename>. Remove
-      them now (as <systemitem class="username">root</systemitem>):
+      them now (as &root;):
 @z
 
 @x

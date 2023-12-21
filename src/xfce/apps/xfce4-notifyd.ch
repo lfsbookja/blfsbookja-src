@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -89,7 +85,9 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libnotify"/>,
-      <xref linkend="libxfce4ui"/>, and
+      <xref linkend="libxfce4ui"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="xfce4-dev-tools"/><!-- for build only -->, and
       <xref linkend="xfce4-panel"/>
     </para>
 @y
@@ -97,14 +95,10 @@
     <para role="required">
       <xref linkend="libnotify"/>,
       <xref linkend="libxfce4ui"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="xfce4-dev-tools"/><!-- for build only -->,
       <xref linkend="xfce4-panel"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/xfce4-notifyd"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/xfce4-notifyd"/>
 @z
 
 @x
@@ -134,10 +128,12 @@
 
 @x
       You can test the notification daemon with the command
-      <command>notify-send</command>:
+      <command>notify-send</command>, to be run in a graphical
+      environment:
 @y
       You can test the notification daemon with the command
-      <command>notify-send</command>:
+      <command>notify-send</command>, to be run in a graphical
+      environment:
 @z
 
 @x

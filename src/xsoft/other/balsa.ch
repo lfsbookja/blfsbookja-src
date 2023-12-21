@@ -122,7 +122,7 @@
       <xref linkend="sqlite"/>,
       <xref linkend="webkitgtk"/>,
       <ulink url="https://pypi.python.org/pypi/html2text/">html2text</ulink>,
-      <ulink url="http://clayo.org/osmo/">osmo</ulink>,
+      <ulink url="https://osmo-pim.sourceforge.net/">osmo</ulink>,
       <ulink url="https://sourceforge.net/projects/rubrica.berlios/">rubrica</ulink>,
       <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>
     </para>
@@ -140,16 +140,10 @@
       <xref linkend="sqlite"/>,
       <xref linkend="webkitgtk"/>,
       <ulink url="https://pypi.python.org/pypi/html2text/">html2text</ulink>,
-      <ulink url="http://clayo.org/osmo/">osmo</ulink>,
+      <ulink url="https://osmo-pim.sourceforge.net/">osmo</ulink>,
       <ulink url="https://sourceforge.net/projects/rubrica.berlios/">rubrica</ulink>,
       <ulink url="&gnome-download-http;/yelp-tools/">yelp-tools</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

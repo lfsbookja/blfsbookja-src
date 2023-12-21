@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,24 +17,24 @@
 
 @x
       <application>BIND Utilities</application> is not a separate
-    package, it is a collection of the client side programs that are included
-    with <xref linkend="bind"/>. The <application>BIND</application>
-    package includes the client side programs <command>nslookup</command>,
-    <command>dig</command> and <command>host</command>. If you install
-    <application>BIND</application> server, these programs will be installed
-    automatically. This section is for those users who don't need the complete
-    <application>BIND</application> server, but need these
-    client side applications.</para>
+      package, it is a collection of the client side programs that are included
+      with <xref linkend="bind"/>. The <application>BIND</application>
+      package includes the client side programs <command>nslookup</command>,
+      <command>dig</command> and <command>host</command>. If you install
+      <application>BIND</application> server, these programs will be installed
+      automatically. This section is for those users who don't need the complete
+      <application>BIND</application> server, but need these
+      client side applications.
 @y
       <application>BIND Utilities</application> is not a separate
-    package, it is a collection of the client side programs that are included
-    with <xref linkend="bind"/>. The <application>BIND</application>
-    package includes the client side programs <command>nslookup</command>,
-    <command>dig</command> and <command>host</command>. If you install
-    <application>BIND</application> server, these programs will be installed
-    automatically. This section is for those users who don't need the complete
-    <application>BIND</application> server, but need these
-    client side applications.</para>
+      package, it is a collection of the client side programs that are included
+      with <xref linkend="bind"/>. The <application>BIND</application>
+      package includes the client side programs <command>nslookup</command>,
+      <command>dig</command> and <command>host</command>. If you install
+      <application>BIND</application> server, these programs will be installed
+      automatically. This section is for those users who don't need the complete
+      <application>BIND</application> server, but need these
+      client side applications.
 @z
 
 @x
@@ -94,21 +90,15 @@
     <para role="optional">
       <xref linkend="libcap-pam"/>,
       <xref linkend="libxml2"/>, and
-      <ulink url="https://www.sphinx-doc.org/en/master/">Sphinx</ulink>
+      <xref linkend="sphinx"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libcap-pam"/>,
       <xref linkend="libxml2"/>,
-      <ulink url="https://www.sphinx-doc.org/en/master/">Sphinx</ulink>
+      <xref linkend="sphinx"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -143,11 +133,13 @@
 @z
 
 @x
-      <parameter>--without-python</parameter>: This option eliminates
-      the need for an unused python module.
+      <option>--disable-doh</option>: Use this option if you have not installed
+      <xref linkend="nghttp2" role="nodep"/> and you don't need DNS over HTTPS
+      support.
 @y
-      <parameter>--without-python</parameter>: This option eliminates
-      the need for an unused python module.
+      <option>--disable-doh</option>: Use this option if you have not installed
+      <xref linkend="nghttp2" role="nodep"/> and you don't need DNS over HTTPS
+      support.
 @z
 
 @x
@@ -168,18 +160,20 @@
 
 @x
       <command>make -C doc</command>: This command builds the
-      manual pages.
+      manual pages if the optional Python module
+      <xref linkend="sphinx"/> is installed.
 @y
       <command>make -C doc</command>: This command builds the
-      manual pages.
+      manual pages if the optional Python module
+      <xref linkend="sphinx"/> is installed.
 @z
 
 @x
-      <command>cp -v ... /usr/share/man/man1</command>: This command
-      installs the manual pages.
+      Use <command>cp -v doc/man/{dig.1,host.1,nslookup.1} /usr/share/man/man1</command>
+      to install the manual pages if they have been built.
 @y
-      <command>cp -v ... /usr/share/man/man1</command>: This command
-      installs the manual pages.
+      Use <command>cp -v doc/man/{dig.1,host.1,nslookup.1} /usr/share/man/man1</command>
+      to install the manual pages if they have been built.
 @z
 
 @x

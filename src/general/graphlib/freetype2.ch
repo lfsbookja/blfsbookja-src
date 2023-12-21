@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY freetype2-buildsize     "30 MB (with additional documentation)">
+  <!ENTITY freetype2-buildsize     "33 MB (with additional documentation)">
   <!ENTITY freetype2-time          "0.2 SBU (with additional documentation)">
 @y
-  <!ENTITY freetype2-buildsize     "30 MB (追加ドキュメントを含む)">
+  <!ENTITY freetype2-buildsize     "33 MB (追加ドキュメントを含む)">
   <!ENTITY freetype2-time          "0.2 SBU (追加ドキュメントを含む)">
 @z
 
@@ -129,12 +129,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of FreeType2</title>
 @y
     <title>&InstallationOf1;FreeType2&InstallationOf2;</title>
@@ -177,13 +171,13 @@
       table validation and second command enables Subpixel Rendering. Note that
       Subpixel Rendering may have patent issues.  Be sure to read the
       <literal>'Other patent issues'</literal> part of <ulink
-      url="http://www.freetype.org/patents.html"/> before enabling this option.
+      url="https://freetype.org/patents.html"/> before enabling this option.
 @y
       <command>sed -ri ...</command>: 
       １つめのコマンドは GX/AAT と OpenType テーブルの検証を有効にします。
       ２つめのコマンドはサブピクセルレンダリングを有効にします。
       なおサブピクセルレンダリングは特許問題にからむ場合があります。
-      このオプションを用いる際には <ulink url="http://www.freetype.org/patents.html"/> に示されている <literal>'Other patent issues'</literal> の項を十分に確認してください。
+      このオプションを用いる際には <ulink url="https://freetype.org/patents.html"/> に示されている <literal>'Other patent issues'</literal> の項を十分に確認してください。
 @z
 
 @x

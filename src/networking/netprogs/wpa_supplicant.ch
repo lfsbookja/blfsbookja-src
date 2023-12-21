@@ -102,47 +102,31 @@
     <para role="optional">
       <phrase revision="sysv"><xref linkend="dbus"/>,</phrase>
       <xref linkend="libxml2"/>, and
-      <xref linkend="qt5"/>
+      &qt5-deps;
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <phrase revision="sysv"><xref linkend="dbus"/>,</phrase>
       <xref linkend="libxml2"/>,
-      <xref linkend="qt5"/>
+      &qt5-deps;
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Kernel Configuration</title>
 @y
     <title>Kernel Configuration</title>
 @z
 
 @x
-      Enable the following options in the kernel configuration as well as
-      specific device drivers for your hardware and recompile the kernel if
-      necessary:
+      To use <application>wpa_supplicant</application>, the kernel must have
+      the appropriate drivers and other support available.  Read
+      <xref linkend='wireless-kernel'/> for details.
 @y
-      Enable the following options in the kernel configuration as well as
-      specific device drivers for your hardware and recompile the kernel if
-      necessary:
-@z
-
-@x
-      Open the submenu and select the options that support your hardware:
-      <command>lspci</command> from <xref linkend="pciutils"/> can be used to
-      view your hardware configuration.
-@y
-      Open the submenu and select the options that support your hardware:
-      <command>lspci</command> from <xref linkend="pciutils"/> can be used to
-      view your hardware configuration.
+      To use <application>wpa_supplicant</application>, the kernel must have
+      the appropriate drivers and other support available.  Read
+      <xref linkend='wireless-kernel'/> for details.
 @z
 
 @x
@@ -361,29 +345,15 @@
 
 @x
         If your router/access point uses DHCP to allocate IP addresses, you
-        can install <xref linkend="dhcp"/> client and use it to
+        can install <xref linkend="dhcpcd" role="nodep"/> and use it to
         automatically obtain network addresses. Create the
         <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
         </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:
 @y
         If your router/access point uses DHCP to allocate IP addresses, you
-        can install <xref linkend="dhcp"/> client and use it to
+        can install <xref linkend="dhcpcd" role="nodep"/> and use it to
         automatically obtain network addresses. Create the
-        <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
-        </filename> by running the following command as the
-        <systemitem class="username">root</systemitem> user:
-@z
-
-@x
-        If you prefer <xref linkend="dhcpcd"/> instead of
-        <xref linkend="dhcp"/> client, then create the
-        <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
-        </filename> by running the following command as the
-        <systemitem class="username">root</systemitem> user:
-@y
-        If you prefer <xref linkend="dhcpcd"/> instead of
-        <xref linkend="dhcp"/> client, then create the
         <filename>/etc/sysconfig/ifconfig-<replaceable>wifi0</replaceable>
         </filename> by running the following command as the
         <systemitem class="username">root</systemitem> user:

@@ -91,48 +91,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="clucene"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="libcap-pam"/>,
-      <xref linkend="linux-pam"/>,
-      <xref linkend="lua"/>,
-      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openldap"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="valgrind"/>,
-      <xref linkend="xfsprogs"/>,
-      <ulink url="https://cassandra.apache.org/">Cassandra</ulink>,
-      <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>,
-      <ulink url="https://github.com/shibukawa/snowball_py">stemmer</ulink> and
-      <ulink url="https://libsodium.gitbook.io/doc/">libsodium</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="clucene"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="libcap-pam"/>,
-      <xref linkend="linux-pam"/>,
-      <xref linkend="lua"/>,
-      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openldap"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="valgrind"/>,
-      <xref linkend="xfsprogs"/>,
-      <ulink url="https://cassandra.apache.org/">Cassandra</ulink>,
-      <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>,
-      <ulink url="https://github.com/shibukawa/snowball_py">stemmer</ulink> and
-      <ulink url="https://libsodium.gitbook.io/doc/">libsodium</ulink>
-    </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">User Notes:
 @z
 
 @x
@@ -291,11 +251,11 @@
 
 @x
         You will definitely want to read the official documentation at <ulink
-        url="http://wiki2.dovecot.org/"/> if you plan to use
+        url="https://wiki2.dovecot.org/"/> if you plan to use
         <application>Dovecot</application> in a production environment.
 @y
         You will definitely want to read the official documentation at <ulink
-        url="http://wiki2.dovecot.org/"/> if you plan to use
+        url="https://wiki2.dovecot.org/"/> if you plan to use
         <application>Dovecot</application> in a production environment.
 @z
 

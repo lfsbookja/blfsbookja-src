@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -79,52 +75,40 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gcr"/>,
+      <xref linkend="gcr4"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="json-glib"/>,
-      <xref linkend="libnotify"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="libportal"/>,
       <xref linkend="nettle"/>, and
-      <xref linkend="webkitgtk"/>
+      <xref linkend="webkitgtk"/> (built with GTK-4)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gcr"/>,
+      <xref linkend="gcr4"/>,
       <xref linkend="gnome-desktop"/>,
       <xref linkend="iso-codes"/>,
       <xref linkend="json-glib"/>,
-      <xref linkend="libnotify"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="libportal"/>,
       <xref linkend="nettle"/>,
-      <xref linkend="webkitgtk"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="libdazzle"/> and
-      <xref linkend="libhandy1"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="libdazzle"/>,
-      <xref linkend="libhandy1"/>
+      <xref linkend="webkitgtk"/> (built with GTK-4)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="&appstream-glib-url;">Appstream-Glib</ulink>
+      <ulink url="&appstream-glib-url;">Appstream-Glib</ulink> and
+      <ulink url="https://github.com/elementary/granite">Granite</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="&appstream-glib-url;">Appstream-Glib</ulink>
+      <ulink url="&appstream-glib-url;">Appstream-Glib</ulink> and
+      <ulink url="https://github.com/elementary/granite">Granite</ulink>
     </para>
 @z
 
@@ -143,9 +127,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -170,11 +154,14 @@
 @x
       One test would fail if this package is not installed,
       so it's better to run the test suite after installation.
-      To test the results, issue <command>ninja test</command>.
+      To test the results, issue
+      <command>LC_ALL=en_US.UTF-8 ninja test</command>.
+      The tests must be run from a graphical session.
 @y
       本パッケージをインストールしていない状態では、テストが 1 つ失敗します。
       したがってテストスイートは、インストールを終えてから行うのがよいでしょう。
-      テストする場合は <command>ninja test</command> を実行します。
+      テストする場合は <command>LC_ALL=en_US.UTF-8 ninja test</command> を実行します。
+      テストはグラフィックセッション内にて実行する必要があります。
 @z
 
 @x

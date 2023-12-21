@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY glib-networking-buildsize     "6.7 MB (with tests)">
-  <!ENTITY glib-networking-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY glib-networking-buildsize     "7.0 MB (with tests)">
+  <!ENTITY glib-networking-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY glib-networking-buildsize     "6.7 MB（テスト込み）">
-  <!ENTITY glib-networking-time          "&LessThan1;0.1 SBU&LessThan2; （テスト込み）">
+  <!ENTITY glib-networking-buildsize     "7.0 MB (テスト込み)">
+  <!ENTITY glib-networking-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -123,12 +123,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of GLib Networking</title>
 @y
     <title>&InstallationOf1;GLib Networking&InstallationOf2;</title>
@@ -180,7 +174,8 @@
           None
         </seg>
         <seg>
-          libgiognomeproxy.so and libgiognutls.so (GIO Modules installed in
+          libgiognomeproxy.so
+          and libgiognutls.so (GIO Modules installed in
           <filename class="directory">/usr/lib/gio/modules</filename>)
         </seg>
         <seg>
@@ -191,8 +186,9 @@
           &None;
         </seg>
         <seg>
-          libgiognomeproxy.so, libgiognutls.so
-          (<filename class="directory">/usr/lib/gio/modules</filename> ディレクトリにインストールされる GIO モジュール)
+          libgiognomeproxy.so
+          and libgiognutls.so (GIO Modules installed in
+          <filename class="directory">/usr/lib/gio/modules</filename>)
         </seg>
         <seg>
           &None;

@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY wget-buildsize     "63 MB (with tests)">
-  <!ENTITY wget-time          "0.6 SBU (with tests)">
+  <!ENTITY wget-buildsize     "36 MB (add 27 MB for tests)">
+  <!ENTITY wget-time          "0.3 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY wget-buildsize     "63 MB （テスト込み）">
-  <!ENTITY wget-time          "0.6 SBU （テスト込み）">
+  <!ENTITY wget-buildsize     "36 MB (テスト実施時はさらに 27 MB)">
+  <!ENTITY wget-time          "0.3 SBU (テスト実施時はさらに 0.3 SBU)">
 @z
 
 @x
@@ -112,12 +112,6 @@
       <xref linkend="pcre"/> または <xref linkend="pcre2"/>,
       <xref linkend="valgrind"/> (テストスイートのため)
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/wget"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/wget"/>
 @z
 
 @x

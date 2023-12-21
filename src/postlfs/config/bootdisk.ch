@@ -129,13 +129,11 @@
 
 @x
       The instructions for using GRUB2 to make a custom rescue CD-ROM are
-      also available in <ulink
-      url='http://www.&lfs-domainname;/lfs/view/stable/chapter10/grub.html'>LFS
+      also available in <ulink url='&lfs-root;/chapter10/grub.html'>LFS
       Chapter 10</ulink>.
 @y
       The instructions for using GRUB2 to make a custom rescue CD-ROM are
-      also available in <ulink
-      url='http://www.&lfs-domainname;/lfs/view/stable/chapter10/grub.html'>LFS
+      also available in <ulink url='&lfs-root;/chapter10/grub.html'>LFS
       Chapter 10</ulink>.
 @z
 
@@ -163,10 +161,4 @@
       drive requires BIOS support, but building the system consists of
       formatting the drive, adding <application>GRUB</application> as well
       as the Linux kernel and supporting files.
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z

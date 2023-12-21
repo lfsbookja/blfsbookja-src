@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY pixman-buildsize     "55 MB (with tests)">
-  <!ENTITY pixman-time          "0.8 SBU (with tests)">
+  <!ENTITY pixman-buildsize     "30 MB (with tests)">
+  <!ENTITY pixman-time          "0.5 SBU (with tests)">
 @y
-  <!ENTITY pixman-buildsize     "55 MB (テスト込み)">
-  <!ENTITY pixman-time          "0.8 SBU (テスト込み)">
+  <!ENTITY pixman-buildsize     "30 MB (テスト込み)">
+  <!ENTITY pixman-time          "0.5 SBU (テスト込み)">
 @z
 
 @x
@@ -95,12 +91,6 @@
       <xref linkend="gtk2"/>,
       <xref linkend="libpng"/> (テストおよびデモにて必要)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

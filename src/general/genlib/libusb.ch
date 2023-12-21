@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -93,21 +89,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of libusb</title>
 @y
     <title>&InstallationOf1;libusb&InstallationOf2;</title>
-@z
-
-@x
-        This package does not support parallel build.
-@y
-        &notParallelBuild;
 @z
 
 @x
@@ -119,7 +103,7 @@
 
 @x
       If <application>Doxygen</application> is installed and you wish to
-      build the API documentation, issue the following command:
+      build the API documentation, issue the following commands:
 @y
       <application>Doxygen</application> をインストールしていて API ドキュメントをビルドしたい場合は、以下のコマンドを実行します。
 @z
@@ -155,33 +139,6 @@
 @y
       <command>sed -i ...</command>:
       この sed コマンドはドキュメント生成時の警告メッセージを無効にします。
-@z
-
-@x
-    <title>Configuring Libusb</title>
-@y
-    <title>&Configuring1;Libusb&Configuring2;</title>
-@z
-
-@x
-      To access raw USB devices (those not treated as a disk by the mass-storage
-      driver), appropriate support must be available in the kernel.  Check your
-      kernel configuration:
-@y
-      USB のローデバイス (大容量ディスクドライバーでは扱うことができない) へアクセスするには、カーネルによる適切な機能サポートが必要となりますので、カーネル設定を確認してください。
-@z
-
-@x
-      <primary sortas="d-USB-device-filesystem">Support for Host-side USB</primary>
-@y
-      <primary sortas="d-USB-device-filesystem">Support for Host-side USB</primary>
-@z
-
-@x
-      For more details on setting up USB devices, see <xref
-      linkend="usb-device-issues"/>.
-@y
-      USB デバイスの設定に関する詳細は <xref linkend="usb-device-issues"/> を参照してください。
 @z
 
 @x

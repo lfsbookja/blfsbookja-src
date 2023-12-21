@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -88,12 +84,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/parted"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/parted"/>
-@z
-
-@x
     <title>Installation of parted</title>
 @y
     <title>&InstallationOf1;parted&InstallationOf2;</title>
@@ -108,19 +98,9 @@
 
 @x
       If you have <xref linkend="texlive"/> installed and wish to create
-      PDF and Postcript documentation issue the following commands:
+      PDF and Postscript documentation issue the following commands:
 @y
       <xref linkend="texlive"/> をインストールしていて PDF と Postscript のドキュメントを生成したい場合は、以下のコマンドを実行します。
-@z
-
-@x
-      If you wish to run the test suite, first remove a couple of tests
-      that are known to fail in a BLFS environment.  And, adjust two Python
-      scripts to use Python 3, in case Python 2 is not installed:
-@y
-      If you wish to run the test suite, first remove a couple of tests
-      that are known to fail in a BLFS environment.  And, adjust two Python
-      scripts to use Python 3, in case Python 2 is not installed:
 @z
 
 @x

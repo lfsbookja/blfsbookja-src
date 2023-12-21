@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY apr-util-buildsize     "6.5 MB (add 1.4 MB for tests)">
+  <!ENTITY apr-util-buildsize     "7.6 MB (add 1.4 MB for tests)">
   <!ENTITY apr-util-time          "less than 0.1 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY apr-util-buildsize     "6.5 MB (テスト実施時はさらに 1.4 MB)">
+  <!ENTITY apr-util-buildsize     "7.6 MB (テスト実施時はさらに 1.4 MB)">
   <!ENTITY apr-util-time          "&LessThan1;0.1 &LessThan2; (テスト実施時はさらに 0.3 SBU)">
 @z
 
@@ -31,12 +27,12 @@
       The Apache Portable Runtime Utility Library provides a predictable and
       consistent interface to underlying client library interfaces. This
       application programming interface assures predictable if not identical
-      behaviour regardless of which libraries are available on a given platform.
+      behavior regardless of which libraries are available on a given platform.
 @y
       The Apache Portable Runtime Utility Library provides a predictable and
       consistent interface to underlying client library interfaces. This
       application programming interface assures predictable if not identical
-      behaviour regardless of which libraries are available on a given platform.
+      behavior regardless of which libraries are available on a given platform.
 @z
 
 @x
@@ -114,31 +110,25 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
-      <ulink url="http://www.freetds.org/">FreeTDS</ulink>,
-      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <ulink url="https://www.freetds.org/">FreeTDS</ulink>,
+      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
-      <xref linkend="sqlite"/> and
-      <xref linkend="unixodbc"/>
+      <xref linkend="sqlite"/>,
+      <xref linkend="unixodbc"/>, and
+      &berkeley-db;
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
-      <ulink url="http://www.freetds.org/">FreeTDS</ulink>,
-      <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <ulink url="https://www.freetds.org/">FreeTDS</ulink>,
+      <xref linkend="mariadb"/> または <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      <xref linkend="unixodbc"/>
+      <xref linkend="unixodbc"/>,
+      &berkeley-db;
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/apr-util"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/apr-util"/>
 @z
 
 @x
@@ -183,22 +173,24 @@
 @z
 
 @x
-      <parameter>--with-openssl=/usr --with-crypto</parameter>: These
+      <parameter>--with-openssl=/usr</parameter>
+      <parameter>--with-crypto</parameter>: These
       switches enable the
       <filename class="libraryfile">apr_crypto_openssl-1.so</filename>
-      plugin. 
+      plugin.
 @y
-      <parameter>--with-openssl=/usr --with-crypto</parameter>:
+      <parameter>--with-openssl=/usr</parameter>
+      <parameter>--with-crypto</parameter>:
       このスイッチにより、プラグイン <filename class="libraryfile">apr_crypto_openssl-1.so</filename> を有効にします。
 @z
 
 @x
       <option>--with-berkeley-db=/usr</option>: If you have installed
-      <xref linkend="db"/>, use this switch to compile the
+      &berkeley-db;, use this switch to compile the
       <filename class="libraryfile">apr_dbm_db-1.so</filename> plugin.
 @y
       <option>--with-berkeley-db=/usr</option>:
-      <xref linkend="db"/> をインストールしている場合、このスイッチによりプラグイン <filename
+      &berkeley-db; をインストールしている場合、このスイッチによりプラグイン <filename
       class="libraryfile">apr_dbm_db-1.so</filename> をビルドすることを指示します。
 @z
 

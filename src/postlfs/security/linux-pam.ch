@@ -17,8 +17,8 @@
 
 @x
       The <application>Linux PAM</application> package contains
-      Pluggable Authentication Modules used to enable the local
-      system administrator to choose how applications authenticate
+      Pluggable Authentication Modules used by the local
+      system administrator to control how application programs authenticate
       users.
 @y
       <application>Linux PAM</application> パッケージは、プラグイン方式の認証モジュール (Pluggable Authentication Modules) を提供します。
@@ -106,20 +106,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="libnsl"/>,
-      <xref linkend="libtirpc"/>, 
+      <xref linkend="libtirpc"/>,
+      &berkeley-db;,
       <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>, and
-      <ulink url="http://www.prelude-siem.org">Prelude</ulink>
+      <ulink url="https://www.prelude-siem.org">Prelude</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="libnsl"/>,
-      <xref linkend="libtirpc"/>, 
-      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>,
-      <ulink url="http://www.prelude-siem.org">Prelude</ulink>
+      <xref linkend="libtirpc"/>,
+      &berkeley-db;,
+      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>, and
+      <ulink url="https://www.prelude-siem.org">Prelude</ulink>
     </para>
 @z
 
@@ -146,12 +146,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Linux PAM</title>
 @y
     <title>&InstallationOf1;Linux PAM&InstallationOf2;</title>
@@ -162,13 +156,6 @@
       the following command.
 @y
       ドキュメントをダウンロードしている場合は、以下のコマンドを実行して tarball を解凍します。
-@z
-
-@x
-      Install <application>Linux PAM</application> by
-      running the following commands:
-@y
-      以下のコマンドを実行して <application>Linux-PAM</application> をビルドします。
 @z
 
 @x
@@ -208,29 +195,9 @@
 @z
 
 @x
-      <option>--disable-regenerate-docu</option> : If the needed dependencies
-      (<xref linkend="DocBook"/>, <xref linkend="docbook-xsl"/>, <xref
-      linkend="libxslt"/>, and <xref linkend="lynx"/> or <ulink
-      url="&w3m-url;">W3m</ulink>) are installed, the manual pages, and the
-      html and text documentations are (re)generated and installed.
-      Furthermore, if <xref linkend="fop"/> is installed, the PDF
-      documentation is generated and installed. Use this switch if you do not
-      want to rebuild the documentation.
-@y
-      <option>--disable-regenerate-docu</option> : If the needed dependencies
-      (<xref linkend="DocBook"/>, <xref linkend="docbook-xsl"/>, <xref
-      linkend="libxslt"/>, and <xref linkend="lynx"/> or <ulink
-      url="&w3m-url;">W3m</ulink>) are installed, the manual pages, and the
-      html and text documentations are (re)generated and installed.
-      Furthermore, if <xref linkend="fop"/> is installed, the PDF
-      documentation is generated and installed. Use this switch if you do not
-      want to rebuild the documentation.
-@z
-
-@x
       <command>chmod -v 4755 /usr/sbin/unix_chkpwd</command>:
-      The <command>unix_chkpwd</command> helper program must be setuid
-      so that non-<systemitem class="username">root</systemitem>
+      The setuid bit for the <command>unix_chkpwd</command> helper program must be
+      turned on, so that non-<systemitem class="username">root</systemitem>
       processes can access the shadow file.
 @y
       <command>chmod -v 4755 /usr/sbin/unix_chkpwd</command>: パスワードヘルパープログラム <command>unix_chkpwd</command> に対して setuid を設定します。
@@ -244,7 +211,7 @@
 @z
 
 @x
-      <title>Config Files</title>
+      <title>Configuration Files</title>
 @y
       <title>&ConfigFiles;</title>
 @z
@@ -265,88 +232,76 @@
 @x
         Configuration information is placed in
         <filename class="directory">/etc/pam.d/</filename>.
-        Below is an example file:
+        Here is a sample file:
 @y
         設定情報は <filename class="directory">/etc/pam.d/</filename> に保持します。
         以下はその例です。
 @z
 
 @x
-        Now set up some generic files.  As the
+        Now create some generic configuration files.  As the
         <systemitem class="username">root</systemitem> user:
 @y
-        Now set up some generic files.  As the
+        Now create some generic configuration files.  As the
         <systemitem class="username">root</systemitem> user:
 @z
 
 @x
-        The remaining generic file depends on whether <xref
-        linkend="cracklib"/> is installed.  If it is installed, use:
+       If you wish to enable strong password support, install
+       <xref linkend="libpwquality"/>, and follow the
+       instructions on that page to configure the pam_pwquality
+       PAM module with strong password support.
 @y
-        The remaining generic file depends on whether <xref
-        linkend="cracklib"/> is installed.  If it is installed, use:
+       If you wish to enable strong password support, install
+       <xref linkend="libpwquality"/>, and follow the
+       instructions on that page to configure the pam_pwquality
+       PAM module with strong password support.
 @z
 
 @x
-          In its default configuration, pam_cracklib will
-          allow multiple case passwords as short as 6 characters, even with
-          the <parameter>minlen</parameter> value set to 11. You should review
-          the pam_cracklib(8) man page and determine if these default values
-          are acceptable for the security of your system.
-@y
-          In its default configuration, pam_cracklib will
-          allow multiple case passwords as short as 6 characters, even with
-          the <parameter>minlen</parameter> value set to 11. You should review
-          the pam_cracklib(8) man page and determine if these default values
-          are acceptable for the security of your system.
-@z
-
-@x
-        If <xref linkend="cracklib"/> is <emphasis>NOT</emphasis> installed,
-        use:
-@y
-        If <xref linkend="cracklib"/> is <emphasis>NOT</emphasis> installed,
-        use:
-@z
-
-@x
-        Now add a restrictive <filename>/etc/pam.d/other</filename>
+        Next, add a restrictive <filename>/etc/pam.d/other</filename>
         configuration file.  With this file, programs that are PAM aware will
         not run unless a configuration file specifically for that application
-        is created.
+        exists.
 @y
-        Now add a restrictive <filename>/etc/pam.d/other</filename>
+        Next, add a restrictive <filename>/etc/pam.d/other</filename>
         configuration file.  With this file, programs that are PAM aware will
         not run unless a configuration file specifically for that application
-        is created.
+        exists.
 @z
 
 @x
         The <application>PAM</application> man page (<command>man
-        pam</command>) provides a good starting point for descriptions
-        of fields and allowable entries. The
-        <ulink url="http://www.linux-pam.org/Linux-PAM-html/Linux-PAM_SAG.html">
+        pam</command>) provides a good starting point to learn
+        about the several fields, and allowable entries.
+        <!-- not accessible 2022-09-08 -->
+        <!-- it's available at a different address 2022-10-23-->
+        The
+        <ulink url="https://www.docs4dev.com/docs/en/linux-pam/1.1.2/reference/Linux-PAM_SAG.html">
           Linux-PAM System Administrators' Guide
         </ulink> is recommended for additional information.
 @y
-        <application>PAM</application> パッケージの Man ページ (<command>man pam</command>) を見れば、各項目と可能な記述内容がよく分かるようになっています。
-        <ulink
-        url="http://www.linux-pam.org/Linux-PAM-html/Linux-PAM_SAG.html">
-        Linux-PAM システム管理者ガイド (Linux-PAM System Administrators' Guide)</ulink> を参照して、より詳細な情報を確認してください。
+        The <application>PAM</application> man page (<command>man
+        pam</command>) provides a good starting point to learn
+        about the several fields, and allowable entries.
+        <!-- not accessible 2022-09-08 -->
+        <!-- it's available at a different address 2022-10-23-->
+        The
+        <ulink url="https://www.docs4dev.com/docs/en/linux-pam/1.1.2/reference/Linux-PAM_SAG.html">
+          Linux-PAM System Administrators' Guide
+        </ulink> is recommended for additional information.
 @z
 
 @x
           You should now reinstall the <xref linkend="shadow"/>
           <phrase revision="sysv">package</phrase>
           <phrase revision="systemd"> and <xref linkend="systemd"/>
-          packages</phrase>, and install <command>su</command> from
-          <xref linkend='util-linux'/>.
+          packages</phrase>.
 @y
           You should now reinstall the <xref linkend="shadow"/>
           <phrase revision="sysv">package</phrase>
           <phrase revision="systemd"> and <xref linkend="systemd"/>
-          packages</phrase>, and install <command>su</command> from
-          <xref linkend='util-linux'/>.
+          packages</phrase>.
 @z
 
 @x

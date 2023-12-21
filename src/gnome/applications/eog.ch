@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -23,7 +19,7 @@
       <application>EOG</application> is an application used for
       viewing and cataloging image files on the
       <application>GNOME</application> Desktop. It also has basic editing
-      capabilites.
+      capabilities.
 @y
       <application>EOG</application> は、<application>GNOME</application> デスクトップ環境上にて、イメージファイルを表示しカタログ化するアプリケーションであり、基本的な編集機能を提供します。
 @z
@@ -82,7 +78,7 @@
       <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="exempi"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="itstool"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpeas"/>, and
       <xref linkend="shared-mime-info"/>
@@ -93,7 +89,7 @@
       <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="exempi"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="itstool"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpeas"/>,
       <xref linkend="shared-mime-info"/>
@@ -104,17 +100,19 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="lcms2"/>, 
-      <xref linkend="libexif"/>, and
-      <xref linkend="librsvg"/>
+      <xref linkend="lcms2"/>,
+      <xref linkend="libexif"/>,
+      <xref linkend="librsvg"/>, and
+      <xref linkend="webp-pixbuf-loader"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="lcms2"/>, 
+      <xref linkend="lcms2"/>,
       <xref linkend="libexif"/>,
-      <xref linkend="librsvg"/>
+      <xref linkend="librsvg"/>,
+      <xref linkend="webp-pixbuf-loader"/>
     </para>
 @z
 
@@ -130,12 +128,6 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libportal"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -193,8 +185,11 @@
           libeog.so
         </seg>
         <seg>
-          /usr/include/eog-3.0 and
-          /usr/{lib,share,share/gtk-doc/html,share/help/*}/eog
+          /usr/include/eog-3.0,
+          /usr/lib/eog,
+          /usr/share/eog,
+          /usr/share/gtk-doc/html/eog (optional), and
+          /usr/share/help/*/eog
         </seg>
 @y
         <seg>
@@ -205,7 +200,10 @@
         </seg>
         <seg>
           /usr/include/eog-3.0,
-          /usr/{lib,share,share/gtk-doc/html,share/help/*}/eog
+          /usr/lib/eog,
+          /usr/share/eog,
+          /usr/share/gtk-doc/html/eog (任意インストール),
+          /usr/share/help/*/eog
         </seg>
 @z
 
@@ -217,8 +215,8 @@
 
 @x eog
             is a fast and functional image viewer as well as an
-            image cataloging program.  It has basic editing capabilites
+            image cataloging program.  It has basic editing capabilities
 @y
             is a fast and functional image viewer as well as an
-            image cataloging program.  It has basic editing capabilites
+            image cataloging program.  It has basic editing capabilities
 @z

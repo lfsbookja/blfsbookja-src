@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version='1.0' encoding='ISO-8859-1'?>
 @y
@@ -17,21 +13,20 @@
     <!-- sect1info mode svn-keys:
            Self-made template to process SVN keywords found in sect1info. -->
   <xsl:template match="sect1info" mode="svn-keys">
-    <p class="updated">Last updated <!-- by
+    <!-- <p class="updated">Last updated --><!-- by
       <xsl:apply-templates select="othername" mode="svn-keys"/> -->
-      on
+    <!--  on
       <xsl:apply-templates select="date" mode="svn-keys"/>
-    </p>
+    </p> -->
   </xsl:template>
 @y
     <!-- sect1info mode svn-keys:
            Self-made template to process SVN keywords found in sect1info. -->
   <xsl:template match="sect1info" mode="svn-keys">
-    <p class="updated">最終更新日：<!-- by
+    <!-- <p class="updated">最終更新日 --><!-- by
       <xsl:apply-templates select="othername" mode="svn-keys"/> -->
-      
+    <!--
       <xsl:apply-templates select="date" mode="svn-keys"/>
-    </p>
+    </p> -->
   </xsl:template>
 @z
-

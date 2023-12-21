@@ -10,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY popt-buildsize     "8.7 MB (includes installing documentation)">
+  <!ENTITY popt-buildsize     "6.9 MB (includes installing documentation and tests)">
+  <!ENTITY popt-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY popt-buildsize     "8.7 MB (ドキュメントのインストールを含む)">
+  <!ENTITY popt-buildsize     "6.9 MB (ドキュメントのインストールとテストを含む)">
+  <!ENTITY popt-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x
@@ -90,12 +92,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Popt</title>
 @y
     <title>&InstallationOf1;Popt&InstallationOf2;</title>
@@ -140,21 +136,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>mv /usr/lib/libpopt.so.* /lib</command> and
-      <command>ln -sfv ...</command>: Moves the popt library on the root
-      filesystem, so it is avaliable in case
-      <systemitem class="filesystem">/usr</systemitem> is offline and
-      <xref linkend="efibootmgr"/> is installed and linked to popt.
-@y
-      <command>mv /usr/lib/libpopt.so.* /lib</command> と
-      <command>ln -sfv ...</command>:
-      root ファイルシステム上の popt ライブラリを移動します。
-      こうすることで <systemitem
-      class="filesystem">/usr</systemitem> がオフラインであり <xref
-      linkend="efibootmgr"/> がインストールされ popt にリンクされていても利用可能になります。
 @z
 
 @x

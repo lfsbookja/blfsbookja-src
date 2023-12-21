@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -83,23 +79,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk2"/> or
       <xref linkend="gtk3"/>
       (for <command>gtk-update-icon-cache</command> command)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk2"/> または
       <xref linkend="gtk3"/>
-      (<command>gtk-update-icon-cache</command> コマンドのため)
+      (for <command>gtk-update-icon-cache</command> command)
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/lxde-icon-theme"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/lxde-icon-theme"/>
 @z
 
 @x

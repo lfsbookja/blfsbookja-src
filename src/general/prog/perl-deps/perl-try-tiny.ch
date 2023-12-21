@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -54,7 +50,7 @@
 @z
 
 @x
-      <bridgehead renderas="sect5">Optional (can be used by the testsuite)</bridgehead>
+      <bridgehead renderas="sect5">Optional (can be used by the test suite)</bridgehead>
       <para role="optional">
         <!-- runs one more test if this is present -->
         <xref linkend="perl-capture-tiny"/>

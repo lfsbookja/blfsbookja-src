@@ -107,12 +107,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/gnome-autoar"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gnome-autoar"/>
-@z
-
-@x
     <title>Installation of gnome-autoar</title>
 @y
     <title>&InstallationOf1;gnome-autoar&InstallationOf2;</title>

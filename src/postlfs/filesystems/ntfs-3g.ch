@@ -16,16 +16,17 @@
 @z
 
 @x
-      The <application>Ntfs-3g</application> package contains a stable,
-      read-write open source driver for NTFS partitions. NTFS partitions are
-      used by most Microsoft operating systems. Ntfs-3g allows you to mount
-      NTFS partitions in read-write mode from your Linux system. It uses the
-      FUSE kernel module to be able to implement NTFS support in user space.
+        A new read-write driver for NTFS, called NTFS3, has been added
+        into the Linux kernel since the 5.15 release. The performance of NTFS3
+        is much better than ntfs-3g. To enable NTFS3, enable the following
+        options in the kernel configuration and recompile the kernel if
+        necessary:
 @y
-      <application>Ntfs-3g</application> パッケージは、NTFS ファイルシステムに対するオープンソースドライバーを提供します。
-      NTFS パーティションは主に Microsoft オペレーティングシステムにおいて利用されているものです。
-      Ntfs-3g は Linux システム上から NTFS パーティションをマウントし読み書きを可能とします。
-      これは FUSE カーネルモジュールを利用して、ユーザー空間における NTFS サポートの実装を可能とします。
+        A new read-write driver for NTFS, called NTFS3, has been added
+        into the Linux kernel since the 5.15 release. The performance of NTFS3
+        is much better than ntfs-3g. To enable NTFS3, enable the following
+        options in the kernel configuration and recompile the kernel if
+        necessary:
 @z
 
 @x
@@ -91,20 +92,14 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/ntfs-3g"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/ntfs-3g"/>
-@z
-
-@x
     <title>Kernel Configuration</title>
 @y
     <title>&KernelConfiguration;</title>
 @z
 
 @x
-      Enable the following options in the kernel configuration and recompile the
-      kernel if necessary:
+      Enable the following options in the kernel configuration and recompile
+      the kernel if necessary:
 @y
       以下に示すカーネル設定オプションを有効にします。
       必要に応じてカーネルを再コンパイルしてください。
@@ -139,13 +134,13 @@
       It's recommended to use the in-kernel NTFS3 driver for mounting
       NTFS filesystems, instead of ntfs-3g (see the note at the start of
       this page).  However, if you want to use ntfs-3g to mount the NTFS
-      filesystems anyway, create a symlink for <command>mount</command>
+      filesystems anyway, create a symlink for the <command>mount</command>
       command:
 @y
       It's recommended to use the in-kernel NTFS3 driver for mounting
       NTFS filesystems, instead of ntfs-3g (see the note at the start of
       this page).  However, if you want to use ntfs-3g to mount the NTFS
-      filesystems anyway, create a symlink for <command>mount</command>
+      filesystems anyway, create a symlink for the <command>mount</command>
       command:
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -45,9 +41,9 @@
 @z
 
 @x
-        Download: <ulink url="&downloads-root-systemd;/blfs-systemd-units-&systemd-units-version;.tar.xz"/>
+        Download: <ulink url="&downloads-root;/blfs-systemd-units-&systemd-units-version;.tar.xz"/>
 @y
-        &Download;: <ulink url="&downloads-root-systemd;/blfs-systemd-units-&systemd-units-version;.tar.xz"/>
+        &Download;: <ulink url="&downloads-root;/blfs-systemd-units-&systemd-units-version;.tar.xz"/>
 @z
 
 @x

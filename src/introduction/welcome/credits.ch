@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,10 +11,8 @@
 
 @x
 <sect1 id="credits" xreflabel="Credits">
-  <?dbhtml filename="credits.html"?>
 @y
 <sect1 id="credits" xreflabel="本書製作に関わる方々">
-  <?dbhtml filename="credits.html"?>
 @z
 
 @x

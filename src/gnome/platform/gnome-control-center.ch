@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY gnome-control-center-buildsize     "187 MB (with tests)">
+  <!ENTITY gnome-control-center-buildsize     "114 MB (with tests)">
+  <!ENTITY gnome-control-center-time          "0.6 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gnome-control-center-buildsize     "187 MB（テスト込み）">
+  <!ENTITY gnome-control-center-buildsize     "114 MB (テスト込み)">
+  <!ENTITY gnome-control-center-time          "0.6 SBU (parallelism=4 利用; テスト込み)">
 @z
 
 @x
@@ -84,32 +82,32 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="accountsservice"/>,
-      <xref linkend="clutter-gtk"/>,
       <xref linkend="colord-gtk"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gnome-settings-daemon"/>,
-      <xref linkend="grilo"/>,
       <xref linkend="gsound"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="libgtop"/>,
       <xref linkend="libpwquality"/>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="shared-mime-info"/>, and
+      <xref linkend="shared-mime-info"/>,
+      <xref linkend="tecla"/>, and
       <xref linkend="udisks2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="accountsservice"/>,
-      <xref linkend="clutter-gtk"/>,
       <xref linkend="colord-gtk"/>,
       <xref linkend="gnome-online-accounts"/>,
       <xref linkend="gnome-settings-daemon"/>,
-      <xref linkend="grilo"/>,
       <xref linkend="gsound"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="libgtop"/>,
       <xref linkend="libpwquality"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="shared-mime-info"/>,
+      <xref linkend="tecla"/>,
       <xref linkend="udisks2"/>
     </para>
 @z
@@ -117,12 +115,10 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cheese"/>,
       <xref linkend="cups"/> and
       <xref linkend="samba"/> (for the Printers Panel),
       <xref linkend="gnome-bluetooth"/>,
-      <xref linkend="ibus"/>, 
-      <xref linkend="libhandy1"/>, and
+      <xref linkend="ibus"/>,
       <xref linkend="ModemManager"/> and
       <xref linkend="libnma"/> (for the Network Panel)
       <!-- gnome-remote-desktop can be used in the Sharing panel. -->
@@ -130,13 +126,11 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="cheese"/>,
-      <xref linkend="cups"/> と
+      <xref linkend="cups"/>,
       <xref linkend="samba"/> (for the Printers Panel),
       <xref linkend="gnome-bluetooth"/>,
-      <xref linkend="ibus"/>, 
-      <xref linkend="libhandy1"/> と
-      <xref linkend="ModemManager"/> と
+      <xref linkend="ibus"/>,
+      <xref linkend="ModemManager"/>,
       <xref linkend="libnma"/> (for the Network Panel)
       <!-- gnome-remote-desktop can be used in the Sharing panel. -->
     </para>
@@ -146,14 +140,16 @@
     <bridgehead renderas="sect4">Optional Runtime Dependencies</bridgehead>
     <para role="optional">
       <xref role="runtime" linkend="cups-pk-helper"/> (Printers panel),
-      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel), and
+      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel),
+      <xref role="runtime" linkend="gnome-shell"/> (Applications panel), and
       <xref role="runtime" linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel)
     </para>
 @y
     <bridgehead renderas="sect4">Optional Runtime Dependencies</bridgehead>
     <para role="optional">
       <xref role="runtime" linkend="cups-pk-helper"/> (Printers panel),
-      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel), and
+      <xref role="runtime" linkend="gnome-color-manager"/> (Color panel),
+      <xref role="runtime" linkend="gnome-shell"/> (Applications panel),
       <xref role="runtime" linkend="sound-theme-freedesktop"/> (Additional Sound Effects in Sound panel)
     </para>
 @z
@@ -166,12 +162,6 @@
         Recommended dependencies are not strictly required for
         this package to build and function, but you may not get
         expected results at runtime if you don't install them.
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -188,11 +178,12 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. Note that
-      you must have <application>python-dbusmock</application> module 
-      installed in order for the tests to complete successfully. 
+      To test the results, issue:
+      <command>GTK_A11Y=none ninja test</command>. Note that
+      you must have the <application>python-dbusmock</application> module
+      installed in order for the tests to complete successfully.
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      ビルド結果をテストする場合は <command>GTK_A11Y=none ninja test</command> を実行します。
       なおテストを成功させるためには <application>python-dbusmock</application> モジュールをインストールしておくことが必要です。
 @z
 

@@ -87,10 +87,10 @@
     <xref role="runtime" linkend="openssh"/>
       (runtime, to access ssh://... repositories),
     <xref linkend="pygments"/>,
-    <xref linkend="rust"/>,
+    <xref linkend="rust"/> (see <filename>rust/README.rst</filename> and <filename>rust/rhg/README.md</filename>),
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
-    <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
+    <ulink url="https://www.nongnu.org/cvs/">CVS</ulink>,
     <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
     <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>, and
     <ulink url="https://github.com/google/re2/">re2</ulink>
@@ -106,21 +106,15 @@
     <xref role="runtime" linkend="openssh"/>
       (runtime, to access ssh://... repositories),
     <xref linkend="pygments"/>,
-    <xref linkend="rust"/>,
+    <xref linkend="rust"/> (see <filename>rust/README.rst</filename> and <filename>rust/rhg/README.md</filename>),
     <xref linkend="subversion"/> (with Python bindings),
     <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
-    <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
+    <ulink url="https://www.nongnu.org/cvs/">CVS</ulink>,
     <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
-    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>,
+    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>, and
     <ulink url="https://github.com/google/re2/">re2</ulink>
 
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -143,22 +137,42 @@
 @z
 
 @x
-      To run the test suite, issue (15 tests are known to fail):
+      If you wish to run the tests, the rust tests must be removed as they are
+      currently broken due to syntax errors. To do this, issue:
 @y
-      ビルド結果をテストする場合は、以下を実行します (15 個のテストが失敗します)。
+      If you wish to run the tests, the rust tests must be removed as they are
+      currently broken due to syntax errors. To do this, issue:
+@z
+
+@x
+      To run the test suite, issue:
+@y
+      To run the test suite, issue:
 @z
 
 @x
       where <replaceable>&lt;N&gt;</replaceable> is an integer between one
-      and the number of ( processor X threads ), inclusive.  In order to
+      and the number of ( processor X threads ), inclusive. Several tests
+      fail because some error messages have changed in Python or
+      some deprecation warnings are printed that were not present when the
+      test was designed.
+@y
+      where <replaceable>&lt;N&gt;</replaceable> is an integer between one
+      and the number of ( processor X threads ), inclusive. Several tests
+      fail because some error messages have changed in Python or
+      some deprecation warnings are printed that were not present when the
+      test was designed.
+@z
+
+@x
+      In order to
       investigate any apparently failing tests, you may use the
       <command>run-tests.py</command> script. To see the almost forty switches,
       some of them very useful, issue <command>tests/run-tests.py
       --help</command>.  Running the following commands, you will execute only
       the tests that failed before:
 @y
-      where <replaceable>&lt;N&gt;</replaceable> is an integer between one
-      and the number of ( processor X threads ), inclusive.  In order to
+      In order to
       investigate any apparently failing tests, you may use the
       <command>run-tests.py</command> script. To see the almost forty switches,
       some of them very useful, issue <command>tests/run-tests.py
@@ -167,33 +181,31 @@
 @z
 
 @x
-      Normally, the previous failures will be confirmed. However, if
+      Normally, the previous failures will be reproducible. However, if
       you add the switch <option>--debug</option> before
-      <option>--tmpdir</option>, and run again, some failures are gone, which
-      seems to be a problem with the test suite. If this happens, normally,
-      from now on, there will be no more such failures whether you use the
-      debug switch or not.
-      There are 13 of 876 tests that are known to fail.
+      <option>--tmpdir</option>, and run the tests again, some failures may
+      disappear, which is a problem with the test suite. If this happens,
+      there will be no more of these failures even if you do not pass the
+      --debug switch again.
 @y
-      Normally, the previous failures will be confirmed. However, if
+      Normally, the previous failures will be reproducible. However, if
       you add the switch <option>--debug</option> before
-      <option>--tmpdir</option>, and run again, some failures are gone, which
-      seems to be a problem with the test suite. If this happens, normally,
-      from now on, there will be no more such failures whether you use the
-      debug switch or not.
-      There are 13 of 876 tests that are known to fail.
+      <option>--tmpdir</option>, and run the tests again, some failures may
+      disappear, which is a problem with the test suite. If this happens,
+      there will be no more of these failures even if you do not pass the
+      --debug switch again.
 @z
 
 @x
-      An interesting switch is <option>--time</option>, which will generate at
-      the end of the test suite execution, a table with all executed tests and
-      respective start, end, user, system and real times. Note that the
+      An interesting switch is <option>--time</option>, which will generate a
+      table of all the executed tests and their respective start, end, user,
+      system and real times once the tests are complete. Note that these
       switches may be used with <command>make check</command> by including
       them in the <envar>TESTFLAGS</envar> environment variable.
 @y
-      An interesting switch is <option>--time</option>, which will generate at
-      the end of the test suite execution, a table with all executed tests and
-      respective start, end, user, system and real times. Note that the
+      An interesting switch is <option>--time</option>, which will generate a
+      table of all the executed tests and their respective start, end, user,
+      system and real times once the tests are complete. Note that these
       switches may be used with <command>make check</command> by including
       them in the <envar>TESTFLAGS</envar> environment variable.
 @z
@@ -239,8 +251,12 @@
           /usr/lib/python&python3-majorver;/site-packages/mercurial
         </seg>
         <seg>
-          /etc/mercurial and
-          /usr/lib/python&python3-majorver;/site-packages/{hgdemandimport,hgext,hgext3rd,mercurial}
+          /etc/mercurial,
+          /usr/lib/python&python3-majorver;/site-packages/hgdemandimport,
+          /usr/lib/python&python3-majorver;/site-packages/hgext,
+          /usr/lib/python&python3-majorver;/site-packages/hgext3rd,
+          /usr/lib/python&python3-majorver;/site-packages/mercurial, and
+          /usr/lib/python&python3-majorver;/site-packages/mercurial-&mercurial-version;-py&python3-majorver;.egg-info
         </seg>
 @y
         <seg>
@@ -251,7 +267,11 @@
         </seg>
         <seg>
           /etc/mercurial,
-          /usr/lib/python&python3-majorver;/site-packages/{hgdemandimport,hgext,hgext3rd,mercurial}
+          /usr/lib/python&python3-majorver;/site-packages/hgdemandimport,
+          /usr/lib/python&python3-majorver;/site-packages/hgext,
+          /usr/lib/python&python3-majorver;/site-packages/hgext3rd,
+          /usr/lib/python&python3-majorver;/site-packages/mercurial,
+          /usr/lib/python&python3-majorver;/site-packages/mercurial-&mercurial-version;-py&python3-majorver;.egg-info
         </seg>
 @z
 

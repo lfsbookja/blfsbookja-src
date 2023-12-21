@@ -103,78 +103,37 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <xref linkend="libepoxy"/> (needed for glamor),
-      <xref linkend="libtirpc"/>, and
       <phrase revision="sysv"><xref role="runtime"
-                                    linkend="polkit"/> (runtime)</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/></phrase>
+                                    linkend="elogind"/> (runtime),</phrase>
+      <xref linkend="libepoxy"/> (needed for glamor),
+      <xref linkend="libtirpc"/>,
+      <phrase revision="systemd"><xref role="runtime"
+                                       linkend="systemd"/> (runtime),</phrase>
+      and <xref role='runtime' linkend='xorg-libinput-driver'/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <xref linkend="libepoxy"/> (needed for glamor),
-      <xref linkend="libtirpc"/>, and
       <phrase revision="sysv"><xref role="runtime"
-                                    linkend="polkit"/> (runtime)</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/></phrase>
+                                    linkend="elogind"/> (runtime),</phrase>
+      <xref linkend="libepoxy"/> (needed for glamor),
+      <xref linkend="libtirpc"/>,
+      <phrase revision="systemd"><xref role="runtime"
+                                       linkend="systemd"/> (runtime),</phrase>
+      and <xref role='runtime' linkend='xorg-libinput-driver'/> (runtime)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref role="runtime" linkend="acpid"/> (runtime),
-      <xref linkend="doxygen"/> (to build API documentation),
-      <xref linkend="fop"/> (to build documentation),
-      <xref linkend="nettle"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="xcb-util-keysyms"/>,
-      <xref linkend="xcb-util-image"/>,
-      <xref linkend="xcb-util-renderutil"/>,
-      <xref linkend="xcb-util-wm"/> (all four to build Xephyr),
-      <xref linkend="xmlto"/> (to build documentation),
-      <ulink url="http://download.savannah.gnu.org/releases/libunwind">libunwind</ulink>,
-      <ulink url="https://gitlab.freedesktop.org/xorg/test/rendercheck">rendercheck</ulink> (for tests), and
-      <ulink url="https://www.x.org/archive/individual/doc/">xorg-sgml-doctools</ulink> (to build documentation)
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref role="runtime" linkend="acpid"/> (runtime),
-      <xref linkend="doxygen"/> (to build API documentation),
-      <xref linkend="fop"/> (to build documentation),
-      <xref linkend="nettle"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="xcb-util-keysyms"/>,
-      <xref linkend="xcb-util-image"/>,
-      <xref linkend="xcb-util-renderutil"/>,
-      <xref linkend="xcb-util-wm"/> (all four to build Xephyr),
-      <xref linkend="xmlto"/> (to build documentation),
-      <ulink url="http://download.savannah.gnu.org/releases/libunwind">libunwind</ulink>,
-      <ulink url="https://gitlab.freedesktop.org/xorg/test/rendercheck">rendercheck</ulink> (for tests), and
-      <ulink url="https://www.x.org/archive/individual/doc/">xorg-sgml-doctools</ulink> (to build documentation)
-    </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
     <title>Installation of Xorg Server</title>
 @y
     <title>&InstallationOf1;Xorg サーバー&InstallationOf2;</title>
-@z
-
-@x
-      If you have downloaded the optional patch, apply it by running the
-      following command:
-@y
-      任意のパッチをダウンロードしている場合は、以下のコマンドを実行して適用します。
 @z
 
 @x
@@ -208,11 +167,11 @@
 @z
 
 @x
-      <parameter>-Dsuid_wrapper=true</parameter>: Builds the suid-root
-      wrapper for legacy driver support on rootless xserver systems.
+      <option>-Dsuid_wrapper=true</option>: Builds the suid-root
+      wrapper for legacy DDX driver support on rootless xserver systems.
 @y
-      <parameter>-Dsuid_wrapper=true</parameter>: Builds the suid-root
-      wrapper for legacy driver support on rootless xserver systems.
+      <option>-Dsuid_wrapper=true</option>: Builds the suid-root
+      wrapper for legacy DDX driver support on rootless xserver systems.
 @z
 
 @x
@@ -264,8 +223,7 @@
         </seg>
         <seg>
           several under $XORG_PREFIX/lib/xorg/modules/ including the
-          <filename class="libraryfile">modesetting_drv.so</filename>
-          driver
+          &modesetting_drv; driver
         </seg>
         <seg>
           /etc/X11/xorg.conf.d,
@@ -279,8 +237,7 @@
         </seg>
         <seg>
           several under $XORG_PREFIX/lib/xorg/modules/ including the
-          <filename class="libraryfile">modesetting_drv.so</filename>
-          driver
+          &modesetting_drv; driver
         </seg>
         <seg>
           /etc/X11/xorg.conf.d,
@@ -296,29 +253,10 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x cvt-x7
-            calculates VESA CVT mode lines
-@y
-            VESA CVT モードの行数を算出します。
-@z
-
-@x dmx*
-            are various tools used for manipulating the dmx server
-@y
-            dmx サーバーを操作するためのさまざまなツール。
-@z
-
 @x gtf-x7
             calculates VESA GTF mode lines
 @y
             VESA GTF モードの行数を算出します。
-@z
-
-@x vdltodmx
-            is a tool used to convert VDL config files to DMX config
-            files
-@y
-            VDL 設定ファイルを DMX 設定ファイルに変換するツール。
 @z
 
 @x X
@@ -345,8 +283,12 @@
             X バージョン 11 における X サーバーの仮想フレームバッファー。
 @z
 
-@x xdmxconfig
-            is a graphical configuration utility for the dmx server
+@x modesetting_drv.so
+            provides a video driver for machines using Kernel Mode Setting (KMS).
+            This will use glamor if that has been enabled and the hardware offers
+            acceleration
 @y
-            dmx サーバーに対するグラフィカルな設定ユーティリティー。
+            provides a video driver for machines using Kernel Mode Setting (KMS).
+            This will use glamor if that has been enabled and the hardware offers
+            acceleration
 @z

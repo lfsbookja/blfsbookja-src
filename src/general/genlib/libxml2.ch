@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libxml2-buildsize     "116 MB (with tests)">
-  <!ENTITY libxml2-time          "0.4 SBU (with tests)">
+  <!ENTITY libxml2-buildsize     "103 MB (with tests)">
+  <!ENTITY libxml2-time          "0.6 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libxml2-buildsize     "116 MB (テスト込み)">
-  <!ENTITY libxml2-time          "0.4 SBU (テスト込み)">
+  <!ENTITY libxml2-buildsize     "103 MB (テスト込み)">
+  <!ENTITY libxml2-time          "0.6 SBU (parallelism=4 利用; テスト込み)">
 @z
 
 @x
@@ -79,7 +79,7 @@
 @z
 
 @x
-          Optional Testsuite:
+          Optional Test Suite:
           <ulink url="https://www.w3.org/XML/Test/xmlts&testsuite-version;.tar.gz"/> - This
           enables <command>make check</command> to do complete testing.
 @y
@@ -95,47 +95,17 @@
 @z
 
 @x
--->
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="icu"/> (see below) and
       <xref linkend="valgrind"/> (may be used in the tests)
     </para>
 @y
--->
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="icu"/> (下記参照),
       <xref linkend="valgrind"/> (テスト内で利用)
     </para>
-@z
-
-%@x
-%        Some packages which utilize <application>libxml2</application> (such as
-%        <application>GNOME Doc Utils</application>) need the
-%        <application>Python3</application> module installed to function properly
-%        and some packages will not build properly if the
-%        <application>Python3</application> module is not available.
-%@y
-%        <application>libxml2</application> を利用するパッケージの中には <application>Python3</application> モジュールがないと正しく動作しないものがあります。
-%        （例えば <application>GNOME Doc Utils</application> など。）
-%        また <application>Python3</application> モジュールがないとビルドができないパッケージもあります。
-%@z
-
-@x
-        The old <application>Python2</application> module can be built after
-        <filename class="libraryfile">libxml2.so</filename> has been installed,
-        see <xref linkend="libxml2py2"/>.
-@y
-        The old <application>Python2</application> module can be built after
-        <filename class="libraryfile">libxml2.so</filename> has been installed,
-        see <xref linkend="libxml2py2"/>.
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libxml2"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libxml2"/>
 @z
 
 @x
@@ -152,20 +122,27 @@
 @z
 
 @x
-      If you downloaded the testsuite, issue the following command:
+      If you downloaded the test suite, issue the following command:
 @y
       テストスイート用のファイルをダウンロードしている場合は以下を実行します。
 @z
 
 @x
       To test the results, issue: <command>make check &gt; check.log</command>.
+      This command will print several lines of error messages like
+      <quote><computeroutput>Failed to parse
+      xstc/...</computeroutput></quote> because some test files are missing
+      and these messages can be safely ignored.
       A summary of the results can be obtained with <command>grep -E
-      '^Total|expected' check.log</command>. If <xref linkend="valgrind"/> is
+      '^Total|expected|Ran' check.log</command>. If <xref linkend="valgrind"/> is
       installed and you want to check for memory leaks, replace
       <command>check</command> with <command>check-valgrind</command>.
 @y
       ビルド結果をテストする場合は <command>make check &gt; check.log</command> を実行します。
-      <command>grep -E '^Total|expected' check.log</command> を実行して結果を確認することができます。
+      このコマンドを実行すると<quote><computeroutput>Failed to parse
+      xstc/...</computeroutput></quote>といったエラーメッセージがいくつか出力されます。
+      ただしこれはテストファイルが一部に不足しているからであって、このエラーメッセージは無視してかまいません。
+      <command>grep -E '^Total|expected|Ran' check.log</command> を実行して結果を確認することができます。
       <xref linkend="valgrind"/> をインストールしていてメモリリークをチェックしたい場合は <command>check</command> ではなく <command>check-valgrind</command> に置き換えて実行します。
 @z
 
@@ -191,10 +168,10 @@
 @z
 
 @x
-      <parameter>--with-python=/usr/bin/python3</parameter>: Allows building
+      <parameter>PYTHON=/usr/bin/python3</parameter>: Allows building
       the libxml2 module with Python3 instead of Python2.
 @y
-      <parameter>--with-python=/usr/bin/python3</parameter>:
+      <parameter>PYTHON=/usr/bin/python3</parameter>:
       libxml2 が Python2 でなく Python3 を利用するようにしたいときに指定します。
 @z
 
@@ -216,40 +193,32 @@
 
 @x
         <seg>
-          xml2-config, 
-          xmlcatalog, and 
-          xmllint <!--and the
-          drv_libxml2.py and libxml2.py <application>Python3</application>
-          modules.  These are pythin modules, not programs -->
+          xml2-config,
+          xmlcatalog, and
+          xmllint
         </seg>
         <seg>
-          libxml2.so and 
-          libxml2mod.so (<application>Python3</application> module)
+          libxml2.so
         </seg>
         <seg>
           /usr/include/libxml2,
           /usr/lib/cmake/libxml2,
-          /usr/share/doc/libxml2-&libxml2-version;,
-          /usr/share/doc/libxml2-python-&libxml2-version;, and
+          /usr/share/doc/libxml2-&libxml2-version;, and
           /usr/share/gtk-doc/html/libxml2
         </seg>
 @y
         <seg>
-          xml2-config, 
+          xml2-config,
           xmlcatalog,
-          xmllint <!--and the
-          drv_libxml2.py and libxml2.py <application>Python3</application>
-          modules.  These are pythin modules, not programs -->
+          xmllint
         </seg>
         <seg>
-          libxml2.so, 
-          libxml2mod.so (<application>Python3</application> モジュール)
+          libxml2.so
         </seg>
         <seg>
           /usr/include/libxml2,
           /usr/lib/cmake/libxml2,
           /usr/share/doc/libxml2-&libxml2-version;,
-          /usr/share/doc/libxml2-python-&libxml2-version;,
           /usr/share/gtk-doc/html/libxml2
         </seg>
 @z

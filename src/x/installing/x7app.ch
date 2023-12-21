@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -55,31 +51,31 @@
 @z
 
 @x
-	  Download (HTTP): <ulink url="&x7apps-download-http;"/>
+          Download (HTTP): <ulink url="&x7apps-download-http;"/>
 @y
-	  &Download; (HTTP): <ulink url="&x7apps-download-http;"/>
+          &Download; (HTTP): <ulink url="&x7apps-download-http;"/>
 @z
 
 @x
-	  Download (FTP): <ulink url="&x7apps-download-ftp;"/>
+          Download (FTP): <ulink url="&x7apps-download-ftp;"/>
 @y
-	  &Download; (FTP): <ulink url="&x7apps-download-ftp;"/>
+          &Download; (FTP): <ulink url="&x7apps-download-ftp;"/>
 @z
 
 @x
-	  Download size: &x7apps-size;
+          Download size: &x7apps-size;
 @y
-	  &DownloadSize;: &x7apps-size;
+          &DownloadSize;: &x7apps-size;
 @z
 
 @x
-	  Estimated disk space required: &x7apps-buildsize;
+          Estimated disk space required: &x7apps-buildsize;
 @y
           &Estimateddiskspacerequired;: &x7apps-buildsize;
 @z
 
 @x
-	  Estimated build time: &x7apps-time;
+          Estimated build time: &x7apps-time;
 @y
           &Estimatedbuildtime;: &x7apps-time;
 @z
@@ -112,26 +108,18 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="linux-pam"/> and
-      both <ulink url="http://cairographics.org/releases/">cairo-5c</ulink> and
-      <ulink url="http://nickle.org/">Nickle</ulink> (only if you wish to try to
+      both <ulink url="https://www.cairographics.org/releases/">cairo-5c</ulink> and
+      <ulink url="https://nickle.org/">Nickle</ulink> (only if you wish to try to
       run the undocumented <command>xkeyhost</command> script).
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="linux-pam"/> and
-      both <ulink url="http://cairographics.org/releases/">cairo-5c</ulink> and
-      <ulink url="http://nickle.org/">Nickle</ulink> (only if you wish to try to
+      both <ulink url="https://www.cairographics.org/releases/">cairo-5c</ulink> and
+      <ulink url="https://nickle.org/">Nickle</ulink> (only if you wish to try to
       run the undocumented <command>xkeyhost</command> script).
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-    <ulink url='&blfs-wiki;/Xorg7Applications'/></para>
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-    <ulink url='&blfs-wiki;/Xorg7Applications'/></para>
 @z
 
 @x
@@ -149,10 +137,10 @@
 @z
 
 @x
-      To download the needed files using <application>wget</application>,
+      To download the needed files using <xref linkend='wget'/>,
       use the following commands:
 @y
-      必要なファイルをダウンロードするために <application>wget</application> を使って以下を実行します。
+      必要なファイルをダウンロードするために <xref linkend='wget'/> を使って以下を実行します。
 @z
 
 @x
@@ -223,251 +211,251 @@
 @z
 
 @x iceauth
-	    is the ICE authority file utility
+            is the ICE authority file utility
 @y
-	    is the ICE authority file utility
+            is the ICE authority file utility
 @z
 
 @x luit
-	    provides locale and ISO 2022 support for Unicode terminals
+            provides locale and ISO 2022 support for Unicode terminals
 @y
             Unicode ターミナルに対してロケールと ISO 2022 サポートを提供します。
 @z
 
 @x mkfontdir
-	    creates an index of X font files in a directory
+            creates an index of X font files in a directory
 @y
             ディレクトリ内に X フォントファイルのインデックスを生成します。
 @z
 
 @x mkfontscale
-	    creates an index of scalable font files for X
+            creates an index of scalable font files for X
 @y
             X におけるスケーラブルフォントファイルのインデックスを生成します。
 @z
 
 @x sessreg
-	    manages utmp/wtmp entries for non-init clients
+            manages utmp/wtmp entries for non-init clients
 @y
-	    manages utmp/wtmp entries for non-init clients
+            manages utmp/wtmp entries for non-init clients
 @z
 
 @x setxkbmap
-	    sets the keyboard using the X Keyboard Extension
+            sets the keyboard using the X Keyboard Extension
 @y
             XKB (X Keyboard Extension) を用いたキーボード設定を行います。
 @z
 
 @x smproxy
-	    is the Session Manager Proxy
+            is the Session Manager Proxy
 @y
             セッションマネージャープロキシー (Session Manager Proxy)
 @z
 
 @x x11perf
-	    is an X11 server performance test program
+            is an X11 server performance test program
 @y
             X11 サーバーにおけるパフォーマンステストプログラム。
 @z
 
 @x x11perfcomp
-	    is an X11 server performance comparison program
+            is an X11 server performance comparison program
 @y
             X11 サーバーにおけるパフォーマンス比較プログラム。
 @z
 
 @x xauth
-	    is the X authority file utility
+            is the X authority file utility
 @y
             X 認証 (authority) ファイルユーティリティー。
 @z
 
 @x xbacklight
-	    adjusts backlight brightness using RandR extension
+            adjusts backlight brightness using RandR extension
 @y
-	    adjusts backlight brightness using RandR extension
+            adjusts backlight brightness using RandR extension
 @z
 
 @x xcmsdb
-	    is the Device Color Characterization utility for the X
+            is the Device Color Characterization utility for the X
             Color Management System
 @y
-	    is the Device Color Characterization utility for the X
+            is the Device Color Characterization utility for the X
             Color Management System
 @z
 
 @x xcursorgen
-	    creates an X cursor file from a collection of PNG images
+            creates an X cursor file from a collection of PNG images
 @y
-	    creates an X cursor file from a collection of PNG images
+            creates an X cursor file from a collection of PNG images
 @z
 
 @x xdpr
-	    dumps an X window directly to a printer
+            dumps an X window directly to a printer
 @y
-	    dumps an X window directly to a printer
+            dumps an X window directly to a printer
 @z
 
 @x xdpyinfo
-	    is a display information utility for X
+            is a display information utility for X
 @y
-	    is a display information utility for X
+            is a display information utility for X
 @z
 
 @x xdriinfo
-	    queries configuration information of DRI drivers
+            queries configuration information of DRI drivers
 @y
-	    queries configuration information of DRI drivers
+            queries configuration information of DRI drivers
 @z
 
 @x xev
-	    prints contents of X events
+            prints contents of X events
 @y
-	    prints contents of X events
+            prints contents of X events
 @z
 
 @x xgamma
-	    alters a monitor's gamma correction through the X server
+            alters a monitor's gamma correction through the X server
 @y
-	    alters a monitor's gamma correction through the X server
+            alters a monitor's gamma correction through the X server
 @z
 
 @x xhost
-	    is a server access control program for X
+            is a server access control program for X
 @y
-	    is a server access control program for X
+            is a server access control program for X
 @z
 
 @x xinput
-	    is a utility to configure and test X input devices
+            is a utility to configure and test X input devices
 @y
-	    is a utility to configure and test X input devices
+            is a utility to configure and test X input devices
 @z
 
 @x xkbbell
-	    is an XKB utility program that raises a bell event
+            is an XKB utility program that raises a bell event
 @y
-	    is an XKB utility program that raises a bell event
+            is an XKB utility program that raises a bell event
 @z
 
 @x xkbcomp
-	    compiles an XKB keyboard description
+            compiles an XKB keyboard description
 @y
-	    compiles an XKB keyboard description
+            compiles an XKB keyboard description
 @z
 
 @x xkbevd
-	    is the XKB event daemon
+            is the XKB event daemon
 @y
-	    is the XKB event daemon
+            is the XKB event daemon
 @z
 
 @x xkbvleds
-	    shows the XKB status of keyboard LEDs
+            shows the XKB status of keyboard LEDs
 @y
-	    shows the XKB status of keyboard LEDs
+            shows the XKB status of keyboard LEDs
 @z
 
 @x xkbwatch
-	    monitors modifier keys and LEDs
+            monitors modifier keys and LEDs
 @y
-	    monitors modifier keys and LEDs
+            monitors modifier keys and LEDs
 @z
 
 @x xkill
-	    kills a client by its X resource
+            kills a client by its X resource
 @y
-	    kills a client by its X resource
+            kills a client by its X resource
 @z
 
 @x xlsatoms
-	    lists interned atoms defined on the server
+            lists interned atoms defined on the server
 @y
-	    lists interned atoms defined on the server
+            lists interned atoms defined on the server
 @z
 
 @x xlsclients
-	    lists client applications running on a display
+            lists client applications running on a display
 @y
-	    lists client applications running on a display
+            lists client applications running on a display
 @z
 
 @x xmessage
-	    displays a message or query in a window
+            displays a message or query in a window
 @y
-	    displays a message or query in a window
+            displays a message or query in a window
 @z
 
 @x xmodmap
-	    is a utility for modifying keymaps and pointer button
+            is a utility for modifying keymaps and pointer button
             mappings in X
 @y
-	    is a utility for modifying keymaps and pointer button
+            is a utility for modifying keymaps and pointer button
             mappings in X
 @z
 
 @x xpr
-	    prints an X window dump
+            prints an X window dump
 @y
-	    prints an X window dump
+            prints an X window dump
 @z
 
 @x xprop
-	    is a property displayer for X
+            is a property displayer for X
 @y
-	    is a property displayer for X
+            is a property displayer for X
 @z
 
 @x xrandr
-	    is a primitive command line interface to RandR extension
+            is a primitive command line interface to RandR extension
 @y
-	    is a primitive command line interface to RandR extension
+            is a primitive command line interface to RandR extension
 @z
 
 @x xrdb
-	    is the X server resource database utility
+            is the X server resource database utility
 @y
-	    is the X server resource database utility
+            is the X server resource database utility
 @z
 
 @x xrefresh
-	    refreshes all or part of an X screen
+            refreshes all or part of an X screen
 @y
-	    refreshes all or part of an X screen
+            refreshes all or part of an X screen
 @z
 
 @x xset
-	    is the user preference utility for X
+            is the user preference utility for X
 @y
-	    is the user preference utility for X
+            is the user preference utility for X
 @z
 
 @x xsetroot
-	    is the root window parameter setting utility for X
+            is the root window parameter setting utility for X
 @y
-	    is the root window parameter setting utility for X
+            is the root window parameter setting utility for X
 @z
 
 @x xvinfo
-	    prints out X-Video extension adaptor information
+            prints out X-Video extension adaptor information
 @y
-	    prints out X-Video extension adaptor information
+            prints out X-Video extension adaptor information
 @z
 
 @x xwd
-	    dumps an image of an X window
+            dumps an image of an X window
 @y
-	    dumps an image of an X window
+            dumps an image of an X window
 @z
 
 @x xwininfo
-	    is a window information utility for X
+            is a window information utility for X
 @y
-	    is a window information utility for X
+            is a window information utility for X
 @z
 
 @x xwud
-	    is an image displayer for X
+            is an image displayer for X
 @y
-	    is an image displayer for X
+            is an image displayer for X
 @z

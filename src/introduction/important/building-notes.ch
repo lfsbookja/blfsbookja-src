@@ -44,18 +44,15 @@
 @x
   <para>While you can keep the source files anywhere you like, we assume that
   you have unpacked the package and changed into the directory created by the
-  unpacking process (the 'build' directory).  We also assume you have
-  uncompressed any required patches and they are in the directory immediately
-  above the 'build' directory.</para>
+  unpacking process (the source directory).  We also assume you have
+  uncompressed any required patches and they are in the directory
+  immediately above the source directory.</para>
 @y
-  <para>
-  
-  While you can keep the source files anywhere you like, we assume that
+  <para>While you can keep the source files anywhere you like, we assume that
   you have unpacked the package and changed into the directory created by the
-  unpacking process (the 'build' directory).  We also assume you have
-  uncompressed any required patches and they are in the directory immediately
-  above the 'build' directory.
-  </para>
+  unpacking process (the source directory).  We also assume you have
+  uncompressed any required patches and they are in the directory
+  immediately above the source directory.</para>
 @z
 
 @x
@@ -140,19 +137,17 @@
 @z
 
 @x
-    <para>Finally, you sometimes need to be able to unpack patches which are
-    generally not in <filename class='extension'>.tar</filename> format. The
-    best way to do this is to copy the patch file to the parent of the 'build'
-    directory and then run one of the following commands depending on whether
-    the file is a <filename class='extension'>.gz</filename> or <filename
-    class='extension'>.bz2</filename> file:</para>
+      Finally, sometimes we have a compressed patch file in
+      <filename class='extension'>.patch.gz</filename> or
+      <filename class='extension'>.patch.bz2</filename> format.
+      The best way to apply the patch is piping the output of the
+      decompressor to the <command>patch</command> utility.  For example:
 @y
-    <para>Finally, you sometimes need to be able to unpack patches which are
-    generally not in <filename class='extension'>.tar</filename> format. The
-    best way to do this is to copy the patch file to the parent of the 'build'
-    directory and then run one of the following commands depending on whether
-    the file is a <filename class='extension'>.gz</filename> or <filename
-    class='extension'>.bz2</filename> file:</para>
+      Finally, sometimes we have a compressed patch file in
+      <filename class='extension'>.patch.gz</filename> or
+      <filename class='extension'>.patch.bz2</filename> format.
+      The best way to apply the patch is piping the output of the
+      decompressor to the <command>patch</command> utility.  For example:
 @z
 
 @x
@@ -456,13 +451,13 @@
 
 @x
     <para>Of course, you'll be required to view the output one page at a time
-    because the <command>more</command> filter was used. Now try the same
+    because the <command>less</command> filter was used. Now try the same
     command, but this time redirect the output to a file. The special file
     <filename>/dev/null</filename> can be used instead of the filename shown,
     but you will have no log file to examine:</para>
 @y
     <para>Of course, you'll be required to view the output one page at a time
-    because the <command>more</command> filter was used. Now try the same
+    because the <command>less</command> filter was used. Now try the same
     command, but this time redirect the output to a file. The special file
     <filename>/dev/null</filename> can be used instead of the filename shown,
     but you will have no log file to examine:</para>
@@ -559,41 +554,78 @@
 @x
         <para><emphasis>Required</emphasis> means that the target package
         cannot be correctly built without the dependency having first been
-        installed.</para>
+        installed, except if the dependency is said to be
+        <quote>runtime</quote>, which means the target package can be built but
+        cannot function without it.</para>
 @y
         <para>
         <emphasis>必須</emphasis> は、パッケージを初めてインストールする際には、依存しているそれらのパッケージがない状態では正しくビルドすることができないことを表します。
+        except if the dependency is said to be
+        <quote>runtime</quote>, which means the target package can be built but
+        cannot function without it.
         </para>
 @z
 
 @x
         <para><emphasis>Recommended</emphasis> means that BLFS strongly
-        suggests this package is installed first for a clean and trouble-free
+        suggests this package is installed first (except if said to be
+        <quote>runtime</quote>, see below) for a clean and trouble-free
         build, that won't have issues either during the build process, or at
         run-time.  The instructions in the book assume these packages are
         installed.  Some changes or workarounds may be required if these
-        packages are not installed.</para>
+        packages are not installed. If a recommended dependency is said
+        to be <quote>runtime</quote>, it means that BLFS strongly suggests
+        that this dependency is installed before using the package, for
+        getting full functionality.</para>
 @y
         <para><emphasis>Recommended</emphasis> means that BLFS strongly
-        suggests this package is installed first for a clean and trouble-free
+        suggests this package is installed first (except if said to be
+        <quote>runtime</quote>, see below) for a clean and trouble-free
         build, that won't have issues either during the build process, or at
         run-time.  The instructions in the book assume these packages are
         installed.  Some changes or workarounds may be required if these
-        packages are not installed.</para>
+        packages are not installed. If a recommended dependency is said
+        to be <quote>runtime</quote>, it means that BLFS strongly suggests
+        that this dependency is installed before using the package, for
+        getting full functionality.</para>
 @z
 
 @x
         <para><emphasis>Optional</emphasis> means that this package might be
         installed for added functionality. Often BLFS will describe the
-        dependency to explain the added functionality that will result.</para>
+        dependency to explain the added functionality that will result.
+        An optional dependency may be automatically pick up by the target
+        package if the dependency is installed, but another some optional
+        dependency may also need additional configuration options to enable
+        them when the target package is built.  Such additional options are
+        often documented in the BLFS book.  If an optional dependency is
+        said to be <quote>runtime</quote>, it means you may install
+        the dependency after installing the target package to support some
+        optional features of the target package if you need these
+        features.</para>
+        <para>An optional dependency may be out of BLFS.  If you need such
+        an <emphasis>external</emphasis> optional dependency for some
+        features you need, read <xref linkend='beyond'/> for the general
+        hint about installing an out-of-BLFS package.</para>
 @y
         <para>
         <emphasis>任意</emphasis>
         は、付加的な機能を実現するためにはそのパッケージが必要であることを表します。
-        
         Often BLFS will describe the
         dependency to explain the added functionality that will result.
-        </para>
+        An optional dependency may be automatically pick up by the target
+        package if the dependency is installed, but another some optional
+        dependency may also need additional configuration options to enable
+        them when the target package is built.  Such additional options are
+        often documented in the BLFS book.  If an optional dependency is
+        said to be <quote>runtime</quote>, it means you may install
+        the dependency after installing the target package to support some
+        optional features of the target package if you need these
+        features.</para>
+        <para>An optional dependency may be out of BLFS.  If you need such
+        an <emphasis>external</emphasis> optional dependency for some
+        features you need, read <xref linkend='beyond'/> for the general
+        hint about installing an out-of-BLFS package.</para>
 @z
 
 @x

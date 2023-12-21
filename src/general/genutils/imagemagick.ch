@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY imagemagick-buildsize     "193 MB (with typical dependencies; add 20 MB for checks)">
-  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.6 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "164 MB (with typical dependencies; add 31 MB for checks)">
+  <!ENTITY imagemagick-time          "0.8 SBU (with typical dependencies; add 0.8 SBU for checks, both using  parallelism=4)">
 @y
-  <!ENTITY imagemagick-buildsize     "193 MB (with typical dependencies; add 20 MB for checks)">
-  <!ENTITY imagemagick-time          "0.9 SBU (with typical dependencies; add 0.6 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "164 MB (with typical dependencies; add 31 MB for checks)">
+  <!ENTITY imagemagick-time          "0.8 SBU (with typical dependencies; add 0.8 SBU for checks, both using  parallelism=4)">
 @z
 
 @x
@@ -84,10 +84,8 @@
         the existing BLFS instructions to install it. Chances are that it will
         work just fine, but this has not been tested by the BLFS team. If the
         package version shown above is not available from the locations shown
-        above, or from the <filename class="directory">legacy/</filename>
-        directory at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you
-        can download it from the BLFS package server at Oregon State University: 
-        <ulink url="ftp://ftp.osuosl.org/pub/blfs/conglomeration/ImageMagick/"/>.
+        above, you can download it from the BLFS package server at Oregon State
+        University: <ulink url="https://ftp.osuosl.org/pub/blfs/conglomeration/ImageMagick/"/>.
 @y
         The <application>ImageMagick</application> source releases are updated
         frequently and the version shown above may no longer be available from
@@ -95,10 +93,8 @@
         the existing BLFS instructions to install it. Chances are that it will
         work just fine, but this has not been tested by the BLFS team. If the
         package version shown above is not available from the locations shown
-        above, or from the <filename class="directory">legacy/</filename>
-        directory at <literal>ftp.ImageMagick.org/pub/ImageMagick</literal> you
-        can download it from the BLFS package server at Oregon State University: 
-        <ulink url="ftp://ftp.osuosl.org/pub/blfs/conglomeration/ImageMagick/"/>.
+        above, you can download it from the BLFS package server at Oregon State
+        University: <ulink url="https://ftp.osuosl.org/pub/blfs/conglomeration/ImageMagick/"/>.
 @z
 
 @x
@@ -160,17 +156,12 @@
       <xref linkend="wget"/>,
       <xref linkend="xdg-utils"/>,
       <xref linkend="xterm2"/>,
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
-      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
-      <ulink url="http://www.openpgp.org/about/">PGP</ulink> or
+      <ulink url="https://dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="https://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink> and
+      <ulink url="https://www.openpgp.org/about/">PGP</ulink> or
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates">Profiles</ulink>,
-      and
-      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats
-      listed in
-      <ulink url="https://imagemagick.org/script/formats.php">
-      https://imagemagick.org/script/formats.php</ulink>)
+      <ulink url="https://imagemagick.org/archive/delegates/">Profiles</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">Optional System Utilities</bridgehead>
@@ -185,160 +176,179 @@
       <xref linkend="wget"/>,
       <xref linkend="xdg-utils"/>,
       <xref linkend="xterm2"/>,
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
-      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
-      <ulink url="http://www.openpgp.org/about/">PGP</ulink> or
+      <ulink url="https://dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="https://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink> and
+      <ulink url="https://www.openpgp.org/about/">PGP</ulink> or
       <xref linkend="gnupg2"/>
       (you'll have to do some hacking to use <application>GnuPG</application>),
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates">Profiles</ulink>,
-      and
-      <ulink url="http://ufraw.sourceforge.net/">ufraw</ulink> (for raw formats
-      listed in
+      <ulink url="https://imagemagick.org/archive/delegates/">Profiles</ulink>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
+    <para role="optional">
+      <xref linkend="jasper"/>,
+      <xref linkend="lcms2"/>,
+      <!-- although libexif may have been used in the past, I can find no
+          evidence that it has been used in imagemagick-7.  ken
+      <xref linkend="libexif"/>,-->
+      <xref linkend="libgxps"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="libraw"/> (for dng files, needs the thread-safe libraw_r),
+      <xref linkend="librsvg"/>,
+      <xref linkend="libtiff"/>,
+      <xref linkend="libwebp"/>,
+      <xref linkend="openjpeg2"/>,
+      <xref linkend="pango"/>,
+      <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
+      <ulink url="https://imagemagick.org/archive/delegates/">
+      FlashPIX (libfpx)</ulink>,
+      <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
+      <ulink url="https://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
+      <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
+      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
+      <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
+      (both needed if converting macOS heic images),
+      <ulink url="https://github.com/libjxl/libjxl/">libjxl</ulink>,
+      <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
+      <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
+      <ulink url="https://www.openexr.com/">OpenEXR</ulink>, and
+      <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
+      (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
+    </para>
+@y
+    <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
+    <para role="optional">
+      <xref linkend="jasper"/>,
+      <xref linkend="lcms2"/>,
+      <!-- although libexif may have been used in the past, I can find no
+          evidence that it has been used in imagemagick-7.  ken
+      <xref linkend="libexif"/>,-->
+      <xref linkend="libgxps"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libpng"/>,
+      <xref linkend="libraw"/> (for dng files, needs the thread-safe libraw_r),
+      <xref linkend="librsvg"/>,
+      <xref linkend="libtiff"/>,
+      <xref linkend="libwebp"/>,
+      <xref linkend="openjpeg2"/>,
+      <xref linkend="pango"/>,
+      <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
+      <ulink url="https://imagemagick.org/archive/delegates/">
+      FlashPIX (libfpx)</ulink>,
+      <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
+      <ulink url="https://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
+      <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
+      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
+      <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
+      (both needed if converting macOS heic images),
+      <ulink url="https://github.com/libjxl/libjxl/">libjxl</ulink>,
+      <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
+      <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
+      <ulink url="https://www.openexr.com/">OpenEXR</ulink>, and
+      <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
+      (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional Graphics Utilities</bridgehead>
+    <para role="optional">
+      <xref linkend="dejavu-fonts"/>,
+      <xref linkend="gs"/>,
+      <xref linkend="gimp"/>,
+      <xref linkend="graphviz"/>,
+      <xref linkend="inkscape"/>,
+      <ulink url="https://www.blender.org/">Blender</ulink>,
+      <ulink url="https://corefonts.sourceforge.net/">corefonts</ulink>,
+      <ulink url="https://ghostscript.com/releases/gpcldnld.html">GhostPCL</ulink>,
+      <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
+      <ulink url="https://www.povray.org/">POV-Ray</ulink>, and
+      <ulink url="https://www.radiance-online.org/">Radiance</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">Optional Graphics Utilities</bridgehead>
+    <para role="optional">
+      <xref linkend="dejavu-fonts"/>,
+      <xref linkend="gs"/>,
+      <xref linkend="gimp"/>,
+      <xref linkend="graphviz"/>,
+      <xref linkend="inkscape"/>,
+      <ulink url="https://www.blender.org/">Blender</ulink>,
+      <ulink url="https://corefonts.sourceforge.net/">corefonts</ulink>,
+      <ulink url="https://ghostscript.com/releases/gpcldnld.html">GhostPCL</ulink>,
+      <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
+      <ulink url="https://www.povray.org/">POV-Ray</ulink>, and
+      <ulink url="https://www.radiance-online.org/">Radiance</ulink>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional Conversion Tools</bridgehead>
+    <para role="optional">
+      <xref linkend="enscript"/>,
+      <xref linkend="potrace"/>,
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
+      <ulink url="https://autotrace.sourceforge.net/">AutoTrace</ulink>,
+      <ulink url="https://www.extensis.com/">
+      GeoExpress Command Line Utilities, AKA MrSID Utilities (binary package)</ulink>,
+      <ulink url="https://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
+      <!-- not accessible
+      <ulink url="https://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
+      -->
+      <ulink url="https://wvware.sourceforge.net/">libwmf</ulink>,
+      <ulink url="https://sk1project.net/uc2/">
+      UniConvertor</ulink>,
+      <!-- ufraw-batch was a delegate program, the delegate library coders/dng.so
+      is used if librar_r is present, ufraw now ftbfs with exiv2-0.28, and IM-7.1.1
+      in any case (if no libraw) invokes it to ask for a temp png file, but then
+      tries to open the temp file using a ppm suffix, which of course fails.
+      <ulink url="https://ufraw.sourceforge.net/">ufraw</ulink> (for dng files,
+      see
       <ulink url="https://imagemagick.org/script/formats.php">
-      https://imagemagick.org/script/formats.php</ulink>)
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
-    <para role="optional">
-      <xref linkend="jasper"/>,
-      <xref role="nodep" linkend="lcms"/> or
-      <xref linkend="lcms2"/>,
-      <!-- although libexif may have been used in the past, I can find no
-          evidence that it has been used in imagemagick-7.  ken
-      <xref linkend="libexif"/>,-->
-      <xref linkend="libgxps"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="libraw"/> (RAW_R),
-      <xref linkend="librsvg"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="openjpeg2"/>,
-      <xref linkend="pango"/>,
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
-      FlashPIX (libfpx)</ulink>,
-      <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-      <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
-      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
-      <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
-      (both needed if converting macOS heic images),
-      <ulink url="https://github.com/libjxl/libjxl/">libjxl</ulink>,
-      <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
-      <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
-      <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
-      <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
-      (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
-    </para>
-@y
-    <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
-    <para role="optional">
-      <xref linkend="jasper"/>,
-      <xref role="nodep" linkend="lcms"/> or
-      <xref linkend="lcms2"/>,
-      <!-- although libexif may have been used in the past, I can find no
-          evidence that it has been used in imagemagick-7.  ken
-      <xref linkend="libexif"/>,-->
-      <xref linkend="libgxps"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="libraw"/> (RAW_R),
-      <xref linkend="librsvg"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="openjpeg2"/>,
-      <xref linkend="pango"/>,
-      <ulink url="http://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="ftp://ftp.imagemagick.org/pub/ImageMagick/delegates/">
-      FlashPIX (libfpx)</ulink>,
-      <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
-      <ulink url="http://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-      <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
-      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
-      <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
-      (both needed if converting macOS heic images),
-      <ulink url="https://github.com/libjxl/libjxl/">libjxl</ulink>,
-      <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
-      <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
-      <ulink url="http://www.openexr.com/">OpenEXR</ulink>, and
-      <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
-      (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional Graphics Utilities</bridgehead>
-    <para role="optional">
-      <xref linkend="dejavu-fonts"/>,
-      <xref linkend="gs"/>,
-      <xref linkend="gimp"/>,
-      <xref linkend="graphviz"/>,
-      <xref linkend="inkscape"/>,
-      <ulink url="http://www.blender.org/">Blender</ulink>,
-      <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
-      <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink>,
-      <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
-      <ulink url="http://www.povray.org/">POV-Ray</ulink>, and
-      <ulink url="http://www.radiance-online.org/">Radiance</ulink>
-    </para>
-@y
-    <bridgehead renderas="sect4">Optional Graphics Utilities</bridgehead>
-    <para role="optional">
-      <xref linkend="dejavu-fonts"/>,
-      <xref linkend="gs"/>,
-      <xref linkend="gimp"/>,
-      <xref linkend="graphviz"/>,
-      <xref linkend="inkscape"/>,
-      <ulink url="http://www.blender.org/">Blender</ulink>,
-      <ulink url="http://corefonts.sourceforge.net/">corefonts</ulink>,
-      <ulink url="http://www.ghostscript.com/download/gpcldnld.html">GhostPCL</ulink>,
-      <ulink url="http://www.gnuplot.info/">Gnuplot</ulink>,
-      <ulink url="http://www.povray.org/">POV-Ray</ulink>,
-      <ulink url="http://www.radiance-online.org/">Radiance</ulink>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional Conversion Tools</bridgehead>
-    <para role="optional">
-      <xref linkend="enscript"/>,
-      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
-      <ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
-      <ulink url="http://www.lizardtech.com/downloads/category/">
-      GeoExpress Command Line Utilities, AKA MrSID Utilities (binary package)</ulink>,
-      <ulink url="https://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
-      <ulink url="http://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
-      <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
-      <ulink url="https://sk1project.net/uc2/">
-      UniConvertor</ulink>, and
-      <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
+      https://imagemagick.org/script/formats.php</ulink> for some special switches)
+      -->
+      and
+      <ulink url="https://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
       (or <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)
     </para>
 @y
     <bridgehead renderas="sect4">Optional Conversion Tools</bridgehead>
     <para role="optional">
       <xref linkend="enscript"/>,
+      <xref linkend="potrace"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
-      <ulink url="http://autotrace.sourceforge.net/">AutoTrace</ulink>,
-      <ulink url="http://www.lizardtech.com/downloads/category/">
+      <ulink url="https://autotrace.sourceforge.net/">AutoTrace</ulink>,
+      <ulink url="https://www.extensis.com/">
       GeoExpress Command Line Utilities, AKA MrSID Utilities (binary package)</ulink>,
       <ulink url="https://www.gnu.org/software/hp2xx/">hp2xx</ulink>,
-      <ulink url="http://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
-      <ulink url="http://wvware.sourceforge.net/">libwmf</ulink>,
+      <!-- not accessible
+      <ulink url="https://user.it.uu.se/~jan/html2ps.html">html2ps</ulink>,
+      -->
+      <ulink url="https://wvware.sourceforge.net/">libwmf</ulink>,
       <ulink url="https://sk1project.net/uc2/">
-      UniConvertor</ulink>, and
-      <ulink url="http://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
+      UniConvertor</ulink>,
+      <!-- ufraw-batch was a delegate program, the delegate library coders/dng.so
+      is used if librar_r is present, ufraw now ftbfs with exiv2-0.28, and IM-7.1.1
+      in any case (if no libraw) invokes it to ask for a temp png file, but then
+      tries to open the temp file using a ppm suffix, which of course fails.
+      <ulink url="https://ufraw.sourceforge.net/">ufraw</ulink> (for dng files,
+      see
+      <ulink url="https://imagemagick.org/script/formats.php">
+      https://imagemagick.org/script/formats.php</ulink> for some special switches)
+      -->
+      and
+      <ulink url="https://www.cs.utah.edu/gdc/projects/urt/">Utah Raster Toolkit</ulink>
       (or <ulink url="http://www.mcmurchy.com/urt/urt-3.1b.tar.gz">URT-3.1b</ulink>)
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x

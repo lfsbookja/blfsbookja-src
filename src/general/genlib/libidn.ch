@@ -17,10 +17,10 @@
 
 @x
       <application>libidn</application> is a package designed for
-      internationalized string handling based on the 
-      <ulink url="http://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
-      <ulink url="http://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
-      <ulink url="http://www.ietf.org/rfc/rfc3490.txt">IDNA</ulink>
+      internationalized string handling based on the
+      <ulink url="https://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
+      <ulink url="https://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
+      <ulink url="https://www.ietf.org/rfc/rfc3490.txt">IDNA</ulink>
       specifications defined by the Internet Engineering Task Force
       (IETF) Internationalized Domain Names (IDN) working group, used for
       internationalized domain names. This is useful for converting data from the
@@ -31,10 +31,10 @@
       (ACE) form.
 @y
       <application>libidn</application> is a package designed for
-      internationalized string handling based on the 
-      <ulink url="http://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
-      <ulink url="http://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
-      <ulink url="http://www.ietf.org/rfc/rfc3490.txt">IDNA</ulink>
+      internationalized string handling based on the
+      <ulink url="https://www.ietf.org/rfc/rfc3454.txt">Stringprep</ulink>,
+      <ulink url="https://www.ietf.org/rfc/rfc3492.txt">Punycode</ulink> and
+      <ulink url="https://www.ietf.org/rfc/rfc3490.txt">IDNA</ulink>
       specifications defined by the Internet Engineering Task Force
       (IETF) Internationalized Domain Names (IDN) working group, used for
       internationalized domain names. This is useful for converting data from the
@@ -101,7 +101,7 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="valgrind"/>, and
-      <ulink url="http://www.mono-project.com/">Mono</ulink>
+      <ulink url="https://www.mono-project.com/">Mono</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -111,14 +111,8 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="valgrind"/>,
-      <ulink url="http://www.mono-project.com/">Mono</ulink>
+      <ulink url="https://www.mono-project.com/">Mono</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

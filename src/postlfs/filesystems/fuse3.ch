@@ -10,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY fuse3-time          "0.1 SBU (add 0.4 SBU for tests)">
+  <!ENTITY fuse3-buildsize     "222 MB (with tests and documentation)">
+  <!ENTITY fuse3-time          "0.2 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY fuse3-time          "0.1 SBU (add 0.4 SBU for tests)">
+  <!ENTITY fuse3-buildsize     "222 MB (with tests and documentation)">
+  <!ENTITY fuse3-time          "0.2 SBU (add 0.3 SBU for tests)">
 @z
 
 @x
@@ -82,22 +84,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="doxygen"/> (to rebuild the API documentation) and
-      <ulink url="https://pypi.org/project/pytest/">pytest</ulink> (required for tests)
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="doxygen"/> (API ドキュメントの再生成のため),
-      <ulink url="https://pypi.org/project/pytest/">pytest</ulink> (テストのため)
-    </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/fuse"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/fuse"/>
 @z
 
 @x
@@ -137,19 +125,39 @@
 @z
 
 @x
-      To test the results, run (as the <systemitem
+      To test the results, issue the following commands (as the <systemitem
       role="username">root</systemitem> user):
 @y
-      To test the results, run (as the <systemitem
+      To test the results, issue the following commands (as the <systemitem
       role="username">root</systemitem> user):
 @z
 
 @x
-      The <ulink url="https://pypi.org/project/pytest/">pytest</ulink>
-       Python module is required for the tests.
+      The <xref linkend="pytest"/> Python
+      module is required for the tests. One test named
+      <filename>test_cuse</filename> will fail if the
+      <parameter>CONFIG_CUSE</parameter> configuration item was not enabled
+      when the kernel was built. One test,
+      <filename>test/util.py</filename>, will output a warning due to the usage
+      of an unknown mark in pytest.
+      <!-- I really don't know why.  But it always happen for me, maybe
+           kernel configuration issue... -->
+      One test named
+      <filename>test_notify_inval_entry[True-expire_entries]</filename>
+      may fail under certain circumstances.
 @y
-      The <ulink url="https://pypi.org/project/pytest/">pytest</ulink>
-       Python module is required for the tests.
+      The <xref linkend="pytest"/> Python
+      module is required for the tests. One test named
+      <filename>test_cuse</filename> will fail if the
+      <parameter>CONFIG_CUSE</parameter> configuration item was not enabled
+      when the kernel was built. One test,
+      <filename>test/util.py</filename>, will output a warning due to the usage
+      of an unknown mark in pytest.
+      <!-- I really don't know why.  But it always happen for me, maybe
+           kernel configuration issue... -->
+      One test named
+      <filename>test_notify_inval_entry[True-expire_entries]</filename>
+      may fail under certain circumstances.
 @z
 
 @x

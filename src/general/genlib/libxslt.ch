@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libxslt-buildsize     "36 MB (with tests)">
-  <!ENTITY libxslt-time          "0.3 SBU (with tests)">
+  <!ENTITY libxslt-buildsize     "34 MB (with tests)">
+  <!ENTITY libxslt-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libxslt-buildsize     "36 MB (テスト込み)">
-  <!ENTITY libxslt-time          "0.3 SBU (テスト込み)">
+  <!ENTITY libxslt-buildsize     "34 MB (テスト込み)">
+  <!ENTITY libxslt-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -86,28 +82,16 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="libxml2"/>
+    <bridgehead renderas="sect4">Recommended (at runtime)</bridgehead>
+    <para role="recommended">
+      <xref role="runtime" linkend="DocBook"/> and
+      <xref role="runtime" linkend="docbook-xsl"/>
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="libxml2"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended; (実行時)</bridgehead>
     <para role="recommended">
-      <xref linkend="DocBook"/> and
-      <xref linkend="docbook-xsl"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="DocBook"/>,
-      <xref linkend="docbook-xsl"/>
+      <xref role="runtime" linkend="DocBook"/>,
+      <xref role="runtime" linkend="docbook-xsl"/>
     </para>
 @z
 
@@ -124,37 +108,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libgcrypt"/> and 
-      <xref linkend="libxml2py2"/>
-      <!-- Seems to be used for tests -->
-      <note><simpara>The <xref role="nodep" linkend="libxml2py2"/> 
-      dependency is only appropriate if the <application>Python2</application>
-      module for this package is needed. The
-      libxslt <application>Python2</application> module is not needed for
-      any package in BLFS but various non-BLFS packages may install
-      <application>Python2</application> modules which reference it.
-      </simpara></note>
+      <xref linkend="libgcrypt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libxml2py2"/>
-      <!-- Seems to be used for tests -->
-      <note><simpara>The <xref role="nodep" linkend="libxml2py2"/> 
-      dependency is only appropriate if the <application>Python2</application>
-      module for this package is needed. The
-      libxslt <application>Python2</application> module is not needed for
-      any package in BLFS but various non-BLFS packages may install
-      <application>Python2</application> modules which reference it.
-      </simpara></note>
+      <xref linkend="libgcrypt"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -215,7 +175,9 @@
         <seg>
           /usr/include/libexslt,
           /usr/include/libxslt,
+          /usr/lib/cmake/libxslt,
           /usr/lib/libxslt-plugins,
+          /usr/share/gtk-doc/lib{xslt,exslt},
           /usr/share/doc/libxslt-&libxslt-version;, and
           /usr/share/doc/libxslt-python-&libxslt-version;</seg>
 @y
@@ -229,7 +191,9 @@
         <seg>
           /usr/include/libexslt,
           /usr/include/libxslt,
+          /usr/lib/cmake/libxslt,
           /usr/lib/libxslt-plugins,
+          /usr/share/gtk-doc/lib{xslt,exslt},
           /usr/share/doc/libxslt-&libxslt-version;,
           /usr/share/doc/libxslt-python-&libxslt-version;</seg>
 @z

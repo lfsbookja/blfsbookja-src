@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -114,8 +110,8 @@
       <xref linkend="libpng"/> (both to build the example players),
       <xref linkend="doxygen"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <ulink url="http://bibtexml.sourceforge.net">BibTex</ulink>, and
-      <ulink url="http://mcj.sourceforge.net/">Transfig</ulink>
+      <ulink url="https://bibtexml.sourceforge.net">BibTex</ulink>, and
+      <ulink url="https://mcj.sourceforge.net/">Transfig</ulink>
       (all four to build the API documentation), and
       <xref linkend="valgrind"/>
     </para>
@@ -126,17 +122,11 @@
       <xref linkend="libpng"/> (both to build the example players),
       <xref linkend="doxygen"/>,
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
-      <ulink url="http://bibtexml.sourceforge.net">BibTex</ulink>,
-      <ulink url="http://mcj.sourceforge.net/">Transfig</ulink>
+      <ulink url="https://bibtexml.sourceforge.net">BibTex</ulink>,
+      <ulink url="https://mcj.sourceforge.net/">Transfig</ulink>
       (all four to build the API documentation),
       <xref linkend="valgrind"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

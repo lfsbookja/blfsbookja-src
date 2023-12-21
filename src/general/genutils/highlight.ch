@@ -90,21 +90,15 @@
     <para role="optional">
       <!-- make apidocs fails because there is no Doxyfile
       <xref linkend="doxygen"/> (to build the API documentation) and -->
-      <xref linkend="qt5"/> (to build the GUI front-end)
+      &qt5-deps; (to build the GUI front-end)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <!-- make apidocs fails because there is no Doxyfile
       <xref linkend="doxygen"/> (to build the API documentation) and -->
-      <xref linkend="qt5"/> (GUI フロントエンドのビルドのため)
+      &qt5-deps; (to build the GUI front-end)
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/highlight"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/highlight"/>
 @z
 
 @x
@@ -177,14 +171,12 @@
       parameter is also needed for <command>make gui</command>, because
       its value would be hardcoded into the gui executable.  Note that the
       trailing <quote>/</quote> is necessary.
-	</para>
 @y
       <parameter>doc_dir=/usr/share/doc/highlight-&highlight-version;/</parameter>:
       installs the highlight documentation into a versioned directory. This
       parameter is also needed for <command>make gui</command>, because
       its value would be hardcoded into the gui executable.  Note that the
       trailing <quote>/</quote> is necessary.
-	</para>
 @z
 
 @x
@@ -212,19 +204,19 @@
         </seg>
         <seg>
           /etc/highlight,
-          /usr/share/doc/highlight/&highlight-version;, and
+          /usr/share/doc/highlight-&highlight-version;, and
           /usr/share/highlight
         </seg>
 @y
         <seg>
-          highlight, highlight-gui (optional)
+          highlight, highlight-gui (任意ビルド)
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
           /etc/highlight,
-          /usr/share/doc/highlight/&highlight-version;,
+          /usr/share/doc/highlight-&highlight-version;,
           /usr/share/highlight
         </seg>
 @z

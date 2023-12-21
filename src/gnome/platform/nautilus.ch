@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY nautilus-buildsize     "160 MB (with tests)">
-  <!ENTITY nautilus-time          "0.3 SBU (with tests, at -j4)">
+  <!ENTITY nautilus-buildsize     "80 MB (with tests)">
+  <!ENTITY nautilus-time          "1.0 SBU (with tests, both using parallelism=4)">
 @y
-  <!ENTITY nautilus-buildsize     "160 MB (テスト込み)">
-  <!ENTITY nautilus-time          "0.3 SBU（テスト込み。-j4 利用）">
+  <!ENTITY nautilus-buildsize     "80 MB (テスト込み)">
+  <!ENTITY nautilus-time          "1.0 SBU (テスト込み, いずれも parallelism=4 利用)">
 @z
 
 @x
@@ -85,10 +85,11 @@
       <xref linkend="gexiv2"/>,
       <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="libhandy1"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="libnotify"/>,
+      <xref linkend="libportal"/>,
       <xref linkend="libseccomp"/>, and
-      <xref linkend="tracker3-miners"/>
+      <xref linkend="tracker3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -97,10 +98,11 @@
       <xref linkend="gexiv2"/>,
       <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-desktop"/>,
-      <xref linkend="libhandy1"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="libnotify"/>,
+      <xref linkend="libportal"/>,
       <xref linkend="libseccomp"/>,
-      <xref linkend="tracker3-miners"/>
+      <xref linkend="tracker3"/>
     </para>
 @z
 
@@ -111,8 +113,8 @@
       <xref linkend="exempi"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="libexif"/>, and
-      <xref linkend="libportal"/>
+      <xref linkend="libcloudproviders"/>, and
+      <xref linkend="libexif"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -121,20 +123,20 @@
       <xref linkend="exempi"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="libexif"/>,
-      <xref linkend="libportal"/>
+      <xref linkend="libcloudproviders"/>,
+      <xref linkend="libexif"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gi-docgen"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gi-docgen"/>
     </para>
 @z
 
@@ -154,15 +156,15 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Nautilus</title>
 @y
     <title>&InstallationOf1;Nautilus&InstallationOf2;</title>
+@z
+
+@x
+      Fix the location to install the API documentation:
+@y
+      API ドキュメントのインストール先を修正します。
 @z
 
 @x
@@ -174,10 +176,15 @@
 
 @x
       To test the results, issue: <command>ninja test</command>. The tests
-      need to be run in a graphical environment.
+      need to be run in a graphical environment.  One test is known to fail
+      if <xref linkend='tracker3-miners'/> is not installed. One test is also
+      known to timeout if the user running the tests has a large home directory.
 @y
-      ビルド結果をテストする場合は <command>ninja check</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       テストはグラフィック環境にて実行する必要があります。
+      One test is known to fail
+      if <xref linkend='tracker3-miners'/> is not installed. One test is also
+      known to timeout if the user running the tests has a large home directory.
 @z
 
 @x
@@ -209,11 +216,11 @@
 @z
 
 @x
-      <option>-Dlibportal=false</option>: Use this switch if you do not
-      have <xref linkend="libportal"/> installed.
+      <option>-Dcloudproviders=false</option>: Use this switch if you do not
+      have <xref linkend="libcloudproviders"/> installed.
 @y
-      <option>-Dlibportal=false</option>: Use this switch if you do not
-      have <xref linkend="libportal"/> installed.
+      <option>-Dcloudproviders=false</option>: Use this switch if you do not
+      have <xref linkend="libcloudproviders"/> installed.
 @z
 
 @x
@@ -240,8 +247,7 @@
           libnautilus-extension.so
         </seg>
         <seg>
-          /usr/{include,lib,share}/nautilus,
-          /usr/share/gnome-shell/search-providers, and
+          /usr/{include,lib,share}/nautilus and
           /usr/share/gtk-doc/html/libnautilus-extension (optional)
         </seg>
 @y
@@ -253,8 +259,7 @@
         </seg>
         <seg>
           /usr/{include,lib,share}/nautilus,
-          /usr/share/gnome-shell/search-providers,
-          /usr/share/gtk-doc/html/libnautilus-extension (任意)
+          /usr/share/gtk-doc/html/libnautilus-extension (任意インストール)
         </seg>
 @z
 

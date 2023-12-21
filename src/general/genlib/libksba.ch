@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -108,12 +104,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Libksba</title>
 @y
     <title>&InstallationOf1;Libksba&InstallationOf2;</title>
@@ -173,11 +163,11 @@
 @z
 
 @x
-        <seg>ksba-config</seg>
+        <seg><!--ksba-config not in 1.6.3-->None</seg>
         <seg>libksba.so</seg>
         <seg>None<!--/usr/share/doc/libksba-&libksba-version;--></seg>
 @y
-        <seg>ksba-config</seg>
+        <seg><!--ksba-config not in 1.6.3-->&None;</seg>
         <seg>libksba.so</seg>
         <seg>&None;<!--/usr/share/doc/libksba-&libksba-version;--></seg>
 @z

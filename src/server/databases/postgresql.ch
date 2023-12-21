@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY postgresql-buildsize     "193 MB (add 38 MB for tests)">
-  <!ENTITY postgresql-time          "0.9 SBU (with parallelism=4, add 0.1 SBU for tests)">
+  <!ENTITY postgresql-buildsize     "245 MB (add 25 MB for tests)">
+  <!ENTITY postgresql-time          "0.8 SBU (with parallelism=4, add 0.2 SBU for tests)">
 @y
-  <!ENTITY postgresql-buildsize     "193 MB （テスト実施時はさらに 38 MB）">
-  <!ENTITY postgresql-time          "0.9 SBU （parallelism=4; テスト実施時はさらに 0.1 SBU）">
+  <!ENTITY postgresql-buildsize     "245 MB （テスト実施時はさらに 25 MB）">
+  <!ENTITY postgresql-time          "0.8 SBU （parallelism=4; テスト実施時はさらに 0.2 SBU）">
 @z
 
 @x
@@ -83,8 +83,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/>,
-      <!-- <xref linkend="tcl"/>, -->
       <xref linkend="icu"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
@@ -96,8 +94,6 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="python2"/>,
-      <!-- <xref linkend="tcl"/>, -->
       <xref linkend="icu"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="libxslt"/>,
@@ -131,9 +127,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -255,15 +251,11 @@
 @x
       <command>sed -i ...</command>: This sed changes the server socket location
       from <filename class="directory">/tmp</filename> to
-      <filename class="directory">/run/postgresql</filename><!-- and fix up the
-      regression tests to use <filename class="directory">/tmp</filename> so
-      that they can work reliably-->.
+      <filename class="directory">/run/postgresql</filename>.
 @y
       <command>sed -i ...</command>: This sed changes the server socket location
       from <filename class="directory">/tmp</filename> to
-      <filename class="directory">/run/postgresql</filename><!-- and fix up the
-      regression tests to use <filename class="directory">/tmp</filename> so
-      that they can work reliably-->.
+      <filename class="directory">/run/postgresql</filename>.
 @z
 
 @x
@@ -294,12 +286,10 @@
 
 @x
       <option>--with-python</option>: builds the PL/Python server-side
-      language. Add PYTHON=/usr/bin/python2 for Python2 support, otherwise
-      Python3 is used by default.
+      language. Python3 is used by default, Python2 is no longer supported.
 @y
       <option>--with-python</option>: builds the PL/Python server-side
-      language. Add PYTHON=/usr/bin/python2 for Python2 support, otherwise
-      Python3 is used by default.
+      language. Python3 is used by default, Python2 is no longer supported.
 @z
 
 @x
@@ -393,19 +383,19 @@
 @x
         <seg>
           clusterdb, createdb, createuser, dropdb, dropuser,
-          ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_checksums,
+          ecpg, initdb, pg_amcheck, pg_archivecleanup, pg_basebackup,
+          pg_checksums,
           pg_config, pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
           pg_receivewal, pg_recvlogical, pg_resetwal, pg_restore, pg_rewind,
           pg_test_fsync, pg_test_timing, pg_upgrade, pg_verifybackup,
-          pg_waldump, pgbench,
-          postgres, postmaster (deprecated), psql, reindexdb, vacuumdb,
+          pg_waldump, pgbench, postgres, psql, reindexdb, vacuumdb,
           optionally, if Tcl support has been built, pltcl_delmod,
           pltcl_listmod, pltcl_loadmod, and optionally (in contrib/) oid2name,
           pg_standby, vacuumlo, and many others
 
         </seg>
         <seg>
-          libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a, 
+          libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a,
           libpgcommon_shlib.a, libpgfeutils.a, libpgport.a, libpgport_shlib.a,
           libpgtypes.{so,a}, libpq.{so,a}, various charset modules and
           optionally programming language modules under /usr/lib/postgresql
@@ -419,19 +409,19 @@
 @y
         <seg>
           clusterdb, createdb, createuser, dropdb, dropuser,
-          ecpg, initdb, pg_archivecleanup, pg_basebackup, pg_checksums,
+          ecpg, initdb, pg_amcheck, pg_archivecleanup, pg_basebackup,
+          pg_checksums,
           pg_config, pg_controldata, pg_ctl, pg_dump, pg_dumpall, pg_isready,
           pg_receivewal, pg_recvlogical, pg_resetwal, pg_restore, pg_rewind,
           pg_test_fsync, pg_test_timing, pg_upgrade, pg_verifybackup,
-          pg_waldump, pgbench,
-          postgres, postmaster (deprecated), psql, reindexdb, vacuumdb,
+          pg_waldump, pgbench, postgres, psql, reindexdb, vacuumdb,
           optionally, if Tcl support has been built, pltcl_delmod,
           pltcl_listmod, pltcl_loadmod, and optionally (in contrib/) oid2name,
-          pg_standby, vacuumlo, その他多数
+          pg_standby, vacuumlo, and many others
 
         </seg>
         <seg>
-          libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a, 
+          libecpg.{so,a}, libecpg_compat.{so,a}, libpgcommon.a,
           libpgcommon_shlib.a, libpgfeutils.a, libpgport.a, libpgport_shlib.a,
           libpgtypes.{so,a}, libpq.{so,a}, various charset modules and
           optionally programming language modules under /usr/lib/postgresql
@@ -650,13 +640,13 @@
             is a support script used to delete a module from a
             PL/<application>Tcl</application> table. The command
             requires the
-            <ulink url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
+            <ulink url="https://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
             package to be installed
 @y
             is a support script used to delete a module from a
             PL/<application>Tcl</application> table. The command
             requires the
-            <ulink url="http://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
+            <ulink url="https://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
             package to be installed
 @z
 
@@ -664,13 +654,13 @@
             is a support script used to list the modules in a
             PL/<application>Tcl</application> table. The command
             requires the
-            <ulink url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            <ulink url="https://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
             package to be installed
 @y
             is a support script used to list the modules in a
             PL/<application>Tcl</application> table. The command
             requires the
-            <ulink url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            <ulink url="https://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
             package to be installed
 @z
 
@@ -678,13 +668,13 @@
             is a support script used to load a module into a
             PL/<application>Tcl</application> table. The command
             requires the
-            <ulink url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            <ulink url="https://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
             package to be installed too
 @y
             is a support script used to load a module into a
             PL/<application>Tcl</application> table. The command
             requires the
-            <ulink url="http://gborg.postgresql.org/project/pgtcl/">Pgtcl</ulink>
+            <ulink url="https://flightaware.github.io/Pgtcl/">Pgtcl</ulink>
             package to be installed too
 @z
 

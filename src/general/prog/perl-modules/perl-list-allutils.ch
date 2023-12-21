@@ -51,15 +51,15 @@
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
         <xref linkend="perl-list-someutils"/>,
-        <xref linkend="perl-list-utilsby"/>,
-        <xref linkend="perl-scalar-list-utils"/>
+        <xref linkend="perl-list-utilsby"/>
+<!-- core module        <xref linkend="perl-scalar-list-utils"/>-->
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="perl-list-someutils"/>,
-        <xref linkend="perl-list-utilsby"/>,
-        <xref linkend="perl-scalar-list-utils"/>
+        <xref linkend="perl-list-utilsby"/>
+<!-- core module        <xref linkend="perl-scalar-list-utils"/>-->
       </para>
 @z
 

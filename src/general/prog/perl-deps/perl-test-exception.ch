@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -20,10 +16,10 @@
 @z
 
 @x
-	Test::Exception provides convenience methods for testing exception
+        Test::Exception provides convenience methods for testing exception
         based code.
 @y
-	Test::Exception provides convenience methods for testing exception
+        Test::Exception provides convenience methods for testing exception
         based code.
 @z
 

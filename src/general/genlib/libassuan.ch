@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libassuan-buildsize     "7.4 MB (with tests, add 3.4 MB for documentation)">
+  <!ENTITY libassuan-buildsize     "7.9 MB (with tests, add 3.4 MB for documentation)">
   <!ENTITY libassuan-time          "0.1 SBU (with tests and documentation)">
 @y
-  <!ENTITY libassuan-buildsize     "7.4 MB（テスト込み、ドキュメント込みはさらに 3.4 MB）">
+  <!ENTITY libassuan-buildsize     "7.9 MB（テスト込み、ドキュメント込みはさらに 3.4 MB）">
   <!ENTITY libassuan-time          "0.1 SBU（テスト、ドキュメント込み）">
 @z
 
@@ -114,12 +110,6 @@
     <para role="optional">
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

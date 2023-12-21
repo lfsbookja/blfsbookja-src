@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gspell-buildsize     "13 MB (with tests)">
-  <!ENTITY gspell-time          "0.1 SBU (using parallelism=4; with tests)">
+  <!ENTITY gspell-buildsize     "11 MB (with tests)">
+  <!ENTITY gspell-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY gspell-buildsize     "13 MB (テスト込み)">
-  <!ENTITY gspell-time          "0.1 SBU (parallelism=4 利用時、テスト込み)">
+  <!ENTITY gspell-buildsize     "11 MB (テスト込み)">
+  <!ENTITY gspell-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -86,13 +81,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="enchant"/> and 
+      <xref linkend="enchant"/>,
+      <xref linkend="icu"/>, and
       <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="enchant"/>,
+      <xref linkend="icu"/>,
       <xref linkend="gtk3"/>
     </para>
 @z
@@ -102,7 +99,6 @@
     <para role="optional">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="iso-codes"/>,
       <xref linkend="vala"/>, and
       <xref linkend="valgrind"/>
     </para>
@@ -111,16 +107,9 @@
     <para role="optional">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="iso-codes"/>,
       <xref linkend="vala"/>,
       <xref linkend="valgrind"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gspell"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gspell"/>
 @z
 
 @x
@@ -137,16 +126,16 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. One test, 
-      test-checker,
-      is known to fail if the external package 
-      <ulink url="http://hunspell.github.io/">Hunspell</ulink> is not installed.
-      The tests also must be run in an X session.
+      To test the results, issue: <command>make check</command>.  The tests
+      must be run in an X session. One test, test-checker, is known to fail if
+      the external package
+      <ulink url="https://hunspell.github.io/">Hunspell</ulink> is not
+      installed.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      test-checker というテストは、外部パッケージである <ulink
-      url="http://hunspell.github.io/">Hunspell</ulink> がインストールされていない場合は失敗します。
-      またテストは X セッション内において実行することが必要です。
+      テストは X セッション内において実行することが必要です。
+      test-checker というテストが、外部パッケージである <ulink
+      url="https://hunspell.github.io/">Hunspell</ulink> がインストールされていない場合には失敗します。
 @z
 
 @x

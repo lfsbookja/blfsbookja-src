@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY php-buildsize     "479 MB (with documentation)">
-  <!ENTITY php-time          "1.9 SBU (with parallelism=4; add 1.9 SBU for tests)">
+  <!ENTITY php-buildsize     "525 MB (with documentation)">
+  <!ENTITY php-time          "1.6 SBU (with parallelism=4; add 1.7 SBU for tests)">
 @y
-  <!ENTITY php-buildsize     "479 MB（ドキュメント込み）">
-  <!ENTITY php-time          "1.9 SBU（parallelism=4 利用時、テスト実施時はさらに 1.9 SBU）">
+  <!ENTITY php-buildsize     "525 MB（ドキュメント込み）">
+  <!ENTITY php-time          "1.6 SBU（parallelism=4 利用時、テスト実施時はさらに 1.7 SBU）">
 @z
 
 @x
@@ -121,12 +121,12 @@
       <xref linkend="pcre2"/>,
       <xref linkend="pth"/>,
       <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="https://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
       <ulink url="https://github.com/kkos/oniguruma">oniguruma</ulink>,
       <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
-      <ulink url="http://re2c.org/">re2c</ulink>, and
-      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
+      <ulink url="https://re2c.org/">re2c</ulink>, and
+      <ulink url="https://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">任意のシステムユーティリティーおよびライブラリ</bridgehead>
@@ -139,12 +139,12 @@
       <xref linkend="pcre2"/>,
       <xref linkend="pth"/>,
       <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
-      <ulink url="http://dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="https://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
       <ulink url="https://github.com/kkos/oniguruma">oniguruma</ulink>,
       <ulink url="http://www.ossp.org/pkg/lib/mm/">OSSP mm</ulink>,
-      <ulink url="http://re2c.org/">re2c</ulink>,
-      <ulink url="http://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
+      <ulink url="https://re2c.org/">re2c</ulink>,
+      <ulink url="https://xmlrpc-epi.sourceforge.net/main.php?t=php_about">XMLRPC-EPI</ulink>
     </para>
 @z
 
@@ -187,8 +187,7 @@
       <xref linkend="tidy-html5"/>,
       <ulink url="https://sourceforge.net/projects/caudium/">Caudium</ulink>,
       <ulink url="https://www.hyperwave.com/en/">Hyperwave</ulink>,
-      <ulink url="http://www.mnogosearch.org/">mnoGoSearch</ulink>,
-      <ulink url="http://download.roxen.com/6.1/">Roxen WebServer</ulink>, and
+      <ulink url="https://download.roxen.com/6.1/">Roxen WebServer</ulink>, and
       <ulink url="https://github.com/Bilal-S/WDDX.net">WDDX</ulink>
     </para>
 @y
@@ -198,8 +197,7 @@
       <xref linkend="tidy-html5"/>,
       <ulink url="https://sourceforge.net/projects/caudium/">Caudium</ulink>,
       <ulink url="https://www.hyperwave.com/en/">Hyperwave</ulink>,
-      <ulink url="http://www.mnogosearch.org/">mnoGoSearch</ulink>,
-      <ulink url="http://download.roxen.com/6.1/">Roxen WebServer</ulink>,
+      <ulink url="https://download.roxen.com/6.1/">Roxen WebServer</ulink>, and
       <ulink url="https://github.com/Bilal-S/WDDX.net">WDDX</ulink>
     </para>
 @z
@@ -207,47 +205,45 @@
 @x
     <bridgehead renderas="sect4">Optional Data Management Utilities and Libraries</bridgehead>
     <para role="optional">
-      <xref linkend="db"/> (Note that PHP does not officially support versions
-      above 5.3),
       <xref linkend="libiodbc"/>,
       <xref linkend="lmdb"/>,
-      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="unixodbc"/>,
+      &berkeley-db;
       <ulink url="https://www.softwareag.com/en_corporate/platform/adabas-natural.html">Adabas</ulink>,
-      <ulink url="https://raima.com/raima-database-manager/">Birdstep</ulink>,
-      <ulink url="http://cr.yp.to/cdb.html">cdb</ulink>,
-      <ulink url="http://www.dbmaker.com/">DBMaker</ulink>,
+      <ulink url="https://raima.com/product-overview/">Birdstep</ulink>,
+      <ulink url="https://cr.yp.to/cdb.html">cdb</ulink>,
+      <ulink url="https://www.dbmaker.com/">DBMaker</ulink>,
       <ulink url="http://www.empress.com/">Empress</ulink>,
       <ulink url="http://www.frontbase.com/cgi-bin/WebObjects/FBWebSite">FrontBase</ulink>,
       <ulink url="https://www.ibm.com/analytics/us/en/db2/">IBM DB2</ulink>,
-      <ulink url="http://www.hughes.com.au/products/msql/">Mini SQL</ulink>,
-      <ulink url="http://www.monetra.com/">Monetra</ulink>, and
+      <ulink url="https://hughestech.com.au/products/msql/">Mini SQL</ulink>,
+      <ulink url="https://www.monetra.com/">Monetra</ulink>, and
       <ulink url="https://sourceforge.net/projects/qdbm">QDBM</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">任意のデータ管理ユーティリティーおよびライブラリ</bridgehead>
     <para role="optional">
-      <xref linkend="db"/> (Note that PHP does not officially support versions
-      above 5.3),
       <xref linkend="libiodbc"/>,
       <xref linkend="lmdb"/>,
-      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="unixodbc"/>,
+      &berkeley-db;
       <ulink url="https://www.softwareag.com/en_corporate/platform/adabas-natural.html">Adabas</ulink>,
-      <ulink url="https://raima.com/raima-database-manager/">Birdstep</ulink>,
-      <ulink url="http://cr.yp.to/cdb.html">cdb</ulink>,
-      <ulink url="http://www.dbmaker.com/">DBMaker</ulink>,
+      <ulink url="https://raima.com/product-overview/">Birdstep</ulink>,
+      <ulink url="https://cr.yp.to/cdb.html">cdb</ulink>,
+      <ulink url="https://www.dbmaker.com/">DBMaker</ulink>,
       <ulink url="http://www.empress.com/">Empress</ulink>,
       <ulink url="http://www.frontbase.com/cgi-bin/WebObjects/FBWebSite">FrontBase</ulink>,
       <ulink url="https://www.ibm.com/analytics/us/en/db2/">IBM DB2</ulink>,
-      <ulink url="http://www.hughes.com.au/products/msql/">Mini SQL</ulink>,
-      <ulink url="http://www.monetra.com/">Monetra</ulink>,
+      <ulink url="https://hughestech.com.au/products/msql/">Mini SQL</ulink>,
+      <ulink url="https://www.monetra.com/">Monetra</ulink>, and
       <ulink url="https://sourceforge.net/projects/qdbm">QDBM</ulink>
     </para>
 @z
@@ -269,23 +265,23 @@
     <para role="optional">
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="mitkrb"/>,
-      <ulink url="http://mcrypt.sourceforge.net/">libmcrypt</ulink>, and
-      <ulink url="http://mhash.sourceforge.net/">mhash</ulink>
+      <ulink url="https://mcrypt.sourceforge.net/">libmcrypt</ulink>, and
+      <ulink url="https://mhash.sourceforge.net/">mhash</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">任意のセキュリティ/暗号化ユーティリティおよびライブラリ</bridgehead>
     <para role="optional">
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="mitkrb"/>,
-      <ulink url="http://mcrypt.sourceforge.net/">libmcrypt</ulink>, and
-      <ulink url="http://mhash.sourceforge.net/">mhash</ulink>
+      <ulink url="https://mcrypt.sourceforge.net/">libmcrypt</ulink>, and
+      <ulink url="https://mhash.sourceforge.net/">mhash</ulink>
     </para>
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/php"/>
+      Editor Notes: <ulink url="&blfs-wiki;/php"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/php"/>
+      &EditorNotes;: <ulink url="&blfs-wiki;/php"/>
 @z
 
 @x
@@ -309,7 +305,7 @@
         <command>configure</command> options that will enable support for
         various things. You can use <command>./configure --help</command> to
         see a full list of the available options. Also, use of the
-        <ulink url="http://www.php.net/">PHP web site</ulink>
+        <ulink url="https://www.php.net/">PHP web site</ulink>
         is highly recommended, as their online docs are very good. An example
         of a <command>configure</command> command that utilizes many of the
         most common dependencies can be found at <ulink
@@ -317,7 +313,7 @@
 @y
         <application>PHP</application> の <command>configure</command> には、各種サポートを実現するためのオプションが数多くあります。
         <command>./configure --help</command> の実行により、利用可能なオプションをすべて確認することができます。
-        また <ulink url="http://www.php.net/">PHP ウェブサイト</ulink> を参照することもお勧めします。
+        また <ulink url="https://www.php.net/">PHP ウェブサイト</ulink> を参照することもお勧めします。
         このサイトが提供するオンラインドキュメントは、よく仕上がっています。
         一般的な依存関係を実現するような  <command>configure</command> コマンドの実行例が <ulink
         url="&sources-anduin-http;/files/php_configure.txt"/> に示されているので参照してください。
@@ -342,15 +338,15 @@
 
 @x
       To test the results, issue: <command>make test</command>. Several
-      tests (out of over 16000) may fail, in which case you are asked 
-      whether you want to send the report to the PHP developers. If you 
-      want to automate the test, you may prefix the command with 
+      tests (out of over 18000) may fail, in which case you are asked
+      whether you want to send the report to the PHP developers. If you
+      want to automate the test, you may prefix the command with
       <command>yes "n" | </command>.
 @y
       To test the results, issue: <command>make test</command>. Several
-      tests (out of over 16000) may fail, in which case you are asked 
-      whether you want to send the report to the PHP developers. If you 
-      want to automate the test, you may prefix the command with 
+      tests (out of over 18000) may fail, in which case you are asked
+      whether you want to send the report to the PHP developers. If you
+      want to automate the test, you may prefix the command with
       <command>yes "n" | </command>.
 @z
 
@@ -582,14 +578,14 @@
 @x
         Additionally, it may be useful to add an entry for
         <filename>index.php</filename> to the DirectoryIndex directive of the
-        <filename>httpd.conf</filename> file. Lastly, adding a line to setup the
+        <filename>httpd.conf</filename> file. Lastly, adding a line to set up the
         <filename class='extension'>.phps</filename> extension to show
         highlighted <application>PHP</application> source may be
         desirable:
 @y
         Additionally, it may be useful to add an entry for
         <filename>index.php</filename> to the DirectoryIndex directive of the
-        <filename>httpd.conf</filename> file. Lastly, adding a line to setup the
+        <filename>httpd.conf</filename> file. Lastly, adding a line to set up the
         <filename class='extension'>.phps</filename> extension to show
         highlighted <application>PHP</application> source may be
         desirable:
@@ -627,17 +623,17 @@
         php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
 
         <seg>dba.so and opcache.so in
-        /usr/lib/php/extensions/no-debug-non-zts-20200930</seg>
+        /usr/lib/php/extensions/no-debug-non-zts-20220829</seg>
 
         <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php, and
         /usr/share/doc/php-&php-version;</seg>
 @y
         <seg><!-- not built anymore pear, peardev, pecl,-->
         phar (symlink), phar.phar, php,
-        php-cgi, php-config, php-fpm, phpdbg, phpize</seg>
+        php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
 
         <seg>dba.so and opcache.so in
-        /usr/lib/php/extensions/no-debug-non-zts-20200930</seg>
+        /usr/lib/php/extensions/no-debug-non-zts-20220829</seg>
 
         <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php,
         /usr/share/doc/php-&php-version;</seg>

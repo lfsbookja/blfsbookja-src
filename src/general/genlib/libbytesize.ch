@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -84,12 +80,28 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="pcre2"/>
+      <xref linkend="pcre2"/> and
+      <xref linkend="pygments"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="pcre2"/>
+      <xref linkend="pcre2"/>,
+      <xref linkend="pygments"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+
+    <para role="recommended">
+      <xref linkend="six"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+
+    <para role="recommended">
+      <xref linkend="six"/>
     </para>
 @z
 
@@ -97,24 +109,16 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="six"/> (needed for tests and python bindings),
-      <ulink url="https://github.com/rhinstaller/pocketlint/releases">pocketlint</ulink> (python module for one test), and 
+      <ulink url="https://github.com/rhinstaller/pocketlint/releases">pocketlint</ulink> (python module for one test), and
       <ulink url="https://pypi.python.org/pypi/polib">polib</ulink> (python module for one test)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="six"/> (needed for tests and python bindings),
       <ulink url="https://github.com/rhinstaller/pocketlint/releases">pocketlint</ulink> (python module for one test),
       <ulink url="https://pypi.python.org/pypi/polib">polib</ulink> (python module for one test)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -189,8 +193,7 @@
           libbytesize.so
         </seg>
         <seg>
-          /usr/include/bytesize,
-          /usr/share/gtk-doc/html/libbytesize, and 
+          /usr/include/bytesize and
           /usr/lib/python&python3-majorver;/site-packages/bytesize
         </seg>
 @y
@@ -202,7 +205,6 @@
         </seg>
         <seg>
           /usr/include/bytesize,
-          /usr/share/gtk-doc/html/libbytesize,
           /usr/lib/python&python3-majorver;/site-packages/bytesize
         </seg>
 @z

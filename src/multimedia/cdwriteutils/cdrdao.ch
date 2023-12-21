@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -73,7 +69,8 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gtkmm2"/>,
+      <!-- <xref linkend="gtkmm2"/>, not used any more, was used for gcdmaster
+           which also needed a gnome2 library-->
       <xref linkend="libao"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="libmad"/>, and
@@ -82,18 +79,13 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gtkmm2"/>,
+      <!-- <xref linkend="gtkmm2"/>, not used any more, was used for gcdmaster
+           which also needed a gnome2 library-->
       <xref linkend="libao"/>,
       <xref linkend="libvorbis"/>,
-      <xref linkend="libmad"/>, and
+      <xref linkend="libmad"/>,
       <xref linkend="lame"/> (<command>toc2mp3</command> のビルドに必要)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

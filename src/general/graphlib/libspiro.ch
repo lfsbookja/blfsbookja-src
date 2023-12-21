@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -15,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libspiro-buildsize     "5.3 MB (add 1.2 MB if running the tests)">
+  <!ENTITY libspiro-buildsize     "5.1 MB (add 1.3 MB if running the tests)">
   <!ENTITY libspiro-time          "0.1 SBU">
 @y
-  <!ENTITY libspiro-buildsize     "5.3 MB (add 1.2 MB if running the tests)">
+  <!ENTITY libspiro-buildsize     "5.1 MB (add 1.3 MB if running the tests)">
   <!ENTITY libspiro-time          "0.1 SBU">
 @z
 
@@ -78,12 +73,6 @@
           Estimated build time: &libspiro-time;
 @y
           &Estimatedbuildtime;: &libspiro-time;
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libspiro"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libspiro"/>
 @z
 
 @x

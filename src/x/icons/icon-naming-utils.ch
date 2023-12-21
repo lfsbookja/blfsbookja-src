@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -30,14 +26,14 @@
       a <application>Perl</application> script used for maintaining backwards
       compatibility with current desktop icon themes, while migrating to the
       names specified in the <ulink
-      url="http://standards.freedesktop.org/icon-naming-spec/latest/">
+      url="https://specifications.freedesktop.org/icon-naming-spec/latest/">
       Icon Naming Specification</ulink>.
 @y
       The <application>icon-naming-utils</application> package contains
       a <application>Perl</application> script used for maintaining backwards
       compatibility with current desktop icon themes, while migrating to the
       names specified in the <ulink
-      url="http://standards.freedesktop.org/icon-naming-spec/latest/">
+      url="https://specifications.freedesktop.org/icon-naming-spec/latest/">
       Icon Naming Specification</ulink>.
 @z
 
@@ -99,12 +95,6 @@
     <para role="required">
       <xref linkend="perl-xml-simple"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

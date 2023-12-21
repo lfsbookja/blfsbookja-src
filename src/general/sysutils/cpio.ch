@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY cpio-buildsize     "17 MB (with tests and docs)">
-  <!ENTITY cpio-time          "0.3 SBU (with tests and docs)">
+  <!ENTITY cpio-buildsize     "19 MB (with tests and docs)">
+  <!ENTITY cpio-time          "0.2 SBU (with tests and docs)">
 @y
-  <!ENTITY cpio-buildsize     "17 MB (テストとドキュメント込み)">
-  <!ENTITY cpio-time          "0.3 SBU (テストとドキュメント込み)">
+  <!ENTITY cpio-buildsize     "19 MB (テストとドキュメント込み)">
+  <!ENTITY cpio-time          "0.2 SBU (テストとドキュメント込み)">
 @z
 
 @x
@@ -88,12 +88,6 @@
     <para role="optional">
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

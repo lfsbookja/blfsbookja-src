@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -22,7 +18,7 @@
 @x
       <application>Cairo</application> is a 2D graphics library with support for
       multiple output devices. Currently supported output targets include the
-      <application>X</application> Window System, win32, image buffers,
+      <application>X</application> Window System, Win32, image buffers,
       PostScript, PDF and SVG. Experimental backends include OpenGL, Quartz and
       XCB file output. <application>Cairo</application> is designed to produce
       consistent output on all output media while taking advantage of display
@@ -33,12 +29,12 @@
       B&eacute;zier splines, transforming and compositing translucent images,
       and antialiased text rendering. All drawing operations can be transformed
       by any
-      <ulink url="http://en.wikipedia.org/wiki/Affine_transformation">affine
+      <ulink url="https://en.wikipedia.org/wiki/Affine_transformation">affine
       transformation</ulink> (scale, rotation, shear, etc.).
 @y
       <application>Cairo</application> is a 2D graphics library with support for
       multiple output devices. Currently supported output targets include the
-      <application>X</application> Window System, win32, image buffers,
+      <application>X</application> Window System, Win32, image buffers,
       PostScript, PDF and SVG. Experimental backends include OpenGL, Quartz and
       XCB file output. <application>Cairo</application> is designed to produce
       consistent output on all output media while taking advantage of display
@@ -49,7 +45,7 @@
       B&eacute;zier splines, transforming and compositing translucent images,
       and antialiased text rendering. All drawing operations can be transformed
       by any
-      <ulink url="http://en.wikipedia.org/wiki/Affine_transformation">affine
+      <ulink url="https://en.wikipedia.org/wiki/Affine_transformation">affine
       transformation</ulink> (scale, rotation, shear, etc.).
 @z
 
@@ -133,52 +129,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="cogl"/>,
-      <xref linkend="gs"/>,
-      <xref linkend="gtk3"/> and <xref linkend="gtk2"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libdrm"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="lzo"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="poppler"/>,
-      <xref linkend="qt5"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>,
-      <ulink url="https://github.com/rillian/jbig2dec/">jbig2dec</ulink>,
-      <ulink url="https://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
-      <ulink url="https://skia.org/">Skia</ulink>, and
-      <ulink url="http://download.qt.io/archive/qt/4.8/">Qt4</ulink>.
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="cogl"/>,
-      <xref linkend="gs"/>,
-      <xref linkend="gtk3"/> and <xref linkend="gtk2"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libdrm"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="lzo"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="poppler"/>,
-      <xref linkend="qt5"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="http://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>,
-      <ulink url="https://github.com/rillian/jbig2dec/">jbig2dec</ulink>,
-      <ulink url="https://www.freedesktop.org/wiki/Software/libspectre/">libspectre</ulink>,
-      <ulink url="https://skia.org/">Skia</ulink>, and
-      <ulink url="http://download.qt.io/archive/qt/4.8/">Qt4</ulink>.
-    </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/cairo"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/cairo"/>
 @z
 
 @x
@@ -195,7 +147,7 @@
 @z
 
 @x
-      This package does not have a working testsuite.
+      This package does not have a working test suite.
 @y
       このパッケージに有効なテストスイートはありません。
 @z
@@ -213,37 +165,11 @@
 @z
 
 @x
-      <parameter>--enable-tee</parameter>: This switch enables the 
-      experimental tee surface backend which is required if using 
-      system-installed <application>Cairo</application> with Mozilla applications.
-@y
-      <parameter>--enable-tee</parameter>: This switch enables the 
-      experimental tee surface backend which is required if using 
-      system-installed <application>Cairo</application> with Mozilla applications.
-@z
-
-@x
-      <option>--enable-xlib-xcb</option>: This switch enables several
+      <option>-Dxlib-xcb=enabled</option>: This switch enables several
       experimental Xlib/XCB functions used by some window managers.
 @y
-      <option>--enable-xlib-xcb</option>: This switch enables several
+      <option>-Dxlib-xcb=enabled</option>: This switch enables several
       experimental Xlib/XCB functions used by some window managers.
-@z
-
-@x
-      <option>--enable-gl</option>: This switch enables
-      <application>Cairo</application>'s experimental
-      <application>OpenGL</application> surface which
-      is required for <application>Wayland</application>
-      compositor and some other packages that are not
-      part of BLFS.
-@y
-      <option>--enable-gl</option>: This switch enables
-      <application>Cairo</application>'s experimental
-      <application>OpenGL</application> surface which
-      is required for <application>Wayland</application>
-      compositor and some other packages that are not
-      part of BLFS.
 @z
 
 @x
@@ -267,22 +193,26 @@
           cairo-trace
         </seg>
         <seg>
-          libcairo.so, libcairo-gobject.so and
+          libcairo.so,
+          libcairo-gobject.so, and
           libcairo-script-interpreter.so
         </seg>
         <seg>
-          /usr/{include,lib,share/gtk-doc/html}/cairo
+          /usr/include/cairo and
+          /usr/lib/cairo
         </seg>
 @y
         <seg>
           cairo-trace
         </seg>
         <seg>
-          libcairo.so, libcairo-gobject.so,
+          libcairo.so,
+          libcairo-gobject.so,
           libcairo-script-interpreter.so
         </seg>
         <seg>
-          /usr/{include,lib,share/gtk-doc/html}/cairo
+          /usr/include/cairo,
+          /usr/lib/cairo
         </seg>
 @z
 
@@ -290,12 +220,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x cairo-sphinx
-            is an internal utility for regression analysis
-@y
-            is an internal utility for regression analysis
 @z
 
 @x cairo-trace

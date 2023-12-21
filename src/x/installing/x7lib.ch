@@ -103,7 +103,8 @@
       <xref linkend="xmlto"/> with one or more of the following:
       <xref linkend="fop"/>,
       <xref linkend="Links"/>,
-      <xref linkend="lynx"/>, and
+      <xref linkend="lynx"/>,
+      <ulink url="https://github.com/vapier/ncompress">ncompress</ulink> (for some tests), and
       <ulink url="&w3m-url;">W3m</ulink> (to generate additional PDF or text
       documentation for the libXfont package).
     </para>
@@ -115,14 +116,21 @@
       <xref linkend="fop"/>,
       <xref linkend="Links"/>,
       <xref linkend="lynx"/>,
+      <ulink url="https://github.com/vapier/ncompress">ncompress</ulink> (特定のテストのため),
       <ulink url="&w3m-url;">W3m</ulink> (libXfont パッケージにて、追加で PDF またはテキストファイルを生成するため)
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4" revision="systemd">Recommended at runtime</bridgehead>
+    <para role="recommended" revision="systemd">
+      <xref role="runtime" linkend="dbus"/>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4" revision="systemd">&Recommended;、実行時</bridgehead>
+    <para role="recommended" revision="systemd">
+      <xref role="runtime" linkend="dbus"/>
+    </para>
 @z
 
 @x
@@ -140,10 +148,10 @@
 @z
 
 @x
-      To download the needed files using <application>wget</application>,
+      To download the needed files using <xref linkend='wget'/>,
       use the following commands:
 @y
-      必要なファイルをダウンロードするために <application>wget</application> を使って以下を実行します。
+      必要なファイルをダウンロードするために <xref linkend='wget'/> を使って以下を実行します。
 @z
 
 @x
@@ -171,15 +179,15 @@
 @z
 
 @x
-      BLFS developers have confirmed that
-      <application>libX11</application>, <application>libXt</application> and
+      BLFS developers have confirmed that <application>libX11</application>,
+      <application>libXt</application>, <application>libXmu</application>,
+      <application>libXpm</application>, and
       <application>libxshmfence</application> are distributed with working test
-      suites.
 @y
-      BLFS developers have confirmed that
-      <application>libX11</application>, <application>libXt</application> and
+      BLFS developers have confirmed that <application>libX11</application>,
+      <application>libXt</application>, <application>libXmu</application>,
+      <application>libXpm</application>, and
       <application>libxshmfence</application> are distributed with working test
-      suites.
 @z
 
 @x
@@ -205,14 +213,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>./configure $XORG_CONFIG ICE_LIBS=-lpthread</command>:
-      This fixes a change in glibc which breaks pulseaudio at runtime.
-@y
-      <command>./configure $XORG_CONFIG ICE_LIBS=-lpthread</command>:
-      This fixes a change in glibc which breaks pulseaudio at runtime.
 @z
 
 @x
@@ -276,28 +276,31 @@
           cxpm and sxpm
         </seg>
         <seg>
-          libdmx.so, libfontenc.so, libFS.so, libICE.so,
-          libpciaccess.so, libSM.so, libX11.so, libXaw6.so,
+          libfontenc.so, libFS.so, libICE.so,
+          libpciaccess.so, libSM.so, libX11.so, libX11-xcb, libXaw6.so,
           libXaw7.so, libXaw.so, libXcomposite.so,
           libXcursor.so, libXdamage.so, libXext.so,
           libXfixes.so, libXfont2.so, libXft.so, libXinerama.so,
           libXi.so, libxkbfile.so, libXmu.so, libXmuu.so,
-          libXpm.so, libXrandr.so, libXrender.so, libXRes.so,
+          libXpm.so, libXpresent.so, libXrandr.so, libXrender.so, libXRes.so,
           libxshmfence.so, libXss.so, libXt.so, libXtst.so, libXvMC.so,
           libXvMCW.so, libXv.so, libXxf86dga.so and
           libXxf86vm.so
         </seg>
         <seg>
           <envar>$XORG_PREFIX</envar>/include/X11/fonts,
+          <envar>$XORG_PREFIX</envar>/include/X11/ICE,
+          <envar>$XORG_PREFIX</envar>/include/X11/SM,
+          <envar>$XORG_PREFIX</envar>/include/X11/Xmu,
           <envar>$XORG_PREFIX</envar>/include/X11/Xtrans,
           <envar>$XORG_PREFIX</envar>/share/doc/libFS,
-          <envar>$XORG_PREFIX</envar>/share/doc/libICE,
-          <envar>$XORG_PREFIX</envar>/share/doc/libSM,
-          <envar>$XORG_PREFIX</envar>/share/doc/libX11,
+          <envar>$XORG_PREFIX</envar>/share/doc/libICE-&libICE-version;,
+          <envar>$XORG_PREFIX</envar>/share/doc/libSM-&libSM-version;,
+          <envar>$XORG_PREFIX</envar>/share/doc/libX11-&libX11-version;,
           <envar>$XORG_PREFIX</envar>/share/doc/libXaw,
           <envar>$XORG_PREFIX</envar>/share/doc/libXext,
           <envar>$XORG_PREFIX</envar>/share/doc/libXi,
-          <envar>$XORG_PREFIX</envar>/share/doc/libXmu,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXmu-&libXmu-version;,
           <envar>$XORG_PREFIX</envar>/share/doc/libXrender,
           <envar>$XORG_PREFIX</envar>/share/doc/libXt,
           <envar>$XORG_PREFIX</envar>/share/doc/libXtst,
@@ -310,28 +313,31 @@
           cxpm, sxpm
         </seg>
         <seg>
-          libdmx.so, libfontenc.so, libFS.so, libICE.so,
-          libpciaccess.so, libSM.so, libX11.so, libXaw6.so,
+          libfontenc.so, libFS.so, libICE.so,
+          libpciaccess.so, libSM.so, libX11.so, libX11-xcb, libXaw6.so,
           libXaw7.so, libXaw.so, libXcomposite.so,
           libXcursor.so, libXdamage.so, libXext.so,
           libXfixes.so, libXfont2.so, libXft.so, libXinerama.so,
           libXi.so, libxkbfile.so, libXmu.so, libXmuu.so,
-          libXpm.so, libXrandr.so, libXrender.so, libXRes.so,
+          libXpm.so, libXpresent.so, libXrandr.so, libXrender.so, libXRes.so,
           libxshmfence.so, libXss.so, libXt.so, libXtst.so, libXvMC.so,
           libXvMCW.so, libXv.so, libXxf86dga.so,
           libXxf86vm.so
         </seg>
         <seg>
           <envar>$XORG_PREFIX</envar>/include/X11/fonts,
+          <envar>$XORG_PREFIX</envar>/include/X11/ICE,
+          <envar>$XORG_PREFIX</envar>/include/X11/SM,
+          <envar>$XORG_PREFIX</envar>/include/X11/Xmu,
           <envar>$XORG_PREFIX</envar>/include/X11/Xtrans,
           <envar>$XORG_PREFIX</envar>/share/doc/libFS,
-          <envar>$XORG_PREFIX</envar>/share/doc/libICE,
-          <envar>$XORG_PREFIX</envar>/share/doc/libSM,
-          <envar>$XORG_PREFIX</envar>/share/doc/libX11,
+          <envar>$XORG_PREFIX</envar>/share/doc/libICE-&libICE-version;,
+          <envar>$XORG_PREFIX</envar>/share/doc/libSM-&libSM-version;,
+          <envar>$XORG_PREFIX</envar>/share/doc/libX11-&libX11-version;,
           <envar>$XORG_PREFIX</envar>/share/doc/libXaw,
           <envar>$XORG_PREFIX</envar>/share/doc/libXext,
           <envar>$XORG_PREFIX</envar>/share/doc/libXi,
-          <envar>$XORG_PREFIX</envar>/share/doc/libXmu,
+          <envar>$XORG_PREFIX</envar>/share/doc/libXmu-&libXmu-version;,
           <envar>$XORG_PREFIX</envar>/share/doc/libXrender,
           <envar>$XORG_PREFIX</envar>/share/doc/libXt,
           <envar>$XORG_PREFIX</envar>/share/doc/libXtst,
@@ -357,14 +363,6 @@
             shows an XPM file and/or converts XPM 1 or 2 files to XPM 3
 @y
             XPM ファイルを参照したり、XPM 1、XPM 2 ファイルを XPM 3 ファイルに変換します。
-@z
-
-@x libdmx.so
-            is the X Window System DMX (Distributed Multihead X) extension
-            library
-@y
-            is the X Window System DMX (Distributed Multihead X) extension
-            library
 @z
 
 @x libfontenc.so

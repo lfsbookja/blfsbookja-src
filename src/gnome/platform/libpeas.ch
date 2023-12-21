@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libpeas-buildsize     "12 MB (with tests)">
+  <!ENTITY libpeas-buildsize     "10 MB (with tests)">
   <!ENTITY libpeas-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libpeas-buildsize     "12 MB（テスト込み）">
+  <!ENTITY libpeas-buildsize     "10 MB（テスト込み）">
   <!ENTITY libpeas-time          "0.2 SBU（テスト込み）">
 @z
 
@@ -115,31 +111,25 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <ulink url="http://glade.gnome.org/">Glade</ulink>,
+      <xref linkend="gi-docgen"/>,
+      <ulink url="https://glade.gnome.org/">Glade</ulink>,
       <ulink url="https://pypi.org/project/embed">embed</ulink>,
       <ulink url="https://github.com/pavouk/lgi">LGI</ulink> (for LUA bindings,
       built with LUA-5.1), with either
-      <ulink url="http://luajit.org/">luajit</ulink> or
+      <ulink url="https://luajit.org/">luajit</ulink> or
       <ulink url="https://www.lua.org/ftp/lua-5.1.5.tar.gz">LUA-5.1</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <ulink url="http://glade.gnome.org/">Glade</ulink>,
+      <xref linkend="gi-docgen"/>,
+      <ulink url="https://glade.gnome.org/">Glade</ulink>,
       <ulink url="https://pypi.org/project/embed">embed</ulink>,
       <ulink url="https://github.com/pavouk/lgi">LGI</ulink> (for LUA bindings,
-      built with LUA-5.1),
-      <ulink url="http://luajit.org/">luajit</ulink> あるいは
-      <ulink url="https://www.lua.org/ftp/lua-5.1.5.tar.gz">LUA-5.1</ulink> のいずれか
+      built with LUA-5.1), with either
+      <ulink url="https://luajit.org/">luajit</ulink> or
+      <ulink url="https://www.lua.org/ftp/lua-5.1.5.tar.gz">LUA-5.1</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -194,14 +184,6 @@
 @z
 
 @x
-      <option>-Dgtk_doc=true</option>: Add this switch if wish to 
-      build the reference manual.
-@y
-      <option>-Dgtk_doc=true</option>:
-      リファレンスマニュアルをビルドする場合に本スイッチを指定します。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -228,7 +210,7 @@
           /usr/include/libpeas-1.0,
           /usr/lib/libpeas-1.0,
           /usr/lib/peas-demo and
-          /usr/share/gtk-doc/html/libpeas
+          /usr/share/gtk-doc/html/libpeas (optional)
         </seg>
 @y
         <seg>
@@ -241,7 +223,7 @@
           /usr/include/libpeas-1.0,
           /usr/lib/libpeas-1.0,
           /usr/lib/peas-demo,
-          /usr/share/gtk-doc/html/libpeas
+          /usr/share/gtk-doc/html/libpeas (任意インストール)
         </seg>
 @z
 

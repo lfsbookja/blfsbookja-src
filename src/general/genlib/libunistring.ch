@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libunistring-buildsize     "49 MB (add 43 MB for tests)">
-  <!ENTITY libunistring-time          "0.9 SBU (add 1.0 SBU for tests)">
+  <!ENTITY libunistring-buildsize     "51 MB (add 56 MB for tests)">
+  <!ENTITY libunistring-time          "0.4 SBU (Using parallelism=4; add 1.0 SBU for tests)">
 @y
-  <!ENTITY libunistring-buildsize     "49 MB (テスト実施時はさらに 43 MB)">
-  <!ENTITY libunistring-time          "0.9 SBU (テスト実施時はさらに 1.0 SBU)">
+  <!ENTITY libunistring-buildsize     "51 MB (テスト実施時はさらに 53 MB)">
+  <!ENTITY libunistring-time          "0.4 SBU (parallelism=4 利用; テスト実施時はさらに 1.0 SBU)">
 @z
 
 @x
@@ -95,12 +91,6 @@
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
       (ドキュメントの再ビルド時に必要)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

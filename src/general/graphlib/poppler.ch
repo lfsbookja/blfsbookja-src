@@ -117,14 +117,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/> and
-      <xref linkend="fontconfig"/>
+      <xref linkend="cmake"/>,
+      <xref linkend="fontconfig"/>, and
+      <xref linkend="gobject-introspection"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>,
-      <xref linkend="fontconfig"/>
+      <xref linkend="fontconfig"/>,
+      <xref linkend="gobject-introspection"/>
     </para>
 @z
 
@@ -133,23 +135,29 @@
     <para role="recommended">
       <xref linkend="boost"/>,
       <xref linkend="cairo"/>,
+      <xref linkend="gpgme"/>,
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="nss"/>, and
-      <xref linkend="openjpeg2"/>
-    </para>
+      <xref linkend="libtiff"/>,
+      <xref linkend="nss"/>,
+      <xref linkend="openjpeg2"/>, and
+      &qt5-deps;
+      (required for PDF support in <xref role="nodep" linkend="okular5"/>)
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="boost"/>,
       <xref linkend="cairo"/>,
+      <xref linkend="gpgme"/>,
       <xref linkend="lcms2"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="nss"/>, and
-      <xref linkend="openjpeg2"/>
-    </para>
+      <xref linkend="libtiff"/>,
+      <xref linkend="nss"/>,
+      <xref linkend="openjpeg2"/>,
+      &qt5-deps;
+      (required for PDF support in <xref role="nodep" linkend="okular5"/>)
 @z
 
 @x
@@ -158,14 +166,10 @@
       <xref linkend="curl"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="git"/> (for downloading test files),
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="qt5"/>
-      (required for PDF support in <xref role="nodep" linkend="okular5"/>), and
-      <ulink url="https://download.qt.io/archive/qt/">Qt-6.1 or later</ulink>.
-
+      <xref linkend="gtk3"/>, and
+      <xref linkend="qt6"/>
+      <!-- Nothing really uses this yet, but it will be used in KDE 6 -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -173,21 +177,11 @@
       <xref linkend="curl"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="git"/> (for downloading test files),
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="qt5"/>
-      (required for PDF support in <xref role="nodep" linkend="okular5"/>),
-      <ulink url="https://download.qt.io/archive/qt/">Qt-6.1 or later</ulink>.
-
+      <xref linkend="qt6"/>
+      <!-- Nothing really uses this yet, but it will be used in KDE 6 -->
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/poppler"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/poppler"/>
 @z
 
 @x
@@ -207,14 +201,14 @@
       In order to run the test suite, some testcases are needed and can
       be obtained only from a git repository. The command to download
       them is:
-<command>git clone --depth 1 git://git.freedesktop.org/git/poppler/test testfiles</command>.
-      Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>. 
+<command>git clone --depth 1 https://gitlab.freedesktop.org/poppler/test.git testfiles</command>.
+      Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>.
 @y
       In order to run the test suite, some testcases are needed and can
       be obtained only from a git repository. The command to download
       them is:
-<command>git clone --depth 1 git://git.freedesktop.org/git/poppler/test testfiles</command>.
-      Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>. 
+<command>git clone --depth 1 https://gitlab.freedesktop.org/poppler/test.git testfiles</command>.
+      Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>.
 @z
 
 @x
@@ -313,15 +307,16 @@
 
 @x
         <seg>
-          pdfattach, pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, 
+          pdfattach, pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate,
           pdfsig, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext, and
           pdfunite
         </seg>
         <seg>
           libpoppler.so,
           libpoppler-cpp.so,
-          libpoppler-glib.so, and
-          libpoppler-qt5.so
+          libpoppler-glib.so,
+          libpoppler-qt5.so, and
+          (optionally) libpoppler-qt6.so
         </seg>
         <seg>
           /usr/include/poppler,
@@ -330,7 +325,7 @@
         </seg>
 @y
         <seg>
-          pdfattach, pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate, 
+          pdfattach, pdfdetach, pdffonts, pdfimages, pdfinfo, pdfseparate,
           pdfsig, pdftocairo, pdftohtml, pdftoppm, pdftops, pdftotext,
           pdfunite
         </seg>
@@ -338,7 +333,8 @@
           libpoppler.so,
           libpoppler-cpp.so,
           libpoppler-glib.so,
-          libpoppler-qt5.so
+          libpoppler-qt5.so,
+          (optionally) libpoppler-qt6.so
         </seg>
         <seg>
           /usr/include/poppler,

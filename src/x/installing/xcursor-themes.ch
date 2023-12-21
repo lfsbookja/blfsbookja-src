@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -93,12 +89,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of xcursor-themes</title>
 @y
     <title>&InstallationOf1;xcursor-themes&InstallationOf2;</title>
@@ -143,16 +133,16 @@
         <seg>None</seg>
         <seg>None</seg>
         <seg>
-          <envar>$XORG_PREFIX</envar>/share/icons/handhelds,
-          <envar>$XORG_PREFIX</envar>/share/icons/redglass and
-          <envar>$XORG_PREFIX</envar>/share/icons/whiteglass
+          /usr/share/icons/handhelds,
+          /usr/share/icons/redglass, and
+          /usr/share/icons/whiteglass
         </seg>
 @y
         <seg>&None;</seg>
         <seg>&None;</seg>
         <seg>
-          <envar>$XORG_PREFIX</envar>/share/icons/handhelds,
-          <envar>$XORG_PREFIX</envar>/share/icons/redglass,
-          <envar>$XORG_PREFIX</envar>/share/icons/whiteglass
+          /usr/share/icons/handhelds,
+          /usr/share/icons/redglass, and
+          /usr/share/icons/whiteglass
         </seg>
 @z

@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY cmake-buildsize     "334 MB (add 982 MB for tests)">
-  <!ENTITY cmake-time          "2.2 SBU (add 3.7 SBU for tests, both using parallelism=4)">
+  <!ENTITY cmake-buildsize     "427 MB (add 1.2 GB for tests)">
+  <!ENTITY cmake-time          "2.2 SBU (add 3.9 SBU for tests, both using parallelism=4)">
 @y
-  <!ENTITY cmake-buildsize     "334 MB（テスト実行時は 982 MB）">
-  <!ENTITY cmake-time          "2.2 SBU（テスト実行時は 3.7 SBU, いずれも parallelism=4 利用時）">
+  <!ENTITY cmake-buildsize     "427 MB（テスト実行時は 1.2 GB）">
+  <!ENTITY cmake-time          "2.2 SBU（テスト実行時は 3.9 SBU, いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -86,22 +86,11 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="libuv"/> 
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="libuv"/> 
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="curl"/>,
-      <xref linkend="libarchive"/>, and
+      <xref linkend="libarchive"/>,
+      <xref linkend="libuv"/>, and
       <xref linkend="nghttp2"/>
     </para>
 @y
@@ -109,6 +98,7 @@
     <para role="recommended">
       <xref linkend="curl"/>,
       <xref linkend="libarchive"/>,
+      <xref linkend="libuv"/>,
       <xref linkend="nghttp2"/>
     </para>
 @z
@@ -119,10 +109,13 @@
       <xref linkend="gcc"/> (for gfortran),
       <xref linkend="git"/> (for use during tests),
       <xref linkend="mercurial"/> (for use during tests),
-      <xref linkend="qt5"/> (for the Qt-based GUI),
+      <xref linkend="openjdk"/> (for use during tests),
+      &qt5-deps; or <xref linkend="qt6" role="nodep"/> (for the Qt-based GUI),
+      <xref linkend="sphinx"/> (for building documents),
       <xref linkend="subversion"/> (for testing),
-      <ulink url="http://rhash.sourceforge.net/">rhash</ulink>, and
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (for building documents)
+      <ulink url="https://github.com/google/cppdap/">cppdap</ulink>,
+      <ulink url="https://github.com/open-source-parsers/jsoncpp/">jsoncpp</ulink>, and
+      <ulink url="https://rhash.sourceforge.net/">rhash</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -130,17 +123,14 @@
       <xref linkend="gcc"/> (for gfortran),
       <xref linkend="git"/> (for use during tests),
       <xref linkend="mercurial"/> (for use during tests),
-      <xref linkend="qt5"/> (Qt ベースの GUI 構築に必要),
-      <xref linkend="subversion"/> (テスト時),
-      <ulink url="http://rhash.sourceforge.net/">rhash</ulink>,
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink> (ドキュメント構築時)
+      <xref linkend="openjdk"/> (for use during tests),
+      &qt5-deps; or <xref linkend="qt6" role="nodep"/> (for the Qt-based GUI),
+      <xref linkend="sphinx"/> (for building documents),
+      <xref linkend="subversion"/> (for testing),
+      <ulink url="https://github.com/google/cppdap/">cppdap</ulink>,
+      <ulink url="https://github.com/open-source-parsers/jsoncpp/">jsoncpp</ulink>,
+      <ulink url="https://rhash.sourceforge.net/">rhash</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -163,7 +153,7 @@
       <replaceable>&lt;N&gt;</replaceable> is an integer between 1 and the
       number of system cores. Setting <envar>LC_ALL</envar> is needed to
       prevent some test failures when some of the locale variables are
-      set to non English locales. Oner test, RunCMake.CMP0125, is known to fail.
+      set to non English locales.
 @y
       ビルド結果をテストする場合は <command>LC_ALL=en_US.UTF-8 bin/ctest
       -j<replaceable>&lt;N&gt;</replaceable> -O
@@ -171,7 +161,6 @@
       ここで <replaceable>&lt;N&gt;</replaceable> は 1 からシステムコア数までの値を選んで指定します。
       テストがいくつか失敗するため <envar>LC_ALL</envar> の設定が必要となります。
       ロケール変数が英語以外のロケールに設定される場合があるためです。
-      1 つのテスト RunCMake.CMP0125 が失敗します。
 @z
 
 @x

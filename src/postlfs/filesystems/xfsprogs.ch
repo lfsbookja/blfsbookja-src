@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -69,12 +65,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Kernel Configuration</title>
 @y
     <title>&KernelConfiguration;</title>
@@ -119,17 +109,19 @@
 @z
 
 @x
-      <command>make DEBUG=-DNDEBUG</command>: Turns off debugging
+      <parameter>DEBUG=-DNDEBUG</parameter>: Turns off debugging
       symbols.
 @y
-      <command>make DEBUG=-DNDEBUG</command>: デバッグシンボルを無効にします。
+      <parameter>DEBUG=-DNDEBUG</parameter>: デバッグシンボルを無効にします。
 @z
 
 @x
-      <parameter>INSTALL_USER=root INSTALL_GROUP=root</parameter>: This
+      <parameter>INSTALL_USER=root</parameter>
+      <parameter>INSTALL_GROUP=root</parameter>: This
       sets the owner and group of the installed files.
 @y
-      <parameter>INSTALL_USER=root INSTALL_GROUP=root</parameter>: This
+      <parameter>INSTALL_USER=root</parameter>
+      <parameter>INSTALL_GROUP=root</parameter>: This
       sets the owner and group of the installed files.
 @z
 
@@ -167,7 +159,8 @@
         and xfs_spaceman</seg>
         <seg>libhandle.so</seg>
         <seg>/usr/include/xfs,
-        /usr/lib/xfsprogs, and
+        /usr/lib/xfsprogs,
+        /usr/share/xfsprogs, and
         /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
 @y
         <seg>fsck.xfs, mkfs.xfs, xfs_admin, xfs_bmap, xfs_copy, xfs_db,
@@ -178,6 +171,7 @@
         <seg>libhandle.so</seg>
         <seg>/usr/include/xfs,
         /usr/lib/xfsprogs,
+        /usr/share/xfsprogs,
         /usr/share/doc/xfsprogs-&xfsprogs-version;</seg>
 @z
 
@@ -243,15 +237,15 @@
             suspends access to an XFS file system
 @z
 
-@x
+@x xfs_fsr
             applicable only to XFS filesystems, improves the organization of
             mounted filesystems, the reorganization algorithm operates on one
-            file at a time, compacting or othewise  improving the layout of the
+            file at a time, compacting or otherwise  improving the layout of the
             file extents (contiguous blocks of file data)
 @y
             applicable only to XFS filesystems, improves the organization of
             mounted filesystems, the reorganization algorithm operates on one
-            file at a time, compacting or othewise  improving the layout of the
+            file at a time, compacting or otherwise  improving the layout of the
             file extents (contiguous blocks of file data)
 @z
 

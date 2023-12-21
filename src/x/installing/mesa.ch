@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY mesa-buildsize     "588 MB (with docs, add 389 MB for tests)">
-  <!ENTITY mesa-time          "3.5 SBU (Using parallelism=4; with docs, add 0.6 SBU for tests)">
+  <!ENTITY mesa-buildsize     "621 MB (with docs, add 266 MB for tests)">
+  <!ENTITY mesa-time          "3.1 SBU (with docs; add 0.6 SBU for tests; both with parallelism=4)">
 @y
-  <!ENTITY mesa-buildsize     "588 MB (ドキュメント込み, テスト実施時はさらに 389 MB)">
-  <!ENTITY mesa-time          "3.5 SBU (parallelism=4 利用時、ドキュメント込み、テスト実施時はさらに 0.6 SBU)">
+  <!ENTITY mesa-buildsize     "621 MB (ドキュメント込み, テスト実施時はさらに 266 MB)">
+  <!ENTITY mesa-time          "3.1 SBU (ドキュメント込み、テスト実施時はさらに 0.6 SBU, いずれも parallelism=4)">
 @z
 
 @x
@@ -88,15 +88,15 @@
 
 @x
           Recommended patch:
-          <ulink url="&patch-root;/mesa-&mesa-version;-add_xdemos-1.patch"/>
+          <ulink url="&patch-root;/mesa-add_xdemos-2.patch"/>
           (installs 2 demo programs for testing Mesa - not needed if you
-          install the <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">
+          install the <ulink url="https://archive.mesa3d.org/demos/">
           mesa-demos</ulink> package)
 @y
           推奨パッチ:
-          <ulink url="&patch-root;/mesa-&mesa-version;-add_xdemos-1.patch"/>
+          <ulink url="&patch-root;/mesa-add_xdemos-2.patch"/>
           (installs 2 demo programs for testing Mesa - not needed if you
-          install the <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">
+          install the <ulink url="https://archive.mesa3d.org/demos/">
           mesa-demos</ulink> package)
 @z
 
@@ -124,78 +124,14 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-
-      <xref role="first" linkend="libva"/> (to provide VA-API support for some
-      gallium drivers, note that there is a circular dependency. You must
-      build <application>libva</application> first without EGL and GLX support,
-      install this package, and rebuild <application>libva</application>),
-      <xref linkend="libvdpau"/> (to build VDPAU drivers),
-      <xref linkend="llvm"/> (required for Gallium3D, nouveau, r300, and radeonsi
-      drivers and for swrast, the software rasterizer which is sometimes referred
-      to as llvmpipe. See <ulink role="nodep"
-      url="https://docs.mesa3d.org/systems.html"/> for more information), and
-      <xref linkend="wayland-protocols"/> (required for 
-        <xref role="nodep" linkend='plasma5-build'/>,
-        <!-- <xref role="nodep" linkend='lxqt'/>, -->
-        GNOME, and recommended for  <xref role="nodep" linkend='gtk3'/>)
-    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-
-      <xref role="first" linkend="libva"/> (to provide VA-API support for some
-      gallium drivers, note that there is a circular dependency. You must
-      build <application>libva</application> first without EGL and GLX support,
-      install this package, and rebuild <application>libva</application>),
-      <xref linkend="libvdpau"/> (to build VDPAU drivers),
-      <xref linkend="llvm"/> (required for Gallium3D, nouveau, r300, and radeonsi
-      drivers and for swrast, the software rasterizer which is sometimes referred
-      to as llvmpipe. See <ulink role="nodep"
-      url="https://docs.mesa3d.org/systems.html"/> for more information), and
-      <xref linkend="wayland-protocols"/> (required for 
-        <xref role="nodep" linkend='plasma5-build'/>,
-        <!-- <xref role="nodep" linkend='lxqt'/>, -->
-        GNOME, and recommended for  <xref role="nodep" linkend='gtk3'/>)
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="lm_sensors"/> <!-- for libsensors according to Meson -->,
-      <xref linkend="nettle"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">mesa-demos</ulink>
-      (provides more than 300 extra demos to test
-      <application>Mesa</application>; this includes the same programs added by
-      the patch above),
-      <ulink url="http://omxil.sourceforge.net/">Bellagio OpenMAX Integration
-      Layer</ulink> (for mobile platforms),
-      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-      <ulink url="https://github.com/tizonia/tizonia-openmax-il/wiki/Tizonia-OpenMAX-IL/">
-      libtizonia</ulink>,  and
-      <ulink url="https://www.vulkan.org/">libvulkan</ulink> (for the zink driver)
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="lm_sensors"/> <!-- for libsensors according to Meson -->,
-      <xref linkend="nettle"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="ftp://ftp.freedesktop.org/pub/mesa/demos/">mesa-demos</ulink>
-      (provides more than 300 extra demos to test
-      <application>Mesa</application>; this includes the same programs added by
-      the patch above),
-      <ulink url="http://omxil.sourceforge.net/">Bellagio OpenMAX Integration
-      Layer</ulink> (for mobile platforms),
-      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-      <ulink url="https://github.com/tizonia/tizonia-openmax-il/wiki/Tizonia-OpenMAX-IL/">
-      libtizonia</ulink>,
-      <ulink url="https://www.vulkan.org/">libvulkan</ulink> (for the zink driver)
-    </para>
 @z
 
 @x
@@ -229,12 +165,6 @@
 %@z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Mesa</title>
 @y
     <title>&InstallationOf1;Mesa&InstallationOf2;</title>
@@ -259,11 +189,11 @@
 @z
 
 @x
-      If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>.
+      To test the results, issue:
+      <command>meson configure -Dbuild-tests=true &amp;&amp; ninja test</command>.
 @y
-      If you built the tests (see 'Command Explanations'), to run them issue:
-      <command>ninja test</command>.
+      To test the results, issue:
+      <command>meson configure -Dbuild-tests=true &amp;&amp; ninja test</command>.
 @z
 
 @x
@@ -300,58 +230,6 @@
 @z
 
 @x
-      <parameter>-Ddri-drivers="..."</parameter>: This parameter
-      controls which (non-gallium) dri drivers should be built.
-@y
-      <parameter>-Ddri-drivers="..."</parameter>: This parameter
-      controls which (non-gallium) dri drivers should be built.
-@z
-
-@x
-      <parameter>-Dgallium-drivers="..."</parameter>: This parameter
-      controls which Gallium3D drivers should be built.
-@y
-      <parameter>-Dgallium-drivers="..."</parameter>: This parameter
-      controls which Gallium3D drivers should be built.
-@z
-
-@x
-      <parameter>-Dgallium-nine=false</parameter>: Prevents building
-      support for (MS Windows) games designed for DX9. Set it to true if
-      this support is desired.
-@y
-      <parameter>-Dgallium-nine=false</parameter>: Prevents building
-      support for (MS Windows) games designed for DX9. Set it to true if
-      this support is desired.
-@z
-
-@x
-      <parameter>-Dvalgrind=disabled</parameter>: This parameter disables
-      the usage of Valgrind during the build process. Remove this parameter
-      if you have Valgrind installed, and wish to check for memory leaks.
-@y
-      <parameter>-Dvalgrind=disabled</parameter>: This parameter disables
-      the usage of Valgrind during the build process. Remove this parameter
-      if you have Valgrind installed, and wish to check for memory leaks.
-@z
-
-@x
-      <parameter>-Dlibunwind=disabled</parameter>: This parameter disables
-      the usage of libunwind.
-@y
-      <parameter>-Dlibunwind=disabled</parameter>: This parameter disables
-      the usage of libunwind.
-@z
-
-@x
-      <option>-Dbuild-tests=true</option>: This option will cause the test code
-      to be enabled. To run the tests, issue: <command>ninja test</command>.
-@y
-      <option>-Dbuild-tests=true</option>: This option will cause the test code
-      to be enabled. To run the tests, issue: <command>ninja test</command>.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -360,12 +238,16 @@
 @x
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle><!-- in /usr/lib -->
-      <segtitle>Installed Drivers</segtitle><!-- in /usr/lib/<subdir> -->
+      <segtitle>Installed DRI Drivers</segtitle><!-- in /usr/lib/dri -->
+      <segtitle>Installed VDPAU Drivers</segtitle><!-- in /usr/lib/vdpau -->
+      <segtitle>Installed Vulkan Drivers</segtitle><!-- in /usr/lib -->
       <segtitle>Installed Directories</segtitle>
 @y
       <segtitle>&InstalledPrograms;</segtitle>
-      <segtitle>&InstalledLibraries;</segtitle>
-      <segtitle>Installed Drivers</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle><!-- in /usr/lib -->
+      <segtitle>Installed DRI Drivers</segtitle><!-- in /usr/lib/dri -->
+      <segtitle>Installed VDPAU Drivers</segtitle><!-- in /usr/lib/vdpau -->
+      <segtitle>Installed Vulkan Drivers</segtitle><!-- in /usr/lib -->
       <segtitle>&InstalledDirectories;</segtitle>
 @z
 
@@ -378,59 +260,58 @@
           libGL.so,
           libGLESv1_CM.so,
           libGLESv2.so,
-<!--          libOSMesa.so,-->
-          libXvMCnouveau.so,
-          libXvMCr600.so,
           libgbm.so,
-          libglapi.so,
-          <!-- Begin Vulkan drivers -->
-          libvulkan_intel.so,
-          libvulkan_lvp.so,
-          libvulkan_radeon.so, and
-          <!-- End Vulkan drivers -->
-          libxatracker.so,
+          libglapi.so, and
+          libxatracker.so
         </seg>
         <seg>
-          <!-- Begin gallium DRI drivers : this is the full set -->
-          d3dadapter9.so (optional), <!-- For Windows games. This is DirectX's
-                                          Direct3D -->
+          <!-- d3dadapter9.so (optional)
+               I guess this is useless today, Wine applications use Vulkan
+               through libvkd3d, and new games with native Linux support
+               likely uses Vulkan directly.  -->
+          <!-- Begin gallium DRI drivers (*_dri.so) and VA-API drivers
+               (*_drv_video.so): this is the full set -->
           crocus_dri.so,
-<!--          i830_dri.so,-->
           i915_dri.so,
-          i965_dri.so,
           iris_dri.so,
           kms_swrast_dri.so,
           nouveau_dri.so,
           nouveau_drv_video.so,
-          nouveau_vieux_dri.so,
-          r200_dri.so (optional),
-          r300_dri.so (optional),
+          r300_dri.so,
           r600_dri.so,
           r600_drv_video.so,
-          radeon_dri.so (optional),
           radeonsi_dri.so,
           radeonsi_drv_video.so,
           swrast_dri.so,
           virtio_gpu_dri.so,
-          vmwgfx_dri.so,
+          virtio_gpu_drv_video.so, and
+          vmwgfx_dri.so
           <!-- End DRI Drivers -->
+        </seg>
+        <seg>
           <!-- Begin VDPAU drivers -->
           libvdpau_nouveau.so,
-          libvdpau_r300.so (optional),
+          libvdpau_r300.so
           libvdpau_r600.so, and
           libvdpau_radeonsi.so
+          libvdpau_virtio_gpu.so
           <!-- End VDPAU drivers -->
           (Many of these drivers are hard-linked).
         </seg>
         <seg>
-          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR},lib/{dri,vdpau}},
-          $XORG_PREFIX/include/d3adapter (optional),
-          $XORG_PREFIX/lib/d3d (optional),
+          libvulkan_intel_hasvk.so,
+          libvulkan_intel.so,
+          libvulkan_lvp.so, and
+          libvulkan_radeon.so
+        </seg>
+        <seg>
+          <!-- $XORG_PREFIX/include/GL is installed by xorg-protos -->
+          $XORG_PREFIX/{include/{EGL,GLES,GLES2,GLES3,KHR},
+          $XORG_PREFIX/lib/{dri,vdpau}},
           $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
           particularly browsers and games),
-          $XORG_PREFIX/share/vulkan/icd.d,
-          and
-          /usr/share/doc/mesa-&mesa-version; (optional)
+          $XORG_PREFIX/share/vulkan,
+          and /usr/share/doc/mesa-&mesa-version;
         </seg>
 @y
         <seg>
@@ -441,59 +322,58 @@
           libGL.so,
           libGLESv1_CM.so,
           libGLESv2.so,
-<!--          libOSMesa.so,-->
-          libXvMCnouveau.so,
-          libXvMCr600.so,
           libgbm.so,
-          libglapi.so,
-          <!-- Begin Vulkan drivers -->
-          libvulkan_intel.so,
-          libvulkan_lvp.so,
-          libvulkan_radeon.so, and
-          <!-- End Vulkan drivers -->
-          libxatracker.so,
+          libglapi.so, and
+          libxatracker.so
         </seg>
         <seg>
-          <!-- Begin gallium DRI drivers : this is the full set -->
-          d3dadapter9.so (optional), <!-- For Windows games. This is DirectX's
-                                          Direct3D -->
+          <!-- d3dadapter9.so (optional)
+               I guess this is useless today, Wine applications use Vulkan
+               through libvkd3d, and new games with native Linux support
+               likely uses Vulkan directly.  -->
+          <!-- Begin gallium DRI drivers (*_dri.so) and VA-API drivers
+               (*_drv_video.so): this is the full set -->
           crocus_dri.so,
-<!--          i830_dri.so,-->
           i915_dri.so,
-          i965_dri.so,
           iris_dri.so,
           kms_swrast_dri.so,
           nouveau_dri.so,
           nouveau_drv_video.so,
-          nouveau_vieux_dri.so,
-          r200_dri.so (optional),
-          r300_dri.so (optional),
+          r300_dri.so,
           r600_dri.so,
           r600_drv_video.so,
-          radeon_dri.so (optional),
           radeonsi_dri.so,
           radeonsi_drv_video.so,
           swrast_dri.so,
           virtio_gpu_dri.so,
-          vmwgfx_dri.so,
+          virtio_gpu_drv_video.so, and
+          vmwgfx_dri.so
           <!-- End DRI Drivers -->
+        </seg>
+        <seg>
           <!-- Begin VDPAU drivers -->
           libvdpau_nouveau.so,
-          libvdpau_r300.so (optional),
+          libvdpau_r300.so
           libvdpau_r600.so, and
           libvdpau_radeonsi.so
+          libvdpau_virtio_gpu.so
           <!-- End VDPAU drivers -->
           (Many of these drivers are hard-linked).
         </seg>
         <seg>
-          $XORG_PREFIX/{include/{EGL,GL,GLES,GLES2,GLES3,KHR},lib/{dri,vdpau}},
-          $XORG_PREFIX/include/d3adapter (optional),
-          $XORG_PREFIX/lib/d3d (optional),
+          libvulkan_intel_hasvk.so,
+          libvulkan_intel.so,
+          libvulkan_lvp.so, and
+          libvulkan_radeon.so
+        </seg>
+        <seg>
+          <!-- $XORG_PREFIX/include/GL is installed by xorg-protos -->
+          $XORG_PREFIX/{include/{EGL,GLES,GLES2,GLES3,KHR},
+          $XORG_PREFIX/lib/{dri,vdpau}},
           $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
           particularly browsers and games),
-          $XORG_PREFIX/share/vulkan/icd.d,
-          and
-          /usr/share/doc/mesa-&mesa-version; (optional)
+          $XORG_PREFIX/share/vulkan,
+          and /usr/share/doc/mesa-&mesa-version;
         </seg>
 @z
 

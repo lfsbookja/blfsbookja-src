@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -89,31 +85,25 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="libiodbc"/>,
       <xref linkend="sqlite"/>,
-      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="postgresql"/>,
+      &berkeley-db;
       <ulink url="&sourceforge-dl;/virtuoso/">virtuoso</ulink>, and
       <ulink url="https://sourceforge.net/projects/threestore/">3store</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="libiodbc"/>,
       <xref linkend="sqlite"/>,
-      <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="postgresql"/>,
-      <ulink url="&sourceforge-dl;/virtuoso/">virtuoso</ulink>,
+      &berkeley-db;
+      <ulink url="&sourceforge-dl;/virtuoso/">virtuoso</ulink>, and
       <ulink url="https://sourceforge.net/projects/threestore/">3store</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

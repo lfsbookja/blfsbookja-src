@@ -98,12 +98,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/mousepad"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/mousepad"/>
-@z
-
-@x
     <title>Installation of Mousepad</title>
 @y
     <title>&InstallationOf1;Mousepad&InstallationOf2;</title>

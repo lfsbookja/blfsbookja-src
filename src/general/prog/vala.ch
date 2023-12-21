@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY vala-buildsize     "153 MB (add 18 MB for tests)">
-  <!ENTITY vala-time          "0.5 SBU (using parallelism=4; add 3.4 SBU for tests)">
+  <!ENTITY vala-buildsize     "160 MB (add 18 MB for tests)">
+  <!ENTITY vala-time          "0.5 SBU (add 1.0 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY vala-buildsize     "153 MB (テスト実施時はさらに 18 MB)">
-  <!ENTITY vala-time          "0.5 SBU (parallelism=4 利用時。テスト実施時はさらに 3.4 SBU)">
+  <!ENTITY vala-buildsize     "160 MB (テスト実施時はさらに 18 MB)">
+  <!ENTITY vala-time          "0.5 SBU (テスト実施時はさらに 1.0 SBU; いずれも parallelism=4 利用時)">
 @z
 
 @x
@@ -114,12 +114,6 @@
       <ulink url="https://github.com/relaxng/jing-trang">jing</ulink>,
       <ulink url="https://weasyprint.org/">weasyprint</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

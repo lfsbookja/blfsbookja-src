@@ -1,7 +1,7 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-BOOKdir = @abs_bookdir@/xincludes
+
 CHANGE_FILES = \
 	gnome-mandir.ch             \
 	gnome-prefix.ch             \
@@ -19,13 +19,13 @@ CHANGE_FILES = \
 	meson-buildtype-release.ch  \
 	meson-wrap-nodownload.ch    \
 	meson-wrap-nofallback.ch    \
-	mozconfigure.ch             \
-	mozmach.ch                  \
 	mozshm.ch                   \
 	perl-build-install.ch       \
 	perl-standard-install.ch    \
 	perl-unsafe-install.ch      \
+	pip3-cmd-explain.ch         \
 	scrollkeeper-dir.ch         \
+	SIOCGSTAMP.ch               \
 	static-libraries.ch         \
 	texrecommendlibs.ch         \
 	texoptional.ch              \
@@ -43,24 +43,4 @@ CHANGE_FILES = \
 	without-scrollkeeper.ch     \
 	X11R6_symlink.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
-srcdir = @srcdir@
-srcs = $(CHANGE_FILES:.ch=.xml)
-
-SUFFIXES = .ch .xml
-.ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
-
-all: ctie $(srcs)
-
-ctie:
-	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
-
--include Makefile.sub
-Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
-	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-
-@MAINT@.PHONY: chbuild
-@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
-@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
-@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
+include $(top_srcdir)/build-aux/main.mk

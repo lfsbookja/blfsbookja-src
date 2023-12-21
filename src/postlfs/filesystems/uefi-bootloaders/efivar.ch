@@ -78,15 +78,9 @@
 @z
 
 @x
-          Required patch:
+          Optional patch (Required for 32-bit systems):
 @y
-          必須のパッチ:
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
+          Optional patch (Required for 32-bit systems):
 @z
 
 @x
@@ -96,9 +90,11 @@
 @z
 
 @x
-      First, apply a patch to fix an issue building with GCC 9 or later:
+      First, fix an issue in Makefile causing the package to be rebuilt
+      during installation:
 @y
-      GCC 9 およびそれ以降を用いたビルド時の問題を修正するためのパッチを適用します。
+      First, fix an issue in Makefile causing the package to be rebuilt
+      during installation:
 @z
 
 @x
@@ -130,11 +126,15 @@
 @z
 
 @x
-      <parameter>CFLAGS="-O2 -Wno-stringop-truncation"</parameter>:
-      This option overrides the default compiler flags to avoid a build failure.
+      <parameter>ERRORS=</parameter>:
+      This option overrides the <option>-Werror</option> passed to GCC
+      by default, so the package won't fail to build with the
+      <option>-Wenum-int-mismatch</option> warning introduced in GCC 13.
 @y
-      <parameter>CFLAGS="-O2 -Wno-stringop-truncation"</parameter>:
-      This option overrides the default compiler flags to avoid a build failure.
+      <parameter>ERRORS=</parameter>:
+      This option overrides the <option>-Werror</option> passed to GCC
+      by default, so the package won't fail to build with the
+      <option>-Wenum-int-mismatch</option> warning introduced in GCC 13.
 @z
 
 @x
@@ -167,20 +167,20 @@
 
 @x
         <seg>
-          efivar
+          efisecdb and efivar
         </seg>
         <seg>
-          libefiboot.so and libefivar.so
+          libefiboot.so, libefisec.so, and libefivar.so
         </seg>
         <seg>
           /usr/include/efivar
         </seg>
 @y
         <seg>
-          efivar
+          efisecdb, efivar
         </seg>
         <seg>
-          libefiboot.so, libefivar.so
+          libefiboot.so, libefisec.so, libefivar.so
         </seg>
         <seg>
           /usr/include/efivar

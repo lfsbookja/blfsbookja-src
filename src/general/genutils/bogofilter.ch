@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -77,28 +73,20 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="db"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="db"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gsl"/> and
-      <xref linkend="libxml2"/>
+      <xref linkend="gsl"/>,
+      <xref linkend="libxml2"/>, and
+      <!-- 'required' to make this strong to jhalfs -->
+      <xref role='required' linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gsl"/>,
-      <xref linkend="libxml2"/>
+      <xref linkend="libxml2"/>,
+      <!-- 'required' to make this strong to jhalfs -->
+      <xref role='required' linkend="sqlite"/>
     </para>
 @z
 
@@ -106,19 +94,19 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="lmdb"/>,
-      <xref linkend="sqlite"/>,
       <xref linkend="xmlto"/>,
-      <ulink url="http://fallabs.com/qdbm/">QDBM</ulink> and
-      <ulink url="http://fallabs.com/tokyocabinet/">TokyoCabinet</ulink>
+      &berkeley-db;,
+      <ulink url="https://dbmx.net/qdbm/">QDBM</ulink> and
+      <ulink url="https://dbmx.net/tokyocabinet/">TokyoCabinet</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="lmdb"/>,
-      <xref linkend="sqlite"/>,
       <xref linkend="xmlto"/>,
-      <ulink url="http://fallabs.com/qdbm/">QDBM</ulink>,
-      <ulink url="http://fallabs.com/tokyocabinet/">TokyoCabinet</ulink>
+      &berkeley-db;,
+      <ulink url="https://dbmx.net/qdbm/">QDBM</ulink> and
+      <ulink url="https://dbmx.net/tokyocabinet/">TokyoCabinet</ulink>
     </para>
 @z
 
@@ -127,12 +115,6 @@
         then a statically linked shipped version will be used instead.
 @y
         推奨パッケージ <xref linkend="gsl"/> をインストールしない場合、同梱されているバージョンがスタティックライブラリとしてインストールされます。
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/bogofilter"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/bogofilter"/>
 @z
 
 @x
@@ -167,11 +149,14 @@
 @z
 
 @x
-      <option>--with-database=</option>: This switch allows you to change
-      the default database from db to either qdbm, sqlite3 or tokyocabinet.
+      <parameter>--with-database=sqlite3</parameter>: This switch makes
+      Bogofilter use <xref linkend='sqlite'/> as the database, instead of
+      Berkeley DB<!-- which is beyond the scope of BLFS (slated for removal)-->.
 @y
-      <option>--with-database=</option>:
-      本スイッチはデフォルトデータベースを db から qdbm, sqlite3, tokyocabinet のいずれかに変更します。
+      <parameter>--with-database=sqlite3</parameter>:
+      本スイッチは Bogofilter がデフォルトとするデータベースを、Berkeley DB から <xref
+      linkend='sqlite'/> にします。
+
 @z
 
 @x

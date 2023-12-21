@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -81,7 +77,8 @@
       <xref linkend="adwaita-icon-theme"/>,
       <xref linkend="gtkmm3"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="libgtop"/>, and
+      <xref linkend="libgtop"/>,
+      <xref linkend="libhandy1"/>, and
       <xref linkend="librsvg"/>
     </para>
 @y
@@ -91,14 +88,25 @@
       <xref linkend="gtkmm3"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libgtop"/>,
+      <xref linkend="libhandy1"/>,
       <xref linkend="librsvg"/>
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="desktop-file-utils"/>,
+      <ulink url="&appstream-glib-url;">appstream-glib</ulink>, and
+      <ulink url="https://github.com/uncrustify/uncrustify">uncrustify</ulink>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="desktop-file-utils"/>,
+      <ulink url="&appstream-glib-url;">appstream-glib</ulink>,
+      <ulink url="https://github.com/uncrustify/uncrustify">uncrustify</ulink>
+    </para>
 @z
 
 @x

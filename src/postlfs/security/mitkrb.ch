@@ -82,34 +82,34 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <!-- <xref linkend="dejagnu"/> (for full test coverage), -->
       <xref linkend="bind-utils"/>,
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,<!-- Seems so that mit has its own
       implementation of rpc now.
-      <xref linkend="rpcbind"/> (used during the testsuite),-->
-      <xref linkend="valgrind"/> (used during the testsuite),
+      <xref linkend="rpcbind"/> (used during the test suite),-->
+      <xref linkend="valgrind"/> (used during the test suite),
       <xref linkend="yasm"/>,
-      <ulink url="http://thrysoee.dk/editline/">libedit</ulink>,
+      <ulink url="https://thrysoee.dk/editline/">libedit</ulink>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
+      <ulink url="https://pypi.org/project/kdcproxy/">kdcproxy</ulink>,
       <ulink url="https://pypi.org/project/pyrad/">pyrad</ulink>, and
       <ulink url="https://cwrap.org/resolv_wrapper.html">resolv_wrapper</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <!-- <xref linkend="dejagnu"/> (for full test coverage), -->
       <xref linkend="bind-utils"/>,
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,<!-- Seems so that mit has its own
       implementation of rpc now.
-      <xref linkend="rpcbind"/> (used during the testsuite),-->
-      <xref linkend="valgrind"/> (テストスイート実行時に利用),
+      <xref linkend="rpcbind"/> (used during the test suite),-->
+      <xref linkend="valgrind"/> (used during the test suite),
       <xref linkend="yasm"/>,
-      <ulink url="http://thrysoee.dk/editline/">libedit</ulink>,
+      <ulink url="https://thrysoee.dk/editline/">libedit</ulink>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
+      <ulink url="https://pypi.org/project/kdcproxy/">kdcproxy</ulink>,
       <ulink url="https://pypi.org/project/pyrad/">pyrad</ulink>,
       <ulink url="https://cwrap.org/resolv_wrapper.html">resolv_wrapper</ulink>
     </para>
@@ -128,12 +128,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of MIT Kerberos V5</title>
 @y
     <title>&InstallationOf1;MIT Kerberos V5&InstallationOf2;</title>
@@ -147,27 +141,9 @@
 @z
 
 @x
-      To test the build, issue as the <systemitem
-      class="username">root</systemitem> user: <command>make -k -j1 check</command>.
-      <!-- You need at least <xref link end="tcl"/>, which is used to drive the
-      testsuite.  Furthermore, <xref link end="dejagnu"/> must be available for
-      some of the tests to run.--> If you have a former version of MIT Kerberos V5
-      installed, it may happen that the test suite may pick up the installed
-      versions of the libraries, rather than the newly built ones. If so, it is
-      better to run the tests after the installation. Some tests may fail with
-      the latest version of dejagnu and glibc.
-      <!-- Note: on my laptop -j8 fails but -j1 passes -->
+      To test the build, issue: <command>make -j1 -k check</command>.
 @y
-      To test the build, issue as the <systemitem
-      class="username">root</systemitem> user: <command>make -k -j1 check</command>.
-      <!-- You need at least <xref link end="tcl"/>, which is used to drive the
-      testsuite.  Furthermore, <xref link end="dejagnu"/> must be available for
-      some of the tests to run.--> If you have a former version of MIT Kerberos V5
-      installed, it may happen that the test suite may pick up the installed
-      versions of the libraries, rather than the newly built ones. If so, it is
-      better to run the tests after the installation. Some tests may fail with
-      the latest version of dejagnu and glibc.
-      <!-- Note: on my laptop -j8 fails but -j1 passes -->
+      To test the build, issue: <command>make -j1 -k check</command>.
 @z
 
 @x
@@ -183,17 +159,11 @@
 @z
 
 @x
-      The first <command>sed</command> increases the width of the virtual 
-      terminal used for some tests to prevent some spurious text in the output
-      which is taken as a failure. The second <command>sed</command> removes a
-      test that is known to fail. The third <command>sed</command> removes a
-      test that is known to hang.
+      The <command>sed</command> command removes a
+      test that is known to fail.
 @y
-      The first <command>sed</command> increases the width of the virtual 
-      terminal used for some tests to prevent some spurious text in the output
-      which is taken as a failure. The second <command>sed</command> removes a
-      test that is known to fail. The third <command>sed</command> removes a
-      test that is known to hang.
+      The <command>sed</command> command removes a
+      test that is known to fail.
 @z
 
 @x
@@ -242,44 +212,6 @@
 @y
       <option>--with-ldap</option>: Use this switch if you want to compile the
       <application>OpenLDAP</application> database backend module.
-@z
-
-@x
-      <command>mv -v /usr/lib/libk... /lib </command> and 
-      <command>ln -v -sf ../../lib/libk... /usr/lib/libk...</command>: 
-      Move critical libraries to the
-      <filename class="directory">/lib</filename> directory so that they are
-      available when the <filename class="directory">/usr</filename>
-      filesystem is not mounted.
-@y
-      <command>mv -v /usr/lib/libk... /lib </command> and 
-      <command>ln -v -sf ../../lib/libk... /usr/lib/libk...</command>: 
-      Move critical libraries to the
-      <filename class="directory">/lib</filename> directory so that they are
-      available when the <filename class="directory">/usr</filename>
-      filesystem is not mounted.
-@z
-
-@x
-      <command>find /usr/lib -type f -name "lib$f*.so*" -exec chmod -v 755 {} \;</command>: 
-      This command changes the permisison of installed libraries.  
-@y
-      <command>find /usr/lib -type f -name "lib$f*.so*" -exec chmod -v 755 {} \;</command>: 
-      This command changes the permisison of installed libraries.  
-@z
-
-@x
-      <command>mv -v /usr/bin/ksu /bin</command>: Moves the
-      <command>ksu</command> program to the
-      <filename class="directory">/bin</filename> directory so that it is
-      available when the <filename class="directory">/usr</filename>
-      filesystem is not mounted.
-@y
-      <command>mv -v /usr/bin/ksu /bin</command>: Moves the
-      <command>ksu</command> program to the
-      <filename class="directory">/bin</filename> directory so that it is
-      available when the <filename class="directory">/usr</filename>
-      filesystem is not mounted.
 @z
 
 @x
@@ -508,12 +440,12 @@
 
 @x
           For additional information consult the <ulink
-          url="http://web.mit.edu/kerberos/www/krb5-&mitkrb-major-version;/#documentation">
+          url="https://web.mit.edu/kerberos/www/krb5-&mitkrb-major-version;/#documentation">
           documentation for krb5-&mitkrb-version;</ulink> on which the above
           instructions are based.
 @y
           For additional information consult the <ulink
-          url="http://web.mit.edu/kerberos/www/krb5-&mitkrb-major-version;/#documentation">
+          url="https://web.mit.edu/kerberos/www/krb5-&mitkrb-major-version;/#documentation">
           documentation for krb5-&mitkrb-version;</ulink> on which the above
           instructions are based.
 @z

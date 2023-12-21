@@ -75,31 +75,25 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
-      <xref linkend="libyaml"/>,
+      <xref linkend="rust"/>,
       <xref linkend="tk"/>,
-      <xref linkend="valgrind"/>, and
+      <xref linkend="valgrind"/>, 
+      &berkeley-db; and 
       <ulink url="http://dtrace.org/blogs/about/">DTrace</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="doxygen"/>,
       <xref linkend="graphviz"/>,
-      <xref linkend="libyaml"/>,
+      <xref linkend="rust"/>,
       <xref linkend="tk"/>,
-      <xref linkend="valgrind"/>,
+      <xref linkend="valgrind"/>, 
+      &berkeley-db;,
       <ulink url="http://dtrace.org/blogs/about/">DTrace</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -124,17 +118,13 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. There are over
-      21,000 tests. Some tests related to ipv6 may indicate errors.  If the
-      tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. A few tests may fail due
-      to system configuration expectations.
+      The tests require that the new version of Ruby is already installed to
+      run correctly. If you want to run the tests, execute them after installing
+      the package. <!-- Ticket #17887 -->
 @y
-      To test the results, issue: <command>make check</command>. There are over
-      21,000 tests. Some tests related to ipv6 may indicate errors.  If the
-      tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. A few tests may fail due
-      to system configuration expectations.
+      The tests require that the new version of Ruby is already installed to
+      run correctly. If you want to run the tests, execute them after installing
+      the package. <!-- Ticket #17887 -->
 @z
 
 @x
@@ -144,13 +134,45 @@
 @z
 
 @x
+      To test the results, issue: <command>make -k check</command>. There are over
+      25,000 tests. Some tests related to ipv6 may indicate errors.  If the
+      tests are run in a directory that has a world writable component (e.g.
+      /tmp) then several additional tests may fail. A few tests may fail due
+      to system configuration expectations.
+@y
+      To test the results, issue: <command>make -k check</command>. There are over
+      25,000 tests. Some tests related to ipv6 may indicate errors.  If the
+      tests are run in a directory that has a world writable component (e.g.
+      /tmp) then several additional tests may fail. A few tests may fail due
+      to system configuration expectations.
+@z
+
+@x
+        If you have Ruby-On-Rails applications installed and did an
+        upgrade of <application>Ruby</application> by installing this
+        package, you might need to run an update there, too
+        (as the &root; user):
+@y
+        If you have Ruby-On-Rails applications installed and did an
+        upgrade of <application>Ruby</application> by installing this
+        package, you might need to run an update there, too
+        (as the &root; user):
+@z
+
+@x
+        and restart the webserver which serves the application.
+@y
+        and restart the webserver which serves the application.
+@z
+
+@x
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
 @z
 
 @x
-      <parameter>--enable-shared</parameter>: This switch enables building of
+      <parameter>--enable-shared</parameter>: This switch enables building
       the <filename class="libraryfile">libruby</filename> shared library.
 @y
       <parameter>--enable-shared</parameter>:
@@ -255,20 +277,34 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x erb
-            is Tiny eRuby. It interprets a
-            <application>Ruby</application> code embedded text file
+@x bundle
+            creates bundles of Ruby Gems
 @y
-            Tiny eRuby です。
-            これはテキストファイルに埋め込まれた <application>Ruby</application> コードを実行します。
+            creates bundles of Ruby Gems
+@z
+
+@x bundler
+            manages an application's dependencies throughout it's lifecycle
+@y
+            manages an application's dependencies throughout it's lifecycle
+@z
+
+@x erb
+            is a command line front-end for eRuby, which provides a templating
+            system for <application>Ruby</application>
+@y
+            is a command line front-end for eRuby, which provides a templating
+            system for <application>Ruby</application>
 @z
 
 @x gem
-            command for RubyGems - a sophisticated package manager for
-            <application>Ruby</application>
+            is the command for RubyGems, which is a sophisticated package
+            manager for <application>Ruby</application>. This is similar
+            to Python's 'pip' command
 @y
-            command for RubyGems - a sophisticated package manager for
-            <application>Ruby</application>
+            is the command for RubyGems, which is a sophisticated package
+            manager for <application>Ruby</application>. This is similar
+            to Python's 'pip' command
 @z
 
 @x irb

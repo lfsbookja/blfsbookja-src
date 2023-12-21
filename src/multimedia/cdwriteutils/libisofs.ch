@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -79,20 +75,14 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/> (to generate HTML documentation) and
-      <ulink url="http://www.einval.com/~steve/software/JTE/">libjte</ulink>
+      <ulink url="https://www.einval.com/~steve/software/JTE/">libjte</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="doxygen"/> (to generate HTML documentation),
-      <ulink url="http://www.einval.com/~steve/software/JTE/">libjte</ulink>
+      <xref linkend="doxygen"/> (to generate HTML documentation) and
+      <ulink url="https://www.einval.com/~steve/software/JTE/">libjte</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libisofs"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libisofs"/>
 @z
 
 @x

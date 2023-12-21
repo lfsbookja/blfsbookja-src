@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY make-ca-buildsize     "6.6 MB (with all runtime deps)">
+  <!ENTITY make-ca-buildsize     "6.9 MB (with all runtime deps)">
   <!ENTITY make-ca-time          "0.1 SBU (with all runtime deps)">
 @y
-  <!ENTITY make-ca-buildsize     "6.6 MB (with all runtime deps)">
+  <!ENTITY make-ca-buildsize     "6.9 MB (with all runtime deps)">
   <!ENTITY make-ca-time          "0.1 SBU (with all runtime deps)">
 @z
 
@@ -54,7 +50,7 @@
       it is for most Linux distributions). The certificate store provided here
       is taken from the Mozilla Foundation, who have established very strict
       inclusion policies described <ulink
-        url="https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/">here</ulink>.
+        url="https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/">here</ulink>.
 @y
       Establishing trust with a CA involves validating things like company
       address, ownership, contact information, etc., and ensuring that the CA
@@ -64,7 +60,7 @@
       it is for most Linux distributions). The certificate store provided here
       is taken from the Mozilla Foundation, who have established very strict
       inclusion policies described <ulink
-        url="https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/">here</ulink>.
+        url="https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/policy/">here</ulink>.
 @z
 
 @x
@@ -112,14 +108,22 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="p11-kit"/> (required at runtime to
-      generate certificate stores from trust anchors)
+      <!-- Attention: no role="runtime" here because jhalfs don't assume
+           runtime dependencies are needed to run commands.  -->
+      <xref linkend="p11-kit"/> (runtime, built after
+      <xref role="nodep" linkend="libtasn1"/>, required in the following
+      instructions to generate certificate stores from trust anchors, and
+      each time <command>make-ca</command> is run)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="p11-kit"/> (required at runtime to
-      generate certificate stores from trust anchors)
+      <!-- Attention: no role="runtime" here because jhalfs don't assume
+           runtime dependencies are needed to run commands.  -->
+      <xref linkend="p11-kit"/> (runtime, built after
+      <xref role="nodep" linkend="libtasn1"/>, required in the following
+      instructions to generate certificate stores from trust anchors, and
+      each time <command>make-ca</command> is run)
     </para>
 @z
 
@@ -136,15 +140,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <title>Installation of make-ca and Generation of the CA-certificates stores</title>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
-    <title>Installation of make-ca</title>
-@y
-    <title>Installation of make-ca</title>
+    <title>Installation of make-ca and Generation of the CA-certificates stores</title>
 @z
 
 @x
@@ -188,27 +186,53 @@
 @z
 
 @x
-     As the <systemitem class="username">root</systemitem> user, after
-     installing <xref linkend="p11-kit"/>, download the certificate source and
+       Technically, this package is already installed at this point.
+       But most packages listing <application>make-ca</application> as
+       a dependency actually requires the system certificate store set up
+       by this package, instead of requiring the <command>make-ca</command>
+       program itself.  So the instructions for using
+       <command>make-ca</command> for setting up the system certificate
+       store is included in this section.  You should make sure the required
+       runtime dependency for <application>make-ca</application> is
+       satisfied now, and continue to follow the instructions.
+@y
+       Technically, this package is already installed at this point.
+       But most packages listing <application>make-ca</application> as
+       a dependency actually requires the system certificate store set up
+       by this package, instead of requiring the <command>make-ca</command>
+       program itself.  So the instructions for using
+       <command>make-ca</command> for setting up the system certificate
+       store is included in this section.  You should make sure the required
+       runtime dependency for <application>make-ca</application> is
+       satisfied now, and continue to follow the instructions.
+@z
+
+@x
+     As the <systemitem class="username">root</systemitem> user,
+     download the certificate source and
      prepare for system use with the following command:
 @y
-     As the <systemitem class="username">root</systemitem> user, after
-     installing <xref linkend="p11-kit"/>, download the certificate source and
+     As the <systemitem class="username">root</systemitem> user,
+     download the certificate source and
      prepare for system use with the following command:
 @z
 
 @x
         If running the script a second time with the same version of
-        <filename>certdata.txt</filename>, for instance, to add additional
-        stores as the requisite software is installed, add the
-        <parameter>-r</parameter> switch to the command line. If packaging,
+        <filename>certdata.txt</filename>, for instance, to update the
+        stores when <application>make-ca</application> is upgraded, or to
+        add additional stores as the requisite software is installed,
+        replace the <parameter>-g</parameter> switch with the
+        <parameter>-r</parameter> switch in the command line. If packaging,
         run <command>make-ca --help</command> to see all available command
         line options.
 @y
         If running the script a second time with the same version of
-        <filename>certdata.txt</filename>, for instance, to add additional
-        stores as the requisite software is installed, add the
-        <parameter>-r</parameter> switch to the command line. If packaging,
+        <filename>certdata.txt</filename>, for instance, to update the
+        stores when <application>make-ca</application> is upgraded, or to
+        add additional stores as the requisite software is installed,
+        replace the <parameter>-g</parameter> switch with the
+        <parameter>-r</parameter> switch in the command line. If packaging,
         run <command>make-ca --help</command> to see all available command
         line options.
 @z

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -105,6 +101,9 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="bubblewrap"/> (used by some tests),
+      <xref linkend="curl"/> and <xref linkend="unzip"/>
+      (both used by some tests for downloading and extracting test files),
       <xref linkend="json-c"/>,
       <xref linkend="docbook-utils"/> and
       <xref linkend="libxml2"/>,
@@ -113,6 +112,9 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="bubblewrap"/> (used by some tests),
+      <xref linkend="curl"/> and <xref linkend="unzip"/>
+      (both used by some tests for downloading and extracting test files),
       <xref linkend="json-c"/>,
       <xref linkend="docbook-utils"/>,
       <xref linkend="libxml2"/>,
@@ -133,12 +135,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Fontconfig</title>
 @y
     <title>&InstallationOf1;Fontconfig&InstallationOf2;</title>
@@ -152,9 +148,14 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>make check</command>.  One test
+      is known to fail if the kernel does not support user namespaces.  Some
+      tests will download some font files via Internet.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
+      One test
+      is known to fail if the kernel does not support user namespaces.  Some
+      tests will download some font files via Internet.
 @z
 
 @x

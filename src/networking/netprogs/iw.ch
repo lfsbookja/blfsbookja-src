@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -102,9 +98,17 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Required (Runtime)</bridgehead>
+    <para role="nodump">
+      <!-- nodump because the section is completely for human -->
+      <xref linkend="wireless-kernel"/>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
+    <para role="nodump">
+      <!-- nodump because the section is completely for human -->
+      <xref linkend="wireless-kernel"/>
+    </para>
 @z
 
 @x
@@ -114,53 +118,13 @@
 @z
 
 @x
-      <primary sortas="d-iw-devices">Wireless devices</primary>
-@y
-      <primary sortas="d-iw-devices">Wireless devices</primary>
-@z
-
-@x
       To use <application>iw</application>, the kernel must have the
-      appropriate drivers and other support available.  The appropriate bus
-      must also be available.  For older laptops, the PCMCIA bus
-      (CONFIG_PCCARD) needs to be built.  In some cases, this bus support will
-      also need to be built for embedded iw cards. The appropriate bridge
-      support also needs to be built. For many modern laptops, the CardBus host
-      bridge (CONFIG_YENTA) will be needed.
+      appropriate drivers and other support available.  Read
+      <xref linkend='wireless-kernel'/> for details.
 @y
       To use <application>iw</application>, the kernel must have the
-      appropriate drivers and other support available.  The appropriate bus
-      must also be available.  For older laptops, the PCMCIA bus
-      (CONFIG_PCCARD) needs to be built.  In some cases, this bus support will
-      also need to be built for embedded iw cards. The appropriate bridge
-      support also needs to be built. For many modern laptops, the CardBus host
-      bridge (CONFIG_YENTA) will be needed.
-@z
-
-@x
-      In addition to the bus, the actual driver for the specific wireless
-      card must also be available.  There are many wireless cards and they
-      don't all work with Linux.  The first place to look for card support is
-      the kernel.  The drivers are located in Device Drivers &rarr; Network
-      Device Support &rarr; Wireless LAN (non-hamradio).  There are also
-      external drivers available for some very common cards.  For more
-      information, look at the user notes.
-@y
-      In addition to the bus, the actual driver for the specific wireless
-      card must also be available.  There are many wireless cards and they
-      don't all work with Linux.  The first place to look for card support is
-      the kernel.  The drivers are located in Device Drivers &rarr; Network
-      Device Support &rarr; Wireless LAN (non-hamradio).  There are also
-      external drivers available for some very common cards.  For more
-      information, look at the user notes.
-@z
-
-@x
-      After the correct drivers are loaded, the interface will
-      appear in <filename>/proc/net/wireless</filename>.
-@y
-      After the correct drivers are loaded, the interface will
-      appear in <filename>/proc/net/wireless</filename>.
+      appropriate drivers and other support available.  Read
+      <xref linkend='wireless-kernel'/> for details.
 @z
 
 @x

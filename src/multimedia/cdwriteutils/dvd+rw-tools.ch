@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -101,12 +97,6 @@
     <para>
       <xref role="runtime" linkend="cdrtools"/>（実行時）
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/dvd+rw-tools"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/dvd+rw-tools"/>
 @z
 
 @x

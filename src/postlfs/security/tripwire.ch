@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -99,12 +95,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Tripwire</title>
 @y
     <title>&InstallationOf1;Tripwire&InstallationOf2;</title>
@@ -154,7 +144,7 @@
 
 @x
         Of course, you should do this with dummy passwords and change them
-	later.
+        later.
 @y
         Of course, you should do this with dummy passwords and change them
 	later.
@@ -441,13 +431,13 @@
 @x
         <seg>siggen, tripwire, twadmin, and twprint</seg>
         <seg>None</seg>
-	<seg>/etc/tripwire, /var/lib/tripwire,
+        <seg>/etc/tripwire, /var/lib/tripwire,
         and /usr/share/doc/tripwire-&tripwire-version;</seg>
 @y
-        <seg>siggen, tripwire, twadmin, and twprint</seg>
+        <seg>siggen, tripwire, twadmin, twprint</seg>
         <seg>&None;</seg>
-	<seg>/etc/tripwire, /var/lib/tripwire,
-        and /usr/share/doc/tripwire-&tripwire-version;</seg>
+        <seg>/etc/tripwire, /var/lib/tripwire,
+        /usr/share/doc/tripwire-&tripwire-version;</seg>
 @z
 
 @x

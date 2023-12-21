@@ -10,17 +10,17 @@
 @z
 
 @x
-  <!ENTITY libdrm-buildsize     "8.1 MB (with tests)">
+  <!ENTITY libdrm-buildsize     "8.5 MB (with tests)">
   <!ENTITY libdrm-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libdrm-buildsize     "8.1 MB (テスト込み)">
+  <!ENTITY libdrm-buildsize     "8.5 MB (テスト込み)">
   <!ENTITY libdrm-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x
-    <title>Introduction to libdrm</title>
+    <title>Introduction to Libdrm</title>
 @y
-    <title>&IntroductionTo1;libdrm&IntroductionTo2;</title>
+    <title>&IntroductionTo1;Libdrm&IntroductionTo2;</title>
 @z
 
 % @x
@@ -33,15 +33,15 @@
 % @z
 
 @x
-      <application>libdrm</application> provides a user space library for
-      accessing the DRM, direct rendering manager, on operating systems that
-      support the ioctl interface. libdrm is a low-level library, typically used
+      <application>Libdrm</application> provides a userspace library for
+      accessing the direct rendering manager (DRM) on operating systems that
+      support the ioctl interface. Libdrm is a low-level library, typically used
       by graphics drivers such as the Mesa DRI drivers, the X drivers, libva and
       similar projects.
 @y
-      <application>libdrm</application> provides a user space library for
-      accessing the DRM, direct rendering manager, on operating systems that
-      support the ioctl interface. libdrm is a low-level library, typically used
+      <application>Libdrm</application> provides a userspace library for
+      accessing the direct rendering manager (DRM) on operating systems that
+      support the ioctl interface. Libdrm is a low-level library, typically used
       by graphics drivers such as the Mesa DRI drivers, the X drivers, libva and
       similar projects.
 @z
@@ -117,33 +117,27 @@
       <xref linkend="libxslt"/> (to build manual pages),
       <xref linkend="libatomic_ops"/> (required by architectures without native atomic operations),
       <xref linkend="valgrind"/>, and
-      <ulink url="http://cunit.sourceforge.net/">CUNIT</ulink> (for AMDGPU tests)
+      <ulink url="https://cunit.sourceforge.net/">CUnit</ulink> (for AMDGPU tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="cairo"/> （テストのため）,
+      <xref linkend="cairo"/> (テストのため),
       <xref linkend="cmake"/> (could be used to find dependencies without pkgconfig files),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
       <xref linkend="docutils"/>, and
-      <xref linkend="libxslt"/> （man ページ生成のため）,
+      <xref linkend="libxslt"/> (man ページ生成のため),
       <xref linkend="libatomic_ops"/> (required by architectures without native atomic operations),
-      <xref linkend="valgrind"/>,
-      <ulink url="http://cunit.sourceforge.net/">CUNIT</ulink> (for AMDGPU tests)
+      <xref linkend="valgrind"/>, and
+      <ulink url="https://cunit.sourceforge.net/">CUnit</ulink> (for AMDGPU tests)
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <title>Installation of Libdrm</title>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
-    <title>Installation of libdrm</title>
-@y
-    <title>&InstallationOf1;libdrm&InstallationOf2;</title>
+    <title>&InstallationOf1;Libdrm&InstallationOf2;</title>
 @z
 
 @x
@@ -203,10 +197,11 @@
         </seg>
         <seg>
           libdrm_amdgpu.so, libdrm_intel.so, libdrm_nouveau.so,
-          libdrm_radeon.so, libdrm.so, and libkms.so
+          libdrm_radeon.so, and libdrm.so<!--, and libkms.so-->
         </seg>
         <seg>
-          /usr/include/libdrm, /usr/include/libkms, and /usr/share/libdrm
+           /usr/include/libdrm <!--,/usr/include/libkms,-->
+           and /usr/share/libdrm
         </seg>
 @y
         <seg>
@@ -214,10 +209,11 @@
         </seg>
         <seg>
           libdrm_amdgpu.so, libdrm_intel.so, libdrm_nouveau.so,
-          libdrm_radeon.so, libdrm.so, libkms.so
+          libdrm_radeon.so, libdrm.so<!--, and libkms.so-->
         </seg>
         <seg>
-          /usr/include/libdrm, /usr/include/libkms, /usr/share/libdrm
+           /usr/include/libdrm <!--,/usr/include/libkms,-->
+           and /usr/share/libdrm
         </seg>
 @z
 

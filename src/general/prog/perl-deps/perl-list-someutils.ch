@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -20,9 +16,9 @@
 @z
 
 @x
-        List::SomeUtils provides the stuff misisng in List::Util.
+        List::SomeUtils provides the stuff missing in List::Util.
 @y
-        List::SomeUtils provides the stuff misisng in List::Util.
+        List::SomeUtils provides the stuff missing in List::Util.
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -79,15 +75,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="geocode-glib"/>,
-      <xref linkend="gtk3"/>, and
-      <xref linkend="libsoup"/>
+      <xref linkend="gtk3"/>,
+      <xref linkend="libsoup3"/>, and
+      <xref linkend="pygobject3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="geocode-glib"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libsoup"/>
+      <xref linkend="libsoup3"/>,
+      <xref linkend="pygobject3"/>
     </para>
 @z
 
@@ -110,23 +108,21 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <ulink url="http://glade.gnome.org/">Glade</ulink>, and
+      <xref linkend="gi-docgen"/> (gi-docgen is also provided as a meson
+      subproject, which will be used if <option>-Dgtk_doc=false</option>
+      is not passed to <command>meson</command>),
+      <xref linkend="llvm"/> (for clang-format), and
       <ulink url="https://pypi.org/project/pylint/">pylint</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <ulink url="http://glade.gnome.org/">Glade</ulink>,
+      <xref linkend="gi-docgen"/> (gi-docgen is also provided as a meson
+      subproject, which will be used if <option>-Dgtk_doc=false</option>
+      is not passed to <command>meson</command>),
+      <xref linkend="llvm"/> (for clang-format),
       <ulink url="https://pypi.org/project/pylint/">pylint</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -143,9 +139,19 @@
 @z
 
 @x
-      To test the results, issue: <command>LANG=C ninja test</command>.
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
 @y
-      ビルド結果をテストする場合は <command>LANG=C ninja test</command> を実行します。
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
+@z
+
+@x
+      One test needs that the locale files be installed on the system, so
+      it is better to run the tests after installing the package.
+@y
+      One test needs that the locale files be installed on the system, so
+      it is better to run the tests after installing the package.
 @z
 
 @x
@@ -181,26 +187,26 @@
           None
         </seg>
         <seg>
-          libgweather-3.so
+          libgweather-4.so
         </seg>
         <seg>
-          /usr/lib/libgweather,
-          /usr/include/libgweather-3.0,
-          /usr/share/gtk-doc/html/libgweather-3.0 and
-          /usr/share/libgweather
+          /usr/lib/libgweather-4,
+          /usr/include/libgweather-4.0,
+          /usr/share/gtk-doc/html/libgweather-4.0 (optional), and
+          /usr/share/libgweather-4
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libgweather-3.so
+          libgweather-4.so
         </seg>
         <seg>
-          /usr/lib/libgweather,
-          /usr/include/libgweather-3.0,
-          /usr/share/gtk-doc/html/libgweather-3.0 and
-          /usr/share/libgweather
+          /usr/lib/libgweather-4,
+          /usr/include/libgweather-4.0,
+          /usr/share/gtk-doc/html/libgweather-4.0 (任意インストール),
+          /usr/share/libgweather-4
         </seg>
 @z
 
@@ -210,8 +216,8 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libgweather.{so,a}
-            contains functions that allow the retrieval of weather
+@x libgweather-4.so
+            contains functions that allow for the retrieval of weather
             information
 @y
             気象情報を抽出するための関数を提供します。

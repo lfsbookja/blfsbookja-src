@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY libXau-time          "less than 0.1 SBU">
+  <!ENTITY libXau-time          "less than 0.1 SBU (with test)">
 @y
-  <!ENTITY libXau-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY libXau-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x
@@ -92,12 +88,6 @@
     <para role="required">
       <xref linkend="xorgproto"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

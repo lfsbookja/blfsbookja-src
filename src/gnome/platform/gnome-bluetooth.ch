@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY gnome-bluetooth-time          "0.2 SBU (Using parallelism=4)">
+  <!ENTITY gnome-bluetooth-buildsize     "12 MB (with tests)">
+  <!ENTITY gnome-bluetooth-time          "0.2 SBU (Using parallelism=4, with tests)">
 @y
-  <!ENTITY gnome-bluetooth-time          "0.2 SBU（parallelism=4 利用時）">
+  <!ENTITY gnome-bluetooth-buildsize     "12 MB (with tests)">
+  <!ENTITY gnome-bluetooth-time          "0.2 SBU (Using parallelism=4, with tests)">
 @z
 
 @x
@@ -84,30 +82,32 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="itstool"/>,
-      <xref linkend="libcanberra"/>, and
-      <xref linkend="libnotify"/>
+      <xref linkend="gtk4"/>,
+      <xref linkend="gsound"/>,
+      <xref linkend="libnotify"/>, and
+      <xref linkend="upower"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
-      <xref linkend="itstool"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libnotify"/>
+      <xref linkend="gtk4"/>,
+      <xref linkend="gsound"/>,
+      <xref linkend="libnotify"/>, and
+      <xref linkend="upower"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/> and
+      <xref linkend="libadwaita1"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="libadwaita1"/>
     </para>
 @z
 
@@ -128,23 +128,13 @@
 @x
     <bridgehead renderas="sect4">Runtime Dependencies</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="bluez"/> and
-      <phrase revision="sysv"><xref role="runtime" linkend="elogind"/></phrase>
-      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/></phrase>
+      <xref role="runtime" linkend="bluez"/>
     </para>
 @y
     <bridgehead renderas="sect4">実行時依存パッケージ</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="bluez"/>,
-      <phrase revision="sysv"><xref role="runtime" linkend="elogind"/></phrase>
-      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/></phrase>
+      <xref role="runtime" linkend="bluez"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -193,11 +183,12 @@
           bluetooth-sendto
         </seg>
         <seg>
-          libgnome-bluetooth.so
+          libgnome-bluetooth-3.0.so and
+          libgnome-bluetooth-ui-3.0.so
         </seg>
         <seg>
-          /usr/include/gnome-bluetooth and
-          /usr/share/gnome-bluetooth
+          /usr/include/gnome-bluetooth-3.0 and
+          /usr/share/gnome-bluetooth-3.0
           <!--/usr/share/gtk-doc/html/gnome-bluetooth and
           /usr/share/help/*/gnome-bluetooth -->
         </seg>
@@ -206,11 +197,12 @@
           bluetooth-sendto
         </seg>
         <seg>
-          libgnome-bluetooth.so
+          libgnome-bluetooth-3.0.so,
+          libgnome-bluetooth-ui-3.0.so
         </seg>
         <seg>
-          /usr/include/gnome-bluetooth,
-          /usr/share/gnome-bluetooth
+          /usr/include/gnome-bluetooth-3.0,
+          /usr/share/gnome-bluetooth-3.0
           <!--/usr/share/gtk-doc/html/gnome-bluetooth and
           /usr/share/help/*/gnome-bluetooth -->
         </seg>

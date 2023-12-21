@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY pipewire-buildsize     "59 MB (with tests)">
-  <!ENTITY pipewire-time          "0.5 SBU (with tests, both using parallelism=4)">
+  <!ENTITY pipewire-buildsize     "67 MB (with tests)">
+  <!ENTITY pipewire-time          "0.6 SBU (with tests, both using parallelism=4)">
 @y
-  <!ENTITY pipewire-buildsize     "59 MB（テスト込み）">
-  <!ENTITY pipewire-time          "0.5 SBU（テスト込み、いずれも parallelism=4 利用）">
+  <!ENTITY pipewire-buildsize     "67 MB（テスト込み）">
+  <!ENTITY pipewire-time          "0.6 SBU（テスト込み、いずれも parallelism=4 利用）">
 @z
 
 @x
@@ -25,12 +25,12 @@
 
 @x
       The <application>pipewire</application> package contains a server and
-      user-space API to handle multimedia pipelines. This includes a universal
+      userspace API to handle multimedia pipelines. This includes a universal
       API to connect to multimedia devices, as well as sharing multimedia
       files between applications.
 @y
       The <application>pipewire</application> package contains a server and
-      user-space API to handle multimedia pipelines. This includes a universal
+      userspace API to handle multimedia pipelines. This includes a universal
       API to connect to multimedia devices, as well as sharing multimedia
       files between applications.
 @z
@@ -84,63 +84,89 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
       <xref linkend="bluez"/>,
-      <xref linkend="ffmpeg"/>,
+      <phrase revision="sysv"><xref linkend="dbus"/>,</phrase>
       <xref linkend="gstreamer10"/>,
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="libva"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="sbc"/>,
-      <xref linkend="sdl2"/>, and
-      <xref linkend="v4l-utils"/>
+      <xref linkend="v4l-utils"/>, and
+      <xref role="runtime" linkend="wireplumber"/> (runtime)
     </para>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
       <xref linkend="bluez"/>,
-      <xref linkend="ffmpeg"/>,
+      <phrase revision="sysv"><xref linkend="dbus"/>,</phrase>
       <xref linkend="gstreamer10"/>,
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="libva"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="sbc"/>,
-      <xref linkend="sdl2"/>,
-      <xref linkend="v4l-utils"/>
+      <xref linkend="v4l-utils"/>, and
+      <xref role="runtime" linkend="wireplumber"/> (runtime)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="avahi"/>,
+      <xref linkend="fdk-aac"/>,
+      <xref linkend="ffmpeg"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="libdrm"/> (for one example and libcamera support),
+      <xref linkend="libxcb"/>,
+      <xref linkend="libsndfile"/>,
+      <xref linkend="libusb"/>,
+      <xref linkend="opus"/>,
+      <xref linkend="sdl2"/> (for some examples),
       <xref linkend="valgrind"/>,
+      <xref linkend="vulkan-loader"/>,
+      <xref linkend="xorg7-lib"/>,
       <xref linkend="doxygen"/> and
       <xref linkend="graphviz"/> (for documentation),
       <ulink url="https://jackaudio.org/">JACK</ulink>,
       <ulink url="https://github.com/EHfive/ldacBT">ldacBT</ulink>,
       <ulink url="https://libcamera.org/">libcamera</ulink>,
-      <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>, and
+      <ulink url="https://github.com/hoene/libmysofa">libmysofa</ulink>, and
+      <!--<ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>, and-->
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="avahi"/>,
+      <xref linkend="fdk-aac"/>,
+      <xref linkend="ffmpeg"/>,
+      <xref linkend="libcanberra"/>,
+      <xref linkend="libdrm"/> (for one example and libcamera support),
+      <xref linkend="libxcb"/>,
+      <xref linkend="libsndfile"/>,
+      <xref linkend="libusb"/>,
+      <xref linkend="opus"/>,
+      <xref linkend="sdl2"/> (for some examples),
       <xref linkend="valgrind"/>,
-      <xref linkend="doxygen"/> と
-      <xref linkend="graphviz"/> (ドキュメントのため),
+      <xref linkend="vulkan-loader"/>,
+      <xref linkend="xorg7-lib"/>,
+      <xref linkend="doxygen"/> and
+      <xref linkend="graphviz"/> (for documentation),
       <ulink url="https://jackaudio.org/">JACK</ulink>,
       <ulink url="https://github.com/EHfive/ldacBT">ldacBT</ulink>,
       <ulink url="https://libcamera.org/">libcamera</ulink>,
-      <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,
+      <ulink url="https://github.com/hoene/libmysofa">libmysofa</ulink>, and
+      <!--<ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>, and-->
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
     </para>
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/pipewire"/>
+      Editor Notes: <ulink url="&blfs-wiki;/pipewire"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/pipewire"/>
+      &EditorNotes;: <ulink url="&blfs-wiki;/pipewire"/>
 @z
 
 @x
@@ -213,10 +239,9 @@
 @x
         <seg>
           pipewire,
-          pipewire-media-session,
-          pipewire-pulse,
           pw-cat,
           pw-cli,
+          pw-config,
           pw-dot,
           pw-dump,
           pw-jack,
@@ -226,56 +251,39 @@
           pw-mididump,
           pw-mon,
           pw-profiler,
-          <!--pw-pulse,-->
           pw-reserve,
           pw-top,
           pw-v4l2,
           spa-acp-tool,
           spa-inspect,
           spa-json-dump,
-          spa-monitor, 
+          spa-monitor,
           spa-resample, and
-          pw-dsdplay, pw-midiplay, pw-midirecord, pw-play, and pw-record
-          (symlinks to pw-cat)
+          pipewire-aes67, pipewire-avb, pipewire-pulse (symlinks to pipewire),
+          pw-dsdplay, pw-encplay, pw-midiplay, pw-midirecord, pw-play,
+          pw-record (symlinks to pw-cat)
         </seg>
         <seg>
           libpipewire-0.3.so and
-          30 modules below /usr/lib/pipewire-0.3<!--,
-     [pierre July 29th, 2020]: all the following libs are in subdirectories
-     of /usr/lib. I'm not sure they should appear. But if they should, there
-     are many more libs to list... 
-          libpulse-mainloop-glib-pw.so,
-          libpulse.so,
-          libpulse-simple.so,
-          libasound_module_pcm_pipewire.so, and
-          libgstpipewire.so 
-      [bdubbs Sep 29th, 2020]: add
-          libpipewire-module-{access,adapter,client-device,client-node,
-            link-factory,metadata,portal,profiler,protocol-native,
-            rtkit,session-manager,spa-device,spa-device-factory,spa-node,
-            spa-node-factory}.so
-          libasound_module_ctl_pipewire.so
-          libasound_module_pcm_pipewire.so
-          libspa-{alsa,audioconvert,audiomixer,bluez5,control,dbus,support
-            v4l2,videoconvert}.so
-          -->
+          60 modules below /usr/lib/pipewire-0.3 and /usr/lib/spa-0.2
         </seg>
         <seg>
-          /etc/pipewire,
-          /usr/include/pipewire-0.3, 
+          /usr/include/pipewire-0.3,
           /usr/include/spa-0.2,
           /usr/lib/alsa-lib,
-          /usr/lib/gstreamer-1.0,
-          /usr/lib/pipewire-0.3, and
-          /usr/lib/spa-0.2
+          <!--/usr/lib/gstreamer-1.0, already installed by gstreamer-->
+          /usr/lib/pipewire-0.3,
+          /usr/lib/spa-0.2,
+          /usr/share/alsa-card-profile,
+          /usr/share/pipewire, and
+          /usr/share/spa-0.2
         </seg>
 @y
         <seg>
           pipewire,
-          pipewire-media-session,
-          pipewire-pulse,
           pw-cat,
           pw-cli,
+          pw-config,
           pw-dot,
           pw-dump,
           pw-jack,
@@ -285,48 +293,32 @@
           pw-mididump,
           pw-mon,
           pw-profiler,
-          <!--pw-pulse,-->
           pw-reserve,
           pw-top,
           pw-v4l2,
           spa-acp-tool,
           spa-inspect,
           spa-json-dump,
-          spa-monitor, 
+          spa-monitor,
           spa-resample, and
-          pw-dsdplay, pw-midiplay, pw-midirecord, pw-play, and pw-record
-          (symlinks to pw-cat)
+          pipewire-aes67, pipewire-avb, pipewire-pulse (symlinks to pipewire),
+          pw-dsdplay, pw-encplay, pw-midiplay, pw-midirecord, pw-play,
+          pw-record (symlinks to pw-cat)
         </seg>
         <seg>
           libpipewire-0.3.so and
-          30 modules below /usr/lib/pipewire-0.3<!--,
-     [pierre July 29th, 2020]: all the following libs are in subdirectories
-     of /usr/lib. I'm not sure they should appear. But if they should, there
-     are many more libs to list... 
-          libpulse-mainloop-glib-pw.so,
-          libpulse.so,
-          libpulse-simple.so,
-          libasound_module_pcm_pipewire.so, and
-          libgstpipewire.so 
-      [bdubbs Sep 29th, 2020]: add
-          libpipewire-module-{access,adapter,client-device,client-node,
-            link-factory,metadata,portal,profiler,protocol-native,
-            rtkit,session-manager,spa-device,spa-device-factory,spa-node,
-            spa-node-factory}.so
-          libasound_module_ctl_pipewire.so
-          libasound_module_pcm_pipewire.so
-          libspa-{alsa,audioconvert,audiomixer,bluez5,control,dbus,support
-            v4l2,videoconvert}.so
-          -->
+          60 modules below /usr/lib/pipewire-0.3 and /usr/lib/spa-0.2
         </seg>
         <seg>
-          /etc/pipewire,
-          /usr/include/pipewire-0.3, 
+          /usr/include/pipewire-0.3,
           /usr/include/spa-0.2,
           /usr/lib/alsa-lib,
-          /usr/lib/gstreamer-1.0,
-          /usr/lib/pipewire-0.3, and
-          /usr/lib/spa-0.2
+          <!--/usr/lib/gstreamer-1.0, already installed by gstreamer-->
+          /usr/lib/pipewire-0.3,
+          /usr/lib/spa-0.2,
+          /usr/share/alsa-card-profile,
+          /usr/share/pipewire,
+          /usr/share/spa-0.2
         </seg>
 @z
 

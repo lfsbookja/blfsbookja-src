@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -33,18 +29,18 @@
 
 @x
         <ulink
-        url="http://www.tldp.org/HOWTO/CD-Writing-HOWTO.html">CD-Writing
+        url="https://www.tldp.org/HOWTO/CD-Writing-HOWTO.html">CD-Writing
         HOWTO</ulink>
 @y
         <ulink
-        url="http://www.tldp.org/HOWTO/CD-Writing-HOWTO.html">CD ライティング ハウツー（CD-Writing
+        url="https://www.tldp.org/HOWTO/CD-Writing-HOWTO.html">CD ライティング ハウツー（CD-Writing
         HOWTO）</ulink>
 @z
 
 @x
-        <ulink url="http://www.cdrfaq.org">CD-Recordable FAQ</ulink>
+        <ulink url="https://www.cdrfaq.org">CD-Recordable FAQ</ulink>
 @y
-        <ulink url="http://www.cdrfaq.org">CD 録音 FAQ （CD-Recordable FAQ）</ulink>
+        <ulink url="https://www.cdrfaq.org">CD 録音 FAQ （CD-Recordable FAQ）</ulink>
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -33,12 +29,12 @@
 
 @x
       <application>Speex</application> is an audio compression format
-      designed especially for speech. It is well-adapted to internet
+      designed specifically for speech. It is well-adapted to internet
       applications and provides useful features that are not present in most
       other CODECs.
 @y
       <application>Speex</application> is an audio compression format
-      designed especially for speech. It is well-adapted to internet
+      designed specifically for speech. It is well-adapted to internet
       applications and provides useful features that are not present in most
       other CODECs.
 @z
@@ -158,12 +154,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Speex</title>
 @y
     <title>&InstallationOf1;Speex&InstallationOf2;</title>
@@ -225,18 +215,18 @@
 @z
 
 @x
-        <seg>(optional) speexenc and speexdec</seg>
+        <seg>speexenc and speexdec</seg>
         <seg>libspeex.so and libspeexdsp.so</seg>
         <seg>
           /usr/include/speex and
-          /usr/share/doc/speex-&speex-version; 
+          /usr/share/doc/speex-&speex-version;
         </seg>
 @y
-        <seg>（任意ビルド）speexenc, speexdec</seg>
+        <seg>speexenc, speexdec</seg>
         <seg>libspeex.so, libspeexdsp.so</seg>
         <seg>
           /usr/include/speex,
-          /usr/share/doc/speex-&speex-version; 
+          /usr/share/doc/speex-&speex-version;
         </seg>
 @z
 
@@ -255,9 +245,9 @@
 @z
 
 @x speexenc
-            encodes a WAV or raw files using <application>Speex</application>
+            encodes a WAV or raw file using <application>Speex</application>
 @y
-            encodes a WAV or raw files using <application>Speex</application>
+            encodes a WAV or raw file using <application>Speex</application>
 @z
 
 @x libspeex.so

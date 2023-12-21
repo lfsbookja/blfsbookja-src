@@ -12,7 +12,7 @@
 @x
     <title>Introduction to liburcu</title>
 @y
-    <title>Introduction to liburcu</title>
+    <title>&IntroductionTo1;liburcu&IntroductionTo2;</title>
 @z
 
 @x
@@ -34,81 +34,74 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&liburcu-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&liburcu-download-http;"/>
+          &Download; (HTTP): <ulink url="&liburcu-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&liburcu-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&liburcu-download-ftp;"/>
+          &Download; (FTP): <ulink url="&liburcu-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &liburcu-md5sum;
 @y
-          Download MD5 sum: &liburcu-md5sum;
+          &Download; MD5 sum: &liburcu-md5sum;
 @z
 
 @x
           Download size: &liburcu-size;
 @y
-          Download size: &liburcu-size;
+          &DownloadSize;: &liburcu-size;
 @z
 
 @x
           Estimated disk space required: &liburcu-buildsize;
 @y
-          Estimated disk space required: &liburcu-buildsize;
+          &Estimateddiskspacerequired;: &liburcu-buildsize;
 @z
 
 @x
           Estimated build time: &liburcu-time;
 @y
-          Estimated build time: &liburcu-time;
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/liburcu"/>
-@y
-      User Notes: <ulink url="&blfs-wiki;/liburcu"/>
+          &Estimatedbuildtime;: &liburcu-time;
 @z
 
 @x
     <title>Installation of liburcu</title>
 @y
-    <title>Installation of liburcu</title>
+    <title>&InstallationOf1;liburcu&InstallationOf2;</title>
 @z
 
 @x
       Install <application>liburcu</application> by running the following
       commands:
 @y
-      Install <application>liburcu</application> by running the following
-      commands:
+      以下のコマンドをビルドして <application>liburcu</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>make check</command>. 
 @y
-      To test the results, issue: <command>make check</command>. 
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -116,9 +109,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -136,6 +129,7 @@
           liburcu-signal.so
         </seg>
         <seg>
+          /usr/include/urcu and
           /usr/share/doc/liburcu-&liburcu-version;
         </seg>
 @y
@@ -153,6 +147,7 @@
           liburcu-signal.so
         </seg>
         <seg>
+          /usr/include/urcu,
           /usr/share/doc/liburcu-&liburcu-version;
         </seg>
 @z

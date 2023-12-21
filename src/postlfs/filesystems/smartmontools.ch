@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -104,12 +100,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/smartmontools"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/smartmontools"/>
-@z
-
-@x
     <title>Installation of smartmontools</title>
 @y
     <title>&InstallationOf1;smartmontools&InstallationOf2;</title>
@@ -156,11 +146,11 @@
 @x
         See the embedded comments in <filename>/etc/smartd.conf</filename>
         for detailed instructions on customizing the
-        <application>smartd</application> darmon.
+        <application>smartd</application> daemon.
 @y
         See the embedded comments in <filename>/etc/smartd.conf</filename>
         for detailed instructions on customizing the
-        <application>smartd</application> darmon.
+        <application>smartd</application> daemon.
 @z
 
 @x
@@ -223,7 +213,8 @@
         </seg>
 
         <seg>
-          /usr/share/smartmontools, /usr/share/doc/smartmontools-6.4, and
+          /usr/share/smartmontools,
+          /usr/share/doc/smartmontools-&smartmontools-version;, and
           /etc/smartd_warning.d
         </seg>
 @y
@@ -236,7 +227,8 @@
         </seg>
 
         <seg>
-          /usr/share/smartmontools, /usr/share/doc/smartmontools-6.4,
+          /usr/share/smartmontools,
+          /usr/share/doc/smartmontools-&smartmontools-version;,
           /etc/smartd_warning.d
         </seg>
 @z

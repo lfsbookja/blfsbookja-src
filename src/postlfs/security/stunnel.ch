@@ -89,9 +89,9 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libnsl"/>,
-      <ulink url="http://netcat.sourceforge.net/">netcat</ulink>
+      <ulink url="https://netcat.sourceforge.net/">netcat</ulink>
       (required for tests),
-      <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink>,
+      <ulink url="http://ftp.porcupine.org/pub/security/index.html">tcpwrappers</ulink>,
       and
       <ulink url="https://dist.torproject.org/">TOR</ulink>
     </para>
@@ -99,17 +99,12 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libnsl"/>,
-      <ulink url="http://netcat.sourceforge.net/">netcat</ulink>
+      <ulink url="https://netcat.sourceforge.net/">netcat</ulink>
       (required for tests),
-      <ulink url="ftp://ftp.porcupine.org/pub/security/">tcpwrappers</ulink>,
+      <ulink url="http://ftp.porcupine.org/pub/security/index.html">tcpwrappers</ulink>,
+      and
       <ulink url="https://dist.torproject.org/">TOR</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -158,26 +153,6 @@
 @z
 
 @x
-        For some systems with <application>binutils</application>
-        versions prior to 2.25, <command>configure</command> may fail.  If
-        necessary, fix it either with:
-@y
-        For some systems with <application>binutils</application>
-        versions prior to 2.25, <command>configure</command> may fail.  If
-        necessary, fix it either with:
-@z
-
-@x
-        or, if <xref linkend="llvm"/> with Clang is installed, you can
-        replace <command>./configure ...</command> with <command>CC=clang
-        ./configure ...</command> in the first command below.
-@y
-        or, if <xref linkend="llvm"/> with Clang is installed, you can
-        replace <command>./configure ...</command> with <command>CC=clang
-        ./configure ...</command> in the first command below.
-@z
-
-@x
       If you have installed the optional netcat application, the
       regression tests can be run with <command>make check</command>.
 @y
@@ -189,14 +164,6 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x revision="systemd"
-      Install the included systemd unit by running the following command as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      Install the included systemd unit by running the following command as the
-      <systemitem class="username">root</systemitem> user:
 @z
 
 @x

@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY ldns-buildsize     "29 MB (with docs)">
+  <!ENTITY ldns-buildsize     "30 MB (with docs)">
   <!ENTITY ldns-time          "0.2 SBU (with docs)">
 @y
-  <!ENTITY ldns-buildsize     "29 MB (ドキュメント込み)">
+  <!ENTITY ldns-buildsize     "30 MB (ドキュメント込み)">
   <!ENTITY ldns-time          "0.2 SBU (ドキュメント込み)">
 @z
 
@@ -101,12 +101,6 @@
       <xref linkend="swig"/> (Python バインディングのため),
       <xref linkend="doxygen"/> (html ドキュメントのため)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

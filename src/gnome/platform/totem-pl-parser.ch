@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -76,18 +72,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="libsoup"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="libsoup"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
@@ -109,7 +93,7 @@
       <xref linkend="cmake"/>, <!-- uses it to look for packages -->
       <xref linkend="gtk-doc"/>,
       <xref linkend="gvfs"/> (for some tests),
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
+      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
       <ulink url="https://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
       - if they are installed, then
       <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>
@@ -121,18 +105,12 @@
       <xref linkend="cmake"/>, <!-- uses it to look for packages -->
       <xref linkend="gtk-doc"/>,
       <xref linkend="gvfs"/> (for some tests),
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
+      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php"> LCOV</ulink>, and
       <ulink url="https://sourceforge.net/projects/quvi">libquvi &gt;= 0.9.1 and libquvi-scripts</ulink>
       - if they are installed, then
       <ulink url="https://github.com/diegonehab/luasocket">lua-socket (git)</ulink>
       is necessary for the tests
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -149,9 +127,14 @@
 @z
 
 @x
-       To test the results, issue: <command>ninja test</command>.
+      To test the results, issue: <command>ninja test</command>.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+@z
+@x
+      The test named <filename>parser</filename> is known to fail.
+@y
+      <filename>parser</filename> というテストは失敗します。
 @z
 
 @x

@@ -98,12 +98,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libffi"/>
+      <xref linkend="sqlite"/> (For an additional module)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libffi"/>
+      <xref linkend="sqlite"/> (For an additional module)
     </para>
 @z
 
@@ -122,28 +122,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (For Additional Modules)</bridgehead>
-    <para role="optional">
-      <xref linkend="libnsl"/>,
-      <xref linkend="sqlite"/>, and
-      <xref linkend="tk"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional; (For Additional Modules)</bridgehead>
-    <para role="optional">
-      <xref linkend="libnsl"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="tk"/>
-    </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/Python"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/Python"/>
-@z
-
-@x
     <title>Installation of Python 2</title>
 @y
     <title>&InstallationOf1;Python 2&InstallationOf2;</title>
@@ -159,9 +137,27 @@
 @x
       If you invoke the tests, they will run through twice.
       To test the results, issue: <command>make -k test</command>.
+      <!-- https://bugs.python.org/issue46811 -->
+      Several tests are known to fail, including
+      <literal>test_ftplib</literal>,
+      <literal>test_ssl</literal>,
+      <literal>test_urllib2_localnet</literal>,
+      <literal>test_xml_etree</literal>,
+      <literal>test_xml_etree_c</literal>, and
+      <literal>test_minidom</literal>. These failures are due to
+      OpenSSL-3 and Expat-2.4.6.
 @y
       テストを実行するには、二度の実行が必要です。
       ビルド結果をテストする場合は <command>make -k test</command> を実行します。
+      <!-- https://bugs.python.org/issue46811 -->
+      Several tests are known to fail, including
+      <literal>test_ftplib</literal>,
+      <literal>test_ssl</literal>,
+      <literal>test_urllib2_localnet</literal>,
+      <literal>test_xml_etree</literal>,
+      <literal>test_xml_etree_c</literal>, and
+      <literal>test_minidom</literal>. These failures are due to
+      OpenSSL-3 and Expat-2.4.6.
 @z
 
 @x
@@ -179,7 +175,7 @@
       <envar>PYTHONDOCS</envar>
       variable for the version you want to use, each time you need to consult
       the documentation. If you have downloaded the preformatted documentation
-      from <ulink url="http://docs.python.org/download.html"/>, install it
+      from <ulink url="https://docs.python.org/download.html"/>, install it
       as the <systemitem class="username">root</systemitem> user:
 @y
       Since <application>Python 2</application> is in maintenance mode, and
@@ -190,7 +186,7 @@
       <envar>PYTHONDOCS</envar>
       variable for the version you want to use, each time you need to consult
       the documentation. If you have downloaded the preformatted documentation
-      from <ulink url="http://docs.python.org/download.html"/>, install it
+      from <ulink url="https://docs.python.org/download.html"/>, install it
       as the <systemitem class="username">root</systemitem> user:
 @z
 

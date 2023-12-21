@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libxkbcommon-buildsize     "27 MB (with tests)">
-  <!ENTITY libxkbcommon-time          "0.1 SBU (with tests)">
+  <!ENTITY libxkbcommon-buildsize     "23 MB (with tests)">
+  <!ENTITY libxkbcommon-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY libxkbcommon-buildsize     "27 MB（テスト込み）">
-  <!ENTITY libxkbcommon-time          "0.1 SBU（テスト込み）">
+  <!ENTITY libxkbcommon-buildsize     "23 MB（テスト込み）">
+  <!ENTITY libxkbcommon-time          "0.4 SBU（テスト込み）">
 @z
 
 @x
@@ -86,12 +82,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="xkeyboard-config"/>
+      <xref role="runtime" linkend="xkeyboard-config"/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="xkeyboard-config"/>
+      <xref role="runtime" linkend="xkeyboard-config"/> (実行時)
     </para>
 @z
 
@@ -121,12 +117,6 @@
     <para role="optional">
        <xref linkend="doxygen"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

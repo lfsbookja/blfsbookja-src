@@ -112,12 +112,9 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-<!-- Included into ant      <xref linkend="junit"/> (to run tests),-->
       <xref linkend="x-window-system"/> (to run tests),
-<!--      <xref linkend="maven"/> (an alternate build system), not functional
-      with fop-2.3          -->
-      <ulink url="http://jai-tools.blogspot.com/">JAI Image I/O Tools</ulink>, and
-      <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
+      <ulink url="https://jai-tools.blogspot.com/">JAI Image I/O Tools</ulink>, and
+      <ulink url="https://jeuclid.sourceforge.net/">JEuclid</ulink>
 <!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
      Some were listed here, but not all. I am not sure it is possible to
      use system ones. So, I have removed them, and kept only those which
@@ -126,23 +123,14 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-<!-- Included into ant      <xref linkend="junit"/> (to run tests),-->
       <xref linkend="x-window-system"/> (to run tests),
-<!--      <xref linkend="maven"/> (an alternate build system), not functional
-      with fop-2.3          -->
-      <ulink url="http://jai-tools.blogspot.com/">JAI Image I/O Tools</ulink>, and
-      <ulink url="http://jeuclid.sourceforge.net/">JEuclid</ulink>
+      <ulink url="https://jai-tools.blogspot.com/">JAI Image I/O Tools</ulink>, and
+      <ulink url="https://jeuclid.sourceforge.net/">JEuclid</ulink>
 <!-- [pierre 2017-04-29] Note to devs: there are a lot of bundled dependencies.
      Some were listed here, but not all. I am not sure it is possible to
      use system ones. So, I have removed them, and kept only those which
      are not bundled. -->
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -200,24 +188,6 @@
 @z
 
 @x
-        The stack size set in <filename>build.xml</filename> for building the
-        hyphenation patterns is not large enough. Change it by running:
-@y
-        The stack size set in <filename>build.xml</filename> for building the
-        hyphenation patterns is not large enough. Change it by running:
-@z
-
-@x
-        The <filename>build.xml</filename> file calls for an old version of
-        <application>PDFBox</application> components that are no longer
-        available. Copy the updated PDFBox components into the source tree:
-@y
-        The <filename>build.xml</filename> file calls for an old version of
-        <application>PDFBox</application> components that are no longer
-        available. Copy the updated PDFBox components into the source tree:
-@z
-
-@x
         Compile <application>fop</application> by running the following
         commands:
 @y
@@ -225,10 +195,10 @@
 @z
 
 @x
-        This package comes with a testsuite, but the java infrastructure
+        This package comes with a test suite, but the java infrastructure
         installed in this book does not allow running it.
 @y
-        This package comes with a testsuite, but the java infrastructure
+        This package comes with a test suite, but the java infrastructure
         installed in this book does not allow running it.
 @z
 
@@ -246,12 +216,12 @@
 @z
 
 @x
-      <command>sed -i ... build.xml</command>: This adds two switches to the
-      <command>javadoc</command> command, preventing some errors from occuring
+      <command>sed -i ... build.xml</command>: This adds three switches to the
+      <command>javadoc</command> command, preventing some errors from occurring
       when building the documentation.
 @y
-      <command>sed -i ... build.xml</command>: This adds two switches to the
-      <command>javadoc</command> command, preventing some errors from occuring
+      <command>sed -i ... build.xml</command>: This adds three switches to the
+      <command>javadoc</command> command, preventing some errors from occurring
       when building the documentation.
 @z
 

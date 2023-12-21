@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -87,9 +83,35 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Required (at runtime)</bridgehead>
+    <para role="required">
+      A monospace TTF or OTF font such as
+      <xref role="runtime" linkend="dejavu-fonts"/>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Required; (実行時)</bridgehead>
+    <para role="required">
+      A monospace TTF or OTF font such as
+      <xref role="runtime" linkend="dejavu-fonts"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="emacs"/>, <!-- looks for ctags/etags -->
+      <xref linkend="pcre"/> or <xref linkend="pcre2"/>,
+      <xref linkend="valgrind"/> and
+      <ulink url="https://www.nongnu.org/man2html/">man2html</ulink>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="emacs"/>, <!-- looks for ctags/etags -->
+      <xref linkend="pcre"/> or <xref linkend="pcre2"/>,
+      <xref linkend="valgrind"/>,
+      <ulink url="https://www.nongnu.org/man2html/">man2html</ulink>
+    </para>
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -20,9 +16,9 @@
 @z
 
 @x
-        Devel::StackTrace provides an object representing a stacvk trace.
+        Devel::StackTrace provides an object representing a stack trace.
 @y
-        Devel::StackTrace provides an object representing a stacvk trace.
+        Devel::StackTrace provides an object representing a stack trace.
 @z
 
 @x

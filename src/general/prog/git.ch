@@ -10,15 +10,15 @@
 @z
 
 @x
-  <!ENTITY git-buildsize     "219 MB (with downloaded documentation, add 16 MB to build documentation)">
+  <!ENTITY git-buildsize     "255 MB (with downloaded documentation; add 18 MB for building doc)">
 @y
-  <!ENTITY git-buildsize     "219 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 16 MB）">
+  <!ENTITY git-buildsize     "255 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 18 MB）">
 @z
 
 @x
-  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 0.4 SBU for building documentation and 2.1 SBU for tests, both with parallelism=4)">
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 0.4 SBU for building doc, and up to 13 SBU (disk speed dependent) for tests)">
 @y
-  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; ドキュメントビルド時はさらに 0.4 SBU、テスト実施時はさらに 2.1 SBU、いずれも parallelism=4 利用）">
+  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; ドキュメントビルド時はさらに 0.4 SBU、テスト実施時はさらに (ディスク速度により) 最大 13 SBU）">
 @z
 
 @x
@@ -37,7 +37,7 @@
       easy to do. <application>Git</application> is used for version control of
       files, much like tools such as <xref linkend="mercurial"/>,
       <application>Bazaar</application>, <xref linkend="subversion"/>,
-      <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
+      <ulink url="https://www.nongnu.org/cvs/">CVS</ulink>,
       <application>Perforce</application>, and
       <application>Team Foundation Server</application>.
 @y
@@ -50,7 +50,7 @@
       easy to do. <application>Git</application> is used for version control of
       files, much like tools such as <xref linkend="mercurial"/>,
       <application>Bazaar</application>, <xref linkend="subversion"/>,
-      <ulink url="http://www.nongnu.org/cvs/">CVS</ulink>,
+      <ulink url="https://www.nongnu.org/cvs/">CVS</ulink>,
       <application>Perforce</application>, and
       <application>Team Foundation Server</application>.
 @z
@@ -149,6 +149,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="apache"/> (for some tests),
       <xref role="runtime" linkend="gnupg2"/> (runtime, may be used to sign
       <application>Git</application> commits or tags, or verify the signatures
       of them),
@@ -165,11 +166,15 @@
       <xref linkend="valgrind"/>,
       <ulink url="https://metacpan.org/pod/Authen::SASL">Authen::SASL</ulink> and
       <ulink url="https://metacpan.org/pod/MIME::Base64">MIME::Base64</ulink>
-      (both runtime, for <command>git send-email</command>)
+      (both runtime, for <command>git send-email</command>),
+      and <xref linkend='perl-io-socket-ssl'/> (runtime, for
+      <command>git send-email</command> to connect to a SMTP server with
+      SSL encryption)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="apache"/> (for some tests),
       <xref role="runtime" linkend="gnupg2"/> (runtime, may be used to sign
       <application>Git</application> commits or tags, or verify the signatures
       of them),
@@ -186,7 +191,10 @@
       <xref linkend="valgrind"/>,
       <ulink url="https://metacpan.org/pod/Authen::SASL">Authen::SASL</ulink> and
       <ulink url="https://metacpan.org/pod/MIME::Base64">MIME::Base64</ulink>
-      (both runtime, for <command>git send-email</command>)
+      (both runtime, for <command>git send-email</command>),
+      and <xref linkend='perl-io-socket-ssl'/> (runtime, for
+      <command>git send-email</command> to connect to a SMTP server with
+      SSL encryption)
     </para>
 @z
 
@@ -198,9 +206,9 @@
       <xref linkend="asciidoc"/>
       <!-- or xref linkend="asciidoctor", doesn't work now because it needs docbook-xsl-ns -->,
       and also
-      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>
+      <ulink url="https://dblatex.sourceforge.net/">dblatex</ulink>
       (for the PDF version of the user manual), and
-      <ulink url="http://docbook2x.sourceforge.net/">docbook2x</ulink> to
+      <ulink url="https://docbook2x.sourceforge.net/">docbook2x</ulink> to
       create info pages
     </para>
 @y
@@ -210,17 +218,11 @@
       <xref linkend="asciidoc"/>
       <!-- or xref linkend="asciidoctor", doesn't work now because it needs docbook-xsl-ns -->,
       and also
-      <ulink url="http://dblatex.sourceforge.net/">dblatex</ulink>
+      <ulink url="https://dblatex.sourceforge.net/">dblatex</ulink>
       (for the PDF version of the user manual), and
-      <ulink url="http://docbook2x.sourceforge.net/">docbook2x</ulink> to
+      <ulink url="https://docbook2x.sourceforge.net/">docbook2x</ulink> to
       create info pages
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -263,13 +265,11 @@
 
 @x
       The test suite can be run in parallel mode. To run the test suite, issue:
-      <command>make test</command>. If run as a normal user, 0 tests should be
-      reported as failed in the final summary.
+      <command>make -k test</command>. <!--If run as a normal user, 0 tests
+      should be reported as failed in the final summary.-->
 @y
       テストスイートは並行モードでの実行も可能です。
       ビルド結果をテストする場合は <command>make test</command> を実行します。
-      If run as a normal user, 0 tests should be
-      reported as failed in the final summary.
 @z
 
 @x
@@ -352,11 +352,11 @@
 @z
 
 @x
-      <option>--with-libpcre</option>: As an alternative to PCRE2, use this
+      <option>--with-libpcre1</option>: As an alternative to PCRE2, use this
       switch if the deprecated <application>PCRE</application> is installed
       and has been built with the non-default JIT enabled.
 @y
-      <option>--with-libpcre</option>: As an alternative to PCRE2, use this
+      <option>--with-libpcre1</option>: As an alternative to PCRE2, use this
       switch if the deprecated <application>PCRE</application> is installed
       and has been built with the non-default JIT enabled.
 @z
@@ -433,26 +433,28 @@
         <seg>
           git, git-receive-pack, git-upload-archive, and
           git-upload-pack (hardlinked to each
-          other), git-cvsserver, git-shell, and gitk
+          other), git-cvsserver, git-shell, gitk, and scalar
         </seg>
         <seg>
           None
         </seg>
         <seg>
-          /usr/libexec/git-core, and
+          /usr/libexec/git-core,
+          /usr/lib/perl5/&lfs-perl-version;/site_perl/Git, and
           /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>
 @y
         <seg>
-          git, git-receive-pack, git-upload-archive, and
+          git, git-receive-pack, git-upload-archive,
           git-upload-pack (hardlinked to each
-          other), git-cvsserver, git-shell, gitk
+          other), git-cvsserver, git-shell, gitk, scalar
         </seg>
         <seg>
           &None;
         </seg>
         <seg>
           /usr/libexec/git-core,
+          /usr/lib/perl5/&lfs-perl-version;/site_perl/Git,
           /usr/share/{doc/git-&git-version;,git-core,git-gui,gitk,gitweb}
         </seg>
 @z

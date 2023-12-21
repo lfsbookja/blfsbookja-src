@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -83,15 +79,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="gtk-doc"/> (required for autoreconf) and
+      <xref linkend="dbus-glib"/> and
       <xref linkend="libxslt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus-glib"/>,
-      <xref linkend="gtk-doc"/> (autoreconf にて必要),
       <xref linkend="libxslt"/>
     </para>
 @z
@@ -108,12 +102,6 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="vala"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

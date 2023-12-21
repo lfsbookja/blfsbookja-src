@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -90,12 +85,6 @@
     <para role="required">
       <xref linkend="mesa"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/GLEW"/>
-@y
-      User Notes: <ulink url="&blfs-wiki;/GLEW"/>
 @z
 
 @x

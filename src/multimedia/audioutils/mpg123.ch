@@ -88,25 +88,19 @@
     <para role="optional">
       <xref linkend="pulseaudio"/>,
       <xref linkend="sdl"/>,
-      <ulink url="http://jackaudio.org">JACK</ulink>,
+      <ulink url="https://jackaudio.org">JACK</ulink>,
       <ulink url="https://openal.org/">OpenAL</ulink> and
-      <ulink url="http://www.portaudio.com">PortAudio</ulink>
+	  <ulink url="http://www.portaudio.com/">PortAudio</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="pulseaudio"/>,
       <xref linkend="sdl"/>,
-      <ulink url="http://jackaudio.org">JACK</ulink>,
+      <ulink url="https://jackaudio.org">JACK</ulink>,
       <ulink url="https://openal.org/">OpenAL</ulink>,
-      <ulink url="http://www.portaudio.com">PortAudio</ulink>
+	  <ulink url="http://www.portaudio.com/">PortAudio</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/mpg123"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/mpg123"/>
 @z
 
 @x
@@ -155,7 +149,7 @@
           mpg123, mpg123-id3dump, mpg123-strip, and out123
         </seg>
         <seg>
-          libmpg123.so, libout123.so, and libsyn123
+          libmpg123.so, libout123.so, and libsyn123.so
         </seg>
         <seg>
           /usr/lib/mpg123
@@ -165,7 +159,7 @@
           mpg123, mpg123-id3dump, mpg123-strip, out123
         </seg>
         <seg>
-          libmpg123.so, libout123.so, libsyn123
+          libmpg123.so, libout123.so, libsyn123.so
         </seg>
         <seg>
           /usr/lib/mpg123

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -101,9 +97,9 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/xfwm4"/>
+      Editor Notes: <ulink url="&blfs-wiki;/xfwm4"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/xfwm4"/>
+      &EditorNotes;: <ulink url="&blfs-wiki;/xfwm4"/>
 @z
 
 @x
@@ -194,11 +190,11 @@
 @x xfwm4-settings
             is a <application>GTK+ 3</application> application that allows
             setting some preferences such as your theme, keyboard shortcuts and
-            mouse focus behaviour
+            mouse focus behavior
 @y
             is a <application>GTK+ 3</application> application that allows
             setting some preferences such as your theme, keyboard shortcuts and
-            mouse focus behaviour
+            mouse focus behavior
 @z
 
 @x xfwm4-tweaks-settings

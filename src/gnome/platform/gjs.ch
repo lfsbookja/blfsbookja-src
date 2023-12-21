@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gjs-buildsize     "27 MB (with tests)">
-  <!ENTITY gjs-time          "0.9 SBU (with tests)">
+  <!ENTITY gjs-buildsize     "240 MB (with tests)">
+  <!ENTITY gjs-time          "0.3 SBU (with tests; with parallelism=4)">
 @y
-  <!ENTITY gjs-buildsize     "27 MB（テスト込み）">
-  <!ENTITY gjs-time          "0.9 SBU（テスト込み）">
+  <!ENTITY gjs-buildsize     "240 MB（テスト込み）">
+  <!ENTITY gjs-time          "0.3 SBU（テスト込み; parallelism=4 利用）">
 @z
 
 @x
@@ -84,7 +84,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="gobject-introspection"/>, and
-      <xref linkend="js78"/>
+      <xref linkend="spidermonkey"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -92,7 +92,7 @@
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="js78"/>
+      <xref linkend="spidermonkey"/>
     </para>
 @z
 
@@ -113,27 +113,23 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="sysprof"/>,
+      <!--<xref linkend="sysprof"/>,-->
       <xref linkend="valgrind"/> (for tests),
       <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>, and
+      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>,
+      <ulink url="&sysprof-url;">sysprof</ulink>, and
       <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="sysprof"/>,
+      <!--<xref linkend="sysprof"/>,-->
       <xref linkend="valgrind"/> (テストのため),
       <ulink url="http://dtrace.org/blogs/about">DTrace</ulink>,
-      <ulink url="http://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>,
+      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>,
+      <ulink url="&sysprof-url;">sysprof</ulink>,
       <ulink url="https://sourceware.org/systemtap">Systemtap</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -150,15 +146,9 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. The
-      <application>GTK</application> and <application>Cairo</application>
-      tests will fail if not running in an Xorg session. The
-      <filename>gjs:JS / Gtk4</filename> test is known to exit with an ERROR
-      on some systems.
+      To test the results, issue: <command>ninja test</command>.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      Xorg セッション内でテスト実行しないと <application>GTK</application> と <application>Cairo</application> のテストは失敗します。
-      <filename>gjs:JS / Gtk4</filename> というテストは、特定のシステムにおいて ERROR を返して終了します。
 @z
 
 @x

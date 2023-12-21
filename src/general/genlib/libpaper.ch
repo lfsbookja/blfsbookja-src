@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY libpaper-time          "less than 0.1 SBU">
+  <!ENTITY libpaper-buildsize     "11 MB (with tests)">
+  <!ENTITY libpaper-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libpaper-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY libpaper-buildsize     "11 MB (テスト込み)">
+  <!ENTITY libpaper-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -75,12 +73,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/libpaper"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libpaper"/>
-@z
-
-@x
     <title>Installation of libpaper</title>
 @y
     <title>&InstallationOf1;libpaper&InstallationOf2;</title>
@@ -94,28 +86,15 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-       The /etc/libpaper.d directory contains scripts to run after the paper
-       size has been changed. This package puts no scripts here, but other
-       packages may.  If the fcron package has not been installed, create the
-       <command>run-parts</command> script as shown in the <xref
-       linkend='run-parts'/> section.
-@y
-       /etc/libpaper.d ディレクトリ配下には、ペーパーサイズを変更した後に実行するスクリプトを含めます。
-       ただし本パッケージが提供するスクリプトはなく、別パッケージが提供します。
-       fcron パッケージがインストールされていない場合は、<xref
-       linkend='run-parts'/> 節に示す <command>run-parts</command> スクリプトを生成してください。
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x
@@ -125,12 +104,11 @@
 @z
 
 @x
-      <command>mkdir -pv /etc/libpaper.d</command>:
-      <application>libpaper</application> expects that packages will install
-      files into this directory.
+      <parameter>--enable-relocatable</parameter>:
+      This switch is needed to run the tests.
 @y
-      <command>mkdir -pv /etc/libpaper.d</command>:
-      <application>libpaper</application> は、各種パッケージが提供するファイルをこのディレクトリにインストールするものとしています。
+      <parameter>--enable-relocatable</parameter>:
+      このスイッチはテストを実行するために必要です。
 @z
 
 @x
@@ -146,17 +124,33 @@
 @z
 
 @x
-        Create <filename>/etc/papersize</filename> to set the default
-        system paper size.  Issue the following command as the
-        <systemitem class="username">root</systemitem> user to set this to
-        &apos;A4&apos; (libpaper prefers the lowercase form). You may wish
-        to use a different size, such as letter.
+        The paper size is automatically determined from the system locale;
+        see <literal>LC_PAPER</literal> in <filename>locale(7)</filename>.
+        If you want to override it, create a <filename>papersize</filename>
+        file in the user configuration directory.  For example:
 @y
-        Create <filename>/etc/papersize</filename> to set the default
-        system paper size.  Issue the following command as the
-        <systemitem class="username">root</systemitem> user to set this to
-        &apos;A4&apos; (libpaper prefers the lowercase form). You may wish
-        to use a different size, such as letter.
+        The paper size is automatically determined from the system locale;
+        see <literal>LC_PAPER</literal> in <filename>locale(7)</filename>.
+        If you want to override it, create a <filename>papersize</filename>
+        file in the user configuration directory.  For example:
+@z
+
+@x
+        If you want to override the paper size globally (for all users),
+        set up the <envar>PAPERSIZE</envar> environment variable.  For
+        example:
+@y
+        If you want to override the paper size globally (for all users),
+        set up the <envar>PAPERSIZE</envar> environment variable.  For
+        example:
+@z
+
+@x
+        You may use a different paper size, such as
+        <quote><literal>letter</literal></quote>.
+@y
+        You may use a different paper size, such as
+        <quote><literal>letter</literal></quote>.
 @z
 
 @x
@@ -177,23 +171,25 @@
 
 @x
         <seg>
-          paperconf, paperconfig, run-parts
+          paper and
+          paperconf
         </seg>
         <seg>
           libpaper.so
         </seg>
         <seg>
-          /etc/libpaper.d
+          /usr/share/doc/libpaper-&libpaper-version;
         </seg>
 @y
         <seg>
-          paperconf, paperconfig, run-parts
+          paper,
+          paperconf
         </seg>
         <seg>
           libpaper.so
         </seg>
         <seg>
-          /etc/libpaper.d
+          /usr/share/doc/libpaper-&libpaper-version;
         </seg>
 @z
 
@@ -203,16 +199,16 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x paperconf
+@x paper
             prints paper configuration information
 @y
-            ペーパー設定情報を表示します。
+            prints paper configuration information
 @z
 
-@x paperconfig
-            configures the system default paper size
+@x paperconf
+            prints paper configuration information in a compatibility mode
 @y
-            システムのデフォルトペーパーサイズを設定します。
+            互換性モードによりペーパー設定情報を表示します。
 @z
 
 @x libpaper.so

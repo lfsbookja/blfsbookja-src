@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY exempi-buildsize     "372 MB (add 31 MB for tests)">
-  <!ENTITY exempi-time          "0.5 SBU (using parallelism=4; add 0.3 SBU for tests)">
+  <!ENTITY exempi-buildsize     "288 MB (add 236 MB for tests)">
+  <!ENTITY exempi-time          "0.4 SBU (add 0.6 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY exempi-buildsize     "372 MB (テスト実施時はさらに 31 MB)">
-  <!ENTITY exempi-time          "0.5 SBU (parallelism=4；テスト実施時はさらに 0.3 SBU)">
+  <!ENTITY exempi-buildsize     "288 MB (テスト実施時はさらに 236 MB)">
+  <!ENTITY exempi-time          "0.4 SBU (テスト実施時はさらに 0.6 SBU; いずれも parallelism=4)">
 @z
 
 @x
@@ -104,12 +100,6 @@
     <para role="required">
       <xref linkend="valgrind"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

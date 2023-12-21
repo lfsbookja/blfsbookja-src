@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY icu-buildsize     "367 MB (add 37 MB for tests)">
-  <!ENTITY icu-time          "0.7 SBU (Using parallelism=4; add 0.8 SBU for tests)">
+  <!ENTITY icu-buildsize     "339 MB (add 42 MB for tests)">
+  <!ENTITY icu-time          "0.5 SBU (Using parallelism=4; add 1.6 SBU for tests)">
 @y
-  <!ENTITY icu-buildsize     "367 MB (テスト実施時はさらに 37 MB)">
-  <!ENTITY icu-time          "0.7 SBU (parallelism=4  利用時。テスト実施時はさらに 0.8 SBU)">
+  <!ENTITY icu-buildsize     "339 MB (テスト実施時はさらに 42 MB)">
+  <!ENTITY icu-time          "0.5 SBU (parallelism=4  利用時。テスト実施時はさらに 1.6 SBU)">
 @z
 
 @x
@@ -106,12 +106,6 @@
       <xref linkend="llvm"/> (Clang がビルドされたもの),
       <xref linkend="doxygen"/> (ドキュメント生成時)
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/icu"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/icu"/>
 @z
 
 @x

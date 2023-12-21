@@ -91,23 +91,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of efibootmgr</title>
 @y
     <title>&InstallationOf1;efibootmgr&InstallationOf2;</title>
-@z
-
-@x
-      At first, fix an outdated hotfix declaration causing compilation
-      failure:
-@y
-      At first, fix an outdated hotfix declaration causing compilation
-      failure:
 @z
 
 @x

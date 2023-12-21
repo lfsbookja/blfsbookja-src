@@ -78,7 +78,7 @@
       <xref linkend="libcap-pam"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="mariadb"/> or <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="pcre"/>,
       <xref linkend="postgresql"/>, and
       <ulink url="https://metacpan.org/pod/Net::SSH2">Net::SSH2</ulink>
@@ -89,17 +89,11 @@
       <xref linkend="libcap-pam"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="linux-pam"/>,
-      <xref linkend="mariadb"/> または <ulink url="http://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="pcre"/>,
-      <xref linkend="postgresql"/>,
+      <xref linkend="postgresql"/>, and
       <ulink url="https://metacpan.org/pod/Net::SSH2">Net::SSH2</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -151,10 +145,10 @@
 @z
 
 @x
-      <command>ln -v -s /bin/false /usr/bin/proftpdshell</command>:
+      <command>ln -v -s /usr/bin/false /usr/bin/proftpdshell</command>:
       Set the default shell as a link to an invalid shell.
 @y
-      <command>ln -v -s /bin/false /usr/bin/proftpdshell</command>:
+      <command>ln -v -s /usr/bin/false /usr/bin/proftpdshell</command>:
       デフォルトシェルを /bin/false へのリンクとします。
 @z
 

@@ -80,12 +80,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/libstatgrab"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libstatgrab"/>
-@z
-
-@x
     <title>Installation of libstatgrab</title>
 @y
     <title>&InstallationOf1;libstatgrab&InstallationOf2;</title>

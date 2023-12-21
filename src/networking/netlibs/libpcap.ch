@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -93,8 +89,8 @@
       <xref linkend="libnl"/>,
       <xref linkend="libusb"/>,
       Software distribution for the
-      <ulink url="http://www.endace.com/">DAG</ulink>, and
-      <ulink url="http://www.intel.com/">Septel</ulink> range of passive
+      <ulink url="https://www.endace.com/">DAG</ulink>, and
+      <ulink url="https://www.intel.com/">Septel</ulink> range of passive
       network monitoring cards.
     </para>
 @y
@@ -104,15 +100,10 @@
       <xref linkend="libnl"/>,
       <xref linkend="libusb"/>,
       Software distribution for the
-      <ulink url="http://www.endace.com/">DAG</ulink>,
-      <ulink url="http://www.intel.com/">Septel</ulink> などのようなパッシブ動作を行うネットワークインターフェースカードに対するソフトウェア
+      <ulink url="https://www.endace.com/">DAG</ulink>, and
+      <ulink url="https://www.intel.com/">Septel</ulink> range of passive
+      network monitoring cards.
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

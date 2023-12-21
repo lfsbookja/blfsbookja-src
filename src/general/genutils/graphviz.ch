@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY graphviz-time          "0.7 SBU (using parallelism=4)">
+  <!ENTITY graphviz-time          "0.8 SBU (using parallelism=4)">
 @y
-  <!ENTITY graphviz-time          "0.7 SBU（parallelism=4 指定時）">
+  <!ENTITY graphviz-time          "0.8 SBU (parallelism=4 利用)">
 @z
 
 @x
@@ -123,7 +123,8 @@
       <xref linkend="xorg7-lib"/>,
       <xref linkend="fontconfig"/>, and
       <xref linkend="libpng"/>, to generate images in bitmap SVG, postscript,
-      PNG, and PDF formats, or displaying the image on screen
+      PNG, and PDF formats, or displaying the image on screen. The PNG
+      output is required for building <xref role="nodep" linkend="gegl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;, for various bitmap outputs</bridgehead>
@@ -131,32 +132,33 @@
       <xref linkend="pango"/>, with
       <xref linkend="cairo"/>,
       <xref linkend="xorg7-lib"/>,
-      <xref linkend="fontconfig"/>, and
+      <xref linkend="fontconfig"/>,
       <xref linkend="libpng"/>, to generate images in bitmap SVG, postscript,
-      PNG, and PDF formats, or displaying the image on screen
+      PNG, and PDF formats, or displaying the image on screen. The PNG
+      output is required for building <xref role="nodep" linkend="gegl"/>
     </para>
 @z
 
 @x
       Adding
       <xref linkend="gtk2"/> with
-      <xref linkend="libjpeg"/> allows to add JPEG, BMP, TIF, and ICO formats,
-      and to display the image in a GTK+ window
+      <xref linkend="libjpeg"/> adds support for JPEG, BMP, TIF, and ICO
+      formats, and allows displaying the image in a GTK+ window
 @y
       Adding
       <xref linkend="gtk2"/> with
-      <xref linkend="libjpeg"/> allows to add JPEG, BMP, TIF, and ICO formats,
-      and to display the image in a GTK+ window
+      <xref linkend="libjpeg"/> adds support for JPEG, BMP, TIF, and ICO
+      formats, and allows displaying the image in a GTK+ window
 @z
 
 @x
-      <ulink url="http://www.libgd.org/">GD Library</ulink> may be used
+      <ulink url="https://www.libgd.org/">GD Library</ulink> may be used
       instead of <application>Pango</application>. It adds the ability to
       generate images in GIF, VRML, and GD formats, but
       <application>Pango</application> provides better outputs for the other
       formats, and is needed for displaying images
 @y
-      <ulink url="http://www.libgd.org/">GD Library</ulink> may be used
+      <ulink url="https://www.libgd.org/">GD Library</ulink> may be used
       instead of <application>Pango</application>. It adds the ability to
       generate images in GIF, VRML, and GD formats, but
       <application>Pango</application> provides better outputs for the other
@@ -166,19 +168,15 @@
 @x
       Other formats may be added with
       <xref linkend="libwebp"/> (WebP support is considered experimental),
-      <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
-      <ulink url="https://sourceforge.net/projects/lasi/">libLASi</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
-      and <ulink url="http://www.libming.org/">libming</ulink> (Adobe
-      Flash)
+      <ulink url="https://openil.sourceforge.net/projects.php">DevIL</ulink>,
+      <ulink url="https://sourceforge.net/projects/lasi/">libLASi</ulink>, and
+      <ulink url="https://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>
 @y
       Other formats may be added with
       <xref linkend="libwebp"/> (WebP support is considered experimental),
-      <ulink url="http://openil.sourceforge.net/projects.php">DevIL</ulink>,
-      <ulink url="https://sourceforge.net/projects/lasi/">libLASi</ulink>,
-      <ulink url="http://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>,
-      and <ulink url="http://www.libming.org/">libming</ulink> (Adobe
-      Flash)
+      <ulink url="https://openil.sourceforge.net/projects.php">DevIL</ulink>,
+      <ulink url="https://sourceforge.net/projects/lasi/">libLASi</ulink>, and
+      <ulink url="https://www.freedesktop.org/wiki/Software/glitz">glitz</ulink>
 @z
 
 @x
@@ -207,29 +205,25 @@
     <bridgehead renderas="sect4">Optional, to build more tools</bridgehead>
 
     <para role="optional">
-      <xref linkend="freeglut"/> (with <xref linkend="libglade"/>, 
-      <ulink url="https://sourceforge.net/projects/gtkglext/">GtkGLExt</ulink>, and
-      <ulink url="http://gts.sourceforge.net/">libGTS</ulink>, for building
+      <xref linkend="freeglut"/> (with 
+      <ulink url="https://sourceforge.net/projects/gtkglext/">GtkGLExt</ulink> and
+      <ulink url="https://gts.sourceforge.net/">libGTS</ulink> for building
       the <command>smyrna</command> large graph viewer, which is
-      considered experimental),
-      <xref linkend="qt5"/>, for building the <command>gvedit</command>
-      graph editor. Another graph editor, <command>dotty</command> needs only
-      <xref role="nodep" linkend="xorg7-lib"/>
-<!-- use nodep to avoid repetition -->
+      considered experimental), and
+      &qt5-deps; (for building the <command>gvedit</command>
+      graph editor.)
     </para>
 @y
     <bridgehead renderas="sect4">Optional, to build more tools</bridgehead>
 
     <para role="optional">
-      <xref linkend="freeglut"/> (with <xref linkend="libglade"/>, 
-      <ulink url="https://sourceforge.net/projects/gtkglext/">GtkGLExt</ulink>, and
-      <ulink url="http://gts.sourceforge.net/">libGTS</ulink>, for building
+      <xref linkend="freeglut"/> (with 
+      <ulink url="https://sourceforge.net/projects/gtkglext/">GtkGLExt</ulink> and
+      <ulink url="https://gts.sourceforge.net/">libGTS</ulink> for building
       the <command>smyrna</command> large graph viewer, which is
-      considered experimental),
-      <xref linkend="qt5"/>, for building the <command>gvedit</command>
-      graph editor. Another graph editor, <command>dotty</command> needs only
-      <xref role="nodep" linkend="xorg7-lib"/>
-<!-- use nodep to avoid repetition -->
+      considered experimental), and
+      &qt5-deps; (for building the <command>gvedit</command>
+      graph editor.)
     </para>
 @z
 
@@ -238,38 +232,34 @@
     <para role="optional">
       <xref linkend="swig"/> (<application>SWIG</application> must be
       installed or no bindings will be built),
-      <xref linkend="gcc"/> (for the go language),
+      <xref linkend="gcc"/> (for the go compiler),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="lua"/>,
       <xref linkend="php"/>,
-      <!--<xref linkend="python2"/>, Removed in 2.47.3 -->
       <xref linkend="ruby"/>,
-      <!-- <xref linkend="tcl"/>, -->
       <xref linkend="tk"/>,
-      <ulink url="http://iolanguage.org/">Io</ulink>,
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
-      <ulink url="http://ocaml.org/">OCaml</ulink>, and
-      <ulink url="http://www.r-project.org/">R</ulink>
+      <ulink url="https://iolanguage.org/">Io</ulink>,
+      <ulink url="https://www.mono-project.com/Main_Page">Mono</ulink>,
+      <ulink url="https://ocaml.org/">OCaml</ulink>, and
+      <ulink url="https://www.r-project.org/">R</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">Optional (To Build Language Bindings)</bridgehead>
     <para role="optional">
       <xref linkend="swig"/> (<application>SWIG</application> must be
       installed or no bindings will be built),
-      <xref linkend="gcc"/> (for the go language),
+      <xref linkend="gcc"/> (for the go compiler),
       <xref linkend="guile"/>,
       <xref linkend="openjdk"/>,
       <xref linkend="lua"/>,
       <xref linkend="php"/>,
-      <!--<xref linkend="python2"/>, Removed in 2.47.3 -->
       <xref linkend="ruby"/>,
-      <!-- <xref linkend="tcl"/>, -->
       <xref linkend="tk"/>,
-      <ulink url="http://iolanguage.org/">Io</ulink>,
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>,
-      <ulink url="http://ocaml.org/">OCaml</ulink>,
-      <ulink url="http://www.r-project.org/">R</ulink>
+      <ulink url="https://iolanguage.org/">Io</ulink>,
+      <ulink url="https://www.mono-project.com/Main_Page">Mono</ulink>,
+      <ulink url="https://ocaml.org/">OCaml</ulink>, and
+      <ulink url="https://www.r-project.org/">R</ulink>
     </para>
 @z
 
@@ -278,21 +268,15 @@
     <para role="optional">
       <ulink url="https://github.com/Snaipe/Criterion">Criterion</ulink>
           (framework for tests) and
-      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>
+      <ulink url="https://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">Optional (building tools)</bridgehead>
     <para role="optional">
       <ulink url="https://github.com/Snaipe/Criterion">Criterion</ulink>
-          (framework for tests),
-      <ulink url="http://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>
+          (framework for tests) and
+      <ulink url="https://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -309,6 +293,22 @@
 @z
 
 @x
+        A warning is generated by <command>autogen.sh</command> because the
+        build tree is not a git repository. As a result, the build date is set
+        to 0. To get a meaningful date in the version string, you can run:
+@y
+        A warning is generated by <command>autogen.sh</command> because the
+        build tree is not a git repository. As a result, the build date is set
+        to 0. To get a meaningful date in the version string, you can run:
+@z
+
+@x
+      Whether or not you fix the date, proceed to compile the package:
+@y
+      Whether or not you fix the date, proceed to compile the package:
+@z
+
+@x
       This package does not come with a test suite that provides
       meaningful results.
 @y
@@ -319,20 +319,6 @@
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      If desired, create a symbolic link in the system documents directory
-      to the documentation installed in
-      <filename class="directory">/usr/share/graphviz/doc</filename> using the
-      following command as the <systemitem class="username">root</systemitem>
-      user:
-@y
-      If desired, create a symbolic link in the system documents directory
-      to the documentation installed in
-      <filename class="directory">/usr/share/graphviz/doc</filename> using the
-      following command as the <systemitem class="username">root</systemitem>
-      user:
 @z
 
 @x
@@ -393,10 +379,10 @@
 
 @x
         <seg>
-          acyclic, bcomps, ccomps, circo, cluster, diffimg, dijkstra,
-          dot, dot2gxl, dot_builtins, dotty, edgepaint, fdp, gc, gml2gv,
+          acyclic, bcomps, ccomps, circo, cluster, dijkstra,
+          dot, dot2gxl, dot_builtins, edgepaint, fdp, gc, gml2gv,
           graphml2gv, gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh,
-          gvpack, gvpr, gxl2dot, gxl2gv, lneato, mm2gv, neato, nop,
+          gvpack, gvpr, gxl2dot, gxl2gv, mm2gv, neato, nop,
           osage, patchwork, prune, sccmap, sfdp, tred, twopi,
           unflatten, and vimdot
         </seg>
@@ -404,7 +390,7 @@
           libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so,
           libpathplan.so, libxdot.so, and several plugins in /usr/lib/graphviz.
           There are also several in subdirectories of
-          /usr/lib/{lua,perl5, <!--php, -->python&python3-majorver;,tcl8.6}.
+          /usr/lib/{lua,perl5,php,python&python3-majorver;,tcl8.6}.
           Unfortunately, some libraries are duplicated.
         </seg>
         <seg>
@@ -416,23 +402,25 @@
         </seg>
 @y
         <seg>
-          acyclic, bcomps, ccomps, circo, cluster, diffimg, dijkstra,
-          dot, dot2gxl, dot_builtins, dotty, edgepaint, fdp, gc, gml2gv,
+          acyclic, bcomps, ccomps, circo, cluster, dijkstra,
+          dot, dot2gxl, dot_builtins, edgepaint, fdp, gc, gml2gv,
           graphml2gv, gv2gml, gv2gxl, gvcolor, gvedit, gvgen, gvmap, gvmap.sh,
-          gvpack, gvpr, gxl2dot, gxl2gv, lneato, mm2gv, neato, nop,
+          gvpack, gvpr, gxl2dot, gxl2gv, mm2gv, neato, nop,
           osage, patchwork, prune, sccmap, sfdp, tred, twopi,
           unflatten, and vimdot
         </seg>
         <seg>
           libcdt.so, libcgraph.so, libgvc.so, libgvpr.so, liblab_gamut.so,
           libpathplan.so, libxdot.so, /usr/lib/graphviz 内に数種のプラグイン。
-          さらに /usr/lib/{lua,perl5, <!--php, -->python&python3-majorver;,tcl8.6} 配下のサブディレクトリにも数種あるが、ただしライブラリの中には重複しているものがある。
+          There are also several in subdirectories of
+          /usr/lib/{lua,perl5,php,python&python3-majorver;,tcl8.6}.
+          Unfortunately, some libraries are duplicated.
         </seg>
         <seg>
           /usr/include/graphviz,
           /usr/lib/graphviz,
           /usr/lib/tcl8.6/graphviz,
-          /usr/share/doc/graphviz-&graphviz-version;,
+          /usr/share/doc/graphviz-&graphviz-version;, and
           /usr/share/graphviz
         </seg>
 @z

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -91,12 +87,6 @@
           Estimated build time: &liblinear-time;
 @y
           &Estimatedbuildtime;: &liblinear-time;
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/liblinear"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/liblinear"/>
 @z
 
 @x

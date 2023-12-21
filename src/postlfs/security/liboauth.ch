@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -127,12 +123,6 @@ Liboauth provides functions
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of liboauth</title>
 @y
     <title>&InstallationOf1;liboauth&InstallationOf2;</title>
@@ -241,12 +231,12 @@ Liboauth provides functions
 @z
 
 @x liboauth.so
-            provides functions to escape and encode stings according to
+            provides functions to escape and encode strings according to
             OAuth specifications and offers high-level functionality built
             on top to sign requests or verify signatures using either NSS or
             OpenSSL for calculating the hash/signatures
 @y
-            provides functions to escape and encode stings according to
+            provides functions to escape and encode strings according to
             OAuth specifications and offers high-level functionality built
             on top to sign requests or verify signatures using either NSS or
             OpenSSL for calculating the hash/signatures

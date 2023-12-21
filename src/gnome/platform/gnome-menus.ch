@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -22,14 +18,14 @@
 @x
       The <application>GNOME Menus</application> package contains an
       implementation of the draft
-      <ulink url="http://www.freedesktop.org/Standards/menu-spec">
+      <ulink url="https://www.freedesktop.org/Standards/menu-spec">
       Desktop Menu Specification</ulink> from freedesktop.org. It also
       contains the <application>GNOME</application> menu layout configuration
       files and <filename>.directory</filename> files.
 @y
       The <application>GNOME Menus</application> package contains an
       implementation of the draft
-      <ulink url="http://www.freedesktop.org/Standards/menu-spec">
+      <ulink url="https://www.freedesktop.org/Standards/menu-spec">
       Desktop Menu Specification</ulink> from freedesktop.org. It also
       contains the <application>GNOME</application> menu layout configuration
       files and <filename>.directory</filename> files.
@@ -93,12 +89,6 @@
     <para role="required">
       <xref linkend="glib2"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

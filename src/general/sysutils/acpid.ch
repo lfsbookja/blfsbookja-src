@@ -80,12 +80,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of acpid</title>
 @y
     <title>&InstallationOf1;acpid&InstallationOf2;</title>
@@ -133,23 +127,35 @@
 @z
 
 @x
-      The following brief example will suspend the system when the laptop lid
-      is closed (it requires <xref linkend="pm-utils"/>):
+      The following brief example will suspend the system when the laptop
+      lid is closed<phrase revision='sysv'> (it requires
+      <xref linkend="pm-utils"/>)</phrase>.  The example also disables
+      the default handling of the lid close event by &logind; when the
+      system is on battery and not connected to any external monitor,
+      in order to avoid a conflict:
 @y
-      The following brief example will suspend the system when the laptop lid
-      is closed (it requires <xref linkend="pm-utils"/>):
+      The following brief example will suspend the system when the laptop
+      lid is closed<phrase revision='sysv'> (it requires
+      <xref linkend="pm-utils"/>)</phrase>.  The example also disables
+      the default handling of the lid close event by &logind; when the
+      system is on battery and not connected to any external monitor,
+      in order to avoid a conflict:
 @z
 
 @x
-      Unfortunately, not every computer labels ACPI events in the same way. To
-      determine how your buttons are recognized, use the
+      Unfortunately, not every computer labels ACPI events in the same way
+      (for example, the lid may be recognized as <filename>LID0</filename>
+      instead of <filename>LID</filename>).
+      To determine how your buttons are recognized, use the
       <command>acpi_listen</command> tool. Also, look in the <filename
       class="directory">samples</filename> directory under <filename
       class="directory">/usr/share/doc/acpid-&acpid-version;</filename>
       for more examples.
 @y
-      Unfortunately, not every computer labels ACPI events in the same way. To
-      determine how your buttons are recognized, use the
+      Unfortunately, not every computer labels ACPI events in the same way
+      (for example, the lid may be recognized as <filename>LID0</filename>
+      instead of <filename>LID</filename>).
+      To determine how your buttons are recognized, use the
       <command>acpi_listen</command> tool. Also, look in the <filename
       class="directory">samples</filename> directory under <filename
       class="directory">/usr/share/doc/acpid-&acpid-version;</filename>

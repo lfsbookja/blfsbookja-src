@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -114,12 +110,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/libevent"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libevent"/>
-@z
-
-@x
     <title>Installation of libevent</title>
 @y
     <title>&InstallationOf1;libevent&InstallationOf2;</title>
@@ -140,9 +130,25 @@
 @z
 
 @x
-      To test the results, issue: <command>make verify</command>.
+      To test the results, issue: <command>make verify</command>. Six tests in
+      every suite related to <filename>regress_ssl.c</filename> and
+      <filename>regress_http.c</filename> are known to fail due to
+      incompatibilities with OpenSSL-3. Some tests that are related to
+      <filename>regress_dns.c</filename> are also known to fail intermittently
+      due to insufficient test timeouts.
+      <!-- https://github.com/libevent/libevent/issues/1271 and
+      https://github.com/libevent/libevent/issues/1304. There are three commits
+      that we could apply, but since they just touch the tests it's probably
+      not necessary to fix it. The relevant PRs are #1305, #1045, and the commit
+      linked in #1271. This should be fixed in libevent-2.2.-->
 @y
       ビルド結果をテストする場合は <command>make verify</command> を実行します。
+      Six tests in
+      every suite related to <filename>regress_ssl.c</filename> and
+      <filename>regress_http.c</filename> are known to fail due to
+      incompatibilities with OpenSSL-3. Some tests that are related to
+      <filename>regress_dns.c</filename> are also known to fail intermittently
+      due to insufficient test timeouts.
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -112,8 +108,8 @@
 <!--      <xref linkend="appstream-glib"/>, -->
       <xref linkend="avahi"/>,
       <ulink url="&appstream-glib-url;">appstream-glib</ulink>,
-      <ulink url="http://www.freerdp.com/">FreeRDP</ulink> (For connecting to Windows desktops), and
-      <ulink url="http://www.spice-space.org/">Spice-GTK</ulink>
+      <ulink url="https://www.freerdp.com/">FreeRDP</ulink> (For connecting to Windows desktops), and
+      <ulink url="https://www.spice-space.org/">Spice-GTK</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -121,15 +117,9 @@
 <!--      <xref linkend="appstream-glib"/>, -->
       <xref linkend="avahi"/>,
       <ulink url="&appstream-glib-url;">appstream-glib</ulink>,
-      <ulink url="http://www.freerdp.com/">FreeRDP</ulink> (For connecting to Windows desktops),
-      <ulink url="http://www.spice-space.org/">Spice-GTK</ulink>
+      <ulink url="https://www.freerdp.com/">FreeRDP</ulink> (For connecting to Windows desktops),
+      <ulink url="https://www.spice-space.org/">Spice-GTK</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

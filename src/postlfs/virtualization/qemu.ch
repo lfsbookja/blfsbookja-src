@@ -75,83 +75,43 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>, and
-      <xref linkend="x-window-system"/>
+      <xref linkend="glib2"/> and
+      <xref linkend="pixman"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="glib2"/>,
-      <xref linkend="x-window-system"/>
+      <xref linkend="pixman"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="alsa-lib"/> and
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="libslirp"/>, and
       <xref linkend="sdl2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="alsa-lib"/> and
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="libslirp"/>,
       <xref linkend="sdl2"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      Depending on the sound system, various packages in <xref linkend="alsa"/>,
-      <xref linkend="python3"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="bluez"/>,
-      <xref linkend="curl"/>,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="gtk2"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="libusb"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libssh2"/>,
-      <xref linkend="lzo"/>,
-      <xref linkend="nettle"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="sdl"/>,
-      <xref role="nodep" linkend="vte"/> or <xref linkend="vte2"/>, and
-<!-- libcacard has been a standalone project since qemu-2.5.-->
-      <ulink url="https://gitlab.freedesktop.org/spice/libcacard">libcacard</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      Depending on the sound system, various packages in <xref linkend="alsa"/>,
-      <xref linkend="python3"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="bluez"/>,
-      <xref linkend="curl"/>,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="gtk2"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="libusb"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libssh2"/>,
-      <xref linkend="lzo"/>,
-      <xref linkend="nettle"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="sdl"/>,
-      <xref role="nodep" linkend="vte"/> or <xref linkend="vte2"/>,
-<!-- libcacard has been a standalone project since qemu-2.5.-->
-      <ulink url="https://gitlab.freedesktop.org/spice/libcacard">libcacard</ulink>
-    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -170,7 +130,7 @@
 @x
       If you get any output, you have VT technology (vmx for Intel
       processors and svm for AMD processors).  You then need to go into your
-      system BIOS and ensure it is enabled.  After enabing, reboot back to your
+      system BIOS and ensure it is enabled.  After enabling, reboot back to your
       LFS instance.
 @y
       何かの出力が得られたら VT に対応しているということです。 (Intel プロセッサーなら vmx、AMD プロセッサーなら svm など。)
@@ -229,12 +189,6 @@
 @z
 
 @x
-      Add any users that might use the KVM device to that group:
-@y
-      Add any users that might use the KVM device to that group:
-@z
-
-@x
       Install <application>qemu</application> by running the following
       commands:
 @y
@@ -258,41 +212,49 @@
 @x
       <application>qemu</application> uses <command>ninja</command> as
       a subprocess when building.  To run the tests, issue:
-      <command>ninja test</command>.
+      <command>ninja test</command>. Two tests, bios-tables-test and migration-test, 
+      are known to fail.
 @y
       <application>qemu</application> uses <command>ninja</command> as
       a subprocess when building.  To run the tests, issue:
-      <command>ninja test</command>.
+      <command>ninja test</command>. Two tests, bios-tables-test and migration-test, 
+      are known to fail.
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      You will also need to add an Udev rule so that the KVM device gets correct
-      permissions:
-@y
-      You will also need to add an Udev rule so that the KVM device gets correct
-      permissions:
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x
       Change the permissions and ownership of a helper script, which is needed
-      when using the <quote>bridge</quote> network device (see below):
+      when using the <quote>bridge</quote> network device (see below). Again
+      as the &root; user, issue:
 @y
       Change the permissions and ownership of a helper script, which is needed
-      when using the <quote>bridge</quote> network device (see below):
+      when using the <quote>bridge</quote> network device (see below). Again
+      as the &root; user, issue:
+@z
+
+@x
+        You need to add any users who might use the <quote>bridge</quote>
+        network device into the
+        <systemitem class="groupname">kvm</systemitem> group even if
+        &logind; is installed.
+@y
+        You need to add any users who might use the <quote>bridge</quote>
+        network device into the
+        <systemitem class="groupname">kvm</systemitem> group even if
+        &logind; is installed.
 @z
 
 @x
         For convenience you may want to create a symbolic link to run
-        the installed program. For instance:
+        the installed program. For instance (as the &root; user):
 @y
         For convenience you may want to create a symbolic link to run
-        the installed program. For instance:
+        the installed program. For instance (as the &root; user):
 @z
 
 @x
@@ -302,41 +264,47 @@
 @z
 
 @x
-      <command>sed ... util/memfd.c</command>: This command fixes a conflict
-      introduced with glibc-2.27.
+      <parameter>--audio-drv-list=alsa</parameter>: This switch
+      sets the audio driver to ALSA. See below for enabling other audio drivers.
 @y
-      <command>sed ... util/memfd.c</command>: This command fixes a conflict
-      introduced with glibc-2.27.
+      <parameter>--audio-drv-list=alsa</parameter>: This switch
+      sets the audio driver to ALSA. See below for enabling other audio drivers.
 @z
 
 @x
-      <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
-      driver to ALSA. See below for enabling other audio drivers.
+      <parameter>--disable-pa</parameter>: even if <emphasis>pa</emphasis> is
+      not in <parameter>--audio-drv-list</parameter> list, the pulseaudio
+      driver is built, unless disabled by this parameter.
 @y
-      <parameter>--audio-drv-list=alsa</parameter>: This switch sets the audio
-      driver to ALSA. See below for enabling other audio drivers.
+      <parameter>--disable-pa</parameter>: even if <emphasis>pa</emphasis> is
+      not in <parameter>--audio-drv-list</parameter> list, the pulseaudio
+      driver is built, unless disabled by this parameter.
 @z
 
 @x
-      <option>--audio-drv-list=pa</option>: This switch sets the audio
-      driver to pulseaudio. For other drivers see the --audio-drv-list list in
-      <command>configure</command>'s help output. The default audio driver is
-      OSS. To enable support for both alsa and pulseaudio, use
+      <parameter>--enable-slirp</parameter>: This switch forces the building
+      system to check for <xref linkend='libslirp'/>.  Remove it if you
+      don't need the <option>-netdev user</option> support.
+@y
+      <parameter>--enable-slirp</parameter>: This switch forces the building
+      system to check for <xref linkend='libslirp'/>.  Remove it if you
+      don't need the <option>-netdev user</option> support.
+@z
+
+@x
+      <option>--audio-drv-list=pa --disable-alsa</option>: This switch sets
+      the audio driver to pulseaudio. For other drivers see the
+      --audio-drv-list choices in the output of
+      <command>./configure --help</command>. The default audio driver is OSS.
+      To enable support for both alsa and pulseaudio, use
       <option>--audio-drv-list=alsa,pa</option>.
 @y
-      <option>--audio-drv-list=pa</option>: This switch sets the audio
-      driver to pulseaudio. For other drivers see the --audio-drv-list list in
-      <command>configure</command>'s help output. The default audio driver is
-      OSS. To enable support for both alsa and pulseaudio, use
+      <option>--audio-drv-list=pa --disable-alsa</option>: This switch sets
+      the audio driver to pulseaudio. For other drivers see the
+      --audio-drv-list choices in the output of
+      <command>./configure --help</command>. The default audio driver is OSS.
+      To enable support for both alsa and pulseaudio, use
       <option>--audio-drv-list=alsa,pa</option>.
-@z
-
-@x
-      <option>\-\-with-gtkabi=3.0</option>: builds with GTK+-3 if both GTK+-2
-      and GTK+-3 are installed.
-@y
-      <option>\-\-with-gtkabi=3.0</option>: builds with GTK+-3 if both GTK+-2
-      and GTK+-3 are installed.
 @z
 
 @x
@@ -380,13 +348,15 @@
 @x
         The following instructions assume the optional symbolic link,
         <filename>qemu</filename>, has been created. Additionally,
-        <command>qemu</command> must be run from an X Window System based
-        terminal (either locally or over ssh).
+        <command>qemu</command> should be run in a graphical environment.
+        But it is possible to use qemu <quote>headless</quote> or through
+        SSH. See the documentation for the various possibilities.
 @y
         The following instructions assume the optional symbolic link,
         <filename>qemu</filename>, has been created. Additionally,
-        <command>qemu</command> must be run from an X Window System based
-        terminal (either locally or over ssh).
+        <command>qemu</command> should be run in a graphical environment.
+        But it is possible to use qemu <quote>headless</quote> or through
+        SSH. See the documentation for the various possibilities.
 @z
 
 @x
@@ -451,16 +421,10 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x ivshmem-client
-            is a standalone client for using the ivshmem device
+@x elf2dmp
+            Converts files from elf to dmp format
 @y
-            is a standalone client for using the ivshmem device
-@z
-
-@x ivshmem-server
-            is an example server for the ivshmem device
-@y
-            is an example server for the ivshmem device
+            Converts files from elf to dmp format
 @z
 
 @x qemu-edid
@@ -505,16 +469,4 @@
             is the QEMU PC System emulator
 @y
             PC システムエミュレーターである QEMU です。
-@z
-
-@x virtfs-proxy-helper
-            creates a socket pair or a named socket. QEMU and the proxy helper
-            communicate using this socket. The QEMU proxy fs driver sends
-            filesystem requests to the proxy helper and receives the response
-            from it
-@y
-            creates a socket pair or a named socket. QEMU and the proxy helper
-            communicate using this socket. The QEMU proxy fs driver sends
-            filesystem requests to the proxy helper and receives the response
-            from it
 @z

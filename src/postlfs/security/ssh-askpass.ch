@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -92,7 +88,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/>,
+      <xref linkend="gtk3"/>,
       <xref role="runtime" linkend="sudo"/> (runtime),
       <xref linkend="xorg7-lib"/>, and
       <xref role="runtime" linkend="x-window-system"/> (runtime)
@@ -100,17 +96,17 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk2"/>,
-      <xref role="runtime" linkend="sudo"/> (実行時),
+      <xref linkend="gtk3"/>,
+      <xref role="runtime" linkend="sudo"/> (runtime),
       <xref linkend="xorg7-lib"/>,
-      <xref role="runtime" linkend="x-window-system"/> (実行時)
+      <xref role="runtime" linkend="x-window-system"/> (runtime)
     </para>
 @z
 
 @x
-        User Notes: <ulink url='&blfs-wiki;/ssh-askpass'/>
+        Editor Notes: <ulink url='&blfs-wiki;/ssh-askpass'/>
 @y
-        &UserNotes;: <ulink url='&blfs-wiki;/ssh-askpass'/>
+        &EditorNotes;: <ulink url='&blfs-wiki;/ssh-askpass'/>
 @z
 
 @x
@@ -194,7 +190,8 @@
 
 @x
         <seg>
-          None
+          gnome-ssh-askpass3, ssh-askpass (symlink to
+          <filename>gnome-ssh-askpass3</filename>)
         </seg>
         <seg>
           None
@@ -204,7 +201,8 @@
         </seg>
 @y
         <seg>
-          &None;
+          gnome-ssh-askpass3, ssh-askpass (symlink to
+          <filename>gnome-ssh-askpass3</filename>)
         </seg>
         <seg>
           &None;

@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libtasn1-buildsize     "14 MB (with tests)">
-  <!ENTITY libtasn1-time          "0.4 SBU (with tests)">
+  <!ENTITY libtasn1-buildsize     "17 MB (with tests)">
+  <!ENTITY libtasn1-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY libtasn1-buildsize     "14 MB (テスト込み)">
-  <!ENTITY libtasn1-time          "0.4 SBU (テスト込み)">
+  <!ENTITY libtasn1-buildsize     "17 MB (テスト込み)">
+  <!ENTITY libtasn1-time          "0.8 SBU (テスト込み)">
 @z
 
 @x
@@ -90,12 +90,6 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="valgrind"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

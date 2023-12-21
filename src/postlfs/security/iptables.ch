@@ -75,34 +75,28 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
 <!--      <xref linkend="nftables"/>, -->
-      <xref linkend="libpcap"/> (required for nfsypproxy support),
+      <xref linkend="libpcap"/> (required for BPF compiler or nfsynproxy support),
       <ulink url="https://github.com/tadamdam/bpf-utils">bpf-utils</ulink>
       (required for Berkeley Packet Filter support),
       <ulink url="https://netfilter.org/projects/libnfnetlink/">libnfnetlink</ulink>
       (required for connlabel support),
       <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack</ulink>
-      (required for connlabel support), and 
+      (required for connlabel support), and
       <ulink url="https://netfilter.org/projects/nftables/">nftables</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
 <!--      <xref linkend="nftables"/>, -->
-      <xref linkend="libpcap"/> (required for nfsypproxy support),
+      <xref linkend="libpcap"/> (required for BPF compiler or nfsynproxy support),
       <ulink url="https://github.com/tadamdam/bpf-utils">bpf-utils</ulink>
       (required for Berkeley Packet Filter support),
       <ulink url="https://netfilter.org/projects/libnfnetlink/">libnfnetlink</ulink>
       (required for connlabel support),
       <ulink url="https://netfilter.org/projects/libnetfilter_conntrack/">libnetfilter_conntrack</ulink>
-      (required for connlabel support), and 
+      (required for connlabel support), and
       <ulink url="https://netfilter.org/projects/nftables/">nftables</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

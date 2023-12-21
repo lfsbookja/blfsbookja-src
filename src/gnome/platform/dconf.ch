@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -146,7 +142,8 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="gtk3"/> (for the editor), and
+      <xref linkend="gtk3"/> (for the editor),
+      <xref linkend="libhandy1"/> (for the editor), and
       <xref linkend="libxml2"/> (for the editor)
     </para>
 @y
@@ -155,6 +152,7 @@
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
       <xref linkend="gtk3"/> (エディターのため),
+      <xref linkend="libhandy1"/> (エディターのため),
       <xref linkend="libxml2"/> (エディターのため)
     </para>
 @z
@@ -185,12 +183,6 @@
       <xref linkend="gtk-doc"/>,
       <ulink url="https://github.com/scop/bash-completion">bash-completion</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -266,28 +258,24 @@
           dconf and dconf-editor
         </seg>
         <seg>
-           <!--libdconf-dbus-1.so, -->
-          libdconf.so,
+          libdconf.so
           and libdconfsettings.so (GIO Module installed in
           <filename class="directory">/usr/lib/gio/modules</filename>)
         </seg>
         <seg>
-          /usr/{include,share/gtk-doc/html}/dconf 
-          <!-- and /usr/include/dconf-dbus-1 -->
+          /usr/{include,share/gtk-doc/html}/dconf
         </seg>
 @y
         <seg>
           dconf, dconf-editor
         </seg>
         <seg>
-           <!--libdconf-dbus-1.so, -->
-          libdconf.so,
-          libdconfsettings.so (GIO Module installed in
+          libdconf.so
+          and libdconfsettings.so (GIO Module installed in
           <filename class="directory">/usr/lib/gio/modules</filename>)
         </seg>
         <seg>
-          /usr/{include,share/gtk-doc/html}/dconf 
-          <!-- and /usr/include/dconf-dbus-1 -->
+          /usr/{include,share/gtk-doc/html}/dconf
         </seg>
 @z
 

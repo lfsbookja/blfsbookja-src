@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -87,9 +83,19 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <ulink url="https://github.com/FFMS/ffms2">ffms2</ulink>,
+      <ulink url="https://github.com/gpac/gpac/releases/">gpac</ulink> or
+      <ulink url="https://github.com/l-smash/l-smash">liblsmash</ulink>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <ulink url="https://github.com/FFMS/ffms2">ffms2</ulink>,
+      <ulink url="https://github.com/gpac/gpac/releases/">gpac</ulink> または
+      <ulink url="https://github.com/l-smash/l-smash">liblsmash</ulink>
+    </para>
 @z
 
 @x

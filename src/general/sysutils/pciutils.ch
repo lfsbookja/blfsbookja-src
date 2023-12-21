@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -77,12 +73,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of PCI Utils</title>
 @y
     <title>&InstallationOf1;PCI Utils&InstallationOf2;</title>
@@ -141,7 +131,7 @@
       <command>update-pciids</command> as the <systemitem
       class="username">root</systemitem> user. This program requires the
       <xref linkend="which"/> script or program to find <xref linkend="curl"/>,
-      <xref linkend="lynx"/> or <xref linkend="wget"/> which are used to
+      <xref linkend="lynx"/>, or <xref linkend="wget"/> which are used to
       download the most current file, and then replace the existing file in
       <filename class="directory">/usr/share/hwdata</filename>.
 @y
@@ -243,9 +233,9 @@
 @z
 
 @x libpci.so
-          is library that allows applications to access the PCI
+          is a library that allows applications to access the PCI
           subsystem
 @y
-          is library that allows applications to access the PCI
+          is a library that allows applications to access the PCI
           subsystem
 @z

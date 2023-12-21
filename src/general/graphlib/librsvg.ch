@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY librsvg-buildsize     "865 MB (26 MB installed), add 211 MB for tests">
-  <!ENTITY librsvg-time          "1.6 SBU (Using parallelism=4), add 1.9 SBU for tests">
+  <!ENTITY librsvg-buildsize     "998 MB (16 MB installed), add 589 MB for tests">
+  <!ENTITY librsvg-time          "1.2 SBU (add 0.5 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY librsvg-buildsize     "865 MB（インストールに 26 MB）、テスト実施時はさらに 211 MB">
-  <!ENTITY librsvg-time          "1.6 SBU（parallelism=4 利用時）、テスト実施時はさらに 1.9 SBU">
+  <!ENTITY librsvg-buildsize     "998 MB（インストールに 16 MB）、テスト実施時はさらに 589 MB">
+  <!ENTITY librsvg-time          "1.2 SBU（テスト実施時はさらに 0.5 SBU; いずれも parallelism=4 利用時）">
 @z
 
 @x
@@ -82,16 +82,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gdk-pixbuf"/>,
       <xref linkend="cairo"/>,
-      <xref linkend="pango"/>, and 
+      <xref linkend="gdk-pixbuf"/>,
+      <xref linkend="pango"/>, and
       <xref linkend="rust"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gdk-pixbuf"/>,
       <xref linkend="cairo"/>,
+      <xref linkend="gdk-pixbuf"/>,
       <xref linkend="pango"/>,
       <xref linkend="rust"/>
     </para>
@@ -114,19 +114,17 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="docutils"/> (for man pages),
+      <xref linkend="gi-docgen"/> (for documentation), and
+      <xref linkend="xorg7-font"/> (for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="docutils"/> (for man pages),
+      <xref linkend="gi-docgen"/> (for documentation),
+      <xref linkend="xorg7-font"/> (for tests)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -143,21 +141,9 @@
 @z
 
 @x
-      Many of the tests in 'reftests' may fail (over half in May 2021) because
-      they produce, and then diff, graphic files with text and the details such
-      as spacing vary when the system versions of cairo, freetype, pixman, pango
-      and perhaps harfbuzz differ from the versions on the system where the
-      reference files were created. For this reason, running the tests is not
-      recommended.
-      To test the results anyway, issue: <command>make -k check</command>.
+      To test the results, issue: <command>LC_ALL=C make -k check</command>.
 @y
-      Many of the tests in 'reftests' may fail (over half in May 2021) because
-      they produce, and then diff, graphic files with text and the details such
-      as spacing vary when the system versions of cairo, freetype, pixman, pango
-      and perhaps harfbuzz differ from the versions on the system where the
-      reference files were created. For this reason, running the tests is not
-      recommended.
-      To test the results anyway, issue: <command>make -k check</command>.
+      ビルド結果をテストする場合は <command>LC_ALL=C make -k check</command> を実行します。
 @z
 
 @x
@@ -211,25 +197,27 @@
           rsvg-convert
         </seg>
         <seg>
-          librsvg-2.so and libpixbufloader-svg.so
+          librsvg-2.so and
+          libpixbufloader-svg.so (installed in /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders)
         </seg>
         <seg>
-          /usr/include/librsvg-2.0,
-          /usr/share/doc/librsvg-&librsvg-version;, and
-          /usr/share/gtk-doc/html/rsvg-2.0
-        </seg>
+          /usr/include/librsvg-2.0 and
+          /usr/share/doc/librsvg-&librsvg-version;
+<!--      /usr/share/gtk-doc/html/rsvg-2.0 not built with
+               current instructions (needs gi-docgen)-->
 @y
         <seg>
           rsvg-convert
         </seg>
         <seg>
-          librsvg-2.so, libpixbufloader-svg.so
+          librsvg-2.so,
+          libpixbufloader-svg.so (installed in /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders)
         </seg>
         <seg>
-          /usr/include/librsvg-2.0,
-          /usr/share/doc/librsvg-&librsvg-version;,
-          /usr/share/gtk-doc/html/rsvg-2.0
-        </seg>
+          /usr/include/librsvg-2.0 and
+          /usr/share/doc/librsvg-&librsvg-version;
+<!--      /usr/share/gtk-doc/html/rsvg-2.0 not built with
+               current instructions (needs gi-docgen)-->
 @z
 
 @x

@@ -1,19 +1,16 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author$
-## $Rev$
-## $Date::                           $
-##
-BOOKdir = @abs_bookdir@/multimedia/libdriv
+
 CHANGE_FILES = \
+	alsa.ch               \
 	alsa-firmware.ch      \
 	alsa-lib.ch           \
+	alsa-lib-kernel.ch    \
 	alsa-oss.ch           \
 	alsa-plugins.ch       \
 	alsa-tools.ch         \
 	alsa-utils.ch         \
-	alsa.ch               \
 	audiofile.ch          \
 	faac.ch               \
 	faad2.ch              \
@@ -29,13 +26,16 @@ CHANGE_FILES = \
 	gstreamer10.ch        \
 	gstreamer10-vaapi.ch  \
 	id3lib.ch             \
+	intel-media.ch        \
+	intel-media-kernel.ch \
+	intel-vaapi-driver.ch \
 	liba52.ch             \
 	libao.ch              \
+	libaom.ch             \
 	libass.ch             \
 	libcanberra.ch        \
 	libcddb.ch            \
 	libcdio.ch            \
-	libdiscid.ch          \
 	libdriv.ch            \
 	libdv.ch              \
 	libdvdcss.ch          \
@@ -46,10 +46,14 @@ CHANGE_FILES = \
 	libmusicbrainz.ch     \
 	libmusicbrainz5.ch    \
 	libogg.ch             \
+	libplacebo.ch         \
 	libquicktime.ch       \
 	libsamplerate.ch      \
 	libsndfile.ch         \
 	libtheora.ch          \
+	libva.ch              \
+	libvdpau.ch           \
+	libvdpau-va-gl.ch     \
 	libvorbis.ch          \
 	libvpx.ch             \
 	mlt.ch                \
@@ -64,29 +68,10 @@ CHANGE_FILES = \
 	speex.ch              \
 	taglib.ch             \
 	v4l-utils.ch          \
+	wireplumber.ch        \
 	x264.ch               \
 	x265.ch               \
 	xine-lib.ch           \
 	xvid.ch
 
-EXTRA_DIST = $(CHANGE_FILES)
-srcdir = @srcdir@
-srcs = $(CHANGE_FILES:.ch=.xml)
-
-SUFFIXES = .ch .xml
-.ch.xml:
-	$(top_builddir)/$(CTIE) -m $@ $(BOOKdir)/$@ $(srcdir)/$*.ch >/dev/null
-
-all: ctie $(srcs)
-
-ctie:
-	@$(MAKE) -C $(top_builddir)/$@ $@ >/dev/null
-
--include Makefile.sub
-Makefile.sub: $(top_srcdir)/bin/ctiemake.sh $(top_builddir)/config.log
-	@$(top_srcdir)/bin/ctiemake.sh $(srcs)
-
-@MAINT@.PHONY: chbuild
-@MAINT@chbuild: $(addprefix $(srcdir)/, $(CHANGE_FILES))
-@MAINT@$(addprefix $(srcdir)/, $(CHANGE_FILES)):
-@MAINT@	@if test ! -f $(@:.xml=.ch); then $(top_srcdir)/bin/buildch.perl `echo $@ | sed -e "s|^$(srcdir)|$(BOOKdir)|" -e "s|\.ch$$|.xml|"` $(@:.xml=.ch); fi
+include $(top_srcdir)/build-aux/main.mk

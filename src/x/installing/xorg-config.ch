@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 @y
@@ -159,22 +155,26 @@
 @z
 
 @x
-        Again, with modern Xorg, little or no additional configuration is
-        necessary. If you should need extra options passed to your video driver,
-        for instance, you could use something like the following (again,
-        executed as the <systemitem class="username">root</systemitem> user):
+        If you want to set the monitor resolution for Xorg, first run
+        <command>xrandr</command> in a X terminal to list the supported
+        resolutions and the corresponding refresh rates.  For example, it
+        outputs the following for one monitor:
 @y
-        再度述べますが、最近の Xorg では追加の設定を行う必要はほとんどありません。
-        例えばお手元のビデオドライバーに特別なオプションを与えなければならないのであれば、以下のような設定とすることも考えられます。
-        (再度 <systemitem class="username">root</systemitem> になって実行します。)
+        If you want to set the monitor resolution for Xorg, first run
+        <command>xrandr</command> in a X terminal to list the supported
+        resolutions and the corresponding refresh rates.  For example, it
+        outputs the following for one monitor:
 @z
 
 @x
-        Another common setup is having multiple server layouts for use in
-        different environments. Though the server will automatically detect the
-        presence of another monitor, it may get the order incorrect:
+        From the output we can see the monitor is identified
+        <literal>DP-1</literal>.  Select a suitable resolution from the
+        output list, for example <literal>1920x1440</literal>.  Then
+        as the &root; user, create a configuration file for the Xorg server:
 @y
-        Another common setup is having multiple server layouts for use in
-        different environments. Though the server will automatically detect the
-        presence of another monitor, it may get the order incorrect:
+        From the output we can see the monitor is identified
+        <literal>DP-1</literal>.  Select a suitable resolution from the
+        output list, for example <literal>1920x1440</literal>.  Then
+        as the &root; user, create a configuration file for the Xorg server:
 @z
+

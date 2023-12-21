@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY fribidi-buildsize     "22 MB (with tests)">
+  <!ENTITY fribidi-buildsize     "21 MB (with tests)">
   <!ENTITY fribidi-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY fribidi-buildsize     "22 MB (テスト込み)">
+  <!ENTITY fribidi-buildsize     "21 MB (テスト込み)">
   <!ENTITY fribidi-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
@@ -25,12 +25,12 @@
 
 @x
       The <application>FriBidi</application> package is an implementation
-      of the <ulink url="http://www.unicode.org/reports/tr9/">Unicode
+      of the <ulink url="https://www.unicode.org/reports/tr9/">Unicode
       Bidirectional Algorithm (BIDI)</ulink>. This is useful for supporting
       Arabic and Hebrew alphabets in other packages.
 @y
       <application>FriBidi</application> パッケージは <ulink
-      url="http://www.unicode.org/reports/tr9/">Unicode 双方向アルゴリズム</ulink> (Unicode Bidirectional Algorithm; bidi) を実現するものです。
+      url="https://www.unicode.org/reports/tr9/">Unicode 双方向アルゴリズム</ulink> (Unicode Bidirectional Algorithm; bidi) を実現するものです。
       これはアラビア語やヘブライ語を用いるパッケージにおいて活用されます。
 @z
 
@@ -85,19 +85,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http://www.ciselant.de/c2man/c2man.html">c2man (to build man pages)</ulink>
+      <ulink url="https://www.ciselant.de/c2man/c2man.html">c2man (to build man pages)</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="http://www.ciselant.de/c2man/c2man.html">c2man</ulink> (man ページ生成のため)
+      <ulink url="https://www.ciselant.de/c2man/c2man.html">c2man (man ページ生成のため)</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -180,8 +174,8 @@
 
 @x libfribidi.so
             contains functions used to implement the
-            <ulink url="http://www.unicode.org/reports/tr9/">Unicode
+            <ulink url="https://www.unicode.org/reports/tr9/">Unicode
             Bidirectional Algorithm</ulink>
 @y
-            <ulink url="http://www.unicode.org/reports/tr9/">Unicode 双方向アルゴリズム (Unicode Bidirectional Algorithm)</ulink> を実装するための関数を提供します。
+            <ulink url="https://www.unicode.org/reports/tr9/">Unicode 双方向アルゴリズム (Unicode Bidirectional Algorithm)</ulink> を実装するための関数を提供します。
 @z

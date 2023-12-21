@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY p11-kit-buildsize     "56 MB (with tests)">
-  <!ENTITY p11-kit-time          "0.2 SBU (add 0.6 SBU for tests)">
+  <!ENTITY p11-kit-buildsize     "95 MB (with tests)">
+  <!ENTITY p11-kit-time          "0.8 SBU (with tests)">
 @y
-  <!ENTITY p11-kit-buildsize     "56 MB (テスト込み)">
-  <!ENTITY p11-kit-time          "0.2 SBU (テスト実施時はさらに 0.6 SBU)">
+  <!ENTITY p11-kit-buildsize     "95 MB (テスト込み)">
+  <!ENTITY p11-kit-time          "0.8 SBU (テスト込み)">
 @z
 
 @x
@@ -81,14 +81,24 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libtasn1"/> and
-      <xref role="runtime" linkend="make-ca"/> (runtime)
+      <xref linkend="libtasn1"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="libtasn1"/>,
-      <xref role="runtime" linkend="make-ca"/> (runtime)
+      <xref linkend="libtasn1"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended (runtime)</bridgehead>
+    <para role="recommended">
+      <xref role="runtime" linkend="make-ca"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended; (実行時)</bridgehead>
+    <para role="recommended">
+      <xref role="runtime" linkend="make-ca"/>
     </para>
 @z
 
@@ -109,12 +119,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of p11-kit</title>
 @y
     <title>&InstallationOf1;p11-kit&InstallationOf2;</title>
@@ -128,9 +132,9 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. 
+      To test the results, issue: <command>LC_ALL=C ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      ビルド結果をテストする場合は <command>LC_ALL=C ninja test</command> を実行します。
 @z
 
 @x

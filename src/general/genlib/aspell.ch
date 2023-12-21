@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY aspell-buildsize     "51 MB (Additional 8 MB for EN dictionary)">
+  <!ENTITY aspell-buildsize     "41 MB (Additional 8 MB for EN dictionary)">
 @y
-  <!ENTITY aspell-buildsize     "51 MB (EN 辞書導入の場合、さらに 8 MB)">
+  <!ENTITY aspell-buildsize     "41 MB (EN 辞書導入の場合、さらに 8 MB)">
 @z
 
 @x
@@ -80,21 +76,24 @@
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
     <para>
-      You'll need to download at least one dictionary. The link below will take
-      you to a page containing links to dictionaries in many languages.
+      You'll need to download at least one dictionary. The English dictionary
+      is given as an example below. Dictionaries in many other languages can be
+      found at <ulink url="&gnu-http;/aspell/dict"/>.
     </para>
 @y
     <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
     <para>
       最低でも１つの辞書データはダウンロードしておく必要があります。
-      以下に示すリンクは、さまざまな言語に対する辞書データへのリンクを示したページを表示します。
+      以下の例では英語の辞書を示しています。
+      さまざまな言語に対する辞書データについては <ulink
+      url="&gnu-http;/aspell/dict"/> を確認してください。
     </para>
 @z
 
 @x
-          Aspell dictionaries: <ulink url="&gnu-http;/aspell/dict"/>
+          Aspell English dictionary: <ulink url="&aspell-en-dict-url;"/>
 @y
-          Aspell 辞書: <ulink url="&gnu-http;/aspell/dict"/>
+          Aspell 英語辞書: <ulink url="&aspell-en-dict-url;"/>
 @z
 
 @x
@@ -113,12 +112,6 @@
     <para role="required">
       <xref linkend="which"/> (辞書のために必要)
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/aspell"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/aspell"/>
 @z
 
 @x
@@ -189,11 +182,11 @@
 
 @x
         After <application>Aspell</application> is installed, you must set up at
-        least one dictionary. Install one or more dictionaries by running the
+        least one dictionary. Install the English dictionary by running the
         following commands:
 @y
         <application>Aspell</application> をインストールしたら、次に最低でも１つの辞書をセットアップする必要があります。
-        以下のコマンドを実行して辞書データをインストールします。
+        以下のコマンドを実行して、英語の辞書データをインストールします。
 @z
 
 @x

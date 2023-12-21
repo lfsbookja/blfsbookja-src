@@ -20,14 +20,14 @@
       services to SMB/CIFS clients and Windows networking to Linux clients.
       <application>Samba</application> can also be configured as a Windows
       Domain Controller replacement, a file/print server acting as a member
-      of a Windows Active Directory domain and a NetBIOS (rfc1001/1002)
+      of a Windows Active Directory domain and a NetBIOS (RFC1001/1002)
       nameserver (which among other things provides LAN browsing support).
 @y
       The <application>Samba</application> package provides file and print
       services to SMB/CIFS clients and Windows networking to Linux clients.
       <application>Samba</application> can also be configured as a Windows
       Domain Controller replacement, a file/print server acting as a member
-      of a Windows Active Directory domain and a NetBIOS (rfc1001/1002)
+      of a Windows Active Directory domain and a NetBIOS (RFC1001/1002)
       nameserver (which among other things provides LAN browsing support).
 @z
 
@@ -80,159 +80,15 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="gnutls"/>,
-      <xref linkend="jansson"/>,
-      <xref linkend="libtirpc"/>,
-      <xref linkend="lmdb"/>, and
-      <xref linkend="rpcsvc-proto"/>
-    </para>
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="gnutls"/>,
-      <xref linkend="jansson"/>,
-      <xref linkend="libtirpc"/>,
-      <xref linkend="lmdb"/>,
-      <xref linkend="rpcsvc-proto"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <phrase revision="sysv"><xref linkend="dbus"/> (for vfs_snapper, which is
-      useful on systems that support Volume Shadow Copies on Windows),</phrase>
-      <xref linkend="fuse3"/>,
-      <xref linkend="gpgme"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="libtasn1"/>,
-      <xref linkend="libxslt"/> (for documentation),
-      <xref linkend="linux-pam"/>,
-      <xref linkend="perl-parse-yapp"/>, and
-      <xref linkend="openldap"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <phrase revision="sysv"><xref linkend="dbus"/> (for vfs_snapper, which is
-      useful on systems that support Volume Shadow Copies on Windows),</phrase>
-      <xref linkend="fuse3"/>,
-      <xref linkend="gpgme"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="libtasn1"/>,
-      <xref linkend="libxslt"/> (ドキュメント生成のため),
-      <xref linkend="linux-pam"/>,
-      <xref linkend="perl-parse-yapp"/>,
-      <xref linkend="openldap"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="avahi"/>,
-      <xref linkend="bind"/>,
-      <xref linkend="cups"/>,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="gdb"/>,
-      <xref linkend="git"/>,
-      <xref linkend="gnupg2"/> (required for ADS and testsuite),
-      <xref linkend="libaio"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="libcap-pam"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libnsl"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="nss"/>,
-      <xref linkend="popt"/>,
-      <xref linkend="talloc"/> (included),
-      <xref linkend="vala"/>,
-      <xref linkend="valgrind"/> (optionally used by the test suite),
-      <!--<xref linkend="wireshark"/> (module installed),-->
-      <xref linkend="xfsprogs"/>,
-      <ulink url="https://cmocka.org/">cmocka</ulink>,
-      <ulink url="https://cryptography.io/en/latest/">cryptography</ulink>,
-      <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
-      <ulink url="https://cwrap.org/">cwrap</ulink>,
-      <ulink url="&pypi;/dnspython/">dnspython</ulink>,
-      <ulink url="https://packages.debian.org/stretch/fam">FAM</ulink>,
-      <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
-      <ulink url="https://www.gluster.org/">GlusterFS</ulink>,
-      <ulink url="https://github.com/heimdal/">Heimdal</ulink> (included),
-      <ulink url="https://pypi.org/project/iso8601/">iso8601</ulink>,
-      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-      <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
-      <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
-      <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
-      <ulink url="https://pypi.org/project/pyasn1/">pyasn1</ulink>,
-      <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
-      <ulink url="https://tevent.samba.org/">tevent</ulink> (included),
-      <ulink url="https://tdb.samba.org/">tdb</ulink> (included), and
-      <ulink url="https://download.gnome.org/sources/tracker/2.3/">tracker-2</ulink>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="avahi"/>,
-      <xref linkend="bind"/>,
-      <xref linkend="cups"/>,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="gdb"/>,
-      <xref linkend="git"/>,
-      <xref linkend="gnupg2"/> (required for ADS and testsuite),
-      <xref linkend="libaio"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="libcap-pam"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libnsl"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="nss"/>,
-      <xref linkend="popt"/>,
-      <xref linkend="talloc"/> (included),
-      <xref linkend="vala"/>,
-      <xref linkend="valgrind"/> (optionally used by the test suite),
-      <!--<xref linkend="wireshark"/> (module installed),-->
-      <xref linkend="xfsprogs"/>,
-      <ulink url="https://cmocka.org/">cmocka</ulink>,
-      <ulink url="https://cryptography.io/en/latest/">cryptography</ulink>,
-      <ulink url="https://ctdb.samba.org/">ctdb</ulink> (included),
-      <ulink url="https://cwrap.org/">cwrap</ulink>,
-      <ulink url="&pypi;/dnspython/">dnspython</ulink>,
-      <ulink url="https://packages.debian.org/stretch/fam">FAM</ulink>,
-      <ulink url="https://people.gnome.org/~veillard/gamin/">Gamin</ulink>,
-      <ulink url="https://www.gluster.org/">GlusterFS</ulink>,
-      <ulink url="https://github.com/heimdal/">Heimdal</ulink> (included),
-      <ulink url="https://pypi.org/project/iso8601/">iso8601</ulink>,
-      <ulink url="http://www.nongnu.org/libunwind/">libunwind</ulink>,
-      <ulink url="https://ldb.samba.org/">ldb</ulink> (included),
-      <ulink url="&pypi;/m2crypto">M2Crypto</ulink> (required for ADS),
-      <ulink url="http://www.openafs.org/">OpenAFS</ulink>,
-      <ulink url="https://pypi.org/project/pyasn1/">pyasn1</ulink>,
-      <ulink url="&pypi;/pygpgme/">PyGPGME</ulink> (recommended for ADS),
-      <ulink url="https://tevent.samba.org/">tevent</ulink> (included),
-      <ulink url="https://tdb.samba.org/">tdb</ulink> (included), and
-      <ulink url="https://download.gnome.org/sources/tracker/2.3/">tracker-2</ulink>
-    </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
     <title>Installation of Samba</title>
 @y
     <title>&InstallationOf1;Samba&InstallationOf2;</title>
-@z
-
-@x
-      Fix a test that always fails:
-@y
-      Fix a test that always fails:
 @z
 
 @x
@@ -248,14 +104,12 @@
       suite will produce lines that look like failures, but these are innocuous.
       The last few lines of output should report <emphasis>"ALL OK"</emphasis>
       for a good test run. A summary of any failures can be found in
-      <filename class="directory">./st/summary</filename>. With Samba-4.14.4,
-      many tests are known to fail.
+      <filename class="directory">./st/summary</filename>.
 @y
       ビルド結果をテストする場合は、<command>PATH=$PWD/pyvenv/bin:$PATH make quicktest</command> を実行します。
       テストスイートの実行により複数行が出力され、あたかもエラーのように見えますが、これは問題ありません。
       出力の最後に <emphasis>"ALL OK"</emphasis> と表示されるのでテスト実行が成功したことが分かります。
       テストに失敗した場合は <filename class="directory">./st/summary</filename> を見て確認できます。
-      Samba-4.14.4 においては多くのテストが失敗します。
 @z
 
 @x
@@ -275,9 +129,9 @@
 @z
 
 @x
-      Fix a hard coded path to Python 3 interpreter:
+      Fix hard coded paths to Python 3 interpreter:
 @y
-      Fix a hard coded path to Python 3 interpreter:
+      Fix hard coded paths to Python 3 interpreter:
 @z
 
 @x
@@ -325,7 +179,7 @@
       <parameter>--without-ad-dc</parameter>: Disables
       Active Directory Domain Controller functionality. See <ulink url=
       "https://wiki.samba.org/index.php/Setup_a_Samba_Active_Directory_Domain_Controller">
-      Setup a Samba Active Directory Domain Controller</ulink> for detailed
+      Set up a Samba Active Directory Domain Controller</ulink> for detailed
       information. Remove this switch if you've installed the Python modules
       needed for ADS support. Note that BLFS does not provide a samba bootscript
       or systemd unit for an Active Directory domain controller.
@@ -333,7 +187,7 @@
       <parameter>--without-ad-dc</parameter>: Disables
       Active Directory Domain Controller functionality. See <ulink url=
       "https://wiki.samba.org/index.php/Setup_a_Samba_Active_Directory_Domain_Controller">
-      Setup a Samba Active Directory Domain Controller</ulink> for detailed
+      Set up a Samba Active Directory Domain Controller</ulink> for detailed
       information. Remove this switch if you've installed the Python modules
       needed for ADS support. Note that BLFS does not provide a samba bootscript
       or systemd unit for an Active Directory domain controller.
@@ -345,30 +199,6 @@
 @y
       <option>--with-selftest-prefix=SELFTEST_PREFIX</option>: This option
       specifies the test suite work directory (default=./st).
-@z
-
-@x
-      <command>mv -v /usr/lib/libnss_win{s,bind}.so* /lib</command>:
-      The nss libraries are installed in
-      <filename class="directory">/usr/lib</filename> by default. Move them to
-      <filename class="directory">/lib</filename>.
-@y
-      <command>mv -v /usr/lib/libnss_win{s,bind}.so* /lib</command>:
-      The nss libraries are installed in
-      <filename class="directory">/usr/lib</filename> by default. Move them to
-      <filename class="directory">/lib</filename>.
-@z
-
-@x
-      <command>ln -v -sf ../../lib/libnss_winbind.so.2 /usr/lib/libnss_winbind.so</command>
-      and <command>ln -v -sf ../../lib/libnss_wins.so.2    /usr/lib/libnss_wins.so</command>:
-      These symlinks are required when applications build against these
-      libraries.
-@y
-      <command>ln -v -sf ../../lib/libnss_winbind.so.2 /usr/lib/libnss_winbind.so</command>
-      and <command>ln -v -sf ../../lib/libnss_wins.so.2    /usr/lib/libnss_wins.so</command>:
-      These symlinks are required when applications build against these
-      libraries.
 @z
 
 @x
@@ -459,7 +289,7 @@
           instead of copying and editing the default file as mentioned in the
           <quote>Command Explanations</quote> section. How you create/edit the
           <filename>/etc/samba/smb.conf</filename> file will be left up to
-          you. Do ensure the file is only writeable by the
+          you. Do ensure the file is only writable by the
           <systemitem class="username">root</systemitem> user (mode 644).
 @y
           You may find it easier to copy the configuration parameters shown
@@ -467,7 +297,7 @@
           instead of copying and editing the default file as mentioned in the
           <quote>Command Explanations</quote> section. How you create/edit the
           <filename>/etc/samba/smb.conf</filename> file will be left up to
-          you. Do ensure the file is only writeable by the
+          you. Do ensure the file is only writable by the
           <systemitem class="username">root</systemitem> user (mode 644).
 @z
 
@@ -665,44 +495,6 @@
           <command>winbindd</command> daemon and the corresponding
           <phrase revision="sysv">bootscript</phrase>
           <phrase revision="systemd">systemd unit</phrase> are needed.
-@z
-
-@x
-          There is quite a bit of documentation available which covers many
-          of these advanced configurations. Point your web browser to the links
-          below to view some of the documentation included with the
-          <application>Samba</application> package:
-@y
-          There is quite a bit of documentation available which covers many
-          of these advanced configurations. Point your web browser to the links
-          below to view some of the documentation included with the
-          <application>Samba</application> package:
-@z
-
-@x
-              Using Samba, 2nd Edition; a popular book published by O'Reilly
-              <ulink url=
-                "http://www.samba.org/samba/docs/using_samba/toc.html"/>
-@y
-              Using Samba, 2nd Edition; a popular book published by O'Reilly
-              <ulink url=
-                "http://www.samba.org/samba/docs/using_samba/toc.html"/>
-@z
-
-@x
-              The Official Samba HOWTO and Reference Guide <ulink url=
-               "http://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/"/>
-@y
-              The Official Samba HOWTO and Reference Guide <ulink url=
-               "http://www.samba.org/samba/docs/man/Samba-HOWTO-Collection/"/>
-@z
-
-@x
-              Samba-3 by Example
-              <ulink url="http://www.samba.org/samba/docs/man/Samba-Guide/"/>
-@y
-              Samba-3 by Example
-              <ulink url="http://www.samba.org/samba/docs/man/Samba-Guide/"/>
 @z
 
 @x

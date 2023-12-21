@@ -24,11 +24,11 @@
 @z
 
 @x
-      The <application>libyaml</application> package contains a C
+      The <application>yaml</application> package contains a C
       library for parsing and emitting YAML (YAML Ain't Markup
       Language) code.
 @y
-      <application>libyaml</application> パッケージは YAML (YAML Ain't Markup
+      <application>yaml</application> パッケージは YAML (YAML Ain't Markup
       Language) コードの解析と出力を行う C ライブラリを提供します。
 @z
 
@@ -90,12 +90,6 @@
     <para role="optional">
       <xref linkend="doxygen"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

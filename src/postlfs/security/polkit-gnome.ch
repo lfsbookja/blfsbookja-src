@@ -91,12 +91,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Polkit GNOME</title>
 @y
     <title>&InstallationOf1;Polkit GNOME&InstallationOf2;</title>
@@ -134,15 +128,16 @@
 @z
 
 @x
-        For the authentification framework to work,
-        <command>polkit-gnome-authentification-agent-1</command> needs to be
-        started. However, <command>make install</command> did not 
-        install a startup file for the <application>Polkit GNOME</application> 
+        For the authentication framework to work,
+        <command>polkit-gnome-authentication-agent-1</command> needs to be
+        started. However, <command>make install</command> did not
+        install a startup file for the <application>Polkit GNOME</application>
         so you have to create it by yourself.
 @y
-        認証フレームワークを正しく動作させるために、<command>polkit-gnome-authentification-agent-1</command> を起動しておく必要があります。
-        However, <command>make install</command> did not 
-        install startup file for the <application>Polkit GNOME</application> 
+        For the authentication framework to work,
+        <command>polkit-gnome-authentication-agent-1</command> needs to be
+        started. However, <command>make install</command> did not
+        install a startup file for the <application>Polkit GNOME</application>
         so you have to create it by yourself.
 @z
 

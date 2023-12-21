@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -20,17 +16,17 @@
 @z
 
 @x
-      The <application>At-Spi2 Core</application> package is a part of the
-      GNOME Accessibility Project. It provides a Service Provider Interface
-      for the Assistive Technologies available on the
-      <application>GNOME</application> platform and a library against which
-      applications can be linked.
+      The <application>At-Spi2 Core</application> package contains a
+      comprehensive accessibility framework for the Assistive Technologies
+      available on the <application>GNOME</application> platform. This includes
+      a set of interfaces which are implemented by other toolkits and
+      applications.
 @y
-      The <application>At-Spi2 Core</application> package is a part of the
-      GNOME Accessibility Project. It provides a Service Provider Interface
-      for the Assistive Technologies available on the
-      <application>GNOME</application> platform and a library against which
-      applications can be linked.
+      The <application>At-Spi2 Core</application> package contains a
+      comprehensive accessibility framework for the Assistive Technologies
+      available on the <application>GNOME</application> platform. This includes
+      a set of interfaces which are implemented by other toolkits and
+      applications.
 @z
 
 @x
@@ -85,15 +81,21 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/>, and
-      <xref linkend="xorg7-lib"/>
+      <xref linkend="glib2"/>,
+      <!-- Reports "Cannot get the default GSettingsSchemaSource" on
+           startup w/o it. -->
+      <xref role="runtime" linkend="gsettings-desktop-schemas"/> (Runtime),
+      and <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="xorg7-lib"/>
+      <!-- Reports "Cannot get the default GSettingsSchemaSource" on
+           startup w/o it. -->
+      <xref role="runtime" linkend="gsettings-desktop-schemas"/> (Runtime),
+      and <xref linkend="xorg7-lib"/>
     </para>
 @z
 
@@ -112,19 +114,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gi-docgen"/> and <xref linkend='sphinx'/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gi-docgen"/>, <xref linkend='sphinx'/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -141,17 +137,17 @@
 @z
 
 @x
-      A session bus address, normally available in an Xorg terminal,
-      is necessary to run the tests. And, the test suite requires the 
-      glib schemas of the package already installed. To test the results,
-      install the package first, then issue: <command>ninja test</command>.
-      The memory test is known to timeout.
+      The test suite also requires the glib schemas of the package to be
+      installed already. To test the results, install the package first,
+      then issue: <command>dbus-run-session ninja test</command>.
+      One test, <filename>atk-test</filename>, is known to timeout on some
+      systems.
 @y
-      A session bus address, normally available in an Xorg terminal,
-      is necessary to run the tests. And, the test suite requires the 
-      glib schemas of the package already installed. To test the results,
-      install the package first, then issue: <command>ninja test</command>.
-      The memory test is known to timeout.
+      The test suite also requires the glib schemas of the package to be
+      installed already. To test the results, install the package first,
+      then issue: <command>dbus-run-session ninja test</command>.
+      One test, <filename>atk-test</filename>, is known to timeout on some
+      systems.
 @z
 
 @x
@@ -183,34 +179,40 @@
 @z
 
 @x
-        <!-- <seg> No user executable programs
-          at-spi-bus-launcher and at-spi2-registryd in /usr/libexec
-        </seg> -->
         <seg>
           None
         </seg>
         <seg>
-          libatspi.so
+          libatk-1.0.so,
+          libatk-bridge-2.0.so,
+          libatspi.so, and
+          /usr/lib/gtk-2.0/modules/libatk-bridge.so
         </seg>
         <seg>
+          /usr/include/atk-1.0,
           /usr/include/at-spi-2.0,
+          /usr/include/at-spi2-atk,
+          /usr/lib/gnome-settings-daemon-3.0,
           /usr/share/defaults/at-spi2, and
-          /usr/share/gtk-doc/html/libatspi
+          /usr/share/gtk-doc/html/libatspi (optional)
         </seg>
 @y
-        <!-- <seg> No user executable programs
-          at-spi-bus-launcher and at-spi2-registryd in /usr/libexec
-        </seg> -->
         <seg>
           &None;
         </seg>
         <seg>
-          libatspi.so
+          libatk-1.0.so,
+          libatk-bridge-2.0.so,
+          libatspi.so,
+          /usr/lib/gtk-2.0/modules/libatk-bridge.so
         </seg>
         <seg>
+          /usr/include/atk-1.0,
           /usr/include/at-spi-2.0,
+          /usr/include/at-spi2-atk,
+          /usr/lib/gnome-settings-daemon-3.0,
           /usr/share/defaults/at-spi2,
-          /usr/share/gtk-doc/html/libatspi
+          /usr/share/gtk-doc/html/libatspi (optional)
         </seg>
 @z
 

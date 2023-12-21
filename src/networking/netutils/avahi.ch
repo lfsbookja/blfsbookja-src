@@ -86,21 +86,17 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libdaemon"/>,
-      <xref linkend="libglade"/>, and
-      <xref linkend="qt5"/>
+      <xref linkend="libdaemon"/>, and
+      &qt5-deps;
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk2"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libdaemon"/>,
-      <xref linkend="libglade"/>,
-      <xref linkend="qt5"/>
+      <xref linkend="libdaemon"/>, and
+      &qt5-deps;
     </para>
 @z
 
@@ -108,8 +104,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus-python"/>,
+      <xref linkend="gtk2"/> (deprecated),
       <xref linkend="libevent"/>,
-      <xref linkend="pygtk"/>,
       <xref linkend="doxygen"/> and
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
       (for generating documentation)
@@ -118,18 +114,12 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus-python"/>,
+      <xref linkend="gtk2"/> (deprecated),
       <xref linkend="libevent"/>,
-      <xref linkend="pygtk"/>,
-      <xref linkend="doxygen"/>,
+      <xref linkend="doxygen"/> and
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
       (ドキュメント生成のため)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -149,7 +139,7 @@
 @z
 
 @x
-      There should also be a dedicated priviliged access group for
+      There should also be a dedicated privileged access group for
       <application>Avahi</application> clients. Issue the following command as
       the <systemitem class="username">root</systemitem> user: 
 @y

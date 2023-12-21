@@ -88,12 +88,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Plasma-wayland-protocols</title>
 @y
     <title>&InstallationOf1;Plasma-wayland-protocols&InstallationOf2;</title>

@@ -1,10 +1,12 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-SUBDIRS=appendices book general gnome introduction kde lxde \
-	networking \
-	multimedia postlfs pst server stylesheets template x \
+
+SUBDIRS=appendices book general gnome introduction kde \
+	kernel-config lxqt multimedia networking \
+	postlfs pst server stylesheets template x \
 	xfce xincludes xsoft
+
 EXTRA_DIST = \
 	general.ch  \
 	packages.ch \
@@ -74,7 +76,7 @@ udev-config:
 
 blfs: html wget-list
 
-html: $(BASEDIR)/index.html jchangelog
+html: $(BASEDIR)/index.html
 $(BASEDIR)/index.html: $(RENDERTMP)/$(BLFSHTML) version
 	@echo "Generating chunked XHTML files..."
 	$(XSLTPROC) --nonet                                \
@@ -103,12 +105,6 @@ $(BASEDIR)/index.html: $(RENDERTMP)/$(BLFSHTML) version
 	  bash $(BOOKdir)/obfuscate.sh $$filename; \
 	  sed -i -e "s@text/html@application/xhtml+xml@g" $$filename; \
 	done;
-
-jchangelog:
-	@$(MAKE) -C introduction/welcome \
-		jchangelog-2008.txt jchangelog-2009.txt\
-		jchangelog-2010.txt jchangelog-2011.txt
-	$(Q)cp -p introduction/welcome/jchangelog-*.txt $(BASEDIR)/introduction
 
 validate: $(RENDERTMP)/$(BLFSFULL)
 $(RENDERTMP)/$(BLFSFULL): general.ent $(ALLXML) $(ALLXSL) version

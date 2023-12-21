@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -77,27 +73,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="atk"/> and
+      <xref linkend="at-spi2-core"/> and
       <xref linkend="glibmm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="atk"/>,
+      <xref linkend="at-spi2-core"/>,
       <xref linkend="glibmm"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
-    <title>Installation of Atkmm</title>
-@y
-    <title>&InstallationOf1;Atkmm&InstallationOf2;</title>
 @z
 
 @x
@@ -108,7 +92,7 @@
 @z
 
 @x
-      This package does not come with a testsuite.
+      This package does not come with a test suite.
 @y
       &notTestSuite;
 @z

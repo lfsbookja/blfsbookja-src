@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY json-c-time          "less than 0.1 SBU">
+  <!ENTITY json-c-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY json-c-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY json-c-time          "0.4 SBU (テスト込み)">
 @z
 
 @x
@@ -75,12 +71,6 @@
           Estimated build time: &json-c-time;
 @y
           &Estimatedbuildtime;: &json-c-time;
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/json-c"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/json-c"/>
 @z
 
 @x

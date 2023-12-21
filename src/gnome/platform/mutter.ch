@@ -10,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY mutter-time          "2.1 SBU (Using parallelism=4)">
+  <!ENTITY mutter-buildsize     "100 MB (with tests)">
+  <!ENTITY mutter-time          "0.7 SBU (Using parallelism=4; add 1.4 SBU for tests)">
 @y
-  <!ENTITY mutter-time          "2.1 SBU（parallelism=4 利用時）">
+  <!ENTITY mutter-buildsize     "100 MB (with tests)">
+  <!ENTITY mutter-time          "0.7 SBU (Using parallelism=4; add 1.4 SBU for tests)">
 @z
 
 @x
@@ -82,26 +84,22 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <!-- now using internal shipped clutter and cogl copies -->
-      <!-- <xref linkend="clutter"/>, -->
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="graphene"/>,
+      <xref linkend="libei"/>,
       <xref linkend="libxcvt"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="pipewire"/>, and
-      <xref linkend="zenity"/>
+      <xref linkend="libxkbcommon"/>, and
+      <xref linkend="pipewire"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <!-- now using internal shipped clutter and cogl copies -->
-      <!-- <xref linkend="clutter"/>, -->
       <xref linkend="gnome-settings-daemon"/>,
       <xref linkend="graphene"/>,
+      <xref linkend="libei"/>,
       <xref linkend="libxcvt"/>,
       <xref linkend="libxkbcommon"/>,
-      <xref linkend="pipewire"/>,
-      <xref linkend="zenity"/>
+      <xref linkend="pipewire"/>
     </para>
 @z
 
@@ -109,17 +107,15 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="desktop-file-utils"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="startup-notification"/>, and
-      <xref linkend="sysprof"/>
+      <xref linkend="gobject-introspection"/>, and
+      <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="desktop-file-utils"/>,
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="startup-notification"/>,
-      <xref linkend="sysprof"/>
+      <xref linkend="startup-notification"/>
     </para>
 @z
 
@@ -130,9 +126,7 @@
       <xref linkend="libinput"/>,
       <xref linkend="wayland"/>,
       <xref linkend="wayland-protocols"/>, and
-      <xref linkend="xwayland"/>.
-      Additionally, <xref linkend="gtk3"/> needs to be built with
-      <application>Wayland</application> support.
+      <xref linkend="xwayland"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (Required to
@@ -141,9 +135,7 @@
       <xref linkend="libinput"/>,
       <xref linkend="wayland"/>,
       <xref linkend="wayland-protocols"/>, and
-      <xref linkend="xwayland"/>.
-      Additionally, <xref linkend="gtk3"/> needs to be built with
-      <application>Wayland</application> support.
+      <xref linkend="xwayland"/>
     </para>
 @z
 
@@ -162,23 +154,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Mutter</title>
 @y
     <title>&InstallationOf1;Mutter&InstallationOf2;</title>
-@z
-
-@x
-      First, fix a race condition that sometimes occurs due to meson dependency
-      ordering:
-@y
-      First, fix a race condition that sometimes occurs due to meson dependency
-      ordering:
 @z
 
 @x
@@ -189,19 +167,53 @@
 @z
 
 @x
-      To test the results, issue:
-      <command>dbus-run-session ninja test</command>. The tests
-      require an active X session to run correctly. It is not necessary to
-      run a  separate D-bus session if not in a GNOME session, but it
-      provides a clean environment in any case. One test,
-      <filename>native-headless</filename>, is known to fail.
+      The test suite requires an
+      external program called <command>xvfb-run</command>.  If you wish to run
+      the tests, you should download and install it before running
+      <command>meson</command>.
 @y
-      To test the results, issue:
-      <command>dbus-run-session ninja test</command>. The tests
-      require an active X session to run correctly. It is not necessary to
-      run a  separate D-bus session if not in a GNOME session, but it
-      provides a clean environment in any case. One test,
-      <filename>native-headless</filename>, is known to fail.
+      The test suite requires an
+      external program called <command>xvfb-run</command>.  If you wish to run
+      the tests, you should download and install it before running
+      <command>meson</command>.
+@z
+@x
+      You can obtain it from <ulink
+      url="&sources-anduin-http;/mutter/xvfb-run">xvfb-run</ulink>, and install
+      it with executable permissions in <filename
+      class="directory">/usr/bin</filename>.  <command>xvfb-run</command> needs
+      <command>Xvfb</command> at runtime, and <command>Xvfb</command> can be
+      installed from either <xref linkend='xorg-server'/> or <xref
+      linkend='xwayland'/>.
+@y
+      You can obtain it from <ulink
+      url="&sources-anduin-http;/mutter/xvfb-run">xvfb-run</ulink>, and install
+      it with executable permissions in <filename
+      class="directory">/usr/bin</filename>.  <command>xvfb-run</command> needs
+      <command>Xvfb</command> at runtime, and <command>Xvfb</command> can be
+      installed from either <xref linkend='xorg-server'/> or <xref
+      linkend='xwayland'/>.
+@z
+@x
+      You should also replace <parameter>-Dtests=false</parameter> in the
+      <command>meson</command> command, with
+      <parameter>-Dtests=true -Dclutter_tests=false</parameter>.  The test
+      suite requires the mutter schema to be installed on the system, so it is
+      better to run the tests after installing the package.
+@y
+      You should also replace <parameter>-Dtests=false</parameter> in the
+      <command>meson</command> command, with
+      <parameter>-Dtests=true -Dclutter_tests=false</parameter>.  The test
+      suite requires the mutter schema to be installed on the system, so it is
+      better to run the tests after installing the package.
+@z
+
+@x
+      You can also test basic functions of <application>Mutter</application>
+      following <xref linkend='mutter-starting'/>, after installing it.
+@y
+      You can also test basic functions of <application>Mutter</application>
+      following <xref linkend='mutter-starting'/>, after installing it.
 @z
 
 @x
@@ -231,20 +243,20 @@
           mutter
         </seg>
         <seg>
-          libmutter-8.so
+          libmutter-13.so and libmutter-test-13.so (optional)
         </seg>
         <seg>
-          /usr/{lib,include,libexec/installed-tests,share/{installed-tests}}/mutter-8
+          /usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-13
         </seg>
 @y
         <seg>
           mutter
         </seg>
         <seg>
-          libmutter-8.so
+          libmutter-13.so, libmutter-test-13.so (optional)
         </seg>
         <seg>
-          /usr/{lib,include,libexec/installed-tests,share/{installed-tests}}/mutter-8
+          /usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-13
         </seg>
 @z
 

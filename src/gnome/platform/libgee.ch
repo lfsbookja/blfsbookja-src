@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY libgee-buildsize     "42 MB (add 3 MB for tests)">
+  <!ENTITY libgee-buildsize     "38 MB (with tests)">
+  <!ENTITY libgee-time          "0.5 SBU (with tests)">
 @y
-  <!ENTITY libgee-buildsize     "42 MB（テスト実施時はさらに 3 MB）">
+  <!ENTITY libgee-buildsize     "38 MB (テスト込み)">
+  <!ENTITY libgee-time          "0.5 SBU (テスト込み)">
 @z
 
 @x
@@ -108,9 +106,17 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="vala"/> (with Valadoc) and
+      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="vala"/> (with Valadoc),
+      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>
+    </para>
 @z
 
 @x

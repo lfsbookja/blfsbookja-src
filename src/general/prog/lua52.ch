@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -47,11 +42,13 @@
 @z
 
 @x
-      This is an older verion of <application>Lua</application> needed only
-      for compatibility with other programs such as <xref linkend='wireshark'/>.
+      This is an older version of <application>Lua</application> needed only
+      for compatibility with other programs such as <xref linkend='wireshark'/>
+      and <xref linkend="vlc"/>.
 @y
-      This is an older verion of <application>Lua</application> needed only
-      for compatibility with other programs such as <xref linkend='wireshark'/>.
+      This is an older version of <application>Lua</application> needed only
+      for compatibility with other programs such as <xref linkend='wireshark'/>
+      and <xref linkend="vlc"/>.
 @z
 
 @x
@@ -106,12 +103,6 @@
           Required patch:
 @y
           必須のパッチ:
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

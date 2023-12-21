@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -225,14 +221,14 @@
 
 @x
     For more information about LVM, see the <ulink
-    url="http://www.tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</ulink> and
+    url="https://tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</ulink> and
     the lvm man pages. A good in-depth
     <ulink url="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index">
     guide</ulink> is available from RedHat<superscript>&reg;</superscript>,
     although it makes sometimes reference to proprietary tools.
 @y
     For more information about LVM, see the <ulink
-    url="http://www.tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</ulink> and
+    url="https://tldp.org/HOWTO/LVM-HOWTO/">LVM HOWTO</ulink> and
     the lvm man pages. A good in-depth
     <ulink url="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/logical_volume_manager_administration/index">
     guide</ulink> is available from RedHat<superscript>&reg;</superscript>,

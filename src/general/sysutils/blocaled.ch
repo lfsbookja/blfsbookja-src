@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY blocaled-buildsize     "4.1 MB (with tests)">
-  <!ENTITY blocaled-time          "0.1 SBU (with tests)">
+  <!ENTITY blocaled-buildsize     "4.2 MB (with tests)">
+  <!ENTITY blocaled-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY blocaled-buildsize     "4.1 MB （テスト込み）">
-  <!ENTITY blocaled-time          "0.1 SBU （テスト込み）">
+  <!ENTITY blocaled-buildsize     "4.2 MB (with tests)">
+  <!ENTITY blocaled-time          "less than 0.1 SBU (with tests)">
 @z
 
 @x
@@ -95,12 +95,6 @@
       <xref linkend="polkit"/>,
       <xref linkend="libdaemon"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/blocaled"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/blocaled"/>
 @z
 
 @x

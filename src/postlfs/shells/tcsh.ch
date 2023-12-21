@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -78,12 +74,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Tcsh</title>
 @y
     <title>&InstallationOf1;Tcsh&InstallationOf2;</title>
@@ -112,26 +102,6 @@
     <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>--bindir=/bin</parameter>: This installs the
-      <command>tcsh</command> program in <filename
-      class='directory'>/bin</filename> instead of <filename
-      class='directory'>/usr/bin</filename>.
-@y
-      <parameter>--bindir=/bin</parameter>:
-      これは <command>tcsh</command> プログラムのインストール先を <filename
-      class='directory'>/usr/bin</filename> ではなく <filename
-      class='directory'>/bin</filename> とします。
-@z
-
-@x
-      <command>sh ./tcsh.man2html</command>: This creates HTML documentation
-      from the formatted man page.
-@y
-      <command>sh ./tcsh.man2html</command>:
-      これは、書式化された man ページから HTML ドキュメントを生成します。
 @z
 
 @x
@@ -188,25 +158,21 @@
 
 @x
         Update <filename>/etc/shells</filename> to include the C shell
-        program names (as the <systemitem class="username">root</systemitem>
-        user):
+        program names (as the &root; user):
 @y
         Update <filename>/etc/shells</filename> to include the C shell
-        program names (as the <systemitem class="username">root</systemitem>
-        user):
+        program names (as the &root; user):
 @z
 
 @x
         The following <filename>~/.cshrc</filename> provides two alternative
         colour prompts and coloured <command>ls</command> output. If you prefer
-        a global modification, issue the command as the <systemitem
-        class="username">root</systemitem> user, replacing
+        a global modification, issue the command as the &root; user, replacing
         <filename>~/.cshrc</filename> by <filename>/etc/csh.cshrc</filename>.
 @y
         The following <filename>~/.cshrc</filename> provides two alternative
         colour prompts and coloured <command>ls</command> output. If you prefer
-        a global modification, issue the command as the <systemitem
-        class="username">root</systemitem> user, replacing
+        a global modification, issue the command as the &root; user, replacing
         <filename>~/.cshrc</filename> by <filename>/etc/csh.cshrc</filename>.
 @z
 
@@ -229,11 +195,11 @@
 @x
         <seg>tcsh</seg>
         <seg>None</seg>
-        <seg>/usr/share/doc/tcsh-&tcsh-version;</seg>
+        <seg>None <!--/usr/share/doc/tcsh-&tcsh-version;--></seg>
 @y
         <seg>tcsh</seg>
         <seg>&None;</seg>
-        <seg>/usr/share/doc/tcsh-&tcsh-version;</seg>
+        <seg>&None; <!--/usr/share/doc/tcsh-&tcsh-version;--></seg>
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY biber-time          "0.5 SBU including tests">
+  <!ENTITY biber-time          "0.4 SBU including tests">
 @y
-  <!ENTITY biber-time          "0.5 SBU including tests">
+  <!ENTITY biber-time          "0.4 SBU including tests">
 @z
 
 @x
@@ -106,36 +102,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">Required Additional Download</bridgehead>
-@y
-    <bridgehead renderas="sect3">Required Additional Download</bridgehead>
-@z
-
-@x
-          The corresponding version of <application>biblatex</application> is
-          a separate project - the tds tarball is pre-packaged for untarring
-          into the <filename class="directory">texmf-dist</filename>
-          directory. Download (HTTP): <ulink url="&biblatex-download-http;"/>
-@y
-          The corresponding version of <application>biblatex</application> is
-          a separate project - the tds tarball is pre-packaged for untarring
-          into the <filename class="directory">texmf-dist</filename>
-          directory. Download (HTTP): <ulink url="&biblatex-download-http;"/>
-@z
-
-@x
-          Download MD5 sum: &biblatex-md5sum;
-@y
-          &Download; MD5 sum: &biblatex-md5sum;
-@z
-
-@x
-          Download size: &biblatex-size;
-@y
-          &DownloadSize;: &biblatex-size;
-@z
-
-@x
     <bridgehead renderas="sect3">Biber Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">&Dependencies1;Biber&Dependencies2;</bridgehead>
@@ -143,122 +109,12 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <!-- KFM: the order listed in Build.PL is not alphabetical -->
-      <xref linkend="perl-autovivification"/>
-      <xref linkend="perl-business-isbn"/>
-      <xref linkend="perl-business-ismn"/>
-      <xref linkend="perl-business-issn"/>
-      <xref linkend="perl-class-accessor"/>
-      <xref linkend="perl-data-compare"/>
-      <xref linkend="perl-data-dump"/>
-      <xref linkend="perl-data-uniqid"/>
-      <xref linkend="perl-datetime-calendar-julian"/>
-      <xref linkend="perl-datetime-format-builder"/>
-      <xref linkend="perl-encode-eucjpascii"/>
-      <xref linkend="perl-encode-hanextra"/>
-      <xref linkend="perl-encode-jis2k"/>
-      <xref linkend="perl-file-slurper"/>
-      <xref linkend="perl-io-string"/>
-      <!-- IPC::Cmd is a part of core perl -->
-      <xref linkend="perl-ipc-run3"/>
-      <xref linkend="perl-lingua-translit"/>
-      <xref linkend="perl-list-allutils"/>
-      <xref linkend="perl-list-moreutils"/>
-      <!-- perl-list-moreutils-xs is a dep of perl-list-moreutils -->
-      <xref linkend="perl-log-log4perl"/>
-      <xref linkend="perl-lwp-protocol-https"/>
-      <!-- LWP::Simple is part of perl-libwww-perl,
-      that is pulled in by perl-lwp-protocol-https
-      and that pulls in perl-uri -->
-      <xref linkend="perl-module-build"/>
-      <xref linkend="perl-parse-recdescent"/>
-      <xref linkend="perl-perlio-utf8_strict"/>
-      <!-- Mozilla::CA should not be needed when using system certificates -->
-      <xref linkend="perl-regexp-common"/>
-      <xref linkend="perl-sort-key"/>
-      <xref linkend="perl-text-bibtex"/>
-      <xref linkend="perl-text-csv"/>
-      <!-- perl-text-csv_xs is a recommended dependency for perl-text-csv -->
-      <xref linkend="perl-text-roman"/>
-      <!-- Unicode-Collate usually needs to be latest when biber is released,
-        core perl is usually older. To read the core version, look at
-        /usr/lib/perl5/5.xx.y/x86_64-linux-thread-multi/Unicode/Collate.pm -->
-      <xref linkend="perl-unicode-collate"/>
-      <!-- Unicode::GCstring is part of Unicode::LineBreak -->
-      <xref linkend="perl-unicode-linebreak"/>
-      <!-- Unicode::Normalize is part of core perl, found in
-        /usr/lib/perl5/5.xx.y/x86_64-linux-thread-multi/Unicode/Normalize.pm -->
-      <!-- perl-xml-libxml is a dependency of perl-xml-libxml-simple -->
-      <xref linkend="perl-xml-libxml-simple"/>
-      <xref linkend="perl-xml-libxslt"/>
-      <xref linkend="perl-xml-writer"/> and
-      <!-- untarring biblatex requires that the texmf directories already exist -->
-      <xref linkend="texlive"/>
-      (or <xref linkend="tl-installer"/>, but for that you can use
-       <command>tlmgr update</command>)
-    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <!-- KFM: the order listed in Build.PL is not alphabetical -->
-      <xref linkend="perl-autovivification"/>
-      <xref linkend="perl-business-isbn"/>
-      <xref linkend="perl-business-ismn"/>
-      <xref linkend="perl-business-issn"/>
-      <xref linkend="perl-class-accessor"/>
-      <xref linkend="perl-data-compare"/>
-      <xref linkend="perl-data-dump"/>
-      <xref linkend="perl-data-uniqid"/>
-      <xref linkend="perl-datetime-calendar-julian"/>
-      <xref linkend="perl-datetime-format-builder"/>
-      <xref linkend="perl-encode-eucjpascii"/>
-      <xref linkend="perl-encode-hanextra"/>
-      <xref linkend="perl-encode-jis2k"/>
-      <xref linkend="perl-file-slurper"/>
-      <xref linkend="perl-io-string"/>
-      <!-- IPC::Cmd is a part of core perl -->
-      <xref linkend="perl-ipc-run3"/>
-      <xref linkend="perl-lingua-translit"/>
-      <xref linkend="perl-list-allutils"/>
-      <xref linkend="perl-list-moreutils"/>
-      <!-- perl-list-moreutils-xs is a dep of perl-list-moreutils -->
-      <xref linkend="perl-log-log4perl"/>
-      <xref linkend="perl-lwp-protocol-https"/>
-      <!-- LWP::Simple is part of perl-libwww-perl,
-      that is pulled in by perl-lwp-protocol-https
-      and that pulls in perl-uri -->
-      <xref linkend="perl-module-build"/>
-      <xref linkend="perl-parse-recdescent"/>
-      <xref linkend="perl-perlio-utf8_strict"/>
-      <!-- Mozilla::CA should not be needed when using system certificates -->
-      <xref linkend="perl-regexp-common"/>
-      <xref linkend="perl-sort-key"/>
-      <xref linkend="perl-text-bibtex"/>
-      <xref linkend="perl-text-csv"/>
-      <!-- perl-text-csv_xs is a recommended dependency for perl-text-csv -->
-      <xref linkend="perl-text-roman"/>
-      <!-- Unicode-Collate usually needs to be latest when biber is released,
-        core perl is usually older. To read the core version, look at
-        /usr/lib/perl5/5.xx.y/x86_64-linux-thread-multi/Unicode/Collate.pm -->
-      <xref linkend="perl-unicode-collate"/>
-      <!-- Unicode::GCstring is part of Unicode::LineBreak -->
-      <xref linkend="perl-unicode-linebreak"/>
-      <!-- Unicode::Normalize is part of core perl, found in
-        /usr/lib/perl5/5.xx.y/x86_64-linux-thread-multi/Unicode/Normalize.pm -->
-      <!-- perl-xml-libxml is a dependency of perl-xml-libxml-simple -->
-      <xref linkend="perl-xml-libxml-simple"/>
-      <xref linkend="perl-xml-libxslt"/>
-      <xref linkend="perl-xml-writer"/> and
-      <!-- untarring biblatex requires that the texmf directories already exist -->
-      <xref linkend="texlive"/>
-      (or <xref linkend="tl-installer"/>, but for that you can use
-       <command>tlmgr update</command>)
-    </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended (required for the testsuite)</bridgehead>
+    <bridgehead renderas="sect4">Recommended (required for the test suite)</bridgehead>
     <para role="recommended">
       <xref linkend="perl-file-which"/> and
       <xref linkend="perl-test-differences"/>
@@ -275,7 +131,7 @@
         It is possible to install all missing dependencies automatically. You
         must first install <xref linkend="perl-module-build"/> using <xref
         linkend="perl-auto-install"/>. Then run <command>perl
-        ./Build.PL</command> and when it prompts you, become the root user
+        ./Build.PL</command> and when it prompts you, become the &root; user
         and run <command>./Build installdeps</command> - this will use CPAN
         and as noted above it will use Mozilla::CA instead of using system
         certificates.
@@ -283,16 +139,16 @@
         It is possible to install all missing dependencies automatically. You
         must first install <xref linkend="perl-module-build"/> using <xref
         linkend="perl-auto-install"/>. Then run <command>perl
-        ./Build.PL</command> and when it prompts you, become the root user
+        ./Build.PL</command> and when it prompts you, become the &root; user
         and run <command>./Build installdeps</command> - this will use CPAN
         and as noted above it will use Mozilla::CA instead of using system
         certificates.
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x

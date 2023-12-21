@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -109,24 +105,24 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="sysprof"/>,
-      <xref linkend="vala"/>, and
-      <xref linkend="valgrind"/>
+      <!--<xref linkend="sysprof"/>,-->
+      <xref linkend="vala"/>,
+      <xref linkend="valgrind"/>,
+      <xref linkend="vulkan-loader"/>,
+      <ulink url="&sysprof-url;">sysprof</ulink>
+      <!--<ulink url="https://www.vulkan.org/">Vulkan</ulink>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="sysprof"/>,
+      <!--<xref linkend="sysprof"/>,-->
       <xref linkend="vala"/>,
-      <xref linkend="valgrind"/>
+      <xref linkend="valgrind"/>,
+      <xref linkend="vulkan-loader"/>,
+      <ulink url="&sysprof-url;">sysprof</ulink>
+      <!--<ulink url="https://www.vulkan.org/">Vulkan</ulink>-->
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gtksourceview5"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gtksourceview5"/>
 @z
 
 @x
@@ -172,12 +168,12 @@
 
 @x
       <option>-Dsysprof=true</option>: Use this switch if you have
-      <xref linkend="sysprof"/> installed and wish to build with sysprof
-      profiler support.
+      <ulink url="&sysprof-url;">sysprof</ulink> installed and wish to build
+      with sysprof profiler support.
 @y
       <option>-Dsysprof=true</option>: Use this switch if you have
-      <xref linkend="sysprof"/> installed and wish to build with sysprof
-      profiler support.
+      <ulink url="&sysprof-url;">sysprof</ulink> installed and wish to build
+      with sysprof profiler support.
 @z
 
 @x

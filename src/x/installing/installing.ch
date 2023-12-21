@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,15 +10,15 @@
 @z
 
 @x
-<chapter id="x-window-system" xreflabel="X Window System">
+<chapter id="x-window-system" xreflabel="a graphical environment">
 @y
-<chapter id="x-window-system" xreflabel="X ウィンドウシステム">
+<chapter id="x-window-system" xreflabel="グラフィック環境">
 @z
 
 @x
-  <title>X Window System Environment</title>
+  <title id="xorg" xreflabel="Xorg Chapter">Graphical Environments</title>
 @y
-  <title>X ウィンドウシステム環境</title>
+  <title id="xorg" xreflabel="Xorg の章">グラフィック環境</title>
 @z
 
 @x

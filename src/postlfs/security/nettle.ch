@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY nettle-buildsize     "87 MB (with tests)">
-  <!ENTITY nettle-time          "0.4 SBU (with tests)">
+  <!ENTITY nettle-buildsize     "95 MB (with tests)">
+  <!ENTITY nettle-time          "0.2 SBU (with tests; both using parallelism=4)">
 @y
-  <!ENTITY nettle-buildsize     "87 MB（テスト込み）">
-  <!ENTITY nettle-time          "0.4 SBU（テスト込み）">
+  <!ENTITY nettle-buildsize     "95 MB (with tests)">
+  <!ENTITY nettle-time          "0.2 SBU (with tests; both using parallelism=4)">
 @z
 
 @x
@@ -88,12 +88,6 @@
     <para role="optional">
       <xref linkend="valgrind"/> (optional for the tests)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

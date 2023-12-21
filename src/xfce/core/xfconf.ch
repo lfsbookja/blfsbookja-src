@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the LFS hint text files.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -99,12 +95,6 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="vala"/> 
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/xfconf"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/xfconf"/>
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -94,9 +90,15 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="glu"/>
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="glu"/>
+    </para>
 @z
 
 @x
@@ -155,7 +157,7 @@
           libglut.so
         </seg>
         <seg>
-          None
+          /usr/lib/cmake/FreeGLUT
         </seg>
 @y
         <seg>
@@ -165,7 +167,7 @@
           libglut.so
         </seg>
         <seg>
-          &None;
+          /usr/lib/cmake/FreeGLUT
         </seg>
 @z
 

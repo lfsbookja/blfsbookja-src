@@ -23,17 +23,17 @@
 
 @x
       The <application>libmnl</application> library provides a minimalistic
-      user-space library oriented to Netlink developers. There are a lot of
-      common tasks in parsing, validating, constructing of both the Netlink
+      userspace library oriented to Netlink developers. There are a lot of
+      common tasks in the parsing, validating, and constructing of both the Netlink
       header and TLVs that are repetitive and easy to get wrong. This library
-      aims to provide simple helpers that allows you to re-use code and to
+      aims to provide simple helpers that allow you to re-use code and to
       avoid re-inventing the wheel.
 @y
       The <application>libmnl</application> library provides a minimalistic
-      user-space library oriented to Netlink developers. There are a lot of
-      common tasks in parsing, validating, constructing of both the Netlink
+      userspace library oriented to Netlink developers. There are a lot of
+      common tasks in the parsing, validating, and constructing of both the Netlink
       header and TLVs that are repetitive and easy to get wrong. This library
-      aims to provide simple helpers that allows you to re-use code and to
+      aims to provide simple helpers that allow you to re-use code and to
       avoid re-inventing the wheel.
 @z
 
@@ -77,12 +77,6 @@
           Estimated build time: &libmnl-time;
 @y
           &Estimatedbuildtime;: &libmnl-time;
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

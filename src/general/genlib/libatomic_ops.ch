@@ -10,10 +10,10 @@
 @z
 
 @x
-  <!ENTITY libatomic_ops-buildsize     "6.2 MB (with tests)">
+  <!ENTITY libatomic_ops-buildsize     "6.8 MB (with tests)">
   <!ENTITY libatomic_ops-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libatomic_ops-buildsize     "6.2 MB (テスト込み)">
+  <!ENTITY libatomic_ops-buildsize     "6.8 MB (テスト込み)">
   <!ENTITY libatomic_ops-time          "0.2 SBU (テスト込み)">
 @z
 
@@ -76,12 +76,6 @@
           Estimated build time: &libatomic_ops-time;
 @y
           &Estimatedbuildtime;: &libatomic_ops-time;
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libatomic_ops"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libatomic_ops"/>
 @z
 
 @x

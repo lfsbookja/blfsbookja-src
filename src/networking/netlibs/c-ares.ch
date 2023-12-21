@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -117,7 +113,7 @@
 
 @x
         <seg>
-          acountry, adig, and ahost
+          adig and ahost
         </seg>
         <seg>
           libcares.so
@@ -127,7 +123,7 @@
         </seg>
 @y
         <seg>
-          acountry, adig, ahost
+          adig, ahost
         </seg>
         <seg>
           libcares.so

@@ -77,7 +77,7 @@
       to <filename>/etc/ld.so.conf</filename> or expand
       <envar>LD_LIBRARY_PATH</envar> to include it. Before using the latter
       option, check out <ulink
-      url="http://xahlee.org/UnixResource_dir/_/ldpath.html"/>.
+      url="http://xahlee.info/UnixResource_dir/_/ldpath.html"/>.
       If you modify <filename>/etc/ld.so.conf</filename>, remember to update
       <filename>/etc/ld.so.cache</filename> by executing
       <command>ldconfig</command> as the
@@ -86,7 +86,7 @@
       <para>
       <filename class='directory'>$PREFIX/lib</filename> を <filename>/etc/ld.so.conf</filename> か、あるいは環境変数 <envar>LD_LIBRARY_PATH</envar> に加えます。
       後者に加える際には <ulink
-      url="http://xahlee.org/UnixResource_dir/_/ldpath.html"/> を確認してみてください。
+      url="http://xahlee.info/UnixResource_dir/_/ldpath.html"/> を確認してみてください。
       <filename>/etc/ld.so.conf</filename> を修正した場合は、<systemitem
       class="username">root</systemitem> ユーザーになって <command>ldconfig</command> を実行して <filename>/etc/ld.so.cache</filename> を更新する必要があります。
       </para>
@@ -152,34 +152,29 @@
   <para>If you are in search of a package that is not in the book, the following
   are different ways you can search for the desired package.</para>
 @y
-  <!--
-  日本語訳註： 2009-09-28 matsuand
-  different は訳出すると違和感を覚えたため、無視することにした。
-  「異なる方法」と、あえて訳出しなくても、異なる方法であることは
-  文面から伝えられるはずである。
-  -->
   <para>
-  探しているパッケージが本書に示されていない場合は、以下に示す方法によりパッケージを探し出すことができます。
+  探しているパッケージが本書に示されていない場合は、以下に示すさまざまな方法によりパッケージを探し出すことができます。
   </para>
 @z
 
 @x
-      <para>If you know the name of the package, then search Freecode for
-      it at <ulink url="http://freecode.com/"/>. Also search Google at
-      <ulink url="http://google.com/"/>. Sometimes a search for the
-      <filename class='extension'>rpm</filename> at
-      <ulink url="http://rpmfind.net/"/> or the
+      <para>If you know the name of the package, then search SourceForge for
+      it at <ulink url="https://sourceforge.net/directory/"/>, and search
+      GitHub for it at <ulink url="https://github.com/"/>.
+      Also search Google at <ulink url="https://google.com/"/>. Sometimes a
+      search for the <filename class='extension'>rpm</filename> at
+      <ulink url="https://rpmfind.net/"/> or the
       <filename class='extension'>deb</filename> at
-      <ulink url="http://www.debian.org/distrib/packages#search_packages"/> can
+      <ulink url="https://www.debian.org/distrib/packages#search_packages"/> can
       also lead to a link to the package.</para>
 @y
       <para>
-      パッケージ名が分かっている場合は Freecode <ulink url="http://freecode.com/"/> を検索してみてください。
-      あるいは Google <ulink url="http://google.com/"/> を利用することもできます。
+      パッケージ名が分かっている場合は SourceForge <ulink url="https://sourceforge.net/directory/"/>、 GitHub <ulink url="https://github.com/"/> を検索してみてください。
+      あるいは Google <ulink url="https://google.com/"/> を利用することもできます。
       また <filename class='extension'>rpm</filename> を検索する <ulink
-      url="http://rpmfind.net/"/> や、<filename
+      url="https://rpmfind.net/"/> や、<filename
       class='extension'>deb</filename> を検索する <ulink
-      url="http://www.debian.org/distrib/packages#search_packages"/> において、パッケージのホームページへのリンクが示されていることもあります。
+      url="https://www.debian.org/distrib/packages#search_packages"/> において、パッケージのホームページへのリンクが示されていることもあります。
       </para>
 @z
 
@@ -188,12 +183,12 @@
       that the executable belongs to, first try a Google search with the name
       of the executable. If the results are overwhelming, try searching for the
       given executable in the Debian repository at <ulink
-      url="http://www.debian.org/distrib/packages#search_contents"/>.</para>
+      url="https://www.debian.org/distrib/packages#search_contents"/>.</para>
 @y
       <para>
       実行モジュール名は分かっているが、どのパッケージに含まれるものかが分からない場合は、まずは実行モジュール名を Google で検索します。
       結果が思わしくなければ、実行モジュール名を使って Debian のリポジトリ <ulink
-      url="http://www.debian.org/distrib/packages#search_contents"/> を検索してみてください。
+      url="https://www.debian.org/distrib/packages#search_contents"/> を検索してみてください。
       </para>
 @z
 

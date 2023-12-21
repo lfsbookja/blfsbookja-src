@@ -77,21 +77,15 @@
     <para role="optional">
       <xref linkend="doxygen"/>,
       <xref linkend="python2"/>, and
-      <ulink url="https://www.alsa-project.org/files/pub/lib/">alsa-ucm-conf</ulink>
+      <ulink url="https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-&alsa-lib-version;.tar.bz2">alsa-ucm-conf</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      <xref linkend="python2"/>,
-      <ulink url="https://www.alsa-project.org/files/pub/lib/">alsa-ucm-conf</ulink>
+      <xref linkend="python2"/>, and
+      <ulink url="https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-&alsa-lib-version;.tar.bz2">alsa-ucm-conf</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -101,19 +95,23 @@
 @z
 
 @x
+       If needed, enable the following options in the kernel
+       configuration and recompile the kernel:
+@y
+       If needed, enable the following options in the kernel
+       configuration and recompile the kernel:
+@z
+
+@x
       In the Device Drivers &rArr; Sound card support &rArr; Advanced Linux
-      Sound Architecture section of the kernel configuration, select the settings
-      and drivers appropriate for your hardware.  Ensure that the deprecated Device
-      Drivers &rArr; Sound card support &rArr; Open Sound System is
-      <emphasis>not</emphasis> selected.  If necessary, recompile and install your
-      new kernel.
+      Sound Architecture section of the kernel configuration, select the
+      settings and drivers appropriate for your hardware.  If necessary,
+      recompile and install your new kernel.
 @y
       In the Device Drivers &rArr; Sound card support &rArr; Advanced Linux
-      Sound Architecture section of the kernel configuration, select the settings
-      and drivers appropriate for your hardware.  Ensure that the deprecated Device
-      Drivers &rArr; Sound card support &rArr; Open Sound System is
-      <emphasis>not</emphasis> selected.  If necessary, recompile and install your
-      new kernel.
+      Sound Architecture section of the kernel configuration, select the
+      settings and drivers appropriate for your hardware.  If necessary,
+      recompile and install your new kernel.
 @z
 
 @x

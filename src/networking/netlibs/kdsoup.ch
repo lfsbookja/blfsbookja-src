@@ -78,19 +78,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="qt5"/>
+      &qt5-deps;
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="qt5"/>
+      &qt5-deps;
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/kdsoap"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/kdsoap"/>
 @z
 
 @x
@@ -107,7 +101,7 @@
 @z
 
 @x
-      The package does not come with atest suite.
+      The package does not come with a test suite.
 @y
       &notTestSuite;
 @z

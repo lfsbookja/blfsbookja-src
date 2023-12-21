@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -33,9 +29,9 @@
 @z
 
 @x
-  <para condition="html" role="usernotes">User Notes:
+  <para condition="html" role="usernotes">Editor Notes:
 @y
-  <para condition="html" role="usernotes">&UserNotes;:
+  <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -66,17 +62,17 @@
     Given the number of packages available, deciding which packages you
     need to install for your particular setup may seem a bit overwhelming at
     first.  Take a look at <ulink url=
-    "http://wiki.x.org/wiki/ModuleDescriptions">this page</ulink>
+    "https://wiki.x.org/wiki/ModuleDescriptions">this page</ulink>
     and <ulink url=
-    "http://lists.x.org/archives/xorg-modular/2005-November/000801.html">
+    "https://lists.x.org/archives/xorg-modular/2005-November/000801.html">
     this thread</ulink>
     to get an idea of what you will need.  If you are unsure, you should
     install all packages at the cost of extra disk space.
 @y
     あまりに多くのパッケージが提供されているため、初めのうちは、自分がどのパッケージを入手してインストールすべきなのかを決めるのが大変かもしれません。
     そんな時は <ulink
-    url="http://wiki.x.org/wiki/ModuleDescriptions">このページ</ulink> や <ulink
-    url="http://lists.x.org/archives/xorg-modular/2005-November/000801.html">このスレッド</ulink> を参考にしてください。
+    url="https://wiki.x.org/wiki/ModuleDescriptions">このページ</ulink> や <ulink
+    url="https://lists.x.org/archives/xorg-modular/2005-November/000801.html">このスレッド</ulink> を参考にしてください。
     どうにも分からない時は全パッケージをインストールすることになるかもしれませんが、その場合は余計なディスク容量を消費することになります。
 @z
 
@@ -231,17 +227,17 @@
 % @z
 
 @x
-        There is some confustion about the above 'here' document.
+        There is some confusion about the above 'here' document.
         The backslash in front of the dollar sign is correct.  Bash
         will remove it when creating /etc/profile.d/xorg.sh.  However, if
         you are creating the file with an editor, a copy and paste operation
-        will not remove the baskslash.  It must then be removed manually.
+        will not remove the backslash.  It must then be removed manually.
 @y
-        There is some confustion about the above 'here' document.
+        There is some confusion about the above 'here' document.
         The backslash in front of the dollar sign is correct.  Bash
         will remove it when creating /etc/profile.d/xorg.sh.  However, if
         you are creating the file with an editor, a copy and paste operation
-        will not remove the baskslash.  It must then be removed manually.
+        will not remove the backslash.  It must then be removed manually.
 @z
 
 @x

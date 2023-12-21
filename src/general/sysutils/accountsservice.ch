@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -81,13 +77,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="libgcrypt"/> and
+      <!--<xref linkend="libgcrypt"/> and-->
       <xref linkend="polkit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="libgcrypt"/>,
+      <!--<xref linkend="libgcrypt"/> and-->
       <xref linkend="polkit"/>
     </para>
 @z
@@ -95,16 +91,20 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      <xref linkend="gobject-introspection"/>,
       <phrase revision="sysv"><xref linkend="elogind"/></phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/></phrase>
+      <phrase revision="systemd"><xref role='runtime' linkend="systemd"/>
+        (runtime)</phrase>, and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <phrase revision="sysv"><xref linkend="elogind"/></phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/></phrase>
+      <phrase revision="systemd"><xref role='runtime' linkend="systemd"/>
+        (runtime)</phrase>,
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -113,21 +113,29 @@
     <para role="optional">
       <xref linkend="gtk-doc"/> and
       <xref linkend="xmlto"/>
-      <!-- I did not have gtk-doc installed this time, and it worked fine. -->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="gtk-doc"/> and
       <xref linkend="xmlto"/>
-      <!-- I did not have gtk-doc installed this time, and it worked fine. -->
     </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <bridgehead renderas="sect4">Optional (for tests)</bridgehead>
+    <para role="optional">
+      <xref linkend="python-dbusmock"/> and
+      <xref linkend="pygobject3"/>
+      <!-- I did not have gtk-doc installed this time, and it worked fine. -->
+    </para>
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <bridgehead renderas="sect4">&Optional; (テスト用)</bridgehead>
+    <para role="optional">
+      <xref linkend="python-dbusmock"/>,
+      <xref linkend="pygobject3"/>
+      <!-- I did not have gtk-doc installed this time, and it worked fine. -->
+    </para>
 @z
 
 @x
@@ -144,9 +152,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the package, issue <command>ninja test</command>.
 @y
-      &notTestSuite;
+      本パッケージのテストをする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -231,28 +239,30 @@
 
 @x
         <seg>
-          accounts-daemon (library executable)
+          accounts-daemon (in
+          <filename class="directory">/usr/libexec</filename>)
         </seg>
         <seg>
           libaccountsservice.so
         </seg>
         <seg>
           /usr/include/accountsservice-1.0,
-          /usr/share/doc/accountsservice,
-          /usr/share/gtk-doc/html/libaccountsservice, and
+          /usr/share/accountsservice,
+          /usr/share/gtk-doc/html/libaccountsservice (optional), and
           /var/lib/AccountsService
         </seg>
 @y
         <seg>
-          accounts-daemon (library executable)
+          accounts-daemon (<filename
+          class="directory">/usr/libexec</filename> 内)
         </seg>
         <seg>
           libaccountsservice.so
         </seg>
         <seg>
           /usr/include/accountsservice-1.0,
-          /usr/share/doc/accountsservice,
-          /usr/share/gtk-doc/html/libaccountsservice,
+          /usr/share/accountsservice,
+          /usr/share/gtk-doc/html/libaccountsservice (任意ビルド),
           /var/lib/AccountsService
         </seg>
 @z

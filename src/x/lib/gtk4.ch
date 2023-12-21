@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gtk4-buildsize     "672 MB (78 MB installed, add 310 MB for tests)">
-  <!ENTITY gtk4-time          "1.2 SBU (using parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY gtk4-buildsize     "502 MB (with docs; add 23 MB for tests)">
+  <!ENTITY gtk4-time          "1.3 SBU (using parallelism=4; with docs; add 0.9 SBU for tests)">
 @y
-  <!ENTITY gtk4-buildsize     "672 MB (78 MB installed, add 310 MB for tests)">
-  <!ENTITY gtk4-time          "1.2 SBU (using parallelism=4, add 0.5 SBU for tests)">
+  <!ENTITY gtk4-buildsize     "502 MB (with docs; add 23 MB for tests)">
+  <!ENTITY gtk4-time          "1.3 SBU (using parallelism=4; with docs; add 0.9 SBU for tests)">
 @z
 
 @x
@@ -89,6 +89,7 @@
       <xref linkend="libepoxy"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="pango"/>,
+      <xref linkend="pygobject3"/>, and
       <xref linkend="wayland-protocols"/>
     </para>
 @y
@@ -101,6 +102,7 @@
       <xref linkend="libepoxy"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="pango"/>,
+      <xref linkend="pygobject3"/>,
       <xref linkend="wayland-protocols"/>
     </para>
 @z
@@ -109,8 +111,9 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="adwaita-icon-theme"/> (default for some gtk4 settings keys),
-      <xref linkend="ffmpeg"/>,
       <xref linkend="gst10-plugins-bad"/>,
+      <xref role='runtime' linkend="gst10-plugins-good"/> (runtime,
+      built with <xref role='nodep' linkend='libvpx'/>),
       <xref linkend="hicolor-icon-theme"/> (needed for tests and for defaults), and
       <xref linkend="librsvg"/>
     </para>
@@ -118,9 +121,10 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="adwaita-icon-theme"/> (default for some gtk4 settings keys),
-      <xref linkend="ffmpeg"/>,
       <xref linkend="gst10-plugins-bad"/>,
-      <xref linkend="hicolor-icon-theme"/> (needed for tests and for defaults), and
+      <xref role='runtime' linkend="gst10-plugins-good"/> (runtime,
+      built with <xref role='nodep' linkend='libvpx'/>),
+      <xref linkend="hicolor-icon-theme"/> (needed for tests and for defaults),
       <xref linkend="librsvg"/>
     </para>
 @z
@@ -139,44 +143,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="colord"/>,
-      <xref linkend="cups"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref role="runtime" linkend="highlight"/>
-        (runtime, only used by <command>gtk4-demo</command> for syntax
-        highlighting of demo source code),
-      <xref linkend="json-glib"/>,
-      <xref linkend="rest"/>,
-      <xref linkend="sassc"/>,
-      <xref linkend="tracker3"/>,
-      <ulink url="https://gitlab.gnome.org/ebassi/gi-docgen">gi-docgen</ulink>,
-      <ulink url="https://gitlab.gnome.org/World/libcloudproviders">libcloudproviders</ulink>, and
-      <ulink url="https://vulkan.lunarg.com/sdk/home">vulkan</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="colord"/>,
-      <xref linkend="cups"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref role="runtime" linkend="highlight"/>
-        (runtime, only used by <command>gtk4-demo</command> for syntax
-        highlighting of demo source code),
-      <xref linkend="json-glib"/>,
-      <xref linkend="rest"/>,
-      <xref linkend="sassc"/>,
-      <xref linkend="tracker3"/>,
-      <ulink url="https://gitlab.gnome.org/ebassi/gi-docgen">gi-docgen</ulink>,
-      <ulink url="https://gitlab.gnome.org/World/libcloudproviders">libcloudproviders</ulink>,
-      <ulink url="https://vulkan.lunarg.com/sdk/home">vulkan</ulink>
-    </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gtk4"/>
-@y
-      User Notes: <ulink url="&blfs-wiki;/gtk4"/>
 @z
 
 @x
@@ -194,13 +162,25 @@
 @z
 
 @x
-      To run the tests, issue: <command>meson test --setup x11</command>. If you
-      are in a Wayland session, replace x11 with wayland. 8 tests are known to
-      fail, out of 730.
+      To run the tests, issue: <command>dbus-run-session meson test --setup
+      x11</command>. If you are in a Wayland session, replace x11 with wayland.
+      Nine tests are known to fail if
+      <ulink url="https://gitlab.gnome.org/GNOME/cantarell-fonts">Cantrell fonts</ulink>
+      are not installed. Many tests will fail if
+      <filename>~/.config/gtk-4.0/settings.ini</filename> exists and the gtk-modules
+      line is not commented out.
+      On systems with NVIDIA graphics cards, the tests may take significantly
+      longer than the above test time.
 @y
-      To run the tests, issue: <command>meson test --setup x11</command>. If you
-      are in a Wayland session, replace x11 with wayland. 8 tests are known to
-      fail, out of 730.
+      To run the tests, issue: <command>dbus-run-session meson test --setup
+      x11</command>. If you are in a Wayland session, replace x11 with wayland.
+      Nine tests are known to fail if
+      <ulink url="https://gitlab.gnome.org/GNOME/cantarell-fonts">Cantrell fonts</ulink>
+      are not installed. Many tests will fail if
+      <filename>~/.config/gtk-4.0/settings.ini</filename> exists and the gtk-modules
+      line is not commented out.
+      On systems with NVIDIA graphics cards, the tests may take significantly
+      longer than the above test time.
 @z
 
 @x
@@ -225,24 +205,12 @@
 
 @x
       <option>-Dcloudproviders=enabled</option>: Use this switch if you have
-      <ulink url="https://gitlab.gnome.org/World/libcloudproviders">libcloudproviders</ulink>
-      installed and wish to enable support for cloud providers in a file
-      chooser window.
+      <xref linkend="libcloudproviders" role="nodep"/> installed and wish to
+      enable support for cloud providers in a file chooser window.
 @y
       <option>-Dcloudproviders=enabled</option>: Use this switch if you have
-      <ulink url="https://gitlab.gnome.org/World/libcloudproviders">libcloudproviders</ulink>
-      installed and wish to enable support for cloud providers in a file
-      chooser window.
-@z
-
-@x
-      <option>-Dsysprof=enabled</option>: Use this switch if you have
-      <xref linkend="sysprof"/> installed and wish to enable tracing support for
-      GTK4-based applications.
-@y
-      <option>-Dsysprof=enabled</option>: Use this switch if you have
-      <xref linkend="sysprof"/> installed and wish to enable tracing support for
-      GTK4-based applications.
+      <xref linkend="libcloudproviders" role="nodep"/> installed and wish to
+      enable support for cloud providers in a file chooser window.
 @z
 
 @x
@@ -266,13 +234,13 @@
 @z
 
 @x
-      <option>-Dgtk_doc=true</option>: Use this switch if you have
-      <xref linkend="gtk-doc"/> installed and wish to generate the API
-      reference documentation.
+      <option>-Dsysprof=enabled</option>: Use this switch if you have
+      <ulink url="&sysprof-url;">sysprof</ulink> installed and wish to enable 
+      tracing support for GTK4-based applications.
 @y
-      <option>-Dgtk_doc=true</option>: Use this switch if you have
-      <xref linkend="gtk-doc"/> installed and wish to generate the API
-      reference documentation.
+      <option>-Dsysprof=enabled</option>: Use this switch if you have
+      <ulink url="&sysprof-url;">sysprof</ulink> installed and wish to enable 
+      tracing support for GTK4-based applications.
 @z
 
 @x
@@ -307,11 +275,11 @@
         be used to change the icons that appear on the application's toolbar.
         If you have installed a <application>GTK 4</application> theme (e.g.
         the Adwaita theme built in <application>GTK 4</application>),
-        an icon theme (such as <xref linkend="oxygen-icons5"/>) and/or a font
+        an icon theme (such as <xref linkend="oxygen-icons"/>) and/or a font
         (<xref linkend="dejavu-fonts"/>), you can set your preferences in
         <filename>~/.config/gtk-4.0/settings.ini</filename>, or the default
         system-wide configuration file (as the
-        <systemitem class="username">root</systemitem> user), in 
+        <systemitem class="username">root</systemitem> user), in
         <filename>/usr/share/gtk-4.0/settings.ini</filename>. For the local
         user, an example is:
 @y
@@ -320,11 +288,11 @@
         be used to change the icons that appear on the application's toolbar.
         If you have installed a <application>GTK 4</application> theme (e.g.
         the Adwaita theme built in <application>GTK 4</application>),
-        an icon theme (such as <xref linkend="oxygen-icons5"/>) and/or a font
+        an icon theme (such as <xref linkend="oxygen-icons"/>) and/or a font
         (<xref linkend="dejavu-fonts"/>), you can set your preferences in
         <filename>~/.config/gtk-4.0/settings.ini</filename>, or the default
         system-wide configuration file (as the
-        <systemitem class="username">root</systemitem> user), in 
+        <systemitem class="username">root</systemitem> user), in
         <filename>/usr/share/gtk-4.0/settings.ini</filename>. For the local
         user, an example is:
 @z
@@ -366,6 +334,7 @@
           gtk4-encode-symbolic-svg,
           gtk4-icon-browser,
           gtk4-launch,
+          gtk4-node-editor,
           gtk4-print-editor,
           gtk4-query-settings,
           gtk4-update-icon-cache, and
@@ -388,9 +357,10 @@
           gtk4-encode-symbolic-svg,
           gtk4-icon-browser,
           gtk4-launch,
+          gtk4-node-editor,
           gtk4-print-editor,
           gtk4-query-settings,
-          gtk4-update-icon-cache, and
+          gtk4-update-icon-cache,
           gtk4-widget-factory
         </seg>
         <seg>
@@ -398,7 +368,7 @@
         </seg>
         <seg>
           /usr/include/gtk-4.0,
-          /usr/lib/gtk-4.0, and
+          /usr/lib/gtk-4.0,
           /usr/share/gtk-4.0
         </seg>
 @z

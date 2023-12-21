@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -81,13 +77,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="json-glib"/> and
-      <xref linkend="libsoup"/>
+      <xref linkend="libsoup3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="json-glib"/>,
-      <xref linkend="libsoup"/>
+      <xref linkend="libsoup3"/>
     </para>
 @z
 
@@ -119,12 +115,6 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libnotify"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/geoclue2"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/geoclue2"/>
 @z
 
 @x

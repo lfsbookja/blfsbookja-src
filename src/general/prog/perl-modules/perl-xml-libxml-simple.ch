@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,11 +17,11 @@
 
 @x
         The XML::LibXML::Simple module is a rewrite of XML::Simple to use the
-        XML::LibXML parser for XML structures,instead of the plain
+        XML::LibXML parser for XML structures, instead of the plain
         <application>Perl</application> or SAX parsers.
 @y
         The XML::LibXML::Simple module is a rewrite of XML::Simple to use the
-        XML::LibXML parser for XML structures,instead of the plain
+        XML::LibXML parser for XML structures, instead of the plain
         <application>Perl</application> or SAX parsers.
 @z
 

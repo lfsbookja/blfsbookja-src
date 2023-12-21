@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -54,17 +50,17 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="perl-text-diff"/>,
+        <xref linkend="perl-text-diff"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <xref linkend="perl-text-diff"/>,
+        <xref linkend="perl-text-diff"/>
       </para>
 @z
 
 @x
-      <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
+      <bridgehead renderas="sect5">Recommended (required for the test suite)</bridgehead>
       <para role="recommended">
         <xref linkend="perl-capture-tiny"/>
       </para>

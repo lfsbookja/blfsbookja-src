@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY btrfs-progs-buildsize     "73 MB (up to 2.7 GB are used during tests)">
-  <!ENTITY btrfs-progs-time          "0.1 SBU (add 17 SBU for tests, but will be longer on slow disks)">
+  <!ENTITY btrfs-progs-buildsize     "62 MB (transient files created during tests need up to 10 GB)">
+  <!ENTITY btrfs-progs-time          "0.3 SBU (with parallelism=4; add 3.7 SBU for tests, up to 14 SBU on slow disks)">
 @y
-  <!ENTITY btrfs-progs-buildsize     "73 MB（テスト中に最大 2.7 GB まで）">
-  <!ENTITY btrfs-progs-time          "0.1 SBU（テスト実施時はさらに 17 SBU、低速ディスクではそれ以上）">
+  <!ENTITY btrfs-progs-buildsize     "62 MB (transient files created during tests need up to 10 GB)">
+  <!ENTITY btrfs-progs-time          "0.3 SBU (with parallelism=4; add 3.7 SBU for tests, up to 14 SBU on slow disks)">
 @z
 
 @x
@@ -107,21 +107,23 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="lvm2"/> (<command>dmsetup</command> is used in tests) and
-      <xref linkend="reiserfs"/> (for tests)
+      <xref linkend="lvm2"/> (<command>dmsetup</command> is used in tests),
+      <xref linkend="sphinx"/> (required to build documentation), and 
+      <ulink 
+        url='https://mirrors.edge.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/'>
+        reiserfsprogs</ulink> (for tests).
+
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (テストにて <command>dmsetup</command> が利用される),
-      <xref linkend="reiserfs"/> (テストのため)
-    </para>
-@z
+      <xref linkend="sphinx"/> (ドキュメントビルドに必要),
+      <ulink 
+        url='https://mirrors.edge.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/'>
+        reiserfsprogs</ulink> (テストのため).
 
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
+    </para>
 @z
 
 @x
@@ -139,11 +141,11 @@
 
 @x
       In addition to the above and to the options required for
-      <xref linkend="lvm2"/> and <xref linkend="reiserfs"/>, the following
+      <xref linkend="lvm2"/>, the following
       options must be enabled for running tests:
 @y
       In addition to the above and to the options required for
-      <xref linkend="lvm2"/> and <xref linkend="reiserfs"/>, the following
+      <xref linkend="lvm2"/>, the following
       options must be enabled for running tests:
 @z
 
@@ -163,26 +165,23 @@
 @x
         Some tests require grep built with perl regular expressions. To
         obtain this, rebuild grep with the LFS Chapter 8 instructions after
-        installing <xref linkend="pcre"/>.
+        installing <xref linkend="pcre2"/>.
 @y
         Some tests require grep built with perl regular expressions. To
         obtain this, rebuild grep with the LFS Chapter 8 instructions after
-        installing <xref linkend="pcre"/>.
+        installing <xref linkend="pcre2"/>.
 @z
 
 @x
-      To test the results, issue (as the <systemitem
-      class="username">root</systemitem> user): 
+      To test the results, issue (as the &root; user):
 @y
-      ビルド結果をテストする場合は (<systemitem
-      class="username">root</systemitem> ユーザーになって) 以下を実行します。
+      ビルド結果をテストする場合は (&root; ユーザーになって) 以下を実行します。
 @z
 
 @x
-      Install the package as the <systemitem
-      class="username">root</systemitem> user:
+      Install the package as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになってパッケージをインストールします。
+      &root; ユーザーになってパッケージをインストールします。
 @z
 
 @x
@@ -192,35 +191,13 @@
 @z
 
 @x
-      <option>--disable-documentation</option>: This option
-      is needed if the recommended dependencies are not installed.
+      <parameter>--disable-documentation</parameter>: This switch
+      disables rebuilding the manual pages, because it requires
+      <xref linkend="sphinx"/>.
 @y
-      <option>--disable-documentation</option>:
-      このオプションは、推奨する依存パッケージがインストールされていない場合に必要となります。
-@z
-
-@x
-      <command>mv tests/{cli,convert,misc,fuzz}-tests/ ...</command>: Disables
-      tests that fail and prevent tests from completing.
-@y
-      <command>mv tests/{cli,convert,misc,fuzz}-tests/ ...</command>:
-      失敗するテストを無効にし、テスト全体を成功させます。
-@z
-
-@x
-      <command>ln -s ... /usr/lib/libbtrfs.so</command>: Creates a 
-      symbolic link in the directory where it is expected.
-@y
-      <command>ln -s ... /usr/lib/libbtrfs.so</command>:
-      必要なシンボリックリンクを生成します。
-@z
-
-@x
-      <command>rm /lib/libbtrfs.{a,so}</command>: Removes unneeded
-      library entries.
-@y
-      <command>rm /lib/libbtrfs.{a,so}</command>:
-      不要なライブラリを削除します。
+      <parameter>--disable-documentation</parameter>: This switch
+      disables rebuilding the manual pages, because it requires
+      <xref linkend="sphinx"/>.
 @z
 
 @x
@@ -294,9 +271,11 @@
 @z
 
 @x btrfs-convert
-            converts from an ext2/3/4 or reiserfs filesystem to btrfs
+            converts from an ext2/3/4 or reiserfs filesystem to btrfs <!--(see
+            <xref linkend="using-btrfs-convert"/> above)-->
 @y
-            converts from an ext2/3/4 or reiserfs filesystem to btrfs
+            converts from an ext2/3/4 or reiserfs filesystem to btrfs <!--(see
+            <xref linkend="using-btrfs-convert"/> above)-->
 @z
 
 @x btrfs-find-root

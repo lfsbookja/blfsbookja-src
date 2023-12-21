@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -76,44 +72,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="git"/>,
-      <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gspell"/>,
-      <xref linkend="gtksourceview4"/>,
-      <xref linkend="itstool"/>,
-      <xref linkend="libpeas"/>, and
-      <xref linkend="tepl"/>
-    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="git"/>,
-      <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="gspell"/>,
-      <xref linkend="gtksourceview4"/>,
-      <xref linkend="itstool"/>,
-      <xref linkend="libpeas"/>,
-      <xref linkend="tepl"/>
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref role="runtime" linkend="gvfs"/> (runtime),
-      <xref linkend="iso-codes"/>, and
-      <xref linkend="pygobject3"/>
-      (<application>Python</application> 3 module)
-    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref role="runtime" linkend="gvfs"/> （実行時）,
-      <xref linkend="iso-codes"/>,
-      <xref linkend="pygobject3"/>
-      （<application>Python</application> 3 モジュール）
-    </para>
 @z
 
 @x
@@ -130,12 +96,6 @@
       <xref linkend="vala"/>,
       <ulink url="https://launchpad.net/zeitgeist">zeitgeist</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -170,23 +130,15 @@
 @z
 
 @x
-      <parameter>-Duser_documentation=false</parameter>: This switch disables
-      generating the user documentation. Omit this switch if you have
-      <xref linkend="gtk-doc"/> installed and wish to generate the user
+      <parameter>-Dgtk_doc=false</parameter>: This switch disables
+      generating the API documentation. Omit this switch if you have
+      <xref linkend="gtk-doc"/> installed and wish to generate the API
       documentation.
 @y
-      <parameter>-Duser_documentation=false</parameter>: This switch disables
-      generating the user documentation. Omit this switch if you have
-      <xref linkend="gtk-doc"/> installed and wish to generate the user
+      <parameter>-Dgtk_doc=false</parameter>: This switch disables
+      generating the API documentation. Omit this switch if you have
+      <xref linkend="gtk-doc"/> installed and wish to generate the API
       documentation.
-@z
-
-@x
-      <option>-Dgtk_doc=true</option>: Use this option
-      to build the reference manual (needs <xref linkend="gtk-doc"/>).
-@y
-      <option>-Dgtk_doc=true</option>: Use this option
-      to build the reference manual (needs <xref linkend="gtk-doc"/>).
 @z
 
 @x
@@ -207,25 +159,25 @@
 
 @x
         <seg>
-          gedit 
+          gedit
         </seg>
         <seg>
-          libgedit-40.0.so
+          libgedit-46.so
         </seg>
         <seg>
-          /usr/include/gedit-40.0 and
-          /usr/{lib,share,share/gtk-doc/html,share/help/*}/gedit
+          /usr/include/gedit-46 and
+          /usr/{lib,share,share/help/*}/gedit
         </seg>
 @y
         <seg>
-          gedit 
+          gedit
         </seg>
         <seg>
-          libgedit-40.0.so
+          libgedit-46.so
         </seg>
         <seg>
-          /usr/include/gedit-40.0,
-          /usr/{lib,share,share/gtk-doc/html,share/help/*}/gedit
+          /usr/include/gedit-46,
+          /usr/{lib,share,share/help/*}/gedit
         </seg>
 @z
 

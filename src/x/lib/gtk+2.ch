@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -78,14 +74,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="atk"/>,
+      <xref linkend="at-spi2-core"/>,
       <xref linkend="gdk-pixbuf"/> and
       <xref linkend="pango"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="atk"/>,
+      <xref linkend="at-spi2-core"/>,
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="pango"/>
     </para>
@@ -123,12 +119,6 @@
       <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk-doc"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gtk+2"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gtk+2"/>
 @z
 
 @x
@@ -234,7 +224,7 @@
         icons that appear on the application's toolbar. If you have installed a
         <application>GTK+ 2</application> theme (such as
         <xref linkend="gnome-themes-extra"/> or
-        <xref linkend="gtk-engines"/>), a
+        <xref linkend="gtk-engines"/>), or a
         <application>GTK+</application> icon theme (such as <xref
         linkend="adwaita-icon-theme"/>) you can set your preferences in
         <filename>~/.gtkrc-2.0</filename>:
@@ -245,7 +235,7 @@
         icons that appear on the application's toolbar. If you have installed a
         <application>GTK+ 2</application> theme (such as
         <xref linkend="gnome-themes-extra"/> or
-        <xref linkend="gtk-engines"/>), a
+        <xref linkend="gtk-engines"/>), or a
         <application>GTK+</application> icon theme (such as <xref
         linkend="adwaita-icon-theme"/>) you can set your preferences in
         <filename>~/.gtkrc-2.0</filename>:
@@ -253,10 +243,10 @@
 
 @x
         There are many more themes available at
-        <ulink url="http://gnome-look.org/">Gnome-Look.org</ulink> and other
+        <ulink url="https://gnome-look.org/">Gnome-Look.org</ulink> and other
         places.
 @y
-        数多くのテーマが <ulink url="http://gnome-look.org/">Gnome-Look.org</ulink> や他のサイトより入手可能です。
+        数多くのテーマが <ulink url="https://gnome-look.org/">Gnome-Look.org</ulink> や他のサイトより入手可能です。
 @z
 
 @x

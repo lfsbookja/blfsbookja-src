@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -107,12 +103,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/libwebp"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libwebp"/>
-@z
-
-@x
     <title>Installation of libwebp</title>
 @y
     <title>&InstallationOf1;libwebp&InstallationOf2;</title>
@@ -161,16 +151,17 @@
 
 @x
         <seg>
-          cwebp, 
-          dwebp, 
-          gif2webp, 
-          img2webp, 
+          cwebp,
+          dwebp,
+          gif2webp,
+          img2webp,
           vwebp,
-          webpinfo, 
+          webpinfo,
           and webpmux
         </seg>
         <seg>
-          libwebpdecoder.so, 
+          libsharpyuv.so,
+          libwebpdecoder.so,
           libwebpdemux.so,
           libwebpmux.so,
           and libwebp.so
@@ -180,16 +171,17 @@
         </seg>
 @y
         <seg>
-          cwebp, 
-          dwebp, 
-          gif2webp, 
-          img2webp, 
+          cwebp,
+          dwebp,
+          gif2webp,
+          img2webp,
           vwebp,
-          webpinfo, 
+          webpinfo,
           webpmux
         </seg>
         <seg>
-          libwebpdecoder.so, 
+          libsharpyuv.so,
+          libwebpdecoder.so,
           libwebpdemux.so,
           libwebpmux.so,
           libwebp.so

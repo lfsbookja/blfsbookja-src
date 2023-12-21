@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libgcrypt-buildsize     "135 MB (with tests and pdf documentation)">
-  <!ENTITY libgcrypt-time          "0.4 SBU (with documentation; add 0.5 SBU for tests)">
+  <!ENTITY libgcrypt-buildsize     "131 MB (with tests)">
+  <!ENTITY libgcrypt-time          "0.3 SBU (with documentation; add 0.4 SBU for tests)">
 @y
-  <!ENTITY libgcrypt-buildsize     "135 MB (テストと pdf 生成込み)">
-  <!ENTITY libgcrypt-time          "0.4 SBU (ドキュメント込み、テスト実施時はさらに 0.5 SBU)">
+  <!ENTITY libgcrypt-buildsize     "131 MB (テスト込み)">
+  <!ENTITY libgcrypt-time          "0.3 SBU (ドキュメント込み、テスト実施時はさらに 0.4 SBU)">
 @z
 
 @x
@@ -108,12 +108,6 @@
       <xref linkend="pth"/>,
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

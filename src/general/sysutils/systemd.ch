@@ -94,28 +94,40 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="Jinja2"/> and
-      <xref linkend="linux-pam"/>
-    </para>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
 @y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="Jinja2"/>,
-      <xref linkend="linux-pam"/>
-    </para>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
 @z
-
 @x
-    <bridgehead renderas="sect4">Recommended Runtime Dependencies</bridgehead>
+        <xref linkend='linux-pam'/> is not strictly required to build
+        <application>systemd</application>, but the main reason to rebuild
+        <application>systemd</application> in BLFS (it's already built in
+        LFS anyway) is for the <command>systemd-logind</command> daemon and
+        the
+        <filename class='libraryfile'>pam_systemd.so</filename> PAM module.
+        <xref linkend='linux-pam'/> is required for them.  All packages in
+        BLFS book with a dependency on <application>systemd</application>
+        expects it has been rebuilt with <xref linkend='linux-pam'/>.
+@y
+        <xref linkend='linux-pam'/> is not strictly required to build
+        <application>systemd</application>, but the main reason to rebuild
+        <application>systemd</application> in BLFS (it's already built in
+        LFS anyway) is for the <command>systemd-logind</command> daemon and
+        the
+        <filename class='libraryfile'>pam_systemd.so</filename> PAM module.
+        <xref linkend='linux-pam'/> is required for them.  All packages in
+        BLFS book with a dependency on <application>systemd</application>
+        expects it has been rebuilt with <xref linkend='linux-pam'/>.
+@z
+@x
     <para role="recommended">
-      <xref role="runtime" linkend="polkit"/> 
+      <xref linkend="linux-pam"/> and
+      <xref role="runtime" linkend="polkit"/> (runtime)
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended Runtime Dependencies</bridgehead>
     <para role="recommended">
-      <xref role="runtime" linkend="polkit"/> 
+      <xref linkend="linux-pam"/>,
+      <xref role="runtime" linkend="polkit"/> (実行時)
     </para>
 @z
 
@@ -139,21 +151,29 @@
       <xref linkend="qemu"/>,
       <xref linkend="qrencode"/>,
       <xref linkend="rsync"/>,
+      <xref linkend="sphinx"/>,
       <xref linkend="valgrind"/>,
       <xref linkend="zsh"/> (for the zsh completions),
-      <ulink url="https://sourceforge.net/projects/gnu-efi/">gnu-efi</ulink>,
+      <ulink url="https://www.apparmor.net/">AppArmor</ulink>,
+      <ulink url="https://github.com/linux-audit/audit-userspace">audit-userspace</ulink>,
+      <ulink url="https://github.com/scop/bash-completion">bash-completion</ulink>,
+      <ulink url="https://jekyllrb.com/">jekyll</ulink>,
       <ulink url="https://www.kernel.org/pub/linux/utils/kernel/kexec/">kexec-tools</ulink>,
+      <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
       <ulink url="https://sourceware.org/elfutils/">libdw</ulink>,
       <ulink url="https://developers.yubico.com/libfido2/">libfido2</ulink>,
       <ulink url="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</ulink>,
-      <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
-      <!--<ulink url="http://fukuchi.org/works/qrencode/">qrencode</ulink>,-->
+      <ulink url="https://lz4.github.io/lz4/">lz4</ulink>,
+      <ulink url="https://pypi.org/project/pyelftools/">pyelftools</ulink>,
       <ulink url="https://sourceforge.net/projects/linuxquota/">quota-tools</ulink>,
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>, and
+      <ulink url="https://rpm.org/">rpm</ulink>,
+      <ulink url="https://github.com/SELinuxProject/selinux">SELinux</ulink>,
+      <ulink url="https://sourceware.org/systemtap/">systemtap</ulink>,
       <ulink url="https://tpm2-tss.readthedocs.io/en/latest/">tpm2-tss</ulink>
+      and <ulink url="https://xenproject.org">Xen</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="btrfs-progs"/>, <!-- homed may support it, see the C.E.-->
       <xref linkend="curl"/>,
@@ -172,18 +192,26 @@
       <xref linkend="qemu"/>,
       <xref linkend="qrencode"/>,
       <xref linkend="rsync"/>,
+      <xref linkend="sphinx"/>,
       <xref linkend="valgrind"/>,
       <xref linkend="zsh"/> (for the zsh completions),
-      <ulink url="https://sourceforge.net/projects/gnu-efi/">gnu-efi</ulink>,
+      <ulink url="https://www.apparmor.net/">AppArmor</ulink>,
+      <ulink url="https://github.com/linux-audit/audit-userspace">audit-userspace</ulink>,
+      <ulink url="https://github.com/scop/bash-completion">bash-completion</ulink>,
+      <ulink url="https://jekyllrb.com/">jekyll</ulink>,
       <ulink url="https://www.kernel.org/pub/linux/utils/kernel/kexec/">kexec-tools</ulink>,
+      <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
       <ulink url="https://sourceware.org/elfutils/">libdw</ulink>,
       <ulink url="https://developers.yubico.com/libfido2/">libfido2</ulink>,
       <ulink url="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</ulink>,
-      <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
-      <!--<ulink url="http://fukuchi.org/works/qrencode/">qrencode</ulink>,-->
+      <ulink url="https://lz4.github.io/lz4/">lz4</ulink>,
+      <ulink url="https://pypi.org/project/pyelftools/">pyelftools</ulink>,
       <ulink url="https://sourceforge.net/projects/linuxquota/">quota-tools</ulink>,
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>,
+      <ulink url="https://rpm.org/">rpm</ulink>,
+      <ulink url="https://github.com/SELinuxProject/selinux">SELinux</ulink>,
+      <ulink url="https://sourceware.org/systemtap/">systemtap</ulink>,
       <ulink url="https://tpm2-tss.readthedocs.io/en/latest/">tpm2-tss</ulink>
+      and <ulink url="https://xenproject.org">Xen</ulink>
     </para>
 @z
 
@@ -206,24 +234,12 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of systemd</title>
 @y
     <title>&InstallationOf1;systemd&InstallationOf2;</title>
 @z
 
 @x
-      Apply a patch to fix a security vulnerability:
-@y
-      Apply a patch to fix a security vulnerability:
-@z
-
-@x
       Remove two unneeded groups,
       <systemitem class="groupname">render</systemitem> and
       <systemitem class="groupname">sgx</systemitem>, from the default udev
@@ -244,23 +260,33 @@
 @z
 
 @x
-        For the best test results, make sure you run the testsuite from
+        For the best test results, make sure you run the test suite from
         a system that is booted by the same
         <application>systemd</application> version you are rebuilding.
 @y
-        For the best test results, make sure you run the testsuite from
+        For the best test results, make sure you run the test suite from
         a system that is booted by the same
         <application>systemd</application> version you are rebuilding.
 @z
 
 @x
-      To test the results, issue:
-      <command>PATH+=:/usr/sbin ninja test</command>.
-      <!-- One test named test-repart needs sfdisk, which is in /usr/sbin. -->
+      To test the results, issue: <command>ninja test</command>.
+      <!-- test-netlink: https://github.com/systemd/systemd/issues/27969 -->
+      The test named <filename>test-stat-util</filename> and
+      <filename>test-netlink</filename> are known to fail
+      if some kernel features are not enabled.
+      If the test suite is ran as the &root; user, some
+      other tests may fail because they depend on various kernel
+      configuration options.
 @y
-      To test the results, issue:
-      <command>PATH+=:/usr/sbin ninja test</command>.
-      <!-- One test named test-repart needs sfdisk, which is in /usr/sbin. -->
+      To test the results, issue: <command>ninja test</command>.
+      <!-- test-netlink: https://github.com/systemd/systemd/issues/27969 -->
+      The test named <filename>test-stat-util</filename> and
+      <filename>test-netlink</filename> are known to fail
+      if some kernel features are not enabled.
+      If the test suite is ran as the &root; user, some
+      other tests may fail because they depend on various kernel
+      configuration options.
 @z
 
 @x
@@ -299,14 +325,14 @@
       <parameter>-Dhomed=false</parameter>: Removes a daemon that does not offer
       any use under a traditional BLFS configuration, especially using accounts
       created with useradd. To enable systemd-homed, first ensure that you have
-      <xref linkend="cryptsetup"/> and <xref linkend="libpwquality"/>, and then
-      change "false" to "true" in the above meson command.
+      <xref linkend="cryptsetup"/> and <xref linkend="libpwquality"/> installed,
+      and then change "false" to "true" in the above meson command.
 @y
       <parameter>-Dhomed=false</parameter>: Removes a daemon that does not offer
       any use under a traditional BLFS configuration, especially using accounts
       created with useradd. To enable systemd-homed, first ensure that you have
-      <xref linkend="cryptsetup"/> and <xref linkend="libpwquality"/>, and then
-      change "false" to "true" in the above meson command.
+      <xref linkend="cryptsetup"/> and <xref linkend="libpwquality"/> installed,
+      and then change "false" to "true" in the above meson command.
 @z
 
 @x
@@ -368,17 +394,13 @@
 @z
 
 @x
-        <seg>
-          <!-- maybe userdbd/userdbctl can go in LFS, try at next time -->
-          homectl (if <xref linkend="cryptsetup"/> is installed)
-          and userdbctl (optionally)
-        </seg>
+          homectl (optional),
+          systemd-cryptenroll (if <xref linkend="cryptsetup"/> is installed),
+          and userdbctl (optional)
 @y
-        <seg>
-          <!-- maybe userdbd/userdbctl can go in LFS, try at next time -->
-          homectl (if <xref linkend="cryptsetup"/> is installed),
-          userdbctl (optionally)
-        </seg>
+          homectl (optional),
+          systemd-cryptenroll (if <xref linkend="cryptsetup"/> is installed),
+          and userdbctl (optional)
 @z
 
 @x

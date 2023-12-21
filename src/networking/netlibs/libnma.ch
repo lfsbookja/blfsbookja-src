@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY libnma-time          "0.1 SBU (with tests)">
+  <!ENTITY libnma-time          "0.1 SBU (Using parallelism=4; with test)">
 @y
-  <!ENTITY libnma-time          "0.1 SBU （テスト込み）">
+  <!ENTITY libnma-time          "0.1 SBU （parallelism=4 利用; テスト込み）">
 @z
 
 @x
@@ -102,11 +98,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="gtk4"/> and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="gtk4"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -121,12 +119,6 @@
     <para role="optional">
       <ulink url="&gnome-download-http;/mobile-broadband-provider-info">mobile-broadband-provider-info</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libnma"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libnma"/>
 @z
 
 @x
@@ -205,7 +197,7 @@
           None
         </seg>
         <seg>
-          libnma.so
+          libnma.so and libnma-gtk4.so
         </seg>
         <seg>
           /usr/include/libnma
@@ -215,7 +207,7 @@
           &None;
         </seg>
         <seg>
-          libnma.so
+          libnma.so, libnma-gtk4.so
         </seg>
         <seg>
           /usr/include/libnma

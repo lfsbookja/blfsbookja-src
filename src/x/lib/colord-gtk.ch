@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -99,14 +95,14 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk2"/>, and
+      <xref linkend="gtk4"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk2"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -123,12 +119,6 @@
       <xref linkend="docbook-utils"/>,
       <xref linkend="gtk-doc"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/colord-gtk"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/colord-gtk"/>
 @z
 
 @x
@@ -168,29 +158,31 @@
 
 @x
       <parameter>-Dvapi=true</parameter>: This switch enables
-      building of the Vala bindings. Remove if you don't
-      have <xref linkend="vala"/> installed.
+      building of the Vala bindings. Remove this switch if you don't
+      have <xref linkend="vala" role="nodep"/> installed.
 @y
       <parameter>-Dvapi=true</parameter>: This switch enables
-      building of the Vala bindings. Remove if you don't
-      have <xref linkend="vala"/> installed.
+      building of the Vala bindings. Remove this switch if you don't
+      have <xref linkend="vala" role="nodep"/> installed.
 @z
 
 @x
-      <parameter>-Dgtk2=true</parameter>: This switch enables building
-      the GTK+-2 bindings for colord.
+      <parameter>-Dgtk4=true</parameter>: This switch enables building
+      the GTK-4 bindings for colord. Set this option to 'false' if you
+      do not have <xref linkend="gtk4" role="nodep"/> installed.
 @y
-      <parameter>-Dgtk2=true</parameter>: This switch enables building
-      the GTK+-2 bindings for colord.
+      <parameter>-Dgtk4=true</parameter>: This switch enables building
+      the GTK-4 bindings for colord. Set this option to 'false' if you
+      do not have <xref linkend="gtk4" role="nodep"/> installed.
 @z
 
 @x
       <parameter>-Ddocs=false</parameter>: This switch disables building
-      GTK-DOC based documentation. Even if GTK-DOC is installed, you will
+      gtk-doc based documentation. Even if gtk-doc is installed, you will
       need the namespaced versions of the Docbook XSL stylesheets.
 @y
       <parameter>-Ddocs=false</parameter>: This switch disables building
-      GTK-DOC based documentation. Even if GTK-DOC is installed, you will
+      gtk-doc based documentation. Even if gtk-doc is installed, you will
       need the namespaced versions of the Docbook XSL stylesheets.
 @z
 
@@ -225,7 +217,8 @@
           cd-convert
         </seg>
         <seg>
-          libcolord-gtk.so and libcolord-gtk2.so
+          libcolord-gtk.so, and
+          libcolord-gtk4.so
         </seg>
         <seg>
           /usr/include/colord-1/colord-gtk and
@@ -236,7 +229,8 @@
           cd-convert
         </seg>
         <seg>
-          libcolord-gtk.so, libcolord-gtk2.so
+          libcolord-gtk.so,
+          libcolord-gtk4.so
         </seg>
         <seg>
           /usr/include/colord-1/colord-gtk,

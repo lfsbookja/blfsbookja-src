@@ -27,7 +27,7 @@
       The <application>GMime</application> package contains a set of
       utilities for parsing and creating messages using the Multipurpose
       Internet Mail Extension (MIME) as defined by the applicable RFCs. See the
-      <ulink url="http://spruce.sourceforge.net/gmime/">GMime web site</ulink>
+      <ulink url="https://spruce.sourceforge.net/gmime/">GMime web site</ulink>
       for the RFCs resourced. This is useful as it provides an API which adheres
       to the MIME specification as closely as possible while also providing
       programmers with an extremely easy to use interface to the API functions.
@@ -35,7 +35,7 @@
       The <application>GMime</application> package contains a set of
       utilities for parsing and creating messages using the Multipurpose
       Internet Mail Extension (MIME) as defined by the applicable RFCs. See the
-      <ulink url="http://spruce.sourceforge.net/gmime/">GMime web site</ulink>
+      <ulink url="https://spruce.sourceforge.net/gmime/">GMime web site</ulink>
       for the RFCs resourced. This is useful as it provides an API which adheres
       to the MIME specification as closely as possible while also providing
       programmers with an extremely easy to use interface to the API functions.
@@ -119,8 +119,8 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libnsl"/>,
       <xref linkend="vala"/>, and
-      <ulink url="http://download.mono-project.com/sources/gtk-sharp/">Gtk#</ulink> (requires
-      <ulink url="http://www.mono-project.com/Main_Page">Mono</ulink>)
+      <ulink url="https://download.mono-project.com/sources/gtk-sharp/">Gtk#</ulink> (requires
+      <ulink url="https://www.mono-project.com/Main_Page">Mono</ulink>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -130,15 +130,9 @@
       <xref linkend="gtk-doc"/>,
       <xref linkend="libnsl"/>,
       <xref linkend="vala"/>,
-      <ulink url="http://download.mono-project.com/sources/gtk-sharp/">Gtk#</ulink>
-      (<ulink url="http://www.mono-project.com/Main_Page">Mono</ulink> が必要)
+      <ulink url="https://download.mono-project.com/sources/gtk-sharp/">Gtk#</ulink>
+      (<ulink url="https://www.mono-project.com/Main_Page">Mono</ulink> が必要)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

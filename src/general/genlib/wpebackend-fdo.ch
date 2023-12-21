@@ -12,7 +12,7 @@
 @x
     <title>Introduction to wpebackend-fdo</title>
 @y
-    <title>Introduction to wpebackend-fdo</title>
+    <title>&IntroductionTo1;wpebackend-fdo&IntroductionTo2;</title>
 @z
 
 @x
@@ -26,49 +26,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&wpebackend-fdo-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&wpebackend-fdo-download-http;"/>
+          &Download; (HTTP): <ulink url="&wpebackend-fdo-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&wpebackend-fdo-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&wpebackend-fdo-download-ftp;"/>
+          &Download; (FTP): <ulink url="&wpebackend-fdo-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &wpebackend-fdo-md5sum;
 @y
-          Download MD5 sum: &wpebackend-fdo-md5sum;
+          &Download; MD5 sum: &wpebackend-fdo-md5sum;
 @z
 
 @x
           Download size: &wpebackend-fdo-size;
 @y
-          Download size: &wpebackend-fdo-size;
+          &DownloadSize;: &wpebackend-fdo-size;
 @z
 
 @x
           Estimated disk space required: &wpebackend-fdo-buildsize;
 @y
-          Estimated disk space required: &wpebackend-fdo-buildsize;
+          &Estimateddiskspacerequired;: &wpebackend-fdo-buildsize;
 @z
 
 @x
           Estimated build time: &wpebackend-fdo-time;
 @y
-          Estimated build time: &wpebackend-fdo-time;
+          &Estimatedbuildtime;: &wpebackend-fdo-time;
 @z
 
 @x
     <bridgehead renderas="sect3">wpebackend-fdo Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">wpebackend-fdo Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;wpebackend-fdo&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -79,50 +79,43 @@
       <xref linkend="wayland-protocols"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="libepoxy"/>,
-      <xref linkend="libwpe"/>, and
+      <xref linkend="libwpe"/>,
       <xref linkend="wayland-protocols"/>
     </para>
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/wpebackend-fdo"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/wpebackend-fdo"/>
-@z
-
-@x
     <title>Installation of wpebackend-fdo</title>
 @y
-    <title>Installation of wpebackend-fdo</title>
+    <title>&InstallationOf1;wpebackend-fdo&InstallationOf2;</title>
 @z
 
 @x
       Install <application>wpebackend-fdo</application> by running the following
       commands:
 @y
-      Install <application>wpebackend-fdo</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>wpebackend-fdo</application> をビルドします。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -130,9 +123,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -160,7 +153,7 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x libWPEBackend-fdo-1.0.so

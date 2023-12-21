@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -93,12 +89,6 @@
     <para role="required">
       <xref linkend="libtirpc"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -196,16 +186,13 @@
 @x
         Install the
         <phrase revision="sysv"><filename>/etc/rc.d/init.d/rpcbind</filename>
-        init script</phrase>
-        <phrase revision="systemd"><filename>rpcbind.service</filename>
-        unit</phrase> included in the
-        <xref linkend="bootscripts" revision="sysv"/>
-        <xref linkend="systemd-units" revision="systemd"/> package.
+        init script</phrase> included in the
+        <xref linkend="bootscripts"/> package.
 @y
-        <xref linkend="bootscripts" revision="sysv"/>
-        <xref linkend="systemd-units" revision="systemd"/> パッケージに含まれる
-        <phrase revision="sysv">初期化スクリプト <filename>/etc/rc.d/init.d/rpcbind</filename></phrase>
-        <phrase revision="systemd"><filename>rpcbind.service</filename>ユニット</phrase> をインストールします。
+        Install the
+        <phrase revision="sysv"><filename>/etc/rc.d/init.d/rpcbind</filename>
+        init script</phrase> included in the
+        <xref linkend="bootscripts"/> package.
 @z
 
 @x

@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY qca-time          "0.5 SBU (using parallelism=4; add 0.7 SBU for tests)">
+  <!ENTITY qca-time          "0.4 SBU (using parallelism=4; add 0.1 SBU for tests)">
 @y
-  <!ENTITY qca-time          "0.5 SBU (using parallelism=4; add 0.7 SBU for tests)">
+  <!ENTITY qca-time          "0.4 SBU (using parallelism=4; add 0.1 SBU for tests)">
 @z
 
 @x
@@ -96,12 +96,6 @@
     <xref linkend="qt5"/>, and
     <xref linkend="which"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

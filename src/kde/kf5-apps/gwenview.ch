@@ -12,7 +12,7 @@
 @x
   <!ENTITY gwenview5-time          "0.6 SBU (using parallelism=4)">
 @y
-  <!ENTITY gwenview5-time          "0.6 SBU (parallelism=4 利用)">
+  <!ENTITY gwenview5-time          "0.6 SBU (using parallelism=4)">
 @z
 
 @x
@@ -80,6 +80,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="exiv2"/>,
+      <xref linkend="kimageannotator"/>,
       <xref linkend="kf5-frameworks"/>, and
       <xref linkend="lcms2"/>
     </para>
@@ -87,6 +88,7 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="exiv2"/>,
+      <xref linkend="kimageannotator"/>,
       <xref linkend="kf5-frameworks"/>,
       <xref linkend="lcms2"/>
     </para>
@@ -114,12 +116,6 @@
     <para role="optional">
       <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">KF5Kipi</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gwenview"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gwenview"/>
 @z
 
 @x

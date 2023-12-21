@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY cryptsetup-buildsize     "29 MB (add 113 MB for tests)">
-  <!ENTITY cryptsetup-time          "0.2 SBU (add 14 SBU for tests)">
+  <!ENTITY cryptsetup-buildsize     "32 MB (add 5 MB for tests)">
+  <!ENTITY cryptsetup-time          "0.2 SBU (add 7.6 SBU for tests)">
 @y
-  <!ENTITY cryptsetup-buildsize     "29 MB（テスト実施時はさらに 113 MB）">
-  <!ENTITY cryptsetup-time          "0.2 SBU（テスト実施時はさらに 14 SBU）">
+  <!ENTITY cryptsetup-buildsize     "32 MB（テスト実施時はさらに 5 MB）">
+  <!ENTITY cryptsetup-time          "0.2 SBU（テスト実施時はさらに 7.6 SBU）">
 @z
 
 @x
@@ -98,23 +98,21 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="asciidoctor"/>,
       <xref linkend="libpwquality"/>,
-      <ulink url="https://github.com/P-H-C/phc-winner-argon2">argon2</ulink>, and
-      <ulink url="http://www.openwall.com/passwdqc/">passwdqc</ulink>
+      <ulink url="https://github.com/P-H-C/phc-winner-argon2">argon2</ulink>,
+      <ulink url="https://www.libssh.org/">libssh</ulink>, and
+      <ulink url="https://www.openwall.com/passwdqc/">passwdqc</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="asciidoctor"/>,
       <xref linkend="libpwquality"/>,
       <ulink url="https://github.com/P-H-C/phc-winner-argon2">argon2</ulink>,
-      <ulink url="http://www.openwall.com/passwdqc/">passwdqc</ulink>
+      <ulink url="https://www.libssh.org/">libssh</ulink>,
+      <ulink url="https://www.openwall.com/passwdqc/">passwdqc</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -148,52 +146,12 @@
       To test the result, issue as the <systemitem
       class="username">root</systemitem> user: <command>make check</command>.
       Some tests will fail if appropriate kernel configuration options are not
-      set. Some additional options that may be needed for tests are: 
-      CONFIG_SCSI_LOWLEVEL,
-      CONFIG_SCSI_DEBUG,
-      CONFIG_BLK_DEV_DM_BUILTIN,
-      CONFIG_CRYPTO_USER,
-      CONFIG_CRYPTO_CRYPTD,
-      CONFIG_CRYPTO_LRW,
-      CONFIG_CRYPTO_XTS,
-      CONFIG_CRYPTO_ESSIV,
-      CONFIG_CRYPTO_CRCT10DIF,
-      CONFIG_CRYPTO_AES_TI,
-      CONFIG_CRYPTO_AES_NI_INTEL,
-      CONFIG_CRYPTO_BLOWFISH,
-      CONFIG_CRYPTO_CAST5,
-      CONFIG_CRYPTO_SERPENT,
-      CONFIG_CRYPTO_SERPENT_SSE2_X86_64,
-      CONFIG_CRYPTO_SERPENT_AVX_X86_64,
-      CONFIG_CRYPTO_SERPENT_AVX2_X86_64, and
-      CONFIG_CRYPTO_TWOFISH_X86_64.  
-      <!--I still had 5 of 19 tests fail after adding the above crypto options in the 
-      kernel.  bdubbs -->
+      set. Some additional options that may be needed for tests are:
 @y
       ビルド結果をテストする場合は、<systemitem
       class="username">root</systemitem> ユーザーになって <command>make check</command> を実行します。
       カーネル設定パラメーターが適切にセットされていない場合には、失敗するテストが出てきます。
       テストに必要となる追加のオプションは以下です。
-      CONFIG_SCSI_LOWLEVEL,
-      CONFIG_SCSI_DEBUG,
-      CONFIG_BLK_DEV_DM_BUILTIN,
-      CONFIG_CRYPTO_USER,
-      CONFIG_CRYPTO_CRYPTD,
-      CONFIG_CRYPTO_LRW,
-      CONFIG_CRYPTO_XTS,
-      CONFIG_CRYPTO_ESSIV,
-      CONFIG_CRYPTO_CRCT10DIF,
-      CONFIG_CRYPTO_AES_TI,
-      CONFIG_CRYPTO_AES_NI_INTEL,
-      CONFIG_CRYPTO_BLOWFISH,
-      CONFIG_CRYPTO_CAST5,
-      CONFIG_CRYPTO_SERPENT,
-      CONFIG_CRYPTO_SERPENT_SSE2_X86_64,
-      CONFIG_CRYPTO_SERPENT_AVX_X86_64,
-      CONFIG_CRYPTO_SERPENT_AVX2_X86_64, and
-      CONFIG_CRYPTO_TWOFISH_X86_64.  
-      <!--I still had 5 of 19 tests fail after adding the above crypto options in the 
-      kernel.  bdubbs -->
 @z
 
 @x
@@ -279,29 +237,29 @@
 @z
 
 @x cryptsetup
-             is used to setup dm-crypt managed device-mapper mappings
+            is used to setup dm-crypt managed device-mapper mappings
 @y
-             is used to setup dm-crypt managed device-mapper mappings
+            is used to setup dm-crypt managed device-mapper mappings
 @z
 
 @x cryptsetup-reencrypt
-             is a tool for offline LUKS device re-encryption
+            is a tool for offline LUKS device re-encryption
 @y
-             is a tool for offline LUKS device re-encryption
+            is a tool for offline LUKS device re-encryption
 @z
 
 @x integritysetup
-             is a tool to manage dm-integrity (block level integrity) volumes
+            is a tool to manage dm-integrity (block level integrity) volumes
 @y
-             is a tool to manage dm-integrity (block level integrity) volumes
+            is a tool to manage dm-integrity (block level integrity) volumes
 @z
 
 @x veritysetup
-             is used to configure dm-verity managed device-mapper mappings.
-             Device-mapper verity target provides read-only transparent integrity
-             checking of block devices using kernel crypto API
+            is used to configure dm-verity managed device-mapper mappings.
+            The Device-mapper verity target provides read-only transparent
+            integrity checking of block devices using the kernel crypto API
 @y
-             is used to configure dm-verity managed device-mapper mappings.
-             Device-mapper verity target provides read-only transparent integrity
-             checking of block devices using kernel crypto API
+            is used to configure dm-verity managed device-mapper mappings.
+            The Device-mapper verity target provides read-only transparent
+            integrity checking of block devices using the kernel crypto API
 @z

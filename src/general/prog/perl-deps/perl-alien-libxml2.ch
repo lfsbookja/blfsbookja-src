@@ -52,21 +52,21 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="perl-alien-build"/>,
+        <xref linkend="perl-alien-build-plugin-download-gitlab"/>,
         <xref linkend="libxml2"/>,
         <xref linkend="perl-path-tiny"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <xref linkend="perl-alien-build"/>,
+        <xref linkend="perl-alien-build-plugin-download-gitlab"/>,
         <xref linkend="libxml2"/>,
         <xref linkend="perl-path-tiny"/>
       </para>
 @z
 
 @x
-      <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
+      <bridgehead renderas="sect5">Recommended (required for the test suite)</bridgehead>
       <para role="recommended">
         <xref linkend="perl-test2-suite"/>
       </para>

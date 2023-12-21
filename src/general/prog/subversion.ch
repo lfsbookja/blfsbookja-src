@@ -110,42 +110,36 @@
     <para role="optional">
       <xref linkend="apache"/>,
       <xref linkend="boost"/>,
-<!-- support for berkeley db is deprecated since 1.8
-      <xref linkend="db"/>,
--->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
       <xref linkend="doxygen"/> (for generating HTML documentation),
       <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
-      <xref linkend="py3c"/> (for the python bindings, and tests)
-      <xref linkend="python2"/> (with sqlite support for the tests),
+      <xref linkend="py3c"/> (for the python bindings, and tests),
+      <xref linkend="python3"/> (with sqlite support for the tests),
       <xref linkend="ruby"/>,
       <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
       <ulink url="https://github.com/lz4/lz4/releases">LZ4</ulink>, and
-      <ulink url="http://git.netsurf-browser.org/libutf8proc.git/">UTF8proc</ulink>
+      <ulink url="https://git.netsurf-browser.org/libutf8proc.git/">UTF8proc</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="apache"/>,
       <xref linkend="boost"/>,
-<!-- support for berkeley db is deprecated since 1.8
-      <xref linkend="db"/>,
--->
       <xref linkend="cyrus-sasl"/>,
       <xref linkend="dbus"/>,
       <xref linkend="doxygen"/> (for generating HTML documentation),
       <xref linkend="gnome-keyring"/>,
       <xref linkend="libsecret"/>,
 <!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
-      <xref linkend="py3c"/> (for the python bindings, and tests)
-      <xref linkend="python2"/> (with sqlite support for the tests),
+      <xref linkend="py3c"/> (for the python bindings, and tests),
+      <xref linkend="python3"/> (with sqlite support for the tests),
       <xref linkend="ruby"/>,
       <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
       <ulink url="https://github.com/lz4/lz4/releases">LZ4</ulink>, and
-      <ulink url="http://git.netsurf-browser.org/libutf8proc.git/">UTF8proc</ulink>
+      <ulink url="https://git.netsurf-browser.org/libutf8proc.git/">UTF8proc</ulink>
     </para>
 @z
 
@@ -153,8 +147,8 @@
     <bridgehead renderas="sect4">Optional (for the Java Bindings)</bridgehead>
     <para role="optional">
       One of <xref linkend="openjdk"/>,
-      <ulink url="http://www.inet.no/dante/">Dante</ulink> or
-      <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
+      <ulink url="https://www.inet.no/dante/">Dante</ulink> or
+      <ulink url="https://jikes.sourceforge.net/">Jikes</ulink>,
       <ulink url="https://junit.org/junit4/">JUnit 4</ulink> (to test the Java bindings) and
       <xref linkend="apache-ant"/>.
     </para>
@@ -162,17 +156,11 @@
     <bridgehead renderas="sect4">&Optional;; (Java バインディングビルド時)</bridgehead>
     <para role="optional">
       One of <xref linkend="openjdk"/>,
-      <ulink url="http://www.inet.no/dante/">Dante</ulink> or
-      <ulink url="http://jikes.sourceforge.net/">Jikes</ulink>,
+      <ulink url="https://www.inet.no/dante/">Dante</ulink> or
+      <ulink url="https://jikes.sourceforge.net/">Jikes</ulink>,
       <ulink url="https://junit.org/junit4/">JUnit 4</ulink> (to test the Java bindings) and
       <xref linkend="apache-ant"/>.
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/subversion"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/subversion"/>
 @z
 
 @x
@@ -294,7 +282,7 @@
         </seg>
         <seg>
           libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
-          and mod_authz_svn.so <application>Apache HTTP</application> DSO
+          mod_authz_svn.so <application>Apache HTTP</application> DSO
           modules and various <application>Perl</application>,
           <application>Python</application> and
           <application>Ruby</application> modules.
@@ -310,13 +298,13 @@
 @y
         <seg>
           svn, svnadmin, svnbench, svndumpfilter, svnfsfs, svnlook, svnmucc,
-          svnrdump, svnserve, svnsync, svnversion
+          svnrdump, svnserve, svnsync, and svnversion
         </seg>
         <seg>
           libsvn_*-1.so and optionally, a Java library, the mod_dav_svn.so and
-          and mod_authz_svn.so <application>Apache HTTP</application> DSO
+          mod_authz_svn.so <application>Apache HTTP</application> DSO
           modules and various <application>Perl</application>,
-          <application>Python</application>,
+          <application>Python</application> and
           <application>Ruby</application> modules.
         </seg>
         <seg>
@@ -324,7 +312,7 @@
           /usr/lib/perl5/site_perl/&lfs-perl-version;/{,auto/}SVN,
           /usr/lib/python&python3-majorver;/site-packages/{libsvn,svn},
           /usr/lib/ruby/site_ruby/&lt;x.y.z&gt;/{,&lt;arch-linux&gt;-linux/}svn,
-          /usr/lib/svn-javahl,
+          /usr/lib/svn-javahl, and
           /usr/share/doc/subversion-&subversion-version;
         </seg>
 @z

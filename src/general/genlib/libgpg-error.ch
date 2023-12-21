@@ -74,12 +74,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of libgpg-error</title>
 @y
     <title>&InstallationOf1;libgpg-error&InstallationOf2;</title>
@@ -122,7 +116,7 @@
 
 @x
         <seg>
-          gpg-error, gpg-error-config, gpgrt-config, and yat2m
+          gpg-error, gpgrt-config, and yat2m
         </seg>
         <seg>
           libgpg-error.so
@@ -134,7 +128,7 @@
         </seg>
 @y
         <seg>
-          gpg-error, gpg-error-config, gpgrt-config, yat2m
+          gpg-error, gpgrt-config, yat2m
         </seg>
         <seg>
           libgpg-error.so
@@ -159,15 +153,18 @@
             <application>libgpg-error</application> のエラーコードを決定するために利用します。
 @z
 
-@x gpg-error-config
-            is a utility used to configure and build applications based on
-            the <application>libgpg-error</application> library. It can be used
-            to query the C compiler and linker flags which are required to
-            correctly compile and link the application against the
-            <application>libgpg-error</application> library
+@x gpgrt-config
+            is a <command>pkg-config</command> style tool for querying the
+            information about installed version of libgpg-error
 @y
-            <application>libgpg-error</application> ライブラリに基づいて生成されるアプリケーションの設定と構築のために利用するユーティリティです。
-            <application>libgpg-error</application> ライブラリに対してアプリケーションをコンパイルしリンクする際の C コンパイラーフラグやリンカーフラグを決定するために利用します。
+            is a <command>pkg-config</command> style tool for querying the
+            information about installed version of libgpg-error
+@z
+
+@x yat2m
+            extracts man pages from a Texinfo source
+@y
+            Texinfo ソースから man ページを抽出します。
 @z
 
 @x liblibgpg-error.so

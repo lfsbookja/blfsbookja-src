@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -72,15 +68,11 @@
 @z
 
 @x
-      <para><ulink url="http://www.dreamwvr.com/services">DREAMWVR.COM</ulink>
-      for their ongoing sponsorship by donating various resources to the
-      LFS and related sub projects.</para>
+      <para>DREAMWVR.COM for their sponsorship by donating various resources to
+      the LFS and related sub projects.</para>
 @y
-      <para>
-      <ulink url="http://www.dreamwvr.com/services">DREAMWVR.COM</ulink>
-      for their ongoing sponsorship by donating various resources to the
-      LFS and related sub projects.
-      </para>
+      <para>DREAMWVR.COM for their sponsorship by donating various resources to
+      the LFS and related sub projects.</para>
 @z
 
 @x

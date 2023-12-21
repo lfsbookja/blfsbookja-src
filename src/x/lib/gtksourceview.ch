@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -111,7 +107,7 @@
       <xref linkend="fop"/> (or
       <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink>),
       and
-      <ulink url="http://glade.gnome.org/">Glade</ulink>
+      <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -122,15 +118,8 @@
       <xref linkend="itstool"/>,
       <xref linkend="fop"/> (or
       <ulink url="https://sourceforge.net/projects/dblatex/">dblatex</ulink>),
-      and
-      <ulink url="http://glade.gnome.org/">Glade</ulink>
+      <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

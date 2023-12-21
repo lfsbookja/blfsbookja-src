@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gst10-plugins-bad-buildsize     "141 MB (with tests)">
-  <!ENTITY gst10-plugins-bad-time          "0.9 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-bad-buildsize     "214 MB (with tests)">
+  <!ENTITY gst10-plugins-bad-time          "1.1 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-bad-buildsize     "141 MB（テスト込み）">
-  <!ENTITY gst10-plugins-bad-time          "0.9 SBU（parallelism=4 利用、テスト込み）">
+  <!ENTITY gst10-plugins-bad-buildsize     "214 MB（テスト込み）">
+  <!ENTITY gst10-plugins-bad-time          "1.1 SBU（parallelism=4 利用、テスト込み）">
 @z
 
 @x
@@ -122,40 +122,49 @@
       <xref linkend="faad2"/>,
       <xref linkend="fdk-aac"/>,
       <xref linkend="gtk3"/> (for examples),
+      <xref linkend="gst10-plugins-good"/> (for one test),
+      <xref linkend="json-glib"/>,
       <xref linkend="lcms2"/>,
+      <xref linkend="libaom"/>,
       <xref linkend="libass"/>,
       <xref linkend="libexif"/> (for one test),
-      <xref linkend="libmpeg2"/>,
       <xref linkend="librsvg"/>,
+      <xref linkend="libsoup"/> (for one test),
       <xref linkend="libsndfile"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="libusb"/>,
+      <xref linkend="libva"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="neon"/>,
       <xref linkend="nettle"/> or <xref linkend="libgcrypt"/>
-	  (for SSL support in hls plugin, if both are not installed OpenSSL will
-	  be used instead),
+      (for SSL support in the hls plugin, if both are not installed OpenSSL will
+      be used instead),
       <xref linkend="opencv"/> (with additional modules),
       <xref linkend="openjpeg2"/>,
       <xref linkend="opus"/>,
+      <xref linkend="qrencode"/>,
       <xref linkend="sbc"/>,
       <xref linkend="sdl"/>,
       <xref linkend="valgrind"/>,
+      both <xref linkend="vulkan-loader"/> and
+      <ulink url='https://github.com/google/shaderc'>glslc</ulink>
+      (for Vulkan plugin),
       <xref linkend="wayland"/> (<xref linkend="gtk3"/> must have been
       compiled with wayland support),
       <xref linkend="wpebackend-fdo"/>,
       <xref linkend="x265"/>,
-      <ulink url="https://aomedia.googlesource.com/aom/">aom</ulink>,
-      <ulink url="http://bs2b.sourceforge.net/">bs2b</ulink>,
+      <!--<ulink url="https://aomedia.googlesource.com/aom/">aom</ulink>,-->
+      <ulink url="https://bs2b.sourceforge.net/">bs2b</ulink>,
       <ulink url="https://acoustid.org/chromaprint">Chromaprint</ulink>,
       <ulink url="https://github.com/kornelski/dssim">dssim</ulink>,
-      <ulink url="http://www.speech.cs.cmu.edu/flite/">Flite</ulink>,
-      <ulink url="http://www.fluidsynth.org/">FluidSynth</ulink>,
+      <ulink url="https://github.com/festvox/flite">Flite</ulink>,
+      <ulink url="https://www.fluidsynth.org/">FluidSynth</ulink>,
       <ulink url="https://bitbucket.org/mpyne/game-music-emu/">Game Music Emu</ulink>,
-      <ulink url="http://www.quut.com/gsm/">GSM</ulink>,
+      <ulink url="https://www.quut.com/gsm/">GSM</ulink>,
       <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>,
       <ulink url="https://www.ladspa.org/">LADSPA</ulink>,
+      <ulink url="https://github.com/EHfive/ldacBT">ldacBT</ulink>,
       <ulink url="https://github.com/AVnu/libavtp">libavtp</ulink>,
       <ulink url="https://sourceforge.net/projects/libdc1394/files/libdc1394-2/">libdc1394-2</ulink>,
       <ulink url="https://www.videolan.org/developers/libdca.html">libdca</ulink>,
@@ -173,22 +182,25 @@
       <ulink url="https://github.com/swh/LRDF">LRDF</ulink>,
       <ulink url="https://github.com/x42/ltc-tools">ltc-tools</ulink>,
       <ulink url="https://github.com/videolabs/libmicrodns">microdns</ulink>,
-      <ulink url="http://mjpeg.sourceforge.net/">MJPEG Tools</ulink>,
+      <ulink url="https://mjpeg.sourceforge.net/">MJPEG Tools</ulink>,
+      <ulink url="https://snyk.io/advisor/npm-package/mplex2">mplex2</ulink>,
+      <ulink url="https://www.musepack.net/">musepack</ulink>,
+      <ulink url="https://github.com/microsoft/onnxruntime">onnxruntime</ulink>,
       <ulink url="https://openal.org/">OpenAL</ulink>,
       <ulink url="https://www.openexr.com/">OpenEXR</ulink>,
       <ulink url="https://www.openh264.org/">OpenH264</ulink>,
       <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>,
       <ulink url="https://rtmpdump.mplayerhq.hu/">rtmpdump</ulink>,
       <ulink url="https://github.com/jart/spandsp">spandsp</ulink>,
-      <ulink url="https://www.srtalliance.com">srt</ulink>,
+      <ulink url="https://github.com/Haivision/srt">Srt</ulink>,
       <ulink url="https://github.com/OpenVisualCloud/SVT-HEVC/">svthevcenc</ulink>,
       <ulink url="https://sourceforge.net/projects/opencore-amr/files/vo-aacenc/">VO AAC</ulink>,
       <ulink url="https://sourceforge.net/projects/opencore-amr/files/vo-amrwbenc/">VO AMRWB</ulink>,
-      <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,
+      <!--<ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,-->
       <ulink url="https://www.mindwerks.net/projects/wildmidi/">WildMidi</ulink>,
       <ulink url="https://webkit.org/wpe/">WPE-WebKit</ulink>,
-      <ulink url="http://zbar.sourceforge.net/">ZBAR</ulink>,
-      <ulink url="http://zapping.sourceforge.net/ZVBI/index.html/">ZVBI</ulink>, and
+      <ulink url="https://zbar.sourceforge.net/">ZBAR</ulink>,
+      <ulink url="https://zapping.sourceforge.net/ZVBI/index.html/">ZVBI</ulink>, and
       <ulink url="https://github.com/zxing/zxing">zxing</ulink>
     </para>
 @y
@@ -200,40 +212,49 @@
       <xref linkend="faad2"/>,
       <xref linkend="fdk-aac"/>,
       <xref linkend="gtk3"/> (for examples),
+      <xref linkend="gst10-plugins-good"/> (for one test),
+      <xref linkend="json-glib"/>,
       <xref linkend="lcms2"/>,
+      <xref linkend="libaom"/>,
       <xref linkend="libass"/>,
       <xref linkend="libexif"/> (for one test),
-      <xref linkend="libmpeg2"/>,
       <xref linkend="librsvg"/>,
+      <xref linkend="libsoup"/> (for one test),
       <xref linkend="libsndfile"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="libusb"/>,
+      <xref linkend="libva"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="libxkbcommon"/>,
       <xref linkend="neon"/>,
       <xref linkend="nettle"/> or <xref linkend="libgcrypt"/>
-	  (for SSL support in hls plugin, if both are not installed OpenSSL will
-	  be used instead),
+      (for SSL support in the hls plugin, if both are not installed OpenSSL will
+      be used instead),
       <xref linkend="opencv"/> (with additional modules),
       <xref linkend="openjpeg2"/>,
       <xref linkend="opus"/>,
+      <xref linkend="qrencode"/>,
       <xref linkend="sbc"/>,
       <xref linkend="sdl"/>,
       <xref linkend="valgrind"/>,
+      both <xref linkend="vulkan-loader"/> and
+      <ulink url='https://github.com/google/shaderc'>glslc</ulink>
+      (for Vulkan plugin),
       <xref linkend="wayland"/> (<xref linkend="gtk3"/> must have been
       compiled with wayland support),
       <xref linkend="wpebackend-fdo"/>,
       <xref linkend="x265"/>,
-      <ulink url="https://aomedia.googlesource.com/aom/">aom</ulink>,
-      <ulink url="http://bs2b.sourceforge.net/">bs2b</ulink>,
+      <!--<ulink url="https://aomedia.googlesource.com/aom/">aom</ulink>,-->
+      <ulink url="https://bs2b.sourceforge.net/">bs2b</ulink>,
       <ulink url="https://acoustid.org/chromaprint">Chromaprint</ulink>,
       <ulink url="https://github.com/kornelski/dssim">dssim</ulink>,
-      <ulink url="http://www.speech.cs.cmu.edu/flite/">Flite</ulink>,
-      <ulink url="http://www.fluidsynth.org/">FluidSynth</ulink>,
+      <ulink url="https://github.com/festvox/flite">Flite</ulink>,
+      <ulink url="https://www.fluidsynth.org/">FluidSynth</ulink>,
       <ulink url="https://bitbucket.org/mpyne/game-music-emu/">Game Music Emu</ulink>,
-      <ulink url="http://www.quut.com/gsm/">GSM</ulink>,
+      <ulink url="https://www.quut.com/gsm/">GSM</ulink>,
       <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>,
       <ulink url="https://www.ladspa.org/">LADSPA</ulink>,
+      <ulink url="https://github.com/EHfive/ldacBT">ldacBT</ulink>,
       <ulink url="https://github.com/AVnu/libavtp">libavtp</ulink>,
       <ulink url="https://sourceforge.net/projects/libdc1394/files/libdc1394-2/">libdc1394-2</ulink>,
       <ulink url="https://www.videolan.org/developers/libdca.html">libdca</ulink>,
@@ -251,30 +272,27 @@
       <ulink url="https://github.com/swh/LRDF">LRDF</ulink>,
       <ulink url="https://github.com/x42/ltc-tools">ltc-tools</ulink>,
       <ulink url="https://github.com/videolabs/libmicrodns">microdns</ulink>,
-      <ulink url="http://mjpeg.sourceforge.net/">MJPEG Tools</ulink>,
+      <ulink url="https://mjpeg.sourceforge.net/">MJPEG Tools</ulink>,
+      <ulink url="https://snyk.io/advisor/npm-package/mplex2">mplex2</ulink>,
+      <ulink url="https://www.musepack.net/">musepack</ulink>,
+      <ulink url="https://github.com/microsoft/onnxruntime">onnxruntime</ulink>,
       <ulink url="https://openal.org/">OpenAL</ulink>,
       <ulink url="https://www.openexr.com/">OpenEXR</ulink>,
       <ulink url="https://www.openh264.org/">OpenH264</ulink>,
       <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>,
       <ulink url="https://rtmpdump.mplayerhq.hu/">rtmpdump</ulink>,
       <ulink url="https://github.com/jart/spandsp">spandsp</ulink>,
-      <ulink url="https://www.srtalliance.com">srt</ulink>,
+      <ulink url="https://github.com/Haivision/srt">Srt</ulink>,
       <ulink url="https://github.com/OpenVisualCloud/SVT-HEVC/">svthevcenc</ulink>,
       <ulink url="https://sourceforge.net/projects/opencore-amr/files/vo-aacenc/">VO AAC</ulink>,
       <ulink url="https://sourceforge.net/projects/opencore-amr/files/vo-amrwbenc/">VO AMRWB</ulink>,
-      <ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,
+      <!--<ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>,-->
       <ulink url="https://www.mindwerks.net/projects/wildmidi/">WildMidi</ulink>,
       <ulink url="https://webkit.org/wpe/">WPE-WebKit</ulink>,
-      <ulink url="http://zbar.sourceforge.net/">ZBAR</ulink>,
-      <ulink url="http://zapping.sourceforge.net/ZVBI/index.html/">ZVBI</ulink>, and
+      <ulink url="https://zbar.sourceforge.net/">ZBAR</ulink>,
+      <ulink url="https://zapping.sourceforge.net/ZVBI/index.html/">ZVBI</ulink>,
       <ulink url="https://github.com/zxing/zxing">zxing</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gst10-plugins-bad"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gst10-plugins-bad"/>
 @z
 
 @x
@@ -292,10 +310,26 @@
 
 @x
       To test the results, issue: <command>ninja test</command>. Several tests
-      need a terminal emulator in a graphical session.  
+      need a terminal emulator in a graphical session. Three tests,
+      <emphasis>elements_vacompositor</emphasis>,
+      <emphasis>elements_netsim</emphasis>, and
+      <emphasis>elements_dash_mpd</emphasis>, are known to fail.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
       いくつかのテストにおいては、グラフィカルセッションによるターミナルエミュレーターを必要とします。
+      Three tests,
+      <emphasis>elements_vacompositor</emphasis>,
+      <emphasis>elements_netsim</emphasis>, and
+      <emphasis>elements_dash_mpd</emphasis>, are known to fail.
+@z
+@x
+      If <xref linkend='gst10-plugins-good'/> is not installed, two tests
+      <emphasis>elements_rtpsrc</emphasis> and
+      <emphasis>elements_rtpsink</emphasis> will fail.
+@y
+      If <xref linkend='gst10-plugins-good'/> is not installed, two tests
+      <emphasis>elements_rtpsrc</emphasis> and
+      <emphasis>elements_rtpsink</emphasis> will fail.
 @z
 
 @x
@@ -329,24 +363,29 @@
           libgstadaptivedemux-1.0.so,
           libgstbadaudio-1.0.so,
           libgstbasecamerabinsrc-1.0.so,
+          libgstcuda-1.0.so,
           libgstcodecparsers-1.0.so,
           libgstcodecs-1.0.so,
           libgstinsertbin-1.0.so,
           libgstisoff-1.0.so,
           libgstmpegts-1.0.so,
           libgstphotography-1.0.so,
+          libgstplay-1.0.so,
           libgstplayer-1.0.so,
           libgstsctp-1.0.so,
           libgsttranscoder-1.0.so,
-          libgsturidownloader-1.0.so, 
+          libgsturidownloader-1.0.so,
+          libgstva-1.0.so,
           libgstwayland-1.0.so,
           libgstwebrtc-1.0.so, and
           several plugins under /usr/lib/gstreamer-1.0
         </seg>
         <seg>
-          /usr/include/gstreamer-1.0/gst/{audio,basecamerabinsrc,codecparsers},
-          /usr/include/gstreamer-1.0/gst/{insertbin,interfaces,isoff,mpegts}, and
-          /usr/include/gstreamer-1.0/gst/{player,sctp,transcoder,uridownloader,webrtc}
+          /usr/include/gstreamer-1.0/gst/{audio,basecamerabinsrc,cuda},
+          /usr/include/gstreamer-1.0/gst/{codecparsers,insertbin,interfaces},
+          /usr/include/gstreamer-1.0/gst/{isoff,mpegts,play,player,sctp}
+          /usr/include/gstreamer-1.0/gst/{transcoder,uridownloader,va}, and
+          /usr/include/gstreamer-1.0/gst/{wayland,webrtc}
         </seg>
 @y
         <seg>
@@ -357,24 +396,29 @@
           libgstadaptivedemux-1.0.so,
           libgstbadaudio-1.0.so,
           libgstbasecamerabinsrc-1.0.so,
+          libgstcuda-1.0.so,
           libgstcodecparsers-1.0.so,
           libgstcodecs-1.0.so,
           libgstinsertbin-1.0.so,
           libgstisoff-1.0.so,
           libgstmpegts-1.0.so,
           libgstphotography-1.0.so,
+          libgstplay-1.0.so,
           libgstplayer-1.0.so,
           libgstsctp-1.0.so,
           libgsttranscoder-1.0.so,
-          libgsturidownloader-1.0.so, 
+          libgsturidownloader-1.0.so,
+          libgstva-1.0.so,
           libgstwayland-1.0.so,
           libgstwebrtc-1.0.so,
           several plugins under /usr/lib/gstreamer-1.0
         </seg>
         <seg>
-          /usr/include/gstreamer-1.0/gst/{audio,basecamerabinsrc,codecparsers},
-          /usr/include/gstreamer-1.0/gst/{insertbin,interfaces,isoff,mpegts},
-          /usr/include/gstreamer-1.0/gst/{player,sctp,transcoder,uridownloader,webrtc}
+          /usr/include/gstreamer-1.0/gst/{audio,basecamerabinsrc,cuda},
+          /usr/include/gstreamer-1.0/gst/{codecparsers,insertbin,interfaces},
+          /usr/include/gstreamer-1.0/gst/{isoff,mpegts,play,player,sctp}
+          /usr/include/gstreamer-1.0/gst/{transcoder,uridownloader,va},
+          /usr/include/gstreamer-1.0/gst/{wayland,webrtc}
         </seg>
 @z
 

@@ -69,12 +69,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Kernel Configuration</title>
 @y
     <title>&KernelConfiguration;</title>
@@ -127,16 +121,16 @@
 @z
 
 @x
-      The <command>S=...</command> option allows to skip tests. The
-      <command>lvconvert-repair-replace</command> test has been reported
-      to hang.
+      Some tests may hang. In this case they can be skipped by adding
+      <command>S=&lt;testname&gt;</command> to the <command>make</command>
+      command.
       Other targets are available and can be listed with
       <command>make -C test help</command>. The test timings are very dependent
       on the speed of the disk(s), and on the number of enabled kernel options.
 @y
-      The <command>S=...</command> option allows to skip tests. The
-      <command>lvconvert-repair-replace</command> test has been reported
-      to hang.
+      Some tests may hang. In this case they can be skipped by adding
+      <command>S=&lt;testname&gt;</command> to the <command>make</command>
+      command.
       Other targets are available and can be listed with
       <command>make -C test help</command>. The test timings are very dependent
       on the speed of the disk(s), and on the number of enabled kernel options.
@@ -326,12 +320,12 @@
 
 @x lvm
             provides the command-line tools for <application>LVM2</application>.
-            Commands are implemented via sympolic links to this program to
+            Commands are implemented via symbolic links to this program to
             manage physical devices (pv*), volume groups (vg*) and logical
             volumes (lv*)
 @y
             provides the command-line tools for <application>LVM2</application>.
-            Commands are implemented via sympolic links to this program to
+            Commands are implemented via symbolic links to this program to
             manage physical devices (pv*), volume groups (vg*) and logical
             volumes (lv*)
 @z

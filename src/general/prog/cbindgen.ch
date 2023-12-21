@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY cbindgen-buildsize     "124 MB (add 568 MB for tests)">
-  <!ENTITY cbindgen-time          "0.8 SBU (add 0.4 SBU for tests), both on a 4-core machine">
+  <!ENTITY cbindgen-buildsize     "121 MB (add 600 MB for tests)">
+  <!ENTITY cbindgen-time          "0.5 SBU (add 0.4 SBU for tests), both on a 4-core machine">
 @y
-  <!ENTITY cbindgen-buildsize     "124 MB (add 568 MB for tests)">
-  <!ENTITY cbindgen-time          "0.8 SBU (add 0.4 SBU for tests), both on a 4-core machine">
+  <!ENTITY cbindgen-buildsize     "121 MB (add 600 MB for tests)">
+  <!ENTITY cbindgen-time          "0.5 SBU (add 0.4 SBU for tests), both on a 4-core machine">
 @z
 
 @x
@@ -27,8 +27,7 @@
       <application>Cbindgen</application> can be used to generate C bindings for
       <application>Rust</application> code.
 @y
-      <application>Cbindgen</application> can be used to generate C bindings for
-      <application>Rust</application> code.
+      <application>Cbindgen</application> は <application>Rust</application> コードに対する C バインディングを生成します。
 @z
 
 @x
@@ -92,47 +91,30 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/cbindgen"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/cbindgen"/>
-@z
-
-@x
     <title>Installation of cbindgen</title>
 @y
     <title>&InstallationOf1;cbindgen&InstallationOf2;</title>
 @z
 
 @x
-        As with most <application>Rust</application> packages, this  needs a
-        network connection to check the current versions of the required cargo
-        crates, and to download them if they are not already present.
-@y
-        As with most <application>Rust</application> packages, this  needs a
-        network connection to check the current versions of the required cargo
-        crates, and to download them if they are not already present.
-@z
-
-@x
       Install <application>cbindgen</application> by running the following
       commands:
 @y
-      Install <application>cbindgen</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>cbindgen</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>cargo test</command>.
-      Three tests in the final suite are known to fail.
+      Three tests in <filename>profile.rs</filename> are known to fail.
 @y
-      To test the results, issue: <command>cargo test</command>.
-      Three tests in the final suite are known to fail.
+      ビルド結果をテストする場合は <command>cargo test</command> を実行します。
+      <filename>profile.rs</filename> の中で 3 つのテストが失敗します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -182,5 +164,5 @@
 @x cbindgen
             generates C bindings for <application>Rust</application> code
 @y
-            generates C bindings for <application>Rust</application> code
+            <application>Rust</application> コードに対する C バインディングを生成します。
 @z

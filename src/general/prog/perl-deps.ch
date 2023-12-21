@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -68,8 +64,8 @@
         sometimes added dependencies are listed, other times not. Some of these
         modules have very frequent updates, often bringing different dependencies.
         <!-- FIXME - change or comment this when necessary -->
-        The linked metacpan.org versions below are known to build and work with
-        the module versions in BLFS-10.0..
+        The linked metacpan.org versions below were known to work with the
+        module versions in BLFS when last reviewed.
 @y
         The links on this page (to metacpan.org) should go to "known good"
         versions, for which their dependencies are correct. If you wish to use a
@@ -77,8 +73,8 @@
         sometimes added dependencies are listed, other times not. Some of these
         modules have very frequent updates, often bringing different dependencies.
         <!-- FIXME - change or comment this when necessary -->
-        The linked metacpan.org versions below are known to build and work with
-        the module versions in BLFS-10.0..
+        The linked metacpan.org versions below were known to work with the
+        module versions in BLFS when last reviewed.
 @z
 
 @x
@@ -97,10 +93,4 @@
 @y
         Similarly, if you discover that an updated module on the previous page
         needs an extra dependency, please report this.
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">User Notes:
 @z

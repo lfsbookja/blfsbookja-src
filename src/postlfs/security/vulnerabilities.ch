@@ -44,14 +44,14 @@
 
 @x
       The main place where vulnerabilities get logged is
-      <ulink url="http://cve.mitre.org">cve.mitre.org</ulink>. Unfortunately,
+      <ulink url="https://cve.mitre.org">cve.mitre.org</ulink>. Unfortunately,
       many vulnerability numbers (CVE-yyyy-nnnn) are initially only labelled
       as "reserved" when distributions start issuing fixes.  Also, some
       vulnerabilities apply to particular combinations of
       <command>configure</command> options, or only apply to old versions of
       packages which have long since been updated in BLFS.
 @y
-      ぜい弱性に関する情報を取りまとめているサイトとして <ulink url="http://cve.mitre.org">cve.mitre.org</ulink> があります。
+      ぜい弱性に関する情報を取りまとめているサイトとして <ulink url="https://cve.mitre.org">cve.mitre.org</ulink> があります。
       Unfortunately,
       many vulnerability numbers (CVE-yyyy-nnnn) are initially only labelled
       as "reserved" when distributions start issuing fixes.  Also, some
@@ -101,48 +101,48 @@
 @x
       To keep track of what is being discovered, you may wish to follow the
       security announcements of one or more distributions. For example, Debian
-      has <ulink url="http://www.debian.org/security">Debian security</ulink>.
+      has <ulink url="https://www.debian.org/security">Debian security</ulink>.
       Fedora's links on security are at <ulink
-        url="http://fedoraproject.org/wiki/Security">the Fedora wiki</ulink>.
+        url="https://fedoraproject.org/wiki/category:Security">the Fedora wiki</ulink>.
       Details of Gentoo linux security announcements are discussed at
       <ulink url="https://security.gentoo.org">Gentoo security</ulink>.
       Finally, the Slackware archives of security announcements are at
-      <ulink url="http://slackware.com/security">Slackware security</ulink>.
+      <ulink url="https://slackware.com/security">Slackware security</ulink>.
 @y
       To keep track of what is being discovered, you may wish to follow the
       security announcements of one or more distributions. For example, Debian
-      has <ulink url="http://www.debian.org/security">Debian security</ulink>.
+      has <ulink url="https://www.debian.org/security">Debian security</ulink>.
       Fedora's links on security are at <ulink
-        url="http://fedoraproject.org/wiki/Security">the Fedora wiki</ulink>.
+        url="https://fedoraproject.org/wiki/category:Security">the Fedora wiki</ulink>.
       Details of Gentoo linux security announcements are discussed at
       <ulink url="https://security.gentoo.org">Gentoo security</ulink>.
       Finally, the Slackware archives of security announcements are at
-      <ulink url="http://slackware.com/security">Slackware security</ulink>.
+      <ulink url="https://slackware.com/security">Slackware security</ulink>.
 @z
 
 @x
       The most general English source is perhaps
-      <ulink url="http://seclists.org/fulldisclosure">the Full Disclosure
+      <ulink url="https://seclists.org/fulldisclosure">the Full Disclosure
       Mailing List</ulink>, but please read the comment on that page. If you
       use other languages you may prefer other sites such as <ulink
-        url="http://www.heise.de/security">heise.de</ulink> (German) or <ulink
-        url="http://www.cert.hr">cert.hr</ulink> (Croatian). These are not
+        url="https://www.heise.de/security">heise.de</ulink> (German) or <ulink
+        url="https://www.cert.hr">cert.hr</ulink> (Croatian). These are not
       linux-specific. There is also a daily update at lwn.net for subscribers
       (free access to the data after 2 weeks, but their vulnerabilities
       database at <ulink
-        url="http://lwn.net/Vulnerabilities/">lwn.net/Vulnerabilities</ulink>
+        url="https://lwn.net/Alerts/">lwn.net/Alerts</ulink>
       is unrestricted).
 @y
       The most general English source is perhaps
-      <ulink url="http://seclists.org/fulldisclosure">the Full Disclosure
+      <ulink url="https://seclists.org/fulldisclosure">the Full Disclosure
       Mailing List</ulink>, but please read the comment on that page. If you
       use other languages you may prefer other sites such as <ulink
-        url="http://www.heise.de/security">heise.de</ulink> (German) or <ulink
-        url="http://www.cert.hr">cert.hr</ulink> (Croatian). These are not
+        url="https://www.heise.de/security">heise.de</ulink> (German) or <ulink
+        url="https://www.cert.hr">cert.hr</ulink> (Croatian). These are not
       linux-specific. There is also a daily update at lwn.net for subscribers
       (free access to the data after 2 weeks, but their vulnerabilities
       database at <ulink
-        url="http://lwn.net/Vulnerabilities/">lwn.net/Vulnerabilities</ulink>
+        url="https://lwn.net/Alerts/">lwn.net/Alerts</ulink>
       is unrestricted).
 @z
 
@@ -152,10 +152,4 @@
 @y
       For some packages, subscribing to their &apos;announce&apos; lists
       will provide prompt news of newer versions.
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z

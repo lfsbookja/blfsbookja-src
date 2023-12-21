@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -106,28 +102,25 @@
 @x
     <bridgehead renderas="sect4">Required (runtime)</bridgehead>
     <para role="required">
-      <xref role="runtime" linkend="notification-daemon"/> or
-      <xref role="nodep" linkend="xfce4-notifyd"/>
+      <xref role="runtime" linkend="notification-daemon"/>,
+      <xref role="nodep" linkend="xfce4-notifyd"/>, or
+      <xref role="nodep" linkend="lxqt-notificationd"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required; （実行時）</bridgehead>
     <para role="required">
-      <xref role="runtime" linkend="notification-daemon"/> または
-      <xref role="nodep" linkend="xfce4-notifyd"/>
+      <xref role="runtime" linkend="notification-daemon"/>,
+      <xref role="nodep" linkend="xfce4-notifyd"/>, または
+      <xref role="nodep" linkend="lxqt-notificationd"/>
     </para>
 @z
 
 @x
-        <application>GNOME Shell</application> and <application>KDE KWin</application>
+        <application>GNOME Shell</application> and
+        <application>KDE KWin</application>
         provide their own notification daemons.
 @y
         <application>GNOME Shell</application> と <application>KDE KWin</application> には独自の通知デーモン (notification daemons) があります。
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

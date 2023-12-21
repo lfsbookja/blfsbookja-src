@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -21,10 +17,10 @@
 
 @x
         Term::Table formats a header and rows into a table. This is used by some
-        failing tests to provide diagnostics about what has goen wrong.
+        failing tests to provide diagnostics about what has gone wrong.
 @y
         Term::Table formats a header and rows into a table. This is used by some
-        failing tests to provide diagnostics about what has goen wrong.
+        failing tests to provide diagnostics about what has gone wrong.
 @z
 
 @x

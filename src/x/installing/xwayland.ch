@@ -10,14 +10,6 @@
 @z
 
 @x
-  <!ENTITY xwayland-buildsize     "71 MB (add 350 MB for test)">
-  <!ENTITY xwayland-time          "0.2 SBU (with paralellism=4; add 0.8 SBU for test, not including clone time)">
-@y
-  <!ENTITY xwayland-buildsize     "71 MB (add 350 MB for test)">
-  <!ENTITY xwayland-time          "0.2 SBU (with paralellism=4; add 0.8 SBU for test, not including clone time)">
-@z
-
-@x
     <title>Introduction to Xwayland</title>
 @y
     <title>&IntroductionTo1;Xwayland&IntroductionTo2;</title>
@@ -86,16 +78,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="libxcvt"/>,
       <xref linkend="pixman"/>,
-      <xref linkend="wayland-protocols"/>, and
+      <xref linkend="wayland-protocols"/>,
+      <xref role='runtime' linkend="xorg7-app"/> (runtime), and
       <xref linkend="xorg7-font"/> (only font-util)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="libxcvt"/>,
       <xref linkend="pixman"/>,
       <xref linkend="wayland-protocols"/>,
-      <xref linkend="xorg7-font"/> (font-util のみ)
+      <xref role='runtime' linkend="xorg7-app"/> (実行時),
+      <xref linkend="xorg7-font"/> (only font-util)
     </para>
 @z
 
@@ -117,30 +113,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="nettle"/>,
-      <xref linkend="xorg7-legacy"/>
-         (only bdftopcf, for building fonts required for the tests),
-      <ulink url="https://gitlab.freedesktop.org/xorg/test/rendercheck">rendercheck</ulink> (for tests), and
-      <ulink url="https://wayland.pages.freedesktop.org/weston/">weston</ulink> (for tests)
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="nettle"/>,
-      <xref linkend="xorg7-legacy"/>
-         (only bdftopcf, for building fonts required for the tests),
-      <ulink url="https://gitlab.freedesktop.org/xorg/test/rendercheck">rendercheck</ulink> (for tests), and
-      <ulink url="https://wayland.pages.freedesktop.org/weston/">weston</ulink> (for tests)
-    </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/xwayland"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/xwayland"/>
 @z
 
 @x
@@ -164,8 +138,12 @@
       disabling unneeded features. The <command>meson</command> command
       for a stripped down build of <application>weston</application> is shown
       in <ulink
-      url="https://gitlab.freedesktop.org/xorg/xserver/-/blob/xwayland-21.1/.gitlab-ci/debian-install.sh">
+      url="https://gitlab.freedesktop.org/xorg/xserver/-/blob/xwayland-22.1/.gitlab-ci/debian-install.sh">
       Upstream continuous integration build</ulink>.
+<!-- keep 22.1 above: they used to build it in gitlab-ci because debian
+     had an obsolete version of weston, but now they take weston from
+     debian so the command to build it has been removed. -->
+    </para>
 @y
       Building the test framework needs some work. First,
       <ulink url="https://wayland.pages.freedesktop.org/weston/">weston</ulink>
@@ -173,22 +151,12 @@
       disabling unneeded features. The <command>meson</command> command
       for a stripped down build of <application>weston</application> is shown
       in <ulink
-      url="https://gitlab.freedesktop.org/xorg/xserver/-/blob/xwayland-21.1/.gitlab-ci/debian-install.sh">
+      url="https://gitlab.freedesktop.org/xorg/xserver/-/blob/xwayland-22.1/.gitlab-ci/debian-install.sh">
       Upstream continuous integration build</ulink>.
-@z
-
-@x
-      Furthermore, an X server needs to be running during the build of
-      <application>xts</application>. If not running the tests in a
-      graphical environment, you'll need to enable <command>Xvfb</command>
-      by removing the <parameter>-Dxvfb=false</parameter> above. The
-      instructions below suppose this has been done.
-@y
-      Furthermore, an X server needs to be running during the build of
-      <application>xts</application>. If not running the tests in a
-      graphical environment, you'll need to enable <command>Xvfb</command>
-      by removing the <parameter>-Dxvfb=false</parameter> above. The
-      instructions below suppose this has been done.
+<!-- keep 22.1 above: they used to build it in gitlab-ci because debian
+     had an obsolete version of weston, but now they take weston from
+     debian so the command to build it has been removed. -->
+    </para>
 @z
 
 @x
@@ -220,23 +188,15 @@
 @x
       <command>sed -i '/install_man/,$d' meson.build</command>: Prevents
       installing a manual page for <command>Xserver</command>,
-      which is not part of this package.
+      which is also provided by <xref linkend='xorg-server'/>.  Remove this
+      command if <xref linkend='xorg-server'/> is not installed and you
+      don't plan to install it later.
 @y
       <command>sed -i '/install_man/,$d' meson.build</command>: Prevents
       installing a manual page for <command>Xserver</command>,
-      which is not part of this package.
-@z
-
-@x
-      <parameter>-Dxvfb=false</parameter>: Prevents building the
-      <command>xvfb</command> program, which is also installed by
-      <xref linkend="xorg-server"/>. Remove if you do not plan to
-      install the X server.
-@y
-      <parameter>-Dxvfb=false</parameter>: Prevents building the
-      <command>xvfb</command> program, which is also installed by
-      <xref linkend="xorg-server"/>. Remove if you do not plan to
-      install the X server.
+      which is also provided by <xref linkend='xorg-server'/>.  Remove this
+      command if <xref linkend='xorg-server'/> is not installed and you
+      don't plan to install it later.
 @z
 
 @x
@@ -284,7 +244,7 @@
 @z
 
 @x Xwayland
-            Allows X client to run under wayland.
+            Allows X clients to run under wayland
 @y
-            Allows X client to run under wayland.
+            Allows X clients to run under wayland
 @z

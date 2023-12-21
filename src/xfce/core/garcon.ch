@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -93,21 +89,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/> and
+<!--      <xref linkend="gobject-introspection"/> and -->
       <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
+<!--      <xref linkend="gobject-introspection"/> and -->
       <xref linkend="gtk-doc"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/garcon"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/garcon"/>
 @z
 
 @x

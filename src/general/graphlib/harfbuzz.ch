@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY harfbuzz-buildsize     "121 MB (with tests)">
-  <!ENTITY harfbuzz-time          "0.5 SBU (Using parallelism=4; with tests)">
+  <!ENTITY harfbuzz-buildsize     "153 MB (with tests)">
+  <!ENTITY harfbuzz-time          "0.8 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY harfbuzz-buildsize     "121 MB （テスト込み）">
-  <!ENTITY harfbuzz-time          "0.5 SBU （parallelism=4 利用時。テスト込み）"> 
+  <!ENTITY harfbuzz-buildsize     "153 MB （テスト込み）">
+  <!ENTITY harfbuzz-time          "0.8 SBU （parallelism=4 利用; テスト込み）"> 
 @z
 
 @x
@@ -115,8 +115,9 @@
       <xref linkend="git"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
-      (Python 3 module, for the testsuite), and
-      <ulink url="https://www.colm.net/open-source/ragel/">ragel</ulink>
+      (Python 3 module, for the test suite),
+      <ulink url="https://www.colm.net/open-source/ragel/">ragel</ulink>,
+      and <ulink url="https://github.com/bytecodealliance/wasm-micro-runtime">wasm-micro-runtime</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -127,8 +128,9 @@
       <xref linkend="git"/>,
       <xref linkend="gtk-doc"/>,
       <ulink url="https://pypi.org/project/FontTools/">FontTools</ulink>
-      (Python 3 module, for the testsuite),
-      <ulink url="https://www.colm.net/open-source/ragel/">ragel</ulink>
+      (Python 3 module, for the test suite),
+      <ulink url="https://www.colm.net/open-source/ragel/">ragel</ulink>,
+      and <ulink url="https://github.com/bytecodealliance/wasm-micro-runtime">wasm-micro-runtime</ulink>
     </para>
 @z
 
@@ -142,12 +144,6 @@
         推奨パッケージは、本パッケージのビルドにてすべて必要となるわけではありません。
         しかしそれらをインストールしていない場合、適正な処理結果が得られないかもしれません。
         したがってそれらをインストールして<emphasis>いない</emphasis>場合には、バグ報告をあげないでください。
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/harfbuzz"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/harfbuzz"/>
 @z
 
 @x
@@ -211,27 +207,43 @@
 
 @x
         <seg>
-          hb-ot-shape-closure, hb-shape, hb-subset, and
-          hb-view (only if cairo is installed)
+          hb-info,
+          hb-ot-shape-closure,
+          hb-shape,
+          hb-subset, and
+          hb-view (only if Cairo is installed)
         </seg>
         <seg>
-          libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-icu.so, and 
+          libharfbuzz.so,
+          libharfbuzz-cairo.so (only if Cairo is installed),
+          libharfbuzz-gobject.so,
+          libharfbuzz-icu.so, and
           libharfbuzz-subset.so
         </seg>
         <seg>
-          /usr/{include,lib/cmake,share/gtk-doc/html}/harfbuzz
+          /usr/include/harbuzz,
+          /usr/lib/cmake/harfbuzz, and
+          /usr/share/gtk-doc/html/harfbuzz (optional)
         </seg>
 @y
         <seg>
-          hb-ot-shape-closure, hb-shape, hb-subset,
+          hb-info,
+          hb-ot-shape-closure,
+          hb-shape,
+          hb-subset,
           hb-view (cairo インストール時のみ)
         </seg>
         <seg>
-          libharfbuzz.so, libharfbuzz-gobject.so, libharfbuzz-icu.so,
+          libharfbuzz.so,
+          libharfbuzz-cairo.so (cairo インストール時のみ),
+          libharfbuzz-gobject.so,
+          libharfbuzz-icu.so,
           libharfbuzz-subset.so
         </seg>
         <seg>
-          /usr/{include,lib/cmake,share/gtk-doc/html}/harfbuzz
+          /usr/include/harbuzz,
+          /usr/lib/cmake/harfbuzz,
+          /usr/share/gtk-doc/html/harfbuzz (任意ビルド)
         </seg>
 @z
 

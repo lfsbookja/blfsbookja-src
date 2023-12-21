@@ -10,12 +10,6 @@
 @z
 
 @x
-  <!ENTITY cracklib-time          "less than 0.1 SBU">
-@y
-  <!ENTITY cracklib-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to CrackLib</title>
 @y
     <title>&IntroductionTo1;CrackLib&IntroductionTo2;</title>
@@ -79,23 +73,18 @@
 @z
 
 @x
-          Recommended word list for English-speaking countries (size:
-          &crackdict-size;; md5sum: &crackdict-md5sum;):
-          <ulink url="&crackdict-download;"/>
+      <para>Recommended word list for English-speaking countries:</para>
 @y
-          英語圏ユーザーに対して推奨される語句リスト (word list)
-          (サイズ:
-          &crackdict-size;; md5sum: &crackdict-md5sum;):
-          <ulink url="&crackdict-download;"/>
+      <para>英語圏ユーザーに対して推奨される語句リスト (word list)</para>
 @z
 
 @x
       There are additional word lists available for download, e.g., from
-      <ulink url="http://www.cotse.com/tools/wordlists.htm"/>.
+      <ulink url="https://wiki.skullsecurity.org/index.php/Passwords"/>.
       <application>CrackLib</application> can utilize as many, or as few word
       lists you choose to install.
 @y
-      上以外にも追加の用語リストがあって、例えば <ulink url="http://www.cotse.com/tools/wordlists.htm"/> などからダウンロードすることができます。
+      上以外にも追加の用語リストがあって、例えば <ulink url="https://wiki.skullsecurity.org/index.php/Passwords"/> などからダウンロードすることができます。
       <application>CrackLib</application> では、語句リストの大小を問わず、望みのものを選んでインストールすることができます。
 @z
 
@@ -134,12 +123,6 @@
         as <application>CrackLib</application> word lists in countries with
         non-Latin based alphabets, because of <quote>word-based keystroke
         combinations</quote> that make bad passwords.
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -206,11 +189,15 @@
 @z
 
 @x
-      <command>sed -i '/skipping/d' util/packer.c</command>:
-      Remove a meaningless warning.
+      <command>autoreconf -fiv</command>: The configure script shipped with
+      the package is too old to get the right version string of Python
+      3.10 or later. This command regenerates it with a more recent version
+      of autotools, which fixes the issue.
 @y
-      <command>sed -i '/skipping/d' util/packer.c</command>:
-      意味のない警告メッセージを取り除きます。
+      <command>autoreconf -fiv</command>: The configure script shipped with
+      the package is too old to get the right version string of Python
+      3.10 or later. This command regenerates it with a more recent version
+      of autotools, which fixes the issue.
 @z
 
 @x
@@ -222,42 +209,13 @@
 @z
 
 @x
-      <envar>CPPFLAGS=-I/usr/include/python&python3-majorver;</envar>:
-      This works around an issue caused by incorrect usage of Python 3
-      headers.
-@y
-      <envar>CPPFLAGS=-I/usr/include/python&python3-majorver;</envar>:
-      This works around an issue caused by incorrect usage of Python 3
-      headers.
-@z
-
-@x
-      <parameter>--with-default-dict=/lib/cracklib/pw_dict</parameter>:
+      <parameter>--with-default-dict=/usr/lib/cracklib/pw_dict</parameter>:
       This parameter forces the installation of the
       <application>CrackLib</application> dictionary to the
       <filename class="directory">/lib</filename> hierarchy.
 @y
-      <parameter>--with-default-dict=/lib/cracklib/pw_dict</parameter>:
+      <parameter>--with-default-dict=/usr/lib/cracklib/pw_dict</parameter>:
       このパラメーターは <application>CrackLib</application> の辞書情報を <filename class="directory">/lib</filename> ディレクトリ配下にインストールすることを指示します。
-@z
-
-@x
-      <command>mv -v /usr/lib/libcrack.so.2* /lib</command> and
-      <command>ln -v -sf ../../lib/libcrack.so.2.9.0 ...</command>: These two
-      commands move the <filename
-      class="libraryfile">libcrack.so.2.9.0</filename>
-      library and associated symlink from
-      <filename class="directory">/usr/lib</filename> to
-      <filename class="directory">/lib</filename>, then recreates the
-      <filename class="symlink">/usr/lib/libcrack.so</filename> symlink
-      pointing to the relocated file.
-@y
-      <command>mv -v /usr/lib/libcrack.so.2* /lib</command> と
-      <command>ln -v -sf ../../lib/libcrack.so.2.9.0 ...</command>:
-      この２つのコマンドは、<filename
-      class="libraryfile">libcrack.so.2.9.0</filename> ライブラリとこれに関するシンボリックリンクを <filename
-      class="directory">/usr/lib</filename> ディレクトリから <filename class="directory">/lib</filename> ディレクトリに移動します。
-      そして移動したファイルを指し示すシンボリックリンク <filename class="symlink">/usr/lib/libcrack.so</filename> を生成します。
 @z
 
 @x
@@ -330,20 +288,20 @@
 
 @x
         <seg>cracklib-check, cracklib-format, cracklib-packer,
-        cracklib-unpacker and create-cracklib-dict</seg>
+        cracklib-unpacker, cracklib-update, and create-cracklib-dict</seg>
 
         <seg>libcrack.so and the _cracklib.so
           (<application>Python</application> module)</seg>
-        
-        <seg>/lib/cracklib, /usr/share/dict and /usr/share/cracklib</seg>
+
+        <seg>/usr/lib/cracklib, /usr/share/dict and /usr/share/cracklib</seg>
 @y
         <seg>cracklib-check, cracklib-format, cracklib-packer,
-        cracklib-unpacker, create-cracklib-dict</seg>
+        cracklib-unpacker, cracklib-update, create-cracklib-dict</seg>
 
-        <seg>libcrack.so and the _cracklib.so
-          （<application>Python</application> モジュール）</seg>
-        
-        <seg>/lib/cracklib, /usr/share/dict, /usr/share/cracklib</seg>
+        <seg>libcrack.so, _cracklib.so
+          (<application>Python</application> module)</seg>
+
+        <seg>/usr/lib/cracklib, /usr/share/dict, /usr/share/cracklib</seg>
 @z
 
 @x

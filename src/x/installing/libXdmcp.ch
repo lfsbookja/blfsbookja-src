@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY libXdmcp-time          "less than 0.1 SBU">
+  <!ENTITY libXdmcp-time          "less than 0.1 SBU (with test)">
 @y
-  <!ENTITY libXdmcp-time          "&LessThan1;0.1 SBU&LessThan2;">
+  <!ENTITY libXdmcp-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
 @x
@@ -99,21 +95,17 @@
     <para role="optional">
       <xref linkend="xmlto"/>,
       <xref linkend="fop"/>,
-      and <xref linkend="libxslt"/> (for documentation)
+      <xref linkend="libxslt"/>,
+      and <ulink url="https://gitlab.freedesktop.org/xorg/doc/xorg-sgml-doctools">Xorg-SGML-doctools</ulink> (for documentation)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="xmlto"/>,
       <xref linkend="fop"/>,
-      <xref linkend="libxslt"/> (ドキュメントのため)
+      <xref linkend="libxslt"/>,
+      <ulink url="https://gitlab.freedesktop.org/xorg/doc/xorg-sgml-doctools">Xorg-SGML-doctools</ulink> (ドキュメントのため)
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -130,9 +122,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To test the results, issue: <command>make check</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
@@ -160,11 +152,11 @@
 @x
         <seg>None</seg>
         <seg>libXdmcp.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/share/doc/libXdmcp</seg>
+        <seg><envar>$XORG_PREFIX</envar>/share/doc/libXdmcp-&libXdmcp-version;</seg>
 @y
         <seg>&None;</seg>
         <seg>libXdmcp.so</seg>
-        <seg><envar>$XORG_PREFIX</envar>/share/doc/libXdmcp</seg>
+        <seg><envar>$XORG_PREFIX</envar>/share/doc/libXdmcp-&libXdmcp-version;</seg>
 @z
 
 @x

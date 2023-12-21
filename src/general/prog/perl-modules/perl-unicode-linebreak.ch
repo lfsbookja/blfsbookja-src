@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -55,14 +50,14 @@
       <para role="required">
         <xref linkend="perl-mime-charset"/>, also
         <xref linkend="wget"/> (to download two files from unicode.org in the
-        testsuite)
+        test suite)
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="perl-mime-charset"/>, also
         <xref linkend="wget"/> (to download two files from unicode.org in the
-        testsuite)
+        test suite)
       </para>
 @z
 

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -79,18 +75,18 @@
       It is generally worth running the tests for perl modules, they often
       can show problems such as missing dependencies which are required to
       use the module.  Here, the editors have attempted to separate those
-      dependencies which are only required for running testsuites, but they
+      dependencies which are only required for running test suites, but they
       will not be mentioned for a module where one of its dependencies uses
-      that module for its own testsuite.  That is to say, if you intend to
-      run the testsuites, please run them for each dependency of the module.
+      that module for its own test suite.  That is to say, if you intend to
+      run the test suites, please run them for each dependency of the module.
 @y
       It is generally worth running the tests for perl modules, they often
       can show problems such as missing dependencies which are required to
       use the module.  Here, the editors have attempted to separate those
-      dependencies which are only required for running testsuites, but they
+      dependencies which are only required for running test suites, but they
       will not be mentioned for a module where one of its dependencies uses
-      that module for its own testsuite.  That is to say, if you intend to
-      run the testsuites, please run them for each dependency of the module.
+      that module for its own test suite.  That is to say, if you intend to
+      run the test suites, please run them for each dependency of the module.
 @z
 
 @x
@@ -119,10 +115,4 @@
       a library, into <filename class="directory">/usr/bin/</filename> or
       <filename class="directory">/usr/lib/</filename> and these
       <emphasis>are</emphasis> documented.
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z

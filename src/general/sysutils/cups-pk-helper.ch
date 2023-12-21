@@ -3,20 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
 <?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY cups-pk-helper-time          "less than 0.1 SBU">
-@y
-  <!ENTITY cups-pk-helper-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -95,12 +85,6 @@
       <xref linkend="cups"/>,
       <xref linkend="polkit"/>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/cups-pk-helper"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/cups-pk-helper"/>
 @z
 
 @x

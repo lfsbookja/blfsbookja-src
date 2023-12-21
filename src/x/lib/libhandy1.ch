@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libhandy1-buildsize     "17 MB (with tests)">
-  <!ENTITY libhandy1-time          "0.4 SBU (with tests)">
+  <!ENTITY libhandy1-buildsize     "27 MB (with tests)">
+  <!ENTITY libhandy1-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libhandy1-buildsize     "17 MB（テスト込み）">
-  <!ENTITY libhandy1-time          "0.4 SBU（テスト込み）">
+  <!ENTITY libhandy1-buildsize     "27 MB（テスト込み）">
+  <!ENTITY libhandy1-time          "0.1 SBU（テスト込み）">
 @z
 
 @x
@@ -115,12 +115,6 @@
       <xref linkend="gtk-doc"/>,
       <ulink url="https://glade.gnome.org/">Glade</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/libhandy1"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/libhandy1"/>
 @z
 
 @x

@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -88,9 +84,9 @@
 @z
 
 @x
-      <title>1. Setup Users, Groups, and Permissions</title>
+      <title>1. Set Up Users, Groups, and Permissions</title>
 @y
-      <title>1. Setup Users, Groups, and Permissions</title>
+      <title>1. Set Up Users, Groups, and Permissions</title>
 @z
 
 @x
@@ -106,16 +102,16 @@
 @z
 
 @x
-        Putting in an unuable password hash (replacing the <literal>!</literal>
+        Putting in an unusable password hash (replacing the <literal>!</literal>
         by <literal>NP</literal>) unlocks the account but it cannot be used
-        to login via password authentication. That is required by 
+        to login via password authentication. That is required by
         <application>sshd</application> to work properly.
         Next, create some files and directories in the home directory of the git user
         allowing access to the git repository using ssh keys.
 @y
-        Putting in an unuable password hash (replacing the <literal>!</literal>
+        Putting in an unusable password hash (replacing the <literal>!</literal>
         by <literal>NP</literal>) unlocks the account but it cannot be used
-        to login via password authentication. That is required by 
+        to login via password authentication. That is required by
         <application>sshd</application> to work properly.
         Next, create some files and directories in the home directory of the git user
         allowing access to the git repository using ssh keys.
@@ -228,10 +224,10 @@
 @z
 
 @x
-        On the developer's machine, setup some files to be pushed
+        On the developer's machine, set up some files to be pushed
         to the repository as the initial content:
 @y
-        On the developer's machine, setup some files to be pushed
+        On the developer's machine, set up some files to be pushed
         to the repository as the initial content:
 @z
 
@@ -273,16 +269,16 @@
           This is a very basic server setup based on
           <application>OpenSSH</application> access. All developers are using
           the <systemitem class="username">git</systemitem> user to perform
-          actions on the repository and the changes users are commiting can be
-          distiguished as the local user name (see
+          actions on the repository and the changes users are committing can be
+          distinguished as the local user name (see
           <filename>~/.gitconfig</filename>) is recorded in the
           changesets.
 @y
           This is a very basic server setup based on
           <application>OpenSSH</application> access. All developers are using
           the <systemitem class="username">git</systemitem> user to perform
-          actions on the repository and the changes users are commiting can be
-          distiguished as the local user name (see
+          actions on the repository and the changes users are committing can be
+          distinguished as the local user name (see
           <filename>~/.gitconfig</filename>) is recorded in the
           changesets.
 @z
@@ -385,13 +381,13 @@
         In order to allow <application>git</application> to export a
         repository, a file named <filename>git-daemon-export-ok</filename>
         is required in each repository directory on the server. The
-        file needs no content, just its existance enables, its absence
+        file needs no content, just its existence enables, its absence
         disables the export of that repository.
 @y
         In order to allow <application>git</application> to export a
         repository, a file named <filename>git-daemon-export-ok</filename>
         is required in each repository directory on the server. The
-        file needs no content, just its existance enables, its absence
+        file needs no content, just its existence enables, its absence
         disables the export of that repository.
 @z
 

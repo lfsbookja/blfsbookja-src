@@ -85,7 +85,7 @@
       the rootfs over a network card.  For a more complete capability see
       <ulink url="https://www.linuxfromscratch.org/hints/read.html"> the LFS
       Hints</ulink> or <ulink
-      url="http://fedoraproject.org/wiki/Dracut">dracut</ulink>.
+      url="https://fedoraproject.org/wiki/Dracut">dracut</ulink>.
 @y
       If you do decide to build an initramfs, the following scripts will
       provide a basis to do it.  The scripts will allow specifying a rootfs
@@ -94,7 +94,7 @@
       the rootfs over a network card.  For a more complete capability see
       <ulink url="https://www.linuxfromscratch.org/hints/read.html"> the LFS
       Hints</ulink> or <ulink
-      url="http://fedoraproject.org/wiki/Dracut">dracut</ulink>.
+      url="https://fedoraproject.org/wiki/Dracut">dracut</ulink>.
 @z
 
 @x
@@ -135,12 +135,6 @@
       <xref role="runtime" linkend="mdadm"/> must be installed before
       generating the initramfs, if the system partition uses them.
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x

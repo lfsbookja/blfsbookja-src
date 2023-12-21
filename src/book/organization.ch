@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -28,9 +24,9 @@
 @z
 
 @x
-    This book is divided into the following parts.
+    This book is divided into the following fourteen parts.
 @y
-    本書は以下により構成されます。
+    本書は以下の 14 章により構成されます。
 @z
 
 @x
@@ -42,10 +38,10 @@
 @z
 
 @x
-    This part contains information which is essential to
-    the rest of the book.
+    This part contains essential information which is needed to
+    understand the rest of the book.
 @y
-    この部では本書全般における重要な情報について示します。
+    この部では本書全体を理解するのに必要な重要情報について示します。
 @z
 
 @x
@@ -59,11 +55,11 @@
 
 @x
     Here we introduce basic configuration and security issues.  We also
-    discuss a range of editors, file systems, and shells which aren't covered
+    discuss a range of text editors, file systems, and shells which aren't covered
     in the main LFS book.
 @y
     基本的な設定に関することやセキュリティに関する情報を示します。
-    また LFS ブックには示していない内容として、エディター、ファイルシステム、シェルに関する情報についても説明します。
+    また LFS ブックには示していない内容として、テキストエディター、ファイルシステム、シェルに関する情報についても説明します。
 @z
 
 @x
@@ -75,8 +71,8 @@
 @z
 
 @x
-    In this section we cover libraries which are often needed by the rest
-    of the book as well as system utilities.  Information on Programming
+    In this section we cover libraries which are often needed throughout
+    the book, as well as system utilities.  Information on programming
     (including recompiling <application>GCC</application> to support its full
     range of languages) concludes this part.
 @y
@@ -94,8 +90,8 @@
 @z
 
 @x
-    Here we cover how to connect to a network when you aren't using the
-    simple static IP setup given in the main LFS book. Networking libraries
+    Here we explain how to connect to a network when you aren't using the
+    simple static IP setup presented in the main LFS book. Networking libraries
     and command-line networking tools are also covered here.
 @y
     LFS ブックでは、単純に固定IPアドレスを用いていましたが、そうしない場合にネットワークに接続する方法をここで説明します。
@@ -111,7 +107,7 @@
 @z
 
 @x
-    Here we deal with setting up mail and other servers (such as
+    Here we show you how to set up mail and other servers (such as
     <application>FTP</application>, <application>Apache</application>, etc.).
 @y
     メールサーバーやそれ以外のサーバーについて説明します。
@@ -128,7 +124,7 @@
 
 @x
     This part explains how to set up a basic <application>X Window
-    System</application> installation along with some generic
+    System</application>, along with some generic
     <application>X</application> libraries and Window managers.
 @y
     <application>X ウィンドウシステム</application> の基本的なビルド手順について説明します。
@@ -144,10 +140,10 @@
 @z
 
 @x
-    For those who want to use the <application>K Desktop
-    Environment</application> or some parts of it, this part covers it.
+    This part is for those who want to use the <application>K Desktop
+    Environment</application>, or parts of it.
 @y
-    <application>K デスクトップ環境</application> またはその一部を利用したい方に向けて、その説明を行います。
+    この章では <application>K デスクトップ環境</application> またはその一部を利用したい方に向けて、その説明を行います。
 @z
 
 @x
@@ -196,16 +192,16 @@
 @z
 
 @x
-  <bridgehead renderas="sect2">Part XI - X Software</bridgehead>
+  <bridgehead renderas="sect2">Part XI - More X Software</bridgehead>
 @y
   <bridgehead renderas="sect2">
-  第 XI 部 - X ソフトウェア
+  第 XI 部 - さらなる X ソフトウェア
   </bridgehead>
 @z
 
 @x
     Office programs and graphical web browsers are important to most people.
-    They, along with some generic <application>X</application> software can be
+    They, and some generic <application>X</application> software, can be
     found in this part of the book.
 @y
     システムを扱うユーザーにとって、オフィスプログラムやグラフィカルなウェブブラウザーがたいていは必要になります。
@@ -221,8 +217,8 @@
 @z
 
 @x
-    Here we cover setting multimedia libraries and drivers along with some
-    audio, video and CD-writing programs.
+    Here we cover multimedia libraries and drivers, along with some
+    audio, video, and CD-writing programs.
 @y
     この部では、オーディオ、ビデオ、CD書き込みツールなどにて必要となるマルチメディアライブラリやドライバーの扱いについて説明します。
 @z
@@ -237,12 +233,12 @@
 @z
 
 @x
-    The PST part of the book covers document handling with applications like
-    <application>Ghostscript</application>, <application>CUPS</application> and
-    <application>DocBook</application> to installing
+    This part covers document handling, from applications like
+    <application>Ghostscript</application>, <application>CUPS</application>, and
+    <application>DocBook</application>, all the way to
     <application>texlive</application>.
 @y
-    印刷、スキャニング、組版 (Printing, Scanning, Typesetting; PST) の部では、文書を取り扱うアプリケーションとして <application>Ghostscript</application>、<application>CUPS</application>、<application>DocBook</application>、<application>texlive</application> について説明します。
+    この部では、文書を取り扱うアプリケーションとして <application>Ghostscript</application>、<application>CUPS</application>、<application>DocBook</application>、<application>texlive</application> について説明します。
 @z
 
 @x
@@ -252,9 +248,11 @@
 @z
 
 @x
-    The Appendices cover information which doesn't belong in the main
-    book; they are mainly there as a reference.
+    The Appendices present information which doesn't belong in the body of
+    book; they are included as reference material. The glossary of acronyms
+    is a handy feature.
 @y
     付録の部では、本書の各部には属していない内容を示します。
     主に参考情報を示すものです。
+    便利な情報として用語集があります。
 @z

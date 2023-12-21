@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY gst10-libav-time          "less than 0.1 SBU (Using parallelism=4)">
+  <!ENTITY gst10-libav-time          "less than 0.1 SBU">
 @y
-  <!ENTITY gst10-libav-time          "&LessThan1;0.1 SBU&LessThan2;（parallelism=4 利用時）">
+  <!ENTITY gst10-libav-time          "&LessThan1;0.1 SBU&LessThan2;">
 @z
 
 @x
@@ -102,15 +98,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <!-- With 1.14.x and before, an internal copy of FFMPEG was used.
-      This is no longer the case, so it is now required. -->
       <xref linkend="yasm"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <!-- With 1.14.x and before, an internal copy of FFMPEG was used.
-      This is no longer the case, so it is now required. -->
       <xref linkend="yasm"/>
     </para>
 @z
@@ -118,21 +110,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink> and
-      <ulink url="http://gstreamer.freedesktop.org/src/orc/">Orc</ulink>
+      <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>,
-      <ulink url="http://gstreamer.freedesktop.org/src/orc/">Orc</ulink>
+      <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>
     </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/gst10-libav"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/gst10-libav"/>
 @z
 
 @x
@@ -149,9 +133,9 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      To run the tests, issue: <command>ninja test</command>.
 @y
-      &notTestSuite;
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
@@ -181,7 +165,7 @@
           None
         </seg>
         <seg>
-          libgstlibav.so
+          libgstlibav.so in /usr/lib/gstreamer-1.0 directory
         </seg>
         <seg>
           None
@@ -191,7 +175,7 @@
           &None;
         </seg>
         <seg>
-          libgstlibav.so
+          libgstlibav.so in /usr/lib/gstreamer-1.0 directory
         </seg>
         <seg>
           &None;

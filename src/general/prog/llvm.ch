@@ -106,39 +106,57 @@
 @z
 
 @x
-            Download: <ulink url="&clang-download-http;"/>
+          Download: <ulink url="&clang-download-http;"/>
 @y
-            &Download;: <ulink url="&clang-download-http;"/>
+          &Download;: <ulink url="&clang-download-http;"/>
 @z
 
 @x
-            Download MD5 sum: &clang-md5sum;
+          Download MD5 sum: &clang-md5sum;
 @y
-            &Download; MD5 sum: &clang-md5sum;
+          &Download; MD5 sum: &clang-md5sum;
 @z
 
 @x
-            Download size: &clang-size;
+          Download size: &clang-size;
 @y
-            &DownloadSize;: &clang-size;
+          &DownloadSize;: &clang-size;
 @z
 
 @x
-            Download: <ulink url="&compiler-rt-download-http;"/>
+          Patch enabling <xref linkend="gSSP"/> by default in clang:
 @y
-            &Download;: <ulink url="&compiler-rt-download-http;"/>
+          Patch enabling <xref linkend="gSSP"/> by default in clang:
 @z
 
 @x
-            Download MD5 sum: &compiler-rt-md5sum;
+    <bridgehead renderas="sect3">Optional Download</bridgehead>
 @y
-            &Download; MD5 sum: &compiler-rt-md5sum;
+    <bridgehead renderas="sect3">Optional Download</bridgehead>
 @z
 
 @x
-            Download size: &compiler-rt-size;
+      <emphasis role="strong">Compiler RT</emphasis>
 @y
-            &DownloadSize;: &compiler-rt-size;
+      <emphasis role="strong">Compiler RT</emphasis>
+@z
+
+@x
+          Download: <ulink url="&compiler-rt-download-http;"/>
+@y
+          &Download;: <ulink url="&compiler-rt-download-http;"/>
+@z
+
+@x
+          Download MD5 sum: &compiler-rt-md5sum;
+@y
+          &Download; MD5 sum: &compiler-rt-md5sum;
+@z
+
+@x
+          Download size: &compiler-rt-size;
+@y
+          &DownloadSize;: &compiler-rt-size;
 @z
 
 @x
@@ -168,15 +186,14 @@
       <xref linkend="libxml2"/>,
       <xref linkend="pygments"/>,
       <xref linkend="rsync"/> (for tests),
+      <xref linkend="recommonmark"/> (for building documentation),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
       <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
       <ulink url="https://ocaml.org/">OCaml</ulink>,
-      <ulink url="https://pypi.org/project/psutil/">psutil</ulink>,
-      <ulink url="https://pypi.python.org/pypi/recommonmark">recommonmark</ulink>,
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>, and
-      <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
+      <ulink url="https://pypi.org/project/psutil/">psutil</ulink> (for tests),
+      and <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -187,22 +204,15 @@
       <xref linkend="libxml2"/>,
       <xref linkend="pygments"/>,
       <xref linkend="rsync"/> (for tests),
+      <xref linkend="recommonmark"/> (for building documentation),
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
       <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
       <ulink url="https://ocaml.org/">OCaml</ulink>,
-      <ulink url="https://pypi.org/project/psutil/">psutil</ulink>,
-      <ulink url="https://pypi.python.org/pypi/recommonmark">recommonmark</ulink>,
-      <ulink url="https://pypi.python.org/pypi/Sphinx">Sphinx</ulink>,
-      <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
+      <ulink url="https://pypi.org/project/psutil/">psutil</ulink> (for tests),
+      and <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -220,21 +230,29 @@
 
 @x
       If you have downloaded <application>compiler-rt</application>,
-      install it into the source tree by running the following commands:
+      install it into the source tree by running the following commands,
+      <!-- https://github.com/llvm/llvm-project/pull/66761 -->
+      and modify the building system so it will find the
+      <filename class='directory'>
+        llvm-cmake-&llvm-maj-version;.src</filename> directory correctly:
 @y
       If you have downloaded <application>compiler-rt</application>,
-      install it into the source tree by running the following commands:
+      install it into the source tree by running the following commands,
+      <!-- https://github.com/llvm/llvm-project/pull/66761 -->
+      and modify the building system so it will find the
+      <filename class='directory'>
+        llvm-cmake-&llvm-maj-version;.src</filename> directory correctly:
 @z
 
 @x
      There are many Python scripts in this package which use
      <command>/usr/bin/env python</command> to access the system Python
-     which on LFS is <xref linkend="python3"/>. Use the following comand
+     which on LFS is <xref linkend="python3"/>. Use the following command
      to fix these scripts:
 @y
      There are many Python scripts in this package which use
      <command>/usr/bin/env python</command> to access the system Python
-     which on LFS is <xref linkend="python3"/>. Use the following comand
+     which on LFS is <xref linkend="python3"/>. Use the following command
      to fix these scripts:
 @z
 
@@ -246,15 +264,13 @@
 @z
 
 @x
-      If you have installed <application>Sphinx</application> and
-      <application>recommonmark</application> and wish
-      to generate the html documentation and manual pages, issue the following
-      commands:
+      If you have installed <xref linkend="recommonmark"/> and its
+      dependencies, you can generate the html documentation and manual
+      pages with the following commands:
 @y
-      If you have installed <application>Sphinx</application> and
-      <application>recommonmark</application> and wish
-      to generate the html documentation and manual pages, issue the following
-      commands:
+      If you have installed <xref linkend="recommonmark"/> and its
+      dependencies, you can generate the html documentation and manual
+      pages with the following commands:
 @z
 
 @x
@@ -264,41 +280,75 @@
 @z
 
 @x
-      <!-- EDITORS - if you have more than 4 cores, take some offline to measure
-      the elapsed time for the tests.  Also, libstdc++.a and perhaps libstdc++fs.a
-      are used by a couple of the link-static tests. -->
-      To test the results, issue: <command>ninja check-all</command>. Tests are
-      built with all <emphasis>available</emphasis> cores, but run using the number
-      of <emphasis>online</emphasis> processors. (The difference is that available
-      cores can be limited using <command>taskset</command>, but taking them offline
-      requires echoing 0 to <filename
-      class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
-      by the <systemitem class="username">root</systemitem> user and makes them
-      temporarily unusable by all jobs on the machine.)
-      Note that a few of the compiler-rt Sanitizer based tests (13 of more than 59000
-      tests run) are known to fail. Some of the LLVM-Unit IR tests are known to
-      fail as well.
+      If you wish to run the tests, remove a test case known to hang
+      indefinitely on some systems:
 @y
-      <!-- EDITORS - if you have more than 4 cores, take some offline to measure
-      the elapsed time for the tests.  Also, libstdc++.a and perhaps libstdc++fs.a
-      are used by a couple of the link-static tests. -->
-      To test the results, issue: <command>ninja check-all</command>. Tests are
-      built with all <emphasis>available</emphasis> cores, but run using the number
-      of <emphasis>online</emphasis> processors. (The difference is that available
-      cores can be limited using <command>taskset</command>, but taking them offline
-      requires echoing 0 to <filename
-      class="directory">/sys/devices/system/cpu/cpu&lt;N&gt;/online</filename>
-      by the <systemitem class="username">root</systemitem> user and makes them
-      temporarily unusable by all jobs on the machine.)
-      Note that a few of the compiler-rt Sanitizer based tests (13 of more than 59000
-      tests run) are known to fail. Some of the LLVM-Unit IR tests are known to
-      fail as well.
+      If you wish to run the tests, remove a test case known to hang
+      indefinitely on some systems:
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      LLVM test suite can produce many core dump files.  They will occupy
+      a large amount of disk space, and the core dump process can
+      significantly slow down the testing.  To test the results with core
+      dump disabled, <phrase revision='systemd'>ensure
+      <xref linkend='systemd'/> and <xref linkend='shadow'/> have
+      been rebuilt with <xref linkend='linux-pam'/> support (if you are
+      interacting via a SSH or graphical session, also ensure the
+      <xref linkend='openssh'/> server or the desktop manager has been
+      built with <xref linkend='linux-pam'/>) and the current login session
+      is started after updating the
+      <filename>/etc/pam.d/system-session</filename> file to include
+      <filename class='libraryfile'>pam_systemd.so</filename>,
+      then </phrase>issue:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      LLVM test suite can produce many core dump files.  They will occupy
+      a large amount of disk space, and the core dump process can
+      significantly slow down the testing.  To test the results with core
+      dump disabled, <phrase revision='systemd'>ensure
+      <xref linkend='systemd'/> and <xref linkend='shadow'/> have
+      been rebuilt with <xref linkend='linux-pam'/> support (if you are
+      interacting via a SSH or graphical session, also ensure the
+      <xref linkend='openssh'/> server or the desktop manager has been
+      built with <xref linkend='linux-pam'/>) and the current login session
+      is started after updating the
+      <filename>/etc/pam.d/system-session</filename> file to include
+      <filename class='libraryfile'>pam_systemd.so</filename>,
+      then </phrase>issue:
+@z
+
+@x
+      If <option>-jN</option> (N replaced with a number) is passed to
+      <command>ninja</command>, the tests will be built with N logical
+      cores, but run using all available logical cores.
+      Run the test command in a cgroup (<phrase revision='systemd'>pass
+        the <option>-p AllowedCPUs=...</option> option to the
+        <command>systemd-run</command> command,
+      </phrase>
+      read <xref linkend='build-in-cgroup'/> for details) to limit the
+      number of logical cores for running the tests.
+      One test named <filename>Linux/clone_setns.cpp</filename> will fail
+      if <option>CONFIG_USER_NS</option> is not enabled in kernel
+      configuration.
+@y
+      If <option>-jN</option> (N replaced with a number) is passed to
+      <command>ninja</command>, the tests will be built with N logical
+      cores, but run using all available logical cores.
+      Run the test command in a cgroup (<phrase revision='systemd'>pass
+        the <option>-p AllowedCPUs=...</option> option to the
+        <command>systemd-run</command> command,
+      </phrase>
+      read <xref linkend='build-in-cgroup'/> for details) to limit the
+      number of logical cores for running the tests.
+      One test named <filename>Linux/clone_setns.cpp</filename> will fail
+      if <option>CONFIG_USER_NS</option> is not enabled in kernel
+      configuration.
+@z
+
+@x
+      Now, as the &root; user:
+@y
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x
@@ -345,19 +395,23 @@
 
 @x
         <seg>
-          bugpoint, c-index-test, clang, clang++ (symlinks to
-          clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
+          amdgpu-arch,
+          analyze-build, bugpoint, c-index-test, clang, clang++ (symlinks to
+          clang-&llvm-maj-version;), clang-&llvm-maj-version;, clang-check, clang-cl,
           clang-cpp (last two symlinks to clang), clang-extdef-mapping, clang-format,
-          clang-offload-bundler, clang-offload-wrapper,
+          clang-linker-wrapper,
+          clang-offload-bundler, clang-offload-packager,
           clang-refactor, clang-rename, clang-repl, clang-scan-deps,
-          diagtool, dsymutil, git-clang-format, hmaptool, llc, lli,
+          diagtool, dsymutil, FileCheck, git-clang-format, hmaptool, intercept-build, llc, lli,
           llvm-addr2line (symlink to llvm-symbolizer),
           llvm-ar, llvm-as, llvm-bcanalyzer,
           llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat,
           llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
-          llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
-          llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
-          llvm-dwp, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
+          llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap, llvm-debuginfo-analyzer,
+          llvm-debuginfod, llvm-debuginfod-find,
+          llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar),
+          llvm-dwarfdump, llvm-dwarfutil,
+          llvm-dwp, llvm-exegesis, llvm-extract, llvm-gsymutil, llvm-ifs,
           llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
           llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link,
           llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml,
@@ -366,20 +420,21 @@
           llvm-pdbutil, llvm-profdata, llvm-profgen,
           llvm-ranlib (symlink to llvm-ar), llvm-rc,
           llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce,
+          llvm-remark-size-diff, llvm-remarkutil,
           llvm-rtdyld, llvm-sim, llvm-size, llvm-split, llvm-stress,
           llvm-strings, llvm-strip (symlink to llvm-objcopy), llvm-symbolizer,
-          llvm-tapi-diff, llvm-tblgen, llvm-undname, llvm-windres (symlink to
-          llvm-rc, llvm-xray, opt, sancov, sanstats, scan-build,
-          scan-view, split-file, and verify-uselistorder
+          llvm-tapi-diff, llvm-tblgen, llvm-tli-checker, llvm-undname, llvm-windres (symlink to
+          llvm-rc), llvm-xray, nvptx-arch, opt, sancov, sanstats, scan-build,
+          scan-build-py, scan-view, split-file, and verify-uselistorder
         </seg>
         <seg>
           libLLVM.so,
-          libLLVM*.a (89 libraries),
+          libLLVM*.a (100 libraries),
           libLTO.so,
           libRemarks.so,
           libclang.so,
           libclang-cpp.so,
-          libclang*.a (38 libraries),
+          libclang*.a (42 libraries),
           and LLVMgold.so
         </seg>
         <seg>
@@ -390,19 +445,23 @@
         </seg>
 @y
         <seg>
-          bugpoint, c-index-test, clang, clang++ (symlinks to
-          clang-&lt;version&gt;), clang-&lt;version&gt;, clang-check, clang-cl,
+          amdgpu-arch,
+          analyze-build, bugpoint, c-index-test, clang, clang++ (symlinks to
+          clang-&llvm-maj-version;), clang-&llvm-maj-version;, clang-check, clang-cl,
           clang-cpp (last two symlinks to clang), clang-extdef-mapping, clang-format,
-          clang-offload-bundler, clang-offload-wrapper,
+          clang-linker-wrapper,
+          clang-offload-bundler, clang-offload-packager,
           clang-refactor, clang-rename, clang-repl, clang-scan-deps,
-          diagtool, dsymutil, git-clang-format, hmaptool, llc, lli,
+          diagtool, dsymutil, FileCheck, git-clang-format, hmaptool, intercept-build, llc, lli,
           llvm-addr2line (symlink to llvm-symbolizer),
           llvm-ar, llvm-as, llvm-bcanalyzer,
           llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat,
           llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
-          llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap,
-          llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar), llvm-dwarfdump,
-          llvm-dwp, llvm-exegenesis, llvm-extract, llvm-gsymutil, llvm-ifs,
+          llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap, llvm-debuginfo-analyzer,
+          llvm-debuginfod, llvm-debuginfod-find,
+          llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar),
+          llvm-dwarfdump, llvm-dwarfutil,
+          llvm-dwp, llvm-exegesis, llvm-extract, llvm-gsymutil, llvm-ifs,
           llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
           llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link,
           llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml,
@@ -411,26 +470,27 @@
           llvm-pdbutil, llvm-profdata, llvm-profgen,
           llvm-ranlib (symlink to llvm-ar), llvm-rc,
           llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce,
+          llvm-remark-size-diff, llvm-remarkutil,
           llvm-rtdyld, llvm-sim, llvm-size, llvm-split, llvm-stress,
           llvm-strings, llvm-strip (symlink to llvm-objcopy), llvm-symbolizer,
-          llvm-tapi-diff, llvm-tblgen, llvm-undname, llvm-windres (symlink to
-          llvm-rc, llvm-xray, opt, sancov, sanstats, scan-build,
-          scan-view, split-file, and verify-uselistorder
+          llvm-tapi-diff, llvm-tblgen, llvm-tli-checker, llvm-undname, llvm-windres (symlink to
+          llvm-rc), llvm-xray, nvptx-arch, opt, sancov, sanstats, scan-build,
+          scan-build-py, scan-view, split-file, verify-uselistorder
         </seg>
         <seg>
           libLLVM.so,
-          libLLVM*.a (89 libraries),
+          libLLVM*.a (100 libraries),
           libLTO.so,
           libRemarks.so,
           libclang.so,
           libclang-cpp.so,
-          libclang*.a (38 libraries),
-          and LLVMgold.so
+          libclang*.a (42 libraries),
+          LLVMgold.so
         </seg>
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
           /usr/lib/{clang,cmake/{clang,llvm},libear,libscanbuild},
-          /usr/share/{clang,opt-viewer,scan-build,scan-view}, and
+          /usr/share/{clang,opt-viewer,scan-build,scan-view},
           /usr/share/doc/llvm-&llvm-version;
         </seg>
 @z
@@ -601,10 +661,18 @@
             <filename class="extension">.ll</filename> files
 @z
 
-@x llvm-symbolizer
-            converts adresses into source code locations
+@x llvm-strings
+            print strings found in a binary (object file, executable, or
+            archive library)
 @y
-            converts adresses into source code locations
+            print strings found in a binary (object file, executable, or
+            archive library)
+@z
+
+@x llvm-symbolizer
+            converts addresses into source code locations
+@y
+            converts addresses into source code locations
 @z
 
 @x llvm-tblgen
@@ -621,17 +689,25 @@
             is an implementation of Google's XRay function call tracing system
 @z
 
-@x obj2yaml
-            takes an object file, and produces a YAML representation of the
-            file
+@x nvptx-arch
+            lists NVIDIA GPUs installed; at runtime it needs
+            <filename class='libraryfile'>libcuda.so</filename>
+            which is not a part of BLFS
 @y
-            takes an object file, and produces a YAML representation of the
-            file
+            lists NVIDIA GPUs installed; at runtime it needs
+            <filename class='libraryfile'>libcuda.so</filename>
+            which is not a part of BLFS
 @z
 
 @x opt
             is the <application>LLVM</application> optimizer
 @y
             is the <application>LLVM</application> optimizer
+@z
+
+@x sancov
+            is the sanitizer coverage processing tool
+@y
+            is the sanitizer coverage processing tool
 @z
 

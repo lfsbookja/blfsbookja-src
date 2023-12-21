@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -88,24 +84,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="doxygen"/> (for building the API documentation)
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="doxygen"/> (for building the API documentation)
-    </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of libdbusmenu-qt</title>
 @y
     <title>&InstallationOf1;libdbusmenu-qt&InstallationOf2;</title>
@@ -119,7 +97,7 @@
 @z
 
 @x
-      This packages does not come with a working test suite.
+      This package does not come with a working test suite.
 @y
       本パッケージには有効なテストスイートがありません。
 @z
@@ -147,13 +125,10 @@
 
 @x
       <parameter>-DWITH_DOC=OFF</parameter>: This option is set to avoid
-      building the API documentation. Omit it if you have
-      <application>doxygen</application> installed and want the
-      documentation.
+      trying to build the API documentation which requires obsolete Qt4.
 @y
       <parameter>-DWITH_DOC=OFF</parameter>:
-      このオプションは API ドキュメントのビルドを行わないようにします。
-      <application>doxygen</application> をインストールしていて、ドキュメントを必要とする場合は、このオプションを取り除いてください。
+      このオプションは、かつての Qt4 では必要であった API ドキュメントのビルドを行わないようにします。
 @z
 
 @x

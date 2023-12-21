@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -28,15 +24,16 @@
 @x
       The <application>Desktop File Utils</application> package contains
       command line utilities for working with <ulink
-      url="http://standards.freedesktop.org/desktop-entry-spec/latest/">
+      url="https://standards.freedesktop.org/desktop-entry-spec/latest/">
       Desktop entries</ulink>. These utilities are used by Desktop
       Environments and other applications to manipulate the MIME-types
       application databases and help adhere to the Desktop Entry
       Specification.
 @y
-      <application>Desktop File Utils</application> パッケージは <ulink
-      url="http://standards.freedesktop.org/desktop-entry-spec/latest/">デスクトップエントリー</ulink> (Desktop entries) に対して利用するコマンドラインユーティリティを提供します。
-      These utilities are used by Desktop
+      The <application>Desktop File Utils</application> package contains
+      command line utilities for working with <ulink
+      url="https://standards.freedesktop.org/desktop-entry-spec/latest/">
+      Desktop entries</ulink>. These utilities are used by Desktop
       Environments and other applications to manipulate the MIME-types
       application databases and help adhere to the Desktop Entry
       Specification.
@@ -115,12 +112,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Desktop File Utils</title>
 @y
     <title>&InstallationOf1;Desktop File Utils&InstallationOf2;</title>
@@ -159,14 +150,14 @@
 
 @x
         The <ulink
-        url="http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html">XDG
+        url="https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html">XDG
         Base Directory</ulink> specification defines the standard locations for
         applications to place data and configuration files. These files can be
         used, for instance, to define the menu structure and menu items in a
         desktop environment.
 @y
         The <ulink
-        url="http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html">XDG
+        url="https://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html">XDG
         Base Directory</ulink> specification defines the standard locations for
         applications to place data and configuration files. These files can be
         used, for instance, to define the menu structure and menu items in a

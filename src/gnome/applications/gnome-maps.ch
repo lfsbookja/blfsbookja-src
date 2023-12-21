@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -77,39 +73,27 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="clutter-gtk"/>,
       <xref linkend="desktop-file-utils"/>,
-      <xref linkend="folks"/>,
       <xref linkend="geoclue2"/>,
       <xref linkend="geocode-glib"/>,
-      <xref linkend="gfbgraph"/>,
       <xref linkend="gjs"/>,
-      <xref linkend="libchamplain"/>,
-      <xref linkend="libgee"/>,
-      <xref linkend="libhandy1"/>, and
+      <xref linkend="libadwaita1"/>,
+      <xref linkend="libshumate"/>,
+      <xref linkend="libgweather"/>, and
       <xref linkend="rest"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="clutter-gtk"/>,
       <xref linkend="desktop-file-utils"/>,
-      <xref linkend="folks"/>,
       <xref linkend="geoclue2"/>,
       <xref linkend="geocode-glib"/>,
-      <xref linkend="gfbgraph"/>,
       <xref linkend="gjs"/>,
-      <xref linkend="libchamplain"/>,
-      <xref linkend="libgee"/>,
-      <xref linkend="libhandy1"/>,
+      <xref linkend="libadwaita1"/>,
+      <xref linkend="libshumate"/>,
+      <xref linkend="libgweather"/>,
       <xref linkend="rest"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -155,7 +139,7 @@
 
 @x
         <seg>
-          gnome-maps
+          gnome-maps (symlink)
         </seg>
         <seg>
           libgnome-maps.so
@@ -166,7 +150,7 @@
         </seg>
 @y
         <seg>
-          gnome-maps
+          gnome-maps (シンボリックリンク)
         </seg>
         <seg>
           libgnome-maps.so

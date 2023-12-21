@@ -120,9 +120,9 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/nss"/>
+      Editor Notes: <ulink url="&blfs-wiki;/nss"/>
 @y
-      &UserNotes;: <ulink url="&blfs-wiki;/nss"/>
+      &EditorNotes;: <ulink url="&blfs-wiki;/nss"/>
 @z
 
 @x

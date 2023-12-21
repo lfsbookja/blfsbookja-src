@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -74,7 +70,7 @@
 @z
 
 @x
-      <bridgehead renderas="sect5">Recommended (required for the testsuite)</bridgehead>
+      <bridgehead renderas="sect5">Recommended (required for the test suite)</bridgehead>
       <para role="recommended">
         <!-- This claims to need XString, and will use it for memory
          efficiency if present, but runs fine without it. It also
@@ -92,7 +88,7 @@
          shows Ref-Util in 'Runtime Recommends' but the only reference
          to that seems to be in the prereqs. -->
         <xref linkend="perl-mro-compat"/>,
-        <xref linkend="perl-test-fatal"/>,
+        <xref linkend="perl-test-fatal"/> and
         <xref linkend="perl-test-needs"/>
       </para>
 @z
@@ -102,14 +98,14 @@
       <para role="optional">
         <!-- this adds little, but it gets pulled in anyway for DateTime,
              of which Specio is a dependency -->
-        <xref linkend="perl-namespace-autoclean"/> (for the testsuite)
+        <xref linkend="perl-namespace-autoclean"/> (for the test suite)
       </para>
 @y
       <bridgehead renderas="sect5">&Optional;</bridgehead>
       <para role="optional">
         <!-- this adds little, but it gets pulled in anyway for DateTime,
              of which Specio is a dependency -->
-        <xref linkend="perl-namespace-autoclean"/> (テストスイートのため)
+        <xref linkend="perl-namespace-autoclean"/> (テストスイートに必要)
       </para>
 @z
 

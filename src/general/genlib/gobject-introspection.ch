@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gobject-introspection-buildsize     "55 MB (with tests)">
-  <!ENTITY gobject-introspection-time          "0.2 SBU (With tests; both using parallelism=4)">
+  <!ENTITY gobject-introspection-buildsize     "48 MB (with tests)">
+  <!ENTITY gobject-introspection-time          "0.3 SBU (With tests; both using parallelism=4)">
 @y
-  <!ENTITY gobject-introspection-buildsize     "55 MB (テスト込み)">
-  <!ENTITY gobject-introspection-time          "0.2 SBU (テスト込み, いずれも parallelism=4 利用時)">
+  <!ENTITY gobject-introspection-buildsize     "48 MB (テスト込み)">
+  <!ENTITY gobject-introspection-time          "0.3 SBU (テスト込み, いずれも parallelism=4 利用時)">
 @z
 
 @x
@@ -92,11 +92,7 @@
       <xref linkend="gjs"/> (to satisfy one test),
       <xref linkend="gtk-doc"/>,
       <xref linkend="Mako"/>, and
-      <ulink url="https://pypi.org/project/Markdown/">Markdown</ulink> (to satisfy one test)
-      <!-- There was talk of this being required in the release notes. Can someone
-      who doesn't have this installed verify? 
-      It is only needed for one test.  bdubbs March 3, 2019
-      -->
+      <xref linkend="markdown"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -105,18 +101,8 @@
       <xref linkend="gjs"/> (1 つのテストにおいて必要),
       <xref linkend="gtk-doc"/>,
       <xref linkend="Mako"/>,
-      <ulink url="https://pypi.org/project/Markdown/">Markdown</ulink> (1 つのテストにおいて必要)
-      <!-- There was talk of this being required in the release notes. Can someone
-      who doesn't have this installed verify? 
-      It is only needed for one test.  bdubbs March 3, 2019
-      -->
+      <xref linkend="markdown"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -133,13 +119,10 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>.
-      If <xref linkend="Mako"/> is installed but the Python 3 module named
-      Markdown (not in BLFS) is not, one test named test_docwriter.py will
-      fail.
+      To test the results, fix an incompatibility of the test suite with
+      Python 3.12 or later and then run the test suite:
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      <xref linkend="Mako"/> がインストールされていて（BLFS にない）Markdown という Python 3 モジュールがインストールされていない場合、test_docwriter.py というテストが 1 つだけ失敗します。
+      ビルド結果をテストする場合は、Python 3.12 以上に対するテストスイートの非互換性を修正してから、以下のようにテストスイートを実行します。
 @z
 
 @x
@@ -220,12 +203,12 @@
             generates Mallard files that can be viewed with
             <command>yelp</command> or rendered to HTML with
             <command>yelp-build</command> from
-            <ulink url="http://ftp.acc.umu.se/pub/gnome/sources/yelp-tools">yelp-tools</ulink>
+            <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
 @y
             generates Mallard files that can be viewed with
             <command>yelp</command> or rendered to HTML with
             <command>yelp-build</command> from
-            <ulink url="http://ftp.acc.umu.se/pub/gnome/sources/yelp-tools">yelp-tools</ulink>
+            <ulink url="&gnome-download-http;/yelp-tools">yelp-tools</ulink>
 @z
 
 @x g-ir-inspect

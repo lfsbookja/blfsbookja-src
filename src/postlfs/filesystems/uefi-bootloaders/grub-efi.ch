@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -108,25 +104,15 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Required (runtime)</bridgehead>
-    <para role="runtime">
-      <xref linkend="efibootmgr"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required; （実行時）</bridgehead>
-    <para role="runtime">
-      <xref linkend="efibootmgr"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref role="runtime" linkend="efibootmgr"/> (runtime) and
       <xref linkend="freetype2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref role="runtime" linkend="efibootmgr"/> (runtime) and
       <xref linkend="freetype2"/>
     </para>
 @z
@@ -141,12 +127,6 @@
     <para role="optional">
       <xref linkend="lvm2"/>
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -221,24 +201,16 @@
       <para>If the recommended dependency <xref linkend="freetype2"/> is not
       installed, it is possible to omit this option and build GRUB.  However,
       if <command>grub-mkfont</command> is not built, or the unicode font
-      data is not avaliable at the time GRUB is built, GRUB won't install
+      data is not available at the time GRUB is built, GRUB won't install
       any font for the boot loader.  The GRUB boot menu will be displayed
-      using a coarse font and the early stage of kernel initialization will be
-      in <quote>blind mode</quote> &mdash; you can't see any kernel messages before
-      the graphics card driver is initialized.  It will be very difficult to
-      diagnose some boot issues, especially if the graphics driver is
-      built as module.</para>
+      using a coarse font or in a smaller region on the screen.</para>
 @y
       <para>If the recommended dependency <xref linkend="freetype2"/> is not
       installed, it is possible to omit this option and build GRUB.  However,
       if <command>grub-mkfont</command> is not built, or the unicode font
-      data is not avaliable at the time GRUB is built, GRUB won't install
+      data is not available at the time GRUB is built, GRUB won't install
       any font for the boot loader.  The GRUB boot menu will be displayed
-      using a coarse font and the early stage of kernel initialization will be
-      in <quote>blind mode</quote> &mdash; you can't see any kernel messages before
-      the graphics card driver is initialized.  It will be very difficult to
-      diagnose some boot issues, especially if the graphics driver is
-      built as module.</para>
+      using a coarse font or in a smaller region on the screen.</para>
 @z
 
 @x

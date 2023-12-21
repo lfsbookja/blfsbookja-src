@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -26,11 +22,11 @@
 @z
 
 @x
-        The Business::ISBN module is for work with International Standard Book
-        Numbers.
+        The Business::ISBN module provides functions for working with
+        International Standard Book Numbers.
 @y
-        The Business::ISBN module is for work with International Standard Book
-        Numbers.
+        The Business::ISBN module provides functions for working with
+        International Standard Book Numbers.
 @z
 
 @x

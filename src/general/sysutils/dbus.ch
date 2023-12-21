@@ -3,10 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-% $Author$
-% $Rev$
-% $Date::                           $
-%
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
 @y
@@ -14,9 +10,11 @@
 @z
 
 @x
-  <!ENTITY dbus-time          "0.3 SBU (add 8.0 SBU for the tests)">
+  <!ENTITY dbus-buildsize     "23 MB (add 25 MB for tests)">
+  <!ENTITY dbus-time          "0.2 SBU (add 1.5 SBU for tests)">
 @y
-  <!ENTITY dbus-time          "0.3 SBU (add 8.0 SBU for the tests)">
+  <!ENTITY dbus-buildsize     "23 MB (add 25 MB for tests)">
+  <!ENTITY dbus-time          "0.2 SBU (add 1.5 SBU for tests)">
 @z
 
 @x
@@ -96,44 +94,50 @@
 @z
 
 @x
-    <bridgehead renderas="sect4" revision="systemd">Required</bridgehead>
-    <para role="required" revision="systemd">
-      <xref linkend="systemd"/>
-    </para>
-@y
-    <bridgehead renderas="sect4" revision="systemd">&Required;</bridgehead>
-    <para role="required" revision="systemd">
-      <xref linkend="systemd"/>
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="xorg7-lib"/> (for <command>dbus-launch</command> program) 
+      <xref linkend="xorg7-lib"/> (for <command>dbus-launch</command> program)
+      <!-- elogind cannot be used by dbus: dbus only uses the systemd service,
+      not the logind one
       <phrase revision="sysv">and <xref linkend="elogind"/> (These are
-      circular dependencies. First build without them, and then again after 
-      both packages are installed.)</phrase>
+      circular dependencies. First build without them, and then again after
+      both packages are installed.)</phrase>-->
     </para>
 @y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="xorg7-lib"/> (<command>dbus-launch</command> プログラムのため) 
+      <xref linkend="xorg7-lib"/> (for <command>dbus-launch</command> program)
+      <!-- elogind cannot be used by dbus: dbus only uses the systemd service,
+      not the logind one
       <phrase revision="sysv">and <xref linkend="elogind"/> (These are
-      circular dependencies. First build without them, and then again after 
-      both packages are installed.)</phrase>
+      circular dependencies. First build without them, and then again after
+      both packages are installed.)</phrase>-->
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/>
+      (runtime, for registering services launched by D-Bus session daemon as
+      systemd user services);</phrase>
       For the tests:
-      <xref linkend="dbus-glib"/>,
       <xref linkend="dbus-python"/>,
       <xref linkend="pygobject3"/>,
       and <xref linkend="valgrind"/>;
+@y
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <phrase revision="systemd"><xref role="runtime" linkend="systemd"/>
+      (runtime, for registering services launched by D-Bus session daemon as
+      systemd user services);</phrase>
+      For the tests:
+      <xref linkend="dbus-python"/>,
+      <xref linkend="pygobject3"/>,
+      <xref linkend="valgrind"/>;
+@z
 
+@x
       for documentation:
       <xref linkend="doxygen"/>,
       <xref linkend="xmlto"/>,
@@ -142,15 +146,7 @@
       <ulink url="&gnome-download-http;/yelp-tools/">Yelp Tools</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      テストのために:
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="dbus-python"/>,
-      <xref linkend="pygobject3"/>,
-      <xref linkend="valgrind"/>;
-
-      ドキュメント生成のために:
+      ドキュメント生成のため:
       <xref linkend="doxygen"/>,
       <xref linkend="xmlto"/>,
       <ulink url="https://pypi.python.org/pypi/mallard-ducktype">Ducktype</ulink>,
@@ -159,9 +155,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -266,15 +262,15 @@
 @z
 
 @x
-      The dbus tests cannot be run until after <xref linkend="dbus-glib"/> has
-      been installed.  They must be run as an unprivileged user from a local
-      session with bus address. To run the standard tests issue
-      <command>make check</command>.
+      Many tests are disabled unless both <xref linkend="dbus-python"/>
+      and <xref linkend="pygobject3"/> have been installed.  They must be
+      run as an unprivileged user from a local session with bus address.
+      To run the standard tests issue <command>make check</command>.
 @y
-      The dbus tests cannot be run until after <xref linkend="dbus-glib"/> has
-      been installed.  They must be run as an unprivileged user from a local
-      session with bus address. To run the standard tests issue
-      <command>make check</command>.
+      Many tests are disabled unless both <xref linkend="dbus-python"/>
+      and <xref linkend="pygobject3"/> have been installed.  They must be
+      run as an unprivileged user from a local session with bus address.
+      To run the standard tests issue <command>make check</command>.
 @z
 
 @x
@@ -294,12 +290,14 @@
 @z
 
 @x
-      There have been reports that the tests may fail if running inside a 
-      Midnight Commander shell. You may get out-of-memory error messages when 
+      One test, test-autolaunch, is known to fail.
+      There have also been reports that the tests may fail if running inside a
+      Midnight Commander shell. You may get out-of-memory error messages when
       running the tests. These are normal and can be safely ignored.
 @y
-      There have been reports that the tests may fail if running inside a 
-      Midnight Commander shell. You may get out-of-memory error messages when 
+      One test, test-autolaunch, is known to fail.
+      There have also been reports that the tests may fail if running inside a
+      Midnight Commander shell. You may get out-of-memory error messages when
       running the tests. These are normal and can be safely ignored.
 @z
 
@@ -340,13 +338,11 @@
 @x
       <parameter>--enable-user-session</parameter>: This parameter enables
       per-user DBus sessions with
-      <phrase revision="sysv"><application>elogind</application>.</phrase>
-      <phrase revision="systemd"><application>systemd</application>.</phrase>
+      <application>systemd</application>.
 @y
       <parameter>--enable-user-session</parameter>: This parameter enables
       per-user DBus sessions with
-      <phrase revision="sysv"><application>elogind</application>.</phrase>
-      <phrase revision="systemd"><application>systemd</application>.</phrase>
+      <application>systemd</application>.
 @z
 
 @x
@@ -355,22 +351,6 @@
 @y
       <parameter>--with-systemd{user,system}unitdir=no</parameter>: These
       switches disable installation of systemd units on elogind based systems.
-@z
-
-@x
-      <parameter>--with-console-auth-dir=/run/console</parameter>: This
-      parameter specifies the directory to check for console ownership.
-@y
-      <parameter>--with-console-auth-dir=/run/console</parameter>: This
-      parameter specifies the directory to check for console ownership.
-@z
-
-@x
-      <parameter>--with-system-pid-file=/run/dbus/pid</parameter>: This
-      parameter specifies the location of the PID file.
-@y
-      <parameter>--with-system-pid-file=/run/dbus/pid</parameter>: This
-      parameter specifies the location of the PID file.
 @z
 
 @x
@@ -537,7 +517,7 @@
             The examples shown previously use
             <command>dbus-launch</command> to specify a program to be run. This
             has the benefit (when also using the
-            <parameter>--exit-with-session</parameter> parameter) of stopping the
+            <parameter>--exit-with-x11</parameter> parameter) of stopping the
             session daemon when the specified program is stopped. You can also
             start the session daemon in your system or personal startup scripts
             by adding the following lines:
@@ -545,7 +525,7 @@
             The examples shown previously use
             <command>dbus-launch</command> to specify a program to be run. This
             has the benefit (when also using the
-            <parameter>--exit-with-session</parameter> parameter) of stopping the
+            <parameter>--exit-with-x11</parameter> parameter) of stopping the
             session daemon when the specified program is stopped. You can also
             start the session daemon in your system or personal startup scripts
             by adding the following lines:

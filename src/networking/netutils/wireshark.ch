@@ -93,96 +93,14 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="cmake"/>,
-      <xref linkend="glib2"/>, 
-      <xref linkend="libgcrypt"/>, and
-      <xref linkend="qt5"/> 
-    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="cmake"/>,
-      <xref linkend="glib2"/>, 
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="qt5"/> 
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="libpcap"/> (required to capture data)
-    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="libpcap"/> (required to capture data)
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="asciidoctor"/>,
-      <xref linkend="brotli"/>,
-      <xref linkend="c-ares"/>,
-      <xref linkend="doxygen"/>,
-      <xref linkend="git"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="libnl"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="lua52"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="nghttp2"/>,
-      <xref linkend="sbc"/>,
-      <xref linkend="speex"/>,
-      <!--<ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,-->
-      <ulink url="https://www.linphone.org/technical-corner/bcg729">BCG729</ulink>,
-      <ulink url="https://github.com/TimothyGu/libilbc">libilbc</ulink>,
-      <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
-      <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
-      <ulink url="https://www.libssh.org/">libssh</ulink>,
-      <ulink url="https://github.com/maxmind/libmaxminddb">MaxMindDB</ulink>,
-      <ulink url="https://www.winimage.com/zLibDll/minizip.html">Minizip</ulink>,
-      <ulink url="http://google.github.io/snappy/">Snappy</ulink>, and
-      <ulink url="https://www.soft-switch.org/">Spandsp</ulink>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="asciidoctor"/>,
-      <xref linkend="brotli"/>,
-      <xref linkend="c-ares"/>,
-      <xref linkend="doxygen"/>,
-      <xref linkend="git"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="libnl"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="lua52"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="nghttp2"/>,
-      <xref linkend="sbc"/>,
-      <xref linkend="speex"/>,
-      <!--<ulink url="https://asciidoctor.org/">Asciidoctor</ulink>,-->
-      <ulink url="https://www.linphone.org/technical-corner/bcg729">BCG729</ulink>,
-      <ulink url="https://github.com/TimothyGu/libilbc">libilbc</ulink>,
-      <ulink url="http://www.ibr.cs.tu-bs.de/projects/libsmi/">libsmi</ulink>,
-      <ulink url="http://lz4.github.io/lz4/">lz4</ulink>,
-      <ulink url="https://www.libssh.org/">libssh</ulink>,
-      <ulink url="https://github.com/maxmind/libmaxminddb">MaxMindDB</ulink>,
-      <ulink url="https://www.winimage.com/zLibDll/minizip.html">Minizip</ulink>,
-      <ulink url="http://google.github.io/snappy/">Snappy</ulink>, and
-      <ulink url="https://www.soft-switch.org/">Spandsp</ulink>
-    </para>
-@z
-
-@x
-      User Notes: <ulink url="&blfs-wiki;/wireshark"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/wireshark"/>
 @z
 
 @x
@@ -328,7 +246,7 @@
 @x
         Though the default configuration parameters are very sane, reference
         the configuration section of the <ulink url=
-        "http://www.wireshark.org/docs/wsug_html/">Wireshark User's Guide
+        "https://www.wireshark.org/docs/wsug_html/">Wireshark User's Guide
         </ulink> for configuration information. Most of <application>Wireshark
         </application>'s configuration can be accomplished
         using the menu options of the <command>wireshark</command> graphical
@@ -336,7 +254,7 @@
 @y
         Though the default configuration parameters are very sane, reference
         the configuration section of the <ulink url=
-        "http://www.wireshark.org/docs/wsug_html/">Wireshark User's Guide
+        "https://www.wireshark.org/docs/wsug_html/">Wireshark User's Guide
         </ulink> for configuration information. Most of <application>Wireshark
         </application>'s configuration can be accomplished
         using the menu options of the <command>wireshark</command> graphical
@@ -384,7 +302,7 @@
           libwsutil.so, and numerous modules under /usr/lib/wireshark/plugins
         </seg>
         <seg>
-          /usr/{include,lib,share}/wireshark and
+          /usr/{lib,share}/wireshark and
           /usr/share/doc/wireshark-&wireshark-version;
          </seg>
 @y
@@ -395,10 +313,10 @@
         </seg>
         <seg>
           libwireshark.so, libwiretap.so,
-          libwsutil.so, /usr/lib/wireshark/plugins 配下の数多くのライブラリ
+          libwsutil.so, and numerous modules under /usr/lib/wireshark/plugins
         </seg>
         <seg>
-          /usr/{include,lib,share}/wireshark,
+          /usr/{lib,share}/wireshark,
           /usr/share/doc/wireshark-&wireshark-version;
          </seg>
 @z

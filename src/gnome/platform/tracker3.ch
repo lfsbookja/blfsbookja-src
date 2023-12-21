@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY tracker3-buildsize     "82 MB (with tests)">
-  <!ENTITY tracker3-time          "0.8 SBU (with tests)">
+  <!ENTITY tracker3-buildsize     "51 MB (with tests)">
+  <!ENTITY tracker3-time          "0.6 SBU (with tests)">
 @y
-  <!ENTITY tracker3-buildsize     "82 MB（テスト込み）">
-  <!ENTITY tracker3-time          "0.8 SBU（テスト込み）">
+  <!ENTITY tracker3-buildsize     "51 MB（テスト込み）">
+  <!ENTITY tracker3-time          "0.6 SBU（テスト込み）">
 @z
 
 @x
@@ -83,8 +83,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="json-glib"/>,
-      <xref linkend="libseccomp"/>,
-      <xref linkend="libsoup"/>, and
+      <xref linkend="libseccomp"/>, and
       <xref linkend="vala"/>
     </para>
 @y
@@ -92,7 +91,6 @@
     <para role="required">
       <xref linkend="json-glib"/>,
       <xref linkend="libseccomp"/>,
-      <xref linkend="libsoup"/>,
       <xref linkend="vala"/>
     </para>
 @z
@@ -101,15 +99,21 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="icu"/>, and
-      <xref linkend="sqlite"/>
+      <xref linkend="icu"/>,
+      <xref linkend="libsoup3"/>,
+      <xref linkend="pygobject3"/>,
+      <xref linkend="sqlite"/>, and
+      <xref linkend="tracker3-miners"/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
       <xref linkend="icu"/>,
-      <xref linkend="sqlite"/>
+      <xref linkend="libsoup3"/>,
+      <xref linkend="pygobject3"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="tracker3-miners"/> (実行時)
     </para>
 @z
 
@@ -117,7 +121,12 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="asciidoc"/>,
-      <xref linkend="gtk-doc"/>,
+<!--  It looks like not used even if docs=true,
+      the pre-built doc is shipped in tarball and will be installed
+      <xref linkend="gi-docgen"/>
+-->
+      <xref linkend="graphviz"/>,
+      <xref linkend="libsoup"/>,
       <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>, and
       <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>
       <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
@@ -127,18 +136,17 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="asciidoc"/>,
-      <xref linkend="gtk-doc"/>,
+<!--  It looks like not used even if docs=true,
+      the pre-built doc is shipped in tarball and will be installed
+      <xref linkend="gi-docgen"/>
+-->
+      <xref linkend="graphviz"/>,
+      <xref linkend="libsoup"/>,
       <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>,
       <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>
       <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
       (for tests)-->
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -155,39 +163,27 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. The tests
-      should be run from a graphical session. One test,
-      <filename>tracker:functional/portal</filename>, is known to timeout.
-      <!--14 tests will fail if the Python 3 module tap.py is not installed.-->
-@y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      テストはグラフィックセッションから実行することが必要です。
-      1 つのテスト <filename>tracker:functional/portal</filename> はタイムアウトします。
-      <!-- また 14 個のテストが、Python 3 モジュール tap.py がインストールされていない場合には失敗します。-->
-@z
-
-@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-    <title>Command Explanations</title>
+      To test the results, issue: <command>meson configure -Ddebug=true
+      &amp;&amp; ninja test</command>.
+      The test suite should be run from a graphical session. <!--One test,
+      <filename>tracker: fts / fts</filename>, is known to fail due to an
+      incompatibility with SQLite-3.42.-->
 @y
-    <title>&CommandExplanations;</title>
+      ビルド結果をテストする場合は <command>meson configure -Ddebug=true
+      &amp;&amp; ninja test</command> を実行します。
+      テストはグラフィックセッションから実行することが必要です。
 @z
 
 @x
-      <parameter>-Ddocs=false</parameter>: This switch prevents the
-      build process from generating API documentation. Omit this switch if you
-      have <xref linkend="gtk-doc" role="nodep"/> installed and wish to
-      generate and install the API documentation.
+    <title>Command Explanations</title>
 @y
-      <parameter>-Ddocs=false</parameter>: This switch prevents the
-      build process from generating API documentation. Omit this switch if you
-      have <xref linkend="gtk-doc" role="nodep"/> installed and wish to
-      generate and install the API documentation.
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -210,6 +206,18 @@
       <parameter>-Dsystemd_user_services=false</parameter>: This switch prevents
       the build process from installing systemd user services since they are
       useless on SysV systems.
+@z
+
+@x
+      <command>meson configure -Ddebug=true</command>: This command enables
+      some debug checks necessary for the test suite.  We don't want to
+      enable them for the installed Tracker 3 libraries and programs, so
+      we run the test suite after installation.
+@y
+      <command>meson configure -Ddebug=true</command>: This command enables
+      some debug checks necessary for the test suite.  We don't want to
+      enable them for the installed Tracker 3 libraries and programs, so
+      we run the test suite after installation.
 @z
 
 @x
@@ -239,7 +247,7 @@
           /usr/{include,lib}/tracker-3.0,
           /usr/libexec/tracker3,
           /usr/share/tracker3, and
-          /usr/share/gtk-doc/html/{libtracker-sparql,ontology}-3
+          /usr/share/doc/tracker-&tracker3-version; (optional)
         </seg>
 @y
         <seg>
@@ -252,7 +260,7 @@
           /usr/{include,lib}/tracker-3.0,
           /usr/libexec/tracker3,
           /usr/share/tracker3,
-          /usr/share/gtk-doc/html/{libtracker-sparql,ontology}-3
+          /usr/share/doc/tracker-&tracker3-version; (任意インストール)
         </seg>
 @z
 

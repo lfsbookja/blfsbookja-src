@@ -98,7 +98,6 @@
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="libpaper"/>,
-      <xref linkend="llvm"/> (with <command>clang</command>),
       <xref linkend="mitkrb"/>,
       <!--<xref linkend="openjdk"/>, Not found in 2.4.0 -->
       <xref linkend="php"/>, and
@@ -109,10 +108,9 @@
     <para role="optional">
       <xref linkend="avahi"/>,
       <xref linkend="libpaper"/>,
-      <xref linkend="llvm"/> (with <command>clang</command>),
       <xref linkend="mitkrb"/>,
       <!--<xref linkend="openjdk"/>, Not found in 2.4.0 -->
-      <xref linkend="php"/>,
+      <xref linkend="php"/>, and
       <xref linkend="python2"/>
     </para>
 @z
@@ -130,9 +128,9 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
+    <para condition="html" role="usernotes">Editor Notes:
 @y
-    <para condition="html" role="usernotes">&UserNotes;:
+    <para condition="html" role="usernotes">&EditorNotes;:
 @z
 
 @x
@@ -248,13 +246,11 @@
       active graphical session with bus address is necessary to run the tests.
       Make sure that there is not other instance of <application>Cups</application>
       running, otherwise at least 4 tests will fail with "address in use".
-      One test, <filename>httpAddrGetList</filename>, is known to fail.
 @y
       To test the results, issue: <command>LC_ALL=C make -k check</command>. An already
       active graphical session with bus address is necessary to run the tests.
       Make sure that there is not other instance of <application>Cups</application>
       running, otherwise at least 4 tests will fail with "address in use".
-      One test, <filename>httpAddrGetList</filename>, is known to fail.
 @z
 
 @x
@@ -280,24 +276,6 @@
 @z
 
 @x
-      <command>sed ... tools/ipptool.c</command>: This sed fixes a bug caused
-      by glibc-2.30 changing the user-space API for sockets.
-@y
-      <command>sed ... tools/ipptool.c</command>: This sed fixes a bug caused
-      by glibc-2.30 changing the user-space API for sockets.
-@z
-
-@x
-      <envar>CC=gcc CXX=g++</envar>: Setting them if you prefer to use
-      <command>gcc</command> instead of <command>clang</command>, which is
-      now preferred by the upstream.
-@y
-      <envar>CC=gcc CXX=g++</envar>: Setting them if you prefer to use
-      <command>gcc</command> instead of <command>clang</command>, which is
-      now preferred by the upstream.
-@z
-
-@x
       <parameter>--disable-systemd</parameter>: Systemd is not supported by
       this version of BLFS.
 @y
@@ -388,13 +366,13 @@
         the type of printer and can be complex. Generally, PostScript printers
         are easier. For detailed instructions on configuration and use of
         <application>Cups</application>, see <ulink
-        url="http://www.cups.org/documentation.php"/>.
+        url="https://www.cups.org/documentation.html"/>.
 @y
         Configuration of <application>Cups</application> is dependent on
         the type of printer and can be complex. Generally, PostScript printers
         are easier. For detailed instructions on configuration and use of
         <application>Cups</application>, see <ulink
-        url="http://www.cups.org/documentation.php"/>.
+        url="https://www.cups.org/documentation.html"/>.
 @z
 
 @x
@@ -466,39 +444,39 @@
 
 @x
         <seg>
-           <!--accept,--> cancel, cupsaccept, <!--cupsaddsmb,--> cups-config, 
-          cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter, cupsreject,
-          <!--cupstestdsc,--> cupstestppd, ippeveprinter,<!-- ippfind--> ipptool, lp,
-          lpadmin, lpc, lpinfo, lpmove, lpoptions, lpq, lpr, lprm, lpstat, ppdc,
-          ppdhtml, ppdi, ppdmerge, and ppdpo <!--and reject-->
+          cancel, cupsaccept, cups-config, cupsctl, cupsd, cupsdisable,
+          cupsenable, cupsfilter, cupsreject, cupstestppd, ippeveprinter,
+          ippfind, ipptool, lp, lpadmin, lpc, lpinfo, lpmove, lpoptions, lpq,
+          lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge, and ppdpo
         </seg>
         <seg>
-          <!--libcupscgi.so,--> libcupsimage.so <!--libcupsmime.so,-->
-          <!--libcupsppdc.so,--> and libcups.so
-        </seg>
-        <seg>
-          /etc/cups,
-          /usr/{include,lib,share}/cups,
-          /usr/share/doc/cups-&cups-version;, and
-          /var/{cache,log,run,spool}/cups
-        </seg>
-@y
-        <seg>
-           <!--accept,--> cancel, cupsaccept, <!--cupsaddsmb,--> cups-config, 
-          cupsctl, cupsd, cupsdisable, cupsenable, cupsfilter, cupsreject,
-          <!--cupstestdsc,--> cupstestppd, ippeveprinter,<!-- ippfind--> ipptool, lp,
-          lpadmin, lpc, lpinfo, lpmove, lpoptions, lpq, lpr, lprm, lpstat, ppdc,
-          ppdhtml, ppdi, ppdmerge, ppdpo <!--and reject-->
-        </seg>
-        <seg>
-          <!--libcupscgi.so,--> libcupsimage.so <!--libcupsmime.so,-->
-          <!--libcupsppdc.so,--> libcups.so
+          libcupsimage.so
+          and libcups.so
         </seg>
         <seg>
           /etc/cups,
           /usr/{include,lib,share}/cups,
           /usr/share/doc/cups-&cups-version;,
-          /var/{cache,log,run,spool}/cups
+          /run/cups, and
+          /var/{cache,log,spool}/cups
+        </seg>
+@y
+        <seg>
+          cancel, cupsaccept, cups-config, cupsctl, cupsd, cupsdisable,
+          cupsenable, cupsfilter, cupsreject, cupstestppd, ippeveprinter,
+          ippfind, ipptool, lp, lpadmin, lpc, lpinfo, lpmove, lpoptions, lpq,
+          lpr, lprm, lpstat, ppdc, ppdhtml, ppdi, ppdmerge, ppdpo
+        </seg>
+        <seg>
+          libcupsimage.so,
+          libcups.so
+        </seg>
+        <seg>
+          /etc/cups,
+          /usr/{include,lib,share}/cups,
+          /usr/share/doc/cups-&cups-version;,
+          /run/cups,
+          /var/{cache,log,spool}/cups
         </seg>
 @z
 
@@ -506,14 +484,6 @@
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
-@z
-
-@x accept
-            instructs the printing system to accept print jobs to the
-            specified destinations.
-@y
-            instructs the printing system to accept print jobs to the
-            specified destinations.
 @z
 
 @x cancel

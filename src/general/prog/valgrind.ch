@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY valgrind-buildsize     "550 MB (add 62 MB for tests)">
-  <!ENTITY valgrind-time          "0.5 SBU (Using parallelism=4; add 7.5 SBU for tests)">
+  <!ENTITY valgrind-buildsize     "390 MB (add 66 MB for tests)">
+  <!ENTITY valgrind-time          "0.5 SBU (add 6.8 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY valgrind-buildsize     "550 MB (テスト実施時はさらに 62 MB)">
-  <!ENTITY valgrind-time          "0.5 SBU (parallelism=4 利用時。テスト実施時はさらに 7.5 SBU)">
+  <!ENTITY valgrind-buildsize     "390 MB (テスト実施時はさらに 66 MB)">
+  <!ENTITY valgrind-time          "0.5 SBU (テスト実施時はさらに 6.8 SBU; いずれも parallelism=4 利用時)">
 @z
 
 @x
@@ -102,12 +102,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
-@z
-
-@x
     <title>Installation of Valgrind</title>
 @y
     <title>&InstallationOf1;Valgrind&InstallationOf2;</title>
@@ -123,16 +117,16 @@
 @x
       To test the results, issue: <command>make regtest</command>. The tests
       may hang forever if <xref linkend="gdb"/> is not installed. Some tests
-      are known to hang also, depending on the version of glibc. A few test
-       can fail in various suites. Problematic
+      are known to hang also, depending on the version of glibc. A few tests
+      can fail in various suites. Problematic
       tests can be disabled by changing the <userinput>prereq:</userinput> line
       in the corresponding <filename>.vgtest</filename> file to
       <userinput>prereq: false</userinput>. For example:
 @y
       To test the results, issue: <command>make regtest</command>. The tests
       may hang forever if <xref linkend="gdb"/> is not installed. Some tests
-      are known to hang also, depending on the version of glibc. A few test
-       can fail in various suites. Problematic
+      are known to hang also, depending on the version of glibc. A few tests
+      can fail in various suites. Problematic
       tests can be disabled by changing the <userinput>prereq:</userinput> line
       in the corresponding <filename>.vgtest</filename> file to
       <userinput>prereq: false</userinput>. For example:

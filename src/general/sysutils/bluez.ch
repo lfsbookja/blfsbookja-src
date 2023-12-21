@@ -87,12 +87,6 @@
 @z
 
 @x
-      User Notes: <ulink url="&blfs-wiki;/bluez"/>
-@y
-      &UserNotes;: <ulink url="&blfs-wiki;/bluez"/>
-@z
-
-@x
     <title>Kernel Configuration</title>
 @y
     <title>&KernelConfiguration;</title>
@@ -101,23 +95,13 @@
 @x
       If you are building this package to use bluetooth devices (rather than as a
       build dependency), enable the following options in the kernel configuration,
-      also the options below the next paragraph if you intend to run the tests,
-      and recompile the kernel if necessary:
+      also the options in the <quote>Cryptographic API</quote> section if
+      you intend to run the tests, and recompile the kernel if necessary:
 @y
       If you are building this package to use bluetooth devices (rather than as a
       build dependency), enable the following options in the kernel configuration,
-      also the options below the next paragraph if you intend to run the tests,
-      and recompile the kernel if necessary:
-@z
-
-@x
-      If you wish to run the testsuite (even if treating this package as a build
-      dependency), you will need to enable the following options in the kernel
-      configuration and recompile the kernel if necessary:
-@y
-      If you wish to run the testsuite (even if treating this package as a build
-      dependency), you will need to enable the following options in the kernel
-      configuration and recompile the kernel if necessary:
+      also the options in the <quote>Cryptographic API</quote> section if
+      you intend to run the tests, and recompile the kernel if necessary:
 @z
 
 @x

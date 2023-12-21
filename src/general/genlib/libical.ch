@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libical-buildsize     "24 MB (with tests)">
-  <!ENTITY libical-time          "0.1 SBU (Using parallelism=4; with tests)">
+  <!ENTITY libical-buildsize     "38 MB (with tests and API documentation)">
+  <!ENTITY libical-time          "0.4 SBU (with tests and documentation)">
 @y
-  <!ENTITY libical-buildsize     "24 MB (テスト込み)">
-  <!ENTITY libical-time          "0.1 SBU (parallelism=4 利用時; テスト込み)">
+  <!ENTITY libical-buildsize     "38 MB (テストと API ドキュメント込み)">
+  <!ENTITY libical-time          "0.4 SBU (テストとドキュメント込み)">
 @z
 
 @x
@@ -107,27 +107,23 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="doxygen"/> (for the API documentation),
+      <xref linkend="graphviz"/> (for the API documentation),
       <xref linkend="gtk-doc"/> (for the API documentation),
-      <xref linkend="icu"/>, and
-      <xref linkend="pygobject3"/> (for some tests)
+      <xref linkend="icu"/>, 
+      <xref linkend="pygobject3"/> (for some tests), and
+      &berkeley-db;
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="db"/>,
       <xref linkend="doxygen"/> (API ドキュメント生成のため),
+      <xref linkend="graphviz"/> (API ドキュメント生成のため),
       <xref linkend="gtk-doc"/> (API ドキュメント生成のため),
-      <xref linkend="icu"/>,
-      <xref linkend="pygobject3"/> (特定のテストのため)
+      <xref linkend="icu"/>, 
+      <xref linkend="pygobject3"/> (特定のテストのため),
+      &berkeley-db;
     </para>
-@z
-
-@x
-    <para condition="html" role="usernotes">User Notes:
-@y
-    <para condition="html" role="usernotes">&UserNotes;:
 @z
 
 @x
@@ -202,6 +198,7 @@
           /usr/include/libical-glib, 
           /usr/lib/cmake/LibIcal, 
           /usr/libexec/libical, 
+          /usr/share/gtk-doc/html/libical-glib (optional),
           and /usr/share/doc/libical-&libical-version;/html
         </seg>
 @y
@@ -221,6 +218,7 @@
           /usr/include/libical-glib, 
           /usr/lib/cmake/LibIcal, 
           /usr/libexec/libical, 
+          /usr/share/gtk-doc/html/libical-glib (任意),
           /usr/share/doc/libical-&libical-version;/html
         </seg>
 @z
