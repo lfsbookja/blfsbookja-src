@@ -23,12 +23,12 @@
 
 @x
       <application>v4l-utils</application> provides a series of utilities for
-      media devices, allowing to handle the proprietary formats available at
-      most webcams (libv4l), and providing tools to test V4L devices.
+      media devices, allowing the ability to handle the proprietary formats 
+      available from most webcams (libv4l), and providing tools to test V4L devices.
 @y
       <application>v4l-utils</application> provides a series of utilities for
-      media devices, allowing to handle the proprietary formats available at
-      most webcams (libv4l), and providing tools to test V4L devices.
+      media devices, allowing the ability to handle the proprietary formats 
+      available from most webcams (libv4l), and providing tools to test V4L devices.
 @z
 
 @x

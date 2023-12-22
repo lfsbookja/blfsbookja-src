@@ -148,12 +148,6 @@
 @z
 
 @x
-      Editor Notes: <ulink url="&blfs-wiki;/gcc"/>
-@y
-      &EditorNotes;: <ulink url="&blfs-wiki;/gcc"/>
-@z
-
-@x
     <title>Installation of GCC</title>
 @y
     <title>&InstallationOf1;GCC&InstallationOf2;</title>

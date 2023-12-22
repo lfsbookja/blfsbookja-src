@@ -4892,7 +4892,7 @@ printf "%s\n" "found" >&6; }
   fi
 
 
-TARGETVER=r12.0-1032
+TARGETVER=r12.0-1038+
 (cd ${bookdir} && sh git-version.sh $revspec)
 cp -p ${bookdir}/version.ent .
 GITVER=`grep 'ENTITY version ' version.ent | sed -e 's/^<!ENTITY version *\"\(.*\)\">/\1/'`
