@@ -29,12 +29,6 @@
 @z
 
 @x
-  <para condition="html" role="usernotes">Editor Notes:
-@y
-  <para condition="html" role="usernotes">&EditorNotes;:
-@z
-
-@x
   <bridgehead renderas="sect3">Xorg Download and Installation
   Instructions</bridgehead>
 @y
@@ -89,12 +83,7 @@
       considerably by installing only the packages that you will need and use,
       however, the BLFS book cannot account for all dependencies and build
       options for the individual <application>Xorg</application> packages.
-      The instructions assume that all packages have been built.  A
-      <ulink url="&blfs-wiki;/Xorg7">wiki</ulink>
-      page containing dependency information is under development.  You are
-      encouraged to add to these pages if you discover additional information
-      that may be helpful to other users who selectively install individual
-      packages.
+      The instructions assume that all packages have been built.
 @y
       必要なパッケージのみをダウンロードしようとする場合であっても、wget ファイルはダウンロードしてください。
       このファイルではパッケージの依存関係を考慮してパッケージが並べられています。
@@ -104,9 +93,6 @@
       <application>Xorg</application> のインストールによって消費されるディスク容量は、本当に必要とするパッケージのみをインストールすることで、大幅に削減できるかもしれません。
       しかし BLFS ブックでは、個々の <application>Xorg</application> パッケージにおける、すべての依存パッケージやビルドオプションについては、説明が網羅されていません。
       説明手順はあくまで、すべてのパッケージをビルドすることを前提としています。
-      <ulink url="&blfs-wiki;/Xorg7">wiki</ulink> ページにて依存関係を説明していますが、これも構築中のものです。
-      個別のパッケージに対するインストール手順を見出した方は、他ユーザーにとっての有用な情報提供となるよう、是非 <ulink
-      url="&blfs-wiki;/Xorg7">wiki</ulink> ページに説明を加えてください。
 @z
 
 @x

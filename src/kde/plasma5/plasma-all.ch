@@ -218,12 +218,6 @@
 @z
 
 @x
-  <para condition="html" role="usernotes">Editor Notes:
-@y
-  <para condition="html" role="usernotes">&EditorNotes;:
-@z
-
-@x
     <title>Downloading KDE Plasma5</title>
 @y
     <title>Downloading KDE Plasma5</title>

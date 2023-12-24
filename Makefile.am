@@ -1,12 +1,14 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-## $Author: matsuand $
-## $Rev: 725 $
-## $Date:: 2013-04-19 09:45:44 +0900#$
-##
 SUBDIRS = ctie src
-EXTRA_DIST = version.ac bin/buildch.perl
+EXTRA_DIST = \
+	bin/buildch.perl \
+	bin/makecp.sh    \
+	bin/makesub.sh
 
-jchangelog:
-	@$(MAKE) -C src jchangelog
+nochunks:
+	@$(MAKE) -C src nochunks
+
+txt:
+	@$(MAKE) -C src txt

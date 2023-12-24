@@ -224,12 +224,6 @@
 @z
 
 @x
-      Editor Notes: <ulink url="&blfs-wiki;/seamonkey"/>
-@y
-      &EditorNotes;: <ulink url="&blfs-wiki;/seamonkey"/>
-@z
-
-@x
     <title>Installation of Seamonkey</title>
 @y
     <title>&InstallationOf1;Seamonkey&InstallationOf2;</title>

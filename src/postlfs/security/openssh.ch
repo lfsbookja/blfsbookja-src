@@ -135,12 +135,6 @@
 @z
 
 @x
-        Editor Notes: <ulink url="&blfs-wiki;/OpenSSH"/>
-@y
-        &EditorNotes;: <ulink url="&blfs-wiki;/OpenSSH"/>
-@z
-
-@x
     <title>Installation of OpenSSH</title>
 @y
     <title>&InstallationOf1;OpenSSH&InstallationOf2;</title>

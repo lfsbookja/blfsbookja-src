@@ -469,16 +469,18 @@
 
 @x
         The BLFS editors recommend to use LMDB instead of Berkeley DB for
-        Postfix lookup tables.  Add a line into
+        Postfix tables.  Add three lines into
         <filename>/etc/postfix/main.cf</filename> to make
-        <command>postmap</command> to encode the lookup tables in the LMDB
-        format by default:
+        <command>postmap</command> encode the lookup tables in the LMDB
+        format by default and to change the default hash setting of the
+        alias tables:
 @y
         The BLFS editors recommend to use LMDB instead of Berkeley DB for
-        Postfix lookup tables.  Add a line into
+        Postfix tables.  Add three lines into
         <filename>/etc/postfix/main.cf</filename> to make
-        <command>postmap</command> to encode the lookup tables in the LMDB
-        format by default:
+        <command>postmap</command> encode the lookup tables in the LMDB
+        format by default and to change the default hash setting of the
+        alias tables:
 @z
 
 @x

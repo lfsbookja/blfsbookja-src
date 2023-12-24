@@ -105,12 +105,6 @@
 @z
 
 @x
-      Editor Notes: <ulink url="&blfs-wiki;/apache"/>
-@y
-      &EditorNotes;: <ulink url="&blfs-wiki;/apache"/>
-@z
-
-@x
     <title>Installation of Apache HTTPD</title>
 @y
     <title>&InstallationOf1;Apache HTTPD&InstallationOf2;</title>

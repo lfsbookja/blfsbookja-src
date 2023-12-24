@@ -343,22 +343,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">
-       Editor Notes: <ulink url="&blfs-wiki;/qt5"/>
-    </para>
-@y
-    <para condition="html" role="usernotes">
-       Editor Notes: <ulink url="&blfs-wiki;/qt5"/>
-    </para>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
   <sect2 role="qt5-prefix">
     <title>Setting the installation prefix</title>
 @y

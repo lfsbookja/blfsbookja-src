@@ -27,11 +27,6 @@ PDF_OUTPUT = ../blfsbookja-git.pdf
 RENDERTMP = tmp
 CHUNK_QUIET = 1
 
-#ALLXML = $(filter-out $(RENDERTMP)/%, \
-#	$(wildcard ./*.xml ./*/*.xml ./*/*/*.xml ./*/*/*/*.xml ./*/*/*/*/*.xml))
-#ALLXSL = $(filter-out $(RENDERTMP)/%, \
-#	$(wildcard ./*.xsl ./*/*.xsl ./*/*/*.xsl ./*/*/*/*.xsl ./*/*/*/*/*.xsl))
-
 ALLXML = $(shell find . -type d -name $(RENDERTMP) -prune -o -type f -name '*.xml' -print)
 ALLXSL = $(shell find . -type d -name $(RENDERTMP) -prune -o -type f -name '*.xsl' -print)
 

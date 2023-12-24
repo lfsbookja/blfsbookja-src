@@ -133,86 +133,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="btrfs-progs"/>, <!-- homed may support it, see the C.E.-->
-      <xref linkend="curl"/>,
-      <xref linkend="cryptsetup"/>,
-      <xref linkend="git"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="iptables"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libidn2"/>,
-      <xref linkend="libpwquality"/>,
-      <xref linkend="libseccomp"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="make-ca"/>,
-      <xref linkend="p11-kit"/>,
-      <xref linkend="pcre2"/>,
-      <xref linkend="qemu"/>,
-      <xref linkend="qrencode"/>,
-      <xref linkend="rsync"/>,
-      <xref linkend="sphinx"/>,
-      <xref linkend="valgrind"/>,
-      <xref linkend="zsh"/> (for the zsh completions),
-      <ulink url="https://www.apparmor.net/">AppArmor</ulink>,
-      <ulink url="https://github.com/linux-audit/audit-userspace">audit-userspace</ulink>,
-      <ulink url="https://github.com/scop/bash-completion">bash-completion</ulink>,
-      <ulink url="https://jekyllrb.com/">jekyll</ulink>,
-      <ulink url="https://www.kernel.org/pub/linux/utils/kernel/kexec/">kexec-tools</ulink>,
-      <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
-      <ulink url="https://sourceware.org/elfutils/">libdw</ulink>,
-      <ulink url="https://developers.yubico.com/libfido2/">libfido2</ulink>,
-      <ulink url="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</ulink>,
-      <ulink url="https://lz4.github.io/lz4/">lz4</ulink>,
-      <ulink url="https://pypi.org/project/pyelftools/">pyelftools</ulink>,
-      <ulink url="https://sourceforge.net/projects/linuxquota/">quota-tools</ulink>,
-      <ulink url="https://rpm.org/">rpm</ulink>,
-      <ulink url="https://github.com/SELinuxProject/selinux">SELinux</ulink>,
-      <ulink url="https://sourceware.org/systemtap/">systemtap</ulink>,
-      <ulink url="https://tpm2-tss.readthedocs.io/en/latest/">tpm2-tss</ulink>
-      and <ulink url="https://xenproject.org">Xen</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="btrfs-progs"/>, <!-- homed may support it, see the C.E.-->
-      <xref linkend="curl"/>,
-      <xref linkend="cryptsetup"/>,
-      <xref linkend="git"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="iptables"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libidn2"/>,
-      <xref linkend="libpwquality"/>,
-      <xref linkend="libseccomp"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="make-ca"/>,
-      <xref linkend="p11-kit"/>,
-      <xref linkend="pcre2"/>,
-      <xref linkend="qemu"/>,
-      <xref linkend="qrencode"/>,
-      <xref linkend="rsync"/>,
-      <xref linkend="sphinx"/>,
-      <xref linkend="valgrind"/>,
-      <xref linkend="zsh"/> (for the zsh completions),
-      <ulink url="https://www.apparmor.net/">AppArmor</ulink>,
-      <ulink url="https://github.com/linux-audit/audit-userspace">audit-userspace</ulink>,
-      <ulink url="https://github.com/scop/bash-completion">bash-completion</ulink>,
-      <ulink url="https://jekyllrb.com/">jekyll</ulink>,
-      <ulink url="https://www.kernel.org/pub/linux/utils/kernel/kexec/">kexec-tools</ulink>,
-      <ulink url="https://github.com/libbpf/libbpf">libbpf</ulink>,
-      <ulink url="https://sourceware.org/elfutils/">libdw</ulink>,
-      <ulink url="https://developers.yubico.com/libfido2/">libfido2</ulink>,
-      <ulink url="https://www.gnu.org/software/libmicrohttpd/">libmicrohttpd</ulink>,
-      <ulink url="https://lz4.github.io/lz4/">lz4</ulink>,
-      <ulink url="https://pypi.org/project/pyelftools/">pyelftools</ulink>,
-      <ulink url="https://sourceforge.net/projects/linuxquota/">quota-tools</ulink>,
-      <ulink url="https://rpm.org/">rpm</ulink>,
-      <ulink url="https://github.com/SELinuxProject/selinux">SELinux</ulink>,
-      <ulink url="https://sourceware.org/systemtap/">systemtap</ulink>,
-      <ulink url="https://tpm2-tss.readthedocs.io/en/latest/">tpm2-tss</ulink>
-      and <ulink url="https://xenproject.org">Xen</ulink>
-    </para>
 @z
 
 @x
@@ -322,17 +244,47 @@
 @z
 
 @x
-      <parameter>-Dhomed=false</parameter>: Removes a daemon that does not offer
+      <parameter>-Dhomed=disabled</parameter>: Removes a daemon that does not offer
       any use under a traditional BLFS configuration, especially using accounts
       created with useradd. To enable systemd-homed, first ensure that you have
       <xref linkend="cryptsetup"/> and <xref linkend="libpwquality"/> installed,
-      and then change "false" to "true" in the above meson command.
+      and then change <quote>disabled</quote> to <quote>enabled</quote>
+      in the above <command>meson setup</command> command.
 @y
-      <parameter>-Dhomed=false</parameter>: Removes a daemon that does not offer
+      <parameter>-Dhomed=disabled</parameter>: Removes a daemon that does not offer
       any use under a traditional BLFS configuration, especially using accounts
       created with useradd. To enable systemd-homed, first ensure that you have
       <xref linkend="cryptsetup"/> and <xref linkend="libpwquality"/> installed,
-      and then change "false" to "true" in the above meson command.
+      and then change <quote>disabled</quote> to <quote>enabled</quote>
+      in the above <command>meson setup</command> command.
+@z
+
+@x
+      <parameter>-Dukify=disabled</parameter>: Removes a script for
+      combining a kernel, an initramfs, and a kernel command line etc.
+      into an UEFI application which can be loaded by the UEFI firmware
+      to start the embedded Linux kernel.  It's not needed for booting a
+      BLFS system with UEFI if following <xref linkend='grub-setup'/>.
+      And, it requires the <application>pefile</application> Python module
+      at runtime, so if it's enabled but <application>pefile</application>
+      is not installed, in the test suite one test for it will fail.  To
+      enable <command>systemd-ukify</command>, install the
+      <application>pefile</application> module and then change
+      <quote>disabled</quote> to <quote>enabled</quote> in the above
+      <command>meson setup</command> command.
+@y
+      <parameter>-Dukify=disabled</parameter>: Removes a script for
+      combining a kernel, an initramfs, and a kernel command line etc.
+      into an UEFI application which can be loaded by the UEFI firmware
+      to start the embedded Linux kernel.  It's not needed for booting a
+      BLFS system with UEFI if following <xref linkend='grub-setup'/>.
+      And, it requires the <application>pefile</application> Python module
+      at runtime, so if it's enabled but <application>pefile</application>
+      is not installed, in the test suite one test for it will fail.  To
+      enable <command>systemd-ukify</command>, install the
+      <application>pefile</application> module and then change
+      <quote>disabled</quote> to <quote>enabled</quote> in the above
+      <command>meson setup</command> command.
 @z
 
 @x

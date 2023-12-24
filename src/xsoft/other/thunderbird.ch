@@ -283,18 +283,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">
-      Editor Notes: <ulink url="&blfs-wiki;/Thunderbird"/>
-    </para>
-  </sect2>
-@y
-    <para condition="html" role="usernotes">
-      Editor Notes: <ulink url="&blfs-wiki;/Thunderbird"/>
-    </para>
-  </sect2>
-@z
-
-@x
   <sect2 role="installation">
     <title>Installation of Thunderbird</title>
 @y

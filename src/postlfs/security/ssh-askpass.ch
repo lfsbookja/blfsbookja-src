@@ -104,12 +104,6 @@
 @z
 
 @x
-        Editor Notes: <ulink url='&blfs-wiki;/ssh-askpass'/>
-@y
-        &EditorNotes;: <ulink url='&blfs-wiki;/ssh-askpass'/>
-@z
-
-@x
     <title>Installation of ssh-askpass</title>
 @y
     <title>&InstallationOf1;ssh-askpass&InstallationOf2;</title>

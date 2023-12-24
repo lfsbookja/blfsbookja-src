@@ -1,3 +1,9 @@
+dnl
+dnl This is part of BLFSbookja package.
+dnl
+
+VER=git
+
 revspec=sysv
 AC_ARG_WITH(rev,
 [  --with-rev=REV          Specify BOOK revision [[REV=sysv]]],
@@ -14,7 +20,6 @@ if test "x${with_rev}" != "x"; then
 fi
 AC_SUBST(revspec)
 
-VER=git
 if test "x${with_rev}" = "xsystemd"; then
   BASEDIR=../${VER}-sysdja
   PDF_OUTPUT=../blfsja-sysd-${VER}.pdf

@@ -1,3 +1,7 @@
+dnl
+dnl This is part of BLFSbookja package.
+dnl
+
 AC_DEFUN([AC_PROG_XSLTPROC],[
 AC_REQUIRE([AC_EXEEXT])dnl
 AC_PATH_PROG(XSLTPROC, xsltproc$EXEEXT, no)

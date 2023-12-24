@@ -353,28 +353,6 @@
 @z
 
 @x
-    <!-- Many of the dependencies in the qmake/configure output do not apply
-         to Linux-based platforms. I've selected the ones that do and put
-         them in as optional dependencies. Not checked yet for Qt6 -->
-    <!--
-    <para condition="html" role="usernotes">
-       Editor Notes: <ulink url="&blfs-wiki;/qt6"/>
-    </para>
-    -->
-  </sect2>
-@y
-    <!-- Many of the dependencies in the qmake/configure output do not apply
-         to Linux-based platforms. I've selected the ones that do and put
-         them in as optional dependencies. Not checked yet for Qt6 -->
-    <!--
-    <para condition="html" role="usernotes">
-       Editor Notes: <ulink url="&blfs-wiki;/qt6"/>
-    </para>
-    -->
-  </sect2>
-@z
-
-@x
   <sect2 role="qt6-prefix">
     <title>Setting the installation prefix</title>
 @y

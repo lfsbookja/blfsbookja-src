@@ -184,12 +184,6 @@
 @z
 
 @x
-      Editor Notes: <ulink url="&blfs-wiki;/webkitgtk"/>
-@y
-      &EditorNotes;: <ulink url="&blfs-wiki;/webkitgtk"/>
-@z
-
-@x
     <title>Installation of WebKitGTK</title>
 @y
     <title>&InstallationOf1;WebKitGTK&InstallationOf2;</title>

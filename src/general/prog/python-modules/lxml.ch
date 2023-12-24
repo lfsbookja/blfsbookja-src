@@ -20,9 +20,8 @@
         <application>Python</application> bindings for
         <xref linkend="libxslt"/> and <xref linkend="libxml2"/>.
 @y
-        <application>lxml</application> provides
-        <application>Python</application> bindings for
-        <xref linkend="libxslt"/> and <xref linkend="libxml2"/>.
+        <application>lxml</application> は <xref linkend="libxslt"/> と <xref
+        linkend="libxml2"/> に対する <application>Python</application> バインディングを提供します。
 @z
 
 @x

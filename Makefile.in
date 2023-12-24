@@ -315,7 +315,11 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 SUBDIRS = ctie src
-EXTRA_DIST = version.ac bin/buildch.perl
+EXTRA_DIST = \
+	bin/buildch.perl \
+	bin/makecp.sh    \
+	bin/makesub.sh
+
 all: all-recursive
 
 .SUFFIXES:
@@ -779,8 +783,11 @@ uninstall-am:
 .PRECIOUS: Makefile
 
 
-jchangelog:
-	@$(MAKE) -C src jchangelog
+nochunks:
+	@$(MAKE) -C src nochunks
+
+txt:
+	@$(MAKE) -C src txt
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

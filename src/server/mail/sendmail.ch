@@ -101,12 +101,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">Editor Notes:
-@y
-    <para condition="html" role="usernotes">&EditorNotes;:
-@z
-
-@x
     <title>Installation of sendmail</title>
 @y
     <title>&InstallationOf1;sendmail&InstallationOf2;</title>

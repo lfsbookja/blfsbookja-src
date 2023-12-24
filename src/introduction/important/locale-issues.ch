@@ -74,15 +74,10 @@
 
 @x
   <para>If there is a known workaround for a specific package, it will
-  appear on that package's page. For the most recent information
-  about locale related issues for individual packages, check the
-  <ulink url="&blfs-wiki;/BlfsNotes">Editor Notes</ulink> in the BLFS
-  Wiki.</para>
+    appear on that package's page.</para>
 @y
   <para>
   特定のパッケージに対しての回避策があるとすれば、そのパッケージのホームページなどに示されているはずです。
-  個々のパッケージにおけるロケール問題の最新情報は、BLFS Wiki として示している <ulink
-  url="&blfs-wiki;/BlfsNotes">&EditorNotes;</ulink> を確認してください。
   </para>
 @z
 

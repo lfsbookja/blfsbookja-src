@@ -269,22 +269,6 @@
 @z
 
 @x
-    <!--
-    <para condition="html" role="usernotes">
-       Editor Notes: <ulink url="&blfs-wiki;/qt5"/>
-    </para>
-    -->
-  </sect2>
-@y
-    <!--
-    <para condition="html" role="usernotes">
-       Editor Notes: <ulink url="&blfs-wiki;/qt5"/>
-    </para>
-    -->
-  </sect2>
-@z
-
-@x
   <sect2 role="installation">
     <title>Installation of qt5 components</title>
 @y

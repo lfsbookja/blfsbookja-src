@@ -310,12 +310,6 @@
 @z
 
 @x
-  <para condition="html" role="usernotes">Editor Notes:
-@y
-  <para condition="html" role="usernotes">&EditorNotes;:
-@z
-
-@x
     <title>Downloading KDE Frameworks</title>
 @y
     <title>KDE Frameworks のダウンロード</title>

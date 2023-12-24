@@ -193,24 +193,8 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">Editor Notes:
-    <ulink url="&blfs-wiki;/opensp"/></para>
-@y
-    <para condition="html" role="usernotes">Editor Notes:
-    <ulink url="&blfs-wiki;/opensp"/></para>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of OpenSP</title>
 @y
-  <sect2 role="installation">
     <title>Installation of OpenSP</title>
 @z
 

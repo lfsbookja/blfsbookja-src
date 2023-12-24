@@ -106,12 +106,6 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">Editor Notes:
-@y
-    <para condition="html" role="usernotes">Editor Notes:
-@z
-
-@x
     <title>Installation of ALSA Utilities</title>
 @y
     <title>Installation of ALSA Utilities</title>
