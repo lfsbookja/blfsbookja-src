@@ -11,10 +11,10 @@
 
 @x
   <!ENTITY dbusmock-buildsize     "1.6 MB (with tests)">
-  <!ENTITY dbusmock-time          "less than 0.1 SBU (add 0.2 SBU for tests)">
+  <!ENTITY dbusmock-time          "less than 0.1 SBU (add 0.3 SBU for tests)">
 @y
   <!ENTITY dbusmock-buildsize     "1.6 MB (テスト込み)">
-  <!ENTITY dbusmock-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実施時はさらに 0.2 SBU)">
+  <!ENTITY dbusmock-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実施時はさらに 0.3 SBU)">
 @z
 
 @x
@@ -92,9 +92,9 @@
 @z
 
 @x
-        To test the results, issue: <command>pytest</command>
+        To test the results, issue: <command>LC_ALL=C pytest</command>
 @y
-        ビルド結果をテストする場合は <command>pytest</command> を実行します。
+        ビルド結果をテストする場合は <command>LC_ALL=C pytest</command> を実行します。
 @z
 
 @x
