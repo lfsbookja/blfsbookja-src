@@ -169,7 +169,6 @@
         <seg>
           libglslang.so,
           libglslang-default-resource-limits.so,
-          libHLSL.so,
           libSPIRV.so, and
           libSPVRemapper.so
         </seg>
@@ -186,7 +185,6 @@
         <seg>
           libglslang.so,
           libglslang-default-resource-limits.so,
-          libHLSL.so,
           libSPIRV.so,
           libSPVRemapper.so
         </seg>

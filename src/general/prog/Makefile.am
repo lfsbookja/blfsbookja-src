@@ -34,6 +34,7 @@ CHANGE_FILES = \
 	python-modules.ch      \
 	python2.ch             \
 	python3.ch             \
+	python311.ch           \
 	ruby.ch                \
 	rust.ch                \
 	scons.ch               \
