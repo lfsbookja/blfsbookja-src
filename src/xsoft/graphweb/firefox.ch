@@ -140,7 +140,7 @@
         now deprecated by mozilla), in either case please read the
         Configuration Information,
       <xref linkend="python311"/> (built after installing <xref linkend="sqlite"/>),
-      <xref linkend="six"/>,
+      <!--<xref linkend="six"/>,-->
       <xref linkend="startup-notification"/>, and
       <xref linkend="unzip"/>
     </para>
@@ -159,7 +159,7 @@
         now deprecated by mozilla), in either case please read the
         Configuration Information,
       <xref linkend="python311"/> (built after installing <xref linkend="sqlite"/>),
-      <xref linkend="six"/>,
+      <!--<xref linkend="six"/>,-->
       <xref linkend="startup-notification"/>, and
       <xref linkend="unzip"/>
     </para>

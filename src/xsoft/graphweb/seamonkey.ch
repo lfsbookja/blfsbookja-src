@@ -136,7 +136,7 @@
       <xref linkend="cbindgen"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="nodejs"/>,
-      <xref linkend="six"/>,
+      <xref linkend="python311"/>,
       <xref linkend="unzip"/>,
       <xref linkend="yasm"/>, and
       <xref linkend="zip"/>
@@ -148,7 +148,7 @@
       <xref linkend="cbindgen"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="nodejs"/>,
-      <xref linkend="six"/>,
+      <xref linkend="python311"/>,
       <xref linkend="unzip"/>,
       <xref linkend="yasm"/>,
       <xref linkend="zip"/>
@@ -250,29 +250,17 @@
 @z
 
 @x
-      First, fix several problems that occur with Python-3.12 and ICU-74.
-      If you are not using ICU-74 and Python-3.12, do not apply this patch.
+      First, if you are building with system ICU, adapt the line break mapping
+      for ICU-74 and later:
 @y
-      First, fix several problems that occur with Python-3.12 and ICU-74.
-      If you are not using ICU-74 and Python-3.12, do not apply this patch.
+      First, if you are building with system ICU, adapt the line break mapping
+      for ICU-74 and later:
 @z
 
 @x
-      Next, if you are using Python-3.12, reinstall the setuptools package for
-      Seamonkey, and update it's vendored copy of pip:
+      Next, fix a problem with the bundled 'distro' python module:
 @y
-      Next, if you are using Python-3.12, reinstall the setuptools package for
-      Seamonkey, and update it's vendored copy of pip:
-@z
-
-@x
-      Next, if you are on Python-3.11 still, fix a problem with the bundled
-      'distro' python module. This has been included in the patch for
-      Python-3.12 users:
-@y
-      Next, if you are on Python-3.11 still, fix a problem with the bundled
-      'distro' python module. This has been included in the patch for
-      Python-3.12 users:
+      Next, fix a problem with the bundled 'distro' python module:
 @z
 
 @x
