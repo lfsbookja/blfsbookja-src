@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gst10-plugins-good-buildsize     "109 MB (with tests)">
-  <!ENTITY gst10-plugins-good-time          "0.8 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-good-buildsize     "110 MB (with tests)">
+  <!ENTITY gst10-plugins-good-time          "0.9 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-good-buildsize     "109 MB（テスト込み）">
-  <!ENTITY gst10-plugins-good-time          "0.8 SBU（parallelism=4 利用時、テスト込み）">
+  <!ENTITY gst10-plugins-good-buildsize     "110 MB（テスト込み）">
+  <!ENTITY gst10-plugins-good-time          "0.9 SBU（parallelism=4 利用時、テスト込み）">
 @z
 
 @x
@@ -135,6 +135,7 @@
       <xref linkend="gtk3"/> (for examples),
       <xref linkend="libdv"/>,
       &qt5-deps;,
+      <xref linkend="qt6"/>,
       <xref linkend="speex"/>,
       <xref linkend="taglib"/>,
       <xref linkend="valgrind"/>,
@@ -159,6 +160,7 @@
       <xref linkend="gtk3"/> (for examples),
       <xref linkend="libdv"/>,
       &qt5-deps;,
+      <xref linkend="qt6"/>,
       <xref linkend="speex"/>,
       <xref linkend="taglib"/>,
       <xref linkend="valgrind"/>,
