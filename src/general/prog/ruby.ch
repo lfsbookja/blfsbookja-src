@@ -118,33 +118,23 @@
 @z
 
 @x
-      The tests require that the new version of Ruby is already installed to
-      run correctly. If you want to run the tests, execute them after installing
-      the package. <!-- Ticket #17887 -->
+      To test the results, issue: <command>make -k check</command>. There are over
+      27,000 tests. Some tests related to ipv6 may indicate errors.  If the
+      tests are run in a directory that has a world writable component (e.g.
+      /tmp) then several additional tests may fail. Three tests are known
+      to fail.
 @y
-      The tests require that the new version of Ruby is already installed to
-      run correctly. If you want to run the tests, execute them after installing
-      the package. <!-- Ticket #17887 -->
+      To test the results, issue: <command>make -k check</command>. There are over
+      27,000 tests. Some tests related to ipv6 may indicate errors.  If the
+      tests are run in a directory that has a world writable component (e.g.
+      /tmp) then several additional tests may fail. Three tests are known
+      to fail.
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
-      To test the results, issue: <command>make -k check</command>. There are over
-      25,000 tests. Some tests related to ipv6 may indicate errors.  If the
-      tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. A few tests may fail due
-      to system configuration expectations.
-@y
-      To test the results, issue: <command>make -k check</command>. There are over
-      25,000 tests. Some tests related to ipv6 may indicate errors.  If the
-      tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. A few tests may fail due
-      to system configuration expectations.
 @z
 
 @x

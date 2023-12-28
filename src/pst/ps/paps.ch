@@ -85,11 +85,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="fmt"/> and
       <xref linkend="pango"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="fmt"/>,
       <xref linkend="pango"/>
     </para>
 @z

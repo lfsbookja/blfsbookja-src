@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY spidermonkey-buildsize     "3.5 GB (40 MB installed after removing 36MB static lib; additional 31 MB for the main tests and 40 MB for the jit tests with parallelism=4)">
-  <!ENTITY spidermonkey-time          "2.2 SBU (with parallelism=4; additional 1.6 SBU for the main test and 2.3 SBU for the jit test)">
+  <!ENTITY spidermonkey-buildsize     "3.6 GB (40 MB installed after removing 36MB static lib; add 34 MB for the main tests and 37 MB for the jit tests)">
+  <!ENTITY spidermonkey-time          "1.9 SBU (with parallelism=4; add 1.1 SBU for the main tests and 3.7 SBU for the jit tests)">
 @y
-  <!ENTITY spidermonkey-buildsize     "3.5 GB (40 MB installed after removing 36MB static lib; additional 31 MB for the main tests and 40 MB for the jit tests with parallelism=4)">
-  <!ENTITY spidermonkey-time          "2.2 SBU (with parallelism=4; additional 1.6 SBU for the main test and 2.3 SBU for the jit test)">
+  <!ENTITY spidermonkey-buildsize     "3.6 GB (40 MB installed after removing 36MB static lib; add 34 MB for the main tests and 37 MB for the jit tests)">
+  <!ENTITY spidermonkey-time          "1.9 SBU (with parallelism=4; add 1.1 SBU for the main tests and 3.7 SBU for the jit tests)">
 @z
 
 @x
