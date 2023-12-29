@@ -76,7 +76,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http//dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="https://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="https://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
       <xref linkend="libsndfile"/> and
       <xref linkend="nasm"/>
@@ -84,9 +84,9 @@
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="http//dmalloc.com/">Dmalloc</ulink>,
+      <ulink url="https://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="https://linux.softpedia.com/get/Programming/Debuggers/Electric-Fence-3305.shtml/">Electric Fence</ulink>,
-      <xref linkend="libsndfile"/> and
+      <xref linkend="libsndfile"/>,
       <xref linkend="nasm"/>
     </para>
 @z

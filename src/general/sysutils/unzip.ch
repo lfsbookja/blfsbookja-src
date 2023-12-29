@@ -192,12 +192,12 @@
 @x
       1) For unpacking ZIP archives with filenames containing non-ASCII
       characters, use <ulink url="https://www.winzip.com/">WinZip</ulink> while
-      running the <ulink url="https://www.winehq.com/">Wine</ulink> Windows
+      running the <ulink url="https://www.winehq.org/">Wine</ulink> Windows
       emulator.
 @y
       1) For unpacking ZIP archives with filenames containing non-ASCII
       characters, use <ulink url="https://www.winzip.com/">WinZip</ulink> while
-      running the <ulink url="https://www.winehq.com/">Wine</ulink> Windows
+      running the <ulink url="https://www.winehq.org/">Wine</ulink> Windows
       emulator.
 @z
 
