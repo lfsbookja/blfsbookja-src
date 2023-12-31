@@ -100,16 +100,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="gtk3"/>, and
-      <xref linkend="rsync"/>
+      <xref linkend="x-window-system"/> and
+      <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="x-window-system"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="rsync"/>
+      <xref linkend="gtk3"/>
     </para>
 @z
 
@@ -117,15 +115,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gpm"/>,
-      <xref linkend="lua"/>, and
-      <xref linkend="ruby"/>
+      <xref linkend="lua"/>,
+      <xref linkend="ruby"/>, and
+      <xref linkend="rsync"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gpm"/>,
       <xref linkend="lua"/>,
-      <xref linkend="ruby"/>
+      <xref linkend="ruby"/>,
+      <xref linkend="rsync"/>
     </para>
 @z
 
@@ -223,19 +223,20 @@
 @z
 
 @x
-      If you wish to update the runtime files, issue the
-      following command (requires <xref linkend="rsync"/>):
+      <emphasis role='bold'>If</emphasis> you wish to update the runtime
+      files, issue the following command (requires <xref linkend="rsync"/>)
+      to download it:
 @y
-      ランタイムファイルを更新したい場合は以下を実行します。
-      (実行には <xref linkend="rsync"/> が必要です。)
+      <emphasis role='bold'>もし</emphasis>ランタイムファイルを更新したい場合は以下を実行します。
+      (ダウンロードには <xref linkend="rsync"/> が必要です。)
 @z
 
 @x
-      To install the runtime files and regenerate the
+      And then install the updated runtime files and regenerate the
       <filename>tags</filename> file, as the
       <systemitem class="username">root</systemitem> user issue:
 @y
-      ランタイムファイルをインストールし <filename>tags</filename> ファイルを再生成するには、<systemitem
+      更新したランタイムファイルをインストールし <filename>tags</filename> ファイルを再生成するには、<systemitem
       class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 

@@ -1208,10 +1208,10 @@ sed -e "/distro-install-file-lists/d" -i Makefile.in &amp;&amp;
 
 @x
   # Set up a generic location independent of version number
-  ln -sfv libreoffice-&libreoffice-dlversion; /opt/libreoffice
+  ln -sfv $LO_PREFIX /opt/libreoffice
 @y
   # Set up a generic location independent of version number
-  ln -sfv libreoffice-&libreoffice-dlversion; /opt/libreoffice
+  ln -sfv $LO_PREFIX /opt/libreoffice
 @z
 
 @x

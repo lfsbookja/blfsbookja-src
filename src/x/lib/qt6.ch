@@ -3,81 +3,27 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
 @y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
+<?xml version="1.0" encoding="UTF-8"?>
 @z
 
 @x
-  <!ENTITY qt6-major "6.6">
-  <!ENTITY qt6-url   "https://download.qt.io/archive/qt/&qt6-major;/&qt6-version;/single">
-@y
-  <!ENTITY qt6-major "6.6">
-  <!ENTITY qt6-url   "https://download.qt.io/archive/qt/&qt6-major;/&qt6-version;/single">
-@z
-
-@x
-  <!ENTITY qt6-download-http "&qt6-url;/qt-everywhere-src-&qt6-version;.tar.xz">
-  <!ENTITY qt6-download-ftp  " ">
-  <!ENTITY qt6-md5sum        "91aad0b55cf01be5a08ca9bece490f39">
-  <!ENTITY qt6-size          "776 MB">
   <!ENTITY qt6-buildsize     "31 GB (356 MB installed)">
   <!ENTITY qt6-time          "14 SBU (using parallelism=8)">
-]>
 @y
-  <!ENTITY qt6-download-http "&qt6-url;/qt-everywhere-src-&qt6-version;.tar.xz">
-  <!ENTITY qt6-download-ftp  " ">
-  <!ENTITY qt6-md5sum        "91aad0b55cf01be5a08ca9bece490f39">
-  <!ENTITY qt6-size          "776 MB">
   <!ENTITY qt6-buildsize     "31 GB (356 MB installed)">
   <!ENTITY qt6-time          "14 SBU (using parallelism=8)">
-]>
 @z
 
 @x
-<sect1 id="qt6" xreflabel="Qt-&qt6-version;">
-  <?dbhtml filename="qt6.html" ?>
-@y
-<sect1 id="qt6" xreflabel="Qt-&qt6-version;">
-  <?dbhtml filename="qt6.html" ?>
-@z
-
-@x
-  <title>Qt-&qt6-version;</title>
-@y
-  <title>Qt-&qt6-version;</title>
-@z
-
-@x
-  <indexterm zone="qt6">
-    <primary sortas="a-Qt">Qt6</primary>
-  </indexterm>
-@y
-  <indexterm zone="qt6">
-    <primary sortas="a-Qt">Qt6</primary>
-  </indexterm>
-@z
-
-@x
-  <sect2 role="package">
     <title>Introduction to Qt6</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Qt6</title>
 @z
 
 @x
-    <para>
       <application>Qt6</application> is a cross-platform application framework
       that is widely used for developing application software with a graphical
       user interface (GUI) (in which cases <application>Qt6</application> is
@@ -85,9 +31,7 @@
       programs such as command-line tools and consoles for servers. <!--Two of the
       major users of <application>Qt</application> are <application>KDE
       Frameworks 5 (KF5)</application> and <application>LXQt</application>.-->
-    </para>
 @y
-    <para>
       <application>Qt6</application> is a cross-platform application framework
       that is widely used for developing application software with a graphical
       user interface (GUI) (in which cases <application>Qt6</application> is
@@ -95,130 +39,53 @@
       programs such as command-line tools and consoles for servers. <!--Two of the
       major users of <application>Qt</application> are <application>KDE
       Frameworks 5 (KF5)</application> and <application>LXQt</application>.-->
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@y
+    <bridgehead renderas="sect3">Package Information</bridgehead>
+@z
+
+@x
           Download (HTTP): <ulink url="&qt6-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&qt6-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&qt6-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&qt6-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &qt6-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &qt6-md5sum;
+@z
+
+@x
           Download size: &qt6-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &qt6-size;
+@z
+
+@x
           Estimated disk space required: &qt6-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &qt6-buildsize;
+@z
+
+@x
           Estimated build time: &qt6-time;
-        </para>
-      </listitem>
-    </itemizedlist>
-<!--
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Now that <application>Qt5</application> updates are restricted to
-          commercial customers, upstream patches for the various modules are
-          being curated at kde.
-          Patches for the modules required by packages in BLFS have been
-          aggregated for the non-modular Qt5 build we use.
-        </para>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt6-version;-kf5-1.patch"/>
-        </para>
-        <para>
-          Details of the kde curation can be found at
-          <ulink url="https://dot.kde.org/2021/04/06/announcing-kdes-qt-5-patch-collection"/>
-          and <ulink url="https://community.kde.org/Qt5PatchCollection"/>.
-        </para>
-      </listitem>
-    </itemizedlist>
--->
+@y
+          Estimated build time: &qt6-time;
+@z
+
+@x
     <bridgehead renderas="sect3">Qt6 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&qt6-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&qt6-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &qt6-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &qt6-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &qt6-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &qt6-time;
-        </para>
-      </listitem>
-    </itemizedlist>
-<!--
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Now that <application>Qt5</application> updates are restricted to
-          commercial customers, upstream patches for the various modules are
-          being curated at kde.
-          Patches for the modules required by packages in BLFS have been
-          aggregated for the non-modular Qt5 build we use.
-        </para>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt6-version;-kf5-1.patch"/>
-        </para>
-        <para>
-          Details of the kde curation can be found at
-          <ulink url="https://dot.kde.org/2021/04/06/announcing-kdes-qt-5-patch-collection"/>
-          and <ulink url="https://community.kde.org/Qt5PatchCollection"/>.
-        </para>
-      </listitem>
-    </itemizedlist>
--->
     <bridgehead renderas="sect3">Qt6 Dependencies</bridgehead>
 @z
 
@@ -236,127 +103,19 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="alsa-lib"/>,
-      <xref linkend="make-ca"/>,
-      <xref linkend="cups"/>,
-      <phrase revision='sysv'><xref linkend="dbus"/>,</phrase>
-      <xref linkend="double-conversion"/>,
-      <xref linkend="glib2"/>,
-      <xref linkend="gst10-plugins-base"/> (QtMultimedia backend),
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="jasper"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libmng"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="mtdev"/>,
-      <xref linkend="pcre2"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="wayland"/> (<application>Mesa</application>
-      must be built with <application>Wayland</application> EGL
-      backend),
-      <xref linkend="xcb-util-image"/>,
-      <xref linkend="xcb-util-keysyms"/>,
-      <xref linkend="xcb-util-renderutil"/>, and
-      <xref linkend="xcb-util-wm"/>
-    </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="alsa-lib"/>,
-      <xref linkend="make-ca"/>,
-      <xref linkend="cups"/>,
-      <phrase revision='sysv'><xref linkend="dbus"/>,</phrase>
-      <xref linkend="double-conversion"/>,
-      <xref linkend="glib2"/>,
-      <xref linkend="gst10-plugins-base"/> (QtMultimedia backend),
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="jasper"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libmng"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="mtdev"/>,
-      <xref linkend="pcre2"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="wayland"/> (<application>Mesa</application>
-      must be built with <application>Wayland</application> EGL
-      backend),
-      <xref linkend="xcb-util-image"/>,
-      <xref linkend="xcb-util-keysyms"/>,
-      <xref linkend="xcb-util-renderutil"/>, and
-      <xref linkend="xcb-util-wm"/>
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref role="runtime" linkend="bluez"/> (for sdpscanner, and at runtime for
-      QtConnectivity module),
-      <xref linkend="gtk3"/>,
-      <xref linkend="ibus"/>,
-      <xref linkend="libinput"/>,
-      <xref linkend="mariadb"/>
-        or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="pciutils"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="sdl2"/>,
-      <xref linkend="unixodbc"/>,
-      <ulink url="https://www.assimp.org/">assimp</ulink>,
-      <ulink url="https://github.com/festvox/flite">Flite</ulink>,
-      <ulink url="https://www.firebirdsql.org/">Firebird</ulink>,
-      <ulink url="https://www.freetds.org/">FreeTDS</ulink>,
-      <ulink url="https://libproxy.github.io/libproxy/">libproxy</ulink>,
-      <ulink url="https://openal.org/">OpenAL</ulink>,
-      <ulink url="https://freebsoft.org/speechd/">speech-dispatcher</ulink>, and
-      <ulink url="http:///www.tslib.org/">tslib</ulink>
-      <!--<ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>-->
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref role="runtime" linkend="bluez"/> (for sdpscanner, and at runtime for
-      QtConnectivity module),
-      <xref linkend="gtk3"/>,
-      <xref linkend="ibus"/>,
-      <xref linkend="libinput"/>,
-      <xref linkend="mariadb"/>
-        or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="pciutils"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="sdl2"/>,
-      <xref linkend="unixodbc"/>,
-      <ulink url="https://www.assimp.org/">assimp</ulink>,
-      <ulink url="https://github.com/festvox/flite">Flite</ulink>,
-      <ulink url="https://www.firebirdsql.org/">Firebird</ulink>,
-      <ulink url="https://www.freetds.org/">FreeTDS</ulink>,
-      <ulink url="https://libproxy.github.io/libproxy/">libproxy</ulink>,
-      <ulink url="https://openal.org/">OpenAL</ulink>,
-      <ulink url="https://freebsoft.org/speechd/">speech-dispatcher</ulink>, and
-      <ulink url="http:///www.tslib.org/">tslib</ulink>
-      <!--<ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>-->
-    </para>
 @z
 
 @x
-  <sect2 role="qt6-prefix">
     <title>Setting the installation prefix</title>
 @y
-  <sect2 role="qt6-prefix">
     <title>Setting the installation prefix</title>
 @z
 
@@ -367,61 +126,36 @@
 @z
 
 @x
-    <para>
       The BLFS editors recommend installing <application>Qt6</application> in a
       directory other than <filename class="directory">/usr</filename>, ie
       <filename class="directory">/opt/qt6</filename>.  This is needed
       to avoid conflicts with Qt5. To do this, set the
       following environment variable:
-    </para>
 @y
-    <para>
       The BLFS editors recommend installing <application>Qt6</application> in a
       directory other than <filename class="directory">/usr</filename>, ie
       <filename class="directory">/opt/qt6</filename>.  This is needed
       to avoid conflicts with Qt5. To do this, set the
       following environment variable:
-    </para>
 @z
 
 @x
-<screen><userinput>export QT6PREFIX=/opt/qt6</userinput></screen>
-@y
-<screen><userinput>export QT6PREFIX=/opt/qt6</userinput></screen>
-@z
-
-@x
-    <tip>
-      <para>
         Sometimes the installation paths are hardcoded into installed files.
         This is the reason why <filename class="directory">/opt/qt6</filename>
         is used as installation prefix instead of <filename
         class="directory">/opt/qt-&qt6-version;</filename>. To create a
         versioned <application>Qt6</application> directory,
         you may rename the directory and create a symlink:
-      </para>
 @y
-    <tip>
-      <para>
         Sometimes the installation paths are hardcoded into installed files.
         This is the reason why <filename class="directory">/opt/qt6</filename>
         is used as installation prefix instead of <filename
         class="directory">/opt/qt-&qt6-version;</filename>. To create a
         versioned <application>Qt6</application> directory,
         you may rename the directory and create a symlink:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>mkdir -pv /opt/qt-&qt6-version;
-ln -sfnv qt-&qt6-version; /opt/qt6</userinput></screen>
-@y
-<screen role="root"><userinput>mkdir -pv /opt/qt-&qt6-version;
-ln -sfnv qt-&qt6-version; /opt/qt6</userinput></screen>
-@z
-
-@x
-      <para>
         Later on, you may want to install other versions of
         <application>Qt6</application>. To do that, just remove the symlink,
         create the new versioned directory, and recreate the
@@ -429,10 +163,7 @@ ln -sfnv qt-&qt6-version; /opt/qt6</userinput></screen>
         building the new version.
         Which version of <application>Qt6</application> you
         use depends only on where the symlink points.
-      </para>
-    </tip>
 @y
-      <para>
         Later on, you may want to install other versions of
         <application>Qt6</application>. To do that, just remove the symlink,
         create the new versioned directory, and recreate the
@@ -440,107 +171,53 @@ ln -sfnv qt-&qt6-version; /opt/qt6</userinput></screen>
         building the new version.
         Which version of <application>Qt6</application> you
         use depends only on where the symlink points.
-      </para>
-    </tip>
 @z
 
 @x
-<!-- Not sure about this for Qt6
-    <note>
-      <para>
-        If <xref linkend="qca"/> has been installed and you are
-        reinstalling or updating this package, then
-        <application>qca</application> will need to be reinstalled.
-      </para>
-    </note>
--->
-  </sect2>
-@y
-<!-- Not sure about this for Qt6
-    <note>
-      <para>
-        If <xref linkend="qca"/> has been installed and you are
-        reinstalling or updating this package, then
-        <application>qca</application> will need to be reinstalled.
-      </para>
-    </note>
--->
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of Qt6</title>
 @y
-  <sect2 role="installation">
     <title>Installation of Qt6</title>
 @z
 
 @x
-    <warning>
-      <para>
         If <application>Qt6</application> is being reinstalled into the
         same directory as an existing instance, run the commands done by
         <systemitem class="username">root</systemitem>, such as
         <command>make install</command>, from a console or non-Qt6 based
         window manager. It overwrites <application>Qt6</application>
         libraries that should not be in use during the install process.
-      </para>
-    </warning>
 @y
-    <warning>
-      <para>
         If <application>Qt6</application> is being reinstalled into the
         same directory as an existing instance, run the commands done by
         <systemitem class="username">root</systemitem>, such as
         <command>make install</command>, from a console or non-Qt6 based
         window manager. It overwrites <application>Qt6</application>
         libraries that should not be in use during the install process.
-      </para>
-    </warning>
 @z
 
 @x
-    <caution>
-      <para>
         If you did not install some of the recommended dependencies, examine
         <command>./configure --help</command> output to check how to disable
         them or use internal versions bundled in the source tarball.
-      </para>
-    </caution>
 @y
-    <caution>
-      <para>
         If you did not install some of the recommended dependencies, examine
         <command>./configure --help</command> output to check how to disable
         them or use internal versions bundled in the source tarball.
-      </para>
-    </caution>
 @z
 
 @x
-    <note>
-      <para>
         The build time and space required for the full
         <application>Qt6</application> is quite long. The instructions below
         do not build the tutorials and examples. Removing the
         <parameter>-nomake</parameter> line will create additional resources..
-      </para>
-    </note>
 @y
-    <note>
-      <para>
         The build time and space required for the full
         <application>Qt6</application> is quite long. The instructions below
         do not build the tutorials and examples. Removing the
         <parameter>-nomake</parameter> line will create additional resources..
-      </para>
-    </note>
 @z
 
 @x
-    <note>
-      <para>
         The BLFS editors do not recommend installing <application>Qt6</application>
         into the /usr hierarchy because it becomes difficult to find
         components and to update to a new version.  There are also some programs
@@ -549,10 +226,7 @@ ln -sfnv qt-&qt6-version; /opt/qt6</userinput></screen>
         <application>Qt5</application> in /usr, the directories need to
         be specified explicitly.  In this case, set QT5PREFIX=/usr and add
         the following to the configure arguments below:
-      </para>
 @y
-    <note>
-      <para>
         The BLFS editors do not recommend installing <application>Qt6</application>
         into the /usr hierarchy because it becomes difficult to find
         components and to update to a new version.  There are also some programs
@@ -561,169 +235,37 @@ ln -sfnv qt-&qt6-version; /opt/qt6</userinput></screen>
         <application>Qt5</application> in /usr, the directories need to
         be specified explicitly.  In this case, set QT5PREFIX=/usr and add
         the following to the configure arguments below:
-      </para>
 @z
 
 @x
-<screen role="nodump"><userinput>            -archdatadir    /usr/lib/qt6                \
-            -bindir         /usr/bin                    \
-            -plugindir      /usr/lib/qt6/plugins        \
-            -importdir      /usr/lib/qt6/imports        \
-            -headerdir      /usr/include/qt6            \
-            -datadir        /usr/share/qt6              \
-            -docdir         /usr/share/doc/qt6          \
-            -translationdir /usr/share/qt6/translations \
-            -examplesdir    /usr/share/doc/qt6/examples</userinput></screen>-->
-      </para>
-    </note>
-@y
-<screen role="nodump"><userinput>            -archdatadir    /usr/lib/qt6                \
-            -bindir         /usr/bin                    \
-            -plugindir      /usr/lib/qt6/plugins        \
-            -importdir      /usr/lib/qt6/imports        \
-            -headerdir      /usr/include/qt6            \
-            -datadir        /usr/share/qt6              \
-            -docdir         /usr/share/doc/qt6          \
-            -translationdir /usr/share/qt6/translations \
-            -examplesdir    /usr/share/doc/qt6/examples</userinput></screen>-->
-      </para>
-    </note>
-@z
-
-@x
-    <para>
       Install <application>Qt6</application> by running the following commands:
-    </para>
 @y
-    <para>
       Install <application>Qt6</application> by running the following commands:
-    </para>
 @z
 
 @x
-<screen revision="sysv"><userinput>./configure -prefix $QT6PREFIX      \
-            -sysconfdir /etc/xdg    \
-            -dbus-linked            \
-            -openssl-linked         \
-            -system-sqlite          \
-            -nomake examples        \
-            -no-rpath               \
-            -syslog                 \
-            -skip qt3d              \
-            -skip qtquick3dphysics  \
-            -skip qtwebengine       \
-            -Wno-dev                &amp;&amp;
-ninja</userinput></screen>
-@y
-<screen revision="sysv"><userinput>./configure -prefix $QT6PREFIX      \
-            -sysconfdir /etc/xdg    \
-            -dbus-linked            \
-            -openssl-linked         \
-            -system-sqlite          \
-            -nomake examples        \
-            -no-rpath               \
-            -syslog                 \
-            -skip qt3d              \
-            -skip qtquick3dphysics  \
-            -skip qtwebengine       \
-            -Wno-dev                &amp;&amp;
-ninja</userinput></screen>
-@z
-
-@x
-<screen revision="systemd"><userinput>./configure -prefix $QT6PREFIX      \
-            -sysconfdir /etc/xdg    \
-            -dbus-linked            \
-            -openssl-linked         \
-            -system-sqlite          \
-            -nomake examples        \
-            -no-rpath               \
-            -journald               \
-            -skip qt3d              \
-            -skip qtquick3dphysics  \
-            -skip qtwebengine       \
-            -Wno-dev                &amp;&amp;
-ninja</userinput></screen>
-@y
-<screen revision="systemd"><userinput>./configure -prefix $QT6PREFIX      \
-            -sysconfdir /etc/xdg    \
-            -dbus-linked            \
-            -openssl-linked         \
-            -system-sqlite          \
-            -nomake examples        \
-            -no-rpath               \
-            -journald               \
-            -skip qt3d              \
-            -skip qtquick3dphysics  \
-            -skip qtwebengine       \
-            -Wno-dev                &amp;&amp;
-ninja</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>ninja install</userinput></screen>
-@y
-<screen role="root"><userinput>ninja install</userinput></screen>
-@z
-
-@x
-    <!-- Not sure this is correct for Qt6
-@y
-    <!-- Not sure this is correct for Qt6
-@z
-
-@x
-         EDITORS NOTE: This package uses INSTALL_ROOT= instead of DESTDIR= for
-         installing in a temporary directory. -->
-@y
-         EDITORS NOTE: This package uses INSTALL_ROOT= instead of DESTDIR= for
-         installing in a temporary directory. -->
-@z
-
-@x
-    <para>
       Remove references to the build directory from installed library
       dependency (prl) <!--and profile include (pri)--> files by running the following
       command as the &root; user:
-    </para>
 @y
-    <para>
       Remove references to the build directory from installed library
       dependency (prl) <!--and profile include (pri)--> files by running the following
       command as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>find $QT6PREFIX/ -name \*.prl \
-   -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;</userinput></screen>
-@y
-<screen role="root"><userinput>find $QT6PREFIX/ -name \*.prl \
-   -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;</userinput></screen>
-@z
-
-@x
-    <para>
       Install images and create the menu entries for installed applications.
       <!--The <envar>QT6BINDIR</envar> variable is used here to point to the
       directory for the executable programs.  If you have changed the bindir
@@ -731,9 +273,7 @@ ninja</userinput></screen>
       that the <envar>QT5BINDIR</envar> variable is defined in root's
       environment and as the &root; user:-->
       Again as the &root; user:
-    </para>
 @y
-    <para>
       Install images and create the menu entries for installed applications.
       <!--The <envar>QT6BINDIR</envar> variable is used here to point to the
       directory for the executable programs.  If you have changed the bindir
@@ -741,287 +281,47 @@ ninja</userinput></screen>
       that the <envar>QT5BINDIR</envar> variable is defined in root's
       environment and as the &root; user:-->
       Again as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>pushd qttools/src &amp;&amp;
-@y
-<screen role="root"><userinput>pushd qttools/src &amp;&amp;
-@z
-
-@x
-install -v -Dm644 assistant/assistant/images/assistant-128.png       \
-                  /usr/share/pixmaps/assistant-qt6.png               &amp;&amp;
-@y
-install -v -Dm644 assistant/assistant/images/assistant-128.png       \
-                  /usr/share/pixmaps/assistant-qt6.png               &amp;&amp;
-@z
-
-@x
-install -v -Dm644 designer/src/designer/images/designer.png          \
-                  /usr/share/pixmaps/designer-qt6.png                &amp;&amp;
-@y
-install -v -Dm644 designer/src/designer/images/designer.png          \
-                  /usr/share/pixmaps/designer-qt6.png                &amp;&amp;
-@z
-
-@x
-install -v -Dm644 linguist/linguist/images/icons/linguist-128-32.png \
-                  /usr/share/pixmaps/linguist-qt6.png                &amp;&amp;
-@y
-install -v -Dm644 linguist/linguist/images/icons/linguist-128-32.png \
-                  /usr/share/pixmaps/linguist-qt6.png                &amp;&amp;
-@z
-
-@x
-install -v -Dm644 qdbus/qdbusviewer/images/qdbusviewer-128.png       \
-                  /usr/share/pixmaps/qdbusviewer-qt6.png             &amp;&amp;
-popd &amp;&amp;
-@y
-install -v -Dm644 qdbus/qdbusviewer/images/qdbusviewer-128.png       \
-                  /usr/share/pixmaps/qdbusviewer-qt6.png             &amp;&amp;
-popd &amp;&amp;
-@z
-
-@x
-cat &gt; /usr/share/applications/assistant-qt6.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt6 Assistant
-Comment=Shows Qt6 documentation and examples
-Exec=$QT6PREFIX/bin/assistant
-Icon=assistant-qt6.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Documentation;</literal>
-EOF
-@y
-cat &gt; /usr/share/applications/assistant-qt6.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt6 Assistant
-Comment=Shows Qt6 documentation and examples
-Exec=$QT6PREFIX/bin/assistant
-Icon=assistant-qt6.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Documentation;</literal>
-EOF
-@z
-
-@x
-cat &gt; /usr/share/applications/designer-qt6.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt6 Designer
-GenericName=Interface Designer
-Comment=Design GUIs for Qt6 applications
-Exec=$QT6PREFIX/bin/designer
-Icon=designer-qt6.png
-MimeType=application/x-designer;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@y
-cat &gt; /usr/share/applications/designer-qt6.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt6 Designer
-GenericName=Interface Designer
-Comment=Design GUIs for Qt6 applications
-Exec=$QT6PREFIX/bin/designer
-Icon=designer-qt6.png
-MimeType=application/x-designer;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@z
-
-@x
-cat &gt; /usr/share/applications/linguist-qt6.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt6 Linguist
-Comment=Add translations to Qt6 applications
-Exec=$QT6PREFIX/bin/linguist
-Icon=linguist-qt6.png
-MimeType=text/vnd.trolltech.linguist;application/x-linguist;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@y
-cat &gt; /usr/share/applications/linguist-qt6.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt6 Linguist
-Comment=Add translations to Qt6 applications
-Exec=$QT6PREFIX/bin/linguist
-Icon=linguist-qt6.png
-MimeType=text/vnd.trolltech.linguist;application/x-linguist;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@z
-
-@x
-cat &gt; /usr/share/applications/qdbusviewer-qt6.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt6 QDbusViewer
-GenericName=D-Bus Debugger
-Comment=Debug D-Bus applications
-Exec=$QT6PREFIX/bin/qdbusviewer
-Icon=qdbusviewer-qt6.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Debugger;</literal>
-EOF</userinput></screen>
-@y
-cat &gt; /usr/share/applications/qdbusviewer-qt6.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt6 QDbusViewer
-GenericName=D-Bus Debugger
-Comment=Debug D-Bus applications
-Exec=$QT6PREFIX/bin/qdbusviewer
-Icon=qdbusviewer-qt6.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Debugger;</literal>
-EOF</userinput></screen>
-@z
-
-@x
-<!--
-    <para>
-      Some packages such as <xref linkend='vlc'/> look for certain
-      executables with a -qt6 suffix.  Run the following command as the
-      <systemitem class="username">root</systemitem> user
-      to create the necessary symlinks:
-    </para>
-@y
-<!--
-    <para>
-      Some packages such as <xref linkend='vlc'/> look for certain
-      executables with a -qt6 suffix.  Run the following command as the
-      <systemitem class="username">root</systemitem> user
-      to create the necessary symlinks:
-    </para>
-@z
-
-@x
-<screen role="root"><userinput>for file in moc uic rcc qmake lconvert lrelease lupdate; do
-  ln -sfvn $QT5BINDIR/$file /usr/bin/$file-qt6
-done</userinput></screen>
--->
-  </sect2>
-@y
-<screen role="root"><userinput>for file in moc uic rcc qmake lconvert lrelease lupdate; do
-  ln -sfvn $QT5BINDIR/$file /usr/bin/$file-qt6
-done</userinput></screen>
--->
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
-    <!--
-    <para>
-      <command>sed ...</command>: Allows using
-      <application>Python 3</application> instead of <application>Python
-      2</application>. This command destroys the build for QtWebEngine, so do
-      not use it if you remove the <parameter>-skip qtwebengine</parameter>
-      switch.
-    </para>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
-    <!--
-    <para>
-      <command>sed ...</command>: Allows using
-      <application>Python 3</application> instead of <application>Python
-      2</application>. This command destroys the build for QtWebEngine, so do
-      not use it if you remove the <parameter>-skip qtwebengine</parameter>
-      switch.
-    </para>
 @z
 
 @x
-    Ignored
-    <para>
-      <parameter>-confirm-license</parameter>: Accept license
-      without prompting user during configuration.
-    </para>
-@y
-    Ignored
-    <para>
-      <parameter>-confirm-license</parameter>: Accept license
-      without prompting user during configuration.
-    </para>
-@z
-
-@x
-    Ignored
-    <para>
-      <parameter>-opensource</parameter>: Install the opensource
-      version of <application>Qt</application>.
-    </para>
-    -->
-    <para>
       <parameter>-nomake examples</parameter>: This switch
       disables building of the example programs included
       in the source tarball. Remove it if you want to build
       them.
-    </para>
 @y
-    Ignored
-    <para>
-      <parameter>-opensource</parameter>: Install the opensource
-      version of <application>Qt</application>.
-    </para>
-    -->
-    <para>
       <parameter>-nomake examples</parameter>: This switch
       disables building of the example programs included
       in the source tarball. Remove it if you want to build
       them.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-skip qt3d</parameter>: This switch
       disables building qt3d support. There is a problem 
       building these files without an external library
       and no packages in BLFS use qt3d.
-    </para>
-<!-- Auto: not for me [pierre 2023/11/20]-->
-    <para>
-      <parameter>-system-sqlite</parameter>: This switch enables use
-      of the system version of <application>SQLite</application>.
-    </para>
 @y
-    <para>
       <parameter>-skip qt3d</parameter>: This switch
       disables building qt3d support. There is a problem 
       building these files without an external library
       and no packages in BLFS use qt3d.
-    </para>
-<!-- Auto: not for me [pierre 2023/11/20]-->
-    <para>
-      <parameter>-system-sqlite</parameter>: This switch enables use
-      of the system version of <application>SQLite</application>.
-    </para>
 @z
 
 @x
-    <para>
+      <parameter>-system-sqlite</parameter>: This switch enables use
+      of the system version of <application>SQLite</application>.
+@y
+      <parameter>-system-sqlite</parameter>: This switch enables use
+      of the system version of <application>SQLite</application>.
+@z
+
+@x
       <parameter>-dbus-linked</parameter>
       <parameter>-openssl-linked</parameter>: These
       switches enable explicit linking of the
@@ -1029,9 +329,7 @@ done</userinput></screen>
       <application>OpenSSL</application> libraries into
       <application>Qt5</application> libraries instead of
       <command>dlopen()</command>-ing them.
-    </para>
 @y
-    <para>
       <parameter>-dbus-linked</parameter>
       <parameter>-openssl-linked</parameter>: These
       switches enable explicit linking of the
@@ -1039,709 +337,110 @@ done</userinput></screen>
       <application>OpenSSL</application> libraries into
       <application>Qt5</application> libraries instead of
       <command>dlopen()</command>-ing them.
-    </para>
 @z
 
-@x
-    <para revision="sysv">
+@x rev="sysv"
       <parameter>-syslog</parameter>: This switch allows to send Qt messages
       to the <command>syslog</command> logging system.
-    </para>
 @y
-    <para revision="sysv">
       <parameter>-syslog</parameter>: This switch allows to send Qt messages
       to the <command>syslog</command> logging system.
-    </para>
 @z
 
-@x
-    <para revision="systemd">
+@x rev="systemd"
       <parameter>-journald</parameter>: This switch allows to send Qt messages
       to the <command>journald</command> logging system.
-    </para>
 @y
-    <para revision="systemd">
       <parameter>-journald</parameter>: This switch allows to send Qt messages
       to the <command>journald</command> logging system.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-skip qtwebengine</parameter>: This switch disables building
       the QtWebEngine. The BLFS editors have chosen to build <xref
       linkend="qtwebengine"/> separately.
-    </para>
 @y
-    <para>
       <parameter>-skip qtwebengine</parameter>: This switch disables building
       the QtWebEngine. The BLFS editors have chosen to build <xref
       linkend="qtwebengine"/> separately.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-skip qtquick3dphysics</parameter>: This switch disables
       building the Qt Quick 3D Physics submodule. On 32-bit systems, this will
       cause the build process to fail with an inlining error in Qt6's bundled
       copy of the PhysX SDK.
-    </para>
 @y
-    <para>
       <parameter>-skip qtquick3dphysics</parameter>: This switch disables
       building the Qt Quick 3D Physics submodule. On 32-bit systems, this will
       cause the build process to fail with an inlining error in Qt6's bundled
       copy of the PhysX SDK.
-    </para>
 @z
 
 @x
-<!-- Auto
-    <para>
-      <parameter>-system-harfbuzz</parameter>: This switch enables use
-      of the system version of <application>Harfbuzz</application>.
-    </para>
--->
-  </sect2>
-@y
-<!-- Auto
-    <para>
-      <parameter>-system-harfbuzz</parameter>: This switch enables use
-      of the system version of <application>Harfbuzz</application>.
-    </para>
--->
-  </sect2>
-@z
-
-@x
-  <sect2 role="configuration">
     <title>Configuring Qt6</title>
 @y
-  <sect2 role="configuration">
     <title>Configuring Qt6</title>
 @z
 
 @x
-    <sect3 id="qt6-config">
       <title>Configuration Information</title>
 @y
-    <sect3 id="qt6-config">
       <title>Configuration Information</title>
 @z
 
 @x
-      <para>
         If <xref linkend="sudo"/> is installed, QT6DIR should be available to
         the super user as well. Execute the following commands as the
         &root; user:
-      </para>
 @y
-      <para>
         If <xref linkend="sudo"/> is installed, QT6DIR should be available to
         the super user as well. Execute the following commands as the
         &root; user:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>cat &gt; /etc/sudoers.d/qt &lt;&lt; "EOF"
-<literal>Defaults env_keep += QT6DIR</literal>
-EOF</userinput></screen>
-<!--
-      <bridgehead renderas="sect4">If you installed Qt5 in /usr</bridgehead>
-@y
-<screen role="root"><userinput>cat &gt; /etc/sudoers.d/qt &lt;&lt; "EOF"
-<literal>Defaults env_keep += QT6DIR</literal>
-EOF</userinput></screen>
-<!--
-      <bridgehead renderas="sect4">If you installed Qt5 in /usr</bridgehead>
-@z
-
-@x
-      <para>
-        If you installed <application>Qt5</application> in
-        <filename class="directory">/usr</filename>, create an
-        environment variable needed by certain packages.
-        As the <systemitem class="username">root</systemitem> user:
-      </para>
-@y
-      <para>
-        If you installed <application>Qt5</application> in
-        <filename class="directory">/usr</filename>, create an
-        environment variable needed by certain packages.
-        As the <systemitem class="username">root</systemitem> user:
-      </para>
-@z
-
-@x
-<screen role="nodump"><userinput>cat &gt; /etc/profile.d/qt6.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt6.sh
-@y
-<screen role="nodump"><userinput>cat &gt; /etc/profile.d/qt6.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt6.sh
-@z
-
-@x
-QT5DIR=/usr
-export QT5DIR
-@y
-QT5DIR=/usr
-export QT5DIR
-@z
-
-@x
-# End /etc/profile.d/qt6.sh</literal>
-EOF</userinput></screen>
-@y
-# End /etc/profile.d/qt6.sh</literal>
-EOF</userinput></screen>
-@z
-
-@x
-      <bridgehead renderas="sect4">If you did not install Qt5 in /usr</bridgehead>
-i-->
-      <para>
         You now need to update the
         following configuration files so that <application>Qt6</application> is
         correctly found by other packages and system processes.
-      </para>
 @y
-      <bridgehead renderas="sect4">If you did not install Qt5 in /usr</bridgehead>
-i-->
-      <para>
         You now need to update the
         following configuration files so that <application>Qt6</application> is
         correctly found by other packages and system processes.
-      </para>
 @z
 
 @x
-      <para>
         As the &root; user, update
         the <filename>/etc/ld.so.conf</filename> file and the dynamic linker's
         run-time cache file:
-      </para>
 @y
-      <para>
         As the &root; user, update
         the <filename>/etc/ld.so.conf</filename> file and the dynamic linker's
         run-time cache file:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>cat &gt;&gt; /etc/ld.so.conf &lt;&lt; EOF
-<literal># Begin Qt addition
-@y
-<screen role="root"><userinput>cat &gt;&gt; /etc/ld.so.conf &lt;&lt; EOF
-<literal># Begin Qt addition
-@z
-
-@x
-/opt/qt6/lib
-@y
-/opt/qt6/lib
-@z
-
-@x
-# End Qt addition</literal>
-EOF
-@y
-# End Qt addition</literal>
-EOF
-@z
-
-@x
-ldconfig</userinput></screen>
-@y
-ldconfig</userinput></screen>
-@z
-
-@x
-      <indexterm zone="qt6 qt6-config">
-        <primary sortas="e-etc-ld.so.conf">/etc/ld.so.conf</primary>
-      </indexterm>
-@y
-      <indexterm zone="qt6 qt6-config">
-        <primary sortas="e-etc-ld.so.conf">/etc/ld.so.conf</primary>
-      </indexterm>
-@z
-
-@x
-      <para>
         As the &root; user, create
         the <filename>/etc/profile.d/qt6.sh</filename> file:
-      </para>
 @y
-      <para>
         As the &root; user, create
         the <filename>/etc/profile.d/qt6.sh</filename> file:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>cat &gt; /etc/profile.d/qt6.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt6.sh
-@y
-<screen role="root"><userinput>cat &gt; /etc/profile.d/qt6.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt6.sh
-@z
-
-@x
-QT6DIR=/opt/qt6
-@y
-QT6DIR=/opt/qt6
-@z
-
-@x
-pathappend $QT6DIR/bin           PATH
-pathappend $QT6DIR/lib/pkgconfig PKG_CONFIG_PATH
-@y
-pathappend $QT6DIR/bin           PATH
-pathappend $QT6DIR/lib/pkgconfig PKG_CONFIG_PATH
-@z
-
-@x
-export QT6DIR
-@y
-export QT6DIR
-@z
-
-@x
-# End /etc/profile.d/qt6.sh</literal>
-EOF</userinput></screen>
-@y
-# End /etc/profile.d/qt6.sh</literal>
-EOF</userinput></screen>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
-@z
-
-@x
-      <seglistitem>
-        <seg>
-          androiddeployqt (hard link to androiddeployqt6),
-          androiddeployqt6,
-          androidtestrunner,
-          assistant,
-          balsam,
-          balsamui,
-          canbusutil,
-          cooker,
-          designer,
-          instancer,
-          lconvert,
-          linguist,
-          lrelease,
-          lupdate,
-          materialeditor,
-          meshdebug,
-          pixeltool,
-          qdbus,
-          qdbuscpp2xml,
-          qdbusviewer,
-          qdbusxml2cpp,
-          qdistancefieldgenerator,
-          qdoc,
-          qmake (hard link to qmake6),
-          qmake6,
-          qml,
-          qmldom,
-          qmleasing,
-          qmlformat,
-          qmllint,
-          qmlls,
-          qmlplugindump,
-          qmlpreview,
-          qmlprofiler,
-          qmlscene,
-          qmltc,
-          qmltestrunner,
-          qmltime,
-          qqem,
-          qsb,
-          qtdiag (hard link to qtdiag6),
-          qtdiag6,
-          qtpaths (hard link to qtpaths6),
-          qtpaths6,
-          qtplugininfo,
-          qt-cmake,
-          qt-cmake-create,
-          qt-configure-module,
-          shadergen, and
-          shapegen
-@y
-      <seglistitem>
-        <seg>
-          androiddeployqt (hard link to androiddeployqt6),
-          androiddeployqt6,
-          androidtestrunner,
-          assistant,
-          balsam,
-          balsamui,
-          canbusutil,
-          cooker,
-          designer,
-          instancer,
-          lconvert,
-          linguist,
-          lrelease,
-          lupdate,
-          materialeditor,
-          meshdebug,
-          pixeltool,
-          qdbus,
-          qdbuscpp2xml,
-          qdbusviewer,
-          qdbusxml2cpp,
-          qdistancefieldgenerator,
-          qdoc,
-          qmake (hard link to qmake6),
-          qmake6,
-          qml,
-          qmldom,
-          qmleasing,
-          qmlformat,
-          qmllint,
-          qmlls,
-          qmlplugindump,
-          qmlpreview,
-          qmlprofiler,
-          qmlscene,
-          qmltc,
-          qmltestrunner,
-          qmltime,
-          qqem,
-          qsb,
-          qtdiag (hard link to qtdiag6),
-          qtdiag6,
-          qtpaths (hard link to qtpaths6),
-          qtpaths6,
-          qtplugininfo,
-          qt-cmake,
-          qt-cmake-create,
-          qt-configure-module,
-          shadergen, and
-          shapegen
-@z
-
-@x
-        </seg>
-        <seg>
-          libQt6Bluetooth.so,
-          libQt6Bodymovin.so,
-          libQt6BundledEmbree.a,
-          libQt6BundledPhysX.a,
-          libQt6BundledResonanceAudio.a,
-          libQt6Charts.so,
-          libQt6ChartsQml.so,
-          libQt6Coap.so,
-          libQt6Concurrent.so,
-          libQt6Core.so,
-          libQt6Core5Compat.so,
-          libQt6DBus.so,
-          libQt6DataVisualization.so,
-          libQt6DataVisualizationQml.so,
-          libQt6DeclarativeOpcua.so,
-          libQt6Designer.so,
-          libQt6DesignerComponents.so,
-          libQt6DeviceDiscoverySupport.a,
-          libQt6EglFSDeviceIntegration.so,
-          libQt6EglFsKmsGbmSupport.so,
-          libQt6EglFsKmsSupport.so,
-          libQt6ExampleIcons.a,
-          libQt6FbSupport.a,
-          libQt6Graphs.so,
-          libQt6Grpc.so,
-          libQt6Gui.so,
-          libQt6Help.so,
-          libQt6HttpServer.so,
-          libQt6InputSupport.a,
-          libQt6JsonRpc.so,
-          libQt6KmsSupport.a,
-          libQt6LabsAnimation.so,
-          libQt6LabsFolderListModel.so,
-          libQt6LabsQmlModels.so,
-          libQt6LabsSettings.so,
-          libQt6LabsSharedImage.so,
-          libQt6LabsWavefrontMesh.so,
-          libQt6LanguageServer.so,
-          libQt6Location.so,
-          libQt6Mqtt.so,
-          libQt6Multimedia.so,
-          libQt6MultimediaQuick.so,
-          libQt6MultimediaWidgets.so,
-          libQt6Network.so,
-          libQt6NetworkAuth.so,
-          libQt6Nfc.so,
-          libQt6OpcUa.so,
-          libQt6OpenGL.so,
-          libQt6OpenGLWidgets.so,
-          libQt6PacketProtocol.a,
-          libQt6Positioning.so,
-          libQt6PositioningQuick.so,
-          libQt6PrintSupport.so,
-          libQt6Protobuf.so,
-          libQt6Qml.so,
-          libQt6QmlCompiler.so,
-          libQt6QmlCore.so,
-          libQt6QmlDebug.a,
-          libQt6QmlDom.a,
-          libQt6QmlLocalStorage.so,
-          libQt6QmlLS.a,
-          libQt6QmlModels.so,
-          libQt6QmlToolingSettings.a,
-          libQt6QmlTypeRegistrar.a,
-          libQt6QmlWorkerScript.so,
-          libQt6QmlXmlListModel.so,
-          libQt6Quick.so,
-          libQt6Quick3D.so,
-          libQt6Quick3DAssetImport.so,
-          libQt6Quick3DAssetUtils.so,
-          libQt6Quick3DEffects.so,
-          libQt6Quick3DGlslParser.so,
-          libQt6Quick3DHelpers.so,
-          libQt6Quick3DHelpersImpl.so,
-          libQt6Quick3DIblBaker.so,
-          libQt6Quick3DParticleEffects.so,
-          libQt6Quick3DParticles.so,
-          libQt6Quick3DPhysics.so,
-          libQt6Quick3DPhysicsHelpers.so,
-          libQt6Quick3DRuntimeRender.so,
-          libQt6Quick3DSpatialAudio.so,
-          libQt6Quick3DUtils.so,
-          libQt6QuickControls2.so,
-          libQt6QuickControls2Impl.so,
-          libQt6QuickControlsTestUtils.a,
-          libQt6QuickDialogs2.so,
-          libQt6QuickDialogs2QuickImpl.so,
-          libQt6QuickDialogs2Utils.so,
-          libQt6QuickEffects.so,
-          libQt6QuickLayouts.so,
-          libQt6QuickParticles.so,
-          libQt6QuickShapes.so,
-          libQt6QuickTemplates2.so,
-          libQt6QuickTest.so,
-          libQt6QuickTestUtils.a,
-          libQt6QuickTimeline.so,
-          libQt6QuickWidgets.so,
-          libQt6RemoteObjects.so,
-          libQt6RemoteObjectsQml.so,
-          libQt6Scxml.so,
-          libQt6ScxmlQml.so,
-          libQt6Sensors.so,
-          libQt6SensorsQuick.so,
-          libQt6SerialBus.so,
-          libQt6SerialPort.so,
-          libQt6ShaderTools.so,
-          libQt6SpatialAudio.so,
-          libQt6Sql.so,
-          libQt6StateMachine.so,
-          libQt6StateMachineQml.so,
-          libQt6Svg.so,
-          libQt6SvgWidgets.so,
-          libQt6TextToSpeech.so,
-          libQt6UiTools.so,
-          libQt6VirtualKeyboard.so,
-          libQt6WaylandClient.so,
-          libQt6WaylandCompositor.so,
-          libQt6WaylandEglClientHwIntegration.so,
-          libQt6WaylandEglCompositorHwIntegration.so,
-          libQt6WebChannel.so,
-          libQt6WebChannelQuick.so,
-          libQt6WebSockets.so,
-          libQt6WebView.so,
-          libQt6WebViewQuick.so,
-          libQt6Widgets.so,
-          libQt6WlShellIntegration.so,
-          libQt6XcbQpa.so, and
-          libQt6Xml.so
-        </seg>
-        <seg>
-          <!--/usr/include/qt6,
-          /usr/lib/qt6,
-          /usr/share/doc/qt6, and
-          /usr/share/qt6
-          OR-->
-          /opt/qt6 and
-          /opt/qt-&qt6-version;
-        </seg>
-      </seglistitem>
-    </segmentedlist>
-@y
-        </seg>
-        <seg>
-          libQt6Bluetooth.so,
-          libQt6Bodymovin.so,
-          libQt6BundledEmbree.a,
-          libQt6BundledPhysX.a,
-          libQt6BundledResonanceAudio.a,
-          libQt6Charts.so,
-          libQt6ChartsQml.so,
-          libQt6Coap.so,
-          libQt6Concurrent.so,
-          libQt6Core.so,
-          libQt6Core5Compat.so,
-          libQt6DBus.so,
-          libQt6DataVisualization.so,
-          libQt6DataVisualizationQml.so,
-          libQt6DeclarativeOpcua.so,
-          libQt6Designer.so,
-          libQt6DesignerComponents.so,
-          libQt6DeviceDiscoverySupport.a,
-          libQt6EglFSDeviceIntegration.so,
-          libQt6EglFsKmsGbmSupport.so,
-          libQt6EglFsKmsSupport.so,
-          libQt6ExampleIcons.a,
-          libQt6FbSupport.a,
-          libQt6Graphs.so,
-          libQt6Grpc.so,
-          libQt6Gui.so,
-          libQt6Help.so,
-          libQt6HttpServer.so,
-          libQt6InputSupport.a,
-          libQt6JsonRpc.so,
-          libQt6KmsSupport.a,
-          libQt6LabsAnimation.so,
-          libQt6LabsFolderListModel.so,
-          libQt6LabsQmlModels.so,
-          libQt6LabsSettings.so,
-          libQt6LabsSharedImage.so,
-          libQt6LabsWavefrontMesh.so,
-          libQt6LanguageServer.so,
-          libQt6Location.so,
-          libQt6Mqtt.so,
-          libQt6Multimedia.so,
-          libQt6MultimediaQuick.so,
-          libQt6MultimediaWidgets.so,
-          libQt6Network.so,
-          libQt6NetworkAuth.so,
-          libQt6Nfc.so,
-          libQt6OpcUa.so,
-          libQt6OpenGL.so,
-          libQt6OpenGLWidgets.so,
-          libQt6PacketProtocol.a,
-          libQt6Positioning.so,
-          libQt6PositioningQuick.so,
-          libQt6PrintSupport.so,
-          libQt6Protobuf.so,
-          libQt6Qml.so,
-          libQt6QmlCompiler.so,
-          libQt6QmlCore.so,
-          libQt6QmlDebug.a,
-          libQt6QmlDom.a,
-          libQt6QmlLocalStorage.so,
-          libQt6QmlLS.a,
-          libQt6QmlModels.so,
-          libQt6QmlToolingSettings.a,
-          libQt6QmlTypeRegistrar.a,
-          libQt6QmlWorkerScript.so,
-          libQt6QmlXmlListModel.so,
-          libQt6Quick.so,
-          libQt6Quick3D.so,
-          libQt6Quick3DAssetImport.so,
-          libQt6Quick3DAssetUtils.so,
-          libQt6Quick3DEffects.so,
-          libQt6Quick3DGlslParser.so,
-          libQt6Quick3DHelpers.so,
-          libQt6Quick3DHelpersImpl.so,
-          libQt6Quick3DIblBaker.so,
-          libQt6Quick3DParticleEffects.so,
-          libQt6Quick3DParticles.so,
-          libQt6Quick3DPhysics.so,
-          libQt6Quick3DPhysicsHelpers.so,
-          libQt6Quick3DRuntimeRender.so,
-          libQt6Quick3DSpatialAudio.so,
-          libQt6Quick3DUtils.so,
-          libQt6QuickControls2.so,
-          libQt6QuickControls2Impl.so,
-          libQt6QuickControlsTestUtils.a,
-          libQt6QuickDialogs2.so,
-          libQt6QuickDialogs2QuickImpl.so,
-          libQt6QuickDialogs2Utils.so,
-          libQt6QuickEffects.so,
-          libQt6QuickLayouts.so,
-          libQt6QuickParticles.so,
-          libQt6QuickShapes.so,
-          libQt6QuickTemplates2.so,
-          libQt6QuickTest.so,
-          libQt6QuickTestUtils.a,
-          libQt6QuickTimeline.so,
-          libQt6QuickWidgets.so,
-          libQt6RemoteObjects.so,
-          libQt6RemoteObjectsQml.so,
-          libQt6Scxml.so,
-          libQt6ScxmlQml.so,
-          libQt6Sensors.so,
-          libQt6SensorsQuick.so,
-          libQt6SerialBus.so,
-          libQt6SerialPort.so,
-          libQt6ShaderTools.so,
-          libQt6SpatialAudio.so,
-          libQt6Sql.so,
-          libQt6StateMachine.so,
-          libQt6StateMachineQml.so,
-          libQt6Svg.so,
-          libQt6SvgWidgets.so,
-          libQt6TextToSpeech.so,
-          libQt6UiTools.so,
-          libQt6VirtualKeyboard.so,
-          libQt6WaylandClient.so,
-          libQt6WaylandCompositor.so,
-          libQt6WaylandEglClientHwIntegration.so,
-          libQt6WaylandEglCompositorHwIntegration.so,
-          libQt6WebChannel.so,
-          libQt6WebChannelQuick.so,
-          libQt6WebSockets.so,
-          libQt6WebView.so,
-          libQt6WebViewQuick.so,
-          libQt6Widgets.so,
-          libQt6WlShellIntegration.so,
-          libQt6XcbQpa.so, and
-          libQt6Xml.so
-        </seg>
-        <seg>
-          <!--/usr/include/qt6,
-          /usr/lib/qt6,
-          /usr/share/doc/qt6, and
-          /usr/share/qt6
-          OR-->
-          /opt/qt6 and
-          /opt/qt-&qt6-version;
-        </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
@@ -2564,22 +1263,4 @@ EOF</userinput></screen>
           </indexterm>
         </listitem>
       </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z
