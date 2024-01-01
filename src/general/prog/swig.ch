@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY swig-buildsize     "82 MB (2.1 GB with tests)">
-  <!ENTITY swig-time          "0.1 SBU (add 7.8 SBU for tests; both using parallelism=4)">
+  <!ENTITY swig-buildsize     "106 MB (2.2 GB with tests)">
+  <!ENTITY swig-time          "0.1 SBU (add 10.0 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY swig-buildsize     "82 MB (2.1 GB with tests)">
-  <!ENTITY swig-time          "0.1 SBU (add 7.8 SBU for tests; both using parallelism=4)">
+  <!ENTITY swig-buildsize     "106 MB (2.2 GB with tests)">
+  <!ENTITY swig-time          "0.1 SBU (add 10.0 SBU for tests; both using parallelism=4)">
 @z
 
 @x
@@ -33,12 +33,15 @@
        <application>Ruby</application>,
        <application>PHP</application>,
        <application>Java</application>,
+       <application>JavaScript</application>,
        <application>C#</application>,
        <application>D</application>,
        <application>Go</application>,
        <application>Lua</application>,
        <application>Octave</application>,
        <application>R</application>,
+       <application>Racket</application>,
+       <application>Scilab</application>,
        <application>Scheme</application>, and
        <application>Ocaml</application>.
        <application>SWIG</application> can
@@ -54,12 +57,15 @@
        <application>Ruby</application>,
        <application>PHP</application>,
        <application>Java</application>,
+       <application>JavaScript</application>,
        <application>C#</application>,
        <application>D</application>,
        <application>Go</application>,
        <application>Lua</application>,
        <application>Octave</application>,
        <application>R</application>,
+       <application>Racket</application>,
+       <application>Scilab</application>,
        <application>Scheme</application>, and
        <application>Ocaml</application>.
        <application>SWIG</application> can
@@ -171,7 +177,7 @@
 @z
 
 @x
-      To test the results, issue: <command>PY3=1 make -k check TCL_INCLUDE=</command>.
+      To test the results, issue: <command>PY3=1 make TCL_INCLUDE= -k check</command>.
       The unsetting of the variable <envar>TCL_INCLUDE</envar> is
       necessary since it is not correctly set by
       <emphasis>configure</emphasis>. The tests are only executed for the
@@ -182,7 +188,7 @@
       tests should not be considered harmful. The go tests are buggy and may
       generate a lot of meaningless output.
 @y
-      To test the results, issue: <command>PY3=1 make -k check TCL_INCLUDE=</command>.
+      To test the results, issue: <command>PY3=1 make TCL_INCLUDE= -k check</command>.
       The unsetting of the variable <envar>TCL_INCLUDE</envar> is
       necessary since it is not correctly set by
       <emphasis>configure</emphasis>. The tests are only executed for the
@@ -220,16 +226,16 @@
       <option>--without-&lt;language&gt;</option>: allows disabling the
       building of tests and examples for &lt;language&gt;, but all the
       languages capabilities of <application>SWIG</application> are always
-      built. <!--We use it for <application>Clisp</application>, because the
-      SWIG implementation is very incomplete and a lot of tests fail. -->
-      <!-- Now used for JavaScript because of node CLI changes -->
+      built. This switch is used for <application>JavaScript</application>
+      because the SWIG implementation is incomplete and a lot of tests fail
+      due to API changes in Node-20.
 @y
       <option>--without-&lt;language&gt;</option>: allows disabling the
       building of tests and examples for &lt;language&gt;, but all the
       languages capabilities of <application>SWIG</application> are always
-      built. <!--We use it for <application>Clisp</application>, because the
-      SWIG implementation is very incomplete and a lot of tests fail. -->
-      <!-- Now used for JavaScript because of node CLI changes -->
+      built. This switch is used for <application>JavaScript</application>
+      because the SWIG implementation is incomplete and a lot of tests fail
+      due to API changes in Node-20.
 @z
 
 @x

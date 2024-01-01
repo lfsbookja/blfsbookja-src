@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY thunar-time          "0.5 SBU (Using parallelism=4)">
+  <!ENTITY thunar-time          "0.4 SBU (Using parallelism=4)">
 @y
-  <!ENTITY thunar-time          "0.5 SBU (Using parallelism=4)">
+  <!ENTITY thunar-time          "0.4 SBU (Using parallelism=4)">
 @z
 
 @x
