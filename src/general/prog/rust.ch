@@ -256,7 +256,11 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gdb"/> (used by the test suite if it is present),
-      <xref linkend="git"/> (required by the test suite), and
+      <xref linkend="git"/> (required by the test suite),
+      <ulink url="https://github.com/bytecodealliance/wasmtime/tree/main/cranelift">cranelift</ulink>,
+      <ulink url="https://jemalloc.net/">jemalloc</ulink>,
+      libgccjit (read command explanation in
+      <xref role="nodep" linkend="gcc"/>), and
       <ulink url='https://libgit2.org/'>libgit2</ulink>
     </para>
 @y
@@ -264,6 +268,10 @@
     <para role="optional">
       <xref linkend="gdb"/> (used by the test suite if it is present),
       <xref linkend="git"/> (required by the test suite),
+      <ulink url="https://github.com/bytecodealliance/wasmtime/tree/main/cranelift">cranelift</ulink>,
+      <ulink url="https://jemalloc.net/">jemalloc</ulink>,
+      libgccjit (read command explanation in
+      <xref role="nodep" linkend="gcc"/>), and
       <ulink url='https://libgit2.org/'>libgit2</ulink>
     </para>
 @z
