@@ -12,7 +12,7 @@
 @x
     <title>Introduction to Intel-gmmlib</title>
 @y
-    <title>Introduction to Intel-gmmlib</title>
+    <title>&IntroductionTo1;Intel-gmmlib&IntroductionTo2;</title>
 @z
 
 @x
@@ -30,43 +30,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&intel-gmmlib-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&intel-gmmlib-download-http;"/>
+          &Download; (HTTP): <ulink url="&intel-gmmlib-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&intel-gmmlib-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&intel-gmmlib-download-ftp;"/>
+          &Download; (FTP): <ulink url="&intel-gmmlib-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &intel-gmmlib-md5sum;
 @y
-          Download MD5 sum: &intel-gmmlib-md5sum;
+          &Download; MD5 sum: &intel-gmmlib-md5sum;
 @z
 
 @x
           Download size: &intel-gmmlib-size;
 @y
-          Download size: &intel-gmmlib-size;
+          &DownloadSize;: &intel-gmmlib-size;
 @z
 
 @x
           Estimated disk space required: &intel-gmmlib-buildsize;
 @y
-          Estimated disk space required: &intel-gmmlib-buildsize;
+          &Estimateddiskspacerequired;: &intel-gmmlib-buildsize;
 @z
 
 @x
           Estimated build time: &intel-gmmlib-time;
 @y
-          Estimated build time: &intel-gmmlib-time;
+          &Estimatedbuildtime;: &intel-gmmlib-time;
 @z
 
 @x
@@ -84,7 +84,7 @@
 @x
     <bridgehead renderas="sect3">Intel-gmmlib Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Intel-gmmlib Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Intel-gmmlib&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -102,29 +102,28 @@
 @x
     <title>Installation of Intel-gmmlib</title>
 @y
-    <title>Installation of Intel-gmmlib</title>
+    <title>&InstallationOf1;Intel-gmmlib&InstallationOf2;</title>
 @z
 
 @x
       Install <application>Intel-gmmlib</application> by running the following
       commands:
 @y
-      Install <application>Intel-gmmlib</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Intel-gmmlib</application> をビルドします。
 @z
 
 @x
-      The test suite is normally run by <command>make</command> unless
+      The test suite is normally run by <command>ninja</command> unless
       -DRUN_TEST_SUITE=NO is passed to cmake.
 @y
-      The test suite is normally run by <command>make</command> unless
+      The test suite is normally run by <command>ninja</command> unless
       -DRUN_TEST_SUITE=NO is passed to cmake.
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -138,9 +137,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -177,4 +176,4 @@
 @y
             contains functions that provide Memory Management functions for
             Intel Graphics Drivers
-@z
+@z 

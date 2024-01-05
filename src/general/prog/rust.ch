@@ -465,7 +465,7 @@
 @x
       Now, as the &root; user, install the package:
 @y
-      Now, as the &root; user, install the package:
+      &root; ユーザーになってパッケージをインストールします。
 @z
 
 @x
@@ -476,7 +476,7 @@
         <command>sudo</command>, use the
         <option>--preserve-env=LIBSSH2_SYS_USE_PKG_CONFIG</option> option.
         For <command>su</command>, do <emphasis>not</emphasis> use the
-        <option>-</option> or <option>--login</option>.
+        <option>-</option> or <option>--login</option> options.
 @y
         If <command>sudo</command> or <command>su</command> is invoked for
         switching to the &root; user, ensure
@@ -485,7 +485,7 @@
         <command>sudo</command>, use the
         <option>--preserve-env=LIBSSH2_SYS_USE_PKG_CONFIG</option> option.
         For <command>su</command>, do <emphasis>not</emphasis> use the
-        <option>-</option> or <option>--login</option>.
+        <option>-</option> or <option>--login</option> options.
 @z
 
 @x
