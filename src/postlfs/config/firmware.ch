@@ -964,7 +964,7 @@
 @z
 
 @x
-      Some systems (especially budget laptops) utilizes a DSP shipped with
+      Some systems (especially budget laptops) utilize a DSP shipped with
       the CPU for connection with the audio codec.  The Sound Open Firmware
       must be loaded onto the DSP to make it functional.  These firmware
       files can be downloaded from
@@ -972,7 +972,7 @@
       Extract the tarball and changing into the extracted directory,
       then as the &root; user install the firmware:
 @y
-      Some systems (especially budget laptops) utilizes a DSP shipped with
+      Some systems (especially budget laptops) utilize a DSP shipped with
       the CPU for connection with the audio codec.  The Sound Open Firmware
       must be loaded onto the DSP to make it functional.  These firmware
       files can be downloaded from
