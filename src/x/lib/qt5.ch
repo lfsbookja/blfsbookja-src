@@ -29,18 +29,18 @@
 @x
   <!ENTITY qt5-download-http "&qt5-url;/qt-everywhere-opensource-src-&qt5-version;.tar.xz">
   <!ENTITY qt5-download-ftp  " ">
-  <!ENTITY qt5-md5sum        "37b79a3764b0c9157fa3686df209b25a">
+  <!ENTITY qt5-md5sum        "3fb1cd4f763f5d50d491508b7b99fb77">
   <!ENTITY qt5-size          "630 MB">
-  <!ENTITY qt5-buildsize     "15 GB (263 MB installed)">
-  <!ENTITY qt5-time          "9 SBU (using parallelism=8)">
+  <!ENTITY qt5-buildsize     "15 GB (264 MB installed)">
+  <!ENTITY qt5-time          "16 SBU (using parallelism=4)">
 ]>
 @y
   <!ENTITY qt5-download-http "&qt5-url;/qt-everywhere-opensource-src-&qt5-version;.tar.xz">
   <!ENTITY qt5-download-ftp  " ">
-  <!ENTITY qt5-md5sum        "37b79a3764b0c9157fa3686df209b25a">
+  <!ENTITY qt5-md5sum        "3fb1cd4f763f5d50d491508b7b99fb77">
   <!ENTITY qt5-size          "630 MB">
-  <!ENTITY qt5-buildsize     "15 GB (263 MB installed)">
-  <!ENTITY qt5-time          "9 SBU (using parallelism=8)">
+  <!ENTITY qt5-buildsize     "15 GB (264 MB installed)">
+  <!ENTITY qt5-time          "16 SBU (using parallelism=4)">
 ]>
 @z
 
@@ -328,7 +328,6 @@
       <ulink url="https://openal.org/">OpenAL</ulink>,
       <ulink url="https://freebsoft.org/speechd/">speech-dispatcher</ulink>, and
       <ulink url="http:///www.tslib.org/">tslib</ulink>
-      <!--<ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>-->
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
@@ -356,8 +355,19 @@
       <ulink url="https://openal.org/">OpenAL</ulink>,
       <ulink url="https://freebsoft.org/speechd/">speech-dispatcher</ulink>, and
       <ulink url="http:///www.tslib.org/">tslib</ulink>
-      <!--<ulink url="https://vulkan.lunarg.com/sdk/home/">Vulkan</ulink>-->
     </para>
+@z
+
+@x
+    <!-- Many of the dependencies in the qmake/configure output do not apply
+         to Linux-based platforms. I've selected the ones that do and put
+         them in as optional dependencies. -renodr -->
+  </sect2>
+@y
+    <!-- Many of the dependencies in the qmake/configure output do not apply
+         to Linux-based platforms. I've selected the ones that do and put
+         them in as optional dependencies. -renodr -->
+  </sect2>
 @z
 
 @x
@@ -378,14 +388,14 @@
     <para>
       The BLFS editors recommend installing <application>Qt5</application> in a
       directory other than <filename class="directory">/usr</filename>, ie
-      <filename class="directory">/opt/qt5</filename>.  To do this,  set the
+      <filename class="directory">/opt/qt5</filename>.  To do this, set the
       following environment variable:
     </para>
 @y
     <para>
       The BLFS editors recommend installing <application>Qt5</application> in a
       directory other than <filename class="directory">/usr</filename>, ie
-      <filename class="directory">/opt/qt5</filename>.  To do this,  set the
+      <filename class="directory">/opt/qt5</filename>.  To do this, set the
       following environment variable:
     </para>
 @z
@@ -547,22 +557,28 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
 @x
     <note>
       <para>
-        The BLFS editors do not recommend installing <application>Qt5</application>
-        into the /usr hierarchy because it becomes difficult to find
-        components and to update to a new version.  If you do want to install
-        <application>Qt5</application> in /usr, the directories need to
-        be specified explicitly.  In this case, set QT5PREFIX=/usr and add
-        the following to the configure arguments below:
+        The BLFS editors do not recommend installing
+        <application>Qt5</application> into the
+        <filename class="directory">/usr</filename> hierarchy because it
+        becomes difficult to find components and to update to a new version.
+        If you do want to install <application>Qt5</application> in
+        <filename class="directory">/usr</filename>, the directories need to
+        be specified explicitly.  In this case, set
+        <envar>QT5PREFIX=/usr</envar> and add the following to the configure
+        arguments below:
       </para>
 @y
     <note>
       <para>
-        The BLFS editors do not recommend installing <application>Qt5</application>
-        into the /usr hierarchy because it becomes difficult to find
-        components and to update to a new version.  If you do want to install
-        <application>Qt5</application> in /usr, the directories need to
-        be specified explicitly.  In this case, set QT5PREFIX=/usr and add
-        the following to the configure arguments below:
+        The BLFS editors do not recommend installing
+        <application>Qt5</application> into the
+        <filename class="directory">/usr</filename> hierarchy because it
+        becomes difficult to find components and to update to a new version.
+        If you do want to install <application>Qt5</application> in
+        <filename class="directory">/usr</filename>, the directories need to
+        be specified explicitly.  In this case, set
+        <envar>QT5PREFIX=/usr</envar> and add the following to the configure
+        arguments below:
       </para>
 @z
 
@@ -588,24 +604,6 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
             -translationdir /usr/share/qt5/translations \
             -examplesdir    /usr/share/doc/qt5/examples</userinput></screen>
     </note>
-@z
-
-@x
-    <para>
-      The libxkbcommon-1.6.0 package removes some definitions that are not used.  Remove 
-      those here:
-    </para>
-@y
-    <para>
-      The libxkbcommon-1.6.0 package removes some definitions that are not used.  Remove 
-      those here:
-    </para>
-@z
-
-@x
-    <screen><userinput>sed -i '276,279d' qtbase/src/platformsupport/input/xkbcommon/qxkbcommon.cpp</userinput></screen>
-@y
-    <screen><userinput>sed -i '276,279d' qtbase/src/platformsupport/input/xkbcommon/qxkbcommon.cpp</userinput></screen>
 @z
 
 @x
@@ -781,13 +779,13 @@ make</userinput></screen>
 @x
     <para>
       Remove references to the build directory from installed library
-      dependency (prl) <!--and profile include (pri)--> files by running the following
+      dependency (prl) files by running the following
       command as the <systemitem class="username">root</systemitem> user:
     </para>
 @y
     <para>
       Remove references to the build directory from installed library
-      dependency (prl) <!--and profile include (pri)--> files by running the following
+      dependency (prl) files by running the following
       command as the <systemitem class="username">root</systemitem> user:
     </para>
 @z
@@ -1019,31 +1017,17 @@ done</userinput></screen>
 @x
   <sect2 role="commands">
     <title>Command Explanations</title>
-    <!--
-    <para>
-      <command>sed ...</command>: Allows using
-      <application>Python 3</application> instead of <application>Python
-      2</application>. This command destroys the build for QtWebEngine, so do
-      not use it if you remove the <parameter>-skip qtwebengine</parameter>
-      switch.
-    </para>
-    -->
+@y
+  <sect2 role="commands">
+    <title>Command Explanations</title>
+@z
+
+@x
     <para>
       <parameter>-confirm-license</parameter>: Accept license
       without prompting user during configuration.
     </para>
 @y
-  <sect2 role="commands">
-    <title>Command Explanations</title>
-    <!--
-    <para>
-      <command>sed ...</command>: Allows using
-      <application>Python 3</application> instead of <application>Python
-      2</application>. This command destroys the build for QtWebEngine, so do
-      not use it if you remove the <parameter>-skip qtwebengine</parameter>
-      switch.
-    </para>
-    -->
     <para>
       <parameter>-confirm-license</parameter>: Accept license
       without prompting user during configuration.

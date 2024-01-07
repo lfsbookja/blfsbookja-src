@@ -29,18 +29,18 @@
 @x
   <!ENTITY qt5-download-http "&qt5-url;/qt-everywhere-opensource-src-&qt5-version;.tar.xz">
   <!ENTITY qt5-download-ftp  " ">
-  <!ENTITY qt5-md5sum        "37b79a3764b0c9157fa3686df209b25a">
+  <!ENTITY qt5-md5sum        "3fb1cd4f763f5d50d491508b7b99fb77">
   <!ENTITY qt5-size          "630 MB">
-  <!ENTITY qt5-buildsize     "8.6 GB (153 MB installed)">
-  <!ENTITY qt5-time          "4.8 SBU (using parallelism=8)">
+  <!ENTITY qt5-buildsize     "8.5 GB (154 MB installed)">
+  <!ENTITY qt5-time          "7.4 SBU (using parallelism=4)">
 ]>
 @y
   <!ENTITY qt5-download-http "&qt5-url;/qt-everywhere-opensource-src-&qt5-version;.tar.xz">
   <!ENTITY qt5-download-ftp  " ">
-  <!ENTITY qt5-md5sum        "37b79a3764b0c9157fa3686df209b25a">
+  <!ENTITY qt5-md5sum        "3fb1cd4f763f5d50d491508b7b99fb77">
   <!ENTITY qt5-size          "630 MB">
-  <!ENTITY qt5-buildsize     "8.6 GB (153 MB installed)">
-  <!ENTITY qt5-time          "4.8 SBU (using parallelism=8)">
+  <!ENTITY qt5-buildsize     "8.5 GB (154 MB installed)">
+  <!ENTITY qt5-time          "7.4 SBU (using parallelism=4)">
 ]>
 @z
 
@@ -343,6 +343,12 @@
 @z
 
 @x
+  </sect2>
+@y
+  </sect2>
+@z
+
+@x
   <sect2 role="qt5-prefix">
     <title>Setting the installation prefix</title>
 @y
@@ -487,22 +493,28 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
 @x
     <note>
       <para>
-        The BLFS editors do not recommend installing <application>qt5</application>
-        into the /usr hierarchy because it becomes difficult to find
-        components and to update to a new version.  If you do want to install
-        <application>qt5</application> in /usr, the directories need to
-        be specified explicitly.  In this case, set QT5PREFIX=/usr and add
-        the following to the configure arguments below:
+        The BLFS editors do not recommend installing
+        <application>qt5</application> into the
+        <filename class="directory">/usr</filename> hierarchy because it
+        becomes difficult to find components and to update to a new version.
+        If you do want to install <application>qt5</application> in
+        <filename class="directory">/usr</filename>, the directories need to
+        be specified explicitly.  In this case, set
+        <envar>QT5PREFIX=/usr</envar> and add the following to the configure
+        arguments below:
       </para>
 @y
     <note>
       <para>
-        The BLFS editors do not recommend installing <application>qt5</application>
-        into the /usr hierarchy because it becomes difficult to find
-        components and to update to a new version.  If you do want to install
-        <application>qt5</application> in /usr, the directories need to
-        be specified explicitly.  In this case, set QT5PREFIX=/usr and add
-        the following to the configure arguments below:
+        The BLFS editors do not recommend installing
+        <application>qt5</application> into the
+        <filename class="directory">/usr</filename> hierarchy because it
+        becomes difficult to find components and to update to a new version.
+        If you do want to install <application>qt5</application> in
+        <filename class="directory">/usr</filename>, the directories need to
+        be specified explicitly.  In this case, set
+        <envar>QT5PREFIX=/usr</envar> and add the following to the configure
+        arguments below:
       </para>
 @z
 
@@ -532,24 +544,6 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
 
 @x
     <para>
-      The libxkbcommon-1.6.0 package removes some definitions that are not
-      used. Remove those here also:
-    </para>
-@y
-    <para>
-      The libxkbcommon-1.6.0 package removes some definitions that are not
-      used. Remove those here also:
-    </para>
-@z
-
-@x
-    <screen><userinput>sed -i '276,279d' qtbase/src/platformsupport/input/xkbcommon/qxkbcommon.cpp</userinput></screen>
-@y
-    <screen><userinput>sed -i '276,279d' qtbase/src/platformsupport/input/xkbcommon/qxkbcommon.cpp</userinput></screen>
-@z
-
-@x
-    <para>
       Now apply a patch to pull in the fixes curated by kde for those
       modules which are required by packages mentioned in this book:
     </para>
@@ -612,11 +606,13 @@ sed -i -r '/base|tools|x11extras|svg|declarative|wayland/d' tempconf</userinput>
 
 @x
     <para>
-      Now, install <application>qt5</application> by running the following commands:
+      Now, install <application>qt5</application> by running the following
+      commands:
     </para>
 @y
     <para>
-      Now, install <application>qt5</application> by running the following commands:
+      Now, install <application>qt5</application> by running the following
+      commands:
     </para>
 @z
 
@@ -721,13 +717,13 @@ make</userinput></screen>
 @x
     <para>
       Remove references to the build directory from installed library
-      dependency (prl) <!--and profile include (pri)--> files by running the following
+      dependency (prl) files by running the following
       command as the <systemitem class="username">root</systemitem> user:
     </para>
 @y
     <para>
       Remove references to the build directory from installed library
-      dependency (prl) <!--and profile include (pri)--> files by running the following
+      dependency (prl) files by running the following
       command as the <systemitem class="username">root</systemitem> user:
     </para>
 @z

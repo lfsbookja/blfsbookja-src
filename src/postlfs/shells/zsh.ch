@@ -331,7 +331,7 @@
 @x
       <bridgehead renderas="sect3">Short Description</bridgehead>
 @y
-      <bridgehead renderas="sect3">&ShortDescription;</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x zsh
