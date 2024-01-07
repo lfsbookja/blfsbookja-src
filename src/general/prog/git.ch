@@ -265,8 +265,7 @@
 
 @x
       The test suite can be run in parallel mode. To run the test suite, issue:
-      <command>make -k test</command>. <!--If run as a normal user, 0 tests
-      should be reported as failed in the final summary.-->
+      <command>make test</command>. <!--If run as a normal user, 0 tests
 @y
       テストスイートは並行モードでの実行も可能です。
       ビルド結果をテストする場合は <command>make test</command> を実行します。

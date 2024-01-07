@@ -20,7 +20,7 @@
 @x
     <title>Introduction to zsh</title>
 @y
-    <title>Introduction to zsh</title>
+    <title>&IntroductionTo1;zsh&IntroductionTo2;</title>
 @z
 
 @x
@@ -40,67 +40,43 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&zsh-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&zsh-download-http;"/>
+          &Download; (HTTP): <ulink url="&zsh-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&zsh-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&zsh-download-ftp;"/>
+          &Download; (FTP): <ulink url="&zsh-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &zsh-md5sum;
 @y
-          Download MD5 sum: &zsh-md5sum;
+          &Download; MD5 sum: &zsh-md5sum;
 @z
 
 @x
           Download size: &zsh-size;
 @y
-          Download size: &zsh-size;
+          &DownloadSize;: &zsh-size;
 @z
 
 @x
           Estimated disk space required: &zsh-buildsize;
 @y
-          Estimated disk space required: &zsh-buildsize;
+          &Estimateddiskspacerequired;: &zsh-buildsize;
 @z
 
 @x
           Estimated build time: &zsh-time;
 @y
-          Estimated build time: &zsh-time;
-@z
-
-@x
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@z
-
-@x
-          Optional Documentation: <ulink
-@y
-          Optional Documentation: <ulink
-@z
-
-@x
-          Documentation MD5 sum: &zsh-doc-md5sum;
-@y
-          Documentation MD5 sum: &zsh-doc-md5sum;
-@z
-
-@x
-          Documentation download size: &zsh-doc-size;
-@y
-          Documentation download size: &zsh-doc-size;
+          &Estimatedbuildtime;: &zsh-time;
 @z
 
 @x
@@ -116,7 +92,7 @@
 @x
     <bridgehead renderas="sect3">zsh Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">zsh Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;zsh&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -126,9 +102,9 @@
       <xref linkend="valgrind"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/> and
+      <xref linkend="pcre"/>,
       <xref linkend="valgrind"/>
     </para>
 @z
@@ -136,23 +112,20 @@
 @x
     <title>Installation of zsh</title>
 @y
-    <title>Installation of zsh</title>
+    <title>&InstallationOf1;zsh&InstallationOf2;</title>
 @z
 
 @x
-      If you downloaded the optional documentation, unpack it with
-      the following command:
+      Adapt the documentation build system for texinfo-7.0 or later:
 @y
-      If you downloaded the optional documentation, unpack it with
-      the following command:
+      Adapt the documentation build system for texinfo-7.0 or later:
 @z
 
 @x
       Install <application>zsh</application> by running the following
       commands:
 @y
-      Install <application>zsh</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>zsh</application> をビルドします。
 @z
 
 @x
@@ -168,23 +141,13 @@
 @x
       To test the results, issue: <command>make check</command>.
 @y
-      To test the results, issue: <command>make check</command>.
+      ビルド結果をテストする場合は <command>make check</command> を実行します。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
-@z
-
-@x
-      If you downloaded the optional documentation, install it by issuing
-      the following commands as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      If you downloaded the optional documentation, install it by issuing
-      the following commands as the
-      <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -200,7 +163,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -250,13 +213,13 @@
 @x
     <title>Configuring zsh</title>
 @y
-    <title>Configuring zsh</title>
+    <title>&Configuring1;zsh&Configuring2;</title>
 @z
 
 @x
       <title>Config Files</title>
 @y
-      <title>Config Files</title>
+      <title>&ConfigFiles;</title>
 @z
 
 @x
@@ -324,7 +287,7 @@
 @x
       <title>Configuration Information</title>
 @y
-      <title>Configuration Information</title>
+      <title>&ConfigInfo;</title>
 @z
 
 @x
@@ -340,7 +303,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -348,9 +311,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -359,16 +322,16 @@
         /usr/lib/zsh/&zsh-version;/</seg>
         <seg>/usr/{lib,share}/zsh and /usr/share/doc/zsh-&zsh-version;</seg>
 @y
-        <seg>zsh and zsh-&zsh-version; (hardlinked to each other)</seg>
+        <seg>zsh, zsh-&zsh-version; (hardlinked to each other)</seg>
         <seg>Numerous plugin helper modules under
         /usr/lib/zsh/&zsh-version;/</seg>
-        <seg>/usr/{lib,share}/zsh and /usr/share/doc/zsh-&zsh-version;</seg>
+        <seg>/usr/{lib,share}/zsh, /usr/share/doc/zsh-&zsh-version;</seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Description</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Description</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescription;</bridgehead>
 @z
 
 @x zsh
