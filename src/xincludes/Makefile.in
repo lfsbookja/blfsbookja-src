@@ -257,6 +257,7 @@ CHANGE_FILES = \
 	perl-standard-install.ch    \
 	perl-unsafe-install.ch      \
 	pip3-cmd-explain.ch         \
+	rm-la-file-referring-icu.ch \
 	scrollkeeper-dir.ch         \
 	SIOCGSTAMP.ch               \
 	static-libraries.ch         \
