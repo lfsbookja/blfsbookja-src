@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY evolution-time          "1.3 SBU (Using parallelism=4)">
+  <!ENTITY evolution-time          "1.0 SBU (Using parallelism=4)">
 @y
-  <!ENTITY evolution-time          "1.3 SBU (parallelism=4 利用)">
+  <!ENTITY evolution-time          "1.0 SBU (parallelism=4 利用)">
 @z
 
 @x

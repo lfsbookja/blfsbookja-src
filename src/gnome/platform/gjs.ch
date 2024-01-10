@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY gjs-buildsize     "240 MB (with tests)">
-  <!ENTITY gjs-time          "0.3 SBU (with tests; with parallelism=4)">
+  <!ENTITY gjs-buildsize     "244 MB (with tests)">
+  <!ENTITY gjs-time          "0.2 SBU (with tests; with parallelism=4)">
 @y
-  <!ENTITY gjs-buildsize     "240 MB（テスト込み）">
-  <!ENTITY gjs-time          "0.3 SBU（テスト込み; parallelism=4 利用）">
+  <!ENTITY gjs-buildsize     "244 MB（テスト込み）">
+  <!ENTITY gjs-time          "0.2 SBU（テスト込み; parallelism=4 利用）">
 @z
 
 @x

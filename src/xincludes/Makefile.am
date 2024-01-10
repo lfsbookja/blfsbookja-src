@@ -3,12 +3,6 @@
 ##
 
 CHANGE_FILES = \
-	gnome-mandir.ch             \
-	gnome-prefix.ch             \
-	gnome-sysconfdir.ch         \
-	gnome2.ch                   \
-	gnome-old-sysconfdir.ch     \
-	gnome-old-prefix.ch         \
 	gsettings-destdir.ch        \
 	gst10-objc-error.ch         \
 	gst10-plugins.ch            \
@@ -25,7 +19,6 @@ CHANGE_FILES = \
 	perl-unsafe-install.ch      \
 	pip3-cmd-explain.ch         \
 	rm-la-file-referring-icu.ch \
-	scrollkeeper-dir.ch         \
 	SIOCGSTAMP.ch               \
 	static-libraries.ch         \
 	texrecommendlibs.ch         \
@@ -39,9 +32,6 @@ CHANGE_FILES = \
 	texprogs.ch                 \
 	update-desktop-database.ch  \
 	update-icons-and-desktop.ch \
-	use-unzip.ch                \
-	without-gnome.ch            \
-	without-scrollkeeper.ch     \
-	X11R6_symlink.ch
+	use-unzip.ch
 
 include $(top_srcdir)/build-aux/main.mk

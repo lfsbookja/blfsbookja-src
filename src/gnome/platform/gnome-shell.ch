@@ -11,10 +11,10 @@
 
 @x
   <!ENTITY gnome-shell-buildsize     "60 MB (with tests)">
-  <!ENTITY gnome-shell-time          "0.2 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gnome-shell-time          "0.4 SBU (Using parallelism=4; with tests)">
 @y
   <!ENTITY gnome-shell-buildsize     "60 MB（テスト込み）">
-  <!ENTITY gnome-shell-time          "0.2 SBU（parallelism=4 利用時。テスト込み。）">
+  <!ENTITY gnome-shell-time          "0.4 SBU（parallelism=4 利用時。テスト込み。）">
 @z
 
 @x
