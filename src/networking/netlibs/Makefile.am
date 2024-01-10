@@ -7,7 +7,7 @@ CHANGE_FILES = \
 	curl.ch              \
 	geoclue2.ch          \
 	glib-networking.ch   \
-	kdsoup.ch            \
+	kdsoap.ch            \
 	ldns.ch              \
 	libevent.ch          \
 	libmnl.ch            \

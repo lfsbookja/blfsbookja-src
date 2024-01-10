@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY qca-time          "0.4 SBU (using parallelism=4; add 0.1 SBU for tests)">
+  <!ENTITY qca-time          "0.5 SBU (using parallelism=4; add 0.1 SBU for tests)">
 @y
-  <!ENTITY qca-time          "0.4 SBU (using parallelism=4; add 0.1 SBU for tests)">
+  <!ENTITY qca-time          "0.5 SBU (using parallelism=4; add 0.1 SBU for tests)">
 @z
 
 @x
