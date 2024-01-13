@@ -88,6 +88,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
+      <xref linkend="brotli"/>,
       <xref linkend="c-ares"/>,
       <xref linkend="icu"/>,
       <xref linkend="libuv"/>, and
@@ -96,6 +97,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="brotli"/>,
       <xref linkend="c-ares"/>,
       <xref linkend="icu"/>,
       <xref linkend="libuv"/>,
@@ -165,10 +167,10 @@
 @z
 
 @x
-      <parameter>--shared-{cares,libuv,nghttp2,openssl,zlib}</parameter>:
+      <parameter>--shared-{brotli,cares,libuv,nghttp2,openssl,zlib}</parameter>:
       use the system installed libraries instead of local copies.
 @y
-      <parameter>--shared-{cares,libuv,nghttp2,openssl,zlib}</parameter>:
+      <parameter>--shared-{brotli,cares,libuv,nghttp2,openssl,zlib}</parameter>:
       use the system installed libraries instead of local copies.
 @z
 
