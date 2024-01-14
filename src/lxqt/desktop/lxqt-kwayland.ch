@@ -237,16 +237,20 @@ cd       build &amp;&amp;
 @z
 
 @x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DBUILD_TESTING=OFF         \
-      -Wno-dev ..                 &amp;&amp;
+cmake -DCMAKE_INSTALL_PREFIX=/usr        \
+      -DCMAKE_INSTALL_LIBEXECDIR=libexec \
+      -DKDE_INSTALL_USE_QT_SYS_PATHS=ON  \
+      -DCMAKE_BUILD_TYPE=Release         \
+      -DBUILD_TESTING=OFF                \
+      -Wno-dev ..                        &amp;&amp;
 make</userinput></screen>
 @y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DBUILD_TESTING=OFF         \
-      -Wno-dev ..                 &amp;&amp;
+cmake -DCMAKE_INSTALL_PREFIX=/usr        \
+      -DCMAKE_INSTALL_LIBEXECDIR=libexec \
+      -DKDE_INSTALL_USE_QT_SYS_PATHS=ON  \
+      -DCMAKE_BUILD_TYPE=Release         \
+      -DBUILD_TESTING=OFF                \
+      -Wno-dev ..                        &amp;&amp;
 make</userinput></screen>
 @z
 
@@ -277,19 +281,47 @@ make</userinput></screen>
 @z
 
 @x
+  </sect2>
+@y
+  </sect2>
+@z
+
+@x
+  <sect2 role="commands">
+    <title>Command Explanations</title>
+@y
+  <sect2 role="commands">
+    <title>Command Explanations</title>
+@z
+
+@x
     <para>
-      Finally, remove some unneeded files as the &root; user:
+      <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
+      the default in extra-cmake-modules, wich is <filename
+      class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
     </para>
 @y
     <para>
-      Finally, remove some unneeded files as the &root; user:
+      <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
+      the default in extra-cmake-modules, wich is <filename
+      class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
     </para>
 @z
 
 @x
-<screen role="root"><userinput>rm -rf /usr/mkspecs</userinput></screen>
+    <para>
+      <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
+      installation of Qt plugins in the same directory as <xref linkend="qt5"/>
+      itself. Otherwise they get installed into <filename
+      class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
+    </para>
 @y
-<screen role="root"><userinput>rm -rf /usr/mkspecs</userinput></screen>
+    <para>
+      <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
+      installation of Qt plugins in the same directory as <xref linkend="qt5"/>
+      itself. Otherwise they get installed into <filename
+      class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
+    </para>
 @z
 
 @x

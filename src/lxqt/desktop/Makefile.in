@@ -271,7 +271,8 @@ CHANGE_FILES = \
 	pcmanfm-qt.ch           \
 	post-install.ch         \
 	pre-install.ch          \
-	qtxdg-tools.ch
+	qtxdg-tools.ch          \
+	xdg-desktop-portal-lxqt.ch
 
 thisdir = ${shell echo $(subdir) | sed -e "s|^src/||" -e "s|^src|\.|"}
 BOOKdir = @abs_bookdir@/$(thisdir)

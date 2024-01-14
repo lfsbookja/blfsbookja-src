@@ -155,7 +155,8 @@
   <bridgehead renderas="sect4">Recommended (runtime)</bridgehead>
   <para role="recommended">
     <xref role="runtime" linkend="accountsservice"/>,
-    <xref role="runtime" linkend="smartmontools"/>, and
+    <xref role="runtime" linkend="smartmontools"/>,
+    <xref role="runtime" linkend="xdg-desktop-portal"/>, and
     <xref role="runtime" linkend="xwayland"/>
   </para>
 @y
@@ -163,6 +164,7 @@
   <para role="recommended">
     <xref role="runtime" linkend="accountsservice"/>,
     <xref role="runtime" linkend="smartmontools"/>,
+    <xref role="runtime" linkend="xdg-desktop-portal"/>,
     <xref role="runtime" linkend="xwayland"/>
   </para>
 @z

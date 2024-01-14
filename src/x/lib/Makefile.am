@@ -53,6 +53,8 @@ CHANGE_FILES = \
 	tepl.ch                   \
 	vulkan-headers.ch         \
 	vulkan-loader.ch          \
+	xdg-desktop-portal.ch     \
+	xdg-desktop-portal-gtk.ch \
 	webkitgtk.ch
 
 include $(top_srcdir)/build-aux/main.mk

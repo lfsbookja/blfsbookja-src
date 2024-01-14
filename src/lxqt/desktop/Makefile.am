@@ -38,6 +38,7 @@ CHANGE_FILES = \
 	pcmanfm-qt.ch           \
 	post-install.ch         \
 	pre-install.ch          \
-	qtxdg-tools.ch
+	qtxdg-tools.ch          \
+	xdg-desktop-portal-lxqt.ch
 
 include $(top_srcdir)/build-aux/main.mk

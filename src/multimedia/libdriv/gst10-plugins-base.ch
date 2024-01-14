@@ -110,7 +110,6 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libogg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="libtheora"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="mesa"/>,
       <xref linkend="pango"/>,
@@ -128,7 +127,6 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libogg"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="libtheora"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="mesa"/>,
       <xref linkend="pango"/>,
@@ -142,6 +140,7 @@
     <para role="optional">
       <xref linkend="graphene"/>,
       <xref linkend="gtk3"/> (for examples),
+      <xref linkend="libtheora"/>,
       <xref linkend="opus"/>,
       &qt5-deps; (for examples),
       <xref linkend="sdl2"/>,
@@ -156,6 +155,7 @@
     <para role="optional">
       <xref linkend="graphene"/>,
       <xref linkend="gtk3"/> (for examples),
+      <xref linkend="libtheora"/>,
       <xref linkend="opus"/>,
       &qt5-deps; (for examples),
       <xref linkend="sdl2"/>,
