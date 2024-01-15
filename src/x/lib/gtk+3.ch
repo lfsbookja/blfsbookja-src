@@ -102,8 +102,9 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="adwaita-icon-theme"/> (circular-build without and if desired, rebuild; 
-        default for some gtk+3 settings keys, also needed for tests),
+      <xref role='runtime' linkend="adwaita-icon-theme"/>
+        (at runtime; default for some gtk+3 settings keys and
+        also needed for one test),
       <xref linkend="docbook-xsl"/> (for generating manual pages),
       <xref linkend="hicolor-icon-theme"/> (needed for tests),
       <xref linkend="iso-codes"/>,
@@ -116,8 +117,9 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="adwaita-icon-theme"/> (circular-build without and if desired, rebuild; 
-        default for some gtk+3 settings keys, also needed for tests),
+      <xref role='runtime' linkend="adwaita-icon-theme"/>
+        (at runtime; default for some gtk+3 settings keys and
+        also needed for one test),
       <xref linkend="docbook-xsl"/> (for generating manual pages),
       <xref linkend="hicolor-icon-theme"/> (needed for tests),
       <xref linkend="iso-codes"/>,

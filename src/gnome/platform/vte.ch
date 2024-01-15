@@ -120,13 +120,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="fribidi"/>, and
       <xref linkend="gi-docgen"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="fribidi"/>,
       <xref linkend="gi-docgen"/>
     </para>
 @z
@@ -168,14 +166,6 @@
 @y
       <command>rm -v /etc/profile.d/vte.*</command>: This command removes two
       files installed in /etc/profile.d that have no use on a LFS system.
-@z
-
-@x
-      <parameter>-Dfribidi=false</parameter>: Omit this switch if you want
-      to enable bidirectional capabilities.
-@y
-      <parameter>-Dfribidi=false</parameter>: Omit this switch if you want
-      to enable bidirectional capabilities.
 @z
 
 @x

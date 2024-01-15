@@ -265,11 +265,13 @@
 @x
       <option>--enable-wayland</option>: This switch enables building
       the <application>Wayland</application> support programs.
-      Use it if you have installed the optional dependencies.
+      It's automatically enabled if both <xref linkend='libxkbcommon'/> and
+      <xref linkend='wayland'/> are installed.
 @y
       <option>--enable-wayland</option>: This switch enables building
       the <application>Wayland</application> support programs.
-      Use it if you have installed the optional dependencies.
+      It's automatically enabled if both <xref linkend='libxkbcommon'/> and
+      <xref linkend='wayland'/> are installed.
 @z
 
 @x

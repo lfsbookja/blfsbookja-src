@@ -94,15 +94,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="gnome-menus"/>
-      (runtime, for Applications Menu extension) and
       <xref linkend="sassc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref role="runtime" linkend="gnome-menus"/>
-      (runtime, for Applications Menu extension) and
       <xref linkend="sassc"/>
     </para>
 @z

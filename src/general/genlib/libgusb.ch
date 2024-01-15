@@ -101,7 +101,6 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="umockdev"/>,
       <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
       which is also required for the tests), and
       <xref linkend="vala"/>
@@ -110,7 +109,6 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="umockdev"/>,
       <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
       which is also required for the tests), and
       <xref linkend="vala"/>
@@ -120,12 +118,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gi-docgen"/>
+      <xref linkend="gi-docgen"/> and
+      <xref linkend="umockdev"/> (for full test coverage)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gi-docgen"/>
+      <xref linkend="gi-docgen"/>,
+      <xref linkend="umockdev"/> (for full test coverage)
     </para>
 @z
 

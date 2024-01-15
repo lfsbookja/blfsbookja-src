@@ -111,6 +111,12 @@
 @z
 
 @x
+      Now, as the <systemitem class="username">root</systemitem> user:
+@y
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
       To test the results, issue, as the 
       <systemitem class="username">root</systemitem> user:
 @y
@@ -126,12 +132,6 @@
       Note that several tests will fail if certain uncommon kernel options
       were not used when the kernel was built.  These include CONFIG_BIG_KEYS,
       CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.
-@z
-
-@x
-      Now, as the <systemitem class="username">root</systemitem> user:
-@y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

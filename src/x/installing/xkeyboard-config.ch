@@ -85,12 +85,16 @@
 @x
     <bridgehead renderas="sect4">Optional (required for tests)</bridgehead>
     <para role="optional">
-      <xref linkend="pytest"/>
+      <xref linkend="libxkbcommon"/>,
+      <xref linkend="pytest"/>, and
+      <xref linkend="xorg7-app"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (required for tests)</bridgehead>
     <para role="optional">
-      <xref linkend="pytest"/>
+      <xref linkend="libxkbcommon"/>,
+      <xref linkend="pytest"/>,
+      <xref linkend="xorg7-app"/>
     </para>
 @z
 

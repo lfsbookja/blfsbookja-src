@@ -152,6 +152,7 @@
       <xref role="runtime" linkend="gdm"/>,
       <xref role="runtime" linkend="gnome-backgrounds"/>,
       <xref role="runtime" linkend="gnome-control-center"/>,
+      <xref role="runtime" linkend="gnome-menus"/>,
       <xref role="runtime" linkend="libgweather"/>,
       <phrase revision="sysv">and</phrase>
       <phrase revision="systemd">
@@ -170,10 +171,10 @@
       <xref role="runtime" linkend="gdm"/>,
       <xref role="runtime" linkend="gnome-backgrounds"/>,
       <xref role="runtime" linkend="gnome-control-center"/>,
+      <xref role="runtime" linkend="gnome-menus"/>,
       <xref role="runtime" linkend="libgweather"/>,
-      <phrase revision="sysv">and</phrase>
       <phrase revision="systemd">
-        <xref role='runtime' linkend="systemd"/>, and
+        <xref role='runtime' linkend="systemd"/>,
       </phrase>
       <xref role="runtime" linkend="telepathy-mission-control"/>
     </para>
