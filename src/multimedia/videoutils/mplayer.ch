@@ -426,7 +426,7 @@
       <xref linkend="libdv"/>,
       <xref linkend="libmad"/>,
       <xref linkend="libmpeg2"/>,
-      <xref linkend="libtheora"/>,
+      <!--<xref linkend="libtheora"/>,-->
       <xref linkend="libvpx"/>,
       <xref linkend="lzo"/>,
       <xref linkend="mpg123"/>,
@@ -441,6 +441,7 @@
       <ulink url="https://www.videolan.org/developers/libdca.html">libdca</ulink>,
       <ulink url="https://wiki.multimedia.cx/index.php?title=NUT">libnut</ulink>,
       <ulink url="https://www.musepack.net/">libmpcdec</ulink>,
+      <ulink url="https://www.theora.org">libtheora</ulink>,
       <ulink url="https://sourceforge.net/projects/opencore-amr/">OpenCore
       Adaptive Multi Rate</ulink>,
 <!--      <ulink url="http://diracvideo.org/download/schroedinger/">Schroedinger</ulink>,-->
@@ -460,7 +461,7 @@
       <xref linkend="libdv"/>,
       <xref linkend="libmad"/>,
       <xref linkend="libmpeg2"/>,
-      <xref linkend="libtheora"/>,
+      <!--<xref linkend="libtheora"/>,-->
       <xref linkend="libvpx"/>,
       <xref linkend="lzo"/>,
       <xref linkend="mpg123"/>,
@@ -475,6 +476,7 @@
       <ulink url="https://www.videolan.org/developers/libdca.html">libdca</ulink>,
       <ulink url="https://wiki.multimedia.cx/index.php?title=NUT">libnut</ulink>,
       <ulink url="https://www.musepack.net/">libmpcdec</ulink>,
+      <ulink url="https://www.theora.org">libtheora</ulink>,
       <ulink url="https://sourceforge.net/projects/opencore-amr/">OpenCore
       Adaptive Multi Rate</ulink>,
 <!--      <ulink url="http://diracvideo.org/download/schroedinger/">Schroedinger</ulink>,-->

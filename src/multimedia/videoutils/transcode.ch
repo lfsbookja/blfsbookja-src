@@ -289,7 +289,7 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libogg"/>,
       <xref linkend="libquicktime"/>,
-      <xref linkend="libtheora"/>,
+      <!--<xref linkend="libtheora"/>,-->
       <xref linkend="libvorbis"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="lzo"/>,
@@ -297,6 +297,7 @@
       <xref linkend="v4l-utils"/>,
       <xref linkend="x264"/>,
       <xref linkend="xvid"/>
+      <ulink url="https://www.theora.org">libtheora</ulink>, 
       <ulink url="https://sourceforge.net/projects/mjpeg/">MJPEG Tools</ulink>, and
       <ulink url="https://netlib.org/pvm3/">PVM3</ulink>,
     </para>
@@ -311,7 +312,7 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libogg"/>,
       <xref linkend="libquicktime"/>,
-      <xref linkend="libtheora"/>,
+      <!--<xref linkend="libtheora"/>,-->
       <xref linkend="libvorbis"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="lzo"/>,
@@ -319,6 +320,7 @@
       <xref linkend="v4l-utils"/>,
       <xref linkend="x264"/>,
       <xref linkend="xvid"/>
+      <ulink url="https://www.theora.org">libtheora</ulink>, 
       <ulink url="https://sourceforge.net/projects/mjpeg/">MJPEG Tools</ulink>, and
       <ulink url="https://netlib.org/pvm3/">PVM3</ulink>,
     </para>

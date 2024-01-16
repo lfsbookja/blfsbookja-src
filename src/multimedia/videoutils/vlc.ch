@@ -293,7 +293,7 @@
       <xref linkend="libass"/>,
       <xref linkend="libmpeg2"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="libtheora"/>,
+      <!--<xref linkend="libtheora"/>,-->
       <xref linkend="libva"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="opus"/>,
@@ -308,6 +308,7 @@
       <ulink url="https://sourceforge.net/projects/fluidsynth/">FluidSynth</ulink>,
       <ulink url="https://www.videolan.org/developers/libdca.html">libdca</ulink>,
       <ulink url="https://wiki.xiph.org/index.php/OggKate">libkate</ulink>,
+      <ulink url="https://www.theora.org">libthora</ulink>,
       <ulink url="https://www.khronos.org/openmax/">OpenMAX</ulink>,
       <ulink url="https://sourceforge.net/projects/schrodinger/">Schroedinger</ulink>,
       <ulink url="https://github.com/toots/shine">Shine</ulink>,
@@ -325,7 +326,7 @@
       <xref linkend="libass"/>,
       <xref linkend="libmpeg2"/>,
       <xref linkend="libpng"/>,
-      <xref linkend="libtheora"/>,
+      <!--<xref linkend="libtheora"/>,-->
       <xref linkend="libva"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="opus"/>,
@@ -340,6 +341,7 @@
       <ulink url="https://sourceforge.net/projects/fluidsynth/">FluidSynth</ulink>,
       <ulink url="https://www.videolan.org/developers/libdca.html">libdca</ulink>,
       <ulink url="https://wiki.xiph.org/index.php/OggKate">libkate</ulink>,
+      <ulink url="https://www.theora.org">libthora</ulink>,
       <ulink url="https://www.khronos.org/openmax/">OpenMAX</ulink>,
       <ulink url="https://sourceforge.net/projects/schrodinger/">Schroedinger</ulink>,
       <ulink url="https://github.com/toots/shine">Shine</ulink>,

@@ -206,7 +206,6 @@
       <xref linkend="fdk-aac"/>,
       <xref linkend="freetype2"/>,
       <xref linkend="lame"/>,
-      <xref linkend="libtheora"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="libvpx"/>,
       <xref linkend="opus"/>,
@@ -222,7 +221,6 @@
       <xref linkend="fdk-aac"/>,
       <xref linkend="freetype2"/>,
       <xref linkend="lame"/>,
-      <xref linkend="libtheora"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="libvpx"/>,
       <xref linkend="opus"/>,
@@ -259,6 +257,7 @@
       <xref linkend="frei0r"/>,
       <xref linkend="libcdio"/> (to identify and play CDs),
       <xref linkend="libdrm"/> (for <quote>kmsgrab</quote> input),
+      <!--<xref linkend="libtheora"/>,-->
       <xref linkend="libwebp"/>,
       <xref linkend="opencv"/>,
       <xref linkend="openjpeg2"/>,
@@ -287,6 +286,7 @@
       <ulink url="https://github.com/Distrotech/libnut">libnut</ulink> (Git checkout),
       <ulink url="https://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
       <ulink url="https://www.libssh.org/">libssh</ulink>,
+      <ulink url="https://www.theora.org">libtheora</ulink>,
       <ulink url="https://openal.org/">OpenAL</ulink>,
       <ulink url="https://sourceforge.net/projects/opencore-amr">OpenCore AMR</ulink>,
       <ulink url="https://github.com/Haivision/srt">Srt</ulink>,
@@ -306,6 +306,7 @@
       <xref linkend="frei0r"/>,
       <xref linkend="libcdio"/> (to identify and play CDs),
       <xref linkend="libdrm"/> (for <quote>kmsgrab</quote> input),
+      <!--<xref linkend="libtheora"/>,-->
       <xref linkend="libwebp"/>,
       <xref linkend="opencv"/>,
       <xref linkend="openjpeg2"/>,
@@ -334,6 +335,7 @@
       <ulink url="https://github.com/Distrotech/libnut">libnut</ulink> (Git checkout),
       <ulink url="https://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
       <ulink url="https://www.libssh.org/">libssh</ulink>,
+      <ulink url="https://www.theora.org">libtheora</ulink>,
       <ulink url="https://openal.org/">OpenAL</ulink>,
       <ulink url="https://sourceforge.net/projects/opencore-amr">OpenCore AMR</ulink>,
       <ulink url="https://github.com/Haivision/srt">Srt</ulink>,
@@ -406,7 +408,6 @@
             --enable-libfreetype \
             --enable-libmp3lame  \
             --enable-libopus     \
-            --enable-libtheora   \
             --enable-libvorbis   \
             --enable-libvpx      \
             --enable-libx264     \
@@ -428,7 +429,6 @@
             --enable-libfreetype \
             --enable-libmp3lame  \
             --enable-libopus     \
-            --enable-libtheora   \
             --enable-libvorbis   \
             --enable-libvpx      \
             --enable-libx264     \
@@ -873,32 +873,15 @@ grep ^TEST ../fate.log | wc -l</userinput></screen>
       <parameter>--enable-libmp3lame</parameter>: Enables MP3 audio encoding
       via <filename class="libraryfile">libmp3lame</filename>.
     </para>
-@y
+<!--
     <para>
-      <parameter>--enable-libmp3lame</parameter>: Enables MP3 audio encoding
-      via <filename class="libraryfile">libmp3lame</filename>.
-    </para>
-@z
-
-@x
-    <para>
-      <parameter>--enable-libvorbis</parameter>
-      <parameter>--enable-libtheora</parameter>: Enables
+      <parameter>- -enable-libvorbis</parameter>
+      <parameter>- -enable-libtheora</parameter>: Enables
       Theora video encoding via <filename
       class="libraryfile">libvorbis</filename> and <filename
       class="libraryfile">libtheora</filename>.
     </para>
-@y
-    <para>
-      <parameter>--enable-libvorbis</parameter>
-      <parameter>--enable-libtheora</parameter>: Enables
-      Theora video encoding via <filename
-      class="libraryfile">libvorbis</filename> and <filename
-      class="libraryfile">libtheora</filename>.
-    </para>
-@z
-
-@x
+-->
     <para>
       <parameter>--enable-libvorbis</parameter>
       <parameter>--enable-libvpx</parameter>: Enables WebM
@@ -906,6 +889,19 @@ grep ^TEST ../fate.log | wc -l</userinput></screen>
       <filename class="libraryfile">libvpx</filename>.
     </para>
 @y
+    <para>
+      <parameter>--enable-libmp3lame</parameter>: Enables MP3 audio encoding
+      via <filename class="libraryfile">libmp3lame</filename>.
+    </para>
+<!--
+    <para>
+      <parameter>- -enable-libvorbis</parameter>
+      <parameter>- -enable-libtheora</parameter>: Enables
+      Theora video encoding via <filename
+      class="libraryfile">libvorbis</filename> and <filename
+      class="libraryfile">libtheora</filename>.
+    </para>
+-->
     <para>
       <parameter>--enable-libvorbis</parameter>
       <parameter>--enable-libvpx</parameter>: Enables WebM

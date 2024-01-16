@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY cpio-buildsize     "19 MB (with tests and docs)">
-  <!ENTITY cpio-time          "0.2 SBU (with tests and docs)">
+  <!ENTITY cpio-buildsize     "21 MB (with tests and docs)">
+  <!ENTITY cpio-time          "0.3 SBU (with tests and docs)">
 @y
-  <!ENTITY cpio-buildsize     "19 MB (テストとドキュメント込み)">
-  <!ENTITY cpio-time          "0.2 SBU (テストとドキュメント込み)">
+  <!ENTITY cpio-buildsize     "21 MB (テストとドキュメント込み)">
+  <!ENTITY cpio-time          "0.3 SBU (テストとドキュメント込み)">
 @z
 
 @x

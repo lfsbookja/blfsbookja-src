@@ -50,7 +50,6 @@ CHANGE_FILES = \
 	libquicktime.ch       \
 	libsamplerate.ch      \
 	libsndfile.ch         \
-	libtheora.ch          \
 	libva.ch              \
 	libvdpau.ch           \
 	libvdpau-va-gl.ch     \
