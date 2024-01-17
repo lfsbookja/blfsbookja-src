@@ -10,11 +10,11 @@
 @z
 
 @x
-  <!ENTITY libxml2-buildsize     "103 MB (with tests)">
-  <!ENTITY libxml2-time          "0.6 SBU (Using parallelism=4; with tests)">
+  <!ENTITY libxml2-buildsize     "98 MB (with tests)">
+  <!ENTITY libxml2-time          "0.4 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libxml2-buildsize     "103 MB (テスト込み)">
-  <!ENTITY libxml2-time          "0.6 SBU (parallelism=4 利用; テスト込み)">
+  <!ENTITY libxml2-buildsize     "98 MB (テスト込み)">
+  <!ENTITY libxml2-time          "0.4 SBU (parallelism=4 利用; テスト込み)">
 @z
 
 @x
