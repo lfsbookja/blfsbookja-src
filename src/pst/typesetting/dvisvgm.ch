@@ -77,8 +77,9 @@
       <!-- EDITORS: the docs say it needs clipper, but it uses an internal
        modified version and cannot be built with system clipper -->
       <xref linkend="brotli"/>,
-      <xref linkend="gs"/>, and
-      <xref linkend="potrace"/>
+      <xref linkend="gs"/>,
+      <xref linkend="potrace"/>, and
+      <xref linkend="texlive"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -87,7 +88,8 @@
        modified version and cannot be built with system clipper -->
       <xref linkend="brotli"/>,
       <xref linkend="gs"/>,
-      <xref linkend="potrace"/>
+      <xref linkend="potrace"/>,
+      <xref linkend="texlive"/>
     </para>
 @z
 

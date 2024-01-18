@@ -59,12 +59,12 @@
 @z
 
 @x
-  <indexterm zone="qt5">
-    <primary sortas="a-Qt">Qt</primary>
+  <indexterm zone="qt5-alternate">
+    <primary sortas="a-Qt5-alternate">Qt Alternate</primary>
   </indexterm>
 @y
-  <indexterm zone="qt5">
-    <primary sortas="a-Qt">Qt</primary>
+  <indexterm zone="qt5-alternate">
+    <primary sortas="a-Qt5-alternate">Qt Alternate</primary>
   </indexterm>
 @z
 

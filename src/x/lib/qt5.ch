@@ -60,11 +60,11 @@
 
 @x
   <indexterm zone="qt5">
-    <primary sortas="a-Qt">Qt</primary>
+    <primary sortas="a-Qt5">Qt</primary>
   </indexterm>
 @y
   <indexterm zone="qt5">
-    <primary sortas="a-Qt">Qt</primary>
+    <primary sortas="a-Qt5">Qt</primary>
   </indexterm>
 @z
 
