@@ -108,8 +108,10 @@
     <para role="optional">
       <xref linkend="libnsl"/>,
       <xref linkend="libtirpc"/>,
+      <xref linkend="rpcsvc-proto"/>,
       &berkeley-db;,
-      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>, and
+      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>,
+      <ulink url="https://github.com/openSUSE/libeconf">libeconf</ulink>, and
       <ulink url="https://www.prelude-siem.org">Prelude</ulink>
     </para>
 @y
@@ -117,8 +119,10 @@
     <para role="optional">
       <xref linkend="libnsl"/>,
       <xref linkend="libtirpc"/>,
+      <xref linkend="rpcsvc-proto"/>,
       &berkeley-db;,
-      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>, and
+      <ulink url="https://github.com/linux-audit/audit-userspace">libaudit</ulink>,
+      <ulink url="https://github.com/openSUSE/libeconf">libeconf</ulink>,
       <ulink url="https://www.prelude-siem.org">Prelude</ulink>
     </para>
 @z

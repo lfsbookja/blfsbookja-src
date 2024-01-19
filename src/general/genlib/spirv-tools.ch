@@ -10,9 +10,9 @@
 @z
 
 @x
-  <!ENTITY spirv-tools-time          "1.2 SBU (with parallelism=8)">
+  <!ENTITY spirv-tools-time          "1.0 SBU (with parallelism=8)">
 @y
-  <!ENTITY spirv-tools-time          "1.2 SBU (parallelism=8 利用)">
+  <!ENTITY spirv-tools-time          "1.0 SBU (parallelism=8 利用)">
 @z
 
 @x

@@ -307,13 +307,13 @@ make</userinput></screen>
 @x
     <para>
       <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
-      the default in extra-cmake-modules, wich is <filename
+      the default in extra-cmake-modules, which is <filename
       class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
     </para>
 @y
     <para>
       <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
-      the default in extra-cmake-modules, wich is <filename
+      the default in extra-cmake-modules, which is <filename
       class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
     </para>
 @z

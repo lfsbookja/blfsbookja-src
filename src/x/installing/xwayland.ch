@@ -113,8 +113,30 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="git"/> (to download packages needed for the tests),
+      <xref linkend="libei"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="nettle"/>,
+      <xref linkend="xmlto"/>,
+      <xref linkend="xorg7-legacy"/>
+         (only bdftopcf, for building fonts required for the tests),
+      <ulink url="https://gitlab.freedesktop.org/xorg/test/rendercheck">rendercheck</ulink> (for tests), and
+      <ulink url="https://wayland.pages.freedesktop.org/weston/">weston</ulink> (for tests)
+    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
+    <para role="optional">
+      <xref linkend="git"/> (to download packages needed for the tests),
+      <xref linkend="libei"/>,
+      <xref linkend="libgcrypt"/>,
+      <xref linkend="nettle"/>,
+      <xref linkend="xmlto"/>,
+      <xref linkend="xorg7-legacy"/>
+         (only bdftopcf, for building fonts required for the tests),
+      <ulink url="https://gitlab.freedesktop.org/xorg/test/rendercheck">rendercheck</ulink> (for tests),
+      <ulink url="https://wayland.pages.freedesktop.org/weston/">weston</ulink> (for tests)
+    </para>
 @z
 
 @x
