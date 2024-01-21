@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY icewm-download-http "https://github.com/ice-wm/icewm/archive/&icewm-version;/icewm-&icewm-version;.tar.gz">
-  <!ENTITY icewm-download-ftp  " ">
-  <!ENTITY icewm-md5sum        "09fd852e60087f22d9404c48ff1b3c81">
-  <!ENTITY icewm-size          "2.4 MB">
-  <!ENTITY icewm-buildsize     "47 MB">
-  <!ENTITY icewm-time          "0.4 SBU">
-]>
-@y
-  <!ENTITY icewm-download-http "https://github.com/ice-wm/icewm/archive/&icewm-version;/icewm-&icewm-version;.tar.gz">
-  <!ENTITY icewm-download-ftp  " ">
-  <!ENTITY icewm-md5sum        "09fd852e60087f22d9404c48ff1b3c81">
-  <!ENTITY icewm-size          "2.4 MB">
-  <!ENTITY icewm-buildsize     "47 MB">
-  <!ENTITY icewm-time          "0.4 SBU">
-]>
-@z
-
-@x
-<sect1 id="icewm" xreflabel="IceWM-&icewm-version;">
-  <?dbhtml filename="icewm.html" ?>
-@y
-<sect1 id="icewm" xreflabel="IceWM-&icewm-version;">
-  <?dbhtml filename="icewm.html" ?>
-@z
-
-@x
-  <title>IceWM-&icewm-version;</title>
-@y
-  <title>IceWM-&icewm-version;</title>
-@z
-
-@x
-  <indexterm zone="icewm">
-    <primary sortas="a-icewm">icewm</primary>
-  </indexterm>
-@y
-  <indexterm zone="icewm">
-    <primary sortas="a-icewm">icewm</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to IceWM</title>

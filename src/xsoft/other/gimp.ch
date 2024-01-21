@@ -3,125 +3,24 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY gimp-download-http "https://download.gimp.org/pub/gimp/v2.10/gimp-&gimp-version;.tar.bz2">
-  <!ENTITY gimp-download-ftp  " ">
-  <!ENTITY gimp-md5sum        "e44e1c91b09db8fcdc9ef5797ce11b77">
-  <!ENTITY gimp-size          "30 MB">
   <!ENTITY gimp-buildsize     "882 MB (197 MB installed, add 835 MB for tests)">
   <!ENTITY gimp-time          "2.3 SBU (Using parallelism=4; add 0.7 SBU for tests)">
 @y
-  <!ENTITY gimp-download-http "https://download.gimp.org/pub/gimp/v2.10/gimp-&gimp-version;.tar.bz2">
-  <!ENTITY gimp-download-ftp  " ">
-  <!ENTITY gimp-md5sum        "e44e1c91b09db8fcdc9ef5797ce11b77">
-  <!ENTITY gimp-size          "30 MB">
   <!ENTITY gimp-buildsize     "882 MB (197 MB installed, add 835 MB for tests)">
   <!ENTITY gimp-time          "2.3 SBU (Using parallelism=4; add 0.7 SBU for tests)">
 @z
 
 @x
-  <!-- pro-tem, a pull of gimp-help, https://gitlab.gnome.org/GNOME/gimp-help.git
-  git archive - -format=tar - -prefix=${DIRNAME}/ HEAD | xz >../${DIRNAME}.tar.xz -->
-@y
-  <!-- pro-tem, a pull of gimp-help, https://gitlab.gnome.org/GNOME/gimp-help.git
-  git archive - -format=tar - -prefix=${DIRNAME}/ HEAD | xz >../${DIRNAME}.tar.xz -->
-@z
-
-@x
-  <!-- renodr: I generated the git tarball using the following instructions:
-       cd /tmp &&
-       mkdir gimp-help &&
-       cd gimp-help &&
-       git clone https://gitlab.gnome.org/GNOME/gimp-help.git &&
-       cd gimp-help &&
-       git checkout gimp-help-2-10 &&
-       cd .. &&
-       rm -rv gimp-help/.git &&
-       mv -v gimp-help gimp-help-<DATE>
-       tar -cJvf gimp-help-<DATE>.tar.xz gimp-help-<DATE>
-@y
-  <!-- renodr: I generated the git tarball using the following instructions:
-       cd /tmp &&
-       mkdir gimp-help &&
-       cd gimp-help &&
-       git clone https://gitlab.gnome.org/GNOME/gimp-help.git &&
-       cd gimp-help &&
-       git checkout gimp-help-2-10 &&
-       cd .. &&
-       rm -rv gimp-help/.git &&
-       mv -v gimp-help gimp-help-<DATE>
-       tar -cJvf gimp-help-<DATE>.tar.xz gimp-help-<DATE>
-@z
-
-@x
-       After you've completed this, run a test build, and upload the tarball to
-       anduin.-->
-@y
-       After you've completed this, run a test build, and upload the tarball to
-       anduin.-->
-@z
-
-@x
-  <!ENTITY gimp-help-version    "&gimp-version;">
-<!--  <!ENTITY gimp-help-download   "&sources-anduin-http;/gimp/gimp-help-&gimp-help-version;.tar.xz"> -->
-  <!ENTITY gimp-help-download   "https://download.gimp.org/pub/gimp/help/gimp-help-&gimp-help-version;.tar.bz2">
-  <!ENTITY gimp-help-md5sum     "5e393d61c802e73ffe6c550759ed0853">
-  <!ENTITY gimp-help-size       "158 MB">
   <!ENTITY gimp-help-buildsize  "From 412 MB (en only) to 1.8 GB (for all
                                  languages)">
   <!ENTITY gimp-help-time       "2.1 SBU (en only), 13 SBU, with parallelism=4,
                                  for all languages">
-]>
 @y
-  <!ENTITY gimp-help-version    "&gimp-version;">
-<!--  <!ENTITY gimp-help-download   "&sources-anduin-http;/gimp/gimp-help-&gimp-help-version;.tar.xz"> -->
-  <!ENTITY gimp-help-download   "https://download.gimp.org/pub/gimp/help/gimp-help-&gimp-help-version;.tar.bz2">
-  <!ENTITY gimp-help-md5sum     "5e393d61c802e73ffe6c550759ed0853">
-  <!ENTITY gimp-help-size       "158 MB">
   <!ENTITY gimp-help-buildsize  "From 412 MB (en only) to 1.8 GB (for all
                                  languages)">
   <!ENTITY gimp-help-time       "2.1 SBU (en only), 13 SBU, with parallelism=4,
                                  for all languages">
-]>
-@z
-
-@x
-<sect1 id="gimp" xreflabel="Gimp-&gimp-version;">
-  <?dbhtml filename="gimp.html" ?>
-@y
-<sect1 id="gimp" xreflabel="Gimp-&gimp-version;">
-  <?dbhtml filename="gimp.html" ?>
-@z
-
-@x
-  <title>Gimp-&gimp-version;</title>
-@y
-  <title>Gimp-&gimp-version;</title>
-@z
-
-@x
-  <indexterm zone="gimp">
-    <primary sortas="a-Gimp">Gimp</primary>
-  </indexterm>
-@y
-  <indexterm zone="gimp">
-    <primary sortas="a-Gimp">Gimp</primary>
-  </indexterm>
 @z
 
 @x

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY yasm-buildsize     "27 MB (additional 12 MB for the tests)">
   <!ENTITY yasm-time          "0.1 SBU (additional 0.1 SBU for the tests)">
 @y

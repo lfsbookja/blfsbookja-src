@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libcddb-download-http "&sourceforge-dl;/libcddb/libcddb-&libcddb-version;.tar.bz2">
-  <!ENTITY libcddb-download-ftp  " ">
-  <!ENTITY libcddb-md5sum        "8bb4a6f542197e8e9648ae597cd6bc8a">
-  <!ENTITY libcddb-size          "384 KB">
   <!ENTITY libcddb-buildsize     "3.9 MB (with tests)">
   <!ENTITY libcddb-time          "0.2 SBU (with tests)">
-]>
 @y
-  <!ENTITY libcddb-download-http "&sourceforge-dl;/libcddb/libcddb-&libcddb-version;.tar.bz2">
-  <!ENTITY libcddb-download-ftp  " ">
-  <!ENTITY libcddb-md5sum        "8bb4a6f542197e8e9648ae597cd6bc8a">
-  <!ENTITY libcddb-size          "384 KB">
   <!ENTITY libcddb-buildsize     "3.9 MB (with tests)">
   <!ENTITY libcddb-time          "0.2 SBU (with tests)">
-]>
-@z
-
-@x
-<sect1 id="libcddb" xreflabel="libcddb-&libcddb-version;">
-  <?dbhtml filename="libcddb.html"?>
-@y
-<sect1 id="libcddb" xreflabel="libcddb-&libcddb-version;">
-  <?dbhtml filename="libcddb.html"?>
-@z
-
-@x
-  <title>libcddb-&libcddb-version;</title>
-@y
-  <title>libcddb-&libcddb-version;</title>
-@z
-
-@x
-  <indexterm zone="libcddb">
-    <primary sortas="a-libcddb">libcddb</primary>
-  </indexterm>
-@y
-  <indexterm zone="libcddb">
-    <primary sortas="a-libcddb">libcddb</primary>
-  </indexterm>
 @z
 
 @x

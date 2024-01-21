@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <title>Introduction to Shared Mime Info</title>
 @y
     <title>&IntroductionTo1;Shared Mime Info&IntroductionTo2;</title>

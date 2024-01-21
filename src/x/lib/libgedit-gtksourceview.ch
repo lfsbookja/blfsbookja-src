@@ -3,65 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libgedit-gtksourceview-download-http "https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-&libgedit-gtksourceview-version;.tar.xz">
-  <!ENTITY libgedit-gtksourceview-download-ftp  " ">
-  <!ENTITY libgedit-gtksourceview-md5sum        "3f96094715a897567e3df7f72ec6c9f0">
-  <!ENTITY libgedit-gtksourceview-size          "632 KB">
   <!ENTITY libgedit-gtksourceview-buildsize     "22 MB (with tests)">
   <!ENTITY libgedit-gtksourceview-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY libgedit-gtksourceview-download-http "https://gedit-technology.net/tarballs/libgedit-gtksourceview/libgedit-gtksourceview-&libgedit-gtksourceview-version;.tar.xz">
-  <!ENTITY libgedit-gtksourceview-download-ftp  " ">
-  <!ENTITY libgedit-gtksourceview-md5sum        "3f96094715a897567e3df7f72ec6c9f0">
-  <!ENTITY libgedit-gtksourceview-size          "632 KB">
   <!ENTITY libgedit-gtksourceview-buildsize     "22 MB (with tests)">
   <!ENTITY libgedit-gtksourceview-time          "0.3 SBU (with tests)">
-@z
-
-@x
-]>
-@y
-]>
-@z
-
-@x
-<sect1 id="libgedit" xreflabel="libgeditsourceview-&libgedit-gtksourceview-version;">
-  <?dbhtml filename="libgedit-gtksourceview.html"?>
-@y
-<sect1 id="libgedit" xreflabel="libgeditsourceview-&libgedit-gtksourceview-version;">
-  <?dbhtml filename="libgedit-gtksourceview.html"?>
-@z
-
-@x
-  <title>libgedit-gtksourceview-&libgedit-gtksourceview-version;</title>
-@y
-  <title>libgedit-gtksourceview-&libgedit-gtksourceview-version;</title>
-@z
-
-@x
-  <indexterm zone="libgedit">
-    <primary sortas="a-libgedit-gtksourceview">libgedit-gtksourceview</primary>
-  </indexterm>
-@y
-  <indexterm zone="libgedit">
-    <primary sortas="a-libgedit-gtksourceview">libgedit-gtksourceview</primary>
-  </indexterm>
 @z
 
 @x

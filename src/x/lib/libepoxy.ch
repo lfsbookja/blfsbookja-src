@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libepoxy-download-http "&gnome-download-http;/libepoxy/&libepoxy-minor;/libepoxy-&libepoxy-version;.tar.xz">
-  <!ENTITY libepoxy-download-ftp  " ">
-  <!ENTITY libepoxy-md5sum        "10c635557904aed5239a4885a7c4efb7">
-  <!ENTITY libepoxy-size          "220 KB">
   <!ENTITY libepoxy-buildsize     "13 MB (with tests)">
   <!ENTITY libepoxy-time          "0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY libepoxy-download-http "&gnome-download-http;/libepoxy/&libepoxy-minor;/libepoxy-&libepoxy-version;.tar.xz">
-  <!ENTITY libepoxy-download-ftp  " ">
-  <!ENTITY libepoxy-md5sum        "10c635557904aed5239a4885a7c4efb7">
-  <!ENTITY libepoxy-size          "220 KB">
   <!ENTITY libepoxy-buildsize     "13 MB (with tests)">
   <!ENTITY libepoxy-time          "0.1 SBU (with tests)">
-]>
-@z
-
-@x
-<sect1 id="libepoxy" xreflabel="libepoxy-&libepoxy-version;">
-  <?dbhtml filename="libepoxy.html"?>
-@y
-<sect1 id="libepoxy" xreflabel="libepoxy-&libepoxy-version;">
-  <?dbhtml filename="libepoxy.html"?>
-@z
-
-@x
-  <title>libepoxy-&libepoxy-version;</title>
-@y
-  <title>libepoxy-&libepoxy-version;</title>
-@z
-
-@x
-  <indexterm zone="libepoxy">
-    <primary sortas="a-libepoxy">libepoxy</primary>
-  </indexterm>
-@y
-  <indexterm zone="libepoxy">
-    <primary sortas="a-libepoxy">libepoxy</primary>
-  </indexterm>
 @z
 
 @x

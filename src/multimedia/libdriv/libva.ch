@@ -3,77 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libva-version                "2.20.0">
-@y
-  <!ENTITY libva-version                "2.20.0">
-@z
-
-@x
-  <!ENTITY libva-download-http "https://github.com/intel/libva/releases/download/&libva-version;/libva-&libva-version;.tar.bz2">
-  <!ENTITY libva-download-ftp  " ">
-  <!ENTITY libva-md5sum        "cde8e62a027f6cad023895c6f38ba58e">
-  <!ENTITY libva-size          "500 KB">
-  <!ENTITY libva-buildsize     "4.8 MB">
   <!ENTITY libva-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY libva-download-http "https://github.com/intel/libva/releases/download/&libva-version;/libva-&libva-version;.tar.bz2">
-  <!ENTITY libva-download-ftp  " ">
-  <!ENTITY libva-md5sum        "cde8e62a027f6cad023895c6f38ba58e">
-  <!ENTITY libva-size          "500 KB">
-  <!ENTITY libva-buildsize     "4.8 MB">
   <!ENTITY libva-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect1 id="libva" xreflabel="libva-&libva-version;">
-  <?dbhtml filename="libva.html"?>
-@y
-  <sect1 id="libva" xreflabel="libva-&libva-version;">
-  <?dbhtml filename="libva.html"?>
-@z
-
-@x
-    <sect1info>
-      <date>$Date$</date>
-    </sect1info>
-@y
-    <sect1info>
-      <date>$Date$</date>
-    </sect1info>
-@z
-
-@x
-    <title>libva-&libva-version;</title>
-@y
-    <title>libva-&libva-version;</title>
-@z
-
-@x
-    <indexterm zone="libva">
-      <primary sortas="a-libva">libva</primary>
-    </indexterm>
-@y
-    <indexterm zone="libva">
-      <primary sortas="a-libva">libva</primary>
-    </indexterm>
 @z
 
 @x

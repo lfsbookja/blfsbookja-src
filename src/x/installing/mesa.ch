@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY mesa-buildsize     "621 MB (with docs, add 266 MB for tests)">
   <!ENTITY mesa-time          "3.1 SBU (with docs; add 0.6 SBU for tests; both with parallelism=4)">
 @y

@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY xine-lib-buildsize     "98 MB (with API documentation)">
   <!ENTITY xine-lib-time          "0.5 SBU (Using parallelism=4; with API documentation)">
 @y

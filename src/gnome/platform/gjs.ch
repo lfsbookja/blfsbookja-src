@@ -4,16 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY gjs-buildsize     "244 MB (with tests)">
+  <!ENTITY gjs-buildsize     "374 MB (with tests)">
   <!ENTITY gjs-time          "0.2 SBU (with tests; with parallelism=4)">
 @y
-  <!ENTITY gjs-buildsize     "244 MB（テスト込み）">
+  <!ENTITY gjs-buildsize     "374 MB（テスト込み）">
   <!ENTITY gjs-time          "0.2 SBU（テスト込み; parallelism=4 利用）">
 @z
 

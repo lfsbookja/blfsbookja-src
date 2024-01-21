@@ -3,81 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY path "https://github.com/docbook/xslt10-stylesheets/releases/download/release">
-@y
-  <!ENTITY path "https://github.com/docbook/xslt10-stylesheets/releases/download/release">
-@z
-
-@x
-  <!ENTITY docbook-xsl-download-http "&path;/&docbook-xsl-version;/docbook-xsl-nons-&docbook-xsl-version;.tar.bz2">
-  <!ENTITY docbook-xsl-download-ftp  " ">
-  <!ENTITY docbook-xsl-md5sum        "2666d1488d6ced1551d15f31d7ed8c38">
-  <!ENTITY docbook-xsl-size          "22 MB">
   <!ENTITY docbook-xsl-buildsize     "58 MB (includes installing optional documentation)">
   <!ENTITY docbook-xsl-time          "less than 0.1 SBU">
 @y
-  <!ENTITY docbook-xsl-download-http "&path;/&docbook-xsl-version;/docbook-xsl-nons-&docbook-xsl-version;.tar.bz2">
-  <!ENTITY docbook-xsl-download-ftp  " ">
-  <!ENTITY docbook-xsl-md5sum        "2666d1488d6ced1551d15f31d7ed8c38">
-  <!ENTITY docbook-xsl-size          "22 MB">
   <!ENTITY docbook-xsl-buildsize     "58 MB (includes installing optional documentation)">
   <!ENTITY docbook-xsl-time          "less than 0.1 SBU">
-@z
-
-@x
-  <!ENTITY docbook-xsl-doc-download  "&path;/&docbook-xsl-version;/docbook-xsl-doc-&docbook-xsl-version;.tar.bz2">
-  <!ENTITY docbook-xsl-doc-md5sum    "62375ca864fc198cb2b17d98209d0b8c">
-  <!ENTITY docbook-xsl-doc-size      "522 KB">
-]>
-@y
-  <!ENTITY docbook-xsl-doc-download  "&path;/&docbook-xsl-version;/docbook-xsl-doc-&docbook-xsl-version;.tar.bz2">
-  <!ENTITY docbook-xsl-doc-md5sum    "62375ca864fc198cb2b17d98209d0b8c">
-  <!ENTITY docbook-xsl-doc-size      "522 KB">
-]>
-@z
-
-@x
-<sect1 id="docbook-xsl"
-xreflabel="docbook-xsl-nons-&docbook-xsl-version;">
-  <?dbhtml filename="docbook-xsl.html"?>
-@y
-<sect1 id="docbook-xsl"
-xreflabel="docbook-xsl-nons-&docbook-xsl-version;">
-  <?dbhtml filename="docbook-xsl.html"?>
-@z
-
-@x
-  <title>docbook-xsl-nons-&docbook-xsl-version;</title>
-@y
-  <title>docbook-xsl-nons-&docbook-xsl-version;</title>
-@z
-
-@x
-  <indexterm zone="docbook-xsl">
-    <primary sortas="a-DocBook-XSL-Stylesheets">DocBook XSL
-    Stylesheets</primary>
-  </indexterm>
-@y
-  <indexterm zone="docbook-xsl">
-    <primary sortas="a-DocBook-XSL-Stylesheets">DocBook XSL
-    Stylesheets</primary>
-  </indexterm>
 @z
 
 @x

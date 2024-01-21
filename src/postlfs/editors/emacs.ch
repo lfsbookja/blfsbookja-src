@@ -4,15 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
+  <!ENTITY emacs-time          "0.7 SBU (Using parallelism=4)">
 @y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY emacs-time          "0.6 SBU (Using parallelism=4)">
-@y
-  <!ENTITY emacs-time          "0.6 SBU（parallelism=4 利用時）">
+  <!ENTITY emacs-time          "0.7 SBU（parallelism=4 利用時）">
 @z
 
 @x

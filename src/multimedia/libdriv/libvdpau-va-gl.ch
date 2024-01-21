@@ -3,77 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libvdpau-va-gl-version       "0.4.0">
-@y
-  <!ENTITY libvdpau-va-gl-version       "0.4.0">
-@z
-
-@x
-  <!ENTITY libvdpau-va-gl-download-http "https://github.com/i-rinat/libvdpau-va-gl/archive/v&libvdpau-va-gl-version;/libvdpau-va-gl-&libvdpau-va-gl-version;.tar.gz">
-  <!ENTITY libvdpau-va-gl-download-ftp  " ">
-  <!ENTITY libvdpau-va-gl-md5sum        "638244652a702d0262039890904f37ce">
-  <!ENTITY libvdpau-va-gl-size          "120 KB">
-  <!ENTITY libvdpau-va-gl-buildsize     "3.4 MB">
   <!ENTITY libvdpau-va-gl-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY libvdpau-va-gl-download-http "https://github.com/i-rinat/libvdpau-va-gl/archive/v&libvdpau-va-gl-version;/libvdpau-va-gl-&libvdpau-va-gl-version;.tar.gz">
-  <!ENTITY libvdpau-va-gl-download-ftp  " ">
-  <!ENTITY libvdpau-va-gl-md5sum        "638244652a702d0262039890904f37ce">
-  <!ENTITY libvdpau-va-gl-size          "120 KB">
-  <!ENTITY libvdpau-va-gl-buildsize     "3.4 MB">
   <!ENTITY libvdpau-va-gl-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect1 id="libvdpau-va-gl" xreflabel="libvdpau-va-gl-&libvdpau-va-gl-version;">
-  <?dbhtml filename="libvdpau-va-gl.html"?>
-@y
-  <sect1 id="libvdpau-va-gl" xreflabel="libvdpau-va-gl-&libvdpau-va-gl-version;">
-  <?dbhtml filename="libvdpau-va-gl.html"?>
-@z
-
-@x
-    <sect1info>
-      <date>$Date$</date>
-    </sect1info>
-@y
-    <sect1info>
-      <date>$Date$</date>
-    </sect1info>
-@z
-
-@x
-    <title>libvdpau-va-gl-&libvdpau-va-gl-version;</title>
-@y
-    <title>libvdpau-va-gl-&libvdpau-va-gl-version;</title>
-@z
-
-@x
-    <indexterm zone="libvdpau-va-gl">
-      <primary sortas="a-libvdpau-va-gl">libvdpau-va-gl</primary>
-    </indexterm>
-@y
-    <indexterm zone="libvdpau-va-gl">
-      <primary sortas="a-libvdpau-va-gl">libvdpau-va-gl</primary>
-    </indexterm>
 @z
 
 @x

@@ -3,63 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xfce4-dev-tools-download-http
-           "http://archive.xfce.org/src/xfce/xfce4-dev-tools/&xfce4-version;/xfce4-dev-tools-&xfce4-dev-tools-version;.tar.bz2">
-  <!ENTITY xfce4-dev-tools-download-ftp  " ">
-  <!ENTITY xfce4-dev-tools-md5sum        "69b4cd255a0b8f12bbdc9b10c433b223">
-  <!ENTITY xfce4-dev-tools-size          "356 KB">
-  <!ENTITY xfce4-dev-tools-buildsize     "2.6 MB">
   <!ENTITY xfce4-dev-tools-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY xfce4-dev-tools-download-http
-           "http://archive.xfce.org/src/xfce/xfce4-dev-tools/&xfce4-version;/xfce4-dev-tools-&xfce4-dev-tools-version;.tar.bz2">
-  <!ENTITY xfce4-dev-tools-download-ftp  " ">
-  <!ENTITY xfce4-dev-tools-md5sum        "69b4cd255a0b8f12bbdc9b10c433b223">
-  <!ENTITY xfce4-dev-tools-size          "356 KB">
-  <!ENTITY xfce4-dev-tools-buildsize     "2.6 MB">
   <!ENTITY xfce4-dev-tools-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="xfce4-dev-tools" xreflabel="xfce4-dev-tools-&xfce4-dev-tools-version;">
-  <?dbhtml filename="xfce4-dev-tools.html"?>
-@y
-<sect1 id="xfce4-dev-tools" xreflabel="xfce4-dev-tools-&xfce4-dev-tools-version;">
-  <?dbhtml filename="xfce4-dev-tools.html"?>
-@z
-
-@x
-  <title>xfce4-dev-tools-&xfce4-dev-tools-version;</title>
-@y
-  <title>xfce4-dev-tools-&xfce4-dev-tools-version;</title>
-@z
-
-@x
-  <indexterm zone="xfce4-dev-tools">
-    <primary sortas="a-xfce4-dev-tools">xfce4-dev-tools</primary>
-  </indexterm>
-@y
-  <indexterm zone="xfce4-dev-tools">
-    <primary sortas="a-xfce4-dev-tools">xfce4-dev-tools</primary>
-  </indexterm>
 @z
 
 @x

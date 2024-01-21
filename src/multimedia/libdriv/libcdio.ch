@@ -3,67 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libcdio-download-http "&gnu-http;/libcdio/libcdio-&libcdio-version;.tar.bz2">
-  <!ENTITY libcdio-download-ftp  " ">
-  <!ENTITY libcdio-md5sum        "aa7629e8f73662a762f64c444b901055">
-  <!ENTITY libcdio-size          "1.7 MB">
   <!ENTITY libcdio-buildsize     "43 MB (both packages, including checks)">
   <!ENTITY libcdio-time          "0.3 SBU (using parallelism=4; both packages, including checks)">
 @y
-  <!ENTITY libcdio-download-http "&gnu-http;/libcdio/libcdio-&libcdio-version;.tar.bz2">
-  <!ENTITY libcdio-download-ftp  " ">
-  <!ENTITY libcdio-md5sum        "aa7629e8f73662a762f64c444b901055">
-  <!ENTITY libcdio-size          "1.7 MB">
   <!ENTITY libcdio-buildsize     "43 MB (both packages, including checks)">
   <!ENTITY libcdio-time          "0.3 SBU (using parallelism=4; both packages, including checks)">
-@z
-
-@x
-  <!ENTITY libcdio-paranoia      "libcdio-paranoia-10.2+2.0.1">
-]>
-@y
-  <!ENTITY libcdio-paranoia      "libcdio-paranoia-10.2+2.0.1">
-]>
-@z
-
-@x
-<sect1 id="libcdio" xreflabel="libcdio-&libcdio-version;">
-  <?dbhtml filename="libcdio.html"?>
-@y
-<sect1 id="libcdio" xreflabel="libcdio-&libcdio-version;">
-  <?dbhtml filename="libcdio.html"?>
-@z
-
-@x
-  <title>libcdio-&libcdio-version;</title>
-@y
-  <title>libcdio-&libcdio-version;</title>
-@z
-
-@x
-  <indexterm zone="libcdio">
-    <primary sortas="a-libcdio">libcdio</primary>
-  </indexterm>
-@y
-  <indexterm zone="libcdio">
-    <primary sortas="a-libcdio">libcdio</primary>
-  </indexterm>
 @z
 
 @x

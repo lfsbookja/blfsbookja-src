@@ -3,63 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-<!--  <!ENTITY xdg-utils-download-http "http://people.freedesktop.org/~rdieter/xdg-utils/xdg-utils-&xdg-utils-version;.tar.gz">-->
-  <!ENTITY xdg-utils-download-http "https://portland.freedesktop.org/download/xdg-utils-&xdg-utils-version;.tar.gz">
-  <!ENTITY xdg-utils-download-ftp  " ">
-  <!ENTITY xdg-utils-md5sum        "902042508b626027a3709d105f0b63ff">
-  <!ENTITY xdg-utils-size          "296 KB">
   <!ENTITY xdg-utils-buildsize     "3.2 MB (with tests)">
   <!ENTITY xdg-utils-time          "0.3 SBU (with tests)">
-]>
 @y
-<!--  <!ENTITY xdg-utils-download-http "http://people.freedesktop.org/~rdieter/xdg-utils/xdg-utils-&xdg-utils-version;.tar.gz">-->
-  <!ENTITY xdg-utils-download-http "https://portland.freedesktop.org/download/xdg-utils-&xdg-utils-version;.tar.gz">
-  <!ENTITY xdg-utils-download-ftp  " ">
-  <!ENTITY xdg-utils-md5sum        "902042508b626027a3709d105f0b63ff">
-  <!ENTITY xdg-utils-size          "296 KB">
   <!ENTITY xdg-utils-buildsize     "3.2 MB (with tests)">
   <!ENTITY xdg-utils-time          "0.3 SBU (with tests)">
-]>
-@z
-
-@x
-<sect1 id="xdg-utils" xreflabel="xdg-utils-&xdg-utils-version;">
-  <?dbhtml filename="xdg-utils.html"?>
-@y
-<sect1 id="xdg-utils" xreflabel="xdg-utils-&xdg-utils-version;">
-  <?dbhtml filename="xdg-utils.html"?>
-@z
-
-@x
-  <title>xdg-utils-&xdg-utils-version;</title>
-@y
-  <title>xdg-utils-&xdg-utils-version;</title>
-@z
-
-@x
-  <indexterm zone="xdg-utils">
-    <primary sortas="a-xdg-utils">xdg-utils</primary>
-  </indexterm>
-@y
-  <indexterm zone="xdg-utils">
-    <primary sortas="a-xdg-utils">xdg-utils</primary>
-  </indexterm>
 @z
 
 @x

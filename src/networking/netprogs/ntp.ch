@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY ntp-download-http "https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-&ntp-version;.tar.gz">
-  <!ENTITY ntp-download-ftp  " ">
-  <!ENTITY ntp-md5sum        "a15558df580bd1b955a105a8b91c078f">
-  <!ENTITY ntp-size          "6.8 MB">
   <!ENTITY ntp-buildsize     "99 MB (with tests)">
   <!ENTITY ntp-time          "0.8 SBU (With tests; both using parallelism=4)">
-]>
 @y
-  <!ENTITY ntp-download-http "https://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/ntp-&ntp-version;.tar.gz">
-  <!ENTITY ntp-download-ftp  " ">
-  <!ENTITY ntp-md5sum        "a15558df580bd1b955a105a8b91c078f">
-  <!ENTITY ntp-size          "6.8 MB">
   <!ENTITY ntp-buildsize     "99 MB (with tests)">
   <!ENTITY ntp-time          "0.8 SBU (With tests; both using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="ntp" xreflabel="ntp-&ntp-version;">
-  <?dbhtml filename="ntp.html"?>
-@y
-<sect1 id="ntp" xreflabel="ntp-&ntp-version;">
-  <?dbhtml filename="ntp.html"?>
-@z
-
-@x
-  <title>ntp-&ntp-version;</title>
-@y
-  <title>ntp-&ntp-version;</title>
-@z
-
-@x
-  <indexterm zone="ntp">
-    <primary sortas="a-ntp">ntp</primary>
-  </indexterm>
-@y
-  <indexterm zone="ntp">
-    <primary sortas="a-ntp">ntp</primary>
-  </indexterm>
 @z
 
 @x

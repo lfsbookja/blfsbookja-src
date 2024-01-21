@@ -4,12 +4,6 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <title>Introduction to Xfconf</title>
 @y
     <title>&IntroductionTo1;Xfconf&IntroductionTo2;</title>

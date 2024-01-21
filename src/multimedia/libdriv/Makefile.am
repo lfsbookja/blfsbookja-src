@@ -7,7 +7,6 @@ CHANGE_FILES = \
 	alsa-firmware.ch      \
 	alsa-lib.ch           \
 	alsa-lib-kernel.ch    \
-	alsa-oss.ch           \
 	alsa-plugins.ch       \
 	alsa-tools.ch         \
 	alsa-utils.ch         \

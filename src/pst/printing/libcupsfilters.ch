@@ -3,63 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libcupsfilters-download-http
-  "https://github.com/OpenPrinting/libcupsfilters/releases/download/&libcupsfilters-version;/libcupsfilters-&libcupsfilters-version;.tar.xz">
-  <!ENTITY libcupsfilters-download-ftp  " ">
-  <!ENTITY libcupsfilters-md5sum        "267e569145bd20615fa18ae65ea6f870">
-  <!ENTITY libcupsfilters-size          "1.2 MB">
   <!ENTITY libcupsfilters-buildsize     "38 MB (with tests)">
   <!ENTITY libcupsfilters-time          "0.1 SBU (Using parallelism=4; with tests)">
-]>
 @y
-  <!ENTITY libcupsfilters-download-http
-  "https://github.com/OpenPrinting/libcupsfilters/releases/download/&libcupsfilters-version;/libcupsfilters-&libcupsfilters-version;.tar.xz">
-  <!ENTITY libcupsfilters-download-ftp  " ">
-  <!ENTITY libcupsfilters-md5sum        "267e569145bd20615fa18ae65ea6f870">
-  <!ENTITY libcupsfilters-size          "1.2 MB">
   <!ENTITY libcupsfilters-buildsize     "38 MB (with tests)">
   <!ENTITY libcupsfilters-time          "0.1 SBU (Using parallelism=4; with tests)">
-]>
-@z
-
-@x
-<sect1 id="libcupsfilters" xreflabel="libcupsfilters-&libcupsfilters-version;">
-  <?dbhtml filename="libcupsfilters.html"?>
-@y
-<sect1 id="libcupsfilters" xreflabel="libcupsfilters-&libcupsfilters-version;">
-  <?dbhtml filename="libcupsfilters.html"?>
-@z
-
-@x
-  <title>libcupsfilters-&libcupsfilters-version;</title>
-@y
-  <title>libcupsfilters-&libcupsfilters-version;</title>
-@z
-
-@x
-  <indexterm zone="libcupsfilters">
-    <primary sortas="a-libcupsfilters">libcupsfilters</primary>
-  </indexterm>
-@y
-  <indexterm zone="libcupsfilters">
-    <primary sortas="a-libcupsfilters">libcupsfilters</primary>
-  </indexterm>
 @z
 
 @x

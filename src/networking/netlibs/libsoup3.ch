@@ -3,63 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libsoup3-download-http
-           "&gnome-download-http;/libsoup/&libsoup3-minor;/libsoup-&libsoup3-version;.tar.xz">
-  <!ENTITY libsoup3-download-ftp  " ">
-  <!ENTITY libsoup3-md5sum        "a63ea04a9686e9e4470b127ffe1eb96b">
-  <!ENTITY libsoup3-size          "1.5 MB">
   <!ENTITY libsoup3-buildsize     "38 MB (with tests)">
   <!ENTITY libsoup3-time          "0.3 SBU (Using parallelism=4; with tests)">
-]>
 @y
-  <!ENTITY libsoup3-download-http
-           "&gnome-download-http;/libsoup/&libsoup3-minor;/libsoup-&libsoup3-version;.tar.xz">
-  <!ENTITY libsoup3-download-ftp  " ">
-  <!ENTITY libsoup3-md5sum        "a63ea04a9686e9e4470b127ffe1eb96b">
-  <!ENTITY libsoup3-size          "1.5 MB">
   <!ENTITY libsoup3-buildsize     "38 MB (with tests)">
   <!ENTITY libsoup3-time          "0.3 SBU (Using parallelism=4; with tests)">
-]>
-@z
-
-@x
-<sect1 id="libsoup3" xreflabel="libsoup-&libsoup3-version;">
-  <?dbhtml filename="libsoup3.html"?>
-@y
-<sect1 id="libsoup3" xreflabel="libsoup-&libsoup3-version;">
-  <?dbhtml filename="libsoup3.html"?>
-@z
-
-@x
-  <title>libsoup-&libsoup3-version;</title>
-@y
-  <title>libsoup-&libsoup3-version;</title>
-@z
-
-@x
-  <indexterm zone="libsoup3">
-    <primary sortas="a-libsoup3">libsoup3</primary>
-  </indexterm>
-@y
-  <indexterm zone="libsoup3">
-    <primary sortas="a-libsoup3">libsoup3</primary>
-  </indexterm>
 @z
 
 @x

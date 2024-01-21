@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libgedit-amtk-download-http "https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-&libgedit-amtk-version;.tar.xz">
-  <!ENTITY libgedit-amtk-download-ftp  " ">
-  <!ENTITY libgedit-amtk-md5sum        "1b2ad96c189dd1749b6526c6026e0618">
-  <!ENTITY libgedit-amtk-size          "60 KB">
-  <!ENTITY libgedit-amtk-buildsize     "2.6 MB">
-  <!ENTITY libgedit-amtk-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY libgedit-amtk-download-http "https://gedit-technology.net/tarballs/libgedit-amtk/libgedit-amtk-&libgedit-amtk-version;.tar.xz">
-  <!ENTITY libgedit-amtk-download-ftp  " ">
-  <!ENTITY libgedit-amtk-md5sum        "1b2ad96c189dd1749b6526c6026e0618">
-  <!ENTITY libgedit-amtk-size          "60 KB">
-  <!ENTITY libgedit-amtk-buildsize     "2.6 MB">
-  <!ENTITY libgedit-amtk-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libgedit-amtk" xreflabel="libgedit-amtk-&libgedit-amtk-version;">
-  <?dbhtml filename="libgedit-amtk.html"?>
-@y
-<sect1 id="libgedit-amtk" xreflabel="libgedit-amtk-&libgedit-amtk-version;">
-  <?dbhtml filename="libgedit-amtk.html"?>
-@z
-
-@x
-  <title>libgedit-amtk-&libgedit-amtk-version;</title>
-@y
-  <title>libgedit-amtk-&libgedit-amtk-version;</title>
-@z
-
-@x
-  <indexterm zone="libgedit-amtk">
-    <primary sortas="a-libgedit-amtk">libgedit-amtk</primary>
-  </indexterm>
-@y
-  <indexterm zone="libgedit-amtk">
-    <primary sortas="a-libgedit-amtk">libgedit-amtk</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to libgedit-amtk</title>

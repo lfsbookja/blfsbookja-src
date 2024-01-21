@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY fluxbox-download-http "&sourceforge-dl;/fluxbox/fluxbox-&fluxbox-version;.tar.xz">
-  <!ENTITY fluxbox-download-ftp  " ">
-  <!ENTITY fluxbox-md5sum        "b44afd10ee1e64624c23115aa51dcd55">
-  <!ENTITY fluxbox-size          "772 KB">
-  <!ENTITY fluxbox-buildsize     "101 MB">
-  <!ENTITY fluxbox-time          "0.9 SBU">
-]>
-@y
-  <!ENTITY fluxbox-download-http "&sourceforge-dl;/fluxbox/fluxbox-&fluxbox-version;.tar.xz">
-  <!ENTITY fluxbox-download-ftp  " ">
-  <!ENTITY fluxbox-md5sum        "b44afd10ee1e64624c23115aa51dcd55">
-  <!ENTITY fluxbox-size          "772 KB">
-  <!ENTITY fluxbox-buildsize     "101 MB">
-  <!ENTITY fluxbox-time          "0.9 SBU">
-]>
-@z
-
-@x
-<sect1 id="fluxbox" xreflabel="Fluxbox-&fluxbox-version;">
-  <?dbhtml filename="fluxbox.html" ?>
-@y
-<sect1 id="fluxbox" xreflabel="Fluxbox-&fluxbox-version;">
-  <?dbhtml filename="fluxbox.html" ?>
-@z
-
-@x
-  <title>Fluxbox-&fluxbox-version;</title>
-@y
-  <title>Fluxbox-&fluxbox-version;</title>
-@z
-
-@x
-  <indexterm zone="fluxbox">
-    <primary sortas="a-Fluxbox">Fluxbox</primary>
-  </indexterm>
-@y
-  <indexterm zone="fluxbox">
-    <primary sortas="a-Fluxbox">Fluxbox</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Fluxbox</title>

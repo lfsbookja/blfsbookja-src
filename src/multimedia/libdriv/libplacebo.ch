@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libplacebo-download-http "https://github.com/haasn/libplacebo/archive/refs/tags/v&libplacebo-version;/libplacebo-&libplacebo-version;.tar.gz">
-  <!ENTITY libplacebo-download-ftp  " ">
-  <!ENTITY libplacebo-md5sum        "0b92af743309c406e214e28c7b99a082">
-  <!ENTITY libplacebo-size          "824 KB">
-  <!ENTITY libplacebo-buildsize     "41 MB">
-  <!ENTITY libplacebo-time          "0.4 SBU">
-]>
-@y
-  <!ENTITY libplacebo-download-http "https://github.com/haasn/libplacebo/archive/refs/tags/v&libplacebo-version;/libplacebo-&libplacebo-version;.tar.gz">
-  <!ENTITY libplacebo-download-ftp  " ">
-  <!ENTITY libplacebo-md5sum        "0b92af743309c406e214e28c7b99a082">
-  <!ENTITY libplacebo-size          "824 KB">
-  <!ENTITY libplacebo-buildsize     "41 MB">
-  <!ENTITY libplacebo-time          "0.4 SBU">
-]>
-@z
-
-@x
-<sect1 id="libplacebo" xreflabel="libplacebo-&libplacebo-version;">
-  <?dbhtml filename="libplacebo.html"?>
-@y
-<sect1 id="libplacebo" xreflabel="libplacebo-&libplacebo-version;">
-  <?dbhtml filename="libplacebo.html"?>
-@z
-
-@x
-  <title>libplacebo-&libplacebo-version;</title>
-@y
-  <title>libplacebo-&libplacebo-version;</title>
-@z
-
-@x
-  <indexterm zone="libplacebo">
-    <primary sortas="a-libplacebo">libplacebo</primary>
-  </indexterm>
-@y
-  <indexterm zone="libplacebo">
-    <primary sortas="a-libplacebo">libplacebo</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to libplacebo</title>

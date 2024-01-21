@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY clisp-buildsize     "163 MB (add 8 MB for tests)">
   <!ENTITY clisp-time          "0.9 SBU (1.2 SBU with tests)">
 @y

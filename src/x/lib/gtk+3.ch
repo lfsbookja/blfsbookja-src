@@ -4,17 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
+  <!ENTITY gtk3-buildsize     "244 MB (add 8 MB for tests)">
+  <!ENTITY gtk3-time          "0.8 SBU (using parallelism=4; add 0.2 SBU for tests)">
 @y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY gtk3-buildsize     "234 MB (add 4 MB for tests)">
-  <!ENTITY gtk3-time          "0.9 SBU (using parallelism=4; add 0.2 SBU for tests)">
-@y
-  <!ENTITY gtk3-buildsize     "234 MB (add 4 MB for tests)">
-  <!ENTITY gtk3-time          "0.9 SBU (using parallelism=4; add 0.2 SBU for tests)">
+  <!ENTITY gtk3-buildsize     "244 MB (add 8 MB for tests)">
+  <!ENTITY gtk3-time          "0.8 SBU (using parallelism=4; add 0.2 SBU for tests)">
 @z
 
 @x

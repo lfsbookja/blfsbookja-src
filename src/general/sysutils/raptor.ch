@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY raptor-buildsize     "25 MB (additional 2 MB for the tests)">
   <!ENTITY raptor-time          "0.1 SBU (additional 0.3 SBU for the tests)">
 @y

@@ -3,63 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY tigervnc-download-http "https://github.com/TigerVNC/tigervnc/archive/v&tigervnc-version;/tigervnc-&tigervnc-version;.tar.gz">
-  <!ENTITY tigervnc-download-ftp  " ">
-  <!ENTITY tigervnc-md5sum        "3a794e3a063443e07250de8e99e2e05a">
-  <!ENTITY tigervnc-size          "1.8 MB">
-  <!ENTITY tigervnc-buildsize     "97 MB">
   <!ENTITY tigervnc-time          "0.4 SBU (Using parallelism=4)">
-  <!ENTITY tigervnc-xorg-version  "21.1.6">
-]>
 @y
-  <!ENTITY tigervnc-download-http "https://github.com/TigerVNC/tigervnc/archive/v&tigervnc-version;/tigervnc-&tigervnc-version;.tar.gz">
-  <!ENTITY tigervnc-download-ftp  " ">
-  <!ENTITY tigervnc-md5sum        "3a794e3a063443e07250de8e99e2e05a">
-  <!ENTITY tigervnc-size          "1.8 MB">
-  <!ENTITY tigervnc-buildsize     "97 MB">
   <!ENTITY tigervnc-time          "0.4 SBU (Using parallelism=4)">
-  <!ENTITY tigervnc-xorg-version  "21.1.6">
-]>
-@z
-
-@x
-<sect1 id="tigervnc" xreflabel="tigervnc-&tigervnc-version;">
-  <?dbhtml filename="tigervnc.html"?>
-@y
-<sect1 id="tigervnc" xreflabel="tigervnc-&tigervnc-version;">
-  <?dbhtml filename="tigervnc.html"?>
-@z
-
-@x
-  <title>Tigervnc-&tigervnc-version;</title>
-@y
-  <title>Tigervnc-&tigervnc-version;</title>
-@z
-
-@x
-  <indexterm zone="tigervnc">
-    <primary sortas="a-tigervnc">tigervnc</primary>
-  </indexterm>
-@y
-  <indexterm zone="tigervnc">
-    <primary sortas="a-tigervnc">tigervnc</primary>
-  </indexterm>
 @z
 
 @x

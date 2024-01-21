@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY thunderbird-buildsize     "6.5 GB (236 MB installed)">
   <!ENTITY thunderbird-time          "17 SBU (on a 8-core machine)">
 @y

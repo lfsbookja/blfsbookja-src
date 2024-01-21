@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY cmake-buildsize     "427 MB (add 1.2 GB for tests)">
   <!ENTITY cmake-time          "2.2 SBU (add 3.9 SBU for tests, both using parallelism=4)">
 @y
@@ -176,25 +170,25 @@
 @z
 
 @x
-      <command>sed ... Modules/GNUInstallDirs.cmake</command>: 
-      This command disables applications using cmake from attempting to 
+      <command>sed ... Modules/GNUInstallDirs.cmake</command>:
+      This command disables applications using cmake from attempting to
       install files in /usr/lib64/.
 @y
-      <command>sed ... Modules/GNUInstallDirs.cmake</command>: 
-      This command disables applications using cmake from attempting to 
+      <command>sed ... Modules/GNUInstallDirs.cmake</command>:
+      This command disables applications using cmake from attempting to
       install files in /usr/lib64/.
 @z
 
 @x
-      <parameter>--system-libs</parameter>: This switch forces the build system
-      to link against <application>Zlib</application>,
-      <application>Bzip2</application>, <application>cURL</application>,
-      <application>nghttp2</application>,
-      <application>Expat</application> and <application>libarchive</application>
-      installed on the system.
+      <parameter>--system-libs</parameter>: This switch forces the build
+      system to link against the system installed version for all needed
+      libraries but those explicitly specified via a
+      <option>--no-system-*</option> option.
 @y
-      <parameter>--system-libs</parameter>:
-      本スイッチは、システムにインストール済の <application>Zlib</application>、<application>Bzip2</application>、<application>cURL</application>、<application>nghttp2</application>、<application>Expat</application>, <application>libarchive</application> をリンクすることを指示します。
+      <parameter>--system-libs</parameter>: This switch forces the build
+      system to link against the system installed version for all needed
+      libraries but those explicitly specified via a
+      <option>--no-system-*</option> option.
 @z
 
 @x

@@ -4,23 +4,17 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-<sect1 id="ojdk-conf" xreflabel="Configuring the JAVA environment">
+<sect1 id="ojdk-conf" xreflabel="Configuring the Java environment">
   <?dbhtml filename="ojdk-conf.html"?>
 @y
-<sect1 id="ojdk-conf" xreflabel="JAVA 環境の設定">
+<sect1 id="ojdk-conf" xreflabel="Java 環境の設定">
   <?dbhtml filename="ojdk-conf.html"?>
 @z
 
 @x
-  <title>Configuring the JAVA environment</title>
+  <title>Configuring the Java environment</title>
 @y
-  <title>JAVA 環境の設定</title>
+  <title>Java 環境の設定</title>
 @z
 
 @x

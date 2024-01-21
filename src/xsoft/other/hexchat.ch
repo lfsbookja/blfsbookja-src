@@ -3,63 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!-- For the next version, remove the -repack -->
-  <!ENTITY hexchat-download-http "https://dl.hexchat.net/hexchat/hexchat-&hexchat-version;.tar.xz">
-  <!ENTITY hexchat-download-ftp  " ">
-  <!ENTITY hexchat-md5sum        "0af269d719c2c047310d44804bb31fdb">
-  <!ENTITY hexchat-size          "1.3 MB">
-  <!ENTITY hexchat-buildsize     "22 MB">
   <!ENTITY hexchat-time          "less than 0.1 SBU (using parallelism=4)">
-]>
 @y
-  <!-- For the next version, remove the -repack -->
-  <!ENTITY hexchat-download-http "https://dl.hexchat.net/hexchat/hexchat-&hexchat-version;.tar.xz">
-  <!ENTITY hexchat-download-ftp  " ">
-  <!ENTITY hexchat-md5sum        "0af269d719c2c047310d44804bb31fdb">
-  <!ENTITY hexchat-size          "1.3 MB">
-  <!ENTITY hexchat-buildsize     "22 MB">
   <!ENTITY hexchat-time          "less than 0.1 SBU (using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="hexchat" xreflabel="HexChat-&hexchat-version;">
-  <?dbhtml filename="hexchat.html"?>
-@y
-<sect1 id="hexchat" xreflabel="HexChat-&hexchat-version;">
-  <?dbhtml filename="hexchat.html"?>
-@z
-
-@x
-  <title>HexChat-&hexchat-version;</title>
-@y
-  <title>HexChat-&hexchat-version;</title>
-@z
-
-@x
-  <indexterm zone="hexchat">
-    <primary sortas="a-HexChat">HexChat</primary>
-  </indexterm>
-@y
-  <indexterm zone="hexchat">
-    <primary sortas="a-HexChat">HexChat</primary>
-  </indexterm>
 @z
 
 @x

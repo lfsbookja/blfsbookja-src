@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xfce4-panel-download-http
-           "https://archive.xfce.org/src/xfce/xfce4-panel/&xfce4-version;/xfce4-panel-&xfce4-panel-version;.tar.bz2">
-  <!ENTITY xfce4-panel-download-ftp  " ">
-  <!ENTITY xfce4-panel-md5sum        "ca7298800e6499ebf79fe37a8bfd3360">
-  <!ENTITY xfce4-panel-size          "1.6 MB">
-  <!ENTITY xfce4-panel-buildsize     "39 MB">
-  <!ENTITY xfce4-panel-time          "0.3 SBU">
-]>
-@y
-  <!ENTITY xfce4-panel-download-http
-           "https://archive.xfce.org/src/xfce/xfce4-panel/&xfce4-version;/xfce4-panel-&xfce4-panel-version;.tar.bz2">
-  <!ENTITY xfce4-panel-download-ftp  " ">
-  <!ENTITY xfce4-panel-md5sum        "ca7298800e6499ebf79fe37a8bfd3360">
-  <!ENTITY xfce4-panel-size          "1.6 MB">
-  <!ENTITY xfce4-panel-buildsize     "39 MB">
-  <!ENTITY xfce4-panel-time          "0.3 SBU">
-]>
-@z
-
-@x
-<sect1 id="xfce4-panel" xreflabel="xfce4-panel-&xfce4-panel-version;">
-  <?dbhtml filename="xfce4-panel.html"?>
-@y
-<sect1 id="xfce4-panel" xreflabel="xfce4-panel-&xfce4-panel-version;">
-  <?dbhtml filename="xfce4-panel.html"?>
-@z
-
-@x
-  <title>xfce4-panel-&xfce4-panel-version;</title>
-@y
-  <title>xfce4-panel-&xfce4-panel-version;</title>
-@z
-
-@x
-  <indexterm zone="xfce4-panel">
-    <primary sortas="a-xfce4-panel">xfce4-panel</primary>
-  </indexterm>
-@y
-  <indexterm zone="xfce4-panel">
-    <primary sortas="a-xfce4-panel">xfce4-panel</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Xfce4 Panel</title>

@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY ristretto-download-http
-           "https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-&ristretto-version;.tar.bz2">
-  <!ENTITY ristretto-download-ftp  " ">
-  <!ENTITY ristretto-md5sum        "a21966fa7aa2de1881f163097b62a2fd">
-  <!ENTITY ristretto-size          "818 KB">
-  <!ENTITY ristretto-buildsize     "9.9 MB">
-  <!ENTITY ristretto-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY ristretto-download-http
-           "https://archive.xfce.org/src/apps/ristretto/0.13/ristretto-&ristretto-version;.tar.bz2">
-  <!ENTITY ristretto-download-ftp  " ">
-  <!ENTITY ristretto-md5sum        "a21966fa7aa2de1881f163097b62a2fd">
-  <!ENTITY ristretto-size          "818 KB">
-  <!ENTITY ristretto-buildsize     "9.9 MB">
-  <!ENTITY ristretto-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="ristretto" xreflabel="Ristretto-&ristretto-version;">
-  <?dbhtml filename="ristretto.html"?>
-@y
-<sect1 id="ristretto" xreflabel="Ristretto-&ristretto-version;">
-  <?dbhtml filename="ristretto.html"?>
-@z
-
-@x
-  <title>Ristretto-&ristretto-version;</title>
-@y
-  <title>Ristretto-&ristretto-version;</title>
-@z
-
-@x
-  <indexterm zone="ristretto">
-    <primary sortas="a-Ristretto">Ristretto</primary>
-  </indexterm>
-@y
-  <indexterm zone="ristretto">
-    <primary sortas="a-Ristretto">Ristretto</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Ristretto</title>

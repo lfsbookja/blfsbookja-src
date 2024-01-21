@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY pygobject3-buildsize     "13 MB (add 2.5 MB for tests)">
   <!ENTITY pygobject3-time          "0.3 SBU (with tests)">
 @y

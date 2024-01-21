@@ -3,63 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!-- Watch directory when updating -->
-  <!ENTITY fltk-download-http "https://fltk.org/pub/fltk/&fltk-version;/fltk-&fltk-version;-source.tar.gz">
-  <!ENTITY fltk-download-ftp  " ">
-  <!ENTITY fltk-md5sum        "6e7a389f97b420bc31f99edd3522a85e">
-  <!ENTITY fltk-size          "5.4 MB">
   <!ENTITY fltk-buildsize     "122 MB (with documentation)">
   <!ENTITY fltk-time          "0.2 SBU (Using parallelism=4)">
-]>
 @y
-  <!-- Watch directory when updating -->
-  <!ENTITY fltk-download-http "https://fltk.org/pub/fltk/&fltk-version;/fltk-&fltk-version;-source.tar.gz">
-  <!ENTITY fltk-download-ftp  " ">
-  <!ENTITY fltk-md5sum        "6e7a389f97b420bc31f99edd3522a85e">
-  <!ENTITY fltk-size          "5.4 MB">
   <!ENTITY fltk-buildsize     "122 MB (with documentation)">
   <!ENTITY fltk-time          "0.2 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="fltk" xreflabel="FLTK-&fltk-version;">
-  <?dbhtml filename="fltk.html"?>
-@y
-<sect1 id="fltk" xreflabel="FLTK-&fltk-version;">
-  <?dbhtml filename="fltk.html"?>
-@z
-
-@x
-  <title>FLTK-&fltk-version;</title>
-@y
-  <title>FLTK-&fltk-version;</title>
-@z
-
-@x
-  <indexterm zone="fltk">
-    <primary sortas="a-FLTK">FLTK</primary>
-  </indexterm>
-@y
-  <indexterm zone="fltk">
-    <primary sortas="a-FLTK">FLTK</primary>
-  </indexterm>
 @z
 
 @x

@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libmpeg2-download-http "https://libmpeg2.sourceforge.net/files/libmpeg2-&libmpeg2-version;.tar.gz">
-  <!ENTITY libmpeg2-download-ftp  " ">
-  <!ENTITY libmpeg2-md5sum        "0f92c7454e58379b4a5a378485bbd8ef">
-  <!ENTITY libmpeg2-size          "513 KB">
-  <!ENTITY libmpeg2-buildsize     "6 MB">
-  <!ENTITY libmpeg2-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY libmpeg2-download-http "https://libmpeg2.sourceforge.net/files/libmpeg2-&libmpeg2-version;.tar.gz">
-  <!ENTITY libmpeg2-download-ftp  " ">
-  <!ENTITY libmpeg2-md5sum        "0f92c7454e58379b4a5a378485bbd8ef">
-  <!ENTITY libmpeg2-size          "513 KB">
-  <!ENTITY libmpeg2-buildsize     "6 MB">
-  <!ENTITY libmpeg2-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libmpeg2" xreflabel="libmpeg2-&libmpeg2-version;">
-  <?dbhtml filename="libmpeg2.html"?>
-@y
-<sect1 id="libmpeg2" xreflabel="libmpeg2-&libmpeg2-version;">
-  <?dbhtml filename="libmpeg2.html"?>
-@z
-
-@x
-  <title>libmpeg2-&libmpeg2-version;</title>
-@y
-  <title>libmpeg2-&libmpeg2-version;</title>
-@z
-
-@x
-  <indexterm zone="libmpeg2">
-    <primary sortas="a-libmpeg2">libmpeg2</primary>
-  </indexterm>
-@y
-  <indexterm zone="libmpeg2">
-    <primary sortas="a-libmpeg2">libmpeg2</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to libmpeg2</title>

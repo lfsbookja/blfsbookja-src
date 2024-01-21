@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY wget-buildsize     "36 MB (add 27 MB for tests)">
   <!ENTITY wget-time          "0.3 SBU (add 0.3 SBU for tests)">
 @y

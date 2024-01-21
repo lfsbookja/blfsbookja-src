@@ -3,65 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY mpv-download-http "https://github.com/mpv-player/mpv/archive/refs/tags/v&mpv-version;/mpv-&mpv-version;.tar.gz">
-  <!ENTITY mpv-download-ftp  " ">
-  <!ENTITY mpv-md5sum        "54bd6864cc831f1fee6dee693a0421eb">
-  <!ENTITY mpv-size          "3.2 MB">
-  <!ENTITY mpv-buildsize     "25 MB">
   <!ENTITY mpv-time          "0.2 SBU (Using parallelism=4)">
 @y
-  <!ENTITY mpv-download-http "https://github.com/mpv-player/mpv/archive/refs/tags/v&mpv-version;/mpv-&mpv-version;.tar.gz">
-  <!ENTITY mpv-download-ftp  " ">
-  <!ENTITY mpv-md5sum        "54bd6864cc831f1fee6dee693a0421eb">
-  <!ENTITY mpv-size          "3.2 MB">
-  <!ENTITY mpv-buildsize     "25 MB">
   <!ENTITY mpv-time          "0.2 SBU (Using parallelism=4)">
-@z
-
-@x
-]>
-@y
-]>
-@z
-
-@x
-<sect1 id="mpv" xreflabel="mpv-&mpv-version;">
-  <?dbhtml filename="mpv.html"?>
-@y
-<sect1 id="mpv" xreflabel="mpv-&mpv-version;">
-  <?dbhtml filename="mpv.html"?>
-@z
-
-@x
-  <title>mpv-&mpv-version;</title>
-@y
-  <title>mpv-&mpv-version;</title>
-@z
-
-@x
-  <indexterm zone="mpv">
-    <primary sortas="a-mpv">mpv</primary>
-  </indexterm>
-@y
-  <indexterm zone="mpv">
-    <primary sortas="a-mpv">mpv</primary>
-  </indexterm>
 @z
 
 @x

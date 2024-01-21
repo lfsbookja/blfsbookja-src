@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY imagemagick-buildsize     "164 MB (with typical dependencies; add 31 MB for checks)">
   <!ENTITY imagemagick-time          "0.8 SBU (with typical dependencies; add 0.8 SBU for checks, both using  parallelism=4)">
 @y

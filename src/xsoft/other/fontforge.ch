@@ -3,71 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-<!--
-  <!ENTITY fontforge-download-http "https://github.com/fontforge/fontforge/releases/download/&fontforge-version;/fontforge-dist-&fontforge-version;.tar.xz">
--->
- <!ENTITY fontforge-download-http "https://github.com/fontforge/fontforge/releases/download/&fontforge-version;/fontforge-&fontforge-version;.tar.xz">
-@y
-<!--
-  <!ENTITY fontforge-download-http "https://github.com/fontforge/fontforge/releases/download/&fontforge-version;/fontforge-dist-&fontforge-version;.tar.xz">
--->
- <!ENTITY fontforge-download-http "https://github.com/fontforge/fontforge/releases/download/&fontforge-version;/fontforge-&fontforge-version;.tar.xz">
-@z
-
-@x
-  <!ENTITY fontforge-download-ftp  " ">
-  <!ENTITY fontforge-md5sum        "7043f25368ed25bcd75d168564919fb7">
-  <!ENTITY fontforge-size          "13 MB">
   <!ENTITY fontforge-buildsize     "102 MB (add 52 MB for the tests)">
   <!ENTITY fontforge-time          "0.4 SBU (with parallelism=4, add 0.1 SBU for the tests)">
-]>
 @y
-  <!ENTITY fontforge-download-ftp  " ">
-  <!ENTITY fontforge-md5sum        "7043f25368ed25bcd75d168564919fb7">
-  <!ENTITY fontforge-size          "13 MB">
   <!ENTITY fontforge-buildsize     "102 MB (add 52 MB for the tests)">
   <!ENTITY fontforge-time          "0.4 SBU (with parallelism=4, add 0.1 SBU for the tests)">
-]>
-@z
-
-@x
-<sect1 id="fontforge" xreflabel="FontForge-&fontforge-version;">
-  <?dbhtml filename="fontforge.html"?>
-@y
-<sect1 id="fontforge" xreflabel="FontForge-&fontforge-version;">
-  <?dbhtml filename="fontforge.html"?>
-@z
-
-@x
-  <title>FontForge-&fontforge-version;</title>
-@y
-  <title>FontForge-&fontforge-version;</title>
-@z
-
-@x
-  <indexterm zone="fontforge">
-    <primary sortas="a-FontForge">FontForge</primary>
-  </indexterm>
-@y
-  <indexterm zone="fontforge">
-    <primary sortas="a-FontForge">FontForge</primary>
-  </indexterm>
 @z
 
 @x

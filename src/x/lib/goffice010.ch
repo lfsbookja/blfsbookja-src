@@ -3,63 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY goffice010-download-http
-           "&gnome-download-http;/goffice/0.10/goffice-&goffice010-version;.tar.xz">
-  <!ENTITY goffice010-download-ftp  " ">
-  <!ENTITY goffice010-md5sum        "50555440e0e4ccef4651193e5e0b5f62">
-  <!ENTITY goffice010-size          "2.4 MB">
   <!ENTITY goffice010-buildsize     "100 MB (with tests)">
   <!ENTITY goffice010-time          "0.5 SBU (Using parallelism=4; with tests)">
-]>
 @y
-  <!ENTITY goffice010-download-http
-           "&gnome-download-http;/goffice/0.10/goffice-&goffice010-version;.tar.xz">
-  <!ENTITY goffice010-download-ftp  " ">
-  <!ENTITY goffice010-md5sum        "50555440e0e4ccef4651193e5e0b5f62">
-  <!ENTITY goffice010-size          "2.4 MB">
   <!ENTITY goffice010-buildsize     "100 MB (with tests)">
   <!ENTITY goffice010-time          "0.5 SBU (Using parallelism=4; with tests)">
-]>
-@z
-
-@x
-<sect1 id="goffice010" xreflabel="GOffice-&goffice010-version;">
-  <?dbhtml filename="goffice010.html"?>
-@y
-<sect1 id="goffice010" xreflabel="GOffice-&goffice010-version;">
-  <?dbhtml filename="goffice010.html"?>
-@z
-
-@x
-  <title>GOffice-&goffice010-version;</title>
-@y
-  <title>GOffice-&goffice010-version;</title>
-@z
-
-@x
-  <indexterm zone="goffice010">
-    <primary sortas="a-GOffice">GOffice</primary>
-  </indexterm>
-@y
-  <indexterm zone="goffice010">
-    <primary sortas="a-GOffice">GOffice</primary>
-  </indexterm>
 @z
 
 @x

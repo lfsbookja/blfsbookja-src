@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY adwaita-icon-theme-download-http
-   "&gnome-download-http;/adwaita-icon-theme/&gnome-45;/adwaita-icon-theme-&adwaita-icon-theme-version;.tar.xz">
-  <!ENTITY adwaita-icon-theme-download-ftp  " ">
-  <!ENTITY adwaita-icon-theme-md5sum        "5407d7921f717e837341bca9bb1bc50b">
-  <!ENTITY adwaita-icon-theme-size          "4.1 MB">
-  <!ENTITY adwaita-icon-theme-buildsize     "72 MB">
-  <!ENTITY adwaita-icon-theme-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY adwaita-icon-theme-download-http
-   "&gnome-download-http;/adwaita-icon-theme/&gnome-45;/adwaita-icon-theme-&adwaita-icon-theme-version;.tar.xz">
-  <!ENTITY adwaita-icon-theme-download-ftp  " ">
-  <!ENTITY adwaita-icon-theme-md5sum        "5407d7921f717e837341bca9bb1bc50b">
-  <!ENTITY adwaita-icon-theme-size          "4.1 MB">
-  <!ENTITY adwaita-icon-theme-buildsize     "72 MB">
-  <!ENTITY adwaita-icon-theme-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="adwaita-icon-theme" xreflabel="adwaita-icon-theme-&adwaita-icon-theme-version;">
-  <?dbhtml filename="adwaita-icon-theme.html"?>
-@y
-<sect1 id="adwaita-icon-theme" xreflabel="adwaita-icon-theme-&adwaita-icon-theme-version;">
-  <?dbhtml filename="adwaita-icon-theme.html"?>
-@z
-
-@x
-  <title>adwaita-icon-theme-&adwaita-icon-theme-version;</title>
-@y
-  <title>adwaita-icon-theme-&adwaita-icon-theme-version;</title>
-@z
-
-@x
-  <indexterm zone="adwaita-icon-theme">
-    <primary sortas="a-adwaita-icon-theme">adwaita-icon-theme</primary>
-  </indexterm>
-@y
-  <indexterm zone="adwaita-icon-theme">
-    <primary sortas="a-adwaita-icon-theme">adwaita-icon-theme</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Adwaita Icon Theme</title>

@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY tumbler-download-http
-           "https://archive.xfce.org/src/xfce/tumbler/&xfce4-version;/tumbler-&tumbler-version;.tar.bz2">
-  <!ENTITY tumbler-download-ftp  " ">
-  <!ENTITY tumbler-md5sum        "576ff73eb77530b001e36d565544a7f6">
-  <!ENTITY tumbler-size          "608 KB">
-  <!ENTITY tumbler-buildsize     "13 MB">
-  <!ENTITY tumbler-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY tumbler-download-http
-           "https://archive.xfce.org/src/xfce/tumbler/&xfce4-version;/tumbler-&tumbler-version;.tar.bz2">
-  <!ENTITY tumbler-download-ftp  " ">
-  <!ENTITY tumbler-md5sum        "576ff73eb77530b001e36d565544a7f6">
-  <!ENTITY tumbler-size          "608 KB">
-  <!ENTITY tumbler-buildsize     "13 MB">
-  <!ENTITY tumbler-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="tumbler" xreflabel="tumbler-&tumbler-version;">
-  <?dbhtml filename="tumbler.html"?>
-@y
-<sect1 id="tumbler" xreflabel="tumbler-&tumbler-version;">
-  <?dbhtml filename="tumbler.html"?>
-@z
-
-@x
-  <title>tumbler-&tumbler-version;</title>
-@y
-  <title>tumbler-&tumbler-version;</title>
-@z
-
-@x
-  <indexterm zone="tumbler">
-    <primary sortas="a-tumbler">Tumbler</primary>
-  </indexterm>
-@y
-  <indexterm zone="tumbler">
-    <primary sortas="a-tumbler">Tumbler</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to tumbler</title>

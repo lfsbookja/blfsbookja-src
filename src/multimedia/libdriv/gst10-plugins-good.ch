@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY gst10-plugins-good-buildsize     "110 MB (with tests)">
   <!ENTITY gst10-plugins-good-time          "0.9 SBU (Using parallelism=4; with tests)">
 @y
@@ -131,7 +125,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="aalib"/>,
-      <xref linkend="alsa-oss"/>,
+      <!--<xref linkend="alsa-oss"/>,-->
       <xref linkend="gtk3"/> (for examples),
       <xref linkend="libdv"/>,
       &qt5-deps;,
@@ -141,6 +135,7 @@
       <xref linkend="valgrind"/>,
       <xref linkend='v4l-utils'/>,
       <xref linkend="wayland"/>,
+      <ulink url="https://www.alsa-project.org/files/pub/oss-lib">alsa-oss</ulink>,
       <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>,
       <ulink url="https://jackaudio.org/">JACK</ulink>,
       <ulink url="https://github.com/cacalabs/libcaca">libcaca</ulink>,
@@ -156,7 +151,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="aalib"/>,
-      <xref linkend="alsa-oss"/>,
+      <!--<xref linkend="alsa-oss"/>,-->
       <xref linkend="gtk3"/> (for examples),
       <xref linkend="libdv"/>,
       &qt5-deps;,
@@ -166,6 +161,7 @@
       <xref linkend="valgrind"/>,
       <xref linkend='v4l-utils'/>,
       <xref linkend="wayland"/>,
+      <ulink url="https://www.alsa-project.org/files/pub/oss-lib">alsa-oss</ulink>,
       <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>,
       <ulink url="https://jackaudio.org/">JACK</ulink>,
       <ulink url="https://github.com/cacalabs/libcaca">libcaca</ulink>,

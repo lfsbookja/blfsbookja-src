@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY gnumeric-download-http "&gnome-download-http;/gnumeric/1.12/gnumeric-&gnumeric-version;.tar.xz">
-  <!ENTITY gnumeric-download-ftp  " ">
-  <!ENTITY gnumeric-md5sum        "8d5b6928173797043e0a0aceeb2ceb78">
-  <!ENTITY gnumeric-size          "17 MB">
   <!ENTITY gnumeric-buildsize     "300 MB (add 13 MB for tests)">
   <!ENTITY gnumeric-time          "0.8 SBU (Using parallelism=4; add 4.0 SBU for tests)">
-]>
 @y
-  <!ENTITY gnumeric-download-http "&gnome-download-http;/gnumeric/1.12/gnumeric-&gnumeric-version;.tar.xz">
-  <!ENTITY gnumeric-download-ftp  " ">
-  <!ENTITY gnumeric-md5sum        "8d5b6928173797043e0a0aceeb2ceb78">
-  <!ENTITY gnumeric-size          "17 MB">
   <!ENTITY gnumeric-buildsize     "300 MB (add 13 MB for tests)">
   <!ENTITY gnumeric-time          "0.8 SBU (Using parallelism=4; add 4.0 SBU for tests)">
-]>
-@z
-
-@x
-<sect1 id="gnumeric" xreflabel="Gnumeric-&gnumeric-version;">
-  <?dbhtml filename="gnumeric.html"?>
-@y
-<sect1 id="gnumeric" xreflabel="Gnumeric-&gnumeric-version;">
-  <?dbhtml filename="gnumeric.html"?>
-@z
-
-@x
-  <title>Gnumeric-&gnumeric-version;</title>
-@y
-  <title>Gnumeric-&gnumeric-version;</title>
-@z
-
-@x
-  <indexterm zone="gnumeric">
-    <primary sortas="a-Gnumeric">Gnumeric</primary>
-  </indexterm>
-@y
-  <indexterm zone="gnumeric">
-    <primary sortas="a-Gnumeric">Gnumeric</primary>
-  </indexterm>
 @z
 
 @x

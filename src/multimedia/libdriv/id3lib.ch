@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY id3lib-download-http "&sourceforge-dl;/id3lib/id3lib-&id3lib-version;.tar.gz">
-  <!ENTITY id3lib-download-ftp  " ">
-  <!ENTITY id3lib-md5sum        "19f27ddd2dda4b2d26a559a4f0f402a7">
-  <!ENTITY id3lib-size          "932 KB">
-  <!ENTITY id3lib-buildsize     "16 MB">
-  <!ENTITY id3lib-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY id3lib-download-http "&sourceforge-dl;/id3lib/id3lib-&id3lib-version;.tar.gz">
-  <!ENTITY id3lib-download-ftp  " ">
-  <!ENTITY id3lib-md5sum        "19f27ddd2dda4b2d26a559a4f0f402a7">
-  <!ENTITY id3lib-size          "932 KB">
-  <!ENTITY id3lib-buildsize     "16 MB">
-  <!ENTITY id3lib-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="id3lib" xreflabel="id3lib-&id3lib-version;">
-  <?dbhtml filename="id3lib.html"?>
-@y
-<sect1 id="id3lib" xreflabel="id3lib-&id3lib-version;">
-  <?dbhtml filename="id3lib.html"?>
-@z
-
-@x
-  <title>id3lib-&id3lib-version;</title>
-@y
-  <title>id3lib-&id3lib-version;</title>
-@z
-
-@x
-  <indexterm zone="id3lib">
-    <primary sortas="a-id3lib">id3lib</primary>
-  </indexterm>
-@y
-  <indexterm zone="id3lib">
-    <primary sortas="a-id3lib">id3lib</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to id3lib</title>

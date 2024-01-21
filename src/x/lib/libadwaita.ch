@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libadwaita-download-http "&gnome-download-http;/libadwaita/&libadwaita-minor;/libadwaita-&libadwaita-version;.tar.xz">
-  <!ENTITY libadwaita-download-ftp  " ">
-  <!ENTITY libadwaita-md5sum        "c2fc600025914eb8c5304b52f376197d">
-  <!ENTITY libadwaita-size          "3.9 MB">
   <!ENTITY libadwaita-buildsize     "53 MB (with tests)">
   <!ENTITY libadwaita-time          "0.3 SBU (with parallelism=4; with tests)">
-]>
 @y
-  <!ENTITY libadwaita-download-http "&gnome-download-http;/libadwaita/&libadwaita-minor;/libadwaita-&libadwaita-version;.tar.xz">
-  <!ENTITY libadwaita-download-ftp  " ">
-  <!ENTITY libadwaita-md5sum        "c2fc600025914eb8c5304b52f376197d">
-  <!ENTITY libadwaita-size          "3.9 MB">
   <!ENTITY libadwaita-buildsize     "53 MB (with tests)">
   <!ENTITY libadwaita-time          "0.3 SBU (with parallelism=4; with tests)">
-]>
-@z
-
-@x
-<sect1 id="libadwaita1" xreflabel="libadwaita-&libadwaita-version;">
-  <?dbhtml filename="libadwaita.html"?>
-@y
-<sect1 id="libadwaita1" xreflabel="libadwaita-&libadwaita-version;">
-  <?dbhtml filename="libadwaita.html"?>
-@z
-
-@x
-  <title>libadwaita-&libadwaita-version;</title>
-@y
-  <title>libadwaita-&libadwaita-version;</title>
-@z
-
-@x
-  <indexterm zone="libadwaita1">
-    <primary sortas="a-libadwaita">libadwaita</primary>
-  </indexterm>
-@y
-  <indexterm zone="libadwaita1">
-    <primary sortas="a-libadwaita">libadwaita</primary>
-  </indexterm>
 @z
 
 @x

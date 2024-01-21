@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY harfbuzz-buildsize     "153 MB (with tests)">
   <!ENTITY harfbuzz-time          "0.8 SBU (Using parallelism=4; with tests)">
 @y

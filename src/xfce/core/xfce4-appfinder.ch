@@ -3,63 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xfce4-appfinder-download-http
-           "https://archive.xfce.org/src/xfce/xfce4-appfinder/&xfce4-version;/xfce4-appfinder-&xfce4-appfinder-version;.tar.bz2">
-  <!ENTITY xfce4-appfinder-download-ftp  " ">
-  <!ENTITY xfce4-appfinder-md5sum        "621d811f93b3edaac4a0205bc18ef5c5">
-  <!ENTITY xfce4-appfinder-size          "552 KB">
-  <!ENTITY xfce4-appfinder-buildsize     "7.1 MB">
   <!ENTITY xfce4-appfinder-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY xfce4-appfinder-download-http
-           "https://archive.xfce.org/src/xfce/xfce4-appfinder/&xfce4-version;/xfce4-appfinder-&xfce4-appfinder-version;.tar.bz2">
-  <!ENTITY xfce4-appfinder-download-ftp  " ">
-  <!ENTITY xfce4-appfinder-md5sum        "621d811f93b3edaac4a0205bc18ef5c5">
-  <!ENTITY xfce4-appfinder-size          "552 KB">
-  <!ENTITY xfce4-appfinder-buildsize     "7.1 MB">
   <!ENTITY xfce4-appfinder-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="xfce4-appfinder" xreflabel="xfce4-appfinder-&xfce4-appfinder-version;">
-  <?dbhtml filename="xfce4-appfinder.html"?>
-@y
-<sect1 id="xfce4-appfinder" xreflabel="xfce4-appfinder-&xfce4-appfinder-version;">
-  <?dbhtml filename="xfce4-appfinder.html"?>
-@z
-
-@x
-  <title>xfce4-appfinder-&xfce4-appfinder-version;</title>
-@y
-  <title>xfce4-appfinder-&xfce4-appfinder-version;</title>
-@z
-
-@x
-  <indexterm zone="xfce4-appfinder">
-    <primary sortas="a-xfce4-appfinder">xfce4-appfinder</primary>
-  </indexterm>
-@y
-  <indexterm zone="xfce4-appfinder">
-    <primary sortas="a-xfce4-appfinder">xfce4-appfinder</primary>
-  </indexterm>
 @z
 
 @x

@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY feh-download-http "https://feh.finalrewind.org/feh-&feh-version;.tar.bz2">
-  <!ENTITY feh-download-ftp  " ">
-  <!ENTITY feh-md5sum        "0a780bf321c0653d03e3e18410f4d1ba">
-  <!ENTITY feh-size          "2.1 MB">
   <!ENTITY feh-buildsize     "6.9 MB (with tests)">
   <!ENTITY feh-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY feh-download-http "https://feh.finalrewind.org/feh-&feh-version;.tar.bz2">
-  <!ENTITY feh-download-ftp  " ">
-  <!ENTITY feh-md5sum        "0a780bf321c0653d03e3e18410f4d1ba">
-  <!ENTITY feh-size          "2.1 MB">
   <!ENTITY feh-buildsize     "6.9 MB (with tests)">
   <!ENTITY feh-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-<sect1 id="feh" xreflabel="feh-&feh-version;">
-  <?dbhtml filename="feh.html"?>
-@y
-<sect1 id="feh" xreflabel="feh-&feh-version;">
-  <?dbhtml filename="feh.html"?>
-@z
-
-@x
-  <title>feh-&feh-version;</title>
-@y
-  <title>feh-&feh-version;</title>
-@z
-
-@x
-  <indexterm zone="feh">
-    <primary sortas="a-feh">feh</primary>
-  </indexterm>
-@y
-  <indexterm zone="feh">
-    <primary sortas="a-feh">feh</primary>
-  </indexterm>
 @z
 
 @x

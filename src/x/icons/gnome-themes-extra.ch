@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY gnome-themes-extra-download-http
-   "&gnome-download-http;/gnome-themes-extra/&gnome-minor-28;/gnome-themes-extra-&gnome-themes-extra-version;.tar.xz">
-  <!ENTITY gnome-themes-extra-download-ftp  " ">
-  <!ENTITY gnome-themes-extra-md5sum        "f9f2c6c521948da427f702372e16f826">
-  <!ENTITY gnome-themes-extra-size          "2.8 MB">
-  <!ENTITY gnome-themes-extra-buildsize     "40 MB">
-  <!ENTITY gnome-themes-extra-time          "0.3 SBU">
-]>
-@y
-  <!ENTITY gnome-themes-extra-download-http
-   "&gnome-download-http;/gnome-themes-extra/&gnome-minor-28;/gnome-themes-extra-&gnome-themes-extra-version;.tar.xz">
-  <!ENTITY gnome-themes-extra-download-ftp  " ">
-  <!ENTITY gnome-themes-extra-md5sum        "f9f2c6c521948da427f702372e16f826">
-  <!ENTITY gnome-themes-extra-size          "2.8 MB">
-  <!ENTITY gnome-themes-extra-buildsize     "40 MB">
-  <!ENTITY gnome-themes-extra-time          "0.3 SBU">
-]>
-@z
-
-@x
-<sect1 id="gnome-themes-extra" xreflabel="gnome-themes-extra-&gnome-themes-extra-version;">
-  <?dbhtml filename="gnome-themes-extra.html"?>
-@y
-<sect1 id="gnome-themes-extra" xreflabel="gnome-themes-extra-&gnome-themes-extra-version;">
-  <?dbhtml filename="gnome-themes-extra.html"?>
-@z
-
-@x
-  <title>gnome-themes-extra-&gnome-themes-extra-version;</title>
-@y
-  <title>gnome-themes-extra-&gnome-themes-extra-version;</title>
-@z
-
-@x
-  <indexterm zone="gnome-themes-extra">
-    <primary sortas="a-gnome-themes-extra">gnome-themes-extra</primary>
-  </indexterm>
-@y
-  <indexterm zone="gnome-themes-extra">
-    <primary sortas="a-gnome-themes-extra">gnome-themes-extra</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to GNOME Themes Extra</title>

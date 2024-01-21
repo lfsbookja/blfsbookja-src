@@ -3,37 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libaom-download-http "https://storage.googleapis.com/aom-releases/libaom-&libaom-version;.tar.gz">
-  <!ENTITY libaom-download-ftp  " ">
-  <!ENTITY libaom-md5sum        "53c395f49ff022ad2529656335ce5c74">
-  <!ENTITY libaom-size          "5.2 MB">
   <!ENTITY libaom-buildsize     "103 MB (add 1.0 GB for tests)">
-  <!ENTITY libaom-time          "0.8 SBU (with parallelism=4, add 187 SBU for tests)">
-]>
+  <!ENTITY libaom-time          "1.0 SBU (with parallelism=4, add 187 SBU for tests)">
 @y
-  <!ENTITY libaom-download-http "https://storage.googleapis.com/aom-releases/libaom-&libaom-version;.tar.gz">
-  <!ENTITY libaom-download-ftp  " ">
-  <!ENTITY libaom-md5sum        "53c395f49ff022ad2529656335ce5c74">
-  <!ENTITY libaom-size          "5.2 MB">
   <!ENTITY libaom-buildsize     "103 MB (add 1.0 GB for tests)">
-  <!ENTITY libaom-time          "0.8 SBU (with parallelism=4, add 187 SBU for tests)">
-]>
+  <!ENTITY libaom-time          "1.0 SBU (with parallelism=4, add 187 SBU for tests)">
 @z
 
 @x

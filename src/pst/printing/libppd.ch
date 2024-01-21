@@ -3,63 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libppd-download-http
-  "https://github.com/OpenPrinting/libppd/releases/download/&libppd-version;/libppd-&libppd-version;.tar.xz">
-  <!ENTITY libppd-download-ftp  " ">
-  <!ENTITY libppd-md5sum        "ab889cbcdaa23689d9a425769f208da9">
-  <!ENTITY libppd-size          "567 KB">
   <!ENTITY libppd-buildsize     "13 MB (with tests)">
   <!ENTITY libppd-time          "less than 0.1 SBU (Using parallelism=4; with tests)">
-]>
 @y
-  <!ENTITY libppd-download-http
-  "https://github.com/OpenPrinting/libppd/releases/download/&libppd-version;/libppd-&libppd-version;.tar.xz">
-  <!ENTITY libppd-download-ftp  " ">
-  <!ENTITY libppd-md5sum        "ab889cbcdaa23689d9a425769f208da9">
-  <!ENTITY libppd-size          "567 KB">
   <!ENTITY libppd-buildsize     "13 MB (with tests)">
   <!ENTITY libppd-time          "less than 0.1 SBU (Using parallelism=4; with tests)">
-]>
-@z
-
-@x
-<sect1 id="libppd" xreflabel="libppd-&libppd-version;">
-  <?dbhtml filename="libppd.html"?>
-@y
-<sect1 id="libppd" xreflabel="libppd-&libppd-version;">
-  <?dbhtml filename="libppd.html"?>
-@z
-
-@x
-  <title>libppd-&libppd-version;</title>
-@y
-  <title>libppd-&libppd-version;</title>
-@z
-
-@x
-  <indexterm zone="libppd">
-    <primary sortas="a-libppd">libppd</primary>
-  </indexterm>
-@y
-  <indexterm zone="libppd">
-    <primary sortas="a-libppd">libppd</primary>
-  </indexterm>
 @z
 
 @x

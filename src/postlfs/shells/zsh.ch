@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY zsh-buildsize     "48 MB (includes documentation and tests)">
   <!ENTITY zsh-time          "1.6 SBU (Using parallelism=4; includes documentation and tests)">
 @y

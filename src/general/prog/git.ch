@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY git-buildsize     "255 MB (with downloaded documentation; add 18 MB for building doc)">
 @y
   <!ENTITY git-buildsize     "255 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 18 MB）">

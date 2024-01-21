@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY valgrind-buildsize     "390 MB (add 66 MB for tests)">
   <!ENTITY valgrind-time          "0.5 SBU (add 6.8 SBU for tests; both using parallelism=4)">
 @y

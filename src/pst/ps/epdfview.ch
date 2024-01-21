@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY epdfview-download-http "&sources-anduin-http;/epdfview-gtk3/epdfview-&epdfview-version;.tar.xz">
-  <!ENTITY epdfview-download-ftp  " ">
-  <!ENTITY epdfview-md5sum        "d222a3dc26c2faf6f862018bb478fb36">
-  <!ENTITY epdfview-size          "184 KB">
-  <!ENTITY epdfview-buildsize     "3.5 MB">
   <!ENTITY epdfview-time          "less than 0.1 SBU (using parallelism=4)">
-]>
 @y
-  <!ENTITY epdfview-download-http "&sources-anduin-http;/epdfview-gtk3/epdfview-&epdfview-version;.tar.xz">
-  <!ENTITY epdfview-download-ftp  " ">
-  <!ENTITY epdfview-md5sum        "d222a3dc26c2faf6f862018bb478fb36">
-  <!ENTITY epdfview-size          "184 KB">
-  <!ENTITY epdfview-buildsize     "3.5 MB">
   <!ENTITY epdfview-time          "less than 0.1 SBU (using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="epdfview" xreflabel="epdfview-&epdfview-version;">
-  <?dbhtml filename="epdfview.html"?>
-@y
-<sect1 id="epdfview" xreflabel="epdfview-&epdfview-version;">
-  <?dbhtml filename="epdfview.html"?>
-@z
-
-@x
-  <title>ePDFView-&epdfview-version;</title>
-@y
-  <title>ePDFView-&epdfview-version;</title>
-@z
-
-@x
-  <indexterm zone="epdfview">
-    <primary sortas="a-epdfview">epdfview</primary>
-  </indexterm>
-@y
-  <indexterm zone="epdfview">
-    <primary sortas="a-epdfview">epdfview</primary>
-  </indexterm>
 @z
 
 @x

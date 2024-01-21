@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xscreensaver-download-http "https://www.jwz.org/xscreensaver/xscreensaver-&xscreensaver-version;.tar.gz">
-  <!ENTITY xscreensaver-download-ftp  " ">
-  <!ENTITY xscreensaver-md5sum        "d64f3fdb8881c735fff4601ec5d88e1f">
-  <!ENTITY xscreensaver-size          "19 MB">
-  <!ENTITY xscreensaver-buildsize     "250 MB">
   <!ENTITY xscreensaver-time          "0.3 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY xscreensaver-download-http "https://www.jwz.org/xscreensaver/xscreensaver-&xscreensaver-version;.tar.gz">
-  <!ENTITY xscreensaver-download-ftp  " ">
-  <!ENTITY xscreensaver-md5sum        "d64f3fdb8881c735fff4601ec5d88e1f">
-  <!ENTITY xscreensaver-size          "19 MB">
-  <!ENTITY xscreensaver-buildsize     "250 MB">
   <!ENTITY xscreensaver-time          "0.3 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="xscreensaver" xreflabel="XScreenSaver-&xscreensaver-version;">
-  <?dbhtml filename="xscreensaver.html"?>
-@y
-<sect1 id="xscreensaver" xreflabel="XScreenSaver-&xscreensaver-version;">
-  <?dbhtml filename="xscreensaver.html"?>
-@z
-
-@x
-  <title>XScreenSaver-&xscreensaver-version;</title>
-@y
-  <title>XScreenSaver-&xscreensaver-version;</title>
-@z
-
-@x
-  <indexterm zone="xscreensaver">
-    <primary sortas="a-XScreenSaver">XScreenSaver</primary>
-  </indexterm>
-@y
-  <indexterm zone="xscreensaver">
-    <primary sortas="a-XScreenSaver">XScreenSaver</primary>
-  </indexterm>
 @z
 
 @x

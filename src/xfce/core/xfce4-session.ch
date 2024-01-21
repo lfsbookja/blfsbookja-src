@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xfce4-session-download-http
-           "https://archive.xfce.org/src/xfce/xfce4-session/&xfce4-version;/xfce4-session-&xfce4-session-version;.tar.bz2">
-  <!ENTITY xfce4-session-download-ftp  " ">
-  <!ENTITY xfce4-session-md5sum        "dfdcb697a2315168e2e56a70f17a19b7">
-  <!ENTITY xfce4-session-size          "856 KB">
-  <!ENTITY xfce4-session-buildsize     "16 MB">
-  <!ENTITY xfce4-session-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY xfce4-session-download-http
-           "https://archive.xfce.org/src/xfce/xfce4-session/&xfce4-version;/xfce4-session-&xfce4-session-version;.tar.bz2">
-  <!ENTITY xfce4-session-download-ftp  " ">
-  <!ENTITY xfce4-session-md5sum        "dfdcb697a2315168e2e56a70f17a19b7">
-  <!ENTITY xfce4-session-size          "856 KB">
-  <!ENTITY xfce4-session-buildsize     "16 MB">
-  <!ENTITY xfce4-session-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="xfce4-session" xreflabel="xfce4-session-&xfce4-session-version;">
-  <?dbhtml filename="xfce4-session.html"?>
-@y
-<sect1 id="xfce4-session" xreflabel="xfce4-session-&xfce4-session-version;">
-  <?dbhtml filename="xfce4-session.html"?>
-@z
-
-@x
-  <title>xfce4-session-&xfce4-session-version;</title>
-@y
-  <title>xfce4-session-&xfce4-session-version;</title>
-@z
-
-@x
-  <indexterm zone="xfce4-session">
-    <primary sortas="a-xfce4-session">xfce4-session</primary>
-  </indexterm>
-@y
-  <indexterm zone="xfce4-session">
-    <primary sortas="a-xfce4-session">xfce4-session</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Xfce4 Session</title>

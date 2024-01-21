@@ -3,63 +3,18 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY kea-download-http "https://downloads.isc.org/isc/kea/&kea-dhcp-version;/kea-&kea-dhcp-version;.tar.gz">
-  <!ENTITY kea-download-ftp  " ">
-  <!ENTITY kea-md5sum        "ad23d02b3ce0475eb077da05b0ae2429">
-  <!ENTITY kea-size          "10 MB">
   <!ENTITY kea-buildsize     "1.5 GB (332 MB installed; add 4 GB for tests)">
   <!ENTITY kea-time          "4.1 SBU (with parallelism=4; add 12 SBU for tests)">
-  <!ENTITY kea-arm-vers      "&kea-dhcp-version;">
-]>
 @y
-  <!ENTITY kea-download-http "https://downloads.isc.org/isc/kea/&kea-dhcp-version;/kea-&kea-dhcp-version;.tar.gz">
-  <!ENTITY kea-download-ftp  " ">
-  <!ENTITY kea-md5sum        "ad23d02b3ce0475eb077da05b0ae2429">
-  <!ENTITY kea-size          "10 MB">
   <!ENTITY kea-buildsize     "1.5 GB (332 MB installed; add 4 GB for tests)">
   <!ENTITY kea-time          "4.1 SBU (with parallelism=4; add 12 SBU for tests)">
-  <!ENTITY kea-arm-vers      "&kea-dhcp-version;">
-]>
-@z
-
-@x
-<sect1 id="kea" xreflabel="Kea-&kea-dhcp-version; DHCP Server">
-  <?dbhtml filename="kea.html"?>
-@y
-<sect1 id="kea" xreflabel="Kea-&kea-dhcp-version; DHCP Server">
-  <?dbhtml filename="kea.html"?>
 @z
 
 @x
   <title>Kea &kea-dhcp-version; DHCP Server</title>
 @y
   <title>Kea &kea-dhcp-version; DHCP Server</title>
-@z
-
-@x
-  <indexterm zone="kea">
-    <primary sortas="a-KEA">Kea DHCP Server</primary>
-  </indexterm>
-@y
-  <indexterm zone="kea">
-    <primary sortas="a-KEA">Kea DHCP Server</primary>
-  </indexterm>
 @z
 
 @x

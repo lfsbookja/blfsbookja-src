@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF8"?>
-@z
-
-@x
   <!ENTITY openssh-buildsize     "45 MB (add 22 MB for tests)">
   <!ENTITY openssh-time          "0.2 SBU (Using parallelism=4;
                                   running the tests takes about 20 minutes,

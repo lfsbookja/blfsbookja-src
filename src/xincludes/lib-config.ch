@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
 <para>As with most libraries, there is no configuration to do, save that the
 library directory, i.e., <filename class="directory">/opt/lib</filename> or
 <filename class="directory">/usr/local/lib</filename> should appear in

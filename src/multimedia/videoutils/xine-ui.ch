@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xine-ui-download-http "&sourceforge-dl;/xine/xine-ui-&xine-ui-version;.tar.xz">
-  <!ENTITY xine-ui-download-ftp  " ">
-  <!ENTITY xine-ui-md5sum        "86a4db9050405a91fcc33b7ad85274f5">
-  <!ENTITY xine-ui-size          "2.1 MB">
-  <!ENTITY xine-ui-buildsize     "23 MB">
-  <!ENTITY xine-ui-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY xine-ui-download-http "&sourceforge-dl;/xine/xine-ui-&xine-ui-version;.tar.xz">
-  <!ENTITY xine-ui-download-ftp  " ">
-  <!ENTITY xine-ui-md5sum        "86a4db9050405a91fcc33b7ad85274f5">
-  <!ENTITY xine-ui-size          "2.1 MB">
-  <!ENTITY xine-ui-buildsize     "23 MB">
-  <!ENTITY xine-ui-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="xine-ui" xreflabel="xine-ui-&xine-ui-version;">
-  <?dbhtml filename="xine-ui.html"?>
-@y
-<sect1 id="xine-ui" xreflabel="xine-ui-&xine-ui-version;">
-  <?dbhtml filename="xine-ui.html"?>
-@z
-
-@x
-  <title>xine-ui-&xine-ui-version;</title>
-@y
-  <title>xine-ui-&xine-ui-version;</title>
-@z
-
-@x
-  <indexterm zone="xine-ui">
-    <primary sortas="a-Xine-User-Interface">Xine User Interface</primary>
-  </indexterm>
-@y
-  <indexterm zone="xine-ui">
-    <primary sortas="a-Xine-User-Interface">Xine User Interface</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Xine User Interface</title>

@@ -3,77 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libevdev-version "1.13.1">
-@y
-  <!ENTITY libevdev-version "1.13.1">
-@z
-
-@x
-  <!ENTITY libevdev-download-http "https://www.freedesktop.org/software/libevdev/libevdev-&libevdev-version;.tar.xz">
-  <!ENTITY libevdev-download-ftp  " ">
-  <!ENTITY libevdev-md5sum        "58fe71aa6fd5e80d0928e9b691761311">
-  <!ENTITY libevdev-size          "448 KB">
   <!ENTITY libevdev-buildsize     "6.0 MB (with tests)">
   <!ENTITY libevdev-time          "0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY libevdev-download-http "https://www.freedesktop.org/software/libevdev/libevdev-&libevdev-version;.tar.xz">
-  <!ENTITY libevdev-download-ftp  " ">
-  <!ENTITY libevdev-md5sum        "58fe71aa6fd5e80d0928e9b691761311">
-  <!ENTITY libevdev-size          "448 KB">
   <!ENTITY libevdev-buildsize     "6.0 MB (with tests)">
   <!ENTITY libevdev-time          "0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <!-- Begin Xorg libevdev Driver -->
-  <sect2 id="libevdev" xreflabel="libevdev-&libevdev-version;">
-@y
-  <!-- Begin Xorg libevdev Driver -->
-  <sect2 id="libevdev" xreflabel="libevdev-&libevdev-version;">
-@z
-
-@x
-  <sect2info>
-    <date>$Date$</date>
-  </sect2info>
-@y
-  <sect2info>
-    <date>$Date$</date>
-  </sect2info>
-@z
-
-@x
-    <title>libevdev &libevdev-version;</title>
-@y
-    <title>libevdev &libevdev-version;</title>
-@z
-
-@x
-    <indexterm zone="libevdev">
-      <primary sortas="a-libevdev">libevdev</primary>
-    </indexterm>
-@y
-    <indexterm zone="libevdev">
-      <primary sortas="a-libevdev">libevdev</primary>
-    </indexterm>
 @z
 
 @x

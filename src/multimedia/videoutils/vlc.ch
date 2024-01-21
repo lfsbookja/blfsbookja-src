@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY vlc-download-http "https://download.videolan.org/vlc/&vlc-version;/vlc-&vlc-version;.tar.xz">
-  <!ENTITY vlc-download-ftp  " ">
-  <!ENTITY vlc-md5sum        "e8337fcd2df92f3901dad091fb85f545">
-  <!ENTITY vlc-size          "24 MB">
-  <!ENTITY vlc-buildsize     "726 MB">
   <!ENTITY vlc-time          "1.9 SBU (using parallelism=4; with tests)">
-]>
 @y
-  <!ENTITY vlc-download-http "https://download.videolan.org/vlc/&vlc-version;/vlc-&vlc-version;.tar.xz">
-  <!ENTITY vlc-download-ftp  " ">
-  <!ENTITY vlc-md5sum        "e8337fcd2df92f3901dad091fb85f545">
-  <!ENTITY vlc-size          "24 MB">
-  <!ENTITY vlc-buildsize     "726 MB">
   <!ENTITY vlc-time          "1.9 SBU (using parallelism=4; with tests)">
-]>
-@z
-
-@x
-<sect1 id="vlc" xreflabel="VLC-&vlc-version;">
-  <?dbhtml filename="vlc.html"?>
-@y
-<sect1 id="vlc" xreflabel="VLC-&vlc-version;">
-  <?dbhtml filename="vlc.html"?>
-@z
-
-@x
-  <title>VLC-&vlc-version;</title>
-@y
-  <title>VLC-&vlc-version;</title>
-@z
-
-@x
-  <indexterm zone="vlc">
-    <primary sortas="a-VLC">VLC</primary>
-  </indexterm>
-@y
-  <indexterm zone="vlc">
-    <primary sortas="a-VLC">VLC</primary>
-  </indexterm>
 @z
 
 @x

@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libcanberra-download-http
-           "https://0pointer.de/lennart/projects/libcanberra/libcanberra-&libcanberra-version;.tar.xz">
-  <!ENTITY libcanberra-download-ftp  " ">
-  <!ENTITY libcanberra-md5sum        "34cb7e4430afaf6f447c4ebdb9b42072">
-  <!ENTITY libcanberra-size          "312 KB">
-  <!ENTITY libcanberra-buildsize     "7.5 MB">
-  <!ENTITY libcanberra-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY libcanberra-download-http
-           "https://0pointer.de/lennart/projects/libcanberra/libcanberra-&libcanberra-version;.tar.xz">
-  <!ENTITY libcanberra-download-ftp  " ">
-  <!ENTITY libcanberra-md5sum        "34cb7e4430afaf6f447c4ebdb9b42072">
-  <!ENTITY libcanberra-size          "312 KB">
-  <!ENTITY libcanberra-buildsize     "7.5 MB">
-  <!ENTITY libcanberra-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libcanberra" xreflabel="libcanberra-&libcanberra-version;">
-  <?dbhtml filename="libcanberra.html"?>
-@y
-<sect1 id="libcanberra" xreflabel="libcanberra-&libcanberra-version;">
-  <?dbhtml filename="libcanberra.html"?>
-@z
-
-@x
-  <title>libcanberra-&libcanberra-version;</title>
-@y
-  <title>libcanberra-&libcanberra-version;</title>
-@z
-
-@x
-  <indexterm zone="libcanberra">
-    <primary sortas="a-libcanberra">libcanberra</primary>
-  </indexterm>
-@y
-  <indexterm zone="libcanberra">
-    <primary sortas="a-libcanberra">libcanberra</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to libcanberra</title>

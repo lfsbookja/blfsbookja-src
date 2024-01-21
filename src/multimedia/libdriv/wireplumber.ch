@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY wireplumber-download-http "https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/&wireplumber-version;/wireplumber-&wireplumber-version;.tar.bz2">
-  <!ENTITY wireplumber-download-ftp  " ">
-  <!ENTITY wireplumber-md5sum        "1e90be7d302077e3b7e347c9cd889ff0">
-  <!ENTITY wireplumber-size          "324 KB">
   <!ENTITY wireplumber-buildsize     "16 MB (add 22 MB for tests)">
   <!ENTITY wireplumber-time          "0.1 SBU (using parallelism=4, with tests)">
-]>
 @y
-  <!ENTITY wireplumber-download-http "https://gitlab.freedesktop.org/pipewire/wireplumber/-/archive/&wireplumber-version;/wireplumber-&wireplumber-version;.tar.bz2">
-  <!ENTITY wireplumber-download-ftp  " ">
-  <!ENTITY wireplumber-md5sum        "1e90be7d302077e3b7e347c9cd889ff0">
-  <!ENTITY wireplumber-size          "324 KB">
   <!ENTITY wireplumber-buildsize     "16 MB (add 22 MB for tests)">
   <!ENTITY wireplumber-time          "0.1 SBU (using parallelism=4, with tests)">
-]>
-@z
-
-@x
-<sect1 id="wireplumber" xreflabel="Wireplumber-&wireplumber-version;">
-  <?dbhtml filename="wireplumber.html"?>
-@y
-<sect1 id="wireplumber" xreflabel="Wireplumber-&wireplumber-version;">
-  <?dbhtml filename="wireplumber.html"?>
-@z
-
-@x
-  <title>Wireplumber-&wireplumber-version;</title>
-@y
-  <title>Wireplumber-&wireplumber-version;</title>
-@z
-
-@x
-  <indexterm zone="wireplumber">
-    <primary sortas="a-wireplumber">Wireplumber</primary>
-  </indexterm>
-@y
-  <indexterm zone="wireplumber">
-    <primary sortas="a-wireplumber">Wireplumber</primary>
-  </indexterm>
 @z
 
 @x

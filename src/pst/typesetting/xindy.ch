@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xindy-download-http "https://tug.ctan.org/support/xindy/base/xindy-&xindy-version;.tar.gz">
-  <!ENTITY xindy-download-ftp  " ">
-  <!ENTITY xindy-md5sum        "221acfeeb0f6f8388f89a59c56491041">
-  <!ENTITY xindy-size          "506 KB">
-  <!ENTITY xindy-buildsize     "15 MB">
   <!ENTITY xindy-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY xindy-download-http "https://tug.ctan.org/support/xindy/base/xindy-&xindy-version;.tar.gz">
-  <!ENTITY xindy-download-ftp  " ">
-  <!ENTITY xindy-md5sum        "221acfeeb0f6f8388f89a59c56491041">
-  <!ENTITY xindy-size          "506 KB">
-  <!ENTITY xindy-buildsize     "15 MB">
   <!ENTITY xindy-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="xindy" xreflabel="xindy-&xindy-version;">
-  <?dbhtml filename="xindy.html"?>
-@y
-<sect1 id="xindy" xreflabel="xindy-&xindy-version;">
-  <?dbhtml filename="xindy.html"?>
-@z
-
-@x
-  <title>xindy-&xindy-version;</title>
-@y
-  <title>xindy-&xindy-version;</title>
-@z
-
-@x
-  <indexterm zone="xindy">
-    <primary sortas="a-xindy">xindy</primary>
-  </indexterm>
-@y
-  <indexterm zone="xindy">
-    <primary sortas="a-xindy">xindy</primary>
-  </indexterm>
 @z
 
 @x

@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY uhttpmock-download-http "https://tecnocode.co.uk/downloads/uhttpmock/uhttpmock-&uhttpmock-version;.tar.xz">
-  <!ENTITY uhttpmock-download-ftp  " ">
-  <!ENTITY uhttpmock-md5sum        "dcbd66e80e1635e41b0e434b9852bd39">
-  <!ENTITY uhttpmock-size          "311 KB">
-  <!ENTITY uhttpmock-buildsize     "3.6 MB">
   <!ENTITY uhttpmock-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY uhttpmock-download-http "https://tecnocode.co.uk/downloads/uhttpmock/uhttpmock-&uhttpmock-version;.tar.xz">
-  <!ENTITY uhttpmock-download-ftp  " ">
-  <!ENTITY uhttpmock-md5sum        "dcbd66e80e1635e41b0e434b9852bd39">
-  <!ENTITY uhttpmock-size          "311 KB">
-  <!ENTITY uhttpmock-buildsize     "3.6 MB">
   <!ENTITY uhttpmock-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-<sect1 id="uhttpmock" xreflabel="uhttpmock-&uhttpmock-version;">
-  <?dbhtml filename="uhttpmock.html"?>
-@y
-<sect1 id="uhttpmock" xreflabel="uhttpmock-&uhttpmock-version;">
-  <?dbhtml filename="uhttpmock.html"?>
-@z
-
-@x
-  <title>uhttpmock-&uhttpmock-version;</title>
-@y
-  <title>uhttpmock-&uhttpmock-version;</title>
-@z
-
-@x
-  <indexterm zone="uhttpmock">
-    <primary sortas="a-uhttpmock">uhttpmock</primary>
-  </indexterm>
-@y
-  <indexterm zone="uhttpmock">
-    <primary sortas="a-uhttpmock">uhttpmock</primary>
-  </indexterm>
 @z
 
 @x

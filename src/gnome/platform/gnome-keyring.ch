@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY gnome-keyring-time          "0.2 SBU (Using parallelism=4; add 0.3 SBU for tests)">
 @y
   <!ENTITY gnome-keyring-time          "0.2 SBU（parallelism=4 利用時。テスト実施時はさらに 0.3 SBU）">

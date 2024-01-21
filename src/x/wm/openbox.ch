@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY openbox-download-http
-  "http://openbox.org/dist/openbox/openbox-&openbox-version;.tar.gz">
-  <!ENTITY openbox-download-ftp  " ">
-  <!ENTITY openbox-md5sum        "b72794996c6a3ad94634727b95f9d204">
-  <!ENTITY openbox-size          "944 KB">
-  <!ENTITY openbox-buildsize     "21 MB">
-  <!ENTITY openbox-time          "0.3 SBU">
-]>
-@y
-  <!ENTITY openbox-download-http
-  "http://openbox.org/dist/openbox/openbox-&openbox-version;.tar.gz">
-  <!ENTITY openbox-download-ftp  " ">
-  <!ENTITY openbox-md5sum        "b72794996c6a3ad94634727b95f9d204">
-  <!ENTITY openbox-size          "944 KB">
-  <!ENTITY openbox-buildsize     "21 MB">
-  <!ENTITY openbox-time          "0.3 SBU">
-]>
-@z
-
-@x
-<sect1 id="openbox" xreflabel="openbox-&openbox-version;">
-  <?dbhtml filename="openbox.html"?>
-@y
-<sect1 id="openbox" xreflabel="openbox-&openbox-version;">
-  <?dbhtml filename="openbox.html"?>
-@z
-
-@x
-  <title>openbox-&openbox-version;</title>
-@y
-  <title>openbox-&openbox-version;</title>
-@z
-
-@x
-  <indexterm zone="openbox">
-    <primary sortas="a-openbox">Openbox</primary>
-  </indexterm>
-@y
-  <indexterm zone="openbox">
-    <primary sortas="a-openbox">Openbox</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to openbox</title>

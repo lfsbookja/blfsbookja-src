@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY x265-download-http "&sources-anduin-http;/x265/x265-&x265-version;.tar.xz">
-  <!ENTITY x265-download-ftp  " ">
-  <!ENTITY x265-md5sum        "e735837f5e3fa95889e0a72eca39fccf">
-  <!ENTITY x265-size          "1.0 MB">
-  <!ENTITY x265-buildsize     "52 MB">
   <!ENTITY x265-time          "0.9 SBU (using parallelism=4)">
-]>
 @y
-  <!ENTITY x265-download-http "&sources-anduin-http;/x265/x265-&x265-version;.tar.xz">
-  <!ENTITY x265-download-ftp  " ">
-  <!ENTITY x265-md5sum        "e735837f5e3fa95889e0a72eca39fccf">
-  <!ENTITY x265-size          "1.0 MB">
-  <!ENTITY x265-buildsize     "52 MB">
   <!ENTITY x265-time          "0.9 SBU (using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="x265" xreflabel="x265-&x265-version;">
-  <?dbhtml filename="x265.html"?>
-@y
-<sect1 id="x265" xreflabel="x265-&x265-version;">
-  <?dbhtml filename="x265.html"?>
-@z
-
-@x
-  <title>x265-&x265-version;</title>
-@y
-  <title>x265-&x265-version;</title>
-@z
-
-@x
-  <indexterm zone="x265">
-    <primary sortas="a-x265">x265</primary>
-  </indexterm>
-@y
-  <indexterm zone="x265">
-    <primary sortas="a-x265">x265</primary>
-  </indexterm>
 @z
 
 @x

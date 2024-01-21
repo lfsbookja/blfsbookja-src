@@ -3,75 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY docbook-dsssl-download-http "&sourceforge-dl;/docbook/docbook-dsssl-&docbook-dsssl-version;.tar.bz2">
-  <!ENTITY docbook-dsssl-download-ftp  "">
-  <!ENTITY docbook-dsssl-md5sum        "bc192d23266b9a664ca0aba4a7794c7c">
-  <!ENTITY docbook-dsssl-size          "277 KB">
-  <!ENTITY docbook-dsssl-buildsize     "14 MB">
   <!ENTITY docbook-dsssl-time          "less than 0.1 SBU">
 @y
-  <!ENTITY docbook-dsssl-download-http "&sourceforge-dl;/docbook/docbook-dsssl-&docbook-dsssl-version;.tar.bz2">
-  <!ENTITY docbook-dsssl-download-ftp  "">
-  <!ENTITY docbook-dsssl-md5sum        "bc192d23266b9a664ca0aba4a7794c7c">
-  <!ENTITY docbook-dsssl-size          "277 KB">
-  <!ENTITY docbook-dsssl-buildsize     "14 MB">
   <!ENTITY docbook-dsssl-time          "less than 0.1 SBU">
-@z
-
-@x
-  <!ENTITY docbook-dsssl-doc-download-http "&sourceforge-dl;/docbook/docbook-dsssl-doc-&docbook-dsssl-version;.tar.bz2">
-  <!ENTITY docbook-dsssl-doc-md5sum        "9a7b809a21ab7d2749bb328334c380f2">
-  <!ENTITY docbook-dsssl-doc-size          "142 KB">
-]>
-@y
-  <!ENTITY docbook-dsssl-doc-download-http "&sourceforge-dl;/docbook/docbook-dsssl-doc-&docbook-dsssl-version;.tar.bz2">
-  <!ENTITY docbook-dsssl-doc-md5sum        "9a7b809a21ab7d2749bb328334c380f2">
-  <!ENTITY docbook-dsssl-doc-size          "142 KB">
-]>
-@z
-
-@x
-<sect1 id="docbook-dsssl"
-xreflabel="docbook-dsssl-&docbook-dsssl-version;">
-  <?dbhtml filename="docbook-dsssl.html"?>
-@y
-<sect1 id="docbook-dsssl"
-xreflabel="docbook-dsssl-&docbook-dsssl-version;">
-  <?dbhtml filename="docbook-dsssl.html"?>
-@z
-
-@x
-  <title>docbook-dsssl-&docbook-dsssl-version;</title>
-@y
-  <title>docbook-dsssl-&docbook-dsssl-version;</title>
-@z
-
-@x
-  <indexterm zone="docbook-dsssl">
-    <primary sortas="a-DocBook-DSSSL-Stylesheets">DocBook DSSSL
-    Stylesheets</primary>
-  </indexterm>
-@y
-  <indexterm zone="docbook-dsssl">
-    <primary sortas="a-DocBook-DSSSL-Stylesheets">DocBook DSSSL
-    Stylesheets</primary>
-  </indexterm>
 @z
 
 @x

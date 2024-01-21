@@ -3,63 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY thunar-volman-download-http
-           "https://archive.xfce.org/src/xfce/thunar-volman/&xfce4-version;/thunar-volman-&thunar-volman-version;.tar.bz2">
-  <!ENTITY thunar-volman-download-ftp  " ">
-  <!ENTITY thunar-volman-md5sum        "a0965931e78fe662ad134e63b1ab33b9">
-  <!ENTITY thunar-volman-size          "499 KB">
-  <!ENTITY thunar-volman-buildsize     "7.0 MB">
   <!ENTITY thunar-volman-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY thunar-volman-download-http
-           "https://archive.xfce.org/src/xfce/thunar-volman/&xfce4-version;/thunar-volman-&thunar-volman-version;.tar.bz2">
-  <!ENTITY thunar-volman-download-ftp  " ">
-  <!ENTITY thunar-volman-md5sum        "a0965931e78fe662ad134e63b1ab33b9">
-  <!ENTITY thunar-volman-size          "499 KB">
-  <!ENTITY thunar-volman-buildsize     "7.0 MB">
   <!ENTITY thunar-volman-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="thunar-volman" xreflabel="thunar-volman-&thunar-volman-version;">
-  <?dbhtml filename="thunar-volman.html"?>
-@y
-<sect1 id="thunar-volman" xreflabel="thunar-volman-&thunar-volman-version;">
-  <?dbhtml filename="thunar-volman.html"?>
-@z
-
-@x
-  <title>thunar-volman-&thunar-volman-version;</title>
-@y
-  <title>thunar-volman-&thunar-volman-version;</title>
-@z
-
-@x
-  <indexterm zone="thunar-volman">
-    <primary sortas="a-thunar-volman">thunar-volman</primary>
-  </indexterm>
-@y
-  <indexterm zone="thunar-volman">
-    <primary sortas="a-thunar-volman">thunar-volman</primary>
-  </indexterm>
 @z
 
 @x

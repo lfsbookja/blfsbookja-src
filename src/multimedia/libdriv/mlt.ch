@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY mlt-download-http "https://github.com/mltframework/mlt/releases/download/v&mlt-version;/mlt-&mlt-version;.tar.gz">
-  <!ENTITY mlt-download-ftp  " ">
-  <!ENTITY mlt-md5sum        "9f747ae1b7388937be6328b4c234431b">
-  <!ENTITY mlt-size          "1.6 MB">
-  <!ENTITY mlt-buildsize     "30 MB">
   <!ENTITY mlt-time          "0.1 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY mlt-download-http "https://github.com/mltframework/mlt/releases/download/v&mlt-version;/mlt-&mlt-version;.tar.gz">
-  <!ENTITY mlt-download-ftp  " ">
-  <!ENTITY mlt-md5sum        "9f747ae1b7388937be6328b4c234431b">
-  <!ENTITY mlt-size          "1.6 MB">
-  <!ENTITY mlt-buildsize     "30 MB">
   <!ENTITY mlt-time          "0.1 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="mlt" xreflabel="mlt-&mlt-version;">
-  <?dbhtml filename="mlt.html"?>
-@y
-<sect1 id="mlt" xreflabel="mlt-&mlt-version;">
-  <?dbhtml filename="mlt.html"?>
-@z
-
-@x
-  <title>MLT-&mlt-version;</title>
-@y
-  <title>MLT-&mlt-version;</title>
-@z
-
-@x
-  <indexterm zone="mlt">
-    <primary sortas="a-mlt">MLT</primary>
-  </indexterm>
-@y
-  <indexterm zone="mlt">
-    <primary sortas="a-mlt">MLT</primary>
-  </indexterm>
 @z
 
 @x

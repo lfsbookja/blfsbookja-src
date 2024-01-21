@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY gobject-introspection-buildsize     "48 MB (with tests)">
   <!ENTITY gobject-introspection-time          "0.3 SBU (With tests; both using parallelism=4)">
 @y

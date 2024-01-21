@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libslirp-download-http "https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v&libslirp-version;/libslirp-v&libslirp-version;.tar.bz2">
-  <!ENTITY libslirp-download-ftp  " ">
-  <!ENTITY libslirp-md5sum        "b815c4de99265559caf5ef635a213609">
-  <!ENTITY libslirp-size          "107 KB">
-  <!ENTITY libslirp-buildsize     "3.1 MB">
   <!ENTITY libslirp-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY libslirp-download-http "https://gitlab.freedesktop.org/slirp/libslirp/-/archive/v&libslirp-version;/libslirp-v&libslirp-version;.tar.bz2">
-  <!ENTITY libslirp-download-ftp  " ">
-  <!ENTITY libslirp-md5sum        "b815c4de99265559caf5ef635a213609">
-  <!ENTITY libslirp-size          "107 KB">
-  <!ENTITY libslirp-buildsize     "3.1 MB">
   <!ENTITY libslirp-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libslirp" xreflabel="Libslirp-&libslirp-version;">
-  <?dbhtml filename="libslirp.html"?>
-@y
-<sect1 id="libslirp" xreflabel="Libslirp-&libslirp-version;">
-  <?dbhtml filename="libslirp.html"?>
-@z
-
-@x
-  <title>Libslirp-&libslirp-version;</title>
-@y
-  <title>Libslirp-&libslirp-version;</title>
-@z
-
-@x
-  <indexterm zone="libslirp">
-    <primary sortas="a-libslirp">libslirp</primary>
-  </indexterm>
-@y
-  <indexterm zone="libslirp">
-    <primary sortas="a-libslirp">libslirp</primary>
-  </indexterm>
 @z
 
 @x

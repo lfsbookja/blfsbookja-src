@@ -4,17 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
+  <!ENTITY ojdk-bdsize               "3.7 GB (add 557 MB for tests)">
+  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 32 SBU for tests with 4 jobs)">
 @y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY ojdk-bdsize               "3.7 GB (add 569 MB for tests)">
-  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 33 SBU for tests with 4 jobs)">
-@y
-  <!ENTITY ojdk-bdsize               "3.7 GB (add 569 MB for tests)">
-  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 33 SBU for tests with 4 jobs)">
+  <!ENTITY ojdk-bdsize               "3.7 GB (add 557 MB for tests)">
+  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 32 SBU for tests with 4 jobs)">
 @z
 
 @x
@@ -110,14 +104,14 @@
         regularly tested against the TCK by the members listed on the site
         above. In addition to the community license above, an educational,
         non-commercial license for the TCK can be obtained <ulink
-        url="https://www.oracle.com/technetwork/java/index-137188.html">
+        url="https://www.oracle.com/java/scholarship-program.html">
         here</ulink>.
 @y
         With that in mind, the binaries produced using this build method are
         regularly tested against the TCK by the members listed on the site
         above. In addition to the community license above, an educational,
         non-commercial license for the TCK can be obtained <ulink
-        url="https://www.oracle.com/technetwork/java/index-137188.html">
+        url="https://www.oracle.com/java/scholarship-program.html">
         here</ulink>.
 @z
 
@@ -550,12 +544,12 @@
 @z
 
 @x
-        Normally, the JAVA environment has been configured after installing
+        Normally, the Java environment has been configured after installing
         the binary version, and can be used with the just built package as well.
         Review <xref linkend="ojdk-conf"/> in case you want to modify
         something.
 @y
-        Normally, the JAVA environment has been configured after installing
+        Normally, the Java environment has been configured after installing
         the binary version, and can be used with the just built package as well.
         Review <xref linkend="ojdk-conf"/> in case you want to modify
         something.

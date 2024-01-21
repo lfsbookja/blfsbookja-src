@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
       The libtool archive file from this package is referring to the
       libraries from <xref linkend='icu'/>.  Such a reference may cause
       packages depending on this package to be unnecessary linked against

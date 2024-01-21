@@ -4,14 +4,7 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version='1.0' encoding='ISO-8859-1'?>
-@y
-<?xml version='1.0' encoding='UTF-8'?>
-@z
-
-@x
-  <l:l10n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"
-          language="xx" english-language-name="xxxxx">
+  <l:l10n language="xx" english-language-name="xxxxx">
 
     <l:gentext key="description" text=""/>
     <l:gentext key="Bootscripts" text=""/>
@@ -23,8 +16,7 @@
     <l:gentext key="Programs" text=""/>
     <l:gentext key="Scripts" text=""/>
 @y
-  <l:l10n xmlns:l="http://docbook.sourceforge.net/xmlns/l10n/1.0"
-          language="ja" english-language-name="Japanese">
+  <l:l10n language="ja" english-language-name="Japanese">
 
     <l:gentext key="description" text="説明"/>
     <l:gentext key="Bootscripts" text="ブートスクリプト"/>

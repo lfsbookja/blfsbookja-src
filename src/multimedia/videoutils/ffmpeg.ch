@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY ffmpeg-download-http "https://ffmpeg.org/releases/ffmpeg-&ffmpeg-version;.tar.xz">
-  <!ENTITY ffmpeg-download-ftp  " ">
-  <!ENTITY ffmpeg-md5sum        "341d719415b7f95bb59f5016f2864ac6">
-  <!ENTITY ffmpeg-size          "10 MB">
   <!ENTITY ffmpeg-buildsize     "237 MB (add 1.5 GB for the FATE suite/tests, add 792 MB for documentation)">
   <!ENTITY ffmpeg-time          "1.3 SBU (using parallelism=4; add 3.2 SBU (with THREADS=4) to run the FATE suite after sample files are downloaded; add 0.3 SBU for doxygen docs)">
-]>
 @y
-  <!ENTITY ffmpeg-download-http "https://ffmpeg.org/releases/ffmpeg-&ffmpeg-version;.tar.xz">
-  <!ENTITY ffmpeg-download-ftp  " ">
-  <!ENTITY ffmpeg-md5sum        "341d719415b7f95bb59f5016f2864ac6">
-  <!ENTITY ffmpeg-size          "10 MB">
   <!ENTITY ffmpeg-buildsize     "237 MB (add 1.5 GB for the FATE suite/tests, add 792 MB for documentation)">
   <!ENTITY ffmpeg-time          "1.3 SBU (using parallelism=4; add 3.2 SBU (with THREADS=4) to run the FATE suite after sample files are downloaded; add 0.3 SBU for doxygen docs)">
-]>
-@z
-
-@x
-<sect1 id="ffmpeg" xreflabel="FFmpeg-&ffmpeg-version;">
-  <?dbhtml filename="ffmpeg.html"?>
-@y
-<sect1 id="ffmpeg" xreflabel="FFmpeg-&ffmpeg-version;">
-  <?dbhtml filename="ffmpeg.html"?>
-@z
-
-@x
-  <title>FFmpeg-&ffmpeg-version;</title>
-@y
-  <title>FFmpeg-&ffmpeg-version;</title>
-@z
-
-@x
-  <indexterm zone="ffmpeg">
-    <primary sortas="a-FFmpeg">FFmpeg</primary>
-  </indexterm>
-@y
-  <indexterm zone="ffmpeg">
-    <primary sortas="a-FFmpeg">FFmpeg</primary>
-  </indexterm>
 @z
 
 @x

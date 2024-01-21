@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY oxygen-icons-download-http "&kf5-download-http;/oxygen-icons-&kf5-version;.tar.xz">
-  <!ENTITY oxygen-icons-download-ftp  " ">
-  <!ENTITY oxygen-icons-md5sum        "841ef4fa01803fe07ff4a96c72ac472d">
-  <!ENTITY oxygen-icons-size          "228 MB">
-  <!ENTITY oxygen-icons-buildsize     "452 MB">
   <!ENTITY oxygen-icons-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY oxygen-icons-download-http "&kf5-download-http;/oxygen-icons-&kf5-version;.tar.xz">
-  <!ENTITY oxygen-icons-download-ftp  " ">
-  <!ENTITY oxygen-icons-md5sum        "841ef4fa01803fe07ff4a96c72ac472d">
-  <!ENTITY oxygen-icons-size          "228 MB">
-  <!ENTITY oxygen-icons-buildsize     "452 MB">
   <!ENTITY oxygen-icons-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="oxygen-icons" xreflabel="oxygen-icons-&kf5-version;">
-  <?dbhtml filename="oxygen-icons.html"?>
-@y
-<sect1 id="oxygen-icons" xreflabel="oxygen-icons-&kf5-version;">
-  <?dbhtml filename="oxygen-icons.html"?>
-@z
-
-@x
-  <title>oxygen-icons-&kf5-version;</title>
-@y
-  <title>oxygen-icons-&kf5-version;</title>
-@z
-
-@x
-  <indexterm zone="oxygen-icons">
-    <primary sortas="a-oxygen-icons">oxygen-icons</primary>
-  </indexterm>
-@y
-  <indexterm zone="oxygen-icons">
-    <primary sortas="a-oxygen-icons">oxygen-icons</primary>
-  </indexterm>
 @z
 
 @x

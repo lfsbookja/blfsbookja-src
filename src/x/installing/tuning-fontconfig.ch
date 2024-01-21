@@ -3,31 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-]>
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-]>
-@z
-
-@x
-<sect1 id="tuning-fontconfig">
-  <?dbhtml filename="tuning-fontconfig.html"?>
-@y
-<sect1 id="tuning-fontconfig">
-  <?dbhtml filename="tuning-fontconfig.html"?>
-@z
-
 @x
   <title>Tuning Fontconfig</title>
 @y
@@ -2393,7 +2368,7 @@ EOF</userinput></screen>
 @x
     <para>
       <application>Xfce desktop</application>: The settings can be adjusted in
-      <application>Settings</application>i -> Appearance -> Fonts. Specify your
+      <application>Settings</application> -> Appearance -> Fonts. Specify your
       preferred fonts, e.g. 'Sans Regular' (to use the normal face and weight
       rather than Bold and/or Italic) and adjust the point size in the option.
       Review the Rendering and DPI options.
@@ -2401,7 +2376,7 @@ EOF</userinput></screen>
 @y
     <para>
       <application>Xfce desktop</application>: The settings can be adjusted in
-      <application>Settings</application>i -> Appearance -> Fonts. Specify your
+      <application>Settings</application> -> Appearance -> Fonts. Specify your
       preferred fonts, e.g. 'Sans Regular' (to use the normal face and weight
       rather than Bold and/or Italic) and adjust the point size in the option.
       Review the Rendering and DPI options.

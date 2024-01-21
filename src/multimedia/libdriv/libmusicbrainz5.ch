@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libmusicbrainz5-download-http "https://github.com/metabrainz/libmusicbrainz/releases/download/release-&libmusicbrainz5-version;/libmusicbrainz-&libmusicbrainz5-version;.tar.gz">
-  <!ENTITY libmusicbrainz5-download-ftp  " ">
-  <!ENTITY libmusicbrainz5-md5sum        "4cc5556aa40ff7ab8f8cb83965535bc3">
-  <!ENTITY libmusicbrainz5-size          "76 KB">
   <!ENTITY libmusicbrainz5-buildsize     "6.6 MB (additional 4.4 MB for the API documentation)">
-  <!ENTITY libmusicbrainz5-time          "0.1 SBU">
-]>
 @y
-  <!ENTITY libmusicbrainz5-download-http "https://github.com/metabrainz/libmusicbrainz/releases/download/release-&libmusicbrainz5-version;/libmusicbrainz-&libmusicbrainz5-version;.tar.gz">
-  <!ENTITY libmusicbrainz5-download-ftp  " ">
-  <!ENTITY libmusicbrainz5-md5sum        "4cc5556aa40ff7ab8f8cb83965535bc3">
-  <!ENTITY libmusicbrainz5-size          "76 KB">
   <!ENTITY libmusicbrainz5-buildsize     "6.6 MB (additional 4.4 MB for the API documentation)">
-  <!ENTITY libmusicbrainz5-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libmusicbrainz5" xreflabel="libmusicbrainz-&libmusicbrainz5-version;">
-  <?dbhtml filename="libmusicbrainz5.html"?>
-@y
-<sect1 id="libmusicbrainz5" xreflabel="libmusicbrainz-&libmusicbrainz5-version;">
-  <?dbhtml filename="libmusicbrainz5.html"?>
-@z
-
-@x
-  <title>libmusicbrainz-&libmusicbrainz5-version;</title>
-@y
-  <title>libmusicbrainz-&libmusicbrainz5-version;</title>
-@z
-
-@x
-  <indexterm zone="libmusicbrainz5">
-    <primary sortas="a-libmusicbrainz5">libmusicbrainz</primary>
-  </indexterm>
-@y
-  <indexterm zone="libmusicbrainz5">
-    <primary sortas="a-libmusicbrainz5">libmusicbrainz</primary>
-  </indexterm>
 @z
 
 @x

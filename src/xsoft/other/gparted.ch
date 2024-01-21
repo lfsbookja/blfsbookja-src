@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY gparted-download-http "&sourceforge-dl;/gparted/gparted-&gparted-version;.tar.gz">
-  <!ENTITY gparted-download-ftp  " ">
-  <!ENTITY gparted-md5sum        "9adbd4b1cbcb7a7c76dcc0e9ffed9a7c">
-  <!ENTITY gparted-size          "5.2 MB">
   <!ENTITY gparted-buildsize     "75 MB (add 75 MB for tests)">
   <!ENTITY gparted-time          "0.3 SBU (using parallelism=4; add 0.2 SBU for tests)">
-]>
 @y
-  <!ENTITY gparted-download-http "&sourceforge-dl;/gparted/gparted-&gparted-version;.tar.gz">
-  <!ENTITY gparted-download-ftp  " ">
-  <!ENTITY gparted-md5sum        "9adbd4b1cbcb7a7c76dcc0e9ffed9a7c">
-  <!ENTITY gparted-size          "5.2 MB">
   <!ENTITY gparted-buildsize     "75 MB (add 75 MB for tests)">
   <!ENTITY gparted-time          "0.3 SBU (using parallelism=4; add 0.2 SBU for tests)">
-]>
-@z
-
-@x
-<sect1 id="gparted" xreflabel="Gparted-&gparted-version;">
-  <?dbhtml filename="gparted.html"?>
-@y
-<sect1 id="gparted" xreflabel="Gparted-&gparted-version;">
-  <?dbhtml filename="gparted.html"?>
-@z
-
-@x
-  <title>Gparted-&gparted-version;</title>
-@y
-  <title>Gparted-&gparted-version;</title>
-@z
-
-@x
-  <indexterm zone="gparted">
-    <primary sortas="a-Gparted">Gparted</primary>
-  </indexterm>
-@y
-  <indexterm zone="gparted">
-    <primary sortas="a-Gparted">Gparted</primary>
-  </indexterm>
 @z
 
 @x

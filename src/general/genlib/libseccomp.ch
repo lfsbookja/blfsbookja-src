@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY libseccomp-buildsize     "7.1 MB (additional 4.7 MB for tests)">
   <!ENTITY libseccomp-time          "less than 0.1 SBU (additional 2.9 SBU for tests)">
 @y

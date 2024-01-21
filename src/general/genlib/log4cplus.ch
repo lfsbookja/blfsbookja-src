@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY log4cplus-time          "0.3 SBU (Using parallelism=4; add 0.5 SBU for tests)">
 @y
   <!ENTITY log4cplus-time          "0.3 SBU (parallelism=4 利用; テスト実施時はさらに 0.5 SBU)">

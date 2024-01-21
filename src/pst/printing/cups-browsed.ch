@@ -3,63 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY cups-browsed-download-http
-  "https://github.com/OpenPrinting/cups-browsed/releases/download/&cups-browsed-version;/cups-browsed-&cups-browsed-version;.tar.xz">
-  <!ENTITY cups-browsed-download-ftp  " ">
-  <!ENTITY cups-browsed-md5sum        "1f8dc0c5a08d8a410df0713c5adbaee9">
-  <!ENTITY cups-browsed-size          "416 KB">
-  <!ENTITY cups-browsed-buildsize     "6.3 MB">
   <!ENTITY cups-browsed-time          "less than 0.1 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY cups-browsed-download-http
-  "https://github.com/OpenPrinting/cups-browsed/releases/download/&cups-browsed-version;/cups-browsed-&cups-browsed-version;.tar.xz">
-  <!ENTITY cups-browsed-download-ftp  " ">
-  <!ENTITY cups-browsed-md5sum        "1f8dc0c5a08d8a410df0713c5adbaee9">
-  <!ENTITY cups-browsed-size          "416 KB">
-  <!ENTITY cups-browsed-buildsize     "6.3 MB">
   <!ENTITY cups-browsed-time          "less than 0.1 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="cups-browsed" xreflabel="cups-browsed-&cups-browsed-version;">
-  <?dbhtml filename="cups-browsed.html"?>
-@y
-<sect1 id="cups-browsed" xreflabel="cups-browsed-&cups-browsed-version;">
-  <?dbhtml filename="cups-browsed.html"?>
-@z
-
-@x
-  <title>cups-browsed-&cups-browsed-version;</title>
-@y
-  <title>cups-browsed-&cups-browsed-version;</title>
-@z
-
-@x
-  <indexterm zone="cups-browsed">
-    <primary sortas="a-cups-browsed">cups-browsed</primary>
-  </indexterm>
-@y
-  <indexterm zone="cups-browsed">
-    <primary sortas="a-cups-browsed">cups-browsed</primary>
-  </indexterm>
 @z
 
 @x

@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY docbook-utils-download-http "https://sourceware.org/ftp/docbook-tools/new-trials/SOURCES/docbook-utils-&docbook-utils-version;.tar.gz">
-  <!ENTITY docbook-utils-download-ftp  " ">
-  <!ENTITY docbook-utils-md5sum        "6b41b18c365c01f225bc417cf632d81c">
-  <!ENTITY docbook-utils-size          "124 KB">
-  <!ENTITY docbook-utils-buildsize     "1.44 MB">
   <!ENTITY docbook-utils-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY docbook-utils-download-http "https://sourceware.org/ftp/docbook-tools/new-trials/SOURCES/docbook-utils-&docbook-utils-version;.tar.gz">
-  <!ENTITY docbook-utils-download-ftp  " ">
-  <!ENTITY docbook-utils-md5sum        "6b41b18c365c01f225bc417cf632d81c">
-  <!ENTITY docbook-utils-size          "124 KB">
-  <!ENTITY docbook-utils-buildsize     "1.44 MB">
   <!ENTITY docbook-utils-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="docbook-utils" xreflabel="DocBook-utils-&docbook-utils-version;">
-  <?dbhtml filename="docbook-utils.html"?>
-@y
-<sect1 id="docbook-utils" xreflabel="DocBook-utils-&docbook-utils-version;">
-  <?dbhtml filename="docbook-utils.html"?>
-@z
-
-@x
-  <title>DocBook-utils-&docbook-utils-version;</title>
-@y
-  <title>DocBook-utils-&docbook-utils-version;</title>
-@z
-
-@x
-  <indexterm zone="docbook-utils">
-    <primary sortas="a-DocBook-utils">DocBook-utils</primary>
-  </indexterm>
-@y
-  <indexterm zone="docbook-utils">
-    <primary sortas="a-DocBook-utils">DocBook-utils</primary>
-  </indexterm>
 @z
 
 @x

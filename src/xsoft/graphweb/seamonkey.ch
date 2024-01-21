@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY seamonkey-buildsize     "4.2 GB (159 MB installed)">
   <!ENTITY seamonkey-time          "11 SBU (with parallelism=4)">
 @y

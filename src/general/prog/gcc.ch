@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY gcc-buildsize      "13 GB (2.9 GB installed with all listed languages; add 1.5 GB for tests)">
   <!ENTITY gcc-time           "13 SBU (add 29 SBU for tests; both with parallelism=8)">
 @y

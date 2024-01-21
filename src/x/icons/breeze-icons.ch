@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY breeze-icons-download-http "&kf5-download-http;/breeze-icons-&kf5-version;.tar.xz">
-  <!ENTITY breeze-icons-download-ftp  " ">
-  <!ENTITY breeze-icons-md5sum        "130f406ffe1fe4d6778bb26b7688f5c3">
-  <!ENTITY breeze-icons-size          "2.1 MB">
-  <!ENTITY breeze-icons-buildsize     "261 MB">
-  <!ENTITY breeze-icons-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY breeze-icons-download-http "&kf5-download-http;/breeze-icons-&kf5-version;.tar.xz">
-  <!ENTITY breeze-icons-download-ftp  " ">
-  <!ENTITY breeze-icons-md5sum        "130f406ffe1fe4d6778bb26b7688f5c3">
-  <!ENTITY breeze-icons-size          "2.1 MB">
-  <!ENTITY breeze-icons-buildsize     "261 MB">
-  <!ENTITY breeze-icons-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="breeze-icons" xreflabel="breeze-icons-&kf5-version;">
-  <?dbhtml filename="breeze-icons.html"?>
-@y
-<sect1 id="breeze-icons" xreflabel="breeze-icons-&kf5-version;">
-  <?dbhtml filename="breeze-icons.html"?>
-@z
-
-@x
-  <title>breeze-icons-&kf5-version;</title>
-@y
-  <title>breeze-icons-&kf5-version;</title>
-@z
-
-@x
-  <indexterm zone="breeze-icons">
-    <primary sortas="a-breeze-icons">breeze-icons</primary>
-  </indexterm>
-@y
-  <indexterm zone="breeze-icons">
-    <primary sortas="a-breeze-icons">breeze-icons</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Breeze Icons</title>

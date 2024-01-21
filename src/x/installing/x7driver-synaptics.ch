@@ -3,77 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xorg-synaptics-driver-version "1.9.2">
-@y
-  <!ENTITY xorg-synaptics-driver-version "1.9.2">
-@z
-
-@x
-  <!ENTITY xorg-synaptics-driver-download-http "&xorg-download-http;/driver/xf86-input-synaptics-&xorg-synaptics-driver-version;.tar.xz">
-  <!ENTITY xorg-synaptics-driver-download-ftp  " ">
-  <!ENTITY xorg-synaptics-driver-md5sum        "3b95e7baf4428b114e9910f999e96601">
-  <!ENTITY xorg-synaptics-driver-size          "424 KB">
-  <!ENTITY xorg-synaptics-driver-buildsize     "5.2 MB">
   <!ENTITY xorg-synaptics-driver-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY xorg-synaptics-driver-download-http "&xorg-download-http;/driver/xf86-input-synaptics-&xorg-synaptics-driver-version;.tar.xz">
-  <!ENTITY xorg-synaptics-driver-download-ftp  " ">
-  <!ENTITY xorg-synaptics-driver-md5sum        "3b95e7baf4428b114e9910f999e96601">
-  <!ENTITY xorg-synaptics-driver-size          "424 KB">
-  <!ENTITY xorg-synaptics-driver-buildsize     "5.2 MB">
   <!ENTITY xorg-synaptics-driver-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<!-- Begin Xorg Synaptics Driver -->
-  <sect2 id="xorg-synaptics-driver" xreflabel="Xorg Synaptics Driver-&xorg-synaptics-driver-version;">
-@y
-<!-- Begin Xorg Synaptics Driver -->
-  <sect2 id="xorg-synaptics-driver" xreflabel="Xorg Synaptics Driver-&xorg-synaptics-driver-version;">
-@z
-
-@x
-  <sect2info>
-    <date>$Date$</date>
-  </sect2info>
-@y
-  <sect2info>
-    <date>$Date$</date>
-  </sect2info>
-@z
-
-@x
-    <title>Xorg Synaptics Driver-&xorg-synaptics-driver-version;</title>
-@y
-    <title>Xorg Synaptics Driver-&xorg-synaptics-driver-version;</title>
-@z
-
-@x
-    <indexterm zone="xorg-synaptics-driver">
-      <primary sortas="a-xorg-synaptics-driver">xorg-synaptics-driver</primary>
-    </indexterm>
-@y
-    <indexterm zone="xorg-synaptics-driver">
-      <primary sortas="a-xorg-synaptics-driver">xorg-synaptics-driver</primary>
-    </indexterm>
 @z
 
 @x

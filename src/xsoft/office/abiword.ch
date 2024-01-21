@@ -3,87 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY AbiWord-minor-version "3.0">
-  <!ENTITY AbiWord-docs-version "3.0.2">
-@y
-  <!ENTITY AbiWord-minor-version "3.0">
-  <!ENTITY AbiWord-docs-version "3.0.2">
-@z
-
-@x
-  <!ENTITY AbiWord-download-http
-           "&sources-anduin-http;/abiword/abiword-&AbiWord-version;.tar.gz">
-  <!ENTITY AbiWord-download-ftp  " ">
-  <!ENTITY AbiWord-md5sum        "a8f218b711450e4ccae43a0522e0e806">
-  <!ENTITY AbiWord-size          "11 MB">
-@y
-  <!ENTITY AbiWord-download-http
-           "&sources-anduin-http;/abiword/abiword-&AbiWord-version;.tar.gz">
-  <!ENTITY AbiWord-download-ftp  " ">
-  <!ENTITY AbiWord-md5sum        "a8f218b711450e4ccae43a0522e0e806">
-  <!ENTITY AbiWord-size          "11 MB">
-@z
-
-@x
-  <!ENTITY AbiWordDocs-download-http
-           "&sources-anduin-http;/abiword/abiword-docs-&AbiWord-docs-version;.tar.gz">
-  <!ENTITY AbiWordDocs-md5sum        "c92c0e1e2081db20757231a53d80c338">
-  <!ENTITY AbiWordDocs-size          "1.5 MB">
-@y
-  <!ENTITY AbiWordDocs-download-http
-           "&sources-anduin-http;/abiword/abiword-docs-&AbiWord-docs-version;.tar.gz">
-  <!ENTITY AbiWordDocs-md5sum        "c92c0e1e2081db20757231a53d80c338">
-  <!ENTITY AbiWordDocs-size          "1.5 MB">
-@z
-
 @x
   <!ENTITY AbiWord-buildsize     "690 MB, with docs (76 MB installed)">
   <!ENTITY AbiWord-time          "2.4 SBU (Using parallelism=4, with docs)">
-]>
 @y
   <!ENTITY AbiWord-buildsize     "690 MB, with docs (76 MB installed)">
   <!ENTITY AbiWord-time          "2.4 SBU (Using parallelism=4, with docs)">
-]>
-@z
-
-@x
-<sect1 id="abiword" xreflabel="AbiWord-&AbiWord-version;">
-  <?dbhtml filename="AbiWord.html" ?>
-@y
-<sect1 id="abiword" xreflabel="AbiWord-&AbiWord-version;">
-  <?dbhtml filename="AbiWord.html" ?>
-@z
-
-@x
-  <title>AbiWord-&AbiWord-version;</title>
-@y
-  <title>AbiWord-&AbiWord-version;</title>
-@z
-
-@x
-  <indexterm zone="abiword">
-    <primary sortas="a-AbiWord">AbiWord</primary>
-  </indexterm>
-@y
-  <indexterm zone="abiword">
-    <primary sortas="a-AbiWord">AbiWord</primary>
-  </indexterm>
 @z
 
 @x

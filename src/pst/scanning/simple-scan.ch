@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY simple-scan-download-http "&gnome-download-http;/simple-scan/&gnome-44;/simple-scan-&simple-scan-version;.tar.xz">
-  <!ENTITY simple-scan-download-ftp  " ">
-  <!ENTITY simple-scan-md5sum        "c64648c3190d27885e9d8aed70f70005">
-  <!ENTITY simple-scan-size          "1.1 MB">
-  <!ENTITY simple-scan-buildsize     "25 MB">
-  <!ENTITY simple-scan-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY simple-scan-download-http "&gnome-download-http;/simple-scan/&gnome-44;/simple-scan-&simple-scan-version;.tar.xz">
-  <!ENTITY simple-scan-download-ftp  " ">
-  <!ENTITY simple-scan-md5sum        "c64648c3190d27885e9d8aed70f70005">
-  <!ENTITY simple-scan-size          "1.1 MB">
-  <!ENTITY simple-scan-buildsize     "25 MB">
-  <!ENTITY simple-scan-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="simple-scan" xreflabel="Simple-scan-&simple-scan-version;">
-  <?dbhtml filename="simple-scan.html"?>
-@y
-<sect1 id="simple-scan" xreflabel="Simple-scan-&simple-scan-version;">
-  <?dbhtml filename="simple-scan.html"?>
-@z
-
-@x
-  <title>Simple-scan-&simple-scan-version;</title>
-@y
-  <title>Simple-scan-&simple-scan-version;</title>
-@z
-
-@x
-  <indexterm zone="simple-scan">
-    <primary sortas="a-simple-scan">Simple-scan</primary>
-  </indexterm>
-@y
-  <indexterm zone="simple-scan">
-    <primary sortas="a-simple-scan">Simple-scan</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Simple-scan</title>

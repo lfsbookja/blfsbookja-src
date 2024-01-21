@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY flac-buildsize     "22 MB (additional 163 MB to run the test suite)">
   <!ENTITY flac-time          "0.2 SBU (additional 0.6 SBU to run the test suite)">
 @y

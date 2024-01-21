@@ -3,63 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY cups-filters-download-http
-  "https://github.com/OpenPrinting/cups-filters/releases/download/&cups-filters-version;/cups-filters-&cups-filters-version;.tar.xz">
-  <!ENTITY cups-filters-download-ftp  " ">
-  <!ENTITY cups-filters-md5sum        "1d9ac8b601ea5e25a42767856a48c4d7">
-  <!ENTITY cups-filters-size          "437 KB">
-  <!ENTITY cups-filters-buildsize     "9.1 MB">
   <!ENTITY cups-filters-time          "less than 0.1 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY cups-filters-download-http
-  "https://github.com/OpenPrinting/cups-filters/releases/download/&cups-filters-version;/cups-filters-&cups-filters-version;.tar.xz">
-  <!ENTITY cups-filters-download-ftp  " ">
-  <!ENTITY cups-filters-md5sum        "1d9ac8b601ea5e25a42767856a48c4d7">
-  <!ENTITY cups-filters-size          "437 KB">
-  <!ENTITY cups-filters-buildsize     "9.1 MB">
   <!ENTITY cups-filters-time          "less than 0.1 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="cups-filters" xreflabel="cups-filters-&cups-filters-version;">
-  <?dbhtml filename="cups-filters.html"?>
-@y
-<sect1 id="cups-filters" xreflabel="cups-filters-&cups-filters-version;">
-  <?dbhtml filename="cups-filters.html"?>
-@z
-
-@x
-  <title>cups-filters-&cups-filters-version;</title>
-@y
-  <title>cups-filters-&cups-filters-version;</title>
-@z
-
-@x
-  <indexterm zone="cups-filters">
-    <primary sortas="a-cups-filters">cups-filters</primary>
-  </indexterm>
-@y
-  <indexterm zone="cups-filters">
-    <primary sortas="a-cups-filters">cups-filters</primary>
-  </indexterm>
 @z
 
 @x

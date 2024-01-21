@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY falkon-download-http "&kf5apps-download-http;/falkon-&kf5apps-version;.tar.xz">
-  <!ENTITY falkon-download-ftp  " ">
-  <!ENTITY falkon-md5sum        "c35ebbfc40f01dc62154276a1a2c55f0">
-  <!ENTITY falkon-size          "2.5 MB">
-  <!ENTITY falkon-buildsize     "130 MB">
   <!ENTITY falkon-time          "1.3 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY falkon-download-http "&kf5apps-download-http;/falkon-&kf5apps-version;.tar.xz">
-  <!ENTITY falkon-download-ftp  " ">
-  <!ENTITY falkon-md5sum        "c35ebbfc40f01dc62154276a1a2c55f0">
-  <!ENTITY falkon-size          "2.5 MB">
-  <!ENTITY falkon-buildsize     "130 MB">
   <!ENTITY falkon-time          "1.3 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="falkon" xreflabel="falkon-&kf5apps-version;">
-  <?dbhtml filename="falkon.html"?>
-@y
-<sect1 id="falkon" xreflabel="falkon-&kf5apps-version;">
-  <?dbhtml filename="falkon.html"?>
-@z
-
-@x
-  <title>Falkon-&kf5apps-version;</title>
-@y
-  <title>Falkon-&kf5apps-version;</title>
-@z
-
-@x
-  <indexterm zone="falkon">
-    <primary sortas="a-falkon">falkon</primary>
-  </indexterm>
-@y
-  <indexterm zone="falkon">
-    <primary sortas="a-falkon">falkon</primary>
-  </indexterm>
 @z
 
 @x

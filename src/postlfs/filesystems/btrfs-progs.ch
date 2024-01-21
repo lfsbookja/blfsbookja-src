@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY btrfs-progs-buildsize     "62 MB (transient files created during tests need up to 10 GB)">
   <!ENTITY btrfs-progs-time          "0.3 SBU (with parallelism=4; add 3.7 SBU for tests, up to 14 SBU on slow disks)">
 @y

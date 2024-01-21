@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY pidgin-download-http "&sourceforge-dl;/pidgin/pidgin-&pidgin-version;.tar.bz2">
-  <!ENTITY pidgin-download-ftp  " ">
-  <!ENTITY pidgin-md5sum        "cfcf2ab67717e7c2884e4399864b877a">
-  <!ENTITY pidgin-size          "7.8 MB">
   <!ENTITY pidgin-buildsize     "270 MB (with tests and docs)">
   <!ENTITY pidgin-time          "0.5 SBU (using parallelism=4; with tests and docs)">
-]>
 @y
-  <!ENTITY pidgin-download-http "&sourceforge-dl;/pidgin/pidgin-&pidgin-version;.tar.bz2">
-  <!ENTITY pidgin-download-ftp  " ">
-  <!ENTITY pidgin-md5sum        "cfcf2ab67717e7c2884e4399864b877a">
-  <!ENTITY pidgin-size          "7.8 MB">
   <!ENTITY pidgin-buildsize     "270 MB (with tests and docs)">
   <!ENTITY pidgin-time          "0.5 SBU (using parallelism=4; with tests and docs)">
-]>
-@z
-
-@x
-<sect1 id="pidgin" xreflabel="Pidgin-&pidgin-version;">
-  <?dbhtml filename="pidgin.html"?>
-@y
-<sect1 id="pidgin" xreflabel="Pidgin-&pidgin-version;">
-  <?dbhtml filename="pidgin.html"?>
-@z
-
-@x
-  <title>Pidgin-&pidgin-version;</title>
-@y
-  <title>Pidgin-&pidgin-version;</title>
-@z
-
-@x
-  <indexterm zone="pidgin">
-    <primary sortas="a-Pidgin">Pidgin</primary>
-  </indexterm>
-@y
-  <indexterm zone="pidgin">
-    <primary sortas="a-Pidgin">Pidgin</primary>
-  </indexterm>
 @z
 
 @x

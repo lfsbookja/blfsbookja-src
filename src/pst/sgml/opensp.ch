@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY opensp-download-http "&sourceforge-dl;/openjade/OpenSP-&opensp-version;.tar.gz">
-  <!ENTITY opensp-download-ftp  " ">
-  <!ENTITY opensp-md5sum        "670b223c5d12cee40c9137be86b6c39b">
-  <!ENTITY opensp-size          "1.5 MB">
-  <!ENTITY opensp-buildsize     "32 MB">
-  <!ENTITY opensp-time          "1.0 SBU">
-]>
-@y
-  <!ENTITY opensp-download-http "&sourceforge-dl;/openjade/OpenSP-&opensp-version;.tar.gz">
-  <!ENTITY opensp-download-ftp  " ">
-  <!ENTITY opensp-md5sum        "670b223c5d12cee40c9137be86b6c39b">
-  <!ENTITY opensp-size          "1.5 MB">
-  <!ENTITY opensp-buildsize     "32 MB">
-  <!ENTITY opensp-time          "1.0 SBU">
-]>
-@z
-
-@x
-<sect1 id="opensp" xreflabel="OpenSP-&opensp-version;">
-  <?dbhtml filename="opensp.html"?>
-@y
-<sect1 id="opensp" xreflabel="OpenSP-&opensp-version;">
-  <?dbhtml filename="opensp.html"?>
-@z
-
-@x
-  <title>OpenSP-&opensp-version;</title>
-@y
-  <title>OpenSP-&opensp-version;</title>
-@z
-
-@x
-  <indexterm zone="opensp">
-    <primary sortas="a-OpenSP">OpenSP</primary>
-  </indexterm>
-@y
-  <indexterm zone="opensp">
-    <primary sortas="a-OpenSP">OpenSP</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to OpenSP</title>

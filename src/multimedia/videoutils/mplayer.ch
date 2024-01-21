@@ -3,85 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY mplayer-download-http "https://mplayerhq.hu/MPlayer/releases/MPlayer-&mplayer-version;.tar.xz">
-  <!ENTITY mplayer-download-ftp  " ">
-@y
-  <!ENTITY mplayer-download-http "https://mplayerhq.hu/MPlayer/releases/MPlayer-&mplayer-version;.tar.xz">
-  <!ENTITY mplayer-download-ftp  " ">
-@z
-
-@x
-<!--  <!ENTITY mplayer-download-http "&sources-anduin-http;/mplayer/mplayer-&mplayer-version;.tar.bz2">
-  <!ENTITY mplayer-download-ftp  " ">
--->
-  <!ENTITY mplayer-md5sum        "0419b64db24b6db0943dbc6afece7c44">
-  <!ENTITY mplayer-size          "15 MB">
-  <!ENTITY mplayer-buildsize     "152 MB">
   <!ENTITY mplayer-time          "0.4 SBU (Using parallelism=4)">
 @y
-<!--  <!ENTITY mplayer-download-http "&sources-anduin-http;/mplayer/mplayer-&mplayer-version;.tar.bz2">
-  <!ENTITY mplayer-download-ftp  " ">
--->
-  <!ENTITY mplayer-md5sum        "0419b64db24b6db0943dbc6afece7c44">
-  <!ENTITY mplayer-size          "15 MB">
-  <!ENTITY mplayer-buildsize     "152 MB">
   <!ENTITY mplayer-time          "0.4 SBU (Using parallelism=4)">
-@z
-
-@x
-  <!ENTITY mplayer-skin          "Clearlooks-2.0">
-  <!ENTITY mplayer-skin-download-http "https://mplayerhq.hu/MPlayer/skins/&mplayer-skin;.tar.bz2">
-  <!ENTITY mplayer-skin-download-ftp " ">
-  <!ENTITY mplayer-skin-md5sum   "c82d4dbd7f0c36dfecd63dff972807c5">
-  <!ENTITY mplayer-skin-size     "34 KB">
-]>
-@y
-  <!ENTITY mplayer-skin          "Clearlooks-2.0">
-  <!ENTITY mplayer-skin-download-http "https://mplayerhq.hu/MPlayer/skins/&mplayer-skin;.tar.bz2">
-  <!ENTITY mplayer-skin-download-ftp " ">
-  <!ENTITY mplayer-skin-md5sum   "c82d4dbd7f0c36dfecd63dff972807c5">
-  <!ENTITY mplayer-skin-size     "34 KB">
-]>
-@z
-
-@x
-<sect1 id="mplayer" xreflabel="MPlayer-&mplayer-version;">
-  <?dbhtml filename="mplayer.html"?>
-@y
-<sect1 id="mplayer" xreflabel="MPlayer-&mplayer-version;">
-  <?dbhtml filename="mplayer.html"?>
-@z
-
-@x
-  <title>MPlayer-&mplayer-version;</title>
-@y
-  <title>MPlayer-&mplayer-version;</title>
-@z
-
-@x
-  <indexterm zone="mplayer">
-    <primary sortas="a-MPlayer">MPlayer</primary>
-  </indexterm>
-@y
-  <indexterm zone="mplayer">
-    <primary sortas="a-MPlayer">MPlayer</primary>
-  </indexterm>
 @z
 
 @x

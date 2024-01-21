@@ -3,63 +3,14 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY asymptote-download-http "&sourceforge-dl;/asymptote/asymptote-&asymptote-version;.src.tgz">
-  <!ENTITY asymptote-download-ftp  " ">
-  <!ENTITY asymptote-md5sum        "cbba3fe866982ed1dd60b903f632a04c">
-  <!ENTITY asymptote-size          "15 MB">
   <!ENTITY asymptote-buildsize     "218 MB (54 MB installed, with all the dependencies which are in BLFS)">
   <!-- with 2.68 the j1 time was 2.5 SBU, slow enough to use a parallel build -->
   <!ENTITY asymptote-time          "1.3 SBU (using parallelism=4)">
-]>
 @y
-  <!ENTITY asymptote-download-http "&sourceforge-dl;/asymptote/asymptote-&asymptote-version;.src.tgz">
-  <!ENTITY asymptote-download-ftp  " ">
-  <!ENTITY asymptote-md5sum        "cbba3fe866982ed1dd60b903f632a04c">
-  <!ENTITY asymptote-size          "15 MB">
   <!ENTITY asymptote-buildsize     "218 MB (54 MB installed, with all the dependencies which are in BLFS)">
   <!-- with 2.68 the j1 time was 2.5 SBU, slow enough to use a parallel build -->
   <!ENTITY asymptote-time          "1.3 SBU (using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="asymptote" xreflabel="asymptote-&asymptote-version;">
-  <?dbhtml filename="asymptote.html"?>
-@y
-<sect1 id="asymptote" xreflabel="asymptote-&asymptote-version;">
-  <?dbhtml filename="asymptote.html"?>
-@z
-
-@x
-  <title>asymptote-&asymptote-version;</title>
-@y
-  <title>asymptote-&asymptote-version;</title>
-@z
-
-@x
-  <indexterm zone="asymptote">
-    <primary sortas="a-asymptote">asymptote</primary>
-  </indexterm>
-@y
-  <indexterm zone="asymptote">
-    <primary sortas="a-asymptote">asymptote</primary>
-  </indexterm>
 @z
 
 @x

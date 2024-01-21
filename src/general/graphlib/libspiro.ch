@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY libspiro-buildsize     "5.1 MB (add 1.3 MB if running the tests)">
   <!ENTITY libspiro-time          "0.1 SBU">
 @y

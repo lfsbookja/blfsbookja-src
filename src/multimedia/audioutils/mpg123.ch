@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <title>Introduction to mpg123</title>
 @y
     <title>&IntroductionTo1;mpg123&IntroductionTo2;</title>

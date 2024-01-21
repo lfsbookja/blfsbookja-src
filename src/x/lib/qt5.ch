@@ -3,69 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY qt5-major "5.15">
-  <!ENTITY qt5-url   "https://download.qt.io/archive/qt/&qt5-major;/&qt5-version;/single">
-@y
-  <!ENTITY qt5-major "5.15">
-  <!ENTITY qt5-url   "https://download.qt.io/archive/qt/&qt5-major;/&qt5-version;/single">
-@z
-
-@x
-  <!ENTITY qt5-download-http "&qt5-url;/qt-everywhere-opensource-src-&qt5-version;.tar.xz">
-  <!ENTITY qt5-download-ftp  " ">
-  <!ENTITY qt5-md5sum        "3fb1cd4f763f5d50d491508b7b99fb77">
-  <!ENTITY qt5-size          "630 MB">
   <!ENTITY qt5-buildsize     "15 GB (264 MB installed)">
   <!ENTITY qt5-time          "16 SBU (using parallelism=4)">
-]>
 @y
-  <!ENTITY qt5-download-http "&qt5-url;/qt-everywhere-opensource-src-&qt5-version;.tar.xz">
-  <!ENTITY qt5-download-ftp  " ">
-  <!ENTITY qt5-md5sum        "3fb1cd4f763f5d50d491508b7b99fb77">
-  <!ENTITY qt5-size          "630 MB">
   <!ENTITY qt5-buildsize     "15 GB (264 MB installed)">
   <!ENTITY qt5-time          "16 SBU (using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="qt5" xreflabel="Qt-&qt5-version;">
-  <?dbhtml filename="qt5.html" ?>
-@y
-<sect1 id="qt5" xreflabel="Qt-&qt5-version;">
-  <?dbhtml filename="qt5.html" ?>
-@z
-
-@x
-  <title>Qt-&qt5-version;</title>
-@y
-  <title>Qt-&qt5-version;</title>
-@z
-
-@x
-  <indexterm zone="qt5">
-    <primary sortas="a-Qt5">Qt</primary>
-  </indexterm>
-@y
-  <indexterm zone="qt5">
-    <primary sortas="a-Qt5">Qt</primary>
-  </indexterm>
 @z
 
 @x

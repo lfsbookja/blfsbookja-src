@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY sddm-download-http "https://github.com/sddm/sddm/archive/v&sddm-version;/sddm-&sddm-version;.tar.gz">
-  <!ENTITY sddm-download-ftp  " ">
-  <!ENTITY sddm-md5sum        "7af67d5fb767639861d35c80eb4e1191">
-  <!ENTITY sddm-size          "3.4 MB">
-  <!ENTITY sddm-buildsize     "22 MB">
   <!ENTITY sddm-time          "0.3 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY sddm-download-http "https://github.com/sddm/sddm/archive/v&sddm-version;/sddm-&sddm-version;.tar.gz">
-  <!ENTITY sddm-download-ftp  " ">
-  <!ENTITY sddm-md5sum        "7af67d5fb767639861d35c80eb4e1191">
-  <!ENTITY sddm-size          "3.4 MB">
-  <!ENTITY sddm-buildsize     "22 MB">
   <!ENTITY sddm-time          "0.3 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="sddm" xreflabel="sddm-&sddm-version;">
-  <?dbhtml filename="sddm.html"?>
-@y
-<sect1 id="sddm" xreflabel="sddm-&sddm-version;">
-  <?dbhtml filename="sddm.html"?>
-@z
-
-@x
-  <title>sddm-&sddm-version;</title>
-@y
-  <title>sddm-&sddm-version;</title>
-@z
-
-@x
-  <indexterm zone="sddm">
-    <primary sortas="a-sddm">sddm</primary>
-  </indexterm>
-@y
-  <indexterm zone="sddm">
-    <primary sortas="a-sddm">sddm</primary>
-  </indexterm>
 @z
 
 @x

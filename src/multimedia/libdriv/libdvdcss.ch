@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libdvdcss-download-http "https://get.videolan.org/libdvdcss/&libdvdcss-version;/libdvdcss-&libdvdcss-version;.tar.bz2">
-  <!ENTITY libdvdcss-download-ftp  " ">
-  <!ENTITY libdvdcss-md5sum        "e98239a88af9b2204f9b9d987c2bc71a">
-  <!ENTITY libdvdcss-size          "380 KB">
-  <!ENTITY libdvdcss-buildsize     "3.3 MB">
   <!ENTITY libdvdcss-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY libdvdcss-download-http "https://get.videolan.org/libdvdcss/&libdvdcss-version;/libdvdcss-&libdvdcss-version;.tar.bz2">
-  <!ENTITY libdvdcss-download-ftp  " ">
-  <!ENTITY libdvdcss-md5sum        "e98239a88af9b2204f9b9d987c2bc71a">
-  <!ENTITY libdvdcss-size          "380 KB">
-  <!ENTITY libdvdcss-buildsize     "3.3 MB">
   <!ENTITY libdvdcss-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libdvdcss" xreflabel="libdvdcss-&libdvdcss-version;">
-  <?dbhtml filename="libdvdcss.html"?>
-@y
-<sect1 id="libdvdcss" xreflabel="libdvdcss-&libdvdcss-version;">
-  <?dbhtml filename="libdvdcss.html"?>
-@z
-
-@x
-  <title>libdvdcss-&libdvdcss-version;</title>
-@y
-  <title>libdvdcss-&libdvdcss-version;</title>
-@z
-
-@x
-  <indexterm zone="libdvdcss">
-    <primary sortas="a-libdvdcss">libdvdcss</primary>
-  </indexterm>
-@y
-  <indexterm zone="libdvdcss">
-    <primary sortas="a-libdvdcss">libdvdcss</primary>
-  </indexterm>
 @z
 
 @x

@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-<!--  <!ENTITY transcode-download-http "https://bitbucket.org/france/transcode-tcforge/downloads/transcode-&transcode-version;.tar.bz2">-->
-  <!ENTITY transcode-download-http "&sources-anduin-http;/transcode/transcode-&transcode-version;.tar.bz2">
-  <!ENTITY transcode-download-ftp  "">
-  <!ENTITY transcode-md5sum        "9bb25a796a8591fb764de46ee87ce505">
-  <!ENTITY transcode-size          "2.1 MB">
-  <!ENTITY transcode-buildsize     "72 MB">
-  <!ENTITY transcode-time          "0.5 SBU">
-]>
-@y
-<!--  <!ENTITY transcode-download-http "https://bitbucket.org/france/transcode-tcforge/downloads/transcode-&transcode-version;.tar.bz2">-->
-  <!ENTITY transcode-download-http "&sources-anduin-http;/transcode/transcode-&transcode-version;.tar.bz2">
-  <!ENTITY transcode-download-ftp  "">
-  <!ENTITY transcode-md5sum        "9bb25a796a8591fb764de46ee87ce505">
-  <!ENTITY transcode-size          "2.1 MB">
-  <!ENTITY transcode-buildsize     "72 MB">
-  <!ENTITY transcode-time          "0.5 SBU">
-]>
-@z
-
-@x
-<sect1 id="transcode" xreflabel="Transcode-&transcode-version;">
-  <?dbhtml filename="transcode.html"?>
-@y
-<sect1 id="transcode" xreflabel="Transcode-&transcode-version;">
-  <?dbhtml filename="transcode.html"?>
-@z
-
-@x
-  <title>Transcode-&transcode-version;</title>
-@y
-  <title>Transcode-&transcode-version;</title>
-@z
-
-@x
-  <indexterm zone="transcode">
-    <primary sortas="a-Transcode">Transcode</primary>
-  </indexterm>
-@y
-  <indexterm zone="transcode">
-    <primary sortas="a-Transcode">Transcode</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Transcode</title>

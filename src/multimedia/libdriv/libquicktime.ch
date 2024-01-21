@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libquicktime-download-http "&sourceforge-dl;/libquicktime/libquicktime-&libquicktime-version;.tar.gz">
-  <!ENTITY libquicktime-download-ftp  " ">
-  <!ENTITY libquicktime-md5sum        "81cfcebad9b7ee7e7cfbefc861d6d61b">
-  <!ENTITY libquicktime-size          "1.0 MB">
-  <!ENTITY libquicktime-buildsize     "20 MB">
   <!ENTITY libquicktime-time          "0.7 SBU (includes building all codec modules)">
-]>
 @y
-  <!ENTITY libquicktime-download-http "&sourceforge-dl;/libquicktime/libquicktime-&libquicktime-version;.tar.gz">
-  <!ENTITY libquicktime-download-ftp  " ">
-  <!ENTITY libquicktime-md5sum        "81cfcebad9b7ee7e7cfbefc861d6d61b">
-  <!ENTITY libquicktime-size          "1.0 MB">
-  <!ENTITY libquicktime-buildsize     "20 MB">
   <!ENTITY libquicktime-time          "0.7 SBU (includes building all codec modules)">
-]>
-@z
-
-@x
-<sect1 id="libquicktime" xreflabel="libquicktime-&libquicktime-version;">
-  <?dbhtml filename="libquicktime.html"?>
-@y
-<sect1 id="libquicktime" xreflabel="libquicktime-&libquicktime-version;">
-  <?dbhtml filename="libquicktime.html"?>
-@z
-
-@x
-  <title>libquicktime-&libquicktime-version;</title>
-@y
-  <title>libquicktime-&libquicktime-version;</title>
-@z
-
-@x
-  <indexterm zone="libquicktime">
-    <primary sortas="a-libquicktime">libquicktime</primary>
-  </indexterm>
-@y
-  <indexterm zone="libquicktime">
-    <primary sortas="a-libquicktime">libquicktime</primary>
-  </indexterm>
 @z
 
 @x

@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libdv-download-http "&sourceforge-dl;/libdv/libdv-&libdv-version;.tar.gz">
-  <!ENTITY libdv-download-ftp  " ">
-  <!ENTITY libdv-md5sum        "f895162161cfa4bb4a94c070a7caa6c7">
-  <!ENTITY libdv-size          "574 KB">
-  <!ENTITY libdv-buildsize     "6.0 MB">
-  <!ENTITY libdv-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY libdv-download-http "&sourceforge-dl;/libdv/libdv-&libdv-version;.tar.gz">
-  <!ENTITY libdv-download-ftp  " ">
-  <!ENTITY libdv-md5sum        "f895162161cfa4bb4a94c070a7caa6c7">
-  <!ENTITY libdv-size          "574 KB">
-  <!ENTITY libdv-buildsize     "6.0 MB">
-  <!ENTITY libdv-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="libdv" xreflabel="libdv-&libdv-version;">
-  <?dbhtml filename="libdv.html"?>
-@y
-<sect1 id="libdv" xreflabel="libdv-&libdv-version;">
-  <?dbhtml filename="libdv.html"?>
-@z
-
-@x
-  <title>Libdv-&libdv-version;</title>
-@y
-  <title>Libdv-&libdv-version;</title>
-@z
-
-@x
-  <indexterm zone="libdv">
-    <primary sortas="a-Libdv">Libdv</primary>
-  </indexterm>
-@y
-  <indexterm zone="libdv">
-    <primary sortas="a-Libdv">Libdv</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Libdv</title>

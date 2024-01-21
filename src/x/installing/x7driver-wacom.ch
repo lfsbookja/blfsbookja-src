@@ -3,77 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xorg-wacom-driver-version "1.2.0">
-@y
-  <!ENTITY xorg-wacom-driver-version "1.2.0">
-@z
-
-@x
-  <!ENTITY xorg-wacom-driver-download-http "https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-&xorg-wacom-driver-version;/xf86-input-wacom-&xorg-wacom-driver-version;.tar.bz2">
-  <!ENTITY xorg-wacom-driver-download-ftp  " ">
-  <!ENTITY xorg-wacom-driver-md5sum        "9de66dbfa7dbb3897708d35776da0108">
-  <!ENTITY xorg-wacom-driver-size          "636 KB">
   <!ENTITY xorg-wacom-driver-buildsize     "8.8 MB (with tests)">
   <!ENTITY xorg-wacom-driver-time          "0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY xorg-wacom-driver-download-http "https://github.com/linuxwacom/xf86-input-wacom/releases/download/xf86-input-wacom-&xorg-wacom-driver-version;/xf86-input-wacom-&xorg-wacom-driver-version;.tar.bz2">
-  <!ENTITY xorg-wacom-driver-download-ftp  " ">
-  <!ENTITY xorg-wacom-driver-md5sum        "9de66dbfa7dbb3897708d35776da0108">
-  <!ENTITY xorg-wacom-driver-size          "636 KB">
   <!ENTITY xorg-wacom-driver-buildsize     "8.8 MB (with tests)">
   <!ENTITY xorg-wacom-driver-time          "0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <!-- Begin Xorg Wacom Driver -->
-  <sect2 id="xorg-wacom-driver" xreflabel="Xorg Wacom Driver-&xorg-wacom-driver-version;">
-@y
-  <!-- Begin Xorg Wacom Driver -->
-  <sect2 id="xorg-wacom-driver" xreflabel="Xorg Wacom Driver-&xorg-wacom-driver-version;">
-@z
-
-@x
-  <sect2info>
-    <date>$Date$</date>
-  </sect2info>
-@y
-  <sect2info>
-    <date>$Date$</date>
-  </sect2info>
-@z
-
-@x
-    <title>Xorg Wacom Driver-&xorg-wacom-driver-version;</title>
-@y
-    <title>Xorg Wacom Driver-&xorg-wacom-driver-version;</title>
-@z
-
-@x
-    <indexterm zone="xorg-wacom-driver">
-      <primary sortas="a-xorg-wacom-driver">xorg-wacom-driver</primary>
-    </indexterm>
-@y
-    <indexterm zone="xorg-wacom-driver">
-      <primary sortas="a-xorg-wacom-driver">xorg-wacom-driver</primary>
-    </indexterm>
 @z
 
 @x

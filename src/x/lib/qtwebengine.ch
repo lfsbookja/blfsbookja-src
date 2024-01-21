@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY qtwebengine-buildsize     "5.1 GB (154 MB installed)">
   <!ENTITY qtwebengine-time          "45 SBU (Using parallelism=8)">
 @y

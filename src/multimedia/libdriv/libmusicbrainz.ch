@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libmusicbrainz-download-http "http://ftp.musicbrainz.org/pub/musicbrainz/historical/libmusicbrainz-&libmusicbrainz-version;.tar.gz">
-  <!ENTITY libmusicbrainz-download-ftp  " ">
-  <!ENTITY libmusicbrainz-md5sum        "d5e19bb77edd6ea798ce206bd05ccc5f">
-  <!ENTITY libmusicbrainz-size          "524 KB">
-  <!ENTITY libmusicbrainz-buildsize     "12 MB">
-  <!ENTITY libmusicbrainz-time          "0.4 SBU">
-]>
-@y
-  <!ENTITY libmusicbrainz-download-http "http://ftp.musicbrainz.org/pub/musicbrainz/historical/libmusicbrainz-&libmusicbrainz-version;.tar.gz">
-  <!ENTITY libmusicbrainz-download-ftp  " ">
-  <!ENTITY libmusicbrainz-md5sum        "d5e19bb77edd6ea798ce206bd05ccc5f">
-  <!ENTITY libmusicbrainz-size          "524 KB">
-  <!ENTITY libmusicbrainz-buildsize     "12 MB">
-  <!ENTITY libmusicbrainz-time          "0.4 SBU">
-]>
-@z
-
-@x
-<sect1 id="libmusicbrainz" xreflabel="libmusicbrainz-&libmusicbrainz-version;">
-  <?dbhtml filename="libmusicbrainz.html"?>
-@y
-<sect1 id="libmusicbrainz" xreflabel="libmusicbrainz-&libmusicbrainz-version;">
-  <?dbhtml filename="libmusicbrainz.html"?>
-@z
-
-@x
-  <title>libmusicbrainz-&libmusicbrainz-version;</title>
-@y
-  <title>libmusicbrainz-&libmusicbrainz-version;</title>
-@z
-
-@x
-  <indexterm zone="libmusicbrainz">
-    <primary sortas="a-libmusicbrainz">libmusicbrainz</primary>
-  </indexterm>
-@y
-  <indexterm zone="libmusicbrainz">
-    <primary sortas="a-libmusicbrainz">libmusicbrainz</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to libmusicbrainz</title>

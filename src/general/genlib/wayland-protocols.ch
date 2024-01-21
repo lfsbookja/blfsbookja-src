@@ -4,16 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
+  <!ENTITY wayland-protocols-buildsize     "7.9 MB (with tests)">
+  <!ENTITY wayland-protocols-time          "0.1 SBU (with tests)">
 @y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY wayland-protocols-buildsize     "7.4 MB (with tests)">
-  <!ENTITY wayland-protocols-time          "less than 0.1 SBU (with tests)">
-@y
-  <!ENTITY wayland-protocols-buildsize     "7.4 MB (テスト込み)">
+  <!ENTITY wayland-protocols-buildsize     "7.9 MB (テスト込み)">
   <!ENTITY wayland-protocols-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 

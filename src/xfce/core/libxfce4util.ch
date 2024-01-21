@@ -4,12 +4,6 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
     <title>Introduction to libxfce4util</title>
 @y
     <title>&IntroductionTo1;libxfce4util&IntroductionTo2;</title>

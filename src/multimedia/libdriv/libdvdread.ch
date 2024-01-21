@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libdvdread-download-http "https://get.videolan.org/libdvdread/&libdvdread-version;/libdvdread-&libdvdread-version;.tar.bz2">
-  <!ENTITY libdvdread-download-ftp  " ">
-  <!ENTITY libdvdread-md5sum        "3c58d1624a71a16ff40f55dbaca82523">
-  <!ENTITY libdvdread-size          "388 KB">
-  <!ENTITY libdvdread-buildsize     "3.6 MB">
   <!ENTITY libdvdread-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY libdvdread-download-http "https://get.videolan.org/libdvdread/&libdvdread-version;/libdvdread-&libdvdread-version;.tar.bz2">
-  <!ENTITY libdvdread-download-ftp  " ">
-  <!ENTITY libdvdread-md5sum        "3c58d1624a71a16ff40f55dbaca82523">
-  <!ENTITY libdvdread-size          "388 KB">
-  <!ENTITY libdvdread-buildsize     "3.6 MB">
   <!ENTITY libdvdread-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libdvdread" xreflabel="libdvdread-&libdvdread-version;">
-  <?dbhtml filename="libdvdread.html"?>
-@y
-<sect1 id="libdvdread" xreflabel="libdvdread-&libdvdread-version;">
-  <?dbhtml filename="libdvdread.html"?>
-@z
-
-@x
-  <title>Libdvdread-&libdvdread-version;</title>
-@y
-  <title>Libdvdread-&libdvdread-version;</title>
-@z
-
-@x
-  <indexterm zone="libdvdread">
-    <primary sortas="a-Libdvdread">Libdvdread</primary>
-  </indexterm>
-@y
-  <indexterm zone="libdvdread">
-    <primary sortas="a-Libdvdread">Libdvdread</primary>
-  </indexterm>
 @z
 
 @x

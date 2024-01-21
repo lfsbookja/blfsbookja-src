@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY intel-vaapi-driver-version       "2.4.1">
-  <!ENTITY intel-vaapi-driver-download-http "https://github.com/intel/intel-vaapi-driver/releases/download/&intel-vaapi-driver-version;/intel-vaapi-driver-&intel-vaapi-driver-version;.tar.bz2">
-  <!ENTITY intel-vaapi-driver-download-ftp  " ">
-  <!ENTITY intel-vaapi-driver-md5sum        "073fce0f409559109ad2dd0a6531055d">
-  <!ENTITY intel-vaapi-driver-size          "2.8 MB">
-  <!ENTITY intel-vaapi-driver-buildsize     "97 MB">
-  <!ENTITY intel-vaapi-driver-time          "0.3 SBU">
-]>
-@y
-  <!ENTITY intel-vaapi-driver-version       "2.4.1">
-  <!ENTITY intel-vaapi-driver-download-http "https://github.com/intel/intel-vaapi-driver/releases/download/&intel-vaapi-driver-version;/intel-vaapi-driver-&intel-vaapi-driver-version;.tar.bz2">
-  <!ENTITY intel-vaapi-driver-download-ftp  " ">
-  <!ENTITY intel-vaapi-driver-md5sum        "073fce0f409559109ad2dd0a6531055d">
-  <!ENTITY intel-vaapi-driver-size          "2.8 MB">
-  <!ENTITY intel-vaapi-driver-buildsize     "97 MB">
-  <!ENTITY intel-vaapi-driver-time          "0.3 SBU">
-]>
-@z
-
-@x
-  <sect1 id="intel-vaapi-driver" xreflabel="intel-vaapi-driver-&intel-vaapi-driver-version;">
-  <?dbhtml filename="intel-vaapi-driver.html"?>
-@y
-  <sect1 id="intel-vaapi-driver" xreflabel="intel-vaapi-driver-&intel-vaapi-driver-version;">
-  <?dbhtml filename="intel-vaapi-driver.html"?>
-@z
-
-@x
-    <title>intel-vaapi-driver-&intel-vaapi-driver-version;</title>
-@y
-    <title>intel-vaapi-driver-&intel-vaapi-driver-version;</title>
-@z
-
-@x
-    <indexterm zone="intel-vaapi-driver">
-      <primary sortas="a-intel-vaapi-driver">intel-vaapi-driver</primary>
-    </indexterm>
-@y
-    <indexterm zone="intel-vaapi-driver">
-      <primary sortas="a-intel-vaapi-driver">intel-vaapi-driver</primary>
-    </indexterm>
-@z
-
 @x
     <sect2 role="package">
       <title>Introduction to intel-vaapi-driver</title>

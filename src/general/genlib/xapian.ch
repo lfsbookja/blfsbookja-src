@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY xapian-buildsize     "195 MB (add 163 MB for tests)">
   <!ENTITY xapian-time          "0.7 SBU (using parallelism=4; add 16 SBU for tests)">
 @y

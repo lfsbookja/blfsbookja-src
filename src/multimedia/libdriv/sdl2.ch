@@ -3,61 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY sdl2-download-http "https://www.libsdl.org/release/SDL2-&sdl2-version;.tar.gz">
-  <!ENTITY sdl2-download-ftp  " ">
-  <!ENTITY sdl2-md5sum        "a344eb827a03045c9b399e99af4af13d">
-  <!ENTITY sdl2-size          "7.1 MB">
   <!ENTITY sdl2-buildsize     "173 MB (with docs)">
   <!ENTITY sdl2-time          "0.5 SBU (using parallelism=4; with docs)">
-]>
 @y
-  <!ENTITY sdl2-download-http "https://www.libsdl.org/release/SDL2-&sdl2-version;.tar.gz">
-  <!ENTITY sdl2-download-ftp  " ">
-  <!ENTITY sdl2-md5sum        "a344eb827a03045c9b399e99af4af13d">
-  <!ENTITY sdl2-size          "7.1 MB">
   <!ENTITY sdl2-buildsize     "173 MB (with docs)">
   <!ENTITY sdl2-time          "0.5 SBU (using parallelism=4; with docs)">
-]>
-@z
-
-@x
-<sect1 id="sdl2" xreflabel="SDL2-&sdl2-version;">
-  <?dbhtml filename="sdl2.html"?>
-@y
-<sect1 id="sdl2" xreflabel="SDL2-&sdl2-version;">
-  <?dbhtml filename="sdl2.html"?>
-@z
-
-@x
-  <title>SDL2-&sdl2-version;</title>
-@y
-  <title>SDL2-&sdl2-version;</title>
-@z
-
-@x
-  <indexterm zone="sdl2">
-    <primary sortas="a-SDL2">SDL2</primary>
-  </indexterm>
-@y
-  <indexterm zone="sdl2">
-    <primary sortas="a-SDL2">SDL2</primary>
-  </indexterm>
 @z
 
 @x

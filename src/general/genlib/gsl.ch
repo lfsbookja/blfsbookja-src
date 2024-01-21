@@ -4,12 +4,6 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY gsl-buildsize     "213 MB (with tests, without docs)">
   <!ENTITY gsl-time          "1.2 SBU (Using parallelism=4; with tests, without docs)">
 @y

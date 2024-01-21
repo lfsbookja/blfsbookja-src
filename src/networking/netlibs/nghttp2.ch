@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY nghttp2-download-http "https://github.com/nghttp2/nghttp2/releases/download/v&nghttp2-version;/nghttp2-&nghttp2-version;.tar.xz">
-  <!ENTITY nghttp2-download-ftp  " ">
-  <!ENTITY nghttp2-md5sum        "4601542da69d9657072a3c5529f5c32e">
-  <!ENTITY nghttp2-size          "1.5 MB">
-  <!ENTITY nghttp2-buildsize     "19 MB">
   <!ENTITY nghttp2-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY nghttp2-download-http "https://github.com/nghttp2/nghttp2/releases/download/v&nghttp2-version;/nghttp2-&nghttp2-version;.tar.xz">
-  <!ENTITY nghttp2-download-ftp  " ">
-  <!ENTITY nghttp2-md5sum        "4601542da69d9657072a3c5529f5c32e">
-  <!ENTITY nghttp2-size          "1.5 MB">
-  <!ENTITY nghttp2-buildsize     "19 MB">
   <!ENTITY nghttp2-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="nghttp2" xreflabel="nghttp2-&nghttp2-version;">
-  <?dbhtml filename="nghttp2.html"?>
-@y
-<sect1 id="nghttp2" xreflabel="nghttp2-&nghttp2-version;">
-  <?dbhtml filename="nghttp2.html"?>
-@z
-
-@x
-  <title>nghttp2-&nghttp2-version;</title>
-@y
-  <title>nghttp2-&nghttp2-version;</title>
-@z
-
-@x
-  <indexterm zone="nghttp2">
-    <primary sortas="a-nghttp2">nghttp2</primary>
-  </indexterm>
-@y
-  <indexterm zone="nghttp2">
-    <primary sortas="a-nghttp2">nghttp2</primary>
-  </indexterm>
 @z
 
 @x

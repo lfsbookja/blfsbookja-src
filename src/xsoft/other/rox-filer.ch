@@ -3,63 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY rox-filer-download-http "&sourceforge-dl;/rox/rox-filer-&rox-filer-version;.tar.bz2">
-  <!ENTITY rox-filer-download-ftp  " ">
-  <!ENTITY rox-filer-md5sum        "0eebf05a67f7932367750ebf9faf215d">
-  <!ENTITY rox-filer-size          "1.8 MB">
-  <!ENTITY rox-filer-buildsize     "19 MB">
-  <!ENTITY rox-filer-time          "0.3 SBU">
-]>
-@y
-  <!ENTITY rox-filer-download-http "&sourceforge-dl;/rox/rox-filer-&rox-filer-version;.tar.bz2">
-  <!ENTITY rox-filer-download-ftp  " ">
-  <!ENTITY rox-filer-md5sum        "0eebf05a67f7932367750ebf9faf215d">
-  <!ENTITY rox-filer-size          "1.8 MB">
-  <!ENTITY rox-filer-buildsize     "19 MB">
-  <!ENTITY rox-filer-time          "0.3 SBU">
-]>
-@z
-
-@x
-<sect1 id="rox-filer" xreflabel="Rox-Filer-&rox-filer-version;">
-  <?dbhtml filename="rox-filer.html"?>
-@y
-<sect1 id="rox-filer" xreflabel="Rox-Filer-&rox-filer-version;">
-  <?dbhtml filename="rox-filer.html"?>
-@z
-
-@x
-  <title>Rox-Filer-&rox-filer-version;</title>
-@y
-  <title>Rox-Filer-&rox-filer-version;</title>
-@z
-
-@x
-  <indexterm zone="rox-filer">
-    <primary sortas="a-rox-filer">rox-filer</primary>
-  </indexterm>
-@y
-  <indexterm zone="rox-filer">
-    <primary sortas="a-rox-filer">rox-filer</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Rox-Filer</title>

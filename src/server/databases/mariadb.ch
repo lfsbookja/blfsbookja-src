@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY mariadb-buildsize     "2.3 GB (719 MB installed)">
   <!ENTITY mariadb-time          "8.7 SBU (with parallelism=4, add 0.3 SBU for tests)">
 @y

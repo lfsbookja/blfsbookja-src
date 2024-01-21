@@ -3,63 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xfburn-download-http
-           "https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-&xfburn-version;.tar.bz2">
-  <!ENTITY xfburn-download-ftp  " ">
-  <!ENTITY xfburn-md5sum        "38d1e73e53c0fc4bb1bd286df1d91839">
-  <!ENTITY xfburn-size          "904 KB">
-  <!ENTITY xfburn-buildsize     "20 MB">
   <!ENTITY xfburn-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY xfburn-download-http
-           "https://archive.xfce.org/src/apps/xfburn/0.7/xfburn-&xfburn-version;.tar.bz2">
-  <!ENTITY xfburn-download-ftp  " ">
-  <!ENTITY xfburn-md5sum        "38d1e73e53c0fc4bb1bd286df1d91839">
-  <!ENTITY xfburn-size          "904 KB">
-  <!ENTITY xfburn-buildsize     "20 MB">
   <!ENTITY xfburn-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="xfburn" xreflabel="Xfburn-&xfburn-version;">
-  <?dbhtml filename="xfburn.html"?>
-@y
-<sect1 id="xfburn" xreflabel="Xfburn-&xfburn-version;">
-  <?dbhtml filename="xfburn.html"?>
-@z
-
-@x
-  <title>Xfburn-&xfburn-version;</title>
-@y
-  <title>Xfburn-&xfburn-version;</title>
-@z
-
-@x
-  <indexterm zone="xfburn">
-    <primary sortas="a-Xfburn">Xfburn</primary>
-  </indexterm>
-@y
-  <indexterm zone="xfburn">
-    <primary sortas="a-Xfburn">Xfburn</primary>
-  </indexterm>
 @z
 
 @x

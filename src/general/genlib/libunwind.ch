@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY libunwind-buildsize     "20 MB (with tests)">
   <!ENTITY libunwind-time          "0.2 SBU (with tests)">
 @y
@@ -159,7 +153,7 @@
           libunwind-generic.so,
           libunwind-ptrace.so,
           libunwind-setjmp.so, and
-          libunwind-x86_64.so
+          libunwind-x86_64.so (libunwind-x86.so on i686)
         </seg>
         <seg>
           None
@@ -174,7 +168,7 @@
           libunwind-generic.so,
           libunwind-ptrace.so,
           libunwind-setjmp.so,
-          libunwind-x86_64.so
+          libunwind-x86_64.so (libunwind-x86.so on i686)
         </seg>
         <seg>
           &None;

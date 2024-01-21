@@ -4,16 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
-  <!ENTITY patchelf-buildsize     "16 MB (with tests)">
+  <!ENTITY patchelf-buildsize     "20 MB (with tests)">
   <!ENTITY patchelf-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY patchelf-buildsize     "16 MB (テスト込み)">
+  <!ENTITY patchelf-buildsize     "20 MB (テスト込み)">
   <!ENTITY patchelf-time          "0.1 SBU (テスト込み)">
 @z
 

@@ -3,65 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
-@x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xfce4-power-manager-download-http
-           "https://archive.xfce.org/src/xfce/xfce4-power-manager/&xfce4-version;/xfce4-power-manager-&xfce4-power-manager-version;.tar.bz2">
-  <!ENTITY xfce4-power-manager-download-ftp  " ">
-  <!ENTITY xfce4-power-manager-md5sum        "077f9af98f1f6a76af120f27005341ae">
-  <!ENTITY xfce4-power-manager-size          "1.2 MB">
-  <!ENTITY xfce4-power-manager-buildsize     "19 MB">
-  <!ENTITY xfce4-power-manager-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY xfce4-power-manager-download-http
-           "https://archive.xfce.org/src/xfce/xfce4-power-manager/&xfce4-version;/xfce4-power-manager-&xfce4-power-manager-version;.tar.bz2">
-  <!ENTITY xfce4-power-manager-download-ftp  " ">
-  <!ENTITY xfce4-power-manager-md5sum        "077f9af98f1f6a76af120f27005341ae">
-  <!ENTITY xfce4-power-manager-size          "1.2 MB">
-  <!ENTITY xfce4-power-manager-buildsize     "19 MB">
-  <!ENTITY xfce4-power-manager-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="xfce4-power-manager" xreflabel="xfce4-power-manager-&xfce4-power-manager-version;">
-  <?dbhtml filename="xfce4-power-manager.html"?>
-@y
-<sect1 id="xfce4-power-manager" xreflabel="xfce4-power-manager-&xfce4-power-manager-version;">
-  <?dbhtml filename="xfce4-power-manager.html"?>
-@z
-
-@x
-  <title>xfce4-power-manager-&xfce4-power-manager-version;</title>
-@y
-  <title>xfce4-power-manager-&xfce4-power-manager-version;</title>
-@z
-
-@x
-  <indexterm zone="xfce4-power-manager">
-    <primary sortas="a-xfce4-power-manager">xfce4-power-manager</primary>
-  </indexterm>
-@y
-  <indexterm zone="xfce4-power-manager">
-    <primary sortas="a-xfce4-power-manager">xfce4-power-manager</primary>
-  </indexterm>
-@z
-
 @x
   <sect2 role="package">
     <title>Introduction to Xfce4 Power Manager</title>

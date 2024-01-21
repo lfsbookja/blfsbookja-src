@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <!ENTITY potrace-buildsize     "7.1 MB (including tests)">
   <!ENTITY potrace-time          "less than 0.1 SBU (including tests)">
 @y
@@ -25,11 +19,11 @@
 
 @x
       <!-- summarized from the home page, where Potrace(TM) is used -->
-      <application>Potrace&#8482;</application> is a tool for transforming a bitmap
+      <application>Potrace™</application> is a tool for transforming a bitmap
       (PBM, PGM, PPM, or BMP format) into one of several vector file formats.
 @y
       <!-- summarized from the home page, where Potrace(TM) is used -->
-      <application>Potrace&#8482;</application> is a tool for transforming a bitmap
+      <application>Potrace™</application> is a tool for transforming a bitmap
       (PBM, PGM, PPM, or BMP format) into one of several vector file formats.
 @z
 

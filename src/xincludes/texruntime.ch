@@ -5,12 +5,6 @@
 %
 
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-@z
-
-@x
   <xref role="runtime" linkend="python2"/> is used by the unmaintained
   ebong CTAN module (intended for writing Bengali in Rapid Roman Format).
   <filename>/usr/bin/python</filename> is also in the shebang line for the

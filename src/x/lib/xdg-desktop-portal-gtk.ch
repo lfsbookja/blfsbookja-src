@@ -3,61 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xdg-desktop-portal-gtk-download-http "https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/&xdg-desktop-portal-gtk-version;/xdg-desktop-portal-gtk-&xdg-desktop-portal-gtk-version;.tar.xz">
-  <!ENTITY xdg-desktop-portal-gtk-download-ftp  " ">
-  <!ENTITY xdg-desktop-portal-gtk-md5sum        "9c7836b1fe09bc914ea4c06b9c58231f">
-  <!ENTITY xdg-desktop-portal-gtk-size          "89 KB">
-  <!ENTITY xdg-desktop-portal-gtk-buildsize     "9.7 MB">
   <!ENTITY xdg-desktop-portal-gtk-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY xdg-desktop-portal-gtk-download-http "https://github.com/flatpak/xdg-desktop-portal-gtk/releases/download/&xdg-desktop-portal-gtk-version;/xdg-desktop-portal-gtk-&xdg-desktop-portal-gtk-version;.tar.xz">
-  <!ENTITY xdg-desktop-portal-gtk-download-ftp  " ">
-  <!ENTITY xdg-desktop-portal-gtk-md5sum        "9c7836b1fe09bc914ea4c06b9c58231f">
-  <!ENTITY xdg-desktop-portal-gtk-size          "89 KB">
-  <!ENTITY xdg-desktop-portal-gtk-buildsize     "9.7 MB">
   <!ENTITY xdg-desktop-portal-gtk-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="xdg-desktop-portal-gtk" xreflabel="xdg-desktop-portal-gtk-&xdg-desktop-portal-gtk-version;">
-  <?dbhtml filename="xdg-desktop-portal-gtk.html"?>
-@y
-<sect1 id="xdg-desktop-portal-gtk" xreflabel="xdg-desktop-portal-gtk-&xdg-desktop-portal-gtk-version;">
-  <?dbhtml filename="xdg-desktop-portal-gtk.html"?>
-@z
-
-@x
-  <title>xdg-desktop-portal-gtk-&xdg-desktop-portal-gtk-version;</title>
-@y
-  <title>xdg-desktop-portal-gtk-&xdg-desktop-portal-gtk-version;</title>
-@z
-
-@x
-  <indexterm zone="xdg-desktop-portal-gtk">
-    <primary sortas="a-xdg-desktop-portal-gtk">xdg-desktop-portal-gtk</primary>
-  </indexterm>
-@y
-  <indexterm zone="xdg-desktop-portal-gtk">
-    <primary sortas="a-xdg-desktop-portal-gtk">xdg-desktop-portal-gtk</primary>
-  </indexterm>
 @z
 
 @x
