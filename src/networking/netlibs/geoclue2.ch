@@ -84,30 +84,30 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="ModemManager"/>,
-      <xref linkend="vala"/>, and
-      <xref linkend="avahi"/>
+      <xref linkend="avahi"/>,
+      <xref linkend="libnotify"/>,
+      <xref linkend="ModemManager"/>, and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend="avahi"/>,
+      <xref linkend="libnotify"/>,
       <xref linkend="ModemManager"/>,
-      <xref linkend="vala"/>,
-      <xref linkend="avahi"/>
+      <xref linkend="vala"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
-      <xref linkend="libnotify"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libnotify"/>
+      <xref linkend="gtk-doc"/>
     </para>
 @z
 

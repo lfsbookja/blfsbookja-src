@@ -148,13 +148,12 @@
 @x
       One test would fail if this package is not installed,
       so it's better to run the test suite after installation.
-      To test the results, issue
-      <command>LC_ALL=en_US.UTF-8 ninja test</command>.
+      To test the results, issue <command>ninja test</command>.
       The tests must be run from a graphical session.
 @y
       本パッケージをインストールしていない状態では、テストが 1 つ失敗します。
       したがってテストスイートは、インストールを終えてから行うのがよいでしょう。
-      テストする場合は <command>LC_ALL=en_US.UTF-8 ninja test</command> を実行します。
+      テストする場合は <command>ninja test</command> を実行します。
       テストはグラフィックセッション内にて実行する必要があります。
 @z
 

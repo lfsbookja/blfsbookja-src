@@ -62,55 +62,9 @@
 @z
 
 @x
-<!-- EOF should NOT be in double quotes, we want it to evaluate $TEXARCH -->
-<!-- this is also in texlive.xml -->
    <para>Now, create the texlive.sh script as the &root; user:</para>
 @y
-<!-- EOF should NOT be in double quotes, we want it to evaluate $TEXARCH -->
-<!-- this is also in texlive.xml -->
    <para>Now, create the texlive.sh script as the &root; user:</para>
-@z
-
-@x
-<screen role="root"><userinput>TEXARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/$/-linux/')
-@y
-<screen role="root"><userinput>TEXARCH=$(uname -m | sed -e 's/i.86/i386/' -e 's/$/-linux/')
-@z
-
-@x
-cat &gt; /etc/profile.d/texlive.sh &lt;&lt; EOF
-<literal># Begin texlive setup
-TEXLIVE_PREFIX=/opt/texlive/&texlive-year;
-export TEXLIVE_PREFIX
-@y
-cat &gt; /etc/profile.d/texlive.sh &lt;&lt; EOF
-<literal># Begin texlive setup
-TEXLIVE_PREFIX=/opt/texlive/&texlive-year;
-export TEXLIVE_PREFIX
-@z
-
-@x
-pathappend \$TEXLIVE_PREFIX/texmf-dist/doc/man  MANPATH
-pathappend \$TEXLIVE_PREFIX/texmf-dist/doc/info INFOPATH
-pathappend \$TEXLIVE_PREFIX/bin/$TEXARCH
-@y
-pathappend \$TEXLIVE_PREFIX/texmf-dist/doc/man  MANPATH
-pathappend \$TEXLIVE_PREFIX/texmf-dist/doc/info INFOPATH
-pathappend \$TEXLIVE_PREFIX/bin/$TEXARCH
-@z
-
-@x
-# End texlive setup</literal>
-EOF
-@y
-# End texlive setup</literal>
-EOF
-@z
-
-@x
-unset TEXARCH</userinput></screen>
-@y
-unset TEXARCH</userinput></screen>
 @z
 
 @x
@@ -162,48 +116,6 @@ unset TEXARCH</userinput></screen>
 @z
 
 @x
-<screen><userinput>source /etc/profile</userinput></screen>
-@y
-<screen><userinput>source /etc/profile</userinput></screen>
-@z
-
-@x
-  <para>
-    The shared libraries will be installed into a texlive directory.
-    As the <systemitem class="username">root</systemitem> user, add it to
-    your <filename>/etc/ld.so.conf</filename>:
-  </para>
-@y
-  <para>
-    The shared libraries will be installed into a texlive directory.
-    As the <systemitem class="username">root</systemitem> user, add it to
-    your <filename>/etc/ld.so.conf</filename>:
-  </para>
-@z
-
-@x
-<screen role="root"><userinput>cat &gt;&gt; /etc/ld.so.conf &lt;&lt; EOF
-<literal># Begin texlive addition
-@y
-<screen role="root"><userinput>cat &gt;&gt; /etc/ld.so.conf &lt;&lt; EOF
-<literal># Begin texlive addition
-@z
-
-@x
-$TEXLIVE_PREFIX/lib
-@y
-$TEXLIVE_PREFIX/lib
-@z
-
-@x
-# End texlive addition</literal>
-EOF</userinput></screen>
-@y
-# End texlive addition</literal>
-EOF</userinput></screen>
-@z
-
-@x
   <para>
     You should now proceed either to <xref linkend="tl-installer"/> for
     a binary installation of texlive, or to <xref linkend="texlive"/> to begin
@@ -215,10 +127,4 @@ EOF</userinput></screen>
     a binary installation of texlive, or to <xref linkend="texlive"/> to begin
     installing from source.
   </para>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

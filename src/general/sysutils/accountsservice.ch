@@ -188,34 +188,6 @@
 @z
 
 @x
-    <sect3 id="accountsservice-init" revision="systemd">
-<!--      <title><phrase revision="sysv">Boot Script</phrase>
-             <phrase revision="systemd">Systemd Units</phrase></title> -->
-      <title>Systemd Unit</title>
-@y
-    <sect3 id="accountsservice-init" revision="systemd">
-<!--      <title><phrase revision="sysv">Boot Script</phrase>
-             <phrase revision="systemd">&SystemdUnit;</phrase></title> -->
-      <title>Systemd Unit</title>
-@z
-
-@x
-        To start the <command>accounts-daemon</command> daemon at boot,
-        install the
-        <filename>/etc/rc.d/init.d/accounts-daemon</filename> init script from
-        the <xref linkend="bootscripts"/> package
-        by running the following command as the
-        <systemitem class="username">root</systemitem> user:
-@y
-        To start the <command>accounts-daemon</command> daemon at boot,
-        install the
-        <filename>/etc/rc.d/init.d/accounts-daemon</filename> init script from
-        the <xref linkend="bootscripts"/> package
-        by running the following command as the
-        <systemitem class="username">root</systemitem> user:
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

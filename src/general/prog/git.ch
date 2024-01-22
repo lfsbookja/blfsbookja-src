@@ -142,54 +142,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="apache"/> (for some tests),
-      <xref role="runtime" linkend="gnupg2"/> (runtime, may be used to sign
-      <application>Git</application> commits or tags, or verify the signatures
-      of them),
-      <xref role="runtime" linkend="openssh"/> (runtime, needed to use
-      <application>Git</application> over ssh),
-      <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
-      role="nodep" linkend="pcre"/>), in either case configured with
-      <literal>--enable-jit</literal>,
-      <xref role="runtime" linkend="subversion"/> with Perl bindings
-         (runtime, for <command>git svn</command>),
-      <xref role="runtime" linkend="tk"/>
-      (gitk, a simple <application>Git</application>
-      repository viewer, uses <application>Tk</application> at runtime),
-      <xref linkend="valgrind"/>,
-      <ulink url="https://metacpan.org/pod/Authen::SASL">Authen::SASL</ulink> and
-      <ulink url="https://metacpan.org/pod/MIME::Base64">MIME::Base64</ulink>
-      (both runtime, for <command>git send-email</command>),
-      and <xref linkend='perl-io-socket-ssl'/> (runtime, for
-      <command>git send-email</command> to connect to a SMTP server with
-      SSL encryption)
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="apache"/> (for some tests),
-      <xref role="runtime" linkend="gnupg2"/> (runtime, may be used to sign
-      <application>Git</application> commits or tags, or verify the signatures
-      of them),
-      <xref role="runtime" linkend="openssh"/> (runtime, needed to use
-      <application>Git</application> over ssh),
-      <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
-      role="nodep" linkend="pcre"/>), in either case configured with
-      <literal>--enable-jit</literal>,
-      <xref role="runtime" linkend="subversion"/> with Perl bindings
-         (runtime, for <command>git svn</command>),
-      <xref role="runtime" linkend="tk"/>
-      (gitk, a simple <application>Git</application>
-      repository viewer, uses <application>Tk</application> at runtime),
-      <xref linkend="valgrind"/>,
-      <ulink url="https://metacpan.org/pod/Authen::SASL">Authen::SASL</ulink> and
-      <ulink url="https://metacpan.org/pod/MIME::Base64">MIME::Base64</ulink>
-      (both runtime, for <command>git send-email</command>),
-      and <xref linkend='perl-io-socket-ssl'/> (runtime, for
-      <command>git send-email</command> to connect to a SMTP server with
-      SSL encryption)
-    </para>
 @z
 
 @x
@@ -259,10 +213,27 @@
 
 @x
       The test suite can be run in parallel mode. To run the test suite, issue:
-      <command>make test</command>. <!--If run as a normal user, 0 tests
+      <command>make test -k |&amp; tee test.log</command>.  If some test
+      fails, the list of failed tests can be shown via
+      <command>grep '^not ok' test.log | grep -v TODO</command>.
+      <phrase revision='systemd'>One test named <literal>start and stop
+      Linux/systemd maintenance</literal> is known to fail if the current
+      login session is not started after rebuilding
+      <xref linkend='systemd'/> with <xref linkend='linux-pam'/>
+      support, or it's a SSH session but the SSH server is not configured
+      with <option>UsePAM</option> enabled.</phrase>
 @y
       テストスイートは並行モードでの実行も可能です。
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      ビルド結果をテストする場合は <command>make test -k |&amp; tee test.log</command> を実行します。
+      If some test
+      fails, the list of failed tests can be shown via
+      <command>grep '^not ok' test.log | grep -v TODO</command>.
+      <phrase revision='systemd'>One test named <literal>start and stop
+      Linux/systemd maintenance</literal> is known to fail if the current
+      login session is not started after rebuilding
+      <xref linkend='systemd'/> with <xref linkend='linux-pam'/>
+      support, or it's a SSH session but the SSH server is not configured
+      with <option>UsePAM</option> enabled.</phrase>
 @z
 
 @x

@@ -140,9 +140,10 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>.
+      To test the results, issue: <command>ninja test</command> in a
+      graphical session.
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      ビルド結果をテストする場合は、グラフィックセッション内にて <command>ninja test</command> を実行します。
 @z
 
 @x

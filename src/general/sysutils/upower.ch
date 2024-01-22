@@ -219,29 +219,6 @@
 @z
 
 @x
-    <title>Configuring UPower</title>
-@y
-    <title>&Configuring1;UPower&Configuring2;</title>
-@z
-
-@x
-      <title>Systemd Unit</title>
-@y
-      <title>&SystemdUnit;</title>
-@z
-
-@x
-        To start the <command>UPower</command> service at boot,
-        enable the previously installed systemd unit by
-        running the following command as the
-        <systemitem class="username">root</systemitem> user:
-@y
-        システム起動時に <command>UPower</command> サービスを起動させるには、<systemitem
-        class="username">root</systemitem> ユーザーになって以下のコマンドを実行します。
-        これによって、上でインストールした systemd ユニットが有効になります。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
