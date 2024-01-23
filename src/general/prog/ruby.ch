@@ -112,17 +112,37 @@
 @z
 
 @x
-      To test the results, issue: <command>make -k check</command>. There are over
-      27,000 tests. Some tests related to ipv6 may indicate errors.  If the
+      To test the results, issue: <command>make -j1 -k check</command>.
+      Note that running the test suite with parallel jobs may cause test
+      failures outputted as cryptic <computeroutput>unknown
+      object</computeroutput> messages, resulting a summary falsely claiming
+      <quote>all tests passed</quote>.  If the environment has variables
+      related to proxy settings (<envar>all_proxy</envar>,
+      <envar>ALL_PROXY</envar>, <envar>http_proxy</envar>, and etc.) set,
+      the test suite will bail out early with messages like
+      <computeroutput>net/ftp is not found</computeroutput>.  So make sure
+      unsetting them for the test suite.  There are over 26,000 tests.
+      <!-- https://bugs.ruby-lang.org/issues/20106 -->
+      12 tests are known to fail because of expired certificates in the
+      test data.  Some tests related to ipv6 may indicate errors.  If the
       tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. Three tests are known
-      to fail.
+      /tmp) then several additional tests may fail.
 @y
-      To test the results, issue: <command>make -k check</command>. There are over
-      27,000 tests. Some tests related to ipv6 may indicate errors.  If the
+      To test the results, issue: <command>make -j1 -k check</command>.
+      Note that running the test suite with parallel jobs may cause test
+      failures outputted as cryptic <computeroutput>unknown
+      object</computeroutput> messages, resulting a summary falsely claiming
+      <quote>all tests passed</quote>.  If the environment has variables
+      related to proxy settings (<envar>all_proxy</envar>,
+      <envar>ALL_PROXY</envar>, <envar>http_proxy</envar>, and etc.) set,
+      the test suite will bail out early with messages like
+      <computeroutput>net/ftp is not found</computeroutput>.  So make sure
+      unsetting them for the test suite.  There are over 26,000 tests.
+      <!-- https://bugs.ruby-lang.org/issues/20106 -->
+      12 tests are known to fail because of expired certificates in the
+      test data.  Some tests related to ipv6 may indicate errors.  If the
       tests are run in a directory that has a world writable component (e.g.
-      /tmp) then several additional tests may fail. Three tests are known
-      to fail.
+      /tmp) then several additional tests may fail.
 @z
 
 @x
@@ -156,11 +176,57 @@
 @z
 
 @x
+      <parameter>--disable-rpath</parameter>: This switch disables embedding
+      <filename class='directory'>/usr/lib</filename> as a library search
+      path into the <command>ruby</command> program.  Doing so is not needed
+      (because <filename class='directory'>/usr/lib</filename> is a system
+      library path) and it may cause the test suite running with the system
+      <filename class='libraryfile'>libruby.so</filename> instead of the
+      just built one when Ruby has been installed.
+@y
+      <parameter>--disable-rpath</parameter>: This switch disables embedding
+      <filename class='directory'>/usr/lib</filename> as a library search
+      path into the <command>ruby</command> program.  Doing so is not needed
+      (because <filename class='directory'>/usr/lib</filename> is a system
+      library path) and it may cause the test suite running with the system
+      <filename class='libraryfile'>libruby.so</filename> instead of the
+      just built one when Ruby has been installed.
+@z
+
+@x
       <parameter>--enable-shared</parameter>: This switch enables building
       the <filename class="libraryfile">libruby</filename> shared library.
 @y
       <parameter>--enable-shared</parameter>:
       このスイッチは <filename class='libraryfile'>libruby</filename> の共有ライブラリをビルドします。
+@z
+
+@x
+      <parameter>--without-baseruby</parameter>: This switch prevents using the
+      system <command>ruby</command> if it is already installed. The build
+      system will use the newly built version instead.
+@y
+      <parameter>--without-baseruby</parameter>: This switch prevents using the
+      system <command>ruby</command> if it is already installed. The build
+      system will use the newly built version instead.
+@z
+
+@x
+      <parameter>ac_cv_func_qsort_r=no</parameter>: This switch prevents
+      using the <function>qsort_r</function> function from Glibc.  Ruby
+      makes some aggressive optimization assuming
+      <function>qsort_r</function> would never allocate the buffer with
+      <function>malloc</function>, but the assumption is no longer true with
+      Glibc-2.39 or newer.  With this switch Ruby will use its own sort
+      implementation instead.
+@y
+      <parameter>ac_cv_func_qsort_r=no</parameter>: This switch prevents
+      using the <function>qsort_r</function> function from Glibc.  Ruby
+      makes some aggressive optimization assuming
+      <function>qsort_r</function> would never allocate the buffer with
+      <function>malloc</function>, but the assumption is no longer true with
+      Glibc-2.39 or newer.  With this switch Ruby will use its own sort
+      implementation instead.
 @z
 
 @x

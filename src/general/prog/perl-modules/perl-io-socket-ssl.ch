@@ -84,8 +84,12 @@
 @z
 
 @x
+        One test named <literal>Client non-SSL connection</literal> in
+        <filename>t/core.t</filename> is known to fail.
         Now, as the <systemitem class="username">root</systemitem> user:
 @y
+        One test named <literal>Client non-SSL connection</literal> in
+        <filename>t/core.t</filename> is known to fail.
         Now, as the <systemitem class="username">root</systemitem> user:
 @z
 
