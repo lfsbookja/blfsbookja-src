@@ -101,8 +101,9 @@
       <xref linkend="libexif"/>,
       <xref linkend="libgrss"/>,
       <xref linkend="libgxps"/>,
-      <xref linkend="libseccomp"/>, and
-      <xref linkend="poppler"/>
+      <xref linkend="libseccomp"/>,
+      <xref linkend="poppler"/>, and
+      <xref linkend="upower"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -115,7 +116,8 @@
       <xref linkend="libgrss"/>,
       <xref linkend="libgxps"/>,
       <xref linkend="libseccomp"/>,
-      <xref linkend="poppler"/>
+      <xref linkend="poppler"/>,
+      <xref linkend="upower"/>
     </para>
 @z
 
@@ -130,7 +132,6 @@
       <xref linkend="NetworkManager"/>,
       <xref linkend="taglib"/>,
       <xref linkend="totem-pl-parser"/>,
-      <xref linkend="upower"/>,
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
       <ulink url="https://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
       <ulink url="https://libosinfo.org">libosinfo</ulink>, and
@@ -147,7 +148,6 @@
       <xref linkend="NetworkManager"/>,
       <xref linkend="taglib"/>,
       <xref linkend="totem-pl-parser"/>,
-      <xref linkend="upower"/>,
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
       <ulink url="https://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
       <ulink url="https://libosinfo.org">libosinfo</ulink>,
@@ -242,6 +242,20 @@
 @y
       <option>-Dminer_rss=false</option>: Use this option if you have not
       installed the recommended dependency libgrss.
+@z
+
+@x
+      <option>-Dbattery_detection=none</option>: Use this option if you have
+      not installed the recommended dependency upower.  Do not use this
+      option if your system has a battery (laptop battery or UPS), or
+      tracker miners may waste the battery power and lifespan when the A/C
+      power is unavailable.
+@y
+      <option>-Dbattery_detection=none</option>: Use this option if you have
+      not installed the recommended dependency upower.  Do not use this
+      option if your system has a battery (laptop battery or UPS), or
+      tracker miners may waste the battery power and lifespan when the A/C
+      power is unavailable.
 @z
 
 @x

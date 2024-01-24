@@ -143,6 +143,7 @@
       <xref linkend="colord"/>,
       <xref linkend="cups"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libcloudproviders"/>,
       <xref linkend="pyatspi2"/> (for tests),
       <xref linkend='tracker3'/>, and
       <ulink url="https://icl.utk.edu/papi/">PAPI</ulink>
@@ -153,6 +154,7 @@
       <xref linkend="colord"/>,
       <xref linkend="cups"/>,
       <xref linkend="gtk-doc"/>,
+      <xref linkend="libcloudproviders"/>,
       <xref linkend="pyatspi2"/> (for tests),
       <xref linkend='tracker3'/>,
       <ulink url="https://icl.utk.edu/papi/">PAPI</ulink>
@@ -176,8 +178,8 @@
       To test the results you need a graphical session, then issue
       <command>dbus-run-session ninja test</command>.
 @y
-      To test the results you need a graphical session, then issue
-      <command>dbus-run-session ninja test</command>.
+      ビルド結果をテストするにはグラフィックセッションが必要です。
+      そのもとで <command>dbus-run-session ninja test</command> を実行します。
 @z
 
 @x
@@ -236,6 +238,16 @@
       <option>-Dtracker3=true</option>: This switch enables the search
       function based on Tracker 3 in the GTK+-3 file chooser dialog.
       It requires <xref linkend="tracker3"/>.
+@z
+
+@x
+      <option>-Dcloudproviders=true</option>: Use this switch if you have
+      <xref linkend="libcloudproviders" role="nodep"/> installed and wish to
+      enable support for cloud providers in a file chooser window.
+@y
+      <option>-Dcloudproviders=true</option>: Use this switch if you have
+      <xref linkend="libcloudproviders" role="nodep"/> installed and wish to
+      enable support for cloud providers in a file chooser window.
 @z
 
 @x
