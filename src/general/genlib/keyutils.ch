@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY keyutils-buildsize     "1.9 MB (with tests)">
-  <!ENTITY keyutils-time          "less than 0.1 SBU (add 0.6 SBU for tests)">
+  <!ENTITY keyutils-buildsize     "2.6 MB (with tests)">
+  <!ENTITY keyutils-time          "less than 0.1 SBU (add 0.4 SBU for tests)">
 @y
-  <!ENTITY keyutils-buildsize     "1.9 MB (テスト込み)">
-  <!ENTITY keyutils-time          "&LessThan1;0.1 SBU&LessThan2; (テスト時はさらに 0.6 SBU)">
+  <!ENTITY keyutils-buildsize     "2.6 MB (テスト込み)">
+  <!ENTITY keyutils-time          "&LessThan1;0.1 SBU&LessThan2; (テスト時はさらに 0.4 SBU)">
 @z
 
 @x
@@ -70,28 +70,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">keyutils Dependencies</bridgehead>
-@y
-    <bridgehead renderas="sect3">&Dependencies1;keyutils&Dependencies2;</bridgehead>
-@z
-
-@x
-    <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="mitkrb"/>
-      <!-- Without krb5 installed, a FTBFS occurs while trying to compile dns.afsdb.c.
-      It looks for profile.h, which is installed by krb5. -->
-    </para>
-@y
-    <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="mitkrb"/>
-      <!-- Without krb5 installed, a FTBFS occurs while trying to compile dns.afsdb.c.
-      It looks for profile.h, which is installed by krb5. -->
-    </para>
-@z
-
-@x
     <title>Installation of keyutils</title>
 @y
     <title>&InstallationOf1;keyutils&InstallationOf2;</title>
@@ -111,21 +89,25 @@
 @z
 
 @x
-      To test the results, issue, as the 
+      The test suite can only run after installing this package.
+      To test the results, issue, as the
       <systemitem class="username">root</systemitem> user:
 @y
+      The test suite can only run after installing this package.
       ビルド結果をテストする場合は <systemitem
       class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
       Note that several tests will fail if certain uncommon kernel options
-      were not used when the kernel was built.  These include CONFIG_BIG_KEYS,
-      CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.
+      were not used when the kernel was built. These include CONFIG_BIG_KEYS,
+      CONFIG_KEY_DH_OPERATIONS, CONFIG_CRYPTO_DH,
+      CONFIG_SECONDARY_TRUSTED_KEYRING, and CONFIG_SYSTEM_BLACKLIST_KEYRING.
 @y
       Note that several tests will fail if certain uncommon kernel options
-      were not used when the kernel was built.  These include CONFIG_BIG_KEYS,
-      CONFIG_KEY_DH_OPERATIONS, and CONFIG_CRYPTO_DH.
+      were not used when the kernel was built. These include CONFIG_BIG_KEYS,
+      CONFIG_KEY_DH_OPERATIONS, CONFIG_CRYPTO_DH,
+      CONFIG_SECONDARY_TRUSTED_KEYRING, and CONFIG_SYSTEM_BLACKLIST_KEYRING.
 @z
 
 @x
@@ -181,11 +163,15 @@
 @x
         <seg>keyctl, key.dns_resolver, and request-key</seg>
         <seg>libkeyutils.so</seg>
-        <seg>/etc/request-key.d and /usr/share/keyutils</seg>
+        <seg>/etc/keyutils,
+        /etc/request-key.d,
+        and /usr/share/keyutils</seg>
 @y
         <seg>keyctl, key.dns_resolver, request-key</seg>
         <seg>libkeyutils.so</seg>
-        <seg>/etc/request-key.d, /usr/share/keyutils</seg>
+        <seg>/etc/keyutils,
+        /etc/request-key.d,
+        /usr/share/keyutils</seg>
 @z
 
 @x
