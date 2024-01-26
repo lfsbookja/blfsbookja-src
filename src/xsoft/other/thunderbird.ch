@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY thunderbird-buildsize     "6.5 GB (236 MB installed)">
-  <!ENTITY thunderbird-time          "17 SBU (on a 8-core machine)">
+  <!ENTITY thunderbird-time          "14 SBU (on a 8-core machine)">
 @y
   <!ENTITY thunderbird-buildsize     "6.5 GB (236 MB installed)">
-  <!ENTITY thunderbird-time          "17 SBU (on a 8-core machine)">
+  <!ENTITY thunderbird-time          "14 SBU (on a 8-core machine)">
 @z
 
 @x

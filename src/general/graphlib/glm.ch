@@ -113,7 +113,8 @@
           None
         </seg>
         <seg>
-          /usr/include/glm
+          /usr/include/glm and
+          /usr/share/doc/glm-&glm-version;
         </seg>
 @y
         <seg>
@@ -123,6 +124,7 @@
           &None;
         </seg>
         <seg>
-          /usr/include/glm
+          /usr/include/glm,
+          /usr/share/doc/glm-&glm-version;
         </seg>
 @z

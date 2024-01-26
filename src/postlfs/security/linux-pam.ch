@@ -86,9 +86,9 @@
 @z
 
 @x
-          Download size &linux-pam-docs-size;
+          Download size: &linux-pam-docs-size;
 @y
-          &DownloadSize; &linux-pam-docs-size;
+          &DownloadSize;: &linux-pam-docs-size;
 @z
 
 @x

@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY gst10-plugins-bad-buildsize     "214 MB (with tests)">
-  <!ENTITY gst10-plugins-bad-time          "1.2 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-bad-time          "0.9 SBU (Using parallelism=4; with tests)">
 @y
   <!ENTITY gst10-plugins-bad-buildsize     "214 MB（テスト込み）">
-  <!ENTITY gst10-plugins-bad-time          "1.2 SBU（parallelism=4 利用、テスト込み）">
+  <!ENTITY gst10-plugins-bad-time          "0.9 SBU（parallelism=4 利用、テスト込み）">
 @z
 
 @x

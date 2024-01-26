@@ -31,6 +31,7 @@ CHANGE_FILES = \
 	json-c.ch                \
 	json-glib.ch             \
 	keyutils.ch              \
+	keyutils-test-kernel.ch  \
 	libaio.ch                \
 	libarchive.ch            \
 	libassuan.ch             \

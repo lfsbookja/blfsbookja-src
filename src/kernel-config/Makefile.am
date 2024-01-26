@@ -8,6 +8,26 @@ COPY_FILES = \
 
 include $(top_srcdir)/build-aux/copy.mk
 
-all: Makefile.orig
+all: Makefile.orig _copydirs
 Makefile.orig: $(BOOKdir)/Makefile
 	cp -p $^ $@
+
+copydirs = \
+	general      \
+	introduction \
+	multimedia   \
+	networking   \
+	postlfs      \
+	pst          \
+	server       \
+	testdata     \
+	x            \
+	xsoft
+
+.PHONY: _copydirs
+_copydirs:
+	@for d in $(copydirs); do \
+	  if test ! -d $$d; then \
+	    cp -pR $(BOOKdir)/$$d .; \
+	  fi \
+	done

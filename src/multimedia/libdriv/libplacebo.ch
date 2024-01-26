@@ -4,107 +4,67 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to libplacebo</title>
 @y
-  <sect2 role="package">
-    <title>Introduction to libplacebo</title>
+    <title>&IntroductionTo1;libplacebo&IntroductionTo2;</title>
 @z
 
 @x
-    <para>
       The <application>libplacebo</application> package contains a library for
       processing image and video primitives and shaders. It also includes a
       high quality rendering pipeline that supports OpenGL and Vulkan.
-    </para>
 @y
-    <para>
       The <application>libplacebo</application> package contains a library for
       processing image and video primitives and shaders. It also includes a
       high quality rendering pipeline that supports OpenGL and Vulkan.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&libplacebo-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&libplacebo-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &libplacebo-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &libplacebo-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &libplacebo-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &libplacebo-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
+@z
+
+@x
           Download (HTTP): <ulink url="&libplacebo-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &Download; (HTTP): <ulink url="&libplacebo-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&libplacebo-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &Download; (FTP): <ulink url="&libplacebo-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &libplacebo-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &Download; MD5 sum: &libplacebo-md5sum;
+@z
+
+@x
           Download size: &libplacebo-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &DownloadSize;: &libplacebo-size;
+@z
+
+@x
           Estimated disk space required: &libplacebo-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &Estimateddiskspacerequired;: &libplacebo-buildsize;
+@z
+
+@x
           Estimated build time: &libplacebo-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          &Estimatedbuildtime;: &libplacebo-time;
 @z
 
 @x
     <bridgehead renderas="sect3">libplacebo Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">libplacebo Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;libplacebo&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -114,9 +74,9 @@
       <xref linkend="glad"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="ffmpeg"/> and
+      <xref linkend="ffmpeg"/>,
       <xref linkend="glad"/>
     </para>
 @z
@@ -128,9 +88,9 @@
       <xref linkend="vulkan-loader"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="glslang"/> and
+      <xref linkend="glslang"/>,
       <xref linkend="vulkan-loader"/>
     </para>
 @z
@@ -145,162 +105,82 @@
       <ulink url="https://github.com/Cyan4973/xxHash">xxHash</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="lcms2"/>
       <xref linkend="libunwind"/>,
       <ulink url="https://github.com/quietvoid/dovi_tool/">dovi_tool</ulink>,
-      <ulink url="https://github.com/Immediate-Mode-UI/Nuklear">Nuklear</ulink>, and
+      <ulink url="https://github.com/Immediate-Mode-UI/Nuklear">Nuklear</ulink>,
       <ulink url="https://github.com/Cyan4973/xxHash">xxHash</ulink>
     </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of libplacebo</title>
 @y
-  <sect2 role="installation">
-    <title>Installation of libplacebo</title>
+    <title>&InstallationOf1;libplacebo&InstallationOf2;</title>
 @z
 
 @x
-    <para>
       Install <application>libplacebo</application> by running the following
       commands:
-    </para>
 @y
-    <para>
-      Install <application>libplacebo</application> by running the following
-      commands:
-    </para>
+      以下のコマンドを実行して <application>libplacebo</application> をビルドします。
 @z
 
 @x
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@y
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@z
-
-@x
-meson setup --prefix=/usr       \
-            --buildtype=release \
-            -Dtests=true        \
-            -Ddemos=false ..    &amp;&amp;
-ninja</userinput></screen>
-@y
-meson setup --prefix=/usr       \
-            --buildtype=release \
-            -Dtests=true        \
-            -Ddemos=false ..    &amp;&amp;
-ninja</userinput></screen>
-@z
-
-@x
-    <para>
       To test the results, issue: <command>ninja test</command>.
-    </para>
 @y
-    <para>
-      To test the results, issue: <command>ninja test</command>.
-    </para>
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
-      Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-<screen role="root"><userinput>ninja install</userinput></screen>
-@y
-<screen role="root"><userinput>ninja install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/meson-buildtype-release.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/meson-buildtype-release.xml"/>
-@z
-
-@x
-    <para>
       <parameter>-Ddemos=false</parameter>: This switch disables building
       the demo programs because building <application>plplay</application> is
       currently broken.
-    </para>
 @y
-    <para>
       <parameter>-Ddemos=false</parameter>: This switch disables building
       the demo programs because building <application>plplay</application> is
       currently broken.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-Dtests=true</parameter>: This switch enables building the
       code necessary to run the tests.
-    </para>
-  </sect2>
 @y
-    <para>
       <parameter>-Dtests=true</parameter>: This switch enables building the
       code necessary to run the tests.
-    </para>
-  </sect2>
 @z
 
 @x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           None
         </seg>
@@ -310,12 +190,9 @@ ninja</userinput></screen>
         <seg>
           /usr/include/libplacebo
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
-          None
+          &None;
         </seg>
         <seg>
           libplacebo.so
@@ -323,52 +200,18 @@ ninja</userinput></screen>
         <seg>
           /usr/include/libplacebo
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="libplacebo-lib">
-        <term><filename class="libraryfile">libplacebo.so</filename></term>
-        <listitem>
-          <para>
+@x libplacebo.so
             processes image and video primitives and shaders and provides a
             high quality rendering pipeline for OpenGL and Vulkan
-          </para>
-          <indexterm zone="libplacebo libplacebo-lib">
-            <primary sortas="c-libplacebo">libplacebo.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-  </sect2>
-</sect1>
 @y
-      <varlistentry id="libplacebo-lib">
-        <term><filename class="libraryfile">libplacebo.so</filename></term>
-        <listitem>
-          <para>
             processes image and video primitives and shaders and provides a
             high quality rendering pipeline for OpenGL and Vulkan
-          </para>
-          <indexterm zone="libplacebo libplacebo-lib">
-            <primary sortas="c-libplacebo">libplacebo.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-  </sect2>
-</sect1>
 @z

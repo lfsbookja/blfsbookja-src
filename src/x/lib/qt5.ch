@@ -258,7 +258,6 @@
       <xref linkend="mariadb"/>
         or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="mtdev"/>
       <xref linkend="pciutils"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="pulseaudio"/>,
@@ -285,7 +284,6 @@
       <xref linkend="mariadb"/>
         or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="mitkrb"/>,
-      <xref linkend="mtdev"/>
       <xref linkend="pciutils"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="pulseaudio"/>,
@@ -298,7 +296,7 @@
       <ulink url="https://www.freetds.org/">FreeTDS</ulink>,
       <ulink url="https://libproxy.github.io/libproxy/">libproxy</ulink>,
       <ulink url="https://openal.org/">OpenAL</ulink>,
-      <ulink url="https://freebsoft.org/speechd/">speech-dispatcher</ulink>, and
+      <ulink url="https://freebsoft.org/speechd/">speech-dispatcher</ulink>,
       <ulink url="http:///www.tslib.org/">tslib</ulink>
     </para>
 @z

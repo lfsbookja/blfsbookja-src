@@ -242,6 +242,18 @@ COPY_FILES = \
 
 thisdir = ${shell echo $(subdir) | sed -e "s|^src/||" -e "s|^src|\.|"}
 BOOKdir = @abs_bookdir@/$(thisdir)
+copydirs = \
+	general      \
+	introduction \
+	multimedia   \
+	networking   \
+	postlfs      \
+	pst          \
+	server       \
+	testdata     \
+	x            \
+	xsoft
+
 all: all-am
 
 .SUFFIXES:
@@ -437,9 +449,17 @@ all: $(COPY_FILES)
 copyfiles.sub: $(top_srcdir)/bin/makecp.sh $(top_builddir)/config.log
 	@$(top_srcdir)/bin/makecp.sh copyfiles . $(COPY_FILES)
 
-all: Makefile.orig
+all: Makefile.orig _copydirs
 Makefile.orig: $(BOOKdir)/Makefile
 	cp -p $^ $@
+
+.PHONY: _copydirs
+_copydirs:
+	@for d in $(copydirs); do \
+	  if test ! -d $$d; then \
+	    cp -pR $(BOOKdir)/$$d .; \
+	  fi \
+	done
 
 # Tell versions [3.59,3.63) of GNU make to not export all variables.
 # Otherwise a system limit (for SysV at least) may be exceeded.

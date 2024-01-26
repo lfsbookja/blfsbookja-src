@@ -99,15 +99,13 @@
 @z
 
 @x
-      Note that several tests will fail if certain uncommon kernel options
-      were not used when the kernel was built. These include CONFIG_BIG_KEYS,
-      CONFIG_KEY_DH_OPERATIONS, CONFIG_CRYPTO_DH,
-      CONFIG_SECONDARY_TRUSTED_KEYRING, and CONFIG_SYSTEM_BLACKLIST_KEYRING.
+      If <xref linkend='lsb-tools'/> is not installed, the test suite will
+      output some lines complaining the <command>lsb_release</command>
+      command not available but it won't affect the test result.
 @y
-      Note that several tests will fail if certain uncommon kernel options
-      were not used when the kernel was built. These include CONFIG_BIG_KEYS,
-      CONFIG_KEY_DH_OPERATIONS, CONFIG_CRYPTO_DH,
-      CONFIG_SECONDARY_TRUSTED_KEYRING, and CONFIG_SYSTEM_BLACKLIST_KEYRING.
+      If <xref linkend='lsb-tools'/> is not installed, the test suite will
+      output some lines complaining the <command>lsb_release</command>
+      command not available but it won't affect the test result.
 @z
 
 @x
