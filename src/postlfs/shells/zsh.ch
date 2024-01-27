@@ -225,7 +225,8 @@
         <filename>/etc/zsh/zlogin</filename> and
         <filename>/etc/zsh/zlogout</filename>.
         You can find more information on these in the
-        <filename>zsh(1)</filename> and related manual pages.
+        <ulink role='man' url='&man;zsh.1'>zsh(1)</ulink> and related
+        manual pages.
 @y
         There are a whole host of configuration files for
         <application>zsh</application> including
@@ -235,7 +236,8 @@
         <filename>/etc/zsh/zlogin</filename> and
         <filename>/etc/zsh/zlogout</filename>.
         You can find more information on these in the
-        <filename>zsh(1)</filename> and related manual pages.
+        <ulink role='man' url='&man;zsh.1'>zsh(1)</ulink> and related
+        manual pages.
 @z
 
 @x

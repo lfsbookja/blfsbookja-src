@@ -131,7 +131,7 @@
         <filename>~/.history</filename>, <filename>~/.cshdirs</filename>,
         <filename>~/.login</filename>, and <filename>~/.logout</filename>. More
         information on these files can be found in the
-        <filename>tcsh(1)</filename> man page.
+        <ulink role='man' url='&man;tcsh.1'>tcsh(1)</ulink> man page.
 @y
         There are numerous configuration files for the C shell. Examples
         of these are <filename>/etc/csh.cshrc</filename>,
@@ -141,7 +141,7 @@
         <filename>~/.history</filename>, <filename>~/.cshdirs</filename>,
         <filename>~/.login</filename>, and <filename>~/.logout</filename>. More
         information on these files can be found in the
-        <filename>tcsh(1)</filename> man page.
+        <ulink role='man' url='&man;tcsh.1'>tcsh(1)</ulink> man page.
 @z
 
 @x

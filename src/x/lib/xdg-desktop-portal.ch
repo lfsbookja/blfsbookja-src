@@ -238,14 +238,14 @@
         <filename>/etc/xdg-desktop-portal/portals.conf</filename>, and
         <filename>/usr/share/xdg-desktop-portal/portals.conf</filename>.
         Several other locations can be searched for configuration files. See
-        <filename>portals.conf(5)</filename>.
+        <ulink role='man' url='&man;portals.conf.5'>portals.conf(5)</ulink>.
 @y
         The main configuration files are
         <filename>~/.config/xdg-desktop-portal/portals.conf</filename>,
         <filename>/etc/xdg-desktop-portal/portals.conf</filename>, and
         <filename>/usr/share/xdg-desktop-portal/portals.conf</filename>.
         Several other locations can be searched for configuration files. See
-        <filename>portals.conf(5)</filename>.
+        <ulink role='man' url='&man;portals.conf.5'>portals.conf(5)</ulink>.
 @z
 
 @x
@@ -257,11 +257,13 @@
 @x
         The various configuration files are used to choose the backend
         depending of various conditions. See
-        <filename>portals.conf(5)</filename> for details.
+        <ulink role='man' url='&man;portals.conf.5'>portals.conf(5)</ulink>
+        for details.
 @y
         The various configuration files are used to choose the backend
         depending of various conditions. See
-        <filename>portals.conf(5)</filename> for details.
+        <ulink role='man' url='&man;portals.conf.5'>portals.conf(5)</ulink>
+        for details.
 @z
 
 @x

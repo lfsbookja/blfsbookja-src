@@ -119,12 +119,14 @@
 
 @x
         The paper size is automatically determined from the system locale;
-        see <literal>LC_PAPER</literal> in <filename>locale(7)</filename>.
+        see <literal>LC_PAPER</literal> in <ulink role='man'
+        url='&man;locale.7'>locale(7)</ulink>.
         If you want to override it, create a <filename>papersize</filename>
         file in the user configuration directory.  For example:
 @y
         The paper size is automatically determined from the system locale;
-        see <literal>LC_PAPER</literal> in <filename>locale(7)</filename>.
+        see <literal>LC_PAPER</literal> in <ulink role='man'
+        url='&man;locale.7'>locale(7)</ulink>.
         If you want to override it, create a <filename>papersize</filename>
         file in the user configuration directory.  For example:
 @z
