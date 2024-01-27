@@ -200,10 +200,12 @@
 
 @x
       If you have installed the needed dependencies, you can test the results
-      by running <command>ninja test</command>.
+      by running <command>ninja test</command>. Six tests are known to fail if
+      you are not using <xref linkend="gnome-terminal"/> and are in GNOME.
 @y
       If you have installed the needed dependencies, you can test the results
-      by running <command>ninja test</command>.
+      by running <command>ninja test</command>. Six tests are known to fail if
+      you are not using <xref linkend="gnome-terminal"/> and are in GNOME.
 @z
 
 @x
@@ -213,9 +215,9 @@
 @z
 
 @x revision=sysv
-      Remove systemd files that are useless: as the &root; user:
+      Remove systemd files that are useless (as the &root; user):
 @y
-      Remove systemd files that are useless: as the &root; user:
+      Remove systemd files that are useless (as the &root; user):
 @z
 
 @x
