@@ -90,7 +90,6 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pth"/>,
       <xref linkend="emacs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,
@@ -100,7 +99,6 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pth"/>,
       <xref linkend="emacs"/>,
       <xref linkend="gtk-doc"/>,
       <xref linkend="openjdk"/>,

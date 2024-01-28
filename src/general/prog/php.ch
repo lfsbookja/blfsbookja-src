@@ -113,7 +113,6 @@
       an <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command),
       <xref linkend="pcre2"/>,
-      <xref linkend="pth"/>,
       <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
       <ulink url="https://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,
@@ -131,7 +130,6 @@
       an <xref linkend="server-mail"/> (that provides a
       <command>sendmail</command> command),
       <xref linkend="pcre2"/>,
-      <xref linkend="pth"/>,
       <ulink url="https://wiki.ubuntu.com/AppArmor">AppArmor</ulink>,
       <ulink url="https://dmalloc.com/">Dmalloc</ulink>,
       <ulink url="http://www.net-snmp.org/">Net-SNMP</ulink>,

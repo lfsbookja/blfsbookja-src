@@ -92,14 +92,12 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <!-- <xref linkend="libcap-pam"/> -->
-      <xref linkend="pth"/> and
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <!-- <xref linkend="libcap-pam"/> -->
-      <xref linkend="pth"/>,
       <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>)
     </para>
 @z

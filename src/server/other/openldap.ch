@@ -91,7 +91,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gnutls"/>,
-      <xref linkend="pth"/>,
       <xref linkend="unixodbc"/>,
         <xref linkend="mariadb"/> or
         <xref linkend="postgresql"/> or
@@ -104,13 +103,12 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gnutls"/>,
-      <xref linkend="pth"/>,
       <xref linkend="unixodbc"/>,
         <xref linkend="mariadb"/> or
         <xref linkend="postgresql"/> or
         <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <ulink url="http://www.openslp.org/">OpenSLP</ulink>,
-      <ulink url="https://docs.mongodb.com/manual/core/wiredtiger/">WiredTiger</ulink>, and
+      <ulink url="https://docs.mongodb.com/manual/core/wiredtiger/">WiredTiger</ulink>,
       &berkeley-db; (for slapd, also deprecated)
     </para>
 @z
@@ -176,10 +174,10 @@
 
 @x
       <parameter>--enable-crypt</parameter>: This switch enables using
-      <command>crypt(3)</command> passwords.
+      <ulink role='man' url='&man;crypt.3'>crypt(3)</ulink> passwords.
 @y
       <parameter>--enable-crypt</parameter>: This switch enables using
-      <command>crypt(3)</command> passwords.
+      <ulink role='man' url='&man;crypt.3'>crypt(3)</ulink> passwords.
 @z
 
 @x
@@ -335,17 +333,21 @@
 @z
 
 @x
-            The <emphasis role="strong">slapd(8)</emphasis> man page.
+            The <ulink role='man' url='&man;slapd.8'>slapd(8)</ulink> man
 @y
-            The <emphasis role="strong">slapd(8)</emphasis> man page.
+            The <ulink role='man' url='&man;slapd.8'>slapd(8)</ulink> man
 @z
 
 @x
-            The <emphasis role="strong">slapd.conf(5)</emphasis> and
-            <emphasis role="strong">slapd-config(5)</emphasis> man pages.
+            The <ulink role='man'
+            url='&man;slapd.conf.5'>slapd.conf(5)</ulink> and
+            <ulink role='man'
+            url='&man;slapd-config.5'>slapd-config(5)</ulink> man pages.
 @y
-            The <emphasis role="strong">slapd.conf(5)</emphasis> and
-            <emphasis role="strong">slapd-config(5)</emphasis> man pages.
+            The <ulink role='man'
+            url='&man;slapd.conf.5'>slapd.conf(5)</ulink> and
+            <ulink role='man'
+            url='&man;slapd-config.5'>slapd-config(5)</ulink> man pages.
 @z
 
 @x

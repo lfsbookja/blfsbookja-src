@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libpng-buildsize     "16 MB (with tests)">
+  <!ENTITY libpng-buildsize     "14 MB (with tests)">
   <!ENTITY libpng-time          "0.1 SBU (add 0.5 SBU for tests)">
 @y
-  <!ENTITY libpng-buildsize     "16 MB （テスト込み）">
+  <!ENTITY libpng-buildsize     "14 MB （テスト込み）">
   <!ENTITY libpng-time          "0.1 SBU（テスト実施時はさらに 0.5 SBU）">
 @z
 

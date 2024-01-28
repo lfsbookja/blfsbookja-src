@@ -251,18 +251,26 @@
 
 @x mount.cifs
             mounts a Linux CIFS filesystem. It is usually invoked
-            indirectly by the mount(8) command when using the "-t cifs" option
+            indirectly by the <ulink role='man'
+            url='&man;mount.8'>mount(8)</ulink> command when using the
+            <option>-t cifs</option> option
 @y
             mounts a Linux CIFS filesystem. It is usually invoked
-            indirectly by the mount(8) command when using the "-t cifs" option
+            indirectly by the <ulink role='man'
+            url='&man;mount.8'>mount(8)</ulink> command when using the
+            <option>-t cifs</option> option
 @z
 
 @x mount.smb3
             mounts a SMB3-based filesystem. It is usually invoked
-            indirectly by the mount(8) command when using the "-t smb3" option
+            indirectly by the <ulink role='man'
+            url='&man;mount.8'>mount(8)</ulink> command when using the
+            <option>-t smb3</option> option
 @y
             mounts a SMB3-based filesystem. It is usually invoked
-            indirectly by the mount(8) command when using the "-t smb3" option
+            indirectly by the <ulink role='man'
+            url='&man;mount.8'>mount(8)</ulink> command when using the
+            <option>-t smb3</option> option
 @z
 
 @x setcifsacl

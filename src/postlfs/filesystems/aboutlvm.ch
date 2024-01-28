@@ -187,16 +187,18 @@
     If not using an initramfs, there is a race condition in <application>
     systemd</application> preventing mounting logical volumes through
     <filename>/etc/fstab</filename>. You must create a <quote>mount</quote>
-    unit (see systemd.mount(5)) as in the following example, which mounts
-    the <filename class="directory">/home</filename> directory automatically
-    at boot:
+    unit (see <ulink role='man'
+    url='&man;systemd.mount.5'>systemd.mount(5)</ulink>) as in the following
+    example, which mounts the <filename class="directory">/home</filename>
+    directory automatically at boot:
 @y
     If not using an initramfs, there is a race condition in <application>
     systemd</application> preventing mounting logical volumes through
     <filename>/etc/fstab</filename>. You must create a <quote>mount</quote>
-    unit (see systemd.mount(5)) as in the following example, which mounts
-    the <filename class="directory">/home</filename> directory automatically
-    at boot:
+    unit (see <ulink role='man'
+    url='&man;systemd.mount.5'>systemd.mount(5)</ulink>) as in the following
+    example, which mounts the <filename class="directory">/home</filename>
+    directory automatically at boot:
 @z
 
 @x revision="systemd"

@@ -88,7 +88,6 @@ CHANGE_FILES = \
 	pcre.ch                  \
 	pcre2.ch                 \
 	popt.ch                  \
-	pth.ch                   \
 	qca.ch                   \
 	spidermonkey.ch          \
 	spirv-headers.ch         \
@@ -97,6 +96,7 @@ CHANGE_FILES = \
 	telepathy-glib.ch        \
 	uchardet.ch              \
 	umockdev.ch              \
+	utfcpp.ch                \
 	wayland.ch               \
 	wayland-protocols.ch     \
 	wpebackend-fdo.ch        \

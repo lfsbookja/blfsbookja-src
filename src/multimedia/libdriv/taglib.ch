@@ -70,12 +70,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/>
+      <xref linkend="cmake"/> and
+      <xref linkend="utfcpp"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="cmake"/>
+      <xref linkend="cmake"/>,
+      <xref linkend="utfcpp"/>
     </para>
 @z
 

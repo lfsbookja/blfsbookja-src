@@ -13,11 +13,15 @@
       The <application>AccountsService</application> package provides a
       set of <application>D-Bus</application> interfaces for querying
       and manipulating user account information and an implementation
-      of those interfaces based on the usermod(8), useradd(8) and
-      userdel(8) commands.
+      of those interfaces based on the
+      <ulink role='man' url='&man;usermod.8'>usermod(8)</ulink>,
+      <ulink role='man' url='&man;useradd.8'>useradd(8)</ulink>, and
+      <ulink role='man' url='&man;userdel.8'>userdel(8)</ulink> commands.
 @y
       <application>AccountsService</application> パッケージは、一連の <application>D-Bus</application> インターフェースを通じて、ユーザーアカウント情報を検索したり操作したりします。
-      また usermod(8), useradd(8), userdel(8) といったコマンドに準拠した、上記インターフェースの実装を提供します。
+      また <ulink role='man' url='&man;usermod.8'>usermod(8)</ulink>,
+      <ulink role='man' url='&man;useradd.8'>useradd(8)</ulink>,
+      <ulink role='man' url='&man;userdel.8'>userdel(8)</ulink> といったコマンドに準拠した、上記インターフェースの実装を提供します。
 @z
 
 @x

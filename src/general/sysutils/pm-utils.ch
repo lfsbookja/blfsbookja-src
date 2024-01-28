@@ -208,7 +208,8 @@
       state or resumed. Default hooks are located in <filename
       class="directory">/usr/lib/pm-utils/sleep.d</filename>, and user hooks
       should be put in <filename class="directory">/etc/pm/sleep.d</filename>.
-      See the pm-action(8) man page for more information.
+      See the <ulink role='man' url='&man;pm-action.8'>pm-action(8)</ulink>
+      man page for more information.
 @y
       Suspend or resume functionality can be easily modified by installing files
       into the <filename class="directory">/etc/pm/sleep.d</filename> directory.
@@ -216,7 +217,8 @@
       state or resumed. Default hooks are located in <filename
       class="directory">/usr/lib/pm-utils/sleep.d</filename>, and user hooks
       should be put in <filename class="directory">/etc/pm/sleep.d</filename>.
-      See the pm-action(8) man page for more information.
+      See the <ulink role='man' url='&man;pm-action.8'>pm-action(8)</ulink>
+      man page for more information.
 @z
 
 @x

@@ -198,9 +198,11 @@
 @z
 
 @x gsf
-            is a simple archive utility, somewhat similar to tar(1)
+            is a simple archive utility, somewhat similar to
+            <ulink role='man' url='&man;tar.1'>tar(1)</ulink>
 @y
-            簡易なアーカイブユーティリティー。tar(1) に類似するものです。
+            簡易なアーカイブユーティリティー。
+            <ulink role='man' url='&man;tar.1'>tar(1)</ulink> に類似するものです。
 @z
 
 @x gsf-office-thumbnailer

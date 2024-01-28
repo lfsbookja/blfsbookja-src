@@ -10,11 +10,13 @@
 @z
 
 @x
-        DateTime::Format::Strptime implements most of strptime(3), i.e. it takes
-        a string and a pattern and returns a DateTime object.
+        DateTime::Format::Strptime implements most of <ulink role='man'
+        url='&man;strptime.3'>strptime(3)</ulink>, i.e. it takes a string
+        and a pattern and returns a DateTime object.
 @y
-        DateTime::Format::Strptime implements most of strptime(3), i.e. it takes
-        a string and a pattern and returns a DateTime object.
+        DateTime::Format::Strptime implements most of <ulink role='man'
+        url='&man;strptime.3'>strptime(3)</ulink>, i.e. it takes a string
+        and a pattern and returns a DateTime object.
 @z
 
 @x

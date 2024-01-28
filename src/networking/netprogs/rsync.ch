@@ -190,11 +190,13 @@
 
 @x
         This is a simple download-only configuration to set up running
-        <command>rsync</command> as a server. See the rsyncd.conf(5)
+        <command>rsync</command> as a server. See the <ulink role='man'
+        url='&man;rsyncd.conf.5'>rsyncd.conf(5)</ulink>
         man-page for additional options (i.e., user authentication).
 @y
         以下は、<command>rsync</command> をサーバーにて起動させて、ダウンロードだけができるようにする設定例です。
-        詳細なオプション (ユーザー認証など) については man ページの rsyncd.conf(5) を参照してください。
+        詳細なオプション (ユーザー認証など) については man ページの <ulink role='man'
+        url='&man;rsyncd.conf.5'>rsyncd.conf(5)</ulink> を参照してください。
 @z
 
 @x

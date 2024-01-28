@@ -10,11 +10,13 @@
 @z
 
 @x
-        Text::Glob implements glob(3) style matching that can be used to match
-        against text, rather than fetching names from a filesystem.
+        Text::Glob implements <ulink role='man'
+        url='&man;glob.3'>glob(3)</ulink> style matching that can be used to
+        match against text, rather than fetching names from a filesystem.
 @y
-        Text::Glob implements glob(3) style matching that can be used to match
-        against text, rather than fetching names from a filesystem.
+        Text::Glob implements <ulink role='man'
+        url='&man;glob.3'>glob(3)</ulink> style matching that can be used to
+        match against text, rather than fetching names from a filesystem.
 @z
 
 @x

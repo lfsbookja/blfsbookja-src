@@ -221,13 +221,15 @@
         its contents are created when you start <command>mc</command> for the
         first time. Then you can edit the main <filename>~/.config/mc/ini
         </filename> configuration file manually or through the <application>
-        MC</application> shell. Consult the mc(1) man page for details.
+        MC</application> shell. Consult the <ulink role='man'
+        url='&man;mc.1'>mc(1)</ulink> man page for details.
 @y
         The <filename class="directory">~/.config/mc</filename> directory and
         its contents are created when you start <command>mc</command> for the
         first time. Then you can edit the main <filename>~/.config/mc/ini
         </filename> configuration file manually or through the <application>
-        MC</application> shell. Consult the mc(1) man page for details.
+        MC</application> shell. Consult the <ulink role='man'
+        url='&man;mc.1'>mc(1)</ulink> man page for details.
 @z
 
 @x

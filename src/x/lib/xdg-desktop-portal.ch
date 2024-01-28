@@ -152,14 +152,16 @@
     <para role="optional">
       <xref linkend="geoclue2"/> (for the <quote>location</quote> portal), and
       <xref linkend="pytest"/> with
-      <xref linkend="libportal"/> (for running tests)
+      <xref linkend="libportal"/> and
+      <xref linkend="python-dbusmock"/> (for running tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="geoclue2"/> (for the <quote>location</quote> portal), and
       <xref linkend="pytest"/> with
-      <xref linkend="libportal"/> (for running tests)
+      <xref linkend="libportal"/>,
+      <xref linkend="python-dbusmock"/> (for running tests)
     </para>
 @z
 
@@ -200,12 +202,14 @@
 
 @x
       If you have installed the needed dependencies, you can test the results
-      by running <command>ninja test</command>. Six tests are known to fail if
-      you are not using <xref linkend="gnome-terminal"/> and are in GNOME.
+      by running <command>ninja test</command>.<phrase revision="systemd">
+      Six tests are known to fail if you are not using
+      <xref linkend="gnome-terminal"/> and are in GNOME.</phrase>
 @y
       If you have installed the needed dependencies, you can test the results
-      by running <command>ninja test</command>. Six tests are known to fail if
-      you are not using <xref linkend="gnome-terminal"/> and are in GNOME.
+      by running <command>ninja test</command>.<phrase revision="systemd">
+      Six tests are known to fail if you are not using
+      <xref linkend="gnome-terminal"/> and are in GNOME.</phrase>
 @z
 
 @x
