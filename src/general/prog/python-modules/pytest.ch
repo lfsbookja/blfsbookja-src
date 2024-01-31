@@ -4,141 +4,69 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pytest-download-http "https://files.pythonhosted.org/packages/source/p/pytest/pytest-&pytest-version;.tar.gz">
-  <!ENTITY pytest-download-ftp  " ">
-  <!ENTITY pytest-md5sum        "&pytest-md5sum;">
-  <!ENTITY pytest-size          "1.3 MB">
-  <!ENTITY pytest-buildsize     "8.3 MB (add 31 MB for tests)">
-  <!ENTITY pytest-time          "less than 0.1 SBU (1.5 SBU for tests)">
-]>
+  <!ENTITY pytest-buildsize     "43 MB (with tests)">
+  <!ENTITY pytest-time          "1.8 SBU (with tests)">
 @y
-  <!ENTITY pytest-download-http "https://files.pythonhosted.org/packages/source/p/pytest/pytest-&pytest-version;.tar.gz">
-  <!ENTITY pytest-download-ftp  " ">
-  <!ENTITY pytest-md5sum        "&pytest-md5sum;">
-  <!ENTITY pytest-size          "1.3 MB">
-  <!ENTITY pytest-buildsize     "8.3 MB (add 31 MB for tests)">
-  <!ENTITY pytest-time          "less than 0.1 SBU (1.5 SBU for tests)">
-]>
+  <!ENTITY pytest-buildsize     "43 MB (with tests)">
+  <!ENTITY pytest-time          "1.8 SBU (with tests)">
 @z
 
 @x
-  <sect2 id="pytest" xreflabel="pytest-&pytest-version;">
-@y
-  <sect2 id="pytest" xreflabel="pytest-&pytest-version;">
-@z
-
-@x
-    <title>Pytest-&pytest-version;</title>
-@y
-    <title>Pytest-&pytest-version;</title>
-@z
-
-@x
-    <indexterm zone="pytest">
-      <primary sortas="a-pytest">pytest</primary>
-    </indexterm>
-@y
-    <indexterm zone="pytest">
-      <primary sortas="a-pytest">pytest</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to Pytest Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Pytest Module</title>
 @z
 
 @x
-      <para>
         The <application>Pytest</application> framework makes it easy to
         write small, readable tests, and can scale to support complex
         functional testing for applications and libraries.
-      </para>
 @y
-      <para>
         The <application>Pytest</application> framework makes it easy to
         write small, readable tests, and can scale to support complex
         functional testing for applications and libraries.
-      </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
-            Download (HTTP): <ulink url="&pytest-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download (FTP): <ulink url="&pytest-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &pytest-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download size: &pytest-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated disk space required: &pytest-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated build time: &pytest-time;
-          </para>
-        </listitem>
-      </itemizedlist>
 @y
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
+@z
+
+@x
             Download (HTTP): <ulink url="&pytest-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (HTTP): <ulink url="&pytest-download-http;"/>
+@z
+
+@x
             Download (FTP): <ulink url="&pytest-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (FTP): <ulink url="&pytest-download-ftp;"/>
+@z
+
+@x
             Download MD5 sum: &pytest-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download MD5 sum: &pytest-md5sum;
+@z
+
+@x
             Download size: &pytest-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download size: &pytest-size;
+@z
+
+@x
             Estimated disk space required: &pytest-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Estimated disk space required: &pytest-buildsize;
+@z
+
+@x
             Estimated build time: &pytest-time;
-          </para>
-        </listitem>
-      </itemizedlist>
+@y
+            Estimated build time: &pytest-time;
 @z
 
 @x
@@ -206,16 +134,8 @@
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of Pytest</title>
 @y
-    <sect3 role="installation">
       <title>Installation of Pytest</title>
 @z
 
@@ -226,97 +146,34 @@
 @z
 
 @x
-&build-wheel;
-@y
-&build-wheel;
-@z
-
-@x
-      <para>
         Now, as the <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para>
         Now, as the <systemitem class="username">root</systemitem> user:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>&install-wheel; pytest</userinput></screen>
-@y
-<screen role="root"><userinput>&install-wheel; pytest</userinput></screen>
-@z
-
-@x
-      <para>
         The installation can be tested with the following commands:
-      </para>
 @y
-      <para>
         The installation can be tested with the following commands:
-      </para>
 @z
 
 @x
-<screen remap="test"><userinput>python3 -m venv --system-site-packages testenv &amp;&amp;
-source testenv/bin/activate                    &amp;&amp;
-pip3 install pytest[testing]                   &amp;&amp;
-python3 /usr/bin/pytest<!-- no && because of a possible error -->
-deactivate</userinput></screen>
-@y
-<screen remap="test"><userinput>python3 -m venv --system-site-packages testenv &amp;&amp;
-source testenv/bin/activate                    &amp;&amp;
-pip3 install pytest[testing]                   &amp;&amp;
-python3 /usr/bin/pytest<!-- no && because of a possible error -->
-deactivate</userinput></screen>
-@z
-
-@x
-<!-- With 7.4.0 and the toolchain from LFS 12.0, there are now 11 XFAILS
-      <para>
-        A few tests (11 of 3429) are known to fail.
-      </para>
--->
-    </sect3>
-@y
-<!-- With 7.4.0 and the toolchain from LFS 12.0, there are now 11 XFAILS
-      <para>
-        A few tests (11 of 3429) are known to fail.
-      </para>
--->
-    </sect3>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@z
-
-@x
-    <sect3 role="content">
       <title>Contents</title>
 @y
-    <sect3 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>
             pytest and py.test (different files but with same content)
           </seg>
@@ -326,10 +183,7 @@ deactivate</userinput></screen>
             /usr/lib/python&python3-majorver;/site-packages/pytest, and
             /usr/lib/python&python3-majorver;/site-packages/pytest-&pytest-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
           <seg>
             pytest and py.test (different files but with same content)
           </seg>
@@ -339,64 +193,18 @@ deactivate</userinput></screen>
             /usr/lib/python&python3-majorver;/site-packages/pytest, and
             /usr/lib/python&python3-majorver;/site-packages/pytest-&pytest-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @z
 
 @x
-      <variablelist>
         <bridgehead renderas="sect5">Short Descriptions</bridgehead>
-        <?dbfo list-presentation="list"?>
-        <?dbhtml list-presentation="table"?>
 @y
-      <variablelist>
         <bridgehead renderas="sect5">Short Descriptions</bridgehead>
-        <?dbfo list-presentation="list"?>
-        <?dbhtml list-presentation="table"?>
 @z
 
-@x
-        <varlistentry id="pytest-prog">
-          <term><command>pytest</command></term>
-          <listitem>
-            <para>
+@x pytest
               sets up, manages, and/or runs test in python module source
               directories
-            </para>
-            <indexterm zone="pytest pytest-prog">
-              <primary sortas="b-pytest-prog">pytest</primary>
-            </indexterm>
-          </listitem>
-        </varlistentry>
 @y
-        <varlistentry id="pytest-prog">
-          <term><command>pytest</command></term>
-          <listitem>
-            <para>
               sets up, manages, and/or runs test in python module source
               directories
-            </para>
-            <indexterm zone="pytest pytest-prog">
-              <primary sortas="b-pytest-prog">pytest</primary>
-            </indexterm>
-          </listitem>
-        </varlistentry>
-@z
-
-@x
-      </variablelist>
-@y
-      </variablelist>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z

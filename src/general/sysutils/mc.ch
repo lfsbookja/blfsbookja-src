@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY mc-buildsize     "75 MB (add 86 MB for tests)">
+  <!ENTITY mc-buildsize     "71 MB (add 96 MB for tests)">
   <!ENTITY mc-time          "0.3 SBU (using parallelism=4; add 0.2 SBU for tests)">
 @y
-  <!ENTITY mc-buildsize     "75 MB (add 86 MB for tests)">
+  <!ENTITY mc-buildsize     "71 MB (add 96 MB for tests)">
   <!ENTITY mc-time          "0.3 SBU (using parallelism=4; add 0.2 SBU for tests)">
 @z
 

@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pixman-buildsize     "30 MB (with tests)">
-  <!ENTITY pixman-time          "0.5 SBU (with tests)">
+  <!ENTITY pixman-buildsize     "27 MB (With tests)">
+  <!ENTITY pixman-time          "0.2 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY pixman-buildsize     "30 MB (テスト込み)">
-  <!ENTITY pixman-time          "0.5 SBU (テスト込み)">
+  <!ENTITY pixman-buildsize     "27 MB (テスト込み)">
+  <!ENTITY pixman-time          "0.2 SBU (parallelism=4 利用時; テスト込み)">
 @z
 
 @x
