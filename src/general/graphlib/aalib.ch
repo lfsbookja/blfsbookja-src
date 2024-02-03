@@ -68,7 +68,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="xorg7-lib"/>,
-      <xref linkend="xorg7-legacy"/> (runtime),
+      <xref linkend="xorg7-font"/> (runtime),
       <xref linkend="slang"/>, and
       <xref linkend="gpm"/>
     </para>
@@ -76,7 +76,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="xorg7-lib"/>,
-      <xref linkend="xorg7-legacy"/> (runtime),
+      <xref linkend="xorg7-font"/> (runtime),
       <xref linkend="slang"/>,
       <xref linkend="gpm"/>
     </para>

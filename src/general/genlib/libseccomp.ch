@@ -81,15 +81,15 @@
       <xref linkend="which"/> (needed for tests),
       <xref linkend="valgrind"/>,
       <!--<xref linkend="cython"/> (for python bindings), -->and
-      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>
+      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="which"/> (テストに必要),
       <xref linkend="valgrind"/>,
-      <!--<xref linkend="cython"/> (python バインディング用), -->
-      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>
+      <!--<xref linkend="cython"/> (for python bindings), -->and
+      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>
     </para>
 @z
 

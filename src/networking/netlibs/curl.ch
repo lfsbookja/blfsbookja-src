@@ -78,12 +78,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref role="runtime" linkend="make-ca"/> (runtime) 
+      <xref linkend="libpsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref role="runtime" linkend="make-ca"/> (実行時) 
+      <xref linkend="libpsl"/>
     </para>
 @z
 
@@ -94,7 +94,6 @@
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libidn2"/>,
-      <xref linkend="libpsl"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
@@ -122,7 +121,6 @@
       <xref linkend="c-ares"/>,
       <xref linkend="gnutls"/>,
       <xref linkend="libidn2"/>,
-      <xref linkend="libpsl"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="mitkrb"/>,
       <xref linkend="nghttp2"/>,
@@ -140,7 +138,7 @@
       <!--<ulink url="https://tls.mbed.org/">mbed TLS</ulink> (formerly known as
       PolarSSL), and -->
       <!-- mbedTLS/PolarSSL support was removed in 7.65.1 -->
-      <ulink url="https://github.com/cloudflare/quiche">quiche</ulink>,
+      <ulink url="https://github.com/cloudflare/quiche">quiche</ulink>, and
       <ulink url="https://spnego.sourceforge.net/">SPNEGO</ulink>
     </para>
 @z
@@ -194,22 +192,30 @@
 
 @x
        To run the test suite, issue: <command>make test</command>.
-       One test, <filename>1477</filename>, is known to fail due to 
-       a missing file in the curl tarball. Some tests are flaky, 
+       Foure tests are known to fail due to missing files.
+       <!--One test, <filename>1477</filename>, is known to fail due to 
+       a missing file in the curl tarball.--> Some tests are flaky, 
        so if some tests have failed it's possible to
        run a test again with: <command>(cd tests; ./runtests.pl
        <replaceable>&lt;test ID&gt;</replaceable>)</command> (the ID of
        failed tests are shown in the <quote><computeroutput>These test cases
-       failed:</computeroutput></quote> message).
+       failed:</computeroutput></quote> message). If you run the tests after
+       the package has been installed, some tests may fail because the man
+       pages were deleted by the 'find' command in the installation instructions
+       below.
 @y
        To run the test suite, issue: <command>make test</command>.
-       One test, <filename>1477</filename>, is known to fail due to 
-       a missing file in the curl tarball. Some tests are flaky, 
+       Foure tests are known to fail due to missing files.
+       <!--One test, <filename>1477</filename>, is known to fail due to 
+       a missing file in the curl tarball.--> Some tests are flaky, 
        so if some tests have failed it's possible to
        run a test again with: <command>(cd tests; ./runtests.pl
        <replaceable>&lt;test ID&gt;</replaceable>)</command> (the ID of
        failed tests are shown in the <quote><computeroutput>These test cases
-       failed:</computeroutput></quote> message).
+       failed:</computeroutput></quote> message). If you run the tests after
+       the package has been installed, some tests may fail because the man
+       pages were deleted by the 'find' command in the installation instructions
+       below.
 @z
 
 @x

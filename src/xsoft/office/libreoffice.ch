@@ -4,43 +4,19 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libreoffice-buildsize  "10 GB including the additional files if downloaded during the build (725 MB installed). Installing the whole set of languages requires more than 25 GB (around 3 GB installed)">
-@y
-  <!ENTITY libreoffice-buildsize  "10 GB including the additional files if downloaded during the build (725 MB installed). Installing the whole set of languages requires more than 25 GB (around 3 GB installed)">
-@z
-
-@x
-  <!ENTITY libreoffice-time "25 SBU with parallelism=8 (will vary due to download time)">
-@y
-  <!ENTITY libreoffice-time "25 SBU with parallelism=8 (will vary due to download time)">
-@z
-
-@x
-  <sect2 role="package">
     <title>Introduction to LibreOffice</title>
 @y
-  <sect2 role="package">
     <title>Introduction to LibreOffice</title>
 @z
 
 @x
-    <para>
       <application>LibreOffice</application> is a full-featured office suite.
       It is largely compatible with <application>Microsoft Office</application>
       and is descended from <application>OpenOffice.org</application>.
-    </para>
 @y
-    <para>
       <application>LibreOffice</application> is a full-featured office suite.
       It is largely compatible with <application>Microsoft Office</application>
       and is descended from <application>OpenOffice.org</application>.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
@@ -425,146 +401,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="avahi"/>,
-      <xref linkend="bluez"/>,
-      <xref linkend="dconf"/>,
-      <xref linkend="desktop-file-utils"/>,
-      <xref linkend="doxygen"/> (not relevant if using --disable-odk),
-      <xref linkend="evolution-data-server"/>,
-      <xref linkend="gdb"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="kf5-frameworks"/>,
-      <xref linkend="libpaper"/>,
-      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="nasm"/>,
-      &qt5-deps;,
-      <xref linkend="qt6"/>,
-      <xref linkend="sane"/>,
-      <xref linkend="telepathy-glib"/>,
-      <xref linkend="valgrind"/>,
-      <xref linkend="vlc"/>,
-      <ulink url="https://commons.apache.org/proper/commons-codec/">Apache Commons Codec</ulink>,
-      <ulink url="https://hc.apache.org/httpcomponents-client-ga/index.html">Apache Commons HttpClient</ulink>,
-      <ulink url="https://commons.apache.org/proper/commons-lang/">Apache Commons Lang</ulink>,
-      <ulink url="https://commons.apache.org/proper/commons-logging/">Apache Commons Logging</ulink>,
-      <ulink url="https://beanshell.github.io/">BeanShell</ulink>,
-      <ulink url="https://box2d.org/documentation/">box2d</ulink>,
-      <ulink url="https://projects.coin-or.org/CoinMP/">CoinMP</ulink>,
-      <ulink url='https://freedesktop.org/wiki/Software/cppunit/'>Cppunit</ulink>
-      <ulink url="https://www.firebirdsql.org/">Firebird</ulink>,
-      <ulink url="https://github.com/behdad/glyphy">glyphy</ulink>,
-      <ulink url="&gnome-download-http;/gnome-vfs/">Gnome VFS</ulink>,
-      <ulink url="https://github.com/hamcrest/JavaHamcrest/releases">hamcrest</ulink>,
-      <ulink url="https://hunspell.github.io/">Hunspell</ulink>,
-      <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="https://include-what-you-use.org/">iwyu</ulink>,
-      <ulink url="https://github.com/junit-team/junit4/releases">junit4</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libabw">libabw</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libcdr">libcdr</ulink>,
-      <ulink url="https://sourceforge.net/projects/libcmis/">libcmis</ulink>,
-      <ulink url="https://www.sourceforge.net/projects/libebook/">libebook</ulink>,
-      <ulink url="https://sourceforge.net/projects/libepubgen/">libepubgen</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libetonyek">libetonyek</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/Libexttextcat">libexttextcat</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libfreehand">libfreehand</ulink>,
-      <ulink url="https://tagoh.github.io/liblangtag/">liblangtag</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libmspub">libmspub</ulink>,
-      <ulink url="https://sourceforge.net/projects/libmwaw/">libmwaw</ulink>,
-      <ulink url="https://github.com/Numbertext/libnumbertext">libnumbertext</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwpd/files/libodfgen/">libodfgen</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libpagemaker">libpagemaker</ulink>,
-      <ulink url="https://github.com/nayuki/QR-Code-generator">libqrcodegen</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libqxp">libqxp</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwpd/files/librevenge/">librevenge (WordPerfect Document importer)</ulink>,
-      <ulink url="https://github.com/fosnola/libstaroffice/wiki">libstaroffice</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libvisio">libvisio</ulink>,
-      <ulink url="https://libwpd.sourceforge.net/">libwpd</ulink>,
-      <ulink url="https://libwpg.sourceforge.net/">libwpg</ulink>,
-      <ulink url="https://sourceforge.net/p/libwps/wiki/Home/">libwps</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libzmf">libzmf</ulink>,
-      <ulink url="https://lpsolve.sourceforge.net/">lp_solve</ulink>,
-      <ulink url="https://gitlab.com/mdds/mdds">mdds</ulink>,
-      <ulink url="https://sourceforge.net/projects/hunspell/files/MyThes/">MyThes</ulink>,
-      <ulink url="https://odftoolkit.org/conformance/ODFValidator.html">odfvalidator</ulink>,
-      <ulink url="https://code.google.com/archive/p/officeotron/">officeotron</ulink>,
-      <ulink url="https://github.com/KhronosGroup/OpenCOLLADA/">OpenCOLLADA</ulink>,
-      <ulink url="https://gitlab.com/orcus/orcus">Orcus</ulink>,
-      <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>, and
-      <ulink url="https://ukoethe.github.io/vigra/">VIGRA</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="avahi"/>,
-      <xref linkend="bluez"/>,
-      <xref linkend="dconf"/>,
-      <xref linkend="desktop-file-utils"/>,
-      <xref linkend="doxygen"/> (not relevant if using --disable-odk),
-      <xref linkend="evolution-data-server"/>,
-      <xref linkend="gdb"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="kf5-frameworks"/>,
-      <xref linkend="libpaper"/>,
-      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="nasm"/>,
-      &qt5-deps;,
-      <xref linkend="qt6"/>,
-      <xref linkend="sane"/>,
-      <xref linkend="telepathy-glib"/>,
-      <xref linkend="valgrind"/>,
-      <xref linkend="vlc"/>,
-      <ulink url="https://commons.apache.org/proper/commons-codec/">Apache Commons Codec</ulink>,
-      <ulink url="https://hc.apache.org/httpcomponents-client-ga/index.html">Apache Commons HttpClient</ulink>,
-      <ulink url="https://commons.apache.org/proper/commons-lang/">Apache Commons Lang</ulink>,
-      <ulink url="https://commons.apache.org/proper/commons-logging/">Apache Commons Logging</ulink>,
-      <ulink url="https://beanshell.github.io/">BeanShell</ulink>,
-      <ulink url="https://box2d.org/documentation/">box2d</ulink>,
-      <ulink url="https://projects.coin-or.org/CoinMP/">CoinMP</ulink>,
-      <ulink url='https://freedesktop.org/wiki/Software/cppunit/'>Cppunit</ulink>
-      <ulink url="https://www.firebirdsql.org/">Firebird</ulink>,
-      <ulink url="https://github.com/behdad/glyphy">glyphy</ulink>,
-      <ulink url="&gnome-download-http;/gnome-vfs/">Gnome VFS</ulink>,
-      <ulink url="https://github.com/hamcrest/JavaHamcrest/releases">hamcrest</ulink>,
-      <ulink url="https://hunspell.github.io/">Hunspell</ulink>,
-      <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <ulink url="https://include-what-you-use.org/">iwyu</ulink>,
-      <ulink url="https://github.com/junit-team/junit4/releases">junit4</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libabw">libabw</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libcdr">libcdr</ulink>,
-      <ulink url="https://sourceforge.net/projects/libcmis/">libcmis</ulink>,
-      <ulink url="https://www.sourceforge.net/projects/libebook/">libebook</ulink>,
-      <ulink url="https://sourceforge.net/projects/libepubgen/">libepubgen</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libetonyek">libetonyek</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/Libexttextcat">libexttextcat</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libfreehand">libfreehand</ulink>,
-      <ulink url="https://tagoh.github.io/liblangtag/">liblangtag</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libmspub">libmspub</ulink>,
-      <ulink url="https://sourceforge.net/projects/libmwaw/">libmwaw</ulink>,
-      <ulink url="https://github.com/Numbertext/libnumbertext">libnumbertext</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwpd/files/libodfgen/">libodfgen</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libpagemaker">libpagemaker</ulink>,
-      <ulink url="https://github.com/nayuki/QR-Code-generator">libqrcodegen</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libqxp">libqxp</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwpd/files/librevenge/">librevenge (WordPerfect Document importer)</ulink>,
-      <ulink url="https://github.com/fosnola/libstaroffice/wiki">libstaroffice</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libvisio">libvisio</ulink>,
-      <ulink url="https://libwpd.sourceforge.net/">libwpd</ulink>,
-      <ulink url="https://libwpg.sourceforge.net/">libwpg</ulink>,
-      <ulink url="https://sourceforge.net/p/libwps/wiki/Home/">libwps</ulink>,
-      <ulink url="https://wiki.documentfoundation.org/DLP/Libraries/libzmf">libzmf</ulink>,
-      <ulink url="https://lpsolve.sourceforge.net/">lp_solve</ulink>,
-      <ulink url="https://gitlab.com/mdds/mdds">mdds</ulink>,
-      <ulink url="https://sourceforge.net/projects/hunspell/files/MyThes/">MyThes</ulink>,
-      <ulink url="https://odftoolkit.org/conformance/ODFValidator.html">odfvalidator</ulink>,
-      <ulink url="https://code.google.com/archive/p/officeotron/">officeotron</ulink>,
-      <ulink url="https://github.com/KhronosGroup/OpenCOLLADA/">OpenCOLLADA</ulink>,
-      <ulink url="https://gitlab.com/orcus/orcus">Orcus</ulink>,
-      <ulink url="https://sourceware.org/systemtap/">SystemTap</ulink>, and
-      <ulink url="https://ukoethe.github.io/vigra/">VIGRA</ulink>
-    </para>
 @z
 
 @x
@@ -646,27 +484,13 @@ cd libreoffice-&libreoffice-dlversion;</userinput></screen>
 @z
 
 @x
-<screen><userinput>patch -Np1 -i ../libreoffice-&libreoffice-dlversion;-poppler_22_09_fixes-1.patch</userinput></screen>
--->
-@y
-<screen><userinput>patch -Np1 -i ../libreoffice-&libreoffice-dlversion;-poppler_22_09_fixes-1.patch</userinput></screen>
--->
-@z
-
-@x
     <para>
-      First, fix build failures caused by libxml2-2.12.x:
+      First, fix a build failure with libxml2 and a bug with linking to zlib:
     </para>
 @y
     <para>
-      First, fix build failures caused by libxml2-2.12.x:
+      First, fix a build failure with libxml2 and a bug with linking to zlib:
     </para>
-@z
-
-@x
-<screen><userinput remap="pre">patch -Np1 -i ../libreoffice-&libreoffice-dlversion;-consolidated_fixes-1.patch</userinput></screen>
-@y
-<screen><userinput remap="pre">patch -Np1 -i ../libreoffice-&libreoffice-dlversion;-consolidated_fixes-1.patch</userinput></screen>
 @z
 
 @x
@@ -677,12 +501,6 @@ cd libreoffice-&libreoffice-dlversion;</userinput></screen>
     <para>
       Next, fix a build failure with ICU-74+:
     </para>
-@z
-
-@x
-<screen><userinput>sed -e /LBCM/d -i i18npool/source/breakiterator/data/line.txt</userinput></screen>
-@y
-<screen><userinput>sed -e /LBCM/d -i i18npool/source/breakiterator/data/line.txt</userinput></screen>
 @z
 
 @x
@@ -771,12 +589,6 @@ ln -sv src/libreoffice-translations-&libreoffice-dlversion;/translations/</useri
       <filename class="directory">/usr</filename> or by
       <filename class="directory">/opt/libreoffice-&libreoffice-dlversion;</filename>:
     </para>
-@z
-
-@x
-<screen><userinput>export LO_PREFIX=<replaceable>&lt;PREFIX&gt;</replaceable></userinput></screen>
-@y
-<screen><userinput>export LO_PREFIX=<replaceable>&lt;PREFIX&gt;</replaceable></userinput></screen>
 @z
 
 @x

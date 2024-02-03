@@ -103,13 +103,13 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="vala"/> (with Valadoc) and
-      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>
+      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="vala"/> (with Valadoc),
-      <ulink url="https://ltp.sourceforge.net/coverage/lcov.php">LCOV</ulink>
+      <xref linkend="vala"/> (with Valadoc) and
+      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>
     </para>
 @z
 

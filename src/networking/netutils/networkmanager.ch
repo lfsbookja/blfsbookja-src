@@ -102,6 +102,7 @@
       <xref linkend="dhcpcd"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="newt"/> (for <command>nmtui</command>),
       <xref linkend="nss"/>,
       <xref role='runtime' linkend="polkit"/> (runtime),
@@ -118,6 +119,7 @@
       <xref linkend="dhcpcd"/>,
       <xref linkend="gobject-introspection"/>,
       <xref linkend="iptables"/>,
+      <xref linkend="libpsl"/>,
       <xref linkend="newt"/> (for <command>nmtui</command>),
       <xref linkend="nss"/>,
       <xref role='runtime' linkend="polkit"/> (runtime),
@@ -137,7 +139,6 @@
       <!-- <xref linkend="firewalld"/> (For whenever firewalld is reintroduced) -->
       <xref linkend="gnutls"/> (can be used instead of <xref linkend="nss"/>),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="libpsl"/>,
       (<xref linkend="qt5"/> or
        <xref role="node" linkend="qt5-components"/> with qtdoc) (for examples),
       <xref linkend="ModemManager"/>,
@@ -159,7 +160,6 @@
       <!-- <xref linkend="firewalld"/> (For whenever firewalld is reintroduced) -->
       <xref linkend="gnutls"/> (can be used instead of <xref linkend="nss"/>),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="libpsl"/>,
       (<xref linkend="qt5"/> or
        <xref role="node" linkend="qt5-components"/> with qtdoc) (for examples),
       <xref linkend="ModemManager"/>,

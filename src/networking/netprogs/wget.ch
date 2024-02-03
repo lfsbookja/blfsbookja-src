@@ -75,12 +75,24 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref role="runtime" linkend="make-ca"/> (runtime)
+      <xref linkend="libpsl"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref role="runtime" linkend="make-ca"/> （実行時）
+      <xref linkend="libpsl"/>
+    </para>
+@z
+
+@x
+    <bridgehead renderas="sect4">Recommended at runtime</bridgehead>
+    <para role="recommended">
+      <xref role="runtime" linkend="make-ca"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">Recommended at runtime</bridgehead>
+    <para role="recommended">
+      <xref role="runtime" linkend="make-ca"/>
     </para>
 @z
 
@@ -91,7 +103,6 @@
       <xref linkend="perl-http-daemon"/> (for the test suite),
       <xref linkend="perl-io-socket-ssl"/> (for the test suite),
       <xref linkend="libidn2"/>,
-      <xref linkend="libpsl"/>,
       <xref linkend="pcre"/> or <xref linkend="pcre2"/>, and
       <xref linkend="valgrind"/> (for the test suite)
     </para>
@@ -102,8 +113,7 @@
       <xref linkend="perl-http-daemon"/> (テストスイートのため),
       <xref linkend="perl-io-socket-ssl"/> (テストスイートのため),
       <xref linkend="libidn2"/>,
-      <xref linkend="libpsl"/>,
-      <xref linkend="pcre"/> または <xref linkend="pcre2"/>,
+      <xref linkend="pcre"/> or <xref linkend="pcre2"/>, and
       <xref linkend="valgrind"/> (テストスイートのため)
     </para>
 @z

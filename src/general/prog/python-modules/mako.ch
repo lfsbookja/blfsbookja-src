@@ -4,17 +4,17 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY Mako-buildsize     "2.7 MB (add 1.2 MB for tests)">
+  <!ENTITY Mako-buildsize     "2.9 MB (add 1.2 MB for tests)">
   <!ENTITY Mako-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY Mako-buildsize     "2.7 MB (add 1.2 MB for tests)">
+  <!ENTITY Mako-buildsize     "2.9 MB (add 1.2 MB for tests)">
   <!ENTITY Mako-time          "less than 0.1 SBU (with tests)">
 @z
 
 @x
       <title>Introduction to Mako Module</title>
 @y
-      <title>Introduction to Mako Module</title>
+      <title>&IntroductionTo1;Mako モジュール&IntroductionTo2;</title>
 @z
 
 @x
