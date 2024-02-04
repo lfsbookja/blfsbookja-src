@@ -84,95 +84,25 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="jansson"/> and
       <xref linkend="libndp"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="jansson"/>,
       <xref linkend="libndp"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="curl"/>,
-      <xref linkend="dhcpcd"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="iptables"/>,
-      <xref linkend="libpsl"/>,
-      <xref linkend="newt"/> (for <command>nmtui</command>),
-      <xref linkend="nss"/>,
-      <xref role='runtime' linkend="polkit"/> (runtime),
-      <xref linkend="pygobject3"/>,
-      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
-      <xref linkend="vala"/>, and
-      <xref linkend="wpa_supplicant"/> (runtime, built with D-Bus support)
-    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="curl"/>,
-      <xref linkend="dhcpcd"/>,
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="iptables"/>,
-      <xref linkend="libpsl"/>,
-      <xref linkend="newt"/> (for <command>nmtui</command>),
-      <xref linkend="nss"/>,
-      <xref role='runtime' linkend="polkit"/> (runtime),
-      <xref linkend="pygobject3"/>,
-      <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <phrase revision="systemd"><xref linkend="systemd"/>,</phrase>
-      <xref linkend="vala"/>, and
-      <xref linkend="wpa_supplicant"/> (runtime, built with D-Bus support)
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="bluez"/>,
-      <xref linkend="dbus-python"/> (for the test suite),
-      <!-- <xref linkend="firewalld"/> (For whenever firewalld is reintroduced) -->
-      <xref linkend="gnutls"/> (can be used instead of <xref linkend="nss"/>),
-      <xref linkend="gtk-doc"/>,
-      (<xref linkend="qt5"/> or
-       <xref role="node" linkend="qt5-components"/> with qtdoc) (for examples),
-      <xref linkend="ModemManager"/>,
-      <xref linkend="upower"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="https://thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
-      <ulink url="https://firewalld.org/">firewalld</ulink>,
-      <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
-      <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
-      <ulink url="&gnome-download-http;/mobile-broadband-provider-info/">mobile-broadband-provider-info</ulink>,
-      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>, and
-      <ulink url="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="bluez"/>,
-      <xref linkend="dbus-python"/> (for the test suite),
-      <!-- <xref linkend="firewalld"/> (For whenever firewalld is reintroduced) -->
-      <xref linkend="gnutls"/> (can be used instead of <xref linkend="nss"/>),
-      <xref linkend="gtk-doc"/>,
-      (<xref linkend="qt5"/> or
-       <xref role="node" linkend="qt5-components"/> with qtdoc) (for examples),
-      <xref linkend="ModemManager"/>,
-      <xref linkend="upower"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="https://thekelleys.org.uk/dnsmasq/doc.html">dnsmasq</ulink>,
-      <ulink url="https://firewalld.org/">firewalld</ulink>,
-      <ulink url="https://github.com/Distrotech/libaudit">libaudit</ulink>,
-      <ulink url="https://github.com/jpirko/libteam">libteam</ulink>,
-      <ulink url="&gnome-download-http;/mobile-broadband-provider-info/">mobile-broadband-provider-info</ulink>,
-      <ulink url="https://www.samba.org/ftp/ppp/">PPP</ulink>,
-      <ulink url="https://dianne.skoll.ca/projects/rp-pppoe/">RP-PPPoE</ulink>
-    </para>
 @z
 
 @x
@@ -255,15 +185,15 @@
 @z
 
 @x
-      <parameter>-Dlibpsl=false</parameter> and
-      <parameter>-Dovs=false</parameter>: These switches disable building with
-      the respective libraries. Remove these if you have the needed libraries
-      installed on your system.
+      <parameter>-Dovs=false</parameter>: This switch disable the Open
+      vSwitch integration because it needs <xref linkend='jansson'/>.
+      Remove it if you have <xref linkend='jansson'/> installed on your
+      system.
 @y
-      <parameter>-Dlibpsl=false</parameter> and
-      <parameter>-Dovs=false</parameter>: These switches disable building with
-      the respective libraries. Remove these if you have the needed libraries
-      installed on your system.
+      <parameter>-Dovs=false</parameter>: This switch disable the Open
+      vSwitch integration because it needs <xref linkend='jansson'/>.
+      Remove it if you have <xref linkend='jansson'/> installed on your
+      system.
 @z
 
 @x

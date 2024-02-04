@@ -92,14 +92,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/> and
-      <xref linkend="valgrind"/>
+      <xref linkend="pcre"/>,
+      <xref linkend="valgrind"/>, and
+      <ulink url='https://fbb-git.gitlab.io/yodl/'>yodl</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="pcre"/>,
-      <xref linkend="valgrind"/>
+      <xref linkend="valgrind"/>,
+      <ulink url='https://fbb-git.gitlab.io/yodl/'>yodl</ulink>
     </para>
 @z
 

@@ -192,7 +192,6 @@
 
 @x
        To run the test suite, issue: <command>make test</command>.
-       Foure tests are known to fail due to missing files.
        <!--One test, <filename>1477</filename>, is known to fail due to 
        a missing file in the curl tarball.--> Some tests are flaky, 
        so if some tests have failed it's possible to
@@ -205,7 +204,6 @@
        below.
 @y
        To run the test suite, issue: <command>make test</command>.
-       Foure tests are known to fail due to missing files.
        <!--One test, <filename>1477</filename>, is known to fail due to 
        a missing file in the curl tarball.--> Some tests are flaky, 
        so if some tests have failed it's possible to
