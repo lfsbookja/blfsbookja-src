@@ -122,12 +122,12 @@
 
 @x
         <seg>
-           lsb_release,
-           install_initd, and
-           remove_initd
+          lsb_release,
+          install_initd, and
+          remove_initd
         </seg>
         <seg>
-           None
+          None
         </seg>
         <seg>
           <phrase revision="systemd">/usr/lib/lsb and</phrase>
@@ -135,15 +135,15 @@
         </seg>
 @y
         <seg>
-           lsb_release,
-           install_initd,
-           remove_initd
+          lsb_release,
+          install_initd,
+          remove_initd
         </seg>
         <seg>
-           &None;
+          &None;
         </seg>
         <seg>
-          <phrase revision="systemd">/usr/lib/lsb and</phrase>
+          <phrase revision="systemd">/usr/lib/lsb,</phrase>
           /usr/lib/python&python3-majorver;/site-packages/lsbtools
         </seg>
 @z
