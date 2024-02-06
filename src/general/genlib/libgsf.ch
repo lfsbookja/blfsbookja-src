@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libgsf-buildsize     "16 MB (with tests)">
-  <!ENTITY libgsf-time          "0.3 SBU (with tests)">
+  <!ENTITY libgsf-buildsize     "14 MB (with tests)">
+  <!ENTITY libgsf-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY libgsf-buildsize     "16 MB （テスト込み）">
-  <!ENTITY libgsf-time          "0.3 SBU （テスト込み）">
+  <!ENTITY libgsf-buildsize     "14 MB （テスト込み）">
+  <!ENTITY libgsf-time          "0.2 SBU （テスト込み）">
 @z
 
 @x
@@ -104,14 +104,16 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/> and
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gobject-introspection"/>,
+      <xref linkend="gtk-doc"/>, and
+      <xref linkend="valgrind"/> (for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="gtk-doc"/>
+      <xref linkend="gtk-doc"/>,
+      <xref linkend="valgrind"/> (テストのため)
     </para>
 @z
 
@@ -129,12 +131,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. Two
-      tests, t1004-zip-zip64.pl and t1005-zip-nonseekable.pl are
-      known to fail.
+      To test the results, issue: <command>make check</command>. 
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      2 つのテスト t1004-zip-zip64.pl と t1005-zip-nonseekable.pl は失敗します。
 @z
 
 @x

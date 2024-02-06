@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libxml2-buildsize     "98 MB (with tests)">
+  <!ENTITY libxml2-buildsize     "103 MB (with tests)">
   <!ENTITY libxml2-time          "0.4 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libxml2-buildsize     "98 MB (テスト込み)">
+  <!ENTITY libxml2-buildsize     "103 MB (テスト込み)">
   <!ENTITY libxml2-time          "0.4 SBU (parallelism=4 利用; テスト込み)">
 @z
 
@@ -91,13 +91,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="icu"/> (see below) and
       <xref linkend="valgrind"/> (may be used in the tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="icu"/> (下記参照),
       <xref linkend="valgrind"/> (テスト内で利用)
     </para>
 @z

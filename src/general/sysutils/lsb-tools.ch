@@ -85,21 +85,13 @@
 @z
 
 @x
-        The configuration for this package was done in <phrase revision="sysv">
-        <ulink url="&lfs-website;/lfs/view/stable/chapter11/theend.html">LFS</ulink>.</phrase>
-        <phrase revision="systemd">
-        <ulink url="&lfs-website;/lfs/view/systemd/chapter11/theend.html">LFS</ulink>
-        and
-        <ulink url="&lfs-website;/lfs/view/systemd/chapter08/systemd.html">Systemd</ulink>.</phrase>
+        The configuration for this package was done in
+        <ulink url='&lfs-root;/chapter11/theend.html'>LFS</ulink>.
         The file <filename>/etc/lsb-release</filename> should already exist.
         Be sure that the DISTRIB_CODENAME entry has been set properly.
 @y
-        The configuration for this package was done in <phrase revision="sysv">
-        <ulink url="&lfs-website;/lfs/view/stable/chapter11/theend.html">LFS</ulink>.</phrase>
-        <phrase revision="systemd">
-        <ulink url="&lfs-website;/lfs/view/systemd/chapter11/theend.html">LFS</ulink>
-        and
-        <ulink url="&lfs-website;/lfs/view/systemd/chapter08/systemd.html">Systemd</ulink>.</phrase>
+        The configuration for this package was done in
+        <ulink url='&lfs-root;/chapter11/theend.html'>LFS</ulink>.
         The file <filename>/etc/lsb-release</filename> should already exist.
         Be sure that the DISTRIB_CODENAME entry has been set properly.
 @z
@@ -122,9 +114,9 @@
 
 @x
         <seg>
-          lsb_release,
+          lsb_release <phrase revision="sysv">,
           install_initd, and
-          remove_initd
+          remove_initd</phrase>
         </seg>
         <seg>
           None
@@ -135,9 +127,9 @@
         </seg>
 @y
         <seg>
-          lsb_release,
+          lsb_release <phrase revision="sysv">,
           install_initd,
-          remove_initd
+          remove_initd</phrase>
         </seg>
         <seg>
           &None;

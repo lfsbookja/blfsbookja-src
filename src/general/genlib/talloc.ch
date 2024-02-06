@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY talloc-buildsize     "11 MB (with tests)">
-  <!ENTITY talloc-time          "0.3 SBU (with tests)">
+  <!ENTITY talloc-buildsize     "10 MB (with tests)">
+  <!ENTITY talloc-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY talloc-buildsize     "11 MB (テスト込み)">
-  <!ENTITY talloc-time          "0.3 SBU (テスト込み)">
+  <!ENTITY talloc-buildsize     "10 MB (テスト込み)">
+  <!ENTITY talloc-time          "0.4 SBU (テスト込み)">
 @z
 
 @x

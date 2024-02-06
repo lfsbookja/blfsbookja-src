@@ -278,9 +278,7 @@
       either <xref linkend="alsa-lib"/> or
       <xref linkend="pulseaudio"/> (or both),
       <xref linkend="ffmpeg"/>,
-      <!-- awkward wording - libxslt needs libxml2, if libxml2 is built
-           before icu then the *shipped* icu will be used -->
-      <xref linkend="icu"/> (built before <xref linkend="libxml2"/>),
+      <xref linkend="icu"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="libxslt"/>, and
       <xref linkend="opus"/>
@@ -290,11 +288,9 @@
       either <xref linkend="alsa-lib"/> or
       <xref linkend="pulseaudio"/> (or both),
       <xref linkend="ffmpeg"/>,
-      <!-- awkward wording - libxslt needs libxml2, if libxml2 is built
-           before icu then the *shipped* icu will be used -->
-      <xref linkend="icu"/> (built before <xref linkend="libxml2"/>),
+      <xref linkend="icu"/>,
       <xref linkend="libwebp"/>,
-      <xref linkend="libxslt"/>, and
+      <xref linkend="libxslt"/>,
       <xref linkend="opus"/>
     </para>
 @z

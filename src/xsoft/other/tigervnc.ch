@@ -34,12 +34,6 @@
 @z
 
 @x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
-@z
-
-@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
       <listitem>
@@ -258,12 +252,6 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
   <sect2 role="installation">
     <title>Installation of Tigervnc</title>
 @y
@@ -290,12 +278,6 @@
 @z
 
 @x
-<screen><userinput remap="pre">patch -Np1 -i ../tigervnc-&tigervnc-version;-configuration_fixes-1.patch</userinput></screen>
-@y
-<screen><userinput remap="pre">patch -Np1 -i ../tigervnc-&tigervnc-version;-configuration_fixes-1.patch</userinput></screen>
-@z
-
-@x
     <para>
       Install <application>tigervnc</application> by running the following
       commands:
@@ -305,152 +287,6 @@
       Install <application>tigervnc</application> by running the following
       commands:
     </para>
-@z
-
-@x
-<screen revision="sysv"><userinput># Put code in place
-mkdir -p unix/xserver &amp;&amp;
-tar -xf ../xorg-server-&tigervnc-xorg-version;.tar.xz \
-    --strip-components=1              \
-    -C unix/xserver                   &amp;&amp;
-( cd unix/xserver &amp;&amp;
-  patch -Np1 -i ../xserver21.1.1.patch ) &amp;&amp;
-@y
-<screen revision="sysv"><userinput># Put code in place
-mkdir -p unix/xserver &amp;&amp;
-tar -xf ../xorg-server-&tigervnc-xorg-version;.tar.xz \
-    --strip-components=1              \
-    -C unix/xserver                   &amp;&amp;
-( cd unix/xserver &amp;&amp;
-  patch -Np1 -i ../xserver21.1.1.patch ) &amp;&amp;
-@z
-
-@x
-# Build viewer
-cmake -G "Unix Makefiles"         \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DINSTALL_SYSTEMD_UNITS=OFF \
-      -Wno-dev . &amp;&amp;
-make &amp;&amp;
-@y
-# Build viewer
-cmake -G "Unix Makefiles"         \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -DINSTALL_SYSTEMD_UNITS=OFF \
-      -Wno-dev . &amp;&amp;
-make &amp;&amp;
-@z
-
-@x
-# Build server
-pushd unix/xserver &amp;&amp;
-  autoreconf -fiv  &amp;&amp;
-@y
-# Build server
-pushd unix/xserver &amp;&amp;
-  autoreconf -fiv  &amp;&amp;
-@z
-
-@x
-  CPPFLAGS="-I/usr/include/drm"       \
-  ./configure $XORG_CONFIG            \
-      --disable-xwayland    --disable-dri        --disable-dmx         \
-      --disable-xorg        --disable-xnest      --disable-xvfb        \
-      --disable-xwin        --disable-xephyr     --disable-kdrive      \
-      --disable-devel-docs  --disable-config-hal --disable-config-udev \
-      --disable-unit-tests  --disable-selective-werror                 \
-      --disable-static      --enable-dri3                              \
-      --without-dtrace      --enable-dri2        --enable-glx          \
-      --with-pic &amp;&amp;
-  make  &amp;&amp;
-popd</userinput></screen>
-@y
-  CPPFLAGS="-I/usr/include/drm"       \
-  ./configure $XORG_CONFIG            \
-      --disable-xwayland    --disable-dri        --disable-dmx         \
-      --disable-xorg        --disable-xnest      --disable-xvfb        \
-      --disable-xwin        --disable-xephyr     --disable-kdrive      \
-      --disable-devel-docs  --disable-config-hal --disable-config-udev \
-      --disable-unit-tests  --disable-selective-werror                 \
-      --disable-static      --enable-dri3                              \
-      --without-dtrace      --enable-dri2        --enable-glx          \
-      --with-pic &amp;&amp;
-  make  &amp;&amp;
-popd</userinput></screen>
-@z
-
-@x
-<screen revision="systemd"><userinput># Put code in place
-mkdir -p unix/xserver &amp;&amp;
-tar -xf ../xorg-server-&tigervnc-xorg-version;.tar.xz \
-    --strip-components=1              \
-    -C unix/xserver                   &amp;&amp;
-( cd unix/xserver &amp;&amp;
-  patch -Np1 -i ../xserver21.1.1.patch ) &amp;&amp;
-@y
-<screen revision="systemd"><userinput># Put code in place
-mkdir -p unix/xserver &amp;&amp;
-tar -xf ../xorg-server-&tigervnc-xorg-version;.tar.xz \
-    --strip-components=1              \
-    -C unix/xserver                   &amp;&amp;
-( cd unix/xserver &amp;&amp;
-  patch -Np1 -i ../xserver21.1.1.patch ) &amp;&amp;
-@z
-
-@x
-# Build viewer
-cmake -G "Unix Makefiles"         \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -Wno-dev . &amp;&amp;
-make &amp;&amp;
-@y
-# Build viewer
-cmake -G "Unix Makefiles"         \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -Wno-dev . &amp;&amp;
-make &amp;&amp;
-@z
-
-@x
-# Build server
-pushd unix/xserver &amp;&amp;
-  autoreconf -fiv  &amp;&amp;
-@y
-# Build server
-pushd unix/xserver &amp;&amp;
-  autoreconf -fiv  &amp;&amp;
-@z
-
-@x
-  CPPFLAGS="-I/usr/include/drm"       \
-  ./configure $XORG_CONFIG            \
-      --disable-xwayland    --disable-dri        --disable-dmx         \
-      --disable-xorg        --disable-xnest      --disable-xvfb        \
-      --disable-xwin        --disable-xephyr     --disable-kdrive      \
-      --disable-devel-docs  --disable-config-hal --disable-config-udev \
-      --disable-unit-tests  --disable-selective-werror                 \
-      --disable-static      --enable-dri3                              \
-      --without-dtrace      --enable-dri2        --enable-glx          \
-      --with-pic &amp;&amp;
-  make  &amp;&amp;
-popd</userinput></screen>
-@y
-  CPPFLAGS="-I/usr/include/drm"       \
-  ./configure $XORG_CONFIG            \
-      --disable-xwayland    --disable-dri        --disable-dmx         \
-      --disable-xorg        --disable-xnest      --disable-xvfb        \
-      --disable-xwin        --disable-xephyr     --disable-kdrive      \
-      --disable-devel-docs  --disable-config-hal --disable-config-udev \
-      --disable-unit-tests  --disable-selective-werror                 \
-      --disable-static      --enable-dri3                              \
-      --without-dtrace      --enable-dri2        --enable-glx          \
-      --with-pic &amp;&amp;
-  make  &amp;&amp;
-popd</userinput></screen>
 @z
 
 @x
@@ -474,28 +310,6 @@ popd</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>#Install viewer
-make install &amp;&amp;
-@y
-<screen role="root"><userinput>#Install viewer
-make install &amp;&amp;
-@z
-
-@x
-#Install server
-( cd unix/xserver/hw/vnc &amp;&amp; make install ) &amp;&amp;
-@y
-#Install server
-( cd unix/xserver/hw/vnc &amp;&amp; make install ) &amp;&amp;
-@z
-
-@x
-[ -e /usr/bin/Xvnc ] || ln -svf $XORG_PREFIX/bin/Xvnc /usr/bin/Xvnc</userinput></screen>
-@y
-[ -e /usr/bin/Xvnc ] || ln -svf $XORG_PREFIX/bin/Xvnc /usr/bin/Xvnc</userinput></screen>
-@z
-
-@x
    <para revision="sysv">
      Finally, modify the PAM file to be compatible with elogind:
    </para>
@@ -503,64 +317,6 @@ make install &amp;&amp;
    <para revision="sysv">
      Finally, modify the PAM file to be compatible with elogind:
    </para>
-@z
-
-@x
-<screen role="root" revision="sysv"><userinput>sed -i 's/pam_systemd.so/pam_elogind.so/' /etc/pam.d/tigervnc</userinput></screen>
-@y
-<screen role="root" revision="sysv"><userinput>sed -i 's/pam_systemd.so/pam_elogind.so/' /etc/pam.d/tigervnc</userinput></screen>
-@z
-
-@x
-<!-- These are installed as part of 'make install' for the client.
-    <para>
-      Finally, create a menu entry.  As the
-      <systemitem class="username">root</systemitem> user:
-    </para>
-@y
-<!-- These are installed as part of 'make install' for the client.
-    <para>
-      Finally, create a menu entry.  As the
-      <systemitem class="username">root</systemitem> user:
-    </para>
-@z
-
-@x
-<screen role="root"><userinput>cat &gt; /usr/share/applications/vncviewer.desktop &lt;&lt; "EOF"
-<literal>[Desktop Entry]
-Type=Application
-Name=TigerVNC Viewer
-Comment=VNC client
-Exec=/usr/bin/vncviewer
-Icon=tigervnc
-Terminal=false
-StartupNotify=false
-Categories=Network;RemoteAccess;</literal>
-EOF
-@y
-<screen role="root"><userinput>cat &gt; /usr/share/applications/vncviewer.desktop &lt;&lt; "EOF"
-<literal>[Desktop Entry]
-Type=Application
-Name=TigerVNC Viewer
-Comment=VNC client
-Exec=/usr/bin/vncviewer
-Icon=tigervnc
-Terminal=false
-StartupNotify=false
-Categories=Network;RemoteAccess;</literal>
-EOF
-@z
-
-@x
-install -vm644 media/icons/tigervnc_24.png /usr/share/pixmaps &amp;&amp;
-ln -sfv tigervnc_24.png /usr/share/pixmaps/tigervnc.png</userinput></screen>
--->
-  </sect2>
-@y
-install -vm644 media/icons/tigervnc_24.png /usr/share/pixmaps &amp;&amp;
-ln -sfv tigervnc_24.png /usr/share/pixmaps/tigervnc.png</userinput></screen>
--->
-  </sect2>
 @z
 
 @x
@@ -614,12 +370,6 @@ ln -sfv tigervnc_24.png /usr/share/pixmaps/tigervnc.png</userinput></screen>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
   <sect2 role="configuration">
     <title>Configuring Tigervnc</title>
 @y
@@ -658,14 +408,6 @@ ln -sfv tigervnc_24.png /usr/share/pixmaps/tigervnc.png</userinput></screen>
 @z
 
 @x
-<screen role="root" revision='sysv'><userinput>install -m755 --owner=root ../vncserver /usr/bin &amp;&amp;
-cp ../vncserver.1 /usr/share/man/man1</userinput></screen>
-@y
-<screen role="root" revision='sysv'><userinput>install -m755 --owner=root ../vncserver /usr/bin &amp;&amp;
-cp ../vncserver.1 /usr/share/man/man1</userinput></screen>
-@z
-
-@x
     <para revision='sysv'>
       Using the previous procedures, the user specific configuration files of
       vncserver reside in the <filename class='directory'>.vnc</filename>
@@ -687,18 +429,6 @@ cp ../vncserver.1 /usr/share/man/man1</userinput></screen>
       will try to start an xterm in a twm session.  An example
       <filename>xstartup</filename> would be:
     </para>
-@z
-
-@x
-<screen revision='sysv'>#!/bin/sh
-[ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup
-[ -r $HOME/.Xresources ] &amp;&amp; xrdb $HOME/.Xresources
-startlxde &amp;</screen>
-@y
-<screen revision='sysv'>#!/bin/sh
-[ -x /etc/vnc/xstartup ] &amp;&amp; exec /etc/vnc/xstartup
-[ -r $HOME/.Xresources ] &amp;&amp; xrdb $HOME/.Xresources
-startlxde &amp;</screen>
 @z
 
 @x
@@ -740,15 +470,6 @@ startlxde &amp;</screen>
 @z
 
 @x
-    <!--
-    <note revision="systemd">
-      <para>
-        This section is optional and is only useful if you want to have VNC
-        sessions launch on system startup. Both configuration methods can
-        coexist on the same system.
-      </para>
-    </note>
-    -->
     <para revision="systemd">
       On systemd systems, another method of configuration is available.
       This configuration provides the added benefit of making tigervnc
@@ -759,15 +480,6 @@ startlxde &amp;</screen>
       in this fashion, follow these instructions.
     </para>
 @y
-    <!--
-    <note revision="systemd">
-      <para>
-        This section is optional and is only useful if you want to have VNC
-        sessions launch on system startup. Both configuration methods can
-        coexist on the same system.
-      </para>
-    </note>
-    -->
     <para revision="systemd">
       On systemd systems, another method of configuration is available.
       This configuration provides the added benefit of making tigervnc
@@ -792,14 +504,6 @@ startlxde &amp;</screen>
 @z
 
 @x
-<screen role="root" revision="systemd"><userinput>install -vdm755 /etc/X11/tigervnc &amp;&amp;
-install -v -m755 ../Xsession /etc/X11/tigervnc</userinput></screen>
-@y
-<screen role="root" revision="systemd"><userinput>install -vdm755 /etc/X11/tigervnc &amp;&amp;
-install -v -m755 ../Xsession /etc/X11/tigervnc</userinput></screen>
-@z
-
-@x
     <para revision="systemd">
       Next, set up a user mapping in
       <filename>/etc/tigervnc/vncserver.users</filename>. This tells the VNC
@@ -813,12 +517,6 @@ install -v -m755 ../Xsession /etc/X11/tigervnc</userinput></screen>
       Server which session is allocated to a user.
       <!-- For example: :1=renodr will assign 'renodr' to :1 -->
     </para>
-@z
-
-@x
-<screen role="root" revision="systemd"><userinput>echo ":1=$(whoami)" >> /etc/tigervnc/vncserver.users</userinput></screen>
-@y
-<screen role="root" revision="systemd"><userinput>echo ":1=$(whoami)" >> /etc/tigervnc/vncserver.users</userinput></screen>
 @z
 
 @x
@@ -840,36 +538,6 @@ install -v -m755 ../Xsession /etc/X11/tigervnc</userinput></screen>
 @z
 
 @x
-<screen revision="systemd"><userinput>install -vdm 755 ~/.vnc &amp;&amp;
-cat &gt; ~/.vnc/config &lt;&lt; EOF
-<literal># Begin ~/.vnc/config
-# The session must match one listed in /usr/share/xsessions.
-# Ensure that there are no spaces at the end of the lines.
-@y
-<screen revision="systemd"><userinput>install -vdm 755 ~/.vnc &amp;&amp;
-cat &gt; ~/.vnc/config &lt;&lt; EOF
-<literal># Begin ~/.vnc/config
-# The session must match one listed in /usr/share/xsessions.
-# Ensure that there are no spaces at the end of the lines.
-@z
-
-@x
-session=LXDE
-geometry=1024x768
-@y
-session=LXDE
-geometry=1024x768
-@z
-
-@x
-# End ~/.vnc/config</literal>
-EOF</userinput></screen>
-@y
-# End ~/.vnc/config</literal>
-EOF</userinput></screen>
-@z
-
-@x
     <para revision="systemd">
       To start the VNC Server, run the following command:
     </para>
@@ -880,12 +548,6 @@ EOF</userinput></screen>
 @z
 
 @x
-<screen role="root" revision="systemd"><userinput>systemctl start vncserver@:1</userinput></screen>
-@y
-<screen role="root" revision="systemd"><userinput>systemctl start vncserver@:1</userinput></screen>
-@z
-
-@x
     <para revision="systemd">
       To start the VNC Server when the system boots, run the following command:
     </para>
@@ -893,18 +555,6 @@ EOF</userinput></screen>
     <para revision="systemd">
       To start the VNC Server when the system boots, run the following command:
     </para>
-@z
-
-@x
-<screen role="root" revision="systemd"><userinput>systemctl enable vncserver@:1</userinput></screen>
-@y
-<screen role="root" revision="systemd"><userinput>systemctl enable vncserver@:1</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
 
 @x
