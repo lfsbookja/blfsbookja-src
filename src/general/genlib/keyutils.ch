@@ -101,11 +101,19 @@
 @x
       If <xref linkend='lsb-tools'/> is not installed, the test suite will
       output some lines complaining the <command>lsb_release</command>
-      command not available but it won't affect the test result.
+      command not available but it won't affect the test result.  One test
+      named <literal>TRY ADDING ASYMMETRIC KEYS</literal> is known to fail
+      due to the removal of the support for SHA1 with RSA signature
+      algorithm from Linux kernel version 6.7 <!-- commit 16ab7cb5825f -->
+      or newer.
 @y
       If <xref linkend='lsb-tools'/> is not installed, the test suite will
       output some lines complaining the <command>lsb_release</command>
-      command not available but it won't affect the test result.
+      command not available but it won't affect the test result.  One test
+      named <literal>TRY ADDING ASYMMETRIC KEYS</literal> is known to fail
+      due to the removal of the support for SHA1 with RSA signature
+      algorithm from Linux kernel version 6.7 <!-- commit 16ab7cb5825f -->
+      or newer.
 @z
 
 @x
