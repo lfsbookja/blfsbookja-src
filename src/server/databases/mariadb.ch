@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY mariadb-buildsize     "2.3 GB (719 MB installed)">
+  <!ENTITY mariadb-buildsize     "1.9 GB (415 MB installed)">
   <!ENTITY mariadb-time          "8.7 SBU (with parallelism=4, add 0.3 SBU for tests)">
 @y
-  <!ENTITY mariadb-buildsize     "2.3 GB (719 MB がインストールされる)">
+  <!ENTITY mariadb-buildsize     "1.9 GB (415 MB がインストールされる)">
   <!ENTITY mariadb-time          "8.7 SBU (with parallelism=4, add 0.3 SBU for tests)">
 @z
 

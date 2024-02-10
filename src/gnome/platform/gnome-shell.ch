@@ -107,8 +107,9 @@
       <xref linkend="desktop-file-utils"/>,
       <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-bluetooth"/>,
-      <xref linkend="gst10-plugins-base"/>, and
-      <xref linkend="NetworkManager"/>
+      <xref linkend="gst10-plugins-base"/>,
+      <xref linkend="NetworkManager"/>, and
+      <xref linkend="power-profiles-daemon"/> (for laptops)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -117,7 +118,8 @@
       <xref linkend="gnome-autoar"/>,
       <xref linkend="gnome-bluetooth"/>,
       <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="NetworkManager"/>
+      <xref linkend="NetworkManager"/>,
+      <xref linkend="power-profiles-daemon"/> (for laptops)
     </para>
 @z
 

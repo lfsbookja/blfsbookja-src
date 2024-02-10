@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libhandy1-buildsize     "27 MB (with tests)">
+  <!ENTITY libhandy1-buildsize     "24 MB (with tests)">
   <!ENTITY libhandy1-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY libhandy1-buildsize     "27 MB（テスト込み）">
+  <!ENTITY libhandy1-buildsize     "24 MB（テスト込み）">
   <!ENTITY libhandy1-time          "0.1 SBU（テスト込み）">
 @z
 

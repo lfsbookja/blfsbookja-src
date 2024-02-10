@@ -76,13 +76,15 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="cython"/> and
+        <xref linkend="cython"/>,
+        <xref linkend="meson_python"/>, and
         <xref linkend="pyproject-metadata"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
         <xref linkend="cython"/>,
+        <xref linkend="meson_python"/>,
         <xref linkend="pyproject-metadata"/>
       </para>
 @z
@@ -107,7 +109,8 @@
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
         <xref linkend="attrs"/>,
-        <xref linkend="pytest"/>, and
+        <xref linkend="pytest"/>,
+        <xref linkend="pytz"/>, and
         <ulink url="https://pypi.org/project/hypothesis/">hypothesis</ulink>
       </para>
 @y
@@ -115,6 +118,7 @@
       <para role="optional">
         <xref linkend="attrs"/>,
         <xref linkend="pytest"/>,
+        <xref linkend="pytz"/>,
         <ulink url="https://pypi.org/project/hypothesis/">hypothesis</ulink>
       </para>
 @z

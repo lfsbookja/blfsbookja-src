@@ -126,8 +126,9 @@
     <xref linkend="libpcap"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="lm_sensors"/>,
-    <xref linkend="oxygen-icons"/>, and
-    <xref linkend="pciutils"/>
+    <xref linkend="oxygen-icons"/>, 
+    <xref linkend="pciutils"/>, and
+    <xref linkend="power-profiles-daemon"/> (for laptops)
   </para>
 @y
   <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -140,8 +141,9 @@
     <xref linkend="libpcap"/>,
     <xref linkend="linux-pam"/>,
     <xref linkend="lm_sensors"/>,
-    <xref linkend="oxygen-icons"/>,
-    <xref linkend="pciutils"/>
+    <xref linkend="oxygen-icons"/>, 
+    <xref linkend="pciutils"/>,
+    <xref linkend="power-profiles-daemon"/> (for laptops)
   </para>
 @z
 
