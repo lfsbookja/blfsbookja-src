@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gstreamer10-buildsize     "48 MB (with tests)">
+  <!ENTITY gstreamer10-buildsize     "47 MB (with tests)">
   <!ENTITY gstreamer10-time          "0.4 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gstreamer10-buildsize     "48 MB (with tests)">
+  <!ENTITY gstreamer10-buildsize     "47 MB (with tests)">
   <!ENTITY gstreamer10-time          "0.4 SBU (Using parallelism=4; with tests)">
 @z
 

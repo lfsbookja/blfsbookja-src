@@ -172,24 +172,24 @@
           exiv2
         </seg>
         <seg>
-          libexiv2.so and
-          libexiv2-xmp.a
+          libexiv2.so <!-- and
+          libexiv2-xmp.a -->
         </seg>
         <seg>
-          /usr/include/exiv2 <!--and 
-          /usr/share/exiv2 -->
+          /usr/include/exiv2 and
+          /usr/lib/cmake/exiv2
         </seg>
 @y
         <seg>
           exiv2
         </seg>
         <seg>
-          libexiv2.so,
-          libexiv2-xmp.a
+          libexiv2.so <!-- and
+          libexiv2-xmp.a -->
         </seg>
         <seg>
-          /usr/include/exiv2 <!--and 
-          /usr/share/exiv2 -->
+          /usr/include/exiv2,
+          /usr/lib/cmake/exiv2
         </seg>
 @z
 

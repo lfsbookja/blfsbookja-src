@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gcr4-buildsize     "22 MB (with tests)">
+  <!ENTITY gcr4-buildsize     "29 MB (with tests)">
   <!ENTITY gcr4-time          "0.1 SBU (with tests; both using parallelism=4)">
 @y
-  <!ENTITY gcr4-buildsize     "22 MB (テスト込み)">
+  <!ENTITY gcr4-buildsize     "29 MB (テスト込み)">
   <!ENTITY gcr4-time          "0.1 SBU (テスト込み; いずれも parallelism=4 利用)">
 @z
 

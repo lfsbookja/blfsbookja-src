@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY mutter-buildsize     "100 MB (with tests)">
+  <!ENTITY mutter-buildsize     "70 MB (with tests)">
   <!ENTITY mutter-time          "0.7 SBU (Using parallelism=4; add 1.4 SBU for tests)">
 @y
-  <!ENTITY mutter-buildsize     "100 MB (with tests)">
+  <!ENTITY mutter-buildsize     "70 MB (with tests)">
   <!ENTITY mutter-time          "0.7 SBU (Using parallelism=4; add 1.4 SBU for tests)">
 @z
 

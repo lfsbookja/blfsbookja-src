@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gst10-plugins-ugly-buildsize     "9.0 MB (with tests)">
+  <!ENTITY gst10-plugins-ugly-buildsize     "9.6 MB (with tests)">
   <!ENTITY gst10-plugins-ugly-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY gst10-plugins-ugly-buildsize     "9.0 MB (テスト込み)">
+  <!ENTITY gst10-plugins-ugly-buildsize     "9.6 MB (テスト込み)">
   <!ENTITY gst10-plugins-ugly-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
 @z
 
