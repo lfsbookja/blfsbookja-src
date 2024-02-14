@@ -4,107 +4,67 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gnumeric-buildsize     "300 MB (add 13 MB for tests)">
-  <!ENTITY gnumeric-time          "0.8 SBU (Using parallelism=4; add 4.0 SBU for tests)">
+  <!ENTITY gnumeric-buildsize     "244 MB (add 4 MB for tests)">
+  <!ENTITY gnumeric-time          "0.8 SBU (add 1.7 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY gnumeric-buildsize     "300 MB (add 13 MB for tests)">
-  <!ENTITY gnumeric-time          "0.8 SBU (Using parallelism=4; add 4.0 SBU for tests)">
+  <!ENTITY gnumeric-buildsize     "244 MB (add 4 MB for tests)">
+  <!ENTITY gnumeric-time          "0.8 SBU (add 1.7 SBU for tests; both using parallelism=4)">
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to Gnumeric</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Gnumeric</title>
 @z
 
 @x
-    <para>
       The <application>Gnumeric</application> package contains a
       spreadsheet program which is useful for mathematical analysis.
-    </para>
 @y
-    <para>
       The <application>Gnumeric</application> package contains a
       spreadsheet program which is useful for mathematical analysis.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&gnumeric-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&gnumeric-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &gnumeric-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &gnumeric-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &gnumeric-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &gnumeric-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&gnumeric-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&gnumeric-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&gnumeric-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&gnumeric-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &gnumeric-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &gnumeric-md5sum;
+@z
+
+@x
           Download size: &gnumeric-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &gnumeric-size;
+@z
+
+@x
           Estimated disk space required: &gnumeric-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &gnumeric-buildsize;
+@z
+
+@x
           Estimated build time: &gnumeric-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &gnumeric-time;
 @z
 
 @x
@@ -180,155 +140,74 @@
 @z
 
 @x
-<!--  Now in "recommendended runtime deps". Keeping as a comment because it
-      is easier to revert
-   <note>
-      <para>
-        Though only a run-time dependency, if you don't install the
-        <xref linkend="yelp"/> package, the built-in help functionality in
-        <application>Gnumeric</application> will not be available.
-      </para>
-    </note>
--->
-  </sect2>
-@y
-<!--  Now in "recommendended runtime deps". Keeping as a comment because it
-      is easier to revert
-   <note>
-      <para>
-        Though only a run-time dependency, if you don't install the
-        <xref linkend="yelp"/> package, the built-in help functionality in
-        <application>Gnumeric</application> will not be available.
-      </para>
-    </note>
--->
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of Gnumeric</title>
 @y
-  <sect2 role="installation">
     <title>Installation of Gnumeric</title>
 @z
 
 @x
-    <para>
       Install <application>Gnumeric</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>Gnumeric</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>./configure --prefix=/usr  &amp;&amp;
-make</userinput></screen>
-@y
-<screen><userinput>./configure --prefix=/usr  &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package must be installed before the test suite is run.
-    </para>
 @y
-    <para>
       This package must be installed before the test suite is run.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-    <para>
       To run the tests, issue <command>make check</command>.  Tests should be
       run from an active X session, and <xref linkend="dconf"/> should be
-      installed to prevent some failures.  Eight tests are known to fail
-      related to valgrind.
-    </para>
+      installed to prevent some failures.  Two tests are known to fail.
+      Additional failures may occur if valgrind is installed.
 @y
-    <para>
       To run the tests, issue <command>make check</command>.  Tests should be
       run from an active X session, and <xref linkend="dconf"/> should be
-      installed to prevent some failures.  Eight tests are known to fail
-      related to valgrind.
-    </para>
+      installed to prevent some failures.  Two tests are known to fail.
+      Additional failures may occur if valgrind is installed.
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <option>--enable-pdfdocs</option>: Use this switch if you have
       installed dblatex and wish to create PDF docs.
-    </para>
 @y
-    <para>
       <option>--enable-pdfdocs</option>: Use this switch if you have
       installed dblatex and wish to create PDF docs.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           gnumeric (symlink), gnumeric-&gnumeric-version;, ssconvert,
           ssdiff, ssgrep, and ssindex
@@ -343,10 +222,7 @@ make</userinput></screen>
           /usr/share/gnumeric, and
           /usr/share/help/{C,cs,de,es}/gnumeric
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           gnumeric (symlink), gnumeric-&gnumeric-version;, ssconvert,
           ssdiff, ssgrep, and ssindex
@@ -361,218 +237,56 @@ make</userinput></screen>
           /usr/share/gnumeric, and
           /usr/share/help/{C,cs,de,es}/gnumeric
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="gnumeric-prog">
-        <term><command>gnumeric</command></term>
-        <listitem>
-          <para>
+@x gnumeric
             is a symlink to <command>gnumeric-&gnumeric-version;</command>
-          </para>
-          <indexterm zone="gnumeric gnumeric-prog">
-            <primary sortas="b-gnumeric">gnumeric</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="gnumeric-prog">
-        <term><command>gnumeric</command></term>
-        <listitem>
-          <para>
             is a symlink to <command>gnumeric-&gnumeric-version;</command>
-          </para>
-          <indexterm zone="gnumeric gnumeric-prog">
-            <primary sortas="b-gnumeric">gnumeric</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="gnumeric-1">
-        <term><command>gnumeric-&gnumeric-version;</command></term>
-        <listitem>
-          <para>
+@x gnumeric-&gnumeric-version;
             is <application>GNOME</application>'s spreadsheet application
-          </para>
-          <indexterm zone="gnumeric gnumeric-1">
-            <primary sortas="b-gnumeric-&gnumeric-version;">gnumeric-&gnumeric-version;</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="gnumeric-1">
-        <term><command>gnumeric-&gnumeric-version;</command></term>
-        <listitem>
-          <para>
             is <application>GNOME</application>'s spreadsheet application
-          </para>
-          <indexterm zone="gnumeric gnumeric-1">
-            <primary sortas="b-gnumeric-&gnumeric-version;">gnumeric-&gnumeric-version;</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="ssconvert">
-        <term><command>ssconvert</command></term>
-        <listitem>
-          <para>
+@x ssconvert
             is a command line utility to convert spreadsheet files
             between various spreadsheet file formats
-          </para>
-          <indexterm zone="gnumeric ssconvert">
-            <primary sortas="b-ssconvert">ssconvert</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="ssconvert">
-        <term><command>ssconvert</command></term>
-        <listitem>
-          <para>
             is a command line utility to convert spreadsheet files
             between various spreadsheet file formats
-          </para>
-          <indexterm zone="gnumeric ssconvert">
-            <primary sortas="b-ssconvert">ssconvert</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="ssdiff">
-        <term><command>ssdiff</command></term>
-        <listitem>
-          <para>
+@x ssdiff
             is a command line utility to compare two spreadsheets
-          </para>
-          <indexterm zone="gnumeric ssdiff">
-            <primary sortas="b-ssdiff">ssdiff</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="ssdiff">
-        <term><command>ssdiff</command></term>
-        <listitem>
-          <para>
             is a command line utility to compare two spreadsheets
-          </para>
-          <indexterm zone="gnumeric ssdiff">
-            <primary sortas="b-ssdiff">ssdiff</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="ssgrep">
-        <term><command>ssgrep</command></term>
-        <listitem>
-          <para>
+@x ssgrep
             is a command line utility to search spreadsheets for strings
-          </para>
-          <indexterm zone="gnumeric ssgrep">
-            <primary sortas="b-ssgrep">ssindex</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="ssgrep">
-        <term><command>ssgrep</command></term>
-        <listitem>
-          <para>
             is a command line utility to search spreadsheets for strings
-          </para>
-          <indexterm zone="gnumeric ssgrep">
-            <primary sortas="b-ssgrep">ssindex</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="ssindex">
-        <term><command>ssindex</command></term>
-        <listitem>
-          <para>
+@x ssindex
             is a command line utility to generate index data for
             spreadsheet files
-          </para>
-          <indexterm zone="gnumeric ssindex">
-            <primary sortas="b-ssindex">ssindex</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="ssindex">
-        <term><command>ssindex</command></term>
-        <listitem>
-          <para>
             is a command line utility to generate index data for
             spreadsheet files
-          </para>
-          <indexterm zone="gnumeric ssindex">
-            <primary sortas="b-ssindex">ssindex</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="libspreadsheet">
-        <term><filename class="libraryfile">libspreadsheet.so</filename></term>
-        <listitem>
-          <para>
+@x libspreadsheet.so
             contains the gnumeric API functions
-          </para>
-          <indexterm zone="gnumeric libspreadsheet">
-            <primary sortas="c-libspreadsheet">libspreadsheet.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
 @y
-      <varlistentry id="libspreadsheet">
-        <term><filename class="libraryfile">libspreadsheet.so</filename></term>
-        <listitem>
-          <para>
             contains the gnumeric API functions
-          </para>
-          <indexterm zone="gnumeric libspreadsheet">
-            <primary sortas="c-libspreadsheet">libspreadsheet.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

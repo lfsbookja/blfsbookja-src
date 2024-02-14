@@ -67,18 +67,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="babl"/>,
-      <xref linkend="json-glib"/>,
+      <xref linkend="babl"/> and 
+      <xref linkend="json-glib"/>
+      <!-- These are marked obsolete - no effect in meson_options.txt
       <xref linkend="libjpeg"/>, and
-      <xref linkend="libpng"/>
+      <xref linkend="libpng"/>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="babl"/>,
-      <xref linkend="json-glib"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>
+      <xref linkend="babl"/>, 
+      <xref linkend="json-glib"/>
+      <!-- These are marked obsolete - no effect in meson_options.txt
+      <xref linkend="libjpeg"/>, and
+      <xref linkend="libpng"/>-->
     </para>
 @z
 

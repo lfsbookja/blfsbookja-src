@@ -216,24 +216,12 @@
       <command>make test -k |&amp; tee test.log</command>.  If some test
       fails, the list of failed tests can be shown via
       <command>grep '^not ok' test.log | grep -v TODO</command>.
-      <phrase revision='systemd'>One test named <literal>start and stop
-      Linux/systemd maintenance</literal> is known to fail if the current
-      login session is not started after rebuilding
-      <xref linkend='systemd'/> with <xref linkend='linux-pam'/>
-      support, or it's a SSH session but the SSH server is not configured
-      with <option>UsePAM</option> enabled.</phrase>
 @y
       テストスイートは並行モードでの実行も可能です。
       ビルド結果をテストする場合は <command>make test -k |&amp; tee test.log</command> を実行します。
       If some test
       fails, the list of failed tests can be shown via
       <command>grep '^not ok' test.log | grep -v TODO</command>.
-      <phrase revision='systemd'>One test named <literal>start and stop
-      Linux/systemd maintenance</literal> is known to fail if the current
-      login session is not started after rebuilding
-      <xref linkend='systemd'/> with <xref linkend='linux-pam'/>
-      support, or it's a SSH session but the SSH server is not configured
-      with <option>UsePAM</option> enabled.</phrase>
 @z
 
 @x

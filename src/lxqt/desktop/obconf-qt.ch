@@ -88,13 +88,7 @@
 @z
 
 @x
-       First, fix the package to build with <xref linkend="libxml2"/>:
-@y
-       First, fix the package to build with <xref linkend="libxml2"/>:
-@z
-
-@x
-       Now install <application>obconf-qt</application> by running the following
+       Install <application>obconf-qt</application> by running the following
        commands:
 @y
        以下のコマンドを実行して <application>obconf-qt</application> をビルドします。

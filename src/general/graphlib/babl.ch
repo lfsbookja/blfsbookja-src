@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY babl-buildsize     "12 MB (with tests)">
+  <!ENTITY babl-buildsize     "13 MB (with tests)">
   <!ENTITY babl-time          "0.1 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY babl-buildsize     "12 MB (テスト込み)">
+  <!ENTITY babl-buildsize     "13 MB (テスト込み)">
   <!ENTITY babl-time          "0.1 SBU (parallelism=4 利用; テスト込み)">
 @z
 
