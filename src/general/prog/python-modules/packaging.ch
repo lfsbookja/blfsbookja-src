@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY packaging-download-http "https://files.pythonhosted.org/packages/source/p/packaging/packaging-&packaging-version;.tar.gz">
-  <!ENTITY packaging-download-ftp  " ">
-  <!ENTITY packaging-md5sum        "&packaging-md5sum;">
-  <!ENTITY packaging-size          "144 KB">
   <!ENTITY packaging-buildsize     "2.5 MB (add 28 MB for tests)">
   <!ENTITY packaging-time          "less than 0.1 SBU (0.2 SBU for tests)">
-]>
 @y
-  <!ENTITY packaging-download-http "https://files.pythonhosted.org/packages/source/p/packaging/packaging-&packaging-version;.tar.gz">
-  <!ENTITY packaging-download-ftp  " ">
-  <!ENTITY packaging-md5sum        "&packaging-md5sum;">
-  <!ENTITY packaging-size          "144 KB">
   <!ENTITY packaging-buildsize     "2.5 MB (add 28 MB for tests)">
   <!ENTITY packaging-time          "less than 0.1 SBU (0.2 SBU for tests)">
-]>
-@z
-
-@x
-  <sect2 id="packaging" xreflabel="packaging-&packaging-version;">
-@y
-  <sect2 id="packaging" xreflabel="packaging-&packaging-version;">
-@z
-
-@x
-    <title>Packaging-&packaging-version;</title>
-@y
-    <title>Packaging-&packaging-version;</title>
-@z
-
-@x
-    <indexterm zone="packaging">
-      <primary sortas="a-packaging">packaging</primary>
-    </indexterm>
-@y
-    <indexterm zone="packaging">
-      <primary sortas="a-packaging">packaging</primary>
-    </indexterm>
 @z
 
 @x
@@ -65,12 +33,6 @@
         one correct behaviour or benefit greatly from having a single shared
         implementation.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

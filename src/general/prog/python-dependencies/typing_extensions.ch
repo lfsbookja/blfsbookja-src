@@ -4,43 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY typing_extensions-download-http "https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extensions-&typing_extensions-version;.tar.gz">
-  <!ENTITY typing_extensions-download-ftp  " ">
-  <!ENTITY typing_extensions-md5sum        "&typing_extensions-md5sum;">
-  <!ENTITY typing_extensions-size          "47 KB">
-  <!ENTITY typing_extensions-buildsize     "528 KB">
   <!ENTITY typing_extensions-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY typing_extensions-download-http "https://files.pythonhosted.org/packages/source/t/typing_extensions/typing_extensions-&typing_extensions-version;.tar.gz">
-  <!ENTITY typing_extensions-download-ftp  " ">
-  <!ENTITY typing_extensions-md5sum        "&typing_extensions-md5sum;">
-  <!ENTITY typing_extensions-size          "47 KB">
-  <!ENTITY typing_extensions-buildsize     "528 KB">
   <!ENTITY typing_extensions-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect2 id="typing_extensions" xreflabel="typing_extensions-&typing_extensions-version;">
-@y
-  <sect2 id="typing_extensions" xreflabel="typing_extensions-&typing_extensions-version;">
-@z
-
-@x
-    <title>Typing_extensions-&typing_extensions-version;</title>
-@y
-    <title>Typing_extensions-&typing_extensions-version;</title>
-@z
-
-@x
-    <indexterm zone="typing_extensions">
-      <primary sortas="a-typing_extensions">typing_extensions</primary>
-    </indexterm>
-@y
-    <indexterm zone="typing_extensions">
-      <primary sortas="a-typing_extensions">typing_extensions</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +29,6 @@
         using new type system features not yet defined on the Python
         version in use on the system.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

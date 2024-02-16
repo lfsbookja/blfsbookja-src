@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY requests-download-http "https://files.pythonhosted.org/packages/source/r/requests/requests-&requests-version;.tar.gz">
-  <!ENTITY requests-download-ftp  " ">
-  <!ENTITY requests-md5sum        "&requests-md5sum;">
-  <!ENTITY requests-size          "108 KB">
   <!ENTITY requests-buildsize     "1.4 MB (add 127 MB for tests)">
   <!ENTITY requests-time          "less than 0.1 SBU (0.7 SBU for tests)">
-]>
 @y
-  <!ENTITY requests-download-http "https://files.pythonhosted.org/packages/source/r/requests/requests-&requests-version;.tar.gz">
-  <!ENTITY requests-download-ftp  " ">
-  <!ENTITY requests-md5sum        "&requests-md5sum;">
-  <!ENTITY requests-size          "108 KB">
   <!ENTITY requests-buildsize     "1.4 MB (add 127 MB for tests)">
   <!ENTITY requests-time          "less than 0.1 SBU (0.7 SBU for tests)">
-]>
-@z
-
-@x
-  <sect2 id="requests" xreflabel="requests-&requests-version;">
-@y
-  <sect2 id="requests" xreflabel="requests-&requests-version;">
-@z
-
-@x
-    <title>Requests-&requests-version;</title>
-@y
-    <title>Requests-&requests-version;</title>
-@z
-
-@x
-    <indexterm zone="requests">
-      <primary sortas="a-requests">requests</primary>
-    </indexterm>
-@y
-    <indexterm zone="requests">
-      <primary sortas="a-requests">requests</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +31,6 @@
         simple HTTP library for Python, built for human beings. It allows
         sending HTTP/1.1 requests extremely easily.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

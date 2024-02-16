@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY urllib3-download-http "https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-&urllib3-version;.tar.gz">
-  <!ENTITY urllib3-download-ftp  " ">
-  <!ENTITY urllib3-md5sum        "&urllib3-md5sum;">
-  <!ENTITY urllib3-size          "272 KB">
   <!ENTITY urllib3-buildsize     "3.2 MB (add 49 MB for tests)">
   <!ENTITY urllib3-time          "less than 0.1 SBU (1.6 SBU for tests)">
-]>
 @y
-  <!ENTITY urllib3-download-http "https://files.pythonhosted.org/packages/source/u/urllib3/urllib3-&urllib3-version;.tar.gz">
-  <!ENTITY urllib3-download-ftp  " ">
-  <!ENTITY urllib3-md5sum        "&urllib3-md5sum;">
-  <!ENTITY urllib3-size          "272 KB">
   <!ENTITY urllib3-buildsize     "3.2 MB (add 49 MB for tests)">
   <!ENTITY urllib3-time          "less than 0.1 SBU (1.6 SBU for tests)">
-]>
-@z
-
-@x
-  <sect2 id="urllib3" xreflabel="urllib3-&urllib3-version;">
-@y
-  <sect2 id="urllib3" xreflabel="urllib3-&urllib3-version;">
-@z
-
-@x
-    <title>Urllib3-&urllib3-version;</title>
-@y
-    <title>Urllib3-&urllib3-version;</title>
-@z
-
-@x
-    <indexterm zone="urllib3">
-      <primary sortas="a-urllib3">urllib3</primary>
-    </indexterm>
-@y
-    <indexterm zone="urllib3">
-      <primary sortas="a-urllib3">urllib3</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +31,6 @@
         user-friendly HTTP client for Python. It brings many critical
         features that are missing from the Python standard libraries.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

@@ -4,43 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY py-download-http "https://files.pythonhosted.org/packages/source/p/py/py-&py-version;.tar.gz">
-  <!ENTITY py-download-ftp  " ">
-  <!ENTITY py-md5sum        "&py-md5sum;">
-  <!ENTITY py-size          "203 KB">
-  <!ENTITY py-buildsize     "2.8 MB">
   <!ENTITY py-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY py-download-http "https://files.pythonhosted.org/packages/source/p/py/py-&py-version;.tar.gz">
-  <!ENTITY py-download-ftp  " ">
-  <!ENTITY py-md5sum        "&py-md5sum;">
-  <!ENTITY py-size          "203 KB">
-  <!ENTITY py-buildsize     "2.8 MB">
   <!ENTITY py-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect2 id="py" xreflabel="py-&py-version;">
-@y
-  <sect2 id="py" xreflabel="py-&py-version;">
-@z
-
-@x
-    <title>Py-&py-version;</title>
-@y
-    <title>Py-&py-version;</title>
-@z
-
-@x
-    <indexterm zone="py">
-      <primary sortas="a-py">py</primary>
-    </indexterm>
-@y
-    <indexterm zone="py">
-      <primary sortas="a-py">py</primary>
-    </indexterm>
 @z
 
 @x
@@ -65,12 +31,6 @@
         deprecated and should be removed at some point in time, but part of
         it is still used in <application>Pytest</application>.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

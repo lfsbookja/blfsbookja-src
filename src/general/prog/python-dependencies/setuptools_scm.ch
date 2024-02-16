@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY setuptools_scm-download-http "https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-&setuptools_scm-version;.tar.gz">
-  <!ENTITY setuptools_scm-download-ftp  " ">
-  <!ENTITY setuptools_scm-md5sum        "&setuptools_scm-md5sum;">
-  <!ENTITY setuptools_scm-size          "70 KB">
   <!ENTITY setuptools_scm-buildsize     "1.6 MB (with tests)">
   <!ENTITY setuptools_scm-time          "less than 0.1 SBU (add 0.4 SBU for tests)">
-]>
 @y
-  <!ENTITY setuptools_scm-download-http "https://files.pythonhosted.org/packages/source/s/setuptools_scm/setuptools_scm-&setuptools_scm-version;.tar.gz">
-  <!ENTITY setuptools_scm-download-ftp  " ">
-  <!ENTITY setuptools_scm-md5sum        "&setuptools_scm-md5sum;">
-  <!ENTITY setuptools_scm-size          "70 KB">
   <!ENTITY setuptools_scm-buildsize     "1.6 MB (with tests)">
   <!ENTITY setuptools_scm-time          "less than 0.1 SBU (add 0.4 SBU for tests)">
-]>
-@z
-
-@x
-  <sect2 id="setuptools_scm" xreflabel="setuptools_scm-&setuptools_scm-version;">
-@y
-  <sect2 id="setuptools_scm" xreflabel="setuptools_scm-&setuptools_scm-version;">
-@z
-
-@x
-    <title>Setuptools_scm-&setuptools_scm-version;</title>
-@y
-    <title>Setuptools_scm-&setuptools_scm-version;</title>
-@z
-
-@x
-    <indexterm zone="setuptools_scm">
-      <primary sortas="a-setuptools_scm">setuptools_scm</primary>
-    </indexterm>
-@y
-    <indexterm zone="setuptools_scm">
-      <primary sortas="a-setuptools_scm">setuptools_scm</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +31,6 @@
         extract Python package versions from git or hg metadata instead
         of declaring them.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

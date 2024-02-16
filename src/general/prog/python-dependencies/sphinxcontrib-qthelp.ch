@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sc-qthelp-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcontrib-qthelp-&sc-qthelp-version;.tar.gz">
-  <!ENTITY sc-qthelp-download-ftp  " ">
-  <!ENTITY sc-qthelp-md5sum        "&sc-qthelp-md5sum;">
-  <!ENTITY sc-qthelp-size          "21 KB">
   <!ENTITY sc-qthelp-buildsize     "2.8 MB (with tests)">
   <!ENTITY sc-qthelp-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY sc-qthelp-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-qthelp/sphinxcontrib-qthelp-&sc-qthelp-version;.tar.gz">
-  <!ENTITY sc-qthelp-download-ftp  " ">
-  <!ENTITY sc-qthelp-md5sum        "&sc-qthelp-md5sum;">
-  <!ENTITY sc-qthelp-size          "21 KB">
   <!ENTITY sc-qthelp-buildsize     "2.8 MB (with tests)">
   <!ENTITY sc-qthelp-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="sc-qthelp" xreflabel="sphinxcontrib-qthelp-&sc-qthelp-version;">
-@y
-  <sect2 id="sc-qthelp" xreflabel="sphinxcontrib-qthelp-&sc-qthelp-version;">
-@z
-
-@x
-    <title>Sphinxcontrib-qthelp-&sc-qthelp-version;</title>
-@y
-    <title>Sphinxcontrib-qthelp-&sc-qthelp-version;</title>
-@z
-
-@x
-    <indexterm zone="sc-qthelp">
-      <primary sortas="a-sphinxcontrib-qthelp">sphinxcontrib-qthelp</primary>
-    </indexterm>
-@y
-    <indexterm zone="sc-qthelp">
-      <primary sortas="a-sphinxcontrib-qthelp">sphinxcontrib-qthelp</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +31,6 @@
         <application>Sphinx</application> extension which outputs QtHelp
         documents.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

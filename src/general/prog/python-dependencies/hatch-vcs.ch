@@ -3,57 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY hatch-vcs-download-http "https://files.pythonhosted.org/packages/source/h/hatch-vcs/hatch_vcs-&hatch-vcs-version;.tar.gz">
-  <!ENTITY hatch-vcs-download-ftp  " ">
-  <!ENTITY hatch-vcs-md5sum        "&hatch-vcs-md5sum;">
-  <!ENTITY hatch-vcs-size          "9.9 KB">
   <!ENTITY hatch-vcs-buildsize     "436 KB (with tests)">
   <!ENTITY hatch-vcs-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY hatch-vcs-download-http "https://files.pythonhosted.org/packages/source/h/hatch-vcs/hatch_vcs-&hatch-vcs-version;.tar.gz">
-  <!ENTITY hatch-vcs-download-ftp  " ">
-  <!ENTITY hatch-vcs-md5sum        "&hatch-vcs-md5sum;">
-  <!ENTITY hatch-vcs-size          "9.9 KB">
   <!ENTITY hatch-vcs-buildsize     "436 KB (with tests)">
   <!ENTITY hatch-vcs-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="hatch-vcs" xreflabel="hatch_vcs-&hatch-vcs-version;">
-@y
-  <sect2 id="hatch-vcs" xreflabel="hatch_vcs-&hatch-vcs-version;">
-@z
-
-@x
-    <title>Hatch_vcs-&hatch-vcs-version;</title>
-@y
-    <title>Hatch_vcs-&hatch-vcs-version;</title>
-@z
-
-@x
-    <indexterm zone="hatch-vcs">
-      <primary sortas="a-hatch_vcs">hatch_vcs</primary>
-    </indexterm>
-@y
-    <indexterm zone="hatch-vcs">
-      <primary sortas="a-hatch_vcs">hatch_vcs</primary>
-    </indexterm>
 @z
 
 @x
@@ -74,12 +29,6 @@
         <application>Hatch_vcs</application> is a Hatch plugin for versioning
         with several <xref linkend="gVCS"/>.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

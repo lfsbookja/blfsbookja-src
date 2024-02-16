@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sc-htmlhelp-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp-&sc-htmlhelp-version;.tar.gz">
-  <!ENTITY sc-htmlhelp-download-ftp  " ">
-  <!ENTITY sc-htmlhelp-md5sum        "&sc-htmlhelp-md5sum;">
-  <!ENTITY sc-htmlhelp-size          "28 KB">
   <!ENTITY sc-htmlhelp-buildsize     "3.2 MB (add 26 MB for tests)">
   <!ENTITY sc-htmlhelp-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY sc-htmlhelp-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-htmlhelp/sphinxcontrib-htmlhelp-&sc-htmlhelp-version;.tar.gz">
-  <!ENTITY sc-htmlhelp-download-ftp  " ">
-  <!ENTITY sc-htmlhelp-md5sum        "&sc-htmlhelp-md5sum;">
-  <!ENTITY sc-htmlhelp-size          "28 KB">
   <!ENTITY sc-htmlhelp-buildsize     "3.2 MB (add 26 MB for tests)">
   <!ENTITY sc-htmlhelp-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="sc-htmlhelp" xreflabel="sphinxcontrib-htmlhelp-&sc-htmlhelp-version;">
-@y
-  <sect2 id="sc-htmlhelp" xreflabel="sphinxcontrib-htmlhelp-&sc-htmlhelp-version;">
-@z
-
-@x
-    <title>Sphinxcontrib-htmlhelp-&sc-htmlhelp-version;</title>
-@y
-    <title>Sphinxcontrib-htmlhelp-&sc-htmlhelp-version;</title>
-@z
-
-@x
-    <indexterm zone="sc-htmlhelp">
-      <primary sortas="a-sphinxcontrib-htmlhelp">sphinxcontrib-htmlhelp</primary>
-    </indexterm>
-@y
-    <indexterm zone="sc-htmlhelp">
-      <primary sortas="a-sphinxcontrib-htmlhelp">sphinxcontrib-htmlhelp</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +31,6 @@
         <application>Sphinx</application> extension which renders HTML
         help files.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

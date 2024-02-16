@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sc-devhelp-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib-devhelp-&sc-devhelp-version;.tar.gz">
-  <!ENTITY sc-devhelp-download-ftp  " ">
-  <!ENTITY sc-devhelp-md5sum        "&sc-devhelp-md5sum;">
-  <!ENTITY sc-devhelp-size          "17 KB">
   <!ENTITY sc-devhelp-buildsize     "2.7 MB (with tests)">
   <!ENTITY sc-devhelp-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY sc-devhelp-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-devhelp/sphinxcontrib-devhelp-&sc-devhelp-version;.tar.gz">
-  <!ENTITY sc-devhelp-download-ftp  " ">
-  <!ENTITY sc-devhelp-md5sum        "&sc-devhelp-md5sum;">
-  <!ENTITY sc-devhelp-size          "17 KB">
   <!ENTITY sc-devhelp-buildsize     "2.7 MB (with tests)">
   <!ENTITY sc-devhelp-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="sc-devhelp" xreflabel="sphinxcontrib-devhelp-&sc-devhelp-version;">
-@y
-  <sect2 id="sc-devhelp" xreflabel="sphinxcontrib-devhelp-&sc-devhelp-version;">
-@z
-
-@x
-    <title>Sphinxcontrib-devhelp-&sc-devhelp-version;</title>
-@y
-    <title>Sphinxcontrib-devhelp-&sc-devhelp-version;</title>
-@z
-
-@x
-    <indexterm zone="sc-devhelp">
-      <primary sortas="a-sphinxcontrib-devhelp">sphinxcontrib-devhelp</primary>
-    </indexterm>
-@y
-    <indexterm zone="sc-devhelp">
-      <primary sortas="a-sphinxcontrib-devhelp">sphinxcontrib-devhelp</primary>
-    </indexterm>
 @z
 
 @x
@@ -65,12 +33,6 @@
         <ulink url="https://wiki.gnome.org/Apps/Devhelp">Devhelp</ulink>
         documents.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

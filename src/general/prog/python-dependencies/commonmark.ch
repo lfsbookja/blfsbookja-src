@@ -3,57 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY commonmark-download-http "https://files.pythonhosted.org/packages/source/c/commonmark/commonmark-&commonmark-version;.tar.gz">
-  <!ENTITY commonmark-download-ftp  " ">
-  <!ENTITY commonmark-md5sum        "&commonmark-md5sum;">
-  <!ENTITY commonmark-size          "94 KB">
   <!ENTITY commonmark-buildsize     "1.3 MB (add 30 MB for tests)">
   <!ENTITY commonmark-time          "less than 0.1 SBU (0.1 SBU for tests)">
-]>
 @y
-  <!ENTITY commonmark-download-http "https://files.pythonhosted.org/packages/source/c/commonmark/commonmark-&commonmark-version;.tar.gz">
-  <!ENTITY commonmark-download-ftp  " ">
-  <!ENTITY commonmark-md5sum        "&commonmark-md5sum;">
-  <!ENTITY commonmark-size          "94 KB">
   <!ENTITY commonmark-buildsize     "1.3 MB (add 30 MB for tests)">
   <!ENTITY commonmark-time          "less than 0.1 SBU (0.1 SBU for tests)">
-]>
-@z
-
-@x
-  <sect2 id="commonmark" xreflabel="commonmark-&commonmark-version;">
-@y
-  <sect2 id="commonmark" xreflabel="commonmark-&commonmark-version;">
-@z
-
-@x
-    <title>Commonmark-&commonmark-version;</title>
-@y
-    <title>Commonmark-&commonmark-version;</title>
-@z
-
-@x
-    <indexterm zone="commonmark">
-      <primary sortas="a-commonmark">commonmark</primary>
-    </indexterm>
-@y
-    <indexterm zone="commonmark">
-      <primary sortas="a-commonmark">commonmark</primary>
-    </indexterm>
 @z
 
 @x
@@ -74,12 +29,6 @@
         <application>Commonmark</application> Python parser for the CommonMark
         Markdown specification.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

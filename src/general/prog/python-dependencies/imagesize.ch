@@ -3,57 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY imagesize-download-http "https://files.pythonhosted.org/packages/source/i/imagesize/imagesize-&imagesize-version;.tar.gz">
-  <!ENTITY imagesize-download-ftp  " ">
-  <!ENTITY imagesize-md5sum        "&imagesize-md5sum;">
-  <!ENTITY imagesize-size          "1.2 MB">
   <!ENTITY imagesize-buildsize     "1.8 MB (with tests)">
   <!ENTITY imagesize-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY imagesize-download-http "https://files.pythonhosted.org/packages/source/i/imagesize/imagesize-&imagesize-version;.tar.gz">
-  <!ENTITY imagesize-download-ftp  " ">
-  <!ENTITY imagesize-md5sum        "&imagesize-md5sum;">
-  <!ENTITY imagesize-size          "1.2 MB">
   <!ENTITY imagesize-buildsize     "1.8 MB (with tests)">
   <!ENTITY imagesize-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="imagesize" xreflabel="imagesize-&imagesize-version;">
-@y
-  <sect2 id="imagesize" xreflabel="imagesize-&imagesize-version;">
-@z
-
-@x
-    <title>Imagesize-&imagesize-version;</title>
-@y
-    <title>Imagesize-&imagesize-version;</title>
-@z
-
-@x
-    <indexterm zone="imagesize">
-      <primary sortas="a-imagesize">imagesize</primary>
-    </indexterm>
-@y
-    <indexterm zone="imagesize">
-      <primary sortas="a-imagesize">imagesize</primary>
-    </indexterm>
 @z
 
 @x
@@ -76,12 +31,6 @@
         headers and returns the image size and DPI. It works with
         JPEG/JPEG 2000/PNG/GIF/TIFF/SVG/Netpbm/WebP formats.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

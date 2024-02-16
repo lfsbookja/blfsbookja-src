@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY recommonmark-download-http "https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-&recommonmark-version;.tar.gz">
-  <!ENTITY recommonmark-download-ftp  " ">
-  <!ENTITY recommonmark-md5sum        "&recommonmark-md5sum;">
-  <!ENTITY recommonmark-size          "34 KB">
   <!ENTITY recommonmark-buildsize     "680 KB (with tests)">
   <!ENTITY recommonmark-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY recommonmark-download-http "https://files.pythonhosted.org/packages/source/r/recommonmark/recommonmark-&recommonmark-version;.tar.gz">
-  <!ENTITY recommonmark-download-ftp  " ">
-  <!ENTITY recommonmark-md5sum        "&recommonmark-md5sum;">
-  <!ENTITY recommonmark-size          "34 KB">
   <!ENTITY recommonmark-buildsize     "680 KB (with tests)">
   <!ENTITY recommonmark-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="recommonmark" xreflabel="recommonmark-&recommonmark-version;">
-@y
-  <sect2 id="recommonmark" xreflabel="recommonmark-&recommonmark-version;">
-@z
-
-@x
-    <title>Recommonmark-&recommonmark-version;</title>
-@y
-    <title>Recommonmark-&recommonmark-version;</title>
-@z
-
-@x
-    <indexterm zone="recommonmark">
-      <primary sortas="a-recommonmark">recommonmark</primary>
-    </indexterm>
-@y
-    <indexterm zone="recommonmark">
-      <primary sortas="a-recommonmark">recommonmark</primary>
-    </indexterm>
 @z
 
 @x
@@ -69,12 +37,6 @@
         <ulink url="https://pypi.org/project/myst-parser/">MyST-Parser</ulink>.
         Unfortunately, <xref linkend="llvm"/> still depends on this module.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

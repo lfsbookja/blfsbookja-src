@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sc-applehelp-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-applehelp/sphinxcontrib-applehelp-&sc-applehelp-version;.tar.gz">
-  <!ENTITY sc-applehelp-download-ftp  " ">
-  <!ENTITY sc-applehelp-md5sum        "&sc-applehelp-md5sum;">
-  <!ENTITY sc-applehelp-size          "28 KB">
   <!ENTITY sc-applehelp-buildsize     "2.0 MB (with tests)">
   <!ENTITY sc-applehelp-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY sc-applehelp-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-applehelp/sphinxcontrib-applehelp-&sc-applehelp-version;.tar.gz">
-  <!ENTITY sc-applehelp-download-ftp  " ">
-  <!ENTITY sc-applehelp-md5sum        "&sc-applehelp-md5sum;">
-  <!ENTITY sc-applehelp-size          "28 KB">
   <!ENTITY sc-applehelp-buildsize     "2.0 MB (with tests)">
   <!ENTITY sc-applehelp-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="sc-applehelp" xreflabel="sphinxcontrib-applehelp-&sc-applehelp-version;">
-@y
-  <sect2 id="sc-applehelp" xreflabel="sphinxcontrib-applehelp-&sc-applehelp-version;">
-@z
-
-@x
-    <title>Sphinxcontrib-applehelp-&sc-applehelp-version;</title>
-@y
-    <title>Sphinxcontrib-applehelp-&sc-applehelp-version;</title>
-@z
-
-@x
-    <indexterm zone="sc-applehelp">
-      <primary sortas="a-sphinxcontrib-applehelp">sphinxcontrib-applehelp</primary>
-    </indexterm>
-@y
-    <indexterm zone="sc-applehelp">
-      <primary sortas="a-sphinxcontrib-applehelp">sphinxcontrib-applehelp</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +31,6 @@
         <application>Sphinx</application> extension which outputs Apple
         help books.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

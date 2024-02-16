@@ -3,57 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY editables-download-http "https://files.pythonhosted.org/packages/source/e/editables/editables-&editables-version;.tar.gz">
-  <!ENTITY editables-download-ftp  " ">
-  <!ENTITY editables-md5sum        "&editables-md5sum;">
-  <!ENTITY editables-size          "4.6 KB">
-  <!ENTITY editables-buildsize     "180 KB">
   <!ENTITY editables-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY editables-download-http "https://files.pythonhosted.org/packages/source/e/editables/editables-&editables-version;.tar.gz">
-  <!ENTITY editables-download-ftp  " ">
-  <!ENTITY editables-md5sum        "&editables-md5sum;">
-  <!ENTITY editables-size          "4.6 KB">
-  <!ENTITY editables-buildsize     "180 KB">
   <!ENTITY editables-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect2 id="editables" xreflabel="editables-&editables-version;">
-@y
-  <sect2 id="editables" xreflabel="editables-&editables-version;">
-@z
-
-@x
-    <title>Editables-&editables-version;</title>
-@y
-    <title>Editables-&editables-version;</title>
-@z
-
-@x
-    <indexterm zone="editables">
-      <primary sortas="a-editables">editables</primary>
-    </indexterm>
-@y
-    <indexterm zone="editables">
-      <primary sortas="a-editables">editables</primary>
-    </indexterm>
 @z
 
 @x
@@ -74,12 +27,6 @@
         <application>Editables</application> is python library for creating
         <quote>editable wheels</quote>.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

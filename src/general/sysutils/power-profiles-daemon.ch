@@ -3,71 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!-- Place this in the packages.ent file
-  <!ENTITY power-profiles-daemon-version "">
-  -->
-@y
-  <!-- Place this in the packages.ent file
-  <!ENTITY power-profiles-daemon-version "">
-  -->
-@z
-
-@x
-  <!ENTITY power-profiles-daemon-download-http "https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/&power-profiles-daemon-version;/power-profiles-daemon-&power-profiles-daemon-version;.tar.gz">
-  <!ENTITY power-profiles-daemon-download-ftp  " ">
-  <!ENTITY power-profiles-daemon-md5sum        "8e20c44225a1d9982f24c65049386df0">
-  <!ENTITY power-profiles-daemon-size          "56 KB">
-  <!ENTITY power-profiles-daemon-buildsize     "1.2 MB">
   <!ENTITY power-profiles-daemon-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY power-profiles-daemon-download-http "https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/archive/&power-profiles-daemon-version;/power-profiles-daemon-&power-profiles-daemon-version;.tar.gz">
-  <!ENTITY power-profiles-daemon-download-ftp  " ">
-  <!ENTITY power-profiles-daemon-md5sum        "8e20c44225a1d9982f24c65049386df0">
-  <!ENTITY power-profiles-daemon-size          "56 KB">
-  <!ENTITY power-profiles-daemon-buildsize     "1.2 MB">
   <!ENTITY power-profiles-daemon-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-<sect1 id="power-profiles-daemon" xreflabel="power-profiles-daemon-&power-profiles-daemon-version;">
-  <?dbhtml filename="power-profiles-daemon.html"?>
-@y
-<sect1 id="power-profiles-daemon" xreflabel="power-profiles-daemon-&power-profiles-daemon-version;">
-  <?dbhtml filename="power-profiles-daemon.html"?>
-@z
-
-@x
-  <title>Power-profiles-daemon-&power-profiles-daemon-version;</title>
-@y
-  <title>Power-profiles-daemon-&power-profiles-daemon-version;</title>
-@z
-
-@x
-  <indexterm zone="power-profiles-daemon">
-    <primary sortas="a-Power-profiles-daemon">power-profiles-daemon</primary>
-  </indexterm>
-@y
-  <indexterm zone="power-profiles-daemon">
-    <primary sortas="a-Power-profiles-daemon">power-profiles-daemon</primary>
-  </indexterm>
 @z
 
 @x
@@ -92,12 +31,6 @@
       many laptops and can be used by a Desktop Environment to activate power saving 
       or performance CPU governors through dbus.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
@@ -283,69 +216,19 @@
       Install <application>Power-profiles-daemon</application> by 
       running the following commands:
     </para>
-<screen revision="sysv"><userinput>mkdir build &amp;&amp;
-cd build &amp;&amp;
 @y
     <para>
       Install <application>Power-profiles-daemon</application> by 
       running the following commands:
     </para>
-<screen revision="sysv"><userinput>mkdir build &amp;&amp;
-cd build &amp;&amp;
 @z
 
 @x
-meson setup                     \
-      --prefix=/usr             \
-      --buildtype=release       \
-      -Dgtk_doc=false           \
-      -Dsystemdsystemunitdir=no \
-      .. &amp;&amp;
-ninja</userinput></screen>
-@y
-meson setup                     \
-      --prefix=/usr             \
-      --buildtype=release       \
-      -Dgtk_doc=false           \
-      -Dsystemdsystemunitdir=no \
-      .. &amp;&amp;
-ninja</userinput></screen>
-@z
-
-@x
-<screen revision="systemd"><userinput>mkdir build &amp;&amp;
-cd build &amp;&amp;
-@y
-<screen revision="systemd"><userinput>mkdir build &amp;&amp;
-cd build &amp;&amp;
-@z
-
-@x
-meson setup               \
-      --prefix=/usr       \
-      --buildtype=release \
-      -Dgtk_doc=false     \
-      .. &amp;&amp;
-ninja</userinput></screen>
-@y
-meson setup               \
-      --prefix=/usr       \
-      --buildtype=release \
-      -Dgtk_doc=false     \
-      .. &amp;&amp;
-ninja</userinput></screen>
-@z
-
-@x
-    <para>
       If you have installed the external dependencies, to test the results issue: <command>
-      meson setup --reconfigure -Dtests=true &amp;&amp; ninja test</command>.
-    </para>
+      ninja test</command>.
 @y
-    <para>
       If you have installed the external dependencies, to test the results issue: <command>
-      meson setup --reconfigure -Dtests=true &amp;&amp; ninja test</command>.
-    </para>
+      ninja test</command>.
 @z
 
 @x
@@ -356,14 +239,6 @@ ninja</userinput></screen>
     <para>
       Now, as the <systemitem class="username">root</systemitem> user:
     </para>
-@z
-
-@x
-<screen role="root"><userinput>ninja install</userinput></screen>
-  </sect2>
-@y
-<screen role="root"><userinput>ninja install</userinput></screen>
-  </sect2>
 @z
 
 @x

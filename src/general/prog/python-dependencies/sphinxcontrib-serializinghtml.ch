@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sc-serializinghtml-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-&sc-serializinghtml-version;.tar.gz">
-  <!ENTITY sc-serializinghtml-download-ftp  " ">
-  <!ENTITY sc-serializinghtml-md5sum        "&sc-serializinghtml-md5sum;">
-  <!ENTITY sc-serializinghtml-size          "15 KB">
   <!ENTITY sc-serializinghtml-buildsize     "2.0 MB (with tests)">
   <!ENTITY sc-serializinghtml-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY sc-serializinghtml-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib_serializinghtml/sphinxcontrib_serializinghtml-&sc-serializinghtml-version;.tar.gz">
-  <!ENTITY sc-serializinghtml-download-ftp  " ">
-  <!ENTITY sc-serializinghtml-md5sum        "&sc-serializinghtml-md5sum;">
-  <!ENTITY sc-serializinghtml-size          "15 KB">
   <!ENTITY sc-serializinghtml-buildsize     "2.0 MB (with tests)">
   <!ENTITY sc-serializinghtml-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="sc-serializinghtml" xreflabel="sphinxcontrib-serializinghtml-&sc-serializinghtml-version;">
-@y
-  <sect2 id="sc-serializinghtml" xreflabel="sphinxcontrib-serializinghtml-&sc-serializinghtml-version;">
-@z
-
-@x
-    <title>Sphinxcontrib-serializinghtml-&sc-serializinghtml-version;</title>
-@y
-    <title>Sphinxcontrib-serializinghtml-&sc-serializinghtml-version;</title>
-@z
-
-@x
-    <indexterm zone="sc-serializinghtml">
-      <primary sortas="a-sphinxcontrib-serializinghtml">sphinxcontrib-serializinghtml</primary>
-    </indexterm>
-@y
-    <indexterm zone="sc-serializinghtml">
-      <primary sortas="a-sphinxcontrib-serializinghtml">sphinxcontrib-serializinghtml</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +31,6 @@
         <application>Sphinx</application> extension which outputs
         <quote>serialized</quote> HTML files (json and pickle).
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY imagemagick-buildsize     "164 MB (with typical dependencies; add 31 MB for checks)">
-  <!ENTITY imagemagick-time          "0.8 SBU (with typical dependencies; add 0.8 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "210 MB, 45 MB installed (with typical dependencies; add 10 MB for checks)">
+  <!ENTITY imagemagick-time          "0.7 SBU (with typical dependencies; add 0.7 SBU for checks, both using  parallelism=4)">
 @y
-  <!ENTITY imagemagick-buildsize     "164 MB (with typical dependencies; add 31 MB for checks)">
-  <!ENTITY imagemagick-time          "0.8 SBU (with typical dependencies; add 0.8 SBU for checks, both using  parallelism=4)">
+  <!ENTITY imagemagick-buildsize     "210 MB, 45 MB installed (with typical dependencies; add 10 MB for checks)">
+  <!ENTITY imagemagick-time          "0.7 SBU (with typical dependencies; add 0.7 SBU for checks, both using  parallelism=4)">
 @z
 
 @x
@@ -419,42 +419,42 @@
 @z
 
 @x
-      <option>--with-gslib</option>: Enables support to use the
-      <application>Ghostscript</application> shared library.
+      <option>--with-fftw</option>: Enables support for the
+      <application>FFTW</application> shared library.
 @y
-      <option>--with-gslib</option>: Enables support to use the
-      <application>Ghostscript</application> shared library.
+      <option>--with-fftw</option>: Enables support for the
+      <application>FFTW</application> shared library.
 @z
 
 @x
-      <option>--with-rsvg</option>: Enables support to use the
+      <option>--with-rsvg</option>: Enables support for the
       <application>librsvg</application> library.
 @y
-      <option>--with-rsvg</option>: Enables support to use the
+      <option>--with-rsvg</option>: Enables support for the
       <application>librsvg</application> library.
 @z
 
 @x
-      <option>--with-autotrace</option>: Enables support to use
+      <option>--with-autotrace</option>: Enables support for
       the <application>Autotrace</application> library.
 @y
-      <option>--with-autotrace</option>: Enables support to use
+      <option>--with-autotrace</option>: Enables support for
       the <application>Autotrace</application> library.
 @z
 
 @x
-      <option>--with-wmf</option>: Enables support to use the
+      <option>--with-wmf</option>: Enables support for the
       <application>libwmf</application> library.
 @y
-      <option>--with-wmf</option>: Enables support to use the
+      <option>--with-wmf</option>: Enables support for the
       <application>libwmf</application> library.
 @z
 
 @x
-      <option>--with-gvc</option>: Enables support to use
+      <option>--with-gvc</option>: Enables support for
       <application>GraphViz</application>.
 @y
-      <option>--with-gvc</option>: Enables support to use
+      <option>--with-gvc</option>: Enables support for
       <application>GraphViz</application>.
 @z
 

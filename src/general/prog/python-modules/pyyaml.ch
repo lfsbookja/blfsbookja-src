@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY PyYAML-download-http "https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-&PyYAML-version;.tar.gz">
-  <!ENTITY PyYAML-download-ftp  " ">
-  <!ENTITY PyYAML-md5sum        "&PyYAML-md5sum;">
-  <!ENTITY PyYAML-size          "124 KB">
-  <!ENTITY PyYAML-buildsize     "8.0 MB">
   <!ENTITY PyYAML-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY PyYAML-download-http "https://files.pythonhosted.org/packages/source/P/PyYAML/PyYAML-&PyYAML-version;.tar.gz">
-  <!ENTITY PyYAML-download-ftp  " ">
-  <!ENTITY PyYAML-md5sum        "&PyYAML-md5sum;">
-  <!ENTITY PyYAML-size          "124 KB">
-  <!ENTITY PyYAML-buildsize     "8.0 MB">
   <!ENTITY PyYAML-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <!-- Begin PyYAML -->
-  <sect2 id="PyYAML" xreflabel="PyYAML-&PyYAML-version;">
-@y
-  <!-- Begin PyYAML -->
-  <sect2 id="PyYAML" xreflabel="PyYAML-&PyYAML-version;">
-@z
-
-@x
-    <title>PyYAML-&PyYAML-version;</title>
-@y
-    <title>PyYAML-&PyYAML-version;</title>
-@z
-
-@x
-    <indexterm zone="PyYAML">
-      <primary sortas="a-PyYAML">PyYAML</primary>
-    </indexterm>
-@y
-    <indexterm zone="PyYAML">
-      <primary sortas="a-PyYAML">PyYAML</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
         <application>PyYAML</application> is a <application>Python</application>
         module that implements the next generation YAML parser and emitter.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

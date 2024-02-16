@@ -4,43 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY snowballstemmer-download-http "https://files.pythonhosted.org/packages/source/s/snowballstemmer/snowballstemmer-&snowballstemmer-version;.tar.gz">
-  <!ENTITY snowballstemmer-download-ftp  " ">
-  <!ENTITY snowballstemmer-md5sum        "&snowballstemmer-md5sum;">
-  <!ENTITY snowballstemmer-size          "85 KB">
-  <!ENTITY snowballstemmer-buildsize     "3.8 MB">
   <!ENTITY snowballstemmer-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY snowballstemmer-download-http "https://files.pythonhosted.org/packages/source/s/snowballstemmer/snowballstemmer-&snowballstemmer-version;.tar.gz">
-  <!ENTITY snowballstemmer-download-ftp  " ">
-  <!ENTITY snowballstemmer-md5sum        "&snowballstemmer-md5sum;">
-  <!ENTITY snowballstemmer-size          "85 KB">
-  <!ENTITY snowballstemmer-buildsize     "3.8 MB">
   <!ENTITY snowballstemmer-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect2 id="snowballstemmer" xreflabel="snowballstemmer-&snowballstemmer-version;">
-@y
-  <sect2 id="snowballstemmer" xreflabel="snowballstemmer-&snowballstemmer-version;">
-@z
-
-@x
-    <title>Snowballstemmer-&snowballstemmer-version;</title>
-@y
-    <title>Snowballstemmer-&snowballstemmer-version;</title>
-@z
-
-@x
-    <indexterm zone="snowballstemmer">
-      <primary sortas="a-snowballstemmer">snowballstemmer</primary>
-    </indexterm>
-@y
-    <indexterm zone="snowballstemmer">
-      <primary sortas="a-snowballstemmer">snowballstemmer</primary>
-    </indexterm>
 @z
 
 @x
@@ -79,12 +45,6 @@
         <emphasis>connected</emphasis> would also find documents which only
         have the other forms.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

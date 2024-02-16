@@ -3,57 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY iniconfig-download-http "https://files.pythonhosted.org/packages/source/i/iniconfig/iniconfig-&iniconfig-version;.tar.gz">
-  <!ENTITY iniconfig-download-ftp  " ">
-  <!ENTITY iniconfig-md5sum        "&iniconfig-md5sum;">
-  <!ENTITY iniconfig-size          "4.5 KB">
-  <!ENTITY iniconfig-buildsize     "168 KB">
   <!ENTITY iniconfig-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY iniconfig-download-http "https://files.pythonhosted.org/packages/source/i/iniconfig/iniconfig-&iniconfig-version;.tar.gz">
-  <!ENTITY iniconfig-download-ftp  " ">
-  <!ENTITY iniconfig-md5sum        "&iniconfig-md5sum;">
-  <!ENTITY iniconfig-size          "4.5 KB">
-  <!ENTITY iniconfig-buildsize     "168 KB">
   <!ENTITY iniconfig-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect2 id="iniconfig" xreflabel="iniconfig-&iniconfig-version;">
-@y
-  <sect2 id="iniconfig" xreflabel="iniconfig-&iniconfig-version;">
-@z
-
-@x
-    <title>Iniconfig-&iniconfig-version;</title>
-@y
-    <title>Iniconfig-&iniconfig-version;</title>
-@z
-
-@x
-    <indexterm zone="iniconfig">
-      <primary sortas="a-iniconfig">iniconfig</primary>
-    </indexterm>
-@y
-    <indexterm zone="iniconfig">
-      <primary sortas="a-iniconfig">iniconfig</primary>
-    </indexterm>
 @z
 
 @x
@@ -74,12 +27,6 @@
         <application>Iniconfig</application> is a small and simple
         INI-file parser module.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

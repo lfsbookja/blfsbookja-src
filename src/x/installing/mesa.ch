@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY mesa-buildsize     "621 MB (with docs, add 266 MB for tests)">
+  <!ENTITY mesa-buildsize     "618 MB (with docs, add 220 MB for tests)">
   <!ENTITY mesa-time          "3.1 SBU (with docs; add 0.6 SBU for tests; both with parallelism=4)">
 @y
-  <!ENTITY mesa-buildsize     "621 MB (ドキュメント込み, テスト実施時はさらに 266 MB)">
+  <!ENTITY mesa-buildsize     "618 MB (ドキュメント込み, テスト実施時はさらに 220 MB)">
   <!ENTITY mesa-time          "3.1 SBU (ドキュメント込み、テスト実施時はさらに 0.6 SBU, いずれも parallelism=4)">
 @z
 

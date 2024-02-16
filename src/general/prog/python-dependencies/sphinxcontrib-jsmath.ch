@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sc-jsmath-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-&sc-jsmath-version;.tar.gz">
-  <!ENTITY sc-jsmath-download-ftp  " ">
-  <!ENTITY sc-jsmath-md5sum        "&sc-jsmath-md5sum;">
-  <!ENTITY sc-jsmath-size          "5.7 KB">
   <!ENTITY sc-jsmath-buildsize     "324 KB (with tests)">
   <!ENTITY sc-jsmath-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY sc-jsmath-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jsmath/sphinxcontrib-jsmath-&sc-jsmath-version;.tar.gz">
-  <!ENTITY sc-jsmath-download-ftp  " ">
-  <!ENTITY sc-jsmath-md5sum        "&sc-jsmath-md5sum;">
-  <!ENTITY sc-jsmath-size          "5.7 KB">
   <!ENTITY sc-jsmath-buildsize     "324 KB (with tests)">
   <!ENTITY sc-jsmath-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="sc-jsmath" xreflabel="sphinxcontrib-jsmath-&sc-jsmath-version;">
-@y
-  <sect2 id="sc-jsmath" xreflabel="sphinxcontrib-jsmath-&sc-jsmath-version;">
-@z
-
-@x
-    <title>Sphinxcontrib-jsmath-&sc-jsmath-version;</title>
-@y
-    <title>Sphinxcontrib-jsmath-&sc-jsmath-version;</title>
-@z
-
-@x
-    <indexterm zone="sc-jsmath">
-      <primary sortas="a-sphinxcontrib-jsmath">sphinxcontrib-jsmath</primary>
-    </indexterm>
-@y
-    <indexterm zone="sc-jsmath">
-      <primary sortas="a-sphinxcontrib-jsmath">sphinxcontrib-jsmath</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +31,6 @@
         <application>Sphinx</application> extension which renders display
         math in HTML via JavaScript.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

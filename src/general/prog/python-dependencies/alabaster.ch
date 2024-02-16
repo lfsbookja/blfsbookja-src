@@ -3,64 +3,15 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY alabaster-download-http "https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-&alabaster-version;.tar.gz">
-  <!ENTITY alabaster-download-ftp  " ">
-  <!ENTITY alabaster-md5sum        "&alabaster-md5sum;">
-  <!ENTITY alabaster-size          "11 KB">
-  <!ENTITY alabaster-buildsize     "360 KB">
   <!ENTITY alabaster-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY alabaster-download-http "https://files.pythonhosted.org/packages/source/a/alabaster/alabaster-&alabaster-version;.tar.gz">
-  <!ENTITY alabaster-download-ftp  " ">
-  <!ENTITY alabaster-md5sum        "&alabaster-md5sum;">
-  <!ENTITY alabaster-size          "11 KB">
-  <!ENTITY alabaster-buildsize     "360 KB">
   <!ENTITY alabaster-time          "less than 0.1 SBU">
-]>
 @z
 
 @x
-  <sect2 id="alabaster" xreflabel="alabaster-&alabaster-version;">
-@y
-  <sect2 id="alabaster" xreflabel="alabaster-&alabaster-version;">
-@z
-
-@x
-    <title>Alabaster-&alabaster-version;</title>
-@y
-    <title>Alabaster-&alabaster-version;</title>
-@z
-
-@x
-    <indexterm zone="alabaster">
-      <primary sortas="a-alabaster">alabaster</primary>
-    </indexterm>
-@y
-    <indexterm zone="alabaster">
-      <primary sortas="a-alabaster">alabaster</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to Alabaster Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Alabaster Module</title>
 @z
 
@@ -76,12 +27,6 @@
         the <application>sphinx</application> documentation system. Although
         developed separately, it is the default theme for sphinx.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

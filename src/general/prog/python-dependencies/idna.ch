@@ -3,57 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY idna-download-http "https://files.pythonhosted.org/packages/source/i/idna/idna-&idna-version;.tar.gz">
-  <!ENTITY idna-download-ftp  " ">
-  <!ENTITY idna-md5sum        "&idna-md5sum;">
-  <!ENTITY idna-size          "179 KB">
   <!ENTITY idna-buildsize     "2.1 MB (with test)">
   <!ENTITY idna-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY idna-download-http "https://files.pythonhosted.org/packages/source/i/idna/idna-&idna-version;.tar.gz">
-  <!ENTITY idna-download-ftp  " ">
-  <!ENTITY idna-md5sum        "&idna-md5sum;">
-  <!ENTITY idna-size          "179 KB">
   <!ENTITY idna-buildsize     "2.1 MB (with test)">
   <!ENTITY idna-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="idna" xreflabel="idna-&idna-version;">
-@y
-  <sect2 id="idna" xreflabel="idna-&idna-version;">
-@z
-
-@x
-    <title>Idna-&idna-version;</title>
-@y
-    <title>Idna-&idna-version;</title>
-@z
-
-@x
-    <indexterm zone="idna">
-      <primary sortas="a-idna">idna</primary>
-    </indexterm>
-@y
-    <indexterm zone="idna">
-      <primary sortas="a-idna">idna</primary>
-    </indexterm>
 @z
 
 @x
@@ -76,12 +31,6 @@
         for the Internationalized Domain Names in Applications (IDNA) protocol
         as specified in RFC 5891.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

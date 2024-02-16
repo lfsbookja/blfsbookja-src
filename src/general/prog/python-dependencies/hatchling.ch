@@ -3,57 +3,10 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY hatchling-download-http "https://files.pythonhosted.org/packages/source/h/hatchling/hatchling-&hatchling-version;.tar.gz">
-  <!ENTITY hatchling-download-ftp  " ">
-  <!ENTITY hatchling-md5sum        "&hatchling-md5sum;">
-  <!ENTITY hatchling-size          "60 KB">
-  <!ENTITY hatchling-buildsize     "2.3 MB">
   <!ENTITY hatchling-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY hatchling-download-http "https://files.pythonhosted.org/packages/source/h/hatchling/hatchling-&hatchling-version;.tar.gz">
-  <!ENTITY hatchling-download-ftp  " ">
-  <!ENTITY hatchling-md5sum        "&hatchling-md5sum;">
-  <!ENTITY hatchling-size          "60 KB">
-  <!ENTITY hatchling-buildsize     "2.3 MB">
   <!ENTITY hatchling-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect2 id="hatchling" xreflabel="hatchling-&hatchling-version;">
-@y
-  <sect2 id="hatchling" xreflabel="hatchling-&hatchling-version;">
-@z
-
-@x
-    <title>Hatchling-&hatchling-version;</title>
-@y
-    <title>Hatchling-&hatchling-version;</title>
-@z
-
-@x
-    <indexterm zone="hatchling">
-      <primary sortas="a-hatchling">hatchling</primary>
-    </indexterm>
-@y
-    <indexterm zone="hatchling">
-      <primary sortas="a-hatchling">hatchling</primary>
-    </indexterm>
 @z
 
 @x
@@ -74,12 +27,6 @@
         <application>Hatchling</application> is an extensible, standards
         compliant build backend for python modules.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

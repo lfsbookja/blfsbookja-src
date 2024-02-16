@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sphinx-download-http "https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-&sphinx-version;.tar.gz">
-  <!ENTITY sphinx-download-ftp  " ">
-  <!ENTITY sphinx-md5sum        "18971ebdd6ec1b7788ff0898682fe0da">
-  <!ENTITY sphinx-size          "6.7 MB">
   <!ENTITY sphinx-buildsize     "45 MB (add 35 MB for tests)">
   <!ENTITY sphinx-time          "less than 0.1 SBU (1.3 SBU for tests)">
-]>
 @y
-  <!ENTITY sphinx-download-http "https://files.pythonhosted.org/packages/source/s/sphinx/sphinx-&sphinx-version;.tar.gz">
-  <!ENTITY sphinx-download-ftp  " ">
-  <!ENTITY sphinx-md5sum        "18971ebdd6ec1b7788ff0898682fe0da">
-  <!ENTITY sphinx-size          "6.7 MB">
   <!ENTITY sphinx-buildsize     "45 MB (add 35 MB for tests)">
   <!ENTITY sphinx-time          "less than 0.1 SBU (1.3 SBU for tests)">
-]>
-@z
-
-@x
-  <sect2 id="sphinx" xreflabel="sphinx-&sphinx-version;">
-@y
-  <sect2 id="sphinx" xreflabel="sphinx-&sphinx-version;">
-@z
-
-@x
-    <title>Sphinx-&sphinx-version;</title>
-@y
-    <title>Sphinx-&sphinx-version;</title>
-@z
-
-@x
-    <indexterm zone="sphinx">
-      <primary sortas="a-sphinx">sphinx</primary>
-    </indexterm>
-@y
-    <indexterm zone="sphinx">
-      <primary sortas="a-sphinx">sphinx</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +31,6 @@
         for translating some structured text formats into pretty documentation
         in various formats.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

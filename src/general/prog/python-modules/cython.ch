@@ -4,46 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY cython-download-http "https://github.com/cython/cython/releases/download/&cython-version;/Cython-&cython-version;.tar.gz">
-  <!ENTITY cython-download-ftp  " ">
-  <!ENTITY cython-md5sum        "&cython-md5sum;">
-  <!ENTITY cython-size          "2.1 MB">
-  <!ENTITY cython-buildsize     "67 MB">
-  <!ENTITY cython-time          "0.5 SBU">
-]>
-@y
-  <!ENTITY cython-download-http "https://github.com/cython/cython/releases/download/&cython-version;/Cython-&cython-version;.tar.gz">
-  <!ENTITY cython-download-ftp  " ">
-  <!ENTITY cython-md5sum        "&cython-md5sum;">
-  <!ENTITY cython-size          "2.1 MB">
-  <!ENTITY cython-buildsize     "67 MB">
-  <!ENTITY cython-time          "0.5 SBU">
-]>
-@z
-
-@x
-  <sect2 id="cython" xreflabel="cython-&cython-version;">
-@y
-  <sect2 id="cython" xreflabel="cython-&cython-version;">
-@z
-
-@x
-    <title>Cython-&cython-version;</title>
-@y
-    <title>Cython-&cython-version;</title>
-@z
-
-@x
-    <indexterm zone="cython">
-      <primary sortas="a-cython">cython</primary>
-    </indexterm>
-@y
-    <indexterm zone="cython">
-      <primary sortas="a-cython">cython</primary>
-    </indexterm>
-@z
-
-@x
     <sect3 role="package">
       <title>Introduction to Cython Module</title>
 @y
@@ -61,12 +21,6 @@
         The <application>Cython</application> package provides a
          compiler for writing C extensions for the Python language.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

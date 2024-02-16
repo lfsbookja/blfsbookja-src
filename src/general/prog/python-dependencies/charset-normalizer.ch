@@ -3,57 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY charset-normalizer-download-http "https://files.pythonhosted.org/packages/source/c/charset-normalizer/charset-normalizer-&charset-normalizer-version;.tar.gz">
-  <!ENTITY charset-normalizer-download-ftp  " ">
-  <!ENTITY charset-normalizer-md5sum        "&charset-normalizer-md5sum;">
-  <!ENTITY charset-normalizer-size          "91 KB">
   <!ENTITY charset-normalizer-buildsize     "1.1 MB (add 27 MB for tests)">
   <!ENTITY charset-normalizer-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY charset-normalizer-download-http "https://files.pythonhosted.org/packages/source/c/charset-normalizer/charset-normalizer-&charset-normalizer-version;.tar.gz">
-  <!ENTITY charset-normalizer-download-ftp  " ">
-  <!ENTITY charset-normalizer-md5sum        "&charset-normalizer-md5sum;">
-  <!ENTITY charset-normalizer-size          "91 KB">
   <!ENTITY charset-normalizer-buildsize     "1.1 MB (add 27 MB for tests)">
   <!ENTITY charset-normalizer-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="charset-normalizer" xreflabel="charset-normalizer-&charset-normalizer-version;">
-@y
-  <sect2 id="charset-normalizer" xreflabel="charset-normalizer-&charset-normalizer-version;">
-@z
-
-@x
-    <title>Charset-normalizer-&charset-normalizer-version;</title>
-@y
-    <title>Charset-normalizer-&charset-normalizer-version;</title>
-@z
-
-@x
-    <indexterm zone="charset-normalizer">
-      <primary sortas="a-charset-normalizer">charset-normalizer</primary>
-    </indexterm>
-@y
-    <indexterm zone="charset-normalizer">
-      <primary sortas="a-charset-normalizer">charset-normalizer</primary>
-    </indexterm>
 @z
 
 @x
@@ -74,12 +29,6 @@
         The <application>charset-normalizer</application> library helps
         reading text from an unknown character encoding.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x
