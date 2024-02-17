@@ -46,12 +46,6 @@
 @z
 
 @x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
-@z
-
-@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
       <listitem>
@@ -201,115 +195,13 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="doxygen"/>,
-      <xref linkend="fontconfig"/>,
-      <xref linkend="fribidi"/>,
-      <xref linkend="frei0r"/>,
-      <xref linkend="libcdio"/> (to identify and play CDs),
-      <xref linkend="libdrm"/> (for <quote>kmsgrab</quote> input),
-      <!--<xref linkend="libtheora"/>,-->
-      <xref linkend="libwebp"/>,
-      <xref linkend="opencv"/>,
-      <xref linkend="openjpeg2"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="samba"/>,
-      <xref linkend="speex"/>,
-      <xref linkend="texlive"/>
-         (or <xref linkend="tl-installer"/>) for PDF and PS documentation,
-      <xref linkend="v4l-utils"/>,
-      <xref linkend="vulkan-loader"/>,
-      <xref linkend="xvid"/>,
-      <xref linkend="x-window-system"/>,
-      <ulink url="https://code.videolan.org/videolan/dav1d">dav1d</ulink>,
-      <ulink url="https://github.com/festvox/flite">Flite</ulink>,
-      <ulink url="https://www.quut.com/gsm/">GSM</ulink>,
-      <ulink url="https://tipok.org.ua/node/17">libaacplus</ulink>,
-      <ulink url="https://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
-      <ulink url="https://github.com/cacalabs/libcaca">libcaca</ulink>,
-      <ulink url="https://gitlab.xiph.org/xiph/celt">libcelt</ulink>,
-      <ulink url="https://sourceforge.net/projects/libdc1394">libdc1394</ulink>,
-      <ulink url="https://www.videolan.org/developers/libdca.html">libdca</ulink>,
-      <ulink url="https://ieee1394.wiki.kernel.org/index.php/Libraries">libiec61883</ulink>,
-      <ulink url="https://github.com/dekkers/libilbc">libilbc</ulink>,
-      <ulink url="https://sourceforge.net/projects/modplug-xmms/">libmodplug</ulink>,
-      <ulink url="https://github.com/Distrotech/libnut">libnut</ulink> (Git checkout),
-      <ulink url="https://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
-      <ulink url="https://www.libssh.org/">libssh</ulink>,
-      <ulink url="https://www.theora.org">libtheora</ulink>,
-      <ulink url="https://openal.org/">OpenAL</ulink>,
-      <ulink url="https://sourceforge.net/projects/opencore-amr">OpenCore AMR</ulink>,
-      <ulink url="https://github.com/Haivision/srt">Srt</ulink>,
-      <ulink url="https://sourceforge.net/projects/schrodinger/">Schroedinger</ulink>,
-      <ulink url="https://www.twolame.org/">TwoLAME</ulink>,
-      <ulink url="https://sourceforge.net/projects/opencore-amr/files/vo-aacenc/">vo-aaenc</ulink>,
-      <ulink url="https://sourceforge.net/projects/opencore-amr/files/vo-amrwbenc/">vo-amrwbenc</ulink>, and
-      <!--<ulink url="https://vulkan.org/">Vulkan</ulink>, and-->
-      <ulink url="https://zapping.sourceforge.net/ZVBI/">ZVBI</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="doxygen"/>,
-      <xref linkend="fontconfig"/>,
-      <xref linkend="fribidi"/>,
-      <xref linkend="frei0r"/>,
-      <xref linkend="libcdio"/> (to identify and play CDs),
-      <xref linkend="libdrm"/> (for <quote>kmsgrab</quote> input),
-      <!--<xref linkend="libtheora"/>,-->
-      <xref linkend="libwebp"/>,
-      <xref linkend="opencv"/>,
-      <xref linkend="openjpeg2"/>,
-      <xref linkend="gnutls"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="samba"/>,
-      <xref linkend="speex"/>,
-      <xref linkend="texlive"/>
-         (or <xref linkend="tl-installer"/>) for PDF and PS documentation,
-      <xref linkend="v4l-utils"/>,
-      <xref linkend="vulkan-loader"/>,
-      <xref linkend="xvid"/>,
-      <xref linkend="x-window-system"/>,
-      <ulink url="https://code.videolan.org/videolan/dav1d">dav1d</ulink>,
-      <ulink url="https://github.com/festvox/flite">Flite</ulink>,
-      <ulink url="https://www.quut.com/gsm/">GSM</ulink>,
-      <ulink url="https://tipok.org.ua/node/17">libaacplus</ulink>,
-      <ulink url="https://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
-      <ulink url="https://github.com/cacalabs/libcaca">libcaca</ulink>,
-      <ulink url="https://gitlab.xiph.org/xiph/celt">libcelt</ulink>,
-      <ulink url="https://sourceforge.net/projects/libdc1394">libdc1394</ulink>,
-      <ulink url="https://www.videolan.org/developers/libdca.html">libdca</ulink>,
-      <ulink url="https://ieee1394.wiki.kernel.org/index.php/Libraries">libiec61883</ulink>,
-      <ulink url="https://github.com/dekkers/libilbc">libilbc</ulink>,
-      <ulink url="https://sourceforge.net/projects/modplug-xmms/">libmodplug</ulink>,
-      <ulink url="https://github.com/Distrotech/libnut">libnut</ulink> (Git checkout),
-      <ulink url="https://rtmpdump.mplayerhq.hu/">librtmp</ulink>,
-      <ulink url="https://www.libssh.org/">libssh</ulink>,
-      <ulink url="https://www.theora.org">libtheora</ulink>,
-      <ulink url="https://openal.org/">OpenAL</ulink>,
-      <ulink url="https://sourceforge.net/projects/opencore-amr">OpenCore AMR</ulink>,
-      <ulink url="https://github.com/Haivision/srt">Srt</ulink>,
-      <ulink url="https://sourceforge.net/projects/schrodinger/">Schroedinger</ulink>,
-      <ulink url="https://www.twolame.org/">TwoLAME</ulink>,
-      <ulink url="https://sourceforge.net/projects/opencore-amr/files/vo-aacenc/">vo-aaenc</ulink>,
-      <ulink url="https://sourceforge.net/projects/opencore-amr/files/vo-amrwbenc/">vo-amrwbenc</ulink>, and
-      <!--<ulink url="https://vulkan.org/">Vulkan</ulink>, and-->
-      <ulink url="https://zapping.sourceforge.net/ZVBI/">ZVBI</ulink>
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of FFmpeg</title>
 @y
-  <sect2 role="installation">
     <title>Installation of FFmpeg</title>
 @z
 
@@ -328,12 +220,6 @@
 @z
 
 @x
-<screen><userinput remap="pre">patch -Np1 -i ../ffmpeg-&ffmpeg-version;-chromium_method-1.patch</userinput></screen>
-@y
-<screen><userinput remap="pre">patch -Np1 -i ../ffmpeg-&ffmpeg-version;-chromium_method-1.patch</userinput></screen>
-@z
-
-@x
     <para>
       Install <application>FFmpeg</application> by running the following
       commands:
@@ -343,62 +229,6 @@
       Install <application>FFmpeg</application> by running the following
       commands:
     </para>
-@z
-
-@x
-<screen><userinput>./configure --prefix=/usr        \
-            --enable-gpl         \
-            --enable-version3    \
-            --enable-nonfree     \
-            --disable-static     \
-            --enable-shared      \
-            --disable-debug      \
-            --enable-libaom      \
-            --enable-libass      \
-            --enable-libfdk-aac  \
-            --enable-libfreetype \
-            --enable-libmp3lame  \
-            --enable-libopus     \
-            --enable-libvorbis   \
-            --enable-libvpx      \
-            --enable-libx264     \
-            --enable-libx265     \
-            --enable-openssl     \
-	    --ignore-tests=enhanced-flv-av1 \
-            --docdir=/usr/share/doc/ffmpeg-&ffmpeg-version; &amp;&amp;
-@y
-<screen><userinput>./configure --prefix=/usr        \
-            --enable-gpl         \
-            --enable-version3    \
-            --enable-nonfree     \
-            --disable-static     \
-            --enable-shared      \
-            --disable-debug      \
-            --enable-libaom      \
-            --enable-libass      \
-            --enable-libfdk-aac  \
-            --enable-libfreetype \
-            --enable-libmp3lame  \
-            --enable-libopus     \
-            --enable-libvorbis   \
-            --enable-libvpx      \
-            --enable-libx264     \
-            --enable-libx265     \
-            --enable-openssl     \
-	    --ignore-tests=enhanced-flv-av1 \
-            --docdir=/usr/share/doc/ffmpeg-&ffmpeg-version; &amp;&amp;
-@z
-
-@x
-make &amp;&amp;
-@y
-make &amp;&amp;
-@z
-
-@x
-gcc tools/qt-faststart.c -o tools/qt-faststart</userinput></screen>
-@y
-gcc tools/qt-faststart.c -o tools/qt-faststart</userinput></screen>
 @z
 
 @x
@@ -416,34 +246,6 @@ gcc tools/qt-faststart.c -o tools/qt-faststart</userinput></screen>
 @z
 
 @x
-<screen remap="doc"><userinput>pushd doc &amp;&amp;
-for DOCNAME in `basename -s .html *.html`
-do
-    texi2pdf -b $DOCNAME.texi &amp;&amp;
-    texi2dvi -b $DOCNAME.texi &amp;&amp;
-@y
-<screen remap="doc"><userinput>pushd doc &amp;&amp;
-for DOCNAME in `basename -s .html *.html`
-do
-    texi2pdf -b $DOCNAME.texi &amp;&amp;
-    texi2dvi -b $DOCNAME.texi &amp;&amp;
-@z
-
-@x
-    dvips    -o $DOCNAME.ps   \
-                $DOCNAME.dvi
-done &amp;&amp;
-popd &amp;&amp;
-unset DOCNAME</userinput></screen>
-@y
-    dvips    -o $DOCNAME.ps   \
-                $DOCNAME.dvi
-done &amp;&amp;
-popd &amp;&amp;
-unset DOCNAME</userinput></screen>
-@z
-
-@x
     <para>
       If you have <xref linkend="doxygen"/> installed
       and you wish to build (if --disable-doc was
@@ -455,12 +257,6 @@ unset DOCNAME</userinput></screen>
       and you wish to build (if --disable-doc was
       used) or rebuild the html documentation, issue:
     </para>
-@z
-
-@x
-<screen remap="doc"><userinput>doxygen doc/Doxyfile</userinput></screen>
-@y
-<screen remap="doc"><userinput>doxygen doc/Doxyfile</userinput></screen>
 @z
 
 @x
@@ -488,22 +284,6 @@ unset DOCNAME</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>make install &amp;&amp;
-@y
-<screen role="root"><userinput>make install &amp;&amp;
-@z
-
-@x
-install -v -m755    tools/qt-faststart /usr/bin &amp;&amp;
-install -v -m755 -d           /usr/share/doc/ffmpeg-&ffmpeg-version; &amp;&amp;
-install -v -m644    doc/*.txt /usr/share/doc/ffmpeg-&ffmpeg-version;</userinput></screen>
-@y
-install -v -m755    tools/qt-faststart /usr/bin &amp;&amp;
-install -v -m755 -d           /usr/share/doc/ffmpeg-&ffmpeg-version; &amp;&amp;
-install -v -m644    doc/*.txt /usr/share/doc/ffmpeg-&ffmpeg-version;</userinput></screen>
-@z
-
-@x
     <para>
       If the PDF and Postscript documentation was built, issue the following
       commands, as the <systemitem class="username">root</systemitem> user, to
@@ -518,16 +298,6 @@ install -v -m644    doc/*.txt /usr/share/doc/ffmpeg-&ffmpeg-version;</userinput>
 @z
 
 @x
-<screen role="root"
-        remap="doc"><userinput>install -v -m644 doc/*.pdf /usr/share/doc/ffmpeg-&ffmpeg-version; &amp;&amp;
-install -v -m644 doc/*.ps  /usr/share/doc/ffmpeg-&ffmpeg-version;</userinput></screen>
-@y
-<screen role="root"
-        remap="doc"><userinput>install -v -m644 doc/*.pdf /usr/share/doc/ffmpeg-&ffmpeg-version; &amp;&amp;
-install -v -m644 doc/*.ps  /usr/share/doc/ffmpeg-&ffmpeg-version;</userinput></screen>
-@z
-
-@x
     <para>
       If you used <command>doxygen</command> to manually create the API
       documentation, install it by issuing the following commands
@@ -539,20 +309,6 @@ install -v -m644 doc/*.ps  /usr/share/doc/ffmpeg-&ffmpeg-version;</userinput></s
       documentation, install it by issuing the following commands
       as the <systemitem class="username">root</systemitem> user:
     </para>
-@z
-
-@x
-<screen role="root"
-        remap="doc"><userinput>install -v -m755 -d /usr/share/doc/ffmpeg-&ffmpeg-version;/api                     &amp;&amp;
-cp -vr doc/doxy/html/* /usr/share/doc/ffmpeg-&ffmpeg-version;/api                  &amp;&amp;
-find /usr/share/doc/ffmpeg-&ffmpeg-version;/api -type f -exec chmod -c 0644 \{} \; &amp;&amp;
-find /usr/share/doc/ffmpeg-&ffmpeg-version;/api -type d -exec chmod -c 0755 \{} \;</userinput></screen>
-@y
-<screen role="root"
-        remap="doc"><userinput>install -v -m755 -d /usr/share/doc/ffmpeg-&ffmpeg-version;/api                     &amp;&amp;
-cp -vr doc/doxy/html/* /usr/share/doc/ffmpeg-&ffmpeg-version;/api                  &amp;&amp;
-find /usr/share/doc/ffmpeg-&ffmpeg-version;/api -type f -exec chmod -c 0644 \{} \; &amp;&amp;
-find /usr/share/doc/ffmpeg-&ffmpeg-version;/api -type d -exec chmod -c 0755 \{} \;</userinput></screen>
 @z
 
 @x
@@ -571,12 +327,6 @@ find /usr/share/doc/ffmpeg-&ffmpeg-version;/api -type d -exec chmod -c 0755 \{} 
       Environment</ulink> (FATE). First, about 1 GB of sample files used to
       run FATE are downloaded with the command:
     </para>
-@z
-
-@x
-<screen remap="test"><userinput>make fate-rsync SAMPLES=fate-suite/</userinput></screen>
-@y
-<screen remap="test"><userinput>make fate-rsync SAMPLES=fate-suite/</userinput></screen>
 @z
 
 @x
@@ -612,14 +362,6 @@ find /usr/share/doc/ffmpeg-&ffmpeg-version;/api -type d -exec chmod -c 0755 \{} 
 @z
 
 @x
-<screen role="nodump"><userinput>rsync -vrltLW  --delete --timeout=60 --contimeout=60 \
-      rsync://fate-suite.ffmpeg.org/fate-suite/ fate-suite/</userinput></screen>
-@y
-<screen role="nodump"><userinput>rsync -vrltLW  --delete --timeout=60 --contimeout=60 \
-      rsync://fate-suite.ffmpeg.org/fate-suite/ fate-suite/</userinput></screen>
-@z
-
-@x
     <para>
       Next, execute FATE with the following commands (there are more than 3800
       tests in the suite):
@@ -629,14 +371,6 @@ find /usr/share/doc/ffmpeg-&ffmpeg-version;/api -type d -exec chmod -c 0755 \{} 
       Next, execute FATE with the following commands (there are more than 3800
       tests in the suite):
     </para>
-@z
-
-@x
-<screen remap="test"><userinput>make fate THREADS=<replaceable>N</replaceable> SAMPLES=fate-suite/ | tee ../fate.log &amp;&amp;
-grep ^TEST ../fate.log | wc -l</userinput></screen>
-@y
-<screen remap="test"><userinput>make fate THREADS=<replaceable>N</replaceable> SAMPLES=fate-suite/ | tee ../fate.log &amp;&amp;
-grep ^TEST ../fate.log | wc -l</userinput></screen>
 @z
 
 @x
@@ -661,12 +395,6 @@ grep ^TEST ../fate.log | wc -l</userinput></screen>
      A successful run should return no errors or warnings, just a list of tests
      and total amount at the end.
    </para>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
 
 @x
@@ -735,14 +463,6 @@ grep ^TEST ../fate.log | wc -l</userinput></screen>
       <parameter>--enable-nonfree</parameter>: Enables the use of nonfree code.
       Note that the resulting libraries and binaries will be unredistributable.
     </para>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/static-libraries.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/static-libraries.xml"/>
 @z
 
 @x
@@ -944,15 +664,13 @@ grep ^TEST ../fate.log | wc -l</userinput></screen>
 @z
 
 @x
-    <para>
-      <option>--enable-vulkan</option>: Enables support for using Vulkan for
-      video acceleration.
-    </para>
+      <option>--disable-vulkan</option>: Disables Vulkan for the
+      current version of <xref linkend="vulkan-loader"/> due to
+      an API conflict.
 @y
-    <para>
-      <option>--enable-vulkan</option>: Enables support for using Vulkan for
-      video acceleration.
-    </para>
+      <option>--disable-vulkan</option>: Disables Vulkan for the
+      current version of <xref linkend="vulkan-loader"/> due to
+      an API conflict.
 @z
 
 @x
@@ -1011,12 +729,6 @@ grep ^TEST ../fate.log | wc -l</userinput></screen>
         about enabling dependency packages.
       </para>
     </note>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
 
 @x
@@ -1443,22 +1155,4 @@ grep ^TEST ../fate.log | wc -l</userinput></screen>
           </indexterm>
         </listitem>
       </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

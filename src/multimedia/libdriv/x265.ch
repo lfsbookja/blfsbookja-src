@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY x265-time          "0.9 SBU (using parallelism=4)">
+  <!ENTITY x265-time          "0.5 SBU (using parallelism=4)">
 @y
-  <!ENTITY x265-time          "0.9 SBU (using parallelism=4)">
+  <!ENTITY x265-time          "0.5 SBU (using parallelism=4)">
 @z
 
 @x
@@ -27,12 +27,6 @@
       <application>x265</application> package provides a library for encoding
       video streams into the H.265/HEVC format.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

@@ -97,8 +97,10 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <phrase revision="sysv"><xref role="runtime"
-                                    linkend="elogind"/> (runtime),</phrase>
+      <phrase revision="sysv"><xref linkend='dbus'/>,
+      <xref role="runtime" linkend="elogind"/> (runtime;
+      <systemitem class='library'>libelogind</systemitem> also referred
+      at build time but it's not really useful),</phrase>
       <xref linkend="libepoxy"/> (needed for glamor),
       <xref linkend="libtirpc"/>,
       <phrase revision="systemd"><xref role="runtime"
@@ -108,8 +110,10 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <phrase revision="sysv"><xref role="runtime"
-                                    linkend="elogind"/> (runtime),</phrase>
+      <phrase revision="sysv"><xref linkend='dbus'/>,
+      <xref role="runtime" linkend="elogind"/> (runtime;
+      <systemitem class='library'>libelogind</systemitem> also referred
+      at build time but it's not really useful),</phrase>
       <xref linkend="libepoxy"/> (needed for glamor),
       <xref linkend="libtirpc"/>,
       <phrase revision="systemd"><xref role="runtime"
