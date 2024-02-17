@@ -4,50 +4,16 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gi-docgen-download-http "https://files.pythonhosted.org/packages/source/g/gi-docgen/gi-docgen-&gi-docgen-version;.tar.gz">
-  <!ENTITY gi-docgen-download-ftp  " ">
-  <!ENTITY gi-docgen-md5sum        "&gi-docgen-md5sum;">
-  <!ENTITY gi-docgen-size          "2.4 MB">
   <!ENTITY gi-docgen-buildsize     "18 MB (with tests)">
   <!ENTITY gi-docgen-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY gi-docgen-download-http "https://files.pythonhosted.org/packages/source/g/gi-docgen/gi-docgen-&gi-docgen-version;.tar.gz">
-  <!ENTITY gi-docgen-download-ftp  " ">
-  <!ENTITY gi-docgen-md5sum        "&gi-docgen-md5sum;">
-  <!ENTITY gi-docgen-size          "2.4 MB">
   <!ENTITY gi-docgen-buildsize     "18 MB (with tests)">
   <!ENTITY gi-docgen-time          "less than 0.1 SBU (with tests)">
-]>
 @z
 
 @x
-  <sect2 id="gi-docgen" xreflabel="Gi-DocGen-&gi-docgen-version;">
-@y
-  <sect2 id="gi-docgen" xreflabel="Gi-DocGen-&gi-docgen-version;">
-@z
-
-@x
-    <title>Gi-DocGen-&gi-docgen-version;</title>
-@y
-    <title>Gi-DocGen-&gi-docgen-version;</title>
-@z
-
-@x
-    <indexterm zone="gi-docgen">
-      <primary sortas="a-gi-docgen">gi-docgen</primary>
-    </indexterm>
-@y
-    <indexterm zone="gi-docgen">
-      <primary sortas="a-gi-docgen">gi-docgen</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to Gi-DocGen Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Gi-DocGen Module</title>
 @z
 
@@ -67,12 +33,6 @@
         GObject-based libraries to generate the API reference of these
         libraries, as well as other ancillary documentation.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

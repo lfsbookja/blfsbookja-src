@@ -4,54 +4,14 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pyxdg-download-http
-           "https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-&pyxdg-version;.tar.gz">
-  <!ENTITY pyxdg-download-ftp  " ">
-  <!ENTITY pyxdg-md5sum        "d9a1d04fe60c956f5e3b9de3b4ef4722">
-  <!ENTITY pyxdg-size          "76 KB">
-  <!ENTITY pyxdg-buildsize     "808 KB">
   <!ENTITY pyxdg-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY pyxdg-download-http
-           "https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-&pyxdg-version;.tar.gz">
-  <!ENTITY pyxdg-download-ftp  " ">
-  <!ENTITY pyxdg-md5sum        "d9a1d04fe60c956f5e3b9de3b4ef4722">
-  <!ENTITY pyxdg-size          "76 KB">
-  <!ENTITY pyxdg-buildsize     "808 KB">
   <!ENTITY pyxdg-time          "less than 0.1 SBU">
-]>
 @z
 
 @x
-  <!-- Begin PyXDG -->
-  <sect2 id="pyxdg" xreflabel="PyXDG-&pyxdg-version;">
-@y
-  <!-- Begin PyXDG -->
-  <sect2 id="pyxdg" xreflabel="PyXDG-&pyxdg-version;">
-@z
-
-@x
-    <title>PyXDG-&pyxdg-version;</title>
-@y
-    <title>PyXDG-&pyxdg-version;</title>
-@z
-
-@x
-    <indexterm zone="pyxdg">
-      <primary sortas="a-PyXDG">PyXDG</primary>
-    </indexterm>
-@y
-    <indexterm zone="pyxdg">
-      <primary sortas="a-PyXDG">PyXDG</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to PyXDG Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to PyXDG Module</title>
 @z
 
@@ -65,12 +25,6 @@
         <application>PyXDG</application> is a <application>Python</application>
         library to access freedesktop.org standards.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

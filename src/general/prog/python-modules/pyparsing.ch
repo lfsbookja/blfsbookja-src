@@ -4,50 +4,16 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pyparsing-download-http "https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-&pyparsing-version;.tar.gz">
-  <!ENTITY pyparsing-download-ftp  " ">
-  <!ENTITY pyparsing-md5sum        "&pyparsing-md5sum;">
-  <!ENTITY pyparsing-size          "868 KB">
   <!ENTITY pyparsing-buildsize     "3.3 MB (add 27 MB for tests)">
   <!ENTITY pyparsing-time          "less than 0.1 SBU (0.3 SBU for tests)">
-]>
 @y
-  <!ENTITY pyparsing-download-http "https://files.pythonhosted.org/packages/source/p/pyparsing/pyparsing-&pyparsing-version;.tar.gz">
-  <!ENTITY pyparsing-download-ftp  " ">
-  <!ENTITY pyparsing-md5sum        "&pyparsing-md5sum;">
-  <!ENTITY pyparsing-size          "868 KB">
   <!ENTITY pyparsing-buildsize     "3.3 MB (add 27 MB for tests)">
   <!ENTITY pyparsing-time          "less than 0.1 SBU (0.3 SBU for tests)">
-]>
 @z
 
 @x
-  <sect2 id="pyparsing" xreflabel="pyparsing-&pyparsing-version;">
-@y
-  <sect2 id="pyparsing" xreflabel="pyparsing-&pyparsing-version;">
-@z
-
-@x
-    <title>pyparsing-&pyparsing-version;</title>
-@y
-    <title>pyparsing-&pyparsing-version;</title>
-@z
-
-@x
-    <indexterm zone="pyparsing">
-      <primary sortas="a-pyparsing">pyparsing</primary>
-    </indexterm>
-@y
-    <indexterm zone="pyparsing">
-      <primary sortas="a-pyparsing">pyparsing</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to pyparsing Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to pyparsing Module</title>
 @z
 
@@ -67,12 +33,6 @@
         It provides a library of classes that client code uses to construct
         the grammar directly in Python code.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

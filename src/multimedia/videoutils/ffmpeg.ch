@@ -622,6 +622,30 @@
 @z
 
 @x
+      <parameter>--disable-vulkan</parameter>: Disables Vulkan for the
+      current version of <xref linkend="vulkan-loader"/> due to
+      an API conflict.
+@y
+      <parameter>--disable-vulkan</parameter>: Disables Vulkan for the
+      current version of <xref linkend="vulkan-loader"/> due to
+      an API conflict.
+@z
+
+@x
+      <parameter>--ignore-tests=...</parameter>: Disables tests that fail to
+      run on
+      BLFS without the optional packages. Currently the AV1 test is disabled 
+      as it needs dav1d to do AV1 decoding on the CPU. The test might work if 
+      you have a GPU that can decode AV1, but this was not tested.
+@y
+      <parameter>--ignore-tests=...</parameter>: Disables tests that fail to
+      run on
+      BLFS without the optional packages. Currently the AV1 test is disabled 
+      as it needs dav1d to do AV1 decoding on the CPU. The test might work if 
+      you have a GPU that can decode AV1, but this was not tested.
+@z
+
+@x
     <para>
       <option>--enable-gnutls</option>: Use this option instead of
       <parameter>--enable-openssl</parameter>, if you want to use
@@ -660,32 +684,6 @@
     <para>
       <option>--enable-libpulse</option>: Enables support for
       <application>Pulseaudio</application> for audio output.
-    </para>
-@z
-
-@x
-      <option>--disable-vulkan</option>: Disables Vulkan for the
-      current version of <xref linkend="vulkan-loader"/> due to
-      an API conflict.
-@y
-      <option>--disable-vulkan</option>: Disables Vulkan for the
-      current version of <xref linkend="vulkan-loader"/> due to
-      an API conflict.
-@z
-
-@x
-    <para>
-      <option>--ignore-tests=...</option>: Disables tests that fail to run on
-      BLFS without the optional packages. Currently the AV1 test is disabled 
-      as it needs dav1d to do AV1 decoding on the CPU. The test might work if 
-      you have a GPU that can decode AV1, but this was not tested.
-    </para>
-@y
-    <para>
-      <option>--ignore-tests=...</option>: Disables tests that fail to run on
-      BLFS without the optional packages. Currently the AV1 test is disabled 
-      as it needs dav1d to do AV1 decoding on the CPU. The test might work if 
-      you have a GPU that can decode AV1, but this was not tested.
     </para>
 @z
 

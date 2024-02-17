@@ -4,50 +4,14 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY typogrify-download-http "https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-&typogrify-version;.tar.gz">
-  <!ENTITY typogrify-download-ftp  " ">
-  <!ENTITY typogrify-md5sum        "&typogrify-md5sum;">
-  <!ENTITY typogrify-size          "13 KB">
-  <!ENTITY typogrify-buildsize     "404 KB">
   <!ENTITY typogrify-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY typogrify-download-http "https://files.pythonhosted.org/packages/source/t/typogrify/typogrify-&typogrify-version;.tar.gz">
-  <!ENTITY typogrify-download-ftp  " ">
-  <!ENTITY typogrify-md5sum        "&typogrify-md5sum;">
-  <!ENTITY typogrify-size          "13 KB">
-  <!ENTITY typogrify-buildsize     "404 KB">
   <!ENTITY typogrify-time          "less than 0.1 SBU">
-]>
 @z
 
 @x
-  <sect2 id="typogrify" xreflabel="typogrify-&typogrify-version;">
-@y
-  <sect2 id="typogrify" xreflabel="typogrify-&typogrify-version;">
-@z
-
-@x
-    <title>Typogrify-&typogrify-version;</title>
-@y
-    <title>Typogrify-&typogrify-version;</title>
-@z
-
-@x
-    <indexterm zone="typogrify">
-      <primary sortas="a-typogrify">typogrify</primary>
-    </indexterm>
-@y
-    <indexterm zone="typogrify">
-      <primary sortas="a-typogrify">typogrify</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to Typogrify Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Typogrify Module</title>
 @z
 
@@ -61,12 +25,6 @@
         <application>Typogrify</application> provides filters to enhance
         web typography, including support for Django and Jinja templates.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

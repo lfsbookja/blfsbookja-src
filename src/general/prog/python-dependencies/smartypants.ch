@@ -4,50 +4,14 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY smartypants-download-http "https://github.com/leohemsted/smartypants.py/archive/v&smartypants-version;/smartypants-&smartypants-version;.tar.gz">
-  <!ENTITY smartypants-download-ftp  " ">
-  <!ENTITY smartypants-md5sum        "27957540f4718e892039b2ed208c78f3">
-  <!ENTITY smartypants-size          "24 KB">
-  <!ENTITY smartypants-buildsize     "344 KB">
   <!ENTITY smartypants-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY smartypants-download-http "https://github.com/leohemsted/smartypants.py/archive/v&smartypants-version;/smartypants-&smartypants-version;.tar.gz">
-  <!ENTITY smartypants-download-ftp  " ">
-  <!ENTITY smartypants-md5sum        "27957540f4718e892039b2ed208c78f3">
-  <!ENTITY smartypants-size          "24 KB">
-  <!ENTITY smartypants-buildsize     "344 KB">
   <!ENTITY smartypants-time          "less than 0.1 SBU">
-]>
 @z
 
 @x
-  <sect2 id="smartypants" xreflabel="smartypants-&smartypants-version;">
-@y
-  <sect2 id="smartypants" xreflabel="smartypants-&smartypants-version;">
-@z
-
-@x
-    <title>Smartypants-&smartypants-version;</title>
-@y
-    <title>Smartypants-&smartypants-version;</title>
-@z
-
-@x
-    <indexterm zone="smartypants">
-      <primary sortas="a-smartypants">smartypants</primary>
-    </indexterm>
-@y
-    <indexterm zone="smartypants">
-      <primary sortas="a-smartypants">smartypants</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to Smartypants Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Smartypants Module</title>
 @z
 
@@ -63,12 +27,6 @@
         punctuation characters into <quote>smart</quote> typographic
         punctuation HTML entities.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

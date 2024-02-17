@@ -4,54 +4,8 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pygtk-download-http
-           "&gnome-download-http;/pygtk/2.24/pygtk-&pygtk-version;.tar.bz2">
-  <!ENTITY pygtk-download-ftp  " ">
-  <!ENTITY pygtk-md5sum        "a1051d5794fd7696d3c1af6422d17a49">
-  <!ENTITY pygtk-size          "2.2 MB">
-  <!ENTITY pygtk-buildsize     "83 MB">
-  <!ENTITY pygtk-time          "0.7 SBU">
-]>
-@y
-  <!ENTITY pygtk-download-http
-           "&gnome-download-http;/pygtk/2.24/pygtk-&pygtk-version;.tar.bz2">
-  <!ENTITY pygtk-download-ftp  " ">
-  <!ENTITY pygtk-md5sum        "a1051d5794fd7696d3c1af6422d17a49">
-  <!ENTITY pygtk-size          "2.2 MB">
-  <!ENTITY pygtk-buildsize     "83 MB">
-  <!ENTITY pygtk-time          "0.7 SBU">
-]>
-@z
-
-@x
-   <!-- Begin PyGTK -->
-  <sect2 id="pygtk" xreflabel="PyGTK-&pygtk-version;">
-@y
-   <!-- Begin PyGTK -->
-  <sect2 id="pygtk" xreflabel="PyGTK-&pygtk-version;">
-@z
-
-@x
-    <title>PyGTK-&pygtk-version;</title>
-@y
-    <title>PyGTK-&pygtk-version;</title>
-@z
-
-@x
-    <indexterm zone="pygtk">
-      <primary sortas="a-PyGTK">PyGTK</primary>
-    </indexterm>
-@y
-    <indexterm zone="pygtk">
-      <primary sortas="a-PyGTK">PyGTK</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to PyGTK Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to PyGTK Module</title>
 @z
 
@@ -65,12 +19,6 @@
         PyGTK lets you to easily create programs with a graphical user interface
         using the <application>Python</application> programming language.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

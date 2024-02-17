@@ -3,64 +3,17 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY attrs-download-http "https://files.pythonhosted.org/packages/source/a/attrs/attrs-&attrs-version;.tar.gz">
-  <!ENTITY attrs-download-ftp  " ">
-  <!ENTITY attrs-md5sum        "eff16b3bbd0d9b72e118cca83a19d380">
-  <!ENTITY attrs-size          "211 KB">
   <!ENTITY attrs-buildsize     "2 MB (add 53 MB for tests)">
   <!ENTITY attrs-time          "less than 0.1 SBU (0.2 SBU for tests)">
-]>
 @y
-  <!ENTITY attrs-download-http "https://files.pythonhosted.org/packages/source/a/attrs/attrs-&attrs-version;.tar.gz">
-  <!ENTITY attrs-download-ftp  " ">
-  <!ENTITY attrs-md5sum        "eff16b3bbd0d9b72e118cca83a19d380">
-  <!ENTITY attrs-size          "211 KB">
   <!ENTITY attrs-buildsize     "2 MB (add 53 MB for tests)">
   <!ENTITY attrs-time          "less than 0.1 SBU (0.2 SBU for tests)">
-]>
 @z
 
 @x
-  <sect2 id="attrs" xreflabel="attrs-&attrs-version;">
-@y
-  <sect2 id="attrs" xreflabel="attrs-&attrs-version;">
-@z
-
-@x
-    <title>Attrs-&attrs-version;</title>
-@y
-    <title>Attrs-&attrs-version;</title>
-@z
-
-@x
-    <indexterm zone="attrs">
-      <primary sortas="a-attrs">attrs</primary>
-    </indexterm>
-@y
-    <indexterm zone="attrs">
-      <primary sortas="a-attrs">attrs</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to Attrs Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Attrs Module</title>
 @z
 
@@ -76,12 +29,6 @@
         the <application>sphinx</application> documentation system. Although
         developed separately, it is the default theme for sphinx.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x
