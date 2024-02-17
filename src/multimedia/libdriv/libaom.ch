@@ -12,36 +12,6 @@
 @z
 
 @x
-<!-- Tests not run for version 3.6.1. -->
-@y
-<!-- Tests not run for version 3.6.1. -->
-@z
-
-@x
-<sect1 id="libaom" xreflabel="libaom-&libaom-version;">
-  <?dbhtml filename="libaom.html"?>
-@y
-<sect1 id="libaom" xreflabel="libaom-&libaom-version;">
-  <?dbhtml filename="libaom.html"?>
-@z
-
-@x
-  <title>libaom-&libaom-version;</title>
-@y
-  <title>libaom-&libaom-version;</title>
-@z
-
-@x
-  <indexterm zone="libaom">
-    <primary sortas="a-libaom">libaom</primary>
-  </indexterm>
-@y
-  <indexterm zone="libaom">
-    <primary sortas="a-libaom">libaom</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to libaom</title>
 @y
@@ -63,12 +33,6 @@
       patent free alternative to H.265, and is starting to be used throughout
       the internet.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

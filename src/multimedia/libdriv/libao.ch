@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libao-download-http "https://downloads.xiph.org/releases/ao/libao-&libao-version;.tar.gz">
-  <!ENTITY libao-download-ftp  " ">
-  <!ENTITY libao-md5sum        "9f5dd20d7e95fd0dd72df5353829f097">
-  <!ENTITY libao-size          "456 KB">
-  <!ENTITY libao-buildsize     "3.9 MB">
   <!ENTITY libao-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY libao-download-http "https://downloads.xiph.org/releases/ao/libao-&libao-version;.tar.gz">
-  <!ENTITY libao-download-ftp  " ">
-  <!ENTITY libao-md5sum        "9f5dd20d7e95fd0dd72df5353829f097">
-  <!ENTITY libao-size          "456 KB">
-  <!ENTITY libao-buildsize     "3.9 MB">
   <!ENTITY libao-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libao" xreflabel="libao-&libao-version;">
-  <?dbhtml filename="libao.html"?>
-@y
-<sect1 id="libao" xreflabel="libao-&libao-version;">
-  <?dbhtml filename="libao.html"?>
-@z
-
-@x
-  <title>Libao-&libao-version;</title>
-@y
-  <title>Libao-&libao-version;</title>
-@z
-
-@x
-  <indexterm zone="libao">
-    <primary sortas="a-Libao">Libao</primary>
-  </indexterm>
-@y
-  <indexterm zone="libao">
-    <primary sortas="a-Libao">Libao</primary>
-  </indexterm>
 @z
 
 @x
@@ -73,12 +37,6 @@
       Synthesizer), and PulseAudio (next generation
       <application>GNOME</application> sound architecture).
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

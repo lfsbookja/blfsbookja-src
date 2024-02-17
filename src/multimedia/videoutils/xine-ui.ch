@@ -28,12 +28,6 @@
 @z
 
 @x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
-@z
-
-@x
     <note>
       <para>
         Although this version of xine-ui works with most files, it

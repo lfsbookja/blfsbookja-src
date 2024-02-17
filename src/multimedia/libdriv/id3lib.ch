@@ -4,10 +4,8 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to id3lib</title>
 @y
-  <sect2 role="package">
     <title>Introduction to id3lib</title>
 @z
 
@@ -21,12 +19,6 @@
       <application>id3lib</application> is a library for reading,
       writing and manipulating id3v1 and id3v2 multimedia data containers.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
