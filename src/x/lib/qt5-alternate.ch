@@ -72,12 +72,6 @@
 @z
 
 @x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
-@z
-
-@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
       <listitem>
@@ -168,6 +162,12 @@
           and <ulink url="https://community.kde.org/Qt5PatchCollection"/>.
         </para>
       </listitem>
+      <listitem>
+        <para>
+          Required patch:
+          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt5-version;-security_fix-1.patch"/>
+        </para>
+      </listitem>
     </itemizedlist>
 @y
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
@@ -188,6 +188,12 @@
           Details of the kde curation can be found at
           <ulink url="https://dot.kde.org/2021/04/06/announcing-kdes-qt-5-patch-collection"/>
           and <ulink url="https://community.kde.org/Qt5PatchCollection"/>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Required patch:
+          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt5-version;-security_fix-1.patch"/>
         </para>
       </listitem>
     </itemizedlist>
@@ -288,12 +294,6 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
   <sect2 role="qt5-prefix">
     <title>Setting the installation prefix</title>
 @y
@@ -324,12 +324,6 @@
 @z
 
 @x
-<screen><userinput>export QT5PREFIX=/opt/qt5</userinput></screen>
-@y
-<screen><userinput>export QT5PREFIX=/opt/qt5</userinput></screen>
-@z
-
-@x
     <tip>
       <para>
         Sometimes, the installation paths are hardcoded into installed files.
@@ -352,14 +346,6 @@
 @z
 
 @x
-<screen role="root"><userinput>mkdir -pv /opt/qt-&qt5-version;
-ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
-@y
-<screen role="root"><userinput>mkdir -pv /opt/qt-&qt5-version;
-ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
-@z
-
-@x
       <para>
         Later on, you may want to install other versions of
         <application>qt5</application>. To do that, just remove the symlink
@@ -377,12 +363,6 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
         use depends only on where the symlink points.
       </para>
     </tip>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
 
 @x
@@ -464,30 +444,6 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
 @z
 
 @x
-<screen role="nodump"><userinput>            -archdatadir    /usr/lib/qt5                \
-            -bindir         /usr/bin                    \
-            -plugindir      /usr/lib/qt5/plugins        \
-            -importdir      /usr/lib/qt5/imports        \
-            -headerdir      /usr/include/qt5            \
-            -datadir        /usr/share/qt5              \
-            -docdir         /usr/share/doc/qt5          \
-            -translationdir /usr/share/qt5/translations \
-            -examplesdir    /usr/share/doc/qt5/examples</userinput></screen>
-    </note>
-@y
-<screen role="nodump"><userinput>            -archdatadir    /usr/lib/qt5                \
-            -bindir         /usr/bin                    \
-            -plugindir      /usr/lib/qt5/plugins        \
-            -importdir      /usr/lib/qt5/imports        \
-            -headerdir      /usr/include/qt5            \
-            -datadir        /usr/share/qt5              \
-            -docdir         /usr/share/doc/qt5          \
-            -translationdir /usr/share/qt5/translations \
-            -examplesdir    /usr/share/doc/qt5/examples</userinput></screen>
-    </note>
-@z
-
-@x
     <para>
       Now apply a patch to pull in the fixes curated by kde for those
       modules which are required by packages mentioned in this book:
@@ -497,12 +453,6 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
       Now apply a patch to pull in the fixes curated by kde for those
       modules which are required by packages mentioned in this book:
     </para>
-@z
-
-@x
-<screen><userinput remap="pre">patch -Np1 -i ../qt-everywhere-opensource-src-&qt5-version;-kf5-1.patch</userinput></screen>
-@y
-<screen><userinput remap="pre">patch -Np1 -i ../qt-everywhere-opensource-src-&qt5-version;-kf5-1.patch</userinput></screen>
 @z
 
 @x
@@ -526,27 +476,9 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
 @z
 
 @x
-    <screen><userinput remap="pre">mkdir -pv qtbase/.git</userinput></screen>
-@y
-    <screen><userinput remap="pre">mkdir -pv qtbase/.git</userinput></screen>
-@z
-
-@x
-    <para>
       At this point we want to set up skipping most components.  Do that with:
-    </para>
 @y
-    <para>
       At this point we want to set up skipping most components.  Do that with:
-    </para>
-@z
-
-@x
-<screen><userinput>ls -Fd qt* | grep / | sed 's/^/-skip /;s@/@@' > tempconf &amp;&amp;
-sed -i -r '/base|tools|x11extras|svg|declarative|wayland/d' tempconf</userinput></screen>
-@y
-<screen><userinput>ls -Fd qt* | grep / | sed 's/^/-skip /;s@/@@' > tempconf &amp;&amp;
-sed -i -r '/base|tools|x11extras|svg|declarative|wayland/d' tempconf</userinput></screen>
 @z
 
 @x
@@ -559,70 +491,6 @@ sed -i -r '/base|tools|x11extras|svg|declarative|wayland/d' tempconf</userinput>
       Now, install <application>qt5</application> by running the following
       commands:
     </para>
-@z
-
-@x
-<screen revision="sysv"><userinput>./configure -prefix $QT5PREFIX   \
-            -sysconfdir /etc/xdg \
-            -confirm-license     \
-            -opensource          \
-            -dbus-linked         \
-            -openssl-linked      \
-            -system-harfbuzz     \
-            -system-sqlite       \
-            -nomake examples     \
-            -no-rpath            \
-            -syslog              \
-            $(cat tempconf)      \
-            &amp;&amp;
-make</userinput></screen>
-@y
-<screen revision="sysv"><userinput>./configure -prefix $QT5PREFIX   \
-            -sysconfdir /etc/xdg \
-            -confirm-license     \
-            -opensource          \
-            -dbus-linked         \
-            -openssl-linked      \
-            -system-harfbuzz     \
-            -system-sqlite       \
-            -nomake examples     \
-            -no-rpath            \
-            -syslog              \
-            $(cat tempconf)      \
-            &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-<screen revision="systemd"><userinput>./configure -prefix $QT5PREFIX   \
-            -sysconfdir /etc/xdg \
-            -confirm-license     \
-            -opensource          \
-            -dbus-linked         \
-            -openssl-linked      \
-            -system-harfbuzz     \
-            -system-sqlite       \
-            -nomake examples     \
-            -no-rpath            \
-            -journald            \
-            $(cat tempconf)      \
-            &amp;&amp;
-make</userinput></screen>
-@y
-<screen revision="systemd"><userinput>./configure -prefix $QT5PREFIX   \
-            -sysconfdir /etc/xdg \
-            -confirm-license     \
-            -opensource          \
-            -dbus-linked         \
-            -openssl-linked      \
-            -system-harfbuzz     \
-            -system-sqlite       \
-            -nomake examples     \
-            -no-rpath            \
-            -journald            \
-            $(cat tempconf)      \
-            &amp;&amp;
-make</userinput></screen>
 @z
 
 @x
@@ -646,20 +514,6 @@ make</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-    <!-- EDITORS NOTE: This package uses INSTALL_ROOT= instead of DESTDIR= for
-         installing in a temporary directory. -->
-@y
-    <!-- EDITORS NOTE: This package uses INSTALL_ROOT= instead of DESTDIR= for
-         installing in a temporary directory. -->
-@z
-
-@x
     <para>
       Remove references to the build directory from installed library
       dependency (prl) files by running the following
@@ -671,14 +525,6 @@ make</userinput></screen>
       dependency (prl) files by running the following
       command as the <systemitem class="username">root</systemitem> user:
     </para>
-@z
-
-@x
-<screen role="root"><userinput>find $QT5PREFIX/ -name \*.prl \
-   -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;</userinput></screen>
-@y
-<screen role="root"><userinput>find $QT5PREFIX/ -name \*.prl \
-   -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;</userinput></screen>
 @z
 
 @x
@@ -704,168 +550,6 @@ make</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>QT5BINDIR=$QT5PREFIX/bin
-@y
-<screen role="root"><userinput>QT5BINDIR=$QT5PREFIX/bin
-@z
-
-@x
-install -v -dm755 /usr/share/pixmaps/                  &amp;&amp;
-@y
-install -v -dm755 /usr/share/pixmaps/                  &amp;&amp;
-@z
-
-@x
-install -v -Dm644 qttools/src/assistant/assistant/images/assistant-128.png \
-                  /usr/share/pixmaps/assistant-qt5.png &amp;&amp;
-@y
-install -v -Dm644 qttools/src/assistant/assistant/images/assistant-128.png \
-                  /usr/share/pixmaps/assistant-qt5.png &amp;&amp;
-@z
-
-@x
-install -v -Dm644 qttools/src/designer/src/designer/images/designer.png \
-                  /usr/share/pixmaps/designer-qt5.png  &amp;&amp;
-@y
-install -v -Dm644 qttools/src/designer/src/designer/images/designer.png \
-                  /usr/share/pixmaps/designer-qt5.png  &amp;&amp;
-@z
-
-@x
-install -v -Dm644 qttools/src/linguist/linguist/images/icons/linguist-128-32.png \
-                  /usr/share/pixmaps/linguist-qt5.png  &amp;&amp;
-@y
-install -v -Dm644 qttools/src/linguist/linguist/images/icons/linguist-128-32.png \
-                  /usr/share/pixmaps/linguist-qt5.png  &amp;&amp;
-@z
-
-@x
-install -v -Dm644 qttools/src/qdbus/qdbusviewer/images/qdbusviewer-128.png \
-                  /usr/share/pixmaps/qdbusviewer-qt5.png &amp;&amp;
-@y
-install -v -Dm644 qttools/src/qdbus/qdbusviewer/images/qdbusviewer-128.png \
-                  /usr/share/pixmaps/qdbusviewer-qt5.png &amp;&amp;
-@z
-
-@x
-install -dm755 /usr/share/applications &amp;&amp;
-@y
-install -dm755 /usr/share/applications &amp;&amp;
-@z
-
-@x
-cat &gt; /usr/share/applications/assistant-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Assistant
-Comment=Shows Qt5 documentation and examples
-Exec=$QT5BINDIR/assistant
-Icon=assistant-qt5.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Documentation;</literal>
-EOF
-@y
-cat &gt; /usr/share/applications/assistant-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Assistant
-Comment=Shows Qt5 documentation and examples
-Exec=$QT5BINDIR/assistant
-Icon=assistant-qt5.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Documentation;</literal>
-EOF
-@z
-
-@x
-cat &gt; /usr/share/applications/designer-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Designer
-GenericName=Interface Designer
-Comment=Design GUIs for Qt5 applications
-Exec=$QT5BINDIR/designer
-Icon=designer-qt5.png
-MimeType=application/x-designer;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@y
-cat &gt; /usr/share/applications/designer-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Designer
-GenericName=Interface Designer
-Comment=Design GUIs for Qt5 applications
-Exec=$QT5BINDIR/designer
-Icon=designer-qt5.png
-MimeType=application/x-designer;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@z
-
-@x
-cat &gt; /usr/share/applications/linguist-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Linguist
-Comment=Add translations to Qt5 applications
-Exec=$QT5BINDIR/linguist
-Icon=linguist-qt5.png
-MimeType=text/vnd.trolltech.linguist;application/x-linguist;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@y
-cat &gt; /usr/share/applications/linguist-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Linguist
-Comment=Add translations to Qt5 applications
-Exec=$QT5BINDIR/linguist
-Icon=linguist-qt5.png
-MimeType=text/vnd.trolltech.linguist;application/x-linguist;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@z
-
-@x
-cat &gt; /usr/share/applications/qdbusviewer-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 QDbusViewer
-GenericName=D-Bus Debugger
-Comment=Debug D-Bus applications
-Exec=$QT5BINDIR/qdbusviewer
-Icon=qdbusviewer-qt5.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Debugger;</literal>
-EOF</userinput></screen>
-@y
-cat &gt; /usr/share/applications/qdbusviewer-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 QDbusViewer
-GenericName=D-Bus Debugger
-Comment=Debug D-Bus applications
-Exec=$QT5BINDIR/qdbusviewer
-Icon=qdbusviewer-qt5.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Debugger;</literal>
-EOF</userinput></screen>
-@z
-
-@x
     <para>
       Some packages such as <xref linkend='vlc'/> look for certain
       executables with a -qt5 suffix.  Run the following command as the
@@ -879,22 +563,6 @@ EOF</userinput></screen>
       <systemitem class="username">root</systemitem> user
       to create the necessary symlinks:
     </para>
-@z
-
-@x
-<screen role="root"><userinput>for file in moc uic rcc qmake lconvert lrelease lupdate; do
-  ln -sfvn $QT5BINDIR/$file /usr/bin/$file-qt5
-done</userinput></screen>
-@y
-<screen role="root"><userinput>for file in moc uic rcc qmake lconvert lrelease lupdate; do
-  ln -sfvn $QT5BINDIR/$file /usr/bin/$file-qt5
-done</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
 
 @x
@@ -1030,12 +698,6 @@ done</userinput></screen>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
   <sect2 role="configuration">
     <title>Configuring qt5</title>
 @y
@@ -1066,16 +728,6 @@ done</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>cat &gt; /etc/sudoers.d/qt &lt;&lt; "EOF"
-<literal>Defaults env_keep += QT5DIR</literal>
-EOF</userinput></screen>
-@y
-<screen role="root"><userinput>cat &gt; /etc/sudoers.d/qt &lt;&lt; "EOF"
-<literal>Defaults env_keep += QT5DIR</literal>
-EOF</userinput></screen>
-@z
-
-@x
       <bridgehead renderas="sect4">If you installed qt5 in /usr</bridgehead>
 @y
       <bridgehead renderas="sect4">If you installed qt5 in /usr</bridgehead>
@@ -1095,30 +747,6 @@ EOF</userinput></screen>
         environment variable needed by certain packages.
         As the <systemitem class="username">root</systemitem> user:
       </para>
-@z
-
-@x
-<screen role="nodump"><userinput>cat &gt; /etc/profile.d/qt5.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt5.sh
-@y
-<screen role="nodump"><userinput>cat &gt; /etc/profile.d/qt5.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt5.sh
-@z
-
-@x
-QT5DIR=/usr
-export QT5DIR
-@y
-QT5DIR=/usr
-export QT5DIR
-@z
-
-@x
-# End /etc/profile.d/qt5.sh</literal>
-EOF</userinput></screen>
-@y
-# End /etc/profile.d/qt5.sh</literal>
-EOF</userinput></screen>
 @z
 
 @x
@@ -1158,34 +786,6 @@ EOF</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>cat &gt;&gt; /etc/ld.so.conf &lt;&lt; EOF
-<literal># Begin Qt addition
-@y
-<screen role="root"><userinput>cat &gt;&gt; /etc/ld.so.conf &lt;&lt; EOF
-<literal># Begin Qt addition
-@z
-
-@x
-/opt/qt5/lib
-@y
-/opt/qt5/lib
-@z
-
-@x
-# End Qt addition</literal>
-EOF
-@y
-# End Qt addition</literal>
-EOF
-@z
-
-@x
-ldconfig</userinput></screen>
-@y
-ldconfig</userinput></screen>
-@z
-
-@x
       <indexterm zone="qt5 qt5-config">
         <primary sortas="e-etc-ld.so.conf">/etc/ld.so.conf</primary>
       </indexterm>
@@ -1208,58 +808,8 @@ ldconfig</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>cat &gt; /etc/profile.d/qt5.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt5.sh
-@y
-<screen role="root"><userinput>cat &gt; /etc/profile.d/qt5.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt5.sh
-@z
-
-@x
-QT5DIR=/opt/qt5
-@y
-QT5DIR=/opt/qt5
-@z
-
-@x
-pathappend $QT5DIR/bin           PATH
-pathappend $QT5DIR/lib/pkgconfig PKG_CONFIG_PATH
-@y
-pathappend $QT5DIR/bin           PATH
-pathappend $QT5DIR/lib/pkgconfig PKG_CONFIG_PATH
-@z
-
-@x
-export QT5DIR
-@y
-export QT5DIR
-@z
-
-@x
-# End /etc/profile.d/qt5.sh</literal>
-EOF</userinput></screen>
-@y
-# End /etc/profile.d/qt5.sh</literal>
-EOF</userinput></screen>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
@@ -1441,16 +991,4 @@ EOF</userinput></screen>
 @y
     <bridgehead renderas="sect3">Short Descriptions</bridgehead>
     <para>See <xref linkend="qt5-descriptions"/></para>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

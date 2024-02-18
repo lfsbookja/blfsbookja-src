@@ -42,12 +42,6 @@
 @z
 
 @x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
-@z
-
-@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
       <listitem>
@@ -138,6 +132,12 @@
           and <ulink url="https://community.kde.org/Qt5PatchCollection"/>.
         </para>
       </listitem>
+      <listitem>
+        <para>
+          Required patch:
+          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt5-version;-security_fix-1.patch"/>
+        </para>
+      </listitem>
     </itemizedlist>
 @y
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
@@ -158,6 +158,12 @@
           Details of the kde curation can be found at
           <ulink url="https://dot.kde.org/2021/04/06/announcing-kdes-qt-5-patch-collection"/>
           and <ulink url="https://community.kde.org/Qt5PatchCollection"/>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Required patch:
+          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt5-version;-security_fix-1.patch"/>
         </para>
       </listitem>
     </itemizedlist>
@@ -588,12 +594,6 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
 @z
 
 @x
-    <screen><userinput remap="pre">mkdir -pv qtbase/.git</userinput></screen>
-@y
-    <screen><userinput remap="pre">mkdir -pv qtbase/.git</userinput></screen>
-@z
-
-@x
     <para>
       Add another fix for building with GCC-13:
     </para>
@@ -604,25 +604,9 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
 @z
 
 @x
-<screen><userinput>sed -e "/pragma once/a#include &lt;cstdint&gt;"                                      \
-    -i qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/geometry.hpp \
-       qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/string.hpp   \
-       qtlocation/src/3rdparty/mapbox-gl-native/src/mbgl/gl/stencil_mode.hpp</userinput></screen>
-@y
-<screen><userinput>sed -e "/pragma once/a#include &lt;cstdint&gt;"                                      \
-    -i qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/geometry.hpp \
-       qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/string.hpp   \
-       qtlocation/src/3rdparty/mapbox-gl-native/src/mbgl/gl/stencil_mode.hpp</userinput></screen>
-@z
-
-@x
-    <para>
       Install <application>Qt5</application> by running the following commands:
-    </para>
 @y
-    <para>
       Install <application>Qt5</application> by running the following commands:
-    </para>
 @z
 
 @x

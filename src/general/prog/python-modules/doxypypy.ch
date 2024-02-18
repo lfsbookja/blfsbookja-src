@@ -4,43 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY doxypypy-download-http "https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-&doxypypy-version;.tar.gz">
-  <!ENTITY doxypypy-download-ftp  " ">
-  <!ENTITY doxypypy-md5sum        "&doxypypy-md5sum;">
-  <!ENTITY doxypypy-size          "45 KB">
-  <!ENTITY doxypypy-buildsize     "2.1 MB">
   <!ENTITY doxypypy-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY doxypypy-download-http "https://files.pythonhosted.org/packages/source/d/doxypypy/doxypypy-&doxypypy-version;.tar.gz">
-  <!ENTITY doxypypy-download-ftp  " ">
-  <!ENTITY doxypypy-md5sum        "&doxypypy-md5sum;">
-  <!ENTITY doxypypy-size          "45 KB">
-  <!ENTITY doxypypy-buildsize     "2.1 MB">
   <!ENTITY doxypypy-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect2 id="doxypypy" xreflabel="doxypypy-&doxypypy-version;">
-@y
-  <sect2 id="doxypypy" xreflabel="doxypypy-&doxypypy-version;">
-@z
-
-@x
-    <title>Doxypypy-&doxypypy-version;</title>
-@y
-    <title>Doxypypy-&doxypypy-version;</title>
-@z
-
-@x
-    <indexterm zone="doxypypy">
-      <primary sortas="a-doxypypy">doxypypy</primary>
-    </indexterm>
-@y
-    <indexterm zone="doxypypy">
-      <primary sortas="a-doxypypy">doxypypy</primary>
-    </indexterm>
 @z
 
 @x
@@ -61,12 +27,6 @@
         The <application>Doxypypy</application> package is a doxygen filter
         for python.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

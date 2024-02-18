@@ -153,13 +153,13 @@
       <bridgehead renderas="sect5">Required (gtk and gtk.unixprint modules)</bridgehead>
       <para role="required">
         <xref linkend="pycairo2"/> and
-        <xref linkend="gtk2"/>.
+        <xref linkend="gtk2"/>
       </para>
 @y
       <bridgehead renderas="sect5">Required (gtk and gtk.unixprint modules)</bridgehead>
       <para role="required">
-        <xref linkend="pycairo2"/> and
-        <xref linkend="gtk2"/>.
+        <xref linkend="pycairo2"/>,
+        <xref linkend="gtk2"/>
       </para>
 @z
 
@@ -167,25 +167,27 @@
       <bridgehead renderas="sect5">Required (gtk.glade module)</bridgehead>
       <para role="required">
         <xref linkend="pycairo2"/> and
-        <xref linkend="libglade"/>.
+        <xref linkend="libglade"/>
       </para>
 @y
       <bridgehead renderas="sect5">Required (gtk.glade module)</bridgehead>
       <para role="required">
-        <xref linkend="pycairo2"/> and
-        <xref linkend="libglade"/>.
+        <xref linkend="pycairo2"/>,
+        <xref linkend="libglade"/>
       </para>
 @z
 
 @x
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
-        <ulink url="https://www.numpy.org/">NumPy</ulink>
+        <xref linkend="numpy"/>
+        <!--<ulink url="https://www.numpy.org/">NumPy</ulink>-->
       </para>
 @y
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
-        <ulink url="https://www.numpy.org/">NumPy</ulink>
+        <xref linkend="numpy"/>
+        <!--<ulink url="https://www.numpy.org/">NumPy</ulink>-->
       </para>
 @z
 
@@ -199,12 +201,6 @@
       <para role="optional">
         <xref linkend="libxslt"/>
       </para>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
 @z
 
 @x
@@ -228,12 +224,6 @@
 @z
 
 @x
-<screen><userinput remap="pre">sed -i '1394,1402 d' pango.defs</userinput></screen>
-@y
-<screen><userinput remap="pre">sed -i '1394,1402 d' pango.defs</userinput></screen>
-@z
-
-@x
       <para>
         Install <application>PyGTK</application> by running the following
         commands:
@@ -243,14 +233,6 @@
         Install <application>PyGTK</application> by running the following
         commands:
       </para>
-@z
-
-@x
-<screen><userinput>./configure --prefix=/usr &amp;&amp;
-make</userinput></screen>
-@y
-<screen><userinput>./configure --prefix=/usr &amp;&amp;
-make</userinput></screen>
 @z
 
 @x
@@ -273,14 +255,6 @@ make</userinput></screen>
       <para>
         Now, as the <systemitem class="username">root</systemitem> user:
       </para>
-@z
-
-@x
-<screen role="root"><userinput>make install</userinput></screen>
-    </sect3>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-    </sect3>
 @z
 
 @x
@@ -437,10 +411,4 @@ make</userinput></screen>
         </varlistentry>
       </variablelist>
     </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z

@@ -3,66 +3,17 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY libmbim-download-http "https://www.freedesktop.org/software/libmbim/libmbim-&libmbim-version;.tar.xz">
-  <!ENTITY libmbim-download-ftp  " ">
-  <!ENTITY libmbim-md5sum        "58dea20cad346f31d2873b68385a9973">
-  <!ENTITY libmbim-size          "553 KB">
   <!ENTITY libmbim-buildsize     "33 MB (with tests)">
   <!ENTITY libmbim-time          "0.2 SBU (with tests)">
-]>
 @y
-  <!ENTITY libmbim-download-http "https://www.freedesktop.org/software/libmbim/libmbim-&libmbim-version;.tar.xz">
-  <!ENTITY libmbim-download-ftp  " ">
-  <!ENTITY libmbim-md5sum        "58dea20cad346f31d2873b68385a9973">
-  <!ENTITY libmbim-size          "553 KB">
   <!ENTITY libmbim-buildsize     "33 MB (with tests)">
   <!ENTITY libmbim-time          "0.2 SBU (with tests)">
-]>
 @z
 
 @x
-<sect1 id="libmbim" xreflabel="libmbim-&libmbim-version;">
-  <?dbhtml filename="libmbim.html"?>
-@y
-<sect1 id="libmbim" xreflabel="libmbim-&libmbim-version;">
-  <?dbhtml filename="libmbim.html"?>
-@z
-
-@x
-  <title>libmbim-&libmbim-version;</title>
-@y
-  <title>libmbim-&libmbim-version;</title>
-@z
-
-@x
-  <indexterm zone="libmbim">
-    <primary sortas="a-libmbim">libmbim</primary>
-  </indexterm>
-@y
-  <indexterm zone="libmbim">
-    <primary sortas="a-libmbim">libmbim</primary>
-  </indexterm>
-@z
-
-@x
-  <sect2 role="package">
     <title>Introduction to libmbim</title>
 @y
-  <sect2 role="package">
     <title>Introduction to libmbim</title>
 @z
 
@@ -78,12 +29,6 @@
       for talking to WWAN modems and devices which speak the Mobile Interface
       Broadband Model (MBIM) protocol.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

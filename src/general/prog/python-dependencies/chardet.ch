@@ -3,64 +3,17 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY chardet-download-http "https://files.pythonhosted.org/packages/source/c/chardet/chardet-&chardet-version;.tar.gz">
-  <!ENTITY chardet-download-ftp  " ">
-  <!ENTITY chardet-md5sum        "&chardet-md5sum;">
-  <!ENTITY chardet-size          "2 MB">
   <!ENTITY chardet-buildsize     "13 MB (add 1.1 MB for tests)">
   <!ENTITY chardet-time          "less than 0.1 SBU (0.3 SBU for tests)">
-]>
 @y
-  <!ENTITY chardet-download-http "https://files.pythonhosted.org/packages/source/c/chardet/chardet-&chardet-version;.tar.gz">
-  <!ENTITY chardet-download-ftp  " ">
-  <!ENTITY chardet-md5sum        "&chardet-md5sum;">
-  <!ENTITY chardet-size          "2 MB">
   <!ENTITY chardet-buildsize     "13 MB (add 1.1 MB for tests)">
   <!ENTITY chardet-time          "less than 0.1 SBU (0.3 SBU for tests)">
-]>
 @z
 
 @x
-  <sect2 id="chardet" xreflabel="chardet-&chardet-version;">
-@y
-  <sect2 id="chardet" xreflabel="chardet-&chardet-version;">
-@z
-
-@x
-    <title>Chardet-&chardet-version;</title>
-@y
-    <title>Chardet-&chardet-version;</title>
-@z
-
-@x
-    <indexterm zone="chardet">
-      <primary sortas="a-chardet">chardet</primary>
-    </indexterm>
-@y
-    <indexterm zone="chardet">
-      <primary sortas="a-chardet">chardet</primary>
-    </indexterm>
-@z
-
-@x
-    <sect3 role="package">
       <title>Introduction to chardet Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to chardet Module</title>
 @z
 
@@ -74,12 +27,6 @@
         <application>Chardet</application> is a universal character
         encoding detector.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

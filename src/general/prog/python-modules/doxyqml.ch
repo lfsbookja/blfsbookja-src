@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY doxyqml-download-http "https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-&doxyqml-version;.tar.gz">
-  <!ENTITY doxyqml-download-ftp  " ">
-  <!ENTITY doxyqml-md5sum        "&doxyqml-md5sum;">
-  <!ENTITY doxyqml-size          "28 KB">
   <!ENTITY doxyqml-buildsize     "652 KB (with tests)">
   <!ENTITY doxyqml-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY doxyqml-download-http "https://files.pythonhosted.org/packages/source/d/doxyqml/doxyqml-&doxyqml-version;.tar.gz">
-  <!ENTITY doxyqml-download-ftp  " ">
-  <!ENTITY doxyqml-md5sum        "&doxyqml-md5sum;">
-  <!ENTITY doxyqml-size          "28 KB">
   <!ENTITY doxyqml-buildsize     "652 KB (with tests)">
   <!ENTITY doxyqml-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="doxyqml" xreflabel="doxyqml-&doxyqml-version;">
-@y
-  <sect2 id="doxyqml" xreflabel="doxyqml-&doxyqml-version;">
-@z
-
-@x
-    <title>Doxyqml-&doxyqml-version;</title>
-@y
-    <title>Doxyqml-&doxyqml-version;</title>
-@z
-
-@x
-    <indexterm zone="doxyqml">
-      <primary sortas="a-doxyqml">doxyqml</primary>
-    </indexterm>
-@y
-    <indexterm zone="doxyqml">
-      <primary sortas="a-doxyqml">doxyqml</primary>
-    </indexterm>
 @z
 
 @x
@@ -61,12 +29,6 @@
         The <application>Doxyqml</application> package allows using Doxygen
         to document QML classes.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

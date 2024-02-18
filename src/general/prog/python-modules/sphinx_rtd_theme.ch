@@ -4,43 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sphinx_rtd_theme-download-http "https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-&sphinx_rtd_theme-version;.tar.gz">
-  <!ENTITY sphinx_rtd_theme-download-ftp  " ">
-  <!ENTITY sphinx_rtd_theme-md5sum        "&sphinx_rtd_theme-md5sum;">
-  <!ENTITY sphinx_rtd_theme-size          "2.7 MB">
   <!ENTITY sphinx_rtd_theme-buildsize     "36 MB (with tests)">
   <!ENTITY sphinx_rtd_theme-time          "0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY sphinx_rtd_theme-download-http "https://files.pythonhosted.org/packages/source/s/sphinx_rtd_theme/sphinx_rtd_theme-&sphinx_rtd_theme-version;.tar.gz">
-  <!ENTITY sphinx_rtd_theme-download-ftp  " ">
-  <!ENTITY sphinx_rtd_theme-md5sum        "&sphinx_rtd_theme-md5sum;">
-  <!ENTITY sphinx_rtd_theme-size          "2.7 MB">
   <!ENTITY sphinx_rtd_theme-buildsize     "36 MB (with tests)">
   <!ENTITY sphinx_rtd_theme-time          "0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="sphinx_rtd_theme" xreflabel="sphinx_rtd_theme-&sphinx_rtd_theme-version;">
-@y
-  <sect2 id="sphinx_rtd_theme" xreflabel="sphinx_rtd_theme-&sphinx_rtd_theme-version;">
-@z
-
-@x
-    <title>Sphinx_rtd_theme-&sphinx_rtd_theme-version;</title>
-@y
-    <title>Sphinx_rtd_theme-&sphinx_rtd_theme-version;</title>
-@z
-
-@x
-    <indexterm zone="sphinx_rtd_theme">
-      <primary sortas="a-sphinx_rtd_theme">sphinx_rtd_theme</primary>
-    </indexterm>
-@y
-    <indexterm zone="sphinx_rtd_theme">
-      <primary sortas="a-sphinx_rtd_theme">sphinx_rtd_theme</primary>
-    </indexterm>
 @z
 
 @x
@@ -65,12 +33,6 @@
         users on both desktop and mobile devices. This theme is used primarily
         on Read the Docs but can work with any Sphinx project.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

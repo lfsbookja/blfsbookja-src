@@ -3,57 +3,12 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect2 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY markdown-download-http "https://files.pythonhosted.org/packages/source/M/Markdown/Markdown-&markdown-version;.tar.gz">
-  <!ENTITY markdown-download-ftp  " ">
-  <!ENTITY markdown-md5sum        "&markdown-md5sum;">
-  <!ENTITY markdown-size          "315 KB">
   <!ENTITY markdown-buildsize     "4.1 MB (add 27 MB for tests)">
   <!ENTITY markdown-time          "less than 0.1 SBU (with tests)">
-]>
 @y
-  <!ENTITY markdown-download-http "https://files.pythonhosted.org/packages/source/M/Markdown/Markdown-&markdown-version;.tar.gz">
-  <!ENTITY markdown-download-ftp  " ">
-  <!ENTITY markdown-md5sum        "&markdown-md5sum;">
-  <!ENTITY markdown-size          "315 KB">
   <!ENTITY markdown-buildsize     "4.1 MB (add 27 MB for tests)">
   <!ENTITY markdown-time          "less than 0.1 SBU (with tests)">
-]>
-@z
-
-@x
-  <sect2 id="markdown" xreflabel="Markdown-&markdown-version;">
-@y
-  <sect2 id="markdown" xreflabel="Markdown-&markdown-version;">
-@z
-
-@x
-    <title>Markdown-&markdown-version;</title>
-@y
-    <title>Markdown-&markdown-version;</title>
-@z
-
-@x
-    <indexterm zone="markdown">
-      <primary sortas="a-Markdown">Markdown</primary>
-    </indexterm>
-@y
-    <indexterm zone="markdown">
-      <primary sortas="a-Markdown">Markdown</primary>
-    </indexterm>
 @z
 
 @x
@@ -74,12 +29,6 @@
         <application>Markdown</application> is a Python parser for
         John Gruber's Markdown specification.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x

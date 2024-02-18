@@ -4,43 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sc-jquery-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jquery/sphinxcontrib-jquery-&sc-jquery-version;.tar.gz">
-  <!ENTITY sc-jquery-download-ftp  " ">
-  <!ENTITY sc-jquery-md5sum        "&sc-jquery-md5sum;">
-  <!ENTITY sc-jquery-size          "120 KB">
-  <!ENTITY sc-jquery-buildsize     "552 KB">
   <!ENTITY sc-jquery-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY sc-jquery-download-http "https://files.pythonhosted.org/packages/source/s/sphinxcontrib-jquery/sphinxcontrib-jquery-&sc-jquery-version;.tar.gz">
-  <!ENTITY sc-jquery-download-ftp  " ">
-  <!ENTITY sc-jquery-md5sum        "&sc-jquery-md5sum;">
-  <!ENTITY sc-jquery-size          "120 KB">
-  <!ENTITY sc-jquery-buildsize     "552 KB">
   <!ENTITY sc-jquery-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-  <sect2 id="sc-jquery" xreflabel="sphinxcontrib-jquery-&sc-jquery-version;">
-@y
-  <sect2 id="sc-jquery" xreflabel="sphinxcontrib-jquery-&sc-jquery-version;">
-@z
-
-@x
-    <title>Sphinxcontrib-jquery-&sc-jquery-version;</title>
-@y
-    <title>Sphinxcontrib-jquery-&sc-jquery-version;</title>
-@z
-
-@x
-    <indexterm zone="sc-jquery">
-      <primary sortas="a-sphinxcontrib-jquery">sphinxcontrib-jquery</primary>
-    </indexterm>
-@y
-    <indexterm zone="sc-jquery">
-      <primary sortas="a-sphinxcontrib-jquery">sphinxcontrib-jquery</primary>
-    </indexterm>
 @z
 
 @x
@@ -63,12 +29,6 @@
         <application>Sphinx</application> extension which includes jQuery
         on newer Sphinx releases.
       </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x
