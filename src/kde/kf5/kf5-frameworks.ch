@@ -333,20 +333,32 @@
 
 @x
     In the above list, notice that some files have been commented out with
-    a hash (#) character. The extra-cmake-modules entry has been commented out
-    because it was built earlier in the <xref linkend="kde-prereq"/>. The icon
-    packages are covered separately at <xref linkend="breeze-icons"/> and <xref
-    linkend="oxygen-icons"/>.  The
-    kdewebkit package may be built if the external package
+    a hash (#) character. 
+    
+    The extra-cmake-modules entry has been commented out
+    because it was built earlier in the <xref linkend="kde-prereq"/>. 
+    
+    The ki18n-5.115.0 package has been replaced by ki18n-5.115.1.
+
+    The icon packages are covered separately at <xref linkend="breeze-icons"/> 
+    and <xref linkend="oxygen-icons"/>.  
+    
+    The kdewebkit package may be built if the external package
     <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">
     QtWebkit</ulink> has been built.
 @y
     In the above list, notice that some files have been commented out with
-    a hash (#) character. The extra-cmake-modules entry has been commented out
-    because it was built earlier in the <xref linkend="kde-prereq"/>. The icon
-    packages are covered separately at <xref linkend="breeze-icons"/> and <xref
-    linkend="oxygen-icons"/>.  The
-    kdewebkit package may be built if the external package
+    a hash (#) character. 
+    
+    The extra-cmake-modules entry has been commented out
+    because it was built earlier in the <xref linkend="kde-prereq"/>. 
+    
+    The ki18n-5.115.0 package has been replaced by ki18n-5.115.1.
+
+    The icon packages are covered separately at <xref linkend="breeze-icons"/> 
+    and <xref linkend="oxygen-icons"/>.  
+    
+    The kdewebkit package may be built if the external package
     <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">
     QtWebkit</ulink> has been built.
 @z

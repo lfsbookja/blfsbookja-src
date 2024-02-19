@@ -10,10 +10,8 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to VLC</title>
 @y
-  <sect2 role="package">
     <title>Introduction to VLC</title>
 @z
 
@@ -35,12 +33,6 @@
       etc.), and it can also convert to different formats and/or send streams
       through the network.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
@@ -440,35 +432,21 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of VLC</title>
 @y
-  <sect2 role="installation">
     <title>Installation of VLC</title>
 @z
 
 @x
-    <para>
-      Install <application>VLC</application> by running the following commands:
-    </para>
+      First, add a correction for problems of taglib-2.0 and later:
 @y
-    <para>
-      Install <application>VLC</application> by running the following commands:
-    </para>
+      First, add a correction for problems of taglib-2.0 and later:
 @z
 
 @x
-<screen><userinput>BUILDCC=gcc ./configure --prefix=/usr --disable-libplacebo &amp;&amp;
-make</userinput></screen>
+      Install <application>VLC</application> by running the following commands:
 @y
-<screen><userinput>BUILDCC=gcc ./configure --prefix=/usr --disable-libplacebo &amp;&amp;
-make</userinput></screen>
+      Install <application>VLC</application> by running the following commands:
 @z
 
 @x

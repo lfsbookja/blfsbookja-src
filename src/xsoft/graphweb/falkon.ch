@@ -4,45 +4,35 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY falkon-time          "1.3 SBU (Using parallelism=4)">
+  <!ENTITY falkon-time          "1.2 SBU (Using parallelism=4)">
 @y
-  <!ENTITY falkon-time          "1.3 SBU (Using parallelism=4)">
+  <!ENTITY falkon-time          "1.2 SBU (Using parallelism=4)">
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to falkon</title>
 @y
-  <sect2 role="package">
     <title>Introduction to falkon</title>
 @z
 
 @x
-    <para>
       <application>Falkon</application> is a KDE web browser using the QtWebEngine
       rendering engine. It was previously known as <application>QupZilla</application>.
       It aims to be a lightweight web browser available through all major platforms.
-    </para>
 @y
-    <para>
       <application>Falkon</application> is a KDE web browser using the QtWebEngine
       rendering engine. It was previously known as <application>QupZilla</application>.
       It aims to be a lightweight web browser available through all major platforms.
-    </para>
 @z
 
 @x
-    <para>
       Although <application>falkon</application> is now part of KDE, it can be
       installed without KDE (with the loss of <application>kwallet</application>
       functionality).
-    </para>
 @y
-    <para>
       Although <application>falkon</application> is now part of KDE, it can be
       installed without KDE (with the loss of <application>kwallet</application>
       functionality).
-    </para>
 @z
 
 @x
@@ -77,12 +67,6 @@
         to consider using a different browser.
       </para>
     </warning>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

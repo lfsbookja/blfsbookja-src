@@ -50,14 +50,14 @@
     resources (RAM, disk space) required, and the utilities included.  One web
     site that provides a very good summary of what is available, screenshots,
     and their respective features is
-    <ulink url="http://www.xwinman.org/">
+    <ulink url="https://xteddy.org/xwinman/index.html">
       Window Managers for X
     </ulink>.
 @y
     ウィンドウマネージャーやデスクトップ環境をどれにするかは極めて主観的なものです。
     選択にあたって考慮する観点には、見映えや操作感、必要となるリソース (RAM, ディスクスペース)、導入されるユーティリティが何か、といったものです。
     どのようなものが利用可能か、どういった機能があるか、という概要を、スクリーンショットをまじえて説明している以下のウェブサイトがあります。
-    <ulink url="http://www.xwinman.org/">
+    <ulink url="https://xteddy.org/xwinman/index.html">
       X におけるウィンドウマネージャー (Window Managers for X)
     </ulink>
 @z

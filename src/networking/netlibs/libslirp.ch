@@ -10,29 +10,17 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to libslirp</title>
 @y
-  <sect2 role="package">
     <title>Introduction to libslirp</title>
 @z
 
 @x
-    <para>
       <application>Libslirp</application> is a user-mode networking library
       used by virtual machines, containers or various tools.
-    </para>
 @y
-    <para>
       <application>Libslirp</application> is a user-mode networking library
       used by virtual machines, containers or various tools.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

@@ -10,29 +10,17 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to oxygen-icons</title>
 @y
-  <sect2 role="package">
     <title>Introduction to oxygen-icons</title>
 @z
 
 @x
-    <para>
       The oxygen icons theme is a photo-realistic icon style, with a
       high standard of graphics quality.
-    </para>
 @y
-    <para>
       The oxygen icons theme is a photo-realistic icon style, with a
       high standard of graphics quality.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

@@ -257,15 +257,23 @@
           >Plymouth</ulink>
         which is designed to be run within an initial ram disk during boot (see
         <xref linkend="initramfs"/>).
+
         The plasma-sdk package is optional and used for software development.
-        The plasma-nano package is used for  embedded systems and
-        plasma-mobile provides phone functionality for Plasma.
+        
+        The plasma-nano package is used for embedded systems.
+
+        The plasma-mobile package provides phone functionality for Plasma.
+        
         The aura-browser package requires <xref linkend="qtwebengine"/>.
+        
         The discover package requires <xref linkend="appstream"/> to be built
-        with the -Dqt=true switch.
+        with the -Dqt=true switch. The discover-5.27.10.1 version of the 
+        package is an update to the previous version.
+        
         The plasma-welcome package requires the external package
           <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
         kaccounts-integration</ulink>.
+        
         The flatpack-kcm package is for managing support of flatpack applications.
 @y
         The breeze-grub, breeze-plymouth, and plymouth-kcm packages above are
@@ -274,15 +282,23 @@
           >Plymouth</ulink>
         which is designed to be run within an initial ram disk during boot (see
         <xref linkend="initramfs"/>).
+
         The plasma-sdk package is optional and used for software development.
-        The plasma-nano package is used for  embedded systems and
-        plasma-mobile provides phone functionality for Plasma.
+        
+        The plasma-nano package is used for embedded systems.
+
+        The plasma-mobile package provides phone functionality for Plasma.
+        
         The aura-browser package requires <xref linkend="qtwebengine"/>.
+        
         The discover package requires <xref linkend="appstream"/> to be built
-        with the -Dqt=true switch.
+        with the -Dqt=true switch. The discover-5.27.10.1 version of the 
+        package is an update to the previous version.
+        
         The plasma-welcome package requires the external package
           <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
         kaccounts-integration</ulink>.
+        
         The flatpack-kcm package is for managing support of flatpack applications.
 @z
 

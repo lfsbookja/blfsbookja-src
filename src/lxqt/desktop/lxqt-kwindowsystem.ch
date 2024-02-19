@@ -4,52 +4,8 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kwindowsystem-download-http "&kf5-download-http;/kwindowsystem-&kf5-version;.tar.xz">
-  <!ENTITY kwindowsystem-download-ftp  " ">
-  <!ENTITY kwindowsystem-md5sum        "b9ec086925b43ae1563c353246a17929">
-  <!ENTITY kwindowsystem-size          "2.3 MB">
-  <!ENTITY kwindowsystem-buildsize     "69 MB">
-  <!ENTITY kwindowsystem-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY kwindowsystem-download-http "&kf5-download-http;/kwindowsystem-&kf5-version;.tar.xz">
-  <!ENTITY kwindowsystem-download-ftp  " ">
-  <!ENTITY kwindowsystem-md5sum        "b9ec086925b43ae1563c353246a17929">
-  <!ENTITY kwindowsystem-size          "2.3 MB">
-  <!ENTITY kwindowsystem-buildsize     "69 MB">
-  <!ENTITY kwindowsystem-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-kwindowsystem" xreflabel="kwindowsystem-&kf5-version; for lxqt">
-  <?dbhtml filename="lxqt-kwindowsystem.html"?>
-@y
-<sect1 id="lxqt-kwindowsystem" xreflabel="kwindowsystem-&kf5-version; for lxqt">
-  <?dbhtml filename="lxqt-kwindowsystem.html"?>
-@z
-
-@x
-  <title>kwindowsystem-&kf5-version; for lxqt</title>
-@y
-  <title>kwindowsystem-&kf5-version; for lxqt</title>
-@z
-
-@x
-  <indexterm zone="lxqt-kwindowsystem">
-    <primary sortas="a-kwindowsystem">kwindowsystem</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-kwindowsystem">
-    <primary sortas="a-kwindowsystem">kwindowsystem</primary>
-  </indexterm>
-@z
-
-@x
-  <sect2 role="package">
     <title>Introduction to kwindowsystem</title>
 @y
-  <sect2 role="package">
     <title>Introduction to kwindowsystem</title>
 @z
 
@@ -67,12 +23,6 @@
       level API that is windowing system independent and has platform specific
       implementations.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

@@ -4,27 +4,15 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to Lynx</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Lynx</title>
 @z
 
 @x
-    <para>
       <application>Lynx</application> is a text based web browser.
-    </para>
 @y
-    <para>
       <application>Lynx</application> is a text based web browser.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

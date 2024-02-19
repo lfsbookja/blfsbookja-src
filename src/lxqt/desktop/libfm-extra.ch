@@ -4,73 +4,25 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libfm-download-http "&sourceforge-dl;/pcmanfm/libfm-&libfm-extra-version;.tar.xz">
-  <!ENTITY libfm-download-ftp  " ">
-  <!ENTITY libfm-md5sum        "c87a0ff41ae77825079b2f785ec0741e">
-  <!ENTITY libfm-size          "924 KB">
-  <!ENTITY libfm-buildsize     "11 MB">
   <!ENTITY libfm-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY libfm-download-http "&sourceforge-dl;/pcmanfm/libfm-&libfm-extra-version;.tar.xz">
-  <!ENTITY libfm-download-ftp  " ">
-  <!ENTITY libfm-md5sum        "c87a0ff41ae77825079b2f785ec0741e">
-  <!ENTITY libfm-size          "924 KB">
-  <!ENTITY libfm-buildsize     "11 MB">
   <!ENTITY libfm-time          "less than 0.1 SBU">
-]>
 @z
 
 @x
-<sect1 id="libfm-extra" xreflabel="libfm-extra-&libfm-extra-version;">
-  <?dbhtml filename="libfm-extra.html"?>
-@y
-<sect1 id="libfm-extra" xreflabel="libfm-extra-&libfm-extra-version;">
-  <?dbhtml filename="libfm-extra.html"?>
-@z
-
-@x
-  <title>libfm-extra-&libfm-extra-version;</title>
-@y
-  <title>libfm-extra-&libfm-extra-version;</title>
-@z
-
-@x
-  <indexterm zone="libfm-extra">
-    <primary sortas="a-libfm-extra">libfm-extra</primary>
-  </indexterm>
-@y
-  <indexterm zone="libfm-extra">
-    <primary sortas="a-libfm-extra">libfm-extra</primary>
-  </indexterm>
-@z
-
-@x
-  <sect2 role="package">
     <title>Introduction to libfm-extra</title>
 @y
-  <sect2 role="package">
     <title>Introduction to libfm-extra</title>
 @z
 
 @x
-    <para>
       The <application>libfm-extra</application> package contains a library and
-      other files required by <command>menu-cache-gen</command> libexec of
-      <xref linkend="menu-cache"/>.
-    </para>
+      other files required by the <command>menu-cache-gen</command> program in 
+      /usr/bin/libexec installed by <xref linkend="menu-cache"/>.
 @y
-    <para>
       The <application>libfm-extra</application> package contains a library and
-      other files required by <command>menu-cache-gen</command> libexec of
-      <xref linkend="menu-cache"/>.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
+      other files required by the <command>menu-cache-gen</command> program in 
+      /usr/bin/libexec installed by <xref linkend="menu-cache"/>.
 @z
 
 @x

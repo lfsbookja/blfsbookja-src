@@ -4,31 +4,19 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to Breeze Icons</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Breeze Icons</title>
 @z
 
 @x
-    <para>
       The <application>Breeze Icons</application> package contains the
       default icons for <application>KDE Plasma 5</application> applications,
       but it can be used for other window environments.
-    </para>
 @y
-    <para>
       The <application>Breeze Icons</application> package contains the
       default icons for <application>KDE Plasma 5</application> applications,
       but it can be used for other window environments.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

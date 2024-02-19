@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kdenlive5-time          "1.6 SBU (using parallelism=4)">
+  <!ENTITY kdenlive5-time          "1.4 SBU (using parallelism=4)">
 @y
-  <!ENTITY kdenlive5-time          "1.6 SBU (using parallelism=4)">
+  <!ENTITY kdenlive5-time          "1.4 SBU (using parallelism=4)">
 @z
 
 @x

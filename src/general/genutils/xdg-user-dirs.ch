@@ -3,72 +3,15 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-
 @x
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@y
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-  <!ENTITY % general-entities SYSTEM "../../general.ent">
-  %general-entities;
-@z
-
-@x
-  <!ENTITY xdg-user-dirs-download-http "https://user-dirs.freedesktop.org/releases/xdg-user-dirs-&xdg-user-dirs-version;.tar.gz">
-  <!ENTITY xdg-user-dirs-download-ftp  " ">
-  <!ENTITY xdg-user-dirs-md5sum        "dc7decea7ffb58cd067eff1fe1798cae">
-  <!ENTITY xdg-user-dirs-size          "267 KB">
-  <!ENTITY xdg-user-dirs-buildsize     "3.0 MB">
   <!ENTITY xdg-user-dirs-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY xdg-user-dirs-download-http "https://user-dirs.freedesktop.org/releases/xdg-user-dirs-&xdg-user-dirs-version;.tar.gz">
-  <!ENTITY xdg-user-dirs-download-ftp  " ">
-  <!ENTITY xdg-user-dirs-md5sum        "dc7decea7ffb58cd067eff1fe1798cae">
-  <!ENTITY xdg-user-dirs-size          "267 KB">
-  <!ENTITY xdg-user-dirs-buildsize     "3.0 MB">
   <!ENTITY xdg-user-dirs-time          "less than 0.1 SBU">
-]>
 @z
 
 @x
-<sect1 id="xdg-user-dirs" xreflabel="Xdg-user-dirs-&xdg-user-dirs-version;">
-  <?dbhtml filename="xdg-user-dirs.html"?>
-@y
-<sect1 id="xdg-user-dirs" xreflabel="Xdg-user-dirs-&xdg-user-dirs-version;">
-  <?dbhtml filename="xdg-user-dirs.html"?>
-@z
-
-@x
-  <!-- No other tags inside any title.
-       Use Title Case in All Titles -->
-  <title>Xdg-user-dirs-&xdg-user-dirs-version;</title>
-@y
-  <!-- No other tags inside any title.
-       Use Title Case in All Titles -->
-  <title>Xdg-user-dirs-&xdg-user-dirs-version;</title>
-@z
-
-@x
-  <indexterm zone="xdg-user-dirs">
-    <primary sortas="a-xdg-user-dirs">xdg-user-dirs</primary>
-  </indexterm>
-@y
-  <indexterm zone="xdg-user-dirs">
-    <primary sortas="a-xdg-user-dirs">xdg-user-dirs</primary>
-  </indexterm>
-@z
-
-@x
-  <!--Required section-->
-  <sect2 role="package">
     <title>Introduction to Xdg-user-dirs</title>
 @y
-  <!--Required section-->
-  <sect2 role="package">
     <title>Introduction to Xdg-user-dirs</title>
 @z
 
@@ -84,12 +27,6 @@
       known</quote> user directories like the desktop folder and the music folder.
       It also handles localization (i.e. translation) of the filenames.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

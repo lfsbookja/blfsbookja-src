@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qt6-buildsize     "31 GB (356 MB installed)">
-  <!ENTITY qt6-time          "14 SBU (using parallelism=8)">
+  <!ENTITY qt6-buildsize     "31 GB (354 MB installed)">
+  <!ENTITY qt6-time          "16 SBU (using parallelism=8)">
 @y
-  <!ENTITY qt6-buildsize     "31 GB (356 MB installed)">
-  <!ENTITY qt6-time          "14 SBU (using parallelism=8)">
+  <!ENTITY qt6-buildsize     "31 GB (354 MB installed)">
+  <!ENTITY qt6-time          "16 SBU (using parallelism=8)">
 @z
 
 @x
@@ -321,7 +321,7 @@
       switches enable explicit linking of the
       <application>D-Bus</application> and
       <application>OpenSSL</application> libraries into
-      <application>Qt5</application> libraries instead of
+      <application>Qt6</application> libraries instead of
       <command>dlopen()</command>-ing them.
 @y
       <parameter>-dbus-linked</parameter>
@@ -329,7 +329,7 @@
       switches enable explicit linking of the
       <application>D-Bus</application> and
       <application>OpenSSL</application> libraries into
-      <application>Qt5</application> libraries instead of
+      <application>Qt6</application> libraries instead of
       <command>dlopen()</command>-ing them.
 @z
 
@@ -567,32 +567,12 @@
       </varlistentry>
 @z
 
-@x
-      <varlistentry id="lconvert-qt6">
-        <term><command>lconvert</command></term>
-        <listitem>
-          <para>
-            is part of Qt5's Linguist tool chain. It can be used as a
+@x lconvert
+            is part of Qt6's Linguist tool chain. It can be used as a
             standalone tool to convert and filter translation data files
-          </para>
-          <indexterm zone="qt6 lconvert-qt6">
-            <primary sortas="b-lconvert-qt6">lconvert</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="lconvert-qt6">
-        <term><command>lconvert</command></term>
-        <listitem>
-          <para>
-            is part of Qt5's Linguist tool chain. It can be used as a
+            is part of Qt6's Linguist tool chain. It can be used as a
             standalone tool to convert and filter translation data files
-          </para>
-          <indexterm zone="qt6 lconvert-qt6">
-            <primary sortas="b-lconvert-qt6">lconvert</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
 @x

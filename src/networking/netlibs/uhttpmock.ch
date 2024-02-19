@@ -10,29 +10,17 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to uhttpmock</title>
 @y
-  <sect2 role="package">
     <title>Introduction to uhttpmock</title>
 @z
 
 @x
-    <para>
       The <application>uhttpmock</application> package contains a library
       for mocking web service APIs which use HTTP or HTTPS.
-    </para>
 @y
-    <para>
       The <application>uhttpmock</application> package contains a library
       for mocking web service APIs which use HTTP or HTTPS.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

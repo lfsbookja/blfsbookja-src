@@ -4,10 +4,8 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<sect2 role="package">
   <title>Introduction to XviD</title>
 @y
-<sect2 role="package">
   <title>Introduction to XviD</title>
 @z
 
@@ -19,12 +17,6 @@
     <para>
       <application>XviD</application> is an MPEG-4 compliant video CODEC.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

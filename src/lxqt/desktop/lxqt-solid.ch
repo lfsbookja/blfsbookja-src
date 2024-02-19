@@ -4,52 +4,8 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY solid-download-http "&kf5-download-http;/solid-&kf5-version;.tar.xz">
-  <!ENTITY solid-download-ftp  " ">
-  <!ENTITY solid-md5sum        "9d4b38e3adae1c0da9f207786aacf497">
-  <!ENTITY solid-size          "300 KB">
-  <!ENTITY solid-buildsize     "29 MB">
-  <!ENTITY solid-time          "0.6 SBU">
-]>
-@y
-  <!ENTITY solid-download-http "&kf5-download-http;/solid-&kf5-version;.tar.xz">
-  <!ENTITY solid-download-ftp  " ">
-  <!ENTITY solid-md5sum        "9d4b38e3adae1c0da9f207786aacf497">
-  <!ENTITY solid-size          "300 KB">
-  <!ENTITY solid-buildsize     "29 MB">
-  <!ENTITY solid-time          "0.6 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-solid" xreflabel="solid-&kf5-version; for lxqt">
-  <?dbhtml filename="lxqt-solid.html"?>
-@y
-<sect1 id="lxqt-solid" xreflabel="solid-&kf5-version; for lxqt">
-  <?dbhtml filename="lxqt-solid.html"?>
-@z
-
-@x
-  <title>solid-&kf5-version; for lxqt</title>
-@y
-  <title>solid-&kf5-version; for lxqt</title>
-@z
-
-@x
-  <indexterm zone="lxqt-solid">
-    <primary sortas="a-solid">solid</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-solid">
-    <primary sortas="a-solid">solid</primary>
-  </indexterm>
-@z
-
-@x
-  <sect2 role="package">
     <title>Introduction to solid</title>
 @y
-  <sect2 role="package">
     <title>Introduction to solid</title>
 @z
 
@@ -65,12 +21,6 @@
       provides a way of querying and interacting with hardware independently of
       the underlying operating system.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
