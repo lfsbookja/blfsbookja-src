@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qtermwidget-download-http "https://github.com/lxqt/qtermwidget/releases/download/&lxqt-version;/qtermwidget-&lxqt-version;.tar.xz">
-  <!ENTITY qtermwidget-download-ftp  " ">
-  <!ENTITY qtermwidget-md5sum        "9fd252579ded4aa05665d4fc979629e6">
-  <!ENTITY qtermwidget-size          "188 KB">
-  <!ENTITY qtermwidget-buildsize     "5.8 MB">
   <!ENTITY qtermwidget-time          "0.1 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY qtermwidget-download-http "https://github.com/lxqt/qtermwidget/releases/download/&lxqt-version;/qtermwidget-&lxqt-version;.tar.xz">
-  <!ENTITY qtermwidget-download-ftp  " ">
-  <!ENTITY qtermwidget-md5sum        "9fd252579ded4aa05665d4fc979629e6">
-  <!ENTITY qtermwidget-size          "188 KB">
-  <!ENTITY qtermwidget-buildsize     "5.8 MB">
   <!ENTITY qtermwidget-time          "0.1 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="qtermwidget" xreflabel="qtermwidget-&lxqt-version;">
-  <?dbhtml filename="qtermwidget.html"?>
-@y
-<sect1 id="qtermwidget" xreflabel="qtermwidget-&lxqt-version;">
-  <?dbhtml filename="qtermwidget.html"?>
-@z
-
-@x
-  <title>qtermwidget-&lxqt-version;</title>
-@y
-  <title>qtermwidget-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="qtermwidget">
-    <primary sortas="a-qtermwidget">qtermwidget</primary>
-  </indexterm>
-@y
-  <indexterm zone="qtermwidget">
-    <primary sortas="a-qtermwidget">qtermwidget</primary>
-  </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
       As the name suggests, the <application>qtermwidget</application> package
       is a terminal widget for <application>Qt</application>.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

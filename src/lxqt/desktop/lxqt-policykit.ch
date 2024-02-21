@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-policykit-download-http "https://github.com/lxqt/lxqt-policykit/releases/download/&lxqt-version;/lxqt-policykit-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-policykit-download-ftp  " ">
-  <!ENTITY lxqt-policykit-md5sum        "b54a2a158fd79f197013ef34d2330544">
-  <!ENTITY lxqt-policykit-size          "40 KB">
-  <!ENTITY lxqt-policykit-buildsize     "1.7 MB">
   <!ENTITY lxqt-policykit-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY lxqt-policykit-download-http "https://github.com/lxqt/lxqt-policykit/releases/download/&lxqt-version;/lxqt-policykit-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-policykit-download-ftp  " ">
-  <!ENTITY lxqt-policykit-md5sum        "b54a2a158fd79f197013ef34d2330544">
-  <!ENTITY lxqt-policykit-size          "40 KB">
-  <!ENTITY lxqt-policykit-buildsize     "1.7 MB">
   <!ENTITY lxqt-policykit-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-policykit" xreflabel="lxqt-policykit-&lxqt-version;">
-  <?dbhtml filename="lxqt-policykit.html"?>
-@y
-<sect1 id="lxqt-policykit" xreflabel="lxqt-policykit-&lxqt-version;">
-  <?dbhtml filename="lxqt-policykit.html"?>
-@z
-
-@x
-  <title>lxqt-policykit-&lxqt-version;</title>
-@y
-  <title>lxqt-policykit-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-policykit">
-    <primary sortas="a-lxqt-policykit">lxqt-policykit</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-policykit">
-    <primary sortas="a-lxqt-policykit">lxqt-policykit</primary>
-  </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
       The <application>lxqt-policykit</application> package is the
       <application>LXQt</application> PolicyKit agent.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

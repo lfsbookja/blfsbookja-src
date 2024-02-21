@@ -12,22 +12,6 @@
 @z
 
 @x
-  <title>SANE-&sane-version;</title>
-@y
-  <title>SANE-&sane-version;</title>
-@z
-
-@x
-  <indexterm zone="sane">
-    <primary sortas="a-SANE">SANE</primary>
-  </indexterm>
-@y
-  <indexterm zone="sane">
-    <primary sortas="a-SANE">SANE</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to SANE</title>
 @y
@@ -67,12 +51,6 @@
       The back ends are drivers for the supported scanners and cameras. The
       front ends are user interfaces to access the backends.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

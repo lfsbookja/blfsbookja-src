@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-panel-download-http "https://github.com/lxqt/lxqt-panel/releases/download/&lxqt-version;/lxqt-panel-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-panel-download-ftp  " ">
-  <!ENTITY lxqt-panel-md5sum        "ac8d89f21fa96b73d61ba54715fb5969">
-  <!ENTITY lxqt-panel-size          "600 KB">
-  <!ENTITY lxqt-panel-buildsize     "47 MB">
   <!ENTITY lxqt-panel-time          "0.5 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY lxqt-panel-download-http "https://github.com/lxqt/lxqt-panel/releases/download/&lxqt-version;/lxqt-panel-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-panel-download-ftp  " ">
-  <!ENTITY lxqt-panel-md5sum        "ac8d89f21fa96b73d61ba54715fb5969">
-  <!ENTITY lxqt-panel-size          "600 KB">
-  <!ENTITY lxqt-panel-buildsize     "47 MB">
   <!ENTITY lxqt-panel-time          "0.5 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="lxqt-panel" xreflabel="lxqt-panel-&lxqt-version;">
-  <?dbhtml filename="lxqt-panel.html"?>
-@y
-<sect1 id="lxqt-panel" xreflabel="lxqt-panel-&lxqt-version;">
-  <?dbhtml filename="lxqt-panel.html"?>
-@z
-
-@x
-  <title>lxqt-panel-&lxqt-version;</title>
-@y
-  <title>lxqt-panel-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-panel">
-    <primary sortas="a-lxqt-panel">lxqt-panel</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-panel">
-    <primary sortas="a-lxqt-panel">lxqt-panel</primary>
-  </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
       The <application>lxqt-panel</application> package contains a
       lightweight X11 desktop panel.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

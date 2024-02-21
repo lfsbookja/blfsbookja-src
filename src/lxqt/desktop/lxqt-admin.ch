@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-admin-download-http "https://github.com/lxqt/lxqt-admin/releases/download/&lxqt-version;/lxqt-admin-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-admin-download-ftp  " ">
-  <!ENTITY lxqt-admin-md5sum        "a76cf4296bf967465d23ee52f1378697">
-  <!ENTITY lxqt-admin-size          "152 KB">
-  <!ENTITY lxqt-admin-buildsize     "4.2 MB">
-  <!ENTITY lxqt-admin-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY lxqt-admin-download-http "https://github.com/lxqt/lxqt-admin/releases/download/&lxqt-version;/lxqt-admin-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-admin-download-ftp  " ">
-  <!ENTITY lxqt-admin-md5sum        "a76cf4296bf967465d23ee52f1378697">
-  <!ENTITY lxqt-admin-size          "152 KB">
-  <!ENTITY lxqt-admin-buildsize     "4.2 MB">
-  <!ENTITY lxqt-admin-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-admin" xreflabel="lxqt-admin-&lxqt-version;">
-  <?dbhtml filename="lxqt-admin.html"?>
-@y
-<sect1 id="lxqt-admin" xreflabel="lxqt-admin-&lxqt-version;">
-  <?dbhtml filename="lxqt-admin.html"?>
-@z
-
-@x
-  <title>lxqt-admin-&lxqt-version;</title>
-@y
-  <title>lxqt-admin-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-admin">
-    <primary sortas="a-lxqt-admin">lxqt-admin</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-admin">
-    <primary sortas="a-lxqt-admin">lxqt-admin</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to lxqt-admin</title>
 @y
@@ -65,12 +23,6 @@
       to adjust settings of the operating system
       <application>LXQt</application> is running on.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

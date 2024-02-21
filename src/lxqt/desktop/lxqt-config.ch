@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-config-download-http "https://github.com/lxqt/lxqt-config/releases/download/&lxqt-version;/lxqt-config-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-config-download-ftp  " ">
-  <!ENTITY lxqt-config-md5sum        "ddfc6906bb9967957e1a3c0ad604118f">
-  <!ENTITY lxqt-config-size          "364 KB">
-  <!ENTITY lxqt-config-buildsize     "19 MB">
   <!ENTITY lxqt-config-time          "0.2 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY lxqt-config-download-http "https://github.com/lxqt/lxqt-config/releases/download/&lxqt-version;/lxqt-config-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-config-download-ftp  " ">
-  <!ENTITY lxqt-config-md5sum        "ddfc6906bb9967957e1a3c0ad604118f">
-  <!ENTITY lxqt-config-size          "364 KB">
-  <!ENTITY lxqt-config-buildsize     "19 MB">
   <!ENTITY lxqt-config-time          "0.2 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="lxqt-config" xreflabel="lxqt-config-&lxqt-version;">
-  <?dbhtml filename="lxqt-config.html"?>
-@y
-<sect1 id="lxqt-config" xreflabel="lxqt-config-&lxqt-version;">
-  <?dbhtml filename="lxqt-config.html"?>
-@z
-
-@x
-  <title>lxqt-config-&lxqt-version;</title>
-@y
-  <title>lxqt-config-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-config">
-    <primary sortas="a-lxqt-config">lxqt-config</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-config">
-    <primary sortas="a-lxqt-config">lxqt-config</primary>
-  </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
       The <application>lxqt-config</application> package provides the
       <application>LXQt</application> Configuration Center.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

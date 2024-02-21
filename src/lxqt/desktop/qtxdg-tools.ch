@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qtxdg-tools-download-http "https://github.com/lxqt/qtxdg-tools/releases/download/&qtxdg-tools-version;/qtxdg-tools-&qtxdg-tools-version;.tar.xz">
-  <!ENTITY qtxdg-tools-download-ftp  " ">
-  <!ENTITY qtxdg-tools-md5sum        "6fd76563ef496796e9517c65045eb38e">
-  <!ENTITY qtxdg-tools-size          "20 KB">
-  <!ENTITY qtxdg-tools-buildsize     "1.5 MB">
-  <!ENTITY qtxdg-tools-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY qtxdg-tools-download-http "https://github.com/lxqt/qtxdg-tools/releases/download/&qtxdg-tools-version;/qtxdg-tools-&qtxdg-tools-version;.tar.xz">
-  <!ENTITY qtxdg-tools-download-ftp  " ">
-  <!ENTITY qtxdg-tools-md5sum        "6fd76563ef496796e9517c65045eb38e">
-  <!ENTITY qtxdg-tools-size          "20 KB">
-  <!ENTITY qtxdg-tools-buildsize     "1.5 MB">
-  <!ENTITY qtxdg-tools-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="qtxdg-tools" xreflabel="qtxdg-tools-&qtxdg-tools-version;">
-  <?dbhtml filename="qtxdg-tools.html"?>
-@y
-<sect1 id="qtxdg-tools" xreflabel="qtxdg-tools-&qtxdg-tools-version;">
-  <?dbhtml filename="qtxdg-tools.html"?>
-@z
-
-@x
-  <title>qtxdg-tools-&qtxdg-tools-version;</title>
-@y
-  <title>qtxdg-tools-&qtxdg-tools-version;</title>
-@z
-
-@x
-  <indexterm zone="qtxdg-tools">
-    <primary sortas="a-qtxdg-tools">qtxdg-tools</primary>
-  </indexterm>
-@y
-  <indexterm zone="qtxdg-tools">
-    <primary sortas="a-qtxdg-tools">qtxdg-tools</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to qtxdg-tools</title>
 @y
@@ -65,12 +23,6 @@
       for handling file associations and opening files with their
       default applications.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

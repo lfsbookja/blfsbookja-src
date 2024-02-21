@@ -18,7 +18,7 @@
 @z
 
 @x
-      The <application>at</application> package provide delayed job execution
+      The <application>at</application> package provides delayed job execution
       and batch processing. It is required for Linux Standards Base (LSB)
       conformance.
 @y

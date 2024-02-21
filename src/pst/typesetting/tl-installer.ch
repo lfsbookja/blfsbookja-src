@@ -70,22 +70,6 @@
 @z
 
 @x
-    <!-- editors: latex-test-20230819.tar.xz at ~/ken/tex-testfiles and the
-    ABOUT.pdf now deal with specifying which collections are needed when using
-    binary texlive. Please do not sign off this package without at least
-    testing asy to ensure that the symlinks are as needed. Plese also be aware
-    that removing a collection might leave huge backups in tlpkg/backups -->
-    &lfs120_checked;
-@y
-    <!-- editors: latex-test-20230819.tar.xz at ~/ken/tex-testfiles and the
-    ABOUT.pdf now deal with specifying which collections are needed when using
-    binary texlive. Please do not sign off this package without at least
-    testing asy to ensure that the symlinks are as needed. Plese also be aware
-    that removing a collection might leave huge backups in tlpkg/backups -->
-    &lfs120_checked;
-@z
-
-@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&PackageInformation;</bridgehead>

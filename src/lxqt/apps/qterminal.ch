@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qterminal-download-http "https://github.com/lxqt/qterminal/releases/download/&lxqt-version;/qterminal-&lxqt-version;.tar.xz">
-  <!ENTITY qterminal-download-ftp  " ">
-  <!ENTITY qterminal-md5sum        "8d8f85dc99fc074c27eed09630951e09">
-  <!ENTITY qterminal-size          "216 KB">
-  <!ENTITY qterminal-buildsize     "652 KB">
-  <!ENTITY qterminal-time          "0.5 SBU">
-]>
-@y
-  <!ENTITY qterminal-download-http "https://github.com/lxqt/qterminal/releases/download/&lxqt-version;/qterminal-&lxqt-version;.tar.xz">
-  <!ENTITY qterminal-download-ftp  " ">
-  <!ENTITY qterminal-md5sum        "8d8f85dc99fc074c27eed09630951e09">
-  <!ENTITY qterminal-size          "216 KB">
-  <!ENTITY qterminal-buildsize     "652 KB">
-  <!ENTITY qterminal-time          "0.5 SBU">
-]>
-@z
-
-@x
-<sect1 id="qterminal" xreflabel="qterminal-&lxqt-version;">
-  <?dbhtml filename="qterminal.html"?>
-@y
-<sect1 id="qterminal" xreflabel="qterminal-&lxqt-version;">
-  <?dbhtml filename="qterminal.html"?>
-@z
-
-@x
-  <title>qterminal-&lxqt-version;</title>
-@y
-  <title>qterminal-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="qterminal">
-    <primary sortas="a-qterminal">qterminal</primary>
-  </indexterm>
-@y
-  <indexterm zone="qterminal">
-    <primary sortas="a-qterminal">qterminal</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to qterminal</title>
 @y
@@ -65,12 +23,6 @@
       based terminal emulator for <application>Qt</application> with support
       for multiple tabs.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

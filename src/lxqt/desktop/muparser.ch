@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY muparser-download-http "https://github.com/beltoforion/muparser/archive/v&muparser-version;/muparser-&muparser-version;.tar.gz">
-  <!ENTITY muparser-download-ftp  " ">
-  <!ENTITY muparser-md5sum        "b92180a648be88238008ea01a597ccb9">
-  <!ENTITY muparser-size          "112 KB">
-  <!ENTITY muparser-buildsize     "5.1 MB">
-  <!ENTITY muparser-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY muparser-download-http "https://github.com/beltoforion/muparser/archive/v&muparser-version;/muparser-&muparser-version;.tar.gz">
-  <!ENTITY muparser-download-ftp  " ">
-  <!ENTITY muparser-md5sum        "b92180a648be88238008ea01a597ccb9">
-  <!ENTITY muparser-size          "112 KB">
-  <!ENTITY muparser-buildsize     "5.1 MB">
-  <!ENTITY muparser-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="muparser" xreflabel="muparser-&muparser-version;">
-  <?dbhtml filename="muparser.html"?>
-@y
-<sect1 id="muparser" xreflabel="muparser-&muparser-version;">
-  <?dbhtml filename="muparser.html"?>
-@z
-
-@x
-  <title>muparser-&muparser-version;</title>
-@y
-  <title>muparser-&muparser-version;</title>
-@z
-
-@x
-  <indexterm zone="muparser">
-    <primary sortas="a-muparser">muparser</primary>
-  </indexterm>
-@y
-  <indexterm zone="muparser">
-    <primary sortas="a-muparser">muparser</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to muparser</title>
 @y
@@ -63,12 +21,6 @@
       The <application>muparser</application> package is a fast math parser
       library for C and C++.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

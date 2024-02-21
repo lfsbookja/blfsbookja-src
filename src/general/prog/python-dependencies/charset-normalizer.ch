@@ -12,23 +12,17 @@
 @z
 
 @x
-    <sect3 role="package">
       <title>Introduction to charset-normalizer Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to charset-normalizer Module</title>
 @z
 
 @x
-      <para>
         The <application>charset-normalizer</application> library helps
         reading text from an unknown character encoding.
-      </para>
 @y
-      <para>
         The <application>charset-normalizer</application> library helps
         reading text from an unknown character encoding.
-      </para>
 @z
 
 @x
@@ -110,28 +104,24 @@
 @x
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
-        <xref linkend="pytest"/> and
+        <xref linkend="pytest"/>,
+        <xref linkend="python3"/> (rebuilt after installing
+          <xref role="nodep" linkend="sqlite3"/>), and
         <ulink url="https://pypi.org/project/pytest-cov/">pytest-cov</ulink>
       </para>
 @y
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
-        <xref linkend="pytest"/> and
+        <xref linkend="pytest"/>,
+        <xref linkend="python3"/> (rebuilt after installing
+          <xref role="nodep" linkend="sqlite3"/>), and
         <ulink url="https://pypi.org/project/pytest-cov/">pytest-cov</ulink>
       </para>
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of Charset-normalizer</title>
 @y
-    <sect3 role="installation">
       <title>Installation of Charset-normalizer</title>
 @z
 
@@ -142,12 +132,6 @@
 @z
 
 @x
-&build-wheel;
-@y
-&build-wheel;
-@z
-
-@x
     <para>
       Now, as the <systemitem class="username">root</systemitem> user:
     </para>
@@ -155,12 +139,6 @@
     <para>
       Now, as the <systemitem class="username">root</systemitem> user:
     </para>
-@z
-
-@x
-<screen role="root"><userinput>&install-wheel; charset-normalizer</userinput></screen>
-@y
-<screen role="root"><userinput>&install-wheel; charset-normalizer</userinput></screen>
 @z
 
 @x
@@ -178,73 +156,35 @@
 @z
 
 @x
-<screen remap="test"><userinput>python3 -m venv --system-site-packages testenv &amp;&amp;
-source testenv/bin/activate                    &amp;&amp;
-pip3 install pytest-cov                        &amp;&amp;
-python3 /usr/bin/pytest<!-- no && because of a possible error -->
-deactivate</userinput></screen>
-@y
-<screen remap="test"><userinput>python3 -m venv --system-site-packages testenv &amp;&amp;
-source testenv/bin/activate                    &amp;&amp;
-pip3 install pytest-cov                        &amp;&amp;
-python3 /usr/bin/pytest<!-- no && because of a possible error -->
-deactivate</userinput></screen>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@z
-
-@x
-    <sect3 role="content">
       <title>Contents</title>
 @y
-    <sect3 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>normalizer</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/charset_normalizer and
             /usr/lib/python&python3-majorver;/site-packages/charset_normalizer-&charset-normalizer-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
           <seg>normalizer</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/charset_normalizer and
             /usr/lib/python&python3-majorver;/site-packages/charset_normalizer-&charset-normalizer-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @z
 
 @x
@@ -285,18 +225,4 @@ deactivate</userinput></screen>
             </indexterm>
           </listitem>
         </varlistentry>
-@z
-
-@x
-      </variablelist>
-    </sect3>
-@y
-      </variablelist>
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z

@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-powermanagement-download-http "https://github.com/lxqt/lxqt-powermanagement/releases/download/&lxqt-version;/lxqt-powermanagement-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-powermanagement-download-ftp  " ">
-  <!ENTITY lxqt-powermanagement-md5sum        "74807502b819853a13c2c03406a1aeb5">
-  <!ENTITY lxqt-powermanagement-size          "92 KB">
-  <!ENTITY lxqt-powermanagement-buildsize     "6.5 MB">
-  <!ENTITY lxqt-powermanagement-time          "0.3 SBU">
-]>
-@y
-  <!ENTITY lxqt-powermanagement-download-http "https://github.com/lxqt/lxqt-powermanagement/releases/download/&lxqt-version;/lxqt-powermanagement-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-powermanagement-download-ftp  " ">
-  <!ENTITY lxqt-powermanagement-md5sum        "74807502b819853a13c2c03406a1aeb5">
-  <!ENTITY lxqt-powermanagement-size          "92 KB">
-  <!ENTITY lxqt-powermanagement-buildsize     "6.5 MB">
-  <!ENTITY lxqt-powermanagement-time          "0.3 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-powermanagement" xreflabel="lxqt-powermanagement-&lxqt-version;">
-  <?dbhtml filename="lxqt-powermanagement.html"?>
-@y
-<sect1 id="lxqt-powermanagement" xreflabel="lxqt-powermanagement-&lxqt-version;">
-  <?dbhtml filename="lxqt-powermanagement.html"?>
-@z
-
-@x
-  <title>lxqt-powermanagement-&lxqt-version;</title>
-@y
-  <title>lxqt-powermanagement-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-powermanagement">
-    <primary sortas="a-lxqt-powermanagement">lxqt-powermanagement</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-powermanagement">
-    <primary sortas="a-lxqt-powermanagement">lxqt-powermanagement</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to lxqt-powermanagement</title>
 @y
@@ -63,12 +21,6 @@
       The <application>lxqt-powermanagement</application> package provides the
       power management module for <application>LXQt</application>.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

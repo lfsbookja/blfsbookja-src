@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libsysstat-download-http "https://github.com/lxqt/libsysstat/releases/download/&libsysstat-version;/libsysstat-&libsysstat-version;.tar.xz">
-  <!ENTITY libsysstat-download-ftp  " ">
-  <!ENTITY libsysstat-md5sum        "ad2884271c33716bad68222ace0c7fc0">
-  <!ENTITY libsysstat-size          "20 KB">
-  <!ENTITY libsysstat-buildsize     "1.5 MB">
   <!ENTITY libsysstat-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY libsysstat-download-http "https://github.com/lxqt/libsysstat/releases/download/&libsysstat-version;/libsysstat-&libsysstat-version;.tar.xz">
-  <!ENTITY libsysstat-download-ftp  " ">
-  <!ENTITY libsysstat-md5sum        "ad2884271c33716bad68222ace0c7fc0">
-  <!ENTITY libsysstat-size          "20 KB">
-  <!ENTITY libsysstat-buildsize     "1.5 MB">
   <!ENTITY libsysstat-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="libsysstat" xreflabel="libsysstat-&libsysstat-version;">
-  <?dbhtml filename="libsysstat.html"?>
-@y
-<sect1 id="libsysstat" xreflabel="libsysstat-&libsysstat-version;">
-  <?dbhtml filename="libsysstat.html"?>
-@z
-
-@x
-  <title>libsysstat-&libsysstat-version;</title>
-@y
-  <title>libsysstat-&libsysstat-version;</title>
-@z
-
-@x
-  <indexterm zone="libsysstat">
-    <primary sortas="a-libsysstat">libsysstat</primary>
-  </indexterm>
-@y
-  <indexterm zone="libsysstat">
-    <primary sortas="a-libsysstat">libsysstat</primary>
-  </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
       The <application>libsysstat</application> package contains a library used
       to query system information and statistics.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

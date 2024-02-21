@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY menu-cache-download-http "&sourceforge-dl;/lxde/menu-cache-&menu-cache-version;.tar.xz">
-  <!ENTITY menu-cache-download-ftp  " ">
-  <!ENTITY menu-cache-md5sum        "99999a0bca48b980105208760c8fd893">
-  <!ENTITY menu-cache-size          "260 KB">
-  <!ENTITY menu-cache-buildsize     "3.7 MB">
   <!ENTITY menu-cache-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY menu-cache-download-http "&sourceforge-dl;/lxde/menu-cache-&menu-cache-version;.tar.xz">
-  <!ENTITY menu-cache-download-ftp  " ">
-  <!ENTITY menu-cache-md5sum        "99999a0bca48b980105208760c8fd893">
-  <!ENTITY menu-cache-size          "260 KB">
-  <!ENTITY menu-cache-buildsize     "3.7 MB">
   <!ENTITY menu-cache-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="menu-cache" xreflabel="menu-cache-&menu-cache-version;">
-  <?dbhtml filename="menu-cache.html"?>
-@y
-<sect1 id="menu-cache" xreflabel="menu-cache-&menu-cache-version;">
-  <?dbhtml filename="menu-cache.html"?>
-@z
-
-@x
-  <title>menu-cache-&menu-cache-version;</title>
-@y
-  <title>menu-cache-&menu-cache-version;</title>
-@z
-
-@x
-  <indexterm zone="menu-cache">
-    <primary sortas="a-menu-cache">menu-cache</primary>
-  </indexterm>
-@y
-  <indexterm zone="menu-cache">
-    <primary sortas="a-menu-cache">menu-cache</primary>
-  </indexterm>
 @z
 
 @x
@@ -65,12 +29,6 @@
       library for creating and utilizing caches to speed up the
       manipulation for freedesktop.org defined application menus.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

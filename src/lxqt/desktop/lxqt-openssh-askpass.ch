@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-openssh-askpass-download-http "https://github.com/lxqt/lxqt-openssh-askpass/releases/download/&lxqt-version;/lxqt-openssh-askpass-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-openssh-askpass-download-ftp  " ">
-  <!ENTITY lxqt-openssh-askpass-md5sum        "be5108335d14959730836c60cf84b4a4">
-  <!ENTITY lxqt-openssh-askpass-size          "20 KB">
-  <!ENTITY lxqt-openssh-askpass-buildsize     "1.2 MB">
   <!ENTITY lxqt-openssh-askpass-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY lxqt-openssh-askpass-download-http "https://github.com/lxqt/lxqt-openssh-askpass/releases/download/&lxqt-version;/lxqt-openssh-askpass-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-openssh-askpass-download-ftp  " ">
-  <!ENTITY lxqt-openssh-askpass-md5sum        "be5108335d14959730836c60cf84b4a4">
-  <!ENTITY lxqt-openssh-askpass-size          "20 KB">
-  <!ENTITY lxqt-openssh-askpass-buildsize     "1.2 MB">
   <!ENTITY lxqt-openssh-askpass-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-openssh-askpass" xreflabel="lxqt-openssh-askpass-&lxqt-version;">
-  <?dbhtml filename="lxqt-openssh-askpass.html"?>
-@y
-<sect1 id="lxqt-openssh-askpass" xreflabel="lxqt-openssh-askpass-&lxqt-version;">
-  <?dbhtml filename="lxqt-openssh-askpass.html"?>
-@z
-
-@x
-  <title>lxqt-openssh-askpass-&lxqt-version;</title>
-@y
-  <title>lxqt-openssh-askpass-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-openssh-askpass">
-    <primary sortas="a-lxqt-openssh-askpass">lxqt-openssh-askpass</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-openssh-askpass">
-    <primary sortas="a-lxqt-openssh-askpass">lxqt-openssh-askpass</primary>
-  </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
       The <application>lxqt-openssh-askpass</application> package is a GUI
       to query credentials on behalf of other programs.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

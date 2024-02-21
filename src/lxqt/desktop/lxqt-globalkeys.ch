@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-globalkeys-download-http "https://github.com/lxqt/lxqt-globalkeys/releases/download/&lxqt-version;/lxqt-globalkeys-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-globalkeys-download-ftp  " ">
-  <!ENTITY lxqt-globalkeys-md5sum        "7fe7276feab135abc1d5bb3e699e59f5">
-  <!ENTITY lxqt-globalkeys-size          "76 KB">
-  <!ENTITY lxqt-globalkeys-buildsize     "7.9 MB">
-  <!ENTITY lxqt-globalkeys-time          "0.4 SBU">
-]>
-@y
-  <!ENTITY lxqt-globalkeys-download-http "https://github.com/lxqt/lxqt-globalkeys/releases/download/&lxqt-version;/lxqt-globalkeys-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-globalkeys-download-ftp  " ">
-  <!ENTITY lxqt-globalkeys-md5sum        "7fe7276feab135abc1d5bb3e699e59f5">
-  <!ENTITY lxqt-globalkeys-size          "76 KB">
-  <!ENTITY lxqt-globalkeys-buildsize     "7.9 MB">
-  <!ENTITY lxqt-globalkeys-time          "0.4 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-globalkeys" xreflabel="lxqt-globalkeys-&lxqt-version;">
-  <?dbhtml filename="lxqt-globalkeys.html"?>
-@y
-<sect1 id="lxqt-globalkeys" xreflabel="lxqt-globalkeys-&lxqt-version;">
-  <?dbhtml filename="lxqt-globalkeys.html"?>
-@z
-
-@x
-  <title>lxqt-globalkeys-&lxqt-version;</title>
-@y
-  <title>lxqt-globalkeys-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-globalkeys">
-    <primary sortas="a-lxqt-globalkeys">lxqt-globalkeys</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-globalkeys">
-    <primary sortas="a-lxqt-globalkeys">lxqt-globalkeys</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to lxqt-globalkeys</title>
 @y
@@ -65,12 +23,6 @@
       used to register global keyboard shortcuts as well as an editor for
       keyboard shortcuts.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

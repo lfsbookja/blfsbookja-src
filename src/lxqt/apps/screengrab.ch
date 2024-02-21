@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY screengrab-download-http "https://github.com/lxqt/screengrab/releases/download/&screengrab-version;/screengrab-&screengrab-version;.tar.xz">
-  <!ENTITY screengrab-download-ftp  " ">
-  <!ENTITY screengrab-md5sum        "df840ca6ad74b6388b9c0067c9f31423">
-  <!ENTITY screengrab-size          "336 KB">
-  <!ENTITY screengrab-buildsize     "6.5 MB">
-  <!ENTITY screengrab-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY screengrab-download-http "https://github.com/lxqt/screengrab/releases/download/&screengrab-version;/screengrab-&screengrab-version;.tar.xz">
-  <!ENTITY screengrab-download-ftp  " ">
-  <!ENTITY screengrab-md5sum        "df840ca6ad74b6388b9c0067c9f31423">
-  <!ENTITY screengrab-size          "336 KB">
-  <!ENTITY screengrab-buildsize     "6.5 MB">
-  <!ENTITY screengrab-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="screengrab" xreflabel="screengrab-&screengrab-version;">
-  <?dbhtml filename="screengrab.html"?>
-@y
-<sect1 id="screengrab" xreflabel="screengrab-&screengrab-version;">
-  <?dbhtml filename="screengrab.html"?>
-@z
-
-@x
-  <title>screengrab-&screengrab-version;</title>
-@y
-  <title>screengrab-&screengrab-version;</title>
-@z
-
-@x
-  <indexterm zone="screengrab">
-    <primary sortas="a-screengrab">screengrab</primary>
-  </indexterm>
-@y
-  <indexterm zone="screengrab">
-    <primary sortas="a-screengrab">screengrab</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to screengrab</title>
 @y
@@ -63,12 +21,6 @@
       The <application>screengrab</application> package is a cross-platform
       tool for making screenshots quickly.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

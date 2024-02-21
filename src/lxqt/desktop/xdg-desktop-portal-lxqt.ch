@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<!ENTITY xdg-desktop-portal-lxqt-download-http "https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/&xdg-desktop-portal-lxqt-version;/xdg-desktop-portal-lxqt-&xdg-desktop-portal-lxqt-version;.tar.xz">
-  <!ENTITY xdg-desktop-portal-lxqt-download-ftp  " ">
-  <!ENTITY xdg-desktop-portal-lxqt-md5sum        "364cb93bd4ad1f3d0e5e932ea118dc80">
-  <!ENTITY xdg-desktop-portal-lxqt-size          "16 KB">
-  <!ENTITY xdg-desktop-portal-lxqt-buildsize     "1.9 MB">
   <!ENTITY xdg-desktop-portal-lxqt-time          "less than 0.1 SBU">
-]>
 @y
-<!ENTITY xdg-desktop-portal-lxqt-download-http "https://github.com/lxqt/xdg-desktop-portal-lxqt/releases/download/&xdg-desktop-portal-lxqt-version;/xdg-desktop-portal-lxqt-&xdg-desktop-portal-lxqt-version;.tar.xz">
-  <!ENTITY xdg-desktop-portal-lxqt-download-ftp  " ">
-  <!ENTITY xdg-desktop-portal-lxqt-md5sum        "364cb93bd4ad1f3d0e5e932ea118dc80">
-  <!ENTITY xdg-desktop-portal-lxqt-size          "16 KB">
-  <!ENTITY xdg-desktop-portal-lxqt-buildsize     "1.9 MB">
   <!ENTITY xdg-desktop-portal-lxqt-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="xdg-desktop-portal-lxqt" xreflabel="xdg-desktop-portal-lxqt-&xdg-desktop-portal-lxqt-version;">
-  <?dbhtml filename="xdg-desktop-portal-lxqt.html"?>
-@y
-<sect1 id="xdg-desktop-portal-lxqt" xreflabel="xdg-desktop-portal-lxqt-&xdg-desktop-portal-lxqt-version;">
-  <?dbhtml filename="xdg-desktop-portal-lxqt.html"?>
-@z
-
-@x
-  <title>xdg-desktop-portal-lxqt-&xdg-desktop-portal-lxqt-version;</title>
-@y
-  <title>xdg-desktop-portal-lxqt-&xdg-desktop-portal-lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="xdg-desktop-portal-lxqt">
-    <primary sortas="a-xdg-desktop-portal-lxqt">xdg-desktop-portal-lxqt</primary>
-  </indexterm>
-@y
-  <indexterm zone="xdg-desktop-portal-lxqt">
-    <primary sortas="a-xdg-desktop-portal-lxqt">xdg-desktop-portal-lxqt</primary>
-  </indexterm>
 @z
 
 @x
@@ -65,12 +29,6 @@
       <application>xdg-desktop-portal</application>, that is using the Qt
       library.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

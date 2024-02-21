@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-sudo-download-http "https://github.com/lxqt/lxqt-sudo/releases/download/&lxqt-version;/lxqt-sudo-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-sudo-download-ftp  " ">
-  <!ENTITY lxqt-sudo-md5sum        "31a585d26c7c25e9c05f5e9a621d2c56">
-  <!ENTITY lxqt-sudo-size          "40 KB">
-  <!ENTITY lxqt-sudo-buildsize     "1.6 MB">
   <!ENTITY lxqt-sudo-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY lxqt-sudo-download-http "https://github.com/lxqt/lxqt-sudo/releases/download/&lxqt-version;/lxqt-sudo-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-sudo-download-ftp  " ">
-  <!ENTITY lxqt-sudo-md5sum        "31a585d26c7c25e9c05f5e9a621d2c56">
-  <!ENTITY lxqt-sudo-size          "40 KB">
-  <!ENTITY lxqt-sudo-buildsize     "1.6 MB">
   <!ENTITY lxqt-sudo-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-sudo" xreflabel="lxqt-sudo-&lxqt-version;">
-  <?dbhtml filename="lxqt-sudo.html"?>
-@y
-<sect1 id="lxqt-sudo" xreflabel="lxqt-sudo-&lxqt-version;">
-  <?dbhtml filename="lxqt-sudo.html"?>
-@z
-
-@x
-  <title>lxqt-sudo-&lxqt-version;</title>
-@y
-  <title>lxqt-sudo-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-sudo">
-    <primary sortas="a-lxqt-sudo">lxqt-sudo</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-sudo">
-    <primary sortas="a-lxqt-sudo">lxqt-sudo</primary>
-  </indexterm>
 @z
 
 @x
@@ -65,12 +29,6 @@
       end to <application>sudo</application> and <application>su</application>
       respectively.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

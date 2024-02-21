@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libqtxdg-download-http "https://github.com/lxqt/libqtxdg/releases/download/&libqtxdg-version;/libqtxdg-&libqtxdg-version;.tar.xz">
-  <!ENTITY libqtxdg-download-ftp  " ">
-  <!ENTITY libqtxdg-md5sum        "6cb85091630b7d84278b2430e92a62bb">
-  <!ENTITY libqtxdg-size          "72 KB">
-  <!ENTITY libqtxdg-buildsize     "6.3 MB">
-  <!ENTITY libqtxdg-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY libqtxdg-download-http "https://github.com/lxqt/libqtxdg/releases/download/&libqtxdg-version;/libqtxdg-&libqtxdg-version;.tar.xz">
-  <!ENTITY libqtxdg-download-ftp  " ">
-  <!ENTITY libqtxdg-md5sum        "6cb85091630b7d84278b2430e92a62bb">
-  <!ENTITY libqtxdg-size          "72 KB">
-  <!ENTITY libqtxdg-buildsize     "6.3 MB">
-  <!ENTITY libqtxdg-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="libqtxdg" xreflabel="libqtxdg-&libqtxdg-version;">
-  <?dbhtml filename="libqtxdg.html"?>
-@y
-<sect1 id="libqtxdg" xreflabel="libqtxdg-&libqtxdg-version;">
-  <?dbhtml filename="libqtxdg.html"?>
-@z
-
-@x
-  <title>libqtxdg-&libqtxdg-version;</title>
-@y
-  <title>libqtxdg-&libqtxdg-version;</title>
-@z
-
-@x
-  <indexterm zone="libqtxdg">
-    <primary sortas="a-libqtxdg">libqtxdg</primary>
-  </indexterm>
-@y
-  <indexterm zone="libqtxdg">
-    <primary sortas="a-libqtxdg">libqtxdg</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to libqtxdg</title>
 @y
@@ -63,12 +21,6 @@
       The <application>libqtxdg</application> is a Qt implementation of the
       freedesktop.org xdg specifications.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

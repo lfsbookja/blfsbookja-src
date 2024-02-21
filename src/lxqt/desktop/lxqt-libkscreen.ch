@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libkscreen-download-http "http://download.kde.org/stable/plasma/&plasma5-version;/libkscreen-&plasma5-version;.tar.xz">
-  <!ENTITY libkscreen-download-ftp  " ">
-  <!ENTITY libkscreen-md5sum        "1f491e823bc83df650d04d5d9948da45">
-  <!ENTITY libkscreen-size          "116 KB">
-  <!ENTITY libkscreen-buildsize     "16 MB">
   <!ENTITY libkscreen-time          "0.2 SBU (using parallelism=4)">
-]>
 @y
-  <!ENTITY libkscreen-download-http "http://download.kde.org/stable/plasma/&plasma5-version;/libkscreen-&plasma5-version;.tar.xz">
-  <!ENTITY libkscreen-download-ftp  " ">
-  <!ENTITY libkscreen-md5sum        "1f491e823bc83df650d04d5d9948da45">
-  <!ENTITY libkscreen-size          "116 KB">
-  <!ENTITY libkscreen-buildsize     "16 MB">
   <!ENTITY libkscreen-time          "0.2 SBU (using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="lxqt-libkscreen" xreflabel="libkscreen-&plasma5-version; for lxqt">
-  <?dbhtml filename="lxqt-libkscreen.html"?>
-@y
-<sect1 id="lxqt-libkscreen" xreflabel="libkscreen-&plasma5-version; for lxqt">
-  <?dbhtml filename="lxqt-libkscreen.html"?>
-@z
-
-@x
-  <title>libkscreen-&plasma5-version; for lxqt</title>
-@y
-  <title>libkscreen-&plasma5-version; for lxqt</title>
-@z
-
-@x
-  <indexterm zone="lxqt-libkscreen">
-    <primary sortas="a-libkscreen">libkscreen</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-libkscreen">
-    <primary sortas="a-libkscreen">libkscreen</primary>
-  </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
       The <application>libkscreen</application> package contains the
       KDE Screen Management library.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

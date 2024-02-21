@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libfm-qt-download-http "https://github.com/lxqt/libfm-qt/releases/download/&lxqt-version;/libfm-qt-&lxqt-version;.tar.xz">
-  <!ENTITY libfm-qt-download-ftp  " ">
-  <!ENTITY libfm-qt-md5sum        "d018e160cefdbccfea8bd550f2d7b517">
-  <!ENTITY libfm-qt-size          "392 KB">
-  <!ENTITY libfm-qt-buildsize     "24 MB">
   <!ENTITY libfm-qt-time          "0.3 SBU (Using parallelism=4)">
-]>
 @y
-  <!ENTITY libfm-qt-download-http "https://github.com/lxqt/libfm-qt/releases/download/&lxqt-version;/libfm-qt-&lxqt-version;.tar.xz">
-  <!ENTITY libfm-qt-download-ftp  " ">
-  <!ENTITY libfm-qt-md5sum        "d018e160cefdbccfea8bd550f2d7b517">
-  <!ENTITY libfm-qt-size          "392 KB">
-  <!ENTITY libfm-qt-buildsize     "24 MB">
   <!ENTITY libfm-qt-time          "0.3 SBU (Using parallelism=4)">
-]>
-@z
-
-@x
-<sect1 id="libfm-qt" xreflabel="libfm-qt-&lxqt-version;">
-  <?dbhtml filename="libfm-qt.html"?>
-@y
-<sect1 id="libfm-qt" xreflabel="libfm-qt-&lxqt-version;">
-  <?dbhtml filename="libfm-qt.html"?>
-@z
-
-@x
-  <title>libfm-qt-&lxqt-version;</title>
-@y
-  <title>libfm-qt-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="libfm-qt">
-    <primary sortas="a-libfm-qt">libfm-qt</primary>
-  </indexterm>
-@y
-  <indexterm zone="libfm-qt">
-    <primary sortas="a-libfm-qt">libfm-qt</primary>
-  </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
       <application>libfm-qt</application> is the Qt port of libfm, a library
       providing components to build desktop file managers.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

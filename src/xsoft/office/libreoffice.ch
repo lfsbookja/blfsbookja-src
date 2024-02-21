@@ -300,103 +300,20 @@
 @z
 
 @x
-    &build-use-internet;
-@y
-    &build-use-internet;
-@z
-
-@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <note>
-      <para>
-        Most of these packages are recommended because if they're not installed,
-        the build process will compile and install its own (often older)
-        version, with the side effect of increasing build and installed disk
-        space and build time.
-      </para>
-    </note>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <note>
-      <para>
+@z
+@x
         Most of these packages are recommended because if they're not installed,
         the build process will compile and install its own (often older)
-        version, with the side effect of increasing build and installed disk
-        space and build time.
-      </para>
-    </note>
-@z
-
-@x
-    <para role="recommended">
-      <xref linkend="apache-ant"/>,
-      <xref linkend="boost"/>,
-      <xref linkend="clucene"/>,
-      <xref linkend="cups"/>,
-      <xref linkend="curl"/>,
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="libepoxy"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="llvm"/> (clang is preferred for rendering with skia),
-      <xref linkend="glm"/>,
-      <xref linkend="glu"/>,
-      <xref linkend="gpgme"/>,
-      <xref linkend="graphite2"/>,
-      <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="libatomic_ops"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="libxml2"/> and
-      <xref linkend="libxslt"/>,
-      <xref linkend="lxml"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="nss"/>,
-      <xref linkend="openldap"/> (if connecting to an LDAP server),
-      <xref linkend="poppler"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="redland"/>, and
-      <xref linkend="unixodbc"/>
-    </para>
+        version, with the side effect of increasing both build and installed disk
+        space along with increasing build time.
 @y
-    <para role="recommended">
-      <xref linkend="apache-ant"/>,
-      <xref linkend="boost"/>,
-      <xref linkend="clucene"/>,
-      <xref linkend="cups"/>,
-      <xref linkend="curl"/>,
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="libepoxy"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="llvm"/> (clang is preferred for rendering with skia),
-      <xref linkend="glm"/>,
-      <xref linkend="glu"/>,
-      <xref linkend="gpgme"/>,
-      <xref linkend="graphite2"/>,
-      <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="libatomic_ops"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="libxml2"/> and
-      <xref linkend="libxslt"/>,
-      <xref linkend="lxml"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="nss"/>,
-      <xref linkend="openldap"/> (if connecting to an LDAP server),
-      <xref linkend="poppler"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="redland"/>, and
-      <xref linkend="unixodbc"/>
-    </para>
+        Most of these packages are recommended because if they're not installed,
+        the build process will compile and install its own (often older)
+        version, with the side effect of increasing both build and installed disk
+        space along with increasing build time.
 @z
 
 @x

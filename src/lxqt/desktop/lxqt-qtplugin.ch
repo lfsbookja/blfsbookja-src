@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-qtplugin-download-http "https://github.com/lxqt/lxqt-qtplugin/releases/download/&lxqt-version;/lxqt-qtplugin-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-qtplugin-download-ftp  " ">
-  <!ENTITY lxqt-qtplugin-md5sum        "b4cbfc3f9ba5acead1f887b47788135f">
-  <!ENTITY lxqt-qtplugin-size          "24 KB">
-  <!ENTITY lxqt-qtplugin-buildsize     "1.6 MB">
-  <!ENTITY lxqt-qtplugin-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY lxqt-qtplugin-download-http "https://github.com/lxqt/lxqt-qtplugin/releases/download/&lxqt-version;/lxqt-qtplugin-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-qtplugin-download-ftp  " ">
-  <!ENTITY lxqt-qtplugin-md5sum        "b4cbfc3f9ba5acead1f887b47788135f">
-  <!ENTITY lxqt-qtplugin-size          "24 KB">
-  <!ENTITY lxqt-qtplugin-buildsize     "1.6 MB">
-  <!ENTITY lxqt-qtplugin-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-qtplugin" xreflabel="lxqt-qtplugin-&lxqt-version;">
-  <?dbhtml filename="lxqt-qtplugin.html"?>
-@y
-<sect1 id="lxqt-qtplugin" xreflabel="lxqt-qtplugin-&lxqt-version;">
-  <?dbhtml filename="lxqt-qtplugin.html"?>
-@z
-
-@x
-  <title>lxqt-qtplugin-&lxqt-version;</title>
-@y
-  <title>lxqt-qtplugin-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-qtplugin">
-    <primary sortas="a-lxqt-qtplugin">lxqt-qtplugin</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-qtplugin">
-    <primary sortas="a-lxqt-qtplugin">lxqt-qtplugin</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to lxqt-qtplugin</title>
 @y
@@ -65,12 +23,6 @@
       <application>LXQt</application> <application>Qt</application> platform
       integration plugin.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

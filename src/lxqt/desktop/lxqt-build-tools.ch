@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-build-tools-download-http "https://github.com/lxqt/lxqt-build-tools/releases/download/&lxqt-build-tools-version;/lxqt-build-tools-&lxqt-build-tools-version;.tar.xz">
-  <!ENTITY lxqt-build-tools-download-ftp  " ">
-  <!ENTITY lxqt-build-tools-md5sum        "f434042d33af5b47d61afdd6f0677276">
-  <!ENTITY lxqt-build-tools-size          "28 KB">
-  <!ENTITY lxqt-build-tools-buildsize     "776 KB">
   <!ENTITY lxqt-build-tools-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY lxqt-build-tools-download-http "https://github.com/lxqt/lxqt-build-tools/releases/download/&lxqt-build-tools-version;/lxqt-build-tools-&lxqt-build-tools-version;.tar.xz">
-  <!ENTITY lxqt-build-tools-download-ftp  " ">
-  <!ENTITY lxqt-build-tools-md5sum        "f434042d33af5b47d61afdd6f0677276">
-  <!ENTITY lxqt-build-tools-size          "28 KB">
-  <!ENTITY lxqt-build-tools-buildsize     "776 KB">
   <!ENTITY lxqt-build-tools-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-build-tools" xreflabel="lxqt-build-tools-&lxqt-build-tools-version;">
-  <?dbhtml filename="lxqt-build-tools.html"?>
-@y
-<sect1 id="lxqt-build-tools" xreflabel="lxqt-build-tools-&lxqt-build-tools-version;">
-  <?dbhtml filename="lxqt-build-tools.html"?>
-@z
-
-@x
-  <title>lxqt-build-tools-&lxqt-build-tools-version;</title>
-@y
-  <title>lxqt-build-tools-&lxqt-build-tools-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-build-tools">
-    <primary sortas="a-lxqt-build-tools">lxqt-build-tools</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-build-tools">
-    <primary sortas="a-lxqt-build-tools">lxqt-build-tools</primary>
-  </indexterm>
 @z
 
 @x
@@ -65,12 +29,6 @@
       tools needed to build LXQt itself as well as other components maintained
       by the LXQt project.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

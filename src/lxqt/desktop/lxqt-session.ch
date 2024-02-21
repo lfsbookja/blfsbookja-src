@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-session-download-http "https://github.com/lxqt/lxqt-session/releases/download/&lxqt-version;/lxqt-session-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-session-download-ftp  " ">
-  <!ENTITY lxqt-session-md5sum        "b8a4d40eeaf6972cfa23467043e2f5c4">
-  <!ENTITY lxqt-session-size          "184 KB">
-  <!ENTITY lxqt-session-buildsize     "8.6 MB">
-  <!ENTITY lxqt-session-time          "0.3 SBU">
-]>
-@y
-  <!ENTITY lxqt-session-download-http "https://github.com/lxqt/lxqt-session/releases/download/&lxqt-version;/lxqt-session-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-session-download-ftp  " ">
-  <!ENTITY lxqt-session-md5sum        "b8a4d40eeaf6972cfa23467043e2f5c4">
-  <!ENTITY lxqt-session-size          "184 KB">
-  <!ENTITY lxqt-session-buildsize     "8.6 MB">
-  <!ENTITY lxqt-session-time          "0.3 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-session" xreflabel="lxqt-session-&lxqt-version;">
-  <?dbhtml filename="lxqt-session.html"?>
-@y
-<sect1 id="lxqt-session" xreflabel="lxqt-session-&lxqt-version;">
-  <?dbhtml filename="lxqt-session.html"?>
-@z
-
-@x
-  <title>lxqt-session-&lxqt-version;</title>
-@y
-  <title>lxqt-session-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-session">
-    <primary sortas="a-lxqt-session">lxqt-session</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-session">
-    <primary sortas="a-lxqt-session">lxqt-session</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to lxqt-session</title>
 @y
@@ -63,12 +21,6 @@
       The <application>lxqt-session</application> package contains the default
       session manager for <application>LXQt</application>.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

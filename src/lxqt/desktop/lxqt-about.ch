@@ -4,45 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-about-download-http "https://github.com/lxqt/lxqt-about/releases/download/&lxqt-version;/lxqt-about-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-about-download-ftp  " ">
-  <!ENTITY lxqt-about-md5sum        "169b0aa807f45f486b5853c8abc4085e">
-  <!ENTITY lxqt-about-size          "48 KB">
-  <!ENTITY lxqt-about-buildsize     "2.6 MB">
   <!ENTITY lxqt-about-time          "less than 0.1 SBU">
-]>
 @y
-  <!ENTITY lxqt-about-download-http "https://github.com/lxqt/lxqt-about/releases/download/&lxqt-version;/lxqt-about-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-about-download-ftp  " ">
-  <!ENTITY lxqt-about-md5sum        "169b0aa807f45f486b5853c8abc4085e">
-  <!ENTITY lxqt-about-size          "48 KB">
-  <!ENTITY lxqt-about-buildsize     "2.6 MB">
   <!ENTITY lxqt-about-time          "less than 0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-about" xreflabel="lxqt-about-&lxqt-version;">
-  <?dbhtml filename="lxqt-about.html"?>
-@y
-<sect1 id="lxqt-about" xreflabel="lxqt-about-&lxqt-version;">
-  <?dbhtml filename="lxqt-about.html"?>
-@z
-
-@x
-  <title>lxqt-about-&lxqt-version;</title>
-@y
-  <title>lxqt-about-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-about">
-    <primary sortas="a-lxqt-about">lxqt-about</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-about">
-    <primary sortas="a-lxqt-about">lxqt-about</primary>
-  </indexterm>
 @z
 
 @x
@@ -63,12 +27,6 @@
       The <application>lxqt-about</application> package provides the standalone
       <application>LXQt</application> <quote>About</quote> dialog.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

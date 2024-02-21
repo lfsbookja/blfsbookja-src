@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-runner-download-http "https://github.com/lxqt/lxqt-runner/releases/download/&lxqt-version;/lxqt-runner-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-runner-download-ftp  " ">
-  <!ENTITY lxqt-runner-md5sum        "2b51f887ed36a9d39085fa6b938e5013">
-  <!ENTITY lxqt-runner-size          "220 KB">
-  <!ENTITY lxqt-runner-buildsize     "4.4 MB">
-  <!ENTITY lxqt-runner-time          "0.1 SBU">
-]>
-@y
-  <!ENTITY lxqt-runner-download-http "https://github.com/lxqt/lxqt-runner/releases/download/&lxqt-version;/lxqt-runner-&lxqt-version;.tar.xz">
-  <!ENTITY lxqt-runner-download-ftp  " ">
-  <!ENTITY lxqt-runner-md5sum        "2b51f887ed36a9d39085fa6b938e5013">
-  <!ENTITY lxqt-runner-size          "220 KB">
-  <!ENTITY lxqt-runner-buildsize     "4.4 MB">
-  <!ENTITY lxqt-runner-time          "0.1 SBU">
-]>
-@z
-
-@x
-<sect1 id="lxqt-runner" xreflabel="lxqt-runner-&lxqt-version;">
-  <?dbhtml filename="lxqt-runner.html"?>
-@y
-<sect1 id="lxqt-runner" xreflabel="lxqt-runner-&lxqt-version;">
-  <?dbhtml filename="lxqt-runner.html"?>
-@z
-
-@x
-  <title>lxqt-runner-&lxqt-version;</title>
-@y
-  <title>lxqt-runner-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-runner">
-    <primary sortas="a-lxqt-runner">lxqt-runner</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-runner">
-    <primary sortas="a-lxqt-runner">lxqt-runner</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to lxqt-runner</title>
 @y
@@ -63,12 +21,6 @@
       The <application>lxqt-runner</application> package provides a tool used
       to launch programs quickly by typing their names.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

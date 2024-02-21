@@ -4,30 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<sect1 id="lxqt-themes" xreflabel="lxqt-themes-&lxqt-themes-version;">
-  <?dbhtml filename="lxqt-themes.html"?>
-@y
-<sect1 id="lxqt-themes" xreflabel="lxqt-themes-&lxqt-themes-version;">
-  <?dbhtml filename="lxqt-themes.html"?>
-@z
-
-@x
-  <title>lxqt-themes-&lxqt-themes-version;</title>
-@y
-  <title>lxqt-themes-&lxqt-themes-version;</title>
-@z
-
-@x
-  <indexterm zone="lxqt-themes">
-    <primary sortas="a-lxqt-themes">lxqt-themes</primary>
-  </indexterm>
-@y
-  <indexterm zone="lxqt-themes">
-    <primary sortas="a-lxqt-themes">lxqt-themes</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to lxqt-themes</title>
 @y
@@ -47,12 +23,6 @@
       graphics files and themes for the <application>LXQt</application>
       desktop.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

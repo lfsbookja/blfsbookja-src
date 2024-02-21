@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY liblxqt-download-http "https://github.com/lxqt/liblxqt/releases/download/&lxqt-version;/liblxqt-&lxqt-version;.tar.xz">
-  <!ENTITY liblxqt-download-ftp  " ">
-  <!ENTITY liblxqt-md5sum        "5877977a8314f6470c15faa09c24c764">
-  <!ENTITY liblxqt-size          "84 KB">
-  <!ENTITY liblxqt-buildsize     "5.2 MB">
-  <!ENTITY liblxqt-time          "0.2 SBU">
-]>
-@y
-  <!ENTITY liblxqt-download-http "https://github.com/lxqt/liblxqt/releases/download/&lxqt-version;/liblxqt-&lxqt-version;.tar.xz">
-  <!ENTITY liblxqt-download-ftp  " ">
-  <!ENTITY liblxqt-md5sum        "5877977a8314f6470c15faa09c24c764">
-  <!ENTITY liblxqt-size          "84 KB">
-  <!ENTITY liblxqt-buildsize     "5.2 MB">
-  <!ENTITY liblxqt-time          "0.2 SBU">
-]>
-@z
-
-@x
-<sect1 id="liblxqt" xreflabel="liblxqt-&lxqt-version;">
-  <?dbhtml filename="liblxqt.html"?>
-@y
-<sect1 id="liblxqt" xreflabel="liblxqt-&lxqt-version;">
-  <?dbhtml filename="liblxqt.html"?>
-@z
-
-@x
-  <title>liblxqt-&lxqt-version;</title>
-@y
-  <title>liblxqt-&lxqt-version;</title>
-@z
-
-@x
-  <indexterm zone="liblxqt">
-    <primary sortas="a-liblxqt">liblxqt</primary>
-  </indexterm>
-@y
-  <indexterm zone="liblxqt">
-    <primary sortas="a-liblxqt">liblxqt</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to liblxqt</title>
 @y
@@ -63,12 +21,6 @@
       The <application>liblxqt</application> is the core utility library for all
       <application>LXQt</application> components.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x

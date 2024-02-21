@@ -4,48 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qps-download-http "https://github.com/lxqt/qps/releases/download/&qps-version;/qps-&qps-version;.tar.xz">
-  <!ENTITY qps-download-ftp  " ">
-  <!ENTITY qps-md5sum        "1140cb1b3b7b36f79a2f1e0686125e8f">
-  <!ENTITY qps-size          "440 KB">
-  <!ENTITY qps-buildsize     "8.3 MB">
-  <!ENTITY qps-time          "0.3 SBU">
-]>
-@y
-  <!ENTITY qps-download-http "https://github.com/lxqt/qps/releases/download/&qps-version;/qps-&qps-version;.tar.xz">
-  <!ENTITY qps-download-ftp  " ">
-  <!ENTITY qps-md5sum        "1140cb1b3b7b36f79a2f1e0686125e8f">
-  <!ENTITY qps-size          "440 KB">
-  <!ENTITY qps-buildsize     "8.3 MB">
-  <!ENTITY qps-time          "0.3 SBU">
-]>
-@z
-
-@x
-<sect1 id="qps" xreflabel="qps-&qps-version;">
-  <?dbhtml filename="qps.html"?>
-@y
-<sect1 id="qps" xreflabel="qps-&qps-version;">
-  <?dbhtml filename="qps.html"?>
-@z
-
-@x
-  <title>qps-&qps-version;</title>
-@y
-  <title>qps-&qps-version;</title>
-@z
-
-@x
-  <indexterm zone="qps">
-    <primary sortas="a-qps">qps</primary>
-  </indexterm>
-@y
-  <indexterm zone="qps">
-    <primary sortas="a-qps">qps</primary>
-  </indexterm>
-@z
-
-@x
   <sect2 role="package">
     <title>Introduction to qps</title>
 @y
@@ -63,12 +21,6 @@
       The <application>qps</application> package contains a Qt process
       manager.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
