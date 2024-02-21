@@ -102,7 +102,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (<command>dmsetup</command> is used in tests),
-      <xref linkend="sphinx"/> (required to build documentation), and 
+      <xref linkend="sphinx"/> and <xref linkend="sphinx_rtd_theme"/>
+      (required to build documentation), and
       <ulink 
         url='https://mirrors.edge.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/'>
         reiserfsprogs</ulink> (for tests).
@@ -112,10 +113,11 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (テストにて <command>dmsetup</command> が利用される),
-      <xref linkend="sphinx"/> (ドキュメントビルドに必要),
+      <xref linkend="sphinx"/>, <xref linkend="sphinx_rtd_theme"/>
+      (ドキュメントビルドに必要),
       <ulink 
         url='https://mirrors.edge.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/'>
-        reiserfsprogs</ulink> (テストのため).
+        reiserfsprogs</ulink> (テストのため)
 
     </para>
 @z

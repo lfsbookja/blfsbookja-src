@@ -4,45 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY grilo-download-http "&gnome-download-http;/grilo/0.3/grilo-&grilo-version;.tar.xz">
-  <!ENTITY grilo-download-ftp  " ">
-  <!ENTITY grilo-md5sum        "e81c4d7e182eb6448b9f0458f52511a3">
-  <!ENTITY grilo-size          "236 KB">
   <!ENTITY grilo-buildsize     "13 MB (with tests)">
   <!ENTITY grilo-time          "0.2 SBU (with tests)">
-]>
 @y
-  <!ENTITY grilo-download-http "&gnome-download-http;/grilo/0.3/grilo-&grilo-version;.tar.xz">
-  <!ENTITY grilo-download-ftp  " ">
-  <!ENTITY grilo-md5sum        "e81c4d7e182eb6448b9f0458f52511a3">
-  <!ENTITY grilo-size          "236 KB">
   <!ENTITY grilo-buildsize     "13 MB (with tests)">
   <!ENTITY grilo-time          "0.2 SBU (with tests)">
-]>
-@z
-
-@x
-<sect1 id="grilo" xreflabel="Grilo-&grilo-version;">
-  <?dbhtml filename="grilo.html"?>
-@y
-<sect1 id="grilo" xreflabel="Grilo-&grilo-version;">
-  <?dbhtml filename="grilo.html"?>
-@z
-
-@x
-  <title>Grilo-&grilo-version;</title>
-@y
-  <title>Grilo-&grilo-version;</title>
-@z
-
-@x
-  <indexterm zone="grilo">
-    <primary sortas="a-Grilo">Grilo</primary>
-  </indexterm>
-@y
-  <indexterm zone="grilo">
-    <primary sortas="a-Grilo">Grilo</primary>
-  </indexterm>
 @z
 
 @x
@@ -65,12 +31,6 @@
       media discovery and browsing easy for applications and application
       developers.
     </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
