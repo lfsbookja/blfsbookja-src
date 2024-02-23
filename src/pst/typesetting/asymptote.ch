@@ -40,12 +40,6 @@
 @z
 
 @x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
-@z
-
-@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
     <itemizedlist spacing="compact">
       <listitem>
@@ -176,18 +170,6 @@
       <xref linkend="glew"/>,
       <xref linkend="glm"/> and
       <xref linkend="libtirpc"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended at runtime</bridgehead>
-    <para role="recommended">
-      <xref role="runtime" linkend="dvisvgm"/> to allow svg output
-    </para>
-@y
-    <bridgehead renderas="sect4">Recommended at runtime</bridgehead>
-    <para role="recommended">
-      <xref role="runtime" linkend="dvisvgm"/> to allow svg output
     </para>
 @z
 

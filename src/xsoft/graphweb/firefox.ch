@@ -234,14 +234,6 @@
 @z
 
 @x
-      If building with system ICU, adapt the line break mapping for ICU
-      74 or later:
-@y
-      If building with system ICU, adapt the line break mapping for ICU
-      74 or later:
-@z
-
-@x
       The configuration of <application>Firefox</application> is accomplished
       by creating a <filename>mozconfig</filename> file containing the desired
       configuration options. A default <filename>mozconfig</filename> is

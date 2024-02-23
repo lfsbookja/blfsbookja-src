@@ -84,11 +84,15 @@
 @z
 
 @x
-      First, fix an issue in Makefile causing the package to be rebuilt
-      during installation:
+        This package cannot function properly on a 32-bit system with a
+        64-bit UEFI implementation.  Don't install this package (or
+        efibootmgr) on 32-bit system unless you are absolutely sure you have
+        a 32-bit UEFI implementation, which is very rare in practice.
 @y
-      First, fix an issue in Makefile causing the package to be rebuilt
-      during installation:
+        This package cannot function properly on a 32-bit system with a
+        64-bit UEFI implementation.  Don't install this package (or
+        efibootmgr) on 32-bit system unless you are absolutely sure you have
+        a 32-bit UEFI implementation, which is very rare in practice.
 @z
 
 @x
@@ -120,27 +124,29 @@
 @z
 
 @x
-      <parameter>ERRORS=</parameter>:
-      This option overrides the <option>-Werror</option> passed to GCC
-      by default, so the package won't fail to build with the
-      <option>-Wenum-int-mismatch</option> warning introduced in GCC 13.
+      <parameter>LIBDIR=/usr/lib</parameter>:
+      This option overrides the default library directory of the package
+      (<filename class="directory">/usr/lib64</filename>, which is not used
+      by LFS).
 @y
-      <parameter>ERRORS=</parameter>:
-      This option overrides the <option>-Werror</option> passed to GCC
-      by default, so the package won't fail to build with the
-      <option>-Wenum-int-mismatch</option> warning introduced in GCC 13.
+      <parameter>LIBDIR=/usr/lib</parameter>:
+      This option overrides the default library directory of the package
+      (<filename class="directory">/usr/lib64</filename>, which is not used
+      by LFS).
 @z
 
 @x
-      <parameter>LIBDIR=/usr/lib</parameter>:
-      This option overrides the default library directory of the package
-      (<filename class="directory">/usr/lib64</filename>, which is not used
-      by LFS.)
+      <option>ENABLE_DOCS=0</option>: Disable the generation of man pages.
+      Append this option after the <command>make</command> and
+      <command>make install</command> commands if you don't need the man
+      pages to allow building this package without <xref linkend='mandoc'/>
+      installed.
 @y
-      <parameter>LIBDIR=/usr/lib</parameter>:
-      This option overrides the default library directory of the package
-      (<filename class="directory">/usr/lib64</filename>, which is not used
-      by LFS.)
+      <option>ENABLE_DOCS=0</option>: Disable the generation of man pages.
+      Append this option after the <command>make</command> and
+      <command>make install</command> commands if you don't need the man
+      pages to allow building this package without <xref linkend='mandoc'/>
+      installed.
 @z
 
 @x

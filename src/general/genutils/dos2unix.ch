@@ -19,10 +19,10 @@
 
 @x
       The <application>dos2unix</application> package contains
-      an any to any text format converter.
+      an any-to-any text format converter.
 @y
       The <application>dos2unix</application> package contains
-      an any to any text format converter.
+      an any-to-any text format converter.
 @z
 
 @x

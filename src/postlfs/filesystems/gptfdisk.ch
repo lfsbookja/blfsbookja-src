@@ -160,59 +160,25 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of gptfdisk</title>
 @y
-  <sect2 role="installation">
     <title>Installation of gptfdisk</title>
 @z
 
 @x
-    <para>
       The <application>gptfdisk</application> package comes with a
       rudimentary <filename>Makefile</filename>.  First we update it
       to provide a simple build and install interface and fix the
-      location of a header file as well fixing an issue introduced
-      by a recent version of <application>popt</application>.
+      location of a header file and fix some minor location issues.
       Install <application>gptfdisk</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       The <application>gptfdisk</application> package comes with a
       rudimentary <filename>Makefile</filename>.  First we update it
       to provide a simple build and install interface and fix the
-      location of a header file as well fixing an issue introduced
-      by a recent version of <application>popt</application>.
+      location of a header file and fix some minor location issues.
       Install <application>gptfdisk</application> by running the following
       commands:
-    </para>
-@z
-
-@x
-<screen><userinput>patch -Np1 -i ../gptfdisk-&gptfdisk-version;-convenience-1.patch &amp;&amp;
-sed -i 's|ncursesw/||' gptcurses.cc &amp;&amp;
-sed -i 's|sbin|usr/sbin|' Makefile &amp;&amp;
-sed -i '/UUID_H/s/^.*$/#if defined (_UUID_UUID_H) || defined (_UL_LIBUUID_UUID_H)/' guid.cc &amp;&amp;
-sed -i "/device =/s/= \(.*\);/= strdup(\1);/" gptcl.cc &amp;&amp;
-@y
-<screen><userinput>patch -Np1 -i ../gptfdisk-&gptfdisk-version;-convenience-1.patch &amp;&amp;
-sed -i 's|ncursesw/||' gptcurses.cc &amp;&amp;
-sed -i 's|sbin|usr/sbin|' Makefile &amp;&amp;
-sed -i '/UUID_H/s/^.*$/#if defined (_UUID_UUID_H) || defined (_UL_LIBUUID_UUID_H)/' guid.cc &amp;&amp;
-sed -i "/device =/s/= \(.*\);/= strdup(\1);/" gptcl.cc &amp;&amp;
-@z
-
-@x
-make</userinput></screen>
-@y
-make</userinput></screen>
 @z
 
 @x

@@ -78,7 +78,7 @@
 @z
 
 @x
-        Oracle does provide free community access, on a case by case basis, to
+        Oracle does provide free community access, on a case-by-case basis, to
         a closed toolkit to ensure 100% compatibility with its proprietary JDK.
         Neither the binary version provided on the <xref linkend="java"/> page
         nor the JVM built with the instructions below have been tested against
@@ -88,7 +88,7 @@
         cannot claim to be compatible with the proprietary JDK, without the
         user applying for, and completing the compatibility tests themselves.
 @y
-        Oracle does provide free community access, on a case by case basis, to
+        Oracle does provide free community access, on a case-by-case basis, to
         a closed toolkit to ensure 100% compatibility with its proprietary JDK.
         Neither the binary version provided on the <xref linkend="java"/> page
         nor the JVM built with the instructions below have been tested against
