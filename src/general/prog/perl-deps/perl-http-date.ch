@@ -6,7 +6,7 @@
 @x
       <title>Introduction to HTTP::Date</title>
 @y
-      <title>Introduction to HTTP::Date</title>
+      <title>&IntroductionTo1;HTTP::Date&IntroductionTo2;</title>
 @z
 
 @x
@@ -20,23 +20,23 @@
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
 @y
-      <bridgehead renderas="sect4">Package Information</bridgehead>
+      <bridgehead renderas="sect4">&PackageInformation;</bridgehead>
 @z
 
 @x
             Download (HTTP): <ulink url="&my-download-http;"/>
 @y
-            Download (HTTP): <ulink url="&my-download-http;"/>
+            &Download; (HTTP): <ulink url="&my-download-http;"/>
 @z
 
 @x
             Download MD5 sum: &my-md5sum;
 @y
-            Download MD5 sum: &my-md5sum;
+            &Download; MD5 sum: &my-md5sum;
 @z
 
 @x
       <title>Installation of HTTP::Date</title>
 @y
-      <title>Installation of HTTP::Date</title>
+      <title>&InstallationOf1;HTTP::Date&InstallationOf2;</title>
 @z

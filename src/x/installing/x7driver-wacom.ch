@@ -12,35 +12,23 @@
 @z
 
 @x
-    <sect3 role="package">
       <title>Introduction to Xorg Wacom Driver</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Xorg Wacom Driver</title>
 @z
 
 @x
-      <para>
         The <application>Xorg Wacom Driver</application> package contains the
         X.Org X11 driver and SDK for Wacom and Wacom-like tablets. It is not
         required to use a Wacom tablet, the
         <application>xf86-input-evdev</application> driver can handle these
         devices without problems.
-      </para>
 @y
-      <para>
         The <application>Xorg Wacom Driver</application> package contains the
         X.Org X11 driver and SDK for Wacom and Wacom-like tablets. It is not
         required to use a Wacom tablet, the
         <application>xf86-input-evdev</application> driver can handle these
         devices without problems.
-      </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x
@@ -146,169 +134,83 @@
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="kernel" id="xorg-wacom-driver-kernel">
       <title>Kernel Configuration</title>
 @y
-    <sect3 role="kernel" id="xorg-wacom-driver-kernel">
       <title>Kernel Configuration</title>
 @z
 
 @x
-      <para>
         To use a Wacom tablet with USB interface, enable the following
         options in your kernel configuration and recompile. Note that
         other configuration options could be required for tablet with a
         serial or bluetooth interface:
-      </para>
 @y
-      <para>
         To use a Wacom tablet with USB interface, enable the following
         options in your kernel configuration and recompile. Note that
         other configuration options could be required for tablet with a
         serial or bluetooth interface:
-      </para>
 @z
 
 @x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="x7driver-wacom-kernel.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="x7driver-wacom-kernel.xml"/>
-@z
-
-@x
-      <indexterm zone="xorg-wacom-driver xorg-wacom-driver-kernel">
-        <primary sortas="d-xorg-wacom-driver">xorg-wacom-driver</primary>
-      </indexterm>
-    </sect3>
-@y
-      <indexterm zone="xorg-wacom-driver xorg-wacom-driver-kernel">
-        <primary sortas="d-xorg-wacom-driver">xorg-wacom-driver</primary>
-      </indexterm>
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of Xorg Wacom Driver</title>
 @y
-    <sect3 role="installation">
       <title>Installation of Xorg Wacom Driver</title>
 @z
 
 @x
-      <para>
         Install <application>Xorg Wacom Driver</application> by running the following
         commands:
-      </para>
 @y
-      <para>
         Install <application>Xorg Wacom Driver</application> by running the following
         commands:
-      </para>
 @z
 
 @x
-<screen revision="sysv"><userinput>./configure $XORG_CONFIG --with-systemd-unit-dir=no &amp;&amp;
-make</userinput></screen>
-@y
-<screen revision="sysv"><userinput>./configure $XORG_CONFIG --with-systemd-unit-dir=no &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-<screen revision="systemd"><userinput>./configure $XORG_CONFIG &amp;&amp;
-make</userinput></screen>
-@y
-<screen revision="systemd"><userinput>./configure $XORG_CONFIG &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-      <para>
         To test the results, issue: <command>make check</command>.
-      </para>
 @y
-      <para>
         To test the results, issue: <command>make check</command>.
-      </para>
 @z
 
 @x
-      <para>
         Now, as the <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para>
         Now, as the <systemitem class="username">root</systemitem> user:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-    </sect3>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-    </sect3>
-@z
-
-@x
-    <sect3 role="content">
       <title>Contents</title>
 @y
-    <sect3 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Xorg Driver</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Xorg Driver</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>
             isdv4-serial-debugger, isdv4-serial-inputattach, and xsetwacom
           </seg>
           <seg>
             wacom_drv.so
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
           <seg>
             isdv4-serial-debugger, isdv4-serial-inputattach, and xsetwacom
           </seg>
           <seg>
             wacom_drv.so
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @z
 
 @x
-      <variablelist>
         <bridgehead renderas="sect4">Short Descriptions</bridgehead>
-        <?dbfo list-presentation="list"?>
-        <?dbhtml list-presentation="table"?>
 @y
-      <variablelist>
         <bridgehead renderas="sect4">Short Descriptions</bridgehead>
-        <?dbfo list-presentation="list"?>
-        <?dbhtml list-presentation="table"?>
 @z
 
 @x
@@ -363,22 +265,4 @@ make</userinput></screen>
             </indexterm>
           </listitem>
         </varlistentry>
-@z
-
-@x
-      </variablelist>
-@y
-      </variablelist>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z

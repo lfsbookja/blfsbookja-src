@@ -10,37 +10,25 @@
 @z
 
 @x
-    <sect3 role="package">
       <title>Introduction to Xorg Synaptics Driver</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Xorg Synaptics Driver</title>
 @z
 
 @x
-      <para>
         The <application>Xorg Synaptics Driver</application> package contains
         the X.Org Input Driver, support programs and SDK for Synaptics
         touchpads. Even though the evdev driver can handle touchpads very well,
         this driver is required if you want to use advanced features like multi
         tapping, scrolling with touchpad, turning the touchpad off while
         typing, etc.
-      </para>
 @y
-      <para>
         The <application>Xorg Synaptics Driver</application> package contains
         the X.Org Input Driver, support programs and SDK for Synaptics
         touchpads. Even though the evdev driver can handle touchpads very well,
         this driver is required if you want to use advanced features like multi
         tapping, scrolling with touchpad, turning the touchpad off while
         typing, etc.
-      </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x
@@ -134,117 +122,65 @@
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of Xorg Synaptics Driver</title>
 @y
-    <sect3 role="installation">
       <title>Installation of Xorg Synaptics Driver</title>
 @z
 
 @x
-      <para>
         Install <application>Xorg Synaptics Driver</application> by running the following
         commands:
-      </para>
 @y
-      <para>
         Install <application>Xorg Synaptics Driver</application> by running the following
         commands:
-      </para>
 @z
 
 @x
-<screen><userinput>./configure $XORG_CONFIG &amp;&amp;
-make</userinput></screen>
-@y
-<screen><userinput>./configure $XORG_CONFIG &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-      <para>
         This package does not come with a test suite.
-      </para>
 @y
-      <para>
         This package does not come with a test suite.
-      </para>
 @z
 
 @x
-      <para>
         Now, as the <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para>
         Now, as the <systemitem class="username">root</systemitem> user:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-    </sect3>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-    </sect3>
-@z
-
-@x
-    <sect3 role="content">
       <title>Contents</title>
 @y
-    <sect3 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Xorg Driver</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Xorg Driver</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>
             synclient and syndaemon
           </seg>
           <seg>
             synaptics_drv.so
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
           <seg>
             synclient and syndaemon
           </seg>
           <seg>
             synaptics_drv.so
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @z
 
 @x
-      <variablelist>
         <bridgehead renderas="sect4">Short Descriptions</bridgehead>
-        <?dbfo list-presentation="list"?>
-        <?dbhtml list-presentation="table"?>
 @y
-      <variablelist>
         <bridgehead renderas="sect4">Short Descriptions</bridgehead>
-        <?dbfo list-presentation="list"?>
-        <?dbhtml list-presentation="table"?>
 @z
 
 @x
@@ -327,22 +263,4 @@ make</userinput></screen>
             </indexterm>
           </listitem>
         </varlistentry>
-@z
-
-@x
-      </variablelist>
-@y
-      </variablelist>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z

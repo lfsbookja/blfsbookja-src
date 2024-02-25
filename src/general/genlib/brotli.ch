@@ -18,7 +18,7 @@
 @x
     <title>Introduction to Brotli</title>
 @y
-    <title>Introduction to Brotli</title>
+    <title>&IntroductionTo1;Brotli&IntroductionTo2;</title>
 @z
 
 @x
@@ -167,7 +167,7 @@
           libbrotlienc.so
         </seg>
         <seg>
-          /usr/include/brotli and
+          /usr/include/brotli,
           /usr/lib/python&python3-majorver;/site-packages/Brotli-&brotli-version;.dist-info
           (Python3 バインディングをビルドしてインストールした場合)
         </seg>

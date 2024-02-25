@@ -12,31 +12,19 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to qt5 components</title>
 @y
-  <sect2 role="package">
     <title>Introduction to qt5 components</title>
 @z
 
 @x
-    <para>
       These instructions show how to build additional Qt5 components beyond
       <xref linkend="qt5-alternate"/>.  They are not applicable if the
       full <xref linkend="qt5"/> package has been built.
-    </para>
 @y
-    <para>
       These instructions show how to build additional Qt5 components beyond
       <xref linkend="qt5-alternate"/>.  They are not applicable if the
       full <xref linkend="qt5"/> package has been built.
-    </para>
-@z
-
-@x
-    &lfs120_checked;
-@y
-    &lfs120_checked;
 @z
 
 @x
@@ -212,16 +200,8 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of qt5 components</title>
 @y
-  <sect2 role="installation">
     <title>Installation of qt5 components</title>
 @z
 
@@ -264,12 +244,6 @@
 @z
 
 @x
-<screen><userinput remap="pre">patch -Np1 -i ../qt-everywhere-opensource-src-&qt5-version;-kf5-1.patch</userinput></screen>
-@y
-<screen><userinput remap="pre">patch -Np1 -i ../qt-everywhere-opensource-src-&qt5-version;-kf5-1.patch</userinput></screen>
-@z
-
-@x
     <para>
       Next, if you are installing <emphasis role="bold">qtlocation</emphasis>,
       fix the build with GCC-13:
@@ -279,18 +253,6 @@
       Next, if you are installing <emphasis role="bold">qtlocation</emphasis>,
       fix the build with GCC-13:
     </para>
-@z
-
-@x
-<screen><userinput>sed -e "/pragma once/a#include &lt;cstdint&gt;"                                      \
-    -i qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/geometry.hpp \
-       qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/string.hpp   \
-       qtlocation/src/3rdparty/mapbox-gl-native/src/mbgl/gl/stencil_mode.hpp</userinput></screen>
-@y
-<screen><userinput>sed -e "/pragma once/a#include &lt;cstdint&gt;"                                      \
-    -i qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/geometry.hpp \
-       qtlocation/src/3rdparty/mapbox-gl-native/include/mbgl/util/string.hpp   \
-       qtlocation/src/3rdparty/mapbox-gl-native/src/mbgl/gl/stencil_mode.hpp</userinput></screen>
 @z
 
 @x
@@ -304,16 +266,6 @@
 @z
 
 @x
-<screen><userinput>cd <replaceable>&lt;component&gt;</replaceable>
-qmake <replaceable>&lt;component&gt;</replaceable>.pro
-make</userinput></screen>
-@y
-<screen><userinput>cd <replaceable>&lt;component&gt;</replaceable>
-qmake <replaceable>&lt;component&gt;</replaceable>.pro
-make</userinput></screen>
-@z
-
-@x
     <para>
       As the &root; user:
     </para>
@@ -321,12 +273,6 @@ make</userinput></screen>
     <para>
       As the &root; user:
     </para>
-@z
-
-@x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
 @z
 
 @x
@@ -349,20 +295,6 @@ make</userinput></screen>
       dependency (prl) files by running the following
       command as the &root; user:
     </para>
-@z
-
-@x
-<screen role="root"><userinput>find $QT5DIR/ -name \*.prl \
-   -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;</userinput></screen>
-@y
-<screen role="root"><userinput>find $QT5DIR/ -name \*.prl \
-   -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
 
 @x
@@ -415,16 +347,4 @@ make</userinput></screen>
         </seg>
       </seglistitem>
     </segmentedlist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z
