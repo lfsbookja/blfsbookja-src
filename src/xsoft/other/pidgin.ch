@@ -4,33 +4,27 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pidgin-buildsize     "270 MB (with tests and docs)">
+  <!ENTITY pidgin-buildsize     "202 MB (with tests and docs)">
   <!ENTITY pidgin-time          "0.5 SBU (using parallelism=4; with tests and docs)">
 @y
-  <!ENTITY pidgin-buildsize     "270 MB (with tests and docs)">
+  <!ENTITY pidgin-buildsize     "202 MB (with tests and docs)">
   <!ENTITY pidgin-time          "0.5 SBU (using parallelism=4; with tests and docs)">
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to Pidgin</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Pidgin</title>
 @z
 
 @x
-    <para>
       <application>Pidgin</application> is a Gtk+ 2 instant messaging client
       that can connect with a wide range of networks including Bonjour, ICQ,
       GroupWise, Jabber/XMPP, IRC, Gadu-Gadu, SILC, SIMPLE, and Zephyr.
-    </para>
 @y
-    <para>
       <application>Pidgin</application> is a Gtk+ 2 instant messaging client
       that can connect with a wide range of networks including Bonjour, ICQ,
       GroupWise, Jabber/XMPP, IRC, Gadu-Gadu, SILC, SIMPLE, and Zephyr.
-    </para>
 @z
 
 @x
@@ -244,61 +238,17 @@
 @z
 
 @x
-  <sect2 role="installation">
     <title>Installation of Pidgin</title>
-<!-- Seems to pass now (version 2.4.19)
-    <para>
-      First, fix a test that fails:
-    </para>
 @y
-  <sect2 role="installation">
     <title>Installation of Pidgin</title>
-<!-- Seems to pass now (version 2.4.19)
-    <para>
-      First, fix a test that fails:
-    </para>
 @z
 
 @x
-<screen><userinput>sed '/09-13/s@^@//@' -i libpurple/tests/test_util.c</userinput></screen>
--->
-    <para>
       Compile <application>Pidgin</application> by running the following
       commands:
-    </para>
 @y
-<screen><userinput>sed '/09-13/s@^@//@' -i libpurple/tests/test_util.c</userinput></screen>
--->
-    <para>
       Compile <application>Pidgin</application> by running the following
       commands:
-    </para>
-@z
-
-@x
-<screen><userinput>./configure --prefix=/usr        \
-            --sysconfdir=/etc    \
-            --with-gstreamer=1.0 \
-            --disable-avahi      \
-            --disable-gtkspell   \
-            --disable-meanwhile  \
-            --disable-idn        \
-            --disable-nm         \
-            --disable-tk         \
-            --disable-vv         &amp;&amp;
-make</userinput></screen>
-@y
-<screen><userinput>./configure --prefix=/usr        \
-            --sysconfdir=/etc    \
-            --with-gstreamer=1.0 \
-            --disable-avahi      \
-            --disable-gtkspell   \
-            --disable-meanwhile  \
-            --disable-idn        \
-            --disable-nm         \
-            --disable-tk         \
-            --disable-vv         &amp;&amp;
-make</userinput></screen>
 @z
 
 @x
@@ -313,12 +263,6 @@ make</userinput></screen>
       (<xref linkend="graphviz"/> can be used also) and you wish to create the
       API documentation, issue:
     </para>
-@z
-
-@x
-<screen remap="doc"><userinput>make docs</userinput></screen>
-@y
-<screen remap="doc"><userinput>make docs</userinput></screen>
 @z
 
 @x
@@ -342,16 +286,6 @@ make</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>make install &amp;&amp;
-mkdir -pv /usr/share/doc/pidgin-&pidgin-version; &amp;&amp;
-cp -v README doc/gtkrc-2.0 /usr/share/doc/pidgin-&pidgin-version;</userinput></screen>
-@y
-<screen role="root"><userinput>make install &amp;&amp;
-mkdir -pv /usr/share/doc/pidgin-&pidgin-version; &amp;&amp;
-cp -v README doc/gtkrc-2.0 /usr/share/doc/pidgin-&pidgin-version;</userinput></screen>
-@z
-
-@x
     <para>
       If you created the API documentation, install it using the following
       commands as the <systemitem class="username">root</systemitem> user:
@@ -361,30 +295,6 @@ cp -v README doc/gtkrc-2.0 /usr/share/doc/pidgin-&pidgin-version;</userinput></s
       If you created the API documentation, install it using the following
       commands as the <systemitem class="username">root</systemitem> user:
     </para>
-@z
-
-@x
-<screen role="root"
-        remap="doc"><userinput>mkdir -pv /usr/share/doc/pidgin-&pidgin-version;/api &amp;&amp;
-cp -rv doc/html/* /usr/share/doc/pidgin-&pidgin-version;/api</userinput></screen>
-@y
-<screen role="root"
-        remap="doc"><userinput>mkdir -pv /usr/share/doc/pidgin-&pidgin-version;/api &amp;&amp;
-cp -rv doc/html/* /usr/share/doc/pidgin-&pidgin-version;/api</userinput></screen>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/update-icons-and-desktop.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/update-icons-and-desktop.xml"/>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
 
 @x
@@ -534,12 +444,6 @@ cp -rv doc/html/* /usr/share/doc/pidgin-&pidgin-version;/api</userinput></screen
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
   <sect2 role="configuration">
     <title>Configuring Pidgin</title>
 @y
@@ -611,18 +515,6 @@ cp -rv doc/html/* /usr/share/doc/pidgin-&pidgin-version;/api</userinput></screen
         was installed during the package installation and can be used as a
         starting point or reference.
       </para>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
 
 @x
@@ -861,22 +753,4 @@ cp -rv doc/html/* /usr/share/doc/pidgin-&pidgin-version;/api</userinput></screen
           </indexterm>
         </listitem>
       </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z
