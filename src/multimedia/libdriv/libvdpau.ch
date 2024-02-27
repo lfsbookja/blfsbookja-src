@@ -12,23 +12,17 @@
 @z
 
 @x
-    <sect2 role="package">
       <title>Introduction to libvdpau</title>
 @y
-    <sect2 role="package">
       <title>Introduction to libvdpau</title>
 @z
 
 @x
-      <para>
         The <application>libvdpau</application> package contains a library which
         implements the VDPAU library.
-      </para>
 @y
-      <para>
         The <application>libvdpau</application> package contains a library which
         implements the VDPAU library.
-      </para>
 @z
 
 @x

@@ -4,31 +4,25 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gparted-buildsize     "75 MB (add 75 MB for tests)">
-  <!ENTITY gparted-time          "0.3 SBU (using parallelism=4; add 0.2 SBU for tests)">
+  <!ENTITY gparted-buildsize     "72 MB (add 70 MB for tests)">
+  <!ENTITY gparted-time          "0.3 SBU (using parallelism=4; add 0.3 SBU for tests)">
 @y
-  <!ENTITY gparted-buildsize     "75 MB (add 75 MB for tests)">
-  <!ENTITY gparted-time          "0.3 SBU (using parallelism=4; add 0.2 SBU for tests)">
+  <!ENTITY gparted-buildsize     "72 MB (add 70 MB for tests)">
+  <!ENTITY gparted-time          "0.3 SBU (using parallelism=4; add 0.3 SBU for tests)">
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to Gparted</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Gparted</title>
 @z
 
 @x
-    <para>
       Gparted is the Gnome Partition Editor, a Gtk 3 GUI for other command line
       tools that can create, reorganise or delete disk partitions.
-    </para>
 @y
-    <para>
       Gparted is the Gnome Partition Editor, a Gtk 3 GUI for other command line
       tools that can create, reorganise or delete disk partitions.
-    </para>
 @z
 
 @x
@@ -140,134 +134,60 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of Gparted</title>
 @y
-  <sect2 role="installation">
     <title>Installation of Gparted</title>
 @z
 
 @x
-    <para>
       Install <application>Gparted</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>Gparted</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>./configure --prefix=/usr    \
-            --disable-doc    \
-            --disable-static &amp;&amp;
-make</userinput></screen>
-@y
-<screen><userinput>./configure --prefix=/usr    \
-            --disable-doc    \
-            --disable-static &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       To run the tests, issue: <command>make check</command>.
-    </para>
 @y
-    <para>
       To run the tests, issue: <command>make check</command>.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/static-libraries.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/static-libraries.xml"/>
-@z
-
-@x
-    <para>
       <parameter>--disable-doc</parameter>: This switch disables building of
       the optional documentation. Remove it if you have installed
       <application>GNOME Doc Utils</application>.
-    </para>
 @y
-    <para>
       <parameter>--disable-doc</parameter>: This switch disables building of
       the optional documentation. Remove it if you have installed
       <application>GNOME Doc Utils</application>.
-    </para>
 @z
 
 @x
-<!-- this is an option, not a parameter, but is it still necessary for
-     wayland? -->
-    <para>
       <option>--enable-xhost-root</option>: This switch  provides an
       interim workaround to allow GParted to run under Wayland by using xhost
       to grant and revoke root access to the X11 display.
-    </para>
 @y
-<!-- this is an option, not a parameter, but is it still necessary for
-     wayland? -->
-    <para>
       <option>--enable-xhost-root</option>: This switch  provides an
       interim workaround to allow GParted to run under Wayland by using xhost
       to grant and revoke root access to the X11 display.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="using">
     <title>Using Gparted</title>
 @y
-  <sect2 role="using">
     <title>Using Gparted</title>
 @z
 
@@ -418,36 +338,6 @@ sed -i 's/Exec=/Exec=sudo -A /'               /usr/share/applications/gparted.de
 @z
 
 @x
-<screen role="root"><userinput>cp -v /usr/share/applications/gparted.desktop \
-                                     /usr/share/applications/gparted.desktop.back &amp;&amp;
-sed -i 's:/usr/bin/gparted:/usr/bin/gparted_polkit:' \
-                                   /usr/share/applications/gparted.desktop      &amp;&amp;
-@y
-<screen role="root"><userinput>cp -v /usr/share/applications/gparted.desktop \
-                                     /usr/share/applications/gparted.desktop.back &amp;&amp;
-sed -i 's:/usr/bin/gparted:/usr/bin/gparted_polkit:' \
-                                   /usr/share/applications/gparted.desktop      &amp;&amp;
-@z
-
-@x
-cat &gt; /usr/bin/gparted_polkit &lt;&lt; "EOF" &amp;&amp;
-<literal>#!/bin/bash
-@y
-cat &gt; /usr/bin/gparted_polkit &lt;&lt; "EOF" &amp;&amp;
-<literal>#!/bin/bash
-@z
-
-@x
-pkexec /usr/bin/gparted $@</literal>
-EOF
-chmod -v 0755 /usr/bin/gparted_polkit</userinput></screen>
-@y
-pkexec /usr/bin/gparted $@</literal>
-EOF
-chmod -v 0755 /usr/bin/gparted_polkit</userinput></screen>
-@z
-
-@x
         <para>
           Still as the <systemitem class="username">root</systemitem> user,
           configure <xref linkend="polkit"/> and <xref linkend="gparted"/> to
@@ -462,58 +352,6 @@ chmod -v 0755 /usr/bin/gparted_polkit</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>cat &gt; /usr/share/polkit-1/actions/org.gnome.gparted.policy &lt;&lt; "EOF"
-<literal>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;!DOCTYPE policyconfig PUBLIC
- "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
- "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd"&gt;
-&lt;policyconfig&gt;
-@y
-<screen role="root"><userinput>cat &gt; /usr/share/polkit-1/actions/org.gnome.gparted.policy &lt;&lt; "EOF"
-<literal>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;!DOCTYPE policyconfig PUBLIC
- "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
- "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd"&gt;
-&lt;policyconfig&gt;
-@z
-
-@x
-  &lt;action id="org.freedesktop.policykit.pkexec.run-gparted"&gt;
-    &lt;description&gt;Run GParted&lt;/description&gt;
-    &lt;message&gt;Authentication is required to run GParted&lt;/message&gt;
-    &lt;defaults&gt;
-      &lt;allow_any&gt;no&lt;/allow_any&gt;
-      &lt;allow_inactive&gt;no&lt;/allow_inactive&gt;
-      &lt;allow_active&gt;auth_admin_keep&lt;/allow_active&gt;
-    &lt;/defaults&gt;
-    &lt;annotate key="org.freedesktop.policykit.exec.path"&gt;/usr/bin/gparted&lt;/annotate&gt;
-    &lt;annotate key="org.freedesktop.policykit.exec.allow_gui"&gt;true&lt;/annotate&gt;
-  &lt;/action&gt;
-@y
-  &lt;action id="org.freedesktop.policykit.pkexec.run-gparted"&gt;
-    &lt;description&gt;Run GParted&lt;/description&gt;
-    &lt;message&gt;Authentication is required to run GParted&lt;/message&gt;
-    &lt;defaults&gt;
-      &lt;allow_any&gt;no&lt;/allow_any&gt;
-      &lt;allow_inactive&gt;no&lt;/allow_inactive&gt;
-      &lt;allow_active&gt;auth_admin_keep&lt;/allow_active&gt;
-    &lt;/defaults&gt;
-    &lt;annotate key="org.freedesktop.policykit.exec.path"&gt;/usr/bin/gparted&lt;/annotate&gt;
-    &lt;annotate key="org.freedesktop.policykit.exec.allow_gui"&gt;true&lt;/annotate&gt;
-  &lt;/action&gt;
-@z
-
-@x
-&lt;/policyconfig&gt;</literal>
-EOF
-chmod -v 0644 /usr/share/polkit-1/actions/org.gnome.gparted.policy</userinput></screen>
-@y
-&lt;/policyconfig&gt;</literal>
-EOF
-chmod -v 0644 /usr/share/polkit-1/actions/org.gnome.gparted.policy</userinput></screen>
-@z
-
-@x
         <para>
          Now, clicking in the menu item for Gparted, a dialog appears in the
          screen, asking for the administrator password.</para>
@@ -521,16 +359,6 @@ chmod -v 0644 /usr/share/polkit-1/actions/org.gnome.gparted.policy</userinput></
         <para>
          Now, clicking in the menu item for Gparted, a dialog appears in the
          screen, asking for the administrator password.</para>
-@z
-
-@x
-    </sect3>
--->
-  </sect2>
-@y
-    </sect3>
--->
-  </sect2>
 @z
 
 @x
@@ -677,22 +505,4 @@ chmod -v 0644 /usr/share/polkit-1/actions/org.gnome.gparted.policy</userinput></
           </indexterm>
         </listitem>
       </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

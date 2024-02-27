@@ -10,27 +10,21 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to Power-profiles-daemon</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Power-profiles-daemon</title>
 @z
 
 @x
-    <para>
       The <application>Power-profiles-daemon</application> package provides a program 
       that allows modification of the system power/behavior state. This is used on
       many laptops and can be used by a Desktop Environment to activate power saving 
       or performance CPU governors through dbus.
-    </para>
 @y
-    <para>
       The <application>Power-profiles-daemon</application> package provides a program 
       that allows modification of the system power/behavior state. This is used on
       many laptops and can be used by a Desktop Environment to activate power saving 
       or performance CPU governors through dbus.
-    </para>
 @z
 
 @x
@@ -113,15 +107,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libgudev"/>, and
-      <xref linkend="polkit"/>
+      <xref linkend="libgudev"/>, 
+      <xref linkend="polkit"/>, and
+      <xref linkend="pygobject3"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gobject-introspection"/>,
-      <xref linkend="libgudev"/>, and
-      <xref linkend="polkit"/>
+      <xref linkend="libgudev"/>, 
+      <xref linkend="polkit"/>,
+      <xref linkend="pygobject3"/>
     </para>
 @z
 
@@ -137,23 +133,21 @@
     </para>
   </sect2>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
       The rest are for the tests,
       <xref linkend="python-dbusmock"/>, 
       <xref linkend="umockdev"/>,
-      <ulink url="https://github.com/PyCQA/isort">isort</ulink>, and
+      <ulink url="https://github.com/PyCQA/isort">isort</ulink>,
       <ulink url="https://github.com/PyCQA/mccabe">mccabe</ulink>
     </para>
   </sect2>
 @z
 
 @x
-    <sect2 role="kernel" id="power-profiles-daemon-kernel">
     <title>Kernel Configuration</title>
 @y
-    <sect2 role="kernel" id="power-profiles-daemon-kernel">
     <title>Kernel Configuration</title>
 @z
 
@@ -167,14 +161,6 @@
       Enable the following options in the kernel configuration and recompile the
       kernel if necessary:
     </para>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="power-profiles-daemon-kernel.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="power-profiles-daemon-kernel.xml"/>
 @z
 
 @x
@@ -192,35 +178,17 @@
 @z
 
 @x
-    <indexterm zone="power-profiles-daemon power-profiles-daemon-kernel">
-      <primary sortas="d-Power-profiles-daemon">Power-profiles-daemon</primary>
-    </indexterm>
-  </sect2>
-@y
-    <indexterm zone="power-profiles-daemon power-profiles-daemon-kernel">
-      <primary sortas="d-Power-profiles-daemon">Power-profiles-daemon</primary>
-    </indexterm>
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of Power-profiles-daemon</title>
 @y
-  <sect2 role="installation">
     <title>Installation of Power-profiles-daemon</title>
 @z
 
 @x
-    <para>
       Install <application>Power-profiles-daemon</application> by 
       running the following commands:
-    </para>
 @y
-    <para>
       Install <application>Power-profiles-daemon</application> by 
       running the following commands:
-    </para>
 @z
 
 @x
@@ -242,10 +210,8 @@
 @z
 
 @x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
@@ -264,28 +230,16 @@
 @z
 
 @x
-    <para revision="sysv">
-      <parameter>-Dsystemdsystemunitdir=no</parameter>: Removes
+      <parameter>-Dsystemdsystemunitdir=/tmp</parameter>: Removes
       the dependency on <application>systemd</application>.
-    </para>
 @y
-    <para revision="sysv">
-      <parameter>-Dsystemdsystemunitdir=no</parameter>: Removes
+      <parameter>-Dsystemdsystemunitdir=/tmp</parameter>: Removes
       the dependency on <application>systemd</application>.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="configuration">
     <title>Configuring Power-profiles-daemon</title>
 @y
-  <sect2 role="configuration">
     <title>Configuring Power-profiles-daemon</title>
 @z
 
@@ -316,28 +270,8 @@
 @z
 
 @x
-      <indexterm zone="power-profiles-daemon power-profiles-daemon-init">
-        <primary sortas="f-Power-profiles-daemon">power-profiles-daemon</primary>
-      </indexterm>
-@y
-      <indexterm zone="power-profiles-daemon power-profiles-daemon-init">
-        <primary sortas="f-Power-profiles-daemon">power-profiles-daemon</primary>
-      </indexterm>
-@z
-
-@x
-<screen role="root"><userinput>make install-power-profiles-daemon</userinput></screen>
-    </sect3>
-@y
-<screen role="root"><userinput>make install-power-profiles-daemon</userinput></screen>
-    </sect3>
-@z
-
-@x
-    <sect3 id="power-profiles-daemon-systemd" revision="systemd">
       <title>Systemd Unit</title>
 @y
-    <sect3 id="power-profiles-daemon-systemd" revision="systemd">
       <title>Systemd Unit</title>
 @z
 
@@ -356,34 +290,16 @@
 @z
 
 @x
-      <screen role="root"><userinput>systemctl enable power-profiles-daemon</userinput></screen>
-    </sect3>
-@y
-      <screen role="root"><userinput>systemctl enable power-profiles-daemon</userinput></screen>
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
@@ -455,14 +371,4 @@
           </indexterm>
         </listitem>
       </varlistentry>
-@z
-
-@x
-    </variablelist>
-  </sect2>
-</sect1>
-@y
-    </variablelist>
-  </sect2>
-</sect1>
 @z

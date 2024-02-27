@@ -18,11 +18,11 @@
 @x
       <application>Phonon</application> is the multimedia API for KDE.
       It replaces the old <application>aRts</application> package.
-      Phonon needs either the GStreamer or VLC backend.
+      Phonon needs the VLC backend.
 @y
       <application>Phonon</application> は KDE に対するマルチメディア API です。
       かつての <application>aRts</application> パッケージに置き換わるものです。
-      本パッケージは GStreamer や VLC のバックエンドとなります。
+      本パッケージは VLC のバックエンドとなります。
 @z
 
 @x

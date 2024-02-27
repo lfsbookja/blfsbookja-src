@@ -229,7 +229,7 @@
       <xref linkend="yasm"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="yasm"/>
     </para>
@@ -240,14 +240,14 @@
     <para role="recommended">
       <!--<xref linkend="ffmpeg"/>,-->
       <xref linkend="gtk2"/> and
-      <xref linkend="libvdpau-va-gl"/>
+      <xref linkend="libvdpau"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <!--<xref linkend="ffmpeg"/>,-->
-      <xref linkend="gtk2"/> and
-      <xref linkend="libvdpau-va-gl"/>
+      <xref linkend="gtk2"/>,
+      <xref linkend="libvdpau"/>
     </para>
 @z
 
@@ -264,7 +264,7 @@
       <ulink url="http://www.live555.com/">LIVE555 Streaming Media</ulink>,
       <ulink url="https://rtmpdump.mplayerhq.hu/">RTMPDump</ulink>,
       <ulink url="https://tivo-mplayer.sourceforge.net/mythtivo.html">TiVo vstream client</ulink>, and
-      <ulink url="https://www.xmms.org/">XMMS</ulink>
+      <ulink url="https://github.com/xmms2/wiki/wiki">XMMS</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">Optional Input Drivers and Libraries</bridgehead>
@@ -278,8 +278,8 @@
       <ulink url="https://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
       <ulink url="http://www.live555.com/">LIVE555 Streaming Media</ulink>,
       <ulink url="https://rtmpdump.mplayerhq.hu/">RTMPDump</ulink>,
-      <ulink url="https://tivo-mplayer.sourceforge.net/mythtivo.html">TiVo vstream client</ulink>, and
-      <ulink url="https://www.xmms.org/">XMMS</ulink>
+      <ulink url="https://tivo-mplayer.sourceforge.net/mythtivo.html">TiVo vstream client</ulink>,
+      <ulink url="https://github.com/xmms2/wiki/wiki">XMMS</ulink>
     </para>
 @z
 
@@ -313,7 +313,7 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libmng"/>,
       <xref linkend="libpng"/>,
-      <ulink url="https://sourceforge.net/projects/openjpeg.mirror/files/">OpenJPEG1</ulink>
+      <ulink url="https://sourceforge.net/projects/openjpeg.mirror/files/">OpenJPEG1</ulink>,
       <ulink url="https://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>,
       <ulink url="https://github.com/cacalabs/libcaca">libcaca</ulink>, and
       <ulink url="https://www.svgalib.org/">SVGAlib</ulink>
@@ -326,9 +326,9 @@
       <xref linkend="libjpeg"/>,
       <xref linkend="libmng"/>,
       <xref linkend="libpng"/>,
-      <ulink url="https://sourceforge.net/projects/openjpeg.mirror/files/">OpenJPEG1</ulink>
+      <ulink url="https://sourceforge.net/projects/openjpeg.mirror/files/">OpenJPEG1</ulink>,
       <ulink url="https://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>,
-      <ulink url="https://github.com/cacalabs/libcaca">libcaca</ulink>, and
+      <ulink url="https://github.com/cacalabs/libcaca">libcaca</ulink>,
       <ulink url="https://www.svgalib.org/">SVGAlib</ulink>
     </para>
 @z
@@ -352,7 +352,7 @@
       <xref linkend="speex"/>,
       <xref linkend="xvid"/>,
       <xref linkend="x264"/>,
-      <ulink url="https://packages.debian.org/source/sid/crystalhd">CrystalHD</ulink>,
+      <ulink url="https://packages.debian.org/source/buster/crystalhd">CrystalHD</ulink>,
 <!--      <ulink url="http://diracvideo.org/download/dirac-research/">Dirac</ulink>,-->
       <ulink url="https://sourceforge.net/projects/dirac/">Dirac</ulink>,
       <ulink url="https://www.quut.com/gsm/">GSM</ulink>,
@@ -387,7 +387,7 @@
       <xref linkend="speex"/>,
       <xref linkend="xvid"/>,
       <xref linkend="x264"/>,
-      <ulink url="https://packages.debian.org/source/sid/crystalhd">CrystalHD</ulink>,
+      <ulink url="https://packages.debian.org/source/buster/crystalhd">CrystalHD</ulink>,
 <!--      <ulink url="http://diracvideo.org/download/dirac-research/">Dirac</ulink>,-->
       <ulink url="https://sourceforge.net/projects/dirac/">Dirac</ulink>,
       <ulink url="https://www.quut.com/gsm/">GSM</ulink>,
