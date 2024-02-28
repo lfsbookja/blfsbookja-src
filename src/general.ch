@@ -13,8 +13,8 @@
 <!ENTITY lfs-domainname "linuxfromscratch.org">
 @y
 <!ENTITY lfs-domainname "linuxfromscratch.org">
-<!ENTITY jversion "20240227">
-<!ENTITY jcorrespondSHA "730f162bfe"> <!-- blfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jversion "20240228">
+<!ENTITY jcorrespondSHA "41eefd36f1"> <!-- blfs-git SHA 値； 本箇所での記載のみ -->
 
 <!ENTITY Estimateddiskspacerequired "必要ディスク容量">
 <!ENTITY Estimatedbuildtime         "概算ビルド時間">
