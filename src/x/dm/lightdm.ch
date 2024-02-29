@@ -286,9 +286,9 @@
 @z
 
 @x
-        /etc/lightdm/{lightdm,users,keys}.conf
+        /etc/lightdm/{lightdm,users,keys,lightdm-gtk-greeter}.conf
 @y
-        /etc/lightdm/{lightdm,users,keys}.conf
+        /etc/lightdm/{lightdm,users,keys,lightdm-gtk-greeter}.conf
 @z
 
 @x
