@@ -17,6 +17,7 @@ CHANGE_FILES = \
 	liboauth.ch          \
 	libpwquality.ch      \
 	linux-pam.ch         \
+	linux-pam-kernel.ch  \
 	make-ca.ch           \
 	mitkrb.ch            \
 	nessus.ch            \

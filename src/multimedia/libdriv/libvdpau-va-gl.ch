@@ -4,43 +4,31 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libvdpau-va-gl-time          "less than 0.1 SBU">
+  <!ENTITY libvdpau-va-gl-time          "less than 0.1 SBU (add 1.1 SBU for tests)">
 @y
-  <!ENTITY libvdpau-va-gl-time          "less than 0.1 SBU">
+  <!ENTITY libvdpau-va-gl-time          "less than 0.1 SBU (add 1.1 SBU for tests)">
 @z
 
 @x
-    <sect2 role="package">
       <title>Introduction to libvdpau-va-gl</title>
 @y
-    <sect2 role="package">
       <title>Introduction to libvdpau-va-gl</title>
 @z
 
 @x
-      <para>
         The <application>libvdpau-va-gl</application> package contains a library
         which implements the VDPAU library.  Libvdpau_va_gl uses OpenGL under the
         hood to accelerate drawing and scaling and the VA-API (if available) to
         accelerate video decoding. For now VA-API is available on some Intel
         chips, and on some AMD video adapters with the help of the libvdpau
         driver.
-      </para>
 @y
-      <para>
         The <application>libvdpau-va-gl</application> package contains a library
         which implements the VDPAU library.  Libvdpau_va_gl uses OpenGL under the
         hood to accelerate drawing and scaling and the VA-API (if available) to
         accelerate video decoding. For now VA-API is available on some Intel
         chips, and on some AMD video adapters with the help of the libvdpau
         driver.
-      </para>
-@z
-
-@x
-      &lfs120_checked;
-@y
-      &lfs120_checked;
 @z
 
 @x
@@ -154,51 +142,17 @@
 @z
 
 @x
-    </sect2>
-@y
-    </sect2>
-@z
-
-@x
-    <sect2 role="installation">
       <title>Installation of libvdpau-va-gl</title>
 @y
-    <sect2 role="installation">
       <title>Installation of libvdpau-va-gl</title>
 @z
 
 @x
-      <para>
         Install <application>libvdpau-va-gl</application> by running the following
         commands:
-      </para>
 @y
-      <para>
         Install <application>libvdpau-va-gl</application> by running the following
         commands:
-      </para>
-@z
-
-@x
-<screen><userinput>sed -e '/#include &lt;stdlib.h&gt;/a #include &lt;string&gt;' -i src/api-device.cc &amp;&amp;
-@y
-<screen><userinput>sed -e '/#include &lt;stdlib.h&gt;/a #include &lt;string&gt;' -i src/api-device.cc &amp;&amp;
-@z
-
-@x
-mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@y
-mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$XORG_PREFIX .. &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$XORG_PREFIX .. &amp;&amp;
-make</userinput></screen>
 @z
 
 @x
@@ -224,48 +178,22 @@ make</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-    </sect2>
-@y
-    </sect2>
-@z
-
-@x
-    <sect2 role="commands">
       <title>Command Explanations</title>
 @y
-    <sect2 role="commands">
       <title>Command Explanations</title>
 @z
 
 @x
-      <para>
         <command>sed -e '/#include &lt;stdlib.h&gt;/a #include &lt;string&gt;' ...</command>:
         fix the build for the C++ Standard Library header changes in gcc-13.
-      </para>
 @y
-      <para>
         <command>sed -e '/#include &lt;stdlib.h&gt;/a #include &lt;string&gt;' ...</command>:
         fix the build for the C++ Standard Library header changes in gcc-13.
-      </para>
 @z
 
 @x
-    </sect2>
-@y
-    </sect2>
-@z
-
-@x
-    <sect2 role="configuration">
       <title>Configuration</title>
 @y
-    <sect2 role="configuration">
       <title>Configuration</title>
 @z
 
@@ -282,22 +210,8 @@ make</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>echo "export VDPAU_DRIVER=va_gl" >> /etc/profile.d/xorg.sh</userinput></screen>
-@y
-<screen role="root"><userinput>echo "export VDPAU_DRIVER=va_gl" >> /etc/profile.d/xorg.sh</userinput></screen>
-@z
-
-@x
-    </sect2>
-@y
-    </sect2>
-@z
-
-@x
-    <sect2 role="content">
       <title>Contents</title>
 @y
-    <sect2 role="content">
       <title>Contents</title>
 @z
 
@@ -379,22 +293,4 @@ make</userinput></screen>
             </indexterm>
           </listitem>
         </varlistentry>
-@z
-
-@x
-      </variablelist>
-@y
-      </variablelist>
-@z
-
-@x
-    </sect2>
-@y
-    </sect2>
-@z
-
-@x
-  </sect1>
-@y
-  </sect1>
 @z
