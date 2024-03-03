@@ -12,15 +12,12 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to FFmpeg</title>
 @y
-  <sect2 role="package">
     <title>Introduction to FFmpeg</title>
 @z
 
 @x
-    <para>
       <application>FFmpeg</application> is a solution to record, convert and
       stream audio and video. It is a very fast video and audio converter and it
       can also acquire from a live audio/video source. Designed to be intuitive,
@@ -30,9 +27,7 @@
       fly with a high quality polyphase filter.
       <application>FFmpeg</application> can use a Video4Linux compatible video
       source and any Open Sound System audio source.
-    </para>
 @y
-    <para>
       <application>FFmpeg</application> is a solution to record, convert and
       stream audio and video. It is a very fast video and audio converter and it
       can also acquire from a live audio/video source. Designed to be intuitive,
@@ -42,7 +37,6 @@
       fly with a high quality polyphase filter.
       <application>FFmpeg</application> can use a Video4Linux compatible video
       source and any Open Sound System audio source.
-    </para>
 @z
 
 @x
@@ -117,24 +111,18 @@
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/ffmpeg-&ffmpeg-version;-chromium_method-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+@x
           Required patch:
-          <ulink url="&patch-root;/ffmpeg-&ffmpeg-version;-chromium_method-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Required patch:
+@z
+@x
+          Required patch:
+@y
+          Required patch:
 @z
 
 @x
@@ -159,7 +147,7 @@
       <xref linkend="nasm"/> or <xref linkend="yasm"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="libaom"/>,
       <xref linkend="libass"/>,
@@ -170,7 +158,7 @@
       <xref linkend="libvpx"/>,
       <xref linkend="opus"/>,
       <xref linkend="x264"/>,
-      <xref linkend="x265"/>, and
+      <xref linkend="x265"/>,
       <xref linkend="nasm"/> or <xref linkend="yasm"/>
     </para>
 @z
@@ -196,7 +184,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
 @z
 
 @x
@@ -206,43 +194,29 @@
 @z
 
 @x
-    <para>
       First, apply a patch that adds an API necessary for some packages to
       build:
-      <!-- qtwebengine -->
-    </para>
 @y
-    <para>
       First, apply a patch that adds an API necessary for some packages to
       build:
-      <!-- qtwebengine -->
-    </para>
 @z
 
 @x
-    <para>
       Install <application>FFmpeg</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>FFmpeg</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-    <para>
       HTML documentation was built in the previous step. If  you have
       <xref linkend="texlive"/> installed and wish to build PDF and
       Postscript versions of the documentation, issue the following commands:
-    </para>
 @y
-    <para>
       HTML documentation was built in the previous step. If  you have
       <xref linkend="texlive"/> installed and wish to build PDF and
       Postscript versions of the documentation, issue the following commands:
-    </para>
 @z
 
 @x
@@ -398,11 +372,9 @@
 @z
 
 @x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -622,16 +594,6 @@
 @z
 
 @x
-      <parameter>--disable-vulkan</parameter>: Disables Vulkan for the
-      current version of <xref linkend="vulkan-loader"/> due to
-      an API conflict.
-@y
-      <parameter>--disable-vulkan</parameter>: Disables Vulkan for the
-      current version of <xref linkend="vulkan-loader"/> due to
-      an API conflict.
-@z
-
-@x
       <parameter>--ignore-tests=...</parameter>: Disables tests that fail to
       run on
       BLFS without the optional packages. Currently the AV1 test is disabled 
@@ -730,20 +692,16 @@
 @z
 
 @x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>

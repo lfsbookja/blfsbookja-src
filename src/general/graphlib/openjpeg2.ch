@@ -82,6 +82,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend="git"/> (for tests),
       <xref linkend="lcms2"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>, and
@@ -90,6 +91,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="git"/> (for tests),
       <xref linkend="lcms2"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libtiff"/>,
@@ -111,9 +113,13 @@
 @z
 
 @x
-      This package does not come with a test suite.
+      If you wish to run the tests, some additional files are required. Download
+      these files and run the tests using the following commands, but note that
+      8 tests are known to fail:
 @y
-      &notTestSuite;
+      If you wish to run the tests, some additional files are required. Download
+      these files and run the tests using the following commands, but note that
+      8 tests are known to fail:
 @z
 
 @x

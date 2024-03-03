@@ -155,16 +155,6 @@
 @z
 
 @x
-      <option>--disable-gtk3</option>: This switch allows building
-      against GTK+2 or use <option>--disable-gtk2</option> to force
-      building against GTK+3 when GTK+2 is installed.
-@y
-      <option>--disable-gtk3</option>: This switch allows building
-      against GTK+2 or use <option>--disable-gtk2</option> to force
-      building against GTK+3 when GTK+2 is installed.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

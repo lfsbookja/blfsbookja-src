@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY glib-networking-buildsize     "7.0 MB (with tests)">
+  <!ENTITY glib-networking-buildsize     "6.7 MB (with tests)">
   <!ENTITY glib-networking-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY glib-networking-buildsize     "7.0 MB (テスト込み)">
+  <!ENTITY glib-networking-buildsize     "6.7 MB (テスト込み)">
   <!ENTITY glib-networking-time          "0.1 SBU (テスト込み)">
 @z
 
