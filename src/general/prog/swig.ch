@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY swig-buildsize     "106 MB (2.2 GB with tests)">
-  <!ENTITY swig-time          "0.1 SBU (add 10.0 SBU for tests; both using parallelism=4)">
+  <!ENTITY swig-buildsize     "81 MB (1.8 GB with tests)">
+  <!ENTITY swig-time          "0.1 SBU (add 7.7 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY swig-buildsize     "106 MB (2.2 GB with tests)">
-  <!ENTITY swig-time          "0.1 SBU (add 10.0 SBU for tests; both using parallelism=4)">
+  <!ENTITY swig-buildsize     "81 MB (1.8 GB with tests)">
+  <!ENTITY swig-time          "0.1 SBU (add 7.7 SBU for tests; both using parallelism=4)">
 @z
 
 @x

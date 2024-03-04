@@ -63,6 +63,12 @@
       <revremark>進行中リリース</revremark>
 @z
 
+@x 12.1 2024-03-01
+      <revremark>Twenty-ninth Release</revremark>
+@y
+      <revremark>第 29 次リリース</revremark>
+@z
+
 @x 2023-09-01
       <revremark>Twenty-eighth Release</revremark>
 @y

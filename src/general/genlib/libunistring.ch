@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libunistring-buildsize     "51 MB (add 56 MB for tests)">
-  <!ENTITY libunistring-time          "0.4 SBU (Using parallelism=4; add 1.0 SBU for tests)">
+  <!ENTITY libunistring-buildsize     "54 MB (add 56 MB for tests)">
+  <!ENTITY libunistring-time          "0.5 SBU; add 0.3 SBU for tests; both using parallelism=4">
 @y
-  <!ENTITY libunistring-buildsize     "51 MB (テスト実施時はさらに 53 MB)">
-  <!ENTITY libunistring-time          "0.4 SBU (parallelism=4 利用; テスト実施時はさらに 1.0 SBU)">
+  <!ENTITY libunistring-buildsize     "54 MB (テスト実施時はさらに 56 MB)">
+  <!ENTITY libunistring-time          "0.5 SBU; テスト実施時はさらに 0.3 SBU; いずれも parallelism=4 利用">
 @z
 
 @x

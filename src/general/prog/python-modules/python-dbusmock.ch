@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY dbusmock-buildsize     "1.6 MB (with tests)">
+  <!ENTITY dbusmock-buildsize     "1.0 MB (with tests)">
   <!ENTITY dbusmock-time          "less than 0.1 SBU (add 0.3 SBU for tests)">
 @y
-  <!ENTITY dbusmock-buildsize     "1.6 MB (テスト込み)">
+  <!ENTITY dbusmock-buildsize     "1.0 MB (テスト込み)">
   <!ENTITY dbusmock-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実施時はさらに 0.3 SBU)">
 @z
 

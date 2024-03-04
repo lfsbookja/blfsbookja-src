@@ -13,8 +13,8 @@
 <!ENTITY lfs-domainname "linuxfromscratch.org">
 @y
 <!ENTITY lfs-domainname "linuxfromscratch.org">
-<!ENTITY jversion "20240303">
-<!ENTITY jcorrespondSHA "34a3f5b1d6"> <!-- blfs-git SHA 値； 本箇所での記載のみ -->
+<!ENTITY jversion "20240304">
+<!ENTITY jcorrespondSHA "3f40f5ac97"> <!-- blfs-git SHA 値； 本箇所での記載のみ -->
 
 <!ENTITY Estimateddiskspacerequired "必要ディスク容量">
 <!ENTITY Estimatedbuildtime         "概算ビルド時間">
@@ -89,10 +89,12 @@
 @z
 
 @x
-<!ENTITY lfs121_checked  "<para>This package is known to build and work properly
-                          using an LFS 12.1 platform.</para>">
+<!ENTITY lfs121_checked  "<note><para>Development versions of BLFS may not build or run
+                          some packages properly if LFS or dependencies have been updated
+                          since the most recent stable versions of the books.</para></note>">
 @y
-<!ENTITY lfs121_checked  "<para>本パッケージは LFS 12.1 プラットフォームの利用により適切にビルドでき、また適切に動作します。</para>">
+<!ENTITY lfs121_checked  "<note><para>BLFS 開発版においてはパッケージビルドが正常にできないものがあるかもしれません。
+                          それは LFS の最新安定板の提供以降に、LFS あるいは依存パッケージが更新されていることが理由かもしれません。</para></note>">
 @z
 
 @x
