@@ -4,23 +4,17 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to lxqt-session</title>
 @y
-  <sect2 role="package">
     <title>Introduction to lxqt-session</title>
 @z
 
 @x
-    <para>
       The <application>lxqt-session</application> package contains the default
       session manager for <application>LXQt</application>.
-    </para>
 @y
-    <para>
       The <application>lxqt-session</application> package contains the default
       session manager for <application>LXQt</application>.
-    </para>
 @z
 
 @x
@@ -103,8 +97,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="liblxqt"/>,
-      (<xref linkend="lxqt-kwindowsystem"/> or
-       <xref role="nodep" linkend="kf5-frameworks"/>),
+      <xref linkend="lxqt-kwindowsystem"/>,
       <xref linkend="qtxdg-tools"/>, and
       <xref linkend="xdg-user-dirs"/>
     </para>
@@ -112,130 +105,59 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="liblxqt"/>,
-      (<xref linkend="lxqt-kwindowsystem"/> or
-       <xref role="nodep" linkend="kf5-frameworks"/>),
-      <xref linkend="qtxdg-tools"/>, and
+      <xref linkend="lxqt-kwindowsystem"/>,
+      <xref linkend="qtxdg-tools"/>,
       <xref linkend="xdg-user-dirs"/>
     </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of lxqt-session</title>
 @y
-  <sect2 role="installation">
     <title>Installation of lxqt-session</title>
 @z
 
 @x
-    <para>
       Install <application>lxqt-session</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>lxqt-session</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>sed -e '/TryExec/s|=|=/usr/bin/|' \
-    -i xsession/lxqt.desktop.in &amp;&amp;
-@y
-<screen><userinput>sed -e '/TryExec/s|=|=/usr/bin/|' \
-    -i xsession/lxqt.desktop.in &amp;&amp;
-@z
-
-@x
-mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..       &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..       &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <command>sed -e '/TryExec/s|=|='/usr'/bin/|' -i xsessions/lxqt.desktop.in</command>:
       If you are using a display manager, the full path of the
       <quote>TryExec</quote> directive has to be given so that the
       <application>LXQt</application> desktop will appear in the sessions list.
-    </para>
-  </sect2>
 @y
-    <para>
       <command>sed -e '/TryExec/s|=|='/usr'/bin/|' -i xsessions/lxqt.desktop.in</command>:
       If you are using a display manager, the full path of the
       <quote>TryExec</quote> directive has to be given so that the
       <application>LXQt</application> desktop will appear in the sessions list.
-    </para>
-  </sect2>
 @z
 
 @x
-  <sect2 role="configuration">
     <title>Configuring lxqt-session</title>
 @y
-  <sect2 role="configuration">
     <title>Configuring lxqt-session</title>
 @z
 

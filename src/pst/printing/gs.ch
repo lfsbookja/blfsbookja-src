@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gs-buildsize     "391 MB (with fonts and libgs.so)">
-  <!ENTITY gs-time          "1.9 SBU (Using parallelism=4; with libgs.so)">
+  <!ENTITY gs-buildsize     "383 MB (with fonts and libgs.so)">
+  <!ENTITY gs-time          "1.4 SBU (Using parallelism=4; with libgs.so)">
 @y
-  <!ENTITY gs-buildsize     "391 MB（フォントと libgs.so）">
-  <!ENTITY gs-time          "1.9 SBU（parallelism=4 指定時、libgs.so 込み）">
+  <!ENTITY gs-buildsize     "383 MB（フォントと libgs.so）">
+  <!ENTITY gs-time          "1.4 SBU（parallelism=4 指定時、libgs.so 込み）">
 @z
 
 @x

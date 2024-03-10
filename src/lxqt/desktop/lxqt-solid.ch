@@ -10,37 +10,13 @@
 @z
 
 @x
-    <para>
       <application>Solid</application> is a device integration framework.  It
       provides a way of querying and interacting with hardware independently of
       the underlying operating system.
-    </para>
 @y
-    <para>
       <application>Solid</application> is a device integration framework.  It
       provides a way of querying and interacting with hardware independently of
       the underlying operating system.
-    </para>
-@z
-
-@x
-    <important>
-      <para>
-        This package is extracted from the KF5 set of packages.
-        If <xref linkend="kf5-frameworks"/> is built, do <emphasis
-        role="bold">NOT</emphasis> also build this package as presented
-        here.
-      </para>
-    </important>
-@y
-    <important>
-      <para>
-        This package is extracted from the KF5 set of packages.
-        If <xref linkend="kf5-frameworks"/> is built, do <emphasis
-        role="bold">NOT</emphasis> also build this package as presented
-        here.
-      </para>
-    </important>
 @z
 
 @x

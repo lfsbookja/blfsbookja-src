@@ -10,10 +10,10 @@
 @z
 
 @x
-      The <application>KMix</application> package contains a KF5 based Sound
+      The <application>KMix</application> package contains a KF6 based Sound
       Mixer application.
 @y
-      <application>KMix</application> パッケージは KDE5 におけるオーディオミキサーアプリケーションを提供します。
+      <application>KMix</application> パッケージは KF6 ベースのサウンドミキサーアプリケーションを提供します。
 @z
 
 @x
@@ -23,39 +23,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&kmix5-download-http;"/>
+          Download (HTTP): <ulink url="&kmix-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&kmix5-download-http;"/>
+          &Download; (HTTP): <ulink url="&kmix-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&kmix5-download-ftp;"/>
+          Download (FTP): <ulink url="&kmix-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&kmix5-download-ftp;"/>
+          &Download; (FTP): <ulink url="&kmix-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &kmix5-md5sum;
+          Download MD5 sum: &kmix-md5sum;
 @y
-          &Download; MD5 sum: &kmix5-md5sum;
+          &Download; MD5 sum: &kmix-md5sum;
 @z
 
 @x
-          Download size: &kmix5-size;
+          Download size: &kmix-size;
 @y
-          &DownloadSize;: &kmix5-size;
+          &DownloadSize;: &kmix-size;
 @z
 
 @x
-          Estimated disk space required: &kmix5-buildsize;
+          Estimated disk space required: &kmix-buildsize;
 @y
-          &Estimateddiskspacerequired;: &kmix5-buildsize;
+          &Estimateddiskspacerequired;: &kmix-buildsize;
 @z
 
 @x
-          Estimated build time: &kmix5-time;
+          Estimated build time: &kmix-time;
 @y
-          &Estimatedbuildtime;: &kmix5-time;
+          &Estimatedbuildtime;: &kmix-time;
 @z
 
 @x
@@ -67,12 +67,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @z
 
@@ -151,9 +151,8 @@
           libkmixcore.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/kmix,
-          $KF5_PREFIX/share/kxmlgui5/kmix, and
-          $KF5_PREFIX/share/doc/HTML/*/kmix
+          $KF6_PREFIX/share/kmix and
+          $KF6_PREFIX/share/doc/HTML/*/kmix
         </seg>
 @y
         <seg>
@@ -163,9 +162,8 @@
           libkmixcore.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/kmix,
-          $KF5_PREFIX/share/kxmlgui5/kmix,
-          $KF5_PREFIX/share/doc/HTML/*/kmix
+          $KF6_PREFIX/share/kmix,
+          $KF6_PREFIX/share/doc/HTML/*/kmix
         </seg>
 @z
 

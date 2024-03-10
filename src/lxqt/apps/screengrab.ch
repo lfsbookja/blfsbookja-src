@@ -4,10 +4,8 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to screengrab</title>
 @y
-  <sect2 role="package">
     <title>Introduction to screengrab</title>
 @z
 
@@ -102,87 +100,29 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      (<xref linkend="lxqt-kwindowsystem"/> or
-      <xref role="nodep" linkend="kf5-frameworks"/>), and
+      <xref linkend="lxqt-kwindowsystem"/> and
       <xref linkend="libqtxdg"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      (<xref linkend="lxqt-kwindowsystem"/> or
-      <xref role="nodep" linkend="kf5-frameworks"/>), and
+      <xref linkend="lxqt-kwindowsystem"/>,
       <xref linkend="libqtxdg"/>
     </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of screengrab</title>
 @y
-  <sect2 role="installation">
     <title>Installation of screengrab</title>
 @z
 
 @x
-    <para>
-      If <xref linkend="kf5-frameworks"/> was not installed in /usr, help the
-      code find some headers that it needs:
-    </para>
-@y
-    <para>
-      If <xref linkend="kf5-frameworks"/> was not installed in /usr, help the
-      code find some headers that it needs:
-    </para>
-@z
-
-@x
-<screen role="pre"><userinput>export CXXFLAGS+="-I $KF5_PREFIX/include"
-export CFLAGS+="-I $KF5_PREFIX/include"</userinput></screen>
-@y
-<screen role="pre"><userinput>export CXXFLAGS+="-I $KF5_PREFIX/include"
-export CFLAGS+="-I $KF5_PREFIX/include"</userinput></screen>
-@z
-
-@x
-    <para>
       Install <application>screengrab</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>screengrab</application> by running the following
       commands:
-    </para>
-@z
-
-@x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      ..       &amp;&amp;
-@y
-cmake -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      ..       &amp;&amp;
-@z
-
-@x
-make</userinput></screen>
-@y
-make</userinput></screen>
 @z
 
 @x
@@ -206,12 +146,6 @@ make</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
     <para>
       If you have <xref linkend="xdg-utils"/> installed, as the &root;
       user, run <command>xdg-icon-resource forceupdate --theme hicolor</command>.
@@ -224,26 +158,16 @@ make</userinput></screen>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
@@ -315,22 +239,4 @@ make</userinput></screen>
           </indexterm>
         </listitem>
       </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

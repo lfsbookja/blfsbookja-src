@@ -79,7 +79,7 @@
     <para role="required">
     <xref linkend="make-ca"/>,
     <xref linkend="cmake"/>,
-    <xref linkend="qt5"/>, and
+    <xref linkend="qt6"/>, and
     <xref linkend="which"/>
     </para>
 @y
@@ -87,7 +87,7 @@
     <para role="required">
     <xref linkend="make-ca"/>,
     <xref linkend="cmake"/>,
-    <xref linkend="qt5"/>, and
+    <xref linkend="qt6"/>,
     <xref linkend="which"/>
     </para>
 @z
@@ -166,9 +166,9 @@
 @z
 
 @x
-        <seg>mozcerts-qt5 and qcatool-qt5</seg>
+        <seg>mozcerts-qt6 and qcatool-qt6</seg>
         <seg>
-          libqca-qt5.so,
+          libqca-qt6.so,
           libqca-cyrus-sasl.so,
           libqca-gcrypt.so,
           libqca-gnupg.so,
@@ -178,14 +178,14 @@
           libqca-softstore.so
         </seg>
         <seg>
-          &qt5-dir;/include/Qca-qt5,
-          &qt5-dir;/lib/cmake/Qca-qt5, and
-          &qt5-dir;/lib/qca-qt5
+          &qt6-dir;/include/Qca-qt6,
+          &qt6-dir;/lib/cmake/Qca-qt6, and
+          &qt6-dir;/lib/qca-qt6
         </seg>
 @y
-        <seg>mozcerts-qt5, qcatool-qt5</seg>
+        <seg>mozcerts-qt6, qcatool-qt6</seg>
         <seg>
-          libqca-qt5.so,
+          libqca-qt6.so,
           libqca-cyrus-sasl.so,
           libqca-gcrypt.so,
           libqca-gnupg.so,
@@ -195,9 +195,9 @@
           libqca-softstore.so
         </seg>
         <seg>
-          &qt5-dir;/include/Qca-qt5,
-          &qt5-dir;/lib/cmake/Qca-qt5,
-          &qt5-dir;/lib/qca-qt5
+          &qt6-dir;/include/Qca-qt6,
+          &qt6-dir;/lib/cmake/Qca-qt6,
+          &qt6-dir;/lib/qca-qt6
         </seg>
 @z
 

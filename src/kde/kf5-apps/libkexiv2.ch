@@ -67,13 +67,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/> and
+      <xref linkend="kf6-frameworks"/> and
       <xref linkend="exiv2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="exiv2"/>
     </para>
 @z
@@ -124,21 +124,21 @@
           None
         </seg>
         <seg>
-          libKF5KExiv2.so
+          libKExiv2Qt6.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KExiv2 and 
-          $KF5_PREFIX/lib/cmake/KF5KExiv2
+          $KF5_PREFIX/include/KExiv2Qt6 and
+          $KF5_PREFIX/lib/cmake/KExiv2Qt6
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libKF5KExiv2.so
+          libKExiv2Qt6.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KExiv2,
-          $KF5_PREFIX/lib/cmake/KF5KExiv2
+          $KF5_PREFIX/include/KExiv2Qt6,
+          $KF5_PREFIX/lib/cmake/KExiv2Qt6
         </seg>
 @z

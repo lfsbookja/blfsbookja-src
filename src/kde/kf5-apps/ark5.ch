@@ -10,10 +10,10 @@
 @z
 
 @x
-      The <application>Ark</application> package is a KF5 archive tool. 
+      The <application>Ark</application> package is a KF6 archive tool.
       It is a graphical front end to tar and similar tools.
 @y
-      The <application>Ark</application> package is a KF5 archive tool. 
+      The <application>Ark</application> package is a KF6 archive tool.
       It is a graphical front end to tar and similar tools.
 @z
 
@@ -24,39 +24,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&ark5-download-http;"/>
+          Download (HTTP): <ulink url="&ark-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&ark5-download-http;"/>
+          &Download; (HTTP): <ulink url="&ark-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&ark5-download-ftp;"/>
+          Download (FTP): <ulink url="&ark-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&ark5-download-ftp;"/>
+          &Download; (FTP): <ulink url="&ark-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &ark5-md5sum;
+          Download MD5 sum: &ark-md5sum;
 @y
-          &Download; MD5 sum: &ark5-md5sum;
+          &Download; MD5 sum: &ark-md5sum;
 @z
 
 @x
-          Download size: &ark5-size;
+          Download size: &ark-size;
 @y
-          &DownloadSize;: &ark5-size;
+          &DownloadSize;: &ark-size;
 @z
 
 @x
-          Estimated disk space required: &ark5-buildsize;
+          Estimated disk space required: &ark-buildsize;
 @y
-          &Estimateddiskspacerequired;: &ark5-buildsize;
+          &Estimateddiskspacerequired;: &ark-buildsize;
 @z
 
 @x
-          Estimated build time: &ark5-time;
+          Estimated build time: &ark-time;
 @y
-          &Estimatedbuildtime;: &ark5-time;
+          &Estimatedbuildtime;: &ark-time;
 @z
 
 @x
@@ -68,13 +68,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/> and
+      <xref linkend="kf6-frameworks"/> and
       <xref linkend="libarchive"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="libarchive"/>
     </para>
 @z
@@ -150,9 +150,8 @@
           libkerfuffle.so
         </seg>
         <seg>
-          $KF5_PREFIX/lib/plugins/kerfuffle,
-          $KF5_PREFIX/share/doc/HTML/*/ark, and
-          $KF5_PREFIX/share/kxmlgui5/ark
+          $KF6_PREFIX/lib/plugins/kerfuffle and
+          $KF6_PREFIX/share/doc/HTML/*/ark
         </seg>
 @y
         <seg>
@@ -162,9 +161,8 @@
           libkerfuffle.so
         </seg>
         <seg>
-          $KF5_PREFIX/lib/plugins/kerfuffle,
-          $KF5_PREFIX/share/doc/HTML/*/ark,
-          $KF5_PREFIX/share/kxmlgui5/ark
+          $KF6_PREFIX/lib/plugins/kerfuffle,
+          $KF6_PREFIX/share/doc/HTML/*/ark
         </seg>
 @z
 
@@ -175,7 +173,7 @@
 @z
 
 @x ark
-             is a KF5-based Archive Manager
+             is a KF6-based Archive Manager
 @y
-             is a KF5-based Archive Manager
+             is a KF6-based Archive Manager
 @z

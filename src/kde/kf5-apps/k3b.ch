@@ -10,7 +10,7 @@
 @z
 
 @x
-      The <application>K3b</application> package contains a KF5-based
+      The <application>K3b</application> package contains a KF6-based
       graphical interface to the <application>Cdrtools</application> and
       <application>dvd+rw-tools</application> CD/DVD manipulation tools. It also
       combines the capabilities of many other multimedia packages into one
@@ -19,7 +19,7 @@
       It is used for creating audio, data, video and mixed-mode CDs as well
       as copying, ripping and burning CDs and DVDs.
 @y
-      The <application>K3b</application> package contains a KF5-based
+      The <application>K3b</application> package contains a KF6-based
       graphical interface to the <application>Cdrtools</application> and
       <application>dvd+rw-tools</application> CD/DVD manipulation tools. It also
       combines the capabilities of many other multimedia packages into one
@@ -104,7 +104,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="libkcddb"/>,
       <xref linkend="libsamplerate"/>, and
       <xref linkend="shared-mime-info"/>
@@ -112,7 +112,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="libkcddb"/>,
       <xref linkend="libsamplerate"/>,
       <xref linkend="shared-mime-info"/>
@@ -211,9 +211,9 @@
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x
@@ -242,8 +242,8 @@
           and numerous plugin modules for the installed dependencies
         </seg>
         <seg>
-          $KF5_PREFIX/share/{,kxmlgui5/}k3b and
-          $KF5_PREFIX/share/doc/HTML/*/k3b
+          $KF6_PREFIX/share/k3b and
+          $KF6_PREFIX/share/doc/HTML/*/k3b
         </seg>
 @y
         <seg>
@@ -255,8 +255,8 @@
           and numerous plugin modules for the installed dependencies
         </seg>
         <seg>
-          $KF5_PREFIX/share/{,kxmlgui5/}k3b,
-          $KF5_PREFIX/share/doc/HTML/*/k3b
+          $KF6_PREFIX/share/k3b,
+          $KF6_PREFIX/share/doc/HTML/*/k3b
         </seg>
 @z
 

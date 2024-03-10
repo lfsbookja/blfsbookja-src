@@ -237,8 +237,8 @@ top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 CHANGE_FILES = \
 	kf5.ch            \
-	kf5-frameworks.ch \
-	kf5-intro.ch
+	kf6-frameworks.ch \
+	kf6-intro.ch
 
 thisdir = ${shell echo $(subdir) | sed -e "s|^src/||" -e "s|^src|\.|"}
 BOOKdir = @abs_bookdir@/$(thisdir)

@@ -103,7 +103,7 @@
       <xref linkend="perl-http-daemon"/> (for the test suite),
       <xref linkend="perl-io-socket-ssl"/> (for the test suite),
       <xref linkend="libidn2"/>,
-      <xref linkend="pcre"/> or <xref linkend="pcre2"/>, and
+      <xref linkend="pcre2"/>, and
       <xref linkend="valgrind"/> (for the test suite)
     </para>
 @y
@@ -113,7 +113,7 @@
       <xref linkend="perl-http-daemon"/> (テストスイートのため),
       <xref linkend="perl-io-socket-ssl"/> (テストスイートのため),
       <xref linkend="libidn2"/>,
-      <xref linkend="pcre"/> or <xref linkend="pcre2"/>, and
+      <xref linkend="pcre2"/>,
       <xref linkend="valgrind"/> (テストスイートのため)
     </para>
 @z

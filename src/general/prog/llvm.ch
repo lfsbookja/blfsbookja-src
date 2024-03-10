@@ -118,12 +118,6 @@
 @z
 
 @x
-          Patch enabling <xref linkend="gSSP"/> by default in clang:
-@y
-          Patch enabling <xref linkend="gSSP"/> by default in clang:
-@z
-
-@x
     <bridgehead renderas="sect3">Optional Download</bridgehead>
 @y
     <bridgehead renderas="sect3">Optional Download</bridgehead>
@@ -224,18 +218,10 @@
 
 @x
       If you have downloaded <application>compiler-rt</application>,
-      install it into the source tree by running the following commands,
-      <!-- https://github.com/llvm/llvm-project/pull/66761 -->
-      and modify the building system so it will find the
-      <filename class='directory'>
-        llvm-cmake-&llvm-maj-version;.src</filename> directory correctly:
+      install it into the source tree by running the following commands:
 @y
       If you have downloaded <application>compiler-rt</application>,
-      install it into the source tree by running the following commands,
-      <!-- https://github.com/llvm/llvm-project/pull/66761 -->
-      and modify the building system so it will find the
-      <filename class='directory'>
-        llvm-cmake-&llvm-maj-version;.src</filename> directory correctly:
+      install it into the source tree by running the following commands:
 @z
 
 @x
@@ -321,6 +307,10 @@
       </phrase>
       read <xref linkend='build-in-cgroup'/> for details) to limit the
       number of logical cores for running the tests.
+      Two tests named
+      <filename>sanitizer_coverage_inline8bit_counter_default_impl.cpp</filename>
+      and <filename>sanitizer_coverage_symbolize.cpp</filename> are known
+      to fail.
       One test named <filename>Linux/clone_setns.cpp</filename> will fail
       if <option>CONFIG_USER_NS</option> is not enabled in kernel
       configuration.
@@ -334,6 +324,10 @@
       </phrase>
       read <xref linkend='build-in-cgroup'/> for details) to limit the
       number of logical cores for running the tests.
+      Two tests named
+      <filename>sanitizer_coverage_inline8bit_counter_default_impl.cpp</filename>
+      and <filename>sanitizer_coverage_symbolize.cpp</filename> are known
+      to fail.
       One test named <filename>Linux/clone_setns.cpp</filename> will fail
       if <option>CONFIG_USER_NS</option> is not enabled in kernel
       configuration.
@@ -396,6 +390,7 @@
           clang-linker-wrapper,
           clang-offload-bundler, clang-offload-packager,
           clang-refactor, clang-rename, clang-repl, clang-scan-deps,
+          clang-tblgen,
           diagtool, dsymutil, FileCheck, git-clang-format, hmaptool, intercept-build, llc, lli,
           llvm-addr2line (symlink to llvm-symbolizer),
           llvm-ar, llvm-as, llvm-bcanalyzer,
@@ -413,13 +408,14 @@
           llvm-opt-report, llvm-otool (symlink to llv-objdump),
           llvm-pdbutil, llvm-profdata, llvm-profgen,
           llvm-ranlib (symlink to llvm-ar), llvm-rc,
-          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce,
-          llvm-remark-size-diff, llvm-remarkutil,
+          llvm-readelf (symlink to llvm-readobj), llvm-readobj,
+          llvm-readtapi, llvm-reduce,
+          llvm-remarkutil,
           llvm-rtdyld, llvm-sim, llvm-size, llvm-split, llvm-stress,
           llvm-strings, llvm-strip (symlink to llvm-objcopy), llvm-symbolizer,
-          llvm-tapi-diff, llvm-tblgen, llvm-tli-checker, llvm-undname, llvm-windres (symlink to
+          llvm-tblgen, llvm-tli-checker, llvm-undname, llvm-windres (symlink to
           llvm-rc), llvm-xray, nvptx-arch, opt, sancov, sanstats, scan-build,
-          scan-build-py, scan-view, split-file, and verify-uselistorder
+          scan-build-py, scan-view, and verify-uselistorder
         </seg>
         <seg>
           libLLVM.so,
@@ -434,8 +430,9 @@
         <seg>
           /usr/include/{clang,clang-c,llvm,llvm-c},
           /usr/lib/{clang,cmake/{clang,llvm},libear,libscanbuild},
-          /usr/share/{clang,opt-viewer,scan-build,scan-view}, and
-          /usr/share/doc/llvm-&llvm-version;
+          /usr/share/{clang,opt-viewer,scan-build,scan-view},
+          /usr/share/doc/llvm-&llvm-version;, and
+          /etc/clang
         </seg>
 @y
         <seg>
@@ -446,6 +443,7 @@
           clang-linker-wrapper,
           clang-offload-bundler, clang-offload-packager,
           clang-refactor, clang-rename, clang-repl, clang-scan-deps,
+          clang-tblgen,
           diagtool, dsymutil, FileCheck, git-clang-format, hmaptool, intercept-build, llc, lli,
           llvm-addr2line (symlink to llvm-symbolizer),
           llvm-ar, llvm-as, llvm-bcanalyzer,
@@ -463,13 +461,14 @@
           llvm-opt-report, llvm-otool (symlink to llv-objdump),
           llvm-pdbutil, llvm-profdata, llvm-profgen,
           llvm-ranlib (symlink to llvm-ar), llvm-rc,
-          llvm-readelf (symlink to llvm-readobj), llvm-readobj, llvm-reduce,
-          llvm-remark-size-diff, llvm-remarkutil,
+          llvm-readelf (symlink to llvm-readobj), llvm-readobj,
+          llvm-readtapi, llvm-reduce,
+          llvm-remarkutil,
           llvm-rtdyld, llvm-sim, llvm-size, llvm-split, llvm-stress,
           llvm-strings, llvm-strip (symlink to llvm-objcopy), llvm-symbolizer,
-          llvm-tapi-diff, llvm-tblgen, llvm-tli-checker, llvm-undname, llvm-windres (symlink to
+          llvm-tblgen, llvm-tli-checker, llvm-undname, llvm-windres (symlink to
           llvm-rc), llvm-xray, nvptx-arch, opt, sancov, sanstats, scan-build,
-          scan-build-py, scan-view, split-file, verify-uselistorder
+          scan-build-py, scan-view, verify-uselistorder
         </seg>
         <seg>
           libLLVM.so,
@@ -485,7 +484,8 @@
           /usr/include/{clang,clang-c,llvm,llvm-c},
           /usr/lib/{clang,cmake/{clang,llvm},libear,libscanbuild},
           /usr/share/{clang,opt-viewer,scan-build,scan-view},
-          /usr/share/doc/llvm-&llvm-version;
+          /usr/share/doc/llvm-&llvm-version;,
+          /etc/clang
         </seg>
 @z
 

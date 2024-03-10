@@ -79,7 +79,7 @@
       <xref linkend="cmake"/>,
       <xref linkend="extra-cmake-modules"/>,
       <xref linkend="glib2"/>, and
-      <xref linkend="qt5"/>
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -87,7 +87,7 @@
       <xref linkend="cmake"/>,
       <xref linkend="extra-cmake-modules"/>,
       <xref linkend="glib2"/>,
-      <xref linkend="qt5"/>
+      <xref linkend="qt6"/>
     </para>
 @z
 

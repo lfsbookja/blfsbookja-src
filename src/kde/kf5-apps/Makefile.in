@@ -249,7 +249,8 @@ CHANGE_FILES = \
 	libkcddb.ch    \
 	libkdcraw.ch   \
 	libkexiv2.ch   \
-	okular5.ch
+	okular5.ch     \
+	plasma-activities.ch
 
 thisdir = ${shell echo $(subdir) | sed -e "s|^src/||" -e "s|^src|\.|"}
 BOOKdir = @abs_bookdir@/$(thisdir)

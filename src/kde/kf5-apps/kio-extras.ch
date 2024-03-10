@@ -71,13 +71,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="kdsoap"/> and
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="kdsoap"/>,
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @z
 

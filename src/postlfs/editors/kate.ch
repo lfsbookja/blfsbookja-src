@@ -11,10 +11,10 @@
 
 @x
       The <application>Kate</application> package contains an advanced
-      KF5 based graphical text editor.
+      KF6 based graphical text editor.
 @y
       The <application>Kate</application> package contains an advanced
-      KF5 based graphical text editor.
+      KF6 based graphical text editor.
 @z
 
 @x
@@ -24,39 +24,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&kate5-download-http;"/>
+          Download (HTTP): <ulink url="&kate-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&kate5-download-http;"/>
+          &Download; (HTTP): <ulink url="&kate-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&kate5-download-ftp;"/>
+          Download (FTP): <ulink url="&kate-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&kate5-download-ftp;"/>
+          &Download; (FTP): <ulink url="&kate-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &kate5-md5sum;
+          Download MD5 sum: &kate-md5sum;
 @y
-          &Download; MD5 sum: &kate5-md5sum;
+          &Download; MD5 sum: &kate-md5sum;
 @z
 
 @x
-          Download size: &kate5-size;
+          Download size: &kate-size;
 @y
-          &DownloadSize;: &kate5-size;
+          &DownloadSize;: &kate-size;
 @z
 
 @x
-          Estimated disk space required: &kate5-buildsize;
+          Estimated disk space required: &kate-buildsize;
 @y
-          &Estimateddiskspacerequired;: &kate5-buildsize;
+          &Estimateddiskspacerequired;: &kate-buildsize;
 @z
 
 @x
-          Estimated build time: &kate5-time;
+          Estimated build time: &kate-time;
 @y
-          &Estimatedbuildtime;: &kate5-time;
+          &Estimatedbuildtime;: &kate-time;
 @z
 
 @x
@@ -68,12 +68,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @z
 
@@ -123,28 +123,28 @@
           kate and kwrite
         </seg>
         <seg>
-          Several plugins under $KF5_PREFIX/lib/plugins
+          Several plugins under $KF6_PREFIX/lib/plugins
         </seg>
         <seg>
-          $KF5_PREFIX/lib/plugins/ktexteditor,
-          $KF5_PREFIX/lib/plugins/plasma/dataengine,
-          $KF5_PREFIX/share/doc/HTML/*/{kate,katepart,kwrite},
-          $KF5_PREFIX/share/{kateproject,katexmltools}, and
-          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions
+          $KF6_PREFIX/lib/plugins/ktexteditor,
+          $KF6_PREFIX/lib/plugins/plasma/dataengine,
+          $KF6_PREFIX/share/doc/HTML/*/{kate,katepart,kwrite},
+          $KF6_PREFIX/share/{kateproject,katexmltools}, and
+          $KF6_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions
         </seg>
 @y
         <seg>
           kate, kwrite
         </seg>
         <seg>
-          Several plugins under $KF5_PREFIX/lib/plugins
+          Several plugins under $KF6_PREFIX/lib/plugins
         </seg>
         <seg>
-          $KF5_PREFIX/lib/plugins/ktexteditor,
-          $KF5_PREFIX/lib/plugins/plasma/dataengine,
-          $KF5_PREFIX/share/doc/HTML/*/{kate,katepart,kwrite},
-          $KF5_PREFIX/share/{kateproject,katexmltools},
-          $KF5_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions
+          $KF6_PREFIX/lib/plugins/ktexteditor,
+          $KF6_PREFIX/lib/plugins/plasma/dataengine,
+          $KF6_PREFIX/share/doc/HTML/*/{kate,katepart,kwrite},
+          $KF6_PREFIX/share/{kateproject,katexmltools},
+          $KF6_PREFIX/share/plasma/plasmoids/org.kde.plasma.katesessions
         </seg>
 @z
 

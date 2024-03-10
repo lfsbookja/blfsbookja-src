@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qtwebengine-buildsize     "5.1 GB (154 MB installed)">
-  <!ENTITY qtwebengine-time          "45 SBU (Using parallelism=8)">
+  <!ENTITY qtwebengine-buildsize     "7.6 GB (231 MB installed)">
+  <!ENTITY qtwebengine-time          "51 SBU (Using parallelism=8)">
 @y
-  <!ENTITY qtwebengine-buildsize     "5.1 GB (154 MB installed)">
-  <!ENTITY qtwebengine-time          "45 SBU (Using parallelism=8)">
+  <!ENTITY qtwebengine-buildsize     "7.6 GB (231 MB installed)">
+  <!ENTITY qtwebengine-time          "51 SBU (Using parallelism=8)">
 @z
 
 @x
@@ -39,68 +39,6 @@
 @y
       This package and browsers using it may be useful if you need to use a
       website designed for google chrome, or chromium, browsers.
-@z
-
-@x
-        Qt-5.15 reached End Of Life on 26 May 2023. Extended lifetime Qt5.15 LTS
-        has been extended until 26th May 2025 for those with subscription licenses.
-        Because qtwebengine uses chromium code under the LGPL, it appears that any
-        new backported CVE fixes for QtWebEngine will be available after Qt makes
-        public releases of its current versions.
-@y
-        Qt-5.15 reached End Of Life on 26 May 2023. Extended lifetime Qt5.15 LTS
-        has been extended until 26th May 2025 for those with subscription licenses.
-        Because qtwebengine uses chromium code under the LGPL, it appears that any
-        new backported CVE fixes for QtWebEngine will be available after Qt makes
-        public releases of its current versions.
-@z
-
-@x
-        QtWebEngine uses a forked copy of chromium, and is therefore vulnerable
-        to many issues found there. The Qt developers have always preferred to
-        make releases at the same time as the rest of Qt (rather than adding
-        emergency fixes), but with stable versions getting released after the
-        current development version. Now that they are keen to move to Qt6, the
-        5.15.3 and later Qt-5.15 releases are initially only available to paying
-        customers. QtWebEngine is something of an exception because of its LGPL
-        licence, but getting the git sources (with the forked chromium submodule)
-        to a position where they will successfully build on a current BLFS system
-        can take a lot of effort and therefore updates to the book may be delayed.
-@y
-        QtWebEngine uses a forked copy of chromium, and is therefore vulnerable
-        to many issues found there. The Qt developers have always preferred to
-        make releases at the same time as the rest of Qt (rather than adding
-        emergency fixes), but with stable versions getting released after the
-        current development version. Now that they are keen to move to Qt6, the
-        5.15.3 and later Qt-5.15 releases are initially only available to paying
-        customers. QtWebEngine is something of an exception because of its LGPL
-        licence, but getting the git sources (with the forked chromium submodule)
-        to a position where they will successfully build on a current BLFS system
-        can take a lot of effort and therefore updates to the book may be delayed.
-@z
-
-@x
-        It seems likely that future 5.15-series versions will also be released
-        long after the chromium vulnerabilities are known, but fixes for
-        QtWebEngine can be found in git and the editors take the view that
-        known vulnerabilities in browsers should be fixed.
-@y
-        It seems likely that future 5.15-series versions will also be released
-        long after the chromium vulnerabilities are known, but fixes for
-        QtWebEngine can be found in git and the editors take the view that
-        known vulnerabilities in browsers should be fixed.
-@z
-
-@x
-        The tarball linked to below was created from the 5.15<!--.15--> git branch
-        and the 87-branch of the chromium submodule (which is forked from
-        chromium). See the GIT-VERSIONS file in the tarball for details of the
-        latest commits.
-@y
-        The tarball linked to below was created from the 5.15<!--.15--> git branch
-        and the 87-branch of the chromium submodule (which is forked from
-        chromium). See the GIT-VERSIONS file in the tarball for details of the
-        latest commits.
 @z
 
 @x
@@ -231,25 +169,21 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-      <!-- the qmake output tends to be misleading. 'khr' is from Mesa -->
+
     <para role="required">
       <xref linkend="nodejs"/>,
       <xref linkend="nss"/>,
-      <xref linkend="pciutils"/>,
-      <xref linkend="python311"/>, and
-      (<xref linkend='qt5'/> or
-       <xref role="nodep" linkend='qt5-components'/> with qtlocation and qtwebchannel)
+      <xref linkend="pciutils"/>, and
+      <xref linkend='qt6'/> 
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
-      <!-- the qmake output tends to be misleading. 'khr' is from Mesa -->
+
     <para role="required">
       <xref linkend="nodejs"/>,
       <xref linkend="nss"/>,
       <xref linkend="pciutils"/>,
-      <xref linkend="python311"/>,
-      (<xref linkend='qt5'/> or
-       <xref role="nodep" linkend='qt5-components'/> with qtlocation and qtwebchannel)
+      <xref linkend='qt6'/> 
     </para>
 @z
 
@@ -326,74 +260,6 @@
 @z
 
 @x
-      Apply a patch to fix several issues that can prevent the build from completing,
-      and to force it to use python3:
-@y
-      Apply a patch to fix several issues that can prevent the build from completing,
-      and to force it to use python3:
-@z
-
-@x
-      If building with system <xref linkend='ffmpeg'/> as the editors
-      recommend, apply a patch that resolves problems when building with
-      ffmpeg-5 and later:
-@y
-      If building with system <xref linkend='ffmpeg'/> as the editors
-      recommend, apply a patch that resolves problems when building with
-      ffmpeg-5 and later:
-@z
-
-@x
-      Otherwise, fix an issue in shipped ffmpeg causing it fail to build
-      with Binutils 2.41 or later:
-@y
-      Otherwise, fix an issue in shipped ffmpeg causing it fail to build
-      with Binutils 2.41 or later:
-@z
-
-@x
-      Although the build_fixes patch has ensured that git is not invoked during the build,
-      the build system has labyrinthine rules of byzantine complexity, and in
-      particular trying to build without two <filename>.git</filename> directories
-      will lead to it eventually falling into unexpected and unbuildable code
-      which references a private header that has not been created. Avoid this
-      by creating the required directories:
-@y
-      Although the build_fixes patch has ensured that git is not invoked during the build,
-      the build system has labyrinthine rules of byzantine complexity, and in
-      particular trying to build without two <filename>.git</filename> directories
-      will lead to it eventually falling into unexpected and unbuildable code
-      which references a private header that has not been created. Avoid this
-      by creating the required directories:
-@z
-
-@x
-      Because this version of qtwebengine is aimed at a later release than the
-      current public releases, change it to build for qt-&qt5-version; using a
-      sed:
-@y
-      Because this version of qtwebengine is aimed at a later release than the
-      current public releases, change it to build for qt-&qt5-version; using a
-      sed:
-@z
-
-@x
-      Now, ensure that the local headers are available when not building as
-      part of the complete <xref linkend="qt5"/>:
-@y
-      Now, ensure that the local headers are available when not building as
-      part of the complete <xref linkend="qt5"/>:
-@z
-
-@x
-      Next, allow the pulseaudio library to be linked at build time, instead
-      of run time. This also prevents an issue with newer pulseaudio:
-@y
-      Next, allow the pulseaudio library to be linked at build time, instead
-      of run time. This also prevents an issue with newer pulseaudio:
-@z
-
-@x
       Install <application>qtwebengine</application> by running the following
       commands:
 @y
@@ -414,82 +280,11 @@
 @z
 
 @x
-      Remove references to the build directory from installed library
-      dependency (prl) files by running the following
-      commands as the <systemitem class="username">root</systemitem> user:
-@y
-      Remove references to the build directory from installed library
-      dependency (prl) files by running the following
-      commands as the <systemitem class="username">root</systemitem> user:
-@z
-
-@x
     <title>Command Explanations</title>
 @y
     <title>Command Explanations</title>
 @z
 
-@x
-      <command>qmake</command>: This will build the included copy of
-      <application>ninja</application> if it is not already installed
-      and use it to configure the build.
-@y
-      <command>qmake</command>: This will build the included copy of
-      <application>ninja</application> if it is not already installed
-      and use it to configure the build.
-@z
-
-@x
-      <command>-- -system-ffmpeg -proprietary-codecs -webengine-icu</command>: If
-      any options are passed to qmake they must come after '--' which must follow
-      '..' that points to the main directory. The options here cause it to use
-      system ffmpeg and  system icu. The '-proprietary-codecs' option allows
-      ffmpeg to decode H264 and H265 codecs.  If built as part of full Qt5, the
-      system icu is automatically used (only) by Qt5Core if it is available, but
-      unless this option is used webengine will always use its shipped copy of icu,
-      adding time and space to the build.  Remove the
-      <parameter>-system-ffmpeg</parameter> switch if you don't have
-      <xref linkend='ffmpeg'/> installed and want to build this package
-      with an internal copy of ffmpeg.
-@y
-      <command>-- -system-ffmpeg -proprietary-codecs -webengine-icu</command>: If
-      any options are passed to qmake they must come after '--' which must follow
-      '..' that points to the main directory. The options here cause it to use
-      system ffmpeg and  system icu. The '-proprietary-codecs' option allows
-      ffmpeg to decode H264 and H265 codecs.  If built as part of full Qt5, the
-      system icu is automatically used (only) by Qt5Core if it is available, but
-      unless this option is used webengine will always use its shipped copy of icu,
-      adding time and space to the build.  Remove the
-      <parameter>-system-ffmpeg</parameter> switch if you don't have
-      <xref linkend='ffmpeg'/> installed and want to build this package
-      with an internal copy of ffmpeg.
-@z
-
-@x
-      <option>-webengine-jumbo-build 0</option>: If this is added to the qmake
-      command it will cause the 'Jumbo Build Merge Limit' to be reported as 'no'
-      instead of 8. That turns off the jumbo build. Some distros do that to get
-      a smaller build on some architectures such as MIPS. On x86_64 it might save
-      a little space in the build, but the build time will increase by a very
-      large amount.
-@y
-      <option>-webengine-jumbo-build 0</option>: If this is added to the qmake
-      command it will cause the 'Jumbo Build Merge Limit' to be reported as 'no'
-      instead of 8. That turns off the jumbo build. Some distros do that to get
-      a smaller build on some architectures such as MIPS. On x86_64 it might save
-      a little space in the build, but the build time will increase by a very
-      large amount.
-@z
-
-@x
-      <option>-webengine-kerberos</option>: Add this if you have installed <xref
-      linkend="mitkrb"/> and wish to connect from a browser using QtWebEngine
-      to a webserver which requires you to connect via kerberos.
-@y
-      <option>-webengine-kerberos</option>: Add this if you have installed <xref
-      linkend="mitkrb"/> and wish to connect from a browser using QtWebEngine
-      to a webserver which requires you to connect via kerberos.
-@z
 
 @x
       <option>NINJAJOBS=4 make</option>: If you patched system ninja in LFS to
@@ -631,44 +426,50 @@
 @x
         <seg>
           qtwebengine_convert_dict and
-          QtWebEngineProcess (in $QT5DIR/libexec)
+          QtWebEngineProcess (both in $QT6DIR/libexec)
         </seg>
         <seg>
-          libQt5Pdf.so,
-          libQt5PdfWidgets.so,
-          libQt5WebEngineCore.so,
-          libQt5WebEngine.so, and
-          libQt5WebEngineWidgets.so
+          libQt6Pdf.so,
+          libQt6PdfQuick.so,
+          libQt6PdfWidgets.so,
+          libQt6WebEngineCore.so,
+          libQt6WebEngineiQuick.so,
+          libQt6WebEngineQuickDelegatesQml.so, and
+          libQt6WebEngineWidgets.so
         </seg>
         <seg>
-          $QT5DIR/include/QtPdf,
-          $QT5DIR/include/QtPdfWidgets,
-          $QT5DIR/include/QtWebEngine,
-          $QT5DIR/include/QtWebEngineCore,
-          $QT5DIR/include/QtWebEngineWidgets,
-          $QT5DIR/qml/QtWebEngine, and
-          $QT5DIR/translations/qtwebengine_locales
+          $QT6DIR/include/QtPdf,
+          $QT6DIR/include/QtPdfQuick,
+          $QT6DIR/include/QtPdfWidgets,
+          $QT6DIR/include/QtWebEngineCore,
+          $QT6DIR/include/QtWebEngineQuick,
+          $QT6DIR/include/QtWebEngineWidgets,
+          $QT6DIR/qml/QtWebEngine, and
+          $QT6DIR/translations/qtwebengine_locales
         </seg>
 @y
         <seg>
-          qtwebengine_convert_dict and
-          QtWebEngineProcess (in $QT5DIR/libexec)
+          qtwebengine_convert_dict,
+          QtWebEngineProcess (both in $QT6DIR/libexec)
         </seg>
         <seg>
-          libQt5Pdf.so,
-          libQt5PdfWidgets.so,
-          libQt5WebEngineCore.so,
-          libQt5WebEngine.so, and
-          libQt5WebEngineWidgets.so
+          libQt6Pdf.so,
+          libQt6PdfQuick.so,
+          libQt6PdfWidgets.so,
+          libQt6WebEngineCore.so,
+          libQt6WebEngineiQuick.so,
+          libQt6WebEngineQuickDelegatesQml.so,
+          libQt6WebEngineWidgets.so
         </seg>
         <seg>
-          $QT5DIR/include/QtPdf,
-          $QT5DIR/include/QtPdfWidgets,
-          $QT5DIR/include/QtWebEngine,
-          $QT5DIR/include/QtWebEngineCore,
-          $QT5DIR/include/QtWebEngineWidgets,
-          $QT5DIR/qml/QtWebEngine, and
-          $QT5DIR/translations/qtwebengine_locales
+          $QT6DIR/include/QtPdf,
+          $QT6DIR/include/QtPdfQuick,
+          $QT6DIR/include/QtPdfWidgets,
+          $QT6DIR/include/QtWebEngineCore,
+          $QT6DIR/include/QtWebEngineQuick,
+          $QT6DIR/include/QtWebEngineWidgets,
+          $QT6DIR/qml/QtWebEngine,
+          $QT6DIR/translations/qtwebengine_locales
         </seg>
 @z
 

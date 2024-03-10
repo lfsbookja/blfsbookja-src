@@ -4,18 +4,16 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY opus-buildsize     "15 MB (with tests)">
+  <!ENTITY opus-buildsize     "33 MB (with tests)">
   <!ENTITY opus-time          "0.5 SBU (with tests)">
 @y
-  <!ENTITY opus-buildsize     "15 MB (with tests)">
+  <!ENTITY opus-buildsize     "33 MB (with tests)">
   <!ENTITY opus-time          "0.5 SBU (with tests)">
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to Opus</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Opus</title>
 @z
 

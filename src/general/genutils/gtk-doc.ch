@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gtk-doc-buildsize     "13 MB (with tests)">
+  <!ENTITY gtk-doc-buildsize     "14 MB (with tests)">
   <!ENTITY gtk-doc-time          "0.2 SBU (with tests)">
 @y
-  <!ENTITY gtk-doc-buildsize     "13 MB（テスト込み）">
+  <!ENTITY gtk-doc-buildsize     "14 MB（テスト込み）">
   <!ENTITY gtk-doc-time          "0.2 SBU（テスト込み）">
 @z
 

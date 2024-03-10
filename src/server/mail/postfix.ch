@@ -99,8 +99,7 @@
       <xref linkend="icu"/> for Email Address Internationalization (SMTPUTF8) support,
       <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
-      <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
-      role='nodep' linkend='pcre'/>),
+      <xref linkend="pcre2"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
       &berkeley-db;, and
@@ -113,12 +112,11 @@
       <xref linkend="icu"/> for Email Address Internationalization (SMTPUTF8) support,
       <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
-      <xref linkend="pcre2"/> (<emphasis>or</emphasis> the deprecated <xref
-      role='nodep' linkend='pcre'/>),
+      <xref linkend="pcre2"/>,
       <xref linkend="postgresql"/>,
       <xref linkend="sqlite"/>,
-      &berkeley-db;, and
-      <ulink url="https://cr.yp.to/cdb.html">CDB</ulink> or
+      &berkeley-db;,
+      <ulink url="https://cr.yp.to/cdb.html">CDB</ulink> または
       <ulink url="https://www.corpit.ru/mjt/tinycdb.html">TinyCDB</ulink>
     </para>
 @z
@@ -342,17 +340,17 @@
 @z
 
 @x
-        Adjust the following according to your needs. For example,
-	if you have <application>Cyrus SASL</application> and
-	<application>LMDB</application>,
-        install <application>Postfix</application> by running the following
-        commands:
+        There might be duplicate settings in <envar>AUXLIBS</envar>
+        like <code>-lm</code> when both, <application>MariaDB</application>
+        and <application>PostgreSQL</application> are used. They do
+        not harm. Install <application>Postfix</application> by
+        running the following commands:
 @y
-        Adjust the following according to your needs. For example,
-	if you have <application>Cyrus SASL</application> and
-	<application>LMDB</application>,
-        install <application>Postfix</application> by running the following
-        commands:
+        There might be duplicate settings in <envar>AUXLIBS</envar>
+        like <code>-lm</code> when both, <application>MariaDB</application>
+        and <application>PostgreSQL</application> are used. They do
+        not harm. Install <application>Postfix</application> by
+        running the following commands:
 @z
 
 @x

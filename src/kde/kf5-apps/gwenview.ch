@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gwenview5-time          "0.5 SBU (using parallelism=4)">
+  <!ENTITY gwenview-time          "0.8 SBU (using parallelism=4)">
 @y
-  <!ENTITY gwenview5-time          "0.5 SBU (using parallelism=4)">
+  <!ENTITY gwenview-time          "0.8 SBU (using parallelism=4)">
 @z
 
 @x
@@ -29,39 +29,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&gwenview5-download-http;"/>
+          Download (HTTP): <ulink url="&gwenview-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&gwenview5-download-http;"/>
+          &Download; (HTTP): <ulink url="&gwenview-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&gwenview5-download-ftp;"/>
+          Download (FTP): <ulink url="&gwenview-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&gwenview5-download-ftp;"/>
+          &Download; (FTP): <ulink url="&gwenview-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &gwenview5-md5sum;
+          Download MD5 sum: &gwenview-md5sum;
 @y
-          &Download; MD5 sum: &gwenview5-md5sum;
+          &Download; MD5 sum: &gwenview-md5sum;
 @z
 
 @x
-          Download size: &gwenview5-size;
+          Download size: &gwenview-size;
 @y
-          &DownloadSize;: &gwenview5-size;
+          &DownloadSize;: &gwenview-size;
 @z
 
 @x
-          Estimated disk space required: &gwenview5-buildsize;
+          Estimated disk space required: &gwenview-buildsize;
 @y
-          &Estimateddiskspacerequired;: &gwenview5-buildsize;
+          &Estimateddiskspacerequired;: &gwenview-buildsize;
 @z
 
 @x
-          Estimated build time: &gwenview5-time;
+          Estimated build time: &gwenview-time;
 @y
-          &Estimatedbuildtime;: &gwenview5-time;
+          &Estimatedbuildtime;: &gwenview-time;
 @z
 
 @x
@@ -75,7 +75,7 @@
     <para role="required">
       <xref linkend="exiv2"/>,
       <xref linkend="kimageannotator"/>,
-      <xref linkend="kf5-frameworks"/>, and
+      <xref linkend="kf6-frameworks"/>, and
       <xref linkend="lcms2"/>
     </para>
 @y
@@ -83,7 +83,7 @@
     <para role="required">
       <xref linkend="exiv2"/>,
       <xref linkend="kimageannotator"/>,
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="lcms2"/>
     </para>
 @z
@@ -103,12 +103,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">KF5Kipi</ulink>
+      <xref linkend="plasma-activities"/> and 
+      <ulink url="https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html">CFitsio</ulink> 
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">KF5Kipi</ulink>
+      <xref linkend="plasma-activities"/>,
+      <ulink url="https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html">CFitsio</ulink> 
     </para>
 @z
 
@@ -162,7 +164,7 @@
           gvpart.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/{kxmlgui5/gvpart,gwenview,doc/HTML/*/gwenview}
+          $KF6_PREFIX/share/{gwenview,doc/HTML/*/gwenview}
         </seg>
 @y
         <seg>
@@ -173,7 +175,7 @@
           gvpart.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/{kxmlgui5/gvpart,gwenview,doc/HTML/*/gwenview}
+          $KF6_PREFIX/share/{gwenview,doc/HTML/*/gwenview}
         </seg>
 @z
 

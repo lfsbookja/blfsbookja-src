@@ -86,8 +86,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="enchant"/> (for spell checking),
-      <xref linkend="gucharmap"/>,
-      <xref linkend="pcre"/> and
+      <xref linkend="gucharmap"/>, and
       <ulink url="https://github.com/relaxng/jing-trang">Jing</ulink>
     </para>
 @y
@@ -95,7 +94,6 @@
     <para role="optional">
       <xref linkend="enchant"/> (スペルチェックのため),
       <xref linkend="gucharmap"/>,
-      <xref linkend="pcre"/>,
       <ulink url="https://github.com/relaxng/jing-trang">Jing</ulink>
     </para>
 @z

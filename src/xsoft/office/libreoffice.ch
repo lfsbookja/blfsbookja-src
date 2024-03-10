@@ -238,44 +238,8 @@
 @z
 
 @x
-<!-- keep one commented patch, it's sure to again need one or more in a few months:-->
-@y
-<!-- keep one commented patch, it's sure to again need one or more in a few months:-->
-@z
-
-@x
-<!--
-      <listitem>
-        <para>
-          Required patch to fix building with <xref linkend="poppler"/>:
-          <ulink url="&patch-root;/libreoffice-&libreoffice-dlversion;-poppler_22_09_fixes-1.patch"/>
-        </para>
-      </listitem>
--->
-      <listitem>
-        <para>
-          Required patch to fix building with libxml2-2.12.x:
-          <ulink url="&patch-root;/libreoffice-&libreoffice-dlversion;-consolidated_fixes-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
     <bridgehead renderas="sect3">LibreOffice Dependencies</bridgehead>
 @y
-<!--
-      <listitem>
-        <para>
-          Required patch to fix building with <xref linkend="poppler"/>:
-          <ulink url="&patch-root;/libreoffice-&libreoffice-dlversion;-poppler_22_09_fixes-1.patch"/>
-        </para>
-      </listitem>
--->
-      <listitem>
-        <para>
-          Required patch to fix building with libxml2-2.12.x:
-          <ulink url="&patch-root;/libreoffice-&libreoffice-dlversion;-consolidated_fixes-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
     <bridgehead renderas="sect3">LibreOffice Dependencies</bridgehead>
 @z
 
@@ -349,101 +313,31 @@
 @z
 
 @x
-  <sect2 role="installation">
     <title>Installation of LibreOffice</title>
-    <!-- since there is no "." in the "tar -t" listing, I cannot see
-    how no-overwrite-dir would be needed...
-    <important>
-      <para>
-        Unlike the other packages, we assume that you have not yet unpacked the
-        package. This is because the <option>- -no-overwrite-dir</option>
-        switch is needed in case you unpack as the <systemitem
-        class="username">root</systemitem> user.
-      </para>
-    </important>
 @y
-  <sect2 role="installation">
     <title>Installation of LibreOffice</title>
-    <!-- since there is no "." in the "tar -t" listing, I cannot see
-    how no-overwrite-dir would be needed...
-    <important>
-      <para>
-        Unlike the other packages, we assume that you have not yet unpacked the
-        package. This is because the <option>- -no-overwrite-dir</option>
-        switch is needed in case you unpack as the <systemitem
-        class="username">root</systemitem> user.
-      </para>
-    </important>
 @z
 
 @x
-<screen role="nodump"><userinput>tar -xf libreoffice-&libreoffice-dlversion;.tar.xz - -no-overwrite-dir &amp;&amp;
-cd libreoffice-&libreoffice-dlversion;</userinput></screen>
--->
+      First, fix a bug with linking to zlib:
 @y
-<screen role="nodump"><userinput>tar -xf libreoffice-&libreoffice-dlversion;.tar.xz - -no-overwrite-dir &amp;&amp;
-cd libreoffice-&libreoffice-dlversion;</userinput></screen>
--->
+      First, fix a bug with linking to zlib:
 @z
 
 @x
-<!-- keep a commented instruction if no patches are currently required -->
-<!--
-    <para>
-     First, fix build failures introduced by the latest poppler version:
-    </para>
-@y
-<!-- keep a commented instruction if no patches are currently required -->
-<!--
-    <para>
-     First, fix build failures introduced by the latest poppler version:
-    </para>
-@z
-
-@x
-    <para>
-      First, fix a build failure with libxml2 and a bug with linking to zlib:
-    </para>
-@y
-    <para>
-      First, fix a build failure with libxml2 and a bug with linking to zlib:
-    </para>
-@z
-
-@x
-    <para>
       Next, fix a build failure with ICU-74+:
-    </para>
 @y
-    <para>
       Next, fix a build failure with ICU-74+:
-    </para>
 @z
 
 @x
-    <para>
       If you have downloaded the dictionaries, help and translations tarballs,
       create symlinks to them from the source directory so they won't get
       downloaded again:
-    </para>
 @y
-    <para>
       If you have downloaded the dictionaries, help and translations tarballs,
       create symlinks to them from the source directory so they won't get
       downloaded again:
-    </para>
-@z
-
-@x
-<screen><userinput>install -dm755 external/tarballs &amp;&amp;
-ln -sv ../../../libreoffice-dictionaries-&libreoffice-dlversion;.tar.xz external/tarballs/ &amp;&amp;
-ln -sv ../../../libreoffice-help-&libreoffice-dlversion;.tar.xz         external/tarballs/ &amp;&amp;
-ln -sv ../../../libreoffice-translations-&libreoffice-dlversion;.tar.xz external/tarballs/</userinput></screen>
-@y
-<screen><userinput>install -dm755 external/tarballs &amp;&amp;
-ln -sv ../../../libreoffice-dictionaries-&libreoffice-dlversion;.tar.xz external/tarballs/ &amp;&amp;
-ln -sv ../../../libreoffice-help-&libreoffice-dlversion;.tar.xz         external/tarballs/ &amp;&amp;
-ln -sv ../../../libreoffice-translations-&libreoffice-dlversion;.tar.xz external/tarballs/</userinput></screen>
 @z
 
 @x
@@ -456,16 +350,6 @@ ln -sv ../../../libreoffice-translations-&libreoffice-dlversion;.tar.xz external
       The instructions in the package unpack some tarballs into a location
       it cannot find later.  Create some symlinks to help the build system out:
    </para>
-@z
-
-@x
-<screen><userinput>ln -sv src/libreoffice-help-&libreoffice-dlversion;/helpcontent2/ &amp;&amp;
-ln -sv src/libreoffice-dictionaries-&libreoffice-dlversion;/dictionaries/ &amp;&amp;
-ln -sv src/libreoffice-translations-&libreoffice-dlversion;/translations/</userinput></screen>
-@y
-<screen><userinput>ln -sv src/libreoffice-help-&libreoffice-dlversion;/helpcontent2/ &amp;&amp;
-ln -sv src/libreoffice-dictionaries-&libreoffice-dlversion;/dictionaries/ &amp;&amp;
-ln -sv src/libreoffice-translations-&libreoffice-dlversion;/translations/</userinput></screen>
 @z
 
 @x
@@ -553,16 +437,6 @@ ln -sv src/libreoffice-translations-&libreoffice-dlversion;/translations/</useri
 @z
 
 @x
-<screen><userinput>case $(uname -m) in
-   i?86) sed /-Os/d -i solenv/gbuild/platform/LINUX_INTEL_GCC.mk ;;
-esac</userinput></screen>
-@y
-<screen><userinput>case $(uname -m) in
-   i?86) sed /-Os/d -i solenv/gbuild/platform/LINUX_INTEL_GCC.mk ;;
-esac</userinput></screen>
-@z
-
-@x
     <para>
       Prepare <application>LibreOffice</application> for compilation by running
       the following commands:
@@ -575,159 +449,15 @@ esac</userinput></screen>
 @z
 
 @x
-    <!--Editors: if it happens you need to remove some "with-system-xxx"
-    instruction because libreoffice temporarily cannot use the current
-    system version, please keep it around commented out, so that it can be
-    remembered to test it with higher versions of libreoffice. -->
-@y
-    <!--Editors: if it happens you need to remove some "with-system-xxx"
-    instruction because libreoffice temporarily cannot use the current
-    system version, please keep it around commented out, so that it can be
-    remembered to test it with higher versions of libreoffice. -->
-@z
-
-@x
-<screen><userinput>sed -e "/gzip -f/d"   \
-    -e "s|.1.gz|.1|g" \
-    -i bin/distro-install-desktop-integration &amp;&amp;
-@y
-<screen><userinput>sed -e "/gzip -f/d"   \
-    -e "s|.1.gz|.1|g" \
-    -i bin/distro-install-desktop-integration &amp;&amp;
-@z
-
-@x
-sed -e "/distro-install-file-lists/d" -i Makefile.in &amp;&amp;
-@y
-sed -e "/distro-install-file-lists/d" -i Makefile.in &amp;&amp;
-@z
-
-@x
-./autogen.sh --prefix=$LO_PREFIX         \
-             --sysconfdir=/etc           \
-             --with-vendor=BLFS          \
-             --with-lang='fr en-GB'      \
-             --with-help                 \
-             --with-myspell-dicts        \
-             --without-junit             \
-             --without-system-dicts      \
-             --disable-dconf             \
-             --disable-odk               \
-             --enable-release-build=yes  \
-             --enable-python=system      \
-             --with-jdk-home=/opt/jdk    \
-             --with-system-boost         \
-             --with-system-clucene       \
-             --with-system-curl          \
-             --with-system-epoxy         \
-             --with-system-expat         \
-             --with-system-glm           \
-             --with-system-gpgmepp       \
-             --with-system-graphite      \
-             --with-system-harfbuzz      \
-             --with-system-icu           \
-             --with-system-jpeg          \
-             --with-system-lcms2         \
-             --with-system-libatomic_ops \
-             --with-system-libpng        \
-             --with-system-libxml        \
-             --with-system-nss           \
-             --with-system-odbc          \
-             --with-system-openldap      \
-             --with-system-openssl       \
-             --with-system-poppler       \
-             --with-system-postgresql    \
-             --with-system-redland       \
-             --with-system-libtiff       \
-             --with-system-libwebp       \
-             --with-system-zlib</userinput></screen>
-<!--
-    <para>
-      The instructions below will only build the package without running
-      any unit tests. If you prefer to run the unit tests, replace
-      <command>make build-nocheck</command> with <command>make build</command>
-      or (as a regular user only) just <command>make</command>, but do not be
-      surprised if a unit test fails right at the end of the build and
-      breaks it.
-    </para>
--->
-    <para>
       Build the package:
-    </para>
 @y
-./autogen.sh --prefix=$LO_PREFIX         \
-             --sysconfdir=/etc           \
-             --with-vendor=BLFS          \
-             --with-lang='fr en-GB'      \
-             --with-help                 \
-             --with-myspell-dicts        \
-             --without-junit             \
-             --without-system-dicts      \
-             --disable-dconf             \
-             --disable-odk               \
-             --enable-release-build=yes  \
-             --enable-python=system      \
-             --with-jdk-home=/opt/jdk    \
-             --with-system-boost         \
-             --with-system-clucene       \
-             --with-system-curl          \
-             --with-system-epoxy         \
-             --with-system-expat         \
-             --with-system-glm           \
-             --with-system-gpgmepp       \
-             --with-system-graphite      \
-             --with-system-harfbuzz      \
-             --with-system-icu           \
-             --with-system-jpeg          \
-             --with-system-lcms2         \
-             --with-system-libatomic_ops \
-             --with-system-libpng        \
-             --with-system-libxml        \
-             --with-system-nss           \
-             --with-system-odbc          \
-             --with-system-openldap      \
-             --with-system-openssl       \
-             --with-system-poppler       \
-             --with-system-postgresql    \
-             --with-system-redland       \
-             --with-system-libtiff       \
-             --with-system-libwebp       \
-             --with-system-zlib</userinput></screen>
-<!--
-    <para>
-      The instructions below will only build the package without running
-      any unit tests. If you prefer to run the unit tests, replace
-      <command>make build-nocheck</command> with <command>make build</command>
-      or (as a regular user only) just <command>make</command>, but do not be
-      surprised if a unit test fails right at the end of the build and
-      breaks it.
-    </para>
--->
-    <para>
       Build the package:
-    </para>
 @z
 
 @x
-<screen><userinput>make build</userinput></screen>
-@y
-<screen><userinput>make build</userinput></screen>
-@z
-
-@x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
-@z
-
-@x
-<screen role="root"><userinput>make distro-pack-install</userinput></screen>
-@y
-<screen role="root"><userinput>make distro-pack-install</userinput></screen>
 @z
 
 @x
@@ -747,74 +477,6 @@ sed -e "/distro-install-file-lists/d" -i Makefile.in &amp;&amp;
 @z
 
 @x
-<screen role="root"><userinput>if [ "$LO_PREFIX" != "/usr" ]; then
-@y
-<screen role="root"><userinput>if [ "$LO_PREFIX" != "/usr" ]; then
-@z
-
-@x
-  # This symlink is necessary for the desktop menu entries
-  ln -svf $LO_PREFIX/lib/libreoffice/program/soffice /usr/bin/libreoffice &amp;&amp;
-@y
-  # This symlink is necessary for the desktop menu entries
-  ln -svf $LO_PREFIX/lib/libreoffice/program/soffice /usr/bin/libreoffice &amp;&amp;
-@z
-
-@x
-  # Set up a generic location independent of version number
-  ln -sfv $LO_PREFIX /opt/libreoffice
-@y
-  # Set up a generic location independent of version number
-  ln -sfv $LO_PREFIX /opt/libreoffice
-@z
-
-@x
-  # Icons
-  mkdir -vp /usr/share/pixmaps
-  for i in $LO_PREFIX/share/icons/hicolor/32x32/apps/*; do
-    ln -svf $i /usr/share/pixmaps
-  done &amp;&amp;
-@y
-  # Icons
-  mkdir -vp /usr/share/pixmaps
-  for i in $LO_PREFIX/share/icons/hicolor/32x32/apps/*; do
-    ln -svf $i /usr/share/pixmaps
-  done &amp;&amp;
-@z
-
-@x
-  # Desktop menu entries
-  for i in $LO_PREFIX/lib/libreoffice/share/xdg/*; do
-    ln -svf $i /usr/share/applications/libreoffice-$(basename $i)
-  done &amp;&amp;
-@y
-  # Desktop menu entries
-  for i in $LO_PREFIX/lib/libreoffice/share/xdg/*; do
-    ln -svf $i /usr/share/applications/libreoffice-$(basename $i)
-  done &amp;&amp;
-@z
-
-@x
-  # Man pages
-  for i in $LO_PREFIX/share/man/man1/*; do
-    ln -svf $i /usr/share/man/man1/
-  done
-@y
-  # Man pages
-  for i in $LO_PREFIX/share/man/man1/*; do
-    ln -svf $i /usr/share/man/man1/
-  done
-@z
-
-@x
-  unset i
-fi</userinput></screen>
-@y
-  unset i
-fi</userinput></screen>
-@z
-
-@x
     <para>
       If you have installed <xref linkend="desktop-file-utils"/>, and you wish
       to update the MIME database, issue, as the <systemitem class="username">
@@ -826,12 +488,6 @@ fi</userinput></screen>
       to update the MIME database, issue, as the <systemitem class="username">
       root</systemitem> user:
     </para>
-@z
-
-@x
-<screen role="root"><userinput>update-desktop-database</userinput></screen>
-@y
-<screen role="root"><userinput>update-desktop-database</userinput></screen>
 @z
 
 @x
@@ -863,16 +519,8 @@ fi</userinput></screen>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
@@ -1313,25 +961,21 @@ fi</userinput></screen>
 @z
 
 @x
-    <para>
       <!-- Brings in - -enable-qt5 as well. -->
       <option>--enable-kf5</option>: Builds with KDE/Plasma integration. If
-      &qt5-deps; and/or <xref linkend="kf5-frameworks"/> are not
+      &qt5-deps; and/or <xref linkend="kf6-frameworks"/> are not
       installed in <filename class="directory">/usr</filename>, the include
       and library directories must be specified in <envar>QT5INC</envar>,
       <envar>QT5LIB</envar>, <envar>KF5INC</envar>, and <envar>KF5LIB</envar>,
       respectively.
-    </para>
 @y
-    <para>
       <!-- Brings in - -enable-qt5 as well. -->
       <option>--enable-kf5</option>: Builds with KDE/Plasma integration. If
-      &qt5-deps; and/or <xref linkend="kf5-frameworks"/> are not
+      &qt5-deps; and/or <xref linkend="kf6-frameworks"/> are not
       installed in <filename class="directory">/usr</filename>, the include
       and library directories must be specified in <envar>QT5INC</envar>,
       <envar>QT5LIB</envar>, <envar>KF5INC</envar>, and <envar>KF5LIB</envar>,
       respectively.
-    </para>
 @z
 
 @x
@@ -1399,16 +1043,8 @@ fi</userinput></screen>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
@@ -1712,22 +1348,4 @@ fi</userinput></screen>
           </indexterm>
         </listitem>
       </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kdenlive5-time          "1.4 SBU (using parallelism=4)">
+  <!ENTITY kdenlive-time          "2.0 SBU (using parallelism=4)">
 @y
-  <!ENTITY kdenlive5-time          "1.4 SBU (using parallelism=4)">
+  <!ENTITY kdenlive-time          "2.0 SBU (using parallelism=4)">
 @z
 
 @x
@@ -16,10 +16,10 @@
 @z
 
 @x
-      The <application>Kdenlive</application> package is a KF5 based video
+      The <application>Kdenlive</application> package is a KF6 based video
       editor.
 @y
-      The <application>Kdenlive</application> package is a KF5 based video
+      The <application>Kdenlive</application> package is a KF6 based video
       editor.
 @z
 
@@ -30,39 +30,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&kdenlive5-download-http;"/>
+          Download (HTTP): <ulink url="&kdenlive-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&kdenlive5-download-http;"/>
+          Download (HTTP): <ulink url="&kdenlive-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&kdenlive5-download-ftp;"/>
+          Download (FTP): <ulink url="&kdenlive-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&kdenlive5-download-ftp;"/>
+          Download (FTP): <ulink url="&kdenlive-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &kdenlive5-md5sum;
+          Download MD5 sum: &kdenlive-md5sum;
 @y
-          Download MD5 sum: &kdenlive5-md5sum;
+          Download MD5 sum: &kdenlive-md5sum;
 @z
 
 @x
-          Download size: &kdenlive5-size;
+          Download size: &kdenlive-size;
 @y
-          Download size: &kdenlive5-size;
+          Download size: &kdenlive-size;
 @z
 
 @x
-          Estimated disk space required: &kdenlive5-buildsize;
+          Estimated disk space required: &kdenlive-buildsize;
 @y
-          Estimated disk space required: &kdenlive5-buildsize;
+          Estimated disk space required: &kdenlive-buildsize;
 @z
 
 @x
-          Estimated build time: &kdenlive5-time;
+          Estimated build time: &kdenlive-time;
 @y
-          Estimated build time: &kdenlive5-time;
+          Estimated build time: &kdenlive-time;
 @z
 
 @x
@@ -74,15 +74,15 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="mlt"/>, and
       <xref role="runtime" linkend="v4l-utils"/> (runtime)
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
-      <xref linkend="mlt"/>, and
+      <xref linkend="kf6-frameworks"/>,
+      <xref linkend="mlt"/>,
       <xref role="runtime" linkend="v4l-utils"/> (runtime)
     </para>
 @z
@@ -149,21 +149,19 @@
           mltpreview.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/doc/HTML/*/kdenlive,
-          $KF5_PREFIX/share/kdenlive, and
-          $KF5_PREFIX/share/kxmlgui5/kdenlive
+          $KF6_PREFIX/share/doc/HTML/*/kdenlive and
+          $KF6_PREFIX/share/kdenlive
         </seg>
 @y
         <seg>
-          kdenlive and kdenlive_render
+          kdenlive, kdenlive_render
         </seg>
         <seg>
           mltpreview.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/doc/HTML/*/kdenlive,
-          $KF5_PREFIX/share/kdenlive, and
-          $KF5_PREFIX/share/kxmlgui5/kdenlive
+          $KF6_PREFIX/share/doc/HTML/*/kdenlive,
+          $KF6_PREFIX/share/kdenlive
         </seg>
 @z
 

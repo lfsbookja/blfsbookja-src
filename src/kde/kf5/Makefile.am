@@ -4,7 +4,7 @@
 
 CHANGE_FILES = \
 	kf5.ch            \
-	kf5-frameworks.ch \
-	kf5-intro.ch
+	kf6-frameworks.ch \
+	kf6-intro.ch
 
 include $(top_srcdir)/build-aux/main.mk

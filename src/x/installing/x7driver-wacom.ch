@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY xorg-wacom-driver-buildsize     "8.8 MB (with tests)">
+  <!ENTITY xorg-wacom-driver-buildsize     "8.1 MB (with tests)">
   <!ENTITY xorg-wacom-driver-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY xorg-wacom-driver-buildsize     "8.8 MB (with tests)">
+  <!ENTITY xorg-wacom-driver-buildsize     "8.1 MB (with tests)">
   <!ENTITY xorg-wacom-driver-time          "0.1 SBU (with tests)">
 @z
 

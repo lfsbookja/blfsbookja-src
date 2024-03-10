@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kimageannotator-time          "0.5 SBU (Using parallelism=4)">
+  <!ENTITY kimageannotator-time          "0.6 SBU (Using parallelism=4)">
 @y
-  <!ENTITY kimageannotator-time          "0.5 SBU (Using parallelism=4)">
+  <!ENTITY kimageannotator-time          "0.6 SBU (Using parallelism=4)">
 @z
 
 @x
@@ -125,21 +125,21 @@
 @x
         <seg>None</seg>
         <seg>
-          libkImageAnnotator-Qt5.a
+          libkImageAnnotator.so
         </seg>
         <seg>
-          /usr/include/kImageAnnotator-Qt5,
-          /usr/lib/cmake/kImageAnnotator-Qt5, and
+          /usr/include/kImageAnnotator-Qt6,
+          /usr/lib/cmake/kImageAnnotator-Qt6, and
           /usr/share/kImageAnnotator
         </seg>
 @y
         <seg>&None;</seg>
         <seg>
-          libkImageAnnotator-Qt5.a
+          libkImageAnnotator.so
         </seg>
         <seg>
-          /usr/include/kImageAnnotator-Qt5,
-          /usr/lib/cmake/kImageAnnotator-Qt5,
+          /usr/include/kImageAnnotator-Qt6,
+          /usr/lib/cmake/kImageAnnotator-Qt6,
           /usr/share/kImageAnnotator
         </seg>
 @z

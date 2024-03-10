@@ -111,120 +111,61 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libfm-qt"/>,
-      (<xref linkend="lxqt-kwindowsystem"/> or
-       <xref role="nodep" linkend="kf5-frameworks"/>), and
+      <xref linkend="lxqt-kwindowsystem"/>, and
       <xref role="runtime" linkend="xdg-desktop-portal"/> (at runtime)
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="libfm-qt"/>,
-      (<xref linkend="lxqt-kwindowsystem"/> or
-       <xref role="nodep" linkend="kf5-frameworks"/>), and
+      <xref linkend="lxqt-kwindowsystem"/>,
       <xref role="runtime" linkend="xdg-desktop-portal"/> (at runtime)
     </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of xdg-desktop-portal-lxqt</title>
 @y
-  <sect2 role="installation">
     <title>Installation of xdg-desktop-portal-lxqt</title>
 @z
 
 @x
-    <para>
       Install <application>xdg-desktop-portal-lxqt</application> by running the
       following commands:
-    </para>
 @y
-    <para>
       Install <application>xdg-desktop-portal-lxqt</application> by running the
       following commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@y
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..       &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..       &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           one daemon in /usr/libexec
         </seg>
@@ -235,12 +176,7 @@ make</userinput></screen>
           /usr/share/xdg-desktop-portal (if no other
           <application>xdg-desktop-portal</application> backend is installed)
         </seg>
-      </seglistitem>
-    </segmentedlist>
-  </sect2>
-</sect1>
 @y
-      <seglistitem>
         <seg>
           one daemon in /usr/libexec
         </seg>
@@ -251,8 +187,4 @@ make</userinput></screen>
           /usr/share/xdg-desktop-portal (if no other
           <application>xdg-desktop-portal</application> backend is installed)
         </seg>
-      </seglistitem>
-    </segmentedlist>
-  </sect2>
-</sect1>
 @z

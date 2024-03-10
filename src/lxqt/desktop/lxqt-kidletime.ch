@@ -22,18 +22,6 @@
 @z
 
 @x
-        This package is extracted from the KF5 set of packages.
-        If <xref linkend="kf5-frameworks"/> is built, do <emphasis
-        role="bold">NOT</emphasis> also build this package as presented
-        here.
-@y
-        This package is extracted from the KF5 set of packages.
-        If <xref linkend="kf5-frameworks"/> is built, do <emphasis
-        role="bold">NOT</emphasis> also build this package as presented
-        here.
-@z
-
-@x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
     <bridgehead renderas="sect3">&PackageInformation;</bridgehead>

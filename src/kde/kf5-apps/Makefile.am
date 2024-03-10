@@ -16,6 +16,7 @@ CHANGE_FILES = \
 	libkcddb.ch    \
 	libkdcraw.ch   \
 	libkexiv2.ch   \
-	okular5.ch
+	okular5.ch     \
+	plasma-activities.ch
 
 include $(top_srcdir)/build-aux/main.mk

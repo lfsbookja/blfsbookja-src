@@ -11,11 +11,11 @@
 
 @x
       The <application>Breeze Icons</application> package contains the
-      default icons for <application>KDE Plasma 5</application> applications,
+      default icons for <application>KDE Plasma</application> applications,
       but it can be used for other window environments.
 @y
       The <application>Breeze Icons</application> package contains the
-      default icons for <application>KDE Plasma 5</application> applications,
+      default icons for <application>KDE Plasma</application> applications,
       but it can be used for other window environments.
 @z
 
@@ -99,43 +99,35 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="extra-cmake-modules"/> and
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="extra-cmake-modules"/> and
-      &qt5-deps;
+      <xref linkend="extra-cmake-modules"/>,
+      <xref linkend="qt6"/>
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="libxml2"/>, and
       <xref linkend="lxml"/>
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="kf5-frameworks"/>,
-      <xref linkend="libxml2"/>, and
+      <xref linkend="kf6-frameworks"/>,
+      <xref linkend="libxml2"/>,
       <xref linkend="lxml"/>
     </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of Breeze Icons</title>
 @y
-  <sect2 role="installation">
     <title>Installation of Breeze Icons</title>
 @z
 
@@ -190,46 +182,24 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr \
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <parameter>-DBUILD_TESTING=OFF</parameter>: This parameter disables
       building the testing framework, which requires some modules from
-      <xref linkend="kf5-frameworks"/>.
-    </para>
-  </sect2>
+      <xref linkend="kf6-frameworks"/>.
 @y
-    <para>
       <parameter>-DBUILD_TESTING=OFF</parameter>: This parameter disables
       building the testing framework, which requires some modules from
-      <xref linkend="kf5-frameworks"/>.
-    </para>
-  </sect2>
+      <xref linkend="kf6-frameworks"/>.
 @z
 
 @x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
@@ -271,16 +241,4 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr \
         </seg>
       </seglistitem>
     </segmentedlist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

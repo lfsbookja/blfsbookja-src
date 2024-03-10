@@ -4,27 +4,27 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kf5-buildsize     "2.5 GB (252 MB installed)">
-  <!ENTITY kf5-time          "7.4 SBU (using parallelism=4)">
+  <!ENTITY kf6-buildsize     "2.5 GB (252 MB installed)">
+  <!ENTITY kf6-time          "7.4 SBU (using parallelism=4)">
 @y
-  <!ENTITY kf5-buildsize     "2.5 GB（インストールは 252 MB）">
-  <!ENTITY kf5-time          "7.4 SBU（parallelism=4 利用）">
+  <!ENTITY kf6-buildsize     "2.5 GB（インストールは 252 MB）">
+  <!ENTITY kf6-time          "7.4 SBU（parallelism=4 利用）">
 @z
 
 @x
-  <title>Building KDE Frameworks 5 (KF5)</title>
+  <title>Building KDE Frameworks 6 (KF6)</title>
 @y
-  <title>Building KDE Frameworks 5 (KF5)</title>
+  <title>Building KDE Frameworks 6 (KF6)</title>
 @z
 
 @x
-    KDE Frameworks 5 is a collection of libraries based on top of Qt5 and
-    QML derived from the monolithic KDE 4 libraries. They can be used
-    independent of the KDE Display Environment (Plasma 5).
+    KDE Frameworks is a collection of libraries based on top of Qt6 and
+    QML derived from the previous KDE libraries. They can be used
+    independent of the KDE Display Environment (Plasma 6).
 @y
-    KDE Frameworks 5 is a collection of libraries based on top of Qt5 and
-    QML derived from the monolithic KDE 4 libraries. They can be used
-    independent of the KDE Display Environment (Plasma 5).
+    KDE Frameworks is a collection of libraries based on top of Qt6 and
+    QML derived from the previous KDE libraries. They can be used
+    independent of the KDE Display Environment (Plasma 6).
 @z
 
 @x
@@ -42,45 +42,45 @@
 @z
 
 @x
-        Download (HTTP): <ulink url="&kf5-download-http;"/>
+        Download (HTTP): <ulink url="&kf6-download-http;"/>
 @y
-        &Download; (HTTP): <ulink url="&kf5-download-http;"/>
+        &Download; (HTTP): <ulink url="&kf6-download-http;"/>
 @z
 
 @x
-        Download (FTP): <ulink url="&kf5-download-ftp;"/>
+        Download (FTP): <ulink url="&kf6-download-ftp;"/>
 @y
-        &Download; (FTP): <ulink url="&kf5-download-ftp;"/>
+        &Download; (FTP): <ulink url="&kf6-download-ftp;"/>
 @z
 
 @x
-        Download MD5 sum: &kf5-md5sum;
+        Download MD5 sum: &kf6-md5sum;
 @y
-        &Download; MD5 sum: &kf5-md5sum;
+        &Download; MD5 sum: &kf6-md5sum;
 @z
 
 @x
-        Download size: &kf5-size;
+        Download size: &kf6-size;
 @y
-        &DownloadSize;: &kf5-size;
+        &DownloadSize;: &kf6-size;
 @z
 
 @x
-        Estimated disk space required: &kf5-buildsize;
+        Estimated disk space required: &kf6-buildsize;
 @y
-        &Estimateddiskspacerequired;: &kf5-buildsize;
+        &Estimateddiskspacerequired;: &kf6-buildsize;
 @z
 
 @x
-        Estimated build time: &kf5-time;
+        Estimated build time: &kf6-time;
 @y
-        &Estimatedbuildtime;: &kf5-time;
+        &Estimatedbuildtime;: &kf6-time;
 @z
 
 @x
-  <bridgehead renderas="sect3">KF5 Dependencies</bridgehead>
+  <bridgehead renderas="sect3">KF6 Dependencies</bridgehead>
 @y
-  <bridgehead renderas="sect3">&Dependencies1;KF5&Dependencies2;</bridgehead>
+  <bridgehead renderas="sect3">&Dependencies1;KF6&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -136,10 +136,8 @@
   <para role="recommended">
     <xref linkend="aspell"/> (Dictionary backend for Sonnet),
     <xref linkend="avahi"/> (DNS-SD backend for KDNSSD),
-    <xref linkend="libdbusmenu-qt"/> (built with qt5),
     <xref linkend="ModemManager"/> (needed to build ModemManager-Qt),
-    <xref linkend="NetworkManager"/> (needed to build NetworkManager-Qt),
-    <xref linkend="pcre"/>, and
+    <xref linkend="NetworkManager"/> (needed to build NetworkManager-Qt), and
     <xref linkend="polkit-qt"/> (Authentication backend for KAuth)
   </para>
 @y
@@ -147,20 +145,18 @@
   <para role="recommended">
     <xref linkend="aspell"/> (Dictionary backend for Sonnet),
     <xref linkend="avahi"/> (DNS-SD backend for KDNSSD),
-    <xref linkend="libdbusmenu-qt"/> (built with qt5),
     <xref linkend="ModemManager"/> (needed to build ModemManager-Qt),
     <xref linkend="NetworkManager"/> (needed to build NetworkManager-Qt),
-    <xref linkend="pcre"/>, and
     <xref linkend="polkit-qt"/> (Authentication backend for KAuth)
   </para>
 @z
 
 @x role="recommended"
     Furthermore, the instructions below assume that the environment has been
-    set up as described in <xref linkend="kf5-intro"/>.
+    set up as described in <xref linkend="kf6-intro"/>.
 @y
     Furthermore, the instructions below assume that the environment has been
-    set up as described in <xref linkend="kf5-intro"/>.
+    set up as described in <xref linkend="kf6-intro"/>.
 @z
 
 @x
@@ -278,18 +274,6 @@
 @z
 
 @x
-  <bridgehead renderas="sect4">Optional dependency for kdewebkit</bridgehead>
-  <para role="optional">
-    <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">QtWebkit</ulink>
-  </para>
-@y
-  <bridgehead renderas="sect4">Optional dependency for kdewebkit</bridgehead>
-  <para role="optional">
-    <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">QtWebkit</ulink>
-  </para>
-@z
-
-@x
   <bridgehead renderas="sect4">Optional dictionary backends for Sonnet</bridgehead>
   <para role="optional">
     <ulink url="http://hspell.ivrix.org.il/">Hspell</ulink> and
@@ -338,14 +322,7 @@
     The extra-cmake-modules entry has been commented out
     because it was built earlier in the <xref linkend="kde-prereq"/>. 
     
-    The ki18n-5.115.0 package has been replaced by ki18n-5.115.1.
-
-    The icon packages are covered separately at <xref linkend="breeze-icons"/> 
-    and <xref linkend="oxygen-icons"/>.  
-    
-    The kdewebkit package may be built if the external package
-    <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">
-    QtWebkit</ulink> has been built.
+    The icon package is covered separately at <xref linkend="breeze-icons"/>.
 @y
     In the above list, notice that some files have been commented out with
     a hash (#) character. 
@@ -353,14 +330,7 @@
     The extra-cmake-modules entry has been commented out
     because it was built earlier in the <xref linkend="kde-prereq"/>. 
     
-    The ki18n-5.115.0 package has been replaced by ki18n-5.115.1.
-
-    The icon packages are covered separately at <xref linkend="breeze-icons"/> 
-    and <xref linkend="oxygen-icons"/>.  
-    
-    The kdewebkit package may be built if the external package
-    <ulink url="https://download.qt.io/community_releases/5.9/5.9.0-final/">
-    QtWebkit</ulink> has been built.
+    The icon package is covered separately at <xref linkend="breeze-icons"/>.
 @z
 
 @x
@@ -371,12 +341,12 @@
 
 @x
         If installing in <filename class="directory">/opt</filename> and there
-        is an existing /opt/kf5 either as a regular directory or a symbolic
+        is an existing /opt/kf6 either as a regular directory or a symbolic
         link, it should be reinitialized (as <systemitem class="username">
         root</systemitem>):
 @y
         If installing in <filename class="directory">/opt</filename> and there
-        is an existing /opt/kf5 either as a regular directory or a symbolic
+        is an existing /opt/kf6 either as a regular directory or a symbolic
         link, it should be reinitialized (as <systemitem class="username">
         root</systemitem>):
 @z
@@ -407,11 +377,11 @@
 
 @x revision="sysv"
       Useless systemd units have been installed in
-      <filename class="directory">$KF5_PREFIX/lib</filename>. Remove
+      <filename class="directory">$KF6_PREFIX/lib</filename>. Remove
       them now (as &root;):
 @y
       Useless systemd units have been installed in
-      <filename class="directory">$KF5_PREFIX/lib</filename>. Remove
+      <filename class="directory">$KF6_PREFIX/lib</filename>. Remove
       them now (as &root;):
 @z
 
@@ -432,10 +402,10 @@
 @z
 
 @x
-      <parameter>-DCMAKE_PREFIX_PATH=$QT5DIR</parameter>: This switch is used
+      <parameter>-DCMAKE_PREFIX_PATH=$QT6DIR</parameter>: This switch is used
       to allow cmake to find the proper Qt libraries.
 @y
-      <parameter>-DCMAKE_PREFIX_PATH=$QT5DIR</parameter>: This switch is used
+      <parameter>-DCMAKE_PREFIX_PATH=$QT6DIR</parameter>: This switch is used
       to allow cmake to find the proper Qt libraries.
 @z
 
@@ -472,293 +442,27 @@
 @z
 
 @x
-        <seg>
-          balooctl,
-          baloo_file,
-          baloo_file_extractor,
-          baloosearch,
-          balooshow,
-          checkXML5,
-          depdiagram-generate,
-          depdiagram-generate-all,
-          depdiagram-prepare,
-          desktoptojson,
-          gentrigrams,
-          kactivities-cli,
-          kapidox_generate,
-          kate-syntax-highlighter,
-          kbuildsycoca5,
-          kcookiejar5,
-          kdebugdialog5,
-          kded5,
-          kdeinit5,
-          kdeinit5_shutdown,
-          kdeinit5_wrapper,
-          kf5-config,
-          kf5kross,
-          kgendesignerplugin,
-          kglobalaccel5,
-          kiconfinder5,
-          kjs5,
-          kjscmd5,
-          kjsconsole,
-          knewstuff-dialog,
-          kpackagelauncherqml,
-          kpackagetool5,
-          kquitapp5,
-          kreadconfig5,
-          kshell5,
-          ktelnetservice5,
-          ktrash5,
-          kwalletd5,
-          kwallet-query,
-          kwrapper5,
-          kwriteconfig5,
-          meinproc5,
-          parsetrigrams,
-          plasmapkg2,
-          preparetips5,
           protocoltojson, and
-          solid-hardware5
-        </seg>
-        <seg>
-          libkdeinit5_klauncher.so,
-          libKF5Activities.so,
-          libKF5ActivitiesStats.so,
-          libKF5Archive.so,
-          libKF5Attica.so,
-          libKF5AuthCore.so,
-          libKF5Auth.so,
-          libKF5Baloo.so,
-          libKF5BluezQt.so,
-          libKF5Bookmarks.so,
-          libKF5CalendarCore.so,
-          libKF5CalendarEvents.so,
-          libKF5Codecs.so,
-          libKF5Completion.so,
-          libKF5ConfigCore.so,
-          libKF5ConfigGui.so,
-          libKF5ConfigWidgets.so,
-          libKF5Contacts.so,
-          libKF5CoreAddons.so,
-          libKF5Crash.so,
-          libKF5DAV.so,
-          libKF5DBusAddons.so,
-          libKF5Declarative.so,
-          libKF5DNSSD.so,
-          libKF5DocTools.so,
-          libKF5Emoticons.so,
-          libKF5FileMetaData.so,
-          libKF5GlobalAccel.so,
-          libKF5GuiAddons.so,
-          libKF5Holidays.so,
-          libKF5I18n.so,
-          libKF5IconThemes.so,
-          libKF5IdleTime.so,
-          libKF5ItemModels.so,
-          libKF5ItemViews.so,
-          libKF5JobWidgets.so,
-          libKF5JSApi.so,
-          libKF5JsEmbed.so,
-          libKF5JS.so,
-          libKF5KCMUtils.so,
-          libKF5KDELibs4Support.so,
-          libKF5KHtml.so,
-          libKF5KIOCore.so,
-          libKF5KIOFileWidgets.so,
-          libKF5KIOGui.so,
-          libKF5KIONTLM.so,
-          libKF5KIOWidgets.so,
-          libKF5Kirigami2.so,
-          libKF5KrossCore.so,
-          libKF5KrossUi.so,
-          libKF5MediaPlayer.so,
-          libKF5NetworkManagerQt.so,
-          libKF5NewStuffCore.so,
-          libKF5NewStuff.so,
-          libKF5Notifications.so,
-          libKF5NotifyConfig.so,
-          libKF5Package.so,
-          libKF5Parts.so,
-          libKF5PeopleBackend.so,
-          libKF5People.so,
-          libKF5PeopleWidgets.so,
-          libKF5PlasmaQuick.so,
-          libKF5Plasma.so,
-          libKF5Plotting.so,
-          libKF5Prison.so,
-          libKF5Pty.so,
-          libKF5Purpose.so,
-          libKF5PurposeWidgets.so,
-          libKF5QuickAddons.so,
-          libKF5Runner.so,
-          libKF5Service.so,
-          libKF5Solid.so,
-          libKF5SonnetCore.so,
-          libKF5SonnetUi.so,
-          libKF5Style.so,
-          libKF5Su.so,
-          libKF5SyntaxHighlighting.so,
-          libKF5TextEditor.so,
-          libKF5TextWidgets.so,
-          libKF5ThreadWeaver.so,
-          libKF5UnitConversion.so,
-          libKF5Wallet.so,
-          libKF5WaylandClient.so,
-          libKF5WaylandServer.so,
-          libKF5WidgetsAddons.so,
-          libKF5WindowSystem.so,
-          libKF5XmlGui.so,
-          libKF5XmlRpcClient.so, and
-          libkwalletbackend5.so
-        </seg>
-        <seg>
-          /opt/kf5 (symlink to /opt/kf5-&kf5-version;) if installing in /opt
+          solid-hardware6
         </seg>
 @y
-        <seg>
-          balooctl,
-          baloo_file,
-          baloo_file_extractor,
-          baloosearch,
-          balooshow,
-          checkXML5,
-          depdiagram-generate,
-          depdiagram-generate-all,
-          depdiagram-prepare,
-          desktoptojson,
-          gentrigrams,
-          kactivities-cli,
-          kapidox_generate,
-          kate-syntax-highlighter,
-          kbuildsycoca5,
-          kcookiejar5,
-          kdebugdialog5,
-          kded5,
-          kdeinit5,
-          kdeinit5_shutdown,
-          kdeinit5_wrapper,
-          kf5-config,
-          kf5kross,
-          kgendesignerplugin,
-          kglobalaccel5,
-          kiconfinder5,
-          kjs5,
-          kjscmd5,
-          kjsconsole,
-          knewstuff-dialog,
-          kpackagelauncherqml,
-          kpackagetool5,
-          kquitapp5,
-          kreadconfig5,
-          kshell5,
-          ktelnetservice5,
-          ktrash5,
-          kwalletd5,
-          kwallet-query,
-          kwrapper5,
-          kwriteconfig5,
-          meinproc5,
-          parsetrigrams,
-          plasmapkg2,
-          preparetips5,
           protocoltojson,
-          solid-hardware5
+          solid-hardware6
         </seg>
-        <seg>
-          libkdeinit5_klauncher.so,
-          libKF5Activities.so,
-          libKF5ActivitiesStats.so,
-          libKF5Archive.so,
-          libKF5Attica.so,
-          libKF5AuthCore.so,
-          libKF5Auth.so,
-          libKF5Baloo.so,
-          libKF5BluezQt.so,
-          libKF5Bookmarks.so,
-          libKF5CalendarCore.so,
-          libKF5CalendarEvents.so,
-          libKF5Codecs.so,
-          libKF5Completion.so,
-          libKF5ConfigCore.so,
-          libKF5ConfigGui.so,
-          libKF5ConfigWidgets.so,
-          libKF5Contacts.so,
-          libKF5CoreAddons.so,
-          libKF5Crash.so,
-          libKF5DAV.so,
-          libKF5DBusAddons.so,
-          libKF5Declarative.so,
-          libKF5DNSSD.so,
-          libKF5DocTools.so,
-          libKF5Emoticons.so,
-          libKF5FileMetaData.so,
-          libKF5GlobalAccel.so,
-          libKF5GuiAddons.so,
-          libKF5Holidays.so,
-          libKF5I18n.so,
-          libKF5IconThemes.so,
-          libKF5IdleTime.so,
-          libKF5ItemModels.so,
-          libKF5ItemViews.so,
-          libKF5JobWidgets.so,
-          libKF5JSApi.so,
-          libKF5JsEmbed.so,
-          libKF5JS.so,
-          libKF5KCMUtils.so,
-          libKF5KDELibs4Support.so,
-          libKF5KHtml.so,
-          libKF5KIOCore.so,
-          libKF5KIOFileWidgets.so,
-          libKF5KIOGui.so,
-          libKF5KIONTLM.so,
-          libKF5KIOWidgets.so,
-          libKF5Kirigami2.so,
-          libKF5KrossCore.so,
-          libKF5KrossUi.so,
-          libKF5MediaPlayer.so,
-          libKF5NetworkManagerQt.so,
-          libKF5NewStuffCore.so,
-          libKF5NewStuff.so,
-          libKF5Notifications.so,
-          libKF5NotifyConfig.so,
-          libKF5Package.so,
-          libKF5Parts.so,
-          libKF5PeopleBackend.so,
-          libKF5People.so,
-          libKF5PeopleWidgets.so,
-          libKF5PlasmaQuick.so,
-          libKF5Plasma.so,
-          libKF5Plotting.so,
-          libKF5Prison.so,
-          libKF5Pty.so,
-          libKF5Purpose.so,
-          libKF5PurposeWidgets.so,
-          libKF5QuickAddons.so,
-          libKF5Runner.so,
-          libKF5Service.so,
-          libKF5Solid.so,
-          libKF5SonnetCore.so,
-          libKF5SonnetUi.so,
-          libKF5Style.so,
-          libKF5Su.so,
-          libKF5SyntaxHighlighting.so,
-          libKF5TextEditor.so,
-          libKF5TextWidgets.so,
-          libKF5ThreadWeaver.so,
-          libKF5UnitConversion.so,
-          libKF5Wallet.so,
-          libKF5WaylandClient.so,
-          libKF5WaylandServer.so,
-          libKF5WidgetsAddons.so,
-          libKF5WindowSystem.so,
-          libKF5XmlGui.so,
-          libKF5XmlRpcClient.so,
-          libkwalletbackend5.so
+@z
+@x
+          libKF6XmlRpcClient.so, and
+          libkwalletbackend6.so
         </seg>
-        <seg>
-          /opt/kf5 (symlink to /opt/kf5-&kf5-version;) if installing in /opt
+@y
+          libKF6XmlRpcClient.so,
+          libkwalletbackend6.so
         </seg>
+@z
+@x
+          /opt/kf6 (symlink to /opt/kf6-&kf6-version;) if installing in /opt
+@y
+          /opt/kf6 (symlink to /opt/kf6-&kf6-version;) if installing in /opt
 @z
 
 @x
@@ -870,9 +574,9 @@
 @z
 
 @x kjsconsole
-            is a console for <command>kjs5</command>
+            is a console for <command>kjs6</command>
 @y
-            is a console for <command>kjs5</command>
+            is a console for <command>kjs6</command>
 @z
 
 @x kpackagelauncherqml

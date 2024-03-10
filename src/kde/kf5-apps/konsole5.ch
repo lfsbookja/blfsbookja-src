@@ -10,10 +10,10 @@
 @z
 
 @x
-      The <application>Konsole</application> package is a KF5 based terminal
+      The <application>Konsole</application> package is a KF6 based terminal
       emulator.
 @y
-      <application>Konsole</application> は KF5 ベースの端末エミュレーターを提供します。
+      <application>Konsole</application> は KF6 ベースの端末エミュレーターを提供します。
 @z
 
 @x
@@ -23,39 +23,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&konsole5-download-http;"/>
+          Download (HTTP): <ulink url="&konsole-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&konsole5-download-http;"/>
+          &Download; (HTTP): <ulink url="&konsole-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&konsole5-download-ftp;"/>
+          Download (FTP): <ulink url="&konsole-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&konsole5-download-ftp;"/>
+          &Download; (FTP): <ulink url="&konsole-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &konsole5-md5sum;
+          Download MD5 sum: &konsole-md5sum;
 @y
-          &Download; MD5 sum: &konsole5-md5sum;
+          &Download; MD5 sum: &konsole-md5sum;
 @z
 
 @x
-          Download size: &konsole5-size;
+          Download size: &konsole-size;
 @y
-          &DownloadSize;: &konsole5-size;
+          &DownloadSize;: &konsole-size;
 @z
 
 @x
-          Estimated disk space required: &konsole5-buildsize;
+          Estimated disk space required: &konsole-buildsize;
 @y
-          &Estimateddiskspacerequired;: &konsole5-buildsize;
+          &Estimateddiskspacerequired;: &konsole-buildsize;
 @z
 
 @x
-          Estimated build time: &konsole5-time;
+          Estimated build time: &konsole-time;
 @y
-          &Estimatedbuildtime;: &konsole5-time;
+          &Estimatedbuildtime;: &konsole-time;
 @z
 
 @x
@@ -67,12 +67,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @z
 
@@ -122,24 +122,24 @@
           konsole and konsoleprofile
         </seg>
         <seg>
-          libkdeinit5_konsole.so and libkonsoleprivate.so
+          libkdeinit6_konsole.so and libkonsoleprivate.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/doc/HTML/*/konsole,
-          $KF5_PREFIX/share/konsole, and
-          $KF5_PREFIX/share/kxmlgui5/konsole
+          $KF6_PREFIX/share/doc/HTML/*/konsole,
+          $KF6_PREFIX/share/konsole, and
+          $KF6_PREFIX/share/kxmlgui6/konsole
         </seg>
 @y
         <seg>
           konsole, konsoleprofile
         </seg>
         <seg>
-          libkdeinit5_konsole.so, libkonsoleprivate.so
+          libkdeinit6_konsole.so, libkonsoleprivate.so
         </seg>
         <seg>
-          $KF5_PREFIX/share/doc/HTML/*/konsole,
-          $KF5_PREFIX/share/konsole, and
-          $KF5_PREFIX/share/kxmlgui5/konsole
+          $KF6_PREFIX/share/doc/HTML/*/konsole,
+          $KF6_PREFIX/share/konsole,
+          $KF6_PREFIX/share/kxmlgui6/konsole
         </seg>
 @z
 

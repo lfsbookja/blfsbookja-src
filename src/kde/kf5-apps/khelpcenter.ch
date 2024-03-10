@@ -74,16 +74,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="grantlee"/>,
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="libxml2"/>, and
       <xref linkend="xapian"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="grantlee"/>,
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="xapian"/>
     </para>
@@ -150,31 +148,29 @@
           khelpcenter
         </seg>
         <seg>
-          libkdeinit5_khelpcenter.so
+          None
         </seg>
         <seg>
-          $KF5_PREFIX/share/khelpcenter,
-          $KF5_PREFIX/share/kxmlgui5/khelpcenter, and
-          $KF5_PREFIX/share/doc/HTML/*/{khelpcenter,fundamentals,onlinehelp}
+          $KF6_PREFIX/share/khelpcenter,
+          $KF6_PREFIX/share/doc/HTML/*/{khelpcenter,fundamentals,onlinehelp}
         </seg>
 @y
         <seg>
           khelpcenter
         </seg>
         <seg>
-          libkdeinit5_khelpcenter.so
+          &None;
         </seg>
         <seg>
-          $KF5_PREFIX/share/khelpcenter,
-          $KF5_PREFIX/share/kxmlgui5/khelpcenter, and
-          $KF5_PREFIX/share/doc/HTML/*/{khelpcenter,fundamentals,onlinehelp}
+          $KF6_PREFIX/share/khelpcenter,
+          $KF6_PREFIX/share/doc/HTML/*/{khelpcenter,fundamentals,onlinehelp}
         </seg>
 @z
 
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x khelpcenter

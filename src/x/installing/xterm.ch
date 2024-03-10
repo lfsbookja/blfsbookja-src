@@ -94,7 +94,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="emacs"/>, <!-- looks for ctags/etags -->
-      <xref linkend="pcre"/> or <xref linkend="pcre2"/>,
+      <xref linkend="pcre2"/>,
       <xref linkend="valgrind"/> and
       <ulink url="https://www.nongnu.org/man2html/">man2html</ulink>
     </para>
@@ -102,7 +102,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="emacs"/>, <!-- looks for ctags/etags -->
-      <xref linkend="pcre"/> or <xref linkend="pcre2"/>,
+      <xref linkend="pcre2"/>,
       <xref linkend="valgrind"/>,
       <ulink url="https://www.nongnu.org/man2html/">man2html</ulink>
     </para>

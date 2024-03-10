@@ -67,14 +67,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/> and
-      <xref linkend="libmusicbrainz5"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
-      <xref linkend="libmusicbrainz5"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @z
 
@@ -118,26 +116,24 @@
           None
         </seg>
         <seg>
-          libKF5Cddb.so and 
-          kcm_cddb.so 
+          libKCddb6.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KCddb and 
-          $KF5_PREFIX/lib/cmake/KF5Cddb
-          $KF5_PREFIX/share/doc/HTML/*/kcontrol
+          $KF6_PREFIX/include/KCddb6
+          $KF6_PREFIX/lib/cmake/KCddb6
+          $KF6_PREFIX/share/doc/HTML/*/kcontrol
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libKF5Cddb.so,
-          kcm_cddb.so 
+          libKCddb6.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KCddb,
-          $KF5_PREFIX/lib/cmake/KF5Cddb,
-          $KF5_PREFIX/share/doc/HTML/*/kcontrol
+          $KF6_PREFIX/include/KCddb6
+          $KF6_PREFIX/lib/cmake/KCddb6
+          $KF6_PREFIX/share/doc/HTML/*/kcontrol
         </seg>
 @z
 

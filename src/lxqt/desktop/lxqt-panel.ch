@@ -10,10 +10,8 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to lxqt-panel</title>
 @y
-  <sect2 role="package">
     <title>Introduction to lxqt-panel</title>
 @z
 
@@ -112,8 +110,7 @@
       <xref linkend="liblxqt"/>,
       <xref linkend="lxqt-globalkeys"/>,
       <xref linkend="lxqt-menu-data"/>,
-      (<xref linkend="lxqt-solid"/> or
-       <xref role="nodep" linkend="kf5-frameworks"/>), and
+      <xref linkend="lxqt-solid"/>, and 
       <xref linkend="menu-cache"/>
     </para>
 @y
@@ -123,8 +120,7 @@
       <xref linkend="liblxqt"/>,
       <xref linkend="lxqt-globalkeys"/>,
       <xref linkend="lxqt-menu-data"/>,
-      (<xref linkend="lxqt-solid"/> or
-       <xref role="nodep" linkend="kf5-frameworks"/>), and
+      <xref linkend="lxqt-solid"/>,
       <xref linkend="menu-cache"/>
     </para>
 @z
@@ -154,108 +150,34 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of lxqt-panel</title>
 @y
-  <sect2 role="installation">
     <title>Installation of lxqt-panel</title>
 @z
 
 @x
-    <para>
-      If <xref linkend="kf5-frameworks"/> was not installed in /usr, help the
-      code find some headers that it needs:
-    </para>
-@y
-    <para>
-      If <xref linkend="kf5-frameworks"/> was not installed in /usr, help the
-      code find some headers that it needs:
-    </para>
-@z
-
-@x
-<screen role="pre"><userinput>export CXXFLAGS+="-I $KF5_PREFIX/include"
-export CFLAGS+="-I $KF5_PREFIX/include"</userinput></screen>
-@y
-<screen role="pre"><userinput>export CXXFLAGS+="-I $KF5_PREFIX/include"
-export CFLAGS+="-I $KF5_PREFIX/include"</userinput></screen>
-@z
-
-@x
-    <para>
       Install <application>lxqt-panel</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>lxqt-panel</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 

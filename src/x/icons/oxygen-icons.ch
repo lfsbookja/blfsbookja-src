@@ -103,119 +103,59 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="extra-cmake-modules"/> and
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="extra-cmake-modules"/> and
-      &qt5-deps;
+      <xref linkend="extra-cmake-modules"/>,
+      <xref linkend="qt6"/>
     </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of oxygen-icons</title>
 @y
-  <sect2 role="installation">
     <title>Installation of oxygen-icons</title>
 @z
 
 @x
-    <para>
       First, enable scalable icons:
-    </para>
 @y
-    <para>
       First, enable scalable icons:
-    </para>
 @z
 
 @x
-<screen><userinput>sed -i '/( oxygen/ s/)/scalable )/' CMakeLists.txt</userinput></screen>
-@y
-<screen><userinput>sed -i '/( oxygen/ s/)/scalable )/' CMakeLists.txt</userinput></screen>
-@z
-
-@x
-    <para>
       Install <application>oxygen-icons</application> by running
       the following commands:
-    </para>
 @y
-    <para>
       Install <application>oxygen-icons</application> by running
       the following commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@y
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr -Wno-dev ..</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr -Wno-dev ..</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
@@ -235,16 +175,4 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr -Wno-dev ..</userinput></screen>
         <seg>/usr/share/icons/oxygen</seg>
       </seglistitem>
     </segmentedlist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

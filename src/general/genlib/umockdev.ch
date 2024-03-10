@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY umockdev-buildsize     "6.8 MB (with tests)">
-  <!ENTITY umockdev-time          "0.2 SBU (with tests)">
+  <!ENTITY umockdev-buildsize     "9.7 MB (with tests)">
+  <!ENTITY umockdev-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY umockdev-buildsize     "6.8 MB (テスト込み)">
-  <!ENTITY umockdev-time          "0.2 SBU (テスト込み)">
+  <!ENTITY umockdev-buildsize     "9.7 MB (テスト込み)">
+  <!ENTITY umockdev-time          "0.1 SBU (テスト込み)">
 @z
 
 @x

@@ -18,11 +18,11 @@
 @x
       The <application>Extra Cmake Modules</application> package contains
       extra <application>CMake</application> modules used by
-      <application>KDE Frameworks 5</application> and other packages.
+      <application>KDE Frameworks</application> and other packages.
 @y
       The <application>Extra Cmake Modules</application> package contains
       extra <application>CMake</application> modules used by
-      <application>KDE Frameworks 5</application> and other packages.
+      <application>KDE Frameworks</application> and other packages.
 @z
 
 @x
@@ -88,16 +88,20 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="sphinx"/> (for building documentation) and
+      <xref linkend="sphinx"/> (for building documentation),
       <ulink url="https://pypi.org/project/PyQt5/">PyQt</ulink> (experimental
-      support for building KDE Python bindings)
+      support for building KDE Python bindings), and
+      <ulink url="https://github.com/fsfe/reuse-tool/">ReuseTool</ulink> (for running 
+      internal tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="sphinx"/> (for building documentation) and
+      <xref linkend="sphinx"/> (for building documentation),
       <ulink url="https://pypi.org/project/PyQt5/">PyQt</ulink> (experimental
-      support for building KDE Python bindings)
+      support for building KDE Python bindings),
+      <ulink url="https://github.com/fsfe/reuse-tool/">ReuseTool</ulink> (for running 
+      internal tests)
     </para>
 @z
 
@@ -121,11 +125,11 @@
 @z
 
 @x
-      Unlike other KF5 packages, this module is installed in /usr because
-      it can be used by some non-KF5 packages.
+      Unlike other KF6 packages, this module is installed in /usr because
+      it can be used by some non-KF6 packages.
 @y
-      Unlike other KF5 packages, this module is installed in /usr because
-      it can be used by some non-KF5 packages.
+      Unlike other KF6 packages, this module is installed in /usr because
+      it can be used by some non-KF6 packages.
 @z
 
 @x

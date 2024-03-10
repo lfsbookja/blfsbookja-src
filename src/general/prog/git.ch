@@ -295,22 +295,10 @@
 
 @x
       <option>--with-libpcre2</option>: Use this switch if
-      <application>PCRE2</application> is installed and has been built with
-      the non-default JIT enabled.
+      <application>PCRE2</application> is installed.
 @y
       <option>--with-libpcre2</option>: Use this switch if
-      <application>PCRE2</application> is installed and has been built with
-      the non-default JIT enabled.
-@z
-
-@x
-      <option>--with-libpcre1</option>: As an alternative to PCRE2, use this
-      switch if the deprecated <application>PCRE</application> is installed
-      and has been built with the non-default JIT enabled.
-@y
-      <option>--with-libpcre1</option>: As an alternative to PCRE2, use this
-      switch if the deprecated <application>PCRE</application> is installed
-      and has been built with the non-default JIT enabled.
+      <application>PCRE2</application> is installed.
 @z
 
 @x

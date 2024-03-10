@@ -74,13 +74,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/> and
+      <xref linkend="kf6-frameworks"/> and
       <xref linkend="libraw"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>,
+      <xref linkend="kf6-frameworks"/>,
       <xref linkend="libraw"/>
     </para>
 @z
@@ -131,21 +131,21 @@
           None
         </seg>
         <seg>
-          libKF5KDcraw.so
+          libKDcrawQt6.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KDCRAW and
-          $KF5_PREFIX/lib/cmake/KF5KDcraw
+          $KF5_PREFIX/include/KDcrawQt6 and
+          $KF5_PREFIX/lib/cmake/KDcrawQt6
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libKF5KDcraw.so
+          libKDcrawQt6.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/KF5/KDCRAW,
-          $KF5_PREFIX/lib/cmake/KF5KDcraw
+          $KF5_PREFIX/include/KDcrawQt6,
+          $KF5_PREFIX/lib/cmake/KDcrawQt6
         </seg>
 @z

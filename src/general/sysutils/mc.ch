@@ -110,7 +110,6 @@
       <xref linkend="gpm"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libssh2"/>,
-      <xref linkend="pcre"/>,
       <xref linkend="pcre2"/>,
       <xref linkend="ruby"/>,
       <!--<xref linkend="samba"/>,-->
@@ -125,7 +124,6 @@
       <xref linkend="gpm"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libssh2"/>,
-      <xref linkend="pcre"/>,
       <xref linkend="pcre2"/>,
       <xref linkend="ruby"/>,
       <!--<xref linkend="samba"/>,-->
@@ -189,13 +187,11 @@
 @x
       <option>--with-search-engine=pcre2</option>: Use this switch if you would
       prefer to use <xref linkend="pcre2" role="nodep"/> instead of GLib for
-      the built-in search engine. Alternatively, you can pass 'pcre' instead of
-      'pcre2' if you prefer to use <xref linkend="pcre" role="nodep"/>.
+      the built-in search engine.
 @y
       <option>--with-search-engine=pcre2</option>: Use this switch if you would
       prefer to use <xref linkend="pcre2" role="nodep"/> instead of GLib for
-      the built-in search engine. Alternatively, you can pass 'pcre' instead of
-      'pcre2' if you prefer to use <xref linkend="pcre" role="nodep"/>.
+      the built-in search engine.
 @z
 
 @x

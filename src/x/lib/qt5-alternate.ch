@@ -42,33 +42,25 @@
 @z
 
 @x
-    <important>
-      <para>
          The full <application>qt5</application> package consists of 43 separate
          components. These instructions use a small subset of the full
          <application>qt5</application> installation instructions above.
          They cover most, but not all, of the components needed to build
          packages in BLFS. This page, and the next, are provided to
          reduce the amount of time, space, and dependencies needed
-         to build these packages. They are not recommended if you will build
-         the <xref linkend="kf5-frameworks"/> based <xref linkend="plasma5-build"/> desktop
-         environment.
-      </para>
-    </important>
+         to build these packages. <!--They are not recommended if you will build
+         the <xref linkend="kf5- frameworks"/> based <xref linkend="plasma5-build"/> desktop
+         environment.-->
 @y
-    <important>
-      <para>
          The full <application>qt5</application> package consists of 43 separate
          components. These instructions use a small subset of the full
          <application>qt5</application> installation instructions above.
          They cover most, but not all, of the components needed to build
          packages in BLFS. This page, and the next, are provided to
          reduce the amount of time, space, and dependencies needed
-         to build these packages. They are not recommended if you will build
-         the <xref linkend="kf5-frameworks"/> based <xref linkend="plasma5-build"/> desktop
-         environment.
-      </para>
-    </important>
+         to build these packages. <!--They are not recommended if you will build
+         the <xref linkend="kf5- frameworks"/> based <xref linkend="plasma5-build"/> desktop
+         environment.-->
 @z
 
 @x

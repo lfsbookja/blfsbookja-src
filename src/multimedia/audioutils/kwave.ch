@@ -10,10 +10,10 @@
 @z
 
 @x
-      The <application>KWave</application> package contains a KF5 based Sound
+      The <application>KWave</application> package contains a KDE Frameworks based Sound
       Editor application.
 @y
-      <application>KWave</application> パッケージは KF5 ベースのサウンドエディターアプリケーションを提供します。
+      <application>KWave</application> パッケージは KDE フレームワークベースのサウンドエディターアプリケーションを提供します。
 @z
 
 @x
@@ -68,17 +68,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="audiofile"/>,
-      <xref linkend="fftw"/>, 
+      <xref linkend="fftw"/>,
       <xref linkend="id3lib"/>, and
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="audiofile"/>,
-      <xref linkend="fftw"/>, 
+      <xref linkend="fftw"/>,
       <xref linkend="id3lib"/>,
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>
     </para>
 @z
 
@@ -158,28 +158,28 @@
           kwave
         </seg>
         <seg>
-          libkwave.so, 
+          libkwave.so,
           libkwavegui.so, and
-          29 plugins
+          30 plugins
         </seg>
         <seg>
-          $KF5_PREFIX/lib/plugins/kwave,
-          $KF5_PREFIX/share/kwave,
-          $KF5_PREFIX/share/doc/HTML/*/kwave
+          $KF6_PREFIX/lib/plugins/kwave,
+          $KF6_PREFIX/share/kwave,
+          $KF6_PREFIX/share/doc/HTML/*/kwave
         </seg>
 @y
         <seg>
           kwave
         </seg>
         <seg>
-          libkwave.so, 
+          libkwave.so,
           libkwavegui.so,
-          29 個のプラグイン
+          30 個のプラグイン
         </seg>
         <seg>
-          $KF5_PREFIX/lib/plugins/kwave,
-          $KF5_PREFIX/share/kwave,
-          $KF5_PREFIX/share/doc/HTML/*/kwave
+          $KF6_PREFIX/lib/plugins/kwave,
+          $KF6_PREFIX/share/kwave,
+          $KF6_PREFIX/share/doc/HTML/*/kwave
         </seg>
 @z
 
@@ -190,7 +190,7 @@
 @z
 
 @x kwave
-            is a sound editor built on the KDE Frameworks 5
+            is a sound editor built on the KDE Frameworks
 @y
-            KDE フレームワーク 5 上にて構築されているサウンドエディター。
+            KDE フレームワーク 上にて構築されているサウンドエディター。
 @z

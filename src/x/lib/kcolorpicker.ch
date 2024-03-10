@@ -77,13 +77,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cmake"/> and
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>,
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @z
 
@@ -131,7 +131,7 @@
 @x
         <seg>None</seg>
         <seg>
-          libkColorPicker.a
+          libkColorPicker.so
         </seg>
         <seg>
           /usr/lib/cmake/kColorPicker
@@ -139,7 +139,7 @@
 @y
         <seg>&None;</seg>
         <seg>
-          libkColorPicker.a
+          libkColorPicker.so
         </seg>
         <seg>
           /usr/lib/cmake/kColorPicker

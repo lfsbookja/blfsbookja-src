@@ -85,7 +85,6 @@ CHANGE_FILES = \
 	nodejs.ch                \
 	npth.ch                  \
 	nspr.ch                  \
-	pcre.ch                  \
 	pcre2.ch                 \
 	popt.ch                  \
 	qca.ch                   \

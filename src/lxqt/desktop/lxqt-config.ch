@@ -10,10 +10,8 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to lxqt-config</title>
 @y
-  <sect2 role="package">
     <title>Introduction to lxqt-config</title>
 @z
 

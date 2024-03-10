@@ -137,7 +137,8 @@
       <xref linkend="nss"/>,
       <xref linkend="openjpeg2"/>, and
       &qt5-deps;
-      (required for PDF support in <xref role="nodep" linkend="okular5"/>)
+      (required for PDF support in <xref role="nodep" linkend="okular"/>)
+    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
@@ -151,7 +152,8 @@
       <xref linkend="nss"/>,
       <xref linkend="openjpeg2"/>,
       &qt5-deps;
-      (required for PDF support in <xref role="nodep" linkend="okular5"/>)
+      (required for PDF support in <xref role="nodep" linkend="okular"/>)
+    </para>
 @z
 
 @x

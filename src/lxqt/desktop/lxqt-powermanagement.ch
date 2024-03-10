@@ -4,23 +4,17 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to lxqt-powermanagement</title>
 @y
-  <sect2 role="package">
     <title>Introduction to lxqt-powermanagement</title>
 @z
 
 @x
-    <para>
       The <application>lxqt-powermanagement</application> package provides the
       power management module for <application>LXQt</application>.
-    </para>
 @y
-    <para>
       The <application>lxqt-powermanagement</application> package provides the
       power management module for <application>LXQt</application>.
-    </para>
 @z
 
 @x
@@ -103,113 +97,55 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="liblxqt"/>,
-      (<xref linkend="lxqt-kidletime"/> or
-       <xref role="nodep" linkend="kf5-frameworks"/>), and
+      <xref linkend="lxqt-kidletime"/>, and
       <xref linkend="upower"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="liblxqt"/>,
-      (<xref linkend="lxqt-kidletime"/> or
-       <xref role="nodep" linkend="kf5-frameworks"/>), and
+      <xref linkend="lxqt-kidletime"/>,
       <xref linkend="upower"/>
     </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of lxqt-powermanagement</title>
 @y
-  <sect2 role="installation">
     <title>Installation of lxqt-powermanagement</title>
 @z
 
 @x
-    <para>
       Install <application>lxqt-powermanagement</application> by running the
       following commands:
-    </para>
 @y
-    <para>
       Install <application>lxqt-powermanagement</application> by running the
       following commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
@@ -307,22 +243,4 @@ make</userinput></screen>
           </indexterm>
         </listitem>
       </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

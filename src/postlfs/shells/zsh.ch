@@ -92,14 +92,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/>,
-      <xref linkend="valgrind"/>, and
+      <!-- <xref linkend="pcre2"/>, The next zsh release will support it -->
+      <xref linkend="valgrind"/> and
       <ulink url='https://fbb-git.gitlab.io/yodl/'>yodl</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/>,
+      <!-- <xref linkend="pcre2"/>, The next zsh release will support it -->
       <xref linkend="valgrind"/>,
       <ulink url='https://fbb-git.gitlab.io/yodl/'>yodl</ulink>
     </para>
@@ -194,16 +194,6 @@
 @y
       <parameter>--enable-gdbm</parameter>: This option enables the
       use of the <application>GDBM</application> library.
-@z
-
-@x
-      <option>--enable-pcre</option>: This option allows zsh to use
-      the <application>PCRE</application> regular expression library in shell
-      builtins.
-@y
-      <option>--enable-pcre</option>: This option allows zsh to use
-      the <application>PCRE</application> regular expression library in shell
-      builtins.
 @z
 
 @x

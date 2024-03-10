@@ -69,14 +69,14 @@
     <para role="required">
       <xref linkend="cmake"/>,
       <xref linkend="polkit"/>, and
-      <xref linkend="qt5"/>
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cmake"/>,
       <xref linkend="polkit"/>,
-      <xref linkend="qt5"/>
+      <xref linkend="qt6"/>
     </para>
 @z
 
@@ -138,21 +138,23 @@
 @x
         <seg>none</seg>
         <seg>
-             libpolkit-qt5-agent-1.so,
-             libpolkit-qt5-core-1.so, and
-             libpolkit-qt5-gui-1.so</seg>
+          libpolkit-qt6-agent-1.so,
+          libpolkit-qt6-core-1.so, and
+          libpolkit-qt6-gui-1.so
+        </seg>
         <seg>
-             /usr/include/polkit-qt5-1 and
-             /usr/lib/cmake/PolkitQt5-1
+          /usr/include/polkit-qt6-1 and
+          /usr/lib/cmake/PolkitQt6-1
         </seg>
 @y
         <seg>&None;</seg>
         <seg>
-             libpolkit-qt5-agent-1.so,
-             libpolkit-qt5-core-1.so,
-             libpolkit-qt5-gui-1.so</seg>
+          libpolkit-qt6-agent-1.so,
+          libpolkit-qt6-core-1.so,
+          libpolkit-qt6-gui-1.so
+        </seg>
         <seg>
-             /usr/include/polkit-qt5-1,
-             /usr/lib/cmake/PolkitQt5-1
+          /usr/include/polkit-qt6-1,
+          /usr/lib/cmake/PolkitQt6-1
         </seg>
 @z

@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY falkon-time          "1.2 SBU (Using parallelism=4)">
+  <!ENTITY falkon-time          "1.8 SBU (Using parallelism=4; add 0.3 SBU for tests)">
 @y
-  <!ENTITY falkon-time          "1.2 SBU (Using parallelism=4)">
+  <!ENTITY falkon-time          "1.8 SBU (Using parallelism=4; add 0.3 SBU for tests)">
 @z
 
 @x
@@ -149,38 +149,30 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="extra-cmake-modules"/>,
-      <xref linkend="kf5-frameworks"/> (for karchive), and
+      <xref linkend="kf6-frameworks"/> (for karchive), and
       <xref linkend="qtwebengine"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="extra-cmake-modules"/>,
-      <xref linkend="kf5-frameworks"/> (for karchive), and
+      <xref linkend="kf6-frameworks"/> (for karchive),
       <xref linkend="qtwebengine"/>
     </para>
 @z
 
 @x
-    <note>
-      <para>
-        Strictly speaking, only karchive is required to build falkon,
-        but several other packages in KF5 can be used if they are present. To
-        build only karchive, download that package from the directory specified
-        in <xref linkend="kf5-frameworks"/> and use the build instructions on
-        that page changing the $KF5_PREFIX to /usr.
-      </para>
-    </note>
+        Strictly speaking, only karchive is required to build falkon, but
+        several other packages in <xref linkend="kf6-frameworks"/> can be used
+        if they are present. To build only karchive, download that package from
+        the directory specified in <xref linkend="kf6-frameworks"/> and use the
+        build instructions on that page changing the $KF6_PREFIX to /usr.
 @y
-    <note>
-      <para>
-        Strictly speaking, only karchive is required to build falkon,
-        but several other packages in KF5 can be used if they are present. To
-        build only karchive, download that package from the directory specified
-        in <xref linkend="kf5-frameworks"/> and use the build instructions on
-        that page changing the $KF5_PREFIX to /usr.
-      </para>
-    </note>
+        Strictly speaking, only karchive is required to build falkon, but
+        several other packages in <xref linkend="kf6-frameworks"/> can be used
+        if they are present. To build only karchive, download that package from
+        the directory specified in <xref linkend="kf6-frameworks"/> and use the
+        build instructions on that page changing the $KF6_PREFIX to /usr.
 @z
 
 @x
@@ -232,57 +224,15 @@
 @z
 
 @x
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
+      Tests should be run after installation.
 @y
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
+      Tests should be run after installation.
 @z
 
 @x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      .. &amp;&amp;
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      .. &amp;&amp;
-@z
-
-@x
-make</userinput></screen>
-@y
-make</userinput></screen>
-@z
-
-@x
-    <para>
-      To test the results, issue: <command>make test</command>. All
-      tests should pass. If any fail, the full results will be in
-      <filename>Testing/Temporary/LastTest.log</filename>.
-    </para>
-@y
-    <para>
-      To test the results, issue: <command>make test</command>. All
-      tests should pass. If any fail, the full results will be in
-      <filename>Testing/Temporary/LastTest.log</filename>.
-    </para>
-@z
-
-@x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
-@z
-
-@x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
 @z
 
 @x

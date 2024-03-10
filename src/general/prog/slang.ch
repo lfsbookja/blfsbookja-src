@@ -78,15 +78,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libpng"/>,
-      <xref linkend="pcre"/>, and
+      <xref linkend="libpng"/> and
       <ulink url="https://github.com/kkos/oniguruma">Oniguruma</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libpng"/>,
-      <xref linkend="pcre"/>,
       <ulink url="https://github.com/kkos/oniguruma">Oniguruma</ulink>
     </para>
 @z

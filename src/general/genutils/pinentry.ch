@@ -112,7 +112,7 @@
       <xref linkend="gtk2"/>,
       <!-- <xref linkend="libcap-pam"/>, This is in LFS already. PAM is not
       necessary. -->
-      <xref linkend="kf5-frameworks"/> (or <xref linkend="lxqt-kwayland"/>),
+      <xref linkend="kf6-frameworks"/> (or <xref linkend="lxqt-kwayland"/>),
       <!-- If Qt5 is present, it will look for KWayland for Wayland support.-->
       <xref linkend="libsecret"/>,
       &qt5-deps;, and
@@ -127,10 +127,10 @@
       <xref linkend="gtk2"/>,
       <!-- <xref linkend="libcap-pam"/>, This is in LFS already. PAM is not
       necessary. -->
-      <xref linkend="kf5-frameworks"/> (or <xref linkend="lxqt-kwayland"/>),
+      <xref linkend="kf6-frameworks"/> (or <xref linkend="lxqt-kwayland"/>),
       <!-- If Qt5 is present, it will look for KWayland for Wayland support.-->
       <xref linkend="libsecret"/>,
-      &qt5-deps;, and
+      &qt5-deps;,
       <ulink url="https://www.enlightenment.org/about-efl">efl</ulink>
     </para>
 @z

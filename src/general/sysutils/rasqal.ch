@@ -92,13 +92,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/> and
+      <!-- <xref linkend="pcre2"/> the next rasqal release will support it -->
       <xref linkend="libgcrypt"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="pcre"/>,
+      <!-- <xref linkend="pcre2"/> the next rasqal release will support it -->
       <xref linkend="libgcrypt"/>
     </para>
 @z

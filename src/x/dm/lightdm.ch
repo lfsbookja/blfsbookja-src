@@ -132,9 +132,6 @@
       <xref linkend="libgcrypt"/>,
       <xref linkend="itstool"/>,
       <xref linkend="linux-pam"/>, and
-<!-- Neither lightdm-1.30.0 nor lightdm-gtk-greeter-2.0.8
-     mention pcre in their configure scripts
-      <xref linkend="pcre"/>-->
       <xref role='runtime' linkend='xorg-server'/> (Runtime)
     </para>
 @y
@@ -144,10 +141,7 @@
 <!-- required by exo      <xref linkend="gtk3"/>, -->
       <xref linkend="libgcrypt"/>,
       <xref linkend="itstool"/>,
-      <xref linkend="linux-pam"/>, and
-<!-- Neither lightdm-1.30.0 nor lightdm-gtk-greeter-2.0.8
-     mention pcre in their configure scripts
-      <xref linkend="pcre"/>-->
+      <xref linkend="linux-pam"/>,
       <xref role='runtime' linkend='xorg-server'/> (Runtime)
     </para>
 @z

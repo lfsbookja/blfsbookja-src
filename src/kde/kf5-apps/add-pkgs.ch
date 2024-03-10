@@ -4,23 +4,23 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<sect1 id="kde-add-pkgs" xreflabel="Further KDE5 packages">
+<sect1 id="kde-add-pkgs" xreflabel="Further KDE packages">
 @y
-<sect1 id="kde-add-pkgs" xreflabel="その他の KDE5 パッケージ">
+<sect1 id="kde-add-pkgs" xreflabel="その他の KDE パッケージ">
 @z
 
 @x
-  <title>Further KDE5 packages</title>
+  <title>Further KDE packages</title>
 @y
-  <title>その他の KDE5 パッケージ</title>
+  <title>その他の KDE パッケージ</title>
 @z
 
 @x
     This section did not provide instructions for all of the available packages
-    in the KDE5 Software Compilation. The included packages were selected
+    in the KDE Software Compilation (KDE Gear). The included packages were selected
     based on what most people would want to use on a standard desktop computer.
 @y
-    本節は、利用可能な KDE5 ソフトウェアコンパイレーション (KDE5 Software Compilation) のビルド手順までは説明しません。
+    本節は、利用可能な KDE ソフトウェアコンパイレーション (KDE Gear) のビルド手順までは説明しません。
     ここに示すパッケージは、多くの方が標準的なデスクトップコンピューターにおいて利用したいと思うパッケージを選んでいます。
 @z
 

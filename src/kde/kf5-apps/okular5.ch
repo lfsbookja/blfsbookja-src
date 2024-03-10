@@ -11,10 +11,10 @@
 
 @x
       Okular is a document viewer for KDE. It can view documents of many types
-      including PDF, PostScript, TIFF, Microsoft CHM, DjVu, DVI, XPS and ePub.     
+      including PDF, PostScript, TIFF, DjVu, DVI, XPS, and ePub.
 @y
       Okular は KDE におけるドキュメントビューアーです。
-      対応するドキュメント形式は PDF, PostScript, TIFF, Microsoft CHM, DjVu, DVI, XPS, ePub です。
+      対応するドキュメント形式は PDF, PostScript, TIFF, DjVu, DVI, XPS, ePub です。
 @z
 
 @x
@@ -24,39 +24,39 @@
 @z
 
 @x
-          Download (HTTP): <ulink url="&okular5-download-http;"/>
+          Download (HTTP): <ulink url="&okular-download-http;"/>
 @y
-          &Download; (HTTP): <ulink url="&okular5-download-http;"/>
+          &Download; (HTTP): <ulink url="&okular-download-http;"/>
 @z
 
 @x
-          Download (FTP): <ulink url="&okular5-download-ftp;"/>
+          Download (FTP): <ulink url="&okular-download-ftp;"/>
 @y
-          &Download; (FTP): <ulink url="&okular5-download-ftp;"/>
+          &Download; (FTP): <ulink url="&okular-download-ftp;"/>
 @z
 
 @x
-          Download MD5 sum: &okular5-md5sum;
+          Download MD5 sum: &okular-md5sum;
 @y
-          &Download; MD5 sum: &okular5-md5sum;
+          &Download; MD5 sum: &okular-md5sum;
 @z
 
 @x
-          Download size: &okular5-size;
+          Download size: &okular-size;
 @y
-          &DownloadSize;: &okular5-size;
+          &DownloadSize;: &okular-size;
 @z
 
 @x
-          Estimated disk space required: &okular5-buildsize;
+          Estimated disk space required: &okular-buildsize;
 @y
-          &Estimateddiskspacerequired;: &okular5-buildsize;
+          &Estimateddiskspacerequired;: &okular-buildsize;
 @z
 
 @x
-          Estimated build time: &okular5-time;
+          Estimated build time: &okular-time;
 @y
-          &Estimatedbuildtime;: &okular5-time;
+          &Estimatedbuildtime;: &okular-time;
 @z
 
 @x
@@ -68,12 +68,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/> and
+      <xref linkend="plasma-activities"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="kf5-frameworks"/>
+      <xref linkend="kf6-frameworks"/>,
+      <xref linkend="plasma-activities"/>
     </para>
 @z
 
@@ -82,14 +84,14 @@
     <para role="recommended">
       <xref linkend="libkexiv2"/>,
       <xref linkend="libtiff"/>, and
-      <xref linkend="poppler"/> (built with Qt5, required for PDF support)
+      <xref linkend="poppler"/> (built with Qt6, required for PDF support)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="libkexiv2"/>,
       <xref linkend="libtiff"/>, and
-      <xref linkend="poppler"/> (Qt5 によるビルド, PDF サポートに必要)
+      <xref linkend="poppler"/> (Qt6 によるビルド, PDF サポートに必要)
     </para>
 @z
 
@@ -99,14 +101,9 @@
       <xref linkend="qca"/>,
       <ulink url="https://www.pell.portland.or.us/~orc/Code/discount/">discount</ulink>,
       <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
-                 kpimtextedit</ulink>,
       <ulink url="https://libspectre.freedesktop.org/">libspectre</ulink>
-                 (for PostScript support),
-      <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>,
       <ulink url="https://sourceforge.net/projects/ebook-tools">libepub</ulink>, and
-      <ulink url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket">
-                 Mobipocket</ulink>
+      <ulink url="https://libzip.org">LibZip</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -114,14 +111,9 @@
       <xref linkend="qca"/>,
       <ulink url="https://www.pell.portland.or.us/~orc/Code/discount/">discount</ulink>,
       <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
-                 kpimtextedit</ulink>,
       <ulink url="https://libspectre.freedesktop.org/">libspectre</ulink>
-                 (for PostScript support),
-      <ulink url="http://www.jedrea.com/chmlib">libchm</ulink>,
-      <ulink url="https://sourceforge.net/projects/ebook-tools">libepub</ulink>, and
-      <ulink url="https://projects.kde.org/projects/kde/kdegraphics/kdegraphics-mobipocket">
-                 Mobipocket</ulink>
+      <ulink url="https://sourceforge.net/projects/ebook-tools">libepub</ulink>,
+      <ulink url="https://libzip.org">LibZip</ulink>
     </para>
 @z
 
@@ -171,30 +163,28 @@
           okular
         </seg>
         <seg>
-          libOkular5Core.so
+          Okular6Core.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/okular,
-          $KF5_PREFIX/lib/cmake/Okular5,
-          $KF5_PREFIX/lib/plugins/okular,
-          $KF5_PREFIX/share/kxmlgui5/okular,
-          $KF5_PREFIX/share/okular,
-          $KF5_PREFIX/share/doc/HTML/*/okular, and
+          $KF6_PREFIX/include/okular,
+          $KF6_PREFIX/lib/cmake/Okular6,
+          $KF6_PREFIX/lib/plugins/okular,
+          $KF6_PREFIX/share/okular, and
+          $KF6_PREFIX/share/doc/HTML/*/okular
         </seg>
 @y
         <seg>
           okular
         </seg>
         <seg>
-          libOkular5Core.so
+          Okular6Core.so
         </seg>
         <seg>
-          $KF5_PREFIX/include/okular,
-          $KF5_PREFIX/lib/cmake/Okular5,
-          $KF5_PREFIX/lib/plugins/okular,
-          $KF5_PREFIX/share/kxmlgui5/okular,
-          $KF5_PREFIX/share/okular,
-          $KF5_PREFIX/share/doc/HTML/*/okular
+          $KF6_PREFIX/include/okular,
+          $KF6_PREFIX/lib/cmake/Okular6,
+          $KF6_PREFIX/lib/plugins/okular,
+          $KF6_PREFIX/share/okular,
+          $KF6_PREFIX/share/doc/HTML/*/okular
         </seg>
 @z
 

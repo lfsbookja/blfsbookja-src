@@ -503,7 +503,13 @@
 @z
 
 @x
-    <title>Command Explanations</title>			
+      Finally, unset the <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> variable:
+@y
+      Finally, unset the <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> variable:
+@z
+
+@x
+    <title>Command Explanations</title>
 @y
     <title>&CommandExplanations;</title>
 @z

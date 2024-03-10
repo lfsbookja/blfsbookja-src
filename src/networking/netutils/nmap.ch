@@ -93,7 +93,7 @@
       <xref linkend="libpcap"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="lua"/>,
-      <xref linkend="pcre"/>, and
+      <xref linkend="pcre2"/>, and
       <xref linkend="pygobject3"/>
 <!--  libdnet is not recommended, see:
       http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS
@@ -105,7 +105,7 @@
       <xref linkend="libpcap"/>,
       <xref linkend="libssh2"/>,
       <xref linkend="lua"/>,
-      <xref linkend="pcre"/>, and
+      <xref linkend="pcre2"/>,
       <xref linkend="pygobject3"/>
 <!--  libdnet is not recommended, see:
       http://nmap.org/svn/libdnet-stripped/NMAP_MODIFICATIONS

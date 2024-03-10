@@ -73,7 +73,7 @@
       <xref linkend="libssh2"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="pcre"/>,
+      <xref linkend="pcre2"/>,
       <xref linkend="postgresql"/>, and
       <ulink url="https://metacpan.org/pod/Net::SSH2">Net::SSH2</ulink>
     </para>
@@ -84,8 +84,8 @@
       <xref linkend="libssh2"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="pcre"/>,
-      <xref linkend="postgresql"/>, and
+      <xref linkend="pcre2"/>,
+      <xref linkend="postgresql"/>,
       <ulink url="https://metacpan.org/pod/Net::SSH2">Net::SSH2</ulink>
     </para>
 @z
