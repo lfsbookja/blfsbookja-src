@@ -81,12 +81,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection required for the tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection required for the tests)
     </para>
 @z
 
@@ -94,7 +94,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/> (Required for the tests),
-      <xref linkend="gobject-introspection"/> (Required for the tests),
       <xref linkend="libxslt"/> (Required for generating the documentation),
       <ulink url="https://ftpmirror.gnu.org/gnu/help2man/">help2man</ulink>,
       <ulink url="https://github.com/relaxng/jing-trang">jing</ulink>, and
@@ -104,7 +103,6 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus"/> (テスト時に必要),
-      <xref linkend="gobject-introspection"/> (テスト時に必要),
       <xref linkend="libxslt"/> (ドキュメント生成時に必要),
       <ulink url="https://ftpmirror.gnu.org/gnu/help2man/">help2man</ulink>,
       <ulink url="https://github.com/relaxng/jing-trang">jing</ulink>,

@@ -112,13 +112,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
+      <xref linkend="glib2"/> (GObject Introspection recommended) and
       <xref linkend="libxml2"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
+      <xref linkend="glib2"/> (GObject Introspection recommended) and
       <xref linkend="libxml2"/>
     </para>
 @z
@@ -126,7 +126,6 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libsoup3"/>,
       <xref linkend="totem-pl-parser"/>, and
@@ -135,10 +134,9 @@
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libsoup3"/>,
-      <xref linkend="totem-pl-parser"/>, and
+      <xref linkend="totem-pl-parser"/>,
       <xref linkend="vala"/>
     </para>
 @z

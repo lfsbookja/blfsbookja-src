@@ -77,7 +77,7 @@
     <para role="required">
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
-      <xref linkend="gobject-introspection"/>, and
+      &gobject-introspection;, and
       <xref linkend="spidermonkey"/>
     </para>
 @y
@@ -85,7 +85,7 @@
     <para role="required">
       <xref linkend="cairo"/>,
       <xref linkend="dbus"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="spidermonkey"/>
     </para>
 @z

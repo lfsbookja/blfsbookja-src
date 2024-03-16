@@ -105,7 +105,7 @@
     <para role="recommended">
       <xref linkend="desktop-file-utils"/>,
       <xref linkend="exempi"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="libcloudproviders"/>, and
       <xref linkend="libexif"/>
@@ -115,7 +115,7 @@
     <para role="recommended">
       <xref linkend="desktop-file-utils"/>,
       <xref linkend="exempi"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="libcloudproviders"/>,
       <xref linkend="libexif"/>

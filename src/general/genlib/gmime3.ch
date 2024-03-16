@@ -80,28 +80,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
+      <xref linkend="glib2"/> (GObject Introspection recommended) and
       <xref linkend="libgpg-error"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (GObject Introspection recommended),
       <xref linkend="libgpg-error"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/> and 
-      <xref linkend="libidn2"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
-      <xref linkend="libidn2"/>
     </para>
 @z
 

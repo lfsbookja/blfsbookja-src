@@ -367,7 +367,7 @@
         <!-- at one time, some skylakes had problems with a certain revision
         secure version of the microcode, for those machines which can boot it, -->
         secure version of the microcode
-        is microcode-20231114.  Extract this
+        is microcode-20240312.  Extract this
         file in the normal way, the microcode is in the <filename>intel-ucode
         </filename> directory, containing various blobs with names in the form
         XX-YY-ZZ. There are also various other files, and a releasenote.
@@ -379,7 +379,7 @@
         <!-- at one time, some skylakes had problems with a certain revision
         secure version of the microcode, for those machines which can boot it, -->
         secure version of the microcode
-        is microcode-20231114.  Extract this
+        is microcode-20240312.  Extract this
         file in the normal way, the microcode is in the <filename>intel-ucode
         </filename> directory, containing various blobs with names in the form
         XX-YY-ZZ. There are also various other files, and a releasenote.
@@ -421,18 +421,18 @@
         For an Tigerlake mobile (described as Intel(R) Core(TM) i5-11300H
         CPU) the relevant values are cpu family 6, model 140, stepping 1 so
         in this case the required identification is 06-8c-01. The
-        releasenote says the latest microcode for it is versioned 0xb4.  If
+        releasenote says the latest microcode for it is versioned 0xb6.  If
         the value of the <quote>microcode</quote> field in
-        <filename>/proc/cpuinfo</filename> is 0xb4 or greater, it indicates
+        <filename>/proc/cpuinfo</filename> is 0xb6 or greater, it indicates
         the microcode update is already applied by the BIOS.  Otherwise,
         proceed to <xref linkend='early-microcode'/>.
 @y
         For an Tigerlake mobile (described as Intel(R) Core(TM) i5-11300H
         CPU) the relevant values are cpu family 6, model 140, stepping 1 so
         in this case the required identification is 06-8c-01. The
-        releasenote says the latest microcode for it is versioned 0xb4.  If
+        releasenote says the latest microcode for it is versioned 0xb6.  If
         the value of the <quote>microcode</quote> field in
-        <filename>/proc/cpuinfo</filename> is 0xb4 or greater, it indicates
+        <filename>/proc/cpuinfo</filename> is 0xb6 or greater, it indicates
         the microcode update is already applied by the BIOS.  Otherwise,
         proceed to <xref linkend='early-microcode'/>.
 @z

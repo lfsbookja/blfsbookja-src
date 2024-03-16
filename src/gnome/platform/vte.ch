@@ -96,7 +96,7 @@
     <para role="recommended">
       <xref linkend="icu"/>,
       <xref linkend="gnutls"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gtk4"/>, and
       <xref linkend="vala"/>
     </para>
@@ -105,7 +105,7 @@
     <para role="recommended">
       <xref linkend="icu"/>,
       <xref linkend="gnutls"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gtk4"/>,
       <xref linkend="vala"/>
     </para>

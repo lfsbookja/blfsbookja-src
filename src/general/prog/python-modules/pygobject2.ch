@@ -86,13 +86,11 @@
 @x
       <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
-        <xref linkend="gobject-introspection"/> and
         <xref linkend="libxslt"/> (to Build Documentation)
       </para>
 @y
       <bridgehead renderas="sect5">&Optional;</bridgehead>
       <para role="optional">
-        <xref linkend="gobject-introspection"/>,
         <xref linkend="libxslt"/> (ドキュメント生成のため)
       </para>
 @z
@@ -129,13 +127,13 @@
 @z
 
 @x
-        <option>--disable-introspection</option>: Omit this switch if you have
-        installed <xref linkend="gobject-introspection"/>. Note that it
-        conflicts with <xref linkend="pygobject3"/>.
+        <option>--disable-introspection</option>: Add this switch if you have
+        installed <xref linkend='glib2'/> without GObject Introspection.
+        Note that it conflicts with <xref linkend="pygobject3"/>.
 @y
-        <option>--disable-introspection</option>: Omit this switch if you have
-        installed <xref linkend="gobject-introspection"/>. Note that it
-        conflicts with <xref linkend="pygobject3"/>.
+        <option>--disable-introspection</option>: Add this switch if you have
+        installed <xref linkend='glib2'/> without GObject Introspection.
+        Note that it conflicts with <xref linkend="pygobject3"/>.
 @z
 
 @x

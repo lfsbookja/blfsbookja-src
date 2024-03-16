@@ -90,32 +90,28 @@
       <xref linkend="fontconfig"/> (must be built with
        <xref linkend="freetype2"/> using <xref linkend="harfbuzz"/>),
       <xref linkend="fribidi"/>, and
-      <xref linkend="glib2"/> 
-
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="fontconfig"/> (must be built with
        <xref linkend="freetype2"/> using <xref linkend="harfbuzz"/>),
-      <xref linkend="fribidi"/>, and
-      <xref linkend="glib2"/> 
-
+      <xref linkend="fribidi"/>,
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cairo"/>,
-      <xref linkend="gobject-introspection"/> (Required if building GNOME), and
+      <xref linkend="cairo"/> and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="cairo"/>,
-      <xref linkend="gobject-introspection"/> (Required if building GNOME),
       <xref linkend="xorg7-lib"/>
     </para>
 @z

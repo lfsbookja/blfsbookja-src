@@ -89,7 +89,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <phrase revision="sysv"><xref linkend="elogind"/></phrase>
       <phrase revision="systemd"><xref role='runtime' linkend="systemd"/>
         (runtime)</phrase>, and
@@ -98,7 +98,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <phrase revision="sysv"><xref linkend="elogind"/></phrase>
       <phrase revision="systemd"><xref role='runtime' linkend="systemd"/>
         (runtime)</phrase>,

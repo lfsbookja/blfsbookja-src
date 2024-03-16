@@ -59,9 +59,7 @@
         as the instructions below are a complete reinstallation of
         <application>GCC</application>. If you have existing 3rd party modules
         installed, ensure they are recompiled using the updated version of
-        <application>GCC</application>. As always, never update the kernel
-        headers from the ones used when <application>Glibc</application> was
-        compiled during LFS.
+        <application>GCC</application>.
 @y
         If you are upgrading <application>GCC</application> from any other
         version prior to &gcc-version;, then you must be careful compiling 3rd
@@ -72,9 +70,7 @@
         as the instructions below are a complete reinstallation of
         <application>GCC</application>. If you have existing 3rd party modules
         installed, ensure they are recompiled using the updated version of
-        <application>GCC</application>. As always, never update the kernel
-        headers from the ones used when <application>Glibc</application> was
-        compiled during LFS.
+        <application>GCC</application>.
 @z
 
 @x

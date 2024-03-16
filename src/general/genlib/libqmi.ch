@@ -78,13 +78,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> and
+      <xref linkend="glib2"/> (GObject Introspection recommended) and
       <xref linkend="libgudev"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (GObject Introspection recommended) and
       <xref linkend="libgudev"/>
     </para>
 @z
@@ -92,13 +92,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
       <xref linkend="libmbim"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="libmbim"/>
     </para>
 @z

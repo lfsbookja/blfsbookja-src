@@ -114,13 +114,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      &gobject-introspection; and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and
+      &gobject-introspection;,
       <xref linkend="vala"/>
     </para>
 @z

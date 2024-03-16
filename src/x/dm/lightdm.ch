@@ -149,14 +149,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="libxklavier"/>, and
       <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="libxklavier"/>,
       <xref linkend="vala"/>
     </para>

@@ -84,6 +84,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="alsa-lib"/>,
+      <xref linkend="dtc"/>,
       <xref linkend="libslirp"/>, and
       <xref linkend="sdl2"/>
     </para>
@@ -91,6 +92,7 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="alsa-lib"/>,
+      <xref linkend="dtc"/>,
       <xref linkend="libslirp"/>,
       <xref linkend="sdl2"/>
     </para>

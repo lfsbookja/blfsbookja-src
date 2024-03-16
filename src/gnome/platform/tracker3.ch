@@ -92,7 +92,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="icu"/>,
       <xref linkend="libsoup3"/>,
       <xref linkend="pygobject3"/>,
@@ -102,7 +102,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="icu"/>,
       <xref linkend="libsoup3"/>,
       <xref linkend="pygobject3"/>,

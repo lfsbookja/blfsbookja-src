@@ -125,7 +125,7 @@
       <xref linkend="bubblewrap"/>,
       <xref linkend="enchant"/>,
       <xref linkend="geoclue2"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="hicolor-icon-theme"/>,
       <xref linkend="libavif"/>,
       <xref linkend="libseccomp"/>, and
@@ -137,10 +137,10 @@
       <xref linkend="bubblewrap"/>,
       <xref linkend="enchant"/>,
       <xref linkend="geoclue2"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="hicolor-icon-theme"/>,
       <xref linkend="libavif"/>,
-      <xref linkend="libseccomp"/>, and
+      <xref linkend="libseccomp"/>,
       <xref linkend="xdg-dbus-proxy"/>
     </para>
 @z

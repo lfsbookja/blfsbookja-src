@@ -69,24 +69,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection recommended)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="glib2"/> (GObject Introspection recommended)
     </para>
 @z
 
@@ -101,7 +89,7 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-      <xref linkend="python-dbusmock"/>, and
+      <xref linkend="python-dbusmock"/>,
       <xref linkend="spidermonkey"/> (can be used in place of duktape)
     </para>
 @z

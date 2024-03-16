@@ -101,14 +101,14 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="desktop-file-utils"/>,
-      <xref linkend="gobject-introspection"/>, and
+      &gobject-introspection;, and
       <xref linkend="startup-notification"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="desktop-file-utils"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="startup-notification"/>
     </para>
 @z

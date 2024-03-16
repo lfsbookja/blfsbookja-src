@@ -82,12 +82,12 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend='gobject-introspection'/> (required for gnome-maps)
+      &gobject-introspection; (required for gnome-maps)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend='gobject-introspection'/> (required for gnome-maps)
+      &gobject-introspection; (required for gnome-maps)
     </para>
 @z
 

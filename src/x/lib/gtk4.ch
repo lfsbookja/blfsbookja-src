@@ -126,12 +126,12 @@
 @x
     <bridgehead renderas="sect4">Recommended (Required if building GNOME)</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      &gobject-introspection;
     </para>
 @y
     <bridgehead renderas="sect4">Recommended (Required if building GNOME)</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      &gobject-introspection;
     </para>
 @z
 

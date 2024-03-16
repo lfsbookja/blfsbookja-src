@@ -87,13 +87,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> and 
+      &gobject-introspection; and
       <xref linkend="vala"/> (both required for GNOME)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="vala"/>(いずれも GNOME において必要)
     </para>
 @z

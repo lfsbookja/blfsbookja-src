@@ -80,14 +80,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (GObject Introspection recommended),
       <xref linkend="libgcrypt"/>, and
       <xref linkend="p11-kit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (GObject Introspection recommended),
       <xref linkend="libgcrypt"/>,
       <xref linkend="p11-kit"/>
     </para>
@@ -97,7 +97,6 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gnupg2"/>,
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk4"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libxslt"/>,
@@ -108,7 +107,6 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gnupg2"/>,
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk4"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="libxslt"/>,

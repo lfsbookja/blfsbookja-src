@@ -91,7 +91,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="libmbim"/>,
       <xref linkend="libqmi"/>,
       <xref linkend="polkit"/>, and
@@ -101,7 +101,7 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <phrase revision="sysv"><xref linkend="elogind"/>,</phrase>
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="libmbim"/>,
       <xref linkend="libqmi"/>,
       <xref linkend="polkit"/>,

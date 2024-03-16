@@ -100,7 +100,7 @@
       <xref linkend="docbook-utils"/>,
       <xref role="runtime" linkend="gnome-themes-extra"/> (runtime, for
       Adwaita and HighContrast themes),
-      <xref linkend="gobject-introspection"/> and
+      &gobject-introspection; and
       <xref linkend="gtk-doc"/>
     </para>
 @y
@@ -110,7 +110,7 @@
       <xref linkend="docbook-utils"/>,
       <xref role="runtime" linkend="gnome-themes-extra"/> (runtime, for
       Adwaita and HighContrast themes),
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gtk-doc"/>
     </para>
 @z

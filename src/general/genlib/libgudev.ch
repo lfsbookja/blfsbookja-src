@@ -67,26 +67,24 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/> (for gir-data, needed for GNOME),
-      <xref linkend="gtk-doc"/>, and
+      <xref linkend="gtk-doc"/> and
       <xref linkend="umockdev"/> (for testing)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/> (gir-data, GNOME にて必要),
       <xref linkend="gtk-doc"/>,
       <xref linkend="umockdev"/> (テストのため)
     </para>

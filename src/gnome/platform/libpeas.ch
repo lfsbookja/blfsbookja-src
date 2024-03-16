@@ -77,13 +77,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gobject-introspection"/> and
+      &gobject-introspection; and
       <xref linkend="gtk3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection; and
       <xref linkend="gtk3"/>
     </para>
 @z

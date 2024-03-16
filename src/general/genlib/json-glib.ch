@@ -76,24 +76,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection required if building
+      GNOME)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional; (GNOME のビルド時)</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="glib2"/> (GObject Introspection required if building
+      GNOME)
     </para>
 @z
 

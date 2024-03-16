@@ -200,7 +200,7 @@
     <para role="optional">
       <xref linkend="dbus-glib"/>,
       <xref linkend="evolution-data-server"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libical"/>,
       <xref linkend="libsoup"/>,
@@ -221,11 +221,11 @@
       <ulink url="https://software.frodo.looijaard.name/psiconv/">Psiconv</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus-glib"/>,
       <xref linkend="evolution-data-server"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="libgcrypt"/>,
       <xref linkend="libical"/>,
       <xref linkend="libsoup"/>,
@@ -242,351 +242,157 @@
       <ulink url="https://www.abisource.com/projects/link-grammar/">
       Link Grammar Parser</ulink>,
       <ulink url="&gnome-download-http;/loudmouth">Loudmouth</ulink>,
-      <ulink url="https://packages.ubuntu.com/focal/libots-dev">OTS</ulink>, and
+      <ulink url="https://packages.ubuntu.com/focal/libots-dev">OTS</ulink>,
       <ulink url="https://software.frodo.looijaard.name/psiconv/">Psiconv</ulink>
     </para>
 @z
 
 @x
-    <note>
-      <para>
         To enable many of the optional dependencies, review the information
         from <command>./configure --help</command> for the necessary switches
         you must pass to the <command>configure</command> script.
-      </para>
-    </note>
 @y
-    <note>
-      <para>
         To enable many of the optional dependencies, review the information
         from <command>./configure --help</command> for the necessary switches
         you must pass to the <command>configure</command> script.
-      </para>
-    </note>
 @z
 
 @x
-    <para condition="html" role="usernotes">
       Editor Notes: <ulink url="&blfs-wiki;/abiword"/>
-    </para>
-  </sect2>
 @y
-    <para condition="html" role="usernotes">
       Editor Notes: <ulink url="&blfs-wiki;/abiword"/>
-    </para>
-  </sect2>
 @z
 
 @x
-  <sect2 role="installation">
     <title>Installation of AbiWord</title>
 @y
-  <sect2 role="installation">
     <title>Installation of AbiWord</title>
 @z
 
 @x
-    <para>
       First, fix a build failure when using libxml-2.12.x:
-    </para>
 @y
-    <para>
       First, fix a build failure when using libxml-2.12.x:
-    </para>
 @z
 
 @x
-<screen><userinput>sed -e '/libxml/a #include &lt;libxml/xmlmemory.h&gt;' \
-    -i src/af/util/xp/ut_stringbuf.cpp</userinput></screen>
-@y
-<screen><userinput>sed -e '/libxml/a #include &lt;libxml/xmlmemory.h&gt;' \
-    -i src/af/util/xp/ut_stringbuf.cpp</userinput></screen>
-@z
-
-@x
-    <para>
       Install <application>AbiWord</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>AbiWord</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>sed -e "s/free_suggestions/free_string_list/" \
-    -e "s/_to_personal//"                     \
-    -e "s/in_session/added/"                  \
-    -i src/af/xap/xp/enchant_checker.cpp      &amp;&amp;
-@y
-<screen><userinput>sed -e "s/free_suggestions/free_string_list/" \
-    -e "s/_to_personal//"                     \
-    -e "s/in_session/added/"                  \
-    -i src/af/xap/xp/enchant_checker.cpp      &amp;&amp;
-@z
-
-@x
-./configure --prefix=/usr &amp;&amp;
-make</userinput></screen>
-@y
-./configure --prefix=/usr &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This program does not come with a functional test suite.
-    </para>
 @y
-    <para>
       This program does not come with a functional test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-    <note>
-      <para>
         In order to install the local help files,
         a graphics session is recommended.
-      </para>
-    </note>
 @y
-    <note>
-      <para>
         In order to install the local help files,
         a graphics session is recommended.
-      </para>
-    </note>
 @z
 
 @x
-    <para>
       If you wish to install the local help files, untar and build them first:
-    </para>
 @y
-    <para>
       If you wish to install the local help files, untar and build them first:
-    </para>
 @z
 
 @x
-    <note>
-      <para>
         The current version of the docs expands to abiword-docs-3.0.1
         and not the expected abiword-docs-3.0.2.
-      </para>
-    </note>
 @y
-    <note>
-      <para>
         The current version of the docs expands to abiword-docs-3.0.1
         and not the expected abiword-docs-3.0.2.
-      </para>
-    </note>
 @z
 
 @x
-<!-- I had to hardcode the docs version here, as it doesn't decompress to
-     abiword-docs-3.0.2. -->
-<screen><userinput>tar -xf ../abiword-docs-&AbiWord-docs-version;.tar.gz &amp;&amp;
-cd abiword-docs-3.0.1                &amp;&amp;
-./configure --prefix=/usr            &amp;&amp;
-make</userinput></screen>
-@y
-<!-- I had to hardcode the docs version here, as it doesn't decompress to
-     abiword-docs-3.0.2. -->
-<screen><userinput>tar -xf ../abiword-docs-&AbiWord-docs-version;.tar.gz &amp;&amp;
-cd abiword-docs-3.0.1                &amp;&amp;
-./configure --prefix=/usr            &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       and then, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       and then, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <command>sed ...</command>: This command corrects the source for
       changes in the dependency <xref linkend="enchant"/>.
-    </para>
-<!--
-    <para>
-      <parameter>- -without-evolution-data-server</parameter>: This switch
-      disables <application>AbiWord</application>
-      <application>Evolution Data Server</application> support which is known
-      to fail when using recent versions of
-      <application>Evolution Data Server</application>.
-    </para>
--->
-    <para>
+@y
+      <command>sed ...</command>: This command corrects the source for
+      changes in the dependency <xref linkend="enchant"/>.
+@z
+
+@x
       <option>--enable-plugins="collab openxml goffice grammar"</option>: Build
       some or all plugins. The openxml plugin enables
       <application>Abiword</application> to open some .docx files.
       The grammar plugin requires
       <ulink url="https://www.abisource.com/projects/link-grammar/">Link Grammar
       Parser</ulink>
-    </para>
 @y
-    <para>
-      <command>sed ...</command>: This command corrects the source for
-      changes in the dependency <xref linkend="enchant"/>.
-    </para>
-<!--
-    <para>
-      <parameter>- -without-evolution-data-server</parameter>: This switch
-      disables <application>AbiWord</application>
-      <application>Evolution Data Server</application> support which is known
-      to fail when using recent versions of
-      <application>Evolution Data Server</application>.
-    </para>
--->
-    <para>
       <option>--enable-plugins="collab openxml goffice grammar"</option>: Build
       some or all plugins. The openxml plugin enables
       <application>Abiword</application> to open some .docx files.
       The grammar plugin requires
       <ulink url="https://www.abisource.com/projects/link-grammar/">Link Grammar
       Parser</ulink>
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="configuration">
     <title>Configuring AbiWord</title>
 @y
-  <sect2 role="configuration">
     <title>Configuring AbiWord</title>
 @z
 
 @x
-    <sect3 id="abiword-config">
       <title>Config File</title>
 @y
-    <sect3 id="abiword-config">
       <title>Config File</title>
 @z
 
 @x
-      <para>
         <filename>~/.AbiSuite/templates/normal.awt</filename>
-      </para>
 @y
-      <para>
         <filename>~/.AbiSuite/templates/normal.awt</filename>
-      </para>
 @z
 
 @x
-      <indexterm zone="abiword abiword-config">
-        <primary sortas="e-AA.AbiSuite-templates-normal">~/.AbiSuite/templates/normal.awt</primary>
-      </indexterm>
-    </sect3>
-@y
-      <indexterm zone="abiword abiword-config">
-        <primary sortas="e-AA.AbiSuite-templates-normal">~/.AbiSuite/templates/normal.awt</primary>
-      </indexterm>
-    </sect3>
-@z
-
-@x
-    <sect3>
       <title>Configuration Information</title>
 @y
-    <sect3>
       <title>Configuration Information</title>
 @z
 
 @x
-      <para>
         Choose the right template for your language and locale from the list
         produced by the following command:
-      </para>
 @y
-      <para>
         Choose the right template for your language and locale from the list
         produced by the following command:
-      </para>
 @z
 
 @x
-<screen><userinput>ls /usr/share/abiword-&AbiWord-minor-version;/templates</userinput></screen>
-@y
-<screen><userinput>ls /usr/share/abiword-&AbiWord-minor-version;/templates</userinput></screen>
-@z
-
-@x
-      <para>
         Create the folder
         <filename class='directory'>~/.AbiSuite/templates</filename> then copy
         the <filename>normal.awt</filename> you want into it:
-      </para>
 @y
-      <para>
         Create the folder
         <filename class='directory'>~/.AbiSuite/templates</filename> then copy
         the <filename>normal.awt</filename> you want into it:
-      </para>
-@z
-
-@x
-<screen><userinput>install -v -m750 -d ~/.AbiSuite/templates &amp;&amp;
-install -v -m640    /usr/share/abiword-&AbiWord-minor-version;/templates/normal.awt-<replaceable>&lt;lang&gt;</replaceable> \
-                    ~/.AbiSuite/templates/normal.awt</userinput></screen>
-@y
-<screen><userinput>install -v -m750 -d ~/.AbiSuite/templates &amp;&amp;
-install -v -m640    /usr/share/abiword-&AbiWord-minor-version;/templates/normal.awt-<replaceable>&lt;lang&gt;</replaceable> \
-                    ~/.AbiSuite/templates/normal.awt</userinput></screen>
 @z
 
 @x

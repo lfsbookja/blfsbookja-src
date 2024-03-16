@@ -67,19 +67,18 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection recommended)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection recommended)
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libdaemon"/>, and
       &qt5-deps;
@@ -87,9 +86,8 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="gtk3"/>,
-      <xref linkend="libdaemon"/>, and
+      <xref linkend="libdaemon"/>,
       &qt5-deps;
     </para>
 @z

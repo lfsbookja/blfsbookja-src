@@ -101,7 +101,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gnome-online-accounts"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
       <xref linkend="libcanberra"/>,
@@ -113,7 +113,7 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gnome-online-accounts"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gtk3"/>,
       <xref linkend="icu"/>,
       <xref linkend="libcanberra"/>,

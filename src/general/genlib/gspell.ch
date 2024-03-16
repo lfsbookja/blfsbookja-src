@@ -91,7 +91,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gtk-doc"/>,
       <xref linkend="vala"/>, and
       <xref linkend="valgrind"/>
@@ -99,7 +99,7 @@
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gtk-doc"/>,
       <xref linkend="vala"/>,
       <xref linkend="valgrind"/>

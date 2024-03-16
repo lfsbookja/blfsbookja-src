@@ -12,23 +12,17 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to Wireplumber</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Wireplumber</title>
 @z
 
 @x
-    <para>
       The <application>Wireplumber</application> package contains a session and
       policy manager for <application>Pipewire</application>.
-    </para>
 @y
-    <para>
       The <application>Wireplumber</application> package contains a session and
       policy manager for <application>Pipewire</application>.
-    </para>
 @z
 
 @x
@@ -145,7 +139,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="lxml"/>,
       <xref linkend="sphinx"/>,
       <xref linkend="sphinx_rtd_theme"/>, and
@@ -155,7 +148,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      <xref linkend="gobject-introspection"/>,
       <xref linkend="lxml"/>,
       <xref linkend="sphinx"/>,
       <xref linkend="sphinx_rtd_theme"/>, and
@@ -164,16 +156,8 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of Wireplumber</title>
 @y
-  <sect2 role="installation">
     <title>Installation of Wireplumber</title>
 @z
 
@@ -187,22 +171,6 @@
       Install <application>Wireplumber</application> by running the following
       commands:
     </para>
-@z
-
-@x
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@y
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@z
-
-@x
-meson setup --prefix=/usr --buildtype=release -Dsystem-lua=true .. &amp;&amp;
-ninja</userinput></screen>
-@y
-meson setup --prefix=/usr --buildtype=release -Dsystem-lua=true .. &amp;&amp;
-ninja</userinput></screen>
 @z
 
 @x
@@ -226,31 +194,9 @@ ninja</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>ninja install</userinput></screen>
-@y
-<screen role="root"><userinput>ninja install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/meson-buildtype-release.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/meson-buildtype-release.xml"/>
 @z
 
 @x
@@ -270,16 +216,8 @@ ninja</userinput></screen>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="configuration">
     <title>Configuring Wireplumber</title>
 @y
-  <sect2 role="configuration">
     <title>Configuring Wireplumber</title>
 @z
 
@@ -316,14 +254,6 @@ ninja</userinput></screen>
 @z
 
 @x
-<screen role="root" revision="systemd"><userinput>systemctl enable --global pipewire.socket &amp;&amp;
-systemctl enable --global wireplumber</userinput></screen>
-@y
-<screen role="root" revision="systemd"><userinput>systemctl enable --global pipewire.socket &amp;&amp;
-systemctl enable --global wireplumber</userinput></screen>
-@z
-
-@x
       <para revision="sysv">
         First, create a shell script that will start Wireplumber and Pipewire
         in the correct order as the &root; user:
@@ -336,44 +266,6 @@ systemctl enable --global wireplumber</userinput></screen>
 @z
 
 @x
-<screen role="root" revision="sysv"><userinput>cat &gt; /usr/bin/pipewire-launcher.sh &lt;&lt; "EOF"
-<literal>#!/bin/sh
-# Begin /usr/bin/pipewire-launcher.sh
-@y
-<screen role="root" revision="sysv"><userinput>cat &gt; /usr/bin/pipewire-launcher.sh &lt;&lt; "EOF"
-<literal>#!/bin/sh
-# Begin /usr/bin/pipewire-launcher.sh
-@z
-
-@x
-# Start Pipewire first.
-exec /usr/bin/pipewire &amp;
-@y
-# Start Pipewire first.
-exec /usr/bin/pipewire &amp;
-@z
-
-@x
-# Wait for a second for Pipewire to launch.
-sleep 1
-@y
-# Wait for a second for Pipewire to launch.
-sleep 1
-@z
-
-@x
-# Start Wireplumber now that Pipewire has been started.
-exec /usr/bin/wireplumber &amp;
-# End /usr/bin/pipewire-launcher.sh</literal>
-EOF</userinput></screen>
-@y
-# Start Wireplumber now that Pipewire has been started.
-exec /usr/bin/wireplumber &amp;
-# End /usr/bin/pipewire-launcher.sh</literal>
-EOF</userinput></screen>
-@z
-
-@x
     <para revision="sysv">
       Next, make this shell script executable as the &root; user:
     </para>
@@ -381,12 +273,6 @@ EOF</userinput></screen>
     <para revision="sysv">
       Next, make this shell script executable as the &root; user:
     </para>
-@z
-
-@x
-<screen role="root" revision="sysv"><userinput>chmod +x /usr/bin/pipewire-launcher.sh</userinput></screen>
-@y
-<screen role="root" revision="sysv"><userinput>chmod +x /usr/bin/pipewire-launcher.sh</userinput></screen>
 @z
 
 @x
@@ -404,28 +290,6 @@ EOF</userinput></screen>
 @z
 
 @x
-<screen role="root" revision="sysv"><userinput>cat &gt; /etc/xdg/autostart/pipewire.desktop &lt;&lt; "EOF"
-<literal>[Desktop Entry]
-Version=1.0
-Name=Pipewire
-Comment=Starts the Pipewire and Wireplumber daemons
-Exec=/usr/bin/pipewire-launcher.sh
-Terminal=false
-Type=Application</literal>
-EOF</userinput></screen>
-@y
-<screen role="root" revision="sysv"><userinput>cat &gt; /etc/xdg/autostart/pipewire.desktop &lt;&lt; "EOF"
-<literal>[Desktop Entry]
-Version=1.0
-Name=Pipewire
-Comment=Starts the Pipewire and Wireplumber daemons
-Exec=/usr/bin/pipewire-launcher.sh
-Terminal=false
-Type=Application</literal>
-EOF</userinput></screen>
-@z
-
-@x
     <para>
       Now that Wireplumber is configured to start when a desktop environment is
       started, it is recommended that you log out of your session and log back
@@ -440,18 +304,8 @@ EOF</userinput></screen>
 @z
 
 @x
-    </sect3>
-  </sect2>
-@y
-    </sect3>
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 

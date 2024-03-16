@@ -78,14 +78,28 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Required</bridgehead>
+    <para role="required">
+      <xref linkend='packaging'/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Required;</bridgehead>
+    <para role="required">
+      <xref linkend='packaging'/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libxslt"/> and
+      <xref linkend='docutils'/>,
+      <xref linkend="libxslt"/>, and
       <xref linkend="pcre2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
+      <xref linkend='docutils'/>,
       <xref linkend="libxslt"/>,
       <xref linkend="pcre2"/>
     </para>
@@ -94,31 +108,41 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
+      <xref linkend='cairo'/> (for some GObject Introspection tests),
       <xref linkend="dbus"/> (for some tests),
       <xref linkend="fuse3"/> and
       <ulink url="https://bindfs.org/">bindfs</ulink>
         (both needed for one test),
       <xref linkend="gdb"/> (for bindings),
+      <xref linkend='gjs'/> (for some GObject Introspection tests),
+      <xref linkend='gtk-doc'/> (for GObject Introspection documentation),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="gtk-doc"/> (to build API documentation),
+      <xref linkend="gi-docgen"/> (to build API documentation),
       <xref linkend="glib-networking"/> (for some tests, but this is a circular
-      dependency), and
+      dependency),
+      <xref linkend="Mako"/> and <xref linkend="markdown"/>
+      (both for <command>g-ir-doc-tool</command>), and
       <!--<xref linkend="sysprof"/>-->
       <ulink url="&sysprof-url;">sysprof</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="dbus"/> (for some tests),
-      <xref linkend="fuse3"/> and
+      <xref linkend='cairo'/> (GObject Introspection の一部のテストのため),
+      <xref linkend="dbus"/> (一部のテストのため),
+      <xref linkend="fuse3"/> と
       <ulink url="https://bindfs.org/">bindfs</ulink>
-        (両者ともに各種テストにて用いられる),
+        (両者ともに各種テストのため),
       <xref linkend="gdb"/> (バインディングのため),
+      <xref linkend='gjs'/> (GObject Introspection の一部のテストのため),
+      <xref linkend='gtk-doc'/> (GObject Introspection ドキュメントのため),
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="gtk-doc"/> (API ドキュメント生成のため),
+      <xref linkend="gi-docgen"/> (API ドキュメント生成のため),
       <xref linkend="glib-networking"/> (一部のテストのため、ただし循環依存性あり),
+      <xref linkend="Mako"/> and <xref linkend="markdown"/>
+      (both for <command>g-ir-doc-tool</command>),
       <!--<xref linkend="sysprof"/>-->
       <ulink url="&sysprof-url;">sysprof</ulink>
     </para>
@@ -130,13 +154,6 @@
     <bridgehead renderas="sect4">実行時のその他の依存パッケージ</bridgehead>
 @z
 @x
-      <xref role="runtime" linkend="gobject-introspection"/>
-      (should be installed before gtk+, atk, etc.)
-@y
-      <xref role="runtime" linkend="gobject-introspection"/>
-      (should be installed before gtk+, atk, etc.)
-@z
-@x
       Quoted directly from the <filename>INSTALL</filename> file:
       <quote>Some of the mimetype-related functionality in GIO requires the
       <command>update-mime-database</command> and
@@ -144,6 +161,7 @@
       which are part of
       <xref role="runtime" linkend="shared-mime-info"/> and
       <xref role="runtime" linkend="desktop-file-utils"/>, respectively.
+      These two utilities are also needed for some tests.
 @y
       Quoted directly from the <filename>INSTALL</filename> file:
       <quote>Some of the mimetype-related functionality in GIO requires the
@@ -152,6 +170,7 @@
       which are part of
       <xref role="runtime" linkend="shared-mime-info"/> and
       <xref role="runtime" linkend="desktop-file-utils"/>, respectively.
+      These two utilities are also needed for some tests.
 @z
 
 @x
@@ -181,9 +200,51 @@
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      As the <systemitem class="username">root</systemitem> user,
+      install this package for the first time to allow building
+      GObject Introspection:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      As the <systemitem class="username">root</systemitem> user,
+      install this package for the first time to allow building
+      GObject Introspection:
+@z
+
+@x
+      Build GObject Introspection:
+@y
+      Build GObject Introspection:
+@z
+
+@x
+      To test the results of GObject Introspection, issue:
+      <command>ninja -C gi-build test</command>.
+@y
+      To test the results of GObject Introspection, issue:
+      <command>ninja -C gi-build test</command>.
+@z
+
+@x
+      As the &root; user, install GObject Introspection for generating
+      the introspection data of GLib libraries (required by various packages
+      using Glib, especially some GNOME packages):
+@y
+      As the &root; user, install GObject Introspection for generating
+      the introspection data of GLib libraries (required by various packages
+      using Glib, especially some GNOME packages):
+@z
+
+@x
+      Now generate the introspection data:
+@y
+      Now generate the introspection data:
+@z
+
+@x
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
+@y
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
 @z
 
 @x
@@ -205,7 +266,7 @@
 @z
 
 @x
-      To test the results, after having installed the package, issue:
+      To test the results, after having installed the packages, issue:
       <command>LC_ALL=C ninja test</command> as a non-&root; user.
 @y
       ビルド結果をテストする場合は、本パッケージをインストールした後に、非 &root; ユーザーになって <command>LC_ALL=C ninja test</command> を実行します。
@@ -218,19 +279,11 @@
 @z
 
 @x
-      <parameter>-Dman=true</parameter>: This switch causes the
+      <parameter>-Dman-pages=enabled</parameter>: This switch causes the
       build to create and install the package man pages.
 @y
-      <parameter>-Dman=true</parameter>: This switch causes the
+      <parameter>-Dman-pages=enabled</parameter>: This switch causes the
       build to create and install the package man pages.
-@z
-
-@x
-      <option>-Dgtk_doc=true</option>: This switch causes the
-      build to create and install the API documentation.
-@y
-      <option>-Dgtk_doc=true</option>: This switch causes the
-      build to create and install the API documentation.
 @z
 
 @x
@@ -252,6 +305,7 @@
 @x
         <seg>
           gapplication,           gdbus, gdbus-codegen,
+          gi-compile-repository,  gi-decompile-typelib, gi-inspect-typelib
           gio,                    gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal,        glib-gettextize,
@@ -261,6 +315,7 @@
         </seg>
         <seg>
           libgio-2.0.so,
+          libgirepository-2.0.so,
           libglib-2.0.so,
           libgmodule-2.0.so,
           libgobject-2.0.so, and
@@ -271,13 +326,13 @@
           /usr/include/glib-2.0,
           /usr/lib/gio,
           /usr/lib/glib-2.0,
-          /usr/share/glib-2.0,
-          /usr/share/doc/{glib-2.0,glib-&glib2-version;}, and
-          /usr/share/gtk-doc/html/{gio,glib,gobject} (optional)
+          /usr/share/glib-2.0, and
+          /usr/share/doc/glib-&glib2-version; (optional)
         </seg>
 @y
         <seg>
           gapplication,           gdbus, gdbus-codegen,
+          gi-compile-repository,  gi-decompile-typelib, gi-inspect-typelib
           gio,                    gio-querymodules,
           glib-compile-resources, glib-compile-schemas,
           glib-genmarshal,        glib-gettextize,
@@ -287,6 +342,7 @@
         </seg>
         <seg>
           libgio-2.0.so,
+          libgirepository-2.0.so,
           libglib-2.0.so,
           libgmodule-2.0.so,
           libgobject-2.0.so,
@@ -298,8 +354,57 @@
           /usr/lib/gio,
           /usr/lib/glib-2.0,
           /usr/share/glib-2.0,
-          /usr/share/doc/{glib-2.0,glib-&glib2-version;},
-          /usr/share/gtk-doc/html/{gio,glib,gobject} (optional)
+          /usr/share/doc/glib-&glib2-version; (optional)
+        </seg>
+@z
+
+@x
+    <bridgehead renderas="sect3">GObject Introspection Contents</bridgehead>
+@y
+    <bridgehead renderas="sect3">GObject Introspection Contents</bridgehead>
+@z
+
+@x
+      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
+@y
+      <segtitle>Installed Program</segtitle>
+      <segtitle>Installed Libraries</segtitle>
+      <segtitle>Installed Directories</segtitle>
+@z
+
+@x
+        <seg>
+          g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool (optional),
+          g-ir-generate, g-ir-inspect, and g-ir-scanner
+        </seg>
+        <seg>
+          libgirepository-1.0.so and
+          _giscanner.&python3-lib-suffix;.so
+        </seg>
+        <seg>
+          /usr/include/gobject-introspection-1.0,
+          /usr/lib/girepository-1.0,
+          /usr/lib/gobject-introspection,
+          /usr/share/gir-1.0, and
+          /usr/share/gobject-introspection-1.0
+        </seg>
+@y
+        <seg>
+          g-ir-annotation-tool, g-ir-compiler, g-ir-doc-tool (optional),
+          g-ir-generate, g-ir-inspect, g-ir-scanner
+        </seg>
+        <seg>
+          libgirepository-1.0.so,
+          _giscanner.&python3-lib-suffix;.so
+        </seg>
+        <seg>
+          /usr/include/gobject-introspection-1.0,
+          /usr/lib/girepository-1.0,
+          /usr/lib/gobject-introspection,
+          /usr/share/gir-1.0,
+          /usr/share/gobject-introspection-1.0
         </seg>
 @z
 
@@ -405,15 +510,3 @@
             is a test report formatting utility
 @z
 
-@x
-        <term>GLib libraries</term>
-@y
-        <term>GLib ライブラリ</term>
-@z
-@x
-            contain low-level core libraries for the
-            <application>GIMP</application> Toolkit
-@y
-            contain low-level core libraries for the
-            <application>GIMP</application> Toolkit
-@z

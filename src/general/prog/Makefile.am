@@ -9,6 +9,7 @@ CHANGE_FILES = \
 	clisp.ch               \
 	cmake.ch               \
 	doxygen.ch             \
+	dtc.ch                 \
 	dummy-java.ch          \
 	gc.ch                  \
 	gcc.ch                 \

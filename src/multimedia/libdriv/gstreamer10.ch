@@ -88,24 +88,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME)
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/>
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME)
     </para>
 @z
 

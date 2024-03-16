@@ -93,7 +93,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="lcms2"/>,
       <xref linkend="libexif"/>,
       <xref linkend="librsvg"/>, and
@@ -102,7 +102,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="lcms2"/>,
       <xref linkend="libexif"/>,
       <xref linkend="librsvg"/>,

@@ -73,7 +73,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (GObject Introspection recommended),
       <xref linkend="iso-codes"/>,
       <xref linkend="libxml2"/> and
       <xref linkend="xorg7-lib"/>
@@ -81,22 +81,10 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (GObject Introspection recommended),
       <xref linkend="iso-codes"/>,
       <xref linkend="libxml2"/>,
       <xref linkend="xorg7-lib"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="gobject-introspection"/>
     </para>
 @z
 

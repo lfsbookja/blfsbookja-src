@@ -75,10 +75,10 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> (required if building GNOME),
-      <xref linkend="glib2"/> (required for Pango),
+      <xref linkend="glib2"/> (required for Pango; GObject Introspection
+      required for building GNOME),
       <xref role="first" linkend="graphite2"/> (required for building
-        <xref role="nodep" linkend="texlive"/> or 
+        <xref role="nodep" linkend="texlive"/> or
         <xref role="nodep" linkend="libreoffice"/> with system harfbuzz),
       <xref linkend="icu"/>, and
       <xref role="first" linkend="freetype2"/>
@@ -88,12 +88,12 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gobject-introspection"/> (GNOME ビルド時に必要),
-      <xref linkend="glib2"/> (Pango に必要),
+      <xref linkend="glib2"/> (required for Pango; GObject Introspection
+      required for building GNOME),
       <xref role="first" linkend="graphite2"/> (required for building
-        <xref role="nodep" linkend="texlive"/> or 
+        <xref role="nodep" linkend="texlive"/> or
         <xref role="nodep" linkend="libreoffice"/> with system harfbuzz),
-      <xref linkend="icu"/>, and
+      <xref linkend="icu"/>,
       <xref role="first" linkend="freetype2"/>
       (after <xref role="nodep" linkend="harfbuzz"/> is installed, reinstall
       <xref role="nodep" linkend="freetype2"/>)

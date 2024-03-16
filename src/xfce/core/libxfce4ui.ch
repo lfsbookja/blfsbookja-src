@@ -97,7 +97,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-<!--      <xref linkend="gobject-introspection"/>,-->
       <xref linkend="libgtop"/>,
       <xref linkend="libgudev"/>, and
       <ulink url="https://glade.gnome.org/">Glade</ulink>
@@ -106,7 +105,6 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
-<!--      <xref linkend="gobject-introspection"/>,-->
       <xref linkend="libgtop"/>,
       <xref linkend="libgudev"/>,
       <ulink url="https://glade.gnome.org/">Glade</ulink>

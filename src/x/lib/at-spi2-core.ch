@@ -75,7 +75,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME),
       <!-- Reports "Cannot get the default GSettingsSchemaSource" on
            startup w/o it. -->
       <xref role="runtime" linkend="gsettings-desktop-schemas"/> (Runtime),
@@ -85,23 +85,11 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="dbus"/>,
-      <xref linkend="glib2"/>,
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME),
       <!-- Reports "Cannot get the default GSettingsSchemaSource" on
            startup w/o it. -->
       <xref role="runtime" linkend="gsettings-desktop-schemas"/> (Runtime),
       and <xref linkend="xorg7-lib"/>
-    </para>
-@z
-
-@x
-    <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
-    </para>
-@y
-    <bridgehead renderas="sect4">&Optional; (GNOME ビルド時には必須)</bridgehead>
-    <para role="optional">
-      <xref linkend="gobject-introspection"/>
     </para>
 @z
 

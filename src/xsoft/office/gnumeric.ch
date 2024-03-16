@@ -14,7 +14,7 @@
 @x
     <title>Introduction to Gnumeric</title>
 @y
-    <title>Introduction to Gnumeric</title>
+    <title>&IntroductionTo1;Gnumeric&IntroductionTo2;</title>
 @z
 
 @x
@@ -28,49 +28,49 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&gnumeric-download-http;"/>
 @y
-          Download (HTTP): <ulink url="&gnumeric-download-http;"/>
+          &Download; (HTTP): <ulink url="&gnumeric-download-http;"/>
 @z
 
 @x
           Download (FTP): <ulink url="&gnumeric-download-ftp;"/>
 @y
-          Download (FTP): <ulink url="&gnumeric-download-ftp;"/>
+          &Download; (FTP): <ulink url="&gnumeric-download-ftp;"/>
 @z
 
 @x
           Download MD5 sum: &gnumeric-md5sum;
 @y
-          Download MD5 sum: &gnumeric-md5sum;
+          &Download; MD5 sum: &gnumeric-md5sum;
 @z
 
 @x
           Download size: &gnumeric-size;
 @y
-          Download size: &gnumeric-size;
+          &DownloadSize;: &gnumeric-size;
 @z
 
 @x
           Estimated disk space required: &gnumeric-buildsize;
 @y
-          Estimated disk space required: &gnumeric-buildsize;
+          &Estimateddiskspacerequired;: &gnumeric-buildsize;
 @z
 
 @x
           Estimated build time: &gnumeric-time;
 @y
-          Estimated build time: &gnumeric-time;
+          &Estimatedbuildtime;: &gnumeric-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Gnumeric Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">Gnumeric Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;Gnumeric&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -80,9 +80,9 @@
       <xref linkend="itstool"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="goffice010"/> and
+      <xref linkend="goffice010"/>,
       <xref linkend="itstool"/>
     </para>
 @z
@@ -98,13 +98,13 @@
       <xref role="runtime" linkend="yelp"/> for the built-in help functionality
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended Runtime</bridgehead>
+    <bridgehead renderas="sect4">&Recommended; 実行時</bridgehead>
     <para role="recommended">
       an icon theme such as
       <xref role="runtime" linkend="adwaita-icon-theme"/>,
       <xref role="nodep" linkend="oxygen-icons"/>, or
       <xref role="runtime" linkend="gnome-icon-theme"/>,
-      <xref role="runtime" linkend="x-window-system"/>, and
+      <xref role="runtime" linkend="x-window-system"/>,
       <xref role="runtime" linkend="yelp"/> for the built-in help functionality
     </para>
 @z
@@ -113,7 +113,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dconf"/> (to prevent some test failures),
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="pygobject3"/>,
       <xref linkend="valgrind"/> (for some tests),
 <!--  <xref linkend="guile"/>, Developer: support unmaintained-->
@@ -124,17 +124,17 @@
       <ulink url="https://frodo.looijaard.name/project/psiconv">Psiconv</ulink>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional</bridgehead>
+    <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dconf"/> (to prevent some test failures),
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="pygobject3"/>,
       <xref linkend="valgrind"/> (for some tests),
 <!--  <xref linkend="guile"/>, Developer: support unmaintained-->
       <ulink url="https://dblatex.sourceforge.net/">dblatex</ulink> (for PDF docs),
       <ulink url="https://www.gnome-db.org/">libgda</ulink>,
       <ulink url="https://www.mono-project.com/">Mono</ulink>,
-      <ulink url="https://pxlib.sourceforge.net/">pxlib</ulink>, and
+      <ulink url="https://pxlib.sourceforge.net/">pxlib</ulink>,
       <ulink url="https://frodo.looijaard.name/project/psiconv">Psiconv</ulink>
     </para>
 @z
@@ -142,27 +142,26 @@
 @x
     <title>Installation of Gnumeric</title>
 @y
-    <title>Installation of Gnumeric</title>
+    <title>&InstallationOf1;Gnumeric&InstallationOf2;</title>
 @z
 
 @x
       Install <application>Gnumeric</application> by running the following
       commands:
 @y
-      Install <application>Gnumeric</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>Gnumeric</application> をビルドします。
 @z
 
 @x
       This package must be installed before the test suite is run.
 @y
-      This package must be installed before the test suite is run.
+      テストスイートを実行するには、先に本パッケージをインストールしなければなりません。
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -180,7 +179,7 @@
 @x
     <title>Command Explanations</title>
 @y
-    <title>Command Explanations</title>
+    <title>&CommandExplanations;</title>
 @z
 
 @x
@@ -194,7 +193,7 @@
 @x
     <title>Contents</title>
 @y
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
@@ -202,9 +201,9 @@
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
@@ -224,8 +223,8 @@
         </seg>
 @y
         <seg>
-          gnumeric (symlink), gnumeric-&gnumeric-version;, ssconvert,
-          ssdiff, ssgrep, and ssindex
+          gnumeric (シンボリックリンク), gnumeric-&gnumeric-version;, ssconvert,
+          ssdiff, ssgrep, ssindex
         </seg>
         <seg>
           libspreadsheet.so
@@ -234,7 +233,7 @@
           /usr/include/libspreadsheet-1.12,
           /usr/lib/gnumeric,
           /usr/lib/goffice/0.10/plugins/gnumeric,
-          /usr/share/gnumeric, and
+          /usr/share/gnumeric,
           /usr/share/help/{C,cs,de,es}/gnumeric
         </seg>
 @z
@@ -242,13 +241,13 @@
 @x
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
 @y
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
 @x gnumeric
             is a symlink to <command>gnumeric-&gnumeric-version;</command>
 @y
-            is a symlink to <command>gnumeric-&gnumeric-version;</command>
+            <command>gnumeric-&gnumeric-version;</command> へのシンボリックリンク。
 @z
 
 @x gnumeric-&gnumeric-version;
@@ -288,5 +287,5 @@
 @x libspreadsheet.so
             contains the gnumeric API functions
 @y
-            contains the gnumeric API functions
+            gnumeric の API 関数を提供します。
 @z

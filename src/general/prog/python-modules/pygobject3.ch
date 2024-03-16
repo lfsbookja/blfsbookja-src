@@ -78,16 +78,16 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="gobject-introspection"/> and
+        &gobject-introspection; and
         <xref linkend="pycairo"/>
           (<application>Python 3</application> module)
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <xref linkend="gobject-introspection"/>,
+        &gobject-introspection; and
         <xref linkend="pycairo"/>
-          (<application>Python 3</application> モジュール)
+          (<application>Python 3</application> module)
       </para>
 @z
 

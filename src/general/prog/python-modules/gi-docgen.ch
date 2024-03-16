@@ -130,28 +130,24 @@
 @z
 
 @x
-      <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
+      <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
-        <xref linkend="pytest"/>
+        <xref role='runtime' linkend='graphviz'/> (runtime, for visualizing
+        class hierarchy graphs) and
+        <xref linkend="pytest"/> (for testing)
       </para>
 @y
-      <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
+      <bridgehead renderas="sect5">Optional</bridgehead>
       <para role="optional">
-        <xref linkend="pytest"/>
+        <xref role='runtime' linkend='graphviz'/> (runtime, for visualizing
+        class hierarchy graphs) and
+        <xref linkend="pytest"/> (for testing)
       </para>
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of gi-docgen</title>
 @y
-    <sect3 role="installation">
       <title>Installation of gi-docgen</title>
 @z
 

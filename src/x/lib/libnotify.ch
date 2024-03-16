@@ -84,12 +84,12 @@
 @x
     <bridgehead renderas="sect4">Optional (Required if building GNOME)</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>
+      &gobject-introspection;
     </para>
 @y
     <bridgehead renderas="sect4">&Optional; (GNOME のビルド時に必要)</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>
+      &gobject-introspection;
     </para>
 @z
 

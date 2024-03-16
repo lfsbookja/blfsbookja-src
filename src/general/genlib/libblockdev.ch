@@ -68,12 +68,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/>
+      <xref linkend="glib2"/> (GObject Introspection required for GNOME)
     </para>
 @z
 
@@ -81,7 +81,6 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="cryptsetup"/>,
-      <xref linkend="gobject-introspection"/> (required for GNOME),
       <xref linkend="keyutils"/>,
       <xref linkend="libbytesize"/>,
       <xref linkend="libnvme"/>, and
@@ -91,7 +90,6 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="cryptsetup"/>,
-      <xref linkend="gobject-introspection"/> (GNOME にて必要),
       <xref linkend="keyutils"/>,
       <xref linkend="libbytesize"/>,
       <xref linkend="libnvme"/>,

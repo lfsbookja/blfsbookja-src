@@ -21,7 +21,6 @@ CHANGE_FILES = \
 	glib2.ch                 \
 	glibmm.ch                \
 	gmime3.ch                \
-	gobject-introspection.ch \
 	gsl.ch                   \
 	gspell.ch                \
 	icu.ch                   \

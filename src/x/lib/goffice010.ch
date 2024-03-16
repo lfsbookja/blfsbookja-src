@@ -106,7 +106,7 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gs"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk-doc"/>,
@@ -117,7 +117,7 @@
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="gs"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="gtk-doc"/>,

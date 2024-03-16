@@ -97,7 +97,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gnome-keyring"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="libarchive"/>,
       <xref linkend="libsecret"/>, and
       <xref linkend="poppler"/>
@@ -106,7 +106,7 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gnome-keyring"/>,
-      <xref linkend="gobject-introspection"/>,
+      &gobject-introspection;,
       <xref linkend="libarchive"/>,
       <xref linkend="libsecret"/>,
       <xref linkend="poppler"/>
