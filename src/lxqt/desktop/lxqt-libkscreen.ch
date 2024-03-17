@@ -10,43 +10,17 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to libkscreen</title>
 @y
-  <sect2 role="package">
     <title>Introduction to libkscreen</title>
 @z
 
 @x
-    <para>
       The <application>libkscreen</application> package contains the
       KDE Screen Management library.
-    </para>
 @y
-    <para>
       The <application>libkscreen</application> package contains the
       KDE Screen Management library.
-    </para>
-@z
-
-@x
-    <important>
-      <para>
-        This package is extracted from the plasma set of packages.
-        If <xref linkend="plasma5-build"/> is built, do <emphasis
-        role="bold">NOT</emphasis> also build this package as presented
-        here.
-      </para>
-    </important>
-@y
-    <important>
-      <para>
-        This package is extracted from the plasma set of packages.
-        If <xref linkend="plasma5-build"/> is built, do <emphasis
-        role="bold">NOT</emphasis> also build this package as presented
-        here.
-      </para>
-    </important>
 @z
 
 @x
@@ -140,166 +114,78 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of libkscreen</title>
 @y
-  <sect2 role="installation">
     <title>Installation of libkscreen</title>
 @z
 
 @x
-    <para>
       Install <application>libkscreen</application> by running the
       following commands:
-    </para>
 @y
-    <para>
       Install <application>libkscreen</application> by running the
       following commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr        \
-      -DCMAKE_BUILD_TYPE=Release         \
-      -DCMAKE_INSTALL_LIBEXECDIR=libexec \
-      -DKDE_INSTALL_USE_QT_SYS_PATHS=ON  \
-      -DBUILD_TESTING=OFF                \
-      -Wno-dev ..                        &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr        \
-      -DCMAKE_BUILD_TYPE=Release         \
-      -DCMAKE_INSTALL_LIBEXECDIR=libexec \
-      -DKDE_INSTALL_USE_QT_SYS_PATHS=ON  \
-      -DBUILD_TESTING=OFF                \
-      -Wno-dev ..                        &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
-@x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-    <para revision="sysv">
+@x revision="sysv"
       Next, remove a systemd unit which serves no purpose on a SysV system as
       the &root; user:
-    </para>
 @y
-    <para revision="sysv">
       Next, remove a systemd unit which serves no purpose on a SysV system as
       the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root" revision="sysv"><userinput>rm -v /usr/lib/systemd/user/plasma-kscreen.service</userinput></screen>
-@y
-<screen role="root" revision="sysv"><userinput>rm -v /usr/lib/systemd/user/plasma-kscreen.service</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
       the default in extra-cmake-modules, which is <filename
       class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
-    </para>
 @y
-    <para>
       <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
       the default in extra-cmake-modules, which is <filename
       class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
       installation of Qt plugins in the same directory as <xref linkend="qt5"/>
       itself. Otherwise they get installed into <filename
       class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
-    </para>
 @y
-    <para>
       <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
       installation of Qt plugins in the same directory as <xref linkend="qt5"/>
       itself. Otherwise they get installed into <filename
       class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
@@ -340,15 +226,9 @@ make</userinput></screen>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
 @x
@@ -429,16 +309,4 @@ make</userinput></screen>
         </listitem>
       </varlistentry>
     </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

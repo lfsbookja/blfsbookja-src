@@ -118,23 +118,21 @@
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x
-      Install the main configuration file as the
-      <systemitem class="username">root</systemitem> user:
+      Install the main configuration file as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって、主要な設定ファイルをインストールします。
+      &root; ユーザーになって、主要な設定ファイルをインストールします。
 @z
 
 @x
-      If desired, install the API documentation as the
-      <systemitem class="username">root</systemitem> user:
+      If desired, install the API documentation as the &root; user:
 @y
-      API ドキュメントが必要な場合は <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      API ドキュメントが必要な場合は &root; ユーザーになって以下を実行します。
 @z
 
 @x
@@ -188,25 +186,25 @@
         during the install.  Additionally, there are three supplementary
         configuration files.  /etc/sysconfig/bluetooth is installed as a part
         of the boot script below.  In addition, you optionally can install the
-        following, as the <systemitem class="username">root</systemitem> user:
+        following, as the &root; user:
 @y
         <filename>/etc/bluetooth/main.conf</filename> is installed automatically
         during the install.  Additionally, there are three supplementary
         configuration files.  /etc/sysconfig/bluetooth is installed as a part
         of the boot script below.  In addition, you optionally can install the
-        following, as the <systemitem class="username">root</systemitem> user:
+        following, as the &root; user:
 @z
 
 @x revision="systemd"
         <filename>/etc/bluetooth/main.conf</filename> is installed automatically
         during the installation. Additionally, there are two supplementary
         configuration files. You can optionally install the following files
-        as the <systemitem class="username">root</systemitem> user:
+        as the &root; user:
 @y
         <filename>/etc/bluetooth/main.conf</filename> is installed automatically
         during the installation. Additionally, there are two supplementary
         configuration files. You can optionally install the following files
-        as the <systemitem class="username">root</systemitem> user:
+        as the &root; user:
 @z
 
 @x

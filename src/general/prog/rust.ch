@@ -223,10 +223,11 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="libssh2"/> and
+      <xref linkend="libssh2"/>,
       <xref linkend="llvm"/>
       (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
-      system LLVM instead of building its shipped version)
+      system LLVM instead of building its shipped version), and
+      <xref linkend="sqlite"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -234,7 +235,8 @@
       <xref linkend="libssh2"/>,
       <xref linkend="llvm"/>
       (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
-      system LLVM instead of building its shipped version)
+      system LLVM instead of building its shipped version),
+      <xref linkend="sqlite"/>
     </para>
 @z
 
@@ -465,21 +467,25 @@
 @x
         If <command>sudo</command> or <command>su</command> is invoked for
         switching to the &root; user, ensure
-        <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> is correctly passed or the
-        following command may completely rebuild this package.  For
-        <command>sudo</command>, use the
-        <option>--preserve-env=LIBSSH2_SYS_USE_PKG_CONFIG</option> option.
-        For <command>su</command>, do <emphasis>not</emphasis> use the
-        <option>-</option> or <option>--login</option> options.
+        <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> and
+        <envar>LIBSQLITE3_SYS_USE_PKG_CONFIG</envar> are correctly passed or
+        the following command may rebuild <command>cargo</command> with
+        shipped copies of libssh2 and sqlite.  For <command>sudo</command>,
+        use the
+        <option>--preserve-env=LIB{SSH2,SQLITE3}_SYS_USE_PKG_CONFIG</option>
+        option.  For <command>su</command>, do <emphasis>not</emphasis> use
+        the <option>-</option> or <option>--login</option> options.
 @y
         If <command>sudo</command> or <command>su</command> is invoked for
         switching to the &root; user, ensure
-        <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> is correctly passed or the
-        following command may completely rebuild this package.  For
-        <command>sudo</command>, use the
-        <option>--preserve-env=LIBSSH2_SYS_USE_PKG_CONFIG</option> option.
-        For <command>su</command>, do <emphasis>not</emphasis> use the
-        <option>-</option> or <option>--login</option> options.
+        <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> and
+        <envar>LIBSQLITE3_SYS_USE_PKG_CONFIG</envar> are correctly passed or
+        the following command may rebuild <command>cargo</command> with
+        shipped copies of libssh2 and sqlite.  For <command>sudo</command>,
+        use the
+        <option>--preserve-env=LIB{SSH2,SQLITE3}_SYS_USE_PKG_CONFIG</option>
+        option.  For <command>su</command>, do <emphasis>not</emphasis> use
+        the <option>-</option> or <option>--login</option> options.
 @z
 
 @x
@@ -503,9 +509,9 @@
 @z
 
 @x
-      Finally, unset the <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> variable:
+      Finally, unset the exported environment variables:
 @y
-      Finally, unset the <envar>LIBSSH2_SYS_USE_PKG_CONFIG</envar> variable:
+      Finally, unset the exported environment variables:
 @z
 
 @x

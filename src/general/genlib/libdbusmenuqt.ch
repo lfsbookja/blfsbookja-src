@@ -68,12 +68,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="qt5"/>
+      <xref linkend="qt5-alternate"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="qt5"/>
+      <xref linkend="qt5-alternate"/>
     </para>
 @z
 

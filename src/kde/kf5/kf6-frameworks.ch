@@ -85,70 +85,14 @@
 
 @x
   <bridgehead renderas="sect4">Required</bridgehead>
-  <para role="required">
-    <xref linkend="boost"/>,
-    <xref linkend="extra-cmake-modules"/>,
-    <xref linkend="DocBook"/>,
-    <xref linkend="docbook-xsl"/>,
-    <xref linkend="giflib"/>,
-    <xref linkend="libepoxy"/>,
-    <xref linkend="libgcrypt"/>,
-    <xref linkend="libical"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="libpng"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="lmdb"/>,
-    <xref linkend="qca"/>,
-    <xref linkend="qrencode"/>,
-    <xref linkend="phonon"/>,
-    <xref linkend="plasma-wayland-protocols"/>,
-    <xref linkend="shared-mime-info"/>,
-    <xref linkend="perl-uri"/>, and
-    <xref linkend="wget"/> (required to download the packages)
-  </para>
 @y
   <bridgehead renderas="sect4">&Required;</bridgehead>
-  <para role="required">
-    <xref linkend="boost"/>,
-    <xref linkend="extra-cmake-modules"/>,
-    <xref linkend="DocBook"/>,
-    <xref linkend="docbook-xsl"/>,
-    <xref linkend="giflib"/>,
-    <xref linkend="libepoxy"/>,
-    <xref linkend="libgcrypt"/>,
-    <xref linkend="libical"/>,
-    <xref linkend="libjpeg"/>,
-    <xref linkend="libpng"/>,
-    <xref linkend="libxslt"/>,
-    <xref linkend="lmdb"/>,
-    <xref linkend="qca"/>,
-    <xref linkend="qrencode"/>,
-    <xref linkend="phonon"/>,
-    <xref linkend="plasma-wayland-protocols"/>,
-    <xref linkend="shared-mime-info"/>,
-    <xref linkend="perl-uri"/>, and
-    <xref linkend="wget"/> (パッケージのダウンロードに必要)
-  </para>
 @z
 
 @x
   <bridgehead renderas="sect4">Recommended</bridgehead>
-  <para role="recommended">
-    <xref linkend="aspell"/> (Dictionary backend for Sonnet),
-    <xref linkend="avahi"/> (DNS-SD backend for KDNSSD),
-    <xref linkend="ModemManager"/> (needed to build ModemManager-Qt),
-    <xref linkend="NetworkManager"/> (needed to build NetworkManager-Qt), and
-    <xref linkend="polkit-qt"/> (Authentication backend for KAuth)
-  </para>
 @y
   <bridgehead renderas="sect4">&Recommended;</bridgehead>
-  <para role="recommended">
-    <xref linkend="aspell"/> (Dictionary backend for Sonnet),
-    <xref linkend="avahi"/> (DNS-SD backend for KDNSSD),
-    <xref linkend="ModemManager"/> (needed to build ModemManager-Qt),
-    <xref linkend="NetworkManager"/> (needed to build NetworkManager-Qt),
-    <xref linkend="polkit-qt"/> (Authentication backend for KAuth)
-  </para>
 @z
 
 @x role="recommended"
@@ -177,60 +121,20 @@
 
 @x
   <bridgehead renderas="sect4">Runtime dependency for FrameworkIntegration</bridgehead>
-  <para role="optional">
-<!--<xref role="runtime" linkend="oxygen-fonts"/> and-->
-    <xref role="runtime" linkend="noto-fonts"/>
-  </para>
 @y
   <bridgehead renderas="sect4">Runtime dependency for FrameworkIntegration</bridgehead>
-  <para role="optional">
-<!--<xref role="runtime" linkend="oxygen-fonts"/> and-->
-    <xref role="runtime" linkend="noto-fonts"/>
-  </para>
 @z
 
 @x
   <bridgehead renderas="sect4">Additional recommended dependencies for kapidox</bridgehead>
-  <para role="recommended">
-    <xref role="runtime" linkend="doxygen"/> (Run time),
-    <xref linkend="doxypypy"/>,
-    <xref linkend="doxyqml"/>,
-    <xref linkend="PyYAML"/>, and
-    <xref linkend="requests"/>
-  </para>
 @y
   <bridgehead renderas="sect4">Additional recommended dependencies for kapidox</bridgehead>
-  <para role="recommended">
-    <xref role="runtime" linkend="doxygen"/> (Run time),
-    <xref linkend="doxypypy"/>,
-    <xref linkend="doxyqml"/>,
-    <xref linkend="PyYAML"/>, and
-    <xref linkend="requests"/>
-  </para>
 @z
 
 @x
   <bridgehead renderas="sect4">Additional image formats support in KImageFormats</bridgehead>
-  <para role="optional">
-    <xref linkend="jasper"/>,
-    <xref linkend="libavif"/>,
-    <xref linkend="libraw"/>,
-    <ulink url="https://github.com/strukturag/libheif">libheif</ulink>,
-    <ulink url="https://github.com/libjxl/libjxl">libjxl</ulink>, and
-    <!-- www.openexr.com redirects here -->
-    <ulink url="https://github.com/AcademySoftwareFoundation/openexr">OpenEXR</ulink>
-  </para>
 @y
   <bridgehead renderas="sect4">Additional image formats support in KImageFormats</bridgehead>
-  <para role="optional">
-    <xref linkend="jasper"/>,
-    <xref linkend="libavif"/>,
-    <xref linkend="libraw"/>,
-    <ulink url="https://github.com/strukturag/libheif">libheif</ulink>,
-    <ulink url="https://github.com/libjxl/libjxl">libjxl</ulink>, and
-    <!-- www.openexr.com redirects here -->
-    <ulink url="https://github.com/AcademySoftwareFoundation/openexr">OpenEXR</ulink>
-  </para>
 @z
 
 @x

@@ -4,24 +4,24 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <title>Building Plasma 5</title>
+  <title>Building Plasma</title>
 @y
-  <title>Plasma 5 のビルド</title>
+  <title>Plasma のビルド</title>
 @z
 
 @x
-    KDE Plasma 5 is a collection of packages based on top of KDE Frameworks
-    5 and QML. They implement the KDE Display Environment (Plasma 5).
+    KDE Plasma is a collection of packages based on top of KDE Frameworks
+    and QML. They implement the KDE Display Environment (Plasma).
 @y
-    KDE Plasma 5 is a collection of packages based on top of KDE Frameworks
-    5 and QML. They implement the KDE Display Environment (Plasma 5).
+    KDE Plasma is a collection of packages based on top of KDE Frameworks
+    and QML. They implement the KDE Display Environment (Plasma).
 @z
 
 @x
-    The instructions below build all of the Plasma 5 packages in one
+    The instructions below build all of the Plasma packages in one
     step by using a bash script.
 @y
-    The instructions below build all of the Plasma 5 packages in one
+    The instructions below build all of the Plasma packages in one
     step by using a bash script.
 @z
 
@@ -32,175 +32,69 @@
 @z
 
 @x
-        Download (HTTP): <ulink url="&plasma5-download-http;"/>
+        Download (HTTP): <ulink url="&plasma-download-http;"/>
 @y
-        &Download; (HTTP): <ulink url="&plasma5-download-http;"/>
+        &Download; (HTTP): <ulink url="&plasma-download-http;"/>
 @z
 
 @x
-        Download (FTP): <ulink url="&plasma5-download-ftp;"/>
+        Download (FTP): <ulink url="&plasma-download-ftp;"/>
 @y
-        &Download; (FTP): <ulink url="&plasma5-download-ftp;"/>
+        &Download; (FTP): <ulink url="&plasma-download-ftp;"/>
 @z
 
 @x
-        Download MD5 sum: &plasma5-md5sum;
+        Download MD5 sum: &plasma-md5sum;
 @y
-        &Download; MD5 sum: &plasma5-md5sum;
+        &Download; MD5 sum: &plasma-md5sum;
 @z
 
 @x
-        Download size: &plasma5-size;
+        Download size: &plasma-size;
 @y
-        &DownloadSize;: &plasma5-size;
+        &DownloadSize;: &plasma-size;
 @z
 
 @x
-        Estimated disk space required: &plasma5-buildsize;
+        Estimated disk space required: &plasma-buildsize;
 @y
-        Estimated disk space required: &plasma5-buildsize;
+        Estimated disk space required: &plasma-buildsize;
 @z
 
 @x
-        Estimated build time: &plasma5-time;
+        Estimated build time: &plasma-time;
 @y
-        Estimated build time: &plasma5-time;
+        Estimated build time: &plasma-time;
 @z
 
 @x
-  <bridgehead renderas="sect3">Plasma 5 Dependencies</bridgehead>
+  <bridgehead renderas="sect3">Plasma Dependencies</bridgehead>
 @y
-  <bridgehead renderas="sect3">Plasma 5 Dependencies</bridgehead>
+  <bridgehead renderas="sect3">Plasma Dependencies</bridgehead>
 @z
 
 @x
   <bridgehead renderas="sect4">Required</bridgehead>
-  <para role="required">
-    <!--<xref linkend="gtk2"/>, Does not seem to be needed any more -->
-    <xref linkend="gtk3"/>,
-    <xref linkend="kf6-frameworks"/>,
-    <xref linkend="kuserfeedback"/>,
-    <xref linkend="libpwquality"/>,
-    <xref linkend="libqalculate"/>,
-    <xref linkend="libxcvt"/>,
-    <xref linkend="libxkbcommon"/>,
-    <xref linkend="mesa"/> built with <xref linkend="wayland"/>,
-    <xref linkend="NetworkManager"/>,
-    <xref linkend="pipewire"/>,
-    <xref linkend="pulseaudio"/>,
-    <xref linkend="qca"/>,
-    <xref linkend="sassc"/>,
-    <xref linkend="taglib"/>, and
-    <xref linkend="xcb-util-cursor"/>
-  </para>
 @y
   <bridgehead renderas="sect4">Required</bridgehead>
-  <para role="required">
-    <!--<xref linkend="gtk2"/>, Does not seem to be needed any more -->
-    <xref linkend="gtk3"/>,
-    <xref linkend="kf6-frameworks"/>,
-    <xref linkend="kuserfeedback"/>,
-    <xref linkend="libpwquality"/>,
-    <xref linkend="libqalculate"/>,
-    <xref linkend="libxcvt"/>,
-    <xref linkend="libxkbcommon"/>,
-    <xref linkend="mesa"/> built with <xref linkend="wayland"/>,
-    <xref linkend="NetworkManager"/>,
-    <xref linkend="pipewire"/>,
-    <xref linkend="pulseaudio"/>,
-    <xref linkend="qca"/>,
-    <xref linkend="sassc"/>,
-    <xref linkend="taglib"/>,
-    <xref linkend="xcb-util-cursor"/>
-  </para>
 @z
 
 @x
   <bridgehead renderas="sect4">Recommended</bridgehead>
-  <para role="recommended">
-    <xref linkend="fftw"/>,
-    <xref linkend="gsettings-desktop-schemas"/>,
-    <xref linkend="libdbusmenu-qt"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="libinput"/>,
-    <xref linkend="libpcap"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="lm_sensors"/>,
-    <xref linkend="oxygen-icons"/>, 
-    <xref linkend="pciutils"/>, and
-    <xref linkend="power-profiles-daemon"/> (for laptops)
-  </para>
 @y
   <bridgehead renderas="sect4">&Recommended;</bridgehead>
-  <para role="recommended">
-    <xref linkend="fftw"/>,
-    <xref linkend="gsettings-desktop-schemas"/>,
-    <xref linkend="libdbusmenu-qt"/>,
-    <xref linkend="libcanberra"/>,
-    <xref linkend="libinput"/>,
-    <xref linkend="libpcap"/>,
-    <xref linkend="linux-pam"/>,
-    <xref linkend="lm_sensors"/>,
-    <xref linkend="oxygen-icons"/>, 
-    <xref linkend="pciutils"/>,
-    <xref linkend="power-profiles-daemon"/> (for laptops)
-  </para>
 @z
 
 @x
   <bridgehead renderas="sect4">Recommended (runtime)</bridgehead>
-  <para role="recommended">
-    <xref role="runtime" linkend="accountsservice"/>,
-    <xref role="runtime" linkend="smartmontools"/>,
-    <xref role="runtime" linkend="xdg-desktop-portal"/>, and
-    <xref role="runtime" linkend="xwayland"/>
-  </para>
 @y
   <bridgehead renderas="sect4">&Recommended; (ランタイム)</bridgehead>
-  <para role="recommended">
-    <xref role="runtime" linkend="accountsservice"/>,
-    <xref role="runtime" linkend="smartmontools"/>,
-    <xref role="runtime" linkend="xdg-desktop-portal"/>,
-    <xref role="runtime" linkend="xwayland"/>
-  </para>
 @z
 
 @x
   <bridgehead renderas="sect4">Optional</bridgehead>
-  <para role="optional">
-    <xref linkend="appstream"/> (build with -qt=true),
-    <xref linkend="glu"/>,
-    <xref linkend='ibus'/>,
-    <xref linkend='qtwebengine'/>,
-    <xref linkend="xorg-synaptics-driver"/>,
-    <ulink url="https://www.kdevelop.org/">KDevPlatform</ulink>,
-    <ulink url="https://gpsd.gitlab.io/gpsd/">libgps</ulink>,
-    <ulink url="https://github.com/libhybris/libhybris">libhybris</ulink>,
-    <ulink url="https://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
-    <ulink url="https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</ulink>,
-    <ulink url="https://qalculate.github.io/">Qalculate</ulink>,
-    <ulink url="https://launchpad.net/qapt">Qapt</ulink>,
-    <ulink url="https://github.com/osiam/osiam">SCIM</ulink>, and
-    <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)
-  </para>
 @y
   <bridgehead renderas="sect4">Optional</bridgehead>
-  <para role="optional">
-    <xref linkend="appstream"/> (build with -qt=true),
-    <xref linkend="glu"/>,
-    <xref linkend='ibus'/>,
-    <xref linkend='qtwebengine'/>,
-    <xref linkend="xorg-synaptics-driver"/>,
-    <ulink url="https://www.kdevelop.org/">KDevPlatform</ulink>,
-    <ulink url="https://gpsd.gitlab.io/gpsd/">libgps</ulink>,
-    <ulink url="https://github.com/libhybris/libhybris">libhybris</ulink>,
-    <ulink url="https://sourceforge.net/projects/libraw1394/">libraw1394</ulink>,
-    <ulink url="https://www.freedesktop.org/software/PackageKit/releases/">packagekit-qt</ulink>,
-    <ulink url="https://qalculate.github.io/">Qalculate</ulink>,
-    <ulink url="https://launchpad.net/qapt">Qapt</ulink>,
-    <ulink url="https://github.com/osiam/osiam">SCIM</ulink>,
-    <ulink url="http://www.dest-unreach.org/socat/">socat</ulink> (for pam_kwallet)
-  </para>
 @z
 
 @x
@@ -303,9 +197,9 @@
 @z
 
 @x
-    <title>Installation of Plasma5</title>
+    <title>Installation of Plasma</title>
 @y
-    <title>Installation of Plasma5</title>
+    <title>Installation of Plasma</title>
 @z
 
 @x

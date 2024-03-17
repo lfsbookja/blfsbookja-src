@@ -12,10 +12,8 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to qt5 (alternate)</title>
 @y
-  <sect2 role="package">
     <title>Introduction to qt5 (alternate)</title>
 @z
 
@@ -49,7 +47,7 @@
          packages in BLFS. This page, and the next, are provided to
          reduce the amount of time, space, and dependencies needed
          to build these packages. <!--They are not recommended if you will build
-         the <xref linkend="kf5- frameworks"/> based <xref linkend="plasma5-build"/> desktop
+         the <xref linkend="kf5- frameworks"/> based <xref linkend="plasma-build"/> desktop
          environment.-->
 @y
          The full <application>qt5</application> package consists of 43 separate
@@ -59,7 +57,7 @@
          packages in BLFS. This page, and the next, are provided to
          reduce the amount of time, space, and dependencies needed
          to build these packages. <!--They are not recommended if you will build
-         the <xref linkend="kf5- frameworks"/> based <xref linkend="plasma5-build"/> desktop
+         the <xref linkend="kf5- frameworks"/> based <xref linkend="plasma-build"/> desktop
          environment.-->
 @z
 
@@ -211,85 +209,19 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="alsa-lib"/>,
-      <xref linkend="at-spi2-core"/>,
-      <xref linkend="cups"/>,
-      <phrase revision='sysv'><xref linkend="dbus"/>,</phrase>
-      <xref linkend="double-conversion"/>,
-      <xref linkend="glib2"/>,
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="wayland"/> (<application>Mesa</application>
-      must be built with <application>Wayland</application> EGL
-      backend),
-      <xref linkend="xcb-util-image"/>,
-      <xref linkend="xcb-util-keysyms"/>,
-      <xref linkend="xcb-util-renderutil"/>, and
-      <xref linkend="xcb-util-wm"/>
-    </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="alsa-lib"/>,
-      <xref linkend="at-spi2-core"/>,
-      <xref linkend="cups"/>,
-      <phrase revision='sysv'><xref linkend="dbus"/>,</phrase>
-      <xref linkend="double-conversion"/>,
-      <xref linkend="glib2"/>,
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="wayland"/> (<application>Mesa</application>
-      must be built with <application>Wayland</application> EGL
-      backend),
-      <xref linkend="xcb-util-image"/>,
-      <xref linkend="xcb-util-keysyms"/>,
-      <xref linkend="xcb-util-renderutil"/>, and
-      <xref linkend="xcb-util-wm"/>
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="gtk3"/>,
-      <xref linkend="libinput"/>
-      <xref linkend="mariadb"/>
-        or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="mtdev"/>
-      <xref linkend="postgresql"/>, and
-      <xref linkend="unixodbc"/>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="gtk3"/>,
-      <xref linkend="libinput"/>
-      <xref linkend="mariadb"/>
-        or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="mtdev"/>
-      <xref linkend="postgresql"/>, and
-      <xref linkend="unixodbc"/>
-    </para>
 @z
 
 @x
-  <sect2 role="qt5-prefix">
     <title>Setting the installation prefix</title>
 @y
-  <sect2 role="qt5-prefix">
     <title>Setting the installation prefix</title>
 @z
 
@@ -358,10 +290,8 @@
 @z
 
 @x
-  <sect2 role="installation">
     <title>Installation of qt5</title>
 @y
-  <sect2 role="installation">
     <title>Installation of qt5</title>
 @z
 
@@ -558,10 +488,8 @@
 @z
 
 @x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
@@ -690,18 +618,14 @@
 @z
 
 @x
-  <sect2 role="configuration">
     <title>Configuring qt5</title>
 @y
-  <sect2 role="configuration">
     <title>Configuring qt5</title>
 @z
 
 @x
-    <sect3 id="qt5-alt-config">
       <title>Configuration Information</title>
 @y
-    <sect3 id="qt5-alt-config">
       <title>Configuration Information</title>
 @z
 
@@ -815,166 +739,6 @@
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
-@z
-
-@x
-      <seglistitem>
-        <seg>
-          assistant, designer, fixqt4headers.pl, lconvert,
-          linguist, lprodump, lrelease, lrelease-pro, lupdate, lupdate-pro,
-          moc, pixeltool, qcollectiongenerator, qdbus, qdbuscpp2xml,
-          qdbusviewer, qdbusxml2cpp, qdistancefieldgenerator, qdoc,
-          qhelpgenerator, qlalr, qmake, qml, qmlcachegen, qmleasing,
-          qmlformat, qmlimportscanner, qmllint, qmlmin, qmlplugindump,
-          qmlpreview, qmlprofiler, qmlscene, qmltestrunner, qmltime,
-          qmltyperegistrar,
-          qtattributionscanner, qtdiag, qtpaths, qtplugininfo,
-          qtwaylandscanner, qvkgen, rcc, syncqt.pl, tracegen, and
-          uic
-        </seg>
-        <seg>
-          libQt5AccessibilitySupport.a,
-          libQt5Bootstrap.a,
-          libQt5Concurrent.so,
-          libQt5Core.so,
-          libQt5DBus.so,
-          libQt5Designer.so,
-          libQt5DesignerComponents.so,
-          libQt5DeviceDiscoverySupport.a,
-          libQt5EdidSupport.a,
-          libQt5EglFSDeviceIntegration.so,
-          libQt5EglFsKmsSupport.so,
-          libQt5EglSupport.a,
-          libQt5EventDispatcherSupport.a,
-          libQt5FbSupport.a,
-          libQt5FontDatabaseSupport.a,
-          libQt5GlxSupport.a,
-          libQt5Gui.so,
-          libQt5Help.so,
-          libQt5InputSupport.a,
-          libQt5KmsSupport.a,
-          libQt5LinuxAccessibilitySupport.a,
-          libQt5Network.so,
-          libQt5OpenGL.so,
-          libQt5OpenGLExtensions.a,
-          libQt5PacketProtocol.a,
-          libQt5PlatformCompositorSupport.a,
-          libQt5PrintSupport.so,
-          libQt5Qml.so,
-          libQt5QmlDebug.a,
-          libQt5QmlDevTools.a,
-          libQt5QmlModels.so,
-          libQt5QmlWorkerScript.so,
-          libQt5Quick.so,
-          libQt5QuickParticles.so,
-          libQt5QuickShapes.so,
-          libQt5QuickTest.so,
-          libQt5QuickWidgets.so,
-          libQt5ServiceSupport.a,
-          libQt5Sql.so,
-          libQt5Svg.so,
-          libQt5Test.so,
-          libQt5ThemeSupport.a,
-          libQt5UiTools.a,
-          libQt5WaylandClient.so,
-          libQt5WaylandCompositor.so,
-          libQt5Widgets.so,
-          libQt5X11Extras.so,
-          libQt5XcbQpa.so,
-          libQt5XkbCommonSupport.a,
-          libQt5Xml.so,
-          and several plugins under /opt/qt5/{plugins,qml}
-        </seg>
-        <seg>
-          /usr/include/qt5,
-          /usr/lib/qt5,
-          /usr/share/doc/qt5, and
-          /usr/share/qt5
-          OR
-          /opt/qt5 and
-          /opt/qt-&qt5-version;
-        </seg>
-      </seglistitem>
-    </segmentedlist>
-@y
-      <seglistitem>
-        <seg>
-          assistant, designer, fixqt4headers.pl, lconvert,
-          linguist, lprodump, lrelease, lrelease-pro, lupdate, lupdate-pro,
-          moc, pixeltool, qcollectiongenerator, qdbus, qdbuscpp2xml,
-          qdbusviewer, qdbusxml2cpp, qdistancefieldgenerator, qdoc,
-          qhelpgenerator, qlalr, qmake, qml, qmlcachegen, qmleasing,
-          qmlformat, qmlimportscanner, qmllint, qmlmin, qmlplugindump,
-          qmlpreview, qmlprofiler, qmlscene, qmltestrunner, qmltime,
-          qmltyperegistrar,
-          qtattributionscanner, qtdiag, qtpaths, qtplugininfo,
-          qtwaylandscanner, qvkgen, rcc, syncqt.pl, tracegen, and
-          uic
-        </seg>
-        <seg>
-          libQt5AccessibilitySupport.a,
-          libQt5Bootstrap.a,
-          libQt5Concurrent.so,
-          libQt5Core.so,
-          libQt5DBus.so,
-          libQt5Designer.so,
-          libQt5DesignerComponents.so,
-          libQt5DeviceDiscoverySupport.a,
-          libQt5EdidSupport.a,
-          libQt5EglFSDeviceIntegration.so,
-          libQt5EglFsKmsSupport.so,
-          libQt5EglSupport.a,
-          libQt5EventDispatcherSupport.a,
-          libQt5FbSupport.a,
-          libQt5FontDatabaseSupport.a,
-          libQt5GlxSupport.a,
-          libQt5Gui.so,
-          libQt5Help.so,
-          libQt5InputSupport.a,
-          libQt5KmsSupport.a,
-          libQt5LinuxAccessibilitySupport.a,
-          libQt5Network.so,
-          libQt5OpenGL.so,
-          libQt5OpenGLExtensions.a,
-          libQt5PacketProtocol.a,
-          libQt5PlatformCompositorSupport.a,
-          libQt5PrintSupport.so,
-          libQt5Qml.so,
-          libQt5QmlDebug.a,
-          libQt5QmlDevTools.a,
-          libQt5QmlModels.so,
-          libQt5QmlWorkerScript.so,
-          libQt5Quick.so,
-          libQt5QuickParticles.so,
-          libQt5QuickShapes.so,
-          libQt5QuickTest.so,
-          libQt5QuickWidgets.so,
-          libQt5ServiceSupport.a,
-          libQt5Sql.so,
-          libQt5Svg.so,
-          libQt5Test.so,
-          libQt5ThemeSupport.a,
-          libQt5UiTools.a,
-          libQt5WaylandClient.so,
-          libQt5WaylandCompositor.so,
-          libQt5Widgets.so,
-          libQt5X11Extras.so,
-          libQt5XcbQpa.so,
-          libQt5XkbCommonSupport.a,
-          libQt5Xml.so,
-          and several plugins under /opt/qt5/{plugins,qml}
-        </seg>
-        <seg>
-          /usr/include/qt5,
-          /usr/lib/qt5,
-          /usr/share/doc/qt5, and
-          /usr/share/qt5
-          OR
-          /opt/qt5 and
-          /opt/qt-&qt5-version;
-        </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x

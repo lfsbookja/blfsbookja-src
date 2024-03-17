@@ -8,8 +8,6 @@ CHANGE_FILES = \
 	introduction.ch             \
 	kde.ch                      \
 	kde-intro.ch                \
-	kuserfeedback.ch            \
-	libdbusmenuqt.ch            \
 	phonon.ch                   \
 	phonon-backend-vlc.ch       \
 	plasma-wayland-protocols.ch \
