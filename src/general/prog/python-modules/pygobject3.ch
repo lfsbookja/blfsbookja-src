@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pygobject3-buildsize     "13 MB (add 2.5 MB for tests)">
+  <!ENTITY pygobject3-buildsize     "7.0 MB (add 2.5 MB for tests)">
   <!ENTITY pygobject3-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY pygobject3-buildsize     "13 MB (add 2.5 MB for tests)">
+  <!ENTITY pygobject3-buildsize     "7.0 MB (add 2.5 MB for tests)">
   <!ENTITY pygobject3-time          "0.3 SBU (with tests)">
 @z
 

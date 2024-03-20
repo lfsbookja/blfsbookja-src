@@ -31,6 +31,7 @@ CHANGE_FILES = \
 	json-glib.ch             \
 	keyutils.ch              \
 	keyutils-test-kernel.ch  \
+	kirigami-addons.ch       \
 	libaio.ch                \
 	libarchive.ch            \
 	libassuan.ch             \
@@ -41,6 +42,7 @@ CHANGE_FILES = \
 	libcloudproviders.ch     \
 	libdaemon.ch             \
 	libdbusmenuqt.ch         \
+	libdisplay-info.ch       \
 	libgcrypt.ch             \
 	libgpg-error.ch          \
 	libgrss.ch               \
@@ -73,7 +75,6 @@ CHANGE_FILES = \
 	libusb-kernel.ch         \
 	libuv.ch                 \
 	libwacom.ch              \
-	libwpe.ch                \
 	libxkbcommon.ch          \
 	libxml2.ch               \
 	libxmlb.ch               \
@@ -88,6 +89,7 @@ CHANGE_FILES = \
 	pcre2.ch                 \
 	popt.ch                  \
 	qca.ch                   \
+	qcoro.ch                 \
 	spidermonkey.ch          \
 	spirv-headers.ch         \
 	spirv-tools.ch           \
@@ -98,7 +100,6 @@ CHANGE_FILES = \
 	utfcpp.ch                \
 	wayland.ch               \
 	wayland-protocols.ch     \
-	wpebackend-fdo.ch        \
 	wv.ch                    \
 	xapian.ch
 

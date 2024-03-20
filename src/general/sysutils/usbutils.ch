@@ -79,28 +79,8 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-<!-- git is required by autogen.sh. If using the tarball on kernel.org,
-     autogen.sh does not need to be run. If using the github source,
-     autogen.sh needs to be run, and git is used to pull the usbhid-dump
-     submodule.
-      <xref linkend="git"/> and -->
-      <xref linkend="wget"/>
-<!-- In the systemd book, a unit/timer is installed to update the
-     usb.ids file automatically. wget is used in the instructions below. -->
-    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-<!-- git is required by autogen.sh. If using the tarball on kernel.org,
-     autogen.sh does not need to be run. If using the github source,
-     autogen.sh needs to be run, and git is used to pull the usbhid-dump
-     submodule.
-      <xref linkend="git"/> and -->
-      <xref linkend="wget"/>
-<!-- In the systemd book, a unit/timer is installed to update the
-     usb.ids file automatically. wget is used in the instructions below. -->
-    </para>
 @z
 
 @x
@@ -129,12 +109,11 @@
 @z
 
 @x
-      To install the <filename>usb.ids</filename> data file, using
-      <xref linkend="wget"/>, run, as the
-      <systemitem class="username">root</systemitem> user:
+      For the <filename>usb.ids</filename> data file, install the
+      <xref linkend='hwdata'/> package.
 @y
-      データファイル <filename>usb.ids</filename> をインストールするには <xref
-      linkend="wget"/> を利用し <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      <filename>usb.ids</filename> データファイルを利用するため <xref
+      linkend='hwdata'/> パッケージをインストールします。
 @z
 
 @x
@@ -147,55 +126,6 @@
       easily readable form than <command>lsusb</command>. To find the options,
       use <command>lsusb.py -h</command>. One form of use recommended by the
       developer is <command>lsusb.py -ciu</command>.
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <command>sed ... lsusb.py</command>: Instructs lsusb.py where to search
-      <filename>usb.ids</filename>.
-@y
-      <command>sed ... lsusb.py</command>: Instructs lsusb.py where to search
-      <filename>usb.ids</filename>.
-@z
-
-@x
-    <title>Configuring USB Utils</title>
-@y
-    <title>&Configuring1;USB Utils&Configuring2;</title>
-@z
-
-@x
-      The <filename>usb.ids</filename> data file is constantly being updated.
-      To get a current version of this file, using <xref linkend="wget"/>,
-      periodically run again, as the
-      <systemitem class="username">root</systemitem> user:
-@y
-      <filename>usb.ids</filename> というデータファイルは常に更新されています。
-      最新版を入手するには <systemitem
-      class="username">root</systemitem> ユーザーになり <xref linkend="wget"/> コマンドを使って定期的に以下を実行します。
-@z
-
-@x
-      You should update the <filename>/usr/share/hwdata/usb.ids</filename> file
-      periodically. <phrase revision="sysv">If you've installed
-      <xref linkend="fcron"/> and completed the section on periodic jobs,
-      execute</phrase><phrase revision="systemd">Execute</phrase> the following       commands, as the  <systemitem class="username">root</systemitem> user,
-      to create a <phrase revision="sysv">weekly cron job:</phrase>
-      <phrase revision="systemd">systemd timer to update it weekly on Sundays
-      at 2:30 A.M. (local time):</phrase>
-@y
-      You should update the <filename>/usr/share/hwdata/usb.ids</filename> file
-      periodically. <phrase revision="sysv">If you've installed
-      <xref linkend="fcron"/> and completed the section on periodic jobs,
-      execute</phrase><phrase revision="systemd">Execute</phrase> the following       commands, as the  <systemitem class="username">root</systemitem> user,
-      to create a <phrase revision="sysv">weekly cron job:</phrase>
-      <phrase revision="systemd">systemd timer to update it weekly on Sundays
-      at 2:30 A.M. (local time):</phrase>
 @z
 
 @x

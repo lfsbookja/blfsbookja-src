@@ -71,6 +71,7 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
+      <xref linkend="gcr4"/>,
       <xref linkend="libusb"/>, and
       <xref linkend="libsecret"/>
     </para>
@@ -79,6 +80,7 @@
     <para role="required">
       <xref linkend="dbus"/>,
       <xref linkend="glib2"/>,
+      <xref linkend="gcr4"/>,
       <xref linkend="libusb"/>,
       <xref linkend="libsecret"/>
     </para>
@@ -87,7 +89,6 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libcdio"/>,
       <xref linkend="libgudev"/>,
@@ -100,7 +101,6 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="gcr"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libcdio"/>,
       <xref linkend="libgudev"/>,

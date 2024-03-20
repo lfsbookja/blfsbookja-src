@@ -71,110 +71,20 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="cairo"/>,
-      <xref linkend="cmake"/>,
-      <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="gst10-plugins-bad"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="gtk4"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="libgudev"/>,
-      <xref linkend="libsecret"/>,
-      <xref linkend="libsoup3"/>,
-      <xref linkend="libtasn1"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="openjpeg2"/>,
-      <xref linkend="ruby"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="unifdef"/>,
-      <xref linkend="which"/>, and
-      <xref linkend="wpebackend-fdo"/>
-    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="cairo"/>,
-      <xref linkend="cmake"/>,
-      <xref linkend="gst10-plugins-base"/>,
-      <xref linkend="gst10-plugins-bad"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="gtk4"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="libgudev"/>,
-      <xref linkend="libsecret"/>,
-      <xref linkend="libsoup3"/>,
-      <xref linkend="libtasn1"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="openjpeg2"/>,
-      <xref linkend="ruby"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="unifdef"/>,
-      <xref linkend="which"/>, and
-      <xref linkend="wpebackend-fdo"/>
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="bubblewrap"/>,
-      <xref linkend="enchant"/>,
-      <xref linkend="geoclue2"/>,
-      &gobject-introspection;,
-      <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="libavif"/>,
-      <xref linkend="libseccomp"/>, and
-      <xref linkend="xdg-dbus-proxy"/>
-    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="bubblewrap"/>,
-      <xref linkend="enchant"/>,
-      <xref linkend="geoclue2"/>,
-      &gobject-introspection;,
-      <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="libavif"/>,
-      <xref linkend="libseccomp"/>,
-      <xref linkend="xdg-dbus-proxy"/>
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <!--<xref linkend="bubblewrap"/>,-->
-      <xref linkend="gi-docgen"/>,
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="wayland"/>,
-      <xref linkend="woff2"/>,
-      <ulink url="https://ccache.dev/">ccache</ulink>,
-      <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <!--<ulink url="https://github.com/AOMediaCodec/libavif">libavif</ulink>,-->
-      <ulink url="https://github.com/libjxl/libjxl">libjxl</ulink>, and
-      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>
-      <!--<ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>-->
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <!--<xref linkend="bubblewrap"/>,-->
-      <xref linkend="gi-docgen"/>,
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="wayland"/>,
-      <xref linkend="woff2"/>,
-      <ulink url="https://ccache.dev/">ccache</ulink>,
-      <ulink url="https://sourceforge.net/projects/hunspell/files/Hyphen/">Hyphen</ulink>,
-      <!--<ulink url="https://github.com/AOMediaCodec/libavif">libavif</ulink>,-->
-      <ulink url="https://github.com/libjxl/libjxl">libjxl</ulink>, and
-      <ulink url="https://gnome.pages.gitlab.gnome.org/libmanette/">libmanette</ulink>
-      <!--<ulink url="https://github.com/flatpak/xdg-dbus-proxy">xdg-dbus-proxy</ulink>-->
-    </para>
 @z
 
 @x
@@ -237,48 +147,6 @@
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-        <seg>
-<!-- Moved to /usr/libexec/webkit2gtk-4.0, so shouldn't appear here
-          jsc,
-          MiniBrowser, and -->
-          WebKitWebDriver
-        </seg>
-        <seg>
-          libjavascriptcoregtk-4.1.so,
-          libjavascriptcoregtk-6.0.so,
-          libwebkit2gtk-4.1.so, and
-          libwebkitgtk-6.0.so
-        </seg>
-        <seg>
-          /usr/include/webkitgtk-4.1,
-          /usr/include/webkitgtk-6.0,
-          /usr/lib{,exec}/webkit2gtk-4.1,
-          /usr/lib{,exec}/webkitgtk-6.0, and
-          /usr/share/gtk-doc/html/{jsc-glib,webkit2gtk{,-web-extension}}-4.1
-        </seg>
-@y
-        <seg>
-<!-- Moved to /usr/libexec/webkit2gtk-4.0, so shouldn't appear here
-          jsc,
-          MiniBrowser, and -->
-          WebKitWebDriver
-        </seg>
-        <seg>
-          libjavascriptcoregtk-4.1.so,
-          libjavascriptcoregtk-6.0.so,
-          libwebkit2gtk-4.1.so,
-          libwebkitgtk-6.0.so
-        </seg>
-        <seg>
-          /usr/include/webkitgtk-4.1,
-          /usr/include/webkitgtk-6.0,
-          /usr/lib{,exec}/webkit2gtk-4.1,
-          /usr/lib{,exec}/webkitgtk-6.0,
-          /usr/share/gtk-doc/html/{jsc-glib,webkit2gtk{,-web-extension}}-4.1
-        </seg>
 @z
 
 @x

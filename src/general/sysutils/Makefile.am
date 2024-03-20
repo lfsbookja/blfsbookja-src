@@ -25,6 +25,7 @@ CHANGE_FILES = \
 	gpm.ch                          \
 	gpm-kernel.ch                   \
 	hdparm.ch                       \
+	hwdata.ch                       \
 	lm_sensors.ch                   \
 	lm_sensors-kernel.ch            \
 	logrotate.ch                    \
@@ -54,6 +55,7 @@ CHANGE_FILES = \
 	upower-systemd-kernel.ch        \
 	usbutils.ch                     \
 	which.ch                        \
+	xdotool.ch                      \
 	zip.ch
 
 include $(top_srcdir)/build-aux/main.mk

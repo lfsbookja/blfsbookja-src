@@ -196,9 +196,9 @@
 @z
 
 @x db4-entities.pl
-            is a script to convert DocBook 4.x filed to DocBook 5.1
+            is a script to convert DocBook 4.x files to DocBook 5.1
 @y
-            is a script to convert DocBook 4.x filed to DocBook 5.1
+            is a script to convert DocBook 4.x files to DocBook 5.1
 @z
 
 @x

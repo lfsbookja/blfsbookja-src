@@ -94,34 +94,20 @@
 @x
   <bridgehead renderas="sect4">Optional</bridgehead>
 @y
-  <bridgehead renderas="sect4">Optional</bridgehead>
+  <bridgehead renderas="sect4">&Optional;</bridgehead>
 @z
 
 @x
-      <xref linkend="qtwebengine"/> is required for aura-browser.
-      It is also optional for two other packages:
-      libksysguard and kdeplasma-addons. If QtWebEngine is installed later,
-      only these two packages need to be rebuilt. This allows
-      a more complete display in the system monitor application.
+    <title>Downloading KDE Plasma</title>
 @y
-      <xref linkend="qtwebengine"/> is required for aura-browser.
-      It is also optional for two other packages:
-      libksysguard and kdeplasma-addons. If QtWebEngine is installed later,
-      only these two packages need to be rebuilt. This allows
-      a more complete display in the system monitor application.
+    <title>Downloading KDE Plasma</title>
 @z
 
 @x
-    <title>Downloading KDE Plasma5</title>
-@y
-    <title>Downloading KDE Plasma5</title>
-@z
-
-@x
-      The easiest way to get the KDE Plasma5 packages is to use a single
+      The easiest way to get the KDE Plasma packages is to use a single
       <command>wget</command> to fetch them all at once:
 @y
-      The easiest way to get the KDE Plasma5 packages is to use a single
+      The easiest way to get the KDE Plasma packages is to use a single
       <command>wget</command> to fetch them all at once:
 @z
 
@@ -140,9 +126,9 @@
 @z
 
 @x
-      <title>About Commented out Packages</title>
+      <title>About Commented Out Packages</title>
 @y
-      <title>About Commented out Packages</title>
+      <title>About Commented Out Packages</title>
 @z
 @x
         The breeze-grub, breeze-plymouth, and plymouth-kcm packages above are
@@ -158,17 +144,19 @@
 
         The plasma-mobile package provides phone functionality for Plasma.
         
-        The aura-browser package requires <xref linkend="qtwebengine"/>.
-        
         The discover package requires <xref linkend="appstream"/> to be built
-        with the -Dqt=true switch. The discover-5.27.10.1 version of the 
-        package is an update to the previous version.
+        with the -Dqt=true switch.
         
         The plasma-welcome package requires the external package
           <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
         kaccounts-integration</ulink>.
         
         The flatpack-kcm package is for managing support of flatpack applications.
+
+        The plasma-browser-integration package is only used by plasma-meta which is
+        not installed by BLFS.
+
+        The wacomtablet application requires plasma5 support.
 @y
         The breeze-grub, breeze-plymouth, and plymouth-kcm packages above are
         all for customized support of <ulink
@@ -183,17 +171,19 @@
 
         The plasma-mobile package provides phone functionality for Plasma.
         
-        The aura-browser package requires <xref linkend="qtwebengine"/>.
-        
         The discover package requires <xref linkend="appstream"/> to be built
-        with the -Dqt=true switch. The discover-5.27.10.1 version of the 
-        package is an update to the previous version.
+        with the -Dqt=true switch.
         
         The plasma-welcome package requires the external package
           <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
         kaccounts-integration</ulink>.
         
         The flatpack-kcm package is for managing support of flatpack applications.
+
+        The plasma-browser-integration package is only used by plasma-meta which is
+        not installed by BLFS.
+
+        The wacomtablet application requires plasma5 support.
 @z
 
 @x

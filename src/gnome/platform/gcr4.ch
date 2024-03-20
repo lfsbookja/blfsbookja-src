@@ -183,12 +183,12 @@
 @z
 
 @x
-      <option>-Dgtk=false</option>: Use this switch if you
+      <option>-Dgtk4=false</option>: Use this switch if you
       haven't installed <xref linkend="gtk4"/>. Note that
       <application>gcr-viewer</application> will not be installed
       if this is passed to meson.
 @y
-      <option>-Dgtk=false</option>: Use this switch if you
+      <option>-Dgtk4=false</option>: Use this switch if you
       haven't installed <xref linkend="gtk4"/>. Note that
       <application>gcr-viewer</application> will not be installed
       if this is passed to meson.

@@ -114,49 +114,6 @@
 @z
 
 @x
-    <title>Configuring PCI Utils</title>
-@y
-    <title>&Configuring1;PCI Utils&Configuring2;</title>
-@z
-
-@x
-      The <filename>pci.ids</filename> data file is constantly being
-      updated. To get a current version of this file, run
-      <command>update-pciids</command> as the <systemitem
-      class="username">root</systemitem> user. This program requires the
-      <xref linkend="which"/> script or program to find <xref linkend="curl"/>,
-      <xref linkend="lynx"/>, or <xref linkend="wget"/> which are used to
-      download the most current file, and then replace the existing file in
-      <filename class="directory">/usr/share/hwdata</filename>.
-@y
-      <filename>pci.ids</filename> データファイルは、常に更新が行われています。
-      最新版を入手する場合は <systemitem class="username">root</systemitem> ユーザーになって <command>update-pciids</command> コマンドを実行します。
-      このプログラムは <xref linkend="curl"/>、<xref linkend="wget"/>、<xref linkend="lynx"/> が存在しているかどうかを調べるために <xref linkend="which"/> を用いています。
-      三つのプログラムのいずれかを使って、最新のデータファイルをダウンロードするものです。
-      ダウンロードが出来たら <filename class='directory'>/usr/share/hwdata</filename> ディレクトリ配下にあるファイルが上書きされます。
-@z
-
-@x
-      You should update the <filename>/usr/share/hwdata/pci.ids</filename> file
-      periodically. <phrase revision="sysv">If you've installed
-      <xref linkend="fcron"/> and completed the section on periodic jobs,
-      execute</phrase><phrase revision="systemd">Execute</phrase> the following
-      commands, as the  <systemitem class="username">root</systemitem> user,
-      to create a <phrase revision="sysv">weekly cron job:</phrase>
-      <phrase revision="systemd">systemd timer to update it weekly on Sundays
-      at 2:30 A.M. (local time):</phrase>
-@y
-      You should update the <filename>/usr/share/hwdata/pci.ids</filename> file
-      periodically. <phrase revision="sysv">If you've installed
-      <xref linkend="fcron"/> and completed the section on periodic jobs,
-      execute</phrase><phrase revision="systemd">Execute</phrase> the following
-      commands, as the  <systemitem class="username">root</systemitem> user,
-      to create a <phrase revision="sysv">weekly cron job:</phrase>
-      <phrase revision="systemd">systemd timer to update it weekly on Sundays
-      at 2:30 A.M. (local time):</phrase>
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -174,7 +131,7 @@
 
 @x
         <seg>
-          lspci, setpci, and update-pciids
+          lspci and setpci
         </seg>
         <seg>
           libpci.so
@@ -184,7 +141,7 @@
         </seg>
 @y
         <seg>
-          lspci, setpci, update-pciids
+          lspci, setpci
         </seg>
         <seg>
           libpci.so
@@ -212,18 +169,6 @@
             is a utility for querying and configuring PCI devices
 @y
             is a utility for querying and configuring PCI devices
-@z
-
-@x update-pciids
-             fetches the current version of the PCI ID list. <!-- Requires
-            <xref linkend="curl"/>, <xref linkend="lynx"/> or
-            <xref linkend="wget"/>.
-            -->
-@y
-             fetches the current version of the PCI ID list. <!-- Requires
-            <xref linkend="curl"/>, <xref linkend="lynx"/> or
-            <xref linkend="wget"/>.
-            -->
 @z
 
 @x libpci.so
