@@ -157,32 +157,23 @@
       Install <application>elogind</application> by running the following
       commands:
 @y
-      Install <application>elogind</application> by running the following
-      commands:
+      以下のコマンドを実行して <application>elogind</application> をビルドします。
 @z
 
 @x
       To test the results, issue: <command>ninja test</command>. A few tests
-      are skipped if not run with <systemitem class="username">root</systemitem>
-      privileges.  Two tests named <filename>test-fs-util</filename> and
-      <filename>test-id128</filename> require the
-      <filename>/etc/machine-id</filename> symlink, so they will fail if
-      this symlink is not created following the instruction in
-      <xref linkend='dbus'/> yet.
+      are skipped if not run with &root; privileges.  
+      One test, <filename>test-fs-util</filename> is known to fail.
 @y
       To test the results, issue: <command>ninja test</command>. A few tests
-      are skipped if not run with <systemitem class="username">root</systemitem>
-      privileges.  Two tests named <filename>test-fs-util</filename> and
-      <filename>test-id128</filename> require the
-      <filename>/etc/machine-id</filename> symlink, so they will fail if
-      this symlink is not created following the instruction in
-      <xref linkend='dbus'/> yet.
+      are skipped if not run with &root; privileges.  
+      One test, <filename>test-fs-util</filename> is known to fail.
 @z
 
 @x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
-      Now, as the <systemitem class="username">root</systemitem> user:
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x

@@ -101,60 +101,14 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="apache"/>,
-      <xref linkend="boost"/>,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="dbus"/>,
-      <xref linkend="doxygen"/> (for generating HTML documentation),
-      <xref linkend="gnome-keyring"/>,
-      <xref linkend="libsecret"/>,
-<!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
-      <xref linkend="py3c"/> (for the python bindings, and tests),
-      <xref linkend="python3"/> (with sqlite support for the tests),
-      <xref linkend="ruby"/>,
-      <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
-      <ulink url="https://github.com/lz4/lz4/releases">LZ4</ulink>, and
-      <ulink url="https://git.netsurf-browser.org/libutf8proc.git/">UTF8proc</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="apache"/>,
-      <xref linkend="boost"/>,
-      <xref linkend="cyrus-sasl"/>,
-      <xref linkend="dbus"/>,
-      <xref linkend="doxygen"/> (for generating HTML documentation),
-      <xref linkend="gnome-keyring"/>,
-      <xref linkend="libsecret"/>,
-<!--      <xref linkend="kdelibs"/> (for <ulink url="http://utils.kde.org/projects/kwalletmanager/">KWallet</ulink> support), -->
-      <xref linkend="py3c"/> (for the python bindings, and tests),
-      <xref linkend="python3"/> (with sqlite support for the tests),
-      <xref linkend="ruby"/>,
-      <xref linkend="swig"/> (for building Perl, Python and Ruby bindings),
-      <ulink url="https://github.com/lz4/lz4/releases">LZ4</ulink>, and
-      <ulink url="https://git.netsurf-browser.org/libutf8proc.git/">UTF8proc</ulink>
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional (for the Java Bindings)</bridgehead>
-    <para role="optional">
-      One of <xref linkend="openjdk"/>,
-      <ulink url="https://www.inet.no/dante/">Dante</ulink> or
-      <ulink url="https://jikes.sourceforge.net/">Jikes</ulink>,
-      <ulink url="https://junit.org/junit4/">JUnit 4</ulink> (to test the Java bindings) and
-      <xref linkend="apache-ant"/>.
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;; (Java バインディングビルド時)</bridgehead>
-    <para role="optional">
-      One of <xref linkend="openjdk"/>,
-      <ulink url="https://www.inet.no/dante/">Dante</ulink> or
-      <ulink url="https://jikes.sourceforge.net/">Jikes</ulink>,
-      <ulink url="https://junit.org/junit4/">JUnit 4</ulink> (to test the Java bindings) and
-      <xref linkend="apache-ant"/>.
-    </para>
 @z
 
 @x

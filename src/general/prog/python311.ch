@@ -21,18 +21,16 @@
       environment. This is <emphasis role="bold">only</emphasis> needed for 
       building specific programs in BLFS
       that have not updated their build systems to support 
-      <xref linkend="python3"/> (e.g <xref linkend="firefox"/>, 
-      <xref linkend="thunderbird"/>, <xref linkend="seamonkey"/>, and 
-      <xref linkend="qtwebengine"/>).
+      <xref linkend="python3"/> (e.g <xref linkend="firefox"/>, and
+      <xref linkend="thunderbird"/>, <xref linkend="seamonkey"/>,
 @y
       The <application>Python 3.11</application> package contains an
       older version of the <application>Python</application> development 
       environment. This is <emphasis role="bold">only</emphasis> needed for 
       building specific programs in BLFS
       that have not updated their build systems to support 
-      <xref linkend="python3"/> (e.g <xref linkend="firefox"/>, 
-      <xref linkend="thunderbird"/>, <xref linkend="seamonkey"/>, and 
-      <xref linkend="qtwebengine"/>).
+      <xref linkend="python3"/> (e.g <xref linkend="firefox"/>, and
+      <xref linkend="thunderbird"/>, <xref linkend="seamonkey"/>,
 @z
 
 @x

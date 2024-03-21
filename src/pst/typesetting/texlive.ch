@@ -238,14 +238,24 @@
 @x
         If you wish to upgrade to current <application>texlive</application>
         on an older system where extra packages (<application>asymptote</application>,
-        <application>biber</application>, <application>dvisvgm</application>, or
+        <!-- Ken: comment biber - usually a new texyear has brought a new version
+        but not so far for 2024. Looking at what it installs it is only perl
+        modules and their man pages so those ought to still exist after the
+        previous year's texlive has been removed.
+        <application>biber</application>, -->
+                                          <application>dvisvgm</application>, or
         <application>xindy</application>) have been installed, you will need to
         reinstall those as well as fixing up your <literal>PATH</literal> for
         <literal>$TEXLIVE_PREFIX</literal>.
 @y
         If you wish to upgrade to current <application>texlive</application>
         on an older system where extra packages (<application>asymptote</application>,
-        <application>biber</application>, <application>dvisvgm</application>, or
+        <!-- Ken: comment biber - usually a new texyear has brought a new version
+        but not so far for 2024. Looking at what it installs it is only perl
+        modules and their man pages so those ought to still exist after the
+        previous year's texlive has been removed.
+        <application>biber</application>, -->
+                                          <application>dvisvgm</application>, or
         <application>xindy</application>) have been installed, you will need to
         reinstall those as well as fixing up your <literal>PATH</literal> for
         <literal>$TEXLIVE_PREFIX</literal>.
@@ -269,24 +279,22 @@
 
 @x
       To test the results, issue: <command>make -k check</command>.
-      <!-- It started to fail with libpaper-2.0.10 which rounds differently
-           in the 6th place of decimals, causing diff to fail -->
-      Two tests, <filename>psutils.test</filename> and
-      <!-- Upstream say that encoding conversion procedure Encode::from_to()
-      failed in fn-generate.perl, test now skips if that errors: possibly
-      related to changes in perl-5.36 since I understand current slackware
-      also sees this - ken -->
-      <filename>eptexdir/wcfname.test</filename> are known to fail.
+      <!-- https://github.com/rrthomas/libpaper/issues/43 -->
+      One test <filename>psutils.test</filename> is known to fail if
+      using system libpaper because TeX Live includes old versions of both
+      <application>psutils</application> and <application>libpaper</application>
+      which result in a difference in the final decimal places of the psresize
+      test. The <application>libpaper</application> developer does not think
+      this is significant.
 @y
       To test the results, issue: <command>make -k check</command>.
-      <!-- It started to fail with libpaper-2.0.10 which rounds differently
-           in the 6th place of decimals, causing diff to fail -->
-      Two tests, <filename>psutils.test</filename> and
-      <!-- Upstream say that encoding conversion procedure Encode::from_to()
-      failed in fn-generate.perl, test now skips if that errors: possibly
-      related to changes in perl-5.36 since I understand current slackware
-      also sees this - ken -->
-      <filename>eptexdir/wcfname.test</filename> are known to fail.
+      <!-- https://github.com/rrthomas/libpaper/issues/43 -->
+      One test <filename>psutils.test</filename> is known to fail if
+      using system libpaper because TeX Live includes old versions of both
+      <application>psutils</application> and <application>libpaper</application>
+      which result in a difference in the final decimal places of the psresize
+      test. The <application>libpaper</application> developer does not think
+      this is significant.
 @z
 
 @x

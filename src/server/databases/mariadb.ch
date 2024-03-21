@@ -109,56 +109,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="boost"/>,
-      <xref linkend="libaio"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="linux-pam"/>,
-      <xref linkend="lzo"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="pcre2"/>,
-      <xref linkend="ruby"/>,
-      <xref linkend="sphinx"/>,
-      <xref linkend="unixodbc"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="https://groonga.org/">Groonga</ulink>,
-      <ulink url="https://www.phontron.com/kytea/">KyTea</ulink>,
-      <ulink url="https://sourceforge.net/projects/judy/">Judy</ulink>,
-      <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>,
-      <ulink url="https://taku910.github.io/mecab">MeCab</ulink>,
-      <ulink url="https://msgpack.org/">MessagePack</ulink>,
-      <ulink url="https://www.mruby.org/">mruby</ulink>,
-      <ulink url="https://mariadb.com/kb/en/myrocks/">MyRocks</ulink>,
-      <ulink url="https://github.com/google/snappy">Snappy</ulink>, and
-      <!--<ulink url="https://mariadb.com/kb/en/mariadb/tokudb/">TokuDB</ulink>, and-->
-      <ulink url="https://zeromq.org/">ZeroMQ</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="boost"/>,
-      <xref linkend="libaio"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="linux-pam"/>,
-      <xref linkend="lzo"/>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="pcre2"/>,
-      <xref linkend="ruby"/>,
-      <xref linkend="sphinx"/>,
-      <xref linkend="unixodbc"/>,
-      <xref linkend="valgrind"/>,
-      <ulink url="https://groonga.org/">Groonga</ulink>,
-      <ulink url="https://www.phontron.com/kytea/">KyTea</ulink>,
-      <ulink url="https://sourceforge.net/projects/judy/">Judy</ulink>,
-      <ulink url="https://github.com/Cyan4973/lz4">lz4</ulink>,
-      <ulink url="https://taku910.github.io/mecab">MeCab</ulink>,
-      <ulink url="https://msgpack.org/">MessagePack</ulink>,
-      <ulink url="https://www.mruby.org/">mruby</ulink>,
-      <ulink url="https://mariadb.com/kb/en/myrocks/">MyRocks</ulink>,
-      <ulink url="https://github.com/google/snappy">Snappy</ulink>,
-      <!--<ulink url="https://mariadb.com/kb/en/mariadb/tokudb/">TokuDB</ulink>, and-->
-      <ulink url="https://zeromq.org/">ZeroMQ</ulink>
-    </para>
 @z
 
 @x

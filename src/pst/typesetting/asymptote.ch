@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY asymptote-buildsize     "412 MB (80 MB installed after overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all the dependencies which are in BLFS)">
+  <!ENTITY asymptote-buildsize     "412 MB (75 MB installed after overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all the dependencies which are in BLFS)">
   <!ENTITY asymptote-time          "1.5 SBU (using parallelism=4)">
 @y
-  <!ENTITY asymptote-buildsize     "412 MB (80 MB installed after overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all the dependencies which are in BLFS)">
+  <!ENTITY asymptote-buildsize     "412 MB (75 MB installed after overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all the dependencies which are in BLFS)">
   <!ENTITY asymptote-time          "1.5 SBU (using parallelism=4)">
 @z
 

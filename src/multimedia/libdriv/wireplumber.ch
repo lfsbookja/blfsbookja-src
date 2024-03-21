@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY wireplumber-buildsize     "16 MB (add 22 MB for tests)">
-  <!ENTITY wireplumber-time          "0.1 SBU (using parallelism=4, with tests)">
+  <!ENTITY wireplumber-buildsize     "82 MB (with tests)">
+  <!ENTITY wireplumber-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY wireplumber-buildsize     "16 MB (add 22 MB for tests)">
-  <!ENTITY wireplumber-time          "0.1 SBU (using parallelism=4, with tests)">
+  <!ENTITY wireplumber-buildsize     "82 MB (with tests)">
+  <!ENTITY wireplumber-time          "0.3 SBU (with tests)">
 @z
 
 @x

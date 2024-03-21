@@ -18,47 +18,51 @@
 @z
 
 @x
-  <para>
-    Before starting to build TeX Live, set up your PATH so
-    that the system can properly find the files.  If you set up your login
-    scripts as recommended in <xref linkend='postlfs-config-profile'/>, update
-    the needed paths by creating the
-    <filename>texlive.sh</filename> script. The programs are always
-    installed in an &lt;ARCH&gt;-linux subdirectory and on 32-bit x86 this is
-    always i386-linux. For x86_64 and i?86 we can generate this as $TEXARCH:
-  </para>
+    Upstream prefers to install in <filename
+    class="directory">/usr/local</filename> but the BLFS editors regard that as
+    inconvenient, and think using <filename
+    class="directory">/opt/texlive</filename> is more appropriate. Originally
+    BLFS used a full binary install to bootstrap the source install, so the
+    same prefix is used for both.
 @y
-  <para>
-    Before starting to build TeX Live, set up your PATH so
-    that the system can properly find the files.  If you set up your login
-    scripts as recommended in <xref linkend='postlfs-config-profile'/>, update
-    the needed paths by creating the
-    <filename>texlive.sh</filename> script. The programs are always
-    installed in an &lt;ARCH&gt;-linux subdirectory and on 32-bit x86 this is
-    always i386-linux. For x86_64 and i?86 we can generate this as $TEXARCH:
-  </para>
+    Upstream prefers to install in <filename
+    class="directory">/usr/local</filename> but the BLFS editors regard that as
+    inconvenient, and think using <filename
+    class="directory">/opt/texlive</filename> is more appropriate. Originally
+    BLFS used a full binary install to bootstrap the source install, so the
+    same prefix is used for both.
 @z
 
 @x
-  <note>
-    <para>
-      If upgrading from a previous year's version, you should manually
-      edit <filename>texlive.sh</filename> to ensure that the version for
-      the year you wish to use is the only TeX present (some people need to
-      keep multiple years available to ensure there are no regressions in
-      their documents).
-    </para>
-  </note>
+    Before starting to build TeX Live, set up your PATH so
+    that the system can properly find the files.  If you set up your login
+    scripts as recommended in <xref linkend='postlfs-config-profile'/>, update
+    the needed paths by creating the
+    <filename>texlive.sh</filename> script. The programs are always
+    installed in an &lt;ARCH&gt;-linux subdirectory and on 32-bit x86 this is
+    always i386-linux. For x86_64 and i?86 we can generate this as $TEXARCH:
 @y
-  <note>
-    <para>
+    Before starting to build TeX Live, set up your PATH so
+    that the system can properly find the files.  If you set up your login
+    scripts as recommended in <xref linkend='postlfs-config-profile'/>, update
+    the needed paths by creating the
+    <filename>texlive.sh</filename> script. The programs are always
+    installed in an &lt;ARCH&gt;-linux subdirectory and on 32-bit x86 this is
+    always i386-linux. For x86_64 and i?86 we can generate this as $TEXARCH:
+@z
+
+@x
       If upgrading from a previous year's version, you should manually
       edit <filename>texlive.sh</filename> to ensure that the version for
       the year you wish to use is the only TeX present (some people need to
       keep multiple years available to ensure there are no regressions in
       their documents).
-    </para>
-  </note>
+@y
+      If upgrading from a previous year's version, you should manually
+      edit <filename>texlive.sh</filename> to ensure that the version for
+      the year you wish to use is the only TeX present (some people need to
+      keep multiple years available to ensure there are no regressions in
+      their documents).
 @z
 
 @x
@@ -68,63 +72,39 @@
 @z
 
 @x
-  <note>
-    <para>
       The standard MANPATH and INFOPATH path are specified above to
       ensure they are included.  If they are already set in the boot script
       procedure, the pathappend function will ensure duplicates are
       removed, so including them here will do no harm.
-    </para>
-  </note>
 @y
-  <note>
-    <para>
       The standard MANPATH and INFOPATH path are specified above to
       ensure they are included.  If they are already set in the boot script
       procedure, the pathappend function will ensure duplicates are
       removed, so including them here will do no harm.
-    </para>
-  </note>
 @z
 
 @x
-  <note>
-    <para>
       The backslashes before the dollar signs in the script above are to
       facilitate a copy/paste operation. The backslashes should not
       appear in the actual script.
-    </para>
-  </note>
 @y
-  <note>
-    <para>
       The backslashes before the dollar signs in the script above are to
       facilitate a copy/paste operation. The backslashes should not
       appear in the actual script.
-    </para>
-  </note>
 @z
 
 @x
-  <para>
     The new paths can be immediately activated by running:
-  </para>
 @y
-  <para>
     The new paths can be immediately activated by running:
-  </para>
 @z
 
 @x
-  <para>
     You should now proceed either to <xref linkend="tl-installer"/> for
     a binary installation of texlive, or to <xref linkend="texlive"/> to begin
     installing from source.
-  </para>
 @y
-  <para>
     You should now proceed either to <xref linkend="tl-installer"/> for
     a binary installation of texlive, or to <xref linkend="texlive"/> to begin
     installing from source.
-  </para>
 @z

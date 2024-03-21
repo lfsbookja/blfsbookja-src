@@ -73,42 +73,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-    <xref linkend="docutils"/>
-      (required to build the documentation),
-    <xref linkend="git"/>,
-    <xref linkend="gpgme"/> (with Python bindings),
-    <xref role="runtime" linkend="openssh"/>
-      (runtime, to access ssh://... repositories),
-    <xref linkend="pygments"/>,
-    <xref linkend="rust"/> (see <filename>rust/README.rst</filename> and <filename>rust/rhg/README.md</filename>),
-    <xref linkend="subversion"/> (with Python bindings),
-    <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
-    <ulink url="https://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
-    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>, and
-    <ulink url="https://github.com/google/re2/">re2</ulink>
-
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-    <xref linkend="docutils"/>
-      (required to build the documentation),
-    <xref linkend="git"/>,
-    <xref linkend="gpgme"/> (with Python bindings),
-    <xref role="runtime" linkend="openssh"/>
-      (runtime, to access ssh://... repositories),
-    <xref linkend="pygments"/>,
-    <xref linkend="rust"/> (see <filename>rust/README.rst</filename> and <filename>rust/rhg/README.md</filename>),
-    <xref linkend="subversion"/> (with Python bindings),
-    <ulink url="https://launchpad.net/bzr">Bazaar</ulink>,
-    <ulink url="https://www.nongnu.org/cvs/">CVS</ulink>,
-    <ulink url="https://pypi.python.org/pypi/pyflakes">pyflakes</ulink>,
-    <ulink url="https://www.pyopenssl.org/en/stable/">pyOpenSSL</ulink>, and
-    <ulink url="https://github.com/google/re2/">re2</ulink>
-
-    </para>
 @z
 
 @x
@@ -146,16 +112,18 @@
 
 @x
       where <replaceable>&lt;N&gt;</replaceable> is an integer between one
-      and the number of ( processor X threads ), inclusive. Several tests
+      and the number of ( processor X threads ), inclusive. Tests may
       fail because some error messages have changed in Python or
       some deprecation warnings are printed that were not present when the
-      test was designed.
+      test was designed.  Two tests are known to fail: test-duplicateoptions.py
+      and test-profile.t.
 @y
       where <replaceable>&lt;N&gt;</replaceable> is an integer between one
-      and the number of ( processor X threads ), inclusive. Several tests
+      and the number of ( processor X threads ), inclusive. Tests may
       fail because some error messages have changed in Python or
       some deprecation warnings are printed that were not present when the
-      test was designed.
+      test was designed.  Two tests are known to fail: test-duplicateoptions.py
+      and test-profile.t.
 @z
 
 @x

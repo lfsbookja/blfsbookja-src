@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY tl-installer-buildsize        "310 MB for basic TeX and latex, 7.9GB if everything is included">
+  <!ENTITY tl-installer-buildsize        "85 MB MB for plain TeX, typically 2 to 4 MB for latex and later engines, 8.6 GB if everything is included">
   <!ENTITY tl-installer-time            "varies, depending on network speed and traffic">
 @y
-  <!ENTITY tl-installer-buildsize        "310 MB for basic TeX and latex, 7.9GB if everything is included">
+  <!ENTITY tl-installer-buildsize        "85 MB MB for plain TeX, typically 2 to 4 MB for latex and later engines, 8.6 GB if everything is included">
   <!ENTITY tl-installer-time            "varies, depending on network speed and traffic">
 @z
 
@@ -19,13 +19,13 @@
 
 @x
       The <application>TeX Live</application> package is a comprehensive
-      TeX document production system.  It includes TeX, LaTeX2e, ConTeXt,
+      TeX document production system.  It includes TeX, LaTeX2e, LuaLaTeX,
       Metafont, MetaPost, BibTeX and many other programs; an extensive
       collection of macros, fonts and documentation; and support for
       typesetting in many different scripts from around the world.
 @y
       The <application>TeX Live</application> package is a comprehensive
-      TeX document production system.  It includes TeX, LaTeX2e, ConTeXt,
+      TeX document production system.  It includes TeX, LaTeX2e, LuaLaTeX,
       Metafont, MetaPost, BibTeX and many other programs; an extensive
       collection of macros, fonts and documentation; and support for
       typesetting in many different scripts from around the world.
@@ -52,8 +52,8 @@
 @x
       There are two reasons why you may wish to install the binaries in BLFS:
       either you need a smaller install (e.g. at a minimum plain TeX without
-      LaTeX2e, ConTeXt, etc), or you wish to use <command>tlmgr</command> to
-      get updates whilst this version is supported (typically, until April of
+      LaTeX, ConTeXt, etc), or you wish to use <command>tlmgr</command> to
+      get updates whilst this version is supported (typically, until March of
       the year after it was released). For the latter, you might prefer to
       install in your <filename class="directory">/home</filename> directory
       as an unprivileged user, and to then make corresponding changes to the
@@ -61,8 +61,8 @@
 @y
       There are two reasons why you may wish to install the binaries in BLFS:
       either you need a smaller install (e.g. at a minimum plain TeX without
-      LaTeX2e, ConTeXt, etc), or you wish to use <command>tlmgr</command> to
-      get updates whilst this version is supported (typically, until April of
+      LaTeX, ConTeXt, etc), or you wish to use <command>tlmgr</command> to
+      get updates whilst this version is supported (typically, until March of
       the year after it was released). For the latter, you might prefer to
       install in your <filename class="directory">/home</filename> directory
       as an unprivileged user, and to then make corresponding changes to the
@@ -165,20 +165,6 @@
         install-tl-&lt;CCYYMMDD&gt;</filename>.
       This directory name changes when the installer is updated, so replace
       &lt;CCYYMMDD&gt; by the correct directory name.
-@z
-
-@x
-        If you have installed any of the luatex programs (luatex, luahbtex,
-        luajitex, luajithbtex) or ConTeXt with the luametatex backend there
-        was a security issue fixed by the introduction of luatex v1.17.0.
-        You should check the version with 'luatex --version' and if it is
-        less than 1.17.0 you can use tlmgr to update.
-@y
-        If you have installed any of the luatex programs (luatex, luahbtex,
-        luajitex, luajithbtex) or ConTeXt with the luametatex backend there
-        was a security issue fixed by the introduction of luatex v1.17.0.
-        You should check the version with 'luatex --version' and if it is
-        less than 1.17.0 you can use tlmgr to update.
 @z
 
 @x
