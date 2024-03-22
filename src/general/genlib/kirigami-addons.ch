@@ -16,9 +16,9 @@
 @z
 
 @x
-      This package provies add-on qml files for the Kirigami framework.
+      This package provides add-on qml files for the Kirigami framework.
 @y
-      This package provies add-on qml files for the Kirigami framework.
+      This package provides add-on qml files for the Kirigami framework.
 @z
 
 @x

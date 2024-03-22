@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY bind-buildsize     "126 MB (21 MB installed)">
+  <!ENTITY bind-buildsize     "127 MB (21 MB installed)">
   <!ENTITY bind-time          "0.5 SBU (with parallelism=4; about 40 minutes somewhat processor independent, to run the complete test suite)">
 @y
-  <!ENTITY bind-buildsize     "126 MB (21 MB installed)">
+  <!ENTITY bind-buildsize     "127 MB (21 MB installed)">
   <!ENTITY bind-time          "0.5 SBU (with parallelism=4; about 40 minutes somewhat processor independent, to run the complete test suite)">
 @z
 

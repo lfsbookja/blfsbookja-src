@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pinentry-time          "less than 0.1 SBU">
-@y
-  <!ENTITY pinentry-time          "less than 0.1 SBU">
-@z
-
-@x
     <title>Introduction to PIN-Entry</title>
 @y
     <title>Introduction to PIN-Entry</title>
@@ -105,34 +99,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="emacs"/>,
-      <xref linkend="fltk"/>,
-      <xref linkend="gcr"/>,
-      <xref linkend="gtk2"/>,
-      <!-- <xref linkend="libcap-pam"/>, This is in LFS already. PAM is not
-      necessary. -->
-      <xref linkend="kf6-frameworks"/> (or <xref linkend="lxqt-kwayland"/>),
-      <!-- If Qt5 is present, it will look for KWayland for Wayland support.-->
-      <xref linkend="libsecret"/>,
-      &qt5-deps;, and
-      <ulink url="https://www.enlightenment.org/about-efl">efl</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="emacs"/>,
-      <xref linkend="fltk"/>,
-      <xref linkend="gcr"/>,
-      <xref linkend="gtk2"/>,
-      <!-- <xref linkend="libcap-pam"/>, This is in LFS already. PAM is not
-      necessary. -->
-      <xref linkend="kf6-frameworks"/> (or <xref linkend="lxqt-kwayland"/>),
-      <!-- If Qt5 is present, it will look for KWayland for Wayland support.-->
-      <xref linkend="libsecret"/>,
-      &qt5-deps;,
-      <ulink url="https://www.enlightenment.org/about-efl">efl</ulink>
-    </para>
 @z
 
 @x
@@ -193,11 +161,13 @@
 
 @x
       <option>--enable-pinentry-gnome3=yes/no</option>: Default is yes.
-      Actually, it uses <application>Gcr</application> for the pinentry
+      Actually, it uses <xref linkend='gcr4'/> (or
+      <xref linkend='gcr'/> if the former is not installed) for the pinentry
       dialog.
 @y
       <option>--enable-pinentry-gnome3=yes/no</option>: Default is yes.
-      Actually, it uses <application>Gcr</application> for the pinentry
+      Actually, it uses <xref linkend='gcr4'/> (or
+      <xref linkend='gcr'/> if the former is not installed) for the pinentry
       dialog.
 @z
 
