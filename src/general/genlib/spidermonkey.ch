@@ -12,14 +12,6 @@
 @z
 
 @x
-<sect1 id="spidermonkey" xreflabel="SpiderMonkey from Firefox-&spidermonkey-version;">
-  <?dbhtml filename="spidermonkey.html"?>
-@y
-<sect1 id="spidermonkey" xreflabel="SpiderMonkey from Firefox-&spidermonkey-version;">
-  <?dbhtml filename="spidermonkey.html"?>
-@z
-
-@x
   <title>SpiderMonkey from Firefox-&spidermonkey-version;</title>
 @y
   <title>SpiderMonkey from Firefox-&spidermonkey-version;</title>
@@ -220,7 +212,7 @@
       JSTESTS_EXTRA_ARGS="--timeout 300 --wpt=disabled"</command>.
       It's recommended to redirect the output into a log.
       <!-- recheck when ICU gets upgraded -->
-      Because we are building with system ICU, 42 tests
+      Because we are building with system ICU, 39 tests
       (out of a total of more than 50,000) are known to fail.
       The test suite is executed with all CPU cores available: even in a
       cgroup with less cores assigned, it still attempts to spawn as many
@@ -233,7 +225,7 @@
       JSTESTS_EXTRA_ARGS="--timeout 300 --wpt=disabled"</command>.
       It's recommended to redirect the output into a log.
       <!-- recheck when ICU gets upgraded -->
-      Because we are building with system ICU, 42 tests
+      Because we are building with system ICU, 39 tests
       (out of a total of more than 50,000) are known to fail.
       The test suite is executed with all CPU cores available: even in a
       cgroup with less cores assigned, it still attempts to spawn as many
