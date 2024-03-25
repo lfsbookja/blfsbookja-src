@@ -173,70 +173,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional (for Plugins)</bridgehead>
-    <para role="optional">
-      <xref linkend="alsa"/>,
-      <xref linkend="curl"/>,
-      <xref linkend="faad2"/>,
-      <xref linkend="flac"/>,
-      <xref linkend="lame"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="libcdio"/> (to identify and play CDs),
-      <xref linkend="libnotify"/>,
-      <xref linkend="libsndfile"/>,
-      <xref linkend="libvorbis"/>,
-      <xref linkend="pipewire"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="sdl2"/>,
-      <ulink url="https://ampache-browser.org/">ampache-browser</ulink>,
-      <ulink url="https://adplug.github.io/">adplug</ulink>,
-      <ulink url="https://sourceforge.net/projects/bs2b/">The Bauer
-        stereophonic-to-binaural DSP (bs2b) library</ulink>,
-      <ulink url="https://sourceforge.net/projects/fluidsynth/">FluidSynth</ulink>,
-      <ulink url="https://jackaudio.org/">JACK</ulink>
-        (requires <xref linkend="libsamplerate"/>),
-      <ulink url="https://sourceforge.net/projects/libcue/">libcue</ulink>,
-      <ulink url="https://sourceforge.net/projects/modplug-xmms/">libmodplug</ulink>,
-      <ulink url="https://sourceforge.net/projects/libmms">libmms</ulink>,
-      <ulink url="https://lib.openmpt.org/libopenmpt/">libopenmpt</ulink>,
-      <ulink url="https://www.sourceforge.net/projects/sidplay-residfp/">libsidplayfp</ulink>,
-      <ulink url="https://www.lirc.org/">LIRC</ulink>,
-      <ulink url="https://sndio.org/">sndio</ulink>,
-      <ulink url="https://sourceforge.net/p/soxr/wiki/Home/">SoX</ulink>, and
-      <ulink url="https://www.wavpack.com/">WavPack</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional; （プラグイン向け）</bridgehead>
-    <para role="optional">
-      <xref linkend="alsa"/>,
-      <xref linkend="curl"/>,
-      <xref linkend="faad2"/>,
-      <xref linkend="flac"/>,
-      <xref linkend="lame"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="libcdio"/> (to identify and play CDs),
-      <xref linkend="libnotify"/>,
-      <xref linkend="libsndfile"/>,
-      <xref linkend="libvorbis"/>,
-      <xref linkend="pipewire"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="sdl2"/>,
-      <ulink url="https://ampache-browser.org/">ampache-browser</ulink>,
-      <ulink url="https://adplug.github.io/">adplug</ulink>,
-      <ulink url="https://sourceforge.net/projects/bs2b/">The Bauer
-        stereophonic-to-binaural DSP (bs2b) library</ulink>,
-      <ulink url="https://sourceforge.net/projects/fluidsynth/">FluidSynth</ulink>,
-      <ulink url="https://jackaudio.org/">JACK</ulink>
-        (requires <xref linkend="libsamplerate"/>),
-      <ulink url="https://sourceforge.net/projects/libcue/">libcue</ulink>,
-      <ulink url="https://sourceforge.net/projects/modplug-xmms/">libmodplug</ulink>,
-      <ulink url="https://sourceforge.net/projects/libmms">libmms</ulink>,
-      <ulink url="https://lib.openmpt.org/libopenmpt/">libopenmpt</ulink>,
-      <ulink url="https://www.sourceforge.net/projects/sidplay-residfp/">libsidplayfp</ulink>,
-      <ulink url="https://www.lirc.org/">LIRC</ulink>,
-      <ulink url="https://sndio.org/">sndio</ulink>,
-      <ulink url="https://sourceforge.net/p/soxr/wiki/Home/">SoX</ulink>,
-      <ulink url="https://www.wavpack.com/">WavPack</ulink>
-    </para>
 @z
 
 @x

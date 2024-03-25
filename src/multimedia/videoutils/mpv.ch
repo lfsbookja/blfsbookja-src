@@ -109,24 +109,8 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="alsa"/>,
-      <xref linkend="ffmpeg"/>,
-      <xref linkend="libass"/>,
-      <xref linkend="libplacebo"/>,
-      <xref linkend="mesa"/>, and
-      <xref linkend="pulseaudio"/>
-    </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="alsa"/>,
-      <xref linkend="ffmpeg"/>,
-      <xref linkend="libass"/>,
-      <xref linkend="libplacebo"/>,
-      <xref linkend="mesa"/>, and
-      <xref linkend="pulseaudio"/>
-    </para>
 @z
 
 @x

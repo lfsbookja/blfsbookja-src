@@ -79,22 +79,8 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="ffmpeg"/>, and at least one of:
-        <xref linkend="alsa"/>,
-        <xref linkend='pulseaudio'/>, or
-        <ulink url="https://jackaudio.org/">JACK</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="x-window-system"/>,
-      <xref linkend="ffmpeg"/>, and at least one of:
-        <xref linkend="alsa"/>,
-        <xref linkend='pulseaudio'/>, or
-        <ulink url="https://jackaudio.org/">JACK</ulink>
-    </para>
 @z
 
 @x

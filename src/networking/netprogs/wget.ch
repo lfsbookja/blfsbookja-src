@@ -131,11 +131,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>. A few tests
-      are known to fail due to an incompatibility with Python 3.12.
+      To test the results, issue: <command>make check</command>.
 @y
       ビルド結果をテストする場合は <command>make check</command> を実行します。
-      テストの中で Python 3.12 との互換性がないために失敗するものが多少あります。
 @z
 
 @x

@@ -10,211 +10,117 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to MPlayer</title>
 @y
-  <sect2 role="package">
     <title>Introduction to MPlayer</title>
 @z
 
 @x
-    <para>
       <application>MPlayer</application> is a powerful audio/video player
       controlled via the command line or a graphical interface that is able to
       play almost every popular audio and video file format. With supported
       video hardware and additional drivers, <application>MPlayer</application>
       can play video files without an <application>X Window System</application>
       installed.
-    </para>
 @y
-    <para>
       <application>MPlayer</application> is a powerful audio/video player
       controlled via the command line or a graphical interface that is able to
       play almost every popular audio and video file format. With supported
       video hardware and additional drivers, <application>MPlayer</application>
       can play video files without an <application>X Window System</application>
       installed.
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&mplayer-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&mplayer-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &mplayer-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &mplayer-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &mplayer-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &mplayer-time;
-        </para>
-      </listitem>
-    </itemizedlist>
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&mplayer-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&mplayer-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&mplayer-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&mplayer-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &mplayer-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &mplayer-md5sum;
+@z
+
+@x
           Download size: &mplayer-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &mplayer-size;
+@z
+
+@x
           Estimated disk space required: &mplayer-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &mplayer-buildsize;
+@z
+
+@x
           Estimated build time: &mplayer-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &mplayer-time;
+@z
+
+@x
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@y
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @z
 
 @x
-    <itemizedlist spacing='compact'>
       <title>Required Patches</title>
-      <listitem>
-        <para>
-          <ulink url="&patch-root;/MPlayer-1.5-upstream_ffmpg6_fixes-1.patch"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          <ulink url="&patch-root;/ffmpeg-6.0-binutils_2.41-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
-    <itemizedlist spacing='compact'>
       <title>Required Patches</title>
-      <listitem>
-        <para>
-          <ulink url="&patch-root;/MPlayer-1.5-upstream_ffmpg6_fixes-1.patch"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          <ulink url="&patch-root;/ffmpeg-6.0-binutils_2.41-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
 @z
 
 @x
-    <itemizedlist spacing='compact'>
-      <title>Skins</title>
-      <listitem>
-        <para>
           GUI skin (HTTP): <ulink url="&mplayer-skin-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          GUI skin (FTP): <ulink url="&mplayer-skin-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Skin MD5 sum: &mplayer-skin-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Skin size: &mplayer-skin-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Alternative skins:
-          <ulink url="https://mplayerhq.hu/MPlayer/skins/"/>
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
-    <itemizedlist spacing='compact'>
-      <title>Skins</title>
-      <listitem>
-        <para>
           GUI skin (HTTP): <ulink url="&mplayer-skin-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          GUI skin (FTP): <ulink url="&mplayer-skin-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Skin MD5 sum: &mplayer-skin-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Skin size: &mplayer-skin-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Alternative skins:
-          <ulink url="https://mplayerhq.hu/MPlayer/skins/"/>
-        </para>
-      </listitem>
-    </itemizedlist>
 @z
 
 @x
-    <note>
-      <para>
-        Skins are only required in order to use the
-        <application>Gtk+ 2</application> user interface.
-      </para>
-    </note>
+          GUI skin (FTP): <ulink url="&mplayer-skin-download-ftp;"/>
 @y
-    <note>
-      <para>
+          GUI skin (FTP): <ulink url="&mplayer-skin-download-ftp;"/>
+@z
+
+@x
+          Skin MD5 sum: &mplayer-skin-md5sum;
+@y
+          Skin MD5 sum: &mplayer-skin-md5sum;
+@z
+
+@x
+          Skin size: &mplayer-skin-size;
+@y
+          Skin size: &mplayer-skin-size;
+@z
+
+@x
+          Alternative skins:
+@y
+          Alternative skins:
+@z
+
+@x
         Skins are only required in order to use the
         <application>Gtk+ 2</application> user interface.
-      </para>
-    </note>
+@y
+        Skins are only required in order to use the
+        <application>Gtk+ 2</application> user interface.
 @z
 
 @x
@@ -285,24 +191,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional Audio Output Drivers and Libraries</bridgehead>
-    <para role="optional">
-      <xref linkend="alsa"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="sdl"/>,
-      <ulink url="https://jackaudio.org/">JACK</ulink>,
-      <ulink url="https://www.radscan.com/nas.html">NAS</ulink>, and
-      <ulink url="https://openal.org/">OpenAL</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional Audio Output Drivers and Libraries</bridgehead>
-    <para role="optional">
-      <xref linkend="alsa"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="sdl"/>,
-      <ulink url="https://jackaudio.org/">JACK</ulink>,
-      <ulink url="https://www.radscan.com/nas.html">NAS</ulink>, and
-      <ulink url="https://openal.org/">OpenAL</ulink>
-    </para>
 @z
 
 @x

@@ -114,7 +114,6 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="alsa"/>,
       <xref linkend="cups"/>,
       <xref linkend="NetworkManager"/>,
       <xref linkend="nss"/>, and
@@ -123,7 +122,6 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="alsa"/>,
       <xref linkend="cups"/>,
       <xref linkend="NetworkManager"/>,
       <xref linkend="nss"/>,

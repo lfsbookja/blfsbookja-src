@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libxkbcommon-buildsize     "23 MB (with tests)">
-  <!ENTITY libxkbcommon-time          "0.4 SBU (with tests)">
+  <!ENTITY libxkbcommon-buildsize     "26 MB (with tests)">
+  <!ENTITY libxkbcommon-time          "0.5 SBU (with tests)">
 @y
-  <!ENTITY libxkbcommon-buildsize     "23 MB（テスト込み）">
-  <!ENTITY libxkbcommon-time          "0.4 SBU（テスト込み）">
+  <!ENTITY libxkbcommon-buildsize     "26 MB（テスト込み）">
+  <!ENTITY libxkbcommon-time          "0.5 SBU（テスト込み）">
 @z
 
 @x
@@ -145,22 +145,22 @@
 @z
 
 @x
-      <parameter>-Denable-docs=false</parameter>: This switch disables
-      documentation generation. Remove it if <xref linkend="doxygen"/> is
-      installed.
+      <parameter>-Denable-docs=true</parameter>: This switch enables
+      documentation generation. The <xref linkend="doxygen"/> is
+      required.
 @y
-      <parameter>-Denable-docs=false</parameter>:
-      本スイッチはドキュメント生成を無効にします。
-      <xref linkend="doxygen"/> をインストールしている場合は、これを取り除いてください。
+      <parameter>-Denable-docs=true</parameter>:
+      本スイッチはドキュメント生成を有効にします。
+      <xref linkend="doxygen"/> がインストールされていることが必要です。
 @z
 
 @x
       <command>mv -v /usr/share/doc/libxkbcommon{,-&libxkbcommon-version;}</command>:
-      If you removed -Denable-docs=false, use this command to install the
-      documentation in a versioned directory.
+      If you built the documentation, use this command to install the
+      it in a versioned directory.
 @y
       <command>mv -v /usr/share/doc/libxkbcommon{,-&libxkbcommon-version;}</command>:
-      -Denable-docs=false を取り除いた場合には、このコマンドを使って、バージョンつきのディレクトリにドキュメントをインストールしてください。
+      ドキュメントをインストールする場合は、このコマンドを使ってバージョンつきのディレクトリにドキュメントをインストールしてください。
 @z
 
 @x

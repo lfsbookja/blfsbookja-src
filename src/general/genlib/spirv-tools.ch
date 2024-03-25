@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY spirv-tools-time          "1.0 SBU (with parallelism=8)">
+  <!ENTITY spirv-tools-time          "0.9 SBU (with tests; both using parallelism=8)">
 @y
-  <!ENTITY spirv-tools-time          "1.0 SBU (parallelism=8 利用)">
+  <!ENTITY spirv-tools-time          "0.9 SBU (with tests; both using parallelism=8)">
 @z
 
 @x

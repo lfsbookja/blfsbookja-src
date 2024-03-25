@@ -130,61 +130,6 @@
 @y
       <title>About Commented Out Packages</title>
 @z
-@x
-        The breeze-grub, breeze-plymouth, and plymouth-kcm packages above are
-        all for customized support of <ulink
-            url="https://www.freedesktop.org/wiki/Software/Plymouth/"
-          >Plymouth</ulink>
-        which is designed to be run within an initial ram disk during boot (see
-        <xref linkend="initramfs"/>).
-
-        The plasma-sdk package is optional and used for software development.
-        
-        The plasma-nano package is used for embedded systems.
-
-        The plasma-mobile package provides phone functionality for Plasma.
-        
-        The discover package requires <xref linkend="appstream"/> to be built
-        with the -Dqt=true switch.
-        
-        The plasma-welcome package requires the external package
-          <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
-        kaccounts-integration</ulink>.
-        
-        The flatpack-kcm package is for managing support of flatpack applications.
-
-        The plasma-browser-integration package is only used by plasma-meta which is
-        not installed by BLFS.
-
-        The wacomtablet application requires plasma5 support.
-@y
-        The breeze-grub, breeze-plymouth, and plymouth-kcm packages above are
-        all for customized support of <ulink
-            url="https://www.freedesktop.org/wiki/Software/Plymouth/"
-          >Plymouth</ulink>
-        which is designed to be run within an initial ram disk during boot (see
-        <xref linkend="initramfs"/>).
-
-        The plasma-sdk package is optional and used for software development.
-        
-        The plasma-nano package is used for embedded systems.
-
-        The plasma-mobile package provides phone functionality for Plasma.
-        
-        The discover package requires <xref linkend="appstream"/> to be built
-        with the -Dqt=true switch.
-        
-        The plasma-welcome package requires the external package
-          <ulink url="https://download.kde.org/stable/release-service/&kf5apps-version;/src/">
-        kaccounts-integration</ulink>.
-        
-        The flatpack-kcm package is for managing support of flatpack applications.
-
-        The plasma-browser-integration package is only used by plasma-meta which is
-        not installed by BLFS.
-
-        The wacomtablet application requires plasma5 support.
-@z
 
 @x
     <title>Installation of Plasma</title>

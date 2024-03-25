@@ -98,10 +98,10 @@
 @z
 
 @x
-      To test the results, issue: <command>cargo test</command>.
+      To test the results, issue: <command>cargo test --release</command>.
       Three tests in <filename>profile.rs</filename> are known to fail.
 @y
-      ビルド結果をテストする場合は <command>cargo test</command> を実行します。
+      ビルド結果をテストする場合は <command>cargo test --release</command> を実行します。
       <filename>profile.rs</filename> の中で 3 つのテストが失敗します。
 @z
 

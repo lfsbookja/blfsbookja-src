@@ -85,36 +85,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="alsa"/>,
-      <xref linkend="doxygen"/> (to create documentation),
-      <xref linkend="ibus"/>,
-      <xref linkend="libsamplerate"/>,
-      <xref linkend="nasm"/>,
-      <xref linkend="pipewire"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="x-window-system"/>,
-      <ulink url="https://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>,
-      <ulink url="https://fcitx-im.org/">fcitx</ulink>,
-      <ulink url="https://jackaudio.org/">jack</ulink>, and
-      <ulink url="https://sndio.org/">sndio</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="alsa"/>,
-      <xref linkend="doxygen"/> (to create documentation),
-      <xref linkend="ibus"/>,
-      <xref linkend="libsamplerate"/>,
-      <xref linkend="nasm"/>,
-      <xref linkend="pipewire"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="x-window-system"/>,
-      <ulink url="https://pkgs.fedoraproject.org/repo/pkgs/directfb/">DirectFB</ulink>,
-      <ulink url="https://fcitx-im.org/">fcitx</ulink>,
-      <ulink url="https://jackaudio.org/">jack</ulink>, and
-      <ulink url="https://sndio.org/">sndio</ulink>
-    </para>
 @z
 
 @x

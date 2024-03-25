@@ -10,15 +10,12 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to Libao</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Libao</title>
 @z
 
 @x
-    <para>
       The <application>libao</application> package contains a
       cross-platform audio library. This is useful to output audio on a wide
       variety of platforms. It currently supports WAV files, OSS (Open Sound
@@ -26,9 +23,7 @@
       Architecture), NAS (Network Audio system), aRTS (analog Real-Time
       Synthesizer), and PulseAudio (next generation
       <application>GNOME</application> sound architecture).
-    </para>
 @y
-    <para>
       The <application>libao</application> package contains a
       cross-platform audio library. This is useful to output audio on a wide
       variety of platforms. It currently supports WAV files, OSS (Open Sound
@@ -36,77 +31,48 @@
       Architecture), NAS (Network Audio system), aRTS (analog Real-Time
       Synthesizer), and PulseAudio (next generation
       <application>GNOME</application> sound architecture).
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&libao-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&libao-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &libao-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &libao-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &libao-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &libao-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&libao-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&libao-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&libao-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&libao-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &libao-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &libao-md5sum;
+@z
+
+@x
           Download size: &libao-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &libao-size;
+@z
+
+@x
           Estimated disk space required: &libao-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &libao-buildsize;
+@z
+
+@x
           Estimated build time: &libao-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &libao-time;
 @z
 
 @x
@@ -119,264 +85,116 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="x-window-system"/>,
-      <xref linkend="alsa"/>, and
+      <xref linkend="alsa-lib"/>, and
       <xref linkend='pulseaudio'/>
     </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="x-window-system"/>,
-      <xref linkend="alsa"/>, and
+      <xref linkend="alsa-lib"/>,
       <xref linkend='pulseaudio'/>
     </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of Libao</title>
 @y
-  <sect2 role="installation">
     <title>Installation of Libao</title>
 @z
 
 @x
-    <para>
       Install <application>libao</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>libao</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>./configure --prefix=/usr &amp;&amp;
-make</userinput></screen>
-@y
-<screen><userinput>./configure --prefix=/usr &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install &amp;&amp;
-install -v -m644 README /usr/share/doc/libao-&libao-version;</userinput></screen>
-@y
-<screen role="root"><userinput>make install &amp;&amp;
-install -v -m644 README /usr/share/doc/libao-&libao-version;</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="configuration">
     <title>Configuring Libao</title>
 @y
-  <sect2 role="configuration">
     <title>Configuring Libao</title>
 @z
 
 @x
-    <sect3 id="libao-config">
       <title>Config Files</title>
 @y
-    <sect3 id="libao-config">
       <title>Config Files</title>
 @z
 
 @x
-    <para>
       <filename>/etc/libao.conf</filename> and
       <filename>~/.libao</filename>
-    </para>
 @y
-    <para>
       <filename>/etc/libao.conf</filename> and
       <filename>~/.libao</filename>
-    </para>
 @z
 
 @x
-      <indexterm zone="libao libao-config">
-        <primary sortas="e-etc-libao.conf">/etc/libao.conf</primary>
-      </indexterm>
-@y
-      <indexterm zone="libao libao-config">
-        <primary sortas="e-etc-libao.conf">/etc/libao.conf</primary>
-      </indexterm>
-@z
-
-@x
-      <indexterm zone="libao libao-config">
-        <primary sortas="e-AA.libao">~/.libao</primary>
-      </indexterm>
-@y
-      <indexterm zone="libao libao-config">
-        <primary sortas="e-AA.libao">~/.libao</primary>
-      </indexterm>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3>
       <title>Configuration Information</title>
 @y
-    <sect3>
       <title>Configuration Information</title>
 @z
 
 @x
-      <para>
         Currently, the only configuration option available is setting the
         default output device. Issue <command>man libao.conf</command>
         for details.
-      </para>
 @y
-      <para>
         Currently, the only configuration option available is setting the
         default output device. Issue <command>man libao.conf</command>
         for details.
-      </para>
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>None</seg>
         <seg>libao.so and plugins under /usr/lib/ao/plugins-4</seg>
         <seg>/usr/include/ao, /usr/lib/ao and /usr/share/doc/libao-&libao-version;</seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>None</seg>
         <seg>libao.so and plugins under /usr/lib/ao/plugins-4</seg>
         <seg>/usr/include/ao, /usr/lib/ao and /usr/share/doc/libao-&libao-version;</seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="libao-lib">
-        <term><filename class="libraryfile">libao.so</filename></term>
-        <listitem>
-          <para>
+@x libao.so
             provides functions for programs wishing to output sound over
             supported platforms
-          </para>
-          <indexterm zone="libao libao-lib">
-            <primary sortas="c-libao">libao.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="libao-lib">
-        <term><filename class="libraryfile">libao.so</filename></term>
-        <listitem>
-          <para>
             provides functions for programs wishing to output sound over
             supported platforms
-          </para>
-          <indexterm zone="libao libao-lib">
-            <primary sortas="c-libao">libao.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

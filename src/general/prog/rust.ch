@@ -385,11 +385,11 @@
 @z
 
 @x
-      Two tests,<filename>tests/ui/issues/issue-21763.rs</filename> and
+      Two tests, <filename>tests/ui/issues/issue-21763.rs</filename> and
       <filename>tests/debuginfo/regression-bad-location-list-67992.rs</filename>,
       are known to fail.
 @y
-      Two tests,<filename>tests/ui/issues/issue-21763.rs</filename> and
+      Two tests, <filename>tests/ui/issues/issue-21763.rs</filename> and
       <filename>tests/debuginfo/regression-bad-location-list-67992.rs</filename>,
       are known to fail.
 @z
@@ -489,22 +489,12 @@
 @z
 
 @x
-      The building system attempts to install some files twice, and during
-      the second attempt it renames the old one (installed in the first
-      attempt) with the <filename class='extension'>.old</filename> suffix.
-      As the &root; user, remove these files:
-@y
-      The building system attempts to install some files twice, and during
-      the second attempt it renames the old one (installed in the first
-      attempt) with the <filename class='extension'>.old</filename> suffix.
-      As the &root; user, remove these files:
-@z
-
-@x
-      Still as the &root; user, symlink a <application>Zsh</application>
+      Still as the &root; user, fix the installation of documentations
+      and symlink a <application>Zsh</application>
       completion file into the correct location:
 @y
-      Still as the &root; user, symlink a <application>Zsh</application>
+      Still as the &root; user, fix the installation of documentations
+      and symlink a <application>Zsh</application>
       completion file into the correct location:
 @z
 

@@ -106,18 +106,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      &gobject-introspection;,
-      <xref linkend="libgudev"/>, 
-      <xref linkend="polkit"/>, and
-      <xref linkend="pygobject3"/>
+      <xref linkend="polkit"/>, 
+      <xref linkend="pygobject3"/>, and
+      <xref linkend="upower"/>, 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      &gobject-introspection;,
-      <xref linkend="libgudev"/>, 
-      <xref linkend="polkit"/>,
-      <xref linkend="pygobject3"/>
+      <xref linkend="polkit"/>, 
+      <xref linkend="pygobject3"/>,
+      <xref linkend="upower"/>, 
     </para>
 @z
 
