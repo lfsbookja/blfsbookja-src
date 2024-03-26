@@ -114,28 +114,20 @@
       <para role="optional">
         <xref linkend="pytest"/>,
         <xref linkend="sphinx"/> (circular dependency), and
-        <ulink url="https://pypi.org/project/html5lib/">html5lib</ulink>
+        <xref linkend="html5lib"/>
       </para>
 @y
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
         <xref linkend="pytest"/>,
         <xref linkend="sphinx"/> (circular dependency), and
-        <ulink url="https://pypi.org/project/html5lib/">html5lib</ulink>
+        <xref linkend="html5lib"/>
       </para>
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of Sphinxcontrib-htmlhelp</title>
 @y
-    <sect3 role="installation">
       <title>Installation of Sphinxcontrib-htmlhelp</title>
 @z
 
@@ -146,137 +138,45 @@
 @z
 
 @x
-&build-wheel;
-@y
-&build-wheel;
-@z
-
-@x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>&install-wheel; sphinxcontrib-htmlhelp</userinput></screen>
+      If the optional dependencies are installed, the package can be tested with:
 @y
-<screen role="root"><userinput>&install-wheel; sphinxcontrib-htmlhelp</userinput></screen>
+      If the optional dependencies are installed, the package can be tested with:
 @z
 
 @x
-    <para>
-      Assuming <xref linkend="pytest"/> is installed, but the other optional
-      dependency is not, the installation can be tested with the following
-      commands:
-    </para>
-@y
-    <para>
-      Assuming <xref linkend="pytest"/> is installed, but the other optional
-      dependency is not, the installation can be tested with the following
-      commands:
-    </para>
-@z
-
-@x
-<screen remap="test"><userinput>python3 -m venv --system-site-packages testenv   &amp;&amp;
-source testenv/bin/activate                      &amp;&amp;
-pip3 install html5lib                            &amp;&amp;
-python3 /usr/bin/pytest<!-- no && because of a possible error -->
-deactivate</userinput></screen>
-@y
-<screen remap="test"><userinput>python3 -m venv --system-site-packages testenv   &amp;&amp;
-source testenv/bin/activate                      &amp;&amp;
-pip3 install html5lib                            &amp;&amp;
-python3 /usr/bin/pytest<!-- no && because of a possible error -->
-deactivate</userinput></screen>
-@z
-
-@x
-<!--
-    <para>
-      the <command>sed ...</command> command is needed because of a change
-      in <application>Sphinx</application> API for versions greater than
-      5.0.
-    </para>
--->
-@y
-<!--
-    <para>
-      the <command>sed ...</command> command is needed because of a change
-      in <application>Sphinx</application> API for versions greater than
-      5.0.
-    </para>
--->
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@z
-
-@x
-    <sect3 role="content">
       <title>Contents</title>
 @y
-    <sect3 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>None</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib and
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib_htmlhelp-&sc-htmlhelp-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
           <seg>None</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib and
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib_htmlhelp-&sc-htmlhelp-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z

@@ -12,14 +12,17 @@ CHANGE_FILES = \
 	doxypypy.ch         \
 	doxyqml.ch          \
 	gi-docgen.ch        \
+	html5lib.ch         \
 	lxml.ch             \
 	mako.ch             \
 	numpy.ch            \
 	packaging.ch        \
+	psutil.ch           \
 	py3c.ch             \
 	pyatspi2.ch         \
 	pycairo.ch          \
 	pycairo2.ch         \
+	pygdbmi.ch          \
 	pygments.ch         \
 	pygobject2.ch       \
 	pygobject3.ch       \
@@ -33,6 +36,7 @@ CHANGE_FILES = \
 	recommonmark.ch     \
 	requests.ch         \
 	scour.ch            \
+	sentry-sdk.ch       \
 	six.ch              \
 	sphinx.ch           \
 	sphinx_rtd_theme.ch

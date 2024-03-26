@@ -6,6 +6,7 @@ CHANGE_FILES = \
 	Babel.ch                         \
 	alabaster.ch                     \
 	attrs.ch                         \
+	certifi.ch                       \
 	chardet.ch                       \
 	charset-normalizer.ch            \
 	commonmark.ch                    \
@@ -35,6 +36,7 @@ CHANGE_FILES = \
 	sphinxcontrib-serializinghtml.ch \
 	typing_extensions.ch             \
 	typogrify.ch                     \
-	urllib3.ch
+	urllib3.ch                       \
+	webencodings.ch
 
 include $(top_srcdir)/build-aux/main.mk

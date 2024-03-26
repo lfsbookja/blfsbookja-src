@@ -106,14 +106,6 @@
 @z
 
 @x
-      <option>ZLIB=no</option>: This option prevents compression of
-      the <filename>pci.ids</filename> file.
-@y
-      <option>ZLIB=no</option>:
-      このオプションは <filename>pci.ids</filename> ファイルが圧縮されないようにします。
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -131,23 +123,23 @@
 
 @x
         <seg>
-          lspci and setpci
+          lspci, pcilmr, and setpci
         </seg>
         <seg>
           libpci.so
         </seg>
         <seg>
-          /usr/include/pci and /usr/share/hwdata
+          /usr/include/pci
         </seg>
 @y
         <seg>
-          lspci, setpci
+          lspci, pcilmr, setpci
         </seg>
         <seg>
           libpci.so
         </seg>
         <seg>
-          /usr/include/pci, /usr/share/hwdata
+          /usr/include/pci
         </seg>
 @z
 

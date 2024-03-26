@@ -172,6 +172,7 @@
       <xref linkend="git"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
+      <xref linkend="psutil"/> (for tests),
       <xref linkend="pygments"/>,
       <xref linkend="rsync"/> (for tests),
       <xref linkend="recommonmark"/> (for building documentation),
@@ -180,7 +181,6 @@
       <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
       <ulink url="https://ocaml.org/">OCaml</ulink>,
-      <ulink url="https://pypi.org/project/psutil/">psutil</ulink> (for tests),
       and <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
     </para>
 @y
@@ -190,15 +190,15 @@
       <xref linkend="git"/>,
       <xref linkend="graphviz"/>,
       <xref linkend="libxml2"/>,
+      <xref linkend="psutil"/> (for tests),
       <xref linkend="pygments"/>,
       <xref linkend="rsync"/> (for tests),
       <xref linkend="recommonmark"/> (for building documentation),
-      <xref linkend="texlive"/> (または <xref linkend="tl-installer"/>),
+      <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
       <xref linkend="PyYAML"/>, <!-- for yaml2obj -->
       <xref linkend="zip"/>,
       <ulink url="https://ocaml.org/">OCaml</ulink>,
-      <ulink url="https://pypi.org/project/psutil/">psutil</ulink> (for tests),
       and <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
     </para>
 @z
