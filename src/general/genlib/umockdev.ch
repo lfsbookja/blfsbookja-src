@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY umockdev-buildsize     "9.7 MB (with tests)">
+  <!ENTITY umockdev-buildsize     "6.8 MB (with tests)">
   <!ENTITY umockdev-time          "0.1 SBU (with tests)">
 @y
-  <!ENTITY umockdev-buildsize     "9.7 MB (テスト込み)">
+  <!ENTITY umockdev-buildsize     "6.8 MB (テスト込み)">
   <!ENTITY umockdev-time          "0.1 SBU (テスト込み)">
 @z
 
@@ -117,17 +117,17 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. One test
-      needs to be run in an X session.
+      To test the results, issue as the &root; user: <command>ninja test</command>.
+      One test needs to be run in an X session.
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      ビルド結果をテストする場合は &root; ユーザーになって <command>ninja test</command> を実行します。
       テストの中に 1 つ、X セッション内での実行を必要とするものがあります。
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x

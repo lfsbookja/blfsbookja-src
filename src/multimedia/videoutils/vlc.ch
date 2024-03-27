@@ -120,7 +120,7 @@
       <xref linkend="liba52"/>,
       <xref linkend="libgcrypt"/>
       <xref linkend="libmad"/>,
-      <xref linkend="lua"/>, and
+      <xref linkend="lua52"/>, and
       <xref linkend="x-window-system"/>
     </para>
 @y
@@ -132,7 +132,7 @@
       <xref linkend="liba52"/>,
       <xref linkend="libgcrypt"/>
       <xref linkend="libmad"/>,
-      <xref linkend="lua"/>, and
+      <xref linkend="lua52"/>,
       <xref linkend="x-window-system"/>
     </para>
 @z
