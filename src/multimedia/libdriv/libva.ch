@@ -10,15 +10,12 @@
 @z
 
 @x
-    <sect2 role="package">
       <title>Introduction to libva</title>
 @y
-    <sect2 role="package">
       <title>Introduction to libva</title>
 @z
 
 @x
-      <para>
          The <application>libva</application> package contains a library which
          provides access to hardware accelerated video processing, using hardware
          to accelerate video processing in order to offload the central
@@ -29,9 +26,7 @@
          framebuffer and graphics sub-systems for video output. Accelerated
          processing includes support for video decoding, video encoding,
          subpicture blending, and rendering.
-      </para>
 @y
-      <para>
          The <application>libva</application> package contains a library which
          provides access to hardware accelerated video processing, using hardware
          to accelerate video processing in order to offload the central
@@ -42,77 +37,48 @@
          framebuffer and graphics sub-systems for video output. Accelerated
          processing includes support for video decoding, video encoding,
          subpicture blending, and rendering.
-      </para>
 @z
 
 @x
       <bridgehead renderas="sect3">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
-            Download (HTTP): <ulink url="&libva-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download (FTP): <ulink url="&libva-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &libva-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download size: &libva-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated disk space required: &libva-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated build time: &libva-time;
-          </para>
-        </listitem>
-      </itemizedlist>
 @y
       <bridgehead renderas="sect3">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
+@z
+
+@x
             Download (HTTP): <ulink url="&libva-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (HTTP): <ulink url="&libva-download-http;"/>
+@z
+
+@x
             Download (FTP): <ulink url="&libva-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (FTP): <ulink url="&libva-download-ftp;"/>
+@z
+
+@x
             Download MD5 sum: &libva-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download MD5 sum: &libva-md5sum;
+@z
+
+@x
             Download size: &libva-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download size: &libva-size;
+@z
+
+@x
             Estimated disk space required: &libva-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Estimated disk space required: &libva-buildsize;
+@z
+
+@x
             Estimated build time: &libva-time;
-          </para>
-        </listitem>
-      </itemizedlist>
+@y
+            Estimated build time: &libva-time;
 @z
 
 @x
@@ -202,117 +168,48 @@ supported
 @z
 
 @x
-    </sect2>
+      <title>Installation of libva</title>
 @y
-    </sect2>
+      <title>Installation of libva</title>
 @z
 
 @x
-    <sect2 role="installation">
-      <title>Installation of libva</title>
-      <!-- libva*.so.2 have been around for a long time...
-      <caution>
-        <para>
-          If you are reinstalling this package, you will need
-          to remove the older versions of the libraries.  These are in the
-          form of libva*.so.1 and any symbolic links pointing to them.  In
-          addition, any packages that use these files need to be rebuilt.
-        </para>
-      </caution>
-      -->
-      <para>
         Install <application>libva</application> by running the following
         commands:
-      </para>
 @y
-    <sect2 role="installation">
-      <title>Installation of libva</title>
-      <!-- libva*.so.2 have been around for a long time...
-      <caution>
-        <para>
-          If you are reinstalling this package, you will need
-          to remove the older versions of the libraries.  These are in the
-          form of libva*.so.1 and any symbolic links pointing to them.  In
-          addition, any packages that use these files need to be rebuilt.
-        </para>
-      </caution>
-      -->
-      <para>
         Install <application>libva</application> by running the following
         commands:
-      </para>
 @z
 
 @x
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@y
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@z
-
-@x
-meson setup --prefix=$XORG_PREFIX --buildtype=release &amp;&amp;
-ninja</userinput></screen>
-@y
-meson setup --prefix=$XORG_PREFIX --buildtype=release &amp;&amp;
-ninja</userinput></screen>
-@z
-
-@x
-      <para>
         This package does not come with a test suite.
-      </para>
 @y
-      <para>
         This package does not come with a test suite.
-      </para>
 @z
 
 @x
-      <para>
         Now, as the <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para>
         Now, as the <systemitem class="username">root</systemitem> user:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>ninja install</userinput></screen>
-@y
-<screen role="root"><userinput>ninja install</userinput></screen>
-@z
-
-@x
-    </sect2>
-@y
-    </sect2>
-@z
-
-@x
-    <sect2 role="content">
       <title>Contents</title>
 @y
-    <sect2 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directory</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directory</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>
             None
           </seg>
@@ -326,10 +223,7 @@ ninja</userinput></screen>
           <seg>
             $XORG_PREFIX/include/va
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
           <seg>
             None
           </seg>
@@ -343,64 +237,18 @@ ninja</userinput></screen>
           <seg>
             $XORG_PREFIX/include/va
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @z
 
 @x
-      <variablelist>
         <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-        <?dbfo list-presentation="list"?>
-        <?dbhtml list-presentation="table"?>
 @y
-      <variablelist>
         <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-        <?dbfo list-presentation="list"?>
-        <?dbhtml list-presentation="table"?>
 @z
 
-@x
-        <varlistentry id="libva-lib">
-          <term><filename class="libraryfile">libva.so</filename></term>
-          <listitem>
-            <para>
+@x libva.so
               contains API functions which provide access to hardware
               accelerated video processing
-            </para>
-            <indexterm zone="libva libva-lib">
-              <primary sortas="c-libva">libva.so</primary>
-            </indexterm>
-          </listitem>
-        </varlistentry>
 @y
-        <varlistentry id="libva-lib">
-          <term><filename class="libraryfile">libva.so</filename></term>
-          <listitem>
-            <para>
               contains API functions which provide access to hardware
               accelerated video processing
-            </para>
-            <indexterm zone="libva libva-lib">
-              <primary sortas="c-libva">libva.so</primary>
-            </indexterm>
-          </listitem>
-        </varlistentry>
-@z
-
-@x
-      </variablelist>
-@y
-      </variablelist>
-@z
-
-@x
-    </sect2>
-@y
-    </sect2>
-@z
-
-@x
-  </sect1>
-@y
-  </sect1>
 @z
