@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qt6-buildsize     "31 GB (354 MB installed)">
+  <!ENTITY qt6-buildsize     "33 GB (354 MB installed)">
   <!ENTITY qt6-time          "16 SBU (using parallelism=8)">
 @y
-  <!ENTITY qt6-buildsize     "31 GB (354 MB installed)">
+  <!ENTITY qt6-buildsize     "33 GB (354 MB installed)">
   <!ENTITY qt6-time          "16 SBU (using parallelism=8)">
 @z
 

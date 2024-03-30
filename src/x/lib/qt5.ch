@@ -189,141 +189,19 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="alsa-lib"/>,
-      <xref linkend="at-spi2-core"/>,
-      <xref linkend="make-ca"/>,
-      <xref linkend="cups"/>,
-      <phrase revision='sysv'><xref linkend="dbus"/>,</phrase>
-      <xref linkend="double-conversion"/>,
-      <xref linkend="glib2"/>,
-      <xref linkend="gst10-plugins-base"/> (QtMultimedia backend),
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="jasper"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libmng"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="mtdev"/>,
-      <xref linkend="pcre2"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="wayland"/> (<application>Mesa</application>
-      must be built with <application>Wayland</application> EGL
-      backend),
-      <xref linkend="xcb-util-image"/>,
-      <xref linkend="xcb-util-keysyms"/>,
-      <xref linkend="xcb-util-renderutil"/>, and
-      <xref linkend="xcb-util-wm"/>
-    </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="alsa-lib"/>,
-      <xref linkend="at-spi2-core"/>,
-      <xref linkend="make-ca"/>,
-      <xref linkend="cups"/>,
-      <phrase revision='sysv'><xref linkend="dbus"/>,</phrase>
-      <xref linkend="double-conversion"/>,
-      <xref linkend="glib2"/>,
-      <xref linkend="gst10-plugins-base"/> (QtMultimedia backend),
-      <xref linkend="harfbuzz"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="jasper"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libmng"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="libxkbcommon"/>,
-      <xref linkend="mesa"/>,
-      <xref linkend="mtdev"/>,
-      <xref linkend="pcre2"/>,
-      <xref linkend="sqlite"/>,
-      <xref linkend="wayland"/> (<application>Mesa</application>
-      must be built with <application>Wayland</application> EGL
-      backend),
-      <xref linkend="xcb-util-image"/>,
-      <xref linkend="xcb-util-keysyms"/>,
-      <xref linkend="xcb-util-renderutil"/>, and
-      <xref linkend="xcb-util-wm"/>
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref role="runtime" linkend="bluez"/> (for sdpscanner, and at runtime for
-      QtConnectivity module),
-      <xref linkend="gtk3"/>,
-      <xref linkend="ibus"/>,
-      <xref linkend="libinput"/>,
-      <xref linkend="mariadb"/>
-        or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="pciutils"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="sdl2"/>,
-      <xref linkend="unixodbc"/>,
-      <xref linkend="vulkan-loader"/>,
-      <ulink url="https://www.assimp.org/">assimp</ulink>,
-      <ulink url="https://github.com/festvox/flite">Flite</ulink>,
-      <ulink url="https://www.firebirdsql.org/">Firebird</ulink>,
-      <ulink url="https://www.freetds.org/">FreeTDS</ulink>,
-      <ulink url="https://libproxy.github.io/libproxy/">libproxy</ulink>,
-      <ulink url="https://openal.org/">OpenAL</ulink>,
-      <ulink url="https://freebsoft.org/speechd/">speech-dispatcher</ulink>, and
-      <ulink url="http:///www.tslib.org/">tslib</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref role="runtime" linkend="bluez"/> (for sdpscanner, and at runtime for
-      QtConnectivity module),
-      <xref linkend="gtk3"/>,
-      <xref linkend="ibus"/>,
-      <xref linkend="libinput"/>,
-      <xref linkend="mariadb"/>
-        or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="mitkrb"/>,
-      <xref linkend="pciutils"/>,
-      <xref linkend="postgresql"/>,
-      <xref linkend="pulseaudio"/>,
-      <xref linkend="sdl2"/>,
-      <xref linkend="unixodbc"/>,
-      <xref linkend="vulkan-loader"/>,
-      <ulink url="https://www.assimp.org/">assimp</ulink>,
-      <ulink url="https://github.com/festvox/flite">Flite</ulink>,
-      <ulink url="https://www.firebirdsql.org/">Firebird</ulink>,
-      <ulink url="https://www.freetds.org/">FreeTDS</ulink>,
-      <ulink url="https://libproxy.github.io/libproxy/">libproxy</ulink>,
-      <ulink url="https://openal.org/">OpenAL</ulink>,
-      <ulink url="https://freebsoft.org/speechd/">speech-dispatcher</ulink>,
-      <ulink url="http:///www.tslib.org/">tslib</ulink>
-    </para>
 @z
 
 @x
-    <!-- Many of the dependencies in the qmake/configure output do not apply
-         to Linux-based platforms. I've selected the ones that do and put
-         them in as optional dependencies. -renodr -->
-  </sect2>
-@y
-    <!-- Many of the dependencies in the qmake/configure output do not apply
-         to Linux-based platforms. I've selected the ones that do and put
-         them in as optional dependencies. -renodr -->
-  </sect2>
-@z
-
-@x
-  <sect2 role="qt5-prefix">
     <title>Setting the installation prefix</title>
 @y
-  <sect2 role="qt5-prefix">
     <title>Setting the installation prefix</title>
 @z
 
@@ -350,43 +228,22 @@
 @z
 
 @x
-<screen><userinput>export QT5PREFIX=/opt/qt5</userinput></screen>
-@y
-<screen><userinput>export QT5PREFIX=/opt/qt5</userinput></screen>
-@z
-
-@x
-    <tip>
-      <para>
         Sometimes the installation paths are hardcoded into installed files.
         This is the reason why <filename class="directory">/opt/qt5</filename>
         is used as installation prefix instead of <filename
         class="directory">/opt/qt-&qt5-version;</filename>. To create a
         versioned <application>Qt5</application> directory, 
         you may create a versioned directory and a symlink:
-      </para>
 @y
-    <tip>
-      <para>
         Sometimes the installation paths are hardcoded into installed files.
         This is the reason why <filename class="directory">/opt/qt5</filename>
         is used as installation prefix instead of <filename
         class="directory">/opt/qt-&qt5-version;</filename>. To create a
         versioned <application>Qt5</application> directory, 
         you may create a versioned directory and a symlink:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>mkdir -pv /opt/qt-&qt5-version;
-ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
-@y
-<screen role="root"><userinput>mkdir -pv /opt/qt-&qt5-version;
-ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
-@z
-
-@x
-      <para>
         Later on, you may want to install other versions of
         <application>Qt5</application>. To do that, just remove the symlink,
         create the new versioned directory, and recreate the 
@@ -394,10 +251,7 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
         building the new version.
         Which version of <application>Qt5</application> you
         use depends only on where the symlink points.
-      </para>
-    </tip>
 @y
-      <para>
         Later on, you may want to install other versions of
         <application>Qt5</application>. To do that, just remove the symlink,
         create the new versioned directory, and recreate the 
@@ -405,107 +259,63 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
         building the new version.
         Which version of <application>Qt5</application> you
         use depends only on where the symlink points.
-      </para>
-    </tip>
 @z
 
 @x
-    <note>
-      <para>
         If <xref linkend="qca"/> has been installed and you are
         reinstalling or updating this package, then
         <application>qca</application> will need to be reinstalled.
-      </para>
-    </note>
 @y
-    <note>
-      <para>
         If <xref linkend="qca"/> has been installed and you are
         reinstalling or updating this package, then
         <application>qca</application> will need to be reinstalled.
-      </para>
-    </note>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of Qt5</title>
 @y
-  <sect2 role="installation">
     <title>Installation of Qt5</title>
 @z
 
 @x
-    <warning>
-      <para>
         If <application>Qt5</application> is being reinstalled into the
         same directory as an existing instance, run the commands done by
         <systemitem class="username">root</systemitem>, such as
         <command>make install</command>, from a console or non-Qt5 based
         window manager. It overwrites <application>Qt5</application>
         libraries that should not be in use during the install process.
-      </para>
-    </warning>
 @y
-    <warning>
-      <para>
         If <application>Qt5</application> is being reinstalled into the
         same directory as an existing instance, run the commands done by
         <systemitem class="username">root</systemitem>, such as
         <command>make install</command>, from a console or non-Qt5 based
         window manager. It overwrites <application>Qt5</application>
         libraries that should not be in use during the install process.
-      </para>
-    </warning>
 @z
 
 @x
-    <caution>
-      <para>
         If you did not install some of the recommended dependencies, examine
         <command>./configure --help</command> output to check how to disable
         them or use internal versions bundled in the source tarball.
-      </para>
-    </caution>
 @y
-    <caution>
-      <para>
         If you did not install some of the recommended dependencies, examine
         <command>./configure --help</command> output to check how to disable
         them or use internal versions bundled in the source tarball.
-      </para>
-    </caution>
 @z
 
 @x
-    <note>
-      <para>
         The build time and space required for the full
         <application>Qt5</application> is quite long. The instructions below
         do not build the tutorials and examples. Removing the
         <parameter>-nomake</parameter> line will create a complete build.
-      </para>
-    </note>
 @y
-    <note>
-      <para>
         The build time and space required for the full
         <application>Qt5</application> is quite long. The instructions below
         do not build the tutorials and examples. Removing the
         <parameter>-nomake</parameter> line will create a complete build.
-      </para>
-    </note>
 @z
 
 @x
-    <note>
-      <para>
         The BLFS editors do not recommend installing
         <application>Qt5</application> into the
         <filename class="directory">/usr</filename> hierarchy because it
@@ -515,10 +325,7 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
         be specified explicitly.  In this case, set
         <envar>QT5PREFIX=/usr</envar> and add the following to the configure
         arguments below:
-      </para>
 @y
-    <note>
-      <para>
         The BLFS editors do not recommend installing
         <application>Qt5</application> into the
         <filename class="directory">/usr</filename> hierarchy because it
@@ -528,79 +335,36 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
         be specified explicitly.  In this case, set
         <envar>QT5PREFIX=/usr</envar> and add the following to the configure
         arguments below:
-      </para>
 @z
 
 @x
-<screen role="nodump"><userinput>            -archdatadir    /usr/lib/qt5                \
-            -bindir         /usr/bin                    \
-            -plugindir      /usr/lib/qt5/plugins        \
-            -importdir      /usr/lib/qt5/imports        \
-            -headerdir      /usr/include/qt5            \
-            -datadir        /usr/share/qt5              \
-            -docdir         /usr/share/doc/qt5          \
-            -translationdir /usr/share/qt5/translations \
-            -examplesdir    /usr/share/doc/qt5/examples</userinput></screen>
-    </note>
-@y
-<screen role="nodump"><userinput>            -archdatadir    /usr/lib/qt5                \
-            -bindir         /usr/bin                    \
-            -plugindir      /usr/lib/qt5/plugins        \
-            -importdir      /usr/lib/qt5/imports        \
-            -headerdir      /usr/include/qt5            \
-            -datadir        /usr/share/qt5              \
-            -docdir         /usr/share/doc/qt5          \
-            -translationdir /usr/share/qt5/translations \
-            -examplesdir    /usr/share/doc/qt5/examples</userinput></screen>
-    </note>
-@z
-
-@x
-    <para>
       Now apply a patch to pull in the fixes curated by kde for those
       modules which are required by packages mentioned in this book:
-    </para>
 @y
-    <para>
       Now apply a patch to pull in the fixes curated by kde for those
       modules which are required by packages mentioned in this book:
-    </para>
 @z
 
 @x
-<screen><userinput remap="pre">patch -Np1 -i ../qt-everywhere-opensource-src-&qt5-version;-kf5-1.patch</userinput></screen>
-@y
-<screen><userinput remap="pre">patch -Np1 -i ../qt-everywhere-opensource-src-&qt5-version;-kf5-1.patch</userinput></screen>
-@z
-
-@x
-    <para>
       The patch is supposed to be used in a git repository. Otherwise some
       files that should be modified by <command>configure</command> after
       applying the patch are not touched. Fortunately, it is enough to create a
       <filename class="directory">.git</filename> directory in the
       <filename class="directory">qmake</filename> directory where the
       <command>configure</command> script is run:
-    </para>
 @y
-    <para>
       The patch is supposed to be used in a git repository. Otherwise some
       files that should be modified by <command>configure</command> after
       applying the patch are not touched. Fortunately, it is enough to create a
       <filename class="directory">.git</filename> directory in the
       <filename class="directory">qmake</filename> directory where the
       <command>configure</command> script is run:
-    </para>
 @z
 
 @x
-    <para>
       Add another fix for building with GCC-13:
-    </para>
 @y
-    <para>
       Add another fix for building with GCC-13:
-    </para>
 @z
 
 @x
@@ -610,123 +374,28 @@ ln -sfnv qt-&qt5-version; /opt/qt5</userinput></screen>
 @z
 
 @x
-<screen revision="sysv"><userinput>./configure -prefix $QT5PREFIX                        \
-            -sysconfdir /etc/xdg                      \
-            -confirm-license                          \
-            -opensource                               \
-            -dbus-linked                              \
-            -openssl-linked                           \
-            -system-harfbuzz                          \
-            -system-sqlite                            \
-            -nomake examples                          \
-            -no-rpath                                 \
-            -syslog                                   \
-            -skip qtwebengine                         &amp;&amp;
-make</userinput></screen>
-@y
-<screen revision="sysv"><userinput>./configure -prefix $QT5PREFIX                        \
-            -sysconfdir /etc/xdg                      \
-            -confirm-license                          \
-            -opensource                               \
-            -dbus-linked                              \
-            -openssl-linked                           \
-            -system-harfbuzz                          \
-            -system-sqlite                            \
-            -nomake examples                          \
-            -no-rpath                                 \
-            -syslog                                   \
-            -skip qtwebengine                         &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-<screen revision="systemd"><userinput>./configure -prefix $QT5PREFIX                        \
-            -sysconfdir /etc/xdg                      \
-            -confirm-license                          \
-            -opensource                               \
-            -dbus-linked                              \
-            -openssl-linked                           \
-            -system-harfbuzz                          \
-            -system-sqlite                            \
-            -nomake examples                          \
-            -no-rpath                                 \
-            -journald                                 \
-            -skip qtwebengine                         &amp;&amp;
-make</userinput></screen>
-@y
-<screen revision="systemd"><userinput>./configure -prefix $QT5PREFIX                        \
-            -sysconfdir /etc/xdg                      \
-            -confirm-license                          \
-            -opensource                               \
-            -dbus-linked                              \
-            -openssl-linked                           \
-            -system-harfbuzz                          \
-            -system-sqlite                            \
-            -nomake examples                          \
-            -no-rpath                                 \
-            -journald                                 \
-            -skip qtwebengine                         &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-    <!-- EDITORS NOTE: This package uses INSTALL_ROOT= instead of DESTDIR= for
-         installing in a temporary directory. -->
-@y
-    <!-- EDITORS NOTE: This package uses INSTALL_ROOT= instead of DESTDIR= for
-         installing in a temporary directory. -->
-@z
-
-@x
-    <para>
       Remove references to the build directory from installed library
       dependency (prl) files by running the following
       command as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Remove references to the build directory from installed library
       dependency (prl) files by running the following
       command as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>find $QT5PREFIX/ -name \*.prl \
-   -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;</userinput></screen>
-@y
-<screen role="root"><userinput>find $QT5PREFIX/ -name \*.prl \
-   -exec sed -i -e '/^QMAKE_PRL_BUILD_DIR/d' {} \;</userinput></screen>
-@z
-
-@x
-    <para>
       Install images and create the menu entries for installed applications.
       The <envar>QT5BINDIR</envar> variable is used here to point to the
       directory for the executable programs.  If you have changed the bindir
@@ -734,9 +403,7 @@ make</userinput></screen>
       that the <envar>QT5BINDIR</envar> variable is defined in root's
       environment and as the <systemitem class="username">root</systemitem>
       user:
-    </para>
 @y
-    <para>
       Install images and create the menu entries for installed applications.
       The <envar>QT5BINDIR</envar> variable is used here to point to the
       directory for the executable programs.  If you have changed the bindir
@@ -744,265 +411,63 @@ make</userinput></screen>
       that the <envar>QT5BINDIR</envar> variable is defined in root's
       environment and as the <systemitem class="username">root</systemitem>
       user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>QT5BINDIR=$QT5PREFIX/bin
-@y
-<screen role="root"><userinput>QT5BINDIR=$QT5PREFIX/bin
-@z
-
-@x
-install -v -dm755 /usr/share/pixmaps/                  &amp;&amp;
-@y
-install -v -dm755 /usr/share/pixmaps/                  &amp;&amp;
-@z
-
-@x
-install -v -Dm644 qttools/src/assistant/assistant/images/assistant-128.png \
-                  /usr/share/pixmaps/assistant-qt5.png &amp;&amp;
-@y
-install -v -Dm644 qttools/src/assistant/assistant/images/assistant-128.png \
-                  /usr/share/pixmaps/assistant-qt5.png &amp;&amp;
-@z
-
-@x
-install -v -Dm644 qttools/src/designer/src/designer/images/designer.png \
-                  /usr/share/pixmaps/designer-qt5.png  &amp;&amp;
-@y
-install -v -Dm644 qttools/src/designer/src/designer/images/designer.png \
-                  /usr/share/pixmaps/designer-qt5.png  &amp;&amp;
-@z
-
-@x
-install -v -Dm644 qttools/src/linguist/linguist/images/icons/linguist-128-32.png \
-                  /usr/share/pixmaps/linguist-qt5.png  &amp;&amp;
-@y
-install -v -Dm644 qttools/src/linguist/linguist/images/icons/linguist-128-32.png \
-                  /usr/share/pixmaps/linguist-qt5.png  &amp;&amp;
-@z
-
-@x
-install -v -Dm644 qttools/src/qdbus/qdbusviewer/images/qdbusviewer-128.png \
-                  /usr/share/pixmaps/qdbusviewer-qt5.png &amp;&amp;
-@y
-install -v -Dm644 qttools/src/qdbus/qdbusviewer/images/qdbusviewer-128.png \
-                  /usr/share/pixmaps/qdbusviewer-qt5.png &amp;&amp;
-@z
-
-@x
-install -dm755 /usr/share/applications &amp;&amp;
-@y
-install -dm755 /usr/share/applications &amp;&amp;
-@z
-
-@x
-cat &gt; /usr/share/applications/assistant-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Assistant
-Comment=Shows Qt5 documentation and examples
-Exec=$QT5BINDIR/assistant
-Icon=assistant-qt5.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Documentation;</literal>
-EOF
-@y
-cat &gt; /usr/share/applications/assistant-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Assistant
-Comment=Shows Qt5 documentation and examples
-Exec=$QT5BINDIR/assistant
-Icon=assistant-qt5.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Documentation;</literal>
-EOF
-@z
-
-@x
-cat &gt; /usr/share/applications/designer-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Designer
-GenericName=Interface Designer
-Comment=Design GUIs for Qt5 applications
-Exec=$QT5BINDIR/designer
-Icon=designer-qt5.png
-MimeType=application/x-designer;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@y
-cat &gt; /usr/share/applications/designer-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Designer
-GenericName=Interface Designer
-Comment=Design GUIs for Qt5 applications
-Exec=$QT5BINDIR/designer
-Icon=designer-qt5.png
-MimeType=application/x-designer;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@z
-
-@x
-cat &gt; /usr/share/applications/linguist-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Linguist
-Comment=Add translations to Qt5 applications
-Exec=$QT5BINDIR/linguist
-Icon=linguist-qt5.png
-MimeType=text/vnd.trolltech.linguist;application/x-linguist;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@y
-cat &gt; /usr/share/applications/linguist-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 Linguist
-Comment=Add translations to Qt5 applications
-Exec=$QT5BINDIR/linguist
-Icon=linguist-qt5.png
-MimeType=text/vnd.trolltech.linguist;application/x-linguist;
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;</literal>
-EOF
-@z
-
-@x
-cat &gt; /usr/share/applications/qdbusviewer-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 QDbusViewer
-GenericName=D-Bus Debugger
-Comment=Debug D-Bus applications
-Exec=$QT5BINDIR/qdbusviewer
-Icon=qdbusviewer-qt5.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Debugger;</literal>
-EOF</userinput></screen>
-@y
-cat &gt; /usr/share/applications/qdbusviewer-qt5.desktop &lt;&lt; EOF
-<literal>[Desktop Entry]
-Name=Qt5 QDbusViewer
-GenericName=D-Bus Debugger
-Comment=Debug D-Bus applications
-Exec=$QT5BINDIR/qdbusviewer
-Icon=qdbusviewer-qt5.png
-Terminal=false
-Encoding=UTF-8
-Type=Application
-Categories=Qt;Development;Debugger;</literal>
-EOF</userinput></screen>
-@z
-
-@x
-    <para>
       Some packages such as <xref linkend='vlc'/> look for certain
       executables with a -qt5 suffix.  Run the following command as the
       <systemitem class="username">root</systemitem> user
       to create the necessary symlinks:
-    </para>
 @y
-    <para>
       Some packages such as <xref linkend='vlc'/> look for certain
       executables with a -qt5 suffix.  Run the following command as the
       <systemitem class="username">root</systemitem> user
       to create the necessary symlinks:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>for file in moc uic rcc qmake lconvert lrelease lupdate; do
-  ln -sfvn $QT5BINDIR/$file /usr/bin/$file-qt5
-done</userinput></screen>
-@y
-<screen role="root"><userinput>for file in moc uic rcc qmake lconvert lrelease lupdate; do
-  ln -sfvn $QT5BINDIR/$file /usr/bin/$file-qt5
-done</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <parameter>-confirm-license</parameter>: Accept license
       without prompting user during configuration.
-    </para>
 @y
-    <para>
       <parameter>-confirm-license</parameter>: Accept license
       without prompting user during configuration.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-opensource</parameter>: Install the opensource
       version of <application>Qt</application>.
-    </para>
 @y
-    <para>
       <parameter>-opensource</parameter>: Install the opensource
       version of <application>Qt</application>.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-nomake examples</parameter>: This switch
       disables building of the example programs included
       in the source tarball. Remove it if you want to build
       them.
-    </para>
 @y
-    <para>
       <parameter>-nomake examples</parameter>: This switch
       disables building of the example programs included
       in the source tarball. Remove it if you want to build
       them.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-system-sqlite</parameter>: This switch enables use
       of the system version of <application>SQLite</application>.
-    </para>
 @y
-    <para>
       <parameter>-system-sqlite</parameter>: This switch enables use
       of the system version of <application>SQLite</application>.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-dbus-linked</parameter>
       <parameter>-openssl-linked</parameter>: These
       switches enable explicit linking of the
@@ -1010,9 +475,7 @@ done</userinput></screen>
       <application>OpenSSL</application> libraries into
       <application>Qt5</application> libraries instead of
       <command>dlopen()</command>-ing them.
-    </para>
 @y
-    <para>
       <parameter>-dbus-linked</parameter>
       <parameter>-openssl-linked</parameter>: These
       switches enable explicit linking of the
@@ -1020,103 +483,62 @@ done</userinput></screen>
       <application>OpenSSL</application> libraries into
       <application>Qt5</application> libraries instead of
       <command>dlopen()</command>-ing them.
-    </para>
 @z
 
-@x
-    <para revision="sysv">
+@x revision="sysv"
       <parameter>-syslog</parameter>: This switch allows to send Qt messages
       to the <command>syslog</command> logging system.
-    </para>
 @y
-    <para revision="sysv">
       <parameter>-syslog</parameter>: This switch allows to send Qt messages
       to the <command>syslog</command> logging system.
-    </para>
 @z
 
-@x
-    <para revision="systemd">
+@x revision="systemd"
       <parameter>-journald</parameter>: This switch allows to send Qt messages
       to the <command>journald</command> logging system.
-    </para>
 @y
-    <para revision="systemd">
       <parameter>-journald</parameter>: This switch allows to send Qt messages
       to the <command>journald</command> logging system.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-skip qtwebengine</parameter>: This switch disables building
       the QtWebEngine. The BLFS editors have chosen to build <xref
       linkend="qtwebengine"/> separately.
-    </para>
 @y
-    <para>
       <parameter>-skip qtwebengine</parameter>: This switch disables building
       the QtWebEngine. The BLFS editors have chosen to build <xref
       linkend="qtwebengine"/> separately.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-system-harfbuzz</parameter>: This switch enables use
       of the system version of <application>Harfbuzz</application>.
-    </para>
 @y
-    <para>
       <parameter>-system-harfbuzz</parameter>: This switch enables use
       of the system version of <application>Harfbuzz</application>.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="configuration">
     <title>Configuring Qt5</title>
 @y
-  <sect2 role="configuration">
     <title>Configuring Qt5</title>
 @z
 
 @x
-    <sect3 id="qt5-config">
       <title>Configuration Information</title>
 @y
-    <sect3 id="qt5-config">
       <title>Configuration Information</title>
 @z
 
 @x
-      <para>
         If <xref linkend="sudo"/> is installed, QT5DIR should be available to
         the super user as well. Execute the following commands as the
         <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para>
         If <xref linkend="sudo"/> is installed, QT5DIR should be available to
         the super user as well. Execute the following commands as the
         <systemitem class="username">root</systemitem> user:
-      </para>
-@z
-
-@x
-<screen role="root"><userinput>cat &gt; /etc/sudoers.d/qt &lt;&lt; "EOF"
-<literal>Defaults env_keep += QT5DIR</literal>
-EOF</userinput></screen>
-@y
-<screen role="root"><userinput>cat &gt; /etc/sudoers.d/qt &lt;&lt; "EOF"
-<literal>Defaults env_keep += QT5DIR</literal>
-EOF</userinput></screen>
 @z
 
 @x
@@ -1126,43 +548,15 @@ EOF</userinput></screen>
 @z
 
 @x
-      <para>
         If you installed <application>Qt5</application> in
         <filename class="directory">/usr</filename>, create an
         environment variable needed by certain packages.
         As the <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para>
         If you installed <application>Qt5</application> in
         <filename class="directory">/usr</filename>, create an
         environment variable needed by certain packages.
         As the <systemitem class="username">root</systemitem> user:
-      </para>
-@z
-
-@x
-<screen role="nodump"><userinput>cat &gt; /etc/profile.d/qt5.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt5.sh
-@y
-<screen role="nodump"><userinput>cat &gt; /etc/profile.d/qt5.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt5.sh
-@z
-
-@x
-QT5DIR=/usr
-export QT5DIR
-@y
-QT5DIR=/usr
-export QT5DIR
-@z
-
-@x
-# End /etc/profile.d/qt5.sh</literal>
-EOF</userinput></screen>
-@y
-# End /etc/profile.d/qt5.sh</literal>
-EOF</userinput></screen>
 @z
 
 @x
@@ -1172,71 +566,25 @@ EOF</userinput></screen>
 @z
 
 @x
-      <para>
         If you installed <application>Qt5</application> in a location other
         than <filename class="directory">/usr</filename>, you need to update the
         following configuration files so that <application>Qt5</application> is
         correctly found by other packages and system processes.
-      </para>
 @y
-      <para>
         If you installed <application>Qt5</application> in a location other
         than <filename class="directory">/usr</filename>, you need to update the
         following configuration files so that <application>Qt5</application> is
         correctly found by other packages and system processes.
-      </para>
 @z
 
 @x
-      <para>
         As the <systemitem class="username">root</systemitem> user, update
         the <filename>/etc/ld.so.conf</filename> file and the dynamic linker's
         run-time cache file:
-      </para>
 @y
-      <para>
         As the <systemitem class="username">root</systemitem> user, update
         the <filename>/etc/ld.so.conf</filename> file and the dynamic linker's
         run-time cache file:
-      </para>
-@z
-
-@x
-<screen role="root"><userinput>cat &gt;&gt; /etc/ld.so.conf &lt;&lt; EOF
-<literal># Begin Qt addition
-@y
-<screen role="root"><userinput>cat &gt;&gt; /etc/ld.so.conf &lt;&lt; EOF
-<literal># Begin Qt addition
-@z
-
-@x
-/opt/qt5/lib
-@y
-/opt/qt5/lib
-@z
-
-@x
-# End Qt addition</literal>
-EOF
-@y
-# End Qt addition</literal>
-EOF
-@z
-
-@x
-ldconfig</userinput></screen>
-@y
-ldconfig</userinput></screen>
-@z
-
-@x
-      <indexterm zone="qt5 qt5-config">
-        <primary sortas="e-etc-ld.so.conf">/etc/ld.so.conf</primary>
-      </indexterm>
-@y
-      <indexterm zone="qt5 qt5-config">
-        <primary sortas="e-etc-ld.so.conf">/etc/ld.so.conf</primary>
-      </indexterm>
 @z
 
 @x
@@ -1252,219 +600,27 @@ ldconfig</userinput></screen>
 @z
 
 @x
-<screen role="root"><userinput>cat &gt; /etc/profile.d/qt5.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt5.sh
-@y
-<screen role="root"><userinput>cat &gt; /etc/profile.d/qt5.sh &lt;&lt; "EOF"
-<literal># Begin /etc/profile.d/qt5.sh
-@z
-
-@x
-QT5DIR=/opt/qt5
-@y
-QT5DIR=/opt/qt5
-@z
-
-@x
-pathappend $QT5DIR/bin           PATH
-pathappend $QT5DIR/lib/pkgconfig PKG_CONFIG_PATH
-@y
-pathappend $QT5DIR/bin           PATH
-pathappend $QT5DIR/lib/pkgconfig PKG_CONFIG_PATH
-@z
-
-@x
-export QT5DIR
-@y
-export QT5DIR
-@z
-
-@x
-# End /etc/profile.d/qt5.sh</literal>
-EOF</userinput></screen>
-@y
-# End /etc/profile.d/qt5.sh</literal>
-EOF</userinput></screen>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
-@x
-      <seglistitem>
-        <seg>
-          assistant, balsam, canbusutil, designer, fixqt4headers.pl, lconvert,
-          linguist, lprodump, lrelease, lrelease-pro, lupdate, lupdate-pro,
-          meshdebug, moc, pixeltool, qcollectiongenerator, qdbus, qdbuscpp2xml,
-          qdbusviewer, qdbusxml2cpp, qdistancefieldgenerator, qdoc, qgltf,
-          qhelpgenerator, qlalr, qmake, qml, qmlcachegen, qmleasing,
-          qmlformat, qmlimportscanner, qmllint, qmlmin, qmlplugindump,
-          qmlpreview, qmlprofiler, qmlscene, qmltestrunner, qmltime,
-          qmltyperegistrar, qscxmlc,
-          qtattributionscanner, qtdiag, qtpaths, qtplugininfo,
-          qtwaylandscanner, qvkgen, rcc, repc, sdpscanner, syncqt.pl, tracegen,
-          uic, xmlpatterns, and xmlpatternsvalidator
-        </seg>
-        <seg>
-          libQt53DAnimation.so, libQt53DCore.so,
-          libQt53DExtras.so, libQt53DInput.so, libQt53DLogic.so,
-          libQt53DQuick.so, libQt53DQuickAnimation.so, libQt53DQuickExtras.so,
-          libQt53DQuickInput.so, libQt53DQuickRender.so,
-          libQt53DQuickScene2D.so, libQt53DRender.so,
-          libQt5AccessibilitySupport.a, libQt5Bluetooth.so, libQt5Bodymovin.so,
-          libQt5Bootstrap.a, libQt5Charts.so, libQt5Concurrent.so,
-          libQt5Core.so, libQt5DataVisualization.so, libQt5DBus.so,
-          libQt5DesignerComponents.so, libQt5Designer.so,
-          libQt5DeviceDiscoverySupport.a, libQt5EdidSupport.a,
-          libQt5EglFSDeviceIntegration.so, libQt5EglFsKmsSupport.so,
-          libQt5EglSupport.a, libQt5EventDispatcherSupport.a, libQt5FbSupport.a,
-          libQt5FontDatabaseSupport.a, libQt5Gamepad.so, libQt5GlxSupport.a,
-          libQt5Gui.so,libQt5Help.so, libQt5InputSupport.a, libQt5KmsSupport.a,
-          libQt5LinuxAccessibilitySupport.a, libQt5Location.so,
-          libQt5Multimedia.so, libQt5MultimediaGstTools.so,
-          libQt5MultimediaQuick.so, libQt5MultimediaWidgets.so,
-          libQt5Network.so, libQt5NetworkAuth.so, libQt5Nfc.so,
-          libQt5OpenGLExtensions.a, libQt5OpenGL.so, libQt5PacketProtocol.a,
-          libQt5PlatformCompositorSupport.a, libQt5Positioning.so,
-          libQt5PositioningQuick.so, libQt5PrintSupport.so,
-          libQt5Purchasing.so, libQt5Qml.so, libQt5QmlDebug.a,
-          libQt5QmlDevTools.a, libQt5QmlModels.so, libQt5QmlWorkerScript.so,
-          libQt5Quick.so, libQt5Quick3D.so, libQt5Quick3DAssetImport.so,
-          libQt5Quick3DRender.so, libQt5Quick3DRuntimeRender.so,
-          libQt5Quick3DUtils.so, libQt5QuickControls2.so,
-          libQt5QuickParticles.so, libQt5QuickShapes.so,
-          libQt5QuickTemplates2.so, libQt5QuickTest.so, libQt5QuickWidgets.so,
-          libQt5RemoteObjects.so, libQt5Script.so, libQt5ScriptTools.so,
-          libQt5Scxml.so, libQt5Sensors.so, libQt5SerialBus.so,
-          libQt5SerialPort.so, libQt5ServiceSupport.a, libQt5Sql.so,
-          libQt5Svg.so, libQt5Test.so, libQt5TextToSpeech.so,
-          libQt5ThemeSupport.a, libQt5UiTools.a, libQt5VirtualKeyboard.so,
-          libQt5VulkanSupport.a, libQt5WaylandClient.so,
-          libQt5WaylandCompositor.so, libQt5WebChannel.so, libQt5WebSockets.so,
-          libQt5WebView.so, libQt5Widgets.so, libQt5X11Extras.so,
-          libQt5XcbQpa.so, libQt5XkbCommonSupport.a, libQt5Xml.so,
-          libQt5XmlPatterns.so,
-          and several plugins under /opt/qt5/{plugins,qml}
-        </seg>
-        <seg>
-          /usr/include/qt5,
-          /usr/lib/qt5,
-          /usr/share/doc/qt5, and
-          /usr/share/qt5
-          OR
-          /opt/qt5 and
-          /opt/qt-&qt5-version;
-        </seg>
-      </seglistitem>
-    </segmentedlist>
-@y
-      <seglistitem>
-        <seg>
-          assistant, balsam, canbusutil, designer, fixqt4headers.pl, lconvert,
-          linguist, lprodump, lrelease, lrelease-pro, lupdate, lupdate-pro,
-          meshdebug, moc, pixeltool, qcollectiongenerator, qdbus, qdbuscpp2xml,
-          qdbusviewer, qdbusxml2cpp, qdistancefieldgenerator, qdoc, qgltf,
-          qhelpgenerator, qlalr, qmake, qml, qmlcachegen, qmleasing,
-          qmlformat, qmlimportscanner, qmllint, qmlmin, qmlplugindump,
-          qmlpreview, qmlprofiler, qmlscene, qmltestrunner, qmltime,
-          qmltyperegistrar, qscxmlc,
-          qtattributionscanner, qtdiag, qtpaths, qtplugininfo,
-          qtwaylandscanner, qvkgen, rcc, repc, sdpscanner, syncqt.pl, tracegen,
-          uic, xmlpatterns, and xmlpatternsvalidator
-        </seg>
-        <seg>
-          libQt53DAnimation.so, libQt53DCore.so,
-          libQt53DExtras.so, libQt53DInput.so, libQt53DLogic.so,
-          libQt53DQuick.so, libQt53DQuickAnimation.so, libQt53DQuickExtras.so,
-          libQt53DQuickInput.so, libQt53DQuickRender.so,
-          libQt53DQuickScene2D.so, libQt53DRender.so,
-          libQt5AccessibilitySupport.a, libQt5Bluetooth.so, libQt5Bodymovin.so,
-          libQt5Bootstrap.a, libQt5Charts.so, libQt5Concurrent.so,
-          libQt5Core.so, libQt5DataVisualization.so, libQt5DBus.so,
-          libQt5DesignerComponents.so, libQt5Designer.so,
-          libQt5DeviceDiscoverySupport.a, libQt5EdidSupport.a,
-          libQt5EglFSDeviceIntegration.so, libQt5EglFsKmsSupport.so,
-          libQt5EglSupport.a, libQt5EventDispatcherSupport.a, libQt5FbSupport.a,
-          libQt5FontDatabaseSupport.a, libQt5Gamepad.so, libQt5GlxSupport.a,
-          libQt5Gui.so,libQt5Help.so, libQt5InputSupport.a, libQt5KmsSupport.a,
-          libQt5LinuxAccessibilitySupport.a, libQt5Location.so,
-          libQt5Multimedia.so, libQt5MultimediaGstTools.so,
-          libQt5MultimediaQuick.so, libQt5MultimediaWidgets.so,
-          libQt5Network.so, libQt5NetworkAuth.so, libQt5Nfc.so,
-          libQt5OpenGLExtensions.a, libQt5OpenGL.so, libQt5PacketProtocol.a,
-          libQt5PlatformCompositorSupport.a, libQt5Positioning.so,
-          libQt5PositioningQuick.so, libQt5PrintSupport.so,
-          libQt5Purchasing.so, libQt5Qml.so, libQt5QmlDebug.a,
-          libQt5QmlDevTools.a, libQt5QmlModels.so, libQt5QmlWorkerScript.so,
-          libQt5Quick.so, libQt5Quick3D.so, libQt5Quick3DAssetImport.so,
-          libQt5Quick3DRender.so, libQt5Quick3DRuntimeRender.so,
-          libQt5Quick3DUtils.so, libQt5QuickControls2.so,
-          libQt5QuickParticles.so, libQt5QuickShapes.so,
-          libQt5QuickTemplates2.so, libQt5QuickTest.so, libQt5QuickWidgets.so,
-          libQt5RemoteObjects.so, libQt5Script.so, libQt5ScriptTools.so,
-          libQt5Scxml.so, libQt5Sensors.so, libQt5SerialBus.so,
-          libQt5SerialPort.so, libQt5ServiceSupport.a, libQt5Sql.so,
-          libQt5Svg.so, libQt5Test.so, libQt5TextToSpeech.so,
-          libQt5ThemeSupport.a, libQt5UiTools.a, libQt5VirtualKeyboard.so,
-          libQt5VulkanSupport.a, libQt5WaylandClient.so,
-          libQt5WaylandCompositor.so, libQt5WebChannel.so, libQt5WebSockets.so,
-          libQt5WebView.so, libQt5Widgets.so, libQt5X11Extras.so,
-          libQt5XcbQpa.so, libQt5XkbCommonSupport.a, libQt5Xml.so,
-          libQt5XmlPatterns.so,
-          and several plugins under /opt/qt5/{plugins,qml}
-        </seg>
-        <seg>
-          /usr/include/qt5,
-          /usr/lib/qt5,
-          /usr/share/doc/qt5, and
-          /usr/share/qt5
-          OR
-          /opt/qt5 and
-          /opt/qt-&qt5-version;
-        </seg>
-      </seglistitem>
-    </segmentedlist>
-@z
+
 
 @x
-    <variablelist id='qt5-descriptions' xreflabel="Qt5 Short Descriptions">
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist id='qt5-descriptions' xreflabel="Qt5 Short Descriptions">
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
 @x
@@ -2891,22 +2047,4 @@ EOF</userinput></screen>
           </indexterm>
         </listitem>
       </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

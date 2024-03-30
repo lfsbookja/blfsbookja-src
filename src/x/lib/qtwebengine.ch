@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY qtwebengine-buildsize     "7.6 GB (231 MB installed)">
-  <!ENTITY qtwebengine-time          "51 SBU (Using parallelism=8)">
+  <!ENTITY qtwebengine-time          "58 SBU (Using parallelism=8)">
 @y
   <!ENTITY qtwebengine-buildsize     "7.6 GB (231 MB installed)">
-  <!ENTITY qtwebengine-time          "51 SBU (Using parallelism=8)">
+  <!ENTITY qtwebengine-time          "58 SBU (Using parallelism=8)">
 @z
 
 @x
