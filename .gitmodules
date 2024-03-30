@@ -1,0 +1,3 @@
+[submodule "blfs-git"]
+	path = blfs-git
+	url = https://git.linuxfromscratch.org/blfs.git
