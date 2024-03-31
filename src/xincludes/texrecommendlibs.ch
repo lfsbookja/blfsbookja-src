@@ -4,13 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<!DOCTYPE para PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE para PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-@z
-
-@x
 <para role="recommended">
   The source ships with its own versions of <emphasis>many</emphasis>
   libraries, and will use them unless it is forced to use the system

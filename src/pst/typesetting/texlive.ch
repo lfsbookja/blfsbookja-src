@@ -4,13 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-@y
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
-@z
-
-@x
     <title>Introduction to TeX Live from source</title>
 @y
     <title>Introduction to TeX Live from source</title>
