@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libical-buildsize     "38 MB (with tests and API documentation)">
-  <!ENTITY libical-time          "0.4 SBU (with tests and documentation)">
+  <!ENTITY libical-buildsize     "24 MB (with tests)">
+  <!ENTITY libical-time          "0.1 SBU (iusing parallelism=4; with tests)">
 @y
-  <!ENTITY libical-buildsize     "38 MB (テストと API ドキュメント込み)">
-  <!ENTITY libical-time          "0.4 SBU (テストとドキュメント込み)">
+  <!ENTITY libical-buildsize     "24 MB (with tests)">
+  <!ENTITY libical-time          "0.1 SBU (iusing parallelism=4; with tests)">
 @z
 
 @x
@@ -152,7 +152,7 @@
 @z
 
 @x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used
       to apply higher level of the compiler optimizations.
 @y
       <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
