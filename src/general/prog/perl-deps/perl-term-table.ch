@@ -36,24 +36,6 @@
 @z
 
 @x
-      <bridgehead renderas="sect4">Term::Table Dependencies</bridgehead>
-@y
-      <bridgehead renderas="sect4">&Dependencies1;Term::Table&Dependencies2;</bridgehead>
-@z
-
-@x
-      <bridgehead renderas="sect5">Required</bridgehead>
-      <para role="required">
-        <xref linkend="perl-importer"/>
-      </para>
-@y
-      <bridgehead renderas="sect5">&Required;</bridgehead>
-      <para role="required">
-        <xref linkend="perl-importer"/>
-      </para>
-@z
-
-@x
       <title>Installation of Term::Table</title>
 @y
       <title>&InstallationOf1;Term::Table&InstallationOf2;</title>

@@ -275,7 +275,6 @@ CHANGE_FILES = \
 	perl-http-date.ch \
 	perl-http-message.ch \
 	perl-http-negotiate.ch \
-	perl-importer.ch \
 	perl-io-html.ch \
 	perl-ipc-system-simple.ch \
 	perl-list-moreutils-xs.ch \
@@ -285,7 +284,6 @@ CHANGE_FILES = \
 	perl-lwp-mediatypes.ch \
 	perl-mime-charset.ch \
 	perl-module-implementation.ch \
-	perl-module-pluggable.ch \
 	perl-module-runtime.ch \
 	perl-mro-compat.ch \
 	perl-namespace-autoclean.ch \
@@ -302,7 +300,6 @@ CHANGE_FILES = \
 	perl-specio.ch \
 	perl-sub-exporter-progressive.ch \
 	perl-sub-identify.ch \
-	perl-sub-info.ch \
 	perl-sub-quote.ch \
 	perl-sub-uplevel.ch \
 	perl-term-table.ch \
