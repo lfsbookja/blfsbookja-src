@@ -44,19 +44,11 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <!-- importer is pulled in by both sub-info and term-table -->
-        <xref linkend="perl-module-pluggable"/>,
-        <xref linkend="perl-scope-guard"/>,
-        <xref linkend="perl-sub-info"/> and
         <xref linkend="perl-term-table"/>
       </para>
 @y
       <bridgehead renderas="sect5">&Required;</bridgehead>
       <para role="required">
-        <!-- importer is pulled in by both sub-info and term-table -->
-        <xref linkend="perl-module-pluggable"/>,
-        <xref linkend="perl-scope-guard"/>,
-        <xref linkend="perl-sub-info"/>,
         <xref linkend="perl-term-table"/>
       </para>
 @z
