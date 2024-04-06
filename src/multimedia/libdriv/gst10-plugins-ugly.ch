@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY gst10-plugins-ugly-buildsize     "9.6 MB (with tests)">
-  <!ENTITY gst10-plugins-ugly-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY gst10-plugins-ugly-time          "0.1 SBU (with tests)">
 @y
   <!ENTITY gst10-plugins-ugly-buildsize     "9.6 MB (テスト込み)">
-  <!ENTITY gst10-plugins-ugly-time          "&LessThan1;0.1 SBU&LessThan2; (テスト込み)">
+  <!ENTITY gst10-plugins-ugly-time          "0.1 SBU (テスト込み)">
 @z
 
 @x
@@ -116,10 +116,8 @@
       <xref linkend="libcdio"/> (for CD-ROM drive access),
       <xref linkend="valgrind"/>,
       <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>,
-      <ulink url="https://packages.debian.org/source/sid/libsidplay">libsidplay</ulink>,
-      <ulink url="https://sourceforge.net/projects/opencore-amr/">OpenCore AMR</ulink>,
-      <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>, and
-      <ulink url="https://www.twolame.org/">TwoLame</ulink>
+      <ulink url="https://packages.debian.org/source/sid/libsidplay">libsidplay</ulink>, and
+      <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -129,9 +127,7 @@
       <xref linkend="valgrind"/>,
       <ulink url="https://pypi.org/project/hotdoc/">hotdoc</ulink>,
       <ulink url="https://packages.debian.org/source/sid/libsidplay">libsidplay</ulink>,
-      <ulink url="https://sourceforge.net/projects/opencore-amr/">OpenCore AMR</ulink>,
-      <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>,
-      <ulink url="https://www.twolame.org/">TwoLame</ulink>
+      <ulink url="https://gstreamer.freedesktop.org/src/orc/">Orc</ulink>
     </para>
 @z
 

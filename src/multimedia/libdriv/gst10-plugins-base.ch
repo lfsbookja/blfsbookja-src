@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gst10-plugins-base-buildsize     "96 MB (with tests)">
-  <!ENTITY gst10-plugins-base-time          "0.7 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-base-buildsize     "93 MB (with tests)">
+  <!ENTITY gst10-plugins-base-time          "1.0 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-base-buildsize     "96 MB（テスト込み）">
-  <!ENTITY gst10-plugins-base-time          "0.7 SBU（parallelism=4 利用、テスト込み）">
+  <!ENTITY gst10-plugins-base-buildsize     "93 MB（テスト込み）">
+  <!ENTITY gst10-plugins-base-time          "1.0 SBU（parallelism=4 利用、テスト込み）">
 @z
 
 @x
@@ -180,12 +180,14 @@
       To test the results, issue: <command>ninja test</command>. The tests
       require an X terminal running, or all of the GL tests will fail. Five
       tests may produce timeouts on some systems depending on their graphics
-      hardware and speed.
+      hardware and speed. One test, <filename>elements_appsrc</filename>, iw
+      known to fail on some systems.
 @y
       To test the results, issue: <command>ninja test</command>. The tests
       require an X terminal running, or all of the GL tests will fail. Five
       tests may produce timeouts on some systems depending on their graphics
-      hardware and speed.
+      hardware and speed. One test, <filename>elements_appsrc</filename>, iw
+      known to fail on some systems.
 @z
 
 @x
@@ -228,40 +230,6 @@
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-        <seg>
-          gst-device-monitor-1.0, gst-discoverer-1.0, and gst-play-1.0
-        </seg>
-        <seg>
-          libgstallocators-1.0.so, libgstapp-1.0.so, libgstaudio-1.0.so,
-          libgstfft-1.0.so, libgstgl-1.0.so, libgstpbutils-1.0.so,
-          libgstriff-1.0.so, libgstrtp-1.0.so, libgstrtsp-1.0.so,
-          libgstsdp-1.0.so, libgsttag-1.0.so, libgstvideo-1.0.so,
-          and several plugins under /usr/lib/gstreamer-1.0
-        </seg>
-        <seg>
-          /usr/include/gstreamer-1.0/gst/{allocators,app,audio,fft,gl,pbutils},
-          /usr/include/gstreamer-1.0/gst/{riff,rtp,rtsp,sdp,tag,video}, and
-          /usr/share/gst-plugins-base
-        </seg>
-@y
-        <seg>
-          gst-device-monitor-1.0, gst-discoverer-1.0, gst-play-1.0
-        </seg>
-        <seg>
-          libgstallocators-1.0.so, libgstapp-1.0.so, libgstaudio-1.0.so,
-          libgstfft-1.0.so, libgstgl-1.0.so, libgstpbutils-1.0.so,
-          libgstriff-1.0.so, libgstrtp-1.0.so, libgstrtsp-1.0.so,
-          libgstsdp-1.0.so, libgsttag-1.0.so, libgstvideo-1.0.so,
-          and several plugins under /usr/lib/gstreamer-1.0
-        </seg>
-        <seg>
-          /usr/include/gstreamer-1.0/gst/{allocators,app,audio,fft,gl,pbutils},
-          /usr/include/gstreamer-1.0/gst/{riff,rtp,rtsp,sdp,tag,video},
-          /usr/share/gst-plugins-base
-        </seg>
 @z
 
 @x

@@ -154,15 +154,21 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>. One test,
-      <filename>test-font</filename> is known to fail.  Some tests may
-      fail if no Opentype or Truetype fonts are installed in
-      <filename class='directory'>/usr/share/fonts</filename>.
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
 @y
-      To test the results, issue: <command>ninja test</command>. One test,
-      <filename>test-font</filename> is known to fail.  Some tests may
-      fail if no Opentype or Truetype fonts are installed in
-      <filename class='directory'>/usr/share/fonts</filename>.
+      If you have <xref linkend='gi-docgen'/> installed and wish to build
+      the API documentation for this package, issue:
+@z
+
+@x
+      To test the results, issue: <command>ninja test</command>.
+      One test (test-layout) is known to fail on i686 systems for
+      unknown reason.
+@y
+      To test the results, issue: <command>ninja test</command>.
+      One test (test-layout) is known to fail on i686 systems for
+      unknown reason.
 @z
 
 @x

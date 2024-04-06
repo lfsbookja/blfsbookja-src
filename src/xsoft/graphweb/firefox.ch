@@ -272,28 +272,17 @@
 @z
 
 @x
-        The Google and Mozilla API Keys below are specific to LFS. If using
-        these instructions for another distro, or if you intend to distribute
+        The Google API Key below is specific to LFS. If using these
+        instructions for another distro, or if you intend to distribute
         binary copies of the software using these instructions, please obtain
-        your own keys following the instructions located at
-        <ulink url="https://www.chromium.org/developers/how-tos/api-keys"/> and
-        <ulink url="https://location.services.mozilla.com/api"/> respectively.
-        <!-- BLFS Devs, register an account at Google with your
-        @linuxfromscratch.org email address, and I'll make you an administrator
-        for the 'Google APIs for LFS' project (where the API and OAuth keys
-        were created for use in the book).-->
+        your own key following the instructions located at
+        <ulink url="https://www.chromium.org/developers/how-tos/api-keys"/>.
 @y
-        <!-- Taken from Arch Linux - an immensely helpful link - Thanks -->
-        The Google and Mozilla API Keys below are specific to LFS. If using
-        these instructions for another distro, or if you intend to distribute
+        The Google API Key below is specific to LFS. If using these
+        instructions for another distro, or if you intend to distribute
         binary copies of the software using these instructions, please obtain
-        your own keys following the instructions located at
-        <ulink url="https://www.chromium.org/developers/how-tos/api-keys"/> and
-        <ulink url="https://location.services.mozilla.com/api"/> respectively.
-        <!-- BLFS Devs, register an account at Google with your
-        @linuxfromscratch.org email address, and I'll make you an administrator
-        for the 'Google APIs for LFS' project (where the API and OAuth keys
-        were created for use in the book).-->
+        your own key following the instructions located at
+        <ulink url="https://www.chromium.org/developers/how-tos/api-keys"/>.
 @z
 
 @x

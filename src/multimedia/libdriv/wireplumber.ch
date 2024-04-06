@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY wireplumber-buildsize     "82 MB (with tests)">
+  <!ENTITY wireplumber-buildsize     "85 MB (with tests)">
   <!ENTITY wireplumber-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY wireplumber-buildsize     "82 MB (with tests)">
+  <!ENTITY wireplumber-buildsize     "85 MB (with tests)">
   <!ENTITY wireplumber-time          "0.3 SBU (with tests)">
 @z
 
@@ -310,171 +310,41 @@
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
-        <seg>
-          wireplumber,
-          wpctl, and
-          wpexec
-        </seg>
-        <seg>
-          libwireplumber-0.4.so
-        </seg>
-        <seg>
-          /usr/include/wireplumber-0.4,
-          /usr/lib/wireplumber-0.4, and
-          /usr/share/wireplumber
-        </seg>
-      </seglistitem>
-    </segmentedlist>
-@y
-      <seglistitem>
-        <seg>
-          wireplumber,
-          wpctl, and
-          wpexec
-        </seg>
-        <seg>
-          libwireplumber-0.4.so
-        </seg>
-        <seg>
-          /usr/include/wireplumber-0.4,
-          /usr/lib/wireplumber-0.4, and
-          /usr/share/wireplumber
-        </seg>
-      </seglistitem>
-    </segmentedlist>
-@z
-
-@x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="wireplumber-prog">
-        <term><command>wireplumber</command></term>
-        <listitem>
-          <para>
+@x wireplumber
             is a session and policy manager for Pipewire
-          </para>
-          <indexterm zone="wireplumber wireplumber-prog">
-            <primary sortas="b-wireplumber">wireplumber</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="wireplumber-prog">
-        <term><command>wireplumber</command></term>
-        <listitem>
-          <para>
             is a session and policy manager for Pipewire
-          </para>
-          <indexterm zone="wireplumber wireplumber-prog">
-            <primary sortas="b-wireplumber">wireplumber</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="wpctl">
-        <term><command>wpctl</command></term>
-        <listitem>
-          <para>
+@x wpctl
             controls and queries information from Wireplumber
-          </para>
-          <indexterm zone="wireplumber wpctl">
-            <primary sortas="b-wpctl">wpctl</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="wpctl">
-        <term><command>wpctl</command></term>
-        <listitem>
-          <para>
             controls and queries information from Wireplumber
-          </para>
-          <indexterm zone="wireplumber wpctl">
-            <primary sortas="b-wpctl">wpctl</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="wpexec">
-        <term><command>wpexec</command></term>
-        <listitem>
-          <para>
+@x wpexec
             executes Wireplumber scripts, which are often written in Lua
-          </para>
-          <indexterm zone="wireplumber wpexec">
-            <primary sortas="b-wpexec">wpexec</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="wpexec">
-        <term><command>wpexec</command></term>
-        <listitem>
-          <para>
             executes Wireplumber scripts, which are often written in Lua
-          </para>
-          <indexterm zone="wireplumber wpexec">
-            <primary sortas="b-wpexec">wpexec</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="libwireplumber">
-        <term><filename class="libraryfile">libwireplumber-0.4.so</filename></term>
-        <listitem>
-          <para>
+@x libwireplumber-0.4.so
             contains functions that allow other programs to control Wireplumber
-          </para>
-          <indexterm zone="wireplumber libwireplumber">
-            <primary sortas="c-libwireplumber">libwireplumber-0.4.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-  </sect2>
-</sect1>
 @y
-      <varlistentry id="libwireplumber">
-        <term><filename class="libraryfile">libwireplumber-0.4.so</filename></term>
-        <listitem>
-          <para>
             contains functions that allow other programs to control Wireplumber
-          </para>
-          <indexterm zone="wireplumber libwireplumber">
-            <primary sortas="c-libwireplumber">libwireplumber-0.4.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-  </sect2>
-</sect1>
 @z

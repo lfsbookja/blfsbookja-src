@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY snapshot-buildsize     "1.6 GB (5.3 MB installed)">
-@y
-  <!ENTITY snapshot-buildsize     "1.6 GB (5.3 MB installed)">
-@z
-
-@x
     <title>Introduction to Snapshot</title>
 @y
     <title>&IntroductionTo1;Snapshot&IntroductionTo2;</title>

@@ -78,6 +78,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="geoclue2"/>,
       <xref linkend="gjs"/>,
       <xref linkend="libadwaita1"/>, and
       <xref linkend="libgweather"/>
@@ -86,6 +87,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="geoclue2"/>,
       <xref linkend="gjs"/>,
       <xref linkend="libadwaita1"/>,
       <xref linkend="libgweather"/>

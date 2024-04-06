@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gstreamer10-buildsize     "47 MB (with tests)">
+  <!ENTITY gstreamer10-buildsize     "67 MB (with tests)">
   <!ENTITY gstreamer10-time          "0.4 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gstreamer10-buildsize     "47 MB (with tests)">
+  <!ENTITY gstreamer10-buildsize     "67 MB (with tests)">
   <!ENTITY gstreamer10-time          "0.4 SBU (Using parallelism=4; with tests)">
 @z
 
@@ -181,32 +181,6 @@
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
-@z
-
-@x
-        <seg>
-          gst-inspect-1.0, gst-launch-1.0, gst-stats-1.0, gst-tester-1.0,
-          and gst-typefind-1.0
-        </seg>
-        <seg>
-          libgstbase-1.0.so, libgstcheck-1.0.so, libgstcontroller-1.0.so,
-          libgstnet-1.0.so, and libgstreamer-1.0.so
-        </seg>
-        <seg>
-          /usr/{include,lib,libexec,share}/gstreamer-1.0
-        </seg>
-@y
-        <seg>
-          gst-inspect-1.0, gst-launch-1.0, gst-stats-1.0, gst-tester-1.0,
-          and gst-typefind-1.0
-        </seg>
-        <seg>
-          libgstbase-1.0.so, libgstcheck-1.0.so, libgstcontroller-1.0.so,
-          libgstnet-1.0.so, and libgstreamer-1.0.so
-        </seg>
-        <seg>
-          /usr/{include,lib,libexec,share}/gstreamer-1.0
-        </seg>
 @z
 
 @x

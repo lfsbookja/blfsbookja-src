@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gst10-plugins-bad-buildsize     "177 MB (with tests)">
-  <!ENTITY gst10-plugins-bad-time          "0.9 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-bad-buildsize     "194 MB (with tests)">
+  <!ENTITY gst10-plugins-bad-time          "1.0 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-bad-buildsize     "177 MB（テスト込み）">
-  <!ENTITY gst10-plugins-bad-time          "0.9 SBU（parallelism=4 利用、テスト込み）">
+  <!ENTITY gst10-plugins-bad-buildsize     "194 MB（テスト込み）">
+  <!ENTITY gst10-plugins-bad-time          "1.0 SBU（parallelism=4 利用、テスト込み）">
 @z
 
 @x
@@ -170,74 +170,6 @@
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-        <seg>
-          gst-transcoder-1.0 and
-          playout
-        </seg>
-        <seg>
-          libgstadaptivedemux-1.0.so,
-          libgstbadaudio-1.0.so,
-          libgstbasecamerabinsrc-1.0.so,
-          libgstcuda-1.0.so,
-          libgstcodecparsers-1.0.so,
-          libgstcodecs-1.0.so,
-          libgstinsertbin-1.0.so,
-          libgstisoff-1.0.so,
-          libgstmpegts-1.0.so,
-          libgstphotography-1.0.so,
-          libgstplay-1.0.so,
-          libgstplayer-1.0.so,
-          libgstsctp-1.0.so,
-          libgsttranscoder-1.0.so,
-          libgsturidownloader-1.0.so,
-          libgstva-1.0.so,
-          libgstwayland-1.0.so,
-          libgstwebrtc-1.0.so, and
-          several plugins under /usr/lib/gstreamer-1.0
-        </seg>
-        <seg>
-          /usr/include/gstreamer-1.0/gst/{audio,basecamerabinsrc,cuda},
-          /usr/include/gstreamer-1.0/gst/{codecparsers,insertbin,interfaces},
-          /usr/include/gstreamer-1.0/gst/{isoff,mpegts,play,player,sctp}
-          /usr/include/gstreamer-1.0/gst/{transcoder,uridownloader,va}, and
-          /usr/include/gstreamer-1.0/gst/{wayland,webrtc}
-        </seg>
-@y
-        <seg>
-          gst-transcoder-1.0,
-          playout
-        </seg>
-        <seg>
-          libgstadaptivedemux-1.0.so,
-          libgstbadaudio-1.0.so,
-          libgstbasecamerabinsrc-1.0.so,
-          libgstcuda-1.0.so,
-          libgstcodecparsers-1.0.so,
-          libgstcodecs-1.0.so,
-          libgstinsertbin-1.0.so,
-          libgstisoff-1.0.so,
-          libgstmpegts-1.0.so,
-          libgstphotography-1.0.so,
-          libgstplay-1.0.so,
-          libgstplayer-1.0.so,
-          libgstsctp-1.0.so,
-          libgsttranscoder-1.0.so,
-          libgsturidownloader-1.0.so,
-          libgstva-1.0.so,
-          libgstwayland-1.0.so,
-          libgstwebrtc-1.0.so,
-          several plugins under /usr/lib/gstreamer-1.0
-        </seg>
-        <seg>
-          /usr/include/gstreamer-1.0/gst/{audio,basecamerabinsrc,cuda},
-          /usr/include/gstreamer-1.0/gst/{codecparsers,insertbin,interfaces},
-          /usr/include/gstreamer-1.0/gst/{isoff,mpegts,play,player,sctp}
-          /usr/include/gstreamer-1.0/gst/{transcoder,uridownloader,va},
-          /usr/include/gstreamer-1.0/gst/{wayland,webrtc}
-        </seg>
 @z
 
 @x

@@ -159,7 +159,7 @@
           None
         </seg>
         <seg>
-          libgstlibav.so in /usr/lib/gstreamer-1.0 directory
+          libgstlibav.so in /usr/lib/gstreamer-1.0
         </seg>
         <seg>
           None
@@ -169,7 +169,7 @@
           &None;
         </seg>
         <seg>
-          libgstlibav.so in /usr/lib/gstreamer-1.0 directory
+          libgstlibav.so in /usr/lib/gstreamer-1.0
         </seg>
         <seg>
           &None;
