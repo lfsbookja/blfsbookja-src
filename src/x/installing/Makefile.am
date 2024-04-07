@@ -12,6 +12,7 @@ CHANGE_FILES = \
 	libxcb.ch                \
 	libxcvt.ch               \
 	libXdmcp.ch              \
+	luit.ch                  \
 	mesa.ch                  \
 	mesa-kernel.ch           \
 	TTF-and-OTF-fonts.ch     \

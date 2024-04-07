@@ -307,10 +307,6 @@
       </phrase>
       read <xref linkend='build-in-cgroup'/> for details) to limit the
       number of logical cores for running the tests.
-      Two tests named
-      <filename>sanitizer_coverage_inline8bit_counter_default_impl.cpp</filename>
-      and <filename>sanitizer_coverage_symbolize.cpp</filename> are known
-      to fail.
       One test named <filename>Linux/clone_setns.cpp</filename> will fail
       if <option>CONFIG_USER_NS</option> is not enabled in kernel
       configuration.
@@ -324,10 +320,6 @@
       </phrase>
       read <xref linkend='build-in-cgroup'/> for details) to limit the
       number of logical cores for running the tests.
-      Two tests named
-      <filename>sanitizer_coverage_inline8bit_counter_default_impl.cpp</filename>
-      and <filename>sanitizer_coverage_symbolize.cpp</filename> are known
-      to fail.
       One test named <filename>Linux/clone_setns.cpp</filename> will fail
       if <option>CONFIG_USER_NS</option> is not enabled in kernel
       configuration.

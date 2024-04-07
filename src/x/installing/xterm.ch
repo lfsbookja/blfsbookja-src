@@ -67,12 +67,12 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="xorg7-app"/>
+      <xref linkend="luit"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="xorg7-app"/>
+      <xref linkend="luit"/>
     </para>
 @z
 

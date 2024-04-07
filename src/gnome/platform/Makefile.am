@@ -38,7 +38,6 @@ CHANGE_FILES = \
 	libpeas.ch                   \
 	libsecret.ch                 \
 	libshumate.ch                \
-	libwnck.ch                   \
 	mutter.ch                    \
 	nautilus.ch                  \
 	platform.ch                  \

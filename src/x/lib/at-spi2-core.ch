@@ -119,17 +119,15 @@
 @z
 
 @x
-      The test suite also requires the glib schemas of the package to be
-      installed already. To test the results, install the package first,
+      The test suite requires the glib schemas of the package to be
+      installed already. The tests also need to run in a graphical
+      environment.  To test the results, install the package first,
       then issue: <command>dbus-run-session ninja test</command>.
-      One test, <filename>atk-test</filename>, is known to timeout on some
-      systems.
 @y
-      The test suite also requires the glib schemas of the package to be
-      installed already. To test the results, install the package first,
+      The test suite requires the glib schemas of the package to be
+      installed already. The tests also need to run in a graphical
+      environment.  To test the results, install the package first,
       then issue: <command>dbus-run-session ninja test</command>.
-      One test, <filename>atk-test</filename>, is known to timeout on some
-      systems.
 @z
 
 @x
