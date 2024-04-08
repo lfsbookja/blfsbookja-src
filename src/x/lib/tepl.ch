@@ -71,7 +71,8 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="icu"/>,
       <xref linkend="libgedit-amtk"/>,
-      <xref linkend="libgedit"/>, and
+      <xref linkend="libgedit"/>, 
+      <xref linkend="libhandy1"/>, and
       <xref linkend="uchardet"/>
     </para>
 @y
@@ -80,7 +81,8 @@
       <xref linkend="gsettings-desktop-schemas"/>,
       <xref linkend="icu"/>,
       <xref linkend="libgedit-amtk"/>,
-      <xref linkend="libgedit"/>,
+      <xref linkend="libgedit"/>, 
+      <xref linkend="libhandy1"/>,
       <xref linkend="uchardet"/>
     </para>
 @z
