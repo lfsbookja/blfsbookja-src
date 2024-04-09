@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gnome-keyring-time          "0.2 SBU (Using parallelism=4; add 0.3 SBU for tests)">
+  <!ENTITY gnome-keyring-time          "0.2 SBU (Using parallelism=4; add 0.2 SBU for tests)">
 @y
-  <!ENTITY gnome-keyring-time          "0.2 SBU（parallelism=4 利用時。テスト実施時はさらに 0.3 SBU）">
+  <!ENTITY gnome-keyring-time          "0.2 SBU（parallelism=4 利用時。テスト実施時はさらに 0.2 SBU）">
 @z
 
 @x
@@ -103,18 +103,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>,
-      <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
-      <xref linkend="gnupg2"/>, and
-      <xref linkend="valgrind"/>
+      <xref linkend="gnupg2"/>,
+      <xref linkend="valgrind"/>,
+      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>, and
+      <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>,
-      <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>,
       <xref linkend="gnupg2"/>,
-      <xref linkend="valgrind"/>
+      <xref linkend="valgrind"/>,
+      <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>,
+      <ulink url="https://people.redhat.com/sgrubb/libcap-ng/">libcap-ng</ulink>
     </para>
 @z
 

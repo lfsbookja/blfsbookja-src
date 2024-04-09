@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY pygobject3-buildsize     "7.0 MB (add 2.5 MB for tests)">
-  <!ENTITY pygobject3-time          "0.3 SBU (with tests)">
+  <!ENTITY pygobject3-time          "0.2 SBU (with tests)">
 @y
   <!ENTITY pygobject3-buildsize     "7.0 MB (add 2.5 MB for tests)">
-  <!ENTITY pygobject3-time          "0.3 SBU (with tests)">
+  <!ENTITY pygobject3-time          "0.2 SBU (with tests)">
 @z
 
 @x

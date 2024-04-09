@@ -67,20 +67,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gcr"/>,
-      <xref linkend="json-glib"/>, 
-      <xref linkend="rest"/>,
-      <xref linkend="vala"/>, and
-      <xref linkend="webkitgtk"/>
+      <xref linkend="gcr4"/>,
+      <xref linkend="json-glib"/>,
+      <xref linkend="libadwaita1"/>,
+      <xref linkend="rest"/>, and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gcr"/>,
-      <xref linkend="json-glib"/>, 
+      <xref linkend="gcr4"/>,
+      <xref linkend="json-glib"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="rest"/>,
-      <xref linkend="vala"/>,
-      <xref linkend="webkitgtk"/>
+      <xref linkend="vala"/>
     </para>
 @z
 

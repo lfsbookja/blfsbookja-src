@@ -221,15 +221,25 @@
 @z
 
 @x
-      <option>-Dcrypto=gnutls, disabled</option>: Use this switch if you
-       want to use <xref linkend="gnutls"/> for cryptography or if either
-       <xref linkend="gnutls"/> or <xref linkend="libgcrypt"/> is
-       not installed. 
+      <option>-Dcrypto=gnutls</option>: Use this switch if you want to use
+      <xref linkend="gnutls" role="nodep"/> for cryptography instead of
+      <xref linkend="libgcrypt" role="nodep"/>.
 @y
-      <option>-Dcrypto=gnutls, disabled</option>: Use this switch if you
-       want to use <xref linkend="gnutls"/> for cryptography or if either
-       <xref linkend="gnutls"/> or <xref linkend="libgcrypt"/> is
-       not installed. 
+      <option>-Dcrypto=gnutls</option>: Use this switch if you want to use
+      <xref linkend="gnutls" role="nodep"/> for cryptography instead of
+      <xref linkend="libgcrypt" role="nodep"/>.
+@z
+
+@x
+      <option>-Dcrypto=disabled</option>: Use this switch if you don't have
+      <xref linkend="gnutls" role="nodep"/> or
+      <xref linkend="libgcrypt" role="nodep"/> installed. Note that disabling
+      transport encryption support by doing this is not recommended.
+@y
+      <option>-Dcrypto=disabled</option>: Use this switch if you don't have
+      <xref linkend="gnutls" role="nodep"/> or
+      <xref linkend="libgcrypt" role="nodep"/> installed. Note that disabling
+      transport encryption support by doing this is not recommended.
 @z
 
 @x

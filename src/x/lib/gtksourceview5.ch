@@ -98,18 +98,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="gi-docgen"/>,
       <!--<xref linkend="sysprof"/>,-->
       <xref linkend="vala"/>,
       <xref linkend="valgrind"/>,
-      <xref linkend="vulkan-loader"/>,
+      <xref linkend="vulkan-loader"/>, and
       <ulink url="&sysprof-url;">sysprof</ulink>
       <!--<ulink url="https://www.vulkan.org/">Vulkan</ulink>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/>,
+      <xref linkend="gi-docgen"/>,
       <!--<xref linkend="sysprof"/>,-->
       <xref linkend="vala"/>,
       <xref linkend="valgrind"/>,
@@ -151,12 +151,12 @@
 @z
 
 @x
-      <option>-Dgtk_doc=true</option>: Use this switch if you have
-      <xref linkend="gtk-doc"/> installed and wish to generate the API
+      <option>-Ddocumentation=true</option>: Use this switch if you have
+      <xref linkend="gi-docgen"/> installed and wish to generate the API
       documentation.
 @y
-      <option>-Dgtk_doc=true</option>: Use this switch if you have
-      <xref linkend="gtk-doc"/> installed and wish to generate the API
+      <option>-Ddocumentation=true</option>: Use this switch if you have
+      <xref linkend="gi-docgen"/> installed and wish to generate the API
       documentation.
 @z
 

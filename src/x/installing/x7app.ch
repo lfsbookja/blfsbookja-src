@@ -179,7 +179,7 @@
 @z
 
 @x
-        <seg>iceauth, luit, mkfontdir, mkfontscale, sessreg,
+        <seg>iceauth, mkfontdir, mkfontscale, sessreg,
         setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
         xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill,
@@ -188,12 +188,12 @@
         <seg>None</seg>
         <seg>None</seg>
 @y
-        <seg>iceauth, luit, mkfontdir, mkfontscale, sessreg,
+        <seg>iceauth, mkfontdir, mkfontscale, sessreg,
         setxkbmap, smproxy, x11perf, x11perfcomp, xauth, xbacklight,
         xcmsdb, xcursorgen, xdpr, xdpyinfo, xdriinfo, xev, xgamma, xhost,
         xinput, xkbbell, xkbcomp, xkbevd, xkbvleds, xkbwatch, xkill,
         xlsatoms, xlsclients, xmessage, xmodmap, xpr, xprop, xrandr, xrdb,
-        xrefresh, xset, xsetroot, xvinfo, xwd, xwininfo, and xwud</seg>
+        xrefresh, xset, xsetroot, xvinfo, xwd, xwininfo, xwud</seg>
         <seg>&None;</seg>
         <seg>&None;</seg>
 @z
@@ -208,12 +208,6 @@
             is the ICE authority file utility
 @y
             is the ICE authority file utility
-@z
-
-@x luit
-            provides locale and ISO 2022 support for Unicode terminals
-@y
-            Unicode ターミナルに対してロケールと ISO 2022 サポートを提供します。
 @z
 
 @x mkfontdir

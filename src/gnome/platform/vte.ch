@@ -18,13 +18,10 @@
 @z
 
 @x
-      The <application>VTE</application> package contains a termcap
-      file implementation for terminal emulators.
+      The <application>VTE</application> package contains a virtual terminal
+      widget for GTK applications.
 @y
-      <!--
-      日本語訳註： 意味不明
-      -->
-      <application>VTE</application> パッケージは、端末エミュレーターに対しての termcap ファイル実装を提供します。
+      <application>VTE</application> パッケージは、GTK アプリケーション向けの仮想端末ウィジェットを提供します。
 @z
 
 @x

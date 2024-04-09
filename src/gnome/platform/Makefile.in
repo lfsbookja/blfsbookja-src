@@ -259,7 +259,6 @@ CHANGE_FILES = \
 	gnome-shell-extensions.ch    \
 	gnome-tweaks.ch              \
 	gnome-user-docs.ch           \
-	gnome-video-effects.ch       \
 	grilo.ch                     \
 	gsettings-desktop-schemas.ch \
 	gsound.ch                    \
