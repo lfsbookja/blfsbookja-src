@@ -105,24 +105,13 @@
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Required file:
-          <ulink url="&xorg-download-http;/xserver/xorg-server-&tigervnc-xorg-version;.tar.xz"/>
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+@x
           Required file:
-          <ulink url="&xorg-download-http;/xserver/xorg-server-&tigervnc-xorg-version;.tar.xz"/>
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Required file:
 @z
 
 @x

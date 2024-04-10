@@ -149,42 +149,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="apache-ant"/>,
-      <xref linkend="doxygen"/>,
-      <xref linkend="java"/>,
-      <xref linkend="numpy"/>,
-      <ulink url="https://math-atlas.sourceforge.net/">ATLAS</ulink>,
-      <ulink url="https://www.netlib.org/blas/">blas</ulink>,
-      <ulink url="https://developer.nvidia.com/cuda-zone">Cuda</ulink>,
-      <ulink url="https://eigen.tuxfamily.org/">Eigen</ulink>,
-      <ulink url="https://www.openexr.com/">OpenEXR</ulink>,
-      <ulink url="https://www.gdal.org/">GDAL</ulink>,
-      <ulink url="https://www.netlib.org/lapack/">lapack</ulink>,
-      <ulink url="https://sourceforge.net/projects/libdc1394/">libdc1394</ulink>,
-<!--  <ulink url="https://www.numpy.org/">NumPy</ulink>, -->
-      <ulink url="https://github.com/oneapi-src/oneTBB">Threading Building Blocks (TBB)</ulink>, and
-      <ulink url="https://vtk.org/">VTK - The Visualization Toolkit</ulink>,
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="apache-ant"/>,
-      <xref linkend="doxygen"/>,
-      <xref linkend="java"/>,
-      <xref linkend="numpy"/>,
-      <ulink url="https://math-atlas.sourceforge.net/">ATLAS</ulink>,
-      <ulink url="https://www.netlib.org/blas/">blas</ulink>,
-      <ulink url="https://developer.nvidia.com/cuda-zone">Cuda</ulink>,
-      <ulink url="https://eigen.tuxfamily.org/">Eigen</ulink>,
-      <ulink url="https://www.openexr.com/">OpenEXR</ulink>,
-      <ulink url="https://www.gdal.org/">GDAL</ulink>,
-      <ulink url="https://www.netlib.org/lapack/">lapack</ulink>,
-      <ulink url="https://sourceforge.net/projects/libdc1394/">libdc1394</ulink>,
-<!--  <ulink url="https://www.numpy.org/">NumPy</ulink>, -->
-      <ulink url="https://github.com/oneapi-src/oneTBB">Threading Building Blocks (TBB)</ulink>,
-      <ulink url="https://vtk.org/">VTK - The Visualization Toolkit</ulink>,
-    </para>
 @z
 
 @x

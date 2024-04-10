@@ -66,28 +66,8 @@
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
-    <para role="required">
-      <xref linkend="desktop-file-utils"/>,
-      <xref linkend="geoclue2"/>,
-      <xref linkend="geocode-glib"/>,
-      <xref linkend="gjs"/>,
-      <xref linkend="libadwaita1"/>,
-      <xref linkend="libshumate"/>,
-      <xref linkend="libgweather"/>, and
-      <xref linkend="rest"/>
-    </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
-    <para role="required">
-      <xref linkend="desktop-file-utils"/>,
-      <xref linkend="geoclue2"/>,
-      <xref linkend="geocode-glib"/>,
-      <xref linkend="gjs"/>,
-      <xref linkend="libadwaita1"/>,
-      <xref linkend="libshumate"/>,
-      <xref linkend="libgweather"/>,
-      <xref linkend="rest"/>
-    </para>
 @z
 
 @x

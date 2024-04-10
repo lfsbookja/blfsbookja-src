@@ -72,12 +72,12 @@
 @z
 
 @x
-      The standard MANPATH and INFOPATH path are specified above to
+      The standard INFOPATH path are specified above to
       ensure they are included.  If they are already set in the boot script
       procedure, the pathappend function will ensure duplicates are
       removed, so including them here will do no harm.
 @y
-      The standard MANPATH and INFOPATH path are specified above to
+      The standard INFOPATH path are specified above to
       ensure they are included.  If they are already set in the boot script
       procedure, the pathappend function will ensure duplicates are
       removed, so including them here will do no harm.

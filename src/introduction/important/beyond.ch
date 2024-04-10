@@ -88,11 +88,10 @@
 
 @x
       <para>Add <filename class='directory'>$PREFIX/man</filename>
-      to <filename>/etc/man_db.conf</filename> or expand
-      <envar>MANPATH</envar>.</para>
+      to <filename>/etc/man_db.conf</filename>.</para>
 @y
       <para>
-      <filename class='directory'>$PREFIX/man</filename> を <filename>/etc/man_db.conf</filename> かあるいは環境変数 <envar>MANPATH</envar> に加えます。
+      <filename class='directory'>$PREFIX/man</filename> を <filename>/etc/man_db.conf</filename> に加えます。
       </para>
 @z
 

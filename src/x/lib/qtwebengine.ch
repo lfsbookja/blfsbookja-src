@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qtwebengine-buildsize     "7.6 GB (231 MB installed)">
-  <!ENTITY qtwebengine-time          "58 SBU (Using parallelism=8)">
-@y
-  <!ENTITY qtwebengine-buildsize     "7.6 GB (231 MB installed)">
-  <!ENTITY qtwebengine-time          "58 SBU (Using parallelism=8)">
-@z
-
-@x
     <title>Introduction to QtWebEngine</title>
 @y
     <title>Introduction to QtWebEngine</title>
@@ -34,11 +26,11 @@
 @z
 
 @x
-      This package and browsers using it may be useful if you need to use a
-      website designed for google chrome, or chromium, browsers.
+        This package and browsers using it may be useful if you need to use a
+        website designed for google chrome, or chromium, browsers.
 @y
-      This package and browsers using it may be useful if you need to use a
-      website designed for google chrome, or chromium, browsers.
+        This package and browsers using it may be useful if you need to use a
+        website designed for google chrome, or chromium, browsers.
 @z
 
 @x

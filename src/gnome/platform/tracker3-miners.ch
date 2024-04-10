@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY tracker3-miners-buildsize     "85 MB (with tests)">
-  <!ENTITY tracker3-miners-time          "0.3 SBU (with parallelism=4; add as much as 1.0 SBU for tests, dependent on disk speed)">
-@y
-  <!ENTITY tracker3-miners-buildsize     "85 MB (テスト込み)">
-  <!ENTITY tracker3-miners-time          "0.3 SBU (with parallelism=4; add as much as 1.0 SBU for tests, dependent on disk speed)">
-@z
-
-@x
     <title>Introduction to Tracker-miners</title>
 @y
     <title>&IntroductionTo1;Tracker-miners&IntroductionTo2;</title>
@@ -276,7 +268,14 @@
 
 @x
         <seg>
-          None
+          tracker3-daemon,
+          tracker3-extract,
+          tracker3-index,
+          tracker3-info,
+          tracker3-reset,
+          tracker3-search,
+          tracker3-status, and
+          tracker3-tag
         </seg>
         <seg>
           Several modules under /usr/lib/tracker-miners-3.0
@@ -288,7 +287,14 @@
         </seg>
 @y
         <seg>
-          &None;
+          tracker3-daemon,
+          tracker3-extract,
+          tracker3-index,
+          tracker3-info,
+          tracker3-reset,
+          tracker3-search,
+          tracker3-status,
+          tracker3-tag
         </seg>
         <seg>
           /usr/lib/tracker-miners-3.0 配下に数種のモジュール

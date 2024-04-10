@@ -3,6 +3,7 @@
 ##
 
 CHANGE_FILES = \
+	abseil-cpp.ch            \
 	appstream.ch             \
 	apr.ch                   \
 	apr-util.ch              \
@@ -88,6 +89,8 @@ CHANGE_FILES = \
 	nspr.ch                  \
 	pcre2.ch                 \
 	popt.ch                  \
+	protobuf.ch              \
+	protobuf-c.ch            \
 	qca.ch                   \
 	qcoro.ch                 \
 	spidermonkey.ch          \

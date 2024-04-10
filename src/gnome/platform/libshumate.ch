@@ -68,14 +68,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk4"/> and
-      <xref linkend="libsoup3"/>
+      <xref linkend="gtk4"/>,
+      <xref linkend="libsoup3"/>, and
+      <xref linkend="protobuf-c"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="gtk4"/>,
-      <xref linkend="libsoup3"/>
+      <xref linkend="libsoup3"/>,
+      <xref linkend="protobuf-c"/>
     </para>
 @z
 
@@ -94,13 +96,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gi-docgen"/> and
+      <xref linkend="gi-docgen"/>,
+      <xref linkend="valgrind"/>, and
       <ulink url="&sysprof-url;">sysprof</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gi-docgen"/> and
+      <xref linkend="gi-docgen"/>,
+      <xref linkend="valgrind"/>,
       <ulink url="&sysprof-url;">sysprof</ulink>
     </para>
 @z

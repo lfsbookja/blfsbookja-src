@@ -405,30 +405,8 @@
 
 @x
     <bridgehead renderas="sect4">Miscellaneous options</bridgehead>
-    <para role="optional">
-      <xref linkend="gnutls"/>,
-      <xref linkend="libnotify"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="taglib"/>,
-      <xref role="runtime" linkend="xdg-utils"/> (runtime),
-      <ulink url="https://www.team-mediaportal.com/extensions/mp2-plugins/atmolight">AtmoLight</ulink>,
-      <ulink url="https://github.com/videolabs/libmicrodns">libmicrodns</ulink>,
-      <ulink url="https://developers.google.com/protocol-buffers/">protobuf</ulink>, and
-      <ulink url="https://github.com/Haivision/srt">Srt</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">Miscellaneous options</bridgehead>
-    <para role="optional">
-      <xref linkend="gnutls"/>,
-      <xref linkend="libnotify"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="taglib"/>,
-      <xref role="runtime" linkend="xdg-utils"/> (runtime),
-      <ulink url="https://www.team-mediaportal.com/extensions/mp2-plugins/atmolight">AtmoLight</ulink>,
-      <ulink url="https://github.com/videolabs/libmicrodns">libmicrodns</ulink>,
-      <ulink url="https://developers.google.com/protocol-buffers/">protobuf</ulink>, and
-      <ulink url="https://github.com/Haivision/srt">Srt</ulink>
-    </para>
 @z
 
 @x

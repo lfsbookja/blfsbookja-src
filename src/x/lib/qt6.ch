@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qt6-buildsize     "33 GB (354 MB installed)">
-  <!ENTITY qt6-time          "16 SBU (using parallelism=8)">
-@y
-  <!ENTITY qt6-buildsize     "33 GB (354 MB installed)">
-  <!ENTITY qt6-time          "16 SBU (using parallelism=8)">
-@z
-
-@x
     <title>Introduction to Qt6</title>
 @y
     <title>Introduction to Qt6</title>
@@ -176,14 +168,14 @@
 @x
         If <application>Qt6</application> is being reinstalled into the
         same directory as an existing instance, run the commands done by
-        <systemitem class="username">root</systemitem>, such as
+        &root;, such as
         <command>make install</command>, from a console or non-Qt6 based
         window manager. It overwrites <application>Qt6</application>
         libraries that should not be in use during the install process.
 @y
         If <application>Qt6</application> is being reinstalled into the
         same directory as an existing instance, run the commands done by
-        <systemitem class="username">root</systemitem>, such as
+        &root;, such as
         <command>make install</command>, from a console or non-Qt6 based
         window manager. It overwrites <application>Qt6</application>
         libraries that should not be in use during the install process.

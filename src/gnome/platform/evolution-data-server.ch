@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY evolution-data-server-buildsize     "177 MB (with tests)">
-  <!ENTITY evolution-data-server-time          "0.7 SBU (using parallelism=4, add 0.2 SBU for tests)">
-@y
-  <!ENTITY evolution-data-server-buildsize     "177 MB（テスト込み）">
-  <!ENTITY evolution-data-server-time          "0.7 SBU（parallelism=4 利用時、テスト実施時はさらに 0.2 SBU）">
-@z
-
-@x
     <title>Introduction to Evolution Data Server</title>
 @y
     <title>&IntroductionTo1;Evolution Data Server&IntroductionTo2;</title>
@@ -99,28 +91,8 @@
 
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="gnome-online-accounts"/>,
-      &gobject-introspection;,
-      <xref linkend="gtk3"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libgweather"/>,
-      <xref linkend="vala"/>, and
-      <xref linkend="webkitgtk"/>
-    </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="gnome-online-accounts"/>,
-      &gobject-introspection;,
-      <xref linkend="gtk3"/>,
-      <xref linkend="icu"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libgweather"/>,
-      <xref linkend="vala"/>,
-      <xref linkend="webkitgtk"/>
-    </para>
 @z
 
 @x

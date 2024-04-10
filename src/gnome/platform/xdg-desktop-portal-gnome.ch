@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY xdg-desktop-portal-gnome-time          "less than 0.1 SBU">
-@y
-  <!ENTITY xdg-desktop-portal-gnome-time          "&LessThan1;0.1 SBU&LessThan2;">
-@z
-
-@x
     <title>Introduction to xdg-desktop-portal-gnome</title>
 @y
     <title>&IntroductionTo1;xdg-desktop-portal-gnome&IntroductionTo2;</title>

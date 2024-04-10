@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY tracker3-buildsize     "51 MB (with tests)">
-  <!ENTITY tracker3-time          "0.6 SBU (with tests)">
-@y
-  <!ENTITY tracker3-buildsize     "51 MB（テスト込み）">
-  <!ENTITY tracker3-time          "0.6 SBU（テスト込み）">
-@z
-
-@x
     <title>Introduction to Tracker</title>
 @y
     <title>&IntroductionTo1;Tracker&IntroductionTo2;</title>
@@ -113,34 +105,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="asciidoc"/>,
-<!--  It looks like not used even if docs=true,
-      the pre-built doc is shipped in tarball and will be installed
-      <xref linkend="gi-docgen"/>
--->
-      <xref linkend="graphviz"/>,
-      <xref linkend="libsoup"/>,
-      <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>, and
-      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>
-      <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
-      (for tests)-->
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="asciidoc"/>,
-<!--  It looks like not used even if docs=true,
-      the pre-built doc is shipped in tarball and will be installed
-      <xref linkend="gi-docgen"/>
--->
-      <xref linkend="graphviz"/>,
-      <xref linkend="libsoup"/>,
-      <ulink url="https://github.com/scop/bash-completion/">bash-completion</ulink>,
-      <ulink url="https://github.com/snowballstem/snowball/">libstemmer</ulink>
-      <!--<ulink url="https://pypi.python.org/pypi/tap.py/">tap.py</ulink>
-      (for tests)-->
-    </para>
 @z
 
 @x
@@ -232,7 +198,13 @@
 
 @x
         <seg>
-          tracker3
+          tracker3,
+          tracker3-endpoint,
+          tracker3-export,
+          tracker3-help,
+          tracker3-import,
+          tracker3-sparql, and
+          tracker3-sql
         </seg>
         <seg>
           libtracker-sparql-3.0.so
@@ -245,7 +217,13 @@
         </seg>
 @y
         <seg>
-          tracker3
+          tracker3,
+          tracker3-endpoint,
+          tracker3-export,
+          tracker3-help,
+          tracker3-import,
+          tracker3-sparql,
+          tracker3-sql
         </seg>
         <seg>
           libtracker-sparql-3.0.so
@@ -254,7 +232,7 @@
           /usr/{include,lib}/tracker-3.0,
           /usr/libexec/tracker3,
           /usr/share/tracker3,
-          /usr/share/doc/tracker-&tracker3-version; (任意インストール)
+          /usr/share/doc/tracker-&tracker3-version; (optional)
         </seg>
 @z
 
