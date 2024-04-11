@@ -4,17 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY spidermonkey-buildsize     "3.7 GB (40 MB installed after removing 36MB static lib; add 34 MB for the main tests and 37 MB for the jit tests)">
-  <!ENTITY spidermonkey-time          "1.9 SBU (with parallelism=4; add 1.1 SBU for the main tests and 3.7 SBU for the jit tests)">
+  <title>SpiderMonkey from firefox-&spidermonkey-version;</title>
 @y
-  <!ENTITY spidermonkey-buildsize     "3.7 GB (40 MB installed after removing 36MB static lib; add 34 MB for the main tests and 37 MB for the jit tests)">
-  <!ENTITY spidermonkey-time          "1.9 SBU (with parallelism=4; add 1.1 SBU for the main tests and 3.7 SBU for the jit tests)">
-@z
-
-@x
-  <title>SpiderMonkey from Firefox-&spidermonkey-version;</title>
-@y
-  <title>SpiderMonkey from Firefox-&spidermonkey-version;</title>
+  <title>SpiderMonkey from firefox-&spidermonkey-version;</title>
 @z
 
 @x

@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libarchive-buildsize     "42 MB (add 34 MB for tests)">
-  <!ENTITY libarchive-time          "0.3 SBU (add 0.7 SBU for tests)">
+  <!ENTITY libarchive-buildsize     "42 MB (add 32 MB for tests)">
+  <!ENTITY libarchive-time          "0.4 SBU (add 0.6 SBU for tests)">
 @y
-  <!ENTITY libarchive-buildsize     "42 MB (テスト実施時はさらに 34 MB)">
-  <!ENTITY libarchive-time          "0.3 SBU (テスト実施時はさらに 0.7 SBU)">
+  <!ENTITY libarchive-buildsize     "42 MB (テスト実施時はさらに 32 MB)">
+  <!ENTITY libarchive-time          "0.4 SBU (テスト実施時はさらに 0.6 SBU)">
 @z
 
 @x
@@ -76,17 +76,17 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="libxml2"/>,
-      <xref linkend="lzo"/>, and
-      <xref linkend="nettle"/>
-      <!-- <ulink url="https://facebook.github.io/zstd/">zstd</ulink> Now in LFS -->
+      <xref linkend="lzo"/>, 
+      <xref linkend="nettle"/>, and
+      <xref linkend="pcre2"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="libxml2"/>,
-      <xref linkend="lzo"/>,
-      <xref linkend="nettle"/>
-      <!-- <ulink url="https://facebook.github.io/zstd/">zstd</ulink> Now in LFS -->
+      <xref linkend="lzo"/>, 
+      <xref linkend="nettle"/>,
+      <xref linkend="pcre2"/>
     </para>
 @z
 
