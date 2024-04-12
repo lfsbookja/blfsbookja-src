@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY seamonkey-buildsize     "4.2 GB (159 MB installed)">
-  <!ENTITY seamonkey-time          "11 SBU (with parallelism=4)">
-@y
-  <!ENTITY seamonkey-buildsize     "4.2 GB (159 MB installed)">
-  <!ENTITY seamonkey-time          "11 SBU (with parallelism=4)">
-@z
-
-@x
     <title>Introduction to Seamonkey</title>
 @y
     <title>&IntroductionTo1;Seamonkey&IntroductionTo2;</title>

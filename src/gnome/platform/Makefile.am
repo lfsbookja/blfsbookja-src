@@ -45,6 +45,7 @@ CHANGE_FILES = \
 	totem-pl-parser.ch           \
 	tracker3.ch                  \
 	tracker3-miners.ch           \
+	tracker3-miners-kernel.ch    \
 	xdg-desktop-portal-gnome.ch  \
 	vte.ch                       \
 	yelp.ch                      \

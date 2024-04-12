@@ -19,82 +19,58 @@
       The <application>Power-profiles-daemon</application> package provides a program 
       that allows modification of the system power/behavior state. This is used on
       many laptops and can be used by a Desktop Environment to activate power saving 
-      or performance CPU governors through dbus.
+      or performance CPU governors through dbus. On other systems, Power-profiles-daemon
+      can be used as a streamlined way to set the CPU governor in order to increase system
+      performance at the cost of energy usage.
 @y
       The <application>Power-profiles-daemon</application> package provides a program 
       that allows modification of the system power/behavior state. This is used on
       many laptops and can be used by a Desktop Environment to activate power saving 
-      or performance CPU governors through dbus.
+      or performance CPU governors through dbus. On other systems, Power-profiles-daemon
+      can be used as a streamlined way to set the CPU governor in order to increase system
+      performance at the cost of energy usage.
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&power-profiles-daemon-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&power-profiles-daemon-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &power-profiles-daemon-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &power-profiles-daemon-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &power-profiles-daemon-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &power-profiles-daemon-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&power-profiles-daemon-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&power-profiles-daemon-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&power-profiles-daemon-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&power-profiles-daemon-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &power-profiles-daemon-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &power-profiles-daemon-md5sum;
+@z
+
+@x
           Download size: &power-profiles-daemon-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &power-profiles-daemon-size;
+@z
+
+@x
           Estimated disk space required: &power-profiles-daemon-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &power-profiles-daemon-buildsize;
+@z
+
+@x
           Estimated build time: &power-profiles-daemon-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &power-profiles-daemon-time;
 @z
 
 @x
@@ -150,29 +126,21 @@
 @z
 
 @x
-    <para>
       Enable the following options in the kernel configuration and recompile the
       kernel if necessary:
-    </para>
 @y
-    <para>
       Enable the following options in the kernel configuration and recompile the
       kernel if necessary:
-    </para>
 @z
 
 @x
-    <para>
       Select the appropriate sub-options that appear when the above options are
       selected. As much as possible, the layout should be the same as in
       kernel configuration menus.
-    </para>
 @y
-    <para>
       Select the appropriate sub-options that appear when the above options are
       selected. As much as possible, the layout should be the same as in
       kernel configuration menus.
-    </para>
 @z
 
 @x
@@ -198,13 +166,9 @@
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
@@ -214,17 +178,13 @@
 @z
 
 @x
-    <para>
       <parameter>-Dgtk_doc=false</parameter>: Prevents building the
       documentation. Remove this if you have <application>GTK-Doc</application>
       installed and wish to build the documentation.
-    </para>
 @y
-    <para>
       <parameter>-Dgtk_doc=false</parameter>: Prevents building the
       documentation. Remove this if you have <application>GTK-Doc</application>
       installed and wish to build the documentation.
-    </para>
 @z
 
 @x
@@ -242,29 +202,23 @@
 @z
 
 @x
-    <sect3  id="power-profiles-daemon-init" revision="sysv">
       <title>Boot Script</title>
 @y
-    <sect3  id="power-profiles-daemon-init" revision="sysv">
       <title>Boot Script</title>
 @z
 
 @x
-      <para>
         To automatically start the <command>power-profiles-daemon</command> when the
         system is rebooted, install the
         <filename>/etc/rc.d/init.d/power-profiles-daemon</filename> bootscript from the
         <xref linkend="bootscripts" revision="sysv"/> as the
         <systemitem class="username">root</systemitem> user:
-      </para>
 @y
-      <para>
         To automatically start the <command>power-profiles-daemon</command> when the
         system is rebooted, install the
         <filename>/etc/rc.d/init.d/power-profiles-daemon</filename> bootscript from the
         <xref linkend="bootscripts" revision="sysv"/> as the
         <systemitem class="username">root</systemitem> user:
-      </para>
 @z
 
 @x
@@ -274,17 +228,13 @@
 @z
 
 @x
-      <para>
         To start the power-profiles-daemon on boot, enable the systemd 
         service that was installed by running the following command as the
         <systemitem class="username">root</systemitem> user: 
-      </para>
 @y
-      <para>
         To start the power-profiles-daemon on boot, enable the systemd 
         service that was installed by running the following command as the
         <systemitem class="username">root</systemitem> user: 
-      </para>
 @z
 
 @x
@@ -304,7 +254,6 @@
 @z
 
 @x
-      <seglistitem>
         <seg>
           powerprofilesctl
         </seg>
@@ -314,10 +263,7 @@
         <seg>
           None
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           powerprofilesctl
         </seg>
@@ -327,46 +273,18 @@
         <seg>
           None
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="powerprofilesctl">
-        <term><command>powerprofilesctl</command></term>
-        <listitem>
-          <para>
+@x powerprofilesctl
             This allows the user to set the power governor of the
             CPU.
-          </para>
-          <indexterm zone="powerprofilesctl">
-            <primary sortas="b-powerprofilesctl">powerprofilesctl</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="powerprofilesctl">
-        <term><command>powerprofilesctl</command></term>
-        <listitem>
-          <para>
             This allows the user to set the power governor of the
             CPU.
-          </para>
-          <indexterm zone="powerprofilesctl">
-            <primary sortas="b-powerprofilesctl">powerprofilesctl</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z

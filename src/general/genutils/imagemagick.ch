@@ -181,70 +181,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
-    <para role="optional">
-      <xref linkend="jasper"/>,
-      <xref linkend="lcms2"/>,
-      <!-- although libexif may have been used in the past, I can find no
-          evidence that it has been used in imagemagick-7.  ken
-      <xref linkend="libexif"/>,-->
-      <xref linkend="libgxps"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="libraw"/> (for dng files, needs the thread-safe libraw_r),
-      <xref linkend="librsvg"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="openjpeg2"/>,
-      <xref linkend="pango"/>,
-      <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="https://imagemagick.org/archive/delegates/">
-      FlashPIX (libfpx)</ulink>,
-      <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
-      <ulink url="https://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-      <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
-      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
-      <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
-      (both needed if converting macOS heic images),
-      <ulink url="https://github.com/libjxl/libjxl/">libjxl</ulink>,
-      <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
-      <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
-      <ulink url="https://www.openexr.com/">OpenEXR</ulink>, and
-      <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
-      (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
-    </para>
 @y
     <bridgehead renderas="sect4">Optional Graphics Libraries</bridgehead>
-    <para role="optional">
-      <xref linkend="jasper"/>,
-      <xref linkend="lcms2"/>,
-      <!-- although libexif may have been used in the past, I can find no
-          evidence that it has been used in imagemagick-7.  ken
-      <xref linkend="libexif"/>,-->
-      <xref linkend="libgxps"/>,
-      <xref linkend="libjpeg"/>,
-      <xref linkend="libpng"/>,
-      <xref linkend="libraw"/> (for dng files, needs the thread-safe libraw_r),
-      <xref linkend="librsvg"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="openjpeg2"/>,
-      <xref linkend="pango"/>,
-      <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="https://imagemagick.org/archive/delegates/">
-      FlashPIX (libfpx)</ulink>,
-      <ulink url="https://github.com/FLIF-hub/FLIF/releases">FLIF</ulink>,
-      <ulink url="https://www.cl.cam.ac.uk/~mgk25/jbigkit/">JBIG-KIT</ulink>,
-      <!--<ulink url="&gnome-download-http;/libgxps/">libgxps</ulink>,-->
-      <ulink url="https://github.com/strukturag/libheif/">libheif</ulink> with
-      <ulink url="https://github.com/strukturag/libde265/">libde265</ulink>
-      (both needed if converting macOS heic images),
-      <ulink url="https://github.com/libjxl/libjxl/">libjxl</ulink>,
-      <ulink url="https://github.com/HOST-Oman/libraqm/">libraqm</ulink>,
-      <ulink url="http://liblqr.wikidot.com/en:download-page">Liquid Rescale</ulink>,
-      <ulink url="https://www.openexr.com/">OpenEXR</ulink>, and
-      <ulink url="http://www.agocg.ac.uk/train/cgm/ralcgm.htm">RALCGM</ulink>
-      (or <ulink url="http://www.mcmurchy.com/ralcgm/ralcgm-3.51.tar.gz">ralcgm</ulink>)
-    </para>
 @z
 
 @x

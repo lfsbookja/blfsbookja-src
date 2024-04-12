@@ -147,21 +147,21 @@
 @z
 
 @x
-      To test the results, issue: <command>LC_ALL=C ninja test</command>. Some
-      checks may not pass due to missing files. The test suite should be run
-      from a local GUI session started with dbus-launch. On 32-bit machines,
-      one test will fail due to rounding errors:
-      <filename>Tests.test_battery_energy_charge_mixed</filename>. On some
-      systems, two tests relating to the headphone hotplug feature are known
-      to fail. Those can be safely ignored since the functionality still works.
+      To test the results, issue: <command>LC_ALL=C ninja test</command>.  The
+      test suite should be run from a local GUI session started with
+      dbus-launch. On 32-bit machines, one test will fail due to rounding
+      errors: <filename>Tests.test_battery_energy_charge_mixed</filename>. On
+      some systems, two tests relating to the headphone hotplug feature are
+      known to fail. Those can be safely ignored since the functionality still
+      works.
 @y
-      ビルド結果をテストする場合は <command>LC_ALL=C ninja test</command> を実行します。
-      テストの中には、必要なファイルがないために失敗するものがあります。
-      テストは、dbus-launch から起動されたローカル GUI セッションにおいて実行する必要があります。
-      32 ビットマシンにおいては、丸めに関するエラーによりテストが 1 つ失敗します。
-      <filename>Tests.test_battery_energy_charge_mixed</filename>. On some
-      systems, two tests relating to the headphone hotplug feature are known
-      to fail. Those can be safely ignored since the functionality still works.
+      To test the results, issue: <command>LC_ALL=C ninja test</command>.  The
+      test suite should be run from a local GUI session started with
+      dbus-launch. On 32-bit machines, one test will fail due to rounding
+      errors: <filename>Tests.test_battery_energy_charge_mixed</filename>. On
+      some systems, two tests relating to the headphone hotplug feature are
+      known to fail. Those can be safely ignored since the functionality still
+      works.
 @z
 
 @x

@@ -24,6 +24,7 @@ CHANGE_FILES = \
 	gmime3.ch                \
 	gsl.ch                   \
 	gspell.ch                \
+	highway.ch               \
 	icu.ch                   \
 	inih.ch                  \
 	intel-gmmlib.ch          \

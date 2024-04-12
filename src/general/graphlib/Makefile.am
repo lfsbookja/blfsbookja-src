@@ -22,6 +22,7 @@ CHANGE_FILES = \
 	libexif.ch            \
 	libgxps.ch            \
 	libjpeg-turbo.ch      \
+	libjxl.ch             \
 	libmng.ch             \
 	libmypaint.ch         \
 	libpng.ch             \

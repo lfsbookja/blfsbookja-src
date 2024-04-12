@@ -14,6 +14,7 @@ Makefile.orig: $(BOOKdir)/Makefile
 
 copydirs = \
 	general      \
+	gnome        \
 	introduction \
 	multimedia   \
 	networking   \

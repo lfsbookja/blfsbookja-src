@@ -244,6 +244,7 @@ thisdir = ${shell echo $(subdir) | sed -e "s|^src/||" -e "s|^src|\.|"}
 BOOKdir = @abs_bookdir@/$(thisdir)
 copydirs = \
 	general      \
+	gnome        \
 	introduction \
 	multimedia   \
 	networking   \

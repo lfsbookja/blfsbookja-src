@@ -100,22 +100,22 @@
 
 @x
       <parameter>-DABSL_PROPAGATE_CXX_STD=ON</parameter>: This parameter
-      enables propgating C++ features to targets that link to this package's
+      enables propagating C++ features to targets that link to this package's
       libraries.
 @y
       <parameter>-DABSL_PROPAGATE_CXX_STD=ON</parameter>: This parameter
-      enables propgating C++ features to targets that link to this package's
+      enables propagating C++ features to targets that link to this package's
       libraries.
 @z
 
 @x
       <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This parameter builds
       shared versions of the libraries provided by this package instead of
-      static libaries.
+      static libraries.
 @y
       <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This parameter builds
       shared versions of the libraries provided by this package instead of
-      static libaries.
+      static libraries.
 @z
 
 @x

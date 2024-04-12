@@ -109,7 +109,7 @@
       <xref linkend="gnome-bluetooth"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="NetworkManager"/>, and
-      <xref linkend="power-profiles-daemon"/> (for laptops)
+      <xref linkend="power-profiles-daemon"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -119,7 +119,7 @@
       <xref linkend="gnome-bluetooth"/>,
       <xref linkend="gst10-plugins-base"/>,
       <xref linkend="NetworkManager"/>,
-      <xref linkend="power-profiles-daemon"/> (for laptops)
+      <xref linkend="power-profiles-daemon"/>
     </para>
 @z
 
