@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY mutter-buildsize     "70 MB (with tests)">
-  <!ENTITY mutter-time          "0.7 SBU (Using parallelism=4; add 1.4 SBU for tests)">
-@y
-  <!ENTITY mutter-buildsize     "70 MB (with tests)">
-  <!ENTITY mutter-time          "0.7 SBU (Using parallelism=4; add 1.4 SBU for tests)">
-@z
-
-@x
     <title>Introduction to Mutter</title>
 @y
     <title>&IntroductionTo1;Mutter&IntroductionTo2;</title>
@@ -237,20 +229,20 @@
           mutter
         </seg>
         <seg>
-          libmutter-13.so and libmutter-test-13.so (optional)
+          libmutter-14.so and libmutter-test-14.so (optional)
         </seg>
         <seg>
-          /usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-13
+          /usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-14
         </seg>
 @y
         <seg>
           mutter
         </seg>
         <seg>
-          libmutter-13.so, libmutter-test-13.so (optional)
+          libmutter-14.so, libmutter-test-14.so (optional)
         </seg>
         <seg>
-          /usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-13
+          /usr/{lib,include,libexec/installed-tests,share/{,installed-tests}}/mutter-14
         </seg>
 @z
 

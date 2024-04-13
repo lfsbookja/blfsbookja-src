@@ -93,6 +93,22 @@
 @z
 
 @x
+      The editors now issue Security Advisories for packages in BLFS (and LFS),
+      which can be found at <ulink
+      url="https://www.linuxfromscratch.org/blfs/advisories/">BLFS Security
+      Advisories</ulink>, and grade the severity according to what upstream
+      reports, or to what is shown at <ulink
+      url="https://nvd.nist.gov/">nvd.nist.gov</ulink> if that has details.
+@y
+      The editors now issue Security Advisories for packages in BLFS (and LFS),
+      which can be found at <ulink
+      url="https://www.linuxfromscratch.org/blfs/advisories/">BLFS Security
+      Advisories</ulink>, and grade the severity according to what upstream
+      reports, or to what is shown at <ulink
+      url="https://nvd.nist.gov/">nvd.nist.gov</ulink> if that has details.
+@z
+
+@x
       To keep track of what is being discovered, you may wish to follow the
       security announcements of one or more distributions. For example, Debian
       has <ulink url="https://www.debian.org/security">Debian security</ulink>.
@@ -101,7 +117,10 @@
       Details of Gentoo linux security announcements are discussed at
       <ulink url="https://security.gentoo.org">Gentoo security</ulink>.
       Finally, the Slackware archives of security announcements are at
-      <ulink url="https://slackware.com/security">Slackware security</ulink>.
+      <!-- To editors: the https version redirects back to the non-https
+           version.  Not sure why they must do this, but please check
+           before turning this to https.  -->
+      <ulink url="http://slackware.com/security/">Slackware security</ulink>.
 @y
       To keep track of what is being discovered, you may wish to follow the
       security announcements of one or more distributions. For example, Debian
@@ -111,7 +130,10 @@
       Details of Gentoo linux security announcements are discussed at
       <ulink url="https://security.gentoo.org">Gentoo security</ulink>.
       Finally, the Slackware archives of security announcements are at
-      <ulink url="https://slackware.com/security">Slackware security</ulink>.
+      <!-- To editors: the https version redirects back to the non-https
+           version.  Not sure why they must do this, but please check
+           before turning this to https.  -->
+      <ulink url="http://slackware.com/security/">Slackware security</ulink>.
 @z
 
 @x

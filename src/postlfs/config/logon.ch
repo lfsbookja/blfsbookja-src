@@ -68,12 +68,12 @@
       The ^[ represents an ASCII ESC character.  The sequence ESC [ H
       puts the cursor in the upper left hand corner of the screen and ESC 2 J
       erases the screen.  For more information on terminal escape sequences see
-      <ulink url='http://rtfm.etla.org/xterm/ctlseq.html'/>
+      <ulink url='https://invisible-mirror.net/xterm/ctlseqs/ctlseqs.html'/>
 @y
-    端末エスケープシーケンスは、端末上にて解釈される特殊コードです。
-    ここで ^[ というのは ASCII コードの ESC 文字を表します。
-    そして ESC [ H というのは、カーソルを画面左上に移動させるもので ESC 2 J は画面をクリアするものです。
-    端末エスケープシーケンスの詳細については <ulink url='http://rtfm.etla.org/xterm/ctlseq.html'/> を参照してください。
+      端末エスケープシーケンスは、端末上にて解釈される特殊コードです。
+      ここで ^[ というのは ASCII コードの ESC 文字を表します。
+      そして ESC [ H というのは、カーソルを画面左上に移動させるもので ESC 2 J は画面をクリアするものです。
+      端末エスケープシーケンスの詳細については <ulink url='https://invisible-mirror.net/xterm/ctlseqs/ctlseqs.html'/> を参照してください。
 @z
 
 @x

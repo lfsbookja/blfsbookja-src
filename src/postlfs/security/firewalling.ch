@@ -280,7 +280,6 @@
 <ulink url="https://tldp.org/HOWTO/Security-HOWTO.html">tldp.org/HOWTO/Security-HOWTO.html</ulink>
 <ulink url="https://tldp.org/HOWTO/Firewall-HOWTO.html">tldp.org/HOWTO/Firewall-HOWTO.html</ulink>
 <ulink url="https://linuxsecurity.com/howtos">linuxsecurity.com/howtos</ulink>
-<ulink url="http://www.e-infomax.com/ipmasq">www.e-infomax.com/ipmasq</ulink>
 <ulink url="https://www.circlemud.org/jelson/writings/security/index.htm">www.circlemud.org/jelson/writings/security/index.htm</ulink>
 <ulink url="https://insecure.org/reading.html">insecure.org/reading.html</ulink>
 @y
@@ -292,7 +291,6 @@
 <ulink url="https://tldp.org/HOWTO/Security-HOWTO.html">tldp.org/HOWTO/Security-HOWTO.html</ulink>
 <ulink url="https://tldp.org/HOWTO/Firewall-HOWTO.html">tldp.org/HOWTO/Firewall-HOWTO.html</ulink>
 <ulink url="https://linuxsecurity.com/howtos">linuxsecurity.com/howtos</ulink>
-<ulink url="http://www.e-infomax.com/ipmasq">www.e-infomax.com/ipmasq</ulink>
 <ulink url="https://www.circlemud.org/jelson/writings/security/index.htm">www.circlemud.org/jelson/writings/security/index.htm</ulink>
 <ulink url="https://insecure.org/reading.html">insecure.org/reading.html</ulink>
 @z

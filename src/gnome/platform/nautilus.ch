@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY nautilus-buildsize     "80 MB (with tests)">
-  <!ENTITY nautilus-time          "1.0 SBU (with tests, both using parallelism=4)">
+  <!ENTITY nautilus-buildsize     "102 MB (with tests)">
+  <!ENTITY nautilus-time          "0.6 SBU (with tests, both using parallelism=4)">
 @y
-  <!ENTITY nautilus-buildsize     "80 MB (テスト込み)">
-  <!ENTITY nautilus-time          "1.0 SBU (テスト込み, いずれも parallelism=4 利用)">
+  <!ENTITY nautilus-buildsize     "102 MB (テスト込み)">
+  <!ENTITY nautilus-time          "0.6 SBU (テスト込み, いずれも parallelism=4 利用)">
 @z
 
 @x

@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gnome-bluetooth-buildsize     "12 MB (with tests)">
-  <!ENTITY gnome-bluetooth-time          "0.2 SBU (Using parallelism=4, with tests)">
-@y
-  <!ENTITY gnome-bluetooth-buildsize     "12 MB (with tests)">
-  <!ENTITY gnome-bluetooth-time          "0.2 SBU (Using parallelism=4, with tests)">
-@z
-
-@x
     <title>Introduction to GNOME Bluetooth</title>
 @y
     <title>&IntroductionTo1;GNOME Bluetooth&IntroductionTo2;</title>

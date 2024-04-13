@@ -73,18 +73,20 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="libhandy1"/>,
+      <xref linkend="libadwaita1"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="pygobject3"/>, and
       <xref linkend="sound-theme-freedesktop"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="gsettings-desktop-schemas"/>,
-      <xref linkend="libhandy1"/>,
+      <xref linkend="libadwaita1"/>,
+      <xref linkend="libgudev"/>,
       <xref linkend="pygobject3"/>,
       <xref linkend="sound-theme-freedesktop"/>
     </para>

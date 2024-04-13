@@ -197,54 +197,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="evolution-data-server"/>,
-      &gobject-introspection;,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libical"/>,
-      <xref linkend="libsoup"/>,
-      <xref linkend="redland"/>,
-      <xref linkend="telepathy-glib"/>,
-      <xref linkend="valgrind"/>.
-      <ulink url="https://aiksaurus.sourceforge.net/">Aiksaurus</ulink>,
-      <ulink url="https://github.com/AbiWord/gtkmathview">GtkMathView</ulink>,
-      <ulink url="https://gitlab.gnome.org/GNOME/libchamplain/">libchamplain</ulink>,
-      <ulink url="https://sourceforge.net/projects/wvware">libwmf</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwpd/">libwpd</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwpg/">libwpg</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwps/">libwps</ulink>,
-      <ulink url="https://www.abisource.com/projects/link-grammar/">
-      Link Grammar Parser</ulink>,
-      <ulink url="&gnome-download-http;/loudmouth">Loudmouth</ulink>,
-      <ulink url="https://packages.ubuntu.com/focal/libots-dev">OTS</ulink>, and
-      <ulink url="https://software.frodo.looijaard.name/psiconv/">Psiconv</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="dbus-glib"/>,
-      <xref linkend="evolution-data-server"/>,
-      &gobject-introspection;,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libical"/>,
-      <xref linkend="libsoup"/>,
-      <xref linkend="redland"/>,
-      <xref linkend="telepathy-glib"/>,
-      <xref linkend="valgrind"/>.
-      <ulink url="https://aiksaurus.sourceforge.net/">Aiksaurus</ulink>,
-      <ulink url="https://github.com/AbiWord/gtkmathview">GtkMathView</ulink>,
-      <ulink url="https://gitlab.gnome.org/GNOME/libchamplain/">libchamplain</ulink>,
-      <ulink url="https://sourceforge.net/projects/wvware">libwmf</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwpd/">libwpd</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwpg/">libwpg</ulink>,
-      <ulink url="https://sourceforge.net/projects/libwps/">libwps</ulink>,
-      <ulink url="https://www.abisource.com/projects/link-grammar/">
-      Link Grammar Parser</ulink>,
-      <ulink url="&gnome-download-http;/loudmouth">Loudmouth</ulink>,
-      <ulink url="https://packages.ubuntu.com/focal/libots-dev">OTS</ulink>,
-      <ulink url="https://software.frodo.looijaard.name/psiconv/">Psiconv</ulink>
-    </para>
 @z
 
 @x
@@ -342,14 +296,14 @@
       some or all plugins. The openxml plugin enables
       <application>Abiword</application> to open some .docx files.
       The grammar plugin requires
-      <ulink url="https://www.abisource.com/projects/link-grammar/">Link Grammar
+      <ulink url="https://github.com/opencog/link-grammar">Link Grammar
       Parser</ulink>
 @y
       <option>--enable-plugins="collab openxml goffice grammar"</option>: Build
       some or all plugins. The openxml plugin enables
       <application>Abiword</application> to open some .docx files.
       The grammar plugin requires
-      <ulink url="https://www.abisource.com/projects/link-grammar/">Link Grammar
+      <ulink url="https://github.com/opencog/link-grammar">Link Grammar
       Parser</ulink>
 @z
 

@@ -114,52 +114,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="apache"/>,
-      <xref linkend="avahi"/>,
-      <xref linkend="bluez"/>,
-      <xref linkend="fuse3"/>,
-      <xref linkend="gnome-online-accounts"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libgdata"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="openssh"/>,
-      <xref linkend="samba"/>,
-      <ulink url="&gnome-download-http;/gnome-desktop-testing/">gnome-desktop-testing</ulink> (for tests),
-      <ulink url="https://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
-      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-      <ulink url="https://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="https://libmtp.sourceforge.net/">libmtp</ulink>,
-      <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>, and
-      <ulink url="https://twisted.org/">Twisted</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="apache"/>,
-      <xref linkend="avahi"/>,
-      <xref linkend="bluez"/>,
-      <xref linkend="fuse3"/>,
-      <xref linkend="gnome-online-accounts"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="libarchive"/>,
-      <xref linkend="libgcrypt"/>,
-      <xref linkend="libgdata"/>,
-      <xref linkend="libxml2"/>,
-      <xref linkend="libxslt"/>,
-      <xref linkend="openssh"/>,
-      <xref linkend="samba"/>,
-      <ulink url="&gnome-download-http;/gnome-desktop-testing/">gnome-desktop-testing</ulink> (for tests),
-      <ulink url="https://www.videolan.org/developers/libbluray.html">libbluray</ulink>,
-      <ulink url="http://www.gphoto.org/">libgphoto2</ulink>,
-      <ulink url="https://www.libimobiledevice.org/">libimobiledevice</ulink>,
-      <ulink url="https://libmtp.sourceforge.net/">libmtp</ulink>,
-      <ulink url="https://github.com/sahlberg/libnfs/">libnfs</ulink>,
-      <ulink url="https://twisted.org/">Twisted</ulink>
-    </para>
 @z
 
 @x
@@ -201,14 +157,16 @@
       Remove those where you have installed the corresponding application and
       wish to use it with <application>Gvfs</application>. The dnssd option
       requires avahi and both goa and google require GNOME Online Accounts.
-      The google option also requires libgdata.
+      The google option also requires libgdata. The onedrive support requires
+      the libmsgraph package.
 @y
       <parameter>-D&lt;option&gt;=false</parameter>: These switches are
       required if the corresponding dependency is not installed.
       Remove those where you have installed the corresponding application and
       wish to use it with <application>Gvfs</application>. The dnssd option
       requires avahi and both goa and google require GNOME Online Accounts.
-      The google option also requires libgdata.
+      The google option also requires libgdata. The onedrive support requires
+      the libmsgraph package.
 @z
 
 @x revision="sysv"

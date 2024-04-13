@@ -25,7 +25,6 @@ CHANGE_FILES = \
 	perl-io-socket-ssl.ch \
 	perl-io-string.ch \
 	perl-ipc-run3.ch \
-	perl-json.ch \
 	perl-libwww-perl.ch \
 	perl-lingua-translit.ch \
 	perl-list-allutils.ch \

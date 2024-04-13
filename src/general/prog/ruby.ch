@@ -75,7 +75,7 @@
       <xref linkend="tk"/>,
       <xref linkend="valgrind"/>, 
       &berkeley-db; and 
-      <ulink url="http://dtrace.org/blogs/about/">DTrace</ulink>
+      <ulink url="https://dtrace.org/about/">DTrace</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -86,7 +86,7 @@
       <xref linkend="tk"/>,
       <xref linkend="valgrind"/>, 
       &berkeley-db;,
-      <ulink url="http://dtrace.org/blogs/about/">DTrace</ulink>
+      <ulink url="https://dtrace.org/about/">DTrace</ulink>
     </para>
 @z
 

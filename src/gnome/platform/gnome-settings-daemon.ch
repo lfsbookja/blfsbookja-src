@@ -245,8 +245,8 @@
         </seg>
         <seg>
           /etc/xdg/Xwayland-session.d,
-          /usr/include/gnome-settings-daemon-45,
-          /usr/lib/gnome-settings-daemon-45, and
+          /usr/include/gnome-settings-daemon-46,
+          /usr/lib/gnome-settings-daemon-46, and
           /usr/share/gnome-settings-daemon
         </seg>
 @y
@@ -258,8 +258,8 @@
         </seg>
         <seg>
           /etc/xdg/Xwayland-session.d,
-          /usr/include/gnome-settings-daemon-45,
-          /usr/lib/gnome-settings-daemon-45,
+          /usr/include/gnome-settings-daemon-46,
+          /usr/lib/gnome-settings-daemon-46,
           /usr/share/gnome-settings-daemon
         </seg>
 @z
