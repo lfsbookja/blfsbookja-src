@@ -4,12 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY falkon-time          "1.8 SBU (Using parallelism=4; add 0.3 SBU for tests)">
-@y
-  <!ENTITY falkon-time          "1.8 SBU (Using parallelism=4; add 0.3 SBU for tests)">
-@z
-
-@x
     <title>Introduction to falkon</title>
 @y
     <title>Introduction to falkon</title>

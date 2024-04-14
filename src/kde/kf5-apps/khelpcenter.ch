@@ -88,17 +88,15 @@
 @z
 
 @x
-        Khelpcenter does not provide the plugin to display the manual pages.
-        It is found in kio-extras, another <ulink
-        url="&kf5apps-download-http;">KDE application</ulink>.
-        Depending on what is installed on your system, other dependencies
-        may be needed to build it.
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="qtwebengine"/>
+    </para>
 @y
-        Khelpcenter does not provide the plugin to display the manual pages.
-        It is found in kio-extras, another <ulink
-        url="&kf5apps-download-http;">KDE application</ulink>.
-        Depending on what is installed on your system, other dependencies
-        may be needed to build it.
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="qtwebengine"/>
+    </para>
 @z
 
 @x

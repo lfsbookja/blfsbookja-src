@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gwenview-time          "0.8 SBU (using parallelism=4)">
+  <!ENTITY gwenview-time          "0.9 SBU (using parallelism=4)">
 @y
-  <!ENTITY gwenview-time          "0.8 SBU (using parallelism=4)">
+  <!ENTITY gwenview-time          "0.9 SBU (using parallelism=4)">
 @z
 
 @x

@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kf6-buildsize     "2.5 GB (252 MB installed)">
-  <!ENTITY kf6-time          "7.4 SBU (using parallelism=4)">
+  <!ENTITY kf6-buildsize     "2.5 GB (177 MB installed)">
+  <!ENTITY kf6-time          "13 SBU (using parallelism=8)">
 @y
-  <!ENTITY kf6-buildsize     "2.5 GB（インストールは 252 MB）">
-  <!ENTITY kf6-time          "7.4 SBU（parallelism=4 利用）">
+  <!ENTITY kf6-buildsize     "2.5 GB（インストールは 177 MB）">
+  <!ENTITY kf6-time          "13 SBU（parallelism=8 利用）">
 @z
 
 @x
@@ -135,18 +135,6 @@
   <bridgehead renderas="sect4">Additional image formats support in KImageFormats</bridgehead>
 @y
   <bridgehead renderas="sect4">Additional image formats support in KImageFormats</bridgehead>
-@z
-
-@x
-  <bridgehead renderas="sect4">Optional dependencies for KIO</bridgehead>
-  <para role="optional">
-    <xref linkend="mitkrb"/>
-  </para>
-@y
-  <bridgehead renderas="sect4">Optional dependencies for KIO</bridgehead>
-  <para role="optional">
-    <xref linkend="mitkrb"/>
-  </para>
 @z
 
 @x
