@@ -12,27 +12,21 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to FontForge</title>
 @y
-  <sect2 role="package">
     <title>Introduction to FontForge</title>
 @z
 
 @x
-    <para>
       The <application>FontForge</application> package contains an
       outline font editor that lets you create your own postscript,
       truetype, opentype, cid-keyed, multi-master, cff, svg and
       bitmap (bdf, FON, NFNT) fonts, or edit existing ones.
-    </para>
 @y
-    <para>
       The <application>FontForge</application> package contains an
       outline font editor that lets you create your own postscript,
       truetype, opentype, cid-keyed, multi-master, cff, svg and
       bitmap (bdf, FON, NFNT) fonts, or edit existing ones.
-    </para>
 @z
 
 @x
@@ -42,71 +36,39 @@
 @z
 
 @x
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
           Download (HTTP): <ulink url="&fontforge-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&fontforge-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &fontforge-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &fontforge-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &fontforge-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &fontforge-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
           Download (HTTP): <ulink url="&fontforge-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@z
+
+@x
           Download (FTP): <ulink url="&fontforge-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&fontforge-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &fontforge-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &fontforge-md5sum;
+@z
+
+@x
           Download size: &fontforge-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &fontforge-size;
+@z
+
+@x
           Estimated disk space required: &fontforge-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &fontforge-buildsize;
+@z
+
+@x
           Estimated build time: &fontforge-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &fontforge-time;
 @z
 
 @x
@@ -182,229 +144,116 @@
 @z
 
 @x
-      Also, adding or removing optional deps other than Sphinx doesn't seem
-      to materially alter the build time or size.
-      -->
       <xref linkend="giflib"/>,
       <xref linkend="git"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="sphinx"/> (to build html documentation),
-      <xref linkend="woff2"/>, and
-    </para>
+      <xref linkend="sphinx"/> (to build html documentation), and
+      <xref linkend="woff2"/>
 @y
-      Also, adding or removing optional deps other than Sphinx doesn't seem
-      to materially alter the build time or size.
-      -->
       <xref linkend="giflib"/>,
       <xref linkend="git"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libtiff"/>,
-      <xref linkend="sphinx"/> (to build html documentation),
-      <xref linkend="woff2"/>, and
-    </para>
+      <xref linkend="sphinx"/> (to build html documentation), and
+      <xref linkend="woff2"/>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of FontForge</title>
 @y
-  <sect2 role="installation">
     <title>Installation of FontForge</title>
 @z
 
 @x
-    <para>
-      First fix a problem with old translations exposed by gettext-0.22:
-    </para>
+      First, fix two security vulnerabilities in the Splinefont functionality:
 @y
-    <para>
-      First fix a problem with old translations exposed by gettext-0.22:
-    </para>
+      First, fix two security vulnerabilities in the Splinefont functionality:
 @z
 
 @x
-<screen><userinput>sed -i.orig 's/\(%[^%[:space:]]*\)hs/\1s/g' \
- fontforgeexe/searchview.c po/de.po po/ca.po \
- po/hr.po po/it.po po/pl.po po/uk.po po/en_GB.po \
- po/fr.po po/vi.po po/ko.po po/ja.po</userinput></screen>
-@y
-<screen><userinput>sed -i.orig 's/\(%[^%[:space:]]*\)hs/\1s/g' \
- fontforgeexe/searchview.c po/de.po po/ca.po \
- po/hr.po po/it.po po/pl.po po/uk.po po/en_GB.po \
- po/fr.po po/vi.po po/ko.po po/ja.po</userinput></screen>
-@z
-
-@x
-    <para>
       Install <application>FontForge</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>FontForge</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@y
-<screen><userinput>mkdir build &amp;&amp;
-cd    build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -Wno-dev .. &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      -Wno-dev .. &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       To test the results, issue: <command>make check</command>.
-    </para>
 @y
-    <para>
       To test the results, issue: <command>make check</command>.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-    <para>
       If you have installed <command>sphinx-build</command>, HTML documentation
       was built and installed in
       <filename class="directory">/usr/share/doc/fontforge</filename>.
       To be able to access it as a versioned directory, create a
       symlink as the
       <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       If you have installed <command>sphinx-build</command>, HTML documentation
       was built and installed in
       <filename class="directory">/usr/share/doc/fontforge</filename>.
       To be able to access it as a versioned directory, create a
       symlink as the
       <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"
-        remap="doc"><userinput>ln -sv fontforge /usr/share/doc/fontforge-&fontforge-version;</userinput></screen>
-@y
-<screen role="root"
-        remap="doc"><userinput>ln -sv fontforge /usr/share/doc/fontforge-&fontforge-version;</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       create an optimized release without debug information.
-    </para>
 @y
-    <para>
       <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       create an optimized release without debug information.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>-Wno-dev</parameter>: This switch is used to suppress warnings
       intended for the package's developers.
-    </para>
 @y
-    <para>
       <parameter>-Wno-dev</parameter>: This switch is used to suppress warnings
       intended for the package's developers.
-    </para>
 @z
 
 @x
-    <para>
       <option>-DENABLE_X11=ON</option>: use an X11 backend instead of GDK3
       (gtk+-3) for basic Xorg graphics.
-    </para>
 @y
-    <para>
       <option>-DENABLE_X11=ON</option>: use an X11 backend instead of GDK3
       (gtk+-3) for basic Xorg graphics.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           fontforge, fontimage, fontlint and sfddiff
         </seg>
@@ -416,10 +265,7 @@ make</userinput></screen>
           /usr/share/fontforge and optionally
           /usr/share/doc/fontforge{,-&fontforge-version;}
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           fontforge, fontimage, fontlint and sfddiff
         </seg>
@@ -431,146 +277,40 @@ make</userinput></screen>
           /usr/share/fontforge and optionally
           /usr/share/doc/fontforge{,-&fontforge-version;}
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="fontforge-prog">
-        <term><command>fontforge</command></term>
-        <listitem>
-          <para>
+@x fontforge
             is a program that allows you to create and
             modify font files
-          </para>
-          <indexterm zone="fontforge fontforge-prog">
-            <primary sortas="b-fontforge">fontforge</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="fontforge-prog">
-        <term><command>fontforge</command></term>
-        <listitem>
-          <para>
             is a program that allows you to create and
             modify font files
-          </para>
-          <indexterm zone="fontforge fontforge-prog">
-            <primary sortas="b-fontforge">fontforge</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="fontimage">
-        <term><command>fontimage</command></term>
-        <listitem>
-          <para>
+@x fontimage
             is a program that produces an image showing
             representative glyphs of the font
-          </para>
-          <indexterm zone="fontforge fontimage">
-            <primary sortas="b-fontimage">fontimage</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="fontimage">
-        <term><command>fontimage</command></term>
-        <listitem>
-          <para>
             is a program that produces an image showing
             representative glyphs of the font
-          </para>
-          <indexterm zone="fontforge fontimage">
-            <primary sortas="b-fontimage">fontimage</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="fontlint">
-        <term><command>fontlint</command></term>
-        <listitem>
-          <para>
+@x fontlint
             is a program that checks the font for certain
             common errors
-          </para>
-          <indexterm zone="fontforge fontlint">
-            <primary sortas="b-fontlint">fontlint</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="fontlint">
-        <term><command>fontlint</command></term>
-        <listitem>
-          <para>
             is a program that checks the font for certain
             common errors
-          </para>
-          <indexterm zone="fontforge fontlint">
-            <primary sortas="b-fontlint">fontlint</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="sfddiff">
-        <term><command>sfddiff</command></term>
-        <listitem>
-          <para>
+@x sfddiff
             is a program that compares two font files
-          </para>
-          <indexterm zone="fontforge sfddiff">
-            <primary sortas="b-sfddiff">sfddiff</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="sfddiff">
-        <term><command>sfddiff</command></term>
-        <listitem>
-          <para>
             is a program that compares two font files
-          </para>
-          <indexterm zone="fontforge sfddiff">
-            <primary sortas="b-sfddiff">sfddiff</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

@@ -16,13 +16,13 @@
 @z
 
 @x
-        <application>html5lib</application> provides
-        <application>Python</application> bindings for
-        <xref linkend="libxslt"/> and <xref linkend="libxml2"/>.
+        <application>html5lib</application> provides a pure-python library for
+        parsing HTML. It is designed to conform to the WHATWG HTML
+        specification.
 @y
-        <application>html5lib</application> provides
-        <application>Python</application> bindings for
-        <xref linkend="libxslt"/> and <xref linkend="libxml2"/>.
+        <application>html5lib</application> provides a pure-python library for
+        parsing HTML. It is designed to conform to the WHATWG HTML
+        specification.
 @z
 
 @x
@@ -76,13 +76,13 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="six"/>
+        <xref linkend="six"/> and
         <xref linkend="webencodings"/>
       </para>
 @y
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="six"/>
+        <xref linkend="six"/>,
         <xref linkend="webencodings"/>
       </para>
 @z

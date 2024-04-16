@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gnome-calculator-buildsize     "35 MB (with tests)">
+  <!ENTITY gnome-calculator-buildsize     "46 MB (with tests)">
   <!ENTITY gnome-calculator-time          "0.4 SBU (with tests)">
 @y
-  <!ENTITY gnome-calculator-buildsize     "35 MB（テスト込み）">
+  <!ENTITY gnome-calculator-buildsize     "46 MB（テスト込み）">
   <!ENTITY gnome-calculator-time          "0.4 SBU（テスト込み）">
 @z
 

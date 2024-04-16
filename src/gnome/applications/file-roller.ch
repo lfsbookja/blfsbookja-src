@@ -86,13 +86,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> and
+      <xref linkend="gtk4"/> and
       <xref linkend="itstool"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/>,
+      <xref linkend="gtk4"/>,
       <xref linkend="itstool"/>
     </para>
 @z
@@ -104,7 +104,7 @@
       <xref linkend="desktop-file-utils"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="libarchive"/>,
-      <xref linkend="libhandy1"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="libportal"/>, and
       <xref linkend="nautilus"/>
     </para>
@@ -115,7 +115,7 @@
       <xref linkend="desktop-file-utils"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="libarchive"/>,
-      <xref linkend="libhandy1"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="libportal"/>,
       <xref linkend="nautilus"/>
     </para>

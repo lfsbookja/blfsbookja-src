@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libxcb-buildsize     "27 MB (with tests, add 62 MB for doxygen docs)">
+  <!ENTITY libxcb-buildsize     "30 MB (with tests, add 62 MB for doxygen docs)">
   <!ENTITY libxcb-time          "0.2 SBU (with tests, add 1.4 SBU for doxygen docs)">
 @y
-  <!ENTITY libxcb-buildsize     "27 MB （テスト込み、doxygenドキュメント生成時はさらに 62 MB）">
+  <!ENTITY libxcb-buildsize     "30 MB （テスト込み、doxygenドキュメント生成時はさらに 62 MB）">
   <!ENTITY libxcb-time          "0.2 SBU （テスト込み、doxygenドキュメント生成時はさらに 1.4 SBU）">
 @z
 
@@ -180,13 +180,13 @@
           None
         </seg>
         <seg>
-          libxcb.so, libxcb-composite.so, libxcb-damage.so, libxcb-dpms.so,
-          libxcb-dri2.so, libxcb-dri3.so, libxcb-glx.so, libxcb-present.so,
-          libxcb-randr.so, libxcb-record.so, libxcb-render.so, libxcb-res.so,
-          libxcb-screensaver.so, libxcb-shape.so, libxcb-shm.so, libxcb-sync.so,
-          libxcb-xf86dri.so, libxcb-xfixes.so,
-          libxcb-xinerama.so, libxcb-xinput.so, libxcb-xkb.so,
-          libxcb-xtest.so, libxcb-xvmc.so, and libxcb-xv.so
+          libxcb.so, libxcb-composite.so, libxcb-damage.so, libxcb-dbe.so,
+          libxcb-dpms.so, libxcb-dri2.so, libxcb-dri3.so, libxcb-glx.so,
+          libxcb-present.so, libxcb-randr.so, libxcb-record.so,
+          libxcb-render.so, libxcb-res.so, libxcb-screensaver.so,
+          libxcb-shape.so, libxcb-shm.so, libxcb-sync.so, libxcb-xf86dri.so,
+          libxcb-xfixes.so, libxcb-xinerama.so, libxcb-xinput.so,
+          libxcb-xkb.so, libxcb-xtest.so, libxcb-xvmc.so, and libxcb-xv.so
         </seg>
         <seg>
           <envar>$XORG_PREFIX</envar>/include/xcb and
@@ -197,13 +197,13 @@
           &None;
         </seg>
         <seg>
-          libxcb.so, libxcb-composite.so, libxcb-damage.so, libxcb-dpms.so,
-          libxcb-dri2.so, libxcb-dri3.so, libxcb-glx.so, libxcb-present.so,
-          libxcb-randr.so, libxcb-record.so, libxcb-render.so, libxcb-res.so,
-          libxcb-screensaver.so, libxcb-shape.so, libxcb-shm.so, libxcb-sync.so,
-          libxcb-xf86dri.so, libxcb-xfixes.so,
-          libxcb-xinerama.so, libxcb-xinput.so, libxcb-xkb.so,
-          libxcb-xtest.so, libxcb-xvmc.so, libxcb-xv.so
+          libxcb.so, libxcb-composite.so, libxcb-damage.so, libxcb-dbe.so,
+          libxcb-dpms.so, libxcb-dri2.so, libxcb-dri3.so, libxcb-glx.so,
+          libxcb-present.so, libxcb-randr.so, libxcb-record.so,
+          libxcb-render.so, libxcb-res.so, libxcb-screensaver.so,
+          libxcb-shape.so, libxcb-shm.so, libxcb-sync.so, libxcb-xf86dri.so,
+          libxcb-xfixes.so, libxcb-xinerama.so, libxcb-xinput.so,
+          libxcb-xkb.so, libxcb-xtest.so, libxcb-xvmc.so, libxcb-xv.so
         </seg>
         <seg>
           <envar>$XORG_PREFIX</envar>/include/xcb,
