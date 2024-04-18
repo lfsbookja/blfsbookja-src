@@ -163,11 +163,13 @@
 @x
       To test the results, issue: <command>ninja test</command>. A few tests
       are skipped if not run with &root; privileges.  
-      One test, <filename>test-fs-util</filename> is known to fail.
+      Three tests, <filename>test-login</filename>, <filename>dbus-docs-fresh</filename>,
+      and <filename>check-version-history</filename>, are known to fail.
 @y
       To test the results, issue: <command>ninja test</command>. A few tests
       are skipped if not run with &root; privileges.  
-      One test, <filename>test-fs-util</filename> is known to fail.
+      Three tests, <filename>test-login</filename>, <filename>dbus-docs-fresh</filename>,
+      and <filename>check-version-history</filename>, are known to fail.
 @z
 
 @x

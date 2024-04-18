@@ -30,107 +30,51 @@
 @z
 
 @x
-    <warning>
-      <para>
-        Falkon relies on QtWebEngine. That uses a forked copy of chromium, and
-        is therefore vulnerable to many issues found there. The Qt developers
-        have always preferred to make releases at the same time as the rest of Qt
-        (rather than adding emergency fixes). Now that they are keen to move to
-        Qt6, the 5.15.3 and later Qt-5.15 releases are initially only available
-        to paying customers. QtWebEngine is something of an exception because of
-        its LGPL licence, but getting the git sources (with the forked chromium
-        submodule) to a point where they will successfully build on a current
-        BLFS system can take a lot of effort. Be aware that future fixes for
-        vulnerabilities might be very delayed, to the extent that you might wish
-        to consider using a different browser.
-      </para>
-    </warning>
+      Falkon relies on QtWebEngine. Please read the warning on that page.
 @y
-    <warning>
-      <para>
-        Falkon relies on QtWebEngine. That uses a forked copy of chromium, and
-        is therefore vulnerable to many issues found there. The Qt developers
-        have always preferred to make releases at the same time as the rest of Qt
-        (rather than adding emergency fixes). Now that they are keen to move to
-        Qt6, the 5.15.3 and later Qt-5.15 releases are initially only available
-        to paying customers. QtWebEngine is something of an exception because of
-        its LGPL licence, but getting the git sources (with the forked chromium
-        submodule) to a point where they will successfully build on a current
-        BLFS system can take a lot of effort. Be aware that future fixes for
-        vulnerabilities might be very delayed, to the extent that you might wish
-        to consider using a different browser.
-      </para>
-    </warning>
+      Falkon relies on QtWebEngine. Please read the warning on that page.
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&falkon-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&falkon-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &falkon-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &falkon-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &falkon-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &falkon-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&falkon-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&falkon-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&falkon-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&falkon-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &falkon-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &falkon-md5sum;
+@z
+
+@x
           Download size: &falkon-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &falkon-size;
+@z
+
+@x
           Estimated disk space required: &falkon-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &falkon-buildsize;
+@z
+
+@x
           Estimated build time: &falkon-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &falkon-time;
 @z
 
 @x
@@ -186,35 +130,23 @@
 @z
 
 @x
-    <para condition="html" role="usernotes">
       Editor Notes: <ulink url="&blfs-wiki;/falkon"/>
-    </para>
-  </sect2>
 @y
-    <para condition="html" role="usernotes">
       Editor Notes: <ulink url="&blfs-wiki;/falkon"/>
-    </para>
-  </sect2>
 @z
 
 @x
-  <sect2 role="installation">
     <title>Installation of falkon</title>
 @y
-  <sect2 role="installation">
     <title>Installation of falkon</title>
 @z
 
 @x
-    <para>
       Install <application>falkon</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>falkon</application> by running the following
       commands:
-    </para>
 @z
 
 @x
@@ -230,95 +162,60 @@
 @z
 
 @x
-    <note>
-      <para>
         When upgrading this package, it is possible that the contents
         of the application will remain empty even though everything else
         appears to be working properly.  In this case try removing
         <filename>~/.cache/falkon</filename> and restarting the program.
-      </para>
-    </note>
 @y
-    <note>
-      <para>
         When upgrading this package, it is possible that the contents
         of the application will remain empty even though everything else
         appears to be working properly.  In this case try removing
         <filename>~/.cache/falkon</filename> and restarting the program.
-      </para>
-    </note>
 @z
 
 @x
-    <para>
       If you have installed <application>Pyside2</application> you will want to
       examine <command>hellopython.py</command> which is in the <filename
       class="directory">scripts/</filename> directory, and perhaps copy it to
       your home directory.
-    </para>
 @y
-    <para>
       If you have installed <application>Pyside2</application> you will want to
       examine <command>hellopython.py</command> which is in the <filename
       class="directory">scripts/</filename> directory, and perhaps copy it to
       your home directory.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <option>-DBUILD_TESTING=OFF</option>: This will save a little time and space by
       not building the test programs, use this if you do not wish to run the test.
-    </para>
 @y
-    <para>
       <option>-DBUILD_TESTING=OFF</option>: This will save a little time and space by
       not building the test programs, use this if you do not wish to run the test.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           falkon
         </seg>
@@ -328,10 +225,7 @@
         <seg>
           /usr/share/falkon
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           falkon
         </seg>
@@ -341,80 +235,22 @@
         <seg>
           /usr/share/falkon
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="falkon-prog">
-        <term><command>falkon</command></term>
-        <listitem>
-          <para>
+@x falkon
             is a web browser which uses qtwebengine
-          </para>
-          <indexterm zone="falkon falkon-prog">
-            <primary sortas="b-falkon">falkon</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="falkon-prog">
-        <term><command>falkon</command></term>
-        <listitem>
-          <para>
             is a web browser which uses qtwebengine
-          </para>
-          <indexterm zone="falkon falkon-prog">
-            <primary sortas="b-falkon">falkon</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="libFalkonPrivate.so.3">
-        <term><filename class="libraryfile">libFalkonPrivate.so.3</filename></term>
-        <listitem>
-          <para>
+@x libFalkonPrivate.so.3
             contains functions used by falkon
-          </para>
-          <indexterm zone="falkon libFalkonPrivate.so.3">
-            <primary sortas="c-libFalkonPrivate.so.3">libFalkonPrivate.so.3</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-  </sect2>
 @y
-      <varlistentry id="libFalkonPrivate.so.3">
-        <term><filename class="libraryfile">libFalkonPrivate.so.3</filename></term>
-        <listitem>
-          <para>
             contains functions used by falkon
-          </para>
-          <indexterm zone="falkon libFalkonPrivate.so.3">
-            <primary sortas="c-libFalkonPrivate.so.3">libFalkonPrivate.so.3</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

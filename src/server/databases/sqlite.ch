@@ -170,9 +170,7 @@
 
 @x
       <parameter>CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA=1 ... </parameter>:
-      Applications such as
-      <application>SeaMonkey</application> require these options
-      to be turned on.
+      Some applications require these options to be turned on.
       The only way to do this is to include them in
       the <envar>CFLAGS</envar> or <envar>CPPFLAGS</envar>.
       We use the latter so the default value (or any value set by the user)
@@ -181,9 +179,7 @@
       url="https://www.sqlite.org/compile.html"/>.
 @y
       <parameter>CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA=1 ... </parameter>:
-      Applications such as
-      <application>SeaMonkey</application> require these options
-      to be turned on.
+      Some applications require these options to be turned on.
       The only way to do this is to include them in
       the <envar>CFLAGS</envar> or <envar>CPPFLAGS</envar>.
       We use the latter so the default value (or any value set by the user)

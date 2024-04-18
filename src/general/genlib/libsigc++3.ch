@@ -1,16 +1,8 @@
 %
-% This is part of LFSbookja package.
+% This is part of BLFSbookja package.
 %
-% This is a CTIE change file for the original XML source of the LFSbook.
+% This is a CTIE change file for the original XML source of the BLFSbook.
 %
-@x
-  <!ENTITY libsigc-buildsize     "27 MB (with tests)">
-  <!ENTITY libsigc-time          "0.2 SBU (with tests)">
-@y
-  <!ENTITY libsigc-buildsize     "27 MB (テスト込み)">
-  <!ENTITY libsigc-time          "0.2 SBU (テスト込み)">
-@z
-
 @x
     <title>Introduction to libsigc++</title>
 @y
@@ -19,9 +11,12 @@
 
 @x
       The <application>libsigc++</application> package implements a typesafe
-      callback system for standard C++.
+      callback system for standard C++. This version is part of a new API for
+      supporting gtkmm-4.
 @y
-      <application>libsigc++</application> パッケージは、標準 C++ に対しタイプセーフなコールバックシステムを提供します。
+      The <application>libsigc++</application> package implements a typesafe
+      callback system for standard C++. This version is part of a new API for
+      supporting gtkmm-4.
 @z
 
 @x
@@ -73,6 +68,20 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="boost"/> and
+      <xref linkend="libxslt"/>
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="boost"/>,
+      <xref linkend="libxslt"/>
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="docbook-utils"/>,
@@ -118,6 +127,22 @@
 @z
 
 @x
+    <title>Command Explanations</title>
+@y
+    <title>&CommandExplanations;</title>
+@z
+
+@x
+      <option>-Dbuild-documentation=true</option>: Use this switch if
+      <xref role="nodep" linkend="doxygen"/> is installed and you wish to
+      build and install the API documentation.
+@y
+      <option>-Dbuild-documentation=true</option>: Use this switch if
+      <xref role="nodep" linkend="doxygen"/> is installed and you wish to
+      build and install the API documentation.
+@z
+
+@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -138,22 +163,22 @@
           None
         </seg>
         <seg>
-          libsigc-2.0.so
+          libsigc-3.0.so
         </seg>
         <seg>
-          /usr/{include,lib}/sigc++-2.0 and
-          /usr/share/{devhelp/books,doc}/libsigc++-2.0 (if the documentation is enabled)
+          /usr/{include,lib}/sigc++-3.0 and
+          /usr/share/{devhelp/books,doc}/libsigc++-3.0 (if the documentation is enabled)
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libsigc-2.0.so
+          libsigc-3.0.so
         </seg>
         <seg>
-          /usr/{include,lib}/sigc++-2.0,
-          /usr/share/{devhelp/books,doc}/libsigc++-2.0 (ドキュメント有効時)
+          /usr/{include,lib}/sigc++-3.0,
+          /usr/share/{devhelp/books,doc}/libsigc++-3.0 (if the documentation is enabled)
         </seg>
 @z
 
@@ -163,7 +188,7 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libsigc-2.0.so
+@x libsigc-3.0.so
             provides a typesafe callback system for standard C++
 @y
             provides a typesafe callback system for standard C++

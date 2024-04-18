@@ -140,9 +140,15 @@
 @z
 
 @x
-    <para> Build the module: </para>
+    <para>First fix a problem with docutils-0.21.1:</para>
 @y
-    <para> Build the module: </para>
+    <para>First fix a problem with docutils-0.21.1:</para>
+@z
+
+@x
+    <para>Build the module:</para>
+@y
+    <para>Build the module:</para>
 @z
 
 @x

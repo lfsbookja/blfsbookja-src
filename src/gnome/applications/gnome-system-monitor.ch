@@ -69,20 +69,20 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
-      <xref linkend="gtkmm3"/>,
+      <xref linkend="gtkmm4"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libgtop"/>,
-      <xref linkend="libhandy1"/>, and
+      <xref linkend="libadwaita1"/>, and
       <xref linkend="librsvg"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="adwaita-icon-theme"/>,
-      <xref linkend="gtkmm3"/>,
+      <xref linkend="gtkmm4"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libgtop"/>,
-      <xref linkend="libhandy1"/>,
+      <xref linkend="libadwaita1"/>,
       <xref linkend="librsvg"/>
     </para>
 @z

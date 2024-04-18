@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY boost-buildsize     "1.1 GB (199 MB installed)">
-  <!ENTITY boost-time          "1.7 SBU (Using parallelism=4; add 0.1 SBU for tests)">
-@y
-  <!ENTITY boost-buildsize     "1.1 GB (インストールサイズは 199 MB)">
-  <!ENTITY boost-time          "1.7 SBU (parallelism=4; テスト実施時はさらに 0.1 SBU)">
-@z
-
-@x
     <title>Introduction to Boost</title>
 @y
     <title>&IntroductionTo1;Boost&IntroductionTo2;</title>
@@ -195,58 +187,4 @@
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-        <seg>
-          None
-        </seg>
-        <seg>
-          libboost_atomic.so, libboost_chrono.so, libboost_container.so,
-          libboost_context.so, libboost_contract.so, libboost_coroutine.so,
-          libboost_date_time.so, libboost_exception.a, libboost_fiber.so,
-          libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,
-          libboost_json.so, libboost_locale.so,
-          libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
-          libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
-          libboost_math_tr1f.so, libboost_math_tr1l.so,
-          libboost_nowide.so, libboost_numpy3&python3-minor;.so,
-          libboost_prg_exec_monitor.so, libboost_program_options.so,
-          libboost_python3&python3-minor;.so, libboost_random.so,
-          libboost_regex.so, libboost_serialization.so,
-          libboost_stacktrace_addr2line.so, libboost_stacktrace_basic.so,
-          libboost_stacktrace_noop.so, libboost_system.so,
-          libboost_test_exec_monitor.a, libboost_thread.so, libboost_timer.so,
-          libboost_type_erasure.so, libboost_unit_test_framework.so,
-          libboost_url.so, libboost_wave.so, and libboost_wserialization.so
-        </seg>
-        <seg>
-          /usr/include/boost
-        </seg>
-@y
-        <seg>
-          &None;
-        </seg>
-        <seg>
-          libboost_atomic.so, libboost_chrono.so, libboost_container.so,
-          libboost_context.so, libboost_contract.so, libboost_coroutine.so,
-          libboost_date_time.so, libboost_exception.a, libboost_fiber.so,
-          libboost_filesystem.so, libboost_graph.so, libboost_iostreams.so,
-          libboost_json.so, libboost_locale.so,
-          libboost_log_setup.so, libboost_log.so, libboost_math_c99.so,
-          libboost_math_c99f.so, libboost_math_c99l.so, libboost_math_tr1.so,
-          libboost_math_tr1f.so, libboost_math_tr1l.so,
-          libboost_nowide.so, libboost_numpy3&python3-minor;.so,
-          libboost_prg_exec_monitor.so, libboost_program_options.so,
-          libboost_python3&python3-minor;.so, libboost_random.so,
-          libboost_regex.so, libboost_serialization.so,
-          libboost_stacktrace_addr2line.so, libboost_stacktrace_basic.so,
-          libboost_stacktrace_noop.so, libboost_system.so,
-          libboost_test_exec_monitor.a, libboost_thread.so, libboost_timer.so,
-          libboost_type_erasure.so, libboost_unit_test_framework.so,
-          libboost_url.so, libboost_wave.so, libboost_wserialization.so
-        </seg>
-        <seg>
-          /usr/include/boost
-        </seg>
 @z

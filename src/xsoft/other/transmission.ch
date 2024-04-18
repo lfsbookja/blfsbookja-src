@@ -82,14 +82,14 @@
 @x
     <bridgehead renderas="sect4">Recommended (to build a GUI)</bridgehead>
     <para role="recommended">
-      <xref linkend="gtkmm3"/> or
+      <xref linkend="gtkmm4"/> or
       &qt5-deps; or
       <xref linkend="qt6" role="nodep"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (GUI ビルド時)</bridgehead>
     <para role="recommended">
-      <xref linkend="gtkmm3"/> または
+      <xref linkend="gtkmm4"/> または
       &qt5-deps; または
       <xref linkend="qt6" role="nodep"/>
     </para>
@@ -164,12 +164,12 @@
 
 @x
       <option>-DENABLE_GTK=OFF</option>: This switch disables building
-      the GTK+-3 interface. The default is to build it if
-      <xref linkend="gtkmm3"/> is installed.
+      the GTK-4 interface. The default is to build it if
+      <xref linkend="gtkmm4"/> is installed.
 @y
       <option>-DENABLE_GTK=OFF</option>: This switch disables building
-      the GTK+-3 interface. The default is to build it if
-      <xref linkend="gtkmm3"/> is installed.
+      the GTK-4 interface. The default is to build it if
+      <xref linkend="gtkmm4"/> is installed.
 @z
 
 @x

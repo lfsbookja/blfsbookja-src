@@ -4,9 +4,11 @@
 
 CHANGE_FILES = \
 	atkmm.ch                  \
+	atkmm2.ch                 \
         at-spi2-core.ch           \
 	cairo.ch                  \
 	cairomm-1.0.ch            \
+	cairomm-1.16.ch           \
 	colord-gtk.ch             \
 	fltk.ch                   \
 	freeglut.ch               \
@@ -22,6 +24,7 @@ CHANGE_FILES = \
 	gtk4.ch                   \
 	gtk-engines.ch            \
 	gtkmm3.ch                 \
+	gtkmm4.ch                 \
         gtksourceview.ch          \
 	gtksourceview4.ch         \
 	gtksourceview5.ch         \
@@ -43,6 +46,7 @@ CHANGE_FILES = \
 	libxklavier.ch            \
 	pango.ch                  \
 	pangomm.ch                \
+	pangomm2.ch               \
 	qt5.ch                    \
 	qt5-alternate.ch          \
 	qt5-components.ch         \

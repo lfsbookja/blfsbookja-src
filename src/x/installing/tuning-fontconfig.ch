@@ -10,13 +10,9 @@
 @z
 
 @x
-  <indexterm zone="tuning-fontconfig">
     <primary sortas="g-tuning-fontconfig">Tuning Fontconfig</primary>
-  </indexterm>
 @y
-  <indexterm zone="tuning-fontconfig">
     <primary sortas="g-tuning-fontconfig">Tuning Fontconfig</primary>
-  </indexterm>
 @z
 
 @x
@@ -28,179 +24,51 @@
 @z
 
 @x
-<!-- do not add individual indexterm entries for items within this page, they
- all belong in section G (others) and not only do they add noise in longindex,
- the links all point to the top of the page. -->
-@y
-<!-- do not add individual indexterm entries for items within this page, they
- all belong in section G (others) and not only do they add noise in longindex,
- the links all point to the top of the page. -->
-@z
-
-@x
-    <para>
       If you only read text in English, and are happy with the common libre
       fonts listed on the next page, you may never need to worry about the
       details of how <application>Fontconfig</application> works. But there are
       many things which can be altered if they do not suit your needs.
-    </para>
 @y
-    <para>
       If you only read text in English, and are happy with the common libre
       fonts listed on the next page, you may never need to worry about the
       details of how <application>Fontconfig</application> works. But there are
       many things which can be altered if they do not suit your needs.
-    </para>
 @z
 
 @x
-    <para>
       Although this page is long, it barely scratches the surface and you will
       be able to find many alternative views on the web (but please remember
       that some things have changed over the years, for example the autohinter
       is no longer the default). The aim here is to give you enough information
       to understand the changes you are making, why they may not always work,
       and to identify online information which is no-longer appropriate.
-    </para>
 @y
-    <para>
       Although this page is long, it barely scratches the surface and you will
       be able to find many alternative views on the web (but please remember
       that some things have changed over the years, for example the autohinter
       is no longer the default). The aim here is to give you enough information
       to understand the changes you are making, why they may not always work,
       and to identify online information which is no-longer appropriate.
-    </para>
 @z
 
 @x
-    <para>
       Unfortunately, some of the terminology is ambiguous (e.g. 'font face' can
       mean a name known to Fontconfig, <emphasis>or</emphasis> the ordinary,
       condensed, etc variations of a font) and 'style' can be used to
       differentiate 'ordinary' from 'italic', or in describing some classes of
       Serif fonts.
-    </para>
 @y
-    <para>
       Unfortunately, some of the terminology is ambiguous (e.g. 'font face' can
       mean a name known to Fontconfig, <emphasis>or</emphasis> the ordinary,
       condensed, etc variations of a font) and 'style' can be used to
       differentiate 'ordinary' from 'italic', or in describing some classes of
       Serif fonts.
-    </para>
 @z
 
 @x
     <para>The following links are to assist navigation in this page.</para>
-    <itemizedlist>
-      <listitem>
-        <para><xref linkend="xft-font-protocol"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="useful-commands"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="the-various-files"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="rules-to-choose-a-font"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="hinting-and-antialiasing"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="disabling-bitmap-fonts"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="synthetic-changes"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="adding-extra-directories"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="preferring-certain-fonts"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="fontconfig-user-docs"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="prefer-a-specific-font"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="prefer-chosen-CJK-fonts"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="editing-old-style-conf-files"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="font-weights"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="items-which-can-override-fontconfig"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="external-links"/></para>
-      </listitem>
-    </itemizedlist>
 @y
     <para>The following links are to assist navigation in this page.</para>
-    <itemizedlist>
-      <listitem>
-        <para><xref linkend="xft-font-protocol"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="useful-commands"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="the-various-files"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="rules-to-choose-a-font"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="hinting-and-antialiasing"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="disabling-bitmap-fonts"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="synthetic-changes"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="adding-extra-directories"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="preferring-certain-fonts"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="fontconfig-user-docs"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="prefer-a-specific-font"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="prefer-chosen-CJK-fonts"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="editing-old-style-conf-files"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="font-weights"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="items-which-can-override-fontconfig"/></para>
-      </listitem>
-      <listitem>
-        <para><xref linkend="external-links"/></para>
-      </listitem>
-    </itemizedlist>
-@z
-
-@x
-    </sect2>
-@y
-    </sect2>
 @z
 
 @x
@@ -212,7 +80,6 @@
 @z
 
 @x
-    <para>
       The Xft font protocol provides antialiased font rendering through
       <application>freetype</application>, and fonts are controlled from the
       client side using <application>Fontconfig</application> (except for
@@ -228,9 +95,7 @@
       directory. If the cache appears to be out of date, it is ignored, and
       information is fetched from the fonts themselves (that can take a few
       seconds if you have a lot of fonts installed).
-    </para>
 @y
-    <para>
       The Xft font protocol provides antialiased font rendering through
       <application>freetype</application>, and fonts are controlled from the
       client side using <application>Fontconfig</application> (except for
@@ -246,7 +111,6 @@
       directory. If the cache appears to be out of date, it is ignored, and
       information is fetched from the fonts themselves (that can take a few
       seconds if you have a lot of fonts installed).
-    </para>
 @z
 
 @x
@@ -2348,63 +2212,46 @@ EOF</userinput></screen>
 @z
 
 @x
-    <para>
       <application>KDE Plasma</application>: The settings can be adjusted in
-      <application>System Settings</application> under Appearance -> Fonts. This
-      will create or modify <filename>~/.config/fontconfig/fonts.conf</filename>
-      although <filename>~/.config/fontconfig/fonts.conf</filename>, if
-      installed, can override that.
-    </para>
+      <application>System Settings</application> under Appearance -> Fonts or in
+      Edit -> Preferences of the individual application.
 @y
-    <para>
       <application>KDE Plasma</application>: The settings can be adjusted in
-      <application>System Settings</application> under Appearance -> Fonts. This
-      will create or modify <filename>~/.config/fontconfig/fonts.conf</filename>
-      although <filename>~/.config/fontconfig/fonts.conf</filename>, if
-      installed, can override that.
-    </para>
+      <application>System Settings</application> under Appearance -> Fonts or in
+      Edit -> Preferences of the individual application.
 @z
 
 @x
-    <para>
       <application>Xfce desktop</application>: The settings can be adjusted in
       <application>Settings</application> -> Appearance -> Fonts. Specify your
       preferred fonts, e.g. 'Sans Regular' (to use the normal face and weight
       rather than Bold and/or Italic) and adjust the point size in the option.
       Review the Rendering and DPI options.
-    </para>
 @y
-    <para>
       <application>Xfce desktop</application>: The settings can be adjusted in
       <application>Settings</application> -> Appearance -> Fonts. Specify your
       preferred fonts, e.g. 'Sans Regular' (to use the normal face and weight
       rather than Bold and/or Italic) and adjust the point size in the option.
       Review the Rendering and DPI options.
-    </para>
 @z
 
 @x
-    <para>
       <application>Firefox</application>: This browser allows you to specify its
       default fonts. For the 115esr series use the 'Hamburger' menu to go to
       Preferences, General, and under Fonts -> Advanced select Sans Serif, Serif
       or Monospace as appropriate if you wish to use the fonts which match
       <application>Fontconfig</application>.  Set the point sizes as desired. In
       later versions, the settings are at Preferences -> Fonts.
-    </para>
 @y
-    <para>
       <application>Firefox</application>: This browser allows you to specify its
       default fonts. For the 115esr series use the 'Hamburger' menu to go to
       Preferences, General, and under Fonts -> Advanced select Sans Serif, Serif
       or Monospace as appropriate if you wish to use the fonts which match
       <application>Fontconfig</application>.  Set the point sizes as desired. In
       later versions, the settings are at Preferences -> Fonts.
-    </para>
 @z
 
 @x
-    <para>
       <application>Libreoffice</application>: Tests using English text with an
       old Japanese font (HanaMinA) which supports several European languages but
       had only one weight and no italics or slant showed that although
@@ -2415,9 +2262,7 @@ EOF</userinput></screen>
       that <application>Libreoffice</application> has its own substitution rules
       for when a codepoint is not found in the selected font, but is unclear if
       those rules apply on Linux using Fontconfig.
-    </para>
 @y
-    <para>
       <application>Libreoffice</application>: Tests using English text with an
       old Japanese font (HanaMinA) which supports several European languages but
       had only one weight and no italics or slant showed that although
@@ -2428,45 +2273,30 @@ EOF</userinput></screen>
       that <application>Libreoffice</application> has its own substitution rules
       for when a codepoint is not found in the selected font, but is unclear if
       those rules apply on Linux using Fontconfig.
-    </para>
 @z
 
 @x
-    <para>
       <application>Pango</application>: as noted in the example
       <filename>~/.config/fontconfig</filename> above, anything using Pango-1.44
       (from 2019) or later now uses <application>Harfbuzz</application> for
       hinting, not <application>FreeType</application>, and
       <literal>hintfull</literal> is not supported.
-    </para>
 @y
-    <para>
       <application>Pango</application>: as noted in the example
       <filename>~/.config/fontconfig</filename> above, anything using Pango-1.44
       (from 2019) or later now uses <application>Harfbuzz</application> for
       hinting, not <application>FreeType</application>, and
       <literal>hintfull</literal> is not supported.
-    </para>
 @z
 
 @x
-    <para>
       <application>Thunderbird</application>: The font settings can be changed
       by going to "Edit -> Settings" and then scrolling down to "Fonts &amp;
       Colors".
-    </para>
 @y
-    <para>
       <application>Thunderbird</application>: The font settings can be changed
       by going to "Edit -> Settings" and then scrolling down to "Fonts &amp;
       Colors".
-    </para>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
 
 @x

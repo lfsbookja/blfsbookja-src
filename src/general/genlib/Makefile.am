@@ -21,6 +21,7 @@ CHANGE_FILES = \
 	genlib.ch                \
 	glib2.ch                 \
 	glibmm.ch                \
+	glibmm2.ch               \
 	gmime3.ch                \
 	gsl.ch                   \
 	gspell.ch                \
@@ -66,6 +67,7 @@ CHANGE_FILES = \
 	libqmi.ch                \
 	libseccomp.ch            \
 	libsigc++.ch             \
+	libsigc++3.ch            \
 	libsigsegv.ch            \
 	libssh2.ch               \
 	libstatgrab.ch           \
