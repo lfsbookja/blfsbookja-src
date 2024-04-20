@@ -105,13 +105,13 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cairo"/> and
+      <xref linkend="cairo"/> (built after <xref linkend="harfbuzz"/>) and
       <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <xref linkend="cairo"/>,
+      <xref linkend="cairo"/> (built after <xref linkend="harfbuzz"/>) and
       <xref linkend="xorg7-lib"/>
     </para>
 @z

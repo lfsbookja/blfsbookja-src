@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY icu-buildsize     "339 MB (add 42 MB for tests)">
-  <!ENTITY icu-time          "0.7 SBU (Using parallelism=4; add 1.5 SBU for tests)">
+  <!ENTITY icu-buildsize     "341 MB (add 45 MB for tests)">
+  <!ENTITY icu-time          "0.7 SBU (Using parallelism=4; add 2.0 SBU for tests)">
 @y
-  <!ENTITY icu-buildsize     "339 MB (テスト実施時はさらに 42 MB)">
-  <!ENTITY icu-time          "0.7 SBU (parallelism=4  利用時。テスト実施時はさらに 1.5 SBU)">
+  <!ENTITY icu-buildsize     "341 MB (テスト実施時はさらに 45 MB)">
+  <!ENTITY icu-time          "0.7 SBU (parallelism=4  利用時。テスト実施時はさらに 2.0 SBU)">
 @z
 
 @x

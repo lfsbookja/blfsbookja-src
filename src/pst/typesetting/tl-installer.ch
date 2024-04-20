@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY tl-installer-buildsize        "85 MB MB for plain TeX, typically 2 to 4 MB for latex and later engines, 8.6 GB if everything is included">
+  <!ENTITY tl-installer-buildsize        "85 MB for plain TeX, typically 2 to 4 MB for latex and later engines, 8.6 GB if everything is included">
   <!ENTITY tl-installer-time            "varies, depending on network speed and traffic">
 @y
-  <!ENTITY tl-installer-buildsize        "85 MB MB for plain TeX, typically 2 to 4 MB for latex and later engines, 8.6 GB if everything is included">
+  <!ENTITY tl-installer-buildsize        "85 MB for plain TeX, typically 2 to 4 MB for latex and later engines, 8.6 GB if everything is included">
   <!ENTITY tl-installer-time            "varies, depending on network speed and traffic">
 @z
 
