@@ -4,14 +4,6 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY ffmpeg-buildsize     "237 MB (add 1.5 GB for the FATE suite/tests, add 792 MB for documentation)">
-  <!ENTITY ffmpeg-time          "1.3 SBU (using parallelism=4; add 3.2 SBU (with THREADS=4) to run the FATE suite after sample files are downloaded; add 0.3 SBU for doxygen docs)">
-@y
-  <!ENTITY ffmpeg-buildsize     "237 MB (add 1.5 GB for the FATE suite/tests, add 792 MB for documentation)">
-  <!ENTITY ffmpeg-time          "1.3 SBU (using parallelism=4; add 3.2 SBU (with THREADS=4) to run the FATE suite after sample files are downloaded; add 0.3 SBU for doxygen docs)">
-@z
-
-@x
     <title>Introduction to FFmpeg</title>
 @y
     <title>Introduction to FFmpeg</title>
@@ -113,11 +105,6 @@
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
 @y
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-@z
-@x
-          Required patch:
-@y
-          Required patch:
 @z
 @x
           Required patch:

@@ -10,89 +10,60 @@
 @z
 
 @x
-  <indexterm zone="TTF-and-OTF-fonts">
     <primary sortas="a-TTF-and-OTF-fonts">TTF and OTF fonts</primary>
-  </indexterm>
 @y
-  <indexterm zone="TTF-and-OTF-fonts">
     <primary sortas="a-TTF-and-OTF-fonts">TTF and OTF fonts</primary>
-  </indexterm>
 @z
 
 @x
-  <!-- although indexterm entries can be added for the individual fonts, and
-   will link to the correct part of the page, that seems unnecessary unless
-   the font is linked from other pages -->
-@y
-  <!-- although indexterm entries can be added for the individual fonts, and
-   will link to the correct part of the page, that seems unnecessary unless
-   the font is linked from other pages -->
-@z
-
-@x
-    <sect2 role="configuration">
     <title>About TTF and OTF fonts</title>
 @y
-    <sect2 role="configuration">
     <title>About TTF and OTF fonts</title>
 @z
 
 @x
-    <para>
       Originally, Xorg provided only bitmap fonts. Later, some scalable
       Type1 fonts were added, but the desktop world moved on to using TrueType
       and Open Type fonts. To support these, Xorg uses Xft, the X FreeType
       interface library, with <application>Fontconfig</application> (see
       previous page for details including how fonts are selected and various
       reasons why a font might be ignored).
-    </para>
 @y
-    <para>
       Originally, Xorg provided only bitmap fonts. Later, some scalable
       Type1 fonts were added, but the desktop world moved on to using TrueType
       and Open Type fonts. To support these, Xorg uses Xft, the X FreeType
       interface library, with <application>Fontconfig</application> (see
       previous page for details including how fonts are selected and various
       reasons why a font might be ignored).
-    </para>
 @z
 
 @x
-    <para>
       A few fonts are provided as collections (TTC or OTC) where font data
       is shared between different fonts, which saves disk space. These should
       be treated in exactly the same way as individual TTF or OTF files.
-    </para>
 @y
-    <para>
       A few fonts are provided as collections (TTC or OTC) where font data
       is shared between different fonts, which saves disk space. These should
       be treated in exactly the same way as individual TTF or OTF files.
-    </para>
 @z
 
 @x
-    <para>
       If a font provides both TTF and OTF forms, you should prefer the OTF form
       in Linux, as it may provide more features for programs which know how to
       use them (such as xelatex). The TTF files of these fonts usually contain
       hinting, see <xref linkend="hinting-and-antialiasing"/> and <xref
       linkend="items-which-can-override-fontconfig"/> for reasons why hinting
       may be undesirable or unusable.
-    </para>
 @y
-    <para>
       If a font provides both TTF and OTF forms, you should prefer the OTF form
       in Linux, as it may provide more features for programs which know how to
       use them (such as xelatex). The TTF files of these fonts usually contain
       hinting, see <xref linkend="hinting-and-antialiasing"/> and <xref
       linkend="items-which-can-override-fontconfig"/> for reasons why hinting
       may be undesirable or unusable.
-    </para>
 @z
 
 @x
-    <para>
       A font may have multiple variations.  For example, Noto Sans
       has 9 weights (ExtraLight, Light, Thin, Normal, Medium, SemiBold,
       Bold, ExtraBold, and Black) and 2 styles (Regular and Italic), thus
@@ -105,9 +76,7 @@
       monospace fonts), and some fonts only have one variation (for example
       Noto Sans Math, it only provides the glyph of some mathematic
       symbols).
-    </para>
 @y
-    <para>
       A font may have multiple variations.  For example, Noto Sans
       has 9 weights (ExtraLight, Light, Thin, Normal, Medium, SemiBold,
       Bold, ExtraBold, and Black) and 2 styles (Regular and Italic), thus
@@ -120,7 +89,6 @@
       monospace fonts), and some fonts only have one variation (for example
       Noto Sans Math, it only provides the glyph of some mathematic
       symbols).
-    </para>
 @z
 
 @x
@@ -446,16 +414,6 @@
 @z
 
 @x
-<screen role="root"><userinput>install -v -d -m755 /usr/share/fonts/dejavu &amp;&amp;
-install -v -m644 ttf/*.ttf /usr/share/fonts/dejavu &amp;&amp;
-fc-cache -v /usr/share/fonts/dejavu</userinput></screen>
-@y
-<screen role="root"><userinput>install -v -d -m755 /usr/share/fonts/dejavu &amp;&amp;
-install -v -m644 ttf/*.ttf /usr/share/fonts/dejavu &amp;&amp;
-fc-cache -v /usr/share/fonts/dejavu</userinput></screen>
-@z
-
-@x
     <para>
       If you wish, you can also install any licenses or other documentation,
       either alongside the font or in a corresponding directory under
@@ -508,31 +466,11 @@ fc-cache -v /usr/share/fonts/dejavu</userinput></screen>
 @z
 
 @x
-    <note>
-      <para>
         Installation of the <xref
         linkend="dejavu-fonts"/> is strongly recommended. 
-      </para>
-    </note>
 @y
-    <note>
-      <para>
         Installation of the <xref
         linkend="dejavu-fonts"/> is strongly recommended. 
-      </para>
-    </note>
-@z
-
-@x
-    <!-- fonts covering at least Latin languages, order alphabetically
-    NB the xreflabel in the bridgehead is used in any link names, the
-    associated text is embiggened for the heading, the text for the
-    sortas appears as the key in the longindex -->
-@y
-    <!-- fonts covering at least Latin languages, order alphabetically
-    NB the xreflabel in the bridgehead is used in any link names, the
-    associated text is embiggened for the heading, the text for the
-    sortas appears as the key in the longindex -->
 @z
 
 @x
@@ -712,19 +650,15 @@ fc-cache -v /usr/share/fonts/dejavu</userinput></screen>
 @z
 
 @x
-    <para>
-      <ulink url="https://fontlibrary.org/en/font/gelasio">Gelasio</ulink> is
+      <ulink url="https://fonts.google.com/specimen/Gelasio">Gelasio</ulink> is
       metrically compatible with MS Georgia and
       <application>Fontconfig</application> will use it if MS Georgia is
       requested but is not installed.
-    </para>
 @y
-    <para>
-      <ulink url="https://fontlibrary.org/en/font/gelasio">Gelasio</ulink> is
+      <ulink url="https://fonts.google.com/specimen/Gelasio">Gelasio</ulink> is
       metrically compatible with MS Georgia and
       <application>Fontconfig</application> will use it if MS Georgia is
       requested but is not installed.
-    </para>
 @z
 
 @x

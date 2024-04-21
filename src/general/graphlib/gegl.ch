@@ -195,7 +195,7 @@
 
 @x
       <option>-Ddocs=true</option>: Build and
-      install documentation (requires <xref linkend="gtk-doc"/>,).
+      install documentation (requires <xref linkend="gtk-doc"/>).
 @y
       <option>-Ddocs=true</option>:
       ドキュメントのビルドとインストールを行います。

@@ -139,11 +139,11 @@
 @z
 
 @x
-      <command>sed ... speex/pcm_speex.c</command>: Fix a build problem
-      when speex1.2rc2 is installed.
+      <option>--disable-libav</option>: Disable FFMpeg support as the
+      package does not build when <xref linkend="ffmpeg"/> is installed.
 @y
-      <command>sed ... speex/pcm_speex.c</command>: Fix a build problem
-      when speex1.2rc2 is installed.
+      <option>--disable-libav</option>: Disable FFMpeg support as the
+      package does not build when <xref linkend="ffmpeg"/> is installed.
 @z
 
 @x
