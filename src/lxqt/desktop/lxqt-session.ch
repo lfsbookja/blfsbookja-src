@@ -97,7 +97,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="liblxqt"/>,
-      <xref linkend="lxqt-kwindowsystem"/>,
       <xref linkend="qtxdg-tools"/>, and
       <xref linkend="xdg-user-dirs"/>
     </para>
@@ -105,7 +104,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="liblxqt"/>,
-      <xref linkend="lxqt-kwindowsystem"/>,
       <xref linkend="qtxdg-tools"/>,
       <xref linkend="xdg-user-dirs"/>
     </para>
@@ -232,19 +230,16 @@
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           lxqt-config-session,
           lxqt-leave,
@@ -255,12 +250,9 @@
           None
         </seg>
         <seg>
-          None
+          /usr/share/lxqt/translations/lxqt-{leave,config-session,session}
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           lxqt-config-session,
           lxqt-leave,
@@ -271,22 +263,14 @@
           None
         </seg>
         <seg>
-          None
+          /usr/share/lxqt/translations/lxqt-{leave,config-session,session}
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
 @x

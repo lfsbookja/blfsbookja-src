@@ -71,15 +71,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="liblxqt"/> and
-      <xref linkend="pulseaudio"/> (built with
-      <xref linkend="glib2"/> support)
+      <xref linkend="pulseaudio"/> (built with <xref linkend="glib2"/> support)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="liblxqt"/>,
-      <xref linkend="pulseaudio"/> (built with
-      <xref linkend="glib2"/> support)
+      <xref linkend="liblxqt"/> and
+      <xref linkend="pulseaudio"/> (built with <xref linkend="glib2"/> support)
     </para>
 @z
 
@@ -132,7 +130,7 @@
           None
         </seg>
         <seg>
-          None
+          /usr/share/pavucontrol-qt
         </seg>
 @y
         <seg>
@@ -142,7 +140,7 @@
           &None;
         </seg>
         <seg>
-          &None;
+          /usr/share/pavucontrol-qt
         </seg>
 @z
 

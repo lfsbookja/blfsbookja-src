@@ -4,99 +4,64 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to qps</title>
 @y
-  <sect2 role="package">
-    <title>Introduction to qps</title>
+    <title>&IntroductionTo1;qps&IntroductionTo2;</title>
 @z
 
 @x
-    <para>
       The <application>qps</application> package contains a Qt process
       manager.
-    </para>
 @y
-    <para>
-      The <application>qps</application> package contains a Qt process
-      manager.
-    </para>
+      <application>qps</application> パッケージは Qt プロセスマネージャーを提供します。
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&qps-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&qps-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &qps-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &qps-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &qps-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &qps-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
-    <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+    <bridgehead renderas="sect3">&PackageInformation;</bridgehead>
+@z
+
+@x
           Download (HTTP): <ulink url="&qps-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &Download; (HTTP): <ulink url="&qps-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&qps-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &Download; (FTP): <ulink url="&qps-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &qps-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &Download; MD5 sum: &qps-md5sum;
+@z
+
+@x
           Download size: &qps-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &DownloadSize;: &qps-size;
+@z
+
+@x
           Estimated disk space required: &qps-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          &Estimateddiskspacerequired;: &qps-buildsize;
+@z
+
+@x
           Estimated build time: &qps-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          &Estimatedbuildtime;: &qps-time;
 @z
 
 @x
     <bridgehead renderas="sect3">qps Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">qps Dependencies</bridgehead>
+    <bridgehead renderas="sect3">&Dependencies1;qps&Dependencies2;</bridgehead>
 @z
 
 @x
@@ -104,151 +69,66 @@
     <para role="required">
       <xref linkend="liblxqt"/>
     </para>
-    <!--
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="git"/> (to download translation files) or
-      <xref linkend="lxqt-l10n"/> (to add localization files)
-    </para>
 @y
-    <bridgehead renderas="sect4">Required</bridgehead>
+    <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="liblxqt"/>
     </para>
-    <!--
-    <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="git"/> (to download translation files) or
-      <xref linkend="lxqt-l10n"/> (to add localization files)
-    </para>
 @z
 
 @x
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/qps"/>
-    </para>
-    -->
-  </sect2>
-@y
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/qps"/>
-    </para>
-    -->
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of qps</title>
 @y
-  <sect2 role="installation">
-    <title>Installation of qps</title>
+    <title>&InstallationOf1;qps&InstallationOf2;</title>
 @z
 
 @x
-    <para>
       Install <application>qps</application> by running the following
       commands:
-    </para>
 @y
-    <para>
-      Install <application>qps</application> by running the following
-      commands:
-    </para>
+      以下のコマンドを実行して <application>qps</application> をビルドします。
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      ..       &amp;&amp;
-@y
-cmake -DCMAKE_BUILD_TYPE=Release  \
-      -DCMAKE_INSTALL_PREFIX=/usr \
-      ..       &amp;&amp;
-@z
-
-@x
-make</userinput></screen>
-@y
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
-      This package does not come with a test suite.
-    </para>
+      &notTestSuite;
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
-      Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
+      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-    <para>
       If you have <xref linkend="xdg-utils"/> installed, as the
-      &root; user, run <command>xdg-icon-resource
-      forceupdate --theme hicolor</command>.
-    </para>
+      &root; user, run 
+      <command>xdg-icon-resource forceupdate --theme hicolor</command>.
 @y
-    <para>
-      If you have <xref linkend="xdg-utils"/> installed, as the
-      &root; user, run <command>xdg-icon-resource
-      forceupdate --theme hicolor</command>.
-    </para>
+      <xref linkend="xdg-utils"/> をインストールしている場合は
+      &root; ユーザーになって
+      <command>xdg-icon-resource forceupdate --theme hicolor</command>
+      を実行します。
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
-    <title>Contents</title>
+    <title>&Contents;</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-    <segmentedlist>
-      <segtitle>Installed Program</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directory</segtitle>
+      <segtitle>&InstalledPrograms;</segtitle>
+      <segtitle>&InstalledLibraries;</segtitle>
+      <segtitle>&InstalledDirectories;</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           qps
         </seg>
@@ -256,77 +136,28 @@ make</userinput></screen>
           None
         </seg>
         <seg>
-          None
+          /usr/share/qps
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           qps
         </seg>
         <seg>
-          None
+          &None;
         </seg>
         <seg>
-          None
+          /usr/share/qps
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
-      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x
-      <varlistentry id="qps-prog">
-        <term><command>qps</command></term>
-        <listitem>
-          <para>
+@x qps
             is a Qt-based process manager
-          </para>
-          <indexterm zone="qps qps-prog">
-            <primary sortas="b-qps">qps</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="qps-prog">
-        <term><command>qps</command></term>
-        <listitem>
-          <para>
-            is a Qt-based process manager
-          </para>
-          <indexterm zone="qps qps-prog">
-            <primary sortas="b-qps">qps</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
+            Qt ベースのプロセスマネージャー。
 @z

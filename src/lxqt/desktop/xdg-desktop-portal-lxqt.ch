@@ -10,95 +10,61 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to xdg-desktop-portal-lxqt</title>
 @y
-  <sect2 role="package">
     <title>Introduction to xdg-desktop-portal-lxqt</title>
 @z
 
 @x
-    <para>
       <application>xdg-desktop-portal-lxqt</application> is a backend for
       <application>xdg-desktop-portal</application>, that is using the Qt
       library.
-    </para>
 @y
-    <para>
       <application>xdg-desktop-portal-lxqt</application> is a backend for
       <application>xdg-desktop-portal</application>, that is using the Qt
       library.
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&xdg-desktop-portal-lxqt-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&xdg-desktop-portal-lxqt-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &xdg-desktop-portal-lxqt-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &xdg-desktop-portal-lxqt-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &xdg-desktop-portal-lxqt-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &xdg-desktop-portal-lxqt-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&xdg-desktop-portal-lxqt-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&xdg-desktop-portal-lxqt-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&xdg-desktop-portal-lxqt-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&xdg-desktop-portal-lxqt-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &xdg-desktop-portal-lxqt-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &xdg-desktop-portal-lxqt-md5sum;
+@z
+
+@x
           Download size: &xdg-desktop-portal-lxqt-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &xdg-desktop-portal-lxqt-size;
+@z
+
+@x
           Estimated disk space required: &xdg-desktop-portal-lxqt-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &xdg-desktop-portal-lxqt-buildsize;
+@z
+
+@x
           Estimated build time: &xdg-desktop-portal-lxqt-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &xdg-desktop-portal-lxqt-time;
 @z
 
 @x
@@ -167,7 +133,7 @@
 
 @x
         <seg>
-          one daemon in /usr/libexec
+          xdg-desktop-portal-lxqt (in /usr/libexec)
         </seg>
         <seg>
           None
@@ -178,7 +144,7 @@
         </seg>
 @y
         <seg>
-          one daemon in /usr/libexec
+          xdg-desktop-portal-lxqt (in /usr/libexec)
         </seg>
         <seg>
           None

@@ -10,23 +10,17 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to lxqt-policykit</title>
 @y
-  <sect2 role="package">
     <title>Introduction to lxqt-policykit</title>
 @z
 
 @x
-    <para>
       The <application>lxqt-policykit</application> package is the
       <application>LXQt</application> PolicyKit agent.
-    </para>
 @y
-    <para>
       The <application>lxqt-policykit</application> package is the
       <application>LXQt</application> PolicyKit agent.
-    </para>
 @z
 
 @x
@@ -120,98 +114,42 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of lxqt-policykit</title>
 @y
-  <sect2 role="installation">
     <title>Installation of lxqt-policykit</title>
 @z
 
 @x
-    <para>
       Install <application>lxqt-policykit</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>lxqt-policykit</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>

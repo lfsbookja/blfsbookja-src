@@ -69,15 +69,17 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="liblxqt"/>, and
-      <xref linkend="openbox"/>
+      <xref linkend="lxqt-build-tools"/>,
+      <xref linkend="openbox"/>, and
+      &qt5-deps;
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="hicolor-icon-theme"/>,
-      <xref linkend="liblxqt"/>,
-      <xref linkend="openbox"/>
+      <xref linkend="lxqt-build-tools"/>,
+      <xref linkend="openbox"/>,
+      &qt5-deps;
     </para>
 @z
 

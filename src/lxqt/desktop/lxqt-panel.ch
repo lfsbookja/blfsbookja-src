@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-panel-time          "0.5 SBU (Using parallelism=4)">
+  <!ENTITY lxqt-panel-time          "0.6 SBU (Using parallelism=4)">
 @y
-  <!ENTITY lxqt-panel-time          "0.5 SBU (Using parallelism=4)">
+  <!ENTITY lxqt-panel-time          "0.6 SBU (Using parallelism=4)">
 @z
 
 @x
@@ -16,15 +16,11 @@
 @z
 
 @x
-    <para>
       The <application>lxqt-panel</application> package contains a
       lightweight X11 desktop panel.
-    </para>
 @y
-    <para>
       The <application>lxqt-panel</application> package contains a
       lightweight X11 desktop panel.
-    </para>
 @z
 
 @x
@@ -106,6 +102,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="layer-shell-qt"/>,
       <xref linkend="libdbusmenu-qt"/>,
       <xref linkend="liblxqt"/>,
       <xref linkend="lxqt-globalkeys"/>,
@@ -116,6 +113,7 @@
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="layer-shell-qt"/>,
       <xref linkend="libdbusmenu-qt"/>,
       <xref linkend="liblxqt"/>,
       <xref linkend="lxqt-globalkeys"/>,
@@ -176,57 +174,22 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>Command Explanations</title>
-@z
-
-@x
-    <para>
-      <option>-D&lt;plugin&gt;_PLUGIN=no</option>: Disable a &lt;plugin&gt;,
-      where &lt;plugin&gt; may be CLOCK, COLORPICKER, CPULOAD, DIRECTORYMENU,
-      DESKTOPSWITCH, KBINDICATOR, MAINMENU, MOUNT, QUICKLAUNCH, SENSORS,
-      SHOWDESKTOP, NETWORKMONITOR, SYSSTAT, TASKBAR, STATUSNOTIFIER, TRAY,
-      VOLUME, WORLDCLOCK, or SPACER
-    </para>
-@y
-    <para>
-      <option>-D&lt;plugin&gt;_PLUGIN=no</option>: Disable a &lt;plugin&gt;,
-      where &lt;plugin&gt; may be CLOCK, COLORPICKER, CPULOAD, DIRECTORYMENU,
-      DESKTOPSWITCH, KBINDICATOR, MAINMENU, MOUNT, QUICKLAUNCH, SENSORS,
-      SHOWDESKTOP, NETWORKMONITOR, SYSSTAT, TASKBAR, STATUSNOTIFIER, TRAY,
-      VOLUME, WORLDCLOCK, or SPACER
-    </para>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           lxqt-panel
         </seg>
@@ -237,10 +200,7 @@
           /usr/lib/lxqt-panel and
           /usr/share/lxqt/panel
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           lxqt-panel
         </seg>
@@ -248,67 +208,21 @@
           several plugins under /usr/lib/lxqt-panel
         </seg>
         <seg>
-          /usr/lib/lxqt-panel and
+          /usr/lib/lxqt-panel,
           /usr/share/lxqt/panel
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="lxqt-panel-prog">
-        <term><command>lxqt-panel</command></term>
-        <listitem>
-          <para>
-            is a lightweight <application>Qt5</application> based
+@x lxqt-panel
+            is a lightweight <application>Qt6</application> based
             panel for the <application>LXQt</application> Desktop
-          </para>
-          <indexterm zone="lxqt-panel lxqt-panel-prog">
-            <primary sortas="b-lxqt-panel">lxqt-panel</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="lxqt-panel-prog">
-        <term><command>lxqt-panel</command></term>
-        <listitem>
-          <para>
-            is a lightweight <application>Qt5</application> based
+            is a lightweight <application>Qt6</application> based
             panel for the <application>LXQt</application> Desktop
-          </para>
-          <indexterm zone="lxqt-panel lxqt-panel-prog">
-            <primary sortas="b-lxqt-panel">lxqt-panel</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

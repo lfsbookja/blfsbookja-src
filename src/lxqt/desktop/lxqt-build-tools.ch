@@ -10,10 +10,8 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to lxqt-build-tools</title>
 @y
-  <sect2 role="package">
     <title>Introduction to lxqt-build-tools</title>
 @z
 
@@ -111,204 +109,88 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cmake"/> and
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cmake"/> and
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @z
 
 @x
-<!--
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/lxqt-build-tools"/>
-    </para>
--->
-  </sect2>
-@y
-<!--
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/lxqt-build-tools"/>
-    </para>
--->
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of lxqt-build-tools</title>
 @y
-  <sect2 role="installation">
     <title>Installation of lxqt-build-tools</title>
 @z
 
 @x
-    <para>
       Install <application>lxqt-build-tools</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>lxqt-build-tools</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      .. &amp;&amp;
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      .. &amp;&amp;
-@z
-
-@x
-make</userinput></screen>
-@y
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
-          lxqt-transupdate
+          lxqt2-transupdate
         </seg>
         <seg>
           None
         </seg>
         <seg>
-         /usr/share/cmake/lxqt-build-tools
+         /usr/share/cmake/lxqt2-build-tools
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
-          lxqt-transupdate
+          lxqt2-transupdate
         </seg>
         <seg>
           None
         </seg>
         <seg>
-         /usr/share/cmake/lxqt-build-tools
+         /usr/share/cmake/lxqt2-build-tools
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="lxqt-transupdate">
-        <term><command>lxqt-transupdate</command></term>
-        <listitem>
-          <para>
+@x lxqt-transupdate
             updates translations for LXQt components
-          </para>
-          <indexterm zone="lxqt-build-tools lxqt-transupdate">
-            <primary sortas="b-lxqt-transupdate">lxqt-transupdate</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
 @y
-      <varlistentry id="lxqt-transupdate">
-        <term><command>lxqt-transupdate</command></term>
-        <listitem>
-          <para>
             updates translations for LXQt components
-          </para>
-          <indexterm zone="lxqt-build-tools lxqt-transupdate">
-            <primary sortas="b-lxqt-transupdate">lxqt-transupdate</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

@@ -132,7 +132,8 @@
           None
         </seg>
         <seg>
-          /etc/xdg/menus and
+          /etc/xdg/menus,
+          /usr/share/desktop-directories, and
           /usr/share/cmake/lxqt-menu-data
         </seg>
 @y
@@ -144,6 +145,7 @@
         </seg>
         <seg>
           /etc/xdg/menus,
+          /usr/share/desktop-directories,
           /usr/share/cmake/lxqt-menu-data
         </seg>
 @z

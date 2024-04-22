@@ -6,6 +6,7 @@ CHANGE_FILES = \
 	desktop.ch              \
 	dummy-desktop.ch        \
 	dummy-kf5.ch            \
+	libdbusmenu-lxqt.ch     \
 	libfm-extra.ch          \
 	libfm-qt.ch             \
 	liblxqt.ch              \
@@ -20,6 +21,7 @@ CHANGE_FILES = \
 	lxqt-kidletime.ch       \
 	lxqt-kwayland.ch        \
 	lxqt-kwindowsystem.ch   \
+	lxqt-layer-shell.ch     \
 	lxqt-libkscreen.ch      \
 	lxqt-menu-data.ch       \
 	lxqt-openssh-askpass.ch \

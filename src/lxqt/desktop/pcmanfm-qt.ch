@@ -70,6 +70,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="layer-shell-qt"/>,
       <xref linkend="liblxqt"/>,
       <xref linkend="libfm-qt"/>, and
       <xref linkend="lxqt-menu-data"/>
@@ -77,6 +78,7 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="layer-shell-qt"/>,
       <xref linkend="liblxqt"/>,
       <xref linkend="libfm-qt"/>,
       <xref linkend="lxqt-menu-data"/>

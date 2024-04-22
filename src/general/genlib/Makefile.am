@@ -44,7 +44,6 @@ CHANGE_FILES = \
 	libbytesize.ch           \
 	libcloudproviders.ch     \
 	libdaemon.ch             \
-	libdbusmenuqt.ch         \
 	libdisplay-info.ch       \
 	libgcrypt.ch             \
 	libgpg-error.ch          \

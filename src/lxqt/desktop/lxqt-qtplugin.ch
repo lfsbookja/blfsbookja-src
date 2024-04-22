@@ -138,66 +138,20 @@
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..       &amp;&amp;
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..       &amp;&amp;
-@z
-
-@x
-make</userinput></screen>
-@y
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="configuration">
     <title>Configuring lxqt-qtplugin</title>
 @y
-  <sect2 role="configuration">
     <title>Configuring lxqt-qtplugin</title>
 @z
 
@@ -208,153 +162,61 @@ make</userinput></screen>
 @z
 
 @x
-      <para>
         To use the plugin in Qt 5, the environment variable
         <envar>QT_QPA_PLATFORMTHEME</envar> must be set to <quote>lxqt</quote>.
         One way to do that is to issue as the &root; user:
-      </para>
 @y
-      <para>
         To use the plugin in Qt 5, the environment variable
         <envar>QT_QPA_PLATFORMTHEME</envar> must be set to <quote>lxqt</quote>.
         One way to do that is to issue as the &root; user:
-      </para>
 @z
 
 @x
-<screen role="root"><userinput>cat &gt;&gt; /etc/profile.d/lxqt.sh &lt;&lt; "EOF"
-<literal># Begin lxqt-qtplugin configuration
-@y
-<screen role="root"><userinput>cat &gt;&gt; /etc/profile.d/lxqt.sh &lt;&lt; "EOF"
-<literal># Begin lxqt-qtplugin configuration
-@z
-
-@x
-export QT_QPA_PLATFORMTHEME=lxqt
-@y
-export QT_QPA_PLATFORMTHEME=lxqt
-@z
-
-@x
-# End lxqt-qtplugin configuration</literal>
-EOF</userinput></screen>
-@y
-# End lxqt-qtplugin configuration</literal>
-EOF</userinput></screen>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directory</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           None
         </seg>
         <seg>
-          libqtlxqt.so (in $QT5DIR/plugins/platformthemes)
+          libqtlxqt.so (in $QT6DIR/plugins/platformthemes)
         </seg>
         <seg>
-          $QT5DIR/plugins/platformthemes
+          $QT6DIR/plugins/platformthemes
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           None
         </seg>
         <seg>
-          libqtlxqt.so (in $QT5DIR/plugins/platformthemes)
+          libqtlxqt.so (in $QT6DIR/plugins/platformthemes)
         </seg>
         <seg>
-          $QT5DIR/plugins/platformthemes
+          $QT6DIR/plugins/platformthemes
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="libqtlxqt-lib">
-        <term><filename class="libraryfile">libqtlxqt.so</filename></term>
-        <listitem>
-          <para>
+@x libqtlxqt.so
             contains the LXQt QT plugin loader
-          </para>
-          <indexterm zone="lxqt-qtplugin libqtlxqt-lib">
-            <primary sortas="c-libqtlxqt">libqtlxqt.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="libqtlxqt-lib">
-        <term><filename class="libraryfile">libqtlxqt.so</filename></term>
-        <listitem>
-          <para>
             contains the LXQt QT plugin loader
-          </para>
-          <indexterm zone="lxqt-qtplugin libqtlxqt-lib">
-            <primary sortas="c-libqtlxqt">libqtlxqt.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

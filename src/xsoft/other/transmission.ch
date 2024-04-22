@@ -80,18 +80,32 @@
 @z
 
 @x
+    <bridgehead renderas="sect4">Recommended</bridgehead>
+    <para role="recommended">
+      <xref linkend="libevent"/> and
+      <xref linkend="libpsl"/>
+      (to use system libraries instead of bundled ones)
+    </para>
+@y
+    <bridgehead renderas="sect4">&Recommended;</bridgehead>
+    <para role="recommended">
+      <xref linkend="libevent"/>,
+      <xref linkend="libpsl"/>
+      (to use system libraries instead of bundled ones)
+    </para>
+@z
+
+@x
     <bridgehead renderas="sect4">Recommended (to build a GUI)</bridgehead>
     <para role="recommended">
       <xref linkend="gtkmm4"/> or
-      &qt5-deps; or
-      <xref linkend="qt6" role="nodep"/>
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended; (GUI ビルド時)</bridgehead>
     <para role="recommended">
       <xref linkend="gtkmm4"/> または
-      &qt5-deps; または
-      <xref linkend="qt6" role="nodep"/>
+      <xref linkend="qt6"/>
     </para>
 @z
 

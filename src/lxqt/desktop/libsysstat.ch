@@ -10,23 +10,17 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to libsysstat</title>
 @y
-  <sect2 role="package">
     <title>Introduction to libsysstat</title>
 @z
 
 @x
-    <para>
       The <application>libsysstat</application> package contains a library used
       to query system information and statistics.
-    </para>
 @y
-    <para>
       The <application>libsysstat</application> package contains a library used
       to query system information and statistics.
-    </para>
 @z
 
 @x
@@ -118,201 +112,81 @@
 @z
 
 @x
-<!--
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/libsysstat"/>
-    </para>
--->
-  </sect2>
-@y
-<!--
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/libsysstat"/>
-    </para>
--->
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of libsysstat</title>
 @y
-  <sect2 role="installation">
     <title>Installation of libsysstat</title>
 @z
 
 @x
-    <para>
       Install <application>libsysstat</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>libsysstat</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-@z
-
-@x
-make</userinput></screen>
-@y
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           None
         </seg>
         <seg>
-          libsysstat-qt5.so
+          libsysstat-qt6.so
         </seg>
         <seg>
-          /usr/include/sysstat-qt5 and
-          /usr/share/cmake/sysstat-qt5
+          /usr/include/sysstat-qt6 and
+          /usr/share/cmake/sysstat-qt6
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
-          None
+          &None;
         </seg>
         <seg>
-          libsysstat-qt5.so
+          libsysstat-qt6.so
         </seg>
         <seg>
-          /usr/include/sysstat-qt5 and
-          /usr/share/cmake/sysstat-qt5
+          /usr/include/sysstat-qt6,
+          /usr/share/cmake/sysstat-qt6
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="libsysstat-qt5">
-        <term><filename class="libraryfile">libsysstat-qt5.so</filename></term>
-        <listitem>
-          <para>
-            contains the <application>libsysstat-qt5</application> API
+@x libsysstat-qt6.so
+            contains the <application>libsysstat-qt6</application> API
             functions
-          </para>
-          <indexterm zone="libsysstat libsysstat-qt5">
-            <primary sortas="c-libsysstat-qt5">libsysstat-qt5.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="libsysstat-qt5">
-        <term><filename class="libraryfile">libsysstat-qt5.so</filename></term>
-        <listitem>
-          <para>
-            contains the <application>libsysstat-qt5</application> API
+            contains the <application>libsysstat-qt6</application> API
             functions
-          </para>
-          <indexterm zone="libsysstat libsysstat-qt5">
-            <primary sortas="c-libsysstat-qt5">libsysstat-qt5.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

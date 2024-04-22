@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kconfig-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY kconfig-time          "0.2 SBU (Using parallelism=4)">
 @y
-  <!ENTITY kconfig-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY kconfig-time          "0.2 SBU (Using parallelism=4)">
 @z
 
 @x
@@ -75,13 +75,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="extra-cmake-modules"/> and
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="extra-cmake-modules"/>,
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @z
 
@@ -111,34 +111,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
-      the default in extra-cmake-modules, which is <filename
-      class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
-@y
-      <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
-      the default in extra-cmake-modules, which is <filename
-      class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
-@z
-
-@x
-      <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
-      installation of Qt plugins in the same directory as <xref linkend="qt5"/>
-      itself. Otherwise they get installed into <filename
-      class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
-@y
-      <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
-      installation of Qt plugins in the same directory as <xref linkend="qt5"/>
-      itself. Otherwise they get installed into <filename
-      class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -156,31 +128,35 @@
 
 @x
         <seg>
-          kreadconfig5 and
-          kwriteconfig5
+          kreadconfig6 and
+          kwriteconfig6
         </seg>
         <seg>
-          libKF5ConfigCore.so,
-          libKF5ConfigGui.so, and
-          libKF5ConfigQml.so
+          libKF6ConfigCore.so,
+          libKF6ConfigGui.so, and
+          libKF6ConfigQml.so
         </seg>
         <seg>
-          /usr/lib/cmake/KF5Config and
-          /usr/include/KF5/{KConfigCore,KConfig,KConfigQml,KConfigGui}
+          /usr/lib/libexec/kf6,
+          /usr/lib/qml/org/kde/config,
+          /usr/lib/cmake/KF6Config, and
+          /usr/include/KF6/{KConfigCore,KConfig,KConfigQml,KConfigGui}
         </seg>
 @y
         <seg>
-          kreadconfig5,
-          kwriteconfig5
+          kreadconfig6,
+          kwriteconfig6
         </seg>
         <seg>
-          libKF5ConfigCore.so,
-          libKF5ConfigGui.so,
-          libKF5ConfigQml.so
+          libKF6ConfigCore.so,
+          libKF6ConfigGui.so,
+          libKF6ConfigQml.so
         </seg>
         <seg>
-          /usr/lib/cmake/KF5Config,
-          /usr/include/KF5/{KConfigCore,KConfig,KConfigQml,KConfigGui}
+          /usr/lib/libexec/kf6,
+          /usr/lib/qml/org/kde/config,
+          /usr/lib/cmake/KF6Config,
+          /usr/include/KF6/{KConfigCore,KConfig,KConfigQml,KConfigGui}
         </seg>
 @z
 
@@ -202,10 +178,10 @@
             writes to a configuration file using the KConfig interface
 @z
 
-@x libKF5ConfigCore.so
-            contains the core configuration library for KF5
+@x libKF6ConfigCore.so
+            contains the core configuration library for KF6
 @y
-            contains the core configuration library for KF5
+            contains the core configuration library for KF6
 @z
 
 @x libKF5ConfigGui.so

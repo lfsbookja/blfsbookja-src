@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kwayland-time          "0.3 SBU (Using parallelism=4)">
+  <!ENTITY kwayland-time          "0.2 SBU (Using parallelism=4)">
 @y
-  <!ENTITY kwayland-time          "0.3 SBU (Using parallelism=4)">
+  <!ENTITY kwayland-time          "0.2 SBU (Using parallelism=4)">
 @z
 
 @x
@@ -79,7 +79,7 @@
       <xref linkend="extra-cmake-modules"/>,
       <xref linkend="mesa"/> (built with <xref linkend="wayland"/> support),
       <xref linkend="plasma-wayland-protocols"/>, and
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -87,7 +87,7 @@
       <xref linkend="extra-cmake-modules"/>,
       <xref linkend="mesa"/> (built with <xref linkend="wayland"/> support),
       <xref linkend="plasma-wayland-protocols"/>,
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @z
 
@@ -117,34 +117,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
-      the default in extra-cmake-modules, which is <filename
-      class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
-@y
-      <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
-      the default in extra-cmake-modules, which is <filename
-      class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
-@z
-
-@x
-      <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
-      installation of Qt plugins in the same directory as <xref linkend="qt5"/>
-      itself. Otherwise they get installed into <filename
-      class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
-@y
-      <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
-      installation of Qt plugins in the same directory as <xref linkend="qt5"/>
-      itself. Otherwise they get installed into <filename
-      class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -165,24 +137,22 @@
           None
         </seg>
         <seg>
-          libKF5WaylandClient.so and libKF5WaylandServer.so
+          libKWaylandClient.so 
         </seg>
         <seg>
-          /usr/lib/cmake/KF5Wayland,
-          /usr/include/KF5/KWayland, and
-          /usr/share/qlogging-categories5
+          /usr/include/KWayland, and
+          /usr/lib/cmake/KWayland
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libKF5WaylandClient.so, libKF5WaylandServer.so
+          libKWaylandClient.so 
         </seg>
         <seg>
-          /usr/lib/cmake/KF5Wayland,
-          /usr/include/KF5/KWayland,
-          /usr/share/qlogging-categories5
+          /usr/include/KWayland,
+          /usr/lib/cmake/KWayland
         </seg>
 @z
 
@@ -192,18 +162,10 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libKF5WaylandClient.so
+@x libKWaylandClient.so
             contains the <application>wayland-client</application> Qt-style
             wrapper library
 @y
             contains the <application>wayland-client</application> Qt-style
-            wrapper library
-@z
-
-@x libKF5WaylandServer.so
-            contains the <application>wayland-server</application> Qt-style
-            wrapper library
-@y
-            contains the <application>wayland-server</application> Qt-style
             wrapper library
 @z

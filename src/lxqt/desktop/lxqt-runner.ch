@@ -102,100 +102,48 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="lxqt-globalkeys"/> and
+      <xref linkend="lxqt-globalkeys"/>,
+      <xref linkend="lxqt-kwindowsystem"/>, and
       <xref linkend="muparser"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="lxqt-globalkeys"/> and
+      <xref linkend="lxqt-globalkeys"/>,
+      <xref linkend="lxqt-kwindowsystem"/>, and
       <xref linkend="muparser"/>
     </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of lxqt-runner</title>
 @y
-  <sect2 role="installation">
     <title>Installation of lxqt-runner</title>
 @z
 
 @x
-    <para>
       Install <application>lxqt-runner</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>lxqt-runner</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="use">
     <title>Using lxqt-runner</title>
 @y
-  <sect2 role="use">
     <title>Using lxqt-runner</title>
 @z
 

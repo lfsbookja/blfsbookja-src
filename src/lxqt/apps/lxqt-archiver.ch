@@ -68,12 +68,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="liblxqt"/> and
+      <xref linkend="libfm-qt"/>,
+      <xref linkend="liblxqt"/>, and
       <xref linkend="json-glib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="libfm-qt"/>,
       <xref linkend="liblxqt"/>,
       <xref linkend="json-glib"/>
     </para>
@@ -128,7 +130,7 @@
           None
         </seg>
         <seg>
-          None
+          /usr/share/lxqt-archiver
         </seg>
 @y
         <seg>
@@ -138,7 +140,7 @@
           &None;
         </seg>
         <seg>
-          &None;
+          /usr/share/lxqt-archiver
         </seg>
 @z
 

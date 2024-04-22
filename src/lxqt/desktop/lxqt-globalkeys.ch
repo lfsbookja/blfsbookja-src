@@ -4,25 +4,19 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to lxqt-globalkeys</title>
 @y
-  <sect2 role="package">
     <title>Introduction to lxqt-globalkeys</title>
 @z
 
 @x
-    <para>
       The <application>lxqt-globalkeys</application> package contains a daemon
       used to register global keyboard shortcuts as well as an editor for
       keyboard shortcuts.
-    </para>
 @y
-    <para>
       The <application>lxqt-globalkeys</application> package contains a daemon
       used to register global keyboard shortcuts as well as an editor for
       keyboard shortcuts.
-    </para>
 @z
 
 @x
@@ -114,88 +108,34 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of lxqt-globalkeys</title>
 @y
-  <sect2 role="installation">
     <title>Installation of lxqt-globalkeys</title>
 @z
 
 @x
-    <para>
       Install <application>lxqt-globalkeys</application> by running the
       following commands:
-    </para>
 @y
-    <para>
       Install <application>lxqt-globalkeys</application> by running the
       following commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..                          &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
@@ -246,139 +186,35 @@ make</userinput></screen>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="lxqt-config-globalkeyshortcuts">
-        <term><command>lxqt-config-globalkeyshortcuts</command></term>
-        <listitem>
-          <para>
+@x lxqt-config-globalkeyshortcuts
             is an editor for keyboard shortcuts
-          </para>
-          <indexterm zone="lxqt-globalkeys lxqt-config-globalkeyshortcuts">
-            <primary sortas="b-lxqt-config-globalkeyshortcuts">lxqt-config-globalkeyshortcuts</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="lxqt-config-globalkeyshortcuts">
-        <term><command>lxqt-config-globalkeyshortcuts</command></term>
-        <listitem>
-          <para>
             is an editor for keyboard shortcuts
-          </para>
-          <indexterm zone="lxqt-globalkeys lxqt-config-globalkeyshortcuts">
-            <primary sortas="b-lxqt-config-globalkeyshortcuts">lxqt-config-globalkeyshortcuts</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="lxqt-globalkeysd">
-        <term><command>lxqt-globalkeysd</command></term>
-        <listitem>
-          <para>
+@x lxqt-globalkeysd
             is the global keyboard shortcut daemon
-          </para>
-          <indexterm zone="lxqt-globalkeys lxqt-globalkeysd">
-            <primary sortas="b-lxqt-globalkeysd">lxqt-globalkeysd</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="lxqt-globalkeysd">
-        <term><command>lxqt-globalkeysd</command></term>
-        <listitem>
-          <para>
             is the global keyboard shortcut daemon
-          </para>
-          <indexterm zone="lxqt-globalkeys lxqt-globalkeysd">
-            <primary sortas="b-lxqt-globalkeysd">lxqt-globalkeysd</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="lxqt-globalkeys-lib">
-        <term><filename class="libraryfile">lxqt-globalkeys.so</filename></term>
-        <listitem>
-          <para>
+@x lxqt-globalkeys.so
             contains the <application>lxqt-globalkeys</application> API
             functions
-          </para>
-          <indexterm zone="lxqt-globalkeys lxqt-globalkeys-lib">
-            <primary sortas="c-lxqt-globalkeys">lxqt-globalkeys.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="lxqt-globalkeys-lib">
-        <term><filename class="libraryfile">lxqt-globalkeys.so</filename></term>
-        <listitem>
-          <para>
             contains the <application>lxqt-globalkeys</application> API
             functions
-          </para>
-          <indexterm zone="lxqt-globalkeys lxqt-globalkeys-lib">
-            <primary sortas="c-lxqt-globalkeys">lxqt-globalkeys.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="liblxqt-globalkeys-ui-lib">
-        <term><filename class="libraryfile">liblxqt-globalkeys-ui.so</filename></term>
-        <listitem>
-          <para>
+@x liblxqt-globalkeys-ui.so
             contains the <application>liblxqt-globalkeys-ui</application> API
             functions
-          </para>
-          <indexterm zone="lxqt-globalkeys liblxqt-globalkeys-ui-lib">
-            <primary sortas="c-liblxqt-globalkeys-ui">liblxqt-globalkeys-ui.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="liblxqt-globalkeys-ui-lib">
-        <term><filename class="libraryfile">liblxqt-globalkeys-ui.so</filename></term>
-        <listitem>
-          <para>
             contains the <application>liblxqt-globalkeys-ui</application> API
             functions
-          </para>
-          <indexterm zone="lxqt-globalkeys liblxqt-globalkeys-ui-lib">
-            <primary sortas="c-liblxqt-globalkeys-ui">liblxqt-globalkeys-ui.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

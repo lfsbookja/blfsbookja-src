@@ -74,14 +74,14 @@
     <para role="required">
       <xref linkend="extra-cmake-modules"/>,
       <xref linkend="plasma-wayland-protocols"/>, and
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="extra-cmake-modules"/>,
       <xref linkend="plasma-wayland-protocols"/>,
-      &qt5-deps;
+      <xref linkend="qt6"/>
     </para>
 @z
 
@@ -111,34 +111,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
-      the default in extra-cmake-modules, which is <filename
-      class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
-@y
-      <parameter>-DCMAKE_INSTALL_LIBEXECDIR=libexec</parameter>: This overrides
-      the default in extra-cmake-modules, which is <filename
-      class="directory">/usr/lib/libexec</filename> and is not FHS compliant.
-@z
-
-@x
-      <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
-      installation of Qt plugins in the same directory as <xref linkend="qt5"/>
-      itself. Otherwise they get installed into <filename
-      class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
-@y
-      <parameter>-DKDE_INSTALL_USE_QT_SYS_PATHS=ON</parameter>: This forces
-      installation of Qt plugins in the same directory as <xref linkend="qt5"/>
-      itself. Otherwise they get installed into <filename
-      class="directory">/usr/mkspecs</filename>, which is not FHS compliant.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>
@@ -159,24 +131,24 @@
           None
         </seg>
         <seg>
-          libKF5IdleTime.so
+          libKF6IdleTime.so
         </seg>
         <seg>
-          /usr/lib/plugins/kf5/org.kde.kidletime.platforms,
-          /usr/lib/cmake/KF5IdleTime, and
-          /usr/include/KF5/KIdleTime
+          /usr/lib/plugins/kf6/org.kde.kidletime.platforms,
+          /usr/lib/cmake/KF6IdleTime, and
+          /usr/include/KF6/KIdleTime
         </seg>
 @y
         <seg>
           &None;
         </seg>
         <seg>
-          libKF5IdleTime.so
+          libKF6IdleTime.so
         </seg>
         <seg>
-          /usr/lib/plugins/kf5/org.kde.kidletime.platforms,
-          /usr/lib/cmake/KF5IdleTime,
-          /usr/include/KF5/KIdleTime
+          /usr/lib/plugins/kf6/org.kde.kidletime.platforms,
+          /usr/lib/cmake/KF6IdleTime,
+          /usr/include/KF6/KIdleTime
         </seg>
 @z
 
@@ -186,7 +158,7 @@
       <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
 @z
 
-@x libKF5GuiAddons.so
+@x libKF6IdleTime.so
             contains the KDE API for idle time reports
 @y
             contains the KDE API for idle time reports

@@ -97,7 +97,8 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="liblxqt"/>,
-      <xref linkend="lxqt-kidletime"/>, and
+      <xref linkend="lxqt-kidletime"/>,
+      <xref linkend="lxqt-solid"/>, and
       <xref linkend="upower"/>
     </para>
 @y
@@ -105,6 +106,7 @@
     <para role="required">
       <xref linkend="liblxqt"/>,
       <xref linkend="lxqt-kidletime"/>,
+      <xref linkend="lxqt-solid"/>,
       <xref linkend="upower"/>
     </para>
 @z

@@ -4,25 +4,19 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <sect2 role="package">
     <title>Introduction to lxqt-themes</title>
 @y
-  <sect2 role="package">
     <title>Introduction to lxqt-themes</title>
 @z
 
 @x
-    <para>
       The <application>lxqt-themes</application> package provides a number of
       graphics files and themes for the <application>LXQt</application>
       desktop.
-    </para>
 @y
-    <para>
       The <application>lxqt-themes</application> package provides a number of
       graphics files and themes for the <application>LXQt</application>
       desktop.
-    </para>
 @z
 
 @x
@@ -114,115 +108,42 @@
 @z
 
 @x
-<!--
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/lxqt-themes"/>
-    </para>
--->
-  </sect2>
-@y
-<!--
-    <para condition="html" role="usernotes">
-      User Notes: <ulink url="&blfs-wiki;/lxqt-themes"/>
-    </para>
--->
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of lxqt-themes</title>
 @y
-  <sect2 role="installation">
     <title>Installation of lxqt-themes</title>
 @z
 
 @x
-    <para>
       Install <application>lxqt-themes</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>lxqt-themes</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@y
-<screen><userinput>mkdir -v build &amp;&amp;
-cd       build &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..       &amp;&amp;
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DCMAKE_BUILD_TYPE=Release  \
-      ..       &amp;&amp;
-@z
-
-@x
-make</userinput></screen>
-    <para>
-      This package does not come with a test suite.
-    </para>
-@y
-make</userinput></screen>
-    <para>
-      This package does not come with a test suite.
-    </para>
-@z
-
-@x
-    <para>
       Now, as the &root; user:
-    </para>
 @y
-    <para>
       Now, as the &root; user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install</userinput></screen>
-@y
-<screen role="root"><userinput>make install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           None
         </seg>
@@ -232,10 +153,7 @@ make</userinput></screen>
         <seg>
           /usr/share/lxqt/{graphics,themes,palettes,wallpapers}
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           None
         </seg>
@@ -245,18 +163,4 @@ make</userinput></screen>
         <seg>
           /usr/share/lxqt/{graphics,themes,palettes,wallpapers}
         </seg>
-      </seglistitem>
-    </segmentedlist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z
