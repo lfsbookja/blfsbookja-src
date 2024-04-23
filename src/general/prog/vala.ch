@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY vala-buildsize     "160 MB (add 18 MB for tests)">
+  <!ENTITY vala-buildsize     "160 MB (add 19 MB for tests)">
   <!ENTITY vala-time          "0.5 SBU (add 1.0 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY vala-buildsize     "160 MB (テスト実施時はさらに 18 MB)">
+  <!ENTITY vala-buildsize     "160 MB (テスト実施時はさらに 19 MB)">
   <!ENTITY vala-time          "0.5 SBU (テスト実施時はさらに 1.0 SBU; いずれも parallelism=4 利用時)">
 @z
 
