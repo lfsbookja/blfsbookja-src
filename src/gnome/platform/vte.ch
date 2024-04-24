@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY vte-buildsize     "15 MB (with tests)">
-  <!ENTITY vte-time          "0.5 SBU (using parallelism=4; with tests)">
+  <!ENTITY vte-buildsize     "17 MB (with tests)">
+  <!ENTITY vte-time          "0.4 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY vte-buildsize     "15 MB（テスト込み）">
+  <!ENTITY vte-buildsize     "17 MB（テスト込み）">
   <!ENTITY vte-time          "0.4 SBU（parallelism=4 利用時、テスト込み）">
 @z
 

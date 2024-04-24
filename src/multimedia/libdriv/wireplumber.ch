@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY wireplumber-buildsize     "85 MB (with tests)">
+  <!ENTITY wireplumber-buildsize     "88 MB (with tests)">
   <!ENTITY wireplumber-time          "0.3 SBU (with tests)">
 @y
-  <!ENTITY wireplumber-buildsize     "85 MB (with tests)">
+  <!ENTITY wireplumber-buildsize     "88 MB (with tests)">
   <!ENTITY wireplumber-time          "0.3 SBU (with tests)">
 @z
 
@@ -162,35 +162,23 @@
 @z
 
 @x
-    <para>
       Install <application>Wireplumber</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>Wireplumber</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-    <para>
       To test the results, issue: <command>ninja test</command>.
-    </para>
 @y
-    <para>
       To test the results, issue: <command>ninja test</command>.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
@@ -200,19 +188,15 @@
 @z
 
 @x
-    <para>
       <parameter>-Dsystem-lua=true</parameter>: This switch enables using the
       system version of Lua. Omit this switch if you have not installed Lua,
       but note that <application>meson</application> will download and install
       it's own version.
-    </para>
 @y
-    <para>
       <parameter>-Dsystem-lua=true</parameter>: This switch enables using the
       system version of Lua. Omit this switch if you have not installed Lua,
       but note that <application>meson</application> will download and install
       it's own version.
-    </para>
 @z
 
 @x
@@ -228,79 +212,55 @@
 @z
 
 @x
-      <para>
         In order for Wireplumber to be used by Pipewire, Wireplumber must be
         configured to start when a desktop environment is started.
-      </para>
 @y
-      <para>
         In order for Wireplumber to be used by Pipewire, Wireplumber must be
         configured to start when a desktop environment is started.
-      </para>
 @z
 
 @x
-      <para revision="systemd">
         To configure Wireplumber to start when a desktop environment is
         started, run the following commands as the &root; user to enable the
         systemd user units:
-      </para>
 @y
-      <para revision="systemd">
         To configure Wireplumber to start when a desktop environment is
         started, run the following commands as the &root; user to enable the
         systemd user units:
-      </para>
 @z
 
 @x
-      <para revision="sysv">
         First, create a shell script that will start Wireplumber and Pipewire
         in the correct order as the &root; user:
-      </para>
 @y
-      <para revision="sysv">
         First, create a shell script that will start Wireplumber and Pipewire
         in the correct order as the &root; user:
-      </para>
 @z
 
-@x
-    <para revision="sysv">
+@x revision="sysv"
       Next, make this shell script executable as the &root; user:
-    </para>
 @y
-    <para revision="sysv">
       Next, make this shell script executable as the &root; user:
-    </para>
 @z
 
-@x
-    <para revision="sysv">
+@x revision="sysv"
       Finally, create an XDG Autostart file that will run
       <command>/usr/bin/pipewire-launcher.sh</command> when a desktop
       environment is started, as the &root; user:
-    </para>
 @y
-    <para revision="sysv">
       Finally, create an XDG Autostart file that will run
       <command>/usr/bin/pipewire-launcher.sh</command> when a desktop
       environment is started, as the &root; user:
-    </para>
 @z
 
 @x
-    <para>
       Now that Wireplumber is configured to start when a desktop environment is
       started, it is recommended that you log out of your session and log back
       in again.
-    </para>
 @y
-    <para>
       Now that Wireplumber is configured to start when a desktop environment is
       started, it is recommended that you log out of your session and log back
       in again.
-    </para>
 @z
 
 @x

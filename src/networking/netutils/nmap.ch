@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY nmap-buildsize     "138 MB (add 17 MB for tests)">
-  <!ENTITY nmap-time          "0.3 SBU (Using parallelism=4; add 0.1 SBU for tests)">
+  <!ENTITY nmap-buildsize     "116 MB (add 38 MB for tests)">
+  <!ENTITY nmap-time          "0.4 SBU (Using parallelism=4; add 0.1 SBU for tests)">
 @y
-  <!ENTITY nmap-buildsize     "138 MB (テスト実施時はさらに 17 MB)">
-  <!ENTITY nmap-time          "0.3 SBU (parallelism=4 利用時、テスト実施時はさらに 0.1 SBU)">
+  <!ENTITY nmap-buildsize     "116 MB (テスト実施時はさらに 38 MB)">
+  <!ENTITY nmap-time          "0.4 SBU (parallelism=4 利用時、テスト実施時はさらに 0.1 SBU)">
 @z
 
 @x

@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libgusb-buildsize     "2.1 MB (with tests and docs)">
+  <!ENTITY libgusb-buildsize     "5.0 MB (with tests and docs)">
   <!ENTITY libgusb-time          "0.1 SBU (with tests and docs)">
 @y
-  <!ENTITY libgusb-buildsize     "2.1 MB (テストとドキュメント込み)">
-  <!ENTITY libgusb-time          "&LessThan1;0.1 SBU&LessThan2; (テストとドキュメント込み)">
+  <!ENTITY libgusb-buildsize     "5.0 MB (テストとドキュメント込み)">
+  <!ENTITY libgusb-time          "0.1 SBU (テストとドキュメント込み)">
 @z
 
 @x
