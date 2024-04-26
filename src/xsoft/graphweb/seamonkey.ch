@@ -80,23 +80,9 @@
 @z
 
 @x
-          Required patch:
+          Recommended patch (required for building with system ICU-75 or
 @y
-          Required patch:
-@z
-
-@x
-          Required Python module:
-@y
-          Required Python module:
-@z
-
-@x
-          This module has already been installed in LFS, but now we need
-          to rebuild its wheel package for the SeaMonkey build system.
-@y
-          This module has already been installed in LFS, but now we need
-          to rebuild its wheel package for the SeaMonkey build system.
+          Recommended patch (required for building with system ICU-75 or
 @z
 
 @x
@@ -237,10 +223,14 @@
 
 @x
       First, if you are building with system ICU, adapt the line break mapping
-      for ICU-74 and later:
+      for ICU-74 or later, and apply a patch to build this package with the
+      C++17 standard because the headers of ICU-75 or later require some
+      C++17 features:
 @y
       First, if you are building with system ICU, adapt the line break mapping
-      for ICU-74 and later:
+      for ICU-74 or later, and apply a patch to build this package with the
+      C++17 standard because the headers of ICU-75 or later require some
+      C++17 features:
 @z
 
 @x
