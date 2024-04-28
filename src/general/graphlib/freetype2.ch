@@ -107,8 +107,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="harfbuzz"/>
-      (first, install without it, after it is installed, reinstall
-      <xref linkend="freetype2"/>),
+      (circular: build freetype, then harfbuzz, then reinstall freetype),
       <xref linkend="libpng"/>, and
       <xref linkend="which"/>
     </para>
@@ -116,7 +115,7 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="harfbuzz"/>
-      (初めはこれをなしとしてインストールし、インストール後に本パッケージを再インストール),
+      (循環依存: freetype ビルド後に harfbuzz、そして再度 freetype をインストール),
       <xref linkend="libpng"/>,
       <xref linkend="which"/>
     </para>

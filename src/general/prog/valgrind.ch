@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY valgrind-buildsize     "390 MB (add 66 MB for tests)">
-  <!ENTITY valgrind-time          "0.5 SBU (add 6.8 SBU for tests; both using parallelism=4)">
+  <!ENTITY valgrind-buildsize     "392 MB (add 68 MB for tests)">
+  <!ENTITY valgrind-time          "0.5 SBU (add 7.2 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY valgrind-buildsize     "390 MB (テスト実施時はさらに 66 MB)">
-  <!ENTITY valgrind-time          "0.5 SBU (テスト実施時はさらに 6.8 SBU; いずれも parallelism=4 利用時)">
+  <!ENTITY valgrind-buildsize     "392 MB (テスト実施時はさらに 68 MB)">
+  <!ENTITY valgrind-time          "0.5 SBU (テスト実施時はさらに 7.2 SBU; いずれも parallelism=4 利用時)">
 @z
 
 @x

@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY pytest-buildsize     "42 MB (with tests)">
-  <!ENTITY pytest-time          "1.3 SBU (with tests)">
+  <!ENTITY pytest-time          "1.2 SBU (with tests)">
 @y
   <!ENTITY pytest-buildsize     "42 MB (with tests)">
-  <!ENTITY pytest-time          "1.3 SBU (with tests)">
+  <!ENTITY pytest-time          "1.2 SBU (with tests)">
 @z
 
 @x

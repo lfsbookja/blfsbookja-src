@@ -92,7 +92,6 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gi-docgen"/>,
-      &qt5-deps;,
       <xref linkend="qt6"/>,
       <ulink url="https://github.com/openSUSE/daps">DAPS</ulink>, and
       <ulink url="https://github.com/zvelo/libstemmer">libstemmer</ulink>
@@ -101,9 +100,8 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gi-docgen"/>,
-      &qt5-deps;,
       <xref linkend="qt6"/>,
-      <ulink url="https://github.com/openSUSE/daps">DAPS</ulink>,
+      <ulink url="https://github.com/openSUSE/daps">DAPS</ulink>, and
       <ulink url="https://github.com/zvelo/libstemmer">libstemmer</ulink>
     </para>
 @z

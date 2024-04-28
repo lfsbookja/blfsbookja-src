@@ -82,8 +82,7 @@
         <xref role="nodep" linkend="libreoffice"/> with system harfbuzz),
       <xref linkend="icu"/>, and
       <xref role="first" linkend="freetype2"/>
-      (after <xref role="nodep" linkend="harfbuzz"/> is installed, reinstall
-      <xref role="nodep" linkend="freetype2"/>)
+      (after harfbuzz is installed, reinstall freetype)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -93,10 +92,9 @@
       <xref role="first" linkend="graphite2"/> (required for building
         <xref role="nodep" linkend="texlive"/> or
         <xref role="nodep" linkend="libreoffice"/> with system harfbuzz),
-      <xref linkend="icu"/>,
+      <xref linkend="icu"/>, and
       <xref role="first" linkend="freetype2"/>
-      (after <xref role="nodep" linkend="harfbuzz"/> is installed, reinstall
-      <xref role="nodep" linkend="freetype2"/>)
+      (after harfbuzz is installed, reinstall freetype)
     </para>
 @z
 
