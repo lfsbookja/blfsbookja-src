@@ -99,22 +99,39 @@
 @z
 
 @x
-      Install <application>Gedit</application> by running the following
-      commands:
+      First, build the gfls library:
 @y
-      以下のコマンドを実行して <application>Gedit</application> をビルドします。
+      First, build the gfls library:
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>.
+      To test the results, run: <command>ninja test</command>.
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      &root; ユーザーになって以下を実行します。
+@z
+
+@x
+      Second, build the tepl library:
+@y
+      Second, build the tepl library:
+@z
+
+@x
+      To test the results, run: <command>ninja test</command>.
+@y
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+@z
+
+@x
+      Now, as the &root; user:
+@y
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x
@@ -156,10 +173,14 @@
           gedit
         </seg>
         <seg>
+          libgedit-gfls-1.so.
+          libgedit-tepl-6.so. and
           libgedit-46.so
         </seg>
         <seg>
-          /usr/include/gedit-46 and
+          /usr/include/libgedit-gfls-1,
+          /usr/include/libgedit-tepl-6,
+          /usr/include/gedit-46, and
           /usr/{lib,share,share/help/*}/gedit
         </seg>
 @y
@@ -167,9 +188,13 @@
           gedit
         </seg>
         <seg>
+          libgedit-gfls-1.so.
+          libgedit-tepl-6.so.
           libgedit-46.so
         </seg>
         <seg>
+          /usr/include/libgedit-gfls-1,
+          /usr/include/libgedit-tepl-6,
           /usr/include/gedit-46,
           /usr/{lib,share,share/help/*}/gedit
         </seg>

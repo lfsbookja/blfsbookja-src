@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY graphviz-time          "0.8 SBU (using parallelism=4)">
+  <!ENTITY graphviz-time          "0.6 SBU (using parallelism=4)">
 @y
-  <!ENTITY graphviz-time          "0.8 SBU (parallelism=4 利用)">
+  <!ENTITY graphviz-time          "0.6 SBU (parallelism=4 利用)">
 @z
 
 @x

@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gst10-plugins-bad-buildsize     "187 MB (with tests)">
+  <!ENTITY gst10-plugins-bad-buildsize     "188 MB (with tests)">
   <!ENTITY gst10-plugins-bad-time          "1.0 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-bad-buildsize     "187 MB（テスト込み）">
+  <!ENTITY gst10-plugins-bad-buildsize     "188 MB（テスト込み）">
   <!ENTITY gst10-plugins-bad-time          "1.0 SBU（parallelism=4 利用、テスト込み）">
 @z
 
@@ -128,16 +128,13 @@
 
 @x
       To test the results, issue: <command>ninja test</command>. Several tests
-      need a terminal emulator in a graphical session. Three tests,
-      <emphasis>elements_vacompositor</emphasis>,
-      <emphasis>elements_vapostproc</emphasis>, and
+      need a terminal emulator in a graphical session. Two tests,
+      <emphasis>elements_vapostproc</emphasis> and
       <emphasis>elements_dash_mpd</emphasis>, are known to fail.
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      いくつかのテストにおいては、グラフィカルセッションによるターミナルエミュレーターを必要とします。
-      Three tests,
-      <emphasis>elements_vacompositor</emphasis>,
-      <emphasis>elements_vapostproc</emphasis>, and
+      To test the results, issue: <command>ninja test</command>. Several tests
+      need a terminal emulator in a graphical session. Two tests,
+      <emphasis>elements_vapostproc</emphasis> and
       <emphasis>elements_dash_mpd</emphasis>, are known to fail.
 @z
 @x
