@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY ibus-buildsize     "54 MB (add 3 MB for tests)">
-  <!ENTITY ibus-time          "0.3 SBU (Using parallelism=4; add 0.6 SBU for tests)">
+  <!ENTITY ibus-buildsize     "55 MB (add 3 MB for tests)">
+  <!ENTITY ibus-time          "0.4 SBU (Using parallelism=4; add 0.8 SBU for tests)">
 @y
-  <!ENTITY ibus-buildsize     "54 MB (add 3 MB for tests)">
-  <!ENTITY ibus-time          "0.3 SBU (Using parallelism=4; add 0.6 SBU for tests)">
+  <!ENTITY ibus-buildsize     "55 MB (add 3 MB for tests)">
+  <!ENTITY ibus-time          "0.4 SBU (Using parallelism=4; add 0.8 SBU for tests)">
 @z
 
 @x

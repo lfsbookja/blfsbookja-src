@@ -136,7 +136,7 @@
       <xref linkend="libtiff"/>,
       <xref linkend="nss"/>,
       <xref linkend="openjpeg2"/>, and
-      &qt5-deps;
+      <xref linkend="qt6"/>
       (required for PDF support in <xref role="nodep" linkend="okular"/>)
     </para>
 @y
@@ -151,7 +151,7 @@
       <xref linkend="libtiff"/>,
       <xref linkend="nss"/>,
       <xref linkend="openjpeg2"/>,
-      &qt5-deps;
+      <xref linkend="qt6"/>
       (required for PDF support in <xref role="nodep" linkend="okular"/>)
     </para>
 @z
@@ -164,8 +164,7 @@
       <xref linkend="git"/> (for downloading test files),
       <xref linkend="gtk-doc"/>,
       <xref linkend="gtk3"/>, and
-      <xref linkend="qt6"/>
-      <!-- Nothing really uses this yet, but it will be used in KDE 6 -->
+      &qt5-deps;
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -174,9 +173,8 @@
       <xref linkend="gdk-pixbuf"/>,
       <xref linkend="git"/> (for downloading test files),
       <xref linkend="gtk-doc"/>,
-      <xref linkend="gtk3"/>,
-      <xref linkend="qt6"/>
-      <!-- Nothing really uses this yet, but it will be used in KDE 6 -->
+      <xref linkend="gtk3"/>, and
+      &qt5-deps;
     </para>
 @z
 
@@ -187,7 +185,7 @@
 @z
 
 @x
-      Install <application>Poppler</application> by running the following
+      Now, install <application>Poppler</application> by running the following
       commands:
 @y
       以下のコマンドを実行して <application>Poppler</application> をビルドします。
