@@ -85,7 +85,6 @@
       <xref linkend="nodejs"/>,
       <xref linkend="pulseaudio"/> (or <xref linkend="alsa-lib"/> if you edit
       the mozconfig; although it is now deprecated by mozilla),
-      <xref linkend="python311"/> (rebuilt with the sqlite module),
       <xref linkend="startup-notification"/>, and
       <xref linkend="unzip"/>
       <!--<xref linkend="yasm"/>-->
@@ -100,8 +99,7 @@
       <xref linkend="nodejs"/>,
       <xref linkend="pulseaudio"/> (or <xref linkend="alsa-lib"/> if you edit
       the mozconfig; although it is now deprecated by mozilla),
-      <xref linkend="python311"/> (rebuilt with the sqlite module),
-      <xref linkend="startup-notification"/>,
+      <xref linkend="startup-notification"/>, and
       <xref linkend="unzip"/>
       <!--<xref linkend="yasm"/>-->
     </para>

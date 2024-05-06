@@ -104,12 +104,18 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-       <xref linkend="doxygen"/>
+      <xref linkend="doxygen"/> (for generating the documentation) and
+      <command>Xvfb</command> (from
+      <xref linkend='xorg-server'/> or
+      <xref role='nodep' linkend='xwayland'/>)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-       <xref linkend="doxygen"/>
+      <xref linkend="doxygen"/> (for generating the documentation) and
+      <command>Xvfb</command> (from
+      <xref linkend='xorg-server'/> or
+      <xref role='nodep' linkend='xwayland'/>)
     </para>
 @z
 
@@ -127,9 +133,13 @@
 @z
 
 @x
-      To test the results, issue: <command>ninja test</command>.
+      To test the results, ensure <command>Xvfb</command> and
+      <xref linkend='xkeyboard-config'/> are available, then issue:
+      <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
+      ビルド結果をテストする場合は <command>Xvfb</command> と <xref
+      linkend='xkeyboard-config'/> が利用可能であることを確認します。
+      そして <command>ninja test</command> を実行します。
 @z
 
 @x

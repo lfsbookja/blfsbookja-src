@@ -95,7 +95,7 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       &gobject-introspection;,
-      <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
+      <xref linkend="hwdata"/> (for <filename>usb.ids</filename> data file,
       which is also required for the tests), and
       <xref linkend="vala"/>
     </para>
@@ -103,8 +103,8 @@
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       &gobject-introspection;,
-      <xref linkend="usbutils"/> (for <filename>usb.ids</filename> data file,
-      which is also required for the tests),
+      <xref linkend="hwdata"/> (for <filename>usb.ids</filename> data file,
+      which is also required for the tests), and
       <xref linkend="vala"/>
     </para>
 @z

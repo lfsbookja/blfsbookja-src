@@ -98,15 +98,15 @@
 @z
 
 @x
-      This package does not come with a test suite.
-@y
-      &notTestSuite;
-@z
-
-@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+@z
+
+@x
+      To test the installation, issue: <command>pytest</command>.
+@y
+      ビルド結果をテストする場合は <command>pytest</command> を実行します。
 @z
 
 @x

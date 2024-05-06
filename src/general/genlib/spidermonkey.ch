@@ -77,16 +77,16 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="icu"/>,
-      <xref linkend="rust"/>,
-      <xref linkend="six"/>, and
+      <xref linkend="rust"/>, and
+      <!--<xref linkend="six"/>, and-->
       <xref linkend="which"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="icu"/>,
-      <xref linkend="rust"/>,
-      <xref linkend="six"/>,
+      <xref linkend="rust"/>, and
+      <!--<xref linkend="six"/>, and-->
       <xref linkend="which"/>
     </para>
 @z
@@ -320,14 +320,6 @@
 @y
       <parameter>--enable-readline</parameter>: This switch enables Readline
       support in the SpiderMonkey command line interface.
-@z
-
-@x
-      <parameter>--enable-rust-simd</parameter>: This switch enables SIMD
-      optimization in the shipped encoding_rs crate.
-@y
-      <parameter>--enable-rust-simd</parameter>: This switch enables SIMD
-      optimization in the shipped encoding_rs crate.
 @z
 
 @x

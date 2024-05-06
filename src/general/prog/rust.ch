@@ -385,23 +385,15 @@
 @z
 
 @x
-      Two tests, <filename>tests/ui/issues/issue-21763.rs</filename> and
+      Three tests, <filename>tests/ui/error-emitter/highlighting.rs</filename>,
+      <filename>tests/ui/issues/issue-21763.rs</filename>, and
       <filename>tests/debuginfo/regression-bad-location-list-67992.rs</filename>,
       are known to fail.
 @y
-      Two tests, <filename>tests/ui/issues/issue-21763.rs</filename> and
+      Three tests, <filename>tests/ui/error-emitter/highlighting.rs</filename>,
+      <filename>tests/ui/issues/issue-21763.rs</filename>, and
       <filename>tests/debuginfo/regression-bad-location-list-67992.rs</filename>,
       are known to fail.
-@z
-
-@x
-      If <command>FileCheck</command> from <application>LLVM</application> has
-      not been installed, all 47 tests from the <quote>assembly</quote> suite
-      will fail.
-@y
-      If <command>FileCheck</command> from <application>LLVM</application> has
-      not been installed, all 47 tests from the <quote>assembly</quote> suite
-      will fail.
 @z
 
 @x

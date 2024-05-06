@@ -12,95 +12,61 @@
 @z
 
 @x
-    <sect3 role="package">
       <title>Introduction to Setuptools_scm Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Setuptools_scm Module</title>
 @z
 
 @x
-      <para>
         The <application>Setuptools_scm</application> package is used to
         extract Python package versions from git or hg metadata instead
         of declaring them.
-      </para>
 @y
-      <para>
         The <application>Setuptools_scm</application> package is used to
         extract Python package versions from git or hg metadata instead
         of declaring them.
-      </para>
 @z
 
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
-            Download (HTTP): <ulink url="&setuptools_scm-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download (FTP): <ulink url="&setuptools_scm-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &setuptools_scm-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download size: &setuptools_scm-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated disk space required: &setuptools_scm-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated build time: &setuptools_scm-time;
-          </para>
-        </listitem>
-      </itemizedlist>
 @y
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
+@z
+
+@x
             Download (HTTP): <ulink url="&setuptools_scm-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (HTTP): <ulink url="&setuptools_scm-download-http;"/>
+@z
+
+@x
             Download (FTP): <ulink url="&setuptools_scm-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (FTP): <ulink url="&setuptools_scm-download-ftp;"/>
+@z
+
+@x
             Download MD5 sum: &setuptools_scm-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download MD5 sum: &setuptools_scm-md5sum;
+@z
+
+@x
             Download size: &setuptools_scm-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download size: &setuptools_scm-size;
+@z
+
+@x
             Estimated disk space required: &setuptools_scm-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Estimated disk space required: &setuptools_scm-buildsize;
+@z
+
+@x
             Estimated build time: &setuptools_scm-time;
-          </para>
-        </listitem>
-      </itemizedlist>
+@y
+            Estimated build time: &setuptools_scm-time;
 @z
 
 @x
@@ -127,29 +93,25 @@
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
         <xref linkend="git"/>,
-        <xref linkend="mercurial"/>, and
-        <xref linkend="pytest"/>
+        <xref linkend="mercurial"/>,
+        <xref linkend="pytest"/>,
+        <xref linkend="sudo"/>, and
+        <ulink url="https://pypi.org/project/build/">build</ulink>
       </para>
 @y
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
         <xref linkend="git"/>,
-        <xref linkend="mercurial"/>, and
-        <xref linkend="pytest"/>
+        <xref linkend="mercurial"/>,
+        <xref linkend="pytest"/>,
+        <xref linkend="sudo"/>, and
+        <ulink url="https://pypi.org/project/build/">build</ulink>
       </para>
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of Setuptools_scm</title>
 @y
-    <sect3 role="installation">
       <title>Installation of Setuptools_scm</title>
 @z
 
@@ -160,105 +122,61 @@
 @z
 
 @x
-&build-wheel; 
-@y
-&build-wheel; 
-@z
-
-@x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>&install-wheel; setuptools_scm</userinput></screen>
+      To test the installation, make sure <xref linkend='pytest'/> is
+      installed and run:
 @y
-<screen role="root"><userinput>&install-wheel; setuptools_scm</userinput></screen>
+      To test the installation, make sure <xref linkend='pytest'/> is
+      installed and run:
 @z
 
 @x
-    <para>
-      The installation can be tested with <command>pytest</command>. A few
-      tests may fail if your <application>git</application> configuration
-      is not the one expected by the test suite.
-    </para>
+      If <xref linkend='git'/> and/or <xref linkend='mercurial'/> are not
+      installed, the tests depending on the missing one(s) will be skipped.
+      Some tests may invoke <xref linkend='sudo'/> and request a password.
+      Some tests may fail if your <application>git</application>
+      configuration is not the one expected by the test suite.
 @y
-    <para>
-      The installation can be tested with <command>pytest</command>. A few
-      tests may fail if your <application>git</application> configuration
-      is not the one expected by the test suite.
-    </para>
+      If <xref linkend='git'/> and/or <xref linkend='mercurial'/> are not
+      installed, the tests depending on the missing one(s) will be skipped.
+      Some tests may invoke <xref linkend='sudo'/> and request a password.
+      Some tests may fail if your <application>git</application>
+      configuration is not the one expected by the test suite.
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@z
-
-@x
-    <sect3 role="content">
       <title>Contents</title>
 @y
-    <sect3 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>None</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/setuptools_scm and
             /usr/lib/python&python3-majorver;/site-packages/setuptools_scm-&setuptools_scm-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
           <seg>None</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/setuptools_scm and
             /usr/lib/python&python3-majorver;/site-packages/setuptools_scm-&setuptools_scm-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z

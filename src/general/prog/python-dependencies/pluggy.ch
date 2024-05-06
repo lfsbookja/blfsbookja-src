@@ -96,14 +96,12 @@
 @x
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
-        <xref linkend="pytest"/> and
-        <ulink url="https://pypi.org/project/pytest-benchmark/">pytest-benchmark</ulink>
+        <xref linkend="pytest"/>
       </para>
 @y
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
-        <xref linkend="pytest"/> and
-        <ulink url="https://pypi.org/project/pytest-benchmark/">pytest-benchmark</ulink>
+        <xref linkend="pytest"/>
       </para>
 @z
 
@@ -126,13 +124,9 @@
 @z
 
 @x
-      Assuming <xref linkend="pytest"/> is installed, but the other optional
-      dependencies are not, the installation can be tested with the following
-      commands:
+      To test the installation, issue: <command>pytest</command>.
 @y
-      Assuming <xref linkend="pytest"/> is installed, but the other optional
-      dependencies are not, the installation can be tested with the following
-      commands:
+      To test the installation, issue: <command>pytest</command>.
 @z
 
 @x

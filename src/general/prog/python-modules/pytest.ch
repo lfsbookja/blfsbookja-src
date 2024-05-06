@@ -79,17 +79,15 @@
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
         <xref linkend="iniconfig"/>,
-        <xref linkend="packaging"/>,
-        <xref linkend="pluggy"/>, and
-        <xref linkend="py"/>
+        <xref linkend="packaging"/>, and
+        <xref linkend="pluggy"/>
       </para>
 @y
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
         <xref linkend="iniconfig"/>,
-        <xref linkend="packaging"/>,
-        <xref linkend="pluggy"/>, and
-        <xref linkend="py"/>
+        <xref linkend="packaging"/>, and
+        <xref linkend="pluggy"/>
       </para>
 @z
 
@@ -108,27 +106,23 @@
 @x
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
+        <xref linkend="attrs"/>,
         <xref linkend="pygments"/>,
         <xref linkend="requests"/>,
         <ulink url="https://pypi.org/project/argcomplete/">argcomplete</ulink>,
-        <ulink url="https://pypi.org/project/elementpath/">elementpath</ulink>,
         <ulink url="https://pypi.org/project/hypothesis/">hypothesis</ulink>,
         <ulink url="https://pypi.org/project/mock/">mock</ulink>,
-        <ulink url="https://pypi.org/project/nose/">nose</ulink>,
-        <ulink url="https://pypi.org/project/sortedcontainers/">sortedcontainers</ulink>, and
         <ulink url="https://pypi.org/project/xmlschema/">xmlschema</ulink>
       </para>
 @y
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
+        <xref linkend="attrs"/>,
         <xref linkend="pygments"/>,
         <xref linkend="requests"/>,
         <ulink url="https://pypi.org/project/argcomplete/">argcomplete</ulink>,
-        <ulink url="https://pypi.org/project/elementpath/">elementpath</ulink>,
         <ulink url="https://pypi.org/project/hypothesis/">hypothesis</ulink>,
         <ulink url="https://pypi.org/project/mock/">mock</ulink>,
-        <ulink url="https://pypi.org/project/nose/">nose</ulink>,
-        <ulink url="https://pypi.org/project/sortedcontainers/">sortedcontainers</ulink>, and
         <ulink url="https://pypi.org/project/xmlschema/">xmlschema</ulink>
       </para>
 @z

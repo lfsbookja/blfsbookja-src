@@ -21,7 +21,6 @@ CHANGE_FILES = \
 	msgpack.ch                       \
 	pathspec.ch                      \
 	pluggy.ch                        \
-	py.ch                            \
 	pyproject-metadata.ch            \
 	pytz.ch                          \
 	setuptools_scm.ch                \
@@ -34,6 +33,7 @@ CHANGE_FILES = \
 	sphinxcontrib-jsmath.ch          \
 	sphinxcontrib-qthelp.ch          \
 	sphinxcontrib-serializinghtml.ch \
+	trove-classifiers.ch             \
 	typing_extensions.ch             \
 	typogrify.ch                     \
 	urllib3.ch                       \

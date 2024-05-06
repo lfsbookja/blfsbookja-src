@@ -10,108 +10,66 @@
 @z
 
 @x
-    <sect3 role="package">
       <title>Introduction to Typing_extensions Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Typing_extensions Module</title>
 @z
 
 @x
-      <para>
         The <application>Typing_extensions</application> module allows
         using new type system features not yet defined on the Python
         version in use on the system.
-      </para>
 @y
-      <para>
         The <application>Typing_extensions</application> module allows
         using new type system features not yet defined on the Python
         version in use on the system.
-      </para>
 @z
 
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
-            Download (HTTP): <ulink url="&typing_extensions-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download (FTP): <ulink url="&typing_extensions-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &typing_extensions-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download size: &typing_extensions-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated disk space required: &typing_extensions-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated build time: &typing_extensions-time;
-          </para>
-        </listitem>
-      </itemizedlist>
 @y
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
+@z
+
+@x
             Download (HTTP): <ulink url="&typing_extensions-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download (FTP): <ulink url="&typing_extensions-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &typing_extensions-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download size: &typing_extensions-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated disk space required: &typing_extensions-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated build time: &typing_extensions-time;
-          </para>
-        </listitem>
-      </itemizedlist>
-@z
-
-@x
-    </sect3>
 @y
-    </sect3>
+            Download (HTTP): <ulink url="&typing_extensions-download-http;"/>
 @z
 
 @x
-    <sect3 role="installation">
+            Download (FTP): <ulink url="&typing_extensions-download-ftp;"/>
+@y
+            Download (FTP): <ulink url="&typing_extensions-download-ftp;"/>
+@z
+
+@x
+            Download MD5 sum: &typing_extensions-md5sum;
+@y
+            Download MD5 sum: &typing_extensions-md5sum;
+@z
+
+@x
+            Download size: &typing_extensions-size;
+@y
+            Download size: &typing_extensions-size;
+@z
+
+@x
+            Estimated disk space required: &typing_extensions-buildsize;
+@y
+            Estimated disk space required: &typing_extensions-buildsize;
+@z
+
+@x
+            Estimated build time: &typing_extensions-time;
+@y
+            Estimated build time: &typing_extensions-time;
+@z
+
+@x
       <title>Installation of Typing_extensions</title>
 @y
-    <sect3 role="installation">
       <title>Installation of Typing_extensions</title>
 @z
 
@@ -122,99 +80,43 @@
 @z
 
 @x
-&build-wheel;
-@y
-&build-wheel;
-@z
-
-@x
-    <para>
-      This package does not come with a test suite.
-    </para>
-@y
-    <para>
-      This package does not come with a test suite.
-    </para>
-@z
-
-@x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>&install-wheel; typing_extensions</userinput></screen>
+      To test the installation, issue: <command>pytest</command>.
 @y
-<screen role="root"><userinput>&install-wheel; typing_extensions</userinput></screen>
+      To test the installation, issue: <command>pytest</command>.
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@z
-
-@x
-    <sect3 role="content">
       <title>Contents</title>
 @y
-    <sect3 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>None</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/typing_extensions-&typing_extensions-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
           <seg>None</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/typing_extensions-&typing_extensions-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
