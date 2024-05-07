@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sphinx-buildsize     "45 MB (add 35 MB for tests)">
-  <!ENTITY sphinx-time          "less than 0.1 SBU (1.3 SBU for tests)">
+  <!ENTITY sphinx-buildsize     "52 MB (with tests)">
+  <!ENTITY sphinx-time          "less than 0.1 SBU (add 1.3 SBU for tests)">
 @y
-  <!ENTITY sphinx-buildsize     "45 MB (add 35 MB for tests)">
-  <!ENTITY sphinx-time          "less than 0.1 SBU (1.3 SBU for tests)">
+  <!ENTITY sphinx-buildsize     "52 MB (with tests)">
+  <!ENTITY sphinx-time          "less than 0.1 SBU (add 1.3 SBU for tests)">
 @z
 
 @x
@@ -119,7 +119,8 @@
         <xref linkend="cython"/>,
         <xref linkend="html5lib"/>,
         <xref linkend="pytest"/>,
-        <xref linkend="texlive"/>, and
+        <xref linkend="texlive"/>, 
+        <ulink url="https://pypi.org/project/defusedxml/">defusedxml</ulink>, and
         <ulink url="https://pypi.org/project/filelock/">filelock</ulink>
       </para>
 @y
@@ -128,7 +129,8 @@
         <xref linkend="cython"/>,
         <xref linkend="html5lib"/>,
         <xref linkend="pytest"/>,
-        <xref linkend="texlive"/>, and
+        <xref linkend="texlive"/>, 
+        <ulink url="https://pypi.org/project/defusedxml/">defusedxml</ulink>,
         <ulink url="https://pypi.org/project/filelock/">filelock</ulink>
       </para>
 @z
@@ -137,12 +139,6 @@
       <title>Installation of Sphinx</title>
 @y
       <title>Installation of Sphinx</title>
-@z
-
-@x
-    <para>First fix a problem with docutils-0.21.1:</para>
-@y
-    <para>First fix a problem with docutils-0.21.1:</para>
 @z
 
 @x

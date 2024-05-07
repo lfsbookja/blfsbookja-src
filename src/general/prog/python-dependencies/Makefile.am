@@ -13,6 +13,7 @@ CHANGE_FILES = \
 	editables.ch                     \
 	hatch-vcs.ch                     \
 	hatchling.ch                     \
+	hatch-fancy-pypi-readme.ch       \
 	idna.ch                          \
 	imagesize.ch                     \
 	iniconfig.ch                     \

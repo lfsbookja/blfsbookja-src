@@ -265,7 +265,6 @@ CHANGE_FILES = \
 	pytest.ch           \
 	python-dbusmock.ch  \
 	pyxdg.ch            \
-	pyyaml.ch           \
 	recommonmark.ch     \
 	requests.ch         \
 	scour.ch            \

@@ -4,103 +4,69 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sc-applehelp-buildsize     "2.0 MB (with tests)">
-  <!ENTITY sc-applehelp-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY sc-applehelp-buildsize     "1.0 MB (with tests)">
+  <!ENTITY sc-applehelp-time          "less than 0.1 SBU">
 @y
-  <!ENTITY sc-applehelp-buildsize     "2.0 MB (with tests)">
-  <!ENTITY sc-applehelp-time          "less than 0.1 SBU (with tests)">
+  <!ENTITY sc-applehelp-buildsize     "1.0 MB (with tests)">
+  <!ENTITY sc-applehelp-time          "less than 0.1 SBU">
 @z
 
 @x
-    <sect3 role="package">
       <title>Introduction to Sphinxcontrib-applehelp Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Sphinxcontrib-applehelp Module</title>
 @z
 
 @x
-      <para>
         The <application>Sphinxcontrib-applehelp</application> package is a
         <application>Sphinx</application> extension which outputs Apple
         help books.
-      </para>
 @y
-      <para>
         The <application>Sphinxcontrib-applehelp</application> package is a
         <application>Sphinx</application> extension which outputs Apple
         help books.
-      </para>
 @z
 
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
-            Download (HTTP): <ulink url="&sc-applehelp-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download (FTP): <ulink url="&sc-applehelp-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &sc-applehelp-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download size: &sc-applehelp-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated disk space required: &sc-applehelp-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated build time: &sc-applehelp-time;
-          </para>
-        </listitem>
-      </itemizedlist>
 @y
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
+@z
+
+@x
             Download (HTTP): <ulink url="&sc-applehelp-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (HTTP): <ulink url="&sc-applehelp-download-http;"/>
+@z
+
+@x
             Download (FTP): <ulink url="&sc-applehelp-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (FTP): <ulink url="&sc-applehelp-download-ftp;"/>
+@z
+
+@x
             Download MD5 sum: &sc-applehelp-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download MD5 sum: &sc-applehelp-md5sum;
+@z
+
+@x
             Download size: &sc-applehelp-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download size: &sc-applehelp-size;
+@z
+
+@x
             Estimated disk space required: &sc-applehelp-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Estimated disk space required: &sc-applehelp-buildsize;
+@z
+
+@x
             Estimated build time: &sc-applehelp-time;
-          </para>
-        </listitem>
-      </itemizedlist>
+@y
+            Estimated build time: &sc-applehelp-time;
 @z
 
 @x
@@ -124,16 +90,8 @@
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of Sphinxcontrib-applehelp</title>
 @y
-    <sect3 role="installation">
       <title>Installation of Sphinxcontrib-applehelp</title>
 @z
 
@@ -144,103 +102,47 @@
 @z
 
 @x
-&build-wheel;
-@y
-&build-wheel;
-@z
-
-@x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>&install-wheel; sphinxcontrib-applehelp</userinput></screen>
-@y
-<screen role="root"><userinput>&install-wheel; sphinxcontrib-applehelp</userinput></screen>
-@z
-
-@x
-      <para>
         To test the installation, run <command>pytest</command>. Several
         warnings may be issued, due to the use of deprecated functions.
-      </para>
 @y
-      <para>
         To test the installation, run <command>pytest</command>. Several
         warnings may be issued, due to the use of deprecated functions.
-      </para>
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@z
-
-@x
-    <sect3 role="content">
       <title>Contents</title>
 @y
-    <sect3 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>None</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib and
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib_applehelp-&sc-applehelp-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
           <seg>None</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib and
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib_applehelp-&sc-applehelp-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z
