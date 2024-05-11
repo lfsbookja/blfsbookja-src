@@ -114,12 +114,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="lvm2"/>
+      <xref linkend="lvm2"/> and
+      <xref linkend="fuse3"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="lvm2"/>
+      <xref linkend="lvm2"/>,
+      <xref linkend="fuse3"/>
     </para>
 @z
 
@@ -170,9 +172,11 @@
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, if you've skip the LFS GRUB package, as the
+      <systemitem class="username">root</systemitem> user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      LFS GRUB パッケージをスキップしてきている場合は、<systemitem
+      class="username">root</systemitem> ユーザーになって以下を実行します。
 @z
 
 @x
@@ -236,9 +240,53 @@
 @z
 
 @x
-    <para>See the page for GRUB in LFS book.</para>
+      A list of the installed files, along with their short
+      descriptions can be found at
+      <ulink url="&lfs-root;/chapter08/grub.html#contents-gRUB"/>.
 @y
-    <para>
-    LFS ブックにおける GRUB のページを参照してください。
-    </para>
+      A list of the installed files, along with their short
+      descriptions can be found at
+      <ulink url="&lfs-root;/chapter08/grub.html#contents-gRUB"/>.
+@z
+
+@x
+      Listed below are the newly installed programs
+      along with short descriptions.
+@y
+      Listed below are the newly installed programs
+      along with short descriptions.
+@z
+
+@x
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Directories</segtitle>
+@y
+      <segtitle>Installed Programs</segtitle>
+      <segtitle>Installed Directories</segtitle>
+@z
+
+@x
+        <seg>grub-mkfont and grub-mount (optional)</seg>
+        <seg>/usr/lib/grub/x86_64-efi</seg>
+@y
+        <seg>grub-mkfont and grub-mount (optional)</seg>
+        <seg>/usr/lib/grub/x86_64-efi</seg>
+@z
+
+@x
+      <bridgehead renderas="sect3">Short Descriptions</bridgehead>
+@y
+      <bridgehead renderas="sect3">&ShortDescriptions;</bridgehead>
+@z
+
+@x grub-mkfont
+            converts common font file formats into PF2
+@y
+            converts common font file formats into PF2
+@z
+
+@x grub-mount
+            is a debug tool for filesystem driver
+@y
+            is a debug tool for filesystem driver
 @z
