@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lxqt-panel-time          "0.6 SBU (Using parallelism=4)">
+  <!ENTITY lxqt-panel-time          "0.5 SBU (Using parallelism=4)">
 @y
-  <!ENTITY lxqt-panel-time          "0.6 SBU (Using parallelism=4)">
+  <!ENTITY lxqt-panel-time          "0.5 SBU (Using parallelism=4)">
 @z
 
 @x
@@ -25,72 +25,44 @@
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&lxqt-panel-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&lxqt-panel-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &lxqt-panel-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &lxqt-panel-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &lxqt-panel-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &lxqt-panel-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&lxqt-panel-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&lxqt-panel-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&lxqt-panel-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&lxqt-panel-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &lxqt-panel-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &lxqt-panel-md5sum;
+@z
+
+@x
           Download size: &lxqt-panel-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &lxqt-panel-size;
+@z
+
+@x
           Estimated disk space required: &lxqt-panel-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &lxqt-panel-buildsize;
+@z
+
+@x
           Estimated build time: &lxqt-panel-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &lxqt-panel-time;
 @z
 
 @x

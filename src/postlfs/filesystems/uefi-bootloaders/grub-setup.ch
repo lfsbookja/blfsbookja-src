@@ -105,15 +105,15 @@
 
 @x
       Now the USB flash drive can be used as an emergency boot disk on any x86-64
-      UEFI platform.  It will boot the system and show the GRUB shell.  Then you
+      UEFI platform.  To learn how to select this flash drive as the boot
+      device, read the manual of your motherboard or laptop.
+      It will boot the system and show the GRUB shell.  Then you
       can type commands to boot your operating system from the hard drive.
-      To learn how to select the boot device, read the manual of your
-      motherboard or laptop.
 @y
       Now the USB flash drive can be used as an emergency boot disk on any x86-64
-      UEFI platform.  It will boot the system and show the GRUB shell.  Then you
+      UEFI platform.  To learn how to select this flash drive as the boot
+      device, read the manual of your motherboard or laptop.
+      It will boot the system and show the GRUB shell.  Then you
       can type commands to boot your operating system from the hard drive.
-      To learn how to select the boot device, read the manual of your
-      motherboard or laptop.
 @z
 
