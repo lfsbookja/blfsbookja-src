@@ -26,9 +26,9 @@
 
 @x
     For a full list of available packages, have a look on the KDE5 servers at
-    <ulink url="&kf5apps-download-http;">&kf5apps-download-http;</ulink>.
+    <ulink url="&kf6apps-download-http;">&kf6apps-download-http;</ulink>.
 @y
-    利用可能な全パッケージの詳細については KDE5 サーバー <ulink url="&kf5apps-download-http;">&kf5apps-download-http;</ulink> を参照してください。
+    利用可能な全パッケージの詳細については KDE5 サーバー <ulink url="&kf6apps-download-http;">&kf6apps-download-http;</ulink> を参照してください。
 @z
 
 @x

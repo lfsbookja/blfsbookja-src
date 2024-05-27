@@ -1,7 +1,7 @@
 ##
 ## This is part of BLFSbookja package.
 ##
-SUBDIRS=kf5 kf5-apps plasma5
+SUBDIRS=kf6 kf5-apps plasma5
 
 CHANGE_FILES = \
 	extra-cmake-modules.ch      \

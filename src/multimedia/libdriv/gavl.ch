@@ -104,7 +104,13 @@
 @z
 
 @x
-      Install <application>Gavl</application> by running the
+      First, fix an issue with gcc-14 and later:
+@y
+      First, fix an issue with gcc-14 and later:
+@z
+
+@x
+      Now, install <application>Gavl</application> by running the
       following commands:
 @y
       以下のコマンドを実行して <application>Gavl</application> をビルドします。

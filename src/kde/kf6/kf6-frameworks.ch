@@ -210,19 +210,28 @@
 @x
     In the above list, notice that some files have been commented out with
     a hash (#) character. 
-    
-    The extra-cmake-modules entry has been commented out
-    because it was built earlier in the <xref linkend="kde-prereq"/>. 
-    
-    The icon package is covered separately at <xref linkend="breeze-icons"/>.
 @y
     In the above list, notice that some files have been commented out with
     a hash (#) character. 
-    
-    The extra-cmake-modules entry has been commented out
-    because it was built earlier in the <xref linkend="kde-prereq"/>. 
-    
-    The icon package is covered separately at <xref linkend="breeze-icons"/>.
+@z
+@x
+          The extra-cmake-modules entry has been commented out
+          because it was built earlier in the <xref linkend="kde-prereq"/>.
+@y
+          The extra-cmake-modules entry has been commented out
+          because it was built earlier in the <xref linkend="kde-prereq"/>.
+@z
+@x
+          The icon package is covered separately at <xref linkend="breeze-icons"/>.
+@y
+          The icon package is covered separately at <xref linkend="breeze-icons"/>.
+@z
+@x
+          There are three packages that were downloaded but superseded by later
+          versions: kwidgetsaddons-6.2.0, kwidgetsaddons-6.2.1, and kirigami-6.2.0.
+@y
+          There are three packages that were downloaded but superseded by later
+          versions: kwidgetsaddons-6.2.0, kwidgetsaddons-6.2.1, and kirigami-6.2.0.
 @z
 
 @x

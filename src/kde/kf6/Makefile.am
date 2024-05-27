@@ -3,7 +3,7 @@
 ##
 
 CHANGE_FILES = \
-	kf5.ch            \
+	kf6.ch            \
 	kf6-frameworks.ch \
 	kf6-intro.ch
 

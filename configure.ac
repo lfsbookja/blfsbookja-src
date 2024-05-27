@@ -76,7 +76,7 @@ AC_CONFIG_FILES([Makefile
 		 src/introduction/important/Makefile
 		 src/introduction/welcome/Makefile
 		 src/kde/Makefile
-		 src/kde/kf5/Makefile
+		 src/kde/kf6/Makefile
 		 src/kde/kf5-apps/Makefile
 		 src/kde/plasma5/Makefile
 		 src/kernel-config/Makefile

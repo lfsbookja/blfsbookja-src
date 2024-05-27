@@ -72,7 +72,7 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="gtkmm3"/>,
+      <xref linkend="gtkmm4"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="libcanberra"/>,
       <xref linkend="libsigc"/>, and
@@ -81,10 +81,10 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtkmm3"/>,
+      <xref linkend="gtkmm4"/>,
       <xref linkend="json-glib"/>,
       <xref linkend="libcanberra"/>,
-      <xref linkend="libsigc"/>,
+      <xref linkend="libsigc"/>, and
       <xref linkend="pulseaudio"/>
     </para>
 @z

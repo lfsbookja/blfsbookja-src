@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gcc-buildsize      "13 GB (2.9 GB installed with all listed languages; add 1.5 GB for tests)">
-  <!ENTITY gcc-time           "13 SBU (add 29 SBU for tests; both with parallelism=8)">
+  <!ENTITY gcc-buildsize      "11 GB (3.4 GB installed with all listed languages; add 1.5 GB for tests)">
+  <!ENTITY gcc-time           "12 SBU (add 32 SBU for tests; both with parallelism=8)">
 @y
-  <!ENTITY gcc-buildsize      "13 GB (2.9 GB installed with all listed languages; add 1.5 GB for tests)">
-  <!ENTITY gcc-time           "13 SBU (add 29 SBU for tests; both with parallelism=8)">
+  <!ENTITY gcc-buildsize      "11 GB (3.4 GB installed with all listed languages; add 1.5 GB for tests)">
+  <!ENTITY gcc-time           "12 SBU (add 32 SBU for tests; both with parallelism=8)">
 @z
 
 @x
@@ -196,25 +196,31 @@
 @z
 
 @x
+    <para>If running tests, as in LFS, remove/fix several known test failures:</para>
+@y
+    <para>If running tests, as in LFS, remove/fix several known test failures:</para>
+@z
+
+@x
       If you have installed additional packages such as
       <application>valgrind</application> and <application>gdb</application>,
       the <application>gcc</application> part of the test suite will run more
       tests than in LFS. Some of those will report FAIL and others XPASS
-      (pass when expected to FAIL). As of gcc-13.2.0, about 65 FAIL occur
+      (pass when expected to FAIL). As of gcc-14.1.0, about 74 FAILs occur
       in the <quote>guality</quote> suite, as well as miscellaneous failures
       throughout the rest of the test suite.
-      If all the compilers above are built, there will be a little over 80
-      unexpected failures out of over 546,000 tests. To run the tests, issue:
+      If all the compilers above are built, there will be a little over 110
+      unexpected failures out of over 617,000 tests. To run the tests, issue:
 @y
       If you have installed additional packages such as
       <application>valgrind</application> and <application>gdb</application>,
       the <application>gcc</application> part of the test suite will run more
       tests than in LFS. Some of those will report FAIL and others XPASS
-      (pass when expected to FAIL). As of gcc-13.2.0, about 65 FAIL occur
+      (pass when expected to FAIL). As of gcc-14.1.0, about 74 FAILs occur
       in the <quote>guality</quote> suite, as well as miscellaneous failures
       throughout the rest of the test suite.
-      If all the compilers above are built, there will be a little over 80
-      unexpected failures out of over 546,000 tests. To run the tests, issue:
+      If all the compilers above are built, there will be a little over 110
+      unexpected failures out of over 617,000 tests. To run the tests, issue:
 @z
 
 @x

@@ -117,7 +117,7 @@
       <xref linkend="libxml2"/> (required for the tests),
       <xref linkend="llvm"/> (with clang),
       <!-- Can someone check this? With LLVM7, it fails to build. -->
-      &qt5-deps; (for doxywizard),
+      &qt5-deps; (deprecated),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="xapian"/> (for doxyindexer), and
       <ulink url="https://javacc.github.io/javacc/">javacc</ulink>
@@ -130,7 +130,7 @@
       <xref linkend="libxml2"/> (required for the tests),
       <xref linkend="llvm"/> (with clang),
       <!-- Can someone check this? With LLVM7, it fails to build. -->
-      &qt5-deps; (for doxywizard),
+      &qt5-deps; (deprecated),
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="xapian"/> (for doxyindexer), and
       <ulink url="https://javacc.github.io/javacc/">javacc</ulink>
@@ -181,33 +181,39 @@
 @z
 
 @x
-      <option>-Dbuild_wizard=ON</option>: Use this switch if
-      <application>Qt5</application> is installed and you wish to build the GUI
-      front-end.
+      <option>-D build_wizard=OFF</option>: Use this switch if
+      <application>Qt6</application> is not installed.
 @y
-      <option>-Dbuild_wizard=ON</option>: Use this switch if
-      <application>Qt5</application> is installed and you wish to build the GUI
-      front-end.
+      <option>-D build_wizard=OFF</option>: Use this switch if
+      <application>Qt6</application> is not installed.
 @z
 
 @x
-      <option>-Dbuild_search=ON</option>: Use this switch if
+      <option>-D build_search=ON</option>: Use this switch if
       <application>xapian</application> is installed and you wish to build
       external search tools (<command>doxysearch.cgi</command> and
       <command>doxyindexer)</command>.
 @y
-      <option>-Dbuild_search=ON</option>: Use this switch if
+      <option>-D build_search=ON</option>: Use this switch if
       <application>xapian</application> is installed and you wish to build
       external search tools (<command>doxysearch.cgi</command> and
       <command>doxyindexer)</command>.
 @z
 
 @x
-      <option>-Duse_libclang=ON</option>: Use this switch if
+      <option>-D force_qt6=ON</option>: Use this switch to build
+      <command>doxywizard</command> with Qt6 even if Qt5 is installed.
+@y
+      <option>-D force_qt6=ON</option>: Use this switch to build
+      <command>doxywizard</command> with Qt6 even if Qt5 is installed.
+@z
+
+@x
+      <option>-D use_libclang=ON</option>: Use this switch if
       <application>llvm</application> with <application>clang</application> are
       installed, to add support for libclang parsing.
 @y
-      <option>-Duse_libclang=ON</option>: Use this switch if
+      <option>-D use_libclang=ON</option>: Use this switch if
       <application>llvm</application> with <application>clang</application> are
       installed, to add support for libclang parsing.
 @z

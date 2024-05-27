@@ -293,7 +293,7 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-SUBDIRS = kf5 kf5-apps plasma5
+SUBDIRS = kf6 kf5-apps plasma5
 CHANGE_FILES = \
 	extra-cmake-modules.ch      \
 	introduction.ch             \
