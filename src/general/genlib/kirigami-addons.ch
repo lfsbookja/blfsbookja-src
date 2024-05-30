@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kirigami-addons-time          "0.3 SBU (Using parallelism=4">
+  <!ENTITY kirigami-addons-time          "0.3 SBU (Using parallelism=4)">
 @y
-  <!ENTITY kirigami-addons-time          "0.3 SBU (Using parallelism=4">
+  <!ENTITY kirigami-addons-time          "0.3 SBU (Using parallelism=4)">
 @z
 
 @x

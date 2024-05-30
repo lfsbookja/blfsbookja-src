@@ -180,13 +180,13 @@
       To test the results, issue: <command>ninja test</command>. The tests
       require an X terminal running, or all of the GL tests will fail. Five
       tests may produce timeouts on some systems depending on their graphics
-      hardware and speed. One test, <filename>elements_appsrc</filename>, iw
+      hardware and speed. One test, <filename>elements_appsrc</filename>, is
       known to fail on some systems.
 @y
       To test the results, issue: <command>ninja test</command>. The tests
       require an X terminal running, or all of the GL tests will fail. Five
       tests may produce timeouts on some systems depending on their graphics
-      hardware and speed. One test, <filename>elements_appsrc</filename>, iw
+      hardware and speed. One test, <filename>elements_appsrc</filename>, is
       known to fail on some systems.
 @z
 

@@ -178,14 +178,6 @@
 @z
 
 @x
-        If you wish to use the <xref linkend="aspell"/> backend, create a
-        symlink, as the <systemitem class="username">root</systemitem> user:
-@y
-        バックエンドとして <xref linkend="aspell"/> を用いたい場合は <systemitem
-        class="username">root</systemitem> ユーザーになって以下を実行します。
-@z
-
-@x
         You can test your installation and configuration by creating a test
         file and running the following commands (you can replace the
         en_GB dictionary by any other downloaded when installing <xref

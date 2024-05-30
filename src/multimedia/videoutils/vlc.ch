@@ -416,9 +416,9 @@
 @z
 
 @x
-      First, add a correction for problems of taglib-2.0 and later:
+      First, add corrections for problems of taglib-2.0, gcc-14, and ffmpeg-7 and later:
 @y
-      First, add a correction for problems of taglib-2.0 and later:
+      First, add corrections for problems of taglib-2.0, gcc-14, and ffmpeg-7 and later:
 @z
 
 @x

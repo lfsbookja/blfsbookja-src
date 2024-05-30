@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY ojdk-bdsize               "3.7 GB (add 557 MB for tests)">
-  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 32 SBU for tests with 4 jobs)">
+  <!ENTITY ojdk-bdsize               "3.7 GB (add 621 MB for tests)">
+  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 38 SBU for tests with 4 jobs)">
 @y
-  <!ENTITY ojdk-bdsize               "3.7 GB (add 557 MB for tests)">
-  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 32 SBU for tests with 4 jobs)">
+  <!ENTITY ojdk-bdsize               "3.7 GB (add 621 MB for tests)">
+  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 38 SBU for tests with 4 jobs)">
 @z
 
 @x
@@ -624,14 +624,14 @@
         jconsole, jdb, jdeprscan, jdeps, jfr, jhsdb, jimage, jinfo,
         jlink, jmap, jmod, jpackage, jps, jrunscript, jshell, jstack,
         jstat, jstatd, jwebserver, keytool, rmiregistry, and serialver</seg>
-        <seg>37 libraries in /opt/jdk-&openjdk-version;+&openjdk-build;/lib/</seg>
+        <seg>38 libraries in /opt/jdk-&openjdk-version;+&openjdk-build;/lib/</seg>
         <seg>/opt/jdk-&openjdk-version;+&openjdk-build;</seg>
 @y
         <seg>jar, jarsigner, java, javac, javadoc, javap, jcmd,
         jconsole, jdb, jdeprscan, jdeps, jfr, jhsdb, jimage, jinfo,
         jlink, jmap, jmod, jpackage, jps, jrunscript, jshell, jstack,
-        jstat, jstatd, jwebserver, keytool, rmiregistry, and serialver</seg>
-        <seg>37 libraries in /opt/jdk-&openjdk-version;+&openjdk-build;/lib/</seg>
+        jstat, jstatd, jwebserver, keytool, rmiregistry, serialver</seg>
+        <seg>38 libraries in /opt/jdk-&openjdk-version;+&openjdk-build;/lib/</seg>
         <seg>/opt/jdk-&openjdk-version;+&openjdk-build;</seg>
 @z
 

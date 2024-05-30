@@ -77,14 +77,14 @@
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
         <xref linkend="pytest"/>,
-        <ulink url="https://pypi.org/project/pyyaml/">pyyaml</ulink>
+        <ulink url="https://pypi.org/project/pyyaml/">pyyaml</ulink>, and
         <ulink url="https://pypi.org/project/coverage/">coverage</ulink>
       </para>
 @y
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
         <xref linkend="pytest"/>,
-        <ulink url="https://pypi.org/project/pyyaml/">pyyaml</ulink>
+        <ulink url="https://pypi.org/project/pyyaml/">pyyaml</ulink>,
         <ulink url="https://pypi.org/project/coverage/">coverage</ulink>
       </para>
 @z

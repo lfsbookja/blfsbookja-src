@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY postgresql-buildsize     "227 MB (add 43 MB for tests)">
+  <!ENTITY postgresql-buildsize     "225 MB (add 43 MB for tests)">
   <!ENTITY postgresql-time          "0.8 SBU (with parallelism=4, add 0.2 SBU for tests)">
 @y
-  <!ENTITY postgresql-buildsize     "227 MB （テスト実施時はさらに 43 MB）">
+  <!ENTITY postgresql-buildsize     "225 MB （テスト実施時はさらに 43 MB）">
   <!ENTITY postgresql-time          "0.8 SBU （parallelism=4; テスト実施時はさらに 0.2 SBU）">
 @z
 

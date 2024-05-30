@@ -174,12 +174,12 @@
           phononsettings
         </seg>
         <seg>
-          libphonon4qt5.so and
-          libphonon4qt5experimental.so
+          libphonon4qt6.so and
+          libphonon4qt6experimental.so
         </seg>
         <seg>
-          /usr/include/phonon4qt5,
-          /usr/lib/cmake/phonon4qt5, and
+          /usr/include/phonon4qt6,
+          /usr/lib/cmake/phonon4qt6, and
           /usr/lib/plugins/designer
         </seg>
 @y
@@ -187,12 +187,12 @@
           phononsettings
         </seg>
         <seg>
-          libphonon4qt5.so,
-          libphonon4qt5experimental.so
+          libphonon4qt6.so,
+          libphonon4qt6experimental.so
         </seg>
         <seg>
-          /usr/include/phonon4qt5,
-          /usr/lib/cmake/phonon4qt5,
+          /usr/include/phonon4qt6,
+          /usr/lib/cmake/phonon4qt6,
           /usr/lib/plugins/designer
         </seg>
 @z

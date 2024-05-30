@@ -256,69 +256,52 @@
 @z
 
 @x
-    <para>
+      Next, if you are installing <emphasis role="bold">qtlocation</emphasis>,
+      fix the build with ICU-75:
+@y
+      Next, if you are installing <emphasis role="bold">qtlocation</emphasis>,
+      fix the build with ICU-75:
+@z
+
+@x
       Install each desired component by running the following commands:
-    </para>
 @y
-    <para>
       Install each desired component by running the following commands:
-    </para>
 @z
 
 @x
-    <para>
       As the &root; user:
-    </para>
 @y
-    <para>
       As the &root; user:
-    </para>
 @z
 
 @x
-    <!-- EDITORS NOTE: This package uses INSTALL_ROOT= instead of DESTDIR= for
-         installing in a temporary directory. -->
-@y
-    <!-- EDITORS NOTE: This package uses INSTALL_ROOT= instead of DESTDIR= for
-         installing in a temporary directory. -->
-@z
-
-@x
-    <para>
       Remove references to the build directory from installed library
       dependency (prl) files by running the following
       command as the &root; user:
-    </para>
 @y
-    <para>
       Remove references to the build directory from installed library
       dependency (prl) files by running the following
       command as the &root; user:
-    </para>
 @z
 
 @x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           None
         </seg>
@@ -330,10 +313,7 @@
           $QT5DIR/lib/cmake/&lt;component&gt;, and
           $QT5DIR/include/&lt;component&gt;
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           None
         </seg>
@@ -345,6 +325,4 @@
           $QT5DIR/lib/cmake/&lt;component&gt;, and
           $QT5DIR/include/&lt;component&gt;
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z

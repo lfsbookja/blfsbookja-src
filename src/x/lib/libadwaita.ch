@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libadwaita-buildsize     "57 MB (with tests)">
+  <!ENTITY libadwaita-buildsize     "73 MB (with tests)">
   <!ENTITY libadwaita-time          "0.3 SBU (with parallelism=4; with tests)">
 @y
-  <!ENTITY libadwaita-buildsize     "57 MB (with tests)">
+  <!ENTITY libadwaita-buildsize     "73 MB (with tests)">
   <!ENTITY libadwaita-time          "0.3 SBU (with parallelism=4; with tests)">
 @z
 

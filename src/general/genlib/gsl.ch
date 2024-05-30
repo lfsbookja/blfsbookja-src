@@ -4,11 +4,11 @@
 % This is a CTIE change file for the LFS hint text files.
 %
 @x
-  <!ENTITY gsl-buildsize     "213 MB (with tests, without docs)">
-  <!ENTITY gsl-time          "1.2 SBU (Using parallelism=4; with tests, without docs)">
+  <!ENTITY gsl-buildsize     "223 MB (with tests, without docs)">
+  <!ENTITY gsl-time          "1.0 SBU (Using parallelism=4; with tests, without docs)">
 @y
-  <!ENTITY gsl-buildsize     "213 MB (テスト込み、ドキュメントなし)">
-  <!ENTITY gsl-time          "1.2 SBU (parallelism=4 利用時、テスト込み、ドキュメントなし)">
+  <!ENTITY gsl-buildsize     "223 MB (テスト込み、ドキュメントなし)">
+  <!ENTITY gsl-time          "1.0 SBU (parallelism=4 利用時、テスト込み、ドキュメントなし)">
 @z
 
 @x

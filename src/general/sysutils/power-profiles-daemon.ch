@@ -82,16 +82,16 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="polkit"/>, 
+      <xref linkend="polkit"/>,
       <xref linkend="pygobject3"/>, and
-      <xref linkend="upower"/>, 
+      <xref linkend="upower"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="polkit"/>, 
+      <xref linkend="polkit"/>,
       <xref linkend="pygobject3"/>,
-      <xref linkend="upower"/>, 
+      <xref linkend="upower"/>
     </para>
 @z
 

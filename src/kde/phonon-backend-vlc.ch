@@ -129,10 +129,10 @@
 
 @x
         <seg>none</seg>
-        <seg>phonon_vlc_qt5.so</seg>
-        <seg>/usr/lib/plugins/phonon4qt5_backend</seg>
+        <seg>phonon_vlc_qt6.so</seg>
+        <seg>/usr/lib/plugins/phonon4qt6_backend</seg>
 @y
         <seg>&None;</seg>
-        <seg>phonon_vlc_qt5.so</seg>
-        <seg>/usr/lib/plugins/phonon4qt5_backend</seg>
+        <seg>phonon_vlc_qt6.so</seg>
+        <seg>/usr/lib/plugins/phonon4qt6_backend</seg>
 @z

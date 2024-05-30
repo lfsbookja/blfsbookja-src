@@ -138,7 +138,7 @@
           None
         </seg>
         <seg>
-          /usr/share/pavucontrol and /usr/share/doc/pavucontrol-5.0
+          /usr/share/pavucontrol and /usr/share/doc/pavucontrol-&pavucontrol-version;
         </seg>
 @y
         <seg>
@@ -148,7 +148,7 @@
           &None;
         </seg>
         <seg>
-          /usr/share/pavucontrol, /usr/share/doc/pavucontrol-5.0
+          /usr/share/pavucontrol and /usr/share/doc/pavucontrol-&pavucontrol-version;
         </seg>
 @z
 

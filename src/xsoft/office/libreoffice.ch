@@ -615,16 +615,6 @@
 @z
 
 @x
-      <option>--enable-gtk3-kde5</option>: This switch allows the Visual Class
-      Library, which is responsible for widgets, to be built with KF5 file
-      dialogs if GTK+-3, Qt5 and Plasma are all available.
-@y
-      <option>--enable-gtk3-kde5</option>: This switch allows the Visual Class
-      Library, which is responsible for widgets, to be built with KF5 file
-      dialogs if GTK+-3, Qt5 and Plasma are all available.
-@z
-
-@x
       <option>--enable-lto</option>: This switch will enable Link Time
       Optimization, which results in slightly smaller libraries (about 40 MB).
       This is said to make <application>LibreOffice</application> programs
@@ -683,53 +673,13 @@
 @z
 
 @x
-      <!-- Brings in - -enable-qt5 as well. -->
-      <option>--enable-kf5</option>: Builds with KDE/Plasma integration. If
-      &qt5-deps; and/or <xref linkend="kf6-frameworks"/> are not
-      installed in <filename class="directory">/usr</filename>, the include
-      and library directories must be specified in <envar>QT5INC</envar>,
-      <envar>QT5LIB</envar>, <envar>KF5INC</envar>, and <envar>KF5LIB</envar>,
-      respectively.
-@y
-      <!-- Brings in - -enable-qt5 as well. -->
-      <option>--enable-kf5</option>: Builds with KDE/Plasma integration. If
-      &qt5-deps; and/or <xref linkend="kf6-frameworks"/> are not
-      installed in <filename class="directory">/usr</filename>, the include
-      and library directories must be specified in <envar>QT5INC</envar>,
-      <envar>QT5LIB</envar>, <envar>KF5INC</envar>, and <envar>KF5LIB</envar>,
-      respectively.
-@z
-
-@x
-    <para>
       <option>--enable-evolution2</option>: Enables support for Evolution
       address books through Evolution Data Server. Note that Evolution Data
       Server must be installed for this feature to function.
-    </para>
 @y
-    <para>
       <option>--enable-evolution2</option>: Enables support for Evolution
       address books through Evolution Data Server. Note that Evolution Data
       Server must be installed for this feature to function.
-    </para>
-@z
-
-@x
-    <para>
-      <option>--enable-qt5</option>: This switch enables support for integration
-      with Qt5 and the Qt5 theming engine. If &qt5-deps; is not installed in
-      <filename class="directory">/usr</filename>, the include and library
-      directories must be specified in the <envar>QT5INC</envar> and
-      <envar>QT5LIB</envar> environment variables.
-    </para>
-@y
-    <para>
-      <option>--enable-qt5</option>: This switch enables support for integration
-      with Qt5 and the Qt5 theming engine. If &qt5-deps; is not installed in
-      <filename class="directory">/usr</filename>, the include and library
-      directories must be specified in the <envar>QT5INC</envar> and
-      <envar>QT5LIB</envar> environment variables.
-    </para>
 @z
 
 @x

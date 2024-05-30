@@ -240,12 +240,12 @@
 @z
 
 @x
-        Create basic <filename>/etc/mysql/my.cnf</filename>
-        using the following command as the <systemitem
+        Create a basic <filename>/etc/mysql/my.cnf</filename>
+        file using the following command as the <systemitem
         class="username">root</systemitem> user:
 @y
-        Create basic <filename>/etc/mysql/my.cnf</filename>
-        using the following command as the <systemitem
+        Create a basic <filename>/etc/mysql/my.cnf</filename>
+        file using the following command as the <systemitem
         class="username">root</systemitem> user:
 @z
 

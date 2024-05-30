@@ -285,38 +285,6 @@
 @z
 
 @x
-        Currently the rust compiler produces SSE2 instructions for 32-bit x86,
-        causing the generated code to be broken on 32-bit systems without a
-        SSE2-capable processor.  All x86 processor models released after
-        2004 should be SSE2-capable.  Run
-        <command>lscpu | grep sse2</command> as a test.  If it outputs
-        anything, your CPU is SSE2-capable and OK.  Otherwise you may try
-        to build this package <emphasis>on a SSE2-capable system</emphasis>
-        with the following fix applied:
-@y
-        Currently the rust compiler produces SSE2 instructions for 32-bit x86,
-        causing the generated code to be broken on 32-bit systems without a
-        SSE2-capable processor.  All x86 processor models released after
-        2004 should be SSE2-capable.  Run
-        <command>lscpu | grep sse2</command> as a test.  If it outputs
-        anything, your CPU is SSE2-capable and OK.  Otherwise you may try
-        to build this package <emphasis>on a SSE2-capable system</emphasis>
-        with the following fix applied:
-@z
-
-@x
-        And copy the resulting
-        <filename class="directory">/opt/rustc-&rust-version;</filename>
-        to the system without SSE2 capability. But this change is still
-        under upstream review and not tested by BLFS editors.
-@y
-        And copy the resulting
-        <filename class="directory">/opt/rustc-&rust-version;</filename>
-        to the system without SSE2 capability. But this change is still
-        under upstream review and not tested by BLFS editors.
-@z
-
-@x
       To install into the
       <filename class="directory">/opt</filename> directory, remove any
       existing <filename>/opt/rustc</filename> symlink
