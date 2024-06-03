@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY gst10-plugins-base-buildsize     "91 MB (with tests)">
-  <!ENTITY gst10-plugins-base-time          "1.1 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gst10-plugins-base-time          "1.0 SBU (Using parallelism=4; with tests)">
 @y
   <!ENTITY gst10-plugins-base-buildsize     "91 MB（テスト込み）">
-  <!ENTITY gst10-plugins-base-time          "1.1 SBU（parallelism=4 利用、テスト込み）">
+  <!ENTITY gst10-plugins-base-time          "1.0 SBU（parallelism=4 利用、テスト込み）">
 @z
 
 @x

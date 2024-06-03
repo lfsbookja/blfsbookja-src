@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY gstreamer10-buildsize     "56 MB (with tests)">
-  <!ENTITY gstreamer10-time          "0.4 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gstreamer10-time          "0.3 SBU (Using parallelism=4; with tests)">
 @y
   <!ENTITY gstreamer10-buildsize     "56 MB (with tests)">
-  <!ENTITY gstreamer10-time          "0.4 SBU (Using parallelism=4; with tests)">
+  <!ENTITY gstreamer10-time          "0.3 SBU (Using parallelism=4; with tests)">
 @z
 
 @x

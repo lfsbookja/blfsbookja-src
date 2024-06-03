@@ -87,16 +87,20 @@
     <para role="required">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="itstool"/>, and
-      <xref linkend="libxslt"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="itstool"/>, 
+      <xref linkend="libxslt"/>, and
+      <xref linkend="pygments"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="DocBook"/>,
       <xref linkend="docbook-xsl"/>,
-      <xref linkend="itstool"/>,
-      <xref linkend="libxslt"/>
+      <xref linkend="glib2"/>,
+      <xref linkend="itstool"/>, 
+      <xref linkend="libxslt"/>,
+      <xref linkend="pygments"/>
     </para>
 @z
 

@@ -174,8 +174,11 @@
       <xref linkend="libxml2"/>,
       <xref linkend="psutil"/> (for tests),
       <xref linkend="pygments"/>,
+      <xref linkend="PyYAML"/> (for tests),
       <xref linkend="rsync"/> (for tests),
       <xref linkend="recommonmark"/> (for building documentation),
+      <phrase revision="systemd"><xref linkend="systemd"/>
+      (rebuilt with PAM, for tests),</phrase>
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
       <xref linkend="zip"/>,
@@ -191,8 +194,11 @@
       <xref linkend="libxml2"/>,
       <xref linkend="psutil"/> (for tests),
       <xref linkend="pygments"/>,
+      <xref linkend="PyYAML"/> (for tests),
       <xref linkend="rsync"/> (for tests),
       <xref linkend="recommonmark"/> (for building documentation),
+      <phrase revision="systemd"><xref linkend="systemd"/>
+      (rebuilt with PAM, for tests),</phrase>
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
       <xref linkend="zip"/>,

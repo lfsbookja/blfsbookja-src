@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY requests-buildsize     "1.1 MB (add 139 MB for tests)">
-  <!ENTITY requests-time          "less than 0.1 SBU (1.0 SBU for tests)">
+  <!ENTITY requests-time          "less than 0.1 SBU (0.9 SBU for tests)">
 @y
   <!ENTITY requests-buildsize     "1.1 MB (add 139 MB for tests)">
-  <!ENTITY requests-time          "less than 0.1 SBU (1.0 SBU for tests)">
+  <!ENTITY requests-time          "less than 0.1 SBU (0.9 SBU for tests)">
 @z
 
 @x

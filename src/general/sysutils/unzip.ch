@@ -258,9 +258,9 @@
 @z
 
 @x
-      First apply the patch:
+      First apply the patches:
 @y
-      First apply the patch:
+      First apply the patches:
 @z
 
 @x

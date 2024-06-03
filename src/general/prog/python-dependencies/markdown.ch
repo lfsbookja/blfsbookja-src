@@ -77,14 +77,14 @@
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
         <xref linkend="pytest"/>,
-        <ulink url="https://pypi.org/project/pyyaml/">pyyaml</ulink>, and
+        <xref linkend="PyYAML"/>, and
         <ulink url="https://pypi.org/project/coverage/">coverage</ulink>
       </para>
 @y
       <bridgehead renderas="sect5">Optional (for testing)</bridgehead>
       <para role="optional">
         <xref linkend="pytest"/>,
-        <ulink url="https://pypi.org/project/pyyaml/">pyyaml</ulink>,
+        <xref linkend="PyYAML"/>,
         <ulink url="https://pypi.org/project/coverage/">coverage</ulink>
       </para>
 @z
@@ -108,11 +108,13 @@
 @z
 
 @x
-      Assuming <xref linkend="pytest"/> is installed and the other optional 
-      dependencies are not, the installation can be tested with:
+      Assuming <xref linkend="pytest"/> and <xref linkend='PyYAML'/> are
+      installed and the other optional dependency is not, the installation
+      can be tested with:
 @y
-      Assuming <xref linkend="pytest"/> is installed and the other optional 
-      dependencies are not, the installation can be tested with:
+      Assuming <xref linkend="pytest"/> and <xref linkend='PyYAML'/> are
+      installed and the other optional dependency is not, the installation
+      can be tested with:
 @z
 
 @x

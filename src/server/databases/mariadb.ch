@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY mariadb-buildsize     "1.9 GB (415 MB installed)">
-  <!ENTITY mariadb-time          "8.7 SBU (with parallelism=4, add 0.3 SBU for tests)">
+  <!ENTITY mariadb-time          "4.8 SBU (with parallelism=8, add 0.3 SBU for tests)">
 @y
   <!ENTITY mariadb-buildsize     "1.9 GB (415 MB がインストールされる)">
-  <!ENTITY mariadb-time          "8.7 SBU (with parallelism=4, add 0.3 SBU for tests)">
+  <!ENTITY mariadb-time          "4.8 SBU (with parallelism=4, add 0.3 SBU for tests)">
 @z
 
 @x
@@ -68,13 +68,13 @@
 @z
 
 @x
-        The installed size of MariaDB is 723 MB, but this can be
-        reduced by about 262 MB, if desired, by removing the <filename
+        The installed size of MariaDB is 725 MB, but this can be
+        reduced by about 265 MB, if desired, by removing the <filename
         class="directory">/usr/share/mysql/test</filename>
         directory after installation.
 @y
-        MariaDB のインストールサイズは 723 MB です。
-        サイズを縮小する必要がある場合は、インストール後に /usr/share/mysql/test ディレクトリを削除すれば 262MB になります。
+        MariaDB のインストールサイズは 725 MB です。
+        サイズを縮小する必要がある場合は、インストール後に /usr/share/mysql/test ディレクトリを削除すれば 265 MB になります。
 @z
 
 @x
