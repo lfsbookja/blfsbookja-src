@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY logrotate-buildsize     "2.9 MB (add 38 MB for tests)">
-  <!ENTITY logrotate-time          "less than 0.1 SBU (add 0.2 SBU for tests)">
+  <!ENTITY logrotate-buildsize     "2.6 MB (add 38 MB for tests)">
+  <!ENTITY logrotate-time          "less than 0.1 SBU (add 0.1 SBU for tests)">
 @y
-  <!ENTITY logrotate-buildsize     "2.9 MB (テスト実行時はさらに 38 MB)">
-  <!ENTITY logrotate-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実行時はさらに 0.2 SBU)">
+  <!ENTITY logrotate-buildsize     "2.6 MB (テスト実行時はさらに 38 MB)">
+  <!ENTITY logrotate-time          "&LessThan1;0.1 SBU&LessThan2; (テスト実行時はさらに 0.1 SBU)">
 @z
 
 @x
@@ -123,13 +123,11 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.  One test
-      fails because the very old <command>compress</command> is not
-      present and two tests fail if an MTA is not installed.
+      To test the results, issue: <command>make test</command>. 
+      Two tests fail if an MTA is not installed.
 @y
-      To test the results, issue: <command>make test</command>.  One test
-      fails because the very old <command>compress</command> is not
-      present and two tests fail if an MTA is not installed.
+      To test the results, issue: <command>make test</command>. 
+      Two tests fail if an MTA is not installed.
 @z
 
 @x

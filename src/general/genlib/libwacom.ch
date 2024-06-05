@@ -19,9 +19,10 @@
 
 @x
       The <application>libwacom</application> package contains a library used
-      to identify wacom tablets and their model-specific features.
+      to identify graphics tablets from Wacom or various other vendors and
+      their model-specific features.
 @y
-      <application>libwacom</application> パッケージは wacom タブレットを識別しモデル固有の機能を実現するライブラリを提供します。
+      <application>libwacom</application> パッケージは wacom やその他さまざまなベンダーのグラフィックタブレットを識別しモデル固有の機能を実現するライブラリを提供します。
 @z
 
 @x

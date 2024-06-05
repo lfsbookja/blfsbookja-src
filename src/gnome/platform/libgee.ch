@@ -76,12 +76,14 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> (GObject Introspection recommended)
+      <xref linkend="glib2"/> (GObject Introspection recommended) and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="glib2"/> (GObject Introspection recommended)
+      <xref linkend="glib2"/> (GObject Introspection recommended) and
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -100,13 +102,11 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="vala"/> (with Valadoc) and
       <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="vala"/> (with Valadoc) and
       <ulink url="https://github.com/linux-test-project/lcov">LCOV</ulink>
     </para>
 @z
