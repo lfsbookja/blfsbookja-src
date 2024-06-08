@@ -95,7 +95,8 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="libdvdread"/>,
-      <xref linkend="libdvdnav"/>, and
+      <xref linkend="libdvdnav"/>,
+      <xref linkend="libva"/>, and
       <xref linkend="soundtouch"/>
     </para>
 @y
@@ -103,6 +104,7 @@
     <para role="recommended">
       <xref linkend="libdvdread"/>,
       <xref linkend="libdvdnav"/>,
+      <xref linkend="libva"/>,
       <xref linkend="soundtouch"/>
     </para>
 @z

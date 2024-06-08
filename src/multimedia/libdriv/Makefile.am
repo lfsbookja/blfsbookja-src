@@ -23,7 +23,6 @@ CHANGE_FILES = \
 	gst10-plugins-good.ch \
 	gst10-plugins-ugly.ch \
 	gstreamer10.ch        \
-	gstreamer10-vaapi.ch  \
 	id3lib.ch             \
 	intel-media.ch        \
 	intel-media-kernel.ch \

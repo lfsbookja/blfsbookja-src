@@ -607,17 +607,17 @@
         php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
 
         <seg>dba.so and opcache.so in
-        /usr/lib/php/extensions/no-debug-non-zts-20220829</seg>
+        /usr/lib/php/extensions/no-debug-non-zts-20230831</seg>
 
         <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php, and
         /usr/share/doc/php-&php-version;</seg>
 @y
         <seg><!-- not built anymore pear, peardev, pecl,-->
         phar (symlink), phar.phar, php,
-        php-cgi, php-config, php-fpm, phpdbg, and phpize</seg>
+        php-cgi, php-config, php-fpm, phpdbg, phpize</seg>
 
         <seg>dba.so and opcache.so in
-        /usr/lib/php/extensions/no-debug-non-zts-20220829</seg>
+        /usr/lib/php/extensions/no-debug-non-zts-20230831</seg>
 
         <seg>/etc/php-fpm.d, /usr/{include,lib,share}/php,
         /usr/share/doc/php-&php-version;</seg>

@@ -68,13 +68,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
     <xref linkend="phonon"/> and
-    <xref linkend="vlc"/>
+    <xref linkend="vlc"/> (gui is not needed)
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
     <xref linkend="phonon"/>,
-    <xref linkend="vlc"/>
+    <xref linkend="vlc"/> (gui is not needed)
     </para>
 @z
 

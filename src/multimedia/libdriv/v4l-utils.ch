@@ -77,17 +77,15 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="alsa-lib"/>,
-      <xref linkend="glu"/>,
-      <xref linkend="libjpeg"/>, and
-      &qt5-deps;
+      <xref linkend="glu"/>, and
+      <xref linkend="libjpeg"/>
     </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="alsa-lib"/>,
       <xref linkend="glu"/>,
-      <xref linkend="libjpeg"/>, and
-      &qt5-deps;
+      <xref linkend="libjpeg"/>
     </para>
 @z
 
@@ -95,6 +93,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
+      &qt5-deps; (for qv4l2 and qvidcap),
       <xref linkend="sdl2"/>,
       both <xref linkend="llvm"/> (with Clang and target BPF)
       and <ulink url='https://github.com/libbpf/libbpf'>libbpf</ulink>
@@ -105,6 +104,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
+      &qt5-deps; (for qv4l2 and qvidcap),
       <xref linkend="sdl2"/>,
       both <xref linkend="llvm"/> (with Clang and target BPF)
       and <ulink url='https://github.com/libbpf/libbpf'>libbpf</ulink>

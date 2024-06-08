@@ -16,93 +16,61 @@
 @z
 
 @x
-    <para>
       <application>VLC</application> is a media player, streamer, and encoder.
       It can play from many inputs, such as files, network streams, capture
       devices, desktops, or DVD, SVCD, VCD, and audio CD. It can use most audio
       and video codecs (MPEG 1/2/4, H264, VC-1, DivX, WMV, Vorbis, AC3, AAC,
       etc.), and it can also convert to different formats and/or send streams
       through the network.
-    </para>
 @y
-    <para>
       <application>VLC</application> is a media player, streamer, and encoder.
       It can play from many inputs, such as files, network streams, capture
       devices, desktops, or DVD, SVCD, VCD, and audio CD. It can use most audio
       and video codecs (MPEG 1/2/4, H264, VC-1, DivX, WMV, Vorbis, AC3, AAC,
       etc.), and it can also convert to different formats and/or send streams
       through the network.
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&vlc-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&vlc-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &vlc-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &vlc-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &vlc-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &vlc-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&vlc-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&vlc-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&vlc-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&vlc-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &vlc-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &vlc-md5sum;
+@z
+
+@x
           Download size: &vlc-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &vlc-size;
+@z
+
+@x
           Estimated disk space required: &vlc-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &vlc-buildsize;
+@z
+
+@x
           Estimated build time: &vlc-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &vlc-time;
 @z
 
 @x
@@ -416,9 +384,9 @@
 @z
 
 @x
-      First, add corrections for problems of taglib-2.0, gcc-14, and ffmpeg-7 and later:
+      First, add corrections for problems of taglib-2.0 and ffmpeg-7 and later:
 @y
-      First, add corrections for problems of taglib-2.0, gcc-14, and ffmpeg-7 and later:
+      First, add corrections for problems of taglib-2.0 and ffmpeg-7 and later:
 @z
 
 @x
@@ -428,223 +396,126 @@
 @z
 
 @x
-    <para>
       To test the results, issue: <command>make check</command>.
-    </para>
 @y
-    <para>
       To test the results, issue: <command>make check</command>.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make docdir=/usr/share/doc/vlc-&vlc-version; install</userinput></screen>
-@y
-<screen role="root"><userinput>make docdir=/usr/share/doc/vlc-&vlc-version; install</userinput></screen>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/update-icons-and-desktop.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../xincludes/update-icons-and-desktop.xml"/>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <parameter>--disable-libplacebo</parameter>: This switch is required to
       disable support for using libplacebo as a rendering pipeline because VLC
       is incompatible with the latest version of libplacebo.
-    </para>
 @y
-    <para>
       <parameter>--disable-libplacebo</parameter>: This switch is required to
       disable support for using libplacebo as a rendering pipeline because VLC
       is incompatible with the latest version of libplacebo.
-    </para>
 @z
 
 @x
-    <para>
       <option>--disable-vpx</option>: Use this switch to disable
       <application>libvpx</application>.
-    </para>
 @y
-    <para>
       <option>--disable-vpx</option>: Use this switch to disable
       <application>libvpx</application>.
-    </para>
 @z
 
 @x
-    <!--<para>
-      <option>- -disable-lua</option>: Use this switch if you don't have
-      <application>Lua</application> installed.
-    </para>-->
-@y
-    <!--<para>
-      <option>- -disable-lua</option>: Use this switch if you don't have
-      <application>Lua</application> installed.
-    </para>-->
-@z
-
-@x
-    <para>
       <option>--disable-mad</option>: Use this switch if you don't
       have <application>libmad</application> installed.
-    </para>
 @y
-    <para>
       <option>--disable-mad</option>: Use this switch if you don't
       have <application>libmad</application> installed.
-    </para>
 @z
 
 @x
-    <para>
       <option>--disable-avcodec --disable-swscale</option>: Use these switches
       if you don't have <application>FFmpeg</application> installed.
-    </para>
 @y
-    <para>
       <option>--disable-avcodec --disable-swscale</option>: Use these switches
       if you don't have <application>FFmpeg</application> installed.
-    </para>
 @z
 
 @x
-    <para>
       <option>--disable-a52</option>: Use this switch if you don't have
       <application>liba52</application> installed.
-    </para>
 @y
-    <para>
       <option>--disable-a52</option>: Use this switch if you don't have
       <application>liba52</application> installed.
-    </para>
 @z
 
 @x
-    <para>
       <option>--disable-xcb</option>: Use this switch if you don't have
       <application>X Window System</application> installed.
-    </para>
 @y
-    <para>
       <option>--disable-xcb</option>: Use this switch if you don't have
       <application>X Window System</application> installed.
-    </para>
 @z
 
 @x
-    <para>
       <option>--disable-alsa</option>: Use this switch if you don't have
       <application>ALSA</application> installed.
-    </para>
 @y
-    <para>
       <option>--disable-alsa</option>: Use this switch if you don't have
       <application>ALSA</application> installed.
-    </para>
 @z
 
 @x
-    <para>
       <option>--disable-libgcrypt</option>: Use this switch if you don't
       have <application>libgcrypt</application> installed.
-    </para>
 @y
-    <para>
       <option>--disable-libgcrypt</option>: Use this switch if you don't
       have <application>libgcrypt</application> installed.
-    </para>
 @z
 
 @x
-    <para>
       <option>--disable-sftp</option>: The default is to build the sftp
       module if <xref linkend="libssh2"/> is installed. Use this switch
       if you do not want to build this module.
-    </para>
 @y
-    <para>
       <option>--disable-sftp</option>: The default is to build the sftp
       module if <xref linkend="libssh2"/> is installed. Use this switch
       if you do not want to build this module.
-    </para>
 @z
 
 @x
-    <note>
-      <para>
         There are many options to <application>VLC</application>'s
         <command>configure</command> command. Check the
         <command>configure --help</command> output for a complete list.
-      </para>
-    </note>
 @y
-    <note>
-      <para>
         There are many options to <application>VLC</application>'s
         <command>configure</command> command. Check the
         <command>configure --help</command> output for a complete list.
-      </para>
-    </note>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           cvlc, nvlc, qvlc, rvlc, svlc, vlc and vlc-wrapper
         </seg>
@@ -657,10 +528,7 @@
           /usr/share/kde4, and
           /usr/share/doc/vlc-&vlc-version;
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           cvlc, nvlc, qvlc, rvlc, svlc, vlc and vlc-wrapper
         </seg>
@@ -673,224 +541,58 @@
           /usr/share/kde4, and
           /usr/share/doc/vlc-&vlc-version;
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="cvlc">
-        <term><command>cvlc</command></term>
-        <listitem>
-          <para>
+@x cvlc
             is a script to run VLC with the dummy interface
-          </para>
-          <indexterm zone="vlc cvlc">
-            <primary sortas="b-cvlc">cvlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="cvlc">
-        <term><command>cvlc</command></term>
-        <listitem>
-          <para>
             is a script to run VLC with the dummy interface
-          </para>
-          <indexterm zone="vlc cvlc">
-            <primary sortas="b-cvlc">cvlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="nvlc">
-        <term><command>nvlc</command></term>
-        <listitem>
-          <para>
+@x nvlc
             is a script to run VLC with the ncurses interface
-          </para>
-          <indexterm zone="vlc nvlc">
-            <primary sortas="b-nvlc">nvlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="nvlc">
-        <term><command>nvlc</command></term>
-        <listitem>
-          <para>
             is a script to run VLC with the ncurses interface
-          </para>
-          <indexterm zone="vlc nvlc">
-            <primary sortas="b-nvlc">nvlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="qvlc">
-        <term><command>qvlc</command></term>
-        <listitem>
-          <para>
+@x qvlc
             is a script to run <application>VLC</application> with the
             <application>Qt</application> interface
-          </para>
-          <indexterm zone="vlc qvlc">
-            <primary sortas="b-qvlc">qvlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="qvlc">
-        <term><command>qvlc</command></term>
-        <listitem>
-          <para>
             is a script to run <application>VLC</application> with the
             <application>Qt</application> interface
-          </para>
-          <indexterm zone="vlc qvlc">
-            <primary sortas="b-qvlc">qvlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="rvlc">
-        <term><command>rvlc</command></term>
-        <listitem>
-          <para>
+@x rvlc
             is a script to run <application>VLC</application> with a command
             line interface
-          </para>
-          <indexterm zone="vlc rvlc">
-            <primary sortas="b-rvlc">rvlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="rvlc">
-        <term><command>rvlc</command></term>
-        <listitem>
-          <para>
             is a script to run <application>VLC</application> with a command
             line interface
-          </para>
-          <indexterm zone="vlc rvlc">
-            <primary sortas="b-rvlc">rvlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="svlc">
-        <term><command>svlc</command></term>
-        <listitem>
-          <para>
+@x svlc
             is a script to run <application>VLC</application> with the skins
             interface
-          </para>
-          <indexterm zone="vlc svlc">
-            <primary sortas="b-svlc">svlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="svlc">
-        <term><command>svlc</command></term>
-        <listitem>
-          <para>
             is a script to run <application>VLC</application> with the skins
             interface
-          </para>
-          <indexterm zone="vlc svlc">
-            <primary sortas="b-svlc">svlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="vlc-prog">
-        <term><command>vlc</command></term>
-        <listitem>
-          <para>
+@x vlc
             is the <application>VLC</application> media player
-          </para>
-          <indexterm zone="vlc vlc-prog">
-            <primary sortas="b-vlc">vlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="vlc-prog">
-        <term><command>vlc</command></term>
-        <listitem>
-          <para>
             is the <application>VLC</application> media player
-          </para>
-          <indexterm zone="vlc vlc-prog">
-            <primary sortas="b-vlc">vlc</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-       <varlistentry id="vlc-wrapper">
-        <term><command>vlc-wrapper</command></term>
-        <listitem>
-          <para>
+@x vlc-wrapper
             is a wrapper to drop privileges with <application>VLC</application>
-          </para>
-          <indexterm zone="vlc vlc-wrapper">
-            <primary sortas="b-vlc-wrapper">vlc-wrapper</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-       <varlistentry id="vlc-wrapper">
-        <term><command>vlc-wrapper</command></term>
-        <listitem>
-          <para>
             is a wrapper to drop privileges with <application>VLC</application>
-          </para>
-          <indexterm zone="vlc vlc-wrapper">
-            <primary sortas="b-vlc-wrapper">vlc-wrapper</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

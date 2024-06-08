@@ -61,24 +61,23 @@
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Optional additional modules: <ulink
-          url="&opencv-contrib-download;"/>
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">&AdditionalDownloads;</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Optional additional modules: <ulink
-          url="&opencv-contrib-download;"/>
-        </para>
-      </listitem>
-    </itemizedlist>
+@z
+@x
+          Optional additional modules: <ulink url="&opencv-contrib-download;"/>
+@y
+          Optional additional modules: <ulink url="&opencv-contrib-download;"/>
+@z
+@x
+          Optional additional modules md5sum: &opencv-contrib-md5sum;
+@y
+          Optional additional modules md5sum: &opencv-contrib-md5sum;
+@z
+@x
+          Optional additional modules Size: &opencv-contrib-size;
+@y
+          Optional additional modules Size: &opencv-contrib-size;
 @z
 
 @x
