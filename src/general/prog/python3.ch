@@ -133,13 +133,27 @@
 @z
 
 @x
-      To test the result, issue <command>LC_ALL=en_US.UTF-8
-      make test</command>.
-      Some tests may need an Internet connection. 
+      Some tests are known to occasionally hang indefinitely.  So to test
+      the results, run the test suite but set a 2-minute time limit for each
+      test case:
 @y
-      To test the result, issue <command>LC_ALL=en_US.UTF-8
-      make test</command>.
-      Some tests may need an Internet connection. 
+      Some tests are known to occasionally hang indefinitely.  So to test
+      the results, run the test suite but set a 2-minute time limit for each
+      test case:
+@z
+
+@x
+      For a relatively slow system you may need to increase the time
+      limit and 1 SBU (measured when building Binutils pass 1 with one CPU
+      core) should be enough.  Some tests are flaky, so the test suite will
+      automatically re-run failed tests.  If a test failed but then passed
+      when re-run, it should be considered as passed.
+@y
+      For a relatively slow system you may need to increase the time
+      limit and 1 SBU (measured when building Binutils pass 1 with one CPU
+      core) should be enough.  Some tests are flaky, so the test suite will
+      automatically re-run failed tests.  If a test failed but then passed
+      when re-run, it should be considered as passed.
 @z
 
 @x
@@ -168,18 +182,6 @@
 @y
       <parameter>--with-system-expat</parameter>: This switch enables linking
       against the system version of <application>Expat</application>.
-@z
-
-@x
-      <option>--with-dbmliborder=bdb:gdbm:ndbm</option>: Use this switch
-      if you want to build the <application>Python</application> DBM Module
-      against <application>Berkeley DB</application> instead of
-      <application>GDBM</application>.
-@y
-      <option>--with-dbmliborder=bdb:gdbm:ndbm</option>: Use this switch
-      if you want to build the <application>Python</application> DBM Module
-      against <application>Berkeley DB</application> instead of
-      <application>GDBM</application>.
 @z
 
 @x

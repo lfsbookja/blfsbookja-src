@@ -128,14 +128,6 @@
 @z
 
 @x
-      <parameter>-DCMAKE_SKIP_INSTALL_RPATH=YES</parameter>: This option
-      removes embedded library search paths.
-@y
-      <parameter>-DCMAKE_SKIP_INSTALL_RPATH=YES</parameter>: This option
-      removes embedded library search paths.
-@z
-
-@x
       <parameter>-DJAS_ENABLE_DOC=NO</parameter>: This option disables
       rebuilding the pdf documentation if <xref linkend="texlive"/>
       is installed.

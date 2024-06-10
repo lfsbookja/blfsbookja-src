@@ -3,6 +3,7 @@
 ##
 
 CHANGE_FILES = \
+	cmake-skip-install-rpath.ch \
 	gsettings-destdir.ch        \
 	gst10-objc-error.ch         \
 	gst10-plugins.ch            \

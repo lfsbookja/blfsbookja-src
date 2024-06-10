@@ -109,9 +109,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make check</command>.
+      To test the results, issue: <command>LC_ALL=C make check</command>.
 @y
-      ビルド結果をテストする場合は <command>make check</command> を実行します。
+      ビルド結果をテストする場合は <command>LC_ALL=C make check</command> を実行します。
 @z
 
 @x
@@ -136,14 +136,27 @@
 @z
 
 @x
-      <command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
-      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install</command>:
-      This command installs this package with a versioned documentation
-      installation directory.
+      <parameter>RPATH=</parameter>: This overridden <command>make</command>
+      variable prevents hard coding library search paths (rpath) into the
+      binary executable files and shared libraries.  This package does not
+      need rpath for an installtion into the standard location, and rpath may
+      sometimes cause unwanted effects or even security issues.
 @y
-      <command>make install_doc_dir=/usr/share/doc/slang-&slang-version;
-      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh install</command>:
-      このコマンドはパッケージをインストールし、ドキュメントについてはそれを収めるディレクトリの名前にバージョン番号をつけた上でインストールします。
+      <parameter>RPATH=</parameter>:
+      これは <command>make</command> 変数を上書きすることで、バイナリ実行ファイルや共有ライブラリにライブラリ検索パス (rpath) がハードコーディングされないようにします。
+      本パッケージを標準的なディレクトリにインストールすれば rpath は必要ありません。
+      rpath は時に思わぬ弊害やセキュリティ問題を引き起こす場合があります。
+@z
+
+@x
+      <parameter>install_doc_dir=/usr/share/doc/slang-&slang-version;
+      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh</parameter>:
+      These overridden <command>make</command> variables ensure installing
+      this package with a versioned documentation installation directory.
+@y
+      <parameter>install_doc_dir=/usr/share/doc/slang-&slang-version;
+      SLSH_DOC_DIR=/usr/share/doc/slang-&slang-version;/slsh</parameter>:
+      これは <command>make</command> 変数を上書きするものであり、ドキュメントのインストールディレクトリをバージョン番号つきとするものです。
 @z
 
 @x

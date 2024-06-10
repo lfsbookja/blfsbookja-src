@@ -98,14 +98,6 @@
 @z
 
 @x
-      <parameter>--enable-relocatable</parameter>:
-      This switch is needed to run the tests.
-@y
-      <parameter>--enable-relocatable</parameter>:
-      このスイッチはテストを実行するために必要です。
-@z
-
-@x
     <title>Configuring libpaper</title>
 @y
     <title>&Configuring1;libpaper&Configuring2;</title>

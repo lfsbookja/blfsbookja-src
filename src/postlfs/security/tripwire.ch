@@ -198,7 +198,7 @@
       <command>cp -v policy/*.txt /usr/doc/tripwire-&tripwire-version;</command>:
       This command installs the <application>tripwire</application> sample
       policy files with the other <application>tripwire</application>
-      documentation.i
+      documentation.
 @y
       <command>cp -v policy/*.txt /usr/doc/tripwire-&tripwire-version;</command>:
       このコマンドは <application>tripwire</application> のサンプルポリシーファイルやドキュメントをインストールします。

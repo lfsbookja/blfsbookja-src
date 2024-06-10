@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY pcre2-buildsize     "20 MB (with tests)">
-  <!ENTITY pcre2-time          "0.4 SBU (with tests)">
+  <!ENTITY pcre2-time          "0.5 SBU (with tests)">
 @y
   <!ENTITY pcre2-buildsize     "20 MB (テスト込み)">
-  <!ENTITY pcre2-time          "0.4 SBU (テスト込み)">
+  <!ENTITY pcre2-time          "0.5 SBU (テスト込み)">
 @z
 
 @x

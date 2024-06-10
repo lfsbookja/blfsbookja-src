@@ -236,6 +236,7 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 CHANGE_FILES = \
+	cmake-skip-install-rpath.ch \
 	gsettings-destdir.ch        \
 	gst10-objc-error.ch         \
 	gst10-plugins.ch            \
