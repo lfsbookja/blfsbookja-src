@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libwacom-buildsize     "6.2 MB (with tests)">
+  <!ENTITY libwacom-buildsize     "4.9 MB (with tests)">
   <!ENTITY libwacom-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libwacom-buildsize     "6.2 MB（テスト込み）">
+  <!ENTITY libwacom-buildsize     "4.9 MB（テスト込み）">
   <!ENTITY libwacom-time          "&LessThan1;0.1 SBU&LessThan2;（テスト込み）">
 @z
 
@@ -76,11 +76,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="libevdev"/> and
       <xref linkend="libgudev"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="libevdev"/>,
       <xref linkend="libgudev"/>
     </para>
 @z

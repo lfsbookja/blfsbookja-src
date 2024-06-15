@@ -74,8 +74,7 @@
     <para role="required">
       <xref linkend="gtkmm4"/>,
       <xref linkend="json-glib"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libsigc"/>, and
+      <xref linkend="libsigc3"/>, and
       <xref linkend="pulseaudio"/>
     </para>
 @y
@@ -83,8 +82,7 @@
     <para role="required">
       <xref linkend="gtkmm4"/>,
       <xref linkend="json-glib"/>,
-      <xref linkend="libcanberra"/>,
-      <xref linkend="libsigc"/>, and
+      <xref linkend="libsigc3"/>,
       <xref linkend="pulseaudio"/>
     </para>
 @z

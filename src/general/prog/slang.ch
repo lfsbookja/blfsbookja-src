@@ -139,7 +139,7 @@
       <parameter>RPATH=</parameter>: This overridden <command>make</command>
       variable prevents hard coding library search paths (rpath) into the
       binary executable files and shared libraries.  This package does not
-      need rpath for an installtion into the standard location, and rpath may
+      need rpath for an installation into the standard location, and rpath may
       sometimes cause unwanted effects or even security issues.
 @y
       <parameter>RPATH=</parameter>:

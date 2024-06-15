@@ -196,13 +196,15 @@
       be obtained only from a git repository. The command to download
       them is:
 <command>git clone --depth 1 https://gitlab.freedesktop.org/poppler/test.git testfiles</command>.
-      Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>.
+      Then issue: <command>LC_ALL=en_US.UTF-8 ninja test</command>.
+      One subtest of check_qt6_signature_basics is known to fail.
 @y
       In order to run the test suite, some testcases are needed and can
       be obtained only from a git repository. The command to download
       them is:
 <command>git clone --depth 1 https://gitlab.freedesktop.org/poppler/test.git testfiles</command>.
-      Then issue: <command>LC_ALL=en_US.UTF-8 make test</command>.
+      Then issue: <command>LC_ALL=en_US.UTF-8 ninja test</command>.
+      One subtest of check_qt6_signature_basics is known to fail.
 @z
 
 @x
@@ -238,47 +240,97 @@
 @z
 
 @x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
-      to apply a higher level of compiler optimizations. 
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply a higher level of compiler optimizations.
 @y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
-      to apply a higher level of compiler optimizations. 
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      to apply a higher level of compiler optimizations.
 @z
 
 @x
-      <parameter>-DTESTDATADIR=$PWD/testfiles</parameter>: Tells the test
+      <parameter>-D TESTDATADIR=$PWD/testfiles</parameter>: Tells the test
       programs where the auxiliary files are located.
 @y
-      <parameter>-DTESTDATADIR=$PWD/testfiles</parameter>: Tells the test
+      <parameter>-D TESTDATADIR=$PWD/testfiles</parameter>: Tells the test
       programs where the auxiliary files are located.
 @z
 
 @x
-      <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Installs some old
-      <application>Xpdf</application> headers required by certain programs.
-      <!--(e.g. <application>Inkscape</application>).-->
+      <parameter>-D ENABLE_QT5=OFF</parameter>: This switch is needed to
+      prevent an error when Qt5 is not installed. Remove it if you
+      have installed &qt5-deps;.
 @y
-      <parameter>-DENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Installs some old
-      <application>Xpdf</application> headers required by certain programs.
-      <!--(e.g. <application>Inkscape</application>).-->
+      <parameter>-D ENABLE_QT5=OFF</parameter>: This switch is needed to
+      prevent an error when Qt5 is not installed. Remove it if you
+      have installed &qt5-deps;.
 @z
 
 @x
-      <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if
+      <parameter>-D ENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Installs some old
+      <application>Xpdf</application> headers required by certain programs.
+@y
+      <parameter>-D ENABLE_UNSTABLE_API_ABI_HEADERS=ON</parameter>: Installs some old
+      <application>Xpdf</application> headers required by certain programs.
+@z
+
+@x
+      <option>-D ENABLE_GTK_DOC=ON</option>: Use this parameter if
       GTK-Doc <!--and Pygments--> is installed and you wish to rebuild and
       install the API documentation.
 @y
-      <option>-DENABLE_GTK_DOC=ON</option>: Use this parameter if
+      <option>-D ENABLE_GTK_DOC=ON</option>: Use this parameter if
       GTK-Doc <!--and Pygments--> is installed and you wish to rebuild and
       install the API documentation.
 @z
 
 @x
-      <command>LC_ALL=en_US.UTF-8 make test</command>: Runs the test suite.
+      <option>-D ENABLE_QT6=OFF</option>: Use this parameter if
+      <xref linkend='qt6'/> is not installed.
+@y
+      <option>-D ENABLE_QT6=OFF</option>: Use this parameter if
+      <xref linkend='qt6'/> is not installed.
+@z
+
+@x
+      <option>-D ENABLE_BOOST=OFF</option>: Use this parameter if you have
+      not installed <application>boost</application> (the Splash backend for
+      Qt5 recommends boost).
+@y
+      <option>-D ENABLE_BOOST=OFF</option>: Use this parameter if you have
+      not installed <application>boost</application> (the Splash backend for
+      Qt5 recommends boost).
+@z
+
+@x
+      <option>-D ENABLE_NSS3=OFF</option>: Use this parameter if you have
+      not installed <application>nss</application>.
+@y
+      <option>-D ENABLE_NSS3=OFF</option>: Use this parameter if you have
+      not installed <application>nss</application>.
+@z
+
+@x
+      <option>-D ENABLE_GPGME=OFF</option>: Use this parameter if you have
+      not installed <application>gpgme</application>.
+@y
+      <option>-D ENABLE_GPGME=OFF</option>: Use this parameter if you have
+      not installed <application>gpgme</application>.
+@z
+
+@x
+      <option>-D ENABLE_LIBTIFF=OFF</option>: Use this parameter if you have
+      not installed <application>libtiff</application>.
+@y
+      <option>-D ENABLE_LIBTIFF=OFF</option>: Use this parameter if you have
+      not installed <application>libtiff</application>.
+@z
+
+@x
+      <command>LC_ALL=en_US.UTF-8 ninja test</command>: Runs the test suite.
       The environment variable LC_ALL=en_US.UTF-8 is only needed if the
       default locale does not include UTF-8.
 @y
-      <command>LC_ALL=en_US.UTF-8 make test</command>: Runs the test suite.
+      <command>LC_ALL=en_US.UTF-8 ninja test</command>: Runs the test suite.
       The environment variable LC_ALL=en_US.UTF-8 is only needed if the
       default locale does not include UTF-8.
 @z

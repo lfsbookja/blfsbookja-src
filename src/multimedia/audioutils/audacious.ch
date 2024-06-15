@@ -4,19 +4,19 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY audacious-buildsize            "16 MB (with Qt5 and GTK3 support)">
-  <!ENTITY audacious-time                 "0.2 SBU (with Qt5 and GTK3 support)">
+  <!ENTITY audacious-buildsize            "14 MB (with GTK support)">
+  <!ENTITY audacious-time                 "0.2 SBU (with GTK support)">
 @y
-  <!ENTITY audacious-buildsize            "16 MB (with Qt5 and GTK3 support)">
-  <!ENTITY audacious-time                 "0.2 SBU (with Qt5 and GTK3 support)">
+  <!ENTITY audacious-buildsize            "14 MB (with GTK support)">
+  <!ENTITY audacious-time                 "0.2 SBU (with GTK support)">
 @z
 
 @x
-  <!ENTITY audacious-plugins-buildsize    "37 MB (with Qt5 and GTK3 support)">
-  <!ENTITY audacious-plugins-time         "1.4 SBU (with Qt5 and GTK3 support)">
+  <!ENTITY audacious-plugins-buildsize    "40 MB (with GTK support)">
+  <!ENTITY audacious-plugins-time         "2.0 SBU (with GTK support)">
 @y
-  <!ENTITY audacious-plugins-buildsize    "37 MB (with Qt5 and GTK3 support)">
-  <!ENTITY audacious-plugins-time         "1.4 SBU (with Qt5 and GTK3 support)">
+  <!ENTITY audacious-plugins-buildsize    "40 MB (with GTK support)">
+  <!ENTITY audacious-plugins-time         "2.0 SBU (with GTK support)">
 @z
 
 @x
@@ -119,15 +119,13 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="gtk3"/> or
-      (<xref linkend="qt5"/> or
-       <xref role="nodep" linkend="qt5-components"/> with qtmultimedia)
+      <xref linkend="qt6"/> 
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="gtk3"/> or
-      (<xref linkend="qt5"/> or
-       <xref role="nodep" linkend="qt5-components"/> with qtmultimedia)
+      <xref linkend="gtk3"/> または
+      <xref linkend="qt6"/> 
     </para>
 @z
 
@@ -234,42 +232,42 @@
 @z
 
 @x
-      <parameter>-Dbuildstamp=BLFS</parameter>: This switch appends
+      <parameter>-Di buildstamp=BLFS</parameter>: This switch appends
       the given text to the version string.
 @y
-      <parameter>-Dbuildstamp=BLFS</parameter>: This switch appends
+      <parameter>-Di buildstamp=BLFS</parameter>: This switch appends
       the given text to the version string.
 @z
 
 @x
-      <parameter>-Dgtk3=true</parameter>: This option sets the default
+      <parameter>-D gtk=true</parameter>: This option enables GTK support for th
       graphical user interface.
 @y
-      <parameter>-Dgtk3=true</parameter>: This option sets the default
+      <parameter>-D gtk=true</parameter>: This option enables GTK support for th
       graphical user interface.
 @z
 
 @x
-      <parameter>-Dlibarchive=true</parameter>: This adds libarchive support,
+      <parameter>-D qt=true</parameter>: This option enables Qt support for the
+      graphical user interface.
+@y
+      <parameter>-D qt=true</parameter>: This option enables Qt support for the
+      graphical user interface.
+@z
+
+@x
+      <parameter>-D libarchive=true</parameter>: This adds libarchive support,
       for reading compressed module sets or skins.
 @y
-      <parameter>-Dlibarchive=true</parameter>: This adds libarchive support,
+      <parameter>-D libarchive=true</parameter>: This adds libarchive support,
       for reading compressed module sets or skins.
 @z
 
 @x
-      <command>sed -e '/libxml/a ...'</command>: This fixes building against
-      libxml-2.12.x.
-@y
-      <command>sed -e '/libxml/a ...'</command>: This fixes building against
-      libxml-2.12.x.
-@z
-
-@x
-      <option>-Dvalgrind=true</option>: The option enables Valgrind analysis
+      <option>-D valgrind=true</option>: The option enables Valgrind analysis
       support.
 @y
-      <option>-Dvalgrind=true</option>: The option enables Valgrind analysis
+      <option>-D valgrind=true</option>: The option enables Valgrind analysis
       support.
 @z
 

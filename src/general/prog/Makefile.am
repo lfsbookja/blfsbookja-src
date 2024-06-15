@@ -38,6 +38,7 @@ CHANGE_FILES = \
 	python311.ch           \
 	ruby.ch                \
 	rust.ch                \
+	rust-bindgen.ch        \
 	scons.ch               \
 	slang.ch               \
 	subversion.ch          \

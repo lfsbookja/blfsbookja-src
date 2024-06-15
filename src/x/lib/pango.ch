@@ -163,12 +163,10 @@
 
 @x
       To test the results, issue: <command>ninja test</command>.
-      One test (test-layout) is known to fail on i686 systems for
-      unknown reason.
+      Two tests, testiter and test-font, are known to fail for unknown reason.
 @y
       To test the results, issue: <command>ninja test</command>.
-      One test (test-layout) is known to fail on i686 systems for
-      unknown reason.
+      Two tests, testiter and test-font, are known to fail for unknown reason.
 @z
 
 @x

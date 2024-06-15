@@ -17,6 +17,7 @@ CHANGE_FILES = \
 	mako.ch             \
 	numpy.ch            \
 	packaging.ch        \
+	ply.ch              \
 	psutil.ch           \
 	py3c.ch             \
 	pyatspi2.ch         \

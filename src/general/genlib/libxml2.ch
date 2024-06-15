@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libxml2-buildsize     "99 MB (with tests)">
+  <!ENTITY libxml2-buildsize     "110 MB (with tests)">
   <!ENTITY libxml2-time          "0.3 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY libxml2-buildsize     "99 MB (テスト込み)">
+  <!ENTITY libxml2-buildsize     "110 MB (テスト込み)">
   <!ENTITY libxml2-time          "0.3 SBU (parallelism=4 利用; テスト込み)">
 @z
 

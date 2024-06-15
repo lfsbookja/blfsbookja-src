@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libaom-buildsize     "103 MB (add 1.0 GB for tests)">
-  <!ENTITY libaom-time          "0.9 SBU (with parallelism=4, add 187 SBU for tests)">
+  <!ENTITY libaom-buildsize     "104 MB (add 1.0 GB for tests)">
+  <!ENTITY libaom-time          "1.0 SBU (with parallelism=4, add 187 SBU for tests)">
 @y
-  <!ENTITY libaom-buildsize     "103 MB (add 1.0 GB for tests)">
-  <!ENTITY libaom-time          "0.9 SBU (with parallelism=4, add 187 SBU for tests)">
+  <!ENTITY libaom-buildsize     "104 MB (add 1.0 GB for tests)">
+  <!ENTITY libaom-time          "1.0 SBU (with parallelism=4, add 187 SBU for tests)">
 @z
 
 @x

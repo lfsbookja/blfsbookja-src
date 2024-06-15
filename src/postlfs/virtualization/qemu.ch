@@ -208,13 +208,13 @@
 @x
       <application>qemu</application> uses <command>ninja</command> as
       a subprocess when building.  To run the tests, issue:
-      <command>ninja test</command>. Two tests, bios-tables-test and migration-test, 
-      are known to fail.
+      <command>ninja test</command>. One test, bios-tables-test, 
+      is known to fail.
 @y
       <application>qemu</application> uses <command>ninja</command> as
       a subprocess when building.  To run the tests, issue:
-      <command>ninja test</command>. Two tests, bios-tables-test and migration-test, 
-      are known to fail.
+      <command>ninja test</command>. One test, bios-tables-test, 
+      is known to fail.
 @z
 
 @x

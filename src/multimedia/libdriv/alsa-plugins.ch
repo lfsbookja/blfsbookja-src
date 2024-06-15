@@ -133,20 +133,6 @@
 @z
 
 @x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <option>--disable-libav</option>: Disable FFMpeg support as the
-      package does not build when <xref linkend="ffmpeg"/> is installed.
-@y
-      <option>--disable-libav</option>: Disable FFMpeg support as the
-      package does not build when <xref linkend="ffmpeg"/> is installed.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

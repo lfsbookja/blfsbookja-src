@@ -24,7 +24,6 @@ CHANGE_FILES = \
 	sharutils.ch          \
 	tidy-html5.ch         \
 	time.ch               \
-	telepathy-mission-control.ch \
         tree.ch               \
 	unixodbc.ch           \
 	xdg-dbus-proxy.ch     \

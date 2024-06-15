@@ -114,7 +114,7 @@
 @x
       To test the results, issue: <command>make -j1 -k check</command>.
       Note that running the test suite with parallel jobs may cause test
-      failures outputted as cryptic <computeroutput>unknown
+      failure output as cryptic <computeroutput>unknown
       object</computeroutput> messages, resulting a summary falsely claiming
       <quote>all tests passed</quote>.  If the environment has variables
       related to proxy settings (<envar>all_proxy</envar>,
@@ -138,7 +138,7 @@
 @y
       To test the results, issue: <command>make -j1 -k check</command>.
       Note that running the test suite with parallel jobs may cause test
-      failures outputted as cryptic <computeroutput>unknown
+      failure output as cryptic <computeroutput>unknown
       object</computeroutput> messages, resulting a summary falsely claiming
       <quote>all tests passed</quote>.  If the environment has variables
       related to proxy settings (<envar>all_proxy</envar>,

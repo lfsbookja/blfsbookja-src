@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY btrfs-progs-buildsize     "62 MB (transient files created during tests need up to 10 GB)">
-  <!ENTITY btrfs-progs-time          "0.3 SBU (with parallelism=4; add 2.5 SBU for tests, up to 14 SBU on slow disks)">
+  <!ENTITY btrfs-progs-buildsize     "65 MB (transient files created during tests need up to 10 GB)">
+  <!ENTITY btrfs-progs-time          "0.3 SBU (with parallelism=4; add 3.6 SBU for tests, up to 14 SBU on slow disks)">
 @y
-  <!ENTITY btrfs-progs-buildsize     "62 MB (transient files created during tests need up to 10 GB)">
-  <!ENTITY btrfs-progs-time          "0.3 SBU (with parallelism=4; add 2.5 SBU for tests, up to 14 SBU on slow disks)">
+  <!ENTITY btrfs-progs-buildsize     "65 MB (transient files created during tests need up to 10 GB)">
+  <!ENTITY btrfs-progs-time          "0.3 SBU (with parallelism=4; add 3.6 SBU for tests, up to 14 SBU on slow disks)">
 @z
 
 @x
@@ -138,11 +138,15 @@
 @x
       In addition to the above and to the options required for
       <xref linkend="lvm2"/>, the following
-      options must be enabled for running tests:
+      options must be set for running tests. The options marked
+      as empty should <emphasis>not</emphasis> be selected because they 
+      are for developers  and make some tests fail.
 @y
       In addition to the above and to the options required for
       <xref linkend="lvm2"/>, the following
-      options must be enabled for running tests:
+      options must be set for running tests. The options marked
+      as empty should <emphasis>not</emphasis> be selected because they 
+      are for developers  and make some tests fail.
 @z
 
 @x

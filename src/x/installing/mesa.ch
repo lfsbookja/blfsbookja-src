@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY mesa-buildsize     "641 MB (with docs, add 263 MB for tests)">
-  <!ENTITY mesa-time          "2.7 SBU (with docs; add 0.6 SBU for tests; both with parallelism=4)">
+  <!ENTITY mesa-buildsize     "1.2 GB (with docs, add 263 MB for tests)">
+  <!ENTITY mesa-time          "5.1 SBU (with docs; add 0.6 SBU for tests; both with parallelism=4)">
 @y
-  <!ENTITY mesa-buildsize     "641 MB (ドキュメント込み, テスト実施時はさらに 263 MB)">
-  <!ENTITY mesa-time          "2.7 SBU (ドキュメント込み、テスト実施時はさらに 0.6 SBU, いずれも parallelism=4)">
+  <!ENTITY mesa-buildsize     "1.2 GB (ドキュメント込み, テスト実施時はさらに 263 MB)">
+  <!ENTITY mesa-time          "5.1 SBU (ドキュメント込み、テスト実施時はさらに 0.6 SBU, いずれも parallelism=4)">
 @z
 
 @x
@@ -184,10 +184,10 @@
 
 @x
       To test the results, issue:
-      <command>meson configure -Dbuild-tests=true &amp;&amp; ninja test</command>.
+      <command>meson configure -D build-tests=true &amp;&amp; ninja test</command>.
 @y
       To test the results, issue:
-      <command>meson configure -Dbuild-tests=true &amp;&amp; ninja test</command>.
+      <command>meson configure -D build-tests=true &amp;&amp; ninja test</command>.
 @z
 
 @x
@@ -243,132 +243,6 @@
       <segtitle>Installed VDPAU Drivers</segtitle><!-- in /usr/lib/vdpau -->
       <segtitle>Installed Vulkan Drivers</segtitle><!-- in /usr/lib -->
       <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-        <seg>
-          glxgears and glxinfo
-        </seg>
-        <seg>
-          libEGL.so,
-          libGL.so,
-          libGLESv1_CM.so,
-          libGLESv2.so,
-          libgbm.so,
-          libglapi.so, and
-          libxatracker.so
-        </seg>
-        <seg>
-          <!-- d3dadapter9.so (optional)
-               I guess this is useless today, Wine applications use Vulkan
-               through libvkd3d, and new games with native Linux support
-               likely uses Vulkan directly.  -->
-          <!-- Begin gallium DRI drivers (*_dri.so) and VA-API drivers
-               (*_drv_video.so): this is the full set -->
-          crocus_dri.so,
-          i915_dri.so,
-          iris_dri.so,
-          kms_swrast_dri.so,
-          nouveau_dri.so,
-          nouveau_drv_video.so,
-          r300_dri.so,
-          r600_dri.so,
-          r600_drv_video.so,
-          radeonsi_dri.so,
-          radeonsi_drv_video.so,
-          swrast_dri.so,
-          virtio_gpu_dri.so,
-          virtio_gpu_drv_video.so, and
-          vmwgfx_dri.so
-          <!-- End DRI Drivers -->
-        </seg>
-        <seg>
-          <!-- Begin VDPAU drivers -->
-          libvdpau_nouveau.so,
-          libvdpau_r300.so
-          libvdpau_r600.so, and
-          libvdpau_radeonsi.so
-          libvdpau_virtio_gpu.so
-          <!-- End VDPAU drivers -->
-          (Many of these drivers are hard-linked).
-        </seg>
-        <seg>
-          libvulkan_intel_hasvk.so,
-          libvulkan_intel.so,
-          libvulkan_lvp.so, and
-          libvulkan_radeon.so
-        </seg>
-        <seg>
-          <!-- $XORG_PREFIX/include/GL is installed by xorg-protos -->
-          $XORG_PREFIX/{include/{EGL,GLES,GLES2,GLES3,KHR},
-          $XORG_PREFIX/lib/{dri,vdpau}},
-          $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
-          particularly browsers and games),
-          $XORG_PREFIX/share/vulkan,
-          and /usr/share/doc/mesa-&mesa-version;
-        </seg>
-@y
-        <seg>
-          glxgears and glxinfo
-        </seg>
-        <seg>
-          libEGL.so,
-          libGL.so,
-          libGLESv1_CM.so,
-          libGLESv2.so,
-          libgbm.so,
-          libglapi.so, and
-          libxatracker.so
-        </seg>
-        <seg>
-          <!-- d3dadapter9.so (optional)
-               I guess this is useless today, Wine applications use Vulkan
-               through libvkd3d, and new games with native Linux support
-               likely uses Vulkan directly.  -->
-          <!-- Begin gallium DRI drivers (*_dri.so) and VA-API drivers
-               (*_drv_video.so): this is the full set -->
-          crocus_dri.so,
-          i915_dri.so,
-          iris_dri.so,
-          kms_swrast_dri.so,
-          nouveau_dri.so,
-          nouveau_drv_video.so,
-          r300_dri.so,
-          r600_dri.so,
-          r600_drv_video.so,
-          radeonsi_dri.so,
-          radeonsi_drv_video.so,
-          swrast_dri.so,
-          virtio_gpu_dri.so,
-          virtio_gpu_drv_video.so, and
-          vmwgfx_dri.so
-          <!-- End DRI Drivers -->
-        </seg>
-        <seg>
-          <!-- Begin VDPAU drivers -->
-          libvdpau_nouveau.so,
-          libvdpau_r300.so
-          libvdpau_r600.so, and
-          libvdpau_radeonsi.so
-          libvdpau_virtio_gpu.so
-          <!-- End VDPAU drivers -->
-          (Many of these drivers are hard-linked).
-        </seg>
-        <seg>
-          libvulkan_intel_hasvk.so,
-          libvulkan_intel.so,
-          libvulkan_lvp.so, and
-          libvulkan_radeon.so
-        </seg>
-        <seg>
-          <!-- $XORG_PREFIX/include/GL is installed by xorg-protos -->
-          $XORG_PREFIX/{include/{EGL,GLES,GLES2,GLES3,KHR},
-          $XORG_PREFIX/lib/{dri,vdpau}},
-          $XORG_PREFIX/share/drirc.d (contains workarounds for various applications,
-          particularly browsers and games),
-          $XORG_PREFIX/share/vulkan,
-          and /usr/share/doc/mesa-&mesa-version;
-        </seg>
 @z
 
 @x

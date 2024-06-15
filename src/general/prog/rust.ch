@@ -365,13 +365,13 @@
 @z
 
 @x
-      As with all large test suites, other tests might fail on some machines -
+      As with all large test suites, some tests might fail on some machines -
       if the number of additional failures is low,
       check the log for 'failures:' and review lines above that, particularly the
       'stderr:' lines. Any mention of
       SIGSEGV or signal 11 in a failing test is a cause for concern.
 @y
-      As with all large test suites, other tests might fail on some machines -
+      As with all large test suites, some tests might fail on some machines -
       if the number of additional failures is low,
       check the log for 'failures:' and review lines above that, particularly the
       'stderr:' lines. Any mention of

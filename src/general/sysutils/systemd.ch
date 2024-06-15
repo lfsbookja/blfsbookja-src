@@ -187,18 +187,14 @@
 
 @x
       To test the results, issue: <command>ninja test</command>.
-      <!-- test-netlink: https://github.com/systemd/systemd/issues/27969 -->
-      The test named <filename>test-stat-util</filename> and
-      <filename>test-netlink</filename> are known to fail
+      The test named <filename>test-stat-util</filename> is known to fail
       if some kernel features are not enabled.
       If the test suite is ran as the &root; user, some
       other tests may fail because they depend on various kernel
       configuration options.
 @y
       To test the results, issue: <command>ninja test</command>.
-      <!-- test-netlink: https://github.com/systemd/systemd/issues/27969 -->
-      The test named <filename>test-stat-util</filename> and
-      <filename>test-netlink</filename> are known to fail
+      The test named <filename>test-stat-util</filename> is known to fail
       if some kernel features are not enabled.
       If the test suite is ran as the &root; user, some
       other tests may fail because they depend on various kernel

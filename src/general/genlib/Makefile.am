@@ -42,6 +42,7 @@ CHANGE_FILES = \
 	libatomic_ops.ch         \
 	libblockdev.ch           \
 	libbytesize.ch           \
+	libclc.ch                \
 	libcloudproviders.ch     \
 	libdaemon.ch             \
 	libdisplay-info.ch       \
@@ -97,6 +98,7 @@ CHANGE_FILES = \
 	qcoro.ch                 \
 	spidermonkey.ch          \
 	spirv-headers.ch         \
+	spirv-llvm-translator.ch \
 	spirv-tools.ch           \
 	talloc.ch                \
 	telepathy-glib.ch        \
