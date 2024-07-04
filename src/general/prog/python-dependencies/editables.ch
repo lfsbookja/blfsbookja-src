@@ -17,10 +17,10 @@
 
 @x
         <application>Editables</application> is python library for creating
-        <quote>editable wheels</quote>.
+        <quote>editable wheels.</quote>
 @y
         <application>Editables</application> is python library for creating
-        <quote>editable wheels</quote>.
+        <quote>editable wheels.</quote>
 @z
 
 @x

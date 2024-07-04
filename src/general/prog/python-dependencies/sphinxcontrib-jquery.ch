@@ -10,95 +10,61 @@
 @z
 
 @x
-    <sect3 role="package">
       <title>Introduction to Sphinxcontrib-jquery Module</title>
 @y
-    <sect3 role="package">
       <title>Introduction to Sphinxcontrib-jquery Module</title>
 @z
 
 @x
-      <para>
         The <application>Sphinxcontrib-jquery</application> package is a
         <application>Sphinx</application> extension which includes jQuery
         on newer Sphinx releases.
-      </para>
 @y
-      <para>
         The <application>Sphinxcontrib-jquery</application> package is a
         <application>Sphinx</application> extension which includes jQuery
         on newer Sphinx releases.
-      </para>
 @z
 
 @x
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
-            Download (HTTP): <ulink url="&sc-jquery-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download (FTP): <ulink url="&sc-jquery-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download MD5 sum: &sc-jquery-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Download size: &sc-jquery-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated disk space required: &sc-jquery-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
-            Estimated build time: &sc-jquery-time;
-          </para>
-        </listitem>
-      </itemizedlist>
 @y
       <bridgehead renderas="sect4">Package Information</bridgehead>
-      <itemizedlist spacing="compact">
-        <listitem>
-          <para>
+@z
+
+@x
             Download (HTTP): <ulink url="&sc-jquery-download-http;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (HTTP): <ulink url="&sc-jquery-download-http;"/>
+@z
+
+@x
             Download (FTP): <ulink url="&sc-jquery-download-ftp;"/>
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download (FTP): <ulink url="&sc-jquery-download-ftp;"/>
+@z
+
+@x
             Download MD5 sum: &sc-jquery-md5sum;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download MD5 sum: &sc-jquery-md5sum;
+@z
+
+@x
             Download size: &sc-jquery-size;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Download size: &sc-jquery-size;
+@z
+
+@x
             Estimated disk space required: &sc-jquery-buildsize;
-          </para>
-        </listitem>
-        <listitem>
-          <para>
+@y
+            Estimated disk space required: &sc-jquery-buildsize;
+@z
+
+@x
             Estimated build time: &sc-jquery-time;
-          </para>
-        </listitem>
-      </itemizedlist>
+@y
+            Estimated build time: &sc-jquery-time;
 @z
 
 @x
@@ -132,16 +98,8 @@
 @z
 
 @x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <sect3 role="installation">
       <title>Installation of Sphinxcontrib-jquery</title>
 @y
-    <sect3 role="installation">
       <title>Installation of Sphinxcontrib-jquery</title>
 @z
 
@@ -152,101 +110,45 @@
 @z
 
 @x
-&build-wheel;
+      This package does not come with a test suite.
 @y
-&build-wheel;
+      This package does not come with a test suite.
 @z
 
 @x
-    <para>
-      This package does not come with a testsuite.
-    </para>
-@y
-    <para>
-      This package does not come with a testsuite.
-    </para>
-@z
-
-@x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>&install-wheel; sphinxcontrib-jquery</userinput></screen>
-@y
-<screen role="root"><userinput>&install-wheel; sphinxcontrib-jquery</userinput></screen>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@y
-    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
-      href="../../../xincludes/pip3-cmd-explain.xml"/>
-@z
-
-@x
-    <sect3 role="content">
       <title>Contents</title>
 @y
-    <sect3 role="content">
       <title>Contents</title>
 @z
 
 @x
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @y
-      <segmentedlist>
         <segtitle>Installed Programs</segtitle>
         <segtitle>Installed Libraries</segtitle>
         <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-        <seglistitem>
           <seg>None</seg>
           <seg>None</seg>
           <seg>
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib and
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib_jquery-&sc-jquery-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
 @y
-        <seglistitem>
-          <seg>None</seg>
-          <seg>None</seg>
+          <seg>&None;</seg>
+          <seg>&None;</seg>
           <seg>
-            /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib and
+            /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib,
             /usr/lib/python&python3-majorver;/site-packages/sphinxcontrib_jquery-&sc-jquery-version;.dist-info
           </seg>
-        </seglistitem>
-      </segmentedlist>
-@z
-
-@x
-    </sect3>
-@y
-    </sect3>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
 @z

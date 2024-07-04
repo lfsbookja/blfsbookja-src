@@ -264,14 +264,6 @@
 @z
 
 @x
-      <parameter>--disable-systemd</parameter>: Systemd is not supported by
-      this version of BLFS.
-@y
-      <parameter>--disable-systemd</parameter>: Systemd is not supported by
-      this version of BLFS.
-@z
-
-@x
       <parameter>--with-rcdir=/tmp/cupsinit</parameter>: This switch tells the
       build process to install the shipped bootscript into <filename
       class="directory">/tmp</filename> instead of <filename

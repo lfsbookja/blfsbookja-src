@@ -237,14 +237,14 @@
       links and reboot again.  Static devices do not need to be removed
       (console and null are always needed) because they are covered by the
       <systemitem class="filesystem">tmpfs</systemitem> partition.  Disk
-      usage for devices is negligible (about 20&ndash;30 bytes per entry.)
+      usage for devices is negligible (about 20&ndash;30 bytes per entry).
 @y
       If you want to restore the dynamic devices, recreate the
       <filename>/etc/rc.d/rcS.d/{S10udev,S50udev_retry}</filename> symbolic
       links and reboot again.  Static devices do not need to be removed
       (console and null are always needed) because they are covered by the
       <systemitem class="filesystem">tmpfs</systemitem> partition.  Disk
-      usage for devices is negligible (about 20&ndash;30 bytes per entry.)
+      usage for devices is negligible (about 20&ndash;30 bytes per entry).
 @z
 
 @x

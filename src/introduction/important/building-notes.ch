@@ -473,7 +473,8 @@
     output and then provide a <keycap>y</keycap> to a prompt. This technique
     could be used in instances when otherwise you would have to page through
     the output of a file (such as a license agreement) and then answer the
-    question of <quote>do you accept the above?</quote>. For this example,
+    question of <computeroutput>do you accept the above?</computeroutput>.
+    For this example,
     another short <application>Bash</application> script is required:</para>
 @y
     <para>The last example will use the <command>yes</command> command in
@@ -481,7 +482,8 @@
     output and then provide a <keycap>y</keycap> to a prompt. This technique
     could be used in instances when otherwise you would have to page through
     the output of a file (such as a license agreement) and then answer the
-    question of <quote>do you accept the above?</quote>. For this example,
+    question of <computeroutput>do you accept the above?</computeroutput>.
+    For this example,
     another short <application>Bash</application> script is required:</para>
 @z
 
@@ -549,37 +551,63 @@
         <para><emphasis>Required</emphasis> means that the target package
         cannot be correctly built without the dependency having first been
         installed, except if the dependency is said to be
-        <quote>runtime</quote>, which means the target package can be built but
+        <quote>runtime</quote> which means the target package can be built but
         cannot function without it.</para>
 @y
         <para>
         <emphasis>必須</emphasis> は、パッケージを初めてインストールする際には、依存しているそれらのパッケージがない状態では正しくビルドすることができないことを表します。
         except if the dependency is said to be
-        <quote>runtime</quote>, which means the target package can be built but
+        <quote>runtime</quote> which means the target package can be built but
         cannot function without it.
         </para>
 @z
 
 @x
+          Note that a target package can start to <quote>function</quote>
+          in many subtle ways: an installed configuration file can make the
+          init system, cron daemon, or bus daemon to run a program
+          automatically; another package using the target package as an
+          dependency can run a program from the target package in the
+          building system; and the configuration sections in the BLFS book
+          may also run a program from a just installed package.  So if
+          you are installing the target package without a
+          <emphasis>Required (runtime)</emphasis> dependency installed,
+          You should install the dependency as soon as possible after the
+          installation of the target package.
+@y
+          Note that a target package can start to <quote>function</quote>
+          in many subtle ways: an installed configuration file can make the
+          init system, cron daemon, or bus daemon to run a program
+          automatically; another package using the target package as an
+          dependency can run a program from the target package in the
+          building system; and the configuration sections in the BLFS book
+          may also run a program from a just installed package.  So if
+          you are installing the target package without a
+          <emphasis>Required (runtime)</emphasis> dependency installed,
+          You should install the dependency as soon as possible after the
+          installation of the target package.
+@z
+
+@x
         <para><emphasis>Recommended</emphasis> means that BLFS strongly
         suggests this package is installed first (except if said to be
-        <quote>runtime</quote>, see below) for a clean and trouble-free
+        <quote>runtime,</quote> see below) for a clean and trouble-free
         build, that won't have issues either during the build process, or at
         run-time.  The instructions in the book assume these packages are
         installed.  Some changes or workarounds may be required if these
         packages are not installed. If a recommended dependency is said
-        to be <quote>runtime</quote>, it means that BLFS strongly suggests
+        to be <quote>runtime,</quote> it means that BLFS strongly suggests
         that this dependency is installed before using the package, for
         getting full functionality.</para>
 @y
         <para><emphasis>Recommended</emphasis> means that BLFS strongly
         suggests this package is installed first (except if said to be
-        <quote>runtime</quote>, see below) for a clean and trouble-free
+        <quote>runtime,</quote> see below) for a clean and trouble-free
         build, that won't have issues either during the build process, or at
         run-time.  The instructions in the book assume these packages are
         installed.  Some changes or workarounds may be required if these
         packages are not installed. If a recommended dependency is said
-        to be <quote>runtime</quote>, it means that BLFS strongly suggests
+        to be <quote>runtime,</quote> it means that BLFS strongly suggests
         that this dependency is installed before using the package, for
         getting full functionality.</para>
 @z
@@ -593,7 +621,7 @@
         dependency may also need additional configuration options to enable
         them when the target package is built.  Such additional options are
         often documented in the BLFS book.  If an optional dependency is
-        said to be <quote>runtime</quote>, it means you may install
+        said to be <quote>runtime,</quote> it means you may install
         the dependency after installing the target package to support some
         optional features of the target package if you need these
         features.</para>
@@ -612,7 +640,7 @@
         dependency may also need additional configuration options to enable
         them when the target package is built.  Such additional options are
         often documented in the BLFS book.  If an optional dependency is
-        said to be <quote>runtime</quote>, it means you may install
+        said to be <quote>runtime,</quote> it means you may install
         the dependency after installing the target package to support some
         optional features of the target package if you need these
         features.</para>

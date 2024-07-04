@@ -167,13 +167,10 @@
 
 @x
       If you have <xref linkend="texlive"/>
-      installed and you wish to create documentation in alternate formats,
-      issue the following command
-      (<ulink url="https://mcj.sourceforge.net/">fig2dev</ulink> is needed for
-      the ps format), but note that this process fails due to missing files:
+      installed and you wish to create documentation in the pdf format,
+      issue the following command:
 @y
-      <xref linkend="texlive"/> をインストールしていて、種々のフォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
-      （ps フォーマットに対しては <ulink url="http://mcj.sourceforge.net/">fig2dev</ulink> が必要になります。ただしこの処理は、必要となるファイルが不足しているため失敗します。）
+      <xref linkend="texlive"/> をインストールしていて、pdf フォーマットのドキュメントを生成したい場合は、以下のコマンドを実行します。
 @z
 
 @x
@@ -183,11 +180,11 @@
 @z
 
 @x
-      If you created alternate formats of the documentation, install them
+      If you created the pdf format of the documentation, install them
       using the following command as the
       <systemitem class="username">root</systemitem> user:
 @y
-      種々のフォーマットのドキュメントを生成した場合は <systemitem
+      pdf フォーマットのドキュメントを生成した場合は <systemitem
       class="username">root</systemitem> ユーザーになり以下のコマンドを実行します。
 @z
 

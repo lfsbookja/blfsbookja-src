@@ -175,11 +175,11 @@
 @z
 
 @x
-          If you want to run the full tests, remove -Dtests from the
+          If you want to run the full tests, remove -D tests from the
           <command>meson</command> command above. Please read "kernel
           configuration for running the libinput test suite" (above).
 @y
-          If you want to run the full tests, remove -Dtests from the
+          If you want to run the full tests, remove -D tests from the
           <command>meson</command> command above. Please read "kernel
           configuration for running the libinput test suite" (above).
 @z
@@ -203,12 +203,12 @@
 @z
 
 @x
-        If you have passed <option>-Ddocumentation=true</option> to
+        If you have passed <option>-D documentation=true</option> to
         <command>meson</command>, you can install the generated documentation
         by running the following commands as the <systemitem
         class="username">root</systemitem> user:
 @y
-        If you have passed <option>-Ddocumentation=true</option> to
+        If you have passed <option>-D documentation=true</option> to
         <command>meson</command>, you can install the generated documentation
         by running the following commands as the <systemitem
         class="username">root</systemitem> user:
@@ -221,39 +221,39 @@
 @z
 
 @x
-        <parameter>-Ddebug-gui=false</parameter>: This switch
+        <parameter>-D debug-gui=false</parameter>: This switch
         disables creation of a visual debug helper for libinput. Remove
         if you want it, and you have <xref linkend="gtk3"/> installed.
 @y
-        <parameter>-Ddebug-gui=false</parameter>: This switch
+        <parameter>-D debug-gui=false</parameter>: This switch
         disables creation of a visual debug helper for libinput. Remove
         if you want it, and you have <xref linkend="gtk3"/> installed.
 @z
 
 @x
-        <parameter>-Dtests=false</parameter>: This switch disables compilation of
+        <parameter>-D tests=false</parameter>: This switch disables compilation of
         the main tests.  Even with the tests defined as false, you can still run
         the first four minor tests, as a regular user, but one will be skipped if
         <xref linkend="pyparsing"/> is not installed.
 @y
-        <parameter>-Dtests=false</parameter>: This switch disables compilation of
+        <parameter>-D tests=false</parameter>: This switch disables compilation of
         the main tests.  Even with the tests defined as false, you can still run
         the first four minor tests, as a regular user, but one will be skipped if
         <xref linkend="pyparsing"/> is not installed.
 @z
 
 @x
-        <parameter>-Dlibwacom=false</parameter>: Remove this option if you
+        <parameter>-D libwacom=false</parameter>: Remove this option if you
         have <xref linkend="libwacom"/> installed, or if you are installing
         GNOME.
 @y
-        <parameter>-Dlibwacom=false</parameter>: Remove this option if you
+        <parameter>-D libwacom=false</parameter>: Remove this option if you
         have <xref linkend="libwacom"/> installed, or if you are installing
         GNOME.
 @z
 
 @x
-        <parameter>-Dudev-dir=/usr/lib/udev</parameter>: In case that the
+        <parameter>-D udev-dir=/usr/lib/udev</parameter>: In case that the
         value of <envar>XORG_PREFIX</envar> is not set to
         <filename class='directory'>/usr</filename>, this option prevents
         the package from installing Udev rules and helpers into
@@ -262,7 +262,7 @@
         systems with <envar>XORG_PREFIX</envar> set to
         <filename class='directory'>/usr</filename>, but does no harm.
 @y
-        <parameter>-Dudev-dir=/usr/lib/udev</parameter>: In case that the
+        <parameter>-D udev-dir=/usr/lib/udev</parameter>: In case that the
         value of <envar>XORG_PREFIX</envar> is not set to
         <filename class='directory'>/usr</filename>, this option prevents
         the package from installing Udev rules and helpers into
@@ -273,12 +273,12 @@
 @z
 
 @x
-        <option>-Ddocumentation=true</option>: This switch enables
+        <option>-D documentation=true</option>: This switch enables
         generation of the documentation. Add it if you want to generate
         the documentation. You must have <xref linkend="doxygen"/> and
         <xref linkend="graphviz"/> installed.
 @y
-        <option>-Ddocumentation=true</option>: This switch enables
+        <option>-D documentation=true</option>: This switch enables
         generation of the documentation. Add it if you want to generate
         the documentation. You must have <xref linkend="doxygen"/> and
         <xref linkend="graphviz"/> installed.

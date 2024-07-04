@@ -108,12 +108,12 @@
 
 @x
       <command>aplay</command> should identify the file as
-      <quote>Signed 16 bit Little Endian, Rate 48000 Hz, Stereo</quote>, and
-      you should hear the words <quote>front left</quote>.
+      <computeroutput>Signed 16 bit Little Endian, Rate 48000 Hz, Stereo</computeroutput>, and
+      you should hear the words <quote>front left.</quote>
 @y
       <command>aplay</command> should identify the file as
-      <quote>Signed 16 bit Little Endian, Rate 48000 Hz, Stereo</quote>, and
-      you should hear the words <quote>front left</quote>.
+      <computeroutput>Signed 16 bit Little Endian, Rate 48000 Hz, Stereo</computeroutput>, and
+      you should hear the words <quote>front left.</quote>
 @z
 
 @x

@@ -130,7 +130,7 @@ BLFS 編集者 (2003年3月 &ndash; 2004年6月)</literallayout>
     building a complete, functional software system from the source code
     contributed by many talented individuals throughout the world.  They truly
     allow users to implement the slogan
-    <quote><emphasis>Your distro, your rules</emphasis></quote>.
+    <quote><emphasis>Your distro, your rules</emphasis>.</quote>
 @y
     BLFS プロジェクトは LFS プロジェクトをさらに発展させるものです。
     両プロジェクトともに、オープンソースコミュニティに対して他に類のないものを提供しています。

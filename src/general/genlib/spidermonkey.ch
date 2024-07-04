@@ -134,13 +134,13 @@
         you to untar
         <filename>firefox-&spidermonkey-version;esr.tar.xz</filename> and
         change into the <filename>firefox-&spidermonkey-version;</filename>
-        folder.
+        directory.
 @y
         Unlike most other packages in BLFS, the instructions below require
         you to untar
         <filename>firefox-&spidermonkey-version;esr.tar.xz</filename> and
         change into the <filename>firefox-&spidermonkey-version;</filename>
-        folder.
+        directory.
 @z
 
 @x

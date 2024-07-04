@@ -115,17 +115,17 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="gnupg2"/> (to validate both the initial downloads, and also
-      any updates you might later make using <command>tlmgr</command>.)
+      any updates you might later make using <command>tlmgr</command>)
       <xref linkend="perl-libwww-perl"/> (to use a single connection to the server,
-      which will reduce its load and speed things up.)
+      which will reduce its load and speed things up)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
       <xref linkend="gnupg2"/> (to validate both the initial downloads, and also
-      any updates you might later make using <command>tlmgr</command>.)
+      any updates you might later make using <command>tlmgr</command>)
       <xref linkend="perl-libwww-perl"/> (to use a single connection to the server,
-      which will reduce its load and speed things up.)
+      which will reduce its load and speed things up)
     </para>
 @z
 

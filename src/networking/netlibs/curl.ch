@@ -152,7 +152,7 @@
       <xref linkend="apache"/> and
       <xref linkend="stunnel"/> (for the HTTPS and FTPS tests),
       <xref linkend="openssh"/>, and
-      <xref linkend="valgrind"/> (this will slow the tests down and may cause failures.)
+      <xref linkend="valgrind"/> (this will slow the tests down and may cause failures)
     </para>
 @y
     <bridgehead renderas="sect4">Optional if Running the Test Suite</bridgehead>
@@ -163,7 +163,7 @@
       <xref linkend="apache"/> and
       <xref linkend="stunnel"/> (for the HTTPS and FTPS tests),
       <xref linkend="openssh"/>, and
-      <xref linkend="valgrind"/> (this will slow the tests down and may cause failures.)
+      <xref linkend="valgrind"/> (this will slow the tests down and may cause failures)
     </para>
 @z
 

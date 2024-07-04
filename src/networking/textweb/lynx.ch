@@ -312,21 +312,21 @@
 @x
         <application>Lynx</application> handles the following values of
         the DEFAULT_EDITOR option specially by adding cursor-positioning
-        arguments: <quote>emacs</quote>, <quote>jed</quote>,
-        <quote>jmacs</quote>, <quote>joe</quote>, <quote>jove</quote>,
-        <quote>jpico</quote>, <quote>jstar</quote>, <quote>nano</quote>,
-        <quote>pico</quote>, <quote>rjoe</quote>, <quote>vi</quote> (but not
-        <quote>vim</quote>: in order to position the cursor in
-        <xref linkend="vim"/>, set this option to <quote>vi</quote>).
+        arguments: <literal>emacs</literal>, <literal>jed</literal>,
+        <literal>jmacs</literal>, <literal>joe</literal>, <literal>jove</literal>,
+        <literal>jpico</literal>, <literal>jstar</literal>, <literal>nano</literal>,
+        <literal>pico</literal>, <literal>rjoe</literal>, <literal>vi</literal> (but not
+        <literal>vim</literal>: in order to position the cursor in
+        <xref linkend="vim"/>, set this option to <literal>vi</literal>).
 @y
         <application>Lynx</application> handles the following values of
         the DEFAULT_EDITOR option specially by adding cursor-positioning
-        arguments: <quote>emacs</quote>, <quote>jed</quote>,
-        <quote>jmacs</quote>, <quote>joe</quote>, <quote>jove</quote>,
-        <quote>jpico</quote>, <quote>jstar</quote>, <quote>nano</quote>,
-        <quote>pico</quote>, <quote>rjoe</quote>, <quote>vi</quote> (but not
-        <quote>vim</quote>: in order to position the cursor in
-        <xref linkend="vim"/>, set this option to <quote>vi</quote>).
+        arguments: <literal>emacs</literal>, <literal>jed</literal>,
+        <literal>jmacs</literal>, <literal>joe</literal>, <literal>jove</literal>,
+        <literal>jpico</literal>, <literal>jstar</literal>, <literal>nano</literal>,
+        <literal>pico</literal>, <literal>rjoe</literal>, <literal>vi</literal> (but not
+        <literal>vim</literal>: in order to position the cursor in
+        <xref linkend="vim"/>, set this option to <literal>vi</literal>).
 @z
 
 @x

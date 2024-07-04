@@ -334,11 +334,11 @@
 @x
         It is standard practice to name the computer running qemu
         <quote>host</quote> and the emulated machine running under qemu the
-        <quote>guest</quote>. We'll use those notations in the following.
+        <quote>guest.</quote> We'll use those notations in the following.
 @y
         It is standard practice to name the computer running qemu
         <quote>host</quote> and the emulated machine running under qemu the
-        <quote>guest</quote>. We'll use those notations in the following.
+        <quote>guest.</quote> We'll use those notations in the following.
 @z
 
 @x

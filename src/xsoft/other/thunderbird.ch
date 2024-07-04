@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY thunderbird-buildsize     "6.5 GB (229 MB installed)">
+  <!ENTITY thunderbird-buildsize     "6.1 GB (224 MB installed)">
   <!ENTITY thunderbird-time          "12 SBU (on a 8-core machine)">
 @y
-  <!ENTITY thunderbird-buildsize     "6.5 GB (229 MB installed)">
+  <!ENTITY thunderbird-buildsize     "6.1 GB (224 MB installed)">
   <!ENTITY thunderbird-time          "12 SBU (on a 8-core machine)">
 @z
 

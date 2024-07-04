@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qtermwidget-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY qtermwidget-time          "0.2 SBU (Using parallelism=4)">
 @y
-  <!ENTITY qtermwidget-time          "0.1 SBU (Using parallelism=4)">
+  <!ENTITY qtermwidget-time          "0.2 SBU (Using parallelism=4)">
 @z
 
 @x

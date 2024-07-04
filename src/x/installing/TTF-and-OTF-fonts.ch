@@ -680,37 +680,29 @@
 @z
 
 @x
-    <para>
       The <ulink url="https://github.com/liberationfonts/"> Liberation
       fonts</ulink> provide libre substitutes for Arial, Courier New, and Times
       New Roman. <application>Fontconfig</application> will use them as
       substitutes for those fonts, and also for the similar Helvetica, Courier,
       and Times Roman, though for these it can prefer a different font (see
       the examples in the 'Substitutes' PDFs at <ulink
-      url="http://zarniwhoop.uk/files/PDF-substitutes/">zarniwhoop.uk.)</ulink>
-    </para>
+      url="http://zarniwhoop.uk/files/PDF-substitutes/">zarniwhoop.uk</ulink>).
 @y
-    <para>
       The <ulink url="https://github.com/liberationfonts/"> Liberation
       fonts</ulink> provide libre substitutes for Arial, Courier New, and Times
       New Roman. <application>Fontconfig</application> will use them as
       substitutes for those fonts, and also for the similar Helvetica, Courier,
       and Times Roman, though for these it can prefer a different font (see
       the examples in the 'Substitutes' PDFs at <ulink
-      url="http://zarniwhoop.uk/files/PDF-substitutes/">zarniwhoop.uk.)</ulink>
-    </para>
+      url="http://zarniwhoop.uk/files/PDF-substitutes/">zarniwhoop.uk</ulink>).
 @z
 
 @x
-    <para>
       Many people will find the Liberation fonts useful for pages where one of
       those fonts is requested.
-    </para>
 @y
-    <para>
       Many people will find the Liberation fonts useful for pages where one of
       those fonts is requested.
-    </para>
 @z
 
 @x

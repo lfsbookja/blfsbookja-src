@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY glslang-buildsize     "178 MB (with tests)">
-  <!ENTITY glslang-time          "0.3 SBU (with parallelism=8; with tests)">
+  <!ENTITY glslang-buildsize     "174 MB (with tests)">
+  <!ENTITY glslang-time          "0.3 SBU (with parallelism=4; with tests)">
 @y
-  <!ENTITY glslang-buildsize     "178 MB (with tests)">
-  <!ENTITY glslang-time          "0.3 SBU (with parallelism=8; with tests)">
+  <!ENTITY glslang-buildsize     "174 MB (with tests)">
+  <!ENTITY glslang-time          "0.3 SBU (with parallelism=4; with tests)">
 @z
 
 @x

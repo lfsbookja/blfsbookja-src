@@ -116,7 +116,7 @@
       Note that running the test suite with parallel jobs may cause test
       failure output as cryptic <computeroutput>unknown
       object</computeroutput> messages, resulting a summary falsely claiming
-      <quote>all tests passed</quote>.  If the environment has variables
+      <quote>all tests passed.</quote>  If the environment has variables
       related to proxy settings (<envar>all_proxy</envar>,
       <envar>ALL_PROXY</envar>, <envar>http_proxy</envar>, and etc.) set,
       the test suite will bail out early with messages like
@@ -140,7 +140,7 @@
       Note that running the test suite with parallel jobs may cause test
       failure output as cryptic <computeroutput>unknown
       object</computeroutput> messages, resulting a summary falsely claiming
-      <quote>all tests passed</quote>.  If the environment has variables
+      <quote>all tests passed.</quote>  If the environment has variables
       related to proxy settings (<envar>all_proxy</envar>,
       <envar>ALL_PROXY</envar>, <envar>http_proxy</envar>, and etc.) set,
       the test suite will bail out early with messages like

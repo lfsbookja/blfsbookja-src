@@ -176,12 +176,13 @@
       <xref linkend="pygments"/>,
       <xref linkend="PyYAML"/> (for tests),
       <xref linkend="rsync"/> (for tests),
-      <xref linkend="recommonmark"/> (for building documentation),
       <phrase revision="systemd"><xref linkend="systemd"/>
       (rebuilt with PAM, for tests),</phrase>
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
       <xref linkend="zip"/>,
+      <ulink url="https://pypi.org/project/myst-parser">myst-parser</ulink>
+      (for building documentation),
       <ulink url="https://ocaml.org/">OCaml</ulink>,
       and <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
     </para>
@@ -196,12 +197,13 @@
       <xref linkend="pygments"/>,
       <xref linkend="PyYAML"/> (for tests),
       <xref linkend="rsync"/> (for tests),
-      <xref linkend="recommonmark"/> (for building documentation),
       <phrase revision="systemd"><xref linkend="systemd"/>
       (rebuilt with PAM, for tests),</phrase>
       <xref linkend="texlive"/> (or <xref linkend="tl-installer"/>),
       <xref linkend="valgrind"/>,
       <xref linkend="zip"/>,
+      <ulink url="https://pypi.org/project/myst-parser">myst-parser</ulink>
+      (for building documentation),
       <ulink url="https://ocaml.org/">OCaml</ulink>,
       and <ulink url="https://github.com/Z3Prover/z3">Z3</ulink>
     </para>
@@ -245,22 +247,6 @@
       commands:
 @y
       以下のコマンドを実行して <application>llvm</application> をビルドします。
-@z
-
-@x
-      If you have installed <xref linkend="recommonmark"/> and its
-      dependencies, you can generate the html documentation and manual
-      pages with the following commands:
-@y
-      If you have installed <xref linkend="recommonmark"/> and its
-      dependencies, you can generate the html documentation and manual
-      pages with the following commands:
-@z
-
-@x
-      The clang documentation can be built too:
-@y
-      The clang documentation can be built too:
 @z
 
 @x
@@ -375,114 +361,6 @@
       <segtitle>&InstalledPrograms;</segtitle>
       <segtitle>&InstalledLibraries;</segtitle>
       <segtitle>&InstalledDirectories;</segtitle>
-@z
-
-@x
-        <seg>
-          amdgpu-arch,
-          analyze-build, bugpoint, c-index-test, clang, clang++ (symlinks to
-          clang-&llvm-maj-version;), clang-&llvm-maj-version;, clang-check, clang-cl,
-          clang-cpp (last two symlinks to clang), clang-extdef-mapping, clang-format,
-          clang-linker-wrapper,
-          clang-offload-bundler, clang-offload-packager,
-          clang-refactor, clang-rename, clang-repl, clang-scan-deps,
-          clang-tblgen,
-          diagtool, dsymutil, FileCheck, git-clang-format, hmaptool, intercept-build, llc, lli,
-          llvm-addr2line (symlink to llvm-symbolizer),
-          llvm-ar, llvm-as, llvm-bcanalyzer,
-          llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat,
-          llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
-          llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap, llvm-debuginfo-analyzer,
-          llvm-debuginfod, llvm-debuginfod-find,
-          llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar),
-          llvm-dwarfdump, llvm-dwarfutil,
-          llvm-dwp, llvm-exegesis, llvm-extract, llvm-gsymutil, llvm-ifs,
-          llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
-          llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link,
-          llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml,
-          llvm-modextract, llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump,
-          llvm-opt-report, llvm-otool (symlink to llv-objdump),
-          llvm-pdbutil, llvm-profdata, llvm-profgen,
-          llvm-ranlib (symlink to llvm-ar), llvm-rc,
-          llvm-readelf (symlink to llvm-readobj), llvm-readobj,
-          llvm-readtapi, llvm-reduce,
-          llvm-remarkutil,
-          llvm-rtdyld, llvm-sim, llvm-size, llvm-split, llvm-stress,
-          llvm-strings, llvm-strip (symlink to llvm-objcopy), llvm-symbolizer,
-          llvm-tblgen, llvm-tli-checker, llvm-undname, llvm-windres (symlink to
-          llvm-rc), llvm-xray, nvptx-arch, opt, sancov, sanstats, scan-build,
-          scan-build-py, scan-view, and verify-uselistorder
-        </seg>
-        <seg>
-          libLLVM.so,
-          libLLVM*.a (100 libraries),
-          libLTO.so,
-          libRemarks.so,
-          libclang.so,
-          libclang-cpp.so,
-          libclang*.a (42 libraries),
-          and LLVMgold.so
-        </seg>
-        <seg>
-          /usr/include/{clang,clang-c,llvm,llvm-c},
-          /usr/lib/{clang,cmake/{clang,llvm},libear,libscanbuild},
-          /usr/share/{clang,opt-viewer,scan-build,scan-view},
-          /usr/share/doc/llvm-&llvm-version;, and
-          /etc/clang
-        </seg>
-@y
-        <seg>
-          amdgpu-arch,
-          analyze-build, bugpoint, c-index-test, clang, clang++ (symlinks to
-          clang-&llvm-maj-version;), clang-&llvm-maj-version;, clang-check, clang-cl,
-          clang-cpp (last two symlinks to clang), clang-extdef-mapping, clang-format,
-          clang-linker-wrapper,
-          clang-offload-bundler, clang-offload-packager,
-          clang-refactor, clang-rename, clang-repl, clang-scan-deps,
-          clang-tblgen,
-          diagtool, dsymutil, FileCheck, git-clang-format, hmaptool, intercept-build, llc, lli,
-          llvm-addr2line (symlink to llvm-symbolizer),
-          llvm-ar, llvm-as, llvm-bcanalyzer,
-          llvm-bitcode-strip (symlink to llvm-objcopy), llvm-cat,
-          llvm-cfi-verify, llvm-config, llvm-cov, llvm-c-test, llvm-cvtres,
-          llvm-cxxdump, llvm-cxxfilt, llvm-cxxmap, llvm-debuginfo-analyzer,
-          llvm-debuginfod, llvm-debuginfod-find,
-          llvm-diff, llvm-dis, llvm-dlltool (symlink to llvm-ar),
-          llvm-dwarfdump, llvm-dwarfutil,
-          llvm-dwp, llvm-exegesis, llvm-extract, llvm-gsymutil, llvm-ifs,
-          llvm-install-name-tool (symlink to llvm-objcopy), llvm-jitlink,
-          llvm-lib (symlink to llvm-ar), llvm-libtool-darwin, llvm-link,
-          llvm-lipo, llvm-lto, llvm-lto2, llvm-mc, llvm-mca, llvm-ml,
-          llvm-modextract, llvm-mt, llvm-nm, llvm-objcopy, llvm-objdump,
-          llvm-opt-report, llvm-otool (symlink to llv-objdump),
-          llvm-pdbutil, llvm-profdata, llvm-profgen,
-          llvm-ranlib (symlink to llvm-ar), llvm-rc,
-          llvm-readelf (symlink to llvm-readobj), llvm-readobj,
-          llvm-readtapi, llvm-reduce,
-          llvm-remarkutil,
-          llvm-rtdyld, llvm-sim, llvm-size, llvm-split, llvm-stress,
-          llvm-strings, llvm-strip (symlink to llvm-objcopy), llvm-symbolizer,
-          llvm-tblgen, llvm-tli-checker, llvm-undname, llvm-windres (symlink to
-          llvm-rc), llvm-xray, nvptx-arch, opt, sancov, sanstats, scan-build,
-          scan-build-py, scan-view, verify-uselistorder
-        </seg>
-        <seg>
-          libLLVM.so,
-          libLLVM*.a (100 libraries),
-          libLTO.so,
-          libRemarks.so,
-          libclang.so,
-          libclang-cpp.so,
-          libclang*.a (42 libraries),
-          LLVMgold.so
-        </seg>
-        <seg>
-          /usr/include/{clang,clang-c,llvm,llvm-c},
-          /usr/lib/{clang,cmake/{clang,llvm},libear,libscanbuild},
-          /usr/share/{clang,opt-viewer,scan-build,scan-view},
-          /usr/share/doc/llvm-&llvm-version;,
-          /etc/clang
-        </seg>
 @z
 
 @x

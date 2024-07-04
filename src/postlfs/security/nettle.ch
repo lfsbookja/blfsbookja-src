@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY nettle-buildsize     "95 MB (with tests)">
-  <!ENTITY nettle-time          "0.2 SBU (with tests; both using parallelism=4)">
+  <!ENTITY nettle-buildsize     "100 MB (with tests)">
+  <!ENTITY nettle-time          "0.3 SBU (with tests; both using parallelism=4)">
 @y
-  <!ENTITY nettle-buildsize     "95 MB (with tests)">
-  <!ENTITY nettle-time          "0.2 SBU (with tests; both using parallelism=4)">
+  <!ENTITY nettle-buildsize     "100 MB (with tests)">
+  <!ENTITY nettle-time          "0.3 SBU (with tests; both using parallelism=4)">
 @z
 
 @x

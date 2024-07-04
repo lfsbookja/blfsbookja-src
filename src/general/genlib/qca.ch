@@ -4,9 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qca-time          "0.5 SBU (using parallelism=4; add 0.1 SBU for tests)">
+  <!ENTITY qca-buildsize     "57 MB (with tests)">
+  <!ENTITY qca-time          "1.0 SBU (using parallelism=4; with tests)">
 @y
-  <!ENTITY qca-time          "0.5 SBU (using parallelism=4; add 0.1 SBU for tests)">
+  <!ENTITY qca-buildsize     "57 MB (with tests)">
+  <!ENTITY qca-time          "1.0 SBU (using parallelism=4; with tests)">
 @z
 
 @x
@@ -112,13 +114,9 @@
 @z
 
 @x
-      To test the results, issue <command>make test</command>. <!--One test
-      using <xref linkend="gnupg2"/> fails without a correct passphrase.  The
-      required passphrase does not seem to be published.-->
+      To test the results, issue <command>make test</command>. 
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。<!--
-      <xref linkend="gnupg2"/> を利用するテスト 1 つが、適正なパスフレーズが得られないため失敗します。
-      ここに必要となるパスフレーズは公開されていないようです。 -->
+      ビルド結果をテストする場合は <command>make test</command> を実行します。
 @z
 
 @x

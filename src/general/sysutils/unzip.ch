@@ -270,9 +270,9 @@
 @z
 
 @x
-      The test suite does not work for target <quote>generic</quote>.
+      The test suite does not work for target <literal>generic</literal>.
 @y
-      The test suite does not work for target <quote>generic</quote>.
+      The test suite does not work for target <literal>generic</literal>.
 @z
 
 @x

@@ -11,14 +11,26 @@
 
 @x
       The <application>Wireshark</application> package contains a network
-      protocol analyzer, also known as a <quote>sniffer</quote>. This is useful
+      protocol analyzer, also known as a <quote>sniffer.</quote> This is useful
       for analyzing data captured <quote>off the wire</quote> from a live
       network connection, or data read from a capture file.
 @y
       The <application>Wireshark</application> package contains a network
-      protocol analyzer, also known as a <quote>sniffer</quote>. This is useful
+      protocol analyzer, also known as a <quote>sniffer.</quote> This is useful
       for analyzing data captured <quote>off the wire</quote> from a live
       network connection, or data read from a capture file.
+@z
+
+@x
+      <application>Wireshark</application> provides both a graphical and a
+      TTY-mode front-end for examining captured network packets from over 500
+      protocols, as well as the capability to read capture files from many
+      other popular network analyzers.
+@y
+      <application>Wireshark</application> provides both a graphical and a
+      TTY-mode front-end for examining captured network packets from over 500
+      protocols, as well as the capability to read capture files from many
+      other popular network analyzers.
 @z
 
 @x
@@ -364,7 +376,7 @@
 @x idl2wrs
             is a program that takes a user specified CORBA IDL file and
             generates <quote>C</quote> source code for a
-            <application>Wireshark</application> <quote>plugin</quote>. It
+            <application>Wireshark</application> <quote>plugin.</quote> It
             relies on two Python programs <command>wireshark_be.py</command>
             and <command>wireshark_gen.py</command>, which are not installed
             by default. They have to be copied manually from the
@@ -374,7 +386,7 @@
 @y
             is a program that takes a user specified CORBA IDL file and
             generates <quote>C</quote> source code for a
-            <application>Wireshark</application> <quote>plugin</quote>. It
+            <application>Wireshark</application> <quote>plugin.</quote> It
             relies on two Python programs <command>wireshark_be.py</command>
             and <command>wireshark_gen.py</command>, which are not installed
             by default. They have to be copied manually from the

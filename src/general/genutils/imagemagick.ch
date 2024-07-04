@@ -311,7 +311,7 @@
                                                  Note that the EPS, PS, and PDF
       tests require a working <application>Ghostscript</application>. One test
       in 'make check' needs <quote>Helvetica</quote> from <quote>Ghostscript
-      Standard Fonts</quote>, which are optionally installed in
+      Standard Fonts,</quote> which are optionally installed in
       <xref linkend="gs"/> - that test, and one other, might fail, but all the
       validation can still pass.
 @y
@@ -329,7 +329,7 @@
                                                  Note that the EPS, PS, and PDF
       tests require a working <application>Ghostscript</application>. One test
       in 'make check' needs <quote>Helvetica</quote> from <quote>Ghostscript
-      Standard Fonts</quote>, which are optionally installed in
+      Standard Fonts,</quote> which are optionally installed in
       <xref linkend="gs"/> - that test, and one other, might fail, but all the
       validation can still pass.
 @z

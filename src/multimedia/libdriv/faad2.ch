@@ -130,11 +130,11 @@
 
 @x
       <command>aplay</command> should identify the file as
-      <quote>Signed 16 bit Little Endian, Rate 16000 Hz, Stereo</quote>, and
+      <computeroutput>Signed 16 bit Little Endian, Rate 16000 Hz, Stereo</computeroutput>, and
       you should hear some piano notes.
 @y
       <command>aplay</command> should identify the file as
-      <quote>Signed 16 bit Little Endian, Rate 16000 Hz, Stereo</quote>, and
+      <computeroutput>Signed 16 bit Little Endian, Rate 16000 Hz, Stereo</computeroutput>, and
       you should hear some piano notes.
 @z
 

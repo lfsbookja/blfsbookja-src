@@ -189,14 +189,14 @@
       To test the results, issue: <command>ninja test</command>.
       The test named <filename>test-stat-util</filename> is known to fail
       if some kernel features are not enabled.
-      If the test suite is ran as the &root; user, some
+      If the test suite is run as the &root; user, some
       other tests may fail because they depend on various kernel
       configuration options.
 @y
       To test the results, issue: <command>ninja test</command>.
       The test named <filename>test-stat-util</filename> is known to fail
       if some kernel features are not enabled.
-      If the test suite is ran as the &root; user, some
+      If the test suite is run as the &root; user, some
       other tests may fail because they depend on various kernel
       configuration options.
 @z

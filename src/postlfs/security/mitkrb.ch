@@ -77,6 +77,8 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="bind-utils"/>,
+      <xref linkend='cracklib'/> (<filename>/usr/share/dict/words</filename>
+      referred by some tests),
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,<!-- Seems so that mit has its own
@@ -94,6 +96,8 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="bind-utils"/>,
+      <xref linkend='cracklib'/> (<filename>/usr/share/dict/words</filename>
+      referred by some tests),
       <xref linkend="gnupg2"/> (to authenticate the package),
       <xref linkend="keyutils"/>,
       <xref linkend="openldap"/>,<!-- Seems so that mit has its own
@@ -104,7 +108,7 @@
       <ulink url="https://thrysoee.dk/editline/">libedit</ulink>,
       <ulink url="https://cmocka.org/">cmocka</ulink>,
       <ulink url="https://pypi.org/project/kdcproxy/">kdcproxy</ulink>,
-      <ulink url="https://pypi.org/project/pyrad/">pyrad</ulink>,
+      <ulink url="https://pypi.org/project/pyrad/">pyrad</ulink>, and
       <ulink url="https://cwrap.org/resolv_wrapper.html">resolv_wrapper</ulink>
     </para>
 @z

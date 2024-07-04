@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libgcrypt-buildsize     "131 MB (with tests)">
-  <!ENTITY libgcrypt-time          "0.3 SBU (with documentation; add 0.4 SBU for tests)">
+  <!ENTITY libgcrypt-buildsize     "146 MB (with tests)">
+  <!ENTITY libgcrypt-time          "0.6 SBU (with documentation; add 0.4 SBU for tests)">
 @y
-  <!ENTITY libgcrypt-buildsize     "131 MB (テスト込み)">
-  <!ENTITY libgcrypt-time          "0.3 SBU (ドキュメント込み、テスト実施時はさらに 0.4 SBU)">
+  <!ENTITY libgcrypt-buildsize     "146 MB (テスト込み)">
+  <!ENTITY libgcrypt-time          "0.6 SBU (ドキュメント込み、テスト実施時はさらに 0.4 SBU)">
 @z
 
 @x
@@ -176,7 +176,7 @@
 
 @x
         <seg>
-          dumpsexp, hmac256, libgcrypt-config, and mpicalc
+          dumpsexp, hmac256, and mpicalc
         </seg>
         <seg>
           libgcrypt.so
@@ -186,7 +186,7 @@
         </seg>
 @y
         <seg>
-          dumpsexp, hmac256, libgcrypt-config, mpicalc
+          dumpsexp, hmac256, mpicalc
         </seg>
         <seg>
           libgcrypt.so

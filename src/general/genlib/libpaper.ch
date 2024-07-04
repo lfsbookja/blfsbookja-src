@@ -135,10 +135,10 @@
 
 @x
         You may use a different paper size, such as
-        <quote><literal>letter</literal></quote>.
+        <literal>letter</literal>.
 @y
         You may use a different paper size, such as
-        <quote><literal>letter</literal></quote>.
+        <literal>letter</literal>.
 @z
 
 @x

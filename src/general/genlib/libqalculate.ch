@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libqalculate-buildsize     "150 MB (with tests)">
+  <!ENTITY libqalculate-buildsize     "156 MB (with tests)">
   <!ENTITY libqalculate-time          "0.9 SBU (With tests; both using parallelism=8)">
 @y
-  <!ENTITY libqalculate-buildsize     "150 MB (with tests)">
+  <!ENTITY libqalculate-buildsize     "156 MB (with tests)">
   <!ENTITY libqalculate-time          "0.9 SBU (With tests; both using parallelism=8)">
 @z
 

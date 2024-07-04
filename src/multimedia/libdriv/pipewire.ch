@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pipewire-buildsize     "62 MB (with tests)">
+  <!ENTITY pipewire-buildsize     "69 MB (with tests)">
   <!ENTITY pipewire-time          "0.4 SBU (with tests, both using parallelism=4)">
 @y
-  <!ENTITY pipewire-buildsize     "62 MB（テスト込み）">
+  <!ENTITY pipewire-buildsize     "629 MB（テスト込み）">
   <!ENTITY pipewire-time          "0.4 SBU（テスト込み、いずれも parallelism=4 利用）">
 @z
 

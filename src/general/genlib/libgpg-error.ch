@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY libgpg-error-buildsize     "11 MB (with tests)">
-  <!ENTITY libgpg-error-time          "0.1 SBU (with tests)">
+  <!ENTITY libgpg-error-time          "0.3 SBU (with tests)">
 @y
   <!ENTITY libgpg-error-buildsize     "11 MB（テスト込み）">
-  <!ENTITY libgpg-error-time          "0.1 SBU（テスト込み）">
+  <!ENTITY libgpg-error-time          "0.3 SBU（テスト込み）">
 @z
 
 @x

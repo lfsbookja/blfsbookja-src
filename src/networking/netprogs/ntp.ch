@@ -246,11 +246,11 @@
 @z
 
 @x
-        You may wish to add a <quote>Security session</quote>. For
+        You may wish to add a <quote>Security session.</quote> For
         explanations, see <ulink url=
         "https://www.eecis.udel.edu/~mills/ntp/html/accopt.html#restrict"/>.
 @y
-        You may wish to add a <quote>Security session</quote>. For
+        You may wish to add a <quote>Security session.</quote> For
         explanations, see <ulink url=
         "https://www.eecis.udel.edu/~mills/ntp/html/accopt.html#restrict"/>.
 @z

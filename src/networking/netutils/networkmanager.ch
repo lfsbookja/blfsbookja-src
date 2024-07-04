@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY NetworkManager-buildsize     "931 MB (with tests and documentation)">
-  <!ENTITY NetworkManager-time          "0.8 SBU (with tests, using parallelism=4)">
+  <!ENTITY NetworkManager-buildsize     "299 MB (with tests and documentation)">
+  <!ENTITY NetworkManager-time          "0.9 SBU (with tests, using parallelism=4)">
 @y
-  <!ENTITY NetworkManager-buildsize     "931 MB (テストとドキュメント込み)">
-  <!ENTITY NetworkManager-time          "0.8 SBU (テスト込み、parallelism=4 利用)">
+  <!ENTITY NetworkManager-buildsize     "299 MB (テストとドキュメント込み)">
+  <!ENTITY NetworkManager-time          "0.9 SBU (テスト込み、parallelism=4 利用)">
 @z
 
 @x

@@ -19,11 +19,11 @@
 
 @x
       The <application>Uchardet</application> package contains an encoding
-      detectory library which takes a sequence of bytes in an unknown character
+      detector library which takes a sequence of bytes in an unknown character
       encoding and attempts to determine the encoding of the text.
 @y
       The <application>Uchardet</application> package contains an encoding
-      detectory library which takes a sequence of bytes in an unknown character
+      detector library which takes a sequence of bytes in an unknown character
       encoding and attempts to determine the encoding of the text.
 @z
 

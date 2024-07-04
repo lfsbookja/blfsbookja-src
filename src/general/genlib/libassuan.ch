@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libassuan-buildsize     "7.9 MB (with tests, add 3.4 MB for documentation)">
-  <!ENTITY libassuan-time          "0.1 SBU (with tests and documentation)">
+  <!ENTITY libassuan-buildsize     "6.5 MB (with tests, add 3.4 MB for pdf documentation)">
+  <!ENTITY libassuan-time          "0.2 SBU (with tests and html documentation)">
 @y
-  <!ENTITY libassuan-buildsize     "7.9 MB（テスト込み、ドキュメント込みはさらに 3.4 MB）">
-  <!ENTITY libassuan-time          "0.1 SBU（テスト、ドキュメント込み）">
+  <!ENTITY libassuan-buildsize     "6.5 MB（テスト込み、ドキュメント込みはさらに 3.4 MB）">
+  <!ENTITY libassuan-time          "0.2 SBU（テスト、ドキュメント込み）">
 @z
 
 @x
@@ -168,7 +168,7 @@
 
 @x
         <seg>
-          libassuan-config
+          None
         </seg>
         <seg>
           libassuan.so
@@ -178,7 +178,7 @@
         </seg>
 @y
         <seg>
-          libassuan-config
+          &None;
         </seg>
         <seg>
           libassuan.so

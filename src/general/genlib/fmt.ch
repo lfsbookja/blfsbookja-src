@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY fmt-buildsize     "4.5 MB (add 40 MB for tests)">
-  <!ENTITY fmt-time          "less than 0.1 SBU (add 0.2 SBU for tests)">
+  <!ENTITY fmt-buildsize     "3.9 MB (add 39 MB for tests)">
+  <!ENTITY fmt-time          "less than 0.1 SBU (add 0.2 SBU for testsi; both using parallelism=4)">
 @y
-  <!ENTITY fmt-buildsize     "4.5 MB (add 40 MB for tests)">
-  <!ENTITY fmt-time          "less than 0.1 SBU (add 0.2 SBU for tests)">
+  <!ENTITY fmt-buildsize     "3.9 MB (add 39 MB for tests)">
+  <!ENTITY fmt-time          "less than 0.1 SBU (add 0.2 SBU for testsi; both using parallelism=4)">
 @z
 
 @x
@@ -101,10 +101,10 @@
 @z
 
 @x
-      <parameter>-DFMT_TEST=OFF</parameter>: This switch initializes 
+      <parameter>-D FMT_TEST=OFF</parameter>: This switch initializes 
       the package tests.  Set to ON if you wish to run tests.
 @y
-      <parameter>-DFMT_TEST=OFF</parameter>: This switch initializes 
+      <parameter>-D FMT_TEST=OFF</parameter>: This switch initializes 
       the package tests.  Set to ON if you wish to run tests.
 @z
 

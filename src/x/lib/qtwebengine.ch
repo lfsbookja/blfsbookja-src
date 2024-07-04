@@ -127,6 +127,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
 
     <para role="required">
+      <xref linkend="cups"/>,
       <xref linkend="html5lib"/>,
       <xref linkend="nodejs"/>,
       <xref linkend="nss"/>,
@@ -137,6 +138,7 @@
     <bridgehead renderas="sect4">Required</bridgehead>
 
     <para role="required">
+      <xref linkend="cups"/>,
       <xref linkend="html5lib"/>,
       <xref linkend="nodejs"/>,
       <xref linkend="nss"/>,

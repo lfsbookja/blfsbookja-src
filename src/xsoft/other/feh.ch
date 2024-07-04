@@ -4,23 +4,20 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY feh-buildsize     "6.9 MB (with tests)">
+  <!ENTITY feh-buildsize     "5.2 MB (with tests)">
   <!ENTITY feh-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY feh-buildsize     "6.9 MB (with tests)">
+  <!ENTITY feh-buildsize     "5.2 MB (with tests)">
   <!ENTITY feh-time          "less than 0.1 SBU (with tests)">
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to feh</title>
 @y
-  <sect2 role="package">
     <title>Introduction to feh</title>
 @z
 
 @x
-    <para>
       <application>feh</application> is a fast, lightweight image viewer which
       uses Imlib2. It is commandline-driven and supports multiple images
       through slideshows, thumbnail browsing or multiple windows, and montages
@@ -28,9 +25,7 @@
       features include fast dynamic zooming, progressive loading, loading via
       HTTP (with reload support for watching webcams), recursive file opening
       (slideshow of a directory hierarchy), and mouse wheel/keyboard control.
-    </para>
 @y
-    <para>
       <application>feh</application> is a fast, lightweight image viewer which
       uses Imlib2. It is commandline-driven and supports multiple images
       through slideshows, thumbnail browsing or multiple windows, and montages
@@ -38,132 +33,53 @@
       features include fast dynamic zooming, progressive loading, loading via
       HTTP (with reload support for watching webcams), recursive file opening
       (slideshow of a directory hierarchy), and mouse wheel/keyboard control.
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
 @z
 
 @x
-<!--  Seems to work OK now
-    <note>
-      <para>
-        For some reason, using a browser, the link will not download the
-        package as a tarball, but instead, as a page. Therefore, you will need
-        to use <quote>Save link as</quote> or the <command>wget</command> or
-        another similar command, in the command line.
-      </para>
-    </note>
--->
-      <listitem>
-        <para>
           Download (HTTP): <ulink url="&feh-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&feh-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &feh-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &feh-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &feh-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &feh-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
-<!--  Seems to work OK now
-    <note>
-      <para>
-        For some reason, using a browser, the link will not download the
-        package as a tarball, but instead, as a page. Therefore, you will need
-        to use <quote>Save link as</quote> or the <command>wget</command> or
-        another similar command, in the command line.
-      </para>
-    </note>
--->
-      <listitem>
-        <para>
           Download (HTTP): <ulink url="&feh-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&feh-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &feh-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &feh-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &feh-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &feh-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @z
 
 @x
-<!-- I don't think this is needed as of 2.17. -renodr -->
-<!--
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Optional patch, for the test suite:
-          <ulink
-            url="&patch-root;/feh-&feh-version;-disable_some_tests-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
--->
+          Download (FTP): <ulink url="&feh-download-ftp;"/>
+@y
+          Download (FTP): <ulink url="&feh-download-ftp;"/>
+@z
+
+@x
+          Download MD5 sum: &feh-md5sum;
+@y
+          Download MD5 sum: &feh-md5sum;
+@z
+
+@x
+          Download size: &feh-size;
+@y
+          Download size: &feh-size;
+@z
+
+@x
+          Estimated disk space required: &feh-buildsize;
+@y
+          Estimated disk space required: &feh-buildsize;
+@z
+
+@x
+          Estimated build time: &feh-time;
+@y
+          Estimated build time: &feh-time;
+@z
+
+@x
     <bridgehead renderas="sect3">feh Dependencies</bridgehead>
 @y
-<!-- I don't think this is needed as of 2.17. -renodr -->
-<!--
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Optional patch, for the test suite:
-          <ulink
-            url="&patch-root;/feh-&feh-version;-disable_some_tests-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
--->
     <bridgehead renderas="sect3">feh Dependencies</bridgehead>
 @z
 
@@ -236,167 +152,76 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of feh</title>
 @y
-  <sect2 role="installation">
     <title>Installation of feh</title>
 @z
 
 @x
-<!--
-    <para>
-      Due to well-known problems when <application>feh</application> try to
-      load gif images (sometimes <application>imlib2</application> being blamed
-      for that), some tests fail. To avoid that, apply the following patch, if
-      you intend to run the test suite:
-    </para>
-@y
-<!--
-    <para>
-      Due to well-known problems when <application>feh</application> try to
-      load gif images (sometimes <application>imlib2</application> being blamed
-      for that), some tests fail. To avoid that, apply the following patch, if
-      you intend to run the test suite:
-    </para>
-@z
-
-@x
-<screen><userinput>patch -Np1 -i ../feh-&feh-version;-disable_some_tests-1.patch</userinput></screen>
--->
-@y
-<screen><userinput>patch -Np1 -i ../feh-&feh-version;-disable_some_tests-1.patch</userinput></screen>
--->
-@z
-
-@x
-    <para>
       Install <application>feh</application> by running the following commands:
-    </para>
 @y
-    <para>
       Install <application>feh</application> by running the following commands:
-    </para>
 @z
 
 @x
-<screen><userinput>sed -i "s:doc/feh:&amp;-&feh-version;:" config.mk &amp;&amp;
-make PREFIX=/usr</userinput></screen>
-@y
-<screen><userinput>sed -i "s:doc/feh:&amp;-&feh-version;:" config.mk &amp;&amp;
-make PREFIX=/usr</userinput></screen>
-@z
-
-@x
-    <para>
       To test the results, issue: <command>make test</command>.
-    </para>
 @y
-    <para>
       To test the results, issue: <command>make test</command>.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make PREFIX=/usr install</userinput></screen>
-@y
-<screen role="root"><userinput>make PREFIX=/usr install</userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
     <title>Command Explanations</title>
 @z
 
 @x
-    <para>
       <command>sed -i "s:doc/feh:&amp;-&feh-version;:" config.mk</command>: This
       sed fixes the doc directory to a versioned one, as used in BLFS.
-   </para>
 @y
-    <para>
       <command>sed -i "s:doc/feh:&amp;-&feh-version;:" config.mk</command>: This
       sed fixes the doc directory to a versioned one, as used in BLFS.
-   </para>
 @z
 
 @x
-    <para>
       <option>curl=0</option>: Use this make flag if you don't have the cURL
       package installed.
-    </para>
 @y
-    <para>
       <option>curl=0</option>: Use this make flag if you don't have the cURL
       package installed.
-    </para>
 @z
 
 @x
-    <para>
       <option>exif=1</option>: This make flag enables builtin Exif tag display
       support.
-    </para>
 @y
-    <para>
       <option>exif=1</option>: This make flag enables builtin Exif tag display
       support.
-    </para>
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           feh
         </seg>
@@ -407,10 +232,7 @@ make PREFIX=/usr</userinput></screen>
           /usr/share/doc/feh-&feh-version; and
           /usr/share/feh
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           feh
         </seg>
@@ -421,62 +243,16 @@ make PREFIX=/usr</userinput></screen>
           /usr/share/doc/feh-&feh-version; and
           /usr/share/feh
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="feh-prog">
-        <term><command>feh</command></term>
-        <listitem>
-          <para>
+@x feh
             is an image viewer and cataloguer
-          </para>
-          <indexterm zone="feh feh-prog">
-            <primary sortas="b-feh">feh</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="feh-prog">
-        <term><command>feh</command></term>
-        <listitem>
-          <para>
             is an image viewer and cataloguer
-          </para>
-          <indexterm zone="feh feh-prog">
-            <primary sortas="b-feh">feh</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

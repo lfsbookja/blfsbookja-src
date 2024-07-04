@@ -240,10 +240,10 @@
 @z
 
 @x
-      <parameter>-D gtk=true</parameter>: This option enables GTK support for th
+      <parameter>-D gtk=true</parameter>: This option enables GTK support for the
       graphical user interface.
 @y
-      <parameter>-D gtk=true</parameter>: This option enables GTK support for th
+      <parameter>-D gtk=true</parameter>: This option enables GTK support for the
       graphical user interface.
 @z
 

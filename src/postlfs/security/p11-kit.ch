@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY p11-kit-buildsize     "95 MB (with tests)">
-  <!ENTITY p11-kit-time          "0.8 SBU (with tests)">
+  <!ENTITY p11-kit-buildsize     "93 MB (with tests)">
+  <!ENTITY p11-kit-time          "0.7 SBU (with tests)">
 @y
-  <!ENTITY p11-kit-buildsize     "95 MB (テスト込み)">
-  <!ENTITY p11-kit-time          "0.8 SBU (テスト込み)">
+  <!ENTITY p11-kit-buildsize     "93 MB (テスト込み)">
+  <!ENTITY p11-kit-time          "0.7 SBU (テスト込み)">
 @z
 
 @x
@@ -144,28 +144,28 @@
 @z
 
 @x
-      <parameter>-Dtrust_paths=/etc/pki/anchors</parameter>: this switch
+      <parameter>-D trust_paths=/etc/pki/anchors</parameter>: this switch
       sets the location of trusted certificates used by libp11-kit.so.
 @y
-      <parameter>-Dtrust_paths=/etc/pki/anchors</parameter>: this switch
+      <parameter>-D trust_paths=/etc/pki/anchors</parameter>: this switch
       sets the location of trusted certificates used by libp11-kit.so.
 @z
 
 @x
-      <option>-Dhash_impl=freebl</option>: Use this switch if you want to
+      <option>-D hash_impl=freebl</option>: Use this switch if you want to
       use the Freebl library from <application>NSS</application> for SHA1 and
       MD5 hashing.
 @y
-      <option>-Dhash_impl=freebl</option>:
+      <option>-D hash_impl=freebl</option>:
       SHA1 や MD5 のハッシングに <application>NSS</application> の Freebl ライブラリを利用したい場合に指定します。
 @z
 
 @x
-      <option>-Dgtk_doc=true</option>: Use this switch if you have installed
+      <option>-D gtk_doc=true</option>: Use this switch if you have installed
       <xref linkend="gtk-doc"/> and <xref linkend="libxslt"/> and wish to
       rebuild the documentation and generate manual pages.
 @y
-      <option>-Dgtk_doc=true</option>: 
+      <option>-D gtk_doc=true</option>: 
       <xref linkend="gtk-doc"/> と <xref linkend="libxslt"/> をインストールしていて、ドキュメントを再生成したり man ページを生成したいときに、本スイッチを指定します。
 @z
 

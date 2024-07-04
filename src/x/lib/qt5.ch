@@ -12,15 +12,12 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to Qt5</title>
 @y
-  <sect2 role="package">
     <title>Introduction to Qt5</title>
 @z
 
 @x
-    <para>
       <application>Qt5</application> is a cross-platform application framework
       that is widely used for developing application software with a graphical
       user interface (GUI) (in which cases <application>Qt5</application> is
@@ -28,9 +25,7 @@
       programs such as command-line tools and consoles for servers. Two of the
       major users of <application>Qt</application> are <application>KDE
       Frameworks 5 (KF5)</application> and <application>LXQt</application>.
-    </para>
 @y
-    <para>
       <application>Qt5</application> is a cross-platform application framework
       that is widely used for developing application software with a graphical
       user interface (GUI) (in which cases <application>Qt5</application> is
@@ -38,135 +33,90 @@
       programs such as command-line tools and consoles for servers. Two of the
       major users of <application>Qt</application> are <application>KDE
       Frameworks 5 (KF5)</application> and <application>LXQt</application>.
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&qt5-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&qt5-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &qt5-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &qt5-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &qt5-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &qt5-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&qt5-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&qt5-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&qt5-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&qt5-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &qt5-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &qt5-md5sum;
+@z
+
+@x
           Download size: &qt5-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &qt5-size;
+@z
+
+@x
           Estimated disk space required: &qt5-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &qt5-buildsize;
+@z
+
+@x
           Estimated build time: &qt5-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &qt5-time;
 @z
 
 @x
     <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@y
+    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
+@z
+
+@x
           Now that <application>Qt5</application> updates are restricted to
           commercial customers, upstream patches for the various modules are
           being curated at kde.
           Patches for the modules required by packages in BLFS have been
           aggregated for the non-modular Qt5 build we use.
-        </para>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt5-version;-kf5-1.patch"/>
-        </para>
-        <para>
-          Details of the kde curation can be found at
-          <ulink url="https://dot.kde.org/2021/04/06/announcing-kdes-qt-5-patch-collection"/>
-          and <ulink url="https://community.kde.org/Qt5PatchCollection"/>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Required patch:
-          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt5-version;-security_fix-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
-    <bridgehead renderas="sect3">Additional Downloads</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
           Now that <application>Qt5</application> updates are restricted to
           commercial customers, upstream patches for the various modules are
           being curated at kde.
           Patches for the modules required by packages in BLFS have been
           aggregated for the non-modular Qt5 build we use.
-        </para>
-        <para>
+@z
+
+@x
           Required patch:
-          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt5-version;-kf5-1.patch"/>
-        </para>
-        <para>
+@y
+          Required patch:
+@z
+
+@x
           Details of the kde curation can be found at
           <ulink url="https://dot.kde.org/2021/04/06/announcing-kdes-qt-5-patch-collection"/>
           and <ulink url="https://community.kde.org/Qt5PatchCollection"/>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Details of the kde curation can be found at
+          <ulink url="https://dot.kde.org/2021/04/06/announcing-kdes-qt-5-patch-collection"/>
+          and <ulink url="https://community.kde.org/Qt5PatchCollection"/>.
+@z
+
+@x
           Required patch:
-          <ulink url="&patch-root;/qt-everywhere-opensource-src-&qt5-version;-security_fix-1.patch"/>
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Required patch:
 @z
 
 @x
@@ -212,19 +162,15 @@
 @z
 
 @x
-    <para>
       The BLFS editors recommend installing <application>Qt5</application> in a
       directory other than <filename class="directory">/usr</filename>, ie
       <filename class="directory">/opt/qt5</filename>.  To do this, set the
       following environment variable:
-    </para>
 @y
-    <para>
       The BLFS editors recommend installing <application>Qt5</application> in a
       directory other than <filename class="directory">/usr</filename>, ie
       <filename class="directory">/opt/qt5</filename>.  To do this, set the
       following environment variable:
-    </para>
 @z
 
 @x
@@ -362,9 +308,9 @@
 @z
 
 @x
-      Add another fix for building with GCC-13:
+      Fix a security vulnerability in qtbase:
 @y
-      Add another fix for building with GCC-13:
+      Fix a security vulnerability in qtbase:
 @z
 
 @x
@@ -502,13 +448,27 @@
 @z
 
 @x
+      <parameter>-skip qtlocation</parameter>: This switch disables building
+      the Qt5 location module.  Some dependencies of this module are
+      shipped in the tarball but the copies are outdated, so these
+      dependencies won't build with <xref linkend='gcc'/> and
+      <xref linkend='icu'/>.  Nothing in BLFS needs this module.
+@y
+      <parameter>-skip qtlocation</parameter>: This switch disables building
+      the Qt5 location module.  Some dependencies of this module are
+      shipped in the tarball but the copies are outdated, so these
+      dependencies won't build with <xref linkend='gcc'/> and
+      <xref linkend='icu'/>.  Nothing in BLFS needs this module.
+@z
+
+@x
       <parameter>-skip qtwebengine</parameter>: This switch disables building
-      the QtWebEngine. The BLFS editors have chosen to build <xref
-      linkend="qtwebengine"/> separately.
+      the QtWebEngine.  BLFS only supports <xref linkend="qtwebengine"/>
+      from Qt6.
 @y
       <parameter>-skip qtwebengine</parameter>: This switch disables building
-      the QtWebEngine. The BLFS editors have chosen to build <xref
-      linkend="qtwebengine"/> separately.
+      the QtWebEngine.  BLFS only supports <xref linkend="qtwebengine"/>
+      from Qt6.
 @z
 
 @x

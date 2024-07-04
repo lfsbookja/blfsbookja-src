@@ -29,76 +29,32 @@
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&qt5-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&qt5-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &qt5-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &qt5-size;
-        </para>
-      </listitem>
-<!--
-      <listitem>
-        <para>
-          Estimated disk space required: &qt5-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &qt5-time;
-        </para>
-      </listitem>
--->
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&qt5-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&qt5-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&qt5-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&qt5-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &qt5-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &qt5-md5sum;
+@z
+
+@x
           Download size: &qt5-size;
-        </para>
-      </listitem>
-<!--
-      <listitem>
-        <para>
-          Estimated disk space required: &qt5-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &qt5-time;
-        </para>
-      </listitem>
--->
-    </itemizedlist>
+@y
+          Download size: &qt5-size;
 @z
 
 @x
@@ -206,61 +162,31 @@
 @z
 
 @x
-    <para>
       There are a few extra components needed for different packages in BLFS.
       These are
       <emphasis role="bold">qtimageformats</emphasis>,
-      <emphasis role="bold">qtlocation</emphasis>,
       <emphasis role="bold">qtwebchannel</emphasis>,
       <emphasis role="bold">qtdoc</emphasis>, and
       <emphasis role="bold">qtmultimedia</emphasis>.
       Only those components specified for a specific
       package are needed. You only need to build the relevant component(s).
-    </para>
 @y
-    <para>
       There are a few extra components needed for different packages in BLFS.
       These are
       <emphasis role="bold">qtimageformats</emphasis>,
-      <emphasis role="bold">qtlocation</emphasis>,
       <emphasis role="bold">qtwebchannel</emphasis>,
       <emphasis role="bold">qtdoc</emphasis>, and
       <emphasis role="bold">qtmultimedia</emphasis>.
       Only those components specified for a specific
       package are needed. You only need to build the relevant component(s).
-    </para>
 @z
 
 @x
-    <para>
       First, apply a patch to pull in the fixes curated by KDE for some of the
       modules listed above:
-    </para>
 @y
-    <para>
       First, apply a patch to pull in the fixes curated by KDE for some of the
       modules listed above:
-    </para>
-@z
-
-@x
-    <para>
-      Next, if you are installing <emphasis role="bold">qtlocation</emphasis>,
-      fix the build with GCC-13:
-    </para>
-@y
-    <para>
-      Next, if you are installing <emphasis role="bold">qtlocation</emphasis>,
-      fix the build with GCC-13:
-    </para>
-@z
-
-@x
-      Next, if you are installing <emphasis role="bold">qtlocation</emphasis>,
-      fix the build with ICU-75:
-@y
-      Next, if you are installing <emphasis role="bold">qtlocation</emphasis>,
-      fix the build with ICU-75:
 @z
 
 @x

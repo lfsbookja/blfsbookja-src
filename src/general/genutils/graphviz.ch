@@ -205,7 +205,7 @@
       the <command>smyrna</command> large graph viewer, which is
       considered experimental), and
       &qt5-deps; (for building the <command>gvedit</command>
-      graph editor.)
+      graph editor)
     </para>
 @y
     <bridgehead renderas="sect4">Optional, to build more tools</bridgehead>
@@ -217,7 +217,7 @@
       the <command>smyrna</command> large graph viewer, which is
       considered experimental), and
       &qt5-deps; (for building the <command>gvedit</command>
-      graph editor.)
+      graph editor)
     </para>
 @z
 

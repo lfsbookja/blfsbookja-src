@@ -81,8 +81,9 @@
       <xref linkend="gpgme"/>,
       <xref linkend="itstool"/>,
       <xref linkend="libhandy1"/>,
-      <xref linkend="libpwquality"/> and
-      <xref linkend="libsecret"/>
+      <xref linkend="libpwquality"/>,
+      <xref linkend="libsecret"/>, and
+      <xref linkend="vala"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -93,7 +94,8 @@
       <xref linkend="itstool"/>,
       <xref linkend="libhandy1"/>,
       <xref linkend="libpwquality"/>,
-      <xref linkend="libsecret"/>
+      <xref linkend="libsecret"/>,
+      <xref linkend="vala"/>
     </para>
 @z
 
@@ -101,10 +103,9 @@
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
       <xref linkend="libsoup3"/>,
-      <xref linkend="p11-kit"/>,
+      <xref linkend="p11-kit"/>, and
 <!--      <xref linkend="openldap"/>, picked up from gnupg2 -->
-      <xref linkend="openssh"/> (for managing SSH keys) and
-      <xref linkend="vala"/>
+      <xref linkend="openssh"/> (for managing SSH keys)
     </para>
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
@@ -112,8 +113,7 @@
       <xref linkend="libsoup3"/>,
       <xref linkend="p11-kit"/>,
 <!--      <xref linkend="openldap"/>, picked up from gnupg2 -->
-      <xref linkend="openssh"/> (for managing SSH keys),
-      <xref linkend="vala"/>
+      <xref linkend="openssh"/> (for managing SSH keys)
     </para>
 @z
 

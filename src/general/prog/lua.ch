@@ -138,13 +138,13 @@
 
 @x
       To test the results, issue: <command>make test</command>.
-      <quote>This will run the interpreter and print its version</quote>.
+      <quote>This will run the interpreter and print its version.</quote>
       More comprehensive tests can be performed if you downloaded the "Test
       suite" tarball. Those tests need to be executed after the package is
       installed, thus we defer to the description below.
 @y
       To test the results, issue: <command>make test</command>.
-      <quote>This will run the interpreter and print its version</quote>.
+      <quote>This will run the interpreter and print its version.</quote>
       More comprehensive tests can be performed if you downloaded the "Test
       suite" tarball. Those tests need to be executed after the package is
       installed, thus we defer to the description below.

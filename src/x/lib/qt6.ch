@@ -14,17 +14,13 @@
       that is widely used for developing application software with a graphical
       user interface (GUI) (in which cases <application>Qt6</application> is
       classified as a widget toolkit), and also used for developing non-GUI
-      programs such as command-line tools and consoles for servers. <!--Two of the
-      major users of <application>Qt</application> are <application>KDE
-      Frameworks 5 (KF5)</application> and <application>LXQt</application>.-->
+      programs such as command-line tools and consoles for servers. 
 @y
       <application>Qt6</application> is a cross-platform application framework
       that is widely used for developing application software with a graphical
       user interface (GUI) (in which cases <application>Qt6</application> is
       classified as a widget toolkit), and also used for developing non-GUI
-      programs such as command-line tools and consoles for servers. <!--Two of the
-      major users of <application>Qt</application> are <application>KDE
-      Frameworks 5 (KF5)</application> and <application>LXQt</application>.-->
+      programs such as command-line tools and consoles for servers. 
 @z
 
 @x
@@ -253,19 +249,9 @@
 
 @x
       Install images and create the menu entries for installed applications.
-      <!--The <envar>QT6BINDIR</envar> variable is used here to point to the
-      directory for the executable programs.  If you have changed the bindir
-      above, <envar>QT5BINDIR</envar> will need to be adjusted below.  Be sure
-      that the <envar>QT5BINDIR</envar> variable is defined in root's
-      environment and as the &root; user:-->
       Again as the &root; user:
 @y
       Install images and create the menu entries for installed applications.
-      <!--The <envar>QT6BINDIR</envar> variable is used here to point to the
-      directory for the executable programs.  If you have changed the bindir
-      above, <envar>QT5BINDIR</envar> will need to be adjusted below.  Be sure
-      that the <envar>QT5BINDIR</envar> variable is defined in root's
-      environment and as the &root; user:-->
       Again as the &root; user:
 @z
 

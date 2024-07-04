@@ -147,20 +147,20 @@
 @z
 
 @x
-      <parameter>-Ddemos=false</parameter>: This switch disables building
+      <parameter>-D demos=false</parameter>: This switch disables building
       the demo programs because building <application>plplay</application> is
       currently broken.
 @y
-      <parameter>-Ddemos=false</parameter>: This switch disables building
+      <parameter>-D demos=false</parameter>: This switch disables building
       the demo programs because building <application>plplay</application> is
       currently broken.
 @z
 
 @x
-      <parameter>-Dtests=true</parameter>: This switch enables building the
+      <parameter>-D tests=true</parameter>: This switch enables building the
       code necessary to run the tests.
 @y
-      <parameter>-Dtests=true</parameter>: This switch enables building the
+      <parameter>-D tests=true</parameter>: This switch enables building the
       code necessary to run the tests.
 @z
 

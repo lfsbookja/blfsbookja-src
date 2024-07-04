@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY numpy-buildsize     "91 MB (add 333 MB for tests)">
-  <!ENTITY numpy-time          "0.4 SBU (add 2.8 SBU for tests)">
+  <!ENTITY numpy-buildsize     "101 MB (add 48 MB for tests)">
+  <!ENTITY numpy-time          "0.6 SBU (add 1.1 SBU for tests)">
 @y
-  <!ENTITY numpy-buildsize     "91 MB (add 333 MB for tests)">
-  <!ENTITY numpy-time          "0.4 SBU (add 2.8 SBU for tests)">
+  <!ENTITY numpy-buildsize     "101 MB (add 48 MB for tests)">
+  <!ENTITY numpy-time          "0.6 SBU (add 1.1 SBU for tests)">
 @z
 
 @x
@@ -148,9 +148,9 @@
 @z
 
 @x
-        Three tests, out of over 35000 tests, are known to fail.
+        Two tests, out of over 48000 tests, are known to fail.
 @y
-        Three tests, out of over 35000 tests, are known to fail.
+        Two tests, out of over 48000 tests, are known to fail.
 @z
 
 @x
