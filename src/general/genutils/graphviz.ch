@@ -134,15 +134,11 @@
 @z
 
 @x
-      Adding
-      <xref linkend="gtk2"/> with
-      <xref linkend="libjpeg"/> adds support for JPEG, BMP, TIF, and ICO
-      formats, and allows displaying the image in a GTK+ window
+      Adding &gtk2; with <xref linkend="libjpeg"/> adds support for JPEG, BMP,
+      TIF, and ICO formats, and allows displaying the image in a GTK+ window
 @y
-      Adding
-      <xref linkend="gtk2"/> with
-      <xref linkend="libjpeg"/> adds support for JPEG, BMP, TIF, and ICO
-      formats, and allows displaying the image in a GTK+ window
+      Adding &gtk2; with <xref linkend="libjpeg"/> adds support for JPEG, BMP,
+      TIF, and ICO formats, and allows displaying the image in a GTK+ window
 @z
 
 @x

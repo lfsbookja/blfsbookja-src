@@ -107,7 +107,7 @@
 @z
 
 @x
-      This packages does not come with a test suite.
+      This package does not come with a test suite.
 @y
       &notTestSuite;
 @z

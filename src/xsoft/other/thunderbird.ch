@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY thunderbird-buildsize     "6.1 GB (224 MB installed)">
-  <!ENTITY thunderbird-time          "12 SBU (on a 8-core machine)">
+  <!ENTITY thunderbird-buildsize     "7.8 GB (256 MB installed)">
+  <!ENTITY thunderbird-time          "16 SBU (on a 8-core machine)">
 @y
-  <!ENTITY thunderbird-buildsize     "6.1 GB (224 MB installed)">
-  <!ENTITY thunderbird-time          "12 SBU (on a 8-core machine)">
+  <!ENTITY thunderbird-buildsize     "7.8 GB (256 MB installed)">
+  <!ENTITY thunderbird-time          "16 SBU (on a 8-core machine)">
 @z
 
 @x
@@ -79,13 +79,12 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cbindgen"/>,
-      <xref linkend="dbus-glib"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="llvm"/> including clang, <!-- used by default if found -->
       <xref linkend="nodejs"/>,
       <xref linkend="pulseaudio"/> (or <xref linkend="alsa-lib"/> if you edit
       the mozconfig; although it is now deprecated by mozilla),
-      <xref linkend="python"/> (rebuilt with the sqlite module),
+      <xref linkend="python3"/> (rebuilt with the sqlite module),
       <xref linkend="startup-notification"/>, and
       <xref linkend="unzip"/>
       <!--<xref linkend="yasm"/>-->
@@ -94,13 +93,12 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cbindgen"/>,
-      <xref linkend="dbus-glib"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="llvm"/> including clang, <!-- used by default if found -->
       <xref linkend="nodejs"/>,
       <xref linkend="pulseaudio"/> (or <xref linkend="alsa-lib"/> if you edit
       the mozconfig; although it is now deprecated by mozilla),
-      <xref linkend="python"/> (rebuilt with the sqlite module),
+      <xref linkend="python3"/> (rebuilt with the sqlite module),
       <xref linkend="startup-notification"/>, and
       <xref linkend="unzip"/>
       <!--<xref linkend="yasm"/>-->
@@ -178,35 +176,13 @@
 @z
 
 @x
-        The build process for Thunderbird can use 8GB+ of RAM when linking.
-        Make sure that you have adequate swap or RAM before continuing.
+        The build process for Thunderbird can use 8 GB or more of RAM when
+        linking. Make sure that you have adequate swap or RAM before
+        continuing.
 @y
-        The build process for Thunderbird can use 8GB+ of RAM when linking.
-        Make sure that you have adequate swap or RAM before continuing.
-@z
-
-@x
-      The building system ships several internal copies of the Python 3
-      modules <application>setuptools</application> and
-      <filename>six.py</filename>.  The shipped copies are too old
-      to work well with Python 3.12 or later.  Replace them with the
-      symlinks to the LFS <application>setuptools</application> package and
-      <xref linkend='six'/> already installed on the system, and adapt the
-      building system for these updated Python modules.  We also need to
-      rewrite the code based on the <filename>imp</filename> module removed
-      in Python 3.12 and later using the <filename>importlib</filename>
-      module:
-@y
-      The building system ships several internal copies of the Python 3
-      modules <application>setuptools</application> and
-      <filename>six.py</filename>.  The shipped copies are too old
-      to work well with Python 3.12 or later.  Replace them with the
-      symlinks to the LFS <application>setuptools</application> package and
-      <xref linkend='six'/> already installed on the system, and adapt the
-      building system for these updated Python modules.  We also need to
-      rewrite the code based on the <filename>imp</filename> module removed
-      in Python 3.12 and later using the <filename>importlib</filename>
-      module:
+        The build process for Thunderbird can use 8 GB or more of RAM when
+        linking. Make sure that you have adequate swap or RAM before
+        continuing.
 @z
 
 @x
@@ -345,7 +321,7 @@
 
 @x
         First, open the configuration dialog by opening the <quote>Edit</quote>
-        drop-down menu. Choose <quote>Preferences</quote> and then scroll down
+        drop-down menu. Choose <quote>Settings</quote> and then scroll down
         to the bottom of the page. Then, click the <quote>Config Editor</quote>
         button. Click on the <quote>I accept the risk!</quote> button.
         This will display a list of the configuration preferences and
@@ -360,7 +336,7 @@
         desired data into the fields when prompted.
 @y
         First, open the configuration dialog by opening the <quote>Edit</quote>
-        drop-down menu. Choose <quote>Preferences</quote> and then scroll down
+        drop-down menu. Choose <quote>Settings</quote> and then scroll down
         to the bottom of the page. Then, click the <quote>Config Editor</quote>
         button. Click on the <quote>I accept the risk!</quote> button.
         This will display a list of the configuration preferences and

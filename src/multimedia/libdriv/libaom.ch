@@ -138,30 +138,30 @@
 @z
 
 @x
-      <parameter>-DBUILD_SHARED_LIBS=1</parameter>: This switch builds shared
+      <parameter>-D BUILD_SHARED_LIBS=1</parameter>: This switch builds shared
       versions of the libraries.
 @y
-      <parameter>-DBUILD_SHARED_LIBS=1</parameter>: This switch builds shared
+      <parameter>-D BUILD_SHARED_LIBS=1</parameter>: This switch builds shared
       versions of the libraries.
 @z
 
 @x
-      <parameter>-DENABLE_DOCS=no</parameter>: This switch disables building
+      <parameter>-D ENABLE_DOCS=no</parameter>: This switch disables building
       the documentation because it fails due to an incompatibility with the
       latest version of <xref role="nodep" linkend="doxygen"/>.
 @y
-      <parameter>-DENABLE_DOCS=no</parameter>: This switch disables building
+      <parameter>-D ENABLE_DOCS=no</parameter>: This switch disables building
       the documentation because it fails due to an incompatibility with the
       latest version of <xref role="nodep" linkend="doxygen"/>.
 @z
 
 @x
-      <option>-DENABLE_NASM=yes</option>: Use this switch if you have both
+      <option>-D ENABLE_NASM=yes</option>: Use this switch if you have both
       <xref linkend="yasm"/> and
       <xref role="nodep" linkend="nasm"/> installed and wish to use
       nasm instead of yasm.
 @y
-      <option>-DENABLE_NASM=yes</option>: Use this switch if you have both
+      <option>-D ENABLE_NASM=yes</option>: Use this switch if you have both
       <xref linkend="yasm"/> and
       <xref role="nodep" linkend="nasm"/> installed and wish to use
       nasm instead of yasm.

@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY glib2-buildsize     "190 MB (add 22 MB for tests)">
-  <!ENTITY glib2-time          "0.6 SBU (add 0.4 SBU for tests; both using parallelism=4)">
+  <!ENTITY glib2-buildsize     "189 MB (add 22 MB for tests)">
+  <!ENTITY glib2-time          "0.9 SBU (add 0.4 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY glib2-buildsize     "190 MB（テスト実施時はさらに 22 MB）">
-  <!ENTITY glib2-time          "0.6 SBU（テスト実施時はさらに 0.4 SBU、いずれも paralleism=4）">
+  <!ENTITY glib2-buildsize     "189 MB（テスト実施時はさらに 22 MB）">
+  <!ENTITY glib2-time          "0.9 SBU（テスト実施時はさらに 0.4 SBU、いずれも paralleism=4）">
 @z
 
 @x

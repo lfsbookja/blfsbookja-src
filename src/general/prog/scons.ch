@@ -92,12 +92,6 @@
 @z
 
 @x
-      Fix the install location of the man pages:
-@y
-      Fix the install location of the man pages:
-@z
-
-@x
       Build the package:
 @y
       パッケージをビルドします。

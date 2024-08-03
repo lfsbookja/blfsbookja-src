@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY bind-buildsize     "127 MB (21 MB installed)">
+  <!ENTITY bind-buildsize     "138 MB (22 MB installed)">
   <!ENTITY bind-time          "0.5 SBU (with parallelism=4; about 40 minutes somewhat processor independent, to run the complete test suite)">
 @y
-  <!ENTITY bind-buildsize     "127 MB (21 MB installed)">
+  <!ENTITY bind-buildsize     "138 MB (22 MB installed)">
   <!ENTITY bind-time          "0.5 SBU (with parallelism=4; about 40 minutes somewhat processor independent, to run the complete test suite)">
 @z
 
@@ -78,11 +78,13 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
+      <xref linkend="liburcu"/> and
       <xref linkend="libuv"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
+      <xref linkend="liburcu"/>,
       <xref linkend="libuv"/>
     </para>
 @z
@@ -136,35 +138,21 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional database backends</bridgehead>
+    <bridgehead renderas="sect4">Optional (to run the test suite)</bridgehead>
     <para role="optional">
-      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openldap"/>,
-      <xref linkend="postgresql"/>, 
-      <xref linkend="unixodbc"/>, and
-      &berkeley-db;
+      <xref linkend="perl-net-dns"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Optional database backends</bridgehead>
+    <bridgehead renderas="sect4">Optional (to run the test suite)</bridgehead>
     <para role="optional">
-      <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
-      <xref linkend="openldap"/>,
-      <xref linkend="postgresql"/>, 
-      <xref linkend="unixodbc"/>,
-      &berkeley-db;
+      <xref linkend="perl-net-dns"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Optional (to run the test suite)</bridgehead>
-    <para role="optional">
-      <xref linkend="perl-net-dns"/>
-    </para>
+      Editor Notes: <ulink url="&blfs-wiki;/bind"/>
 @y
-    <bridgehead renderas="sect4">Optional (to run the test suite)</bridgehead>
-    <para role="optional">
-      <xref linkend="perl-net-dns"/>
-    </para>
+      Editor Notes: <ulink url="&blfs-wiki;/bind"/>
 @z
 
 @x
@@ -212,15 +200,23 @@
       The test suite may indicate some skipped tests depending on
       what configuration options are used. Some tests are marked
       <quote>UNTESTED</quote> or do even fail if <xref linkend="perl-net-dns"/>
-      is not installed. Two tests, <filename>resolver</filename> and
-      <filename>dispatch</filename>, are known to fail.
+      is not installed. One test, <filename>dnssec</filename>, is known to fail.
+      The tests require the
+      <ulink url="https://hypothesis.readthedocs.org/">hypothesis</ulink>
+      python module, which is not in BLFS. To work around this, the instructions
+      below create a Python virtual environment and then install the module
+      in there before running the tests.
       To run the tests, as an unprivileged user, execute:
 @y
       The test suite may indicate some skipped tests depending on
       what configuration options are used. Some tests are marked
       <quote>UNTESTED</quote> or do even fail if <xref linkend="perl-net-dns"/>
-      is not installed. Two tests, <filename>resolver</filename> and
-      <filename>dispatch</filename>, are known to fail.
+      is not installed. One test, <filename>dnssec</filename>, is known to fail.
+      The tests require the
+      <ulink url="https://hypothesis.readthedocs.org/">hypothesis</ulink>
+      python module, which is not in BLFS. To work around this, the instructions
+      below create a Python virtual environment and then install the module
+      in there before running the tests.
       To run the tests, as an unprivileged user, execute:
 @z
 
@@ -276,28 +272,6 @@
       <option>--enable-fetchlimit</option>: Use this option if you want
       to be able to limit the rate of recursive client queries. This may be
       useful on servers which receive a large number of queries.
-@z
-
-@x
-      <option>--disable-linux-caps</option>: BIND can also be built without
-      capability support by using this option, at the cost of some loss of
-      security.
-@y
-      <option>--disable-linux-caps</option>: BIND can also be built without
-      capability support by using this option, at the cost of some loss of
-      security.
-@z
-
-@x
-      <option>--with-dlz-{mysql,bdb,filesystem,ldap,odbc,stub}</option>: Use
-      one (or more) of those options to add Dynamically Loadable Zones support.
-      For more information refer to <ulink
-      url="https://bind-dlz.sourceforge.net/">bind-dlz.sourceforge.net</ulink>.
-@y
-      <option>--with-dlz-{mysql,bdb,filesystem,ldap,odbc,stub}</option>: Use
-      one (or more) of those options to add Dynamically Loadable Zones support.
-      For more information refer to <ulink
-      url="https://bind-dlz.sourceforge.net/">bind-dlz.sourceforge.net</ulink>.
 @z
 
 @x
@@ -579,7 +553,7 @@
 @x
         <seg>arpaname, ddns-confgen, delv, dig, dnssec-cds,
         dnssec-dsfromkey, dnssec-importkey, dnssec-keyfromlabel, dnssec-keygen,
-        dnssec-revoke, dnssec-settime, dnssec-signzone,
+        dnssec-ksr, dnssec-revoke, dnssec-settime, dnssec-signzone,
         dnssec-verify, host, mdig, named, named-checkconf,
         named-checkzone, named-compilezone, named-journalprint,
         named-nzd2nzf, named-rrchecker, nsec3hash, nslookup, nsupdate, rndc,
@@ -587,7 +561,7 @@
 @y
         <seg>arpaname, ddns-confgen, delv, dig, dnssec-cds,
         dnssec-dsfromkey, dnssec-importkey, dnssec-keyfromlabel, dnssec-keygen,
-        dnssec-revoke, dnssec-settime, dnssec-signzone,
+        dnssec-ksr, dnssec-revoke, dnssec-settime, dnssec-signzone,
         dnssec-verify, host, mdig, named, named-checkconf,
         named-checkzone, named-compilezone, named-journalprint,
         named-nzd2nzf, named-rrchecker, nsec3hash, nslookup, nsupdate, rndc,
@@ -595,19 +569,17 @@
 @z
 
 @x
-        <seg>libbind9.so, libdns.so, libirs.so, libisc.so, libisccc.so,
-        libisccfg.so, and libns.so</seg>
+        <seg>libdns.so, libisc.so, libisccc.so, libisccfg.so, and libns.so</seg>
 @y
-        <seg>libbind9.so, libdns.so, libirs.so, libisc.so, libisccc.so,
-        libisccfg.so, libns.so</seg>
+        <seg>libdns.so, libisc.so, libisccc.so, libisccfg.so, libns.so</seg>
 @z
 
 @x
-        <seg>/usr/include/{bind9,dns,dst,irs,isc,isccc,isccfg,ns},
+        <seg>/usr/include/{dns,dst,irs,isc,isccc,isccfg,ns},
         /usr/lib/bind,
         and /srv/named</seg>
 @y
-        <seg>/usr/include/{bind9,dns,dst,irs,isc,isccc,isccfg,ns},
+        <seg>/usr/include/{dns,dst,irs,isc,isccc,isccfg,ns},
         /usr/lib/bind,
         /srv/named</seg>
 @z

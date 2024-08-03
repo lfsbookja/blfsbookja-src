@@ -101,7 +101,7 @@
       <xref linkend="qca"/>,
       <ulink url="https://www.pell.portland.or.us/~orc/Code/discount/">discount</ulink>,
       <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="https://libspectre.freedesktop.org/">libspectre</ulink>
+      <ulink url="https://libspectre.freedesktop.org/">libspectre</ulink>,
       <ulink url="https://sourceforge.net/projects/ebook-tools">libepub</ulink>, and
       <ulink url="https://libzip.org">LibZip</ulink>
     </para>
@@ -111,7 +111,7 @@
       <xref linkend="qca"/>,
       <ulink url="https://www.pell.portland.or.us/~orc/Code/discount/">discount</ulink>,
       <ulink url="https://djvu.sourceforge.net/">DjVuLibre</ulink>,
-      <ulink url="https://libspectre.freedesktop.org/">libspectre</ulink>
+      <ulink url="https://libspectre.freedesktop.org/">libspectre</ulink>,
       <ulink url="https://sourceforge.net/projects/ebook-tools">libepub</ulink>,
       <ulink url="https://libzip.org">LibZip</ulink>
     </para>

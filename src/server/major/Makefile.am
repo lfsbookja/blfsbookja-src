@@ -8,7 +8,6 @@ CHANGE_FILES = \
 	kea.ch        \
 	kea-kernel.ch \
 	major.ch      \
-	proftpd.ch    \
-	vsftpd.ch
+	proftpd.ch
 
 include $(top_srcdir)/build-aux/main.mk

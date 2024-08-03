@@ -135,10 +135,10 @@
 @z
 
 @x
-      <option>-DBUILD_TESTING=ON</option>: This switch enables
+      <option>-D BUILD_TESTING=ON</option>: This switch enables
       building the test suite.
 @y
-      <option>-DBUILD_TESTING=ON</option>: This switch enables
+      <option>-D BUILD_TESTING=ON</option>: This switch enables
       building the test suite.
 @z
 

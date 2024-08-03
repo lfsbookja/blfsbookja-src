@@ -72,18 +72,6 @@
 @z
 
 @x
-      The standard INFOPATH path are specified above to
-      ensure they are included.  If they are already set in the boot script
-      procedure, the pathappend function will ensure duplicates are
-      removed, so including them here will do no harm.
-@y
-      The standard INFOPATH path are specified above to
-      ensure they are included.  If they are already set in the boot script
-      procedure, the pathappend function will ensure duplicates are
-      removed, so including them here will do no harm.
-@z
-
-@x
       The backslashes before the dollar signs in the script above are to
       facilitate a copy/paste operation. The backslashes should not
       appear in the actual script.

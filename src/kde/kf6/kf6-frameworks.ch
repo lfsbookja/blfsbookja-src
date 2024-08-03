@@ -227,11 +227,13 @@
           The icon package is covered separately at <xref linkend="breeze-icons"/>.
 @z
 @x
-          There are three packages that were downloaded but superseded by later
-          versions: kwidgetsaddons-6.2.0, kwidgetsaddons-6.2.1, and kirigami-6.2.0.
+          There are four packages that were downloaded but superseded by later
+          versions: kwidgetsaddons-6.2.0, kwidgetsaddons-6.2.1, kwallet-6.2.0, 
+          and kirigami-6.2.0.
 @y
-          There are three packages that were downloaded but superseded by later
-          versions: kwidgetsaddons-6.2.0, kwidgetsaddons-6.2.1, and kirigami-6.2.0.
+          There are four packages that were downloaded but superseded by later
+          versions: kwidgetsaddons-6.2.0, kwidgetsaddons-6.2.1, kwallet-6.2.0, 
+          and kirigami-6.2.0.
 @z
 
 @x
@@ -303,26 +305,26 @@
 @z
 
 @x
-      <parameter>-DCMAKE_PREFIX_PATH=$QT6DIR</parameter>: This switch is used
+      <parameter>-D CMAKE_PREFIX_PATH=$QT6DIR</parameter>: This switch is used
       to allow cmake to find the proper Qt libraries.
 @y
-      <parameter>-DCMAKE_PREFIX_PATH=$QT6DIR</parameter>: This switch is used
+      <parameter>-D CMAKE_PREFIX_PATH=$QT6DIR</parameter>: This switch is used
       to allow cmake to find the proper Qt libraries.
 @z
 
 @x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used
       to apply higher level of the compiler optimizations.
 @y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used
       to apply higher level of the compiler optimizations.
 @z
 
 @x
-      <parameter>-DBUILD_TESTING=OFF</parameter>: This switch is used to prevent
+      <parameter>-D BUILD_TESTING=OFF</parameter>: This switch is used to prevent
       building test programs and libraries that are of no use to an end user.
 @y
-      <parameter>-DBUILD_TESTING=OFF</parameter>: This switch is used to prevent
+      <parameter>-D BUILD_TESTING=OFF</parameter>: This switch is used to prevent
       building test programs and libraries that are of no use to an end user.
 @z
 

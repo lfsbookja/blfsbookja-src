@@ -108,10 +108,10 @@
 
 @x
       The test suite is normally run by <command>ninja</command> unless
-      -DRUN_TEST_SUITE=NO is passed to cmake.
+      -D RUN_TEST_SUITE=NO is passed to cmake.
 @y
       The test suite is normally run by <command>ninja</command> unless
-      -DRUN_TEST_SUITE=NO is passed to cmake.
+      -D RUN_TEST_SUITE=NO is passed to cmake.
 @z
 
 @x

@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gst10-plugins-good-buildsize     "109 MB (with tests)">
+  <!ENTITY gst10-plugins-good-buildsize     "106 MB (with tests)">
   <!ENTITY gst10-plugins-good-time          "0.6 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gst10-plugins-good-buildsize     "109 MB（テスト込み）">
+  <!ENTITY gst10-plugins-good-buildsize     "106 MB（テスト込み）">
   <!ENTITY gst10-plugins-good-time          "0.6 SBU（parallelism=4 利用時、テスト込み）">
 @z
 

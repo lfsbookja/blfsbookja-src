@@ -189,7 +189,6 @@
 @x
     <bridgehead renderas="sect4">Optional Data Management Utilities and Libraries</bridgehead>
     <para role="optional">
-      <xref linkend="libiodbc"/>,
       <xref linkend="lmdb"/>,
       <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
@@ -204,6 +203,7 @@
       <ulink url="http://www.empress.com/">Empress</ulink>,
       <ulink url="http://www.frontbase.com/cgi-bin/WebObjects/FBWebSite">FrontBase</ulink>,
       <ulink url="https://www.ibm.com/analytics/us/en/db2/">IBM DB2</ulink>,
+      <ulink url="https://sourceforge.net/projects/iodbc/files/">libiodbc</ulink>,
       <ulink url="https://hughestech.com.au/products/msql/">Mini SQL</ulink>,
       <ulink url="https://www.monetra.com/">Monetra</ulink>, and
       <ulink url="https://sourceforge.net/projects/qdbm">QDBM</ulink>
@@ -211,7 +211,6 @@
 @y
     <bridgehead renderas="sect4">任意のデータ管理ユーティリティーおよびライブラリ</bridgehead>
     <para role="optional">
-      <xref linkend="libiodbc"/>,
       <xref linkend="lmdb"/>,
       <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="openldap"/>,
@@ -226,8 +225,9 @@
       <ulink url="http://www.empress.com/">Empress</ulink>,
       <ulink url="http://www.frontbase.com/cgi-bin/WebObjects/FBWebSite">FrontBase</ulink>,
       <ulink url="https://www.ibm.com/analytics/us/en/db2/">IBM DB2</ulink>,
+      <ulink url="https://sourceforge.net/projects/iodbc/files/">libiodbc</ulink>,
       <ulink url="https://hughestech.com.au/products/msql/">Mini SQL</ulink>,
-      <ulink url="https://www.monetra.com/">Monetra</ulink>, and
+      <ulink url="https://www.monetra.com/">Monetra</ulink>,
       <ulink url="https://sourceforge.net/projects/qdbm">QDBM</ulink>
     </para>
 @z

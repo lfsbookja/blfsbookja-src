@@ -96,9 +96,9 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="dbus-python"/>,
-      <xref linkend="gtk2"/> (deprecated),
       <xref linkend="libevent"/>,
-      <xref linkend="doxygen"/> and
+      <xref linkend="doxygen"/>,
+      &gtk2; (deprecated), and
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
       (for generating documentation)
     </para>
@@ -106,9 +106,9 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="dbus-python"/>,
-      <xref linkend="gtk2"/> (deprecated),
       <xref linkend="libevent"/>,
-      <xref linkend="doxygen"/> and
+      <xref linkend="doxygen"/>,
+      &gtk2; (deprecated),
       <ulink url="https://sourceforge.net/projects/xmltoman/">xmltoman</ulink>
       (ドキュメント生成のため)
     </para>

@@ -100,10 +100,10 @@
     <para role="optional">
       <xref linkend="doxygen"/> and <xref linkend="graphviz"/>
       (for documentation),
-      <xref linkend="gimp"/> (for the plugin),
+      <!--<xref linkend="gimp"/> (for the plugin),-->
       <xref linkend="java"/> (for the JAR),
       <xref linkend="libavif"/>,
-      <xref linkend="libwebp"/>,
+      <xref linkend="libwebp"/>, and
       <ulink url="https://www.openexr.com/">OpenEXR</ulink>
     </para>
 @y
@@ -111,7 +111,7 @@
     <para role="optional">
       <xref linkend="doxygen"/> and <xref linkend="graphviz"/>
       (for documentation),
-      <xref linkend="gimp"/> (for the plugin),
+      <!--<xref linkend="gimp"/> (for the plugin),-->
       <xref linkend="java"/> (for the JAR),
       <xref linkend="libavif"/>,
       <xref linkend="libwebp"/>,
@@ -166,14 +166,14 @@
 @z
 
 @x
-      <parameter>-DBUILD_TESTING=OFF</parameter>: This parameter disables the
+      <parameter>-D BUILD_TESTING=OFF</parameter>: This parameter disables the
       tests because they require
       <ulink url="https://github.com/google/googletest">gtest</ulink>, which
       is not in BLFS. If you wish to run the tests and have
       <ulink url="https://github.com/google/googletest">gtest</ulink> installed,
       remove this parameter.
 @y
-      <parameter>-DBUILD_TESTING=OFF</parameter>: This parameter disables the
+      <parameter>-D BUILD_TESTING=OFF</parameter>: This parameter disables the
       tests because they require
       <ulink url="https://github.com/google/googletest">gtest</ulink>, which
       is not in BLFS. If you wish to run the tests and have
@@ -182,51 +182,51 @@
 @z
 
 @x
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This parameter enables
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This parameter enables
       building shared versions of the libraries instead of static ones.
 @y
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This parameter enables
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This parameter enables
       building shared versions of the libraries instead of static ones.
 @z
 
 @x
-      <parameter>-DJPEGXL_ENABLE_SKCMS=OFF</parameter>: This parameter disables
+      <parameter>-D JPEGXL_ENABLE_SKCMS=OFF</parameter>: This parameter disables
       building support for Skia's <application>skcms</application> since it is
       not necessary for BLFS purposes and requires
       <ulink url="https://skia.googlesource.com/skcms/">skcms</ulink>.
 @y
-      <parameter>-DJPEGXL_ENABLE_SKCMS=OFF</parameter>: This parameter disables
+      <parameter>-D JPEGXL_ENABLE_SKCMS=OFF</parameter>: This parameter disables
       building support for Skia's <application>skcms</application> since it is
       not necessary for BLFS purposes and requires
       <ulink url="https://skia.googlesource.com/skcms/">skcms</ulink>.
 @z
 
 @x
-      <parameter>-DJPEGXL_ENABLE_SJPEG=OFF</parameter>: This parameter disables
+      <parameter>-D JPEGXL_ENABLE_SJPEG=OFF</parameter>: This parameter disables
       support for SimpleJPEG since it is not necessary for BLFS purposes and
       requires <ulink url="https://github.com/webmproject/sjpeg">sjpeg</ulink>.
 @y
-      <parameter>-DJPEGXL_ENABLE_SJPEG=OFF</parameter>: This parameter disables
+      <parameter>-D JPEGXL_ENABLE_SJPEG=OFF</parameter>: This parameter disables
       support for SimpleJPEG since it is not necessary for BLFS purposes and
       requires <ulink url="https://github.com/webmproject/sjpeg">sjpeg</ulink>.
 @z
 
 @x
-      <parameter>-DJPEGXL_ENABLE_PLUGINS=ON</parameter>: This parameter enables
+      <parameter>-D JPEGXL_ENABLE_PLUGINS=ON</parameter>: This parameter enables
       Plugin support, which creates plugins for <xref linkend="gimp"/> and 
       <xref linkend="gdk-pixbuf"/> if those packages are installed.
 @y
-      <parameter>-DJPEGXL_ENABLE_PLUGINS=ON</parameter>: This parameter enables
+      <parameter>-D JPEGXL_ENABLE_PLUGINS=ON</parameter>: This parameter enables
       Plugin support, which creates plugins for <xref linkend="gimp"/> and 
       <xref linkend="gdk-pixbuf"/> if those packages are installed.
 @z
 
 @x
-      <parameter>-DJPEGXL_INSTALL_JARDIR=/usr/share/java</parameter>: This
+      <parameter>-D JPEGXL_INSTALL_JARDIR=/usr/share/java</parameter>: This
       parameter places the JAR file for JPEG XL support in the correct 
       directory if <xref linkend="java"/> is installed.
 @y
-      <parameter>-DJPEGXL_INSTALL_JARDIR=/usr/share/java</parameter>: This
+      <parameter>-D JPEGXL_INSTALL_JARDIR=/usr/share/java</parameter>: This
       parameter places the JAR file for JPEG XL support in the correct 
       directory if <xref linkend="java"/> is installed.
 @z
@@ -260,7 +260,7 @@
           libjxl_extras_codec.so,
           libjxl_jni.so,
           libjxl_threads.so, and
-          libpixbufloader-jxl.so (in /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders),
+          libpixbufloader-jxl.so (in /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders)
         </seg>
         <seg>
           /usr/include/jxl
@@ -269,7 +269,7 @@
         <seg>
           benchmark_xl,
           cjxl,
-          djxl, and
+          djxl,
           jxlinfo
         </seg>
         <seg>
@@ -277,8 +277,8 @@
           libjxl_cms.so,
           libjxl_extras_codec.so,
           libjxl_jni.so,
-          libjxl_threads.so, and
-          libpixbufloader-jxl.so (in /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders),
+          libjxl_threads.so,
+          libpixbufloader-jxl.so (in /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders)
         </seg>
         <seg>
           /usr/include/jxl

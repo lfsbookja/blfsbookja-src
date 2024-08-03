@@ -292,14 +292,14 @@
       This target begins by running a configure script (unlike the older
       targets such as linux and linux_noasm) which creates a flags file that
       is then used in the build. This ensures that the 32-bit x86 build
-      receives the right flags to unzip files which are larger than 2GB
+      receives the right flags to unzip files which are larger than 2 GB
       when extracted.
 @y
       <command>make -f unix/Makefile generic</command>:
       This target begins by running a configure script (unlike the older
       targets such as linux and linux_noasm) which creates a flags file that
       is then used in the build. This ensures that the 32-bit x86 build
-      receives the right flags to unzip files which are larger than 2GB
+      receives the right flags to unzip files which are larger than 2 GB
       when extracted.
 @z
 

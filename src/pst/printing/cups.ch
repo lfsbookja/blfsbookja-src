@@ -93,9 +93,8 @@
       <xref linkend="avahi"/>,
       <xref linkend="libpaper"/>,
       <xref linkend="mitkrb"/>,
-      <!--<xref linkend="openjdk"/>, Not found in 2.4.0 -->
       <xref linkend="php"/>, and
-      <xref linkend="python2"/>
+      &python2;
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
@@ -103,9 +102,8 @@
       <xref linkend="avahi"/>,
       <xref linkend="libpaper"/>,
       <xref linkend="mitkrb"/>,
-      <!--<xref linkend="openjdk"/>, Not found in 2.4.0 -->
-      <xref linkend="php"/>, and
-      <xref linkend="python2"/>
+      <xref linkend="php"/>,
+      &python2;
     </para>
 @z
 

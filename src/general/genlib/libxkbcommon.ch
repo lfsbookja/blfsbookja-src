@@ -166,7 +166,7 @@
 
 @x
       <command>mv -v /usr/share/doc/libxkbcommon{,-&libxkbcommon-version;}</command>:
-      If you built the documentation, use this command to install the
+      If you built the documentation, use this command to install
       it in a versioned directory.
 @y
       <command>mv -v /usr/share/doc/libxkbcommon{,-&libxkbcommon-version;}</command>:

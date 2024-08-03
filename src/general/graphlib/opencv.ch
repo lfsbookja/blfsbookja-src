@@ -190,26 +190,26 @@
 @z
 
 @x
-      <parameter>-DWITH_XINE=ON</parameter>: This option instructs the make
+      <parameter>-D WITH_XINE=ON</parameter>: This option instructs the make
       procedure to use <xref linkend="xine-lib"/>.
 @y
-      <parameter>-DWITH_XINE=ON</parameter>: This option instructs the make
+      <parameter>-D WITH_XINE=ON</parameter>: This option instructs the make
       procedure to use <xref linkend="xine-lib"/>.
 @z
 
 @x
-      <parameter>-DENABLE_PRECOMPILED_HEADERS=OFF</parameter>: This option
+      <parameter>-D ENABLE_PRECOMPILED_HEADERS=OFF</parameter>: This option
       is needed for compatibility with gcc-6.1 and later.
 @y
-      <parameter>-DENABLE_PRECOMPILED_HEADERS=OFF</parameter>: This option
+      <parameter>-D ENABLE_PRECOMPILED_HEADERS=OFF</parameter>: This option
       is needed for compatibility with gcc-6.1 and later.
 @z
 
 @x
-      <option>-DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-&opencv-version;/modules</option>:
+      <option>-D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-&opencv-version;/modules</option>:
       instructs the build system to build additional modules.
 @y
-      <option>-DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib-&opencv-version;/modules</option>:
+      <option>-D OPENCV_EXTRA_MODULES_PATH=../opencv_contrib-&opencv-version;/modules</option>:
       instructs the build system to build additional modules.
 @z
 

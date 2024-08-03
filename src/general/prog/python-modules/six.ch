@@ -64,34 +64,15 @@
 @z
 
 @x
-      <bridgehead renderas="sect4">Six Dependencies</bridgehead>
-@y
-      <bridgehead renderas="sect4">&Dependencies1;Six&Dependencies2;</bridgehead>
-@z
-
-@x
-      <bridgehead renderas="sect5">Recommended Dependencies</bridgehead>
-      <para role="recommended">
-        <xref linkend="python2"/> 
-      </para>
-@y
-      <bridgehead renderas="sect5">&Recommended; Dependencies</bridgehead>
-      <para role="recommended">
-        <xref linkend="python2"/> 
-      </para>
-@z
-
-@x
       <title>Installation of Six</title>
 @y
       <title>&InstallationOf1;Six&InstallationOf2;</title>
 @z
 
 @x
-        Install <application>six</application> for Python 2 and Python 3
-        by running the following commands:
+        Build the module:
 @y
-        以下のコマンドを実行して Python2 向けおよび Python3 向けの <application>six</application> をビルドします。
+        Build the module:
 @z
 
 @x

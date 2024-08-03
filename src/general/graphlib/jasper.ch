@@ -128,11 +128,11 @@
 @z
 
 @x
-      <parameter>-DJAS_ENABLE_DOC=NO</parameter>: This option disables
+      <parameter>-D JAS_ENABLE_DOC=NO</parameter>: This option disables
       rebuilding the pdf documentation if <xref linkend="texlive"/>
       is installed.
 @y
-      <parameter>-DJAS_ENABLE_DOC=NO</parameter>: This option disables
+      <parameter>-D JAS_ENABLE_DOC=NO</parameter>: This option disables
       rebuilding the pdf documentation if <xref linkend="texlive"/>
       is installed.
 @z

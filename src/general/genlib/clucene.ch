@@ -126,12 +126,12 @@
 @z
 
 @x
-      <parameter>-DBUILD_CONTRIBS_LIB=ON</parameter>: This cmake variable
+      <parameter>-D BUILD_CONTRIBS_LIB=ON</parameter>: This cmake variable
       enables building the CLucene contribs library necessary for running
       applications that use language specific text analyzers like LibreOffice
       for example.
 @y
-      <parameter>-DBUILD_CONTRIBS_LIB=ON</parameter>:
+      <parameter>-D BUILD_CONTRIBS_LIB=ON</parameter>:
       この cmake 変数は、CLucene の contribs ライブラリの生成を指示するものです。
       これは例えば LibreOffice などのように言語固有のテキスト解析を利用するアプリケーションを稼動させるために必要となります。
 @z

@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY libical-buildsize     "24 MB (with tests)">
-  <!ENTITY libical-time          "0.1 SBU (iusing parallelism=4; with tests)">
+  <!ENTITY libical-time          "0.1 SBU (using parallelism=4; with tests)">
 @y
   <!ENTITY libical-buildsize     "24 MB (with tests)">
-  <!ENTITY libical-time          "0.1 SBU (iusing parallelism=4; with tests)">
+  <!ENTITY libical-time          "0.1 SBU (using parallelism=4; with tests)">
 @z
 
 @x

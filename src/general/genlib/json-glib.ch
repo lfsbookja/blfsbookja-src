@@ -148,7 +148,7 @@
           libjson-glib-1.0.so
         </seg>
         <seg>
-          /usr/{include,{libexec,share{/installed-tests}/json-glib-1.0 and
+          /usr/{include,libexec,share{,/installed-tests}/json-glib-1.0} and
           /usr/share/gtk-doc/html/json-glib
         </seg>
 @y
@@ -159,7 +159,7 @@
           libjson-glib-1.0.so
         </seg>
         <seg>
-          /usr/{include,{libexec,share{/installed-tests}/json-glib-1.0,
+          /usr/{include,libexec,share{,/installed-tests}/json-glib-1.0},
           /usr/share/gtk-doc/html/json-glib
         </seg>
 @z

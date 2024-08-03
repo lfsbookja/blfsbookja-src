@@ -12,11 +12,11 @@
 @x
       The <application>Vorbis Tools</application> package contains
       command-line tools useful for encoding, playing or editing
-      files using the Ogg CODEC.
+      files using the Ogg codec.
 @y
       The <application>Vorbis Tools</application> package contains
       command-line tools useful for encoding, playing or editing
-      files using the Ogg CODEC.
+      files using the Ogg codec.
 @z
 
 @x
@@ -151,16 +151,6 @@
 @z
 
 @x
-      <parameter>--without-curl</parameter>: This parameter disables HTTP
-      streaming in <command>ogg123</command>. Remove this parameter if you have
-      <application>cURL</application> installed.
-@y
-      <parameter>--without-curl</parameter>: This parameter disables HTTP
-      streaming in <command>ogg123</command>. Remove this parameter if you have
-      <application>cURL</application> installed.
-@z
-
-@x
     <title>Configuring Vorbis Tools</title>
 @y
     <title>&Configuring1;Vorbis Tools&Configuring2;</title>
@@ -218,7 +208,7 @@
 
 @x
         <seg>
-          ogg123, oggdec, oggenc, ogginfo, vcut and vorbiscomment
+          ogg123, oggdec, oggenc, ogginfo, vcut, and vorbiscomment
         </seg>
         <seg>
           None

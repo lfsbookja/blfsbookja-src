@@ -169,7 +169,7 @@
 @z
 
 @x
-      <parameter>CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA=1 ... </parameter>:
+      <parameter>CPPFLAGS="-D SQLITE_ENABLE_COLUMN_METADATA=1 ... </parameter>:
       Some applications require these options to be turned on.
       The only way to do this is to include them in
       the <envar>CFLAGS</envar> or <envar>CPPFLAGS</envar>.
@@ -178,7 +178,7 @@
       For further information on what can be specified see <ulink
       url="https://www.sqlite.org/compile.html"/>.
 @y
-      <parameter>CPPFLAGS="-DSQLITE_ENABLE_COLUMN_METADATA=1 ... </parameter>:
+      <parameter>CPPFLAGS="-D SQLITE_ENABLE_COLUMN_METADATA=1 ... </parameter>:
       Some applications require these options to be turned on.
       The only way to do this is to include them in
       the <envar>CFLAGS</envar> or <envar>CPPFLAGS</envar>.

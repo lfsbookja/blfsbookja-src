@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY babel-buildsize     "103 MB (add 30 MB for tests)">
+  <!ENTITY babel-buildsize     "90 MB (add 30 MB for tests)">
   <!ENTITY babel-time          "less than 0.1 SBU (0.1 SBU for tests)">
 @y
-  <!ENTITY babel-buildsize     "103 MB (add 30 MB for tests)">
+  <!ENTITY babel-buildsize     "90 MB (add 30 MB for tests)">
   <!ENTITY babel-time          "less than 0.1 SBU (0.1 SBU for tests)">
 @z
 

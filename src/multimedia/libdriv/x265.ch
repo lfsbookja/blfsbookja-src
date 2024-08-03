@@ -10,93 +10,59 @@
 @z
 
 @x
-  <sect2 role="package">
     <title>Introduction to x265</title>
 @y
-  <sect2 role="package">
     <title>Introduction to x265</title>
 @z
 
 @x
-    <para>
       <application>x265</application> package provides a library for encoding
       video streams into the H.265/HEVC format.
-    </para>
 @y
-    <para>
       <application>x265</application> package provides a library for encoding
       video streams into the H.265/HEVC format.
-    </para>
 @z
 
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
-          Download (HTTP): <ulink url="&x265-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download (FTP): <ulink url="&x265-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download MD5 sum: &x265-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Download size: &x265-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated disk space required: &x265-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Estimated build time: &x265-time;
-        </para>
-      </listitem>
-    </itemizedlist>
 @y
     <bridgehead renderas="sect3">Package Information</bridgehead>
-    <itemizedlist spacing="compact">
-      <listitem>
-        <para>
+@z
+
+@x
           Download (HTTP): <ulink url="&x265-download-http;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (HTTP): <ulink url="&x265-download-http;"/>
+@z
+
+@x
           Download (FTP): <ulink url="&x265-download-ftp;"/>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download (FTP): <ulink url="&x265-download-ftp;"/>
+@z
+
+@x
           Download MD5 sum: &x265-md5sum;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download MD5 sum: &x265-md5sum;
+@z
+
+@x
           Download size: &x265-size;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Download size: &x265-size;
+@z
+
+@x
           Estimated disk space required: &x265-buildsize;
-        </para>
-      </listitem>
-      <listitem>
-        <para>
+@y
+          Estimated disk space required: &x265-buildsize;
+@z
+
+@x
           Estimated build time: &x265-time;
-        </para>
-      </listitem>
-    </itemizedlist>
+@y
+          Estimated build time: &x265-time;
 @z
 
 @x
@@ -142,159 +108,82 @@
 @z
 
 @x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="installation">
     <title>Installation of x265</title>
 @y
-  <sect2 role="installation">
     <title>Installation of x265</title>
 @z
 
 @x
-    <para>
       Install <application>x265</application> by running the following
       commands:
-    </para>
 @y
-    <para>
       Install <application>x265</application> by running the following
       commands:
-    </para>
 @z
 
 @x
-<!-- the default build is Release, no need to specify that -->
-<screen><userinput>mkdir bld &amp;&amp;
-cd    bld &amp;&amp;
-@y
-<!-- the default build is Release, no need to specify that -->
-<screen><userinput>mkdir bld &amp;&amp;
-cd    bld &amp;&amp;
-@z
-
-@x
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DGIT_ARCHETYPE=1           \
-      -Wno-dev ../source          &amp;&amp;
-make</userinput></screen>
-@y
-cmake -DCMAKE_INSTALL_PREFIX=/usr \
-      -DGIT_ARCHETYPE=1           \
-      -Wno-dev ../source          &amp;&amp;
-make</userinput></screen>
-@z
-
-@x
-    <para>
       This package does not come with a test suite.
-    </para>
 @y
-    <para>
       This package does not come with a test suite.
-    </para>
 @z
 
 @x
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @y
-    <para>
       Now, as the <systemitem class="username">root</systemitem> user:
-    </para>
 @z
 
 @x
-<screen role="root"><userinput>make install &amp;&amp;
-rm -vf /usr/lib/libx265.a </userinput></screen>
-@y
-<screen role="root"><userinput>make install &amp;&amp;
-rm -vf /usr/lib/libx265.a </userinput></screen>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="commands">
       <title>Command Explanations</title>
 @y
-  <sect2 role="commands">
       <title>Command Explanations</title>
 @z
 
 @x
-      <para>
-        <parameter>-DGIT_ARCHETYPE=1</parameter>: Upstream no longer provides
+        <parameter>-D GIT_ARCHETYPE=1</parameter>: Upstream no longer provides
         releases. BLFS is using a git snapshot, but if the builder has not
         installed <application>git</application> the build will not install
         the shared library or the pkgconfig file without this switch.
-      </para>
 @y
-      <para>
-        <parameter>-DGIT_ARCHETYPE=1</parameter>: Upstream no longer provides
+        <parameter>-D GIT_ARCHETYPE=1</parameter>: Upstream no longer provides
         releases. BLFS is using a git snapshot, but if the builder has not
         installed <application>git</application> the build will not install
         the shared library or the pkgconfig file without this switch.
-      </para>
 @z
 
 @x
-      <para>
         <parameter>-Wno-dev</parameter>: This switch is used to suppress warnings
         intended for the package's developers.
-      </para>
 @y
-      <para>
         <parameter>-Wno-dev</parameter>: This switch is used to suppress warnings
         intended for the package's developers.
-      </para>
 @z
 
 @x
-      <para>
         <command>rm -vf /usr/lib/libx265.a</command>: BLFS does not recommend
         using static libraries.
-      </para>
-  </sect2>
 @y
-      <para>
         <command>rm -vf /usr/lib/libx265.a</command>: BLFS does not recommend
         using static libraries.
-      </para>
-  </sect2>
 @z
 
 @x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Program</segtitle>
       <segtitle>Installed Library</segtitle>
       <segtitle>Installed Directories</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
           x265
         </seg>
@@ -304,10 +193,7 @@ rm -vf /usr/lib/libx265.a </userinput></screen>
         <seg>
           None
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
           x265
         </seg>
@@ -315,66 +201,20 @@ rm -vf /usr/lib/libx265.a </userinput></screen>
           libx265.so
         </seg>
         <seg>
-          None
+          &None;
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="libx265">
-        <term><filename class="libraryfile">libx265.so</filename></term>
-        <listitem>
-          <para>
+@x libx265.so
             provides the functions used to encode video streams into the
             H.265/HEVC format
-          </para>
-          <indexterm zone="x265 libx265">
-            <primary sortas="c-libx265">libx265.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="libx265">
-        <term><filename class="libraryfile">libx265.so</filename></term>
-        <listitem>
-          <para>
             provides the functions used to encode video streams into the
             H.265/HEVC format
-          </para>
-          <indexterm zone="x265 libx265">
-            <primary sortas="c-libx265">libx265.so</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

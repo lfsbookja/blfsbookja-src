@@ -232,10 +232,10 @@
 @z
 
 @x
-      <parameter>-Di buildstamp=BLFS</parameter>: This switch appends
+      <parameter>-D buildstamp=BLFS</parameter>: This switch appends
       the given text to the version string.
 @y
-      <parameter>-Di buildstamp=BLFS</parameter>: This switch appends
+      <parameter>-D buildstamp=BLFS</parameter>: This switch appends
       the given text to the version string.
 @z
 

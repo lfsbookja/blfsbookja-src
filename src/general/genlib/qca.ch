@@ -132,18 +132,18 @@
 @z
 
 @x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is
       used to apply a higher level of compiler optimizations.
 @y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is
       used to apply a higher level of compiler optimizations.
 @z
 
 @x
-      <parameter>-DQCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>:
+      <parameter>-D QCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>:
       Install the qca man page in the normal location.
 @y
-      <parameter>-DQCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>:
+      <parameter>-D QCA_MAN_INSTALL_DIR:PATH=/usr/share/man</parameter>:
       Install the qca man page in the normal location.
 @z
 

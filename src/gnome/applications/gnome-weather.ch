@@ -82,7 +82,6 @@
       <xref linkend="gjs"/>,
       <xref linkend="libadwaita1"/>, and
       <xref linkend="libgweather"/>
-<!--      <xref linkend="libhandy1"/>-->
     </para>
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
@@ -91,21 +90,18 @@
       <xref linkend="gjs"/>,
       <xref linkend="libadwaita1"/>,
       <xref linkend="libgweather"/>
-<!--      <xref linkend="libhandy1"/>-->
     </para>
 @z
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-<!--      <xref linkend="appstream-glib"/> -->
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink>   
+      <xref linkend="appstream-glib"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-<!--      <xref linkend="appstream-glib"/> -->
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink>   
+      <xref linkend="appstream-glib"/>
     </para>
 @z
 

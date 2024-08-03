@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY fmt-buildsize     "3.9 MB (add 39 MB for tests)">
-  <!ENTITY fmt-time          "less than 0.1 SBU (add 0.2 SBU for testsi; both using parallelism=4)">
+  <!ENTITY fmt-time          "less than 0.1 SBU (add 0.2 SBU for tests; both using parallelism=4)">
 @y
   <!ENTITY fmt-buildsize     "3.9 MB (add 39 MB for tests)">
-  <!ENTITY fmt-time          "less than 0.1 SBU (add 0.2 SBU for testsi; both using parallelism=4)">
+  <!ENTITY fmt-time          "less than 0.1 SBU (add 0.2 SBU for tests; both using parallelism=4)">
 @z
 
 @x

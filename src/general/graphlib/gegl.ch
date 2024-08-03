@@ -86,74 +86,8 @@
 
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
-    <para role="optional">
-      <xref linkend="asciidoc"/>,
-      <xref linkend="cairo"/>,
-      <xref linkend="ffmpeg"/>,
-      <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="gexiv2"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="jasper"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="libraw"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libspiro"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="pango"/>,
-      <xref linkend="poppler"/>,
-      <xref linkend="ruby"/>,
-      <xref linkend="sdl2"/>,
-      <xref linkend="v4l-utils"/>,
-      <xref linkend="vala"/>,
-      <ulink url="https://luajit.org/luajit.html">LuaJIT</ulink>,
-      <ulink url="https://lensfun.github.io/">lensfun</ulink>,
-      <ulink url="https://luajit.org/luajit.html">LuaJIT</ulink>,
-      <ulink url="https://www.netsurf-browser.org/projects/libnsgif/">libnsgif</ulink>,
-      <ulink url="https://faculty.cse.tamu.edu/davis/suitesparse.html">libumfpack</ulink>,
-      <ulink url="https://github.com/gerddie/maxflow">maxflow</ulink>,
-      <ulink url="https://github.com/hodefoting/mrg/releases">MRG</ulink>,
-      <ulink url="https://www.khronos.org/opencl/">OpenCL</ulink>,
-      <ulink url="https://www.openexr.com">OpenEXR</ulink>,
-      <ulink url="https://github.com/KyleLink/poly2tri-c">poly2tri-c</ulink>,
-      <ulink url="https://www.gnu.org/software/src-highlite/">source-highlight</ulink>, and
-      <ulink url="https://w3m.sourceforge.net/">w3m</ulink>
-    </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
-    <para role="optional">
-      <xref linkend="asciidoc"/>,
-      <xref linkend="cairo"/>,
-      <xref linkend="ffmpeg"/>,
-      <xref linkend="gdk-pixbuf"/>,
-      <xref linkend="gexiv2"/>,
-      <xref linkend="gtk-doc"/>,
-      <xref linkend="jasper"/>,
-      <xref linkend="lcms2"/>,
-      <xref linkend="libraw"/>,
-      <xref linkend="librsvg"/>,
-      <xref linkend="libspiro"/>,
-      <xref linkend="libtiff"/>,
-      <xref linkend="libwebp"/>,
-      <xref linkend="pango"/>,
-      <xref linkend="poppler"/>,
-      <xref linkend="ruby"/>,
-      <xref linkend="sdl2"/>,
-      <xref linkend="v4l-utils"/>,
-      <xref linkend="vala"/>,
-      <ulink url="https://luajit.org/luajit.html">LuaJIT</ulink>,
-      <ulink url="https://lensfun.github.io/">lensfun</ulink>,
-      <ulink url="https://luajit.org/luajit.html">LuaJIT</ulink>,
-      <ulink url="https://www.netsurf-browser.org/projects/libnsgif/">libnsgif</ulink>,
-      <ulink url="https://faculty.cse.tamu.edu/davis/suitesparse.html">libumfpack</ulink>,
-      <ulink url="https://github.com/gerddie/maxflow">maxflow</ulink>,
-      <ulink url="https://github.com/hodefoting/mrg/releases">MRG</ulink>,
-      <ulink url="https://www.khronos.org/opencl/">OpenCL</ulink>,
-      <ulink url="https://www.openexr.com">OpenEXR</ulink>,
-      <ulink url="https://github.com/KyleLink/poly2tri-c">poly2tri-c</ulink>,
-      <ulink url="https://www.gnu.org/software/src-highlite/">source-highlight</ulink>,
-      <ulink url="https://w3m.sourceforge.net/">w3m</ulink>
-    </para>
 @z
 
 @x
@@ -171,14 +105,16 @@
 @x
       To run the tests, issue: <command>ninja test</command>. <!--This should
       indicate no failures, but will skip many tests depending on optional
-      dependencies installed on the system.--> 7 tests in the
+      dependencies installed on the system. 7 tests in the
       <filename>gegl:ff-load-save</filename> portion of the test suite are
-      known to fail due to incompatibilities with ffmpeg-6.0.
+      known to fail due to incompatibilities with ffmpeg-6.0.-->
 @y
       ビルド結果をテストする場合は <command>ninja test</command> を実行します。
-      7 tests in the
+      To run the tests, issue: <command>ninja test</command>. <!--This should
+      indicate no failures, but will skip many tests depending on optional
+      dependencies installed on the system. 7 tests in the
       <filename>gegl:ff-load-save</filename> portion of the test suite are
-      known to fail due to incompatibilities with ffmpeg-6.0.
+      known to fail due to incompatibilities with ffmpeg-6.0.-->
 @z
 
 @x

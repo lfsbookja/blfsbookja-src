@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY qt5-buildsize     "varies">
-  <!ENTITY qt5-time          "varies">
+  <!ENTITY qt5-buildsize     "9.0 GB (154 MB installed)">
+  <!ENTITY qt5-time          "7.5 SBU (using parallelism=4)">
 @y
-  <!ENTITY qt5-buildsize     "varies">
-  <!ENTITY qt5-time          "varies">
+  <!ENTITY qt5-buildsize     "9.0 GB (154 MB installed)">
+  <!ENTITY qt5-time          "7.5 SBU (using parallelism=4)">
 @z
 
 @x
@@ -18,13 +18,35 @@
 @z
 
 @x
-      These instructions show how to build additional Qt5 components beyond
-      <xref linkend="qt5-alternate"/>.  They are not applicable if the
-      full <xref linkend="qt5"/> package has been built.
+      <application>Qt5</application> is a cross-platform application framework
+      that is widely used for developing application software with a graphical
+      user interface (GUI) (in which cases <application>qt5</application> is
+      classified as a widget toolkit), and also used for developing non-GUI
+      programs such as command-line tools and consoles for servers. Two of the
+      major users of <application>qt</application> are <application>KDE
+      Frameworks 5 (KF5)</application> and <application>LXQt</application>.
 @y
-      These instructions show how to build additional Qt5 components beyond
-      <xref linkend="qt5-alternate"/>.  They are not applicable if the
-      full <xref linkend="qt5"/> package has been built.
+      <application>Qt5</application> is a cross-platform application framework
+      that is widely used for developing application software with a graphical
+      user interface (GUI) (in which cases <application>qt5</application> is
+      classified as a widget toolkit), and also used for developing non-GUI
+      programs such as command-line tools and consoles for servers. Two of the
+      major users of <application>qt</application> are <application>KDE
+      Frameworks 5 (KF5)</application> and <application>LXQt</application>.
+@z
+
+@x
+         The full <application>qt5</application> package consists of 43 separate
+         components. These instructions use a small subset of the full
+         <application>qt5</application> installation instructions.
+         They cover the components needed to build
+         packages in BLFS. 
+@y
+         The full <application>qt5</application> package consists of 43 separate
+         components. These instructions use a small subset of the full
+         <application>qt5</application> installation instructions.
+         They cover the components needed to build
+         packages in BLFS. 
 @z
 
 @x
@@ -104,151 +126,102 @@
 @z
 
 @x
-    <bridgehead renderas="sect3">qt5 components Dependencies</bridgehead>
+    <bridgehead renderas="sect3">qt5 Dependencies</bridgehead>
 @y
-    <bridgehead renderas="sect3">qt5 components Dependencies</bridgehead>
+    <bridgehead renderas="sect3">qt5 Dependencies</bridgehead>
 @z
 
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="qt5-alternate"/>
+      <xref linkend="xorg7-lib"/>
     </para>
 @y
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="qt5-alternate"/>
+      <xref linkend="xorg7-lib"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended dependencies for qtimageformats</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="jasper"/>,
-      <xref linkend="libmng"/>,
-      <xref linkend="libtiff"/>, and
-      <xref linkend="libwebp"/>
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="at-spi2-core"/>,
+      <xref linkend="cups"/>,
+      <phrase revision='sysv'><xref linkend="dbus"/>,</phrase>
+      <xref linkend="double-conversion"/>,
+      <xref linkend="glib2"/>,
+      <xref linkend="harfbuzz"/>,
+      <xref linkend="icu"/>,
+      <xref linkend="hicolor-icon-theme"/>,
+      <xref linkend="mesa"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libxkbcommon"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="wayland"/> (<application>Mesa</application>
+      must be built with <application>Wayland</application> EGL
+      backend),
+      <xref linkend="xcb-util-image"/>,
+      <xref linkend="xcb-util-keysyms"/>,
+      <xref linkend="xcb-util-renderutil"/>, and
+      <xref linkend="xcb-util-wm"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended dependencies for qtimageformats</bridgehead>
+    <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="jasper"/>,
-      <xref linkend="libmng"/>,
-      <xref linkend="libtiff"/>, and
-      <xref linkend="libwebp"/>
+      <xref linkend="alsa-lib"/>,
+      <xref linkend="at-spi2-core"/>,
+      <xref linkend="cups"/>,
+      <phrase revision='sysv'><xref linkend="dbus"/>,</phrase>
+      <xref linkend="double-conversion"/>,
+      <xref linkend="glib2"/>,
+      <xref linkend="harfbuzz"/>,
+      <xref linkend="icu"/>,
+      <xref linkend="hicolor-icon-theme"/>,
+      <xref linkend="mesa"/>,
+      <xref linkend="libjpeg"/>,
+      <xref linkend="libxkbcommon"/>,
+      <xref linkend="sqlite"/>,
+      <xref linkend="wayland"/> (<application>Mesa</application>
+      must be built with <application>Wayland</application> EGL
+      backend),
+      <xref linkend="xcb-util-image"/>,
+      <xref linkend="xcb-util-keysyms"/>,
+      <xref linkend="xcb-util-renderutil"/>, and
+      <xref linkend="xcb-util-wm"/>
     </para>
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended dependencies for qtmultimedia</bridgehead>
-    <para role="recommended">
-      <xref linkend="gst10-plugins-good"/>,
-      <xref linkend="gst10-plugins-bad"/>, and
-      <xref linkend="gst10-plugins-ugly"/>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk3"/>,
+      <xref linkend="libinput"/>
+      <xref linkend="mariadb"/>
+        or <ulink url="https://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="mtdev"/>
+      <xref linkend="postgresql"/>, and
+      <xref linkend="unixodbc"/>
     </para>
 @y
-    <bridgehead renderas="sect4">Recommended dependencies for qtmultimedia</bridgehead>
-    <para role="recommended">
-      <xref linkend="gst10-plugins-good"/>,
-      <xref linkend="gst10-plugins-bad"/>, and
-      <xref linkend="gst10-plugins-ugly"/>
+    <bridgehead renderas="sect4">Optional</bridgehead>
+    <para role="optional">
+      <xref linkend="gtk3"/>,
+      <xref linkend="libinput"/>
+      <xref linkend="mariadb"/>
+        or <ulink url="https://www.mysql.com/">MySQL</ulink>,
+      <xref linkend="mitkrb"/>,
+      <xref linkend="mtdev"/>
+      <xref linkend="postgresql"/>, and
+      <xref linkend="unixodbc"/>
     </para>
 @z
 
 @x
-    <title>Installation of qt5 components</title>
+    <title>Setting the installation prefix</title>
 @y
-    <title>Installation of qt5 components</title>
+    <title>Setting the installation prefix</title>
 @z
 
-@x
-      There are a few extra components needed for different packages in BLFS.
-      These are
-      <emphasis role="bold">qtimageformats</emphasis>,
-      <emphasis role="bold">qtwebchannel</emphasis>,
-      <emphasis role="bold">qtdoc</emphasis>, and
-      <emphasis role="bold">qtmultimedia</emphasis>.
-      Only those components specified for a specific
-      package are needed. You only need to build the relevant component(s).
-@y
-      There are a few extra components needed for different packages in BLFS.
-      These are
-      <emphasis role="bold">qtimageformats</emphasis>,
-      <emphasis role="bold">qtwebchannel</emphasis>,
-      <emphasis role="bold">qtdoc</emphasis>, and
-      <emphasis role="bold">qtmultimedia</emphasis>.
-      Only those components specified for a specific
-      package are needed. You only need to build the relevant component(s).
-@z
-
-@x
-      First, apply a patch to pull in the fixes curated by KDE for some of the
-      modules listed above:
-@y
-      First, apply a patch to pull in the fixes curated by KDE for some of the
-      modules listed above:
-@z
-
-@x
-      Install each desired component by running the following commands:
-@y
-      Install each desired component by running the following commands:
-@z
-
-@x
-      As the &root; user:
-@y
-      As the &root; user:
-@z
-
-@x
-      Remove references to the build directory from installed library
-      dependency (prl) files by running the following
-      command as the &root; user:
-@y
-      Remove references to the build directory from installed library
-      dependency (prl) files by running the following
-      command as the &root; user:
-@z
-
-@x
-    <title>Contents</title>
-@y
-    <title>Contents</title>
-@z
-
-@x
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
-@y
-      <segtitle>Installed Programs</segtitle>
-      <segtitle>Installed Libraries</segtitle>
-      <segtitle>Installed Directories</segtitle>
-@z
-
-@x
-        <seg>
-          None
-        </seg>
-        <seg>
-          libQt5&lt;component&gt;.so
-        </seg>
-        <seg>
-          $QT5DIR/qml/&lt;component&gt;,
-          $QT5DIR/lib/cmake/&lt;component&gt;, and
-          $QT5DIR/include/&lt;component&gt;
-        </seg>
-@y
-        <seg>
-          None
-        </seg>
-        <seg>
-          libQt5&lt;component&gt;.so
-        </seg>
-        <seg>
-          $QT5DIR/qml/&lt;component&gt;,
-          $QT5DIR/lib/cmake/&lt;component&gt;, and
-          $QT5DIR/include/&lt;component&gt;
-        </seg>
-@z

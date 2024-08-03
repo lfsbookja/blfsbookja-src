@@ -132,45 +132,45 @@
 @z
 
 @x
-      <parameter>-Dprotobuf_BUILD_TESTS=OFF</parameter>: This parameter prevents
+      <parameter>-D protobuf_BUILD_TESTS=OFF</parameter>: This parameter prevents
       the tests from being built because
       <ulink url="https://github.com/google/googletest">gtest</ulink> is not
       part of BLFS.
 @y
-      <parameter>-Dprotobuf_BUILD_TESTS=OFF</parameter>: This parameter prevents
+      <parameter>-D protobuf_BUILD_TESTS=OFF</parameter>: This parameter prevents
       the tests from being built because
       <ulink url="https://github.com/google/googletest">gtest</ulink> is not
       part of BLFS.
 @z
 
 @x
-      <parameter>-Dprotobuf_ABSL_PROVIDER=package</parameter>: This parameter
+      <parameter>-D protobuf_ABSL_PROVIDER=package</parameter>: This parameter
       allows the build system to use the system-installed copy of
       <xref linkend="abseil-cpp" role="nodep"/>.
 @y
-      <parameter>-Dprotobuf_ABSL_PROVIDER=package</parameter>: This parameter
+      <parameter>-D protobuf_ABSL_PROVIDER=package</parameter>: This parameter
       allows the build system to use the system-installed copy of
       <xref linkend="abseil-cpp" role="nodep"/>.
 @z
 
 @x
-      <parameter>-Dprotobuf_BUILD_SHARED_LIBS=ON</parameter>: This parameter
+      <parameter>-D protobuf_BUILD_SHARED_LIBS=ON</parameter>: This parameter
       enables building shared versions of the libraries provided by this package
       instead of static versions.
 @y
-      <parameter>-Dprotobuf_BUILD_SHARED_LIBS=ON</parameter>: This parameter
+      <parameter>-D protobuf_BUILD_SHARED_LIBS=ON</parameter>: This parameter
       enables building shared versions of the libraries provided by this package
       instead of static versions.
 @z
 
 @x
-      <parameter>-Dutf8_range_ENABLE_INSTALL=OFF</parameter>: This parameter
+      <parameter>-D utf8_range_ENABLE_INSTALL=OFF</parameter>: This parameter
       disables installing the utf8_range static library.  The functions
       provided by this library and used by protobuf is already embedded into
       <filename class='libraryfile'>libprotobuf.so</filename>, so installing
       a full copy of the static library is just wasting the disk space.
 @y
-      <parameter>-Dutf8_range_ENABLE_INSTALL=OFF</parameter>: This parameter
+      <parameter>-D utf8_range_ENABLE_INSTALL=OFF</parameter>: This parameter
       disables installing the utf8_range static library.  The functions
       provided by this library and used by protobuf is already embedded into
       <filename class='libraryfile'>libprotobuf.so</filename>, so installing

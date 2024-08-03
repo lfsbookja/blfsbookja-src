@@ -4,15 +4,15 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY git-buildsize     "308 MB (with downloaded documentation; add 18 MB for building docs)">
+  <!ENTITY git-buildsize     "441 MB (with downloaded documentation; add 19 MB for building docs; add 21 MB for tests)">
 @y
-  <!ENTITY git-buildsize     "308 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 18 MB）">
+  <!ENTITY git-buildsize     "441 MB（ダウンロードドキュメントを含む、ドキュメントビルド時はさらに 19 MB; テスト時はさらに 21 MB）">
 @z
 
 @x
-  <!ENTITY git-time          "0.4 SBU (with parallelism=4; add 0.4 SBU for building doc, and up to 5 SBU (disk speed dependent) for tests)">
+  <!ENTITY git-time          "0.3 SBU (with parallelism=4; add 0.4 SBU for building doc, and up to 7 SBU (disk speed dependent) for tests)">
 @y
-  <!ENTITY git-time          "0.4 SBU（parallelism=4 処理時; ドキュメントビルド時はさらに 0.4 SBU、テスト実施時はさらに (ディスク速度により) 最大 5 SBU）">
+  <!ENTITY git-time          "0.3 SBU（parallelism=4 処理時; ドキュメントビルド時はさらに 0.4 SBU、テスト実施時はさらに (ディスク速度により) 最大 7 SBU）">
 @z
 
 @x

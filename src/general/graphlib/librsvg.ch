@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY librsvg-buildsize     "765 MB (17 MB installed), add 545 MB for tests">
-  <!ENTITY librsvg-time          "0.6 SBU (add 0.7 SBU for tests; both using parallelism=4)">
+  <!ENTITY librsvg-buildsize     "728 MB (17 MB installed), add 545 MB for tests">
+  <!ENTITY librsvg-time          "0.7 SBU (add 0.7 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY librsvg-buildsize     "765 MB (17 MB installed), add 545 MB for tests">
-  <!ENTITY librsvg-time          "0.6 SBU (add 0.7 SBU for tests; both using parallelism=4)">
+  <!ENTITY librsvg-buildsize     "728 MB (17 MB installed), add 545 MB for tests">
+  <!ENTITY librsvg-time          "0.7 SBU (add 0.7 SBU for tests; both using parallelism=4)">
 @z
 
 @x
@@ -135,9 +135,9 @@
 @z
 
 @x
-      To test the results, issue: <command>LC_ALL=C make -k check</command>.
+      To test the results, issue:
 @y
-      ビルド結果をテストする場合は <command>LC_ALL=C make -k check</command> を実行します。
+      ビルド結果をテストする場合は以下を実行します。
 @z
 
 @x

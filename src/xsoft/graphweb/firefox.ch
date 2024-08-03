@@ -123,7 +123,6 @@
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
       <xref linkend="cbindgen"/>,
-      <xref linkend="dbus-glib"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="llvm"/> (with clang, used for bindgen even if using gcc),
@@ -141,7 +140,6 @@
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
       <xref linkend="cbindgen"/>,
-      <xref linkend="dbus-glib"/>,
       <xref linkend="gtk3"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="llvm"/> (with clang, used for bindgen even if using gcc),
@@ -152,7 +150,7 @@
         now deprecated by mozilla), in either case please read the
         Configuration Information,
       <xref linkend="python3"/> (after installing <xref linkend="sqlite"/>), 
-      <xref linkend="startup-notification"/>, and
+      <xref linkend="startup-notification"/>,
       <xref linkend="unzip"/>
     </para>
 @z

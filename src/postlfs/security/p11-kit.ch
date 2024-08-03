@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY p11-kit-buildsize     "93 MB (with tests)">
+  <!ENTITY p11-kit-buildsize     "94 MB (with tests)">
   <!ENTITY p11-kit-time          "0.7 SBU (with tests)">
 @y
-  <!ENTITY p11-kit-buildsize     "93 MB (テスト込み)">
+  <!ENTITY p11-kit-buildsize     "94 MB (テスト込み)">
   <!ENTITY p11-kit-time          "0.7 SBU (テスト込み)">
 @z
 

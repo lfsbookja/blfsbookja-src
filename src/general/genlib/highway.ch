@@ -108,7 +108,7 @@
 @z
 
 @x
-      <parameter>-DBUILD_TESTING=OFF</parameter>: This parameter disables the
+      <parameter>-D BUILD_TESTING=OFF</parameter>: This parameter disables the
       test suite from being built because
       <ulink url="https://github.com/google/googletest">gtest</ulink> is not
       part of BLFS. Without this parameter, CMake will download this package
@@ -116,7 +116,7 @@
       <ulink url="https://github.com/google/googletest">gtest</ulink> and then
       remove this parameter.
 @y
-      <parameter>-DBUILD_TESTING=OFF</parameter>: This parameter disables the
+      <parameter>-D BUILD_TESTING=OFF</parameter>: This parameter disables the
       test suite from being built because
       <ulink url="https://github.com/google/googletest">gtest</ulink> is not
       part of BLFS. Without this parameter, CMake will download this package
@@ -126,10 +126,10 @@
 @z
 
 @x
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This parameter enables
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This parameter enables
       building shared versions of the libraries instead of static versions.
 @y
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This parameter enables
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This parameter enables
       building shared versions of the libraries instead of static versions.
 @z
 

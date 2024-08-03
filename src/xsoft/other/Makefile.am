@@ -6,12 +6,11 @@ CHANGE_FILES = \
 	balsa.ch            \
 	feh.ch              \
 	fontforge.ch        \
+	freerdp.ch          \
 	gimp.ch             \
 	gparted.ch          \
-	hexchat.ch          \
 	inkscape.ch         \
 	other.ch            \
-	pidgin.ch           \
 	rox-filer.ch        \
 	rox-filer-kernel.ch \
         rxvt-unicode.ch     \

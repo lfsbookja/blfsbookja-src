@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pipewire-buildsize     "69 MB (with tests)">
-  <!ENTITY pipewire-time          "0.4 SBU (with tests, both using parallelism=4)">
+  <!ENTITY pipewire-buildsize     "68 MB (with tests)">
+  <!ENTITY pipewire-time          "0.5 SBU (with tests, both using parallelism=4)">
 @y
-  <!ENTITY pipewire-buildsize     "629 MB（テスト込み）">
-  <!ENTITY pipewire-time          "0.4 SBU（テスト込み、いずれも parallelism=4 利用）">
+  <!ENTITY pipewire-buildsize     "68 MB（テスト込み）">
+  <!ENTITY pipewire-time          "0.5 SBU（テスト込み、いずれも parallelism=4 利用）">
 @z
 
 @x
@@ -195,21 +195,21 @@
 @z
 
 @x
-      <option>-Ddocs=true</option>: This switch enables the generation of HTML
+      <option>-D docs=true</option>: This switch enables the generation of HTML
       documentation. The optional dependencies for documentation need to be
       installed for this to work.
 @y
-      <option>-Ddocs=true</option>: This switch enables the generation of HTML
+      <option>-D docs=true</option>: This switch enables the generation of HTML
       documentation. The optional dependencies for documentation need to be
       installed for this to work.
 @z
 
 @x
-      <option>-Dman=true</option>: This switch enables the generation of manual
+      <option>-D man=true</option>: This switch enables the generation of manual
       pages. The optional dependencies for documentation need to be installed
       for this to work.
 @y
-      <option>-Dman=true</option>: This switch enables the generation of manual
+      <option>-D man=true</option>: This switch enables the generation of manual
       pages. The optional dependencies for documentation need to be installed
       for this to work.
 @z

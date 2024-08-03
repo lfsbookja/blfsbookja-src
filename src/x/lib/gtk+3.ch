@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gtk3-buildsize     "240 MB (add 8 MB for tests)">
+  <!ENTITY gtk3-buildsize     "252 MB (add 8 MB for tests)">
   <!ENTITY gtk3-time          "0.8 SBU (using parallelism=4; add 0.2 SBU for tests)">
 @y
-  <!ENTITY gtk3-buildsize     "240 MB (add 8 MB for tests)">
+  <!ENTITY gtk3-buildsize     "252 MB (add 8 MB for tests)">
   <!ENTITY gtk3-time          "0.8 SBU (using parallelism=4; add 0.2 SBU for tests)">
 @z
 
@@ -207,45 +207,45 @@
 @z
 
 @x
-      <parameter>-Dbroadway_backend=true</parameter>: This switch enables the
+      <parameter>-D broadway_backend=true</parameter>: This switch enables the
       HTML5 GTK backend.
 @y
-      <parameter>-Dbroadway_backend=true</parameter>: This switch enables the
+      <parameter>-D broadway_backend=true</parameter>: This switch enables the
       HTML5 GTK backend.
 @z
 
 @x
-      <parameter>-Dman=true</parameter>: This switch allows generating
+      <parameter>-D man=true</parameter>: This switch allows generating
       manual pages.
 @y
-      <parameter>-Dman=true</parameter>: This switch allows generating
+      <parameter>-D man=true</parameter>: This switch allows generating
       manual pages.
 @z
 
 @x
-      <option>-Dgtk_doc=true</option>: This switch enables building
+      <option>-D gtk_doc=true</option>: This switch enables building
       documentation. It requires <xref linkend="gtk-doc"/>.
 @y
-      <option>-Dgtk_doc=true</option>: This switch enables building
+      <option>-D gtk_doc=true</option>: This switch enables building
       documentation. It requires <xref linkend="gtk-doc"/>.
 @z
 
 @x
-      <option>-Dtracker3=true</option>: This switch enables the search
+      <option>-D tracker3=true</option>: This switch enables the search
       function based on Tracker 3 in the GTK+-3 file chooser dialog.
       It requires <xref linkend="tracker3"/>.
 @y
-      <option>-Dtracker3=true</option>: This switch enables the search
+      <option>-D tracker3=true</option>: This switch enables the search
       function based on Tracker 3 in the GTK+-3 file chooser dialog.
       It requires <xref linkend="tracker3"/>.
 @z
 
 @x
-      <option>-Dcloudproviders=true</option>: Use this switch if you have
+      <option>-D cloudproviders=true</option>: Use this switch if you have
       <xref linkend="libcloudproviders" role="nodep"/> installed and wish to
       enable support for cloud providers in a file chooser window.
 @y
-      <option>-Dcloudproviders=true</option>: Use this switch if you have
+      <option>-D cloudproviders=true</option>: Use this switch if you have
       <xref linkend="libcloudproviders" role="nodep"/> installed and wish to
       enable support for cloud providers in a file chooser window.
 @z

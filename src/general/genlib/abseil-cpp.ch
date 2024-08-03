@@ -20,26 +20,31 @@
 @x
     <bridgehead renderas="sect3">Package Information</bridgehead>
 @y
+    <bridgehead renderas="sect3">Package Information</bridgehead>
 @z
 
 @x
           Download (HTTP): <ulink url="&abseil-cpp-download-http;"/>
 @y
+          Download (HTTP): <ulink url="&abseil-cpp-download-http;"/>
 @z
 
 @x
           Download MD5 sum: &abseil-cpp-md5sum;
 @y
+          Download MD5 sum: &abseil-cpp-md5sum;
 @z
 
 @x
           Download size: &abseil-cpp-size;
 @y
+          Download size: &abseil-cpp-size;
 @z
 
 @x
           Estimated disk space required: &abseil-cpp-buildsize;
 @y
+          Estimated disk space required: &abseil-cpp-buildsize;
 @z
 
 @x
@@ -99,21 +104,21 @@
 @z
 
 @x
-      <parameter>-DABSL_PROPAGATE_CXX_STD=ON</parameter>: This parameter
+      <parameter>-D ABSL_PROPAGATE_CXX_STD=ON</parameter>: This parameter
       enables propagating C++ features to targets that link to this package's
       libraries.
 @y
-      <parameter>-DABSL_PROPAGATE_CXX_STD=ON</parameter>: This parameter
+      <parameter>-D ABSL_PROPAGATE_CXX_STD=ON</parameter>: This parameter
       enables propagating C++ features to targets that link to this package's
       libraries.
 @z
 
 @x
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This parameter builds
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This parameter builds
       shared versions of the libraries provided by this package instead of
       static libraries.
 @y
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This parameter builds
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This parameter builds
       shared versions of the libraries provided by this package instead of
       static libraries.
 @z

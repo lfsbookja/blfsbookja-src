@@ -126,20 +126,20 @@
 @z
 
 @x
-      <option>-DBUILD_TESTS=ON</option>: Use this option if you wish to build
+      <option>-D BUILD_TESTS=ON</option>: Use this option if you wish to build
       tests. If you pass this option, you can run the tests by executing:
       <command>make test</command>.
 @y
-      <option>-DBUILD_TESTS=ON</option>: Use this option if you wish to build
+      <option>-D BUILD_TESTS=ON</option>: Use this option if you wish to build
       tests. If you pass this option, you can run the tests by executing:
       <command>make test</command>.
 @z
 
 @x
-      <option>-DBUILD_DEV_UTILS=ON</option>: Use this switch if you wish to
+      <option>-D BUILD_DEV_UTILS=ON</option>: Use this switch if you wish to
       build and install the development utilities.
 @y
-      <option>-DBUILD_DEV_UTILS=ON</option>: Use this switch if you wish to
+      <option>-D BUILD_DEV_UTILS=ON</option>: Use this switch if you wish to
       build and install the development utilities.
 @z
 

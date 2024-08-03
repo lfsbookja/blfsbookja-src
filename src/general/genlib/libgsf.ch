@@ -104,13 +104,17 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk-doc"/> and
+      <xref linkend="gtk-doc"/>,
+      <xref linkend='p7zip'/> (for tests),
+      <xref linkend='unzip'/> (for tests), and
       <xref linkend="valgrind"/> (for tests)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gtk-doc"/>,
+      <xref linkend='p7zip'/> (テストのため),
+      <xref linkend='unzip'/> (テストのため),
       <xref linkend="valgrind"/> (テストのため)
     </para>
 @z

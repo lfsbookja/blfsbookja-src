@@ -167,31 +167,31 @@
 @z
 
 @x
-      <option>-DENABLE_QT=OFF</option>: This switch disables building
+      <option>-D ENABLE_QT=OFF</option>: This switch disables building
       the <application>Qt</application> interface. The default is to build it
       if &qt5-deps; or <xref linkend="qt6"/> is installed.
 @y
-      <option>-DENABLE_QT=OFF</option>: This switch disables building
+      <option>-D ENABLE_QT=OFF</option>: This switch disables building
       the <application>Qt</application> interface. The default is to build it
       if &qt5-deps; or <xref linkend="qt6"/> is installed.
 @z
 
 @x
-      <option>-DENABLE_GTK=OFF</option>: This switch disables building
+      <option>-D ENABLE_GTK=OFF</option>: This switch disables building
       the GTK-4 interface. The default is to build it if
       <xref linkend="gtkmm4"/> is installed.
 @y
-      <option>-DENABLE_GTK=OFF</option>: This switch disables building
+      <option>-D ENABLE_GTK=OFF</option>: This switch disables building
       the GTK-4 interface. The default is to build it if
       <xref linkend="gtkmm4"/> is installed.
 @z
 
 @x
-      <option>-DENABLE_WEB=OFF</option>: This switch disables building
+      <option>-D ENABLE_WEB=OFF</option>: This switch disables building
       the web client. The default is to build it if <xref linkend="nodejs"/>
       is installed.
 @y
-      <option>-DENABLE_WEB=OFF</option>: This switch disables building
+      <option>-D ENABLE_WEB=OFF</option>: This switch disables building
       the web client. The default is to build it if <xref linkend="nodejs"/>
       is installed.
 @z

@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY sphinx-buildsize     "52 MB (with tests)">
-  <!ENTITY sphinx-time          "less than 0.1 SBU (add 1.3 SBU for tests)">
+  <!ENTITY sphinx-buildsize     "57 MB (with tests)">
+  <!ENTITY sphinx-time          "less than 0.1 SBU (add 1.0 SBU for tests)">
 @y
-  <!ENTITY sphinx-buildsize     "52 MB (with tests)">
-  <!ENTITY sphinx-time          "less than 0.1 SBU (add 1.3 SBU for tests)">
+  <!ENTITY sphinx-buildsize     "57 MB (with tests)">
+  <!ENTITY sphinx-time          "less than 0.1 SBU (add 1.0 SBU for tests)">
 @z
 
 @x
@@ -121,7 +121,7 @@
         <xref linkend="pytest"/>,
         <xref linkend="texlive"/>, 
         <ulink url="https://pypi.org/project/defusedxml/">defusedxml</ulink>, and
-        <ulink url="https://pypi.org/project/filelock/">filelock</ulink>
+        <ulink url="https://pypi.org/project/typing_extensions/">typing_extensions</ulink>
       </para>
 @y
       <bridgehead renderas="sect5">Optional (for tests)</bridgehead>
@@ -131,7 +131,7 @@
         <xref linkend="pytest"/>,
         <xref linkend="texlive"/>, 
         <ulink url="https://pypi.org/project/defusedxml/">defusedxml</ulink>,
-        <ulink url="https://pypi.org/project/filelock/">filelock</ulink>
+        <ulink url="https://pypi.org/project/typing_extensions/">typing_extensions</ulink>
       </para>
 @z
 

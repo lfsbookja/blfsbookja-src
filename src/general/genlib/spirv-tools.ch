@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY spirv-tools-time          "0.9 SBU (with tests; both using parallelism=8)">
+  <!ENTITY spirv-tools-time          "1.0 SBU (with tests; both using parallelism=8)">
 @y
-  <!ENTITY spirv-tools-time          "0.9 SBU (with tests; both using parallelism=8)">
+  <!ENTITY spirv-tools-time          "1.0 SBU (with tests; both using parallelism=8)">
 @z
 
 @x
@@ -117,36 +117,36 @@
 @z
 
 @x
-      <parameter>-DSPIRV_WERROR=OFF</parameter>: This switch stops the build
+      <parameter>-D SPIRV_WERROR=OFF</parameter>: This switch stops the build
       system from treating warnings as errors.
 @y
-      <parameter>-DSPIRV_WERROR=OFF</parameter>: This switch stops the build
+      <parameter>-D SPIRV_WERROR=OFF</parameter>: This switch stops the build
       system from treating warnings as errors.
 @z
 
 @x
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This switch forces the
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This switch forces the
       build system to install shared libraries instead of static libraries.
 @y
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This switch forces the
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This switch forces the
       build system to install shared libraries instead of static libraries.
 @z
 
 @x
-      <parameter>-DSPIRV_TOOLS_BUILD_STATIC=OFF</parameter>: This switch
+      <parameter>-D SPIRV_TOOLS_BUILD_STATIC=OFF</parameter>: This switch
       disables building static versions of the libraries.
 @y
-      <parameter>-DSPIRV_TOOLS_BUILD_STATIC=OFF</parameter>: This switch
+      <parameter>-D SPIRV_TOOLS_BUILD_STATIC=OFF</parameter>: This switch
       disables building static versions of the libraries.
 @z
 
 @x
-      <parameter>-DSPIRV-Headers_SOURCE_DIR</parameter>: This switch tells the
+      <parameter>-D SPIRV-Headers_SOURCE_DIR</parameter>: This switch tells the
       build system that <xref linkend="spirv-headers" role="nodep"/> is
       installed in /usr. This is needed since the build system tries to use an
       internal copy by default.
 @y
-      <parameter>-DSPIRV-Headers_SOURCE_DIR</parameter>: This switch tells the
+      <parameter>-D SPIRV-Headers_SOURCE_DIR</parameter>: This switch tells the
       build system that <xref linkend="spirv-headers" role="nodep"/> is
       installed in /usr. This is needed since the build system tries to use an
       internal copy by default.

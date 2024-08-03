@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY lcms2-buildsize     "20 MB (with the tests)">
+  <!ENTITY lcms2-buildsize     "22 MB (with the tests)">
   <!ENTITY lcms2-time          "0.2 SBU (with the tests)">
 @y
-  <!ENTITY lcms2-buildsize     "20 MB (テスト込み)">
+  <!ENTITY lcms2-buildsize     "22 MB (テスト込み)">
   <!ENTITY lcms2-time          "0.2 SBU (テスト込み)">
 @z
 
@@ -95,12 +95,6 @@
     <title>Installation of Little CMS2</title>
 @y
     <title>&InstallationOf1;Little CMS2&InstallationOf2;</title>
-@z
-
-@x
-      Apply the upstream fix for an issue breaking colord:
-@y
-      Apply the upstream fix for an issue breaking colord:
 @z
 
 @x

@@ -79,23 +79,23 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="libiodbc"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="postgresql"/>,
       &berkeley-db;
+      <ulink url="https://sourceforge.net/projects/iodbc/files/">libiodbc</ulink>,
       <ulink url="&sourceforge-dl;/virtuoso/">virtuoso</ulink>, and
       <ulink url="https://sourceforge.net/projects/threestore/">3store</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="libiodbc"/>,
       <xref linkend="sqlite"/>,
       <xref linkend="mariadb"/> or <ulink url="https://www.mysql.com/">MySQL</ulink>,
       <xref linkend="postgresql"/>,
       &berkeley-db;
-      <ulink url="&sourceforge-dl;/virtuoso/">virtuoso</ulink>, and
+      <ulink url="https://sourceforge.net/projects/iodbc/files/">libiodbc</ulink>,
+      <ulink url="&sourceforge-dl;/virtuoso/">virtuoso</ulink>,
       <ulink url="https://sourceforge.net/projects/threestore/">3store</ulink>
     </para>
 @z

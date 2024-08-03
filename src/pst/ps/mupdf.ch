@@ -86,10 +86,7 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <!--<xref linkend="freeglut"/>, use of the bundled glut is preferred -->
       <xref linkend="harfbuzz"/>,
-      <!-- This no-longer gets linked in with our system libs patch
-      <xref linkend="lcms2"/>, -->
       <xref linkend="libjpeg"/>,
       <xref linkend="openjpeg2"/>, and
       <xref linkend="curl"/>
@@ -97,10 +94,7 @@
 @y
     <bridgehead renderas="sect4">&Recommended;</bridgehead>
     <para role="recommended">
-      <!--<xref linkend="freeglut"/>, use of the bundled glut is preferred -->
       <xref linkend="harfbuzz"/>,
-      <!-- This no-longer gets linked in with our system libs patch
-      <xref linkend="lcms2"/>, -->
       <xref linkend="libjpeg"/>,
       <xref linkend="openjpeg2"/>,
       <xref linkend="curl"/>
@@ -139,12 +133,6 @@
     <title>Installation of MuPDF</title>
 @y
     <title>&InstallationOf1;MuPDF&InstallationOf2;</title>
-@z
-
-@x
-    <para>First, fix the Makefile to link properly with the shared library:</para>
-@y
-    <para>First, fix the Makefile to link properly with the shared library:</para>
 @z
 
 @x

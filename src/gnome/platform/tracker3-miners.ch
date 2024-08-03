@@ -91,7 +91,6 @@
       <xref role='runtime' linkend="gst10-libav"/> (runtime),
       <xref linkend="icu"/>,
       <xref linkend="libexif"/>,
-      <xref linkend="libgrss"/>,
       <xref linkend="libgxps"/>,
       <xref linkend="libseccomp"/>,
       <xref linkend="poppler"/>, and
@@ -105,7 +104,6 @@
       <xref role='runtime' linkend="gst10-libav"/> (実行時),
       <xref linkend="icu"/>,
       <xref linkend="libexif"/>,
-      <xref linkend="libgrss"/>,
       <xref linkend="libgxps"/>,
       <xref linkend="libseccomp"/>,
       <xref linkend="poppler"/>,
@@ -125,6 +123,7 @@
       <xref linkend="taglib"/>,
       <xref linkend="totem-pl-parser"/>,
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
+      <ulink url="https://gitlab.gnome.org/GNOME/libgrss">libgrss</ulink>,
       <ulink url="https://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
       <ulink url="https://libosinfo.org">libosinfo</ulink>, and
       <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
@@ -141,6 +140,7 @@
       <xref linkend="taglib"/>,
       <xref linkend="totem-pl-parser"/>,
       <ulink url="https://github.com/lipnitsk/libcue">libcue</ulink>,
+      <ulink url="https://gitlab.gnome.org/GNOME/libgrss">libgrss</ulink>,
       <ulink url="https://libiptcdata.sourceforge.net/">libitpcdata</ulink>,
       <ulink url="https://libosinfo.org">libosinfo</ulink>,
       <ulink url="https://gitlab.gnome.org/GNOME/gupnp">gupnp</ulink>
@@ -187,17 +187,17 @@
 @z
 
 @x
-      To test the results, issue (adjust the individual test timeout to a
-      value suitable for your machine, see the note above):
-@y
-      To test the results, issue (adjust the individual test timeout to a
-      value suitable for your machine, see the note above):
-@z
-
-@x
       Now, as the <systemitem class="username">root</systemitem> user:
 @y
       <systemitem class="username">root</systemitem> になって以下を実行します。
+@z
+
+@x
+      To test the results, issue (adjust the individual test timeout to a
+      value suitable for your machine, see the note above):
+@y
+      To test the results, issue (adjust the individual test timeout to a
+      value suitable for your machine, see the note above):
 @z
 
 @x
@@ -207,43 +207,45 @@
 @z
 
 @x
-      <parameter>-Dman=false</parameter>: This switch prevents the build process
+      <parameter>-D man=false</parameter>: This switch prevents the build process
       from generating man pages. Omit this switch if you have
       <xref linkend="asciidoc" role="nodep"/> installed and wish to generate and
       install the man pages.
 @y
-      <parameter>-Dman=false</parameter>: This switch prevents the build process
+      <parameter>-D man=false</parameter>: This switch prevents the build process
       from generating man pages. Omit this switch if you have
       <xref linkend="asciidoc" role="nodep"/> installed and wish to generate and
       install the man pages.
+@z
+
+@x
+      <parameter>-D miner_rss=false</parameter>: This switch prevents using
+      libgrss for indexing RSS feeds because libgrss is insecure and no longer
+      in BLFS.
+@y
+      <parameter>-D miner_rss=false</parameter>: This switch prevents using
+      libgrss for indexing RSS feeds because libgrss is insecure and no longer
+      in BLFS.
 @z
 
 @x revision="sysv"
-      <parameter>-Dsystemd_user_services=false</parameter>: This switch prevents
+      <parameter>-D systemd_user_services=false</parameter>: This switch prevents
       the build process from installing systemd units since they are useless
       on SysV systems.
 @y
-      <parameter>-Dsystemd_user_services=false</parameter>: This switch prevents
+      <parameter>-D systemd_user_services=false</parameter>: This switch prevents
       the build process from installing systemd units since they are useless
       on SysV systems.
 @z
 
 @x
-      <option>-Dminer_rss=false</option>: Use this option if you have not
-      installed the recommended dependency libgrss.
-@y
-      <option>-Dminer_rss=false</option>: Use this option if you have not
-      installed the recommended dependency libgrss.
-@z
-
-@x
-      <option>-Dbattery_detection=none</option>: Use this option if you have
+      <option>-D battery_detection=none</option>: Use this option if you have
       not installed the recommended dependency upower.  Do not use this
       option if your system has a battery (laptop battery or UPS), or
       tracker miners may waste the battery power and lifespan when the A/C
       power is unavailable.
 @y
-      <option>-Dbattery_detection=none</option>: Use this option if you have
+      <option>-D battery_detection=none</option>: Use this option if you have
       not installed the recommended dependency upower.  Do not use this
       option if your system has a battery (laptop battery or UPS), or
       tracker miners may waste the battery power and lifespan when the A/C

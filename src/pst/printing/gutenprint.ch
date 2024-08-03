@@ -21,17 +21,17 @@
       The <application>Gutenprint</application> (formerly
       <application>Gimp-Print</application>) package contains high
       quality drivers for many brands and models of printers for use with
-      <xref linkend="cups"/>
-      and the
-      <application>GIMP-2.0</application>. See a list of supported printers at
+      <xref linkend="cups"/>.
+      <!--and the
+      <application>GIMP-2.0</application>.--> See a list of supported printers at
       <ulink url="https://gutenprint.sourceforge.net/p_Supported_Printers.php"/>.
 @y
       The <application>Gutenprint</application> (formerly
       <application>Gimp-Print</application>) package contains high
       quality drivers for many brands and models of printers for use with
-      <xref linkend="cups"/>
-      and the
-      <application>GIMP-2.0</application>. See a list of supported printers at
+      <xref linkend="cups"/>.
+      <!--and the
+      <application>GIMP-2.0</application>.--> See a list of supported printers at
       <ulink url="https://gutenprint.sourceforge.net/p_Supported_Printers.php"/>.
 @z
 
@@ -86,14 +86,14 @@
 @x
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cups"/> and
-      <xref linkend="gimp"/>
+      <xref linkend="cups"/><!-- and
+      <xref linkend="gimp"/>-->
     </para>
 @y
     <bridgehead renderas="sect4">Recommended</bridgehead>
     <para role="recommended">
-      <xref linkend="cups"/> and
-      <xref linkend="gimp"/>
+      <xref linkend="cups"/><!-- and
+      <xref linkend="gimp"/>-->
     </para>
 @z
 

@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY btrfs-progs-buildsize     "64 MB (transient files created during tests need up to 10 GB)">
-  <!ENTITY btrfs-progs-time          "0.3 SBU (with parallelism=4; add 3.7 SBU for tests, up to 14 SBU on slow disks)">
+  <!ENTITY btrfs-progs-time          "0.4 SBU (with parallelism=4; add 4.0 SBU for tests, up to 14 SBU on slow disks)">
 @y
   <!ENTITY btrfs-progs-buildsize     "64 MB (transient files created during tests need up to 10 GB)">
-  <!ENTITY btrfs-progs-time          "0.3 SBU (with parallelism=4; add 3.7 SBU for tests, up to 14 SBU on slow disks)">
+  <!ENTITY btrfs-progs-time          "0.4 SBU (with parallelism=4; add 4.0 SBU for tests, up to 14 SBU on slow disks)">
 @z
 
 @x
@@ -85,20 +85,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4">Recommended</bridgehead>
-    <para role="recommended">
-      <xref linkend="asciidoc"/> (or <xref role="nodep" linkend="asciidoctor"/>)
-      and <xref linkend="xmlto"/> (both required to generate man pages)
-    </para>
-@y
-    <bridgehead renderas="sect4">&Recommended;</bridgehead>
-    <para role="recommended">
-      <xref linkend="asciidoc"/> (または <xref role="nodep" linkend="asciidoctor"/>),
-      <xref linkend="xmlto"/> (いずれも man ページ生成に必要)
-    </para>
-@z
-
-@x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (<command>dmsetup</command> is used in tests),
@@ -107,18 +93,16 @@
       <ulink 
         url='https://mirrors.edge.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/'>
         reiserfsprogs</ulink> (for tests).
-
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="lvm2"/> (テストにて <command>dmsetup</command> が利用される),
-      <xref linkend="sphinx"/>, <xref linkend="sphinx_rtd_theme"/>
+      <xref linkend="sphinx"/> と <xref linkend="sphinx_rtd_theme"/>
       (ドキュメントビルドに必要),
       <ulink 
         url='https://mirrors.edge.kernel.org/pub/linux/kernel/people/jeffm/reiserfsprogs/'>
-        reiserfsprogs</ulink> (テストのため)
-
+        reiserfsprogs</ulink> (テストに必要).
     </para>
 @z
 

@@ -35,7 +35,6 @@ CHANGE_FILES = \
 	sphinxcontrib-qthelp.ch          \
 	sphinxcontrib-serializinghtml.ch \
 	trove-classifiers.ch             \
-	typing_extensions.ch             \
 	typogrify.ch                     \
 	urllib3.ch                       \
 	webencodings.ch

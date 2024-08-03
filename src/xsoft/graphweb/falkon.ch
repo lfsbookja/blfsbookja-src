@@ -194,10 +194,10 @@
 @z
 
 @x
-      <option>-DBUILD_TESTING=OFF</option>: This will save a little time and space by
+      <option>-D BUILD_TESTING=OFF</option>: This will save a little time and space by
       not building the test programs, use this if you do not wish to run the test.
 @y
-      <option>-DBUILD_TESTING=OFF</option>: This will save a little time and space by
+      <option>-D BUILD_TESTING=OFF</option>: This will save a little time and space by
       not building the test programs, use this if you do not wish to run the test.
 @z
 

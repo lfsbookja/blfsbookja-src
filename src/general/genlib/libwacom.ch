@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libwacom-buildsize     "4.9 MB (with tests)">
+  <!ENTITY libwacom-buildsize     "7.9 MB (with tests)">
   <!ENTITY libwacom-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY libwacom-buildsize     "4.9 MB（テスト込み）">
+  <!ENTITY libwacom-buildsize     "7.9 MB（テスト込み）">
   <!ENTITY libwacom-time          "&LessThan1;0.1 SBU&LessThan2;（テスト込み）">
 @z
 
@@ -159,11 +159,11 @@
 @z
 
 @x
-      <parameter>-Dtests=disabled</parameter>: This parameter disables some of
+      <parameter>-D tests=disabled</parameter>: This parameter disables some of
       the more advanced tests because they require <xref linkend="pytest"/> and
       other two Python modules beyond the scope of BLFS to work properly.
 @y
-      <parameter>-Dtests=disabled</parameter>:
+      <parameter>-D tests=disabled</parameter>:
       このパラメーターは、より高度なテストを無効化します。
       それは <xref linkend="pytest"/> に加えて、BLFS の範疇を超えた 2 つの Python モジュールが必要になるためです。
 @z

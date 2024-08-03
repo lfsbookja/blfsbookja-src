@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY asymptote-buildsize     "202 MB (50 MB installed after overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all the dependencies which are in BLFS)">
+  <!ENTITY asymptote-buildsize     "216 MB (46 MB installed after overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all the dependencies which are in BLFS)">
   <!ENTITY asymptote-time          "0.9 SBU (using parallelism=4)">
 @y
-  <!ENTITY asymptote-buildsize     "202 MB (50 MB installed after overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all the dependencies which are in BLFS)">
+  <!ENTITY asymptote-buildsize     "216 MB (46 MB installed after overwriting files in $TEXLIVE_PREFIX/texmf-dist/, with all the dependencies which are in BLFS)">
   <!ENTITY asymptote-time          "0.9 SBU (using parallelism=4)">
 @z
 
@@ -240,209 +240,85 @@
 @z
 
 @x
-    <para>
       <parameter>--enable-gc=system</parameter>: this ensures that the system
       version of <filename class="libraryfile">libgc.so</filename> will be used
       instead of the version shipped with this package.
-    </para>
 @y
-    <para>
       <parameter>--enable-gc=system</parameter>: this ensures that the system
       version of <filename class="libraryfile">libgc.so</filename> will be used
       instead of the version shipped with this package.
-    </para>
 @z
 
 @x
-    <para>
       <parameter>--with-latex=</parameter>
       <parameter>--with-context=</parameter>: These switches
       ensure that style files and a tex file will be installed into the
       <application>texlive</application> directories instead of creating a
       <filename class="directory">texmf-local</filename> directory for them.
-    </para>
 @y
-    <para>
       <parameter>--with-latex=</parameter>
       <parameter>--with-context=</parameter>: These switches
       ensure that style files and a tex file will be installed into the
       <application>texlive</application> directories instead of creating a
       <filename class="directory">texmf-local</filename> directory for them.
-    </para>
 @z
 
 @x
-    <!-- commenting for now: 2.44 installs asymptote.info in both places
-     so the old version no longer remains
-@y
-    <!-- commenting for now: 2.44 installs asymptote.info in both places
-     so the old version no longer remains
-@z
-
-@x
-    <para>
-      <command>rm -fv /opt/texlive/.../asymptote.info</command>:
-      This deletes the file installed by <application>texlive</application>.
-      Exceptionally, asymptote will create an <filename
-      class="directory">asymptote/</filename> subdirectory for its own
-      <filename>asymptote.info</filename> even though a possibly older
-      version from <xref linkend="texlive"/> is in the main
-      <application>texlive</application>
-      <filename class="directory">info/</filename> directory. Both the
-      new version and the existing <filename>asy-faq.info</filename>
-      <emphasis>will</emphasis> be found by <command>info</command>.
-    </para>-->
-@y
-    <para>
-      <command>rm -fv /opt/texlive/.../asymptote.info</command>:
-      This deletes the file installed by <application>texlive</application>.
-      Exceptionally, asymptote will create an <filename
-      class="directory">asymptote/</filename> subdirectory for its own
-      <filename>asymptote.info</filename> even though a possibly older
-      version from <xref linkend="texlive"/> is in the main
-      <application>texlive</application>
-      <filename class="directory">info/</filename> directory. Both the
-      new version and the existing <filename>asy-faq.info</filename>
-      <emphasis>will</emphasis> be found by <command>info</command>.
-    </para>-->
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-  <sect2 role="content">
     <title>Contents</title>
 @y
-  <sect2 role="content">
     <title>Contents</title>
 @z
 
 @x
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @y
-    <segmentedlist>
       <segtitle>Installed Programs</segtitle>
       <segtitle>Installed Libraries</segtitle>
       <segtitle>Installed Directory</segtitle>
 @z
 
 @x
-      <seglistitem>
         <seg>
-          asy, xasy
+          asy and xasy
         </seg>
         <seg>
           None
         </seg>
         <seg>
           $TEXLIVE_PREFIX/texmf-dist/asymptote,
-          $TEXLIVE_PREFIX/doc/asymptote,
+          $TEXLIVE_PREFIX/doc/asymptote, and
           $TEXLIVE_PREFIX/info/asymptote
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @y
-      <seglistitem>
         <seg>
-          asy, xasy
+          asy and xasy
         </seg>
         <seg>
           None
         </seg>
         <seg>
           $TEXLIVE_PREFIX/texmf-dist/asymptote,
-          $TEXLIVE_PREFIX/doc/asymptote,
+          $TEXLIVE_PREFIX/doc/asymptote, and
           $TEXLIVE_PREFIX/info/asymptote
         </seg>
-      </seglistitem>
-    </segmentedlist>
 @z
 
 @x
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @y
-    <variablelist>
       <bridgehead renderas="sect3">Short Descriptions</bridgehead>
-      <?dbfo list-presentation="list"?>
-      <?dbhtml list-presentation="table"?>
 @z
 
-@x
-      <varlistentry id="asy">
-        <term><command>asy</command></term>
-        <listitem>
-          <para>
+@x asy
             is a vector graphics program
-          </para>
-          <indexterm zone="asymptote asy">
-            <primary sortas="b-asy">asy</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="asy">
-        <term><command>asy</command></term>
-        <listitem>
-          <para>
             is a vector graphics program
-          </para>
-          <indexterm zone="asymptote asy">
-            <primary sortas="b-asy">asy</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @z
 
-@x
-      <varlistentry id="xasy">
-        <term><command>xasy</command></term>
-        <listitem>
-          <para>
+@x xasy
             is a Python3 script providing a Qt5 GUI for asy
-          </para>
-          <indexterm zone="asymptote xasy">
-            <primary sortas="b-xasy">xasy</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
 @y
-      <varlistentry id="xasy">
-        <term><command>xasy</command></term>
-        <listitem>
-          <para>
             is a Python3 script providing a Qt5 GUI for asy
-          </para>
-          <indexterm zone="asymptote xasy">
-            <primary sortas="b-xasy">xasy</primary>
-          </indexterm>
-        </listitem>
-      </varlistentry>
-@z
-
-@x
-    </variablelist>
-@y
-    </variablelist>
-@z
-
-@x
-  </sect2>
-@y
-  </sect2>
-@z
-
-@x
-</sect1>
-@y
-</sect1>
 @z

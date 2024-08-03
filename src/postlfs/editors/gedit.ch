@@ -141,12 +141,12 @@
 @z
 
 @x
-      <parameter>-Dgtk_doc=false</parameter>: This switch disables
+      <parameter>-D gtk_doc=false</parameter>: This switch disables
       generating the API documentation. Omit this switch if you have
       <xref linkend="gtk-doc"/> installed and wish to generate the API
       documentation.
 @y
-      <parameter>-Dgtk_doc=false</parameter>: This switch disables
+      <parameter>-D gtk_doc=false</parameter>: This switch disables
       generating the API documentation. Omit this switch if you have
       <xref linkend="gtk-doc"/> installed and wish to generate the API
       documentation.
@@ -173,8 +173,8 @@
           gedit
         </seg>
         <seg>
-          libgedit-gfls-1.so.
-          libgedit-tepl-6.so. and
+          libgedit-gfls-1.so,
+          libgedit-tepl-6.so, and
           libgedit-46.so
         </seg>
         <seg>
@@ -188,8 +188,8 @@
           gedit
         </seg>
         <seg>
-          libgedit-gfls-1.so.
-          libgedit-tepl-6.so.
+          libgedit-gfls-1.so,
+          libgedit-tepl-6.so,
           libgedit-46.so
         </seg>
         <seg>

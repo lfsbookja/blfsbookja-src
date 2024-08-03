@@ -241,8 +241,7 @@ CHANGE_FILES = \
 	kea.ch        \
 	kea-kernel.ch \
 	major.ch      \
-	proftpd.ch    \
-	vsftpd.ch
+	proftpd.ch
 
 thisdir = ${shell echo $(subdir) | sed -e "s|^src/||" -e "s|^src|\.|"}
 BOOKdir = @abs_bookdir@/$(thisdir)

@@ -119,10 +119,10 @@
 @z
 
 @x
-      <parameter>-DBUILD_STATIC=OFF</parameter>: This switch disables building
+      <parameter>-D BUILD_STATIC=OFF</parameter>: This switch disables building
       the static version of the library.
 @y
-      <parameter>-DBUILD_STATIC=OFF</parameter>:
+      <parameter>-D BUILD_STATIC=OFF</parameter>:
       本スイッチはスタティックライブラリをビルドしないようにします。
 @z
 

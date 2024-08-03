@@ -202,15 +202,15 @@
 @z
 
 @x
-          For all variants of the CCARGS you should ensure that -DNO_NIS is
+          For all variants of the CCARGS you should ensure that '-D NO_NIS' is
           specified so that the build does not attempt to access an rpcsvc
           header which do not exist in BLFS.  If &berkeley-db; is
-          not installed, -DNO_DB needs to be specified as well.
+          not installed, '-D NO_DB' needs to be specified as well.
 @y
-          For all variants of the CCARGS you should ensure that -DNO_NIS is
+          For all variants of the CCARGS you should ensure that '-D NO_NIS' is
           specified so that the build does not attempt to access an rpcsvc
           header which do not exist in BLFS.  If &berkeley-db; is
-          not installed, -DNO_DB needs to be specified as well.
+          not installed, '-D NO_DB' needs to be specified as well.
 @z
 
 @x
@@ -396,11 +396,11 @@
 @z
 
 @x
-      <option>CCARGS="-DNO_EAI ..."</option>: this will turn off SMTPUTF8
+      <option>CCARGS="-D NO_EAI ..."</option>: this will turn off SMTPUTF8
       support, for example  if the rest of your email address infrastructure
       cannot handle UTF-8 email addresses and message header values.
 @y
-      <option>CCARGS="-DNO_EAI ..."</option>: this will turn off SMTPUTF8
+      <option>CCARGS="-D NO_EAI ..."</option>: this will turn off SMTPUTF8
       support, for example  if the rest of your email address infrastructure
       cannot handle UTF-8 email addresses and message header values.
 @z

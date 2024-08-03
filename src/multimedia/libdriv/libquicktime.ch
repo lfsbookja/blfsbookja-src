@@ -89,14 +89,14 @@
       <xref linkend="faac"/>,
       <xref linkend="faad2"/>,
       <!--<xref linkend="ffmpeg"/>,-->
-      <xref linkend="gtk2"/>,
       <xref linkend="lame"/>,
       <xref linkend="libdv"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="x264"/>,
-      <xref linkend="xorg7-lib"/>, and
+      <xref linkend="xorg7-lib"/>, 
+      &gtk2; and
       <ulink url="https://launchpad.net/schroedinger">Schroedinger</ulink>
     </para>
 @y
@@ -107,14 +107,14 @@
       <xref linkend="faac"/>,
       <xref linkend="faad2"/>,
       <!--<xref linkend="ffmpeg"/>,-->
-      <xref linkend="gtk2"/>,
       <xref linkend="lame"/>,
       <xref linkend="libdv"/>,
       <xref linkend="libjpeg"/>,
       <xref linkend="libpng"/>,
       <xref linkend="libvorbis"/>,
       <xref linkend="x264"/>,
-      <xref linkend="xorg7-lib"/>, and
+      <xref linkend="xorg7-lib"/>, 
+      &gtk2;,
       <ulink url="https://launchpad.net/schroedinger">Schroedinger</ulink>
     </para>
 @z

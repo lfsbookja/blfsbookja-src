@@ -299,7 +299,7 @@
 
 @x
         <seg>
-          capinfos, captype, dumpcap, editcap, idl2wrs,
+          capinfos, captype, editcap, idl2wrs,
           mergecap, randpkt, rawshark, reordercap, sharkd,
           text2pcap, tshark, and wireshark
         </seg>
@@ -313,7 +313,7 @@
          </seg>
 @y
         <seg>
-          capinfos, captype, dumpcap, editcap, idl2wrs,
+          capinfos, captype, editcap, idl2wrs,
           mergecap, randpkt, rawshark, reordercap, sharkd,
           text2pcap, tshark, wireshark
         </seg>

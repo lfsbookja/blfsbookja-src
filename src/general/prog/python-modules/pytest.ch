@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY pytest-buildsize     "42 MB (with tests)">
-  <!ENTITY pytest-time          "1.2 SBU (with tests)">
+  <!ENTITY pytest-buildsize     "43 MB (with tests)">
+  <!ENTITY pytest-time          "1.3 SBU (with tests)">
 @y
-  <!ENTITY pytest-buildsize     "42 MB (with tests)">
-  <!ENTITY pytest-time          "1.2 SBU (with tests)">
+  <!ENTITY pytest-buildsize     "43 MB (with tests)">
+  <!ENTITY pytest-time          "1.3 SBU (with tests)">
 @z
 
 @x
@@ -111,7 +111,7 @@
         <xref linkend="requests"/>,
         <ulink url="https://pypi.org/project/argcomplete/">argcomplete</ulink>,
         <ulink url="https://pypi.org/project/hypothesis/">hypothesis</ulink>,
-        <ulink url="https://pypi.org/project/mock/">mock</ulink>,
+        <ulink url="https://pypi.org/project/mock/">mock</ulink>, and
         <ulink url="https://pypi.org/project/xmlschema/">xmlschema</ulink>
       </para>
 @y

@@ -112,12 +112,6 @@
 @z
 
 @x
-          Required patch:
-@y
-          Required patch:
-@z
-
-@x
     <bridgehead renderas="sect3">qtwebengine Dependencies</bridgehead>
 @y
     <bridgehead renderas="sect3">qtwebengine Dependencies</bridgehead>

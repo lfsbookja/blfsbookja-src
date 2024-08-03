@@ -13,6 +13,7 @@ CHANGE_FILES = \
 	file-roller.ch            \
 	gnome-calculator.ch       \
 	gnome-color-manager.ch    \
+	gnome-connections.ch      \
 	gnome-disk-utility.ch     \
 	gnome-logs.ch             \
 	gnome-maps.ch             \
@@ -24,7 +25,6 @@ CHANGE_FILES = \
 	gnome-weather.ch          \
 	gucharmap.ch              \
 	seahorse.ch               \
-	snapshot.ch               \
-	vinagre.ch
+	snapshot.ch
 
 include $(top_srcdir)/build-aux/main.mk

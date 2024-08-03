@@ -95,13 +95,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="&appstream-glib-url;">Appstream-Glib</ulink> and
+      <xref linkend="appstream-glib"/> and
       <ulink url="https://github.com/elementary/granite">Granite</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="&appstream-glib-url;">Appstream-Glib</ulink> and
+      <xref linkend="appstream-glib"/>,
       <ulink url="https://github.com/elementary/granite">Granite</ulink>
     </para>
 @z

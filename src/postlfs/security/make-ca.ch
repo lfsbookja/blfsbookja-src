@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY make-ca-buildsize     "6.9 MB (with all runtime deps)">
+  <!ENTITY make-ca-buildsize     "164 KB (with all runtime deps)">
   <!ENTITY make-ca-time          "0.1 SBU (with all runtime deps)">
 @y
-  <!ENTITY make-ca-buildsize     "6.9 MB (with all runtime deps)">
+  <!ENTITY make-ca-buildsize     "164 KB (with all runtime deps)">
   <!ENTITY make-ca-time          "0.1 SBU (with all runtime deps)">
 @z
 

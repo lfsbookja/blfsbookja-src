@@ -223,11 +223,11 @@
 @z
 
 @x
-      <option>-Dgtk_doc=true</option>: Use this parameter if
+      <option>-D gtk_doc=true</option>: Use this parameter if
       <application>GTK-Doc</application> is installed and you wish to rebuild
       and install the API documentation.
 @y
-      <option>-Dgtk_doc=true</option>:
+      <option>-D gtk_doc=true</option>:
       <application>GTK-Doc</application> をインストールしていて API ドキュメントの再ビルドとインストールを行いたい場合に、このパラメーターを利用します。
 @z
 

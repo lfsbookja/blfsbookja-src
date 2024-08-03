@@ -88,9 +88,9 @@
 @z
 
 @x
-        This package does not come with a test suite.
+        To test the results, issue:
 @y
-        &notTestSuite;
+        ビルド結果をテストする場合は以下を実行します。
 @z
 
 @x

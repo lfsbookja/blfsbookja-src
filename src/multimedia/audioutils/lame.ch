@@ -105,9 +105,10 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>.
+      To test the results, issue:
+      <command>LD_LIBRARY_PATH=libmp3lame/.libs make test</command>.
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      ビルド結果をテストする場合は <command>LD_LIBRARY_PATH=libmp3lame/.libs make test</command> を実行します。
 @z
 
 @x

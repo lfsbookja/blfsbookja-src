@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY ojdk-bdsize               "3.7 GB (add 621 MB for tests)">
-  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 38 SBU for tests with 4 jobs)">
+  <!ENTITY ojdk-bdsize               "3.7 GB (add 625 MB for tests)">
+  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 34 SBU for tests with 4 jobs)">
 @y
-  <!ENTITY ojdk-bdsize               "3.7 GB (add 621 MB for tests)">
-  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 38 SBU for tests with 4 jobs)">
+  <!ENTITY ojdk-bdsize               "3.7 GB (add 625 MB for tests)">
+  <!ENTITY ojdk-time                 "5.2 SBU with 4 jobs (add 34 SBU for tests with 4 jobs)">
 @z
 
 @x

@@ -246,6 +246,7 @@ CHANGE_FILES = \
 	file-roller.ch            \
 	gnome-calculator.ch       \
 	gnome-color-manager.ch    \
+	gnome-connections.ch      \
 	gnome-disk-utility.ch     \
 	gnome-logs.ch             \
 	gnome-maps.ch             \
@@ -257,8 +258,7 @@ CHANGE_FILES = \
 	gnome-weather.ch          \
 	gucharmap.ch              \
 	seahorse.ch               \
-	snapshot.ch               \
-	vinagre.ch
+	snapshot.ch
 
 thisdir = ${shell echo $(subdir) | sed -e "s|^src/||" -e "s|^src|\.|"}
 BOOKdir = @abs_bookdir@/$(thisdir)

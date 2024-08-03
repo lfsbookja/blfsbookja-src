@@ -78,14 +78,12 @@
 @x
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="packaging"/> and
-        <xref linkend="typing_extensions"/>
+        <xref linkend="packaging"/>
       </para>
 @y
       <bridgehead renderas="sect5">Required</bridgehead>
       <para role="required">
-        <xref linkend="packaging"/> and
-        <xref linkend="typing_extensions"/>
+        <xref linkend="packaging"/>
       </para>
 @z
 
@@ -129,24 +127,24 @@
 
 @x
       To test the installation, make sure <xref linkend='pytest'/> is
-      installed and run:
+      installed and run (<literal>HOME=</literal> prevents the
+      <filename>.gitconfig</filename> file in the home directory from
+      interfering the tests):
 @y
       To test the installation, make sure <xref linkend='pytest'/> is
-      installed and run:
+      installed and run (<literal>HOME=</literal> prevents the
+      <filename>.gitconfig</filename> file in the home directory from
+      interfering the tests):
 @z
 
 @x
       If <xref linkend='git'/> and/or <xref linkend='mercurial'/> are not
       installed, the tests depending on the missing one(s) will be skipped.
       Some tests may invoke <xref linkend='sudo'/> and request a password.
-      Some tests may fail if your <application>git</application>
-      configuration is not the one expected by the test suite.
 @y
       If <xref linkend='git'/> and/or <xref linkend='mercurial'/> are not
       installed, the tests depending on the missing one(s) will be skipped.
       Some tests may invoke <xref linkend='sudo'/> and request a password.
-      Some tests may fail if your <application>git</application>
-      configuration is not the one expected by the test suite.
 @z
 
 @x

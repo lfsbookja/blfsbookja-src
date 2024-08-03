@@ -171,10 +171,10 @@
 @z
 
 @x
-  <bridgehead renderas="sect2">Part X - LXDE</bridgehead>
+  <bridgehead renderas="sect2">Part X - LXQt</bridgehead>
 @y
   <bridgehead renderas="sect2">
-  第 X 部 - LXDE
+  第 X 部 - LXQt
   </bridgehead>
 @z
 

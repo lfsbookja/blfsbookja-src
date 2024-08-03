@@ -1320,48 +1320,6 @@
 @z
 
 @x
-    <bridgehead renderas="sect4" id="NotoSansCJK"
-    xreflabel="Noto Sans CJK">Noto Sans CJK</bridgehead>
-@y
-    <bridgehead renderas="sect4" id="NotoSansCJK"
-    xreflabel="Noto Sans CJK">Noto Sans CJK</bridgehead>
-@z
-
-@x
-    <!\-\- indexterm entry retained for future linkage from kde \-\->
-    <indexterm zone="TTF-and-OTF-fonts NotoSansCJK">
-      <primary sortas="a-noto-sans-cjk">Noto Sans CJK</primary>
-    </indexterm>
-@y
-    <!\-\- indexterm entry retained for future linkage from kde \-\->
-    <indexterm zone="TTF-and-OTF-fonts NotoSansCJK">
-      <primary sortas="a-noto-sans-cjk">Noto Sans CJK</primary>
-    </indexterm>
-@z
-
-@x
-    <para>
-      <ulink url="https://www.google.com/get/noto/help/cjk/">
-        Noto Sans CJK
-      </ulink>
-      &ndash; Sans-Serif sets of all CJK fonts in a ttc &ndash; as the link
-      says, you can choose to install the TTC and cover all the languages in
-      all weights in a 110MB file, or you can download subsets. There are
-      also Monospace versions.
-    </para> -->
-@y
-    <para>
-      <ulink url="https://www.google.com/get/noto/help/cjk/">
-        Noto Sans CJK
-      </ulink>
-      &ndash; Sans-Serif sets of all CJK fonts in a ttc &ndash; as the link
-      says, you can choose to install the TTC and cover all the languages in
-      all weights in a 110MB file, or you can download subsets. There are
-      also Monospace versions.
-    </para> -->
-@z
-
-@x
     <bridgehead renderas="sect4" id="Opendesktop-fonts"
     xreflabel="Opendesktop-fonts">Opendesktop fonts</bridgehead>
 @y

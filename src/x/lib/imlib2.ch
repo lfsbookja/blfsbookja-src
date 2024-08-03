@@ -87,10 +87,8 @@
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="x265"/>,
-      <!--<ulink url="https://github.com/google/highway/">highway</ulink>,-->
       <ulink url="https://github.com/strukturag/libheif">libheif</ulink>,
       <ulink url="https://sourceforge.net/projects/mad">libid3tag</ulink>,
-      <!--<ulink url="https://jpeg.org/jpegxl/">libjxl</ulink>, and-->
       <ulink url="https://www.freedesktop.org/wiki/Software/libspectre">libspectre</ulink>
     </para>
 @y
@@ -104,10 +102,8 @@
       <xref linkend="libtiff"/>,
       <xref linkend="libwebp"/>,
       <xref linkend="x265"/>,
-      <!--<ulink url="https://github.com/google/highway/">highway</ulink>,-->
       <ulink url="https://github.com/strukturag/libheif">libheif</ulink>,
       <ulink url="https://sourceforge.net/projects/mad">libid3tag</ulink>,
-      <!--<ulink url="https://jpeg.org/jpegxl/">libjxl</ulink>, and-->
       <ulink url="https://www.freedesktop.org/wiki/Software/libspectre">libspectre</ulink>
     </para>
 @z

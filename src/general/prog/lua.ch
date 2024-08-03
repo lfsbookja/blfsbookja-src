@@ -179,24 +179,6 @@
 @z
 
 @x
-      <command>sed -i ... src/luaconf.h</command>: This command changes the
-      <application>Lua</application> search path to match the install path.
-@y
-      <command>sed -i ... src/luaconf.h</command>:
-      このコマンドは <application>Lua</application> の検索パスをインストールパスに合致するようにします。
-@z
-
-@x
-      <envar>MYCFLAGS="-DLUA_COMPAT_5_2 -DLUA_COMPAT_5_1"</envar>: This
-      environment variable includes compatibility layers with Lua 5.1 and 5.2
-      in the build.
-@y
-      <envar>MYCFLAGS="-DLUA_COMPAT_5_2 -DLUA_COMPAT_5_1"</envar>: This
-      environment variable includes compatibility layers with Lua 5.1 and 5.2
-      in the build.
-@z
-
-@x
     <title>Contents</title>
 @y
     <title>&Contents;</title>

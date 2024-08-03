@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gcc-buildsize      "11 GB (3.4 GB installed with all listed languages; add 1.5 GB for tests)">
-  <!ENTITY gcc-time           "12 SBU (add 32 SBU for tests; both with parallelism=8)">
+  <!ENTITY gcc-buildsize      "11 GB (3.4 GB installed with all listed languages; add 1.6 GB for tests)">
+  <!ENTITY gcc-time           "14 SBU (add 34 SBU for tests; both with parallelism=8)">
 @y
-  <!ENTITY gcc-buildsize      "11 GB (3.4 GB installed with all listed languages; add 1.5 GB for tests)">
-  <!ENTITY gcc-time           "12 SBU (add 32 SBU for tests; both with parallelism=8)">
+  <!ENTITY gcc-buildsize      "11 GB (3.4 GB installed with all listed languages; add 1.6 GB for tests)">
+  <!ENTITY gcc-time           "14 SBU (add 34 SBU for tests; both with parallelism=8)">
 @z
 
 @x
@@ -125,6 +125,9 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="gdb"/>,
+      <xref linkend="graphviz"/> (some tests use it if installed; note that
+      if it's installed but not built with
+      <xref role='nodep' linkend='libpng'/> these tests will fail),
       <xref linkend="valgrind"/> (for tests), and
       <ulink url="https://repo.or.cz/isl.git">ISL</ulink> (to enable graphite optimization)
     </para>
@@ -132,7 +135,10 @@
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="gdb"/>,
-      <xref linkend="valgrind"/> (for tests),
+      <xref linkend="graphviz"/> (some tests use it if installed; note that
+      if it's installed but not built with
+      <xref role='nodep' linkend='libpng'/> these tests will fail),
+      <xref linkend="valgrind"/> (for tests), and
       <ulink url="https://repo.or.cz/isl.git">ISL</ulink> (to enable graphite optimization)
     </para>
 @z

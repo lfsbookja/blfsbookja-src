@@ -4,7 +4,7 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-      <parameter>-DCMAKE_SKIP_INSTALL_RPATH=ON</parameter>: This switch
+      <parameter>-D CMAKE_SKIP_INSTALL_RPATH=ON</parameter>: This switch
       makes <command>cmake</command> remove hardcoded library search paths
       (rpath) when installing a binary executable file or a shared library.
       This package does not need rpath once it's installed into the standard

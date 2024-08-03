@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gnome-shell-buildsize     "56 MB (with tests)">
+  <!ENTITY gnome-shell-buildsize     "62 MB (with tests)">
   <!ENTITY gnome-shell-time          "0.3 SBU (Using parallelism=4; with tests)">
 @y
-  <!ENTITY gnome-shell-buildsize     "56 MB（テスト込み）">
+  <!ENTITY gnome-shell-buildsize     "62 MB（テスト込み）">
   <!ENTITY gnome-shell-time          "0.3 SBU（parallelism=4 利用時。テスト込み。）">
 @z
 

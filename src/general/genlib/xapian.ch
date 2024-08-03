@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY xapian-buildsize     "144 MB (add 162 MB for tests)">
-  <!ENTITY xapian-time          "0.5 SBU (add 3.5 SBU for tests; both using parallelism=4)">
+  <!ENTITY xapian-buildsize     "146 MB (add 169 MB for tests)">
+  <!ENTITY xapian-time          "0.5 SBU (add 11 SBU for tests; both using parallelism=4)">
 @y
-  <!ENTITY xapian-buildsize     "144 MB (テスト実施時はさらに 162 MB)">
-  <!ENTITY xapian-time          "0.5 SBU (テスト実施時はさらに 3.5 SBU; いずれも parallelism=4 利用; )">
+  <!ENTITY xapian-buildsize     "146 MB (テスト実施時はさらに 169 MB)">
+  <!ENTITY xapian-time          "0.5 SBU (テスト実施時はさらに 11 SBU; いずれも parallelism=4 利用; )">
 @z
 
 @x

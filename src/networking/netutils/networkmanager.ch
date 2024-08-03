@@ -112,10 +112,10 @@
 @z
 
 @x
-      If <xref linkend="qt5"/> is installed and the Qt based 
+      If <xref linkend="qt5-components"/> is installed and the Qt based
       examples are desired, fix two meson.build files:
 @y
-      If <xref linkend="qt5"/> is installed and the Qt based 
+      If <xref linkend="qt5-components"/> is installed and the Qt based
       examples are desired, fix two meson.build files:
 @z
 
@@ -157,95 +157,85 @@
 @z
 
 @x
-      <option>-Ddocs=true</option>: Use this switch to enable building
+      <option>-D docs=true</option>: Use this switch to enable building
       man pages and documentation if <xref linkend="gtk-doc"/> is installed.
 @y
-      <option>-Ddocs=true</option>: Use this switch to enable building
+      <option>-D docs=true</option>: Use this switch to enable building
       man pages and documentation if <xref linkend="gtk-doc"/> is installed.
 @z
 
 @x
-      <parameter>-Dnmtui=true</parameter>: This switch enables building
+      <parameter>-D nmtui=true</parameter>: This switch enables building
       <command>nmtui</command>.
 @y
-      <parameter>-Dnmtui=true</parameter>: This switch enables building
+      <parameter>-D nmtui=true</parameter>: This switch enables building
       <command>nmtui</command>.
 @z
 
 @x revision="sysv"
-      <parameter>-Dsystemdsystemunitdir=no</parameter> and
-      <parameter>-Dsystemd_journal=false</parameter>: systemd is not
+      <parameter>-D systemdsystemunitdir=no</parameter> and
+      <parameter>-D systemd_journal=false</parameter>: systemd is not
       used for sysv init systems, so prevent installing units and using the
       systemd journal.
 @y
-      <parameter>-Dsystemdsystemunitdir=no</parameter> and
-      <parameter>-Dsystemd_journal=false</parameter>: systemd is not
+      <parameter>-D systemdsystemunitdir=no</parameter> and
+      <parameter>-D systemd_journal=false</parameter>: systemd is not
       used for sysv init systems, so prevent installing units and using the
       systemd journal.
 @z
 
 @x
-      <parameter>-Dovs=false</parameter>: This switch disable the Open
+      <parameter>-D ovs=false</parameter>: This switch disable the Open
       vSwitch integration because it needs <xref linkend='jansson'/>.
       Remove it if you have <xref linkend='jansson'/> installed on your
       system.
 @y
-      <parameter>-Dovs=false</parameter>: This switch disable the Open
+      <parameter>-D ovs=false</parameter>: This switch disable the Open
       vSwitch integration because it needs <xref linkend='jansson'/>.
       Remove it if you have <xref linkend='jansson'/> installed on your
       system.
 @z
 
 @x
-      <parameter>-Dmodem_manager=false</parameter>: This switch is required if
+      <parameter>-D modem_manager=false</parameter>: This switch is required if
       <application>ModemManager</application> is not installed. Omit this switch
       if you have built <application>ModemManager</application> and
       <application>mobile-broadband-provider-info</application>.
 @y
-      <parameter>-Dmodem_manager=false</parameter>: This switch is required if
+      <parameter>-D modem_manager=false</parameter>: This switch is required if
       <application>ModemManager</application> is not installed. Omit this switch
       if you have built <application>ModemManager</application> and
       <application>mobile-broadband-provider-info</application>.
 @z
 
 @x revision="sysv"
-      <parameter>-Dsession_tracking=elogind</parameter>: This switch
+      <parameter>-D session_tracking=elogind</parameter>: This switch
       is used to set <command>elogind</command> as the default
       program for session tracking.
 @y
-      <parameter>-Dsession_tracking=elogind</parameter>: This switch
+      <parameter>-D session_tracking=elogind</parameter>: This switch
       is used to set <command>elogind</command> as the default
       program for session tracking.
 @z
 
 @x revision="systemd"
-      <parameter>-Dsession_tracking=systemd</parameter>: This switch
+      <parameter>-D session_tracking=systemd</parameter>: This switch
       is used to set <command>systemd-logind</command> as the default
       program for session tracking.
 @y
-      <parameter>-Dsession_tracking=systemd</parameter>: This switch
+      <parameter>-D session_tracking=systemd</parameter>: This switch
       is used to set <command>systemd-logind</command> as the default
       program for session tracking.
-@z
-
-@x revision="systemd"
-      <parameter>-Dsystemdsystemunitdir=/lib/systemd/system</parameter>:
-      This switch is used to set the correct installation directory for
-      systemd units.
-@y
-      <parameter>-Dsystemdsystemunitdir=/lib/systemd/system</parameter>:
-      This switch is used to set the correct installation directory for
-      systemd units.
 @z
 
 @x
-      <parameter>-Dppp=false</parameter>: This switch disables
+      <parameter>-D ppp=false</parameter>: This switch disables
       <application>PPP</application> support in
       <application>NetworkManager</application> since the programs necessary
       for it are not installed. Remove this switch if you need PPP support and
       have <application>PPP</application> installed.
 @y
-      <parameter>-Dppp=false</parameter>: This switch disables
+      <parameter>-D ppp=false</parameter>: This switch disables
       <application>PPP</application> support in
       <application>NetworkManager</application> since the programs necessary
       for it are not installed. Remove this switch if you need PPP support and
@@ -253,21 +243,21 @@
 @z
 
 @x
-      <parameter>-Dlibaudit=no</parameter> and
-      <parameter>-Dselinux=false</parameter>: This switch disables support for
+      <parameter>-D libaudit=no</parameter> and
+      <parameter>-D selinux=false</parameter>: This switch disables support for
       libaudit and SELinux since they are not used in BLFS.
 @y
-      <parameter>-Dlibaudit=no</parameter> and
-      <parameter>-Dselinux=false</parameter>: This switch disables support for
+      <parameter>-D libaudit=no</parameter> and
+      <parameter>-D selinux=false</parameter>: This switch disables support for
       libaudit and SELinux since they are not used in BLFS.
 @z
 
 @x
-      <parameter>-Dqt=false</parameter>: This switch disables the
+      <parameter>-D qt=false</parameter>: This switch disables the
       <application>Qt</application> examples. Omit if you have
       <application>Qt</application> available and wish to install the examples.
 @y
-      <parameter>-Dqt=false</parameter>: This switch disables the
+      <parameter>-D qt=false</parameter>: This switch disables the
       <application>Qt</application> examples. Omit if you have
       <application>Qt</application> available and wish to install the examples.
 @z

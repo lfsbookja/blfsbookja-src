@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY mesa-buildsize     "825 MB (with docs, add 404 MB for tests)">
-  <!ENTITY mesa-time          "4.1 SBU (with docs; add 1.3 SBU for tests; both with parallelism=4)">
+  <!ENTITY mesa-buildsize     "825 MB (with docs, add 496 MB for tests)">
+  <!ENTITY mesa-time          "4.1 SBU (with docs; add 1.4 SBU for tests; both with parallelism=4)">
 @y
-  <!ENTITY mesa-buildsize     "825 MB (ドキュメント込み, テスト実施時はさらに 404 MB)">
-  <!ENTITY mesa-time          "4.1 SBU (ドキュメント込み、テスト実施時はさらに 1.3 SBU, いずれも parallelism=4)">
+  <!ENTITY mesa-buildsize     "825 MB (ドキュメント込み, テスト実施時はさらに 496 MB)">
+  <!ENTITY mesa-time          "4.1 SBU (ドキュメント込み、テスト実施時はさらに 1.4 SBU, いずれも parallelism=4)">
 @z
 
 @x
@@ -215,12 +215,12 @@
       <parameter>--buildtype=release</parameter>: This switch ensures a
       fully-optimized build, and disables debug assertions which will
       severely slow down the libraries in certain use-cases. Without this
-      switch, build sizes can span into the 2GB range.
+      switch, build sizes can span into the 2 GB range.
 @y
       <parameter>--buildtype=release</parameter>: This switch ensures a
       fully-optimized build, and disables debug assertions which will
       severely slow down the libraries in certain use-cases. Without this
-      switch, build sizes can span into the 2GB range.
+      switch, build sizes can span into the 2 GB range.
 @z
 
 @x

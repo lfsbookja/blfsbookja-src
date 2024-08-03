@@ -129,19 +129,21 @@
 @z
 
 @x
-      This package does come with a test suite, but it requires
-      <ulink url="https://github.com/google/googletest">gtest</ulink>, which
-      is not part of BLFS.
+      To test the package (note that it will cause the building system to
+      download a copy of
+      <ulink url="https://github.com/google/googletest">gtest</ulink> and
+      build the test suite with the copy), issue:
 @y
-      This package does come with a test suite, but it requires
-      <ulink url="https://github.com/google/googletest">gtest</ulink>, which
-      is not part of BLFS.
+      To test the package (note that it will cause the building system to
+      download a copy of
+      <ulink url="https://github.com/google/googletest">gtest</ulink> and
+      build the test suite with the copy), issue:
 @z
 
 @x
-      Now, as the <systemitem class="username">root</systemitem> user:
+      Now, as the &root; user:
 @y
-      <systemitem class="username">root</systemitem> ユーザーになって以下を実行します。
+      &root; ユーザーになって以下を実行します。
 @z
 
 @x
@@ -159,51 +161,61 @@
 @z
 
 @x
-      <parameter>-DAVIF_CODEC_AOM=ON</parameter>: This switch enables using
+      <parameter>-D AVIF_CODEC_AOM=SYSTEM</parameter>: This switch enables using
       the AOM codec. This package is useless without at least one codec
       built in.
 @y
-      <parameter>-DAVIF_CODEC_AOM=ON</parameter>: This switch enables using
+      <parameter>-D AVIF_CODEC_AOM=SYSTEM</parameter>: This switch enables using
       the AOM codec. This package is useless without at least one codec
       built in.
 @z
 
 @x
-      <parameter>-DAVIF_BUILD_GDK_PIXBUF=ON</parameter>: This switch builds
+      <parameter>-D AVIF_BUILD_GDK_PIXBUF=ON</parameter>: This switch builds
       the AVIF loader for applications which use gdk-pixbuf. Remove it if you
       have not installed <xref role="nodep" linkend="gdk-pixbuf"/>.
 @y
-      <parameter>-DAVIF_BUILD_GDK_PIXBUF=ON</parameter>: This switch builds
+      <parameter>-D AVIF_BUILD_GDK_PIXBUF=ON</parameter>: This switch builds
       the AVIF loader for applications which use gdk-pixbuf. Remove it if you
       have not installed <xref role="nodep" linkend="gdk-pixbuf"/>.
 @z
 
 @x
-      <option>-DAVIF_CODEC_DAV1D=ON</option>: Use this switch if you have
+      <option>-D AVIF_LIBYUV=OFF</option>: Use this switch if you have
+      not installed 
+      <ulink url="https://chromium.googlesource.com/libyuv/libyuv/">libyuv</ulink>.
+@y
+      <option>-D AVIF_LIBYUV=OFF</option>: Use this switch if you have
+      not installed 
+      <ulink url="https://chromium.googlesource.com/libyuv/libyuv/">libyuv</ulink>.
+@z
+
+@x
+      <option>-D AVIF_CODEC_DAV1D=SYSTEM</option>: Use this switch if you have
       installed <ulink url="https://code.videolan.org/videolan/dav1d">libdav1d</ulink>
       and wish to use it as a codec.
 @y
-      <option>-DAVIF_CODEC_DAV1D=ON</option>: Use this switch if you have
+      <option>-D AVIF_CODEC_DAV1D=SYSTEM</option>: Use this switch if you have
       installed <ulink url="https://code.videolan.org/videolan/dav1d">libdav1d</ulink>
       and wish to use it as a codec.
 @z
 
 @x
-      <option>-DAVIF_CODEC_RAV1E=ON</option>: Use this switch if you have
+      <option>-D AVIF_CODEC_RAV1E=SYSTEM</option>: Use this switch if you have
       installed <ulink url="https://github.com/xiph/rav1e">rav1e</ulink> and
       wish to use it as a codec.
 @y
-      <option>-DAVIF_CODEC_RAV1E=ON</option>: Use this switch if you have
+      <option>-D AVIF_CODEC_RAV1E=SYSTEM</option>: Use this switch if you have
       installed <ulink url="https://github.com/xiph/rav1e">rav1e</ulink> and
       wish to use it as a codec.
 @z
 
 @x
-      <option>-DAVIF_CODEC_SVT=ON</option>: Use this switch if you have
+      <option>-D AVIF_CODEC_SVT=SYSTEM</option>: Use this switch if you have
       installed <ulink url="https://gitlab.com/AOMediaCodec/SVT-AV1">svt-av1</ulink>
       and wish to use it as a codec.
 @y
-      <option>-DAVIF_CODEC_SVT=ON</option>: Use this switch if you have
+      <option>-D AVIF_CODEC_SVT=SYSTEM</option>: Use this switch if you have
       installed <ulink url="https://gitlab.com/AOMediaCodec/SVT-AV1">svt-av1</ulink>
       and wish to use it as a codec.
 @z

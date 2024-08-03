@@ -110,11 +110,11 @@
 
 @x
         <seg>compface, uncompface and xbm2xface.pl</seg>
-        <seg>libcompface.{so,a}</seg>
+        <seg>libcompface.a</seg>
         <seg>None</seg>
 @y
         <seg>compface, uncompface, xbm2xface.pl</seg>
-        <seg>libcompface.{so,a}</seg>
+        <seg>libcompface.a</seg>
         <seg>&None;</seg>
 @z
 

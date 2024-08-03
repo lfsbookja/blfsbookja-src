@@ -125,18 +125,18 @@
 @z
 
 @x
-      <option>-DWITHOUT_OPENCV=TRUE</option>: This option instructs the make
+      <option>-D WITHOUT_OPENCV=TRUE</option>: This option instructs the make
       procedure to disable building plugins dependent upon opencv.
 @y
-      <option>-DWITHOUT_OPENCV=TRUE</option>: This option instructs the make
+      <option>-D WITHOUT_OPENCV=TRUE</option>: This option instructs the make
       procedure to disable building plugins dependent upon opencv.
 @z
 
 @x
-      <option>-DWITHOUT_GAVL=TRUE</option>: This option instructs the make
+      <option>-D WITHOUT_GAVL=TRUE</option>: This option instructs the make
       procedure to disable building plugins dependent upon gavl.
 @y
-      <option>-DWITHOUT_GAVL=TRUE</option>: This option instructs the make
+      <option>-D WITHOUT_GAVL=TRUE</option>: This option instructs the make
       procedure to disable building plugins dependent upon gavl.
 @z
 

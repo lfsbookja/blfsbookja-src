@@ -80,28 +80,32 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="gtk2"/>
-      (to build <command>echomixer</command>,
       <command>envy24control</command> and
       <command>rmedigicontrol</command>),
       <xref linkend="gtk3"/>
-      (to build <command>hdajackretask</command>) and
+             (to build <command>hdajackretask</command>),
       <xref linkend="fltk"/>
-      (to build <command>hdspconf</command> and
-      <command>hdspmixer</command>)
+             (to build <command>hdspconf</command> and
+                       <command>hdspmixer</command>), and 
+      &gtk2; (to build <command>echomixer</command>,
+                       <command>envy24control</command>, and
+                       <command>rmedigicontrol</command>)
+
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="gtk2"/>
-      (to build <command>echomixer</command>,
-      <command>envy24control</command>,
+      <command>envy24control</command> and
       <command>rmedigicontrol</command>),
       <xref linkend="gtk3"/>
-      (to build <command>hdajackretask</command>),
+             (to build <command>hdajackretask</command>),
       <xref linkend="fltk"/>
-      (to build <command>hdspconf</command>,
-      <command>hdspmixer</command>)
+             (to build <command>hdspconf</command> and
+                       <command>hdspmixer</command>), and 
+      &gtk2; (to build <command>echomixer</command>,
+                       <command>envy24control</command>, and
+                       <command>rmedigicontrol</command>)
+
     </para>
 @z
 

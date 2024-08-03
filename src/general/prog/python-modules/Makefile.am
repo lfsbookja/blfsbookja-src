@@ -22,7 +22,6 @@ CHANGE_FILES = \
 	py3c.ch             \
 	pyatspi2.ch         \
 	pycairo.ch          \
-	pycairo2.ch         \
 	pygdbmi.ch          \
 	pygments.ch         \
 	pygobject2.ch       \

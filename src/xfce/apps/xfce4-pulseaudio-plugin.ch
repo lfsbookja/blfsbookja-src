@@ -74,7 +74,6 @@
 @x
     <bridgehead renderas="sect4">Required</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="pulseaudio"/>, and
       <xref linkend="xfce4-panel"/>
@@ -82,7 +81,6 @@
 @y
     <bridgehead renderas="sect4">&Required;</bridgehead>
     <para role="required">
-      <xref linkend="dbus-glib"/>,
       <xref linkend="libnotify"/>,
       <xref linkend="pulseaudio"/>,
       <xref linkend="xfce4-panel"/>

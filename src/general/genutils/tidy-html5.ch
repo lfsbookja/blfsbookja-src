@@ -127,18 +127,18 @@
 @z
 
 @x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       build the release library without any debug `assert` in the code.
 @y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       build the release library without any debug `assert` in the code.
 @z
 
 @x
-      <parameter>-DBUILD_TAB2SPACE=ON</parameter>: This switch is used to enable
+      <parameter>-D BUILD_TAB2SPACE=ON</parameter>: This switch is used to enable
       building the <command>tab2space</command> utility.
 @y
-      <parameter>-DBUILD_TAB2SPACE=ON</parameter>: This switch is used to enable
+      <parameter>-D BUILD_TAB2SPACE=ON</parameter>: This switch is used to enable
       building the <command>tab2space</command> utility.
 @z
 

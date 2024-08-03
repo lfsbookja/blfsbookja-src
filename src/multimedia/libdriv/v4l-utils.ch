@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY v4l-time          "1.1 SBU (using parallelism=4)">
+  <!ENTITY v4l-time          "0.4 SBU (using parallelism=4)">
 @y
-  <!ENTITY v4l-time          "1.1 SBU (using parallelism=4)">
+  <!ENTITY v4l-time          "0.4 SBU (using parallelism=4)">
 @z
 
 @x
@@ -93,7 +93,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      &qt5-deps; (for qv4l2 and qvidcap),
+      <xref linkend="qt6"/> (for qv4l2 and qvidcap),
       <xref linkend="sdl2"/>,
       both <xref linkend="llvm"/> (with Clang and target BPF)
       and <ulink url='https://github.com/libbpf/libbpf'>libbpf</ulink>
@@ -104,7 +104,7 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      &qt5-deps; (for qv4l2 and qvidcap),
+      <xref linkend="qt6"/> (for qv4l2 and qvidcap),
       <xref linkend="sdl2"/>,
       both <xref linkend="llvm"/> (with Clang and target BPF)
       and <ulink url='https://github.com/libbpf/libbpf'>libbpf</ulink>
@@ -122,12 +122,12 @@
 @x
         If you've installed both LLVM and libbpf (not in BLFS), either
         enable the BPF target (via
-        <option>-DLLVM_TARGETS_TO_BUILD=</option>) building LLVM, or disable
+        <option>-D LLVM_TARGETS_TO_BUILD=</option>) building LLVM, or disable
         the infrared remote control decoders based on BPF:
 @y
         If you've installed both LLVM and libbpf (not in BLFS), either
         enable the BPF target (via
-        <option>-DLLVM_TARGETS_TO_BUILD=</option>) building LLVM, or disable
+        <option>-D LLVM_TARGETS_TO_BUILD=</option>) building LLVM, or disable
         the infrared remote control decoders based on BPF:
 @z
 
@@ -164,10 +164,10 @@
 @z
 
 @x
-      <parameter>-Dgconv=disabled</parameter>: This switch disables
+      <parameter>-D gconv=disabled</parameter>: This switch disables
       the erroneous installation of gconv-modules that would break glibc.
 @y
-      <parameter>-Dgconv=disabled</parameter>: This switch disables
+      <parameter>-D gconv=disabled</parameter>: This switch disables
       the erroneous installation of gconv-modules that would break glibc.
 @z
 

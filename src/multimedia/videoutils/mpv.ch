@@ -196,28 +196,28 @@
 @z
 
 @x
-      <parameter>-Dx11=enabled</parameter>: allows linking to the X11 libraries.
+      <parameter>-D x11=enabled</parameter>: allows linking to the X11 libraries.
 @y
-      <parameter>-Dx11=enabled</parameter>: allows linking to the X11 libraries.
+      <parameter>-D x11=enabled</parameter>: allows linking to the X11 libraries.
 @z
 
 @x
-      <option>-Ddvdnav=enabled</option>: enables support for DVD playback.
+      <option>-D dvdnav=enabled</option>: enables support for DVD playback.
 @y
-      <option>-Ddvdnav=enabled</option>: enables support for DVD playback.
+      <option>-D dvdnav=enabled</option>: enables support for DVD playback.
 @z
 
 @x
-      <option>-Dcdda=enabled</option>: enables support for CD Audio.
+      <option>-D cdda=enabled</option>: enables support for CD Audio.
 @y
-      <option>-Dcdda=enabled</option>: enables support for CD Audio.
+      <option>-D cdda=enabled</option>: enables support for CD Audio.
 @z
 
 @x
-      <option>-Dsdl2=enabled</option>: enables the usage of SDL2 for
+      <option>-D sdl2=enabled</option>: enables the usage of SDL2 for
       audio and video output.
 @y
-      <option>-Dsdl2=enabled</option>: enables the usage of SDL2 for
+      <option>-D sdl2=enabled</option>: enables the usage of SDL2 for
       audio and video output.
 @z
 

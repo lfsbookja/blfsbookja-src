@@ -189,43 +189,43 @@
 @z
 
 @x
-      <parameter>-DENABLE_YTNEF=OFF</parameter>: This switch is used to
+      <parameter>-D ENABLE_YTNEF=OFF</parameter>: This switch is used to
       disable the yTNEF library usage because
       <application>libytnef</application> is not part of BLFS.
 @y
-      <parameter>-DENABLE_YTNEF=OFF</parameter>: This switch is used to
+      <parameter>-D ENABLE_YTNEF=OFF</parameter>: This switch is used to
       disable the yTNEF library usage because
       <application>libytnef</application> is not part of BLFS.
 @z
 
 @x
-      <parameter>-DENABLE_PST_IMPORT=OFF</parameter>: This switch is
+      <parameter>-D ENABLE_PST_IMPORT=OFF</parameter>: This switch is
       used to disable the pst-import plugin because
       <application>libpst</application> is not part of BLFS.
 @y
-      <parameter>-DENABLE_PST_IMPORT=OFF</parameter>: This switch is
+      <parameter>-D ENABLE_PST_IMPORT=OFF</parameter>: This switch is
       used to disable the pst-import plugin because
       <application>libpst</application> is not part of BLFS.
 @z
 
 @x
-      <parameter>-DENABLE_CONTACT_MAPS=OFF</parameter>: This switch disables
+      <parameter>-D ENABLE_CONTACT_MAPS=OFF</parameter>: This switch disables
       building the Contact Maps plugin. Remove this switch if you have installed
       the necessary dependencies and wish to build the Contact Maps plugin.
 @y
-      <parameter>-DENABLE_CONTACT_MAPS=OFF</parameter>: This switch disables
+      <parameter>-D ENABLE_CONTACT_MAPS=OFF</parameter>: This switch disables
       building the Contact Maps plugin. Remove this switch if you have installed
       the necessary dependencies and wish to build the Contact Maps plugin.
 @z
 
 @x
-      <parameter>-DENABLE_MARKDOWN=OFF</parameter>: This switch allows
+      <parameter>-D ENABLE_MARKDOWN=OFF</parameter>: This switch allows
       building without
       <ulink url="https://github.com/commonmark/cmark">cmark</ulink>.
       Remove this switch if you need markdown support and you have
       installed the necessary dependency.
 @y
-      <parameter>-DENABLE_MARKDOWN=OFF</parameter>: This switch allows
+      <parameter>-D ENABLE_MARKDOWN=OFF</parameter>: This switch allows
       building without
       <ulink url="https://github.com/commonmark/cmark">cmark</ulink>.
       Remove this switch if you need markdown support and you have
@@ -233,28 +233,28 @@
 @z
 
 @x
-      <parameter>-DENABLE_WEATHER=ON</parameter>: This switch allows
+      <parameter>-D ENABLE_WEATHER=ON</parameter>: This switch allows
       building against <xref linkend="libgweather"/>.
 @y
-      <parameter>-DENABLE_WEATHER=ON</parameter>: This switch allows
+      <parameter>-D ENABLE_WEATHER=ON</parameter>: This switch allows
       building against <xref linkend="libgweather"/>.
 @z
 
 @x
-      <option>-DWITH_HELP=OFF</option>: This switch disables building the
+      <option>-D WITH_HELP=OFF</option>: This switch disables building the
       manual of this package.  Use this switch if you have not installed
       <xref linkend='itstool'/>.
 @y
-      <option>-DWITH_HELP=OFF</option>: This switch disables building the
+      <option>-D WITH_HELP=OFF</option>: This switch disables building the
       manual of this package.  Use this switch if you have not installed
       <xref linkend='itstool'/>.
 @z
 
 @x
-      <option>-DWITH_OPENLDAP=OFF</option>: Use this switch if you
+      <option>-D WITH_OPENLDAP=OFF</option>: Use this switch if you
       have not installed <xref linkend='openldap'/>.
 @y
-      <option>-DWITH_OPENLDAP=OFF</option>: Use this switch if you
+      <option>-D WITH_OPENLDAP=OFF</option>: Use this switch if you
       have not installed <xref linkend='openldap'/>.
 @z
 

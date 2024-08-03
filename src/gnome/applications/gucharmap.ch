@@ -128,13 +128,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink> and
+      <xref linkend="appstream-glib"/> and
       <xref linkend="gtk-doc"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink>,
+      <xref linkend="appstream-glib"/>,
       <xref linkend="gtk-doc"/>
     </para>
 @z

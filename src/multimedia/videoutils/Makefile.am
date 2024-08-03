@@ -4,7 +4,6 @@
 
 CHANGE_FILES = \
 	ffmpeg.ch     \
-	mplayer.ch    \
 	mpv.ch        \
 	transcode.ch  \
 	videoutils.ch \

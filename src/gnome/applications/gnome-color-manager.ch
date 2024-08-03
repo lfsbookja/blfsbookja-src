@@ -104,13 +104,13 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink> and
+      <xref linkend="appstream-glib"/> and
       <xref linkend="docbook-utils"/> (currently causes build to fail)
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink>,
+      <xref linkend="appstream-glib"/>,
       <xref linkend="docbook-utils"/> (currently causes build to fail)
     </para>
 @z

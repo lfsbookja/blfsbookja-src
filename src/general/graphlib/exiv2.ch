@@ -134,9 +134,9 @@
 @z
 
 @x
-      To test the results, issue: <command>make test</command>
+      To test the results, issue: <command>ninja test</command>.
 @y
-      ビルド結果をテストする場合は <command>make test</command> を実行します。
+      ビルド結果をテストする場合は <command>ninja test</command> を実行します。
 @z
 
 @x

@@ -148,40 +148,40 @@
 @z
 
 @x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       apply additional compiler optimizations.
 @y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       apply additional compiler optimizations.
 @z
 
 @x
-      <parameter>-DENABLE_JOURNALD=OFF</parameter> and
-      <parameter>-DNO_SYSTEMD=ON</parameter>: These switchs are used because
+      <parameter>-D ENABLE_JOURNALD=OFF</parameter> and
+      <parameter>-D NO_SYSTEMD=ON</parameter>: These switchs are used because
       this version of BLFS does not support <application>systemd</application>.
 @y
-      <parameter>-DENABLE_JOURNALD=OFF</parameter> and
-      <parameter>-DNO_SYSTEMD=ON</parameter>: These switchs are used because
+      <parameter>-D ENABLE_JOURNALD=OFF</parameter> and
+      <parameter>-D NO_SYSTEMD=ON</parameter>: These switchs are used because
       this version of BLFS does not support <application>systemd</application>.
 @z
 
 @x
-      <parameter>-DDBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf</parameter>:
+      <parameter>-D DBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf</parameter>:
       This switch prevents the file <filename>
       /etc/dbus-1/system.d/org.freedesktop.DisplayManager.conf</filename> from
       being overwritten, as it may be used by other DM's.
 @y
-      <parameter>-DDBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf</parameter>:
+      <parameter>-D DBUS_CONFIG_FILENAME=sddm_org.freedesktop.DisplayManager.conf</parameter>:
       This switch prevents the file <filename>
       /etc/dbus-1/system.d/org.freedesktop.DisplayManager.conf</filename> from
       being overwritten, as it may be used by other DM's.
 @z
 
 @x
-      <parameter>-DBUILD_MAN_PAGES=ON</parameter>: This switch is used to build
+      <parameter>-D BUILD_MAN_PAGES=ON</parameter>: This switch is used to build
       and install man pages.
 @y
-      <parameter>-DBUILD_MAN_PAGES=ON</parameter>: This switch is used to build
+      <parameter>-D BUILD_MAN_PAGES=ON</parameter>: This switch is used to build
       and install man pages.
 @z
 

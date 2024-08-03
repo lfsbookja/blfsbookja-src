@@ -231,10 +231,10 @@
 @z
 
 @x
-      <option>-DCMAKE_VERBOSE_MAKEFILE=ON</option>: This switch turns on
+      <option>-D CMAKE_VERBOSE_MAKEFILE=ON</option>: This switch turns on
       build verbose mode.
 @y
-      <option>-DCMAKE_VERBOSE_MAKEFILE=ON</option>:
+      <option>-D CMAKE_VERBOSE_MAKEFILE=ON</option>:
       本スイッチはビルド時の verbose モードをオンにします。
 @z
 

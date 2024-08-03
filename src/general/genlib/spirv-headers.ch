@@ -17,16 +17,16 @@
 
 @x
       The <application>SPIRV-Headers</application> package contains headers
-      that allow for applications to the SPIR-V language and instruction set
-      with Vulkan. SPIR-V is a binary intermediate language for representing
-      graphical shader stages and compute kernels for multiple Khronos APIs,
-      including OpenGL and Vulkan.
+      that allow for applications to use the SPIR-V language and instruction
+      set with Vulkan. SPIR-V is a binary intermediate language for
+      representing graphical shader stages and compute kernels for multiple
+      Khronos APIs, including OpenGL and Vulkan.
 @y
       The <application>SPIRV-Headers</application> package contains headers
-      that allow for applications to the SPIR-V language and instruction set
-      with Vulkan. SPIR-V is a binary intermediate language for representing
-      graphical shader stages and compute kernels for multiple Khronos APIs,
-      including OpenGL and Vulkan.
+      that allow for applications to use the SPIR-V language and instruction
+      set with Vulkan. SPIR-V is a binary intermediate language for
+      representing graphical shader stages and compute kernels for multiple
+      Khronos APIs, including OpenGL and Vulkan.
 @z
 
 @x

@@ -33,7 +33,6 @@ CHANGE_FILES = \
 	prog.ch                \
 	python-dependencies.ch \
 	python-modules.ch      \
-	python2.ch             \
 	python3.ch             \
 	python311.ch           \
 	ruby.ch                \

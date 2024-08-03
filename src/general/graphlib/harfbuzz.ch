@@ -170,12 +170,12 @@
 @z
 
 @x
-      <parameter>-Dgraphite2=enabled</parameter>: This switch enables
+      <parameter>-D graphite2=enabled</parameter>: This switch enables
       <application>Graphite2</application> support, which is required for
       building <xref linkend="texlive"/> or <xref linkend="libreoffice"/>
       with system harfbuzz.
 @y
-      <parameter>-Dgraphite2=enabled</parameter>:
+      <parameter>-D graphite2=enabled</parameter>:
       本スイッチは <application>Graphite2</application> サポートを有効にします。
       <xref linkend="texlive"/> または <xref
       linkend="libreoffice"/> をインストール済 harfbuzz を用いてビルドする場合に必要となります。

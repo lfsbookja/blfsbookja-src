@@ -252,19 +252,19 @@
 @z
 
 @x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       build the release library without any debug `assert` in the code.
 @y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       build the release library without any debug `assert` in the code.
 @z
 
 @x
-      <option>-DWITH_DBUS=ON</option>: use this if you wish to use
+      <option>-D WITH_DBUS=ON</option>: use this if you wish to use
       <command>inkscape</command> in interactive scripts which manipulate
       images.
 @y
-      <option>-DWITH_DBUS=ON</option>: use this if you wish to use
+      <option>-D WITH_DBUS=ON</option>: use this if you wish to use
       <command>inkscape</command> in interactive scripts which manipulate
       images.
 @z

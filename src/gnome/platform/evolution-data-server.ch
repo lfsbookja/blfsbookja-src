@@ -163,53 +163,53 @@
 @z
 
 @x
-      <parameter>-DENABLE_VALA_BINDINGS=ON</parameter>: This switch
+      <parameter>-D ENABLE_VALA_BINDINGS=ON</parameter>: This switch
       enables building the Vala bindings. Remove it if you don't
       have <xref linkend="vala"/> installed.
 @y
-      <parameter>-DENABLE_VALA_BINDINGS=ON</parameter>: This switch
+      <parameter>-D ENABLE_VALA_BINDINGS=ON</parameter>: This switch
       enables building the Vala bindings. Remove it if you don't
       have <xref linkend="vala"/> installed.
 @z
 
 @x
-      <parameter>-DENABLE_GTK_DOC=OFF</parameter>: This switch
+      <parameter>-D ENABLE_GTK_DOC=OFF</parameter>: This switch
       disables building the API documentation. It is broken for
       this package due to the use of a long deprecated gtk-doc program
       that is no longer available.
 @y
-      <parameter>-DENABLE_GTK_DOC=OFF</parameter>: This switch
+      <parameter>-D ENABLE_GTK_DOC=OFF</parameter>: This switch
       disables building the API documentation. It is broken for
       this package due to the use of a long deprecated gtk-doc program
       that is no longer available.
 @z
 
 @x
-      <parameter>-DWITH_LIBDB=OFF</parameter>: This switch allows building
+      <parameter>-D WITH_LIBDB=OFF</parameter>: This switch allows building
       this package without &berkeley-db;.  <!--This package only uses
       &berkeley-db; to import data from very outdated releases.-->
       <xref linkend="sqlite"/> is used for normal operation.
 @y
-      <parameter>-DWITH_LIBDB=OFF</parameter>: This switch allows building
+      <parameter>-D WITH_LIBDB=OFF</parameter>: This switch allows building
       this package without &berkeley-db;.  <!--This package only uses
       &berkeley-db; to import data from very outdated releases.-->
       <xref linkend="sqlite"/> is used for normal operation.
 @z
 
 @x
-      <option>-DENABLE_OAUTH2_WEBKITGTK4=OFF</option>: Use this switch if
+      <option>-D ENABLE_OAUTH2_WEBKITGTK4=OFF</option>: Use this switch if
       you did not build <xref linkend="webkitgtk" role="nodep"/> with GTK-4.
 @y
-      <option>-DENABLE_OAUTH2_WEBKITGTK4=OFF</option>: Use this switch if
+      <option>-D ENABLE_OAUTH2_WEBKITGTK4=OFF</option>: Use this switch if
       you did not build <xref linkend="webkitgtk" role="nodep"/> with GTK-4.
 @z
 
 @x revision="sysv"
-      <parameter>-DWITH_SYSTEMDUSERUNITDIR=no</parameter>: This switch
+      <parameter>-D WITH_SYSTEMDUSERUNITDIR=no</parameter>: This switch
       disables installing the systemd units, which are not used for a Sysv
       build.
 @y
-      <parameter>-DWITH_SYSTEMDUSERUNITDIR=no</parameter>: This switch
+      <parameter>-D WITH_SYSTEMDUSERUNITDIR=no</parameter>: This switch
       disables installing the systemd units, which are not used for a Sysv
       build.
 @z

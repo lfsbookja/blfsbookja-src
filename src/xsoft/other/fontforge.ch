@@ -214,26 +214,26 @@
 @z
 
 @x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       create an optimized release without debug information.
 @y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used to
       create an optimized release without debug information.
 @z
 
 @x
-      <parameter>-Wno-dev</parameter>: This switch is used to suppress warnings
+      <parameter>-W no-dev</parameter>: This switch is used to suppress warnings
       intended for the package's developers.
 @y
-      <parameter>-Wno-dev</parameter>: This switch is used to suppress warnings
+      <parameter>-W no-dev</parameter>: This switch is used to suppress warnings
       intended for the package's developers.
 @z
 
 @x
-      <option>-DENABLE_X11=ON</option>: use an X11 backend instead of GDK3
+      <option>-D ENABLE_X11=ON</option>: use an X11 backend instead of GDK3
       (gtk+-3) for basic Xorg graphics.
 @y
-      <option>-DENABLE_X11=ON</option>: use an X11 backend instead of GDK3
+      <option>-D ENABLE_X11=ON</option>: use an X11 backend instead of GDK3
       (gtk+-3) for basic Xorg graphics.
 @z
 

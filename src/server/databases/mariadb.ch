@@ -166,39 +166,39 @@
 @z
 
 @x
-      <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>: This switch enables
+      <parameter>-D WITH_EMBEDDED_SERVER=ON</parameter>: This switch enables
       compiling the embedded server library needed by certain applications,
       such as <application>Amarok</application>.
 @y
-      <parameter>-DWITH_EMBEDDED_SERVER=ON</parameter>: This switch enables
+      <parameter>-D WITH_EMBEDDED_SERVER=ON</parameter>: This switch enables
       compiling the embedded server library needed by certain applications,
       such as <application>Amarok</application>.
 @z
 
 @x
-      <parameter>-DWITH_EXTRA_CHARSETS=complex</parameter>: This switch enables
+      <parameter>-D WITH_EXTRA_CHARSETS=complex</parameter>: This switch enables
       support for the complex character sets.
 @y
-      <parameter>-DWITH_EXTRA_CHARSETS=complex</parameter>: This switch enables
+      <parameter>-D WITH_EXTRA_CHARSETS=complex</parameter>: This switch enables
       support for the complex character sets.
 @z
 
 @x
-      <parameter>-DSKIP_TESTS=ON</parameter>: This switch disables
+      <parameter>-D SKIP_TESTS=ON</parameter>: This switch disables
       tests for MariaDB Connector/C which are not supported without 
       additional setup.
 @y
-      <parameter>-DSKIP_TESTS=ON</parameter>: This switch disables
+      <parameter>-D SKIP_TESTS=ON</parameter>: This switch disables
       tests for MariaDB Connector/C which are not supported without 
       additional setup.
 @z
 
 @x
-      <option>-DWITHOUT_SERVER=ON</option>: Use this
+      <option>-D WITHOUT_SERVER=ON</option>: Use this
       switch if you don't want the server and would like to build the client
       only.
 @y
-      <option>-DWITHOUT_SERVER=ON</option>: Use this
+      <option>-D WITHOUT_SERVER=ON</option>: Use this
       switch if you don't want the server and would like to build the client
       only.
 @z

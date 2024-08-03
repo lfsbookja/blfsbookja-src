@@ -129,27 +129,27 @@
 @z
 
 @x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is used
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>: This switch is used
       to apply higher level of the compiler optimizations.
 @y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>:
+      <parameter>-D CMAKE_BUILD_TYPE=Release</parameter>:
       本スイッチは、最適なコンパイラーオプションを利用します。
 @z
 
 @x
-      <parameter>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=FALSE</parameter>:
+      <parameter>-D PHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=FALSE</parameter>:
       This switch ensures that the plugins and mkspecs files get installed in
       the correct location.
 @y
-      <parameter>-DPHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=FALSE</parameter>:
+      <parameter>-D PHONON_INSTALL_QT_EXTENSIONS_INTO_SYSTEM_QT=FALSE</parameter>:
       本スイッチは、プラグインと mkspecs ファイルを適切なディレクトリにインストールします。
 @z
 
 @x
-     <parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is used to
+     <parameter>-D PHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is used to
      ensure that Qt5 version of the library is built even if Qt4 is present.
 @y
-     <parameter>-DPHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is used to
+     <parameter>-D PHONON_BUILD_PHONON4QT5=ON</parameter>: This switch is used to
      ensure that Qt5 version of the library is built even if Qt4 is present.
 @z
 

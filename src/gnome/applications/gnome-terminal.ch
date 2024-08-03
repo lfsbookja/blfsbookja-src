@@ -105,14 +105,14 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="desktop-file-utils"/>, and 
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink>
+      <xref linkend="appstream-glib"/> and
+      <xref linkend="desktop-file-utils"/>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
-      <xref linkend="desktop-file-utils"/>,
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink>
+      <xref linkend="appstream-glib"/>,
+      <xref linkend="desktop-file-utils"/>
     </para>
 @z
 
@@ -148,21 +148,21 @@
 @z
 
 @x
-      <option>-Dsearch_provider=false</option>: This switch disables
+      <option>-D search_provider=false</option>: This switch disables
       the <quote>search <application>gnome-shell</application></quote>
       provider. Use this option if you do not have gnome-shell installed.
 @y
-      <option>-Dsearch_provider=false</option>: This switch disables
+      <option>-D search_provider=false</option>: This switch disables
       the <quote>search <application>gnome-shell</application></quote>
       provider. Use this option if you do not have gnome-shell installed.
 @z
 
 @x
-      <option>-Dnautilus_extension=false</option>: This switch disables
+      <option>-D nautilus_extension=false</option>: This switch disables
       a dependency on the <application>nautilus</application> file
       manager. Use this option if you do not have Nautilus installed.
 @y
-      <option>-Dnautilus_extension=false</option>: This switch disables
+      <option>-D nautilus_extension=false</option>: This switch disables
       a dependency on the <application>nautilus</application> file
       manager. Use this option if you do not have Nautilus installed.
 @z

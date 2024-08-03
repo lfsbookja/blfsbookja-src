@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY intel-media-buildsize     "2.4 GB (366 MB installed)">
-  <!ENTITY intel-media-time          "5.3 SBU (with parallelism=4)">
+  <!ENTITY intel-media-buildsize     "2.1 GB (360 MB installed with a single GPU model)">
+  <!ENTITY intel-media-time          "3.8 SBU (with parallelism=4 and a single GPU model)">
 @y
-  <!ENTITY intel-media-buildsize     "2.4 GB (366 MB installed)">
-  <!ENTITY intel-media-time          "5.3 SBU (with parallelism=4)">
+  <!ENTITY intel-media-buildsize     "2.1 GB (360 MB installed with a single GPU model)">
+  <!ENTITY intel-media-time          "3.8 SBU (with parallelism=4 and a single GPU model)">
 @z
 
 @x
@@ -135,22 +135,22 @@
 
 @x
           If you know the model of your Intel GPU, you can pass the
-          <option>-D{GEN{8,9,11,12},ARL}=OFF</option> option to the
+          <option>-D{GEN{8,9,11,12},MTL,ARL}=OFF</option> option to the
           <command>cmake</command> command but leaving the option for your
           GPU out.  Note that the <quote>GEN</quote> number here is the
           generation of the GPU, not the CPU.  For example, with an Intel
           Core i7-1065G7 CPU shipping a 11th-generation Intel GPU, the
-          <option>-D{GEN{8,9,12},ARL}=OFF</option> option can be used
+          <option>-D{GEN{8,9,12},MTL,ARL}=OFF</option> option can be used
           so the code specific to the other generations of Intel GPUs won't
           be built.
 @y
           If you know the model of your Intel GPU, you can pass the
-          <option>-D{GEN{8,9,11,12},ARL}=OFF</option> option to the
+          <option>-D{GEN{8,9,11,12},MTL,ARL}=OFF</option> option to the
           <command>cmake</command> command but leaving the option for your
           GPU out.  Note that the <quote>GEN</quote> number here is the
           generation of the GPU, not the CPU.  For example, with an Intel
           Core i7-1065G7 CPU shipping a 11th-generation Intel GPU, the
-          <option>-D{GEN{8,9,12},ARL}=OFF</option> option can be used
+          <option>-D{GEN{8,9,12},MTL,ARL}=OFF</option> option can be used
           so the code specific to the other generations of Intel GPUs won't
           be built.
 @z

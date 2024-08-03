@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY numpy-buildsize     "101 MB (add 48 MB for tests)">
+  <!ENTITY numpy-buildsize     "104 MB (add 48 MB for tests)">
   <!ENTITY numpy-time          "0.6 SBU (add 1.1 SBU for tests)">
 @y
-  <!ENTITY numpy-buildsize     "101 MB (add 48 MB for tests)">
+  <!ENTITY numpy-buildsize     "104 MB (add 48 MB for tests)">
   <!ENTITY numpy-time          "0.6 SBU (add 1.1 SBU for tests)">
 @z
 

@@ -109,13 +109,13 @@
 @x
       The current version of rust's num_cpus crate now recognizes that cgroups
       can be used to restrict which processors it is allowed to use. So if your
-      machine lacks DRAM (typically, less than 2GB DRAM per core) that might be
+      machine lacks DRAM (typically, less than 2 GB DRAM per core) that might be
       an alternative to taking CPUs offline.
       Read <xref linkend='build-in-cgroup'/> for how to use a cgroup.
 @y
       The current version of rust's num_cpus crate now recognizes that cgroups
       can be used to restrict which processors it is allowed to use. So if your
-      machine lacks DRAM (typically, less than 2GB DRAM per core) that might be
+      machine lacks DRAM (typically, less than 2 GB DRAM per core) that might be
       an alternative to taking CPUs offline.
       Read <xref linkend='build-in-cgroup'/> for how to use a cgroup.
 @z
@@ -225,7 +225,7 @@
     <para role="recommended">
       <xref linkend="libssh2"/>,
       <xref linkend="llvm"/>
-      (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
+      (built with -D LLVM_LINK_LLVM_DYLIB=ON so that rust can link to
       system LLVM instead of building its shipped version), and
       <xref linkend="sqlite"/>
     </para>
@@ -234,7 +234,7 @@
     <para role="recommended">
       <xref linkend="libssh2"/>,
       <xref linkend="llvm"/>
-      (built with -DLLVM_LINK_LLVM_DYLIB=ON so that rust can link to
+      (built with -D LLVM_LINK_LLVM_DYLIB=ON so that rust can link to
       system LLVM instead of building its shipped version),
       <xref linkend="sqlite"/>
     </para>
@@ -353,15 +353,11 @@
 @z
 
 @x
-      Three tests, <filename>tests/ui/error-emitter/highlighting.rs</filename>,
-      <filename>tests/ui/issues/issue-21763.rs</filename>, and
-      <filename>tests/debuginfo/regression-bad-location-list-67992.rs</filename>,
-      are known to fail.
+      Two tests named <filename>tests/run-make/print-cfg</filename> and
+      <filename>tests/run-make/print-to-output</filename> are known to fail.
 @y
-      Three tests, <filename>tests/ui/error-emitter/highlighting.rs</filename>,
-      <filename>tests/ui/issues/issue-21763.rs</filename>, and
-      <filename>tests/debuginfo/regression-bad-location-list-67992.rs</filename>,
-      are known to fail.
+      Two tests named <filename>tests/run-make/print-cfg</filename> and
+      <filename>tests/run-make/print-to-output</filename> are known to fail.
 @z
 
 @x
@@ -449,11 +445,11 @@
 @z
 
 @x
-      Still as the &root; user, fix the installation of documentations
+      Still as the &root; user, fix the installation of documentation
       and symlink a <application>Zsh</application>
       completion file into the correct location:
 @y
-      Still as the &root; user, fix the installation of documentations
+      Still as the &root; user, fix the installation of documentation
       and symlink a <application>Zsh</application>
       completion file into the correct location:
 @z

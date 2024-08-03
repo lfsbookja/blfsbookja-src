@@ -5,6 +5,7 @@
 CHANGE_FILES = \
 	abseil-cpp.ch            \
 	appstream.ch             \
+	appstream-glib.ch        \
 	apr.ch                   \
 	apr-util.ch              \
 	aspell.ch                \
@@ -48,7 +49,6 @@ CHANGE_FILES = \
 	libdisplay-info.ch       \
 	libgcrypt.ch             \
 	libgpg-error.ch          \
-	libgrss.ch               \
 	libgsf.ch                \
 	libgudev.ch              \
 	libgusb.ch               \
@@ -101,7 +101,6 @@ CHANGE_FILES = \
 	spirv-llvm-translator.ch \
 	spirv-tools.ch           \
 	talloc.ch                \
-	telepathy-glib.ch        \
 	uchardet.ch              \
 	umockdev.ch              \
 	utfcpp.ch                \

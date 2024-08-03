@@ -19,10 +19,8 @@ CHANGE_FILES = \
 	goffice010.ch             \
 	grantlee.ch               \
 	graphene.ch               \
-	gtk+2.ch                  \
 	gtk+3.ch                  \
 	gtk4.ch                   \
-	gtk-engines.ch            \
 	gtkmm3.ch                 \
 	gtkmm4.ch                 \
         gtksourceview.ch          \
@@ -47,8 +45,6 @@ CHANGE_FILES = \
 	pango.ch                  \
 	pangomm.ch                \
 	pangomm2.ch               \
-	qt5.ch                    \
-	qt5-alternate.ch          \
 	qt5-components.ch         \
 	qt6.ch                    \
 	qtwebengine.ch            \

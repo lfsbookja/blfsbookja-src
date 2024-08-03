@@ -90,15 +90,15 @@
 @x
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
-      <xref linkend="desktop-file-utils"/>,
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink>, and
+      <xref linkend="appstream-glib"/>,
+      <xref linkend="desktop-file-utils"/>, and
       <ulink url="https://github.com/uncrustify/uncrustify">uncrustify</ulink>
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
+      <xref linkend="appstream-glib"/>,
       <xref linkend="desktop-file-utils"/>,
-      <ulink url="&appstream-glib-url;">appstream-glib</ulink>,
       <ulink url="https://github.com/uncrustify/uncrustify">uncrustify</ulink>
     </para>
 @z

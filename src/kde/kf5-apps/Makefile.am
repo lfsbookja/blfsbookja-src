@@ -15,6 +15,7 @@ CHANGE_FILES = \
 	kio-extras.ch        \
 	kmix5.ch             \
 	konsole5.ch          \
+	konversation.ch      \
 	libkcddb.ch          \
 	libkdcraw.ch         \
 	libkexiv2.ch         \

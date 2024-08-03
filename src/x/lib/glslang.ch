@@ -119,22 +119,22 @@
 @z
 
 @x
-      <parameter>-DALLOW_EXTERNAL_SPIRV_TOOLS=ON</parameter>: This switch allows
+      <parameter>-D ALLOW_EXTERNAL_SPIRV_TOOLS=ON</parameter>: This switch allows
       the build system to use the system-installed copy of
       <xref linkend="spirv-tools" role="nodep"/>, instead of downloading and
       installing it's own copy.
 @y
-      <parameter>-DALLOW_EXTERNAL_SPIRV_TOOLS=ON</parameter>: This switch allows
+      <parameter>-D ALLOW_EXTERNAL_SPIRV_TOOLS=ON</parameter>: This switch allows
       the build system to use the system-installed copy of
       <xref linkend="spirv-tools" role="nodep"/>, instead of downloading and
       installing it's own copy.
 @z
 
 @x
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This switch builds shared
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This switch builds shared
       versions of the libraries, and does not install static versions of them.
 @y
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This switch builds shared
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This switch builds shared
       versions of the libraries, and does not install static versions of them.
 @z
 

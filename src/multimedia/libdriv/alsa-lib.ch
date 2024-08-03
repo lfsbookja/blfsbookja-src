@@ -70,15 +70,15 @@
     <bridgehead renderas="sect4">Optional</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      <xref linkend="python2"/>, and
-      <ulink url="https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-&alsa-lib-version;.tar.bz2">alsa-ucm-conf</ulink>
+      <ulink url="https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-&alsa-lib-version;.tar.bz2">alsa-ucm-conf</ulink>, and
+      &python2;
     </para>
 @y
     <bridgehead renderas="sect4">&Optional;</bridgehead>
     <para role="optional">
       <xref linkend="doxygen"/>,
-      <xref linkend="python2"/>, and
-      <ulink url="https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-&alsa-lib-version;.tar.bz2">alsa-ucm-conf</ulink>
+      <ulink url="https://www.alsa-project.org/files/pub/lib/alsa-ucm-conf-&alsa-lib-version;.tar.bz2">alsa-ucm-conf</ulink>,
+      &python2;
     </para>
 @z
 

@@ -5,7 +5,7 @@
 %
 
 @x
-  <xref role="runtime" linkend="python2"/> is used by the unmaintained
+  &python2; is used by the unmaintained
   ebong CTAN module (intended for writing Bengali in Rapid Roman Format).
   <filename>/usr/bin/python</filename> is also in the shebang line for the
   latex-papersize and lilyglyphs scripts, and documentation at CTAN says both
@@ -23,7 +23,7 @@
   <command>ps2pdf</command>, from <xref role='runtime' linkend='gs'/>, is
   used by some utilities and scripts.
 @y
-  <xref role="runtime" linkend="python2"/> is used by the unmaintained
+  &python2; is used by the unmaintained
   ebong CTAN module (intended for writing Bengali in Rapid Roman Format).
   <filename>/usr/bin/python</filename> is also in the shebang line for the
   latex-papersize and lilyglyphs scripts, and documentation at CTAN says both

@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY ldns-buildsize     "30 MB (with docs)">
+  <!ENTITY ldns-buildsize     "31 MB (with docs)">
   <!ENTITY ldns-time          "0.2 SBU (with docs)">
 @y
-  <!ENTITY ldns-buildsize     "30 MB (ドキュメント込み)">
+  <!ENTITY ldns-buildsize     "31 MB (ドキュメント込み)">
   <!ENTITY ldns-time          "0.2 SBU (ドキュメント込み)">
 @z
 
@@ -82,7 +82,6 @@
     <para role="optional">
       <xref linkend="make-ca"/> and
       <xref linkend="libpcap"/> (for example programs),
-      <xref linkend="python2"/> and
       <xref linkend="swig"/> (for Python bindings), and
       <xref linkend="doxygen"/> (for html documentation)
     </para>
@@ -91,7 +90,6 @@
     <para role="optional">
       <xref linkend="make-ca"/>,
       <xref linkend="libpcap"/> (for example programs),
-      <xref linkend="python2"/>,
       <xref linkend="swig"/> (Python バインディングのため),
       <xref linkend="doxygen"/> (html ドキュメントのため)
     </para>
@@ -173,10 +171,12 @@
 
 @x
       <option>--with-pyldns</option>: This option enables building of the Python
-      bindings.
+      bindings. If you use this option, you will need to add
+      PYTHON=/usr/bin/python3 to the configure line as well.
 @y
       <option>--with-pyldns</option>: This option enables building of the Python
-      bindings.
+      bindings. If you use this option, you will need to add
+      PYTHON=/usr/bin/python3 to the configure line as well.
 @z
 
 @x

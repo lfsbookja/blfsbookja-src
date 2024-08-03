@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gdb-buildsize     "964 MB (add 805 MB for docs; add 654 MB for tests)">
-  <!ENTITY gdb-time          "1.8 SBU (add 0.4 SBU for docs; add 15 SBU for tests; all using parallelism=4)">
+  <!ENTITY gdb-buildsize     "806 MB (add 1.0 GB for docs; add 720 MB for tests)">
+  <!ENTITY gdb-time          "0.9 SBU (add 0.4 SBU for docs; see below for tests; all using parallelism=8)">
 @y
-  <!ENTITY gdb-buildsize     "964 MB （ドキュメント生成時はさらに 805 MB; テスト実施時はさらに 654 MB）">
-  <!ENTITY gdb-time          "1.8 SBU （ドキュメント生成時はさらに 0.4 SBU, テスト実施時はさらに 15 SBU, いずれも parallelism=4 利用）">
+  <!ENTITY gdb-buildsize     "806 MB （ドキュメント生成時はさらに 1.0 GB; テスト実施時はさらに 72- MB）">
+  <!ENTITY gdb-time          "0.9 SBU （ドキュメント生成時はさらに 0.4 SBU, テスト実施時は以下を参照, いずれも parallelism=8 利用）">
 @z
 
 @x
@@ -132,7 +132,7 @@
 @z
 
 @x
-      To test the results, issue:
+      To test the results anyway, issue:
 @y
       ビルド結果をテストする場合は以下を実行します。
 @z

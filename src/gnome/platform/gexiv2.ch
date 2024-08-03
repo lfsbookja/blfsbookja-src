@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY gexiv2-buildsize     "4.0 MB (with tests)">
+  <!ENTITY gexiv2-buildsize     "3.3 MB (with tests)">
   <!ENTITY gexiv2-time          "0.1 SBU (with parallelism=4 and tests)">
 @y
-  <!ENTITY gexiv2-buildsize     "4.0 MB (テスト込み)">
+  <!ENTITY gexiv2-buildsize     "3.3 MB (テスト込み)">
   <!ENTITY gexiv2-time          "0.1 SBU (parallelism=4 利用、テスト込み)">
 @z
 

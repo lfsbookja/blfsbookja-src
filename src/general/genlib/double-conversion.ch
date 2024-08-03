@@ -111,17 +111,17 @@
 @z
 
 @x
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This switch forces cmake to build
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This switch forces cmake to build
       a shared version of the library instead of the static version.
 @y
-      <parameter>-DBUILD_SHARED_LIBS=ON</parameter>: This switch forces cmake to build
+      <parameter>-D BUILD_SHARED_LIBS=ON</parameter>: This switch forces cmake to build
       a shared version of the library instead of the static version.
 @z
 
 @x
-      <parameter>-DBUILD_TESTING=ON</parameter>: This switch builds the test programs.
+      <parameter>-D BUILD_TESTING=ON</parameter>: This switch builds the test programs.
 @y
-      <parameter>-DBUILD_TESTING=ON</parameter>: This switch builds the test programs.
+      <parameter>-D BUILD_TESTING=ON</parameter>: This switch builds the test programs.
 @z
 
 @x
