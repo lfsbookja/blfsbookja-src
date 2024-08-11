@@ -113,6 +113,8 @@
       <xref linkend="cups"/>,
       <xref linkend="faac"/>,
       <xref linkend="faad2"/>,
+      <xref linkend="fdk-aac"/>,
+      <xref linkend="freerdp"/>,
       <xref linkend="lame"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="pulseaudio"/>,
@@ -132,6 +134,8 @@
       <xref linkend="cups"/>,
       <xref linkend="faac"/>,
       <xref linkend="faad2"/>,
+      <xref linkend="fdk-aac"/>,
+      <xref linkend="freerdp"/>,
       <xref linkend="lame"/>,
       <xref linkend="linux-pam"/>,
       <xref linkend="pulseaudio"/>,
@@ -142,7 +146,7 @@
       <ulink url="https://www.openh264.org/">openh264</ulink>,
       <ulink url="https://pcsclite.apdu.fr/">pcsclite</ulink>,
       <ulink url="https://github.com/libsdl-org/SDL_ttf">SDL_ttf</ulink>,
-      <ulink url="https://github.com/chirlu/soxr">soxr</ulink>, and
+      <ulink url="https://github.com/chirlu/soxr">soxr</ulink>,
       <ulink url="https://github.com/uriparser/uriparser">uriparser</ulink>
     </para>
 @z

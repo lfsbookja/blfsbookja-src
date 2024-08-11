@@ -3,11 +3,6 @@
 %
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
-@x
-  <!ENTITY PyYAML-time          "less than 0.1 SBU">
-@y
-  <!ENTITY PyYAML-time          "less than 0.1 SBU">
-@z
 
 @x
       <title>Introduction to PyYAML Module</title>
@@ -91,14 +86,7 @@
 @z
 
 @x
-        First, make a change so the package will build with
-        <xref linkend="cython"/>:
-@y
-        まずは <xref linkend="cython"/> を使ってビルドできるようにパッケージを変更します。
-@z
-
-@x
-        Next, build PyYAML with the following command:
+        Build PyYAML with the following command:
 @y
         以下のコマンドを使って PyYAML をビルドします。
 @z

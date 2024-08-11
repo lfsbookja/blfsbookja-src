@@ -4,10 +4,10 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY blocaled-buildsize     "4.2 MB (with tests)">
+  <!ENTITY blocaled-buildsize     "5.3 MB (with tests)">
   <!ENTITY blocaled-time          "less than 0.1 SBU (with tests)">
 @y
-  <!ENTITY blocaled-buildsize     "4.2 MB (with tests)">
+  <!ENTITY blocaled-buildsize     "5.3 MB (with tests)">
   <!ENTITY blocaled-time          "less than 0.1 SBU (with tests)">
 @z
 

@@ -5,10 +5,10 @@
 %
 @x
   <!ENTITY libadwaita-buildsize     "73 MB (with tests)">
-  <!ENTITY libadwaita-time          "0.3 SBU (with parallelism=4; with tests)">
+  <!ENTITY libadwaita-time          "0.4 SBU (with parallelism=4; with tests)">
 @y
   <!ENTITY libadwaita-buildsize     "73 MB (with tests)">
-  <!ENTITY libadwaita-time          "0.3 SBU (with parallelism=4; with tests)">
+  <!ENTITY libadwaita-time          "0.4 SBU (with parallelism=4; with tests)">
 @z
 
 @x

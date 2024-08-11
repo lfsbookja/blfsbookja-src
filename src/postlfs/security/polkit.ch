@@ -105,12 +105,12 @@
         then <xref linkend="DocBook"/> and <xref linkend="docbook-xsl"/> are
         required. If you have installed <xref linkend="libxslt"/>, but you do
         not want to install any of the DocBook packages mentioned, you will
-        need to use <option>-Dman=false</option> in the instructions
+        need to use <option>-D man=false</option> in the instructions
         below.
 @y
         <xref linkend="libxslt"/> をインストールしている場合は <xref
         linkend="DocBook"/> と <xref linkend="docbook-xsl"/> が必要です。
-        また <xref linkend="libxslt"/> はインストールしていても、その DocBook パッケージ類をインストールしたくない場合は、後述する手順にて <option>-Dman=false</option> を指定することになります。
+        また <xref linkend="libxslt"/> はインストールしていても、その DocBook パッケージ類をインストールしたくない場合は、後述する手順にて <option>-D man=false</option> を指定することになります。
 @z
 
 @x
@@ -163,12 +163,12 @@
 @z
 
 @x
-      <option>-Dauthfw=shadow</option>: This switch enables the
+      <option>-D authfw=shadow</option>: This switch enables the
       package to use the <application>Shadow</application> rather than the
       <application>Linux PAM</application> Authentication framework. Use it
       if you have not installed <application>Linux PAM</application>.
 @y
-      <option>-Dauthfw=shadow</option>:
+      <option>-D authfw=shadow</option>:
       本スイッチは認証フレームワークとして <application>Linux-PAM</application> ではなく <application>Shadow</application> を使うことを指定します。
       <application>Linux-PAM</application> をインストールしていない場合は、本スイッチを用いてください。
 @z

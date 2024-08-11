@@ -566,7 +566,7 @@
           Note that a target package can start to <quote>function</quote>
           in many subtle ways: an installed configuration file can make the
           init system, cron daemon, or bus daemon to run a program
-          automatically; another package using the target package as an
+          automatically; another package using the target package as a
           dependency can run a program from the target package in the
           building system; and the configuration sections in the BLFS book
           may also run a program from a just installed package.  So if
@@ -578,7 +578,7 @@
           Note that a target package can start to <quote>function</quote>
           in many subtle ways: an installed configuration file can make the
           init system, cron daemon, or bus daemon to run a program
-          automatically; another package using the target package as an
+          automatically; another package using the target package as a
           dependency can run a program from the target package in the
           building system; and the configuration sections in the BLFS book
           may also run a program from a just installed package.  So if

@@ -4,11 +4,11 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kf6-buildsize     "2.5 GB (177 MB installed)">
-  <!ENTITY kf6-time          "13 SBU (using parallelism=8)">
+  <!ENTITY kf6-buildsize     "2.6 GB (183 MB installed)">
+  <!ENTITY kf6-time          "18 SBU (using parallelism=8)">
 @y
-  <!ENTITY kf6-buildsize     "2.5 GB（インストールは 177 MB）">
-  <!ENTITY kf6-time          "13 SBU（parallelism=8 利用）">
+  <!ENTITY kf6-buildsize     "2.6 GB（インストールは 183 MB）">
+  <!ENTITY kf6-time          "18 SBU（parallelism=8 利用）">
 @z
 
 @x

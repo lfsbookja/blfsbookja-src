@@ -165,25 +165,33 @@
 @z
 
 @x
-      <option>-Dsuid_wrapper=true</option>: Builds the suid-root
-      wrapper for legacy DDX driver support on rootless xserver systems.
+      <parameter>-D glamor=true</parameter>: Ensure building the Glamor
+      module.  It's needed to build the &modesetting_drv; driver
+      which replaces the traditional Device Dependent X (DDX) drivers.
 @y
-      <option>-Dsuid_wrapper=true</option>: Builds the suid-root
-      wrapper for legacy DDX driver support on rootless xserver systems.
+      <parameter>-D glamor=true</parameter>: Ensure building the Glamor
+      module.  It's needed to build the &modesetting_drv; driver
+      which replaces the traditional Device Dependent X (DDX) drivers.
+@z
+
+@x revision='sysv'
+      <option>-D systemd_logind=true</option>:
+      This switch makes the building system error out if
+      <xref linkend='dbus'/> is not installed.  The BLFS editors discourage
+      building this package without <xref linkend='dbus'/> installed.
+@y
+      <option>-D systemd_logind=true</option>:
+      This switch makes the building system error out if
+      <xref linkend='dbus'/> is not installed.  The BLFS editors discourage
+      building this package without <xref linkend='dbus'/> installed.
 @z
 
 @x
-      <option>-Dsystemd_logind=false</option>:
-      This switch disables <phrase revision="systemd">systemd-logind</phrase>
-      <phrase revision="sysv">elogind</phrase> integration, allowing Xorg Server
-      to work without having the <phrase revision="systemd">systemd</phrase>
-      <phrase revision="elogind">elogind</phrase> PAM module configured.
+      <option>-D suid_wrapper=true</option>: Builds the suid-root
+      wrapper for legacy DDX driver support on rootless xserver systems.
 @y
-      <option>-Dsystemd_logind=false</option>:
-      This switch disables <phrase revision="systemd">systemd-logind</phrase>
-      <phrase revision="sysv">elogind</phrase> integration, allowing Xorg Server
-      to work without having the <phrase revision="systemd">systemd</phrase>
-      <phrase revision="elogind">elogind</phrase> PAM module configured.
+      <option>-D suid_wrapper=true</option>: Builds the suid-root
+      wrapper for legacy DDX driver support on rootless xserver systems.
 @z
 
 @x
@@ -197,6 +205,14 @@
       このコマンドは起動時に <filename class="directory">/tmp/.ICE-unix</filename> ディレクトリと <filename
       class="directory">/tmp/.X11-unix</filename> ディレクトリを生成します。
       そしてサーバーが必要としているパーミッションおよび所有者を適切に設定します。
+@z
+
+@x
+      <option>-D xephyr=true</option>: This option allows building Xephyr if its
+      dependencies are met.
+@y
+      <option>-D xephyr=true</option>: This option allows building Xephyr if its
+      dependencies are met.
 @z
 
 @x

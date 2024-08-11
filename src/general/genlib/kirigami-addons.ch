@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY kirigami-addons-time          "0.5 SBU (Using parallelism=4)">
+  <!ENTITY kirigami-addons-time          "0.6 SBU (Using parallelism=4)">
 @y
-  <!ENTITY kirigami-addons-time          "0.5 SBU (Using parallelism=4)">
+  <!ENTITY kirigami-addons-time          "0.6 SBU (Using parallelism=4)">
 @z
 
 @x
@@ -116,20 +116,6 @@
       Now, as the &root; user:
 @y
       &root; ユーザーになって以下を実行します。
-@z
-
-@x
-    <title>Command Explanations</title>
-@y
-    <title>&CommandExplanations;</title>
-@z
-
-@x
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
-      used to apply a higher level of compiler optimizations.
-@y
-      <parameter>-DCMAKE_BUILD_TYPE=Release</parameter>: This switch is
-      used to apply a higher level of compiler optimizations.
 @z
 
 @x

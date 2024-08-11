@@ -4,9 +4,9 @@
 % This is a CTIE change file for the original XML source of the BLFSbook.
 %
 @x
-  <!ENTITY libnvme-time          "0.1 SBU (including tests)">
+  <!ENTITY libnvme-time          "less than 0.1 SBU (including tests)">
 @y
-  <!ENTITY libnvme-time          "0.1 SBU (テスト込み)">
+  <!ENTITY libnvme-time          "less than 0.1 SBU (including tests)">
 @z
 
 @x
@@ -145,8 +145,7 @@
           libnvme-mi.so
         </seg>
         <seg>
-          /usr/include/nvme and
-          /usr/lib/python3.11/site-packages/libnvme
+          /usr/include/nvme 
         </seg>
 @y
         <seg>
@@ -157,8 +156,7 @@
           libnvme-mi.so
         </seg>
         <seg>
-          /usr/include/nvme,
-          /usr/lib/python3.11/site-packages/libnvme
+          /usr/include/nvme 
         </seg>
 @z
 
