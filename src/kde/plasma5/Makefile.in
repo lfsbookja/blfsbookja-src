@@ -236,8 +236,9 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 CHANGE_FILES = \
-	plasma5.ch    \
-	plasma-all.ch 
+	plasma5.ch       \
+	plasma-all.ch    \
+	pulseaudio-qt.ch
 
 thisdir = ${shell echo $(subdir) | sed -e "s|^src/||" -e "s|^src|\.|"}
 BOOKdir = @abs_bookdir@/$(thisdir)

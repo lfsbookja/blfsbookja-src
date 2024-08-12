@@ -616,34 +616,38 @@
         <para><emphasis>Optional</emphasis> means that this package might be
         installed for added functionality. Often BLFS will describe the
         dependency to explain the added functionality that will result.
-        An optional dependency may be automatically pick up by the target
-        package if the dependency is installed, but another some optional
-        dependency may also need additional configuration options to enable
-        them when the target package is built.  Such additional options are
+        Some optional dependencies are automatically picked up by the target
+        package if the dependency is installed, while others
+        also need additional configuration options to be enabled
+        when the target package is built.  Such additional options are
         often documented in the BLFS book.  If an optional dependency is
         said to be <quote>runtime,</quote> it means you may install
         the dependency after installing the target package to support some
         optional features of the target package if you need these
         features.</para>
-        <para>An optional dependency may be out of BLFS.  If you need such
-        an <emphasis>external</emphasis> optional dependency for some
-        features you need, read <xref linkend='beyond'/> for the general
-        hint about installing an out-of-BLFS package.</para>
 @y
         <para>
         <emphasis>任意</emphasis>
         は、付加的な機能を実現するためにはそのパッケージが必要であることを表します。
         Often BLFS will describe the
         dependency to explain the added functionality that will result.
-        An optional dependency may be automatically pick up by the target
-        package if the dependency is installed, but another some optional
-        dependency may also need additional configuration options to enable
-        them when the target package is built.  Such additional options are
+        Some optional dependencies are automatically picked up by the target
+        package if the dependency is installed, while others
+        also need additional configuration options to be enabled
+        when the target package is built.  Such additional options are
         often documented in the BLFS book.  If an optional dependency is
         said to be <quote>runtime,</quote> it means you may install
         the dependency after installing the target package to support some
         optional features of the target package if you need these
         features.</para>
+@z
+
+@x
+        <para>An optional dependency may be out of BLFS.  If you need such
+        an <emphasis>external</emphasis> optional dependency for some
+        features you need, read <xref linkend='beyond'/> for the general
+        hint about installing an out-of-BLFS package.</para>
+@y
         <para>An optional dependency may be out of BLFS.  If you need such
         an <emphasis>external</emphasis> optional dependency for some
         features you need, read <xref linkend='beyond'/> for the general
